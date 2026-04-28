@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TransHorizons CMS</title>
+  </head>
+  <body>
+    <!-- Decap CMS from CDN — must be at end of body so DOM is ready -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // ── Fonts injected into the preview iframe ───────────────────────────
+      CMS.registerPreviewStyle(
+        'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap'
+      );
+
+      // ── Preview component ────────────────────────────────────────────────
+      // NOTE: when using h() directly, style must be an object, not a string.
+      var ArticlePreview = createClass({
+        render: function () {
+          var entry    = this.props.entry;
+          var title    = entry.getIn(['data', 'title'])        || '';
+          var subtitle = entry.getIn(['data', 'subtitle'])     || '';
+          var category = entry.getIn(['data', 'category'])     || '';
+          var date     = entry.getIn(['data', 'date'])         || '';
+          var readTime = entry.getIn(['data', 'readTime'])     || '';
+          var heroUrl  = entry.getIn(['data', 'heroImage'])          || '';
+          var introTitle = entry.getIn(['data', 'introductionTitle']) || '';
+          var intro    = entry.getIn(['data', 'introduction'])        || '';
+
+          // Build section nodes from the list
+          var sections = entry.getIn(['data', 'sections']);
+          var sectionNodes = [];
+          if (sections) {
+            sections.forEach(function(s, i) {
+              sectionNodes.push(
+                h('div', { key: i, style: { marginBottom: '2.5rem' } },
+                  h('h2', { style: { fontFamily: '"Playfair Display", serif', fontSize: '1.7rem', fontWeight: 300, color: '#1A1A1A', marginBottom: '1rem' } },
+                    s.get('title') || ''),
+                  h('p', { style: { lineHeight: 1.8, fontSize: '1.05rem', color: '#555' } },
+                    s.get('content') || '')
+                )
+              );
+            });
+          }
+
+          return h('div', { style: { fontFamily: 'Inter, sans-serif', background: '#EFEFEF', minHeight: '100vh' } },
+
+            // Hero
+            h('div', { style: { position: 'relative', height: '360px', overflow: 'hidden', background: '#1A1A1A' } },
+              h('img', { src: heroUrl, style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }),
+              h('div', { style: { position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7), transparent)' } }),
+              h('div', { style: { position: 'absolute', bottom: 0, padding: '2rem' } },
+                h('p', { style: { color: '#B89860', fontSize: '11px', letterSpacing: '3px', textTransform: 'uppercase', margin: '0 0 10px' } },
+                  category + ' · ' + date),
+                h('h1', { style: { fontFamily: '"Playfair Display", serif', fontSize: '2.2rem', fontWeight: 300, color: '#fff', margin: '0 0 10px', lineHeight: 1.2 } },
+                  title),
+                h('p', { style: { color: 'rgba(255,255,255,0.8)', margin: '0 0 8px', fontSize: '1rem', maxWidth: '560px' } },
+                  subtitle),
+                h('p', { style: { color: 'rgba(255,255,255,0.5)', fontSize: '13px', margin: 0 } },
+                  readTime + ' read')
+              )
+            ),
+
+            // Body
+            h('div', { style: { maxWidth: '820px', margin: '0 auto', padding: '2.5rem 1.5rem' } },
+              introTitle && h('h2', { style: { fontFamily: '"Playfair Display", serif', fontSize: '2rem', fontWeight: 300, color: '#1A1A1A', marginBottom: '1.5rem', lineHeight: 1.2 } }, introTitle),
+              h('p', { style: { fontSize: '1.1rem', color: '#333', lineHeight: 1.85, marginBottom: '2.5rem' } },
+                intro),
+              h('div', null, sectionNodes)
+            )
+          );
+        }
+      });
+
+      CMS.registerPreviewTemplate('articles', ArticlePreview);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+﻿# Canada â€” Shared Sources Registry
+# Citations in canada.en.yaml and canada.fr.yaml reference these entries by id.
+# Rules:
+#   - id: lowercase alphanumeric + hyphens only, unique within this file
+#   - publicationDate: YYYY-MM-DD (use YYYY-01-01 if only year known; YYYY-MM-01 if only month known)
+#   - accessDate: YYYY-MM-DD (date URL was opened and verified)
+#   - confidence: High | Med | Low
+#   - citationType: Fact | Interpretation
+#   - lastVerified: set by `npm run validate:sources` (YYYY-MM-DD)
+#   - archiveUrl: Wayback Machine URL or null
+
+- id: pm-ca
+  name: Prime Minister of Canada (Official)
+  url: https://pm.gc.ca
+  desc: "Official government website; Mark Carney biography and current role as Prime Minister."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: parl-ca
+  name: Parliament of Canada
+  url: https://parl.gc.ca
+  desc: "Official parliamentary records; election results; government composition; legislative procedures and voting records."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: imf
+  name: International Monetary Fund (IMF)
+  url: https://www.imf.org
+  desc: "Canada Article IV Consultation; macro-economic data; fiscal projections; federal debt analysis."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: statcan
+  name: Statistics Canada
+  url: https://www.statcan.gc.ca
+  desc: "Official national statistics; GDP, employment, inflation, trade data; regional economic data."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: gc-trade
+  name: Government of Canada Trade Data
+  url: https://international.gc.ca
+  desc: "Official trade statistics; export/import data by commodity and partner; USMCA information."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: iea
+  name: International Energy Agency (IEA)
+  url: https://www.iea.org
+  desc: "Canada energy profile; oil/gas export data; energy transition analysis; renewable energy statistics."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: csis
+  name: Canadian Security Intelligence Service (CSIS)
+  url: https://www.csis-scrs.gc.ca
+  desc: "Public threat assessments; terrorism risk ratings; internal security posture; foreign interference reports."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: cse
+  name: Communications Security Establishment (CSE)
+  url: https://www.cse-gcsec.gc.ca
+  desc: "National cybersecurity threat assessments; cyber incident reports; foreign signals intelligence."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: global-affairs-ca
+  name: Global Affairs Canada
+  url: https://www.international.gc.ca
+  desc: "Diplomatic relations; alliance partnerships; foreign policy statements; Arctic sovereignty policy."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: wjp
+  name: World Justice Project (WJP)
+  url: https://www.worldjusticeproject.org
+  desc: "Rule of Law Index; judicial independence ratings; court system assessment for Canada."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: elections-ca
+  name: Elections Canada
+  url: https://www.elections.ca
+  desc: "Electoral procedures; official election results; electoral integrity assessments; party registration."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: rsf
+  name: Reporters Without Borders (RSF)
+  url: https://rsf.org
+  desc: "World Press Freedom Index; media independence ratings; censorship and journalist safety analysis."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: Med
+  citationType: Fact
+  archiveUrl: null
+
+- id: pew
+  name: Pew Research Center
+  url: https://www.pewresearch.org
+  desc: "Canadian identity surveys; national pride and multiculturalism opinion data; public attitudes research."
+  publicationDate: "2024-01-01"
+  accessDate: "2026-04-27"
+  confidence: Med
+  citationType: Fact
+  archiveUrl: null
+
+- id: trc-ca
+  name: Truth and Reconciliation Commission (TRC) of Canada
+  url: https://www.trc.ca
+  desc: "Final report and Calls to Action; Indigenous reconciliation progress; land claims and Indigenous rights analysis."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: Med
+  citationType: Fact
+  archiveUrl: null
+
+- id: chamber-ca
+  name: Canadian Chamber of Commerce
+  url: https://www.chamber.ca
+  desc: "Business sentiment surveys; economic outlook reports; policy advocacy positions on trade and energy."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: Med
+  citationType: Interpretation
+  archiveUrl: null
+
+- id: tbs-ca
+  name: Treasury Board of Canada
+  url: https://www.tbs-sct.gc.ca
+  desc: "Federal public service employment data; compensation schedules; pension liabilities; government spending controls."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: boc
+  name: Bank of Canada
+  url: https://www.bankofcanada.ca
+  desc: "Monetary policy statements; inflation reports; interest rate decisions; Canadian dollar exchange rate analysis."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: public-accounts-ca
+  name: Public Accounts of Canada
+  url: https://open.canada.ca
+  desc: "Government spending records; contract awards; departmental financial accountability reporting."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: statcan-food
+  name: Food Price Report (Statistics Canada)
+  url: https://www.statcan.gc.ca
+  desc: "Food price inflation series; supply chain disruption analysis; consumer price index food component."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: statcan-trade
+  name: Statistics Canada Trade Database
+  url: https://www.statcan.gc.ca
+  desc: "Detailed merchandise export/import data; commodity breakdowns; trade partner analysis by sector."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: imf-surveillance
+  name: International Monetary Fund â€” Financial Sector Assessment
+  url: https://www.imf.org
+  desc: "IMF Financial Sector Assessment Program for Canada; external vulnerability analysis; debt sustainability."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: osfi
+  name: Office of the Superintendent of Financial Institutions (OSFI)
+  url: https://www.osfi-bsif.gc.ca
+  desc: "Pension plan actuarial sustainability; financial system stability assessments; regulatory capital requirements."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null
+
+- id: dnd-ca
+  name: Department of National Defence (Canada)
+  url: https://www.canada.ca/defence
+  desc: "Canadian Armed Forces strength, equipment readiness, and recruitment data; defence budget reports."
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  archiveUrl: null

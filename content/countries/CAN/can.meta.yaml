@@ -1,0 +1,17 @@
+# Canada — Country Metadata
+# Edit this file for scorecard updates or date changes.
+# lastUpdated: ISO date of the most recent content revision.
+# NOTE: Content in canada.en.yaml / canada.fr.yaml must be re-verified via
+#       Perplexity Deep Research before publication — see docs/research-quality-bar.md.
+
+code: CAN
+nameEn: Canada
+nameFr: Canada
+lastUpdated: "2026-04-19"
+
+scorecard:
+  eliteCohesion: Med
+  securityLoyalty: High
+  economicPressure: Med
+  protestCapacity: Med
+  institutionalResilience: High

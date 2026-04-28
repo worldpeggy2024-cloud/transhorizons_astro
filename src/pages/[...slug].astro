@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import AppShell from '../components/AppShell';
+// Server-rendered catch-all — handles all Wouter client-side routes including
+// dynamic ones like /country/:cca3 and /world-analysis/:cca3
+export const prerender = false;
+---
+<Base>
+  <AppShell client:only="react" />
+</Base>

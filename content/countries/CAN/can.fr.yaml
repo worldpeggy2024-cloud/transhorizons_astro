@@ -1,0 +1,408 @@
+# Canada — Contenu en français
+# Les marqueurs de citation [id] référencent canada.sources.yaml.
+# Chaque champ narratif doit contenir au moins un marqueur [id].
+# Exécutez `npm run validate:countries` pour vérifier.
+#
+# ⚠ AVIS QUALITÉ DE RECHERCHE ⚠
+# Ce contenu a été migré depuis une version antérieure et n'a PAS été vérifié
+# indépendamment par rapport aux sources primaires. Traiter comme un échafaudage
+# structurel uniquement. Avant publication, re-rechercher chaque section via le
+# modèle Perplexity Deep Research (content/docs/perplexity-authoring-template.md).
+#
+# Convention de nommage des acteurs :
+#   - Noms de personnes : restent en anglais
+#   - Noms de partis et d'institutions : traduits en français
+
+executiveSnapshot:
+  - "Type de régime : Démocratie parlementaire avec système de Westminster [pm-ca] ; le pouvoir est remporté par les élections fédérales, actuellement détenu par le gouvernement minoritaire libéral dirigé par le Premier ministre Mark Carney [parl-ca]. L'autorité exécutive est confiée au Premier ministre et au Cabinet ; le pouvoir législatif est partagé avec le Parlement bicaméral."
+  - "Équilibre politique actuel : Gouvernement minoritaire libéral (2025–présent) dépendant de l'accord de confiance et d'approvisionnement du Nouveau Parti démocratique (NPD) pour l'adoption de la législation [parl-ca]. L'opposition conservatrice se positionne comme principal challenger ; le Bloc Québécois détient un levier régional au Québec ; le Parti vert détient un seul siège."
+  - "Modèle économique : Économie post-industrielle avancée ; le secteur des services domine (70%+ du PIB) avec une force particulière dans les services financiers, la technologie, l'énergie et les ressources naturelles [imf] [statcan]. Les exportations de produits de base (énergie, métaux, produits agricoles) génèrent des devises étrangères importantes ; la fabrication est concentrée dans les secteurs de l'automobile et de l'aérospatiale."
+  - "Top 3 risques (6–18 mois) : (1) Friction commerciale américaine — l'escalade tarifaire ou la renégociation de l'accord commercial pourraient perturber la relation commerciale bilatérale de 2,3 billions de dollars [gc-trade] ; (2) Durabilité budgétaire — le ratio de la dette fédérale au PIB est élevé à ~95 % (2025) ; la hausse des taux d'intérêt augmente les coûts du service de la dette [imf] ; (3) Perturbation de la transition énergétique — la transition du secteur pétrolier et gazier crée une vulnérabilité économique régionale en Alberta et en Saskatchewan [iea]."
+  - "Top 3 points de surveillance (4–12 semaines) : (1) Annonces de politique commerciale américaine [gc-trade] ; (2) Décisions de taux d'intérêt de la Banque du Canada [boc] ; (3) Négociations du budget fédéral et durabilité du soutien du NPD [parl-ca]."
+  - "Dépendances externes : 75%+ des exportations vont aux États-Unis ; les secteurs automobile, agricole et énergétique dépendent fortement de l'accès au marché américain [gc-trade]. Exportateur net d'énergie ; les exportations de pétrole brut et de gaz naturel sont essentielles aux revenus budgétaires [iea]. La dette souveraine est principalement détenue au pays ; l'accès aux marchés des capitaux internationaux reste stable [imf]."
+  - "Posture de sécurité : Faible risque de violence interne ; la GRC et les services de police provinciaux maintiennent une application efficace de la loi ; pas d'insurrection active ni de menace terroriste [csis]. La sécurité frontalière est stable ; pas de différends frontaliers militarisés. Les affirmations de souveraineté arctique sont en cours mais non militarisées. Les menaces de cybersécurité des acteurs étatiques et non étatiques augmentent [cse]."
+  - "Orientation diplomatique : Membre de l'OTAN et allié américain ; alignement fort avec les démocraties occidentales (G7, OCDE, partenariat de renseignement Five Eyes) [parl-ca] [global-affairs-ca]. Couverture vers l'engagement indo-pacifique (membre du PTPGP) ; relation prudente avec la Chine (concurrence technologique, préoccupations concernant les droits de l'homme) ; relation pragmatique avec la Russie (sanctions alignées sur la coalition occidentale) [global-affairs-ca]."
+  - "Confiance dans les données : ÉLEVÉE pour les données macroéconomiques [imf] [statcan] ; ÉLEVÉE pour la structure de gouvernance [pm-ca] ; MOYENNE pour la durabilité de la coalition politique (évaluations prospectives) [parl-ca] ; MOYENNE pour le calendrier de la transition énergétique (dépendant de la politique) [iea]."
+  - "Perspective de référence : Stabilité politique continue sous le gouvernement minoritaire [parl-ca] ; croissance économique modérée (2–3 % annuellement) limitée par la consolidation budgétaire et les vents contraires commerciaux externes [imf] ; accélération de la transition énergétique mais création de pressions d'ajustement régionales [iea] ; aucun risque de changement de régime à court terme."
+
+political:
+  powerStructure: |
+    Le Premier ministre Mark Carney (Libéral) détient l'autorité exécutive ; Cabinet d'environ
+    30 ministres ; le Bureau du Premier ministre (BPM) contrôle l'agenda politique et les
+    communications [pm-ca] [parl-ca]. L'autorité de Carney découle de la pluralité libérale à
+    la Chambre des communes (155 des 338 sièges) et de l'accord de confiance et d'approvisionnement
+    du NPD. La Gendarmerie royale du Canada (GRC) relève du ministre de la Sécurité publique ; les
+    Forces armées canadiennes relèvent du ministre de la Défense ; le Service canadien du
+    renseignement de sécurité (SCRS) relève du ministre de la Sécurité nationale. Aucune preuve
+    de factionnalisme des services de sécurité ou d'infidélité à l'autorité civile [csis]. La
+    Cour suprême du Canada (9 juges) est indépendante et isolée de la pression politique ; les
+    tribunaux inférieurs (Fédéral, Provincial, Supérieur) sont fonctionnels et impartiaux [wjp].
+    Élections Canada (fédéral) et les commissions électorales provinciales opèrent de manière
+    indépendante ; aucune preuve de manipulation électorale ou de fraude [elections-ca]. Médias :
+    le diffuseur public (CBC/Radio-Canada) opère de manière indépendante ; les médias privés
+    (Globe and Mail, National Post, CTV, Global News) maintiennent l'indépendance éditoriale ;
+    les médias numériques/sociaux de plus en plus fragmentés [rsf]. Aucune censure d'État ;
+    la liberté de presse est évaluée comme ÉLEVÉE par Reporters Sans Frontières [rsf].
+
+  stabilityDrivers: |
+    La légitimité repose sur les élections démocratiques et la performance de l'État-providence
+    [parl-ca]. Croissance économique en moyenne de 2–3 % annuellement ; chômage faible (~5 %) ;
+    les services publics (santé, éducation) sont fonctionnels mais sous pression budgétaire
+    [imf] [statcan]. L'identité canadienne est forte ; fierté nationale dans le modèle
+    multiculturel ; pas de mouvements séparatistes importants en dehors du contexte historique
+    québécois [pew]. Le multiculturalisme comme politique officielle ; les niveaux d'immigration
+    sont politiquement contestés mais non délégitimants ; l'agenda de réconciliation autochtone
+    est en cours mais les progrès sont inégaux [trc-ca]. Loyauté des Forces armées : les Forces
+    armées canadiennes (120 000 personnels actifs) démontrent une loyauté constante à l'autorité
+    civile ; aucune preuve de factionnalisme militaire ou de risque de coup d'État [csis]. Loyauté
+    policière : la GRC et les services de police provinciaux répondent à l'autorité politique
+    civile ; aucune preuve de capture des services de sécurité par le parti au pouvoir [csis].
+    Coalition au pouvoir : Parti libéral + NPD (confiance et approvisionnement) ; représente ~60 %
+    des sièges à la Chambre ; suffisant pour adopter la législation [parl-ca]. Les élites
+    commerciales soutiennent généralement les politiques économiques libérales ; certaines frictions
+    sur la tarification du carbone et le rythme de la transition énergétique [chamber-ca]. Les
+    premiers ministres provinciaux (en particulier l'Ontario, le Québec, l'Alberta) exercent une
+    influence importante ; les mécanismes de coordination fédérale-provinciale sont fonctionnels
+    mais parfois litigieux [parl-ca].
+
+  shockAbsorbers: |
+    Amortisseurs : Marchés de capitaux profonds et crédit souverain adjacent à AAA [imf]. Banque
+    du Canada indépendante et crédible ; cadre de ciblage de l'inflation fonctionnel ; devise
+    canadienne stable [boc]. Assurance-emploi, Régime de rentes du Canada, systèmes de santé
+    provinciaux fournissent une absorption des chocs ; couverture étendue mais pressions de
+    financement croissantes [statcan]. Arrangements fiscaux fédéraux-provinciaux (paiements de
+    péréquation, programmes de transfert) institutionnalisés ; consensus d'élite sur la gouvernance
+    démocratique fort [parl-ca]. Accélérateurs : Les pics d'inflation provenant de la volatilité
+    des prix alimentaires et énergétiques pourraient déclencher des demandes de subventions et des
+    pressions budgétaires [imf]. Élections contestées : l'élection fédérale de 2029 pourrait
+    produire un parlement suspendu ou un résultat inattendu ; la dynamique du gouvernement
+    minoritaire crée un risque d'instabilité [parl-ca]. Scandales de corruption : toute révélation
+    majeure de corruption pourrait saper la légitimité du gouvernement ; le gouvernement actuel fait
+    face à des allégations modérées (lobbying, attribution de contrats) mais pas de scandale
+    systémique [public-accounts-ca]. Divisions d'élites : division potentielle au sein du Parti
+    libéral sur le rythme de la transition énergétique ou la politique budgétaire ; l'unité du
+    Parti conservateur pourrait se fracturer sur les politiques sociales [parl-ca].
+
+economy:
+  macroReality: |
+    La croissance du PIB est prévue à 2–3 % annuellement pour 2026–2027 ; en dessous de la
+    moyenne historique en raison des vents contraires budgétaires et de l'incertitude externe
+    [imf]. Le secteur des services (services financiers, technologie, services professionnels)
+    croît de 3–4 % annuellement [imf] ; les exportations du secteur énergétique sont stables ;
+    l'activité de construction et de l'immobilier est modérée [statcan]. La consolidation
+    budgétaire limite l'investissement public ; l'investissement des entreprises est prudent en
+    raison de l'incertitude politique ; les contraintes d'approvisionnement en main-d'œuvre dans
+    les métiers spécialisés ; l'infrastructure vieillit dans certaines régions [imf] [statcan].
+    Déficit fédéral ~30–40 milliards de dollars annuellement (2025–2026) ; ratio déficit/PIB
+    ~1,5–2 % [imf]. Dette fédérale/PIB ~95 % ; élevée selon les normes historiques ; les coûts
+    du service de la dette augmentent à mesure que les taux d'intérêt augmentent [imf]. Les
+    marchés des capitaux nationaux (obligations, dépôts) sont la principale source de financement ;
+    pas de dépendance à l'emprunt externe ; la cote de crédit est stable (AAA/Aa1) [imf]. Le
+    gouvernement s'est engagé à réduire le déficit ; les mesures de retenue des dépenses et de
+    revenus sont en cours ; l'économie politique de la consolidation est difficile dans le contexte
+    du gouvernement minoritaire [parl-ca] [imf]. L'inflation des prix alimentaires se modère par
+    rapport aux pics de 2023–2024 ; les chaînes d'approvisionnement sont normalisées ; aucun
+    risque aigu de sécurité alimentaire [statcan-food]. Les prix du pétrole et du gaz naturel sont
+    volatiles ; les risques géopolitiques (Moyen-Orient, Russie) créent une pression à la hausse ;
+    la transition vers les énergies renouvelables réduit l'inflation des coûts énergétiques à long
+    terme [iea]. La faiblesse du dollar canadien (par rapport au dollar américain) augmente les
+    coûts d'importation ; les importations d'énergie et de produits de base sont affectées ; la
+    transmission aux prix à la consommation est modérée [boc]. L'inflation globale est actuellement
+    ~2,5 % (cible : 2 %) ; dans la zone de confort de la Banque du Canada ; aucune crise
+    d'inflation aiguë [boc].
+
+  externalVulnerability: |
+    Exportations : 660 milliards de dollars annuellement (2025) ; concentrées dans l'énergie (35 %),
+    les métaux/minéraux (15 %), les produits agricoles (10 %), les produits manufacturés (25 %),
+    les services (15 %) [gc-trade] [statcan-trade]. Importations : 700 milliards de dollars
+    annuellement (2025) ; concentrées dans les machines/équipements (30 %), les véhicules (15 %),
+    les produits chimiques (10 %), l'énergie (5 %), autres [gc-trade]. Balance commerciale : léger
+    déficit ; les exportations d'énergie compensent les importations de machines/équipements
+    [gc-trade]. Concentration des exportations : dépendance importante au marché américain (75%+
+    des exportations) ; la volatilité des prix des produits de base crée une instabilité des
+    revenus [gc-trade]. Détenteurs de la dette : ~90 % de la dette fédérale détenue au pays
+    (fonds de pension canadiens, compagnies d'assurance, banques, particuliers) ; ~10 % détenue
+    par des investisseurs étrangers [imf]. Mur d'échéance : le profil d'échéance de la dette
+    fédérale est bien distribué ; aucune crise de refinancement aiguë ; l'échéance moyenne
+    ~5–6 ans [imf]. Le Canada n'est pas sous un programme du FMI ; aucune contrainte de
+    financement externe ; le FMI évalue le Canada comme stable [imf-surveillance]. La hausse des
+    taux d'intérêt augmente les coûts du service de la dette ; la consolidation budgétaire est
+    nécessaire pour stabiliser la trajectoire de la dette [imf]. Le Canada s'aligne sur les
+    sanctions occidentales contre la Russie ; impact économique direct limité (commerce avec la
+    Russie <1 % du total) [gc-trade]. La volatilité des prix du pétrole et du gaz naturel affecte
+    les revenus budgétaires et la balance commerciale ; le secteur énergétique représente ~10 % du
+    PIB ; un choc des prix des produits de base pourrait déclencher un stress budgétaire [iea].
+    La Voie maritime du Saint-Laurent et les Grands Lacs sont essentiels au commerce ; les routes
+    maritimes arctiques émergentes mais pas encore économiquement significatives ; aucun risque
+    maritime aigu [gc-trade].
+
+  politicalEconomy: |
+    Qui en bénéficie : L'Alberta et la Saskatchewan bénéficient des exportations d'énergie ;
+    l'Ontario et le Québec bénéficient de la fabrication et des services ; les provinces
+    atlantiques dépendent des transferts fédéraux [statcan]. L'énergie, les services financiers,
+    la technologie, les services professionnels bénéficient du modèle actuel ; l'agriculture
+    bénéficie des prix des produits de base ; la fabrication fait face à la pression concurrentielle
+    [statcan]. Aucune structure oligarchique dominante ; l'entreprise est concentrée dans les
+    grandes sociétés (banques, compagnies énergétiques, sociétés technologiques) avec une propriété
+    dispersée ; aucune dominance d'une seule famille ou clan [chamber-ca]. Besoins techniques :
+    Accélération de la tarification du carbone ; consolidation budgétaire ; réformes du marché du
+    travail ; investissement dans les infrastructures ; soutien à la transition énergétique [iea].
+    Possibilité politique : La tarification du carbone est politiquement contestée ; la
+    consolidation budgétaire est difficile dans le gouvernement minoritaire ; les réformes du
+    marché du travail sont bloquées par le NPD ; l'investissement dans les infrastructures est
+    soutenu mais le financement est limité [parl-ca] [imf]. Les réformes de la transition
+    énergétique sont possibles avec le soutien du NPD ; la consolidation budgétaire nécessite un
+    consensus multipartite ; aucune réforme majeure probable dans le contexte du gouvernement
+    minoritaire [parl-ca]. Les subventions énergétiques sont limitées ; les subventions agricoles
+    sont modérées ; aucune subvention majeure pour le carburant/nourriture [imf]. Les salaires
+    du secteur public fédéral sont compétitifs ; aucune pression salariale aiguë ; les obligations
+    de pension sont importantes (~300 milliards de dollars de passif) [tbs-ca]. Le Régime de rentes
+    du Canada (RRC) et la Sécurité de la vieillesse (SV) fournissent un revenu de retraite ; les
+    préoccupations concernant la durabilité de la SV à mesure que la population vieillit ; le RRC
+    est actuariellement sain [osfi]. Aucun contrôle des prix ; tarification basée sur le marché ;
+    le gouvernement fournit un soutien ciblé au revenu (Allocation canadienne pour enfants, crédit
+    de taxe sur les produits et services) [imf].
+
+security:
+  internal: |
+    Pas d'insurrection active ; aucun groupe armé contestant l'autorité de l'État [csis].
+    Criminalité organisée présente (trafic de drogues, traite des personnes) mais non
+    déstabilisante ; l'application de la loi maintient le contrôle [csis]. Violence communale
+    minimale ; aucun conflit ethnique ou religieux actif ; les tensions entre autochtones et
+    colons sont présentes mais non violentes [csis] [trc-ca]. Faible risque de terrorisme ;
+    aucun groupe terroriste actif ; incidents occasionnels de loups solitaires ; le niveau de
+    menace est évalué comme FAIBLE par le SCRS [cse]. Forces armées canadiennes (120 000 actifs,
+    30 000 réserves) opérationnellement capables ; équipement vieillissant dans certains domaines ;
+    défis de recrutement et de rétention [dnd-ca]. Le SCRS opère au pays ; le Renseignement et
+    la Sécurité des Forces armées canadiennes opère à l'international ; le partenariat Five Eyes
+    fournit le partage du renseignement [cse]. Faible corruption dans les services de sécurité ;
+    culture militaire et policière professionnelle ; aucune preuve de capture des services de
+    sécurité [csis]. États-Unis (stable, intégré) ; Mexique (via commerce ALÉCCC) ; aucun
+    différend frontalier militarisé [gc-trade]. Débordement de la violence armée américaine au
+    Canada (armes à feu illégales) ; le trafic de drogues américain (fentanyl) est un problème
+    important [csis]. Les demandeurs d'asile en provenance des États-Unis (passages irréguliers)
+    sont gérables ; aucun afflux massif de réfugiés [csis]. Aucune activité de milice
+    transfrontalière active ; les mouvements de souveraineté autochtone sont présents mais non
+    violents [trc-ca].
+
+  diplomacy: |
+    Alliés traités : Membre de l'OTAN ; partenaire NORAD (intégration de la défense aérienne
+    américaine) ; partenaire de renseignement Five Eyes (Royaume-Uni, Australie,
+    Nouvelle-Zélande, États-Unis) [global-affairs-ca]. Partenaires transactionnels : Partenaire
+    commercial ALÉCC (Mexique, États-Unis) ; membre du PTPGP (11 nations indo-pacifiques) ;
+    membre du G7 ; membre de l'OCDE [global-affairs-ca] [gc-trade]. Alignement américain :
+    Intégration profonde (commerce, défense, renseignement) ; le Canada dépend du marché
+    américain et du parapluie de sécurité ; aucune divergence stratégique [gc-trade]
+    [global-affairs-ca]. Couverture de la Chine : Concurrence technologique (5G, semi-conducteurs,
+    IA) ; préoccupations concernant les droits de l'homme (Ouïgours, Hong Kong) ; la relation
+    commerciale est importante mais prudente ; aucune confrontation militaire [global-affairs-ca].
+    Pragmatisme russe : Sanctions alignées sur la coalition occidentale ; aucune confrontation
+    militaire directe ; les affirmations de souveraineté arctique sont surveillées
+    [global-affairs-ca]. ALÉCC : Accord commercial trilatéral ; les discussions de renégociation
+    sont en cours ; critique pour le commerce canadien [gc-trade]. OTAN : Participant actif ;
+    contribue à la défense de l'Europe de l'Est ; focus sur la sécurité arctique
+    [global-affairs-ca]. PTPGP : Engagement commercial indo-pacifique ; couverture stratégique
+    vers la Chine [global-affairs-ca]. Les affirmations de souveraineté arctique (Passage du
+    Nord-Ouest, plateau continental) sont en cours mais non militarisées ; la reconnaissance
+    américaine des revendications arctiques canadiennes est importante [global-affairs-ca].
+    Récit d'autodétermination autochtone ; différends de compétence fédérale-provinciale ;
+    aucun défi externe à la souveraineté [parl-ca] [trc-ca].
+
+actors:
+  domestic:
+    - name: "PM Mark Carney (Libéral)"
+      interests: "Maintenir le gouvernement ; adopter le budget ; transition énergétique ; consolidation budgétaire [pm-ca]"
+      resources: "Autorité exécutive ; appareil du BPM ; machinerie du Parti libéral ; accès aux médias [pm-ca]"
+      constraints: "Dépendance de confiance et d'approvisionnement du NPD ; fragilité du gouvernement minoritaire ; contraintes budgétaires [parl-ca]"
+      likelyMoves: "Négociations budgétaires avec le NPD ; annonces de politique énergétique ; réponse de politique commerciale aux États-Unis [parl-ca]"
+      dealability: "Élevée (négociateur pragmatique)"
+
+    - name: "NPD (Jagmeet Singh)"
+      interests: "Maintenir l'influence de la coalition ; avancer les dépenses sociales ; action climatique ; soutien du travail [parl-ca]"
+      resources: "25 sièges ; rôle de faiseur de roi de la coalition ; soutien des syndicats ; portée des médias sociaux [parl-ca]"
+      constraints: "Alternative limitée de formation du gouvernement ; contraintes budgétaires ; pression de la base sur le soutien de la coalition [parl-ca]"
+      likelyMoves: "Négocier les demandes budgétaires ; escalade de la politique climatique ; législation favorable au travail [parl-ca]"
+      dealability: "Élevée (dépendante de la coalition)"
+
+    - name: "Parti conservateur (Pierre Poilievre)"
+      interests: "Prendre le pouvoir ; s'opposer à la tarification du carbone ; conservatisme budgétaire ; politiques favorables aux affaires [parl-ca]"
+      resources: "121 sièges ; financement solide ; soutien des affaires ; accès aux médias [parl-ca]"
+      constraints: "Opposition fragmentée ; aucun partenaire de coalition ; plateforme politique contestée sur les questions sociales [parl-ca]"
+      likelyMoves: "Messagerie d'opposition ; raffinement de la plateforme politique ; organisation régionale [parl-ca]"
+      dealability: "Moyen (le rôle d'opposition limite l'influence)"
+
+    - name: "Gendarmerie royale du Canada (GRC)"
+      interests: "Maintenir l'ordre public ; budget ; autonomie opérationnelle [csis]"
+      resources: "28 000 personnels ; autorité d'application de la loi ; capacités de renseignement [dnd-ca]"
+      constraints: "Surveillance politique ; contraintes budgétaires ; défis de recrutement ; examen public [dnd-ca]"
+      likelyMoves: "Opérations de routine ; initiatives de cybersécurité ; sécurité frontalière [csis]"
+      dealability: "Moyen (professionnel, apolitique)"
+
+    - name: "Forces armées canadiennes"
+      interests: "Préparation opérationnelle ; modernisation de l'équipement ; engagements de l'OTAN [dnd-ca]"
+      resources: "120 000 personnels actifs ; budget de défense (30+ milliards de dollars) ; intégration à l'OTAN [dnd-ca]"
+      constraints: "Équipement vieillissant ; défis de recrutement ; expansion des opérations arctiques ; intégration américaine [dnd-ca]"
+      likelyMoves: "Exercices de l'OTAN ; opérations arctiques ; approvisionnement en équipement [dnd-ca]"
+      dealability: "Moyen (professionnel, apolitique)"
+
+    - name: "Grandes entreprises (Banques, Énergie, Tech)"
+      interests: "Maximisation des profits ; stabilité réglementaire ; rythme de la transition énergétique ; accès au commerce [chamber-ca]"
+      resources: "Capital ; emploi ; pouvoir de lobbying ; influence médiatique [chamber-ca]"
+      constraints: "Pression de consolidation budgétaire ; tarification du carbone ; incertitude de la transition énergétique ; risque commercial américain [chamber-ca]"
+      likelyMoves: "Lobbying sur la transition énergétique ; plaidoyer en matière de politique commerciale ; décisions d'investissement [chamber-ca]"
+      dealability: "Élevée (le gouvernement dépend de la confiance des affaires)"
+
+    - name: "Premiers ministres provinciaux"
+      interests: "Autonomie régionale ; transferts budgétaires ; politique énergétique (en particulier l'Alberta) [parl-ca]"
+      resources: "Autorité gouvernementale provinciale ; circonscriptions régionales ; influence fédérale-provinciale [parl-ca]"
+      constraints: "Autorité fédérale sur le commerce/défense ; dépendance aux transferts fédéraux [parl-ca]"
+      likelyMoves: "Négociations fédérales-provinciales sur l'énergie ; financement des soins de santé ; péréquation [parl-ca]"
+      dealability: "Élevée (la coordination fédérale-provinciale est nécessaire)"
+
+    - name: "Syndicats (Congrès du travail du Canada)"
+      interests: "Croissance des salaires ; conditions de travail ; dépenses sociales ; soutien du NPD [tbs-ca]"
+      resources: "3+ millions de membres ; capacité de grève ; dons politiques ; campagnes médiatiques [tbs-ca]"
+      constraints: "Croissance des salaires à la traîne de l'inflation ; déclin de la fabrication ; contraintes salariales du secteur public [tbs-ca]"
+      likelyMoves: "Négociations salariales ; menaces de grève ; pression du NPD sur le soutien de la coalition [parl-ca]"
+      dealability: "Moyen (influence de la coalition du NPD)"
+
+    - name: "Leadership autochtone"
+      interests: "Autodétermination ; droits fonciers ; contrôle des ressources ; réconciliation [trc-ca]"
+      resources: "Reconnaissance constitutionnelle ; revendications territoriales ; voix politique croissante ; soutien international [trc-ca]"
+      constraints: "Autorité fédérale ; compétence provinciale ; pression d'extraction de ressources ; ressources économiques limitées [trc-ca]"
+      likelyMoves: "Négociations sur les revendications territoriales ; opposition aux projets de ressources ; initiatives de réconciliation [trc-ca]"
+      dealability: "Moyen (influence politique croissante)"
+
+    - name: "Groupes environnementaux"
+      interests: "Accélération de l'action climatique ; transition énergétique ; droits autochtones [iea]"
+      resources: "Capacité de mobilisation ; campagnes médiatiques ; dons politiques ; réseaux internationaux [iea]"
+      constraints: "Fragmentés (certains soutiennent les Libéraux, certains le NPD) ; pouvoir direct limité ; contraintes de financement [parl-ca]"
+      likelyMoves: "Plaidoyer en matière de politique climatique ; opposition aux projets d'énergie ; alliance avec les autochtones [iea]"
+      dealability: "Moyen (influence politique croissante)"
+
+  external:
+    - name: "États-Unis"
+      interests: "Avantage commercial ; sécurité énergétique ; influence arctique ; partage du fardeau de la défense [gc-trade]"
+      resources: "Puissance militaire ; levier économique ; domination technologique ; accès au marché [gc-trade]"
+      constraints: "Contraintes du Congrès ; politique intérieure ; concurrence avec la Chine [global-affairs-ca]"
+      likelyMoves: "Annonces de politique commerciale ; signaux de renégociation de l'ALÉCC ; stratégie arctique [gc-trade]"
+      dealability: "Élevée (mais dynamique de puissance asymétrique)"
+
+    - name: "Mexique"
+      interests: "Renégociation de l'ALÉCC ; coopération énergétique ; gestion de la migration [gc-trade]"
+      resources: "Statut de partenaire de l'ALÉCC ; ressources énergétiques ; proximité géographique [gc-trade]"
+      constraints: "Domination américaine dans la relation trilatérale ; levier indépendant limité [gc-trade]"
+      likelyMoves: "Coordination de l'ALÉCC avec le Canada ; discussions sur le commerce de l'énergie [gc-trade]"
+      dealability: "Moyen (dynamique trilatérale)"
+
+    - name: "Royaume-Uni (partenaire Five Eyes)"
+      interests: "Partage du renseignement ; coopération en défense ; commerce [global-affairs-ca]"
+      resources: "Capacités de renseignement ; alliance de l'OTAN ; relation commerciale [global-affairs-ca]"
+      constraints: "Levier direct limité ; négociations commerciales post-Brexit en cours [global-affairs-ca]"
+      likelyMoves: "Coordination du renseignement ; coopération en défense ; discussions commerciales [global-affairs-ca]"
+      dealability: "Élevée (intérêts alignés)"
+
+    - name: "Chine"
+      interests: "Accès arctique ; importations de ressources ; acquisition technologique ; contrer Five Eyes [global-affairs-ca]"
+      resources: "Levier économique (commerce, investissement) ; concurrence technologique [global-affairs-ca]"
+      constraints: "Pression américaine sur le Canada ; préoccupations concernant les droits de l'homme ; restrictions technologiques [global-affairs-ca]"
+      likelyMoves: "Négociations commerciales ; escalade de la concurrence technologique ; présence arctique [global-affairs-ca]"
+      dealability: "Faible (concurrence stratégique)"
+
+    - name: "Russie"
+      interests: "Influence arctique ; concurrence énergétique ; contrebalancer l'OTAN [global-affairs-ca]"
+      resources: "Présence militaire ; levier énergétique ; revendications territoriales arctiques [global-affairs-ca]"
+      constraints: "Sanctions occidentales ; levier économique limité ; perception d'encerclement de l'OTAN [global-affairs-ca]"
+      likelyMoves: "Exercices militaires arctiques ; affirmations de souveraineté arctique ; dynamique du marché énergétique [global-affairs-ca]"
+      dealability: "Faible (concurrence stratégique)"
+
+risks:
+  - title: "Friction commerciale américaine / Escalade tarifaire"
+    trigger: "L'administration américaine impose des tarifs sur les produits canadiens ou renégocie unilatéralement l'ALÉCC [gc-trade]."
+    probability: High
+    impact: High
+    timeHorizon: "0–3 mois"
+    leadingIndicators: "Annonces de politique commerciale américaine ; négociations commerciales bilatérales ; pression du Congrès sur les importations [gc-trade]."
+    mitigants: "Canaux de renégociation de l'ALÉCC ; exemptions sectorielles ; mesures tarifaires de rétorsion ; diversification des exportations [gc-trade] [global-affairs-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Effondrement du gouvernement minoritaire"
+    trigger: "Le NPD retire le soutien de confiance et d'approvisionnement ; le gouvernement perd un vote de confiance ; élection déclenchée [parl-ca]."
+    probability: Med
+    impact: High
+    timeHorizon: "3–12 mois"
+    leadingIndicators: "Tensions de la coalition ; échec des négociations budgétaires ; désaccords politiques ; changements de sondage [parl-ca]."
+    mitigants: "Gestion de la coalition ; législation de compromis ; mathématiques électorales favorables aux Libéraux [parl-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Réaction contre la consolidation budgétaire"
+    trigger: "Le gouvernement annonce des réductions de dépenses ou des augmentations d'impôts ; l'opposition du public et des syndicats s'intensifie ; grèves ou manifestations [imf] [parl-ca]."
+    probability: Med
+    impact: Med
+    timeHorizon: "3–12 mois"
+    leadingIndicators: "Annonce du budget ; propositions de réduction des dépenses ; mobilisation syndicale ; changements d'opinion publique [tbs-ca]."
+    mitigants: "Consolidation progressive ; soutien ciblé aux groupes vulnérables ; communication publique [imf]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Perturbation de la transition énergétique"
+    trigger: "Effondrement des prix du pétrole ; licenciements du secteur énergétique ; crise économique régionale (Alberta, Saskatchewan) [iea]."
+    probability: Med
+    impact: Med
+    timeHorizon: "6–18 mois"
+    leadingIndicators: "Mouvements des prix du pétrole ; annonces des compagnies énergétiques ; données d'emploi ; indicateurs économiques régionaux [iea] [statcan]."
+    mitigants: "Programmes de soutien à la transition énergétique ; diversification économique régionale ; transferts budgétaires fédéraux [iea] [imf]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Crise monétaire / Accélération de la dépréciation"
+    trigger: "Le dollar canadien se déprécie fortement (par rapport à l'USD) ; sorties de capitaux accélèrent ; pic des taux d'intérêt [boc]."
+    probability: Low
+    impact: High
+    timeHorizon: "3–12 mois"
+    leadingIndicators: "Signaux de dépréciation monétaire ; inversions des flux de capitaux ; mouvements des taux d'intérêt ; avis de surveillance de la cote de crédit [boc] [imf]."
+    mitigants: "Intervention monétaire de la Banque du Canada ; signalisation de la consolidation budgétaire ; coordination du FMI [boc] [imf]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Résurgence de l'inflation"
+    trigger: "Les prix alimentaires/énergétiques montent en flèche ; spirale prix-salaires se développe ; la Banque du Canada est forcée de relever fortement les taux [boc]."
+    probability: Low
+    impact: Med
+    timeHorizon: "3–12 mois"
+    leadingIndicators: "Mouvements des prix alimentaires/énergétiques ; accélération de la croissance des salaires ; attentes d'inflation ; négociations de travail [boc] [statcan-food]."
+    mitigants: "Crédibilité de la Banque du Canada et orientation prospective ; resserrement de la politique monétaire ; modération des salaires [boc]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Incident de cybersécurité / Attaque d'infrastructure critique"
+    trigger: "Cyberattaque majeure sur le système financier, le réseau électrique ou l'infrastructure gouvernementale ; violation de données ; perturbation opérationnelle [cse]."
+    probability: Med
+    impact: Med
+    timeHorizon: "0–6 mois"
+    leadingIndicators: "Rapports de renseignement sur les menaces du CST ; modèles d'incidents de cybersécurité ; avis Five Eyes [cse]."
+    mitigants: "Investissements en cybersécurité ; capacités de réponse aux incidents ; coordination internationale Five Eyes [cse] [global-affairs-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Escalade du conflit autochtone"
+    trigger: "Le différend sur les revendications territoriales devient violent ; l'opposition aux projets de ressources s'intensifie ; barrages ou occupations ; confrontation policière [trc-ca]."
+    probability: Low
+    impact: Med
+    timeHorizon: "6–18 mois"
+    leadingIndicators: "Négociations sur les revendications territoriales stagnantes ; annonces de projets de ressources ; mobilisation de protestation ; incidents policiers [trc-ca] [csis]."
+    mitigants: "Initiatives de réconciliation ; processus de consultation obligatoires ; règlements de revendications territoriales ; canaux de dialogue [trc-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Défi de la souveraineté arctique"
+    trigger: "Les revendications arctiques de la Russie ou des États-Unis entrent en conflit avec le Canada ; différends sur les routes du Passage du Nord-Ouest ; risque de confrontation militaire [global-affairs-ca]."
+    probability: Low
+    impact: Med
+    timeHorizon: "12–24 mois"
+    leadingIndicators: "Exercices militaires arctiques ; déclarations d'affirmation territoriale ; activité maritime ; tensions géopolitiques [global-affairs-ca] [dnd-ca]."
+    mitigants: "Coordination de l'OTAN ; investissements en défense arctique ; engagement diplomatique ; programmes d'affirmation de souveraineté [dnd-ca] [global-affairs-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Pandémie / Crise sanitaire"
+    trigger: "Un nouvel agent pathogène émerge ; urgence de santé publique déclarée ; perturbation économique ; choc de la chaîne d'approvisionnement [statcan]."
+    probability: Low
+    impact: High
+    timeHorizon: "0–12 mois"
+    leadingIndicators: "Données de surveillance des maladies ; alertes de l'OMS ; rapports d'épidémie internationale ; signaux de restrictions de voyage [statcan]."
+    mitigants: "Infrastructure de santé publique ; capacité de fabrication de vaccins ; programmes de résilience de la chaîne d'approvisionnement ; réserves budgétaires [imf] [statcan]."
+    lastAssessed: "2026-04-19"

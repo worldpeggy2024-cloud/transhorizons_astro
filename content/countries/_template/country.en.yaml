@@ -1,0 +1,101 @@
+# [COUNTRY NAME] — English Analysis Content
+# Replace all [PLACEHOLDER] text with verified, cited content.
+# Each narrative field MUST contain at least one [source-id] citation.
+# Run: npm run validate:countries
+#
+# How to use: paste Perplexity Deep Research output here section by section.
+# See content/docs/perplexity-authoring-template.md for the prompt.
+
+executiveSnapshot:
+  # 8–10 bullet points. Each bullet MUST have at least one [source-id].
+  - "[Regime type description] [source-slug-1]."
+  - "[Current political equilibrium] [source-slug-2]."
+  - "[Economic model overview] [source-slug-1] [source-slug-2]."
+  - "[Top 3 risks summary] [source-slug-1]."
+  - "[Top 3 watch items, 4–12 weeks] [source-slug-1]."
+  - "[External dependencies summary] [source-slug-2]."
+  - "[Security posture summary] [source-slug-1]."
+  - "[Diplomatic orientation] [source-slug-2]."
+  - "[Data confidence statement] [source-slug-1]."
+  - "[Baseline outlook] [source-slug-2]."
+
+political:
+  powerStructure: |
+    [Who holds executive, legislative, judicial power. Who controls security forces.
+    Media independence. Include citations after factual claims.]
+    [source-slug-1] [source-slug-2].
+
+  stabilityDrivers: |
+    [What legitimizes the regime: elections, economic performance, identity.
+    Armed forces and police loyalty. Coalition composition. Business elite alignment.]
+    [source-slug-1] [source-slug-2].
+
+  shockAbsorbers: |
+    [What cushions economic and political shocks: capital markets, social safety nets,
+    institutions. Also: what could accelerate instability (accelerants).]
+    [source-slug-1] [source-slug-2].
+
+economy:
+  macroReality: |
+    [GDP growth, sector performance, fiscal position (deficit, debt), monetary policy,
+    inflation, credit rating. Include data years and specific figures.]
+    [source-slug-1] [source-slug-2].
+
+  externalVulnerability: |
+    [Exports and imports by value and commodity. Trade partner concentration.
+    Sovereign debt holders. IMF status. Sanctions exposure. Shipping/logistics risks.]
+    [source-slug-1] [source-slug-2].
+
+  politicalEconomy: |
+    [Who benefits from the current model. Business elite structure (oligarchic vs. dispersed).
+    What reforms are technically necessary vs. politically possible. Subsidies. Pensions.]
+    [source-slug-1] [source-slug-2].
+
+security:
+  internal: |
+    [Insurgency/armed groups. Organized crime. Communal violence. Terrorism threat level.
+    Military strength and loyalty. Intelligence services. Corruption in security forces.
+    Border situation. Irregular migration.]
+    [source-slug-1] [source-slug-2].
+
+  diplomacy: |
+    [Treaty alliances. Transactional partners. Key bilateral relationships.
+    Regional flashpoints and disputes. Multilateral memberships.]
+    [source-slug-1] [source-slug-2].
+
+actors:
+  domestic:
+    # 5–10 domestic actors. Fields without obvious citation can omit [id].
+    # Fields WITH factual claims (seat counts, troop numbers, etc.) MUST cite.
+    - name: "[Actor Name]"
+      interests: "[What they want] [source-slug-1]"
+      resources: "[What power/capacity they have] [source-slug-1]"
+      constraints: "[What limits them] [source-slug-2]"
+      likelyMoves: "[Expected actions in next 6–18 months] [source-slug-2]"
+      dealability: "High | Medium | Low (one-line explanation)"
+
+    # Add more actors...
+
+  external:
+    # 3–5 external actors.
+    - name: "[Country/Organization]"
+      interests: "[What they want from this country] [source-slug-1]"
+      resources: "[Leverage they hold] [source-slug-1]"
+      constraints: "[What limits their influence] [source-slug-2]"
+      likelyMoves: "[Expected actions] [source-slug-2]"
+      dealability: "High | Medium | Low (one-line explanation)"
+
+    # Add more external actors...
+
+risks:
+  # 5–10 risks. trigger, leadingIndicators, mitigants MUST have citations.
+  - title: "[Risk Title]"
+    trigger: "[What event triggers this risk] [source-slug-1]."
+    probability: High    # High | Med | Low
+    impact: High         # High | Med | Low
+    timeHorizon: "[e.g. 0–3 months | 3–12 months | 12–24 months]"
+    leadingIndicators: "[Observable signals that this risk is materializing] [source-slug-2]."
+    mitigants: "[What could reduce probability or impact] [source-slug-1] [source-slug-2]."
+    lastAssessed: "YYYY-MM-DD"
+
+  # Add more risks...

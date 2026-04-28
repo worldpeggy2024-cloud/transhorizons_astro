@@ -1,0 +1,389 @@
+# Canada — English Analysis Content
+# Citation IDs reference canada.sources.yaml. Every narrative field must contain
+# at least one [id] citation. Run `npm run validate:countries` to check.
+#
+# ⚠ RESEARCH QUALITY NOTICE ⚠
+# This content was migrated from an earlier draft and has NOT been independently
+# verified against primary sources. Treat as a structural scaffold only.
+# Before publication: re-research each section using the Perplexity Deep Research
+# template at content/docs/perplexity-authoring-template.md and replace all
+# text below with verified, cited content.
+#
+# Source ID → slug mapping (for reference when editing):
+#   [pm-ca] Prime Minister of Canada (Official)
+#   [parl-ca] Parliament of Canada
+#   [imf] IMF Article IV
+#   [statcan] Statistics Canada
+#   [gc-trade] Government of Canada Trade Data
+#   [iea] International Energy Agency
+#   [csis] CSIS
+#   [cse] Communications Security Establishment
+#   [global-affairs-ca] Global Affairs Canada
+#   [wjp] World Justice Project
+#   [elections-ca] Elections Canada
+#   [rsf] Reporters Without Borders
+#   [pew] Pew Research Center
+#   [trc-ca] Truth and Reconciliation Commission
+#   [chamber-ca] Canadian Chamber of Commerce (Interpretation)
+#   [tbs-ca] Treasury Board of Canada
+#   [boc] Bank of Canada
+#   [public-accounts-ca] Public Accounts of Canada
+#   [statcan-food] Food Price Report (Statistics Canada)
+#   [statcan-trade] Statistics Canada Trade Database
+#   [imf-surveillance] IMF Financial Sector Assessment
+#   [osfi] OSFI
+#   [dnd-ca] Department of National Defence
+
+executiveSnapshot:
+  - "Regime type: Parliamentary democracy with Westminster system [pm-ca]; power won through federal elections, currently held by Liberal minority government led by Prime Minister Mark Carney [parl-ca]. Executive authority vested in Prime Minister and Cabinet; legislative power shared with bicameral Parliament."
+  - "Current political equilibrium: Liberal minority government (2025–present) dependent on New Democratic Party (NDP) confidence-and-supply agreement for legislative passage [parl-ca]. Conservative opposition positioned as principal challenger; Bloc Québécois holds regional leverage in Quebec; Green Party holds single seat."
+  - "Economic model: Advanced post-industrial economy; services sector dominates (70%+ of GDP) with particular strength in financial services, technology, energy, and natural resources [imf] [statcan]. Commodity exports (energy, metals, agricultural products) generate significant foreign exchange; manufacturing concentrated in automotive and aerospace sectors."
+  - "Top 3 risks (6–18 months): (1) U.S. trade friction — tariff escalation or trade agreement renegotiation could disrupt $2.3 trillion bilateral trade relationship [gc-trade]; (2) Fiscal sustainability — federal debt-to-GDP ratio elevated at ~95% (2025); rising interest rates increase debt servicing costs [imf]; (3) Energy transition disruption — oil and gas sector transition creates regional economic vulnerability in Alberta and Saskatchewan [iea]."
+  - "Top 3 watch items (4–12 weeks): (1) U.S. trade policy announcements [gc-trade]; (2) Bank of Canada interest rate decisions [boc]; (3) Federal budget negotiations and NDP support durability [parl-ca]."
+  - "External dependencies: 75%+ of exports go to U.S.; automotive, agricultural, and energy sectors heavily dependent on U.S. market access [gc-trade]. Net energy exporter; crude oil and natural gas exports critical to fiscal revenue [iea]. Sovereign debt primarily held domestically; access to international capital markets remains stable [imf]."
+  - "Security posture: Low internal violence risk; RCMP and provincial police maintain effective law enforcement; no active insurgency or terrorism threat [csis]. Border security stable; no militarized border disputes. Arctic sovereignty assertions ongoing but not militarized. Cybersecurity threats from state and non-state actors increasing [cse]."
+  - "Diplomatic orientation: NATO member and U.S. ally; strong alignment with Western democracies (G7, OECD, Five Eyes intelligence partnership) [parl-ca] [global-affairs-ca]. Hedging toward Indo-Pacific engagement (CPTPP member); cautious relationship with China (technology competition, human rights concerns); pragmatic relationship with Russia (sanctions aligned with Western coalition) [global-affairs-ca]."
+  - "Data confidence: HIGH for macro-economic data [imf] [statcan]; HIGH for governance structure [pm-ca]; MEDIUM for political coalition durability (forward-looking assessments) [parl-ca]; MEDIUM for energy transition timeline (policy-dependent) [iea]."
+  - "Baseline outlook: Continued political stability under minority government [parl-ca]; moderate economic growth (2–3% annually) constrained by fiscal consolidation and external trade headwinds [imf]; energy transition accelerating but creating regional adjustment pressures [iea]; no near-term regime change risk."
+
+political:
+  powerStructure: |
+    Prime Minister Mark Carney (Liberal) holds executive authority; Cabinet of ~30 ministers;
+    Prime Minister's Office (PMO) controls policy agenda and communications [pm-ca] [parl-ca].
+    Carney's authority derives from Liberal plurality in House of Commons (155 of 338 seats) and
+    NDP confidence-and-supply agreement. Royal Canadian Mounted Police (RCMP) reports to Minister
+    of Public Safety; Canadian Armed Forces report to Minister of Defence; Canadian Security
+    Intelligence Service (CSIS) reports to Minister of National Security. No evidence of security
+    service factionalism or disloyalty to civilian authority [csis]. Supreme Court of Canada
+    (9 justices) independent and insulated from political pressure; lower courts (Federal,
+    Provincial, Superior) functional and impartial [wjp]. Elections Canada (federal) and
+    provincial election commissions operate independently; no evidence of electoral manipulation
+    or fraud [elections-ca]. Media: public broadcaster (CBC/Radio-Canada) operates independently;
+    private media (Globe and Mail, National Post, CTV, Global News) maintain editorial independence;
+    digital/social media increasingly fragmented [rsf]. No state censorship; press freedom rated
+    HIGH by Reporters Without Borders [rsf].
+
+  stabilityDrivers: |
+    Legitimacy rests on democratic elections and the welfare state's performance [parl-ca].
+    Economic growth averaging 2–3% annually; unemployment low (~5%); public services (healthcare,
+    education) functional but under fiscal pressure [imf] [statcan]. Canadian identity strong;
+    national pride in multicultural model; no significant separatist movements outside historical
+    Quebec context [pew]. Multiculturalism as official policy; immigration levels politically
+    contested but not delegitimizing; Indigenous reconciliation agenda ongoing but progress uneven
+    [trc-ca]. Armed Forces loyalty: Canadian Armed Forces (120,000 active personnel) demonstrate
+    consistent loyalty to civilian authority; no evidence of military factionalism or coup risk
+    [csis]. Police loyalty: RCMP and provincial police forces respond to civilian political
+    authority; no evidence of security service capture by ruling party [csis]. Ruling coalition:
+    Liberal Party + NDP (confidence-and-supply); represents ~60% of House seats; sufficient to
+    pass legislation [parl-ca]. Business elites generally support Liberal economic policies; some
+    friction over carbon pricing and energy transition pace [chamber-ca]. Provincial premiers
+    (especially Ontario, Quebec, Alberta) exercise significant influence; federal-provincial
+    coordination mechanisms functional but sometimes contentious [parl-ca].
+
+  shockAbsorbers: |
+    Absorbers: Deep capital markets and AAA-adjacent sovereign credit [imf]. Bank of Canada
+    independent and credible; inflation-targeting framework functional; currency (Canadian dollar)
+    stable [boc]. Employment Insurance, Canada Pension Plan, provincial healthcare systems provide
+    shock absorption; coverage extensive but funding pressures rising [statcan]. Federal-provincial
+    fiscal arrangements (equalization payments, transfer programs) institutionalized; elite
+    consensus on democratic governance strong [parl-ca]. Accelerants: Inflation spikes from food
+    and energy price volatility could trigger subsidy demands and fiscal pressure [imf].
+    Contested elections: 2029 federal election could produce hung parliament or unexpected result;
+    minority government dynamics create instability risk [parl-ca]. Corruption scandals: any major
+    corruption revelations could undermine government legitimacy; current government faces moderate
+    allegations (lobbying, contract awards) but no systemic scandal [public-accounts-ca]. Elite
+    splits: potential split within Liberal party over energy transition pace or fiscal policy;
+    Conservative party unity could fracture over social policy [parl-ca].
+
+economy:
+  macroReality: |
+    GDP growth is forecast at 2–3% annually for 2026–2027; below historical average due to fiscal
+    headwinds and external uncertainty [imf]. Services sector (financial services, technology,
+    professional services) growing 3–4% annually [imf]; energy sector exports stable; construction
+    and real estate activity moderate [statcan]. Fiscal consolidation constraining public investment;
+    business investment cautious due to policy uncertainty; labor supply constraints in skilled
+    trades; infrastructure aging in some regions [imf] [statcan]. Federal deficit ~$30–40 billion
+    annually (2025–2026); deficit-to-GDP ratio ~1.5–2% [imf]. Federal debt-to-GDP ~95%; elevated
+    by historical standards; debt servicing costs rising as interest rates increase [imf]. Domestic
+    capital markets (bonds, deposits) primary financing source; no reliance on external borrowing;
+    credit rating stable (AAA/Aa1) [imf]. Government committed to deficit reduction; spending
+    restraint and revenue measures underway; political economy of consolidation difficult in minority
+    government context [parl-ca] [imf]. Food price inflation moderating from 2023–2024 peaks;
+    supply chains normalized; no acute food security risk [statcan-food]. Oil and natural gas prices
+    volatile; geopolitical risks (Middle East, Russia) create upside pressure; renewable energy
+    transition reducing long-term energy cost inflation [iea]. Canadian dollar weakness (vs. U.S.
+    dollar) increases import costs; energy and commodity imports affected; pass-through to consumer
+    prices moderate [boc]. Headline inflation currently ~2.5% (target: 2%); within Bank of Canada
+    comfort zone; no acute inflation crisis [boc].
+
+  externalVulnerability: |
+    Exports: $660 billion annually (2025); concentrated in energy (35%), metals/minerals (15%),
+    agricultural products (10%), manufactured goods (25%), services (15%) [gc-trade] [statcan-trade].
+    Imports: $700 billion annually (2025); concentrated in machinery/equipment (30%), vehicles (15%),
+    chemicals (10%), energy (5%), other [gc-trade]. Trade balance: slight deficit; energy exports
+    offset by machinery/equipment imports [gc-trade]. Export concentration: heavy dependence on U.S.
+    market (75%+ of exports); commodity price volatility creates revenue instability [gc-trade].
+    Debt holders: ~90% of federal debt held domestically (Canadian pension funds, insurance companies,
+    banks, individuals); ~10% held by foreign investors [imf]. Maturity wall: federal debt maturity
+    profile well-distributed; no acute refinancing crisis; average maturity ~5–6 years [imf]. Canada
+    not under IMF program; no external financing constraints; IMF rates Canada as stable [imf-surveillance].
+    Rising interest rates increase debt servicing costs; fiscal consolidation necessary to stabilize
+    debt trajectory [imf]. Canada aligned with Western sanctions on Russia; limited direct economic
+    impact (trade with Russia <1% of total) [gc-trade]. Oil and natural gas price volatility affects
+    fiscal revenue and trade balance; energy sector represents ~10% of GDP; commodity price shock
+    could trigger fiscal stress [iea]. St. Lawrence Seaway and Great Lakes critical for trade; Arctic
+    shipping routes emerging but not yet economically significant; no acute shipping risk [gc-trade].
+
+  politicalEconomy: |
+    Who benefits: Alberta and Saskatchewan benefit from energy exports; Ontario and Quebec benefit
+    from manufacturing and services; Atlantic provinces dependent on federal transfers [statcan].
+    Energy, financial services, technology, professional services benefit from current model;
+    agriculture benefits from commodity prices; manufacturing faces competitive pressure [statcan].
+    No dominant oligarchic structure; business concentrated in large corporations (banks, energy
+    companies, technology firms) with dispersed ownership; no single family or clan dominance
+    [chamber-ca]. Technical needs: Carbon pricing acceleration; fiscal consolidation; labor market
+    reforms; infrastructure investment; energy transition support [iea]. Political possibility:
+    Carbon pricing politically contentious; fiscal consolidation difficult in minority government;
+    labor market reforms blocked by NDP; infrastructure investment supported but funding limited
+    [parl-ca] [imf]. Energy transition reforms possible with NDP support; fiscal consolidation
+    requires cross-party consensus; no major reforms likely in minority government context [parl-ca].
+    Energy subsidies limited; agricultural subsidies moderate; no major fuel/food subsidies [imf].
+    Federal public sector wages competitive; no acute wage pressure; pension obligations significant
+    (~$300 billion liability) [tbs-ca]. Canada Pension Plan (CPP) and Old Age Security (OAS) provide
+    retirement income; sustainability concerns for OAS as population ages; CPP actuarially sound [osfi].
+    No price controls; market-based pricing; government provides targeted income support (Canada Child
+    Benefit, Goods and Services Tax credit) [imf].
+
+security:
+  internal: |
+    No active insurgency; no armed groups challenging state authority [csis]. Organized crime present
+    (drug trafficking, human trafficking) but not destabilizing; law enforcement maintains control
+    [csis]. Minimal communal violence; no active ethnic or religious conflict; Indigenous-settler
+    tensions present but not violent [csis] [trc-ca]. Low terrorism risk; no active terrorist groups;
+    occasional lone-wolf incidents; threat level assessed as LOW by CSIS [cse]. Canadian Armed Forces
+    (120,000 active, 30,000 reserve) operationally capable; equipment aging in some areas; recruitment
+    and retention challenges [dnd-ca]. CSIS operates domestically; Canadian Armed Forces Intelligence
+    and Security operates internationally; Five Eyes partnership provides intelligence sharing [cse].
+    Low corruption in security forces; professional military and police culture; no evidence of
+    security force capture [csis]. U.S. (stable, integrated); Mexico (via USMCA trade); no
+    militarized border disputes [gc-trade]. U.S. gun violence spillover into Canada (illegal
+    firearms); U.S. drug trafficking (fentanyl) significant problem [csis]. Asylum seekers from
+    U.S. (irregular crossings) manageable; no mass refugee influx [csis]. No active cross-border
+    militia activity; Indigenous sovereignty movements present but non-violent [trc-ca].
+
+  diplomacy: |
+    Treaty allies: NATO member; NORAD partner (U.S. air defense integration); Five Eyes
+    intelligence partner (UK, Australia, New Zealand, U.S.) [global-affairs-ca]. Transactional
+    partners: USMCA trade partner (Mexico, U.S.); CPTPP member (11 Indo-Pacific nations); G7
+    member; OECD member [global-affairs-ca] [gc-trade]. U.S. alignment: Deep integration (trade,
+    defense, intelligence); Canada dependent on U.S. market and security umbrella; no strategic
+    divergence [gc-trade] [global-affairs-ca]. China hedging: Technology competition (5G,
+    semiconductors, AI); human rights concerns (Uyghurs, Hong Kong); trade relationship significant
+    but cautious; no military confrontation [global-affairs-ca]. Russia pragmatism: Sanctions
+    aligned with Western coalition; no direct military confrontation; Arctic sovereignty assertions
+    monitored [global-affairs-ca]. USMCA: Trilateral trade agreement; renegotiation discussions
+    ongoing; critical for Canadian trade [gc-trade]. NATO: Active participant; contributes to
+    Eastern European defense; Arctic security focus [global-affairs-ca]. CPTPP: Indo-Pacific trade
+    engagement; strategic hedging toward China [global-affairs-ca]. Arctic sovereignty assertions
+    (Northwest Passage, continental shelf) ongoing but not militarized; U.S. recognition of
+    Canadian Arctic claims important [global-affairs-ca]. Indigenous self-determination narrative;
+    federal-provincial jurisdiction disputes; no external sovereignty challenges [parl-ca] [trc-ca].
+
+actors:
+  domestic:
+    - name: "PM Mark Carney (Liberal)"
+      interests: "Maintain government; pass budget; energy transition; fiscal consolidation [pm-ca]"
+      resources: "Executive authority; PMO apparatus; Liberal party machinery; media access [pm-ca]"
+      constraints: "NDP confidence-and-supply dependency; minority government fragility; fiscal constraints [parl-ca]"
+      likelyMoves: "Budget negotiations with NDP; energy policy announcements; trade policy response to U.S. [parl-ca]"
+      dealability: "High (pragmatic negotiator)"
+
+    - name: "NDP (Jagmeet Singh)"
+      interests: "Maintain coalition leverage; advance social spending; climate action; labor support [parl-ca]"
+      resources: "25 seats; coalition kingmaker role; labor union backing; social media reach [parl-ca]"
+      constraints: "Limited government formation alternative; fiscal constraints; pressure from base on coalition support [parl-ca]"
+      likelyMoves: "Negotiate budget demands; climate policy escalation; labor-friendly legislation [parl-ca]"
+      dealability: "High (coalition dependent)"
+
+    - name: "Conservative Party (Pierre Poilievre)"
+      interests: "Gain power; oppose carbon pricing; fiscal conservatism; business-friendly policies [parl-ca]"
+      resources: "121 seats; strong fundraising; business support; media access [parl-ca]"
+      constraints: "Fragmented opposition; no coalition partners; policy platform contested on social issues [parl-ca]"
+      likelyMoves: "Opposition messaging; policy platform refinement; regional organizing [parl-ca]"
+      dealability: "Medium (opposition role limits leverage)"
+
+    - name: "Royal Canadian Mounted Police (RCMP)"
+      interests: "Maintain law and order; budget; operational autonomy [csis]"
+      resources: "28,000 personnel; law enforcement authority; intelligence capabilities [dnd-ca]"
+      constraints: "Political oversight; budget constraints; recruitment challenges; public scrutiny [dnd-ca]"
+      likelyMoves: "Routine operations; cybersecurity initiatives; border security [csis]"
+      dealability: "Medium (professional, non-political)"
+
+    - name: "Canadian Armed Forces"
+      interests: "Operational readiness; equipment modernization; NATO commitments [dnd-ca]"
+      resources: "120,000 active personnel; defense budget ($30+ billion); NATO integration [dnd-ca]"
+      constraints: "Equipment aging; recruitment challenges; Arctic operations expansion; U.S. integration [dnd-ca]"
+      likelyMoves: "NATO exercises; Arctic operations; equipment procurement [dnd-ca]"
+      dealability: "Medium (professional, non-political)"
+
+    - name: "Big Business (Banks, Energy, Tech)"
+      interests: "Profit maximization; regulatory stability; energy transition pace; trade access [chamber-ca]"
+      resources: "Capital; employment; lobbying power; media influence [chamber-ca]"
+      constraints: "Fiscal consolidation pressure; carbon pricing; energy transition uncertainty; U.S. trade risk [chamber-ca]"
+      likelyMoves: "Lobbying on energy transition; trade policy advocacy; investment decisions [chamber-ca]"
+      dealability: "High (government dependent on business confidence)"
+
+    - name: "Provincial Premiers"
+      interests: "Regional autonomy; fiscal transfers; energy policy (especially Alberta) [parl-ca]"
+      resources: "Provincial government authority; regional constituencies; federal-provincial leverage [parl-ca]"
+      constraints: "Federal authority on trade/defense; fiscal dependency on federal transfers [parl-ca]"
+      likelyMoves: "Federal-provincial negotiations on energy; healthcare funding; equalization [parl-ca]"
+      dealability: "High (federal-provincial coordination necessary)"
+
+    - name: "Labor Unions (Canadian Labour Congress)"
+      interests: "Wage growth; working conditions; social spending; NDP support [tbs-ca]"
+      resources: "3+ million members; strike capacity; political donations; media campaigns [tbs-ca]"
+      constraints: "Wage growth lagging inflation; manufacturing decline; public sector wage constraints [tbs-ca]"
+      likelyMoves: "Wage negotiations; strike threats; NDP pressure on coalition support [parl-ca]"
+      dealability: "Medium (NDP coalition leverage)"
+
+    - name: "Indigenous Leadership"
+      interests: "Self-determination; land rights; resource control; reconciliation [trc-ca]"
+      resources: "Constitutional recognition; land claims; growing political voice; international support [trc-ca]"
+      constraints: "Federal authority; provincial jurisdiction; resource extraction pressure; limited economic resources [trc-ca]"
+      likelyMoves: "Land claim negotiations; resource project opposition; reconciliation initiatives [trc-ca]"
+      dealability: "Medium (increasing political leverage)"
+
+    - name: "Environmental Groups"
+      interests: "Climate action acceleration; energy transition; Indigenous rights [iea]"
+      resources: "Mobilization capacity; media campaigns; political donations; international networks [iea]"
+      constraints: "Fragmented (some support Liberals, some NDP); limited direct power; funding constraints [parl-ca]"
+      likelyMoves: "Climate policy advocacy; energy project opposition; Indigenous alliance building [iea]"
+      dealability: "Medium (growing political influence)"
+
+  external:
+    - name: "United States"
+      interests: "Trade advantage; energy security; Arctic influence; NATO burden-sharing [gc-trade]"
+      resources: "Military power; economic leverage; technology dominance; market access [gc-trade]"
+      constraints: "Congressional constraints; domestic politics; China competition [global-affairs-ca]"
+      likelyMoves: "Trade policy announcements; USMCA renegotiation signals; Arctic strategy [gc-trade]"
+      dealability: "High (but asymmetric power dynamic)"
+
+    - name: "Mexico"
+      interests: "USMCA renegotiation; energy cooperation; migration management [gc-trade]"
+      resources: "USMCA partner status; energy resources; geographic proximity [gc-trade]"
+      constraints: "U.S. dominance in trilateral relationship; limited independent leverage [gc-trade]"
+      likelyMoves: "USMCA coordination with Canada; energy trade discussions [gc-trade]"
+      dealability: "Medium (trilateral dynamic)"
+
+    - name: "United Kingdom (Five Eyes Partner)"
+      interests: "Intelligence sharing; defense cooperation; trade [global-affairs-ca]"
+      resources: "Intelligence capabilities; NATO alliance; trade relationship [global-affairs-ca]"
+      constraints: "Limited direct leverage; post-Brexit trade negotiations ongoing [global-affairs-ca]"
+      likelyMoves: "Intelligence coordination; defense cooperation; trade discussions [global-affairs-ca]"
+      dealability: "High (aligned interests)"
+
+    - name: "China"
+      interests: "Market access; technology acquisition; Arctic influence [global-affairs-ca]"
+      resources: "Economic leverage (trade, investment); technology competition [global-affairs-ca]"
+      constraints: "U.S. pressure on Canada; human rights concerns; technology restrictions [global-affairs-ca]"
+      likelyMoves: "Trade negotiations; technology competition escalation; Arctic presence [global-affairs-ca]"
+      dealability: "Low (strategic competition)"
+
+    - name: "Russia"
+      interests: "Arctic influence; energy competition; NATO counterbalance [global-affairs-ca]"
+      resources: "Military presence; energy leverage; Arctic territorial claims [global-affairs-ca]"
+      constraints: "Western sanctions; limited economic leverage; NATO encirclement perception [global-affairs-ca]"
+      likelyMoves: "Arctic military exercises; Arctic territorial assertions; energy market dynamics [global-affairs-ca]"
+      dealability: "Low (strategic competition)"
+
+risks:
+  - title: "U.S. Trade Friction / Tariff Escalation"
+    trigger: "U.S. administration imposes tariffs on Canadian goods or renegotiates USMCA terms unilaterally [gc-trade]."
+    probability: High
+    impact: High
+    timeHorizon: "0–3 months"
+    leadingIndicators: "U.S. trade policy announcements; bilateral trade negotiations; Congressional pressure on imports [gc-trade]."
+    mitigants: "USMCA renegotiation channels; sectoral exemptions; retaliatory tariff measures; export diversification [gc-trade] [global-affairs-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Minority Government Collapse"
+    trigger: "NDP withdraws confidence-and-supply; government loses confidence vote; federal election triggered [parl-ca]."
+    probability: Med
+    impact: High
+    timeHorizon: "3–12 months"
+    leadingIndicators: "Coalition tensions; budget negotiations failure; policy disagreements; polling shifts [parl-ca]."
+    mitigants: "Coalition management; compromise legislation; electoral math favorable to Liberals [parl-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Fiscal Consolidation Backlash"
+    trigger: "Government announces spending cuts or tax increases; public/union opposition escalates; strikes or protests [imf] [parl-ca]."
+    probability: Med
+    impact: Med
+    timeHorizon: "3–12 months"
+    leadingIndicators: "Budget announcement; spending cut proposals; union mobilization; public opinion shifts [tbs-ca]."
+    mitigants: "Gradual consolidation; targeted support for vulnerable groups; public communication [imf]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Energy Transition Disruption"
+    trigger: "Oil price collapse; energy sector layoffs; regional economic crisis in Alberta or Saskatchewan [iea]."
+    probability: Med
+    impact: Med
+    timeHorizon: "6–18 months"
+    leadingIndicators: "Oil price movements; energy company announcements; employment data; regional economic indicators [iea] [statcan]."
+    mitigants: "Energy transition support programs; regional economic diversification; federal fiscal transfers [iea] [imf]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Currency Crisis / Depreciation Acceleration"
+    trigger: "Canadian dollar depreciates sharply (vs. USD); capital outflows accelerate; interest rate spike [boc]."
+    probability: Low
+    impact: High
+    timeHorizon: "3–12 months"
+    leadingIndicators: "Currency depreciation signals; capital flow reversals; interest rate movements; credit rating watch notices [boc] [imf]."
+    mitigants: "Bank of Canada monetary intervention; fiscal consolidation signaling; IMF coordination [boc] [imf]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Inflation Resurgence"
+    trigger: "Food/energy prices spike; wage-price spiral develops; Bank of Canada forced to raise rates sharply [boc]."
+    probability: Low
+    impact: Med
+    timeHorizon: "3–12 months"
+    leadingIndicators: "Food/energy price movements; wage growth acceleration; inflation expectations; labor negotiations [boc] [statcan-food]."
+    mitigants: "Bank of Canada credibility and forward guidance; monetary policy tightening; wage moderation [boc]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Cybersecurity Incident / Critical Infrastructure Attack"
+    trigger: "Major cyberattack on financial system, power grid, or government infrastructure; data breach; operational disruption [cse]."
+    probability: Med
+    impact: Med
+    timeHorizon: "0–6 months"
+    leadingIndicators: "CSE threat intelligence reports; cybersecurity incident patterns; Five Eyes advisories [cse]."
+    mitigants: "Cybersecurity investments; incident response capabilities; international Five Eyes coordination [cse] [global-affairs-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Indigenous Conflict Escalation"
+    trigger: "Land claim dispute turns violent; resource project opposition escalates; roadblocks or occupations; police confrontation [trc-ca]."
+    probability: Low
+    impact: Med
+    timeHorizon: "6–18 months"
+    leadingIndicators: "Land claim negotiations stalling; resource project announcements; protest mobilization; police incidents [trc-ca] [csis]."
+    mitigants: "Reconciliation initiatives; mandatory consultation processes; land claim settlements; dialogue channels [trc-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Arctic Sovereignty Challenge"
+    trigger: "Russian or U.S. Arctic claims conflict with Canada; Northwest Passage shipping route disputes; military confrontation risk [global-affairs-ca]."
+    probability: Low
+    impact: Med
+    timeHorizon: "12–24 months"
+    leadingIndicators: "Arctic military exercises; territorial assertion statements; shipping activity; geopolitical tensions [global-affairs-ca] [dnd-ca]."
+    mitigants: "NATO coordination; Arctic defense investments; diplomatic engagement; sovereignty assertion programs [dnd-ca] [global-affairs-ca]."
+    lastAssessed: "2026-04-19"
+
+  - title: "Pandemic / Health Crisis"
+    trigger: "Novel pathogen emerges; public health emergency declared; economic disruption; supply chain shock [statcan]."
+    probability: Low
+    impact: High
+    timeHorizon: "0–12 months"
+    leadingIndicators: "Disease surveillance data; WHO alerts; international outbreak reports; travel restriction signals [statcan]."
+    mitigants: "Public health infrastructure; vaccine manufacturing capacity; supply chain resilience programs; fiscal reserves [imf] [statcan]."
+    lastAssessed: "2026-04-19"

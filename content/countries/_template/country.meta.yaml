@@ -1,0 +1,15 @@
+# [COUNTRY NAME] — Country Metadata
+# Replace all [PLACEHOLDER] values before committing.
+
+code: "[XXX]"        # 3-letter ISO 3166-1 alpha-3, e.g. FRA
+nameEn: "[Country Name in English]"
+nameFr: "[Nom du pays en français]"
+lastUpdated: "YYYY-MM-DD"
+
+scorecard:
+  # High | Med | Low
+  eliteCohesion: Med
+  securityLoyalty: Med
+  economicPressure: Med
+  protestCapacity: Med
+  institutionalResilience: Med

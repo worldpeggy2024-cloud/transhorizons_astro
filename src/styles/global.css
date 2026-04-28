@@ -1,0 +1,384 @@
+/*
+ * TransHorizons — Editorial Horizon Design System
+ * Design Movement: Contemporary Editorial / Brutalist-Soft
+ * Color Philosophy: Ivory (#EFEFEF), Charcoal (#1A1A1A), Golden Sand (#7D1A2E)
+ * Typography: Playfair Display (display/titles) + Inter (body/nav)
+ * Layout: Full-bleed editorial sections, asymmetric grids, mosaic gallery
+ */
+
+ @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* TransHorizons custom tokens — Burgundy / Black / Silver theme */
+  --color-gold: oklch(0.32 0.13 10);        /* deep burgundy #7D1A2E */
+  --color-gold-light: oklch(0.48 0.11 10);  /* mid burgundy */
+  --color-charcoal: oklch(0.18 0.005 260);
+  --color-ivory: oklch(0.985 0.003 90);
+  --color-warm-gray: oklch(0.52 0.005 260); /* darker silver-grey */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+}
+
+:root {
+  --radius: 0.25rem;
+  --background: oklch(0.985 0.003 90);
+  --foreground: oklch(0.18 0.005 260);
+  --card: oklch(0.98 0.003 90);
+  --card-foreground: oklch(0.18 0.005 260);
+  --popover: oklch(0.98 0.003 90);
+  --popover-foreground: oklch(0.18 0.005 260);
+  --primary: oklch(0.18 0.005 260);
+  --primary-foreground: oklch(0.985 0.003 90);
+  --secondary: oklch(0.94 0.005 80);
+  --secondary-foreground: oklch(0.25 0.008 260);
+  --muted: oklch(0.95 0.004 80);
+  --muted-foreground: oklch(0.52 0.01 260);
+  --accent: oklch(0.32 0.13 10);
+  --accent-foreground: oklch(0.985 0.003 90);
+  --destructive: oklch(0.32 0.13 10);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.82 0.003 260);
+  --input: oklch(0.82 0.003 260);
+  --ring: oklch(0.32 0.13 10);
+  --sidebar: oklch(0.18 0.005 260);
+  --sidebar-foreground: oklch(0.985 0.003 90);
+  --sidebar-primary: oklch(0.32 0.13 10);
+  --sidebar-primary-foreground: oklch(0.985 0.003 90);
+  --sidebar-accent: oklch(0.25 0.008 260);
+  --sidebar-accent-foreground: oklch(0.985 0.003 90);
+  --sidebar-border: oklch(0.3 0.008 260);
+  --sidebar-ring: oklch(0.32 0.13 10);
+  --chart-1: oklch(0.32 0.13 10);
+  --chart-2: oklch(0.55 0.08 200);
+  --chart-3: oklch(0.45 0.06 260);
+  --chart-4: oklch(0.65 0.07 150);
+  --chart-5: oklch(0.5 0.09 30);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* TransHorizons custom components */
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-gold {
+    color: var(--color-gold);
+  }
+
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+
+  .border-gold {
+    border-color: var(--color-gold);
+  }
+
+  .text-charcoal {
+    color: var(--color-charcoal);
+  }
+
+  .bg-charcoal {
+    background-color: var(--color-charcoal);
+  }
+
+  .text-ivory {
+    color: var(--color-ivory);
+  }
+
+  .bg-ivory {
+    background-color: var(--color-ivory);
+  }
+
+  /* Gold accent bar */
+  .gold-bar::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: var(--color-gold);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Marquee animation */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+
+  /* Fade in up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Stagger delays */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+
+  /* Image hover zoom */
+  .img-zoom {
+    overflow: hidden;
+  }
+  .img-zoom img {
+    transition: transform 0.7s ease;
+  }
+  .img-zoom:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Emoji flag rendering — better font stack for cross-browser emoji support */
+  .emoji-flag {
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', 'Segoe UI Symbol', 'Segoe UI Emoji', 'Twemoji Mozilla', sans-serif !important;
+    font-variant-ligatures: no-common-ligatures;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Section number style */
+  .section-number {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+  }
+
+  /* Thin horizontal rule */
+  .rule-thin {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 0;
+  }
+
+  /* Nav link hover effect */
+  .nav-link {
+    position: relative;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-gold);
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  /* Button primary style */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-charcoal);
+    color: var(--color-ivory);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid var(--color-charcoal);
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-charcoal);
+  }
+
+  /* Button outline style */
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    color: var(--color-ivory);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-decoration: none;
+  }
+  .btn-outline:hover {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-charcoal);
+  }
+
+  /* Dark section button outline */
+  .btn-outline-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid var(--color-charcoal);
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  .btn-outline-dark:hover {
+    background-color: var(--color-charcoal);
+    color: var(--color-ivory);
+  }
+}
+
+/* ─── Emoji Font Support ─────────────────────────────────────────────────────
+   Ensures flag emoji render correctly on desktop browsers by using system emoji fonts
+   instead of serif display fonts that don't support emoji.
+*/
+@layer utilities {
+  .font-emoji {
+    font-family: var(--font-emoji) !important;
+  }
+}
+
+/* Force emoji rendering on all flag elements */
+span[style*="fontFamily"] {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif !important;
+}

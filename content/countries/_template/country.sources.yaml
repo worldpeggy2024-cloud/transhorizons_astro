@@ -1,0 +1,37 @@
+# [COUNTRY NAME] — Shared Sources Registry
+# Instructions:
+#   - id: unique lowercase slug, e.g. imf, pm-ca, statcan-trade
+#   - publicationDate: YYYY-MM-DD (use YYYY-01-01 if only year known; YYYY-MM-01 if only month known)
+#   - accessDate: YYYY-MM-DD (date URL was opened and verified)
+#   - confidence: High | Med | Low
+#   - citationType: Fact | Interpretation
+#   - lastVerified: set by `npm run validate:sources`, format YYYY-MM-DD
+#   - archiveUrl: Wayback Machine URL or null
+#
+# Aim for 20–25 sources, minimum 15, at least 80% High confidence.
+# Use Perplexity prompt template at docs/perplexity-authoring-template.md.
+
+- id: source-slug-1
+  name: "[Full official source name]"
+  url: "https://example.com"
+  desc: "[One or two sentences: what this source covers and why it is authoritative.]"
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  lastVerified: null
+  archiveUrl: null
+
+- id: source-slug-2
+  name: "[Full official source name]"
+  url: "https://example.com"
+  desc: "[One or two sentences: what this source covers and why it is authoritative.]"
+  publicationDate: "2025-01-01"
+  accessDate: "2026-04-27"
+  confidence: High
+  citationType: Fact
+  lastVerified: null
+  archiveUrl: null
+
+# Add more sources following the same pattern...
+# Minimum 15 entries required by the validator.

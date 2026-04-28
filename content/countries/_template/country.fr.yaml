@@ -1,0 +1,84 @@
+# [NOM DU PAYS] — Contenu en français
+# Traduction de country.en.yaml. Structure identique, marqueurs [id] identiques.
+# Chaque champ narratif DOIT contenir au moins un marqueur [id].
+# Exécutez : npm run validate:countries
+#
+# Convention :
+#   - Noms de personnes : restent en anglais
+#   - Noms de partis, d'institutions, d'organisations : traduits en français si traduction
+#     officielle existe
+
+executiveSnapshot:
+  # 8–10 points identiques à la version EN. Les marqueurs [id] doivent être identiques.
+  - "[Description du type de régime] [source-slug-1]."
+  - "[Équilibre politique actuel] [source-slug-2]."
+  - "[Aperçu du modèle économique] [source-slug-1] [source-slug-2]."
+  - "[Résumé des 3 principaux risques] [source-slug-1]."
+  - "[Points de surveillance (4–12 semaines)] [source-slug-1]."
+  - "[Résumé des dépendances externes] [source-slug-2]."
+  - "[Résumé de la posture sécuritaire] [source-slug-1]."
+  - "[Orientation diplomatique] [source-slug-2]."
+  - "[Déclaration de confiance dans les données] [source-slug-1]."
+  - "[Perspective de référence] [source-slug-2]."
+
+political:
+  powerStructure: |
+    [Traduction de powerStructure EN. Même structure, mêmes citations.]
+    [source-slug-1] [source-slug-2].
+
+  stabilityDrivers: |
+    [Traduction de stabilityDrivers EN.]
+    [source-slug-1] [source-slug-2].
+
+  shockAbsorbers: |
+    [Traduction de shockAbsorbers EN.]
+    [source-slug-1] [source-slug-2].
+
+economy:
+  macroReality: |
+    [Traduction de macroReality EN.]
+    [source-slug-1] [source-slug-2].
+
+  externalVulnerability: |
+    [Traduction de externalVulnerability EN.]
+    [source-slug-1] [source-slug-2].
+
+  politicalEconomy: |
+    [Traduction de politicalEconomy EN.]
+    [source-slug-1] [source-slug-2].
+
+security:
+  internal: |
+    [Traduction de security.internal EN.]
+    [source-slug-1] [source-slug-2].
+
+  diplomacy: |
+    [Traduction de security.diplomacy EN.]
+    [source-slug-1] [source-slug-2].
+
+actors:
+  domestic:
+    - name: "[Nom de l'acteur — personne : EN ; institution : FR]"
+      interests: "[Ce qu'ils veulent] [source-slug-1]"
+      resources: "[Leurs capacités/pouvoir] [source-slug-1]"
+      constraints: "[Ce qui les limite] [source-slug-2]"
+      likelyMoves: "[Actions attendues] [source-slug-2]"
+      dealability: "Élevée | Moyen | Faible (explication)"
+
+  external:
+    - name: "[Pays/Organisation]"
+      interests: "[Ce qu'ils veulent de ce pays] [source-slug-1]"
+      resources: "[Levier qu'ils détiennent] [source-slug-1]"
+      constraints: "[Ce qui limite leur influence] [source-slug-2]"
+      likelyMoves: "[Actions attendues] [source-slug-2]"
+      dealability: "Élevée | Moyen | Faible (explication)"
+
+risks:
+  - title: "[Titre du risque]"
+    trigger: "[Événement déclencheur] [source-slug-1]."
+    probability: High
+    impact: High
+    timeHorizon: "[ex. 0–3 mois | 3–12 mois | 12–24 mois]"
+    leadingIndicators: "[Signaux observables] [source-slug-2]."
+    mitigants: "[Ce qui pourrait réduire la probabilité ou l'impact] [source-slug-1]."
+    lastAssessed: "YYYY-MM-DD"
