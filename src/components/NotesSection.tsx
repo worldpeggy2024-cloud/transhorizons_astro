@@ -33,7 +33,7 @@ export default function NotesSection() {
   const blogPosts = [
     {
       id: 1,
-      slug: 'career-change',
+      slug: 'career-evolution',
       category: t('blog.careerChange.category'),
       date: t('blog.careerChange.date'),
       readTime: t('blog.careerChange.readTime'),
@@ -44,7 +44,7 @@ export default function NotesSection() {
     },
     {
       id: 2,
-      slug: 'travel-stories',
+      slug: 'travel-observation',
       category: t('blog.travelStories.category'),
       date: t('blog.travelStories.date'),
       readTime: t('blog.travelStories.readTime'),

@@ -37,8 +37,8 @@ const content = {
       },
     ],
     relatedArticles: [
-      { title: 'Navigating Career Change', category: 'Notes', slug: 'career-change' },
-      { title: 'Travel Stories from the Road', category: 'Observations', slug: 'travel-stories' },
+      { title: 'Navigating Career Change', category: 'Notes', slug: 'career-evolution' },
+      { title: 'Travel Stories from the Road', category: 'Observations', slug: 'travel-observation' },
     ],
     intro: (
       <p>
@@ -238,8 +238,8 @@ const content = {
       },
     ],
     relatedArticles: [
-      { title: 'Naviguer le changement de carrière', category: 'Notes', slug: 'career-change' },
-      { title: 'Récits de voyage', category: 'Observations', slug: 'travel-stories' },
+      { title: 'Naviguer le changement de carrière', category: 'Notes', slug: 'career-evolution' },
+      { title: 'Récits de voyage', category: 'Observations', slug: 'travel-observation' },
     ],
     intro: (
       <p>

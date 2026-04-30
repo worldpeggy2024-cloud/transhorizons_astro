@@ -1,16 +1,16 @@
 /*
- * TransHorizons - Portfolio: AI Governance and Digital Sovereignty
+ * TransHorizons - Portfolio: Canada's Forest System Under Climate and Industrial Pressure
  * Content loaded from bilingual YAML - edit at /keystatic
  */
 
 import ProjectDetailLayout from '@/components/ProjectDetailLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import data from '../../content/articles/ai-governance-digital-sovereignty.yaml';
+import data from '../../content/articles/canada-forest-system-climate-industrial-pressure.yaml';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const d = data as Record<string, any>;
 
-export default function PortfolioTechnology() {
+export default function PortfolioForestSystemPressure() {
   const { language } = useLanguage();
   const L = language === 'fr' ? 'fr' : 'en';
 

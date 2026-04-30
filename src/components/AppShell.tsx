@@ -14,14 +14,15 @@ import Home from "@/pages-react/Home";
 import PortfolioGeopolitics from "@/pages-react/PortfolioGeopolitics";
 import PortfolioResources from "@/pages-react/PortfolioResources";
 import PortfolioTechnology from "@/pages-react/PortfolioTechnology";
-import NotesCareerChange from "@/pages-react/NotesCareerChange";
-import NotesTravel from "@/pages-react/NotesTravel";
+import NotesCareerEvolution from "@/pages-react/NotesCareerEvolution";
+import NotesTravelObservation from "@/pages-react/NotesTravelObservation";
 import CountryPage from '@/pages-react/CountryPage';
 import WorldAnalysis from '@/pages-react/WorldAnalysis';
 import CriticalMineralsMap from '@/pages-react/CriticalMineralsMap';
 import NotesCanadaResources from '@/pages-react/NotesCanadaResources';
 import PortfolioResourceCivilization from '@/pages-react/PortfolioResourceCivilization';
 import PortfolioCanadaForestCarbon from '@/pages-react/PortfolioCanadaForestCarbon';
+import PortfolioForestSystemPressure from '@/pages-react/PortfolioForestSystemPressure';
 import AnalysesIndex from '@/pages-react/AnalysesIndex';
 import Publications from '@/pages-react/Publications';
 import ResearchApproach from '@/pages-react/ResearchApproach';
@@ -37,8 +38,8 @@ function Router() {
       <Route path={"/portfolio/geopolitics"} component={PortfolioGeopolitics} />
       <Route path={"/portfolio/resources"} component={PortfolioResources} />
       <Route path={"/portfolio/technology"} component={PortfolioTechnology} />
-      <Route path={"/notes/career-change"} component={NotesCareerChange} />
-      <Route path={"/notes/travel-stories"} component={NotesTravel} />
+      <Route path={"/notes/career-evolution"} component={NotesCareerEvolution} />
+      <Route path={"/notes/travel-observation"} component={NotesTravelObservation} />
       <Route path="/country/:cca3" component={CountryPage} />
       <Route path="/world-analysis/:cca3" component={CountryPage} />
       <Route path="/world-analysis" component={WorldAnalysis} />
@@ -46,6 +47,7 @@ function Router() {
       <Route path="/portfolio/canada-resources" component={NotesCanadaResources} />
       <Route path="/portfolio/resource-civilization" component={PortfolioResourceCivilization} />
       <Route path="/portfolio/canada-forest-carbon" component={PortfolioCanadaForestCarbon} />
+      <Route path="/portfolio/canada-forest-system-climate-industrial-pressure" component={PortfolioForestSystemPressure} />
       <Route path="/analyses" component={AnalysesIndex} />
       <Route path="/publications" component={Publications} />
       <Route path="/research-approach" component={ResearchApproach} />

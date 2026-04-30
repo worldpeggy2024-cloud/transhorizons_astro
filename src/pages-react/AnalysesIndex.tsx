@@ -32,6 +32,20 @@ export default function AnalysesIndex() {
     date: string;
   }[] = [
     {
+      slug: 'canada-forest-system-climate-industrial-pressure',
+      filterKey: 'analysis',
+      category: language === 'fr' ? 'Analyse' : 'Analysis',
+      readTime: '16 min',
+      title: language === 'fr'
+        ? 'Canada\'s Forest System Under Climate and Industrial Pressure'
+        : 'Canada\'s Forest System Under Climate and Industrial Pressure',
+      excerpt: language === 'fr'
+        ? 'Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada\'s forest system and its role within global resource and trade networks.'
+        : 'Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada\'s forest system and its role within global resource and trade networks.',
+      image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
+      date: 'April 2026',
+    },
+    {
       slug: 'canada-forest-carbon',
       filterKey: 'resources',
       category: t('portfolio.forestCarbon.category'),

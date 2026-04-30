@@ -84,6 +84,39 @@ export default config({
           fields.object(relatedProjectFields),
           { label: 'Related Projects', itemLabel: (props) => props.fields.title_en.value || 'Project' }
         ),
+
+        // ── Optional Sources Block (grouped in the UI) ───────────────────
+        sources: fields.object(
+          {
+            en: fields.array(
+              fields.text({ label: 'Source Line (EN)' }),
+              {
+                label: 'Sources (EN)',
+                itemLabel: (props) => props.value || 'Source',
+                validation: { isRequired: false },
+              }
+            ),
+            fr: fields.array(
+              fields.text({ label: 'Source Line (FR)' }),
+              {
+                label: 'Sources (FR)',
+                itemLabel: (props) => props.value || 'Source',
+                validation: { isRequired: false },
+              }
+            ),
+            disclaimer_en: fields.text({
+              label: 'Sources Disclaimer (EN)',
+              multiline: true,
+              validation: { isRequired: false },
+            }),
+            disclaimer_fr: fields.text({
+              label: 'Sources Disclaimer (FR)',
+              multiline: true,
+              validation: { isRequired: false },
+            }),
+          },
+          { label: 'Sources Block' }
+        ),
       },
     }),
   },
