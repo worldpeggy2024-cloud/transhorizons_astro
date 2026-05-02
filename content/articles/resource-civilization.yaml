@@ -1,4 +1,4 @@
-heroImage: https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1600&q=85
+heroImage: https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1600&q=85
 date: Avril / April 2026
 readTime: 14 min
 articleType_en: Analytical Essay
@@ -30,7 +30,7 @@ introduction_en: >
 
 
   A resource civilization is organized around them.
-title_fr: Le Canada comme civilisation des ressources au XXIe siècle
+title_fr: 'Le Canada : civilisation des ressources au XXIe siècle'
 subtitle_fr: >-
   Comment le développement historique du Canada en tant que système fondé sur
   les ressources continue de façonner sa position dans les structures mondiales
@@ -58,6 +58,14 @@ sections:
   - title_en: Historical Formation
     title_fr: Formation historique
     content_en: >
+      Prior to colonial integration, Indigenous societies across the territory
+      developed resource systems based on localized use, seasonal cycles, and
+      long-term stewardship of land and ecosystems.
+
+      These systems were not organized around large-scale extraction or export,
+      but around continuity and balance within specific territories.
+
+
       From its early integration into global trade networks, Canada's
       development has been closely tied to external demand for natural
       resources.
@@ -119,7 +127,6 @@ sections:
       Ce schéma s'est progressivement inscrit dans la géographie économique, les
       cadres institutionnels et les relations politiques, en particulier avec
       les grandes puissances économiques.
-    image: https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80
     imagePosition: right
   - title_en: Structural Characteristics
     title_fr: Caractéristiques structurelles
@@ -164,8 +171,7 @@ sections:
       traits structurels qui déterminent le fonctionnement de l'économie, la
       planification des infrastructures et l'organisation des politiques
       publiques.
-    image: https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80
-    imagePosition: left
+    imagePosition: right
   - title_en: Transition to a New Global Context
     title_fr: Transition vers un nouveau contexte mondial
     content_en: >
@@ -479,5 +485,3 @@ relatedProjects:
 sources:
   en: []
   fr: []
-  disclaimer_en: ''
-  disclaimer_fr: ''

@@ -67,6 +67,8 @@ interface ProjectDetailLayoutProps {
     title: string;
     category: string;
   }>;
+  beforeSectionsContent?: React.ReactNode;
+  sectionExtras?: Record<number, React.ReactNode>;
 }
 
 export default function ProjectDetailLayout({
@@ -82,6 +84,8 @@ export default function ProjectDetailLayout({
   sections,
   keyTakeaways,
   relatedProjects,
+  beforeSectionsContent,
+  sectionExtras,
 }: ProjectDetailLayoutProps) {
   const [, navigate] = useLocation();
 
@@ -118,7 +122,7 @@ export default function ProjectDetailLayout({
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-12">
           <div className="max-w-3xl">
-            <p className="text-[#7D1A2E] text-xs tracking-[0.25em] uppercase font-body mb-4">
+            <p className="text-[#7D1A2E] text-xs tracking-[0.25em] uppercase font-body font-bold mb-4">
               {category} • {date}
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 leading-tight">
@@ -169,6 +173,9 @@ export default function ProjectDetailLayout({
           </div>
         </section>
 
+        {/* Content before Sections (e.g. maps, diagrams) */}
+        {beforeSectionsContent}
+
         {/* Content Sections */}
         {sections.map((section, idx) => (
           <section key={idx} className="mb-20">
@@ -211,6 +218,7 @@ export default function ProjectDetailLayout({
                 {renderRichText(section.content)}
               </div>
             )}
+            {sectionExtras?.[idx]}
           </section>
         ))}
 

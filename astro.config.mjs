@@ -20,6 +20,12 @@ function yamlHmrPlugin() {
 export default defineConfig({
   integrations: [react(), keystatic()],
   vite: {
+    optimizeDeps: {
+      exclude: [
+        '@keystatic/astro/internal/keystatic-api.js',
+        '@keystatic/astro/internal/keystatic-astro-page.astro',
+      ],
+    },
     plugins: [tailwindcss(), yaml(), yamlHmrPlugin()],
     resolve: {
       alias: {
