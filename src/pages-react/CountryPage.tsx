@@ -17,20 +17,21 @@ import {
   ArrowLeft, Globe, Users, MapPin, BarChart2, Shield, TrendingUp,
   AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink
 } from 'lucide-react';
-import { franceAnalysis, type AnalysisContent, type ActorEntry, type RiskEntry, type SourceEntry } from '@/data/france';
+import { franceAnalysis } from '@/data/france-yaml';
+import { type AnalysisContent, type ActorEntry, type RiskEntry, type SourceEntry } from '@/data/france';
 import { canadaAnalysis } from '@/data/canada';
-import { usaAnalysis } from '@/data/usa';
-import { chinaAnalysis } from '@/data/china';
-import { russiaAnalysis } from '@/data/russia';
-import { japanAnalysis } from '@/data/japan';
-import { southKoreaAnalysis } from '@/data/southkorea';
+import { usaAnalysis } from '@/data/usa-yaml';
+import { chinaAnalysis } from '@/data/china-yaml';
+import { russiaAnalysis } from '@/data/russia-yaml';
+import { japanAnalysis } from '@/data/japan-yaml';
+import { southKoreaAnalysis } from '@/data/southkorea-yaml';
 import { irelandAnalysis } from '@/data/ireland';
-import { australiaAnalysis } from '@/data/australia';
+import { australiaAnalysis } from '@/data/australia-yaml';
 import { brazilAnalysis } from '@/data/brazil';
 import { germanyAnalysis } from '@/data/germany';
-import { unitedKingdomAnalysis } from '@/data/united-kingdom';
-import { mexicoAnalysis } from '@/data/mexico';
-import { indiaAnalysis } from '@/data/india';
+import { unitedKingdomAnalysis } from '@/data/united-kingdom-yaml';
+import { mexicoAnalysis } from '@/data/mexico-yaml';
+import { indiaAnalysis } from '@/data/india-yaml';
 import { saudiArabiaAnalysis } from '@/data/saudi-arabia';
 import { newZealandAnalysis } from '@/data/new-zealand';
 import { indonesiaAnalysis } from '@/data/indonesia';
