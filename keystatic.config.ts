@@ -36,71 +36,6 @@ const ratingOptions = [
   { label: 'Low', value: 'Low' },
 ];
 
-const confidenceLevelOptions = [
-  { label: 'High', value: 'High' },
-  { label: 'Med', value: 'Med' },
-  { label: 'Low', value: 'Low' },
-];
-
-const citationTypeOptions = [
-  { label: 'Fact', value: 'Fact' },
-  { label: 'Interpretation', value: 'Interpretation' },
-];
-
-const actorFields = {
-  name: fields.text({ label: 'Actor Name' }),
-  interests: fields.text({ label: 'Interests (include citation IDs like [source-id])', multiline: true }),
-  resources: fields.text({ label: 'Resources (include citations)', multiline: true }),
-  constraints: fields.text({ label: 'Constraints (include citations)', multiline: true }),
-  likelyMoves: fields.text({ label: 'Likely Moves (include citations)', multiline: true }),
-  dealability: fields.select({
-    label: 'Dealability',
-    options: [
-      { label: 'High', value: 'High' },
-      { label: 'Medium', value: 'Medium' },
-      { label: 'Low', value: 'Low' },
-    ],
-  }),
-};
-
-const riskFields = {
-  title: fields.text({ label: 'Risk Title' }),
-  trigger: fields.text({ label: 'Trigger (include citations)', multiline: true }),
-  probability: fields.select({
-    label: 'Probability',
-    options: ratingOptions,
-  }),
-  impact: fields.select({
-    label: 'Impact',
-    options: ratingOptions,
-  }),
-  timeHorizon: fields.text({ label: 'Time Horizon (e.g., "3–12m")' }),
-  leadingIndicators: fields.text({ label: 'Leading Indicators (include citations)', multiline: true }),
-  mitigants: fields.text({ label: 'Mitigants (include citations)', multiline: true }),
-  lastAssessed: fields.text({ label: 'Last Assessed (YYYY-MM-DD)', validation: { isRequired: false } }),
-};
-
-const sourceFields = {
-  id: fields.text({ label: 'Citation ID (e.g., "imf", "pm-ca") — lowercase alphanumeric-hyphens' }),
-  name: fields.text({ label: 'Source Name' }),
-  url: fields.text({ label: 'URL' }),
-  desc: fields.text({ label: 'Description', multiline: true }),
-  publicationDate: fields.text({ label: 'Publication Date (YYYY-MM-DD)', validation: { isRequired: false } }),
-  accessDate: fields.text({ label: 'Access Date (YYYY-MM-DD)', validation: { isRequired: false } }),
-  confidence: fields.select({
-    label: 'Confidence Level',
-    options: confidenceLevelOptions,
-    validation: { isRequired: false },
-  }),
-  citationType: fields.select({
-    label: 'Citation Type',
-    options: citationTypeOptions,
-    validation: { isRequired: false },
-  }),
-  archiveUrl: fields.text({ label: 'Archive URL (Wayback Machine)', validation: { isRequired: false } }),
-  lastVerified: fields.text({ label: 'Last Verified (YYYY-MM-DD)', validation: { isRequired: false } }),
-};
-
 export default config({
   storage: { kind: 'local' },
 
@@ -219,44 +154,45 @@ export default config({
         scorecard_eliteCohesion: fields.select({
           label: 'Scorecard: Elite Cohesion',
           options: ratingOptions,
+          defaultValue: 'Med',
           validation: { isRequired: false },
         }),
         scorecard_securityLoyalty: fields.select({
           label: 'Scorecard: Security Loyalty',
           options: ratingOptions,
+          defaultValue: 'Med',
           validation: { isRequired: false },
         }),
         scorecard_economicPressure: fields.select({
           label: 'Scorecard: Economic Pressure',
           options: ratingOptions,
+          defaultValue: 'Med',
           validation: { isRequired: false },
         }),
         scorecard_protestCapacity: fields.select({
           label: 'Scorecard: Protest Capacity',
           options: ratingOptions,
+          defaultValue: 'Med',
           validation: { isRequired: false },
         }),
         scorecard_institutionalResilience: fields.select({
           label: 'Scorecard: Institutional Resilience',
           options: ratingOptions,
+          defaultValue: 'Med',
           validation: { isRequired: false },
         }),
 
         // ── Executive Snapshot ────────────────────────────────────────────
-        executiveSnapshot_en: fields.array(
-          fields.text({ label: 'Bullet (EN)', multiline: true }),
-          {
-            label: 'Executive Snapshot (EN)',
-            itemLabel: (props) => props.value?.substring(0, 50) + '...' || 'Bullet',
-          }
-        ),
-        executiveSnapshot_fr: fields.array(
-          fields.text({ label: 'Bullet (FR)', multiline: true }),
-          {
-            label: 'Executive Snapshot (FR)',
-            itemLabel: (props) => props.value?.substring(0, 50) + '...' || 'Point',
-          }
-        ),
+        executiveSnapshot_en: fields.text({
+          label: 'Executive Snapshot (EN)',
+          multiline: true,
+          description: 'One bullet per line. Include citation markers [source-id].',
+        }),
+        executiveSnapshot_fr: fields.text({
+          label: 'Executive Snapshot (FR)',
+          multiline: true,
+          description: 'Un point par ligne. Inclure les marqueurs de citation [source-id].',
+        }),
 
         // ── Political Section ─────────────────────────────────────────────
         political_powerStructure_en: fields.text({
@@ -350,61 +286,47 @@ export default config({
         }),
 
         // ── Actors: Domestic ──────────────────────────────────────────────
-        actors_domestic_en: fields.array(
-          fields.object(actorFields),
-          {
-            label: 'Actors: Domestic (EN)',
-            itemLabel: (props) => props.fields.name.value || 'Actor',
-          }
-        ),
-        actors_domestic_fr: fields.array(
-          fields.object(actorFields),
-          {
-            label: 'Actors: Domestic (FR)',
-            itemLabel: (props) => props.fields.name.value || 'Acteur',
-          }
-        ),
+        actors_domestic_en: fields.text({
+          label: 'Actors: Domestic (EN)',
+          multiline: true,
+          description: 'JSON array. One block edit for all domestic actors.',
+        }),
+        actors_domestic_fr: fields.text({
+          label: 'Actors: Domestic (FR)',
+          multiline: true,
+          description: 'Tableau JSON. Edition en un seul bloc pour tous les acteurs domestiques.',
+        }),
 
         // ── Actors: External ──────────────────────────────────────────────
-        actors_external_en: fields.array(
-          fields.object(actorFields),
-          {
-            label: 'Actors: External (EN)',
-            itemLabel: (props) => props.fields.name.value || 'Actor',
-          }
-        ),
-        actors_external_fr: fields.array(
-          fields.object(actorFields),
-          {
-            label: 'Actors: External (FR)',
-            itemLabel: (props) => props.fields.name.value || 'Acteur',
-          }
-        ),
+        actors_external_en: fields.text({
+          label: 'Actors: External (EN)',
+          multiline: true,
+          description: 'JSON array. One block edit for all external actors.',
+        }),
+        actors_external_fr: fields.text({
+          label: 'Actors: External (FR)',
+          multiline: true,
+          description: 'Tableau JSON. Edition en un seul bloc pour tous les acteurs externes.',
+        }),
 
         // ── Risks ─────────────────────────────────────────────────────────
-        risks_en: fields.array(
-          fields.object(riskFields),
-          {
-            label: 'Risks (EN)',
-            itemLabel: (props) => props.fields.title.value || 'Risk',
-          }
-        ),
-        risks_fr: fields.array(
-          fields.object(riskFields),
-          {
-            label: 'Risks (FR)',
-            itemLabel: (props) => props.fields.title.value || 'Risque',
-          }
-        ),
+        risks_en: fields.text({
+          label: 'Risks (EN)',
+          multiline: true,
+          description: 'JSON array. One block edit for all risks.',
+        }),
+        risks_fr: fields.text({
+          label: 'Risks (FR)',
+          multiline: true,
+          description: 'Tableau JSON. Edition en un seul bloc pour tous les risques.',
+        }),
 
         // ── Sources (Shared Registry) ─────────────────────────────────────
-        sources: fields.array(
-          fields.object(sourceFields),
-          {
-            label: 'Sources Registry',
-            itemLabel: (props) => props.fields.id.value || props.fields.name.value || 'Source',
-          }
-        ),
+        sources: fields.text({
+          label: 'Sources Registry',
+          multiline: true,
+          description: 'JSON array. One block edit for all sources.',
+        }),
       },
     }),
   },
