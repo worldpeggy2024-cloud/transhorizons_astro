@@ -1,0 +1,125 @@
+{
+  "scorecard": {
+    "eliteCohesion": "Med",
+    "securityLoyalty": "Med",
+    "economicPressure": "Med",
+    "protestCapacity": "Med",
+    "institutionalResilience": "Med"
+  },
+  "executiveSnapshot": {
+    "en": [
+      ""
+    ],
+    "fr": [
+      ""
+    ]
+  },
+  "political": {
+    "powerStructure": {
+      "en": "",
+      "fr": ""
+    },
+    "stabilityDrivers": {
+      "en": "",
+      "fr": ""
+    },
+    "shockAbsorbers": {
+      "en": "",
+      "fr": ""
+    }
+  },
+  "economy": {
+    "macroReality": {
+      "en": "",
+      "fr": ""
+    },
+    "externalVulnerability": {
+      "en": "",
+      "fr": ""
+    },
+    "politicalEconomy": {
+      "en": "",
+      "fr": ""
+    }
+  },
+  "security": {
+    "internal": {
+      "en": "",
+      "fr": ""
+    },
+    "diplomacy": {
+      "en": "",
+      "fr": ""
+    }
+  },
+  "actors": {
+    "domestic": {
+      "en": [
+        {
+          "name": "",
+          "interests": "",
+          "resources": "",
+          "constraints": "",
+          "likelyMoves": "",
+          "dealability": ""
+        }
+      ],
+      "fr": [
+        {
+          "name": "",
+          "interests": "",
+          "resources": "",
+          "constraints": "",
+          "likelyMoves": "",
+          "dealability": ""
+        }
+      ]
+    },
+    "external": {
+      "en": [
+        {
+          "name": "",
+          "interests": "",
+          "resources": "",
+          "constraints": "",
+          "likelyMoves": "",
+          "dealability": ""
+        }
+      ],
+      "fr": [
+        {
+          "name": "",
+          "interests": "",
+          "resources": "",
+          "constraints": "",
+          "likelyMoves": "",
+          "dealability": ""
+        }
+      ]
+    }
+  },
+  "risks": {
+    "en": [
+      {
+        "title": "",
+        "trigger": "",
+        "probability": "Med",
+        "impact": "Med",
+        "timeHorizon": "",
+        "leadingIndicators": "",
+        "mitigants": ""
+      }
+    ],
+    "fr": [
+      {
+        "title": "",
+        "trigger": "",
+        "probability": "Med",
+        "impact": "Med",
+        "timeHorizon": "",
+        "leadingIndicators": "",
+        "mitigants": ""
+      }
+    ]
+  }
+}

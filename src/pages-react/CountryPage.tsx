@@ -27,7 +27,7 @@ import { japanAnalysis } from '@/data/japan-yaml';
 import { southKoreaAnalysis } from '@/data/southkorea-yaml';
 import { irelandAnalysis } from '@/data/ireland';
 import { australiaAnalysis } from '@/data/australia-yaml';
-import { brazilAnalysis } from '@/data/brazil';
+import { brazilAnalysis } from '@/data/brazil-yaml';
 import { germanyAnalysis } from '@/data/germany';
 import { unitedKingdomAnalysis } from '@/data/united-kingdom-yaml';
 import { mexicoAnalysis } from '@/data/mexico-yaml';
@@ -94,11 +94,13 @@ let lastClickedSectionName: string = '';
 let setLastClickedSectionName: ((name: string) => void) | null = null;
 
 /**
- * Parse inline citations [1], [2], etc. and convert to clickable superscript links
+ * Parse inline citations [source-id] and convert to clickable superscript links.
+ * Render labels as compact numeric markers based on source order.
  */
 function parseCitations(text: string, sources?: SourceEntry[]): (string | React.ReactNode)[] {
   const parts: (string | React.ReactNode)[] = [];
   const sourceMap = new Map((sources ?? []).map((s) => [s.id, s]));
+  const sourceIndexMap = new Map((sources ?? []).map((s, i) => [s.id, i + 1]));
   const citationRegex = /\[([a-z0-9-]+)\]/g;
   let lastIndex = 0;
   let match;
@@ -107,17 +109,19 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
     if (match.index > lastIndex) {
       parts.push(text.substring(lastIndex, match.index));
     }
-    const citationNum = match[1];
+    const citationId = match[1];
+    const citationLabel = sourceIndexMap.get(citationId);
     parts.push(
       <a
         key={`citation-${match.index}`}
-        href={`#source-${citationNum}`}
+        href={`#source-${citationId}`}
         className="text-[#7D1A2E] hover:text-[#5A0F1F] transition-colors font-medium"
         style={{
           fontSize: '0.75em',
           verticalAlign: 'super',
           textDecoration: 'none',
-          borderBottom: sourceMap.get(citationNum)?.citationType === 'Interpretation'
+          marginLeft: '0.08em',
+          borderBottom: sourceMap.get(citationId)?.citationType === 'Interpretation'
             ? '1px dotted #7D1A2E'
             : '1px solid #7D1A2E',
         }}
@@ -132,7 +136,7 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
             sourcesFrameworkRef.current.open();
           }
           setTimeout(() => {
-            const sourceElement = document.getElementById(`source-${citationNum}`);
+            const sourceElement = document.getElementById(`source-${citationId}`);
             if (sourceElement) {
               sourceElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
               sourceElement.classList.add('ring-2', 'ring-[#7D1A2E]', 'ring-offset-2');
@@ -143,7 +147,7 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
           }, 50);
         }}
       >
-        {citationNum}
+        [{citationLabel ?? citationId}]
       </a>
     );
     lastIndex = match.index + match[0].length;

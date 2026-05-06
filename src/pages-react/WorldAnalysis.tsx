@@ -63,6 +63,9 @@ const MAP_COLORS: Record<number, string> = {
 };
 
 const HOVER_COLOR    = '#A0243A';
+const CANADA_COLOR   = '#B22222';
+const MEXICO_COLOR   = '#0B5D1E';
+const PORTUGAL_COLOR = '#D4AF37';
 const ANALYSED_SET   = new Set(ANALYSED_COUNTRIES);
 const TOP_BAR_H      = 52;
 
@@ -104,6 +107,7 @@ export default function WorldAnalysis() {
   const { language, setLanguage }     = useLanguage();
   const [showFilters, setShowFilters] = useState(false);
   const [showFilterInfo, setShowFilterInfo] = useState(false);
+  const [showCountryDisclaimer, setShowCountryDisclaimer] = useState(false);
   const [filters, setFilters]         = useState<FilterState>({
     regions: new Set(),
     riskCategories: new Set(),
@@ -186,6 +190,17 @@ export default function WorldAnalysis() {
   // ── Polygon accessors ───────────────────────────────────────────────
   const getColor = useCallback((d: any) => {
     if (d === hoverD) return HOVER_COLOR;
+
+    const props = d.properties || {};
+    const codes = [
+      props.ISO_A3, props.ISO_A3_EH, props.ADM0_A3,
+      props.WB_A3, props.ADM0_A3_US, props.ADM0_A3_IS,
+      props.GU_A3, props.SU_A3, props.BRK_A3, props.ISO_A2,
+    ];
+    if (codes.includes('CAN')) return CANADA_COLOR;
+    if (codes.includes('MEX')) return MEXICO_COLOR;
+    if (codes.includes('PRT')) return PORTUGAL_COLOR;
+
     const mc = d.properties?.MAPCOLOR9 || 1;
     return MAP_COLORS[mc] || MAP_COLORS[1];
   }, [hoverD]);
@@ -413,8 +428,42 @@ export default function WorldAnalysis() {
         </h2>
         <p className="text-white/50 font-body text-[13px] mt-1.5 leading-relaxed">
           {fr
-            ? <>Survolez un pays pour afficher de brèves données (drapeau, nom, population; en rouge si le rapport est prêt), cliquez pour ouvrir son analyse.<br />Chaque rapport de pays présente une analyse structurée : situation politique et économique, risques géopolitiques, acteurs clés, et sources.<br />(Voir l'avertissement sous le globe.)</>
-            : <>Hover a country for quick info (flag, name, capital, population; display in red if the report is ready); click to open its analysis.<br />Each country report provides structured analysis: political &amp; economic snapshot, geopolitical risks, key actors, and sources.<br />(See disclaimer below the globe.)</>}
+            ? <>
+                Survolez un pays pour afficher de brèves données (drapeau, nom, population; en rouge si le rapport est prêt), cliquez pour ouvrir son analyse.<br />
+                Chaque rapport de pays présente une analyse structurée : situation politique et économique, risques géopolitiques, acteurs clés, et sources.<br />
+                <span className="relative inline-block">
+                  <span
+                    className="text-white/55 underline decoration-dotted underline-offset-2 cursor-help"
+                    onMouseEnter={() => setShowCountryDisclaimer(true)}
+                    onMouseLeave={() => setShowCountryDisclaimer(false)}
+                  >
+                    (Avertissement sur les informations pays.)
+                  </span>
+                  {showCountryDisclaimer && (
+                    <span className="absolute left-0 top-full mt-2 z-20 w-[min(560px,calc(100vw-3rem))] bg-[#0D0D18] border border-white/15 text-white/80 text-[11px] leading-relaxed p-3 shadow-2xl">
+                      {hintText}
+                    </span>
+                  )}
+                </span>
+              </>
+            : <>
+                Hover a country for quick info (flag, name, capital, population; display in red if the report is ready); click to open its analysis.<br />
+                Each country report provides structured analysis: political &amp; economic snapshot, geopolitical risks, key actors, and sources.<br />
+                <span className="relative inline-block">
+                  <span
+                    className="text-white/55 underline decoration-dotted underline-offset-2 cursor-help"
+                    onMouseEnter={() => setShowCountryDisclaimer(true)}
+                    onMouseLeave={() => setShowCountryDisclaimer(false)}
+                  >
+                    (Disclaimer about the country info.)
+                  </span>
+                  {showCountryDisclaimer && (
+                    <span className="absolute left-0 top-full mt-2 z-20 w-[min(560px,calc(100vw-3rem))] bg-[#0D0D18] border border-white/15 text-white/80 text-[11px] leading-relaxed p-3 shadow-2xl">
+                      {hintText}
+                    </span>
+                  )}
+                </span>
+              </>}
         </p>
       </div>
 
@@ -465,7 +514,6 @@ export default function WorldAnalysis() {
             <p className="text-white/20 font-body text-[10px] tracking-wider">
               {fr ? 'Inclinaison axiale : 23,5°' : 'Axial : 23.5°'}
             </p>
-            <p className="text-white/30 font-body text-[9px] leading-relaxed italic">{hintText}</p>
           </div>
         </div>
 

@@ -6,13 +6,44 @@ Use this to produce a new country YAML file from scratch, or to update an existi
 
 ## Standard Operating Procedure
 
+0. Read `content/docs/research-quality-bar.md` first. Its rejection criteria override any ambiguous prompt behavior.
 1. Open https://www.perplexity.ai and select **Deep Research** mode
-2. Paste the prompt below, replacing `[COUNTRY]` and `[ISO3]` with the target country
-3. Wait for the full research report (typically 3–8 minutes)
-4. Copy the output into the relevant sections of `content/countries/[ISO3]/[code].en.yaml`
-5. For each claim, verify the cited source URL is live and replace Perplexity's inline citations with the correct `[source-id]` from your `*.sources.yaml`
-6. Run `node scripts/generate-country-data.cjs [ISO3]` and confirm no errors
-7. Open the website and review the rendered page visually
+2. Use the **two-pass workflow** below instead of asking for a full report in one shot
+3. Copy the approved output into `content/countries/[ISO3]/analysis.yaml`
+4. For each claim, verify the cited source URL is live and replace any temporary inline references with the correct `[source-id]`
+5. Run `npm run validate:country -- content/countries/[ISO3]/analysis.yaml` and fix all errors before publishing
+6. Open the website and review the rendered page visually
+
+## Recommended Workflow For A Full Country Rebuild
+
+Use this for countries whose legacy citations are weak, generic, or not traceable enough for publication. Brazil should be treated this way.
+
+### Pass A — sources only
+
+Ask Perplexity for a **sources-only output** first. Do not ask for narrative prose in this pass.
+
+Required output for Pass A:
+
+- one candidate source list covering macro, governance, trade, security, and recent factual events
+- full deep links only, never homepages
+- all 8 schema fields for each source
+- provisional `id` values that can be used later in prose
+- `citationType` set for every source
+
+Acceptance rule for Pass A:
+
+- If the source list does not pass `npm run validate:country -- content/countries/[ISO3]/analysis.yaml` after being pasted into the `sources` block, do not proceed to prose.
+
+### Pass B — prose from approved source IDs only
+
+Once the sources list is clean, run a second Deep Research prompt that is allowed to cite **only** the approved source IDs from Pass A.
+
+Acceptance rule for Pass B:
+
+- Any claim that cannot be tied to one of the approved source IDs is omitted.
+- If a section cannot be written cleanly from approved sources, leave it incomplete rather than weakening sourcing.
+
+This is slower than one-shot generation, but it is much more reliable and easier to audit.
 
 ### When a section returns insufficient citations
 
@@ -24,6 +55,31 @@ If Perplexity cannot find a primary or high-quality secondary source for a speci
 - If no credible source exists after a second attempt, mark the section `# TODO: needs source` and do not publish that content until it is sourced.
 
 A claim without a primary or high-quality secondary source is not a claim — it is noise.
+
+### Hard gate: country citation validator
+
+Use the validator after every authoring or update pass:
+
+- Single country: `npm run validate:country -- content/countries/[ISO3]/analysis.yaml`
+- All countries: `npm run validate:countries`
+
+The validator fails on:
+
+- orphan citations (`[source-id]` with no matching source)
+- orphan sources (defined but never cited)
+- generic homepage URLs (no deep-link evidence page)
+- denied low-reliability domains (wikipedia, social media, blogs, etc.)
+- missing required source fields
+
+Treat validator errors as blocking.
+
+### Hard gate: research quality bar
+
+Validation is necessary but not sufficient. Before merge, review against:
+
+- `content/docs/research-quality-bar.md`
+
+If the validator passes but the content fails the research quality bar, the content is still rejected.
 
 ---
 

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "source-id-example",
+    "name": "Full source title",
+    "url": "https://example.com/deep-link",
+    "desc": "What this source provides for this country.",
+    "publicationDate": "2026-01-01",
+    "accessDate": "2026-05-05",
+    "confidence": "High",
+    "citationType": "Fact"
+  }
+]
