@@ -519,150 +519,151 @@ export default function CriticalMineralsMap() {
           )}
         </div>
 
-        {/* Mine Production + Top Producers — above the map */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
-          {/* Colour scale */}
-          <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3">
-            <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">
-              {viewMode === "production" ? labels.production[lang] : labels.reserves[lang]}
-            </p>
-            <div className="h-2.5 rounded-full mb-1.5" style={{ background: `linear-gradient(to right, ${getColor(5, effectiveMineralObj.color)}, ${effectiveMineralObj.color})` }} />
-            <div className="flex justify-between text-xs text-slate-500 mb-2"><span>&lt;5%</span><span>50%+</span></div>
-            <div className="flex items-center gap-1.5">
-              <div className="w-3.5 h-2.5 rounded-sm bg-[#1e293b] border border-slate-600 shrink-0" />
-              <p className="text-[11px] text-slate-400">{lang === "en" ? "No data / not in dataset" : "Hors données"}</p>
-            </div>
-            <div className="flex items-center gap-1.5 mt-1">
-              <div className="w-3.5 h-2.5 rounded-sm bg-[#1e293b] border-amber-400 shrink-0" style={{ borderWidth: "1.5px", borderStyle: "solid" }} />
-              <p className="text-[11px] text-slate-400">{lang === "en" ? "Canada (amber)" : "Canada (ambré)"}</p>
-            </div>
-          </div>
-
-          {/* Top 6 */}
-          <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3">
-            <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">{labels.topProducers[lang]}</p>
-            <ol className="space-y-1">
-              {Object.entries(effectiveData)
-                .sort((a, b) => b[1].share - a[1].share)
-                .slice(0, 6)
-                .map(([iso3, { share }], i) => (
-                  <li key={iso3} className="flex items-center gap-1.5">
-                    <span className="text-slate-600 w-3 text-right text-[10px]">{i + 1}</span>
-                    <div className="h-1 rounded-full shrink-0" style={{ width: `${(share / 80) * 72}px`, backgroundColor: effectiveMineralObj.color, opacity: 0.8 - i * 0.08 }} />
-                    <span className={`text-[11px] ${iso3 === "CAN" ? "text-amber-400 font-semibold" : "text-slate-300"}`}>{iso3}</span>
-                    <span className="text-slate-500 text-[10px] ml-auto">{share}%</span>
-                  </li>
-                ))}
-            </ol>
-          </div>
-        </div>
-
-        {/* Map + Canada's Role column */}
+        {/* Compact layout: left map stack + right insights column */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-3">
-          {/* Map */}
-          <div
-            className="relative rounded-xl border border-slate-700/50 overflow-hidden w-full"
-            style={{ background: "#0f172a" }}
-            onMouseLeave={() => setTooltip(null)}
-          >
-            <ComposableMap
-              projectionConfig={{ scale: 155, center: [0, 10] }}
-              width={800}
-              height={400}
-              style={{ width: "100%", height: "auto", display: "block", margin: "-2% 0" }}
-            >
-              <ZoomableGroup zoom={zoom} center={center} onMoveEnd={({ coordinates, zoom: z }: { coordinates: [number, number]; zoom: number }) => { setCenter(coordinates); setZoom(z); }}>
-                <Geographies geography={GEO_URL}>
-                  {({ geographies }: GeographiesChildrenArgument) =>
-                    geographies.map((geo: GeoFeature) => {
-                      const isoNum = String(geo.id).padStart(3, "0");
-                      const { share, note } = getCountryShare(isoNum);
-                      const iso3 = ISO_NUM_TO_3[isoNum] ?? "";
-                      const fillColor = getColor(share, effectiveMineralObj.color);
-                      const isCanada = iso3 === "CAN";
-                      return (
-                        <Geography
-                          key={geo.rsmKey}
-                          geography={geo}
-                          fill={fillColor}
-                          stroke={isCanada ? "#fbbf24" : "#334155"}
-                          strokeWidth={isCanada ? 1.5 : 0.4}
-                          style={{
-                            default: { outline: "none" },
-                            hover: { fill: share > 0 ? effectiveMineralObj.color : isCanada ? "#fbbf2440" : "#334155", outline: "none", cursor: share > 0 || isCanada ? "pointer" : "default" },
-                            pressed: { outline: "none" },
-                          }}
-                          onMouseEnter={(evt: React.MouseEvent) => {
-                            if (share > 0 || isCanada) {
-                              setTooltip({ country: String(geo.properties.name ?? ""), iso3, share, note, x: evt.clientX, y: evt.clientY });
-                            }
-                          }}
-                          onMouseMove={(evt: React.MouseEvent) => {
-                            if (tooltip) setTooltip((t) => t ? { ...t, x: evt.clientX, y: evt.clientY } : null);
-                          }}
-                          onMouseLeave={() => setTooltip(null)}
-                        />
-                      );
-                    })
-                  }
-                </Geographies>
-              </ZoomableGroup>
-            </ComposableMap>
-
-            {/* Tooltip */}
-            {tooltip && (
-              <div
-                className="fixed z-50 pointer-events-none bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 shadow-xl text-sm max-w-[260px]"
-                style={{ left: tooltip.x + 12, top: tooltip.y - 40 }}
-              >
-                <p className="font-semibold text-white">{tooltip.country}</p>
-                {tooltip.iso3 === "CAN" && effectiveCanadaRole && (
-                  <p className="text-xs font-medium mt-0.5 mb-1" style={{ color: effectiveRoleConfig?.color }}>
-                    {effectiveRoleConfig?.label[lang]}
-                  </p>
-                )}
-                {tooltip.share > 0 ? (
-                  <>
-                    <p className="text-slate-300 mt-0.5">
-                      {labels.shareLabel[lang]}{" "}
-                      {viewMode === "production" ? labels.production[lang].toLowerCase() : labels.reserves[lang].toLowerCase()}:{" "}
-                      <span style={{ color: effectiveMineralObj.color }} className="font-bold">{tooltip.share}%</span>
-                    </p>
-                    {tooltip.note && <p className="text-slate-400 text-xs mt-1 italic">{tooltip.note}</p>}
-                  </>
-                ) : (
-                  <p className="text-slate-500 text-xs mt-0.5">{labels.noData[lang]}</p>
-                )}
-                {tooltip.iso3 === "CAN" && effectiveCanadaRole && (
-                  <p className="text-slate-400 text-xs mt-1 border-t border-slate-700 pt-1">{effectiveCanadaRole.note[lang]}</p>
-                )}
+          {/* Left column: mine production + top producers + map */}
+          <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {/* Colour scale */}
+              <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3">
+                <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">
+                  {viewMode === "production" ? labels.production[lang] : labels.reserves[lang]}
+                </p>
+                <div className="h-2.5 rounded-full mb-1.5" style={{ background: `linear-gradient(to right, ${getColor(5, effectiveMineralObj.color)}, ${effectiveMineralObj.color})` }} />
+                <div className="flex justify-between text-xs text-slate-500 mb-2"><span>&lt;5%</span><span>50%+</span></div>
+                <div className="flex items-center gap-1.5">
+                  <div className="w-3.5 h-2.5 rounded-sm bg-[#1e293b] border border-slate-600 shrink-0" />
+                  <p className="text-[11px] text-slate-400">{lang === "en" ? "No data / not in dataset" : "Hors données"}</p>
+                </div>
+                <div className="flex items-center gap-1.5 mt-1">
+                  <div className="w-3.5 h-2.5 rounded-sm bg-[#1e293b] border-amber-400 shrink-0" style={{ borderWidth: "1.5px", borderStyle: "solid" }} />
+                  <p className="text-[11px] text-slate-400">{lang === "en" ? "Canada (amber)" : "Canada (ambré)"}</p>
+                </div>
               </div>
-            )}
+
+              {/* Top 6 */}
+              <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3">
+                <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">{labels.topProducers[lang]}</p>
+                <ol className="space-y-1">
+                  {Object.entries(effectiveData)
+                    .sort((a, b) => b[1].share - a[1].share)
+                    .slice(0, 6)
+                    .map(([iso3, { share }], i) => (
+                      <li key={iso3} className="flex items-center gap-1.5">
+                        <span className="text-slate-600 w-3 text-right text-[10px]">{i + 1}</span>
+                        <div className="h-1 rounded-full shrink-0" style={{ width: `${(share / 80) * 72}px`, backgroundColor: effectiveMineralObj.color, opacity: 0.8 - i * 0.08 }} />
+                        <span className={`text-[11px] ${iso3 === "CAN" ? "text-amber-400 font-semibold" : "text-slate-300"}`}>{iso3}</span>
+                        <span className="text-slate-500 text-[10px] ml-auto">{share}%</span>
+                      </li>
+                    ))}
+                </ol>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div
+              className="relative rounded-xl border border-slate-700/50 overflow-hidden w-full"
+              style={{ background: "#0f172a" }}
+              onMouseLeave={() => setTooltip(null)}
+            >
+              <ComposableMap
+                projectionConfig={{ scale: 155, center: [0, 10] }}
+                width={800}
+                height={400}
+                style={{ width: "100%", height: "auto", display: "block", margin: "-2% 0" }}
+              >
+                <ZoomableGroup zoom={zoom} center={center} onMoveEnd={({ coordinates, zoom: z }: { coordinates: [number, number]; zoom: number }) => { setCenter(coordinates); setZoom(z); }}>
+                  <Geographies geography={GEO_URL}>
+                    {({ geographies }: GeographiesChildrenArgument) =>
+                      geographies.map((geo: GeoFeature) => {
+                        const isoNum = String(geo.id).padStart(3, "0");
+                        const { share, note } = getCountryShare(isoNum);
+                        const iso3 = ISO_NUM_TO_3[isoNum] ?? "";
+                        const fillColor = getColor(share, effectiveMineralObj.color);
+                        const isCanada = iso3 === "CAN";
+                        return (
+                          <Geography
+                            key={geo.rsmKey}
+                            geography={geo}
+                            fill={fillColor}
+                            stroke={isCanada ? "#fbbf24" : "#334155"}
+                            strokeWidth={isCanada ? 1.5 : 0.4}
+                            style={{
+                              default: { outline: "none" },
+                              hover: { fill: share > 0 ? effectiveMineralObj.color : isCanada ? "#fbbf2440" : "#334155", outline: "none", cursor: share > 0 || isCanada ? "pointer" : "default" },
+                              pressed: { outline: "none" },
+                            }}
+                            onMouseEnter={(evt: React.MouseEvent) => {
+                              if (share > 0 || isCanada) {
+                                setTooltip({ country: String(geo.properties.name ?? ""), iso3, share, note, x: evt.clientX, y: evt.clientY });
+                              }
+                            }}
+                            onMouseMove={(evt: React.MouseEvent) => {
+                              if (tooltip) setTooltip((t) => t ? { ...t, x: evt.clientX, y: evt.clientY } : null);
+                            }}
+                            onMouseLeave={() => setTooltip(null)}
+                          />
+                        );
+                      })
+                    }
+                  </Geographies>
+                </ZoomableGroup>
+              </ComposableMap>
+
+              {/* Tooltip */}
+              {tooltip && (
+                <div
+                  className="fixed z-50 pointer-events-none bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 shadow-xl text-sm max-w-[260px]"
+                  style={{ left: tooltip.x + 12, top: tooltip.y - 40 }}
+                >
+                  <p className="font-semibold text-white">{tooltip.country}</p>
+                  {tooltip.iso3 === "CAN" && effectiveCanadaRole && (
+                    <p className="text-xs font-medium mt-0.5 mb-1" style={{ color: effectiveRoleConfig?.color }}>
+                      {effectiveRoleConfig?.label[lang]}
+                    </p>
+                  )}
+                  {tooltip.share > 0 ? (
+                    <>
+                      <p className="text-slate-300 mt-0.5">
+                        {labels.shareLabel[lang]}{" "}
+                        {viewMode === "production" ? labels.production[lang].toLowerCase() : labels.reserves[lang].toLowerCase()}: {" "}
+                        <span style={{ color: effectiveMineralObj.color }} className="font-bold">{tooltip.share}%</span>
+                      </p>
+                      {tooltip.note && <p className="text-slate-400 text-xs mt-1 italic">{tooltip.note}</p>}
+                    </>
+                  ) : (
+                    <p className="text-slate-500 text-xs mt-0.5">{labels.noData[lang]}</p>
+                  )}
+                  {tooltip.iso3 === "CAN" && effectiveCanadaRole && (
+                    <p className="text-slate-400 text-xs mt-1 border-t border-slate-700 pt-1">{effectiveCanadaRole.note[lang]}</p>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
 
-          {/* Right column: Canada's Role only */}
-          <div className="flex flex-col">
+          {/* Right column: Canada's role + geopolitical note */}
+          <div className="flex flex-col gap-2">
             {effectiveCanadaRole && effectiveRoleConfig ? (
-              <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3 h-full" style={{ borderLeftColor: effectiveRoleConfig.color, borderLeftWidth: "3px" }}>
+              <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3" style={{ borderLeftColor: effectiveRoleConfig.color, borderLeftWidth: "3px" }}>
                 <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">{labels.canadaRole[lang]}</p>
                 <p className="text-xs font-semibold" style={{ color: effectiveRoleConfig.color }}>{effectiveRoleConfig.label[lang]}</p>
                 <p className="text-[11px] text-slate-400 mt-1 leading-snug">{effectiveCanadaRole.note[lang]}</p>
               </div>
             ) : (
-              <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3 h-full flex items-center justify-center">
+              <div className="bg-slate-900/60 rounded-xl border border-slate-700/50 p-3 flex items-center justify-center">
                 <p className="text-[11px] text-slate-600 italic text-center">{lang === "en" ? "No specific Canada data for this mineral" : "Pas de données spécifiques pour le Canada"}</p>
+              </div>
+            )}
+
+            {effectiveGeoNote && (
+              <div className="rounded-xl border-l-4 px-4 py-3 bg-slate-900/40" style={{ borderColor: effectiveMineralObj.color }}>
+                <p className="text-[10px] uppercase tracking-wider mb-1" style={{ color: effectiveMineralObj.color }}>{labels.geopolitical[lang]}</p>
+                <p className="text-[12px] text-slate-300 leading-relaxed">{effectiveGeoNote}</p>
               </div>
             )}
           </div>
         </div>
-
-        {/* Geopolitical note */}
-        {effectiveGeoNote && (
-          <div className="mt-2 rounded-xl border-l-4 px-5 py-4 bg-slate-900/40" style={{ borderColor: effectiveMineralObj.color }}>
-            <p className="text-xs uppercase tracking-wider mb-1" style={{ color: effectiveMineralObj.color }}>{labels.geopolitical[lang]}</p>
-            <p className="text-sm text-slate-300 leading-relaxed">{effectiveGeoNote}</p>
-          </div>
-        )}
 
         {/* Download Data */}
         <div className="mt-4 flex flex-wrap gap-2">
