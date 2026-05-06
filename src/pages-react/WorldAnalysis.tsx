@@ -47,8 +47,8 @@ interface GeoFeature {
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const GLOBE_IMG = 'https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg';
-const BG_IMG    = 'https://cdn.jsdelivr.net/npm/three-globe/example/img/night-sky.png';
+const GLOBE_IMG = '/images/earth-night.jpg';
+const BG_IMG    = '/images/night-sky.png';
 
 const MAP_COLORS: Record<number, string> = {
   1: '#2D6A9F',
