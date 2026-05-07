@@ -22,11 +22,20 @@ export default function PortfolioResourceCivilization() {
   };
 
   const mapLabel = L === 'fr' ? 'Aperçu du système' : 'System overview';
-  const diagramLabel = L === 'fr' ? 'Le système peut être abstrait comme suit :' : 'The system can be abstracted as follows:';
+  const diagramLabel = L === 'fr' ? 'Le système peut être résumé comme suit :' : 'The system can be abstracted as follows:';
   const historicalPhasesLabel = L === 'fr' ? 'Phases historiques' : 'Historical Phases';
   const mapCaption = L === 'fr'
     ? "Le système de ressources du Canada : extraction, transport et exportation organisés autour de la demande externe."
     : "Canada's resource system: extraction, transport, and export organized around external demand.";
+  const systemOverviewMapSrc = L === 'fr'
+    ? '/images/canada_civilisation_ressources_mapfr_final.png'
+    : '/images/canada_resource_civilization_map.png';
+  const globalSystemsMapSrc = L === 'fr'
+    ? '/images/canada_global_systems_map_fr.png'
+    : '/images/canada_global_systems_map_final.png';
+  const systemDiagramSrc = L === 'fr'
+    ? '/images/canada_resource_civilization_diagram_fr.png'
+    : '/images/canada_resource_civilization_diagram.png';
 
   const timelinePhases = [
     {
@@ -201,6 +210,25 @@ export default function PortfolioResourceCivilization() {
     </section>
   );
 
+  const globalSystemsMap = (
+    <section className="mb-20">
+      <div
+        style={{
+          width: '100vw',
+          marginLeft: '50%',
+          transform: 'translateX(-50%)',
+          backgroundColor: surfaceBeige,
+        }}
+      >
+        <img
+          src={globalSystemsMapSrc}
+          alt={L === 'fr' ? 'Le Canada dans les systèmes mondiaux' : 'Canada in global systems'}
+          className="w-full"
+        />
+      </div>
+    </section>
+  );
+
   const beforeSectionsContent = (
     <>
       {/* Map: System Overview */}
@@ -216,7 +244,7 @@ export default function PortfolioResourceCivilization() {
         >
           <figure style={{ backgroundColor: surfaceBeige }}>
             <img
-              src="/images/canada_resource_civilization_map.png"
+              src={systemOverviewMapSrc}
               alt={mapCaption}
               className="w-full"
             />
@@ -240,8 +268,10 @@ export default function PortfolioResourceCivilization() {
         >
           <div style={{ width: '90vw', margin: '0 auto' }}>
             <img
-              src="/images/canada_resource_civilization_diagram.png"
-              alt="Canada as a Resource Civilization — Export-oriented resource system model"
+              src={systemDiagramSrc}
+              alt={L === 'fr'
+                ? 'Le Canada comme civilisation des ressources — modèle de système de ressources orienté vers l’exportation'
+                : 'Canada as a Resource Civilization — Export-oriented resource system model'}
               className="w-full"
             />
           </div>
@@ -270,6 +300,7 @@ export default function PortfolioResourceCivilization() {
 
   return (
     <ProjectDetailLayout
+      language={L}
       title={d[`title_${L}`] ?? ''}
       subtitle={d[`subtitle_${L}`] ?? ''}
       heroImage={d.heroImage ?? ''}
@@ -283,7 +314,7 @@ export default function PortfolioResourceCivilization() {
       keyTakeaways={keyTakeaways}
       relatedProjects={relatedProjects}
       beforeSectionsContent={beforeSectionsContent}
-      sectionExtras={{ 0: historicalTimeline }}
+      sectionExtras={{ 0: historicalTimeline, 3: globalSystemsMap }}
     />
   );
 }

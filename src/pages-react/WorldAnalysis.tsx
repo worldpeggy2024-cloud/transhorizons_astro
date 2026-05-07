@@ -81,6 +81,7 @@ interface ToolCard {
   tagFr: string;
   icon: React.ReactNode;
   accent: string;
+  thumbnail?: string;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -358,6 +359,7 @@ export default function WorldAnalysis() {
       tagFr: 'Ressources · Géopolitique',
       icon: <MapIcon size={18} />,
       accent: '#C8860A',
+      thumbnail: '/images/thumb-critical-minerals-map.jpg',
     },
     {
       href: '#',
@@ -762,6 +764,30 @@ export default function WorldAnalysis() {
                   className="absolute top-0 left-0 right-0 h-[2px] opacity-60 group-hover:opacity-100 transition-opacity"
                   style={{ background: card.accent }}
                 />
+
+                {/* Thumbnail strip */}
+                {card.thumbnail ? (
+                  <div className="relative overflow-hidden h-[120px]">
+                    <img
+                      src={card.thumbnail}
+                      alt=""
+                      className="w-full h-full object-cover object-center opacity-75 group-hover:opacity-90 transition-opacity duration-300"
+                    />
+                    <div
+                      className="absolute inset-0"
+                      style={{ background: `linear-gradient(to bottom, transparent 40%, #0A0A12 100%)` }}
+                    />
+                  </div>
+                ) : isPlaceholder ? (
+                  <div
+                    className="h-[120px] flex items-center justify-center"
+                    style={{ background: `linear-gradient(135deg, #0f172a 0%, #0a1628 50%, #0f1f1a 100%)` }}
+                  >
+                    <span className="font-body text-[9px] tracking-[0.25em] uppercase text-white/15">
+                      {fr ? 'Aperçu à venir' : 'Preview coming soon'}
+                    </span>
+                  </div>
+                ) : null}
 
                 <div className="p-6">
                   {/* Icon + tag row */}

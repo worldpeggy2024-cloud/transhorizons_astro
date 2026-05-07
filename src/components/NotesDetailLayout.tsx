@@ -217,10 +217,10 @@ export default function NotesDetailLayout({
             <div>
               <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">Contact</h4>
               <a
-                href="mailto:hello@transhorizons.space"
+                href="mailto:contact@transhorizons.net"
                 className="text-sm text-charcoal/70 hover:text-sand transition-colors"
               >
-                hello@transhorizons.space
+                contact@transhorizons.net
               </a>
             </div>
             <div>

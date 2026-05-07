@@ -76,11 +76,11 @@ export default function Footer() {
               {t('footer.brand')}
             </p>
             <a
-              href="mailto:hello@transhorizons.space"
+              href="mailto:contact@transhorizons.net"
               className="inline-flex items-center gap-2 text-white/50 hover:text-[#7D1A2E] transition-colors font-body text-sm group"
             >
               <Mail size={13} />
-              <span>hello@transhorizons.space</span>
+              <span>contact@transhorizons.net</span>
               <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
           </div>

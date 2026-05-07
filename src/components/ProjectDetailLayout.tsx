@@ -67,6 +67,7 @@ interface ProjectDetailLayoutProps {
     title: string;
     category: string;
   }>;
+  language?: 'en' | 'fr';
   beforeSectionsContent?: React.ReactNode;
   sectionExtras?: Record<number, React.ReactNode>;
 }
@@ -84,10 +85,15 @@ export default function ProjectDetailLayout({
   sections,
   keyTakeaways,
   relatedProjects,
+  language = 'en',
   beforeSectionsContent,
   sectionExtras,
 }: ProjectDetailLayoutProps) {
   const [, navigate] = useLocation();
+  const backToPortfolioLabel = language === 'fr' ? 'Retour au Portfolio' : 'Back to Portfolio';
+  const readLabel = language === 'fr' ? 'de lecture' : 'read';
+  const keyTakeawaysLabel = language === 'fr' ? 'Points clés' : 'Key Takeaways';
+  const relatedProjectsLabel = language === 'fr' ? 'Projets connexes' : 'Related Projects';
 
   // Scroll to top whenever this component mounts (covers Related Projects navigation)
   useEffect(() => {
@@ -104,7 +110,7 @@ export default function ProjectDetailLayout({
             className="flex items-center gap-2 text-[#666] hover:text-[#1A1A1A] transition-colors duration-300"
           >
             <ArrowLeft size={18} />
-            <span className="text-sm font-body">Back to Portfolio</span>
+            <span className="text-sm font-body">{backToPortfolioLabel}</span>
           </button>
           <div className="text-xs text-[#999] font-body tracking-wide uppercase">{category}</div>
         </div>
@@ -132,7 +138,7 @@ export default function ProjectDetailLayout({
               <p className="text-white/60 text-sm font-body tracking-wide uppercase mb-3">{articleType}</p>
             )}
             <p className="text-white/80 text-lg font-body max-w-2xl mb-6">{subtitle}</p>
-            <p className="text-white/60 text-sm font-body">{readTime} read</p>
+            <p className="text-white/60 text-sm font-body">{readTime} {readLabel}</p>
           </div>
         </div>
       </section>
@@ -142,7 +148,7 @@ export default function ProjectDetailLayout({
         {/* Key Takeaways — shown first for quick orientation */}
         <section className="bg-[#F5F3F0] rounded-lg p-10 md:p-12 mb-20 border border-[#C8C8C8]">
           <h3 className="font-display text-2xl md:text-3xl font-light text-[#1A1A1A] mb-10">
-            Key Takeaways
+            {keyTakeawaysLabel}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {keyTakeaways.map((takeaway, idx) => (
@@ -226,7 +232,7 @@ export default function ProjectDetailLayout({
         {relatedProjects && relatedProjects.length > 0 && (
           <section>
             <h3 className="font-display text-2xl md:text-3xl font-light text-[#1A1A1A] mb-10">
-              Related Projects
+              {relatedProjectsLabel}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedProjects.map((project) => (

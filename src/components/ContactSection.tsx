@@ -2,14 +2,14 @@
  * TransHorizons — Contact Section "Get in Touch"
  * Design: Dark charcoal background, ivory form fields, burgundy accents
  * Contact method: mailto: link — pre-fills subject + body from form fields,
- *   opens visitor's email client with peggy.brenier@gmail.com as recipient.
+ *   opens visitor's email client with contact@transhorizons.net as recipient.
  */
 
 import { useEffect, useRef, useState } from 'react';
 import { Send, Mail, MapPin, BookOpen } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-const CONTACT_EMAIL = 'peggy.brenier@gmail.com';
+const CONTACT_EMAIL = 'contact@transhorizons.net';
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);

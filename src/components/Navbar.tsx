@@ -286,10 +286,10 @@ export default function Navbar() {
           {/* Footer of panel */}
           <div className="px-5 py-5 border-t border-white/10 flex-shrink-0">
             <a
-              href="mailto:hello@transhorizons.space"
+              href="mailto:contact@transhorizons.net"
               className="text-white/30 font-body text-xs"
             >
-              hello@transhorizons.space
+              contact@transhorizons.net
             </a>
           </div>
         </div>
