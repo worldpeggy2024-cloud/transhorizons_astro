@@ -10,7 +10,8 @@
     "repair:countries": "node scripts/repair-country-yaml.cjs",
     "repair:countries:write": "node scripts/repair-country-yaml.cjs --write",
     "validate:countries": "node scripts/validate-country-citations.cjs",
-    "validate:country": "node scripts/validate-country-citations.cjs"
+    "validate:country": "node scripts/validate-country-citations.cjs",
+    "validate:critical-minerals": "node scripts/validate-critical-minerals-map-data.cjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
