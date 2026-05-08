@@ -11,7 +11,8 @@
     "repair:countries:write": "node scripts/repair-country-yaml.cjs --write",
     "validate:countries": "node scripts/validate-country-citations.cjs",
     "validate:country": "node scripts/validate-country-citations.cjs",
-    "validate:critical-minerals": "node scripts/validate-critical-minerals-map-data.cjs"
+    "validate:critical-minerals": "node scripts/validate-critical-minerals-map-data.cjs",
+    "apply:mineral-delta": "node scripts/apply-mineral-delta.cjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
@@ -73,6 +74,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "xlsx": "^0.18.5"
   }
 }

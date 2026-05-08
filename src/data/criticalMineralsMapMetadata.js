@@ -4,12 +4,12 @@
  */
 export const CRITICAL_MINERALS_MAP_METADATA = {
   datasetVersion: "2026.05.07",
-  dataYear: 2024,
+  dataYear: 2025,
   lastUpdated: "2026-05-07",
   sourceLastVerified: "2026-05-07",
   staleAfterDays: 120,
   geometryPath: "/countries-110m.json",
-  headerBadge: "USGS MCS 2025 · NRCan 2024 · Our World in Data 2026",
+  headerBadge: "USGS MCS 2026 · NRCan 2025 · Our World in Data 2026",
   sources: [
     {
       id: "usgs-mcs-2025",
