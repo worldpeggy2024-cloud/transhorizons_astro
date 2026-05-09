@@ -74,7 +74,7 @@ export default function HeroSection() {
               <div className="w-6 h-px bg-[#7D1A2E] flex-shrink-0" />
               <p className="text-white text-[11px] tracking-[0.28em] uppercase font-bold font-body"
                  style={{ textShadow: '0 1px 4px rgba(0,0,0,0.9)' }}>
-                Montréal · Canada · Global
+                {t('hero.location')}
               </p>
               <div className="w-6 h-px bg-[#7D1A2E] flex-shrink-0" />
             </div>

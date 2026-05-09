@@ -73,7 +73,7 @@ export default function PortfolioSection() {
     },
     {
       slug: 'canada-forest-system-climate-industrial-pressure',
-      category: lang === 'fr' ? 'Analyse' : 'Analysis',
+      category: lang === 'fr' ? 'Systèmes' : 'Systems',
       readTime: '16 min',
       title: lang === 'fr'
         ? "Le système forestier du Canada sous pressions climatiques et industrielles"

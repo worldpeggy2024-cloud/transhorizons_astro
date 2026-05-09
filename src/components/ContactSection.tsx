@@ -28,6 +28,10 @@ function useInView(threshold = 0.1) {
 export default function ContactSection() {
   const { ref, inView } = useInView();
   const { t } = useLanguage();
+  const contactIntroParagraphs = t('contact.intro')
+    .split('\n\n')
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -74,7 +78,7 @@ export default function ContactSection() {
     }`;
 
   return (
-    <section id="contact" className="bg-[#111111] py-24 lg:py-32" ref={ref}>
+    <section id="contact" className="bg-[#111111] py-10 lg:py-10" ref={ref}>
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left: Info */}
@@ -90,9 +94,11 @@ export default function ContactSection() {
               {t('contact.title')}
             </h2>
             <div className="w-12 h-px bg-[#7D1A2E] mb-8" />
-            <p className="text-white/50 font-body text-base leading-relaxed mb-12 max-w-md">
-              {t('contact.intro')}
-            </p>
+            <div className="text-white/50 font-body text-base leading-relaxed mb-12 max-w-md space-y-4">
+              {contactIntroParagraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
 
             {/* Contact details */}
             <div className="space-y-6 mb-12">
@@ -127,13 +133,15 @@ export default function ContactSection() {
               <p className="text-white/30 text-[10px] tracking-[0.2em] uppercase font-body mb-5">{t('contact.follow')}</p>
               <div className="flex gap-6">
                 {[
-                  { icon: BookOpen, label: t('footer.linkedin'), href: '#' },
-                  { icon: BookOpen, label: t('footer.instagram'), href: '#' },
+                  { icon: BookOpen, label: t('footer.linkedin'), href: 'https://www.linkedin.com/in/peggy-brenier-6896b197/' },
+                  { icon: BookOpen, label: t('footer.instagram'), href: 'https://www.instagram.com/worldpeggy/' },
                   { icon: BookOpen, label: t('footer.blog'), href: '#' },
                 ].map(({ icon: Icon, label, href }) => (
                   <a
                     key={label}
                     href={href}
+                    target={href.startsWith('http') ? '_blank' : undefined}
+                    rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="flex items-center gap-2 text-white/35 hover:text-[#7D1A2E] transition-colors font-body text-xs tracking-wider uppercase group"
                   >
                     <Icon size={13} className="group-hover:scale-110 transition-transform" />

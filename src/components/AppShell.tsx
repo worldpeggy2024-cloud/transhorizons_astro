@@ -24,6 +24,7 @@ import PortfolioResourceCivilization from '@/pages-react/PortfolioResourceCivili
 import PortfolioCanadaForestCarbon from '@/pages-react/PortfolioCanadaForestCarbon';
 import PortfolioForestSystemPressure from '@/pages-react/PortfolioForestSystemPressure';
 import AnalysesIndex from '@/pages-react/AnalysesIndex';
+import NotesIndex from '@/pages-react/NotesIndex';
 import Publications from '@/pages-react/Publications';
 import ResearchApproach from '@/pages-react/ResearchApproach';
 import { HistoricalRiskDemo } from '@/pages-react/HistoricalRiskDemo';
@@ -40,6 +41,8 @@ function Router() {
       <Route path={"/portfolio/technology"} component={PortfolioTechnology} />
       <Route path={"/notes/career-evolution"} component={NotesCareerEvolution} />
       <Route path={"/notes/travel-observation"} component={NotesTravelObservation} />
+      <Route path={"/notes/canada-resources"} component={NotesCanadaResources} />
+      <Route path={"/notes"} component={NotesIndex} />
       <Route path="/country/:cca3" component={CountryPage} />
       <Route path="/world-analysis/:cca3" component={CountryPage} />
       <Route path="/world-analysis" component={WorldAnalysis} />

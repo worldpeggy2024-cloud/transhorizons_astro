@@ -389,9 +389,9 @@ export default function WorldAnalysis() {
         style={{ height: TOP_BAR_H }}
       >
         <div className="max-w-[1600px] mx-auto px-6 h-full flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-white/50 hover:text-[#7D1A2E] transition-colors font-body text-sm no-underline">
-            <ArrowLeft size={14} />
-            {fr ? 'Retour' : 'Back'}
+          <Link href="/" className="flex items-center gap-2 text-white/40 hover:text-white/80 transition-colors font-body text-[11px] tracking-widest uppercase no-underline">
+            <ArrowLeft size={12} />
+            {fr ? 'Accueil' : 'Home'}
           </Link>
           <div className="flex items-center gap-2">
             <Globe size={12} className="text-[#7D1A2E]" />

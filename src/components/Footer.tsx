@@ -10,6 +10,10 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
   const { t } = useLanguage();
+  const brandLines = t('footer.brand')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean);
 
   const marqueeItems = [
     { text: t('footer.marquee1'), accent: false },
@@ -61,20 +65,24 @@ export default function Footer() {
       </div>
 
       {/* Main footer */}
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-10 pt-16 pb-10">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-10 pt-7 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-14">
           {/* Brand — 4 cols */}
           <div className="md:col-span-4">
-            <button onClick={() => scrollTo('hero')} className="mb-5 block">
+            <button onClick={() => scrollTo('hero')} className="mb-0 block">
               <img
                 src="/images/TransHorizon_LogoB_31961bea.png"
                 alt="TransHorizons"
                 className="w-[280px] h-auto object-contain"
               />
             </button>
-            <p className="text-white/35 font-body text-sm leading-relaxed mb-7 max-w-xs">
-              {t('footer.brand')}
-            </p>
+            <div className="text-white/35 font-body text-sm leading-relaxed mb-7 max-w-xs">
+              {brandLines[0] && <p>{brandLines[0]}</p>}
+              <div className="w-32 h-px bg-[#7D1A2E] my-2" />
+              {brandLines.slice(1).map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </div>
             <a
               href="mailto:contact@transhorizons.net"
               className="inline-flex items-center gap-2 text-white/50 hover:text-[#7D1A2E] transition-colors font-body text-sm group"
@@ -122,11 +130,17 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-5">
               {[
-                { icon: BookOpen, label: 'LinkedIn', href: '#', descKey: 'footer.linkedinDesc' },
-                { icon: BookOpen, label: 'Instagram', href: '#', descKey: 'footer.instagramDesc' },
+                { icon: BookOpen, label: 'LinkedIn', href: 'https://www.linkedin.com/in/peggy-brenier-6896b197/', descKey: 'footer.linkedinDesc' },
+                { icon: BookOpen, label: 'Instagram', href: 'https://www.instagram.com/worldpeggy/', descKey: 'footer.instagramDesc' },
                 { icon: BookOpen, label: 'Blog', href: '#', descKey: 'footer.blogDesc' },
               ].map(({ icon: Icon, label, href, descKey }) => (
-                <a key={label} href={href} className="flex items-center gap-3 group">
+                <a
+                  key={label}
+                  href={href}
+                  target={href.startsWith('http') ? '_blank' : undefined}
+                  rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="flex items-center gap-3 group"
+                >
                   <div className="w-9 h-9 border border-white/15 flex items-center justify-center flex-shrink-0 group-hover:border-[#7D1A2E] transition-all duration-300">
                     <Icon size={14} className="text-white/35 group-hover:text-[#7D1A2E] transition-colors" />
                   </div>

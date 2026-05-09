@@ -6,9 +6,11 @@
  */
 
 import { ArrowLeft } from 'lucide-react';
+import { isValidElement } from 'react';
 import { useLocation } from 'wouter';
 import { useEffect } from 'react';
 import { smoothScrollTo } from '../lib/smoothScroll';
+import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 
 interface KeyTakeaway {
   point: string;
@@ -28,6 +30,28 @@ interface BlogDetailLayoutProps {
     slug: string;
   }>;
   backSection?: 'notes' | 'portfolio';
+  language?: 'en' | 'fr';
+  audioId?: string;
+  audioText?: string;
+}
+
+function cleanForTTS(text: string): string {
+  return text
+    .replace(/â€¢|•/g, ',')
+    .replace(/\n\n+/g, '. ')
+    .replace(/\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function textFromNode(node: React.ReactNode): string {
+  if (node == null || typeof node === 'boolean') return '';
+  if (typeof node === 'string' || typeof node === 'number') return String(node);
+  if (Array.isArray(node)) return node.map(textFromNode).join(' ');
+  if (isValidElement(node)) {
+    return textFromNode((node.props as { children?: React.ReactNode }).children);
+  }
+  return '';
 }
 
 export default function NotesDetailLayout({
@@ -40,18 +64,43 @@ export default function NotesDetailLayout({
   keyTakeaways = [],
   relatedArticles = [],
   backSection = 'notes',
+  language = 'en',
+  audioId,
+  audioText,
 }: BlogDetailLayoutProps) {
   const [, navigate] = useLocation();
+  const backToHomeLabel = language === 'fr' ? 'Retour a l\'accueil' : 'Back to Home';
+  const backToNotesLabel = language === 'fr' ? 'Retour aux notes' : 'Back to Notes';
+  const backToAnalysesLabel = language === 'fr' ? 'Retour aux analyses' : 'Back to Portfolio';
+  const navigationLabel = language === 'fr' ? 'Navigation' : 'Navigation';
+  const homeLabel = language === 'fr' ? 'Accueil' : 'Home';
+  const portfolioLabel = language === 'fr' ? 'Portfolio' : 'Portfolio';
+  const notesLabel = language === 'fr' ? 'Notes' : 'Notes';
+  const contactLabel = language === 'fr' ? 'Contact' : 'Contact';
+  const followLabel = language === 'fr' ? 'Suivre' : 'Follow';
 
-  const handleBack = () => {
+  const derivedAudioText = [
+    title,
+    category,
+    date,
+    ...keyTakeaways.map((k) => k.point),
+    textFromNode(content),
+  ]
+    .map((part) => cleanForTTS(part ?? ''))
+    .filter(Boolean)
+    .join('. ');
+
+  const ttsText = (audioText && cleanForTTS(audioText)) || derivedAudioText;
+  const ttsId = audioId ?? `notes-${title}`;
+
+  const goHomeTop = () => {
     navigate('/');
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
     setTimeout(() => {
-      if (backSection === 'portfolio') {
-        document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        smoothScrollTo('notes');
-      }
-    }, 100);
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 50);
   };
 
   // Scroll to top on mount (covers Related Articles navigation)
@@ -64,13 +113,23 @@ export default function NotesDetailLayout({
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm border-b border-sand/20">
         <div className="container flex items-center justify-between py-4">
-          <button
-            onClick={handleBack}
-            className="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-sand transition-colors"
-          >
-            <ArrowLeft size={16} />
-            {backSection === 'portfolio' ? 'Back to Portfolio' : 'Back to Notes'}
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={goHomeTop}
+              className="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-sand transition-colors"
+            >
+              <ArrowLeft size={16} />
+              {homeLabel}
+            </button>
+            <span className="text-sand/40">·</span>
+            <button
+              onClick={() => navigate(backSection === 'portfolio' ? '/analyses' : '/notes')}
+              className="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-sand transition-colors"
+            >
+              <ArrowLeft size={16} />
+              {backSection === 'portfolio' ? backToAnalysesLabel : backToNotesLabel}
+            </button>
+          </div>
           <div className="text-xs text-sand uppercase tracking-wide">{category}</div>
         </div>
       </nav>
@@ -98,6 +157,16 @@ export default function NotesDetailLayout({
             <div className="w-8 h-px bg-sand/40" />
             <span className="text-sand/80">Featured Article</span>
           </div>
+          {ttsText && (
+            <div className="mt-4" onClick={(e) => e.stopPropagation()}>
+              <PortfolioTTSPlayer
+                id={ttsId}
+                text={ttsText}
+                lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                dark
+              />
+            </div>
+          )}
         </div>
       </section>
 
@@ -156,44 +225,26 @@ export default function NotesDetailLayout({
         </section>
       )}
 
-      {/* CTA Section */}
-      <section className="bg-charcoal text-white py-20">
-        <div className="container max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-playfair text-3xl font-bold mb-4">
-            Interested in these perspectives?
-          </h2>
-          <p className="text-white/70 mb-8">
-            Let's discuss how these insights apply to your strategic questions or projects.
-          </p>
-          <button
-            onClick={() => navigate('/#contact')}
-            className="inline-block px-8 py-3 bg-sand text-charcoal font-medium hover:bg-sand/90 transition-colors"
-          >
-            Get in Touch
-          </button>
-        </div>
-      </section>
-
       {/* Footer Navigation */}
       <footer className="bg-white border-t border-sand/20 py-12">
         <div className="container max-w-4xl mx-auto px-6">
           <button
-            onClick={() => navigate('/')}
+            onClick={goHomeTop}
             className="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-sand transition-colors mb-8"
           >
             <ArrowLeft size={16} />
-            Back to Home
+            {backToHomeLabel}
           </button>
           <div className="grid md:grid-cols-3 gap-8 pt-8 border-t border-sand/20">
             <div>
-              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">Navigation</h4>
+              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{navigationLabel}</h4>
               <ul className="space-y-2 text-sm text-charcoal/70">
                 <li>
                   <button
-                    onClick={() => navigate('/')}
+                    onClick={goHomeTop}
                     className="hover:text-sand transition-colors"
                   >
-                    Home
+                    {homeLabel}
                   </button>
                 </li>
                 <li>
@@ -201,7 +252,7 @@ export default function NotesDetailLayout({
                     onClick={() => navigate('/#portfolio')}
                     className="hover:text-sand transition-colors"
                   >
-                    Portfolio
+                    {portfolioLabel}
                   </button>
                 </li>
                 <li>
@@ -209,13 +260,13 @@ export default function NotesDetailLayout({
                     onClick={() => { navigate('/'); setTimeout(() => smoothScrollTo('notes'), 100); }}
                     className="hover:text-sand transition-colors"
                   >
-                    Notes
+                    {notesLabel}
                   </button>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">Contact</h4>
+              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{contactLabel}</h4>
               <a
                 href="mailto:contact@transhorizons.net"
                 className="text-sm text-charcoal/70 hover:text-sand transition-colors"
@@ -224,16 +275,20 @@ export default function NotesDetailLayout({
               </a>
             </div>
             <div>
-              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">Follow</h4>
+              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{followLabel}</h4>
               <div className="flex gap-4 text-sm">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/peggy-brenier-6896b197/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-charcoal/70 hover:text-sand transition-colors"
                 >
                   LinkedIn
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/worldpeggy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-charcoal/70 hover:text-sand transition-colors"
                 >
                   Instagram

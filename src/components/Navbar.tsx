@@ -9,7 +9,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import { smoothScrollTo } from '../lib/smoothScroll';
 
 // Nav labels are now derived from translation keys at render time
@@ -19,6 +19,7 @@ const LOGO_TRANSPARENT = '/images/TransHorizon_LogoTWebSiteHeader_faa16766.png';
 const LOGO_DARK = '/images/TransHorizon_LogoB_31961bea.png';
 
 export default function Navbar() {
+  const [location, navigate] = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -58,7 +59,12 @@ export default function Navbar() {
   }, []);
 
   const scrollTo = (id: string) => {
-    smoothScrollTo(id);
+    if (location === '/' || location.startsWith('/#')) {
+      smoothScrollTo(id);
+    } else {
+      navigate('/');
+      setTimeout(() => smoothScrollTo(id), 120);
+    }
     setMenuOpen(false);
   };
 
@@ -115,16 +121,16 @@ export default function Navbar() {
             </div>
 
             {navLinks.map(({ label, id }) => (
-              <Link
+              <button
                 key={id}
-                href="/analyses"
+                onClick={() => scrollTo(id)}
                 className={`relative font-body text-[0.75rem] font-medium tracking-[0.14em] uppercase transition-all duration-300 group hover:-translate-y-px ${
                   scrolled ? 'text-[#1A1A1A] hover:text-[#7D1A2E]' : 'text-white/90 hover:text-white'
                 }`}
               >
                 {label}
                 <span className="absolute -bottom-1 left-0 h-px bg-[#7D1A2E] transition-all duration-300 ease-out origin-left w-0 group-hover:w-full" />
-              </Link>
+              </button>
             ))}
 
             {/* Maps */}
@@ -242,14 +248,13 @@ export default function Navbar() {
           {/* Nav links */}
           <nav className="flex flex-col py-4 px-5 gap-0 overflow-y-auto flex-1">
             {/* Home, Portfolio, About */}
-            <Link
-              href="/analyses"
-              onClick={() => setMenuOpen(false)}
+            <button
+              onClick={() => scrollTo('portfolio')}
               className="text-left text-white/60 hover:text-[#7D1A2E] font-body text-sm tracking-widest uppercase py-3.5 border-b border-white/8 transition-colors flex items-center justify-between group"
             >
               <span>{t('nav.analysis')}</span>
               <span className="text-[#7D1A2E] opacity-0 group-hover:opacity-100 transition-opacity text-xs">→</span>
-            </Link>
+            </button>
             {mobileLinks.filter(l => l.id !== 'portfolio').map(({ label, id }, i) => (
               <button
                 key={id}

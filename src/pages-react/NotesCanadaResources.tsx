@@ -9,13 +9,14 @@
 import NotesDetailLayout from '@/components/NotesDetailLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
 import CriticalMineralsMap from './CriticalMineralsMap';
+import { isValidElement, ReactNode } from 'react';
 
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=85';
 
 const content = {
   en: {
     title: "Canada's Resource Wealth in a Fractured World",
-    category: 'Signals',
+    category: 'Systems & Signals',
     date: 'April 2026',
     readTime: '16 min read',
     keyTakeaways: [
@@ -216,7 +217,7 @@ const content = {
 
   fr: {
     title: 'La richesse minérale du Canada dans un monde fracturé',
-    category: 'Signaux',
+    category: 'Systèmes et signaux',
     date: 'Avril 2026',
     readTime: '16 min de lecture',
     keyTakeaways: [
@@ -431,6 +432,47 @@ const content = {
   },
 };
 
+function cleanForTTS(text: string): string {
+  return text
+    .replace(/â€¢|•/g, ',')
+    .replace(/\n\n+/g, '. ')
+    .replace(/\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function textFromNode(node: ReactNode): string {
+  if (node == null || typeof node === 'boolean') return '';
+  if (typeof node === 'string' || typeof node === 'number') return String(node);
+  if (Array.isArray(node)) return node.map(textFromNode).join(' ');
+  if (isValidElement(node)) {
+    return textFromNode((node.props as { children?: ReactNode }).children);
+  }
+  return '';
+}
+
+function buildArticleAudioText(c: typeof content.en): string {
+  const parts = [
+    c.title,
+    ...c.keyTakeaways.map((k) => k.point),
+    c.section1Title,
+    textFromNode(c.intro),
+    textFromNode(c.section1),
+    c.section2Title,
+    textFromNode(c.section2),
+    c.section3Title,
+    textFromNode(c.section3),
+    c.section4Title,
+    textFromNode(c.section4),
+    textFromNode(c.conclusion),
+  ];
+
+  return parts
+    .map((p) => cleanForTTS(p ?? ''))
+    .filter(Boolean)
+    .join('. ');
+}
+
 export default function NotesCanadaResources() {
   const { language } = useLanguage();
   const c = language === 'fr' ? content.fr : content.en;
@@ -511,6 +553,9 @@ export default function NotesCanadaResources() {
       content={articleContent}
       relatedArticles={c.relatedArticles}
       backSection="portfolio"
+      language={language === 'fr' ? 'fr' : 'en'}
+      audioId="notes-canada-resources"
+      audioText={buildArticleAudioText(c)}
     />
   );
 }

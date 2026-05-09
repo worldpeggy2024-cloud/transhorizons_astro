@@ -43,7 +43,7 @@ export default function ResearchApproachSection() {
                 {t('researchApproach.title')}
               </h2>
             </div>
-            <h3 className="font-display font-light text-[#1A1A1A] text-3xl md:text-4xl leading-tight">
+            <h3 className="font-display font-light text-[#1A1A1A] text-2xl md:text-3xl leading-tight">
               {t('researchApproach.subtitle')}
             </h3>
           </div>

@@ -21,6 +21,9 @@ import technologyRaw from '../../content/articles/2026-01_AI-Governance_Essay.ya
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import forestSystemRaw from '../../content/articles/2026-04_Canada-Forest-System_Essay.yaml';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import canadaResourceWealthRaw from '../../content/articles/2026-04_Canada-Resource-Wealth_Essay.yaml';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ArticleData = Record<string, any>;
@@ -80,6 +83,7 @@ const REGISTRY: Record<string, ArticleData> = {
   'resource-civilization': resourceCivilizationRaw,
   'technology': technologyRaw,
   'canada-forest-system-climate-industrial-pressure': forestSystemRaw,
+  'canada-resources': canadaResourceWealthRaw,
 };
 
 /** Returns the full TTS text for a given article slug and language, or '' if not found. */

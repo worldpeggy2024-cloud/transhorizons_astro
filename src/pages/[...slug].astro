@@ -4,6 +4,11 @@ import AppShell from '../components/AppShell';
 // Server-rendered catch-all — handles all Wouter client-side routes including
 // dynamic ones like /country/:cca3 and /world-analysis/:cca3
 export const prerender = false;
+
+// Exclude keystatic routes - let the Keystatic integration handle them
+if (Astro.url.pathname.startsWith('/keystatic')) {
+  return Astro.reroute(new Request(Astro.request));
+}
 ---
 <Base>
   <AppShell client:only="react" />

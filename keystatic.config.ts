@@ -1,4 +1,4 @@
-import { config, fields, collection } from '@keystatic/core';
+import { config, fields, collection, singleton } from '@keystatic/core';
 
 const sectionFields = {
   title_en: fields.text({ label: 'Section Title (EN)' }),
@@ -36,8 +36,108 @@ const ratingOptions = [
   { label: 'Low', value: 'Low' },
 ];
 
+// ── Research Approach Singleton Fields ──────────────────────────────────────
+
+const processItemFields = {
+  bold: fields.text({ label: 'Bold Segment' }),
+  rest: fields.text({ label: 'Trailing Segment', multiline: true }),
+};
+
+const scopeItemFields = {
+  title: fields.text({ label: 'Title' }),
+  desc: fields.text({ label: 'Description', multiline: true }),
+};
+
+const raLangFields = () => ({
+  pageTitle: fields.text({ label: 'Page Title' }),
+  backLabel: fields.text({ label: 'Back Label' }),
+  method: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    label: fields.text({ label: 'Label' }),
+    body: fields.text({ label: 'Body (paragraphs separated by blank lines)', multiline: true }),
+  }, { label: 'Method & Approach' }),
+  scope: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    intro: fields.text({ label: 'Intro', multiline: true }),
+    items: fields.array(fields.object(scopeItemFields), { label: 'Items', itemLabel: (p) => p.fields.title.value || 'Item' }),
+    closing: fields.text({ label: 'Closing', multiline: true }),
+  }, { label: 'Analytical Scope' }),
+  sources: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    intro: fields.text({ label: 'Intro', multiline: true }),
+    items: fields.text({ label: 'Items (one per line)', multiline: true }),
+    closing: fields.text({ label: 'Closing', multiline: true }),
+  }, { label: 'Sources Monitored' }),
+  process: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    intro: fields.text({ label: 'Intro', multiline: true }),
+    items: fields.array(fields.object(processItemFields), { label: 'Items', itemLabel: (p) => p.fields.bold.value || 'Item' }),
+    closing: fields.text({ label: 'Closing', multiline: true }),
+  }, { label: 'Update Rhythm' }),
+  mapping: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    body: fields.text({ label: 'Body (paragraphs separated by blank lines)', multiline: true }),
+    items: fields.text({ label: 'Items (one per line)', multiline: true }),
+    closing: fields.text({ label: 'Closing', multiline: true }),
+  }, { label: 'Mapping Methodology' }),
+  traceability: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    body: fields.text({ label: 'Body (paragraphs separated by blank lines)', multiline: true }),
+    items: fields.text({ label: 'Items (one per line)', multiline: true }),
+    closing: fields.text({ label: 'Closing', multiline: true }),
+  }, { label: 'Source Traceability' }),
+  tools: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    intro: fields.text({ label: 'Intro (paragraphs separated by blank lines)', multiline: true }),
+    usedItems: fields.text({ label: 'Used Items (one per line)', multiline: true }),
+    p3: fields.text({ label: 'Transition Label' }),
+    howeverItems: fields.text({ label: 'Constraint Items (one per line)', multiline: true }),
+    outro: fields.text({ label: 'Outro (paragraphs separated by blank lines)', multiline: true }),
+  }, { label: 'Analytical Tools' }),
+  principles: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    intro: fields.text({ label: 'Intro', multiline: true }),
+    items: fields.array(fields.object(scopeItemFields), { label: 'Items', itemLabel: (p) => p.fields.title.value || 'Item' }),
+  }, { label: 'Analytical Principles' }),
+  limits: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    body: fields.text({ label: 'Body (paragraphs separated by blank lines)', multiline: true }),
+    items: fields.text({ label: 'Items (one per line)', multiline: true }),
+    closing: fields.text({ label: 'Closing', multiline: true }),
+  }, { label: 'Limits & Uncertainty' }),
+  referencing: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    sources: fields.object({
+      heading: fields.text({ label: 'Heading' }),
+      body: fields.text({ label: 'Body (paragraphs separated by blank lines)', multiline: true }),
+    }, { label: 'Sources & Documentation' }),
+    citation: fields.object({
+      heading: fields.text({ label: 'Heading' }),
+      intro: fields.text({ label: 'Intro', multiline: true }),
+      items: fields.text({ label: 'Items (one per line)', multiline: true }),
+      closing: fields.text({ label: 'Closing', multiline: true }),
+    }, { label: 'Citation Philosophy' }),
+  }, { label: 'Referencing Approach' }),
+  position: fields.object({
+    heading: fields.text({ label: 'Heading' }),
+    body: fields.text({ label: 'Body (paragraphs separated by blank lines)', multiline: true }),
+  }, { label: 'Position' }),
+});
+
 export default config({
   storage: { kind: 'local' },
+
+  singletons: {
+    researchApproach: singleton({
+      label: 'Research Approach Page',
+      path: 'content/pages/research-approach',
+      format: { data: 'yaml' },
+      schema: {
+        en: fields.object(raLangFields(), { label: 'English' }),
+        fr: fields.object(raLangFields(), { label: 'French' }),
+      },
+    }),
+  },
 
   collections: {
     articles: collection({

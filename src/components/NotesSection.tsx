@@ -8,6 +8,8 @@ import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
 import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import PortfolioTTSPlayer from './PortfolioTTSPlayer';
+import { getNoteText } from '../lib/noteTexts';
 
 // blogPosts are now built inside the component using translation keys
 
@@ -28,7 +30,8 @@ function useInView(threshold = 0.1) {
 export default function NotesSection() {
   const { ref, inView } = useInView();
   const [, navigate] = useLocation();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const lang = language === 'fr' ? 'fr' : 'en';
 
   const blogPosts = [
     {
@@ -53,6 +56,17 @@ export default function NotesSection() {
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80',
       featured: false,
     },
+    {
+      id: 3,
+      slug: 'canada-resources',
+      category: t('blog.canadaResources.category'),
+      date: t('blog.canadaResources.date'),
+      readTime: t('blog.canadaResources.readTime'),
+      title: t('blog.canadaResources.title'),
+      excerpt: t('blog.canadaResources.desc'),
+      image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=700&q=80',
+      featured: false,
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
@@ -60,7 +74,7 @@ export default function NotesSection() {
   };
 
   return (
-    <section id="notes" className="bg-[#DEDEDE] py-24 lg:py-32" ref={ref}>
+    <section id="notes" className="bg-[#DEDEDE] py-10 lg:py-20" ref={ref}>
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
         {/* Header */}
         <div
@@ -81,7 +95,10 @@ export default function NotesSection() {
               </p>
             </div>
             <button
-              onClick={() => { window.scrollTo({ top: 0, behavior: 'instant' }); navigate('/'); setTimeout(() => document.getElementById('blog')?.scrollIntoView({ behavior: 'smooth' }), 100); }}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'instant' });
+                navigate('/notes');
+              }}
               className="btn-outline-dark self-start md:self-auto whitespace-nowrap flex items-center gap-2"
             >
               {t('blog.allArticles')}
@@ -127,9 +144,16 @@ export default function NotesSection() {
               <p className="text-[#666] font-body text-sm leading-relaxed mb-7">
                 {blogPosts[0].excerpt}
               </p>
-              <div className="flex items-center gap-2 text-[#1A1A1A] hover:text-[#7D1A2E] transition-colors font-body text-[11px] tracking-widest uppercase font-medium">
-                {t('blog.readArticle')}
-                <ArrowRight size={13} />
+              <div className="flex items-center justify-between border-t border-[#E8E8E8] pt-4 w-full">
+                <div className="flex items-center gap-2 text-[#1A1A1A] hover:text-[#7D1A2E] transition-colors font-body text-[11px] tracking-widest uppercase font-medium">
+                  {t('blog.readArticle')}
+                  <ArrowRight size={13} />
+                </div>
+                <PortfolioTTSPlayer
+                  id={`notes-home-${blogPosts[0].slug}`}
+                  text={getNoteText(blogPosts[0].slug, lang) || `${blogPosts[0].title}. ${blogPosts[0].excerpt}`}
+                  lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                />
               </div>
             </div>
           </article>
@@ -169,9 +193,16 @@ export default function NotesSection() {
                   <p className="text-[#777] font-body text-xs leading-relaxed mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  <div className="flex items-center gap-1.5 text-[#1A1A1A] hover:text-[#7D1A2E] transition-colors font-body text-[10px] tracking-widest uppercase font-medium self-start">
-                    {t('blog.readMore')}
-                    <ArrowRight size={11} />
+                  <div className="flex items-center justify-between border-t border-[#E8E8E8] pt-3 w-full mt-auto">
+                    <div className="flex items-center gap-1.5 text-[#1A1A1A] hover:text-[#7D1A2E] transition-colors font-body text-[10px] tracking-widest uppercase font-medium self-start">
+                      {t('blog.readMore')}
+                      <ArrowRight size={11} />
+                    </div>
+                    <PortfolioTTSPlayer
+                      id={`notes-home-${post.slug}`}
+                      text={getNoteText(post.slug, lang) || `${post.title}. ${post.excerpt}`}
+                      lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                    />
                   </div>
                 </div>
               </article>

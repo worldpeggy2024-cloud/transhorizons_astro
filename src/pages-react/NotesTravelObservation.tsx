@@ -11,6 +11,33 @@ import data from '../../content/articles/2026-04_Travel-Observation_Note.yaml';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const d = data as Record<string, any>;
 
+function cleanForTTS(text: string): string {
+  return text
+    .replace(/â€¢|•/g, ',')
+    .replace(/\n\n+/g, '. ')
+    .replace(/\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function buildNoteAudioText(language: 'en' | 'fr'): string {
+  const parts: string[] = [];
+  if (d[`title_${language}`]) parts.push(cleanForTTS(d[`title_${language}`]));
+  if (d[`introductionTitle_${language}`]) parts.push(cleanForTTS(d[`introductionTitle_${language}`]));
+  if (d[`introduction_${language}`]) parts.push(cleanForTTS(d[`introduction_${language}`]));
+
+  for (const k of (d.keyTakeaways ?? [])) {
+    if (k[`description_${language}`]) parts.push(cleanForTTS(k[`description_${language}`]));
+  }
+
+  for (const s of (d.sections ?? [])) {
+    if (s[`title_${language}`]) parts.push(cleanForTTS(s[`title_${language}`]));
+    if (s[`content_${language}`]) parts.push(cleanForTTS(s[`content_${language}`]));
+  }
+
+  return parts.join('. ');
+}
+
 function renderTextBlock(text: string, emphasizedFirstParagraph = false): ReactNode[] {
   const blocks = text
     .split(/\n\s*\n/)
@@ -103,6 +130,9 @@ export default function NotesTravelObservation() {
       date={d.date ?? ''}
       heroImage={d.heroImage ?? ''}
       content={<NotesContent language={L} />}
+      language={L}
+      audioId={`notes-${d.slug ?? 'travel-observation'}`}
+      audioText={buildNoteAudioText(L)}
     />
   );
 }

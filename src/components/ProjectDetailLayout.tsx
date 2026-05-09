@@ -5,10 +5,10 @@
 
 import { ArrowLeft } from 'lucide-react';
 import { useLocation } from 'wouter';
-import { Button } from '@/components/ui/button';
 import { useEffect } from 'react';
 import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 import { buildArticleTextFromProps } from '../lib/articleTexts';
+import { smoothScrollTo } from '../lib/smoothScroll';
 
 /** Renders a content string that may contain multiple paragraphs (separated by
  *  blank lines) and bullet-point blocks (lines starting with •). */
@@ -93,9 +93,27 @@ export default function ProjectDetailLayout({
 }: ProjectDetailLayoutProps) {
   const [, navigate] = useLocation();
   const backToPortfolioLabel = language === 'fr' ? 'Retour au Portfolio' : 'Back to Portfolio';
+  const backToAnalysesLabel = language === 'fr' ? 'Retour aux analyses' : 'Back to Portfolio';
   const readLabel = language === 'fr' ? 'de lecture' : 'read';
   const keyTakeawaysLabel = language === 'fr' ? 'Points clés' : 'Key Takeaways';
   const relatedProjectsLabel = language === 'fr' ? 'Projets connexes' : 'Related Projects';
+  const backToHomeLabel = language === 'fr' ? 'Retour a l\'accueil' : 'Back to Home';
+  const navigationLabel = language === 'fr' ? 'Navigation' : 'Navigation';
+  const homeLabel = language === 'fr' ? 'Accueil' : 'Home';
+  const portfolioLabel = language === 'fr' ? 'Portfolio' : 'Portfolio';
+  const notesLabel = language === 'fr' ? 'Notes' : 'Notes';
+  const contactLabel = language === 'fr' ? 'Contact' : 'Contact';
+  const followLabel = language === 'fr' ? 'Suivre' : 'Follow';
+
+  const goHomeTop = () => {
+    navigate('/');
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 50);
+  };
 
   // Scroll to top whenever this component mounts (covers Related Projects navigation)
   useEffect(() => {
@@ -107,13 +125,23 @@ export default function ProjectDetailLayout({
       {/* Header with back button */}
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-sm border-b border-[#C8C8C8]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
-          <button
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-[#666] hover:text-[#1A1A1A] transition-colors duration-300"
-          >
-            <ArrowLeft size={18} />
-            <span className="text-sm font-body">{backToPortfolioLabel}</span>
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={goHomeTop}
+              className="flex items-center gap-2 text-[#4A4A4A] hover:text-[#7D1A2E] transition-colors font-body text-sm"
+            >
+              <ArrowLeft size={14} />
+              <span>{homeLabel}</span>
+            </button>
+            <span className="text-[#C0B8AD]">·</span>
+            <button
+              onClick={() => navigate('/analyses')}
+              className="flex items-center gap-2 text-[#4A4A4A] hover:text-[#7D1A2E] transition-colors font-body text-sm"
+            >
+              <ArrowLeft size={14} />
+              <span>{backToAnalysesLabel}</span>
+            </button>
+          </div>
           <div className="text-xs text-[#999] font-body tracking-wide uppercase">{category}</div>
         </div>
       </header>
@@ -264,26 +292,79 @@ export default function ProjectDetailLayout({
         )}
       </main>
 
-      {/* CTA Section */}
-      <section className="bg-[#1A1A1A] text-white py-16 md:py-20">
-        <div className="max-w-[1000px] mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-light mb-6">
-            Interested in this analysis?
-          </h2>
-          <p className="text-white/70 font-body text-lg mb-8 max-w-2xl mx-auto">
-            Let's discuss how these insights apply to your strategic questions or projects.
-          </p>
-          <Button
-            onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              navigate('/');
-            }}
-            className="bg-[#7D1A2E] text-[#1A1A1A] hover:bg-[#B89860] font-body font-medium px-8 py-3"
+      {/* Footer Navigation */}
+      <footer className="bg-white border-t border-sand/20 py-12">
+        <div className="container max-w-4xl mx-auto px-6">
+          <button
+            onClick={goHomeTop}
+            className="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-sand transition-colors mb-8"
           >
-            Get in Touch
-          </Button>
+            <ArrowLeft size={16} />
+            {backToHomeLabel}
+          </button>
+          <div className="grid md:grid-cols-3 gap-8 pt-8 border-t border-sand/20">
+            <div>
+              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{navigationLabel}</h4>
+              <ul className="space-y-2 text-sm text-charcoal/70">
+                <li>
+                  <button
+                    onClick={goHomeTop}
+                    className="hover:text-sand transition-colors"
+                  >
+                    {homeLabel}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => navigate('/#portfolio')}
+                    className="hover:text-sand transition-colors"
+                  >
+                    {portfolioLabel}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => { navigate('/'); setTimeout(() => smoothScrollTo('notes'), 100); }}
+                    className="hover:text-sand transition-colors"
+                  >
+                    {notesLabel}
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{contactLabel}</h4>
+              <a
+                href="mailto:contact@transhorizons.net"
+                className="text-sm text-charcoal/70 hover:text-sand transition-colors"
+              >
+                contact@transhorizons.net
+              </a>
+            </div>
+            <div>
+              <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{followLabel}</h4>
+              <div className="flex gap-4 text-sm">
+                <a
+                  href="https://www.linkedin.com/in/peggy-brenier-6896b197/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-charcoal/70 hover:text-sand transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://www.instagram.com/worldpeggy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-charcoal/70 hover:text-sand transition-colors"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </footer>
     </div>
   );
 }
