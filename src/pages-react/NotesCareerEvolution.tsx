@@ -6,7 +6,7 @@
 import { Fragment, ReactNode } from 'react';
 import NotesDetailLayout from '../components/NotesDetailLayout';
 import { useLanguage } from '../contexts/LanguageContext';
-import data from '../../content/articles/career-evolution.yaml';
+import data from '../../content/articles/2026-03_Career-Evolution_Note.yaml';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const d = data as Record<string, any>;

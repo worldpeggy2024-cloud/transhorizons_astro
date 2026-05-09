@@ -7,6 +7,8 @@ import { ArrowLeft } from 'lucide-react';
 import { useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { useEffect } from 'react';
+import PortfolioTTSPlayer from './PortfolioTTSPlayer';
+import { buildArticleTextFromProps } from '../lib/articleTexts';
 
 /** Renders a content string that may contain multiple paragraphs (separated by
  *  blank lines) and bullet-point blocks (lines starting with •). */
@@ -139,6 +141,14 @@ export default function ProjectDetailLayout({
             )}
             <p className="text-white/80 text-lg font-body max-w-2xl mb-6">{subtitle}</p>
             <p className="text-white/60 text-sm font-body">{readTime} {readLabel}</p>
+            <div className="mt-4" onClick={(e) => e.stopPropagation()}>
+              <PortfolioTTSPlayer
+                id={`detail-${title}`}
+                text={buildArticleTextFromProps(title, subtitle, introduction, sections, keyTakeaways)}
+                lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                dark
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@
 
 import ProjectDetailLayout from '@/components/ProjectDetailLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import data from '../../content/articles/canada-multipolar-world.yaml';
+import data from '../../content/articles/2026-03_Canada-Multipolar_Essay.yaml';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const d = data as Record<string, any>;

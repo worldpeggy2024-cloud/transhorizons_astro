@@ -5,10 +5,12 @@
 
 import { useState } from 'react';
 import { useLocation } from 'wouter';
-import { ArrowRight, Clock, ArrowLeft } from 'lucide-react';
+import { ArrowRight, Clock, ArrowLeft, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Footer from '../components/Footer';
 import ArticleTTSButton from '../components/ArticleTTSButton';
+import PortfolioTTSPlayer from '../components/PortfolioTTSPlayer';
+import { getArticleText, getArticleDate } from '../lib/articleTexts';
 
 type FilterKey = 'all' | 'analysis' | 'geopolitics' | 'resources' | 'technology';
 
@@ -20,6 +22,8 @@ export default function AnalysesIndex() {
   const filterLabels: Record<FilterKey, string> = language === 'fr'
     ? { all: 'Tout', analysis: 'Analyse', geopolitics: 'Géopolitique', resources: 'Ressources', technology: 'Technologie' }
     : { all: 'All', analysis: 'Analysis', geopolitics: 'Geopolitics', resources: 'Resources', technology: 'Technology' };
+
+  const lang = language === 'fr' ? 'fr' : 'en';
 
   const articles: {
     slug: string;
@@ -39,7 +43,7 @@ export default function AnalysesIndex() {
       title: t('portfolio.resourceCivilization.title'),
       excerpt: t('portfolio.resourceCivilization.desc'),
       image: '/images/canada_resource_civilization_map.png',
-      date: 'March 2026',
+      date: getArticleDate('resource-civilization', lang),
     },
     {
       slug: 'geopolitics',
@@ -49,7 +53,7 @@ export default function AnalysesIndex() {
       title: t('portfolio.geopolitics.title'),
       excerpt: t('portfolio.geopolitics.desc'),
       image: '/images/portfolio_geopolitics_hero-UFdGm3fFHZsq5moH7gCbog.webp',
-      date: 'January 2026',
+      date: getArticleDate('geopolitics', lang),
     },
     {
       slug: 'resources',
@@ -59,7 +63,7 @@ export default function AnalysesIndex() {
       title: t('portfolio.resources.title'),
       excerpt: t('portfolio.resources.desc'),
       image: 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?w=800&q=80',
-      date: 'January 2026',
+      date: getArticleDate('resources', lang),
     },
     {
       slug: 'technology',
@@ -69,7 +73,7 @@ export default function AnalysesIndex() {
       title: t('portfolio.technology.title'),
       excerpt: t('portfolio.technology.desc'),
       image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80',
-      date: 'February 2026',
+      date: getArticleDate('technology', lang),
     },
     {
       slug: 'canada-forest-system-climate-industrial-pressure',
@@ -83,7 +87,7 @@ export default function AnalysesIndex() {
         ? 'Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada\'s forest system and its role within global resource and trade networks.'
         : 'Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada\'s forest system and its role within global resource and trade networks.',
       image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
-      date: 'April 2026',
+      date: getArticleDate('canada-forest-system-climate-industrial-pressure', lang),
     },
     {
       slug: 'canada-forest-carbon',
@@ -93,7 +97,7 @@ export default function AnalysesIndex() {
       title: t('portfolio.forestCarbon.title'),
       excerpt: t('portfolio.forestCarbon.desc'),
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663495655297/RcKra6cpkH699NPak8ueHQ/canada-forest-hero-Vv9WznN4NH8b9CsdMBdh8H.webp',
-      date: 'April 2026',
+      date: getArticleDate('canada-forest-carbon', lang),
     },
     {
       slug: 'canada-resources',
@@ -177,7 +181,7 @@ export default function AnalysesIndex() {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <div className="flex flex-wrap items-center gap-2 mb-4">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
                   <span className="bg-[#7D1A2E]/10 text-[#5C1220] text-[10px] tracking-[0.2em] uppercase font-medium font-body px-2.5 py-1">
                     {article.category}
                   </span>
@@ -185,27 +189,39 @@ export default function AnalysesIndex() {
                     <Clock size={10} />
                     {article.readTime} {language === 'fr' ? 'de lecture' : 'read'}
                   </span>
-                  <span className="text-[#BBB] text-[10px] font-body ml-auto">
+                </div>
+                {article.date && (
+                  <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1 mb-3">
+                    <Calendar size={10} />
                     {article.date}
                   </span>
-                </div>
-                <h2 className="font-display text-xl font-medium text-[#1A1A1A] leading-snug mb-3 group-hover:text-[#7D1A2E] transition-colors duration-300 flex-1">
+                )}
+                <h2 className="font-display text-xl font-medium text-[#1A1A1A] leading-snug mb-3 group-hover:text-[#7D1A2E] transition-colors duration-300">
                   {article.title}
                 </h2>
                 <p className="text-[#666] font-body text-sm leading-relaxed mb-6 line-clamp-3">
                   {article.excerpt}
                 </p>
+                <div className="flex-1" />
                 <div className="flex items-center justify-between border-t border-[#E8E8E8] pt-4 w-full">
                   <div className="flex items-center gap-2 text-[#1A1A1A] group-hover:text-[#7D1A2E] transition-colors font-body text-[11px] tracking-widest uppercase font-medium">
                     {language === 'fr' ? 'Lire' : 'Read'}
                     <ArrowRight size={12} />
                   </div>
-                  <ArticleTTSButton
-                    id={article.slug}
-                    title={article.title}
-                    excerpt={article.excerpt}
-                    lang={language === 'fr' ? 'fr-FR' : 'en-US'}
-                  />
+                  {getArticleText(article.slug, language === 'fr' ? 'fr' : 'en') ? (
+                    <PortfolioTTSPlayer
+                      id={`analyses-${article.slug}`}
+                      text={getArticleText(article.slug, language === 'fr' ? 'fr' : 'en')}
+                      lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                    />
+                  ) : (
+                    <ArticleTTSButton
+                      id={article.slug}
+                      title={article.title}
+                      excerpt={article.excerpt}
+                      lang={language === 'fr' ? 'fr-FR' : 'en-US'}
+                    />
+                  )}
                 </div>
               </div>
             </article>

@@ -10,7 +10,6 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import GlobeTeaser from '../components/GlobeTeaser';
 import PortfolioSection from '../components/PortfolioSection';
-import FeaturedAnalysisSection from '../components/FeaturedAnalysisSection';
 import ResearchApproachSection from '../components/ResearchApproachSection';
 import AboutSection from '../components/AboutSection';
 import NotesSection from '../components/NotesSection';
@@ -24,7 +23,6 @@ export default function Home() {
       <main>
         <HeroSection />
         <GlobeTeaser />
-        <FeaturedAnalysisSection />
         <PortfolioSection />
         <ResearchApproachSection />
         <AboutSection />

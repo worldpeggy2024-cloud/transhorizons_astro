@@ -6,8 +6,10 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
-import { ArrowRight, Globe, Mountain, Flame } from 'lucide-react';
+import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import PortfolioTTSPlayer from './PortfolioTTSPlayer';
+import { getArticleText, getArticleDate } from '../lib/articleTexts';
 
 // portfolioItems are now built inside the component using translation keys
 
@@ -28,39 +30,74 @@ function useInView(threshold = 0.15) {
 export default function PortfolioSection() {
   const { ref, inView } = useInView();
   const [, navigate] = useLocation();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const lang = language === 'fr' ? 'fr' : 'en';
 
   // Slugs are always English for routing; display labels come from translations
   const portfolioItems = [
     {
-      id: '01',
+      slug: 'resource-civilization',
+      category: t('portfolio.resourceCivilization.category'),
+      readTime: '14 min',
+      title: t('portfolio.resourceCivilization.title'),
+      description: t('portfolio.resourceCivilization.desc'),
+      image: '/images/canada_resource_civilization_map.png',
+      date: getArticleDate('resource-civilization', lang),
+    },
+    {
       slug: 'geopolitics',
       category: t('portfolio.geopolitics.category'),
-      icon: Globe,
+      readTime: '12 min',
       title: t('portfolio.geopolitics.title'),
       description: t('portfolio.geopolitics.desc'),
-      tags: t('portfolio.geopolitics.tags').split('|'),
       image: '/images/portfolio_geopolitics_hero-UFdGm3fFHZsq5moH7gCbog.webp',
+      date: getArticleDate('geopolitics', lang),
     },
     {
-      id: '02',
       slug: 'resources',
       category: t('portfolio.resources.category'),
-      icon: Mountain,
+      readTime: '10 min',
       title: t('portfolio.resources.title'),
       description: t('portfolio.resources.desc'),
-      tags: t('portfolio.resources.tags').split('|'),
       image: 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?w=600&q=80',
+      date: getArticleDate('resources', lang),
     },
     {
-      id: '03',
+      slug: 'technology',
+      category: t('portfolio.technology.category'),
+      readTime: '13 min',
+      title: t('portfolio.technology.title'),
+      description: t('portfolio.technology.desc'),
+      image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80',
+      date: getArticleDate('technology', lang),
+    },
+    {
+      slug: 'canada-forest-system-climate-industrial-pressure',
+      category: lang === 'fr' ? 'Analyse' : 'Analysis',
+      readTime: '16 min',
+      title: lang === 'fr'
+        ? "Le système forestier du Canada sous pressions climatiques et industrielles"
+        : "Canada's Forest System Under Climate and Industrial Pressure",
+      description: lang === 'fr'
+        ? "Examine comment les perturbations climatiques, la structure industrielle et l'intégration géopolitique reconfigurent le système forestier du Canada."
+        : "Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada's forest system and its role within global resource and trade networks.",
+      image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
+      date: getArticleDate('canada-forest-system-climate-industrial-pressure', lang),
+    },
+  ];
+
+  const otherArticles = [
+    {
       slug: 'canada-forest-carbon',
       category: t('portfolio.forestCarbon.category'),
-      icon: Flame,
       title: t('portfolio.forestCarbon.title'),
-      description: t('portfolio.forestCarbon.desc'),
-      tags: t('portfolio.forestCarbon.tags').split('|'),
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663495655297/RcKra6cpkH699NPak8ueHQ/canada-forest-hero-Vv9WznN4NH8b9CsdMBdh8H.webp',
+      date: getArticleDate('canada-forest-carbon', lang),
+    },
+    {
+      slug: 'canada-resources',
+      category: t('portfolio.canadaResources.category'),
+      title: t('portfolio.canadaResources.title'),
+      date: 'February 2026',
     },
   ];
 
@@ -99,70 +136,100 @@ export default function PortfolioSection() {
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {portfolioItems.map((item, i) => {
-            const Icon = item.icon;
-            return (
+          {portfolioItems.map((item, i) => (
               <article
-                key={item.id}
+                key={item.slug}
                 onClick={() => handlePortfolioClick(item.slug)}
-                className={`group bg-white border border-[#C8C8C8] overflow-hidden transition-all duration-700 hover:shadow-xl hover:-translate-y-1 cursor-pointer ${
+                className={`group bg-white border border-[#C8C8C8] overflow-hidden flex flex-col transition-all duration-700 hover:shadow-xl hover:-translate-y-1 cursor-pointer ${
                   inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
                 }`}
                 style={{ transitionDelay: `${i * 120}ms` }}
               >
                 {/* Image */}
-                <div className="img-zoom h-52 bg-[#C8C8C8] overflow-hidden relative">
+                <div className="img-zoom h-48 bg-[#C8C8C8] overflow-hidden shrink-0">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  {/* Category overlay */}
-                  <div className="absolute top-4 left-4">
-                    <div className="flex items-center gap-1.5 bg-white/90 backdrop-blur-sm px-3 py-1.5">
-                      <Icon size={11} className="text-[#7D1A2E]" />
-                      <span className="text-[#1A1A1A] text-[9px] tracking-[0.2em] uppercase font-medium font-body">
-                        {item.category.toUpperCase()}
-                      </span>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="bg-[#7D1A2E]/15 text-[#5C1220] text-[10px] tracking-[0.2em] uppercase font-medium font-body px-2.5 py-1">
+                      {item.category}
+                    </span>
+                    <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1">
+                      <Clock size={10} />
+                      {item.readTime} {t('featuredAnalysis.read')}
+                    </span>
+                  </div>
+                  {item.date && (
+                    <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1 mb-3">
+                      <Calendar size={10} />
+                      {item.date}
+                    </span>
+                  )}
                   <h3 className="font-display text-xl font-medium text-[#1A1A1A] mb-3 leading-snug group-hover:text-[#7D1A2E] transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-[#777] text-sm leading-relaxed font-body mb-5">
                     {item.description}
                   </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {item.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-[9px] tracking-wider uppercase font-medium text-[#999] border border-[#C8C8C8] px-2 py-1 font-body"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                  <div className="flex-1" />
                 </div>
 
                 {/* Bottom bar */}
                 <div className="px-6 pb-5">
-                  <div className="flex items-center justify-between pt-4 border-t border-[#C8C8C8]">
-                    <span className="text-[#7D1A2E] text-xs font-mono font-light">{item.id}</span>
+                  <div className="flex items-center justify-end pt-4 border-t border-[#C8C8C8]">
                     <div className="flex items-center gap-1.5 text-[#1A1A1A] group-hover:text-[#7D1A2E] transition-colors text-[10px] tracking-widest uppercase font-body font-medium">
                       {t('portfolio.readBrief')}
                       <ArrowRight size={12} />
                     </div>
                   </div>
+                  <PortfolioTTSPlayer
+                    id={`portfolio-${item.slug}`}
+                    text={getArticleText(item.slug, lang)}
+                    lang={lang === 'fr' ? 'fr-FR' : 'en-CA'}
+                  />
                 </div>
               </article>
-            );
-          })}
+          ))}
         </div>
+
+        {/* Other articles — compact list */}
+        <div className="mt-8 border-t border-[#C8C8C8] pt-6">
+          <p className="text-[#999] text-[10px] tracking-[0.2em] uppercase font-body mb-4">
+            {lang === 'fr' ? 'Également dans ce portfolio' : 'Also in this portfolio'}
+          </p>
+          <div className="flex flex-col gap-0 divide-y divide-[#E8E8E8]">
+            {otherArticles.map((article) => (
+              <button
+                key={article.slug}
+                onClick={() => navigate(`/portfolio/${article.slug}`)}
+                className="group flex items-center justify-between py-3 text-left hover:bg-[#F5F5F5] -mx-3 px-3 transition-colors"
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  <span className="bg-[#7D1A2E]/10 text-[#5C1220] text-[9px] tracking-[0.15em] uppercase font-medium font-body px-2 py-0.5 shrink-0">
+                    {article.category}
+                  </span>
+                  <span className="font-display text-sm text-[#1A1A1A] group-hover:text-[#7D1A2E] transition-colors truncate">
+                    {article.title}
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 shrink-0 ml-4">
+                  {article.date && (
+                    <span className="text-[#AAA] text-[11px] font-body hidden sm:block">{article.date}</span>
+                  )}
+                  <ArrowRight size={12} className="text-[#AAA] group-hover:text-[#7D1A2E] transition-colors" />
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );

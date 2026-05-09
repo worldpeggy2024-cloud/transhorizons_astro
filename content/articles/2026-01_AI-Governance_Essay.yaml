@@ -1,8 +1,8 @@
 heroImage: /images/portfolio_technology_hero-bdC44CPWxhrYRSqxK5ohXJ.webp
 date: Janvier / January 2026
 readTime: 13 min
-articleType_en: Analytical Essay
-articleType_fr: Essai analytique
+articleType_en: Analysis
+articleType_fr: Analyse
 category_en: Technology
 category_fr: Technologie
 title_en: AI Governance and Digital Sovereignty
@@ -480,8 +480,8 @@ relatedProjects:
     category_en: Geopolitics
     category_fr: Géopolitique
   - id: resources
-    title_en: Critical Minerals & the Energy Transition
-    title_fr: Minéraux critiques et transition énergétique
+    title_en: Critical Minerals &  Energy systems
+    title_fr: Minéraux critiques et systèmes énergétiques
     category_en: Resources
     category_fr: Ressources
 sources:

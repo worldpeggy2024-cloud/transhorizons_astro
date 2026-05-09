@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-const HERO_IMAGE = '/images/PICT3627_0d99f8d2.webp';
+const HERO_IMAGE = '/images/PICT3320.JPG';
 
 export default function HeroSection() {
   const [visible, setVisible] = useState(false);

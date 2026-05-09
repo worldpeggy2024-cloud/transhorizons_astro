@@ -6,7 +6,7 @@
 import { Link } from 'wouter';
 import ProjectDetailLayout from '@/components/ProjectDetailLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import data from '../../content/articles/critical-minerals-energy-transition.yaml';
+import data from '../../content/articles/2026-02_Critical-Minerals_Essay.yaml';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const d = data as Record<string, any>;

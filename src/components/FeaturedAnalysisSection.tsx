@@ -6,9 +6,11 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import ArticleTTSButton from './ArticleTTSButton';
+import PortfolioTTSPlayer from './PortfolioTTSPlayer';
+import { getArticleText, getArticleDate } from '../lib/articleTexts';
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -56,6 +58,8 @@ export default function FeaturedAnalysisSection() {
     },
   ];
 
+  const lang = language === 'fr' ? 'fr' : 'en';
+
   return (
     <section id="featured-analysis" className="bg-[#F0EBE3] py-12 lg:py-16" ref={ref}>
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
@@ -97,7 +101,7 @@ export default function FeaturedAnalysisSection() {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <div className="flex flex-wrap items-center gap-2 mb-4">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
                   <span className="bg-[#7D1A2E]/15 text-[#5C1220] text-[10px] tracking-[0.2em] uppercase font-medium font-body px-2.5 py-1">
                     {article.category}
                   </span>
@@ -106,6 +110,12 @@ export default function FeaturedAnalysisSection() {
                     {article.readTime} {t('featuredAnalysis.read')}
                   </span>
                 </div>
+                {getArticleDate(article.slug, lang) && (
+                  <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1 mb-3">
+                    <Calendar size={10} />
+                    {getArticleDate(article.slug, lang)}
+                  </span>
+                )}
                 <h3 className="font-display text-xl font-medium text-[#1A1A1A] leading-snug mb-3 group-hover:text-[#7D1A2E] transition-colors duration-300 flex-1">
                   {article.title}
                 </h3>
@@ -117,13 +127,14 @@ export default function FeaturedAnalysisSection() {
                     {t('featuredAnalysis.readMore')}
                     <ArrowRight size={12} />
                   </div>
-                  <ArticleTTSButton
-                    id={article.slug}
-                    title={article.title}
-                    excerpt={article.excerpt}
-                    lang={language === 'fr' ? 'fr-FR' : 'en-US'}
-                  />
                 </div>
+                {getArticleText(article.slug, language === 'fr' ? 'fr' : 'en') && (
+                  <PortfolioTTSPlayer
+                    id={`featured-${article.slug}`}
+                    text={getArticleText(article.slug, language === 'fr' ? 'fr' : 'en')}
+                    lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                  />
+                )}
               </div>
             </article>
           ))}

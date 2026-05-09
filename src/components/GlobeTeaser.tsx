@@ -7,7 +7,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ArrowRight } from 'lucide-react';
 import { ANALYSED_COUNT } from '../lib/analysedCountries';
@@ -27,6 +27,7 @@ export default function GlobeTeaser() {
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const { language } = useLanguage();
+  const [, navigate] = useLocation();
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -109,7 +110,7 @@ export default function GlobeTeaser() {
     <section
       id="globe-teaser"
       ref={sectionRef}
-      className="bg-[#050508] py-6 md:py-8"
+      className="bg-[#050508] py-3 md:py-4"
     >
       {/* Outer frame: full-width burgundy border top + bottom */}
       <div className="border-t border-b border-[#7D1A2E]/40">
@@ -118,13 +119,13 @@ export default function GlobeTeaser() {
 
             <div
               className={`
-                relative py-6 md:py-10
+                relative py-3 md:py-5
                 transition-all duration-700
                 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
               `}
             >
               {/* Left accent bar (desktop only) */}
-              <div className="absolute left-0 top-6 bottom-6 w-px bg-[#7D1A2E]/30 hidden lg:block" />
+              <div className="absolute left-0 top-3 bottom-3 w-px bg-[#7D1A2E]/30 hidden lg:block" />
 
               {/* ── Top row: Globe + Text block + CTA ── */}
               <div className="flex items-center gap-6 md:gap-10 lg:ml-6 lg:mr-6">
@@ -162,8 +163,8 @@ export default function GlobeTeaser() {
                   {/* Subtitle */}
                   <p className="hidden md:block text-white/60 font-body text-xs md:text-sm leading-relaxed mt-1 mb-3 max-w-lg">
                     {fr
-                      ? 'Cartes analytiques interactives explorant les dynamiques géopolitiques, de ressources et technologiques façonnant les trajectoires nationales.'
-                      : 'Interactive analytical maps exploring geopolitical, resource, and technological dynamics shaping national trajectories.'}
+                      ? 'Cartes interactives et explorations visuelles traduisant des dynamiques géopolitiques et des enjeux de ressources complexes en analyses spatiales.'
+                      : 'Interactive maps and visual explorations translating complex geopolitical and resource dynamics into spatial analysis.'}
                   </p>
                   {/* Country count badge — hidden on mobile, shown on md+ */}
                   <div className="hidden md:flex items-center gap-2 mt-2">
@@ -214,11 +215,30 @@ export default function GlobeTeaser() {
               </div>
 
               {/* Right accent bar (desktop only) */}
-              <div className="absolute right-0 top-6 bottom-6 w-px bg-[#7D1A2E]/30 hidden lg:block" />
+              <div className="absolute right-0 top-3 bottom-3 w-px bg-[#7D1A2E]/30 hidden lg:block" />
             </div>
 
           </div>
         </Link>
+        {/* Recent analytical updates — outside Link to avoid navigation conflict */}
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 pb-2">
+          <div className="lg:ml-6 lg:mr-6 flex items-baseline gap-1.5">
+            <span className="text-white/35 font-body text-[10px] tracking-wide shrink-0">
+              {fr ? 'Mises à jour récentes :' : 'Recent analytical updates:'}
+            </span>
+            <span
+              role="link"
+              tabIndex={0}
+              onClick={() => navigate('/tools/critical-minerals-map')}
+              onKeyDown={(e) => { if (e.key === 'Enter') navigate('/tools/critical-minerals-map'); }}
+              className="text-white/70 font-body text-[10px] tracking-wide hover:text-white transition-colors cursor-pointer underline underline-offset-2 decoration-white/30"
+            >
+              {fr
+                ? 'Canada — Stratégie des minéraux critiques ; Mis à jour : avril 2026'
+                : 'Canada — Critical Minerals Strategy; Updated: April 2026'}
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );

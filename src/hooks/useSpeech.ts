@@ -6,6 +6,8 @@ export function useSpeech() {
     return localStorage.getItem('tts-voice') ?? '';
   });
   const [speakingId, setSpeakingId] = useState<string | null>(null);
+  const [charIndex, setCharIndex] = useState(0);
+  const [textLength, setTextLength] = useState(0);
 
   useEffect(() => {
     if (!('speechSynthesis' in window)) return;
@@ -25,6 +27,30 @@ export function useSpeech() {
     localStorage.setItem('tts-voice', name);
   }, []);
 
+  const doSpeak = useCallback(
+    (id: string, text: string, lang: string) => {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      const voice = voices.find((v) => v.name === selectedVoiceName);
+      if (voice) utterance.voice = voice;
+      else utterance.lang = lang;
+      utterance.onboundary = (e: SpeechSynthesisEvent) => {
+        if (e.name === 'word') setCharIndex(e.charIndex);
+      };
+      utterance.onend = () => {
+        setSpeakingId(null);
+        setCharIndex(text.length);
+      };
+      utterance.onerror = () => setSpeakingId(null);
+      setTextLength(text.length);
+      setCharIndex(0);
+      setSpeakingId(id);
+      window.speechSynthesis.speak(utterance);
+    },
+    [voices, selectedVoiceName]
+  );
+
   const speak = useCallback(
     (id: string, text: string, lang: string) => {
       if (!('speechSynthesis' in window)) return;
@@ -33,17 +59,16 @@ export function useSpeech() {
         setSpeakingId(null);
         return;
       }
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      const voice = voices.find((v) => v.name === selectedVoiceName);
-      if (voice) utterance.voice = voice;
-      else utterance.lang = lang;
-      utterance.onend = () => setSpeakingId(null);
-      utterance.onerror = () => setSpeakingId(null);
-      setSpeakingId(id);
-      window.speechSynthesis.speak(utterance);
+      doSpeak(id, text, lang);
     },
-    [speakingId, voices, selectedVoiceName]
+    [speakingId, doSpeak]
+  );
+
+  const restart = useCallback(
+    (id: string, text: string, lang: string) => {
+      doSpeak(id, text, lang);
+    },
+    [doSpeak]
   );
 
   const stop = useCallback(() => {
@@ -51,5 +76,5 @@ export function useSpeech() {
     setSpeakingId(null);
   }, []);
 
-  return { voices, selectedVoiceName, selectVoice, speak, speakingId, stop };
+  return { voices, selectedVoiceName, selectVoice, speak, speakingId, stop, restart, charIndex, textLength };
 }

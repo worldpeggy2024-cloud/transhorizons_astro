@@ -1,10 +1,10 @@
 heroImage: https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600&q=85
 date: April 2026
 readTime: 16 min
-articleType_en: Analytical Essay
-articleType_fr: Essai analytique
-category_en: Analysis
-category_fr: Analyse
+articleType_en: Analysis
+articleType_fr: Analyse
+category_en: Systems
+category_fr: Systèmes
 title_en: Canada's Forest System Under Climate and Industrial Pressure
 title_fr: Le système forestier canadien sous pression climatique et industrielle
 subtitle_en: >-
@@ -488,8 +488,8 @@ relatedProjects:
   - id: resource-civilization
     title_en: Canada as a Resource Civilization in the 21st Century
     title_fr: Le Canada comme civilisation des ressources au XXIe siècle
-    category_en: Analysis
-    category_fr: Analyse
+    category_en: ANALYTICAL ESSAY
+    category_fr: ESSAI ANALYTIQUE
 sources:
   en: []
   fr: []

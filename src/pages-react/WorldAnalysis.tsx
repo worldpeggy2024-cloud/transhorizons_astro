@@ -119,6 +119,8 @@ export default function WorldAnalysis() {
 
   const mouseDownPos = useRef<{ x: number; y: number } | null>(null);
 
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   // ── Resize observer for globe container ───────────────────────────────────
   useEffect(() => {
     const el = globeContainerRef.current;
@@ -412,14 +414,14 @@ export default function WorldAnalysis() {
       </div>
 
       {/* ── World Views Header ───────────────────────────────────────────────── */}
-      <div className="max-w-[1600px] mx-auto w-full px-6 pt-4 pb-3">
+      <div className="max-w-[1600px] mx-auto w-full px-6 pt-4 pb-3 text-center">
         <h1 className="font-display font-light text-white leading-tight text-4xl md:text-5xl lg:text-6xl">
           {fr ? <>Vues <span className="italic">du monde</span></> : <>World <span className="italic">Views</span></>}
         </h1>
         <p className="text-white/60 font-body text-sm mt-2 leading-relaxed">
           {fr
-            ? 'Cartes interactives et outils de visualisation pour explorer les dynamiques mondiales des ressources, de la géopolitique et de la technologie.'
-            : 'Interactive maps and visualisation tools to explore global dynamics in resources, geopolitics, and technology.'}
+            ? <>Cartes interactives et explorations visuelles traduisant les dynamiques géopolitiques et des ressources complexes en analyses spatiales.<br />Des corridors énergétiques et chaînes d&apos;approvisionnement en minéraux aux infrastructures technologiques et régions stratégiques, ces rapports visuels apportent un éclairage géographique sur l&apos;évolution des systèmes mondiaux.</>
+            : <>Interactive maps and visual explorations translating complex geopolitical and resource dynamics into spatial analysis.<br />From energy corridors and mineral supply chains to technological infrastructures and strategic regions, these visual reports provide geographic context to evolving global systems.</>}
         </p>
       </div>
 
