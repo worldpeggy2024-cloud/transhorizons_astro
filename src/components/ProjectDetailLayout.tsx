@@ -3,9 +3,9 @@
  * Design: Editorial layout with hero, content sections, key takeaways, related projects
  */
 
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, X, Maximize2 } from 'lucide-react';
 import { useLocation } from 'wouter';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 import { buildArticleTextFromProps } from '../lib/articleTexts';
 import { smoothScrollTo } from '../lib/smoothScroll';
@@ -61,7 +61,13 @@ interface ProjectDetailLayoutProps {
     title: string;
     content: string;
     image?: string;
-    imagePosition?: 'left' | 'right';
+    imagePosition?: 'left' | 'right' | 'full' | 'side-by-side';
+    imageWidthClass?: string;
+    imageLinkHref?: string;
+    imageLinkLabel?: string;
+    image2?: string;
+    image2LinkHref?: string;
+    image2LinkLabel?: string;
   }>;
   keyTakeaways: KeyTakeaway[];
   relatedProjects?: Array<{
@@ -92,6 +98,8 @@ export default function ProjectDetailLayout({
   sectionExtras,
 }: ProjectDetailLayoutProps) {
   const [, navigate] = useLocation();
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+  const [lightboxScale, setLightboxScale] = useState(1);
   const backToPortfolioLabel = language === 'fr' ? 'Retour au Portfolio' : 'Back to Portfolio';
   const backToAnalysesLabel = language === 'fr' ? 'Retour aux analyses' : 'Back to Portfolio';
   const readLabel = language === 'fr' ? 'de lecture' : 'read';
@@ -119,6 +127,22 @@ export default function ProjectDetailLayout({
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
+
+  // Dismiss lightbox on Escape + lock body scroll + reset zoom
+  useEffect(() => {
+    if (!lightboxSrc) {
+      document.body.style.overflow = '';
+      return;
+    }
+    document.body.style.overflow = 'hidden';
+    setLightboxScale(1);
+    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') setLightboxSrc(null); };
+    window.addEventListener('keydown', handler);
+    return () => {
+      window.removeEventListener('keydown', handler);
+      document.body.style.overflow = '';
+    };
+  }, [lightboxSrc]);
 
   return (
     <div className="min-h-screen bg-[#EFEFEF]">
@@ -151,10 +175,10 @@ export default function ProjectDetailLayout({
         <img
           src={heroImage}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover brightness-[0.45] saturate-[0.7]"
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-12">
           <div className="max-w-3xl">
@@ -223,11 +247,78 @@ export default function ProjectDetailLayout({
         {/* Content Sections */}
         {sections.map((section, idx) => (
           <section key={idx} className="mb-20">
+            {/* Side-by-side images rendered before the section title */}
+            {section.imagePosition === 'side-by-side' && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                {[
+                  { src: section.image, linkHref: section.imageLinkHref, linkLabel: section.imageLinkLabel },
+                  { src: section.image2, linkHref: section.image2LinkHref, linkLabel: section.image2LinkLabel },
+                ].map((img, i) => img.src ? (
+                  <div key={i}>
+                    <img
+                      src={img.src}
+                      alt={section.title}
+                      className="w-full rounded-lg object-cover mb-2"
+                    />
+                    {img.linkHref && (
+                      <div className="flex items-start gap-2 rounded border border-[#C8C8C8] bg-[#F5F3F0] px-3 py-2">
+                        <Maximize2 size={13} className="mt-0.5 text-[#7D1A2E] flex-shrink-0" aria-hidden />
+                        <div>
+                          <button
+                            onClick={() => setLightboxSrc(img.linkHref!)}
+                            className="font-body text-sm font-medium text-[#7D1A2E] hover:text-[#5A1320] underline underline-offset-2 transition-colors text-left"
+                          >
+                            {img.linkLabel ?? img.linkHref}
+                          </button>
+                          <p className="mt-0.5 font-body text-xs text-[#888]">
+                            {language === 'fr'
+                              ? 'S\'affiche en plein écran — appuyez sur × ou Échap pour fermer.'
+                              : 'Opens full-screen — press × or Esc to close.'}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ) : null)}
+              </div>
+            )}
+
+            {/* Full-width image rendered before the section title */}
+            {section.image && section.imagePosition === 'full' && (
+              <>
+                <div className={section.imageWidthClass ?? 'w-full'}>
+                  <img
+                    src={section.image}
+                    alt={section.title}
+                    className="w-full rounded-lg object-cover mb-4"
+                  />
+                </div>
+                {section.imageLinkHref && (
+                  <div className="mb-8 flex items-start gap-3 rounded border border-[#C8C8C8] bg-[#F5F3F0] px-4 py-3">
+                    <Maximize2 size={15} className="mt-0.5 text-[#7D1A2E] flex-shrink-0" aria-hidden />
+                    <div>
+                      <button
+                        onClick={() => setLightboxSrc(section.imageLinkHref!)}
+                        className="font-body text-sm font-medium text-[#7D1A2E] hover:text-[#5A1320] underline underline-offset-2 transition-colors text-left"
+                      >
+                        {section.imageLinkLabel ?? section.imageLinkHref}
+                      </button>
+                      <p className="mt-0.5 font-body text-xs text-[#888]">
+                        {language === 'fr'
+                          ? 'S\'affiche en plein écran — appuyez sur × ou Échap pour fermer.'
+                          : 'Opens full-screen — press × or Esc to close.'}
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+
             <h2 className="font-display text-3xl md:text-4xl font-light text-[#1A1A1A] mb-8 leading-tight">
               {section.title}
             </h2>
 
-            {section.image ? (
+            {section.image && section.imagePosition !== 'full' && section.imagePosition !== 'side-by-side' ? (
               <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8`}>
                 {section.imagePosition === 'right' ? (
                   <>
@@ -365,6 +456,46 @@ export default function ProjectDetailLayout({
           </div>
         </div>
       </footer>
+
+      {/* Lightbox */}
+      {lightboxSrc && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 overflow-auto"
+          onClick={() => setLightboxSrc(null)}
+          onKeyDown={(e) => e.key === 'Escape' && setLightboxSrc(null)}
+          tabIndex={-1}
+          role="dialog"
+          aria-modal="true"
+        >
+          <button
+            onClick={() => setLightboxSrc(null)}
+            className="absolute top-4 right-4 z-10 flex items-center gap-1.5 rounded bg-white/10 px-3 py-2 text-white hover:bg-white/20 transition-colors font-body text-sm"
+            aria-label="Close"
+          >
+            <X size={16} />
+            <span>{language === 'fr' ? 'Fermer' : 'Close'}</span>
+          </button>
+          {lightboxScale > 1 && (
+            <button
+              onClick={(e) => { e.stopPropagation(); setLightboxScale(1); }}
+              className="absolute top-4 left-4 z-10 rounded bg-white/10 px-3 py-2 text-white hover:bg-white/20 transition-colors font-body text-sm"
+            >
+              {language === 'fr' ? 'Réinitialiser zoom' : 'Reset zoom'}
+            </button>
+          )}
+          <img
+            src={lightboxSrc}
+            alt=""
+            className="object-contain rounded shadow-2xl transition-transform duration-75"
+            style={{ transform: `scale(${lightboxScale})`, cursor: lightboxScale > 1 ? 'grab' : 'zoom-in', maxWidth: '100%', maxHeight: '85vh' }}
+            onClick={(e) => e.stopPropagation()}
+            onWheel={(e) => {
+              e.stopPropagation();
+              setLightboxScale(s => Math.min(5, Math.max(1, s - e.deltaY * 0.001)));
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 }

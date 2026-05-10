@@ -63,7 +63,7 @@ const translations: Record<Language, Record<string, string>> = {
     'portfolio.canadaResources.category': 'Resources',
     'portfolio.canadaResources.tags': 'Canada|Critical minerals|Geopolitics',
     'portfolio.resourceCivilization.title': 'Canada as a Resource Civilization',
-    'portfolio.resourceCivilization.desc': 'Examines how resource structures shape Canada’s development and position within evolving global systems.',
+    'portfolio.resourceCivilization.desc': 'Examines how resource structures shape Canada\'s development and position within evolving global systems.',
     'portfolio.resourceCivilization.category': 'Systems',
     'portfolio.resourceCivilization.tags': 'Canada|Resource systems|Political economy',
     'portfolio.forestCarbon.title': 'Net Carbon Effect of Canadian Forest Ecosystems',

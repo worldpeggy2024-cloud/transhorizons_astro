@@ -82,6 +82,13 @@ interface ToolCard {
   icon: React.ReactNode;
   accent: string;
   thumbnail?: string;
+  openInNewTab?: boolean;
+  variants?: Array<{
+    href: string;
+    thumbnail: string;
+    labelEn: string;
+    labelFr: string;
+  }>;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -114,12 +121,46 @@ export default function WorldAnalysis() {
     riskCategories: new Set(),
     topics: new Set(),
   });
+  const [highlightedCard, setHighlightedCard] = useState<string | null>(null);
+  const [lightboxImg, setLightboxImg] = useState<string | null>(null);
+  const [lightboxScale, setLightboxScale] = useState(1);
+  const [lightboxVariants, setLightboxVariants] = useState<Array<{ href: string; labelEn: string; labelFr: string }> | null>(null);
+  const [lightboxVariantIdx, setLightboxVariantIdx] = useState(0);
+  const [activeVariants, setActiveVariants] = useState<Record<string, number>>({});
 
   const fr = language === 'fr';
 
   const mouseDownPos = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
+
+  // Dismiss lightbox on Escape + lock body scroll + reset zoom
+  useEffect(() => {
+    if (!lightboxImg) {
+      document.body.style.overflow = '';
+      return;
+    }
+    document.body.style.overflow = 'hidden';
+    setLightboxScale(1);
+    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') setLightboxImg(null); };
+    window.addEventListener('keydown', handler);
+    return () => {
+      window.removeEventListener('keydown', handler);
+      document.body.style.overflow = '';
+    };
+  }, [lightboxImg]);
+
+  // ── Scroll-to + highlight when arriving via #thematic-maps hash ───────────
+  useEffect(() => {
+    if (window.location.hash !== '#thematic-maps') return;
+    const el = document.getElementById('thematic-maps');
+    if (!el) return;
+    setTimeout(() => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setHighlightedCard('Arctic Polar Projection');
+      setTimeout(() => setHighlightedCard(null), 3000);
+    }, 400);
+  }, []);
 
   // ── Resize observer for globe container ───────────────────────────────────
   useEffect(() => {
@@ -362,6 +403,55 @@ export default function WorldAnalysis() {
       icon: <MapIcon size={18} />,
       accent: '#C8860A',
       thumbnail: '/images/thumb-critical-minerals-map.jpg',
+    },
+    {
+      href: '/images/arctic_polar_projection_map.png',
+      titleEn: 'Arctic Polar Projection',
+      titleFr: 'Projection polaire arctique',
+      descEn: 'A polar-centered projection of the Arctic region, showing Canada\'s Arctic sovereignty, circumpolar neighbours, and strategic northern geography.',
+      descFr: 'Projection centrée sur le pôle arctique illustrant la souveraineté arctique du Canada, ses voisins circumpolaires et sa géographie stratégique nordique.',
+      tagEn: 'Geopolitics · Arctic',
+      tagFr: 'Géopolitique · Arctique',
+      icon: <MapIcon size={18} />,
+      accent: '#4A8DB8',
+      thumbnail: '/images/arctic_polar_projection_simplified.png',
+    },
+    {
+      href: '/images/sphere_of_influence_gravity_map.png',
+      titleEn: 'Sphere of Influence Gravity Map',
+      titleFr: 'Carte de gravité des sphères d’influence',
+      descEn: 'A compact geopolitical map showing the pull of major spheres of influence and the strategic pressures shaping Canada\'s position.',
+      descFr: 'Une carte géopolitique compacte montrant l\'attraction des grandes sphères d\'influence et les pressions stratégiques qui façonnent la position du Canada.',
+      tagEn: 'Geopolitics · Influence',
+      tagFr: 'Géopolitique · Influence',
+      icon: <MapIcon size={18} />,
+      accent: '#8B6A3D',
+      thumbnail: '/images/sphere_of_influence_simplified.png',
+    },
+    {
+      href: '/images/maritime_chokepoints_canadian_geopolitical.png',
+      titleEn: 'Maritime Chokepoints',
+      titleFr: 'Points d\'étranglement maritimes',
+      descEn: 'Canada\'s critical maritime passages mapped across two lenses: geopolitical vulnerability and trade volume exposure.',
+      descFr: 'Les passages maritimes stratégiques du Canada cartographiés selon deux angles : vulnérabilité géopolitique et exposition aux volumes commerciaux.',
+      tagEn: 'Geopolitics · Trade',
+      tagFr: 'Géopolitique · Commerce',
+      icon: <MapIcon size={18} />,
+      accent: '#3D7A8B',
+      variants: [
+        {
+          href: '/images/maritime_chokepoints_canadian_geopolitical.png',
+          thumbnail: '/images/maritime_chokepoints_canadian_geopolitical_simplified.png',
+          labelEn: 'Geopolitical',
+          labelFr: 'Géopolitique',
+        },
+        {
+          href: '/images/maritime_chokepoints_canadian_trade_volumes.png',
+          thumbnail: '/images/maritime_chokepoints_canadian_trade_volumes_simplified.png',
+          labelEn: 'Trade Volumes',
+          labelFr: 'Volumes commerciaux',
+        },
+      ],
     },
     {
       href: '#',
@@ -744,20 +834,25 @@ export default function WorldAnalysis() {
       <div className="border-t border-white/10">
 
       {/* ── Analytical Tools Cards (Thematic Maps) Section ──────────────────── */}
-      <div className="max-w-[1600px] mx-auto w-full px-6 py-16 border-b border-white/10">
+      <div id="thematic-maps" className="max-w-[1600px] mx-auto w-full px-6 py-16 border-b border-white/10">
         <h2 className="font-display font-light text-white leading-tight text-3xl md:text-4xl lg:text-5xl mb-8">
           {fr ? 'Cartes thématiques' : 'Thematic Maps'}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {toolCards.map(card => {
             const isPlaceholder = card.href === '#';
+            const activeIdx = activeVariants[card.titleEn] ?? 0;
+            const activeHref = card.variants ? card.variants[activeIdx].href : card.href;
+            const activeThumbnail = card.variants ? card.variants[activeIdx].thumbnail : card.thumbnail;
             return (
               <div
                 key={card.titleEn}
-                onClick={isPlaceholder ? undefined : () => navigate(card.href)}
+                onClick={isPlaceholder ? undefined : activeHref.match(/\.(png|jpg|webp|gif)$/i) ? (e) => { e.stopPropagation(); if (card.variants) { setLightboxVariants(card.variants.map(v => ({ href: v.href, labelEn: v.labelEn, labelFr: v.labelFr }))); setLightboxVariantIdx(activeIdx); } else { setLightboxVariants(null); } setLightboxImg(activeHref); } : () => navigate(activeHref)}
                 className={`group relative bg-[#0A0A12] border transition-all duration-300 no-underline block ${
                   isPlaceholder
                     ? 'border-white/5 border-dashed cursor-default opacity-70'
+                    : highlightedCard === card.titleEn
+                    ? 'border-[#4A8DB8] ring-2 ring-[#4A8DB8]/50 shadow-[0_0_24px_rgba(74,141,184,0.35)] -translate-y-0.5 cursor-pointer'
                     : 'border-white/10 hover:border-white/25 hover:-translate-y-0.5 cursor-pointer'
                 }`}
               >
@@ -768,10 +863,10 @@ export default function WorldAnalysis() {
                 />
 
                 {/* Thumbnail strip */}
-                {card.thumbnail ? (
+                {activeThumbnail ? (
                   <div className="relative overflow-hidden h-[120px]">
                     <img
-                      src={card.thumbnail}
+                      src={activeThumbnail}
                       alt=""
                       className="w-full h-full object-cover object-center opacity-75 group-hover:opacity-90 transition-opacity duration-300"
                     />
@@ -779,6 +874,24 @@ export default function WorldAnalysis() {
                       className="absolute inset-0"
                       style={{ background: `linear-gradient(to bottom, transparent 40%, #0A0A12 100%)` }}
                     />
+                    {/* Variant toggle tabs */}
+                    {card.variants && (
+                      <div className="absolute bottom-0 left-0 right-0 flex">
+                        {card.variants.map((v, i) => (
+                          <button
+                            key={i}
+                            onClick={(e) => { e.stopPropagation(); setActiveVariants(prev => ({ ...prev, [card.titleEn]: i })); }}
+                            className={`flex-1 py-1.5 text-[9px] tracking-[0.15em] uppercase font-body transition-colors ${
+                              activeIdx === i
+                                ? 'bg-white/25 text-white'
+                                : 'bg-black/50 text-white/40 hover:bg-black/70 hover:text-white/60'
+                            }`}
+                          >
+                            {fr ? v.labelFr : v.labelEn}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ) : isPlaceholder ? (
                   <div
@@ -893,6 +1006,60 @@ export default function WorldAnalysis() {
           .sidebar-col { flex: 1 1 50%; height: 100%; }
         }
      `}</style>
+
+      {/* Lightbox */}
+      {lightboxImg && (
+        <div
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/90 p-4"
+          onClick={() => setLightboxImg(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          {/* Close button */}
+          <button
+            onClick={() => setLightboxImg(null)}
+            className="absolute top-4 right-4 z-10 flex items-center gap-1.5 rounded bg-white/10 px-3 py-2 text-white hover:bg-white/20 transition-colors font-body text-sm"
+            aria-label="Close"
+          >
+            <span className="text-lg leading-none">&times;</span>
+            <span>{fr ? 'Fermer' : 'Close'}</span>
+          </button>
+
+          {/* Variant toggle tabs — shown only when lightbox was opened from a card with variants */}
+          {lightboxVariants && (
+            <div
+              className="flex mb-4 rounded overflow-hidden border border-white/20"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {lightboxVariants.map((v, i) => (
+                <button
+                  key={i}
+                  onClick={() => { setLightboxVariantIdx(i); setLightboxImg(v.href); setLightboxScale(1); }}
+                  className={`px-5 py-2 font-body text-xs tracking-[0.15em] uppercase transition-colors ${
+                    lightboxVariantIdx === i
+                      ? 'bg-white/20 text-white'
+                      : 'bg-black/40 text-white/45 hover:bg-white/10 hover:text-white/70'
+                  }`}
+                >
+                  {fr ? v.labelFr : v.labelEn}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <img
+            src={lightboxImg}
+            alt=""
+            className="object-contain rounded shadow-2xl transition-transform duration-75"
+            style={{ transform: `scale(${lightboxScale})`, cursor: lightboxScale > 1 ? 'grab' : 'zoom-in', maxWidth: '100%', maxHeight: '80vh' }}
+            onClick={(e) => e.stopPropagation()}
+            onWheel={(e) => {
+              e.stopPropagation();
+              setLightboxScale(s => Math.min(5, Math.max(1, s - e.deltaY * 0.001)));
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 }

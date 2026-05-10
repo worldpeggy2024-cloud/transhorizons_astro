@@ -19,6 +19,12 @@ export default function PortfolioGeopolitics() {
     content: s[`content_${L}`] ?? s.content_en ?? '',
     image: s.image,
     imagePosition: s.imagePosition,
+    imageWidthClass: s.imageWidthClass,
+    imageLinkHref: s.imageLink_href,
+    imageLinkLabel: s[`imageLink_label_${L}`] ?? s.imageLink_label_en,
+    image2: s.image2,
+    image2LinkHref: s.image2Link_href,
+    image2LinkLabel: s[`image2Link_label_${L}`] ?? s.image2Link_label_en,
   }));
 
   const keyTakeaways = (d.keyTakeaways ?? []).map((k: Record<string, string>) => ({

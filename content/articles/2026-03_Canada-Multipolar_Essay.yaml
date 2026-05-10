@@ -10,17 +10,15 @@ subtitle_en: >-
   Examines how the transition from unipolarity to a multipolar system is
   reshaping global structures, with implications for Canada’s position within
   evolving geopolitical and economic networks
-introductionTitle_en: ''
-introduction_en: ''
 title_fr: Le Canada dans un monde multipolaire
 subtitle_fr: >-
-  Positionnement stratégique face au basculement des dynamiques de puissance
-  après l'unipolarité de l'après-Guerre froide
-introductionTitle_fr: ''
-introduction_fr: ''
+  Examine comment la transition d'un système unipolaire vers un système
+  multipolaire transforme les structures mondiales ainsi que les répercussions
+  sur la position du Canada au sein de réseaux géopolitiques et économiques en
+  mutation.
 sections:
   - title_en: From Unipolarity to System Fragmentation
-    title_fr: De l'unipolarité à la fragmentation du système
+    title_fr: De l'unipolarité à la fragmentation des systèmes
     content_en: >
       For much of the post–Cold War period, global dynamics were structured
       around a relatively stable configuration: U.S. predominance, strong
@@ -45,8 +43,8 @@ sections:
     content_fr: >
       Pendant une grande partie de la période post-Guerre froide, les dynamiques
       mondiales étaient structurées autour d'une configuration relativement
-      stable : prédominance états-unienne, forte cohésion de l'alliance occidentale
-      et intégration économique croissante.
+      stable : prédominance états-unienne, forte cohésion de l'alliance
+      occidentale et intégration économique croissante.
 
 
       Cette configuration évolue.
@@ -55,9 +53,9 @@ sections:
       L'environnement actuel est de plus en plus caractérisé par la coexistence
       de plusieurs centres de pouvoir, notamment les États-Unis, la Chine,
       l'Union européenne et un ensemble d'États régionalement influents. Plutôt
-      qu'un cadre organisateur unique, le système devient plus fragmenté, avec
-      des sphères d'influence qui se chevauchent, des modèles réglementaires
-      concurrents et des alignements changeants.
+      qu'un cadre organisateur unique, le système devient plus fragmenté,
+      incluant des sphères d'influence qui se chevauchent, des modèles
+      réglementaires concurrents et des alignements changeants.
 
 
       Cette transition ne représente pas un simple retour aux dynamiques
@@ -65,10 +63,9 @@ sections:
       contraintes et interdépendances, notamment la dissuasion nucléaire, les
       chaînes d'approvisionnement mondialisées, les infrastructures numériques
       et les pressions climatiques.
-    image: https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80
     imagePosition: right
   - title_en: Multipolarity as a System
-    title_fr: La multipolarité comme système
+    title_fr: Multipolarité comme système
     content_en: >
       Multipolarity is often described in terms of the distribution of power.
       More fundamentally, it alters how systems operate.
@@ -97,24 +94,28 @@ sections:
       Dans un environnement multipolaire :
 
 
-      • l'intégration économique coexiste avec la compétition stratégique
+      • l'intégration économique coexiste avec la concurrence stratégique;
 
-      • les alliances deviennent plus fluides et spécifiques aux enjeux
+      • les alliances deviennent plus fluides et propres aux enjeux;
 
-      • les systèmes technologiques et réglementaires divergent selon les
-      juridictions
+      • les systèmes technologiques et réglementaires divergent selon les champs
+      d'application;
 
-      • les chaînes d'approvisionnement sont reconfigurées selon des lignes
-      géopolitiques
+      • les chaînes d'approvisionnement sont reconfigurées selon des logiques
+      géopolitiques.
 
 
-      Ces dynamiques produisent un système dans lequel la stabilité n'est pas
+      Ces dynamiques produisent un système au sein duquel la stabilité n'est pas
       garantie par la domination, mais négociée à travers l'interaction entre de
-      multiples acteurs aux intérêts partiellement alignés.
-    image: https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=800&q=80
+      multiples acteurs aux intérêts partiellement convergents.
     imagePosition: left
   - title_en: Canada as a Structurally Embedded Actor
     title_fr: Le Canada comme acteur structurellement intégré
+    image: /images/arctic_polar_projection_balanced.png
+    imagePosition: full
+    imageLink_href: /images/arctic_polar_projection_map.png
+    imageLink_label_en: View full Arctic map
+    imageLink_label_fr: Voir la carte arctique complète
     content_en: >
       Canada's position within this evolving system is shaped by a combination
       of structural integration and relative scale.
@@ -134,25 +135,29 @@ sections:
       This position is neither marginal nor dominant. It is relational.
     content_fr: >
       La position du Canada au sein de ce système en évolution est façonnée par
-      une combinaison d'intégration structurelle et d'échelle relative.
+      une combinaison d'intégration structurelle et de poids relatif.
 
 
-      Le pays demeure profondément intégré dans les systèmes économiques,
-      sécuritaires et infrastructurels nord-américains. Cette intégration offre
-      stabilité et accès, mais définit également les paramètres dans lesquels le
-      Canada opère.
+      Le pays demeure profondément intégré dans les systèmes économiques, de
+      sécurité et d'infrastructures nord-américains. Cette intégration offre
+      stabilité et accès, mais définit également les paramètres à l’intérieur
+      desquels le Canada évolue.
 
 
-      En même temps, le Canada n'est pas un nœud central de la puissance
-      mondiale. Son rôle est mieux compris comme celui d'un acteur intermédiaire
-      — dont l'influence découle de sa participation à des systèmes plus larges
-      plutôt que de sa seule capacité indépendante.
+      Parallèlement, le Canada n'est pas un nœud central de la puissance
+      mondiale. Son rôle se comprend davantage comme celui d'un acteur
+      intermédiaire, dont l'influence découle de sa participation à des systèmes
+      plus vastes plutôt que de ses seules capacités autonomes.
 
 
       Cette position n'est ni marginale ni dominante. Elle est relationnelle.
-    imagePosition: right
   - title_en: Integration and Constraint
     title_fr: Intégration et contrainte
+    image: /images/sphere_of_influence_balanced.png
+    imagePosition: full
+    imageLink_href: /images/sphere_of_influence_gravity_map.png
+    imageLink_label_en: View full sphere-of-influence map
+    imageLink_label_fr: Voir la carte complète des sphères d'influence
     content_en: >
       Canada's integration into the United States–centered system is a defining
       feature of its geopolitical position.
@@ -176,32 +181,31 @@ sections:
 
       • increasing relevance of multiple systems
     content_fr: >
-      L'intégration du Canada dans le système centré sur les États-Unis est un
-      trait définissant de sa position géopolitique.
+      L'intégration du Canada au système centré sur les États-Unis constitue un
+      élément déterminant de sa position géopolitique.
 
 
-      Les flux économiques, les infrastructures énergétiques et les arrangements
-      sécuritaires sont étroitement alignés avec les États-Unis, créant un degré
-      élevé d'interdépendance. Cette intégration façonne l'exposition du Canada
-      aux dynamiques mondiales et influence sa capacité à répondre aux mutations
-      externes.
+      Les flux économiques, les infrastructures énergétiques et les dispositifs
+      de sécurité sont étroitement alignés sur ceux des États-Unis, créant un
+      degré élevé d'interdépendance. Cette intégration façonne l'exposition du
+      Canada aux dynamiques mondiales et influence sa capacité à répondre aux
+      mutations externes.
 
 
-      En même temps, les efforts de diversification des relations économiques —
-      vers l'Europe, l'Indo-Pacifique et d'autres régions — reflètent la
-      reconnaissance qu'un système mondial plus fragmenté peut nécessiter un
+      Parallèlement, les efforts de diversification des relations économiques
+      (vers l'Europe, la région indo-pacifique et d'autres régions) traduisent
+      la reconnaissance qu'un système mondial plus fragmenté pourrait exiger un
       engagement plus large.
 
 
       Cela crée une tension structurelle :
 
 
-      • intégration profonde au sein d'un système
+      • intégration profonde au sein d'un système;
 
-      • pertinence croissante de multiples systèmes
-    imagePosition: left
+      • pertinence croissante de multiples systèmes.
   - title_en: Strategic Assets in a System Context
-    title_fr: Les atouts stratégiques dans un contexte systémique
+    title_fr: Atouts stratégiques dans un contexte systémique
     content_en: >
       Canada possesses a range of assets that are increasingly relevant within a
       multipolar environment:
@@ -231,28 +235,28 @@ sections:
 
       They are components within evolving systems.
     content_fr: >
-      Le Canada possède un ensemble d'atouts de plus en plus pertinents dans un
-      environnement multipolaire :
+      Le Canada dispose d'un ensemble d'atouts de plus en plus pertinents dans
+      un environnement multipolaire :
 
 
-      • ressources naturelles, incluant l'énergie et les minéraux critiques
+      • ressources naturelles, notamment l'énergie et les minéraux critiques;
 
-      • positionnement géographique, incluant l'accès arctique
+      • position géographique stratégique, incluant l'accès arctique;
 
-      • capacités technologiques et de recherche avancées
+      • capacités technologiques et de recherche avancées;
 
-      • stabilité institutionnelle et crédibilité réglementaire
+      • stabilité institutionnelle et crédibilité réglementaire.
 
 
-      Cependant, la signification de ces atouts dépend de leur intégration dans
-      des systèmes plus larges.
+      Cependant, la portée stratégique de ces atouts dépend de la manière dont
+      ils sont intégrés à des systèmes plus vastes.
 
 
       Les ressources, par exemple, tirent leur valeur non seulement de leur
       disponibilité, mais de leur rôle dans des chaînes d'approvisionnement
-      liées aux priorités industrielles et sécuritaires. De même, la capacité
-      technologique dépend de sa connexion à des écosystèmes plus larges
-      d'innovation, d'infrastructure et de réglementation.
+      liées aux priorités industrielles et de sécurité. De même, les capacités
+      technologiques dépendent de leur connexion à des écosystèmes plus larges
+      d'innovation, d'infrastructures et de réglementation.
 
 
       En ce sens, les atouts ne sont pas des avantages statiques.
@@ -281,27 +285,37 @@ sections:
       These domains — geopolitical, economic, technological — are not separate.
       They form interconnected layers within the same evolving global structure.
     content_fr: >
-      Les dynamiques de la multipolarité se croisent avec d'autres
-      transformations structurelles.
+      Les dynamiques de la multipolarité s’inscrivent dans un ensemble plus
+      large de transformations structurelles.
 
 
-      Les systèmes de ressources, en particulier dans les minéraux critiques et
-      l'énergie, sont de plus en plus liés à la compétition géopolitique et à la
-      stratégie industrielle. Les systèmes technologiques, incluant
-      l'intelligence artificielle et les infrastructures numériques, deviennent
-      centraux pour les considérations économiques et sécuritaires.
+      Les systèmes de ressources, en particulier dans les domaines des minéraux
+      critiques et de l'énergie, sont de plus en plus liés à la concurrence
+      géopolitique et aux stratégies industrielles. Les systèmes technologiques,
+      notamment l'intelligence artificielle et les infrastructures numériques,
+      deviennent centraux tant pour l’économie que pour les considérations de
+      sécurité.
 
 
-      Les systèmes commerciaux s'adaptent également, reflétant à la fois
-      l'intégration et la fragmentation.
+      Les systèmes commerciaux évoluent également, reflétant à la fois des
+      dynamiques d'intégration et de fragmentation.
 
 
-      Ces domaines — géopolitique, économique, technologique — ne sont pas
+      Ces domaines (géopolitique, économique, technologique) ne sont pas
       séparés. Ils forment des couches interconnectées au sein de la même
-      structure mondiale en évolution.
+      structure mondiale en transformation.
     imagePosition: left
   - title_en: System-Level Implications
-    title_fr: Implications au niveau du système
+    title_fr: Répercussions à l'échelle systémique
+    image: /images/maritime_chokepoints_canadian_geopolitical_simplified.png
+    image2: /images/maritime_chokepoints_canadian_trade_volumes_simplified.png
+    imagePosition: side-by-side
+    imageLink_href: /images/maritime_chokepoints_canadian_geopolitical.png
+    imageLink_label_en: View full geopolitical chokepoints map
+    imageLink_label_fr: Voir la carte complète des points d'étranglement géopolitiques
+    image2Link_href: /images/maritime_chokepoints_canadian_trade_volumes.png
+    image2Link_label_en: View full trade volumes chokepoints map
+    image2Link_label_fr: Voir la carte complète des volumes commerciaux
     content_en: >
       For countries such as Canada, the shift toward multipolarity does not
       present a single pathway or outcome.
@@ -322,25 +336,25 @@ sections:
 
       It is a question of navigating a system where both coexist.
     content_fr: >
-      Pour des pays comme le Canada, le glissement vers la multipolarité ne
-      présente pas un chemin ou un résultat unique.
+      Pour des pays comme le Canada, le passage à la multipolarité ne conduit
+      pas à une trajectoire ou à un résultat unique.
 
 
-      Il définit plutôt un contexte dans lequel le positionnement dépend de :
+      Il définit plutôt un contexte dans lequel le positionnement dépend :
 
 
-      • la capacité à opérer à travers de multiples systèmes
+      • de la capacité à évoluer entre de multiples systèmes;
 
-      • l'intégration des atouts domestiques dans des réseaux internationaux
+      • de l'intégration des actifs nationaux au sein de réseaux internationaux;
 
-      • la gestion simultanée des dépendances et de la diversification
-
-
-      Ce n'est pas une question de choisir entre alignement et autonomie.
+      • de la gestion simultanée des dépendances et de la diversification.
 
 
-      C'est une question de naviguer dans un système où les deux coexistent.
-    imagePosition: right
+      Il ne s’agit pas de choisir entre alignement et autonomie.
+
+
+      Il s’agit de naviguer dans un système où les deux coexistent.
+
   - title_en: Conclusion
     title_fr: Conclusion
     content_en: >
@@ -364,30 +378,29 @@ sections:
       changement structurel dans l'organisation des dynamiques mondiales.
 
 
-      Pour le Canada, ce glissement ne modifie pas fondamentalement ses
-      caractéristiques sous-jacentes, mais change l'environnement dans lequel
-      ces caractéristiques opèrent. La position du pays est façonnée par son
-      intégration au sein des systèmes existants, sa capacité à s'engager avec
-      les systèmes émergents, et l'interaction entre ses atouts et les
-      structures mondiales.
+      Pour le Canada, ce changement ne modifie pas fondamentalement ses
+      caractéristiques sous-jacentes, mais il transforme l'environnement dans
+      lequel celles-ci évoluent. La position du pays est façonnée par son
+      intégration au sein des systèmes existants, sa capacité à s’adapter aux
+      systèmes émergents, et l'interaction entre ses actifs et les structures
+      mondiales.
 
 
-      Comprendre cette position nécessite de dépasser l'analyse événementielle
-      pour adopter une perspective systémique, où les dynamiques géopolitiques,
-      économiques et technologiques sont vues comme des composantes
-      interconnectées d'une transformation plus large.
+      Comprendre cette position nécessite de dépasser une analyse centrée sur
+      les événements pour adopter une perspective systémique, selon laquelle les
+      dynamiques géopolitiques, économiques et technologiques sont envisagées
+      comme des composantes interconnectées d'une transformation plus large.
     imagePosition: left
   - title_en: Sources & Notes
     title_fr: Sources et notes
-    content_en: >
+    content_en: >-
       This analysis draws on publicly available institutional and academic
       sources related to global power dynamics, economic integration, and
-      geopolitical systems. Full source documentation available upon request.
+      geopolitical systems.
     content_fr: >
       Cette analyse s'appuie sur des sources institutionnelles et académiques
-      accessibles au public relatives aux dynamiques de pouvoir mondial, à
-      l'intégration économique et aux systèmes géopolitiques. Documentation
-      complète disponible sur demande.
+      accessibles au public portant sur les dynamiques de puissance mondiales,
+      l'intégration économique et les systèmes géopolitiques.
     imagePosition: right
 keyTakeaways:
   - title_en: Multipolar Reality
@@ -397,15 +410,16 @@ keyTakeaways:
       competing powers and shifting alliances.
     description_fr: >-
       L'unipolarité de l'après-Guerre froide est révolue. Le Canada doit
-      s'adapter à un monde de puissances concurrentes et d'alliances mouvantes.
+      s'adapter à un monde marqué par la rivalité des puissances et la
+      recomposition des alliances.
   - title_en: Strategic Assets
     title_fr: Atouts stratégiques
     description_en: >-
       Critical minerals, Arctic resources, and technological capacity are
       Canada's leverage points in a multipolar world.
     description_fr: >-
-      Les minéraux critiques, les ressources arctiques et la capacité
-      technologique constituent les leviers d'influence du Canada dans un monde
+      Les minéraux critiques, les ressources de l’Arctique et les capacités
+      technologiques constituent les leviers d'influence du Canada dans un monde
       multipolaire.
   - title_en: Integrated Strategy
     title_fr: Stratégie intégrée
@@ -413,9 +427,9 @@ keyTakeaways:
       Success requires balancing North American ties, economic diversification,
       military modernization, and supply chain resilience.
     description_fr: >-
-      Le succès exige d'équilibrer les liens nord-américains, la diversification
-      économique, la modernisation militaire et la résilience des chaînes
-      d'approvisionnement.
+      Le réussite exige un équilibre entre les liens nord-américains, la
+      diversification économique, la modernisation militaire et la résilience
+      des chaînes d'approvisionnement.
 relatedProjects:
   - id: resources
     title_en: Critical Minerals & the Energy Transition
@@ -430,5 +444,3 @@ relatedProjects:
 sources:
   en: []
   fr: []
-  disclaimer_en: ''
-  disclaimer_fr: ''
