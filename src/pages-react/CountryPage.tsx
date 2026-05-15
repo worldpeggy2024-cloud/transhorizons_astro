@@ -28,7 +28,7 @@ import { southKoreaAnalysis } from '@/data/southkorea-yaml';
 import { irelandAnalysis } from '@/data/ireland';
 import { australiaAnalysis } from '@/data/australia-yaml';
 import { brazilAnalysis } from '@/data/brazil-yaml';
-import { germanyAnalysis } from '@/data/germany';
+import { germanyAnalysis } from '@/data/germany-yaml';
 import { unitedKingdomAnalysis } from '@/data/united-kingdom-yaml';
 import { mexicoAnalysis } from '@/data/mexico-yaml';
 import { indiaAnalysis } from '@/data/india-yaml';

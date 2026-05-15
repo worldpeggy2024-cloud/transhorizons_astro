@@ -39,7 +39,6 @@ export default function Footer() {
     { labelKey: 'nav.researchApproach', id: 'research-approach' },
     { labelKey: 'nav.notesReflections', id: 'notes' },
     { labelKey: 'nav.about', id: 'story' },
-    { label: 'Journeys & Field Notes', href: '#', isExternal: true },
     { labelKey: 'nav.contact', id: 'contact' },
   ];
 
@@ -100,25 +99,14 @@ export default function Footer() {
             </p>
             <nav className="flex flex-col gap-3">
               {navItems.map((item) => (
-                item.isExternal ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="text-left text-white/40 hover:text-white transition-colors font-body text-sm group flex items-center gap-1"
-                  >
-                    <span className="w-0 group-hover:w-3 h-px bg-[#7D1A2E] transition-all duration-300 overflow-hidden" />
-                    {item.label}
-                  </a>
-                ) : (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollTo(item.id!)}
-                    className="text-left text-white/40 hover:text-white transition-colors font-body text-sm group flex items-center gap-1"
-                  >
-                    <span className="w-0 group-hover:w-3 h-px bg-[#7D1A2E] transition-all duration-300 overflow-hidden" />
-                    {t(item.labelKey!)}
-                  </button>
-                )
+                <button
+                  key={item.id}
+                  onClick={() => scrollTo(item.id!)}
+                  className="text-left text-white/40 hover:text-white transition-colors font-body text-sm group flex items-center gap-1"
+                >
+                  <span className="w-0 group-hover:w-3 h-px bg-[#7D1A2E] transition-all duration-300 overflow-hidden" />
+                  {t(item.labelKey!)}
+                </button>
               ))}
             </nav>
           </div>
@@ -132,21 +120,42 @@ export default function Footer() {
               {[
                 { icon: BookOpen, label: 'LinkedIn', href: 'https://www.linkedin.com/in/peggy-brenier-6896b197/', descKey: 'footer.linkedinDesc' },
                 { icon: BookOpen, label: 'Instagram', href: 'https://www.instagram.com/worldpeggy/', descKey: 'footer.instagramDesc' },
-                { icon: BookOpen, label: 'Blog', href: '#', descKey: 'footer.blogDesc' },
-              ].map(({ icon: Icon, label, href, descKey }) => (
+                { icon: BookOpen, labelKey: 'story.journeysFieldNotes', href: '#', descKey: 'footer.journeysDesc', accent: true },
+              ].map(({ icon: Icon, label, labelKey, href, descKey, accent }) => (
                 <a
                   key={label}
                   href={href}
                   target={href.startsWith('http') ? '_blank' : undefined}
                   rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="flex items-center gap-3 group"
+                  className={`flex items-center gap-3 group ${accent ? 'mt-3' : ''}`}
                 >
-                  <div className="w-9 h-9 border border-white/15 flex items-center justify-center flex-shrink-0 group-hover:border-[#7D1A2E] transition-all duration-300">
-                    <Icon size={14} className="text-white/35 group-hover:text-[#7D1A2E] transition-colors" />
+                  <div
+                    className={`w-9 h-9 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                      accent
+                        ? 'border border-[#7D1A2E]/70 bg-[#7D1A2E]/10 group-hover:bg-[#7D1A2E]/20'
+                        : 'border border-white/15 group-hover:border-[#7D1A2E]'
+                    }`}
+                  >
+                    <Icon
+                      size={14}
+                      className={`${accent ? 'text-[#D88A9A]' : 'text-white/35 group-hover:text-[#7D1A2E]'} transition-colors`}
+                    />
                   </div>
                   <div>
-                    <p className="text-white/60 text-sm font-body group-hover:text-white transition-colors leading-tight">{label}</p>
-                    <p className="text-white/25 text-[10px] font-body">{t(descKey)}</p>
+                    <p
+                      className={`${
+                        accent
+                          ? 'text-[#7D1A2E] text-[15px] tracking-wide font-medium'
+                          : 'text-white/60 text-sm'
+                      } font-body group-hover:text-white transition-colors leading-tight`}
+                    >
+                      {labelKey ? t(labelKey) : label}
+                    </p>
+                    {descKey && (
+                      <p className={`${accent ? 'text-[#CFA6B0]' : 'text-white/25'} text-[10px] font-body`}>
+                        {t(descKey)}
+                      </p>
+                    )}
                   </div>
                 </a>
               ))}

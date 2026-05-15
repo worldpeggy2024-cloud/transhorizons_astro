@@ -31,7 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.worldAnalysis': 'World Analysis',
 
     // Hero Section
-    'hero.title': 'Research, Writing & Maps',
+    'hero.title': 'Research & Maps',
     'hero.subtitle': 'Structured analysis of geopolitical, resource, and technological systems, particularly those shaping Canada\'s position in the World.',
     'hero.byline': 'An independent research initiative by Peggy Brenier',
     'hero.location': 'Montreal · Canada · Global',
@@ -41,7 +41,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Portfolio Section
     'portfolio.title': 'Analyses: Geopolitics. Resources. Technology.',
-    'portfolio.intro': 'A selection of analyses, briefs, and visual essays exploring the forces that shape our world — from resource geopolitics to digital governance and Canada\'s place in a shifting global order.',
+    'portfolio.intro': 'Analyses and visual essays exploring the forces that shape our world — from resource geopolitics to digital governance and the strategic place of Canada within a shifting global order.',
     'portfolio.viewAll': 'View all analyses',
     'analyses.pageTitle': 'All Analyses',
     'analyses.pageSubtitle': 'The full collection of analytical essays, briefs, and visual essays — from resource geopolitics to digital governance and environmental change.',
@@ -77,7 +77,7 @@ const translations: Record<Language, Record<string, string>> = {
     'featuredAnalysis.readMore': 'Read essay',
 
     // Story Section
-    'story.intro': 'Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.\n\nCurrent practice increasingly extends toward independent research and analytical writing on geopolitics, resource systems, and technological transformation, with particular attention to Canada\'s position within evolving global structures.',
+    'story.intro': 'Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.\n\nCurrent practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada\'s position within evolving global structures.',
     'story.strengths.title': 'Core Strengths',
     'story.strengths.item1': 'Institutional research and documentation developed through long-term federal collaboration',
     'story.strengths.item2': 'Interpretation of complex statistical, technical, and policy material',
@@ -154,6 +154,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.linkedinDesc': 'Professional network',
     'footer.instagramDesc': 'Visual stories',
     'footer.blogDesc': 'Articles & analysis',
+    'footer.journeysDesc': 'Photographic world exploration',
     'footer.marquee1': 'Research · Writing · Analysis',
     'footer.marquee2': 'Canada & the world',
     'footer.marquee3': 'Geopolitics · Resources · Technology',
@@ -189,7 +190,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Research Approach Section
     'researchApproach.title': 'Research Approach',
     'researchApproach.subtitle': 'A structured analytical practice grounded in institutional sources, cross-domain research, and long-term monitoring of geopolitical and technological systems.',
-    'researchApproach.description': 'Research is based on publicly available institutional and primary sources, combined with cross-domain synthesis and continuous monitoring of global developments.',
+    'researchApproach.description': 'Research is based on publicly available institutional and primary sources, combined with cross-domain synthesis and monitoring of global developments.',
     'researchApproach.description2': 'The approach focuses on structural dynamics and system-level interactions, translating complex information into clear, traceable analysis.',
     'researchApproach.button': 'View Methodology',
 
@@ -220,17 +221,17 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.worldAnalysis': 'Analyse mondiale',
 
     // Hero Section
-    'hero.title': 'Recherche, rédaction et cartes',
-    'hero.subtitle': 'Initiative indépendante de recherche et d\'analyse explorant la position du Canada dans un monde en transformation ainsi que les dynamiques qui redéfinissent la géopolitique, les ressources et les technologies.',
-    'hero.byline': 'Une initiative de recherche indépendante par Peggy Brenier',
+    'hero.title': 'Recherche et cartes',
+    'hero.subtitle': 'Analyse structurée des systèmes liés à la géopolitique, aux ressources et aux technologies, en particulier ceux qui définissent la position du Canada dans le monde.',
+    'hero.byline': 'Initiative de recherche indépendante de Peggy Brenier',
     'hero.location': 'Montréal · Canada · Monde',
     'hero.button1': 'Voir les analyses',
     'hero.button2': 'À propos',
-    'hero.scroll': 'Défiler',
+    'hero.scroll': 'Faire défiler',
 
     // Portfolio Section
     'portfolio.title': 'Analyses : Géopolitique. Ressources. Technologie',
-    'portfolio.intro': 'Sélection d\'analyses, de notes stratégiques et d\'essais visuels explorant les forces qui façonnent notre monde — de la géopolitique des ressources à la gouvernance numérique, en passant par la position du Canada dans un ordre mondial en mutation.',
+    'portfolio.intro': 'Analyses et explorations cartographiques des forces qui façonnent notre monde — géopolitique des ressources, gouvernance numérique et place stratégique du Canada dans un ordre mondial en mutation.',
     'portfolio.viewAll': 'Voir toutes les analyses',
     'analyses.pageTitle': 'Toutes les analyses',
     'analyses.pageSubtitle': 'L\'ensemble des essais analytiques, notes stratégiques et essais visuels — de la géopolitique des ressources à la gouvernance numérique et aux changements environnementaux.',
@@ -266,22 +267,22 @@ const translations: Record<Language, Record<string, string>> = {
     'featuredAnalysis.readMore': 'Lire plus',
 
     // Story Section
-    'story.intro': 'Traductrice expérimentée et rédactrice analytique comptant plus de vingt ans d’expérience auprès d’institutions fédérales canadiennes, notamment Statistique Canada et Ressources naturelles Canada. Le parcours professionnel s’est concentré sur les publications institutionnelles, les rapports fondés sur la recherche et la documentation technique complexe au sein d’environnements axés sur les données et les politiques publiques.\n\nLa pratique actuelle s’oriente progressivement vers la recherche indépendante et la rédaction analytique portant sur la géopolitique, les systèmes de ressources et les transformations technologiques, avec une attention particulière accordée à la place du Canada dans l’évolution des structures internationales.',
+    'story.intro': 'Traductrice expérimentée et rédactrice analytique comptant plus de vingt ans d’expérience auprès d’institutions fédérales canadiennes, notamment Statistique Canada et Ressources naturelles Canada. Parcours professionnel consacré principalement à des publications institutionnelles, des rapports fondés sur la recherche et des documents techniques complexes au sein d’environnements axés sur les données et les politiques publiques.\n\nPratique actuelle s’orientant progressivement vers la recherche indépendante et la rédaction de rapports analytiques portant sur la géopolitique, les systèmes de ressources et les transformations technologiques, avec une attention particulière accordée à la place du Canada dans un contexte d’évolution des structures internationales.',
     'story.strengths.title': 'Principales forces',
     'story.strengths.item1': 'Recherche et analyse documentaires dans le cadre de collaborations prolongées avec l’administration fédérale',
     'story.strengths.item2': 'Interprétation de contenus statistiques, techniques et stratégiques complexes',
     'story.strengths.item3': 'Transformation du savoir institutionnel en analyses écrites structurées',
-    'story.strengths.item4': 'Perspective interdisciplinaire reposant par une exposition internationale soutenue et l’observation comparative',
-    'story.strengths.item5': 'Engagement envers une communication claire, rigoureuse et fondée sur des données probantes au service de la compréhension publique',
+    'story.strengths.item4': 'Perspective interdisciplinaire nourrie par une exposition internationale soutenue et par l’observation comparative',
+    'story.strengths.item5': 'Engagement envers une communication claire, rigoureuse et fondée sur des données probantes afin de rendre les enjeux complexes plus accessibles',
     'story.research.title': 'Axes de recherche',
-    'story.research.text': 'Les travaux actuels examinent les dynamiques géopolitiques, les systèmes de ressources et les mutations technologiques selon une approche structurelle et systémique, visant à mieux comprendre les transformations mondiales à long terme pertinentes pour le Canada et pour les contextes internationaux.',
+    'story.research.text': 'Les travaux actuels examinent les dynamiques géopolitiques, les systèmes de ressources et les mutations technologiques selon une approche structurelle et systémique, visant à mieux comprendre les transformations mondiales à long terme et leurs implications pour le Canada dans un contexte international en évolution.',
     'story.title': 'Allier la linguistique à l\'analyse mondiale',
     'story.years': 'Années d\'expertise',
     'story.government': 'Années de traductions pour le gouvernement canadien',
     'story.domains': 'Domaines d\'analyse',
-    'story.quote': 'La langue est la carte. L\'analyse est le voyage. La compréhension est la destination.',
-    'story.positioning': 'Analyste indépendante transformant l\'expérience institutionnelle canadienne en analyses structurées des dynamiques géopolitiques, des ressources et des transformations technologiques à l\'échelle mondiale.',
-    'story.journeysFieldNotes': 'Voyages et notes de terrain →',
+    'story.quote': 'La langue est un outil d’orientation. L’analyse, un cheminement. La compréhension, l’horizon à atteindre.',
+    'story.positioning': 'Analyste indépendante transformant une connaissance approfondie des institutions canadiennes en analyses structurées des systèmes géopolitiques, énergétiques, technologiques et liés aux ressources à l\'échelle mondiale.',
+    'story.journeysFieldNotes': 'Fragments de voyage →',
     'story.downloadCV': 'Télécharger le CV',
 
     // Gallery Section
@@ -343,6 +344,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.linkedinDesc': 'Réseau professionnel',
     'footer.instagramDesc': 'Histoires visuelles',
     'footer.blogDesc': 'Articles et analyses',
+    'footer.journeysDesc': 'Exploration photographique du monde',
     'footer.marquee1': 'Recherche · Rédaction · Analyse',
     'footer.marquee2': 'Le Canada et le monde',
     'footer.marquee3': 'Géopolitique · Ressources · Technologie',
@@ -377,9 +379,9 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Research Approach Section
     'researchApproach.title': 'Approche de recherche',
-    'researchApproach.subtitle': 'Une pratique analytique structurée ancrée dans les sources institutionnelles, la recherche multidisciplinaire et le suivi à long terme des systèmes géopolitiques et technologiques.',
-    'researchApproach.description': 'Cette initiative de recherche s\'appuie sur 25+ ans d\'expérience institutionnelle, d\'analyse multilingue et de suivi systématique des tendances mondiales.',
-    'researchApproach.description2': 'Chaque analyse intègre des sources primaires, des publications institutionnelles et des données en temps réel pour fournir des perspectives exploitables sur les dynamiques géopolitiques, des ressources et de la technologie.',
+    'researchApproach.subtitle': 'Pratique analytique structurée reposant sur des sources institutionnelles, des recherches multidisciplinaires et le suivi à long terme des systèmes géopolitiques et technologiques.',
+    'researchApproach.description': 'Cette recherche s\'appuie sur des sources institutionnelles et primaires accessibles au public, combinées à une synthèse interdisciplinaire et au suivi des évolutions mondiales.',
+    'researchApproach.description2': 'L\'approche privilégie les dynamiques structurelles et les interactions systémiques afin de transformer des informations complexes en analyses claires et traçables.',
     'researchApproach.button': 'Explorer l\'approche de recherche',
 
     // Detail Pages

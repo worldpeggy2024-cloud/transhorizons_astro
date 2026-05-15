@@ -1,0 +1,822 @@
+code: DEU
+nameEn: DEU
+nameFr: DEU
+lastUpdated: '2026-05-14'
+scorecard_eliteCohesion: High
+scorecard_securityLoyalty: High
+scorecard_economicPressure: Med
+scorecard_protestCapacity: Med
+scorecard_institutionalResilience: High
+executiveSnapshot_en: |-
+  1. REGIME TYPE: Parliamentary federal republic; executive power is won through proportional-representation elections and multi-party coalition bargaining, then held via Bundestag confidence — a system with high entry barriers for anti-system actors but no supermajority single-party dominance [bundeswahlleiter-2025] [vdem-report-2026].
+  2. POLITICAL EQUILIBRIUM: The CDU/CSU–SPD 'grand coalition' sworn in 6 May 2025 under Chancellor Friedrich Merz holds a workable 328-seat Bundestag majority (out of 630); the AfD, with 152 seats, forms the largest opposition bloc but is constitutionally isolated following its May 2025 BfV classification as a 'proven extremist' organization — a label now legally contested in court as of February 2026 [bundeswahlleiter-2025] [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026].
+  3. ECONOMIC MODEL: Germany operates an export-led social-market economy (Soziale Marktwirtschaft); automotive, machinery, and chemicals dominate goods exports (€1,562.9B total in 2025); the economy eked out 0.2% real GDP growth in 2025 after two consecutive years of contraction, with Q1 2026 up 0.3% QoQ; external sector anchors growth while domestic demand remains subdued [destatis-gdp-2025] [destatis-trade-2025] [destatis-gdp-q1-2026].
+  4. TOP 3 RISKS (6–18 months): (i) US tariff escalation on automotive/industrial goods materially compressing Germany's export-dependent growth model — US 25% auto tariffs already reduced German car exports to the US by 14% in Q1–Q3 2025 [iwkoeln-us-tariffs-autos-2025]; (ii) energy price shock from Middle East instability raising industrial operating costs above already-elevated post-2022 baseline [ifo-joint-forecast-spring2026] [iea-germany-energy-2025]; (iii) far-right AfD normalisation and BfV legal battle generating domestic institutional instability and coalition management risk [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026].
+  5. TOP 3 WATCH ITEMS (4–12 weeks): (i) Cologne administrative court ruling on BfV's AfD extremist designation — outcome determines surveillance powers and ban-petition pathway [afd-court-injunction-dw-2026]; (ii) European Commission Spring 2026 forecast update and Bundesrat vote on first tranche of the €500B Sondervermögen infrastructure fund [debt-brake-reform-2025] [bruegel-debt-brake-europe-2025]; (iii) ECB governing council June 2026 rate decision — markets pricing further hold at 2.00% with upside inflation risk from energy [ecb-rate-june2025] [bundesbank-hicp-2026].
+  6. EXTERNAL DEPENDENCIES: China is Germany's single largest trade partner (€251.8B turnover, 2025), with ~80% import dependency on Chinese rare earths [destatis-trade-node] [reuters-china-derisking-2025]; energy: renewables covered 55.3% of electricity in 2025 but industrial gas prices remain structurally elevated vs. pre-2022 [agora-energiewende-2025] [iea-germany-energy-2025]; sovereign debt: Germany holds AAA from all three major agencies with foreign holders absorbing a significant share of the €2.84T debt stock [bundesbank-debt-2025] [spglobal-rating-germany-2026].
+  7. SECURITY POSTURE: Internally stable liberal democracy; no domestic insurgency; terrorism threat level elevated (nine executed Islamist attacks 2020–May 2025) [ctc-islamist-terror-germany-2025]; hybrid threat from Russia documented (40+ suspicious drone overflights, October 2025) [acled-europe-dec2025]; Bundeswehr undergoing largest military expansion since reunification — €114B spend in 2025 (2.3% of GDP, +24% YoY), targeting Europe's strongest conventional force by 2039 [sipri-milex-2025] [bundeswehr-strategy-2026].
+  8. DIPLOMATIC ORIENTATION: Core NATO Ally (Article 5 commitment) and EU founding member; Franco-German axis remains central to European security architecture, reinforced at the September 2025 Defence and Security Council [franco-german-defence-council-2025]; relations with Poland improving under Merz; US relationship transactional under Trump 2.0 with tariff tensions; proactive China de-risking underway with dedicated Bundestag committee since November 2025 [reuters-china-derisking-2025] [iss-eu-risks-2026].
+  9. DATA CONFIDENCE: Macro/fiscal data (economy sections): HIGH — primary sources from Destatis, Bundesbank, IMF, OECD, EC, and three major rating agencies. Political/governance data: HIGH — Freedom House, WJP, V-Dem, and BfV primary documents. Security/terrorism data: MEDIUM — ACLED and CTC analysis are reliable but event-level hybrid threat data is by nature incomplete. Trade partner concentration: HIGH (Destatis). Forward risk probability assessments: LOW-MEDIUM — inherently interpretive [imf-art4-2025] [wjp-germany-2025] [vdem-report-2026].
+  10. BASELINE OUTLOOK: Germany is on a modest recovery trajectory (0.6% GDP growth projected for 2026 [ifo-joint-forecast-spring2026]) underpinned by a historic fiscal pivot and rearmament surge, but remains vulnerable to external shocks — US tariff escalation, energy price volatility, and internal AfD-driven political friction represent the principal risks to a managed, if slow, stabilisation.
+executiveSnapshot_fr: |-
+  1. TYPE DE RÉGIME : République fédérale parlementaire ; le pouvoir exécutif s'acquiert par des élections à représentation proportionnelle et des négociations de coalition multipartites, puis se maintient par la confiance du Bundestag — système à hautes barrières d'entrée pour les acteurs antisystème, sans domination unipartite supermajoritaire [bundeswahlleiter-2025] [vdem-report-2026].
+  2. ÉQUILIBRE POLITIQUE : La grande coalition CDU/CSU–SPD, assermentée le 6 mai 2025 sous le chancelier Friedrich Merz, dispose d'une majorité fonctionnelle de 328 sièges sur 630 au Bundestag ; l'AfD, avec 152 sièges, constitue le principal groupe d'opposition mais est constitutionnellement isolée depuis sa classification comme organisation « extrémiste avérée » par le BfV en mai 2025 — une désignation juridiquement contestée depuis février 2026 [bundeswahlleiter-2025] [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026].
+  3. MODÈLE ÉCONOMIQUE : L'Allemagne opère selon un modèle d'économie sociale de marché (Soziale Marktwirtschaft) axé sur les exportations ; l'automobile, la mécanique et la chimie dominent les exportations de marchandises (1 562,9 Mds€ au total en 2025) ; le PIB réel a progressé de 0,2 % en 2025 après deux années consécutives de contraction, avec +0,3 % en glissement trimestriel au T1 2026 ; le secteur externe ancre la croissance tandis que la demande intérieure reste atone [destatis-gdp-2025] [destatis-trade-2025] [destatis-gdp-q1-2026].
+  4. TOP 3 DES RISQUES (6–18 mois) : (i) Escalade tarifaire américaine sur les produits automobiles et industriels comprimant le modèle de croissance axé sur les exportations — les droits de douane américains de 25 % sur les voitures ont déjà réduit les exportations automobiles allemandes vers les États-Unis de 14 % au T1–T3 2025 [iwkoeln-us-tariffs-autos-2025] ; (ii) choc sur les prix de l'énergie lié à l'instabilité au Moyen-Orient, alourdissant les coûts opérationnels industriels déjà structurellement élevés [ifo-joint-forecast-spring2026] [iea-germany-energy-2025] ; (iii) normalisation de l'AfD et bataille judiciaire avec le BfV générant une instabilité institutionnelle interne et des risques de gestion de coalition [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026].
+  5. TOP 3 DES POINTS DE SURVEILLANCE (4–12 semaines) : (i) Arrêt du tribunal administratif de Cologne sur la désignation extrémiste de l'AfD par le BfV — l'issue détermine les pouvoirs de surveillance et la voie vers une procédure d'interdiction [afd-court-injunction-dw-2026] ; (ii) mise à jour des prévisions printanières 2026 de la Commission européenne et vote du Bundesrat sur la première tranche du Sondervermögen infrastructure de 500 Mds€ [debt-brake-reform-2025] [bruegel-debt-brake-europe-2025] ; (iii) décision de taux de la BCE en juin 2026 — les marchés anticipent un maintien à 2,00 % avec un risque d'inflation haussière lié à l'énergie [ecb-rate-june2025] [bundesbank-hicp-2026].
+  6. DÉPENDANCES EXTERNES : La Chine est le premier partenaire commercial de l'Allemagne (251,8 Mds€ d'échanges en 2025), avec une dépendance aux importations chinoises de terres rares estimée à environ 80 % [destatis-trade-node] [reuters-china-derisking-2025] ; énergie : les renouvelables ont couvert 55,3 % de l'électricité en 2025, mais les prix du gaz industriel restent structurellement élevés par rapport à l'avant-2022 [agora-energiewende-2025] [iea-germany-energy-2025] ; dette souveraine : l'Allemagne maintient la notation AAA auprès des trois grandes agences, les détenteurs étrangers absorbant une part significative du stock de 2,84 Mds€ [bundesbank-debt-2025] [spglobal-rating-germany-2026].
+  7. POSTURE SÉCURITAIRE : Démocratie libérale stable sur le plan intérieur ; pas d'insurrection domestique ; niveau de menace terroriste élevé (neuf attaques islamistes exécutées entre 2020 et mai 2025) [ctc-islamist-terror-germany-2025] ; menace hybride russe documentée (40+ survols de drones suspects, octobre 2025) [acled-europe-dec2025] ; la Bundeswehr connaît la plus grande expansion militaire depuis la réunification — 114 Mds$ de dépenses en 2025 (2,3 % du PIB, +24 % sur un an), avec l'objectif de devenir la force conventionnelle la plus puissante d'Europe d'ici 2039 [sipri-milex-2025] [bundeswehr-strategy-2026].
+  8. ORIENTATION DIPLOMATIQUE : Allié central de l'OTAN (engagement à l'article 5) et membre fondateur de l'UE ; l'axe franco-allemand demeure central dans l'architecture de sécurité européenne, renforcé lors du Conseil de défense et de sécurité de septembre 2025 [franco-german-defence-council-2025] ; les relations avec la Pologne s'améliorent sous Merz ; les relations avec les États-Unis sont transactionnelles sous Trump 2.0 avec des tensions tarifaires ; la démarche de réduction des risques vis-à-vis de la Chine est en cours avec un comité dédié au Bundestag depuis novembre 2025 [reuters-china-derisking-2025] [iss-eu-risks-2026].
+  9. FIABILITÉ DES DONNÉES : Données macro/budgétaires (sections économiques) : ÉLEVÉE — sources primaires de Destatis, Bundesbank, FMI, OCDE, CE et des trois grandes agences de notation. Données politiques/de gouvernance : ÉLEVÉE — Freedom House, WJP, V-Dem et documents primaires du BfV. Données sécuritaires/terroristes : MOYENNE — les analyses ACLED et CTC sont fiables mais les données sur les menaces hybrides sont par nature incomplètes. Concentration des partenaires commerciaux : ÉLEVÉE (Destatis). Évaluations prospectives des probabilités de risque : FAIBLE-MOYEN — intrinsèquement interprétatives [imf-art4-2025] [wjp-germany-2025] [vdem-report-2026].
+  10. PERSPECTIVES DE BASE : L'Allemagne est sur une trajectoire de reprise modeste (croissance du PIB de 0,6 % projetée pour 2026 [ifo-joint-forecast-spring2026]), soutenue par un virage budgétaire historique et un réarmement accéléré, mais reste vulnérable aux chocs externes — l'escalade tarifaire américaine, la volatilité des prix de l'énergie et les frictions politiques internes liées à l'AfD constituent les principaux risques pesant sur une stabilisation gérée, quoique lente.
+political_powerStructure_en: 'Executive power is held by Chancellor Friedrich Merz (CDU), who leads the CDU/CSU–SPD grand coalition government sworn in on 6 May 2025 following CDU/CSU''s election victory of 28.5% on 23 February 2025 [bundeswahlleiter-2025] [coalition-agreement-2025]. The coalition commands 328 of 630 Bundestag seats, a comfortable working majority [bundeswahlleiter-2025]. Legislative power is shared between the Bundestag (lower house, directly elected) and the Bundesrat (state chamber); no single party holds a majority, making coalition arithmetic and inter-chamber negotiation central to governance. Judicial power is anchored in the Bundesverfassungsgericht (Federal Constitutional Court), whose institutional independence was further reinforced by the December 2024 Basic Law amendment constitutionalising its autonomy, passed 600–69 in the Bundestag — a direct response to perceived democratic backsliding risks observed elsewhere in Europe [fcc-resilience-reform-2024]. Security forces (Bundeswehr and federal police) are controlled by civilian executive authority through the Federal Ministry of Defence and Interior; the Bundeswehr is constitutionally constrained from domestic deployment except in extreme emergencies [bundeswehr-strategy-2026]. The domestic intelligence service (BfV) operates under the Interior Ministry; its May 2025 classification of the AfD as ''proven right-wing extremist'' on the basis of a 1,100-page assessment reflects active use of intelligence tools to address political extremism — though this classification is currently under judicial review following a February 2026 injunction [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026]. Media independence is rated high: Germany scores 94/100 (Free) by Freedom House in 2025, with a robust public-service media ecosystem (ARD, ZDF) alongside private plurality; no dominant state-aligned media [freedom-house-germany-2025].'
+political_powerStructure_fr: 'Le pouvoir exécutif est détenu par le chancelier Friedrich Merz (CDU), qui dirige la grande coalition CDU/CSU–SPD assermentée le 6 mai 2025 à la suite de la victoire électorale de la CDU/CSU avec 28,5 % des voix le 23 février 2025 [bundeswahlleiter-2025] [coalition-agreement-2025]. La coalition dispose de 328 des 630 sièges du Bundestag, soit une majorité de travail confortable [bundeswahlleiter-2025]. Le pouvoir législatif est partagé entre le Bundestag (chambre basse, élue au suffrage direct) et le Bundesrat (chambre des États) ; aucun parti ne détenant de majorité absolue, l''arithmétique de coalition et la négociation interchambres sont centrales à la gouvernance. Le pouvoir judiciaire est ancré dans le Bundesverfassungsgericht (Cour constitutionnelle fédérale), dont l''indépendance institutionnelle a été encore renforcée par l''amendement à la Loi fondamentale de décembre 2024 constitutionnalisant son autonomie, adopté à 600 voix contre 69 au Bundestag [fcc-resilience-reform-2024]. Les forces de sécurité (Bundeswehr et police fédérale) sont sous contrôle exécutif civil via les ministères fédéraux de la Défense et de l''Intérieur ; la Bundeswehr est constitutionnellement limitée dans ses déploiements intérieurs sauf en cas d''extrême urgence [bundeswehr-strategy-2026]. Le service de renseignement intérieur (BfV) opère sous l''égide du ministère de l''Intérieur ; sa classification de l''AfD comme « extrémiste de droite avéré » en mai 2025, sur la base d''un rapport de 1 100 pages, reflète l''utilisation active des outils de renseignement pour traiter l''extrémisme politique — bien que cette classification soit actuellement en révision judiciaire suite à une injonction de février 2026 [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026]. L''indépendance des médias est élevée : l''Allemagne obtient 94/100 (Libre) selon Freedom House en 2025, avec un solide écosystème de médias de service public (ARD, ZDF) en plus d''un pluralisme privé ; aucun média dominant aligné sur l''État [freedom-house-germany-2025].'
+political_stabilityDrivers_en: 'Germany''s political legitimacy rests on robust democratic institutions, economic prosperity, and strong constitutional norms repeatedly reaffirmed by the Federal Constitutional Court — Freedom House assigns 94/100 and the WJP Rule of Law Index ranks Germany 5th globally at 0.83 in 2025 [freedom-house-germany-2025] [wjp-germany-2025]. The Bundeswehr''s loyalty is unambiguously civilian and constitutionally anchored; there is no credible risk of military interference in politics [bundeswehr-strategy-2026]. The CDU/CSU–SPD coalition''s internal cohesion is tested but functional: both parties made significant programmatic concessions in the May 2025 coalition agreement, with CDU/CSU securing fiscal reform and harder migration rules while SPD preserved core social protections [coalition-agreement-2025]. Germany''s Corruption Perceptions Index score of 77/100 (10th globally in 2025) reflects a well-institutionalised public administration with low levels of perceived public-sector graft [transparency-cpi-2025]. Business elite alignment with the coalition is broadly positive: the €500B Sondervermögen infrastructure fund and defence spending surge create significant public procurement opportunities for industrial conglomerates; the coalition''s commitment to industrial electricity price relief also responds directly to Bundesverband der Deutschen Industrie (BDI) demands [debt-brake-reform-2025] [coalition-agreement-2025]. V-Dem''s 2026 report scores Germany''s Liberal Democracy Index at 0.83, well into the ''liberal democracy'' category, with no observed autocratization trend — a notable stability anchor in an increasingly unstable regional environment [vdem-report-2026].'
+political_stabilityDrivers_fr: 'La légitimité politique de l''Allemagne repose sur des institutions démocratiques solides, une prospérité économique et des normes constitutionnelles fortes régulièrement réaffirmées par la Cour constitutionnelle fédérale — Freedom House attribue 94/100 et l''Indice de l''état de droit du WJP classe l''Allemagne au 5e rang mondial avec 0,83 en 2025 [freedom-house-germany-2025] [wjp-germany-2025]. La loyauté de la Bundeswehr est sans ambiguïté civile et constitutionnellement ancrée ; il n''existe aucun risque crédible d''ingérence militaire dans la politique [bundeswehr-strategy-2026]. La cohésion interne de la coalition CDU/CSU–SPD est éprouvée mais fonctionnelle : les deux partis ont fait des concessions programmatiques significatives dans l''accord de coalition de mai 2025, la CDU/CSU obtenant la réforme budgétaire et un durcissement des règles migratoires tandis que le SPD préservait les protections sociales essentielles [coalition-agreement-2025]. Le score de l''Allemagne à l''Indice de perception de la corruption — 77/100, 10e rang mondial en 2025 — reflète une administration publique bien institutionnalisée avec de faibles niveaux de corruption perçue [transparency-cpi-2025]. L''alignement des élites économiques avec la coalition est globalement positif : le fonds d''infrastructure Sondervermögen de 500 Mds€ et la montée en puissance des dépenses de défense créent d''importantes opportunités de marchés publics pour les conglomérats industriels ; l''engagement de la coalition en faveur d''un allègement du prix de l''électricité industrielle répond directement aux demandes du BDI [debt-brake-reform-2025] [coalition-agreement-2025]. Le rapport V-Dem 2026 attribue à l''Indice de démocratie libérale de l''Allemagne un score de 0,83, bien dans la catégorie « démocratie libérale », sans tendance à l''autocratisation observée — une ancre de stabilité notable dans un environnement régional de plus en plus instable [vdem-report-2026].'
+political_shockAbsorbers_en: 'Germany''s primary shock absorbers are its deep institutional reserves: a written constitution with well-defended entrenchment provisions, an independent Federal Constitutional Court (recently reinforced by Basic Law amendment) [fcc-resilience-reform-2024], a decentralised federal structure that distributes political risk across 16 Länder, strong public finances (AAA ratings from all three major agencies [spglobal-rating-germany-2026] [fitch-germany-rating-2026]) providing exceptional fiscal space, and the ECB backstop. The €500B Sondervermögen, enacted constitutionally in March 2025 [debt-brake-reform-2025], dramatically expands the state''s capacity to absorb economic and defence shocks for a decade without breaching fiscal rules. On the instability-accelerant side, the AfD''s 20.8% Bundestag share [bundeswahlleiter-2025] and its mobilisation of approximately one-fifth of the electorate around immigration and anti-establishment grievances creates a sustained pressure channel that is amplified, not resolved, by the BfV''s legally contested extremist designation [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026]; should the courts ultimately vacate the BfV designation, it would significantly reduce surveillance tools and embolden the party. A second accelerant is Germany''s structural economic vulnerability to simultaneous US tariff shocks and Chinese de-risking disruption — the two largest trade partners accounting for the bulk of the export surplus — which could, in a severe scenario, erode the economic prosperity that underpins broad political legitimacy [iwkoeln-us-tariffs-autos-2025] [reuters-china-derisking-2025]. Elevated energy prices (wholesale electricity +13% YoY in 2025 [agora-energiewende-2025]) further squeeze the industrial base that is central to Germany''s social contract and business elite buy-in.'
+political_shockAbsorbers_fr: 'Les principaux amortisseurs de chocs de l''Allemagne sont ses profondes réserves institutionnelles : une constitution écrite avec des dispositions d''ancrage bien défendues, une Cour constitutionnelle fédérale indépendante (récemment renforcée par amendement à la Loi fondamentale) [fcc-resilience-reform-2024], une structure fédérale décentralisée qui distribue le risque politique sur 16 Länder, des finances publiques solides (notations AAA auprès des trois grandes agences [spglobal-rating-germany-2026] [fitch-germany-rating-2026]) offrant une marge budgétaire exceptionnelle, et le filet de sécurité de la BCE. Le Sondervermögen de 500 Mds€, adopté constitutionnellement en mars 2025 [debt-brake-reform-2025], élargit considérablement la capacité de l''État à absorber les chocs économiques et de défense pendant une décennie sans violer les règles budgétaires. Du côté des facteurs d''accélération de l''instabilité, la part de 20,8 % de l''AfD au Bundestag [bundeswahlleiter-2025] et sa mobilisation d''environ un cinquième de l''électorat autour des griefs liés à l''immigration et à l''anti-establishment crée un canal de pression soutenu, amplifié — et non résolu — par la désignation extrémiste juridiquement contestée du BfV [bfv-afd-extremist-reuters-2025] [afd-court-injunction-dw-2026] ; si les tribunaux annulent finalement cette désignation, cela réduirait significativement les outils de surveillance et renforcerait le parti. Un second facteur d''accélération est la vulnérabilité économique structurelle de l''Allemagne à des chocs tarifaires américains simultanés et aux perturbations de la politique de réduction des risques vis-à-vis de la Chine — les deux principaux partenaires commerciaux représentant l''essentiel de l''excédent commercial — ce qui pourrait, dans un scénario grave, éroder la prospérité économique qui sous-tend la large légitimité politique [iwkoeln-us-tariffs-autos-2025] [reuters-china-derisking-2025]. Les prix élevés de l''énergie (électricité en gros +13 % sur un an en 2025 [agora-energiewende-2025]) compriment davantage la base industrielle qui est au cœur du contrat social allemand et de l''adhésion des élites économiques.'
+economy_macroReality_en: 'Germany exited two consecutive years of GDP contraction with 0.2% real growth in 2025 [destatis-gdp-2025], narrowly avoiding a formal recession; Q1 2026 showed a modest acceleration to +0.3% QoQ (0.5% YoY) [destatis-gdp-q1-2026]. The German Economic Institutes'' Spring 2026 consensus (ifo, DIW, IfW Kiel, IWH, RWI) projects 0.6% for full-year 2026 and 0.9% for 2027 [ifo-joint-forecast-spring2026], broadly consistent with the IMF''s February 2026 Article IV assessment [imf-art4-2025]. The sectoral picture is mixed: manufacturing — particularly automotive — remains under structural pressure from US tariffs and Chinese competition; the services sector and construction are recovering on the back of the fiscal stimulus [destatis-gdp-2025] [iwkoeln-us-tariffs-autos-2025]. Annual CPI inflation was 2.2% in 2025 [destatis-inflation-2025], declining from the 2022–23 energy price spike, but HICP re-accelerated to 2.9% YoY in April 2026 [bundesbank-hicp-2026], elevated by energy cost pressures from Middle East instability [ifo-joint-forecast-spring2026]. The ECB held its deposit rate at 2.00% after the final 25bp cut of its easing cycle in June 2025 [ecb-rate-june2025]; the Bundesbank Monthly Report (February 2026) signals no near-term rate movements and confirms monetary conditions remain accommodative relative to the post-2022 peak [bundesbank-monetary-feb2026]. The fiscal deficit was 2.4% of GDP in 2025 [destatis-gdp-2025]; the European Commission''s Autumn 2025 forecast projects the deficit widening to 4.0% of GDP in 2026 as the Sondervermögen begins disbursing [ec-forecast-germany-nov2025]. Government debt rose to €2.84 trillion in 2025, with the debt-to-GDP ratio at 63.5% [bundesbank-debt-2025] [ec-forecast-germany-nov2025]. Despite rising debt, Germany maintains sovereign credit ratings of AAA from S&P (stable outlook, April 2026) [spglobal-rating-germany-2026] and AAA/Aaa from Fitch and Moody''s [fitch-germany-rating-2026] — reflecting the market''s confidence in Germany''s institutional framework and debt-management capacity. Unemployment rose to 6.2% (BA definition) / 3.7% (ILO definition) in December 2025, up 101,000 YoY, reflecting ongoing industrial restructuring rather than cyclical collapse [bundesagentur-labour-dec2025].'
+economy_macroReality_fr: 'L''Allemagne est sortie de deux années consécutives de contraction du PIB avec une croissance réelle de 0,2 % en 2025 [destatis-gdp-2025], évitant de peu une récession formelle ; le T1 2026 a montré une légère accélération à +0,3 % en glissement trimestriel (0,5 % en glissement annuel) [destatis-gdp-q1-2026]. Le consensus des instituts économiques allemands pour le printemps 2026 (ifo, DIW, IfW Kiel, IWH, RWI) projette 0,6 % pour l''ensemble de 2026 et 0,9 % pour 2027 [ifo-joint-forecast-spring2026], en accord général avec l''évaluation de l''article IV du FMI de février 2026 [imf-art4-2025]. Le tableau sectoriel est contrasté : l''industrie manufacturière — en particulier l''automobile — reste sous pression structurelle en raison des droits de douane américains et de la concurrence chinoise ; les services et la construction se redressent grâce à la relance budgétaire [destatis-gdp-2025] [iwkoeln-us-tariffs-autos-2025]. L''inflation IPC annuelle a été de 2,2 % en 2025 [destatis-inflation-2025], en baisse par rapport au pic lié aux prix de l''énergie en 2022–23, mais l''IPCH a réaccéléré à 2,9 % sur un an en avril 2026 [bundesbank-hicp-2026], tiré à la hausse par les pressions énergétiques liées à l''instabilité au Moyen-Orient [ifo-joint-forecast-spring2026]. La BCE a maintenu son taux de dépôt à 2,00 % après la dernière baisse de 25 points de base de son cycle d''assouplissement en juin 2025 [ecb-rate-june2025] ; le rapport mensuel de la Bundesbank (février 2026) ne signale aucun mouvement de taux à court terme et confirme que les conditions monétaires restent accommodantes par rapport au pic post-2022 [bundesbank-monetary-feb2026]. Le déficit budgétaire était de 2,4 % du PIB en 2025 [destatis-gdp-2025] ; les prévisions d''automne 2025 de la Commission européenne projettent un élargissement du déficit à 4,0 % du PIB en 2026, au début des décaissements du Sondervermögen [ec-forecast-germany-nov2025]. La dette publique a atteint 2 840 Mds€ en 2025, avec un ratio dette/PIB de 63,5 % [bundesbank-debt-2025] [ec-forecast-germany-nov2025]. Malgré la hausse de la dette, l''Allemagne maintient des notations souveraines de AAA auprès de S&P (perspective stable, avril 2026) [spglobal-rating-germany-2026] et AAA/Aaa auprès de Fitch et Moody''s [fitch-germany-rating-2026]. Le chômage a atteint 6,2 % (définition BA) / 3,7 % (définition OIT) en décembre 2025, en hausse de 101 000 sur un an, reflétant une restructuration industrielle en cours plutôt qu''un effondrement cyclique [bundesagentur-labour-dec2025].'
+economy_externalVulnerability_en: 'Germany''s total goods exports reached €1,562.9B in 2025 (+0.9% YoY) against imports of €1,362.5B, generating a trade surplus of €200.4B [destatis-trade-2025]. China overtook the US in 2025 to become Germany''s single largest trade partner at €251.8B in bilateral turnover [destatis-trade-node]; the US (€240.5B) and France (€155.3B) rounded out the top three [destatis-trade-2025]. This bilateral concentration in China is a primary strategic vulnerability: German industry holds approximately 80% import dependency on Chinese rare earths, and the Bundestag formally established a specialist China trade committee in November 2025 to manage de-risking [reuters-china-derisking-2025]. US tariffs of 25% on automotive goods — Germany''s single largest export category — materially reduced German car exports to the US by 14% in Q1–Q3 2025, with knock-on effects across the machinery (−9.5%) and chemicals (−9.5%) sectors [iwkoeln-us-tariffs-autos-2025]. Germany is not subject to any IMF program and has no sanctions exposure of relevance. Sovereign debt foreign-holder concentration is not an acute risk given the AAA rating profile and the ECB''s Transmission Protection Instrument backstop, but the expansion of public debt toward €2.84T (63.5% of GDP) will gradually increase refinancing exposure [bundesbank-debt-2025] [spglobal-rating-germany-2026]. Energy import dependency has materially declined post-2022 — renewables now cover 55.3% of domestic electricity [agora-energiewende-2025] — but wholesale electricity prices rose 13% YoY in 2025 and industrial gas prices remain structurally above pre-2022 levels, constraining the competitiveness of energy-intensive industries [iea-germany-energy-2025] [agora-energiewende-2025].'
+economy_externalVulnerability_fr: 'Les exportations totales de marchandises de l''Allemagne ont atteint 1 562,9 Mds€ en 2025 (+0,9 % sur un an) contre des importations de 1 362,5 Mds€, générant un excédent commercial de 200,4 Mds€ [destatis-trade-2025]. La Chine a dépassé les États-Unis en 2025 pour devenir le premier partenaire commercial de l''Allemagne avec 251,8 Mds€ d''échanges bilatéraux [destatis-trade-node] ; les États-Unis (240,5 Mds€) et la France (155,3 Mds€) complétaient le top 3 [destatis-trade-2025]. Cette concentration bilatérale sur la Chine constitue une vulnérabilité stratégique primaire : l''industrie allemande dépend à environ 80 % des importations chinoises de terres rares, et le Bundestag a formellement établi un comité spécialisé sur le commerce avec la Chine en novembre 2025 pour gérer la réduction des risques [reuters-china-derisking-2025]. Les droits de douane américains de 25 % sur les véhicules — la principale catégorie d''exportation allemande — ont réduit les exportations automobiles allemandes vers les États-Unis de 14 % au T1–T3 2025, avec des effets d''entraînement sur les secteurs de la mécanique (−9,5 %) et de la chimie (−9,5 %) [iwkoeln-us-tariffs-autos-2025]. L''Allemagne n''est soumise à aucun programme du FMI et n''a aucune exposition pertinente aux sanctions. La concentration des détenteurs étrangers de la dette souveraine n''est pas un risque aigu compte tenu du profil de notation AAA et du filet de sécurité du TPI de la BCE, mais l''expansion de la dette publique vers 2 840 Mds€ (63,5 % du PIB) augmentera progressivement l''exposition au refinancement [bundesbank-debt-2025] [spglobal-rating-germany-2026]. La dépendance aux importations d''énergie a sensiblement diminué depuis 2022 — les renouvelables couvrent désormais 55,3 % de l''électricité domestique [agora-energiewende-2025] — mais les prix de gros de l''électricité ont augmenté de 13 % sur un an en 2025 et les prix du gaz industriel restent structurellement au-dessus des niveaux d''avant 2022, limitant la compétitivité des industries à forte intensité énergétique [iea-germany-energy-2025] [agora-energiewende-2025].'
+economy_politicalEconomy_en: 'The beneficiaries of Germany''s current economic model are concentrated in the industrial export complex — automotive OEMs (Volkswagen, BMW, Mercedes-Benz), large chemical and pharmaceutical producers (BASF, Bayer), precision machinery manufacturers, and the financial services sector that intermediates their capital flows. These actors have strong direct lines to the CDU/CSU coalition partner and are broadly supportive of the Merz government''s supply-side orientation, including corporate tax reform commitments and the industrial electricity price subsidy discussions [coalition-agreement-2025]. The €500B Sondervermögen creates a decade-long construction and defence procurement windfall for the Mittelstand and large contractors; this generates strong stakeholder buy-in for the fiscal reform agenda [debt-brake-reform-2025] [bruegel-debt-brake-europe-2025]. Technically necessary reforms identified by the OECD, IMF, and European Commission include raising productivity through digitalisation, accelerating immigration of skilled workers (to offset demographic decline projecting a 7M worker shortfall by 2040), labour market deregulation, and public administration modernisation [oecd-survey-germany-2025] [imf-art4-2025]. Politically possible reforms are more limited: the coalition agreement reflects meaningful compromises on migration (tightened family reunification) and climate (industrial electricity price relief), but does not include politically contentious labour market restructuring or pension reform; the SPD''s presence in the coalition blocks significant reductions to social expenditure that would be required to fully close the structural deficit trajectory modelled by the EC [ec-forecast-germany-nov2025] [coalition-agreement-2025]. The Mittelstand (mid-size SME backbone) faces acute competitiveness pressure from energy costs and US tariffs but lacks the direct political access of large corporates, creating a politically under-represented constituency whose concerns are increasingly channelled through AfD protest voting [oecd-survey-germany-2025] [iwkoeln-us-tariffs-autos-2025].'
+economy_politicalEconomy_fr: 'Les bénéficiaires du modèle économique actuel de l''Allemagne sont concentrés dans le complexe industriel exportateur — constructeurs automobiles OEM (Volkswagen, BMW, Mercedes-Benz), grands producteurs chimiques et pharmaceutiques (BASF, Bayer), fabricants de machines de précision et secteur des services financiers qui intermédient leurs flux de capitaux. Ces acteurs ont des liens directs forts avec le partenaire de coalition CDU/CSU et soutiennent globalement l''orientation du gouvernement Merz axée sur l''offre, y compris les engagements de réforme de l''impôt sur les sociétés et les discussions sur le subventionnement du prix de l''électricité industrielle [coalition-agreement-2025]. Le Sondervermögen de 500 Mds€ crée une aubaine de marchés publics de construction et de défense sur une décennie pour le Mittelstand et les grands contractants, ce qui génère une forte adhésion des parties prenantes à l''agenda de réforme budgétaire [debt-brake-reform-2025] [bruegel-debt-brake-europe-2025]. Les réformes techniquement nécessaires identifiées par l''OCDE, le FMI et la Commission européenne comprennent l''amélioration de la productivité par la numérisation, l''accélération de l''immigration de travailleurs qualifiés (pour compenser le déclin démographique projetant un déficit de 7 millions de travailleurs d''ici 2040), la déréglementation du marché du travail et la modernisation de l''administration publique [oecd-survey-germany-2025] [imf-art4-2025]. Les réformes politiquement réalisables sont plus limitées : l''accord de coalition reflète des compromis significatifs sur la migration et le climat, mais n''inclut pas de restructuration politiquement sensible du marché du travail ni de réforme des retraites ; la présence du SPD dans la coalition bloque les réductions significatives des dépenses sociales qui seraient nécessaires pour combler totalement la trajectoire du déficit structurel [ec-forecast-germany-nov2025] [coalition-agreement-2025]. Le Mittelstand fait face à une pression de compétitivité aiguë liée aux coûts énergétiques et aux droits de douane américains mais manque d''accès politique direct comparé aux grandes entreprises, créant une circonscription politiquement sous-représentée dont les préoccupations sont de plus en plus canalisées via le vote protestataire de l''AfD [oecd-survey-germany-2025] [iwkoeln-us-tariffs-autos-2025].'
+security_internal_en: 'Germany faces no domestic insurgency or organised armed groups. Organised crime is present (primarily transnational networks: Albanian, Turkish, and Arab clan structures active in narcotics, money laundering, and extortion) but does not threaten state authority or territorial control; the WJP Rule of Law Index scores Germany''s criminal justice and order at high levels nationally [wjp-germany-2025]. Communal violence has not crossed the threshold of systemic risk; protest activity is elevated around migration and cost-of-living issues but remains overwhelmingly non-violent [idea-germany-tracker]. The terrorism threat level is elevated: the CTC Sentinel (West Point) documents nine executed Islamist terrorist attacks in Germany between 2020 and May 2025, plus approximately 20 thwarted plots, with threat intensity rising post-October 7, 2023, driven by younger online-radicalised perpetrators and softer target selection (markets, transport hubs) [ctc-islamist-terror-germany-2025]. The hybrid security threat from Russia is documented: ACLED records 40+ suspicious drone overflights over German territory in October 2025 alone, forcing airport and airspace closures; suspected sabotage of rail and communications infrastructure has been attributed to state-adjacent Russian actors [acled-europe-dec2025]. The Bundeswehr, currently at 184,194 active personnel (end-2025), is expanding under a new military strategy unveiled April 2026 that targets 260,000 active troops by the mid-2030s and 460,000 total (including reserves) — the most ambitious build-up since reunification, funded by 2.3% of GDP (€114B) in 2025 military expenditure, with a government-approved defence budget of €62.4B for FY2025 and a stated target of 3.5% of GDP by 2029 [sipri-milex-2025] [bundeswehr-strategy-2026] [bundesfinanzministerium-budget-2025]. Civil-military relations are mature; military loyalty to civilian democratic authority is structural and unchallenged [bundeswehr-strategy-2026]. Borders are managed within the Schengen framework; the Merz government tightened migration and asylum processing rules under the May 2025 coalition agreement, with controls reinforced at land borders — a significant policy shift from the Scholz era [coalition-agreement-2025].'
+security_internal_fr: 'L''Allemagne ne fait face à aucune insurrection intérieure ni aucun groupe armé organisé. La criminalité organisée est présente (principalement des réseaux transnationaux : structures de clans albanais, turcs et arabes actifs dans le trafic de stupéfiants, le blanchiment d''argent et l''extorsion) mais ne menace pas l''autorité de l''État ni le contrôle territorial ; l''Indice de l''état de droit du WJP attribue à la justice pénale et à l''ordre allemands des niveaux élevés à l''échelle nationale [wjp-germany-2025]. La violence intercommunautaire n''a pas franchi le seuil du risque systémique ; l''activité protestataire est élevée autour des questions migratoires et du coût de la vie mais reste dans l''ensemble non violente [idea-germany-tracker]. Le niveau de menace terroriste est élevé : le CTC Sentinel (West Point) documente neuf attaques terroristes islamistes exécutées en Allemagne entre 2020 et mai 2025, plus environ 20 complots déjoués, avec une intensification de la menace depuis le 7 octobre 2023 [ctc-islamist-terror-germany-2025]. La menace hybride russe est documentée : l''ACLED enregistre plus de 40 survols suspects de drones sur le territoire allemand en octobre 2025 seulement, entraînant des fermetures d''aéroports et d''espaces aériens ; des actes de sabotage présumés contre des infrastructures ferroviaires et de communication ont été attribués à des acteurs proches de l''État russe [acled-europe-dec2025]. La Bundeswehr, actuellement à 184 194 personnels actifs (fin 2025), est en expansion selon une nouvelle stratégie militaire dévoilée en avril 2026 visant 260 000 soldats actifs au milieu des années 2030 et 460 000 au total (réservistes inclus), financée par 2,3 % du PIB (114 Mds$) en dépenses militaires en 2025, avec un budget de défense approuvé de 62,4 Mds€ pour l''exercice 2025 et un objectif déclaré de 3,5 % du PIB d''ici 2029 [sipri-milex-2025] [bundeswehr-strategy-2026] [bundesfinanzministerium-budget-2025]. Les relations civilo-militaires sont matures ; la loyauté militaire envers l''autorité démocratique civile est structurelle et incontestée [bundeswehr-strategy-2026]. Les frontières sont gérées dans le cadre Schengen ; le gouvernement Merz a resserré les règles de migration et de traitement des demandes d''asile dans l''accord de coalition de mai 2025, avec des contrôles renforcés aux frontières terrestres [coalition-agreement-2025].'
+security_diplomacy_en: 'Germany is a founding member of NATO (Article 5 collective defence commitment) and the European Union, and holds permanent membership in the G7, G20, OECD, and UN Security Council (non-permanent seat). The Franco-German bilateral is the load-bearing pillar of European security architecture: the September 2025 Franco-German Defence and Security Council produced joint commitments to deepened bilateral R&D, procurement coordination (MGCS tank programme), and a unified European strategic posture [franco-german-defence-council-2025]. Germany''s relationship with Poland has been improving under Chancellor Merz, reversing tensions of the Scholz era, and is increasingly significant for Eastern flank deterrence coordination [iss-eu-risks-2026]. The US relationship is transactional under the Trump administration: despite continued NATO membership and Article 5 commitment, US tariff policy (25% on automotive goods) creates a direct bilateral economic irritant, and the Trump administration''s public criticism of European defence burden-sharing has accelerated Germany''s autonomous rearmament trajectory [sipri-milex-2025] [coalition-agreement-2025]. China policy is undergoing active recalibration: Germany is pursuing a ''de-risking without decoupling'' strategy, with the Bundestag''s November 2025 China trade committee and moves to reduce rare earth dependency [reuters-china-derisking-2025]. The Russia relationship is effectively frozen since the 2022 Ukraine invasion; Germany is a major military and financial supporter of Ukraine and is expanding its Bundeswehr posture partly as a direct response to the Russia threat [bundeswehr-strategy-2026] [iss-eu-risks-2026]. Germany participates in all major multilateral fora and is a net contributor to EU institutions, the IMF, and the World Bank — a posture consistent with its post-war multilateralist identity [imf-art4-press-2025].'
+security_diplomacy_fr: 'L''Allemagne est membre fondateur de l''OTAN (engagement de défense collective à l''article 5) et de l''Union européenne, et détient une adhésion permanente au G7, au G20, à l''OCDE et au Conseil de sécurité de l''ONU (siège non permanent). La relation bilatérale franco-allemande est le pilier porteur de l''architecture de sécurité européenne : le Conseil de défense et de sécurité franco-allemand de septembre 2025 a produit des engagements communs en faveur d''une coopération approfondie en matière de R&D, de coordination des approvisionnements (programme de char MGCS) et d''une posture stratégique européenne unifiée [franco-german-defence-council-2025]. Les relations de l''Allemagne avec la Pologne se sont améliorées sous le chancelier Merz, inversant les tensions de l''ère Scholz, et revêtent une importance croissante pour la coordination de la dissuasion sur le flanc est [iss-eu-risks-2026]. La relation avec les États-Unis est transactionnelle sous l''administration Trump : malgré le maintien de l''adhésion à l''OTAN et de l''engagement à l''article 5, la politique tarifaire américaine (25 % sur les produits automobiles) crée un irritant économique bilatéral direct, et les critiques publiques de l''administration Trump sur le partage du fardeau de défense européen ont accéléré la trajectoire de réarmement autonome de l''Allemagne [sipri-milex-2025] [coalition-agreement-2025]. La politique envers la Chine est en cours de recalibrage actif : l''Allemagne poursuit une stratégie de « réduction des risques sans découplage », avec le comité China trade du Bundestag de novembre 2025 et des mesures pour réduire la dépendance aux terres rares [reuters-china-derisking-2025]. La relation avec la Russie est effectivement gelée depuis l''invasion de l''Ukraine en 2022 ; l''Allemagne est un soutien militaire et financier majeur de l''Ukraine et renforce sa posture de Bundeswehr en partie en réponse directe à la menace russe [bundeswehr-strategy-2026] [iss-eu-risks-2026].'
+actors_domestic_en: |-
+  [
+    {
+      "name": "Chancellor Friedrich Merz / CDU/CSU",
+      "interests": "Supply-side economic reform, rearmament, stricter migration control, European strategic autonomy, CDU/CSU electoral dominance",
+      "resources": "Executive office, CDU/CSU Bundestag caucus (208 seats), business elite support, media credibility as reform chancellor",
+      "constraints": "Dependent on SPD coalition partner for Bundestag majority; debt brake expansion creates medium-term fiscal ceiling; must manage US tariff tensions without alienating transatlantic relationship",
+      "likelyMoves": "Accelerate Bundeswehr build-up and Sondervermögen disbursement; pursue selective deregulation; harden migration policy further; maintain European leadership ambitions on defence",
+      "dealability": "High"
+    },
+    {
+      "name": "SPD (Social Democrats)",
+      "interests": "Social protection preservation, wage growth, worker codetermination, multilateralism, European social standards",
+      "resources": "120 Bundestag seats, trade union networks, organisational infrastructure in industrial Länder",
+      "constraints": "Junior coalition partner; coalition arithmetic forces concessions on migration and fiscal policy; party identity crisis following 2025 electoral collapse to 16.4% [bundeswahlleiter-2025]",
+      "likelyMoves": "Defend minimum wage and labour rights provisions; use coalition leverage to block deep welfare cuts; support Ukraine aid; resist pension reform rollbacks",
+      "dealability": "High"
+    },
+    {
+      "name": "Alternative für Deutschland (AfD)",
+      "interests": "Immigration restriction, EU scepticism, pro-Russia accommodation, dismantling climate policy, capitalising on economic Mittelstand grievances",
+      "resources": "152 Bundestag seats (20.8% vote share, 2025 [bundeswahlleiter-2025]); strong social media mobilisation; broad grassroots support in East Germany; court challenge to BfV designation ongoing [afd-court-injunction-dw-2026]",
+      "constraints": "Constitutionally excluded from coalition ('firewall' maintained by all mainstream parties); BfV extremist designation (legally contested but reputationally significant); constrained by Basic Law protections that limit authoritarian policy implementation",
+      "likelyMoves": "Continue destabilising opposition posture; escalate legal challenge to BfV designation; run maximally disruptive Bundestag procedural tactics; campaign on economic pain narrative in Mittelstand communities",
+      "dealability": "Low"
+    },
+    {
+      "name": "Federal Constitutional Court (Bundesverfassungsgericht)",
+      "interests": "Constitutional supremacy, institutional autonomy, rule of law, proportionality in state action against political parties",
+      "resources": "Final constitutional review authority; reinforced by December 2024 Basic Law amendment entrenching its independence [fcc-resilience-reform-2024]; high public legitimacy (most trusted institution in Germany consistently)",
+      "constraints": "Must balance state security interest in AfD designation with party rights; landmark party-ban cases require extremely high evidentiary threshold",
+      "likelyMoves": "Issue definitive ruling on BfV AfD designation (possibly requiring additional evidence); adjudicate constitutionality of Sondervermögen tranches; maintain posture as backstop against executive overreach",
+      "dealability": "High"
+    },
+    {
+      "name": "Deutsche Bundesbank",
+      "interests": "Price stability, fiscal discipline, financial system soundness, institutional independence within ECB framework",
+      "resources": "Institutional authority as Germany's central bank; AAA-grade fiscal credibility; highly credible public communications; seat on ECB Governing Council [bundesbank-monetary-feb2026]",
+      "constraints": "Monetary policy set at ECB level; limited direct fiscal policy leverage; must operate within ECB framework consensus",
+      "likelyMoves": "Continue signalling caution on fiscal expansion pace; advocate for ECB rate stability given re-accelerating HICP [bundesbank-hicp-2026]; publish regular fiscal sustainability warnings",
+      "dealability": "High"
+    },
+    {
+      "name": "German Industrial Lobby (BDI / VDA / DIHK)",
+      "interests": "Tariff relief, industrial electricity price subsidies, labour market flexibility, corporate tax reduction, China trade access maintenance, regulatory rollback",
+      "resources": "Direct lobbying access to CDU/CSU; media amplification; significant employment base; institutional presence in government advisory bodies",
+      "constraints": "Internally divided on China de-risking (large OEMs with China exposure vs. Mittelstand exposed to rare earth supply chains); climate investment commitments limit fossil fuel advocacy",
+      "likelyMoves": "Push for industrial electricity tariff subsidy finalisation in 2026; lobby intensively for US tariff negotiation; advocate for accelerated deregulation under coalition agreement",
+      "dealability": "High"
+    },
+    {
+      "name": "The Greens (Bündnis 90/Die Grünen)",
+      "interests": "Climate transition acceleration, rule of law, European federalism, development aid, Ukraine support",
+      "resources": "85 Bundestag seats; strong civil society networks; climate policy legacy from previous coalition; credibility on European issues",
+      "constraints": "In opposition; loss of government influence; under electoral pressure as AfD gains in former Green strongholds; climate coalition-agreement rollbacks limit issue leverage [coalition-agreement-2025]",
+      "likelyMoves": "Maintain constructive opposition on European and Ukraine issues; challenge coalition on energy transition delays; build issue coalition with SPD on social protections",
+      "dealability": "Medium"
+    }
+  ]
+actors_domestic_fr: |-
+  [
+    {
+      "name": "Chancelier Friedrich Merz / CDU/CSU",
+      "interests": "Réforme économique par l'offre, réarmement, contrôle accru de l'immigration, autonomie stratégique européenne, domination électorale de la CDU/CSU",
+      "resources": "Bureau du chancelier, groupe CDU/CSU au Bundestag (208 sièges), soutien des élites économiques, crédibilité médiatique en tant que chancelier réformateur",
+      "constraints": "Dépendant du partenaire de coalition SPD pour la majorité au Bundestag ; l'expansion du frein à l'endettement crée un plafond budgétaire à moyen terme ; doit gérer les tensions tarifaires américaines sans fragiliser la relation transatlantique",
+      "likelyMoves": "Accélérer le renforcement de la Bundeswehr et le décaissement du Sondervermögen ; poursuivre une déréglementation sélective ; durcir davantage la politique migratoire ; maintenir les ambitions de leadership européen en matière de défense",
+      "dealability": "High"
+    },
+    {
+      "name": "SPD (Parti social-démocrate)",
+      "interests": "Préservation de la protection sociale, croissance des salaires, codétermination des travailleurs, multilatéralisme, normes sociales européennes",
+      "resources": "120 sièges au Bundestag, réseaux syndicaux, infrastructure organisationnelle dans les Länder industriels",
+      "constraints": "Partenaire junior de la coalition ; l'arithmétique de la coalition impose des concessions sur la migration et la politique budgétaire ; crise d'identité du parti après l'effondrement électoral de 2025 à 16,4 % [bundeswahlleiter-2025]",
+      "likelyMoves": "Défendre le salaire minimum et les droits du travail ; utiliser le levier de la coalition pour bloquer les coupes profondes dans le système social ; soutenir l'aide à l'Ukraine ; résister aux reculs sur la réforme des retraites",
+      "dealability": "High"
+    },
+    {
+      "name": "Alternative für Deutschland (AfD)",
+      "interests": "Restriction de l'immigration, euroscepticisme, accommodation pro-russe, démantèlement de la politique climatique, capitalisation sur les griefs économiques du Mittelstand",
+      "resources": "152 sièges au Bundestag (20,8 % des voix, 2025 [bundeswahlleiter-2025]) ; forte mobilisation sur les réseaux sociaux ; large soutien de terrain en Allemagne de l'Est ; recours judiciaire contre la désignation du BfV en cours [afd-court-injunction-dw-2026]",
+      "constraints": "Constitutionnellement exclu de la coalition (« pare-feu » maintenu par tous les partis de l'établissement) ; désignation extrémiste du BfV (contestée judiciairement mais significative sur le plan réputationnel) ; contraint par les protections de la Loi fondamentale qui limitent la mise en œuvre de politiques autoritaires",
+      "likelyMoves": "Poursuivre une posture d'opposition déstabilisatrice ; intensifier le recours judiciaire contre la désignation du BfV ; mener des tactiques procédurales maximalement perturbatrices au Bundestag ; alimenter le récit de la douleur économique dans les communautés du Mittelstand",
+      "dealability": "Low"
+    },
+    {
+      "name": "Cour constitutionnelle fédérale (Bundesverfassungsgericht)",
+      "interests": "Suprématie constitutionnelle, autonomie institutionnelle, état de droit, proportionnalité de l'action de l'État contre les partis politiques",
+      "resources": "Autorité de révision constitutionnelle finale ; renforcée par l'amendement à la Loi fondamentale de décembre 2024 ancrant son indépendance [fcc-resilience-reform-2024] ; haute légitimité publique (institution la plus fiable en Allemagne de façon constante)",
+      "constraints": "Doit équilibrer l'intérêt de sécurité de l'État dans la désignation AfD avec les droits du parti ; les affaires d'interdiction de parti emblématiques exigent un seuil de preuve extrêmement élevé",
+      "likelyMoves": "Rendre une décision définitive sur la désignation AfD par le BfV (nécessitant éventuellement des preuves supplémentaires) ; statuer sur la constitutionnalité des tranches du Sondervermögen ; maintenir une posture de dernier rempart contre l'empiétement exécutif",
+      "dealability": "High"
+    },
+    {
+      "name": "Deutsche Bundesbank",
+      "interests": "Stabilité des prix, discipline budgétaire, solidité du système financier, indépendance institutionnelle dans le cadre de la BCE",
+      "resources": "Autorité institutionnelle en tant que banque centrale d'Allemagne ; crédibilité budgétaire de niveau AAA ; communications publiques hautement crédibles ; siège au Conseil des gouverneurs de la BCE [bundesbank-monetary-feb2026]",
+      "constraints": "Politique monétaire fixée au niveau de la BCE ; levier limité sur la politique budgétaire directe ; doit opérer dans le consensus du cadre de la BCE",
+      "likelyMoves": "Continuer à signaler la prudence sur le rythme d'expansion budgétaire ; plaider pour la stabilité des taux de la BCE étant donné la ré-accélération de l'IPCH [bundesbank-hicp-2026] ; publier régulièrement des avertissements sur la soutenabilité budgétaire",
+      "dealability": "High"
+    },
+    {
+      "name": "Lobby industriel allemand (BDI / VDA / DIHK)",
+      "interests": "Allègement tarifaire, subventions au prix de l'électricité industrielle, flexibilité du marché du travail, réduction de l'impôt sur les sociétés, maintien de l'accès au marché chinois, dérèglementation",
+      "resources": "Accès direct au lobbying auprès de la CDU/CSU ; amplification médiatique ; base d'emploi significative ; présence institutionnelle dans les organes consultatifs gouvernementaux",
+      "constraints": "Divisé en interne sur la réduction des risques liés à la Chine (grands constructeurs automobiles exposés à la Chine vs. Mittelstand exposé aux chaînes d'approvisionnement en terres rares) ; les engagements d'investissement climatique limitent le plaidoyer en faveur des combustibles fossiles",
+      "likelyMoves": "Pousser à la finalisation des subventions tarifaires sur l'électricité industrielle en 2026 ; lobbyer intensivement pour la négociation tarifaire avec les États-Unis ; plaider pour une déréglementation accélérée dans le cadre de l'accord de coalition",
+      "dealability": "High"
+    },
+    {
+      "name": "Les Verts (Bündnis 90/Die Grünen)",
+      "interests": "Accélération de la transition climatique, état de droit, fédéralisme européen, aide au développement, soutien à l'Ukraine",
+      "resources": "85 sièges au Bundestag ; forts réseaux de la société civile ; héritage de politique climatique de la coalition précédente ; crédibilité sur les questions européennes",
+      "constraints": "Dans l'opposition ; perte d'influence gouvernementale ; sous pression électorale alors que l'AfD progresse dans d'anciens bastions Verts ; les reculs de l'accord de coalition sur le climat limitent le levier sur ce dossier [coalition-agreement-2025]",
+      "likelyMoves": "Maintenir une opposition constructive sur les questions européennes et ukrainiennes ; contester la coalition sur les retards dans la transition énergétique ; construire une coalition thématique avec le SPD sur les protections sociales",
+      "dealability": "Medium"
+    }
+  ]
+actors_external_en: |-
+  [
+    {
+      "name": "United States / Trump Administration",
+      "interests": "NATO burden-sharing, bilateral trade surplus reduction, US defence industry market access, transatlantic security architecture maintenance on US terms",
+      "resources": "NATO alliance leverage; tariff and market access tools (25% automotive tariff already in force [iwkoeln-us-tariffs-autos-2025]); intelligence sharing; security guarantee credibility",
+      "constraints": "US political cycle; NATO institutional dependencies constrain full unilateralism; domestic political limits on extended Europe engagement",
+      "likelyMoves": "Maintain automotive tariffs as negotiating leverage; demand higher German NATO spending (already partly satisfied); potentially use security guarantee credibility as bilateral bargaining chip",
+      "dealability": "Medium"
+    },
+    {
+      "name": "People's Republic of China",
+      "interests": "Preserve German market access (€251.8B bilateral trade 2025 [destatis-trade-node]); limit Germany's alignment with EU and US decoupling agenda; maintain rare earth leverage; access German industrial technology",
+      "resources": "Largest single trade partner; control of rare earth supply chains (~80% German import dependency [reuters-china-derisking-2025]); scale of domestic market as access incentive for German exporters; potential for investment restrictions",
+      "constraints": "German public opinion increasingly hostile; EU de-risking policy cohesion; Bundestag China committee creating institutional resistance [reuters-china-derisking-2025]",
+      "likelyMoves": "Selectively restrict rare earth exports to test German resolve; deepen automotive market penetration with Chinese EVs; use diplomatic channels to slow EU tariff actions on Chinese goods",
+      "dealability": "Medium"
+    },
+    {
+      "name": "France / Macron Government",
+      "interests": "Franco-German axis as engine of European strategic autonomy; joint defence industrial base; EU deepening; Ukraine support; shared nuclear deterrence framework development",
+      "resources": "EU co-leadership; nuclear deterrent; permanent UNSC seat; MGCS and FCAS joint programmes with Germany; September 2025 Defence Council joint commitments [franco-german-defence-council-2025]",
+      "constraints": "France's own domestic political fragility; MGCS procurement timeline slippage; divergent positions on EU fiscal rules and burden-sharing",
+      "likelyMoves": "Accelerate joint defence procurement; push for EU capital markets union as complement to Sondervermögen; co-lead European Ukraine support architecture",
+      "dealability": "High"
+    },
+    {
+      "name": "Russian Federation",
+      "interests": "Undermine NATO eastern flank cohesion; fracture German domestic consensus on Ukraine support; exploit AfD and energy cost channels for hybrid influence; prevent German rearmament normalisation",
+      "resources": "Hybrid operations capability (drones, sabotage, disinformation [acled-europe-dec2025]); AfD sympathetic framing useful for narrative amplification; residual gas dependency leverage (diminishing)",
+      "constraints": "Military tied down in Ukraine; economic sanctions; German public opinion overwhelmingly hostile; Bundeswehr expansion directly counters Russian threat calculus [sipri-milex-2025]",
+      "likelyMoves": "Intensify hybrid operations against German infrastructure; amplify AfD and anti-migration narratives in German information space; probe Eastern flank NATO responses",
+      "dealability": "Low"
+    },
+    {
+      "name": "IMF / European Commission",
+      "interests": "German fiscal consolidation over medium term; structural reform implementation; EU fiscal rule compliance; euro area stability",
+      "resources": "Article IV surveillance authority [imf-art4-2025]; EC Excessive Deficit Procedure trigger capacity; conditionality over EU funding streams; public recommendations with market-moving authority",
+      "constraints": "No direct enforcement over a AAA-rated solvent sovereign; political sensitivity of recommendations; Sondervermögen reform broadly endorsed as growth-positive",
+      "likelyMoves": "Continue flagging structural deficit trajectory; publish recommendations on pension and labour reform; monitor Sondervermögen spending efficiency; calibrate Excessive Deficit Procedure timing to 2026 fiscal data",
+      "dealability": "High"
+    }
+  ]
+actors_external_fr: |-
+  [
+    {
+      "name": "États-Unis / Administration Trump",
+      "interests": "Partage du fardeau de l'OTAN, réduction de l'excédent commercial bilatéral, accès au marché pour l'industrie de défense américaine, maintien de l'architecture de sécurité transatlantique selon les termes américains",
+      "resources": "Levier de l'alliance OTAN ; outils tarifaires et d'accès au marché (droit de douane de 25 % sur l'automobile déjà en vigueur [iwkoeln-us-tariffs-autos-2025]) ; partage du renseignement ; crédibilité de la garantie de sécurité",
+      "constraints": "Cycle politique américain ; les dépendances institutionnelles de l'OTAN contraignent l'unilatéralisme total ; limites politiques intérieures à l'engagement européen prolongé",
+      "likelyMoves": "Maintenir les droits de douane sur l'automobile comme levier de négociation ; exiger un renforcement des dépenses allemandes pour l'OTAN (en partie déjà satisfait) ; utiliser potentiellement la crédibilité de la garantie de sécurité comme monnaie d'échange bilatérale",
+      "dealability": "Medium"
+    },
+    {
+      "name": "République populaire de Chine",
+      "interests": "Préserver l'accès au marché allemand (commerce bilatéral de 251,8 Mds€ en 2025 [destatis-trade-node]) ; limiter l'alignement de l'Allemagne avec l'agenda de découplage de l'UE et des États-Unis ; maintenir le levier des terres rares ; accéder à la technologie industrielle allemande",
+      "resources": "Premier partenaire commercial ; contrôle des chaînes d'approvisionnement en terres rares (~80 % de la dépendance aux importations allemandes [reuters-china-derisking-2025]) ; l'ampleur du marché intérieur comme incitation d'accès pour les exportateurs allemands ; potentiel de restrictions aux investissements",
+      "constraints": "Opinion publique allemande de plus en plus hostile ; cohésion de la politique de réduction des risques de l'UE ; le comité Chine du Bundestag crée une résistance institutionnelle [reuters-china-derisking-2025]",
+      "likelyMoves": "Restreindre sélectivement les exportations de terres rares pour tester la résolution de l'Allemagne ; approfondir la pénétration du marché automobile avec des véhicules électriques chinois ; utiliser les canaux diplomatiques pour ralentir les actions tarifaires de l'UE contre les produits chinois",
+      "dealability": "Medium"
+    },
+    {
+      "name": "France / Gouvernement Macron",
+      "interests": "Axe franco-allemand comme moteur de l'autonomie stratégique européenne ; base industrielle de défense commune ; approfondissement de l'UE ; soutien à l'Ukraine ; développement d'un cadre commun de dissuasion nucléaire",
+      "resources": "Co-leadership de l'UE ; dissuasion nucléaire ; siège permanent au Conseil de sécurité de l'ONU ; programmes conjoints MGCS et SCAF avec l'Allemagne ; engagements communs du Conseil de défense de septembre 2025 [franco-german-defence-council-2025]",
+      "constraints": "Fragilité politique intérieure propre à la France ; glissement du calendrier de passation du marché MGCS ; positions divergentes sur les règles budgétaires de l'UE et le partage du fardeau",
+      "likelyMoves": "Accélérer les acquisitions de défense communes ; pousser pour l'union des marchés de capitaux de l'UE en complément du Sondervermögen ; co-piloter l'architecture européenne de soutien à l'Ukraine",
+      "dealability": "High"
+    },
+    {
+      "name": "Fédération de Russie",
+      "interests": "Saper la cohésion du flanc oriental de l'OTAN ; fracturer le consensus interne allemand sur le soutien à l'Ukraine ; exploiter les canaux de l'AfD et des coûts énergétiques pour une influence hybride ; empêcher la normalisation du réarmement allemand",
+      "resources": "Capacité d'opérations hybrides (drones, sabotage, désinformation [acled-europe-dec2025]) ; le cadrage sympathisant de l'AfD utile pour l'amplification des récits ; levier résiduel de dépendance au gaz (en diminution)",
+      "constraints": "Armée engagée en Ukraine ; sanctions économiques ; opinion publique allemande massivement hostile ; l'expansion de la Bundeswehr contrecarre directement le calcul de la menace russe [sipri-milex-2025]",
+      "likelyMoves": "Intensifier les opérations hybrides contre les infrastructures allemandes ; amplifier les récits AfD et anti-immigration dans l'espace informationnel allemand ; sonder les réponses de l'OTAN sur le flanc oriental",
+      "dealability": "Low"
+    },
+    {
+      "name": "FMI / Commission européenne",
+      "interests": "Consolidation budgétaire allemande à moyen terme ; mise en œuvre des réformes structurelles ; conformité aux règles budgétaires de l'UE ; stabilité de la zone euro",
+      "resources": "Autorité de surveillance de l'article IV [imf-art4-2025] ; capacité de déclenchement de la procédure de déficit excessif de la CE ; conditionnalité sur les flux de financement de l'UE ; recommandations publiques à fort impact sur les marchés",
+      "constraints": "Pas d'exécution directe sur un souverain solvable noté AAA ; sensibilité politique des recommandations ; la réforme du Sondervermögen largement approuvée comme positive pour la croissance",
+      "likelyMoves": "Continuer à signaler la trajectoire du déficit structurel ; publier des recommandations sur la réforme des retraites et du marché du travail ; surveiller l'efficacité des dépenses du Sondervermögen ; calibrer le calendrier de la procédure de déficit excessif selon les données budgétaires 2026",
+      "dealability": "High"
+    }
+  ]
+risks_en: |-
+  [
+    {
+      "title": "US Tariff Escalation — Industrial Recession Trigger",
+      "trigger": "Trump administration broadens 25% automotive tariff to cover machinery and chemicals, or imposes secondary tariffs on EU goods in response to EU countermeasures, in 2026",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "6–12 months",
+      "leadingIndicators": "US–EU trade negotiation breakdown; further falls in German export order books (PMI manufacturing sub-index); additional VDA/BDI profit warnings; Destatis export data showing sequential decline across product categories [iwkoeln-us-tariffs-autos-2025] [destatis-trade-2025]",
+      "mitigants": "Coalition government actively pursuing bilateral US negotiation; EU–US trade dialogue channels remain open; Sondervermögen infrastructure stimulus provides partial demand offset; currency competitiveness [coalition-agreement-2025]"
+    },
+    {
+      "title": "Energy Price Shock — Middle East Escalation",
+      "trigger": "Conflict escalation in the Middle East disrupting LNG supply chains or Strait of Hormuz transits, driving wholesale European gas and electricity prices above 2022 crisis levels",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "3–12 months",
+      "leadingIndicators": "TTF gas price (currently elevated [ifo-joint-forecast-spring2026]); IEA gas storage fill levels; tanker insurance premia; ISS conflict tracker for Strait of Hormuz [iss-eu-risks-2026]",
+      "mitigants": "Renewables now cover 55.3% of electricity [agora-energiewende-2025]; German gas storage network; EU energy solidarity mechanisms; coalition pledged industrial electricity price relief [coalition-agreement-2025]"
+    },
+    {
+      "title": "AfD Constitutional Crisis — BfV Designation Vacated",
+      "trigger": "Cologne administrative court or Federal Constitutional Court permanently vacates the BfV's 'proven extremist' designation of the AfD, restoring full party legal status and removing surveillance authorisations",
+      "probability": "Med",
+      "impact": "Med",
+      "timeHorizon": "6–18 months",
+      "leadingIndicators": "Cologne court procedural calendar; BfV supplementary evidence submissions; CDU/CSU internal signals on party ban petition; V-Dem and Freedom House mid-year democracy tracker updates [afd-court-injunction-dw-2026] [idea-germany-tracker]",
+      "mitigants": "Mainstream party firewall against AfD coalition entry remains; Federal Constitutional Court's reinforced independence [fcc-resilience-reform-2024]; AfD still constitutionally constrained by Basic Law even without BfV designation"
+    },
+    {
+      "title": "China De-risking Disruption — Rare Earth Supply Shock",
+      "trigger": "China imposes targeted rare earth export restrictions or quotas specifically on Germany/EU in retaliation for EU tariff actions on Chinese EVs or semiconductors, disrupting automotive and electronics production chains",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "6–24 months",
+      "leadingIndicators": "Chinese MOFCOM export licence announcements; German auto OEM inventory communications; Bundestag China committee proceedings; GTAI trade disruption alerts [reuters-china-derisking-2025] [destatis-trade-node]",
+      "mitigants": "Bundestag China committee accelerating supply chain diversification legislation; EU Critical Raw Materials Act stockpiling requirements; German industry strategic reserve programmes; IEA critical mineral monitoring [iea-germany-energy-2025]"
+    },
+    {
+      "title": "Russian Hybrid Escalation — Critical Infrastructure Attack",
+      "trigger": "Russia executes a major sabotage operation against German critical infrastructure (energy grids, telecommunications, rail, ports), causing significant economic disruption or civilian casualties",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "6–18 months",
+      "leadingIndicators": "ACLED drone overflight frequency (currently 40+ per month in peak periods [acled-europe-dec2025]); BfV counterintelligence alerts; NATO hybrid threat assessments; suspicious activity near critical infrastructure nodes [iss-eu-risks-2026]",
+      "mitigants": "Bundeswehr critical infrastructure protection mission expanded under April 2026 military strategy [bundeswehr-strategy-2026]; NATO Article 5 collective defence threshold provides deterrence; BfV and BND counterintelligence capabilities; EU hybrid threat response protocols"
+    },
+    {
+      "title": "Coalition Fracture — SPD Withdrawal or No-Confidence Vote",
+      "trigger": "Irreconcilable policy disagreement (e.g., pension reform rollback, NATO spending floor, or migration policy hardening) forces SPD to withdraw from coalition, triggering snap elections before 2029",
+      "probability": "Low",
+      "impact": "Med",
+      "timeHorizon": "12–36 months",
+      "leadingIndicators": "SPD internal congress votes rejecting coalition policy; Bundesrat blocking key coalition legislation; SPD polling below 10% triggering existential internal pressure; CDU/CSU unilateral policy announcements bypassing SPD [bundeswahlleiter-2025] [coalition-agreement-2025]",
+      "mitigants": "Both coalition partners have high electoral cost from early elections given AfD's strength; Bundestag constructive vote of no-confidence has high procedural bar; broad agreement on Sondervermögen and defence creates functional common ground"
+    },
+    {
+      "title": "Fiscal Overstretch — Sondervermögen Implementation Failure",
+      "trigger": "Bundesrechnungshof (Federal Audit Court) or Federal Constitutional Court challenges the constitutionality of specific Sondervermögen disbursements, or procurement/absorption capacity bottlenecks delay spending, undermining the counter-cyclical stimulus effect",
+      "probability": "Low",
+      "impact": "Med",
+      "timeHorizon": "12–24 months",
+      "leadingIndicators": "Bundesrechnungshof audit findings; construction sector capacity utilisation data; Destatis government capital expenditure quarterly releases; IMF and OECD fiscal monitoring [debt-brake-reform-2025] [bruegel-debt-brake-europe-2025] [imf-art4-2025]",
+      "mitigants": "Constitutional amendment was carefully drafted to withstand judicial review [debt-brake-reform-2025]; phased disbursement mechanisms reduce implementation risk; strong domestic construction and defence industrial base; AAA credit rating maintains favourable borrowing conditions [spglobal-rating-germany-2026]"
+    },
+    {
+      "title": "Islamist Terrorism — Mass Casualty Attack",
+      "trigger": "Successful large-scale Islamist terrorist attack in Germany (analogous to 2015–16 wave), likely vehicle, knife, or improvised explosive targeting a crowded public event, causing mass casualties and political shockwave",
+      "probability": "Med",
+      "impact": "Med",
+      "timeHorizon": "0–18 months",
+      "leadingIndicators": "BKA threat level announcements; Europol cross-border surveillance alerts; social media radicalisation monitoring data; returnee tracking from conflict zones [ctc-islamist-terror-germany-2025]",
+      "mitigants": "BfV and BKA counterterrorism units have thwarted approximately 20 plots since 2020 [ctc-islamist-terror-germany-2025]; EU information-sharing frameworks; migration rule tightening under Merz coalition reduces asylum abuse vector [coalition-agreement-2025]"
+    },
+    {
+      "title": "Structural Deindustrialisation — Industrial Base Hollowing",
+      "trigger": "Convergence of US tariffs, Chinese competition in third markets, and structurally elevated energy costs triggers a wave of automotive/industrial facility closures and relocation decisions, causing sustained unemployment rises and fiscal deterioration",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "12–36 months",
+      "leadingIndicators": "Major OEM or Mittelstand plant closure announcements; manufacturing PMI sustained below 45; Bundesagentur für Arbeit weekly unemployment filings trending upward [bundesagentur-labour-dec2025]; IW Köln quarterly export tracking [iwkoeln-us-tariffs-autos-2025]",
+      "mitigants": "Sondervermögen infrastructure investment creates domestic demand buffer; coalition industrial policy measures; IEA-tracked energy diversification reduces cost headwinds over time [iea-germany-energy-2025]; German wage moderation preserves some cost competitiveness [bundesbank-monetary-feb2026]"
+    }
+  ]
+risks_fr: |-
+  [
+    {
+      "title": "Escalade tarifaire américaine — Déclencheur de récession industrielle",
+      "trigger": "L'administration Trump étend le droit de douane de 25 % sur l'automobile à la mécanique et à la chimie, ou impose des droits secondaires sur les produits de l'UE en réponse aux contre-mesures européennes, en 2026",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "6–12 mois",
+      "leadingIndicators": "Rupture des négociations commerciales États-Unis–UE ; nouvelles baisses des carnets de commandes à l'exportation allemands (sous-indice PMI manufacturier) ; avertissements supplémentaires sur les résultats du VDA/BDI ; données Destatis montrant un déclin séquentiel sur toutes les catégories de produits [iwkoeln-us-tariffs-autos-2025] [destatis-trade-2025]",
+      "mitigants": "Le gouvernement de coalition poursuit activement une négociation bilatérale avec les États-Unis ; les canaux de dialogue commercial UE–États-Unis restent ouverts ; le stimulus d'infrastructure du Sondervermögen apporte un amortissement partiel de la demande ; compétitivité monétaire [coalition-agreement-2025]"
+    },
+    {
+      "title": "Choc des prix de l'énergie — Escalade au Moyen-Orient",
+      "trigger": "Une escalade du conflit au Moyen-Orient perturbe les chaînes d'approvisionnement en GNL ou les transits par le détroit d'Ormuz, faisant monter les prix de gros du gaz et de l'électricité européens au-dessus des niveaux de crise de 2022",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "3–12 mois",
+      "leadingIndicators": "Prix du gaz TTF (actuellement élevé [ifo-joint-forecast-spring2026]) ; niveaux de remplissage des stocks de gaz de l'AIE ; primes d'assurance des pétroliers ; suivi des conflits ISS pour le détroit d'Ormuz [iss-eu-risks-2026]",
+      "mitigants": "Les renouvelables couvrent désormais 55,3 % de l'électricité [agora-energiewende-2025] ; réseau de stockage de gaz allemand ; mécanismes de solidarité énergétique de l'UE ; la coalition a promis un allègement du prix de l'électricité industrielle [coalition-agreement-2025]"
+    },
+    {
+      "title": "Crise constitutionnelle AfD — Désignation BfV annulée",
+      "trigger": "Le tribunal administratif de Cologne ou la Cour constitutionnelle fédérale annule définitivement la désignation d'« extrémiste avéré » de l'AfD par le BfV, restaurant le statut juridique complet du parti et supprimant les autorisations de surveillance",
+      "probability": "Med",
+      "impact": "Med",
+      "timeHorizon": "6–18 mois",
+      "leadingIndicators": "Calendrier procédural du tribunal de Cologne ; dépôts de preuves supplémentaires du BfV ; signaux internes CDU/CSU sur la pétition d'interdiction du parti ; mises à jour du tracker démocratique de mi-année V-Dem et Freedom House [afd-court-injunction-dw-2026] [idea-germany-tracker]",
+      "mitigants": "Le pare-feu des partis de l'établissement contre l'entrée de l'AfD en coalition reste en place ; indépendance renforcée de la Cour constitutionnelle fédérale [fcc-resilience-reform-2024] ; l'AfD reste constitutionnellement contrainte par la Loi fondamentale même sans désignation BfV"
+    },
+    {
+      "title": "Perturbation du découplage avec la Chine — Choc d'approvisionnement en terres rares",
+      "trigger": "La Chine impose des restrictions ou quotas ciblés sur les exportations de terres rares spécifiquement vers l'Allemagne/l'UE en représailles aux actions tarifaires européennes sur les véhicules électriques ou semi-conducteurs chinois, perturbant les chaînes de production automobile et électronique",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "6–24 mois",
+      "leadingIndicators": "Annonces de licences d'exportation du MOFCOM chinois ; communications des constructeurs automobiles allemands sur les stocks ; travaux du comité Chine du Bundestag ; alertes de perturbation commerciale de la GTAI [reuters-china-derisking-2025] [destatis-trade-node]",
+      "mitigants": "Le comité Chine du Bundestag accélère la législation sur la diversification des chaînes d'approvisionnement ; obligations de stockage de la loi européenne sur les matières premières critiques ; programmes de réserves stratégiques de l'industrie allemande ; suivi des minéraux critiques de l'AIE [iea-germany-energy-2025]"
+    },
+    {
+      "title": "Escalade hybride russe — Attaque contre les infrastructures critiques",
+      "trigger": "La Russie exécute une opération de sabotage majeure contre les infrastructures critiques allemandes (réseaux d'énergie, télécommunications, ferroviaire, ports), causant des perturbations économiques significatives ou des victimes civiles",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "6–18 mois",
+      "leadingIndicators": "Fréquence des survols de drones ACLED (actuellement 40+ par mois aux périodes de pointe [acled-europe-dec2025]) ; alertes de contre-espionnage du BfV ; évaluations de menaces hybrides de l'OTAN ; activité suspecte à proximité des nœuds d'infrastructures critiques [iss-eu-risks-2026]",
+      "mitigants": "Mission de protection des infrastructures critiques de la Bundeswehr élargie dans le cadre de la stratégie militaire d'avril 2026 [bundeswehr-strategy-2026] ; le seuil de défense collective de l'article 5 de l'OTAN offre une dissuasion ; capacités de contre-espionnage du BfV et du BND ; protocoles de réponse aux menaces hybrides de l'UE"
+    },
+    {
+      "title": "Fracture de la coalition — Retrait du SPD ou motion de censure",
+      "trigger": "Un désaccord politique irréconciliable (p. ex. recul sur la réforme des retraites, plancher de dépenses OTAN ou durcissement de la politique migratoire) contraint le SPD à se retirer de la coalition, déclenchant des élections anticipées avant 2029",
+      "probability": "Low",
+      "impact": "Med",
+      "timeHorizon": "12–36 mois",
+      "leadingIndicators": "Votes du congrès interne du SPD rejetant la politique de coalition ; Bundesrat bloquant la législation clé de la coalition ; sondages SPD sous 10 % déclenchant une pression interne existentielle ; annonces unilatérales de politique CDU/CSU contournant le SPD [bundeswahlleiter-2025] [coalition-agreement-2025]",
+      "mitigants": "Les deux partenaires de la coalition supportent un coût électoral élevé en cas d'élections anticipées étant donné la force de l'AfD ; la motion de censure constructive au Bundestag a un seuil procédural élevé ; le large accord sur le Sondervermögen et la défense crée un socle commun fonctionnel"
+    },
+    {
+      "title": "Dérapage budgétaire — Échec de la mise en œuvre du Sondervermögen",
+      "trigger": "Le Bundesrechnungshof (Cour des comptes fédérale) ou la Cour constitutionnelle fédérale conteste la constitutionnalité de décaissements spécifiques du Sondervermögen, ou des goulots d'étranglement dans la capacité de passation de marchés retardent les dépenses, compromettant l'effet de stimulus contra-cyclique",
+      "probability": "Low",
+      "impact": "Med",
+      "timeHorizon": "12–24 mois",
+      "leadingIndicators": "Conclusions d'audit du Bundesrechnungshof ; données d'utilisation de la capacité du secteur de la construction ; publications trimestrielles des dépenses d'investissement public Destatis ; suivi budgétaire du FMI et de l'OCDE [debt-brake-reform-2025] [bruegel-debt-brake-europe-2025] [imf-art4-2025]",
+      "mitigants": "L'amendement constitutionnel a été soigneusement rédigé pour résister au contrôle judiciaire [debt-brake-reform-2025] ; les mécanismes de décaissement par phases réduisent le risque de mise en œuvre ; base industrielle de défense et de construction nationale solide ; la notation de crédit AAA maintient des conditions d'emprunt favorables [spglobal-rating-germany-2026]"
+    },
+    {
+      "title": "Terrorisme islamiste — Attentat de masse",
+      "trigger": "Réussite d'un attentat terroriste islamiste de grande ampleur en Allemagne (analogue à la vague 2015–16), probablement avec un véhicule, couteau ou engin explosif improvisé ciblant un lieu public bondé, causant des victimes de masse et un choc politique",
+      "probability": "Med",
+      "impact": "Med",
+      "timeHorizon": "0–18 mois",
+      "leadingIndicators": "Annonces du niveau de menace du BKA ; alertes de surveillance transfrontalière d'Europol ; données de surveillance de la radicalisation sur les réseaux sociaux ; suivi des retours de zones de conflit [ctc-islamist-terror-germany-2025]",
+      "mitigants": "Les unités antiterroristes du BfV et du BKA ont déjoué environ 20 complots depuis 2020 [ctc-islamist-terror-germany-2025] ; cadres de partage d'information de l'UE ; le durcissement des règles migratoires dans le cadre de la coalition Merz réduit le vecteur d'abus du droit d'asile [coalition-agreement-2025]"
+    },
+    {
+      "title": "Désindustrialisation structurelle — Délitement de la base industrielle",
+      "trigger": "La convergence des droits de douane américains, de la concurrence chinoise sur les marchés tiers et de coûts énergétiques structurellement élevés déclenche une vague de fermetures et de délocalisations d'usines automobile/industrielles, entraînant une hausse durable du chômage et une détérioration budgétaire",
+      "probability": "Med",
+      "impact": "High",
+      "timeHorizon": "12–36 mois",
+      "leadingIndicators": "Annonces de fermeture d'usines de grands constructeurs ou du Mittelstand ; PMI manufacturier maintenu sous 45 ; inscriptions hebdomadaires au chômage à la Bundesagentur für Arbeit en hausse [bundesagentur-labour-dec2025] ; suivi trimestriel des exportations d'IW Köln [iwkoeln-us-tariffs-autos-2025]",
+      "mitigants": "L'investissement en infrastructure du Sondervermögen crée un coussin de demande intérieure ; mesures de politique industrielle de la coalition ; la diversification énergétique suivie par l'AIE réduit les vents contraires sur les coûts à terme [iea-germany-energy-2025] ; la modération salariale allemande préserve une certaine compétitivité-coût [bundesbank-monetary-feb2026]"
+    }
+  ]
+sources: |-
+  [
+    {
+      "id": "imf-art4-2025",
+      "name": "IMF Staff Country Report: Germany 2025 Article IV Consultation",
+      "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1deuea2026001.pdf",
+      "desc": "IMF's comprehensive 92-page annual assessment of the German economy, providing GDP growth projections, fiscal deficit analysis, monetary policy assessment, structural reform recommendations, and external vulnerability data for Germany as of early 2026.",
+      "publicationDate": "2026-02-12",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "imf-art4-press-2025",
+      "name": "IMF Executive Board Concludes 2025 Article IV Consultation with Germany – Press Release",
+      "url": "https://www.imf.org/en/news/articles/2026/02/11/pr26042-germany-imf-executive-board-concludes-2025-article-iv-consultation",
+      "desc": "IMF Executive Board press release summarising key findings from the 2025 Article IV consultation with Germany, including growth outlook, fiscal position, and structural reform priorities.",
+      "publicationDate": "2026-02-11",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "destatis-gdp-2025",
+      "name": "Destatis Press Release: Gross Domestic Product 2025 (Germany)",
+      "url": "https://www.destatis.de/EN/Press/2026/01/PE26_017_811.html",
+      "desc": "Federal Statistical Office (Destatis) official flash estimate confirming 0.2% real GDP growth in 2025, with deficit ratio of 2.4% of GDP, government expenditure ratio of 50.3%, and sector-level growth breakdown for Germany.",
+      "publicationDate": "2026-01-14",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "destatis-gdp-q1-2026",
+      "name": "Destatis: Germany GDP Q1 2026 Flash Estimate and Annual Tables",
+      "url": "https://www.destatis.de/EN/Themes/Economy/National-Accounts-Domestic-Product/Tables/gdp-bubbles.html",
+      "desc": "Destatis official GDP data tables showing quarterly growth of 0.3% in Q1 2026 (0.5% YoY) and full-year 2025 revisions, providing the most current German national accounts data available.",
+      "publicationDate": "2026-04-29",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "destatis-trade-2025",
+      "name": "Destatis Press Release: German Foreign Trade Full Year 2025",
+      "url": "https://www.destatis.de/EN/Press/2026/02/PE26_042_51.html",
+      "desc": "Destatis official data showing Germany exported €1,562.9B and imported €1,362.5B of goods in 2025, with China as the largest trading partner (€251.8B turnover), trade surplus of €200.4B, and exports up 0.9% YoY.",
+      "publicationDate": "2026-02-05",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "destatis-trade-node",
+      "name": "Destatis: Foreign Trade – Germany's Top Trading Partners (Live Data Page)",
+      "url": "https://www.destatis.de/EN/Themes/Economy/Foreign-Trade/_node.html",
+      "desc": "Destatis foreign trade thematic page providing current and historical bilateral trade data, confirming China's return as Germany's largest trading partner in 2025 and monthly export/import developments into Q1 2026.",
+      "publicationDate": "2026-04-07",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "destatis-inflation-2025",
+      "name": "Destatis Press Release: Inflation Rate at +2.2% in 2025",
+      "url": "https://www.destatis.de/EN/Press/2026/01/PE26_019_611.html",
+      "desc": "Official Destatis release confirming Germany's annual average CPI inflation at 2.2% in 2025, core inflation at 2.8%, and December 2025 monthly rate of 1.8%, as the primary source for German price stability data.",
+      "publicationDate": "2026-01-15",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bundesbank-debt-2025",
+      "name": "Deutsche Bundesbank: German General Government Debt 2025",
+      "url": "https://www.bundesbank.de/en/press/press-releases/deutsche-staatsschulden-992720",
+      "desc": "Bundesbank official press release reporting Germany's general government debt rose to €2.84 trillion in 2025, with debt-to-GDP ratio increasing from 62.2% to 63.5%, providing authoritative sovereign debt stock and composition data.",
+      "publicationDate": "2026-03-30",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bundesbank-monetary-feb2026",
+      "name": "Deutsche Bundesbank Monthly Report – Monetary Policy and Banking Business (February 2026)",
+      "url": "https://publikationen.bundesbank.de/publikationen-en/reports-studies/monthly-reports/monthly-report-february-2026-988816",
+      "desc": "Bundesbank monthly report detailing ECB deposit rate held at 2.00% since June 2025, inflation outlook for 2026–2028, German economic recovery trajectory, labour market trends, and wage dynamics.",
+      "publicationDate": "2026-02-18",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bundesbank-hicp-2026",
+      "name": "Deutsche Bundesbank: Harmonised Index of Consumer Prices – Germany (April 2026)",
+      "url": "https://www.bundesbank.de/en/statistics/economic-activity-and-prices/harmonised-consumer-prices/harmonised-index-of-consumer-prices",
+      "desc": "Bundesbank HICP data series showing Germany's year-on-year inflation at 2.9% in April 2026 (from 2.8% in March), with core inflation declining to 2.3%, for monetary policy and ECB-target alignment analysis.",
+      "publicationDate": "2026-05-01",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "oecd-survey-germany-2025",
+      "name": "OECD Economic Surveys: Germany 2025",
+      "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-germany-2025_39d62aed-en/full-report.html",
+      "desc": "OECD's comprehensive structural and macroeconomic survey of Germany covering fiscal reform, productivity growth gaps, structural reform agenda (0.8pp potential GDP uplift), labour market, and competitiveness challenges; reviewed April 2025.",
+      "publicationDate": "2025-06-11",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "ec-forecast-germany-nov2025",
+      "name": "European Commission: Economic Forecast for Germany (Autumn 2025)",
+      "url": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/germany/economic-forecast-germany_en",
+      "desc": "European Commission forecast table providing GDP growth (0.2% in 2025, 1.2% in 2026/2027), inflation (2.3%), unemployment (3.6%), government deficit (−3.1% in 2025, −4.0% in 2026), and gross debt (63.5% then 65.2% of GDP) projections for Germany.",
+      "publicationDate": "2025-11-16",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "ifo-joint-forecast-spring2026",
+      "name": "Joint Economic Forecast Spring 2026 – German Economic Institutes",
+      "url": "https://www.ifo.de/en/facts/2026-04-01/joint-economic-forecast-spring-2026-energy-price-shock-overshadows-fiscal-stimulus",
+      "desc": "Consortium forecast (ifo, DIW, IfW Kiel, IWH, RWI) projecting 0.6% GDP growth in 2026 and 0.9% in 2027, with inflation rising to 2.8–2.9% due to energy price shock from the Iran war, representing the authoritative German institute consensus.",
+      "publicationDate": "2026-03-31",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "spglobal-rating-germany-2026",
+      "name": "S&P Global Ratings: Germany 'AAA/A-1+' Ratings Affirmed, Outlook Stable (April 2026)",
+      "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3551682",
+      "desc": "S&P Global affirmed Germany's unsolicited AAA/A-1+ sovereign credit ratings with stable outlook on 24 April 2026, providing the most current official credit quality and debt sustainability assessment.",
+      "publicationDate": "2026-04-23",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "fitch-germany-rating-2026",
+      "name": "Fitch Ratings: Germany Sovereign Credit Ratings (January 2026)",
+      "url": "https://www.fitchratings.com/entity/germany-80442196",
+      "desc": "Fitch Ratings entity page showing Germany's AAA long-term issuer default rating and F1+ short-term rating, both with stable outlook, last reviewed January 2026; used alongside Moody's Aaa and S&P AAA for tri-agency sovereign credit consensus.",
+      "publicationDate": "2026-01-09",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bundeswahlleiter-2025",
+      "name": "Federal Returning Officer: Official Results of the 2025 German Federal Election",
+      "url": "https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/ergebnisse/bund-99.html",
+      "desc": "Official German Federal Returning Officer data providing authoritative final results of the 23 February 2025 Bundestag election: CDU/CSU 28.5% (208 seats), AfD 20.8% (152 seats), SPD 16.4% (120 seats), Greens 11.6% (85 seats).",
+      "publicationDate": "2025-02-23",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "coalition-agreement-2025",
+      "name": "CDU/CSU–SPD Coalition Agreement 2025: 'Responsibility for Germany' – Clean Energy Wire Analysis",
+      "url": "https://www.cleanenergywire.org/factsheets/what-germanys-aspiring-coalition-government-agreement-means-climate-and-energy",
+      "desc": "Detailed factsheet on the 140-page CDU/CSU–SPD coalition agreement signed 5 May 2025 and sworn in 6 May 2025, covering Merz government's economic, defence spending (3.5% of GDP by 2029), energy, migration, and fiscal policy priorities.",
+      "publicationDate": "2025-04-21",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "debt-brake-reform-2025",
+      "name": "DLA Piper: Germany's Turning Point for Infrastructure and Defense Funding – Debt Brake Reform March 2025",
+      "url": "https://www.dlapiper.com/insights/publications/2025/03/germany-s-turning-point-for-infrastructure-and-defense-funding",
+      "desc": "Legal analysis of the 18–21 March 2025 constitutional amendment: defence spending above 1% of GDP exempted from the debt brake (Schuldenbremse); €500B infrastructure Sondervermögen created; states permitted 0.35% of GDP annual borrowing.",
+      "publicationDate": "2025-03-20",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bundesfinanzministerium-budget-2025",
+      "name": "German Federal Ministry of Finance: Government Draft 2025 Federal Budget",
+      "url": "https://www.bundesfinanzministerium.de/Content/EN/Pressemitteilungen/2025/2025-06-24-2-government-draft-2025-federal-budget.html",
+      "desc": "Official German government press release confirming €62.4B defence budget for 2025, combined defence spending of 2.4% of GDP under NATO definition, and stated target of 3.5% of GDP by 2029, alongside infrastructure and climate fund details.",
+      "publicationDate": "2025-06-23",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "sipri-milex-2025",
+      "name": "SIPRI: Trends in World Military Expenditure 2025",
+      "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+      "desc": "SIPRI's authoritative primary data report showing Germany's military expenditure reached $114B in 2025 (+24% YoY), exceeding 2.0% of GDP for the first time since 1990 (at 2.3%), making it the 4th largest military spender globally and the largest in Europe.",
+      "publicationDate": "2026-04-27",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bundeswehr-strategy-2026",
+      "name": "Defense News: Germany Unveils Strategy for Becoming Europe's Strongest Military by 2039",
+      "url": "https://www.defensenews.com/global/europe/2026/04/22/germany-unveils-strategy-for-becoming-europes-strongest-military-by-2039/",
+      "desc": "Primary reporting on Germany's first standalone military strategy unveiled April 2026 by Defence Minister Pistorius, targeting 460,000 total personnel (184,194 active as of end-2025 to 260,000 by mid-2030s), three-phase buildup to 2039, and new reserve strategy.",
+      "publicationDate": "2026-04-22",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "freedom-house-germany-2025",
+      "name": "Freedom House: Freedom in the World 2025 – Germany Country Profile",
+      "url": "https://freedomhouse.org/country/germany",
+      "desc": "Freedom House annual assessment scoring Germany 94/100 (Free) in 2025, with Political Rights 39/40 and Civil Liberties 55/60, tracking democratic resilience and challenges from far-right populism and migration pressures.",
+      "publicationDate": "2025-02-25",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "wjp-germany-2025",
+      "name": "World Justice Project Rule of Law Index 2025 – Germany",
+      "url": "https://worldjusticeproject.org/rule-of-law-index/country/Germany",
+      "desc": "WJP Rule of Law Index 2025 scoring Germany 0.83 overall (5th globally), with factor-level scores on constraints on government powers, absence of corruption, civil justice, criminal justice, and open government for comprehensive rule-of-law benchmarking.",
+      "publicationDate": "2025-10-28",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "transparency-cpi-2025",
+      "name": "Transparency International: Corruption Perceptions Index 2025 – Germany",
+      "url": "https://www.transparency.org/en/countries/germany",
+      "desc": "Transparency International CPI 2025 scoring Germany 77/100 (+2 vs prior year), ranking 10th of 182 countries globally, providing the authoritative primary measure of perceived public-sector corruption for governance risk analysis.",
+      "publicationDate": "2026-02-10",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "vdem-report-2026",
+      "name": "V-Dem Institute: Democracy Report 2026",
+      "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+      "desc": "V-Dem's 2026 Democracy Report covering data through 2025, providing Germany's Liberal Democracy Index (0.83), Electoral Democracy index (0.78), and multidimensional democratic performance scores contextualised against global autocratization trends.",
+      "publicationDate": "2026-03-05",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "idea-germany-tracker",
+      "name": "International IDEA: Global State of Democracy Tracker – Germany",
+      "url": "https://www.idea.int/democracytracker/country/germany",
+      "desc": "International IDEA live democracy tracker monitoring Germany's political events including the AfD's BfV extremist classification (May 2025), court injunction (February 2026), Bundestag composition changes, and democratic performance indicators across all dimensions.",
+      "publicationDate": "2026-05-10",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bfv-afd-extremist-reuters-2025",
+      "name": "Reuters: German Spy Agency Brands Far-Right AfD as 'Extremist' (May 2025)",
+      "url": "https://www.reuters.com/world/europe/german-spy-agency-ranks-far-right-afd-extremist-2025-05-02/",
+      "desc": "Reuters factual report on the BfV domestic intelligence agency's May 2025 classification of the AfD as a 'proven right-wing extremist' entity based on a 1,100-page assessment, unlocking expanded surveillance powers and reigniting party-ban debate.",
+      "publicationDate": "2025-05-02",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "afd-court-injunction-dw-2026",
+      "name": "DW: German Intelligence Must Pause Extremist Label for AfD (February 2026)",
+      "url": "https://www.dw.com/en/german-intelligence-must-pause-extremist-label-for-afd/a-76140587",
+      "desc": "DW reporting on the Cologne administrative court's February 2026 emergency injunction ordering the BfV to pause the AfD 'extremist' designation pending judicial review, creating ongoing legal and political uncertainty central to domestic stability analysis.",
+      "publicationDate": "2026-02-26",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "fcc-resilience-reform-2024",
+      "name": "Eurac Research: The Resilience of the German Federal Constitutional Court – Basic Law Reform",
+      "url": "https://www.eurac.edu/en/blogs/eureka/the-resilience-of-the-german-federal-constitutional-court",
+      "desc": "Legal analysis of the December 2024 Basic Law amendment (passed 600-69 in Bundestag) constitutionalising the Federal Constitutional Court's autonomy and binding authority to safeguard judicial independence from political interference.",
+      "publicationDate": "2025-05-26",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "acled-europe-dec2025",
+      "name": "ACLED: Europe and Central Asia Overview – December 2025",
+      "url": "https://acleddata.com/update/europe-and-central-asia-overview-december-2025",
+      "desc": "ACLED monthly security event overview recording 40+ suspicious drone overflights in Germany in October 2025 (forcing airport closures), hybrid sabotage incidents, and protest-related violence data for Germany's internal security assessment.",
+      "publicationDate": "2025-12-07",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "ctc-islamist-terror-germany-2025",
+      "name": "CTC Sentinel: Evolution of the Islamist Terror Threat Landscape in Germany Since 2020",
+      "url": "https://ctc.westpoint.edu/the-evolution-of-the-islamist-terror-threat-landscape-in-germany-since-2020/",
+      "desc": "West Point CTC peer-reviewed analysis documenting 9 executed Islamist terrorist attacks and 20 thwarted plots in Germany (2020–May 2025), with threat evolution data on attack vectors, target shifts, and elevated threat levels post-October 7, 2023.",
+      "publicationDate": "2025-05-29",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "iss-eu-risks-2026",
+      "name": "EU Institute for Security Studies: Global Risks to the EU in 2026",
+      "url": "https://www.iss.europa.eu/publications/commentary/global-risks-eu-2026-what-are-main-conflict-threats-europe",
+      "desc": "ISS expert survey (January 2026) identifying Germany-relevant top security risks: critical infrastructure hybrid attack (highest probability and impact), Russia hybrid operations, US NATO security guarantee withdrawal, and China-Taiwan conflict escalation.",
+      "publicationDate": "2026-01-18",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Interpretation"
+    },
+    {
+      "id": "bundesagentur-labour-dec2025",
+      "name": "Federal Employment Agency: Labour Market Report December 2025",
+      "url": "https://www.arbeitsagentur.de/en/press/2026-01-job-market-in-december2025",
+      "desc": "Official Bundesagentur für Arbeit monthly report showing 2.908M unemployed (6.2% rate, BA definition; 3.7% ILO definition) in December 2025, with 1.033M on unemployment benefits, 101,000 higher YoY, confirming persistent labour market weakness.",
+      "publicationDate": "2026-01-06",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "reuters-china-derisking-2025",
+      "name": "Reuters: Germany Rethinks China Policy as Trade Squeeze Exposes Vulnerabilities (November 2025)",
+      "url": "https://www.reuters.com/world/china/germany-rethinks-china-policy-trade-squeeze-exposes-vulnerabilities-2025-11-13/",
+      "desc": "Reuters reporting on Germany's Bundestag establishing a specialist China trade committee in November 2025 following Chinese rare earth export curbs exposing ~80% import dependency; documents legislative moves toward strategic de-risking.",
+      "publicationDate": "2025-11-14",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "ecb-rate-june2025",
+      "name": "ECB Monetary Policy Decision – 5 June 2025 (Final Rate Cut to 2.00%)",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.mp250605~3b5f67d007.en.html",
+      "desc": "ECB official press release documenting the 25bp cut to the deposit facility rate to 2.00% on 5 June 2025 — the terminal rate of the current easing cycle — establishing the baseline monetary policy rate for Germany's borrowing cost and fiscal analysis.",
+      "publicationDate": "2025-06-05",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "agora-energiewende-2025",
+      "name": "Agora Energiewende: State of the Energy Transition in Germany – Annual Review 2025",
+      "url": "https://www.agora-energiewende.org/publications/state-of-the-energy-transition-in-germany-annual-review-2025",
+      "desc": "Annual review confirming renewables at 55.3% of German electricity consumption in 2025, wholesale electricity prices up 13% YoY driven by higher gas prices, and structural energy cost challenges for industry remaining above pre-2022 levels.",
+      "publicationDate": "2026-02-02",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "franco-german-defence-council-2025",
+      "name": "Élysée: Conclusions of the Franco-German Defence and Security Council (September 2025)",
+      "url": "https://www.elysee.fr/en/emmanuel-macron/2025/09/02/conclusions-of-the-franco-german-defence-and-security-council",
+      "desc": "Official joint conclusions committing France and Germany to deepening bilateral defence cooperation, joint R&D and procurement including the MGCS programme, and constituting the authoritative primary record of the bilateral security relationship's state.",
+      "publicationDate": "2025-09-02",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "iwkoeln-us-tariffs-autos-2025",
+      "name": "IW Köln: US Tariffs – How Badly Are German Industry Exports Suffering?",
+      "url": "https://www.iwkoeln.de/en/studies/samina-sultan-how-badly-are-german-industry-exports-suffering.html",
+      "desc": "IW Köln quantitative study documenting a 14% decline in German automotive exports to the US in Q1–Q3 2025, with machinery exports down 9.5% and chemicals down 9.5%, as primary data for external vulnerability and US tariff risk assessment.",
+      "publicationDate": "2025-12-21",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "bruegel-debt-brake-europe-2025",
+      "name": "Bruegel: What Does the German Debt Brake Reform Mean for Europe?",
+      "url": "https://www.bruegel.org/newsletter/what-does-german-debt-brake-reform-mean-europe",
+      "desc": "Bruegel policy analysis of the March 2025 constitutional debt-brake reform, examining the €500B Sondervermögen mechanics, defence exemption implications for EU fiscal rules, spillover effects on euro area capital markets, and medium-term debt sustainability risks.",
+      "publicationDate": "2025-03-30",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Interpretation"
+    },
+    {
+      "id": "iea-germany-energy-2025",
+      "name": "IEA: Germany 2025 Energy Policy Review",
+      "url": "https://iea.blob.core.windows.net/assets/7fea0ad0-1cc1-45e9-810b-2d602e64642f/Germany2025.pdf",
+      "desc": "IEA's 94-page energy policy review of Germany covering the Energiewende strategy, industrial energy cost structures, renewable energy targets, carbon pricing (CO2 at 55 EUR/t in 2025), and energy security risks from Russia and dependency diversification.",
+      "publicationDate": "2025-01-01",
+      "accessDate": "2026-05-14",
+      "confidence": "High",
+      "citationType": "Fact"
+    }
+  ]

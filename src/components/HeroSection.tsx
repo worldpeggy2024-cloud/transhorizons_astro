@@ -122,9 +122,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Byline — bottom-right corner, non-caps, subtle */}
+      {/* Byline — bottom-right, left of scroll indicator */}
       <div
-        className={`absolute bottom-8 right-6 lg:right-10 z-10 transition-all duration-700 ${
+        className={`absolute bottom-8 right-16 lg:right-20 z-10 transition-all duration-700 ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
         style={{ transitionDelay: '500ms' }}
@@ -134,9 +134,9 @@ export default function HeroSection() {
         </p>
       </div>
 
-      {/* Scroll indicator — right side */}
+      {/* Scroll indicator — far right edge */}
       <div
-        className={`absolute bottom-8 right-8 lg:right-12 z-10 hidden md:flex flex-col items-center gap-3 transition-all duration-700 ${
+        className={`absolute bottom-8 right-3 lg:right-4 z-10 hidden md:flex flex-col items-center gap-3 transition-all duration-700 ${
           visible ? 'opacity-100' : 'opacity-0'
         }`}
         style={{ transitionDelay: '900ms' }}

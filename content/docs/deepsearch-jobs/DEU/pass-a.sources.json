@@ -1,0 +1,402 @@
+[
+  {
+    "id": "imf-art4-2025",
+    "name": "IMF Staff Country Report: Germany 2025 Article IV Consultation",
+    "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1deuea2026001.pdf",
+    "desc": "IMF's comprehensive 92-page annual assessment of the German economy, providing GDP growth projections, fiscal deficit analysis, monetary policy assessment, structural reform recommendations, and external vulnerability data for Germany as of early 2026.",
+    "publicationDate": "2026-02-12",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "imf-art4-press-2025",
+    "name": "IMF Executive Board Concludes 2025 Article IV Consultation with Germany – Press Release",
+    "url": "https://www.imf.org/en/news/articles/2026/02/11/pr26042-germany-imf-executive-board-concludes-2025-article-iv-consultation",
+    "desc": "IMF Executive Board press release summarising key findings from the 2025 Article IV consultation with Germany, including growth outlook, fiscal position, and structural reform priorities.",
+    "publicationDate": "2026-02-11",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "destatis-gdp-2025",
+    "name": "Destatis Press Release: Gross Domestic Product 2025 (Germany)",
+    "url": "https://www.destatis.de/EN/Press/2026/01/PE26_017_811.html",
+    "desc": "Federal Statistical Office (Destatis) official flash estimate confirming 0.2% real GDP growth in 2025, with deficit ratio of 2.4% of GDP, government expenditure ratio of 50.3%, and sector-level growth breakdown for Germany.",
+    "publicationDate": "2026-01-14",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "destatis-gdp-q1-2026",
+    "name": "Destatis: Germany GDP Q1 2026 Flash Estimate and Annual Tables",
+    "url": "https://www.destatis.de/EN/Themes/Economy/National-Accounts-Domestic-Product/Tables/gdp-bubbles.html",
+    "desc": "Destatis official GDP data tables showing quarterly growth of 0.3% in Q1 2026 (0.5% YoY) and full-year 2025 revisions, providing the most current German national accounts data available.",
+    "publicationDate": "2026-04-29",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "destatis-trade-2025",
+    "name": "Destatis Press Release: German Foreign Trade Full Year 2025",
+    "url": "https://www.destatis.de/EN/Press/2026/02/PE26_042_51.html",
+    "desc": "Destatis official data showing Germany exported €1,562.9B and imported €1,362.5B of goods in 2025, with China as the largest trading partner (€251.8B turnover), trade surplus of €200.4B, and exports up 0.9% YoY.",
+    "publicationDate": "2026-02-05",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "destatis-trade-node",
+    "name": "Destatis: Foreign Trade – Germany's Top Trading Partners (Live Data Page)",
+    "url": "https://www.destatis.de/EN/Themes/Economy/Foreign-Trade/_node.html",
+    "desc": "Destatis foreign trade thematic page providing current and historical bilateral trade data, confirming China's return as Germany's largest trading partner in 2025 and monthly export/import developments into Q1 2026.",
+    "publicationDate": "2026-04-07",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "destatis-inflation-2025",
+    "name": "Destatis Press Release: Inflation Rate at +2.2% in 2025",
+    "url": "https://www.destatis.de/EN/Press/2026/01/PE26_019_611.html",
+    "desc": "Official Destatis release confirming Germany's annual average CPI inflation at 2.2% in 2025, core inflation at 2.8%, and December 2025 monthly rate of 1.8%, as the primary source for German price stability data.",
+    "publicationDate": "2026-01-15",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bundesbank-debt-2025",
+    "name": "Deutsche Bundesbank: German General Government Debt 2025",
+    "url": "https://www.bundesbank.de/en/press/press-releases/deutsche-staatsschulden-992720",
+    "desc": "Bundesbank official press release reporting Germany's general government debt rose to €2.84 trillion in 2025, with debt-to-GDP ratio increasing from 62.2% to 63.5%, providing authoritative sovereign debt stock and composition data.",
+    "publicationDate": "2026-03-30",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bundesbank-monetary-feb2026",
+    "name": "Deutsche Bundesbank Monthly Report – Monetary Policy and Banking Business (February 2026)",
+    "url": "https://publikationen.bundesbank.de/publikationen-en/reports-studies/monthly-reports/monthly-report-february-2026-988816",
+    "desc": "Bundesbank monthly report detailing ECB deposit rate held at 2.00% since June 2025, inflation outlook for 2026–2028, German economic recovery trajectory, labour market trends, and wage dynamics.",
+    "publicationDate": "2026-02-18",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bundesbank-hicp-2026",
+    "name": "Deutsche Bundesbank: Harmonised Index of Consumer Prices – Germany (April 2026)",
+    "url": "https://www.bundesbank.de/en/statistics/economic-activity-and-prices/harmonised-consumer-prices/harmonised-index-of-consumer-prices",
+    "desc": "Bundesbank HICP data series showing Germany's year-on-year inflation at 2.9% in April 2026 (from 2.8% in March), with core inflation declining to 2.3%, for monetary policy and ECB-target alignment analysis.",
+    "publicationDate": "2026-05-01",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "oecd-survey-germany-2025",
+    "name": "OECD Economic Surveys: Germany 2025",
+    "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-germany-2025_39d62aed-en/full-report.html",
+    "desc": "OECD's comprehensive structural and macroeconomic survey of Germany covering fiscal reform, productivity growth gaps, structural reform agenda (0.8pp potential GDP uplift), labour market, and competitiveness challenges; reviewed April 2025.",
+    "publicationDate": "2025-06-11",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ec-forecast-germany-nov2025",
+    "name": "European Commission: Economic Forecast for Germany (Autumn 2025)",
+    "url": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/germany/economic-forecast-germany_en",
+    "desc": "European Commission forecast table providing GDP growth (0.2% in 2025, 1.2% in 2026/2027), inflation (2.3%), unemployment (3.6%), government deficit (−3.1% in 2025, −4.0% in 2026), and gross debt (63.5% then 65.2% of GDP) projections for Germany.",
+    "publicationDate": "2025-11-16",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ifo-joint-forecast-spring2026",
+    "name": "Joint Economic Forecast Spring 2026 – German Economic Institutes",
+    "url": "https://www.ifo.de/en/facts/2026-04-01/joint-economic-forecast-spring-2026-energy-price-shock-overshadows-fiscal-stimulus",
+    "desc": "Consortium forecast (ifo, DIW, IfW Kiel, IWH, RWI) projecting 0.6% GDP growth in 2026 and 0.9% in 2027, with inflation rising to 2.8–2.9% due to energy price shock from the Iran war, representing the authoritative German institute consensus.",
+    "publicationDate": "2026-03-31",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "spglobal-rating-germany-2026",
+    "name": "S&P Global Ratings: Germany 'AAA/A-1+' Ratings Affirmed, Outlook Stable (April 2026)",
+    "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3551682",
+    "desc": "S&P Global affirmed Germany's unsolicited AAA/A-1+ sovereign credit ratings with stable outlook on 24 April 2026, providing the most current official credit quality and debt sustainability assessment.",
+    "publicationDate": "2026-04-23",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fitch-germany-rating-2026",
+    "name": "Fitch Ratings: Germany Sovereign Credit Ratings (January 2026)",
+    "url": "https://www.fitchratings.com/entity/germany-80442196",
+    "desc": "Fitch Ratings entity page showing Germany's AAA long-term issuer default rating and F1+ short-term rating, both with stable outlook, last reviewed January 2026; used alongside Moody's Aaa and S&P AAA for tri-agency sovereign credit consensus.",
+    "publicationDate": "2026-01-09",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bundeswahlleiter-2025",
+    "name": "Federal Returning Officer: Official Results of the 2025 German Federal Election",
+    "url": "https://www.bundeswahlleiterin.de/en/bundestagswahlen/2025/ergebnisse/bund-99.html",
+    "desc": "Official German Federal Returning Officer data providing authoritative final results of the 23 February 2025 Bundestag election: CDU/CSU 28.5% (208 seats), AfD 20.8% (152 seats), SPD 16.4% (120 seats), Greens 11.6% (85 seats).",
+    "publicationDate": "2025-02-23",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "coalition-agreement-2025",
+    "name": "CDU/CSU–SPD Coalition Agreement 2025: 'Responsibility for Germany' – Clean Energy Wire Analysis",
+    "url": "https://www.cleanenergywire.org/factsheets/what-germanys-aspiring-coalition-government-agreement-means-climate-and-energy",
+    "desc": "Detailed factsheet on the 140-page CDU/CSU–SPD coalition agreement signed 5 May 2025 and sworn in 6 May 2025, covering Merz government's economic, defence spending (3.5% of GDP by 2029), energy, migration, and fiscal policy priorities.",
+    "publicationDate": "2025-04-21",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "debt-brake-reform-2025",
+    "name": "DLA Piper: Germany's Turning Point for Infrastructure and Defense Funding – Debt Brake Reform March 2025",
+    "url": "https://www.dlapiper.com/insights/publications/2025/03/germany-s-turning-point-for-infrastructure-and-defense-funding",
+    "desc": "Legal analysis of the 18–21 March 2025 constitutional amendment: defence spending above 1% of GDP exempted from the debt brake (Schuldenbremse); €500B infrastructure Sondervermögen created; states permitted 0.35% of GDP annual borrowing.",
+    "publicationDate": "2025-03-20",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bundesfinanzministerium-budget-2025",
+    "name": "German Federal Ministry of Finance: Government Draft 2025 Federal Budget",
+    "url": "https://www.bundesfinanzministerium.de/Content/EN/Pressemitteilungen/2025/2025-06-24-2-government-draft-2025-federal-budget.html",
+    "desc": "Official German government press release confirming €62.4B defence budget for 2025, combined defence spending of 2.4% of GDP under NATO definition, and stated target of 3.5% of GDP by 2029, alongside infrastructure and climate fund details.",
+    "publicationDate": "2025-06-23",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "sipri-milex-2025",
+    "name": "SIPRI: Trends in World Military Expenditure 2025",
+    "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+    "desc": "SIPRI's authoritative primary data report showing Germany's military expenditure reached $114B in 2025 (+24% YoY), exceeding 2.0% of GDP for the first time since 1990 (at 2.3%), making it the 4th largest military spender globally and the largest in Europe.",
+    "publicationDate": "2026-04-27",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bundeswehr-strategy-2026",
+    "name": "Defense News: Germany Unveils Strategy for Becoming Europe's Strongest Military by 2039",
+    "url": "https://www.defensenews.com/global/europe/2026/04/22/germany-unveils-strategy-for-becoming-europes-strongest-military-by-2039/",
+    "desc": "Primary reporting on Germany's first standalone military strategy unveiled April 2026 by Defence Minister Pistorius, targeting 460,000 total personnel (184,194 active as of end-2025 to 260,000 by mid-2030s), three-phase buildup to 2039, and new reserve strategy.",
+    "publicationDate": "2026-04-22",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "freedom-house-germany-2025",
+    "name": "Freedom House: Freedom in the World 2025 – Germany Country Profile",
+    "url": "https://freedomhouse.org/country/germany",
+    "desc": "Freedom House annual assessment scoring Germany 94/100 (Free) in 2025, with Political Rights 39/40 and Civil Liberties 55/60, tracking democratic resilience and challenges from far-right populism and migration pressures.",
+    "publicationDate": "2025-02-25",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "wjp-germany-2025",
+    "name": "World Justice Project Rule of Law Index 2025 – Germany",
+    "url": "https://worldjusticeproject.org/rule-of-law-index/country/Germany",
+    "desc": "WJP Rule of Law Index 2025 scoring Germany 0.83 overall (5th globally), with factor-level scores on constraints on government powers, absence of corruption, civil justice, criminal justice, and open government for comprehensive rule-of-law benchmarking.",
+    "publicationDate": "2025-10-28",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "transparency-cpi-2025",
+    "name": "Transparency International: Corruption Perceptions Index 2025 – Germany",
+    "url": "https://www.transparency.org/en/countries/germany",
+    "desc": "Transparency International CPI 2025 scoring Germany 77/100 (+2 vs prior year), ranking 10th of 182 countries globally, providing the authoritative primary measure of perceived public-sector corruption for governance risk analysis.",
+    "publicationDate": "2026-02-10",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "vdem-report-2026",
+    "name": "V-Dem Institute: Democracy Report 2026",
+    "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+    "desc": "V-Dem's 2026 Democracy Report covering data through 2025, providing Germany's Liberal Democracy Index (0.83), Electoral Democracy index (0.78), and multidimensional democratic performance scores contextualised against global autocratization trends.",
+    "publicationDate": "2026-03-05",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "idea-germany-tracker",
+    "name": "International IDEA: Global State of Democracy Tracker – Germany",
+    "url": "https://www.idea.int/democracytracker/country/germany",
+    "desc": "International IDEA live democracy tracker monitoring Germany's political events including the AfD's BfV extremist classification (May 2025), court injunction (February 2026), Bundestag composition changes, and democratic performance indicators across all dimensions.",
+    "publicationDate": "2026-05-10",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bfv-afd-extremist-reuters-2025",
+    "name": "Reuters: German Spy Agency Brands Far-Right AfD as 'Extremist' (May 2025)",
+    "url": "https://www.reuters.com/world/europe/german-spy-agency-ranks-far-right-afd-extremist-2025-05-02/",
+    "desc": "Reuters factual report on the BfV domestic intelligence agency's May 2025 classification of the AfD as a 'proven right-wing extremist' entity based on a 1,100-page assessment, unlocking expanded surveillance powers and reigniting party-ban debate.",
+    "publicationDate": "2025-05-02",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "afd-court-injunction-dw-2026",
+    "name": "DW: German Intelligence Must Pause Extremist Label for AfD (February 2026)",
+    "url": "https://www.dw.com/en/german-intelligence-must-pause-extremist-label-for-afd/a-76140587",
+    "desc": "DW reporting on the Cologne administrative court's February 2026 emergency injunction ordering the BfV to pause the AfD 'extremist' designation pending judicial review, creating ongoing legal and political uncertainty central to domestic stability analysis.",
+    "publicationDate": "2026-02-26",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fcc-resilience-reform-2024",
+    "name": "Eurac Research: The Resilience of the German Federal Constitutional Court – Basic Law Reform",
+    "url": "https://www.eurac.edu/en/blogs/eureka/the-resilience-of-the-german-federal-constitutional-court",
+    "desc": "Legal analysis of the December 2024 Basic Law amendment (passed 600-69 in Bundestag) constitutionalising the Federal Constitutional Court's autonomy and binding authority to safeguard judicial independence from political interference.",
+    "publicationDate": "2025-05-26",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "acled-europe-dec2025",
+    "name": "ACLED: Europe and Central Asia Overview – December 2025",
+    "url": "https://acleddata.com/update/europe-and-central-asia-overview-december-2025",
+    "desc": "ACLED monthly security event overview recording 40+ suspicious drone overflights in Germany in October 2025 (forcing airport closures), hybrid sabotage incidents, and protest-related violence data for Germany's internal security assessment.",
+    "publicationDate": "2025-12-07",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ctc-islamist-terror-germany-2025",
+    "name": "CTC Sentinel: Evolution of the Islamist Terror Threat Landscape in Germany Since 2020",
+    "url": "https://ctc.westpoint.edu/the-evolution-of-the-islamist-terror-threat-landscape-in-germany-since-2020/",
+    "desc": "West Point CTC peer-reviewed analysis documenting 9 executed Islamist terrorist attacks and 20 thwarted plots in Germany (2020–May 2025), with threat evolution data on attack vectors, target shifts, and elevated threat levels post-October 7, 2023.",
+    "publicationDate": "2025-05-29",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "iss-eu-risks-2026",
+    "name": "EU Institute for Security Studies: Global Risks to the EU in 2026",
+    "url": "https://www.iss.europa.eu/publications/commentary/global-risks-eu-2026-what-are-main-conflict-threats-europe",
+    "desc": "ISS expert survey (January 2026) identifying Germany-relevant top security risks: critical infrastructure hybrid attack (highest probability and impact), Russia hybrid operations, US NATO security guarantee withdrawal, and China-Taiwan conflict escalation.",
+    "publicationDate": "2026-01-18",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "bundesagentur-labour-dec2025",
+    "name": "Federal Employment Agency: Labour Market Report December 2025",
+    "url": "https://www.arbeitsagentur.de/en/press/2026-01-job-market-in-december2025",
+    "desc": "Official Bundesagentur für Arbeit monthly report showing 2.908M unemployed (6.2% rate, BA definition; 3.7% ILO definition) in December 2025, with 1.033M on unemployment benefits, 101,000 higher YoY, confirming persistent labour market weakness.",
+    "publicationDate": "2026-01-06",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "reuters-china-derisking-2025",
+    "name": "Reuters: Germany Rethinks China Policy as Trade Squeeze Exposes Vulnerabilities (November 2025)",
+    "url": "https://www.reuters.com/world/china/germany-rethinks-china-policy-trade-squeeze-exposes-vulnerabilities-2025-11-13/",
+    "desc": "Reuters reporting on Germany's Bundestag establishing a specialist China trade committee in November 2025 following Chinese rare earth export curbs exposing ~80% import dependency; documents legislative moves toward strategic de-risking.",
+    "publicationDate": "2025-11-14",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ecb-rate-june2025",
+    "name": "ECB Monetary Policy Decision – 5 June 2025 (Final Rate Cut to 2.00%)",
+    "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.mp250605~3b5f67d007.en.html",
+    "desc": "ECB official press release documenting the 25bp cut to the deposit facility rate to 2.00% on 5 June 2025 — the terminal rate of the current easing cycle — establishing the baseline monetary policy rate for Germany's borrowing cost and fiscal analysis.",
+    "publicationDate": "2025-06-05",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "agora-energiewende-2025",
+    "name": "Agora Energiewende: State of the Energy Transition in Germany – Annual Review 2025",
+    "url": "https://www.agora-energiewende.org/publications/state-of-the-energy-transition-in-germany-annual-review-2025",
+    "desc": "Annual review confirming renewables at 55.3% of German electricity consumption in 2025, wholesale electricity prices up 13% YoY driven by higher gas prices, and structural energy cost challenges for industry remaining above pre-2022 levels.",
+    "publicationDate": "2026-02-02",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "franco-german-defence-council-2025",
+    "name": "Élysée: Conclusions of the Franco-German Defence and Security Council (September 2025)",
+    "url": "https://www.elysee.fr/en/emmanuel-macron/2025/09/02/conclusions-of-the-franco-german-defence-and-security-council",
+    "desc": "Official joint conclusions committing France and Germany to deepening bilateral defence cooperation, joint R&D and procurement including the MGCS programme, and constituting the authoritative primary record of the bilateral security relationship's state.",
+    "publicationDate": "2025-09-02",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "iwkoeln-us-tariffs-autos-2025",
+    "name": "IW Köln: US Tariffs – How Badly Are German Industry Exports Suffering?",
+    "url": "https://www.iwkoeln.de/en/studies/samina-sultan-how-badly-are-german-industry-exports-suffering.html",
+    "desc": "IW Köln quantitative study documenting a 14% decline in German automotive exports to the US in Q1–Q3 2025, with machinery exports down 9.5% and chemicals down 9.5%, as primary data for external vulnerability and US tariff risk assessment.",
+    "publicationDate": "2025-12-21",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bruegel-debt-brake-europe-2025",
+    "name": "Bruegel: What Does the German Debt Brake Reform Mean for Europe?",
+    "url": "https://www.bruegel.org/newsletter/what-does-german-debt-brake-reform-mean-europe",
+    "desc": "Bruegel policy analysis of the March 2025 constitutional debt-brake reform, examining the €500B Sondervermögen mechanics, defence exemption implications for EU fiscal rules, spillover effects on euro area capital markets, and medium-term debt sustainability risks.",
+    "publicationDate": "2025-03-30",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "iea-germany-energy-2025",
+    "name": "IEA: Germany 2025 Energy Policy Review",
+    "url": "https://iea.blob.core.windows.net/assets/7fea0ad0-1cc1-45e9-810b-2d602e64642f/Germany2025.pdf",
+    "desc": "IEA's 94-page energy policy review of Germany covering the Energiewende strategy, industrial energy cost structures, renewable energy targets, carbon pricing (CO2 at 55 EUR/t in 2025), and energy security risks from Russia and dependency diversification.",
+    "publicationDate": "2025-01-01",
+    "accessDate": "2026-05-14",
+    "confidence": "High",
+    "citationType": "Fact"
+  }
+]

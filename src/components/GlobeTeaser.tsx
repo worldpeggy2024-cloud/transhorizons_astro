@@ -163,7 +163,7 @@ export default function GlobeTeaser() {
                   {/* Subtitle */}
                   <p className="hidden md:block text-white/60 font-body text-xs md:text-sm leading-relaxed mt-1 mb-3 max-w-lg">
                     {fr
-                      ? 'Cartes interactives et explorations visuelles traduisant des dynamiques géopolitiques et des enjeux de ressources complexes en analyses spatiales.'
+                      ? 'Cartes interactives et explorations visuelles traduisant dynamiques géopolitiques et enjeux de ressources complexes en analyses spatiales.'
                       : 'Interactive maps and visual explorations translating complex geopolitical and resource dynamics into spatial analysis.'}
                   </p>
                   {/* Country count badge — hidden on mobile, shown on md+ */}
@@ -171,11 +171,11 @@ export default function GlobeTeaser() {
                     <span className="inline-flex items-center gap-1.5 border border-[#7D1A2E]/50 bg-[#7D1A2E]/8 px-3 py-1">
                       <span className="text-[#7D1A2E] font-display text-base font-bold leading-none">{ANALYSED_COUNT}</span>
                       <span className="text-[#7D1A2E]/80 font-body text-[10px] font-bold tracking-[0.2em] uppercase">
-                        {fr ? 'pays' : 'countries'}
+                        {fr ? 'analyses de pays disponibles' : 'country analyses available'}
                       </span>
                     </span>
                     <span className="text-white/25 font-body text-xs">
-                      {fr ? 'analyses disponibles' : 'analyses available'}
+                      {fr ? '' : ''}
                     </span>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function GlobeTeaser() {
               className="text-white/70 font-body text-[10px] tracking-wide hover:text-white transition-colors cursor-pointer underline underline-offset-2 decoration-white/30"
             >
               {fr
-                ? 'Canada — Stratégie des minéraux critiques ; Mis à jour : avril 2026'
+                ? 'Canada — Stratégie des minéraux critiques. Mise à jour : avril 2026'
                 : 'Canada — Critical Minerals Strategy; Updated: April 2026'}
             </span>
           </div>

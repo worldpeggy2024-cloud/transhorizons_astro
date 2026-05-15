@@ -6,7 +6,7 @@
  */
 
 import { useEffect, useRef, useState } from 'react';
-import { Send, Mail, MapPin, BookOpen } from 'lucide-react';
+import { Send, Mail, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const CONTACT_EMAIL = 'contact@transhorizons.net';
@@ -125,29 +125,6 @@ export default function ContactSection() {
                   <p className="text-white/30 text-[10px] tracking-[0.2em] uppercase font-body mb-1">{t('contact.location')}</p>
                   <p className="text-white/70 font-body text-sm">{t('contact.montreal')}</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Social links */}
-            <div className="pt-8 border-t border-white/8">
-              <p className="text-white/30 text-[10px] tracking-[0.2em] uppercase font-body mb-5">{t('contact.follow')}</p>
-              <div className="flex gap-6">
-                {[
-                  { icon: BookOpen, label: t('footer.linkedin'), href: 'https://www.linkedin.com/in/peggy-brenier-6896b197/' },
-                  { icon: BookOpen, label: t('footer.instagram'), href: 'https://www.instagram.com/worldpeggy/' },
-                  { icon: BookOpen, label: t('footer.blog'), href: '#' },
-                ].map(({ icon: Icon, label, href }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target={href.startsWith('http') ? '_blank' : undefined}
-                    rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-center gap-2 text-white/35 hover:text-[#7D1A2E] transition-colors font-body text-xs tracking-wider uppercase group"
-                  >
-                    <Icon size={13} className="group-hover:scale-110 transition-transform" />
-                    {label}
-                  </a>
-                ))}
               </div>
             </div>
           </div>
