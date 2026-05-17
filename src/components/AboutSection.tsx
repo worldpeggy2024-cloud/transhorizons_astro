@@ -120,7 +120,7 @@ export default function AboutSection() {
               <div className="mt-5 flex items-start gap-3">
                 <div className="w-px h-10 bg-[#7D1A2E] mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-white/65 text-xs font-body leading-relaxed italic">
+                  <p className="text-white/65 text-xs font-body leading-relaxed italic whitespace-pre-line">
                     "{t('story.quote')}"
                   </p>
                 </div>

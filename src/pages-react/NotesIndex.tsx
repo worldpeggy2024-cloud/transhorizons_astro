@@ -88,10 +88,12 @@ export default function NotesIndex() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/images/portfolio_hero_geopolitical-mediumdark.webp)',
+            backgroundImage: 'url(/images/portfolio_hero_geopolitical-bright.webp)',
+            backgroundPosition: 'center 34%',
+            filter: 'brightness(1.18)',
           }}
         />
-        <div className="absolute inset-0 bg-[#1A1A1A]/72" />
+        <div className="absolute inset-0 bg-[#1A1A1A]/56" />
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-6 lg:px-10">
           <button

@@ -79,8 +79,8 @@ export default function PortfolioSection() {
         ? "Le système forestier du Canada sous pressions climatiques et industrielles"
         : "Canada's Forest System Under Climate and Industrial Pressure",
       description: lang === 'fr'
-        ? "Examine comment les perturbations climatiques, la structure industrielle et l'intégration géopolitique reconfigurent le système forestier du Canada."
-        : "Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada's forest system and its role within global resource and trade networks.",
+        ? "Examine comment les perturbations climatiques, l'organisation du secteur forestier et l'intégration géopolitique reconfigurent le système forestier du Canada."
+        : "Examines how climate-driven disturbances, forest-sector organization, and geopolitical integration are reshaping Canada's forest system and its role within global resource and trade networks.",
       image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
       date: getArticleDate('canada-forest-system-climate-industrial-pressure', lang),
     },

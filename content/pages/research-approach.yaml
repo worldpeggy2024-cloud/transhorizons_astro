@@ -1,17 +1,27 @@
-﻿en:
-  pageTitle:  
+en:
   backLabel: Back to home
   method:
     heading: Research Approach
     label: Overview
-    body: |-
-      TransHorizons is an independent analytical initiative focused on understanding how large-scale systems shape geopolitical, economic, and technological outcomes.
+    body: >-
+      TransHorizons is an independent analytical initiative focused on
+      understanding how large-scale systems shape geopolitical, economic, and
+      technological outcomes.
 
-      Research is based primarily on publicly available institutional and authoritative sources, including national statistical agencies, federal departments, international organizations, and peer-reviewed research.
 
-      The approach is grounded in the analysis of structural dynamics rather than isolated events, with particular attention to Canada's position within evolving global systems.
+      Research is based primarily on publicly available institutional and
+      authoritative sources, including national statistical agencies, federal
+      departments, international organizations, and peer-reviewed research.
 
-      Research combines institutional documentation, cross-domain synthesis, and continuous monitoring of international developments to produce structured, accessible analysis.
+
+      The approach is grounded in the analysis of structural dynamics rather
+      than isolated events, with particular attention to Canada's position
+      within evolving global systems.
+
+
+      Research combines institutional documentation, cross-domain synthesis, and
+      continuous monitoring of international developments to produce structured,
+      accessible analysis.
   scope:
     heading: Analytical Scope
     intro: 'The work examines interconnected systems across four primary domains:'
@@ -41,11 +51,16 @@
     intro: >-
       Research is based primarily on publicly available institutional and
       authoritative sources, including:
-    items: |-
+    items: >-
       national statistical agencies (e.g., Statistics Canada);
+
       federal departments and agencies (e.g., Natural Resources Canada);
-      international organizations (e.g., International Energy Agency, OECD, World Bank);
+
+      international organizations (e.g., International Energy Agency, OECD,
+      World Bank);
+
       peer-reviewed academic research and scientific publications;
+
       official reports, policy documents, and technical publications.
     closing: >-
       These sources are supplemented by ongoing monitoring of geopolitical
@@ -55,31 +70,42 @@
     intro: 'Research outputs follow a mixed rhythm:'
     items:
       - bold: Analytical essays
-        rest: ' (long-form): periodic, focused on structural themes;'
+        rest: ' (long-form): published periodically and focused on structural themes;'
       - bold: Research notes
-        rest: ' (short-form): more frequent, reflecting ongoing developments;'
+        rest: ': occasional reflections linked to ongoing developments;'
       - bold: Maps and visualizations
-        rest: ': updated as relevant data becomes available.'
+        rest: >-
+          : produced alongside analytical essays and, in some cases, developed
+          further as standalone visual explorations.
     closing: >-
-      This structure supports both long-term analysis and responsiveness to
-      emerging developments.
+      This structure supports both long-term analytical work and the progressive
+      development of thematic visual frameworks.
   mapping:
     heading: Mapping Methodology
-    body: |-
-      Geospatial analysis is used to visualize system structures and relationships.
+    body: >-
+      Mapping is used as a tool for analyzing and synthesizing spatial and
+      systemic dynamics.
 
-      Maps and visual outputs focus on:
-    items: |-
-      resource distribution and infrastructure networks;
-      supply chain configurations;
-      geopolitical and regional dynamics.
+
+      Maps and visualizations are intended in particular to:
+    items: >-
+      reveal spatial relationships between resources, infrastructure, and
+      geopolitical dynamics;
+
+      synthesize complex datasets into readable systems;
+
+      support comparative analysis across regions and strategic spaces;
+
+      illustrate structural dynamics and long-term transformations.
     closing: >-
-      Mapping is used as a complementary tool to support analytical
-      interpretation rather than as an end in itself.
+      They combine publicly available data, institutional sources, and
+      independent interpretation.
   traceability:
-    heading: "Source Traceability \u0026 Verification"
-    body: |-
-      This research practice places strong emphasis on the traceability of information.
+    heading: Source Traceability & Verification
+    body: >-
+      This research practice places strong emphasis on the traceability of
+      information.
+
 
       All analysis is grounded in sources that can be:
     items: |-
@@ -92,8 +118,10 @@
       identified and cross-checked against primary documentation.
   tools:
     heading: Use of Analytical Tools
-    intro: |-
-      Analytical tools, including AI-assisted systems, are integrated into the research and drafting process as support instruments.
+    intro: >-
+      Analytical tools, including AI-assisted systems, are integrated into the
+      research and drafting process as support instruments.
+
 
       They are used to:
     usedItems: |-
@@ -102,15 +130,20 @@
       support drafting and synthesis.
     p3: 'However:'
     howeverItems: |-
-      they are not treated as sources;
+      they are not treated as reliable sources;
       they do not determine analytical conclusions;
       outputs are not accepted without verification.
-    outro: |-
-      All content is systematically reviewed, validated, and grounded in traceable documentation.
+    outro: >-
+      All content is systematically reviewed, validated, and grounded in
+      traceable documentation.
 
-      The analytical responsibility -- including source selection, interpretation, and final validation -- remains fully with the author.
 
-      The use of AI expands the capacity to explore complex systems, while increasing the importance of verification, coherence, and accountability.
+      The analytical responsibility -- including source selection,
+      interpretation, and final validation -- remains with the author.
+
+
+      The use of AI expands the capacity to explore complex systems, while
+      increasing the importance of verification, coherence, and accountability.
   principles:
     heading: Analytical Principles
     intro: 'The analytical process follows a set of guiding principles:'
@@ -129,143 +162,188 @@
           and patterns
       - title: Clarity and accessibility
         desc: >-
-          Translation of complex material into structured analysis accessible
-          to non-specialists
+          Translation of complex material into structured analysis accessible to
+          non-specialists
       - title: Source transparency
         desc: >-
-          Reliance on traceable, verifiable information, with full documentation
-          available upon request
+          Reliance on traceable, verifiable information, with documentation and
+          sources available upon request
   limits:
-    heading: "Limits \u0026 Uncertainty"
-    body: |-
-      This work is based on open-source information and is subject to data limitations, uncertainty, and the constraints of independent research.
+    heading: Limits & Uncertainty
+    body: >-
+      This work is based on open-source information and is subject to data
+      limitations, uncertainty, and the constraints of independent research.
+
 
       Limitations include:
-    items: |-
+    items: >-
       incomplete or delayed data in certain domains;
-      uncertainty in long-term projections, particularly in climate and technological systems;
-      constraints inherent to independent research without access to proprietary datasets.
+
+      uncertainty in long-term projections, particularly in climate and
+      technological systems;
+
+      constraints inherent to independent research without access to proprietary
+      datasets.
     closing: >-
       Where uncertainty exists, it is treated as part of the analytical context
       rather than eliminated.
   referencing:
     heading: Referencing Approach
     sources:
-      heading: "Sources \u0026 Documentation"
-      body: |-
-        Analysis is grounded in publicly available institutional sources. Rather than relying on exhaustive academic referencing, sources are integrated into the analytical narrative.
+      heading: Sources & Documentation
+      body: >-
+        Analysis is grounded in publicly available institutional sources. Rather
+        than relying on exhaustive academic referencing, sources are integrated
+        into the analytical narrative.
 
-        Key institutions, datasets, and publications are identified where relevant to ensure transparency and traceability.
+
+        Key institutions, datasets, and publications are identified where
+        relevant to ensure transparency and traceability.
     citation:
       heading: Citation Philosophy
       intro: 'The objective is to balance readability and traceability:'
-      items: |-
+      items: >-
         References anchor analysis rather than document every input
+
         Priority is given to primary and institutional sources
+
         Over-citation is avoided to preserve clarity
-        Synthesis may integrate multiple sources without listing each individually
+
+        Synthesis may integrate multiple sources without listing each
+        individually
       closing: >-
         This approach reflects practices used in policy analysis and applied
         research environments.
   position:
     heading: Position
-    body: |-
-      TransHorizons operates at the intersection of institutional analytical standards and independent research.
+    body: >-
+      TransHorizons operates at the intersection of institutional analytical
+      standards and independent research.
 
-      The objective is to contribute structured, source-based analysis that clarifies complex global dynamics without relying on institutional affiliation or proprietary data access.
+
+      The objective is to contribute structured, source-based analysis that
+      clarifies complex global dynamics without relying on institutional
+      affiliation or proprietary data access.
 fr:
-  pageTitle: 
-  backLabel: "Retour \u00E0 l'accueil"
+  backLabel: Retour à l'accueil
   method:
-    heading: "Approche de recherche"
+    heading: Approche de recherche
     label: Pratique analytique
-    body: |-
-      TransHorizons applique une pratique analytique structuree, ancree dans la documentation institutionnelle, la recherche multidisciplinaire et le suivi a long terme des systemes geopolitiques, des ressources et de la technologie.
+    body: >-
+      TransHorizons est une initiative analytique indépendante axée sur la
+      compréhension de la manière dont les grands systèmes influencent les
+      dynamiques géopolitiques, économiques et technologiques.
 
-      Cette initiative s'appuie sur plus de vingt-cinq ans d'engagement aupres d'institutions federales canadiennes, notamment Statistique Canada et Ressources naturelles Canada, ou le travail analytique est fonde sur des donnees documentees, des systemes statistiques et des environnements de recherche axes sur les politiques.
 
-      L'objectif n'est pas le commentaire, mais la clarification : traduire les connaissances institutionnelles dispersees en analyses structurees des systemes mondiaux.
+      Les recherches s’appuient principalement sur des sources institutionnelles
+      et faisant autorité accessibles au public, notamment les organismes
+      nationaux de statistique, les ministères fédéraux, les organisations
+      internationales et les travaux de recherche évalués par les pairs.
 
-      La recherche combine documentation institutionnelle, synthese interdisciplinaire et suivi continu des developpements internationaux pour produire une analyse structuree et accessible.
+
+      L’approche repose sur l’analyse des dynamiques structurelles plutôt que
+      sur l’examen d’événements isolés, en mettant particulièrement l'accent sur
+      la position du Canada au sein de systèmes mondiaux en évolution.
+
+
+      Les travaux combinent documentation institutionnelle, synthèse
+      interdisciplinaire et suivi des développements internationaux afin de
+      produire des analyses structurées et accessibles.
   scope:
-    heading: "P\u00E9rim\u00E8tre analytique"
+    heading: Champ d’analyse
     intro: >-
-      La recherche porte sur les dynamiques structurelles a long terme plutot
-      que sur les developpements a court terme. Les domaines principaux
-      comprennent :
+      Les travaux examinent des systèmes interconnectés dans quatre grands
+      domaines :
     items:
-      - title: "Syst\u00E8mes structurels"
+      - title: Systèmes structurels
         desc: >-
-          Dynamiques a long terme faconnant le developpement du Canada, notamment
-          la geographie, l'orientation vers les ressources et l'integration aux
-          marches mondiaux.
-      - title: "Syst\u00E8mes mat\u00E9riels"
+          Les tendances à long terme qui façonnent le développement du Canada,
+          notamment la géographie, l’orientation vers les ressources et
+          l’intégration aux marchés mondiaux.
+      - title: Systèmes matériels
         desc: >-
-          Systemes fondes sur les ressources tels que l'energie, les mineraux
-          critiques et les ecosystemes forestiers, y compris leur role dans les
-          transformations industrielles et environnementales.
-      - title: "Syst\u00E8mes technologiques"
+          Les systèmes fondés sur les ressources, tels que l’énergie, les
+          minéraux critiques et les écosystèmes forestiers, ainsi que leur rôle
+          dans les transformations industrielles et environnementales.
+      - title: Systèmes technologiques
         desc: >-
-          Infrastructure numerique, intelligence artificielle et cadres de
-          gouvernance faconnant les formes emergentes de pouvoir economique et
-          politique.
-      - title: "Syst\u00E8mes \u00E9conomiques et commerciaux"
+          Les infrastructures numériques, l’intelligence artificielle et les
+          cadres de gouvernance qui façonnent de nouvelles formes de pouvoir
+          économique et politique.
+      - title: Systèmes économiques et commerciaux
         desc: >-
-          Relations commerciales, politique industrielle et dynamiques des
-          chaines d'approvisionnement, notamment dans les contextes
-          nord-americain et transatlantique.
+          Les relations commerciales, les politiques industrielles et les
+          dynamiques des chaînes d’approvisionnement, particulièrement dans les
+          contextes nord-américain et transatlantique.
     closing: >-
-      Ces domaines sont traites comme des composantes interdependantes d'un
-      systeme plus large plutot que comme des domaines d'analyse distincts.
+      Ces domaines sont abordés comme des composantes interdépendantes d’un
+      système plus vaste, plutôt que comme des champs d’analyse distincts.
   sources:
-    heading: "Sources surveill\u00E9es"
+    heading: Sources utilisées
     intro: >-
-      L'analyse repose principalement sur des sources institutionnelles et
-      primaires accessibles au public, notamment :
-    items: |-
-      Les ministeres et organismes federaux canadiens
-      Les organisations internationales (p. ex., Agence internationale de l'energie, OCDE, Banque mondiale)
-      Les agences statistiques nationales et les ensembles de donnees officiels
-      La documentation parlementaire et les documents de politique
-      Les publications academiques et scientifiques
-      Les rapports sectoriels et industriels
-      Le renseignement en sources ouvertes
-    closing: >-
-      La priorite est accordee aux documents verificables produits dans des
-      cadres institutionnels responsables.
-  process:
-    heading: "Processus de recherche et rythme de mise \u00E0 jour"
-    intro: 'La recherche suit un modele de surveillance continue :'
-    items:
-      - bold: Suivi continu
-        rest: ' des publications et ensembles de donnees institutionnels'
-      - bold: Comparaison interdisciplinaire
-        rest: ' et identification de schemas'
-      - bold: "Elaboration"
-        rest: " de notes analytiques et d'observations intermediaires"
-      - bold: "Synthese periodique"
-        rest: " sous forme d'essais et de rapports structures"
-    closing: >-
-      Les publications sont diffusees lorsque la coherence analytique est
-      atteinte, plutot que selon un calendrier editorial fixe.
-  mapping:
-    heading: "M\u00E9thodologie cartographique"
-    body: |-
-      La cartographie est utilisee comme outil analytique plutot que comme simple complement visuel.
+      La recherche s’appuie principalement sur des sources institutionnelles et
+      faisant autorité accessibles au public, notamment :
+    items: >-
+      les organismes statistiques nationaux, par exemple Statistique Canada;
 
-      Les cartes visent a :
-    items: |-
-      Reveler les relations spatiales entre les ressources, les infrastructures et les dynamiques geopolitiques
-      Synthetiser des ensembles de donnees complexes en systemes lisibles
-      Soutenir l'analyse comparative entre regions
-      Illustrer les schemas structurels a long terme
+      les ministères et organismes fédéraux, par exemple Ressources naturelles
+      Canada;
+
+      les organisations internationales, par exemple l’Agence internationale de
+      l’énergie, l’OCDE et la Banque mondiale;
+
+      des travaux universitaires évalués par les pairs et des publications
+      scientifiques;
+
+      des rapports officiels, des documents de politique publique et des
+      publications techniques.
     closing: >-
-      Elles combinent des donnees accessibles au public, des sources
-      institutionnelles et une interpretation independante.
+      Ces sources sont complétées par un suivi continu des développements
+      géopolitiques, des indicateurs économiques et des données propres à
+      certains secteurs.
+  process:
+    heading: Rythme de mise à jour
+    intro: 'Les travaux de recherche suivent un rythme mixte :'
+    items:
+      - bold: Analyses
+        rest: ': publiées périodiquement et axées sur des thèmes structurels;'
+      - bold: Notes de recherche
+        rest: ': réflexions ponctuelles liées à des évolutions en cours;'
+      - bold: Cartes et visualisations
+        rest: >-
+          : produites en parallèle des analyses et, dans certains cas,
+          approfondies sous forme d’explorations visuelles autonomes.
+    closing: >-
+      Cette structure permet de soutenir à la fois un travail analytique de long
+      terme et le développement progressif de cadres visuels thématiques.
+  mapping:
+    heading: Méthodologie cartographique
+    body: >-
+      La cartographie est utilisée comme outil d’analyse et de synthèse des
+      dynamiques spatiales et systémiques.
+
+
+      Les cartes et illustrations visent notamment à :
+    items: >-
+      révéler les relations spatiales entre ressources, infrastructures et
+      dynamiques géopolitiques;
+
+      synthétiser des ensembles de données complexes sous forme de systèmes
+      lisibles;
+
+      soutenir l’analyse comparative entre régions et espaces stratégiques;
+
+      illustrer les dynamiques structurelles et les transformations à long
+      terme.
+    closing: >-
+      Elles combinent des données accessibles au public, des sources
+      institutionnelles et une interprétation indépendante.
   traceability:
-    heading: "Tra\u00E7abilit\u00E9 et v\u00E9rification des sources"
-    body: |-
-      Cette pratique de recherche accorde une grande importance a la tracabilite de l'information.
+    heading: Traçabilité et vérification des sources
+    body: >-
+      Cette pratique de recherche accorde une grande importance a la tracabilite
+      de l'information.
+
 
       Toute analyse est fondee sur des sources pouvant etre :
     items: |-
@@ -278,76 +356,116 @@ fr:
       sous-jacentes sont systematiquement identifiees et recoupees avec la
       documentation primaire.
   tools:
-    heading: Utilisation des outils analytiques
-    intro: |-
-      Les outils analytiques, y compris les systemes assistes par intelligence artificielle, sont integres au processus de recherche et de redaction en tant qu'instruments de soutien.
+    heading: Utilisation d'outils analytiques
+    intro: >-
+      Des outils d’analyse, y compris des systèmes assistés par l’intelligence
+      artificielle, sont intégrés au processus de recherche et de rédaction à
+      titre d’instruments de soutien.
 
-      Ils sont utilises pour :
+
+      Ils sont utilisés pour :
     usedItems: |-
-      Explorer des pistes d'analyse
-      Organiser et structurer l'information
-      Soutenir la redaction du contenu analytique
+      explorer des pistes de recherche;
+      structurer et organiser des informations complexes;
+      appuyer la rédaction et la synthèse.
     p3: 'Cependant :'
     howeverItems: |-
-      Ils ne sont pas traites comme des sources
-      Ils ne determinent pas les conclusions analytiques
-      Les resultats ne sont pas acceptes sans verification
-    outro: |-
-      Tout le contenu est systematiquement revu, valide et ancre dans une documentation tracable.
+      ils ne sont pas considérés comme des sources d'informations fiables;
+      ils ne déterminent pas les conclusions analytiques;
+      les résultats produits ne sont pas acceptés sans vérification.
+    outro: >-
+      L’ensemble du contenu fait l’objet d’une révision systématique, d’une
+      validation et d’un ancrage dans une documentation vérifiable.
 
-      La responsabilite analytique -- y compris la selection des sources, l'interpretation et la validation finale -- reste entierement celle de l'auteure.
 
-      Dans ce contexte, le recours a l'IA ne remplace pas le travail analytique. Il deplace l'accent vers la verification, la structuration et la responsabilite.
+      La responsabilité analytique (y compris la sélection des sources,
+      l’interprétation et la validation finale) demeure assumée par l’autrice.
+
+
+      L’utilisation de l’IA accroît les capacités d’exploration de systèmes
+      complexes, tout en renforçant l’importance de la vérification, de la
+      cohérence et de la responsabilité.
   principles:
-    heading: Principes analytiques
-    intro: "L'approche analytique repose sur un ensemble de principes directeurs :"
+    heading: Principes d’analyse
+    intro: 'Le processus d’analyse repose sur un ensemble de principes directeurs :'
     items:
-      - title: Ancrage institutionnel
-        desc: Appui sur des sources documentees et verificables
-      - title: Analyse structurelle
-        desc: Accent sur les systemes et transformations a long terme
-      - title: "Synthese interdisciplinaire"
-        desc: "Integration de la geopolitique, des ressources, de l'economie et de la technologie"
+      - title: Attention portée aux structures
+        desc: >-
+          Accent mis sur les dynamiques structurelles et les interactions à
+          l’échelle des systèmes, plutôt que sur les événements de court terme
+          ou le commentaire conjoncturel.
+      - title: Synthèse interdomaines
+        desc: >-
+          Intégration de perspectives économiques, géopolitiques,
+          environnementales et technologiques.
       - title: Observation comparative
-        desc: "Identification de schemas entre regions et systemes"
-      - title: "Clarte plutot que complexite"
-        desc: Communication accessible sans perte de rigueur
+        desc: >-
+          Recours aux comparaisons internationales afin de dégager les
+          différences structurelles et les tendances récurrentes.
+      - title: Clarté et accessibilité
+        desc: >-
+          Transformation de contenus complexes en analyses structurées,
+          accessibles aux non-spécialistes.
+      - title: Transparence des sources
+        desc: >-
+          Appui sur des informations traçables et vérifiables, avec documents et
+          sources disponibles sur demande.
   limits:
     heading: Limites et incertitude
-    body: |-
-      Les systemes geopolitiques, economiques et technologiques sont par nature complexes et en evolution.
+    body: >-
+      Ces travaux s’appuient sur des informations de sources ouvertes et
+      demeurent soumis aux limites des données disponibles, à l’incertitude et
+      aux contraintes propres à la recherche indépendante.
 
-      En consequence :
-    items: |-
-      L'analyse privilegie l'interpretation structurelle plutot que la prediction a court terme
-      Les conclusions demeurent provisoires et susceptibles d'etre revisees
-      Les limites des donnees et les contraintes de visibilite sont reconnues
-      La cartographie et la synthese impliquent des choix d'interpretation
+
+      Ces limites comprennent notamment :
+    items: >-
+      des données incomplètes ou différées dans certains domaines;
+
+      une incertitude entourant les projections à long terme, en particulier
+      dans le cas des systèmes climatiques et technologiques;
+
+      les contraintes inhérentes à une recherche indépendante menée sans accès à
+      des ensembles de données propriétaires.
     closing: >-
-      L'incertitude est traitee comme une condition a rendre explicite, non a
-      eliminer.
+      Lorsque l’incertitude est présente, elle est intégrée au contexte
+      analytique plutôt que d'être éliminée.
   referencing:
-    heading: "Approche de r\u00E9f\u00E9rencement"
+    heading: Approche de référencement
     sources:
       heading: Sources et documentation
-      body: |-
-        L'analyse repose sur des sources institutionnelles accessibles au public. Plutot que de s'appuyer sur un referencement academique exhaustif, les sources sont integrees dans la narration analytique.
+      body: >-
+        L'analyse repose sur des sources institutionnelles accessibles au
+        public. Plutot que de s'appuyer sur un referencement academique
+        exhaustif, les sources sont integrees dans la narration analytique.
 
-        Les institutions, ensembles de donnees et publications cles sont identifies lorsque pertinent, afin d'assurer la transparence et la tracabilite.
+
+        Les institutions, ensembles de donnees et publications cles sont
+        identifies lorsque pertinent, afin d'assurer la transparence et la
+        tracabilite.
     citation:
       heading: Philosophie de citation
-      intro: "L'objectif est d'equilibrer lisibilite et tracabilite :"
-      items: |-
+      intro: 'L''objectif est d''equilibrer lisibilite et tracabilite :'
+      items: >-
         Les references ancrent l'analyse plutot que de documenter chaque source
+
         La priorite est accordee aux sources primaires et institutionnelles
+
         La surcitation est evitee pour preserver la clarte
-        La synthese peut integrer plusieurs sources sans les enumerer individuellement
+
+        La synthese peut integrer plusieurs sources sans les enumerer
+        individuellement
       closing: >-
         Cette approche reflecte les pratiques utilisees dans les environnements
         d'analyse des politiques et de recherche appliquee.
   position:
-    heading: Position
-    body: |-
-      TransHorizons opere en tant qu'initiative de recherche independante cherchant a s'aligner sur les normes analytiques institutionnelles tout en conservant la souplesse de l'enquete independante.
+    heading: Positionnement
+    body: >-
+      TransHorizons se situe au croisement des normes d’analyse institutionnelle
+      et de la recherche indépendante.
 
-      L'objectif est de contribuer a une analyse structuree et fondee sur des donnees probantes a une comprehension plus large des transformations mondiales affectant le Canada et le systeme international.
+
+      L’objectif est de contribuer à une analyse structurée et fondée sur les
+      sources, visant à favoriser la compréhension de dynamiques mondiales
+      complexes sans s’appuyer sur une affiliation institutionnelle ni sur un
+      accès à des données exclusives.

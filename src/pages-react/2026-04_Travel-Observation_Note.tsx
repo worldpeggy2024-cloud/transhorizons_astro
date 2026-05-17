@@ -46,15 +46,15 @@ function renderTextBlock(text: string, emphasizedFirstParagraph = false): ReactN
 
   return blocks.map((block, index) => {
     const lines = block.split('\n').map((line) => line.trim()).filter(Boolean);
-    const bulletLines = lines.filter((line) => line.startsWith('â€¢'));
+    const bulletLines = lines.filter((line) => line.startsWith('•'));
 
     if (bulletLines.length === lines.length) {
       return (
         <ul key={`list-${index}`} className="space-y-2 text-charcoal/80 ml-6 mb-6">
           {bulletLines.map((line, itemIndex) => (
             <li key={`item-${itemIndex}`} className="flex gap-3">
-              <span className="text-sand font-bold">â€¢</span>
-              <span>{line.replace(/^â€¢\s*/, '')}</span>
+              <span className="text-sand font-bold">•</span>
+              <span>{renderBoldMarkdown(line.replace(/^•\s*/, ''))}</span>
             </li>
           ))}
         </ul>
@@ -64,11 +64,21 @@ function renderTextBlock(text: string, emphasizedFirstParagraph = false): ReactN
     return (
       <p
         key={`paragraph-${index}`}
-        className={index === 0 && emphasizedFirstParagraph ? 'text-lg text-charcoal/80 leading-relaxed' : 'text-charcoal/80 leading-relaxed'}
+        className="text-charcoal/80 leading-relaxed"
       >
-        {lines.join(' ')}
+        {renderBoldMarkdown(lines.join(' '))}
       </p>
     );
+  });
+}
+
+function renderBoldMarkdown(text: string): ReactNode {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={idx}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
   });
 }
 
@@ -94,7 +104,7 @@ function NotesContent({ language }: { language: 'en' | 'fr' }) {
           <ul className="space-y-3 text-charcoal/80">
             {reflections.map((reflection: string, index: number) => (
               <li key={index} className="flex gap-3">
-                <span className="text-sand font-bold">â€¢</span>
+                <span className="text-sand font-bold">•</span>
                 <span>{reflection}</span>
               </li>
             ))}

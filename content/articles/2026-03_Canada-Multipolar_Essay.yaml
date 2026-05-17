@@ -111,9 +111,9 @@ sections:
     imagePosition: left
   - title_en: Canada as a Structurally Embedded Actor
     title_fr: Le Canada comme acteur structurellement intégré
-    image: /images/arctic_polar_projection_balanced.png
+    image: /images/arctic_polar_projection_article.png
     imagePosition: full
-    imageLink_href: /images/arctic_polar_projection_map.png
+    imageLink_href: /images/arctic_polar_projection_balanced.png
     imageLink_label_en: View full Arctic map
     imageLink_label_fr: Voir la carte arctique complète
     content_en: >

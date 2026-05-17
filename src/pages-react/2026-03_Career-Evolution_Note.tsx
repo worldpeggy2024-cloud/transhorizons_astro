@@ -54,7 +54,7 @@ function renderTextBlock(text: string, emphasizedFirstParagraph = false): ReactN
           {bulletLines.map((line, itemIndex) => (
             <li key={`item-${itemIndex}`} className="flex gap-3">
               <span className="text-sand font-bold">•</span>
-              <span>{line.replace(/^•\s*/, '')}</span>
+              <span>{renderBoldMarkdown(line.replace(/^•\s*/, ''))}</span>
             </li>
           ))}
         </ul>
@@ -64,11 +64,21 @@ function renderTextBlock(text: string, emphasizedFirstParagraph = false): ReactN
     return (
       <p
         key={`paragraph-${index}`}
-        className={index === 0 && emphasizedFirstParagraph ? 'text-lg text-charcoal/80 leading-relaxed' : 'text-charcoal/80 leading-relaxed'}
+        className="text-charcoal/80 leading-relaxed"
       >
-        {lines.join(' ')}
+        {renderBoldMarkdown(lines.join(' '))}
       </p>
     );
+  });
+}
+
+function renderBoldMarkdown(text: string): ReactNode {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={idx}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
   });
 }
 
