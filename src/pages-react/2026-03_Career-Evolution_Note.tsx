@@ -3,7 +3,8 @@
  * Content loaded from bilingual YAML - edit at /keystatic
  */
 
-import { Fragment, ReactNode } from 'react';
+import { Fragment } from 'react';
+import type { ReactNode } from 'react';
 import NotesDetailLayout from '../components/NotesDetailLayout';
 import { useLanguage } from '../contexts/LanguageContext';
 import data from '../../content/articles/2026-03_Career-Evolution_Note.yaml';
@@ -131,6 +132,18 @@ function NotesContent({ language }: { language: 'en' | 'fr' }) {
 export default function NotesCareerEvolution() {
   const { language } = useLanguage();
   const L = language === 'fr' ? 'fr' : 'en';
+  const relatedArticles = [
+    {
+      slug: 'travel-observation',
+      title: L === 'fr' ? 'Récits de voyage : perspectives d\'un traducteur' : 'Travel, Observation, and the Making of an Institutional Analyst',
+      category: L === 'fr' ? 'Observations' : 'Observations',
+    },
+    {
+      slug: 'canada-resources',
+      title: L === 'fr' ? 'Minéraux critiques : le nœud des ressources au Canada' : 'Critical Minerals: Canada\'s Resource Nexus',
+      category: L === 'fr' ? 'Systèmes et signaux' : 'Systems & Signals',
+    },
+  ];
 
   return (
     <NotesDetailLayout
@@ -143,6 +156,7 @@ export default function NotesCareerEvolution() {
       language={L}
       audioId={`notes-${d.slug ?? 'career-evolution'}`}
       audioText={buildNoteAudioText(L)}
+      relatedArticles={relatedArticles}
     />
   );
 }

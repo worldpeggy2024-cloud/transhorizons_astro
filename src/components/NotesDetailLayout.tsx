@@ -78,6 +78,7 @@ export default function NotesDetailLayout({
   const notesLabel = language === 'fr' ? 'Notes' : 'Notes';
   const contactLabel = language === 'fr' ? 'Contact' : 'Contact';
   const followLabel = language === 'fr' ? 'Suivre' : 'Follow';
+  const otherArticlesLabel = language === 'fr' ? 'Autres articles' : 'Other articles';
 
   const derivedAudioText = [
     title,
@@ -203,7 +204,7 @@ export default function NotesDetailLayout({
         <section className="bg-ivory py-20 border-t border-sand/20">
           <div className="container max-w-4xl mx-auto px-6">
             <h2 className="font-playfair text-3xl font-bold text-charcoal mb-12">
-              More from <span className="text-sand">Stories</span>
+              {otherArticlesLabel}
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {relatedArticles.map((article) => (

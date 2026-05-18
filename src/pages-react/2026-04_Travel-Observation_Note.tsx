@@ -131,6 +131,18 @@ function NotesContent({ language }: { language: 'en' | 'fr' }) {
 export default function NotesTravelObservation() {
   const { language } = useLanguage();
   const L = language === 'fr' ? 'fr' : 'en';
+  const relatedArticles = [
+    {
+      slug: 'career-evolution',
+      title: L === 'fr' ? 'De la traduction vers la recherche et l\'analyse' : 'From Translation Toward Research and Analysis',
+      category: L === 'fr' ? 'Notes' : 'Notes',
+    },
+    {
+      slug: 'canada-resources',
+      title: L === 'fr' ? 'Minéraux critiques : le nœud des ressources au Canada' : 'Critical Minerals: Canada\'s Resource Nexus',
+      category: L === 'fr' ? 'Systèmes et signaux' : 'Systems & Signals',
+    },
+  ];
 
   return (
     <NotesDetailLayout
@@ -143,6 +155,7 @@ export default function NotesTravelObservation() {
       language={L}
       audioId={`notes-${d.slug ?? 'travel-observation'}`}
       audioText={buildNoteAudioText(L)}
+      relatedArticles={relatedArticles}
     />
   );
 }
