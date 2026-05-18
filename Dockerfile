@@ -18,6 +18,10 @@ RUN pnpm run build
 # Expose port
 EXPOSE 3000
 
+# Set environment for Astro Node adapter
+ENV HOST=0.0.0.0
+ENV PORT=3000
+
 # Start the app
 CMD ["node", "./dist/server/entry.mjs"]
 
