@@ -3,6 +3,7 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import keystatic from '@keystatic/astro';
 import yaml from '@rollup/plugin-yaml';
+import node from '@astrojs/node';
 
 /** Sends a full-page reload to the browser whenever a YAML content file changes. */
 function yamlHmrPlugin() {
@@ -18,6 +19,7 @@ function yamlHmrPlugin() {
 }
 
 export default defineConfig({
+  adapter: node({ mode: 'standalone' }),
   integrations: [react(), keystatic()],
   vite: {
     optimizeDeps: {
