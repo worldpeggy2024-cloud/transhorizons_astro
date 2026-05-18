@@ -1,5 +1,5 @@
 # Dockerfile for Astro + Node.js on Fly.io
-FROM node:20-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
