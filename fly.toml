@@ -35,3 +35,4 @@ path = "/health"
 protocol = "http"
 timeout = "5s"
 type = "http"
+port = 3000
