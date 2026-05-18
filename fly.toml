@@ -1,38 +1,48 @@
-# Fly.io configuration for Astro + Node.js
-app = "transhorizons-astro"
-primary_region = "iad"
+# fly.toml app configuration file generated for transhorizons-astro on 2026-05-17T22:42:30-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'transhorizons-astro'
+primary_region = 'iad'
 
 [build]
-builder = "paketobuildpacks"
+  dockerfile = 'Dockerfile'
 
 [env]
-NODE_ENV = "production"
+  NODE_ENV = 'production'
 
 [[services]]
-internal_port = 3000
-protocol = "tcp"
+  protocol = 'tcp'
+  internal_port = 3000
 
-[services.concurrency]
-type = "connections"
-hard_limit = 25
-soft_limit = 20
+  [[services.ports]]
+    port = 80
+    handlers = ['http']
+    force_https = true
 
-[[services.ports]]
-port = 80
-handlers = ["http"]
-force_https = true
+  [[services.ports]]
+    port = 443
+    handlers = ['tls', 'http']
 
-[[services.ports]]
-port = 443
-handlers = ["tls", "http"]
+  [services.concurrency]
+    type = 'connections'
+    hard_limit = 25
+    soft_limit = 20
 
 [checks]
-[checks.http_check]
-grace_period = "10s"
-interval = "30s"
-method = "GET"
-path = "/health"
-protocol = "http"
-timeout = "5s"
-type = "http"
-port = 3000
+  [checks.http_check]
+    port = 3000
+    type = 'http'
+    interval = '30s'
+    timeout = '5s'
+    grace_period = '10s'
+    method = 'GET'
+    path = '/health'
+    protocol = 'http'
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 1024
