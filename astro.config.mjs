@@ -20,7 +20,7 @@ function yamlHmrPlugin() {
 
 export default defineConfig({
   adapter: node({ mode: 'standalone' }),
-  output: 'hybrid',
+  
   integrations: [react(), keystatic()],
   vite: {
     optimizeDeps: {
@@ -36,5 +36,4 @@ export default defineConfig({
       },
     },
   },
-  output: 'server',
 });
