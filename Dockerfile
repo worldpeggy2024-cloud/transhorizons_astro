@@ -3,8 +3,8 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-# Copy package files
-COPY package.json pnpm-lock.yaml ./
+# Copy package files and pnpmrc
+COPY package.json pnpm-lock.yaml .pnpmrc ./
 
 # Install pnpm and dependencies
 RUN npm install -g pnpm && pnpm install --frozen-lockfile
