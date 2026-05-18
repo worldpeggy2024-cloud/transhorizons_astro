@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import App from '../components/AppShell';
+export const prerender = true;
 ---
 <Base title="TransHorizons">
   <App client:only="react" />
