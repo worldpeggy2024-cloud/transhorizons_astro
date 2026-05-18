@@ -3,11 +3,11 @@ FROM node:22
 
 WORKDIR /app
 
-# Copy package files and pnpmrc
-COPY package.json pnpm-lock.yaml .pnpmrc ./
+# Copy package files
+COPY package.json ./
 
-# Install pnpm and dependencies with scripts enabled
-RUN npm install -g pnpm && pnpm config set ignore-scripts false && pnpm install --frozen-lockfile
+# Install dependencies with npm
+RUN npm install
 
 # Copy source code
 COPY . .
