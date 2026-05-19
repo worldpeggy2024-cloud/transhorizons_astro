@@ -91,7 +91,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.government': 'Years of translations for the Canadian government',
     'story.domains': 'Domains of analysis',
     'story.quote': 'Language is the map. Analysis is the journey. Understanding is the destination."\n\n"Translation was never only about language. Institutional work required continuous engagement with policy, research, and technical systems. It also required understanding the ways societies organize and communicate knowledge.',
-    'story.positioning': 'Independent analyst translating Canadian institutional knowledge into structured analysis of global geopolitical, resource, and technological systems.',
+    'story.positioning': 'Independent research focused on geopolitical, resource, and technological systems',
     'story.journeysFieldNotes': 'Journeys & Field Notes →',
     'story.downloadCV': 'Download CV',
 
@@ -281,7 +281,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.government': 'Années de traductions pour le gouvernement canadien',
     'story.domains': 'Domaines d\'analyse',
     'story.quote': 'La langue est un outil d’orientation. L’analyse, un cheminement. La compréhension, l’horizon à atteindre."\n\n"Traduire n\'a jamais été qu\'un simple exercice linguistique. Travailler sur du contenu institutionnel exige une interaction constante avec les politiques publiques, la recherche, les systèmes techniques et les façons dont les sociétés organisent et communiquent le savoir.',
-    'story.positioning': 'Analyste indépendante transformant une connaissance approfondie des institutions canadiennes en analyses structurées des systèmes géopolitiques, énergétiques, technologiques et liés aux ressources à l\'échelle mondiale.',
+    'story.positioning': 'Démarche indépendante de recherche portant sur les dynamiques géopolitiques, technologiques et liées aux ressources.',
     'story.journeysFieldNotes': 'Fragments de voyage →',
     'story.downloadCV': 'Télécharger le CV',
 
