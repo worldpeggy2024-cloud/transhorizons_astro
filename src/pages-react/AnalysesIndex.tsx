@@ -59,7 +59,7 @@ export default function AnalysesIndex() {
       date: getArticleDate('resource-civilization', lang),
     },
     {
-      slug: 'geopolitics',
+      slug: 'canada-multipolar',
       primaryCategory: t('portfolio.geopolitics.category'),
       filterKeys: ['geopolitics', 'systems'],
       tags: ['Canada', 'multipolar', 'foreign policy', 'alliances', 'US-Canada', 'trade', 'sovereignty'],
@@ -67,10 +67,10 @@ export default function AnalysesIndex() {
       title: t('portfolio.geopolitics.title'),
       excerpt: t('portfolio.geopolitics.desc'),
       image: '/images/portfolio_geopolitics_hero-UFdGm3fFHZsq5moH7gCbog.webp',
-      date: getArticleDate('geopolitics', lang),
+      date: getArticleDate('canada-multipolar', lang),
     },
     {
-      slug: 'resources',
+      slug: 'critical-minerals',
       primaryCategory: t('portfolio.resources.category'),
       filterKeys: ['resources', 'geopolitics'],
       tags: ['critical minerals', 'mining', 'Canada', 'supply chains', 'energy', 'battery metals', 'lithium', 'cobalt', 'nickel'],
@@ -78,10 +78,10 @@ export default function AnalysesIndex() {
       title: t('portfolio.resources.title'),
       excerpt: t('portfolio.resources.desc'),
       image: 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?w=800&q=80',
-      date: getArticleDate('resources', lang),
+      date: getArticleDate('critical-minerals', lang),
     },
     {
-      slug: 'technology',
+      slug: 'ai-governance',
       primaryCategory: t('portfolio.technology.category'),
       filterKeys: ['technology', 'geopolitics'],
       tags: ['AI', 'governance', 'digital policy', 'regulation', 'algorithms', 'global standards', 'technology policy'],
@@ -89,7 +89,7 @@ export default function AnalysesIndex() {
       title: t('portfolio.technology.title'),
       excerpt: t('portfolio.technology.desc'),
       image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80',
-      date: getArticleDate('technology', lang),
+      date: getArticleDate('ai-governance', lang),
     },
     {
       slug: 'canada-forest-system-climate-industrial-pressure',

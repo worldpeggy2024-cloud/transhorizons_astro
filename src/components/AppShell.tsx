@@ -36,9 +36,9 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
-      <Route path={"/portfolio/geopolitics"} component={PortfolioGeopolitics} />
-      <Route path={"/portfolio/resources"} component={PortfolioResources} />
-      <Route path={"/portfolio/technology"} component={PortfolioTechnology} />
+      <Route path={"/portfolio/canada-multipolar"} component={PortfolioGeopolitics} />
+      <Route path={"/portfolio/critical-minerals"} component={PortfolioResources} />
+      <Route path={"/portfolio/ai-governance"} component={PortfolioTechnology} />
       <Route path={"/notes/career-evolution"} component={NotesCareerEvolution} />
       <Route path={"/notes/travel-observation"} component={NotesTravelObservation} />
       <Route path={"/notes/canada-resources"} component={NotesCanadaResources} />

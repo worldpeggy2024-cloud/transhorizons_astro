@@ -78,10 +78,13 @@ export function buildArticleTextFromProps(
 
 const REGISTRY: Record<string, ArticleData> = {
   'geopolitics': geopoliticsRaw,
+  'canada-multipolar': geopoliticsRaw,
   'resources': resourcesRaw,
+  'critical-minerals': resourcesRaw,
   'canada-forest-carbon': forestCarbonRaw,
   'resource-civilization': resourceCivilizationRaw,
   'technology': technologyRaw,
+  'ai-governance': technologyRaw,
   'canada-forest-system-climate-industrial-pressure': forestSystemRaw,
   'canada-resources': canadaResourceWealthRaw,
 };

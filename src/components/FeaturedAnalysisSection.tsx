@@ -41,7 +41,7 @@ export default function FeaturedAnalysisSection() {
       image: '/images/canada_resource_civilization_map.png',
     },
     {
-      slug: 'geopolitics',
+      slug: 'canada-multipolar',
       category: t('portfolio.geopolitics.category'),
       readTime: '12 min',
       title: t('portfolio.geopolitics.title'),
@@ -49,7 +49,7 @@ export default function FeaturedAnalysisSection() {
       image: '/images/portfolio_geopolitics_hero-UFdGm3fFHZsq5moH7gCbog.webp',
     },
     {
-      slug: 'resources',
+      slug: 'critical-minerals',
       category: t('portfolio.resources.category'),
       readTime: '10 min',
       title: t('portfolio.resources.title'),
