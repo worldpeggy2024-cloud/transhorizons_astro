@@ -1,0 +1,250 @@
+---
+/**
+ * src/pages/portfolio/resource-civilization.astro
+ * 
+ * Server-rendered portfolio essay (SEO-friendly)
+ * Loads content from YAML at build time
+ * Language switching via URL params: ?lang=en or ?lang=fr
+ */
+
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import yaml from 'js-yaml';
+import Base from '../../layouts/Base.astro';
+
+// ── Load YAML at build/request time ──────────────────────────────────────────
+const yamlPath = resolve(process.cwd(), 'content/articles/2026-04_Resource-Civilization_Essay.yaml');
+const raw = readFileSync(yamlPath, 'utf-8');
+const data = yaml.load(raw) as Record<string, any>;
+
+// ── Language from URL query: ?lang=fr (default = en) ────────────────────────
+const lang = (Astro.url.searchParams.get('lang') === 'fr') ? 'fr' : 'en';
+const L = lang;
+
+// ── Extract translated content ────────────────────────────────────────────────
+const title = data[`title_${L}`] ?? '';
+const subtitle = data[`subtitle_${L}`] ?? '';
+const introTitle = data[`introductionTitle_${L}`] ?? '';
+const intro = data[`introduction_${L}`] ?? '';
+const category = data[`category_${L}`] ?? 'Analysis';
+const date = data.date ?? '';
+const readTime = data.readTime ?? '';
+const heroImage = data.heroImage ?? '';
+
+const keyTakeaways = (data.keyTakeaways ?? []).map((k: Record<string, string>) => ({
+  title: k[`title_${L}`] ?? '',
+  description: k[`description_${L}`] ?? '',
+})).filter((k: { title: string; description: string }) => k.description);
+
+const sections = (data.sections ?? []).map((s: Record<string, string>) => ({
+  title: s[`title_${L}`] ?? '',
+  content: s[`content_${L}`] ?? '',
+  image: s.image,
+}));
+
+// ── Helpers: Render content with markup ──────────────────────────────────────
+function renderContent(text: string): string {
+  const blocks = text.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
+  return blocks.map(block => {
+    const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+    const allBullets = lines.every(l => l.startsWith('•'));
+    
+    if (allBullets) {
+      const items = lines.map(l =>
+        `<li class="flex gap-3"><span class="text-sand font-bold">•</span><span>${bold(l.replace(/^•\s*/, ''))}</span></li>`
+      ).join('');
+      return `<ul class="space-y-2 text-charcoal/80 ml-6 mb-6">${items}</ul>`;
+    }
+    
+    return `<p class="text-charcoal/80 leading-relaxed mb-4">${bold(lines.join(' '))}</p>`;
+  }).join('');
+}
+
+function bold(text: string): string {
+  return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+}
+
+// ── Related articles (links preserve language) ─────────────────────────────────
+const relatedArticles = [
+  {
+    slug: 'critical-minerals',
+    titleEn: 'Critical Minerals & the Energy Transition',
+    titleFr: 'Minéraux critiques et la transition énergétique',
+    categoryEn: 'Systems',
+    categoryFr: 'Systèmes',
+  },
+  {
+    slug: 'canada-forest-carbon',
+    titleEn: 'Net Carbon Effect of Canadian Forest Ecosystems',
+    titleFr: 'Effet net du carbone des écosystèmes forestiers canadiens',
+    categoryEn: 'Systems',
+    categoryFr: 'Systèmes',
+  },
+];
+
+// ── UI Labels ────────────────────────────────────────────────────────────────
+const labels = {
+  en: {
+    back: 'Back to Portfolio',
+    home: 'Home',
+    other: 'Related analyses',
+    contact: 'Contact',
+    follow: 'Follow',
+    nav: 'Navigation',
+  },
+  fr: {
+    back: 'Retour au portfolio',
+    home: 'Accueil',
+    other: 'Analyses liées',
+    contact: 'Contact',
+    follow: 'Suivre',
+    nav: 'Navigation',
+  },
+};
+
+const UI = labels[L];
+---
+
+<Base 
+  title={`${title} — TransHorizons`}
+  description={subtitle}
+>
+  <div class="min-h-screen bg-white text-charcoal">
+    <!-- ── Navigation ─────────────────────────────────────────────────────── -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-sand/20">
+      <div class="container flex items-center justify-between py-4 px-6">
+        <div class="flex items-center gap-3">
+          <a href="/" class="text-sm font-medium text-charcoal hover:text-sand transition-colors">
+            ← {UI.home}
+          </a>
+          <span class="text-sand/40">·</span>
+          <a href="/analyses" class="text-sm font-medium text-charcoal hover:text-sand transition-colors">
+            ← {UI.back}
+          </a>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-xs text-sand uppercase tracking-wide">{category}</span>
+          <div class="flex gap-2 text-xs">
+            <a href="?lang=en" class={`hover:text-sand transition-colors ${L === 'en' ? 'text-sand font-semibold' : 'text-charcoal/50'}`}>EN</a>
+            <span class="text-charcoal/30">|</span>
+            <a href="?lang=fr" class={`hover:text-sand transition-colors ${L === 'fr' ? 'text-sand font-semibold' : 'text-charcoal/50'}`}>FR</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── Hero ───────────────────────────────────────────────────────────── -->
+    <section class="relative h-screen pt-20 flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center" style={`background-image: url(${heroImage})`}>
+        <div class="absolute inset-0 bg-black/40"></div>
+      </div>
+      <div class="relative z-10 container max-w-4xl mx-auto px-6 text-white">
+        <span class="text-xs uppercase tracking-widest text-sand/80 block mb-4">
+          {category} · {date}
+        </span>
+        <h1 class="font-playfair text-5xl md:text-6xl font-bold leading-tight mb-6">{title}</h1>
+        <p class="text-xl text-white/80 mb-6 font-light">{subtitle}</p>
+        <div class="flex items-center gap-6 text-sm">
+          <span class="text-sand">{readTime}</span>
+          <div class="w-8 h-px bg-sand/40"></div>
+          <span class="text-sand/80">Featured Analysis</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Key Takeaways ──────────────────────────────────────────────────── -->
+    {keyTakeaways.length > 0 && (
+      <section class="bg-[#F5F3F0] border-b border-[#C8C8C8] py-12">
+        <div class="container max-w-3xl mx-auto px-6">
+          <h3 class="font-playfair text-2xl font-bold text-charcoal mb-8">{introTitle}</h3>
+          <ul class="space-y-4">
+            {keyTakeaways.map(item => (
+              <li class="flex gap-3 items-start">
+                <span class="mt-1.5 w-2 h-2 rounded-full bg-[#7D1A2E] flex-shrink-0"></span>
+                <span class="text-charcoal/80 leading-relaxed">{item.description}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )}
+
+    <!-- ── Introduction ───────────────────────────────────────────────────── -->
+    <section class="bg-white py-16">
+      <article class="container max-w-3xl mx-auto px-6">
+        <div set:html={renderContent(intro)} />
+      </article>
+    </section>
+
+    <!-- ── Sections ───────────────────────────────────────────────────────── -->
+    {sections.map(section => (
+      <section class="bg-white border-t border-sand/20 py-12">
+        <article class="container max-w-3xl mx-auto px-6">
+          {section.image && (
+            <img src={section.image} alt={section.title} class="w-full rounded-lg mb-8" />
+          )}
+          <h2 class="font-playfair text-3xl font-bold text-charcoal mb-8">{section.title}</h2>
+          <div set:html={renderContent(section.content)} />
+        </article>
+      </section>
+    ))}
+
+    <!-- ── Related Articles ───────────────────────────────────────────────── -->
+    {relatedArticles.length > 0 && (
+      <section class="bg-[#F5F3F0] py-20 border-t border-sand/20">
+        <div class="container max-w-4xl mx-auto px-6">
+          <h2 class="font-playfair text-3xl font-bold text-charcoal mb-12">{UI.other}</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            {relatedArticles.map(article => {
+              const artTitle = L === 'fr' ? article.titleFr : article.titleEn;
+              const artCategory = L === 'fr' ? article.categoryFr : article.categoryEn;
+              return (
+                <a
+                  href={`/portfolio/${article.slug}?lang=${L}`}
+                  class="group text-left p-6 bg-white rounded-lg border border-sand/20 hover:border-sand hover:shadow-lg transition-all block"
+                >
+                  <span class="text-xs uppercase tracking-widest text-sand block mb-3">{artCategory}</span>
+                  <h3 class="font-playfair text-xl font-bold text-charcoal group-hover:text-sand transition-colors">
+                    {artTitle}
+                  </h3>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- ── Footer ─────────────────────────────────────────────────────────── -->
+    <footer class="bg-white border-t border-sand/20 py-12">
+      <div class="container max-w-4xl mx-auto px-6">
+        <a href="/" class="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-sand transition-colors mb-8">
+          ← {UI.home}
+        </a>
+        <div class="grid md:grid-cols-3 gap-8 pt-8 border-t border-sand/20">
+          <div>
+            <h4 class="font-playfair text-lg font-bold text-charcoal mb-4">{UI.nav}</h4>
+            <ul class="space-y-2 text-sm text-charcoal/70">
+              <li><a href="/" class="hover:text-sand transition-colors">{UI.home}</a></li>
+              <li><a href="/analyses" class="hover:text-sand transition-colors">{L === 'fr' ? 'Portfolio' : 'Portfolio'}</a></li>
+              <li><a href="/notes" class="hover:text-sand transition-colors">{L === 'fr' ? 'Notes' : 'Notes'}</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-playfair text-lg font-bold text-charcoal mb-4">{UI.contact}</h4>
+            <a href="mailto:contact@transhorizons.net" class="text-sm text-charcoal/70 hover:text-sand transition-colors">
+              contact@transhorizons.net
+            </a>
+          </div>
+          <div>
+            <h4 class="font-playfair text-lg font-bold text-charcoal mb-4">{UI.follow}</h4>
+            <div class="flex gap-4 text-sm">
+              <a href="https://www.linkedin.com/in/peggy-brenier-6896b197/" target="_blank" rel="noopener noreferrer" class="text-charcoal/70 hover:text-sand transition-colors">LinkedIn</a>
+              <a href="https://www.instagram.com/worldpeggy/" target="_blank" rel="noopener noreferrer" class="text-charcoal/70 hover:text-sand transition-colors">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</Base>
