@@ -1,6 +1,6 @@
 ---
 /**
- * src/pages/notes/career-evolution.astro
+ * src/pages/notes/travel-observation.astro
  * 
  * Server-rendered article page (SEO-friendly)
  * Loads content from YAML at build time
@@ -13,7 +13,7 @@ import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
 
 // ── Load YAML at build/request time ──────────────────────────────────────────
-const yamlPath = resolve(process.cwd(), 'content/articles/2026-03_Career-Evolution_Note.yaml');
+const yamlPath = resolve(process.cwd(), 'content/articles/2026-04_Travel-Observation_Note.yaml');
 const raw = readFileSync(yamlPath, 'utf-8');
 const data = yaml.load(raw) as Record<string, any>;
 
@@ -26,7 +26,7 @@ const title = data[`title_${L}`] ?? '';
 const subtitle = data[`subtitle_${L}`] ?? '';
 const introTitle = data[`introductionTitle_${L}`] ?? '';
 const intro = data[`introduction_${L}`] ?? '';
-const category = data[`category_${L}`] ?? 'Notes';
+const category = data[`category_${L}`] ?? 'Observations';
 const date = data.date ?? '';
 const readTime = data.readTime ?? '';
 const heroImage = data.heroImage ?? '';
@@ -67,11 +67,11 @@ function bold(text: string): string {
 // ── Related articles (links preserve language) ─────────────────────────────────
 const relatedArticles = [
   {
-    slug: 'travel-observation',
-    titleEn: 'Travel, Observation, and the Making of an Institutional Analyst',
-    titleFr: "Voyage, observation et formation d'une perspective analytique",
-    categoryEn: 'Observations',
-    categoryFr: 'Observations',
+    slug: 'career-evolution',
+    titleEn: 'From Translation Toward Research and Analysis',
+    titleFr: 'De la traduction vers la recherche et l\'analyse',
+    categoryEn: 'Notes',
+    categoryFr: 'Notes',
   },
 ];
 
@@ -241,20 +241,3 @@ const UI = labels[L];
     </footer>
   </div>
 </Base>
-
-<style is:global>
-  html {
-    font-family: 'Inter', sans-serif;
-  }
-
-  .font-playfair {
-    font-family: 'Playfair Display', serif;
-  }
-
-  /* Ensure Tailwind colors are available */
-  :root {
-    --color-charcoal: #1a1a1a;
-    --color-sand: #C8A97B;
-    --color-cream: #F5F3F0;
-  }
-</style>
