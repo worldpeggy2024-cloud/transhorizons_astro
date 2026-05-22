@@ -1,0 +1,233 @@
+---
+// src/pages/about.astro
+// Standalone, fully server-rendered About page — crawlable by Google
+// Mirrors the content of AboutSection.tsx / LanguageContext translations
+// Interactive elements (EN/FR toggle) handled via a small inline script
+
+const CV_URL = '/images/TransHorizonsCV2026SiteWeb_9185ec0e.pdf';
+const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — TransHorizons | Peggy Brenier</title>
+    <meta name="description" content="Senior translator and analytical writer with more than twenty years supporting Canadian federal institutions including Statistics Canada and Natural Resources Canada. Independent research on geopolitics, resource systems, and technological transformation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Inter', sans-serif; background: #141414; color: #fff; }
+      a { color: inherit; text-decoration: none; }
+
+      /* Navbar */
+      nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: #fff; }
+      .nav-links { display: flex; gap: 2rem; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+      .nav-links a:hover { color: #fff; }
+      .lang-toggle { display: flex; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.05em; }
+      .lang-toggle button { background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.4); padding: 0; }
+      .lang-toggle button.active { color: #fff; }
+
+      /* Main layout */
+      main { max-width: 1280px; margin: 0 auto; padding: 4rem 2.5rem; }
+
+      /* Header */
+      .page-header { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem; }
+      .accent-line { width: 1.5rem; height: 1px; background: #7D1A2E; }
+      h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 300; color: #fff; line-height: 1.15; }
+      .positioning { font-size: 0.875rem; color: rgba(255,255,255,0.5); max-width: 24rem; line-height: 1.6; }
+
+      /* Content grid */
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+      @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } nav { flex-wrap: wrap; gap: 1rem; } .nav-links { display: none; } }
+
+      /* Left column */
+      .divider { width: 3rem; height: 1px; background: #7D1A2E; margin-bottom: 2rem; }
+      .intro { font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,0.8); border-left: 2px solid rgba(125,26,46,0.5); padding-left: 1rem; font-style: italic; margin-bottom: 2.5rem; white-space: pre-line; }
+      h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; color: #fff; margin-bottom: 1rem; }
+      ul { list-style: none; margin-bottom: 2.5rem; }
+      ul li { display: flex; gap: 0.75rem; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 0.75rem; }
+      ul li .bullet { color: #7D1A2E; font-weight: bold; flex-shrink: 0; margin-top: 0.15rem; }
+      .research-text { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; }
+
+      /* Right column */
+      .image-wrapper { position: relative; }
+      .image-border-outer { position: absolute; top: -1.25rem; right: -1.25rem; width: 100%; height: 100%; border: 1px solid rgba(125,26,46,0.25); pointer-events: none; }
+      .image-border-inner { position: absolute; top: -0.625rem; right: -0.625rem; width: 100%; height: 100%; border: 1px solid rgba(125,26,46,0.1); pointer-events: none; }
+      .portrait { width: 100%; height: 500px; object-fit: cover; display: block; position: relative; z-index: 1; }
+      .caption { margin-top: 1.25rem; display: flex; gap: 0.75rem; align-items: flex-start; }
+      .caption-line { width: 1px; height: 2.5rem; background: #7D1A2E; flex-shrink: 0; margin-top: 0.1rem; }
+      .caption-text { font-size: 0.75rem; color: rgba(255,255,255,0.5); font-style: italic; line-height: 1.6; }
+
+      /* Buttons */
+      .buttons { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+      .btn-outline { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border: 1px solid #7D1A2E; color: #7D1A2E; font-size: 0.75rem; letter-spacing: 0.05em; transition: all 0.3s; }
+      .btn-outline:hover { background: #7D1A2E; color: #fff; }
+      .btn-link { font-size: 0.75rem; color: #7D1A2E; letter-spacing: 0.05em; transition: color 0.3s; align-self: center; }
+      .btn-link:hover { color: #fff; }
+
+      /* Stats */
+      .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
+      .stat-number { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #7D1A2E; font-weight: 300; line-height: 1; margin-bottom: 0.5rem; }
+      .stat-label { font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); line-height: 1.4; }
+
+      /* Footer */
+      footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <a href="/" class="nav-logo">TransHorizons</a>
+      <div class="nav-links">
+        <a href="/analyses">Analyses</a>
+        <a href="/world-analysis">Maps</a>
+        <a href="/research-approach">Research Approach</a>
+        <a href="/notes">Notes & Reflections</a>
+        <a href="/about" style="color:#fff">About</a>
+      </div>
+      <div class="lang-toggle">
+        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <span style="color:rgba(255,255,255,0.2)">|</span>
+        <button id="btn-fr" onclick="setLang('fr')">FR</button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="page-header">
+        <div class="accent-line"></div>
+        <h1 id="story-title">Blending Linguistics with Global Analytics</h1>
+        <p class="positioning" id="story-positioning">Independent research focused on geopolitical, resource, and technological systems</p>
+      </div>
+
+      <div class="grid">
+
+        <!-- Left: Text -->
+        <div>
+          <div class="divider"></div>
+
+          <p class="intro" id="story-intro">Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.
+
+Current practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada's position within evolving global structures.</p>
+
+          <h3 id="strengths-title">Core Strengths</h3>
+          <ul id="strengths-list">
+            <li><span class="bullet">•</span><span>Institutional research and documentation developed through long-term federal collaboration</span></li>
+            <li><span class="bullet">•</span><span>Interpretation of complex statistical, technical, and policy material</span></li>
+            <li><span class="bullet">•</span><span>Translation of institutional knowledge into structured written analysis</span></li>
+            <li><span class="bullet">•</span><span>Interdisciplinary perspective informed by extensive international exposure and comparative observation</span></li>
+            <li><span class="bullet">•</span><span>Commitment to clear, evidence-based communication for public understanding</span></li>
+          </ul>
+
+          <h3 id="research-title">Research Focus</h3>
+          <p class="research-text" id="research-text">Current work examines geopolitical dynamics, resource systems, and technological change through a structural, systems-oriented approach, aiming to clarify long-term global transformations relevant to Canadian and international contexts.</p>
+        </div>
+
+        <!-- Right: Image + buttons + stats -->
+        <div>
+          <div class="image-wrapper">
+            <div class="image-border-outer"></div>
+            <div class="image-border-inner"></div>
+            <img src={ABOUT_IMAGE} alt="Languages, maps and global analysis — TransHorizons" class="portrait" loading="eager" />
+          </div>
+
+          <div class="caption">
+            <div class="caption-line"></div>
+            <p class="caption-text" id="story-quote">"Language is the map. Analysis is the journey. Understanding is the destination."
+
+"Translation was never only about language. Institutional work required continuous engagement with policy, research, and technical systems. It also required understanding the ways societies organize and communicate knowledge.</p>
+          </div>
+
+          <div class="buttons">
+            <a href={CV_URL} download target="_blank" rel="noopener noreferrer" class="btn-outline" id="btn-cv">
+              ↓ Download CV
+            </a>
+            <a href="/publications" class="btn-outline" id="btn-publications">Writing & Translation Archive</a>
+            <a href="/notes/travel-observation" class="btn-link" id="btn-journeys">Journeys & Field Notes →</a>
+          </div>
+
+          <div class="stats">
+            <div>
+              <div class="stat-number">25+</div>
+              <div class="stat-label" id="stat-years">Years of expertise</div>
+            </div>
+            <div>
+              <div class="stat-number">15+</div>
+              <div class="stat-label" id="stat-gov">Years of translations for the Canadian government</div>
+            </div>
+            <div>
+              <div class="stat-number">3</div>
+              <div class="stat-label" id="stat-domains">Domains of analysis</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <span>© 2026 TransHorizons</span>
+      <span>Montreal · Canada · Global</span>
+      <span><a href="https://www.linkedin.com/in/peggy-brenier-6896b197/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.5);hover:color:#fff">LinkedIn</a></span>
+    </footer>
+
+    <script>
+      const translations = {
+        en: {
+          'story-title': 'Blending Linguistics with Global Analytics',
+          'story-positioning': 'Independent research focused on geopolitical, resource, and technological systems',
+          'story-intro': 'Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.\n\nCurrent practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada\'s position within evolving global structures.',
+          'strengths-title': 'Core Strengths',
+          'strengths-list': ['Institutional research and documentation developed through long-term federal collaboration', 'Interpretation of complex statistical, technical, and policy material', 'Translation of institutional knowledge into structured written analysis', 'Interdisciplinary perspective informed by extensive international exposure and comparative observation', 'Commitment to clear, evidence-based communication for public understanding'],
+          'research-title': 'Research Focus',
+          'research-text': 'Current work examines geopolitical dynamics, resource systems, and technological change through a structural, systems-oriented approach, aiming to clarify long-term global transformations relevant to Canadian and international contexts.',
+          'story-quote': '"Language is the map. Analysis is the journey. Understanding is the destination."\n\n"Translation was never only about language. Institutional work required continuous engagement with policy, research, and technical systems.',
+          'stat-years': 'Years of expertise',
+          'stat-gov': 'Years of translations for the Canadian government',
+          'stat-domains': 'Domains of analysis',
+          'btn-cv': '↓ Download CV',
+          'btn-publications': 'Writing & Translation Archive',
+          'btn-journeys': 'Journeys & Field Notes →',
+        },
+        fr: {
+          'story-title': 'Allier la linguistique à l\'analyse mondiale',
+          'story-positioning': 'Recherche indépendante axée sur les systèmes géopolitiques, les ressources et les technologies',
+          'story-intro': 'Traductrice principale et rédactrice analytique avec plus de vingt ans d\'expérience auprès d\'institutions fédérales canadiennes, notamment Statistique Canada et Ressources naturelles Canada. L\'expérience professionnelle s\'est concentrée sur les publications institutionnelles, la rédaction de rapports de recherche et la documentation technique complexe dans des environnements axés sur les données et les politiques.\n\nLa pratique actuelle s\'oriente de plus en plus vers la recherche indépendante et la rédaction analytique sur la géopolitique, les systèmes de ressources et la transformation technologique, avec une attention particulière à la position du Canada dans les structures mondiales en évolution.',
+          'strengths-title': 'Compétences clés',
+          'strengths-list': ['Recherche et documentation institutionnelles développées grâce à une collaboration fédérale à long terme', 'Interprétation de matériaux statistiques, techniques et politiques complexes', 'Traduction des connaissances institutionnelles en analyses écrites structurées', 'Perspective interdisciplinaire éclairée par une vaste exposition internationale et une observation comparative', 'Engagement envers une communication claire et fondée sur des données probantes pour la compréhension du public'],
+          'research-title': 'Axe de recherche',
+          'research-text': 'Les travaux actuels examinent la dynamique géopolitique, les systèmes de ressources et les changements technologiques selon une approche structurelle et systémique, visant à clarifier les transformations mondiales à long terme pertinentes pour les contextes canadiens et internationaux.',
+          'story-quote': '« La langue est la carte. L\'analyse est le voyage. La compréhension est la destination. »\n\n« La traduction n\'a jamais été uniquement une question de langue. Le travail institutionnel exigeait un engagement continu envers les politiques, la recherche et les systèmes techniques.',
+          'stat-years': 'Années d\'expertise',
+          'stat-gov': 'Années de traductions pour le gouvernement canadien',
+          'stat-domains': 'Domaines d\'analyse',
+          'btn-cv': '↓ Télécharger le CV',
+          'btn-publications': 'Archives de rédaction et de traduction',
+          'btn-journeys': 'Voyages et notes de terrain →',
+        }
+      };
+
+      function setLang(lang) {
+        const t = translations[lang];
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+
+        for (const [id, value] of Object.entries(t)) {
+          const el = document.getElementById(id);
+          if (!el) continue;
+          if (id === 'strengths-list') {
+            el.innerHTML = value.map(item => `<li><span class="bullet">•</span><span>${item}</span></li>`).join('');
+          } else {
+            el.textContent = value;
+          }
+        }
+        document.documentElement.lang = lang;
+      }
+    </script>
+
+  </body>
+</html>

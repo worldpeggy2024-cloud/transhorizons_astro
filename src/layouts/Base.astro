@@ -3,8 +3,12 @@ import '../styles/global.css';
 
 export interface Props {
   title?: string;
+  description?: string;
 }
-const { title = 'TransHorizons' } = Astro.props;
+const { 
+  title = 'TransHorizons',
+  description = 'Structured analysis of geopolitical, resource, and technological systems, particularly those shaping Canada\'s position in the world. Independent research by Peggy Brenier, Montreal.'
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -12,6 +16,7 @@ const { title = 'TransHorizons' } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

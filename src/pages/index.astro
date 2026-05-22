@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import AppShell from '../components/AppShell';
+
+const description = 'Structured analysis of geopolitical, resource, and technological systems, particularly those shaping Canada\'s position in the world. Independent research by Peggy Brenier, Montreal.';
+---
+
+<Base 
+  title="TransHorizons — Research, Maps & Geopolitical Analysis"
+  description={description}
+>
+
+  <!-- Static SEO content: invisible to visitors, fully readable by Google -->
+  <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>TransHorizons — Research, Maps & Geopolitical Analysis</h1>
+    <p>Structured analysis of geopolitical, resource, and technological systems, particularly those shaping Canada's position in the world. An independent research initiative by Peggy Brenier, Montreal, Canada.</p>
+    <nav>
+      <a href="/analyses">Analyses</a>
+      <a href="/world-analysis">World Analysis Maps</a>
+      <a href="/tools/critical-minerals-map">Critical Minerals Map</a>
+      <a href="/notes">Notes &amp; Reflections</a>
+      <a href="/research-approach">Research Approach</a>
+      <a href="/about">About</a>
+    </nav>
+    <section>
+      <h2>Analyses: Geopolitics, Resources, Technology</h2>
+      <p>Analyses and visual essays exploring the forces that shape our world — from resource geopolitics to digital governance and the strategic place of Canada within a shifting global order.</p>
+      <ul>
+        <li><a href="/portfolio/resource-civilization">Canada as a Resource Civilization</a> — Examines how resource structures shape Canada's development and position within evolving global systems.</li>
+        <li><a href="/portfolio/canada-resources">Canada's Resource Wealth in a Fractured World</a> — Canada's vast mineral endowment has moved from a background economic asset to a front-line geopolitical variable in an era of supply chain nationalism.</li>
+        <li><a href="/portfolio/geopolitics">Canada in the Multipolar World</a> — How shifting power structures redefine Canada's position within a fragmented global order.</li>
+        <li><a href="/portfolio/resources">Critical Minerals &amp; the Energy Transition</a> — How material supply chains are reshaping industrial systems and geopolitical positioning.</li>
+        <li><a href="/portfolio/technology">AI Governance &amp; Digital Sovereignty</a> — How digital systems and governance models are restructuring technological and geopolitical power.</li>
+        <li><a href="/portfolio/canada-forest-carbon">Net Carbon Effect of Canadian Forest Ecosystems</a> — How unprecedented wildfires have reversed the role of Canada's boreal forests in the global carbon cycle.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>World Analysis — Interactive Maps</h2>
+      <p>Interactive maps and visual explorations translating complex geopolitical and resource dynamics into spatial analysis. Country-level situation reports examining political stability, resource endowments, and strategic positioning within global systems.</p>
+    </section>
+    <section>
+      <h2>Critical Minerals Map</h2>
+      <p>Interactive tool tracking global critical mineral deposits, production, and supply chain dynamics. Covers lithium, cobalt, nickel, uranium, rare earth elements, and other minerals central to the energy transition and technological sovereignty.</p>
+    </section>
+    <section>
+      <h2>Notes &amp; Reflections</h2>
+      <p>Analytical reflections and research observations — exploring emerging patterns and evolving perspectives on geopolitical and technological systems.</p>
+      <ul>
+        <li><a href="/notes/career-evolution">From Translation Toward Research and Analysis</a> — How institutional translation became long-term training in research, curiosity, and analytical writing.</li>
+        <li><a href="/notes/travel-observation">Travel, Observation, and the Making of an Institutional Analyst</a> — How extended travel across multiple continents shaped an analytical perspective grounded in direct observation.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>About — Peggy Brenier</h2>
+      <p>Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Independent research focused on geopolitics, resource systems, and technological transformation. Based in Montreal, Canada.</p>
+      <a href="/about">Read full profile</a>
+    </section>
+    <footer>
+      <p>An independent exploration of geopolitics, global systems, resources, and technological transformation. Montreal, Quebec, Canada.</p>
+      <p>Contact: contact@transhorizons.net</p>
+    </footer>
+  </div>
+
+  <!-- React app: full visual experience for visitors, unchanged -->
+  <AppShell client:only="react" />
+
+</Base>
