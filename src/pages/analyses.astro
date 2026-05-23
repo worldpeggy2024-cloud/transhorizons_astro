@@ -1,0 +1,59 @@
+---
+// src/pages/analyses.astro
+import Base from '../layouts/Base.astro';
+import AppShell from '../components/AppShell';
+export const prerender = false;
+---
+<Base title="Analyses — Geopolitics, Resources & Technology | TransHorizons">
+  <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>Analyses: Geopolitics, Resources & Technology</h1>
+    <p>Analyses and visual essays exploring the forces that shape our world — from resource geopolitics to digital governance and the strategic place of Canada within a shifting global order.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/analyses">All Analyses</a>
+      <a href="/notes">Notes &amp; Reflections</a>
+      <a href="/about">About</a>
+    </nav>
+    <section>
+      <h2>All Analyses</h2>
+      <ul>
+        <li>
+          <a href="/portfolio/resource-civilization">Canada as a Resource Civilization</a>
+          <span>Systems · 14 min</span>
+          <p>Examines how resource structures shape Canada's development and position within evolving global systems. Tags: civilization, Canada, resources, energy transition, supply chains, geopolitics, critical minerals.</p>
+        </li>
+        <li>
+          <a href="/portfolio/canada-multipolar">Canada in the Multipolar World</a>
+          <span>Geopolitics · 12 min</span>
+          <p>Analyzes how shifting power structures redefine Canada's position within a fragmented global order. Tags: Canada, multipolar, foreign policy, alliances, US-Canada, trade, sovereignty.</p>
+        </li>
+        <li>
+          <a href="/portfolio/critical-minerals">Critical Minerals &amp; the Energy Transition</a>
+          <span>Resources · 10 min</span>
+          <p>Examines how material supply chains are reshaping industrial systems and geopolitical positioning. Tags: critical minerals, mining, Canada, supply chains, energy, battery metals, lithium, cobalt, nickel.</p>
+        </li>
+        <li>
+          <a href="/portfolio/ai-governance">AI Governance &amp; Digital Sovereignty</a>
+          <span>Technology · 13 min</span>
+          <p>Explores how digital systems and governance models are restructuring technological and geopolitical power. Tags: AI, governance, digital policy, regulation, algorithms, global standards, technology policy.</p>
+        </li>
+        <li>
+          <a href="/portfolio/canada-forest-system-climate-industrial-pressure">Canada's Forest System Under Climate and Industrial Pressure</a>
+          <span>Systems · 16 min</span>
+          <p>Examines how climate-driven disturbances, industrial structure, and geopolitical integration are reshaping Canada's forest system and its role within global resource and trade networks. Tags: forestry, Canada, climate change, wildfire, carbon, trade, industrial policy, environment.</p>
+        </li>
+        <li>
+          <a href="/portfolio/canada-forest-carbon">Net Carbon Effect of Canadian Forest Ecosystems</a>
+          <span>Resources · 18 min</span>
+          <p>How unprecedented wildfires have reversed the role of Canada's boreal forests in the global carbon cycle — from net sink to 1,138 Mt CO₂e net source in 2023. Tags: carbon markets, forestry, Canada, climate policy, net zero, offsets, environment.</p>
+        </li>
+        <li>
+          <a href="/portfolio/canada-resources">Canada's Resource Wealth in a Fractured World</a>
+          <span>Resources · 16 min</span>
+          <p>Canada's vast mineral endowment — lithium, cobalt, nickel, uranium, rare earths — has moved from a background economic asset to a front-line geopolitical variable. Tags: critical minerals, Canada, lithium, cobalt, uranium, rare earths, supply chains, US-Canada, Indigenous partnerships.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <AppShell client:only="react" />
+</Base>

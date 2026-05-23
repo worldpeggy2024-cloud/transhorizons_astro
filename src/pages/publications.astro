@@ -1,0 +1,47 @@
+---
+// src/pages/publications.astro
+import Base from '../layouts/Base.astro';
+import AppShell from '../components/AppShell';
+export const prerender = false;
+---
+<Base title="Writing & Translation Archive — TransHorizons">
+  <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>Writing &amp; Translation Archive</h1>
+    <p>More than 25 years of translation work across education, economics, and institutional contexts. A selection of published translations and the recognition they received.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/analyses">Analyses</a>
+    </nav>
+    <section>
+      <h2>Award</h2>
+      <p>Prix de la ministre de l'Éducation, du Loisir et du Sport du Québec (2007–2008) — Awarded for the translation of "Comportement organisationnel — Comportements humains et organisations dans un environnement complexe."</p>
+    </section>
+    <section>
+      <h2>Published Translations</h2>
+      <ul>
+        <li>
+          <h3>Comportement organisationnel — Comportements humains et organisations dans un environnement complexe</h3>
+          <p>ISBN-13: 978-2765104490. Chenélière McGraw-Hill, August 2007. Translation from English to French of Canadian Organizational Behaviour by Steven L. McShane. Adaptation with Charles Benabou (UQAM). 827 pages. Winner of the Prix de la ministre de l'Éducation, du Loisir et du Sport du Québec (2007–2008).</p>
+        </li>
+        <li>
+          <h3>Économie contemporaine : les grands enjeux</h3>
+          <p>ISBN-13: 9782893109947. Les Éditions de la Chenelière, 2004. Translation from English to French with Anne Courtois. Listed as a mandatory resource in New Brunswick's economics curriculum (Introduction à l'économie, course 44411).</p>
+        </li>
+        <li>
+          <h3>Mathématiques 10 (Investigation Mathématiques 10)</h3>
+          <p>ISBN-13: 9782761330169. Pearson ERPI. Translation from English to French with Gilles Rivet. Mathematics textbook for Grade 10 students (WNCP program). Listed with Manitoba's French Educational Resources Department (DREF).</p>
+        </li>
+        <li>
+          <h3>Investigation Sciences et technologie 7</h3>
+          <p>ISBN-13: 9782761330176. Pearson ERPI. Translation from English to French with Guy Brochu. Grade 7 science and technology textbook. Used in French-language classrooms across Canada.</p>
+        </li>
+        <li>
+          <h3>Développement humain et rôle parental (Parenting in Canada: Human Growth and Development)</h3>
+          <p>ISBN-13: 9782765001096. Éditions de la Chenelière, 2004. Translation with Johanne Charlebois. 498 pages, illustrated in colour.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <AppShell client:only="react" />
+</Base>

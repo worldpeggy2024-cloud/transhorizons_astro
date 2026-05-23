@@ -77,7 +77,7 @@ const translations: Record<Language, Record<string, string>> = {
     'featuredAnalysis.readMore': 'Read essay',
 
     // Story Section
-    'story.intro': 'Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.\n\nCurrent practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada\'s position within evolving global structures.',
+    'story.intro': 'Senior translator and analytical writer with over two decades of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.\n\nCurrent practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada\'s position within evolving global structures.',
     'story.strengths.title': 'Core Strengths',
     'story.strengths.item1': 'Institutional research and documentation developed through long-term federal collaboration',
     'story.strengths.item2': 'Interpretation of complex statistical, technical, and policy material',
@@ -87,7 +87,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.research.title': 'Research Focus',
     'story.research.text': 'Current work examines geopolitical dynamics, resource systems, and technological change through a structural, systems-oriented approach, aiming to clarify long-term global transformations relevant to Canadian and international contexts.',
     'story.title': 'Blending Linguistics with Global Analytics',
-    'story.years': 'Years of expertise',
+    'story.years': 'Years of expertise overall',
     'story.government': 'Years of translations for the Canadian government',
     'story.domains': 'Domains of analysis',
     'story.quote': 'Language is the map. Analysis is the journey. Understanding is the destination."\n\n"Translation was never only about language. Institutional work required continuous engagement with policy, research, and technical systems. It also required understanding the ways societies organize and communicate knowledge.',

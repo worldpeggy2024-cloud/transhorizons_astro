@@ -1,0 +1,39 @@
+---
+// src/pages/notes/index.astro
+import Base from '../../layouts/Base.astro';
+import AppShell from '../../components/AppShell';
+export const prerender = false;
+---
+<Base title="Notes & Reflections — TransHorizons">
+  <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>Notes &amp; Reflections</h1>
+    <p>Analytical reflections and research observations — exploring emerging patterns and evolving perspectives on geopolitical and technological systems.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/analyses">Analyses</a>
+      <a href="/notes">Notes &amp; Reflections</a>
+      <a href="/about">About</a>
+    </nav>
+    <section>
+      <h2>All Notes</h2>
+      <ul>
+        <li>
+          <a href="/notes/career-evolution">From Translation Toward Research and Analysis</a>
+          <span>Notes · 8 min</span>
+          <p>A reflection on how institutional translation became long-term training in research, curiosity, and analytical writing. After more than two decades working as a translator with Canadian federal departments including Statistics Canada and Natural Resources Canada.</p>
+        </li>
+        <li>
+          <a href="/notes/travel-observation">Travel, Observation, and the Making of an Institutional Analyst</a>
+          <span>Observations · 10 min</span>
+          <p>How sustained travel across continents became a method of inquiry and shaped an analytical perspective grounded in direct observation. From Europe to Asia, the Americas, and beyond.</p>
+        </li>
+        <li>
+          <a href="/notes/canada-resources">Critical Minerals: Canada's Resource Nexus</a>
+          <span>Systems &amp; Signals · 12 min</span>
+          <p>Canada's abundance of critical minerals positions it at the centre of global supply chains. An examination of resource wealth, geopolitical implications, and the choices shaping Canada's role in the energy transition.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <AppShell client:only="react" />
+</Base>
