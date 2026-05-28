@@ -38,6 +38,8 @@ export default function PortfolioGeopolitics() {
     category: r[`category_${L}`] ?? r.category_en ?? '',
   }));
 
+  const sources: string[] = (d.sources?.[L] ?? d.sources?.en ?? []) as string[];
+
   return (
     <ProjectDetailLayout
       title={d[`title_${L}`] ?? ''}
@@ -52,6 +54,8 @@ export default function PortfolioGeopolitics() {
       sections={sections}
       keyTakeaways={keyTakeaways}
       relatedProjects={relatedProjects}
+      sources={sources}
+      language={L}
     />
   );
 }

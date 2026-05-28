@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 import { buildArticleTextFromProps } from '../lib/articleTexts';
 import { smoothScrollTo } from '../lib/smoothScroll';
+import { useLanguage } from '../contexts/LanguageContext';
 
 /** Renders a content string that may contain multiple paragraphs (separated by
  *  blank lines) and bullet-point blocks (lines starting with •). */
@@ -75,6 +76,7 @@ interface ProjectDetailLayoutProps {
     title: string;
     category: string;
   }>;
+  sources?: string[];
   language?: 'en' | 'fr';
   beforeSectionsContent?: React.ReactNode;
   sectionExtras?: Record<number, React.ReactNode>;
@@ -93,6 +95,7 @@ export default function ProjectDetailLayout({
   sections,
   keyTakeaways,
   relatedProjects,
+  sources,
   language = 'en',
   beforeSectionsContent,
   sectionExtras,
@@ -100,18 +103,21 @@ export default function ProjectDetailLayout({
   const [, navigate] = useLocation();
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   const [lightboxScale, setLightboxScale] = useState(1);
-  const backToPortfolioLabel = language === 'fr' ? 'Retour au Portfolio' : 'Back to Portfolio';
-  const backToAnalysesLabel = language === 'fr' ? 'Retour aux analyses' : 'Back to Portfolio';
-  const readLabel = language === 'fr' ? 'de lecture' : 'read';
-  const keyTakeawaysLabel = language === 'fr' ? 'Points clés' : 'Key Takeaways';
-  const relatedProjectsLabel = language === 'fr' ? 'Projets connexes' : 'Related Projects';
-  const backToHomeLabel = language === 'fr' ? 'Retour a l\'accueil' : 'Back to Home';
-  const navigationLabel = language === 'fr' ? 'Navigation' : 'Navigation';
-  const homeLabel = language === 'fr' ? 'Accueil' : 'Home';
-  const portfolioLabel = language === 'fr' ? 'Portfolio' : 'Portfolio';
-  const notesLabel = language === 'fr' ? 'Notes' : 'Notes';
-  const contactLabel = language === 'fr' ? 'Contact' : 'Contact';
-  const followLabel = language === 'fr' ? 'Suivre' : 'Follow';
+  const { language: ctxLang, setLanguage } = useLanguage();
+  const lang = ctxLang === 'fr' ? 'fr' : 'en';
+  const backToPortfolioLabel = lang === 'fr' ? 'Retour au Portfolio' : 'Back to Portfolio';
+  const backToAnalysesLabel = lang === 'fr' ? 'Retour aux analyses' : 'Back to Portfolio';
+  const readLabel = lang === 'fr' ? 'de lecture' : 'read';
+  const keyTakeawaysLabel = lang === 'fr' ? 'Points clés' : 'Key Takeaways';
+  const relatedProjectsLabel = lang === 'fr' ? 'Projets connexes' : 'Related Projects';
+  const sourcesLabel = lang === 'fr' ? 'Sources et notes' : 'Sources & Notes';
+  const backToHomeLabel = lang === 'fr' ? 'Retour a l\'accueil' : 'Back to Home';
+  const navigationLabel = lang === 'fr' ? 'Navigation' : 'Navigation';
+  const homeLabel = lang === 'fr' ? 'Accueil' : 'Home';
+  const portfolioLabel = lang === 'fr' ? 'Portfolio' : 'Portfolio';
+  const notesLabel = lang === 'fr' ? 'Notes' : 'Notes';
+  const contactLabel = lang === 'fr' ? 'Contact' : 'Contact';
+  const followLabel = lang === 'fr' ? 'Suivre' : 'Follow';
 
   const goHomeTop = () => {
     navigate('/');
@@ -166,7 +172,28 @@ export default function ProjectDetailLayout({
               <span>{backToAnalysesLabel}</span>
             </button>
           </div>
-          <div className="text-xs text-[#999] font-body tracking-wide uppercase">{category}</div>
+          <div className="flex items-center gap-4">
+            <div className="text-xs text-[#999] font-body tracking-wide uppercase">{category}</div>
+            <div className="flex items-center gap-2 border-l border-[#C8C8C8] pl-4">
+              <button
+                onClick={() => setLanguage('en')}
+                className={`font-body text-[0.7rem] font-medium tracking-[0.12em] uppercase transition-colors ${
+                  lang === 'en' ? 'text-[#7D1A2E] font-semibold' : 'text-[#999] hover:text-[#4A4A4A]'
+                }`}
+              >
+                EN
+              </button>
+              <span className="text-[#C0B8AD] text-xs">|</span>
+              <button
+                onClick={() => setLanguage('fr')}
+                className={`font-body text-[0.7rem] font-medium tracking-[0.12em] uppercase transition-colors ${
+                  lang === 'fr' ? 'text-[#7D1A2E] font-semibold' : 'text-[#999] hover:text-[#4A4A4A]'
+                }`}
+              >
+                FR
+              </button>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -197,7 +224,7 @@ export default function ProjectDetailLayout({
               <PortfolioTTSPlayer
                 id={`detail-${title}`}
                 text={buildArticleTextFromProps(title, subtitle, introduction, sections, keyTakeaways)}
-                lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                lang={lang === 'fr' ? 'fr-FR' : 'en-CA'}
                 dark
               />
             </div>
@@ -271,7 +298,7 @@ export default function ProjectDetailLayout({
                             {img.linkLabel ?? img.linkHref}
                           </button>
                           <p className="mt-0.5 font-body text-xs text-[#888]">
-                            {language === 'fr'
+                            {lang === 'fr'
                               ? 'S\'affiche en plein écran — appuyez sur × ou Échap pour fermer.'
                               : 'Opens full-screen — press × or Esc to close.'}
                           </p>
@@ -304,7 +331,7 @@ export default function ProjectDetailLayout({
                         {section.imageLinkLabel ?? section.imageLinkHref}
                       </button>
                       <p className="mt-0.5 font-body text-xs text-[#888]">
-                        {language === 'fr'
+                        {lang === 'fr'
                           ? 'S\'affiche en plein écran — appuyez sur × ou Échap pour fermer.'
                           : 'Opens full-screen — press × or Esc to close.'}
                       </p>
@@ -319,35 +346,19 @@ export default function ProjectDetailLayout({
             </h2>
 
             {section.image && section.imagePosition !== 'full' && section.imagePosition !== 'side-by-side' ? (
-              <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8`}>
-                {section.imagePosition === 'right' ? (
-                  <>
-                    <div>
-                      <div className="text-[#555] font-body leading-relaxed text-lg">
-                        {renderRichText(section.content)}
-                      </div>
-                    </div>
-                    <img
-                      src={section.image}
-                      alt={section.title}
-                      className="rounded-lg object-cover h-[400px]"
-                    />
-                  </>
-                ) : (
-                  <>
-                    <img
-                      src={section.image}
-                      alt={section.title}
-                      className="rounded-lg object-cover h-[400px]"
-                    />
-                    <div>
-                      <div className="text-[#555] font-body leading-relaxed text-lg">
-                        {renderRichText(section.content)}
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
+              <>
+                <div style={{ width: '100%', display: 'block', marginBottom: '2rem', overflow: 'hidden' }}>
+                  <img
+                    src={section.image}
+                    alt={section.title}
+                    style={{ width: '100%', height: 'auto', display: 'block', float: 'none' }}
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="text-[#555] font-body leading-relaxed text-lg mb-8">
+                  {renderRichText(section.content)}
+                </div>
+              </>
             ) : (
               <div className="text-[#555] font-body leading-relaxed text-lg mb-8">
                 {renderRichText(section.content)}
@@ -356,6 +367,21 @@ export default function ProjectDetailLayout({
             {sectionExtras?.[idx]}
           </section>
         ))}
+
+        {/* Sources */}
+        {sources && sources.length > 0 && (
+          <section className="mt-20 pt-10 border-t border-[#C8C8C8]">
+            <h3 className="font-display text-xl font-light text-[#1A1A1A] mb-6">{sourcesLabel}</h3>
+            <ol className="space-y-2">
+              {sources.map((source, idx) => (
+                <li key={idx} className="flex gap-3 text-sm font-body text-[#888] leading-relaxed">
+                  <span className="flex-shrink-0 text-[#B89860]">{idx + 1}.</span>
+                  <span>{source}</span>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
 
         {/* Related Projects */}
         {relatedProjects && relatedProjects.length > 0 && (
@@ -473,14 +499,14 @@ export default function ProjectDetailLayout({
             aria-label="Close"
           >
             <X size={16} />
-            <span>{language === 'fr' ? 'Fermer' : 'Close'}</span>
+            <span>{lang === 'fr' ? 'Fermer' : 'Close'}</span>
           </button>
           {lightboxScale > 1 && (
             <button
               onClick={(e) => { e.stopPropagation(); setLightboxScale(1); }}
               className="absolute top-4 left-4 z-10 rounded bg-white/10 px-3 py-2 text-white hover:bg-white/20 transition-colors font-body text-sm"
             >
-              {language === 'fr' ? 'Réinitialiser zoom' : 'Reset zoom'}
+              {lang === 'fr' ? 'Réinitialiser zoom' : 'Reset zoom'}
             </button>
           )}
           <img
