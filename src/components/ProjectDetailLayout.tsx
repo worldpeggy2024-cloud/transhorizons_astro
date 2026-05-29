@@ -62,6 +62,7 @@ interface ProjectDetailLayoutProps {
     title: string;
     content: string;
     image?: string;
+    images?: string[];
     embedUrl?: string;
     imagePosition?: 'left' | 'right' | 'full' | 'side-by-side';
     imageWidthClass?: string;

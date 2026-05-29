@@ -116,7 +116,7 @@ const UI = labels[L];
     {keyTakeaways.length > 0 && (
       <section class="bg-[#F5F3F0] border-b border-[#C8C8C8] py-12">
         <div class="container max-w-3xl mx-auto px-6">
-          <h3 class="font-playfair text-2xl font-bold text-charcoal mb-8">{introTitle}</h3>
+          <h3 class="font-playfair text-2xl font-bold text-charcoal mb-8">{introTitle || (L === 'fr' ? 'Points clés' : 'Key Takeaways')}</h3>
           <ul class="space-y-4">
             {keyTakeaways.map(item => (
               <li class="flex gap-3 items-start">
@@ -206,6 +206,22 @@ const UI = labels[L];
             </div>
           </div>
 
+        </div>
+      </div>
+    )}
+
+    {/* Side-by-side — two images shown together, each with an optional caption */}
+    {section.imageLayout === 'side-by-side' && section.images.length >= 2 && (
+      <div class="container max-w-5xl mx-auto px-6 mb-8">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+          {section.images.slice(0, 2).map((img) => (
+            <figure style="margin:0;">
+              <img src={img.src} alt={img.label} style="width:100%; height:auto; display:block; border-radius:0.5rem;" />
+              {img.label && (
+                <figcaption style="margin-top:0.5rem; font-size:0.8rem; opacity:0.65; text-align:center;">{img.label}</figcaption>
+              )}
+            </figure>
+          ))}
         </div>
       </div>
     )}
