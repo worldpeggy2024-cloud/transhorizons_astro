@@ -24,6 +24,7 @@ export default function PortfolioGeopolitics() {
     // (imagePosition + images:string[]) so both renderers stay in sync.
     images: (s.images ?? []).map((img: any) => (typeof img === 'string' ? img : img?.src)).filter(Boolean),
     embedUrl: s.embedUrl,
+    embedHeight: s.embedHeight,
     imagePosition: s.imageLayout === 'side-by-side' ? 'side-by-side' : s.imagePosition,
     imageWidthClass: s.imageWidthClass,
     imageLinkHref: s.imageLink_href,

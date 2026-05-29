@@ -35,6 +35,8 @@ const sections = (data.sections ?? []).map((s: Record<string, any>) => ({
     src: img.src,
     label: img[`label_${L}`] ?? img.label_en ?? '',
   })),
+  embedUrl: s.embedUrl,
+  embedHeight: s.embedHeight ?? 500,
 }));
 
 const sourcesList: string[] = data.sources?.[L] ?? data.sources?.en ?? [];
@@ -141,6 +143,18 @@ const UI = labels[L];
     <article class="container max-w-3xl mx-auto px-6">
       <h2 class="font-playfair text-3xl font-bold text-charcoal mb-8">{section.title}</h2>
     </article>
+
+    {/* Embedded interactive visualization — scrollable iframe of the live HTML */}
+    {section.embedUrl && (
+      <div class="container max-w-5xl mx-auto px-6 mb-8">
+        <iframe
+          src={section.embedUrl}
+          title={section.title}
+          loading="lazy"
+          style={`height:${section.embedHeight}px; width:100%; border:none; overflow-y:scroll; display:block;`}
+        ></iframe>
+      </div>
+    )}
 
     {/* Single image — full-width block before text content, outside any container */}
     {section.image && section.imageLayout === 'single' && (

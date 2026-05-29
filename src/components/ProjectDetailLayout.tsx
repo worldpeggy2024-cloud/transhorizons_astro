@@ -64,6 +64,7 @@ interface ProjectDetailLayoutProps {
     image?: string;
     images?: string[];
     embedUrl?: string;
+    embedHeight?: number;
     imagePosition?: 'left' | 'right' | 'full' | 'side-by-side';
     imageWidthClass?: string;
     imageLinkHref?: string;
@@ -324,7 +325,8 @@ export default function ProjectDetailLayout({
                 <iframe
                   src={section.embedUrl}
                   title={section.title}
-                  style={{ width: '100%', height: '1100px', border: 'none', display: 'block' }}
+                  loading="lazy"
+                  style={{ width: '100%', height: `${section.embedHeight ?? 1100}px`, border: 'none', overflowY: 'scroll', display: 'block' }}
                 />
               </div>
             )}

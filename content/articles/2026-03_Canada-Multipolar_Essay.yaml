@@ -153,8 +153,8 @@ sections:
 
 
       Cette position n'est ni marginale ni dominante. Elle est relationnelle.
-    image: /images/CanadaGeopoloticalPositioning.jpg
-    imagePosition: right
+    embedUrl: /visualizations/canada-sphere-of-influence.html
+    embedHeight: 500
   - title_en: Integration and Constraint
     title_fr: Intégration et contrainte
     content_en: >-
