@@ -62,7 +62,8 @@ interface ProjectDetailLayoutProps {
     title: string;
     content: string;
     image?: string;
-    images?: string[];
+    images?: Array<{ src: string; label?: string }>;
+    imageLayout?: 'single' | 'side-by-side' | 'dual-toggle';
     embedUrl?: string;
     embedHeight?: number;
     imagePosition?: 'left' | 'right' | 'full' | 'side-by-side';
@@ -106,6 +107,8 @@ export default function ProjectDetailLayout({
   const [, navigate] = useLocation();
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   const [lightboxScale, setLightboxScale] = useState(1);
+  // Active image index per section, for dual-toggle map switchers (keyed by section index)
+  const [mapToggle, setMapToggle] = useState<Record<number, number>>({});
   const { language: ctxLang, setLanguage } = useLanguage();
   const lang = ctxLang === 'fr' ? 'fr' : 'en';
   const backToPortfolioLabel = lang === 'fr' ? 'Retour au Portfolio' : 'Back to Portfolio';
@@ -280,8 +283,8 @@ export default function ProjectDetailLayout({
             {/* Side-by-side images rendered before the section title (new logic) */}
             {section.imagePosition === 'side-by-side' && Array.isArray(section.images) && section.images.length >= 2 && (
               <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem', width:'100%', marginBottom:'2rem'}}>
-                <img src={section.images[0]} style={{width:'100%', height:'auto', display:'block'}} alt={section.title} />
-                <img src={section.images[1]} style={{width:'100%', height:'auto', display:'block'}} alt={section.title} />
+                <img src={section.images[0].src} style={{width:'100%', height:'auto', display:'block'}} alt={section.images[0].label ?? section.title} />
+                <img src={section.images[1].src} style={{width:'100%', height:'auto', display:'block'}} alt={section.images[1].label ?? section.title} />
               </div>
             )}
 
@@ -327,6 +330,39 @@ export default function ProjectDetailLayout({
                   title={section.title}
                   loading="lazy"
                   style={{ width: '100%', height: `${section.embedHeight ?? 1100}px`, border: 'none', overflowY: 'scroll', display: 'block' }}
+                />
+              </div>
+            )}
+
+            {/* Dual-toggle — one full-width map at a time, with a button per image */}
+            {section.imageLayout === 'dual-toggle' && Array.isArray(section.images) && section.images.length >= 2 && (
+              <div style={{ width: '100%', marginBottom: '2rem' }}>
+                <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                  {section.images.map((img, i) => {
+                    const active = (mapToggle[idx] ?? 0) === i;
+                    return (
+                      <button
+                        key={i}
+                        onClick={() => setMapToggle(s => ({ ...s, [idx]: i }))}
+                        style={{
+                          padding: '0.4rem 1rem',
+                          background: active ? '#1a2a4a' : 'transparent',
+                          color: active ? '#fff' : '#6a8aaa',
+                          border: '1px solid #4a6a9a',
+                          borderRadius: '4px',
+                          cursor: 'pointer',
+                          fontSize: '0.85rem',
+                        }}
+                      >
+                        {img.label}
+                      </button>
+                    );
+                  })}
+                </div>
+                <img
+                  src={section.images[mapToggle[idx] ?? 0].src}
+                  alt={section.images[mapToggle[idx] ?? 0].label ?? section.title}
+                  style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '0.5rem' }}
                 />
               </div>
             )}

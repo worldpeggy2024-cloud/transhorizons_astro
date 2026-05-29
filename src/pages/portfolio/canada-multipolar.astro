@@ -167,60 +167,24 @@ const UI = labels[L];
       </div>
     )}
 
-    {/* Dual-panel toggle — 2 side-by-side images, each with a geopolitical/trade-volumes toggle */}
-    {section.imageLayout === 'dual-toggle' && section.images.length >= 4 && (
+    {/* Dual-toggle — one full-width map at a time, with a button per image */}
+    {section.imageLayout === 'dual-toggle' && section.images.length >= 2 && (
       <div class="container max-w-5xl mx-auto px-6 mb-8">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
-
-          {/* Left panel */}
-          <div>
-            <div style="display:flex; gap:0.5rem; margin-bottom:0.75rem;">
-              <button
-                class="img-toggle-btn"
-                data-panel={`p${sIdx}-left`}
-                data-idx="0"
-                style="font-size:0.7rem; padding:0.25rem 0.75rem; border:1px solid var(--color-sand,#C8A96E); background:var(--color-sand,#C8A96E); color:#fff; border-radius:4px; cursor:pointer;"
-              >{section.images[0].label}</button>
-              <button
-                class="img-toggle-btn"
-                data-panel={`p${sIdx}-left`}
-                data-idx="1"
-                style="font-size:0.7rem; padding:0.25rem 0.75rem; border:1px solid var(--color-sand,#C8A96E); background:transparent; color:inherit; border-radius:4px; cursor:pointer; opacity:0.6;"
-              >{section.images[1].label}</button>
-            </div>
-            <div class="img-panel" data-panel={`p${sIdx}-left`} data-idx="0" style="display:block;">
-              <img src={section.images[0].src} alt={section.images[0].label} style="width:100%; height:auto; display:block;" />
-            </div>
-            <div class="img-panel" data-panel={`p${sIdx}-left`} data-idx="1" style="display:none;">
-              <img src={section.images[1].src} alt={section.images[1].label} style="width:100%; height:auto; display:block;" />
-            </div>
-          </div>
-
-          {/* Right panel */}
-          <div>
-            <div style="display:flex; gap:0.5rem; margin-bottom:0.75rem;">
-              <button
-                class="img-toggle-btn"
-                data-panel={`p${sIdx}-right`}
-                data-idx="0"
-                style="font-size:0.7rem; padding:0.25rem 0.75rem; border:1px solid var(--color-sand,#C8A96E); background:var(--color-sand,#C8A96E); color:#fff; border-radius:4px; cursor:pointer;"
-              >{section.images[2].label}</button>
-              <button
-                class="img-toggle-btn"
-                data-panel={`p${sIdx}-right`}
-                data-idx="1"
-                style="font-size:0.7rem; padding:0.25rem 0.75rem; border:1px solid var(--color-sand,#C8A96E); background:transparent; color:inherit; border-radius:4px; cursor:pointer; opacity:0.6;"
-              >{section.images[3].label}</button>
-            </div>
-            <div class="img-panel" data-panel={`p${sIdx}-right`} data-idx="0" style="display:block;">
-              <img src={section.images[2].src} alt={section.images[2].label} style="width:100%; height:auto; display:block;" />
-            </div>
-            <div class="img-panel" data-panel={`p${sIdx}-right`} data-idx="1" style="display:none;">
-              <img src={section.images[3].src} alt={section.images[3].label} style="width:100%; height:auto; display:block;" />
-            </div>
-          </div>
-
+        <div style="display:flex; gap:0.75rem; margin-bottom:1rem; flex-wrap:wrap;">
+          {section.images.map((img, i) => (
+            <button
+              class="map-toggle-btn"
+              data-group={`mt${sIdx}`}
+              data-idx={String(i)}
+              style={`padding:0.4rem 1rem; background:${i === 0 ? '#1a2a4a' : 'transparent'}; color:${i === 0 ? '#fff' : '#6a8aaa'}; border:1px solid #4a6a9a; border-radius:4px; cursor:pointer; font-size:0.85rem;`}
+            >{img.label}</button>
+          ))}
         </div>
+        {section.images.map((img, i) => (
+          <div class="map-toggle-panel" data-group={`mt${sIdx}`} data-idx={String(i)} style={`display:${i === 0 ? 'block' : 'none'};`}>
+            <img src={img.src} alt={img.label} style="width:100%; height:auto; display:block; border-radius:0.5rem;" />
+          </div>
+        ))}
       </div>
     )}
 
@@ -248,26 +212,22 @@ const UI = labels[L];
 ))}
 
 <script>
-  document.querySelectorAll('.img-toggle-btn').forEach(btn => {
+  document.querySelectorAll('.map-toggle-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const el = btn as HTMLElement;
-      const panel = el.dataset.panel!;
+      const group = el.dataset.group!;
       const idx = el.dataset.idx!;
 
-      // Reset all buttons in this panel
-      document.querySelectorAll<HTMLElement>(`.img-toggle-btn[data-panel="${panel}"]`).forEach(b => {
-        b.style.background = 'transparent';
-        b.style.color = 'inherit';
-        b.style.opacity = '0.6';
+      // Highlight the active button, dim the rest in this group
+      document.querySelectorAll<HTMLElement>(`.map-toggle-btn[data-group="${group}"]`).forEach(b => {
+        const active = b.dataset.idx === idx;
+        b.style.background = active ? '#1a2a4a' : 'transparent';
+        b.style.color = active ? '#fff' : '#6a8aaa';
       });
-      // Activate clicked button
-      el.style.background = 'var(--color-sand, #C8A96E)';
-      el.style.color = '#fff';
-      el.style.opacity = '1';
 
-      // Swap images
-      document.querySelectorAll<HTMLElement>(`.img-panel[data-panel="${panel}"]`).forEach(panel => {
-        panel.style.display = panel.dataset.idx === idx ? 'block' : 'none';
+      // Show the matching map, hide the others
+      document.querySelectorAll<HTMLElement>(`.map-toggle-panel[data-group="${group}"]`).forEach(p => {
+        p.style.display = p.dataset.idx === idx ? 'block' : 'none';
       });
     });
   });

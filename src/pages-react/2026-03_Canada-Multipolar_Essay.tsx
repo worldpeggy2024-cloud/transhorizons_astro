@@ -20,9 +20,12 @@ export default function PortfolioGeopolitics() {
     content: s[`content_${L}`] ?? s.content_en ?? '',
     image: s.image,
     // Canonical YAML (read by the SSR .astro page) uses imageLayout +
-    // images:[{src,label}]. Normalize to what ProjectDetailLayout expects
-    // (imagePosition + images:string[]) so both renderers stay in sync.
-    images: (s.images ?? []).map((img: any) => (typeof img === 'string' ? img : img?.src)).filter(Boolean),
+    // images:[{src,label_en,label_fr}]. Normalize the captions to the active
+    // language so both renderers stay in sync.
+    imageLayout: s.imageLayout,
+    images: (s.images ?? [])
+      .map((img: any) => (typeof img === 'string' ? { src: img } : { src: img?.src, label: img?.[`label_${L}`] ?? img?.label_en }))
+      .filter((i: { src?: string }) => i.src),
     embedUrl: s.embedUrl,
     embedHeight: s.embedHeight,
     imagePosition: s.imageLayout === 'side-by-side' ? 'side-by-side' : s.imagePosition,

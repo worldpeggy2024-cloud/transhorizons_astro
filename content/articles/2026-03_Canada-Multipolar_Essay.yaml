@@ -475,14 +475,14 @@ sections:
       ces données existent sans être accessibles au public, ou qu’elles
       n’existent pas encore, l’écart entre l’exposition et sa mesure mérite
       d’être relevé.
-    imageLayout: side-by-side
+    imageLayout: dual-toggle
     images:
       - src: /images/maritime_chokepoints_canadian_geopolitical_simplified.png
-        label_en: Geopolitical vulnerabilities at maritime chokepoints
-        label_fr: Vulnérabilités géopolitiques aux goulets d’étranglement maritimes
+        label_en: Geopolitical Vulnerabilities
+        label_fr: Vulnérabilités géopolitiques
       - src: /images/canadian_maritime_trade_corrected.png
-        label_en: Chokepoint dependencies by trade-route volume
-        label_fr: Dépendances aux goulets d’étranglement selon le volume des routes
+        label_en: Chokepoint Dependencies
+        label_fr: Dépendances aux goulets d’étranglement
     imagePosition: right
   - title_en: Conclusion
     title_fr: Conclusion
