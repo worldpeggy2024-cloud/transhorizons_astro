@@ -8,9 +8,36 @@ const sectionFields = {
   image: fields.text({ label: 'Image URL', validation: { isRequired: false } }),
   imagePosition: fields.select({
     label: 'Image Position',
-    options: [{ label: 'Left', value: 'left' }, { label: 'Right', value: 'right' }],
+    options: [
+      { label: 'Left', value: 'left' },
+      { label: 'Right', value: 'right' },
+      { label: 'Full width', value: 'full' },
+      { label: 'Side by side', value: 'side-by-side' },
+    ],
     defaultValue: 'right',
   }),
+  // Multi-image layout (read by the SSR .astro page; keep these or Keystatic
+  // saves silently strip them).
+  imageLayout: fields.select({
+    label: 'Image Layout',
+    options: [
+      { label: 'Single', value: 'single' },
+      { label: 'Side by side (2 images)', value: 'side-by-side' },
+      { label: 'Dual toggle (4 images)', value: 'dual-toggle' },
+    ],
+    defaultValue: 'single',
+  }),
+  images: fields.array(
+    fields.object({
+      src: fields.text({ label: 'Image URL' }),
+      label_en: fields.text({ label: 'Caption (EN)', validation: { isRequired: false } }),
+      label_fr: fields.text({ label: 'Caption (FR)', validation: { isRequired: false } }),
+    }),
+    { label: 'Images (side-by-side / dual-toggle)', itemLabel: (props) => props.fields.src.value || 'Image' }
+  ),
+  // Embedded interactive visualization (scrollable iframe of a /visualizations/*.html page).
+  embedUrl: fields.text({ label: 'Embed URL (iframe, e.g. /visualizations/x.html)', validation: { isRequired: false } }),
+  embedHeight: fields.integer({ label: 'Embed Height (px)', validation: { isRequired: false } }),
 };
 
 const takeawayFields = {
