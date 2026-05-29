@@ -62,6 +62,7 @@ interface ProjectDetailLayoutProps {
     title: string;
     content: string;
     image?: string;
+    embedUrl?: string;
     imagePosition?: 'left' | 'right' | 'full' | 'side-by-side';
     imageWidthClass?: string;
     imageLinkHref?: string;
@@ -274,39 +275,11 @@ export default function ProjectDetailLayout({
         {/* Content Sections */}
         {sections.map((section, idx) => (
           <section key={idx} className="mb-20">
-            {/* Side-by-side images rendered before the section title */}
-            {section.imagePosition === 'side-by-side' && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {[
-                  { src: section.image, linkHref: section.imageLinkHref, linkLabel: section.imageLinkLabel },
-                  { src: section.image2, linkHref: section.image2LinkHref, linkLabel: section.image2LinkLabel },
-                ].map((img, i) => img.src ? (
-                  <div key={i}>
-                    <img
-                      src={img.src}
-                      alt={section.title}
-                      className="w-full rounded-lg object-cover mb-2"
-                    />
-                    {img.linkHref && (
-                      <div className="flex items-start gap-2 rounded border border-[#C8C8C8] bg-[#F5F3F0] px-3 py-2">
-                        <Maximize2 size={13} className="mt-0.5 text-[#7D1A2E] flex-shrink-0" aria-hidden />
-                        <div>
-                          <button
-                            onClick={() => setLightboxSrc(img.linkHref!)}
-                            className="font-body text-sm font-medium text-[#7D1A2E] hover:text-[#5A1320] underline underline-offset-2 transition-colors text-left"
-                          >
-                            {img.linkLabel ?? img.linkHref}
-                          </button>
-                          <p className="mt-0.5 font-body text-xs text-[#888]">
-                            {lang === 'fr'
-                              ? 'S\'affiche en plein écran — appuyez sur × ou Échap pour fermer.'
-                              : 'Opens full-screen — press × or Esc to close.'}
-                          </p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                ) : null)}
+            {/* Side-by-side images rendered before the section title (new logic) */}
+            {section.imagePosition === 'side-by-side' && Array.isArray(section.images) && section.images.length >= 2 && (
+              <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem', width:'100%', marginBottom:'2rem'}}>
+                <img src={section.images[0]} style={{width:'100%', height:'auto', display:'block'}} alt={section.title} />
+                <img src={section.images[1]} style={{width:'100%', height:'auto', display:'block'}} alt={section.title} />
               </div>
             )}
 
@@ -344,6 +317,16 @@ export default function ProjectDetailLayout({
             <h2 className="font-display text-3xl md:text-4xl font-light text-[#1A1A1A] mb-8 leading-tight">
               {section.title}
             </h2>
+
+            {section.embedUrl && (
+              <div style={{ width: '100%', display: 'block', marginBottom: '2rem' }}>
+                <iframe
+                  src={section.embedUrl}
+                  title={section.title}
+                  style={{ width: '100%', height: '1100px', border: 'none', display: 'block' }}
+                />
+              </div>
+            )}
 
             {section.image && section.imagePosition !== 'full' && section.imagePosition !== 'side-by-side' ? (
               <>

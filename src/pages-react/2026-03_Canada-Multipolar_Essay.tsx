@@ -18,6 +18,7 @@ export default function PortfolioGeopolitics() {
     title: s[`title_${L}`] ?? s.title_en ?? '',
     content: s[`content_${L}`] ?? s.content_en ?? '',
     image: s.image,
+    embedUrl: s.embedUrl,
     imagePosition: s.imagePosition,
     imageWidthClass: s.imageWidthClass,
     imageLinkHref: s.imageLink_href,
