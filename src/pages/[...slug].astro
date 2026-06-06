@@ -1,7 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import AppShell from '../components/AppShell';
-// Dynamic server rendering for all routes - don't prerender to avoid 3D component errors
+// Server-rendered catch-all — handles all Wouter client-side routes including
+// dynamic ones like /country/:cca3 and /world-analysis/:cca3
 export const prerender = false;
 
 // Exclude keystatic routes - let the Keystatic integration handle them

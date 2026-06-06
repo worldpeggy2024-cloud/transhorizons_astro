@@ -127,19 +127,28 @@ function isGenericHomepage(urlString) {
 
 function validateSources(sources) {
   const errors = [];
+  const warnings = [];
 
   if (!Array.isArray(sources) || sources.length === 0) {
     errors.push('Pass A sources must be a non-empty array.');
-    return { errors, ids: new Set() };
+    return { errors, warnings, ids: new Set() };
   }
 
   const ids = new Set();
   for (const [idx, s] of sources.entries()) {
     const key = `sources[${idx}]`;
-    const required = ['id', 'name', 'url', 'desc', 'publicationDate', 'accessDate', 'confidence', 'citationType'];
+    const required = ['id', 'name', 'url', 'desc', 'accessDate', 'confidence', 'citationType'];
 
     for (const r of required) {
       if (!nonEmptyString(s?.[r])) errors.push(`${key}.${r} is required`);
+    }
+
+    // publicationDate is optional: many primary sources (e.g. government
+    // landing pages) expose no reliable publish date. accessDate is the
+    // freshness anchor. If absent, allow it but surface a warning rather
+    // than forcing a faked or dropped source.
+    if (!nonEmptyString(s?.publicationDate)) {
+      warnings.push(`${key}.publicationDate absent (source undated; relying on accessDate)`);
     }
 
     if (nonEmptyString(s?.id) && !/^[a-z0-9-]+$/.test(s.id)) {
@@ -170,7 +179,7 @@ function validateSources(sources) {
     }
   }
 
-  return { errors, ids };
+  return { errors, warnings, ids };
 }
 
 function mustHaveCitation(text, field, errors) {
@@ -354,19 +363,25 @@ You are a geopolitical analyst preparing to write a structured country situation
 
 Return ONLY a JSON array of sources. No prose, no analysis, no section headers — just sources.
 
-Each source must match this exact schema (all 8 fields required, no omissions):
+Each source must match this schema (7 fields required; publicationDate optional):
 [
   {
     "id": "short-slug",
     "name": "Full Publication Name",
     "url": "https://exact-url-to-specific-document-not-homepage",
     "desc": "One sentence: what this source is and what specific data it provides for ${nameEn}.",
-    "publicationDate": "YYYY-MM-DD",
+    "publicationDate": "YYYY-MM-DD or omit if the page shows no reliable date",
     "accessDate": "${today}",
     "confidence": "High | Med | Low",
     "citationType": "Fact | Interpretation"
   }
 ]
+
+publicationDate rule: include it ONLY if the source genuinely shows a publication
+or last-updated date. If a legitimate primary source (e.g. a government landing
+page) has no reliable date, OMIT the field entirely — do NOT guess, approximate,
+or copy accessDate into it. An honest undated source is preferred over a faked date
+or a worse source chosen only because it shows a date. accessDate is always required.
 
 Source priority rules:
 - Macro/Finance: national statistics office, IMF, World Bank, BIS, OECD
@@ -537,6 +552,11 @@ function applyCommand(iso3, opts) {
   const sourcesCheck = validateSources(sources);
   const contentCheck = validateContent(content, sourcesCheck.ids);
   const errors = [...sourcesCheck.errors, ...contentCheck.errors];
+  const warnings = [...(sourcesCheck.warnings || [])];
+  if (warnings.length) {
+    console.warn('Validation warnings (non-blocking):');
+    warnings.forEach((w) => console.warn(`- ${w}`));
+  }
   if (errors.length) {
     console.error('Validation failed:');
     errors.forEach((e) => console.error(`- ${e}`));

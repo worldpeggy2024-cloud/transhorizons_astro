@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(npx --no-install tsc --noEmit -p tsconfig.json)",
+      "Bash(curl -s --max-time 8 \"http://127.0.0.1:4321/portfolio/canada-multipolar\" -o cm.html)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\peggy\\.claude\\projects\\c--Users-peggy-DevTest-transhorizons-astro\\memory"
+    ]
+  }
+}

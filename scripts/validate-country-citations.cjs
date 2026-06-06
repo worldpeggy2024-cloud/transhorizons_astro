@@ -138,13 +138,20 @@ function validateCountryFile(filePath) {
       }
     }
 
-    const required = ['name', 'url', 'desc', 'publicationDate', 'accessDate', 'confidence', 'citationType'];
+    const required = ['name', 'url', 'desc', 'accessDate', 'confidence', 'citationType'];
     required.forEach((field) => {
       const val = s?.[field];
       if (typeof val !== 'string' || !val.trim()) {
         errors.push(`Source ${key}: missing required field '${field}'`);
       }
     });
+
+    // publicationDate is optional (undated primary sources are allowed),
+    // but surface a warning so undated sources remain visible in the audit.
+    const pubDate = s?.publicationDate;
+    if (typeof pubDate !== 'string' || !pubDate.trim()) {
+      warnings.push(`Source ${key}: undated (no publicationDate; relying on accessDate)`);
+    }
   });
 
   const contentClone = { ...data };

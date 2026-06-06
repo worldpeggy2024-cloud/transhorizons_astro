@@ -64,6 +64,8 @@ sections:
       chaînes d'approvisionnement mondialisées, les infrastructures numériques
       et les pressions climatiques.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Multipolarity as a System
     title_fr: Multipolarité comme système
     content_en: >
@@ -110,6 +112,8 @@ sections:
       multiples acteurs aux intérêts partiellement convergents et partiellement
       concurrents.
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: Canada as a Structurally Embedded Actor
     title_fr: Le Canada comme acteur structurellement intégré
     content_en: >
@@ -119,8 +123,8 @@ sections:
 
       The country remains deeply embedded in North American economic, security,
       and infrastructure systems. Approximately 75% of Canadian goods exports
-      flow to the United States : a dependency that provides stability and
-      market access, but also concentrates exposure to a single partner's policy
+      flow to the United States: a dependency that provides stability and market
+      access, but also concentrates exposure to a single partner's policy
       decisions. The 2025 tariff environment made this vulnerability concrete
       and immediate.
 
@@ -153,6 +157,9 @@ sections:
 
 
       Cette position n'est ni marginale ni dominante. Elle est relationnelle.
+    imagePosition: right
+    imageLayout: single
+    images: []
     embedUrl: /visualizations/canada-sphere-of-influence.html
     embedHeight: 500
   - title_en: Integration and Constraint
@@ -218,6 +225,8 @@ sections:
       Gérer cette tension (plutôt que la résoudre) constitue le défi
       déterminant.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Strategic Assets in a System Context
     title_fr: Atouts stratégiques dans un contexte systémique
     content_en: >-
@@ -246,8 +255,8 @@ sections:
 
       The Arctic case illustrates this directly. The Northern Sea Route along
       Russia's Arctic coast recorded 103 transits in 2025, carrying
-      approximately 3.2 million tonnes of cargo : crude oil, coal, iron ore,
-      and, for the first time at scale, containerized goods moving between St.
+      approximately 3.2 million tonnes of cargo: crude oil, coal, iron ore, and,
+      for the first time at scale, containerized goods moving between St.
       Petersburg and Chinese ports. In 2025, the container ship Istanbul Bridge
       completed the China-to-UK transit via the Arctic in approximately 21 days;
       roughly 7 days faster than the equivalent Suez Canal route, covering 2,700
@@ -278,6 +287,15 @@ sections:
       In this sense, assets are not static advantages. They are components
       within evolving systems, and their relevance is determined by positioning,
       not just possession.
+
+
+      Canada's relationship to its own maritime trade illustrates the gap
+      between possession and leverage concretely. Canadian sea freight services
+      exports stood at approximately $840 million in 2023 — less than 0.2% of
+      total goods exports. Canada produces the cargo; others move it, route it,
+      and capture the logistics value. In a multipolar environment where
+      infrastructure ownership increasingly translates into strategic leverage,
+      that asymmetry is not incidental.
     content_fr: >-
       Le Canada dispose d'un ensemble d'atouts de plus en plus pertinents dans
       un environnement multipolaire :
@@ -335,8 +353,21 @@ sections:
       En ce sens, ces atouts ne constituent pas des avantages statiques. Ils
       sont des composantes de systèmes en évolution, et leur pertinence est
       déterminée par leur positionnement, et non par leur seule possession.
+
+
+      La relation du Canada à son propre commerce maritime illustre concrètement
+      l’écart entre possession et levier stratégique. Les exportations
+      canadiennes de services de fret maritime se sont élevées à environ 840
+      millions de dollars en 2023, soit moins de 0,2 % des exportations totales
+      de biens. Le Canada produit la cargaison; d’autres la transportent, en
+      déterminent les itinéraires et en captent la valeur logistique. Dans un
+      environnement multipolaire où la propriété des infrastructures se traduit
+      de plus en plus par un levier stratégique, cette asymétrie n’a rien
+      d’anecdotique.
     image: /images/ArcticMultipolarLegend.jpg
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Convergence of Systems
     title_fr: Convergence des systèmes
     content_en: >
@@ -402,6 +433,8 @@ sections:
       structure mondiale en transformation. Le Canada évolue simultanément dans
       chacun de ces espaces.
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: System-Level Implications
     title_fr: Répercussions à l'échelle systémique
     content_en: >-
@@ -437,6 +470,17 @@ sections:
       to continuously map these dependencies remains an open task. Whether that
       data exists but is not publicly accessible, or does not yet exist, the gap
       between exposure and measurement is worth noting.
+
+
+      The Panama Canal illustrates how geopolitical and physical risks converge.
+      Prolonged drought in 2023–2024 reduced daily transits by nearly 40%,
+      forcing rerouting around Cape Horn at significant cost. Simultaneously,
+      Chinese-affiliated operators controlled port infrastructure at both ends
+      of the canal for decades; a concession only recently contested under US
+      pressure. For Canada, which depends on Panama for Pacific-to-Atlantic
+      cargo rerouting, the canal represents compounded exposure: climate
+      vulnerability on the physical layer, foreign strategic positioning on the
+      political layer.
     content_fr: >-
       Pour le Canada, le basculement vers la multipolarité ne trace pas à une
       trajectoire ou une issue unique.
@@ -475,6 +519,7 @@ sections:
       ces données existent sans être accessibles au public, ou qu’elles
       n’existent pas encore, l’écart entre l’exposition et sa mesure mérite
       d’être relevé.
+    imagePosition: right
     imageLayout: dual-toggle
     images:
       - src: /images/maritime_chokepoints_canadian_geopolitical_simplified.png
@@ -483,7 +528,6 @@ sections:
       - src: /images/canadian_maritime_trade_corrected.png
         label_en: Chokepoint Dependencies
         label_fr: Dépendances aux goulets d’étranglement
-    imagePosition: right
   - title_en: Conclusion
     title_fr: Conclusion
     content_en: >-
@@ -536,6 +580,8 @@ sections:
       technologiques sont envisagées comme des composantes interconnectées d'une
       transformation plus large... déjà en cours.
     imagePosition: left
+    imageLayout: single
+    images: []
 keyTakeaways:
   - title_en: Multipolar Reality
     title_fr: Réalité multipolaire
@@ -596,6 +642,12 @@ sources:
     - Government of Canada. Canada's Indo-Pacific Strategy, 2022.
     - The Canadian Critical Minerals Strategy, 2022.
     - Canada’s Arctic Foreign Policy, 2024
+    - >-
+      Panama Canal Authority. Water Level Management and Transit Restrictions
+      2023–2024. pancanal.com.
+    - >-
+      Reuters. BlackRock-led group agrees to acquire Hutchison's Panama port
+      operations. March 2025.
   fr:
     - >-
       CHNL (Centre for High North Logistics). Container ship Istanbul Bridge on
@@ -613,3 +665,9 @@ sources:
     - La Stratégie du Canada pour l’Indo-Pacifique, 2022
     - Stratégie canadienne sur les minéraux critiques, 2022
     - La Politique étrangère du Canada pour l'Arctique, 2024
+    - >-
+      Panama Canal Authority. Water Level Management and Transit Restrictions
+      2023–2024. pancanal.com.
+    - >-
+      Reuters. BlackRock-led group agrees to acquire Hutchison's Panama port
+      operations. March 2025.
