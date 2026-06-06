@@ -42,6 +42,37 @@ const sections = (data.sections ?? []).map((s: Record<string, string>) => ({
   image: s.image,
 }));
 
+// ── Article visuals (mirror the React page so crawlers see them too) ─────────
+// The visual SPA renderer (2026-04_Resource-Civilization_Essay.tsx) shows these
+// maps/diagram, but they are not in the YAML — so the SSR/SEO render had no
+// <img> tags. Keep src + alt in sync with the .tsx for both languages.
+const articleVisuals = [
+  {
+    src: L === 'fr'
+      ? '/images/canada_civilisation_ressources_mapfr_final.png'
+      : '/images/canada_resource_civilization_map.png',
+    alt: L === 'fr'
+      ? "Le système de ressources du Canada : extraction, transport et exportation organisés autour de la demande externe."
+      : "Canada's resource system: extraction, transport, and export organized around external demand.",
+  },
+  {
+    src: L === 'fr'
+      ? '/images/canada_resource_civilization_diagram_fr.png'
+      : '/images/canada_resource_civilization_diagram.png',
+    alt: L === 'fr'
+      ? 'Le Canada comme civilisation des ressources — modèle de système de ressources orienté vers l’exportation'
+      : 'Canada as a Resource Civilization — Export-oriented resource system model',
+  },
+  {
+    src: L === 'fr'
+      ? '/images/canada_global_systems_map_fr.png'
+      : '/images/canada_global_systems_map_final.png',
+    alt: L === 'fr'
+      ? 'Le Canada dans les systèmes mondiaux'
+      : 'Canada in global systems',
+  },
+];
+
 // ── Helpers: Render content with markup ──────────────────────────────────────
 function renderContent(text: string): string {
   const blocks = text.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
@@ -176,6 +207,17 @@ const UI = labels[L];
       </article>
     </section>
 
+    <!-- ── Article visuals (maps & diagram) — full-width images for SEO ────── -->
+    {articleVisuals.map(visual => (
+      <div class="section-img-wrap">
+        <img
+          src={visual.src}
+          alt={visual.alt}
+          style="width:100%; height:auto; display:block; float:none;"
+        />
+      </div>
+    ))}
+
     <!-- ── Sections ───────────────────────────────────────────────────────── -->
     {sections.map(section => (
       <section class="bg-white border-t border-sand/20 py-12">
@@ -248,3 +290,20 @@ const UI = labels[L];
     </footer>
   </div>
 </Base>
+
+<style>
+  .section-img-wrap {
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+    overflow: hidden !important;
+    margin-bottom: 2rem;
+  }
+  .section-img-wrap img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    float: none !important;
+  }
+</style>
