@@ -14,9 +14,10 @@ import { ANALYSED_COUNT } from '../lib/analysedCountries';
 
 const AXIAL_TILT = 23.5 * (Math.PI / 180);
 const AUTO_ROTATE_SPEED = 0.004;
-const EARTH_TEXTURE  = 'https://raw.githubusercontent.com/turban/webgl-earth/master/images/2_no_clouds_4k.jpg';
-const EARTH_BUMP     = 'https://raw.githubusercontent.com/turban/webgl-earth/master/images/elev_bump_4k.jpg';
-const EARTH_SPECULAR = 'https://raw.githubusercontent.com/turban/webgl-earth/master/images/water_4k.png';
+// Localized from turban/webgl-earth (previously loaded live from raw.githubusercontent.com)
+const EARTH_TEXTURE  = '/images/2_no_clouds_4k.jpg';
+const EARTH_BUMP     = '/images/elev_bump_4k.jpg';
+const EARTH_SPECULAR = '/images/water_4k.png';
 
 export default function GlobeTeaser() {
   const canvasRef    = useRef<HTMLCanvasElement>(null);
