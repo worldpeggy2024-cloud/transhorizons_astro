@@ -3,7 +3,26 @@
     "allow": [
       "Bash(git commit -m ' *)",
       "Bash(npx --no-install tsc --noEmit -p tsconfig.json)",
-      "Bash(curl -s --max-time 8 \"http://127.0.0.1:4321/portfolio/canada-multipolar\" -o cm.html)"
+      "Bash(curl -s --max-time 8 \"http://127.0.0.1:4321/portfolio/canada-multipolar\" -o cm.html)",
+      "Bash(npm run *)",
+      "Bash(git commit -m '@ *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(flyctl deploy *)",
+      "Bash(curl -s --max-time 15 \"https://transhorizons-astro.fly.dev/portfolio/resource-civilization\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/astro/package.json'\\).version\\)\")",
+      "Bash(curl -s -o cks.html -w \"HTTP %{http_code}\\\\n\" --max-time 8 \"http://127.0.0.1:4321/keystatic\")",
+      "Bash(curl -s -o ck2.html -w \"HTTP %{http_code}\\\\n\" --max-time 8 \"http://127.0.0.1:4321/keystatic/collection/articles\")",
+      "Bash(curl -s --max-time 8 \"http://127.0.0.1:4321/keystatic/collection/articles\")",
+      "Bash(node -e \"const p=require\\('./node_modules/@keystatic/astro/package.json'\\); console.log\\('version', p.version\\); console.log\\('peerDependencies', JSON.stringify\\(p.peerDependencies,null,2\\)\\); console.log\\('dependencies.astro', \\(p.dependencies||{}\\).astro\\);\")",
+      "Bash(git log *)",
+      "Bash(npm view *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('packageManager field:', p.packageManager || '\\(none\\)'\\)\")",
+      "PowerShell(pnpm add @keystatic/astro@5.1.0 2>&1)",
+      "PowerShell(pnpm run dev)",
+      "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/resource-civilization?lang=fr\" -o fr.html)",
+      "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/resource-civilization?lang=en\")",
+      "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/canada-multipolar?lang=fr\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\peggy\\.claude\\projects\\c--Users-peggy-DevTest-transhorizons-astro\\memory"

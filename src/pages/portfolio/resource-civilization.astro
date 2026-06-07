@@ -12,6 +12,10 @@ import { resolve } from 'path';
 import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
 
+// Server-rendered (not prerendered) so ?lang=fr is honoured on the SEO page,
+// matching canada-multipolar.astro.
+export const prerender = false;
+
 // ── Load YAML at build/request time ──────────────────────────────────────────
 const yamlPath = resolve(process.cwd(), 'content/articles/2026-04_Resource-Civilization_Essay.yaml');
 const raw = readFileSync(yamlPath, 'utf-8');
@@ -72,6 +76,14 @@ const articleVisuals = [
       : 'Canada in global systems',
   },
 ];
+
+// ── Sources & Notes (hybrid: body intro paragraph + structured numbered list) ─
+const sourcesLabel = L === 'fr' ? 'Sources et notes' : 'Sources & Notes';
+const sourcesList: string[] = data.sources?.[L] ?? data.sources?.en ?? [];
+const isSourcesSection = (t: string) => (t ?? '').trim().toLowerCase().startsWith('sources');
+const hasStructuredSources = sourcesList.length > 0;
+const sourcesIntro = hasStructuredSources ? (sections.find(s => isSourcesSection(s.title))?.content ?? '') : '';
+const bodySections = hasStructuredSources ? sections.filter(s => !isSourcesSection(s.title)) : sections;
 
 // ── Helpers: Render content with markup ──────────────────────────────────────
 function renderContent(text: string): string {
@@ -219,7 +231,7 @@ const UI = labels[L];
     ))}
 
     <!-- ── Sections ───────────────────────────────────────────────────────── -->
-    {sections.map(section => (
+    {bodySections.map(section => (
       <section class="bg-white border-t border-sand/20 py-12">
         <article class="container max-w-3xl mx-auto px-6">
           {section.image && (
@@ -230,6 +242,26 @@ const UI = labels[L];
         </article>
       </section>
     ))}
+
+    <!-- ── Sources & Notes (intro paragraph + numbered list) ──────────────── -->
+    {(sourcesIntro || sourcesList.length > 0) && (
+      <section class="bg-white border-t border-sand/20 py-12">
+        <article class="container max-w-3xl mx-auto px-6">
+          <h2 class="font-playfair text-2xl font-bold text-charcoal mb-4">{sourcesLabel}</h2>
+          {sourcesIntro && <div set:html={renderContent(sourcesIntro)} />}
+          {sourcesList.length > 0 && (
+            <ol class="space-y-2">
+              {sourcesList.map((source: string, idx: number) => (
+                <li class="flex gap-3 text-sm text-charcoal/60 leading-relaxed">
+                  <span class="flex-shrink-0 text-sand">{idx + 1}.</span>
+                  <span>{source}</span>
+                </li>
+              ))}
+            </ol>
+          )}
+        </article>
+      </section>
+    )}
 
     <!-- ── Related Articles ───────────────────────────────────────────────── -->
     {relatedArticles.length > 0 && (

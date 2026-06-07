@@ -15,8 +15,8 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@keystatic/astro':
-        specifier: ^5.0.0
-        version: 5.0.6(@keystatic/core@0.5.50(@react-spectrum/provider@3.11.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(astro@6.3.3(idb-keyval@6.2.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        specifier: ^5.1.0
+        version: 5.1.0(@keystatic/core@0.5.50(@react-spectrum/provider@3.11.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(astro@6.3.3(idb-keyval@6.2.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@keystatic/core':
         specifier: ^0.5.0
         version: 0.5.50(@react-spectrum/provider@3.11.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -784,11 +784,11 @@ packages:
       next:
         optional: true
 
-  '@keystatic/astro@5.0.6':
-    resolution: {integrity: sha512-kUBXkXpE9/JH2fFx0in+tym6YVIDoHgxW9J9WHOJ+uwbpJJcUH6IRqVyutgZr8DO/UDaAhoZc41zcIUyWz0Trw==}
+  '@keystatic/astro@5.1.0':
+    resolution: {integrity: sha512-5DGpUncXdOUnuIczyWudfd/t7JTe4IB7n8ko1BA0gnIyG3WA/9y7QAYYT6r1glZnQIeuv3N3aEp9PxHRfubA8Q==}
     peerDependencies:
       '@keystatic/core': '*'
-      astro: 2 || 3 || 4 || 5
+      astro: 2 || 3 || 4 || 5 || 6
       react: ^18.2.0 || ^19.0.0
       react-dom: ^18.2.0 || ^19.0.0
 
@@ -5187,7 +5187,7 @@ snapshots:
       - '@react-spectrum/provider'
       - supports-color
 
-  '@keystatic/astro@5.0.6(@keystatic/core@0.5.50(@react-spectrum/provider@3.11.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(astro@6.3.3(idb-keyval@6.2.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@keystatic/astro@5.1.0(@keystatic/core@0.5.50(@react-spectrum/provider@3.11.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(astro@6.3.3(idb-keyval@6.2.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
       '@babel/runtime': 7.29.2
       '@keystatic/core': 0.5.50(@react-spectrum/provider@3.11.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)

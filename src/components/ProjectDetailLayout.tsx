@@ -125,6 +125,16 @@ export default function ProjectDetailLayout({
   const contactLabel = lang === 'fr' ? 'Contact' : 'Contact';
   const followLabel = lang === 'fr' ? 'Suivre' : 'Follow';
 
+  // "Sources & Notes" renders as a hybrid: an optional free-text intro paragraph
+  // (from a body section titled "Sources…") followed by the numbered list from
+  // the structured `sources` field. Pull that body section out of the normal flow.
+  const isSourcesSection = (t: string) => (t ?? '').trim().toLowerCase().startsWith('sources');
+  // Only fold the body "Sources…" section into the hybrid block when there's a
+  // structured list to merge it with; otherwise leave articles that have no
+  // structured Sources Block (and their .astro pages) rendering as before.
+  const hasStructuredSources = !!(sources && sources.length > 0);
+  const sourcesIntro = hasStructuredSources ? (sections.find(s => isSourcesSection(s.title))?.content ?? '') : '';
+
   const goHomeTop = () => {
     navigate('/');
     requestAnimationFrame(() => {
@@ -278,7 +288,10 @@ export default function ProjectDetailLayout({
         {beforeSectionsContent}
 
         {/* Content Sections */}
-        {sections.map((section, idx) => (
+        {sections.map((section, idx) => {
+          // Skip the "Sources & Notes" body section — rendered as a hybrid block below.
+          if (hasStructuredSources && isSourcesSection(section.title)) return null;
+          return (
           <section key={idx} className="mb-20">
             {/* Side-by-side images rendered before the section title (new logic) */}
             {section.imagePosition === 'side-by-side' && Array.isArray(section.images) && section.images.length >= 2 && (
@@ -388,20 +401,28 @@ export default function ProjectDetailLayout({
             )}
             {sectionExtras?.[idx]}
           </section>
-        ))}
+          );
+        })}
 
-        {/* Sources */}
-        {sources && sources.length > 0 && (
+        {/* Sources & Notes — hybrid: intro paragraph (if any) + numbered list (if any) */}
+        {(sourcesIntro || (sources && sources.length > 0)) && (
           <section className="mt-20 pt-10 border-t border-[#C8C8C8]">
             <h3 className="font-display text-xl font-light text-[#1A1A1A] mb-6">{sourcesLabel}</h3>
-            <ol className="space-y-2">
-              {sources.map((source, idx) => (
-                <li key={idx} className="flex gap-3 text-sm font-body text-[#888] leading-relaxed">
-                  <span className="flex-shrink-0 text-[#B89860]">{idx + 1}.</span>
-                  <span>{source}</span>
-                </li>
-              ))}
-            </ol>
+            {sourcesIntro && (
+              <div className="text-[#555] font-body leading-relaxed text-lg mb-6">
+                {renderRichText(sourcesIntro)}
+              </div>
+            )}
+            {sources && sources.length > 0 && (
+              <ol className="space-y-2">
+                {sources.map((source, idx) => (
+                  <li key={idx} className="flex gap-3 text-sm font-body text-[#888] leading-relaxed">
+                    <span className="flex-shrink-0 text-[#B89860]">{idx + 1}.</span>
+                    <span>{source}</span>
+                  </li>
+                ))}
+              </ol>
+            )}
           </section>
         )}
 

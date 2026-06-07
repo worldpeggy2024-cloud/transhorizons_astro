@@ -298,6 +298,8 @@ export default function PortfolioResourceCivilization() {
     category: r[`category_${L}`] ?? r.category_en ?? '',
   }));
 
+  const sources: string[] = (d.sources?.[L] ?? d.sources?.en ?? []) as string[];
+
   return (
     <ProjectDetailLayout
       language={L}
@@ -313,6 +315,7 @@ export default function PortfolioResourceCivilization() {
       sections={sections}
       keyTakeaways={keyTakeaways}
       relatedProjects={relatedProjects}
+      sources={sources}
       beforeSectionsContent={beforeSectionsContent}
       sectionExtras={{ 0: historicalTimeline, 3: globalSystemsMap }}
     />

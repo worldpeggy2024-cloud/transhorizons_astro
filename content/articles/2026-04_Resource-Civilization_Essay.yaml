@@ -24,11 +24,14 @@ introduction_en: >
   A resource economy produces commodities. A resource civilization is organized
   around them. That distinction matters because it reframes the analytical
   question. Canada's strategic relevance is not a recent discovery. But it is
-  being revalued — by the energy transition shifting demand toward
+  being revalued: by the energy transition shifting demand toward
   electrification and low-carbon systems, by the growing centrality of critical
   minerals to industrial and technological supply chains, and by geopolitical
   fragmentation that is placing renewed emphasis on the reliability, proximity,
-  and political alignment of supplier states.
+  and political alignment of supplier states. This reading extends the
+  staples-thesis tradition in Canadian political economy (Innis, 1930; Watkins,
+  1963), which interpreted Canada's development through its successive resource
+  exports.
 
 
   Understanding Canada through this lens — as a resource civilization — is the
@@ -60,7 +63,10 @@ introduction_fr: >-
   rôle central grandissant des minéraux critiques au sein des chaînes
   d’approvisionnement industrielles et technologiques, et de la fragmentation
   géopolitique qui renforce l’importance de la fiabilité, de la proximité et de
-  l’alignement politique des États fournisseurs.
+  l’alignement politique des États fournisseurs. Cette analyse s'inscrit dans la
+  tradition de la théorie des principales ressources (staples thesis; Innis,
+  1930; Watkins, 1963), qui interprète le développement économique et
+  institutionnel du Canada à travers ses exportations successives de ressources.
 
 
   Comprendre le Canada en tant que civilisation fondée sur les ressources est le
@@ -82,7 +88,7 @@ sections:
       From fur and fisheries in early colonial trade, to timber and agricultural
       expansion, and later to minerals, industrial inputs, oil, gas, and
       hydroelectric power, the structural character of Canada’s resource system
-      was not inherited passively. It was built — through deliberate investments
+      was not inherited passively. It was built, through deliberate investments
       in infrastructure, political decisions that overlaid and often disrupted
       Indigenous governance systems by binding distant regions into a shared
       colonial economic framework, and the progressive alignment of Canadian
@@ -92,8 +98,8 @@ sections:
       National infrastructure projects were not merely transportation
       initiatives; they were mechanisms for integrating distant resource
       territories into a coherent export-oriented economic system. Railways
-      physically connected extractive regions — timber stands, mining districts,
-      agricultural plains — to continental and imperial markets, and in doing so
+      physically connected extractive regions (timber stands, mining districts,
+      agricultural plains) to continental and imperial markets, and in doing so
       they did not merely facilitate trade. They created the spatial
       architecture of the Canadian economy. The alignment of corridors, the
       positioning of ports, the routing of supply chains: these were acts of
@@ -157,6 +163,8 @@ sections:
       institutions, les flux de capitaux et les hiérarchies de corridors qui
       persistent aujourd’hui.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Resource Geography
     title_fr: Géographie des ressources
     content_en: >-
@@ -224,6 +232,8 @@ sections:
       de conversion — et les limites de cette capacité sont aussi importantes
       analytiquement que la base de ressources elle‑même.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Infrastructure and Corridors
     title_fr: Infrastructures et corridors
     content_en: >-
@@ -254,7 +264,7 @@ sections:
       flexibility. Reorienting trade flows, adding processing capacity, or
       redirecting exports toward new markets requires overcoming not just market
       conditions but the embedded geography of the infrastructure itself.
-      Second, the corridors represent strategic chokepoints — nodes where
+      Second, the corridors represent strategic chokepoints: nodes where
       reliability, capacity, and governance matter enormously. Investment in
       corridor capacity is, in this framework, a form of strategic positioning.
     content_fr: >-
@@ -290,6 +300,8 @@ sections:
       poids disproportionné. L’investissement dans la capacité des corridors
       est, dans ce cadre, une forme de positionnement stratégique.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Canada in Global Systems
     title_fr: Le Canada dans les systèmes mondiaux
     content_en: >-
@@ -319,10 +331,10 @@ sections:
 
 
       Asia is not merely a future growth market. It is also a zone of strategic
-      competition in which value chain positioning — not raw export volume —
-      will determine which countries benefit and which remain at the extraction
-      end of the curve. For Canada, that distinction is central to how
-      engagement with Indo-Pacific systems should be structured.
+      competition in which value chain positioning (not raw export volume) will
+      determine which countries benefit and which remain at the extraction end
+      of the curve. For Canada, that distinction is central to how engagement
+      with Indo-Pacific systems should be structured.
     content_fr: >-
       L’environnement mondial au sein duquel fonctionne le système canadien des
       ressources connaît des transformations structurelles. Trois dynamiques
@@ -357,14 +369,16 @@ sections:
       Pour le Canada, cette distinction est essentielle pour définir la manière
       d’articuler ses relations avec les systèmes indo‑pacifiques.
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: Constraints and Tensions
     title_fr: Contraintes et tensions
     content_en: >-
       Canada's resource ambitions increasingly collide with governance,
       environmental, and social legitimacy constraints that cannot be reduced to
       administrative delays alone. These are not frictions slowing an otherwise
-      frictionless system. They are structural tensions within the model itself
-      — tensions that reflect the simultaneous operation of multiple legitimate
+      frictionless system. They are structural tensions within the model itself;
+      tensions that reflect the simultaneous operation of multiple legitimate
       but incompatible imperatives.
 
 
@@ -372,8 +386,8 @@ sections:
       demand for accelerated extraction and export development runs in direct
       conflict with the environmental and social commitments that condition
       Canada's credibility as a responsible supplier to allied markets. The
-      assertion of Indigenous governance rights — legally grounded,
-      constitutionally recognized, and increasingly effective — intersects with
+      assertion of Indigenous governance rights (legally grounded,
+      constitutionally recognized, and increasingly effective) intersects with
       project timelines in ways that cannot be engineered around without
       political and legal costs that exceed their administrative character. The
       aspiration toward domestic value-added transformation — refining,
@@ -387,8 +401,8 @@ sections:
 
       These tensions are not problems to be solved before the real work of
       resource development can proceed. They are the conditions under which that
-      development will occur — or fail to occur. Analytical frameworks that
-      treat them as obstacles rather than structural features systematically
+      development will occur, or fail to occur. Analytical frameworks that treat
+      them as obstacles rather than structural features systematically
       underestimate what managing a resource civilization in the 21st century
       actually requires.
     content_fr: >-
@@ -426,6 +440,8 @@ sections:
       sous‑estiment systématiquement ce que suppose la gestion d’une
       civilisation des ressources au 21ᵉ siècle.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Reframing Canada's Position
     title_fr: Repositionner le Canada
     content_en: >-
@@ -440,8 +456,8 @@ sections:
       supply chains beyond extraction, alignment with the industrial and
       technological systems of allied economies, participation in multilateral
       frameworks that confer regulatory and political legitimacy, and investment
-      in the conversion capacity — processing, refining, downstream
-      manufacturing — that determines where value is captured rather than merely
+      in the conversion capacity (processing, refining, downstream
+      manufacturing) that determines where value is captured rather than merely
       where it originates. Canada's trajectory within these systems is not
       predetermined. It depends on whether existing structures adapt to new
       forms of demand and organization, and whether the constraints described
@@ -468,6 +484,8 @@ sections:
       traiter les contraintes évoquées plus haut comme des paramètres
       stratégiques, et non comme des variables secondaires.
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: Conclusion
     title_fr: Conclusion
     content_en: >-
@@ -513,27 +531,29 @@ sections:
       dépendra de la qualité des choix institutionnels et politiques qui seront
       faits en réponse à cette nouvelle donne.
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: Sources & Notes
     title_fr: Sources et notes
     content_en: >
-      This analysis draws on publicly available institutional and historical
-      sources, including materials from Statistics Canada, Natural Resources
-      Canada, and international research on resource economies and global trade
-      systems. Full source documentation available upon request.
+      This analysis builds on the staples-thesis tradition in Canadian political
+      economy (Innis, 1930; Watkins, 1963), which interprets Canada's economic
+      and institutional development through its successive resource exports.
     content_fr: >
-      Cette analyse s'appuie sur des sources institutionnelles et historiques
-      accessibles au public, notamment des documents de Statistique Canada, de
-      Ressources naturelles Canada, et des recherches internationales sur les
-      économies de ressources et les systèmes commerciaux mondiaux.
-      Documentation complète disponible sur demande.
+      Cette analyse s'inscrit dans la tradition de la théorie des principales
+      ressources (staples thesis; Innis, 1930; Watkins, 1963), qui interprète le
+      développement économique et institutionnel du Canada à travers ses
+      exportations successives de ressources.
     imagePosition: right
+    imageLayout: single
+    images: []
 keyTakeaways:
   - title_en: Resource Civilization
     title_fr: Civilisation des ressources
     description_en: >-
       Canada is not merely a resource-rich economy. Its geography,
       infrastructure, institutions, and external relationships have been
-      historically organized around resource extraction and export — making it a
+      historically organized around resource extraction and export, making it a
       resource civilization in a structural sense.
     description_fr: >-
       Le Canada n'est pas simplement une économie riche en ressources. Sa
@@ -544,10 +564,10 @@ keyTakeaways:
   - title_en: Structural Continuity
     title_fr: Continuité structurelle
     description_en: >-
-      Successive phases of Canadian development — from fur and timber to oil and
-      now critical minerals — have reproduced the same pattern: extraction at
-      the periphery, transport through corridors, export to external markets.
-      The structure persists as the resources change.
+      Successive phases of Canadian development (from fur and timber to oil and
+      now critical minerals) have reproduced the same pattern: extraction at the
+      periphery, transport through corridors, export to external markets. The
+      structure persists as the resources change.
     description_fr: >-
       Les phases successives du développement canadien (de la fourrure et du
       bois au pétrole puis, aujourd’hui, aux minéraux critiques) ont reproduit
@@ -579,5 +599,41 @@ relatedProjects:
     category_en: Resources
     category_fr: Ressources
 sources:
-  en: []
-  fr: []
+  en:
+    - >-
+      Innis, Harold A. The Fur Trade in Canada: An Introduction to Canadian
+      Economic History. University of Toronto Press, 1930.
+    - >-
+      Watkins, Mel. "A Staple Theory of Economic Growth." Canadian Journal of
+      Economics and Political Science, vol. 29, no. 2, 1963.
+    - Statistics Canada. Canadian International Merchandise Trade Database.
+    - >-
+      Natural Resources Canada. 10 Key Facts on Canada's Natural Resources,
+      2024.
+    - The Canadian Critical Minerals Strategy, 2022.
+    - National Supply Chain Task Force. Final Report, Transport Canada, 2022.
+    - Constitution Act, 1982, s. 35.
+    - >-
+      United Nations Declaration on the Rights of Indigenous Peoples Act, S.C.
+      2021, c. 14.
+  fr:
+    - >-
+      Innis, Harold A. The Fur Trade in Canada: An Introduction to Canadian
+      Economic History. University of Toronto Press, 1930.
+    - >-
+      Watkins, Mel. "A Staple Theory of Economic Growth." Canadian Journal of
+      Economics and Political Science, vol. 29, no. 2, 1963.
+    - >-
+      Statistique Canada. Base de données sur le commerce international canadien
+      de marchandises.
+    - >-
+      Ressources naturelles Canada. 10 faits sur les ressources naturelles au
+      Canada – 2024.
+    - La Stratégie canadienne sur les minéraux critiques, 2022.
+    - >-
+      Rapport final du Group de travail national sur la chaîne
+      d'approvisionnement 2022.
+    - LOI CONSTITUTIONNELLE DE 1982, art. 35.
+    - >-
+      Loi sur la Déclaration des Nations Unies sur les droits des peuples
+      autochtones (L.C. 2021, ch. 14).

@@ -17,7 +17,7 @@
   "dependencies": {
     "@astrojs/node": "^10.1.1",
     "@astrojs/react": "^5.0.5",
-    "@keystatic/astro": "^5.0.0",
+    "@keystatic/astro": "^5.1.0",
     "@keystatic/core": "^0.5.0",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",

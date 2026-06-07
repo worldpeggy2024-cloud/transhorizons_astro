@@ -405,7 +405,8 @@ export default function WorldAnalysis() {
       thumbnail: '/images/thumb-critical-minerals-map.jpg',
     },
     {
-      href: '/images/arctic_polar_projection_map.png',
+      // PREVIEW COMING SOON — map withheld due to known geographic errors
+      href: '#',
       titleEn: 'Arctic Polar Projection',
       titleFr: 'Projection polaire arctique',
       descEn: 'A polar-centered projection of the Arctic region, showing Canada\'s Arctic sovereignty, circumpolar neighbours, and strategic northern geography.',
@@ -414,10 +415,10 @@ export default function WorldAnalysis() {
       tagFr: 'Géopolitique · Arctique',
       icon: <MapIcon size={18} />,
       accent: '#4A8DB8',
-      thumbnail: '/images/arctic_polar_projection_simplified.png',
     },
     {
-      href: '/images/sphere_of_influence_gravity_map.png',
+      // PREVIEW COMING SOON — map withheld due to known geographic errors
+      href: '#',
       titleEn: 'Sphere of Influence Gravity Map',
       titleFr: 'Carte de gravité des sphères d’influence',
       descEn: 'A compact geopolitical map showing the pull of major spheres of influence and the strategic pressures shaping Canada\'s position.',
@@ -426,10 +427,10 @@ export default function WorldAnalysis() {
       tagFr: 'Géopolitique · Influence',
       icon: <MapIcon size={18} />,
       accent: '#8B6A3D',
-      thumbnail: '/images/sphere_of_influence_simplified.png',
     },
     {
-      href: '/images/maritime_chokepoints_canadian_geopolitical.png',
+      // PREVIEW COMING SOON — maps withheld due to known geographic errors
+      href: '#',
       titleEn: 'Maritime Chokepoints',
       titleFr: 'Points d\'étranglement maritimes',
       descEn: 'Canada\'s critical maritime passages mapped across two lenses: geopolitical vulnerability and trade volume exposure.',
@@ -438,20 +439,6 @@ export default function WorldAnalysis() {
       tagFr: 'Géopolitique · Commerce',
       icon: <MapIcon size={18} />,
       accent: '#3D7A8B',
-      variants: [
-        {
-          href: '/images/maritime_chokepoints_canadian_geopolitical.png',
-          thumbnail: '/images/maritime_chokepoints_canadian_geopolitical_simplified.png',
-          labelEn: 'Geopolitical',
-          labelFr: 'Géopolitique',
-        },
-        {
-          href: '/images/maritime_chokepoints_canadian_trade_volumes.png',
-          thumbnail: '/images/maritime_chokepoints_canadian_trade_volumes_simplified.png',
-          labelEn: 'Trade Volumes',
-          labelFr: 'Volumes commerciaux',
-        },
-      ],
     },
     {
       href: '#',
@@ -970,6 +957,10 @@ export default function WorldAnalysis() {
                 : 'Visualize how geopolitical and economic risks cascade across analyzed countries.'}
             </p>
           </div>
+          <span className="self-center shrink-0 inline-flex items-center gap-2 font-body text-[10px] tracking-[0.25em] uppercase px-3 py-1.5 border border-[#C8860A]/40 text-[#C8860A]/80 bg-[#C8860A]/5 rounded">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C8860A] animate-pulse" />
+            {fr ? 'En déploiement' : 'In deployment'}
+          </span>
            <button
             onClick={() => navigate('/risk-correlations')}
             className="shrink-0 mt-1 inline-flex items-center gap-3 px-6 py-3 bg-white/5 border border-white/10 hover:border-white/25 hover:bg-white/10 transition-all duration-300 rounded text-white font-body text-sm group"

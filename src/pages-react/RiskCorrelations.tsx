@@ -40,13 +40,19 @@ export default function RiskCorrelations() {
         {/* Hero Section */}
         <div className="mb-16">
           <div className="w-8 h-px bg-[#7D1A2E] mb-6" />
-          <h1 className="font-display text-[clamp(2rem,4vw,3.2rem)] font-light text-white leading-tight mb-6">
-            {fr ? (
-              <>Corrélations de <span className="italic">risques mondiaux</span></>
-            ) : (
-              <>Global <span className="italic">Risk Correlations</span></>
-            )}
-          </h1>
+          <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
+            <h1 className="font-display text-[clamp(2rem,4vw,3.2rem)] font-light text-white leading-tight">
+              {fr ? (
+                <>Corrélations de <span className="italic">risques mondiaux</span></>
+              ) : (
+                <>Global <span className="italic">Risk Correlations</span></>
+              )}
+            </h1>
+            <span className="mt-2 shrink-0 inline-flex items-center gap-2 font-body text-[10px] tracking-[0.25em] uppercase px-3 py-1.5 border border-[#C8860A]/40 text-[#C8860A]/80 bg-[#C8860A]/5 rounded">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C8860A] animate-pulse" />
+              {fr ? 'En déploiement' : 'In deployment'}
+            </span>
+          </div>
           <p className="text-white/60 font-body text-base max-w-2xl leading-relaxed">
             {fr
               ? 'Visualisez comment les risques géopolitiques et économiques se propagent entre les pays analysés. Cette matrice de corrélation montre les interconnexions critiques qui façonnent la dynamique mondiale.'
