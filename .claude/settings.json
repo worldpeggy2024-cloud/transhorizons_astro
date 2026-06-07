@@ -22,7 +22,14 @@
       "PowerShell(pnpm run dev)",
       "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/resource-civilization?lang=fr\" -o fr.html)",
       "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/resource-civilization?lang=en\")",
-      "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/canada-multipolar?lang=fr\")"
+      "Bash(curl -s --max-time 10 \"http://127.0.0.1:4321/portfolio/canada-multipolar?lang=fr\")",
+      "Bash(sed -n '48,58p' src/components/GlobeSection.tsx)",
+      "Bash(sed -n '13,23p' src/components/GlobeTeaser.tsx)",
+      "Bash(awk '{print $1, $2}')",
+      "Bash(curl -s -o /dev/null -w '  %{http_code} %{size_download}b\\\\n' --max-time 25 -H 'Referer: https://transhorizons-astro.fly.dev/' -H 'User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)' https://d2xsxph8kpxj0f.cloudfront.net/canada-forest-hero-Vv9WznN4NH8b9CsdMBdh8H.webp)",
+      "Bash(curl -s -o /dev/null -w '  %{http_code} %{size_download}b\\\\n' --max-time 25 -H 'Origin: https://transhorizons-astro.fly.dev' https://d2xsxph8kpxj0f.cloudfront.net/canada-forest-hero-Vv9WznN4NH8b9CsdMBdh8H.webp)",
+      "Bash(curl -s --max-time 25 https://d2xsxph8kpxj0f.cloudfront.net/canada-forest-hero-Vv9WznN4NH8b9CsdMBdh8H.webp)",
+      "Bash(curl -s --max-time 15 \"https://transhorizons-astro.fly.dev/portfolio/canada-forest-carbon\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\peggy\\.claude\\projects\\c--Users-peggy-DevTest-transhorizons-astro\\memory"
