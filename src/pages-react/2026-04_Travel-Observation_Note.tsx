@@ -137,11 +137,6 @@ export default function NotesTravelObservation() {
       title: L === 'fr' ? 'De la traduction vers la recherche et l\'analyse' : 'From Translation Toward Research and Analysis',
       category: L === 'fr' ? 'Notes' : 'Notes',
     },
-    {
-      slug: 'canada-resources',
-      title: L === 'fr' ? 'Minéraux critiques : le nœud des ressources au Canada' : 'Critical Minerals: Canada\'s Resource Nexus',
-      category: L === 'fr' ? 'Systèmes et signaux' : 'Systems & Signals',
-    },
   ];
 
   return (

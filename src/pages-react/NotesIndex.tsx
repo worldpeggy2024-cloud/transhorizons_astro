@@ -46,6 +46,7 @@ export default function NotesIndex() {
     title: string;
     excerpt: string;
     image: string;
+    comingSoon?: boolean;
   }[] = [
       {
         slug: 'career-evolution',
@@ -68,14 +69,15 @@ export default function NotesIndex() {
         image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80',
       },
       {
-        slug: 'canada-resources',
+        slug: 'orbital-data-centers',
         filterKey: 'systems-signals',
-        category: t('blog.canadaResources.category'),
-        date: t('blog.canadaResources.date'),
-        readTime: t('blog.canadaResources.readTime'),
-        title: t('blog.canadaResources.title'),
-        excerpt: t('blog.canadaResources.desc'),
-        image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=700&q=80',
+        category: t('blog.orbitalDataCenters.category'),
+        date: t('blog.orbitalDataCenters.date'),
+        readTime: t('blog.orbitalDataCenters.readTime'),
+        title: t('blog.orbitalDataCenters.title'),
+        excerpt: t('blog.orbitalDataCenters.desc'),
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80',
+        comingSoon: true,
       },
     ];
 
@@ -142,26 +144,38 @@ export default function NotesIndex() {
           {filtered.map((article) => (
             <article
               key={article.slug}
-              onClick={() => navigate(`/notes/${article.slug}`)}
-              className="group bg-white border border-[#C8C8C8] overflow-hidden flex flex-col cursor-pointer hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+              onClick={article.comingSoon ? undefined : () => navigate(`/notes/${article.slug}`)}
+              aria-disabled={article.comingSoon || undefined}
+              className={`group bg-white border border-[#C8C8C8] overflow-hidden flex flex-col transition-all duration-300 ${
+                article.comingSoon ? '' : 'cursor-pointer hover:shadow-xl hover:-translate-y-0.5'
+              }`}
             >
-              <div className="h-52 overflow-hidden shrink-0">
+              <div className="h-52 overflow-hidden shrink-0 relative">
                 <img
                   src={article.image}
                   alt={article.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                    article.comingSoon ? 'grayscale opacity-60' : 'group-hover:scale-105'
+                  }`}
                   loading="lazy"
                 />
+                {article.comingSoon && (
+                  <span className="absolute top-3 right-3 bg-[#1A1A1A]/85 text-white text-[10px] tracking-[0.2em] uppercase font-medium font-body px-2.5 py-1">
+                    {language === 'fr' ? 'À venir' : 'Coming Soon'}
+                  </span>
+                )}
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex flex-wrap items-center gap-2 mb-2">
                   <span className="bg-[#7D1A2E]/10 text-[#5C1220] text-[10px] tracking-[0.2em] uppercase font-medium font-body px-2.5 py-1">
                     {article.category}
                   </span>
-                  <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1">
-                    <Clock size={10} />
-                    {article.readTime}
-                  </span>
+                  {!article.comingSoon && article.readTime && (
+                    <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1">
+                      <Clock size={10} />
+                      {article.readTime}
+                    </span>
+                  )}
                 </div>
                 {article.date && (
                   <span className="text-[#AAA] text-[11px] font-body flex items-center gap-1 mb-3">
@@ -169,7 +183,7 @@ export default function NotesIndex() {
                     {article.date}
                   </span>
                 )}
-                <h2 className="font-display text-xl font-medium text-[#1A1A1A] leading-snug mb-3 group-hover:text-[#7D1A2E] transition-colors duration-300">
+                <h2 className={`font-display text-xl font-medium text-[#1A1A1A] leading-snug mb-3 transition-colors duration-300 ${article.comingSoon ? '' : 'group-hover:text-[#7D1A2E]'}`}>
                   {article.title}
                 </h2>
                 <p className="text-[#666] font-body text-sm leading-relaxed mb-6 line-clamp-3">
@@ -177,15 +191,23 @@ export default function NotesIndex() {
                 </p>
                 <div className="flex-1" />
                 <div className="flex items-center justify-between border-t border-[#E8E8E8] pt-4 w-full">
-                  <div className="flex items-center gap-2 text-[#1A1A1A] group-hover:text-[#7D1A2E] transition-colors font-body text-[11px] tracking-widest uppercase font-medium">
-                    {language === 'fr' ? 'Lire' : 'Read'}
-                    <ArrowRight size={12} />
-                  </div>
-                  <PortfolioTTSPlayer
-                    id={`notes-index-${article.slug}`}
-                    text={getNoteText(article.slug, lang) || `${article.title}. ${article.excerpt}`}
-                    lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
-                  />
+                  {article.comingSoon ? (
+                    <span className="text-[#999] font-body text-[11px] tracking-widest uppercase font-medium">
+                      {language === 'fr' ? 'À venir' : 'Coming Soon'}
+                    </span>
+                  ) : (
+                    <>
+                      <div className="flex items-center gap-2 text-[#1A1A1A] group-hover:text-[#7D1A2E] transition-colors font-body text-[11px] tracking-widest uppercase font-medium">
+                        {language === 'fr' ? 'Lire' : 'Read'}
+                        <ArrowRight size={12} />
+                      </div>
+                      <PortfolioTTSPlayer
+                        id={`notes-index-${article.slug}`}
+                        text={getNoteText(article.slug, lang) || `${article.title}. ${article.excerpt}`}
+                        lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                      />
+                    </>
+                  )}
                 </div>
               </div>
             </article>

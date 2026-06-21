@@ -4,7 +4,6 @@
 // Mirrors the content of AboutSection.tsx / LanguageContext translations
 // Interactive elements (EN/FR toggle) handled via a small inline script
 
-const CV_URL = '/images/TransHorizonsCV2026SiteWeb_9185ec0e.pdf';
 const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
 ---
 
@@ -43,7 +42,18 @@ const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
 
       /* Content grid */
       .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-      @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } nav { flex-wrap: wrap; gap: 1rem; } .nav-links { display: none; } }
+      @media (max-width: 768px) {
+        .grid { grid-template-columns: 1fr; }
+        nav { flex-wrap: wrap; gap: 1rem; }
+        .nav-links { display: none; }
+        /* Stack the right column so all text sits above the image; stats stay last. */
+        .right-col { display: flex; flex-direction: column; }
+        .right-col .image-wrapper { order: 4; margin-top: 2rem; }
+        .right-col #about-aside { order: 1; }
+        .right-col .cv-note { order: 2; }
+        .right-col .buttons { order: 3; }
+        .right-col .stats { order: 5; }
+      }
 
       /* Left column */
       .divider { width: 3rem; height: 1px; background: #7D1A2E; margin-bottom: 2rem; }
@@ -53,6 +63,13 @@ const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
       ul li { display: flex; gap: 0.75rem; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 0.75rem; }
       ul li .bullet { color: #7D1A2E; font-weight: bold; flex-shrink: 0; margin-top: 0.15rem; }
       .research-text { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; }
+      .lead { font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,0.8); border-left: 2px solid rgba(125,26,46,0.5); padding-left: 1rem; margin-bottom: 1.5rem; }
+      .credential { font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.7); font-style: italic; margin-bottom: 1.5rem; }
+      .body-text { font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; }
+      .inline-link { color: #7D1A2E; text-decoration: underline; text-underline-offset: 2px; }
+      .inline-link:hover { color: #fff; }
+      .earlier-books { margin-top: 2rem; font-size: 0.875rem; font-style: italic; line-height: 1.6; color: rgba(255,255,255,0.55); }
+      .working-langs { margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.7; color: rgba(255,255,255,0.7); }
 
       /* Right column */
       .image-wrapper { position: relative; }
@@ -69,9 +86,12 @@ const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
       .btn-outline:hover { background: #7D1A2E; color: #fff; }
       .btn-link { font-size: 0.75rem; color: #7D1A2E; letter-spacing: 0.05em; transition: color 0.3s; align-self: center; }
       .btn-link:hover { color: #fff; }
+      .cv-note { margin-top: 2rem; font-size: 0.875rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
+      .cv-note a { color: #7D1A2E; text-decoration: underline; text-underline-offset: 2px; }
+      .cv-note a:hover { color: #fff; }
 
       /* Stats */
-      .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
+      .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
       .stat-number { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #7D1A2E; font-weight: 300; line-height: 1; margin-bottom: 0.5rem; }
       .stat-label { font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); line-height: 1.4; }
 
@@ -100,8 +120,8 @@ const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
     <main>
       <div class="page-header">
         <div class="accent-line"></div>
-        <h1 id="story-title">Blending Linguistics with Global Analytics</h1>
-        <p class="positioning" id="story-positioning">Independent research focused on geopolitical, resource, and technological systems</p>
+        <h1 id="story-title">About TransHorizons</h1>
+        <p class="positioning" id="story-positioning">Independent research on Canadian resource geopolitics, critical minerals, and trade.</p>
       </div>
 
       <div class="grid">
@@ -110,43 +130,41 @@ const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
         <div>
           <div class="divider"></div>
 
-          <p class="intro" id="story-intro">Senior translator and analytical writer with more than twenty years of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.
+          <!-- About body. Default render = English. The EN/FR toggle swaps the whole
+               block via innerHTML (see bodyHtml in the script) so italics + the inline
+               link survive. FR is Peggy's French (provided 2026-06-19). -->
+          <div id="about-body">
+            <p class="lead">Senior EN/ES → FR  translator based in Montréal, with 24 years of freelance practice preceded by three years in-house at Microsoft Dublin. Since 2010, my work has focused overwhelmingly on Canadian federal content (and almost exclusively since 2017): translation, revision, and post-editing for end-clients including Statistics Canada, Natural Resources Canada, and Environment and Climate Change Canada.</p>
 
-Current practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada's position within evolving global structures.</p>
+            <p class="credential"><em>OTTIAQ-certified · Government of Canada security clearance.</em></p>
 
-          <h3 id="strengths-title">Core Strengths</h3>
-          <ul id="strengths-list">
-            <li><span class="bullet">•</span><span>Institutional research and documentation developed through long-term federal collaboration</span></li>
-            <li><span class="bullet">•</span><span>Interpretation of complex statistical, technical, and policy material</span></li>
-            <li><span class="bullet">•</span><span>Translation of institutional knowledge into structured written analysis</span></li>
-            <li><span class="bullet">•</span><span>Interdisciplinary perspective informed by extensive international exposure and comparative observation</span></li>
-            <li><span class="bullet">•</span><span>Commitment to clear, evidence-based communication for public understanding</span></li>
-          </ul>
+            <p class="body-text">TransHorizons is the independent research extension of that work. More than a decade of sustained exposure to Canadian institutional output — statistical, environmental, economic, regulatory — leaves you with a particular angle on how the country talks about itself, what it does and doesn't measure, and where the structural questions sit. The articles here take up some of the questions that strike me as worth working on: critical minerals and the energy transition, Canada's place in a multipolar system, forest carbon, AI governance, trade infrastructure.</p>
 
-          <h3 id="research-title">Research Focus</h3>
-          <p class="research-text" id="research-text">Current work examines geopolitical dynamics, resource systems, and technological change through a structural, systems-oriented approach, aiming to clarify long-term global transformations relevant to Canadian and international contexts.</p>
+            <p class="body-text">The research draws on a scientific track through high school before a pivot to languages, training in translation and interpretation (UCO/IPLV, Angers), an exchange year in sciences at Concordia (physics, astronomy, ecology, history of science and technology), and three years on software localization at Microsoft Dublin during the late-1990s, combined with extended travel across Asia, the Americas, Europe, and Oceania, often for months at a time.</p>
+          </div>
         </div>
 
         <!-- Right: Image + buttons + stats -->
-        <div>
+        <div class="right-col">
           <div class="image-wrapper">
             <div class="image-border-outer"></div>
             <div class="image-border-inner"></div>
             <img src={ABOUT_IMAGE} alt="Languages, maps and global analysis — TransHorizons" class="portrait" loading="eager" />
           </div>
 
-          <div class="caption">
-            <div class="caption-line"></div>
-            <p class="caption-text" id="story-quote">"Language is the map. Analysis is the journey. Understanding is the destination."
-
-"Translation was never only about language. Institutional work required continuous engagement with policy, research, and technical systems. It also required understanding the ways societies organize and communicate knowledge."</p>
+          <!-- Working languages + earlier book translations — moved here to rebalance.
+               EN is Peggy's; the FR "earlier book" line is an AI draft (FR-PLACEHOLDER). -->
+          <div id="about-aside">
+            <p class="earlier-books"><em>Earlier book translations and credited work: <a href="/publications" class="inline-link">Writing &amp; Translation Archive</a></em></p>
+            <p class="working-langs">Working languages: French (native), English (bilingual), Spanish (advanced). Additional study- and travel-based knowledge in Russian, Mandarin, Japanese, and Korean.</p>
           </div>
 
+          <p class="cv-note">
+            <span id="btn-cv">Full CV available on request — please email</span>
+            <a href="mailto:contact@transhorizons.net">contact@transhorizons.net</a>
+          </p>
+
           <div class="buttons">
-            <a href={CV_URL} download target="_blank" rel="noopener noreferrer" class="btn-outline" id="btn-cv">
-              ↓ Download CV
-            </a>
-            <a href="/publications" class="btn-outline" id="btn-publications">Writing & Translation Archive</a>
             <a href="/notes/travel-observation" class="btn-link" id="btn-journeys">Journeys & Field Notes →</a>
           </div>
 
@@ -158,10 +176,6 @@ Current practice increasingly extends toward independent research and analytical
             <div>
               <div class="stat-number">15+</div>
               <div class="stat-label" id="stat-gov">Years of translations for the Canadian government</div>
-            </div>
-            <div>
-              <div class="stat-number">3</div>
-              <div class="stat-label" id="stat-domains">Domains of analysis</div>
             </div>
           </div>
         </div>
@@ -175,40 +189,57 @@ Current practice increasingly extends toward independent research and analytical
       <span><a href="https://www.linkedin.com/in/peggy-brenier-6896b197/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.5);hover:color:#fff">LinkedIn</a></span>
     </footer>
 
-    <script>
+    <!-- is:inline keeps this verbatim in the HTML so setLang() stays a global the
+         onclick handlers can reach (Astro otherwise hoists it into a module chunk). -->
+    <script is:inline>
       const translations = {
         en: {
-          'story-title': 'Blending Linguistics with Global Analytics',
-          'story-positioning': 'Independent research focused on geopolitical, resource, and technological systems',
-          'story-intro': 'Senior translator and analytical writer with over two decades of experience supporting Canadian federal institutions, including Statistics Canada and Natural Resources Canada. Professional experience has focused on institutional publications, research-based reporting, and complex technical documentation within data-driven and policy-oriented environments.\n\nCurrent practice increasingly extends toward independent research and analytical reporting on geopolitics, resource systems, and technological transformation, with particular attention to Canada\'s position within evolving global structures.',
-          'strengths-title': 'Core Strengths',
-          'strengths-list': ['Institutional research and documentation developed through long-term federal collaboration', 'Interpretation of complex statistical, technical, and policy material', 'Translation of institutional knowledge into structured written analysis', 'Interdisciplinary perspective informed by extensive international exposure and comparative observation', 'Commitment to clear, evidence-based communication for public understanding'],
-          'research-title': 'Research Focus',
-          'research-text': 'Current work examines geopolitical dynamics, resource systems, and technological change through a structural, systems-oriented approach, aiming to clarify long-term global transformations relevant to Canadian and international contexts.',
-          'story-quote': '"Language is the map. Analysis is the journey. Understanding is the destination."\n\n"Translation was never only about language. Institutional work required continuous engagement with policy, research, and technical systems.',
+          'story-title': 'About TransHorizons',
+          'story-positioning': 'Independent research on Canadian resource geopolitics, critical minerals, and trade.',
           'stat-years': 'Years of expertise',
           'stat-gov': 'Years of translations for the Canadian government',
-          'stat-domains': 'Domains of analysis',
-          'btn-cv': '↓ Download CV',
-          'btn-publications': 'Writing & Translation Archive',
+          'btn-cv': 'Full CV available on request — please email',
           'btn-journeys': 'Journeys & Field Notes →',
         },
         fr: {
-          'story-title': 'Allier la linguistique à l\'analyse mondiale',
-          'story-positioning': 'Recherche indépendante axée sur les systèmes géopolitiques, les ressources et les technologies',
-          'story-intro': 'Traductrice principale et rédactrice analytique avec plus de vingt ans d\'expérience auprès d\'institutions fédérales canadiennes, notamment Statistique Canada et Ressources naturelles Canada. L\'expérience professionnelle s\'est concentrée sur les publications institutionnelles, la rédaction de rapports de recherche et la documentation technique complexe dans des environnements axés sur les données et les politiques.\n\nLa pratique actuelle s\'oriente de plus en plus vers la recherche indépendante et la rédaction analytique sur la géopolitique, les systèmes de ressources et la transformation technologique, avec une attention particulière à la position du Canada dans les structures mondiales en évolution.',
-          'strengths-title': 'Compétences clés',
-          'strengths-list': ['Recherche et documentation institutionnelles développées grâce à une collaboration fédérale à long terme', 'Interprétation de matériaux statistiques, techniques et politiques complexes', 'Traduction des connaissances institutionnelles en analyses écrites structurées', 'Perspective interdisciplinaire éclairée par une vaste exposition internationale et une observation comparative', 'Engagement envers une communication claire et fondée sur des données probantes pour la compréhension du public'],
-          'research-title': 'Axe de recherche',
-          'research-text': 'Les travaux actuels examinent la dynamique géopolitique, les systèmes de ressources et les changements technologiques selon une approche structurelle et systémique, visant à clarifier les transformations mondiales à long terme pertinentes pour les contextes canadiens et internationaux.',
-          'story-quote': '« La langue est la carte. L\'analyse est le voyage. La compréhension est la destination. »\n\n« La traduction n\'a jamais été uniquement une question de langue. Le travail institutionnel exigeait un engagement continu envers les politiques, la recherche et les systèmes techniques.',
+          'story-title': 'À propos de TransHorizons',
+          'story-positioning': 'Recherche indépendante sur la géopolitique des ressources canadiennes, les minéraux critiques et le commerce.',
           'stat-years': 'Années d\'expertise',
           'stat-gov': 'Années de traductions pour le gouvernement canadien',
-          'stat-domains': 'Domaines d\'analyse',
-          'btn-cv': '↓ Télécharger le CV',
-          'btn-publications': 'Archives de rédaction et de traduction',
+          // TODO (Peggy): traduire la mention « CV complet sur demande » ci-dessous.
+          'btn-cv': '[CV disponible sur demande par courriel]',
           'btn-journeys': 'Voyages et notes de terrain →',
         }
+      };
+
+      // About-body HTML per language. Swapped via innerHTML so the italics + inline
+      // link survive (textContent would flatten them). FR is Peggy's French (2026-06-19).
+      const bodyHtml = {
+        en: `
+          <p class="lead">Senior EN/ES → FR  translator based in Montréal, with 24 years of freelance practice preceded by three years in-house at Microsoft Dublin. Since 2010, my work has focused overwhelmingly on Canadian federal content (and almost exclusively since 2017): translation, revision, and post-editing for end-clients including Statistics Canada, Natural Resources Canada, and Environment and Climate Change Canada.</p>
+          <p class="credential"><em>OTTIAQ-certified · Government of Canada security clearance.</em></p>
+          <p class="body-text">TransHorizons is the independent research extension of that work. More than a decade of sustained exposure to Canadian institutional output — statistical, environmental, economic, regulatory — leaves you with a particular angle on how the country talks about itself, what it does and doesn't measure, and where the structural questions sit. The articles here take up some of the questions that strike me as worth working on: critical minerals and the energy transition, Canada's place in a multipolar system, forest carbon, AI governance, trade infrastructure.</p>
+          <p class="body-text">The research draws on a scientific track through high school before a pivot to languages, training in translation and interpretation (UCO/IPLV, Angers), an exchange year in sciences at Concordia (physics, astronomy, ecology, history of science and technology), and three years on software localization at Microsoft Dublin during the late-1990s, combined with extended travel across Asia, the Americas, Europe, and Oceania, often for months at a time.</p>
+        `,
+        fr: `
+          <p class="lead">Je suis traductrice professionnelle bilingue (EN/ES → FR), basée à Montréal, avec vingt-quatre années de pratique à titre de traductrice autonome, précédées de trois ans à l'interne chez Microsoft Dublin. Depuis 2010, mes projets touchent très majoritairement le secteur fédéral canadien : traduction, révision et postédition pour des clients finaux comme Statistique Canada, Ressources naturelles Canada et Environnement et Changement climatique Canada. Le contenu fédéral représente plus de 90 % de mon volume de projets depuis 2017.</p>
+          <p class="credential"><em>Agréée OTTIAQ · Cote de sécurité du gouvernement du Canada.</em></p>
+          <p class="body-text">TransHorizons est le prolongement de ce travail vers la recherche indépendante. Des décennies passées dans la production institutionnelle canadienne (statistique, environnementale, économique, réglementaire) finissent par accumuler un certain type de regard sur la façon dont le pays se raconte, ce qu'il mesure ou ne mesure pas, et là où se trouvent les questions structurelles. Les articles publiés ici mettent par écrit une partie de ce regard, sur les questions qui me semblent valoir la peine d'être travaillées : les minéraux critiques et la transition énergétique, la place du Canada dans un système multipolaire, le carbone forestier, la gouvernance de l'IA, les infrastructures du commerce.</p>
+          <p class="body-text">La recherche s'appuie sur une formation en traduction et en interprétation (UCO/IPLV, Angers), une année d'échange en sciences à l'Université Concordia (sciences physiques, astronomie, écologie, histoire des sciences et des technologies) et trois ans à la localisation de logiciels chez Microsoft Dublin à la fin des années 1990, ainsi que sur de longs voyages en Asie, dans les Amériques, en Europe et en Océanie, souvent pendant plusieurs mois d'affilée.</p>
+        `
+      };
+
+      // Under-image aside (working languages + earlier book translations). Swapped via
+      // innerHTML so the link survives. FR "earlier book" line is an AI draft: FR-PLACEHOLDER.
+      const asideHtml = {
+        en: `
+          <p class="earlier-books"><em>Earlier book translations and credited work: <a href="/publications" class="inline-link">Writing &amp; Translation Archive</a></em></p>
+          <p class="working-langs">Working languages: French (native), English (bilingual), Spanish (advanced). Additional study- and travel-based knowledge in Russian, Mandarin, Japanese, and Korean.</p>
+        `,
+        fr: `
+          <p class="earlier-books"><em>Traductions de livres et travaux crédités antérieurs : <a href="/publications" class="inline-link">Traductions et publications</a></em></p>
+          <p class="working-langs">Langues de travail : français (langue maternelle), anglais (bilingue), espagnol (avancé). Connaissances complémentaires acquises par l'étude et les voyages : russe, mandarin, japonais et coréen.</p>
+        `
       };
 
       function setLang(lang) {
@@ -218,13 +249,15 @@ Current practice increasingly extends toward independent research and analytical
 
         for (const [id, value] of Object.entries(t)) {
           const el = document.getElementById(id);
-          if (!el) continue;
-          if (id === 'strengths-list') {
-            el.innerHTML = value.map(item => `<li><span class="bullet">•</span><span>${item}</span></li>`).join('');
-          } else {
-            el.textContent = value;
-          }
+          if (el) el.textContent = value;
         }
+
+        const body = document.getElementById('about-body');
+        if (body && bodyHtml[lang]) body.innerHTML = bodyHtml[lang];
+
+        const aside = document.getElementById('about-aside');
+        if (aside && asideHtml[lang]) aside.innerHTML = asideHtml[lang];
+
         document.documentElement.lang = lang;
       }
     </script>

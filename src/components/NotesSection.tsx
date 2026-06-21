@@ -58,14 +58,15 @@ export default function NotesSection() {
     },
     {
       id: 3,
-      slug: 'canada-resources',
-      category: t('blog.canadaResources.category'),
-      date: t('blog.canadaResources.date'),
-      readTime: t('blog.canadaResources.readTime'),
-      title: t('blog.canadaResources.title'),
-      excerpt: t('blog.canadaResources.desc'),
-      image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=700&q=80',
+      slug: 'orbital-data-centers',
+      category: t('blog.orbitalDataCenters.category'),
+      date: t('blog.orbitalDataCenters.date'),
+      readTime: t('blog.orbitalDataCenters.readTime'),
+      title: t('blog.orbitalDataCenters.title'),
+      excerpt: t('blog.orbitalDataCenters.desc'),
+      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80',
       featured: false,
+      comingSoon: true,
     },
   ];
 
@@ -163,46 +164,64 @@ export default function NotesSection() {
             {blogPosts.slice(1).map((post, i) => (
               <article
                 key={post.id}
-                onClick={() => handleBlogClick(post.slug)}
-                className={`group bg-white border border-[#BEBEBE] overflow-hidden flex flex-col transition-all duration-700 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
+                onClick={post.comingSoon ? undefined : () => handleBlogClick(post.slug)}
+                aria-disabled={post.comingSoon || undefined}
+                className={`group bg-white border border-[#BEBEBE] overflow-hidden flex flex-col transition-all duration-700 ${
+                  post.comingSoon ? '' : 'hover:shadow-lg hover:-translate-y-0.5 cursor-pointer'
+                } ${
                   inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${(i + 1) * 120}ms` }}
               >
-                <div className="img-zoom h-44 overflow-hidden">
+                <div className="img-zoom h-44 overflow-hidden relative">
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover ${post.comingSoon ? 'grayscale opacity-60' : ''}`}
                     loading="lazy"
                   />
+                  {post.comingSoon && (
+                    <span className="absolute top-3 right-3 bg-[#1A1A1A]/85 text-white text-[9px] tracking-[0.18em] uppercase font-medium font-body px-2.5 py-1">
+                      {language === 'fr' ? 'À venir' : 'Coming Soon'}
+                    </span>
+                  )}
                 </div>
                 <div className="p-5 flex flex-col flex-1">
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <span className="bg-[#7D1A2E]/15 text-[#5C1220] text-[9px] tracking-[0.18em] uppercase font-medium font-body px-2 py-0.5">
                       {post.category}
                     </span>
-                    <span className="text-[#BBB] text-[10px] font-body flex items-center gap-1">
-                      <Clock size={9} />
-                      {post.readTime}
-                    </span>
+                    {!post.comingSoon && post.readTime && (
+                      <span className="text-[#BBB] text-[10px] font-body flex items-center gap-1">
+                        <Clock size={9} />
+                        {post.readTime}
+                      </span>
+                    )}
                   </div>
-                  <h3 className="font-display text-lg font-medium text-[#1A1A1A] leading-snug mb-2 group-hover:text-[#7D1A2E] transition-colors duration-300 flex-1">
+                  <h3 className={`font-display text-lg font-medium text-[#1A1A1A] leading-snug mb-2 transition-colors duration-300 flex-1 ${post.comingSoon ? '' : 'group-hover:text-[#7D1A2E]'}`}>
                     {post.title}
                   </h3>
                   <p className="text-[#777] font-body text-xs leading-relaxed mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
                   <div className="flex items-center justify-between border-t border-[#E8E8E8] pt-3 w-full mt-auto">
-                    <div className="flex items-center gap-1.5 text-[#1A1A1A] hover:text-[#7D1A2E] transition-colors font-body text-[10px] tracking-widest uppercase font-medium self-start">
-                      {t('blog.readMore')}
-                      <ArrowRight size={11} />
-                    </div>
-                    <PortfolioTTSPlayer
-                      id={`notes-home-${post.slug}`}
-                      text={getNoteText(post.slug, lang) || `${post.title}. ${post.excerpt}`}
-                      lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
-                    />
+                    {post.comingSoon ? (
+                      <span className="text-[#999] font-body text-[10px] tracking-widest uppercase font-medium self-start">
+                        {language === 'fr' ? 'À venir' : 'Coming Soon'}
+                      </span>
+                    ) : (
+                      <>
+                        <div className="flex items-center gap-1.5 text-[#1A1A1A] hover:text-[#7D1A2E] transition-colors font-body text-[10px] tracking-widest uppercase font-medium self-start">
+                          {t('blog.readMore')}
+                          <ArrowRight size={11} />
+                        </div>
+                        <PortfolioTTSPlayer
+                          id={`notes-home-${post.slug}`}
+                          text={getNoteText(post.slug, lang) || `${post.title}. ${post.excerpt}`}
+                          lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
+                        />
+                      </>
+                    )}
                   </div>
                 </div>
               </article>

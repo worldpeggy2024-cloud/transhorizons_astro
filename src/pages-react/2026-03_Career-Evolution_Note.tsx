@@ -138,11 +138,6 @@ export default function NotesCareerEvolution() {
       title: L === 'fr' ? 'Récits de voyage : perspectives d\'un traducteur' : 'Travel, Observation, and the Making of an Institutional Analyst',
       category: L === 'fr' ? 'Observations' : 'Observations',
     },
-    {
-      slug: 'canada-resources',
-      title: L === 'fr' ? 'Minéraux critiques : le nœud des ressources au Canada' : 'Critical Minerals: Canada\'s Resource Nexus',
-      category: L === 'fr' ? 'Systèmes et signaux' : 'Systems & Signals',
-    },
   ];
 
   return (
