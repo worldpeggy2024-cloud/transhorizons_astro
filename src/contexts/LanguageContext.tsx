@@ -93,7 +93,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.government': 'Years of translations for the Canadian government',
     'story.domains': 'Domains of analysis',
     'story.quote': '',
-    'story.positioning': 'Independent research on Canadian resource geopolitics, critical minerals, and trade.',
+    'story.positioning': 'Independent research on Canadian resource geopolitics, trade, and strategic systems.',
     'story.journeysFieldNotes': 'Journeys & Field Notes →',
     'story.cvOnRequest': 'Full CV available on request — please email',
 
@@ -147,13 +147,11 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Footer
     'footer.copyright': '© 2026 TransHorizons. All rights reserved.',
-    'footer.linkedin': 'LinkedIn',
     'footer.instagram': 'Instagram',
     'footer.blog': 'Blog',
     'footer.brand': 'Research & Maps.\nAn independent exploration of geopolitics, global systems, resources, and technological transformation.',
     'footer.navigate': 'Navigate',
     'footer.connect': 'Connect',
-    'footer.linkedinDesc': 'Professional network',
     'footer.instagramDesc': 'Visual stories',
     'footer.blogDesc': 'Articles & analysis',
     'footer.journeysDesc': 'Photographic world exploration',
@@ -233,7 +231,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Portfolio Section
     'portfolio.title': 'Analyses : Géopolitique. Ressources. Technologie',
-    'portfolio.intro': 'Analyses et explorations cartographiques des forces qui façonnent notre monde — géopolitique des ressources, gouvernance numérique et place stratégique du Canada dans un ordre mondial en mutation.',
+    'portfolio.intro': 'Analyses et explorations cartographiques des forces qui façonnent notre monde : géopolitique des ressources, gouvernance numérique et place stratégique du Canada dans un ordre mondial en mutation.',
     'portfolio.viewAll': 'Voir toutes les analyses',
     'analyses.pageTitle': 'Toutes les analyses',
     'analyses.pageSubtitle': 'L\'ensemble des essais analytiques, notes stratégiques et essais visuels — de la géopolitique des ressources à la gouvernance numérique et aux changements environnementaux.',
@@ -283,7 +281,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.government': 'Années de traductions pour le gouvernement canadien',
     'story.domains': 'Domaines d\'analyse',
     'story.quote': 'La langue est un outil d’orientation. L’analyse, un cheminement. La compréhension, l’horizon à atteindre."\n\n"Traduire n\'a jamais été qu\'un simple exercice linguistique. Travailler sur du contenu institutionnel exige une interaction constante avec les politiques publiques, la recherche, les systèmes techniques et les façons dont les sociétés organisent et communiquent le savoir.',
-    'story.positioning': 'Recherche indépendante sur la géopolitique des ressources canadiennes, les minéraux critiques et le commerce.',
+    'story.positioning': 'Recherche indépendante sur la géopolitique des ressources,  le commerce et les enjeux stratégiques du Canada.',
     'story.journeysFieldNotes': 'Fragments de voyage →',
     'story.cvOnRequest': 'CV disponible sur demande par courriel à :',
 
@@ -338,13 +336,11 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Footer
     'footer.copyright': '© 2026 TransHorizons — Vers les systèmes mondiaux — Histoires stratégiques',
-    'footer.linkedin': 'LinkedIn',
     'footer.instagram': 'Instagram',
     'footer.blog': 'Blog',
     'footer.brand': 'Recherche et cartes.\nExploration indépendante en géopolitique, systèmes mondiaux, ressources et  transformations technologiques.',
     'footer.navigate': 'Navigation',
     'footer.connect': 'Contact',
-    'footer.linkedinDesc': 'Réseau professionnel',
     'footer.instagramDesc': 'Histoires visuelles',
     'footer.blogDesc': 'Articles et analyses',
     'footer.journeysDesc': 'Exploration photographique du monde',

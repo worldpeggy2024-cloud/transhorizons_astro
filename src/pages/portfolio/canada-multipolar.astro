@@ -3,6 +3,7 @@ import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
+import { frAsset } from '../../lib/frAssets';
 export const prerender = false;
 
 const yamlPath = resolve(process.cwd(), 'content/articles/2026-03_Canada-Multipolar_Essay.yaml');
@@ -29,13 +30,14 @@ const keyTakeaways = (data.keyTakeaways ?? []).map((k: Record<string, string>) =
 const sections = (data.sections ?? []).map((s: Record<string, any>) => ({
   title: s[`title_${L}`] ?? '',
   content: s[`content_${L}`] ?? '',
-  image: s.image,
+  // FR image swap lives in code (frAsset), not the YAML — see src/lib/frAssets.ts.
+  image: frAsset(s.image, L),
   imageLayout: s.imageLayout ?? 'single',
   images: (s.images ?? []).map((img: any) => ({
-    src: img.src,
+    src: frAsset(img.src, L),
     label: img[`label_${L}`] ?? img.label_en ?? '',
   })),
-  embedUrl: s.embedUrl,
+  embedUrl: frAsset(s.embedUrl, L),
   embedHeight: s.embedHeight ?? 500,
 }));
 
@@ -299,7 +301,6 @@ const UI = labels[L];
           <div>
             <h4 class="font-playfair text-lg font-bold text-charcoal mb-4">{UI.follow}</h4>
             <div class="flex gap-4 text-sm">
-              <a href="https://www.linkedin.com/in/peggy-brenier-6896b197/" target="_blank" rel="noopener noreferrer" class="text-charcoal/70 hover:text-sand transition-colors">LinkedIn</a>
               <a href="https://www.instagram.com/worldpeggy/" target="_blank" rel="noopener noreferrer" class="text-charcoal/70 hover:text-sand transition-colors">Instagram</a>
             </div>
           </div>

@@ -5,6 +5,7 @@
 
 import ProjectDetailLayout from '@/components/ProjectDetailLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { frAsset } from '@/lib/frAssets';
 import data from '../../content/articles/2026-03_Canada-Multipolar_Essay.yaml';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -18,15 +19,16 @@ export default function PortfolioGeopolitics() {
   const sections = (d.sections ?? []).map((s: Record<string, any>) => ({
     title: s[`title_${L}`] ?? s.title_en ?? '',
     content: s[`content_${L}`] ?? s.content_en ?? '',
-    image: s.image,
+    // FR image swap lives in code (frAsset), not the YAML — see src/lib/frAssets.ts.
+    image: frAsset(s.image, L),
     // Canonical YAML (read by the SSR .astro page) uses imageLayout +
     // images:[{src,label_en,label_fr}]. Normalize the captions to the active
     // language so both renderers stay in sync.
     imageLayout: s.imageLayout,
     images: (s.images ?? [])
-      .map((img: any) => (typeof img === 'string' ? { src: img } : { src: img?.src, label: img?.[`label_${L}`] ?? img?.label_en }))
+      .map((img: any) => (typeof img === 'string' ? { src: frAsset(img, L) } : { src: frAsset(img?.src, L), label: img?.[`label_${L}`] ?? img?.label_en }))
       .filter((i: { src?: string }) => i.src),
-    embedUrl: s.embedUrl,
+    embedUrl: frAsset(s.embedUrl, L),
     embedHeight: s.embedHeight,
     imagePosition: s.imageLayout === 'side-by-side' ? 'side-by-side' : s.imagePosition,
     imageWidthClass: s.imageWidthClass,

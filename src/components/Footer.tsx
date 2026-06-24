@@ -118,7 +118,6 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-5">
               {[
-                { icon: BookOpen, label: 'LinkedIn', href: 'https://www.linkedin.com/in/peggy-brenier-6896b197/', descKey: 'footer.linkedinDesc' },
                 { icon: BookOpen, label: 'Instagram', href: 'https://www.instagram.com/worldpeggy/', descKey: 'footer.instagramDesc' },
                 { icon: BookOpen, labelKey: 'story.journeysFieldNotes', href: '#', descKey: 'footer.journeysDesc', accent: true },
               ].map(({ icon: Icon, label, labelKey, href, descKey, accent }) => (

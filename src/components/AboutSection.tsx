@@ -74,25 +74,25 @@ export default function AboutSection() {
             {language === 'fr' ? (
               <>
                 <p className={leadClass}>
-                  Je suis traductrice professionnelle bilingue (EN/ES → FR), basée à Montréal, avec vingt-quatre années de pratique à titre de traductrice autonome, précédées de trois ans à l'interne chez Microsoft Dublin. Depuis 2010, mes projets touchent très majoritairement le secteur fédéral canadien : traduction, révision et postédition pour des clients finaux comme Statistique Canada, Ressources naturelles Canada et Environnement et Changement climatique Canada. Le contenu fédéral représente plus de 90 % de mon volume de projets depuis 2017.
+                  Traductrice professionnelle bilingue (EN/ES → FR) autonome établie à Montréal depuis vingt-quatre ans, après trois ans à l'interne chez Microsoft à Dublin. Contrats de traduction, de révision et de postédition concernant majoritairement le secteur fédéral canadien depuis 2010 (et presque exclusivement depuis 2017) : Statistique Canada, Ressources naturelles Canada et Environnement et Changement climatique Canada, etc.
                 </p>
 
                 <p className={credentialClass}>
-                  Agréée OTTIAQ · Cote de sécurité du gouvernement du Canada.
+                  Agrément OTTIAQ · Cote de sécurité du gouvernement du Canada.
                 </p>
 
                 <p className={bodyClass}>
-                  TransHorizons est le prolongement de ce travail vers la recherche indépendante. Des décennies passées dans la production institutionnelle canadienne (statistique, environnementale, économique, réglementaire) finissent par accumuler un certain type de regard sur la façon dont le pays se raconte, ce qu'il mesure ou ne mesure pas, et là où se trouvent les questions structurelles. Les articles publiés ici mettent par écrit une partie de ce regard, sur les questions qui me semblent valoir la peine d'être travaillées : les minéraux critiques et la transition énergétique, la place du Canada dans un système multipolaire, le carbone forestier, la gouvernance de l'IA, les infrastructures du commerce.
+                  Ce site Web de recherche indépendante est le prolongement de ce travail. Plus de dix ans d'exposition soutenue à du contenu institutionnel canadien (statistique, environnemental, économique, réglementaire) m'ont permis d'accumuler un certain regard sur la façon dont le pays se raconte, ce qu'il mesure ou ne mesure pas, et là où des enjeux structurels demeurent. Les articles publiés ici transposent une partie de ces perspectives sur des questions qu'il me semble important d'explorer : les minéraux critiques et la transition énergétique, la place du Canada dans un monde multipolaire, le carbone forestier, la gouvernance de l'IA, les infrastructures commerciales, etc.
                 </p>
 
                 <p className={bodyLastClass}>
-                  La recherche s'appuie sur une formation en traduction et en interprétation (UCO/IPLV, Angers), une année d'échange en sciences à l'Université Concordia (sciences physiques, astronomie, écologie, histoire des sciences et des technologies) et trois ans à la localisation de logiciels chez Microsoft Dublin à la fin des années 1990, ainsi que sur de longs voyages en Asie, dans les Amériques, en Europe et en Océanie, souvent pendant plusieurs mois d'affilée.
+                  Ces recherches s'appuient sur un cursus initialement scientifique avant une formation en traduction et en interprétation (UCO/IPLV, Angers), un retour aux sciences à l'Université Concordia (sciences physiques, astronomie, écologie, anthropologie, histoire des sciences et des technologies) et trois ans de localisation de logiciels chez Microsoft (Dublin) à la fin des années 1990, enrichis de longs voyages en Asie, dans les Amériques, en Europe et en Océanie.
                 </p>
               </>
             ) : (
               <>
                 <p className={leadClass}>
-                  Senior EN/ES → FR  translator based in Montréal, with 24 years of freelance practice preceded by three years in-house at Microsoft Dublin. Since 2010, my work has focused overwhelmingly on Canadian federal content (and almost exclusively since 2017): translation, revision, and post-editing for end-clients including Statistics Canada, Natural Resources Canada, and Environment and Climate Change Canada.
+                  Senior EN/ES → FR freelance translator based in Montréal, with 24 years of  practice after three years in-house at Microsoft Dublin. Since 2010, my work has focused overwhelmingly on Canadian federal content (and almost exclusively since 2017): translation, revision, and post-editing for end-clients including Statistics Canada, Natural Resources Canada, Environment and Climate Change Canada, etc.
                 </p>
 
                 <p className={credentialClass}>
@@ -100,11 +100,11 @@ export default function AboutSection() {
                 </p>
 
                 <p className={bodyClass}>
-                  TransHorizons is the independent research extension of that work. More than a decade of sustained exposure to Canadian institutional output — statistical, environmental, economic, regulatory — leaves you with a particular angle on how the country talks about itself, what it does and doesn't measure, and where the structural questions sit. The articles here take up some of the questions that strike me as worth working on: critical minerals and the energy transition, Canada's place in a multipolar system, forest carbon, AI governance, trade infrastructure.
+                  This website is the independent research extension of that work. More than a decade of sustained exposure to Canadian institutional output — statistical, environmental, economic, regulatory — have given me a particular angle on how the country talks about itself, what it does and doesn't measure, and where the structural questions sit. The articles here take up some of the questions that strike me as worth working on: critical minerals and the energy transition, Canada's place in a multipolar system, forest carbon, AI governance, trade infrastructure, etc.
                 </p>
 
                 <p className={bodyLastClass}>
-                  The research draws on a scientific track through high school before a pivot to languages, training in translation and interpretation (UCO/IPLV, Angers), an exchange year in sciences at Concordia (physics, astronomy, ecology, history of science and technology), and three years on software localization at Microsoft Dublin during the late-1990s, combined with extended travel across Asia, the Americas, Europe, and Oceania, often for months at a time.
+                  The research draws on a scientific track through high school before a pivot to languages, training in translation and interpretation (UCO/IPLV, Angers), an exchange year in sciences at Concordia (physics, astronomy, environment science, anthropology, history of science and technology), and three years of software localization at Microsoft Dublin during the late-1990s, combined with extended travel across Asia, the Americas, Europe, and Oceania, often for months at a time.
                 </p>
               </>
             )}

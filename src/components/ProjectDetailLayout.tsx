@@ -505,14 +505,6 @@ export default function ProjectDetailLayout({
               <h4 className="font-playfair text-lg font-bold text-charcoal mb-4">{followLabel}</h4>
               <div className="flex gap-4 text-sm">
                 <a
-                  href="https://www.linkedin.com/in/peggy-brenier-6896b197/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-charcoal/70 hover:text-sand transition-colors"
-                >
-                  LinkedIn
-                </a>
-                <a
                   href="https://www.instagram.com/worldpeggy/"
                   target="_blank"
                   rel="noopener noreferrer"

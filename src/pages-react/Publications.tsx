@@ -142,23 +142,6 @@ export default function Publications() {
         </div>
       </div>
 
-      {/* Footer CTA */}
-      <div className="bg-charcoal text-white py-16 px-6 lg:px-10">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-lg mb-6">
-            {language === 'en'
-              ? 'Interested in translation, analysis, or institutional writing?'
-              : 'Intéressé par la traduction, l\'analyse ou la rédaction institutionnelle ?'}
-          </p>
-          <a
-            href="/#contact"
-            className="inline-block px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-charcoal transition-colors"
-          >
-            {language === 'en' ? 'Get in Touch' : 'Prenez contact'}
-          </a>
-        </div>
-      </div>
-
       {/* Full Page Modal */}
       {showFullPage && (
         <div className="fixed inset-0 bg-black/80 flex flex-col items-center justify-center z-50 p-4 overflow-y-auto">
