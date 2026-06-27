@@ -9,6 +9,29 @@ export const prerender = false;
 if (Astro.url.pathname.startsWith('/keystatic')) {
   return Astro.reroute(new Request(Astro.request));
 }
+
+// Real 404s. This catch-all only receives paths with no dedicated .astro page: either
+// valid client-only Wouter routes (serve 200 + SPA) or genuinely unknown paths (still
+// serve the SPA so its NotFound page renders, but with a real 404 status so search
+// engines don't treat dead URLs as live "soft-200" pages). Keep this list in sync with
+// the client routes in src/components/AppShell.tsx that have no .astro twin.
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const knownClientRoutes = new Set([
+  '/notes/canada-resources',
+  '/world-analysis',
+  '/tools/critical-minerals-map',
+  '/portfolio/canada-resources',
+  '/portfolio/canada-forest-system-climate-industrial-pressure',
+  '/historical-risk-demo',
+  '/layered-map-demo',
+  '/global-risk-cascade',
+  '/risk-correlations',
+]);
+// Dynamic country routes: /country/:cca3 and /world-analysis/:cca3 (ISO-ish codes)
+const dynamicClientRoute = /^\/(country|world-analysis)\/[A-Za-z]{2,4}$/;
+if (!knownClientRoutes.has(path) && !dynamicClientRoute.test(path)) {
+  Astro.response.status = 404;
+}
 ---
 <Base>
   <AppShell client:only="react" />

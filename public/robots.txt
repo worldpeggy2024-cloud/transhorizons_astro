@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Admin + internal endpoints — no value to search engines
+Disallow: /keystatic
+Disallow: /api/
+
+Sitemap: https://transhorizons-astro.fly.dev/sitemap.xml

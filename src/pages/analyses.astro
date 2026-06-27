@@ -2,7 +2,34 @@
 // src/pages/analyses.astro
 import Base from '../layouts/Base.astro';
 import AppShell from '../components/AppShell';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import yaml from 'js-yaml';
 export const prerender = false;
+
+// French SEO mirror of the analyses list. Titles/subtitles/categories pulled from the
+// article YAMLs (Peggy's reviewed French) so the list never drifts. A French subtitle is
+// shown only when a real translation exists (subtitle_fr differs from subtitle_en) — this
+// skips entries whose FR subtitle is still the English placeholder (e.g. AI Governance).
+const analysesOrder: [string, string][] = [
+  ['resource-civilization', '2026-04_Resource-Civilization_Essay'],
+  ['canada-multipolar', '2026-03_Canada-Multipolar_Essay'],
+  ['critical-minerals', '2026-02_Critical-Minerals_Essay'],
+  ['ai-governance', '2026-01_AI-Governance_Essay'],
+  ['canada-forest-system-climate-industrial-pressure', '2026-04_Canada-Forest-System_Essay'],
+  ['canada-forest-carbon', '2026-04_Canada-Forest-Carbon_Essay'],
+  ['canada-resources', '2026-04_Canada-Resource-Wealth_Essay'],
+];
+const frAnalyses = analysesOrder.map(([slug, file]) => {
+  const d = yaml.load(readFileSync(resolve(process.cwd(), `content/articles/${file}.yaml`), 'utf-8')) as Record<string, any>;
+  return {
+    slug,
+    title: d.title_fr ?? '',
+    category: d.category_fr ?? '',
+    readTime: d.readTime ?? '',
+    subtitle: (d.subtitle_fr && d.subtitle_fr !== d.subtitle_en) ? d.subtitle_fr : '',
+  };
+});
 ---
 <Base title="Analyses — Geopolitics, Resources & Technology | TransHorizons">
   <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
@@ -55,5 +82,29 @@ export const prerender = false;
       </ul>
     </section>
   </div>
+
+  <!-- Crawlable French SEO mirror — French titles/subtitles from the article YAMLs. -->
+  <div lang="fr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>Toutes les analyses</h1>
+    <p>L'ensemble des essais analytiques, notes stratégiques et essais visuels — de la géopolitique des ressources à la gouvernance numérique et aux changements environnementaux.</p>
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/analyses">Analyses</a>
+      <a href="/notes">Notes et réflexions</a>
+      <a href="/about">À propos</a>
+    </nav>
+    <section>
+      <ul>
+        {frAnalyses.map((a) => (
+          <li>
+            <a href={`/portfolio/${a.slug}?lang=fr`}>{a.title}</a>
+            <span>{a.category} · {a.readTime}</span>
+            {a.subtitle && <p>{a.subtitle}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
   <AppShell client:only="react" />
 </Base>

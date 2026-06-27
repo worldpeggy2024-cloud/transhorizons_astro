@@ -2,7 +2,27 @@
 // src/pages/notes/index.astro
 import Base from '../../layouts/Base.astro';
 import AppShell from '../../components/AppShell';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import yaml from 'js-yaml';
 export const prerender = false;
+
+// French SEO mirror of the notes list — French titles/subtitles pulled from the note
+// YAMLs (Peggy's reviewed French) so the list never drifts.
+const notesOrder: [string, string][] = [
+  ['career-evolution', '2026-03_Career-Evolution_Note'],
+  ['travel-observation', '2026-04_Travel-Observation_Note'],
+];
+const frNotes = notesOrder.map(([slug, file]) => {
+  const d = yaml.load(readFileSync(resolve(process.cwd(), `content/articles/${file}.yaml`), 'utf-8')) as Record<string, any>;
+  return {
+    slug,
+    title: d.title_fr ?? '',
+    category: d.category_fr ?? '',
+    readTime: d.readTime ?? '',
+    subtitle: (d.subtitle_fr && d.subtitle_fr !== d.subtitle_en) ? d.subtitle_fr : '',
+  };
+});
 ---
 <Base title="Notes & Reflections — TransHorizons">
   <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
@@ -35,5 +55,29 @@ export const prerender = false;
       </ul>
     </section>
   </div>
+
+  <!-- Crawlable French SEO mirror — French titles/subtitles from the note YAMLs. -->
+  <div lang="fr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>Notes et réflexions</h1>
+    <p>Réflexions analytiques et observations de recherche : explorations de tendances émergentes et de l'évolution des perspectives relatives aux systèmes géopolitiques et technologiques</p>
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/analyses">Analyses</a>
+      <a href="/notes">Notes et réflexions</a>
+      <a href="/about">À propos</a>
+    </nav>
+    <section>
+      <ul>
+        {frNotes.map((n) => (
+          <li>
+            <a href={`/notes/${n.slug}?lang=fr`}>{n.title}</a>
+            <span>{n.category} · {n.readTime}</span>
+            {n.subtitle && <p>{n.subtitle}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
   <AppShell client:only="react" />
 </Base>

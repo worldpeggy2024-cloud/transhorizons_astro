@@ -94,7 +94,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.domains': 'Domains of analysis',
     'story.quote': '',
     'story.positioning': 'Independent research on Canadian resource geopolitics, trade, and strategic systems.',
-    'story.journeysFieldNotes': 'Journeys & Field Notes →',
+    'story.journeysFieldNotes': 'Journeys & Field Notes (in progress) →',
     'story.cvOnRequest': 'Full CV available on request — please email',
 
     // Gallery Section
@@ -132,7 +132,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact Section
     'contact.title': 'Contact / Collaboration',
-    'contact.intro': 'Interested in geopolitical, resource, or technology analysis?\n\nTransHorizons welcomes conversations with researchers, institutions, media organizations, and collaborators seeking structured analysis, commissioned briefs, or research dialogue on global systemic developments.\n\nEnquiries related to collaboration, research exchanges, or analytical projects are welcome.',
+    'contact.intro': 'Interested in geopolitical, resource, or technology analysis?\n\nIf something on this site sparked a question, a disagreement, or an idea, do not hesitate, a message is welcome.',
     'contact.location': 'Location',
     'contact.montreal': 'Montreal, Quebec, Canada',
     'contact.follow': 'Follow',
@@ -152,9 +152,9 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.brand': 'Research & Maps.\nAn independent exploration of geopolitics, global systems, resources, and technological transformation.',
     'footer.navigate': 'Navigate',
     'footer.connect': 'Connect',
-    'footer.instagramDesc': 'Visual stories',
+    'footer.instagramDesc': ' ',
     'footer.blogDesc': 'Articles & analysis',
-    'footer.journeysDesc': 'Photographic world exploration',
+    'footer.journeysDesc': 'Photographic world exploration (in progress)',
     'footer.marquee1': 'Research · Writing · Analysis',
     'footer.marquee2': 'Canada & the world',
     'footer.marquee3': 'Geopolitics · Resources · Technology',
@@ -282,7 +282,7 @@ const translations: Record<Language, Record<string, string>> = {
     'story.domains': 'Domaines d\'analyse',
     'story.quote': 'La langue est un outil d’orientation. L’analyse, un cheminement. La compréhension, l’horizon à atteindre."\n\n"Traduire n\'a jamais été qu\'un simple exercice linguistique. Travailler sur du contenu institutionnel exige une interaction constante avec les politiques publiques, la recherche, les systèmes techniques et les façons dont les sociétés organisent et communiquent le savoir.',
     'story.positioning': 'Recherche indépendante sur la géopolitique des ressources,  le commerce et les enjeux stratégiques du Canada.',
-    'story.journeysFieldNotes': 'Fragments de voyage →',
+    'story.journeysFieldNotes': 'Fragments de voyage (en développement) →',
     'story.cvOnRequest': 'CV disponible sur demande par courriel à :',
 
     // Gallery Section
@@ -321,7 +321,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact Section
     'contact.title': 'Contact / Collaboration',
-    'contact.intro': 'Vous vous intéressez à l\'analyse géopolitique, aux enjeux liés aux ressources ou aux technologies? Vous souhaitez explorer les grandes tendances mondiales, commander une note d\'analyse ou simplement amorcer une discussion sur les forces qui transforment notre monde? Je serais ravie d\'échanger avec vous.',
+    'contact.intro': 'Vous vous intéressez à l\'analyse géopolitique, aux enjeux liés aux ressources ou aux technologies?\n\nSi un texte du site vous a inspiré une question, un désaccord ou une idée à échanger, votre message est bienvenu.',
     'contact.location': 'Localisation',
     'contact.montreal': 'Montréal, Québec, Canada',
     'contact.follow': 'Suivre',
@@ -341,9 +341,9 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.brand': 'Recherche et cartes.\nExploration indépendante en géopolitique, systèmes mondiaux, ressources et  transformations technologiques.',
     'footer.navigate': 'Navigation',
     'footer.connect': 'Contact',
-    'footer.instagramDesc': 'Histoires visuelles',
+    'footer.instagramDesc': ' ',
     'footer.blogDesc': 'Articles et analyses',
-    'footer.journeysDesc': 'Exploration photographique du monde',
+    'footer.journeysDesc': 'Exploration photographique du monde (en développement)',
     'footer.marquee1': 'Recherche · Rédaction · Analyse',
     'footer.marquee2': 'Le Canada et le monde',
     'footer.marquee3': 'Géopolitique · Ressources · Technologie',

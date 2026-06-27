@@ -2,7 +2,14 @@
 // src/pages/research-approach.astro
 import Base from '../layouts/Base.astro';
 import AppShell from '../components/AppShell';
+import raw from '../../content/pages/research-approach.yaml';
 export const prerender = false;
+
+// Crawlable French mirror of the SEO block below, rendered from the same YAML the
+// React page uses (content/pages/research-approach.yaml) so the two never drift.
+const fr = (raw as Record<string, any>).fr;
+const paras = (s: string) => (s ?? '').split(/\n+/).map((x) => x.trim()).filter(Boolean);
+const listItems = (s: string) => (s ?? '').split(/\n|;/).map((x) => x.trim().replace(/;+$/, '')).filter(Boolean);
 ---
 <Base title="Research Approach — TransHorizons">
   <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
@@ -77,5 +84,74 @@ export const prerender = false;
       <p>TransHorizons sits at the intersection of institutional analytical norms and independent research. The objective is to contribute structured, source-grounded analysis aimed at supporting understanding of complex global dynamics — without reliance on institutional affiliation or access to proprietary data.</p>
     </section>
   </div>
+
+  <!-- Crawlable French SEO mirror — same sections as the English block above,
+       text pulled from content/pages/research-approach.yaml (fr). Visually hidden. -->
+  <div lang="fr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+    <h1>{fr.method.heading}</h1>
+    {paras(fr.method.body).map((p) => (<p>{p}</p>))}
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/analyses">Analyses</a>
+      <a href="/notes">Notes et réflexions</a>
+      <a href="/about">À propos</a>
+    </nav>
+
+    <section>
+      <h2>{fr.scope.heading}</h2>
+      <p>{fr.scope.intro}</p>
+      <ul>{fr.scope.items.map((it: any) => (<li><strong>{it.title}</strong> — {it.desc}</li>))}</ul>
+      <p>{fr.scope.closing}</p>
+    </section>
+
+    <section>
+      <h2>{fr.sources.heading}</h2>
+      <p>{fr.sources.intro}</p>
+      <ul>{listItems(fr.sources.items).map((it) => (<li>{it}</li>))}</ul>
+      <p>{fr.sources.closing}</p>
+    </section>
+
+    <section>
+      <h2>{fr.principles.heading}</h2>
+      <p>{fr.principles.intro}</p>
+      <ul>{fr.principles.items.map((it: any) => (<li><strong>{it.title}</strong> — {it.desc}</li>))}</ul>
+    </section>
+
+    <section>
+      <h2>{fr.mapping.heading}</h2>
+      {paras(fr.mapping.body).map((p) => (<p>{p}</p>))}
+      <ul>{listItems(fr.mapping.items).map((it) => (<li>{it}</li>))}</ul>
+      <p>{fr.mapping.closing}</p>
+    </section>
+
+    <section>
+      <h2>{fr.tools.heading}</h2>
+      {paras(fr.tools.intro).map((p) => (<p>{p}</p>))}
+      <ul>{listItems(fr.tools.usedItems).map((it) => (<li>{it}</li>))}</ul>
+      <p>{fr.tools.p3}</p>
+      <ul>{listItems(fr.tools.howeverItems).map((it) => (<li>{it}</li>))}</ul>
+      {paras(fr.tools.outro).map((p) => (<p>{p}</p>))}
+    </section>
+
+    <section>
+      <h2>{fr.limits.heading}</h2>
+      {paras(fr.limits.body).map((p) => (<p>{p}</p>))}
+      <ul>{listItems(fr.limits.items).map((it) => (<li>{it}</li>))}</ul>
+      <p>{fr.limits.closing}</p>
+    </section>
+
+    <section>
+      <h2>{fr.process.heading}</h2>
+      <p>{fr.process.intro}</p>
+      <ul>{fr.process.items.map((it: any) => (<li><strong>{it.bold}</strong>{it.rest}</li>))}</ul>
+      <p>{fr.process.closing}</p>
+    </section>
+
+    <section>
+      <h2>{fr.position.heading}</h2>
+      {paras(fr.position.body).map((p) => (<p>{p}</p>))}
+    </section>
+  </div>
+
   <AppShell client:only="react" />
 </Base>

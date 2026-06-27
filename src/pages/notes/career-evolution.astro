@@ -11,6 +11,7 @@ import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
+export const prerender = false;
 
 // ── Load YAML at build/request time ──────────────────────────────────────────
 const yamlPath = resolve(process.cwd(), 'content/articles/2026-03_Career-Evolution_Note.yaml');

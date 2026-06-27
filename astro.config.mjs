@@ -19,6 +19,10 @@ function yamlHmrPlugin() {
 }
 
 export default defineConfig({
+  // Canonical origin for the sitemap and any absolute URLs. Currently the Fly
+  // verification target; switch to 'https://transhorizons.net' at public launch
+  // (and add a 301 from the Fly host) — see deployment notes in CLAUDE.md.
+  site: 'https://transhorizons-astro.fly.dev',
   adapter: node({ mode: 'standalone' }),
   
   integrations: [react(), keystatic()],
