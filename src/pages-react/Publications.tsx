@@ -1,34 +1,35 @@
-﻿import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { FileText, Award, ArrowLeft, X } from 'lucide-react';
 import { useLocation } from 'wouter';
 import { useEffect, useState } from 'react';
+import rawData from '../../content/pages/publications.yaml';
 
 const PRIZE_PDF = '/images/PrixComportementOrganisationnel2007_c6b3e3fa.pdf';
 const PRIZE_PAGE_1 = '/images/prize_page_1_43efd579.png';
 const PRIZE_PAGE_2 = '/images/prize_page_2_34568161.png';
 
-const BOOK_COVERS = {
-  pub2: '/images/ComportementOrganisationnel_9d498a55.jpg',
-  pub3: '/images/EconomieContemporaine_950c5512.jpg',
-  pub4: '/images/fondements_des_math_matiques_10_f641fe04.jpg',
-  pub5: '/images/InvestigationS&T_bac7a21f.jpg',
-  pub6: '/images/DeveloppementHumain_9200963e.jpg',
-};
-
-const publications = [
-  { key: 'pub2' },
-  { key: 'pub3' },
-  { key: 'pub4' },
-  { key: 'pub5' },
-  { key: 'pub6' },
+// Book cover images, in the same order as the books[] array in
+// content/pages/publications.yaml (the single source of truth for the text).
+const BOOK_COVERS = [
+  '/images/ComportementOrganisationnel_9d498a55.jpg',
+  '/images/EconomieContemporaine_950c5512.jpg',
+  '/images/fondements_des_math_matiques_10_f641fe04.jpg',
+  '/images/InvestigationS&T_bac7a21f.jpg',
+  '/images/DeveloppementHumain_9200963e.jpg',
 ];
 
+const d = rawData as Record<string, any>;
+const content = { en: d.en, fr: d.fr };
+
 export default function Publications() {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const [, setLocation] = useLocation();
   const [showFullPage, setShowFullPage] = useState(false);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
+
+  const c = language === 'fr' ? content.fr : content.en;
+  const introParagraphs: string[] = (c.intro ?? '').split(/\n\n+/).map((p: string) => p.trim()).filter(Boolean);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -46,11 +47,13 @@ export default function Publications() {
       {/* Header */}
       <div className="pb-16 px-6 lg:px-10 max-w-5xl mx-auto">
         <h1 className="font-playfair text-5xl font-bold text-charcoal mb-6">
-          {t('publications.title')}
+          {c.title}
         </h1>
-        <p className="text-lg text-charcoal/70 leading-relaxed">
-          {t('publications.intro')}
-        </p>
+        {introParagraphs.map((p, i) => (
+          <p key={i} className="text-lg text-charcoal/70 leading-relaxed mb-4">
+            {p}
+          </p>
+        ))}
       </div>
 
       {/* Prize Section */}
@@ -60,10 +63,10 @@ export default function Publications() {
             <Award className="w-12 h-12 text-burgundy flex-shrink-0 mt-1" />
             <div>
               <h2 className="font-playfair text-3xl font-bold text-charcoal mb-3">
-                {t('publications.prize')}
+                {c.prize.name}
               </h2>
               <p className="text-charcoal/70">
-                {t('publications.prizeDesc')}
+                {c.prize.desc}
               </p>
             </div>
           </div>
@@ -109,14 +112,14 @@ export default function Publications() {
       {/* Publications List */}
       <div className="py-16 px-6 lg:px-10 max-w-5xl mx-auto">
         <div className="space-y-16">
-          {publications.map(({ key }) => (
-            <div key={key} className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          {c.books.map((book: any, i: number) => (
+            <div key={i} className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               {/* Book Cover */}
               <div className="md:col-span-1">
                 <div className="bg-white rounded shadow-lg overflow-hidden">
                   <img
-                    src={BOOK_COVERS[key as keyof typeof BOOK_COVERS]}
-                    alt={t(`publications.${key}.title`)}
+                    src={BOOK_COVERS[i]}
+                    alt={book.title}
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -125,16 +128,16 @@ export default function Publications() {
               {/* Publication Details */}
               <div className="md:col-span-2 border-l-4 border-burgundy pl-6">
                 <h3 className="font-playfair text-2xl font-bold text-charcoal mb-2">
-                  {t(`publications.${key}.title`)}
+                  {book.title}
                 </h3>
                 <p className="text-sm text-charcoal/60 font-semibold mb-2">
-                  {t(`publications.${key}.publisher`)}
+                  {book.publisher}{book.year ? ` · ${book.year}` : ''}
                 </p>
                 <p className="text-xs text-charcoal/50 mb-4">
-                  {t(`publications.${key}.isbn`)}
+                  {book.isbn}
                 </p>
                 <p className="text-charcoal/70 leading-relaxed">
-                  {t(`publications.${key}.desc`)}
+                  {book.desc}
                 </p>
               </div>
             </div>
