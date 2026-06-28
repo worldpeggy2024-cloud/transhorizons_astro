@@ -1,0 +1,345 @@
+[
+  {
+    "id": "imf-can-2025-art4",
+    "name": "IMF Canada: 2025 Article IV Consultation – Press Release and Staff Report",
+    "url": "https://www.imf.org/en/publications/cr/issues/2026/01/21/canada-2025-article-iv-consultation-press-release-and-staff-report-5733",
+    "desc": "IMF staff country report providing macro assessment, GDP trajectory, fiscal balance, monetary policy, trade exposure, and structural reform analysis for Canada as of January 2026.",
+    "publicationDate": "2026-01-20",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "boc-mpr-apr2026",
+    "name": "Bank of Canada Monetary Policy Report – April 2026",
+    "url": "https://www.bankofcanada.ca/publications/mpr/mpr-2026-04-29/",
+    "desc": "Official BoC quarterly outlook covering GDP growth projections (1.2% in 2026), inflation (3.2% near-term, easing to 2% in 2027), policy rate held at 2.25%, and trade-uncertainty risks.",
+    "publicationDate": "2026-04-29",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-gdp-q1-2026",
+    "name": "Statistics Canada – The Daily: GDP, Income and Expenditure, Q1 2026",
+    "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260529/dq260529a-eng.htm",
+    "desc": "Official quarterly national accounts release showing real GDP was unchanged in Q1 2026 after a 0.2% decline in Q4 2025, providing the latest output performance figures.",
+    "publicationDate": "2026-05-28",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "gac-state-of-trade-2025",
+    "name": "Global Affairs Canada – Canada's State of Trade 2025",
+    "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/state-trade/2025",
+    "desc": "Annual government trade report documenting Canada's export ($997B) and import ($1T+) totals for 2024, sector performance, and partner concentration, with SME focus.",
+    "publicationDate": "2025-06-22",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "gac-quarterly-trade-spring2026",
+    "name": "Global Affairs Canada – Quarterly Economic and Trade Report: Spring 2026",
+    "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/quarterly/spring-2026",
+    "desc": "Quarterly government report confirming real GDP grew 1.7% in full-year 2025, Q4 2025 contraction of 0.6% (annualized), and BoC projection of 1.1% growth in 2026.",
+    "publicationDate": "2026-03-31",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "seu-2026",
+    "name": "Government of Canada – Spring Economic Update 2026: Economic and Fiscal Overview",
+    "url": "https://budget.canada.ca/update-miseajour/2026/report-rapport/overview-apercu-en.html",
+    "desc": "Official federal fiscal update projecting a $65.3B deficit (1.9% of GDP) for FY2026-27, declining deficit track, and nominal GDP growth assumptions for Canada.",
+    "publicationDate": "2026-04-27",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "pbo-efo-jun2026",
+    "name": "Parliamentary Budget Office – Economic and Fiscal Outlook, June 2026",
+    "url": "https://www.pbo-dpb.ca/en/publications/RP-2627-002-S--economic-fiscal-outlook-june-2026--perspectives-economiques-financieres-juin-2026",
+    "desc": "Independent federal fiscal watchdog report projecting a $72B deficit (2.2% of GDP) in 2025-26, real GDP growth of 1.1% in 2026, with US tariffs treated as permanent.",
+    "publicationDate": "2026-06-03",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "oecd-eo-june2026",
+    "name": "OECD Economic Outlook, Volume 2026 Issue 1 (June 2026)",
+    "url": "https://www.oecd.org/en/publications/2026/06/oecd-economic-outlook-volume-2026-issue-1_8be0dba6.html",
+    "desc": "OECD flagship outlook forecasting Canada's GDP growth at 1.2% in 2026 and 1.7% in 2027, with analysis of tariff headwinds, household consumption, and energy sector as growth driver.",
+    "publicationDate": "2026-06-02",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-cpi-may2026",
+    "name": "Statistics Canada – The Daily: Consumer Price Index, May 2026",
+    "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260622/dq260622a-eng.htm",
+    "desc": "Official CPI release showing Canada's headline inflation rose to 3.2% year-over-year in May 2026, driven by gasoline (+33.2% y/y) and food price acceleration.",
+    "publicationDate": "2026-06-22",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-lfs-may2026",
+    "name": "Statistics Canada – The Daily: Labour Force Survey, May 2026",
+    "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260605/dq260605a-eng.htm",
+    "desc": "Monthly labour market release showing employment rose 88,000 (+0.4%) in May 2026, unemployment rate fell to 6.6%, and employment rate reached 60.7%.",
+    "publicationDate": "2026-06-04",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+   {
+    "id": "statcan-pop-quarterly",
+    "name": "Statistics Canada – Population Estimates, Quarterly (Table 17-10-0009-01)",
+    "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901",
+    "desc": "Official quarterly population estimates showing Canada's population at 41,472,081 as of Q1 2026, confirming the first annual population decline in Canadian history in 2025.",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-pop-age-jul2025",
+    "name": "Statistics Canada – The Daily: Population Estimates: Age and Gender, July 1, 2025",
+    "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250924/dq250924a-eng.htm",
+    "desc": "Official age-structure release confirming Canada's population of 41,651,653 on July 1, 2025 and updated median age data showing aging population trend.",
+    "publicationDate": "2025-09-23",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-pop-projections-2026",
+    "name": "Statistics Canada – Population Projections for Canada, Provinces and Territories, 2025 to 2075",
+    "url": "https://publications.gc.ca/collections/collection_2026/statcan/172000032026001-eng.pdf",
+    "desc": "Official long-range demographic projections covering moderate (57.4M by 2075) and low-growth scenarios, fertility, mortality, and migration assumptions.",
+    "publicationDate": "2026-01-26",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-2021-census-ethno-religion",
+    "name": "Statistics Canada – 2021 Census of Population: Ethnocultural and Religious Diversity (Topic Hub)",
+    "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethno-religion-eng.cfm",
+    "desc": "Primary census data hub for 2021 religious and ethnocultural composition, showing 53.3% Christian, 34.6% no religion, 4.9% Muslim, and 5% Indigenous identity population.",
+    "publicationDate": "2022-10-25",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-2021-census-language",
+    "name": "Statistics Canada – 2021 Census of Population: Language (Topic Hub)",
+    "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/language-langue-eng.cfm",
+    "desc": "Primary census data hub for 2021 language composition showing English first official language spoken by 75.5% and French by 21.4% of the population.",
+    "publicationDate": "2022-08-16",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-2021-indigenous-profile",
+    "name": "Statistics Canada – Indigenous Population Profile, 2021 Census of Population",
+    "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/ipp-ppa/index.cfm?Lang=E",
+    "desc": "Census profile for the 1.8 million Indigenous persons (5.0% of population) covering First Nations, Métis, and Inuit with age, gender, and socio-demographic characteristics.",
+    "publicationDate": "2023-06-20",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "pew-religious-composition-2020",
+    "name": "Pew Research Center – Religious Composition by Country, 2010–2020",
+    "url": "https://www.pewresearch.org/religion/feature/religious-composition-by-country-2010-2020/",
+    "desc": "Pew modelled estimates of Canada's 2020 religious composition (Christians 53.3%, unaffiliated 34.6%, Muslims 4.9%, Hindus 1.5%) for international comparative benchmarking.",
+    "publicationDate": "2025-06-08",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-css-trust-institutions-q4-2024",
+    "name": "Statistics Canada – Confidence in Institutions, Canadian Social Survey Q4 2024",
+    "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260106/dq260106c-eng.htm",
+    "desc": "Official government survey data on Canadians' institutional confidence (federal government, courts, police, media) collected November–December 2024.",
+    "publicationDate": "2026-01-05",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-css-trust-others",
+    "name": "Statistics Canada – Quality of Life Indicator: Trust in Others (Canadian Social Survey 2022–2024)",
+    "url": "https://www.statcan.gc.ca/hub-carrefour/quality-life-qualite-vie/society-societe/trust-confiance-eng.htm",
+    "desc": "Longitudinal indicator showing 43.5% of Canadians reported most people can be trusted in Q4 2024, providing interpersonal social trust baseline for cohesion analysis.",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "wvs-canada-wave7",
+    "name": "World Values Survey – Canada, Wave 7 (2017–2022) Data Catalog",
+    "url": "https://datacatalog.ihsn.org/catalog/11559",
+    "desc": "WVS Wave 7 micro-data for Canada providing citizen self-report measures of interpersonal trust, institutional confidence, national identity, and political values.",
+    "publicationDate": "2023-10-11",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "freedom-house-canada-2026",
+    "name": "Freedom House – Canada: Freedom in the World 2026 Country Report",
+    "url": "https://freedomhouse.org/country/canada/freedom-world/2026",
+    "desc": "Annual political rights and civil liberties assessment for Canada for 2026, covering electoral integrity, media freedom, judicial independence, and minority rights.",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "wjp-canada-2025",
+    "name": "World Justice Project – Canada: WJP Rule of Law Index 2025 Country Fact Sheet",
+    "url": "https://worldjusticeproject.org/sites/default/files/documents/Canada_3.pdf",
+    "desc": "WJP fact sheet showing Canada ranked 13th out of 143 countries on the Rule of Law Index 2025, with sub-scores on constraints on government, absence of corruption, open government, and civil justice.",
+    "publicationDate": "2025-10-27",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ti-cpi-2025",
+    "name": "Transparency International – Corruption Perceptions Index 2025",
+    "url": "https://www.transparency.org/en/cpi/2025",
+    "desc": "Annual CPI placing Canada 16th out of 182 countries with a score of 75/100, an all-time low, reflecting perceived corruption in public sector institutions.",
+    "publicationDate": "2026-02-09",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "vdem-democracy-report-2026",
+    "name": "V-Dem Institute – Democracy Report 2026: Unraveling the Democratic Era?",
+    "url": "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
+    "desc": "V-Dem 2026 democracy report classifying Canada as a Liberal Democracy ranked 23rd globally on the Liberal Democracy Index, with context on regional backsliding trends.",
+    "publicationDate": "2026-03-16",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "sipri-milex-2025",
+    "name": "SIPRI – Trends in World Military Expenditure, 2025 (Fact Sheet)",
+    "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+    "desc": "SIPRI annual fact sheet providing Canada's military expenditure for 2025 in the global context, used to assess Canada's defence burden relative to NATO commitments.",
+    "publicationDate": "2026-04-26",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "dnd-departmental-results-2024-25",
+    "name": "Department of National Defence – Departmental Results Report 2024–25",
+    "url": "https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-results-report/2024-25-index.html",
+    "desc": "Official DND annual results report detailing CAF missions, NORAD modernization investments ($38.6B over 20 years), personnel readiness, and Arctic security operations.",
+    "publicationDate": "2025-11-06",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "pbo-defence-capital-2025",
+    "name": "Parliamentary Budget Office – Planned Capital Spending Under Canada's Defence Policy: 2025 Update",
+    "url": "https://www.pbo-dpb.ca/en/publications/RP-2526-016-S--planned-capital-spending-under-canada-defence-policy-2025-update--depenses-capital-prevues-politique-defense-canada-mise-jour-2025",
+    "desc": "Independent cost analysis of DND's 20-year capital plan ($322.9B total), including the $81.8B Budget 2025 defence announcement and NATO 2% GDP commitment pathway.",
+    "publicationDate": "2025-10-28",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "cgai-diplomats-guide-2026",
+    "name": "Canadian Global Affairs Institute – The Diplomat's Guide to Canada 2026",
+    "url": "https://www.cgai.ca/primer_the_diplomats_guide_to_canada_2026",
+    "desc": "Policy institute primer on Canada's 2026 foreign and defence posture: Arctic investment, EU Security and Defence Partnership, Five Eyes, NATO, trade diversification strategy.",
+    "publicationDate": "2026-02-28",
+    "accessDate": "2026-06-28",
+    "confidence": "Med",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "gac-trade-diversification",
+    "name": "Global Affairs Canada – Diversifying Trade for Canada",
+    "url": "https://international.canada.ca/en/global-affairs/campaigns/diversifying-trade",
+    "desc": "Official government page on Canada's 15 free trade agreements covering 51 countries, Indo-Pacific Strategy, CPTPP, CETA, and trade diversification objectives beyond the US.",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "un-comtrade-canada",
+    "name": "UN Comtrade – Canada Trade Flows",
+    "url": "https://comtradeplus.un.org/TradeFlow",
+    "desc": "UN Comtrade database providing Canada's detailed annual merchandise export and import statistics by product and partner country for multi-year external vulnerability analysis.",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "statcan-international-trade",
+    "name": "Statistics Canada – International Trade Statistics Portal",
+    "url": "https://www.statcan.gc.ca/en/subjects-start/international_trade",
+    "desc": "Statistics Canada's portal for monthly and annual merchandise and services trade data, showing April 2026 total trade at $92.9B and partner/commodity breakdowns.",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "pbo-ircc-immigration-demographic",
+    "name": "Parliamentary Budget Office – Demographic Implications of the 2026–2028 Immigration Levels Plan",
+    "url": "https://www.pbo-dpb.ca/en/publications/RP-2526-025-S--demographic-implications-2026-2028-immigration-levels-plan--implications-demographiques-plan-niveaux-immigration-2026-2028",
+    "desc": "PBO analysis of the 380,000 annual PR target, NPR population reduction to under 5% of population by end-2027, and projected demographic and fiscal implications.",
+    "publicationDate": "2026-02-25",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "budget-2025-canada-strong",
+    "name": "Government of Canada – Budget 2025: Our Plan: Building Canada Strong",
+    "url": "https://budget.canada.ca/2025/report-rapport/intro-en.html",
+    "desc": "Federal budget introducing $81.8B defence spending over 5 years, productivity super-deduction, $25B Canada Strong sovereign wealth fund, and housing and infrastructure agenda.",
+    "publicationDate": "2025-11-03",
+    "accessDate": "2026-06-28",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+  "id": "ourcommons-party-standings-2026",
+  "name": "House of Commons of Canada – Party Standings",
+  "url": "https://www.ourcommons.ca/members/en/party-standings",
+  "desc": "Authoritative current distribution of seats among parties in the House of Commons. As of June 2026: Liberal 173, Conservative 140, Bloc Québécois 21, NDP 5, Green 1, Independent 1, 2 vacant — 343 seats total; Liberal 173 of 343 constitutes a majority.",
+  "accessDate": "2026-06-28",
+  "confidence": "High",
+  "citationType": "Fact"
+},
+{
+  "id": "cbc-carney-majority-byelections-2026",
+  "name": "CBC News – Carney clinches a majority government with 3 Liberal byelection wins",
+  "url": "https://www.cbc.ca/news/politics/byelection-liberal-conservatives-carney-majority-government-9.7161054",
+  "desc": "Reports the Liberals reaching a 174-seat majority on 14 April 2026 via three by-election wins combined with five floor crossings (four Conservative, one NDP); notes it is the first time a PM has reached a majority partly through floor crossing, and the Conservative opposition's contestation of its legitimacy.",
+  "publicationDate": "2026-04-14",
+  "accessDate": "2026-06-28",
+  "confidence": "High",
+  "citationType": "Fact"
+}
+]

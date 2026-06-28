@@ -16,7 +16,10 @@ export const COUNTRY_METADATA: Record<string, CountryMetadata> = {
   CAN: {
     cca3: 'CAN',
     region: 'North America',
-    riskCategory: 'Low',
+    // Derived by rule (not hand-assigned) via deriveRiskLevel() from CAN's own
+    // two-phase risk register: "Permanent US Tariff Lock-In and CUSMA Erosion"
+    // is High probability × High impact → High. (Was hand-set 'Low' pre-rebuild.)
+    riskCategory: 'High',
     topics: ['Geopolitics', 'Resources', 'Technology'],
   },
   USA: {
@@ -36,7 +39,11 @@ export const COUNTRY_METADATA: Record<string, CountryMetadata> = {
   BRA: {
     cca3: 'BRA',
     region: 'South America',
-    riskCategory: 'Medium',
+    // Derived by rule (not hand-assigned) via deriveRiskLevel() from BRA's own
+    // risk register: "Electoral polarization and post-election institutional
+    // stress" is High probability × High impact → High. (Programmatic stamping
+    // across all countries is part of the regeneration wave.)
+    riskCategory: 'High',
     topics: ['Geopolitics', 'Resources'],
   },
   CHL: {

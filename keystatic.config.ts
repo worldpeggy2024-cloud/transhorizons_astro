@@ -284,6 +284,15 @@ export default config({
           defaultValue: 'Med',
           validation: { isRequired: false },
         }),
+        // Social cohesion is the second of the two-cohesions split (distinct from
+        // elite cohesion); paired here beside it. See src/lib/deriveRiskLevel.ts
+        // for how riskLevel is derived separately from the risk register.
+        scorecard_socialCohesion: fields.select({
+          label: 'Scorecard: Social Cohesion',
+          options: ratingOptions,
+          defaultValue: 'Med',
+          validation: { isRequired: false },
+        }),
         scorecard_securityLoyalty: fields.select({
           label: 'Scorecard: Security Loyalty',
           options: ratingOptions,
@@ -385,6 +394,54 @@ export default config({
         }),
         economy_politicalEconomy_fr: fields.text({
           label: 'Economy: Political Economy (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        // ── Society Section ───────────────────────────────────────────────
+        // Top-level peer of political/economy/security. Positioned after
+        // economy, before security. Narrative paragraph fields (proofable
+        // surface) — declare BEFORE writing society_* content (strip rule).
+        society_demographics_en: fields.text({
+          label: 'Society: Demographics (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        society_demographics_fr: fields.text({
+          label: 'Society: Demographics (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        society_composition_en: fields.text({
+          label: 'Society: Composition (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        society_composition_fr: fields.text({
+          label: 'Society: Composition (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        society_religion_en: fields.text({
+          label: 'Society: Religion (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        society_religion_fr: fields.text({
+          label: 'Society: Religion (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        society_cohesion_en: fields.text({
+          label: 'Society: Cohesion (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        society_cohesion_fr: fields.text({
+          label: 'Society: Cohesion (FR)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),

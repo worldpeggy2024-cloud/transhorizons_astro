@@ -438,6 +438,35 @@ economy_politicalEconomy_fr: >-
   industriels domestiques protégés — constitueront un point de friction
   d'économie politique tout au long de la fenêtre de mise en œuvre 2026—2030
   [wto-brazil-tariff-trade-profile].
+society_demographics_en: >-
+  PLACEHOLDER — Society / Demographics (Brazil). Pending the two-phase society
+  research pass and Peggy's proofing. Intentionally uncited and not crawlable
+  (gated by SEO_READY_COUNTRIES). Structure only — no sourced claims here.
+society_demographics_fr: >-
+  FR-PLACEHOLDER — Société / Démographie (Brésil). En attente de la passe de
+  recherche société bi-phase et de la relecture de Peggy. Volontairement non
+  sourcé et non indexable.
+society_composition_en: >-
+  PLACEHOLDER — Society / Composition (Brazil). Pending two-phase society
+  research and proofing. Intentionally uncited; replace via the deepsearch
+  society pass before exposing.
+society_composition_fr: >-
+  FR-PLACEHOLDER — Société / Composition (Brésil). En attente de la recherche
+  société bi-phase et de la relecture. Volontairement non sourcé.
+society_religion_en: >-
+  PLACEHOLDER — Society / Religion (Brazil). Pending two-phase society research
+  and proofing. Intentionally uncited; replace before exposing.
+society_religion_fr: >-
+  FR-PLACEHOLDER — Société / Religion (Brésil). En attente de la recherche
+  société bi-phase et de la relecture. Volontairement non sourcé.
+society_cohesion_en: >-
+  PLACEHOLDER — Society / Social cohesion (Brazil), the second cohesion distinct
+  from elite cohesion. Pending two-phase society research and proofing.
+  Intentionally uncited; replace before exposing.
+society_cohesion_fr: >-
+  FR-PLACEHOLDER — Société / Cohésion sociale (Brésil), la seconde cohésion
+  distincte de la cohésion des élites. En attente de la recherche société
+  bi-phase et de la relecture. Volontairement non sourcé.
 security_internal_en: >-
   Brazil recorded approximately 44,100 intentional homicides in 2024 — a rate
   near 20.5 per 100,000 people — the lowest absolute count since 2012 yet still

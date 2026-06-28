@@ -1,0 +1,182 @@
+---
+/**
+ * src/pages/country/[cca3].astro
+ *
+ * Server-rendered SEO layer for country situation reports. COPIES the existing
+ * article SSR pattern (hidden SEO div + <AppShell client:only="react" />) — the
+ * React CountryPage remains the full visual experience; this only adds crawlable
+ * prose to the initial HTML.
+ *
+ * ROUTING: this file SHADOWS the [...slug].astro catch-all for /country/* (it is a
+ * more specific route, so Astro serves it first). [...slug].astro is left untouched
+ * and still owns /world-analysis/* and every other client route. This route mirrors
+ * the catch-all's 404 behavior for non-country-code paths so nothing regresses.
+ *
+ * CRAWLABILITY IS GATED: the SEO prose block is emitted ONLY for countries listed in
+ * SEO_READY_COUNTRIES (two-phase-verified + proofed). That list is empty for now, so
+ * this route currently behaves exactly like the catch-all — no unreliable / unproofed
+ * content is ever served to crawlers. Opening a country is a one-line allowlist edit.
+ */
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
+import yaml from 'js-yaml';
+import Base from '../../layouts/Base.astro';
+import AppShell from '../../components/AppShell';
+import { SEO_READY_COUNTRIES } from '../../lib/analysedCountries';
+
+export const prerender = false;
+
+const rawCode = String(Astro.params.cca3 ?? '');
+const cca3 = rawCode.toUpperCase();
+const isCountryCode = /^[A-Za-z]{2,4}$/.test(rawCode);
+
+const yamlPath = resolve(process.cwd(), 'content', 'countries', cca3, 'analysis.yaml');
+const fileExists = isCountryCode && existsSync(yamlPath);
+const seoReady = fileExists && SEO_READY_COUNTRIES.includes(cca3);
+
+// Mirror [...slug].astro: anything that isn't a plausible country code is a real 404
+// (still serves the SPA so its NotFound page renders).
+if (!isCountryCode) {
+  Astro.response.status = 404;
+}
+
+const stripCites = (s: unknown): string =>
+  String(s ?? '')
+    .replace(/\[[a-z0-9-]+\]/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+
+const parseJsonArray = (v: unknown): any[] => {
+  if (Array.isArray(v)) return v;
+  if (typeof v === 'string') {
+    try {
+      const parsed = JSON.parse(v);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
+};
+
+let seo: {
+  name: string;
+  snapshot: string[];
+  political: string[];
+  economy: string[];
+  society: string[];
+  security: string[];
+  actors: string[];
+  risks: string[];
+} | null = null;
+
+if (seoReady) {
+  const data = yaml.load(readFileSync(yamlPath, 'utf-8')) as Record<string, any>;
+  const g = (k: string) => stripCites(data?.[k]);
+
+  const snapshot = String(data?.executiveSnapshot_en ?? '')
+    .split('\n')
+    .map((line) => stripCites(line))
+    .filter(Boolean);
+
+  const actors = [
+    ...parseJsonArray(data?.actors_domestic_en),
+    ...parseJsonArray(data?.actors_external_en),
+  ]
+    .map((a) => `${stripCites(a?.name)}: ${stripCites(a?.interests)}`)
+    .filter((x) => x.trim().length > 2);
+
+  const risks = parseJsonArray(data?.risks_en)
+    .map((r) => `${stripCites(r?.title)} — ${stripCites(r?.trigger)}`)
+    .filter((x) => x.trim().length > 2);
+
+  seo = {
+    name: String(data?.nameEn ?? cca3),
+    snapshot,
+    political: [
+      g('political_powerStructure_en'),
+      g('political_stabilityDrivers_en'),
+      g('political_shockAbsorbers_en'),
+    ].filter(Boolean),
+    economy: [
+      g('economy_macroReality_en'),
+      g('economy_externalVulnerability_en'),
+      g('economy_politicalEconomy_en'),
+    ].filter(Boolean),
+    society: [
+      g('society_demographics_en'),
+      g('society_composition_en'),
+      g('society_religion_en'),
+      g('society_cohesion_en'),
+    ].filter(Boolean),
+    security: [g('security_internal_en'), g('security_diplomacy_en')].filter(Boolean),
+    actors,
+    risks,
+  };
+}
+
+const pageTitle = seo
+  ? `${seo.name} — Country Situation Report | TransHorizons`
+  : 'TransHorizons — World Views';
+const pageDesc =
+  seo && seo.snapshot.length > 0
+    ? seo.snapshot[0].slice(0, 300)
+    : 'Structured country situation reports — political stability, economy, society, and security.';
+---
+
+<Base title={pageTitle} description={pageDesc}>
+
+  {seo && (
+    <!-- Static SEO content: invisible to visitors, readable by crawlers. Emitted
+         only for two-phase-verified, proofed countries (SEO_READY_COUNTRIES). -->
+    <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+      <h1>{seo.name} — Country Situation Report</h1>
+      {seo.snapshot.length > 0 && (
+        <section>
+          <h2>Executive Snapshot</h2>
+          <ul>{seo.snapshot.map((b) => <li>{b}</li>)}</ul>
+        </section>
+      )}
+      {seo.political.length > 0 && (
+        <section>
+          <h2>Political Stability</h2>
+          {seo.political.map((p) => <p>{p}</p>)}
+        </section>
+      )}
+      {seo.economy.length > 0 && (
+        <section>
+          <h2>Economy</h2>
+          {seo.economy.map((p) => <p>{p}</p>)}
+        </section>
+      )}
+      {seo.society.length > 0 && (
+        <section>
+          <h2>Society</h2>
+          {seo.society.map((p) => <p>{p}</p>)}
+        </section>
+      )}
+      {seo.security.length > 0 && (
+        <section>
+          <h2>Security &amp; Diplomacy</h2>
+          {seo.security.map((p) => <p>{p}</p>)}
+        </section>
+      )}
+      {seo.actors.length > 0 && (
+        <section>
+          <h2>Key Actors</h2>
+          <ul>{seo.actors.map((a) => <li>{a}</li>)}</ul>
+        </section>
+      )}
+      {seo.risks.length > 0 && (
+        <section>
+          <h2>Risk Register</h2>
+          <ul>{seo.risks.map((r) => <li>{r}</li>)}</ul>
+        </section>
+      )}
+    </div>
+  )}
+
+  <!-- React app: full visual experience for visitors, unchanged. -->
+  <AppShell client:only="react" />
+
+</Base>

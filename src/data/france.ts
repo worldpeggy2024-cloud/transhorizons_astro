@@ -10,6 +10,8 @@ export interface AnalysisContent {
   lastUpdated: string;
   scorecard: {
     eliteCohesion: 'High' | 'Med' | 'Low';
+    /** Second of the two-cohesions split (distinct from eliteCohesion). Optional until a country is regenerated with a society pass. */
+    socialCohesion?: 'High' | 'Med' | 'Low';
     securityLoyalty: 'High' | 'Med' | 'Low';
     economicPressure: 'High' | 'Med' | 'Low';
     protestCapacity: 'High' | 'Med' | 'Low';
@@ -35,6 +37,17 @@ export interface LangContent {
     macroReality: string;
     externalVulnerability: string;
     politicalEconomy: string;
+  };
+  /**
+   * Society section — top-level peer of political/economy/security, positioned
+   * after economy and before security. Optional until a country is regenerated
+   * with a society research pass.
+   */
+  society?: {
+    demographics: string;
+    composition: string;
+    religion: string;
+    cohesion: string;
   };
   security: {
     internal: string;

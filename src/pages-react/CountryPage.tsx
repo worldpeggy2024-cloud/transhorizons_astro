@@ -13,6 +13,7 @@ import { RiskTrendVisualization } from '@/components/RiskTrendVisualization';
 import { FlagIcon } from '@/components/FlagIcon';
 import { irelandRiskTrends } from '@/data/irelandRiskTrends';
 import type { RiskTrendData } from '@/lib/riskTrendTypes';
+import { deriveRiskLevel } from '@/lib/deriveRiskLevel';
 import {
   ArrowLeft, Globe, Users, MapPin, BarChart2, Shield, TrendingUp,
   AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink
@@ -387,6 +388,13 @@ export default function CountryPage() {
     return language === 'fr' ? analysis.fr : analysis.en;
   }, [analysis, language]);
 
+  // Overall risk level: derived by rule from this country's own risk register
+  // (never hand-assigned). Uses the active-language risks so drivenBy is localized.
+  const derivedRisk = useMemo(
+    () => (lang ? deriveRiskLevel(lang.risks) : null),
+    [lang]
+  );
+
   if (loading) {
     return (
       <div className="min-h-screen bg-[#EFEFEF] flex items-center justify-center">
@@ -480,9 +488,23 @@ export default function CountryPage() {
     diplomacy: language === 'fr' ? 'Diplomatie & posture extérieure' : 'Diplomacy & external posture',
     domesticActors: language === 'fr' ? 'Acteurs nationaux' : 'Domestic actors',
     externalActors: language === 'fr' ? 'Acteurs extérieurs' : 'External actors',
+    // FR-PLACEHOLDER: society + overall-risk UI labels — Peggy to verify French wording.
+    society: language === 'fr' ? 'Société' : 'Society',
+    socialCohesion: language === 'fr' ? 'Cohésion sociale' : 'Social cohesion',
+    demographics: language === 'fr' ? 'Démographie' : 'Demographics',
+    composition: language === 'fr' ? 'Composition' : 'Composition',
+    religion: language === 'fr' ? 'Religion' : 'Religion',
+    socialCohesionSection: language === 'fr' ? 'Cohésion sociale' : 'Social cohesion',
+    overallRisk: language === 'fr' ? 'Niveau de risque global' : 'Overall risk level',
+    drivenBy: language === 'fr' ? 'déterminé par' : 'driven by',
+    riskHigh: language === 'fr' ? 'Élevé' : 'High',
+    riskMedium: language === 'fr' ? 'Moyen' : 'Medium',
+    riskLow: language === 'fr' ? 'Faible' : 'Low',
   };
 
   const hasAnalysis = !!analysis && !!lang;
+  const hasSociety = hasAnalysis && !!lang!.society &&
+    Object.values(lang!.society).some((v) => typeof v === 'string' && v.trim().length > 0);
   const activeSources = analysis?.sources ?? lang?.sources ?? [];
 
   return (
@@ -613,6 +635,7 @@ export default function CountryPage() {
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
                 <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} />
+                <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} />
                 <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} />
                 <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} />
                 <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} />
@@ -638,6 +661,7 @@ export default function CountryPage() {
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
                 <ScoreRow label={t.eliteCohesion} value={null} />
+                <ScoreRow label={t.socialCohesion} value={null} />
                 <ScoreRow label={t.securityLoyalty} value={null} />
                 <ScoreRow label={t.economicPressure} value={null} />
                 <ScoreRow label={t.protestCapacity} value={null} />
@@ -657,6 +681,29 @@ export default function CountryPage() {
                 [t.macroReality, lang!.economy.macroReality],
                 [t.externalVuln, lang!.economy.externalVulnerability],
                 [t.politicalEconomy, lang!.economy.politicalEconomy],
+              ] as [string, string][]).map(([title, text]) => (
+                <div key={title}>
+                  <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[#4A4A4A] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <ComingSoonBlock language={language} />
+          )}
+        </FrameworkSection>
+        </div>
+
+        {/* 3b. Society */}
+        <div data-section="Society">
+        <FrameworkSection icon={Users} title={t.society}>
+          {hasSociety ? (
+            <div className="space-y-6">
+              {([
+                [t.demographics, lang!.society!.demographics],
+                [t.composition, lang!.society!.composition],
+                [t.religion, lang!.society!.religion],
+                [t.socialCohesionSection, lang!.society!.cohesion],
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-2">{title}</h4>
@@ -731,6 +778,26 @@ export default function CountryPage() {
         <FrameworkSection icon={AlertTriangle} title={t.risks} defaultOpen={true}>
           {hasAnalysis ? (
             <div className="space-y-2">
+              {/* Derived overall risk level — rule-based, from this country's own register */}
+              {derivedRisk && (
+                <div className="mb-4 flex items-center gap-2 flex-wrap pb-3 border-b border-[#F0EDE8]">
+                  <span className="font-body text-[10px] uppercase tracking-widest text-[#8A8A8A]">{t.overallRisk}:</span>
+                  <span className={`font-body text-xs px-2 py-0.5 border rounded ${
+                    derivedRisk.level === 'High'
+                      ? 'bg-red-100 text-red-700 border-red-200'
+                      : derivedRisk.level === 'Medium'
+                        ? 'bg-amber-100 text-amber-700 border-amber-200'
+                        : 'bg-green-100 text-green-700 border-green-200'
+                  }`}>
+                    {derivedRisk.level === 'High' ? t.riskHigh : derivedRisk.level === 'Medium' ? t.riskMedium : t.riskLow}
+                  </span>
+                  {derivedRisk.drivenBy && (
+                    <span className="font-body text-xs text-[#8A8A8A] italic">
+                      — {t.drivenBy}: <span className="not-italic font-medium text-[#4A4A4A]">{derivedRisk.drivenBy}</span>
+                    </span>
+                  )}
+                </div>
+              )}
               {/* Legend */}
               <div className="flex items-center gap-4 mb-3 text-[10px] font-body text-[#8A8A8A]">
                 <span>{language === 'fr' ? 'Badges :' : 'Badges:'}</span>

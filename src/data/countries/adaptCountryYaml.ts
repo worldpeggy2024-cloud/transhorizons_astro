@@ -94,6 +94,12 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
       externalVulnerability: String(d[`economy_externalVulnerability${s}`] ?? ''),
       politicalEconomy: String(d[`economy_politicalEconomy${s}`] ?? ''),
     },
+    society: {
+      demographics: String(d[`society_demographics${s}`] ?? ''),
+      composition: String(d[`society_composition${s}`] ?? ''),
+      religion: String(d[`society_religion${s}`] ?? ''),
+      cohesion: String(d[`society_cohesion${s}`] ?? ''),
+    },
     security: {
       internal: String(d[`security_internal${s}`] ?? ''),
       diplomacy: String(d[`security_diplomacy${s}`] ?? ''),
@@ -113,6 +119,9 @@ export function adaptCountryYaml(raw: unknown): AnalysisContent {
     lastUpdated: String(d.lastUpdated ?? ''),
     scorecard: {
       eliteCohesion: (d.scorecard_eliteCohesion as AnalysisContent['scorecard']['eliteCohesion']) ?? 'Med',
+      // Only set when present in the YAML (no 'Med' default): an unresearched
+      // social-cohesion rating should render as "—", not a fabricated Medium.
+      socialCohesion: (d.scorecard_socialCohesion as AnalysisContent['scorecard']['socialCohesion']) || undefined,
       securityLoyalty: (d.scorecard_securityLoyalty as AnalysisContent['scorecard']['securityLoyalty']) ?? 'Med',
       economicPressure: (d.scorecard_economicPressure as AnalysisContent['scorecard']['economicPressure']) ?? 'Med',
       protestCapacity: (d.scorecard_protestCapacity as AnalysisContent['scorecard']['protestCapacity']) ?? 'Med',

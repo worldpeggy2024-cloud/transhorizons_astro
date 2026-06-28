@@ -176,6 +176,7 @@ function validateCountryFile(filePath) {
     'executiveSnapshot_',
     'political_',
     'economy_',
+    'society_',
     'security_',
   ];
 

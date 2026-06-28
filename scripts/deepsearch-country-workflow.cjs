@@ -196,7 +196,7 @@ function validateContent(content, sourceIds) {
   const errors = [];
 
   const score = content?.scorecard ?? {};
-  const scoreKeys = ['eliteCohesion', 'securityLoyalty', 'economicPressure', 'protestCapacity', 'institutionalResilience'];
+  const scoreKeys = ['eliteCohesion', 'socialCohesion', 'securityLoyalty', 'economicPressure', 'protestCapacity', 'institutionalResilience'];
   for (const k of scoreKeys) {
     if (!['High', 'Med', 'Low'].includes(score[k])) {
       errors.push(`scorecard.${k} must be High|Med|Low`);
@@ -221,6 +221,14 @@ function validateContent(content, sourceIds) {
     ['economy.externalVulnerability.fr', content?.economy?.externalVulnerability?.fr],
     ['economy.politicalEconomy.en', content?.economy?.politicalEconomy?.en],
     ['economy.politicalEconomy.fr', content?.economy?.politicalEconomy?.fr],
+    ['society.demographics.en', content?.society?.demographics?.en],
+    ['society.demographics.fr', content?.society?.demographics?.fr],
+    ['society.composition.en', content?.society?.composition?.en],
+    ['society.composition.fr', content?.society?.composition?.fr],
+    ['society.religion.en', content?.society?.religion?.en],
+    ['society.religion.fr', content?.society?.religion?.fr],
+    ['society.cohesion.en', content?.society?.cohesion?.en],
+    ['society.cohesion.fr', content?.society?.cohesion?.fr],
     ['security.internal.en', content?.security?.internal?.en],
     ['security.internal.fr', content?.security?.internal?.fr],
     ['security.diplomacy.en', content?.security?.diplomacy?.en],
@@ -295,6 +303,7 @@ function buildYaml(payload) {
     `nameFr: ${payload.nameFr}`,
     yamlText('lastUpdated', payload.lastUpdated),
     `scorecard_eliteCohesion: ${c.scorecard.eliteCohesion}`,
+    `scorecard_socialCohesion: ${c.scorecard.socialCohesion}`,
     `scorecard_securityLoyalty: ${c.scorecard.securityLoyalty}`,
     `scorecard_economicPressure: ${c.scorecard.economicPressure}`,
     `scorecard_protestCapacity: ${c.scorecard.protestCapacity}`,
@@ -313,6 +322,14 @@ function buildYaml(payload) {
     yamlText('economy_externalVulnerability_fr', c.economy.externalVulnerability.fr),
     yamlText('economy_politicalEconomy_en', c.economy.politicalEconomy.en),
     yamlText('economy_politicalEconomy_fr', c.economy.politicalEconomy.fr),
+    yamlText('society_demographics_en', c.society?.demographics?.en),
+    yamlText('society_demographics_fr', c.society?.demographics?.fr),
+    yamlText('society_composition_en', c.society?.composition?.en),
+    yamlText('society_composition_fr', c.society?.composition?.fr),
+    yamlText('society_religion_en', c.society?.religion?.en),
+    yamlText('society_religion_fr', c.society?.religion?.fr),
+    yamlText('society_cohesion_en', c.society?.cohesion?.en),
+    yamlText('society_cohesion_fr', c.society?.cohesion?.fr),
     yamlText('security_internal_en', c.security.internal.en),
     yamlText('security_internal_fr', c.security.internal.fr),
     yamlText('security_diplomacy_en', c.security.diplomacy.en),
@@ -354,6 +371,9 @@ function initCommand(iso3, nameEn, nameFr) {
 
   const today = new Date().toISOString().slice(0, 10);
 
+  // Society and government-composition sourcing/section wording below is taken VERBATIM
+  // from content/docs/country-report-present-state-template.md (§6 source priority,
+  // §9b political anchors, §14 research-pass prompt). Keep it in sync with that template.
   const passA = `# Pass A Prompt (${code})
 
 Country: ${nameEn} (${nameFr})
@@ -386,27 +406,35 @@ or a worse source chosen only because it shows a date. accessDate is always requ
 Source priority rules:
 - Macro/Finance: national statistics office, IMF, World Bank, BIS, OECD
 - Governance/Rule of law: V-Dem, Freedom House, World Justice Project (WJP)
+- Government composition (who governs now): the national legislature's official seat-standings page, national electoral authority — must reflect the current distribution (last 90 days); majority/minority/coalition status derived from it
 - Corruption: Transparency International
 - Conflict/Security: ACLED, SIPRI, International Crisis Group (ICG)
 - Trade: WTO, UN Comtrade
+- Society / demography: UN DESA World Population Prospects, national census, national statistics office
+- Society / composition (ethnic·linguistic·religious): national census, Pew–Templeton Global Religious Futures, ARDA (Association of Religion Data Archives)
+- Society / cohesion & social capital: the region's own citizen self-report barometer as the PRIMARY instrument — Afrobarometer, Arab Barometer, Latinobarómetro, Asian Barometer, Eurobarometer, World Values Survey, or Pew (PRIMARY here, not triangulation)
 - Recent events of fact: national news outlets ONLY for events verified as fact in the last 90 days
 - Do NOT cite Wikipedia, homepages, aggregators, or blogs
 - Deep links only — the specific document or data page, not a site homepage
 
 The sources you collect must be sufficient to support ALL of the following content sections in Pass B:
 
-1. executiveSnapshot — 10 bullet points covering: regime type, political equilibrium, economic model, top risks, top watch items, external dependencies, security posture, diplomatic orientation, data confidence, baseline outlook
-2. political.powerStructure — who holds executive/legislative/judicial power; security forces; media independence
+1. executiveSnapshot — 11 bullet points covering: regime type, political equilibrium, economic model, social structure, top risks, top watch items, external dependencies, security posture, diplomatic orientation, data confidence, baseline present-state characterisation
+2. political.powerStructure — who holds executive/legislative/judicial power, incl. the current governing party/coalition with its seat count and majority/minority status from the legislature's official standings (within 90 days); security forces; media independence
 3. political.stabilityDrivers — legitimacy sources, armed forces loyalty, coalition, business elite alignment
 4. political.shockAbsorbers — what cushions shocks vs. what accelerates instability
 5. economy.macroReality — GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — all with specific figures and years
 6. economy.externalVulnerability — export/import profile; trade partner concentration; sovereign debt holders; IMF program status; sanctions exposure
 7. economy.politicalEconomy — who benefits from current model; business elite structure; technically necessary vs. politically possible reforms
-8. security.internal — insurgency/armed groups; organized crime; terrorism threat; military strength and loyalty; border situation
-9. security.diplomacy — treaty alliances; key bilateral relationships; regional flashpoints; multilateral memberships
-10. actors.domestic — 5–10 actors (government, opposition, military, business elite, civil society)
-11. actors.external — 3–5 actors (major powers, regional neighbors, international institutions)
-12. risks — 5–10 risks, each requiring: trigger, probability, impact, time horizon, leading indicators, mitigants
+8. society.demographics — total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
+9. society.composition — ethnic, linguistic, and religious composition (rounded shares with year and source). State where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry; do not just list groups.
+10. society.religion — (a) composition rounded, and the fault line if there is one; (b) lived/syncretic texture — indigenous, folk, and syncretic practice the official label hides; (c) political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience). For every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
+11. society.cohesion — population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check.
+12. security.internal — insurgency/armed groups; organized crime; terrorism threat; military strength and loyalty; border situation
+13. security.diplomacy — treaty alliances; key bilateral relationships; regional flashpoints; multilateral memberships
+14. actors.domestic — 5–10 actors (government, opposition, military, business elite, civil society)
+15. actors.external — 3–5 actors (major powers, regional neighbors, international institutions)
+16. risks — 5–10 risks, each requiring: trigger, probability, impact, time horizon, leading indicators, mitigants
 
 Aim for 20–35 sources total. Ensure \u2265 70% of sources per section are citationType: Fact (primary authors of the data), not Interpretation.
 `;
@@ -430,19 +458,20 @@ Hard rules:
 
 Section-by-section instructions:
 
-executiveSnapshot (en and fr — 10 bullet strings each):
+executiveSnapshot (en and fr — 11 bullet strings each):
   1. Regime type and how power is won/held
-  2. Current political equilibrium (coalition, opposition, legitimacy)
+  2. Current political equilibrium: current seat composition and majority/minority/coalition status — cite the legislature's official standings, current within 90 days; opposition; legitimacy
   3. Economic model overview (dominant sectors, trade profile)
-  4. Top 3 risks in the next 6–18 months
-  5. Top 3 watch items in the next 4–12 weeks
-  6. External dependencies (trade, energy, debt)
-  7. Security posture (internal stability, border situation)
-  8. Diplomatic orientation (alliances, key bilateral relationships)
-  9. Data confidence statement (which sections are high/medium/low confidence)
-  10. Baseline outlook (1 sentence)
+  4. SOCIAL STRUCTURE: demographic reality (youth bulge or ageing); the principal social cleavage and its geometry (cross-cutting or reinforcing); the population-wide social-trust level
+  5. Top 3 risks in the next 6–18 months
+  6. Top 3 watch items in the next 4–12 weeks
+  7. External dependencies (trade, energy, debt)
+  8. Security posture (internal stability, border situation)
+  9. Diplomatic orientation (alliances, key bilateral relationships)
+  10. Data confidence statement (which sections are high/medium/low confidence)
+  11. Baseline present-state characterisation (1 sentence — NOT a forecast)
 
-political.powerStructure: Who holds executive, legislative, judicial power; who controls security forces; media independence.
+political.powerStructure: Who holds executive, legislative, judicial power — state the current governing party/coalition, its seat count and majority/minority status as of now, cited to the legislature's official standings (within 90 days); who controls security forces; media independence.
 
 political.stabilityDrivers: What legitimizes the regime; armed forces loyalty; coalition composition; business elite alignment.
 
@@ -453,6 +482,16 @@ economy.macroReality: GDP growth, sector performance, fiscal position (deficit %
 economy.externalVulnerability: Export/import profile by value and commodity; trade partner concentration; sovereign debt holders; IMF program status; sanctions exposure.
 
 economy.politicalEconomy: Who benefits from current model; business elite structure; what reforms are technically necessary vs. politically possible.
+
+SOCIETY — describe the society ON ITS OWN TERMS, before and independent of any stability implication; a society is a component of the country in itself, not a risk factor:
+
+society.demographics: total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
+
+society.composition: ethnic, linguistic, and religious composition (rounded shares with year and source). State where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry; do not just list groups.
+
+society.religion: (a) composition rounded, and the fault line if there is one; (b) lived/syncretic texture — indigenous, folk, and syncretic practice the official label hides; (c) political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience). For every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
+
+society.cohesion: population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check.
 
 security.internal: Insurgency/armed groups; organized crime; communal violence; terrorism threat level; military strength and loyalty; border situation.
 
@@ -472,7 +511,7 @@ risks MUST use this exact bilingual structure:
 }
 Do NOT return a flat array. Both "en" and "fr" keys are required. Minimum 5 entries in each.
 
-scorecard fields (eliteCohesion, securityLoyalty, economicPressure, protestCapacity, institutionalResilience): Set each to High, Med, or Low based on your analysis.
+scorecard fields (eliteCohesion, socialCohesion, securityLoyalty, economicPressure, protestCapacity, institutionalResilience): Set each to High, Med, or Low based on your analysis. socialCohesion is the second of the two-cohesions split — society-wide trust/polarisation, distinct from elite cohesion.
 
 Approved source IDs from Pass A:
 [PASTE THE SOURCE IDs FROM pass-a.sources.json HERE BEFORE SUBMITTING]
@@ -494,6 +533,7 @@ Approved source IDs from Pass A:
   const contentTemplate = {
     scorecard: {
       eliteCohesion: 'Med',
+      socialCohesion: 'Med',
       securityLoyalty: 'Med',
       economicPressure: 'Med',
       protestCapacity: 'Med',
@@ -509,6 +549,12 @@ Approved source IDs from Pass A:
       macroReality: { en: '', fr: '' },
       externalVulnerability: { en: '', fr: '' },
       politicalEconomy: { en: '', fr: '' },
+    },
+    society: {
+      demographics: { en: '', fr: '' },
+      composition: { en: '', fr: '' },
+      religion: { en: '', fr: '' },
+      cohesion: { en: '', fr: '' },
     },
     security: {
       internal: { en: '', fr: '' },
