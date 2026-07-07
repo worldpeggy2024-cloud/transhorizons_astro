@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# pre-commit — auto-normalize Canadian-French typography in staged country reports.
+#
+# Runs the two FR tools (--write) on any staged content/countries/<ISO3>/analysis.yaml,
+# then re-stages the result so the corrected spacing is what actually gets committed:
+#   • scripts/fix-fr-semicolon-spaces.cjs  (removes the France-French space before ;)
+#   • scripts/fix-fr-typography.cjs        (narrow NBSP before : « » — , numbers, %, units)
+#
+# Non-blocking: if a file would fail validation the tool skips it (and prints why) and
+# the commit still proceeds. Enable with:  git config core.hooksPath .githooks
+# (done automatically by the `prepare` npm script on `npm install`).
+#
+# NOTE: the tools rewrite the working-tree copy of each staged file, so UNSTAGED edits
+# to the same country file get pulled into the commit too. For whole-file edits (the
+# usual Keystatic case) that's a no-op difference.
+
+files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^content/countries/.+/analysis\.yaml$')
+[ -z "$files" ] && exit 0
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: 'node' not found — skipping FR typography normalization." >&2
+  exit 0
+fi
+
+echo "pre-commit: normalizing Canadian-French typography in staged country report(s)…"
+node scripts/fix-fr-semicolon-spaces.cjs $files --write
+node scripts/fix-fr-typography.cjs $files --write
+
+git add $files
+exit 0

@@ -86,8 +86,12 @@ export interface SourceEntry {
   /** Stable slug ID used in citation markers, e.g. [imf] or [pm-ca]. Required for new-format countries. */
   id?: string;
   name: string;
+  /** French display name (FR page); falls back to `name` when absent. */
+  nameFr?: string;
   url: string;
   desc: string;
+  /** French description (FR page); falls back to `desc` when absent. */
+  descFr?: string;
   publicationDate?: string;
   accessDate?: string;
   confidence?: 'High' | 'Med' | 'Low';

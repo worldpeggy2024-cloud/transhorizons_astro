@@ -53,8 +53,10 @@ function adaptSources(arr: unknown): SourceEntry[] {
   return parseArrayInput(arr).map((s: YamlRecord) => ({
     id: s.id ? String(s.id) : undefined,
     name: String(s.name ?? ''),
+    nameFr: s.nameFr ? String(s.nameFr) : undefined,
     url: String(s.url ?? ''),
     desc: String(s.desc ?? ''),
+    descFr: s.descFr ? String(s.descFr) : undefined,
     publicationDate: s.publicationDate ? String(s.publicationDate) : undefined,
     accessDate: s.accessDate ? String(s.accessDate) : undefined,
     confidence: (s.confidence as SourceEntry['confidence']) ?? undefined,

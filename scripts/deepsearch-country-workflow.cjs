@@ -151,6 +151,15 @@ function validateSources(sources) {
       warnings.push(`${key}.publicationDate absent (source undated; relying on accessDate)`);
     }
 
+    // Bilingual sources: nameFr/descFr power the French page (fall back to EN when
+    // absent). Warn rather than fail so partially-translated registries still apply.
+    if (!nonEmptyString(s?.nameFr)) {
+      warnings.push(`${key}.nameFr absent (French page will fall back to the English name)`);
+    }
+    if (!nonEmptyString(s?.descFr)) {
+      warnings.push(`${key}.descFr absent (French page will fall back to the English desc)`);
+    }
+
     if (nonEmptyString(s?.id) && !/^[a-z0-9-]+$/.test(s.id)) {
       errors.push(`${key}.id must be lowercase slug (a-z0-9-)`);
     }
@@ -383,13 +392,15 @@ You are a geopolitical analyst preparing to write a structured country situation
 
 Return ONLY a JSON array of sources. No prose, no analysis, no section headers — just sources.
 
-Each source must match this schema (7 fields required; publicationDate optional):
+Each source must match this schema (7 English fields required, plus nameFr/descFr for the French page; publicationDate optional):
 [
   {
     "id": "short-slug",
-    "name": "Full Publication Name",
+    "name": "Full Publication Name (English)",
+    "nameFr": "Nom de la source en français (traduction, ou forme française officielle si elle existe)",
     "url": "https://exact-url-to-specific-document-not-homepage",
-    "desc": "One sentence: what this source is and what specific data it provides for ${nameEn}.",
+    "desc": "One sentence (English): what this source is and what specific data it provides for ${nameEn}.",
+    "descFr": "La même phrase, en français (traduction fidèle de desc).",
     "publicationDate": "YYYY-MM-DD or omit if the page shows no reliable date",
     "accessDate": "${today}",
     "confidence": "High | Med | Low",
@@ -521,8 +532,10 @@ Approved source IDs from Pass A:
     {
       id: 'source-id-example',
       name: 'Full source title',
+      nameFr: 'Titre de la source en français',
       url: 'https://example.com/deep-link',
       desc: 'What this source provides for this country.',
+      descFr: 'Ce que fournit cette source (en français).',
       publicationDate: '2026-01-01',
       accessDate: '2026-05-05',
       confidence: 'High',

@@ -152,6 +152,15 @@ function validateCountryFile(filePath) {
     if (typeof pubDate !== 'string' || !pubDate.trim()) {
       warnings.push(`Source ${key}: undated (no publicationDate; relying on accessDate)`);
     }
+
+    // Bilingual sources: nameFr/descFr power the French page (fall back to EN when
+    // absent). Warn — don't fail — so untranslated sources surface in the audit.
+    if (typeof s?.nameFr !== 'string' || !s.nameFr.trim()) {
+      warnings.push(`Source ${key}: missing French name (nameFr; FR page falls back to English)`);
+    }
+    if (typeof s?.descFr !== 'string' || !s.descFr.trim()) {
+      warnings.push(`Source ${key}: missing French description (descFr; FR page falls back to English)`);
+    }
   });
 
   const contentClone = { ...data };

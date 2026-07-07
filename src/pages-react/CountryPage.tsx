@@ -16,7 +16,7 @@ import type { RiskTrendData } from '@/lib/riskTrendTypes';
 import { deriveRiskLevel } from '@/lib/deriveRiskLevel';
 import {
   ArrowLeft, Globe, Users, MapPin, BarChart2, Shield, TrendingUp,
-  AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink
+  AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink, Sun, Moon
 } from 'lucide-react';
 import { franceAnalysis } from '@/data/france-yaml';
 import { type AnalysisContent, type ActorEntry, type RiskEntry, type SourceEntry } from '@/data/france';
@@ -108,7 +108,9 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
 
   while ((match = citationRegex.exec(text)) !== null) {
     if (match.index > lastIndex) {
-      parts.push(text.substring(lastIndex, match.index));
+      // Bind each citation marker to its preceding word with a non-breaking space
+      // so a marker never wraps alone onto a new line (no orphan) — EN and FR.
+      parts.push(text.substring(lastIndex, match.index).replace(/[ \t]+$/, '\u00A0'));
     }
     const citationId = match[1];
     const citationLabel = sourceIndexMap.get(citationId);
@@ -116,15 +118,15 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
       <a
         key={`citation-${match.index}`}
         href={`#source-${citationId}`}
-        className="text-[#7D1A2E] hover:text-[#5A0F1F] transition-colors font-medium"
+        className="text-[var(--cr-accent)] hover:text-[var(--cr-accent-hover)] transition-colors font-medium"
         style={{
           fontSize: '0.75em',
           verticalAlign: 'super',
           textDecoration: 'none',
           marginLeft: '0.08em',
           borderBottom: sourceMap.get(citationId)?.citationType === 'Interpretation'
-            ? '1px dotted #7D1A2E'
-            : '1px solid #7D1A2E',
+            ? '1px dotted var(--cr-accent)'
+            : '1px solid var(--cr-accent)',
         }}
         onClick={(e) => {
           e.preventDefault();
@@ -140,9 +142,9 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
             const sourceElement = document.getElementById(`source-${citationId}`);
             if (sourceElement) {
               sourceElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              sourceElement.classList.add('ring-2', 'ring-[#7D1A2E]', 'ring-offset-2');
+              sourceElement.classList.add('ring-2', 'ring-[var(--cr-accent)]', 'ring-offset-2');
               setTimeout(() => {
-                sourceElement.classList.remove('ring-2', 'ring-[#7D1A2E]', 'ring-offset-2');
+                sourceElement.classList.remove('ring-2', 'ring-[var(--cr-accent)]', 'ring-offset-2');
               }, 2000);
             }
           }, 50);
@@ -206,19 +208,19 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
   }));
 
   return (
-    <div className="border border-[#E8E4DC] mb-4">
+    <div className="border border-[var(--cr-border)] mb-4">
       <button
-        className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[#F5F2EC] transition-colors"
+        className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[var(--cr-hover)] transition-colors"
         onClick={() => setOpen(o => !o)}
       >
         <div className="flex items-center gap-3">
-          <Icon size={15} className="text-[#7D1A2E]" />
-          <span className="font-display text-base font-medium text-[#1A1A1A]">{title}</span>
+          <Icon size={15} className="text-[var(--cr-accent)]" />
+          <span className="font-display text-base font-medium text-[var(--cr-ink)]">{title}</span>
         </div>
-        {open ? <ChevronUp size={14} className="text-[#8A8A8A]" /> : <ChevronDown size={14} className="text-[#8A8A8A]" />}
+        {open ? <ChevronUp size={14} className="text-[var(--cr-muted)]" /> : <ChevronDown size={14} className="text-[var(--cr-muted)]" />}
       </button>
       {open && (
-        <div className="px-6 pb-6 pt-2 border-t border-[#E8E4DC] bg-white">
+        <div className="px-6 pb-6 pt-2 border-t border-[var(--cr-border)] bg-[var(--cr-surface)]">
           {children}
         </div>
       )}
@@ -232,13 +234,13 @@ FrameworkSection.displayName = 'FrameworkSection';
 function ComingSoonBlock({ language }: { language: string }) {
   return (
     <div className="py-8 text-center">
-      <div className="w-8 h-px bg-[#7D1A2E] mx-auto mb-4" />
-      <p className="text-[#8A8A8A] font-body text-sm italic">
+      <div className="w-8 h-px bg-[var(--cr-accent)] mx-auto mb-4" />
+      <p className="text-[var(--cr-muted)] font-body text-sm italic">
         {language === 'fr'
           ? 'Analyse en cours de rédaction — à venir'
           : 'Analysis in progress — coming soon'}
       </p>
-      <div className="w-8 h-px bg-[#7D1A2E] mx-auto mt-4" />
+      <div className="w-8 h-px bg-[var(--cr-accent)] mx-auto mt-4" />
     </div>
   );
 }
@@ -247,17 +249,17 @@ function ComingSoonBlock({ language }: { language: string }) {
 
 function ScoreRow({ label, value }: { label: string; value: 'High' | 'Med' | 'Low' | null }) {
   const colors: Record<string, string> = {
-    High: 'bg-red-100 text-red-700 border-red-200',
-    Med: 'bg-amber-100 text-amber-700 border-amber-200',
-    Low: 'bg-green-100 text-green-700 border-green-200',
+    High: 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900',
+    Med: 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900',
+    Low: 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900',
   };
   return (
-    <div className="flex items-center justify-between py-2 border-b border-[#F0EDE8] last:border-0">
-      <span className="font-body text-sm text-[#4A4A4A]">{label}</span>
+    <div className="flex items-center justify-between py-2 border-b border-[var(--cr-divider)] last:border-0">
+      <span className="font-body text-sm text-[var(--cr-body)]">{label}</span>
       {value ? (
         <span className={`font-body text-xs px-2 py-0.5 border rounded ${colors[value]}`}>{value}</span>
       ) : (
-        <span className="font-body text-xs text-[#C0B8AD] italic">—</span>
+        <span className="font-body text-xs text-[var(--cr-faint)] italic">—</span>
       )}
     </div>
   );
@@ -272,16 +274,16 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
     : { interests: 'Interests', resources: 'Resources', constraints: 'Constraints', moves: 'Likely moves', deal: 'Dealability' };
 
   return (
-    <div className="border border-[#E8E4DC] bg-[#EFEFEF]">
+    <div className="border border-[var(--cr-border)] bg-[var(--cr-bg)]">
       <button
-        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[#F5F2EC] transition-colors"
+        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[var(--cr-hover)] transition-colors"
         onClick={() => setExpanded(e => !e)}
       >
-        <span className="font-body text-sm font-medium text-[#1A1A1A]">{actor.name}</span>
-        {expanded ? <ChevronUp size={12} className="text-[#8A8A8A]" /> : <ChevronDown size={12} className="text-[#8A8A8A]" />}
+        <span className="font-body text-sm font-medium text-[var(--cr-ink)]">{actor.name}</span>
+        {expanded ? <ChevronUp size={12} className="text-[var(--cr-muted)]" /> : <ChevronDown size={12} className="text-[var(--cr-muted)]" />}
       </button>
       {expanded && (
-        <div className="px-4 pb-4 pt-1 border-t border-[#E8E4DC] space-y-2">
+        <div className="px-4 pb-4 pt-1 border-t border-[var(--cr-border)] space-y-2">
           {([
             [labels.interests, actor.interests],
             [labels.resources, actor.resources],
@@ -290,8 +292,8 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
             [labels.deal, actor.dealability],
           ] as [string, string][]).map(([label, value]) => (
             <div key={label}>
-              <span className="font-body text-[10px] uppercase tracking-widest text-[#7D1A2E]">{label}</span>
-              <p className="font-body text-xs text-[#4A4A4A] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
+              <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
+              <p className="font-body text-xs text-[var(--cr-body)] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
             </div>
           ))}
         </div>
@@ -305,9 +307,9 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
 function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: string; sources?: SourceEntry[] }) {
   const [expanded, setExpanded] = useState(false);
   const probColors: Record<string, string> = {
-    High: 'bg-red-100 text-red-700 border-red-200',
-    Med: 'bg-amber-100 text-amber-700 border-amber-200',
-    Low: 'bg-green-100 text-green-700 border-green-200',
+    High: 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900',
+    Med: 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900',
+    Low: 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900',
   };
   const impactColors = probColors;
   const labels = language === 'fr'
@@ -315,12 +317,12 @@ function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: stri
     : { trigger: 'Trigger', prob: 'Probability', impact: 'Impact', horizon: 'Time horizon', indicators: 'Leading indicators', mitigants: 'Mitigants', lastAssessed: 'Last assessed' };
 
   return (
-    <div className="border border-[#E8E4DC] bg-[#EFEFEF]">
+    <div className="border border-[var(--cr-border)] bg-[var(--cr-bg)]">
       <button
-        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[#F5F2EC] transition-colors gap-3"
+        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[var(--cr-hover)] transition-colors gap-3"
         onClick={() => setExpanded(e => !e)}
       >
-        <span className="font-body text-sm font-medium text-[#1A1A1A] flex-1">{risk.title}</span>
+        <span className="font-body text-sm font-medium text-[var(--cr-ink)] flex-1">{risk.title}</span>
         <div className="flex items-center gap-2 shrink-0">
           <span className={`font-body text-[10px] px-1.5 py-0.5 border rounded ${probColors[risk.probability]}`}>
             {risk.probability}
@@ -328,11 +330,11 @@ function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: stri
           <span className={`font-body text-[10px] px-1.5 py-0.5 border rounded ${impactColors[risk.impact]}`}>
             {risk.impact}
           </span>
-          {expanded ? <ChevronUp size={12} className="text-[#8A8A8A]" /> : <ChevronDown size={12} className="text-[#8A8A8A]" />}
+          {expanded ? <ChevronUp size={12} className="text-[var(--cr-muted)]" /> : <ChevronDown size={12} className="text-[var(--cr-muted)]" />}
         </div>
       </button>
       {expanded && (
-        <div className="px-4 pb-4 pt-1 border-t border-[#E8E4DC] space-y-2">
+        <div className="px-4 pb-4 pt-1 border-t border-[var(--cr-border)] space-y-2">
           {([
             [labels.trigger, risk.trigger],
             [labels.horizon, risk.timeHorizon],
@@ -341,8 +343,8 @@ function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: stri
             ...(risk.lastAssessed ? [[labels.lastAssessed, risk.lastAssessed]] : []),
           ] as [string, string][]).map(([label, value]) => (
             <div key={label}>
-              <span className="font-body text-[10px] uppercase tracking-widest text-[#7D1A2E]">{label}</span>
-              <p className="font-body text-xs text-[#4A4A4A] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
+              <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
+              <p className="font-body text-xs text-[var(--cr-body)] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
             </div>
           ))}
         </div>
@@ -360,6 +362,15 @@ export default function CountryPage() {
   const [loading, setLoading] = useState(true);
   const [clickedSection, setClickedSection] = useState<string>('');
   const sourcesRef = useRef<FrameworkSectionHandle>(null);
+
+  // Scoped dark mode for country report pages only: the `.dark` class is applied
+  // to THIS page's wrapper (not <html>), so it never affects the rest of the site.
+  const [dark, setDark] = useState<boolean>(() => {
+    try { return localStorage.getItem('country-theme') === 'dark'; } catch { return false; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem('country-theme', dark ? 'dark' : 'light'); } catch { /* storage blocked */ }
+  }, [dark]);
 
   // Update module-level refs for citation handler
   useEffect(() => {
@@ -397,19 +408,19 @@ export default function CountryPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#EFEFEF] flex items-center justify-center">
-        <div className="w-8 h-8 border border-[#7D1A2E]/30 border-t-[#7D1A2E] rounded-full animate-spin" />
+      <div className={`min-h-screen bg-[var(--cr-bg)] flex items-center justify-center ${dark ? 'dark' : ''}`}>
+        <div className="w-8 h-8 border border-[var(--cr-accent)]/30 border-t-[var(--cr-accent)] rounded-full animate-spin" />
       </div>
     );
   }
 
   if (!country) {
     return (
-      <div className="min-h-screen bg-[#EFEFEF] flex flex-col items-center justify-center gap-4">
-        <p className="font-body text-[#4A4A4A]">
+      <div className={`min-h-screen bg-[var(--cr-bg)] flex flex-col items-center justify-center gap-4 ${dark ? 'dark' : ''}`}>
+        <p className="font-body text-[var(--cr-body)]">
           {language === 'fr' ? 'Pays introuvable.' : 'Country not found.'}
         </p>
-        <Link href="/world-analysis" className="text-[#7D1A2E] font-body text-sm hover:underline">
+        <Link href="/world-analysis" className="text-[var(--cr-accent)] font-body text-sm hover:underline">
           ← {language === 'fr' ? 'Retour' : 'Back'}
         </Link>
       </div>
@@ -508,23 +519,23 @@ export default function CountryPage() {
   const activeSources = analysis?.sources ?? lang?.sources ?? [];
 
   return (
-    <div className="min-h-screen bg-[#EFEFEF]">
+    <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
 
       {/* Top bar */}
-      <div className="sticky top-0 z-30 bg-[#EFEFEF]/95 backdrop-blur-sm border-b border-[#E8E4DC]">
+      <div className="sticky top-0 z-30 bg-[var(--cr-bg)]/95 backdrop-blur-sm border-b border-[var(--cr-border)]">
         <div className="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link
               href="/"
-              className="flex items-center gap-2 text-[#4A4A4A] hover:text-[#7D1A2E] transition-colors font-body text-sm"
+              className="flex items-center gap-2 text-[var(--cr-body)] hover:text-[var(--cr-accent)] transition-colors font-body text-sm"
             >
               <ArrowLeft size={14} />
               {language === 'fr' ? 'Accueil' : 'Home'}
             </Link>
-            <span className="text-[#C0B8AD]">·</span>
+            <span className="text-[var(--cr-faint)]">·</span>
             <Link
               href="/world-analysis"
-              className="flex items-center gap-2 text-[#4A4A4A] hover:text-[#7D1A2E] transition-colors font-body text-sm"
+              className="flex items-center gap-2 text-[var(--cr-body)] hover:text-[var(--cr-accent)] transition-colors font-body text-sm"
             >
               <ArrowLeft size={14} />
               {t.back}
@@ -533,16 +544,25 @@ export default function CountryPage() {
           <div className="flex items-center gap-1 text-xs font-body">
             <button
               onClick={() => setLanguage('en')}
-              className={`px-2 py-1 transition-colors ${language === 'en' ? 'text-[#7D1A2E] font-medium' : 'text-[#8A8A8A] hover:text-[#4A4A4A]'}`}
+              className={`px-2 py-1 transition-colors ${language === 'en' ? 'text-[var(--cr-accent)] font-medium' : 'text-[var(--cr-muted)] hover:text-[var(--cr-body)]'}`}
             >
               EN
             </button>
-            <span className="text-[#C0B8AD]">|</span>
+            <span className="text-[var(--cr-faint)]">|</span>
             <button
               onClick={() => setLanguage('fr')}
-              className={`px-2 py-1 transition-colors ${language === 'fr' ? 'text-[#7D1A2E] font-medium' : 'text-[#8A8A8A] hover:text-[#4A4A4A]'}`}
+              className={`px-2 py-1 transition-colors ${language === 'fr' ? 'text-[var(--cr-accent)] font-medium' : 'text-[var(--cr-muted)] hover:text-[var(--cr-body)]'}`}
             >
               FR
+            </button>
+            <span className="text-[var(--cr-faint)] ml-1">|</span>
+            <button
+              onClick={() => setDark((d) => !d)}
+              aria-label={dark ? (language === 'fr' ? 'Mode clair' : 'Light mode') : (language === 'fr' ? 'Mode sombre' : 'Dark mode')}
+              title={dark ? (language === 'fr' ? 'Mode clair' : 'Light mode') : (language === 'fr' ? 'Mode sombre' : 'Dark mode')}
+              className="ml-1 p-1 text-[var(--cr-muted)] hover:text-[var(--cr-accent)] transition-colors"
+            >
+              {dark ? <Sun size={14} /> : <Moon size={14} />}
             </button>
           </div>
         </div>
@@ -562,7 +582,7 @@ export default function CountryPage() {
           />
             <div>
               <div className="flex items-center gap-3 mb-1">
-                <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-light text-[#1A1A1A] leading-tight">
+                <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-light text-[var(--cr-ink)] leading-tight">
                   {name}
                 </h1>
                 <FlagIcon
@@ -573,7 +593,7 @@ export default function CountryPage() {
                   className="leading-none"
                 />
               </div>
-              <p className="text-[#7D1A2E] font-body text-xs tracking-[0.3em] uppercase mt-1">
+              <p className="text-[var(--cr-accent)] font-body text-xs tracking-[0.3em] uppercase mt-1">
                 {country.cca3} · {translateRegion(country.region)}
               </p>
             </div>
@@ -586,17 +606,17 @@ export default function CountryPage() {
               { icon: Globe, label: t.region, value: translateRegion(country.subregion || country.region) },
               { icon: BarChart2, label: t.area, value: country.area > 0 ? country.area.toLocaleString() + ' km²' : '—' },
             ].map(({ icon: Icon, label, value }) => (
-              <div key={label} className="bg-white border border-[#E8E4DC] px-4 py-3">
+              <div key={label} className="bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
                 <div className="flex items-center gap-1.5 mb-1">
-                  <Icon size={11} className="text-[#7D1A2E]" />
-                  <span className="font-body text-[10px] tracking-widest uppercase text-[#8A8A8A]">{label}</span>
+                  <Icon size={11} className="text-[var(--cr-accent)]" />
+                  <span className="font-body text-[10px] tracking-widest uppercase text-[var(--cr-muted)]">{label}</span>
                 </div>
-                <p className="font-body text-sm text-[#1A1A1A] font-medium">{value}</p>
+                <p className="font-body text-sm text-[var(--cr-ink)] font-medium">{value}</p>
               </div>
             ))}
           </div>
 
-          <div className="flex items-center gap-2 text-[#8A8A8A]">
+          <div className="flex items-center gap-2 text-[var(--cr-muted)]">
             <Clock size={11} />
             <span className="font-body text-xs">
               {t.lastUpdated}: {hasAnalysis ? analysis!.lastUpdated : t.never}
@@ -613,8 +633,8 @@ export default function CountryPage() {
             <div className="space-y-3">
               {lang!.executiveSnapshot.map((bullet, i) => (
                 <div key={i} className="flex gap-3">
-                  <span className="text-[#7D1A2E] font-body text-sm mt-0.5 shrink-0">·</span>
-                  <p className="font-body text-sm text-[#4A4A4A] leading-relaxed">{parseCitations(bullet, activeSources)}</p>
+                  <span className="text-[var(--cr-accent)] font-body text-sm mt-0.5 shrink-0">·</span>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(bullet, activeSources)}</p>
                 </div>
               ))}
             </div>
@@ -631,7 +651,7 @@ export default function CountryPage() {
             <div className="space-y-6">
               {/* Scorecard */}
               <div>
-                <p className="font-body text-xs text-[#8A8A8A] uppercase tracking-widest mb-3">
+                <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
                 <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} />
@@ -648,8 +668,8 @@ export default function CountryPage() {
                 [t.shockAbsorbers, lang!.political.shockAbsorbers],
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
-                  <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[#4A4A4A] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
                 </div>
               ))}
             </div>
@@ -657,7 +677,7 @@ export default function CountryPage() {
             <>
               <ComingSoonBlock language={language} />
               <div className="mt-6">
-                <p className="font-body text-xs text-[#8A8A8A] uppercase tracking-widest mb-3">
+                <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
                 <ScoreRow label={t.eliteCohesion} value={null} />
@@ -683,8 +703,8 @@ export default function CountryPage() {
                 [t.politicalEconomy, lang!.economy.politicalEconomy],
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
-                  <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[#4A4A4A] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
                 </div>
               ))}
             </div>
@@ -706,8 +726,8 @@ export default function CountryPage() {
                 [t.socialCohesionSection, lang!.society!.cohesion],
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
-                  <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[#4A4A4A] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
                 </div>
               ))}
             </div>
@@ -727,8 +747,8 @@ export default function CountryPage() {
                 [t.diplomacy, lang!.security.diplomacy],
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
-                  <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[#4A4A4A] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
                 </div>
               ))}
             </div>
@@ -744,7 +764,7 @@ export default function CountryPage() {
           {hasAnalysis ? (
             <div className="space-y-6">
               <div>
-                <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-3">{t.domesticActors}</h4>
+                <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-3">{t.domesticActors}</h4>
                 <div className="space-y-2">
                   {lang!.actors.domestic.map((actor) => (
                     <ActorCard key={actor.name} actor={actor} language={language} sources={activeSources} />
@@ -752,7 +772,7 @@ export default function CountryPage() {
                 </div>
               </div>
               <div>
-                <h4 className="font-body text-xs text-[#7D1A2E] uppercase tracking-widest mb-3">{t.externalActors}</h4>
+                <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-3">{t.externalActors}</h4>
                 <div className="space-y-2">
                   {lang!.actors.external.map((actor) => (
                     <ActorCard key={actor.name} actor={actor} language={language} sources={activeSources} />
@@ -763,8 +783,8 @@ export default function CountryPage() {
           ) : (
             <>
               <ComingSoonBlock language={language} />
-              <div className="mt-4 text-[#8A8A8A] font-body text-xs leading-relaxed">
-                <p className="font-medium text-[#4A4A4A] mb-2">
+              <div className="mt-4 text-[var(--cr-muted)] font-body text-xs leading-relaxed">
+                <p className="font-medium text-[var(--cr-body)] mb-2">
                   {language === 'fr' ? 'Pour chaque acteur : Intérêts · Ressources · Contraintes · Mouvements probables · Négociabilité' : 'For each actor: Interests · Resources · Constraints · Likely moves · Dealability'}
                 </p>
               </div>
@@ -780,34 +800,34 @@ export default function CountryPage() {
             <div className="space-y-2">
               {/* Derived overall risk level — rule-based, from this country's own register */}
               {derivedRisk && (
-                <div className="mb-4 flex items-center gap-2 flex-wrap pb-3 border-b border-[#F0EDE8]">
-                  <span className="font-body text-[10px] uppercase tracking-widest text-[#8A8A8A]">{t.overallRisk}:</span>
+                <div className="mb-4 flex items-center gap-2 flex-wrap pb-3 border-b border-[var(--cr-divider)]">
+                  <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)]">{t.overallRisk}:</span>
                   <span className={`font-body text-xs px-2 py-0.5 border rounded ${
                     derivedRisk.level === 'High'
-                      ? 'bg-red-100 text-red-700 border-red-200'
+                      ? 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900'
                       : derivedRisk.level === 'Medium'
-                        ? 'bg-amber-100 text-amber-700 border-amber-200'
-                        : 'bg-green-100 text-green-700 border-green-200'
+                        ? 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900'
+                        : 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900'
                   }`}>
                     {derivedRisk.level === 'High' ? t.riskHigh : derivedRisk.level === 'Medium' ? t.riskMedium : t.riskLow}
                   </span>
                   {derivedRisk.drivenBy && (
-                    <span className="font-body text-xs text-[#8A8A8A] italic">
-                      — {t.drivenBy}: <span className="not-italic font-medium text-[#4A4A4A]">{derivedRisk.drivenBy}</span>
+                    <span className="font-body text-xs text-[var(--cr-muted)] italic">
+                      — {t.drivenBy}: <span className="not-italic font-medium text-[var(--cr-body)]">{derivedRisk.drivenBy}</span>
                     </span>
                   )}
                 </div>
               )}
               {/* Legend */}
-              <div className="flex items-center gap-4 mb-3 text-[10px] font-body text-[#8A8A8A]">
+              <div className="flex items-center gap-4 mb-3 text-[10px] font-body text-[var(--cr-muted)]">
                 <span>{language === 'fr' ? 'Badges :' : 'Badges:'}</span>
-                <span className="px-1.5 py-0.5 border rounded bg-red-100 text-red-700 border-red-200">
+                <span className="px-1.5 py-0.5 border rounded bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900">
                   {language === 'fr' ? 'Élevé' : 'High'}
                 </span>
-                <span className="px-1.5 py-0.5 border rounded bg-amber-100 text-amber-700 border-amber-200">
+                <span className="px-1.5 py-0.5 border rounded bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900">
                   {language === 'fr' ? 'Moyen' : 'Med'}
                 </span>
-                <span className="px-1.5 py-0.5 border rounded bg-green-100 text-green-700 border-green-200">
+                <span className="px-1.5 py-0.5 border rounded bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900">
                   {language === 'fr' ? 'Faible' : 'Low'}
                 </span>
                 <span className="ml-2 italic">{language === 'fr' ? '(Probabilité · Impact)' : '(Probability · Impact)'}</span>
@@ -830,8 +850,8 @@ export default function CountryPage() {
           ) : (
             <>
               <ComingSoonBlock language={language} />
-              <div className="mt-4 text-[#8A8A8A] font-body text-xs leading-relaxed">
-                <p className="font-medium text-[#4A4A4A] mb-2">
+              <div className="mt-4 text-[var(--cr-muted)] font-body text-xs leading-relaxed">
+                <p className="font-medium text-[var(--cr-body)] mb-2">
                   {language === 'fr'
                     ? 'Chaque risque : Déclencheur · Probabilité · Impact · Horizon · Indicateurs avancés · Atténuants'
                     : 'Each risk: Trigger · Probability · Impact · Time horizon · Leading indicators · Mitigants'}
@@ -854,11 +874,13 @@ export default function CountryPage() {
               { name: 'ACLED', url: 'https://acleddata.com', desc: language === 'fr' ? 'Données conflits & événements' : 'Conflict & event data' },
               { name: 'SIPRI', url: 'https://www.sipri.org', desc: language === 'fr' ? 'Armements & sécurité' : 'Arms & security' },
               { name: 'World Justice Project', url: 'https://worldjusticeproject.org', desc: language === 'fr' ? 'État de droit' : 'Rule of law' },
-            ] as SourceEntry[]).map(({ id: sourceId, name, url, desc, publicationDate, accessDate, confidence, citationType }, idx) => {
-              const confidenceColor = confidence === 'High' ? 'bg-green-50 border-green-200' : confidence === 'Med' ? 'bg-yellow-50 border-yellow-200' : 'bg-red-50 border-red-200';
+            ] as SourceEntry[]).map(({ id: sourceId, name, nameFr, url, desc, descFr, publicationDate, accessDate, confidence, citationType }, idx) => {
+              const confidenceColor = confidence === 'High' ? 'bg-green-50 border-green-200 dark:bg-green-950/40 dark:border-green-900' : confidence === 'Med' ? 'bg-yellow-50 border-yellow-200 dark:bg-yellow-950/40 dark:border-yellow-900' : 'bg-red-50 border-red-200 dark:bg-red-950/40 dark:border-red-900';
               const confidenceLabel = confidence === 'High' ? '✓ High' : confidence === 'Med' ? '◐ Medium' : '✗ Low';
-              const confidenceTextColor = confidence === 'High' ? 'text-green-700' : confidence === 'Med' ? 'text-yellow-700' : 'text-red-700';
+              const confidenceTextColor = confidence === 'High' ? 'text-green-700 dark:text-green-300' : confidence === 'Med' ? 'text-yellow-700 dark:text-yellow-300' : 'text-red-700 dark:text-red-300';
               const citationNum = sourceId ?? (idx + 1);
+              const dName = language === 'fr' ? (nameFr || name) : name;
+              const dDesc = language === 'fr' ? (descFr || desc) : desc;
               return (
                 <a
                   key={name + idx}
@@ -866,33 +888,33 @@ export default function CountryPage() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-start justify-between px-4 py-3 border transition-colors group focus:ring-2 focus:ring-[#7D1A2E] focus:ring-offset-2 ${
-                    confidence ? confidenceColor : 'border-[#E8E4DC] hover:border-[#7D1A2E] hover:bg-[#FDF9F3]'
+                  className={`flex items-start justify-between px-4 py-3 border transition-colors group focus:ring-2 focus:ring-[var(--cr-accent)] focus:ring-offset-2 ${
+                    confidence ? confidenceColor : 'border-[var(--cr-border)] hover:border-[var(--cr-accent)] hover:bg-[var(--cr-hover-2)]'
                   }`}
                 >
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <p className="font-body text-sm font-medium text-[#1A1A1A] group-hover:text-[#7D1A2E] transition-colors">{name}</p>
-                      {citationType && <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#E8E4DC] text-[#7D1A2E] rounded">{citationType}</span>}
+                      <p className="font-body text-sm font-medium text-[var(--cr-ink)] group-hover:text-[var(--cr-accent)] transition-colors">{dName}</p>
+                      {citationType && <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[var(--cr-border)] text-[var(--cr-accent)] rounded">{citationType}</span>}
                     </div>
-                    <p className="font-body text-xs text-[#8A8A8A] mb-2">{desc}</p>
+                    <p className="font-body text-xs text-[var(--cr-muted)] mb-2">{dDesc}</p>
                     <div className="flex flex-wrap gap-2 items-center text-[10px]">
-                      {publicationDate && <span className="text-[#8A8A8A]">Pub: {publicationDate}</span>}
-                      {accessDate && <span className="text-[#8A8A8A]">Accessed: {accessDate}</span>}
+                      {publicationDate && <span className="text-[var(--cr-muted)]">Pub: {publicationDate}</span>}
+                      {accessDate && <span className="text-[var(--cr-muted)]">Accessed: {accessDate}</span>}
                       {confidence && <span className={`font-medium ${confidenceTextColor}`}>{confidenceLabel}</span>}
                     </div>
                   </div>
-                  <ExternalLink size={12} className="text-[#7D1A2E] opacity-0 group-hover:opacity-100 transition-opacity shrink-0 mt-1 ml-2" />
+                  <ExternalLink size={12} className="text-[var(--cr-accent)] opacity-0 group-hover:opacity-100 transition-opacity shrink-0 mt-1 ml-2" />
                 </a>
               );
             })}
           </div>
           {/* Floating Back Button */}
           {clickedSection && (
-            <div className="fixed bottom-6 right-6 p-3 bg-[#FDF9F3] border border-[#7D1A2E] rounded shadow-lg flex items-center gap-3 z-40 max-w-xs">
-              <span className="font-body text-xs text-[#4A4A4A] hidden sm:inline">
+            <div className="fixed bottom-6 right-6 p-3 bg-[var(--cr-hover-2)] border border-[var(--cr-accent)] rounded shadow-lg flex items-center gap-3 z-40 max-w-xs">
+              <span className="font-body text-xs text-[var(--cr-body)] hidden sm:inline">
                 {language === 'fr' ? 'Vous lisiez : ' : 'You were reading: '}
-                <span className="font-medium text-[#7D1A2E]">{clickedSection}</span>
+                <span className="font-medium text-[var(--cr-accent)]">{clickedSection}</span>
               </span>
               <button
                 onClick={() => {
@@ -901,7 +923,7 @@ export default function CountryPage() {
                     sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 }}
-                className="px-3 py-1.5 bg-[#7D1A2E] text-white text-xs font-medium rounded hover:bg-[#5A0F1F] transition-colors whitespace-nowrap shrink-0"
+                className="px-3 py-1.5 bg-[var(--cr-accent)] text-[var(--cr-on-accent)] text-xs font-medium rounded hover:bg-[var(--cr-accent-hover)] transition-colors whitespace-nowrap shrink-0"
               >
                 {language === 'fr' ? 'Retour' : 'Back'}
               </button>

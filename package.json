@@ -12,7 +12,9 @@
     "validate:countries": "node scripts/validate-country-citations.cjs",
     "validate:country": "node scripts/validate-country-citations.cjs",
     "validate:critical-minerals": "node scripts/validate-critical-minerals-map-data.cjs",
-    "apply:mineral-delta": "node scripts/apply-mineral-delta.cjs"
+    "apply:mineral-delta": "node scripts/apply-mineral-delta.cjs",
+    "fix:fr": "node scripts/fix-fr-semicolon-spaces.cjs --all --write && node scripts/fix-fr-typography.cjs --all --write",
+    "prepare": "git config core.hooksPath .githooks || true"
   },
   "dependencies": {
     "@astrojs/node": "^10.1.1",
