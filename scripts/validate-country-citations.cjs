@@ -184,7 +184,10 @@ function validateCountryFile(filePath) {
   const warningFieldPrefixes = [
     'executiveSnapshot_',
     'political_',
+    'political_constitutionalSubstrate_',
     'economy_',
+    'territory_',
+    'capacity_',
     'society_',
     'security_',
   ];

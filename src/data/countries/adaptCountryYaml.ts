@@ -90,11 +90,25 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
       powerStructure: String(d[`political_powerStructure${s}`] ?? ''),
       stabilityDrivers: String(d[`political_stabilityDrivers${s}`] ?? ''),
       shockAbsorbers: String(d[`political_shockAbsorbers${s}`] ?? ''),
+      constitutionalSubstrate: String(d[`political_constitutionalSubstrate${s}`] ?? ''),
     },
     economy: {
       macroReality: String(d[`economy_macroReality${s}`] ?? ''),
       externalVulnerability: String(d[`economy_externalVulnerability${s}`] ?? ''),
       politicalEconomy: String(d[`economy_politicalEconomy${s}`] ?? ''),
+    },
+    territory: {
+      geography: String(d[`territory_geography${s}`] ?? ''),
+      minerals: String(d[`territory_minerals${s}`] ?? ''),
+      biosphere: String(d[`territory_biosphere${s}`] ?? ''),
+      climate: String(d[`territory_climate${s}`] ?? ''),
+      metabolism: String(d[`territory_metabolism${s}`] ?? ''),
+      transition: String(d[`territory_transition${s}`] ?? ''),
+    },
+    capacity: {
+      permitting: String(d[`capacity_permitting${s}`] ?? ''),
+      delivery: String(d[`capacity_delivery${s}`] ?? ''),
+      productivity: String(d[`capacity_productivity${s}`] ?? ''),
     },
     society: {
       demographics: String(d[`society_demographics${s}`] ?? ''),

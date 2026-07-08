@@ -364,6 +364,19 @@ export default config({
           description: 'Include citation markers [source-id]',
         }),
 
+        // Deep-time legal bedrock (treaty lineage / title); treaty text +
+        // court rulings only. Distinct substrates held separately.
+        political_constitutionalSubstrate_en: fields.text({
+          label: 'Political: Constitutional Substrate (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        political_constitutionalSubstrate_fr: fields.text({
+          label: 'Political: Constitutional Substrate (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
         // ── Economy Section ───────────────────────────────────────────────
         economy_macroReality_en: fields.text({
           label: 'Economy: Macro Reality (EN)',
@@ -394,6 +407,113 @@ export default config({
         }),
         economy_politicalEconomy_fr: fields.text({
           label: 'Economy: Political Economy (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        // ── Territory Section ─────────────────────────────────────────────
+        // Physical body of the country, on its own terms. Top-level peer,
+        // positioned after economy, before capacity. Declare BEFORE writing
+        // territory_* content (strip rule).
+        territory_geography_en: fields.text({
+          label: 'Territory: Geography (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        territory_geography_fr: fields.text({
+          label: 'Territory: Geography (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        territory_minerals_en: fields.text({
+          label: 'Territory: Minerals (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        territory_minerals_fr: fields.text({
+          label: 'Territory: Minerals (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        territory_biosphere_en: fields.text({
+          label: 'Territory: Biosphere (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        territory_biosphere_fr: fields.text({
+          label: 'Territory: Biosphere (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        territory_climate_en: fields.text({
+          label: 'Territory: Climate (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        territory_climate_fr: fields.text({
+          label: 'Territory: Climate (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        territory_metabolism_en: fields.text({
+          label: 'Territory: Metabolism (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        territory_metabolism_fr: fields.text({
+          label: 'Territory: Metabolism (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        territory_transition_en: fields.text({
+          label: 'Territory: Transition (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        territory_transition_fr: fields.text({
+          label: 'Territory: Transition (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        // ── Capacity Section ──────────────────────────────────────────────
+        // Can the state build / permit / deliver. Top-level peer, positioned
+        // after territory, before society. Declare BEFORE writing capacity_*
+        // content (strip rule).
+        capacity_permitting_en: fields.text({
+          label: 'Capacity: Permitting (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        capacity_permitting_fr: fields.text({
+          label: 'Capacity: Permitting (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        capacity_delivery_en: fields.text({
+          label: 'Capacity: Delivery (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        capacity_delivery_fr: fields.text({
+          label: 'Capacity: Delivery (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        capacity_productivity_en: fields.text({
+          label: 'Capacity: Productivity (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        capacity_productivity_fr: fields.text({
+          label: 'Capacity: Productivity (FR)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),

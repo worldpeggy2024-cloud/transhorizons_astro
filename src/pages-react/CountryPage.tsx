@@ -16,7 +16,8 @@ import type { RiskTrendData } from '@/lib/riskTrendTypes';
 import { deriveRiskLevel } from '@/lib/deriveRiskLevel';
 import {
   ArrowLeft, Globe, Users, MapPin, BarChart2, Shield, TrendingUp,
-  AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink, Sun, Moon
+  AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink, Sun, Moon,
+  Mountain, Hammer
 } from 'lucide-react';
 import { franceAnalysis } from '@/data/france-yaml';
 import { type AnalysisContent, type ActorEntry, type RiskEntry, type SourceEntry } from '@/data/france';
@@ -499,7 +500,19 @@ export default function CountryPage() {
     diplomacy: language === 'fr' ? 'Diplomatie & posture extérieure' : 'Diplomacy & external posture',
     domesticActors: language === 'fr' ? 'Acteurs nationaux' : 'Domestic actors',
     externalActors: language === 'fr' ? 'Acteurs extérieurs' : 'External actors',
-    // FR-PLACEHOLDER: society + overall-risk UI labels — Peggy to verify French wording.
+    // FR-PLACEHOLDER: society/territory/capacity/substrate + overall-risk UI labels — Peggy to verify French wording.
+    constitutionalSubstrate: language === 'fr' ? 'Substrat constitutionnel' : 'Constitutional substrate',
+    territory: language === 'fr' ? 'Territoire' : 'Territory',
+    geography: language === 'fr' ? 'Géographie' : 'Geography',
+    minerals: language === 'fr' ? 'Minéraux' : 'Minerals',
+    biosphere: language === 'fr' ? 'Biosphère' : 'Biosphere',
+    climate: language === 'fr' ? 'Climat' : 'Climate',
+    metabolism: language === 'fr' ? 'Métabolisme' : 'Metabolism',
+    transition: language === 'fr' ? 'Transition' : 'Transition',
+    capacity: language === 'fr' ? 'Capacité d\'exécution' : 'Capacity to Execute',
+    permitting: language === 'fr' ? 'Autorisations' : 'Permitting',
+    delivery: language === 'fr' ? 'Réalisation' : 'Delivery',
+    productivity: language === 'fr' ? 'Productivité' : 'Productivity',
     society: language === 'fr' ? 'Société' : 'Society',
     socialCohesion: language === 'fr' ? 'Cohésion sociale' : 'Social cohesion',
     demographics: language === 'fr' ? 'Démographie' : 'Demographics',
@@ -516,6 +529,13 @@ export default function CountryPage() {
   const hasAnalysis = !!analysis && !!lang;
   const hasSociety = hasAnalysis && !!lang!.society &&
     Object.values(lang!.society).some((v) => typeof v === 'string' && v.trim().length > 0);
+  // Territory/capacity render ONLY when content exists — no placeholder card for
+  // countries not yet regenerated on the six-peer schema.
+  const hasTerritory = hasAnalysis && !!lang!.territory &&
+    Object.values(lang!.territory).some((v) => typeof v === 'string' && v.trim().length > 0);
+  const hasCapacity = hasAnalysis && !!lang!.capacity &&
+    Object.values(lang!.capacity).some((v) => typeof v === 'string' && v.trim().length > 0);
+  const hasSubstrate = hasAnalysis && !!lang!.political.constitutionalSubstrate?.trim();
   const activeSources = analysis?.sources ?? lang?.sources ?? [];
 
   return (
@@ -666,6 +686,9 @@ export default function CountryPage() {
                 [t.powerStructure, lang!.political.powerStructure],
                 [t.stabilityDrivers, lang!.political.stabilityDrivers],
                 [t.shockAbsorbers, lang!.political.shockAbsorbers],
+                ...(hasSubstrate
+                  ? [[t.constitutionalSubstrate, lang!.political.constitutionalSubstrate!]]
+                  : []),
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
@@ -714,7 +737,50 @@ export default function CountryPage() {
         </FrameworkSection>
         </div>
 
-        {/* 3b. Society */}
+        {/* 3b. Territory — physical body of the country; renders only when content exists */}
+        {hasTerritory && (
+          <div data-section="Territory">
+          <FrameworkSection icon={Mountain} title={t.territory}>
+            <div className="space-y-6">
+              {([
+                [t.geography, lang!.territory!.geography],
+                [t.minerals, lang!.territory!.minerals],
+                [t.biosphere, lang!.territory!.biosphere],
+                [t.climate, lang!.territory!.climate],
+                [t.metabolism, lang!.territory!.metabolism],
+                [t.transition, lang!.territory!.transition],
+              ] as [string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text]) => (
+                <div key={title}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                </div>
+              ))}
+            </div>
+          </FrameworkSection>
+          </div>
+        )}
+
+        {/* 3c. Capacity to execute — renders only when content exists */}
+        {hasCapacity && (
+          <div data-section="Capacity">
+          <FrameworkSection icon={Hammer} title={t.capacity}>
+            <div className="space-y-6">
+              {([
+                [t.permitting, lang!.capacity!.permitting],
+                [t.delivery, lang!.capacity!.delivery],
+                [t.productivity, lang!.capacity!.productivity],
+              ] as [string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text]) => (
+                <div key={title}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                </div>
+              ))}
+            </div>
+          </FrameworkSection>
+          </div>
+        )}
+
+        {/* 3d. Society */}
         <div data-section="Society">
         <FrameworkSection icon={Users} title={t.society}>
           {hasSociety ? (

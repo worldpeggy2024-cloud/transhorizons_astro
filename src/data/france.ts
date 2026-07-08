@@ -32,11 +32,36 @@ export interface LangContent {
     powerStructure: string;
     stabilityDrivers: string;
     shockAbsorbers: string;
+    /** Deep-time legal bedrock (treaty lineage / title). Optional until a country is regenerated with the six-peer schema. */
+    constitutionalSubstrate?: string;
   };
   economy: {
     macroReality: string;
     externalVulnerability: string;
     politicalEconomy: string;
+  };
+  /**
+   * Territory section — the physical body of the country, top-level peer
+   * positioned after economy, before capacity. Optional until a country is
+   * regenerated with the six-peer schema.
+   */
+  territory?: {
+    geography: string;
+    minerals: string;
+    biosphere: string;
+    climate: string;
+    metabolism: string;
+    transition: string;
+  };
+  /**
+   * Capacity section — can the state build/permit/deliver. Top-level peer
+   * positioned after territory, before society. Optional until a country is
+   * regenerated with the six-peer schema.
+   */
+  capacity?: {
+    permitting: string;
+    delivery: string;
+    productivity: string;
   };
   /**
    * Society section — top-level peer of political/economy/security, positioned
