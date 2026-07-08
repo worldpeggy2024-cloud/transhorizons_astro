@@ -39,10 +39,22 @@
   scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
   do not treat existing single-phase country content as ground truth. Only DEU and BRA are two-phase so far.
   Tool-agnostic: Perplexity is one sourcing option, not hard-wired.
-- Sections, in order: executiveSnapshot, political.*, economy.*, society.*, security.*, actors.*, risks,
-  sources. SOCIETY is a top-level peer: society_demographics/composition/religion/cohesion (_en/_fr each),
-  plus scorecard_socialCohesion (distinct from scorecard_eliteCohesion). Declare any new society field in the
-  `countries` collection schema BEFORE writing content (strip rule).
+- Sections, in order: executiveSnapshot, political.* (incl. political_constitutionalSubstrate), economy.*,
+  territory.*, capacity.*, society.*, security.*, actors.*, risks, sources. SIX top-level peers now:
+  political · economy · territory · capacity · society · security.
+  - SOCIETY: society_demographics/composition/religion/cohesion (_en/_fr each) + scorecard_socialCohesion
+    (distinct from scorecard_eliteCohesion).
+  - TERRITORY (physical body, after economy): territory_geography / territory_minerals / territory_biosphere /
+    territory_climate / territory_metabolism / territory_transition (_en/_fr each). Discipline: pair every
+    exposure with capacity, locate geographically, bind every projection to emissions scenario AND horizon,
+    demonstrated-over-declared for transition.
+  - CAPACITY (can the state build/permit/deliver): capacity_permitting / capacity_delivery /
+    capacity_productivity (_en/_fr each).
+  - POLITICAL gains political_constitutionalSubstrate (_en/_fr): deep-time legal bedrock (treaty lineage /
+    title); hold distinct substrates separate; treaty text + court rulings only.
+  - Declare EVERY new field (territory_*, capacity_*, political_constitutionalSubstrate_*, and any society
+    field) in the `countries` collection schema BEFORE writing content — the strip rule eats undeclared
+    fields silently.
 - riskLevel (globe filter): DERIVED by rule from the country's own risk register, never assigned by hand or
   AI fiat. Strict rule: High = >=1 risk that is High on BOTH probability and impact; Medium = none High-both
   but >=1 risk touching High on either axis; Low = otherwise. region = static table; topics =
@@ -50,18 +62,22 @@
   not mere file existence.
 - Two layers: present-state (sourced, validated = analysis.yaml) and a SEPARATE, openly-speculative
   trajectory/extrapolation layer (own contract: plural, anchored to present-state facts, never sourced, never
-  a single forecast). Never mix trajectory content into the sourced body. The Manus-era risk-cascade
-  visualizations belong to the trajectory layer and are PARKED until per-country risk registers are
-  trustworthy.
+  a single forecast). Trajectories branch PRIMARILY on capacity.* (knowledge isn't the constraint, capacity
+  is) and lead from both substrates — society.* (human) and territory.* (physical); settler-state
+  resource/land branches anchor to political_constitutionalSubstrate. Moral guard: a capacity gap is
+  inherited/unjustly-distributed, never merit or desert. Never mix trajectory content into the sourced body.
+  The Manus-era risk-cascade visualizations belong to the trajectory layer and are PARKED until per-country
+  risk registers are trustworthy.
 - SSR: country pages currently have NO .astro SEO layer (React-only) — they are being brought into the
   dual-renderer pattern. Build the country .astro by COPYING the existing article SSR pattern (hidden SEO div
   + AppShell client:only="react"; do NOT switch to client:load). A country route that shadows
   [...slug].astro counts as affecting the catch-all — flag before adding. Expose a country page only once its
   content is two-phase-regenerated and proofed; .net stays on hold (see Deployment).
 - Validation: scripts/validate-country-citations.cjs. Required source fields: name, url, desc, accessDate,
-  confidence, citationType (+ id); publicationDate optional (warning only). Add 'society_' to
-  warningFieldPrefixes so society numerics get time-binding warnings. Does NOT enforce EN/FR parity — treat
-  parity as a manual check (or wire one).
+  confidence, citationType (+ id); publicationDate optional (warning only). Add 'society_', 'territory_',
+  'capacity_', and 'political_constitutionalSubstrate_' to warningFieldPrefixes so their numerics get
+  time-binding warnings (scenario/horizon binding matters most for territory_). Does NOT enforce EN/FR
+  parity — treat parity as a manual check (or wire one).
 - Migration is REGENERATION, not preservation: countries not yet on analysis.yaml are re-made through the
   two-phase pipeline (use scripts/migrate-country-ts-to-keystatic.cjs where an old hardcoded .ts exists). No
   single-phase content is preserved. Discarding single-phase country content is the author's explicit

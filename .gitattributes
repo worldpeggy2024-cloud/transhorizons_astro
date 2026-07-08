@@ -1,0 +1,7 @@
+# Line endings
+# core.autocrlf=true would rewrite these to CRLF in the working tree, which (a) makes
+# Keystatic/script-written content show spurious whole-file diffs and (b) breaks the
+# shell pre-commit hook (a CRLF shebang => "bad interpreter"). Pin them to LF.
+content/**      text eol=lf
+.githooks/**    text eol=lf
+*.sh            text eol=lf

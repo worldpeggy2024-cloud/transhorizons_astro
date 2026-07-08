@@ -510,8 +510,9 @@ export default function WorldAnalysis() {
         <p className="text-white/50 font-body text-[13px] mt-1.5 leading-relaxed">
           {fr
             ? <>
-                Survolez un pays pour afficher de brèves données (drapeau, nom, population; en rouge si le rapport est prêt), cliquez pour ouvrir son analyse.<br />
-                Chaque rapport de pays présente une analyse structurée : situation politique et économique, risques géopolitiques, acteurs clés, et sources.<br />
+                Survolez un territoire pour afficher de brèves données (drapeau, nom, capitale, population; en rouge si le rapport est prêt); cliquez pour ouvrir son analyse.<br />
+                Les rapports sont classés par pays; le globe inclut aussi des territoires autonomes ou contestés, et les analyses s'ajoutent au fil de leur rédaction.
+                Chaque rapport de pays présente une analyse structurée : situation politique, économique, physique; capacité, société et sécurité.<br />
                 <span className="relative inline-block">
                   <span
                     className="text-white/55 underline decoration-dotted underline-offset-2 cursor-help"
@@ -528,8 +529,9 @@ export default function WorldAnalysis() {
                 </span>
               </>
             : <>
-                Hover a country for quick info (flag, name, capital, population; display in red if the report is ready); click to open its analysis.<br />
-                Each country report provides structured analysis: political &amp; economic snapshot, geopolitical risks, key actors, and sources.<br />
+                Hover a territory to see brief data (flag, name, capital, population; display in red if the report is ready); click to open its analysis.<br />
+                Reports are organized by country; the globe also includes autonomous and contested territories, and analyses are added as they are written.
+                Each country report presents structured analysis: political, economic, physical, capacity, society and security snapshots.<br />
                 <span className="relative inline-block">
                   <span
                     className="text-white/55 underline decoration-dotted underline-offset-2 cursor-help"
@@ -637,9 +639,6 @@ export default function WorldAnalysis() {
                 <Filter size={14} />
               </button>
             </div>
-            <p className="text-white/30 font-body text-[10px] tracking-wider">
-              {filteredCountries.length} {fr ? 'pays' : 'countries'}
-            </p>
             <div className="flex items-start gap-1.5">
               <p className="text-white/40 font-body text-[10px] leading-relaxed flex-1">
                 {fr
