@@ -7,809 +7,74 @@ scorecard_securityLoyalty: High
 scorecard_economicPressure: Med
 scorecard_protestCapacity: Low
 scorecard_institutionalResilience: High
-executiveSnapshot_en: >-
-  1. REGIME TYPE: Canada is a Westminster parliamentary democracy and
-  constitutional monarchy; executive power derives from electoral competition in
-  first-past-the-post (FPTP) single-member-constituency elections, with the
-  Prime Minister holding power by commanding the confidence of the House of
-  Commons [freedom-house-canada-2026][vdem-democracy-report-2026].
-
-  2. POLITICAL EQUILIBRIUM: The Liberal government under Prime Minister Mark
-  Carney holds a working parliamentary majority as of 28 June 2026 (173 of 343
-  seats), reached after the April 2025 election minority via five floor
-  crossings and a sweep of three April 2026 by-elections — a route the
-  Conservative Official Opposition under Pierre Poilievre contests as
-  illegitimate. The majority lets the government pass legislation without
-  opposition support, shifting the operative constraint from inter-party
-  bargaining to caucus discipline, though the margin is thin and narrowing (see
-  Power Structure)
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
-
-  3. ECONOMIC MODEL: Canada is a high-income, trade-dependent mixed economy;
-  dominant sectors are energy (oil & gas, hydroelectric), financial services,
-  real estate, and manufacturing; total exports of goods and services reached
-  $997B and imports exceeded $1T in 2024, with 75%+ of merchandise exports
-  destined for the United States [gac-state-of-trade-2025][imf-can-2025-art4].
-
-  4. TOP 3 RISKS (6–18 months): (a) Permanent US tariff shock suppressing export
-  revenue and investment; (b) Fiscal deterioration — The Parliamentary Budget
-  Officer projects a $72B deficit (2.2% of GDP) in 2025-26 with US tariffs
-  treated as permanent; (c) Inflationary resurgence — headline CPI rose to 3.2%
-  y/y in May 2026 driven by gasoline (+33.2% y/y)
-  [pbo-efo-jun2026][statcan-cpi-may2026][boc-mpr-apr2026].
-
-  5. TOP 3 WATCH ITEMS (4–12 weeks): (a) Bank of Canada July 2026 rate decision
-  — policy rate held at 2.25% with inflation breaching the target band; (b)
-  Canada–US tariff negotiation track and any CUSMA renegotiation signal; (c)
-  Parliamentary confidence dynamics heading into a fall sitting
-  [boc-mpr-apr2026][cgai-diplomats-guide-2026].
-
-  6. EXTERNAL DEPENDENCIES: The United States absorbs about 68% of Canadian
-  merchandise exports as of early 2026, down from 75.9% in 2024
-  [statcan-12100011-ptp-exports]; much of that decline reflects volatile
-  unwrought-gold shipments to the United Kingdom rather than durable
-  diversification, and excluding gold the share remains in the low-70s (see
-  Economy) [statcan-daily-imt-april-2026]. Canada's energy sector is
-  export-critical with minimal pipeline diversification to tidewater; federal
-  debt is largely domestically held but sensitive to global rate shifts; no
-  International Monetary Fund program; no sanctions exposure
-  [imf-can-2025-art4].
-
-  7. SECURITY POSTURE: Internal stability is high; no active insurgency. The
-  Royal Canadian Mounted Police and the Canadian Security Intelligence Service
-  actively police organized crime and terrorism at levels that don't threaten
-  institutional stability, while foreign interference ( targeting diaspora
-  communities and elections) is an escalating concern rather than a contained
-  one; NORAD modernization ($38.6B over 20 years) is underway and Arctic
-  sovereignty is a declared priority.
-  [dnd-departmental-results-2024-25][freedom-house-canada-2026].
-
-  8. DIPLOMATIC ORIENTATION: Canada is a founding NATO member, Five Eyes
-  partner, G7 participant, and OECD member; the EU Security and Defence
-  Partnership was established at the June 2025 Canada–EU summit; CPTPP and CETA
-  provide Indo-Pacific and European trade frameworks; the Canada Strong
-  sovereign wealth fund ($25B) signals a turn toward strategic economic
-  diplomacy
-  [cgai-diplomats-guide-2026][gac-trade-diversification][pmo-canada-strong-fund-2026][seu-2026].
-
-  9. DATA CONFIDENCE: Economic and demographic sections are HIGH confidence:
-  sourced from Statistics Canada, Bank of Canada, and IMF; political section is
-  HIGH confidence: sourced from Freedom House and V-Dem; society cohesion
-  section is MEDIUM confidence: self-report surveys have known undercount biases
-  for marginalized communities; security section is MEDIUM confidence: DND
-  operational data is partially disclosed
-  [imf-can-2025-art4][statcan-gdp-q1-2026][freedom-house-canada-2026][dnd-departmental-results-2024-25].
-
-  10. BASELINE OUTLOOK: Canada enters H2 2026 with stagnant output, rising
-  inflation, a majority government managing a tariff-induced fiscal squeeze, and
-  strong institutional buffers that cap downside risk — the most likely path is
-  slow-growth muddling through rather than crisis or acceleration
-  [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026].
-executiveSnapshot_fr: >-
-  1. TYPE DE RÉGIME : Le Canada est une démocratie parlementaire de type
-  Westminster et une monarchie constitutionnelle. Le pouvoir exécutif est acquis
-  par la compétition électorale dans des circonscriptions uninominales à scrutin
-  majoritaire à un tour; le premier ministre détenant le pouvoir dès lors qu'il
-  dispose de la confiance de la Chambre des communes
-  [freedom-house-canada-2026][vdem-democracy-report-2026].
-
-  2. ÉQUILIBRE POLITIQUE : Le gouvernement libéral dirigé par le premier
-  ministre Mark Carney détient une majorité parlementaire fonctionnelle au 28
-  juin 2026 (173 sièges sur 343), atteinte après la minorité issue de l'élection
-  d'avril 2025 grâce à cinq changements d'allégeance et aux trois élections
-  partielles remportées en avril 2026; voie que l'Opposition officielle
-  conservatrice dirigée par Pierre Poilievre dénonce comme illégitime. Cette
-  majorité permet au gouvernement d'adopter des lois sans l'appui de
-  l'opposition, déplaçant la contrainte opérationnelle de la négociation
-  interpartis vers la discipline de caucus, bien que la marge soit mince et
-  s'amenuise (voir Structure du pouvoir)
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
-
-  3. MODÈLE ÉCONOMIQUE : Le Canada est une économie mixte à revenu élevé et
-  fortement tributaire du commerce extérieur; les secteurs dominants sont
-  l'énergie (pétrole, gaz, hydroélectricité), les services financiers,
-  l'immobilier et la fabrication; les exportations totales de biens et de
-  services ont atteint 997 G$ et les importations ont dépassé 1 000 G$ en 2024,
-  avec plus de 75 % des exportations de marchandises à destination des
-  États-Unis [gac-state-of-trade-2025][imf-can-2025-art4].
-
-  4. TOP 3 DES RISQUES (6–18 mois) : (a) Choc tarifaire états-uniens permanent
-  comprimant les recettes d'exportation et l'investissement; (b) Détérioration
-  budgétaire : la directrice parlementaire du budget projette un déficit de 72
-  G$ (2,2 % du PIB) en 2025-2026 en supposant que les droits de douane imposés
-  par les États-Unis sont permanents; (c) Résurgence inflationniste : l'IPC
-  global a atteint 3,2 % en glissement annuel en mai 2026, porté par l'essence
-  (+33,2 % en g.a.) [pbo-efo-jun2026][statcan-cpi-may2026][boc-mpr-apr2026].
-
-  5. TOP 3 À SURVEILLER (4–12 semaines) : (a) Décision de taux de la Banque du
-  Canada en juillet 2026 : taux directeur maintenu à 2,25 % avec une inflation
-  dépassant la cible; (b) Piste de négociation Canada–États-Unis sur les droits
-  de douane et tout signal de renégociation de l'ACEUM; (c) Dynamique de
-  confiance parlementaire à l'approche de la session d'automne
-  [boc-mpr-apr2026][cgai-diplomats-guide-2026].
-
-  6. DÉPENDANCES EXTÉRIEURES : Les États-Unis ont absorbé environ 68 % des
-  exportations de marchandises canadiennes au début de 2026, en recul par
-  rapport à 75,9 % en 2024 [statcan-12100011-ptp-exports]; cette baisse reflète
-  surtout des expéditions volatiles d'or brut vers le Royaume-Uni plutôt qu'une
-  diversification durable, en excluant l'or la part se maintient dans le bas de
-  la fourchette des 70 % (voir Économie) [statcan-daily-imt-april-2026]. Le
-  secteur énergétique demeure central pour les exportations, avec une
-  diversification limitée vers les ports en eaux profondes; la dette fédérale
-  est essentiellement détenue au pays, mais sensible aux variations des taux
-  mondiaux; aucun programme du Fonds monétaire international ni exposition à des
-  sanctions [imf-can-2025-art4].
-
-  7. POSTURE DE SÉCURITÉ : La stabilité intérieure est élevée; aucune
-  insurrection active. La Gendarmerie royale du Canada et le Service canadien du
-  renseignement de sécurité contiennent le crime organisé et le terrorisme à des
-  niveaux qui ne menacent pas la stabilité institutionnelle, tandis que
-  l'ingérence étrangère (visant les communautés diasporiques et les élections)
-  constitue une préoccupation croissante plutôt que contenue; la modernisation
-  du NORAD (Commandement de la défense aérospatiale de l'Amérique du Nord) (38,6
-  G$ sur 20 ans) est en cours et la souveraineté dans l'Arctique est une
-  priorité déclarée.
-  [dnd-departmental-results-2024-25][freedom-house-canada-2026].
-
-  8. ORIENTATION DIPLOMATIQUE : Le Canada est membre fondateur de l'OTAN
-  (Organisation du traité de l'Atlantique nord), partenaire des Five Eyes (ou
-  Groupe des cinq), participant au G7 et membre de l'OCDE (Organisation de
-  coopération et de développement économiques); le Partenariat de sécurité et de
-  défense entre l’Union européenne et le Canada a été établi lors du sommet
-  Canada‑UE de juin 2025; l’Accord de partenariat transpacifique global et
-  progressiste (PTPGP) et l'Accord économique et commercial global (AECG) entre
-  le Canada et l’Union européenne constituent des cadres commerciaux pour
-  l'Indo-Pacifique et l'Europe; le fonds souverain Canada Fort (25 G$) marque un
-  tournant vers une diplomatie économique stratégique
-  [cgai-diplomats-guide-2026][gac-trade-diversification][pmo-canada-strong-fund-2026][seu-2026].
-
-  9. CONFIANCE DANS LES DONNÉES : Les sections économiques et démographiques
-  sont de HAUTE fiabilité : tirées de Statistique Canada, de la Banque du Canada
-  et du FMI; la section politique est de HAUTE fiabilité : tirée de Freedom
-  House et de V-Dem; la section sur la cohésion sociale est de FIABILITÉ MOYENNE :
-  les sondages déclaratifs présentent des biais de sous-dénombrement pour les
-  communautés marginalisées; la section sécuritaire est de FIABILITÉ MOYENNE :
-  les données opérationnelles du ministère de la Défense nationale sont
-  partiellement divulguées
-  [imf-can-2025-art4][statcan-gdp-q1-2026][freedom-house-canada-2026][dnd-departmental-results-2024-25].
-
-  10. PERSPECTIVES DE RÉFÉRENCE : Le Canada aborde le second semestre de 2026
-  avec une production stagnante, une inflation en hausse, un gouvernement
-  majoritaire composant avec une contrainte budgétaire induite par les droits de
-  douane imposés par les États-Unis, et de solides amortisseurs institutionnels
-  qui limitent le risque de dégradation; le scénario le plus probable est une
-  navigation à vue à croissance lente plutôt qu'une crise ou une accélération
-  [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026].
-political_powerStructure_en: >-
-  Executive power formally rests with the Crown, exercised by the Prime Minister
-  and Cabinet through the Privy Council. Prime Minister Mark Carney leads a
-  Liberal majority government: the Liberals were returned with a minority at the
-  28 April 2025 general election (169 seats) and subsequently reached a majority
-  through five floor crossings and a sweep of three by-elections on 13 April
-  2026 (their first majority since 2015). The route to that majority — the first
-  time a Canadian prime minister has crossed the threshold partly through floor
-  crossings rather than at an election — is contested by the Conservative
-  Official Opposition as illegitimate; it nonetheless gives the government
-  effective control of the Commons agenda.
-
-  The majority is real but thin and in motion. The Liberal count peaked at 174
-  seats in April and stood at 173 of 343 as of 28 June 2026 — a figure that
-  includes the Speaker, Francis Scarpaleggia, who by convention votes only to
-  break ties, leaving an operative voting bloc of 172 against 168 for the
-  combined opposition, with two seats vacant. The single-seat slip from 174
-  followed Jonathan Wilkinson's June resignation to become ambassador to the
-  European Union; his seat is one of the two vacancies. At least six further
-  resignations are pending summer by-elections, which will draw the Liberals
-  toward roughly 170 at the September sitting. On present numbers the government
-  keeps its majority, but if the vacancies deepen the margin its ability to
-  legislate without opposition support could come to rest on winning at least
-  one by-election and on the Speaker's tie-breaking vote — a materially weaker
-  position than the seat total alone suggests.
-  [cbc-carney-majority-byelections-2026]. The bicameral Parliament consists of
-  an elected House of Commons (343 seats since the 2025 redistribution) and an
-  appointed Senate; the Supreme Court of Canada exercises judicial review with
-  full independence and serves as the final court of appeal
-  [freedom-house-canada-2026][wjp-canada-2025]. The Royal Canadian Mounted
-  Police (RCMP) is civilian-directed under the Minister of Public Safety; the
-  Canadian Armed Forces (CAF) are under civilian ministerial control via the
-  Department of National Defence [dnd-departmental-results-2024-25]. Media
-  independence is robust — Freedom House classifies Canada Free in 2026, noting
-  independent broadcasters and print outlets with no direct state ownership of
-  major private media [freedom-house-canada-2026]. Canada ranked 13th of 143
-  countries on the WJP Rule of Law Index 2025, reflecting strong scores on
-  constraints on government powers and absence of corruption [wjp-canada-2025].
-  V-Dem classifies Canada as a Liberal Democracy ranked 23rd globally on the
-  Liberal Democracy Index in the 2026 report [vdem-democracy-report-2026].
-political_powerStructure_fr: >-
-  Le pouvoir exécutif appartient formellement à la Couronne et s'exerce par
-  l'entremise du premier ministre et du Cabinet au sein du Conseil privé. Le
-  premier ministre Mark Carney dirige un gouvernement libéral majoritaire : les
-  libéraux ont été reportés au pouvoir avec une minorité lors de l'élection
-  générale du 28 avril 2025 (169 sièges), puis ont atteint la majorité grâce à
-  cinq changements d'allégeance et à la victoire dans les trois élections
-  partielles du 13 avril 2026 (leur première majorité depuis 2015). La voie
-  empruntée pour y parvenir — première fois qu'un premier ministre canadien
-  franchit le seuil de la majorité en partie par des changements d'allégeance
-  plutôt qu'au terme d'un scrutin — est dénoncée comme illégitime par
-  l'Opposition officielle conservatrice; elle donne néanmoins au gouvernement le
-  contrôle effectif de l'ordre du jour aux Communes. Cette majorité est réelle,
-  mais mince et mouvante. Le caucus libéral a culminé à 174 sièges en avril et
-  s'établissait à 173 sur 343 au 28 juin 2026; un chiffre qui inclut le
-  Président de la Chambre, Francis Scarpaleggia, qui, par convention, ne vote
-  qu'en cas d'égalité, ce qui ramène le bloc de vote effectif à 172 voix contre
-  168 pour l'opposition combinée, avec deux sièges vacants. Le recul d'un siège
-  par rapport à 174 fait suite à la démission de Jonathan Wilkinson en juin pour
-  devenir ambassadeur auprès de l'Union européenne; son siège est l'une des deux
-  vacances. Au moins six autres démissions sont attendues et donneront lieu à
-  des élections partielles au cours de l'été, ce qui ramènera les libéraux
-  autour de 170 sièges à la rentrée parlementaire de septembre. Selon l'état
-  actuel des chiffres, le gouvernement conserve sa majorité; mais si les
-  vacances érodent davantage la marge, sa capacité à légiférer sans l'appui de
-  l'opposition pourrait dépendre de la victoire dans au moins une élection
-  partielle et du vote prépondérant du Président; position sensiblement plus
-  fragile que ne le laisse croire le seul décompte des sièges
-  [cbc-carney-majority-byelections-2026]. Le Parlement bicaméral comprend une
-  Chambre des communes élue (343 sièges depuis le redécoupage de 2025) et un
-  Sénat nommé; la Cour suprême du Canada exerce un contrôle judiciaire en toute
-  indépendance et est le tribunal d'appel de dernier ressort
-  [freedom-house-canada-2026][wjp-canada-2025]. La Gendarmerie royale du Canada
-  (GRC) est sous direction civile et relève du ministre de la Sécurité publique;
-  les Forces armées canadiennes (FAC) sont sous contrôle ministériel civil par
-  l'intermédiaire du ministère de la Défense nationale
-  [dnd-departmental-results-2024-25]. L'indépendance des médias est robuste :
-  Freedom House classe le Canada comme Libre en 2026, notant des diffuseurs
-  indépendants et des imprimés sans propriété d'État directe des grands médias
-  privés [freedom-house-canada-2026]. Le Canada se classe 13e sur 143 pays dans
-  l'Indice d'état de droit du WJP 2025, reflétant de bons résultats sur les
-  contraintes aux pouvoirs gouvernementaux et l'absence de corruption
-  [wjp-canada-2025]. V-Dem classe le Canada comme Démocratie libérale, 23e
-  mondial sur l'Indice de démocratie libérale dans son rapport 2026
-  [vdem-democracy-report-2026].
-political_stabilityDrivers_en: >-
-  Legitimacy rests on procedural democratic foundations: regular, competitive,
-  monitored elections; an independent judiciary; and constitutional protection
-  of rights under the Charter
-  [freedom-house-canada-2026][vdem-democracy-report-2026]. The Canadian Armed
-  Forces maintain strong institutional loyalty to civilian control with no
-  history of coup attempts; RCMP loyalty to constitutional order is embedded
-  [dnd-departmental-results-2024-25]. The governing Liberal party now commands a
-  working majority, removing the confidence-vote fragility that defined its
-  first year and allowing it to pass legislation without opposition support; the
-  binding constraint shifts from inter-party bargaining to internal discipline
-  across an enlarged, ideologically broad caucus that now includes recent
-  floor-crossers
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
-  Business elite alignment is conditional: the energy sector, financial
-  services, and export manufacturers support macroeconomic stability but
-  increasingly pressure the government on trade diversification, regulatory
-  competitiveness, and US tariff response
-  [imf-can-2025-art4][gac-trade-diversification]. Transparency International's
-  Corruption Perceptions Index 2025 ranks Canada 16th of 182, score 75/100 — its
-  lowest-ever ranking, with the score unchanged from 2024 [ti-cpi-2025].
-political_stabilityDrivers_fr: >-
-  La légitimité repose sur des fondements démocratiques procéduraux : des
-  élections régulières, compétitives et surveillées; un pouvoir judiciaire
-  indépendant; et la protection constitutionnelle des droits par la Charte
-  [freedom-house-canada-2026][vdem-democracy-report-2026]. Les Forces armées
-  canadiennes maintiennent une solide loyauté institutionnelle envers le
-  contrôle civil, sans antécédent de tentative de coup d'État; la loyauté de la
-  GRC envers l'ordre constitutionnel est ancrée
-  [dnd-departmental-results-2024-25]. Le Parti libéral au pouvoir dispose
-  désormais d'une majorité fonctionnelle, ce qui élimine la fragilité des votes
-  de confiance qui a marqué sa première année et lui permet d'adopter des lois
-  sans l'appui de l'opposition; la contrainte déterminante passe de la
-  négociation interpartis à la discipline interne de caucus élargi et
-  idéologiquement hétérogène, qui compte désormais des élus ayant récemment
-  changé d'allégeance
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
-  L'alignement des élites économiques est conditionnel : le secteur énergétique,
-  les services financiers et les fabricants exportateurs soutiennent la
-  stabilité macroéconomique, mais font pression de plus en plus sur le
-  gouvernement concernant la diversification commerciale, la compétitivité
-  réglementaire et la réponse aux droits de douane imposés par les États-Unis
-  [imf-can-2025-art4][gac-trade-diversification]. L'indice de perception de la
-  corruption 2025 de Transparency International classe le Canada au 16ᵉ rang sur
-  182, avec un score de 75/100 : son plus mauvais classement à ce jour, le score
-  étant resté stable depuis 2024 [ti-cpi-2025].
-political_shockAbsorbers_en: >-
-  Canada's institutional shock absorbers are substantial: federal transfers and
-  employment insurance automatically cushion regional economic downturns; the
-  Bank of Canada retains rate flexibility with the policy rate at 2.25% and room
-  to cut if activity deteriorates further [boc-mpr-apr2026]; fiscal capacity
-  exists to run elevated deficits (PBO projects $72B / 2.2% of GDP in 2025-26)
-  without triggering a sovereign debt crisis given Canada's AAA/AA+ credit
-  profile and domestically held debt structure
-  [pbo-efo-jun2026][imf-can-2025-art4]. On the acceleration side, the principal
-  political vulnerability is no longer a confidence-vote collapse but the
-  durability and legitimacy of the majority itself: it rests on a thin margin
-  (173 of 343) and on floor crossings the opposition frames as illegitimate, so
-  defections, further vacancies, or sustained legitimacy attacks could narrow
-  the government's freedom of action; and the TI CPI score of 75/100, in gradual
-  decline since 2012, signals public-trust erosion that, if it accelerates,
-  could compound that legitimacy strain
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026][ti-cpi-2025].
-  The combination of rising inflation (3.2% y/y in May 2026) and stagnant output
-  — GDP flat in Q1 2026 after a Q4 2025 contraction — creates a stagflationary
-  corridor where monetary policy tightening to fight inflation worsens fiscal
-  and output stress simultaneously
-  [statcan-gdp-q1-2026][statcan-cpi-may2026][boc-mpr-apr2026].
-political_shockAbsorbers_fr: >-
-  Les amortisseurs institutionnels du Canada sont substantiels : les transferts
-  fédéraux et l'assurance-emploi atténuent automatiquement les ralentissements
-  économiques régionaux; la Banque du Canada conserve une marge de manœuvre sur
-  les taux avec un taux directeur à 2,25 % et la possibilité de le réduire si
-  l'activité se dégrade davantage [boc-mpr-apr2026]; la capacité budgétaire
-  permet de creuser des déficits élevés (le DPB projette 72 G$ / 2,2 % du PIB en
-  2025-2026) sans déclencher de crise de la dette souveraine, compte tenu du
-  profil de crédit AAA/AA+ du Canada et de sa structure de dette à détention
-  nationale [pbo-efo-jun2026][imf-can-2025-art4]. Du côté des accélérateurs
-  d'instabilité, la principale vulnérabilité politique n'est plus l'effondrement
-  d'un vote de confiance, mais la durabilité et la légitimité de la majorité
-  elle-même : elle repose sur une marge mince (173 sur 343) et sur des
-  changements d'allégeance que l'opposition qualifie d'illégitimes, de sorte que
-  des défections, de nouvelles vacances ou des attaques soutenues contre sa
-  légitimité pourraient restreindre la marge de manœuvre du gouvernement; et le
-  score IPC de 75/100 de TI, en recul graduel depuis 2012, indique une érosion
-  de la confiance publique qui, si elle s'accélère, pourrait aggraver cette
-  tension de légitimité
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026][ti-cpi-2025].
-  La combinaison d'une inflation en hausse (3,2 % en g.a. en mai 2026) et d'une
-  production stagnante  (PIB stable au T1 2026 après une contraction au T4 2025)
-  crée un corridor stagflationniste où un resserrement de la politique monétaire
-  pour combattre l'inflation aggraverait simultanément le stress budgétaire et
-  la pression sur la production
-  [statcan-gdp-q1-2026][statcan-cpi-may2026][boc-mpr-apr2026].
-economy_macroReality_en: >-
-  Real GDP grew 1.7% in full-year 2025, before decelerating sharply: Q4 2025
-  contracted 0.6% (annualized) and Q1 2026 was flat (0.0% change)
-  [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. The Bank of Canada
-  projects 1.2% growth for full-year 2026; the PBO's independent projection is
-  1.1% treating US tariffs as permanent; the OECD's June 2026 forecast is also
-  1.2% in 2026 rising to 1.7% in 2027
-  [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026]. Inflation rose to 3.2%
-  y/y in May 2026 — above the Bank of Canada's 2% target — driven primarily by
-  gasoline prices (+33.2% y/y) and food price acceleration; the BoC projects
-  inflation easing back to 2% in 2027 [statcan-cpi-may2026][boc-mpr-apr2026].
-  The policy rate is held at 2.25% as of the April 2026 Monetary Policy Report,
-  reflecting the tension between fighting above-target inflation and not
-  exacerbating growth weakness [boc-mpr-apr2026]. The federal fiscal deficit is
-  contested between government and watchdog: the Spring Economic Update 2026
-  projects $65.3B (1.9% of GDP) in FY2026-27; the PBO's June 2026 figure for
-  FY2025-26 is $72B (2.2% of GDP) [seu-2026][pbo-efo-jun2026]. Budget 2025
-  introduced an $81.8B defence spending commitment over five years and a $25B
-  Canada Strong sovereign wealth fund
-  [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. Labour
-  market conditions improved in May 2026: employment rose 88,000 (+0.4%),
-  unemployment rate fell to 6.6%, and the employment rate reached 60.7%
-  [statcan-lfs-may2026]. The IMF's January 2026 Article IV report assessed
-  Canada's medium-term fiscal and monetary fundamentals as sound, flagging US
-  trade exposure as the primary structural vulnerability [imf-can-2025-art4].
-economy_macroReality_fr: >-
-  Le PIB réel a progressé de 1,7 % pour l'ensemble de l'année 2025, avant de
-  ralentir fortement : le T4 2025 s'est contracté de 0,6 % (annualisé) et le T1
-  2026 est resté stable (variation de 0,0 %)
-  [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. La Banque du Canada
-  projette une croissance de 1,2 % pour l'année complète 2026; la projection
-  indépendante du DPB est de 1,1 % en supposant que les droits de douane imposés
-  par les États-Unis sont permanents; les prévisions de l'OCDE de juin 2026 sont
-  également de 1,2 % en 2026, avec une progression à 1,7 % en 2027
-  [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026]. L'inflation a atteint
-  3,2 % en g.a. en mai 2026 — au-dessus de la cible de 2 % de la Banque du
-  Canada — portée principalement par les prix de l'essence (+33,2 % en g.a.) et
-  l'accélération des prix alimentaires; la BdC projette un retour de l'inflation
-  à 2 % en 2027 [statcan-cpi-may2026][boc-mpr-apr2026]. Le taux directeur est
-  maintenu à 2,25 % au Rapport sur la politique monétaire d'avril 2026,
-  reflétant la tension entre la lutte contre une inflation supérieure à la cible
-  et le fait de ne pas aggraver la faiblesse de la croissance [boc-mpr-apr2026].
-  Le déficit budgétaire fédéral est contesté entre le gouvernement et le chien
-  de garde : la Mise à jour économique du printemps 2026 projette 65,3 G$ (1,9 %
-  du PIB) pour l'exercice 2026-2027; le chiffre du DPB pour l'exercice 2025-2026
-  est de 72 G$ (2,2 % du PIB) [seu-2026][pbo-efo-jun2026]. Le budget 2025 a
-  engagé 81,8 G$ en dépenses de défense sur cinq ans et un fonds souverain
-  Canada Fort de 25 G$
-  [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. Les
-  conditions du marché du travail se sont améliorées en mai 2026 : l'emploi a
-  progressé de 88 000 (+0,4 %), le taux de chômage a reculé à 6,6 % et le taux
-  d'emploi a atteint 60,7 % [statcan-lfs-may2026]. Le rapport Article IV du FMI
-  de janvier 2026 a évalué comme sains les fondamentaux budgétaires et
-  monétaires à moyen terme du Canada, signalant l'exposition commerciale aux
-  États-Unis comme la principale vulnérabilité structurelle [imf-can-2025-art4].
-economy_externalVulnerability_en: >-
-  Canada's export base is resource-intensive and geographically concentrated.
-  Total goods exports reached $997B and imports exceeded $1T in 2024
-  [gac-state-of-trade-2025]. The United States is the dominant trade partner,
-  absorbing approximately 75% of Canadian merchandise exports — energy,
-  vehicles, machinery, and forest products are the top commodity groups
-  [gac-state-of-trade-2025][un-comtrade-canada][statcan-international-trade].
-  April 2026 monthly total trade stood at $92.9B [statcan-international-trade].
-  This concentration creates acute tariff vulnerability: US tariff measures
-  imposed in 2025-26 are treated by the PBO as permanent, directly driving the
-  2.2% of GDP deficit projection and 1.1% growth ceiling for 2026
-  [pbo-efo-jun2026]. Canada is pursuing trade diversification through 15 free
-  trade agreements covering 51 countries, with the CPTPP (Indo-Pacific) and CETA
-  (Europe) as the primary diversification levers [gac-trade-diversification]. No
-  IMF program is in place; Canada is not subject to international sanctions.
-  Sovereign debt is held predominantly by domestic institutional investors,
-  limiting foreign creditor exposure, though global interest rate movements
-  affect rollover costs [imf-can-2025-art4].
-economy_externalVulnerability_fr: >-
-  La base exportatrice du Canada est à forte intensité de ressources et
-  géographiquement concentrée. Les exportations totales de marchandises ont
-  atteint 997 G$ et les importations ont dépassé 1 000 G$ en 2024
-  [gac-state-of-trade-2025]. Les États-Unis sont le principal partenaire
-  commercial, absorbant environ 75 % des exportations canadiennes de
-  marchandises — énergie, véhicules, machines et produits forestiers constituent
-  les principaux groupes de produits
-  [gac-state-of-trade-2025][un-comtrade-canada][statcan-international-trade]. Le
-  commerce mensuel total d'avril 2026 s'élevait à 92,9 G$
-  [statcan-international-trade]. Cette concentration crée une vulnérabilité
-  tarifaire aiguë : droits de douane imposés par les États-Unis en 2025-2026
-  sont traitées par le DPB comme permanentes, pesant directement sur la
-  projection de déficit à 2,2 % du PIB et le plafond de croissance de 1,1 % pour
-  2026 [pbo-efo-jun2026]. Le Canada poursuit la diversification de ses échanges
-  grâce à 15 accords de libre-échange couvrant 51 pays, avec le PTPGP
-  (Indo-Pacifique) et le CETA (Europe) comme principaux leviers de
-  diversification [gac-trade-diversification]. Aucun programme du FMI n'est en
-  vigueur; le Canada n'est pas soumis à des sanctions internationales. La dette
-  souveraine est principalement détenue par des investisseurs institutionnels
-  nationaux, ce qui limite l'exposition aux créanciers étrangers, bien que les
-  mouvements des taux d'intérêt mondiaux affectent les coûts de refinancement
-  [imf-can-2025-art4].
-economy_politicalEconomy_en: >-
-  The current economic model primarily benefits large energy producers, the
-  financial services sector, and the real estate industry, all of which operate
-  in markets with high barriers to entry and are aligned with macroeconomic
-  stability. Resource-export rents are politically distributed through
-  provincial equalization, sustaining regional elite coalitions in Alberta and
-  Saskatchewan alongside the federal government
-  [imf-can-2025-art4][gac-state-of-trade-2025]. Reforms that are technically
-  necessary — productivity enhancement via business investment tax reform,
-  labour market flexibility, housing supply deregulation, and
-  pipeline-to-tidewater capacity — face political resistance from environmental,
-  labour, and urban housing-price constituencies respectively
-  [imf-can-2025-art4][oecd-eo-june2026]. Budget 2025 signalled a productivity
-  agenda via a super-deduction and the Canada Strong sovereign wealth fund
-  ($25B), but implementation depends on minority Parliament survival
-  [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026].
-  Immigration-driven demand has sustained housing prices and consumer spending
-  but is now contracting: the PBO's February 2026 analysis projects that the
-  2026-2028 immigration levels plan — targeting 380,000 annual permanent
-  residents — and reduction of the non-permanent resident (NPR) population to
-  under 5% of the population by end-2027 will materially reduce
-  population-driven demand [pbo-ircc-immigration-demographic].
-economy_politicalEconomy_fr: >-
-  Le modèle économique actuel profite principalement aux grands producteurs
-  d'énergie, au secteur des services financiers et au secteur immobilier, qui
-  opèrent tous dans des marchés à fortes barrières à l'entrée et sont alignés
-  sur la stabilité macroéconomique. Les rentes d'exportation des ressources sont
-  redistribuées politiquement par la péréquation provinciale, soutenant des
-  coalitions d'élites régionales en Alberta et en Saskatchewan parallèlement au
-  gouvernement fédéral [imf-can-2025-art4][gac-state-of-trade-2025]. Les
-  réformes techniquement nécessaires — amélioration de la productivité par la
-  réforme fiscale de l'investissement des entreprises, flexibilité du marché du
-  travail, déréglementation de l'offre de logements et capacité de pipelines
-  vers les eaux profondes — se heurtent à des résistances politiques de la part
-  de groupes environnementaux, syndicaux et de défenseurs des prix immobiliers
-  urbains respectivement [imf-can-2025-art4][oecd-eo-june2026]. Le budget 2025 a
-  signalé un programme de productivité via une super-déduction et le fonds
-  souverain Canada Fort (25 G$), mais la mise en œuvre dépend de la survie du
-  Parlement minoritaire
-  [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. La demande
-  portée par l'immigration a soutenu les prix immobiliers et la consommation,
-  mais se contracte désormais : l'analyse du DPB de février 2026 projette que le
-  plan des niveaux d'immigration 2026-2028 — ciblant 380 000 résidents
-  permanents annuels — et la réduction de la population de résidents non
-  permanents (RNP) à moins de 5 % de la population d'ici fin 2027 réduiront
-  matériellement la demande portée par la population
-  [pbo-ircc-immigration-demographic].
-society_demographics_en: >-
-  Canada's population stood at 41,651,653 on July 1, 2025
-  [statcan-pop-age-jul2025], declining to 41,472,081 by Q1 2026 — the first
-  annual population decline in Canadian history, driven by the government's
-  policy-driven reduction of non-permanent residents
-  [statcan-pop-quarterly][pbo-ircc-immigration-demographic]. This reversal
-  follows a decade of immigration-fuelled growth and signals a structural
-  demographic inflection point. Long-range projections show Canada reaching
-  57.4M under a moderate scenario by 2075, but outcomes depend heavily on
-  immigration policy continuity [statcan-pop-projections-2026]. Canada is an
-  aging society: the median age trend is upward and dependency ratios are
-  increasing as Baby Boomers exit the labour force, placing pressure on pension
-  and health-care systems [statcan-pop-age-jul2025]. Urban concentration is high
-  — the majority of the population is concentrated in the Greater Toronto Area,
-  Montréal, Vancouver, and Calgary census metropolitan areas. Internal migration
-  flows toward energy-producing provinces (Alberta) and away from high-cost
-  cities remain a structural dynamic. The NPR population reduction plan targets
-  fewer than 5% of total population as non-permanent residents by end-2027
-  [pbo-ircc-immigration-demographic].
-society_demographics_fr: >-
-  La population du Canada s'élevait à 41 651 653 personnes le 1er juillet 2025
-  [statcan-pop-age-jul2025], pour diminuer à 41 472 081 au T1 2026 — première
-  baisse annuelle de la population dans l'histoire canadienne, liée à la
-  réduction des résidents non permanents par la politique gouvernementale
-  [statcan-pop-quarterly][pbo-ircc-immigration-demographic]. Ce renversement
-  fait suite à une décennie de croissance alimentée par l'immigration et signale
-  un point d'inflexion démographique structurel. Les projections à long terme
-  montrent que le Canada pourrait atteindre 57,4 M d'habitants dans un scénario
-  modéré d'ici 2075, mais les résultats dépendent fortement de la continuité de
-  la politique d'immigration [statcan-pop-projections-2026]. Le Canada est une
-  société vieillissante : la tendance à la hausse de l'âge médian et
-  l'augmentation des ratios de dépendance, à mesure que les baby-boomers
-  quittent le marché du travail, exercent des pressions sur les systèmes de
-  retraite et de soins de santé [statcan-pop-age-jul2025]. La concentration
-  urbaine est élevée — la majorité de la population est concentrée dans les
-  régions métropolitaines de recensement du Grand Toronto, de Montréal, de
-  Vancouver et de Calgary. Les flux de migration interne vers les provinces
-  productrices d'énergie (Alberta) et au départ des grandes villes à coût élevé
-  restent une dynamique structurelle. Le plan de réduction de la population des
-  RNP vise moins de 5 % de la population totale comme résidents non permanents
-  d'ici fin 2027 [pbo-ircc-immigration-demographic].
-society_composition_en: >-
-  Canada's society is ethnically diverse and officially bilingual. The 2021
-  Census shows English as the first official language spoken by 75.5% of the
-  population and French by 21.4% [statcan-2021-census-language]. The census
-  recorded 5.0% of the population identifying as Indigenous (First Nations,
-  Métis, and Inuit) — approximately 1.8 million persons
-  [statcan-2021-indigenous-profile]. Ethnocultural diversity is accelerating
-  through immigration, with visible minority populations concentrated in major
-  metropolitan areas [statcan-2021-census-ethno-religion]. The principal
-  fault-line geometry is as follows: the English/French linguistic cleavage runs
-  roughly along provincial lines (Quebec vs. rest-of-Canada) and is reinforced
-  by distinct legal traditions (civil law in Quebec, common law elsewhere),
-  distinct cultural institutions, and periodic sovereignty debates. The
-  Indigenous/non-Indigenous cleavage is separate in geography (reserve
-  communities vs. urban centres), governance demands (inherent rights,
-  treaties), and socioeconomic outcomes. These two major cleavages are
-  CROSS-CUTTING with respect to each other — Francophone Quebecers and
-  Anglophone Canadians do not line up predictably on Indigenous issues; nor does
-  the Indigenous population align with either linguistic bloc — which
-  structurally diffuses rather than compounds inter-group tension. Ethnocultural
-  immigrant communities add further cross-cutting diversity within both
-  linguistic groups
-  [statcan-2021-census-language][statcan-2021-indigenous-profile][statcan-2021-census-ethno-religion].
-society_composition_fr: >-
-  La société canadienne est ethniquement diversifiée et officiellement bilingue.
-  Le recensement de 2021 montre que l'anglais est la première langue officielle
-  parlée par 75,5 % de la population et le français par 21,4 %
-  [statcan-2021-census-language]. Le recensement a recensé 5,0 % de la
-  population s'identifiant comme autochtone (Premières Nations, Métis et
-  Inuit) — environ 1,8 million de personnes [statcan-2021-indigenous-profile].
-  La diversité ethnoculturelle s'accélère grâce à l'immigration, avec des
-  populations de minorités visibles concentrées dans les grandes zones
-  métropolitaines [statcan-2021-census-ethno-religion]. La géométrie des
-  principales lignes de fracture est la suivante : le clivage linguistique
-  anglais/français s'étend approximativement le long des frontières provinciales
-  (Québec contre reste du Canada) et est renforcé par des traditions juridiques
-  distinctes (droit civil au Québec, common law ailleurs), des institutions
-  culturelles distinctes et des débats périodiques sur la souveraineté. Le
-  clivage autochtone/non-autochtone est distinct sur le plan géographique
-  (communautés de réserves vs. centres urbains), des revendications de
-  gouvernance (droits inhérents, traités) et des résultats socioéconomiques. Ces
-  deux principaux clivages sont ENTRECROISÉS l'un par rapport à l'autre — les
-  Québécois francophones et les Canadiens anglophones ne s'alignent pas de
-  manière prévisible sur les questions autochtones; la population autochtone ne
-  s'aligne non plus avec l'un ou l'autre des blocs linguistiques — ce qui
-  diffuse structurellement plutôt qu'amplifie les tensions intergroupes. Les
-  communautés d'immigrants ethnoculturels ajoutent une diversité entrecroisée
-  supplémentaire au sein des deux groupes linguistiques
-  [statcan-2021-census-language][statcan-2021-indigenous-profile][statcan-2021-census-ethno-religion].
-society_religion_en: >-
-  SOURCE AND BIAS NOTE: The primary source for Canadian religious composition is
-  the 2021 Census ethnocultural and religious diversity hub (Statistics Canada)
-  [statcan-2021-census-ethno-religion]. Pew Research Center's 2020 modelled
-  estimates provide a cross-check [pew-religious-composition-2020]. Both sources
-  converge on approximately 53% Christian and 35% non-affiliated. The census is
-  self-declared and voluntary for religion; it is known to undercount practising
-  believers in some non-Christian traditions who may not recognize Western
-  religious category labels, and to overcount 'Christian' among cultural but
-  non-practising adherents. Pew models are modelled estimates with their own
-  confidence intervals. (a) COMPOSITION: ~53% Christian (Catholic approximately
-  38%, Protestant and other Christian ~15%); ~35% no religious affiliation; ~5%
-  Muslim; ~1.5% Hindu; remaining ~5% includes Sikh, Buddhist, Jewish, and
-  Indigenous spiritual traditions — all figures approximate to 2020-2021
-  [statcan-2021-census-ethno-religion][pew-religious-composition-2020]. The
-  Catholic/Protestant fault line within Christianity is historically significant
-  (French Catholic Quebec vs. British Protestant English Canada) but has
-  materially faded as a political cleavage since the Quiet Revolution. The
-  growing Muslim and Hindu communities are metropolitan and generationally
-  young, with no political organisation along religious lines. (b) LIVED
-  TEXTURE: Indigenous spiritual traditions (sweats, ceremonies, sacred sites)
-  are practised alongside or instead of Catholic/Christian affiliations formally
-  recorded in census data — the 2021 Indigenous profile records formal
-  affiliation but does not capture syncretic practice
-  [statcan-2021-indigenous-profile]. (c) POLITICAL SALIENCE: Low. Canada is a
-  secular state; no parallel religious authority structures political life;
-  faith-based mobilisation is marginal in federal electoral politics; religious
-  observance is high in immigrant communities but does not translate into bloc
-  political mobilisation at scale
-  [freedom-house-canada-2026][statcan-2021-census-ethno-religion].
-society_religion_fr: >-
-  NOTE SUR LES SOURCES ET BIAIS : La principale source pour la composition
-  religieuse du Canada est le carrefour thématique du recensement de 2021 sur la
-  diversité ethnoculturelle et religieuse (Statistique Canada)
-  [statcan-2021-census-ethno-religion]. Les estimations modélisées du Pew
-  Research Center pour 2020 fournissent une vérification croisée
-  [pew-religious-composition-2020]. Les deux sources convergent vers environ 53
-  % de chrétiens et 35 % de sans appartenance. Le recensement est autodéclaré et
-  volontaire pour la religion; il est connu pour sous-dénombrer les croyants
-  pratiquants dans certaines traditions non chrétiennes qui peuvent ne pas
-  reconnaître les étiquettes de catégories religieuses occidentales, et pour
-  surestimer les « chrétiens » parmi les adhérents culturels non pratiquants.
-  Les modèles Pew sont des estimations avec leurs propres intervalles de
-  confiance. (a) COMPOSITION : ~53 % chrétiens (catholiques environ 38 %,
-  protestants et autres chrétiens ~15 %); ~35 % sans affiliation religieuse; ~5
-  % musulmans; ~1,5 % hindous; les ~5 % restants comprennent les sikhs,
-  bouddhistes, juifs et traditions spirituelles autochtones — tous les chiffres
-  sont approximatifs pour 2020-2021
-  [statcan-2021-census-ethno-religion][pew-religious-composition-2020]. La ligne
-  de fracture catholique/protestante au sein du christianisme est historiquement
-  significative (Québec catholique français vs. Canada anglais protestant
-  britannique), mais a matériellement diminué en tant que clivage politique
-  depuis la Révolution tranquille. Les communautés musulmane et hindoue en
-  croissance sont métropolitaines et jeunes, sans organisation politique sur des
-  bases religieuses. (b) TEXTURE VÉCUE : Les traditions spirituelles autochtones
-  (cérémonies, sudatoires, sites sacrés) sont pratiquées parallèlement ou à la
-  place des affiliations catholiques/chrétiennes formellement enregistrées dans
-  les données du recensement — le profil autochtone de 2021 enregistre
-  l'affiliation formelle mais ne saisit pas la pratique syncrétique
-  [statcan-2021-indigenous-profile]. (c) SAILLANCE POLITIQUE : Faible. Le Canada
-  est un État laïc; aucune structure d'autorité religieuse parallèle ne
-  structure la vie politique; la mobilisation confessionnelle est marginale dans
-  la politique électorale fédérale; la pratique religieuse est élevée dans les
-  communautés immigrantes mais ne se traduit pas par une mobilisation politique
-  en bloc à grande échelle
-  [freedom-house-canada-2026][statcan-2021-census-ethno-religion].
-society_cohesion_en: >-
-  Citizen self-report data is the primary instrument here. Statistics Canada's
-  Canadian Social Survey Q4 2024 (November–December 2024) shows measurable
-  erosion in institutional confidence — confidence in the federal government,
-  courts, police, and media all recorded negative trends
-  [statcan-css-trust-institutions-q4-2024]. Interpersonal trust data from the
-  same survey cycle shows 43.5% of Canadians reported that most people can be
-  trusted in Q4 2024 [statcan-css-trust-others] — a moderate figure by
-  international standards that places Canada in the mid-range among OECD liberal
-  democracies. World Values Survey Wave 7 (Canada, fieldwork 2017-2022) provides
-  the underlying self-report microdata on trust, national identity, and
-  political values, confirming persistent social capital at the population level
-  but widening values polarisation between metropolitan and non-metropolitan
-  populations and between different generational cohorts [wvs-canada-wave7].
-  Canada scores 75/100 on Transparency International's CPI 2025 — an all-time
-  low — signalling that perceived institutional integrity is softening, which
-  reinforces the institutional trust erosion story [ti-cpi-2025]. The society's
-  self-conception remains strongly identified with pluralism, bilingualism, and
-  multicultural civic identity, but housing affordability stress, cost-of-living
-  pressures, and immigration-volume debates are introducing new strain on the
-  normative consensus
-  [statcan-css-trust-institutions-q4-2024][wvs-canada-wave7].
-society_cohesion_fr: >-
-  Les données autodéclarées des citoyens constituent ici l'instrument principal.
-  L'Enquête sociale canadienne (ESC) du T4 2024 de Statistique Canada
-  (novembre–décembre 2024) montre une érosion mesurable de la confiance
-  institutionnelle — la confiance envers le gouvernement fédéral, les tribunaux,
-  la police et les médias ont toutes enregistré des tendances négatives
-  [statcan-css-trust-institutions-q4-2024]. Les données sur la confiance
-  interpersonnelle du même cycle d'enquête montrent que 43,5 % des Canadiens
-  estimaient que la plupart des gens peuvent être fiables au T4 2024
-  [statcan-css-trust-others] — un chiffre modéré par rapport aux normes
-  internationales, qui place le Canada dans la moyenne des démocraties libérales
-  de l'OCDE. L'enquête mondiale sur les valeurs Vague 7 (Canada, terrain
-  2017-2022) fournit les microdonnées autodéclarées sur la confiance, l'identité
-  nationale et les valeurs politiques, confirmant un capital social persistant
-  au niveau de la population mais une polarisation croissante des valeurs entre
-  populations métropolitaines et non métropolitaines, et entre différentes
-  cohortes générationnelles [wvs-canada-wave7]. Le Canada obtient 75/100 à l'IPC
-  2025 de Transparency International — un creux historique — signalant que
-  l'intégrité institutionnelle perçue s'affaiblit, ce qui renforce le récit
-  d'érosion de la confiance institutionnelle [ti-cpi-2025]. L'auto-conception de
-  la société reste fortement identifiée au pluralisme, au bilinguisme et à
-  l'identité civique multiculturelle, mais le stress lié à l'abordabilité du
-  logement, les pressions liées au coût de la vie et les débats sur le volume
-  d'immigration introduisent de nouvelles tensions dans le consensus normatif
-  [statcan-css-trust-institutions-q4-2024][wvs-canada-wave7].
-security_internal_en: >-
-  Canada faces no active insurgency and no conventional armed threat to
-  territorial control. Organized crime — particularly transnational drug
-  trafficking (fentanyl supply chains), money laundering through real estate,
-  and gang activity in urban centres — is the primary public safety concern
-  managed by the RCMP and provincial police services
-  [freedom-house-canada-2026][dnd-departmental-results-2024-25]. Foreign
-  interference, particularly from China, India, and Russia, targeting diaspora
-  communities and electoral processes, has been a declared national security
-  concern as documented in parliamentary testimony and public CSIS annual
-  reports; Freedom House notes this as a challenge to political rights in its
-  2026 assessment [freedom-house-canada-2026]. Terrorism threat levels are
-  assessed as medium — no major attack in the assessed period; lone-actor and
-  ideologically motivated violence remain latent threats
-  [freedom-house-canada-2026]. The Canadian Armed Forces (CAF) number
-  approximately 68,000 regular force members; loyalty to civilian control is
-  unquestioned and institutionally embedded [dnd-departmental-results-2024-25].
-  NORAD modernization investment totals $38.6B over 20 years and Arctic
-  surveillance capacity is being expanded, with new radar networks and
-  icebreaker procurement as declared priorities
-  [dnd-departmental-results-2024-25]. The US–Canada border is the world's
-  longest undefended border; it remains operationally open with periodic
-  irregular migration pressure points, managed through bilateral law enforcement
-  cooperation rather than militarization [freedom-house-canada-2026].
-security_internal_fr: >-
-  Le Canada ne fait face à aucune insurrection active ni à aucune menace armée
-  conventionnelle contre son intégrité territoriale. La criminalité organisée —
-  notamment le trafic transnational de drogues (chaînes d'approvisionnement en
-  fentanyl), le blanchiment d'argent par l'immobilier et les activités de gangs
-  dans les centres urbains — est la principale préoccupation de sécurité
-  publique gérée par la GRC et les services de police provinciaux
-  [freedom-house-canada-2026][dnd-departmental-results-2024-25]. L'ingérence
-  étrangère, notamment de la Chine, de l'Inde et de la Russie, ciblant les
-  communautés diasporiques et les processus électoraux, a été une préoccupation
-  de sécurité nationale déclarée, documentée dans des témoignages parlementaires
-  et les rapports annuels publics du SCRS; Freedom House note ce défi aux droits
-  politiques dans son évaluation 2026 [freedom-house-canada-2026]. Les niveaux
-  de menace terroriste sont évalués comme moyens — aucune attaque majeure dans
-  la période évaluée; la violence perpétrée par des acteurs isolés et
-  idéologiquement motivés reste une menace latente [freedom-house-canada-2026].
-  Les Forces armées canadiennes (FAC) comptent environ 68 000 membres de la
-  force régulière; la loyauté envers le contrôle civil est incontestée et
-  institutionnellement ancrée [dnd-departmental-results-2024-25].
-  L'investissement dans la modernisation de NORAD totalise 38,6 G$ sur 20 ans et
-  la capacité de surveillance dans l'Arctique est en cours d'expansion, avec de
-  nouveaux réseaux radar et l'acquisition de brise-glaces comme priorités
-  déclarées [dnd-departmental-results-2024-25]. La frontière entre les
-  États-Unis et le Canada est la plus longue frontière non fortifiée du monde;
-  elle reste opérationnellement ouverte avec des points de pression périodiques
-  liés à la migration irrégulière, gérés par une coopération bilatérale des
-  forces de l'ordre plutôt que par une militarisation
-  [freedom-house-canada-2026].
-security_diplomacy_en: >-
-  Canada's treaty alliance architecture centres on NATO (founding member), NORAD
-  (bilateral defence with the US), and the Five Eyes intelligence-sharing
-  network [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada
-  activated an EU Security and Defence Partnership in early 2026, representing a
-  structural diversification of its security relationships beyond the US
-  bilateral frame [cgai-diplomats-guide-2026]. Key bilateral relationships: (1)
-  United States — the dominant partner on trade, defence, and border management,
-  currently under structural stress due to tariff disputes; (2) United Kingdom —
-  Five Eyes and Commonwealth partner; (3) European Union — CETA trade framework
-  and new security partnership; (4) China — transactional trade relationship
-  with elevated foreign interference and human rights tension; (5) Indo-Pacific
-  partners — CPTPP engagement with Japan, Australia, and others
-  [cgai-diplomats-guide-2026][gac-trade-diversification]. Regional flashpoints
-  relevant to Canada: Arctic sovereignty and resource access, where Canada
-  competes diplomatically with Russia and Denmark/Kingdom of Denmark (Greenland)
-  and increasingly with China's Arctic ambitions; and the Canada–US trade
-  dispute, which is the primary bilateral flashpoint in 2026
-  [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada holds
-  G7, G20, OECD, Commonwealth, and La Francophonie memberships, providing
-  multilateral influence beyond its military weight [cgai-diplomats-guide-2026].
-  The PBO's defence capital analysis confirms Canada's NATO 2% GDP commitment
-  pathway requires $322.9B in total DND capital spending over 20 years
-  [pbo-defence-capital-2025].
-security_diplomacy_fr: >-
-  L'architecture d'alliances conventionnelles du Canada est centrée sur l'OTAN
-  (membre fondateur), NORAD (défense bilatérale avec les États-Unis) et le
-  réseau de partage de renseignements Five Eyes
-  [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Canada a
-  activé un Partenariat de sécurité et de défense avec l'UE début 2026,
-  représentant une diversification structurelle de ses relations de sécurité
-  au-delà du cadre bilatéral états-unien [cgai-diplomats-guide-2026].
-  Principales relations bilatérales : (1) États-Unis — partenaire dominant en
-  matière de commerce, de défense et de gestion des frontières, actuellement
-  sous pression structurelle en raison des différends tarifaires; (2)
-  Royaume-Uni — partenaire Five Eyes et du Commonwealth; (3) Union européenne —
-  cadre commercial du CETA et nouveau partenariat de sécurité; (4) Chine —
-  relation commerciale transactionnelle avec des tensions élevées concernant
-  l'ingérence étrangère et les droits de la personne; (5) Partenaires
-  indo-pacifiques — engagement dans le PTPGP avec le Japon, l'Australie et
-  d'autres [cgai-diplomats-guide-2026][gac-trade-diversification]. Points de
-  friction régionaux pertinents pour le Canada : la souveraineté arctique et
-  l'accès aux ressources, où le Canada rivalise diplomatiquement avec la Russie
-  et le Danemark/Royaume du Danemark (Groenland) et de plus en plus avec les
-  ambitions arctiques de la Chine; et le différend commercial Canada–États-Unis,
-  qui est le principal point de friction bilatéral en 2026
-  [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Canada est
-  membre du G7, du G20, de l'OCDE, du Commonwealth et de la Francophonie, ce qui
-  lui confère une influence multilatérale au-delà de son poids militaire
-  [cgai-diplomats-guide-2026]. L'analyse des dépenses en capital de défense du
-  DPB confirme que la trajectoire d'engagement de 2 % du PIB du Canada envers
-  l'OTAN nécessite 322,9 G$ de dépenses en capital totales du MDN sur 20 ans
-  [pbo-defence-capital-2025].
+executiveSnapshot_en: |-
+  1. REGIME TYPE: Canada is a Westminster parliamentary democracy and constitutional monarchy; executive power derives from electoral competition in first-past-the-post (FPTP) single-member-constituency elections, with the Prime Minister holding power by commanding the confidence of the House of Commons [freedom-house-canada-2026][vdem-democracy-report-2026].
+  2. POLITICAL EQUILIBRIUM: The Liberal government under Prime Minister Mark Carney holds a working parliamentary majority as of 28 June 2026 (173 of 343 seats), reached after the April 2025 election minority via five floor crossings and a sweep of three April 2026 by-elections — a route the Conservative Official Opposition under Pierre Poilievre contests as illegitimate. The majority lets the government pass legislation without opposition support, shifting the operative constraint from inter-party bargaining to caucus discipline, though the margin is thin and narrowing (see Power Structure) [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
+  3. ECONOMIC MODEL: Canada is a high-income, trade-dependent mixed economy; dominant sectors are energy (oil & gas, hydroelectric), financial services, real estate, and manufacturing; total exports of goods and services reached $997B and imports exceeded $1T in 2024, with 75%+ of merchandise exports destined for the United States [gac-state-of-trade-2025][imf-can-2025-art4].
+  4. TOP 3 RISKS (6–18 months): (a) Permanent US tariff shock suppressing export revenue and investment; (b) Fiscal deterioration — The Parliamentary Budget Officer projects a $72B deficit (2.2% of GDP) in 2025-26 with US tariffs treated as permanent; (c) Inflationary resurgence — headline CPI rose to 3.2% y/y in May 2026 driven by gasoline (+33.2% y/y) [pbo-efo-jun2026][statcan-cpi-may2026][boc-mpr-apr2026].
+  5. TOP 3 WATCH ITEMS (4–12 weeks): (a) Bank of Canada July 2026 rate decision — policy rate held at 2.25% with inflation breaching the target band; (b) Canada–US tariff negotiation track and any CUSMA renegotiation signal; (c) Parliamentary confidence dynamics heading into a fall sitting [boc-mpr-apr2026][cgai-diplomats-guide-2026].
+  6. EXTERNAL DEPENDENCIES: The United States absorbs about 68% of Canadian merchandise exports as of early 2026, down from 75.9% in 2024 [statcan-12100011-ptp-exports]; much of that decline reflects volatile unwrought-gold shipments to the United Kingdom rather than durable diversification, and excluding gold the share remains in the low-70s (see Economy) [statcan-daily-imt-april-2026]. Canada's energy sector is export-critical with minimal pipeline diversification to tidewater; federal debt is largely domestically held but sensitive to global rate shifts; no International Monetary Fund program; no sanctions exposure [imf-can-2025-art4].
+  7. SECURITY POSTURE: Internal stability is high; no active insurgency. The Royal Canadian Mounted Police and the Canadian Security Intelligence Service actively police organized crime and terrorism at levels that don't threaten institutional stability, while foreign interference ( targeting diaspora communities and elections) is an escalating concern rather than a contained one; NORAD modernization ($38.6B over 20 years) is underway and Arctic sovereignty is a declared priority. [dnd-departmental-results-2024-25][freedom-house-canada-2026].
+  8. DIPLOMATIC ORIENTATION: Canada is a founding NATO member, Five Eyes partner, G7 participant, and OECD member; the EU Security and Defence Partnership was established at the June 2025 Canada–EU summit; CPTPP and CETA provide Indo-Pacific and European trade frameworks; the Canada Strong sovereign wealth fund ($25B) signals a turn toward strategic economic diplomacy [cgai-diplomats-guide-2026][gac-trade-diversification][pmo-canada-strong-fund-2026][seu-2026].
+  9. DATA CONFIDENCE: Economic and demographic sections are HIGH confidence: sourced from Statistics Canada, Bank of Canada, and IMF; political section is HIGH confidence: sourced from Freedom House and V-Dem; society cohesion section is MEDIUM confidence: self-report surveys have known undercount biases for marginalized communities; security section is MEDIUM confidence: DND operational data is partially disclosed [imf-can-2025-art4][statcan-gdp-q1-2026][freedom-house-canada-2026][dnd-departmental-results-2024-25].
+  10. BASELINE OUTLOOK: Canada enters H2 2026 with stagnant output, rising inflation, a majority government managing a tariff-induced fiscal squeeze, and strong institutional buffers that cap downside risk — the most likely path is slow-growth muddling through rather than crisis or acceleration [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026].
+executiveSnapshot_fr: |-
+  1. TYPE DE RÉGIME : Le Canada est une démocratie parlementaire de type Westminster et une monarchie constitutionnelle. Le pouvoir exécutif est acquis par la compétition électorale dans des circonscriptions uninominales à scrutin majoritaire à un tour; le premier ministre détenant le pouvoir dès lors qu'il dispose de la confiance de la Chambre des communes [freedom-house-canada-2026][vdem-democracy-report-2026].
+  2. ÉQUILIBRE POLITIQUE : Le gouvernement libéral dirigé par le premier ministre Mark Carney détient une majorité parlementaire fonctionnelle au 28 juin 2026 (173 sièges sur 343), atteinte après la minorité issue de l'élection d'avril 2025 grâce à cinq changements d'allégeance et aux trois élections partielles remportées en avril 2026; voie que l'Opposition officielle conservatrice dirigée par Pierre Poilievre dénonce comme illégitime. Cette majorité permet au gouvernement d'adopter des lois sans l'appui de l'opposition, déplaçant la contrainte opérationnelle de la négociation interpartis vers la discipline de caucus, bien que la marge soit mince et s'amenuise (voir Structure du pouvoir) [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
+  3. MODÈLE ÉCONOMIQUE : Le Canada est une économie mixte à revenu élevé et fortement tributaire du commerce extérieur; les secteurs dominants sont l'énergie (pétrole, gaz, hydroélectricité), les services financiers, l'immobilier et la fabrication; les exportations totales de biens et de services ont atteint 997 G$ et les importations ont dépassé 1 000 G$ en 2024, avec plus de 75 % des exportations de marchandises à destination des États-Unis [gac-state-of-trade-2025][imf-can-2025-art4].
+  4. TOP 3 DES RISQUES (6–18 mois) : (a) Choc tarifaire états-uniens permanent comprimant les recettes d'exportation et l'investissement; (b) Détérioration budgétaire : la directrice parlementaire du budget projette un déficit de 72 G$ (2,2 % du PIB) en 2025-2026 en supposant que les droits de douane imposés par les États-Unis sont permanents; (c) Résurgence inflationniste : l'IPC global a atteint 3,2 % en glissement annuel en mai 2026, porté par l'essence (+33,2 % en g.a.) [pbo-efo-jun2026][statcan-cpi-may2026][boc-mpr-apr2026].
+  5. TOP 3 À SURVEILLER (4–12 semaines) : (a) Décision de taux de la Banque du Canada en juillet 2026 : taux directeur maintenu à 2,25 % avec une inflation dépassant la cible; (b) Piste de négociation Canada–États-Unis sur les droits de douane et tout signal de renégociation de l'ACEUM; (c) Dynamique de confiance parlementaire à l'approche de la session d'automne [boc-mpr-apr2026][cgai-diplomats-guide-2026].
+  6. DÉPENDANCES EXTÉRIEURES : Les États-Unis ont absorbé environ 68 % des exportations de marchandises canadiennes au début de 2026, en recul par rapport à 75,9 % en 2024 [statcan-12100011-ptp-exports]; cette baisse reflète surtout des expéditions volatiles d'or brut vers le Royaume-Uni plutôt qu'une diversification durable, en excluant l'or la part se maintient dans le bas de la fourchette des 70 % (voir Économie) [statcan-daily-imt-april-2026]. Le secteur énergétique demeure central pour les exportations, avec une diversification limitée vers les ports en eaux profondes; la dette fédérale est essentiellement détenue au pays, mais sensible aux variations des taux mondiaux; aucun programme du Fonds monétaire international ni exposition à des sanctions [imf-can-2025-art4].
+  7. POSTURE DE SÉCURITÉ : La stabilité intérieure est élevée; aucune insurrection active. La Gendarmerie royale du Canada et le Service canadien du renseignement de sécurité contiennent le crime organisé et le terrorisme à des niveaux qui ne menacent pas la stabilité institutionnelle, tandis que l'ingérence étrangère (visant les communautés diasporiques et les élections) constitue une préoccupation croissante plutôt que contenue; la modernisation du NORAD (Commandement de la défense aérospatiale de l'Amérique du Nord) (38,6 G$ sur 20 ans) est en cours et la souveraineté dans l'Arctique est une priorité déclarée. [dnd-departmental-results-2024-25][freedom-house-canada-2026].
+  8. ORIENTATION DIPLOMATIQUE : Le Canada est membre fondateur de l'OTAN (Organisation du traité de l'Atlantique nord), partenaire des Five Eyes (ou Groupe des cinq), participant au G7 et membre de l'OCDE (Organisation de coopération et de développement économiques); le Partenariat de sécurité et de défense entre l’Union européenne et le Canada a été établi lors du sommet Canada‑UE de juin 2025; l’Accord de partenariat transpacifique global et progressiste (PTPGP) et l'Accord économique et commercial global (AECG) entre le Canada et l’Union européenne constituent des cadres commerciaux pour l'Indo-Pacifique et l'Europe; le fonds souverain Canada Fort (25 G$) marque un tournant vers une diplomatie économique stratégique [cgai-diplomats-guide-2026][gac-trade-diversification][pmo-canada-strong-fund-2026][seu-2026].
+  9. CONFIANCE DANS LES DONNÉES : Les sections économiques et démographiques sont de HAUTE fiabilité : tirées de Statistique Canada, de la Banque du Canada et du FMI; la section politique est de HAUTE fiabilité : tirée de Freedom House et de V-Dem; la section sur la cohésion sociale est de FIABILITÉ MOYENNE : les sondages déclaratifs présentent des biais de sous-dénombrement pour les communautés marginalisées; la section sécuritaire est de FIABILITÉ MOYENNE : les données opérationnelles du ministère de la Défense nationale sont partiellement divulguées [imf-can-2025-art4][statcan-gdp-q1-2026][freedom-house-canada-2026][dnd-departmental-results-2024-25].
+  10. PERSPECTIVES DE RÉFÉRENCE : Le Canada aborde le second semestre de 2026 avec une production stagnante, une inflation en hausse, un gouvernement majoritaire composant avec une contrainte budgétaire induite par les droits de douane imposés par les États-Unis, et de solides amortisseurs institutionnels qui limitent le risque de dégradation; le scénario le plus probable est une navigation à vue à croissance lente plutôt qu'une crise ou une accélération [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026].
+political_powerStructure_en: |-
+  Executive power formally rests with the Crown, exercised by the Prime Minister and Cabinet through the Privy Council. Prime Minister Mark Carney leads a Liberal majority government: the Liberals were returned with a minority at the 28 April 2025 general election (169 seats) and subsequently reached a majority through five floor crossings and a sweep of three by-elections on 13 April 2026 (their first majority since 2015). The route to that majority — the first time a Canadian prime minister has crossed the threshold partly through floor crossings rather than at an election — is contested by the Conservative Official Opposition as illegitimate; it nonetheless gives the government effective control of the Commons agenda.
+  The majority is real but thin and in motion. The Liberal count peaked at 174 seats in April and stood at 173 of 343 as of 28 June 2026 — a figure that includes the Speaker, Francis Scarpaleggia, who by convention votes only to break ties, leaving an operative voting bloc of 172 against 168 for the combined opposition, with two seats vacant. The single-seat slip from 174 followed Jonathan Wilkinson's June resignation to become ambassador to the European Union; his seat is one of the two vacancies. At least six further resignations are pending summer by-elections, which will draw the Liberals toward roughly 170 at the September sitting. On present numbers the government keeps its majority, but if the vacancies deepen the margin its ability to legislate without opposition support could come to rest on winning at least one by-election and on the Speaker's tie-breaking vote — a materially weaker position than the seat total alone suggests. [cbc-carney-majority-byelections-2026]. The bicameral Parliament consists of an elected House of Commons (343 seats since the 2025 redistribution) and an appointed Senate; the Supreme Court of Canada exercises judicial review with full independence and serves as the final court of appeal [freedom-house-canada-2026][wjp-canada-2025]. The Royal Canadian Mounted Police (RCMP) is civilian-directed under the Minister of Public Safety; the Canadian Armed Forces (CAF) are under civilian ministerial control via the Department of National Defence [dnd-departmental-results-2024-25]. Media independence is robust — Freedom House classifies Canada Free in 2026, noting independent broadcasters and print outlets with no direct state ownership of major private media [freedom-house-canada-2026]. Canada ranked 13th of 143 countries on the WJP Rule of Law Index 2025, reflecting strong scores on constraints on government powers and absence of corruption [wjp-canada-2025]. V-Dem classifies Canada as a Liberal Democracy ranked 23rd globally on the Liberal Democracy Index in the 2026 report [vdem-democracy-report-2026].
+political_powerStructure_fr: 'Le pouvoir exécutif appartient formellement à la Couronne et s''exerce par l''entremise du premier ministre et du Cabinet au sein du Conseil privé. Le premier ministre Mark Carney dirige un gouvernement libéral majoritaire : les libéraux ont été reportés au pouvoir avec une minorité lors de l''élection générale du 28 avril 2025 (169 sièges), puis ont atteint la majorité grâce à cinq changements d''allégeance et à la victoire dans les trois élections partielles du 13 avril 2026 (leur première majorité depuis 2015). La voie empruntée pour y parvenir — première fois qu''un premier ministre canadien franchit le seuil de la majorité en partie par des changements d''allégeance plutôt qu''au terme d''un scrutin — est dénoncée comme illégitime par l''Opposition officielle conservatrice; elle donne néanmoins au gouvernement le contrôle effectif de l''ordre du jour aux Communes. Cette majorité est réelle, mais mince et mouvante. Le caucus libéral a culminé à 174 sièges en avril et s''établissait à 173 sur 343 au 28 juin 2026; un chiffre qui inclut le Président de la Chambre, Francis Scarpaleggia, qui, par convention, ne vote qu''en cas d''égalité, ce qui ramène le bloc de vote effectif à 172 voix contre 168 pour l''opposition combinée, avec deux sièges vacants. Le recul d''un siège par rapport à 174 fait suite à la démission de Jonathan Wilkinson en juin pour devenir ambassadeur auprès de l''Union européenne; son siège est l''une des deux vacances. Au moins six autres démissions sont attendues et donneront lieu à des élections partielles au cours de l''été, ce qui ramènera les libéraux autour de 170 sièges à la rentrée parlementaire de septembre. Selon l''état actuel des chiffres, le gouvernement conserve sa majorité; mais si les vacances érodent davantage la marge, sa capacité à légiférer sans l''appui de l''opposition pourrait dépendre de la victoire dans au moins une élection partielle et du vote prépondérant du Président; position sensiblement plus fragile que ne le laisse croire le seul décompte des sièges [cbc-carney-majority-byelections-2026]. Le Parlement bicaméral comprend une Chambre des communes élue (343 sièges depuis le redécoupage de 2025) et un Sénat nommé; la Cour suprême du Canada exerce un contrôle judiciaire en toute indépendance et est le tribunal d''appel de dernier ressort [freedom-house-canada-2026][wjp-canada-2025]. La Gendarmerie royale du Canada (GRC) est sous direction civile et relève du ministre de la Sécurité publique; les Forces armées canadiennes (FAC) sont sous contrôle ministériel civil par l''intermédiaire du ministère de la Défense nationale [dnd-departmental-results-2024-25]. L''indépendance des médias est robuste : Freedom House classe le Canada comme Libre en 2026, notant des diffuseurs indépendants et des imprimés sans propriété d''État directe des grands médias privés [freedom-house-canada-2026]. Le Canada se classe 13e sur 143 pays dans l''Indice d''état de droit du WJP 2025, reflétant de bons résultats sur les contraintes aux pouvoirs gouvernementaux et l''absence de corruption [wjp-canada-2025]. V-Dem classe le Canada comme Démocratie libérale, 23e mondial sur l''Indice de démocratie libérale dans son rapport 2026 [vdem-democracy-report-2026].'
+political_stabilityDrivers_en: 'Legitimacy rests on procedural democratic foundations: regular, competitive, monitored elections; an independent judiciary; and constitutional protection of rights under the Charter [freedom-house-canada-2026][vdem-democracy-report-2026]. The Canadian Armed Forces maintain strong institutional loyalty to civilian control with no history of coup attempts; RCMP loyalty to constitutional order is embedded [dnd-departmental-results-2024-25]. The governing Liberal party now commands a working majority, removing the confidence-vote fragility that defined its first year and allowing it to pass legislation without opposition support; the binding constraint shifts from inter-party bargaining to internal discipline across an enlarged, ideologically broad caucus that now includes recent floor-crossers [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026]. Business elite alignment is conditional: the energy sector, financial services, and export manufacturers support macroeconomic stability but increasingly pressure the government on trade diversification, regulatory competitiveness, and US tariff response [imf-can-2025-art4][gac-trade-diversification]. Transparency International''s Corruption Perceptions Index 2025 ranks Canada 16th of 182, score 75/100 — its lowest-ever ranking, with the score unchanged from 2024 [ti-cpi-2025].'
+political_stabilityDrivers_fr: 'La légitimité repose sur des fondements démocratiques procéduraux : des élections régulières, compétitives et surveillées; un pouvoir judiciaire indépendant; et la protection constitutionnelle des droits par la Charte [freedom-house-canada-2026][vdem-democracy-report-2026]. Les Forces armées canadiennes maintiennent une solide loyauté institutionnelle envers le contrôle civil, sans antécédent de tentative de coup d''État; la loyauté de la GRC envers l''ordre constitutionnel est ancrée [dnd-departmental-results-2024-25]. Le Parti libéral au pouvoir dispose désormais d''une majorité fonctionnelle, ce qui élimine la fragilité des votes de confiance qui a marqué sa première année et lui permet d''adopter des lois sans l''appui de l''opposition; la contrainte déterminante passe de la négociation interpartis à la discipline interne de caucus élargi et idéologiquement hétérogène, qui compte désormais des élus ayant récemment changé d''allégeance [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026]. L''alignement des élites économiques est conditionnel : le secteur énergétique, les services financiers et les fabricants exportateurs soutiennent la stabilité macroéconomique, mais font pression de plus en plus sur le gouvernement concernant la diversification commerciale, la compétitivité réglementaire et la réponse aux droits de douane imposés par les États-Unis [imf-can-2025-art4][gac-trade-diversification]. L''indice de perception de la corruption 2025 de Transparency International classe le Canada au 16ᵉ rang sur 182, avec un score de 75/100 : son plus mauvais classement à ce jour, le score étant resté stable depuis 2024 [ti-cpi-2025].'
+political_shockAbsorbers_en: 'Canada''s institutional shock absorbers are substantial: federal transfers and employment insurance automatically cushion regional economic downturns; the Bank of Canada retains rate flexibility with the policy rate at 2.25% and room to cut if activity deteriorates further [boc-mpr-apr2026]; fiscal capacity exists to run elevated deficits (PBO projects $72B / 2.2% of GDP in 2025-26) without triggering a sovereign debt crisis given Canada''s AAA/AA+ credit profile and domestically held debt structure [pbo-efo-jun2026][imf-can-2025-art4]. On the acceleration side, the principal political vulnerability is no longer a confidence-vote collapse but the durability and legitimacy of the majority itself: it rests on a thin margin (173 of 343) and on floor crossings the opposition frames as illegitimate, so defections, further vacancies, or sustained legitimacy attacks could narrow the government''s freedom of action; and the TI CPI score of 75/100, in gradual decline since 2012, signals public-trust erosion that, if it accelerates, could compound that legitimacy strain [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026][ti-cpi-2025]. The combination of rising inflation (3.2% y/y in May 2026) and stagnant output — GDP flat in Q1 2026 after a Q4 2025 contraction — creates a stagflationary corridor where monetary policy tightening to fight inflation worsens fiscal and output stress simultaneously [statcan-gdp-q1-2026][statcan-cpi-may2026][boc-mpr-apr2026].'
+political_shockAbsorbers_fr: 'Les amortisseurs institutionnels du Canada sont substantiels : les transferts fédéraux et l''assurance-emploi atténuent automatiquement les ralentissements économiques régionaux; la Banque du Canada conserve une marge de manœuvre sur les taux avec un taux directeur à 2,25 % et la possibilité de le réduire si l''activité se dégrade davantage [boc-mpr-apr2026]; la capacité budgétaire permet de creuser des déficits élevés (le DPB projette 72 G$ / 2,2 % du PIB en 2025-2026) sans déclencher de crise de la dette souveraine, compte tenu du profil de crédit AAA/AA+ du Canada et de sa structure de dette à détention nationale [pbo-efo-jun2026][imf-can-2025-art4]. Du côté des accélérateurs d''instabilité, la principale vulnérabilité politique n''est plus l''effondrement d''un vote de confiance, mais la durabilité et la légitimité de la majorité elle-même : elle repose sur une marge mince (173 sur 343) et sur des changements d''allégeance que l''opposition qualifie d''illégitimes, de sorte que des défections, de nouvelles vacances ou des attaques soutenues contre sa légitimité pourraient restreindre la marge de manœuvre du gouvernement; et le score IPC de 75/100 de TI, en recul graduel depuis 2012, indique une érosion de la confiance publique qui, si elle s''accélère, pourrait aggraver cette tension de légitimité [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026][ti-cpi-2025]. La combinaison d''une inflation en hausse (3,2 % en g.a. en mai 2026) et d''une production stagnante  (PIB stable au T1 2026 après une contraction au T4 2025) crée un corridor stagflationniste où un resserrement de la politique monétaire pour combattre l''inflation aggraverait simultanément le stress budgétaire et la pression sur la production [statcan-gdp-q1-2026][statcan-cpi-may2026][boc-mpr-apr2026].'
+political_constitutionalSubstrate_en: 'Beneath current politics sits a plural constitutional-legal substrate that shapes what any government can do on land and resource questions, held distinct because the substrates are legally distinct. In Quebec, the James Bay and Northern Quebec Agreement (11 November 1975) is the country''s first modern comprehensive land-claim treaty, covering roughly 1 million km² — about 65% of Quebec — and signed by Canada, Quebec, Hydro-Québec, the Grand Council of the Crees, and the Northern Quebec Inuit Association; it has since been amended by 24 complementary agreements and extended by the Paix des Braves (7 February 2002) between Quebec and the Cree Nation, the Federal New Relationship Agreement (2008) with Canada, and the Agreement on Cree Nation Governance (2017) with its companion Cree Constitution [cngov-agreements]. In much of British Columbia, by contrast, most First Nations never signed a treaty with the Crown, and Aboriginal title is established territorially rather than by settlement: in Tsilhqot''in Nation v. British Columbia, 2014 SCC 44, the Supreme Court of Canada issued the first declaration of Aboriginal title in Canadian history over 1,750 km², holding that title is grounded in sufficient, continuous, and exclusive pre-sovereignty occupation extending to territory and not merely site-specific use, that Crown incursions on title land require consent or must meet the section 35 justification framework, and that the province had breached its duty to consult [canlii-tsilhqotin-2014][tsilhqotin-ng-rights-title]. These two substrates — historic-treaty / modern-agreement lineage in Quebec, unceded / title-litigated in much of British Columbia — are constitutional bedrock, distinct from current political contest, and gate what any resource, land-use, or infrastructure decision can lawfully do. Canada''s Indigenous population was 1.8 million or 5.0% of the total at the 2021 Census, comprising First Nations, Métis, and Inuit [statcan-2021-indigenous-profile].'
+political_constitutionalSubstrate_fr: 'Sous la politique courante repose un substrat constitutionnel et juridique pluriel qui encadre ce qu''un gouvernement peut faire en matière foncière et de ressources, tenu distinct parce que ces substrats sont juridiquement distincts. Au Québec, la Convention de la Baie-James et du Nord québécois (11 novembre 1975) est le premier traité moderne de revendication territoriale globale du pays, couvrant environ 1 million de km² — soit près de 65 % du Québec — et signé par le Canada, le Québec, Hydro-Québec, le Grand Conseil des Cris et l''Association des Inuits du Nord québécois; elle a depuis été modifiée par 24 conventions complémentaires et prolongée par la Paix des Braves (7 février 2002) entre le Québec et la Nation crie, l''Entente concernant une nouvelle relation (2008) avec le Canada, ainsi que l''Entente sur la gouvernance de la Nation crie (2017) et sa Constitution crie [cngov-agreements]. En Colombie-Britannique, à l''inverse, la plupart des Premières Nations n''ont jamais signé de traité avec la Couronne, et le titre ancestral s''établit territorialement plutôt que par entente : dans Nation Tsilhqot''in c. Colombie-Britannique, 2014 CSC 44, la Cour suprême du Canada a rendu la première déclaration de titre ancestral de l''histoire canadienne, sur 1 750 km², jugeant que le titre repose sur une occupation suffisante, continue et exclusive au moment de la souveraineté, qu''il s''étend au territoire et non seulement aux sites précis d''usage, que toute atteinte de la Couronne au titre requiert le consentement ou doit satisfaire au cadre de justification de l''article 35, et que la province avait manqué à son obligation de consulter [canlii-tsilhqotin-2014][tsilhqotin-ng-rights-title]. Ces deux substrats — filiation historique-traité / entente moderne au Québec, non cédé / titre en litige dans une grande partie de la Colombie-Britannique — sont des socles constitutionnels distincts de la lutte politique courante et encadrent ce que toute décision de ressources, d''aménagement ou d''infrastructure peut légalement faire. Au recensement de 2021, la population autochtone du Canada atteignait 1,8 million de personnes, soit 5,0 % du total, comprenant les Premières Nations, les Métis et les Inuits [statcan-2021-indigenous-profile].'
+economy_macroReality_en: 'Real GDP grew 1.7% in full-year 2025, before decelerating sharply: Q4 2025 contracted 0.6% (annualized) and Q1 2026 was flat (0.0% change) [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. The Bank of Canada projects 1.2% growth for full-year 2026; the PBO''s independent projection is 1.1% treating US tariffs as permanent; the OECD''s June 2026 forecast is also 1.2% in 2026 rising to 1.7% in 2027 [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026]. Inflation rose to 3.2% y/y in May 2026 — above the Bank of Canada''s 2% target — driven primarily by gasoline prices (+33.2% y/y) and food price acceleration; the BoC projects inflation easing back to 2% in 2027 [statcan-cpi-may2026][boc-mpr-apr2026]. The policy rate is held at 2.25% as of the April 2026 Monetary Policy Report, reflecting the tension between fighting above-target inflation and not exacerbating growth weakness [boc-mpr-apr2026]. The federal fiscal deficit is contested between government and watchdog: the Spring Economic Update 2026 projects $65.3B (1.9% of GDP) in FY2026-27; the PBO''s June 2026 figure for FY2025-26 is $72B (2.2% of GDP) [seu-2026][pbo-efo-jun2026]. Budget 2025 introduced an $81.8B defence spending commitment over five years and a $25B Canada Strong sovereign wealth fund [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. Labour market conditions improved in May 2026: employment rose 88,000 (+0.4%), unemployment rate fell to 6.6%, and the employment rate reached 60.7% [statcan-lfs-may2026]. The IMF''s January 2026 Article IV report assessed Canada''s medium-term fiscal and monetary fundamentals as sound, flagging US trade exposure as the primary structural vulnerability [imf-can-2025-art4].'
+economy_macroReality_fr: 'Le PIB réel a progressé de 1,7 % pour l''ensemble de l''année 2025, avant de ralentir fortement : le T4 2025 s''est contracté de 0,6 % (annualisé) et le T1 2026 est resté stable (variation de 0,0 %) [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. La Banque du Canada projette une croissance de 1,2 % pour l''année complète 2026; la projection indépendante du DPB est de 1,1 % en supposant que les droits de douane imposés par les États-Unis sont permanents; les prévisions de l''OCDE de juin 2026 sont également de 1,2 % en 2026, avec une progression à 1,7 % en 2027 [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026]. L''inflation a atteint 3,2 % en g.a. en mai 2026 — au-dessus de la cible de 2 % de la Banque du Canada — portée principalement par les prix de l''essence (+33,2 % en g.a.) et l''accélération des prix alimentaires; la BdC projette un retour de l''inflation à 2 % en 2027 [statcan-cpi-may2026][boc-mpr-apr2026]. Le taux directeur est maintenu à 2,25 % au Rapport sur la politique monétaire d''avril 2026, reflétant la tension entre la lutte contre une inflation supérieure à la cible et le fait de ne pas aggraver la faiblesse de la croissance [boc-mpr-apr2026]. Le déficit budgétaire fédéral est contesté entre le gouvernement et le chien de garde : la Mise à jour économique du printemps 2026 projette 65,3 G$ (1,9 % du PIB) pour l''exercice 2026-2027; le chiffre du DPB pour l''exercice 2025-2026 est de 72 G$ (2,2 % du PIB) [seu-2026][pbo-efo-jun2026]. Le budget 2025 a engagé 81,8 G$ en dépenses de défense sur cinq ans et un fonds souverain Canada Fort de 25 G$ [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. Les conditions du marché du travail se sont améliorées en mai 2026 : l''emploi a progressé de 88 000 (+0,4 %), le taux de chômage a reculé à 6,6 % et le taux d''emploi a atteint 60,7 % [statcan-lfs-may2026]. Le rapport Article IV du FMI de janvier 2026 a évalué comme sains les fondamentaux budgétaires et monétaires à moyen terme du Canada, signalant l''exposition commerciale aux États-Unis comme la principale vulnérabilité structurelle [imf-can-2025-art4].'
+economy_externalVulnerability_en: 'Canada''s export base is resource-intensive and geographically concentrated. Total goods exports reached $997B and imports exceeded $1T in 2024 [gac-state-of-trade-2025]. The United States is the dominant trade partner, absorbing approximately 75% of Canadian merchandise exports — energy, vehicles, machinery, and forest products are the top commodity groups [gac-state-of-trade-2025][un-comtrade-canada][statcan-international-trade]. April 2026 monthly total trade stood at $92.9B [statcan-international-trade]. This concentration creates acute tariff vulnerability: US tariff measures imposed in 2025-26 are treated by the PBO as permanent, directly driving the 2.2% of GDP deficit projection and 1.1% growth ceiling for 2026 [pbo-efo-jun2026]. Canada is pursuing trade diversification through 15 free trade agreements covering 51 countries, with the CPTPP (Indo-Pacific) and CETA (Europe) as the primary diversification levers [gac-trade-diversification]. No IMF program is in place; Canada is not subject to international sanctions. Sovereign debt is held predominantly by domestic institutional investors, limiting foreign creditor exposure, though global interest rate movements affect rollover costs [imf-can-2025-art4].'
+economy_externalVulnerability_fr: 'La base exportatrice du Canada est à forte intensité de ressources et géographiquement concentrée. Les exportations totales de marchandises ont atteint 997 G$ et les importations ont dépassé 1 000 G$ en 2024 [gac-state-of-trade-2025]. Les États-Unis sont le principal partenaire commercial, absorbant environ 75 % des exportations canadiennes de marchandises — énergie, véhicules, machines et produits forestiers constituent les principaux groupes de produits [gac-state-of-trade-2025][un-comtrade-canada][statcan-international-trade]. Le commerce mensuel total d''avril 2026 s''élevait à 92,9 G$ [statcan-international-trade]. Cette concentration crée une vulnérabilité tarifaire aiguë : droits de douane imposés par les États-Unis en 2025-2026 sont traitées par le DPB comme permanentes, pesant directement sur la projection de déficit à 2,2 % du PIB et le plafond de croissance de 1,1 % pour 2026 [pbo-efo-jun2026]. Le Canada poursuit la diversification de ses échanges grâce à 15 accords de libre-échange couvrant 51 pays, avec le PTPGP (Indo-Pacifique) et le CETA (Europe) comme principaux leviers de diversification [gac-trade-diversification]. Aucun programme du FMI n''est en vigueur; le Canada n''est pas soumis à des sanctions internationales. La dette souveraine est principalement détenue par des investisseurs institutionnels nationaux, ce qui limite l''exposition aux créanciers étrangers, bien que les mouvements des taux d''intérêt mondiaux affectent les coûts de refinancement [imf-can-2025-art4].'
+economy_politicalEconomy_en: 'The current economic model primarily benefits large energy producers, the financial services sector, and the real estate industry, all of which operate in markets with high barriers to entry and are aligned with macroeconomic stability. Resource-export rents are politically distributed through provincial equalization, sustaining regional elite coalitions in Alberta and Saskatchewan alongside the federal government [imf-can-2025-art4][gac-state-of-trade-2025]. Reforms that are technically necessary — productivity enhancement via business investment tax reform, labour market flexibility, housing supply deregulation, and pipeline-to-tidewater capacity — face political resistance from environmental, labour, and urban housing-price constituencies respectively [imf-can-2025-art4][oecd-eo-june2026]. Budget 2025 signalled a productivity agenda via a super-deduction and the Canada Strong sovereign wealth fund ($25B), but implementation depends on minority Parliament survival [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. Immigration-driven demand has sustained housing prices and consumer spending but is now contracting: the PBO''s February 2026 analysis projects that the 2026-2028 immigration levels plan — targeting 380,000 annual permanent residents — and reduction of the non-permanent resident (NPR) population to under 5% of the population by end-2027 will materially reduce population-driven demand [pbo-ircc-immigration-demographic].'
+economy_politicalEconomy_fr: 'Le modèle économique actuel profite principalement aux grands producteurs d''énergie, au secteur des services financiers et au secteur immobilier, qui opèrent tous dans des marchés à fortes barrières à l''entrée et sont alignés sur la stabilité macroéconomique. Les rentes d''exportation des ressources sont redistribuées politiquement par la péréquation provinciale, soutenant des coalitions d''élites régionales en Alberta et en Saskatchewan parallèlement au gouvernement fédéral [imf-can-2025-art4][gac-state-of-trade-2025]. Les réformes techniquement nécessaires — amélioration de la productivité par la réforme fiscale de l''investissement des entreprises, flexibilité du marché du travail, déréglementation de l''offre de logements et capacité de pipelines vers les eaux profondes — se heurtent à des résistances politiques de la part de groupes environnementaux, syndicaux et de défenseurs des prix immobiliers urbains respectivement [imf-can-2025-art4][oecd-eo-june2026]. Le budget 2025 a signalé un programme de productivité via une super-déduction et le fonds souverain Canada Fort (25 G$), mais la mise en œuvre dépend de la survie du Parlement minoritaire [budget-2025-canada-strong][pmo-canada-strong-fund-2026][seu-2026]. La demande portée par l''immigration a soutenu les prix immobiliers et la consommation, mais se contracte désormais : l''analyse du DPB de février 2026 projette que le plan des niveaux d''immigration 2026-2028 — ciblant 380 000 résidents permanents annuels — et la réduction de la population de résidents non permanents (RNP) à moins de 5 % de la population d''ici fin 2027 réduiront matériellement la demande portée par la population [pbo-ircc-immigration-demographic].'
+territory_geography_en: 'Canada occupies close to 10 million km² — the world''s second-largest country by area — inhabited by roughly 41.5 million people, a density near 4 per km² [statcan-pop-quarterly][statcan-2016-census-geography]. The spatial fact that governs almost everything else is that the population is not distributed across that territory: two of every three Canadians live within 100 km of the Canada–United States border, an area covering about 4% of the national land mass [statcan-2016-census-geography]. Population and economic activity concentrate in a narrow east–west band running from Windsor through Toronto, Montréal, and Québec City, with detached major centres in Winnipeg, Calgary, Edmonton, and Vancouver, while the North — the Yukon, Northwest Territories, Nunavut, and northern Quebec and Labrador — is home to a small fraction of the population across roughly 40% of the land. The internal-connectivity implication is structural: a single east–west transportation, transmission, and telecommunications spine must cover thousands of kilometres to link these clusters, while north–south flows to the United States are shorter than most inter-provincial ones. The border with the United States, at 8,891 km, is the world''s longest between two countries.'
+territory_geography_fr: 'Le Canada occupe près de 10 millions de km² — le deuxième pays du monde en superficie — pour une population d''environ 41,5 millions d''habitants, soit une densité proche de 4 au km² [statcan-pop-quarterly][statcan-2016-census-geography]. Le fait spatial qui gouverne presque tout le reste est que cette population n''est pas répartie sur ce territoire : deux Canadiens sur trois vivent à moins de 100 km de la frontière canado-américaine, sur une bande qui couvre environ 4 % de la superficie nationale [statcan-2016-census-geography]. La population et l''activité économique se concentrent dans un corridor est-ouest étroit allant de Windsor à Québec en passant par Toronto et Montréal, avec des pôles majeurs détachés à Winnipeg, Calgary, Edmonton et Vancouver, tandis que le Nord — Yukon, Territoires du Nord-Ouest, Nunavut et parties septentrionales du Québec et du Labrador — n''abrite qu''une faible fraction de la population sur environ 40 % du territoire. La conséquence sur la connectivité interne est structurelle : une colonne unique de transport, de transmission électrique et de télécommunications d''est en ouest doit couvrir des milliers de kilomètres pour relier ces grappes, tandis que les flux nord-sud vers les États-Unis sont plus courts que la plupart des liaisons interprovinciales. La frontière avec les États-Unis, longue de 8 891 km, est la plus longue au monde entre deux pays.'
+territory_minerals_en: 'Canada''s critical-mineral endowment covers the full list on which it has chosen to concentrate policy: the federal Critical Minerals List, first released in 2021 and updated in 2024, identifies 34 minerals and metals, with the 2024 revision adding high-purity iron ore, phosphorus, and silicon metal to the original 31 [nrcan-critical-minerals-list]. Canada is among the top five global producers of 10 of these — potash, niobium, uranium, palladium, tellurium, indium, aluminum, platinum, titanium, and nickel — and has the potential to produce all 34 [nrcan-cm-strategy-annual-2024]. Reserve and production figures across commodities are compiled by the U.S. Geological Survey as the standard international estimating body in its annual Mineral Commodity Summaries, with country specialists for Canada [usgs-mcs-2026]. Endowment is distributed geographically: British Columbia produces copper, molybdenum, zinc, and magnesium with 13 additional critical minerals in development; the Prairies hold potash and uranium; Quebec and Ontario carry nickel, iron, and processing capacity; the North holds diamonds and further mineral potential [nrcan-cm-strategy-annual-2024]. Critical-mineral exploration spending reached $1.9 billion in 2023, up 7% year-on-year and representing 48% of all Canadian mineral exploration [nrcan-cm-strategy-annual-2024]. What the ground holds is distinct from what the sector currently extracts, values, and exports; a substantial share of the 34-mineral endowment is undeveloped or at the advanced-project stage.'
+territory_minerals_fr: 'La dotation du Canada en minéraux critiques couvre l''ensemble de la liste sur laquelle il a choisi de concentrer sa politique : la Liste canadienne des minéraux critiques, publiée pour la première fois en 2021 et mise à jour en 2024, recense 34 minéraux et métaux, la révision de 2024 ayant ajouté le minerai de fer de haute pureté, le phosphore et le silicium métal à la liste initiale de 31 [nrcan-critical-minerals-list]. Le Canada figure parmi les cinq premiers producteurs mondiaux de 10 d''entre eux — potasse, niobium, uranium, palladium, tellure, indium, aluminium, platine, titane et nickel — et a le potentiel de produire les 34 [nrcan-cm-strategy-annual-2024]. Les chiffres de réserves et de production sont compilés par le Service géologique des États-Unis (USGS), organisme international de référence pour l''estimation des réserves, dans son Mineral Commodity Summaries annuel, avec des spécialistes-pays pour le Canada [usgs-mcs-2026]. La dotation est distribuée géographiquement : la Colombie-Britannique produit du cuivre, du molybdène, du zinc et du magnésium, avec 13 autres minéraux critiques en développement; les Prairies détiennent la potasse et l''uranium; le Québec et l''Ontario portent le nickel, le fer et la capacité de traitement; le Nord recèle des diamants et un potentiel minéral supplémentaire [nrcan-cm-strategy-annual-2024]. Les dépenses d''exploration en minéraux critiques ont atteint 1,9 milliard de dollars en 2023, en hausse de 7 % sur un an et représentant 48 % de l''ensemble de l''exploration minérale canadienne [nrcan-cm-strategy-annual-2024]. Ce que contient le sol est distinct de ce que le secteur extrait, valorise et exporte actuellement; une part substantielle de la dotation en 34 minéraux est non exploitée ou au stade de projet avancé.'
+territory_biosphere_en: Canada's biological base is one of the largest national endowments in the world. Forests cover 369 million hectares, close to 9% of the world's total forest area, of which 225 million hectares are classified as managed forest [nrcan-sof-2025]. Deforestation over the last 34 years has affected less than half of one percent of the national forest area [nrcan-sof-2025]. The country's rivers discharge close to 7% of the world's renewable water [energy-factbook-spring-2026]. Under climate pressure, the biological base's trend is not uniformly stable. The 2024 revision of the National Inventory Report — incorporating updated historical harvest data and enhanced forest-carbon accounting — shows that Canada's managed forest / land-use, land-use change and forestry sector has become a net source of emissions in all years of the time series, totalling 51 megatonnes of CO₂ equivalent in 2022 [eccc-ghg-2024-overview]. The 2025 State of Canada's Forests annual report documents 11.6 million hectares of forest affected by insects in 2023 (an 11.4% decrease from 2022) and cites Canadian Climate Institute modelling estimating annual climate-related economic losses of $25 billion in 2025 rising to a range of $78 billion (low-emissions path, IPCC RCP 2.6-consistent) to $101 billion (high-emissions path) per year by 2050 [nrcan-sof-2025].
+territory_biosphere_fr: La base biologique du Canada figure parmi les plus grandes dotations nationales au monde. Les forêts couvrent 369 millions d'hectares, près de 9 % de la superficie forestière mondiale, dont 225 millions d'hectares sont classés forêt aménagée [nrcan-sof-2025]. La déforestation cumulée sur les 34 dernières années n'a touché que moins d'un demi pour cent de la superficie forestière nationale [nrcan-sof-2025]. Les rivières du pays déchargent près de 7 % des eaux renouvelables mondiales [energy-factbook-spring-2026]. Sous la pression climatique, la tendance de cette base biologique n'est pas uniformément stable. La révision de 2024 du Rapport d'inventaire national — qui intègre des données historiques mises à jour sur la récolte et une comptabilité carbone forestière renforcée — montre que le secteur forêt aménagée / affectation des terres, changement d'affectation et foresterie du Canada est devenu une source nette d'émissions pour toutes les années de la série chronologique, totalisant 51 mégatonnes de CO₂ équivalent en 2022 [eccc-ghg-2024-overview]. Le rapport annuel L'état des forêts au Canada 2025 documente 11,6 millions d'hectares de forêts touchées par les insectes en 2023 (une baisse de 11,4 % par rapport à 2022) et cite la modélisation de l'Institut climatique du Canada estimant les pertes économiques annuelles liées au climat à 25 milliards de dollars en 2025, s'élevant à une fourchette de 78 milliards (scénario à faibles émissions, compatible RCP 2.6 du GIEC) à 101 milliards (scénario à fortes émissions) par an d'ici 2050 [nrcan-sof-2025].
+territory_climate_en: 'Canada''s climate is warming at roughly twice the global average rate, with northern Canada warming at more than double the global rate; the Government of Canada''s Canada''s Changing Climate Report headline finding is that this rate differential is virtually certain and effectively irreversible, with the ultimate magnitude of warming determined by cumulative global emissions [cccr-2019-headline]. Canada''s mean annual temperature has risen by about 1.7 °C over the 1948–2016 period [cccr-2019-headline]; 2024 tied 2010 as the country''s warmest year on record at 3.1 °C above the 1961–1990 reference, with seven of the ten warmest years occurring in the last two decades [eccc-temperature-indicator]. Exposure is unevenly distributed by geography, with hazards concentrating regionally. Wildfire and drought risk concentrate in the boreal and Prairies (2023 was the country''s worst wildfire season and 2025 the second worst, spanning New Brunswick, British Columbia, Yukon, Northwest Territories, the Prairies, and northwestern Ontario) [eccc-temperature-indicator]. Permafrost thaw affects roughly the northern half of the landmass, disrupting infrastructure and Indigenous community access in Nunavut, Northwest Territories, Yukon, Nunavik, and northern parts of every province from Manitoba east; sea-level rise concerns the Atlantic and Arctic coasts and, in delta form, the Fraser lowlands; flood risk concentrates in urbanised river basins including the Fraser, the Red, the St. Lawrence, and the Ottawa. Adaptive capacity is unequally distributed against these exposures: federal fiscal capacity exists to fund large adaptation investments, but delivery runs through provincial, municipal, and Indigenous-community jurisdictions whose per-capita fiscal room varies widely. The Canadian Climate Institute estimates annual climate-related damages of $25 billion in 2025 rising to $78–$101 billion per year by 2050 depending on emissions pathway [nrcan-sof-2025], while the National Inventory Report records the observed emissions trajectory against which those scenarios were built [eccc-nir-2026-summary].'
+territory_climate_fr: 'Le climat du Canada se réchauffe à environ le double du rythme moyen mondial, le nord du pays se réchauffant à plus du double; la conclusion principale du Rapport sur le climat changeant du Canada du gouvernement du Canada est que ce différentiel de rythme est pratiquement certain et effectivement irréversible, l''ampleur ultime du réchauffement étant déterminée par les émissions mondiales cumulées [cccr-2019-headline]. La température annuelle moyenne au Canada a augmenté d''environ 1,7 °C sur la période 1948-2016 [cccr-2019-headline]; 2024 a égalé 2010 comme année la plus chaude jamais enregistrée au pays, à 3,1 °C au-dessus de la période de référence 1961-1990, sept des dix années les plus chaudes se situant dans les deux dernières décennies [eccc-temperature-indicator]. L''exposition est inégalement distribuée selon la géographie, les aléas se concentrant régionalement. Les risques de feux de forêt et de sécheresse se concentrent dans la forêt boréale et les Prairies (2023 a été la pire saison de feux du pays et 2025 la deuxième pire, touchant le Nouveau-Brunswick, la Colombie-Britannique, le Yukon, les Territoires du Nord-Ouest, les Prairies et le nord-ouest de l''Ontario) [eccc-temperature-indicator]. Le dégel du pergélisol affecte environ la moitié nord du territoire, perturbant les infrastructures et l''accès aux communautés autochtones au Nunavut, dans les Territoires du Nord-Ouest, au Yukon, au Nunavik et dans les parties nord de toutes les provinces du Manitoba vers l''est; l''élévation du niveau de la mer concerne les côtes atlantique et arctique et, sous forme deltaïque, les basses terres du Fraser; les risques d''inondation se concentrent dans les bassins fluviaux urbanisés, y compris ceux du Fraser, de la rivière Rouge, du Saint-Laurent et de l''Outaouais. La capacité d''adaptation est inégalement distribuée face à ces expositions : la capacité fiscale fédérale existe pour financer d''importants investissements d''adaptation, mais la mise en œuvre passe par des compétences provinciales, municipales et autochtones dont la marge de manœuvre budgétaire par habitant varie largement. L''Institut climatique du Canada estime les dommages annuels liés au climat à 25 milliards de dollars en 2025, s''élevant à 78-101 milliards par an d''ici 2050 selon la trajectoire d''émissions [nrcan-sof-2025], tandis que le Rapport d''inventaire national consigne la trajectoire d''émissions observée sur laquelle ces scénarios ont été construits [eccc-nir-2026-summary].'
+territory_metabolism_en: 'Canada''s physical energy system is anchored by hydroelectricity and a small population against a large endowment. The country produced 623 terawatt-hours of electricity in 2024, with 65% from renewable sources and 78% from non-greenhouse-gas-emitting sources (hydro, nuclear, wind, solar); it is the world''s third-largest producer of hydroelectricity, and holds the fourth-largest proven oil reserves and third-largest uranium reserves [energy-factbook-spring-2026]. Provincial generation mixes are highly differentiated: British Columbia, Manitoba, Quebec, and Newfoundland and Labrador generate over 85% of their electricity from hydro; Yukon over 70%; Prince Edward Island 99% from wind. Ontario and New Brunswick run mixed portfolios that include nuclear. Alberta, Saskatchewan, Nova Scotia, and Nunavut generate most of their electricity from fossil fuels — natural gas, coal, or petroleum [cer-canada-energy-profile]. Crude oil production was 5.1 million barrels per day in 2023, up 41% since 2013 with almost all the growth from the oil sands, ranking Canada the fourth-largest global producer; natural gas production reached 17.9 Bcf/d [cer-canada-energy-profile]. Crude exports of 4.0 MMb/d in 2023 flowed almost entirely to the United States. The east–west grid is fragmented: most inter-provincial transmission is limited compared to the north–south lines that connect Canadian generation to United States markets. Food is largely self-sufficient in staples (grains, oilseeds, potash-fertilised crops, meat), with imports concentrated in fresh fruit and vegetables during winter. The physical throughput picture is a system heavily hydro-electrified in some provinces, fossil-fuel-based in others, integrated south more than east–west, and dependent on a small population using very large per-capita quantities of energy over long distances.'
+territory_metabolism_fr: 'Le système énergétique physique du Canada s''appuie sur l''hydroélectricité et sur une petite population face à une vaste dotation. Le pays a produit 623 térawattheures d''électricité en 2024, dont 65 % de sources renouvelables et 78 % de sources non émettrices de gaz à effet de serre (hydro, nucléaire, éolien, solaire); il est le troisième producteur mondial d''hydroélectricité et détient les quatrièmes plus grandes réserves prouvées de pétrole et les troisièmes plus grandes réserves d''uranium au monde [energy-factbook-spring-2026]. Les bouquets provinciaux de production sont fortement différenciés : la Colombie-Britannique, le Manitoba, le Québec et Terre-Neuve-et-Labrador produisent plus de 85 % de leur électricité à partir de l''hydraulique; le Yukon plus de 70 %; l''Île-du-Prince-Édouard 99 % à partir de l''éolien. L''Ontario et le Nouveau-Brunswick exploitent des portefeuilles mixtes intégrant le nucléaire. L''Alberta, la Saskatchewan, la Nouvelle-Écosse et le Nunavut produisent la majeure partie de leur électricité à partir de combustibles fossiles — gaz naturel, charbon ou pétrole [cer-canada-energy-profile]. La production de pétrole brut s''est établie à 5,1 millions de barils par jour en 2023, en hausse de 41 % depuis 2013, la quasi-totalité de la croissance provenant des sables bitumineux, ce qui classe le Canada au quatrième rang des producteurs mondiaux; la production de gaz naturel a atteint 17,9 Gpi³/j [cer-canada-energy-profile]. Les exportations de brut, de 4,0 Mb/j en 2023, se sont dirigées presque en totalité vers les États-Unis. Le réseau électrique est-ouest est fragmenté : la plupart des lignes de transmission interprovinciales sont limitées comparativement aux lignes nord-sud qui relient la production canadienne aux marchés américains. L''alimentation est largement autosuffisante en produits de base (céréales, oléagineux, cultures fertilisées à la potasse, viande), les importations se concentrant sur les fruits et légumes frais durant l''hiver. Le portrait physique du débit énergétique est celui d''un système fortement hydroélectrifié dans certaines provinces, fossile dans d''autres, davantage intégré vers le sud qu''est-ouest, et dépendant d''une petite population utilisant de très grandes quantités d''énergie par habitant sur de longues distances.'
+territory_transition_en: 'Canada''s greenhouse-gas emissions were 685 megatonnes of CO₂ equivalent in 2024 (excluding land use, land-use change and forestry), a decrease of 78 Mt (−10%) from 2005 and 2.2 Mt (−0.3%) from revised 2023 emissions [eccc-nir-2026-summary]. Sectoral shares in 2024: oil and gas 208 Mt (30% of the total), transport 151 Mt (22%), heavy industry, buildings, agriculture 70 Mt (10%), and electricity 50 Mt (7.2%); electricity emissions have fallen 57% since 2005 following the phase-out of coal, while oil and gas emissions peaked at 230 Mt in 2014 and are now 208 Mt [eccc-nir-2026-summary]. Methane emissions reached their lowest recorded level in 2024 at 105 Mt CO₂e, down 31% from 2005 [eccc-nir-2026-summary]. Canada''s targets, enshrined in the Canadian Net-Zero Emissions Accountability Act, are 40–45% below 2005 by 2030, 45–50% below 2005 by 2035, and net-zero by 2050 [eccc-nir-2026-summary]. Climate Action Tracker rates Canada''s policies and action as "Highly Insufficient," its second-worst category, projecting 2030 emissions of 645–647 Mt (about 15% below 2005) against a 2030 target of 426–484 Mt and the 381 Mt level Climate Action Tracker identifies as compatible with 1.5 °C; Climate Action Tracker rates Canada''s domestic 2030 target as "Almost Sufficient" and its fair-share contribution as "Insufficient" [cat-canada-2026]. Climate Action Tracker also notes that Canada''s final Clean Electricity Regulations, adopted in the last policy cycle, moved the timeline for a net-zero electricity grid from 2035 to 2050, and that the 2026 zero-emissions-vehicle sales target has been paused pending a policy review [cat-canada-2026].'
+territory_transition_fr: 'Les émissions de gaz à effet de serre du Canada se sont établies à 685 mégatonnes d''équivalent CO₂ en 2024 (hors affectation des terres, changement d''affectation et foresterie), en baisse de 78 Mt (-10 %) par rapport à 2005 et de 2,2 Mt (-0,3 %) par rapport aux émissions révisées de 2023 [eccc-nir-2026-summary]. Parts sectorielles en 2024 : pétrole et gaz 208 Mt (30 % du total), transport 151 Mt (22 %), industrie lourde, bâtiments et agriculture 70 Mt (10 %), et électricité 50 Mt (7,2 %); les émissions de l''électricité ont chuté de 57 % depuis 2005 à la suite de l''abandon progressif du charbon, tandis que les émissions du pétrole et du gaz ont culminé à 230 Mt en 2014 et s''établissent maintenant à 208 Mt [eccc-nir-2026-summary]. Les émissions de méthane ont atteint leur plus bas niveau enregistré en 2024, à 105 Mt éq. CO₂, en baisse de 31 % depuis 2005 [eccc-nir-2026-summary]. Les cibles du Canada, inscrites dans la Loi canadienne sur la responsabilité en matière de carboneutralité, sont de 40 à 45 % sous le niveau de 2005 d''ici 2030, de 45 à 50 % sous le niveau de 2005 d''ici 2035, et la carboneutralité d''ici 2050 [eccc-nir-2026-summary]. Climate Action Tracker classe les politiques et actions du Canada comme « Hautement insuffisantes » (« Highly Insufficient »), son deuxième plus faible rang, projetant des émissions de 645-647 Mt en 2030 (soit environ 15 % sous 2005) contre une cible 2030 de 426-484 Mt et un niveau de 381 Mt que Climate Action Tracker identifie comme compatible avec 1,5 °C; Climate Action Tracker classe la cible nationale 2030 du Canada comme « Presque suffisante » (« Almost Sufficient ») et sa contribution en juste part comme « Insuffisante » (« Insufficient ») [cat-canada-2026]. Climate Action Tracker note également que le Règlement fédéral sur l''électricité propre, adopté au cycle politique précédent, a repoussé de 2035 à 2050 l''échéance visée pour un réseau électrique carboneutre, et que la cible 2026 de ventes de véhicules zéro émission est suspendue en attendant une révision politique [cat-canada-2026].'
+capacity_permitting_en: Canada's federal permitting and impact-assessment regime has been the acknowledged binding constraint on major project delivery, and the government's own assessment identifies the impact-assessment phase — not the regulatory-permitting phase — as the key gating step [dwpv-bill-c5-analysis]. The Building Canada Act, enacted in Part 2 of the One Canadian Economy Act (Bill C-5) which received royal assent on 26 June 2025, is designed to consolidate approvals for designated national-interest projects into a single ministerial conditions document and to reduce federal decision timelines from prior baselines cited at approximately five years to a target of two years [pco-bill-c5-implementation][dwpv-bill-c5-analysis]. A Major Projects Office, with an Indigenous Advisory Council, coordinates the process on a "one project, one review" basis with willing provinces [pco-bill-c5-implementation]. A first set of projects was referred for consideration in September 2025 — including LNG Canada Phase 2, the Darlington New Nuclear Project, the Wind West Atlantic Energy project, the Pathways Plus carbon capture and storage project, an Arctic economic and security corridor, upgrades to the Port of Churchill, and the Alto high-speed rail corridor. The Act carries a five-year sunset clause for new designations, requires the responsible Minister to consult with Indigenous peoples whose section 35 rights may be adversely affected, and has drawn opposition from the Assembly of First Nations and multiple regional First Nations on procedural and rights grounds. The demonstrated record of the two-year target, and whether the delivery bottleneck moves from federal impact assessment to provincial regulatory or Indigenous-consent processes, will be observable only from 2026 onward.
+capacity_permitting_fr: Le régime fédéral canadien d'évaluation d'impact et d'octroi d'autorisations est reconnu comme la contrainte structurelle sur la mise en œuvre des grands projets, et l'évaluation du gouvernement lui-même identifie la phase d'évaluation d'impact — et non celle des autorisations réglementaires — comme l'étape déterminante [dwpv-bill-c5-analysis]. La Loi sur la réalisation de projets d'intérêt national (« Building Canada Act »), édictée à la partie 2 de la Loi sur une économie canadienne unifiée (projet de loi C-5) sanctionnée le 26 juin 2025, vise à regrouper les approbations des projets désignés d'intérêt national dans un document unique de conditions ministérielles et à réduire les délais fédéraux de décision, cités auparavant à environ cinq ans, à une cible de deux ans [pco-bill-c5-implementation][dwpv-bill-c5-analysis]. Un Bureau des grands projets, doté d'un Conseil consultatif autochtone, coordonne le processus selon le principe « un projet, un examen » avec les provinces qui le souhaitent [pco-bill-c5-implementation]. Une première série de projets a été soumise à l'examen en septembre 2025 — notamment LNG Canada phase 2, le projet nucléaire de Darlington, le projet Wind West Atlantic Energy, le projet de captage et stockage du carbone Pathways Plus, un corridor économique et de sécurité arctique, la modernisation du port de Churchill et le corridor ferroviaire à grande vitesse Alto. La Loi comporte une clause d'extinction de cinq ans pour les nouvelles désignations, exige que le ministre responsable consulte les peuples autochtones dont les droits en vertu de l'article 35 pourraient être touchés défavorablement, et a soulevé l'opposition de l'Assemblée des Premières Nations et de plusieurs Premières Nations régionales sur les plans procédural et des droits. Le bilan démontré de la cible de deux ans, et la question de savoir si le goulet d'étranglement de la mise en œuvre se déplacera de l'évaluation d'impact fédérale vers les processus réglementaires provinciaux ou de consentement autochtone, ne pourra être observé qu'à partir de 2026.
+capacity_delivery_en: 'Delivery capacity is the state''s realised record of executing infrastructure at scale, distinct from its stated intent. Budget 2025 commits $81.8 billion over five years for defence, doubles the Indigenous Loan Guarantee Program from $5 billion to $10 billion to enable Indigenous equity participation in major projects, and establishes a Productivity Super-Deduction and a $25 billion Canada Strong sovereign wealth vehicle among a broader infrastructure and housing agenda [budget-2025-canada-strong]. The IMF''s 2025 Article IV Consultation identifies raising competitiveness and productivity — through stronger competition, more agile regulation, and deeper internal-market integration — as Canada''s central medium-term challenge, citing weak business dynamism, slow capital deepening, and lagging innovation [imf-can-2025-art4]. Investment in electricity infrastructure has moved substantially: capital expenditures on power plants reached $11.8 billion in 2024, up 32% from 2018, with 83% directed at non-emitting sources; hydroelectric investment alone accounted for 38% of that total. The delivery test facing the federal state through the current cycle is whether the newly-consolidated Major Projects Office pipeline (see `capacity.permitting`), the Indigenous Loan Guarantee Program expansion, and the Budget 2025 vehicles translate the stated 2-year approval timeline and the announced capital commitments into observable schedule and cost performance on the referred projects — a record not yet in evidence.'
+capacity_delivery_fr: 'La capacité de mise en œuvre correspond au bilan réel de l''État en matière de réalisation d''infrastructures à grande échelle, distinct de l''intention affichée. Le Budget 2025 engage 81,8 milliards de dollars sur cinq ans pour la défense, double le Programme de garantie de prêts pour les Autochtones de 5 à 10 milliards de dollars afin de permettre la participation autochtone en capitaux propres aux grands projets, et met en place une superdéduction pour la productivité ainsi qu''un instrument souverain « Canada Strong » de 25 milliards de dollars, dans le cadre d''un programme plus large d''infrastructures et de logement [budget-2025-canada-strong]. La Consultation de l''article IV 2025 du FMI identifie le renforcement de la compétitivité et de la productivité — par une concurrence accrue, une réglementation plus agile et une intégration plus poussée du marché intérieur — comme le défi central du Canada à moyen terme, invoquant un dynamisme d''affaires faible, un approfondissement du capital lent et une innovation à la traîne [imf-can-2025-art4]. L''investissement dans les infrastructures d''électricité a progressé de façon substantielle : les dépenses en immobilisations dans les centrales ont atteint 11,8 milliards de dollars en 2024, en hausse de 32 % depuis 2018, dont 83 % vers des sources non émettrices; l''investissement hydroélectrique représente à lui seul 38 % de ce total. Le test de mise en œuvre auquel l''État fédéral fait face dans le cycle actuel consiste à savoir si le pipeline de projets nouvellement consolidé du Bureau des grands projets (voir `capacity.permitting`), l''élargissement du Programme de garantie de prêts pour les Autochtones et les instruments du Budget 2025 traduiront la cible affichée d''approbation en deux ans et les engagements en capital annoncés en performances observables de calendrier et de coûts sur les projets soumis — un bilan qui n''est pas encore établi.'
+capacity_productivity_en: 'Productivity has been Canada''s central medium-term economic challenge across the last decade, distinct from headline GDP growth and directly consequential for real wages. Statistics Canada''s May 2026 analytical review documents weak Canadian labour-productivity growth broadly across the 2014–2024 period, and identifies industries dependent on United States export demand as concentrating the country''s most productive jobs and therefore the exposure to tariff-driven disruption [statcan-productivity-us-2026]. The IMF''s 2025 Article IV Consultation identifies the same weakness as structural, driven by weak business dynamism, slow capital deepening, high concentration in key service sectors, and barriers to firm scaling, and calls the reform bundle to address it Canada''s highest-return set of policies [imf-can-2025-art4]. Internal / interprovincial trade barriers are quantified by IMF economists Federico J. Díez and Yuanchen Yang, with Trevor Tombe contributing, as equivalent to about a 9% national tariff on non-geographic policy-related barriers, rising to up to 50% in health-care, education, and retail services; full elimination of these barriers could raise real GDP by up to 7% over time — roughly $210 billion in 2025 dollars — with services liberalisation accounting for approximately 90% of that gain [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. Part 1 of the One Canadian Economy Act (the Free Trade and Labour Mobility in Canada Act) received royal assent on 26 June 2025 as the federal response, and provincial mutual-recognition agreements advanced through 2025; the December 2025 interprovincial agreement covered many goods but largely exempted services, where the IMF locates most of the potential gain [imf-country-focus-internal-trade-2026]. Value-add processing built domestically versus raw material exported for others to process is a structural sub-question inside productivity: Canada is among the top five global producers of 10 of its 34 critical minerals but has not built out the corresponding domestic processing and refining capacity at scale — a gap explicitly targeted by the current critical-minerals strategy [nrcan-cm-strategy-annual-2024].'
+capacity_productivity_fr: 'La productivité est le défi économique central du Canada à moyen terme depuis une décennie, distinct de la croissance du PIB en gros chiffres et directement conséquent pour les salaires réels. La revue analytique de Statistique Canada de mai 2026 documente une faible croissance de la productivité du travail canadienne sur l''ensemble de la période 2014-2024 et identifie les industries dépendantes de la demande à l''exportation vers les États-Unis comme concentrant les emplois les plus productifs du pays — et donc l''exposition aux perturbations liées aux tarifs [statcan-productivity-us-2026]. La Consultation de l''article IV 2025 du FMI identifie la même faiblesse comme structurelle, tirée par un dynamisme d''affaires faible, un approfondissement lent du capital, une forte concentration dans des secteurs de services clés et des obstacles à la mise à l''échelle des entreprises, et qualifie le train de réformes visant à y remédier comme l''ensemble de politiques à plus haut rendement pour le Canada [imf-can-2025-art4]. Les obstacles au commerce intérieur / interprovincial sont chiffrés par les économistes du FMI Federico J. Díez et Yuanchen Yang, avec la contribution de Trevor Tombe, comme équivalents à un tarif national d''environ 9 % sur les obstacles non géographiques d''origine réglementaire, s''élevant jusqu''à 50 % dans les services de santé, d''éducation et de commerce de détail; l''élimination complète de ces obstacles pourrait accroître le PIB réel de jusqu''à 7 % au fil du temps — environ 210 milliards de dollars en dollars de 2025 — la libéralisation des services représentant environ 90 % de ce gain [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. La partie 1 de la Loi sur une économie canadienne unifiée (Loi sur le libre-échange et la mobilité de la main-d''œuvre au Canada) a été sanctionnée le 26 juin 2025 comme réponse fédérale, et les ententes provinciales de reconnaissance mutuelle ont progressé en 2025; l''entente interprovinciale de décembre 2025 a couvert de nombreux biens mais exempté largement les services, secteur où le FMI situe la majeure partie du gain potentiel [imf-country-focus-internal-trade-2026]. La transformation à valeur ajoutée effectuée au pays par opposition à la matière première exportée pour être traitée ailleurs constitue une sous-question structurelle au sein de la productivité : le Canada figure parmi les cinq premiers producteurs mondiaux de 10 de ses 34 minéraux critiques mais n''a pas bâti la capacité correspondante de traitement et de raffinage au pays à grande échelle — un écart explicitement ciblé par la stratégie actuelle des minéraux critiques [nrcan-cm-strategy-annual-2024].'
+society_demographics_en: 'Canada''s population stood at 41,651,653 on July 1, 2025 [statcan-pop-age-jul2025], declining to 41,472,081 by Q1 2026 — the first annual population decline in Canadian history, driven by the government''s policy-driven reduction of non-permanent residents [statcan-pop-quarterly][pbo-ircc-immigration-demographic]. This reversal follows a decade of immigration-fuelled growth and signals a structural demographic inflection point. Long-range projections show Canada reaching 57.4M under a moderate scenario by 2075, but outcomes depend heavily on immigration policy continuity [statcan-pop-projections-2026]. Canada is an aging society: the median age trend is upward and dependency ratios are increasing as Baby Boomers exit the labour force, placing pressure on pension and health-care systems [statcan-pop-age-jul2025]. Urban concentration is high — the majority of the population is concentrated in the Greater Toronto Area, Montréal, Vancouver, and Calgary census metropolitan areas. Internal migration flows toward energy-producing provinces (Alberta) and away from high-cost cities remain a structural dynamic. The NPR population reduction plan targets fewer than 5% of total population as non-permanent residents by end-2027 [pbo-ircc-immigration-demographic].'
+society_demographics_fr: 'La population du Canada s''élevait à 41 651 653 personnes le 1er juillet 2025 [statcan-pop-age-jul2025], pour diminuer à 41 472 081 au T1 2026 — première baisse annuelle de la population dans l''histoire canadienne, liée à la réduction des résidents non permanents par la politique gouvernementale [statcan-pop-quarterly][pbo-ircc-immigration-demographic]. Ce renversement fait suite à une décennie de croissance alimentée par l''immigration et signale un point d''inflexion démographique structurel. Les projections à long terme montrent que le Canada pourrait atteindre 57,4 M d''habitants dans un scénario modéré d''ici 2075, mais les résultats dépendent fortement de la continuité de la politique d''immigration [statcan-pop-projections-2026]. Le Canada est une société vieillissante : la tendance à la hausse de l''âge médian et l''augmentation des ratios de dépendance, à mesure que les baby-boomers quittent le marché du travail, exercent des pressions sur les systèmes de retraite et de soins de santé [statcan-pop-age-jul2025]. La concentration urbaine est élevée — la majorité de la population est concentrée dans les régions métropolitaines de recensement du Grand Toronto, de Montréal, de Vancouver et de Calgary. Les flux de migration interne vers les provinces productrices d''énergie (Alberta) et au départ des grandes villes à coût élevé restent une dynamique structurelle. Le plan de réduction de la population des RNP vise moins de 5 % de la population totale comme résidents non permanents d''ici fin 2027 [pbo-ircc-immigration-demographic].'
+society_composition_en: 'Canada''s society is ethnically diverse and officially bilingual. The 2021 Census shows English as the first official language spoken by 75.5% of the population and French by 21.4% [statcan-2021-census-language]. The census recorded 5.0% of the population identifying as Indigenous (First Nations, Métis, and Inuit) — approximately 1.8 million persons [statcan-2021-indigenous-profile]. Ethnocultural diversity is accelerating through immigration, with visible minority populations concentrated in major metropolitan areas [statcan-2021-census-ethno-religion]. The principal fault-line geometry is as follows: the English/French linguistic cleavage runs roughly along provincial lines (Quebec vs. rest-of-Canada) and is reinforced by distinct legal traditions (civil law in Quebec, common law elsewhere), distinct cultural institutions, and periodic sovereignty debates. The Indigenous/non-Indigenous cleavage is separate in geography (reserve communities vs. urban centres), governance demands (inherent rights, treaties), and socioeconomic outcomes. These two major cleavages are CROSS-CUTTING with respect to each other — Francophone Quebecers and Anglophone Canadians do not line up predictably on Indigenous issues; nor does the Indigenous population align with either linguistic bloc — which structurally diffuses rather than compounds inter-group tension. Ethnocultural immigrant communities add further cross-cutting diversity within both linguistic groups [statcan-2021-census-language][statcan-2021-indigenous-profile][statcan-2021-census-ethno-religion].'
+society_composition_fr: 'La société canadienne est ethniquement diversifiée et officiellement bilingue. Le recensement de 2021 montre que l''anglais est la première langue officielle parlée par 75,5 % de la population et le français par 21,4 % [statcan-2021-census-language]. Le recensement a recensé 5,0 % de la population s''identifiant comme autochtone (Premières Nations, Métis et Inuit) — environ 1,8 million de personnes [statcan-2021-indigenous-profile]. La diversité ethnoculturelle s''accélère grâce à l''immigration, avec des populations de minorités visibles concentrées dans les grandes zones métropolitaines [statcan-2021-census-ethno-religion]. La géométrie des principales lignes de fracture est la suivante : le clivage linguistique anglais/français s''étend approximativement le long des frontières provinciales (Québec contre reste du Canada) et est renforcé par des traditions juridiques distinctes (droit civil au Québec, common law ailleurs), des institutions culturelles distinctes et des débats périodiques sur la souveraineté. Le clivage autochtone/non-autochtone est distinct sur le plan géographique (communautés de réserves vs. centres urbains), des revendications de gouvernance (droits inhérents, traités) et des résultats socioéconomiques. Ces deux principaux clivages sont ENTRECROISÉS l''un par rapport à l''autre — les Québécois francophones et les Canadiens anglophones ne s''alignent pas de manière prévisible sur les questions autochtones; la population autochtone ne s''aligne non plus avec l''un ou l''autre des blocs linguistiques — ce qui diffuse structurellement plutôt qu''amplifie les tensions intergroupes. Les communautés d''immigrants ethnoculturels ajoutent une diversité entrecroisée supplémentaire au sein des deux groupes linguistiques [statcan-2021-census-language][statcan-2021-indigenous-profile][statcan-2021-census-ethno-religion].'
+society_religion_en: 'SOURCE AND BIAS NOTE: The primary source for Canadian religious composition is the 2021 Census ethnocultural and religious diversity hub (Statistics Canada) [statcan-2021-census-ethno-religion]. Pew Research Center''s 2020 modelled estimates provide a cross-check [pew-religious-composition-2020]. Both sources converge on approximately 53% Christian and 35% non-affiliated. The census is self-declared and voluntary for religion; it is known to undercount practising believers in some non-Christian traditions who may not recognize Western religious category labels, and to overcount ''Christian'' among cultural but non-practising adherents. Pew models are modelled estimates with their own confidence intervals. (a) COMPOSITION: ~53% Christian (Catholic approximately 38%, Protestant and other Christian ~15%); ~35% no religious affiliation; ~5% Muslim; ~1.5% Hindu; remaining ~5% includes Sikh, Buddhist, Jewish, and Indigenous spiritual traditions — all figures approximate to 2020-2021 [statcan-2021-census-ethno-religion][pew-religious-composition-2020]. The Catholic/Protestant fault line within Christianity is historically significant (French Catholic Quebec vs. British Protestant English Canada) but has materially faded as a political cleavage since the Quiet Revolution. The growing Muslim and Hindu communities are metropolitan and generationally young, with no political organisation along religious lines. (b) LIVED TEXTURE: Indigenous spiritual traditions (sweats, ceremonies, sacred sites) are practised alongside or instead of Catholic/Christian affiliations formally recorded in census data — the 2021 Indigenous profile records formal affiliation but does not capture syncretic practice [statcan-2021-indigenous-profile]. (c) POLITICAL SALIENCE: Low. Canada is a secular state; no parallel religious authority structures political life; faith-based mobilisation is marginal in federal electoral politics; religious observance is high in immigrant communities but does not translate into bloc political mobilisation at scale [freedom-house-canada-2026][statcan-2021-census-ethno-religion].'
+society_religion_fr: 'NOTE SUR LES SOURCES ET BIAIS : La principale source pour la composition religieuse du Canada est le carrefour thématique du recensement de 2021 sur la diversité ethnoculturelle et religieuse (Statistique Canada) [statcan-2021-census-ethno-religion]. Les estimations modélisées du Pew Research Center pour 2020 fournissent une vérification croisée [pew-religious-composition-2020]. Les deux sources convergent vers environ 53 % de chrétiens et 35 % de sans appartenance. Le recensement est autodéclaré et volontaire pour la religion; il est connu pour sous-dénombrer les croyants pratiquants dans certaines traditions non chrétiennes qui peuvent ne pas reconnaître les étiquettes de catégories religieuses occidentales, et pour surestimer les « chrétiens » parmi les adhérents culturels non pratiquants. Les modèles Pew sont des estimations avec leurs propres intervalles de confiance. (a) COMPOSITION : ~53 % chrétiens (catholiques environ 38 %, protestants et autres chrétiens ~15 %); ~35 % sans affiliation religieuse; ~5 % musulmans; ~1,5 % hindous; les ~5 % restants comprennent les sikhs, bouddhistes, juifs et traditions spirituelles autochtones — tous les chiffres sont approximatifs pour 2020-2021 [statcan-2021-census-ethno-religion][pew-religious-composition-2020]. La ligne de fracture catholique/protestante au sein du christianisme est historiquement significative (Québec catholique français vs. Canada anglais protestant britannique), mais a matériellement diminué en tant que clivage politique depuis la Révolution tranquille. Les communautés musulmane et hindoue en croissance sont métropolitaines et jeunes, sans organisation politique sur des bases religieuses. (b) TEXTURE VÉCUE : Les traditions spirituelles autochtones (cérémonies, sudatoires, sites sacrés) sont pratiquées parallèlement ou à la place des affiliations catholiques/chrétiennes formellement enregistrées dans les données du recensement — le profil autochtone de 2021 enregistre l''affiliation formelle mais ne saisit pas la pratique syncrétique [statcan-2021-indigenous-profile]. (c) SAILLANCE POLITIQUE : Faible. Le Canada est un État laïc; aucune structure d''autorité religieuse parallèle ne structure la vie politique; la mobilisation confessionnelle est marginale dans la politique électorale fédérale; la pratique religieuse est élevée dans les communautés immigrantes mais ne se traduit pas par une mobilisation politique en bloc à grande échelle [freedom-house-canada-2026][statcan-2021-census-ethno-religion].'
+society_cohesion_en: Citizen self-report data is the primary instrument here. Statistics Canada's Canadian Social Survey Q4 2024 (November–December 2024) shows measurable erosion in institutional confidence — confidence in the federal government, courts, police, and media all recorded negative trends [statcan-css-trust-institutions-q4-2024]. Interpersonal trust data from the same survey cycle shows 43.5% of Canadians reported that most people can be trusted in Q4 2024 [statcan-css-trust-others] — a moderate figure by international standards that places Canada in the mid-range among OECD liberal democracies. World Values Survey Wave 7 (Canada, fieldwork 2017-2022) provides the underlying self-report microdata on trust, national identity, and political values, confirming persistent social capital at the population level but widening values polarisation between metropolitan and non-metropolitan populations and between different generational cohorts [wvs-canada-wave7]. Canada scores 75/100 on Transparency International's CPI 2025 — an all-time low — signalling that perceived institutional integrity is softening, which reinforces the institutional trust erosion story [ti-cpi-2025]. The society's self-conception remains strongly identified with pluralism, bilingualism, and multicultural civic identity, but housing affordability stress, cost-of-living pressures, and immigration-volume debates are introducing new strain on the normative consensus [statcan-css-trust-institutions-q4-2024][wvs-canada-wave7].
+society_cohesion_fr: Les données autodéclarées des citoyens constituent ici l'instrument principal. L'Enquête sociale canadienne (ESC) du T4 2024 de Statistique Canada (novembre–décembre 2024) montre une érosion mesurable de la confiance institutionnelle — la confiance envers le gouvernement fédéral, les tribunaux, la police et les médias ont toutes enregistré des tendances négatives [statcan-css-trust-institutions-q4-2024]. Les données sur la confiance interpersonnelle du même cycle d'enquête montrent que 43,5 % des Canadiens estimaient que la plupart des gens peuvent être fiables au T4 2024 [statcan-css-trust-others] — un chiffre modéré par rapport aux normes internationales, qui place le Canada dans la moyenne des démocraties libérales de l'OCDE. L'enquête mondiale sur les valeurs Vague 7 (Canada, terrain 2017-2022) fournit les microdonnées autodéclarées sur la confiance, l'identité nationale et les valeurs politiques, confirmant un capital social persistant au niveau de la population mais une polarisation croissante des valeurs entre populations métropolitaines et non métropolitaines, et entre différentes cohortes générationnelles [wvs-canada-wave7]. Le Canada obtient 75/100 à l'IPC 2025 de Transparency International — un creux historique — signalant que l'intégrité institutionnelle perçue s'affaiblit, ce qui renforce le récit d'érosion de la confiance institutionnelle [ti-cpi-2025]. L'auto-conception de la société reste fortement identifiée au pluralisme, au bilinguisme et à l'identité civique multiculturelle, mais le stress lié à l'abordabilité du logement, les pressions liées au coût de la vie et les débats sur le volume d'immigration introduisent de nouvelles tensions dans le consensus normatif [statcan-css-trust-institutions-q4-2024][wvs-canada-wave7].
+security_internal_en: Canada faces no active insurgency and no conventional armed threat to territorial control. Organized crime — particularly transnational drug trafficking (fentanyl supply chains), money laundering through real estate, and gang activity in urban centres — is the primary public safety concern managed by the RCMP and provincial police services [freedom-house-canada-2026][dnd-departmental-results-2024-25]. Foreign interference, particularly from China, India, and Russia, targeting diaspora communities and electoral processes, has been a declared national security concern as documented in parliamentary testimony and public CSIS annual reports; Freedom House notes this as a challenge to political rights in its 2026 assessment [freedom-house-canada-2026]. Terrorism threat levels are assessed as medium — no major attack in the assessed period; lone-actor and ideologically motivated violence remain latent threats [freedom-house-canada-2026]. The Canadian Armed Forces (CAF) number approximately 68,000 regular force members; loyalty to civilian control is unquestioned and institutionally embedded [dnd-departmental-results-2024-25]. NORAD modernization investment totals $38.6B over 20 years and Arctic surveillance capacity is being expanded, with new radar networks and icebreaker procurement as declared priorities [dnd-departmental-results-2024-25]. The US–Canada border is the world's longest undefended border; it remains operationally open with periodic irregular migration pressure points, managed through bilateral law enforcement cooperation rather than militarization [freedom-house-canada-2026].
+security_internal_fr: Le Canada ne fait face à aucune insurrection active ni à aucune menace armée conventionnelle contre son intégrité territoriale. La criminalité organisée — notamment le trafic transnational de drogues (chaînes d'approvisionnement en fentanyl), le blanchiment d'argent par l'immobilier et les activités de gangs dans les centres urbains — est la principale préoccupation de sécurité publique gérée par la GRC et les services de police provinciaux [freedom-house-canada-2026][dnd-departmental-results-2024-25]. L'ingérence étrangère, notamment de la Chine, de l'Inde et de la Russie, ciblant les communautés diasporiques et les processus électoraux, a été une préoccupation de sécurité nationale déclarée, documentée dans des témoignages parlementaires et les rapports annuels publics du SCRS; Freedom House note ce défi aux droits politiques dans son évaluation 2026 [freedom-house-canada-2026]. Les niveaux de menace terroriste sont évalués comme moyens — aucune attaque majeure dans la période évaluée; la violence perpétrée par des acteurs isolés et idéologiquement motivés reste une menace latente [freedom-house-canada-2026]. Les Forces armées canadiennes (FAC) comptent environ 68 000 membres de la force régulière; la loyauté envers le contrôle civil est incontestée et institutionnellement ancrée [dnd-departmental-results-2024-25]. L'investissement dans la modernisation de NORAD totalise 38,6 G$ sur 20 ans et la capacité de surveillance dans l'Arctique est en cours d'expansion, avec de nouveaux réseaux radar et l'acquisition de brise-glaces comme priorités déclarées [dnd-departmental-results-2024-25]. La frontière entre les États-Unis et le Canada est la plus longue frontière non fortifiée du monde; elle reste opérationnellement ouverte avec des points de pression périodiques liés à la migration irrégulière, gérés par une coopération bilatérale des forces de l'ordre plutôt que par une militarisation [freedom-house-canada-2026].
+security_diplomacy_en: 'Canada''s treaty alliance architecture centres on NATO (founding member), NORAD (bilateral defence with the US), and the Five Eyes intelligence-sharing network [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada activated an EU Security and Defence Partnership in early 2026, representing a structural diversification of its security relationships beyond the US bilateral frame [cgai-diplomats-guide-2026]. Key bilateral relationships: (1) United States — the dominant partner on trade, defence, and border management, currently under structural stress due to tariff disputes; (2) United Kingdom — Five Eyes and Commonwealth partner; (3) European Union — CETA trade framework and new security partnership; (4) China — transactional trade relationship with elevated foreign interference and human rights tension; (5) Indo-Pacific partners — CPTPP engagement with Japan, Australia, and others [cgai-diplomats-guide-2026][gac-trade-diversification]. Regional flashpoints relevant to Canada: Arctic sovereignty and resource access, where Canada competes diplomatically with Russia and Denmark/Kingdom of Denmark (Greenland) and increasingly with China''s Arctic ambitions; and the Canada–US trade dispute, which is the primary bilateral flashpoint in 2026 [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada holds G7, G20, OECD, Commonwealth, and La Francophonie memberships, providing multilateral influence beyond its military weight [cgai-diplomats-guide-2026]. The PBO''s defence capital analysis confirms Canada''s NATO 2% GDP commitment pathway requires $322.9B in total DND capital spending over 20 years [pbo-defence-capital-2025].'
+security_diplomacy_fr: 'L''architecture d''alliances conventionnelles du Canada est centrée sur l''OTAN (membre fondateur), NORAD (défense bilatérale avec les États-Unis) et le réseau de partage de renseignements Five Eyes [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Canada a activé un Partenariat de sécurité et de défense avec l''UE début 2026, représentant une diversification structurelle de ses relations de sécurité au-delà du cadre bilatéral états-unien [cgai-diplomats-guide-2026]. Principales relations bilatérales : (1) États-Unis — partenaire dominant en matière de commerce, de défense et de gestion des frontières, actuellement sous pression structurelle en raison des différends tarifaires; (2) Royaume-Uni — partenaire Five Eyes et du Commonwealth; (3) Union européenne — cadre commercial du CETA et nouveau partenariat de sécurité; (4) Chine — relation commerciale transactionnelle avec des tensions élevées concernant l''ingérence étrangère et les droits de la personne; (5) Partenaires indo-pacifiques — engagement dans le PTPGP avec le Japon, l''Australie et d''autres [cgai-diplomats-guide-2026][gac-trade-diversification]. Points de friction régionaux pertinents pour le Canada : la souveraineté arctique et l''accès aux ressources, où le Canada rivalise diplomatiquement avec la Russie et le Danemark/Royaume du Danemark (Groenland) et de plus en plus avec les ambitions arctiques de la Chine; et le différend commercial Canada–États-Unis, qui est le principal point de friction bilatéral en 2026 [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Canada est membre du G7, du G20, de l''OCDE, du Commonwealth et de la Francophonie, ce qui lui confère une influence multilatérale au-delà de son poids militaire [cgai-diplomats-guide-2026]. L''analyse des dépenses en capital de défense du DPB confirme que la trajectoire d''engagement de 2 % du PIB du Canada envers l''OTAN nécessite 322,9 G$ de dépenses en capital totales du MDN sur 20 ans [pbo-defence-capital-2025].'
 actors_domestic_en: |-
   [
     {
@@ -1577,6 +842,228 @@ sources: |-
       "descFr": "Communiqué du Cabinet du premier ministre (27 avril 2026) annonçant le Fonds pour un Canada fort, un fonds souverain national de 25 G$ — un véhicule plus large et distinct du Fonds souverain pour les minéraux critiques, plus restreint, que le budget 2025 s'était limité à proposer.",
       "publicationDate": "2026-04-27",
       "accessDate": "2026-07-06",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "usgs-mcs-2026",
+      "name": "U.S. Geological Survey – Mineral Commodity Summaries 2026",
+      "nameFr": "Service géologique des États-Unis (USGS) — Mineral Commodity Summaries 2026",
+      "url": "https://pubs.usgs.gov/publication/mcs2026",
+      "desc": "Annual USGS compendium of world production, reserves, and resources for 90+ mineral commodities (2025 data), the standard estimating body for reserve figures including Canada's.",
+      "descFr": "Compendium annuel de l'USGS sur la production mondiale, les réserves et les ressources de plus de 90 substances minérales (données 2025), l'organisme d'estimation de référence pour les chiffres de réserves, y compris ceux du Canada.",
+      "publicationDate": "2026-02-06",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "nrcan-critical-minerals-list",
+      "name": "Government of Canada – Critical Minerals: An Opportunity for Canada",
+      "nameFr": "Gouvernement du Canada — Les minéraux critiques : une opportunité pour le Canada",
+      "url": "https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html",
+      "desc": "Official page for Canada's Critical Minerals List: 34 minerals, first released 2021, updated 2024 (adding high-purity iron ore, phosphorus, silicon metal); value-chain framing and project locations in every province/territory except PEI.",
+      "descFr": "Page officielle de la Liste canadienne des minéraux critiques : 34 minéraux, première publication en 2021, mise à jour en 2024 (ajout du minerai de fer de haute pureté, du phosphore et du silicium métal); cadrage par chaînes de valeur et projets dans chaque province et territoire sauf l'Île-du-Prince-Édouard.",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "nrcan-cm-strategy-annual-2024",
+      "name": "Natural Resources Canada – Canadian Critical Minerals Strategy Annual Report 2024",
+      "nameFr": "Ressources naturelles Canada — Rapport annuel 2024 de la Stratégie canadienne sur les minéraux critiques",
+      "url": "https://www.canada.ca/en/campaign/critical-minerals-in-canada/canadas-critical-minerals-strategy/canadian-critical-minerals-strategy-annual-report-2024.html",
+      "desc": "Official annual report: Canada ranks among top 5 producers of 10 critical minerals (potash, niobium, uranium, palladium, tellurium, indium, aluminum, platinum, titanium, nickel); $1.9B critical-mineral exploration spending in 2023; permitting-improvement initiatives.",
+      "descFr": "Rapport annuel officiel : le Canada figure parmi les cinq premiers producteurs mondiaux de 10 minéraux critiques (potasse, niobium, uranium, palladium, tellure, indium, aluminium, platine, titane, nickel); 1,9 G$ de dépenses d'exploration en minéraux critiques en 2023; initiatives d'amélioration des processus d'autorisation.",
+      "publicationDate": "2024-12-01",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "cccr-2019-headline",
+      "name": "Canada's Changing Climate Report – Headline Statements (Government of Canada national assessment)",
+      "nameFr": "Rapport sur le climat changeant du Canada — Principaux constats (évaluation nationale du gouvernement du Canada)",
+      "url": "https://changingclimate.ca/CCCR2019/chapter/headline-statements/",
+      "desc": "The national climate-science assessment's headline findings: Canada warms on average about double the global rate and northern Canada more than double; mean temperature rose ~1.7°C over 1948–2016; warming is effectively irreversible and scale depends on emissions pathway.",
+      "descFr": "Principaux constats de l'évaluation scientifique nationale du climat : le Canada se réchauffe en moyenne environ deux fois plus vite que le monde, et le nord du Canada plus de deux fois plus vite; la température moyenne a augmenté d'environ 1,7 °C sur 1948-2016; le réchauffement est effectivement irréversible et son ampleur dépend de la trajectoire d'émissions.",
+      "publicationDate": "2019-04-02",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "eccc-temperature-indicator",
+      "name": "Environment and Climate Change Canada – Temperature Change in Canada (CESI indicator)",
+      "nameFr": "Environnement et Changement climatique Canada — Changement de température au Canada (indicateur ICDE)",
+      "url": "https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/temperature-change.html",
+      "desc": "Live official indicator: 2024 tied 2010 as Canada's warmest year on record at 3.1°C above the 1961–1990 reference; 7 of the 10 warmest years in the last 20; Canadian warming roughly twice the global average rate.",
+      "descFr": "Indicateur officiel en direct : 2024 a égalé 2010 comme année la plus chaude jamais enregistrée au Canada, à 3,1 °C au-dessus de la référence 1961-1990; 7 des 10 années les plus chaudes dans les 20 dernières années; réchauffement canadien environ deux fois le rythme moyen mondial.",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "eccc-nir-2026-summary",
+      "name": "Environment and Climate Change Canada – Greenhouse Gas Sources and Sinks in Canada: Executive Summary 2026 (National Inventory Report 1990–2024)",
+      "nameFr": "Environnement et Changement climatique Canada — Sources et puits de gaz à effet de serre au Canada : sommaire 2026 (Rapport d'inventaire national 1990-2024)",
+      "url": "https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions/sources-sinks-executive-summary-2026.html",
+      "desc": "Official UNFCCC inventory: 2024 emissions 685 Mt CO2e excl. LULUCF, −10% from 2005 and −0.3% from 2023; oil and gas 208 Mt (peaked 2014 at 230 Mt); electricity −57% since 2005; methane at lowest recorded level; 2035 NDC of 45–50% below 2005.",
+      "descFr": "Inventaire officiel CCNUCC : émissions 2024 de 685 Mt éq. CO₂ hors ATCATF, −10 % par rapport à 2005 et −0,3 % par rapport à 2023; pétrole et gaz 208 Mt (sommet de 230 Mt en 2014); électricité −57 % depuis 2005; méthane à son plus bas niveau enregistré; CDN 2035 de 45-50 % sous 2005.",
+      "publicationDate": "2026-04-14",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "eccc-ghg-2024-overview",
+      "name": "Environment and Climate Change Canada – Where Canada's Greenhouse Gas Emissions Come From: 2024 National Inventory",
+      "nameFr": "Environnement et Changement climatique Canada — D'où proviennent les émissions de gaz à effet de serre du Canada : inventaire national 2024",
+      "url": "https://www.canada.ca/en/environment-climate-change/news/2024/05/where-canadas-greenhouse-gas-emissions-come-from-2024-national-greenhouse-gas-inventory.html",
+      "desc": "Official explainer of the 2024 inventory revisions: with updated historical harvest data, the managed forest / land sector's net balance is a net SOURCE of emissions in all years of the time series (LULUCF net source of 51 Mt in 2022); per-capita emissions fell from 24 t (2005) to 18 t.",
+      "descFr": "Explication officielle des révisions de l'inventaire 2024 : avec les données historiques de récolte mises à jour, le bilan net du secteur forêt aménagée / ATCATF est une source nette d'émissions pour toutes les années de la série (source nette de 51 Mt en 2022); les émissions par habitant sont passées de 24 t (2005) à 18 t.",
+      "publicationDate": "2024-05-02",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "cat-canada-2026",
+      "name": "Climate Action Tracker – Canada country assessment",
+      "nameFr": "Climate Action Tracker — Évaluation-pays du Canada",
+      "url": "https://climateactiontracker.org/countries/canada/",
+      "desc": "Independent pledge-vs-policy rating (PRIMARY instrument per template §6): Canada's policies and action rated 'Highly Insufficient'; 2030 emissions projected 645–647 Mt (≈15% below 2005) vs the 426–484 Mt target; Clean Electricity Regulations finalized but weakened (net-zero grid moved 2035→2050); 2026 zero-emission-vehicle target paused.",
+      "descFr": "Évaluation indépendante engagements-vs-politiques (instrument PRIMAIRE selon le gabarit) : politiques et actions du Canada jugées « Hautement insuffisantes »; émissions 2030 projetées à 645-647 Mt (≈15 % sous 2005) contre une cible de 426-484 Mt; Règlement sur l'électricité propre finalisé mais affaibli (réseau carboneutre repoussé de 2035 à 2050); cible 2026 de véhicules zéro émission suspendue.",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Interpretation"
+    },
+    {
+      "id": "nrcan-sof-2025",
+      "name": "Natural Resources Canada – The State of Canada's Forests: Annual Report 2025",
+      "nameFr": "Ressources naturelles Canada — L'état des forêts au Canada : rapport annuel 2025",
+      "url": "https://natural-resources.canada.ca/forests-forestry/state-canada-forests",
+      "desc": "Official annual forest report: 369 million ha of forest (~9% of world total; 225 Mha managed); under 0.5% deforested over 34 years; 2023 insect disturbance 11.6 Mha; Canadian Climate Institute climate-damage estimates of $25B/yr (2025) rising to $78B (low-emissions path) – $101B (high-emissions path) per year by 2050.",
+      "descFr": "Rapport forestier annuel officiel : 369 millions d'hectares de forêt (~9 % du total mondial; 225 Mha aménagés); moins de 0,5 % déboisé en 34 ans; 11,6 Mha perturbés par les insectes en 2023; estimations de dommages climatiques de l'Institut climatique du Canada de 25 G$/an (2025) montant à 78 G$ (trajectoire à faibles émissions) à 101 G$ (trajectoire à fortes émissions) par an d'ici 2050.",
+      "publicationDate": "2025-07-01",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "energy-factbook-spring-2026",
+      "name": "Natural Resources Canada / CCEI – Energy Fact Book, Spring 2026 Edition: Clean Power and Low Carbon Fuels",
+      "nameFr": "Ressources naturelles Canada / CCIE — Cahier d'information sur l'énergie, édition du printemps 2026 : électricité propre et combustibles à faible teneur en carbone",
+      "url": "https://energy-information.canada.ca/en/energy-facts/clean-power-low-carbon-fuels",
+      "desc": "Official energy statistics: 623 TWh of electricity produced in 2024, 65% renewable and 78% non-GHG-emitting; Canada is the world's third-largest hydroelectricity producer; rivers discharge close to 7% of the world's renewable water; fourth-largest proven oil reserves and third-largest uranium reserves.",
+      "descFr": "Statistiques énergétiques officielles : 623 TWh d'électricité produits en 2024, 65 % de sources renouvelables et 78 % sans émission de GES; le Canada est le troisième producteur mondial d'hydroélectricité; ses rivières déchargent près de 7 % de l'eau renouvelable mondiale; quatrièmes réserves prouvées de pétrole et troisièmes réserves d'uranium.",
+      "publicationDate": "2026-04-01",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "cer-canada-energy-profile",
+      "name": "Canada Energy Regulator – Provincial and Territorial Energy Profiles: Canada",
+      "nameFr": "Régie de l'énergie du Canada — Profils énergétiques des provinces et territoires : Canada",
+      "url": "https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/province-territory-energy-profiles/canada.html",
+      "desc": "Official national energy-system profile: crude production 5.1 MMb/d (2023, fourth-largest producer, +41% since 2013, growth almost entirely oil sands); natural gas 17.9 Bcf/d; crude exports 4.0 MMb/d nearly all to the US; provincial generation mixes (BC/MB/QC/NL over 85% hydro; AB/SK/NS/NU mostly fossil).",
+      "descFr": "Profil officiel du système énergétique national : production de brut de 5,1 Mb/j (2023, quatrième producteur mondial, +41 % depuis 2013, croissance presque entièrement issue des sables bitumineux); gaz naturel de 17,9 Gpi³/j; exportations de brut de 4,0 Mb/j presque entièrement vers les États-Unis; bouquets provinciaux de production (C.-B., Man., Qc et T.-N.-L. à plus de 85 % hydro; Alb., Sask., N.-É. et Nt surtout fossiles).",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "statcan-2016-census-geography",
+      "name": "Statistics Canada – The Daily: Population Size and Growth, 2016 Census",
+      "nameFr": "Statistique Canada — Le Quotidien : taille et croissance de la population, Recensement de 2016",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/170208/dq170208a-eng.htm",
+      "desc": "Census release documenting Canada's spatial structure: two of three people (66%) live within 100 km of the Canada–US border, an area of about 4% of the territory; density 3.9/km² vs 35.3 in the US; land area close to 10 million km².",
+      "descFr": "Communiqué du recensement documentant la structure spatiale du Canada : deux personnes sur trois (66 %) vivent à moins de 100 km de la frontière canado-américaine, sur environ 4 % du territoire; densité de 3,9/km² contre 35,3 aux États-Unis; superficie terrestre proche de 10 millions de km².",
+      "publicationDate": "2017-02-08",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "pco-bill-c5-implementation",
+      "name": "Government of Canada – Implementation of Bill C-5: One Canadian Economy (backgrounder)",
+      "nameFr": "Gouvernement du Canada — Mise en œuvre du projet de loi C-5 : une économie canadienne unifiée (document d'information)",
+      "url": "https://www.canada.ca/en/intergovernmental-affairs/news/2025/06/implementation-of-bill-c-5-one-canadian-economy.html",
+      "desc": "Official backgrounder on the Building Canada Act (Royal Assent June 26, 2025): federal review of designated national-interest projects to complete within 2 years; 'one project, one review'; Major Projects Office with an Indigenous Advisory Council; Indigenous Loan Guarantee Program doubled $5B→$10B; 5-year designation window.",
+      "descFr": "Document d'information officiel sur la Loi sur la réalisation de projets d'intérêt national (sanction royale le 26 juin 2025) : examen fédéral des projets désignés d'intérêt national à conclure en 2 ans; « un projet, un examen »; Bureau des grands projets doté d'un Conseil consultatif autochtone; Programme de garantie de prêts pour les Autochtones doublé de 5 à 10 G$; fenêtre de désignation de 5 ans.",
+      "publicationDate": "2025-06-26",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "dwpv-bill-c5-analysis",
+      "name": "Davies Ward Phillips & Vineberg – Bill C-5: Canada's Approach to Accelerating Major Projects",
+      "nameFr": "Davies Ward Phillips & Vineberg — Projet de loi C-5 : l'approche canadienne d'accélération des grands projets",
+      "url": "https://www.dwpv.com/insights/2025/bill-c-5-accelerating-projects",
+      "desc": "Legal analysis of the Building Canada Act: objective is to reduce federal decision timelines on national-interest projects to two years FROM FIVE; identifies the impact-assessment phase (not permitting) as the key gating step for major projects in Canada.",
+      "descFr": "Analyse juridique de la Loi sur la réalisation de projets d'intérêt national : l'objectif est de ramener les délais fédéraux de décision sur les projets d'intérêt national à deux ans au lieu d'environ cinq; identifie la phase d'évaluation d'impact (et non celle des autorisations réglementaires) comme l'étape déterminante des grands projets au Canada.",
+      "publicationDate": "2025-07-02",
+      "accessDate": "2026-07-08",
+      "confidence": "Med",
+      "citationType": "Interpretation"
+    },
+    {
+      "id": "statcan-productivity-us-2026",
+      "name": "Statistics Canada – Labour Productivity in Industries Dependent on United States Demand (Economic and Social Reports)",
+      "nameFr": "Statistique Canada — La productivité du travail dans les industries dépendantes de la demande des États-Unis (Rapports économiques et sociaux)",
+      "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026005/article/00001-eng.htm",
+      "desc": "StatCan analytical article (May 2026) on Canada's labour-productivity trends and the exposure of the most productive, US-export-dependent industries to tariffs; references Bank of Canada's 'Canada's weak productivity: reversing course' framing.",
+      "descFr": "Article analytique de Statistique Canada (mai 2026) sur les tendances de la productivité du travail au Canada et l'exposition aux tarifs des industries les plus productives, dépendantes des exportations vers les États-Unis; renvoie au cadrage de la Banque du Canada sur la faible productivité canadienne.",
+      "publicationDate": "2026-05-27",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "canlii-tsilhqotin-2014",
+      "name": "Supreme Court of Canada – Tsilhqot'in Nation v. British Columbia, 2014 SCC 44 (CanLII)",
+      "nameFr": "Cour suprême du Canada — Nation Tsilhqot'in c. Colombie-Britannique, 2014 CSC 44 (CanLII)",
+      "url": "https://www.canlii.org/en/ca/scc/doc/2014/2014scc44/2014scc44.html",
+      "desc": "Full text of the ruling: first declaration of Aboriginal title in Canadian history (1,750 km²); title grounded in sufficient, continuous, exclusive occupation including territorial (not merely site-specific) use; government incursions on title land require consent or must meet the s.35 justification framework; BC found in breach of its duty to consult.",
+      "descFr": "Texte intégral de l'arrêt : première déclaration de titre ancestral de l'histoire canadienne (1 750 km²); titre fondé sur une occupation suffisante, continue et exclusive, y compris l'usage territorial (et non seulement de sites précis); les atteintes de la Couronne aux terres visées par le titre requièrent le consentement ou doivent satisfaire au cadre de justification de l'article 35; la Colombie-Britannique jugée en manquement à son obligation de consulter.",
+      "publicationDate": "2014-06-26",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "tsilhqotin-ng-rights-title",
+      "name": "Tŝilhqot'in National Government – Rights & Title",
+      "nameFr": "Gouvernement national Tŝilhqot'in — Droits et titre",
+      "url": "https://tsilhqotin.ca/governance/tsilhqotin-rights-title/",
+      "desc": "The Nation's own account of the title litigation (1989–2014) and the June 26, 2014 declaration — the in-culture primary voice on what the title declaration means for the title-holding Nation.",
+      "descFr": "Le récit de la Nation elle-même sur le litige du titre (1989-2014) et la déclaration du 26 juin 2014 — la voix primaire, de l'intérieur de la culture, sur le sens de la déclaration de titre pour la Nation titulaire.",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "cngov-agreements",
+      "name": "Cree Nation Government – Agreements (James Bay and Northern Quebec Agreement 1975; Paix des Braves 2002; subsequent governance agreements)",
+      "nameFr": "Gouvernement de la Nation crie — Ententes (Convention de la Baie-James et du Nord québécois 1975; Paix des Braves 2002; ententes de gouvernance subséquentes)",
+      "url": "https://www.cngov.ca/governance-structure/legislation/agreements/",
+      "desc": "The Cree Nation Government's canonical page for the treaty lineage: the 1975 JBNQA as a living document amended by 24 complementary agreements; the 2002 Paix des Braves nation-to-nation agreement (adapted forestry regime, Cree consent to EM-1/Eastmain-Rupert, standing liaison committee); the 2008 Federal New Relationship Agreement and the 2017 Cree Constitution.",
+      "descFr": "Page canonique du Gouvernement de la Nation crie sur la filiation des traités : la CBJNQ de 1975 comme document vivant modifié par 24 conventions complémentaires; la Paix des Braves de 2002, entente de nation à nation (régime forestier adapté, consentement cri à EM-1/Eastmain-Rupert, comité de liaison permanent); l'Entente concernant une nouvelle relation fédérale de 2008 et la Constitution crie de 2017.",
+      "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "imf-country-focus-internal-trade-2026",
+      "name": "IMF Country Focus – Canada Can Grow Faster by Unlocking Its Own Market (Díez & Yang, with Tombe)",
+      "nameFr": "FMI, Country Focus — Le Canada peut croître plus vite en déverrouillant son propre marché (Díez et Yang, avec Tombe)",
+      "url": "https://www.imf.org/en/news/articles/2026/01/27/cf-canada-can-grow-faster-by-unlocking-its-own-market",
+      "desc": "The study authors' own IMF publication: non-geographic, policy-related internal barriers average the equivalent of about a 9% tariff nationally; fully eliminating them could raise real GDP nearly 7% (~$210B) over the long run, with services liberalization the dominant share of gains.",
+      "descFr": "Publication des auteurs de l'étude au FMI : les obstacles internes non géographiques d'origine réglementaire équivalent en moyenne à un tarif d'environ 9 % à l'échelle nationale; leur élimination complète pourrait accroître le PIB réel de près de 7 % (~210 G$) à long terme, la libéralisation des services représentant la part dominante des gains.",
+      "publicationDate": "2026-01-27",
+      "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
     }
