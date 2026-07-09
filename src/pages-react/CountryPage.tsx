@@ -246,6 +246,21 @@ function ComingSoonBlock({ language }: { language: string }) {
   );
 }
 
+// ─── Prose paragraphs ─────────────────────────────────────────────────────────
+// Narrative fields may contain blank-line paragraph breaks (\n\n) authored in
+// Keystatic; render them as real paragraphs instead of letting HTML collapse
+// the newlines into one wall of text. Single newlines stay within a paragraph.
+function ProseParagraphs({ text, sources }: { text: string; sources?: SourceEntry[] }) {
+  const paras = text.split(/\n{2,}/).map((s) => s.trim()).filter(Boolean);
+  return (
+    <div className="space-y-3">
+      {paras.map((p, i) => (
+        <p key={i} className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(p, sources)}</p>
+      ))}
+    </div>
+  );
+}
+
 // ─── Scorecard row ────────────────────────────────────────────────────────────
 
 function ScoreRow({ label, value }: { label: string; value: 'High' | 'Med' | 'Low' | null }) {
@@ -692,7 +707,7 @@ export default function CountryPage() {
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
@@ -727,7 +742,7 @@ export default function CountryPage() {
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
@@ -752,7 +767,7 @@ export default function CountryPage() {
               ] as [string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
@@ -772,7 +787,7 @@ export default function CountryPage() {
               ] as [string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
@@ -793,7 +808,7 @@ export default function CountryPage() {
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
@@ -814,7 +829,7 @@ export default function CountryPage() {
               ] as [string, string][]).map(([title, text]) => (
                 <div key={title}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(text, activeSources)}</p>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
