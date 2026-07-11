@@ -11,6 +11,7 @@ import { useParams, Link } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { RiskTrendVisualization } from '@/components/RiskTrendVisualization';
 import { FlagIcon } from '@/components/FlagIcon';
+import { CountryLocatorMap } from '@/components/CountryLocatorMap';
 import { irelandRiskTrends } from '@/data/irelandRiskTrends';
 import type { RiskTrendData } from '@/lib/riskTrendTypes';
 import { deriveRiskLevel } from '@/lib/deriveRiskLevel';
@@ -607,7 +608,8 @@ export default function CountryPage() {
 
         {/* Country header */}
         <div className="mb-12">
-          <div className="flex items-start gap-6 mb-6">
+          <div className="flex items-start justify-between gap-6 mb-6">
+            <div className="flex items-start gap-6">
             <FlagIcon
             cca2={country.cca2}
             emoji={country.flag}
@@ -631,6 +633,19 @@ export default function CountryPage() {
               <p className="text-[var(--cr-accent)] font-body text-xs tracking-[0.3em] uppercase mt-1">
                 {country.cca3} · {translateRegion(country.region)}
               </p>
+            </div>
+            </div>
+            {/* Locator map: the country against its neighbours (Natural Earth data).
+                FR-PLACEHOLDER: aria-label French wording — Peggy to verify. */}
+            <div className="hidden sm:block shrink-0">
+              <CountryLocatorMap
+                cca3={country.cca3}
+                width={300}
+                height={160}
+                label={language === 'fr'
+                  ? `Carte de situation : ${name} et ses voisins`
+                  : `Locator map: ${name} and its neighbours`}
+              />
             </div>
           </div>
 
