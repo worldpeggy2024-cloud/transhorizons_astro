@@ -16,7 +16,7 @@ import { FlagIcon } from '@/components/FlagIcon';
 import {
   ArrowLeft, ArrowRight, Globe, Search, Map as MapIcon, ChevronRight, Network, Filter, Info,
 } from 'lucide-react';
-import { ANALYSED_COUNTRIES } from '@/lib/analysedCountries';
+import { SEO_READY_COUNTRIES } from '@/lib/analysedCountries';
 import { COUNTRY_METADATA } from '@/lib/countryMetadata';
 import CountryFilterPanel, { type FilterState } from '@/components/CountryFilterPanel';
 
@@ -66,7 +66,9 @@ const HOVER_COLOR    = '#A0243A';
 const CANADA_COLOR   = '#B22222';
 const MEXICO_COLOR   = '#0B5D1E';
 const PORTUGAL_COLOR = '#D4AF37';
-const ANALYSED_SET   = new Set(ANALYSED_COUNTRIES);
+// "Report available" marker: reads the trustworthy gate (two-phase + proofed),
+// NOT the legacy inventory — it grows one country at a time.
+const REPORT_READY_SET = new Set(SEO_READY_COUNTRIES);
 const TOP_BAR_H      = 52;
 
 // ─── World Views tool cards ───────────────────────────────────────────────────
@@ -283,7 +285,7 @@ export default function WorldAnalysis() {
       props.WB_A3, props.ADM0_A3_US, props.ADM0_A3_IS,
       props.GU_A3, props.SU_A3, props.BRK_A3,
     ];
-    const hasReport = codes.some(c => c && c !== '-99' && c !== '-1' && ANALYSED_SET.has(c));
+    const hasReport = codes.some(c => c && c !== '-99' && c !== '-1' && REPORT_READY_SET.has(c));
     const bg      = hasReport ? 'rgba(125,26,46,0.97)' : 'rgba(13,13,13,0.95)';
     const border  = hasReport ? 'rgba(160,36,58,0.6)'  : 'rgba(125,26,46,0.4)';
     const subColor = hasReport ? 'rgba(255,255,255,0.75)' : 'rgba(255,255,255,0.5)';
@@ -783,7 +785,7 @@ export default function WorldAnalysis() {
                 </div>
                 {group.map(c => {
                   const cName = fr ? c.nameFr : c.nameEn;
-                  const hasReport = ANALYSED_SET.has(c.cca3);
+                  const hasReport = REPORT_READY_SET.has(c.cca3);
                   return (
                     <Link
                       key={c.cca3}

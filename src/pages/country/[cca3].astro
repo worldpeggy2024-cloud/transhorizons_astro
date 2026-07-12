@@ -13,9 +13,9 @@
  * the catch-all's 404 behavior for non-country-code paths so nothing regresses.
  *
  * CRAWLABILITY IS GATED: the SEO prose block is emitted ONLY for countries listed in
- * SEO_READY_COUNTRIES (two-phase-verified + proofed). That list is empty for now, so
- * this route currently behaves exactly like the catch-all — no unreliable / unproofed
- * content is ever served to crawlers. Opening a country is a one-line allowlist edit.
+ * SEO_READY_COUNTRIES (two-phase-regenerated + proofed). The block covers all ten
+ * sections of the six-peer schema and embeds BOTH languages (lang-tagged) at the one
+ * canonical URL — the React island serves both languages client-side at that URL too.
  */
 import { readFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
@@ -59,120 +59,216 @@ const parseJsonArray = (v: unknown): any[] => {
   return [];
 };
 
-let seo: {
-  name: string;
+interface LangSeo {
   snapshot: string[];
   political: string[];
   economy: string[];
+  territory: string[];
+  capacity: string[];
   society: string[];
   security: string[];
   actors: string[];
   risks: string[];
-} | null = null;
+  sources: string[];
+}
 
-if (seoReady) {
-  const data = yaml.load(readFileSync(yamlPath, 'utf-8')) as Record<string, any>;
-  const g = (k: string) => stripCites(data?.[k]);
+function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
+  const g = (k: string) => stripCites(data?.[`${k}_${lang}`]);
+  const nonEmpty = (x: string) => x.trim().length > 2;
 
-  const snapshot = String(data?.executiveSnapshot_en ?? '')
+  const snapshot = String(data?.[`executiveSnapshot_${lang}`] ?? '')
     .split('\n')
     .map((line) => stripCites(line))
     .filter(Boolean);
 
   const actors = [
-    ...parseJsonArray(data?.actors_domestic_en),
-    ...parseJsonArray(data?.actors_external_en),
+    ...parseJsonArray(data?.[`actors_domestic_${lang}`]),
+    ...parseJsonArray(data?.[`actors_external_${lang}`]),
   ]
     .map((a) => `${stripCites(a?.name)}: ${stripCites(a?.interests)}`)
-    .filter((x) => x.trim().length > 2);
+    .filter(nonEmpty);
 
-  const risks = parseJsonArray(data?.risks_en)
+  const risks = parseJsonArray(data?.[`risks_${lang}`])
     .map((r) => `${stripCites(r?.title)} — ${stripCites(r?.trigger)}`)
-    .filter((x) => x.trim().length > 2);
+    .filter(nonEmpty);
 
-  seo = {
-    name: String(data?.nameEn ?? cca3),
+  const sources = parseJsonArray(data?.sources)
+    .map((s) =>
+      lang === 'fr'
+        ? `${stripCites(s?.nameFr || s?.name)} — ${stripCites(s?.descFr || s?.desc)}`
+        : `${stripCites(s?.name)} — ${stripCites(s?.desc)}`
+    )
+    .filter(nonEmpty);
+
+  return {
     snapshot,
     political: [
-      g('political_powerStructure_en'),
-      g('political_stabilityDrivers_en'),
-      g('political_shockAbsorbers_en'),
+      g('political_powerStructure'),
+      g('political_stabilityDrivers'),
+      g('political_shockAbsorbers'),
+      g('political_constitutionalSubstrate'),
     ].filter(Boolean),
     economy: [
-      g('economy_macroReality_en'),
-      g('economy_externalVulnerability_en'),
-      g('economy_politicalEconomy_en'),
+      g('economy_macroReality'),
+      g('economy_externalVulnerability'),
+      g('economy_politicalEconomy'),
+    ].filter(Boolean),
+    territory: [
+      g('territory_geography'),
+      g('territory_minerals'),
+      g('territory_biosphere'),
+      g('territory_climate'),
+      g('territory_metabolism'),
+      g('territory_transition'),
+    ].filter(Boolean),
+    capacity: [
+      g('capacity_permitting'),
+      g('capacity_delivery'),
+      g('capacity_productivity'),
     ].filter(Boolean),
     society: [
-      g('society_demographics_en'),
-      g('society_composition_en'),
-      g('society_religion_en'),
-      g('society_cohesion_en'),
+      g('society_demographics'),
+      g('society_composition'),
+      g('society_religion'),
+      g('society_cohesion'),
     ].filter(Boolean),
-    security: [g('security_internal_en'), g('security_diplomacy_en')].filter(Boolean),
+    security: [g('security_internal'), g('security_diplomacy')].filter(Boolean),
     actors,
     risks,
+    sources,
   };
 }
 
-const pageTitle = seo
-  ? `${seo.name} — Country Situation Report | TransHorizons`
+// Section headings per language, mirroring the React page's labels.
+// FR-PLACEHOLDER: French headings — Peggy to verify.
+const HEADINGS = {
+  en: {
+    report: 'Country Situation Report',
+    exec: 'Executive Snapshot',
+    political: 'Political Stability',
+    economy: 'Economy',
+    territory: 'Territory',
+    capacity: 'State Capacity',
+    society: 'Society',
+    security: 'Security & Diplomacy',
+    actors: 'Key Actors',
+    risks: 'Risk Register',
+    sources: 'Sources',
+  },
+  fr: {
+    report: 'Rapport de situation pays',
+    exec: 'Synthèse exécutive',
+    political: 'Stabilité politique',
+    economy: 'Économie',
+    territory: 'Territoire',
+    capacity: "Capacité de l'État",
+    society: 'Société',
+    security: 'Sécurité & Diplomatie',
+    actors: 'Carte des acteurs',
+    risks: 'Registre des risques',
+    sources: 'Sources',
+  },
+} as const;
+
+let seoEn: LangSeo | null = null;
+let seoFr: LangSeo | null = null;
+let nameEn = '';
+let nameFr = '';
+
+if (seoReady) {
+  const data = yaml.load(readFileSync(yamlPath, 'utf-8')) as Record<string, any>;
+  nameEn = String(data?.nameEn ?? cca3);
+  nameFr = String(data?.nameFr ?? nameEn);
+  seoEn = buildLangSeo(data, 'en');
+  seoFr = buildLangSeo(data, 'fr');
+}
+
+const blocks = [
+  { seo: seoEn, lang: 'en' as const, name: nameEn, h: HEADINGS.en },
+  { seo: seoFr, lang: 'fr' as const, name: nameFr, h: HEADINGS.fr },
+];
+
+const pageTitle = seoEn
+  ? `${nameEn} — Country Situation Report | TransHorizons`
   : 'TransHorizons — World Views';
 const pageDesc =
-  seo && seo.snapshot.length > 0
-    ? seo.snapshot[0].slice(0, 300)
-    : 'Structured country situation reports — political stability, economy, society, and security.';
+  seoEn && seoEn.snapshot.length > 0
+    ? seoEn.snapshot[0].slice(0, 300)
+    : 'Structured country situation reports — political stability, economy, territory, capacity, society, and security.';
 ---
 
 <Base title={pageTitle} description={pageDesc}>
 
-  {seo && (
+  {seoEn && (
     <!-- Static SEO content: invisible to visitors, readable by crawlers. Emitted
-         only for two-phase-verified, proofed countries (SEO_READY_COUNTRIES). -->
+         only for two-phase-verified, proofed countries (SEO_READY_COUNTRIES).
+         Both languages at the one canonical URL, lang-tagged. -->
     <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
-      <h1>{seo.name} — Country Situation Report</h1>
-      {seo.snapshot.length > 0 && (
-        <section>
-          <h2>Executive Snapshot</h2>
-          <ul>{seo.snapshot.map((b) => <li>{b}</li>)}</ul>
+      {blocks.map(({ seo, lang, name, h }) => seo && (
+        <section lang={lang}>
+          <h1>{name} — {h.report}</h1>
+          {seo.snapshot.length > 0 && (
+            <section>
+              <h2>{h.exec}</h2>
+              <ul>{seo.snapshot.map((b) => <li>{b}</li>)}</ul>
+            </section>
+          )}
+          {seo.political.length > 0 && (
+            <section>
+              <h2>{h.political}</h2>
+              {seo.political.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.economy.length > 0 && (
+            <section>
+              <h2>{h.economy}</h2>
+              {seo.economy.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.territory.length > 0 && (
+            <section>
+              <h2>{h.territory}</h2>
+              {seo.territory.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.capacity.length > 0 && (
+            <section>
+              <h2>{h.capacity}</h2>
+              {seo.capacity.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.society.length > 0 && (
+            <section>
+              <h2>{h.society}</h2>
+              {seo.society.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.security.length > 0 && (
+            <section>
+              <h2>{h.security}</h2>
+              {seo.security.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.actors.length > 0 && (
+            <section>
+              <h2>{h.actors}</h2>
+              <ul>{seo.actors.map((a) => <li>{a}</li>)}</ul>
+            </section>
+          )}
+          {seo.risks.length > 0 && (
+            <section>
+              <h2>{h.risks}</h2>
+              <ul>{seo.risks.map((r) => <li>{r}</li>)}</ul>
+            </section>
+          )}
+          {seo.sources.length > 0 && (
+            <section>
+              <h2>{h.sources}</h2>
+              <ul>{seo.sources.map((s) => <li>{s}</li>)}</ul>
+            </section>
+          )}
         </section>
-      )}
-      {seo.political.length > 0 && (
-        <section>
-          <h2>Political Stability</h2>
-          {seo.political.map((p) => <p>{p}</p>)}
-        </section>
-      )}
-      {seo.economy.length > 0 && (
-        <section>
-          <h2>Economy</h2>
-          {seo.economy.map((p) => <p>{p}</p>)}
-        </section>
-      )}
-      {seo.society.length > 0 && (
-        <section>
-          <h2>Society</h2>
-          {seo.society.map((p) => <p>{p}</p>)}
-        </section>
-      )}
-      {seo.security.length > 0 && (
-        <section>
-          <h2>Security &amp; Diplomacy</h2>
-          {seo.security.map((p) => <p>{p}</p>)}
-        </section>
-      )}
-      {seo.actors.length > 0 && (
-        <section>
-          <h2>Key Actors</h2>
-          <ul>{seo.actors.map((a) => <li>{a}</li>)}</ul>
-        </section>
-      )}
-      {seo.risks.length > 0 && (
-        <section>
-          <h2>Risk Register</h2>
-          <ul>{seo.risks.map((r) => <li>{r}</li>)}</ul>
-        </section>
-      )}
+      ))}
     </div>
   )}
 

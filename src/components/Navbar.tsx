@@ -95,25 +95,28 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-7 lg:gap-9">
-            {/* Language Selector */}
-            <div className="flex items-center gap-2 border-l border-r border-white/20 px-4 py-1">
+            {/* Language Selector — deliberately prominent segmented toggle so
+                francophone visitors can't miss it: the active language is a
+                filled burgundy block. */}
+            <div className={`flex items-center shrink-0 overflow-hidden border ${scrolled ? 'border-[#7D1A2E]/60' : 'border-white/50'}`}>
               <button
                 onClick={() => setLanguage('en')}
-                className={`font-body text-[0.7rem] font-medium tracking-[0.12em] uppercase transition-colors duration-300 ${
+                aria-pressed={language === 'en'}
+                className={`font-body text-[0.72rem] font-bold tracking-[0.14em] uppercase px-3 py-1.5 whitespace-nowrap shrink-0 transition-colors duration-300 ${
                   language === 'en'
-                    ? scrolled ? 'text-[#7D1A2E]' : 'text-white'
-                    : scrolled ? 'text-[#1A1A1A]/50 hover:text-[#1A1A1A]' : 'text-white/50 hover:text-white'
+                    ? 'bg-[#7D1A2E] text-white'
+                    : scrolled ? 'text-[#1A1A1A]/60 hover:text-[#7D1A2E]' : 'text-white/70 hover:text-white'
                 }`}
               >
                 EN
               </button>
-              <span className={`text-[0.6rem] ${scrolled ? 'text-[#1A1A1A]/30' : 'text-white/30'}`}>|</span>
               <button
                 onClick={() => setLanguage('fr')}
-                className={`font-body text-[0.7rem] font-medium tracking-[0.12em] uppercase transition-colors duration-300 ${
+                aria-pressed={language === 'fr'}
+                className={`font-body text-[0.72rem] font-bold tracking-[0.14em] uppercase px-3 py-1.5 whitespace-nowrap shrink-0 transition-colors duration-300 ${
                   language === 'fr'
-                    ? scrolled ? 'text-[#7D1A2E]' : 'text-white'
-                    : scrolled ? 'text-[#1A1A1A]/50 hover:text-[#1A1A1A]' : 'text-white/50 hover:text-white'
+                    ? 'bg-[#7D1A2E] text-white'
+                    : scrolled ? 'text-[#1A1A1A]/60 hover:text-[#7D1A2E]' : 'text-white/70 hover:text-white'
                 }`}
               >
                 FR
@@ -223,26 +226,31 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Language Selector */}
+          {/* Language Selector — segmented toggle, matching the desktop nav */}
           <div className="flex items-center gap-3 px-5 py-4 border-b border-white/10 flex-shrink-0">
-            <span className="text-white/40 text-xs tracking-widest uppercase">Language</span>
-            <button
-              onClick={() => setLanguage('en')}
-              className={`font-body text-[0.7rem] font-medium tracking-[0.12em] uppercase transition-colors duration-300 ${
-                language === 'en' ? 'text-[#7D1A2E]' : 'text-white/50 hover:text-white'
-              }`}
-            >
-              EN
-            </button>
-            <span className="text-white/30 text-xs">|</span>
-            <button
-              onClick={() => setLanguage('fr')}
-              className={`font-body text-[0.7rem] font-medium tracking-[0.12em] uppercase transition-colors duration-300 ${
-                language === 'fr' ? 'text-[#7D1A2E]' : 'text-white/50 hover:text-white'
-              }`}
-            >
-              FR
-            </button>
+            <span className="text-white/40 text-xs tracking-widest uppercase">
+              {language === 'fr' ? 'Langue' : 'Language'}
+            </span>
+            <div className="flex items-center overflow-hidden border border-white/40">
+              <button
+                onClick={() => setLanguage('en')}
+                aria-pressed={language === 'en'}
+                className={`font-body text-[0.72rem] font-bold tracking-[0.14em] uppercase px-3 py-1.5 transition-colors duration-300 ${
+                  language === 'en' ? 'bg-[#7D1A2E] text-white' : 'text-white/60 hover:text-white'
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLanguage('fr')}
+                aria-pressed={language === 'fr'}
+                className={`font-body text-[0.72rem] font-bold tracking-[0.14em] uppercase px-3 py-1.5 transition-colors duration-300 ${
+                  language === 'fr' ? 'bg-[#7D1A2E] text-white' : 'text-white/60 hover:text-white'
+                }`}
+              >
+                FR
+              </button>
+            </div>
           </div>
 
           {/* Nav links */}

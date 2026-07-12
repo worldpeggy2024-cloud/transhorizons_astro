@@ -10,7 +10,10 @@ import * as THREE from 'three';
 import { Link, useLocation } from 'wouter';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ArrowRight } from 'lucide-react';
-import { ANALYSED_COUNT } from '../lib/analysedCountries';
+import { SEO_READY_COUNTRIES } from '../lib/analysedCountries';
+
+// Count of trustworthy (two-phase + proofed) reports — grows one country at a time.
+const READY_COUNT = SEO_READY_COUNTRIES.length;
 
 const AXIAL_TILT = 23.5 * (Math.PI / 180);
 const AUTO_ROTATE_SPEED = 0.004;
@@ -170,9 +173,11 @@ export default function GlobeTeaser() {
                   {/* Country count badge — hidden on mobile, shown on md+ */}
                   <div className="hidden md:flex items-center gap-2 mt-2">
                     <span className="inline-flex items-center gap-1.5 border border-[#7D1A2E]/50 bg-[#7D1A2E]/8 px-3 py-1">
-                      <span className="text-[#7D1A2E] font-display text-base font-bold leading-none">{ANALYSED_COUNT}</span>
+                      <span className="text-[#7D1A2E] font-display text-base font-bold leading-none">{READY_COUNT}</span>
                       <span className="text-[#7D1A2E]/80 font-body text-[10px] font-bold tracking-[0.2em] uppercase">
-                        {fr ? 'analyses de pays disponibles' : 'country analyses available'}
+                        {fr
+                          ? (READY_COUNT > 1 ? 'analyses de pays disponibles' : 'analyse de pays disponible')
+                          : (READY_COUNT > 1 ? 'country analyses available' : 'country analysis available')}
                       </span>
                     </span>
                     <span className="text-white/25 font-body text-xs">
@@ -204,13 +209,15 @@ export default function GlobeTeaser() {
                 {/* Country count badge — mobile only, below description */}
                 <div className="flex md:hidden items-center gap-2 mt-2">
                   <span className="inline-flex items-center gap-1.5 border border-[#7D1A2E]/50 bg-[#7D1A2E]/8 px-2.5 py-0.5">
-                    <span className="text-[#7D1A2E] font-display text-sm font-bold leading-none">{ANALYSED_COUNT}</span>
+                    <span className="text-[#7D1A2E] font-display text-sm font-bold leading-none">{READY_COUNT}</span>
                     <span className="text-[#7D1A2E]/80 font-body text-[9px] font-bold tracking-[0.2em] uppercase">
-                      {fr ? 'pays' : 'countries'}
+                      {fr ? 'pays' : (READY_COUNT > 1 ? 'countries' : 'country')}
                     </span>
                   </span>
                   <span className="text-white/25 font-body text-[10px]">
-                    {fr ? 'analyses disponibles' : 'analyses available'}
+                    {fr
+                      ? (READY_COUNT > 1 ? 'analyses disponibles' : 'analyse disponible')
+                      : (READY_COUNT > 1 ? 'analyses available' : 'analysis available')}
                   </span>
                 </div>
               </div>

@@ -1,7 +1,12 @@
 /**
  * TransHorizons — Analysed Countries Registry
- * Single source of truth: add a CCA3 code here whenever a new country
- * analysis is published. The badge in GlobeTeaser reads this list.
+ *
+ * LEGACY INVENTORY: countries that have an analysis page at all (mostly
+ * single-phase, pre-regeneration content). As of 2026-07-11 this list NO
+ * LONGER drives the globe "report available" marker or the GlobeTeaser
+ * count — those now read SEO_READY_COUNTRIES below, so the marker tells
+ * the truth and grows one country at a time as reports are regenerated
+ * and proofed.
  */
 export const ANALYSED_COUNTRIES: string[] = [
   'FRA', // France
@@ -35,16 +40,15 @@ export const ANALYSED_COUNTRIES: string[] = [
 export const ANALYSED_COUNT = ANALYSED_COUNTRIES.length;
 
 /**
- * Two-phase-verified countries whose /country/<cca3> SSR page is allowed to emit a
- * crawlable SEO prose block. This is the "verified / two-phase" mechanism the
- * decision sheet calls for — kept SEPARATE from ANALYSED_COUNTRIES (which still,
- * for now, drives the globe "report available" marker; that marker flip is
- * deliberately deferred to the regeneration wave).
+ * Two-phase-verified countries. Drives THREE things: (a) the /country/<cca3>
+ * SSR page's crawlable SEO prose block, (b) the sitemap's country entries, and
+ * (c) — since 2026-07-11 — the globe "report available" marker and the
+ * GlobeTeaser count (the truth-telling flip the decision sheet §3c called for).
  *
  * GATE — add a CCA3 here ONLY after the country has been (a) regenerated through the
- * two-phase pipeline INTO the society-aware schema and (b) hand-proofed by Peggy.
- * Empty for now: Brazil is the schema/render/SSR pilot, but its society content is
- * still a PLACEHOLDER pending real two-phase research + proofing, so nothing is
- * exposed to crawlers yet. Once Brazil's society is real and proofed, add 'BRA'.
+ * two-phase pipeline INTO the six-peer schema and (b) hand-proofed by Peggy.
+ *
+ * CAN opened 2026-07-11: full six-peer rebuild (territory/capacity/substrate incl.),
+ * proofed by Peggy, EN + FR. Brazil stays closed (society still PLACEHOLDER).
  */
-export const SEO_READY_COUNTRIES: string[] = [];
+export const SEO_READY_COUNTRIES: string[] = ['CAN'];

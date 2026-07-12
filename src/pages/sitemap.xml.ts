@@ -1,11 +1,14 @@
 import type { APIRoute } from 'astro';
+import { SEO_READY_COUNTRIES } from '../lib/analysedCountries';
 
 // Static sitemap of the pages that are READY to be indexed. Deliberately excludes:
 //  - /publications and the unproofread articles (ai-governance, critical-minerals,
 //    canada-forest-carbon) — not yet ready in EN/FR (still reachable, just not submitted);
 //  - the empty client-only shells (world-analysis, tools/critical-minerals-map,
 //    canada-resources, canada-forest-system…) until they get an SSR .astro twin (P2);
-//  - country pages — on hold until content is corrected (P4).
+//  - country pages NOT yet in SEO_READY_COUNTRIES (exposed per country once
+//    two-phase-regenerated and proofed; the /country/<cca3> SEO div embeds BOTH
+//    languages at one URL, so each is listed once with no alternates).
 // Add entries here as content is finalized.
 //
 // `fr: true` => the page has a distinct French version at ?lang=fr (SSR), so we emit
@@ -25,6 +28,8 @@ const pages: { path: string; fr?: boolean }[] = [
   { path: '/portfolio/resource-civilization', fr: true },
   { path: '/notes/career-evolution', fr: true },
   { path: '/notes/travel-observation', fr: true },
+  // Country situation reports — gated by SEO_READY_COUNTRIES (currently: CAN).
+  ...SEO_READY_COUNTRIES.map((c) => ({ path: `/country/${c}` })),
 ];
 
 export const GET: APIRoute = () => {
