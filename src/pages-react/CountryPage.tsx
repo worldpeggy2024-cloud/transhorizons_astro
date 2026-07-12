@@ -71,16 +71,29 @@ interface CountryData {
 
 function formatPopulation(n: number): string {
   if (n >= 1_000_000_000) return (n / 1_000_000_000).toFixed(2) + ' billion';
-  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' million';
+  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' millions';
   if (n >= 1_000) return (n / 1_000).toFixed(0) + ',000';
   return n.toLocaleString();
 }
 
 function formatPopulationFr(n: number): string {
   if (n >= 1_000_000_000) return (n / 1_000_000_000).toFixed(2) + ' milliard';
-  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' million';
+  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' millions';
   if (n >= 1_000) return (n / 1_000).toFixed(0) + ' 000';
   return n.toLocaleString('fr-FR');
+}
+
+/**
+ * Display-layer translation of the canonical rating enums (High|Med|Low, plus
+ * Medium in actor dealability). The DATA keeps the English enum values — the
+ * validator and deriveRiskLevel depend on them — only the rendering localizes.
+ * FR-PLACEHOLDER: French wording — Peggy to verify.
+ */
+function ratingLabel(v: string | null | undefined, language: string): string {
+  if (!v) return '';
+  if (language !== 'fr') return v;
+  const map: Record<string, string> = { High: 'Élevé', Med: 'Moyen', Medium: 'Moyen', Low: 'Faible' };
+  return map[v] ?? v;
 }
 
 // ─── Citation System ──────────────────────────────────────────────────────────
@@ -264,7 +277,7 @@ function ProseParagraphs({ text, sources }: { text: string; sources?: SourceEntr
 
 // ─── Scorecard row ────────────────────────────────────────────────────────────
 
-function ScoreRow({ label, value }: { label: string; value: 'High' | 'Med' | 'Low' | null }) {
+function ScoreRow({ label, value, language }: { label: string; value: 'High' | 'Med' | 'Low' | null; language: string }) {
   const colors: Record<string, string> = {
     High: 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900',
     Med: 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900',
@@ -274,7 +287,7 @@ function ScoreRow({ label, value }: { label: string; value: 'High' | 'Med' | 'Lo
     <div className="flex items-center justify-between py-2 border-b border-[var(--cr-divider)] last:border-0">
       <span className="font-body text-sm text-[var(--cr-body)]">{label}</span>
       {value ? (
-        <span className={`font-body text-xs px-2 py-0.5 border rounded ${colors[value]}`}>{value}</span>
+        <span className={`font-body text-xs px-2 py-0.5 border rounded ${colors[value]}`}>{ratingLabel(value, language)}</span>
       ) : (
         <span className="font-body text-xs text-[var(--cr-faint)] italic">—</span>
       )}
@@ -306,7 +319,7 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
             [labels.resources, actor.resources],
             [labels.constraints, actor.constraints],
             [labels.moves, actor.likelyMoves],
-            [labels.deal, actor.dealability],
+            [labels.deal, ratingLabel(actor.dealability, language)],
           ] as [string, string][]).map(([label, value]) => (
             <div key={label}>
               <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
@@ -330,7 +343,7 @@ function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: stri
   };
   const impactColors = probColors;
   const labels = language === 'fr'
-    ? { trigger: 'Déclencheur', prob: 'Probabilité', impact: 'Impact', horizon: 'Horizon', indicators: 'Indicateurs avancés', mitigants: 'Atténuants', lastAssessed: 'Dernière évaluation' }
+    ? { trigger: 'Déclencheur', prob: 'Probabilité', impact: 'Impact', horizon: 'Horizon', indicators: 'Indicateurs avancés', mitigants: 'Atténuation', lastAssessed: 'Dernière évaluation' }
     : { trigger: 'Trigger', prob: 'Probability', impact: 'Impact', horizon: 'Time horizon', indicators: 'Leading indicators', mitigants: 'Mitigants', lastAssessed: 'Last assessed' };
 
   return (
@@ -342,10 +355,10 @@ function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: stri
         <span className="font-body text-sm font-medium text-[var(--cr-ink)] flex-1">{risk.title}</span>
         <div className="flex items-center gap-2 shrink-0">
           <span className={`font-body text-[10px] px-1.5 py-0.5 border rounded ${probColors[risk.probability]}`}>
-            {risk.probability}
+            {ratingLabel(risk.probability, language)}
           </span>
           <span className={`font-body text-[10px] px-1.5 py-0.5 border rounded ${impactColors[risk.impact]}`}>
-            {risk.impact}
+            {ratingLabel(risk.impact, language)}
           </span>
           {expanded ? <ChevronUp size={12} className="text-[var(--cr-muted)]" /> : <ChevronDown size={12} className="text-[var(--cr-muted)]" />}
         </div>
@@ -525,7 +538,7 @@ export default function CountryPage() {
     climate: language === 'fr' ? 'Climat' : 'Climate',
     metabolism: language === 'fr' ? 'Métabolisme' : 'Metabolism',
     transition: language === 'fr' ? 'Transition' : 'Transition',
-    capacity: language === 'fr' ? 'Capacité d\'exécution' : 'Capacity to Execute',
+    capacity: language === 'fr' ? 'Capacité de l\'État' : 'State Capacity', // FR label supplied by Peggy (final)
     permitting: language === 'fr' ? 'Autorisations' : 'Permitting',
     delivery: language === 'fr' ? 'Réalisation' : 'Delivery',
     productivity: language === 'fr' ? 'Productivité' : 'Productivity',
@@ -649,6 +662,13 @@ export default function CountryPage() {
             </div>
           </div>
 
+          <div className="flex items-center gap-2 text-[var(--cr-muted)] mb-3">
+            <Clock size={11} />
+            <span className="font-body text-xs">
+              {t.lastUpdated}: {hasAnalysis ? analysis!.lastUpdated : t.never}
+            </span>
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             {[
               { icon: MapPin, label: t.capital, value: country.capital || '—' },
@@ -666,19 +686,13 @@ export default function CountryPage() {
             ))}
           </div>
 
-          <div className="flex items-center gap-2 text-[var(--cr-muted)]">
-            <Clock size={11} />
-            <span className="font-body text-xs">
-              {t.lastUpdated}: {hasAnalysis ? analysis!.lastUpdated : t.never}
-            </span>
-          </div>
         </div>
 
         {/* ── Framework sections ── */}
 
         {/* 1. Executive Snapshot */}
         <div data-section="Executive Snapshot">
-        <FrameworkSection icon={TrendingUp} title={t.exec} defaultOpen={true}>
+        <FrameworkSection icon={TrendingUp} title={t.exec}>
           {hasAnalysis ? (
             <div className="space-y-3">
               {lang!.executiveSnapshot.map((bullet, i) => (
@@ -704,12 +718,12 @@ export default function CountryPage() {
                 <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
-                <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} />
-                <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} />
-                <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} />
-                <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} />
-                <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} />
-                <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} />
+                <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} />
+                <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} language={language} />
+                <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} language={language} />
+                <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} />
+                <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} />
+                <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} language={language} />
               </div>
               {/* Subsections */}
               {([
@@ -733,12 +747,12 @@ export default function CountryPage() {
                 <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
-                <ScoreRow label={t.eliteCohesion} value={null} />
-                <ScoreRow label={t.socialCohesion} value={null} />
-                <ScoreRow label={t.securityLoyalty} value={null} />
-                <ScoreRow label={t.economicPressure} value={null} />
-                <ScoreRow label={t.protestCapacity} value={null} />
-                <ScoreRow label={t.institutionalResilience} value={null} />
+                <ScoreRow label={t.eliteCohesion} value={null} language={language} />
+                <ScoreRow label={t.socialCohesion} value={null} language={language} />
+                <ScoreRow label={t.securityLoyalty} value={null} language={language} />
+                <ScoreRow label={t.economicPressure} value={null} language={language} />
+                <ScoreRow label={t.protestCapacity} value={null} language={language} />
+                <ScoreRow label={t.institutionalResilience} value={null} language={language} />
               </div>
             </>
           )}
@@ -891,7 +905,7 @@ export default function CountryPage() {
 
         {/* 6. Risk Register */}
         <div data-section="Risk Register">
-        <FrameworkSection icon={AlertTriangle} title={t.risks} defaultOpen={true}>
+        <FrameworkSection icon={AlertTriangle} title={t.risks}>
           {hasAnalysis ? (
             <div className="space-y-2">
               {/* Derived overall risk level — rule-based, from this country's own register */}
@@ -949,7 +963,7 @@ export default function CountryPage() {
               <div className="mt-4 text-[var(--cr-muted)] font-body text-xs leading-relaxed">
                 <p className="font-medium text-[var(--cr-body)] mb-2">
                   {language === 'fr'
-                    ? 'Chaque risque : Déclencheur · Probabilité · Impact · Horizon · Indicateurs avancés · Atténuants'
+                    ? 'Chaque risque : Déclencheur · Probabilité · Impact · Horizon · Indicateurs avancés · Atténuation'
                     : 'Each risk: Trigger · Probability · Impact · Time horizon · Leading indicators · Mitigants'}
                 </p>
               </div>
@@ -972,7 +986,10 @@ export default function CountryPage() {
               { name: 'World Justice Project', url: 'https://worldjusticeproject.org', desc: language === 'fr' ? 'État de droit' : 'Rule of law' },
             ] as SourceEntry[]).map(({ id: sourceId, name, nameFr, url, desc, descFr, publicationDate, accessDate, confidence, citationType }, idx) => {
               const confidenceColor = confidence === 'High' ? 'bg-green-50 border-green-200 dark:bg-green-950/40 dark:border-green-900' : confidence === 'Med' ? 'bg-yellow-50 border-yellow-200 dark:bg-yellow-950/40 dark:border-yellow-900' : 'bg-red-50 border-red-200 dark:bg-red-950/40 dark:border-red-900';
-              const confidenceLabel = confidence === 'High' ? '✓ High' : confidence === 'Med' ? '◐ Medium' : '✗ Low';
+              // FR-PLACEHOLDER: confidence label French wording (fiabilité, feminine) — Peggy to verify.
+              const confidenceLabel = language === 'fr'
+                ? (confidence === 'High' ? '✓ Élevée' : confidence === 'Med' ? '◐ Moyenne' : '✗ Faible')
+                : (confidence === 'High' ? '✓ High' : confidence === 'Med' ? '◐ Medium' : '✗ Low');
               const confidenceTextColor = confidence === 'High' ? 'text-green-700 dark:text-green-300' : confidence === 'Med' ? 'text-yellow-700 dark:text-yellow-300' : 'text-red-700 dark:text-red-300';
               const citationNum = sourceId ?? (idx + 1);
               const dName = language === 'fr' ? (nameFr || name) : name;
@@ -991,12 +1008,19 @@ export default function CountryPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
                       <p className="font-body text-sm font-medium text-[var(--cr-ink)] group-hover:text-[var(--cr-accent)] transition-colors">{dName}</p>
-                      {citationType && <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[var(--cr-border)] text-[var(--cr-accent)] rounded">{citationType}</span>}
+                      {/* FR-PLACEHOLDER: Fait / Interprétation wording — Peggy to verify. */}
+                      {citationType && (
+                        <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[var(--cr-border)] text-[var(--cr-accent)] rounded">
+                          {language === 'fr'
+                            ? (citationType === 'Interpretation' ? 'Interprétation' : 'Fait')
+                            : citationType}
+                        </span>
+                      )}
                     </div>
                     <p className="font-body text-xs text-[var(--cr-muted)] mb-2">{dDesc}</p>
                     <div className="flex flex-wrap gap-2 items-center text-[10px]">
-                      {publicationDate && <span className="text-[var(--cr-muted)]">Pub: {publicationDate}</span>}
-                      {accessDate && <span className="text-[var(--cr-muted)]">Accessed: {accessDate}</span>}
+                      {publicationDate && <span className="text-[var(--cr-muted)]">{language === 'fr' ? 'Pub. :' : 'Pub:'} {publicationDate}</span>}
+                      {accessDate && <span className="text-[var(--cr-muted)]">{language === 'fr' ? 'Consulté :' : 'Accessed:'} {accessDate}</span>}
                       {confidence && <span className={`font-medium ${confidenceTextColor}`}>{confidenceLabel}</span>}
                     </div>
                   </div>

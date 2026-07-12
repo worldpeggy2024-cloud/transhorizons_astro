@@ -163,6 +163,25 @@ function validateCountryFile(filePath) {
     }
   });
 
+  // JSON-in-text blocks must actually parse: a raw newline or unescaped quote
+  // inside a string silently blanks the corresponding card on the site (the
+  // adapter swallows parse failures), so fail loudly here instead.
+  const jsonTextFields = [
+    'actors_domestic_en', 'actors_domestic_fr',
+    'actors_external_en', 'actors_external_fr',
+    'risks_en', 'risks_fr',
+  ];
+  for (const k of jsonTextFields) {
+    const v = data[k];
+    if (typeof v !== 'string' || !v.trim()) continue;
+    try {
+      const parsed = JSON.parse(v);
+      if (!Array.isArray(parsed)) errors.push(`${k}: JSON-in-text must be an array`);
+    } catch (err) {
+      errors.push(`${k}: JSON-in-text does not parse (${err.message}) — this field renders EMPTY on the site`);
+    }
+  }
+
   const contentClone = { ...data };
   delete contentClone.sources;
 

@@ -242,7 +242,7 @@ political_powerStructure_fr: >-
   quatre sièges vacants. Le recul de 174 à 172 fait suite à deux démissions de
   députés libéraux [ourcommons-party-standings-2026]; à 172, le gouvernement se
   situe au seuil même de la majorité. Les élections partielles dans les
-  circonscriptions devenues vacantes constituent désormais le point de bascule :
+  circonscriptions devenues vacantes constituent désormais le point de bascule :
   reprendre les sièges libéraux rétablirait une marge de manœuvre, tandis que de
   nouvelles pertes dans ses propres rangs feraient reposer sa capacité de
   légiférer sans l'appui de l'opposition sur la voix prépondérante du président;
@@ -1538,8 +1538,8 @@ actors_domestic_fr: |-
     {
       "name": "Premier ministre Mark Carney / gouvernement libéral",
       "interests": "Faire avancer le programme législatif et budgétaire du gouvernement sans dépendre de l'opposition; préserver la cohésion d'un caucus élargi et idéologiquement hétérogène; négocier un allègement des droits de douane imposés par les États-Unis; honorer ses engagements en matière de logement et de défense",
-      "resources": "Autorité exécutive fédérale; majorité de travail aux Communes (172 sur 343) donnant la maîtrise de l'ordre du jour législatif et la capacité d'adopter des projets de loi sans les voix de l'opposition [ourcommons-party-standings-2026]; mandat de défense du budget 2025 (81,8 G$ sur 5 ans) et cadre budgétaire d'avril 2026 [budget-2025-canada-strong][seu-2026]; récentes nominations au Sénat facilitant le passage à la chambre haute [pmo-senate-2026]",
-      "constraints": "Majorité étroite (172 sur 343) atteinte en partie par des changements d'allégeance dont l'opposition conteste la légitimité; la contrainte déterminante est désormais la discipline de caucus plutôt que la négociation interpartis; marge budgétaire limitée : la directrice parlementaire du budget projette un déficit de 72 G$ pour 2025-2026 et le gouvernement de 65,3 G$ pour 2026-2027, des exercices financiers distincts sur une trajectoire décroissante [pbo-efo-jun2026][seu-2026]; inflation à 3,2 % restreignant davantage la marge de manœuvre budgétaire [statcan-cpi-may2026]",
+      "resources": "Autorité exécutive fédérale; majorité de travail aux Communes (172 sur 343) donnant la maîtrise de l'ordre du jour législatif et la capacité d'adopter des projets de loi sans les voix de l'opposition [ourcommons-party-standings-2026]; mandat de défense du budget 2025 (81,8 G$ sur 5 ans) et cadre budgétaire d'avril 2026 [budget-2025-canada-strong][seu-2026]; récentes nominations au Sénat facilitant le passage à la chambre haute [pmo-senate-2026]",
+      "constraints": "Majorité étroite (172 sur 343) atteinte en partie par des changements d'allégeance dont l'opposition conteste la légitimité; la contrainte déterminante est désormais la discipline de caucus plutôt que la négociation interpartis; marge budgétaire limitée : la directrice parlementaire du budget projette un déficit de 72 G$ pour 2025-2026 et le gouvernement de 65,3 G$ pour 2026-2027, des exercices financiers distincts sur une trajectoire décroissante [pbo-efo-jun2026][seu-2026]; inflation à 3,2 % restreignant davantage la marge de manœuvre budgétaire [statcan-cpi-may2026]",
       "likelyMoves": "Légiférer sans entente de soutien sans participation; gérer la cohésion du caucus et l'exposition aux partielles; dépenses ciblées en réponse aux droits de douane; mise à jour budgétaire d'automne; nominations sénatoriales continues pour faciliter l'adoption des projets de loi",
       "dealability": "Élevée, mais en position de force, avec peu de raisons de céder à l'opposition intérieure"
     },
@@ -1557,15 +1557,15 @@ actors_domestic_fr: |-
       "resources": "Base syndicale organisée; gains en assurance médicaments et en soins dentaires obtenus lors de la législature précédente; nouveau chef, Avi Lewis, élu le 29 mars 2026 [npd-lewis-leadership-2026]",
       "constraints": "Avec 5 sièges, le parti se situe sous le seuil de 12 sièges requis pour le statut de parti reconnu, ce qui limite fortement ses ressources parlementaires; son chef est actuellement extraparlementaire, sans siège; une majorité libérale lui retire le rapport de force qu'il détenait sous la minorité précédente; les libéraux continuent d'empiéter sur son flanc progressiste [ourcommons-party-standings-2026]",
       "likelyMoves": "Reconstruction extraparlementaire (campagnes publiques, mobilisation syndicale, positionnement sur la fiscalité des entreprises) sans levier de confiance à faire valoir",
-      "dealability": "Faible : disposé à négocier, mais avec peu à offrir sous une majorité"
+      "dealability": "Faible : disposé à négocier, mais avec peu à offrir sous une majorité"
     },
     {
       "name": "Bloc Québécois",
       "interests": "Faire avancer les intérêts du Québec (langue, culture, autonomie de compétences, autonomie en matière de pensions) à l'échelon fédéral",
       "resources": "Base électorale québécoise concentrée (~30 sièges et plus en conditions favorables; 21 à l'heure actuelle [ourcommons-party-standings-2026])",
-      "constraints": "Une majorité libérale retire au Bloc le rapport de force qu'il détenait sous la minorité précédente : il ne peut plus défaire le gouvernement ni trancher les dossiers québécois par ses voix [ourcommons-party-standings-2026]; l'électorat québécois sanctionne le Bloc lorsqu'il soutient des gouvernements perçus comme menaçant les intérêts provinciaux; les conditions de déclenchement d'un référendum sur la souveraineté demeurent dormantes [freedom-house-canada-2026]",
+      "constraints": "Une majorité libérale retire au Bloc le rapport de force qu'il détenait sous la minorité précédente : il ne peut plus défaire le gouvernement ni trancher les dossiers québécois par ses voix [ourcommons-party-standings-2026]; l'électorat québécois sanctionne le Bloc lorsqu'il soutient des gouvernements perçus comme menaçant les intérêts provinciaux; les conditions de déclenchement d'un référendum sur la souveraineté demeurent dormantes [freedom-house-canada-2026]",
       "likelyMoves": "Vote au cas par cas sans levier décisif; défense et positionnement sur les dossiers québécois; pression là où les décisions fédérales touchent la compétence provinciale",
-      "dealability": "Faible : réduite par rapport à la législature précédente"
+      "dealability": "Faible : réduite par rapport à la législature précédente"
     }
   ]
 actors_external_en: |-
@@ -1626,14 +1626,14 @@ actors_external_fr: |-
       "interests": "Importations canadiennes de ressources (énergie, minéraux, agro-alimentaire); influence diasporique; réduction de l'alignement canadien sur la politique des États-Unis de confinement dans l'Indo-Pacifique",
       "resources": "Ampleur de la relation commerciale canadienne; importante communauté diasporique; présence d'investissements dans les secteurs miniers et technologiques canadiens",
       "constraints": "Les allégations d'ingérence étrangère ont accru le contrôle du Service canadien du renseignement de sécurité; l'ACEUM limite la marge de manœuvre du Canada pour élargir ses liens économiques avec la Chine; règles du PTPGP [cgai-diplomats-guide-2026][gac-trade-diversification]",
-      "likelyMoves": "Maintenir la relation commerciale à son niveau actuel; user d'un levier économique sur l'accès agricole; mener des activités d'ingérence et d'intimidation visant les communautés diasporiques (que la Commission Hogue qualifie de « particulièrement vulnérables »), principalement dans le but d'étouffer les critiques et de contrôler l'image de la RPC, le plus souvent par des pressions exercées sur des proches restés en Chine [hogue-final-report-2025].",
+      "likelyMoves": "Maintenir la relation commerciale à son niveau actuel; user d'un levier économique sur l'accès agricole; mener des activités d'ingérence et d'intimidation visant les communautés diasporiques (que la Commission Hogue qualifie de « particulièrement vulnérables »), principalement dans le but d'étouffer les critiques et de contrôler l'image de la RPC, le plus souvent par des pressions exercées sur des proches restés en Chine [hogue-final-report-2025].",
       "dealability": "Low"
     },
     {
       "name": "Royaume-Uni",
       "interests": "Maintenir le partenariat de renseignement Five Eyes (Groupe des cinq); alignement commercial et diplomatique du Commonwealth post-Brexit; coordination dans le PTPGP",
       "resources": "Infrastructure de renseignement partagée; liens historiques du Commonwealth; co-adhésion au PTPGP [gac-trade-diversification]",
-      "constraints": "L'ajustement post-Brexit limite la capacité d'un engagement canadien majeur; l'éloignement géographique restreint la profondeur de la coopération en matière de défense; transition à la tête du gouvernement en cours : Keir Starmer a démissionné de la direction du Parti travailliste en juin 2026 et assure l'intérim au poste de premier ministre en attendant l'élection d'un successeur, ce qui introduit un risque de continuité à court terme.",
+      "constraints": "L'ajustement post-Brexit limite la capacité d'un engagement canadien majeur; l'éloignement géographique restreint la profondeur de la coopération en matière de défense; transition à la tête du gouvernement en cours : Keir Starmer a démissionné de la direction du Parti travailliste en juin 2026 et assure l'intérim au poste de premier ministre en attendant l'élection d'un successeur, ce qui introduit un risque de continuité à court terme.",
       "likelyMoves": "Approfondir la coopération canado-britannique en matière industrielle de défense, dans le prolongement de la déclaration conjointe de juillet 2026 sur le financement de la défense (Banque de défense, de sécurité et de résilience; Mécanisme multilatéral de défense) [pmo-carney-starmer-defence-2026]; coordination au sein du Groupe des cinq sur la Chine et la Russie; coopération dans le cadre du PTPGP. La continuité dépendra de la nouvelle direction travailliste.",
       "dealability": "High"
     }
@@ -1707,7 +1707,7 @@ risks_en: |-
 risks_fr: |-
   [
     {
-      "title": "Blocage permanent des droits de douane imposés par les États-Unis et érosion de l'ACEUM",
+      "title": "Verrouillage permanent des droits de douane imposés par les États-Unis et érosion de l'ACEUM",
       "trigger": "L'administration des États-Unis maintient ou élargit le régime tarifaire; la révision de l'ACEUM en 2026 n'apporte aucun allègement ou précipite une renégociation à des conditions défavorables pour le Canada",
       "probability": "High",
       "impact": "High",
@@ -1757,13 +1757,12 @@ risks_fr: |-
       "probability": "Med",
       "impact": "Med",
       "timeHorizon": "12–24 mois",
-      "leadingIndicators": "Suivi budgétaire trimestriel de la directrice parlementaire du budget [pbo-efo-jun2026]; écart entre la Mise à jour du printemps et l'énoncé d'automne [seu-2026]; révisions des agences de notation de crédit; trajectoire de la dette/PIB au titre de l'Article IV du FMI
-   [imf-can-2025-art4]",
+      "leadingIndicators": "Suivi budgétaire trimestriel de la directrice parlementaire du budget [pbo-efo-jun2026]; écart entre la Mise à jour du printemps et l'énoncé d'automne [seu-2026]; révisions des agences de notation de crédit; trajectoire de la dette/PIB au titre de l'Article IV du FMI [imf-can-2025-art4]",
       "mitigants": "La structure de dette à détention nationale du Canada limite la vulnérabilité envers les créanciers étrangers [imf-can-2025-art4]; flexibilité de la politique de la Banque du Canada; profil de crédit AAA/AA+ comme tampon; stabilisateurs budgétaires automatiques"
     },
     {
       "title": "Érosion de la confiance institutionnelle et risque de recul démocratique",
-      "trigger": "Le classement de Transparency International en matière de corruption continue de reculer (16e sur 182, son plus bas à ce jour, score en baisse graduelle depuis 2012); les préoccupations liées à l'ingérence étrangère s'intensifient; la légitimité de la majorité obtenue par changements d'allégeance demeure contestée; « repartisanisation » des nominations au Sénat (retrait du critère non partisan en juillet 2026) [pmo-senate-2026]",
+      "trigger": "Le classement de Transparency International en matière de corruption continue de reculer (16e sur 182, son plus bas à ce jour, score en baisse graduelle depuis 2012); les préoccupations liées à l'ingérence étrangère s'intensifient; la légitimité de la majorité obtenue par changements d'allégeance demeure contestée; « repartisanisation » des nominations au Sénat (retrait du critère non partisan en juillet 2026) [pmo-senate-2026]",
       "probability": "Low",
       "impact": "Med",
       "timeHorizon": "12–36 mois",
@@ -1776,7 +1775,7 @@ sources: |-
     {
       "id": "imf-can-2025-art4",
       "name": "IMF Canada: 2025 Article IV Consultation – Press Release and Staff Report",
-      "nameFr": "FMI — Canada : Consultation de 2025 au titre de l'article IV — Communiqué et rapport des services",
+      "nameFr": "FMI — Canada : Consultation de 2025 au titre de l'article IV — Communiqué et rapport des services",
       "url": "https://www.imf.org/en/publications/cr/issues/2026/01/21/canada-2025-article-iv-consultation-press-release-and-staff-report-5733",
       "desc": "IMF staff country report providing macro assessment, GDP trajectory, fiscal balance, monetary policy, trade exposure, and structural reform analysis for Canada as of January 2026.",
       "descFr": "Rapport-pays des services du FMI présentant l'évaluation macroéconomique, la trajectoire du PIB, le solde budgétaire, la politique monétaire, l'exposition commerciale et l'analyse des réformes structurelles du Canada en date de janvier 2026.",
@@ -1788,10 +1787,10 @@ sources: |-
     {
       "id": "boc-mpr-apr2026",
       "name": "Bank of Canada Monetary Policy Report – April 2026",
-      "nameFr": "Banque du Canada — Rapport sur la politique monétaire, avril 2026",
+      "nameFr": "Banque du Canada — Rapport sur la politique monétaire, avril 2026",
       "url": "https://www.bankofcanada.ca/publications/mpr/mpr-2026-04-29/",
       "desc": "Official BoC quarterly outlook covering GDP growth projections (1.2% in 2026), inflation (3.2% near-term, easing to 2% in 2027), policy rate held at 2.25%, and trade-uncertainty risks.",
-      "descFr": "Perspective trimestrielle officielle de la Banque du Canada couvrant les projections de croissance du PIB (1,2 % en 2026), l'inflation (3,2 % à court terme, revenant à 2 % en 2027), le taux directeur maintenu à 2,25 % et les risques liés à l'incertitude commerciale.",
+      "descFr": "Perspective trimestrielle officielle de la Banque du Canada couvrant les projections de croissance du PIB (1,2 % en 2026), l'inflation (3,2 % à court terme, revenant à 2 % en 2027), le taux directeur maintenu à 2,25 % et les risques liés à l'incertitude commerciale.",
       "publicationDate": "2026-04-29",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1800,10 +1799,10 @@ sources: |-
     {
       "id": "statcan-gdp-q1-2026",
       "name": "Statistics Canada – The Daily: GDP, Income and Expenditure, Q1 2026",
-      "nameFr": "Statistique Canada — Le Quotidien : Produit intérieur brut, revenus et dépenses, premier trimestre de 2026",
+      "nameFr": "Statistique Canada — Le Quotidien : Produit intérieur brut, revenus et dépenses, premier trimestre de 2026",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260529/dq260529a-eng.htm",
       "desc": "Official quarterly national accounts release showing real GDP was unchanged in Q1 2026 after a 0.2% decline in Q4 2025, providing the latest output performance figures.",
-      "descFr": "Communiqué officiel des comptes nationaux trimestriels indiquant que le PIB réel est demeuré stable au premier trimestre 2026 après un recul de 0,2 % au quatrième trimestre 2025, fournissant les données de production les plus récentes.",
+      "descFr": "Communiqué officiel des comptes nationaux trimestriels indiquant que le PIB réel est demeuré stable au premier trimestre 2026 après un recul de 0,2 % au quatrième trimestre 2025, fournissant les données de production les plus récentes.",
       "publicationDate": "2026-05-28",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1812,10 +1811,10 @@ sources: |-
     {
       "id": "gac-state-of-trade-2025",
       "name": "Global Affairs Canada – Canada's State of Trade 2025",
-      "nameFr": "Affaires mondiales Canada — Le commerce international du Canada 2025",
+      "nameFr": "Affaires mondiales Canada — Le commerce international du Canada 2025",
       "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/state-trade/2025",
       "desc": "Annual government trade report documenting Canada's export ($997B) and import ($1T+) totals for 2024, sector performance, and partner concentration, with SME focus.",
-      "descFr": "Rapport commercial gouvernemental annuel documentant les exportations (997 G$) et importations (plus de 1 000 G$) totales du Canada en 2024, la performance sectorielle et la concentration des partenaires, avec un accent sur les PME.",
+      "descFr": "Rapport commercial gouvernemental annuel documentant les exportations (997 G$) et importations (plus de 1 000 G$) totales du Canada en 2024, la performance sectorielle et la concentration des partenaires, avec un accent sur les PME.",
       "publicationDate": "2025-06-22",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1824,10 +1823,10 @@ sources: |-
     {
       "id": "gac-quarterly-trade-spring2026",
       "name": "Global Affairs Canada – Quarterly Economic and Trade Report: Spring 2026",
-      "nameFr": "Affaires mondiales Canada — Rapport économique et commercial trimestriel : printemps 2026",
+      "nameFr": "Affaires mondiales Canada — Rapport économique et commercial trimestriel : printemps 2026",
       "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/quarterly/spring-2026",
       "desc": "Quarterly government report confirming real GDP grew 1.7% in full-year 2025, Q4 2025 contraction of 0.6% (annualized), and BoC projection of 1.1% growth in 2026.",
-      "descFr": "Rapport gouvernemental trimestriel confirmant une croissance du PIB réel de 1,7 % sur l'ensemble de 2025, une contraction de 0,6 % (annualisée) au quatrième trimestre 2025 et une projection de la Banque du Canada de 1,1 % de croissance en 2026.",
+      "descFr": "Rapport gouvernemental trimestriel confirmant une croissance du PIB réel de 1,7 % sur l'ensemble de 2025, une contraction de 0,6 % (annualisée) au quatrième trimestre 2025 et une projection de la Banque du Canada de 1,1 % de croissance en 2026.",
       "publicationDate": "2026-03-31",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1836,10 +1835,10 @@ sources: |-
     {
       "id": "seu-2026",
       "name": "Government of Canada – Spring Economic Update 2026: Economic and Fiscal Overview",
-      "nameFr": "Gouvernement du Canada — Mise à jour économique du printemps 2026 : aperçu de la situation économique et budgétaire",
+      "nameFr": "Gouvernement du Canada — Mise à jour économique du printemps 2026 : aperçu de la situation économique et budgétaire",
       "url": "https://budget.canada.ca/update-miseajour/2026/report-rapport/overview-apercu-en.html",
       "desc": "Official federal Spring Economic Update 2026 ('Canada strong for all'): projects a $65.3B deficit (1.9% of GDP) for FY2026-27 with a declining deficit track; announces the Canada Strong Fund (a national sovereign wealth fund) and builds on the $13B Build Canada Homes housing plan.",
-      "descFr": "Mise à jour économique du printemps 2026 (« Un Canada fort pour tous »), fédérale et officielle : projette un déficit de 65,3 G$ (1,9 % du PIB) pour l'exercice 2026-2027 avec une trajectoire de déficit en baisse; annonce le Fonds pour un Canada fort (fonds souverain national) et s'appuie sur le plan de logement Maisons Canada de 13 G$.",
+      "descFr": "Mise à jour économique du printemps 2026 (« Un Canada fort pour tous »), fédérale et officielle : projette un déficit de 65,3 G$ (1,9 % du PIB) pour l'exercice 2026-2027 avec une trajectoire de déficit en baisse; annonce le Fonds pour un Canada fort (fonds souverain national) et s'appuie sur le plan de logement Maisons Canada de 13 G$.",
       "publicationDate": "2026-04-27",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1848,10 +1847,10 @@ sources: |-
     {
       "id": "pbo-efo-jun2026",
       "name": "Parliamentary Budget Office – Economic and Fiscal Outlook, June 2026",
-      "nameFr": "Bureau de la directrice parlementaire du budget — Perspectives économiques et financières, juin 2026",
+      "nameFr": "Bureau de la directrice parlementaire du budget — Perspectives économiques et financières, juin 2026",
       "url": "https://www.pbo-dpb.ca/en/publications/RP-2627-002-S--economic-fiscal-outlook-june-2026--perspectives-economiques-financieres-juin-2026",
       "desc": "Independent federal fiscal watchdog report projecting a $72B deficit (2.2% of GDP) in 2025-26, real GDP growth of 1.1% in 2026, with US tariffs treated as permanent.",
-      "descFr": "Rapport de l'organisme indépendant de surveillance budgétaire fédéral projetant un déficit de 72 G$ (2,2 % du PIB) en 2025-2026 et une croissance du PIB réel de 1,1 % en 2026, les droits de douane imposés par les États-Unis étant considérés comme permanents.",
+      "descFr": "Rapport de l'organisme indépendant de surveillance budgétaire fédéral projetant un déficit de 72 G$ (2,2 % du PIB) en 2025-2026 et une croissance du PIB réel de 1,1 % en 2026, les droits de douane imposés par les États-Unis étant considérés comme permanents.",
       "publicationDate": "2026-06-03",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1860,10 +1859,10 @@ sources: |-
     {
       "id": "oecd-eo-june2026",
       "name": "OECD Economic Outlook, Volume 2026 Issue 1 (June 2026)",
-      "nameFr": "OCDE — Perspectives économiques, volume 2026 numéro 1 (juin 2026)",
+      "nameFr": "OCDE — Perspectives économiques, volume 2026 numéro 1 (juin 2026)",
       "url": "https://www.oecd.org/en/publications/2026/06/oecd-economic-outlook-volume-2026-issue-1_8be0dba6.html",
       "desc": "OECD flagship outlook forecasting Canada's GDP growth at 1.2% in 2026 and 1.7% in 2027, with analysis of tariff headwinds, household consumption, and energy sector as growth driver.",
-      "descFr": "Perspective phare de l'OCDE prévoyant une croissance du PIB du Canada de 1,2 % en 2026 et de 1,7 % en 2027, avec une analyse des pressions tarifaires, de la consommation des ménages et du secteur énergétique comme moteur de croissance.",
+      "descFr": "Perspective phare de l'OCDE prévoyant une croissance du PIB du Canada de 1,2 % en 2026 et de 1,7 % en 2027, avec une analyse des pressions tarifaires, de la consommation des ménages et du secteur énergétique comme moteur de croissance.",
       "publicationDate": "2026-06-02",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1872,10 +1871,10 @@ sources: |-
     {
       "id": "statcan-cpi-may2026",
       "name": "Statistics Canada – The Daily: Consumer Price Index, May 2026",
-      "nameFr": "Statistique Canada — Le Quotidien : Indice des prix à la consommation, mai 2026",
+      "nameFr": "Statistique Canada — Le Quotidien : Indice des prix à la consommation, mai 2026",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260622/dq260622a-eng.htm",
       "desc": "Official CPI release showing Canada's headline inflation rose to 3.2% year-over-year in May 2026, driven by gasoline (+33.2% y/y) and food price acceleration.",
-      "descFr": "Communiqué officiel de l'IPC indiquant que l'inflation globale du Canada est passée à 3,2 % sur un an en mai 2026, portée par l'essence (+33,2 % sur un an) et l'accélération des prix des aliments.",
+      "descFr": "Communiqué officiel de l'IPC indiquant que l'inflation globale du Canada est passée à 3,2 % sur un an en mai 2026, portée par l'essence (+33,2 % sur un an) et l'accélération des prix des aliments.",
       "publicationDate": "2026-06-22",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1884,10 +1883,10 @@ sources: |-
     {
       "id": "statcan-lfs-may2026",
       "name": "Statistics Canada – The Daily: Labour Force Survey, May 2026",
-      "nameFr": "Statistique Canada — Le Quotidien : Enquête sur la population active, mai 2026",
+      "nameFr": "Statistique Canada — Le Quotidien : Enquête sur la population active, mai 2026",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260605/dq260605a-eng.htm",
       "desc": "Monthly labour market release showing employment rose 88,000 (+0.4%) in May 2026, unemployment rate fell to 6.6%, and employment rate reached 60.7%.",
-      "descFr": "Communiqué mensuel sur le marché du travail indiquant une hausse de l'emploi de 88 000 (+0,4 %) en mai 2026, un taux de chômage en baisse à 6,6 % et un taux d'emploi atteignant 60,7 %.",
+      "descFr": "Communiqué mensuel sur le marché du travail indiquant une hausse de l'emploi de 88 000 (+0,4 %) en mai 2026, un taux de chômage en baisse à 6,6 % et un taux d'emploi atteignant 60,7 %.",
       "publicationDate": "2026-06-04",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1896,10 +1895,10 @@ sources: |-
     {
       "id": "statcan-pop-quarterly",
       "name": "Statistics Canada – Population Estimates, Quarterly (Table 17-10-0009-01)",
-      "nameFr": "Statistique Canada — Estimations de la population, trimestrielles (tableau 17-10-0009-01)",
+      "nameFr": "Statistique Canada — Estimations de la population, trimestrielles (tableau 17-10-0009-01)",
       "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901",
       "desc": "Official quarterly demographic estimates placing Canada's population at 41,472,081 on 1 January 2026, down 102,436 (−0.2%) over 2025, driven by a declining non-permanent-resident population; preliminary estimates subject to revision.",
-      "descFr": "Estimations démographiques trimestrielles officielles établissant la population du Canada à 41 472 081 au 1er janvier 2026, en baisse de 102 436 (−0,2 %) sur l'année 2025, sous l'effet du recul des résidents non permanents; estimations préliminaires sujettes à révision.",
+      "descFr": "Estimations démographiques trimestrielles officielles établissant la population du Canada à 41 472 081 au 1er janvier 2026, en baisse de 102 436 (−0,2 %) sur l'année 2025, sous l'effet du recul des résidents non permanents; estimations préliminaires sujettes à révision.",
       "accessDate": "2026-06-28",
       "confidence": "High",
       "citationType": "Fact"
@@ -1907,10 +1906,10 @@ sources: |-
     {
       "id": "statcan-pop-age-jul2025",
       "name": "Statistics Canada – The Daily: Population Estimates: Age and Gender, July 1, 2025",
-      "nameFr": "Statistique Canada — Le Quotidien : Estimations de la population selon l'âge et le genre, 1er juillet 2025",
+      "nameFr": "Statistique Canada — Le Quotidien : Estimations de la population selon l'âge et le genre, 1er juillet 2025",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250924/dq250924a-eng.htm",
       "desc": "Official age-structure release confirming Canada's population of 41,651,653 on July 1, 2025 and updated median age data showing aging population trend.",
-      "descFr": "Communiqué officiel sur la structure par âge confirmant une population de 41 651 653 au 1er juillet 2025 et des données actualisées sur l'âge médian témoignant du vieillissement de la population.",
+      "descFr": "Communiqué officiel sur la structure par âge confirmant une population de 41 651 653 au 1er juillet 2025 et des données actualisées sur l'âge médian témoignant du vieillissement de la population.",
       "publicationDate": "2025-09-23",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1919,8 +1918,8 @@ sources: |-
     {
       "id": "statcan-pop-projections-2026",
       "name": "Statistics Canada – Population Projections for Canada, Provinces and Territories, 2025 to 2075",
-      "nameFr": "Statistique Canada — Projections démographiques pour le Canada, les provinces et les territoires, 2025 à 2075",
-      "url": "https://publications.gc.ca/collections/collection_2026/statcan/172000032026001-eng.pdf",
+      "nameFr": "Statistique Canada — Projections démographiques pour le Canada, les provinces et les territoires, 2025 à 2075",
+      "url": "https://www150.statcan.gc.ca/n1/pub/17-20-0003/172000032026001-eng.htm",
       "desc": "Official long-range demographic projections covering moderate (57.4M by 2075) and low-growth scenarios, fertility, mortality, and migration assumptions.",
       "descFr": "Projections démographiques officielles à long terme couvrant les scénarios de croissance moyenne (57,4 M d'ici 2075) et faible, ainsi que les hypothèses de fécondité, de mortalité et de migration.",
       "publicationDate": "2026-01-26",
@@ -1931,7 +1930,7 @@ sources: |-
     {
       "id": "statcan-2021-census-ethno-religion",
       "name": "Statistics Canada – 2021 Census of Population: Ethnocultural and Religious Diversity (Topic Hub)",
-      "nameFr": "Statistique Canada — Recensement de la population de 2021 : diversité ethnoculturelle et religieuse (carrefour thématique)",
+      "nameFr": "Statistique Canada — Recensement de la population de 2021 : diversité ethnoculturelle et religieuse (carrefour thématique)",
       "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethno-religion-eng.cfm",
       "desc": "Primary census data hub for 2021 religious and ethnocultural composition.",
       "descFr": "Principal carrefour de données du recensement de 2021 sur la composition religieuse et ethnoculturelle.",
@@ -1943,7 +1942,7 @@ sources: |-
     {
       "id": "statcan-2021-census-language",
       "name": "Statistics Canada – 2021 Census of Population: Language (Topic Hub)",
-      "nameFr": "Statistique Canada — Recensement de la population de 2021 : langue (carrefour thématique)",
+      "nameFr": "Statistique Canada — Recensement de la population de 2021 : langue (carrefour thématique)",
       "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/language-langue-eng.cfm",
       "desc": "Primary census data hub for 2021 language composition.",
       "descFr": "Principal carrefour de données du recensement de 2021 sur la composition linguistique.",
@@ -1955,10 +1954,10 @@ sources: |-
     {
       "id": "statcan-2021-indigenous-profile",
       "name": "Statistics Canada – Indigenous Population Profile, 2021 Census of Population",
-      "nameFr": "Statistique Canada — Profil de la population autochtone, Recensement de la population de 2021",
+      "nameFr": "Statistique Canada — Profil de la population autochtone, Recensement de la population de 2021",
       "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/ipp-ppa/index.cfm?Lang=E",
       "desc": "Census profile for the 1.8 million Indigenous persons (5.0% of population) covering First Nations, Métis, and Inuit with age, gender, and socio-demographic characteristics.",
-      "descFr": "Profil du recensement portant sur les 1,8 million de personnes autochtones (5,0 % de la population), couvrant les Premières Nations, les Métis et les Inuits selon l'âge, le genre et les caractéristiques sociodémographiques.",
+      "descFr": "Profil du recensement portant sur les 1,8 million de personnes autochtones (5,0 % de la population), couvrant les Premières Nations, les Métis et les Inuits selon l'âge, le genre et les caractéristiques sociodémographiques.",
       "publicationDate": "2023-06-20",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -1967,7 +1966,7 @@ sources: |-
     {
       "id": "statcan-css-trust-institutions-q4-2024",
       "name": "Statistics Canada – Confidence in Institutions, Canadian Social Survey Q4 2024",
-      "nameFr": "Statistique Canada — Confiance envers les institutions, Enquête sociale canadienne T4 2024",
+      "nameFr": "Statistique Canada — Confiance envers les institutions, Enquête sociale canadienne T4 2024",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260106/dq260106c-eng.htm",
       "desc": "Official government survey data on Canadians' institutional confidence (federal government, courts, police, media) collected November–December 2024.",
       "descFr": "Données d'enquête gouvernementale officielle sur la confiance de la populations canadienne envers les institutions (gouvernement fédéral, tribunaux, police, médias), recueillies en novembre-décembre 2024.",
@@ -1979,7 +1978,7 @@ sources: |-
     {
       "id": "statcan-css-trust-others",
       "name": "Statistics Canada – Quality of Life Indicator: Trust in Others (Canadian Social Survey 2022–2024)",
-      "nameFr": "Statistique Canada — Indicateur de qualité de vie : confiance à l'égard des autres (Enquête sociale canadienne 2022-2024)",
+      "nameFr": "Statistique Canada — Indicateur de qualité de vie : confiance à l'égard des autres (Enquête sociale canadienne 2022-2024)",
       "url": "https://www.statcan.gc.ca/hub-carrefour/quality-life-qualite-vie/society-societe/trust-confiance-eng.htm",
       "desc": "Longitudinal indicator showing the share of Canadians reporting that most people can be trusted, providing interpersonal social trust baseline for cohesion analysis.",
       "descFr": "Indicateur longitudinal indiquant la proportion de la population canadienne estimant pouvoir faire confiance à la plupart des gens, fournissant une référence de confiance sociale interpersonnelle pour l'analyse de la cohésion.",
@@ -1990,7 +1989,7 @@ sources: |-
     {
       "id": "wvs-canada",
       "name": "World Values Survey – Canada",
-      "nameFr": "World Values Survey — Canada",
+      "nameFr": "World Values Survey — Canada",
       "url": "https://www.worldvaluessurvey.org/WVSContents.jsp",
       "desc": "World Values Survey for Canada providing citizen self-report measures of interpersonal trust, institutional confidence, national identity, and political values.",
       "descFr": "Microdonnées du Sondage mondial sur les valeurs pour le Canada, fournissant des mesures autodéclarées par les citoyens sur la confiance interpersonnelle, la confiance envers les institutions, l'identité nationale et les valeurs politiques.",
@@ -2001,7 +2000,7 @@ sources: |-
     {
       "id": "freedom-house-canada-2026",
       "name": "Freedom House – Canada: Freedom in the World 2026 Country Report",
-      "nameFr": "Freedom House — Canada : rapport-pays Liberté dans le monde 2026",
+      "nameFr": "Freedom House — Canada : rapport-pays Liberté dans le monde 2026",
       "url": "https://freedomhouse.org/country/canada/freedom-world/2026",
       "desc": "Annual political rights and civil liberties assessment for Canada for 2026, covering electoral integrity, media freedom, judicial independence, and minority rights.",
       "descFr": "Évaluation annuelle des droits politiques et des libertés civiles du Canada pour 2026, couvrant l'intégrité électorale, la liberté de la presse, l'indépendance judiciaire et les droits des minorités.",
@@ -2012,7 +2011,7 @@ sources: |-
     {
       "id": "wjp-canada-2025",
       "name": "World Justice Project – Canada: WJP Rule of Law Index 2025 Country Fact Sheet",
-      "nameFr": "World Justice Project — Canada : fiche-pays de l'Indice de l'État de droit 2025",
+      "nameFr": "World Justice Project — Canada: WJP Rule of Law Index 2025 Country Fact Sheet",
       "url": "https://worldjusticeproject.org/sites/default/files/documents/Canada_3.pdf",
       "desc": "WJP fact sheet showing Canada ranked 13th out of 143 countries on the Rule of Law Index 2025, with sub-scores on constraints on government, absence of corruption, open government, and civil justice.",
       "descFr": "Fiche du WJP indiquant que le Canada se classe 13e sur 143 pays à l'Indice de l'État de droit 2025, avec des sous-scores sur les limites au pouvoir gouvernemental, l'absence de corruption, le gouvernement ouvert et la justice civile.",
@@ -2024,7 +2023,7 @@ sources: |-
     {
       "id": "ti-cpi-2025",
       "name": "Transparency International – Corruption Perceptions Index 2025",
-      "nameFr": "Transparency International — Indice de perception de la corruption 2025",
+      "nameFr": "Transparency International — Indice de perception de la corruption 2025",
       "url": "https://www.transparency.org/en/cpi/2025",
       "desc": "Annual CPI placing Canada 16th out of 182 countries with a score of 75/100 reflecting perceived corruption in public sector institutions.",
       "descFr": "IPC annuel plaçant le Canada 16e sur 182 pays avec un score de 75/100 reflétant la corruption perçue dans les institutions du secteur public.",
@@ -2036,7 +2035,7 @@ sources: |-
     {
       "id": "vdem-democracy-report-2026",
       "name": "V-Dem Institute – Democracy Report 2026: Unraveling the Democratic Era?",
-      "nameFr": "Institut V-Dem — Rapport sur la démocratie 2026",
+      "nameFr": "Institut V-Dem — Rapport sur la démocratie 2026",
       "url": "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
       "desc": "V-Dem 2026 democracy report classifying Canada as a Liberal Democracy ranked 23rd globally on the Liberal Democracy Index, with context on regional backsliding trends.",
       "descFr": "Rapport V-Dem 2026 sur la démocratie classant le Canada comme démocratie libérale, au 23e rang mondial à l'Indice de démocratie libérale, avec une mise en contexte des tendances régionales de recul démocratique.",
@@ -2048,7 +2047,7 @@ sources: |-
     {
       "id": "sipri-milex-2025",
       "name": "SIPRI – Trends in World Military Expenditure, 2025 (Fact Sheet)",
-      "nameFr": "SIPRI — Tendances des dépenses militaires mondiales, 2025 (fiche d'information)",
+      "nameFr": "SIPRI — Tendances des dépenses militaires mondiales, 2025 (fiche d'information)",
       "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
       "desc": "SIPRI annual fact sheet providing Canada's military expenditure for 2025 in the global context, used to assess Canada's defence burden relative to NATO commitments.",
       "descFr": "Fiche d'information annuelle du SIPRI consignant les dépenses militaires du Canada pour 2025 dans le contexte mondial, servant à évaluer le fardeau de défense du Canada au regard de ses engagements envers l'OTAN.",
@@ -2060,10 +2059,10 @@ sources: |-
     {
       "id": "dnd-departmental-results-2024-25",
       "name": "Department of National Defence – Departmental Results Report 2024–25",
-      "nameFr": "Ministère de la Défense nationale — Rapport sur les résultats ministériels 2024-2025",
+      "nameFr": "Ministère de la Défense nationale — Rapport sur les résultats ministériels 2024-2025",
       "url": "https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-results-report/2024-25-index.html",
       "desc": "Official DND annual results report detailing CAF missions, NORAD modernization investments ($38.6B over 20 years), personnel readiness, and Arctic security operations.",
-      "descFr": "Rapport annuel officiel du ministère de la Défense nationale détaillant les missions des Forces armées canadiennes, les investissements de modernisation du NORAD (38,6 G$ sur 20 ans), l'état de préparation du personnel et les opérations de sécurité dans l'Arctique.",
+      "descFr": "Rapport annuel officiel du ministère de la Défense nationale détaillant les missions des Forces armées canadiennes, les investissements de modernisation du NORAD (38,6 G$ sur 20 ans), l'état de préparation du personnel et les opérations de sécurité dans l'Arctique.",
       "publicationDate": "2025-11-06",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -2072,10 +2071,10 @@ sources: |-
     {
       "id": "pbo-defence-capital-2025",
       "name": "Parliamentary Budget Office – Planned Capital Spending Under Canada's Defence Policy: 2025 Update",
-      "nameFr": "Bureau de la directrice parlementaire du budget — Dépenses en capital prévues au titre de la politique de défense du Canada : mise à jour 2025",
+      "nameFr": "Bureau de la directrice parlementaire du budget — Dépenses en capital prévues au titre de la politique de défense du Canada : mise à jour 2025",
       "url": "https://www.pbo-dpb.ca/en/publications/RP-2526-016-S--planned-capital-spending-under-canada-defence-policy-2025-update--depenses-capital-prevues-politique-defense-canada-mise-jour-2025",
       "desc": "Independent cost analysis of DND's 20-year capital plan ($322.9B total), including the $81.8B Budget 2025 defence announcement and NATO 2% GDP commitment pathway.",
-      "descFr": "Analyse indépendante des coûts du plan d'immobilisations de 20 ans du ministère de la Défense nationale (322,9 G$ au total), incluant l'annonce de défense de 81,8 G$ du budget 2025 et la trajectoire vers l'engagement de 2 % du PIB de l'OTAN.",
+      "descFr": "Analyse indépendante des coûts du plan d'immobilisations de 20 ans du ministère de la Défense nationale (322,9 G$ au total), incluant l'annonce de défense de 81,8 G$ du budget 2025 et la trajectoire vers l'engagement de 2 % du PIB de l'OTAN.",
       "publicationDate": "2025-10-28",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -2084,10 +2083,10 @@ sources: |-
     {
       "id": "cgai-diplomats-guide-2026",
       "name": "Canadian Global Affairs Institute – The Diplomat's Guide to Canada 2026",
-      "nameFr": "Institut canadien des affaires mondiales — Le guide du diplomate sur le Canada 2026",
+      "nameFr": "Institut canadien des affaires mondiales — Le guide du diplomate sur le Canada 2026",
       "url": "https://www.cgai.ca/primer_the_diplomats_guide_to_canada_2026",
       "desc": "Policy institute primer on Canada's 2026 foreign and defence posture: Arctic investment, EU Security and Defence Partnership, Five Eyes, NATO, trade diversification strategy.",
-      "descFr": "Note de synthèse de l'institut sur la posture canadienne en matière d'affaires étrangères et de défense pour 2026 : investissements dans l'Arctique, Partenariat de sécurité et de défense avec l'Union européenne, Groupe des cinq, OTAN, stratégie de diversification commerciale.",
+      "descFr": "Note de synthèse de l'institut sur la posture canadienne en matière d'affaires étrangères et de défense pour 2026 : investissements dans l'Arctique, Partenariat de sécurité et de défense avec l'Union européenne, Groupe des cinq, OTAN, stratégie de diversification commerciale.",
       "publicationDate": "2026-02-28",
       "accessDate": "2026-06-28",
       "confidence": "Med",
@@ -2096,7 +2095,7 @@ sources: |-
     {
       "id": "gac-trade-diversification",
       "name": "Global Affairs Canada – Diversifying Trade for Canada",
-      "nameFr": "Affaires mondiales Canada — Diversifier le commerce du Canada",
+      "nameFr": "Affaires mondiales Canada — Diversifier le commerce du Canada",
       "url": "https://international.canada.ca/en/global-affairs/campaigns/diversifying-trade",
       "desc": "Official government page on Canada's 15 free trade agreements covering 51 countries, Indo-Pacific Strategy, CPTPP, CETA, and trade diversification objectives beyond the US.",
       "descFr": "Page gouvernementale officielle sur les 15 accords de libre-échange du Canada couvrant 51 pays, la Stratégie indo-pacifique, le PTPGP, l'AECG et les objectifs de diversification commerciale au-delà des États-Unis.",
@@ -2107,7 +2106,7 @@ sources: |-
     {
       "id": "statcan-international-trade",
       "name": "Statistics Canada – International Trade Statistics Portal",
-      "nameFr": "Statistique Canada — Portail des statistiques sur le commerce international",
+      "nameFr": "Statistique Canada — Portail des statistiques sur le commerce international",
       "url": "https://www.statcan.gc.ca/en/subjects-start/international_trade",
       "desc": "Statistics Canada's portal for monthly and annual merchandise and services trade data, showing April 2026 total trade at $92.9B and partner/commodity breakdowns.",
       "descFr": "Portail de Statistique Canada présentant les données commerciales mensuelles et annuelles de marchandises et de services, indiquant le commerce total et des ventilations par partenaire et par produit.",
@@ -2118,10 +2117,10 @@ sources: |-
     {
       "id": "pbo-ircc-immigration-demographic",
       "name": "Parliamentary Budget Office – Demographic Implications of the 2026–2028 Immigration Levels Plan",
-      "nameFr": "Bureau de la directrice parlementaire du budget — Implications démographiques du Plan des niveaux d'immigration 2026-2028",
+      "nameFr": "Bureau de la directrice parlementaire du budget — Implications démographiques du Plan des niveaux d'immigration 2026-2028",
       "url": "https://www.pbo-dpb.ca/en/publications/RP-2526-025-S--demographic-implications-2026-2028-immigration-levels-plan--implications-demographiques-plan-niveaux-immigration-2026-2028",
       "desc": "PBO analysis of the 380,000 annual PR target, NPR population reduction to under 5% of population by end-2027, and projected demographic and fiscal implications.",
-      "descFr": "Analyse de la directrice parlementaire du budget sur la cible annuelle de 380 000 résidents permanents, la réduction de la population de résidents non permanents à moins de 5 % de la population d'ici la fin de 2027, et les répercussions démographiques et budgétaires projetées.",
+      "descFr": "Analyse de la directrice parlementaire du budget sur la cible annuelle de 380 000 résidents permanents, la réduction de la population de résidents non permanents à moins de 5 % de la population d'ici la fin de 2027, et les répercussions démographiques et budgétaires projetées.",
       "publicationDate": "2026-02-25",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -2130,7 +2129,7 @@ sources: |-
     {
       "id": "budget-2025-canada-strong",
       "name": "Government of Canada – Budget 2025: Our Plan: Building Canada Strong",
-      "nameFr": "Gouvernement du Canada — Budget 2025 : Notre plan : bâtir un Canada fort",
+      "nameFr": "Gouvernement du Canada — Budget 2025 : Notre plan : bâtir un Canada fort",
       "url": "https://budget.canada.ca/2025/report-rapport/intro-en.html",
       "desc": "Federal budget introducing the defence spending level over 5 years, a productivity super-deduction, and proposing a Critical Minerals Sovereign Fund.",
       "descFr": "Budget fédéral présentant le niveau de dépenses de défense sur 5 ans, une super-déduction pour la productivité, et proposant la création d'un Fonds souverain pour les minéraux critiques.",
@@ -2142,7 +2141,7 @@ sources: |-
     {
       "id": "ourcommons-party-standings-2026",
       "name": "House of Commons of Canada – Party Standings",
-      "nameFr": "Chambre des communes du Canada — Position des partis",
+      "nameFr": "Chambre des communes du Canada — Position des partis",
       "url": "https://www.ourcommons.ca/members/en/party-standings",
       "desc": "Authoritative current distribution of seats among parties in the House of Commons.",
       "descFr": "Répartition officielle et actuelle des sièges entre les partis à la Chambre des communes.",
@@ -2153,7 +2152,7 @@ sources: |-
     {
       "id": "cbc-carney-majority-byelections-2026",
       "name": "CBC News – Carney clinches a majority government with 3 Liberal byelection wins",
-      "nameFr": "CBC News — Carney clinches a majority government with 3 Liberal byelection wins",
+      "nameFr": "CBC News — Carney clinches a majority government with 3 Liberal byelection wins",
       "url": "https://www.cbc.ca/news/politics/byelection-liberal-conservatives-carney-majority-government-9.7161054",
       "desc": "Reports the Liberals reaching a 174-seat majority on 14 April 2026 via three by-election wins combined with five floor crossings (four Conservative, one NDP); notes it is the first time a PM has reached a majority partly through floor crossing, and the Conservative opposition's contestation of its legitimacy.",
       "descFr": "Rapporte l'atteinte par les Libéraux d'une majorité de 174 sièges le 14 avril 2026 grâce à trois victoires en élections partielles combinées à cinq changements d'allégeance (quatre conservateurs, un néo-démocrate); souligne qu'il s'agit de la première fois qu'un premier ministre atteint une majorité en partie par changement d'allégeance, et la contestation de sa légitimité par l'opposition conservatrice.",
@@ -2165,10 +2164,10 @@ sources: |-
     {
       "id": "statcan-12100011-ptp-exports",
       "name": "Statistics Canada – International merchandise trade by Principal Trading Partners (Table 12-10-0011)",
-      "nameFr": "Statistique Canada — Commerce international de marchandises par principaux partenaires commerciaux (tableau 12-10-0011)",
+      "nameFr": "Statistique Canada — Commerce international de marchandises par principaux partenaires commerciaux (tableau 12-10-0011)",
       "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1210001101",
       "desc": "Monthly merchandise exports and imports by principal trading partner, seasonally adjusted, balance-of-payments basis. Exports to the United States were 75.9% of total merchandise exports in 2024 ($590.0B of $777.6B), easing to approximately 68% across January–April 2026.",
-      "descFr": "Exportations et importations mensuelles de marchandises par principal partenaire commercial, désaisonnalisées, sur la base de la balance des paiements. Les exportations vers les États-Unis représentaient 75,9 % du total des exportations de marchandises en 2024 (590,0 G$ sur 777,6 G$), revenant à environ 68 % de janvier à avril 2026.",
+      "descFr": "Exportations et importations mensuelles de marchandises par principal partenaire commercial, désaisonnalisées, sur la base de la balance des paiements. Les exportations vers les États-Unis représentaient 75,9 % du total des exportations de marchandises en 2024 (590,0 G$ sur 777,6 G$), revenant à environ 68 % de janvier à avril 2026.",
       "accessDate": "2026-07-06",
       "confidence": "High",
       "citationType": "Fact"
@@ -2176,7 +2175,7 @@ sources: |-
     {
       "id": "statcan-daily-imt-april-2026",
       "name": "Statistics Canada – The Daily: Canadian international merchandise trade, April 2026",
-      "nameFr": "Statistique Canada — Le Quotidien : Commerce international de marchandises du Canada, avril 2026",
+      "nameFr": "Statistique Canada — Le Quotidien : Commerce international de marchandises du Canada, avril 2026",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260609/dq260609a-eng.htm",
       "desc": "Monthly merchandise trade release.",
       "descFr": "Communiqué mensuel sur le commerce de marchandises.",
@@ -2188,10 +2187,10 @@ sources: |-
     {
       "id": "pmo-canada-strong-fund-2026",
       "name": "Prime Minister's Office – Prime Minister Carney announces the Canada Strong Fund, Canada's first sovereign wealth fund",
-      "nameFr": "Cabinet du premier ministre — Le premier ministre Carney annonce le Fonds pour un Canada fort, le premier fonds souverain du Canada",
+      "nameFr": "Cabinet du premier ministre — Le premier ministre Carney annonce le Fonds pour un Canada fort, le premier fonds souverain du Canada",
       "url": "https://www.pm.gc.ca/en/news/news-releases/2026/04/27/prime-minister-carney-announces-canada-strong-fund-canadas-first",
       "desc": "Prime Minister's Office news release (27 April 2026) announcing the Canada Strong Fund, a $25B national sovereign wealth fund — a broader vehicle distinct from the narrower Critical Minerals Sovereign Fund that Budget 2025 only proposed.",
-      "descFr": "Communiqué du Cabinet du premier ministre (27 avril 2026) annonçant le Fonds pour un Canada fort, un fonds souverain national de 25 G$; véhicule plus large et distinct du Fonds souverain pour les minéraux critiques, plus restreint, que le budget 2025 s'était limité à proposer.",
+      "descFr": "Communiqué du Cabinet du premier ministre (27 avril 2026) annonçant le Fonds pour un Canada fort, un fonds souverain national de 25 G$; véhicule plus large et distinct du Fonds souverain pour les minéraux critiques, plus restreint, que le budget 2025 s'était limité à proposer.",
       "publicationDate": "2026-04-27",
       "accessDate": "2026-07-06",
       "confidence": "High",
@@ -2200,7 +2199,7 @@ sources: |-
     {
       "id": "usgs-mcs-2026",
       "name": "U.S. Geological Survey – Mineral Commodity Summaries 2026",
-      "nameFr": "Service géologique des États-Unis (USGS) — Mineral Commodity Summaries 2026",
+      "nameFr": "Service géologique des États-Unis (USGS) — Mineral Commodity Summaries 2026",
       "url": "https://pubs.usgs.gov/publication/mcs2026",
       "desc": "Annual USGS compendium of world production, reserves, and resources for 90+ mineral commodities (2025 data), the standard estimating body for reserve figures including Canada's.",
       "descFr": "Compendium annuel de l'USGS sur la production mondiale, les réserves et les ressources de plus de 90 substances minérales (données 2025), l'organisme d'estimation de référence pour les chiffres de réserves, y compris ceux du Canada.",
@@ -2212,10 +2211,10 @@ sources: |-
     {
       "id": "nrcan-critical-minerals-list",
       "name": "Government of Canada – Canada's critical Minerals",
-      "nameFr": "Gouvernement du Canada — Les minéraux critiques du Canada",
+      "nameFr": "Gouvernement du Canada — Les minéraux critiques du Canada",
       "url": "https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html",
       "desc": "Official page for Canada's Critical Minerals List: 34 minerals, first released 2021, updated 2024 (adding high-purity iron ore, phosphorus, silicon metal); value-chain framing and project locations in every province/territory except PEI.",
-      "descFr": "Page officielle de la Liste canadienne des minéraux critiques : 34 minéraux, première publication en 2021, mise à jour en 2024 (ajout du minerai de fer de haute pureté, du phosphore et du silicium métal); cadrage par chaînes de valeur et projets dans chaque province et territoire sauf l'Île-du-Prince-Édouard.",
+      "descFr": "Page officielle de la Liste canadienne des minéraux critiques : 34 minéraux, première publication en 2021, mise à jour en 2024 (ajout du minerai de fer de haute pureté, du phosphore et du silicium métal); cadrage par chaînes de valeur et projets dans chaque province et territoire sauf l'Île-du-Prince-Édouard.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -2223,10 +2222,10 @@ sources: |-
     {
       "id": "nrcan-cm-strategy-annual-2024",
       "name": "Natural Resources Canada – Canadian Critical Minerals Strategy Annual Report 2024",
-      "nameFr": "Ressources naturelles Canada — Rapport annuel 2024 Stratégie canadienne sur les minéraux critiques",
+      "nameFr": "Ressources naturelles Canada — Rapport annuel 2024 Stratégie canadienne sur les minéraux critiques",
       "url": "https://www.canada.ca/en/campaign/critical-minerals-in-canada/canadas-critical-minerals-strategy/canadian-critical-minerals-strategy-annual-report-2024.html",
       "desc": "Official annual report: Canada ranks among top 5 producers of 10 critical minerals (potash, niobium, uranium, palladium, tellurium, indium, aluminum, platinum, titanium, nickel); $1.9B critical-mineral exploration spending in 2023; permitting-improvement initiatives.",
-      "descFr": "Rapport annuel officiel : le Canada figure parmi les cinq premiers producteurs mondiaux de 10 minéraux critiques (potasse, niobium, uranium, palladium, tellure, indium, aluminium, platine, titane, nickel); 1,9 G$ de dépenses d'exploration en minéraux critiques en 2023; initiatives d'amélioration des processus d'autorisation.",
+      "descFr": "Rapport annuel officiel : le Canada figure parmi les cinq premiers producteurs mondiaux de 10 minéraux critiques (potasse, niobium, uranium, palladium, tellure, indium, aluminium, platine, titane, nickel); 1,9 G$ de dépenses d'exploration en minéraux critiques en 2023; initiatives d'amélioration des processus d'autorisation.",
       "publicationDate": "2024-12-01",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2235,10 +2234,10 @@ sources: |-
     {
       "id": "cccr-2019-headline",
       "name": "Canada's Changing Climate Report – Headline Statements (Government of Canada national assessment)",
-      "nameFr": "Rapport sur le climat changeant du Canada — Énoncés principaux (évaluation nationale du gouvernement du Canada)",
+      "nameFr": "Rapport sur le climat changeant du Canada — Énoncés principaux (évaluation nationale du gouvernement du Canada)",
       "url": "https://changingclimate.ca/CCCR2019/chapter/headline-statements/",
       "desc": "The national climate-science assessment's headline findings: Canada warms on average about double the global rate and northern Canada more than double; mean temperature rose ~1.7°C over 1948–2016; warming is effectively irreversible and scale depends on emissions pathway.",
-      "descFr": "Principaux constats de l'évaluation scientifique nationale du climat : le Canada se réchauffe en moyenne environ deux fois plus vite que le reste du monde, et le nord du Canada plus de deux fois plus vite; la température moyenne a augmenté d'environ 1,7 °C sur 1948-2016; le réchauffement est effectivement irréversible et son ampleur dépend de la trajectoire d'émissions.",
+      "descFr": "Principaux constats de l'évaluation scientifique nationale du climat : le Canada se réchauffe en moyenne environ deux fois plus vite que le reste du monde, et le nord du Canada plus de deux fois plus vite; la température moyenne a augmenté d'environ 1,7 °C sur 1948-2016; le réchauffement est effectivement irréversible et son ampleur dépend de la trajectoire d'émissions.",
       "publicationDate": "2019-04-02",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2247,10 +2246,10 @@ sources: |-
     {
       "id": "eccc-temperature-indicator",
       "name": "Environment and Climate Change Canada – Temperature Change in Canada (CESI indicator)",
-      "nameFr": "Environnement et Changement climatique Canada — Changement de la température au Canada (indicateur ICDE)",
+      "nameFr": "Environnement et Changement climatique Canada — Changement de la température au Canada (indicateur ICDE)",
       "url": "https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/temperature-change.html",
       "desc": "Live official indicator: 2024 tied 2010 as Canada's warmest year on record at 3.1°C above the 1961–1990 reference; 7 of the 10 warmest years in the last 20; Canadian warming roughly twice the global average rate.",
-      "descFr": "Indicateur officiel en direct : 2024 a égalé 2010 comme année la plus chaude enregistrée au Canada, à 3,1 °C au-dessus de la référence 1961-1990; 7 des 10 années les plus chaudes dans les 20 dernières années; réchauffement canadien environ deux fois le rythme moyen mondial.",
+      "descFr": "Indicateur officiel en direct : 2024 a égalé 2010 comme année la plus chaude enregistrée au Canada, à 3,1 °C au-dessus de la référence 1961-1990; 7 des 10 années les plus chaudes dans les 20 dernières années; réchauffement canadien environ deux fois le rythme moyen mondial.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -2258,10 +2257,10 @@ sources: |-
     {
       "id": "eccc-nir-2026-summary",
       "name": "Environment and Climate Change Canada – Greenhouse Gas Sources and Sinks in Canada: Executive Summary 2026 (National Inventory Report 1990–2024)",
-      "nameFr": "Environnement et Changement climatique Canada — Sources et puits de gaz à effet de serre au Canada : sommaire 2026 (Rapport d'inventaire national 1990-2024)",
+      "nameFr": "Environnement et Changement climatique Canada — Sources et puits de gaz à effet de serre au Canada : sommaire 2026 (Rapport d'inventaire national 1990-2024)",
       "url": "https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions/sources-sinks-executive-summary-2026.html",
       "desc": "Official UNFCCC inventory: 2024 emissions 685 Mt CO2e excl. LULUCF, −10% from 2005 and −0.3% from 2023; oil and gas 208 Mt (peaked 2014 at 230 Mt); electricity −57% since 2005; methane at lowest recorded level; 2035 NDC of 45–50% below 2005.",
-      "descFr": "Inventaire officiel pour la Convention-cadre des Nations Unies sur les changements climatiques : émissions 2024 de 685 Mt éq. CO₂ hors ATCATF, −10 % par rapport à 2005 et −0,3 % par rapport à 2023; pétrole et gaz 208 Mt (sommet de 230 Mt en 2014); électricité −57 % depuis 2005; méthane à son plus bas niveau enregistré; CDN 2035 de 45-50 % sous 2005.",
+      "descFr": "Inventaire officiel pour la Convention-cadre des Nations Unies sur les changements climatiques : émissions 2024 de 685 Mt éq. CO₂ hors ATCATF, −10 % par rapport à 2005 et −0,3 % par rapport à 2023; pétrole et gaz 208 Mt (sommet de 230 Mt en 2014); électricité −57 % depuis 2005; méthane à son plus bas niveau enregistré; CDN 2035 de 45-50 % sous 2005.",
       "publicationDate": "2026-04-14",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2270,10 +2269,10 @@ sources: |-
     {
       "id": "eccc-ghg-2024-overview",
       "name": "Environment and Climate Change Canada – Where Canada's Greenhouse Gas Emissions Come From: 2024 National Inventory",
-      "nameFr": "Environnement et Changement climatique Canada — Sources des émissions de gaz à effet de serre du Canada : inventaire national des gaz à effet de serre de 2024",
+      "nameFr": "Environnement et Changement climatique Canada — Sources des émissions de gaz à effet de serre du Canada : inventaire national des gaz à effet de serre de 2024",
       "url": "https://www.canada.ca/en/environment-climate-change/news/2024/05/where-canadas-greenhouse-gas-emissions-come-from-2024-national-greenhouse-gas-inventory.html",
       "desc": "Official explainer of the 2024 inventory revisions: with updated historical harvest data, the managed forest / land sector's net balance is a net SOURCE of emissions in all years of the time series (LULUCF net source of 51 Mt in 2022); per-capita emissions fell from 24 t (2005) to 18 t.",
-      "descFr": "Explication officielle des révisions de l'inventaire 2024 : avec les données historiques de récolte mises à jour, le bilan net du secteur forêt aménagée, par rapport au secteur de l’affectation des terres, du changement d’affectation des terres et de la foresterie, est une source nette d'émissions pour toutes les années de la série (source nette de 51 Mt en 2022); les émissions par habitant sont passées de 24 t (2005) à 18 t.",
+      "descFr": "Explication officielle des révisions de l'inventaire 2024 : avec les données historiques de récolte mises à jour, le bilan net du secteur forêt aménagée, par rapport au secteur de l’affectation des terres, du changement d’affectation des terres et de la foresterie, est une source nette d'émissions pour toutes les années de la série (source nette de 51 Mt en 2022); les émissions par habitant sont passées de 24 t (2005) à 18 t.",
       "publicationDate": "2024-05-02",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2282,10 +2281,10 @@ sources: |-
     {
       "id": "cat-canada-2026",
       "name": "Climate Action Tracker – Canada country assessment",
-      "nameFr": "Climate Action Tracker — Évaluation-pays du Canada",
+      "nameFr": "Climate Action Tracker — Évaluation-pays du Canada",
       "url": "https://climateactiontracker.org/countries/canada/",
       "desc": "Independent pledge-vs-policy rating (PRIMARY instrument): Canada's policies and action rated 'Highly Insufficient'; 2030 emissions projected 645–647 Mt (≈15% below 2005) vs the 426–484 Mt target; Clean Electricity Regulations finalized but weakened (net-zero grid moved 2035→2050); 2026 zero-emission-vehicle target paused.",
-      "descFr": "Évaluation indépendante engagements-vs-politiques (instrument PRIMAIRE) : politiques et actions du Canada jugées « Hautement insuffisantes »; émissions 2030 projetées à 645-647 Mt (≈15 % sous 2005) contre une cible de 426-484 Mt; Règlement sur l'électricité propre finalisé mais affaibli (réseau carboneutre repoussé de 2035 à 2050); cible 2026 de véhicules zéro émission suspendue.",
+      "descFr": "Évaluation indépendante engagements-vs-politiques (instrument PRIMAIRE) : politiques et actions du Canada jugées « Hautement insuffisantes »; émissions 2030 projetées à 645-647 Mt (≈15 % sous 2005) contre une cible de 426-484 Mt; Règlement sur l'électricité propre finalisé mais affaibli (réseau carboneutre repoussé de 2035 à 2050); cible 2026 de véhicules zéro émission suspendue.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Interpretation"
@@ -2293,10 +2292,10 @@ sources: |-
     {
       "id": "nrcan-sof-2025",
       "name": "Natural Resources Canada – The State of Canada's Forests: Annual Report 2025",
-      "nameFr": "Ressources naturelles Canada — L'état des forêts au Canada : rapport annuel 2025",
+      "nameFr": "Ressources naturelles Canada — L'état des forêts au Canada : rapport annuel 2025",
       "url": "https://natural-resources.canada.ca/forests-forestry/state-canada-forests",
       "desc": "Official annual forest report: 369 million ha of forest (~9% of world total; 225 Mha managed); under 0.5% deforested over 34 years; 2023 insect disturbance 11.6 Mha; Canadian Climate Institute climate-damage estimates of $25B/yr (2025) rising to $78B (low-emissions path) – $101B (high-emissions path) per year by 2050.",
-      "descFr": "Rapport forestier annuel officiel : 369 millions d'hectares de forêt (~9 % du total mondial; 225 Mha aménagés); moins de 0,5 % déboisé en 34 ans; 11,6 Mha perturbés par les insectes en 2023; estimations de dommages climatiques de l'Institut climatique du Canada de 25 G$/an (2025) montant à 78 G$ (trajectoire à faibles émissions) à 101 G$ (trajectoire à fortes émissions) par an d'ici 2050.",
+      "descFr": "Rapport forestier annuel officiel : 369 millions d'hectares de forêt (~9 % du total mondial; 225 Mha aménagés); moins de 0,5 % déboisé en 34 ans; 11,6 Mha perturbés par les insectes en 2023; estimations de dommages climatiques de l'Institut climatique du Canada de 25 G$/an (2025) montant à 78 G$ (trajectoire à faibles émissions) à 101 G$ (trajectoire à fortes émissions) par an d'ici 2050.",
       "publicationDate": "2025-07-01",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2305,10 +2304,10 @@ sources: |-
     {
       "id": "energy-factbook-spring-2026",
       "name": "Natural Resources Canada / CCEI – Energy Fact Book, Spring 2026 Edition: Clean Power and Low Carbon Fuels",
-      "nameFr": "Ressources naturelles Canada / CCIE — Cahier d'information sur l'énergie, édition du printemps 2026 : Énergie propre et carburants faible en carbone",
+      "nameFr": "Ressources naturelles Canada / CCIE — Cahier d'information sur l'énergie, édition du printemps 2026 : Énergie propre et carburants faible en carbone",
       "url": "https://energy-information.canada.ca/en/energy-facts/clean-power-low-carbon-fuels",
       "desc": "Official energy statistics: 623 TWh of electricity produced in 2024, 65% renewable and 78% non-GHG-emitting; Canada is the world's third-largest hydroelectricity producer; rivers discharge close to 7% of the world's renewable water; fourth-largest proven oil reserves and third-largest uranium reserves.",
-      "descFr": "Statistiques énergétiques officielles : 623 TWh d'électricité produits en 2024, 65 % de sources renouvelables et 78 % sans émission de GES; le Canada est le troisième producteur mondial d'hydroélectricité; ses rivières déchargent près de 7 % de l'eau renouvelable mondiale; quatrièmes réserves prouvées de pétrole et troisièmes réserves d'uranium.",
+      "descFr": "Statistiques énergétiques officielles : 623 TWh d'électricité produits en 2024, 65 % de sources renouvelables et 78 % sans émission de GES; le Canada est le troisième producteur mondial d'hydroélectricité; ses rivières déchargent près de 7 % de l'eau renouvelable mondiale; quatrièmes réserves prouvées de pétrole et troisièmes réserves d'uranium.",
       "publicationDate": "2026-04-01",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2317,10 +2316,10 @@ sources: |-
     {
       "id": "cer-canada-energy-profile",
       "name": "Canada Energy Regulator – Canada Energy Profile",
-      "nameFr": "Régie de l'énergie du Canada — Profil énergétique du Canada",
+      "nameFr": "Régie de l'énergie du Canada — Profil énergétique du Canada",
       "url": "https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/province-territory-energy-profiles/canada.html",
       "desc": "Official national energy-system profile: crude production 5.1 MMb/d (2023, fourth-largest producer, +41% since 2013, growth almost entirely oil sands); natural gas 17.9 Bcf/d; crude exports 4.0 MMb/d nearly all to the US; provincial generation mixes (BC/MB/QC/NL over 85% hydro; AB/SK/NS/NU mostly fossil).",
-      "descFr": "Profil officiel du système énergétique national : production de brut de 5,1 Mb/j (2023, quatrième producteur mondial, +41 % depuis 2013, croissance presque entièrement issue des sables bitumineux); gaz naturel de 17,9 Gpi³/j; exportations de brut de 4,0 Mb/j presque entièrement vers les États-Unis; bouquets provinciaux de production (C.-B., Man., Qc et T.-N.-L. à plus de 85 % hydro; Alb., Sask., N.-É. et Nt surtout fossiles).",
+      "descFr": "Profil officiel du système énergétique national : production de brut de 5,1 Mb/j (2023, quatrième producteur mondial, +41 % depuis 2013, croissance presque entièrement issue des sables bitumineux); gaz naturel de 17,9 Gpi³/j; exportations de brut de 4,0 Mb/j presque entièrement vers les États-Unis; bouquets provinciaux de production (C.-B., Man., Qc et T.-N.-L. à plus de 85 % hydro; Alb., Sask., N.-É. et Nt surtout fossiles).",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -2328,10 +2327,10 @@ sources: |-
     {
       "id": "statcan-2016-census-geography",
       "name": "Statistics Canada – The Daily: Population Size and Growth, 2016 Census",
-      "nameFr": "Statistique Canada — Le Quotidien : taille et croissance de la population, Recensement de 2016",
+      "nameFr": "Statistique Canada — Le Quotidien : taille et croissance de la population, Recensement de 2016",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/170208/dq170208a-eng.htm",
       "desc": "Census release documenting Canada's spatial structure: two of three people (66%) live within 100 km of the Canada–US border, an area of about 4% of the territory; density 3.9/km² vs 35.3 in the US; land area close to 10 million km².",
-      "descFr": "Communiqué du recensement documentant la structure spatiale du Canada : deux personnes sur trois (66 %) vivent à moins de 100 km de la frontière Canada-États-Unis, sur environ 4 % du territoire; densité de 3,9/km² contre 35,3 aux États-Unis; superficie terrestre proche de 10 millions de km².",
+      "descFr": "Communiqué du recensement documentant la structure spatiale du Canada : deux personnes sur trois (66 %) vivent à moins de 100 km de la frontière Canada-États-Unis, sur environ 4 % du territoire; densité de 3,9/km² contre 35,3 aux États-Unis; superficie terrestre proche de 10 millions de km².",
       "publicationDate": "2017-02-08",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2340,10 +2339,10 @@ sources: |-
     {
       "id": "pco-bill-c5-implementation",
       "name": "Government of Canada – Implementation of Bill C-5: One Canadian Economy (backgrounder)",
-      "nameFr": "Gouvernement du Canada — Mise en œuvre du projet de loi C-5 Unité de l’économie canadienne (document d'information)",
+      "nameFr": "Gouvernement du Canada — Mise en œuvre du projet de loi C-5 Unité de l’économie canadienne (document d'information)",
       "url": "https://www.canada.ca/en/intergovernmental-affairs/news/2025/06/implementation-of-bill-c-5-one-canadian-economy.html",
       "desc": "Official backgrounder on the Building Canada Act (Royal Assent June 26, 2025): federal review of designated national-interest projects to complete within 2 years; 'one project, one review'; Major Projects Office with an Indigenous Advisory Council; Indigenous Loan Guarantee Program doubled $5B→$10B; 5-year designation window.",
-      "descFr": "Document d'information officiel sur la Loi visant à bâtir le Canada (sanction royale le 26 juin 2025) : examen fédéral des projets désignés d'intérêt national à conclure en 2 ans; « un projet, un examen »; Bureau des grands projets doté d'un Conseil consultatif autochtone; Programme de garantie de prêts pour les Autochtones doublé de 5 à 10 G$; fenêtre de désignation de 5 ans.",
+      "descFr": "Document d'information officiel sur la Loi visant à bâtir le Canada (sanction royale le 26 juin 2025) : examen fédéral des projets désignés d'intérêt national à conclure en 2 ans; « un projet, un examen »; Bureau des grands projets doté d'un Conseil consultatif autochtone; Programme de garantie de prêts pour les Autochtones doublé de 5 à 10 G$; fenêtre de désignation de 5 ans.",
       "publicationDate": "2025-06-26",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2352,10 +2351,10 @@ sources: |-
     {
       "id": "dwpv-bill-c5-analysis",
       "name": "Davies Ward Phillips & Vineberg – Bill C-5: Canada's Approach to Accelerating Major Projects",
-      "nameFr": "Davies Ward Phillips & Vineberg — Projet de loi C-5 : l'approche canadienne d'accélération des grands projets",
+      "nameFr": "Davies Ward Phillips & Vineberg — Projet de loi C-5 : L’approche du Canada pour accélérer les grands projets",
       "url": "https://www.dwpv.com/insights/2025/bill-c-5-accelerating-projects",
       "desc": "Legal analysis of the Building Canada Act: objective is to reduce federal decision timelines on national-interest projects to two years FROM FIVE; identifies the impact-assessment phase (not permitting) as the key gating step for major projects in Canada.",
-      "descFr": "Analyse juridique de la Loi sur la réalisation de projets d'intérêt national : l'objectif est de ramener les délais fédéraux de décision sur les projets d'intérêt national à deux ans au lieu d'environ cinq; identifie la phase d'évaluation d'impact (et non celle des autorisations réglementaires) comme l'étape déterminante des grands projets au Canada.",
+      "descFr": "Analyse juridique de la Loi visant à bâtir le Canada : l'objectif est de réduire les délais fédéraux de décision sur les projets d'intérêt national à deux ans au lieu d'environ cinq; désigne la phase d'évaluation d'impact (et non celle des autorisations réglementaires) comme l'étape déterminante des grands projets au Canada.",
       "publicationDate": "2025-07-02",
       "accessDate": "2026-07-08",
       "confidence": "Med",
@@ -2364,10 +2363,10 @@ sources: |-
     {
       "id": "statcan-productivity-us-2026",
       "name": "Statistics Canada – Labour Productivity in Industries Dependent on United States Demand (Economic and Social Reports)",
-      "nameFr": "Statistique Canada — La productivité du travail dans les industries dépendantes de la demande des États-Unis (Rapports économiques et sociaux)",
+      "nameFr": "Statistique Canada — Productivité du travail dans les industries dépendantes de la demande des États-Unis (Rapports économiques et sociaux)",
       "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026005/article/00001-eng.htm",
       "desc": "StatCan analytical article (May 2026) on Canada's labour-productivity trends and the exposure of the most productive, US-export-dependent industries to tariffs; references Bank of Canada's 'Canada's weak productivity: reversing course' framing.",
-      "descFr": "Article analytique de Statistique Canada (mai 2026) sur les tendances de la productivité du travail au Canada et l'exposition aux tarifs des industries les plus productives, dépendantes des exportations vers les États-Unis; renvoie au cadrage de la Banque du Canada sur la faible productivité canadienne.",
+      "descFr": "Article analytique de Statistique Canada (mai 2026) sur les tendances de la productivité du travail au Canada et l'exposition aux droits de douane des industries les plus productives, dépendantes des exportations vers les États-Unis; renvoie au cadrage de la Banque du Canada sur la faible productivité canadienne.",
       "publicationDate": "2026-05-27",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2376,10 +2375,10 @@ sources: |-
     {
       "id": "canlii-tsilhqotin-2014",
       "name": "Supreme Court of Canada – Tsilhqot'in Nation v. British Columbia, 2014 SCC 44 (CanLII)",
-      "nameFr": "Cour suprême du Canada — Nation Tsilhqot'in c. Colombie-Britannique, 2014 CSC 44 (CanLII)",
+      "nameFr": "Cour suprême du Canada — Nation Tsilhqot'in c. Colombie-Britannique, 2014 CSC 44 (CanLII)",
       "url": "https://www.canlii.org/en/ca/scc/doc/2014/2014scc44/2014scc44.html",
       "desc": "Full text of the ruling: first declaration of Aboriginal title in Canadian history (1,750 km²); title grounded in sufficient, continuous, exclusive occupation including territorial (not merely site-specific) use; government incursions on title land require consent or must meet the s.35 justification framework; BC found in breach of its duty to consult.",
-      "descFr": "Texte intégral de l'arrêt : première déclaration de titre ancestral de l'histoire canadienne (1 750 km²); titre fondé sur une occupation suffisante, continue et exclusive, y compris l'usage territorial (et non seulement de sites précis); les atteintes de la Couronne aux terres visées par le titre requièrent le consentement ou doivent satisfaire au cadre de justification de l'article 35; la Colombie-Britannique jugée en manquement à son obligation de consulter.",
+      "descFr": "Texte intégral de l'arrêt : première déclaration de titre ancestral de l'histoire canadienne (1 750 km²); titre fondé sur une occupation suffisante, continue et exclusive, y compris l'usage territorial (et non seulement de sites précis); les atteintes de la Couronne aux terres visées par le titre requièrent le consentement ou doivent satisfaire au cadre de justification de l'article 35; Colombie-Britannique jugée en manquement à son obligation de consulter.",
       "publicationDate": "2014-06-26",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2388,10 +2387,10 @@ sources: |-
     {
       "id": "tsilhqotin-ng-rights-title",
       "name": "Tŝilhqot'in National Government – Rights & Title",
-      "nameFr": "Gouvernement national Tŝilhqot'in — Droits et titre",
+      "nameFr": "Gouvernement national Tŝilhqot'in — Droits et titre",
       "url": "https://tsilhqotin.ca/governance/tsilhqotin-rights-title/",
       "desc": "The Nation's own account of the title litigation (1989–2014) and the June 26, 2014 declaration — the in-culture primary voice on what the title declaration means for the title-holding Nation.",
-      "descFr": "Le récit de la Nation elle-même sur le litige du titre (1989-2014) et la déclaration du 26 juin 2014 — la voix primaire, de l'intérieur de la culture, sur le sens de la déclaration de titre pour la Nation titulaire.",
+      "descFr": "Le récit de la Nation elle-même sur le litige relatif au titre (1989-2014) et sur la déclaration du 26 juin 2014; source première interne à la culture concernée sur la portée de la déclaration de titre pour la Nation détentrice.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -2399,10 +2398,10 @@ sources: |-
     {
       "id": "cngov-agreements",
       "name": "Cree Nation Government – Agreements (James Bay and Northern Quebec Agreement 1975; Paix des Braves 2002; subsequent governance agreements)",
-      "nameFr": "Gouvernement de la Nation crie — Ententes (Convention de la Baie-James et du Nord québécois 1975; Paix des Braves 2002; ententes de gouvernance subséquentes)",
+      "nameFr": "Gouvernement de la Nation crie — Ententes et Conventions (Convention de la Baie-James et du Nord québécois 1975; Paix des Braves 2002; ententes de gouvernance subséquentes)",
       "url": "https://www.cngov.ca/governance-structure/legislation/agreements/",
       "desc": "The Cree Nation Government's canonical page for the treaty lineage: the 1975 JBNQA as a living document amended by 24 complementary agreements; the 2002 Paix des Braves nation-to-nation agreement (adapted forestry regime, Cree consent to EM-1/Eastmain-Rupert, standing liaison committee); the 2008 Federal New Relationship Agreement and the 2017 Cree Constitution.",
-      "descFr": "Page canonique du Gouvernement de la Nation crie sur la filiation des traités : la CBJNQ de 1975 comme document vivant modifié par 24 conventions complémentaires; la Paix des Braves de 2002, entente de nation à nation (régime forestier adapté, consentement cri à EM-1/Eastmain-Rupert, comité de liaison permanent); l'Entente concernant une nouvelle relation fédérale de 2008 et la Constitution crie de 2017.",
+      "descFr": "Page canonique du Gouvernement de la Nation crie sur la filiation des traités : la Convention de la Baie James et du Nord québécois de 1975 comme document vivant modifié par 24 conventions complémentaires; la Paix des Braves de 2002, entente de nation à nation (régime forestier adapté, consentement cri à EM-1/Eastmain-Rupert, comité de liaison permanent); l'Entente concernant une nouvelle relation fédérale de 2008 et la Constitution crie de 2017.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -2410,10 +2409,10 @@ sources: |-
     {
       "id": "imf-country-focus-internal-trade-2026",
       "name": "IMF Country Focus – Canada Can Grow Faster by Unlocking Its Own Market (Díez & Yang, with Tombe)",
-      "nameFr": "FMI, Country Focus — Le Canada peut croître plus vite en déverrouillant son propre marché (Díez et Yang, avec Tombe)",
+      "nameFr": "FMI, Country Focus — Canada Can Grow Faster by Unlocking Its Own Market (Díez et Yang, avec Tombe)",
       "url": "https://www.imf.org/en/news/articles/2026/01/27/cf-canada-can-grow-faster-by-unlocking-its-own-market",
       "desc": "The study authors' own IMF publication: non-geographic, policy-related internal barriers average the equivalent of about a 9% tariff nationally; fully eliminating them could raise real GDP nearly 7% (~$210B) over the long run, with services liberalization the dominant share of gains.",
-      "descFr": "Publication des auteurs de l'étude au FMI : les obstacles internes non géographiques d'origine réglementaire équivalent en moyenne à un tarif d'environ 9 % à l'échelle nationale; leur élimination complète pourrait accroître le PIB réel de près de 7 % (~210 G$) à long terme, la libéralisation des services représentant la part dominante des gains.",
+      "descFr": "Publication des auteurs de l'étude au FMI : les obstacles internes non géographiques d'origine réglementaire équivalent en moyenne à un tarif d'environ 9 % à l'échelle nationale; leur élimination complète pourrait accroître le PIB réel de près de 7 % (~210 G$) à long terme, la libéralisation des services représentant la part dominante des gains.",
       "publicationDate": "2026-01-27",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2422,10 +2421,10 @@ sources: |-
     {
       "id": "gac-eu-security-defence-partnership",
       "name": "Global Affairs Canada – Security and Defence Partnership between the European Union and Canada",
-      "nameFr": "Affaires mondiales Canada — Partenariat de sécurité et de défense entre l'Union européenne et le Canada",
+      "nameFr": "Affaires mondiales Canada — Partenariat de sécurité et de défense entre l'Union européenne et le Canada",
       "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/eu-ue/security-defence-securite-defense.aspx?lang=eng",
       "desc": "Official Government of Canada page for the Canada–EU Security and Defence Partnership established at the June 2025 Canada–EU Summit: cooperation spanning cyber, maritime and space security, crisis management, military mobility, counterterrorism and support to Ukraine, with an annual Security and Defence Dialogue; builds on the 2005 Framework Participation Agreement and the 2018 Security of Information Agreement.",
-      "descFr": "Page officielle du gouvernement du Canada sur le Partenariat de sécurité et de défense entre l'Union européenne et le Canada, établi au sommet Canada-UE de juin 2025 : coopération en cybersécurité, sécurité maritime et spatiale, gestion de crise, mobilité militaire, lutte contre le terrorisme et soutien à l'Ukraine, avec un Dialogue annuel de sécurité et de défense; s'appuie sur l'Accord-cadre de participation de 2005 et l'Accord sur la sécurité des informations de 2018.",
+      "descFr": "Page officielle du gouvernement du Canada sur le Partenariat de sécurité et de défense entre l'Union européenne et le Canada, établi au sommet Canada-UE de juin 2025 : coopération en cybersécurité, sécurité maritime et spatiale, gestion de crise, mobilité militaire, lutte contre le terrorisme et soutien à l'Ukraine, avec un Dialogue annuel de sécurité et de défense; s'appuie sur l'Accord-cadre de participation de 2005 et l'Accord sur la sécurité des informations de 2018.",
       "publicationDate": "2025-06-23",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2434,10 +2433,10 @@ sources: |-
     {
       "id": "canlii-constitution-act-1867",
       "name": "Constitution Act, 1867, 30 & 31 Vict., c. 3 (Canada) — CanLII",
-      "nameFr": "Loi constitutionnelle de 1867, 30 & 31 Vict., c. 3 (Canada) — CanLII",
+      "nameFr": "Loi constitutionnelle de 1867, 30 & 31 Vict., c. 3 (Canada) — CanLII",
       "url": "https://www.canlii.org/en/ca/laws/stat/30---31-vict-c-3/latest/30---31-vict-c-3.html",
       "desc": "Full text of the Constitution Act, 1867. Section 129 continues in force in Ontario, Quebec, Nova Scotia and New Brunswick all laws in force in Canada, Nova Scotia or New Brunswick at the Union, subject to alteration by Parliament or the provincial legislatures — the mechanism that continued Quebec's civil-law regime and the common-law regime of the other provinces at Confederation.",
-      "descFr": "Texte intégral de la Loi constitutionnelle de 1867. L'article 129 maintient en vigueur en Ontario, au Québec, en Nouvelle-Écosse et au Nouveau-Brunswick toutes les lois en vigueur au Canada, en Nouvelle-Écosse ou au Nouveau-Brunswick au moment de l'Union, sous réserve de modification par le Parlement ou les législatures provinciales — le mécanisme qui a maintenu à la Confédération le régime de droit civil du Québec et le régime de common law des autres provinces.",
+      "descFr": "Texte intégral de la Loi constitutionnelle de 1867. L'article 129 maintient en vigueur en Ontario, au Québec, en Nouvelle-Écosse et au Nouveau-Brunswick toutes les lois en vigueur au Canada, en Nouvelle-Écosse ou au Nouveau-Brunswick au moment de l'Union, sous réserve de modification par le Parlement ou les législatures provinciales; mécanisme qui a maintenu le régime de droit civil au Québec et le régime de common law dans les autres provinces au moment de la Confédération.",
       "publicationDate": "1867-03-29",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2445,8 +2444,8 @@ sources: |-
     },
     {
       "id": "legisquebec-ccq-1991",
-      "name": "Civil Code of Québec, CQLR c. CCQ-1991 (Éditeur officiel du Québec / LégisQuébec)",
-      "nameFr": "Code civil du Québec, RLRQ c. CCQ-1991 (Éditeur officiel du Québec / LégisQuébec)",
+      "name": "Civil Code of Québec, CQLR c. CCQ-1991 (Les Publications du Québec / LégisQuébec)",
+      "nameFr": "Code civil du Québec, RLRQ c. CCQ-1991 (Les Publications du Québec / LégisQuébec)",
       "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/ccq-1991",
       "desc": "Official consolidated text of the Civil Code of Québec, adopted as S.Q. 1991, c. 64 and in force since 1 January 1994. Governs persons, family, succession, property, obligations and civil liability in Quebec; states in its Preliminary Provision that it lays down the jus commune of the province in harmony with the Charter of the French language and the Charter of human rights and freedoms. Replaced the 1866 Civil Code of Lower Canada.",
       "descFr": "Texte officiel consolidé du Code civil du Québec, adopté comme L.Q. 1991, c. 64 et en vigueur depuis le 1er janvier 1994. Régit les personnes, la famille, les successions, les biens, les obligations et la responsabilité civile au Québec; sa disposition préliminaire énonce qu'il établit le droit commun de la province, en harmonie avec la Charte de la langue française et la Charte des droits et libertés de la personne. A remplacé le Code civil du Bas-Canada de 1866.",
@@ -2456,8 +2455,8 @@ sources: |-
     },
     {
       "id": "justice-harmonization-act-2001",
-      "name": "Federal Law–Civil Law Harmonization Act, No. 1, S.C. 2001, c. 4 (Justice Laws Website)",
-      "nameFr": "Loi d'harmonisation no 1 du droit fédéral avec le droit civil, L.C. 2001, ch. 4 (Site Web de la législation, Justice)",
+      "name": "Federal Law–Civil Law Harmonization Act, No. 1, S.C. 2001, c. 4",
+      "nameFr": "Loi d'harmonisation n° 1 du droit fédéral avec le droit civil, L.C. 2001, ch. 4",
       "url": "https://laws-lois.justice.gc.ca/eng/annualstatutes/2001_4/page-1.html",
       "desc": "Official text of the first federal harmonization act (Bill S-4, assented to 10 May 2001). Repeals the pre-Confederation provisions of the 1866 Civil Code of Lower Canada that fell within federal jurisdiction, amends the Interpretation Act to add sections 8.1 and 8.2 (recognising Canadian bijuralism as an interpretive principle for all federal statutes; provincial law of property and civil rights completes federal legislation suppletively), and harmonizes several federal Acts with the Civil Code of Québec.",
       "descFr": "Texte officiel de la première loi d'harmonisation fédérale (projet de loi S-4, sanctionné le 10 mai 2001). Abroge les dispositions préconfédératives du Code civil du Bas-Canada de 1866 relevant de la compétence fédérale, modifie la Loi d'interprétation pour y ajouter les articles 8.1 et 8.2 (reconnaissant le bijuridisme canadien comme principe d'interprétation de toutes les lois fédérales, le droit provincial des biens et des droits civils complétant à titre supplétif la législation fédérale), et harmonise plusieurs lois fédérales avec le Code civil du Québec.",
@@ -2469,8 +2468,8 @@ sources: |-
     {
       "id": "justice-bijuralism-terminology",
       "name": "Department of Justice Canada – Bijuralism in Canada: Harmonization Methodology and Terminology",
-      "nameFr": "Ministère de la Justice du Canada — Le bijuridisme au Canada : méthodologie et terminologie de l'harmonisation",
-      "url": "https://www.justice.gc.ca/eng/rp-pr/csj-sjc/harmonization/hfl-hlf/b4-f4/bf4.pdf",
+      "nameFr": "Ministère de la Justice du Canada — Bijuridisme canadien : méthodologie et terminologie de l'harmonisation",
+      "url": "https://publications.gc.ca/site/eng/9.689696/publication.html",
       "desc": "Official Department of Justice publication defining Canadian bijuralism as the co-existence of English common law and French civil law in Canada, and legislative bijuralism as ensuring each language version of a federal statute takes both traditions into account when it touches provincial private law; describes the four-stage harmonization process instituted by the Civil Code Section.",
       "descFr": "Publication officielle du ministère de la Justice définissant le bijuridisme canadien comme la coexistence de la common law anglaise et du droit civil français au Canada, et le bijuridisme législatif comme le fait de veiller à ce que chaque version linguistique d'une loi fédérale tienne compte des deux traditions lorsqu'elle touche au droit privé provincial; décrit le processus d'harmonisation en quatre étapes institué par la Section du Code civil.",
       "accessDate": "2026-07-08",
@@ -2480,10 +2479,10 @@ sources: |-
     {
       "id": "chiefs-of-ontario-c5-response",
       "name": "Chiefs of Ontario – Protecting Our Lands: A First Nations Response to Bill 5 & Bill C-5",
-      "nameFr": "Chefs de l'Ontario — Protéger nos terres : une réponse des Premières Nations aux projets de loi 5 et C-5",
+      "nameFr": "Chiefs of Ontario – Protecting Our Lands: A First Nations Response to Bill 5 & Bill C-5",
       "url": "https://chiefs-of-ontario.org/resources/protecting-our-lands/",
-      "desc": "Living-summary page maintained by the Chiefs of Ontario Political Territorial Organization documenting sustained First Nations opposition to Bill C-5 (One Canadian Economy Act): consultation timelines as short as six days; parallel House-and-Senate reviews; absence of free, prior and informed consent as required by the UN Declaration on the Rights of Indigenous Peoples; the pre-approval structure that bypasses treaty and impact-assessment processes; First Nations leaders walking out of the July 2025 Carney summit on the Act. Aggregates linked statements from the Assembly of First Nations, British Columbia Assembly of First Nations, Anishinabek Nation, Nishnawbe Aski Nation, Grand Council Treaty #3, Tŝilhqot'in Nation, Neskantaga First Nation, Onion Lake Cree Nation and others.",
-      "descFr": "Page-synthèse évolutive tenue par l'organisation politique territoriale des Chefs de l'Ontario documentant l'opposition soutenue des Premières Nations au projet de loi C-5 (Loi sur une économie canadienne unifiée) : délais de consultation d'aussi peu que six jours; examens parallèles à la Chambre et au Sénat; absence du consentement préalable, libre et éclairé exigé par la Déclaration des Nations Unies sur les droits des peuples autochtones; structure de pré-approbation contournant les processus issus des traités et de l'évaluation d'impact; départ de chefs des Premières Nations du sommet Carney de juillet 2025 sur la Loi. Regroupe les déclarations de l'Assemblée des Premières Nations, de la BC Assembly of First Nations, de la Nation Anishinabek, de la Nishnawbe Aski Nation, du Grand Conseil du Traité no 3, de la Nation Tŝilhqot'in, de la Première Nation de Neskantaga, de la Nation crie d'Onion Lake et d'autres.",
+      "desc": "Living-summary page maintained by the Chiefs of Ontario Political Territorial Organization documenting sustained First Nations opposition to Bill C-5 (One Canadian Economy Act).",
+      "descFr": "Page-synthèse évolutive tenue par l'organisation politique territoriale des Chefs de l'Ontario documentant l'opposition soutenue des Premières Nations au projet de loi C-5 (Loi sur une économie canadienne unifiée).",
       "publicationDate": "2025-09-18",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2492,10 +2491,10 @@ sources: |-
     {
       "id": "openparliament-c5-45-1",
       "name": "openparliament.ca – Bill C-5 (45th Parliament, 1st session): One Canadian Economy Act",
-      "nameFr": "openparliament.ca — Projet de loi C-5 (45e législature, 1re session) : Loi sur une économie canadienne unifiée",
+      "nameFr": "openparliament.ca — Bill C-5 (45th Parliament, 1st session): One Canadian Economy Act",
       "url": "https://openparliament.ca/bills/45-1/C-5/?singlepage=1",
-      "desc": "Full parliamentary record of Bill C-5, the One Canadian Economy Act (Free Trade and Labour Mobility in Canada Act; Building Canada Act), including recorded votes and debate. Passed third reading on 20 June 2025 with Liberal and Conservative support; opposed on the record by the New Democratic Party (rights-and-consent grounds, citing UNDRIP article 19 and modern treaty amendment without consent) and by the Bloc Québécois (democratic-process grounds, citing time allocation and cabinet-designated national interest projects bypassing federal statutes). Bill passed under a government-imposed time-allocation motion limiting debate.",
-      "descFr": "Dossier parlementaire complet du projet de loi C-5, la Loi sur une économie canadienne unifiée (Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada; Loi sur la réalisation de projets d'intérêt national), incluant les votes par appel nominal et les débats. Adopté en troisième lecture le 20 juin 2025 avec l'appui des libéraux et des conservateurs; opposition inscrite au compte rendu du Nouveau Parti démocratique (motifs de droits et de consentement, invoquant l'article 19 de la DNUDPA et la modification de traités modernes sans consentement) et du Bloc québécois (motifs de processus démocratique, invoquant l'attribution de temps et les projets d'intérêt national désignés par le cabinet contournant des lois fédérales). Adopté sous une motion gouvernementale d'attribution de temps limitant le débat.",
+      "desc": "Full parliamentary record of Bill C-5, the One Canadian Economy Act (Free Trade and Labour Mobility in Canada Act; Building Canada Act), including recorded votes and debate. Passed third reading on 20 June 2025 with Liberal and Conservative support; opposed on the record by the New Democratic Party (rights-and-consent grounds, citing United Nations Declaration on the Rights of Indigenous Peoples article 19 and modern treaty amendment without consent) and by the Bloc Québécois (democratic-process grounds, citing time allocation and cabinet-designated national interest projects bypassing federal statutes). Bill passed under a government-imposed time-allocation motion limiting debate.",
+      "descFr": "Dossier parlementaire complet du projet de loi C-5, la Loi sur l’unité de l’économie canadienne (Loi édictant la Loi sur le libre-échange et la mobilité de la main-d’oeuvre au Canada et la Loi visant à bâtir le Canada), incluant les votes par appel nominal et les débats. Adopté en troisième lecture le 20 juin 2025 avec l'appui des libéraux et des conservateurs; opposition inscrite au compte rendu du Nouveau Parti démocratique (motifs de droits et de consentement, invoquant l'article 19 de la Déclaration des Nations unies sur les droits des peuples autochtones et la modification de traités modernes sans consentement) et du Bloc québécois (motifs de processus démocratique, invoquant l'attribution de temps et les projets d'intérêt national désignés par le cabinet contournant des lois fédérales). Adopté sous une motion gouvernementale d'attribution de temps limitant le débat.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -2503,10 +2502,10 @@ sources: |-
     {
       "id": "afn-nrta-2025",
       "name": "Assembly of First Nations – National Chief Calls for Federal Review of Natural Resources Transfer Agreement in Response to Alberta Referendum Proposal",
-      "nameFr": "Assemblée des Premières Nations — La Cheffe nationale demande une révision fédérale de la Convention sur le transfert des ressources naturelles en réponse au projet de référendum de l'Alberta",
+      "nameFr": "Assemblée des Premières Nations — La Cheffe nationale demande un examen par le gouvernement fédéral de l’Entente sur le transfert des ressources naturelles en réponse à la proposition de référendum de l’Alberta",
       "url": "https://afn.ca/all-news/press-releases/national-chief-calls-for-federal-review-of-natural-resources-transfer-agreement-in-response-to-alberta-referendum-proposal/",
       "desc": "AFN press release (12 May 2025): National Chief Cindy Woodhouse Nepinak calls for a constitutional review of the 1930 Natural Resources Transfer Agreement — which transferred Crown lands and resources to the three Prairie provinces without First Nations consultation — in response to Alberta's separation-referendum proposal, asserting that Treaties 6, 7 and 8 never surrendered title and that any such provincial action would be illegitimate without First Nations consent, consistent with treaty obligations and the UN Declaration on the Rights of Indigenous Peoples.",
-      "descFr": "Communiqué de l'APN (12 mai 2025) : la Cheffe nationale Cindy Woodhouse Nepinak demande une révision constitutionnelle de la Convention sur le transfert des ressources naturelles de 1930 — qui a transféré aux trois provinces des Prairies les terres et ressources de la Couronne sans consultation des Premières Nations — en réponse au projet de référendum de séparation de l'Alberta, affirmant que les traités nos 6, 7 et 8 n'ont jamais cédé le titre et qu'une telle démarche provinciale serait illégitime sans le consentement des Premières Nations, conformément aux obligations issues des traités et à la Déclaration des Nations Unies sur les droits des peuples autochtones.",
+      "descFr": "Communiqué de l'APN (12 mai 2025) : la Cheffe nationale Cindy Woodhouse Nepinak demande une révision constitutionnelle de l’Entente sur le transfert des ressources naturelles de 1930  (qui a transféré aux trois provinces des Prairies les terres et ressources de la Couronne sans consultation des Premières Nations) en réponse au projet de référendum de séparation de l'Alberta, affirmant que les traités n° 6, 7 et 8 n'ont jamais cédé le titre et qu'une telle démarche provinciale serait illégitime sans le consentement des Premières Nations, conformément aux obligations issues des traités et à la Déclaration des Nations Unies sur les droits des peuples autochtones.",
       "publicationDate": "2025-05-12",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2515,21 +2514,21 @@ sources: |-
     {
       "id": "ourcommons-membership-changes",
       "name": "House of Commons of Canada – Changes in Membership (45th Parliament)",
-      "nameFr": "Chambre des communes du Canada — Changements dans la composition des partis (45e législature)",
+      "nameFr": "Chambre des communes du Canada — Changements à la députation (45e législature)",
       "url": "https://www.ourcommons.ca/members/en/partystandings/changes",
-      "desc": "Official live record of changes in House of Commons membership for the 45th Parliament (May 2025 to present): resignations, by-election results, and party-affiliation changes with dates — the primary record of the five floor crossings, the 13 April 2026 by-elections, and the subsequent Liberal resignations behind the current standings. 20 changes listed as of 7 July 2026.",
-      "descFr": "Registre officiel en direct des changements dans la composition de la Chambre des communes pour la 45e législature (de mai 2025 à aujourd'hui) : démissions, résultats d'élections partielles et changements d'appartenance politique, avec dates — le registre primaire des cinq changements d'allégeance, des élections partielles du 13 avril 2026 et des démissions libérales subséquentes derrière la composition actuelle. 20 changements recensés au 7 juillet 2026.",
+      "desc": "Official live record of changes in House of Commons membership for the 45th Parliament (May 2025 to present): resignations, by-election results, and party-affiliation changes with dates — the primary record of the five floor crossings, the 13 April 2026 by-elections, and the subsequent Liberal resignations behind the current standings.",
+      "descFr": "Registre officiel en direct des changements de composition de la Chambre des communes pour la 45e législature (de mai 2025 à aujourd'hui) : démissions, résultats d'élections partielles et changements d'affiliation politique, avec dates; registre primaire des cinq changements d'affiliation, des élections partielles du 13 avril 2026 et des démissions libérales subséquentes qui expliquent la composition actuelle.",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
     },
     {
       "id": "pmo-senate-2026",
-      "name": "Prime Minister's Office – News release, 7 July 2026: Senate appointments",
-      "nameFr": "Cabinet du premier ministre — Communiqué du 7 juillet 2026 : nominations au Sénat",
-      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/07/07/",
-      "desc": "Prime Minister's Office news release of 7 July 2026 announcing new Senate appointments — cited for the recent appointments easing the government's path through the upper chamber.",
-      "descFr": "Communiqué du Cabinet du premier ministre du 7 juillet 2026 annonçant de nouvelles nominations au Sénat — cité pour les nominations récentes facilitant le passage des projets de loi du gouvernement à la chambre haute.",
+      "name": "Prime Minister's Office – News release, 7 July 2026: Prime Minister Carney modernises Senate appointment process to respond to Canada’s emerging challenges",
+      "nameFr": "Cabinet du premier ministre — Communiqué du 7 juillet 2026 : Le premier ministre Carney modernise le processus de nomination au Sénat pour relever les nouveaux défis auxquels est confronté le Canada",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/07/07/prime-minister-carney-modernises-senate-appointment-process-respond",
+      "desc": "Prime Minister's Office news release of 7 July 2026 announcing new Senate appointments; cited for the recent appointments easing the government's path through the upper chamber.",
+      "descFr": "Communiqué du Cabinet du premier ministre du 7 juillet 2026 annonçant de nouvelles nominations au Sénat; cité pour les nominations récentes facilitant le passage des projets de loi du gouvernement à la chambre haute.",
       "publicationDate": "2026-07-07",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2538,10 +2537,10 @@ sources: |-
     {
       "id": "npd-lewis-leadership-2026",
       "name": "Radio-Canada – Nouvellement élu chef du NPD, Avi Lewis promet un « retour en force » du parti",
-      "nameFr": "Radio-Canada — Nouvellement élu chef du NPD, Avi Lewis promet un « retour en force » du parti",
+      "nameFr": "Radio-Canada — Nouvellement élu chef du NPD, Avi Lewis promet un « retour en force » du parti",
       "url": "https://ici.radio-canada.ca/nouvelle/2242488/avi-lewis-victoire-chefferie-npd",
       "desc": "Radio-Canada report (29 March 2026) on Avi Lewis winning the federal NDP leadership with 56% of the vote (39,734 of ~71,000 ballots) at the Winnipeg convention, succeeding Jagmeet Singh, who resigned after the party's April 2025 electoral collapse; Lewis defeated Heather McPherson (29%) and three other candidates.",
-      "descFr": "Reportage de Radio-Canada (29 mars 2026) sur la victoire d'Avi Lewis à la direction du NPD fédéral avec 56 % des voix (39 734 sur environ 71 000 bulletins) au congrès de Winnipeg, succédant à Jagmeet Singh, démissionnaire après l'effondrement électoral d'avril 2025; Lewis l'a emporté sur Heather McPherson (29 %) et trois autres candidats.",
+      "descFr": "Reportage de Radio-Canada (29 mars 2026) sur la victoire d'Avi Lewis à la direction du NPD fédéral avec 56 % des voix (39 734 sur environ 71 000 bulletins) au congrès de Winnipeg, succédant à Jagmeet Singh, démissionnaire après l'effondrement électoral d'avril 2025; Lewis l'a emporté sur Heather McPherson (29 %) et trois autres candidats.",
       "publicationDate": "2026-03-29",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2549,11 +2548,11 @@ sources: |-
     },
     {
       "id": "hogue-final-report-2025",
-      "name": "Public Inquiry into Foreign Interference in Federal Electoral Processes and Democratic Institutions – Final Report, Volume 3",
-      "nameFr": "Enquête publique sur l'ingérence étrangère dans les processus électoraux et les institutions démocratiques fédéraux — Rapport final, volume 3",
-      "url": "https://publications.gc.ca/collections/collection_2025/bcp-pco/CP32-169-2-2025-eng-3.pdf",
-      "desc": "Volume 3 of the Hogue Commission's Final Report (Commissioner Marie-Josée Hogue, 28 January 2025): the diaspora and PRC analysis, finding diaspora communities 'especially vulnerable' to foreign-interference and transnational-repression activity, most commonly exercised through pressure on relatives still in China, aimed at suppressing criticism and controlling the PRC's image.",
-      "descFr": "Volume 3 du rapport final de la Commission Hogue (commissaire Marie-Josée Hogue, 28 janvier 2025) : l'analyse consacrée aux diasporas et à la RPC, concluant que les communautés de la diaspora sont « particulièrement vulnérables » à l'ingérence étrangère et à la répression transnationale, exercée le plus souvent par des pressions sur les proches demeurés en Chine, afin d'étouffer la critique et de contrôler l'image de la RPC.",
+      "name": "Public Inquiry into Foreign Interference in Federal Electoral Processes and Democratic Institutions – Final Report",
+      "nameFr": "Enquête publique sur l'ingérence étrangère dans les processus électoraux et les institutions démocratiques fédéraux — Rapport final",
+      "url": "https://foreigninterferencecommission.ca/",
+      "desc": "Hogue Commission's Final Report (Commissioner Marie-Josée Hogue, 28 January 2025): the diaspora and PRC analysis, finding diaspora communities 'especially vulnerable' to foreign-interference and transnational-repression activity, most commonly exercised through pressure on relatives still in China, aimed at suppressing criticism and controlling the PRC's image.",
+      "descFr": "Rapport final de la Commission Hogue (commissaire Marie-Josée Hogue, 28 janvier 2025) : l'analyse consacrée aux diasporas et à la République populaire de Chine, concluant que les communautés de la diaspora sont « particulièrement vulnérables » à l'ingérence étrangère et à la répression transnationale, exercée le plus souvent par des pressions sur les proches demeurés en Chine, afin d'étouffer la critique et de contrôler l'image de la RPC.",
       "publicationDate": "2025-01-28",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -2562,10 +2561,10 @@ sources: |-
     {
       "id": "pmo-carney-starmer-defence-2026",
       "name": "Prime Minister's Office – Joint statement from the Prime Minister of Canada, Mark Carney, and the Prime Minister of the United Kingdom, Keir Starmer, on defence financing",
-      "nameFr": "Cabinet du premier ministre — Déclaration commune du premier ministre du Canada, Mark Carney, et du premier ministre du Royaume-Uni, Keir Starmer, sur le financement de la défense",
+      "nameFr": "Cabinet du premier ministre — Déclaration commune du premier ministre du Canada, Mark Carney, et du premier ministre du Royaume-Uni, Keir Starmer, sur le financement de la défense",
       "url": "https://www.pm.gc.ca/en/news/statements/2026/07/08/joint-statement-prime-minister-canada-mark-carney-and-prime-minister",
       "desc": "Joint Carney–Starmer statement (8 July 2026, issued at Ankara): commits Canada and the UK to close engagement and complementarity between the Defence, Security and Resilience Bank and the Multilateral Defence Mechanism, to scaling defence industrial capacity and resilience, and to improving defence investment throughout the supply chain, with like-minded partners invited to participate.",
-      "descFr": "Déclaration commune Carney–Starmer (8 juillet 2026, publiée à Ankara) : engage le Canada et le Royaume-Uni à une concertation étroite et à la complémentarité entre la Banque de défense, de sécurité et de résilience et le Mécanisme multilatéral de défense, à l'accroissement de la capacité industrielle de défense et de la résilience, et à l'amélioration de l'investissement de défense dans l'ensemble de la chaîne d'approvisionnement, les partenaires aux vues similaires étant invités à y participer.",
+      "descFr": "Déclaration commune Carney–Starmer (8 juillet 2026, publiée à Ankara) : engage le Canada et le Royaume-Uni à une concertation étroite et à la complémentarité entre la Banque de la défense, de la sécurité et de la résilience et le Mécanisme de défense multilatéral, à l'accroissement de la capacité industrielle de défense et de la résilience, et à l'amélioration de l'investissement dans la défense tout au long de la chaîne d'approvisionnement; les partenaires aux vues similaires étant invités à y participer.",
       "publicationDate": "2026-07-08",
       "accessDate": "2026-07-08",
       "confidence": "High",

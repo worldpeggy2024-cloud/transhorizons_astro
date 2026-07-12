@@ -15,8 +15,10 @@
  *
  * SAFE BY DESIGN:
  *   1. FRENCH ONLY. Only value lines of keys ending in `_fr` are touched
- *      (folded `>-` prose + the actors_*_fr / risks_fr JSON blocks). English
- *      `_en` blocks and the shared, English `sources:` block are left alone.
+ *      (folded `>-` prose + the actors_*_fr / risks_fr JSON blocks), plus —
+ *      since the sources registry became bilingual — the `"nameFr":` and
+ *      `"descFr":` property lines inside the shared `sources:` JSON block.
+ *      English `_en` blocks and all other source fields are left alone.
  *   2. STRUCTURAL SAFE. The colon rule only converts *an existing space* before
  *      `:` — YAML/JSON structural colons (`key:`, `"key":`) have no space before
  *      them, so they're never matched. Nothing inserts a space that isn't there
@@ -107,11 +109,21 @@ function fix(text) {
   const wrapRe = new RegExp(`^([ \\t]*)([:—»])${S}*(.*)$`, 'u'); // line that STARTS with :/—/»
   const candidates = [];
   let isFrench = false;
+  let inSources = false;
+  const srcFrLine = /^\s*"(nameFr|descFr)":/;              // French property lines in the sources JSON
 
   for (let i = 0; i < lines.length; i++) {
     const km = lines[i].match(keyRe);
-    if (km) { isFrench = km[1].endsWith('_fr'); continue; } // key line: set scope, never transform
-    if (!isFrench) continue;                                // English / sources / etc.
+    if (km) {                                               // key line: set scope, never transform
+      isFrench = km[1].endsWith('_fr');
+      inSources = km[1] === 'sources';
+      continue;
+    }
+    if (inSources) {                                        // bilingual sources: French fields only
+      if (srcFrLine.test(lines[i])) lines[i] = applyRules(lines[i], counts);
+      continue;
+    }
+    if (!isFrench) continue;                                // English / etc.
     if (wrapRe.test(lines[i])) candidates.push(i);          // folded-wrap: handle after
     lines[i] = applyRules(lines[i], counts);
   }
