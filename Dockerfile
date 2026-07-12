@@ -22,8 +22,5 @@ EXPOSE 3000
 ENV HOST=0.0.0.0
 ENV PORT=3000
 
-# Start the app
-CMD ["node", "./dist/server/entry.mjs"]
-
 # Start the server
 CMD ["node", "./dist/server/entry.mjs"]

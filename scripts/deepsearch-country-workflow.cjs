@@ -437,11 +437,11 @@ Each source must match this schema (7 English fields required, plus nameFr/descF
 [
   {
     "id": "short-slug",
-    "name": "Full Publication Name (English)",
-    "nameFr": "Nom de la source en français (traduction, ou forme française officielle si elle existe)",
+    "name": "Official published title — the source's English title if it publishes one; otherwise the original-language title verbatim (never translated)",
+    "nameFr": "Titre officiel en français si la source en publie un; sinon le titre original tel quel — jamais traduit",
     "url": "https://exact-url-to-specific-document-not-homepage",
-    "desc": "One sentence (English): what this source is and what specific data it provides for ${nameEn}.",
-    "descFr": "La même phrase, en français (traduction fidèle de desc).",
+    "desc": "Roughly 20-30 words (English): what the source IS — kind (national inventory report, live standings page, court ruling, official assessment), coverage domain, authoritative status, any bias or reservation. NOT the specific numbers or claims. For single-language sources, add a translation of the title here (plus a transliteration for non-Latin scripts).",
+    "descFr": "La même description, en français — jamais les chiffres ni les affirmations que la prose citera.",
     "publicationDate": "YYYY-MM-DD or omit if the page shows no reliable date",
     "accessDate": "${today}",
     "confidence": "High | Med | Low",
@@ -454,6 +454,11 @@ or last-updated date. If a legitimate primary source (e.g. a government landing
 page) has no reliable date, OMIT the field entirely — do NOT guess, approximate,
 or copy accessDate into it. An honest undated source is preferred over a faked date
 or a worse source chosen only because it shows a date. accessDate is always required.
+
+Sourcing disciplines (no exceptions):
+- Source titles in the source's own language(s), never translated. A source's title is a proper name in its own language; harvest the ACTUAL published title, whatever the language (French, English, Russian, Chinese, Korean, Arabic, Kiswahili, Spanish, or any other). Published bilingually or multilingually (many Canadian federal sources, most international organizations, European Union institutions): capture each official language version — name = the official English title, nameFr = the official French title. Published in only one language: use the original title verbatim — original script included — for BOTH name and nameFr, and put a translation of the title (plus a transliteration for non-Latin scripts) in desc/descFr. Never fabricate a title in a language the source does not publish in; if the source has no official title in a report language, do not invent one. A translated title breaks findability (search engines, library catalogues, artificial-intelligence queries) and, in artificial-intelligence-mediated search, risks returning something entirely different that merely looks plausible.
+- Source descriptions describe the source, not the data. desc states what the source IS — its scope, role, and authoritative status — in roughly 20 to 30 words: the kind of source (national inventory report, live standings page, court ruling, official assessment), its coverage domain, and any bias or reservation. It does NOT state the specific numbers or claims the prose will draw from it; factual claims live in the prose, cited to the source ID. Diagnostic test: if a fact in the desc could be silently edited to a new value while the prose still cites the ID unchanged, the fact does not belong in desc — it is a claim, and claims live in prose only. (A title translation or transliteration in desc is descriptive metadata about the source's identity, not a claim.)
+- Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only; all subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when they appear as data-field identifiers; when such a code appears in reader-facing prose, spell it: "Canada," not "CAN."
 
 Source priority rules:
 - Macro/Finance: national statistics office, IMF, World Bank, BIS, OECD
@@ -524,6 +529,9 @@ Hard rules:
 - EN and FR fields must be synchronized in substance (same facts, same depth). FR may adapt phrasing naturally.
 - Risks: 5–10 entries; each must have title, trigger, probability (High/Med/Low), impact (High/Med/Low), timeHorizon, leadingIndicators, and mitigants.
 - dealability in actors must be exactly: High, Medium, or Low.
+- Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only; all subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. The report is written for a reader who does not work in the sector, and the extra half-line per acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when they appear as data-field identifiers; when such a code appears in reader-facing prose, spell it: "Canada," not "CAN."
+- Source titles: cite every source exactly as the approved Pass A list titles it — never retitle a source into the reader's language. A source's title is a proper name in its own official language(s) as published; where Pass A supplies an original-language title with a translation in the source's desc, keep the original title and do NOT substitute the translation.
+- Situating sentences: Every peer opening and every field with a baseline meaning opens with a one-sentence situator before operational detail. The situator is orientation, not history — one short line. If it runs longer than a sentence, it has failed. The four REQUIRED openers are marked "OPENER (required)" in the section instructions below.
 
 Section-by-section instructions:
 
@@ -550,7 +558,7 @@ political.shockAbsorbers: What cushions shocks vs. what could accelerate instabi
 
 political.constitutionalSubstrate: The deep-time legal foundation beneath current politics — for settler states, Indigenous title and the treaty lineage. Treaty text and court rulings only, never news. Hold distinct legal substrates SEPARATELY (historic-treaty / modern-agreement lineage vs unceded, title-litigated territory); do not collapse them or project a single model of consent onto plural Indigenous governance. Present-state bedrock, distinct from the current political contest above.
 
-economy.macroReality: GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — all with specific figures and years.
+economy.macroReality: OPENER (required, one sentence): name the dominant economic character before any numbers — the shape of production (primary / manufacturing / services), what the economy lives on, whether it is diversified or concentrated on a few sectors. Then: GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — all with specific figures and years.
 
 economy.externalVulnerability: Export/import profile by value and commodity; trade partner concentration; sovereign debt holders; IMF program status; sanctions exposure.
 
@@ -558,13 +566,15 @@ economy.politicalEconomy: Who benefits from current model; business elite struct
 
 TERRITORY — describe the physical body of the country ON ITS OWN TERMS, not merely a risk to assets or an input to trade. Throughout: PAIR every exposure with the capacity to act on it and name the gap; LOCATE effects geographically — who inside the country is exposed or served; BIND every projection to its emissions scenario AND horizon; report DEMONSTRATED over DECLARED. Neither doom-catalogue nor techno-triumph:
 
+OPENER (required): the territory peer opens — as the first sentence of territory.geography — with one sentence for the country as a whole: landlocked / coastal / island / archipelago / continent / peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours are.
+
 territory.geography: the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); the north / periphery. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
 
 territory.minerals: the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named; reserve figures are political — flag disputed or state-controlled counts), including undeveloped and stranded deposits. What the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
 
 territory.biosphere: the biological and renewable base — forests, freshwater, arable land, fisheries — as physical stock and its condition/trend (depletion, degradation, resilience), with year and source. Distinct from agricultural/forestry GDP (ECONOMY).
 
-territory.climate: observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically. Every projection carries its emissions scenario AND horizon. Physical science only. PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence.
+territory.climate: OPENER (required, one sentence): establish the baseline climate type (cold / hot / temperate / tropical / arid; high altitude; uniform or dramatically regional) before any warming, exposure, or hazard content. Warming is a change; a change needs a baseline. Then: observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically. Every projection carries its emissions scenario AND horizon. Physical science only. PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence.
 
 territory.metabolism: how the country physically powers, feeds, and waters itself AS A SYSTEM — energy, food, and water flows; self-sufficiency vs dependence in each; the internal networks that distribute them. The country's own throughput, NOT energy-as-export-vulnerability (ECONOMY).
 
@@ -580,7 +590,7 @@ capacity.productivity: productivity level and trend; internal / interprovincial 
 
 SOCIETY — describe the society ON ITS OWN TERMS, before and independent of any stability implication; a society is a component of the country in itself, not a risk factor:
 
-society.demographics: total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
+society.demographics: OPENER (required, one very short historical framing sentence): indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed. Migration numbers depend on this baseline. Then: total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
 
 society.composition: ethnic, linguistic, and religious composition (rounded shares with year and source). State where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry; do not just list groups.
 

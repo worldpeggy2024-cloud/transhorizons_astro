@@ -48,6 +48,18 @@ These require reviewer judgment — the validator cannot catch them:
 - **Missing data year** — "GDP grew 2%" with no year specified is not acceptable
 - **Passive voice hiding uncertainty** — "it is believed that" signals unverifiable claim; cite or remove
 
+### Cross-cutting discipline — acronyms
+- **Unglossed acronym at first mention** — the first mention of any acronym or initialism in a country
+  report — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that
+  first mention only. All subsequent mentions in the same report may use the short form. This applies to
+  every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC),
+  organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any
+  others. The report is written for a reader who does not work in the sector, and the extra half-line per
+  acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as
+  internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when
+  they appear as data-field identifiers; when such a code appears in the reader-facing prose itself, spell
+  it: "Canada," not "CAN."
+
 ### Translation quality
 - **Machine translation without review** — identifiable by unnatural word order, false cognates (e.g. "actuellement" ≠ "actually"), register inconsistency
 - **English person name translated** — "Marc Carney" instead of "Mark Carney" is an error

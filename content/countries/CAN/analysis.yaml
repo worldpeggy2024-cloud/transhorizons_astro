@@ -509,14 +509,21 @@ political_constitutionalSubstrate_fr: >-
   personnes, soit 5,0 % du total, comprenant les Premières Nations, les Métis et
   les Inuits [statcan-2021-indigenous-profile].
 economy_macroReality_en: >-
-  Real GDP grew 1.7% in full-year 2025, before decelerating sharply: Q4 2025
-  contracted 0.6% (annualized) and Q1 2026 was flat (0.0% change)
+  Canada is a high-income, advanced service economy (services dominate output
+  and employment) resting on a large, geographically concentrated
+  resource-export base (energy above all) and a manufacturing sector clustered
+  in the Ontario–Quebec corridor, leaving it diversified at home but heavily
+  exposed abroad through a narrow, resource-weighted export basket.
+
+
+  The country Real GDP grew 1.7% in full-year 2025, before decelerating sharply:
+  Q4 2025 contracted 0.6% (annualized) and Q1 2026 was flat (0.0% change)
   [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. The Bank of Canada
   projects 1.2% growth for full-year 2026; the PBO's independent projection is
   1.1% treating US tariffs as permanent; the OECD's June 2026 forecast is also
   1.2% in 2026 rising to 1.7% in 2027
   [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026]. Inflation rose to 3.2%
-  y/y in May 2026 — above the Bank of Canada's 2% target — driven primarily by
+  y/y in May 2026 (above the Bank of Canada's 2% target) driven primarily by
   gasoline prices (+33.2% y/y) and food price acceleration; the BoC projects
   inflation easing back to 2% in 2027 [statcan-cpi-may2026][boc-mpr-apr2026].
   The policy rate is held at 2.25% as of the April 2026 Monetary Policy Report,
@@ -535,15 +542,24 @@ economy_macroReality_en: >-
   Canada's medium-term fiscal and monetary fundamentals as sound, flagging US
   trade exposure as the primary structural vulnerability [imf-can-2025-art4].
 economy_macroReality_fr: >-
-  Le PIB réel a progressé de 1,7 % pour l'ensemble de l'année 2025, avant de
-  ralentir fortement : le quatrième trimestre de 2025 s'est contracté de 0,6 %
-  (annualisé) et le premier trimestre de 2026 est demeuré stable (variation de
-  0,0 %) [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. La Banque du
-  Canada projette une croissance de 1,2 % pour l'ensemble de l'année 2026; la
-  projection distincte de la directrice parlementaire du budget est de 1,1 % en
-  supposant le maintien des droits de douane imposés par les États-Unis; les
-  prévisions de l'OCDE de juin 2026 sont également de 1,2 % en 2026, avec une
-  progression à 1,7 % en 2027
+  L'économie canadienne, avancée et à revenu élevé, est dominée par les
+  services. Elle repose sur une vaste base d'exportation de ressources
+  géographiquement concentrée (l'énergie au premier chef) et sur un secteur
+  manufacturier regroupé dans le corridor Ontario-Québec. Cette structure lui
+  confère une diversification intérieure tout en l'exposant fortement aux chocs
+  extérieurs, du fait d'un panier d'exportations étroit et à forte teneur en
+  ressources.
+
+
+  Le PIB réel du pays a progressé de 1,7 % pour l'ensemble de l'année 2025,
+  avant de ralentir fortement : le quatrième trimestre de 2025 s'est contracté
+  de 0,6 % (annualisé) et le premier trimestre de 2026 est demeuré stable
+  (variation de 0,0 %) [gac-quarterly-trade-spring2026][statcan-gdp-q1-2026]. La
+  Banque du Canada projette une croissance de 1,2 % pour l'ensemble de l'année
+  2026; la projection distincte de la directrice parlementaire du budget est de
+  1,1 % en supposant le maintien des droits de douane imposés par les
+  États-Unis; les prévisions de l'OCDE de juin 2026 sont également de 1,2 % en
+  2026, avec une progression à 1,7 % en 2027
   [boc-mpr-apr2026][pbo-efo-jun2026][oecd-eo-june2026]. L'inflation a atteint
   3,2 % sur un an en mai 2026 (au-dessus de la cible de 2 % de la Banque du
   Canada) portée principalement par les prix de l'essence (+33,2 %) et la hausse
@@ -690,8 +706,16 @@ economy_politicalEconomy_fr: >-
   sensiblement la demande d'origine démographique
   [pbo-ircc-immigration-demographic].
 territory_geography_en: >-
-  Canada occupies close to 10 million km² (the world's second-largest country by
-  area) inhabited by roughly 41.5 million people, a density near 4 per km²
+  The world's second-largest country by area, Canada spans a continent from the
+  Atlantic to the Pacific and north to the Arctic Ocean — coastal on three
+  oceans yet functionally landlocked in its resource heartland, mountainous in
+  the west, flat across the interior plains, shield and boreal forest across the
+  north, with a single land neighbour (the United States) along the world's
+  longest undefended border.
+
+
+  Canada occupies close to 10 million km² inhabited by roughly 41.5 million
+  people, a density near 4 per km²
   [statcan-pop-quarterly][statcan-2016-census-geography]. The other distinctive
   spatial fact is that the population is not distributed across that territory:
   two of every three Canadians live within 100 km of the Canada–United States
@@ -708,9 +732,18 @@ territory_geography_en: >-
   inter-provincial ones. The border with the United States, at 8,891 km, is the
   world's longest between two countries.
 territory_geography_fr: >-
-  Le Canada occupe près de 10 millions de km² (deuxième pays du monde en
-  superficie) pour une population d'environ 41,5 millions d'habitants, soit une
-  densité proche de 4 au km²
+  Deuxième pays du monde en superficie, le Canada s'étend d'un océan à l'autre,
+  de l'Atlantique au Pacifique, et jusqu'à l'océan Arctique au nord; bordé par
+  trois océans, mais dont les régions productrices sont enclavées. Son relief
+  associe des chaînes montagneuses à l'ouest, de vastes plaines intérieures, le
+  Bouclier canadien à l'est et au centre, et la forêt boréale qui traverse le
+  pays sur toute sa largeur au nord. Il ne partage de frontière terrestre
+  qu'avec les États-Unis, la plus longue frontière commune entre deux pays au
+  monde.
+
+
+  Le Canada occupe près de 10 millions de km² pour une population d'environ 41,5
+  millions d'habitants, soit une densité proche de 4 au km²
   [statcan-pop-quarterly][statcan-2016-census-geography]. L'autre aspect spatial
   distinctif est que cette population n'est pas répartie sur tout ce
   territoire : les deux tiers de la populations canadienne vivent à moins de
@@ -817,6 +850,14 @@ territory_biosphere_fr: >-
   milliards (scénario à faibles émissions, compatible RCP 2.6 du GIEC) et 101
   milliards (scénario à fortes émissions) par an d'ici 2050 [nrcan-sof-2025].
 territory_climate_en: >-
+  Canada's baseline climate is cold and strongly continental across most of the
+  landmass, running from the St. Lawrence and Great Lakes belt, where most
+  Canadians live (cold snowy winters, hot humid summers) through the drier,
+  sharper cold of the prairies to Arctic tundra in the far north; both coasts
+  break the pattern, the Pacific mild and wet year-round, the Atlantic maritime
+  and storm-exposed.
+
+
   Canada's climate is warming at roughly twice the global average rate, with
   northern Canada warming at more than double the global rate; the Government of
   Canada's Canada's Changing Climate Report headline finding is that this rate
@@ -847,6 +888,15 @@ territory_climate_en: >-
   records the observed emissions trajectory against which those scenarios were
   built [eccc-nir-2026-summary].
 territory_climate_fr: >-
+  Le climat de fond du Canada est froid et nettement continental sur la majeure
+  partie du territoire. Il s'étend de la ceinture du Saint-Laurent et des Grands
+  Lacs, où vit la majorité de la population canadienne (hivers froids et
+  neigeux, étés chauds et humides), au froid plus sec et plus vif des Prairies,
+  jusqu'à la toundra arctique du Grand Nord. Les deux côtes rompent ce schéma :
+  le Pacifique, doux et pluvieux toute l'année; l'Atlantique, maritime et exposé
+  aux tempêtes.
+
+
   Le climat du Canada se réchauffe à environ deux fois le rythme moyen mondial,
   et plus de deux fois plus vite dans le nord du pays. La conclusion principale
   du Rapport sur le climat changeant du Canada du gouvernement du Canada est que
@@ -1070,11 +1120,11 @@ capacity_delivery_en: >-
   2024, up 32% from 2018, with 83% directed at non-emitting sources;
   hydroelectric investment alone accounted for 38% of that total. The delivery
   test facing the federal state through the current cycle is whether the
-  newly-consolidated Major Projects Office pipeline (see `capacity.permitting`),
-  the Indigenous Loan Guarantee Program expansion, and the Budget 2025 vehicles
-  translate the stated 2-year approval timeline and the announced capital
-  commitments into observable schedule and cost performance on the referred
-  projects; a record not yet in evidence.
+  newly-consolidated Major Projects Office pipeline (see the State Capacity -
+  Permitting section), the Indigenous Loan Guarantee Program expansion, and the
+  Budget 2025 vehicles translate the stated 2-year approval timeline and the
+  announced capital commitments into observable schedule and cost performance on
+  the referred projects; a record not yet in evidence.
 capacity_delivery_fr: >-
   La capacité de mise en œuvre correspond au bilan réel de l'État en matière de
   réalisation d'infrastructures à grande échelle, distinct de l'intention
@@ -1096,11 +1146,11 @@ capacity_delivery_fr: >-
   ce total. Le test de mise en œuvre auquel l'État fédéral fait face dans le
   cycle actuel consiste à savoir si la chaîne de traitement de projets
   nouvellement consolidé du Bureau des grands projets (voir la section Capacité
-  d'exécution - Autorisations), l'élargissement du Programme de garantie de
-  prêts pour les Autochtones et les instruments du Budget 2025 traduiront la
-  cible affichée d'approbation en deux ans et les engagements en capital
-  annoncés en performances observables de calendrier et de coûts sur les projets
-  soumis; bilan qui n'est pas encore établi.
+  de l'État - Autorisations), l'élargissement du Programme de garantie de prêts
+  pour les Autochtones et les instruments du Budget 2025 traduiront la cible
+  affichée d'approbation en deux ans et les engagements en capital annoncés en
+  performances observables de calendrier et de coûts sur les projets soumis;
+  bilan qui n'est pas encore établi.
 capacity_productivity_en: >-
   Productivity has been Canada's central medium-term economic challenge across
   the last decade, distinct from headline GDP growth and directly consequential
@@ -1170,6 +1220,12 @@ capacity_productivity_fr: >-
   explicitement ciblé par la stratégie actuelle des minéraux critiques
   [nrcan-cm-strategy-annual-2024].
 society_demographics_en: >-
+  Canada is a settler-immigrant society built on Indigenous lands: outside the
+  First Nations, Métis, and Inuit peoples whose presence long predates the
+  state, essentially the entire population descends from successive waves of
+  immigration, and the country has depended on continued immigration for its
+  growth throughout its modern history.
+
   Canada's population stood at 41,651,653 on July 1, 2025
   [statcan-pop-age-jul2025], declining to 41,472,081 by Q1 2026; the first
   annual population decline in Canadian history, driven by the government's
@@ -1189,6 +1245,13 @@ society_demographics_en: >-
   reduce the number of non-permanent residents to under 5% of the total
   population by end-2027 [pbo-ircc-immigration-demographic].
 society_demographics_fr: >-
+  Le Canada est une société d'immigration et de peuplement établie sur des
+  terres autochtones : en dehors des Premières Nations, des Métis et des Inuits,
+  dont la présence est bien antérieure à l'État, la totalité ou presque de la
+  population descend de vagues successives d'immigration, et le pays a dépendu
+  d'une immigration continue pour sa croissance tout au long de son histoire
+  moderne.
+
   La population du Canada s'élevait à 41 651 653 personnes le 1er juillet 2025
   [statcan-pop-age-jul2025], pour diminuer à 41 472 081 au T1 2026; première
   baisse annuelle de la population dans l'histoire canadienne, liée à la
