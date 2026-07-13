@@ -1,0 +1,237 @@
+{
+  "legislature": {
+    "structure": "bicameral",
+    "chambers": [
+      {
+        "name": "United States Senate",
+        "nameFr": "Sénat des États-Unis",
+        "seats": 100,
+        "liveStandingsUrl": "https://www.senate.gov/history/partydiv.htm",
+        "electionCycle": "Staggered 6-year terms; approximately one-third of seats up for election every 2 years (Article I, Section 3)",
+        "note": "Two senators per state regardless of population. Official party-division page. Composition is read from this URL on the run date; it is not pre-answered here."
+      },
+      {
+        "name": "United States House of Representatives",
+        "nameFr": "Chambre des représentants des États-Unis",
+        "seats": 435,
+        "liveStandingsUrl": "https://pressgallery.house.gov/member-data/party-breakdown",
+        "electionCycle": "2-year terms; all 435 seats up for election in every even-numbered year (Article I, Section 2)",
+        "note": "Fixed at 435 voting members by Public Law 62-5 (Apportionment Act of 1911), in effect since 1913. Six non-voting delegates are not counted in the 435. Official party-breakdown page; the page notes it is not updated until member departures are read on the House floor. Composition is read from this URL on the run date; it is not pre-answered here."
+      }
+    ],
+    "note": "Established by Article I of the Constitution of the United States. Both chambers must pass identical legislation before it is presented to the President. Primary text: https://constitution.congress.gov/constitution/article-1/"
+  },
+  "executive": {
+    "id": "us-constitution-article-2",
+    "type": "presidential",
+    "drawnFromLegislature": "false",
+    "unifiedDividedApplies": "true",
+    "sourceUrl": "https://constitution.congress.gov/constitution/article-2/",
+    "note": "Article II vests executive power in a directly elected President serving a 4-year term. The President is not drawn from and does not depend on the confidence of Congress. Unified/divided government applies and is a standard analytic variable in the United States system."
+  },
+  "powerLocus": {
+    "constitutionalOrganIsWherePowerSits": "UNRESOLVED",
+    "actualLocus": "JUDGMENT FIELD — contested; see note",
+    "sourceUrl": "https://constitution.congress.gov/constitution/",
+    "note": "JUDGMENT FIELD — not a lookup; human verification required. Constitutionally, power is distributed among three co-equal branches — Congress, the President, and the Judiciary — with checks and balances. Whether operative power tracks that constitutional design is actively contested: recent apex-court rulings have expanded presidential immunity, removed for-cause protections for independent-agency officers, and constrained universal injunctions, while the Varieties of Democracy Institute records legislative and judicial constraints on executive power at their lowest levels in over a century. The contest is the finding; it is not resolved by lookup."
+  },
+  "substrateInstruments": [
+    {
+      "id": "constitution-usa-1787",
+      "kind": "founding text",
+      "name": "Constitution of the United States (1787, in force 4 March 1789)",
+      "url": "https://constitution.congress.gov/constitution/",
+      "note": "Founding constitutional text; seven Articles and 27 Amendments. Official annotated text hosted by the Library of Congress."
+    },
+    {
+      "id": "reconstruction-amendments",
+      "kind": "constitutional amendment",
+      "name": "Reconstruction Amendments: Thirteenth Amendment (1865), Fourteenth Amendment (1868), Fifteenth Amendment (1870)",
+      "url": "https://constitution.congress.gov/constitution/amendment-13/",
+      "note": "Legal re-founding: abolished slavery, established birthright citizenship and equal protection, prohibited race-based denial of suffrage. Held as a separate instrument from the founding text."
+    },
+    {
+      "id": "marbury-v-madison-1803",
+      "kind": "apex-court ruling",
+      "name": "Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803)",
+      "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep005/usrep005137/usrep005137.pdf",
+      "note": "Official Library of Congress United States Reports scan. Established judicial review."
+    },
+    {
+      "id": "marshall-trilogy",
+      "kind": "apex-court ruling",
+      "name": "The Marshall Trilogy — Johnson v. M'Intosh, 21 U.S. 543 (1823); Cherokee Nation v. Georgia, 30 U.S. 1 (1831); Worcester v. Georgia, 31 U.S. 515 (1832)",
+      "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep021/usrep021543/usrep021543.pdf",
+      "note": "Official Library of Congress United States Reports scans. Foundational rulings on the federal-tribal sovereignty relationship. Cherokee Nation: https://tile.loc.gov/storage-services/service/ll/usrep/usrep030/usrep030001/usrep030001.pdf — Worcester: https://tile.loc.gov/storage-services/service/ll/usrep/usrep031/usrep031515/usrep031515.pdf"
+    },
+    {
+      "id": "insular-cases-1901",
+      "kind": "apex-court ruling",
+      "name": "The Insular Cases — De Lima v. Bidwell, 182 U.S. 1 (1901); Downes v. Bidwell, 182 U.S. 244 (1901)",
+      "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep182/usrep182001/usrep182001.pdf",
+      "note": "Official Library of Congress United States Reports scans. Founding rulings of the distinct constitutional regime governing unincorporated territories. Downes: https://tile.loc.gov/storage-services/service/ll/usrep/usrep182/usrep182244/usrep182244.pdf"
+    },
+    {
+      "id": "shelby-county-2013",
+      "kind": "apex-court ruling",
+      "name": "Shelby County v. Holder, 570 U.S. 529 (2013)",
+      "url": "https://www.supremecourt.gov/opinions/12pdf/12-96_6k47.pdf",
+      "note": "Official Supreme Court slip opinion. Bears on Fifteenth Amendment enforcement and federal oversight of state election law. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "mcgirt-v-oklahoma-2020",
+      "kind": "apex-court ruling",
+      "name": "McGirt v. Oklahoma, 591 U.S. 894 (2020)",
+      "url": "https://www.supremecourt.gov/opinions/19pdf/18-9526_9okb.pdf",
+      "note": "Official Supreme Court slip opinion. Reservation disestablishment and criminal jurisdiction in Indian country. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "oklahoma-v-castro-huerta-2022",
+      "kind": "apex-court ruling",
+      "name": "Oklahoma v. Castro-Huerta, 597 U.S. 629 (2022)",
+      "url": "https://www.supremecourt.gov/opinions/21pdf/21-429_8o6a.pdf",
+      "note": "Official Supreme Court slip opinion. State concurrent criminal jurisdiction in Indian country; reallocates jurisdiction toward the states. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "wv-v-epa-2022",
+      "kind": "apex-court ruling",
+      "name": "West Virginia v. Environmental Protection Agency, 597 U.S. 697 (2022)",
+      "url": "https://www.supremecourt.gov/opinions/21pdf/20-1530_n758.pdf",
+      "note": "Official Supreme Court slip opinion. Major questions doctrine as a clear-statement rule constraining agency authority. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "haaland-v-brackeen-2023",
+      "kind": "apex-court ruling",
+      "name": "Haaland v. Brackeen, 599 U.S. 255 (2023)",
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-376_7l48.pdf",
+      "note": "Official Supreme Court slip opinion. Congressional plenary power over Indian affairs; federal preemption of state family law."
+    },
+    {
+      "id": "loper-bright-2024",
+      "kind": "apex-court ruling",
+      "name": "Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024)",
+      "url": "https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf",
+      "note": "Official Supreme Court slip opinion. Judicial deference to agency statutory interpretation. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "trump-v-usa-2024",
+      "kind": "apex-court ruling",
+      "name": "Trump v. United States, 603 U.S. 593 (2024)",
+      "url": "https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf",
+      "note": "Official Supreme Court slip opinion. Presidential immunity from criminal prosecution for official acts. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "trump-v-casa-2025",
+      "kind": "apex-court ruling",
+      "name": "Trump v. CASA, Inc., 606 U.S. 831 (2025)",
+      "url": "https://www.supremecourt.gov/opinions/24pdf/24a884_8n59.pdf",
+      "note": "Official Supreme Court slip opinion. Equitable authority of federal district courts to issue universal injunctions. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "trump-v-slaughter-2026",
+      "kind": "apex-court ruling",
+      "name": "Trump v. Slaughter, 609 U.S. ___ (2026), No. 25-332",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/25-332_qn12.pdf",
+      "note": "Official Supreme Court slip opinion, decided 29 June 2026. For-cause removal protections for independent multimember agencies; overruled Humphrey's Executor (1935). SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "trump-v-cook-2026",
+      "kind": "apex-court ruling",
+      "name": "Trump v. Cook, 609 U.S. ___ (2026), No. 25A312",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/25a312_5468.pdf",
+      "note": "Official Supreme Court slip opinion, decided 29 June 2026 on the interim docket. Removal protections for Federal Reserve Board governors. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "trump-v-barbara-2026",
+      "kind": "apex-court ruling",
+      "name": "Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/25-365_4hdj.pdf",
+      "note": "Official Supreme Court slip opinion, decided 30 June 2026. Fourteenth Amendment Citizenship Clause and Executive Order 14160. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "watson-v-rnc-2026",
+      "kind": "apex-court ruling",
+      "name": "Watson v. Republican National Committee, 609 U.S. ___ (2026)",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/24-1260_g3cn.pdf",
+      "note": "Official Supreme Court slip opinion. Federal election-day statutes and state authority over absentee ballot receipt periods. SUBSTRATE IN MOTION."
+    },
+    {
+      "id": "usc-title-25",
+      "kind": "statutory codification of the sovereignty relationship",
+      "name": "United States Code, Title 25 — Indians",
+      "url": "https://uscode.house.gov/browse/prelim@title25&edition=prelim",
+      "note": "Statutory codification of the federal-tribal government-to-government relationship. Maintained by the Office of the Law Revision Counsel, U.S. House of Representatives."
+    },
+    {
+      "id": "crs-congress-gov",
+      "kind": "legislature's non-partisan research service",
+      "name": "Congressional Research Service — public report portal",
+      "url": "https://www.congress.gov/crs-products",
+      "note": "Non-partisan research arm of Congress, operating under the Library of Congress. Admissible as citationType: Interpretation."
+    },
+    {
+      "id": "federal-register",
+      "kind": "official gazette",
+      "name": "Federal Register — Office of the Federal Register, National Archives and Records Administration",
+      "url": "https://www.federalregister.gov/",
+      "note": "Official daily journal of the United States federal government: presidential documents, proposed and final agency rules, notices."
+    }
+  ],
+  "legalOrders": {
+    "structure": "plural",
+    "orders": [
+      {
+        "kind": "statutory",
+        "governs": "Federal statutory law applicable to all persons within United States jurisdiction; supreme over state law under the Supremacy Clause (Article VI)",
+        "sourceUrl": "https://uscode.house.gov/"
+      },
+      {
+        "kind": "statutory",
+        "governs": "State statutory and common law: each of the 50 states maintains its own constitution, legislature, courts and code, operating concurrently with federal law within powers reserved by the Tenth Amendment. Louisiana retains a civil-law tradition for private law matters.",
+        "sourceUrl": "https://constitution.congress.gov/constitution/amendment-10/"
+      },
+      {
+        "kind": "other",
+        "governs": "Tribal law: federally recognized tribes exercise inherent pre-constitutional sovereignty over their members and Indian country (18 U.S.C. § 1151). Tribes hold written constitutions, statutory codes and courts of record; this sovereignty is not derived from federal or state law but is subject to congressional plenary power. NOT customary law.",
+        "sourceUrl": "https://uscode.house.gov/browse/prelim@title25&edition=prelim"
+      },
+      {
+        "kind": "other",
+        "governs": "Insular territorial order: the five inhabited unincorporated territories (Puerto Rico, Guam, United States Virgin Islands, Northern Mariana Islands, American Samoa) are governed under a distinct constitutional regime established by the Insular Cases, under which Congress holds plenary authority and the Constitution applies only selectively. Residents hold no presidential vote and no voting representation in Congress.",
+        "sourceUrl": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep182/usrep182244/usrep182244.pdf"
+      }
+    ],
+    "note": "Four distinct legal orders: federal statutory (supreme), 50-state statutory and common law (concurrent), tribal inherent pre-constitutional sovereignty (subject to congressional plenary power), and insular territorial (Insular Cases doctrine). No religious legal order operates with state authority."
+  },
+  "territorialControl": {
+    "status": "full",
+    "sourceUrl": "https://www.doi.gov/oia",
+    "note": "Full sovereign or administrative control over the 50 states, the District of Columbia, and five inhabited insular territories. Three territories remain on the United Nations list of Non-Self-Governing Territories, which is a decolonization-status question, not a control dispute."
+  },
+  "executionRegime": {
+    "publishedApprovalsRegimeExists": "true",
+    "permittingAuthorityUrl": "https://www.permits.performance.gov/",
+    "note": "The Federal Permitting Improvement Steering Council operates a published, publicly trackable permitting dashboard under Title 41 of the Fixing America's Surface Transportation Act (42 U.S.C. § 4370m). CRITICAL: the federal dashboard is NOT the complete approvals regime. The majority of permitting in the United States is state and local — environmental, land-use, construction, utilities and siting permits are issued under state law. A later pass must not treat the federal dashboard as the whole picture."
+  },
+  "cohesionInstrument": {
+    "primaryBarometer": "Pew Research Center — Public Trust in Government, 1958-2025; with Gallup — Trust in Government / Confidence in Institutions as the parallel series",
+    "url": "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+    "selfReportReliabilityFlag": "partisan-sorted",
+    "note": "Partisan-sorted: respondents answer honestly, but responses track which party controls government rather than a stable underlying trust level. In-party supporters report higher trust when their party holds power; out-party supporters report lower. This is NOT preference falsification under repression — 'constrained' does not apply to the United States. Report cohort breakdowns rather than the headline aggregate, which is a systematically distorted artefact."
+  },
+  "periphery": {
+    "value": "The five inhabited unincorporated territories: Commonwealth of Puerto Rico; Guam; United States Virgin Islands; Commonwealth of the Northern Mariana Islands; American Samoa. Plus the non-contiguous states of Alaska and Hawaii, and uninhabited outlying possessions (Wake, Midway, Johnston, Palmyra, Howland, Baker, Jarvis, Navassa, Kingman Reef).",
+    "sourceUrl": "https://www.doi.gov/oia",
+    "note": "Territories are administered by the Office of Insular Affairs, Department of the Interior. Residents are United States nationals or citizens but have no voting representation in Congress and do not vote in presidential elections. The Freely Associated States (Micronesia, Marshall Islands, Palau) are sovereign states, not United States territory."
+  },
+  "subnationalTerm": {
+    "en": "interstate (the 50 federated units are 'states'; unincorporated possessions are 'territories')",
+    "fr": "interétatique (les 50 unités fédérées sont des « États » ; les possessions non incorporées sont des « territoires »)",
+    "note": "Barriers to the movement of goods, labour and capital between the 50 states are 'interstate' barriers. The District of Columbia is a federal district, not a state."
+  },
+  "religionCountReliability": {
+    "flag": "LOW — no official state enumeration of religion exists",
+    "sourceUrl": "https://www.pewresearch.org/short-reads/2023/04/12/why-the-us-census-doesnt-ask-americans-about-their-religion/",
+    "note": "The decennial census does not ask about religion; Congress prohibited the Census Bureau from asking about religious belief or membership on the mandatory census. All religion data derives from voluntary private surveys (Pew Research Center, Public Religion Research Institute, Gallup, NORC General Social Survey). Methodologically rigorous but self-identified and not administratively verified. No official government count of religious bodies or adherents is produced."
+  }
+}

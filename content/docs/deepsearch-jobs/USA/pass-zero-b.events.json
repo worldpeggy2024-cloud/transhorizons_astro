@@ -1,0 +1,162 @@
+[
+  {
+    "id": "la-wildfires-jan-2025",
+    "date": "2025-01-07",
+    "title": "January 2025 Southern California Wildfires — Federal Major Disaster Declaration DR-4856",
+    "whatHappened": "From January 7–31, 2025, fourteen destructive wildfires swept the Los Angeles metropolitan area and San Diego County, CA. President Biden declared a major disaster (FEMA DR-4856-CA) on January 8, 2025, making federal individual and public assistance available. The fires ranked among the costliest in California history.",
+    "whatItChanged": "Triggered the largest federal disaster-assistance mobilization in California in years; accelerated national debate over FEMA's adequacy and insurance market viability in wildfire-prone states.",
+    "sourceName": "FEMA DR-4856-CA Major Disaster Declaration Federal Register Notice",
+    "sourceUrl": "https://www.fema.gov/disaster-federal-register-notice/fema-4856-dr-ca-major-disaster-declaration-public-notice",
+    "status": "concluded"
+  },
+  {
+    "id": "trump-inauguration-eos-jan-2025",
+    "date": "2025-01-20",
+    "title": "Trump Second-Term Inauguration — Wave of Day-One Executive Orders",
+    "whatHappened": "Donald J. Trump was inaugurated as 47th President and signed a large cluster of executive orders on January 20, 2025, including EO 14147 (withdrawing from the World Health Organization), EO 14151 (ending federal DEI programs), EO 14158 (establishing the Department of Government Efficiency, DOGE), and EO 14160 (challenging birthright citizenship). By July 2026 he had signed 269 executive orders in his second term.",
+    "whatItChanged": "Rapidly restructured federal priorities on immigration, civil service, trade, foreign policy, and government organization; DOGE initiated sweeping workforce and spending reductions.",
+    "sourceName": "White House Presidential Actions — Executive Orders",
+    "sourceUrl": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+    "status": "ongoing"
+  },
+  {
+    "id": "doge-federal-workforce-cuts-2025",
+    "date": "2025-01-20",
+    "title": "Department of Government Efficiency (DOGE) — Federal Workforce Reduction",
+    "whatHappened": "Executive Order 14158 established DOGE on January 20, 2025. Subsequent orders (EO 14222, February 26, 2025) drove cost-efficiency initiatives across agencies. Over the course of 2025, more than 317,000 federal employees left federal service — a 13.7% decline from September 2024 levels — through layoffs, early retirements, deferred resignations, and hiring freezes.",
+    "whatItChanged": "The largest contraction of the U.S. federal civilian workforce in modern history; reshaped agency capacity across defense, health, education, and regulatory bodies.",
+    "sourceName": "White House EO 14158 — Establishing and Implementing the President's Department of Government Efficiency",
+    "sourceUrl": "https://www.whitehouse.gov/presidential-actions/2025/01/establishing-and-implementing-the-presidents-department-of-government-ef/",
+    "status": "ongoing"
+  },
+  {
+    "id": "alien-enemies-act-deportations-mar-2025",
+    "date": "2025-03-14",
+    "title": "Invocation of the Alien Enemies Act of 1798 — Mass Deportations to El Salvador",
+    "whatHappened": "On March 14, 2025, President Trump issued a proclamation invoking the Alien Enemies Act (50 U.S.C. § 21 et seq.) against Venezuelan nationals allegedly affiliated with the Tren de Aragua (TdA) gang, ordering their immediate apprehension and removal. Approximately 261 Venezuelans were deported to El Salvador's CECOT mega-prison, with 137 removed specifically under the Act — the first peacetime use of the statute in U.S. history.",
+    "whatItChanged": "Established a precedent for using wartime deportation authority outside declared war; triggered extensive federal litigation and a judicial finding by a Trump-appointed judge (May 1, 2025) that the invocation was 'unlawful'; ignited global human-rights criticism.",
+    "sourceName": "White House — Invocation of the Alien Enemies Act Regarding the Invasion of the United States by Tren de Aragua (Proclamation)",
+    "sourceUrl": "https://www.whitehouse.gov/presidential-actions/2025/03/invocation-of-the-alien-enemies-act-regarding-the-invasion-of-the-united/",
+    "status": "ongoing"
+  },
+  {
+    "id": "operation-rough-rider-yemen-2025",
+    "date": "2025-03-15",
+    "title": "Operation Rough Rider — U.S. Military Campaign Against Houthis in Yemen",
+    "whatHappened": "U.S. Central Command (CENTCOM) launched Operation Rough Rider on March 15, 2025, conducting 339 air and naval strikes against Houthi targets in Yemen over 53 days. The campaign ended on May 6, 2025, following an Oman-brokered ceasefire. Two U.S. F/A-18 fighters were lost at sea. Independent monitors documented at least 238 civilian deaths, including 24 children.",
+    "whatItChanged": "Largest U.S. military air campaign in the Middle East since the 2003 Iraq War to that date; ended without achieving stated objective of permanently halting Houthi Red Sea attacks; cost estimated at $1 billion.",
+    "sourceName": "Congressional Research Service (CRS) — Yemen: In Brief (R48942)",
+    "sourceUrl": "https://www.congress.gov/crs-product/R48942",
+    "status": "concluded"
+  },
+  {
+    "id": "liberation-day-tariffs-apr-2025",
+    "date": "2025-04-02",
+    "title": "\"Liberation Day\" Reciprocal Tariffs — White House Executive Order",
+    "whatHappened": "On April 2, 2025, President Trump signed an executive order imposing a universal 10% baseline tariff on virtually all U.S. imports effective April 5, plus country-specific reciprocal tariffs (up to 50%) on 57 named trading partners effective April 9. The announcement triggered a stock-market crash; the S&P 500 lost roughly 12% in four days. On April 9, Trump announced a 90-day pause on the higher country-specific rates (except China), stabilizing markets.",
+    "whatItChanged": "Raised the average effective U.S. tariff rate from approximately 2.5% to an estimated 27% — the highest level in over a century; triggered global trade-war dynamics and ultimately led to the Supreme Court ruling that IEEPA cannot authorize tariffs.",
+    "sourceName": "White House — Regulating Imports with a Reciprocal Tariff to Rectify Trade Practices (Executive Order)",
+    "sourceUrl": "https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices/",
+    "status": "concluded"
+  },
+  {
+    "id": "us-strikes-iran-nuclear-jun-2025",
+    "date": "2025-06-21",
+    "title": "U.S. Airstrikes on Iranian Nuclear Facilities — \"Twelve-Day War\"",
+    "whatHappened": "On the evening of June 21, 2025, the United States conducted air- and sea-launched strikes on three Iranian nuclear facilities — Natanz, Fordow, and Isfahan — using over 125 aircraft including seven B-2 Spirit stealth bombers, 14 GBU-57 Massive Ordnance Penetrator (MOP) bunker-buster bombs, and more than two dozen Tomahawk cruise missiles fired by a submarine. The operation was part of a coordinated campaign with Israel that began June 13. Iran retaliated on June 23 with missile strikes on Al Udeid Air Base in Qatar.",
+    "whatItChanged": "First combat use of GBU-57 MOPs; severely damaged Iran's primary enrichment infrastructure; the IAEA assessed Iran could resume enrichment within months; set the stage for the expanded Operation Epic Fury in February 2026.",
+    "sourceName": "Congressional Research Service (CRS) — U.S. Strikes on Nuclear Sites in Iran (IN12571)",
+    "sourceUrl": "https://www.congress.gov/crs_external_products/IN/PDF/IN12571/IN12571.1.pdf",
+    "status": "concluded"
+  },
+  {
+    "id": "one-big-beautiful-bill-jul-2025",
+    "date": "2025-07-04",
+    "title": "One Big Beautiful Bill Act (OBBBA), P.L. 119-21 — Signed into Law",
+    "whatHappened": "President Trump signed H.R. 1, the One Big Beautiful Bill Act (OBBBA), into law on July 4, 2025. The legislation permanently extended the 2017 Tax Cuts and Jobs Act (TCJA) provisions, added new tax exemptions (tips, overtime, Social Security income), cut approximately $1.4 trillion in Medicaid and SNAP spending, appropriated funding for border security and the military, and authorized the 'Golden Dome' missile defense system. The Congressional Budget Office (CBO) estimated a net deficit increase of $3.4 trillion over ten years.",
+    "whatItChanged": "Largest single tax-and-spending legislative package in at least a decade; reshaped federal health and social-program eligibility for millions; locked in lower top-end tax rates permanently.",
+    "sourceName": "White House — President Trump's One Big Beautiful Bill Is Now the Law",
+    "sourceUrl": "https://www.whitehouse.gov/releases/2025/07/president-trumps-one-big-beautiful-bill-is-now-the-law/",
+    "status": "concluded"
+  },
+  {
+    "id": "us-govt-shutdown-oct-nov-2025",
+    "date": "2025-10-01",
+    "title": "2025 U.S. Federal Government Shutdown — Longest in U.S. History (43 days)",
+    "whatHappened": "The U.S. federal government entered a full shutdown at 12:01 AM on October 1, 2025, after Congress failed to pass FY 2026 appropriations legislation. The shutdown lasted 43 days — surpassing the previous record of 34 days set in 2018–2019 — and ended on November 12, 2025, when Congress passed a partial continuing resolution (CR) funding the government through January 30, 2026.",
+    "whatItChanged": "Record-length shutdown furloughed hundreds of thousands of federal workers; disrupted government services, research grants, and federal payments; resolved only temporarily via a short-term CR.",
+    "sourceName": "U.S. House Committee on Appropriations — Press Release: Congress Passes Clean Funding Extension",
+    "sourceUrl": "https://appropriations.house.gov/news/press-releases/house-republicans-restore-order-congress-passes-clean-funding-extension-and",
+    "status": "concluded"
+  },
+  {
+    "id": "operation-southern-spear-sep-2025",
+    "date": "2025-09-02",
+    "title": "Operation Southern Spear (OSS) — U.S. Counter-Narco Military Campaign in the Caribbean",
+    "whatHappened": "In late August 2025, the U.S. began a major naval and air buildup in the southern Caribbean. The first known U.S. lethal strike on an alleged drug-trafficking vessel in the Caribbean occurred September 2, 2025. On November 13, 2025, Secretary of Defense Pete Hegseth formally launched Operation Southern Spear under U.S. Southern Command (SOUTHCOM). By early 2026, the operation had conducted more than 20 lethal strikes and deployed approximately 15,000 U.S. military personnel in the region — one of the largest U.S. military buildups there since the Cold War.",
+    "whatItChanged": "Expanded U.S. military operational authority into the Western Hemisphere at an unprecedented peacetime scale; preceded the January 2026 capture of Venezuelan President Nicolás Maduro.",
+    "sourceName": "U.S. Department of Defense (DoD) — Operation Southern Spear Report to Congress, Q2 (January–March 2026)",
+    "sourceUrl": "https://media.defense.gov/2026/May/21/2003935694/-1/-1/1/OSS_Q2_MAR2026_FINAL_508.PDF",
+    "status": "ongoing"
+  },
+  {
+    "id": "operation-hawkeye-strike-syria-dec-2025",
+    "date": "2025-12-19",
+    "title": "Operation Hawkeye Strike — U.S. Military Campaign Against Islamic State in Syria",
+    "whatHappened": "Following an Islamic State (IS) attack on U.S. and Syrian partner forces on December 13, 2025, CENTCOM commenced Operation Hawkeye Strike on December 19, 2025. The campaign continued into early 2026; by mid-February 2026 it had killed or captured more than 50 IS operatives. U.S. aircraft including F-15E Strike Eagles, A-10s, MQ-9 Reaper drones, and AH-64 Apache attack helicopters conducted repeated strikes across Syria and Iraq.",
+    "whatItChanged": "Marked a renewed escalation of direct U.S. combat operations against IS in Syria under the umbrella of the long-running Operation Inherent Resolve.",
+    "sourceName": "U.S. Air Force / CENTCOM — CENTCOM Launches Operation Hawkeye Strike Against ISIS in Syria",
+    "sourceUrl": "https://www.af.mil/News/Article-Display/Article/4365832/centcom-launches-operation-hawkeye-strike-against-isis-in-syria/",
+    "status": "ongoing"
+  },
+  {
+    "id": "us-nigeria-airstrike-dec-2025",
+    "date": "2025-12-25",
+    "title": "U.S. AFRICOM Airstrikes Against Islamic State in Nigeria (Sokoto State)",
+    "whatHappened": "At the direction of the President and in coordination with Nigerian authorities, U.S. Africa Command (AFRICOM) conducted strikes against Islamic State terrorist camps in Sokoto State, Nigeria, on December 25, 2025. Nigerian officials confirmed 16 precision strikes using guided missiles from MQ-9 Reaper drones. AFRICOM's initial assessment reported multiple IS terrorists killed.",
+    "whatItChanged": "First known U.S. military combat action on Nigerian soil; expanded the geographic footprint of U.S. counter-IS operations into West Africa.",
+    "sourceName": "U.S. Africa Command — Press Release: U.S. Africa Command Conducts Strike against ISIS in Nigeria",
+    "sourceUrl": "https://www.africom.mil/pressrelease/36158/us-africa-command-conducts-strike-against-isis-in-nigeria",
+    "status": "ongoing"
+  },
+  {
+    "id": "us-capture-maduro-venezuela-jan-2026",
+    "date": "2026-01-03",
+    "title": "U.S. Military Operation in Venezuela — Capture of President Nicolás Maduro (Operation Absolute Resolve)",
+    "whatHappened": "On January 3, 2026, U.S. special operations forces conducted a large-scale joint military strike in Caracas, Venezuela, under Operation Absolute Resolve, capturing Venezuelan President Nicolás Maduro and his wife, Cilia Flores de Maduro. Maduro was transported aboard the USS Iwo Jima to New York to face narco-terrorism and drug-trafficking charges under a 2020 U.S. Department of Justice indictment. President Trump announced the operation in a midday press conference from Mar-a-Lago.",
+    "whatItChanged": "First-ever U.S. military capture and removal of a sitting head of state in the Western Hemisphere; created a constitutional and governance vacuum in Venezuela; drew broad international condemnation including from the United Nations and China.",
+    "sourceName": "U.S. Department of War — Trump Announces U.S. Military's Capture of Maduro",
+    "sourceUrl": "https://www.war.gov/News/News-Stories/Article/Article/4370431/trump-announces-us-militarys-capture-of-maduro/",
+    "status": "ongoing"
+  },
+  {
+    "id": "scotus-ieepa-tariffs-ruling-feb-2026",
+    "date": "2026-02-20",
+    "title": "U.S. Supreme Court — Learning Resources, Inc. v. Trump (No. 24-1287): IEEPA Does Not Authorize Tariffs",
+    "whatHappened": "The U.S. Supreme Court ruled 6–3 on February 20, 2026, in Learning Resources, Inc. v. Trump that the International Emergency Economic Powers Act (IEEPA) does not authorize the President to impose tariffs. Chief Justice John Roberts wrote the majority opinion, holding that tariffs are a form of taxation assigned by the Constitution exclusively to Congress and that IEEPA's authority to 'regulate importation' does not encompass the distinct power to tax. The ruling invalidated the April 2025 'Liberation Day' reciprocal tariffs and fentanyl-related IEEPA tariffs on Canada, Mexico, and China.",
+    "whatItChanged": "Landmark constraint on presidential trade authority; forced the administration to pivot to Section 122 of the Trade Act of 1974 and to initiate expanded Section 301/232 investigations; triggered CBP refund processing of IEEPA tariffs.",
+    "sourceName": "Supreme Court of the United States — Opinion in No. 24-1287, Learning Resources, Inc. v. Trump",
+    "sourceUrl": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+    "status": "concluded"
+  },
+  {
+    "id": "operation-epic-fury-iran-feb-2026",
+    "date": "2026-02-28",
+    "title": "Operation Epic Fury — U.S. and Israeli Major Military Campaign Against Iran",
+    "whatHappened": "At 1:15 AM on February 28, 2026, CENTCOM commenced Operation Epic Fury at the direction of the President, launching coordinated U.S.-Israeli strikes against Iran's ballistic missile infrastructure, naval forces, IRGC (Islamic Revolutionary Guard Corps) headquarters, and military-industrial complex. By March 9, CENTCOM reported striking more than 5,000 targets. Iran retaliated with missile and drone attacks against U.S. bases in Qatar, Bahrain, and Oman. A ceasefire was announced in April 2026 and extended indefinitely; a naval blockade of Iranian ports remained in place as of July 2026.",
+    "whatItChanged": "The largest U.S. combat deployment in the Middle East in over two decades; closed the Strait of Hormuz temporarily, disrupting global oil shipping; status of Iran's nuclear and conventional military capabilities substantially degraded but subject to contested assessments.",
+    "sourceName": "U.S. Central Command (CENTCOM) — Operation Epic Fury",
+    "sourceUrl": "https://www.centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/",
+    "status": "ongoing"
+  },
+  {
+    "id": "scotus-birthright-citizenship-jun-2026",
+    "date": "2026-06-30",
+    "title": "U.S. Supreme Court — Trump v. Barbara: Birthright Citizenship Executive Order Unconstitutional",
+    "whatHappened": "On June 30, 2026, the U.S. Supreme Court ruled 5–4 in Trump v. Barbara that Executive Order 14160 — which sought to deny birthright citizenship to children born in the United States to parents unlawfully or temporarily present — is unconstitutional. Chief Justice Roberts wrote that the Fourteenth Amendment's Citizenship Clause guarantees U.S. citizenship to virtually all persons born on U.S. soil regardless of parental immigration status.",
+    "whatItChanged": "Definitively struck down a core Trump immigration policy; reaffirmed 150-year-old jus soli citizenship doctrine; ended 17 months of nationwide litigation and injunctive uncertainty affecting children born after February 19, 2025.",
+    "sourceName": "SCOTUSblog — Supreme Court strikes down Trump's order ending birthright citizenship",
+    "sourceUrl": "https://www.scotusblog.com/2026/06/supreme-court-strikes-down-trumps-order-ending-birthright-citizenship/",
+    "status": "concluded"
+  }
+]

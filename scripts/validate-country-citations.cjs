@@ -204,6 +204,7 @@ function validateCountryFile(filePath) {
     'executiveSnapshot_',
     'political_',
     'political_constitutionalSubstrate_',
+    'situation_',
     'economy_',
     'territory_',
     'capacity_',

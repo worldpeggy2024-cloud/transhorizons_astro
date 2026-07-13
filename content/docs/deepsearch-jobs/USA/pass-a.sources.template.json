@@ -1,0 +1,14 @@
+[
+  {
+    "id": "source-id-example",
+    "name": "Full source title",
+    "nameFr": "Titre de la source en français",
+    "url": "https://example.com/deep-link",
+    "desc": "What this source provides for this country.",
+    "descFr": "Ce que fournit cette source (en français).",
+    "publicationDate": "2026-01-01",
+    "accessDate": "2026-05-05",
+    "confidence": "High",
+    "citationType": "Fact"
+  }
+]

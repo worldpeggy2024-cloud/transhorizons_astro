@@ -509,6 +509,7 @@ export default function CountryPage() {
     area: language === 'fr' ? 'Superficie' : 'Area',
     exec: language === 'fr' ? 'Synthèse exécutive' : 'Executive Snapshot',
     political: language === 'fr' ? 'Stabilité politique' : 'Political Stability',
+    situation: language === 'fr' ? 'Situation' : 'Situation',
     economy: language === 'fr' ? 'Économie' : 'Economy',
     security: language === 'fr' ? 'Sécurité & Diplomatie' : 'Security & Diplomacy',
     actors: language === 'fr' ? 'Carte des acteurs' : 'Actors Map',
@@ -565,6 +566,7 @@ export default function CountryPage() {
   const hasCapacity = hasAnalysis && !!lang!.capacity &&
     Object.values(lang!.capacity).some((v) => typeof v === 'string' && v.trim().length > 0);
   const hasSubstrate = hasAnalysis && !!lang!.political.constitutionalSubstrate?.trim();
+  const hasSituation = hasAnalysis && !!lang!.situation?.trim();
   const activeSources = analysis?.sources ?? lang?.sources ?? [];
 
   return (
@@ -758,6 +760,15 @@ export default function CountryPage() {
           )}
         </FrameworkSection>
         </div>
+
+        {/* Situation — the event layer (what has HAPPENED), after political, before economy */}
+        {hasSituation && (
+          <div data-section="Situation">
+          <FrameworkSection icon={AlertTriangle} title={t.situation}>
+            <ProseParagraphs text={lang!.situation!} sources={activeSources} />
+          </FrameworkSection>
+          </div>
+        )}
 
         {/* 3. Economy */}
         <div data-section="Economy">

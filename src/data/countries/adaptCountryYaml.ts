@@ -92,6 +92,7 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
       shockAbsorbers: String(d[`political_shockAbsorbers${s}`] ?? ''),
       constitutionalSubstrate: String(d[`political_constitutionalSubstrate${s}`] ?? ''),
     },
+    situation: String(d[`situation${s}`] ?? ''),
     economy: {
       macroReality: String(d[`economy_macroReality${s}`] ?? ''),
       externalVulnerability: String(d[`economy_externalVulnerability${s}`] ?? ''),

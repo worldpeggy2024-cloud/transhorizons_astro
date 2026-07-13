@@ -35,6 +35,14 @@ export interface LangContent {
     /** Deep-time legal bedrock (treaty lineage / title). Optional until a country is regenerated with the six-peer schema. */
     constitutionalSubstrate?: string;
   };
+  /**
+   * Situation — the event layer, top-level peer positioned after political,
+   * before economy. What has materially HAPPENED to the country in the last 12
+   * months (war, coup, disaster, crisis, major law) and what it changed —
+   * distinct from what the country IS. Optional until a country is regenerated
+   * with the event scan (Pass Zero-B).
+   */
+  situation?: string;
   economy: {
     macroReality: string;
     externalVulnerability: string;

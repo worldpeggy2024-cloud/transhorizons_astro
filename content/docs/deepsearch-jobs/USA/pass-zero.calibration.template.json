@@ -1,0 +1,80 @@
+{
+  "legislature": {
+    "structure": "",
+    "chambers": [
+      {
+        "name": "",
+        "nameFr": "",
+        "seats": 0,
+        "liveStandingsUrl": "",
+        "electionCycle": "",
+        "note": ""
+      }
+    ],
+    "note": ""
+  },
+  "executive": {
+    "type": "",
+    "drawnFromLegislature": false,
+    "unifiedDividedApplies": false,
+    "sourceUrl": "",
+    "note": ""
+  },
+  "powerLocus": {
+    "constitutionalOrganIsWherePowerSits": false,
+    "actualLocus": "",
+    "sourceUrl": "",
+    "note": ""
+  },
+  "substrateInstruments": [
+    {
+      "id": "",
+      "kind": "",
+      "name": "",
+      "url": "",
+      "note": ""
+    }
+  ],
+  "legalOrders": {
+    "structure": "",
+    "orders": [
+      {
+        "kind": "",
+        "governs": "",
+        "sourceUrl": ""
+      }
+    ],
+    "note": ""
+  },
+  "territorialControl": {
+    "status": "",
+    "sourceUrl": "",
+    "note": ""
+  },
+  "executionRegime": {
+    "publishedApprovalsRegimeExists": false,
+    "permittingAuthorityUrl": "",
+    "note": ""
+  },
+  "cohesionInstrument": {
+    "primaryBarometer": "",
+    "url": "",
+    "selfReportReliabilityFlag": "",
+    "note": ""
+  },
+  "periphery": {
+    "value": "",
+    "sourceUrl": "",
+    "note": ""
+  },
+  "subnationalTerm": {
+    "en": "",
+    "fr": "",
+    "note": ""
+  },
+  "religionCountReliability": {
+    "flag": "",
+    "sourceUrl": "",
+    "note": ""
+  }
+}

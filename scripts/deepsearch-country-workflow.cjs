@@ -201,7 +201,7 @@ function mustHaveCitation(text, field, errors) {
   }
 }
 
-function validateContent(content, sourceIds) {
+function validateContent(content, sourceIds, acceptedExtraIds) {
   const errors = [];
 
   const score = content?.scorecard ?? {};
@@ -226,6 +226,8 @@ function validateContent(content, sourceIds) {
     ['political.shockAbsorbers.fr', content?.political?.shockAbsorbers?.fr],
     ['political.constitutionalSubstrate.en', content?.political?.constitutionalSubstrate?.en],
     ['political.constitutionalSubstrate.fr', content?.political?.constitutionalSubstrate?.fr],
+    ['situation.en', content?.situation?.en],
+    ['situation.fr', content?.situation?.fr],
     ['economy.macroReality.en', content?.economy?.macroReality?.en],
     ['economy.macroReality.fr', content?.economy?.macroReality?.fr],
     ['economy.externalVulnerability.en', content?.economy?.externalVulnerability?.en],
@@ -309,11 +311,15 @@ function validateContent(content, sourceIds) {
 
   const usedIds = new Set();
   collectCitationIds(content, usedIds);
+  // Accepted-to-cite = Pass A sources PLUS calibration-promoted instruments.
+  const accepted = new Set([...sourceIds, ...(acceptedExtraIds instanceof Set ? acceptedExtraIds : [])]);
   for (const id of usedIds) {
-    if (!sourceIds.has(id)) {
-      errors.push(`Citation [${id}] appears in content but not in Pass A sources`);
+    if (!accepted.has(id)) {
+      errors.push(`Citation [${id}] appears in content but not in Pass A sources or calibration instruments`);
     }
   }
+  // Orphan check applies ONLY to sourceIds (Pass A sources must be cited). Calibration
+  // instruments are a reference pool — acceptable to cite, not required.
   for (const id of sourceIds) {
     if (!usedIds.has(id)) {
       errors.push(`Source '${id}' is never cited in Pass B content`);
@@ -347,6 +353,8 @@ function buildYaml(payload) {
     yamlText('political_shockAbsorbers_fr', c.political.shockAbsorbers.fr),
     yamlText('political_constitutionalSubstrate_en', c.political?.constitutionalSubstrate?.en),
     yamlText('political_constitutionalSubstrate_fr', c.political?.constitutionalSubstrate?.fr),
+    yamlText('situation_en', c.situation?.en),
+    yamlText('situation_fr', c.situation?.fr),
     yamlText('economy_macroReality_en', c.economy.macroReality.en),
     yamlText('economy_macroReality_fr', c.economy.macroReality.fr),
     yamlText('economy_externalVulnerability_en', c.economy.externalVulnerability.en),
@@ -408,6 +416,139 @@ function parseOptions(args) {
   return opts;
 }
 
+const CAL_ANCHOR_PARA = 'The calibration above fixes the instruments this report anchors to. Anchor to THESE instruments. Where a calibration field reads UNRESOLVED, the corresponding report field must be treated as CONTESTED — present the competing accounts and their primary sources; do not resolve the ambiguity by choosing one.';
+
+function calFlag(v) {
+  return String(v == null ? '' : v).trim().toLowerCase();
+}
+
+// --- Calibration-driven prompt resolvers -------------------------------------------------
+// Each resolver returns the FULL four-branch bootstrap text when no calibration exists yet
+// (init before Pass Zero), or a SINGLE resolved instruction with the actual value inlined
+// when the calibration is present. The full branch logic stays in the human-facing template
+// (§14); the generated PROMPT is machine-facing and carries only what applies. Resolving at
+// generation time removes the interpretation the model would otherwise do at run time — the
+// same discipline as the rest of the pipeline, one layer further in.
+
+function calibrationBlock(cal) {
+  if (cal) return '';
+  return `## Calibration (from Pass Zero)\n\n[PASTE pass-zero.calibration.json HERE]\n\n${CAL_ANCHOR_PARA}`;
+}
+
+function powerStructureAnchor(cal) {
+  if (!cal) {
+    return 'Anchor to calibration. For each chamber in legislature.chambers, give that chamber\'s composition cited to its own liveStandingsUrl, verified on the run date; a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date. Where executive.unifiedDividedApplies is true, state plainly whether government is unified or divided. On powerLocus: where constitutionalOrganIsWherePowerSits is true, the constitutional allocation is the operative allocation and the field proceeds normally. Where it is false, the standings discipline still applies to the formal organ, but the field must locate actual power in powerLocus.actualLocus and say so explicitly — the formal organ is then described as formal, not operative. Where it is UNRESOLVED, state the constitutional allocation and also state plainly that whether operative power tracks it is contested; present the contest, do not resolve it.';
+  }
+  const chambers = Array.isArray(cal.legislature && cal.legislature.chambers) ? cal.legislature.chambers : [];
+  const chamberText = chambers.length
+    ? `Give each chamber's current composition, verified on the run date and cited to its own live standings page (disqualified if it predates the most recent composition-changing event, regardless of publication date): ${chambers.map((c) => `${c.name} (${c.seats} seats) — ${c.liveStandingsUrl}`).join('; ')}.`
+    : 'Give the legislature\'s current composition, cited to its official live standings page, verified on the run date.';
+  const ud = calFlag(cal.executive && cal.executive.unifiedDividedApplies);
+  const udText = ud === 'true'
+    ? ' Unified vs divided government applies: state plainly whether government is unified or divided.'
+    : ud === 'false'
+      ? ' Unified vs divided government does not apply in this system; do not force that frame.'
+      : ' Whether unified vs divided government applies is unresolved; note it.';
+  const pl = calFlag(cal.powerLocus && cal.powerLocus.constitutionalOrganIsWherePowerSits);
+  const plText = pl === 'true'
+    ? ' The constitutional allocation is the operative allocation; proceed normally.'
+    : pl === 'false'
+      ? ` The formal organ is not where power sits: apply the standings discipline to the formal organ, but locate actual power in ${(cal.powerLocus && cal.powerLocus.actualLocus) || 'the actual locus named in Pass Zero'} and say so explicitly — describe the formal organ as formal, not operative.`
+      : ' Whether operative power tracks the constitutional allocation is CONTESTED: state the constitutional allocation and state plainly that the operative locus is contested — present the contest, do not resolve it.';
+  const execCite = (cal.executive && nonEmptyString(cal.executive.sourceUrl)) ? ' Cite the executive-type determination to calibration-executive-source.' : '';
+  return `Anchor to calibration. ${chamberText}${udText}${plText}${execCite}`;
+}
+
+function substrateAnchor(cal) {
+  if (!cal) {
+    return 'Anchor to calibration. Cite ONLY the instruments listed in substrateInstruments, each by its id. Where legalOrders.structure is plural, hold each order SEPARATELY and name what each governs; do not treat the statutory order as the real one. Where it is UNRESOLVED, present the competing characterisations as contested.';
+  }
+  const instruments = Array.isArray(cal.substrateInstruments) ? cal.substrateInstruments : [];
+  const list = instruments.map((i) => `${nonEmptyString(i.id) ? i.id : slugifyId(i.name)} (${i.name})`).join('; ');
+  const instrText = list ? `Cite ONLY these instruments, each by its id: ${list}.` : 'Cite ONLY the instruments identified in Pass Zero, each by its id.';
+  const s = calFlag(cal.legalOrders && cal.legalOrders.structure);
+  const orders = Array.isArray(cal.legalOrders && cal.legalOrders.orders) ? cal.legalOrders.orders : [];
+  const ordersText = s === 'plural'
+    ? ` The legal order is plural — hold each order SEPARATELY and name what each governs${orders.length ? `: ${orders.map((o) => `${o.kind} (${o.governs})`).join('; ')}` : ''}. Do not treat the statutory order as the real one.`
+    : s === 'single statutory'
+      ? ' The legal order is a single statutory order.'
+      : ' The legal-order structure is contested — present the competing characterisations as contested.';
+  return `Anchor to calibration. ${instrText}${ordersText}`;
+}
+
+function capacityAnchor(cal) {
+  if (!cal) {
+    return 'Anchor to calibration. Where executionRegime.publishedApprovalsRegimeExists is true, capacity.permitting anchors to executionRegime.permittingAuthorityUrl. Where it is false, permitting timelines are NOT the instrument — name the actual binding constraint on execution and measure that instead. Where territorialControl.status is contested, state which territory the capacity measurement covers.';
+  }
+  const e = calFlag(cal.executionRegime && cal.executionRegime.publishedApprovalsRegimeExists);
+  const eText = e === 'true'
+    ? ` A published approvals regime exists: capacity.permitting anchors to ${(cal.executionRegime && cal.executionRegime.permittingAuthorityUrl) || 'the permitting authority named in Pass Zero'}.`
+    : e === 'false'
+      ? ' No published approvals regime exists: permitting timelines are NOT the instrument — name the actual binding constraint on execution and measure that instead.'
+      : ' Whether a published approvals regime exists is unresolved; name the actual binding constraint on execution and measure that.';
+  const t = calFlag(cal.territorialControl && cal.territorialControl.status);
+  const tText = t === 'contested' ? ' Territorial control is contested — state which territory the capacity measurement covers.' : '';
+  return `Anchor to calibration.${eText}${tText}`;
+}
+
+function productivityTermClause(cal) {
+  if (!cal) return 'use the country\'s own term for barriers between subnational units, as given in subnationalTerm';
+  const term = (cal.subnationalTerm && nonEmptyString(cal.subnationalTerm.en)) ? cal.subnationalTerm.en : '';
+  return term ? `use ${term} — the country's own term for barriers between subnational units` : 'use the country\'s own term for barriers between subnational units';
+}
+
+function geographyPeripheryClause(cal) {
+  if (!cal) return 'the periphery, as identified in calibration (periphery.value)';
+  const v = (cal.periphery && nonEmptyString(cal.periphery.value)) ? cal.periphery.value : '';
+  return v ? `the periphery: ${v}` : 'the periphery, as identified in Pass Zero';
+}
+
+function cohesionAnchor(cal) {
+  if (!cal) {
+    return 'Anchor to calibration. The primary instrument is cohesionInstrument.primaryBarometer. Then, on selfReportReliabilityFlag:\n- unconstrained: report the figures directly.\n- partisan-sorted: respondents answer honestly, but responses track which party holds power rather than stable underlying trust. State this plainly, and report cohort or partisan breakdowns rather than the headline aggregate, which is a systematically distorted artefact.\n- constrained: respondents are not free to answer honestly (repression, preference falsification). Reported institutional trust does not measure trust. State this plainly and do not report the figure at face value.\n- UNRESOLVED: present the reliability question as contested and report the figures with that caveat attached.';
+  }
+  const barometer = (cal.cohesionInstrument && nonEmptyString(cal.cohesionInstrument.primaryBarometer)) ? cal.cohesionInstrument.primaryBarometer : 'the citizen self-report barometer identified in Pass Zero';
+  const f = calFlag(cal.cohesionInstrument && cal.cohesionInstrument.selfReportReliabilityFlag);
+  const branch = f === 'unconstrained'
+    ? 'Report the figures directly.'
+    : f === 'partisan-sorted'
+      ? 'Respondents answer honestly, but responses track which party holds power rather than stable underlying trust. State this plainly, and report cohort or partisan breakdowns rather than the headline aggregate, which is a systematically distorted artefact.'
+      : f === 'constrained'
+        ? 'Respondents are not free to answer honestly (repression, preference falsification). Reported institutional trust does not measure trust. State this plainly and do not report the figure at face value.'
+        : 'The reliability question is contested — present it as contested and report the figures with that caveat attached.';
+  const flagLabel = (cal.cohesionInstrument && nonEmptyString(cal.cohesionInstrument.selfReportReliabilityFlag)) ? cal.cohesionInstrument.selfReportReliabilityFlag : 'UNRESOLVED';
+  return `Anchor to calibration. The primary instrument is ${barometer}. selfReportReliabilityFlag is ${flagLabel}: ${branch}`;
+}
+
+// --- Event-layer resolvers (Pass Zero-B) -------------------------------------------------
+// The six-peer schema asks what a country IS; it never asks what is HAPPENING to it. A war
+// casts a shadow into no standing-condition field, so Pass A (a list of institutions that
+// publish periodic data) never harvests a war source. These resolvers carry the Pass Zero-B
+// event scan into Pass A (harvest a source per event) and Pass B (the situation field).
+
+function eventsHarvestBlock(events) {
+  if (!events) {
+    return '## Events (from Pass Zero-B)\n\n[PASTE pass-zero-b.events.json HERE]\n\nIn ADDITION to the institutional source-priority list above, consume the events above and harvest a primary or authoritative source for EACH event (its own sourceUrl, or a better primary source — government statement, legislature research service, court ruling, official gazette; never a news aggregator). A war, coup, disaster, currency or banking crisis, assassination, mass mobilisation, or major law is the EVENT layer — no institution publishes it as periodic data, so it appears in no source-priority row above and must be sourced here. Where the scan returned UNRESOLVED for an event, note it.';
+  }
+  if (!events.length) {
+    return '## Events (from Pass Zero-B)\n\nThe Pass Zero-B event scan returned NO material events in the last 12 months. Harvest no event sources; the situation field will state that the standing conditions held.';
+  }
+  const list = events.map((e) => `- ${e && e.id ? `[${e.id}] ` : ''}${(e && e.date) || 'date UNRESOLVED'} — ${(e && e.title) || ''} (${(e && e.status) || 'status UNRESOLVED'}): ${(e && e.whatHappened) || ''} SOURCE: ${(e && e.sourceName) || ''} ${(e && e.sourceUrl) || 'UNRESOLVED'}`).join('\n');
+  return `## Events (from Pass Zero-B)\n\nIn ADDITION to the institutional source-priority list above, harvest a primary or authoritative source for EACH of these events (its own source below, or a better primary source — government statement, court ruling, official gazette; never a news aggregator):\n${list}`;
+}
+
+function situationField(events) {
+  const base = 'situation: OPENER (required, one sentence): name what, if anything, materially happened to this country in the last 12 months — war or military operation, coup or constitutional crisis, disaster, currency or banking crisis, assassination or leadership death, mass mobilisation, or major legislation — or state plainly that the standing conditions held. Then: what happened and what it CHANGED — the standing conditions it shifted and the downstream fields it now drives (name them; e.g. an energy shock that surfaces as inflation in economy.macroReality). This is the EVENT layer: what is HAPPENING to the country, distinct from what the country IS. EVERY event from the Pass Zero-B scan must be accounted for here or explicitly stated as not material. Cite the event sources harvested in Pass A.';
+  if (!events) {
+    return `${base} The events to account for are in pass-zero-b.events.json.`;
+  }
+  if (!events.length) {
+    return `${base} The Pass Zero-B scan returned no material events; state that the standing conditions held over the last 12 months.`;
+  }
+  const list = events.map((e) => `- ${(e && e.date) || 'date UNRESOLVED'} — ${(e && e.title) || ''} (${(e && e.status) || 'status'}): what it changed — ${(e && e.whatItChanged) || (e && e.whatHappened) || ''}`).join('\n');
+  return `${base}\nEvents to account for (each must appear in the report, cited, or be stated as not material):\n${list}`;
+}
+
 function initCommand(iso3, nameEn, nameFr) {
   const code = String(iso3).toUpperCase();
   const jobDir = path.join(process.cwd(), 'content', 'docs', 'deepsearch-jobs', code);
@@ -417,8 +558,50 @@ function initCommand(iso3, nameEn, nameFr) {
   const passBPath = path.join(jobDir, 'pass-b.prompt.md');
   const srcTemplatePath = path.join(jobDir, 'pass-a.sources.template.json');
   const contentTemplatePath = path.join(jobDir, 'pass-b.content.template.json');
+  const passZeroPath = path.join(jobDir, 'pass-zero.prompt.md');
+  const calibrationTemplatePath = path.join(jobDir, 'pass-zero.calibration.template.json');
+  const passZeroBPath = path.join(jobDir, 'pass-zero-b.prompt.md');
+  const eventsTemplatePath = path.join(jobDir, 'pass-zero-b.events.template.json');
 
   const today = new Date().toISOString().slice(0, 10);
+
+  // Calibration-aware generation: if Pass Zero has run and pass-zero.calibration.json exists,
+  // resolve the field branches to the single applicable instruction with inlined values;
+  // otherwise emit the bootstrap prompt (paste block + full branches). Flow for a new country:
+  // init -> Pass Zero -> init again (now resolved) -> Pass A -> Pass B -> apply.
+  const calPath = path.join(jobDir, 'pass-zero.calibration.json');
+  let calibration = null;
+  try {
+    if (fs.statSync(calPath).isFile()) {
+      const rawCal = JSON.parse(fs.readFileSync(calPath, 'utf8'));
+      calibration = Array.isArray(rawCal) ? rawCal[0] : rawCal;
+    }
+  } catch (err) {
+    calibration = null;
+  }
+  const calBlockText = calibrationBlock(calibration);
+  const powerAnchorText = powerStructureAnchor(calibration);
+  const substrateAnchorText = substrateAnchor(calibration);
+  const capacityAnchorText = capacityAnchor(calibration);
+  const productivityTermText = productivityTermClause(calibration);
+  const geographyPeripheryText = geographyPeripheryClause(calibration);
+  const cohesionAnchorText = cohesionAnchor(calibration);
+
+  // Event-aware generation: Pass Zero-B (the event scan) runs after Pass Zero, before Pass A.
+  // If pass-zero-b.events.json exists, inline the events into Pass A's harvest directive and
+  // Pass B's situation field; otherwise emit the bootstrap paste block.
+  const eventsPath = path.join(jobDir, 'pass-zero-b.events.json');
+  let events = null;
+  try {
+    if (fs.statSync(eventsPath).isFile()) {
+      const rawEvents = JSON.parse(fs.readFileSync(eventsPath, 'utf8'));
+      events = Array.isArray(rawEvents) ? rawEvents : (rawEvents && Array.isArray(rawEvents.events) ? rawEvents.events : []);
+    }
+  } catch (err) {
+    events = null;
+  }
+  const eventsBlockText = eventsHarvestBlock(events);
+  const situationFieldText = situationField(events);
 
   // Society/territory/capacity/constitutional-substrate sourcing + section wording
   // below is taken VERBATIM from content/docs/country-report-present-state-template.md
@@ -430,6 +613,10 @@ Country: ${nameEn} (${nameFr})
 Date: ${today}
 
 You are a geopolitical analyst preparing to write a structured country situation report on ${nameEn} for an audience of senior decision-makers and investors. Before writing any prose, your task in this pass is to assemble a high-quality source list only.
+
+${calBlockText}
+
+${eventsBlockText}
 
 Return ONLY a JSON array of sources. No prose, no analysis, no section headers — just sources.
 
@@ -476,7 +663,7 @@ Source priority rules:
 - Territory / metabolism & transition: International Energy Agency, Energy Institute statistical review, Ember (electricity), national inventories (UN climate convention), Global Carbon Project, Climate Action Tracker — PRIMARY for pledge-vs-policy
 - Territory / adaptive capacity: Notre Dame Global Adaptation Initiative index, World Bank, national adaptation plans
 - Capacity to execute (permitting·delivery·productivity): national statistics office, OECD, national infrastructure & regulatory bodies, sector permitting authorities
-- Constitutional substrate (deep-time legal): original treaty text, court rulings (title/constitutional), official gazette — never news
+- Constitutional substrate (deep-time legal): founding constitutional text; apex-court rulings (constitutional and title); the statutory codification of the sovereignty relationship; the legislature's own non-partisan research service; treaty text where applicable; official gazette — never news
 - Recent events of fact: national news outlets ONLY for events verified as fact in the last 90 days
 - Do NOT cite Wikipedia, homepages, aggregators, or blogs
 - Deep links only — the specific document or data page, not a site homepage
@@ -484,14 +671,15 @@ Source priority rules:
 The sources you collect must be sufficient to support ALL of the following content sections in Pass B:
 
 1. executiveSnapshot — 13 bullet points covering: regime type, political equilibrium, economic model, physical base, execution capacity, social structure, top risks, top watch items, external dependencies, security posture, diplomatic orientation, data confidence, baseline present-state characterisation
-2. political.powerStructure — who holds executive/legislative/judicial power, incl. the current governing party/coalition with its seat count and majority/minority status from the legislature's official LIVE seat-standings page verified on the run date (a source predating the most recent composition-changing event is disqualified, regardless of publication date); security forces; media independence
+2. political.powerStructure — who holds the executive and how it was won; legislative control stated SEPARATELY from executive control (in presidential and semi-presidential systems these diverge — say plainly whether government is unified or divided); where the legislature is bicameral, each chamber's composition separately, each cited to that chamber's own official live standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date); use the country's own vocabulary ("governing coalition," "majority," "divided government"), not one system's term forced onto another's structure; who controls security forces; judicial independence and appointment mechanism; media independence. ${powerAnchorText}
 3. political.stabilityDrivers — legitimacy sources, armed forces loyalty, coalition, business elite alignment
 4. political.shockAbsorbers — what cushions shocks vs. what accelerates instability
-5. political.constitutionalSubstrate — the deep-time legal foundation beneath current politics — for settler states, Indigenous title and the treaty lineage. Treaty text and court rulings only, never news. Hold distinct legal substrates SEPARATELY (historic-treaty / modern-agreement lineage vs unceded, title-litigated territory).
+5. political.constitutionalSubstrate — OPENER (required, one sentence): name the constitutional form — the founding instrument(s) and how sovereignty is allocated (unitary or federal; parliamentary or presidential; one legal tradition or several). Then: the deep legal architecture beneath current politics — the allocation of sovereignty between levels of government; the founding and re-founding instruments that fix that allocation; and the status of any peoples, nations, or territories whose sovereignty predates the central state, sits outside it, or is held in a diminished or non-voting form relative to it. Identify the country's substrate on its own terms. Do not import another country's structure. Where distinct legal substrates coexist, hold them SEPARATELY — do not collapse them or project a single model of consent onto plural governance. State explicitly whether the substrate is STABLE or IN MOTION: where apex-court doctrine is actively reallocating power, that reallocation is present-state fact and belongs in this field, cited to rulings — not deferred to the trajectory layer and not treated as ordinary politics. Sources: the founding text, apex-court rulings, the statutory codification of the sovereignty relationship, treaty text where applicable, official gazette — never news, never advocacy; a legislature's non-partisan research service is admissible as citationType: Interpretation. Instances (examples, not the schema — use the ones the country actually has): settler states with treaty and title lineages, held distinct where historic-treaty/modern-agreement and unceded/title-litigated substrates coexist; federal states, where the vertical allocation and the doctrine currently governing it are the substrate; states with a legal re-founding, where later amendments or instruments reset the original terms; states holding unincorporated, overseas, or non-voting territories, where the legal status of those territories and their populations is substrate. ${substrateAnchorText}
+5b. situation (the event layer, placed after political, before economy) — what has materially happened in and to the country in the last 12 months and what it changed. Its sources come from the Pass Zero-B event scan (the Events block above), NOT the institutional source-priority list: a primary or authoritative source for EACH event. A war, coup, disaster, or crisis is not published as a periodic dataset.
 6. economy.macroReality — GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — all with specific figures and years
 7. economy.externalVulnerability — export/import profile; trade partner concentration; sovereign debt holders; IMF program status; sanctions exposure
 8. economy.politicalEconomy — who benefits from current model; business elite structure; technically necessary vs. politically possible reforms
-9. territory.geography — the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); the north / periphery. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
+9. territory.geography — the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); ${geographyPeripheryText}. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
 10. territory.minerals — the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named; reserve figures are political — flag disputed or state-controlled counts), including undeveloped and stranded deposits. What the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
 11. territory.biosphere — the biological and renewable base — forests, freshwater, arable land, fisheries — as physical stock and its condition/trend (depletion, degradation, resilience), with year and source. Distinct from agricultural/forestry GDP (ECONOMY).
 12. territory.climate — observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically. Every projection carries its emissions scenario AND horizon. Physical science only. PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence.
@@ -499,18 +687,18 @@ The sources you collect must be sufficient to support ALL of the following conte
 14. territory.transition — the country's position in decarbonization — energy mix, emissions profile and TRAJECTORY, pledged targets measured against DELIVERED policy. A target is not an outcome; report the actual path against the pledge and name the gap. Climate Action Tracker as the PRIMARY pledge-vs-policy instrument.
 15. capacity.permitting — approval and permitting timelines for major projects; regulatory predictability; the record of projects proposed vs consented vs built.
 16. capacity.delivery — infrastructure delivery record and deficit; cost and schedule performance; the state's administrative and fiscal ability to execute at scale.
-17. capacity.productivity — productivity level and trend; internal / interprovincial barriers to movement of goods, labour, capital; value-add processing built domestically vs raw material exported for others to process.
+17. capacity.productivity — productivity level and trend; internal barriers to the movement of goods, labour and capital between subnational units — ${productivityTermText}; value-add processing built domestically vs raw material exported for others to process.
 18. society.demographics — total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
 19. society.composition — ethnic, linguistic, and religious composition (rounded shares with year and source). State where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry; do not just list groups.
 20. society.religion — (a) composition rounded, and the fault line if there is one; (b) lived/syncretic texture — indigenous, folk, and syncretic practice the official label hides; (c) political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience). For every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
-21. society.cohesion — population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check.
+21. society.cohesion — population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check. ${cohesionAnchorText}
 22. security.internal — insurgency/armed groups; organized crime; terrorism threat; military strength and loyalty; border situation
 23. security.diplomacy — treaty alliances; key bilateral relationships; regional flashpoints; multilateral memberships
 24. actors.domestic — 5–10 actors (government, opposition, military, business elite, civil society)
 25. actors.external — 3–5 actors (major powers, regional neighbors, international institutions)
 26. risks — 5–10 risks, each requiring: trigger, probability, impact, time horizon, leading indicators, mitigants
 
-Aim for 20–35 sources total. Ensure \u2265 70% of sources per section are citationType: Fact (primary authors of the data), not Interpretation.
+Aim for 30–45 sources total. Ensure \u2265 70% of sources per section are citationType: Fact (primary authors of the data), not Interpretation.
 `;
 
   const passB = `# Pass B Prompt (${code})
@@ -519,6 +707,8 @@ Country: ${nameEn} (${nameFr})
 Date: ${today}
 
 You are a geopolitical analyst writing a structured country situation report on ${nameEn} for an audience of senior decision-makers and investors. The approved source list from Pass A is provided below.
+
+${calBlockText}
 
 Return ONLY a JSON object that matches the schema below exactly. Include inline [source-id] citations in every narrative field.
 
@@ -531,11 +721,12 @@ Hard rules:
 - dealability in actors must be exactly: High, Medium, or Low.
 - Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only; all subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. The report is written for a reader who does not work in the sector, and the extra half-line per acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when they appear as data-field identifiers; when such a code appears in reader-facing prose, spell it: "Canada," not "CAN."
 - Source titles: cite every source exactly as the approved Pass A list titles it — never retitle a source into the reader's language. A source's title is a proper name in its own official language(s) as published; where Pass A supplies an original-language title with a translation in the source's desc, keep the original title and do NOT substitute the translation.
-- Situating sentences: Every peer opening and every field with a baseline meaning opens with a one-sentence situator before operational detail. The situator is orientation, not history — one short line. If it runs longer than a sentence, it has failed. The four REQUIRED openers are marked "OPENER (required)" in the section instructions below.
+- Situating sentences: Every peer opening and every field with a baseline meaning opens with a one-sentence situator before operational detail. The situator is orientation, not history — one short line. If it runs longer than a sentence, it has failed. The five REQUIRED openers are marked "OPENER (required)" in the section instructions below.
 
 Section-by-section instructions:
 
 executiveSnapshot (en and fr — 13 bullet strings each):
+  GENERATION ORDER — executiveSnapshot is composed LAST. Write every peer section first. The snapshot is derivative: it summarises sections already written and verified, and may introduce no fact that does not already appear, cited, in a section below. Emit executiveSnapshot as the final key in the returned JSON object; the schema is key-addressed and key order carries no meaning.
   1. Regime type and how power is won/held
   2. Current political equilibrium: current seat composition and majority/minority/coalition status — cite the legislature's official LIVE seat-standings page, verified on the run date; a source predating the most recent composition-changing event is disqualified regardless of publication date; opposition; legitimacy
   3. Economic model overview (dominant sectors, trade profile)
@@ -550,13 +741,15 @@ executiveSnapshot (en and fr — 13 bullet strings each):
   12. Data confidence statement (which sections are high/medium/low confidence)
   13. Baseline present-state characterisation (1 sentence — NOT a forecast)
 
-political.powerStructure: Who holds executive, legislative, judicial power — state the current governing party/coalition, its seat count and majority/minority status as of now, cited to the legislature's official LIVE seat-standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of its publication date; legislature size and the election calendar keep an ordinary recency gate); who controls security forces; media independence.
+political.powerStructure: State who holds the executive and how it was won. State legislative control separately from executive control — in presidential and semi-presidential systems these diverge, and the report must say plainly whether government is unified or divided. Where the legislature is bicameral, give each chamber's composition separately, each cited to that chamber's own official live standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date). Use the country's own vocabulary — "governing coalition," "majority," "divided government" — do not force one system's term onto another's structure. Then: who controls security forces; judicial independence and appointment mechanism; media independence. ${powerAnchorText}
 
 political.stabilityDrivers: What legitimizes the regime; armed forces loyalty; coalition composition; business elite alignment.
 
 political.shockAbsorbers: What cushions shocks vs. what could accelerate instability — both dimensions in a single paragraph.
 
-political.constitutionalSubstrate: The deep-time legal foundation beneath current politics — for settler states, Indigenous title and the treaty lineage. Treaty text and court rulings only, never news. Hold distinct legal substrates SEPARATELY (historic-treaty / modern-agreement lineage vs unceded, title-litigated territory); do not collapse them or project a single model of consent onto plural Indigenous governance. Present-state bedrock, distinct from the current political contest above.
+political.constitutionalSubstrate: OPENER (required, one sentence): name the constitutional form — the founding instrument(s) and how sovereignty is allocated (unitary or federal; parliamentary or presidential; one legal tradition or several). Then: the deep legal architecture beneath current politics — the allocation of sovereignty between levels of government; the founding and re-founding instruments that fix that allocation; and the status of any peoples, nations, or territories whose sovereignty predates the central state, sits outside it, or is held in a diminished or non-voting form relative to it. Identify the country's substrate on its own terms. Do not import another country's structure. Where distinct legal substrates coexist, hold them SEPARATELY — do not collapse them or project a single model of consent onto plural governance. State explicitly whether the substrate is STABLE or IN MOTION: where apex-court doctrine is actively reallocating power, that reallocation is present-state fact and belongs in this field, cited to rulings — not deferred to the trajectory layer and not treated as ordinary politics. Sources: the founding text, apex-court rulings, the statutory codification of the sovereignty relationship, treaty text where applicable, official gazette — never news, never advocacy; a legislature's non-partisan research service is admissible as citationType: Interpretation. Instances (examples, not the schema — use the ones the country actually has): settler states with treaty and title lineages, held distinct where historic-treaty/modern-agreement and unceded/title-litigated substrates coexist; federal states, where the vertical allocation and the doctrine currently governing it are the substrate; states with a legal re-founding, where later amendments or instruments reset the original terms; states holding unincorporated, overseas, or non-voting territories, where the legal status of those territories and their populations is substrate. ${substrateAnchorText}
+
+${situationFieldText}
 
 economy.macroReality: OPENER (required, one sentence): name the dominant economic character before any numbers — the shape of production (primary / manufacturing / services), what the economy lives on, whether it is diversified or concentrated on a few sectors. Then: GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — all with specific figures and years.
 
@@ -568,7 +761,7 @@ TERRITORY — describe the physical body of the country ON ITS OWN TERMS, not me
 
 OPENER (required): the territory peer opens — as the first sentence of territory.geography — with one sentence for the country as a whole: landlocked / coastal / island / archipelago / continent / peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours are.
 
-territory.geography: the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); the north / periphery. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
+territory.geography: the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); ${geographyPeripheryText}. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
 
 territory.minerals: the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named; reserve figures are political — flag disputed or state-controlled counts), including undeveloped and stranded deposits. What the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
 
@@ -580,13 +773,13 @@ territory.metabolism: how the country physically powers, feeds, and waters itsel
 
 territory.transition: the country's position in decarbonization — energy mix, emissions profile and TRAJECTORY, pledged targets measured against DELIVERED policy. A target is not an outcome; report the actual path against the pledge and name the gap. Climate Action Tracker as the PRIMARY pledge-vs-policy instrument.
 
-CAPACITY TO EXECUTE — whether the state can DO: build, permit, deliver, process — present-state and sourceable. NOT what the country has (ECONOMY) or who benefits (SOCIETY), but whether intent becomes built fact. Where "knowledge isn't the constraint, capacity is" becomes a measured field:
+CAPACITY TO EXECUTE — whether the state can DO: build, permit, deliver, process — present-state and sourceable. NOT what the country has (ECONOMY) or who benefits (SOCIETY), but whether intent becomes built fact. Where "knowledge isn't the constraint, capacity is" becomes a measured field: ${capacityAnchorText}
 
 capacity.permitting: approval and permitting timelines for major projects; regulatory predictability; the record of projects proposed vs consented vs built.
 
 capacity.delivery: infrastructure delivery record and deficit; cost and schedule performance; the state's administrative and fiscal ability to execute at scale.
 
-capacity.productivity: productivity level and trend; internal / interprovincial barriers to movement of goods, labour, capital; value-add processing built domestically vs raw material exported for others to process.
+capacity.productivity: productivity level and trend; internal barriers to the movement of goods, labour and capital between subnational units — ${productivityTermText}; value-add processing built domestically vs raw material exported for others to process.
 
 SOCIETY — describe the society ON ITS OWN TERMS, before and independent of any stability implication; a society is a component of the country in itself, not a risk factor:
 
@@ -596,7 +789,7 @@ society.composition: ethnic, linguistic, and religious composition (rounded shar
 
 society.religion: (a) composition rounded, and the fault line if there is one; (b) lived/syncretic texture — indigenous, folk, and syncretic practice the official label hides; (c) political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience). For every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
 
-society.cohesion: population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check.
+society.cohesion: population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check. ${cohesionAnchorText}
 
 security.internal: Insurgency/armed groups; organized crime; communal violence; terrorism threat level; military strength and loyalty; border situation.
 
@@ -646,13 +839,13 @@ Approved source IDs from Pass A:
       protestCapacity: 'Med',
       institutionalResilience: 'Med',
     },
-    executiveSnapshot: { en: [''], fr: [''] },
     political: {
       powerStructure: { en: '', fr: '' },
       stabilityDrivers: { en: '', fr: '' },
       shockAbsorbers: { en: '', fr: '' },
       constitutionalSubstrate: { en: '', fr: '' },
     },
+    situation: { en: '', fr: '' },
     economy: {
       macroReality: { en: '', fr: '' },
       externalVulnerability: { en: '', fr: '' },
@@ -689,8 +882,196 @@ Approved source IDs from Pass A:
       en: [{ title: '', trigger: '', probability: 'Med', impact: 'Med', timeHorizon: '', leadingIndicators: '', mitigants: '' }],
       fr: [{ title: '', trigger: '', probability: 'Med', impact: 'Med', timeHorizon: '', leadingIndicators: '', mitigants: '' }],
     },
+    executiveSnapshot: { en: [''], fr: [''] },
   };
 
+  const passZero = `# Pass Zero Prompt (calibration) — ${nameEn}
+
+This is a LOOKUP PASS, NOT AN ANALYSIS PASS. You are not writing a report and not
+reasoning about the country. You are identifying which verifiable primary instruments
+exist for ${nameEn}, so a later pass can be anchored to them.
+
+Return ONLY the JSON object below. No prose, no commentary, no explanation.
+
+HARD RULES
+- Every value must be backed by an artefact that can be opened: a URL to the actual
+  page, document, or ruling. Not a description of one. Not a homepage. Not a search
+  result. If you cannot supply an openable URL, the value is UNRESOLVED.
+- Every URL must be a primary, official source: the institution's own site, the
+  court's own publication, the statute's own text. Not an encyclopedia, not a news
+  article, not an aggregator, not a think tank. If only a secondary source can be
+  found for a value, the value is UNRESOLVED.
+- You are PERMITTED AND REQUIRED to answer "UNRESOLVED". If the structure does not
+  exist, is contested, or cannot be established from a primary source, return
+  "UNRESOLVED" and state why in the note field. An honest gap is a CORRECT output.
+  A fabricated clean structure is a FAILURE. Do not force ${nameEn} into a structure
+  it does not have.
+- Do not translate institution, statute, or ruling names. Capture them as published,
+  in the source's own language(s).
+- Acronyms: spell in full on first mention, abbreviation in parentheses, short form
+  thereafter. No exceptions.
+- note fields describe what the instrument IS. They must NEVER contain current figures: no
+  seat counts, no party breakdowns, no vacancy counts, no poll percentages, no composition
+  data. The live standings URL is read by a later pass on its own run date; do not pre-answer
+  it here.
+- Court rulings must resolve to the court's own published opinion or the national law
+  library's official reports scan. Not an annotated commentary essay, not a commercial
+  aggregator.
+- powerLocus: if the note says the question is contested or recommends human verification, the
+  value is UNRESOLVED, not true. A value and a note that contradict each other is a failure.
+
+SCHEMA
+{
+  "legislature": {
+    "structure": "unicameral | bicameral | none | UNRESOLVED",
+    "chambers": [
+      { "name": "", "nameFr": "", "seats": 0, "liveStandingsUrl": "",
+        "electionCycle": "", "note": "" }
+    ],
+    "note": ""
+  },
+  "executive": {
+    "type": "parliamentary | presidential | semi-presidential | party-state | monarchy | military | other | UNRESOLVED",
+    "drawnFromLegislature": "true | false | UNRESOLVED",
+    "unifiedDividedApplies": "true | false | UNRESOLVED",
+    "sourceUrl": "", "note": ""
+  },
+  "powerLocus": {
+    "constitutionalOrganIsWherePowerSits": "true | false | UNRESOLVED",
+    "actualLocus": "",
+    "sourceUrl": "",
+    "note": "JUDGMENT FIELD — not a lookup. Flag clearly; the human verifies this one by hand."
+  },
+  "substrateInstruments": [
+    { "id": "short-slug (lowercase-hyphens; Pass B cites the instrument by this id)", "kind": "founding text | apex-court ruling | statutory codification of the sovereignty relationship | treaty | constitutional amendment | legislature's non-partisan research service | official gazette",
+      "name": "", "url": "", "note": "" }
+  ],
+  "legalOrders": {
+    "structure": "single statutory | plural | UNRESOLVED",
+    "orders": [ { "kind": "statutory | customary | religious | other", "governs": "", "sourceUrl": "" } ],
+    "note": ""
+  },
+  "territorialControl": { "status": "full | contested | UNRESOLVED", "sourceUrl": "", "note": "" },
+  "executionRegime": {
+    "publishedApprovalsRegimeExists": "true | false | UNRESOLVED",
+    "permittingAuthorityUrl": "",
+    "note": "If no published approvals regime exists, say so — permitting timelines are then not the instrument."
+  },
+  "cohesionInstrument": {
+    "primaryBarometer": "", "url": "",
+    "selfReportReliabilityFlag": "unconstrained | partisan-sorted | constrained | UNRESOLVED",
+    "note": "Flag where self-report may measure preference falsification rather than trust. constrained means respondents are not free to answer honestly (repression, preference falsification). partisan-sorted means respondents answer honestly but responses track which party holds power rather than stable underlying trust. Do not use constrained for a free society with high polarisation."
+  },
+  "periphery": { "value": "", "sourceUrl": "", "note": "" },
+  "subnationalTerm": { "en": "", "fr": "", "note": "" },
+  "religionCountReliability": { "flag": "", "sourceUrl": "", "note": "" }
+}
+
+substrateInstruments — completeness (the STABLE vs IN MOTION finding depends on this list being complete):
+- The list must include the rulings that show whether the substrate is STABLE or IN MOTION. Required: every apex-court ruling of the last five years that reallocates power between levels of government, alters the constitutional status of the executive, changes the reach of the country's founding or re-founding instruments, or affects the jurisdiction of any distinct legal order. A list containing only historic foundational rulings is incomplete by construction — it can only produce a finding of "stable."
+- Where a country has a legal re-founding (later amendments or instruments that reset the original terms), it is a separate instrument, not folded into the founding text.
+- Where a country holds territories under a distinct constitutional regime, that regime's founding rulings are instruments.
+
+legalOrders — classification:
+- 'customary' means unwritten traditional law running parallel to statute. Peoples with written constitutions, statutory codes and courts of record are NOT customary — use 'other' and describe the basis of the sovereignty.
+- Territories held under a distinct constitutional regime are their own legal order.
+`;
+
+  const calibrationTemplate = {
+    legislature: {
+      structure: '',
+      chambers: [
+        { name: '', nameFr: '', seats: 0, liveStandingsUrl: '', electionCycle: '', note: '' },
+      ],
+      note: '',
+    },
+    executive: {
+      type: '',
+      drawnFromLegislature: false,
+      unifiedDividedApplies: false,
+      sourceUrl: '',
+      note: '',
+    },
+    powerLocus: {
+      constitutionalOrganIsWherePowerSits: false,
+      actualLocus: '',
+      sourceUrl: '',
+      note: '',
+    },
+    substrateInstruments: [
+      { id: '', kind: '', name: '', url: '', note: '' },
+    ],
+    legalOrders: {
+      structure: '',
+      orders: [
+        { kind: '', governs: '', sourceUrl: '' },
+      ],
+      note: '',
+    },
+    territorialControl: { status: '', sourceUrl: '', note: '' },
+    executionRegime: {
+      publishedApprovalsRegimeExists: false,
+      permittingAuthorityUrl: '',
+      note: '',
+    },
+    cohesionInstrument: {
+      primaryBarometer: '',
+      url: '',
+      selfReportReliabilityFlag: '',
+      note: '',
+    },
+    periphery: { value: '', sourceUrl: '', note: '' },
+    subnationalTerm: { en: '', fr: '', note: '' },
+    religionCountReliability: { flag: '', sourceUrl: '', note: '' },
+  };
+
+  const passZeroB = `# Pass Zero-B Prompt (event scan) — ${nameEn}
+
+This is a LOOKUP PASS, NOT AN ANALYSIS PASS. You are not writing a report and not
+reasoning about the country. You are answering one question so a later pass can source
+what you find.
+
+ONE QUESTION: what has materially happened in and to ${nameEn} in the last 12 months that a
+well-informed reader would consider major? Consider — wars and military operations; coups and
+constitutional crises; disasters (natural or industrial); currency or banking crises;
+assassinations and leadership deaths; mass mobilisations; major legislation.
+
+Return ONLY a JSON array of events. No prose, no commentary, no explanation.
+
+HARD RULES
+- LOOKUP, not analysis. Report what happened; do not interpret, weigh, or forecast.
+- Every event needs a DATE and an openable PRIMARY or authoritative source: a government
+  statement, the legislature's own research service or parliamentary library, a court ruling,
+  or an official gazette. NOT a news aggregator, not a blog, not an encyclopedia.
+- You are PERMITTED AND REQUIRED to answer UNRESOLVED. If nothing material happened, return an
+  empty array: []. If an event is real but you cannot establish it from a primary source, set
+  its status to "UNRESOLVED" and say why in whatHappened. An honest gap is a CORRECT output.
+- Do not translate institution, statute, or operation names; capture them as published.
+- Acronyms: spell in full on first mention, abbreviation in parentheses, short form thereafter.
+
+SCHEMA (one object per event)
+[
+  {
+    "id": "short-slug (lowercase-hyphens; Pass A harvests its source and Pass B cites it by this id)",
+    "date": "YYYY-MM-DD",
+    "title": "",
+    "whatHappened": "",
+    "whatItChanged": "",
+    "sourceName": "",
+    "sourceUrl": "",
+    "status": "ongoing | concluded | UNRESOLVED"
+  }
+]
+`;
+
+  const eventsTemplate = [
+    { id: '', date: '', title: '', whatHappened: '', whatItChanged: '', sourceName: '', sourceUrl: '', status: '' },
+  ];
+
+  fs.writeFileSync(passZeroPath, passZero, 'utf8');
+  fs.writeFileSync(passZeroBPath, passZeroB, 'utf8');
+  fs.writeFileSync(eventsTemplatePath, JSON.stringify(eventsTemplate, null, 2), 'utf8');
+  fs.writeFileSync(calibrationTemplatePath, JSON.stringify(calibrationTemplate, null, 2), 'utf8');
   fs.writeFileSync(passAPath, passA, 'utf8');
   fs.writeFileSync(passBPath, passB, 'utf8');
   fs.writeFileSync(srcTemplatePath, JSON.stringify(sourceTemplate, null, 2), 'utf8');
@@ -699,8 +1080,57 @@ Approved source IDs from Pass A:
   console.log(`Created Deepsearch job assets in ${path.relative(process.cwd(), jobDir)}`);
 }
 
+function slugifyId(s) {
+  return String(s == null ? '' : s)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60)
+    .replace(/-+$/, '');
+}
+
+// Block 2 points Pass B at the calibration's substrateInstruments (and the executive-type
+// source) as citation targets. Those live in pass-zero.calibration.json, NOT in the Pass A
+// sources file, so without this they fail validateContent as unknown citation IDs and never
+// reach analysis.yaml. Promote them to real source objects here — one place, every country,
+// no per-country hand-maintenance. Prefer an explicit `id` on the instrument (so Pass B can
+// cite it deterministically); fall back to a slug of the name. The caller treats these as
+// ACCEPTED citation targets (not required-to-be-cited) and writes only the ones Pass B cited,
+// so uncited reference instruments never become orphans.
+function calibrationSources(calibration, accessDate) {
+  const out = [];
+  const add = (id, name, url, desc) => {
+    if (!nonEmptyString(id) || !nonEmptyString(name) || !nonEmptyString(url)) return;
+    out.push({ id, name, url, desc: nonEmptyString(desc) ? desc : name, accessDate, confidence: 'High', citationType: 'Fact' });
+  };
+  const instruments = Array.isArray(calibration && calibration.substrateInstruments) ? calibration.substrateInstruments : [];
+  for (const inst of instruments) {
+    if (!inst) continue;
+    add(nonEmptyString(inst.id) ? inst.id : slugifyId(inst.name), inst.name, inst.url, inst.note);
+  }
+  const exec = (calibration && calibration.executive) || {};
+  if (nonEmptyString(exec.sourceUrl)) {
+    add('calibration-executive-source', 'Executive-type determination — constitutional/primary source', exec.sourceUrl, exec.note);
+  }
+  return out;
+}
+
+function requireCalibration(code) {
+  const calibrationPath = path.join(process.cwd(), 'content', 'docs', 'deepsearch-jobs', code, 'pass-zero.calibration.json');
+  if (!fs.existsSync(calibrationPath)) {
+    throw new Error(
+      `Pass Zero calibration missing: ${path.relative(process.cwd(), calibrationPath)}. `
+      + 'Pass A cannot run without it — run Pass Zero first (pass-zero.prompt.md) and save the result '
+      + 'as pass-zero.calibration.json. Calibration is the anchor and must come from a separate pass; '
+      + 'it is never inferred or defaulted inside Pass A.'
+    );
+  }
+  return calibrationPath;
+}
+
 function applyCommand(iso3, opts) {
   const code = String(iso3).toUpperCase();
+  const calibrationPath = requireCalibration(code);
   const sourcesPath = opts.sources;
   const contentPath = opts.content;
   const lastUpdated = opts.date;
@@ -713,11 +1143,29 @@ function applyCommand(iso3, opts) {
   }
 
   const analysisPath = path.join(process.cwd(), 'content', 'countries', code, 'analysis.yaml');
-  const sources = parseJsonFile(path.resolve(process.cwd(), sourcesPath));
+  const passASources = parseJsonFile(path.resolve(process.cwd(), sourcesPath));
   const content = parseJsonFile(path.resolve(process.cwd(), contentPath));
+  const calRaw = parseJsonFile(calibrationPath);
+  const calibration = Array.isArray(calRaw) ? calRaw[0] : calRaw;
+
+  // Auto-promote calibration substrateInstruments + executive source. Accepted as citation
+  // targets everywhere; only the ones Pass B actually cited (and not already harvested in
+  // Pass A, matched by id or url) are written into the sources block — so uncited reference
+  // instruments never orphan, and hand-harvested duplicates are never doubled.
+  const promoted = calibrationSources(calibration, lastUpdated);
+  const promotedIds = new Set(promoted.map((s) => s.id));
+  const usedIds = new Set();
+  collectCitationIds(content, usedIds);
+  const passAIds = new Set(passASources.map((s) => s && s.id).filter(Boolean));
+  const passAUrls = new Set(passASources.map((s) => s && s.url).filter(Boolean));
+  const citedPromoted = promoted.filter((s) => usedIds.has(s.id) && !passAIds.has(s.id) && !passAUrls.has(s.url));
+  const sources = [...passASources, ...citedPromoted];
+  if (citedPromoted.length) {
+    console.log(`Promoted ${citedPromoted.length} calibration instrument(s) into sources: ${citedPromoted.map((s) => s.id).join(', ')}`);
+  }
 
   const sourcesCheck = validateSources(sources);
-  const contentCheck = validateContent(content, sourcesCheck.ids);
+  const contentCheck = validateContent(content, sourcesCheck.ids, promotedIds);
   const errors = [...sourcesCheck.errors, ...contentCheck.errors];
   const warnings = [...(sourcesCheck.warnings || [])];
   if (warnings.length) {

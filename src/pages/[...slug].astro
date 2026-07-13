@@ -1,4 +1,11 @@
 ---
+/*
+ * STOP — do not modify this file without explicit justification AND go-ahead
+ * (see CLAUDE.md, "Architecture"). This is the SPA catch-all route AND the
+ * /keystatic admin carve-out; it also 404s unknown paths. A new route that
+ * SHADOWS it (like /country/[cca3].astro) counts as affecting it — flag that
+ * too before adding one.
+ */
 import Base from '../layouts/Base.astro';
 import AppShell from '../components/AppShell';
 // Server-rendered catch-all — handles all Wouter client-side routes including

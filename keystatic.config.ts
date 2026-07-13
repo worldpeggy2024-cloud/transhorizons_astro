@@ -1,3 +1,10 @@
+/*
+ * STOP — declare-before-write (see CLAUDE.md). Keystatic SILENTLY STRIPS any
+ * YAML field not declared in this schema on the next save from the admin UI.
+ * Any new field must be added here BEFORE content is written to it — articles
+ * fields in `sectionFields`, country-report fields in the `countries`
+ * collection.
+ */
 import { config, fields, collection, singleton } from '@keystatic/core';
 
 const sectionFields = {
@@ -373,6 +380,20 @@ export default config({
         }),
         political_constitutionalSubstrate_fr: fields.text({
           label: 'Political: Constitutional Substrate (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+
+        // ── Situation Section (event layer — what has HAPPENED, last 12 months) ──
+        // Peer positioned after political, before economy. What is HAPPENING to the
+        // country (war, coup, disaster, crisis, major law), distinct from what it IS.
+        situation_en: fields.text({
+          label: 'Situation (EN)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        situation_fr: fields.text({
+          label: 'Situation (FR)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),
