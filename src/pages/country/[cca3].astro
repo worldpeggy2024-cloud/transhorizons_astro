@@ -44,6 +44,9 @@ const stripCites = (s: unknown): string =>
   String(s ?? '')
     .replace(/\[[a-z0-9-]+\]/g, '')
     .replace(/\s{2,}/g, ' ')
+    // Removing a mid-sentence marker leaves " ." / " ," — collapse it. Plain
+    // spaces only: French narrow-NBSP punctuation spacing must survive.
+    .replace(/ +([.,])/g, '$1')
     .trim();
 
 const parseJsonArray = (v: unknown): any[] => {
@@ -59,9 +62,34 @@ const parseJsonArray = (v: unknown): any[] => {
   return [];
 };
 
+// Situation is the verified event layer: threads-JSON (same JSON-in-text
+// convention as actors/risks) flattened to crawlable lines, or legacy prose
+// split into paragraphs. ARRAY ORDER IS SEMANTIC (threads by recency of last
+// activity, events chronologically forward) — never sort or reverse here.
+const situationLines = (v: unknown): string[] => {
+  const raw = String(v ?? '').trim();
+  if (!raw) return [];
+  if (raw.startsWith('[')) {
+    const threads = parseJsonArray(raw);
+    const lines: string[] = [];
+    for (const th of threads) {
+      const name = stripCites(th?.thread);
+      for (const e of Array.isArray(th?.events) ? th.events : []) {
+        const parts = [stripCites(e?.date), stripCites(e?.what), stripCites(e?.changed)].filter(Boolean);
+        if (parts.length) lines.push(name ? `${name} — ${parts.join(' — ')}` : parts.join(' — '));
+      }
+      const cur = stripCites(th?.currentState);
+      if (cur) lines.push(name ? `${name} — ${cur}` : cur);
+    }
+    return lines;
+  }
+  return raw.split(/\n{2,}/).map(stripCites).filter(Boolean);
+};
+
 interface LangSeo {
   snapshot: string[];
   political: string[];
+  situation: string[];
   economy: string[];
   territory: string[];
   capacity: string[];
@@ -108,6 +136,7 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
       g('political_shockAbsorbers'),
       g('political_constitutionalSubstrate'),
     ].filter(Boolean),
+    situation: situationLines(data?.[`situation_${lang}`]),
     economy: [
       g('economy_macroReality'),
       g('economy_externalVulnerability'),
@@ -146,6 +175,7 @@ const HEADINGS = {
     report: 'Country Situation Report',
     exec: 'Executive Snapshot',
     political: 'Political Stability',
+    situation: 'Situation',
     economy: 'Economy',
     territory: 'Territory',
     capacity: 'State Capacity',
@@ -159,6 +189,7 @@ const HEADINGS = {
     report: 'Rapport de situation pays',
     exec: 'Synthèse exécutive',
     political: 'Stabilité politique',
+    situation: 'Situation',
     economy: 'Économie',
     territory: 'Territoire',
     capacity: "Capacité de l'État",
@@ -217,6 +248,12 @@ const pageDesc =
             <section>
               <h2>{h.political}</h2>
               {seo.political.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.situation.length > 0 && (
+            <section>
+              <h2>{h.situation}</h2>
+              <ul>{seo.situation.map((s) => <li>{s}</li>)}</ul>
             </section>
           )}
           {seo.economy.length > 0 && (

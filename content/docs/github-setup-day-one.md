@@ -1,5 +1,10 @@
 # GitHub Setup — Day One Checklist
 
+> **SUPERSEDED (2026-07-13).** The setup it describes is long done, and its file examples
+> (`can.en.yaml`, `can.generated.ts`) belong to the dead split-file convention — those files have been
+> deleted. Country content lives in ONE flat `content/countries/<ISO3>/analysis.yaml`. Kept for
+> historical reference only.
+
 Run these steps once to put the content repo on GitHub. After this, all future updates go through normal `git add / commit / push` or GitHub web editor PRs.
 
 ---

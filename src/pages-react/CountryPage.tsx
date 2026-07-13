@@ -275,6 +275,65 @@ function ProseParagraphs({ text, sources }: { text: string; sources?: SourceEntr
   );
 }
 
+// ─── Situation threads — the verified event layer ─────────────────────────────
+// situation_en/_fr may hold JSON-in-text threads (same convention as actors/risks):
+//   [{ "thread": "…", "status"?, "events": [{ "date", "what", "changed" }], "currentState"? }]
+// Threads render natively; anything that isn't a parsable threads array falls
+// back to plain prose (legacy content).
+// ARRAY ORDER IS SEMANTIC — threads are authored by recency of last activity,
+// events chronologically FORWARD within each thread. NEVER sort or reverse here.
+
+type SituationEvent = { date?: string; what?: string; changed?: string };
+type SituationThread = { thread?: string; status?: string; events?: SituationEvent[]; currentState?: string };
+
+function parseSituationThreads(text: string): SituationThread[] | null {
+  const t = text.trim();
+  if (!t.startsWith('[')) return null;
+  try {
+    const parsed = JSON.parse(t);
+    return Array.isArray(parsed) ? (parsed as SituationThread[]) : null;
+  } catch {
+    return null;
+  }
+}
+
+function SituationSection({ text, sources }: { text: string; sources?: SourceEntry[] }) {
+  const threads = parseSituationThreads(text);
+  if (!threads) return <ProseParagraphs text={text} sources={sources} />;
+  return (
+    <div className="space-y-5">
+      {threads.map((th, i) => (
+        <div key={i}>
+          {!!th.thread?.trim() && (
+            <h4 className="font-body text-sm font-semibold text-[var(--cr-ink)] mb-2">
+              {th.thread}
+              {!!th.status?.trim() && (
+                <span className="ml-2 font-normal text-xs text-[var(--cr-muted)]">({th.status})</span>
+              )}
+            </h4>
+          )}
+          <div className="space-y-2">
+            {(th.events ?? []).map((e, j) => (
+              <div key={j} className="font-body text-sm text-[var(--cr-body)] leading-relaxed">
+                <p>
+                  {!!e.date?.trim() && <strong className="text-[var(--cr-ink)]">{e.date}&nbsp;— </strong>}
+                  {parseCitations(e.what ?? '', sources)}
+                </p>
+                {!!e.changed?.trim() && (
+                  <p className="pl-5 text-[var(--cr-muted)]">↳ {parseCitations(e.changed, sources)}</p>
+                )}
+              </div>
+            ))}
+          </div>
+          {!!th.currentState?.trim() && (
+            <p className="font-body text-sm italic text-[var(--cr-muted)] mt-2">{parseCitations(th.currentState, sources)}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ─── Scorecard row ────────────────────────────────────────────────────────────
 
 function ScoreRow({ label, value, language }: { label: string; value: 'High' | 'Med' | 'Low' | null; language: string }) {
@@ -765,7 +824,7 @@ export default function CountryPage() {
         {hasSituation && (
           <div data-section="Situation">
           <FrameworkSection icon={AlertTriangle} title={t.situation}>
-            <ProseParagraphs text={lang!.situation!} sources={activeSources} />
+            <SituationSection text={lang!.situation!} sources={activeSources} />
           </FrameworkSection>
           </div>
         )}

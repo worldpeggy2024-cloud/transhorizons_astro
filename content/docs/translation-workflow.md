@@ -1,5 +1,11 @@
 # Translation Workflow
 
+> **SUPERSEDED (2026-07-13).** This document describes the dead split-file convention
+> (`can.en.yaml` / `can.fr.yaml`), whose files have been deleted. Country content now lives in ONE flat
+> `content/countries/<ISO3>/analysis.yaml` with `_en`/`_fr` keys side by side, edited via Keystatic;
+> French is produced with the report itself (Peggy proofs all FR). See CLAUDE.md and
+> `country-report-present-state-template.md` §3. Kept for historical reference only.
+
 How to translate or update the French version of a country analysis file. No developer tools required — everything happens in the GitHub web editor.
 
 ---

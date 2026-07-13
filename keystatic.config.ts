@@ -387,15 +387,18 @@ export default config({
         // ── Situation Section (event layer — what has HAPPENED, last 12 months) ──
         // Peer positioned after political, before economy. What is HAPPENING to the
         // country (war, coup, disaster, crisis, major law), distinct from what it IS.
+        // Populated by the DEDICATED situation pass (template §4d), never Pass B:
+        // JSON-in-text array of threads {thread, events:[{date,what,changed}], currentState?}.
+        // The renderer falls back to plain prose for legacy content.
         situation_en: fields.text({
           label: 'Situation (EN)',
           multiline: true,
-          description: 'Include citation markers [source-id]',
+          description: 'JSON threads array from the situation pass (template §4d); every event cites [source-id]',
         }),
         situation_fr: fields.text({
           label: 'Situation (FR)',
           multiline: true,
-          description: 'Include citation markers [source-id]',
+          description: 'JSON threads array from the situation pass (template §4d); every event cites [source-id]',
         }),
 
         // ── Economy Section ───────────────────────────────────────────────

@@ -54,15 +54,14 @@ Any deep-research-capable assistant can run the passes. **Perplexity Deep Resear
 ## 3. File targets
 
 ```
-content/countries/[CODE]/
-  [code].en.yaml        ← EN content (all sections incl. society)
-  [code].fr.yaml        ← FR content (Peggy proofs FR; EN/FR citation parity required)
-  [code].sources.yaml   ← every source, 8 fields each
-  [code].meta.yaml      ← lastUpdated, confidence, etc.
+content/countries/[CODE]/analysis.yaml   ← ONE flat file: all sections, both languages
+                                            (<section>_<subsection>_<en|fr> keys);
+                                            actors/risks/sources as JSON-in-text blocks
 ```
 
-`[CODE]` = ISO3 (e.g. `BRA`, `SEN`, `CAN`). *(This standardises the old single-`analysis.yaml` reference,
-which could not satisfy the EN/FR parity rule the validator enforces.)*
+`[CODE]` = ISO3 (e.g. `BRA`, `SEN`, `CAN`). *(Replaces the earlier split `[code].en/fr/sources/meta.yaml`
+proposal — both languages live side by side in one file, which is also what the EN/FR parity check reads.
+Peggy proofs FR; EN/FR citation parity required.)*
 
 ---
 
@@ -73,12 +72,12 @@ which could not satisfy the EN/FR parity rule the validator enforces.)*
    **territory** (geography, minerals, biosphere, climate, metabolism, transition), **capacity** (permitting,
    delivery, productivity), **and society** (demography, composition, religion, cohesion). Sourcing tool of
    your choice.
-2. Paste into `[code].sources.yaml`; run the validator on the sources block. If it fails, **do not write
-   prose.**
+2. Paste into the sources JSON block of `analysis.yaml` (or apply via the workflow script); run the
+   validator on the sources block. If it fails, **do not write prose.**
 3. **Pass B — prose from approved source IDs only.** Now covering the territory, capacity, and society sections.
 4. For each claim, confirm the cited URL is live and replace any temporary inline reference with the correct
    `[source-id]`.
-5. Run `npm run validate:country -- content/countries/[CODE]/` and fix **all** errors before publishing.
+5. Run `npm run validate:country -- content/countries/[CODE]/analysis.yaml` and fix **all** errors before publishing.
 6. Open the rendered page and review visually — **including the new territory, capacity, and society cards**
    (citations resolve, FR toggle works).
 
@@ -92,7 +91,39 @@ Pass Zero is a calibration lookup that runs before Pass A. It identifies which v
 
 ## 4c. Pass Zero-B — event scan (runs after Pass Zero, before Pass A)
 
-Pass Zero-B answers one question: what has materially HAPPENED in and to the country in the last 12 months that a well-informed reader would consider major — wars and military operations, coups and constitutional crises, disasters, currency or banking crises, assassinations and leadership deaths, mass mobilisations, major legislation. It exists because the six-peer schema asks what a country IS, never what is HAPPENING to it: a war casts a shadow into no standing-condition field, so Pass A — a list of institutions that publish periodic data — never harvests a war source. Same discipline as Pass Zero: LOOKUP not analysis, a date and an openable primary or authoritative source per event, `UNRESOLVED` a correct answer, JSON only. Its output, `pass-zero-b.events.json`, is consumed by Pass A (which harvests a source for each event) and Pass B (the `situation` field), where every event must be accounted for or explicitly stated as not material.
+Pass Zero-B answers one question: what has materially HAPPENED in and to the country in the last 12 months that a well-informed reader would consider major — wars and military operations, coups and constitutional crises, disasters, currency or banking crises, assassinations and leadership deaths, mass mobilisations, major legislation. It exists because the six-peer schema asks what a country IS, never what is HAPPENING to it: a war casts a shadow into no standing-condition field, so Pass A — a list of institutions that publish periodic data — never harvests a war source. Same discipline as Pass Zero: LOOKUP not analysis, a date and an openable primary or authoritative source per event, `UNRESOLVED` a correct answer, JSON only. Its output, `pass-zero-b.events.json`, is consumed by Pass A (which harvests a source for each event) and by the **situation pass** (§4d) — NOT by Pass B, which emits the `situation` field empty.
+
+---
+
+## 4d. Situation pass — the verified event layer (runs after Pass B, its own pass)
+
+The `situation` field is populated in its own pass, after the peer sections exist — **never by Pass B**. It is verification-heavy by nature: it holds recent, fast-moving, contested events — exactly the material most likely to be stale or wrong, and least likely to have a settled primary source. It is the one field where a generated draft is a **starting list to verify, never content**. Perplexity (or any research tool) can propose the events; it cannot be trusted to date them, bound them, or decide what they changed. Every event is fetched against a primary source before it enters the field.
+
+**Purpose.** The six peer sections describe standing conditions. They have no place to hold discrete events that materially changed the country's position — a war, a tariff regime, a rupture. Without this field, such events vanish from the report entirely even when they dominate the country's situation. This field holds them.
+
+**Structure — threads, not a flat list:**
+- The field contains **threads**. Each thread is a named strand of related events (e.g. "Trade rupture with the United States", "Defence commitment").
+- Threads are ordered by **recency of last activity** — the thread that moved most recently comes first.
+- Within a thread, events run **chronologically forward** (oldest first). This is non-negotiable: a causal chain told in reverse is unreadable.
+- Each thread may carry an optional **current-state line** at the end, summarising where the thread stands now.
+
+**Each event:**
+- **Date** (or date range) — bolded, leading.
+- **What happened** — one sentence, factual, no characterisation.
+- **What it materially changed** — the consequence. If you cannot state a material change without editorialising, the event does not belong in this field.
+
+**Content rules:**
+- Maximum **8 events total** across all threads (the United States report may carry more).
+- Only events that **materially changed the country's position**. Not notable news.
+- Exclude anything already covered structurally elsewhere — seat composition, budget measures, standing policy, demographic trends. Those belong to their peer sections. This field is for events with no natural home in a description of standing conditions.
+- **No explanation by character or motive.** State what changed, not why anyone did it.
+- **Every event carries a source citation**, same as any other field.
+
+**Cross-referencing:** where an event supersedes or contradicts a claim in a peer section, the peer section must be **corrected** — the situation field does not exist to hold contradictions, it exists to surface them.
+
+**Storage.** `situation_en` / `situation_fr` hold the threads as JSON-in-text (the same convention as actors/risks): an array of
+`{ "thread": "…", "events": [{ "date": "…", "what": "… [source-id]", "changed": "… [source-id]" }], "currentState": "…" }`
+(`currentState` optional). The renderer displays threads natively and falls back to plain prose for legacy content.
 
 ---
 
@@ -268,6 +299,8 @@ The rules by publication case:
 
 The `desc` translation-and-transliteration is descriptive metadata about the source's identity, not a claim drawn from the source (the source-description discipline above still applies to factual content).
 
+**Bilingual landing-page exception (URLs).** Deep links remain the rule; but where the document itself is language-locked (separate English and French files, typically PDFs), the source URL may deliberately point to the official landing page that offers both languages instead of one file — the reader keeps the language choice. Mark such a source `landingPage: true` in the registry so the validator accepts the choice as deliberate rather than flagging a generic homepage.
+
 ---
 
 ## 12. Time-binding numerics
@@ -288,7 +321,7 @@ A barometer round (R9 / 2024) counts as its time-binding. If a figure arrives wi
 3. `political.stabilityDrivers` — *(elite cohesion lives here)*
 4. `political.shockAbsorbers`
 5. **`political.constitutionalSubstrate`** — deep legal bedrock: the allocation of sovereignty and the founding / re-founding instruments that fix it; predating, external, or diminished sovereignties held distinct; STABLE or IN MOTION where apex-court doctrine is reallocating power. Founding text, apex-court rulings, treaty text where applicable — never news.
-5b. **`situation`** — the EVENT layer (after political, before economy): what has materially HAPPENED to the country in the last 12 months — war, coup, disaster, currency/banking crisis, assassination, mass mobilisation, major law — and what it changed. Sourced from the Pass Zero-B event scan (§4c), not the institutional list; every scanned event accounted for or stated not material.
+5b. **`situation`** — the EVENT layer (after political, before economy): threads of verified events that materially changed the country's position, each event dated, sourced, and paired with what it changed. Populated by the dedicated situation pass (§4d), never by Pass B; scanned by Pass Zero-B (§4c); sources harvested in Pass A.
 6. `economy.macroReality`
 7. `economy.externalVulnerability`
 8. `economy.politicalEconomy`
@@ -363,8 +396,8 @@ GENERATION ORDER — executiveSnapshot is composed LAST. Write every peer sectio
    - Constitutional substrate: OPENER (required, one sentence): name the constitutional form — the founding instrument(s) and how sovereignty is allocated (unitary or federal; parliamentary or presidential; one legal tradition or several). Then: the deep legal architecture beneath current politics — the allocation of sovereignty between levels of government; the founding and re-founding instruments that fix that allocation; and the status of any peoples, nations, or territories whose sovereignty predates the central state, sits outside it, or is held in a diminished or non-voting form relative to it. Identify the country's substrate on its own terms. Do not import another country's structure. Where distinct legal substrates coexist, hold them SEPARATELY — do not collapse them or project a single model of consent onto plural governance. State explicitly whether the substrate is STABLE or IN MOTION: where apex-court doctrine is actively reallocating power, that reallocation is present-state fact and belongs in this field, cited to rulings — not deferred to the trajectory layer and not treated as ordinary politics. Sources: the founding text, apex-court rulings, the statutory codification of the sovereignty relationship, treaty text where applicable, official gazette — never news, never advocacy; a legislature's non-partisan research service is admissible as citationType: Interpretation.
      Instances (examples, not the schema — use the ones the country actually has): settler states with treaty and title lineages, held distinct where historic-treaty/modern-agreement and unceded/title-litigated substrates coexist; federal states, where the vertical allocation and the doctrine currently governing it are the substrate; states with a legal re-founding, where later amendments or instruments reset the original terms; states holding unincorporated, overseas, or non-voting territories, where the legal status of those territories and their populations is substrate. Anchor to calibration. Cite ONLY the instruments listed in substrateInstruments, each by its id (with name and year in prose). Where legalOrders.structure is plural, hold each order SEPARATELY and name what each governs; do not treat the statutory order as the real one. Where it is UNRESOLVED, present the competing characterisations as contested.
 
-2b. SITUATION (the EVENT layer — what has HAPPENED to the country in the last 12 months, distinct from what it IS; placed after political, before economy)
-   - OPENER (required, one sentence): name what materially happened — war or military operation, coup or constitutional crisis, disaster, currency or banking crisis, assassination or leadership death, mass mobilisation, or major legislation — or state plainly that the standing conditions held. Then: what happened and what it CHANGED — the standing conditions it shifted and the downstream fields it now drives (name them). Sourced from the Pass Zero-B event scan (§4c), NOT the institutional source-priority list — no institution publishes a periodic dataset called "wars we are currently fighting". Every scanned event must be accounted for in the report or explicitly stated as not material. This is the fix for the schema gap: a war casts a shadow into no standing-condition field, so its effect (an energy-price spike surfacing as inflation) reaches economy.* while its cause is never named unless situation names it.
+2b. SITUATION (the EVENT layer — held in the schema, but NOT written in this pass)
+   - Emit situation as empty strings for both languages. The situation field is verification-heavy by nature: it holds recent, fast-moving, contested events — exactly the material most likely to be stale or wrong, and least likely to have a settled primary source. A generated draft is a starting list to verify, never content. The field is populated afterward by the dedicated situation pass (§4d), event by event against primary sources, in the thread format defined there. Do not fold event content into the peer sections to compensate — peer sections describe standing conditions only.
 
 3. ECONOMIC ANALYSIS
    - Macro reality: OPENER (required, one sentence): name the dominant economic character before any numbers — the shape of production (primary / manufacturing / services), what the economy lives on, whether it is diversified or concentrated on a few sectors. Then: GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — specific figures and years.
@@ -451,8 +484,8 @@ DO NOT include any forward-looking extrapolation, scenario, or "where this is he
 | External actors | `actors.external[]` |
 | Risk register | `risks[]` |
 
-Replace every inline citation reference with the matching `[source-id]` from `[code].sources.yaml`. If a
-source isn't in the sources file yet, add it first.
+Replace every inline citation reference with the matching `[source-id]` from the sources JSON block of
+`analysis.yaml`. If a source isn't in the registry yet, add it first.
 
 ---
 

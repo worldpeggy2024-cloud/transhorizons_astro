@@ -97,11 +97,99 @@ function sentenceTimeBindingWarnings(text, label, warnings) {
   });
 }
 
+const PEER_ORDER = ['political', 'situation', 'economy', 'territory', 'capacity', 'society', 'security', 'other'];
+
+// ── Situator-opener signature checks (heuristic) ─────────────────────────────
+// The "OPENER (required)" disciplines are prompt-only and silently erode. Each
+// check looks for the discipline's signature vocabulary at the START of the
+// field (for macroReality: BEFORE the first digit). WARNINGS here (existing
+// files audit); the apply gate in deepsearch-country-workflow.cjs fails hard.
+// The FIVE openers per Peggy's ruling: substrate, macro, geography
+// (territory-peer), climate, demographics — situation has NO opener (it is a
+// list of events). KEEP IN SYNC with the OPENER_RULES there.
+const OPENER_RULES = {
+  substrate: {
+    re: /constitution|founding|sovereign|federal|unitary|parliamentar|president|confederat|basic law|fundamental law|charter|souverain|fédéra|unitaire|parlementa|présidentiel|charte/i,
+    window: 300,
+    hint: 'must open by naming the constitutional form (founding instrument(s); how sovereignty is allocated)',
+  },
+  macro: {
+    beforeFirstDigit: true,
+    re: /service|manufactur|industri|agricult|agrari|commodit|resourc|extractiv|hydrocarbon|\boil\b|\bgas\b|mining|export-led|diversified|concentrated|post-industrial|knowledge|mixed econom|advanced econom|emerging|tertiar|primaire|secondaire|tertiaire|industriel|agricole|matières premières|ressourc|pétrol|gazier|minier|diversifié|concentré|avancée|émergent|mixte/i,
+    window: 300,
+    hint: 'must name the dominant economic character BEFORE any numbers (shape of production; what the economy lives on; diversified or concentrated)',
+  },
+  geography: {
+    re: /landlocked|coastal|island|archipelag|continent|peninsul|mountain|\bflat\b|plain|lowland|highland|isolated|embedded|neighbou?r|borders|enclavé|côtier|insulaire|archipel|péninsul|montagn|\bplat\b|plaine|isolé|voisin|frontali/i,
+    window: 300,
+    hint: 'the territory peer must open (first sentence of territory_geography) with the country-as-a-whole situator (landlocked/coastal/island/…; terrain; neighbours)',
+  },
+  climate: {
+    re: /\bcold\b|\bhot\b|temperate|tropical|arid|continental|maritime|mediterranean|polar|subarctic|boreal|equatorial|monsoon|desert|humid|altitude|uniform|dramatically regional|froid|chaud|tempéré|aride|méditerranéen|polaire|subarctique|boréal|équatorial|mousson|désert|humide/i,
+    window: 300,
+    hint: 'must open by establishing the baseline climate type before any warming/exposure/hazard content (warming is a change; a change needs a baseline)',
+  },
+  demographics: {
+    re: /indigenous|settler|immigrant|immigration|colonial|coloni[sz]|\bmixed\b|\bclosed\b|founded|peopled|autochtone|\bcolon|immigr|fermé|métiss|peuplé|fondé/i,
+    window: 250,
+    hint: 'must open with the one-line historical framing (indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed)',
+  },
+};
+
+function openerProblem(kind, text) {
+  const rule = OPENER_RULES[kind];
+  const t = String(text ?? '').trim();
+  if (!t) return null; // emptiness is not this check's job
+  let head;
+  if (rule.beforeFirstDigit) {
+    const i = t.search(/\d/);
+    head = i === -1 ? t.slice(0, rule.window) : t.slice(0, i);
+  } else {
+    head = t.slice(0, rule.window);
+  }
+  return rule.re.test(head) ? null : rule.hint;
+}
+
+const OPENER_FIELDS = [
+  ['political_constitutionalSubstrate', 'substrate'],
+  ['economy_macroReality', 'macro'],
+  ['territory_geography', 'geography'],
+  ['territory_climate', 'climate'],
+  ['society_demographics', 'demographics'],
+];
+
+// Best-effort classification of a source id into the peer whose section it belongs to, so
+// uncited (orphan) sources group by peer in the warning output (capacity before territory).
+function peerOfSource(id, name) {
+  const s = String((id || '') + ' ' + (name || '')).toLowerCase();
+  const m = (re) => re.test(s);
+  if (m(/nepa|permit|approval|delivery|iija|asce|\bgao\b|productivity|oecd[-_ ]?pmr|interprovincial|interstate|infrastructure|\binfra\b/)) return 'capacity';
+  if (m(/\bnca\d?\b|noaa|climate|copernicus|meteorolog|ipcc|\bfao\b|\bfra\b|forest|freshwater|fisher|biosphere|arable|\beia\b|energy|\biea\b|ember|\bco2\b|carbon|emission|transition|mineral|usgs|geolog|nd[-_ ]?gain|adaptation/)) return 'territory';
+  if (m(/\bimf\b|\bweo\b|world[-_ ]?bank|\bbis\b|budget|treasury|\bdebt\b|\bgdp\b|\bbea\b|fiscal|deficit|inflation|\bcpi\b|monetary|\bfed\b|moody|fitch|credit[-_ ]?rating|\btrade\b|comtrade|tariff|current[-_ ]?account|sanction/)) return 'economy';
+  if (m(/census|demograph|age[-_ ]?sex|population|fertility|migrat|urban|\bkff\b|\brace\b|ethnic|linguistic|religio|\barda\b|templeton|barometer|world[-_ ]?values|social[-_ ]?trust|cohesion/)) return 'society';
+  if (m(/acled|\bdhs\b|\bhta\b|\bicg\b|sipri|conflict|terror|insurgen|organized[-_ ]?crime|communal|militar|\bborder\b|threat/)) return 'security';
+  if (m(/v[-_ ]?dem|freedom[-_ ]?house|\bwjp\b|rule[-_ ]?of[-_ ]?law|transparency|corruption|democr|electoral|election|standings|legislat|senate|\bhouse\b|congress|\bcrs\b|constitution|\bscotus\b|supreme[-_ ]?court|\bruling\b|amendment|gazette|federal[-_ ]?register/)) return 'political';
+  return 'other';
+}
+
 function validateCountryFile(filePath) {
   const raw = fs.readFileSync(filePath, 'utf8');
   const data = yaml.load(raw);
   const errors = [];
   const warnings = [];
+
+  // Event sources (Pass Zero-B) are accepted-but-not-required: an uncited event source
+  // means the event was found, considered, and excluded — a completed check, not an orphan.
+  let eventIds = new Set();
+  try {
+    const code = path.basename(path.dirname(filePath));
+    const eventsFile = path.join(process.cwd(), 'content', 'docs', 'deepsearch-jobs', code, 'pass-zero-b.events.json');
+    if (fs.existsSync(eventsFile)) {
+      const rawEv = JSON.parse(fs.readFileSync(eventsFile, 'utf8'));
+      const arr = Array.isArray(rawEv) ? rawEv : (rawEv && Array.isArray(rawEv.events) ? rawEv.events : []);
+      eventIds = new Set(arr.map((e) => e && e.id).filter(Boolean));
+    }
+  } catch { /* no events file → all sources required */ }
 
   if (!data || typeof data !== 'object') {
     return { errors: ['Invalid YAML object'], warnings };
@@ -131,7 +219,13 @@ function validateCountryFile(filePath) {
           errors.push(`Source ${key}: denied domain (${u.hostname})`);
         }
         if (isLikelyGenericHomepage(url)) {
-          errors.push(`Source ${key}: generic homepage URL (needs deep link)`);
+          if (s?.landingPage === true) {
+            // Deliberate curator choice: an official landing page that offers the
+            // document in both languages beats a language-locked deep link (PDF).
+            warnings.push(`Source ${key}: landing-page URL accepted (landingPage: true — bilingual access by design)`);
+          } else {
+            errors.push(`Source ${key}: generic homepage URL (needs deep link, or "landingPage": true for a deliberate bilingual landing page)`);
+          }
         }
       } catch {
         errors.push(`Source ${key}: invalid URL`);
@@ -194,9 +288,27 @@ function validateCountryFile(filePath) {
     }
   }
 
+  const uncitedEvents = [];
+  const orphansByPeer = {};
   for (const s of sourceKeys) {
-    if (!citations.has(s)) {
-      errors.push(`Orphan source: '${s}' is never cited`);
+    if (citations.has(s)) continue;
+    if (eventIds.has(s)) {
+      uncitedEvents.push(s);
+    } else {
+      // Non-event orphan: WARNING, not error — a signal about thin prose, not a bad source.
+      const peer = peerOfSource(s);
+      (orphansByPeer[peer] = orphansByPeer[peer] || []).push(s);
+    }
+  }
+  if (uncitedEvents.length) {
+    warnings.push(`Event sources not cited — found, considered, excluded (not orphans): ${uncitedEvents.join(', ')}`);
+  }
+  const orphanTotal = Object.values(orphansByPeer).reduce((n, a) => n + a.length, 0);
+  if (orphanTotal) {
+    warnings.push(`Uncited non-event sources (${orphanTotal}) — sections under-written; thicken against these:`);
+    for (const peer of PEER_ORDER) {
+      const list = orphansByPeer[peer];
+      if (list && list.length) warnings.push(`  ${peer} (${list.length}): ${list.join(', ')}`);
     }
   }
 
@@ -215,6 +327,75 @@ function validateCountryFile(filePath) {
   for (const [k, v] of Object.entries(contentClone)) {
     if (typeof v === 'string' && warningFieldPrefixes.some((p) => k.startsWith(p))) {
       sentenceTimeBindingWarnings(v, k, warnings);
+    }
+  }
+
+  // Situator openers — warning-level audit (the apply gate errors hard on these).
+  for (const [base, kind] of OPENER_FIELDS) {
+    for (const lang of ['en', 'fr']) {
+      const v = contentClone[`${base}_${lang}`];
+      if (typeof v !== 'string' || !v.trim()) continue;
+      const problem = openerProblem(kind, v);
+      if (problem) {
+        warnings.push(`${base}_${lang}: missing situator OPENER — ${problem}`);
+      }
+    }
+  }
+
+  // Situation — the verified event layer (template §4d), populated by the
+  // DEDICATED situation pass as JSON-in-text threads. Legacy prose is accepted
+  // at audit level (warning) so the USA report keeps validating until its
+  // rework; the apply gate in the workflow rejects prose outright.
+  // ARRAY ORDER IS SEMANTIC (threads by recency of last activity, events
+  // chronologically forward) — never sort or reorder while validating.
+  // KEEP the shape checks in sync with validateSituationThreads in
+  // deepsearch-country-workflow.cjs.
+  const countryCode = path.basename(path.dirname(filePath));
+  for (const lang of ['en', 'fr']) {
+    const key = `situation_${lang}`;
+    const v = contentClone[key];
+    if (typeof v !== 'string' || !v.trim()) continue;
+    const t = v.trim();
+    if (t.startsWith('[')) {
+      let threads;
+      try { threads = JSON.parse(t); } catch (err) {
+        errors.push(`${key}: threads JSON does not parse (${err.message}) — this field renders as RAW TEXT on the site`);
+        continue;
+      }
+      if (!Array.isArray(threads)) {
+        errors.push(`${key}: situation JSON must be an ARRAY of threads`);
+        continue;
+      }
+      let eventCount = 0;
+      threads.forEach((th, i) => {
+        if (!th || typeof th.thread !== 'string' || !th.thread.trim()) warnings.push(`${key}[${i}]: thread name missing`);
+        const evs = Array.isArray(th?.events) ? th.events : [];
+        if (!evs.length) warnings.push(`${key}[${i}]: no events in thread`);
+        evs.forEach((e, j) => {
+          eventCount += 1;
+          for (const f of ['date', 'what', 'changed']) {
+            if (!e || typeof e[f] !== 'string' || !e[f].trim()) warnings.push(`${key}[${i}].events[${j}]: missing "${f}"`);
+          }
+          if (!/\[[a-z0-9-]+\]/.test(`${e?.what ?? ''} ${e?.changed ?? ''}`)) {
+            warnings.push(`${key}[${i}].events[${j}]: no source citation — every event carries one`);
+          }
+        });
+      });
+      if (eventCount > 8 && countryCode !== 'USA') {
+        warnings.push(`${key}: ${eventCount} events across threads — the cap is 8 (only the United States report may carry more)`);
+      }
+    } else {
+      warnings.push(`${key}: legacy prose format — rework into §4d threads JSON (named threads → dated events → what each materially changed)`);
+    }
+    // Engagement with the Pass Zero-B scan: a populated situation section can
+    // still quietly ignore the event scan. The events may legitimately all be
+    // "not material", but that must be said, not skipped.
+    if (eventIds.size > 0) {
+      const cited = new Set();
+      collectCitations(v, cited);
+      if (![...cited].some((id) => eventIds.has(id))) {
+        warnings.push(`${key}: cites none of the ${eventIds.size} scanned event source(s) — verify every Pass Zero-B event is accounted for or explicitly stated as not material`);
+      }
     }
   }
 

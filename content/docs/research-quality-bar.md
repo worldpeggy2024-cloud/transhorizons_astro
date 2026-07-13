@@ -25,7 +25,7 @@ These are caught by `npm run validate:countries` and will block the PR:
 | Uncited claim | Every narrative field must contain at least one `[source-id]` |
 | Broken citation ID | Every `[id]` in text must match an entry in `*.sources.yaml` |
 | Citation parity gap | EN and FR must cite exactly the same IDs in each section |
-| Orphan source | A source defined in `*.sources.yaml` but never cited in EN text |
+| ~~Orphan source~~ → **warning, not a reject** | An uncited source no longer blocks. It is a **warning, grouped by peer** in the apply/validate output — for both event sources (found, considered, excluded — a completed check) and non-event sources. An uncited non-event source signals thin PROSE (a section Pass B under-wrote), not a bad source; blocking it would stop the report being read in order to fix it. **Still hard errors:** ghost citations (a `[id]` with no matching source) and schema violations. |
 | Invalid source ID | IDs must be `lowercase-alphanumeric-hyphens` only |
 | Missing required fields | `name`, `url`, `desc` required on every source entry |
 

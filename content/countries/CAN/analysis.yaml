@@ -508,6 +508,140 @@ political_constitutionalSubstrate_fr: >-
   de 2021, la population autochtone du Canada atteignait 1,8 million de
   personnes, soit 5,0 % du total, comprenant les Premières Nations, les Métis et
   les Inuits [statcan-2021-indigenous-profile].
+situation_en: |-
+  [
+    {
+      "thread": "Trade rupture with the United States",
+      "status": "ongoing",
+      "events": [
+        {
+          "date": "4 February – 4 March 2025",
+          "what": "The United States imposed 25% tariffs on virtually all Canadian goods (10% on energy); Canada retaliated with 25% counter-tariffs on C$30 billion in imports, later extended to C$155 billion [fin-canada-counter-tariffs].",
+          "changed": "Ended the effectively tariff-free trading relationship in place since 1994, exposing roughly $500 billion in annual bilateral trade to new costs."
+        },
+        {
+          "date": "March – June 2025",
+          "what": "Sectoral tariffs were layered on under United States Section 232 authority: 25% on steel and aluminum (March), raised to 50% (June); 25% on vehicles not built in the United States (April) [us-section-232].",
+          "changed": "Imposed durable, CUSMA-immune tariffs on precisely Canada's resource and manufacturing export base."
+        },
+        {
+          "date": "1 September 2025",
+          "what": "Canada unilaterally removed most counter-tariffs, retaining them only on steel, aluminum, and automobiles [fin-canada-counter-tariffs].",
+          "changed": "Ended the reciprocal-escalation phase; Canada de-escalated without securing corresponding relief."
+        },
+        {
+          "date": "October 2025",
+          "what": "The United States imposed 35% tariffs on softwood lumber and 25% on certain wood products; trade negotiations were terminated [us-section-232].",
+          "changed": "Removed the formal channel for tariff relief, leaving exporters without near-term visibility."
+        },
+        {
+          "date": "24 February 2026",
+          "what": "The 35% tariff on non-CUSMA-compliant goods was replaced by a 10% global tariff including Canada. The emergency-powers tariffs were ruled unlawful, and refunds became available to affected Canadian importers from April 2026 [us-cbp-tariff-notice-2026].",
+          "changed": "Materially reduced the headline tariff rate while leaving sectoral tariffs untouched."
+        },
+        {
+          "date": "1 July 2026",
+          "what": "The mandatory six-year CUSMA review deadline passed without agreement to extend the agreement to 2042 [gac-cusma-review].",
+          "changed": "CUSMA remains in force but shifts to annual reviews until its scheduled 2036 expiry, placing North American free trade in permanent renegotiation."
+        }
+      ],
+      "currentState": "CUSMA-compliant goods remain tariff-free; non-compliant goods face 10%. The durable damage is sectoral — 50% on steel, aluminum and copper, 25% on vehicles, 35% on softwood lumber — under authority CUSMA does not shield. Across eighteen months the regime shifted repeatedly in rate, scope, and legal basis; the instability, independent of any rate, has left exporters without a stable basis on which to plan."
+    },
+    {
+      "thread": "Defence commitment",
+      "status": "June 2025",
+      "events": [
+        {
+          "date": "24–25 June 2025",
+          "what": "At the NATO summit in The Hague, Canada and all allies committed to spending 5% of GDP on defence by 2035 (3.5% core defence, 1.5% defence-related infrastructure), superseding the 2% benchmark [nato-hague-declaration-2025].",
+          "changed": "Committed Canada to its largest sustained defence-spending trajectory since the Cold War; the Parliamentary Budget Officer estimates roughly $33.5 billion per year in additional expenditure, with no government projection of the pathway published [pbo-nato-5-percent-2026]."
+        }
+      ]
+    },
+    {
+      "thread": "Change of government",
+      "status": "March – April 2025",
+      "events": [
+        {
+          "date": "14 March 2025",
+          "what": "Mark Carney was sworn in as prime minister, replacing Justin Trudeau [pmo-swearing-in-2025].",
+          "changed": "New leadership and negotiating posture at the sharpest point of the trade rupture."
+        },
+        {
+          "date": "28 April 2025",
+          "what": "The Liberals won 169 of 343 seats, forming a minority government (subsequently a majority — see Power Structure) [elections-canada-2025].",
+          "changed": "Conferred an electoral mandate for a confrontational trade posture and accelerated defence spending."
+        }
+      ]
+    }
+  ]
+situation_fr: |-
+  [
+    {
+      "thread": "Rupture commerciale avec les États-Unis",
+      "status": "en cours",
+      "events": [
+        {
+          "date": "4 février – 4 mars 2025",
+          "what": "Les États-Unis imposent des droits de douane de 25 % sur la quasi-totalité des produits canadiens (10 % sur l'énergie); le Canada riposte par des contre-tarifs de 25 % sur 30 G$ CA d'importations, portés par la suite à 155 G$ CA [fin-canada-counter-tariffs].",
+          "changed": "Fin de la relation commerciale de fait sans droits de douane en place depuis 1994, exposant environ 500 G$ d'échanges bilatéraux annuels à de nouveaux coûts."
+        },
+        {
+          "date": "Mars – juin 2025",
+          "what": "Des droits sectoriels s'ajoutent en vertu de l'article 232 de la loi américaine : 25 % sur l'acier et l'aluminium (mars), portés à 50 % (juin); 25 % sur les véhicules non construits aux États-Unis (avril) [us-section-232].",
+          "changed": "Des droits durables, non couverts par l'ACEUM, frappent précisément la base d'exportation des ressources et de la fabrication canadiennes."
+        },
+        {
+          "date": "1er septembre 2025",
+          "what": "Le Canada retire unilatéralement la plupart de ses contre-tarifs, les maintenant uniquement sur l'acier, l'aluminium et les automobiles [fin-canada-counter-tariffs].",
+          "changed": "Fin de la phase d'escalade réciproque; le Canada désescalade sans obtenir d'allègement correspondant."
+        },
+        {
+          "date": "Octobre 2025",
+          "what": "Les États-Unis imposent des droits de 35 % sur le bois d'œuvre résineux et de 25 % sur certains produits du bois; les négociations commerciales sont rompues [us-section-232].",
+          "changed": "Disparition du canal formel d'allègement tarifaire, privant les exportateurs de toute visibilité à court terme."
+        },
+        {
+          "date": "24 février 2026",
+          "what": "Le tarif de 35 % sur les produits non conformes à l'ACEUM est remplacé par un tarif mondial de 10 % incluant le Canada. Les droits imposés en vertu des pouvoirs d'urgence sont jugés illégaux et des remboursements deviennent accessibles aux importateurs canadiens à compter d'avril 2026 [us-cbp-tariff-notice-2026].",
+          "changed": "Réduction marquée du taux tarifaire principal, sans toucher aux droits sectoriels."
+        },
+        {
+          "date": "1er juillet 2026",
+          "what": "L'échéance de l'examen obligatoire de l'ACEUM après six ans passe sans accord pour prolonger l'entente jusqu'en 2042 [gac-cusma-review].",
+          "changed": "L'ACEUM demeure en vigueur mais passe à des examens annuels jusqu'à son expiration prévue en 2036, plaçant le libre-échange nord-américain en renégociation permanente."
+        }
+      ],
+      "currentState": "Les produits conformes à l'ACEUM demeurent exempts de droits; les produits non conformes sont assujettis à 10 %. Les dommages durables sont sectoriels — 50 % sur l'acier, l'aluminium et le cuivre, 25 % sur les véhicules, 35 % sur le bois d'œuvre — en vertu de pouvoirs que l'ACEUM ne protège pas. En dix-huit mois, le régime a changé à répétition de taux, de portée et de fondement juridique; cette instabilité, indépendamment de tout taux, prive les exportateurs de toute base stable de planification."
+    },
+    {
+      "thread": "Engagement en matière de défense",
+      "status": "juin 2025",
+      "events": [
+        {
+          "date": "24-25 juin 2025",
+          "what": "Au sommet de l'OTAN à La Haye, le Canada et l'ensemble des alliés s'engagent à consacrer 5 % du PIB à la défense d'ici 2035 (3,5 % pour la défense de base, 1,5 % pour les infrastructures connexes), remplaçant la cible de 2 % [nato-hague-declaration-2025].",
+          "changed": "Le Canada s'engage dans sa plus importante trajectoire soutenue de dépenses de défense depuis la guerre froide; le directeur parlementaire du budget estime les dépenses supplémentaires à environ 33,5 G$ par année, aucune projection gouvernementale du cheminement vers la cible n'ayant été publiée [pbo-nato-5-percent-2026]."
+        }
+      ]
+    },
+    {
+      "thread": "Changement de gouvernement",
+      "status": "mars – avril 2025",
+      "events": [
+        {
+          "date": "14 mars 2025",
+          "what": "Mark Carney est assermenté premier ministre, succédant à Justin Trudeau [pmo-swearing-in-2025].",
+          "changed": "Nouvelle direction et nouvelle posture de négociation au point le plus vif de la rupture commerciale."
+        },
+        {
+          "date": "28 avril 2025",
+          "what": "Les libéraux remportent 169 des 343 sièges et forment un gouvernement minoritaire (devenu majoritaire par la suite — voir Structure du pouvoir) [elections-canada-2025].",
+          "changed": "Mandat électoral conférant l'appui nécessaire à une posture commerciale de confrontation et à l'accélération des dépenses de défense."
+        }
+      ]
+    }
+  ]
 economy_macroReality_en: >-
   Canada is a high-income, advanced service economy (services dominate output
   and employment) resting on a large, geographically concentrated
@@ -1526,9 +1660,13 @@ security_diplomacy_en: >-
   [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada holds
   G7, G20, OECD, Commonwealth, and La Francophonie memberships, providing
   multilateral influence beyond its military weight [cgai-diplomats-guide-2026].
-  The PBO's defence capital analysis confirms Canada's NATO 2% GDP commitment
-  pathway requires $322.9B in total DND capital spending over 20 years
-  [pbo-defence-capital-2025].
+  Canada committed at the June 2025 NATO summit in The Hague to spend 5% of GDP
+  on defence by 2035 (3.5% core defence, 1.5% defence-related infrastructure).
+  No government projection of the pathway to the target has been published. The
+  Parliamentary Budget Officer estimates this requires core defence spending of
+  $159.1 billion by 2035-36 (approximately $33.5 billion per year in additional
+  expenditure) raising the deficit by $63 billion and the debt-to-GDP ratio by
+  6.3 points by 2035-36 [pbo-nato-5-percent-2026].
 security_diplomacy_fr: >-
   L'architecture d'alliances conventionnelles du Canada est centrée sur l'OTAN
   (membre fondateur), NORAD (défense bilatérale avec les États-Unis) et le
@@ -1556,11 +1694,16 @@ security_diplomacy_fr: >-
   [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Canada est
   membre du G7, du G20, de l'OCDE, du Commonwealth et de la Francophonie; ce qui
   lui confère une influence multilatérale au-delà de son poids militaire
-  [cgai-diplomats-guide-2026]. L'analyse des dépenses en capital de défense de
-  la directrice parlementaire du budget confirme que la trajectoire d'engagement
-  de 2 % du PIB du Canada envers l'OTAN nécessite 322,9 G$ de dépenses en
-  capital totales du ministère de la Défense sur 20 ans
-  [pbo-defence-capital-2025].
+  [cgai-diplomats-guide-2026]. Au sommet de l'OTAN tenu à La Haye en juin 2025,
+  le Canada s'est engagé à consacrer 5 % de son PIB à la défense d'ici 2035 (3,5
+  % aux besoins fondamentaux de défense et 1,5 % aux infrastructures liées à la
+  défense), cible qui vient remplacer le seuil de 2 %. Le gouvernement n'a
+  publié aucune projection à l'appui de cette cible. La directrice parlementaire
+  du budget estime que cela exige des dépenses de défense fondamentales de 159,1
+  milliards de dollars d'ici l'exercice 2035-2036 (environ 33,5 milliards de
+  dollars de dépenses supplémentaires), creusant le déficit de 63 milliards de
+  dollars et accroissant le ratio de la dette au PIB de 6,3 points d'ici
+  2035-2036 [pbo-nato-5-percent-2026].
 actors_domestic_en: |-
   [
     {
@@ -2614,6 +2757,7 @@ sources: |-
       "name": "Public Inquiry into Foreign Interference in Federal Electoral Processes and Democratic Institutions – Final Report",
       "nameFr": "Enquête publique sur l'ingérence étrangère dans les processus électoraux et les institutions démocratiques fédéraux — Rapport final",
       "url": "https://foreigninterferencecommission.ca/",
+      "landingPage": true,
       "desc": "Hogue Commission's Final Report (Commissioner Marie-Josée Hogue, 28 January 2025): the diaspora and PRC analysis, finding diaspora communities 'especially vulnerable' to foreign-interference and transnational-repression activity, most commonly exercised through pressure on relatives still in China, aimed at suppressing criticism and controlling the PRC's image.",
       "descFr": "Rapport final de la Commission Hogue (commissaire Marie-Josée Hogue, 28 janvier 2025) : l'analyse consacrée aux diasporas et à la République populaire de Chine, concluant que les communautés de la diaspora sont « particulièrement vulnérables » à l'ingérence étrangère et à la répression transnationale, exercée le plus souvent par des pressions sur les proches demeurés en Chine, afin d'étouffer la critique et de contrôler l'image de la RPC.",
       "publicationDate": "2025-01-28",
@@ -2630,6 +2774,98 @@ sources: |-
       "descFr": "Déclaration commune Carney–Starmer (8 juillet 2026, publiée à Ankara) : engage le Canada et le Royaume-Uni à une concertation étroite et à la complémentarité entre la Banque de la défense, de la sécurité et de la résilience et le Mécanisme de défense multilatéral, à l'accroissement de la capacité industrielle de défense et de la résilience, et à l'amélioration de l'investissement dans la défense tout au long de la chaîne d'approvisionnement; les partenaires aux vues similaires étant invités à y participer.",
       "publicationDate": "2026-07-08",
       "accessDate": "2026-07-08",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "pbo-nato-5-percent-2026",
+      "name": "Parliamentary Budget Office – Fiscal Implications of Meeting NATO's 5% Commitment",
+      "nameFr": "Bureau de la directrice parlementaire du budget — Répercussions financières de l'atteinte de la cible de 5 % de l'OTAN",
+      "url": "https://www.pbo-dpb.ca/en/publications/RP-2526-022-S--fiscal-implications-meeting-nato-5-commitment--repercussions-financieres-atteinte-cible-5-otan",
+      "desc": "Independent costing report from Canada's Parliamentary Budget Officer analysing the fiscal implications of NATO's 5%-of-GDP defence commitment for federal finances; non-partisan, projection-based, published February 2026.",
+      "descFr": "Rapport de coûts indépendant de la directrice parlementaire du budget du Canada analysant, pour les finances fédérales, les répercussions de l'engagement pris à l'OTAN de consacrer 5 % du PIB à la défense; non partisan, fondé sur des projections, publié en février 2026.",
+      "publicationDate": "2026-02-05",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "fin-canada-counter-tariffs",
+      "name": "Department of Finance Canada – Canada's response to U.S. tariffs",
+      "nameFr": "Ministère des Finances du Canada — Réponse du Canada aux droits de douane américains",
+      "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs.html",
+      "desc": "Department of Finance Canada hub page, since archived, recording the federal counter-tariff measures taken in response to United States tariffs, their product coverage, and subsequent adjustments.",
+      "descFr": "Page de référence du ministère des Finances du Canada, depuis archivée, recensant les contre-mesures tarifaires fédérales prises en réponse aux droits de douane américains, leur portée et leurs ajustements ultérieurs.",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "us-section-232",
+      "name": "U.S. Customs and Border Protection – Trade Remedies",
+      "nameFr": "U.S. Customs and Border Protection – Trade Remedies",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies",
+      "desc": "Official overview page from United States Customs and Border Protection describing active trade-remedy measures, including tariffs imposed under Section 232 of the Trade Expansion Act of 1962.",
+      "descFr": "Page officielle du Service des douanes et de la protection des frontières des États-Unis décrivant les mesures commerciales correctives en vigueur, dont les droits imposés en vertu de l'article 232 de la Trade Expansion Act de 1962.",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "us-cbp-tariff-notice-2026",
+      "name": "U.S. Customs and Border Protection – CSMS # 67834313: Ending Collection of International Emergency Economic Powers Act Duties",
+      "nameFr": "U.S. Customs and Border Protection – CSMS # 67834313: Ending Collection of International Emergency Economic Powers Act Duties",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/40b11c9",
+      "desc": "Cargo Systems Messaging Service bulletin from United States Customs and Border Protection instructing that duties imposed under the International Emergency Economic Powers Act cease to be collected.",
+      "descFr": "Bulletin du Cargo Systems Messaging Service du Service des douanes et de la protection des frontières des États-Unis ordonnant la fin de la perception des droits imposés en vertu de l'International Emergency Economic Powers Act.",
+      "publicationDate": "2026-02-22",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "gac-cusma-review",
+      "name": "Global Affairs Canada – Joint Review of the Canada-United States-Mexico Agreement (CUSMA)",
+      "nameFr": "Affaires mondiales Canada — Examen conjoint de l'Accord Canada–États-Unis–Mexique (ACEUM)",
+      "url": "https://www.international.gc.ca/trade-commerce/trade-agreements-accords-commerciaux/agr-acc/cusma-aceum/joint-review-examen-conjoint.aspx?lang=eng",
+      "desc": "Global Affairs Canada explainer on the agreement's mandatory joint-review mechanism: its timing, the term-extension decision it opens, and the consultation process feeding Canada's preparation.",
+      "descFr": "Page explicative d'Affaires mondiales Canada sur le mécanisme d'examen conjoint obligatoire de l'accord : son échéancier, la décision de prolongation qu'il ouvre et les consultations préparatoires canadiennes.",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "nato-hague-declaration-2025",
+      "name": "NATO – The Hague Summit Declaration",
+      "nameFr": "OTAN — Déclaration du Sommet de La Haye",
+      "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration",
+      "desc": "Official declaration issued by North Atlantic Treaty Organization heads of state and government at the June 2025 Hague summit, setting allied defence-investment commitments.",
+      "descFr": "Déclaration officielle publiée par les chefs d'État et de gouvernement de l'Organisation du Traité de l'Atlantique Nord au sommet de La Haye de juin 2025, fixant les engagements alliés d'investissement de défense.",
+      "publicationDate": "2025-06-25",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "pmo-swearing-in-2025",
+      "name": "Prime Minister's Office – Swearing-in of the 30th Canadian Ministry",
+      "nameFr": "Cabinet du Premier ministre — Assermentation des membres du 30e Conseil des ministres du Canada",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2025/03/14/swearing-30th-canadian-ministry",
+      "desc": "News release from the Prime Minister's Office announcing the swearing-in of Mark Carney as Prime Minister together with the members of the 30th Canadian Ministry.",
+      "descFr": "Communiqué du Cabinet du Premier ministre annonçant l'assermentation de Mark Carney comme premier ministre ainsi que des membres du 30e Conseil des ministres du Canada.",
+      "publicationDate": "2025-03-14",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "elections-canada-2025",
+      "name": "Elections Canada – Official Voting Results, Forty-Fifth General Election",
+      "nameFr": "Élections Canada — 45e élection générale 2025 : Résultats officiels du scrutin",
+      "url": "https://www.elections.ca/res/rep/off/ovrGE45/home.html",
+      "desc": "Elections Canada's official results publication for the April 2025 federal general election, with validated seat counts and poll-by-poll returns for every electoral district.",
+      "descFr": "Publication officielle des résultats d'Élections Canada pour l'élection générale fédérale d'avril 2025, avec les sièges validés et les résultats par bureau de scrutin pour chaque circonscription.",
+      "accessDate": "2026-07-13",
       "confidence": "High",
       "citationType": "Fact"
     }
