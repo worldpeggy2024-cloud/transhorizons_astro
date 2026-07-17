@@ -117,6 +117,11 @@
   --cr-hover-2: #FDF9F3;     /* subtle surface */
   --cr-divider: #F0EDE8;
   --cr-on-accent: #ffffff;   /* text on a filled accent button */
+  /* Locator globe (Wikipedia-style orthographic) */
+  --cr-map-ocean: #EAF1F7;        /* hemisphere water — very light blue */
+  --cr-map-land: #DDD8CE;         /* neutral land grey */
+  --cr-map-land-border: #B9B3A7;
+  --cr-map-graticule: #C7D4E0;    /* subtle bluish grid on the light water */
 }
 .dark {
   --cr-bg: #1A1815;          /* warm charcoal — not pure black, easier on the eyes */
@@ -132,6 +137,11 @@
   --cr-hover-2: #2B241C;
   --cr-divider: #2A2620;
   --cr-on-accent: #1A1815;   /* dark text on the (light) accent button */
+  /* Locator globe (Wikipedia-style orthographic) */
+  --cr-map-ocean: #2E2B26;        /* hemisphere water — dark grey, not black */
+  --cr-map-land: #4C463C;         /* land clearly lighter than the water */
+  --cr-map-land-border: #5A544A;
+  --cr-map-graticule: #3C3831;
 }
 
 @layer base {

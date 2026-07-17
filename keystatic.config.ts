@@ -400,6 +400,10 @@ export default config({
           multiline: true,
           description: 'JSON threads array from the situation pass (template §4d); every event cites [source-id]',
         }),
+        situation_lastUpdated: fields.text({
+          label: 'Situation Last Updated (YYYY-MM-DD)',
+          description: 'When the situation events were last verified — maintained manually; shown in the Situation header band',
+        }),
 
         // ── Economy Section ───────────────────────────────────────────────
         economy_macroReality_en: fields.text({

@@ -134,6 +134,8 @@ export function adaptCountryYaml(raw: unknown): AnalysisContent {
 
   return {
     lastUpdated: String(d.lastUpdated ?? ''),
+    // Manually maintained in Keystatic; only surfaces when set (no fabricated date).
+    situationUpdated: String(d.situation_lastUpdated ?? '') || undefined,
     scorecard: {
       eliteCohesion: (d.scorecard_eliteCohesion as AnalysisContent['scorecard']['eliteCohesion']) ?? 'Med',
       // Only set when present in the YAML (no 'Med' default): an unresearched

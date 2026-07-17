@@ -215,7 +215,9 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
   title: string;
   children: React.ReactNode;
   defaultOpen?: boolean;
-}>(({ icon: Icon, title, children, defaultOpen = false }, ref) => {
+  /** Small muted note on the right of the header band (e.g. the situation verification date). */
+  headerNote?: string;
+}>(({ icon: Icon, title, children, defaultOpen = false, headerNote }, ref) => {
   const [open, setOpen] = useState(defaultOpen);
 
   React.useImperativeHandle(ref, () => ({
@@ -232,7 +234,12 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
           <Icon size={15} className="text-[var(--cr-accent)]" />
           <span className="font-display text-base font-medium text-[var(--cr-ink)]">{title}</span>
         </div>
-        {open ? <ChevronUp size={14} className="text-[var(--cr-muted)]" /> : <ChevronDown size={14} className="text-[var(--cr-muted)]" />}
+        <div className="flex items-center gap-3">
+          {!!headerNote && (
+            <span className="font-body text-xs text-[var(--cr-muted)] whitespace-nowrap">{headerNote}</span>
+          )}
+          {open ? <ChevronUp size={14} className="text-[var(--cr-muted)]" /> : <ChevronDown size={14} className="text-[var(--cr-muted)]" />}
+        </div>
       </button>
       {open && (
         <div className="px-6 pb-6 pt-2 border-t border-[var(--cr-border)] bg-[var(--cr-surface)]">
@@ -312,7 +319,8 @@ function SituationSection({ text, sources }: { text: string; sources?: SourceEnt
               )}
             </h4>
           )}
-          <div className="space-y-2">
+          {/* Events indented under the thread title so titles read as headers */}
+          <div className="space-y-2 pl-4">
             {(th.events ?? []).map((e, j) => (
               <div key={j} className="font-body text-sm text-[var(--cr-body)] leading-relaxed">
                 <p>
@@ -326,7 +334,7 @@ function SituationSection({ text, sources }: { text: string; sources?: SourceEnt
             ))}
           </div>
           {!!th.currentState?.trim() && (
-            <p className="font-body text-sm italic text-[var(--cr-muted)] mt-2">{parseCitations(th.currentState, sources)}</p>
+            <p className="font-body text-sm italic text-[var(--cr-muted)] mt-2 pl-4">{parseCitations(th.currentState, sources)}</p>
           )}
         </div>
       ))}
@@ -823,7 +831,15 @@ export default function CountryPage() {
         {/* Situation — the event layer (what has HAPPENED), after political, before economy */}
         {hasSituation && (
           <div data-section="Situation">
-          <FrameworkSection icon={AlertTriangle} title={t.situation}>
+          <FrameworkSection
+            icon={AlertTriangle}
+            title={t.situation}
+            // Situation is the most time-sensitive section — surface its own
+            // verification date in the band. FR-PLACEHOLDER: French label below.
+            headerNote={analysis?.situationUpdated
+              ? (language === 'fr' ? `Vérifié le ${analysis.situationUpdated}` : `Verified ${analysis.situationUpdated}`)
+              : undefined}
+          >
             <SituationSection text={lang!.situation!} sources={activeSources} />
           </FrameworkSection>
           </div>
@@ -978,6 +994,14 @@ export default function CountryPage() {
         <FrameworkSection icon={AlertTriangle} title={t.risks}>
           {hasAnalysis ? (
             <div className="space-y-2">
+              {/* Redesign notice — the risk framing predates the two-phase pipeline and is
+                  being reworked; entries (and the level derived from them) read accordingly.
+                  FR-PLACEHOLDER: French wording below awaits Peggy's review. */}
+              <div className="mb-3 px-3 py-2 border rounded font-body text-xs italic bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900">
+                {language === 'fr'
+                  ? 'Section en cours de remaniement — les entrées actuelles reflètent un cadrage obsolète.'
+                  : 'Under redesign — current entries reflect an outdated framing.'}
+              </div>
               {/* Derived overall risk level — rule-based, from this country's own register */}
               {derivedRisk && (
                 <div className="mb-4 flex items-center gap-2 flex-wrap pb-3 border-b border-[var(--cr-divider)]">

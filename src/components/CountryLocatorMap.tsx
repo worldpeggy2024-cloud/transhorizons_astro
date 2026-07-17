@@ -1,27 +1,27 @@
 /*
- * TransHorizons — Country locator map
- * Small SVG minimap for the country-report header: the country highlighted
- * against its neighbours, with 3-letter code labels on the neighbours.
- * Rendered from the repo's own Natural Earth 110m geodata
- * (/ne_110m_countries.geojson — the same file the globe uses), NOT from
- * generated imagery: geographic accuracy is non-negotiable.
+ * TransHorizons — Country locator globe
+ * Wikipedia-style orthographic locator ("Location of X"): a hemisphere globe
+ * centred on the country, 10° graticule, all land in neutral grey, the target
+ * country in the report accent. Rendered with d3-geo from the repo's own
+ * Natural Earth 110m geodata (/ne_110m_countries.geojson — the same file the
+ * globe uses), NOT from generated imagery: geographic accuracy is
+ * non-negotiable.
  *
- * Framing: centred on the country's LARGEST landmass (so France frames on
- * metropolitan France, not on a bbox stretched to French Guiana; the USA on
- * the lower 48). Projection: local equirectangular with per-point longitude
- * deltas normalised to [-180°, 180°], so antimeridian countries (Russia,
- * Fiji, the Aleutians) don't smear. Good enough for a locator; not for
- * measurement.
+ * Centring: on the country's LARGEST landmass (so France frames on
+ * metropolitan France, not a bbox stretched to French Guiana; the USA on the
+ * lower 48). Countries too small to read at hemisphere scale get a ring
+ * marker at their location (the Wikipedia convention for microstates).
+ * Colors come from the --cr-map-* variables in global.css (light + dark).
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { geoOrthographic, geoPath, geoGraticule10 } from 'd3-geo';
 
 type Ring = [number, number][];
 interface Feature {
   properties: Record<string, unknown>;
   geometry: { type: string; coordinates: unknown };
 }
-interface Extent { lon0: number; lat0: number; w: number; h: number }
 
 let geoPromise: Promise<Feature[]> | null = null;
 function loadCountries(): Promise<Feature[]> {
@@ -67,7 +67,8 @@ function largestRing(rings: Ring[]): Ring | null {
   return best;
 }
 
-function extentOf(ring: Ring): Extent {
+/** Centre of the ring's antimeridian-safe bounding box. */
+function centerOf(ring: Ring): [number, number] {
   const seed = ring[0][0];
   let dxMin = Infinity, dxMax = -Infinity, latMin = Infinity, latMax = -Infinity;
   for (const [lon, lat] of ring) {
@@ -77,12 +78,7 @@ function extentOf(ring: Ring): Extent {
     if (lat < latMin) latMin = lat;
     if (lat > latMax) latMax = lat;
   }
-  return {
-    lon0: normLon(seed + (dxMin + dxMax) / 2),
-    lat0: (latMin + latMax) / 2,
-    w: dxMax - dxMin,
-    h: latMax - latMin,
-  };
+  return [normLon(seed + (dxMin + dxMax) / 2), (latMin + latMax) / 2];
 }
 
 export function CountryLocatorMap({
@@ -105,66 +101,38 @@ export function CountryLocatorMap({
     const target = features.find((f) => codeOf(f) === code);
     if (!target) return null;
 
-    // Frame on the target's largest landmass (mainland), not its full bbox.
     const mainland = largestRing(ringsOf(target.geometry));
     if (!mainland) return null;
-    const ext = extentOf(mainland);
-    const cosF = Math.max(0.25, Math.cos((ext.lat0 * Math.PI) / 180));
-    const aspect = width / height;
+    const [lon0, lat0] = centerOf(mainland);
 
-    // Zoom out enough to show neighbours; keep tiny countries in context.
-    const PAD = 2.4;
-    const spanY = Math.min(120, Math.max(9,
-      Math.max((ext.w * cosF * PAD) / aspect, ext.h * PAD)));
-    const spanX = spanY * aspect;
+    const radius = Math.min(width, height) / 2 - 3;
+    const projection = geoOrthographic()
+      .rotate([-lon0, -lat0])
+      .translate([width / 2, height / 2])
+      .scale(radius)
+      .clipAngle(90);
+    const path = geoPath(projection);
 
-    const px = (lon: number, lat: number): [number, number] => [
-      ((normLon(lon - ext.lon0) * cosF + spanX / 2) / spanX) * width,
-      ((ext.lat0 - lat + spanY / 2) / spanY) * height,
-    ];
+    const spherePath = path({ type: 'Sphere' } as any) ?? '';
+    const graticulePath = path(geoGraticule10() as any) ?? '';
 
-    const pathOf = (f: Feature): string => {
-      let d = '';
-      for (const ring of ringsOf(f.geometry)) {
-        for (let i = 0; i < ring.length; i++) {
-          const [x, y] = px(ring[i][0], ring[i][1]);
-          d += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ' ' + y.toFixed(1);
-        }
-        d += 'Z';
-      }
-      return d;
-    };
-
-    const neighbours: { d: string; name: string }[] = [];
-    const labels: { x: number; y: number; code: string; area: number }[] = [];
+    const land: { d: string; name: string }[] = [];
     let targetPath = '';
-
     for (const f of features) {
-      const d = pathOf(f);
+      const d = path(f as any);
       if (!d) continue;
-      const fCode = codeOf(f);
-      if (fCode === code) { targetPath = d; continue; }
-      neighbours.push({ d, name: String(f.properties?.NAME ?? '') });
-
-      // Label anchor: centre of the neighbour's largest landmass, if visibly on-map.
-      const ring = largestRing(ringsOf(f.geometry));
-      if (!ring || !fCode || fCode === '-99') continue;
-      const ne = extentOf(ring);
-      const [lx, ly] = px(ne.lon0, ne.lat0);
-      const pxW = (ne.w * cosF / spanX) * width;
-      const pxH = (ne.h / spanY) * height;
-      const margin = 10;
-      if (
-        lx > margin && lx < width - margin &&
-        ly > margin && ly < height - margin &&
-        pxW * pxH > 450 // skip countries too small at this zoom to carry a label
-      ) {
-        labels.push({ x: lx, y: ly, code: fCode, area: pxW * pxH });
-      }
+      if (codeOf(f) === code) { targetPath = d; continue; }
+      land.push({ d, name: String(f.properties?.NAME ?? '') });
     }
-    // Cap label count, keeping the most prominent neighbours.
-    labels.sort((a, b) => b.area - a.area);
-    return { neighbours, targetPath, labels: labels.slice(0, 12) };
+
+    // Microstate fallback: too small to read at hemisphere scale → ring marker
+    // at its location (the Wikipedia convention).
+    let marker: [number, number] | null = null;
+    if (path.area(target as any) < 40) {
+      marker = projection([lon0, lat0]) ?? null;
+    }
+
+    return { spherePath, graticulePath, land, targetPath, marker };
   }, [features, cca3, width, height]);
 
   if (!svg) return <div style={{ width, height }} aria-hidden="true" />;
@@ -176,45 +144,47 @@ export function CountryLocatorMap({
       viewBox={`0 0 ${width} ${height}`}
       role="img"
       aria-label={label}
-      className="border border-[var(--cr-border)] bg-[var(--cr-surface)]"
+      className="bg-[var(--cr-bg)]"
     >
-      <g>
-        {svg.neighbours.map((n, i) => (
-          <path
-            key={i}
-            d={n.d}
-            fill="var(--cr-hover)"
-            stroke="var(--cr-border)"
-            strokeWidth={0.6}
-            fillRule="evenodd"
-          >
-            {n.name && <title>{n.name}</title>}
-          </path>
-        ))}
+      {/* Hemisphere (ocean) */}
+      <path d={svg.spherePath} fill="var(--cr-map-ocean)" stroke="var(--cr-border)" strokeWidth={1} />
+      {/* Graticule */}
+      <path d={svg.graticulePath} fill="none" stroke="var(--cr-map-graticule)" strokeWidth={0.4} />
+      {/* Land */}
+      {svg.land.map((n, i) => (
+        <path
+          key={i}
+          d={n.d}
+          fill="var(--cr-map-land)"
+          stroke="var(--cr-map-land-border)"
+          strokeWidth={0.4}
+          fillRule="evenodd"
+        >
+          {n.name && <title>{n.name}</title>}
+        </path>
+      ))}
+      {/* Target country */}
+      {svg.targetPath && (
         <path
           d={svg.targetPath}
           fill="var(--cr-accent)"
-          fillOpacity={0.85}
+          fillOpacity={0.9}
           stroke="var(--cr-accent)"
-          strokeWidth={0.8}
+          strokeWidth={0.6}
           fillRule="evenodd"
         />
-        {svg.labels.map((l) => (
-          <text
-            key={l.code}
-            x={l.x}
-            y={l.y}
-            textAnchor="middle"
-            dominantBaseline="middle"
-            fontSize={8}
-            letterSpacing={0.5}
-            fill="var(--cr-muted)"
-            style={{ pointerEvents: 'none', fontFamily: 'var(--font-body)' }}
-          >
-            {l.code}
-          </text>
-        ))}
-      </g>
+      )}
+      {/* Microstate ring marker */}
+      {svg.marker && (
+        <circle
+          cx={svg.marker[0]}
+          cy={svg.marker[1]}
+          r={6}
+          fill="none"
+          stroke="var(--cr-accent)"
+          strokeWidth={1.6}
+        />
+      )}
     </svg>
   );
 }

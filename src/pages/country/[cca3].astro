@@ -205,11 +205,13 @@ let seoEn: LangSeo | null = null;
 let seoFr: LangSeo | null = null;
 let nameEn = '';
 let nameFr = '';
+let situationUpdated = '';
 
 if (seoReady) {
   const data = yaml.load(readFileSync(yamlPath, 'utf-8')) as Record<string, any>;
   nameEn = String(data?.nameEn ?? cca3);
   nameFr = String(data?.nameFr ?? nameEn);
+  situationUpdated = String(data?.situation_lastUpdated ?? '');
   seoEn = buildLangSeo(data, 'en');
   seoFr = buildLangSeo(data, 'fr');
 }
@@ -253,6 +255,10 @@ const pageDesc =
           {seo.situation.length > 0 && (
             <section>
               <h2>{h.situation}</h2>
+              {/* FR-PLACEHOLDER: French label awaits Peggy's review. */}
+              {!!situationUpdated && (
+                <p><em>{lang === 'fr' ? `Vérifié le ${situationUpdated}` : `Verified ${situationUpdated}`}</em></p>
+              )}
               <ul>{seo.situation.map((s) => <li>{s}</li>)}</ul>
             </section>
           )}
@@ -295,6 +301,10 @@ const pageDesc =
           {seo.risks.length > 0 && (
             <section>
               <h2>{h.risks}</h2>
+              {/* Mirrors the visible-page notice. FR-PLACEHOLDER: French wording awaits Peggy's review. */}
+              <p><em>{lang === 'fr'
+                ? 'Section en cours de remaniement — les entrées actuelles reflètent un cadrage obsolète.'
+                : 'Under redesign — current entries reflect an outdated framing.'}</em></p>
               <ul>{seo.risks.map((r) => <li>{r}</li>)}</ul>
             </section>
           )}

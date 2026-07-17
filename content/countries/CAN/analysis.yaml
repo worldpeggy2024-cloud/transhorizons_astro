@@ -1,6 +1,6 @@
 nameEn: Canada
 nameFr: Canada
-lastUpdated: '2026-07-11'
+lastUpdated: '2026-07-14'
 scorecard_eliteCohesion: Med
 scorecard_socialCohesion: Med
 scorecard_securityLoyalty: High
@@ -15,7 +15,7 @@ executiveSnapshot_en: >-
   Commons [freedom-house-canada-2026][vdem-democracy-report-2026].
 
   2. POLITICAL EQUILIBRIUM: The Liberal government under Prime Minister Mark
-  Carney holds a working parliamentary majority as of 28 June 2026 (173 of 343
+  Carney holds a working parliamentary majority as of 28 June 2026 (172 of 343
   seats), reached after the April 2025 election minority via five floor
   crossings and a sweep of three April 2026 by-elections — a route the
   Conservative Official Opposition under Pierre Poilievre contests as
@@ -95,7 +95,7 @@ executiveSnapshot_fr: >-
 
   2. ÉQUILIBRE POLITIQUE : Le gouvernement libéral dirigé par le premier
   ministre Mark Carney détient une majorité parlementaire fonctionnelle au 28
-  juin 2026 (173 sièges sur 343), atteinte après la minorité issue de l'élection
+  juin 2026 (172 sièges sur 343), atteinte après la minorité issue de l'élection
   d'avril 2025 grâce à cinq changements d'allégeance et aux trois élections
   partielles remportées en avril 2026; voie que l'Opposition officielle
   conservatrice dirigée par Pierre Poilievre dénonce comme illégitime. Cette
@@ -320,7 +320,7 @@ political_shockAbsorbers_en: >-
   [pbo-efo-jun2026][imf-can-2025-art4]. On the acceleration side, the principal
   political vulnerability is no longer a confidence-vote collapse but the
   durability and legitimacy of the majority itself: it rests on a thin margin
-  (173 of 343) and on floor crossings the opposition frames as illegitimate, so
+  (172 of 343) and on floor crossings the opposition frames as illegitimate, so
   defections, further vacancies, or sustained legitimacy attacks could narrow
   the government's freedom of action; and the TI CPI score of 75/100, in gradual
   decline since 2012, signals public-trust erosion that, if it accelerates,
@@ -343,7 +343,7 @@ political_shockAbsorbers_fr: >-
   structure de dette à détention nationale [pbo-efo-jun2026][imf-can-2025-art4].
   Du côté des accélérateurs d'instabilité, la principale vulnérabilité politique
   n'est plus l'effondrement d'un vote de confiance, mais la durabilité et la
-  légitimité de la majorité elle-même : elle repose sur une marge mince (173 sur
+  légitimité de la majorité elle-même : elle repose sur une marge mince (172 sur
   343) et sur des changements d'allégeance que l'opposition qualifie
   d'illégitimes, de sorte que des défections, de nouvelles vacances ou des
   attaques soutenues contre sa légitimité pourraient restreindre la marge de
@@ -521,31 +521,31 @@ situation_en: |-
         },
         {
           "date": "March – June 2025",
-          "what": "Sectoral tariffs were layered on under United States Section 232 authority: 25% on steel and aluminum (March), raised to 50% (June); 25% on vehicles not built in the United States (April) [us-section-232].",
+          "what": "Sectoral tariffs were layered on under United States Section 232 authority: 25% on steel and aluminum in March, raised to 50% in June, and 25% on vehicles not built in the United States in April [us-section-232].",
           "changed": "Imposed durable, CUSMA-immune tariffs on precisely Canada's resource and manufacturing export base."
         },
         {
           "date": "1 September 2025",
           "what": "Canada unilaterally removed most counter-tariffs, retaining them only on steel, aluminum, and automobiles [fin-canada-counter-tariffs].",
-          "changed": "Ended the reciprocal-escalation phase; Canada de-escalated without securing corresponding relief."
+          "changed": "Ended the reciprocal-escalation phase. The government framed the move as protecting the ~85% of Canada–US trade that remained tariff-free and sustaining negotiations; opposition parties and affected industries characterized it as unilateral concession without corresponding US relief."
         },
         {
           "date": "October 2025",
-          "what": "The United States imposed 35% tariffs on softwood lumber and 25% on certain wood products; trade negotiations were terminated [us-section-232].",
-          "changed": "Removed the formal channel for tariff relief, leaving exporters without near-term visibility."
+          "what": "The United States imposed a 10% Section 232 tariff on softwood lumber effective 14 October, stacked on long-standing anti-dumping and countervailing duties whose combined rate reached more than 35% under the sixth administrative review [gac-softwood-recent]; trade negotiations were terminated.",
+          "changed": "Layered a new national-security tariff onto an existing trade-remedy regime, bringing the combined burden on Canadian softwood to roughly 45% under two separate legal authorities, neither shielded by CUSMA."
         },
         {
           "date": "24 February 2026",
-          "what": "The 35% tariff on non-CUSMA-compliant goods was replaced by a 10% global tariff including Canada. The emergency-powers tariffs were ruled unlawful, and refunds became available to affected Canadian importers from April 2026 [us-cbp-tariff-notice-2026].",
+          "what": "The 35% tariff on non-CUSMA-compliant goods was replaced by a 10% Section 122 surcharge including Canada; the emergency-powers tariffs were ruled unlawful, and refunds became available to affected Canadian importers from April 2026 [us-cbp-tariff-notice-2026].",
           "changed": "Materially reduced the headline tariff rate while leaving sectoral tariffs untouched."
         },
         {
           "date": "1 July 2026",
-          "what": "The mandatory six-year CUSMA review deadline passed without agreement to extend the agreement to 2042 [gac-cusma-review].",
+          "what": "At the trilateral CUSMA joint review, the United States confirmed it was not currently willing to automatically extend the agreement to 2042 [gac-cusma-review][cusma-leblanc-statement-2026].",
           "changed": "CUSMA remains in force but shifts to annual reviews until its scheduled 2036 expiry, placing North American free trade in permanent renegotiation."
         }
       ],
-      "currentState": "CUSMA-compliant goods remain tariff-free; non-compliant goods face 10%. The durable damage is sectoral — 50% on steel, aluminum and copper, 25% on vehicles, 35% on softwood lumber — under authority CUSMA does not shield. Across eighteen months the regime shifted repeatedly in rate, scope, and legal basis; the instability, independent of any rate, has left exporters without a stable basis on which to plan."
+      "currentState": "CUSMA-compliant goods remain tariff-free; non-compliant goods face a 10% Section 122 surcharge whose statutory authority expires in late July 2026 and which is itself under legal challenge. The durable damage is sectoral — 50% on steel, aluminum and copper, 25% on vehicles, and a combined Section 232 tariff and anti-dumping/countervailing duty burden on softwood lumber reaching roughly 45% (the trade-remedy component itself under review) — under authorities CUSMA does not shield. Across eighteen months the regime shifted repeatedly in rate, scope, and legal basis; the instability, independent of any rate, has left exporters without a stable basis on which to plan."
     },
     {
       "thread": "Defence commitment",
@@ -553,7 +553,7 @@ situation_en: |-
       "events": [
         {
           "date": "24–25 June 2025",
-          "what": "At the NATO summit in The Hague, Canada and all allies committed to spending 5% of GDP on defence by 2035 (3.5% core defence, 1.5% defence-related infrastructure), superseding the 2% benchmark [nato-hague-declaration-2025].",
+          "what": "At the NATO summit in The Hague, Canada and all allies committed to spending 5% of GDP on defence by 2035, comprising 3.5% core defence and 1.5% defence-related infrastructure, superseding the 2% benchmark [nato-hague-declaration-2025].",
           "changed": "Committed Canada to its largest sustained defence-spending trajectory since the Cold War; the Parliamentary Budget Officer estimates roughly $33.5 billion per year in additional expenditure, with no government projection of the pathway published [pbo-nato-5-percent-2026]."
         }
       ]
@@ -569,7 +569,7 @@ situation_en: |-
         },
         {
           "date": "28 April 2025",
-          "what": "The Liberals won 169 of 343 seats, forming a minority government (subsequently a majority — see Power Structure) [elections-canada-2025].",
+          "what": "The Liberals won 169 of 343 seats, forming a minority government, subsequently reaching a majority as described in Power Structure [elections-canada-2025].",
           "changed": "Conferred an electoral mandate for a confrontational trade posture and accelerated defence spending."
         }
       ]
@@ -577,71 +577,72 @@ situation_en: |-
   ]
 situation_fr: |-
   [
-    {
-      "thread": "Rupture commerciale avec les États-Unis",
-      "status": "en cours",
-      "events": [
-        {
-          "date": "4 février – 4 mars 2025",
-          "what": "Les États-Unis imposent des droits de douane de 25 % sur la quasi-totalité des produits canadiens (10 % sur l'énergie); le Canada riposte par des contre-tarifs de 25 % sur 30 G$ CA d'importations, portés par la suite à 155 G$ CA [fin-canada-counter-tariffs].",
-          "changed": "Fin de la relation commerciale de fait sans droits de douane en place depuis 1994, exposant environ 500 G$ d'échanges bilatéraux annuels à de nouveaux coûts."
-        },
-        {
-          "date": "Mars – juin 2025",
-          "what": "Des droits sectoriels s'ajoutent en vertu de l'article 232 de la loi américaine : 25 % sur l'acier et l'aluminium (mars), portés à 50 % (juin); 25 % sur les véhicules non construits aux États-Unis (avril) [us-section-232].",
-          "changed": "Des droits durables, non couverts par l'ACEUM, frappent précisément la base d'exportation des ressources et de la fabrication canadiennes."
-        },
-        {
-          "date": "1er septembre 2025",
-          "what": "Le Canada retire unilatéralement la plupart de ses contre-tarifs, les maintenant uniquement sur l'acier, l'aluminium et les automobiles [fin-canada-counter-tariffs].",
-          "changed": "Fin de la phase d'escalade réciproque; le Canada désescalade sans obtenir d'allègement correspondant."
-        },
-        {
-          "date": "Octobre 2025",
-          "what": "Les États-Unis imposent des droits de 35 % sur le bois d'œuvre résineux et de 25 % sur certains produits du bois; les négociations commerciales sont rompues [us-section-232].",
-          "changed": "Disparition du canal formel d'allègement tarifaire, privant les exportateurs de toute visibilité à court terme."
-        },
-        {
-          "date": "24 février 2026",
-          "what": "Le tarif de 35 % sur les produits non conformes à l'ACEUM est remplacé par un tarif mondial de 10 % incluant le Canada. Les droits imposés en vertu des pouvoirs d'urgence sont jugés illégaux et des remboursements deviennent accessibles aux importateurs canadiens à compter d'avril 2026 [us-cbp-tariff-notice-2026].",
-          "changed": "Réduction marquée du taux tarifaire principal, sans toucher aux droits sectoriels."
-        },
-        {
-          "date": "1er juillet 2026",
-          "what": "L'échéance de l'examen obligatoire de l'ACEUM après six ans passe sans accord pour prolonger l'entente jusqu'en 2042 [gac-cusma-review].",
-          "changed": "L'ACEUM demeure en vigueur mais passe à des examens annuels jusqu'à son expiration prévue en 2036, plaçant le libre-échange nord-américain en renégociation permanente."
-        }
-      ],
-      "currentState": "Les produits conformes à l'ACEUM demeurent exempts de droits; les produits non conformes sont assujettis à 10 %. Les dommages durables sont sectoriels — 50 % sur l'acier, l'aluminium et le cuivre, 25 % sur les véhicules, 35 % sur le bois d'œuvre — en vertu de pouvoirs que l'ACEUM ne protège pas. En dix-huit mois, le régime a changé à répétition de taux, de portée et de fondement juridique; cette instabilité, indépendamment de tout taux, prive les exportateurs de toute base stable de planification."
-    },
-    {
-      "thread": "Engagement en matière de défense",
-      "status": "juin 2025",
-      "events": [
-        {
-          "date": "24-25 juin 2025",
-          "what": "Au sommet de l'OTAN à La Haye, le Canada et l'ensemble des alliés s'engagent à consacrer 5 % du PIB à la défense d'ici 2035 (3,5 % pour la défense de base, 1,5 % pour les infrastructures connexes), remplaçant la cible de 2 % [nato-hague-declaration-2025].",
-          "changed": "Le Canada s'engage dans sa plus importante trajectoire soutenue de dépenses de défense depuis la guerre froide; le directeur parlementaire du budget estime les dépenses supplémentaires à environ 33,5 G$ par année, aucune projection gouvernementale du cheminement vers la cible n'ayant été publiée [pbo-nato-5-percent-2026]."
-        }
-      ]
-    },
-    {
-      "thread": "Changement de gouvernement",
-      "status": "mars – avril 2025",
-      "events": [
-        {
-          "date": "14 mars 2025",
-          "what": "Mark Carney est assermenté premier ministre, succédant à Justin Trudeau [pmo-swearing-in-2025].",
-          "changed": "Nouvelle direction et nouvelle posture de négociation au point le plus vif de la rupture commerciale."
-        },
-        {
-          "date": "28 avril 2025",
-          "what": "Les libéraux remportent 169 des 343 sièges et forment un gouvernement minoritaire (devenu majoritaire par la suite — voir Structure du pouvoir) [elections-canada-2025].",
-          "changed": "Mandat électoral conférant l'appui nécessaire à une posture commerciale de confrontation et à l'accélération des dépenses de défense."
-        }
-      ]
-    }
+  {
+    "thread": "Rupture commerciale avec les États-Unis",
+    "status": "en cours",
+    "events": [
+      {
+        "date": "4 février – 4 mars 2025",
+        "what": "Les États-Unis imposent des droits de douane de 25 % sur la quasi-totalité des produits canadiens (10 % sur l'énergie); le Canada riposte par des contre-mesures tarifaires de 25 % sur 30 G$ CA d'importations, portées par la suite à 155 G$ CA [fin-canada-counter-tariffs].",
+        "changed": "Fin de la relation commerciale de fait sans droits de douane en place depuis 1994, exposant environ 500 G$ d'échanges bilatéraux annuels à de nouveaux coûts."
+      },
+      {
+        "date": "mars – juin 2025",
+        "what": "Des droits sectoriels s'ajoutent en vertu de l'article 232 de la loi états-unienne : 25 % sur l'acier et l'aluminium en mars, portés à 50 % en juin, et 25 % sur les véhicules non construits aux États-Unis en avril [us-section-232].",
+        "changed": "Des droits durables, non couverts par l'ACEUM, frappent précisément la base d'exportation des ressources et de la fabrication canadiennes."
+      },
+      {
+        "date": "1er septembre 2025",
+        "what": "Le Canada retire unilatéralement la plupart de ses contre-mesures tarifaires, les maintenant uniquement sur l'acier, l'aluminium et les automobiles [fin-canada-counter-tariffs].",
+        "changed": "Fin de la phase d'escalade réciproque. Le gouvernement présente la mesure comme un moyen de protéger la part de commerce Canada–États-Unis (environ 85 %) demeurée exempte de droits de douane et de préserver les négociations en cours; les partis d'opposition et les industries touchées la qualifie de concession unilatérale sans contrepartie."
+      },
+      {
+        "date": "octobre 2025",
+        "what": "Les États-Unis imposent un droit de 10 % en vertu de l'article 232 sur le bois d'œuvre résineux, en vigueur le 14 octobre, s'ajoutant aux droits antidumping et compensateurs de longue date dont le taux combiné atteint plus de 35 % au titre du sixième examen administratif [gac-softwood-recent]; les négociations commerciales sont rompues.",
+        "changed": "Un nouveau droit de douane de "sécurité nationale" se superpose à un régime de recours commerciaux existant, portant le fardeau combiné sur le bois d'œuvre canadien à environ 45 % en vertu de deux pouvoirs juridiques distincts, ni l'un ni l'autre protégé par l'ACEUM."
+      },
+      {
+        "date": "24 février 2026",
+        "what": "Le droit de douane de 35 % sur les produits non conformes à l'ACEUM est remplacé par une surtaxe de 10 % en vertu de l'article 122 incluant le Canada; les droits imposés en vertu des pouvoirs d'urgence sont jugés illégaux et des remboursements deviennent accessibles aux importateurs canadiens à compter d'avril 2026 [us-cbp-tariff-notice-2026].",
+        "changed": "Réduction marquée du taux tarifaire principal, sans toucher aux droits sectoriels."
+      },
+      {
+        "date": "1er juillet 2026",
+        "what": "Lors de l'examen conjoint trilatéral de l'ACEUM, les États-Unis confirment qu'ils ne sont pas actuellement disposés à prolonger automatiquement l'entente jusqu'en 2042 [gac-cusma-review][cusma-leblanc-statement-2026].",
+        "changed": "L'ACEUM demeure en vigueur mais passe à des examens annuels jusqu'à son expiration prévue en 2036, plaçant le libre-échange nord-américain en renégociation permanente."
+      }
+    ],
+    "currentState": "Les produits conformes à l'ACEUM demeurent exempts de droits; les produits non conformes sont assujettis à une surtaxe de 10 % en vertu de l'article 122, dont le fondement légal expire à la fin de juillet 2026 et qui fait elle-même l'objet d'une contestation judiciaire. Les dommages durables sont sectoriels: 50 % sur l'acier, l'aluminium et le cuivre, 25 % sur les véhicules, et un fardeau combiné de droits de douane de l'article 232 et de droits antidumping et compensateurs sur le bois d'œuvre atteignant environ 45 % (la composante de recours commerciaux étant elle-même en cours de révision); en vertu de pouvoirs que l'ACEUM ne protège pas. En dix-huit mois, le régime a changé à répétition de taux, de portée et de fondement juridique; cette instabilité, indépendamment de tout taux, prive les exportateurs de toute base stable de planification."
+  },
+  {
+    "thread": "Engagement en matière de défense",
+    "status": "juin 2025",
+    "events": [
+      {
+        "date": "24-25 juin 2025",
+        "what": "Au sommet de l'OTAN à La Haye, le Canada et l'ensemble des alliés s'engagent à consacrer 5 % du PIB à la défense d'ici 2035, soit 3,5 % pour la défense de base et 1,5 % pour les infrastructures connexes, remplaçant la cible de 2 % [nato-hague-declaration-2025].",
+        "changed": "Le Canada s'engage dans sa plus importante trajectoire soutenue de dépenses de défense depuis la guerre froide; la directrice parlementaire du budget estime les dépenses supplémentaires à environ 33,5 G$ par année, aucune trajectoire gouvernementale vers la cible n'ayant été publiée [pbo-nato-5-percent-2026]."
+      }
+    ]
+  },
+  {
+    "thread": "Changement de gouvernement",
+    "status": "mars – avril 2025",
+    "events": [
+      {
+        "date": "14 mars 2025",
+        "what": "Mark Carney est assermenté premier ministre, succédant à Justin Trudeau [pmo-swearing-in-2025].",
+        "changed": "Nouvelle direction et nouvelle posture de négociation au point le plus vif de la rupture commerciale."
+      },
+      {
+        "date": "28 avril 2025",
+        "what": "Les libéraux remportent 169 des 343 sièges et forment un gouvernement minoritaire, devenu majoritaire par la suite comme décrit dans Structure du pouvoir [elections-canada-2025].",
+        "changed": "Mandat électoral conférant l'appui nécessaire à une posture commerciale de confrontation et à l'accélération des dépenses de défense."
+      }
+    ]
+  }
   ]
+situation_lastUpdated: '2026-07-15'
 economy_macroReality_en: >-
   Canada is a high-income, advanced service economy (services dominate output
   and employment) resting on a large, geographically concentrated
@@ -1866,7 +1867,7 @@ risks_en: |-
     },
     {
       "title": "Thin Majority Erosion and Legitimacy Contestation",
-      "trigger": "Liberal defections, by-election losses, or further vacancies erode the narrow majority (173 of 343); sustained opposition and provincial framing of the floor-crossing majority as illegitimate constrains the government's effective mandate",
+      "trigger": "Liberal defections, by-election losses, or further vacancies erode the narrow majority (172 of 343); sustained opposition and provincial framing of the floor-crossing majority as illegitimate constrains the government's effective mandate",
       "probability": "Med",
       "impact": "Med",
       "timeHorizon": "6–24 months",
@@ -2866,6 +2867,29 @@ sources: |-
       "desc": "Elections Canada's official results publication for the April 2025 federal general election, with validated seat counts and poll-by-poll returns for every electoral district.",
       "descFr": "Publication officielle des résultats d'Élections Canada pour l'élection générale fédérale d'avril 2025, avec les sièges validés et les résultats par bureau de scrutin pour chaque circonscription.",
       "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "gac-softwood-recent",
+      "name": "Global Affairs Canada – Frequently asked questions – Softwood lumber",
+      "nameFr": "Affaires mondiales Canada — Foire aux questions – Bois d'œuvre résineux",
+      "url": "https://www.international.gc.ca/controls-controles/softwood-bois_oeuvre/other-autres/faq.aspx?lang=eng",
+      "desc": "Global Affairs Canada reference page on United States softwood lumber trade measures, tracking anti-dumping and countervailing duty rates by administrative review and the added Section 232 tariff.",
+      "descFr": "Page de référence d'Affaires mondiales Canada sur les mesures commerciales américaines visant le bois d'œuvre résineux, suivant les taux des droits antidumping et compensateurs par examen administratif et le droit additionnel de l'article 232.",
+      "accessDate": "2026-07-15",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "cusma-leblanc-statement-2026",
+      "name": "Global Affairs Canada – Statement by Minister LeBlanc following trilateral CUSMA joint review meeting",
+      "nameFr": "Affaires mondiales Canada — Déclaration du ministre LeBlanc à la suite de la réunion trilatérale d'examen conjoint de l'ACEUM",
+      "url": "https://www.canada.ca/en/global-affairs/news/2026/07/statement-by-minister-leblanc-following-trilateral-cusma-joint-review-meeting.html",
+      "desc": "Official statement from the minister responsible for Canada-U.S. trade following the July 2026 trilateral Free Trade Commission meeting that constituted the agreement's first mandatory joint review.",
+      "descFr": "Déclaration officielle du ministre responsable du commerce canado-américain à la suite de la réunion trilatérale de la Commission du libre-échange de juillet 2026, qui constituait le premier examen conjoint obligatoire de l'accord.",
+      "publicationDate": "2026-07-01",
+      "accessDate": "2026-07-15",
       "confidence": "High",
       "citationType": "Fact"
     }

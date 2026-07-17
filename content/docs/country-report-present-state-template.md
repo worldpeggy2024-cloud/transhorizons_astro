@@ -122,8 +122,15 @@ The `situation` field is populated in its own pass, after the peer sections exis
 **Cross-referencing:** where an event supersedes or contradicts a claim in a peer section, the peer section must be **corrected** — the situation field does not exist to hold contradictions, it exists to surface them.
 
 **Storage.** `situation_en` / `situation_fr` hold the threads as JSON-in-text (the same convention as actors/risks): an array of
-`{ "thread": "…", "events": [{ "date": "…", "what": "… [source-id]", "changed": "… [source-id]" }], "currentState": "…" }`
-(`currentState` optional). The renderer displays threads natively and falls back to plain prose for legacy content.
+`{ "thread": "…", "status": "…", "events": [{ "date": "…", "what": "… [source-id]", "changed": "… [source-id]" }], "currentState": "…" }`
+(`status` and `currentState` optional — `status` is a short activity label shown beside the thread title, e.g. "ongoing" / "June 2025").
+Each language field carries its OWN complete array (monolingual keys — no `_en`/`_fr` suffixes inside the JSON); both languages hold the
+same threads in the same order citing the same ids. `date` is the display label, bolded by the renderer. Every event needs at least one
+inline `[source-id]` in `what` or `changed` (validators reject uncited events). **Array order is semantic** — threads by recency of last
+activity, events chronologically forward; renderers and validators never re-sort. The renderer displays threads natively and falls back
+to plain prose for legacy content. A sibling field `situation_lastUpdated` (YYYY-MM-DD) records when the events were last verified —
+maintained MANUALLY in Keystatic (the situation layer is the most time-sensitive part of the report) and shown in the section's header
+band; the situation pass does not set it.
 
 ---
 
@@ -149,8 +156,8 @@ Do **not** write the claim with weaker sourcing or vague attribution — omit it
 
 ### Hard gates (blocking)
 
-- **Validator:** `npm run validate:country -- content/countries/[CODE]/` (single) /
-  `npm run validate:countries` (all). Fails on orphan citations, orphan sources, homepage URLs, denied low-reliability domains, missing fields, **and EN/FR citation-parity gaps (now spanning society IDs).**
+- **Validator (`npm run validate:country -- content/countries/[CODE]/` single / `npm run validate:countries` all):** FAILS on orphan citations (a `[id]` with no source), homepage URLs, denied low-reliability domains, missing source fields, duplicate source ids, and unparseable JSON-in-text blocks. WARNS (does not fail) on an **orphan source** — a source never cited, reported peer-grouped; event sources are accepted-but-not-required — a **missing situator OPENER**, and undated / untranslated / time-unbound entries.
+- **Apply gate (`apply`, before the YAML is written):** additionally HARD-ERRORS on a **missing situator OPENER** on any of the five enforced fields, on any narrative field lacking a citation, and on malformed actors / risks / scorecard. Regeneration is cheap at the gate; a missed opener reaching the YAML costs a manual retrofit. EN/FR citation parity is a **manual** check — enforced by neither.
 - **Research quality bar:** validation is necessary, not sufficient. If the validator passes but the content fails `research-quality-bar.md` (present-state layer), the content is still rejected.
 
 ---
@@ -364,7 +371,7 @@ SOURCING RULES:
 - Source descriptions describe the source, not the data. desc states what the source IS — its scope, role, and authoritative status — in roughly 20 to 30 words: the kind of source (national inventory report, live standings page, court ruling, official assessment), its coverage domain, and any bias or reservation. It does NOT state the specific numbers or claims the prose will draw from it; factual claims live in the prose, cited to the source ID. Diagnostic test: if a fact in the desc could be silently edited to a new value while the prose still cites the ID unchanged, the fact does not belong in desc — it is a claim, and claims live in prose only. (A title translation or transliteration in desc is descriptive metadata about the source's identity, not a claim.)
 
 WRITING RULES:
-- Situating sentences: Every peer opening and every field with a baseline meaning opens with a one-sentence situator before operational detail. The situator is orientation, not history — one short line. If it runs longer than a sentence, it has failed. The five REQUIRED openers are marked "OPENER (required)" in the sections below.
+- Situating sentences: Every peer opening and every field with a baseline meaning opens with a one-sentence situator before operational detail. The situator is orientation, not history — one short line. If it runs longer than a sentence, it has failed. The five REQUIRED openers are marked "OPENER (required)" in the sections below, and they are ENFORCED, not merely requested: the apply gate rejects a field whose opener is missing (a hard error) and the standalone validator flags it (a warning), via a heuristic signature check on the field's opening vocabulary. The five are political.constitutionalSubstrate, economy.macroReality, territory.geography (the territory-peer opener), territory.climate, and society.demographics — situation has no opener (it is a list of events, not a field with a baseline meaning).
 - Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only. All subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. The report is written for a reader who does not work in the sector, and the extra half-line per acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt from this rule when they appear as data-field identifiers; when such a code appears in the reader-facing prose itself, spell it: "Canada," not "CAN."
 
 SOURCE PRIORITY: Statistics [Country], IMF, World Bank, BIS, OECD for macro/finance. V-Dem, Freedom House, WJP for governance. ACLED, SIPRI, ICG for security/conflict. Transparency International for corruption.

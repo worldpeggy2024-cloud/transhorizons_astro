@@ -35,8 +35,7 @@
   underscores: <section>_<subsection>_<lang>, e.g. political_powerStructure_en. actors/risks/sources are
   JSON-in-text blocks in the same file — KEEP them JSON-in-text (decided; do not convert to structured
   fields).
-- Authoring: TWO-PHASE deep research only (Pass A = sources; Pass B = prose citing only approved IDs), via
-  scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
+- Authoring: TWO-PHASE deep research only (Pass A = sources; Pass B = prose citing only approved IDs), via scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
   do not treat existing single-phase country content as ground truth. Only DEU and BRA are two-phase so far.
   Tool-agnostic: Perplexity is one sourcing option, not hard-wired.
 - Sections, in order: executiveSnapshot, political.* (incl. political_constitutionalSubstrate), economy.*,

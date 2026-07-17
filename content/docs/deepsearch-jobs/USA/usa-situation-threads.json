@@ -1,0 +1,312 @@
+{
+  "situation_en": [
+    {
+      "thread": "Executive power and the courts",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "A wave of Day-One executive orders restructured federal priorities across immigration, the civil service, trade, foreign policy and government organisation [trump-inauguration-eos-jan-2025].",
+          "changed": "Set the pattern for the term: policy made by executive instrument first, litigated afterwards."
+        },
+        {
+          "date": "2025-03-14",
+          "what": "The Alien Enemies Act of 1798 was invoked against Venezuelan nationals alleged to be affiliated with Tren de Aragua — the first peacetime use of the statute in United States history [alien-enemies-act-deportations-mar-2025].",
+          "changed": "A federal judge appointed by the President found the invocation unlawful on 1 May 2025; the removals had already taken place. Established that an adverse ruling need not reverse the fact on the ground [alien-enemies-act-deportations-mar-2025]."
+        },
+        {
+          "date": "2026-06-29",
+          "what": "The Supreme Court held in Trump v. Slaughter that for-cause removal protections for independent multimember agencies violate the separation of powers, overruling Humphrey's Executor (1935) [trump-v-slaughter-2026]. The same day, in Trump v. Cook, it declined to extend that holding to the Federal Reserve [trump-v-cook-2026].",
+          "changed": "Presidential removal power now extends across the executive branch, with the central bank carved out as the sole exception."
+        },
+        {
+          "date": "2026-06-30",
+          "what": "The Supreme Court struck down Executive Order 14160 in Trump v. Barbara, holding that children born in the United States to parents unlawfully or temporarily present are citizens at birth under the Fourteenth Amendment [trump-v-barbara-2026] [scotus-birthright-citizenship-jun-2026].",
+          "changed": "Ended seventeen months of nationwide litigation and reaffirmed the Citizenship Clause against executive reinterpretation."
+        }
+      ],
+      "currentState": "Within thirty-six hours the Court expanded executive power over the administrative state and denied it over constitutional citizenship. The constitutional substrate is in motion in both directions at once; whether operative power tracks the constitutional allocation is contested and is not resolved here."
+    },
+    {
+      "thread": "War with Iran",
+      "events": [
+        {
+          "date": "2025-06-21",
+          "what": "United States airstrikes destroyed Iran's primary enrichment infrastructure at Natanz, Fordow and Isfahan — the first combat use of the GBU-57 Massive Ordnance Penetrator [us-strikes-iran-nuclear-jun-2025].",
+          "changed": "The International Atomic Energy Agency assessed that Iran could resume enrichment within months, leaving the strategic problem unresolved [us-strikes-iran-nuclear-jun-2025]."
+        },
+        {
+          "date": "2026-02-28",
+          "what": "Operation Epic Fury opened a coordinated United States–Israeli campaign against Iran's missile infrastructure and the Islamic Revolutionary Guard Corps — the largest United States combat deployment in the Middle East in over two decades [operation-epic-fury-iran-feb-2026].",
+          "changed": "The Strait of Hormuz was temporarily closed, disrupting global oil shipping. Because the United States is a net energy exporter, the shock transmits asymmetrically: it raises domestic energy costs and headline inflation while transferring revenue to domestic producers — a far smaller net drag than on the import-dependent economies of Europe and East Asia [operation-epic-fury-iran-feb-2026]."
+        }
+      ],
+      "currentState": "The campaign is ongoing. Iran's nuclear and conventional capabilities were substantially degraded, though assessments of the degree remain contested. Neither operation was preceded by a congressional authorization for the use of military force."
+    },
+    {
+      "thread": "Tariffs and the trade-authority question",
+      "events": [
+        {
+          "date": "2025-04-02",
+          "what": "The 'Liberation Day' executive order raised the average effective United States tariff rate from roughly 2.5 percent to an estimated 27 percent — the highest in over a century [liberation-day-tariffs-apr-2025].",
+          "changed": "Triggered global trade-war dynamics and a sharp equity sell-off; the higher country-specific rates were paused within a week [liberation-day-tariffs-apr-2025]."
+        },
+        {
+          "date": "2026-02-20",
+          "what": "The Supreme Court held in Learning Resources, Inc. v. Trump that the International Emergency Economic Powers Act cannot authorize tariffs — tariffs being a branch of the taxing power vested in Congress [scotus-ieepa-tariffs-ruling-feb-2026].",
+          "changed": "The Liberation Day regime and the trafficking-related tariffs were struck down. The administration pivoted within days to Section 122 of the Trade Act of 1974, and to expanded Section 232 and Section 301 investigations [scotus-ieepa-tariffs-ruling-feb-2026]."
+        }
+      ],
+      "currentState": "The legal instrument changed; the effective exposure of trading partners did not. Sectoral tariffs resting on other statutory authorities were never reached by the ruling. Section 122 carries statutory time limits that the invalidated emergency authority did not, which makes the durability of the current regime — not its existence — the live question."
+    },
+    {
+      "thread": "Military operations in the Western Hemisphere",
+      "events": [
+        {
+          "date": "2025-09-02",
+          "what": "The first known United States lethal strike on an alleged drug-trafficking vessel in the Caribbean; Operation Southern Spear was formally launched in November under Southern Command, eventually deploying some 15,000 personnel [operation-southern-spear-sep-2025].",
+          "changed": "Expanded United States military operational authority into the Western Hemisphere to a peacetime scale not previously reached."
+        },
+        {
+          "date": "2026-01-03",
+          "what": "Operation Absolute Resolve captured Venezuelan President Nicolás Maduro in Caracas and transported him to New York to face narco-terrorism charges — the first United States military capture of a sitting head of state in the Western Hemisphere [us-capture-maduro-venezuela-jan-2026].",
+          "changed": "Created a constitutional and governance vacuum in Venezuela and drew broad international condemnation, including from the United Nations and China [us-capture-maduro-venezuela-jan-2026]."
+        }
+      ],
+      "currentState": "Ongoing. The operation established, in practice, that the removal of a hemispheric head of state is within the range of United States executive action."
+    },
+    {
+      "thread": "Expeditionary operations outside declared war",
+      "events": [
+        {
+          "date": "2025-03-15",
+          "what": "Operation Rough Rider conducted 339 air and naval strikes against Houthi targets in Yemen over 53 days, ending on 6 May under an Oman-brokered ceasefire [operation-rough-rider-yemen-2025].",
+          "changed": "Ended without achieving its stated objective of permanently halting Red Sea attacks; independent monitors documented at least 238 civilian deaths [operation-rough-rider-yemen-2025]."
+        },
+        {
+          "date": "2025-12-19",
+          "what": "Operation Hawkeye Strike escalated direct combat operations against the Islamic State in Syria [operation-hawkeye-strike-syria-dec-2025].",
+          "changed": "Renewed sustained United States combat action in Syria under the Inherent Resolve framework."
+        },
+        {
+          "date": "2025-12-25",
+          "what": "Africa Command conducted airstrikes against Islamic State camps in Sokoto State, Nigeria — the first known United States military combat action on Nigerian soil [us-nigeria-airstrike-dec-2025].",
+          "changed": "Extended the geographic footprint of United States counter-Islamic State operations into West Africa."
+        }
+      ],
+      "currentState": "Ongoing across three theatres. Taken with Iran and the Caribbean, the United States conducted combat operations in at least six countries within sixteen months, none under a congressional authorization for the use of military force."
+    },
+    {
+      "thread": "Federal capacity and the fiscal position",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "Executive Order 14158 established the Department of Government Efficiency [doge-federal-workforce-cuts-2025].",
+          "changed": "Over 2025, more than 317,000 federal employees left federal service — a 13.7 percent decline from September 2024 — through layoffs, early retirements, deferred resignations and hiring freezes: the largest contraction of the federal civilian workforce in modern history, reshaping agency capacity across defence, health, education and regulatory bodies [doge-federal-workforce-cuts-2025]."
+        },
+        {
+          "date": "2025-07-04",
+          "what": "The One Big Beautiful Bill Act was signed into law — the largest single tax-and-spending package in at least a decade [one-big-beautiful-bill-jul-2025].",
+          "changed": "Permanently extended the 2017 tax cuts, cut Medicaid and food-assistance spending, and was scored by the Congressional Budget Office at a net deficit increase of $3.4 trillion over ten years [one-big-beautiful-bill-jul-2025]."
+        },
+        {
+          "date": "2025-10-01",
+          "what": "The federal government shut down for 43 days — the longest in United States history — ending on 12 November via a short-term continuing resolution [us-govt-shutdown-oct-nov-2025].",
+          "changed": "Furloughed hundreds of thousands of workers and disrupted services, research grants and federal payments; the underlying appropriations impasse was deferred, not resolved [us-govt-shutdown-oct-nov-2025]."
+        }
+      ],
+      "currentState": "The state's administrative capacity was reduced by roughly one in seven civilian employees in a single year, while its fiscal commitments expanded. The two move in opposite directions."
+    },
+    {
+      "thread": "Disaster exposure",
+      "events": [
+        {
+          "date": "2025-01-08",
+          "what": "Federal Major Disaster Declaration DR-4856-CA was issued for fourteen wildfires across the Los Angeles metropolitan area and San Diego County — among the costliest in California history [la-wildfires-jan-2025].",
+          "changed": "Triggered the largest federal disaster-assistance mobilisation in California in years and accelerated the national debate over the Federal Emergency Management Agency's adequacy and over insurance-market viability in wildfire-prone states [la-wildfires-jan-2025]."
+        }
+      ],
+      "currentState": "The insurance-availability question raised by the January 2025 fires remains open and is a live constraint on habitability in the exposed western states."
+    }
+  ],
+  "situation_fr": [
+    {
+      "thread": "Pouvoir exécutif et tribunaux",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "Une vague de décrets présidentiels du premier jour a restructuré les priorités fédérales en matière d'immigration, de fonction publique, de commerce, de politique étrangère et d'organisation gouvernementale [trump-inauguration-eos-jan-2025].",
+          "changed": "A fixé le schéma du mandat : la politique se fait d'abord par instrument exécutif, et se plaide ensuite."
+        },
+        {
+          "date": "2025-03-14",
+          "what": "L'Alien Enemies Act de 1798 a été invoqué contre des ressortissants vénézuéliens présumés affiliés au Tren de Aragua — premier usage en temps de paix de cette loi dans l'histoire des États-Unis [alien-enemies-act-deportations-mar-2025].",
+          "changed": "Un juge fédéral nommé par le président a déclaré l'invocation illégale le 1er mai 2025 ; les expulsions avaient déjà eu lieu. A établi qu'une décision défavorable ne renverse pas nécessairement le fait accompli [alien-enemies-act-deportations-mar-2025]."
+        },
+        {
+          "date": "2026-06-29",
+          "what": "La Cour suprême a jugé dans Trump v. Slaughter que les protections contre la révocation sans motif des agences indépendantes multimembres violent la séparation des pouvoirs, renversant Humphrey's Executor (1935) [trump-v-slaughter-2026]. Le même jour, dans Trump v. Cook, elle a refusé d'étendre cette solution à la Réserve fédérale [trump-v-cook-2026].",
+          "changed": "Le pouvoir présidentiel de révocation s'étend désormais à l'ensemble de la branche exécutive, la banque centrale constituant la seule exception."
+        },
+        {
+          "date": "2026-06-30",
+          "what": "La Cour suprême a invalidé le décret 14160 dans Trump v. Barbara, jugeant que les enfants nés aux États-Unis de parents en situation irrégulière ou temporaire sont citoyens à la naissance en vertu du quatorzième amendement [trump-v-barbara-2026] [scotus-birthright-citizenship-jun-2026].",
+          "changed": "A mis fin à dix-sept mois de contentieux national et réaffirmé la clause de citoyenneté contre une réinterprétation par l'exécutif."
+        }
+      ],
+      "currentState": "En trente-six heures, la Cour a élargi le pouvoir exécutif sur l'État administratif et le lui a refusé sur la citoyenneté constitutionnelle. Le substrat constitutionnel est en mouvement dans les deux sens à la fois ; la question de savoir si le pouvoir effectif suit l'allocation constitutionnelle est contestée et n'est pas tranchée ici."
+    },
+    {
+      "thread": "Guerre avec l'Iran",
+      "events": [
+        {
+          "date": "2025-06-21",
+          "what": "Des frappes aériennes américaines ont détruit les principales installations d'enrichissement iraniennes à Natanz, Fordow et Ispahan — premier emploi au combat du GBU-57 Massive Ordnance Penetrator [us-strikes-iran-nuclear-jun-2025].",
+          "changed": "L'Agence internationale de l'énergie atomique a estimé que l'Iran pourrait reprendre l'enrichissement en quelques mois, laissant le problème stratégique irrésolu [us-strikes-iran-nuclear-jun-2025]."
+        },
+        {
+          "date": "2026-02-28",
+          "what": "L'opération Epic Fury a lancé une campagne américano-israélienne coordonnée contre l'infrastructure de missiles iranienne et le Corps des gardiens de la révolution islamique — le plus important déploiement de combat américain au Moyen-Orient depuis plus de vingt ans [operation-epic-fury-iran-feb-2026].",
+          "changed": "Le détroit d'Ormuz a été temporairement fermé, perturbant le transport maritime mondial de pétrole. Les États-Unis étant exportateurs nets d'énergie, le choc se transmet de façon asymétrique : il augmente les coûts énergétiques intérieurs et l'inflation globale tout en transférant des revenus aux producteurs nationaux — un frein net bien moindre que pour les économies importatrices d'Europe et d'Asie de l'Est [operation-epic-fury-iran-feb-2026]."
+        }
+      ],
+      "currentState": "La campagne se poursuit. Les capacités nucléaires et conventionnelles de l'Iran ont été substantiellement dégradées, mais les évaluations du degré restent contestées. Aucune des deux opérations n'a été précédée d'une autorisation du Congrès pour le recours à la force militaire."
+    },
+    {
+      "thread": "Droits de douane et la question de l'autorité commerciale",
+      "events": [
+        {
+          "date": "2025-04-02",
+          "what": "Le décret dit du « jour de la libération » a porté le taux tarifaire effectif moyen des États-Unis d'environ 2,5 % à un niveau estimé de 27 % — le plus élevé depuis plus d'un siècle [liberation-day-tariffs-apr-2025].",
+          "changed": "A déclenché une dynamique de guerre commerciale mondiale et une forte correction boursière ; les taux les plus élevés par pays ont été suspendus en une semaine [liberation-day-tariffs-apr-2025]."
+        },
+        {
+          "date": "2026-02-20",
+          "what": "La Cour suprême a jugé dans Learning Resources, Inc. v. Trump que l'International Emergency Economic Powers Act ne peut autoriser des droits de douane — ceux-ci relevant du pouvoir de taxation dévolu au Congrès [scotus-ieepa-tariffs-ruling-feb-2026].",
+          "changed": "Le régime du « jour de la libération » et les droits liés au trafic ont été invalidés. L'administration s'est repliée en quelques jours sur l'article 122 du Trade Act de 1974 et sur des enquêtes élargies au titre des articles 232 et 301 [scotus-ieepa-tariffs-ruling-feb-2026]."
+        }
+      ],
+      "currentState": "L'instrument juridique a changé ; l'exposition effective des partenaires commerciaux, non. Les droits sectoriels reposant sur d'autres fondements législatifs n'ont jamais été atteints par l'arrêt. L'article 122 comporte des limites temporelles statutaires que l'autorité d'urgence invalidée n'avait pas, ce qui fait de la durabilité du régime actuel — et non de son existence — la question vive."
+    },
+    {
+      "thread": "Opérations militaires dans l'hémisphère occidental",
+      "events": [
+        {
+          "date": "2025-09-02",
+          "what": "Première frappe létale américaine connue contre un navire soupçonné de trafic de drogue dans les Caraïbes ; l'opération Southern Spear a été officiellement lancée en novembre sous le commandement Sud, déployant à terme quelque 15 000 militaires [operation-southern-spear-sep-2025].",
+          "changed": "A élargi l'autorité opérationnelle militaire américaine dans l'hémisphère occidental à une échelle jamais atteinte auparavant en temps de paix."
+        },
+        {
+          "date": "2026-01-03",
+          "what": "L'opération Absolute Resolve a capturé le président vénézuélien Nicolás Maduro à Caracas et l'a transféré à New York pour répondre d'accusations de narcoterrorisme — première capture militaire américaine d'un chef d'État en exercice dans l'hémisphère occidental [us-capture-maduro-venezuela-jan-2026].",
+          "changed": "A créé un vide constitutionnel et de gouvernance au Venezuela et suscité une large condamnation internationale, notamment des Nations unies et de la Chine [us-capture-maduro-venezuela-jan-2026]."
+        }
+      ],
+      "currentState": "En cours. L'opération a établi, en pratique, que le renversement d'un chef d'État de l'hémisphère fait partie du champ d'action de l'exécutif américain."
+    },
+    {
+      "thread": "Opérations expéditionnaires hors guerre déclarée",
+      "events": [
+        {
+          "date": "2025-03-15",
+          "what": "L'opération Rough Rider a mené 339 frappes aériennes et navales contre des cibles houthies au Yémen en 53 jours, prenant fin le 6 mai à la faveur d'un cessez-le-feu négocié par Oman [operation-rough-rider-yemen-2025].",
+          "changed": "S'est achevée sans atteindre son objectif déclaré de mettre fin durablement aux attaques en mer Rouge ; des observateurs indépendants ont documenté au moins 238 morts civils [operation-rough-rider-yemen-2025]."
+        },
+        {
+          "date": "2025-12-19",
+          "what": "L'opération Hawkeye Strike a intensifié les opérations de combat directes contre l'État islamique en Syrie [operation-hawkeye-strike-syria-dec-2025].",
+          "changed": "A relancé une action de combat américaine soutenue en Syrie dans le cadre d'Inherent Resolve."
+        },
+        {
+          "date": "2025-12-25",
+          "what": "Le commandement Afrique a mené des frappes aériennes contre des camps de l'État islamique dans l'État de Sokoto, au Nigéria — première action de combat américaine connue sur le sol nigérian [us-nigeria-airstrike-dec-2025].",
+          "changed": "A étendu l'empreinte géographique des opérations américaines contre l'État islamique en Afrique de l'Ouest."
+        }
+      ],
+      "currentState": "En cours sur trois théâtres. Avec l'Iran et les Caraïbes, les États-Unis ont mené des opérations de combat dans au moins six pays en seize mois, aucune sous une autorisation du Congrès pour le recours à la force militaire."
+    },
+    {
+      "thread": "Capacité fédérale et position budgétaire",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "Le décret 14158 a créé le Department of Government Efficiency [doge-federal-workforce-cuts-2025].",
+          "changed": "Au cours de 2025, plus de 317 000 employés fédéraux ont quitté la fonction publique fédérale — une baisse de 13,7 % par rapport à septembre 2024 — par licenciements, retraites anticipées, démissions différées et gels d'embauche : la plus forte contraction de la fonction publique civile fédérale de l'histoire moderne, remodelant la capacité des agences dans la défense, la santé, l'éducation et la réglementation [doge-federal-workforce-cuts-2025]."
+        },
+        {
+          "date": "2025-07-04",
+          "what": "La One Big Beautiful Bill Act a été promulguée — le plus important ensemble fiscal et budgétaire depuis au moins une décennie [one-big-beautiful-bill-jul-2025].",
+          "changed": "A pérennisé les baisses d'impôts de 2017, réduit les dépenses de Medicaid et d'aide alimentaire, et a été chiffrée par le Congressional Budget Office à une augmentation nette du déficit de 3 400 milliards de dollars sur dix ans [one-big-beautiful-bill-jul-2025]."
+        },
+        {
+          "date": "2025-10-01",
+          "what": "Le gouvernement fédéral a été paralysé pendant 43 jours — la plus longue fermeture de l'histoire des États-Unis — prenant fin le 12 novembre par une résolution de financement provisoire [us-govt-shutdown-oct-nov-2025].",
+          "changed": "A mis en congé forcé des centaines de milliers d'employés et perturbé les services, les subventions de recherche et les paiements fédéraux ; l'impasse budgétaire de fond a été reportée, non résolue [us-govt-shutdown-oct-nov-2025]."
+        }
+      ],
+      "currentState": "La capacité administrative de l'État a été réduite d'environ un employé civil sur sept en une seule année, tandis que ses engagements budgétaires s'élargissaient. Les deux évoluent en sens contraire."
+    },
+    {
+      "thread": "Exposition aux catastrophes",
+      "events": [
+        {
+          "date": "2025-01-08",
+          "what": "La déclaration fédérale de catastrophe majeure DR-4856-CA a été émise pour quatorze incendies de forêt dans l'agglomération de Los Angeles et le comté de San Diego — parmi les plus coûteux de l'histoire de la Californie [la-wildfires-jan-2025].",
+          "changed": "A déclenché la plus vaste mobilisation d'aide fédérale en Californie depuis des années et accéléré le débat national sur l'adéquation de la Federal Emergency Management Agency et sur la viabilité du marché de l'assurance dans les États exposés aux incendies [la-wildfires-jan-2025]."
+        }
+      ],
+      "currentState": "La question de la disponibilité de l'assurance soulevée par les incendies de janvier 2025 reste ouverte et constitue une contrainte vive sur l'habitabilité des États de l'Ouest exposés."
+    }
+  ],
+  "peerCorrections": [
+    {
+      "field": "economy.macroReality",
+      "status": "DONE",
+      "note": "Opener added (was missing entirely — started cold on GDP). Hormuz→energy→inflation channel added, with the net-energy-exporter asymmetry."
+    },
+    {
+      "field": "capacity.permitting",
+      "status": "DONE",
+      "note": "Rewritten from the four orphaned permitting sources. Approval is not the binding constraint; interconnection is."
+    },
+    {
+      "field": "capacity.delivery",
+      "status": "TODO",
+      "note": "Must carry the DOGE contraction: 317,000 federal employees, 13.7% of the civilian workforce, in one year. The state's ability to deliver was cut by roughly one in seven staff. This is the single largest capacity fact of the period and belongs in the capacity peer, not only in situation. [doge-federal-workforce-cuts-2025]"
+    },
+    {
+      "field": "economy.externalVulnerability",
+      "status": "TODO",
+      "note": "Written as though the tariff regime is stable. The legal instrument changed in February 2026; effective exposure did not. Section 122 carries time limits the invalidated authority did not. [scotus-ieepa-tariffs-ruling-feb-2026]"
+    },
+    {
+      "field": "security.diplomacy",
+      "status": "TODO",
+      "note": "Describes Iran as a 'risk driver' and a 'regional flashpoint'. The United States is at war with Iran and has been since 28 February 2026. Rewrite as current conflict, not posture. [operation-epic-fury-iran-feb-2026]"
+    },
+    {
+      "field": "security.internal",
+      "status": "TODO",
+      "note": "Missing the Alien Enemies Act removals and the domestic-enforcement/protest dimension. Also: six countries, sixteen months, no congressional authorization — that belongs in the security peer."
+    },
+    {
+      "field": "political.powerStructure",
+      "status": "CHECK",
+      "note": "powerLocus is UNRESOLVED. Six combat theatres without congressional authorization is direct evidence bearing on that contest and should be named as such."
+    },
+    {
+      "field": "territory.climate",
+      "status": "TODO",
+      "note": "Opener still missing — first sentence is 'Observed warming: the contiguous U.S.' No baseline before the change. This is the named trap and it failed."
+    },
+    {
+      "field": "society.demographics",
+      "status": "TODO",
+      "note": "Opener missing — opens on the population count. Needs the settler-immigrant-built framing sentence."
+    },
+    {
+      "field": "territory.geography",
+      "status": "TODO",
+      "note": "Opener missing — opens on land area. Needs: continental, two oceans, two land neighbours, non-contiguous states and territories."
+    }
+  ]
+}

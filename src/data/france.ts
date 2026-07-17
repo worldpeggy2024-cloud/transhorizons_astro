@@ -8,6 +8,12 @@
 
 export interface AnalysisContent {
   lastUpdated: string;
+  /**
+   * When the situation section's events were last verified/updated (YYYY-MM-DD).
+   * Maintained MANUALLY in Keystatic (the situation layer is the most
+   * time-sensitive part of the report). Shown in the Situation header band.
+   */
+  situationUpdated?: string;
   scorecard: {
     eliteCohesion: 'High' | 'Med' | 'Low';
     /** Second of the two-cohesions split (distinct from eliteCohesion). Optional until a country is regenerated with a society pass. */

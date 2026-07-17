@@ -1,4 +1,3 @@
-code: USA
 nameEn: United States
 nameFr: États-Unis
 lastUpdated: '2026-07-13'
@@ -8,86 +7,1322 @@ scorecard_securityLoyalty: High
 scorecard_economicPressure: Med
 scorecard_protestCapacity: Med
 scorecard_institutionalResilience: Med
-executiveSnapshot_en: |-
-  1. REGIME TYPE: Federal presidential constitutional republic with elected executive (President Trump, second term, inaugurated January 20, 2025); power won via Electoral College majority; held through constitutional term and unified Republican congressional majority [constitution-usa-1787] [trump-inauguration-eos-jan-2025].
-  2. POLITICAL EQUILIBRIUM: Unified government — Republicans hold 53/100 Senate seats [senate-party-division] and approximately 220/435 House seats [house-party-breakdown]; opposition Democrats hold 47 Senate and ~213 House seats; presidential legitimacy formally established but contested by ~50% of the electorate; Freedom House scored the U.S. 81/100 in 2026 — down 3 points from 2024, the steepest sustained decline of any country over 2005–2025 [freedom-house-2026].
-  3. ECONOMIC MODEL: The world's largest services-dominated economy; private consumption and knowledge-intensive sectors (technology, finance, healthcare) drive output; real GDP grew 2.2% in 2025 and 2.0% SAAR in Q1 2026; federal deficit projected at ~$1.9T for FY 2026; debt/GDP ~100%; all three major rating agencies have now downgraded U.S. sovereign debt, with Moody's cut to Aa1 in May 2025 [bea-gdp-2025-advance] [bea-gdp-q1-2026] [cbo-outlook-2026-2036] [moodys-downgrade-2025].
-  4. PHYSICAL BASE: Continent-scale federal state with the world's most diverse critical-mineral endowment and net energy exporter status [usgs-mcs-2026] [eia-aeo-2026]; principal climate exposure is compounding drought-wildfire-heat in the western interior under RCP 4.5, with the Colorado River system under structural deficit and Atlantic/Gulf coastlines facing intensified hurricane risk [nca5]; climate adaptation capacity is adequate nationally in fiscal terms but the current administration has materially reduced federal coordination infrastructure [cat-usa-2026].
-  5. EXECUTION CAPACITY: Materially degraded; DOGE-driven federal workforce reduction — the largest in modern history — has reduced implementation capacity across defense, health, environment, and regulatory agencies [doge-federal-workforce-cuts-2025]; 43-day shutdown compounded disruption [us-govt-shutdown-oct-nov-2025]; average federal EIS review: ~4.5 years [ceq-eis-timelines-2025]; permitting remains the single most binding structural constraint on the energy transition.
-  6. SOCIAL STRUCTURE: Population ~340.1 million (July 2025), moderately aging (median age ~38.9), 83% urban [census-population-estimates-2025] [un-wpp-2024]; principal cleavages (race, class, partisan identity) are REINFORCING — not cross-cutting — along the same geographic and cultural fault lines; public trust in federal government at 17% overall (9% Democrats, 26% Republicans), a near-historic low with partisan-sorting bias [pew-trust-government-2025] [census-2020-decennial-race].
-  7. TOP 3 RISKS (6–18 MONTHS): (a) Iran war escalation / Strait of Hormuz closure — High probability, High impact [icg-iran-us-trigger-list]; (b) Fiscal cliff / CBO debt spiral — Med probability, High impact [cbo-outlook-2026-2036] [moodys-downgrade-2025]; (c) Multi-theater military overstretch — Med probability, High impact [sipri-milex-2025].
-  8. TOP 3 WATCH ITEMS (4–12 WEEKS): (a) Iran ceasefire collapse and third-round strikes (July 11, 2026 confirmed 140-target strike) [operation-epic-fury-iran-feb-2026]; (b) Oman Strait of Hormuz shipping-route proposal outcome [icg-iran-us-trigger-list]; (c) July 30 BEA Q2 2026 GDP advance estimate — first read on whether tariff-and-war drag deepened.
-  9. EXTERNAL DEPENDENCIES: Trade partner concentration in Canada (#1 goods partner), Mexico (#2), China (#3), and EU [ustr-trade-policy-2025]; net international investment position deeply negative [bea-international-transactions-2025]; U.S. dollar reserve currency status provides structural external financing buffer; energy is a surplus (net exporter) [eia-aeo-2026]; critical mineral processing dependency on China (cobalt 76%, manganese 100%, graphite 100%) [usgs-mcs-2026].
-  10. SECURITY POSTURE: No domestic insurgency; ACLED-tracked political violence elevated but sub-insurgency [acled-usa-conflict-data]; $954B defense budget / 33% of global military spending [sipri-milex-2025]; nuclear stockpile ~3,700 deployed and reserve warheads; simultaneously prosecuting Operation Epic Fury (Iran), Absolute Resolve (Venezuela), Hawkeye Strike (Syria), Southern Spear (Caribbean), AFRICOM IS Nigeria — the broadest simultaneous combat deployment since WWII [operation-epic-fury-iran-feb-2026] [us-capture-maduro-venezuela-jan-2026].
-  11. DIPLOMATIC ORIENTATION: Permanent UN Security Council member; NATO treaty backbone; shifting to transactional bilateralism; key strain points with Iran (at war), Venezuela (Maduro captured), China (trade/Taiwan), Canada and Mexico (tariff friction) [state-dept-treaties-in-force-2025] [sipri-milex-2025]; withdrew from Paris Agreement; UN condemned Venezuela operation [us-capture-maduro-venezuela-jan-2026].
-  12. DATA CONFIDENCE: Political (HIGH — official live sources, verified July 13, 2026) [senate-party-division] [house-party-breakdown]; Economic (HIGH — BEA, CBO, Fed primary sources) [bea-gdp-q1-2026]; Military/Security (HIGH — SIPRI, CENTCOM, CRS) [sipri-milex-2025]; Climate/Territory (HIGH — NCA5, EIA AEO, CAT) [nca5] [eia-aeo-2026]; Social Cohesion (HIGH with partisan-sorting bias flag) [pew-trust-government-2025]; Democracy indices (HIGH, two independent instruments) [freedom-house-2026] [vdem-democracy-report-2026].
-  13. BASELINE CHARACTERIZATION: As of July 13, 2026, the United States is a constitutionally intact but institutionally strained federal republic prosecuting the most geographically dispersed concurrent military operations in its history, governed by a unified executive-legislative Republican administration operating under an active Supreme Court constraint, with a permanently locked fiscal structure, near-historic institutional trust deficits, and a democratic health trajectory rated in decline by every independent index.
-executiveSnapshot_fr: |-
-  1. TYPE DE RÉGIME : République constitutionnelle fédérale présidentielle avec exécutif élu (président Trump, second mandat, inauguré le 20 janvier 2025); pouvoir acquis via la majorité du collège électoral; maintenu par un mandat constitutionnel et une majorité républicaine au Congrès [constitution-usa-1787] [trump-inauguration-eos-jan-2025].
-  2. ÉQUILIBRE POLITIQUE : Gouvernement unifié — les républicains détiennent 53/100 sièges au Sénat [senate-party-division] et environ 220/435 à la Chambre [house-party-breakdown]; Freedom House a attribué un score de 81/100 en 2026, en baisse de 3 points — le déclin soutenu le plus prononcé de tout pays sur 2005–2025 [freedom-house-2026].
-  3. MODÈLE ÉCONOMIQUE : Plus grande économie de services au monde; PIB réel en hausse de 2,2 % en 2025 et de 2,0 % en rythme annuel au T1 2026; déficit fédéral projeté à ~1 900 milliards de dollars pour l'exercice 2026; dette/PIB ~100 %; Moody's a abaissé la note souveraine américaine à Aa1 en mai 2025 [bea-gdp-2025-advance] [bea-gdp-q1-2026] [cbo-outlook-2026-2036] [moodys-downgrade-2025].
-  4. BASE PHYSIQUE : État fédéral à l'échelle d'un continent avec le patrimoine en minéraux critiques le plus diversifié au monde et le statut d'exportateur net d'énergie [usgs-mcs-2026] [eia-aeo-2026]; principale exposition climatique : sécheresse-incendies-chaleur dans l'intérieur occidental sous RCP 4.5; l'administration actuelle a matériellement réduit l'infrastructure de coordination fédérale sur le climat [cat-usa-2026].
-  5. CAPACITÉ D'EXÉCUTION : Matériellement dégradée; la réduction des effectifs fédéraux par le DOGE a réduit la capacité d'exécution des agences de défense, santé, environnement et réglementation [doge-federal-workforce-cuts-2025]; durée moyenne de révision d'une EIS fédérale : ~4,5 ans [ceq-eis-timelines-2025].
-  6. STRUCTURE SOCIALE : Population ~340,1 millions (juillet 2025), vieillissement modéré (âge médian ~38,9 ans), 83 % urbaine [census-population-estimates-2025]; les clivages principaux (race, classe, identité partisane) sont RENFORCÉS; confiance publique dans le gouvernement fédéral à 17 % au total (9 % démocrates, 26 % républicains), proche d'un creux historique [pew-trust-government-2025].
-  7. TOP 3 RISQUES (6–18 MOIS) : (a) Escalade de la guerre en Iran / fermeture du détroit d'Ormuz — probabilité Élevée, impact Élevé [icg-iran-us-trigger-list]; (b) Précipice fiscal / spirale de la dette CBO — probabilité Moyenne, impact Élevé [cbo-outlook-2026-2036]; (c) Surmenage militaire multi-théâtres — probabilité Moyenne, impact Élevé [sipri-milex-2025].
-  8. TOP 3 POINTS DE SURVEILLANCE (4–12 SEMAINES) : (a) Effondrement du cessez-le-feu en Iran et troisième série de frappes (140 cibles confirmées le 11 juillet 2026) [operation-epic-fury-iran-feb-2026]; (b) Résultat de la proposition omanaise sur les routes de navigation dans le détroit d'Ormuz; (c) Estimation préliminaire du PIB T2 2026 du BEA (30 juillet 2026) — première lecture sur la profondeur de l'impact tarifaire et de guerre.
-  9. DÉPENDANCES EXTERNES : Concentration des partenaires commerciaux au Canada (#1 marchandises), Mexique (#2), Chine (#3) et UE [ustr-trade-policy-2025]; position extérieure nette profondément négative [bea-international-transactions-2025]; excédent énergétique (exportateur net) [eia-aeo-2026]; dépendance au traitement des minéraux critiques par la Chine (cobalt 76 %, manganèse 100 %, graphite 100 %) [usgs-mcs-2026].
-  10. POSTURE DE SÉCURITÉ : Pas d'insurrection intérieure; violence politique suivie par l'ACLED élevée mais sous le seuil insurrectionnel [acled-usa-conflict-data]; budget de défense de 954 milliards de dollars / 33 % des dépenses militaires mondiales [sipri-milex-2025]; opérations simultanées Epic Fury (Iran), Absolute Resolve (Venezuela), Hawkeye Strike (Syrie), Southern Spear (Caraïbes), AFRICOM Nigéria [operation-epic-fury-iran-feb-2026].
-  11. ORIENTATION DIPLOMATIQUE : Membre permanent du CSNU; épine dorsale de l'OTAN; transition vers le bilatéralisme transactionnel; points de tension principaux avec l'Iran (en guerre), le Venezuela (Maduro capturé), la Chine (commerce/Taïwan), le Canada et le Mexique [state-dept-treaties-in-force-2025]; retrait de l'Accord de Paris; l'ONU a condamné l'opération au Venezuela [us-capture-maduro-venezuela-jan-2026].
-  12. CONFIANCE DANS LES DONNÉES : Politique (ÉLEVÉE) [senate-party-division] [house-party-breakdown]; Économique (ÉLEVÉE) [bea-gdp-q1-2026]; Militaire/Sécurité (ÉLEVÉE) [sipri-milex-2025]; Climatique/Territoire (ÉLEVÉE) [nca5] [eia-aeo-2026]; Cohésion sociale (ÉLEVÉE avec avertissement de biais partisan) [pew-trust-government-2025]; Indices de démocratie (ÉLEVÉE, deux instruments indépendants) [freedom-house-2026] [vdem-democracy-report-2026].
-  13. CARACTÉRISATION DE L'ÉTAT DE BASE : Au 13 juillet 2026, les États-Unis sont une république fédérale constitutionnellement intacte mais institutionnellement sous tension, menant les opérations militaires simultanées géographiquement les plus dispersées de leur histoire, gouvernée par une administration républicaine unifiée opérant sous la contrainte active de la Cour suprême, avec une structure fiscale définitivement verrouillée, des déficits de confiance institutionnelle proches de niveaux historiques, et une trajectoire de santé démocratique en déclin selon chaque indice indépendant.
-political_powerStructure_en: 'The United States operates under a presidential constitutional system established by the Constitution of 1787, in which executive and legislative powers are separately held and may be controlled by different parties [constitution-usa-1787]. The executive is held by President Donald Trump (Republican), re-elected November 2024 and inaugurated January 20, 2025, for a second four-year term [trump-inauguration-eos-jan-2025]. Legislative control is unified: Republicans hold the majority in both chambers of the 119th Congress, making the current configuration a unified government [senate-party-division] [house-party-breakdown]. In the United States Senate (100 seats), Republicans hold 53 seats and Democrats hold 47 seats as of July 13, 2026 [senate-party-division]. In the United States House of Representatives (435 seats), Republicans hold the majority with approximately 220 seats to Democrats'' 213 seats, with 2 vacancies, as of July 13, 2026 [house-party-breakdown]. Security forces — uniformed military and federal law enforcement — are constitutionally subject to civilian command; the renaming of the Department of Defense as the Department of War under the Trump second term signals an assertive posture, but the chain of command is formally intact [us-capture-maduro-venezuela-jan-2026]. Judicial independence is structurally enshrined but operationally contested: the 6–3 conservative Supreme Court has both expanded executive immunity in Trump v. United States (2024) and constrained executive trade authority in Learning Resources, Inc. v. Trump (2026) [scotus-ieepa-tariffs-ruling-feb-2026] [trump-v-usa-2024]. Media independence is formally protected under the First Amendment; in practice, the media landscape is sharply polarized and several major outlets have faced regulatory pressure [freedom-house-2026]. The World Justice Project (WJP) Rule of Law Index 2025 ranked the United States 27th out of 143 countries [wjp-rule-of-law-2025-usa]. Freedom House assigned the United States a Global Freedom Score of 81/100 in 2026, down 3 points from 2024, with the U.S. recording the steepest sustained decline of any country over 2005–2025 [freedom-house-2026]. Whether operative power tracks the constitutional allocation is contested: the Trump administration has claimed expanded executive authority via the unitary executive theory and the use of emergency powers; the Supreme Court has repeatedly adjudicated these claims, resolving some while leaving the broader contest unresolved [crs-congress-gov].'
-political_powerStructure_fr: 'Les États-Unis fonctionnent sous un système constitutionnel présidentiel établi par la Constitution de 1787, dans lequel les pouvoirs exécutif et législatif sont distincts et peuvent être contrôlés par des partis différents [constitution-usa-1787]. L''exécutif est détenu par le président Donald Trump (républicain), réélu en novembre 2024 et inauguré le 20 janvier 2025 pour un second mandat de quatre ans [trump-inauguration-eos-jan-2025]. Le contrôle législatif est unifié : les républicains détiennent la majorité dans les deux chambres du 119e Congrès, constituant un gouvernement unifié [senate-party-division] [house-party-breakdown]. Au Sénat américain (100 sièges), les républicains détiennent 53 sièges et les démocrates 47 au 13 juillet 2026 [senate-party-division]. À la Chambre des représentants (435 sièges), les républicains détiennent la majorité avec environ 220 sièges contre 213 aux démocrates, avec 2 sièges vacants [house-party-breakdown]. Les forces de sécurité sont formellement soumises au commandement civil; le renommage du ministère de la Défense en ministère de la Guerre signale une posture assertive [us-capture-maduro-venezuela-jan-2026]. L''indépendance judiciaire est structurellement consacrée mais opérationnellement contestée : la Cour suprême a à la fois élargi l''immunité exécutive dans Trump c. États-Unis (2024) et contraint l''autorité commerciale exécutive dans Learning Resources, Inc. c. Trump (2026) [scotus-ieepa-tariffs-ruling-feb-2026]. Freedom House a attribué aux États-Unis un score de liberté mondiale de 81/100 en 2026, en baisse de 3 points par rapport à 2024 [freedom-house-2026]. Le WJP a classé les États-Unis 27e sur 143 pays dans l''Indice de l''état de droit 2025 [wjp-rule-of-law-2025-usa].'
-political_stabilityDrivers_en: 'Regime legitimacy rests on electoral mandate, constitutional continuity, and historically robust institutional inertia. Trump won a second term with clear electoral college margins in November 2024 [trump-inauguration-eos-jan-2025]. Armed forces loyalty to civilian command has held despite institutional friction over DOGE-driven workforce reductions in the Department of War and the deployment tempo across multiple simultaneous theaters [sipri-milex-2025] [operation-epic-fury-iran-feb-2026]. Business elite alignment is divided: major financial and technology sector actors have generally accommodated the administration on deregulation and tax policy via the OBBBA, while export-oriented manufacturers remain exposed to tariff regime uncertainty following the IEEPA ruling [scotus-ieepa-tariffs-ruling-feb-2026] [one-big-beautiful-bill-jul-2025]. The Republican unified majority in Congress provides legislative cohesion for the administration''s agenda, with intra-party dissenters in the Senate (53–47 margin) representing the principal legislative constraint [senate-party-division].'
-political_stabilityDrivers_fr: 'La légitimité du régime repose sur le mandat électoral, la continuité constitutionnelle et une inertie institutionnelle historiquement robuste. Trump a remporté un second mandat avec des marges claires au collège électoral en novembre 2024 [trump-inauguration-eos-jan-2025]. La loyauté des forces armées au commandement civil s''est maintenue malgré les frictions institutionnelles liées aux réductions d''effectifs par le DOGE et au rythme de déploiement sur plusieurs théâtres simultanés [sipri-milex-2025] [operation-epic-fury-iran-feb-2026]. L''alignement des élites économiques est divisé : les acteurs financiers et technologiques ont globalement soutenu l''administration sur la déréglementation, tandis que les industriels exportateurs restent exposés à l''incertitude tarifaire [scotus-ieepa-tariffs-ruling-feb-2026] [one-big-beautiful-bill-jul-2025].'
-political_shockAbsorbers_en: 'Constitutional separation of powers provides the primary institutional shock absorber: an independent judiciary has checked multiple executive actions — immigration enforcement (Alien Enemies Act invocation), trade authority (IEEPA tariffs), and birthright citizenship — within an 18-month window [alien-enemies-act-deportations-mar-2025] [scotus-ieepa-tariffs-ruling-feb-2026] [scotus-birthright-citizenship-jun-2026]. Federal reserve independence and the depth of U.S. capital markets cushion economic shocks. The factors that could accelerate instability include: the administration''s normalization of emergency-powers use without declared war, the unprecedented pace of federal workforce reduction under DOGE which erodes long-term implementation capacity, the structural fiscal lock-in from the OBBBA which constrains future spending flexibility, partisan-sorted public trust at historic lows (17% overall trusting the federal government in September 2025, with only 9% of Democrats and 26% of Republicans trusting it) [pew-trust-government-2025], and the simultaneous commitment of military resources across Iran, Venezuela, Yemen, Syria, and Nigeria, raising force-overstretching risk.'
-political_shockAbsorbers_fr: 'La séparation constitutionnelle des pouvoirs constitue le principal amortisseur institutionnel : la justice a contrôlé plusieurs actions exécutives dans une fenêtre de 18 mois [scotus-ieepa-tariffs-ruling-feb-2026] [scotus-birthright-citizenship-jun-2026]. L''indépendance de la Réserve fédérale et la profondeur des marchés de capitaux américains amortissent les chocs économiques. Les facteurs susceptibles d''accélérer l''instabilité comprennent : la normalisation des pouvoirs d''urgence sans guerre déclarée, la réduction sans précédent des effectifs fédéraux sous le DOGE, le verrouillage fiscal structurel de l''OBBBA, la confiance publique à des niveaux historiquement bas (17 % au total en septembre 2025, dont seulement 9 % chez les démocrates) [pew-trust-government-2025], et l''engagement militaire simultané sur plusieurs théâtres.'
-political_constitutionalSubstrate_en: 'The founding instrument is the Constitution of the United States (1787, in force March 4, 1789), which allocates enumerated powers to the federal government and reserves residual powers to the states and the people under the Tenth Amendment [constitution-usa-1787]. The doctrine of judicial review — whereby the Supreme Court may strike federal legislation — was established in Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803) [marbury-v-madison-1803]. The constitutional re-founding effected by the Reconstruction Amendments — the Thirteenth Amendment (1865, abolishing slavery), Fourteenth Amendment (1868, establishing equal protection and citizenship), and Fifteenth Amendment (1870, prohibiting racial discrimination in voting) — reset the original terms of the Union and remain the active substrate of contemporary civil rights litigation [reconstruction-amendments]. The substrate is IN MOTION on multiple axes simultaneously: (1) Presidential immunity — Trump v. United States (2024) extended broad immunity to official presidential acts, materially reallocating power toward the executive and away from criminal accountability [trump-v-usa-2024]; (2) Presidential removal authority — Trump v. Slaughter (2026, No. 25-332) and Trump v. Cook (2026, No. 25A312) further resolved contests over the president''s authority to remove independent agency officers [trump-v-slaughter-2026] [trump-v-cook-2026]; (3) Birthright citizenship — Trump v. Barbara (2026, No. 25-365) reaffirmed the 150-year-old jus soli doctrine and invalidated the executive order restricting birthright citizenship [scotus-birthright-citizenship-jun-2026]; (4) Administrative law — Loper Bright Enterprises v. Raimondo (2024) overruled Chevron deference, curtailing agency interpretive authority and returning statutory interpretation to courts [loper-bright-2024]; (5) IEEPA trade authority — Learning Resources, Inc. v. Trump (2026) held IEEPA does not authorize tariffs [scotus-ieepa-tariffs-ruling-feb-2026]; (6) Nationwide injunctions — Trump v. CASA, Inc. (2025) restricted federal courts'' authority to issue universal injunctions blocking executive action [trump-v-casa-2025]; (7) Watson v. Republican National Committee (2026) addressed ballot access and state election law under the Constitution [watson-v-rnc-2026]. Tribal sovereignty is a distinct pre-constitutional legal order: federally recognized tribes exercise inherent sovereignty over members and Indian country (defined under 18 U.S.C. § 1151) not derived from federal or state law but subject to congressional plenary power established under the Marshall Trilogy [marshall-trilogy]. The McGirt v. Oklahoma (2020) ruling affirmed a large portion of eastern Oklahoma as Indian country [mcgirt-v-oklahoma-2020]; Oklahoma v. Castro-Huerta (2022) partially narrowed its reach by affirming state criminal jurisdiction over non-Indians in Indian country [oklahoma-v-castro-huerta-2022]. Federal statutory authority over Indians is codified in United States Code (U.S.C.), Title 25 [usc-title-25]. The insular territorial order — governing Puerto Rico, Guam, the United States Virgin Islands (USVI), the Commonwealth of the Northern Mariana Islands (CNMI), and American Samoa — was established by the Insular Cases (1901) [insular-cases-1901], under which Congress holds plenary authority and the Constitution applies only selectively; residents hold no presidential vote and no voting representation in Congress, administered by the Department of the Interior''s Office of Insular Affairs (OIA) [doi-insular-affairs]. Voting rights substrate remains in motion: Shelby County v. Holder (2013) struck the coverage formula of the Voting Rights Act of 1965, removing federal preclearance for changes to voting laws in covered jurisdictions [shelby-county-2013]. Haaland v. Brackeen (2023) upheld the Indian Child Welfare Act under Congress''s plenary power over Indian affairs [haaland-v-brackeen-2023]. West Virginia v. Environmental Protection Agency (EPA) (2022) established the major questions doctrine, requiring clear congressional authorization for major agency rules [wv-v-epa-2022].
+executiveSnapshot_en: >-
+  1. REGIME TYPE: Federal presidential constitutional republic with elected
+  executive (President Trump, second term, inaugurated January 20, 2025); power
+  won via Electoral College majority; held through constitutional term and
+  unified Republican congressional majority [constitution-usa-1787]
+  [trump-inauguration-eos-jan-2025].
 
-The legal order is plural — held separately:
-- Statutory (federal): Federal statutory law applicable to all persons within United States jurisdiction; supreme over state law under the Supremacy Clause (Article VI) [constitution-usa-1787].
-- Statutory (state): Each of the 50 states maintains its own constitution, legislature, courts, and code, operating concurrently with federal law within powers reserved by the Tenth Amendment. Louisiana retains a civil-law tradition for private law matters.
-- Other (tribal): Federally recognized tribes exercise inherent pre-constitutional sovereignty over their members and Indian country (18 U.S.C. § 1151). Tribes hold written constitutions, statutory codes, and courts of record; this sovereignty is not derived from federal or state law but is subject to congressional plenary power [marshall-trilogy] [usc-title-25].
-- Other (insular territorial): Puerto Rico, Guam, USVI, CNMI, and American Samoa are governed under the Insular Cases regime, under which Congress holds plenary authority and the Constitution applies only selectively [insular-cases-1901] [doi-insular-affairs].'
-political_constitutionalSubstrate_fr: 'L''instrument fondateur est la Constitution des États-Unis (1787, en vigueur le 4 mars 1789), qui attribue des pouvoirs énumérés au gouvernement fédéral et réserve les pouvoirs résiduels aux États sous le Dixième Amendement [constitution-usa-1787]. La doctrine du contrôle judiciaire a été établie dans Marbury c. Madison (1803) [marbury-v-madison-1803]. Les Amendements de reconstruction — Treizième (1865), Quatorzième (1868), Quinzième (1870) — ont réinitialisé les termes originaux de l''Union [reconstruction-amendments]. Le substrat est EN MOUVEMENT sur plusieurs axes : immunité présidentielle (Trump c. États-Unis, 2024) [trump-v-usa-2024]; pouvoir de révocation présidentiel (Trump c. Slaughter, 2026; Trump c. Cook, 2026) [trump-v-slaughter-2026] [trump-v-cook-2026]; droit du sol (Trump c. Barbara, 2026) [scotus-birthright-citizenship-jun-2026]; droit administratif (Loper Bright, 2024, mettant fin à la déférence Chevron) [loper-bright-2024]; autorité tarifaire IEEPA (Learning Resources, 2026) [scotus-ieepa-tariffs-ruling-feb-2026]; injonctions nationales (Trump c. CASA, 2025) [trump-v-casa-2025]. La souveraineté tribale est un ordre juridique pré-constitutionnel distinct, établi par la Trilogie Marshall [marshall-trilogy], partiellement remodelé par McGirt (2020) [mcgirt-v-oklahoma-2020] et Castro-Huerta (2022) [oklahoma-v-castro-huerta-2022]. L''ordre territorial insulaire — régissant Porto Rico, Guam, les USVI, les CNMI et les Samoa américaines — a été établi par les Insular Cases (1901) [insular-cases-1901]; les résidents ne disposent pas du vote présidentiel ni de représentation avec droit de vote au Congrès [doi-insular-affairs].'
-situation_en: 'The January 20, 2025, inauguration of President Donald Trump for a second term was accompanied by a wave of Day-One executive orders restructuring federal priorities across immigration, civil service, trade, foreign policy, and government organization [trump-inauguration-eos-jan-2025]. Simultaneously, Executive Order 14158 established the Department of Government Efficiency (DOGE), initiating the largest contraction of the U.S. federal civilian workforce in modern history and reshaping agency capacity across defense, health, education, and regulatory bodies [doge-federal-workforce-cuts-2025]. On January 8, 2025, Federal Major Disaster Declaration DR-4856-CA was issued for the Southern California wildfires, triggering the largest federal disaster-assistance mobilization in California in years and accelerating national debate over the Federal Emergency Management Agency (FEMA)''s adequacy and insurance market viability in wildfire-prone states [la-wildfires-jan-2025]. The March 14, 2025, invocation of the Alien Enemies Act of 1798 against Venezuelan nationals allegedly affiliated with Tren de Aragua established a precedent for wartime deportation authority outside declared war, triggering extensive federal litigation; a Trump-appointed judge found the invocation ''unlawful'' on May 1, 2025 [alien-enemies-act-deportations-mar-2025]. Operation Rough Rider, the largest U.S. military air campaign in the Middle East since 2003 at that date, was conducted against Houthi forces in Yemen from March to May 2025, ended without permanently halting Red Sea attacks, and cost an estimated $1 billion [operation-rough-rider-yemen-2025]. The April 2, 2025 ''Liberation Day'' executive order raised the average effective U.S. tariff rate from approximately 2.5% to an estimated 27% — the highest level in over a century — triggering global trade-war dynamics [liberation-day-tariffs-apr-2025]; the Supreme Court''s February 20, 2026, ruling in Learning Resources, Inc. v. Trump (No. 24-1287) found the International Emergency Economic Powers Act (IEEPA) cannot authorize tariffs, striking down the Liberation Day regime and forcing the administration to pivot to Section 122 of the Trade Act of 1974 [scotus-ieepa-tariffs-ruling-feb-2026]. On June 21, 2025, U.S. airstrikes destroyed Iran''s primary enrichment infrastructure at Natanz, Fordow, and Isfahan — the ''Twelve-Day War'' — the first combat use of GBU-57 Massive Ordnance Penetrators (MOPs); the International Atomic Energy Agency (IAEA) assessed Iran could resume enrichment within months [us-strikes-iran-nuclear-jun-2025]. On July 4, 2025, the One Big Beautiful Bill Act (P.L. 119-21) was signed into law — the largest single tax-and-spending package in at least a decade — permanently locking in lower top-end tax rates and reshaping federal health and social-program eligibility for millions [one-big-beautiful-bill-jul-2025]. The 43-day federal government shutdown running October 1 to November 12, 2025 — the longest in U.S. history — furloughed hundreds of thousands of federal workers and disrupted services, research grants, and federal payments, resolved only via a short-term continuing resolution [us-govt-shutdown-oct-nov-2025]. Operation Southern Spear (OSS), launched September 2, 2025, expanded U.S. military operational authority into the Western Hemisphere at an unprecedented peacetime scale and preceded the January 3, 2026, Operation Absolute Resolve, which captured Venezuelan President Nicolás Maduro — the first-ever U.S. military capture of a sitting head of state in the Western Hemisphere — creating a constitutional and governance vacuum in Venezuela and drawing broad international condemnation including from the United Nations (UN) and China [operation-southern-spear-sep-2025] [us-capture-maduro-venezuela-jan-2026]. Operation Hawkeye Strike, launched December 19, 2025, marked renewed escalation of direct U.S. combat operations against the Islamic State (IS) in Syria under the umbrella of the long-running Operation Inherent Resolve [operation-hawkeye-strike-syria-dec-2025]. U.S. Africa Command (AFRICOM) airstrikes on December 25, 2025, against IS camps in Sokoto State, Nigeria, constituted the first known U.S. military combat action on Nigerian soil, expanding the geographic footprint of U.S. counter-IS operations into West Africa [us-nigeria-airstrike-dec-2025]. Operation Epic Fury, the coordinated U.S.-Israeli military campaign against Iran''s missile infrastructure and the Islamic Revolutionary Guard Corps (IRGC) launched February 28, 2026, represents the largest U.S. combat deployment in the Middle East in over two decades; it temporarily closed the Strait of Hormuz, disrupting global oil shipping, and substantially degraded Iran''s nuclear and conventional military capabilities, though contested assessments persist on the degree [operation-epic-fury-iran-feb-2026]. On June 30, 2026, the Supreme Court ruled 5–4 in Trump v. Barbara (No. 25-365) that Executive Order 14160''s restriction on birthright citizenship is unconstitutional under the Fourteenth Amendment''s Citizenship Clause, definitively striking down a core Trump immigration policy after 17 months of nationwide litigation [scotus-birthright-citizenship-jun-2026].'
-situation_fr: 'L''inauguration le 20 janvier 2025 du président Donald Trump pour un second mandat s''est accompagnée d''une vague de décrets exécutifs restructurant les priorités fédérales en matière d''immigration, de fonction publique, de commerce, de politique étrangère et d''organisation gouvernementale [trump-inauguration-eos-jan-2025]. Simultanément, le décret exécutif 14158 a créé le Department of Government Efficiency (DOGE), initiant la plus grande contraction de la main-d''œuvre civile fédérale américaine de l''histoire moderne et remodelant la capacité des agences dans les domaines de la défense, de la santé, de l''éducation et de la réglementation [doge-federal-workforce-cuts-2025]. Le 8 janvier 2025, la déclaration de catastrophe majeure DR-4856-CA a été émise pour les incendies de forêt du sud de la Californie, déclenchant la plus grande mobilisation d''aide aux sinistrés fédérale en Californie depuis des années [la-wildfires-jan-2025]. L''invocation le 14 mars 2025 de l''Alien Enemies Act de 1798 contre des ressortissants vénézuéliens a établi un précédent pour l''autorité d''expulsion en temps de guerre hors état de guerre déclaré; un juge nommé par Trump a jugé l''invocation « illégale » le 1er mai 2025 [alien-enemies-act-deportations-mar-2025]. L''opération Rough Rider contre les forces houthies au Yémen (mars–mai 2025) a pris fin sans atteindre son objectif déclaré, pour un coût estimé à 1 milliard de dollars [operation-rough-rider-yemen-2025]. Le décret du 2 avril 2025 (« Liberation Day ») a porté le taux tarifaire effectif moyen de 2,5 % à environ 27 % — le plus élevé depuis plus d''un siècle [liberation-day-tariffs-apr-2025]; le 20 février 2026, la Cour suprême a jugé dans Learning Resources, Inc. c. Trump (n° 24-1287) que l''IEEPA n''autorise pas l''imposition de droits de douane, invalidant ce régime tarifaire [scotus-ieepa-tariffs-ruling-feb-2026]. Le 21 juin 2025, des frappes aériennes américaines ont détruit l''infrastructure d''enrichissement nucléaire iranienne à Natanz, Fordow et Ispahan (« Guerre des douze jours »); l''AIEA a évalué qu''Iran pourrait reprendre l''enrichissement en quelques mois [us-strikes-iran-nuclear-jun-2025]. Le 4 juillet 2025, le One Big Beautiful Bill Act (P.L. 119-21) a été signé, verrouillant définitivement des taux d''imposition plus bas et remodelant l''admissibilité à des programmes sociaux pour des millions d''Américains [one-big-beautiful-bill-jul-2025]. La fermeture du gouvernement fédéral du 1er octobre au 12 novembre 2025 — la plus longue de l''histoire américaine (43 jours) — a mis en chômage technique des centaines de milliers de fonctionnaires [us-govt-shutdown-oct-nov-2025]. L''opération Southern Spear (OSS), lancée le 2 septembre 2025, a précédé l''opération Absolute Resolve du 3 janvier 2026, qui a capturé le président vénézuélien Nicolás Maduro — première capture militaire américaine d''un chef d''État en exercice dans l''hémisphère occidental — suscitant de larges condamnations internationales [operation-southern-spear-sep-2025] [us-capture-maduro-venezuela-jan-2026]. L''opération Hawkeye Strike (19 décembre 2025) a marqué une nouvelle escalade des opérations de combat américaines directes contre l''État islamique (EI) en Syrie [operation-hawkeye-strike-syria-dec-2025]. Les frappes de l''AFRICOM le 25 décembre 2025 au Nigeria ont constitué la première action de combat militaire américaine connue sur le sol nigérian [us-nigeria-airstrike-dec-2025]. L''opération Epic Fury (lancée le 28 février 2026), la plus grande opération de combat américaine au Moyen-Orient depuis plus de deux décennies, a temporairement fermé le détroit d''Ormuz et dégradé substantiellement les capacités nucléaires et militaires conventionnelles de l''Iran [operation-epic-fury-iran-feb-2026]. Le 30 juin 2026, la Cour suprême a jugé (5–4) dans Trump c. Barbara (n° 25-365) que la restriction du droit du sol par le décret exécutif 14160 était inconstitutionnelle en vertu du Quatorzième Amendement [scotus-birthright-citizenship-jun-2026].'
-economy_macroReality_en: 'The United States is a services-dominated, deeply diversified advanced economy — services account for the large majority of output and employment — sitting on a technology and financial sector of global systemic weight and, since 2019, a position as a net energy exporter that few other advanced economies share. Real GDP grew 2.2% in 2025 (year-over-year), decelerating from 2.8% in 2024 [bea-gdp-2025-advance]. Q4 2025 growth was 1.4% at a seasonally adjusted annual rate (SAAR), reflecting a federal government shutdown that the Bureau of Economic Analysis (BEA) estimated subtracted approximately 1.0 percentage point from Q4 real GDP growth [bea-gdp-2025-advance]. Q1 2026 real GDP grew 2.0% SAAR per the third BEA estimate, below the consensus forecast of 2.2%, partly reflecting tariff-front-loaded import surge and business investment hesitancy [bea-gdp-q1-2026]. The International Monetary Fund (IMF) April 2026 World Economic Outlook (WEO) projected U.S. growth to moderate further in 2026 under the weight of trade policy uncertainty, fiscal tightening from the expiration of temporary government spending, and elevated interest rates [imf-weo-april-2026]. Inflation as measured by the personal consumption expenditures (PCE) price index rose 2.9% in Q4 2025, above the Federal Reserve''s 2% target [bea-gdp-2025-advance]; the Congressional Budget Office (CBO) 2026–2036 baseline projected the federal deficit at $1.9 trillion for fiscal year (FY) 2026 and federal debt held by the public at approximately 100% of GDP [cbo-outlook-2026-2036]. The fiscal outlook was materially altered by the OBBBA (P.L. 119-21), which permanently extended lower top-end tax rates and added an estimated $3–4 trillion to the debt over ten years per CBO scoring [one-big-beautiful-bill-jul-2025] [cbo-outlook-2026-2036]. Moody''s Ratings downgraded U.S. sovereign debt from Aaa to Aa1 in May 2025, completing the trifecta of major-agency downgrades (S&P in 2011, Fitch in 2023, Moody''s in 2025), citing large fiscal deficits and rising interest burden [moodys-downgrade-2025]. The Federal Reserve (Fed) monetary policy stance as of July 2026 remained restrictive; the Fed''s July 2026 Monetary Policy Report assessed that inflation remained above target while the labor market softened, with June 2026 unemployment at 4.2% and only 57,000 jobs added [fed-monetary-policy-report-july-2026]. The Corruption Perceptions Index (CPI) 2025 (Transparency International) scored the U.S. at 65/100, reflecting governance concerns amplified by DOGE-driven institutional changes [transparency-cpi-2025]. One external channel is material and is not visible in the aggregate figures. The closure of the Strait of Hormuz during Operation Epic Fury disrupted global oil shipping [operation-epic-fury-iran-feb-2026]; because the United States is a net energy exporter, the shock transmits asymmetrically — raising domestic energy costs and therefore headline inflation, while simultaneously transferring revenue to domestic producers and improving the energy trade balance. The net effect on the United States is contractionary but far less so than for the import-dependent economies of Europe and East Asia, and the distributional split — cost to households, gain to a concentrated producer class — is not captured in the headline rate.'
-economy_macroReality_fr: 'Les États-Unis sont une économie avancée dominée par les services et profondément diversifiée — les services représentent la grande majorité de la production et de l''emploi — adossée à un secteur technologique et financier d''un poids systémique mondial et, depuis 2019, à une position d''exportateur net d''énergie que peu d''autres économies avancées partagent. Le PIB réel américain a progressé de 2,2 % en 2025 (en glissement annuel), décélérant par rapport aux 2,8 % de 2024 [bea-gdp-2025-advance]. Le T4 2025 a affiché une croissance de 1,4 % en rythme annuel désaisonnalisé, la fermeture du gouvernement ayant retranché environ 1,0 point de pourcentage [bea-gdp-2025-advance]. Le T1 2026 a enregistré une croissance de 2,0 % SAAR selon la troisième estimation du BEA [bea-gdp-q1-2026]. Le FMI a projeté en avril 2026 une modération de la croissance américaine sous l''effet de l''incertitude commerciale et des taux d''intérêt élevés [imf-weo-april-2026]. L''inflation PCE a atteint 2,9 % au T4 2025, au-dessus de la cible de 2 % de la Fed [bea-gdp-2025-advance]. Le CBO projette un déficit fédéral de 1 900 milliards de dollars pour l''exercice 2026 et une dette publique d''environ 100 % du PIB [cbo-outlook-2026-2036]. Moody''s a abaissé la note souveraine américaine de Aaa à Aa1 en mai 2025 [moodys-downgrade-2025]. Le taux de chômage s''est établi à 4,2 % en juin 2026 [fed-monetary-policy-report-july-2026]. Un canal externe est important et n''apparaît pas dans les chiffres agrégés. La fermeture du détroit d''Ormuz pendant l''opération Epic Fury a perturbé le transport maritime mondial de pétrole [operation-epic-fury-iran-feb-2026]; les États-Unis étant exportateurs nets d''énergie, le choc se transmet de façon asymétrique — il augmente les coûts énergétiques intérieurs, et donc l''inflation globale, tout en transférant des revenus aux producteurs nationaux et en améliorant la balance énergétique. L''effet net sur les États-Unis est contractionniste, mais bien moins que pour les économies importatrices d''Europe et d''Asie de l''Est, et le partage distributif — coût pour les ménages, gain pour une classe de producteurs concentrée — n''est pas saisi par le taux global.'
-economy_externalVulnerability_en: 'The United States runs a persistent current-account deficit: the goods trade deficit for 2025 reflects the impact of front-loaded tariff activity and import surges ahead of the Liberation Day regime [bea-trade-annual-2025]. The U.S. Trade Representative (USTR) 2025 Trade Policy Agenda identified China, the European Union (EU), Canada, and Mexico as the principal bilateral trade relationships [ustr-trade-policy-2025]. Following the IEEPA ruling, the administration shifted to Section 122 of the Trade Act of 1974 and expanded Section 301/232 investigations [scotus-ieepa-tariffs-ruling-feb-2026]. The U.S. net international investment position is deeply negative, reflecting decades of current account deficits financed by foreign capital inflows; Treasury bond holdings by China and Japan represent the principal sovereign-debt concentration risk [bea-international-transactions-2025]. The U.S. is not under an IMF program. U.S. dollar reserve currency status provides a structural cushion to external vulnerability that no other economy possesses at comparable scale. The Strait of Hormuz disruption from Operation Epic Fury temporarily elevated domestic energy costs [operation-epic-fury-iran-feb-2026] [eia-steo-july-2026].'
-economy_externalVulnerability_fr: 'Les États-Unis enregistrent un déficit courant persistant, reflétant l''impact des activités tarifaires en avance de phase et des afflux d''importations précédant le régime Liberation Day [bea-trade-annual-2025]. L''USTR a identifié la Chine, l''UE, le Canada et le Mexique comme principaux partenaires commerciaux bilatéraux [ustr-trade-policy-2025]. Après la décision IEEPA, l''administration s''est tournée vers la Section 122 du Trade Act de 1974 [scotus-ieepa-tariffs-ruling-feb-2026]. La position extérieure nette des États-Unis est profondément négative; les détentions chinoises et japonaises de bons du Trésor représentent le principal risque de concentration [bea-international-transactions-2025]. La perturbation du détroit d''Ormuz lors de l''opération Epic Fury a temporairement élevé les coûts énergétiques intérieurs [operation-epic-fury-iran-feb-2026].'
-economy_politicalEconomy_en: 'The OBBBA locks in a redistributive structure benefiting upper-income households through permanent tax rate reductions and benefit cuts to Medicaid and food assistance that affect lower-income populations [one-big-beautiful-bill-jul-2025]. The Federal Reserve''s Distributional Financial Accounts show that the wealthiest 1% of households hold approximately 30% of total household wealth, while the bottom 50% hold approximately 3%, a concentration that has been broadly stable [fed-dfa]. The technology sector and financial elite are well-represented in advisory and regulatory roles under the current administration; DOGE''s workforce reductions have disproportionately affected regulatory agencies overseeing these sectors. Structural fiscal reform — broadening the tax base, reforming entitlement trajectories — is technically necessary given the CBO debt projection [cbo-outlook-2026-2036] but politically foreclosed by the OBBBA''s permanent provisions and the administration''s stated opposition to tax increases. The IEEPA ruling requires the administration to use less flexible trade tools, moderately constraining protectionist leverage while not ending it [scotus-ieepa-tariffs-ruling-feb-2026].'
-economy_politicalEconomy_fr: 'L''OBBBA verrouille une structure redistributive favorisant les ménages à revenus élevés par des réductions de taux d''imposition permanentes et des réductions des prestations Medicaid et d''aide alimentaire affectant les populations à faibles revenus [one-big-beautiful-bill-jul-2025]. Les comptes financiers distributionnels de la Fed montrent que les 1 % les plus riches détiennent environ 30 % de la richesse totale des ménages [fed-dfa]. La réforme structurelle des finances publiques est techniquement nécessaire [cbo-outlook-2026-2036] mais politiquement forclose par les dispositions permanentes de l''OBBBA [one-big-beautiful-bill-jul-2025].'
-territory_geography_en: 'The contiguous United States (CONUS) covers approximately 7.66 million km², encompassing highly diverse terrain from the Rocky Mountain and Sierra Nevada ranges in the west through the Great Plains to the Appalachians and Atlantic coastal plain in the east [bts-tsar-2025]. Approximately 40% of the U.S. population lives in coastal counties, with major port complexes concentrated in Los Angeles/Long Beach, New York/New Jersey, and the Gulf Coast [noaa-coastal-management-fastfacts]. Internal connectivity is predominantly road-based with an interstate highway network exceeding 77,000 km; freight rail is extensive but passenger rail underdeveloped outside the Northeast Corridor [bts-tsar-2025]. Broadband gaps persist: the Federal Communications Commission (FCC) Broadband Data Collection (December 2024) identifies approximately 14–21 million households lacking access to fixed broadband at benchmark speeds, concentrated in rural and tribal areas [fcc-broadband-data-collection]. The inhabited insular periphery — the Commonwealth of Puerto Rico, Guam, USVI, CNMI, and American Samoa — plus the non-contiguous states of Alaska and Hawaii represent strategic projections in the Caribbean and Indo-Pacific, respectively, but face infrastructural fragility and climate exposure disproportionate to their governance resources [doi-insular-affairs].'
-territory_geography_fr: 'Les États-Unis contigus (CONUS) couvrent environ 7,66 millions de km², avec un terrain très diversifié des Rocheuses à la plaine côtière atlantique [bts-tsar-2025]. Environ 40 % de la population américaine vit dans les comtés côtiers [noaa-coastal-management-fastfacts]. La connectivité interne repose principalement sur un réseau routier de plus de 77 000 km; le réseau ferroviaire de fret est étendu mais les transports ferroviaires de passagers sont peu développés en dehors du couloir nord-est [bts-tsar-2025]. Des lacunes en matière de haut débit persistent, avec 14 à 21 millions de ménages sans accès à un débit fixe de référence [fcc-broadband-data-collection]. La périphérie insulaire habitée — Porto Rico, Guam, USVI, CNMI et Samoa américaines — fait face à une fragilité infrastructurelle et une exposition climatique disproportionnées à leurs ressources de gouvernance [doi-insular-affairs].'
-territory_minerals_en: 'The United States holds one of the world''s most diverse critical-mineral endowments. According to the U.S. Geological Survey (USGS) Mineral Commodity Summaries 2026, the U.S. has significant domestic reserves of: copper (45 million tonnes); gold (3,000 tonnes reserve); lithium (12 million tonnes resource); rare earth elements (REE) (1.8 million tonnes reserve, principally in California and Wyoming); phosphate rock (1 billion tonnes); and is a major producer of coal, natural gas, crude oil, and potash [usgs-mcs-2026]. The U.S. remains heavily import-reliant for several critical minerals including cobalt (76% net import reliance), manganese (100%), graphite (100%), and several REE processing stages [usgs-mcs-2026]. The USGS Mineral Commodity Summaries 2025 identified 50 mineral commodities as critical minerals under the Energy Act of 2020, with supply chain vulnerabilities concentrated in processing capacity (dominated by China) rather than in primary reserves [usgs-mcs-2025].'
-territory_minerals_fr: 'Les États-Unis possèdent l''un des patrimoines en minéraux critiques les plus diversifiés au monde. Selon le USGS Mineral Commodity Summaries 2026, les réserves américaines importantes comprennent : cuivre (45 millions de tonnes), or (3 000 tonnes), lithium (12 millions de tonnes de ressources), éléments de terres rares (REE) (1,8 million de tonnes), phosphate (1 milliard de tonnes) [usgs-mcs-2026]. Les États-Unis restent fortement dépendants des importations pour le cobalt (76 %), le manganèse (100 %) et le graphite (100 %) [usgs-mcs-2026].'
-territory_biosphere_en: 'The United States holds approximately 750 million hectares (ha) of total land area, of which roughly 303 million ha is forest (as of 2020), making it the fourth-largest national forest estate globally, per the Food and Agriculture Organization (FAO) Global Forest Resources Assessment 2025 [fao-fra-2025]. U.S. forest cover has been broadly stable since 1990, but increased fire intensity — particularly in the western states — and drought stress are degrading ecosystem services and carbon stock [nca5]. Arable land totals approximately 158 million ha; the 2022 Census of Agriculture counted 894 million acres under farm operation, down 2% from 2017, reflecting continued farmland consolidation [usda-nass-census-agriculture-2022]. Freshwater: the U.S. has approximately 3,069 km³ of total renewable freshwater resources per year, of which approximately 1,600 km³ is withdrawn annually, with agriculture accounting for approximately 80% of consumptive use; aquifer depletion — particularly the Ogallala Aquifer underlying the Great Plains — is a long-term structural constraint [fao-aquastat-usa]. Fisheries: the NOAA Fisheries annual Status of Stocks report (2024) found 46 federally managed stocks subject to overfishing and 47 overfished, continuing a multi-year trend of improvement from a 2000s peak of overfishing rates, but recreational and climate pressures persist [noaa-status-stocks-2024]. Food security: the USDA Economic Research Service (ERS) found that approximately 13.5% of U.S. households (18.0 million) were food insecure in 2024, the highest rate since 2014, with disproportionate exposure in single-parent and minority households [usda-ers-food-security-2024].'
-territory_biosphere_fr: 'Les États-Unis possèdent environ 303 millions d''ha de forêts (2020), quatrième plus grande superficie forestière nationale au monde [fao-fra-2025]. Les terres arables totalisent environ 158 millions d''ha; le recensement agricole de 2022 a dénombré 894 millions d''acres en exploitation, en baisse de 2 % [usda-nass-census-agriculture-2022]. L''aquifère Ogallala, sous les Grandes Plaines, constitue une contrainte structurelle à long terme pour l''approvisionnement en eau [fao-aquastat-usa]. Environ 13,5 % des ménages américains (18,0 millions) étaient en insécurité alimentaire en 2024, le taux le plus élevé depuis 2014 [usda-ers-food-security-2024].'
-territory_climate_en: 'Observed warming: the contiguous U.S. has warmed approximately 1.3°C above the 1901–1960 average by 2020, with the rate accelerating; Alaska has warmed at more than twice the global average rate, per the Fifth National Climate Assessment (NCA5) [nca5]. Principal hazards by region: (a) Southwest — extreme heat, extended drought, water scarcity (Colorado River system under structural deficit), and high-intensity wildfire, projected under the Representative Concentration Pathway (RCP) 4.5 scenario to see a 200% increase in area burned by 2050 [nca5]; (b) Gulf and Southeast coasts — intensification of hurricane winds and rainfall, sea-level rise (0.25–0.61 m by 2100 under RCP 4.5), with Miami and Houston at high compound flood risk [worldbank-climate-portal-usa]; (c) Midwest and Plains — drought-to-flood cycles affecting agricultural production, with the Ogallala Aquifer depletion accelerating [nca5]; (d) Alaska — permafrost thaw causing infrastructure subsidence, coastline erosion, and ecosystem disruption [nca5]; (e) Puerto Rico and U.S. territories — increasing Category 4–5 hurricane intensity and sea-level rise threatening low-lying populations [nca5]. Adaptive capacity is strongly differentiated: wealthy coastal and urban jurisdictions have the financial capacity to fund resilience infrastructure; rural, tribal, and insular territory populations face the highest exposure-to-capacity gap. The removal of globalchange.gov in 2025 and the administration''s withdrawal from climate adaptation frameworks represent a material reduction in federal coordination capacity [cat-usa-2026].'
-territory_climate_fr: 'Le réchauffement observé dans les États-Unis contigus s''élève à environ 1,3 °C au-dessus de la moyenne 1901–1960, le taux d''Alaska dépassant plus de deux fois la moyenne mondiale [nca5]. Les principaux risques comprennent : sécheresse et incendies dans le Sud-Ouest, intensification des ouragans le long des côtes du Golfe et de l''Atlantique, cycles sécheresse-inondation dans le Midwest, dégel du pergélisol en Alaska, et risques d''ouragan accrus pour Porto Rico et les territoires [nca5] [worldbank-climate-portal-usa]. La capacité d''adaptation est fortement différenciée : les juridictions côtières et urbaines aisées disposent de ressources financières; les populations rurales, tribales et insulaires présentent le plus grand écart exposition-capacité [cat-usa-2026].'
-territory_metabolism_en: 'Energy: the United States is the world''s largest producer of oil and natural gas. The EIA Annual Energy Outlook (AEO) 2026 projects the U.S. to remain a net energy exporter through 2050 under the reference case, with crude oil production sustained at approximately 13 million barrels per day (bbl/d) and natural gas at record-high production levels [eia-aeo-2026]. The Strait of Hormuz disruption from Operation Epic Fury temporarily tightened global markets but did not fundamentally threaten U.S. domestic supply given its net-exporter status [eia-steo-july-2026]. Electricity generation in 2025 reflected a continued shift toward renewables: Ember data show renewables (wind, solar, hydro) at approximately 25–28% of total generation in 2025, with natural gas at approximately 43%, coal declining to approximately 16% [ember-yearly-electricity]. The EIA AEO 2026 reference case projects renewables continuing to grow but natural gas remaining the backbone of the generation mix through the 2030s [eia-aeo-2026]. Food self-sufficiency is high: the U.S. is a major net exporter of agricultural commodities (corn, soybeans, wheat), but domestic food insecurity is a distribution-and-affordability problem rather than a production shortage [usda-ers-food-security-2024]. Water metabolism: the U.S. withdraws approximately 1,600 km³ per year, with the western interior facing chronic overallocation of surface-water rights and accelerating groundwater depletion [fao-aquastat-usa].'
-territory_metabolism_fr: 'Les États-Unis sont le plus grand producteur mondial de pétrole et de gaz naturel, avec une production pétrolière d''environ 13 millions de bbl/j, et devraient rester exportateurs nets d''énergie jusqu''en 2050 [eia-aeo-2026]. La perturbation du détroit d''Ormuz n''a pas fondamentalement menacé l''approvisionnement intérieur américain étant donné son statut d''exportateur net [eia-steo-july-2026]. Les renouvelables représentaient environ 25–28 % de la production électrique totale en 2025, avec le gaz naturel à environ 43 % [ember-yearly-electricity]. Les États-Unis sont exportateurs nets de produits agricoles, mais l''insécurité alimentaire intérieure est un problème de distribution et d''accessibilité [usda-ers-food-security-2024].'
-territory_transition_en: 'The Climate Action Tracker (CAT) as of June 2026 rated U.S. climate policies as ''Critically Insufficient'' — the lowest category — reflecting the withdrawal from the Paris Agreement under executive action at the start of the second Trump term, the rescission of Biden-era clean energy regulations, DOGE-driven staffing reductions at the EPA and other climate agencies, and the effective pause of the Inflation Reduction Act (IRA)''s clean energy incentive deployment in new federal spending [cat-usa-2026]. The target gap: the U.S. Nationally Determined Contribution (NDC) under the Paris Agreement committed to 50–52% emissions reduction below 2005 levels by 2030; the CAT''s current-policy trajectory projects the U.S. reaching approximately 25–30% reduction by 2030 under current policies — a gap of 20–25 percentage points [cat-usa-2026]. U.S. greenhouse gas (GHG) emissions declined through 2023 on continued coal-to-gas switching and renewable deployment; the trajectory under the current policy rollback is toward a plateau or modest reversal [cat-usa-2026] [eia-aeo-2026]. The deep structural advantage is that the U.S. technology and industrial base retains world-leading capability in clean energy innovation; the constraint is political will, not technical capacity.'
-territory_transition_fr: 'Le Climate Action Tracker a évalué les politiques climatiques américaines comme « Critiquement insuffisantes » en juin 2026, reflétant le retrait de l''Accord de Paris, l''annulation des réglementations d''énergie propre de l''ère Biden et les réductions d''effectifs au sein de l''EPA [cat-usa-2026]. L''écart par rapport aux objectifs est de 20 à 25 points de pourcentage pour l''objectif 2030 [cat-usa-2026]. Les émissions de GES ont diminué jusqu''en 2023, mais la trajectoire sous la politique actuelle tend vers un plateau [cat-usa-2026] [eia-aeo-2026].'
-capacity_permitting_en: 'Major project permitting in the United States runs through two distinct gates, and the binding one is not the one usually named. Federal environmental review under the National Environmental Policy Act (NEPA) is slow: the Council on Environmental Quality (CEQ) found the average Environmental Impact Statement (EIS) takes roughly 4.5 years to complete, with large energy and infrastructure projects frequently exceeding seven [ceq-eis-timelines-2025]. But most permitting in the United States is not federal. Siting authority for large-scale wind and solar sits at state level in 28 states and is delegated to local governments in 22, with defined statutory timelines existing in fewer than half [lbnl-state-siting-inventory-2024]. Where that state review runs, it is not the wall it is assumed to be: across 19 states between 2018 and 2024, state siting processes approved approximately 90 percent of the wind and solar projects that entered formal review, most within about a year [frontiers-state-permitting-wind-solar-2026]. Approval, in other words, is largely granted. What is not granted is a grid connection. As of the end of 2025, over 2,060 gigawatts of generation and storage capacity sat in interconnection queues across the independent system operators and non-market balancing areas — more than twice the entire installed capacity of the United States power fleet — with most of it withdrawing before it ever connects [lbnl-queued-up-2025]. The United States has, substantially, solved the permitting problem it set out to solve and hit a transmission wall behind it. The One Big Beautiful Bill Act (OBBBA) contains provisions to further accelerate NEPA review for energy projects [one-big-beautiful-bill-jul-2025]; on the evidence, faster federal review addresses the constraint that binds least. The federal permitting dashboard maintained by the Federal Permitting Improvement Steering Council tracks major federal authorisations in real time and is the published federal regime, but it is not the whole approvals picture and should not be read as such [permits-performance-gov].'
-capacity_permitting_fr: 'L''autorisation des grands projets aux États-Unis passe par deux portes distinctes, et la porte contraignante n''est pas celle que l''on désigne habituellement. L''examen environnemental fédéral en vertu de la National Environmental Policy Act (NEPA) est lent : le Council on Environmental Quality (CEQ) constate qu''une étude d''impact environnemental (EIS) prend en moyenne environ 4,5 ans, les grands projets énergétiques et d''infrastructure dépassant fréquemment sept ans [ceq-eis-timelines-2025]. Mais l''essentiel des autorisations n''est pas fédéral. L''autorité d''implantation des grands projets éoliens et solaires relève de l''État dans 28 États et est déléguée aux gouvernements locaux dans 22, des délais statutaires définis n''existant que dans moins de la moitié d''entre eux [lbnl-state-siting-inventory-2024]. Là où cet examen étatique s''applique, il n''est pas le mur que l''on suppose : dans 19 États entre 2018 et 2024, les processus d''implantation étatiques ont approuvé environ 90 % des projets éoliens et solaires soumis à un examen formel, la plupart en un an environ [frontiers-state-permitting-wind-solar-2026]. L''autorisation, autrement dit, est largement accordée. Ce qui ne l''est pas, c''est le raccordement au réseau. À la fin de 2025, plus de 2 060 gigawatts de capacité de production et de stockage attendaient dans les files d''interconnexion des gestionnaires de réseau et des zones d''équilibrage hors marché — plus du double de la capacité installée totale du parc électrique américain — la plus grande partie se retirant avant même de se raccorder [lbnl-queued-up-2025]. Les États-Unis ont, pour l''essentiel, résolu le problème d''autorisation qu''ils s''étaient donné à résoudre et buté sur un mur de transport situé derrière. La One Big Beautiful Bill Act (OBBBA) contient des dispositions visant à accélérer davantage l''examen NEPA pour les projets énergétiques [one-big-beautiful-bill-jul-2025]; à la lumière des données, un examen fédéral plus rapide s''attaque à la contrainte qui pèse le moins. Le tableau de bord fédéral tenu par le Federal Permitting Improvement Steering Council suit en temps réel les autorisations fédérales majeures et constitue le régime fédéral publié, mais il ne représente pas l''ensemble du paysage des autorisations et ne doit pas être lu comme tel [permits-performance-gov].'
-capacity_delivery_en: 'Federal delivery capacity is materially degraded following DOGE''s workforce reduction program. Agency operational capacity — particularly at the EPA, the Department of Transportation (DOT), and the Department of Housing and Urban Development (HUD) — has been impacted by mass firings, voluntary departures, and hiring freezes since January 2025 [doge-federal-workforce-cuts-2025]. The 43-day shutdown (October–November 2025) disrupted grants, contracts, and regulatory processes across agencies [us-govt-shutdown-oct-nov-2025]. Infrastructure delivery costs in the U.S. remain high by international comparators; cost overruns and schedule slippage on major transit projects (notably in New York, California, and Maryland) continue to reflect a systemic delivery gap [bts-tsar-2025]. War-theater logistics and procurement for Operation Epic Fury and concurrent operations are placing pressure on defense industrial base capacity, with the $954 billion defense budget (2025) representing 33% of global military spending — the highest single-country share [sipri-milex-2025].'
-capacity_delivery_fr: 'La capacité de réalisation fédérale est matériellement dégradée suite au programme de réduction des effectifs du DOGE depuis janvier 2025 [doge-federal-workforce-cuts-2025]. La fermeture de 43 jours a perturbé les subventions, contrats et processus réglementaires [us-govt-shutdown-oct-nov-2025]. Le budget de défense de 954 milliards de dollars (2025) représente 33 % des dépenses militaires mondiales [sipri-milex-2025].'
-capacity_productivity_en: 'Total factor productivity (TFP) in the U.S. private nonfarm business sector continued a post-pandemic recovery through 2025, with the BLS annual TFP release noting positive productivity growth driven by AI adoption and services-sector efficiency gains [bls-total-factor-productivity-2025]. The principal internal barriers to the movement of goods, labor, and capital between the 50 states — termed ''interstate barriers'' — include state occupational licensing variation (now affecting more than 25% of the workforce across approximately 1,100 licensed occupations, with minimal reciprocity), state-specific building codes and land-use restrictions that amplify housing cost differentials and labor immobility, and state tax and regulatory variation across the federal structure. Raw material extraction (oil, gas, coal, agriculture, mining) remains a large-scale export sector, but the highest-value output is processed domestically — software, pharmaceuticals, aerospace — reflecting a deep-processing advantage relative to commodity exporters [bls-total-factor-productivity-2025].'
-capacity_productivity_fr: 'La productivité globale des facteurs (PGF) dans le secteur privé non agricole a poursuivi sa reprise post-pandémique en 2025, soutenue par l''adoption de l''IA et les gains d''efficacité dans les services [bls-total-factor-productivity-2025]. Les principales barrières interétatiques comprennent la variation des licences professionnelles (plus de 25 % de la main-d''œuvre dans environ 1 100 professions), les codes de construction spécifiques à chaque État, et la variation fiscale et réglementaire entre États [bls-total-factor-productivity-2025].'
-society_demographics_en: 'Total population: approximately 340.1 million as of July 1, 2025 (Census Bureau Vintage 2025 estimates) [census-vintage-2025-population] [census-population-estimates-2025]. Population growth slowed markedly in 2025: the Census Bureau reported that U.S. population growth slowed to the lowest rate since the Great Depression due to a historic decline in immigration under the Trump administration''s enforcement regime [census-vintage-2025-population]. Median age: approximately 38.9 years (UN WPP 2024), reflecting a moderately aging population — neither a youth bulge nor an extreme aging crisis at present, but on a trajectory toward a higher dependency ratio [un-wpp-2024]. The urban-rural split is approximately 83% urban / 17% rural. Net international migration had been a primary demographic driver, contributing approximately 1.1–1.3 million persons per year in 2023–2024; the 2025 enforcement and deportation program materially reduced this inflow [census-vintage-2025-population].'
-society_demographics_fr: 'La population totale s''élève à environ 340,1 millions au 1er juillet 2025 (estimations Vintage 2025 du Bureau du recensement) [census-vintage-2025-population] [census-population-estimates-2025]. La croissance démographique a ralenti jusqu''au niveau le plus bas depuis la Grande Dépression en raison d''un déclin historique de l''immigration [census-vintage-2025-population]. L''âge médian est d''environ 38,9 ans, reflétant une population modérément vieillissante [un-wpp-2024]. La répartition urbaine/rurale est d''environ 83/17 %.'
-society_composition_en: 'Per the 2020 Decennial Census: White alone (not Hispanic or Latino) — 57.8%; Hispanic or Latino (any race) — 18.7%; Black or African American alone — 12.1%; Asian alone — 5.9%; multiracial — 3.3%; American Indian and Alaska Native — 0.7%; other — 1.5% [census-2020-decennial-race]. Linguistic: English is the de facto national language with no constitutionally designated official language; Spanish is the principal second language, spoken by approximately 41 million persons at home. The principal fault lines are: (a) race/ethnicity, (b) class (income and wealth concentration), and (c) partisan political identity, which in the current period are REINFORCING rather than cross-cutting — partisanship, race, education level, and geography stack along largely the same dividing lines, amplifying social polarization and reducing systemic defusing mechanisms [freedom-house-2026] [vdem-democracy-report-2026].'
-society_composition_fr: 'D''après le recensement décennal de 2020 : Blancs seuls (non hispaniques) — 57,8 %; Hispaniques ou Latinos — 18,7 %; Noirs — 12,1 %; Asiatiques — 5,9 %; multiracial — 3,3 % [census-2020-decennial-race]. Les principales lignes de fracture (race, classe, identité politique) sont RENFORCÉES — le clivage partisan, racial, éducatif et géographique s''alignent sur les mêmes divisions, amplifiant la polarisation [freedom-house-2026] [vdem-democracy-report-2026].'
-society_religion_en: 'Per the Pew Research Center 2023–24 Religious Landscape Study: Christian — approximately 62% (Protestant ~40%, Catholic ~19%, other Christian ~3%); religiously unaffiliated (''none'') — approximately 28%; non-Christian faiths (Jewish, Muslim, Buddhist, Hindu, other) — approximately 10% [pew-religious-landscape-2025]. The official count reflects self-reported affiliation and known upward bias: actual regular religious practice (weekly attendance) is substantially lower than affiliation. The principal lived fault line is between evangelical Protestant identity and secular/non-religious identity, which maps strongly onto partisan divisions — evangelical Protestant affiliation correlates strongly with Republican Party identification and is a key mobilizing base for the Trump coalition [pew-religious-landscape-2025]. Prosperity-gospel networks and Christian nationalist movements exercise political mobilization capacity disproportionate to their numerical size. Religious diversity is substantial but political salience is concentrated in the evangelical-secular divide [pew-religious-landscape-2025].'
-society_religion_fr: 'Selon l''étude du Pew Research Center 2023–24 : Chrétiens — environ 62 % (protestants ~40 %, catholiques ~19 %); sans religion — environ 28 %; autres religions — environ 10 % [pew-religious-landscape-2025]. Le principal clivage confessionnel — entre l''identité protestante évangélique et l''identité laïque/non-religieuse — se superpose fortement aux divisions partisanes et constitue une base de mobilisation clé pour la coalition Trump [pew-religious-landscape-2025].'
-society_cohesion_en: 'Public trust in the federal government is at a near-historic low. The primary instrument — Pew Research Center''s ''Public Trust in Government: 1958–2025'' — recorded that just 17% of U.S. adults said they trust the federal government to do what is right ''just about always'' or ''most of the time'' in the September 2025 survey, down from 22% in 2024 [pew-trust-government-2025]. SELF-REPORT RELIABILITY FLAG — partisan-sorted: Democratic trust fell to 9%, Republican trust stood at 26% [pew-trust-government-2025]. These figures must not be treated as measuring stable underlying social trust; they track which party controls the White House. Cohort and partisan breakdowns are the analytically valid unit, not the headline aggregate. The parallel Gallup series on trust in the federal government to handle international and domestic problems shows the same partisan-sorting pattern and confirms the directional trend [gallup-trust-government-2025]. The broader picture from the V-Dem Democracy Report 2026 and Freedom House 2026 is one of sustained democratic backsliding: Freedom House scored the U.S. 81/100 in 2026, down 3 points from 2024, with the U.S. recording the steepest sustained decline of any country over 2005–2025; the Pew Research Center April 2026 synthesis found 69% of U.S. adults dissatisfied with how democracy is working, up 7 points year-on-year [pew-democracy-decline-2026] [freedom-house-2026] [vdem-democracy-report-2026]. Social capital and interpersonal trust remain moderate to high by global standards but have declined measurably over the past two decades, with geographic and partisan sorting into ideologically homogeneous communities reinforcing the echo-chamber dynamic.'
-society_cohesion_fr: 'La confiance publique dans le gouvernement fédéral est à un niveau proche d''un creux historique : 17 % des adultes américains font confiance au gouvernement dans l''enquête de septembre 2025 du Pew Research Center, contre 22 % en 2024 [pew-trust-government-2025]. AVERTISSEMENT DE FIABILITÉ : les réponses reflètent le parti au pouvoir (tri partisan); les ventilations par cohorte et parti (démocrates : 9 %; républicains : 26 %) sont l''unité analytiquement valide [pew-trust-government-2025]. Freedom House a évalué les États-Unis à 81/100 en 2026, en baisse de 3 points [freedom-house-2026]; 69 % des adultes américains se disent insatisfaits du fonctionnement de la démocratie [pew-democracy-decline-2026].'
-security_internal_en: 'No active domestic insurgency. Political violence incidents tracked by the Armed Conflict Location & Event Data (ACLED) project have increased since 2020, driven by protest-related unrest, militia activity, and targeted attacks on government facilities, but remain below the threshold of sustained organized armed conflict [acled-usa-conflict-data]. The principal domestic security concern is politically motivated extremism (both right-wing and left-wing), compounded by a historically polarized environment. The invocation of the Alien Enemies Act and mass deportation operations have generated significant protest activity and civil unrest in sanctuary cities [alien-enemies-act-deportations-mar-2025]. Military strength: U.S. defense spending stood at $954 billion in 2025, representing 33% of global military expenditure and the highest single-country share, though down 7.5% from 2024 largely reflecting DOGE-era personnel and overhead reductions [sipri-milex-2025]. U.S. nuclear warhead stockpile: approximately 3,700 deployed and reserve warheads, with approximately 1,770 deployed on strategic delivery systems (intercontinental ballistic missiles (ICBMs), submarine-launched ballistic missiles (SLBMs), and bombers) [trump-inauguration-eos-jan-2025]. Military loyalty to civilian command has held; friction over deployment tempo and DOGE-driven DoW budget impacts is visible at the institutional level but has not translated to insubordination. Border situation: southern land border enforcement under the Trump administration has been substantially intensified; military assets have been deployed to the border under the national emergency declaration [federal-register]. Operation Southern Spear extended operational authority into the Caribbean [operation-southern-spear-sep-2025].'
-security_internal_fr: 'Aucune insurrection intérieure active. Les incidents de violence politique suivis par l''ACLED ont augmenté depuis 2020, liés à des troubles lors de manifestations, à des activités de milices et à des attaques ciblées contre des installations gouvernementales [acled-usa-conflict-data]. Les dépenses de défense américaines s''établissaient à 954 milliards de dollars en 2025, représentant 33 % des dépenses militaires mondiales [sipri-milex-2025]. Le stockpile de têtes nucléaires comprend environ 3 700 ogives déployées et en réserve, dont 1 770 déployées sur des vecteurs stratégiques [trump-inauguration-eos-jan-2025].'
-security_diplomacy_en: 'The United States remains a permanent member of the UN Security Council (UNSC) and the primary funder and military backbone of the North Atlantic Treaty Organization (NATO); the 32-member NATO military expenditure amounted to $1,581 billion in 2025 [sipri-milex-2025]. The State Department''s Treaties in Force 2025 compendium documents the full architecture of U.S. bilateral and multilateral commitments, including mutual defense treaties (North Atlantic Treaty, U.S.-Japan Treaty of Mutual Cooperation and Security, U.S.-Korea Mutual Defense Treaty, ANZUS) [state-dept-treaties-in-force-2025]. Key bilateral relationships under acute strain: (a) U.S.-Iran — at war since February 28, 2026 (Operation Epic Fury), with the April 8, 2026 two-week ceasefire subsequently collapsed [operation-epic-fury-iran-feb-2026] [icg-iran-us-trigger-list]; (b) U.S.-Venezuela — Maduro captured January 3, 2026, Venezuela in governance vacuum [us-capture-maduro-venezuela-jan-2026]; (c) U.S.-China — trade tensions, Taiwan Strait flashpoint, and competition in the Indo-Pacific remain structural; (d) U.S.-Canada and U.S.-Mexico — renegotiation pressures and tariff friction following the IEEPA regime and its successor [ustr-trade-policy-2025]; (e) U.S.-Europe — NATO burden-sharing tensions eased marginally as European defense spending rose 14% in 2025 [sipri-milex-2025]. The U.S. withdrew from the Paris Agreement at the start of the second Trump term and has reduced its role in multilateral climate governance. The capture of Maduro drew UN condemnation and damaged regional relationships in Latin America [us-capture-maduro-venezuela-jan-2026].'
-security_diplomacy_fr: 'Les États-Unis restent membre permanent du Conseil de sécurité de l''ONU et principale puissance de l''OTAN, dont les 32 membres ont dépensé 1 581 milliards de dollars en 2025 [sipri-milex-2025]. Les principaux accords bilatéraux et multilatéraux sont documentés dans le compendium Treaties in Force 2025 [state-dept-treaties-in-force-2025]. Relations sous tension aiguë : États-Unis–Iran (en guerre depuis le 28 février 2026) [operation-epic-fury-iran-feb-2026]; États-Unis–Venezuela (Maduro capturé le 3 janvier 2026) [us-capture-maduro-venezuela-jan-2026]; États-Unis–Chine (tensions commerciales et détroit de Taïwan); États-Unis–Canada et Mexique (frictions tarifaires post-IEEPA) [ustr-trade-policy-2025].'
+  2. POLITICAL EQUILIBRIUM: Unified government — Republicans hold 53/100 Senate
+  seats [senate-party-division] and approximately 220/435 House seats
+  [house-party-breakdown]; opposition Democrats hold 47 Senate and ~213 House
+  seats; presidential legitimacy formally established but contested by ~50% of
+  the electorate; Freedom House scored the U.S. 81/100 in 2026 — down 3 points
+  from 2024, the steepest sustained decline of any country over 2005–2025
+  [freedom-house-2026].
+
+  3. ECONOMIC MODEL: The world's largest services-dominated economy; private
+  consumption and knowledge-intensive sectors (technology, finance, healthcare)
+  drive output; real GDP grew 2.2% in 2025 and 2.0% SAAR in Q1 2026; federal
+  deficit projected at ~$1.9T for FY 2026; debt/GDP ~100%; all three major
+  rating agencies have now downgraded U.S. sovereign debt, with Moody's cut to
+  Aa1 in May 2025 [bea-gdp-2025-advance] [bea-gdp-q1-2026]
+  [cbo-outlook-2026-2036] [moodys-downgrade-2025].
+
+  4. PHYSICAL BASE: Continent-scale federal state with the world's most diverse
+  critical-mineral endowment and net energy exporter status [usgs-mcs-2026]
+  [eia-aeo-2026]; principal climate exposure is compounding
+  drought-wildfire-heat in the western interior under RCP 4.5, with the Colorado
+  River system under structural deficit and Atlantic/Gulf coastlines facing
+  intensified hurricane risk [nca5]; climate adaptation capacity is adequate
+  nationally in fiscal terms but the current administration has materially
+  reduced federal coordination infrastructure [cat-usa-2026].
+
+  5. EXECUTION CAPACITY: Materially degraded; DOGE-driven federal workforce
+  reduction — the largest in modern history — has reduced implementation
+  capacity across defense, health, environment, and regulatory agencies
+  [doge-federal-workforce-cuts-2025]; 43-day shutdown compounded disruption
+  [us-govt-shutdown-oct-nov-2025]; average federal EIS review: ~4.5 years
+  [ceq-eis-timelines-2025]; permitting remains the single most binding
+  structural constraint on the energy transition.
+
+  6. SOCIAL STRUCTURE: Population ~340.1 million (July 2025), moderately aging
+  (median age ~38.9), 83% urban [census-population-estimates-2025]
+  [un-wpp-2024]; principal cleavages (race, class, partisan identity) are
+  REINFORCING — not cross-cutting — along the same geographic and cultural fault
+  lines; public trust in federal government at 17% overall (9% Democrats, 26%
+  Republicans), a near-historic low with partisan-sorting bias
+  [pew-trust-government-2025] [census-2020-decennial-race].
+
+  7. TOP 3 RISKS (6–18 MONTHS): (a) Iran war escalation / Strait of Hormuz
+  closure — High probability, High impact [icg-iran-us-trigger-list]; (b) Fiscal
+  cliff / CBO debt spiral — Med probability, High impact [cbo-outlook-2026-2036]
+  [moodys-downgrade-2025]; (c) Multi-theater military overstretch — Med
+  probability, High impact [sipri-milex-2025].
+
+  8. TOP 3 WATCH ITEMS (4–12 WEEKS): (a) Iran ceasefire collapse and third-round
+  strikes (July 11, 2026 confirmed 140-target strike)
+  [operation-epic-fury-iran-feb-2026]; (b) Oman Strait of Hormuz shipping-route
+  proposal outcome [icg-iran-us-trigger-list]; (c) July 30 BEA Q2 2026 GDP
+  advance estimate — first read on whether tariff-and-war drag deepened.
+
+  9. EXTERNAL DEPENDENCIES: Trade partner concentration in Canada (#1 goods
+  partner), Mexico (#2), China (#3), and EU [ustr-trade-policy-2025]; net
+  international investment position deeply negative
+  [bea-international-transactions-2025]; U.S. dollar reserve currency status
+  provides structural external financing buffer; energy is a surplus (net
+  exporter) [eia-aeo-2026]; critical mineral processing dependency on China
+  (cobalt 76%, manganese 100%, graphite 100%) [usgs-mcs-2026].
+
+  10. SECURITY POSTURE: No domestic insurgency; ACLED-tracked political violence
+  elevated but sub-insurgency [acled-usa-conflict-data]; $954B defense budget /
+  33% of global military spending [sipri-milex-2025]; nuclear stockpile ~3,700
+  deployed and reserve warheads; simultaneously prosecuting Operation Epic Fury
+  (Iran), Absolute Resolve (Venezuela), Hawkeye Strike (Syria), Southern Spear
+  (Caribbean), AFRICOM IS Nigeria — the broadest simultaneous combat deployment
+  since WWII [operation-epic-fury-iran-feb-2026]
+  [us-capture-maduro-venezuela-jan-2026].
+
+  11. DIPLOMATIC ORIENTATION: Permanent UN Security Council member; NATO treaty
+  backbone; shifting to transactional bilateralism; key strain points with Iran
+  (at war), Venezuela (Maduro captured), China (trade/Taiwan), Canada and Mexico
+  (tariff friction) [state-dept-treaties-in-force-2025] [sipri-milex-2025];
+  withdrew from Paris Agreement; UN condemned Venezuela operation
+  [us-capture-maduro-venezuela-jan-2026].
+
+  12. DATA CONFIDENCE: Political (HIGH — official live sources, verified July
+  13, 2026) [senate-party-division] [house-party-breakdown]; Economic (HIGH —
+  BEA, CBO, Fed primary sources) [bea-gdp-q1-2026]; Military/Security (HIGH —
+  SIPRI, CENTCOM, CRS) [sipri-milex-2025]; Climate/Territory (HIGH — NCA5, EIA
+  AEO, CAT) [nca5] [eia-aeo-2026]; Social Cohesion (HIGH with partisan-sorting
+  bias flag) [pew-trust-government-2025]; Democracy indices (HIGH, two
+  independent instruments) [freedom-house-2026] [vdem-democracy-report-2026].
+
+  13. BASELINE CHARACTERIZATION: As of July 13, 2026, the United States is a
+  constitutionally intact but institutionally strained federal republic
+  prosecuting the most geographically dispersed concurrent military operations
+  in its history, governed by a unified executive-legislative Republican
+  administration operating under an active Supreme Court constraint, with a
+  permanently locked fiscal structure, near-historic institutional trust
+  deficits, and a democratic health trajectory rated in decline by every
+  independent index.
+executiveSnapshot_fr: >-
+  1. TYPE DE RÉGIME : République constitutionnelle fédérale présidentielle avec
+  exécutif élu (président Trump, second mandat, inauguré le 20 janvier 2025);
+  pouvoir acquis via la majorité du collège électoral; maintenu par un mandat
+  constitutionnel et une majorité républicaine au Congrès
+  [constitution-usa-1787] [trump-inauguration-eos-jan-2025].
+
+  2. ÉQUILIBRE POLITIQUE : Gouvernement unifié — les républicains détiennent
+  53/100 sièges au Sénat [senate-party-division] et environ 220/435 à la Chambre
+  [house-party-breakdown]; Freedom House a attribué un score de 81/100 en 2026,
+  en baisse de 3 points — le déclin soutenu le plus prononcé de tout pays sur
+  2005–2025 [freedom-house-2026].
+
+  3. MODÈLE ÉCONOMIQUE : Plus grande économie de services au monde; PIB réel en
+  hausse de 2,2 % en 2025 et de 2,0 % en rythme annuel au T1 2026; déficit
+  fédéral projeté à ~1 900 milliards de dollars pour l'exercice 2026; dette/PIB
+  ~100 %; Moody's a abaissé la note souveraine américaine à Aa1 en mai 2025
+  [bea-gdp-2025-advance] [bea-gdp-q1-2026] [cbo-outlook-2026-2036]
+  [moodys-downgrade-2025].
+
+  4. BASE PHYSIQUE : État fédéral à l'échelle d'un continent avec le patrimoine
+  en minéraux critiques le plus diversifié au monde et le statut d'exportateur
+  net d'énergie [usgs-mcs-2026] [eia-aeo-2026]; principale exposition
+  climatique : sécheresse-incendies-chaleur dans l'intérieur occidental sous RCP
+  4.5; l'administration actuelle a matériellement réduit l'infrastructure de
+  coordination fédérale sur le climat [cat-usa-2026].
+
+  5. CAPACITÉ D'EXÉCUTION : Matériellement dégradée; la réduction des effectifs
+  fédéraux par le DOGE a réduit la capacité d'exécution des agences de défense,
+  santé, environnement et réglementation [doge-federal-workforce-cuts-2025];
+  durée moyenne de révision d'une EIS fédérale : ~4,5 ans
+  [ceq-eis-timelines-2025].
+
+  6. STRUCTURE SOCIALE : Population ~340,1 millions (juillet 2025),
+  vieillissement modéré (âge médian ~38,9 ans), 83 % urbaine
+  [census-population-estimates-2025]; les clivages principaux (race, classe,
+  identité partisane) sont RENFORCÉS; confiance publique dans le gouvernement
+  fédéral à 17 % au total (9 % démocrates, 26 % républicains), proche d'un creux
+  historique [pew-trust-government-2025].
+
+  7. TOP 3 RISQUES (6–18 MOIS) : (a) Escalade de la guerre en Iran / fermeture
+  du détroit d'Ormuz — probabilité Élevée, impact Élevé
+  [icg-iran-us-trigger-list]; (b) Précipice fiscal / spirale de la dette CBO —
+  probabilité Moyenne, impact Élevé [cbo-outlook-2026-2036]; (c) Surmenage
+  militaire multi-théâtres — probabilité Moyenne, impact Élevé
+  [sipri-milex-2025].
+
+  8. TOP 3 POINTS DE SURVEILLANCE (4–12 SEMAINES) : (a) Effondrement du
+  cessez-le-feu en Iran et troisième série de frappes (140 cibles confirmées le
+  11 juillet 2026) [operation-epic-fury-iran-feb-2026]; (b) Résultat de la
+  proposition omanaise sur les routes de navigation dans le détroit d'Ormuz; (c)
+  Estimation préliminaire du PIB T2 2026 du BEA (30 juillet 2026) — première
+  lecture sur la profondeur de l'impact tarifaire et de guerre.
+
+  9. DÉPENDANCES EXTERNES : Concentration des partenaires commerciaux au Canada
+  (#1 marchandises), Mexique (#2), Chine (#3) et UE [ustr-trade-policy-2025];
+  position extérieure nette profondément négative
+  [bea-international-transactions-2025]; excédent énergétique (exportateur net)
+  [eia-aeo-2026]; dépendance au traitement des minéraux critiques par la Chine
+  (cobalt 76 %, manganèse 100 %, graphite 100 %) [usgs-mcs-2026].
+
+  10. POSTURE DE SÉCURITÉ : Pas d'insurrection intérieure; violence politique
+  suivie par l'ACLED élevée mais sous le seuil insurrectionnel
+  [acled-usa-conflict-data]; budget de défense de 954 milliards de dollars /
+  33 % des dépenses militaires mondiales [sipri-milex-2025]; opérations
+  simultanées Epic Fury (Iran), Absolute Resolve (Venezuela), Hawkeye Strike
+  (Syrie), Southern Spear (Caraïbes), AFRICOM Nigéria
+  [operation-epic-fury-iran-feb-2026].
+
+  11. ORIENTATION DIPLOMATIQUE : Membre permanent du CSNU; épine dorsale de
+  l'OTAN; transition vers le bilatéralisme transactionnel; points de tension
+  principaux avec l'Iran (en guerre), le Venezuela (Maduro capturé), la Chine
+  (commerce/Taïwan), le Canada et le Mexique
+  [state-dept-treaties-in-force-2025]; retrait de l'Accord de Paris; l'ONU a
+  condamné l'opération au Venezuela [us-capture-maduro-venezuela-jan-2026].
+
+  12. CONFIANCE DANS LES DONNÉES : Politique (ÉLEVÉE) [senate-party-division]
+  [house-party-breakdown]; Économique (ÉLEVÉE) [bea-gdp-q1-2026];
+  Militaire/Sécurité (ÉLEVÉE) [sipri-milex-2025]; Climatique/Territoire (ÉLEVÉE)
+  [nca5] [eia-aeo-2026]; Cohésion sociale (ÉLEVÉE avec avertissement de biais
+  partisan) [pew-trust-government-2025]; Indices de démocratie (ÉLEVÉE, deux
+  instruments indépendants) [freedom-house-2026] [vdem-democracy-report-2026].
+
+  13. CARACTÉRISATION DE L'ÉTAT DE BASE : Au 13 juillet 2026, les États-Unis
+  sont une république fédérale constitutionnellement intacte mais
+  institutionnellement sous tension, menant les opérations militaires
+  simultanées géographiquement les plus dispersées de leur histoire, gouvernée
+  par une administration républicaine unifiée opérant sous la contrainte active
+  de la Cour suprême, avec une structure fiscale définitivement verrouillée, des
+  déficits de confiance institutionnelle proches de niveaux historiques, et une
+  trajectoire de santé démocratique en déclin selon chaque indice indépendant.
+political_powerStructure_en: >-
+  The United States operates under a presidential constitutional system
+  established by the Constitution of 1787, in which executive and legislative
+  powers are separately held and may be controlled by different parties
+  [constitution-usa-1787]. The executive is held by President Donald Trump
+  (Republican), re-elected November 2024 and inaugurated January 20, 2025, for a
+  second four-year term [trump-inauguration-eos-jan-2025]. Legislative control
+  is unified: Republicans hold the majority in both chambers of the 119th
+  Congress, making the current configuration a unified government
+  [senate-party-division] [house-party-breakdown]. In the United States Senate
+  (100 seats), Republicans hold 53 seats and Democrats hold 47 seats as of July
+  13, 2026 [senate-party-division]. In the United States House of
+  Representatives (435 seats), Republicans hold the majority with approximately
+  220 seats to Democrats' 213 seats, with 2 vacancies, as of July 13, 2026
+  [house-party-breakdown]. Security forces — uniformed military and federal law
+  enforcement — are constitutionally subject to civilian command; the renaming
+  of the Department of Defense as the Department of War under the Trump second
+  term signals an assertive posture, but the chain of command is formally intact
+  [us-capture-maduro-venezuela-jan-2026]. Judicial independence is structurally
+  enshrined but operationally contested: the 6–3 conservative Supreme Court has
+  both expanded executive immunity in Trump v. United States (2024) and
+  constrained executive trade authority in Learning Resources, Inc. v. Trump
+  (2026) [scotus-ieepa-tariffs-ruling-feb-2026] [trump-v-usa-2024]. Media
+  independence is formally protected under the First Amendment; in practice, the
+  media landscape is sharply polarized and several major outlets have faced
+  regulatory pressure [freedom-house-2026]. The World Justice Project (WJP) Rule
+  of Law Index 2025 ranked the United States 27th out of 143 countries
+  [wjp-rule-of-law-2025-usa]. Freedom House assigned the United States a Global
+  Freedom Score of 81/100 in 2026, down 3 points from 2024, with the U.S.
+  recording the steepest sustained decline of any country over 2005–2025
+  [freedom-house-2026]. Whether operative power tracks the constitutional
+  allocation is contested: the Trump administration has claimed expanded
+  executive authority via the unitary executive theory and the use of emergency
+  powers; the Supreme Court has repeatedly adjudicated these claims, resolving
+  some while leaving the broader contest unresolved [crs-congress-gov].
+political_powerStructure_fr: >-
+  Les États-Unis fonctionnent sous un système constitutionnel présidentiel
+  établi par la Constitution de 1787, dans lequel les pouvoirs exécutif et
+  législatif sont distincts et peuvent être contrôlés par des partis différents
+  [constitution-usa-1787]. L'exécutif est détenu par le président Donald Trump
+  (républicain), réélu en novembre 2024 et inauguré le 20 janvier 2025 pour un
+  second mandat de quatre ans [trump-inauguration-eos-jan-2025]. Le contrôle
+  législatif est unifié : les républicains détiennent la majorité dans les deux
+  chambres du 119e Congrès, constituant un gouvernement unifié
+  [senate-party-division] [house-party-breakdown]. Au Sénat américain (100
+  sièges), les républicains détiennent 53 sièges et les démocrates 47 au 13
+  juillet 2026 [senate-party-division]. À la Chambre des représentants (435
+  sièges), les républicains détiennent la majorité avec environ 220 sièges
+  contre 213 aux démocrates, avec 2 sièges vacants [house-party-breakdown]. Les
+  forces de sécurité sont formellement soumises au commandement civil; le
+  renommage du ministère de la Défense en ministère de la Guerre signale une
+  posture assertive [us-capture-maduro-venezuela-jan-2026]. L'indépendance
+  judiciaire est structurellement consacrée mais opérationnellement contestée :
+  la Cour suprême a à la fois élargi l'immunité exécutive dans Trump c.
+  États-Unis (2024) et contraint l'autorité commerciale exécutive dans Learning
+  Resources, Inc. c. Trump (2026) [scotus-ieepa-tariffs-ruling-feb-2026].
+  Freedom House a attribué aux États-Unis un score de liberté mondiale de 81/100
+  en 2026, en baisse de 3 points par rapport à 2024 [freedom-house-2026]. Le WJP
+  a classé les États-Unis 27e sur 143 pays dans l'Indice de l'état de droit 2025
+  [wjp-rule-of-law-2025-usa].
+political_stabilityDrivers_en: >-
+  Regime legitimacy rests on electoral mandate, constitutional continuity, and
+  historically robust institutional inertia. Trump won a second term with clear
+  electoral college margins in November 2024 [trump-inauguration-eos-jan-2025].
+  Armed forces loyalty to civilian command has held despite institutional
+  friction over DOGE-driven workforce reductions in the Department of War and
+  the deployment tempo across multiple simultaneous theaters [sipri-milex-2025]
+  [operation-epic-fury-iran-feb-2026]. Business elite alignment is divided:
+  major financial and technology sector actors have generally accommodated the
+  administration on deregulation and tax policy via the OBBBA, while
+  export-oriented manufacturers remain exposed to tariff regime uncertainty
+  following the IEEPA ruling [scotus-ieepa-tariffs-ruling-feb-2026]
+  [one-big-beautiful-bill-jul-2025]. The Republican unified majority in Congress
+  provides legislative cohesion for the administration's agenda, with
+  intra-party dissenters in the Senate (53–47 margin) representing the principal
+  legislative constraint [senate-party-division].
+political_stabilityDrivers_fr: >-
+  La légitimité du régime repose sur le mandat électoral, la continuité
+  constitutionnelle et une inertie institutionnelle historiquement robuste.
+  Trump a remporté un second mandat avec des marges claires au collège électoral
+  en novembre 2024 [trump-inauguration-eos-jan-2025]. La loyauté des forces
+  armées au commandement civil s'est maintenue malgré les frictions
+  institutionnelles liées aux réductions d'effectifs par le DOGE et au rythme de
+  déploiement sur plusieurs théâtres simultanés [sipri-milex-2025]
+  [operation-epic-fury-iran-feb-2026]. L'alignement des élites économiques est
+  divisé : les acteurs financiers et technologiques ont globalement soutenu
+  l'administration sur la déréglementation, tandis que les industriels
+  exportateurs restent exposés à l'incertitude tarifaire
+  [scotus-ieepa-tariffs-ruling-feb-2026] [one-big-beautiful-bill-jul-2025].
+political_shockAbsorbers_en: >-
+  Constitutional separation of powers provides the primary institutional shock
+  absorber: an independent judiciary has checked multiple executive actions —
+  immigration enforcement (Alien Enemies Act invocation), trade authority (IEEPA
+  tariffs), and birthright citizenship — within an 18-month window
+  [alien-enemies-act-deportations-mar-2025]
+  [scotus-ieepa-tariffs-ruling-feb-2026]
+  [scotus-birthright-citizenship-jun-2026]. Federal reserve independence and the
+  depth of U.S. capital markets cushion economic shocks. The factors that could
+  accelerate instability include: the administration's normalization of
+  emergency-powers use without declared war, the unprecedented pace of federal
+  workforce reduction under DOGE which erodes long-term implementation capacity,
+  the structural fiscal lock-in from the OBBBA which constrains future spending
+  flexibility, partisan-sorted public trust at historic lows (17% overall
+  trusting the federal government in September 2025, with only 9% of Democrats
+  and 26% of Republicans trusting it) [pew-trust-government-2025], and the
+  simultaneous commitment of military resources across Iran, Venezuela, Yemen,
+  Syria, and Nigeria, raising force-overstretching risk.
+political_shockAbsorbers_fr: >-
+  La séparation constitutionnelle des pouvoirs constitue le principal
+  amortisseur institutionnel : la justice a contrôlé plusieurs actions
+  exécutives dans une fenêtre de 18 mois [scotus-ieepa-tariffs-ruling-feb-2026]
+  [scotus-birthright-citizenship-jun-2026]. L'indépendance de la Réserve
+  fédérale et la profondeur des marchés de capitaux américains amortissent les
+  chocs économiques. Les facteurs susceptibles d'accélérer l'instabilité
+  comprennent : la normalisation des pouvoirs d'urgence sans guerre déclarée, la
+  réduction sans précédent des effectifs fédéraux sous le DOGE, le verrouillage
+  fiscal structurel de l'OBBBA, la confiance publique à des niveaux
+  historiquement bas (17 % au total en septembre 2025, dont seulement 9 % chez
+  les démocrates) [pew-trust-government-2025], et l'engagement militaire
+  simultané sur plusieurs théâtres.
+political_constitutionalSubstrate_en: >-
+  The founding instrument is the Constitution of the United States (1787, in
+  force March 4, 1789), which allocates enumerated powers to the federal
+  government and reserves residual powers to the states and the people under the
+  Tenth Amendment [constitution-usa-1787]. The doctrine of judicial review —
+  whereby the Supreme Court may strike federal legislation — was established in
+  Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803) [marbury-v-madison-1803]. The
+  constitutional re-founding effected by the Reconstruction Amendments — the
+  Thirteenth Amendment (1865, abolishing slavery), Fourteenth Amendment (1868,
+  establishing equal protection and citizenship), and Fifteenth Amendment (1870,
+  prohibiting racial discrimination in voting) — reset the original terms of the
+  Union and remain the active substrate of contemporary civil rights litigation
+  [reconstruction-amendments]. The substrate is IN MOTION on multiple axes
+  simultaneously: (1) Presidential immunity — Trump v. United States (2024)
+  extended broad immunity to official presidential acts, materially reallocating
+  power toward the executive and away from criminal accountability
+  [trump-v-usa-2024]; (2) Presidential removal authority — Trump v. Slaughter
+  (2026, No. 25-332) and Trump v. Cook (2026, No. 25A312) further resolved
+  contests over the president's authority to remove independent agency officers
+  [trump-v-slaughter-2026] [trump-v-cook-2026]; (3) Birthright citizenship —
+  Trump v. Barbara (2026, No. 25-365) reaffirmed the 150-year-old jus soli
+  doctrine and invalidated the executive order restricting birthright
+  citizenship [scotus-birthright-citizenship-jun-2026]; (4) Administrative law —
+  Loper Bright Enterprises v. Raimondo (2024) overruled Chevron deference,
+  curtailing agency interpretive authority and returning statutory
+  interpretation to courts [loper-bright-2024]; (5) IEEPA trade authority —
+  Learning Resources, Inc. v. Trump (2026) held IEEPA does not authorize tariffs
+  [scotus-ieepa-tariffs-ruling-feb-2026]; (6) Nationwide injunctions — Trump v.
+  CASA, Inc. (2025) restricted federal courts' authority to issue universal
+  injunctions blocking executive action [trump-v-casa-2025]; (7) Watson v.
+  Republican National Committee (2026) addressed ballot access and state
+  election law under the Constitution [watson-v-rnc-2026]. Tribal sovereignty is
+  a distinct pre-constitutional legal order: federally recognized tribes
+  exercise inherent sovereignty over members and Indian country (defined under
+  18 U.S.C. § 1151) not derived from federal or state law but subject to
+  congressional plenary power established under the Marshall Trilogy
+  [marshall-trilogy]. The McGirt v. Oklahoma (2020) ruling affirmed a large
+  portion of eastern Oklahoma as Indian country [mcgirt-v-oklahoma-2020];
+  Oklahoma v. Castro-Huerta (2022) partially narrowed its reach by affirming
+  state criminal jurisdiction over non-Indians in Indian country
+  [oklahoma-v-castro-huerta-2022]. Federal statutory authority over Indians is
+  codified in United States Code (U.S.C.), Title 25 [usc-title-25]. The insular
+  territorial order — governing Puerto Rico, Guam, the United States Virgin
+  Islands (USVI), the Commonwealth of the Northern Mariana Islands (CNMI), and
+  American Samoa — was established by the Insular Cases (1901)
+  [insular-cases-1901], under which Congress holds plenary authority and the
+  Constitution applies only selectively; residents hold no presidential vote and
+  no voting representation in Congress, administered by the Department of the
+  Interior's Office of Insular Affairs (OIA) [doi-insular-affairs]. Voting
+  rights substrate remains in motion: Shelby County v. Holder (2013) struck the
+  coverage formula of the Voting Rights Act of 1965, removing federal
+  preclearance for changes to voting laws in covered jurisdictions
+  [shelby-county-2013]. Haaland v. Brackeen (2023) upheld the Indian Child
+  Welfare Act under Congress's plenary power over Indian affairs
+  [haaland-v-brackeen-2023]. West Virginia v. Environmental Protection Agency
+  (EPA) (2022) established the major questions doctrine, requiring clear
+  congressional authorization for major agency rules [wv-v-epa-2022].
+
+  The legal order is plural — held separately: - Statutory (federal): Federal
+  statutory law applicable to all persons within United States jurisdiction;
+  supreme over state law under the Supremacy Clause (Article VI)
+  [constitution-usa-1787]. - Statutory (state): Each of the 50 states maintains
+  its own constitution, legislature, courts, and code, operating concurrently
+  with federal law within powers reserved by the Tenth Amendment. Louisiana
+  retains a civil-law tradition for private law matters. - Other (tribal):
+  Federally recognized tribes exercise inherent pre-constitutional sovereignty
+  over their members and Indian country (18 U.S.C. § 1151). Tribes hold written
+  constitutions, statutory codes, and courts of record; this sovereignty is not
+  derived from federal or state law but is subject to congressional plenary
+  power [marshall-trilogy] [usc-title-25]. - Other (insular territorial): Puerto
+  Rico, Guam, USVI, CNMI, and American Samoa are governed under the Insular
+  Cases regime, under which Congress holds plenary authority and the
+  Constitution applies only selectively [insular-cases-1901]
+  [doi-insular-affairs].
+political_constitutionalSubstrate_fr: >-
+  L'instrument fondateur est la Constitution des États-Unis (1787, en vigueur le
+  4 mars 1789), qui attribue des pouvoirs énumérés au gouvernement fédéral et
+  réserve les pouvoirs résiduels aux États sous le Dixième Amendement
+  [constitution-usa-1787]. La doctrine du contrôle judiciaire a été établie dans
+  Marbury c. Madison (1803) [marbury-v-madison-1803]. Les Amendements de
+  reconstruction — Treizième (1865), Quatorzième (1868), Quinzième (1870) — ont
+  réinitialisé les termes originaux de l'Union [reconstruction-amendments]. Le
+  substrat est EN MOUVEMENT sur plusieurs axes : immunité présidentielle (Trump
+  c. États-Unis, 2024) [trump-v-usa-2024]; pouvoir de révocation présidentiel
+  (Trump c. Slaughter, 2026; Trump c. Cook, 2026) [trump-v-slaughter-2026]
+  [trump-v-cook-2026]; droit du sol (Trump c. Barbara, 2026)
+  [scotus-birthright-citizenship-jun-2026]; droit administratif (Loper Bright,
+  2024, mettant fin à la déférence Chevron) [loper-bright-2024]; autorité
+  tarifaire IEEPA (Learning Resources, 2026)
+  [scotus-ieepa-tariffs-ruling-feb-2026]; injonctions nationales (Trump c. CASA,
+  2025) [trump-v-casa-2025]. La souveraineté tribale est un ordre juridique
+  pré-constitutionnel distinct, établi par la Trilogie Marshall
+  [marshall-trilogy], partiellement remodelé par McGirt (2020)
+  [mcgirt-v-oklahoma-2020] et Castro-Huerta (2022)
+  [oklahoma-v-castro-huerta-2022]. L'ordre territorial insulaire — régissant
+  Porto Rico, Guam, les USVI, les CNMI et les Samoa américaines — a été établi
+  par les Insular Cases (1901) [insular-cases-1901]; les résidents ne disposent
+  pas du vote présidentiel ni de représentation avec droit de vote au Congrès
+  [doi-insular-affairs].
+situation_en: |-
+  [
+    {
+      "thread": "Executive power and the courts",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "A wave of Day-One executive orders restructured federal priorities across immigration, the civil service, trade, foreign policy and government organisation [trump-inauguration-eos-jan-2025].",
+          "changed": "Set the pattern for the term: policy made by executive instrument first, litigated afterwards."
+        },
+        {
+          "date": "2025-03-14",
+          "what": "The Alien Enemies Act of 1798 was invoked against Venezuelan nationals alleged to be affiliated with Tren de Aragua — the first peacetime use of the statute in United States history [alien-enemies-act-deportations-mar-2025].",
+          "changed": "A federal judge appointed by the President found the invocation unlawful on 1 May 2025; the removals had already taken place. Established that an adverse ruling need not reverse the fact on the ground [alien-enemies-act-deportations-mar-2025]."
+        },
+        {
+          "date": "2026-06-29",
+          "what": "The Supreme Court held in Trump v. Slaughter that for-cause removal protections for independent multimember agencies violate the separation of powers, overruling Humphrey's Executor (1935) [trump-v-slaughter-2026]. The same day, in Trump v. Cook, it declined to extend that holding to the Federal Reserve [trump-v-cook-2026].",
+          "changed": "Presidential removal power now extends across the executive branch, with the central bank carved out as the sole exception."
+        },
+        {
+          "date": "2026-06-30",
+          "what": "The Supreme Court struck down Executive Order 14160 in Trump v. Barbara, holding that children born in the United States to parents unlawfully or temporarily present are citizens at birth under the Fourteenth Amendment [trump-v-barbara-2026] [scotus-birthright-citizenship-jun-2026].",
+          "changed": "Ended seventeen months of nationwide litigation and reaffirmed the Citizenship Clause against executive reinterpretation."
+        }
+      ],
+      "currentState": "Within thirty-six hours the Court expanded executive power over the administrative state and denied it over constitutional citizenship. The constitutional substrate is in motion in both directions at once; whether operative power tracks the constitutional allocation is contested and is not resolved here."
+    },
+    {
+      "thread": "War with Iran",
+      "events": [
+        {
+          "date": "2025-06-21",
+          "what": "United States airstrikes destroyed Iran's primary enrichment infrastructure at Natanz, Fordow and Isfahan — the first combat use of the GBU-57 Massive Ordnance Penetrator [us-strikes-iran-nuclear-jun-2025].",
+          "changed": "The International Atomic Energy Agency assessed that Iran could resume enrichment within months, leaving the strategic problem unresolved [us-strikes-iran-nuclear-jun-2025]."
+        },
+        {
+          "date": "2026-02-28",
+          "what": "Operation Epic Fury opened a coordinated United States–Israeli campaign against Iran's missile infrastructure and the Islamic Revolutionary Guard Corps — the largest United States combat deployment in the Middle East in over two decades [operation-epic-fury-iran-feb-2026].",
+          "changed": "The Strait of Hormuz was temporarily closed, disrupting global oil shipping. Because the United States is a net energy exporter, the shock transmits asymmetrically: it raises domestic energy costs and headline inflation while transferring revenue to domestic producers — a far smaller net drag than on the import-dependent economies of Europe and East Asia [operation-epic-fury-iran-feb-2026]."
+        }
+      ],
+      "currentState": "The campaign is ongoing. Iran's nuclear and conventional capabilities were substantially degraded, though assessments of the degree remain contested. Neither operation was preceded by a congressional authorization for the use of military force."
+    },
+    {
+      "thread": "Tariffs and the trade-authority question",
+      "events": [
+        {
+          "date": "2025-04-02",
+          "what": "The 'Liberation Day' executive order raised the average effective United States tariff rate from roughly 2.5 percent to an estimated 27 percent — the highest in over a century [liberation-day-tariffs-apr-2025].",
+          "changed": "Triggered global trade-war dynamics and a sharp equity sell-off; the higher country-specific rates were paused within a week [liberation-day-tariffs-apr-2025]."
+        },
+        {
+          "date": "2026-02-20",
+          "what": "The Supreme Court held in Learning Resources, Inc. v. Trump that the International Emergency Economic Powers Act cannot authorize tariffs — tariffs being a branch of the taxing power vested in Congress [scotus-ieepa-tariffs-ruling-feb-2026].",
+          "changed": "The Liberation Day regime and the trafficking-related tariffs were struck down. The administration pivoted within days to Section 122 of the Trade Act of 1974, and to expanded Section 232 and Section 301 investigations [scotus-ieepa-tariffs-ruling-feb-2026]."
+        }
+      ],
+      "currentState": "The legal instrument changed; the effective exposure of trading partners did not. Sectoral tariffs resting on other statutory authorities were never reached by the ruling. Section 122 carries statutory time limits that the invalidated emergency authority did not, which makes the durability of the current regime — not its existence — the live question."
+    },
+    {
+      "thread": "Military operations in the Western Hemisphere",
+      "events": [
+        {
+          "date": "2025-09-02",
+          "what": "The first known United States lethal strike on an alleged drug-trafficking vessel in the Caribbean; Operation Southern Spear was formally launched in November under Southern Command, eventually deploying some 15,000 personnel [operation-southern-spear-sep-2025].",
+          "changed": "Expanded United States military operational authority into the Western Hemisphere to a peacetime scale not previously reached."
+        },
+        {
+          "date": "2026-01-03",
+          "what": "Operation Absolute Resolve captured Venezuelan President Nicolás Maduro in Caracas and transported him to New York to face narco-terrorism charges — the first United States military capture of a sitting head of state in the Western Hemisphere [us-capture-maduro-venezuela-jan-2026].",
+          "changed": "Created a constitutional and governance vacuum in Venezuela and drew broad international condemnation, including from the United Nations and China [us-capture-maduro-venezuela-jan-2026]."
+        }
+      ],
+      "currentState": "Ongoing. The operation established, in practice, that the removal of a hemispheric head of state is within the range of United States executive action."
+    },
+    {
+      "thread": "Expeditionary operations outside declared war",
+      "events": [
+        {
+          "date": "2025-03-15",
+          "what": "Operation Rough Rider conducted 339 air and naval strikes against Houthi targets in Yemen over 53 days, ending on 6 May under an Oman-brokered ceasefire [operation-rough-rider-yemen-2025].",
+          "changed": "Ended without achieving its stated objective of permanently halting Red Sea attacks; independent monitors documented at least 238 civilian deaths [operation-rough-rider-yemen-2025]."
+        },
+        {
+          "date": "2025-12-19",
+          "what": "Operation Hawkeye Strike escalated direct combat operations against the Islamic State in Syria [operation-hawkeye-strike-syria-dec-2025].",
+          "changed": "Renewed sustained United States combat action in Syria under the Inherent Resolve framework."
+        },
+        {
+          "date": "2025-12-25",
+          "what": "Africa Command conducted airstrikes against Islamic State camps in Sokoto State, Nigeria — the first known United States military combat action on Nigerian soil [us-nigeria-airstrike-dec-2025].",
+          "changed": "Extended the geographic footprint of United States counter-Islamic State operations into West Africa."
+        }
+      ],
+      "currentState": "Ongoing across three theatres. Taken with Iran and the Caribbean, the United States conducted combat operations in at least six countries within sixteen months, none under a congressional authorization for the use of military force."
+    },
+    {
+      "thread": "Federal capacity and the fiscal position",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "Executive Order 14158 established the Department of Government Efficiency [doge-federal-workforce-cuts-2025].",
+          "changed": "Over 2025, more than 317,000 federal employees left federal service — a 13.7 percent decline from September 2024 — through layoffs, early retirements, deferred resignations and hiring freezes: the largest contraction of the federal civilian workforce in modern history, reshaping agency capacity across defence, health, education and regulatory bodies [doge-federal-workforce-cuts-2025]."
+        },
+        {
+          "date": "2025-07-04",
+          "what": "The One Big Beautiful Bill Act was signed into law — the largest single tax-and-spending package in at least a decade [one-big-beautiful-bill-jul-2025].",
+          "changed": "Permanently extended the 2017 tax cuts, cut Medicaid and food-assistance spending, and was scored by the Congressional Budget Office at a net deficit increase of $3.4 trillion over ten years [one-big-beautiful-bill-jul-2025]."
+        },
+        {
+          "date": "2025-10-01",
+          "what": "The federal government shut down for 43 days — the longest in United States history — ending on 12 November via a short-term continuing resolution [us-govt-shutdown-oct-nov-2025].",
+          "changed": "Furloughed hundreds of thousands of workers and disrupted services, research grants and federal payments; the underlying appropriations impasse was deferred, not resolved [us-govt-shutdown-oct-nov-2025]."
+        }
+      ],
+      "currentState": "The state's administrative capacity was reduced by roughly one in seven civilian employees in a single year, while its fiscal commitments expanded. The two move in opposite directions."
+    },
+    {
+      "thread": "Disaster exposure",
+      "events": [
+        {
+          "date": "2025-01-08",
+          "what": "Federal Major Disaster Declaration DR-4856-CA was issued for fourteen wildfires across the Los Angeles metropolitan area and San Diego County — among the costliest in California history [la-wildfires-jan-2025].",
+          "changed": "Triggered the largest federal disaster-assistance mobilisation in California in years and accelerated the national debate over the Federal Emergency Management Agency's adequacy and over insurance-market viability in wildfire-prone states [la-wildfires-jan-2025]."
+        }
+      ],
+      "currentState": "The insurance-availability question raised by the January 2025 fires remains open and is a live constraint on habitability in the exposed western states."
+    }
+  ]
+situation_fr: |-
+  [
+    {
+      "thread": "Pouvoir exécutif et tribunaux",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "Une vague de décrets présidentiels du premier jour a restructuré les priorités fédérales en matière d'immigration, de fonction publique, de commerce, de politique étrangère et d'organisation gouvernementale [trump-inauguration-eos-jan-2025].",
+          "changed": "A fixé le schéma du mandat : la politique se fait d'abord par instrument exécutif, et se plaide ensuite."
+        },
+        {
+          "date": "2025-03-14",
+          "what": "L'Alien Enemies Act de 1798 a été invoqué contre des ressortissants vénézuéliens présumés affiliés au Tren de Aragua — premier usage en temps de paix de cette loi dans l'histoire des États-Unis [alien-enemies-act-deportations-mar-2025].",
+          "changed": "Un juge fédéral nommé par le président a déclaré l'invocation illégale le 1er mai 2025; les expulsions avaient déjà eu lieu. A établi qu'une décision défavorable ne renverse pas nécessairement le fait accompli [alien-enemies-act-deportations-mar-2025]."
+        },
+        {
+          "date": "2026-06-29",
+          "what": "La Cour suprême a jugé dans Trump v. Slaughter que les protections contre la révocation sans motif des agences indépendantes multimembres violent la séparation des pouvoirs, renversant Humphrey's Executor (1935) [trump-v-slaughter-2026]. Le même jour, dans Trump v. Cook, elle a refusé d'étendre cette solution à la Réserve fédérale [trump-v-cook-2026].",
+          "changed": "Le pouvoir présidentiel de révocation s'étend désormais à l'ensemble de la branche exécutive, la banque centrale constituant la seule exception."
+        },
+        {
+          "date": "2026-06-30",
+          "what": "La Cour suprême a invalidé le décret 14160 dans Trump v. Barbara, jugeant que les enfants nés aux États-Unis de parents en situation irrégulière ou temporaire sont citoyens à la naissance en vertu du quatorzième amendement [trump-v-barbara-2026] [scotus-birthright-citizenship-jun-2026].",
+          "changed": "A mis fin à dix-sept mois de contentieux national et réaffirmé la clause de citoyenneté contre une réinterprétation par l'exécutif."
+        }
+      ],
+      "currentState": "En trente-six heures, la Cour a élargi le pouvoir exécutif sur l'État administratif et le lui a refusé sur la citoyenneté constitutionnelle. Le substrat constitutionnel est en mouvement dans les deux sens à la fois; la question de savoir si le pouvoir effectif suit l'allocation constitutionnelle est contestée et n'est pas tranchée ici."
+    },
+    {
+      "thread": "Guerre avec l'Iran",
+      "events": [
+        {
+          "date": "2025-06-21",
+          "what": "Des frappes aériennes américaines ont détruit les principales installations d'enrichissement iraniennes à Natanz, Fordow et Ispahan — premier emploi au combat du GBU-57 Massive Ordnance Penetrator [us-strikes-iran-nuclear-jun-2025].",
+          "changed": "L'Agence internationale de l'énergie atomique a estimé que l'Iran pourrait reprendre l'enrichissement en quelques mois, laissant le problème stratégique irrésolu [us-strikes-iran-nuclear-jun-2025]."
+        },
+        {
+          "date": "2026-02-28",
+          "what": "L'opération Epic Fury a lancé une campagne américano-israélienne coordonnée contre l'infrastructure de missiles iranienne et le Corps des gardiens de la révolution islamique — le plus important déploiement de combat américain au Moyen-Orient depuis plus de vingt ans [operation-epic-fury-iran-feb-2026].",
+          "changed": "Le détroit d'Ormuz a été temporairement fermé, perturbant le transport maritime mondial de pétrole. Les États-Unis étant exportateurs nets d'énergie, le choc se transmet de façon asymétrique : il augmente les coûts énergétiques intérieurs et l'inflation globale tout en transférant des revenus aux producteurs nationaux — un frein net bien moindre que pour les économies importatrices d'Europe et d'Asie de l'Est [operation-epic-fury-iran-feb-2026]."
+        }
+      ],
+      "currentState": "La campagne se poursuit. Les capacités nucléaires et conventionnelles de l'Iran ont été substantiellement dégradées, mais les évaluations du degré restent contestées. Aucune des deux opérations n'a été précédée d'une autorisation du Congrès pour le recours à la force militaire."
+    },
+    {
+      "thread": "Droits de douane et la question de l'autorité commerciale",
+      "events": [
+        {
+          "date": "2025-04-02",
+          "what": "Le décret dit du « jour de la libération » a porté le taux tarifaire effectif moyen des États-Unis d'environ 2,5 % à un niveau estimé de 27 % — le plus élevé depuis plus d'un siècle [liberation-day-tariffs-apr-2025].",
+          "changed": "A déclenché une dynamique de guerre commerciale mondiale et une forte correction boursière; les taux les plus élevés par pays ont été suspendus en une semaine [liberation-day-tariffs-apr-2025]."
+        },
+        {
+          "date": "2026-02-20",
+          "what": "La Cour suprême a jugé dans Learning Resources, Inc. v. Trump que l'International Emergency Economic Powers Act ne peut autoriser des droits de douane — ceux-ci relevant du pouvoir de taxation dévolu au Congrès [scotus-ieepa-tariffs-ruling-feb-2026].",
+          "changed": "Le régime du « jour de la libération » et les droits liés au trafic ont été invalidés. L'administration s'est repliée en quelques jours sur l'article 122 du Trade Act de 1974 et sur des enquêtes élargies au titre des articles 232 et 301 [scotus-ieepa-tariffs-ruling-feb-2026]."
+        }
+      ],
+      "currentState": "L'instrument juridique a changé; l'exposition effective des partenaires commerciaux, non. Les droits sectoriels reposant sur d'autres fondements législatifs n'ont jamais été atteints par l'arrêt. L'article 122 comporte des limites temporelles statutaires que l'autorité d'urgence invalidée n'avait pas, ce qui fait de la durabilité du régime actuel — et non de son existence — la question vive."
+    },
+    {
+      "thread": "Opérations militaires dans l'hémisphère occidental",
+      "events": [
+        {
+          "date": "2025-09-02",
+          "what": "Première frappe létale américaine connue contre un navire soupçonné de trafic de drogue dans les Caraïbes; l'opération Southern Spear a été officiellement lancée en novembre sous le commandement Sud, déployant à terme quelque 15 000 militaires [operation-southern-spear-sep-2025].",
+          "changed": "A élargi l'autorité opérationnelle militaire américaine dans l'hémisphère occidental à une échelle jamais atteinte auparavant en temps de paix."
+        },
+        {
+          "date": "2026-01-03",
+          "what": "L'opération Absolute Resolve a capturé le président vénézuélien Nicolás Maduro à Caracas et l'a transféré à New York pour répondre d'accusations de narcoterrorisme — première capture militaire américaine d'un chef d'État en exercice dans l'hémisphère occidental [us-capture-maduro-venezuela-jan-2026].",
+          "changed": "A créé un vide constitutionnel et de gouvernance au Venezuela et suscité une large condamnation internationale, notamment des Nations unies et de la Chine [us-capture-maduro-venezuela-jan-2026]."
+        }
+      ],
+      "currentState": "En cours. L'opération a établi, en pratique, que le renversement d'un chef d'État de l'hémisphère fait partie du champ d'action de l'exécutif américain."
+    },
+    {
+      "thread": "Opérations expéditionnaires hors guerre déclarée",
+      "events": [
+        {
+          "date": "2025-03-15",
+          "what": "L'opération Rough Rider a mené 339 frappes aériennes et navales contre des cibles houthies au Yémen en 53 jours, prenant fin le 6 mai à la faveur d'un cessez-le-feu négocié par Oman [operation-rough-rider-yemen-2025].",
+          "changed": "S'est achevée sans atteindre son objectif déclaré de mettre fin durablement aux attaques en mer Rouge; des observateurs indépendants ont documenté au moins 238 morts civils [operation-rough-rider-yemen-2025]."
+        },
+        {
+          "date": "2025-12-19",
+          "what": "L'opération Hawkeye Strike a intensifié les opérations de combat directes contre l'État islamique en Syrie [operation-hawkeye-strike-syria-dec-2025].",
+          "changed": "A relancé une action de combat américaine soutenue en Syrie dans le cadre d'Inherent Resolve."
+        },
+        {
+          "date": "2025-12-25",
+          "what": "Le commandement Afrique a mené des frappes aériennes contre des camps de l'État islamique dans l'État de Sokoto, au Nigéria — première action de combat américaine connue sur le sol nigérian [us-nigeria-airstrike-dec-2025].",
+          "changed": "A étendu l'empreinte géographique des opérations américaines contre l'État islamique en Afrique de l'Ouest."
+        }
+      ],
+      "currentState": "En cours sur trois théâtres. Avec l'Iran et les Caraïbes, les États-Unis ont mené des opérations de combat dans au moins six pays en seize mois, aucune sous une autorisation du Congrès pour le recours à la force militaire."
+    },
+    {
+      "thread": "Capacité fédérale et position budgétaire",
+      "events": [
+        {
+          "date": "2025-01-20",
+          "what": "Le décret 14158 a créé le Department of Government Efficiency [doge-federal-workforce-cuts-2025].",
+          "changed": "Au cours de 2025, plus de 317 000 employés fédéraux ont quitté la fonction publique fédérale — une baisse de 13,7 % par rapport à septembre 2024 — par licenciements, retraites anticipées, démissions différées et gels d'embauche : la plus forte contraction de la fonction publique civile fédérale de l'histoire moderne, remodelant la capacité des agences dans la défense, la santé, l'éducation et la réglementation [doge-federal-workforce-cuts-2025]."
+        },
+        {
+          "date": "2025-07-04",
+          "what": "La One Big Beautiful Bill Act a été promulguée — le plus important ensemble fiscal et budgétaire depuis au moins une décennie [one-big-beautiful-bill-jul-2025].",
+          "changed": "A pérennisé les baisses d'impôts de 2017, réduit les dépenses de Medicaid et d'aide alimentaire, et a été chiffrée par le Congressional Budget Office à une augmentation nette du déficit de 3 400 milliards de dollars sur dix ans [one-big-beautiful-bill-jul-2025]."
+        },
+        {
+          "date": "2025-10-01",
+          "what": "Le gouvernement fédéral a été paralysé pendant 43 jours — la plus longue fermeture de l'histoire des États-Unis — prenant fin le 12 novembre par une résolution de financement provisoire [us-govt-shutdown-oct-nov-2025].",
+          "changed": "A mis en congé forcé des centaines de milliers d'employés et perturbé les services, les subventions de recherche et les paiements fédéraux; l'impasse budgétaire de fond a été reportée, non résolue [us-govt-shutdown-oct-nov-2025]."
+        }
+      ],
+      "currentState": "La capacité administrative de l'État a été réduite d'environ un employé civil sur sept en une seule année, tandis que ses engagements budgétaires s'élargissaient. Les deux évoluent en sens contraire."
+    },
+    {
+      "thread": "Exposition aux catastrophes",
+      "events": [
+        {
+          "date": "2025-01-08",
+          "what": "La déclaration fédérale de catastrophe majeure DR-4856-CA a été émise pour quatorze incendies de forêt dans l'agglomération de Los Angeles et le comté de San Diego — parmi les plus coûteux de l'histoire de la Californie [la-wildfires-jan-2025].",
+          "changed": "A déclenché la plus vaste mobilisation d'aide fédérale en Californie depuis des années et accéléré le débat national sur l'adéquation de la Federal Emergency Management Agency et sur la viabilité du marché de l'assurance dans les États exposés aux incendies [la-wildfires-jan-2025]."
+        }
+      ],
+      "currentState": "La question de la disponibilité de l'assurance soulevée par les incendies de janvier 2025 reste ouverte et constitue une contrainte vive sur l'habitabilité des États de l'Ouest exposés."
+    }
+  ]
+economy_macroReality_en: >-
+  The United States is a services-dominated, deeply diversified advanced economy
+  — services account for the large majority of output and employment — sitting
+  on a technology and financial sector of global systemic weight and, since
+  2019, a position as a net energy exporter that few other advanced economies
+  share. Real GDP grew 2.2% in 2025 (year-over-year), decelerating from 2.8% in
+  2024 [bea-gdp-2025-advance]. Q4 2025 growth was 1.4% at a seasonally adjusted
+  annual rate (SAAR), reflecting a federal government shutdown that the Bureau
+  of Economic Analysis (BEA) estimated subtracted approximately 1.0 percentage
+  point from Q4 real GDP growth [bea-gdp-2025-advance]. Q1 2026 real GDP grew
+  2.0% SAAR per the third BEA estimate, below the consensus forecast of 2.2%,
+  partly reflecting tariff-front-loaded import surge and business investment
+  hesitancy [bea-gdp-q1-2026]. The International Monetary Fund (IMF) April 2026
+  World Economic Outlook (WEO) projected U.S. growth to moderate further in 2026
+  under the weight of trade policy uncertainty, fiscal tightening from the
+  expiration of temporary government spending, and elevated interest rates
+  [imf-weo-april-2026]. Inflation as measured by the personal consumption
+  expenditures (PCE) price index rose 2.9% in Q4 2025, above the Federal
+  Reserve's 2% target [bea-gdp-2025-advance]; the Congressional Budget Office
+  (CBO) 2026–2036 baseline projected the federal deficit at $1.9 trillion for
+  fiscal year (FY) 2026 and federal debt held by the public at approximately
+  100% of GDP [cbo-outlook-2026-2036]. The fiscal outlook was materially altered
+  by the OBBBA (P.L. 119-21), which permanently extended lower top-end tax rates
+  and added an estimated $3–4 trillion to the debt over ten years per CBO
+  scoring [one-big-beautiful-bill-jul-2025] [cbo-outlook-2026-2036]. Moody's
+  Ratings downgraded U.S. sovereign debt from Aaa to Aa1 in May 2025, completing
+  the trifecta of major-agency downgrades (S&P in 2011, Fitch in 2023, Moody's
+  in 2025), citing large fiscal deficits and rising interest burden
+  [moodys-downgrade-2025]. The Federal Reserve (Fed) monetary policy stance as
+  of July 2026 remained restrictive; the Fed's July 2026 Monetary Policy Report
+  assessed that inflation remained above target while the labor market softened,
+  with June 2026 unemployment at 4.2% and only 57,000 jobs added
+  [fed-monetary-policy-report-july-2026]. The Corruption Perceptions Index (CPI)
+  2025 (Transparency International) scored the U.S. at 65/100, reflecting
+  governance concerns amplified by DOGE-driven institutional changes
+  [transparency-cpi-2025]. One external channel is material and is not visible
+  in the aggregate figures. The closure of the Strait of Hormuz during Operation
+  Epic Fury disrupted global oil shipping [operation-epic-fury-iran-feb-2026];
+  because the United States is a net energy exporter, the shock transmits
+  asymmetrically — raising domestic energy costs and therefore headline
+  inflation, while simultaneously transferring revenue to domestic producers and
+  improving the energy trade balance. The net effect on the United States is
+  contractionary but far less so than for the import-dependent economies of
+  Europe and East Asia, and the distributional split — cost to households, gain
+  to a concentrated producer class — is not captured in the headline rate.
+economy_macroReality_fr: >-
+  Les États-Unis sont une économie avancée dominée par les services et
+  profondément diversifiée — les services représentent la grande majorité de la
+  production et de l'emploi — adossée à un secteur technologique et financier
+  d'un poids systémique mondial et, depuis 2019, à une position d'exportateur
+  net d'énergie que peu d'autres économies avancées partagent. Le PIB réel
+  américain a progressé de 2,2 % en 2025 (en glissement annuel), décélérant par
+  rapport aux 2,8 % de 2024 [bea-gdp-2025-advance]. Le T4 2025 a affiché une
+  croissance de 1,4 % en rythme annuel désaisonnalisé, la fermeture du
+  gouvernement ayant retranché environ 1,0 point de pourcentage
+  [bea-gdp-2025-advance]. Le T1 2026 a enregistré une croissance de 2,0 % SAAR
+  selon la troisième estimation du BEA [bea-gdp-q1-2026]. Le FMI a projeté en
+  avril 2026 une modération de la croissance américaine sous l'effet de
+  l'incertitude commerciale et des taux d'intérêt élevés [imf-weo-april-2026].
+  L'inflation PCE a atteint 2,9 % au T4 2025, au-dessus de la cible de 2 % de la
+  Fed [bea-gdp-2025-advance]. Le CBO projette un déficit fédéral de 1 900
+  milliards de dollars pour l'exercice 2026 et une dette publique d'environ 100
+  % du PIB [cbo-outlook-2026-2036]. Moody's a abaissé la note souveraine
+  américaine de Aaa à Aa1 en mai 2025 [moodys-downgrade-2025]. Le taux de
+  chômage s'est établi à 4,2 % en juin 2026
+  [fed-monetary-policy-report-july-2026]. Un canal externe est important et
+  n'apparaît pas dans les chiffres agrégés. La fermeture du détroit d'Ormuz
+  pendant l'opération Epic Fury a perturbé le transport maritime mondial de
+  pétrole [operation-epic-fury-iran-feb-2026]; les États-Unis étant exportateurs
+  nets d'énergie, le choc se transmet de façon asymétrique — il augmente les
+  coûts énergétiques intérieurs, et donc l'inflation globale, tout en
+  transférant des revenus aux producteurs nationaux et en améliorant la balance
+  énergétique. L'effet net sur les États-Unis est contractionniste, mais bien
+  moins que pour les économies importatrices d'Europe et d'Asie de l'Est, et le
+  partage distributif — coût pour les ménages, gain pour une classe de
+  producteurs concentrée — n'est pas saisi par le taux global.
+economy_externalVulnerability_en: >-
+  The United States runs a persistent current-account deficit: the goods trade
+  deficit for 2025 reflects the impact of front-loaded tariff activity and
+  import surges ahead of the Liberation Day regime [bea-trade-annual-2025]. The
+  U.S. Trade Representative (USTR) 2025 Trade Policy Agenda identified China,
+  the European Union (EU), Canada, and Mexico as the principal bilateral trade
+  relationships [ustr-trade-policy-2025]. Following the IEEPA ruling, the
+  administration shifted to Section 122 of the Trade Act of 1974 and expanded
+  Section 301/232 investigations [scotus-ieepa-tariffs-ruling-feb-2026]. The
+  U.S. net international investment position is deeply negative, reflecting
+  decades of current account deficits financed by foreign capital inflows;
+  Treasury bond holdings by China and Japan represent the principal
+  sovereign-debt concentration risk [bea-international-transactions-2025]. The
+  U.S. is not under an IMF program. U.S. dollar reserve currency status provides
+  a structural cushion to external vulnerability that no other economy possesses
+  at comparable scale. The Strait of Hormuz disruption from Operation Epic Fury
+  temporarily elevated domestic energy costs [operation-epic-fury-iran-feb-2026]
+  [eia-steo-july-2026].
+economy_externalVulnerability_fr: >-
+  Les États-Unis enregistrent un déficit courant persistant, reflétant l'impact
+  des activités tarifaires en avance de phase et des afflux d'importations
+  précédant le régime Liberation Day [bea-trade-annual-2025]. L'USTR a identifié
+  la Chine, l'UE, le Canada et le Mexique comme principaux partenaires
+  commerciaux bilatéraux [ustr-trade-policy-2025]. Après la décision IEEPA,
+  l'administration s'est tournée vers la Section 122 du Trade Act de 1974
+  [scotus-ieepa-tariffs-ruling-feb-2026]. La position extérieure nette des
+  États-Unis est profondément négative; les détentions chinoises et japonaises
+  de bons du Trésor représentent le principal risque de concentration
+  [bea-international-transactions-2025]. La perturbation du détroit d'Ormuz lors
+  de l'opération Epic Fury a temporairement élevé les coûts énergétiques
+  intérieurs [operation-epic-fury-iran-feb-2026].
+economy_politicalEconomy_en: >-
+  The OBBBA locks in a redistributive structure benefiting upper-income
+  households through permanent tax rate reductions and benefit cuts to Medicaid
+  and food assistance that affect lower-income populations
+  [one-big-beautiful-bill-jul-2025]. The Federal Reserve's Distributional
+  Financial Accounts show that the wealthiest 1% of households hold
+  approximately 30% of total household wealth, while the bottom 50% hold
+  approximately 3%, a concentration that has been broadly stable [fed-dfa]. The
+  technology sector and financial elite are well-represented in advisory and
+  regulatory roles under the current administration; DOGE's workforce reductions
+  have disproportionately affected regulatory agencies overseeing these sectors.
+  Structural fiscal reform — broadening the tax base, reforming entitlement
+  trajectories — is technically necessary given the CBO debt projection
+  [cbo-outlook-2026-2036] but politically foreclosed by the OBBBA's permanent
+  provisions and the administration's stated opposition to tax increases. The
+  IEEPA ruling requires the administration to use less flexible trade tools,
+  moderately constraining protectionist leverage while not ending it
+  [scotus-ieepa-tariffs-ruling-feb-2026].
+economy_politicalEconomy_fr: >-
+  L'OBBBA verrouille une structure redistributive favorisant les ménages à
+  revenus élevés par des réductions de taux d'imposition permanentes et des
+  réductions des prestations Medicaid et d'aide alimentaire affectant les
+  populations à faibles revenus [one-big-beautiful-bill-jul-2025]. Les comptes
+  financiers distributionnels de la Fed montrent que les 1 % les plus riches
+  détiennent environ 30 % de la richesse totale des ménages [fed-dfa]. La
+  réforme structurelle des finances publiques est techniquement nécessaire
+  [cbo-outlook-2026-2036] mais politiquement forclose par les dispositions
+  permanentes de l'OBBBA [one-big-beautiful-bill-jul-2025].
+territory_geography_en: >-
+  The United States is a continental power spanning the width of North America
+  between the Atlantic and Pacific oceans, bordered by two neighbours — Canada
+  to the north and Mexico to the south — with the non-contiguous state of Alaska
+  on the Arctic and the state of Hawaii and the inhabited territories scattered
+  across the Pacific.
+
+
+  The contiguous United States (CONUS) covers approximately 7.66 million km²,
+  encompassing highly diverse terrain from the Rocky Mountain and Sierra Nevada
+  ranges in the west through the Great Plains to the Appalachians and Atlantic
+  coastal plain in the east [bts-tsar-2025]. Approximately 40% of the U.S.
+  population lives in coastal counties, with major port complexes concentrated
+  in Los Angeles/Long Beach, New York/New Jersey, and the Gulf Coast
+  [noaa-coastal-management-fastfacts]. Internal connectivity is predominantly
+  road-based with an interstate highway network exceeding 77,000 km; freight
+  rail is extensive but passenger rail underdeveloped outside the Northeast
+  Corridor [bts-tsar-2025]. Broadband gaps persist: the Federal Communications
+  Commission (FCC) Broadband Data Collection (December 2024) identifies
+  approximately 14–21 million households lacking access to fixed broadband at
+  benchmark speeds, concentrated in rural and tribal areas
+  [fcc-broadband-data-collection]. The inhabited insular periphery — the
+  Commonwealth of Puerto Rico, Guam, USVI, CNMI, and American Samoa — plus the
+  non-contiguous states of Alaska and Hawaii represent strategic projections in
+  the Caribbean and Indo-Pacific, respectively, but face infrastructural
+  fragility and climate exposure disproportionate to their governance resources
+  [doi-insular-affairs].
+territory_geography_fr: >-
+  Les États-Unis sont une puissance continentale s'étendant sur toute la largeur
+  de l'Amérique du Nord entre l'Atlantique et le Pacifique, bordée par deux
+  voisins — le Canada au nord et le Mexique au sud — avec l'État non contigu de
+  l'Alaska sur l'Arctique, l'État d'Hawaï et les territoires habités dispersés
+  dans le Pacifique.
+
+
+  Les États-Unis contigus (CONUS) couvrent environ 7,66 millions de km², avec un
+  terrain très diversifié des Rocheuses à la plaine côtière atlantique
+  [bts-tsar-2025]. Environ 40 % de la population américaine vit dans les comtés
+  côtiers [noaa-coastal-management-fastfacts]. La connectivité interne repose
+  principalement sur un réseau routier de plus de 77 000 km; le réseau
+  ferroviaire de fret est étendu mais les transports ferroviaires de passagers
+  sont peu développés en dehors du couloir nord-est [bts-tsar-2025]. Des lacunes
+  en matière de haut débit persistent, avec 14 à 21 millions de ménages sans
+  accès à un débit fixe de référence [fcc-broadband-data-collection]. La
+  périphérie insulaire habitée — Porto Rico, Guam, USVI, CNMI et Samoa
+  américaines — fait face à une fragilité infrastructurelle et une exposition
+  climatique disproportionnées à leurs ressources de gouvernance
+  [doi-insular-affairs].
+territory_minerals_en: >-
+  The United States holds one of the world's most diverse critical-mineral
+  endowments. According to the U.S. Geological Survey (USGS) Mineral Commodity
+  Summaries 2026, the U.S. has significant domestic reserves of: copper (45
+  million tonnes); gold (3,000 tonnes reserve); lithium (12 million tonnes
+  resource); rare earth elements (REE) (1.8 million tonnes reserve, principally
+  in California and Wyoming); phosphate rock (1 billion tonnes); and is a major
+  producer of coal, natural gas, crude oil, and potash [usgs-mcs-2026]. The U.S.
+  remains heavily import-reliant for several critical minerals including cobalt
+  (76% net import reliance), manganese (100%), graphite (100%), and several REE
+  processing stages [usgs-mcs-2026]. The USGS Mineral Commodity Summaries 2025
+  identified 50 mineral commodities as critical minerals under the Energy Act of
+  2020, with supply chain vulnerabilities concentrated in processing capacity
+  (dominated by China) rather than in primary reserves [usgs-mcs-2025].
+territory_minerals_fr: >-
+  Les États-Unis possèdent l'un des patrimoines en minéraux critiques les plus
+  diversifiés au monde. Selon le USGS Mineral Commodity Summaries 2026, les
+  réserves américaines importantes comprennent : cuivre (45 millions de tonnes),
+  or (3 000 tonnes), lithium (12 millions de tonnes de ressources), éléments de
+  terres rares (REE) (1,8 million de tonnes), phosphate (1 milliard de tonnes)
+  [usgs-mcs-2026]. Les États-Unis restent fortement dépendants des importations
+  pour le cobalt (76 %), le manganèse (100 %) et le graphite (100 %)
+  [usgs-mcs-2026].
+territory_biosphere_en: >-
+  The United States holds approximately 750 million hectares (ha) of total land
+  area, of which roughly 303 million ha is forest (as of 2020), making it the
+  fourth-largest national forest estate globally, per the Food and Agriculture
+  Organization (FAO) Global Forest Resources Assessment 2025 [fao-fra-2025].
+  U.S. forest cover has been broadly stable since 1990, but increased fire
+  intensity — particularly in the western states — and drought stress are
+  degrading ecosystem services and carbon stock [nca5]. Arable land totals
+  approximately 158 million ha; the 2022 Census of Agriculture counted 894
+  million acres under farm operation, down 2% from 2017, reflecting continued
+  farmland consolidation [usda-nass-census-agriculture-2022]. Freshwater: the
+  U.S. has approximately 3,069 km³ of total renewable freshwater resources per
+  year, of which approximately 1,600 km³ is withdrawn annually, with agriculture
+  accounting for approximately 80% of consumptive use; aquifer depletion —
+  particularly the Ogallala Aquifer underlying the Great Plains — is a long-term
+  structural constraint [fao-aquastat-usa]. Fisheries: the NOAA Fisheries annual
+  Status of Stocks report (2024) found 46 federally managed stocks subject to
+  overfishing and 47 overfished, continuing a multi-year trend of improvement
+  from a 2000s peak of overfishing rates, but recreational and climate pressures
+  persist [noaa-status-stocks-2024]. Food security: the USDA Economic Research
+  Service (ERS) found that approximately 13.5% of U.S. households (18.0 million)
+  were food insecure in 2024, the highest rate since 2014, with disproportionate
+  exposure in single-parent and minority households
+  [usda-ers-food-security-2024].
+territory_biosphere_fr: >-
+  Les États-Unis possèdent environ 303 millions d'ha de forêts (2020), quatrième
+  plus grande superficie forestière nationale au monde [fao-fra-2025]. Les
+  terres arables totalisent environ 158 millions d'ha; le recensement agricole
+  de 2022 a dénombré 894 millions d'acres en exploitation, en baisse de 2 %
+  [usda-nass-census-agriculture-2022]. L'aquifère Ogallala, sous les Grandes
+  Plaines, constitue une contrainte structurelle à long terme pour
+  l'approvisionnement en eau [fao-aquastat-usa]. Environ 13,5 % des ménages
+  américains (18,0 millions) étaient en insécurité alimentaire en 2024, le taux
+  le plus élevé depuis 2014 [usda-ers-food-security-2024].
+territory_climate_en: >-
+  The United States spans nearly every climate zone, from Arctic tundra in
+  Alaska through temperate continental interiors and humid subtropical southeast
+  to arid southwest desert and tropical Hawaii and the Pacific territories — a
+  range so wide that no single national baseline describes it, and warming
+  registers differently in each.
+
+
+  Observed warming: the contiguous U.S. has warmed approximately 1.3°C above the
+  1901–1960 average by 2020, with the rate accelerating; Alaska has warmed at
+  more than twice the global average rate, per the Fifth National Climate
+  Assessment (NCA5) [nca5]. Principal hazards by region: (a) Southwest — extreme
+  heat, extended drought, water scarcity (Colorado River system under structural
+  deficit), and high-intensity wildfire, projected under the Representative
+  Concentration Pathway (RCP) 4.5 scenario to see a 200% increase in area burned
+  by 2050 [nca5]; (b) Gulf and Southeast coasts — intensification of hurricane
+  winds and rainfall, sea-level rise (0.25–0.61 m by 2100 under RCP 4.5), with
+  Miami and Houston at high compound flood risk [worldbank-climate-portal-usa];
+  (c) Midwest and Plains — drought-to-flood cycles affecting agricultural
+  production, with the Ogallala Aquifer depletion accelerating [nca5]; (d)
+  Alaska — permafrost thaw causing infrastructure subsidence, coastline erosion,
+  and ecosystem disruption [nca5]; (e) Puerto Rico and U.S. territories —
+  increasing Category 4–5 hurricane intensity and sea-level rise threatening
+  low-lying populations [nca5]. Adaptive capacity is strongly differentiated:
+  wealthy coastal and urban jurisdictions have the financial capacity to fund
+  resilience infrastructure; rural, tribal, and insular territory populations
+  face the highest exposure-to-capacity gap. The removal of globalchange.gov in
+  2025 and the administration's withdrawal from climate adaptation frameworks
+  represent a material reduction in federal coordination capacity
+  [cat-usa-2026].
+territory_climate_fr: >-
+  Les États-Unis couvrent presque toutes les zones climatiques, de la toundra
+  arctique de l'Alaska aux intérieurs continentaux tempérés, du sud-est
+  subtropical humide au désert aride du sud-ouest, jusqu'à Hawaï et aux
+  territoires du Pacifique tropicaux — une amplitude si vaste qu'aucune
+  référence nationale unique ne la décrit, et le réchauffement s'y manifeste
+  différemment selon les régions.
+
+
+  Le réchauffement observé dans les États-Unis contigus s'élève à environ 1,3 °C
+  au-dessus de la moyenne 1901–1960, le taux d'Alaska dépassant plus de deux
+  fois la moyenne mondiale [nca5]. Les principaux risques comprennent :
+  sécheresse et incendies dans le Sud-Ouest, intensification des ouragans le
+  long des côtes du Golfe et de l'Atlantique, cycles sécheresse-inondation dans
+  le Midwest, dégel du pergélisol en Alaska, et risques d'ouragan accrus pour
+  Porto Rico et les territoires [nca5] [worldbank-climate-portal-usa]. La
+  capacité d'adaptation est fortement différenciée : les juridictions côtières
+  et urbaines aisées disposent de ressources financières; les populations
+  rurales, tribales et insulaires présentent le plus grand écart
+  exposition-capacité [cat-usa-2026].
+territory_metabolism_en: >-
+  Energy: the United States is the world's largest producer of oil and natural
+  gas. The EIA Annual Energy Outlook (AEO) 2026 projects the U.S. to remain a
+  net energy exporter through 2050 under the reference case, with crude oil
+  production sustained at approximately 13 million barrels per day (bbl/d) and
+  natural gas at record-high production levels [eia-aeo-2026]. The Strait of
+  Hormuz disruption from Operation Epic Fury temporarily tightened global
+  markets but did not fundamentally threaten U.S. domestic supply given its
+  net-exporter status [eia-steo-july-2026]. Electricity generation in 2025
+  reflected a continued shift toward renewables: Ember data show renewables
+  (wind, solar, hydro) at approximately 25–28% of total generation in 2025, with
+  natural gas at approximately 43%, coal declining to approximately 16%
+  [ember-yearly-electricity]. The EIA AEO 2026 reference case projects
+  renewables continuing to grow but natural gas remaining the backbone of the
+  generation mix through the 2030s [eia-aeo-2026]. Food self-sufficiency is
+  high: the U.S. is a major net exporter of agricultural commodities (corn,
+  soybeans, wheat), but domestic food insecurity is a
+  distribution-and-affordability problem rather than a production shortage
+  [usda-ers-food-security-2024]. Water metabolism: the U.S. withdraws
+  approximately 1,600 km³ per year, with the western interior facing chronic
+  overallocation of surface-water rights and accelerating groundwater depletion
+  [fao-aquastat-usa].
+territory_metabolism_fr: >-
+  Les États-Unis sont le plus grand producteur mondial de pétrole et de gaz
+  naturel, avec une production pétrolière d'environ 13 millions de bbl/j, et
+  devraient rester exportateurs nets d'énergie jusqu'en 2050 [eia-aeo-2026]. La
+  perturbation du détroit d'Ormuz n'a pas fondamentalement menacé
+  l'approvisionnement intérieur américain étant donné son statut d'exportateur
+  net [eia-steo-july-2026]. Les renouvelables représentaient environ 25–28 % de
+  la production électrique totale en 2025, avec le gaz naturel à environ 43 %
+  [ember-yearly-electricity]. Les États-Unis sont exportateurs nets de produits
+  agricoles, mais l'insécurité alimentaire intérieure est un problème de
+  distribution et d'accessibilité [usda-ers-food-security-2024].
+territory_transition_en: >-
+  The Climate Action Tracker (CAT) as of June 2026 rated U.S. climate policies
+  as 'Critically Insufficient' — the lowest category — reflecting the withdrawal
+  from the Paris Agreement under executive action at the start of the second
+  Trump term, the rescission of Biden-era clean energy regulations, DOGE-driven
+  staffing reductions at the EPA and other climate agencies, and the effective
+  pause of the Inflation Reduction Act (IRA)'s clean energy incentive deployment
+  in new federal spending [cat-usa-2026]. The target gap: the U.S. Nationally
+  Determined Contribution (NDC) under the Paris Agreement committed to 50–52%
+  emissions reduction below 2005 levels by 2030; the CAT's current-policy
+  trajectory projects the U.S. reaching approximately 25–30% reduction by 2030
+  under current policies — a gap of 20–25 percentage points [cat-usa-2026]. U.S.
+  greenhouse gas (GHG) emissions declined through 2023 on continued coal-to-gas
+  switching and renewable deployment; the trajectory under the current policy
+  rollback is toward a plateau or modest reversal [cat-usa-2026] [eia-aeo-2026].
+  The deep structural advantage is that the U.S. technology and industrial base
+  retains world-leading capability in clean energy innovation; the constraint is
+  political will, not technical capacity.
+territory_transition_fr: >-
+  Le Climate Action Tracker a évalué les politiques climatiques américaines
+  comme « Critiquement insuffisantes » en juin 2026, reflétant le retrait de
+  l'Accord de Paris, l'annulation des réglementations d'énergie propre de l'ère
+  Biden et les réductions d'effectifs au sein de l'EPA [cat-usa-2026]. L'écart
+  par rapport aux objectifs est de 20 à 25 points de pourcentage pour l'objectif
+  2030 [cat-usa-2026]. Les émissions de GES ont diminué jusqu'en 2023, mais la
+  trajectoire sous la politique actuelle tend vers un plateau [cat-usa-2026]
+  [eia-aeo-2026].
+capacity_permitting_en: >-
+  Major project permitting in the United States runs through two distinct gates,
+  and the binding one is not the one usually named. Federal environmental review
+  under the National Environmental Policy Act (NEPA) is slow: the Council on
+  Environmental Quality (CEQ) found the average Environmental Impact Statement
+  (EIS) takes roughly 4.5 years to complete, with large energy and
+  infrastructure projects frequently exceeding seven [ceq-eis-timelines-2025].
+  But most permitting in the United States is not federal. Siting authority for
+  large-scale wind and solar sits at state level in 28 states and is delegated
+  to local governments in 22, with defined statutory timelines existing in fewer
+  than half [lbnl-state-siting-inventory-2024]. Where that state review runs, it
+  is not the wall it is assumed to be: across 19 states between 2018 and 2024,
+  state siting processes approved approximately 90 percent of the wind and solar
+  projects that entered formal review, most within about a year
+  [frontiers-state-permitting-wind-solar-2026]. Approval, in other words, is
+  largely granted. What is not granted is a grid connection. As of the end of
+  2025, over 2,060 gigawatts of generation and storage capacity sat in
+  interconnection queues across the independent system operators and non-market
+  balancing areas — more than twice the entire installed capacity of the United
+  States power fleet — with most of it withdrawing before it ever connects
+  [lbnl-queued-up-2025]. The United States has, substantially, solved the
+  permitting problem it set out to solve and hit a transmission wall behind it.
+  The One Big Beautiful Bill Act (OBBBA) contains provisions to further
+  accelerate NEPA review for energy projects [one-big-beautiful-bill-jul-2025];
+  on the evidence, faster federal review addresses the constraint that binds
+  least. The federal permitting dashboard maintained by the Federal Permitting
+  Improvement Steering Council tracks major federal authorisations in real time
+  and is the published federal regime, but it is not the whole approvals picture
+  and should not be read as such [permits-performance-gov].
+capacity_permitting_fr: >-
+  L'autorisation des grands projets aux États-Unis passe par deux portes
+  distinctes, et la porte contraignante n'est pas celle que l'on désigne
+  habituellement. L'examen environnemental fédéral en vertu de la National
+  Environmental Policy Act (NEPA) est lent : le Council on Environmental Quality
+  (CEQ) constate qu'une étude d'impact environnemental (EIS) prend en moyenne
+  environ 4,5 ans, les grands projets énergétiques et d'infrastructure dépassant
+  fréquemment sept ans [ceq-eis-timelines-2025]. Mais l'essentiel des
+  autorisations n'est pas fédéral. L'autorité d'implantation des grands projets
+  éoliens et solaires relève de l'État dans 28 États et est déléguée aux
+  gouvernements locaux dans 22, des délais statutaires définis n'existant que
+  dans moins de la moitié d'entre eux [lbnl-state-siting-inventory-2024]. Là où
+  cet examen étatique s'applique, il n'est pas le mur que l'on suppose : dans 19
+  États entre 2018 et 2024, les processus d'implantation étatiques ont approuvé
+  environ 90 % des projets éoliens et solaires soumis à un examen formel, la
+  plupart en un an environ [frontiers-state-permitting-wind-solar-2026].
+  L'autorisation, autrement dit, est largement accordée. Ce qui ne l'est pas,
+  c'est le raccordement au réseau. À la fin de 2025, plus de 2 060 gigawatts de
+  capacité de production et de stockage attendaient dans les files
+  d'interconnexion des gestionnaires de réseau et des zones d'équilibrage hors
+  marché — plus du double de la capacité installée totale du parc électrique
+  américain — la plus grande partie se retirant avant même de se raccorder
+  [lbnl-queued-up-2025]. Les États-Unis ont, pour l'essentiel, résolu le
+  problème d'autorisation qu'ils s'étaient donné à résoudre et buté sur un mur
+  de transport situé derrière. La One Big Beautiful Bill Act (OBBBA) contient
+  des dispositions visant à accélérer davantage l'examen NEPA pour les projets
+  énergétiques [one-big-beautiful-bill-jul-2025]; à la lumière des données, un
+  examen fédéral plus rapide s'attaque à la contrainte qui pèse le moins. Le
+  tableau de bord fédéral tenu par le Federal Permitting Improvement Steering
+  Council suit en temps réel les autorisations fédérales majeures et constitue
+  le régime fédéral publié, mais il ne représente pas l'ensemble du paysage des
+  autorisations et ne doit pas être lu comme tel [permits-performance-gov].
+capacity_delivery_en: >-
+  Federal delivery capacity is materially degraded following DOGE's workforce
+  reduction program. Agency operational capacity — particularly at the EPA, the
+  Department of Transportation (DOT), and the Department of Housing and Urban
+  Development (HUD) — has been impacted by mass firings, voluntary departures,
+  and hiring freezes since January 2025 [doge-federal-workforce-cuts-2025]. The
+  43-day shutdown (October–November 2025) disrupted grants, contracts, and
+  regulatory processes across agencies [us-govt-shutdown-oct-nov-2025].
+  Infrastructure delivery costs in the U.S. remain high by international
+  comparators; cost overruns and schedule slippage on major transit projects
+  (notably in New York, California, and Maryland) continue to reflect a systemic
+  delivery gap [bts-tsar-2025]. War-theater logistics and procurement for
+  Operation Epic Fury and concurrent operations are placing pressure on defense
+  industrial base capacity, with the $954 billion defense budget (2025)
+  representing 33% of global military spending — the highest single-country
+  share [sipri-milex-2025].
+capacity_delivery_fr: >-
+  La capacité de réalisation fédérale est matériellement dégradée suite au
+  programme de réduction des effectifs du DOGE depuis janvier 2025
+  [doge-federal-workforce-cuts-2025]. La fermeture de 43 jours a perturbé les
+  subventions, contrats et processus réglementaires
+  [us-govt-shutdown-oct-nov-2025]. Le budget de défense de 954 milliards de
+  dollars (2025) représente 33 % des dépenses militaires mondiales
+  [sipri-milex-2025].
+capacity_productivity_en: >-
+  Total factor productivity (TFP) in the U.S. private nonfarm business sector
+  continued a post-pandemic recovery through 2025, with the BLS annual TFP
+  release noting positive productivity growth driven by AI adoption and
+  services-sector efficiency gains [bls-total-factor-productivity-2025]. The
+  principal internal barriers to the movement of goods, labor, and capital
+  between the 50 states — termed 'interstate barriers' — include state
+  occupational licensing variation (now affecting more than 25% of the workforce
+  across approximately 1,100 licensed occupations, with minimal reciprocity),
+  state-specific building codes and land-use restrictions that amplify housing
+  cost differentials and labor immobility, and state tax and regulatory
+  variation across the federal structure. Raw material extraction (oil, gas,
+  coal, agriculture, mining) remains a large-scale export sector, but the
+  highest-value output is processed domestically — software, pharmaceuticals,
+  aerospace — reflecting a deep-processing advantage relative to commodity
+  exporters [bls-total-factor-productivity-2025].
+capacity_productivity_fr: >-
+  La productivité globale des facteurs (PGF) dans le secteur privé non agricole
+  a poursuivi sa reprise post-pandémique en 2025, soutenue par l'adoption de
+  l'IA et les gains d'efficacité dans les services
+  [bls-total-factor-productivity-2025]. Les principales barrières interétatiques
+  comprennent la variation des licences professionnelles (plus de 25 % de la
+  main-d'œuvre dans environ 1 100 professions), les codes de construction
+  spécifiques à chaque État, et la variation fiscale et réglementaire entre
+  États [bls-total-factor-productivity-2025].
+society_demographics_en: >-
+  The United States is a settler-and-immigrant society built through successive
+  waves of migration onto a continent whose Indigenous peoples were displaced —
+  a founding condition that makes migration, not natural increase, the
+  historical engine of its demography.
+
+
+  Total population: approximately 340.1 million as of July 1, 2025 (Census
+  Bureau Vintage 2025 estimates) [census-vintage-2025-population]
+  [census-population-estimates-2025]. Population growth slowed markedly in 2025:
+  the Census Bureau reported that U.S. population growth slowed to the lowest
+  rate since the Great Depression due to a historic decline in immigration under
+  the Trump administration's enforcement regime
+  [census-vintage-2025-population]. Median age: approximately 38.9 years (UN WPP
+  2024), reflecting a moderately aging population — neither a youth bulge nor an
+  extreme aging crisis at present, but on a trajectory toward a higher
+  dependency ratio [un-wpp-2024]. The urban-rural split is approximately 83%
+  urban / 17% rural. Net international migration had been a primary demographic
+  driver, contributing approximately 1.1–1.3 million persons per year in
+  2023–2024; the 2025 enforcement and deportation program materially reduced
+  this inflow [census-vintage-2025-population].
+society_demographics_fr: >-
+  Les États-Unis sont une société de colons et d'immigrants édifiée par vagues
+  successives de migration sur un continent dont les peuples autochtones ont été
+  déplacés — une condition fondatrice qui fait de la migration, et non de
+  l'accroissement naturel, le moteur historique de leur démographie.
+
+
+  La population totale s'élève à environ 340,1 millions au 1er juillet 2025
+  (estimations Vintage 2025 du Bureau du recensement)
+  [census-vintage-2025-population] [census-population-estimates-2025]. La
+  croissance démographique a ralenti jusqu'au niveau le plus bas depuis la
+  Grande Dépression en raison d'un déclin historique de l'immigration
+  [census-vintage-2025-population]. L'âge médian est d'environ 38,9 ans,
+  reflétant une population modérément vieillissante [un-wpp-2024]. La
+  répartition urbaine/rurale est d'environ 83/17 %.
+society_composition_en: >-
+  Per the 2020 Decennial Census: White alone (not Hispanic or Latino) — 57.8%;
+  Hispanic or Latino (any race) — 18.7%; Black or African American alone —
+  12.1%; Asian alone — 5.9%; multiracial — 3.3%; American Indian and Alaska
+  Native — 0.7%; other — 1.5% [census-2020-decennial-race]. Linguistic: English
+  is the de facto national language with no constitutionally designated official
+  language; Spanish is the principal second language, spoken by approximately 41
+  million persons at home. The principal fault lines are: (a) race/ethnicity,
+  (b) class (income and wealth concentration), and (c) partisan political
+  identity, which in the current period are REINFORCING rather than
+  cross-cutting — partisanship, race, education level, and geography stack along
+  largely the same dividing lines, amplifying social polarization and reducing
+  systemic defusing mechanisms [freedom-house-2026]
+  [vdem-democracy-report-2026].
+society_composition_fr: >-
+  D'après le recensement décennal de 2020 : Blancs seuls (non hispaniques) —
+  57,8 %; Hispaniques ou Latinos — 18,7 %; Noirs — 12,1 %; Asiatiques — 5,9 %;
+  multiracial — 3,3 % [census-2020-decennial-race]. Les principales lignes de
+  fracture (race, classe, identité politique) sont RENFORCÉES — le clivage
+  partisan, racial, éducatif et géographique s'alignent sur les mêmes divisions,
+  amplifiant la polarisation [freedom-house-2026] [vdem-democracy-report-2026].
+society_religion_en: >-
+  Per the Pew Research Center 2023–24 Religious Landscape Study: Christian —
+  approximately 62% (Protestant ~40%, Catholic ~19%, other Christian ~3%);
+  religiously unaffiliated ('none') — approximately 28%; non-Christian faiths
+  (Jewish, Muslim, Buddhist, Hindu, other) — approximately 10%
+  [pew-religious-landscape-2025]. The official count reflects self-reported
+  affiliation and known upward bias: actual regular religious practice (weekly
+  attendance) is substantially lower than affiliation. The principal lived fault
+  line is between evangelical Protestant identity and secular/non-religious
+  identity, which maps strongly onto partisan divisions — evangelical Protestant
+  affiliation correlates strongly with Republican Party identification and is a
+  key mobilizing base for the Trump coalition [pew-religious-landscape-2025].
+  Prosperity-gospel networks and Christian nationalist movements exercise
+  political mobilization capacity disproportionate to their numerical size.
+  Religious diversity is substantial but political salience is concentrated in
+  the evangelical-secular divide [pew-religious-landscape-2025].
+society_religion_fr: >-
+  Selon l'étude du Pew Research Center 2023–24 : Chrétiens — environ 62 %
+  (protestants ~40 %, catholiques ~19 %); sans religion — environ 28 %; autres
+  religions — environ 10 % [pew-religious-landscape-2025]. Le principal clivage
+  confessionnel — entre l'identité protestante évangélique et l'identité
+  laïque/non-religieuse — se superpose fortement aux divisions partisanes et
+  constitue une base de mobilisation clé pour la coalition Trump
+  [pew-religious-landscape-2025].
+society_cohesion_en: >-
+  Public trust in the federal government is at a near-historic low. The primary
+  instrument — Pew Research Center's 'Public Trust in Government: 1958–2025' —
+  recorded that just 17% of U.S. adults said they trust the federal government
+  to do what is right 'just about always' or 'most of the time' in the September
+  2025 survey, down from 22% in 2024 [pew-trust-government-2025]. SELF-REPORT
+  RELIABILITY FLAG — partisan-sorted: Democratic trust fell to 9%, Republican
+  trust stood at 26% [pew-trust-government-2025]. These figures must not be
+  treated as measuring stable underlying social trust; they track which party
+  controls the White House. Cohort and partisan breakdowns are the analytically
+  valid unit, not the headline aggregate. The parallel Gallup series on trust in
+  the federal government to handle international and domestic problems shows the
+  same partisan-sorting pattern and confirms the directional trend
+  [gallup-trust-government-2025]. The broader picture from the V-Dem Democracy
+  Report 2026 and Freedom House 2026 is one of sustained democratic backsliding:
+  Freedom House scored the U.S. 81/100 in 2026, down 3 points from 2024, with
+  the U.S. recording the steepest sustained decline of any country over
+  2005–2025; the Pew Research Center April 2026 synthesis found 69% of U.S.
+  adults dissatisfied with how democracy is working, up 7 points year-on-year
+  [pew-democracy-decline-2026] [freedom-house-2026]
+  [vdem-democracy-report-2026]. Social capital and interpersonal trust remain
+  moderate to high by global standards but have declined measurably over the
+  past two decades, with geographic and partisan sorting into ideologically
+  homogeneous communities reinforcing the echo-chamber dynamic.
+society_cohesion_fr: >-
+  La confiance publique dans le gouvernement fédéral est à un niveau proche d'un
+  creux historique : 17 % des adultes américains font confiance au gouvernement
+  dans l'enquête de septembre 2025 du Pew Research Center, contre 22 % en 2024
+  [pew-trust-government-2025]. AVERTISSEMENT DE FIABILITÉ : les réponses
+  reflètent le parti au pouvoir (tri partisan); les ventilations par cohorte et
+  parti (démocrates : 9 %; républicains : 26 %) sont l'unité analytiquement
+  valide [pew-trust-government-2025]. Freedom House a évalué les États-Unis à
+  81/100 en 2026, en baisse de 3 points [freedom-house-2026]; 69 % des adultes
+  américains se disent insatisfaits du fonctionnement de la démocratie
+  [pew-democracy-decline-2026].
+security_internal_en: >-
+  No active domestic insurgency. Political violence incidents tracked by the
+  Armed Conflict Location & Event Data (ACLED) project have increased since
+  2020, driven by protest-related unrest, militia activity, and targeted attacks
+  on government facilities, but remain below the threshold of sustained
+  organized armed conflict [acled-usa-conflict-data]. The principal domestic
+  security concern is politically motivated extremism (both right-wing and
+  left-wing), compounded by a historically polarized environment. The invocation
+  of the Alien Enemies Act and mass deportation operations have generated
+  significant protest activity and civil unrest in sanctuary cities
+  [alien-enemies-act-deportations-mar-2025]. Military strength: U.S. defense
+  spending stood at $954 billion in 2025, representing 33% of global military
+  expenditure and the highest single-country share, though down 7.5% from 2024
+  largely reflecting DOGE-era personnel and overhead reductions
+  [sipri-milex-2025]. U.S. nuclear warhead stockpile: approximately 3,700
+  deployed and reserve warheads, with approximately 1,770 deployed on strategic
+  delivery systems (intercontinental ballistic missiles (ICBMs),
+  submarine-launched ballistic missiles (SLBMs), and bombers)
+  [trump-inauguration-eos-jan-2025]. Military loyalty to civilian command has
+  held; friction over deployment tempo and DOGE-driven DoW budget impacts is
+  visible at the institutional level but has not translated to insubordination.
+  Border situation: southern land border enforcement under the Trump
+  administration has been substantially intensified; military assets have been
+  deployed to the border under the national emergency declaration
+  [federal-register]. Operation Southern Spear extended operational authority
+  into the Caribbean [operation-southern-spear-sep-2025].
+security_internal_fr: >-
+  Aucune insurrection intérieure active. Les incidents de violence politique
+  suivis par l'ACLED ont augmenté depuis 2020, liés à des troubles lors de
+  manifestations, à des activités de milices et à des attaques ciblées contre
+  des installations gouvernementales [acled-usa-conflict-data]. Les dépenses de
+  défense américaines s'établissaient à 954 milliards de dollars en 2025,
+  représentant 33 % des dépenses militaires mondiales [sipri-milex-2025]. Le
+  stockpile de têtes nucléaires comprend environ 3 700 ogives déployées et en
+  réserve, dont 1 770 déployées sur des vecteurs stratégiques
+  [trump-inauguration-eos-jan-2025].
+security_diplomacy_en: >-
+  The United States remains a permanent member of the UN Security Council (UNSC)
+  and the primary funder and military backbone of the North Atlantic Treaty
+  Organization (NATO); the 32-member NATO military expenditure amounted to
+  $1,581 billion in 2025 [sipri-milex-2025]. The State Department's Treaties in
+  Force 2025 compendium documents the full architecture of U.S. bilateral and
+  multilateral commitments, including mutual defense treaties (North Atlantic
+  Treaty, U.S.-Japan Treaty of Mutual Cooperation and Security, U.S.-Korea
+  Mutual Defense Treaty, ANZUS) [state-dept-treaties-in-force-2025]. Key
+  bilateral relationships under acute strain: (a) U.S.-Iran — at war since
+  February 28, 2026 (Operation Epic Fury), with the April 8, 2026 two-week
+  ceasefire subsequently collapsed [operation-epic-fury-iran-feb-2026]
+  [icg-iran-us-trigger-list]; (b) U.S.-Venezuela — Maduro captured January 3,
+  2026, Venezuela in governance vacuum [us-capture-maduro-venezuela-jan-2026];
+  (c) U.S.-China — trade tensions, Taiwan Strait flashpoint, and competition in
+  the Indo-Pacific remain structural; (d) U.S.-Canada and U.S.-Mexico —
+  renegotiation pressures and tariff friction following the IEEPA regime and its
+  successor [ustr-trade-policy-2025]; (e) U.S.-Europe — NATO burden-sharing
+  tensions eased marginally as European defense spending rose 14% in 2025
+  [sipri-milex-2025]. The U.S. withdrew from the Paris Agreement at the start of
+  the second Trump term and has reduced its role in multilateral climate
+  governance. The capture of Maduro drew UN condemnation and damaged regional
+  relationships in Latin America [us-capture-maduro-venezuela-jan-2026].
+security_diplomacy_fr: >-
+  Les États-Unis restent membre permanent du Conseil de sécurité de l'ONU et
+  principale puissance de l'OTAN, dont les 32 membres ont dépensé 1 581
+  milliards de dollars en 2025 [sipri-milex-2025]. Les principaux accords
+  bilatéraux et multilatéraux sont documentés dans le compendium Treaties in
+  Force 2025 [state-dept-treaties-in-force-2025]. Relations sous tension aiguë :
+  États-Unis–Iran (en guerre depuis le 28 février 2026)
+  [operation-epic-fury-iran-feb-2026]; États-Unis–Venezuela (Maduro capturé le 3
+  janvier 2026) [us-capture-maduro-venezuela-jan-2026]; États-Unis–Chine
+  (tensions commerciales et détroit de Taïwan); États-Unis–Canada et Mexique
+  (frictions tarifaires post-IEEPA) [ustr-trade-policy-2025].
 actors_domestic_en: |-
   [
     {
@@ -1668,6 +2903,15 @@ sources: |-
       "name": "United States Code, Title 25 — Indians",
       "url": "https://uscode.house.gov/browse/prelim@title25&edition=prelim",
       "desc": "Statutory codification of the federal-tribal government-to-government relationship. Maintained by the Office of the Law Revision Counsel, U.S. House of Representatives.",
+      "accessDate": "2026-07-13",
+      "confidence": "High",
+      "citationType": "Fact"
+    },
+    {
+      "id": "trump-v-barbara-2026",
+      "name": "Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/25-365_4hdj.pdf",
+      "desc": "Official Supreme Court slip opinion, decided 30 June 2026. Fourteenth Amendment Citizenship Clause and Executive Order 14160. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-13",
       "confidence": "High",
       "citationType": "Fact"
