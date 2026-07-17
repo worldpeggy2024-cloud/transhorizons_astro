@@ -1,0 +1,86 @@
+---
+/**
+ * LegacyReveal.astro — Old-browser reading fallback.
+ *
+ * Renders a hidden reading-view container (the <slot> is the page-specific EN+FR
+ * content) plus an is:inline ES5 script that reveals it ONLY when the React app
+ * can't run: browsers below the site's floor (Safari < 16.4 / old Chrome-FF that
+ * lack color-mix), or a capable browser where the app fails to boot. Modern
+ * browsers never see it — their experience is unchanged.
+ *
+ * Styles are global but namespaced (.thf-*) so slotted page content is styled
+ * without per-page CSS. Pair one <LegacyReveal> with the page's single
+ * <AppShell client:only="react" />.
+ */
+---
+<div id="th-legacy" class="th-fallback" style="display:none;">
+  <div class="thf-wrap">
+    <slot />
+  </div>
+</div>
+
+<script is:inline>
+  /* Reveal the reading fallback when the full app can't run. ES5-only so it
+     parses on Safari 15.x. Must be is:inline (a hoisted module would itself be
+     dropped by old Safari). */
+  (function () {
+    var legacy = document.getElementById('th-legacy');
+    if (!legacy) return;
+    function island() { return document.querySelector('astro-island'); }
+    function rendered() { var i = island(); return !!(i && i.children.length > 0); }
+    function showApp() { legacy.style.display = 'none'; var i = island(); if (i) i.style.display = ''; }
+    function showLegacy() { legacy.style.display = 'block'; var i = island(); if (i) i.style.display = 'none'; }
+
+    /* Capability probe: browsers below the site's floor (Safari < 16.4, old
+       Chrome/Firefox) lack color-mix(), so Tailwind v4 CSS + the JS bundle
+       won't work. Show the reading view for them right away — no waiting — and
+       keep it (don't hand back to a broken app). This is what makes the iPad
+       mini 4 flip to the reading view near-instantly. */
+    var capable = !!(window.CSS && window.CSS.supports &&
+      window.CSS.supports('color', 'color-mix(in srgb, red, blue)'));
+    if (!capable) { setTimeout(showLegacy, 200); return; }
+
+    /* Capable browser: only reveal if the app genuinely fails to boot. Fast on
+       a real boot error, else a short safety timeout; self-corrects if a slow
+       app hydrates late (rendered() → showApp above). */
+    var hadError = false;
+    window.addEventListener('error', function () { hadError = true; }, true);
+    var elapsed = 0;
+    var timer = setInterval(function () {
+      elapsed += 200;
+      if (rendered()) { showApp(); clearInterval(timer); return; }
+      if ((hadError && elapsed >= 400) || elapsed >= 3000) {
+        showLegacy();
+        if (elapsed >= 9000) clearInterval(timer);
+      }
+    }, 200);
+  })();
+</script>
+
+<style is:global>
+  .thf-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 20px 72px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.55;
+  }
+  .thf-kicker { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #7d1a2e; margin: 0 0 6px; }
+  .thf-lang { font-size: 14px; margin: 0 0 8px; }
+  .thf-lang a, .thf-list a, .thf-foot a { color: #7d1a2e; }
+  .thf-wrap h1 { font-size: 27px; font-weight: 600; margin: 34px 0 6px; }
+  .thf-h2 { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #7d1a2e; margin: 30px 0 8px; }
+  .thf-intro { color: #555555; margin: 0 0 18px; }
+  .thf-list { list-style: none; margin: 0; padding: 0; }
+  .thf-list li { padding: 16px 0; border-top: 1px solid #e4e4e4; }
+  .thf-list a, .thf-title-plain { font-size: 19px; font-weight: 600; text-decoration: none; display: inline-block; }
+  .thf-title-plain { color: #9a9a9a; }
+  .thf-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #a0a0a0; margin: 5px 0; }
+  .thf-desc { color: #444444; margin: 6px 0 0; font-size: 15px; }
+  .thf-p { color: #333333; margin: 0 0 14px; font-size: 16px; }
+  .thf-note { color: #7d1a2e; font-size: 13px; font-style: italic; margin: 0 0 12px; }
+  .thf-tip { margin-top: 28px; font-size: 13px; color: #888888; }
+  .thf-foot { margin-top: 44px; font-size: 15px; }
+</style>

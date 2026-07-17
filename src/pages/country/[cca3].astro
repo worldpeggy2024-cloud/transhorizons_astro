@@ -23,6 +23,7 @@ import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
 import AppShell from '../../components/AppShell';
 import { SEO_READY_COUNTRIES } from '../../lib/analysedCountries';
+import LegacyReveal from '../../components/LegacyReveal.astro';
 
 export const prerender = false;
 
@@ -221,6 +222,32 @@ const blocks = [
   { seo: seoFr, lang: 'fr' as const, name: nameFr, h: HEADINGS.fr },
 ];
 
+// Ordered sections for the old-browser reading view — mirrors the six-peer
+// schema plus snapshot / situation / actors / risks / sources. `type` picks a
+// bullet list vs prose paragraphs; `risks` flags the caveat below.
+type ReadingSection = { title: string; items: string[]; type: 'list' | 'prose'; risks?: boolean };
+const readingSections = (seo: LangSeo, h: typeof HEADINGS.en): ReadingSection[] =>
+  ([
+    { title: h.exec, items: seo.snapshot, type: 'list' },
+    { title: h.political, items: seo.political, type: 'prose' },
+    { title: h.situation, items: seo.situation, type: 'list' },
+    { title: h.economy, items: seo.economy, type: 'prose' },
+    { title: h.territory, items: seo.territory, type: 'prose' },
+    { title: h.capacity, items: seo.capacity, type: 'prose' },
+    { title: h.society, items: seo.society, type: 'prose' },
+    { title: h.security, items: seo.security, type: 'prose' },
+    { title: h.actors, items: seo.actors, type: 'list' },
+    { title: h.risks, items: seo.risks, type: 'list', risks: true },
+    { title: h.sources, items: seo.sources, type: 'list' },
+  ] as ReadingSection[]).filter((s) => s.items && s.items.length > 0);
+
+// Risk-register caveat mirrors the visible page (framing under redesign).
+// FR-PLACEHOLDER: French wording awaits Peggy's review.
+const riskNotice = {
+  en: 'Under redesign — current entries reflect an outdated framing.',
+  fr: 'Section en cours de remaniement — les entrées actuelles reflètent un cadrage obsolète.',
+} as const;
+
 const pageTitle = seoEn
   ? `${nameEn} — Country Situation Report | TransHorizons`
   : 'TransHorizons — World Views';
@@ -317,6 +344,32 @@ const pageDesc =
         </section>
       ))}
     </div>
+  )}
+
+  <!-- Old-browser reading view (see components/LegacyReveal.astro). Hidden
+       unless the React app can't run. GATED to seoReady countries (Canada only
+       right now) so unreviewed reports never surface here. Reuses buildLangSeo
+       output, so it tracks the .astro SEO layer, not the React page. -->
+  {seoReady && (
+    <LegacyReveal>
+      <p class="thf-kicker">Country situation report — Reading view</p>
+      <p class="thf-lang"><a href="#thc-en">English</a> · <a href="#thc-fr">Français</a></p>
+      {blocks.map(({ seo, lang, name, h }) => seo && (
+        <section id={`thc-${lang}`} lang={lang}>
+          <h1>{name} — {h.report}</h1>
+          {readingSections(seo, h).map((sec) => (
+            <div>
+              <h2 class="thf-h2">{sec.title}</h2>
+              {sec.risks && <p class="thf-note">{lang === 'fr' ? riskNotice.fr : riskNotice.en}</p>}
+              {sec.type === 'list'
+                ? <ul class="thf-list">{sec.items.map((it) => <li>{it}</li>)}</ul>
+                : sec.items.map((it) => <p class="thf-p">{it}</p>)}
+            </div>
+          ))}
+        </section>
+      ))}
+      <p class="thf-foot"><a href="/">← Home · Accueil</a></p>
+    </LegacyReveal>
   )}
 
   <!-- React app: full visual experience for visitors, unchanged. -->

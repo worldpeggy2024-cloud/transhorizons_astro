@@ -2,6 +2,7 @@
 // src/pages/analyses.astro
 import Base from '../layouts/Base.astro';
 import AppShell from '../components/AppShell';
+import LegacyReveal from '../components/LegacyReveal.astro';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import yaml from 'js-yaml';
@@ -130,106 +131,49 @@ const fallbackArticles = analysesOrder.map(([slug, file]) => {
     </section>
   </div>
 
-  <!-- ── Old-browser reading fallback ─────────────────────────────────────────
-       Hidden by default; revealed by the inline script below ONLY if the React
-       app fails to boot (e.g. Safari 15.x on an iPad mini 4). Modern devices
-       hydrate in a few hundred ms, the app is detected, and this stays hidden —
-       so their experience is unchanged. Plain, old-Safari-safe CSS only (no
-       Tailwind v4 / oklch / color-mix). Both languages; French reuses the
-       article-YAML fields + existing FR copy (only new FR is FR-PLACEHOLDER). -->
-  <div id="th-legacy" class="th-fallback" style="display:none;">
-    <div class="thf-wrap">
-      <p class="thf-kicker">TransHorizons — Reading view</p>
-      <p class="thf-lang"><a href="#thf-en">English</a> · <a href="#thf-fr">Français</a></p>
+  <!-- Old-browser reading fallback (see components/LegacyReveal.astro). Hidden
+       unless the React app can't run. Both languages; French from the article
+       YAMLs (Peggy's reviewed FR). Articles without a static page show as plain
+       text, not dead links. -->
+  <LegacyReveal>
+    <p class="thf-kicker">TransHorizons — Reading view</p>
+    <p class="thf-lang"><a href="#thf-en">English</a> · <a href="#thf-fr">Français</a></p>
 
-      <section id="thf-en" lang="en">
-        <h1>All Analyses</h1>
-        <p class="thf-intro">The full collection of analytical essays, briefs, and visual essays — from resource geopolitics to digital governance and environmental change.</p>
-        <ul class="thf-list">
-          {fallbackArticles.map((a) => (
-            <li>
-              {a.hasStatic
-                ? <a href={`/portfolio/${a.slug}`}>{a.titleEn}</a>
-                : <span class="thf-title-plain">{a.titleEn}</span>}
-              <div class="thf-meta">{[a.categoryEn, a.readTime, a.hasStatic ? '' : 'full site only'].filter(Boolean).join(' · ')}</div>
-              {a.subtitleEn && <p class="thf-desc">{a.subtitleEn}</p>}
-            </li>
-          ))}
-        </ul>
-      </section>
+    <section id="thf-en" lang="en">
+      <h1>All Analyses</h1>
+      <p class="thf-intro">The full collection of analytical essays, briefs, and visual essays — from resource geopolitics to digital governance and environmental change.</p>
+      <ul class="thf-list">
+        {fallbackArticles.map((a) => (
+          <li>
+            {a.hasStatic
+              ? <a href={`/portfolio/${a.slug}`}>{a.titleEn}</a>
+              : <span class="thf-title-plain">{a.titleEn}</span>}
+            <div class="thf-meta">{[a.categoryEn, a.readTime, a.hasStatic ? '' : 'full site only'].filter(Boolean).join(' · ')}</div>
+            {a.subtitleEn && <p class="thf-desc">{a.subtitleEn}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
 
-      <section id="thf-fr" lang="fr">
-        <h1>Toutes les analyses</h1>
-        <p class="thf-intro">L'ensemble des essais analytiques, notes stratégiques et essais visuels — de la géopolitique des ressources à la gouvernance numérique et aux changements environnementaux.</p>
-        <ul class="thf-list">
-          {fallbackArticles.map((a) => (
-            <li>
-              {a.hasStatic
-                ? <a href={`/portfolio/${a.slug}?lang=fr`}>{a.titleFr}</a>
-                : <span class="thf-title-plain">{a.titleFr}</span>}
-              {/* FR-PLACEHOLDER: "site complet uniquement" note — Peggy to verify wording. */}
-              <div class="thf-meta">{[a.categoryFr, a.readTime, a.hasStatic ? '' : 'site complet uniquement'].filter(Boolean).join(' · ')}</div>
-              {a.subtitleFr && <p class="thf-desc">{a.subtitleFr}</p>}
-            </li>
-          ))}
-        </ul>
-      </section>
+    <section id="thf-fr" lang="fr">
+      <h1>Toutes les analyses</h1>
+      <p class="thf-intro">L'ensemble des essais analytiques, notes stratégiques et essais visuels — de la géopolitique des ressources à la gouvernance numérique et aux changements environnementaux.</p>
+      <ul class="thf-list">
+        {fallbackArticles.map((a) => (
+          <li>
+            {a.hasStatic
+              ? <a href={`/portfolio/${a.slug}?lang=fr`}>{a.titleFr}</a>
+              : <span class="thf-title-plain">{a.titleFr}</span>}
+            {/* FR-PLACEHOLDER: "site complet uniquement" note — Peggy to verify wording. */}
+            <div class="thf-meta">{[a.categoryFr, a.readTime, a.hasStatic ? '' : 'site complet uniquement'].filter(Boolean).join(' · ')}</div>
+            {a.subtitleFr && <p class="thf-desc">{a.subtitleFr}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
 
-      <p class="thf-foot"><a href="/">← Home · Accueil</a></p>
-    </div>
-  </div>
+    <p class="thf-foot"><a href="/">← Home · Accueil</a></p>
+  </LegacyReveal>
 
   <AppShell client:only="react" />
-
-  <script is:inline>
-    /* Reveal the reading fallback ONLY when the React island fails to boot (old
-       Safari, e.g. iPad mini 4). Modern browsers hydrate within a few hundred
-       ms, the app is detected, and the fallback stays hidden — their experience
-       is untouched. ES5-only so it parses on Safari 15.x. Must be is:inline so
-       Astro does not hoist it into a module (which old Safari would also drop). */
-    (function () {
-      var legacy = document.getElementById('th-legacy');
-      if (!legacy) return;
-      function island() { return document.querySelector('astro-island'); }
-      function rendered() { var i = island(); return !!(i && i.children.length > 0); }
-      function showApp() { legacy.style.display = 'none'; var i = island(); if (i) i.style.display = ''; }
-      function showLegacy() { legacy.style.display = 'block'; var i = island(); if (i) i.style.display = 'none'; }
-      var hadError = false;
-      window.addEventListener('error', function () { hadError = true; }, true);
-      var elapsed = 0;
-      var timer = setInterval(function () {
-        elapsed += 300;
-        if (rendered()) { showApp(); clearInterval(timer); return; }   // app booted → keep fallback hidden
-        // App not up yet. Reveal on a real boot error fast, else after a safe timeout.
-        if ((hadError && elapsed >= 600) || elapsed >= 6000) {
-          showLegacy();
-          if (elapsed >= 12000) clearInterval(timer);   // stop; a slow modern app self-corrects via rendered() above
-        }
-      }, 300);
-    })();
-  </script>
-
-  <style>
-    .thf-wrap {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 28px 20px 72px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #1a1a1a;
-      background: #ffffff;
-      line-height: 1.55;
-    }
-    .thf-kicker { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #7d1a2e; margin: 0 0 6px; }
-    .thf-lang { font-size: 14px; margin: 0 0 8px; }
-    .thf-lang a, .thf-list a, .thf-foot a { color: #7d1a2e; }
-    .thf-wrap h1 { font-size: 27px; font-weight: 600; margin: 34px 0 6px; }
-    .thf-intro { color: #555555; margin: 0 0 18px; }
-    .thf-list { list-style: none; margin: 0; padding: 0; }
-    .thf-list li { padding: 16px 0; border-top: 1px solid #e4e4e4; }
-    .thf-list a, .thf-title-plain { font-size: 19px; font-weight: 600; text-decoration: none; display: inline-block; }
-    .thf-title-plain { color: #9a9a9a; }
-    .thf-meta { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #a0a0a0; margin: 5px 0; }
-    .thf-desc { color: #444444; margin: 6px 0 0; font-size: 15px; }
-    .thf-foot { margin-top: 44px; font-size: 15px; }
-  </style>
 </Base>

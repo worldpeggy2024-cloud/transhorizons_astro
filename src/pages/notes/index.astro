@@ -2,6 +2,7 @@
 // src/pages/notes/index.astro
 import Base from '../../layouts/Base.astro';
 import AppShell from '../../components/AppShell';
+import LegacyReveal from '../../components/LegacyReveal.astro';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import yaml from 'js-yaml';
@@ -21,6 +22,24 @@ const frNotes = notesOrder.map(([slug, file]) => {
     category: d.category_fr ?? '',
     readTime: d.readTime ?? '',
     subtitle: (d.subtitle_fr && d.subtitle_fr !== d.subtitle_en) ? d.subtitle_fr : '',
+  };
+});
+
+// Bilingual reading-view data (old-browser fallback). Both notes have static
+// .astro pages, so both are real links. EN/FR from the note YAMLs (Peggy's
+// reviewed French). The "coming soon" orbital note is omitted — it has no page
+// to read yet.
+const fallbackNotes = notesOrder.map(([slug, file]) => {
+  const d = yaml.load(readFileSync(resolve(process.cwd(), `content/articles/${file}.yaml`), 'utf-8')) as Record<string, any>;
+  return {
+    slug,
+    titleEn: d.title_en ?? '',
+    titleFr: d.title_fr ?? d.title_en ?? '',
+    categoryEn: d.category_en ?? '',
+    categoryFr: d.category_fr ?? d.category_en ?? '',
+    readTime: d.readTime ?? '',
+    subtitleEn: d.subtitle_en ?? '',
+    subtitleFr: (d.subtitle_fr && d.subtitle_fr !== d.subtitle_en) ? d.subtitle_fr : '',
   };
 });
 ---
@@ -78,6 +97,44 @@ const frNotes = notesOrder.map(([slug, file]) => {
       </ul>
     </section>
   </div>
+
+  <!-- Old-browser reading view (see components/LegacyReveal.astro). Hidden
+       unless the React app can't run. Both languages; French from the note
+       YAMLs. -->
+  <LegacyReveal>
+    <p class="thf-kicker">Notes &amp; Reflections — Reading view</p>
+    <p class="thf-lang"><a href="#thn-en">English</a> · <a href="#thn-fr">Français</a></p>
+
+    <section id="thn-en" lang="en">
+      <h1>Notes &amp; Reflections</h1>
+      <p class="thf-intro">Analytical reflections and research observations — exploring emerging patterns and evolving perspectives on geopolitical and technological systems.</p>
+      <ul class="thf-list">
+        {fallbackNotes.map((n) => (
+          <li>
+            <a href={`/notes/${n.slug}`}>{n.titleEn}</a>
+            <div class="thf-meta">{[n.categoryEn, n.readTime].filter(Boolean).join(' · ')}</div>
+            {n.subtitleEn && <p class="thf-desc">{n.subtitleEn}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section id="thn-fr" lang="fr">
+      <h1>Notes et réflexions</h1>
+      <p class="thf-intro">Réflexions analytiques et observations de recherche : explorations de tendances émergentes et de l'évolution des perspectives relatives aux systèmes géopolitiques et technologiques.</p>
+      <ul class="thf-list">
+        {fallbackNotes.map((n) => (
+          <li>
+            <a href={`/notes/${n.slug}?lang=fr`}>{n.titleFr}</a>
+            <div class="thf-meta">{[n.categoryFr, n.readTime].filter(Boolean).join(' · ')}</div>
+            {n.subtitleFr && <p class="thf-desc">{n.subtitleFr}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <p class="thf-foot"><a href="/">← Home · Accueil</a></p>
+  </LegacyReveal>
 
   <AppShell client:only="react" />
 </Base>

@@ -1,8 +1,36 @@
 ---
 import Base from '../layouts/Base.astro';
 import AppShell from '../components/AppShell';
+import LegacyReveal from '../components/LegacyReveal.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import yaml from 'js-yaml';
 
 const description = 'Structured analysis of geopolitical, resource, and technological systems, particularly those shaping Canada\'s position in the world. Independent research by Peggy Brenier, Montreal.';
+
+// Home reading-hub links (old-browser fallback). Only destinations that are
+// READABLE on old Safari are listed — the static essay/note .astro pages and
+// /analyses (which has its own reading view). React-only articles are omitted
+// so no link leads to a blank page. EN/FR titles come from the article YAMLs
+// (Peggy's reviewed French), so the hub never drifts from the real titles.
+const HOME_ESSAYS: [string, string][] = [
+  ['resource-civilization', '2026-04_Resource-Civilization_Essay'],
+  ['canada-multipolar', '2026-03_Canada-Multipolar_Essay'],
+  ['critical-minerals', '2026-02_Critical-Minerals_Essay'],
+  ['ai-governance', '2026-01_AI-Governance_Essay'],
+  ['canada-forest-carbon', '2026-04_Canada-Forest-Carbon_Essay'],
+];
+const HOME_NOTES: [string, string][] = [
+  ['career-evolution', '2026-03_Career-Evolution_Note'],
+  ['travel-observation', '2026-04_Travel-Observation_Note'],
+];
+const loadTitles = (pairs: [string, string][]) =>
+  pairs.map(([slug, file]) => {
+    const d = yaml.load(readFileSync(resolve(process.cwd(), `content/articles/${file}.yaml`), 'utf-8')) as Record<string, any>;
+    return { slug, titleEn: d.title_en ?? '', titleFr: d.title_fr ?? d.title_en ?? '' };
+  });
+const homeEssays = loadTitles(HOME_ESSAYS);
+const homeNotes = loadTitles(HOME_NOTES);
 ---
 
 <Base 
@@ -60,6 +88,69 @@ const description = 'Structured analysis of geopolitical, resource, and technolo
       <p>Contact: contact@transhorizons.net</p>
     </footer>
   </div>
+
+  <!-- Old-browser reading hub (see components/LegacyReveal.astro). Hidden unless
+       the React app can't run. A bilingual launchpad to every destination that
+       is readable on old Safari, so a blank homepage still lets you navigate. -->
+  <LegacyReveal>
+    <p class="thf-kicker">TransHorizons</p>
+    <p class="thf-lang"><a href="#thh-en">English</a> · <a href="#thh-fr">Français</a></p>
+
+    <section id="thh-en" lang="en">
+      <h1>TransHorizons</h1>
+      <p class="thf-intro">Independent research on geopolitical, resource, and technological systems — and Canada's place within them. By Peggy Brenier, Montreal.</p>
+
+      <h2 class="thf-h2">Analyses</h2>
+      <ul class="thf-list">
+        {homeEssays.map((a) => <li><a href={`/portfolio/${a.slug}`}>{a.titleEn}</a></li>)}
+        <li><a href="/analyses">→ All analyses</a></li>
+      </ul>
+
+      <h2 class="thf-h2">Notes &amp; Reflections</h2>
+      <ul class="thf-list">
+        {homeNotes.map((a) => <li><a href={`/notes/${a.slug}`}>{a.titleEn}</a></li>)}
+        <li><a href="/notes">→ All notes</a></li>
+      </ul>
+
+      <h2 class="thf-h2">Country reports</h2>
+      <ul class="thf-list"><li><a href="/country/CAN">Canada</a></li></ul>
+
+      <h2 class="thf-h2">About</h2>
+      <ul class="thf-list"><li><a href="/about">About Peggy Brenier</a></li></ul>
+
+      <p class="thf-tip">The interactive globe and maps — and country reports other than Canada — need a newer browser (Safari 16.4+, or an up-to-date Chrome or Firefox).</p>
+    </section>
+
+    <section id="thh-fr" lang="fr">
+      <h1>TransHorizons</h1>
+      {/* FR-PLACEHOLDER: intro line — Peggy to verify wording. */}
+      <p class="thf-intro">Recherche indépendante sur les systèmes géopolitiques, les ressources et les technologies — et la place du Canada dans ces dynamiques. Par Peggy Brenier, Montréal.</p>
+
+      <h2 class="thf-h2">Analyses</h2>
+      <ul class="thf-list">
+        {homeEssays.map((a) => <li><a href={`/portfolio/${a.slug}?lang=fr`}>{a.titleFr}</a></li>)}
+        <li><a href="/analyses">→ Toutes les analyses</a></li>
+      </ul>
+
+      <h2 class="thf-h2">Notes et réflexions</h2>
+      <ul class="thf-list">
+        {homeNotes.map((a) => <li><a href={`/notes/${a.slug}?lang=fr`}>{a.titleFr}</a></li>)}
+        <li><a href="/notes">→ Toutes les notes</a></li>
+      </ul>
+
+      {/* FR-PLACEHOLDER: "Rapports pays" heading — Peggy to verify wording. */}
+      <h2 class="thf-h2">Rapports pays</h2>
+      <ul class="thf-list"><li><a href="/country/CAN">Canada</a></li></ul>
+
+      <h2 class="thf-h2">À propos</h2>
+      <ul class="thf-list"><li><a href="/about">À propos de Peggy Brenier</a></li></ul>
+
+      {/* FR-PLACEHOLDER: browser-support note — Peggy to verify wording. */}
+      <p class="thf-tip">Le globe interactif et les cartes — ainsi que les rapports pays autres que le Canada — nécessitent un navigateur récent (Safari 16.4+, ou un Chrome ou Firefox à jour).</p>
+    </section>
+
+    <p class="thf-foot"><a href="/analyses">→ Analyses</a></p>
+  </LegacyReveal>
 
   <!-- React app: full visual experience for visitors, unchanged -->
   <AppShell client:only="react" />
