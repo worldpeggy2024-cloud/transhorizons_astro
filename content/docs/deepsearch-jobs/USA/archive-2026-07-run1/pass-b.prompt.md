@@ -1,0 +1,1248 @@
+# Pass B Prompt (USA)
+
+Country: United States (États-Unis)
+Date: 2026-07-13
+
+You are a geopolitical analyst writing a structured country situation report on United States for an audience of senior decision-makers and investors. The approved source list from Pass A is provided below.
+
+
+
+Return ONLY a JSON object that matches the schema below exactly. Include inline [source-id] citations in every narrative field.
+
+Hard rules:
+- Cite ONLY source IDs that appear in the approved Pass A sources list. No new sources.
+- Every numeric figure must be tied to a specific year or date range (e.g., "GDP grew 1.4% in 2025 [source-id]").
+- Omit any claim that cannot be tied to an approved source — do not write it with weaker sourcing or vague attribution.
+- EN and FR fields must be synchronized in substance (same facts, same depth). FR may adapt phrasing naturally.
+- Risks: 5–10 entries; each must have title, trigger, probability (High/Med/Low), impact (High/Med/Low), timeHorizon, leadingIndicators, and mitigants.
+- dealability in actors must be exactly: High, Medium, or Low.
+- Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only; all subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. The report is written for a reader who does not work in the sector, and the extra half-line per acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when they appear as data-field identifiers; when such a code appears in reader-facing prose, spell it: "Canada," not "CAN."
+- Source titles: cite every source exactly as the approved Pass A list titles it — never retitle a source into the reader's language. A source's title is a proper name in its own official language(s) as published; where Pass A supplies an original-language title with a translation in the source's desc, keep the original title and do NOT substitute the translation.
+- Situating sentences: Every peer opening and every field with a baseline meaning opens with a one-sentence situator before operational detail. The situator is orientation, not history — one short line. If it runs longer than a sentence, it has failed. The five REQUIRED openers are marked "OPENER (required)" in the section instructions below.
+
+Section-by-section instructions:
+
+executiveSnapshot (en and fr — 13 bullet strings each):
+  GENERATION ORDER — executiveSnapshot is composed LAST. Write every peer section first. The snapshot is derivative: it summarises sections already written and verified, and may introduce no fact that does not already appear, cited, in a section below. Emit executiveSnapshot as the final key in the returned JSON object; the schema is key-addressed and key order carries no meaning.
+  1. Regime type and how power is won/held
+  2. Current political equilibrium: current seat composition and majority/minority/coalition status — cite the legislature's official LIVE seat-standings page, verified on the run date; a source predating the most recent composition-changing event is disqualified regardless of publication date; opposition; legitimacy
+  3. Economic model overview (dominant sectors, trade profile)
+  4. PHYSICAL BASE: the defining geographic fact; the headline resource endowment; the principal climate exposure and whether the country can afford to meet it
+  5. EXECUTION CAPACITY: whether the state can build/permit/deliver — often the single most binding constraint on acting
+  6. SOCIAL STRUCTURE: demographic reality (youth bulge or ageing); the principal social cleavage and its geometry (cross-cutting or reinforcing); the population-wide social-trust level
+  7. Top 3 risks in the next 6–18 months
+  8. Top 3 watch items in the next 4–12 weeks
+  9. External dependencies (trade, energy, debt)
+  10. Security posture (internal stability, border situation)
+  11. Diplomatic orientation (alliances, key bilateral relationships)
+  12. Data confidence statement (which sections are high/medium/low confidence)
+  13. Baseline present-state characterisation (1 sentence — NOT a forecast)
+
+political.powerStructure: State who holds the executive and how it was won. State legislative control separately from executive control — in presidential and semi-presidential systems these diverge, and the report must say plainly whether government is unified or divided. Where the legislature is bicameral, give each chamber's composition separately, each cited to that chamber's own official live standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date). Use the country's own vocabulary — "governing coalition," "majority," "divided government" — do not force one system's term onto another's structure. Then: who controls security forces; judicial independence and appointment mechanism; media independence. Anchor to calibration. Give each chamber's current composition, verified on the run date and cited to its own live standings page (disqualified if it predates the most recent composition-changing event, regardless of publication date): United States Senate (100 seats) — https://www.senate.gov/history/partydiv.htm; United States House of Representatives (435 seats) — https://pressgallery.house.gov/member-data/party-breakdown. Unified vs divided government applies: state plainly whether government is unified or divided. Whether operative power tracks the constitutional allocation is CONTESTED: state the constitutional allocation and state plainly that the operative locus is contested — present the contest, do not resolve it. Cite the executive-type determination to calibration-executive-source.
+
+political.stabilityDrivers: What legitimizes the regime; armed forces loyalty; coalition composition; business elite alignment.
+
+political.shockAbsorbers: What cushions shocks vs. what could accelerate instability — both dimensions in a single paragraph.
+
+political.constitutionalSubstrate: OPENER (required, one sentence): name the constitutional form — the founding instrument(s) and how sovereignty is allocated (unitary or federal; parliamentary or presidential; one legal tradition or several). Then: the deep legal architecture beneath current politics — the allocation of sovereignty between levels of government; the founding and re-founding instruments that fix that allocation; and the status of any peoples, nations, or territories whose sovereignty predates the central state, sits outside it, or is held in a diminished or non-voting form relative to it. Identify the country's substrate on its own terms. Do not import another country's structure. Where distinct legal substrates coexist, hold them SEPARATELY — do not collapse them or project a single model of consent onto plural governance. State explicitly whether the substrate is STABLE or IN MOTION: where apex-court doctrine is actively reallocating power, that reallocation is present-state fact and belongs in this field, cited to rulings — not deferred to the trajectory layer and not treated as ordinary politics. Sources: the founding text, apex-court rulings, the statutory codification of the sovereignty relationship, treaty text where applicable, official gazette — never news, never advocacy; a legislature's non-partisan research service is admissible as citationType: Interpretation. Instances (examples, not the schema — use the ones the country actually has): settler states with treaty and title lineages, held distinct where historic-treaty/modern-agreement and unceded/title-litigated substrates coexist; federal states, where the vertical allocation and the doctrine currently governing it are the substrate; states with a legal re-founding, where later amendments or instruments reset the original terms; states holding unincorporated, overseas, or non-voting territories, where the legal status of those territories and their populations is substrate. Anchor to calibration. Cite ONLY these instruments, each by its id: constitution-usa-1787 (Constitution of the United States (1787, in force 4 March 1789)); reconstruction-amendments (Reconstruction Amendments: Thirteenth Amendment (1865), Fourteenth Amendment (1868), Fifteenth Amendment (1870)); marbury-v-madison-1803 (Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803)); marshall-trilogy (The Marshall Trilogy — Johnson v. M'Intosh, 21 U.S. 543 (1823); Cherokee Nation v. Georgia, 30 U.S. 1 (1831); Worcester v. Georgia, 31 U.S. 515 (1832)); insular-cases-1901 (The Insular Cases — De Lima v. Bidwell, 182 U.S. 1 (1901); Downes v. Bidwell, 182 U.S. 244 (1901)); shelby-county-2013 (Shelby County v. Holder, 570 U.S. 529 (2013)); mcgirt-v-oklahoma-2020 (McGirt v. Oklahoma, 591 U.S. 894 (2020)); oklahoma-v-castro-huerta-2022 (Oklahoma v. Castro-Huerta, 597 U.S. 629 (2022)); wv-v-epa-2022 (West Virginia v. Environmental Protection Agency, 597 U.S. 697 (2022)); haaland-v-brackeen-2023 (Haaland v. Brackeen, 599 U.S. 255 (2023)); loper-bright-2024 (Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024)); trump-v-usa-2024 (Trump v. United States, 603 U.S. 593 (2024)); trump-v-casa-2025 (Trump v. CASA, Inc., 606 U.S. 831 (2025)); trump-v-slaughter-2026 (Trump v. Slaughter, 609 U.S. ___ (2026), No. 25-332); trump-v-cook-2026 (Trump v. Cook, 609 U.S. ___ (2026), No. 25A312); trump-v-barbara-2026 (Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365); watson-v-rnc-2026 (Watson v. Republican National Committee, 609 U.S. ___ (2026)); usc-title-25 (United States Code, Title 25 — Indians); crs-congress-gov (Congressional Research Service — public report portal); federal-register (Federal Register — Office of the Federal Register, National Archives and Records Administration). The legal order is plural — hold each order SEPARATELY and name what each governs: statutory (Federal statutory law applicable to all persons within United States jurisdiction; supreme over state law under the Supremacy Clause (Article VI)); statutory (State statutory and common law: each of the 50 states maintains its own constitution, legislature, courts and code, operating concurrently with federal law within powers reserved by the Tenth Amendment. Louisiana retains a civil-law tradition for private law matters.); other (Tribal law: federally recognized tribes exercise inherent pre-constitutional sovereignty over their members and Indian country (18 U.S.C. § 1151). Tribes hold written constitutions, statutory codes and courts of record; this sovereignty is not derived from federal or state law but is subject to congressional plenary power. NOT customary law.); other (Insular territorial order: the five inhabited unincorporated territories (Puerto Rico, Guam, United States Virgin Islands, Northern Mariana Islands, American Samoa) are governed under a distinct constitutional regime established by the Insular Cases, under which Congress holds plenary authority and the Constitution applies only selectively. Residents hold no presidential vote and no voting representation in Congress.). Do not treat the statutory order as the real one.
+
+situation: OPENER (required, one sentence): name what, if anything, materially happened to this country in the last 12 months — war or military operation, coup or constitutional crisis, disaster, currency or banking crisis, assassination or leadership death, mass mobilisation, or major legislation — or state plainly that the standing conditions held. Then: what happened and what it CHANGED — the standing conditions it shifted and the downstream fields it now drives (name them; e.g. an energy shock that surfaces as inflation in economy.macroReality). This is the EVENT layer: what is HAPPENING to the country, distinct from what the country IS. EVERY event from the Pass Zero-B scan must be accounted for here or explicitly stated as not material. Cite the event sources harvested in Pass A.
+Events to account for (each must appear in the report, cited, or be stated as not material):
+- 2025-01-07 — January 2025 Southern California Wildfires — Federal Major Disaster Declaration DR-4856 (concluded): what it changed — Triggered the largest federal disaster-assistance mobilization in California in years; accelerated national debate over FEMA's adequacy and insurance market viability in wildfire-prone states.
+- 2025-01-20 — Trump Second-Term Inauguration — Wave of Day-One Executive Orders (ongoing): what it changed — Rapidly restructured federal priorities on immigration, civil service, trade, foreign policy, and government organization; DOGE initiated sweeping workforce and spending reductions.
+- 2025-01-20 — Department of Government Efficiency (DOGE) — Federal Workforce Reduction (ongoing): what it changed — The largest contraction of the U.S. federal civilian workforce in modern history; reshaped agency capacity across defense, health, education, and regulatory bodies.
+- 2025-03-14 — Invocation of the Alien Enemies Act of 1798 — Mass Deportations to El Salvador (ongoing): what it changed — Established a precedent for using wartime deportation authority outside declared war; triggered extensive federal litigation and a judicial finding by a Trump-appointed judge (May 1, 2025) that the invocation was 'unlawful'; ignited global human-rights criticism.
+- 2025-03-15 — Operation Rough Rider — U.S. Military Campaign Against Houthis in Yemen (concluded): what it changed — Largest U.S. military air campaign in the Middle East since the 2003 Iraq War to that date; ended without achieving stated objective of permanently halting Houthi Red Sea attacks; cost estimated at $1 billion.
+- 2025-04-02 — "Liberation Day" Reciprocal Tariffs — White House Executive Order (concluded): what it changed — Raised the average effective U.S. tariff rate from approximately 2.5% to an estimated 27% — the highest level in over a century; triggered global trade-war dynamics and ultimately led to the Supreme Court ruling that IEEPA cannot authorize tariffs.
+- 2025-06-21 — U.S. Airstrikes on Iranian Nuclear Facilities — "Twelve-Day War" (concluded): what it changed — First combat use of GBU-57 MOPs; severely damaged Iran's primary enrichment infrastructure; the IAEA assessed Iran could resume enrichment within months; set the stage for the expanded Operation Epic Fury in February 2026.
+- 2025-07-04 — One Big Beautiful Bill Act (OBBBA), P.L. 119-21 — Signed into Law (concluded): what it changed — Largest single tax-and-spending legislative package in at least a decade; reshaped federal health and social-program eligibility for millions; locked in lower top-end tax rates permanently.
+- 2025-10-01 — 2025 U.S. Federal Government Shutdown — Longest in U.S. History (43 days) (concluded): what it changed — Record-length shutdown furloughed hundreds of thousands of federal workers; disrupted government services, research grants, and federal payments; resolved only temporarily via a short-term CR.
+- 2025-09-02 — Operation Southern Spear (OSS) — U.S. Counter-Narco Military Campaign in the Caribbean (ongoing): what it changed — Expanded U.S. military operational authority into the Western Hemisphere at an unprecedented peacetime scale; preceded the January 2026 capture of Venezuelan President Nicolás Maduro.
+- 2025-12-19 — Operation Hawkeye Strike — U.S. Military Campaign Against Islamic State in Syria (ongoing): what it changed — Marked a renewed escalation of direct U.S. combat operations against IS in Syria under the umbrella of the long-running Operation Inherent Resolve.
+- 2025-12-25 — U.S. AFRICOM Airstrikes Against Islamic State in Nigeria (Sokoto State) (ongoing): what it changed — First known U.S. military combat action on Nigerian soil; expanded the geographic footprint of U.S. counter-IS operations into West Africa.
+- 2026-01-03 — U.S. Military Operation in Venezuela — Capture of President Nicolás Maduro (Operation Absolute Resolve) (ongoing): what it changed — First-ever U.S. military capture and removal of a sitting head of state in the Western Hemisphere; created a constitutional and governance vacuum in Venezuela; drew broad international condemnation including from the United Nations and China.
+- 2026-02-20 — U.S. Supreme Court — Learning Resources, Inc. v. Trump (No. 24-1287): IEEPA Does Not Authorize Tariffs (concluded): what it changed — Landmark constraint on presidential trade authority; forced the administration to pivot to Section 122 of the Trade Act of 1974 and to initiate expanded Section 301/232 investigations; triggered CBP refund processing of IEEPA tariffs.
+- 2026-02-28 — Operation Epic Fury — U.S. and Israeli Major Military Campaign Against Iran (ongoing): what it changed — The largest U.S. combat deployment in the Middle East in over two decades; closed the Strait of Hormuz temporarily, disrupting global oil shipping; status of Iran's nuclear and conventional military capabilities substantially degraded but subject to contested assessments.
+- 2026-06-30 — U.S. Supreme Court — Trump v. Barbara: Birthright Citizenship Executive Order Unconstitutional (concluded): what it changed — Definitively struck down a core Trump immigration policy; reaffirmed 150-year-old jus soli citizenship doctrine; ended 17 months of nationwide litigation and injunctive uncertainty affecting children born after February 19, 2025.
+
+economy.macroReality: OPENER (required, one sentence): name the dominant economic character before any numbers — the shape of production (primary / manufacturing / services), what the economy lives on, whether it is diversified or concentrated on a few sectors. Then: GDP growth, sector performance, fiscal position (deficit %, debt/GDP), monetary policy, inflation, credit rating — all with specific figures and years.
+
+economy.externalVulnerability: Export/import profile by value and commodity; trade partner concentration; sovereign debt holders; IMF program status; sanctions exposure.
+
+economy.politicalEconomy: Who benefits from current model; business elite structure; what reforms are technically necessary vs. politically possible.
+
+TERRITORY — describe the physical body of the country ON ITS OWN TERMS, not merely a risk to assets or an input to trade. Throughout: PAIR every exposure with the capacity to act on it and name the gap; LOCATE effects geographically — who inside the country is exposed or served; BIND every projection to its emissions scenario AND horizon; report DEMONSTRATED over DECLARED. Neither doom-catalogue nor techno-triumph:
+
+OPENER (required): the territory peer opens — as the first sentence of territory.geography — with one sentence for the country as a whole: landlocked / coastal / island / archipelago / continent / peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours are.
+
+territory.geography: the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); the periphery: The five inhabited unincorporated territories: Commonwealth of Puerto Rico; Guam; United States Virgin Islands; Commonwealth of the Northern Mariana Islands; American Samoa. Plus the non-contiguous states of Alaska and Hawaii, and uninhabited outlying possessions (Wake, Midway, Johnston, Palmyra, Howland, Baker, Jarvis, Navassa, Kingman Reef).. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
+
+territory.minerals: the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named; reserve figures are political — flag disputed or state-controlled counts), including undeveloped and stranded deposits. What the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
+
+territory.biosphere: the biological and renewable base — forests, freshwater, arable land, fisheries — as physical stock and its condition/trend (depletion, degradation, resilience), with year and source. Distinct from agricultural/forestry GDP (ECONOMY).
+
+territory.climate: OPENER (required, one sentence): establish the baseline climate type (cold / hot / temperate / tropical / arid; high altitude; uniform or dramatically regional) before any warming, exposure, or hazard content. Warming is a change; a change needs a baseline. Then: observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically. Every projection carries its emissions scenario AND horizon. Physical science only. PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence.
+
+territory.metabolism: how the country physically powers, feeds, and waters itself AS A SYSTEM — energy, food, and water flows; self-sufficiency vs dependence in each; the internal networks that distribute them. The country's own throughput, NOT energy-as-export-vulnerability (ECONOMY).
+
+territory.transition: the country's position in decarbonization — energy mix, emissions profile and TRAJECTORY, pledged targets measured against DELIVERED policy. A target is not an outcome; report the actual path against the pledge and name the gap. Climate Action Tracker as the PRIMARY pledge-vs-policy instrument.
+
+CAPACITY TO EXECUTE — whether the state can DO: build, permit, deliver, process — present-state and sourceable. NOT what the country has (ECONOMY) or who benefits (SOCIETY), but whether intent becomes built fact. Where "knowledge isn't the constraint, capacity is" becomes a measured field: Anchor to calibration. A published approvals regime exists: capacity.permitting anchors to https://www.permits.performance.gov/.
+
+capacity.permitting: approval and permitting timelines for major projects; regulatory predictability; the record of projects proposed vs consented vs built.
+
+capacity.delivery: infrastructure delivery record and deficit; cost and schedule performance; the state's administrative and fiscal ability to execute at scale.
+
+capacity.productivity: productivity level and trend; internal barriers to the movement of goods, labour and capital between subnational units — use interstate (the 50 federated units are 'states'; unincorporated possessions are 'territories') — the country's own term for barriers between subnational units; value-add processing built domestically vs raw material exported for others to process.
+
+SOCIETY — describe the society ON ITS OWN TERMS, before and independent of any stability implication; a society is a component of the country in itself, not a risk factor:
+
+society.demographics: OPENER (required, one very short historical framing sentence): indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed. Migration numbers depend on this baseline. Then: total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
+
+society.composition: ethnic, linguistic, and religious composition (rounded shares with year and source). State where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry; do not just list groups.
+
+society.religion: (a) composition rounded, and the fault line if there is one; (b) lived/syncretic texture — indigenous, folk, and syncretic practice the official label hides; (c) political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience). For every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
+
+society.cohesion: population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check. Anchor to calibration. The primary instrument is Pew Research Center — Public Trust in Government, 1958-2025; with Gallup — Trust in Government / Confidence in Institutions as the parallel series. selfReportReliabilityFlag is partisan-sorted: Respondents answer honestly, but responses track which party holds power rather than stable underlying trust. State this plainly, and report cohort or partisan breakdowns rather than the headline aggregate, which is a systematically distorted artefact.
+
+security.internal: Insurgency/armed groups; organized crime; communal violence; terrorism threat level; military strength and loyalty; border situation.
+
+security.diplomacy: Treaty alliances; transactional partners; key bilateral relationships; regional flashpoints; multilateral memberships.
+
+actors.domestic and actors.external MUST use this exact bilingual structure:
+"domestic": {
+  "en": [ { "name": "", "interests": "", "resources": "", "constraints": "", "likelyMoves": "", "dealability": "High|Medium|Low" }, ... ],
+  "fr": [ { "name": "", "interests": "", "resources": "", "constraints": "", "likelyMoves": "", "dealability": "High|Medium|Low" }, ... ]
+}
+Do NOT return a flat array. Both "en" and "fr" keys are required. 5–10 domestic actors, 3–5 external actors.
+
+risks MUST use this exact bilingual structure:
+"risks": {
+  "en": [ { "title": "", "trigger": "", "probability": "High|Med|Low", "impact": "High|Med|Low", "timeHorizon": "", "leadingIndicators": "", "mitigants": "" }, ... ],
+  "fr": [ { "title": "", "trigger": "", "probability": "High|Med|Low", "impact": "High|Med|Low", "timeHorizon": "", "leadingIndicators": "", "mitigants": "" }, ... ]
+}
+Do NOT return a flat array. Both "en" and "fr" keys are required. Minimum 5 entries in each.
+
+scorecard fields (eliteCohesion, socialCohesion, securityLoyalty, economicPressure, protestCapacity, institutionalResilience): Set each to High, Med, or Low based on your analysis. socialCohesion is the second of the two-cohesions split — society-wide trust/polarisation, distinct from elite cohesion.
+
+Approved source IDs from Pass A:
+[
+  {
+    "id": "senate-party-division",
+    "name": "U.S. Senate: Party Division",
+    "nameFr": "U.S. Senate: Party Division",
+    "url": "https://www.senate.gov/history/partydiv.htm",
+    "desc": "Official live standings page maintained by the U.S. Senate recording party composition of every Congress; authoritative, non-partisan, continuously updated.",
+    "descFr": "Page officielle des effectifs du Sénat américain, consignant la composition partisane de chaque Congrès; faisant autorité, non-partisane, mise à jour en continu.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "house-party-breakdown",
+    "name": "Party Breakdown | House Press Gallery",
+    "nameFr": "Party Breakdown | House Press Gallery",
+    "url": "https://pressgallery.house.gov/member-data/party-breakdown",
+    "desc": "Official live party-breakdown page maintained by the House Press Gallery; records daily seat counts by party for the 119th House of Representatives.",
+    "descFr": "Page officielle des effectifs de la Chambre des représentants, tenue par la Tribune de presse; enregistre quotidiennement les sièges par parti pour le 119e Congrès.",
+    "publicationDate": "2026-06-10",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "vdem-democracy-report-2026",
+    "name": "Democracy Report 2026: Unraveling The Democratic Era?",
+    "nameFr": "Democracy Report 2026 : Unraveling The Democratic Era?",
+    "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+    "desc": "Annual flagship report by the V-Dem Institute (University of Gothenburg) measuring liberal democracy across 180+ countries; covers 2025 data; independent scholarly source.",
+    "descFr": "Rapport annuel de l'Institut V-Dem (Université de Göteborg) mesurant la démocratie libérale dans plus de 180 pays; couvre les données de 2025; source académique indépendante.",
+    "publicationDate": "2026-03-05",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "freedom-house-2026",
+    "name": "Freedom in the World 2026",
+    "nameFr": "Freedom in the World 2026",
+    "url": "https://freedomhouse.org/sites/default/files/2026-03/FIW2026_final_digital%20(1).pdf",
+    "desc": "Annual Freedom House assessment of political rights and civil liberties in 195 countries for calendar year 2025; widely cited democracy index with a pro-Western editorial posture.",
+    "descFr": "Évaluation annuelle de Freedom House sur les droits politiques et les libertés civiles dans 195 pays pour l'année civile 2025; indice de démocratie largement cité, à orientation éditoriale pro-occidentale.",
+    "publicationDate": "2026-03-01",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "wjp-rule-of-law-2025-usa",
+    "name": "The United States Ranks 27 out of 143 in the WJP Rule of Law Index",
+    "nameFr": "The United States Ranks 27 out of 143 in the WJP Rule of Law Index",
+    "url": "https://worldjusticeproject.org/sites/default/files/documents/United%20States_2.pdf",
+    "desc": "Country-level profile from the World Justice Project Rule of Law Index 2025; covers eight rule-of-law factors across 143 countries; independent, survey-based measure.",
+    "descFr": "Profil pays tiré de l'Indice de l'état de droit 2025 du World Justice Project; couvre huit facteurs dans 143 pays; mesure indépendante fondée sur des sondages.",
+    "publicationDate": "2025-10-27",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "transparency-cpi-2025",
+    "name": "Corruption Perceptions Index 2025",
+    "nameFr": "Corruption Perceptions Index 2025",
+    "url": "https://www.transparency.org/en/cpi/2025",
+    "desc": "Transparency International's annual composite index scoring 180 countries on perceived public-sector corruption for 2025; authoritative anti-corruption benchmark.",
+    "descFr": "Indice composite annuel de Transparency International évaluant la corruption perçue dans le secteur public dans 180 pays en 2025; référence anti-corruption faisant autorité.",
+    "publicationDate": "2026-02-10",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "constitution-usa-1787",
+    "name": "The Constitution of the United States",
+    "nameFr": "The Constitution of the United States",
+    "url": "https://www.archives.gov/founding-docs/constitution",
+    "desc": "Official full text of the U.S. Constitution (1787, in force 4 March 1789) as maintained by the National Archives and Records Administration; foundational legal instrument.",
+    "descFr": "Texte intégral officiel de la Constitution américaine (1787, en vigueur le 4 mars 1789), conservé par la National Archives and Records Administration; instrument juridique fondateur.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "crs-congress-gov",
+    "name": "CRS Products — Congressional Research Service",
+    "nameFr": "CRS Products — Congressional Research Service",
+    "url": "https://www.congress.gov/crs-products/results",
+    "desc": "Public portal for Congressional Research Service (CRS) reports; non-partisan analytic service of the U.S. Congress; citationType Interpretation for policy analysis reports.",
+    "descFr": "Portail public des rapports du Congressional Research Service (CRS); service d'analyse non-partisan du Congrès américain; citationType Interprétation pour les rapports d'analyse.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "federal-register",
+    "name": "Federal Register — Office of the Federal Register",
+    "nameFr": "Federal Register — Office of the Federal Register",
+    "url": "https://www.federalregister.gov/documents/search?conditions%5Btype%5D%5B%5D=PRESDOCU",
+    "desc": "Official daily journal of the U.S. federal government, published by the Office of the Federal Register (National Archives); primary source for executive orders, rules, and notices.",
+    "descFr": "Journal officiel quotidien du gouvernement fédéral américain, publié par l'Office of the Federal Register (Archives nationales); source primaire pour les décrets, règlements et avis.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "imf-weo-april-2026",
+    "name": "World Economic Outlook, April 2026: Global Economy in Transition",
+    "nameFr": "Perspectives de l'économie mondiale, avril 2026 : L'économie mondiale en transition",
+    "url": "https://www.imf.org/en/publications/weo/issues/2026/04/14/world-economic-outlook-april-2026",
+    "desc": "International Monetary Fund (IMF) semi-annual flagship publication projecting global and country-level GDP, inflation, and fiscal data; authoritative multilateral macro benchmark.",
+    "descFr": "Publication phare semestrielle du Fonds monétaire international (FMI) projetant le PIB, l'inflation et les données fiscales mondiales et nationales; référence macro multilatérale faisant autorité.",
+    "publicationDate": "2026-04-14",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "imf-article-iv-usa-2026",
+    "name": "United States: 2026 Article IV Consultation — Press Release and Staff Report",
+    "nameFr": "États-Unis : Consultation de 2026 au titre de l'article IV — Communiqué de presse et rapport du personnel",
+    "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1usaea2026001.pdf",
+    "desc": "IMF staff country report for the 2026 Article IV Consultation with the United States; covers growth, fiscal, inflation, and structural policy assessments.",
+    "descFr": "Rapport du personnel du FMI pour la consultation 2026 au titre de l'article IV avec les États-Unis; couvre la croissance, la politique budgétaire, l'inflation et les évaluations structurelles.",
+    "publicationDate": "2026-03-31",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bea-gdp-2025-advance",
+    "name": "GDP (Advance Estimate), 4th Quarter and Year 2025",
+    "nameFr": "GDP (Advance Estimate), 4th Quarter and Year 2025",
+    "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-4th-quarter-and-year-2025",
+    "desc": "U.S. Bureau of Economic Analysis (BEA) advance estimate of real gross domestic product for Q4 and full-year 2025; authoritative U.S. national accounts release.",
+    "descFr": "Estimation préliminaire du Bureau of Economic Analysis (BEA) du produit intérieur brut réel pour le T4 et l'année complète 2025; publication officielle des comptes nationaux américains.",
+    "publicationDate": "2026-02-19",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "cbo-outlook-2026-2036",
+    "name": "The Budget and Economic Outlook: 2026 to 2036",
+    "nameFr": "The Budget and Economic Outlook: 2026 to 2036",
+    "url": "https://www.cbo.gov/publication/61882",
+    "desc": "Congressional Budget Office (CBO) ten-year baseline budget and economic projections; non-partisan, widely cited U.S. fiscal authority.",
+    "descFr": "Prévisions budgétaires et économiques décennales du Congressional Budget Office (CBO); autorité budgétaire américaine non-partisane, largement citée.",
+    "publicationDate": "2026-02-10",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bea-international-transactions-2025",
+    "name": "U.S. International Transactions and Investment Position, 4th Quarter and Year 2025",
+    "nameFr": "U.S. International Transactions and Investment Position, 4th Quarter and Year 2025",
+    "url": "https://www.bea.gov/news/2026/us-international-transactions-and-investment-position-4th-quarter-and-year-2025",
+    "desc": "BEA annual release covering U.S. current-account balance, trade in goods and services, and net international investment position for 2025; primary external-sector data.",
+    "descFr": "Publication annuelle du BEA couvrant le solde du compte courant, les échanges de biens et services et la position extérieure nette des États-Unis en 2025; données primaires du secteur extérieur.",
+    "publicationDate": "2026-06-23",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "wto-usa-trade-profile",
+    "name": "United States of America — WTO Tariff & Trade Data",
+    "nameFr": "États-Unis d'Amérique — Données tarifaires et commerciales de l'OMC",
+    "url": "https://ttd.wto.org/en/profiles/united-states-of-america",
+    "desc": "World Trade Organization (WTO) tariff and trade data portal for the United States; covers applied tariffs, import/export volumes, and trade partner breakdowns.",
+    "descFr": "Portail de données tarifaires et commerciales de l'Organisation mondiale du commerce (OMC) pour les États-Unis; couvre les droits appliqués, les volumes d'importation/exportation et la répartition par partenaire.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "sipri-milex-2025",
+    "name": "Trends in World Military Expenditure, 2025",
+    "nameFr": "Trends in World Military Expenditure, 2025",
+    "url": "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025",
+    "desc": "Stockholm International Peace Research Institute (SIPRI) annual fact sheet on global military spending; covers national figures and shares of GDP for 2025.",
+    "descFr": "Fiche annuelle de l'Institut international de recherche sur la paix de Stockholm (SIPRI) sur les dépenses militaires mondiales; couvre les chiffres nationaux et les parts du PIB en 2025.",
+    "publicationDate": "2026-04-26",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "acled-usa-conflict-data",
+    "name": "ACLED Conflict Data — United States",
+    "nameFr": "ACLED Conflict Data — United States",
+    "url": "https://acleddata.com/conflict-data",
+    "desc": "Armed Conflict Location & Event Data (ACLED) project portal providing real-time political violence and protest data for all countries including the United States; independent, event-coded database.",
+    "descFr": "Portail du projet ACLED (Armed Conflict Location & Event Data) fournissant des données en temps réel sur la violence politique et les manifestations pour tous les pays, y compris les États-Unis; base de données indépendante, codée par événement.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "icg-iran-us-trigger-list",
+    "name": "The Iran–U.S./Israel Trigger List | International Crisis Group",
+    "nameFr": "The Iran–U.S./Israel Trigger List | International Crisis Group",
+    "url": "https://www.crisisgroup.org/trigger-list/iran-us-trigger-list",
+    "desc": "International Crisis Group (ICG) early-warning platform monitoring escalation flashpoints between Iran, the United States, and Israel; ongoing analytical monitor.",
+    "descFr": "Plateforme d'alerte précoce de l'International Crisis Group (ICG) surveillant les points d'escalade entre l'Iran, les États-Unis et Israël; moniteur analytique en cours.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "census-vintage-2025-population",
+    "name": "U.S. Population Growth Slows Due to Historic Decline in Immigration — Vintage 2025 Population Estimates",
+    "nameFr": "U.S. Population Growth Slows Due to Historic Decline in Immigration — Vintage 2025 Population Estimates",
+    "url": "https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html",
+    "desc": "U.S. Census Bureau Vintage 2025 annual population estimates press release; covers national and state population as of July 1, 2025, including migration and natural increase components.",
+    "descFr": "Communiqué de presse des estimations de population annuelles Vintage 2025 du Bureau du recensement des États-Unis; couvre la population nationale et des États au 1er juillet 2025, y compris la migration et l'accroissement naturel.",
+    "publicationDate": "2026-01-26",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "un-wpp-2024",
+    "name": "World Population Prospects 2024: Summary of Results",
+    "nameFr": "Perspectives de la population mondiale 2024 : Résumé des résultats",
+    "url": "https://population.un.org/wpp/assets/Files/WPP2024_Summary-of-Results.pdf",
+    "desc": "UN Department of Economic and Social Affairs (UN DESA) 28th edition of authoritative global population estimates and projections; covers age structure, fertility, and migration through 2100.",
+    "descFr": "28e édition des estimations et projections démographiques mondiales faisant autorité, publiée par le Département des affaires économiques et sociales de l'ONU (DESA); couvre la structure par âge, la fécondité et la migration jusqu'en 2100.",
+    "publicationDate": "2024-07-11",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "census-2020-decennial-race",
+    "name": "2020 U.S. Population More Racially and Ethnically Diverse Than 2010",
+    "nameFr": "2020 U.S. Population More Racially and Ethnically Diverse Than 2010",
+    "url": "https://www.census.gov/library/stories/2021/08/2020-united-states-population-more-racially-ethnically-diverse-than-2010.html",
+    "desc": "U.S. Census Bureau story page for the 2020 Decennial Census results on racial and ethnic composition; authoritative primary demographic data with 2010–2020 trend.",
+    "descFr": "Page de résultats du Bureau du recensement des États-Unis sur la composition raciale et ethnique tirée du recensement décennal de 2020; données démographiques primaires faisant autorité avec tendance 2010–2020.",
+    "publicationDate": "2021-08-11",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "pew-religious-landscape-2025",
+    "name": "2023–24 Religious Landscape Study — Executive Summary",
+    "nameFr": "Religious Landscape Study 2023–24 — Résumé",
+    "url": "https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-executive-summary/",
+    "desc": "Pew Research Center's nationally representative survey of U.S. adults' religious identity, fielded 2023–2024; authoritative source for U.S. religious composition with known tendency toward self-reported affiliation.",
+    "descFr": "Enquête représentative à l'échelle nationale du Pew Research Center sur l'identité religieuse des adultes américains, menée en 2023–2024; source faisant autorité pour la composition religieuse américaine, avec une tendance connue à l'auto-déclaration de l'appartenance.",
+    "publicationDate": "2025-02-26",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "pew-trust-government-2025",
+    "name": "Public Trust in Government: 1958–2025",
+    "nameFr": "Public Trust in Government: 1958–2025",
+    "url": "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+    "desc": "Pew Research Center longitudinal survey tracking U.S. public trust in the federal government since 1958; primary social-cohesion instrument for the United States; note: responses track party in power (partisan-sorting bias).",
+    "descFr": "Enquête longitudinale du Pew Research Center suivant la confiance des Américains dans le gouvernement fédéral depuis 1958; instrument principal de cohésion sociale pour les États-Unis; note : les réponses reflètent le parti au pouvoir (biais de tri partisan).",
+    "publicationDate": "2025-12-04",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "gallup-trust-government-2025",
+    "name": "U.S. Trust in Government Depends Upon Party Control",
+    "nameFr": "U.S. Trust in Government Depends Upon Party Control",
+    "url": "https://news.gallup.com/poll/697421/trust-government-depends-upon-party-control.aspx",
+    "desc": "Gallup annual survey on U.S. trust in the federal government to handle international and domestic problems; parallel series to Pew; note same partisan-sorting bias as primary Pew instrument.",
+    "descFr": "Enquête annuelle Gallup sur la confiance des Américains dans le gouvernement fédéral pour gérer les problèmes internationaux et nationaux; série parallèle à Pew; même biais de tri partisan que l'instrument Pew principal.",
+    "publicationDate": "2025-11-09",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "nca5-noaa-2023",
+    "name": "Fifth National Climate Assessment",
+    "nameFr": "Fifth National Climate Assessment",
+    "url": "https://repository.library.noaa.gov/view/noaa/61592",
+    "desc": "U.S. government's authoritative assessment of observed and projected climate change impacts across U.S. regions, published by the U.S. Global Change Research Program (USGCRP) in 2023; currently accessible via NOAA repository after globalchange.gov was taken down in 2025.",
+    "descFr": "Évaluation officielle du gouvernement américain sur les impacts observés et projetés des changements climatiques à travers les régions américaines, publiée par le U.S. Global Change Research Program (USGCRP) en 2023; actuellement accessible via le dépôt NOAA après la fermeture de globalchange.gov en 2025.",
+    "publicationDate": "2023-11-14",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "worldbank-climate-portal-usa",
+    "name": "United States — Country Overview | World Bank Climate Change Knowledge Portal",
+    "nameFr": "États-Unis — Aperçu du pays | Portail des connaissances sur les changements climatiques de la Banque mondiale",
+    "url": "https://climateknowledgeportal.worldbank.org/country/united-states",
+    "desc": "World Bank Climate Change Knowledge Portal (CCKP) country page for the United States; aggregates historical climate data and CMIP6 projections by scenario and horizon.",
+    "descFr": "Page pays du Portail des connaissances sur les changements climatiques (CCKP) de la Banque mondiale pour les États-Unis; agrège les données climatiques historiques et les projections CMIP6 par scénario et horizon.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "cat-usa-2026",
+    "name": "USA — Climate Action Tracker",
+    "nameFr": "États-Unis — Climate Action Tracker",
+    "url": "https://climateactiontracker.org/countries/usa/",
+    "desc": "Climate Action Tracker (CAT) country assessment for the United States; independent scientific project rating U.S. climate targets and policies against the Paris Agreement 1.5°C limit; primary pledge-vs-policy instrument.",
+    "descFr": "Évaluation pays du Climate Action Tracker (CAT) pour les États-Unis; projet scientifique indépendant évaluant les cibles et politiques climatiques américaines par rapport à la limite de 1,5°C de l'Accord de Paris; instrument principal d'évaluation engagement–politique.",
+    "publicationDate": "2026-06-15",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "usgs-mcs-2026",
+    "name": "Mineral Commodity Summaries 2026",
+    "nameFr": "Mineral Commodity Summaries 2026",
+    "url": "https://pubs.usgs.gov/publication/mcs2026",
+    "desc": "U.S. Geological Survey (USGS) annual publication covering domestic production, imports, exports, and reserves for 90+ mineral commodities based on 2025 data; authoritative U.S. minerals endowment source.",
+    "descFr": "Publication annuelle de l'U.S. Geological Survey (USGS) couvrant la production nationale, les importations, les exportations et les réserves de plus de 90 produits minéraux sur la base des données 2025; source faisant autorité sur les ressources minérales américaines.",
+    "publicationDate": "2026-02-05",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fao-fra-2020",
+    "name": "Global Forest Resources Assessment 2020",
+    "nameFr": "Évaluation des ressources forestières mondiales 2020",
+    "url": "https://www.fao.org/forest-resources-assessment/past-assessments/fra-2020/en/",
+    "desc": "Food and Agriculture Organization (FAO) quinquennial global assessment of forest extent, condition, and trends for 236 countries covering 1990–2020; authoritative global biosphere benchmark.",
+    "descFr": "Évaluation mondiale quinquennale de la FAO sur l'étendue, l'état et les tendances des forêts pour 236 pays couvrant 1990–2020; référence mondiale faisant autorité pour la biosphère.",
+    "publicationDate": "2020-05-19",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "eia-annual-energy-outlook-2026",
+    "name": "Annual Energy Outlook 2026",
+    "nameFr": "Annual Energy Outlook 2026",
+    "url": "https://www.eia.gov/pressroom/releases/press587.php",
+    "desc": "U.S. Energy Information Administration (EIA) annual long-range energy outlook through 2050; covers U.S. energy production, consumption, and mix under alternative scenarios.",
+    "descFr": "Perspectives énergétiques annuelles à long terme de l'Energy Information Administration (EIA) jusqu'en 2050; couvre la production, la consommation et le mix énergétique américain dans différents scénarios.",
+    "publicationDate": "2026-04-07",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ember-yearly-electricity",
+    "name": "Yearly Electricity Data — Ember",
+    "nameFr": "Yearly Electricity Data — Ember",
+    "url": "https://ember-climate.org/data-catalogue/yearly-electricity-data/",
+    "desc": "Ember annual electricity generation, capacity, emissions, and demand dataset covering 200+ geographies including the United States; updated monthly with 2025 data; independent energy-transition monitor.",
+    "descFr": "Ensemble de données annuelles d'Ember sur la production, la capacité, les émissions et la demande d'électricité couvrant plus de 200 entités géographiques dont les États-Unis; mis à jour mensuellement avec les données 2025; moniteur indépendant de la transition énergétique.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "nd-gain-country-index",
+    "name": "ND-GAIN Country Index",
+    "nameFr": "ND-GAIN Country Index",
+    "url": "https://gain.nd.edu/our-work/country-index/",
+    "desc": "Notre Dame Global Adaptation Initiative (ND-GAIN) annual index scoring 182 countries on climate vulnerability and adaptation readiness; covers data through 2024.",
+    "descFr": "Indice annuel de la Notre Dame Global Adaptation Initiative (ND-GAIN) évaluant 182 pays selon leur vulnérabilité climatique et leur capacité d'adaptation; couvre les données jusqu'en 2024.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bls-total-factor-productivity-2025",
+    "name": "Total factor productivity, 2025",
+    "nameFr": "Total factor productivity, 2025",
+    "url": "https://www.bls.gov/news.release/prod3.nr0.htm",
+    "desc": "U.S. Bureau of Labor Statistics (BLS) annual total factor productivity release for the private nonfarm business sector; primary U.S. productivity data source.",
+    "descFr": "Publication annuelle de la productivité globale des facteurs du Bureau of Labor Statistics (BLS) pour le secteur privé non agricole; source primaire de données de productivité américaine.",
+    "publicationDate": "2026-03-18",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "la-wildfires-jan-2025",
+    "name": "FEMA-4856-DR-CA Major Disaster Declaration — Federal Register Notice",
+    "nameFr": "FEMA-4856-DR-CA Major Disaster Declaration — Federal Register Notice",
+    "url": "https://www.fema.gov/disaster-federal-register-notice/fema-4856-dr-ca-major-disaster-declaration-public-notice",
+    "desc": "Federal Emergency Management Agency (FEMA) Federal Register notice for Major Disaster Declaration DR-4856-CA, issued January 8, 2025, for the Southern California wildfires; primary federal legal instrument.",
+    "descFr": "Avis du Federal Register de l'Agence fédérale de gestion des urgences (FEMA) pour la déclaration de catastrophe majeure DR-4856-CA, émise le 8 janvier 2025 pour les incendies du sud de la Californie; instrument juridique fédéral primaire.",
+    "publicationDate": "2025-01-08",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "trump-inauguration-eos-jan-2025",
+    "name": "Presidential Actions — Executive Orders | The White House",
+    "nameFr": "Presidential Actions — Executive Orders | The White House",
+    "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+    "desc": "White House official portal listing all executive orders issued in the Trump second term beginning January 20, 2025; primary source for day-one executive order texts.",
+    "descFr": "Portail officiel de la Maison-Blanche listant tous les décrets émis lors du second mandat Trump à partir du 20 janvier 2025; source primaire pour les textes des décrets du premier jour.",
+    "publicationDate": "2025-01-20",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "doge-federal-workforce-cuts-2025",
+    "name": "Establishing and Implementing the President's Department of Government Efficiency — Executive Order 14158",
+    "nameFr": "Establishing and Implementing the President's Department of Government Efficiency — Executive Order 14158",
+    "url": "https://www.whitehouse.gov/presidential-actions/2025/01/establishing-and-implementing-the-presidents-department-of-government-ef/",
+    "desc": "White House official text of Executive Order 14158, signed January 20, 2025, establishing the Department of Government Efficiency (DOGE); primary legal instrument.",
+    "descFr": "Texte officiel de la Maison-Blanche du décret exécutif 14158, signé le 20 janvier 2025, créant le Department of Government Efficiency (DOGE); instrument juridique primaire.",
+    "publicationDate": "2025-01-20",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "alien-enemies-act-deportations-mar-2025",
+    "name": "Invocation of the Alien Enemies Act Regarding the Invasion of the United States by Tren de Aragua",
+    "nameFr": "Invocation of the Alien Enemies Act Regarding the Invasion of the United States by Tren de Aragua",
+    "url": "https://www.whitehouse.gov/presidential-actions/2025/03/invocation-of-the-alien-enemies-act-regarding-the-invasion-of-the-united/",
+    "desc": "White House official proclamation of March 14, 2025, invoking the Alien Enemies Act (50 U.S.C. § 21 et seq.) against Venezuelan nationals allegedly affiliated with Tren de Aragua; primary legal instrument.",
+    "descFr": "Proclamation officielle de la Maison-Blanche du 14 mars 2025 invoquant l'Alien Enemies Act (50 U.S.C. § 21 et seq.) contre des ressortissants vénézuéliens présumément affiliés au Tren de Aragua; instrument juridique primaire.",
+    "publicationDate": "2025-03-14",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "operation-rough-rider-yemen-2025",
+    "name": "Yemen: In Brief (R48942) — Congressional Research Service",
+    "nameFr": "Yemen: In Brief (R48942) — Congressional Research Service",
+    "url": "https://www.congress.gov/crs-product/R48942",
+    "desc": "Congressional Research Service (CRS) brief on Yemen, covering U.S. military operations including Operation Rough Rider (March–May 2025); non-partisan congressional analysis.",
+    "descFr": "Note du Congressional Research Service (CRS) sur le Yémen, couvrant les opérations militaires américaines dont l'opération Rough Rider (mars–mai 2025); analyse parlementaire non-partisane.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "liberation-day-tariffs-apr-2025",
+    "name": "Regulating Imports with a Reciprocal Tariff to Rectify Trade Practices — Executive Order",
+    "nameFr": "Regulating Imports with a Reciprocal Tariff to Rectify Trade Practices — Executive Order",
+    "url": "https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices/",
+    "desc": "White House official text of the April 2, 2025, executive order imposing a universal 10% baseline tariff and country-specific reciprocal tariffs ('Liberation Day'); primary legal instrument.",
+    "descFr": "Texte officiel de la Maison-Blanche du décret du 2 avril 2025 imposant un tarif universel de 10 % et des droits réciproques par pays (« Liberation Day »); instrument juridique primaire.",
+    "publicationDate": "2025-04-02",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "us-strikes-iran-nuclear-jun-2025",
+    "name": "U.S. Strikes on Nuclear Sites in Iran (IN12571) — Congressional Research Service",
+    "nameFr": "U.S. Strikes on Nuclear Sites in Iran (IN12571) — Congressional Research Service",
+    "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12571/IN12571.1.pdf",
+    "desc": "Congressional Research Service (CRS) Insight on the June 21, 2025, U.S. airstrikes on Iranian nuclear facilities at Natanz, Fordow, and Isfahan; non-partisan congressional analysis.",
+    "descFr": "Note du Congressional Research Service (CRS) sur les frappes aériennes américaines du 21 juin 2025 contre les installations nucléaires iraniennes de Natanz, Fordow et Ispahan; analyse parlementaire non-partisane.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "one-big-beautiful-bill-jul-2025",
+    "name": "President Trump's One Big Beautiful Bill Is Now the Law | The White House",
+    "nameFr": "President Trump's One Big Beautiful Bill Is Now the Law | The White House",
+    "url": "https://www.whitehouse.gov/releases/2025/07/president-trumps-one-big-beautiful-bill-is-now-the-law/",
+    "desc": "White House official release confirming signature of H.R. 1, the One Big Beautiful Bill Act (P.L. 119-21), on July 4, 2025; primary record of enactment.",
+    "descFr": "Communiqué officiel de la Maison-Blanche confirmant la signature du projet de loi H.R. 1, le One Big Beautiful Bill Act (P.L. 119-21), le 4 juillet 2025; document primaire d'entrée en vigueur.",
+    "publicationDate": "2025-07-04",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "us-govt-shutdown-oct-nov-2025",
+    "name": "House Republicans Restore Order: Congress Passes Clean Funding Extension | House Appropriations Committee",
+    "nameFr": "House Republicans Restore Order: Congress Passes Clean Funding Extension | House Appropriations Committee",
+    "url": "https://appropriations.house.gov/news/press-releases/house-republicans-restore-order-congress-passes-clean-funding-extension-and",
+    "desc": "U.S. House Committee on Appropriations press release confirming passage of the continuing resolution ending the 43-day government shutdown on November 12, 2025; official congressional record.",
+    "descFr": "Communiqué de presse du Comité des crédits de la Chambre confirmant l'adoption de la résolution provisoire mettant fin à la fermeture du gouvernement de 43 jours le 12 novembre 2025; document parlementaire officiel.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "operation-southern-spear-sep-2025",
+    "name": "Operation Southern Spear Report to Congress, Q2 (January–March 2026) — U.S. Department of Defense",
+    "nameFr": "Operation Southern Spear Report to Congress, Q2 (January–March 2026) — U.S. Department of Defense",
+    "url": "https://media.defense.gov/2026/May/21/2003935694/-1/-1/1/OSS_Q2_MAR2026_FINAL_508.PDF",
+    "desc": "U.S. Department of Defense (DoD) quarterly statutory report to Congress on Operation Southern Spear (Caribbean counter-narco campaign), covering Q2 FY 2026 (January–March 2026).",
+    "descFr": "Rapport trimestriel statutaire du ministère américain de la Défense (DoD) au Congrès sur l'opération Southern Spear (campagne anti-narcotrafic dans les Caraïbes), couvrant le T2 de l'exercice 2026 (janvier–mars 2026).",
+    "publicationDate": "2026-05-21",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "operation-hawkeye-strike-syria-dec-2025",
+    "name": "CENTCOM Launches Operation Hawkeye Strike Against ISIS in Syria — U.S. Air Force",
+    "nameFr": "CENTCOM Launches Operation Hawkeye Strike Against ISIS in Syria — U.S. Air Force",
+    "url": "https://www.af.mil/News/Article-Display/Article/4365832/centcom-launches-operation-hawkeye-strike-against-isis-in-syria/",
+    "desc": "U.S. Air Force official news release on the December 19, 2025, launch of Operation Hawkeye Strike by U.S. Central Command (CENTCOM) targeting Islamic State in Syria and Iraq.",
+    "descFr": "Communiqué officiel de l'US Air Force sur le lancement le 19 décembre 2025 de l'opération Hawkeye Strike par l'U.S. Central Command (CENTCOM) ciblant l'État islamique en Syrie et en Irak.",
+    "publicationDate": "2025-12-19",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "us-nigeria-airstrike-dec-2025",
+    "name": "U.S. Africa Command Conducts Strike against ISIS in Nigeria — AFRICOM Press Release",
+    "nameFr": "U.S. Africa Command Conducts Strike against ISIS in Nigeria — AFRICOM Press Release",
+    "url": "https://www.africom.mil/pressrelease/36158/us-africa-command-conducts-strike-against-isis-in-nigeria",
+    "desc": "U.S. Africa Command (AFRICOM) official press release on December 25, 2025, precision strikes against Islamic State camps in Sokoto State, Nigeria; primary DoD operational source.",
+    "descFr": "Communiqué de presse officiel de l'AFRICOM sur les frappes de précision du 25 décembre 2025 contre les camps de l'État islamique dans l'État de Sokoto, Nigéria; source opérationnelle primaire du DoD.",
+    "publicationDate": "2025-12-25",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "us-capture-maduro-venezuela-jan-2026",
+    "name": "Trump Announces U.S. Military's Capture of Maduro — U.S. Department of War",
+    "nameFr": "Trump Announces U.S. Military's Capture of Maduro — U.S. Department of War",
+    "url": "https://www.war.gov/News/News-Stories/Article/Article/4370431/trump-announces-us-militarys-capture-of-maduro/",
+    "desc": "Official U.S. Department of War (formerly Department of Defense, renamed under Trump second term) news story on the January 3, 2026, Operation Absolute Resolve capturing Nicolás Maduro.",
+    "descFr": "Article d'actualité officiel du ministère américain de la Guerre (anciennement Département de la Défense, renommé sous le second mandat Trump) sur l'opération Absolute Resolve du 3 janvier 2026 ayant capturé Nicolás Maduro.",
+    "publicationDate": "2026-01-03",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "scotus-ieepa-tariffs-ruling-feb-2026",
+    "name": "Opinion in No. 24-1287, Learning Resources, Inc. v. Trump — Supreme Court of the United States",
+    "nameFr": "Opinion in No. 24-1287, Learning Resources, Inc. v. Trump — Supreme Court of the United States",
+    "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+    "desc": "U.S. Supreme Court majority opinion of February 20, 2026 (6–3), holding that the International Emergency Economic Powers Act (IEEPA) does not authorize tariffs and invalidating the April 2025 'Liberation Day' tariffs.",
+    "descFr": "Opinion majoritaire de la Cour suprême américaine du 20 février 2026 (6–3), statuant que l'International Emergency Economic Powers Act (IEEPA) n'autorise pas l'imposition de tarifs douaniers et invalidant les tarifs « Liberation Day » d'avril 2025.",
+    "publicationDate": "2026-02-20",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "operation-epic-fury-iran-feb-2026",
+    "name": "Operation Epic Fury — U.S. Central Command",
+    "nameFr": "Operation Epic Fury — U.S. Central Command",
+    "url": "https://www.centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/",
+    "desc": "U.S. Central Command (CENTCOM) official operations page for Operation Epic Fury, the coordinated U.S.-Israeli military campaign against Iran's missile infrastructure and IRGC beginning February 28, 2026.",
+    "descFr": "Page officielle des opérations de l'U.S. Central Command (CENTCOM) pour l'opération Epic Fury, la campagne militaire coordonnée États-Unis–Israël contre l'infrastructure de missiles iraniens et le Corps des gardiens de la révolution islamique (CGRI) débutant le 28 février 2026.",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "scotus-birthright-citizenship-jun-2026",
+    "name": "Opinion in No. 25-365, Trump v. Barbara — Supreme Court of the United States",
+    "nameFr": "Opinion in No. 25-365, Trump v. Barbara — Supreme Court of the United States",
+    "url": "https://www.supremecourt.gov/opinions/25pdf/25-365_4hdj.pdf",
+    "desc": "U.S. Supreme Court majority opinion of June 30, 2026 (5–4), holding that Executive Order 14160's restriction on birthright citizenship is unconstitutional under the Fourteenth Amendment's Citizenship Clause.",
+    "descFr": "Opinion majoritaire de la Cour suprême américaine du 30 juin 2026 (5–4), statuant que la restriction du décret 14160 sur la citoyenneté par droit du sol est inconstitutionnelle en vertu de la clause de citoyenneté du Quatorzième amendement.",
+    "publicationDate": "2026-06-30",
+    "accessDate": "2026-07-13",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bea-gdp-q1-2026",
+    "name": "Gross Domestic Product, First Quarter 2026 (Third Estimate) | Bureau of Economic Analysis",
+    "nameFr": "Gross Domestic Product, First Quarter 2026 (Third Estimate) | Bureau of Economic Analysis",
+    "url": "https://www.bea.gov/news/2026/gross-domestic-product-first-quarter-2026-third-estimate",
+    "desc": "Official GDP release by the U.S. Bureau of Economic Analysis (BEA). National-accounts primary source for GDP level, growth rate, and sectoral breakdown; most recent third estimate.",
+    "descFr": "Publication officielle du PIB par le Bureau of Economic Analysis des États-Unis. Source primaire des comptes nationaux pour le niveau du PIB, le taux de croissance et la ventilation sectorielle.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "imf-weo-july-2026",
+    "name": "World Economic Outlook Update, July 2026",
+    "nameFr": "Mise à jour des Perspectives de l'économie mondiale, juillet 2026",
+    "url": "https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf",
+    "desc": "Biannual update of the International Monetary Fund World Economic Outlook. Contains IMF growth forecasts for the United States and global comparators; authoritative multilateral macroeconomic assessment.",
+    "descFr": "Mise à jour semestrielle des Perspectives de l'économie mondiale du FMI. Contient les prévisions de croissance pour les États-Unis et les comparateurs mondiaux; évaluation macroéconomique multilatérale faisant autorité.",
+    "publicationDate": "2026-07-09",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "cbo-budget-fy2025",
+    "name": "Monthly Budget Review: Fiscal Year 2025 | Congressional Budget Office",
+    "nameFr": "Monthly Budget Review: Fiscal Year 2025 | Congressional Budget Office",
+    "url": "https://www.cbo.gov/publication/61071",
+    "desc": "Final fiscal-year budget summary from the Congressional Budget Office, the non-partisan budget authority of the U.S. Congress. Primary source for annual federal deficit, revenues, and outlays.",
+    "descFr": "Résumé budgétaire de fin d'exercice du Congressional Budget Office, autorité budgétaire non partisane du Congrès américain. Source primaire pour le déficit fédéral annuel, les recettes et les dépenses.",
+    "publicationDate": "2025-10-07",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "treasury-debt-gdp-fy2025",
+    "name": "U.S. Government Financial Report FY 2025 — Management's Discussion & Analysis | U.S. Department of the Treasury",
+    "nameFr": "U.S. Government Financial Report FY 2025 — Management's Discussion & Analysis | U.S. Department of the Treasury",
+    "url": "https://fiscal.treasury.gov/accounting/us-financial-report/government-financial-position",
+    "desc": "Official U.S. Treasury consolidated financial report. Primary source for the federal debt-to-GDP ratio and long-term fiscal sustainability projections. Authoritative government financial accounts.",
+    "descFr": "Rapport financier consolidé officiel du Trésor américain. Source primaire pour le ratio dette/PIB fédéral et les projections de soutenabilité budgétaire à long terme.",
+    "publicationDate": "2026-05-06",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fed-monetary-policy-report-july-2026",
+    "name": "Monetary Policy Report, July 2026 | Board of Governors of the Federal Reserve System",
+    "nameFr": "Monetary Policy Report, July 2026 | Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/monetarypolicy/files/20260710_mprfullreport.pdf",
+    "desc": "Semi-annual monetary policy report submitted by the Federal Reserve Board to Congress. Primary source for current Federal Reserve interest-rate stance, inflation assessment, and economic projections.",
+    "descFr": "Rapport semestriel de politique monétaire soumis par la Réserve fédérale au Congrès. Source primaire pour la politique de taux, l'évaluation de l'inflation et les projections économiques.",
+    "publicationDate": "2026-07-10",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bls-cpi-may-2026",
+    "name": "Consumer Price Index Summary — May 2026 | U.S. Bureau of Labor Statistics",
+    "nameFr": "Consumer Price Index Summary — May 2026 | U.S. Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+    "desc": "Official monthly Consumer Price Index release by the U.S. Bureau of Labor Statistics. Primary source for current U.S. inflation rate and price-change breakdown by category.",
+    "descFr": "Publication mensuelle officielle de l'indice des prix à la consommation par le Bureau of Labor Statistics. Source primaire pour le taux d'inflation américain actuel et la ventilation par catégorie.",
+    "publicationDate": "2026-06-11",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "moodys-downgrade-2025",
+    "name": "Moody's Ratings Downgrades United States Ratings to Aa1 from Aaa; Changes Outlook to Stable | Moody's Ratings",
+    "nameFr": "Moody's Ratings Downgrades United States Ratings to Aa1 from Aaa; Changes Outlook to Stable | Moody's Ratings",
+    "url": "https://www.moodys.com/web/en/us/about-us/usrating.html",
+    "desc": "Official Moody's Ratings sovereign credit-rating action press release on the United States, May 2025. Downgrade action placing U.S. sovereign debt alongside the other major agency ratings. Official issuer-specific rating-action page.",
+    "descFr": "Communiqué officiel de l'action de notation souveraine de Moody's Ratings sur les États-Unis, mai 2025. Page officielle de l'action de notation de l'émetteur.",
+    "publicationDate": "2025-05-16",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bea-trade-annual-2025",
+    "name": "U.S. International Trade in Goods and Services, December and Annual 2025 | Bureau of Economic Analysis",
+    "nameFr": "U.S. International Trade in Goods and Services, December and Annual 2025 | Bureau of Economic Analysis",
+    "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025",
+    "desc": "Official annual trade-balance release by the BEA and U.S. Census Bureau. Primary source for U.S. goods and services trade flows, export and import totals for full-year 2025.",
+    "descFr": "Publication annuelle officielle de la balance commerciale par le BEA et le Bureau du recensement. Source primaire pour les flux commerciaux et les exportations/importations pour l'exercice 2025.",
+    "publicationDate": "2026-02-18",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fed-dfa",
+    "name": "Distributional Financial Accounts | Board of Governors of the Federal Reserve System",
+    "nameFr": "Distributional Financial Accounts | Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/releases/efa/efa-distributional-financial-accounts.htm",
+    "desc": "Federal Reserve quarterly data series distributing aggregate U.S. household wealth by wealth percentile, generation, education, and race. Official primary source for domestic wealth concentration and political economy analysis.",
+    "descFr": "Série de données trimestrielles de la Réserve fédérale distribuant la richesse des ménages américains par centile, génération, niveau d'éducation et race. Source primaire officielle pour l'analyse de la concentration de la richesse.",
+    "publicationDate": "2026-06-17",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ustr-trade-policy-2025",
+    "name": "2025 Trade Policy Agenda and 2024 Annual Report | Office of the United States Trade Representative",
+    "nameFr": "2025 Trade Policy Agenda and 2024 Annual Report | Office of the United States Trade Representative",
+    "url": "https://ustr.gov/about-us/policy-offices/press-office/reports-and-publications/2025/2025-trade-policy-agenda-and-2024-annual-report",
+    "desc": "Annual trade policy report submitted to Congress by the U.S. Trade Representative (USTR). Covers trade partner priorities, bilateral agreements, and dispute posture; official primary source for trade policy and diplomatic orientation.",
+    "descFr": "Rapport annuel de politique commerciale soumis au Congrès par le représentant américain au commerce. Couvre les priorités commerciales et les accords bilatéraux; source gouvernementale primaire.",
+    "publicationDate": "2025-02-27",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "state-dept-treaties-in-force-2025",
+    "name": "Treaties in Force: A List of Treaties and Other International Agreements of the United States | U.S. Department of State",
+    "nameFr": "Treaties in Force: A List of Treaties and Other International Agreements of the United States | U.S. Department of State",
+    "url": "https://www.state.gov/wp-content/uploads/2025/08/Treaties-in-Force-2025-FINAL.pdf",
+    "desc": "Annual Department of State compendium listing all treaties and international agreements in force for the United States as of 1 January 2025. Primary source for treaty alliances, defence commitments, and multilateral memberships.",
+    "descFr": "Recueil annuel du Département d'État répertoriant tous les traités et accords internationaux en vigueur pour les États-Unis au 1er janvier 2025. Source primaire pour les alliances, engagements de défense et adhésions multilatérales.",
+    "publicationDate": "2025-08-01",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "census-population-estimates-2025",
+    "name": "Vintage 2025 National and State Population Estimates | U.S. Census Bureau",
+    "nameFr": "Vintage 2025 National and State Population Estimates | U.S. Census Bureau",
+    "url": "https://www.census.gov/newsroom/press-kits/2026/national-state-population-estimates.html",
+    "desc": "Official U.S. Census Bureau population estimates as of 1 July 2025. Primary source for total U.S. population, state-level growth, and demographic composition.",
+    "descFr": "Estimations officielles de la population du Bureau du recensement américain au 1er juillet 2025. Source primaire pour la population totale et la composition démographique.",
+    "publicationDate": "2026-01-26",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "bts-tsar-2025",
+    "name": "Transportation Statistics Annual Report 2025 | Bureau of Transportation Statistics, U.S. Department of Transportation",
+    "nameFr": "Transportation Statistics Annual Report 2025 | Bureau of Transportation Statistics, U.S. Department of Transportation",
+    "url": "https://www.bts.gov/browse-statistical-products-and-data/transportation-statistics-annual-reports/2025-transportation",
+    "desc": "Annual official compendium of U.S. transportation system statistics published by the Bureau of Transportation Statistics (BTS). Covers road, rail, aviation, and freight connectivity; primary government source for internal connectivity data.",
+    "descFr": "Recueil annuel officiel des statistiques du système de transport américain publié par le Bureau of Transportation Statistics. Couvre la connectivité routière, ferroviaire, aérienne et de fret.",
+    "publicationDate": "2026-05-12",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "noaa-coastal-management-fastfacts",
+    "name": "Coastal Fast Facts | NOAA Office for Coastal Management",
+    "nameFr": "Coastal Fast Facts | NOAA Office for Coastal Management",
+    "url": "https://coast.noaa.gov/states/fast-facts/economics-and-demographics.html",
+    "desc": "NOAA Office for Coastal Management data page covering U.S. shoreline length, coastal population distribution, and coastal economic statistics. Official federal government geographic reference for coastal and port data.",
+    "descFr": "Page de données du Bureau de gestion côtière de la NOAA couvrant la longueur des côtes américaines, la répartition de la population côtière et les statistiques économiques côtières.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fcc-broadband-data-collection",
+    "name": "Broadband Data Collection — December 2024 Data | Federal Communications Commission",
+    "nameFr": "Broadband Data Collection — December 2024 Data | Federal Communications Commission",
+    "url": "https://www.fcc.gov/BroadbandData",
+    "desc": "Federal Communications Commission (FCC) Broadband Data Collection portal showing broadband availability by location as of December 2024. Official government source for national broadband coverage and digital connectivity gaps.",
+    "descFr": "Portail de collecte de données haut débit de la FCC montrant la disponibilité du haut débit par localisation à décembre 2024. Source gouvernementale officielle pour la couverture haut débit nationale.",
+    "publicationDate": "2025-05-12",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "doi-insular-affairs",
+    "name": "Office of Insular Affairs | U.S. Department of the Interior",
+    "nameFr": "Office of Insular Affairs | U.S. Department of the Interior",
+    "url": "https://www.doi.gov/oia",
+    "desc": "Official page of the Office of Insular Affairs (OIA), U.S. Department of the Interior. Administers federal relations with U.S. territories (American Samoa, Guam, CNMI, USVI) and Freely Associated States. Primary source for periphery governance.",
+    "descFr": "Page officielle du Bureau des affaires insulaires du Département de l'Intérieur américain. Administre les relations fédérales avec les territoires américains. Source primaire pour la gouvernance de la périphérie.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "usgs-mcs-2025",
+    "name": "Mineral Commodity Summaries 2025 | U.S. Geological Survey",
+    "nameFr": "Mineral Commodity Summaries 2025 | U.S. Geological Survey",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025.pdf",
+    "desc": "Annual USGS Mineral Commodity Summaries — the standard national reference for U.S. mineral reserves, production, and import reliance across critical and non-fuel mineral commodities.",
+    "descFr": "Résumés annuels des produits minéraux du USGS — référence nationale standard pour les réserves minérales, la production et la dépendance aux importations pour tous les minéraux critiques.",
+    "publicationDate": "2025-01-30",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fao-aquastat-usa",
+    "name": "AQUASTAT Country Profile — United States of America | Food and Agriculture Organization of the United Nations",
+    "nameFr": "AQUASTAT Profil de pays — États-Unis d'Amérique | Organisation des Nations Unies pour l'alimentation et l'agriculture",
+    "url": "https://www.fao.org/aquastat/en/countries-and-basins/country-profiles/country/USA",
+    "desc": "FAO's authoritative global water database country profile for the United States. Provides renewable freshwater resources, water withdrawal by sector, and irrigation data; official UN primary source.",
+    "descFr": "Profil de pays de la base de données mondiale de la FAO sur l'eau pour les États-Unis. Fournit les ressources en eau douce renouvelable, les prélèvements sectoriels et les données d'irrigation.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "fao-fra-2025",
+    "name": "Global Forest Resources Assessment 2025 | Food and Agriculture Organization of the United Nations",
+    "nameFr": "Évaluation des ressources forestières mondiales 2025 | Organisation des Nations Unies pour l'alimentation et l'agriculture",
+    "url": "https://openknowledge.fao.org/handle/20.500.14283/cd6709en",
+    "desc": "FAO's quinquennial global forest inventory. Covers forest extent, condition, management, and trend for all reporting countries including the United States; authoritative multilateral biosphere reference.",
+    "descFr": "Inventaire forestier mondial quinquennal de la FAO. Couvre l'étendue, l'état, la gestion et les tendances des forêts pour tous les pays déclarants, y compris les États-Unis.",
+    "publicationDate": "2025-10-20",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "usda-nass-census-agriculture-2022",
+    "name": "2022 Census of Agriculture: Farms and Farmland Highlights | USDA National Agricultural Statistics Service",
+    "nameFr": "2022 Census of Agriculture: Farms and Farmland Highlights | USDA National Agricultural Statistics Service",
+    "url": "https://www.nass.usda.gov/Publications/Highlights/2024/Census22_HL_FarmsFarmland.pdf",
+    "desc": "Official five-year U.S. Census of Agriculture highlight report by the USDA National Agricultural Statistics Service (NASS). Primary source for U.S. arable land area, farm count, and farmland trends.",
+    "descFr": "Rapport de synthèse officiel du recensement agricole quinquennal américain par le NASS du USDA. Source primaire pour la superficie des terres arables, le nombre d'exploitations et les tendances foncières agricoles.",
+    "publicationDate": "2024-02-13",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "noaa-status-stocks-2024",
+    "name": "Status of Stocks Reports — Annual Report to Congress on the Status of U.S. Fisheries | NOAA Fisheries",
+    "nameFr": "Status of Stocks Reports — Annual Report to Congress on the Status of U.S. Fisheries | NOAA Fisheries",
+    "url": "https://www.fisheries.noaa.gov/national/sustainable-fisheries/status-stocks-reports",
+    "desc": "Annual NOAA Fisheries statutory report to Congress on the status of U.S. fish stocks under the Magnuson-Stevens Act. Primary source for overfishing and stock health data; official federal fisheries management assessment.",
+    "descFr": "Rapport annuel réglementaire de NOAA Fisheries au Congrès sur l'état des stocks de poissons américains. Source primaire pour les données sur la surpêche et la santé des stocks.",
+    "publicationDate": "2024-05-01",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "usda-ers-food-security-2024",
+    "name": "Household Food Security in the United States in 2024 | USDA Economic Research Service",
+    "nameFr": "Household Food Security in the United States in 2024 | USDA Economic Research Service",
+    "url": "https://www.ers.usda.gov/publications/pub-details/?pubid=110655",
+    "desc": "Annual USDA Economic Research Service (ERS) report on domestic food security, based on nationally representative household survey. Primary source for food system self-sufficiency at the population level; metabolism section.",
+    "descFr": "Rapport annuel de l'ERS du USDA sur la sécurité alimentaire des ménages américains, basé sur une enquête représentative. Source primaire pour l'autosuffisance du système alimentaire.",
+    "publicationDate": "2025-10-23",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "nca5",
+    "name": "Fifth National Climate Assessment | U.S. Global Change Research Program",
+    "nameFr": "Fifth National Climate Assessment | U.S. Global Change Research Program",
+    "url": "https://nca2023.globalchange.gov/chapter/2/",
+    "desc": "Authoritative U.S. government interagency assessment of climate science, physical hazards, and regional impacts, published by the U.S. Global Change Research Program (USGCRP). Congressionally mandated. Covers observed and projected warming and principal hazards across all U.S. regions.",
+    "descFr": "Évaluation interagences officielle du gouvernement américain sur la science du climat et les risques physiques, publiée par l'USGCRP. Mandatée par le Congrès. Couvre le réchauffement observé et projeté par région.",
+    "publicationDate": "2023-11-14",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "eia-aeo-2026",
+    "name": "Annual Energy Outlook 2026 | U.S. Energy Information Administration",
+    "nameFr": "Annual Energy Outlook 2026 | U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/outlooks/aeo/tables_ref.php",
+    "desc": "EIA's long-term projection of U.S. energy supply, demand, and prices through 2050. Official government reference for domestic energy mix, renewables growth, fossil fuels trajectory, and self-sufficiency; reference-case data tables.",
+    "descFr": "Projection à long terme de l'EIA sur l'offre, la demande et les prix énergétiques américains jusqu'en 2050. Référence gouvernementale officielle; tableaux de données du scénario de référence.",
+    "publicationDate": "2026-04-08",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "eia-steo-july-2026",
+    "name": "Short-Term Energy Outlook, July 2026 | U.S. Energy Information Administration",
+    "nameFr": "Short-Term Energy Outlook, juillet 2026 | U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/outlooks/steo/report/",
+    "desc": "EIA's monthly near-term forecast for U.S. energy production, consumption, and prices. Primary source for current-year oil, natural gas, and electricity data and near-term projections.",
+    "descFr": "Prévisions mensuelles à court terme de l'EIA sur la production, la consommation et les prix énergétiques américains. Source primaire pour les données énergétiques de l'année en cours.",
+    "publicationDate": "2026-07-08",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "energy-institute-stat-review-2026",
+    "name": "Statistical Review of World Energy 2026 | Energy Institute",
+    "nameFr": "Statistical Review of World Energy 2026 | Energy Institute",
+    "url": "https://www.energyinst.org/statistical-review/resources-and-data/downloads",
+    "desc": "Annual global energy data compendium published by the Energy Institute. Covers production, consumption, trade, and carbon emissions by fuel and country. Standard international energy benchmark; data-download page.",
+    "descFr": "Compendium annuel de données énergétiques mondiales publié par l'Energy Institute. Couvre production, consommation, commerce et émissions de CO₂ par combustible et par pays.",
+    "publicationDate": "2026-06-01",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "iea-co2-review-2025",
+    "name": "CO2 Emissions — Global Energy Review 2025 | International Energy Agency",
+    "nameFr": "Émissions de CO₂ — Bilan mondial de l'énergie 2025 | Agence internationale de l'énergie",
+    "url": "https://www.iea.org/reports/global-energy-review-2025/co2-emissions",
+    "desc": "International Energy Agency (IEA) assessment of global and country-level CO2 emissions for 2024. Covers U.S. energy-related emissions trajectory and fuel-source trends. Authoritative multilateral source.",
+    "descFr": "Évaluation de l'AIE des émissions de CO₂ mondiales et nationales pour 2024. Couvre la trajectoire des émissions américaines liées à l'énergie.",
+    "publicationDate": "2025-03-01",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "permits-performance-gov",
+    "name": "FAST-41 Permitting Dashboard | Federal Permitting Improvement Steering Council",
+    "nameFr": "FAST-41 Permitting Dashboard | Federal Permitting Improvement Steering Council",
+    "url": "https://www.permits.performance.gov/projects/list",
+    "desc": "Live federal dashboard tracking major infrastructure project permitting timelines under FAST-41 (42 U.S.C. § 4370m). Official published federal approvals-regime instrument. Note: covers only federal permitting; state-level permitting — the majority of U.S. project approvals — is governed separately by each state's own statutes.",
+    "descFr": "Tableau de bord fédéral en temps réel sur les délais d'autorisation de grands projets d'infrastructure en vertu de FAST-41. Couvre uniquement les autorisations fédérales; les régimes d'autorisation des États sont séparés.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "gao-iija-delivery-2025",
+    "name": "Infrastructure Investment and Jobs Act: DOT Should Better Monitor Project Delivery and Spending | U.S. Government Accountability Office",
+    "nameFr": "Infrastructure Investment and Jobs Act: DOT Should Better Monitor Project Delivery and Spending | U.S. Government Accountability Office",
+    "url": "https://www.gao.gov/products/gao-25-107166",
+    "desc": "Government Accountability Office (GAO) report on U.S. Department of Transportation (DOT) project delivery and spending under the Infrastructure Investment and Jobs Act (IIJA). Non-partisan federal watchdog assessment of delivery performance and oversight gaps.",
+    "descFr": "Rapport du GAO, chien de garde fédéral non partisan, sur la livraison des projets et les dépenses du Département des transports américain dans le cadre de l'IIJA. Évaluation des lacunes de surveillance.",
+    "publicationDate": "2025-07-23",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "asce-infra-2025",
+    "name": "2025 Report Card for America's Infrastructure | American Society of Civil Engineers",
+    "nameFr": "2025 Report Card for America's Infrastructure | American Society of Civil Engineers",
+    "url": "https://infrastructurereportcard.org/make-the-grade/",
+    "desc": "Quadrennial assessment of U.S. infrastructure condition and investment needs across 18 categories by the American Society of Civil Engineers (ASCE). Professional engineering judgment; note that ASCE as a professional body has a structural interest in finding infrastructure deficits. Used for delivery-deficit framing, not as the sole source.",
+    "descFr": "Évaluation quadriennale des infrastructures américaines par l'ASCE. Jugement professionnel d'ingénieurs; noter que l'ASCE a un intérêt professionnel structurel à constater des déficits d'infrastructure.",
+    "publicationDate": "2025-03-25",
+    "accessDate": "2026-07-12",
+    "confidence": "Med",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "bls-productivity-q1-2026",
+    "name": "Productivity and Costs, First Quarter 2026, Revised | U.S. Bureau of Labor Statistics",
+    "nameFr": "Productivity and Costs, First Quarter 2026, Revised | U.S. Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/news.release/prod2.nr0.htm",
+    "desc": "Official BLS quarterly release of U.S. nonfarm business sector labor productivity and unit labor costs. Primary national source for productivity trend data.",
+    "descFr": "Publication trimestrielle officielle du BLS sur la productivité du travail et les coûts unitaires du secteur non agricole américain. Source nationale primaire pour les tendances de productivité.",
+    "publicationDate": "2026-06-03",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "oecd-pmr-usa",
+    "name": "OECD Product Market Regulation Indicators — United States Country Note | OECD",
+    "nameFr": "Indicateurs de réglementation des marchés de produits de l'OCDE — Note pays États-Unis | OCDE",
+    "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/product-market-regulation/United%20States_PMR%20country%20note.pdf",
+    "desc": "OECD Product Market Regulation (PMR) indicators country note for the United States. Measures regulatory barriers to entry and competition economy-wide and by sector; primary OECD source for interstate and sectoral regulatory barriers affecting labour and capital mobility.",
+    "descFr": "Note pays des indicateurs PMR de l'OCDE pour les États-Unis. Mesure les obstacles réglementaires à l'entrée et à la concurrence; source primaire de l'OCDE pour les barrières réglementaires affectant la mobilité du travail et du capital.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "census-age-sex-2025",
+    "name": "U.S. Population Aging as Nation Turns 250 | U.S. Census Bureau",
+    "nameFr": "U.S. Population Aging as Nation Turns 250 | U.S. Census Bureau",
+    "url": "https://www.census.gov/library/stories/2026/04/age-and-sex.html",
+    "desc": "U.S. Census Bureau data story based on Vintage 2025 population estimates. Provides age-structure analysis by sex including median age trend. Primary demographic source.",
+    "descFr": "Article de données du Bureau du recensement basé sur les estimations Vintage 2025. Analyse la structure par âge et par sexe, y compris la tendance de l'âge médian.",
+    "publicationDate": "2026-04-08",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "kff-race-ethnicity-acs-2024",
+    "name": "Population Distribution by Race/Ethnicity | Kaiser Family Foundation (based on U.S. Census Bureau ACS)",
+    "nameFr": "Population Distribution by Race/Ethnicity | Kaiser Family Foundation (based on U.S. Census Bureau ACS)",
+    "url": "https://www.kff.org/state-health-policy-data/state-indicator/distribution-by-raceethnicity/",
+    "desc": "KFF tabulation of U.S. Census Bureau American Community Survey (ACS) racial and ethnic composition data updated through 2024. The underlying ACS is the primary government demographic instrument; KFF provides accessible tabulation.",
+    "descFr": "Tabulation de la KFF des données de composition raciale et ethnique de l'ACS du Bureau du recensement, mise à jour jusqu'en 2024. L'ACS sous-jacent est l'instrument démographique gouvernemental primaire.",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "cbo-demographic-outlook-2025",
+    "name": "The Demographic Outlook: 2025 to 2055 | Congressional Budget Office",
+    "nameFr": "The Demographic Outlook: 2025 to 2055 | Congressional Budget Office",
+    "url": "https://www.cbo.gov/publication/61164",
+    "desc": "CBO long-range demographic projection covering U.S. population size, age structure, fertility, mortality, and immigration trends to 2055. Non-partisan; used for fiscal and social planning.",
+    "descFr": "Projection démographique à long terme du CBO couvrant la taille de la population, la structure par âge, la fécondité, la mortalité et l'immigration jusqu'en 2055.",
+    "publicationDate": "2025-01-14",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "arda-us-religion",
+    "name": "U.S. Religion Surveys and Data | Association of Religion Data Archives",
+    "nameFr": "U.S. Religion Surveys and Data | Association of Religion Data Archives",
+    "url": "https://www.thearda.com/us-religion",
+    "desc": "Association of Religion Data Archives (ARDA) portal aggregating over 900 U.S. and international religion surveys, membership reports, and data collections from independent academic researchers. Provides triangulation for Pew findings; multiple instruments with varying methodologies. Free academic resource; not government-produced.",
+    "descFr": "Portail de l'ARDA agrégeant plus de 900 enquêtes religieuses américaines et internationales de chercheurs académiques indépendants. Permet la triangulation des données Pew; ressource académique gratuite, non gouvernementale.",
+    "accessDate": "2026-07-12",
+    "confidence": "Med",
+    "citationType": "Fact"
+  },
+  {
+    "id": "acled-usa-july-2026",
+    "name": "United States and Canada Overview: July 2026 | Armed Conflict Location & Event Data Project",
+    "nameFr": "United States and Canada Overview: July 2026 | Armed Conflict Location & Event Data Project",
+    "url": "https://acleddata.com/update/united-states-and-canada-overview-july-2026",
+    "desc": "Monthly political violence and protest monitoring report by the Armed Conflict Location & Event Data Project (ACLED). Tracks demonstrations, riots, and targeted violence; primary internal-security event data source for recent events.",
+    "descFr": "Rapport mensuel de surveillance de la violence politique et des manifestations par l'ACLED. Suit les manifestations, émeutes et violences ciblées; source primaire d'événements de sécurité interne récents.",
+    "publicationDate": "2026-07-02",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "dhs-hta-2025",
+    "name": "Homeland Threat Assessment 2025 | U.S. Department of Homeland Security",
+    "nameFr": "Homeland Threat Assessment 2025 | U.S. Department of Homeland Security",
+    "url": "https://www.dhs.gov/sites/default/files/2024-10/24_0930_ia_24-320-ia-publication-2025-hta-final-30sep24-508.pdf",
+    "desc": "Annual unclassified threat assessment by the DHS Office of Intelligence and Analysis. Covers terrorism, transnational organized crime, cyber threats, border security, and critical infrastructure risks to the U.S. homeland. Official executive-branch primary source.",
+    "descFr": "Évaluation annuelle non classifiée des menaces par le Bureau du renseignement et de l'analyse du DHS. Couvre le terrorisme, le crime organisé transnational, les cybermenaces et la sécurité des infrastructures critiques.",
+    "publicationDate": "2024-10-01",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "icg-conflicts-watch-2026",
+    "name": "Ten Conflicts to Watch in 2026 | International Crisis Group",
+    "nameFr": "Ten Conflicts to Watch in 2026 | International Crisis Group",
+    "url": "https://www.crisisgroup.org/cmt/global/10-conflicts-watch-2026",
+    "desc": "Annual International Crisis Group (ICG) report identifying the ten highest-risk global conflicts. Covers U.S. diplomatic posture and security exposure; independent conflict-prevention NGO. Interpretation source for diplomatic and security risk framing.",
+    "descFr": "Rapport annuel du International Crisis Group identifiant les dix conflits mondiaux à plus haut risque. Couvre la posture diplomatique américaine; ONG indépendante de prévention des conflits.",
+    "publicationDate": "2025-12-30",
+    "accessDate": "2026-07-12",
+    "confidence": "Med",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "pew-democracy-decline-2026",
+    "name": "Multiple Indicators Show a Decline in the Health of America's Democracy in 2025 | Pew Research Center",
+    "nameFr": "Multiple Indicators Show a Decline in the Health of America's Democracy in 2025 | Pew Research Center",
+    "url": "https://www.pewresearch.org/short-reads/2026/04/15/multiple-indicators-show-a-decline-in-the-health-of-americas-democracy-in-2025/",
+    "desc": "Pew Research Center synthesis of V-Dem, Freedom House, and Economist Intelligence Unit scores on U.S. democratic health in 2025. Multi-index triangulation; published within 90-day recent-events window.",
+    "descFr": "Synthèse du Pew Research Center des scores V-Dem, Freedom House et EIU sur la santé démocratique américaine en 2025. Triangulation multi-indice.",
+    "publicationDate": "2026-04-15",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "census-foreign-trade-press-release-2026",
+    "name": "U.S. International Trade in Goods and Services — May 2026 | U.S. Census Bureau / Bureau of Economic Analysis",
+    "nameFr": "U.S. International Trade in Goods and Services — May 2026 | U.S. Census Bureau / Bureau of Economic Analysis",
+    "url": "https://www.census.gov/foreign-trade/Press-Release/current_press_release/ft900.pdf",
+    "desc": "Monthly goods and services trade press release (FT-900) from the Census Bureau and BEA. Primary source for current trade flows and most recent monthly export/import totals.",
+    "descFr": "Communiqué mensuel sur les échanges de biens et services (FT-900) du Bureau du recensement et du BEA. Source primaire pour les flux commerciaux actuels.",
+    "publicationDate": "2026-07-03",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "ceq-eis-timelines-2025",
+    "name": "EIS Timelines Report: 2025 | Council on Environmental Quality",
+    "nameFr": "EIS Timelines Report: 2025 | Council on Environmental Quality",
+    "url": "https://nepa.gov/reports-publications/eis-timelines-report-2025",
+    "desc": "Official Council on Environmental Quality (CEQ) government-wide report on Environmental Impact Statement (EIS) preparation timelines under the National Environmental Policy Act (NEPA). Covers EISs with final statements published through 2024; primary federal source for NEPA review duration data across agencies and project types.",
+    "descFr": "Rapport officiel du Council on Environmental Quality sur les délais de préparation des études d'impact environnemental à l'échelle fédérale en vertu de la NEPA. Source primaire fédérale pour les données de durée des examens NEPA par agence et type de projet.",
+    "publicationDate": "2025-01-13",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "lbnl-state-siting-inventory-2024",
+    "name": "Laws in Order: An Inventory of State Renewable Energy Siting Policies and Permitting Authorities | Lawrence Berkeley National Laboratory / U.S. Department of Energy",
+    "nameFr": "Laws in Order: An Inventory of State Renewable Energy Siting Policies and Permitting Authorities | Lawrence Berkeley National Laboratory / U.S. Department of Energy",
+    "url": "https://eta-publications.lbl.gov/sites/default/files/rap-enterline-valainis-laws-order-inventory-state-renewable-energy-siting-policies-2024-june.pdf",
+    "desc": "DOE-commissioned inventory of renewable energy siting and permitting policies published by Lawrence Berkeley National Laboratory (LBNL). Profiles all 50 states and Puerto Rico: which level of government holds siting authority for large-scale wind and solar, whether defined permitting timelines exist, public involvement requirements, and availability of permitting guides. Primary government-funded cross-state comparative source for state-level permitting regime variation.",
+    "descFr": "Inventaire des politiques d'implantation et d'autorisation des énergies renouvelables commandé par le DOE et publié par le LBNL. Profiles les 50 États et Porto Rico: niveau gouvernemental détenant l'autorité d'implantation, existence de délais définis, exigences de participation publique.",
+    "publicationDate": "2024-05-31",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "frontiers-state-permitting-wind-solar-2026",
+    "name": "Outcomes and Timelines for State-Based Energy Facility Siting Processes | Frontiers in Sustainable Energy Policy",
+    "nameFr": "Outcomes and Timelines for State-Based Energy Facility Siting Processes | Frontiers in Sustainable Energy Policy",
+    "url": "https://www.frontiersin.org/journals/sustainable-energy-policy/articles/10.3389/fsuep.2026.1715811/full",
+    "desc": "Peer-reviewed open-access study, U.S. Department of Energy-funded via Lawrence Berkeley National Laboratory, documenting approval timelines and outcomes for state-based wind and solar siting across 19 states, 2018-2024. First cross-state project-level permitting dataset of its kind; covers projects proposed versus consented versus withdrawn.",
+    "descFr": "Étude évaluée par les pairs en libre accès, financée par le Department of Energy via le Lawrence Berkeley National Laboratory, documentant les délais et les résultats des processus d'autorisation étatiques pour l'éolien et le solaire dans 19 États, 2018-2024. Premier jeu de données interétatique de ce type au niveau des projets.",
+    "publicationDate": "2026-02-25",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  },
+  {
+    "id": "rff-nepa-timelines-clean-energy-2025",
+    "name": "National Environmental Policy Act Timelines and Outcomes for Clean Energy Projects | Resources for the Future",
+    "nameFr": "National Environmental Policy Act Timelines and Outcomes for Clean Energy Projects | Resources for the Future",
+    "url": "https://www.rff.org/publications/reports/how-long-does-it-take-national-environmental-policy-act-timelines-and-outcomes-for-clean-energy-projects/",
+    "desc": "Research report by Resources for the Future (RFF), an independent non-partisan environmental economics research institute. Analyses NEPA review timelines and approval outcomes for federal clean energy projects by project type; also covers litigation. RFF draws on primary NEPA registry data. Note: RFF has historically supported market-oriented environmental policy and may frame findings within a permitting-reform lens.",
+    "descFr": "Rapport de recherche de Resources for the Future (RFF), institut indépendant en économie environnementale. Analyse les délais NEPA et les résultats d'approbation pour les projets d'énergie propre fédéraux. RFF peut cadrer ses résultats dans une perspective de réforme des autorisations.",
+    "publicationDate": "2025-10-01",
+    "accessDate": "2026-07-12",
+    "confidence": "Med",
+    "citationType": "Interpretation"
+  },
+  {
+    "id": "lbnl-queued-up-2025",
+    "name": "Queued Up: 2025 Edition, Characteristics of Power Plants Seeking Transmission Interconnection | Lawrence Berkeley National Laboratory / U.S. Department of Energy",
+    "nameFr": "Queued Up: 2025 Edition, Characteristics of Power Plants Seeking Transmission Interconnection | Lawrence Berkeley National Laboratory / U.S. Department of Energy",
+    "url": "https://emp.lbl.gov/queues",
+    "desc": "Annual DOE-funded LBNL series tracking U.S. generator interconnection queues across all independent system operators (ISOs) and non-ISO balancing areas. Covers capacity seeking interconnection, withdrawal rates, median process durations from application to interconnection agreement and to commercial operations, and queue trends by fuel type. Primary source for establishing whether interconnection — rather than siting approval — is the binding delivery constraint for new U.S. generation capacity.",
+    "descFr": "Série annuelle du LBNL financée par le DOE suivant les files d'attente d'interconnexion des générateurs américains. Couvre la capacité en attente, les taux de retrait, les durées médianes des processus et les tendances par type de combustible. Source primaire pour déterminer si l'interconnexion est la contrainte contraignante pour la nouvelle capacité.",
+    "publicationDate": "2025-12-16",
+    "accessDate": "2026-07-12",
+    "confidence": "High",
+    "citationType": "Fact"
+  }
+]

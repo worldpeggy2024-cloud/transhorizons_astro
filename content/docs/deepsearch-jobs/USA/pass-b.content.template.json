@@ -7,52 +7,54 @@
     "protestCapacity": "Med",
     "institutionalResilience": "Med"
   },
-  "political": {
-    "powerStructure": {
-      "en": "",
-      "fr": ""
+  "scorecardAnchors": {
+    "eliteCohesion": {
+      "anchors": [
+        "source-id-or-dot.path"
+      ],
+      "rationale_en": "",
+      "rationale_fr": ""
     },
-    "stabilityDrivers": {
-      "en": "",
-      "fr": ""
+    "socialCohesion": {
+      "anchors": [],
+      "rationale_en": "",
+      "rationale_fr": ""
     },
-    "shockAbsorbers": {
-      "en": "",
-      "fr": ""
+    "securityLoyalty": {
+      "anchors": [],
+      "rationale_en": "",
+      "rationale_fr": ""
     },
-    "constitutionalSubstrate": {
-      "en": "",
-      "fr": ""
+    "economicPressure": {
+      "anchors": [],
+      "rationale_en": "",
+      "rationale_fr": ""
+    },
+    "protestCapacity": {
+      "anchors": [],
+      "rationale_en": "",
+      "rationale_fr": ""
+    },
+    "institutionalResilience": {
+      "anchors": [],
+      "rationale_en": "",
+      "rationale_fr": ""
     }
   },
-  "situation": {
+  "baseline": {
     "en": "",
     "fr": ""
-  },
-  "economy": {
-    "macroReality": {
-      "en": "",
-      "fr": ""
-    },
-    "externalVulnerability": {
-      "en": "",
-      "fr": ""
-    },
-    "politicalEconomy": {
-      "en": "",
-      "fr": ""
-    }
   },
   "territory": {
     "geography": {
       "en": "",
       "fr": ""
     },
-    "minerals": {
+    "biosphere": {
       "en": "",
       "fr": ""
     },
-    "biosphere": {
+    "minerals": {
       "en": "",
       "fr": ""
     },
@@ -69,20 +71,6 @@
       "fr": ""
     }
   },
-  "capacity": {
-    "permitting": {
-      "en": "",
-      "fr": ""
-    },
-    "delivery": {
-      "en": "",
-      "fr": ""
-    },
-    "productivity": {
-      "en": "",
-      "fr": ""
-    }
-  },
   "society": {
     "demographics": {
       "en": "",
@@ -92,7 +80,15 @@
       "en": "",
       "fr": ""
     },
+    "language": {
+      "en": "",
+      "fr": ""
+    },
     "religion": {
+      "en": "",
+      "fr": ""
+    },
+    "wellbeing": {
       "en": "",
       "fr": ""
     },
@@ -101,8 +97,90 @@
       "fr": ""
     }
   },
+  "economy": {
+    "realEconomy": {
+      "en": "",
+      "fr": ""
+    },
+    "publicFinances": {
+      "en": "",
+      "fr": ""
+    },
+    "externalVulnerability": {
+      "en": "",
+      "fr": ""
+    },
+    "politicalEconomy": {
+      "en": "",
+      "fr": ""
+    }
+  },
+  "political": {
+    "powerStructure": {
+      "en": "",
+      "fr": ""
+    },
+    "rightsAndChecks": {
+      "en": "",
+      "fr": ""
+    },
+    "stabilityDrivers": {
+      "en": "",
+      "fr": ""
+    },
+    "shockAbsorbers": {
+      "en": "",
+      "fr": ""
+    },
+    "constitutionalSubstrate": {
+      "en": "",
+      "fr": ""
+    },
+    "stateStructure": {
+      "en": "",
+      "fr": ""
+    }
+  },
+  "capacity": {
+    "inheritedTerrain": {
+      "en": "",
+      "fr": ""
+    },
+    "steering": {
+      "en": "",
+      "fr": ""
+    },
+    "approvals": {
+      "en": "",
+      "fr": ""
+    },
+    "delivery": {
+      "en": "",
+      "fr": ""
+    },
+    "publicServices": {
+      "en": "",
+      "fr": ""
+    },
+    "productivity": {
+      "en": "",
+      "fr": ""
+    }
+  },
   "security": {
+    "posture": {
+      "en": "",
+      "fr": ""
+    },
     "internal": {
+      "en": "",
+      "fr": ""
+    },
+    "military": {
+      "en": "",
+      "fr": ""
+    },
+    "transnationalExposure": {
       "en": "",
       "fr": ""
     },
@@ -111,82 +189,22 @@
       "fr": ""
     }
   },
+  "situation": {
+    "en": "",
+    "fr": ""
+  },
   "actors": {
     "domestic": {
-      "en": [
-        {
-          "name": "",
-          "interests": "",
-          "resources": "",
-          "constraints": "",
-          "likelyMoves": "",
-          "dealability": ""
-        }
-      ],
-      "fr": [
-        {
-          "name": "",
-          "interests": "",
-          "resources": "",
-          "constraints": "",
-          "likelyMoves": "",
-          "dealability": ""
-        }
-      ]
+      "en": [],
+      "fr": []
     },
     "external": {
-      "en": [
-        {
-          "name": "",
-          "interests": "",
-          "resources": "",
-          "constraints": "",
-          "likelyMoves": "",
-          "dealability": ""
-        }
-      ],
-      "fr": [
-        {
-          "name": "",
-          "interests": "",
-          "resources": "",
-          "constraints": "",
-          "likelyMoves": "",
-          "dealability": ""
-        }
-      ]
+      "en": [],
+      "fr": []
     }
   },
   "risks": {
-    "en": [
-      {
-        "title": "",
-        "trigger": "",
-        "probability": "Med",
-        "impact": "Med",
-        "timeHorizon": "",
-        "leadingIndicators": "",
-        "mitigants": ""
-      }
-    ],
-    "fr": [
-      {
-        "title": "",
-        "trigger": "",
-        "probability": "Med",
-        "impact": "Med",
-        "timeHorizon": "",
-        "leadingIndicators": "",
-        "mitigants": ""
-      }
-    ]
-  },
-  "executiveSnapshot": {
-    "en": [
-      ""
-    ],
-    "fr": [
-      ""
-    ]
+    "en": [],
+    "fr": []
   }
 }
