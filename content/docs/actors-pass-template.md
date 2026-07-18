@@ -1,4 +1,4 @@
-# Actors extraction prompt — v1.6
+# Actors extraction prompt — v1.7
 
 **Country:** {{NAME_EN}} / {{NAME_FR}} ({{CODE}}) · **Run date:** {{TODAY}}
 
@@ -15,14 +15,13 @@ You may not add actors not named in the report. Layer 2 fields may reason about 
 
 The full text of a country report as a YAML file (`content/countries/{{CODE}}/analysis.yaml`) containing the following field families:
 
-- `executiveSnapshot_en` / `_fr`
-- `political_powerStructure_en` / `_fr`, `political_stabilityDrivers_en` / `_fr`, `political_shockAbsorbers_en` / `_fr`, `political_constitutionalSubstrate_en` / `_fr`
+- `territory_geography_en` / `_fr`, `territory_biosphere_en` / `_fr`, `territory_minerals_en` / `_fr`, `territory_climate_en` / `_fr`, `territory_metabolism_en` / `_fr`, `territory_transition_en` / `_fr`
+- `society_demographics_en` / `_fr`, `society_composition_en` / `_fr`, `society_language_en` / `_fr`, `society_religion_en` / `_fr`, `society_wellbeing_en` / `_fr`, `society_cohesion_en` / `_fr`
+- `economy_realEconomy_en` / `_fr`, `economy_publicFinances_en` / `_fr`, `economy_externalVulnerability_en` / `_fr`, `economy_politicalEconomy_en` / `_fr`
+- `political_powerStructure_en` / `_fr`, `political_rightsAndChecks_en` / `_fr`, `political_stabilityDrivers_en` / `_fr`, `political_shockAbsorbers_en` / `_fr`, `political_constitutionalSubstrate_en` / `_fr`, `political_stateStructure_en` / `_fr`
+- `capacity_inheritedTerrain_en` / `_fr`, `capacity_steering_en` / `_fr`, `capacity_approvals_en` / `_fr`, `capacity_delivery_en` / `_fr`, `capacity_publicServices_en` / `_fr`, `capacity_productivity_en` / `_fr`
+- `security_posture_en` / `_fr`, `security_internal_en` / `_fr`, `security_military_en` / `_fr`, `security_transnationalExposure_en` / `_fr`, `security_diplomacy_en` / `_fr`
 - `situation_en` / `_fr` (threaded JSON: threads with events carrying `date`, `what`, `changed`)
-- `economy_macroReality_en` / `_fr`, `economy_externalVulnerability_en` / `_fr`, `economy_politicalEconomy_en` / `_fr`
-- `territory_geography_en` / `_fr`, `territory_minerals_en` / `_fr`, `territory_biosphere_en` / `_fr`, `territory_climate_en` / `_fr`, `territory_metabolism_en` / `_fr`, `territory_transition_en` / `_fr`
-- `capacity_permitting_en` / `_fr`, `capacity_delivery_en` / `_fr`, `capacity_productivity_en` / `_fr`
-- `society_demographics_en` / `_fr`, `society_composition_en` / `_fr`, `society_religion_en` / `_fr`, `society_cohesion_en` / `_fr`
-- `security_internal_en` / `_fr`, `security_diplomacy_en` / `_fr`
 
 Work from the English fields (`_en`) as the primary text. The French fields (`_fr`) are the same content and may be consulted for disambiguation, but should not be scanned separately.
 
@@ -100,7 +99,7 @@ Do NOT aggregate provinces into a "provinces" bloc; provinces carry distinct pos
 name: [name or category]
 kind: [federal executive | legislature | opposition party | subnational government | indigenous body | private-sector | labour | civil-society | independent institution | judicial | regulatory | commission of inquiry | security or intelligence service | military | international body | foreign state | other]
 liveActorStatus: [current | recently-live | historical-only-excluded]
-fieldsCitedIn: [comma-separated field names, e.g. executiveSnapshot, political.stabilityDrivers, economy.macroReality]
+fieldsCitedIn: [comma-separated field names, e.g. political.powerStructure, political.stabilityDrivers, economy.realEconomy, situation]
 currentPositionFromReport: >
   One sentence, close paraphrase of what the report says the actor is doing
   or its position. May include a citation.
@@ -113,6 +112,12 @@ currentPositionFromReport: >
 For every actor produced in Layer 1, produce a Layer 2 draft.
 
 **Layer 2 must remain anchored to the report text.** You may reason about the actor's interests, resources, constraints, likely moves, and engagement mode based on how the report describes the actor's actions, position, and constraints — but you may not import knowledge of the country from outside the text. If the report is silent on a Layer 2 dimension, mark that field as `report-silent`.
+
+**Layer 2 requirements (implementation spec §8.1):**
+
+- Layer 2 is `citationType: Interpretation`.
+- Layer 2 ANCHORS per §1 of the spec: each draft carries the `[source-id]`s or `[dot.path]` field anchors it reasons from (e.g. `[political.stabilityDrivers]`, an already-cited source id) — inline in the field text and/or in the `anchors` list of the output structure. An anchor must point at a non-empty report field or a source id present in this report's registry; ghost anchors are rejected by the validators.
+- Layer 2 renders COLLAPSED by default and visibly labelled AI-drafted / unverified on the site.
 
 ### Layer 2 fields
 
@@ -141,6 +146,8 @@ Choose the most accurate mode for this actor in the current situation the report
 ```yaml
 layer2Draft:
   status: AI-drafted, unverified — collapsed by default
+  citationType: Interpretation
+  anchors: [source-ids or dot.path field anchors the draft reasons from]
   interests: >
     …
   resources: >
