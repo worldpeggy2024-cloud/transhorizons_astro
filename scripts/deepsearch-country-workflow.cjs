@@ -748,7 +748,7 @@ function eventsHarvestBlock(events) {
     return '## Events (from Pass Zero-B)\n\nThe Pass Zero-B event scan returned NO material events in the last 12 months. Harvest no event sources; the situation field will state that the standing conditions held.';
   }
   const list = events.map((e) => `- ${e && e.id ? `[${e.id}] ` : ''}${(e && e.date) || 'date UNRESOLVED'} — ${(e && e.title) || ''} (${(e && e.status) || 'status UNRESOLVED'}): ${(e && e.whatHappened) || ''} SOURCE: ${(e && e.sourceName) || ''} ${(e && e.sourceUrl) || 'UNRESOLVED'}`).join('\n');
-  return `## Events (from Pass Zero-B)\n\nIn ADDITION to the institutional source-priority list above, harvest a primary or authoritative source for EACH of these events (its own source below, or a better primary source — government statement, court ruling, official gazette; never a news aggregator):\n${list}`;
+  return `## Events (from Pass Zero-B)\n\nIn ADDITION to the institutional source-priority list further below, harvest a primary or authoritative source for EACH of these events (its own source as listed here, or a better primary source — government statement, court ruling, official gazette; never a news aggregator):\n${list}`;
 }
 
 function situationField() {
