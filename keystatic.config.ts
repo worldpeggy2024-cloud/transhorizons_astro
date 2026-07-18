@@ -334,15 +334,21 @@ export default config({
         }),
 
         // ── Executive Snapshot ────────────────────────────────────────────
-        executiveSnapshot_en: fields.text({
-          label: 'Executive Snapshot (EN)',
+        // Executive Snapshot REMOVED (rework §5) — its content lives in the
+        // section openers. Legacy executiveSnapshot_* keys in existing YAML are
+        // inert and will be stripped on the country's next Keystatic save
+        // (decided; Canada's snapshot is archived in content/countries/CAN/archive/).
+        // Baseline replaces it as the page's only always-visible prose —
+        // composed LAST by Pass B, derivative, no new facts, never a forecast.
+        baseline_en: fields.text({
+          label: 'Baseline (EN)',
           multiline: true,
-          description: 'One bullet per line. Include citation markers [source-id].',
+          description: 'Short paragraph; only ids already cited in this report; never "Outlook"',
         }),
-        executiveSnapshot_fr: fields.text({
-          label: 'Executive Snapshot (FR)',
+        baseline_fr: fields.text({
+          label: 'Baseline (FR)',
           multiline: true,
-          description: 'Un point par ligne. Inclure les marqueurs de citation [source-id].',
+          description: 'Paragraphe court; uniquement des ids déjà cités dans ce rapport',
         }),
 
         // ── Political Section ─────────────────────────────────────────────
@@ -375,6 +381,27 @@ export default config({
         }),
         political_shockAbsorbers_fr: fields.text({
           label: 'Political: Shock Absorbers (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        // Rework §3 — Political Order gains rightsAndChecks + stateStructure.
+        political_rightsAndChecks_en: fields.text({
+          label: 'Political: Rights & Checks (EN)',
+          multiline: true,
+          description: 'Judicial + media independence; civil liberties. Include [source-id]',
+        }),
+        political_rightsAndChecks_fr: fields.text({
+          label: 'Political: Rights & Checks (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        political_stateStructure_en: fields.text({
+          label: 'Political: State Structure (EN)',
+          multiline: true,
+          description: "Unitary/federal; divisions in the country's own term. Include [source-id]",
+        }),
+        political_stateStructure_fr: fields.text({
+          label: 'Political: State Structure (FR)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),
@@ -414,8 +441,32 @@ export default config({
         }),
 
         // ── Economy Section ───────────────────────────────────────────────
+        // Rework §3 — realEconomy renames macroReality (kept below as LEGACY so
+        // Keystatic saves don't strip not-yet-regenerated countries); economy
+        // gains publicFinances (SIZE of debt here; WHO HOLDS it stays in
+        // externalVulnerability).
+        economy_realEconomy_en: fields.text({
+          label: 'Economy: Real Economy (EN)',
+          multiline: true,
+          description: 'Sectors, growth, what people do for a living (fiscal/monetary → Public Finances). Include [source-id]',
+        }),
+        economy_realEconomy_fr: fields.text({
+          label: 'Economy: Real Economy (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        economy_publicFinances_en: fields.text({
+          label: 'Economy: Public Finances (EN)',
+          multiline: true,
+          description: 'Balance, debt share, monetary stance, inflation, rating. Include [source-id]',
+        }),
+        economy_publicFinances_fr: fields.text({
+          label: 'Economy: Public Finances (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
         economy_macroReality_en: fields.text({
-          label: 'Economy: Macro Reality (EN)',
+          label: 'Economy: Macro Reality (EN) — LEGACY (superseded by Real Economy)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),
@@ -521,8 +572,50 @@ export default config({
         // Can the state build / permit / deliver. Top-level peer, positioned
         // after territory, before society. Declare BEFORE writing capacity_*
         // content (strip rule).
+        // Rework §3 — Capacity to Deliver: inheritedTerrain + steering lead;
+        // approvals renames permitting (kept below as LEGACY); publicServices new.
+        capacity_inheritedTerrain_en: fields.text({
+          label: 'Capacity: Inherited Terrain (EN)',
+          multiline: true,
+          description: 'Anchored synthesis via [dot.path] — the structural denominator; merit-gap guard applies',
+        }),
+        capacity_inheritedTerrain_fr: fields.text({
+          label: 'Capacity: Inherited Terrain (FR)',
+          multiline: true,
+          description: 'Synthèse ancrée via [dot.path]',
+        }),
+        capacity_steering_en: fields.text({
+          label: 'Capacity: Steering (EN)',
+          multiline: true,
+          description: 'Governance-as-process; Interpretation anchored to the observable record',
+        }),
+        capacity_steering_fr: fields.text({
+          label: 'Capacity: Steering (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        capacity_approvals_en: fields.text({
+          label: 'Capacity: Approvals (EN)',
+          multiline: true,
+          description: 'Approval/permitting timelines; proposed-vs-consented-vs-built. Include [source-id]',
+        }),
+        capacity_approvals_fr: fields.text({
+          label: 'Capacity: Approvals (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        capacity_publicServices_en: fields.text({
+          label: 'Capacity: Public Services (EN)',
+          multiline: true,
+          description: 'Realised record running continuous service systems (health, education). Include [source-id]',
+        }),
+        capacity_publicServices_fr: fields.text({
+          label: 'Capacity: Public Services (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
         capacity_permitting_en: fields.text({
-          label: 'Capacity: Permitting (EN)',
+          label: 'Capacity: Permitting (EN) — LEGACY (superseded by Approvals)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),
@@ -601,6 +694,28 @@ export default config({
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),
+        // Rework §3 — Society gains language (out of composition) + wellbeing
+        // (outcomes; the systems live in capacity_publicServices).
+        society_language_en: fields.text({
+          label: 'Society: Language (EN)',
+          multiline: true,
+          description: 'Linguistic composition; lived texture; political salience; named-bias sourcing. Include [source-id]',
+        }),
+        society_language_fr: fields.text({
+          label: 'Society: Language (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        society_wellbeing_en: fields.text({
+          label: 'Society: Wellbeing (EN)',
+          multiline: true,
+          description: 'Health + educational OUTCOMES with access gradients. Include [source-id]',
+        }),
+        society_wellbeing_fr: fields.text({
+          label: 'Society: Wellbeing (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
 
         // ── Security Section ──────────────────────────────────────────────
         security_internal_en: fields.text({
@@ -621,6 +736,38 @@ export default config({
         }),
         security_diplomacy_fr: fields.text({
           label: 'Security: Diplomacy (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        // Rework §3 — Security gains posture (anchored synthesis, displays
+        // first, composed last), military, transnationalExposure.
+        security_posture_en: fields.text({
+          label: 'Security: Posture (EN)',
+          multiline: true,
+          description: 'Anchored synthesis via [dot.path] to the other four security fields; no facts of its own',
+        }),
+        security_posture_fr: fields.text({
+          label: 'Security: Posture (FR)',
+          multiline: true,
+          description: 'Synthèse ancrée via [dot.path]',
+        }),
+        security_military_en: fields.text({
+          label: 'Security: Military (EN)',
+          multiline: true,
+          description: 'Force size/structure; spending; domains; nuclear status. Include [source-id]',
+        }),
+        security_military_fr: fields.text({
+          label: 'Security: Military (FR)',
+          multiline: true,
+          description: 'Include citation markers [source-id]',
+        }),
+        security_transnationalExposure_en: fields.text({
+          label: 'Security: Transnational Exposure (EN)',
+          multiline: true,
+          description: 'Cross-border flows and non-state entanglements. Include [source-id]',
+        }),
+        security_transnationalExposure_fr: fields.text({
+          label: 'Security: Transnational Exposure (FR)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),

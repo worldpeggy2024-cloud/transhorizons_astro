@@ -143,7 +143,10 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
           style={{ fontSize: '0.75em', verticalAlign: 'super', textDecoration: 'none', marginLeft: '0.08em' }}
           onClick={(e) => {
             e.preventDefault();
-            document.getElementById(citationId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Field blocks inside a collapsed section aren't in the DOM —
+            // fall back to the peer section wrapper (id = peer name).
+            const el = document.getElementById(citationId) ?? document.getElementById(citationId.split('.')[0]);
+            el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }}
         >
           [§]
@@ -428,7 +431,11 @@ function ScoreRow({ label, value, language, detail }: {
                   className="font-body text-[10px] px-1.5 py-0.5 border border-[var(--cr-border)] rounded text-[var(--cr-accent)] hover:bg-[var(--cr-hover)]"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById(a.includes('.') ? a : `source-${a}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Collapsed-section fallback: peer wrapper, then source anchor.
+                    const el = a.includes('.')
+                      ? (document.getElementById(a) ?? document.getElementById(a.split('.')[0]))
+                      : document.getElementById(`source-${a}`);
+                    el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   }}
                 >
                   {a}
@@ -654,8 +661,9 @@ export default function CountryPage() {
     capital: language === 'fr' ? 'Capitale' : 'Capital',
     region: language === 'fr' ? 'Région' : 'Region',
     area: language === 'fr' ? 'Superficie' : 'Area',
-    exec: language === 'fr' ? 'Synthèse exécutive' : 'Executive Snapshot',
-    political: language === 'fr' ? 'Stabilité politique' : 'Political Stability',
+    // Rework §5 renames: Political Stability → Political Order; State Capacity →
+    // Capacity to Deliver. FR-PLACEHOLDER: new FR section labels — Peggy to verify.
+    political: language === 'fr' ? 'Ordre politique' : 'Political Order',
     situation: language === 'fr' ? 'Situation' : 'Situation',
     economy: language === 'fr' ? 'Économie' : 'Economy',
     security: language === 'fr' ? 'Sécurité & Diplomatie' : 'Security & Diplomacy',
@@ -670,9 +678,23 @@ export default function CountryPage() {
     powerStructure: language === 'fr' ? 'Structure du pouvoir' : 'Power structure',
     stabilityDrivers: language === 'fr' ? 'Facteurs de stabilité' : 'Stability drivers',
     shockAbsorbers: language === 'fr' ? 'Amortisseurs & accélérateurs' : 'Shock absorbers & accelerants',
-    macroReality: language === 'fr' ? 'Réalité macroéconomique' : 'Macro reality',
+    // FR-PLACEHOLDER: new-field labels below — Peggy to verify French wording.
+    realEconomy: language === 'fr' ? 'Économie réelle' : 'Real economy',
+    publicFinances: language === 'fr' ? 'Finances publiques' : 'Public finances',
     externalVuln: language === 'fr' ? 'Vulnérabilité externe' : 'External vulnerability',
     politicalEconomy: language === 'fr' ? 'Économie politique' : 'Political economy',
+    rightsAndChecks: language === 'fr' ? 'Droits et contre-pouvoirs' : 'Rights & checks',
+    stateStructure: language === 'fr' ? 'Structure de l\'État' : 'State structure',
+    inheritedTerrain: language === 'fr' ? 'Terrain hérité' : 'Inherited terrain',
+    steering: language === 'fr' ? 'Pilotage' : 'Steering',
+    approvals: language === 'fr' ? 'Autorisations' : 'Approvals',
+    publicServices: language === 'fr' ? 'Services publics' : 'Public services',
+    languageField: language === 'fr' ? 'Langue' : 'Language',
+    wellbeing: language === 'fr' ? 'Bien-être' : 'Wellbeing',
+    posture: language === 'fr' ? 'Posture' : 'Posture',
+    military: language === 'fr' ? 'Forces militaires' : 'Military',
+    transnationalExposure: language === 'fr' ? 'Exposition transnationale' : 'Transnational exposure',
+    baseline: language === 'fr' ? 'État des lieux' : 'Baseline',
     internalSecurity: language === 'fr' ? 'Sécurité intérieure' : 'Internal security',
     diplomacy: language === 'fr' ? 'Diplomatie & posture extérieure' : 'Diplomacy & external posture',
     domesticActors: language === 'fr' ? 'Acteurs nationaux' : 'Domestic actors',
@@ -686,7 +708,9 @@ export default function CountryPage() {
     climate: language === 'fr' ? 'Climat' : 'Climate',
     metabolism: language === 'fr' ? 'Métabolisme' : 'Metabolism',
     transition: language === 'fr' ? 'Transition' : 'Transition',
-    capacity: language === 'fr' ? 'Capacité de l\'État' : 'State Capacity', // FR label supplied by Peggy (final)
+    // FR-PLACEHOLDER: section renamed (was "Capacité de l'État", Peggy's final
+    // label for the OLD name "State Capacity") — new FR wording to verify.
+    capacity: language === 'fr' ? 'Capacité de mise en œuvre' : 'Capacity to Deliver',
     permitting: language === 'fr' ? 'Autorisations' : 'Permitting',
     delivery: language === 'fr' ? 'Réalisation' : 'Delivery',
     productivity: language === 'fr' ? 'Productivité' : 'Productivity',
@@ -715,6 +739,70 @@ export default function CountryPage() {
   const hasSubstrate = hasAnalysis && !!lang!.political.constitutionalSubstrate?.trim();
   const hasSituation = hasAnalysis && !!lang!.situation?.trim();
   const activeSources = analysis?.sources ?? lang?.sources ?? [];
+  const hasBaseline = hasAnalysis && !!lang!.baseline?.trim();
+
+  // Per-section data confidence + date (rework §5): aggregated from the
+  // section's cited sources — dominant confidence (High when >=80% of cited
+  // sources are High; Low when >20% are Low; else Med) + the latest accessDate.
+  // Undefined when the section cites nothing (legacy or empty sections).
+  const sectionMeta = (texts: (string | undefined)[]): string | undefined => {
+    const ids = new Set<string>();
+    const re = /\[([a-z0-9-]+)\]/g;
+    for (const txt of texts) {
+      if (!txt) continue;
+      let m: RegExpExecArray | null;
+      while ((m = re.exec(txt)) !== null) ids.add(m[1]);
+    }
+    const cited = activeSources.filter((s) => s.id && ids.has(s.id));
+    if (!cited.length) return undefined;
+    const withConf = cited.filter((s) => s.confidence);
+    let label = '';
+    if (withConf.length) {
+      const high = withConf.filter((s) => s.confidence === 'High').length / withConf.length;
+      const low = withConf.filter((s) => s.confidence === 'Low').length / withConf.length;
+      label = ratingLabel(high >= 0.8 ? 'High' : low > 0.2 ? 'Low' : 'Med', language);
+    }
+    const latest = cited.map((s) => s.accessDate ?? '').filter(Boolean).sort().pop() ?? '';
+    return [label, latest].filter(Boolean).join(' · ') || undefined;
+  };
+
+  // Scorecard rows — rendered twice (desktop rail + mobile inline), rework §5:
+  // a visually distinct assessment block, out of the Political section.
+  const scorecardTitle = language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard';
+  const scorecardRows = hasAnalysis ? (
+    <>
+      <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} detail={analysis!.scorecardAnchors?.eliteCohesion} />
+      <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} language={language} detail={analysis!.scorecardAnchors?.socialCohesion} />
+      <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} language={language} detail={analysis!.scorecardAnchors?.securityLoyalty} />
+      <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} detail={analysis!.scorecardAnchors?.economicPressure} />
+      <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} detail={analysis!.scorecardAnchors?.protestCapacity} />
+      <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} language={language} detail={analysis!.scorecardAnchors?.institutionalResilience} />
+    </>
+  ) : (
+    <>
+      <ScoreRow label={t.eliteCohesion} value={null} language={language} />
+      <ScoreRow label={t.socialCohesion} value={null} language={language} />
+      <ScoreRow label={t.securityLoyalty} value={null} language={language} />
+      <ScoreRow label={t.economicPressure} value={null} language={language} />
+      <ScoreRow label={t.protestCapacity} value={null} language={language} />
+      <ScoreRow label={t.institutionalResilience} value={null} language={language} />
+    </>
+  );
+
+  // Lateral nav (rework §5): persistent section list mirroring section order,
+  // opening at Territory. Sections render collapsed; the list is the map.
+  const navItems: { id: string; label: string }[] = [
+    ...(hasTerritory ? [{ id: 'territory', label: t.territory }] : []),
+    ...(hasSociety ? [{ id: 'society', label: t.society }] : []),
+    { id: 'economy', label: t.economy },
+    { id: 'political', label: t.political },
+    ...(hasCapacity ? [{ id: 'capacity', label: t.capacity }] : []),
+    { id: 'security', label: t.security },
+    ...(hasSituation ? [{ id: 'situation', label: t.situation }] : []),
+    { id: 'actors', label: t.actors },
+    { id: 'risks', label: t.risks },
+    { id: 'sources', label: t.sources },
+  ];
 
   return (
     <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
@@ -766,7 +854,7 @@ export default function CountryPage() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <div className="max-w-4xl lg:max-w-6xl mx-auto px-6 py-12">
 
         {/* Country header */}
         <div className="mb-12">
@@ -837,17 +925,75 @@ export default function CountryPage() {
 
         </div>
 
-        {/* ── Framework sections ── */}
+        {/* ── Baseline (rework §5) — the page's only always-visible prose. ──
+            Empty until the country is regenerated: render NOTHING then (no
+            placeholder, no back-fill from the removed executive snapshot). */}
+        {hasBaseline && (
+          <div className="mb-8 border-l-2 border-[var(--cr-accent)] pl-4">
+            <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">{t.baseline}</p>
+            <ProseParagraphs text={lang!.baseline!} sources={activeSources} />
+          </div>
+        )}
 
-        {/* 1. Executive Snapshot */}
-        <div data-section="Executive Snapshot">
-        <FrameworkSection icon={TrendingUp} title={t.exec}>
-          {hasAnalysis ? (
-            <div className="space-y-3">
-              {lang!.executiveSnapshot.map((bullet, i) => (
-                <div key={i} className="flex gap-3">
-                  <span className="text-[var(--cr-accent)] font-body text-sm mt-0.5 shrink-0">·</span>
-                  <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(bullet, activeSources)}</p>
+        {/* Scorecard inline on mobile — the rail is hidden there (rework §5) */}
+        <div className="lg:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
+          <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+          {scorecardRows}
+        </div>
+
+        {/* ── Content + lateral rail (rework §5) ── */}
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_230px] lg:gap-8 lg:items-start">
+        <div className="min-w-0">
+
+        {/* ── Framework sections — standing body: Territory · Society · Economy ·
+            Political Order · Capacity to Deliver · Security & Diplomacy;
+            dynamic tail: Situation · Actors · Risks (rework §5 order). ── */}
+
+        {/* 1. Territory */}
+        {hasTerritory && (
+          <div data-section="Territory" id="territory" style={{ scrollMarginTop: 96 }}>
+          <FrameworkSection icon={Mountain} title={t.territory} headerNote={sectionMeta([
+            lang!.territory!.geography, lang!.territory!.biosphere, lang!.territory!.minerals,
+            lang!.territory!.climate, lang!.territory!.metabolism, lang!.territory!.transition,
+          ])}>
+            <div className="space-y-6">
+              {([
+                [t.geography, lang!.territory!.geography, 'territory.geography'],
+                [t.biosphere, lang!.territory!.biosphere, 'territory.biosphere'],
+                [t.minerals, lang!.territory!.minerals, 'territory.minerals'],
+                [t.climate, lang!.territory!.climate, 'territory.climate'],
+                [t.metabolism, lang!.territory!.metabolism, 'territory.metabolism'],
+                [t.transition, lang!.territory!.transition, 'territory.transition'],
+              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+                <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <ProseParagraphs text={text} sources={activeSources} />
+                </div>
+              ))}
+            </div>
+          </FrameworkSection>
+          </div>
+        )}
+
+        {/* 2. Society */}
+        <div data-section="Society" id="society" style={{ scrollMarginTop: 96 }}>
+        <FrameworkSection icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta([
+          lang!.society!.demographics, lang!.society!.composition, lang!.society!.language,
+          lang!.society!.religion, lang!.society!.wellbeing, lang!.society!.cohesion,
+        ]) : undefined}>
+          {hasSociety ? (
+            <div className="space-y-6">
+              {([
+                [t.demographics, lang!.society!.demographics, 'society.demographics'],
+                [t.composition, lang!.society!.composition, 'society.composition'],
+                [t.languageField, lang!.society!.language ?? '', 'society.language'],
+                [t.religion, lang!.society!.religion, 'society.religion'],
+                [t.wellbeing, lang!.society!.wellbeing ?? '', 'society.wellbeing'],
+                [t.socialCohesionSection, lang!.society!.cohesion, 'society.cohesion'],
+              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+                <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
@@ -857,60 +1003,116 @@ export default function CountryPage() {
         </FrameworkSection>
         </div>
 
-        {/* 2. Political Stability */}
-        <div data-section="Political Stability">
-        <FrameworkSection icon={Shield} title={t.political}>
+        {/* 3. Economy */}
+        <div data-section="Economy" id="economy" style={{ scrollMarginTop: 96 }}>
+        <FrameworkSection icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta([
+          lang!.economy.realEconomy, lang!.economy.macroReality, lang!.economy.publicFinances,
+          lang!.economy.externalVulnerability, lang!.economy.politicalEconomy,
+        ]) : undefined}>
           {hasAnalysis ? (
             <div className="space-y-6">
-              {/* Scorecard */}
-              <div>
-                <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
-                  {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
-                </p>
-                <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} detail={analysis!.scorecardAnchors?.eliteCohesion} />
-                <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} language={language} detail={analysis!.scorecardAnchors?.socialCohesion} />
-                <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} language={language} detail={analysis!.scorecardAnchors?.securityLoyalty} />
-                <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} detail={analysis!.scorecardAnchors?.economicPressure} />
-                <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} detail={analysis!.scorecardAnchors?.protestCapacity} />
-                <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} language={language} detail={analysis!.scorecardAnchors?.institutionalResilience} />
-              </div>
-              {/* Subsections */}
               {([
-                [t.powerStructure, lang!.political.powerStructure],
-                [t.stabilityDrivers, lang!.political.stabilityDrivers],
-                [t.shockAbsorbers, lang!.political.shockAbsorbers],
-                ...(hasSubstrate
-                  ? [[t.constitutionalSubstrate, lang!.political.constitutionalSubstrate!]]
-                  : []),
-              ] as [string, string][]).map(([title, text]) => (
-                <div key={title}>
+                [t.realEconomy, lang!.economy.realEconomy?.trim() ? lang!.economy.realEconomy : lang!.economy.macroReality, 'economy.realEconomy'],
+                [t.publicFinances, lang!.economy.publicFinances ?? '', 'economy.publicFinances'],
+                [t.externalVuln, lang!.economy.externalVulnerability, 'economy.externalVulnerability'],
+                [t.politicalEconomy, lang!.economy.politicalEconomy, 'economy.politicalEconomy'],
+              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+                <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
             </div>
           ) : (
-            <>
-              <ComingSoonBlock language={language} />
-              <div className="mt-6">
-                <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
-                  {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
-                </p>
-                <ScoreRow label={t.eliteCohesion} value={null} language={language} />
-                <ScoreRow label={t.socialCohesion} value={null} language={language} />
-                <ScoreRow label={t.securityLoyalty} value={null} language={language} />
-                <ScoreRow label={t.economicPressure} value={null} language={language} />
-                <ScoreRow label={t.protestCapacity} value={null} language={language} />
-                <ScoreRow label={t.institutionalResilience} value={null} language={language} />
-              </div>
-            </>
+            <ComingSoonBlock language={language} />
           )}
         </FrameworkSection>
         </div>
 
-        {/* Situation — the event layer (what has HAPPENED), after political, before economy */}
+        {/* 4. Political Order */}
+        <div data-section="Political Stability" id="political" style={{ scrollMarginTop: 96 }}>
+        <FrameworkSection icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta([
+          lang!.political.powerStructure, lang!.political.rightsAndChecks, lang!.political.stabilityDrivers,
+          lang!.political.shockAbsorbers, lang!.political.constitutionalSubstrate, lang!.political.stateStructure,
+        ]) : undefined}>
+          {hasAnalysis ? (
+            <div className="space-y-6">
+              {([
+                [t.powerStructure, lang!.political.powerStructure, 'political.powerStructure'],
+                [t.rightsAndChecks, lang!.political.rightsAndChecks ?? '', 'political.rightsAndChecks'],
+                [t.stabilityDrivers, lang!.political.stabilityDrivers, 'political.stabilityDrivers'],
+                [t.shockAbsorbers, lang!.political.shockAbsorbers, 'political.shockAbsorbers'],
+                [t.constitutionalSubstrate, lang!.political.constitutionalSubstrate ?? '', 'political.constitutionalSubstrate'],
+                [t.stateStructure, lang!.political.stateStructure ?? '', 'political.stateStructure'],
+              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+                <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <ProseParagraphs text={text} sources={activeSources} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <ComingSoonBlock language={language} />
+          )}
+        </FrameworkSection>
+        </div>
+
+        {/* 5. Capacity to Deliver */}
+        {hasCapacity && (
+          <div data-section="Capacity" id="capacity" style={{ scrollMarginTop: 96 }}>
+          <FrameworkSection icon={Hammer} title={t.capacity} headerNote={sectionMeta([
+            lang!.capacity!.inheritedTerrain, lang!.capacity!.steering, lang!.capacity!.approvals,
+            lang!.capacity!.permitting, lang!.capacity!.delivery, lang!.capacity!.publicServices, lang!.capacity!.productivity,
+          ])}>
+            <div className="space-y-6">
+              {([
+                [t.inheritedTerrain, lang!.capacity!.inheritedTerrain ?? '', 'capacity.inheritedTerrain'],
+                [t.steering, lang!.capacity!.steering ?? '', 'capacity.steering'],
+                [t.approvals, lang!.capacity!.approvals?.trim() ? lang!.capacity!.approvals : lang!.capacity!.permitting, 'capacity.approvals'],
+                [t.delivery, lang!.capacity!.delivery, 'capacity.delivery'],
+                [t.publicServices, lang!.capacity!.publicServices ?? '', 'capacity.publicServices'],
+                [t.productivity, lang!.capacity!.productivity, 'capacity.productivity'],
+              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+                <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <ProseParagraphs text={text} sources={activeSources} />
+                </div>
+              ))}
+            </div>
+          </FrameworkSection>
+          </div>
+        )}
+
+        {/* 6. Security & Diplomacy — posture displays first (composed last) */}
+        <div data-section="Security & Diplomacy" id="security" style={{ scrollMarginTop: 96 }}>
+        <FrameworkSection icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta([
+          lang!.security.posture, lang!.security.internal, lang!.security.military,
+          lang!.security.transnationalExposure, lang!.security.diplomacy,
+        ]) : undefined}>
+          {hasAnalysis ? (
+            <div className="space-y-6">
+              {([
+                [t.posture, lang!.security.posture ?? '', 'security.posture'],
+                [t.internalSecurity, lang!.security.internal, 'security.internal'],
+                [t.military, lang!.security.military ?? '', 'security.military'],
+                [t.transnationalExposure, lang!.security.transnationalExposure ?? '', 'security.transnationalExposure'],
+                [t.diplomacy, lang!.security.diplomacy, 'security.diplomacy'],
+              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+                <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
+                  <ProseParagraphs text={text} sources={activeSources} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <ComingSoonBlock language={language} />
+          )}
+        </FrameworkSection>
+        </div>
+
+        {/* 7. Situation — the event layer (what has HAPPENED); dynamic tail */}
         {hasSituation && (
-          <div data-section="Situation">
+          <div data-section="Situation" id="situation" style={{ scrollMarginTop: 96 }}>
           <FrameworkSection
             icon={AlertTriangle}
             title={t.situation}
@@ -925,117 +1127,8 @@ export default function CountryPage() {
           </div>
         )}
 
-        {/* 3. Economy */}
-        <div data-section="Economy">
-        <FrameworkSection icon={BarChart2} title={t.economy}>
-          {hasAnalysis ? (
-            <div className="space-y-6">
-              {([
-                [t.macroReality, lang!.economy.macroReality],
-                [t.externalVuln, lang!.economy.externalVulnerability],
-                [t.politicalEconomy, lang!.economy.politicalEconomy],
-              ] as [string, string][]).map(([title, text]) => (
-                <div key={title}>
-                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <ProseParagraphs text={text} sources={activeSources} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <ComingSoonBlock language={language} />
-          )}
-        </FrameworkSection>
-        </div>
-
-        {/* 3b. Territory — physical body of the country; renders only when content exists */}
-        {hasTerritory && (
-          <div data-section="Territory">
-          <FrameworkSection icon={Mountain} title={t.territory}>
-            <div className="space-y-6">
-              {([
-                [t.geography, lang!.territory!.geography],
-                [t.minerals, lang!.territory!.minerals],
-                [t.biosphere, lang!.territory!.biosphere],
-                [t.climate, lang!.territory!.climate],
-                [t.metabolism, lang!.territory!.metabolism],
-                [t.transition, lang!.territory!.transition],
-              ] as [string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text]) => (
-                <div key={title}>
-                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <ProseParagraphs text={text} sources={activeSources} />
-                </div>
-              ))}
-            </div>
-          </FrameworkSection>
-          </div>
-        )}
-
-        {/* 3c. Capacity to execute — renders only when content exists */}
-        {hasCapacity && (
-          <div data-section="Capacity">
-          <FrameworkSection icon={Hammer} title={t.capacity}>
-            <div className="space-y-6">
-              {([
-                [t.permitting, lang!.capacity!.permitting],
-                [t.delivery, lang!.capacity!.delivery],
-                [t.productivity, lang!.capacity!.productivity],
-              ] as [string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text]) => (
-                <div key={title}>
-                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <ProseParagraphs text={text} sources={activeSources} />
-                </div>
-              ))}
-            </div>
-          </FrameworkSection>
-          </div>
-        )}
-
-        {/* 3d. Society */}
-        <div data-section="Society">
-        <FrameworkSection icon={Users} title={t.society}>
-          {hasSociety ? (
-            <div className="space-y-6">
-              {([
-                [t.demographics, lang!.society!.demographics],
-                [t.composition, lang!.society!.composition],
-                [t.religion, lang!.society!.religion],
-                [t.socialCohesionSection, lang!.society!.cohesion],
-              ] as [string, string][]).map(([title, text]) => (
-                <div key={title}>
-                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <ProseParagraphs text={text} sources={activeSources} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <ComingSoonBlock language={language} />
-          )}
-        </FrameworkSection>
-        </div>
-
-        {/* 4. Security & Diplomacy */}
-        <div data-section="Security & Diplomacy">
-        <FrameworkSection icon={Globe} title={t.security}>
-          {hasAnalysis ? (
-            <div className="space-y-6">
-              {([
-                [t.internalSecurity, lang!.security.internal],
-                [t.diplomacy, lang!.security.diplomacy],
-              ] as [string, string][]).map(([title, text]) => (
-                <div key={title}>
-                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
-                  <ProseParagraphs text={text} sources={activeSources} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <ComingSoonBlock language={language} />
-          )}
-        </FrameworkSection>
-        </div>
-
-        {/* 5. Actors Map */}
-        <div data-section="Actors">
+        {/* 8. Actors Map */}
+        <div data-section="Actors" id="actors" style={{ scrollMarginTop: 96 }}>
         <FrameworkSection icon={Users} title={t.actors}>
           {hasAnalysis ? (
             <div className="space-y-6">
@@ -1069,8 +1162,8 @@ export default function CountryPage() {
         </FrameworkSection>
         </div>
 
-        {/* 6. Risk Register */}
-        <div data-section="Risk Register">
+        {/* 9. Risk Register */}
+        <div data-section="Risk Register" id="risks" style={{ scrollMarginTop: 96 }}>
         <FrameworkSection icon={AlertTriangle} title={t.risks}>
           {hasAnalysis ? (
             <div className="space-y-2">
@@ -1146,7 +1239,8 @@ export default function CountryPage() {
         </FrameworkSection>
         </div>
 
-        {/* 7. Sources */}
+        {/* 10. Sources */}
+        <div id="sources" style={{ scrollMarginTop: 96 }}>
         <FrameworkSection ref={sourcesRef} icon={BookOpen} title={t.sources}>
           <div className="space-y-2 mt-2">
             {(hasAnalysis ? (analysis!.sources ?? lang!.sources ?? []) : [
@@ -1224,6 +1318,41 @@ export default function CountryPage() {
             </div>
           )}
         </FrameworkSection>
+        </div>
+
+        </div>
+
+        {/* ── Lateral rail (rework §5): nav list + scorecard, desktop only.
+            The scorecard is a visually DISTINCT block (assessment vs
+            navigation) — accent border vs the nav's neutral border. ── */}
+        <aside className="hidden lg:block sticky top-16 space-y-4">
+          <nav className="border border-[var(--cr-border)] bg-[var(--cr-surface)] px-4 py-3" aria-label={language === 'fr' ? 'Sections du rapport' : 'Report sections'}>
+            <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">
+              {language === 'fr' ? 'Sections' : 'Sections'}
+            </p>
+            <ul className="space-y-1.5">
+              {navItems.map(({ id, label }) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    className="font-body text-xs text-[var(--cr-body)] hover:text-[var(--cr-accent)] transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
+            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+            {scorecardRows}
+          </div>
+        </aside>
+        </div>
 
       </div>
     </div>

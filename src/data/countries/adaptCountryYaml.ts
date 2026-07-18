@@ -99,16 +99,26 @@ function splitSnapshot(value: unknown): string[] {
 function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
   const s = `_${lang}`;
   return {
+    // Exec snapshot is display-REMOVED (rework §5) but still adapted so the
+    // legacy data shape stays satisfied; nothing renders it.
     executiveSnapshot: splitSnapshot(d[`executiveSnapshot${s}`]),
+    // Baseline (rework §5): the always-visible derivative paragraph; empty
+    // until the country is regenerated (renderer shows nothing).
+    baseline: String(d[`baseline${s}`] ?? ''),
     political: {
       powerStructure: String(d[`political_powerStructure${s}`] ?? ''),
+      rightsAndChecks: String(d[`political_rightsAndChecks${s}`] ?? ''),
       stabilityDrivers: String(d[`political_stabilityDrivers${s}`] ?? ''),
       shockAbsorbers: String(d[`political_shockAbsorbers${s}`] ?? ''),
       constitutionalSubstrate: String(d[`political_constitutionalSubstrate${s}`] ?? ''),
+      stateStructure: String(d[`political_stateStructure${s}`] ?? ''),
     },
     situation: String(d[`situation${s}`] ?? ''),
     economy: {
+      // New name first; LEGACY key kept readable for not-yet-regenerated countries.
+      realEconomy: String(d[`economy_realEconomy${s}`] ?? ''),
       macroReality: String(d[`economy_macroReality${s}`] ?? ''),
+      publicFinances: String(d[`economy_publicFinances${s}`] ?? ''),
       externalVulnerability: String(d[`economy_externalVulnerability${s}`] ?? ''),
       politicalEconomy: String(d[`economy_politicalEconomy${s}`] ?? ''),
     },
@@ -121,18 +131,27 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
       transition: String(d[`territory_transition${s}`] ?? ''),
     },
     capacity: {
+      inheritedTerrain: String(d[`capacity_inheritedTerrain${s}`] ?? ''),
+      steering: String(d[`capacity_steering${s}`] ?? ''),
+      approvals: String(d[`capacity_approvals${s}`] ?? ''),
       permitting: String(d[`capacity_permitting${s}`] ?? ''),
       delivery: String(d[`capacity_delivery${s}`] ?? ''),
+      publicServices: String(d[`capacity_publicServices${s}`] ?? ''),
       productivity: String(d[`capacity_productivity${s}`] ?? ''),
     },
     society: {
       demographics: String(d[`society_demographics${s}`] ?? ''),
       composition: String(d[`society_composition${s}`] ?? ''),
+      language: String(d[`society_language${s}`] ?? ''),
       religion: String(d[`society_religion${s}`] ?? ''),
+      wellbeing: String(d[`society_wellbeing${s}`] ?? ''),
       cohesion: String(d[`society_cohesion${s}`] ?? ''),
     },
     security: {
+      posture: String(d[`security_posture${s}`] ?? ''),
       internal: String(d[`security_internal${s}`] ?? ''),
+      military: String(d[`security_military${s}`] ?? ''),
+      transnationalExposure: String(d[`security_transnationalExposure${s}`] ?? ''),
       diplomacy: String(d[`security_diplomacy${s}`] ?? ''),
     },
     actors: {

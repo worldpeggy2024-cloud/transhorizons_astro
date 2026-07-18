@@ -89,14 +89,14 @@ const situationLines = (v: unknown): string[] => {
 };
 
 interface LangSeo {
-  snapshot: string[];
-  political: string[];
-  situation: string[];
-  economy: string[];
+  baseline: string[];
   territory: string[];
-  capacity: string[];
   society: string[];
+  economy: string[];
+  political: string[];
+  capacity: string[];
   security: string[];
+  situation: string[];
   actors: string[];
   risks: string[];
   sources: string[];
@@ -104,12 +104,11 @@ interface LangSeo {
 
 function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
   const g = (k: string) => stripCites(data?.[`${k}_${lang}`]);
-  const nonEmpty = (x: string) => x.trim().length > 2;
+  // New name first, legacy fallback (rework §3 renames) — not-yet-regenerated
+  // countries keep emitting their old-field prose.
+  const gf = (k: string, legacy: string) => g(k) || g(legacy);
 
-  const snapshot = String(data?.[`executiveSnapshot_${lang}`] ?? '')
-    .split('\n')
-    .map((line) => stripCites(line))
-    .filter(Boolean);
+  const nonEmpty = (x: string) => x.trim().length > 2;
 
   const actors = [
     ...parseJsonArray(data?.[`actors_domestic_${lang}`]),
@@ -130,40 +129,57 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
     )
     .filter(nonEmpty);
 
+  // Rework §5 order: Baseline; Territory · Society · Economy · Political Order ·
+  // Capacity to Deliver · Security & Diplomacy; Situation · Actors · Risks.
+  // Executive snapshot REMOVED (its content lives in the section openers).
   return {
-    snapshot,
-    political: [
-      g('political_powerStructure'),
-      g('political_stabilityDrivers'),
-      g('political_shockAbsorbers'),
-      g('political_constitutionalSubstrate'),
-    ].filter(Boolean),
-    situation: situationLines(data?.[`situation_${lang}`]),
-    economy: [
-      g('economy_macroReality'),
-      g('economy_externalVulnerability'),
-      g('economy_politicalEconomy'),
-    ].filter(Boolean),
+    baseline: [g('baseline')].filter(Boolean),
     territory: [
       g('territory_geography'),
-      g('territory_minerals'),
       g('territory_biosphere'),
+      g('territory_minerals'),
       g('territory_climate'),
       g('territory_metabolism'),
       g('territory_transition'),
     ].filter(Boolean),
-    capacity: [
-      g('capacity_permitting'),
-      g('capacity_delivery'),
-      g('capacity_productivity'),
-    ].filter(Boolean),
     society: [
       g('society_demographics'),
       g('society_composition'),
+      g('society_language'),
       g('society_religion'),
+      g('society_wellbeing'),
       g('society_cohesion'),
     ].filter(Boolean),
-    security: [g('security_internal'), g('security_diplomacy')].filter(Boolean),
+    economy: [
+      gf('economy_realEconomy', 'economy_macroReality'),
+      g('economy_publicFinances'),
+      g('economy_externalVulnerability'),
+      g('economy_politicalEconomy'),
+    ].filter(Boolean),
+    political: [
+      g('political_powerStructure'),
+      g('political_rightsAndChecks'),
+      g('political_stabilityDrivers'),
+      g('political_shockAbsorbers'),
+      g('political_constitutionalSubstrate'),
+      g('political_stateStructure'),
+    ].filter(Boolean),
+    capacity: [
+      g('capacity_inheritedTerrain'),
+      g('capacity_steering'),
+      gf('capacity_approvals', 'capacity_permitting'),
+      g('capacity_delivery'),
+      g('capacity_publicServices'),
+      g('capacity_productivity'),
+    ].filter(Boolean),
+    security: [
+      g('security_posture'),
+      g('security_internal'),
+      g('security_military'),
+      g('security_transnationalExposure'),
+      g('security_diplomacy'),
+    ].filter(Boolean),
+    situation: situationLines(data?.[`situation_${lang}`]),
     actors,
     risks,
     sources,
@@ -175,12 +191,12 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
 const HEADINGS = {
   en: {
     report: 'Country Situation Report',
-    exec: 'Executive Snapshot',
-    political: 'Political Stability',
+    baseline: 'Baseline',
+    political: 'Political Order',
     situation: 'Situation',
     economy: 'Economy',
     territory: 'Territory',
-    capacity: 'State Capacity',
+    capacity: 'Capacity to Deliver',
     society: 'Society',
     security: 'Security & Diplomacy',
     actors: 'Key Actors',
@@ -189,12 +205,12 @@ const HEADINGS = {
   },
   fr: {
     report: 'Rapport de situation pays',
-    exec: 'Synthèse exécutive',
-    political: 'Stabilité politique',
+    baseline: 'État des lieux',
+    political: 'Ordre politique',
     situation: 'Situation',
     economy: 'Économie',
     territory: 'Territoire',
-    capacity: "Capacité de l'État",
+    capacity: 'Capacité de mise en œuvre',
     society: 'Société',
     security: 'Sécurité & Diplomatie',
     actors: 'Carte des acteurs',
@@ -228,15 +244,16 @@ const blocks = [
 // bullet list vs prose paragraphs; `risks` flags the caveat below.
 type ReadingSection = { title: string; items: string[]; type: 'list' | 'prose'; risks?: boolean };
 const readingSections = (seo: LangSeo, h: typeof HEADINGS.en): ReadingSection[] =>
+  // Rework §5 order: Baseline; standing body Territory → Security; dynamic tail.
   ([
-    { title: h.exec, items: seo.snapshot, type: 'list' },
-    { title: h.political, items: seo.political, type: 'prose' },
-    { title: h.situation, items: seo.situation, type: 'list' },
-    { title: h.economy, items: seo.economy, type: 'prose' },
+    { title: h.baseline, items: seo.baseline, type: 'prose' },
     { title: h.territory, items: seo.territory, type: 'prose' },
-    { title: h.capacity, items: seo.capacity, type: 'prose' },
     { title: h.society, items: seo.society, type: 'prose' },
+    { title: h.economy, items: seo.economy, type: 'prose' },
+    { title: h.political, items: seo.political, type: 'prose' },
+    { title: h.capacity, items: seo.capacity, type: 'prose' },
     { title: h.security, items: seo.security, type: 'prose' },
+    { title: h.situation, items: seo.situation, type: 'list' },
     { title: h.actors, items: seo.actors, type: 'list' },
     { title: h.risks, items: seo.risks, type: 'list', risks: true },
     { title: h.sources, items: seo.sources, type: 'list' },
@@ -253,9 +270,9 @@ const pageTitle = seoEn
   ? `${nameEn} — Country Situation Report | TransHorizons`
   : 'TransHorizons — World Views';
 const pageDesc =
-  seoEn && seoEn.snapshot.length > 0
-    ? seoEn.snapshot[0].slice(0, 300)
-    : 'Structured country situation reports — political stability, economy, territory, capacity, society, and security.';
+  seoEn && seoEn.baseline.length > 0
+    ? seoEn.baseline[0].slice(0, 300)
+    : 'Structured country situation reports — territory, society, economy, political order, capacity to deliver, and security.';
 ---
 
 <Base title={pageTitle} description={pageDesc}>
@@ -268,16 +285,46 @@ const pageDesc =
       {blocks.map(({ seo, lang, name, h }) => seo && (
         <section lang={lang}>
           <h1>{name} — {h.report}</h1>
-          {seo.snapshot.length > 0 && (
+          {seo.baseline.length > 0 && (
             <section>
-              <h2>{h.exec}</h2>
-              <ul>{seo.snapshot.map((b) => <li>{b}</li>)}</ul>
+              <h2>{h.baseline}</h2>
+              {seo.baseline.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.territory.length > 0 && (
+            <section>
+              <h2>{h.territory}</h2>
+              {seo.territory.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.society.length > 0 && (
+            <section>
+              <h2>{h.society}</h2>
+              {seo.society.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.economy.length > 0 && (
+            <section>
+              <h2>{h.economy}</h2>
+              {seo.economy.map((p) => <p>{p}</p>)}
             </section>
           )}
           {seo.political.length > 0 && (
             <section>
               <h2>{h.political}</h2>
               {seo.political.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.capacity.length > 0 && (
+            <section>
+              <h2>{h.capacity}</h2>
+              {seo.capacity.map((p) => <p>{p}</p>)}
+            </section>
+          )}
+          {seo.security.length > 0 && (
+            <section>
+              <h2>{h.security}</h2>
+              {seo.security.map((p) => <p>{p}</p>)}
             </section>
           )}
           {seo.situation.length > 0 && (
@@ -288,36 +335,6 @@ const pageDesc =
                 <p><em>{lang === 'fr' ? `Vérifié le ${situationUpdated}` : `Verified ${situationUpdated}`}</em></p>
               )}
               <ul>{seo.situation.map((s) => <li>{s}</li>)}</ul>
-            </section>
-          )}
-          {seo.economy.length > 0 && (
-            <section>
-              <h2>{h.economy}</h2>
-              {seo.economy.map((p) => <p>{p}</p>)}
-            </section>
-          )}
-          {seo.territory.length > 0 && (
-            <section>
-              <h2>{h.territory}</h2>
-              {seo.territory.map((p) => <p>{p}</p>)}
-            </section>
-          )}
-          {seo.capacity.length > 0 && (
-            <section>
-              <h2>{h.capacity}</h2>
-              {seo.capacity.map((p) => <p>{p}</p>)}
-            </section>
-          )}
-          {seo.society.length > 0 && (
-            <section>
-              <h2>{h.society}</h2>
-              {seo.society.map((p) => <p>{p}</p>)}
-            </section>
-          )}
-          {seo.security.length > 0 && (
-            <section>
-              <h2>{h.security}</h2>
-              {seo.security.map((p) => <p>{p}</p>)}
             </section>
           )}
           {seo.actors.length > 0 && (

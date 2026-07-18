@@ -43,10 +43,14 @@ export interface LangContent {
   executiveSnapshot: string[];
   political: {
     powerStructure: string;
+    /** New (rework §3): judicial + media independence; civil liberties; regional instruments preferred. */
+    rightsAndChecks?: string;
     stabilityDrivers: string;
     shockAbsorbers: string;
     /** Deep-time legal bedrock (treaty lineage / title). Optional until a country is regenerated with the six-peer schema. */
     constitutionalSubstrate?: string;
+    /** New (rework §3): unitary/federal; divisions in the country's own term; powers by level; asymmetries. */
+    stateStructure?: string;
   };
   /**
    * Situation — the event layer, top-level peer positioned after political,
@@ -56,8 +60,20 @@ export interface LangContent {
    * with the event scan (Pass Zero-B).
    */
   situation?: string;
+  /**
+   * Baseline (rework §5) — the page's only always-visible prose: a short,
+   * derivative, present-state paragraph composed LAST by Pass B (no new facts,
+   * no anchors, never a forecast). Empty on countries not yet regenerated —
+   * the renderer then shows nothing (no placeholder, no back-fill).
+   */
+  baseline?: string;
   economy: {
+    /** LEGACY name — superseded by realEconomy (rework §3). Renderer falls back to it. */
     macroReality: string;
+    /** Renames macroReality: sectors, growth, what people do for a living (fiscal/monetary moved out). */
+    realEconomy?: string;
+    /** New (rework §3): the state's money — balance, debt share, monetary stance, inflation, rating. */
+    publicFinances?: string;
     externalVulnerability: string;
     politicalEconomy: string;
   };
@@ -80,8 +96,17 @@ export interface LangContent {
    * regenerated with the six-peer schema.
    */
   capacity?: {
+    /** New (rework §3): anchored synthesis — the structural denominator; merit-gap guard applies. */
+    inheritedTerrain?: string;
+    /** New (rework §3): governance-as-process; Interpretation anchored to the observable record. */
+    steering?: string;
+    /** LEGACY name — superseded by approvals (rework §3). Renderer falls back to it. */
     permitting: string;
+    /** Renames permitting. */
+    approvals?: string;
     delivery: string;
+    /** New (rework §3): realised record running continuous service systems. */
+    publicServices?: string;
     productivity: string;
   };
   /**
@@ -92,11 +117,21 @@ export interface LangContent {
   society?: {
     demographics: string;
     composition: string;
+    /** New (rework §3): linguistic composition, lived texture, political salience. */
+    language?: string;
     religion: string;
+    /** New (rework §3): health + educational OUTCOMES (the systems live in capacity.publicServices). */
+    wellbeing?: string;
     cohesion: string;
   };
   security: {
+    /** New (rework §3): anchored synthesis of the other four security fields; displays first, composed last. */
+    posture?: string;
     internal: string;
+    /** New (rework §3): capability (loyalty/control stay in political.stabilityDrivers). */
+    military?: string;
+    /** New (rework §3): cross-border flows and non-state entanglements. */
+    transnationalExposure?: string;
     diplomacy: string;
   };
   actors: {
