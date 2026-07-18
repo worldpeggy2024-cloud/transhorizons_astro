@@ -219,16 +219,31 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
   headerNote?: string;
 }>(({ icon: Icon, title, children, defaultOpen = false, headerNote }, ref) => {
   const [open, setOpen] = useState(defaultOpen);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   React.useImperativeHandle(ref, () => ({
     open: () => setOpen(true),
   }));
 
+  // Header sticks below the top bar while its section is open, so a long
+  // section can be collapsed without scrolling back up. Collapsing a section
+  // whose top has scrolled away jumps back to it, putting the next section
+  // right at hand.
+  const NAV_OFFSET = 48; // sticky top-bar height (top-12)
+  const toggle = () => {
+    const el = containerRef.current;
+    const wasStuck = open && el && el.getBoundingClientRect().top < NAV_OFFSET;
+    setOpen(o => !o);
+    if (wasStuck) {
+      requestAnimationFrame(() => el!.scrollIntoView({ block: 'start' }));
+    }
+  };
+
   return (
-    <div className="border border-[var(--cr-border)] mb-4">
+    <div ref={containerRef} className="border border-[var(--cr-border)] mb-4" style={{ scrollMarginTop: `${NAV_OFFSET + 8}px` }}>
       <button
-        className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[var(--cr-hover)] transition-colors"
-        onClick={() => setOpen(o => !o)}
+        className={`w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[var(--cr-hover)] transition-colors sticky top-12 z-10 bg-[var(--cr-bg)] ${open ? 'border-b border-[var(--cr-border)]' : ''}`}
+        onClick={toggle}
       >
         <div className="flex items-center gap-3">
           <Icon size={15} className="text-[var(--cr-accent)]" />
@@ -242,7 +257,7 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
         </div>
       </button>
       {open && (
-        <div className="px-6 pb-6 pt-2 border-t border-[var(--cr-border)] bg-[var(--cr-surface)]">
+        <div className="px-6 pb-6 pt-2 bg-[var(--cr-surface)]">
           {children}
         </div>
       )}

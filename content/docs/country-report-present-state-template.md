@@ -412,10 +412,7 @@ GENERATION ORDER — executiveSnapshot is composed LAST. Write every peer sectio
    - Political economy: who benefits from the current model; business-elite structure; reforms technically necessary vs politically possible.
 
 4. TERRITORY (describe the physical body of the country ON ITS OWN TERMS, not merely a risk to assets or an input to trade. Throughout: PAIR every exposure with the capacity to act on it and name the gap; LOCATE effects geographically — who inside the country is exposed or served; BIND every projection to its emissions scenario AND horizon; report DEMONSTRATED over DECLARED. Neither doom-catalogue nor techno-triumph.)
-   - OPENER (required): the territory peer opens — as the first sentence of territory.geography — with one
-     sentence for the country as a whole: landlocked / coastal / island / archipelago / continent /
-     peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours
-     are.
+   - OPENER (required): the territory peer opens — as the first sentence of territory.geography — with one sentence for the country as a whole: landlocked / coastal / island / archipelago / continent / peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours are.
    - Geography: the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; internal connectivity (road, rail, grid, broadband); the periphery, as identified in calibration (periphery.value). For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
    - Minerals: the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named; reserve figures are political — flag disputed or state-controlled counts), including undeveloped and stranded deposits. What the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
    - Biosphere: the biological and renewable base — forests, freshwater, arable land, fisheries — as physical stock and its condition/trend (depletion, degradation, resilience), with year and source. Distinct from agricultural/forestry GDP (ECONOMY).

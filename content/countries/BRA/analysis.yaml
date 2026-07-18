@@ -2,12 +2,13 @@ nameEn: Brazil
 nameFr: Brésil
 lastUpdated: '2026-05-05'
 scorecard_eliteCohesion: Low
+scorecard_socialCohesion: Med
 scorecard_securityLoyalty: Med
 scorecard_economicPressure: High
 scorecard_protestCapacity: High
 scorecard_institutionalResilience: Med
 executiveSnapshot_en: >-
-  Regime type: Federal presidential republic (Senate 81 seats, Chamber 513
+  Regime type: Federal Presidential republic (Senate 81 seats, Chamber 513
   seats). Luiz Inácio Lula da Silva (PT) is president since January 2023,
   seeking a fourth term in the October 4, 2026 general election. V-Dem Liberal
   Democracy Index 0.71 (2024); Freedom House score 73/100 (2026 report)
@@ -115,15 +116,15 @@ executiveSnapshot_fr: >-
   (soutenu par son père Jair Bolsonaro) en égalité avec Lula dans les scénarios
   de second tour. Coalition fragile; Lula a forcé un remaniement ministériel
   (mars 2026) pour renforcer l'unité. Le Congrès est fragmenté entre 30+ partis;
-  aucun parti n'est dominant. La démocratie institutionnelle est résiliente
-  mais la polarisation est aiguë.
+  aucun parti n'est dominant. La démocratie institutionnelle est résiliente mais
+  la polarisation est aiguë.
 
   Modèle économique : Grande économie de revenu intermédiaire (PIB nominal ~2,1
   billions de dollars). Structure duelle : (1) Exportations de matières
   premières (agriculture, minéraux, pétrole); (2) Services et fabrication. Les
-  pressions inflationnistes augmentent; le déficit budgétaire prévu est de 8,1
-  % du PIB (2026)—le plus grand d'Amérique latine. La dette publique augmente.
-  Le taux Selic est à 14,75 % (mars 2026). Croissance prévue 1,7 % (2026), en
+  pressions inflationnistes augmentent; le déficit budgétaire prévu est de 8,1 %
+  du PIB (2026)—le plus grand d'Amérique latine. La dette publique augmente. Le
+  taux Selic est à 14,75 % (mars 2026). Croissance prévue 1,7 % (2026), en
   dessous du potentiel. Instabilité monétaire; le Real se déprécie.
 
   Top 3 risques (6—18 mois) : (1) Polarisation électorale et stress
@@ -157,8 +158,8 @@ executiveSnapshot_fr: >-
   États-Unis envisagent de désigner le PCC/CV comme organisations terroristes.
 
   Orientation diplomatique : Membre des BRICS; accent sur la coopération
-  Sud-Sud. Couverture entre les États-Unis et la Chine; dépendance économique
-  de Pékin, liens de sécurité avec Washington. La protection de l'Amazonie est
+  Sud-Sud. Couverture entre les États-Unis et la Chine; dépendance économique de
+  Pékin, liens de sécurité avec Washington. La protection de l'Amazonie est
   centrale au positionnement international du Brésil; les engagements
   environnementaux sont liés aux accords climatiques et à la pression
   internationale. Le Brésil médiatise les différends régionaux en Amérique du
@@ -413,12 +414,12 @@ economy_politicalEconomy_en: >-
   a political economy friction point throughout the 2026—2030 implementation
   window [wto-brazil-tariff-trade-profile].
 economy_politicalEconomy_fr: >-
-  Le cadre budgétaire brésilien — l'arcabouço fiscal de 2023 (règle budgétaire) —
-  cible un solde primaire nul avec une bande de tolérance de ±0,25 point de
-  pourcentage; le gouvernement a déclaré un déficit primaire d'environ 0,1 % du
-  PIB en 2025, nominalement dans la bande, bien que lorsque les paiements
-  imposés par les tribunaux (precatórios) et les exemptions du Congrès sont
-  inclus, le déficit de trésorerie effectif approche 0,48 % du PIB
+  Le cadre budgétaire brésilien — l'arcabouço fiscal de 2023 (règle
+  budgétaire) — cible un solde primaire nul avec une bande de tolérance de ±0,25
+  point de pourcentage; le gouvernement a déclaré un déficit primaire d'environ
+  0,1 % du PIB en 2025, nominalement dans la bande, bien que lorsque les
+  paiements imposés par les tribunaux (precatórios) et les exemptions du Congrès
+  sont inclus, le déficit de trésorerie effectif approche 0,48 % du PIB
   [stn-resultado-tesouro-march-2026][stn-fiscal-outlook-2025-h2]. La Secretaria
   do Tesouro Nacional projette une trajectoire de dette brute croissante à court
   terme avec une stabilisation uniquement à moyen terme, contingente au maintien
