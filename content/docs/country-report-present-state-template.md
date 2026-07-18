@@ -295,6 +295,10 @@ Target **≥ 70% Fact per section**. The website renders Interpretation with a d
 
 ## 11. Source schema — all nine fields required (volatility warn-first during migration)
 
+*TODO(post-migration): once Canada and the US are migrated to the new field set and the volatility
+backfill is complete, remove the parenthetical above and promote `volatility` from warning to hard
+requirement (both validators + the apply gate) — together with the LEGACY Keystatic declarations.*
+
 No "where available" escape hatches.
 
 ```yaml

@@ -68,7 +68,11 @@ export interface LangContent {
    */
   baseline?: string;
   economy: {
-    /** LEGACY name — superseded by realEconomy (rework §3). Renderer falls back to it. */
+    /**
+     * LEGACY name — superseded by realEconomy (rework §3). Renderer falls back to it.
+     * TODO(post-migration): remove once no displayed country (YAML or hardcoded .ts)
+     * depends on the legacy name.
+     */
     macroReality: string;
     /** Renames macroReality: sectors, growth, what people do for a living (fiscal/monetary moved out). */
     realEconomy?: string;
@@ -100,7 +104,11 @@ export interface LangContent {
     inheritedTerrain?: string;
     /** New (rework §3): governance-as-process; Interpretation anchored to the observable record. */
     steering?: string;
-    /** LEGACY name — superseded by approvals (rework §3). Renderer falls back to it. */
+    /**
+     * LEGACY name — superseded by approvals (rework §3). Renderer falls back to it.
+     * TODO(post-migration): remove once no displayed country (YAML or hardcoded .ts)
+     * depends on the legacy name.
+     */
     permitting: string;
     /** Renames permitting. */
     approvals?: string;
@@ -164,7 +172,11 @@ export interface ActorEntry {
    * report-silent) with a one-line justification. Replaces dealability.
    */
   engagementMode?: string;
-  /** LEGACY rating — superseded by engagementMode; still displayed when present. */
+  /**
+   * LEGACY rating — superseded by engagementMode; still displayed when present.
+   * TODO(post-migration): remove once every displayed country's actors have been
+   * regenerated through the actors pass.
+   */
   dealability: string;
 }
 

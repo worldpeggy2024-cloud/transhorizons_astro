@@ -68,9 +68,14 @@
   - Pass B emits situation, actors.*, and risks EMPTY — each is populated by its own dedicated pass working
     from the finished report (situation pass §4d; two-layer actors/risks passes per rework §8). Actors Layer 2
     renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
-  - LEGACY fields (executiveSnapshot_*, economy_macroReality_*, capacity_permitting_*) stay DECLARED in
-    Keystatic so saves don't strip not-yet-regenerated countries; renderer/adapter read new-name-first with
-    legacy fallback; new generation never writes them.
+  - LEGACY fields (economy_macroReality_*, capacity_permitting_*) stay DECLARED in Keystatic so saves
+    don't strip not-yet-regenerated countries; renderer/adapter read new-name-first with legacy fallback;
+    new generation never writes them. (executiveSnapshot_* is fully REMOVED — declarations AND YAML keys;
+    Keystatic HARD-FAILS opening an item with undeclared keys, so schema removals must strip YAML keys in
+    the same change.) TODO(post-migration): all migration scaffolding is tagged `TODO(post-migration)` —
+    grep for it once CAN + USA are migrated and the volatility backfill is complete; the legacy
+    declarations, the §11 warn-first parenthetical, and the validators' volatility warnings come out
+    together then.
   - Declare EVERY new field in the `countries` collection schema BEFORE writing content — the strip rule
     eats undeclared fields silently.
 - riskLevel (globe filter): DERIVED by rule from the country's own risk register, never assigned by hand or

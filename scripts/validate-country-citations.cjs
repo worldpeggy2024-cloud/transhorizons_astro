@@ -209,6 +209,9 @@ function validateCountryFile(filePath) {
     // Volatility axis (rework §6.2): expected rate of change of the fact(s) the
     // source backs — drives the refresh worklist. WARN-on-missing during
     // migration (backfill High sources first); orthogonal to confidence.
+    // TODO(post-migration): promote to a HARD requirement once CAN + USA are on
+    // the new field set and the volatility backfill is complete (comes out
+    // together with the LEGACY Keystatic declarations and the §11 parenthetical).
     if (!['High', 'Med', 'Low'].includes(s?.volatility)) {
       warnings.push(`Source ${key}: missing volatility (High|Med|Low — expected rate of change; drives the refresh worklist)`);
     }

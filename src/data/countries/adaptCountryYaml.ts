@@ -123,6 +123,9 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
     situation: String(d[`situation${s}`] ?? ''),
     economy: {
       // New name first; LEGACY key kept readable for not-yet-regenerated countries.
+      // TODO(post-migration): drop the macroReality/permitting legacy reads once
+      // NO displayed country carries the old keys (CAN + USA migrated AND the
+      // single-phase countries regenerated or delisted).
       realEconomy: String(d[`economy_realEconomy${s}`] ?? ''),
       macroReality: String(d[`economy_macroReality${s}`] ?? ''),
       publicFinances: String(d[`economy_publicFinances${s}`] ?? ''),

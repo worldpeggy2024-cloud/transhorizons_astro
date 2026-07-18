@@ -106,6 +106,8 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
   const g = (k: string) => stripCites(data?.[`${k}_${lang}`]);
   // New name first, legacy fallback (rework §3 renames) — not-yet-regenerated
   // countries keep emitting their old-field prose.
+  // TODO(post-migration): remove the legacy fallback once no displayed country
+  // carries the old keys (CAN + USA migrated AND single-phase regenerated).
   const gf = (k: string, legacy: string) => g(k) || g(legacy);
 
   const nonEmpty = (x: string) => x.trim().length > 2;

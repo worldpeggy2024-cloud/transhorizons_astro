@@ -156,6 +156,9 @@ function validateSources(sources) {
     // Volatility axis (rework §6.2): WARN-on-missing during migration, then
     // promote to required. Orthogonal to confidence — never overload confidence
     // to signal freshness.
+    // TODO(post-migration): promote to a HARD requirement once CAN + USA are on
+    // the new field set and the volatility backfill is complete (comes out
+    // together with the LEGACY Keystatic declarations and the §11 parenthetical).
     if (!['High', 'Med', 'Low'].includes(s?.volatility)) {
       warnings.push(`${key}.volatility absent (High|Med|Low — expected rate of change of the fact(s) this source backs)`);
     }
@@ -413,6 +416,9 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA) 
   // report as input). Empty arrays are the expected state at apply; when
   // content IS present (a pass output or legacy), shape-check it. Actors
   // accept engagementMode (rework §8.1) or legacy dealability.
+  // TODO(post-migration): drop the legacy-dealability acceptance once every
+  // displayed country's actors have been regenerated through the actors pass
+  // (engagementMode becomes the only accepted key).
   const actorReq = ['name', 'interests', 'resources', 'constraints', 'likelyMoves'];
   const actorPaths = [
     ['actors.domestic.en', content?.actors?.domestic?.en],
@@ -526,6 +532,9 @@ function buildYaml(payload) {
     `scorecard_institutionalResilience: ${c.scorecard.institutionalResilience}`,
     ...(c.scorecardAnchors ? [yamlBlock('scorecard_anchors', JSON.stringify(c.scorecardAnchors, null, 2))] : []),
     // No executiveSnapshot (rework §5) — baseline is the compose-last derivative.
+    // TODO(post-migration): the ?? macroReality / ?? permitting fallbacks below
+    // exist only for old-shape content JSON; remove once CAN + USA are on the
+    // new field set (new-shape content never carries the legacy names).
     yamlText('baseline_en', c.baseline?.en),
     yamlText('baseline_fr', c.baseline?.fr),
     yamlText('territory_geography_en', c.territory?.geography?.en),

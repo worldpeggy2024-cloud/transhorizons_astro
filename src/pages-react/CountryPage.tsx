@@ -827,6 +827,9 @@ export default function CountryPage() {
 
   // Per-peer field rows [label, text, dot-id] — defined ONCE and reused by the
   // section JSX and the nav-rail subsections so the two can never drift.
+  // TODO(post-migration): the realEconomy??macroReality and approvals??permitting
+  // fallbacks below serve not-yet-regenerated countries (YAML legacy + hardcoded
+  // .ts) — remove once no displayed country depends on the legacy names.
   type Row = [string, string, string];
   const filterRows = (rows: Row[]) => rows.filter(([, text]) => text.trim().length > 0);
   const territoryRows: Row[] = hasTerritory ? filterRows([

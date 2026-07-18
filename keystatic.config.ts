@@ -496,6 +496,10 @@ export default config({
         // Keystatic saves don't strip not-yet-regenerated countries); economy
         // gains publicFinances (SIZE of debt here; WHO HOLDS it stays in
         // externalVulnerability).
+        // TODO(post-migration): drop the LEGACY economy_macroReality_* declarations
+        // once CAN + USA are on the new field set and the volatility backfill is
+        // complete — and strip the old keys from ALL country YAMLs in the SAME
+        // change (undeclared keys hard-fail the Keystatic editor).
         economy_realEconomy_en: fields.text({
           label: 'Economy: Real Economy (EN)',
           multiline: true,
@@ -623,6 +627,10 @@ export default config({
         // content (strip rule).
         // Rework §3 — Capacity to Deliver: inheritedTerrain + steering lead;
         // approvals renames permitting (kept below as LEGACY); publicServices new.
+        // TODO(post-migration): drop the LEGACY capacity_permitting_* declarations
+        // once CAN + USA are on the new field set and the volatility backfill is
+        // complete — strip the old keys from ALL country YAMLs in the SAME change
+        // (undeclared keys hard-fail the Keystatic editor).
         capacity_inheritedTerrain_en: fields.text({
           label: 'Capacity: Inherited Terrain (EN)',
           multiline: true,
