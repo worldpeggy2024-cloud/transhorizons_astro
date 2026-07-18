@@ -38,22 +38,41 @@
 - Authoring: TWO-PHASE deep research only (Pass A = sources; Pass B = prose citing only approved IDs), via scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
   do not treat existing single-phase country content as ground truth. Only DEU and BRA are two-phase so far.
   Tool-agnostic: Perplexity is one sourcing option, not hard-wired.
-- Sections, in order: executiveSnapshot, political.* (incl. political_constitutionalSubstrate), economy.*,
-  territory.*, capacity.*, society.*, security.*, actors.*, risks, sources. SIX top-level peers now:
-  political · economy · territory · capacity · society · security.
-  - SOCIETY: society_demographics/composition/religion/cohesion (_en/_fr each) + scorecard_socialCohesion
-    (distinct from scorecard_eliteCohesion).
-  - TERRITORY (physical body, after economy): territory_geography / territory_minerals / territory_biosphere /
-    territory_climate / territory_metabolism / territory_transition (_en/_fr each). Discipline: pair every
-    exposure with capacity, locate geographically, bind every projection to emissions scenario AND horizon,
-    demonstrated-over-declared for transition.
-  - CAPACITY (can the state build/permit/deliver): capacity_permitting / capacity_delivery /
-    capacity_productivity (_en/_fr each).
-  - POLITICAL gains political_constitutionalSubstrate (_en/_fr): deep-time legal bedrock (treaty lineage /
-    title); hold distinct substrates separate; treaty text + court rulings only.
-  - Declare EVERY new field (territory_*, capacity_*, political_constitutionalSubstrate_*, and any society
-    field) in the `countries` collection schema BEFORE writing content — the strip rule eats undeclared
-    fields silently.
+- Structure (rework 2026-07, per content/docs/country-report-rework-IMPLEMENTATION.md — DECIDED, do not
+  redesign): 33 fields, SIX peers, display order territory · society · economy · political order ·
+  capacity to deliver · security & diplomacy; dynamic tail situation · actors · risks; then sources.
+  - TERRITORY: geography / biosphere / minerals / climate / metabolism / transition. Metabolism absorbs
+    connectivity+transport+comms; freshwater STOCK is biosphere. Disciplines: exposure paired with capacity,
+    located geographically, scenario+horizon binding, demonstrated-over-declared.
+  - SOCIETY: demographics / composition / language (new) / religion / wellbeing (new — OUTCOMES only) /
+    cohesion (+ scorecard_socialCohesion, distinct from eliteCohesion). Describe on its own terms first.
+  - ECONOMY: realEconomy (RENAMES macroReality) / publicFinances (new — debt SIZE) / externalVulnerability
+    (debt HOLDERS) / politicalEconomy.
+  - POLITICAL ORDER (renamed from Political Stability): powerStructure / rightsAndChecks (new) /
+    stabilityDrivers (force loyalty AND control) / shockAbsorbers / constitutionalSubstrate /
+    stateStructure (new — admin divisions, NEVER in substrate).
+  - CAPACITY TO DELIVER (renamed from State Capacity): inheritedTerrain (new, anchored synthesis, merit-gap
+    guard) / steering (new) / approvals (RENAMES permitting) / delivery / publicServices (new) / productivity.
+  - SECURITY & DIPLOMACY: posture (new, anchored synthesis, displays first, composed LAST) / internal /
+    military (new) / transnationalExposure (new) / diplomacy.
+  - NO executive snapshot (removed; content lives in the section openers). baseline_en/fr is the compose-last
+    derivative and the page's only always-visible prose — render nothing when empty, never back-fill.
+  - NINE enforced openers (heuristic-gated, scripts/lib/openers.cjs — hard errors at apply, warnings at
+    audit): territory.geography, territory.climate, society.demographics, economy.realEconomy,
+    economy.politicalEconomy, political.powerStructure, political.constitutionalSubstrate,
+    capacity.inheritedTerrain, security.posture. situation has NO opener.
+  - ANCHORS (scripts/lib/anchors.cjs, shared by both validators): derived claims carry [dot.path] markers
+    (inheritedTerrain, steering, posture, scorecard_anchors, actors Layer 2, risk ratings). Ghost anchor
+    (empty/missing target) = hard error; compose-order + allowed-set rules; baseline carries no anchors;
+    anchor parity EN/FR is manual like citation parity.
+  - Pass B emits situation, actors.*, and risks EMPTY — each is populated by its own dedicated pass working
+    from the finished report (situation pass §4d; two-layer actors/risks passes per rework §8). Actors Layer 2
+    renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
+  - LEGACY fields (executiveSnapshot_*, economy_macroReality_*, capacity_permitting_*) stay DECLARED in
+    Keystatic so saves don't strip not-yet-regenerated countries; renderer/adapter read new-name-first with
+    legacy fallback; new generation never writes them.
+  - Declare EVERY new field in the `countries` collection schema BEFORE writing content — the strip rule
+    eats undeclared fields silently.
 - riskLevel (globe filter): DERIVED by rule from the country's own risk register, never assigned by hand or
   AI fiat. Strict rule: High = >=1 risk that is High on BOTH probability and impact; Medium = none High-both
   but >=1 risk touching High on either axis; Low = otherwise. region = static table; topics =
@@ -67,16 +86,19 @@
   inherited/unjustly-distributed, never merit or desert. Never mix trajectory content into the sourced body.
   The Manus-era risk-cascade visualizations belong to the trajectory layer and are PARKED until per-country
   risk registers are trustworthy.
-- SSR: country pages currently have NO .astro SEO layer (React-only) — they are being brought into the
-  dual-renderer pattern. Build the country .astro by COPYING the existing article SSR pattern (hidden SEO div
-  + AppShell client:only="react"; do NOT switch to client:load). A country route that shadows
-  [...slug].astro counts as affecting the catch-all — flag before adding. Expose a country page only once its
-  content is two-phase-regenerated and proofed; .net stays on hold (see Deployment).
-- Validation: scripts/validate-country-citations.cjs. Required source fields: name, url, desc, accessDate,
-  confidence, citationType (+ id); publicationDate optional (warning only). Add 'society_', 'territory_',
-  'capacity_', and 'political_constitutionalSubstrate_' to warningFieldPrefixes so their numerics get
-  time-binding warnings (scenario/horizon binding matters most for territory_). Does NOT enforce EN/FR
-  parity — treat parity as a manual check (or wire one).
+- SSR: country pages have a dual-renderer SEO layer at src/pages/country/[cca3].astro (hidden SEO div +
+  LegacyReveal reading view + AppShell client:only="react"; do NOT switch to client:load). It deliberately
+  SHADOWS [...slug].astro for /country/* — treat any change there as affecting the catch-all. Crawlability is
+  GATED by SEO_READY_COUNTRIES in src/lib/analysedCountries.ts (drives SEO div, sitemap, globe marker, teaser
+  count). Expose a country only once its content is two-phase-regenerated and proofed; .net stays on hold
+  (see Deployment). The SEO div mirrors the React section order and reads new-name fields with legacy
+  fallback — keep the two renderers in sync.
+- Validation: scripts/validate-country-citations.cjs (audit) + the workflow apply gate (hard). Required
+  source fields: name, url, desc, accessDate, confidence, citationType (+ id); publicationDate optional
+  (warning); volatility High|Med|Low warn-on-missing (freshness axis, orthogonal to confidence — drives the
+  quarterly refresh worklist; never overload confidence for age); desc ~20-30 words, what the source IS,
+  never its data (soft warning > 50). Does NOT enforce EN/FR parity (citations OR anchors) — manual check.
+  Acronyms: first mention spells the term in full, no carve-outs (ISO3 codes as data identifiers exempt).
 - Migration is REGENERATION, not preservation: countries not yet on analysis.yaml are re-made through the
   two-phase pipeline (use scripts/migrate-country-ts-to-keystatic.cjs where an old hardcoded .ts exists). No
   single-phase content is preserved. Discarding single-phase country content is the author's explicit
