@@ -59,7 +59,7 @@ The schema leads; the tool serves. **Durable structure that must survive any too
 - two-pass workflow (sources → prose),
 - validator gates (blocking),
 - `Fact` / `Interpretation` tagging,
-- the 8-field source schema,
+- the 9-field source schema (incl. `volatility`),
 - time-binding of every numeric.
 
 Any deep-research-capable assistant can run the passes. **Perplexity Deep Research remains one option, and only for Pass A (sourcing).** Never let a single tool's default output dictate the schema or section order.
@@ -293,7 +293,7 @@ Target **≥ 70% Fact per section**. The website renders Interpretation with a d
 
 ---
 
-## 11. Source schema — all eight fields required
+## 11. Source schema — all nine fields required (volatility warn-first during migration)
 
 No "where available" escape hatches.
 
