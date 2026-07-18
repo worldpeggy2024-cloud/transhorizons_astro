@@ -4,7 +4,8 @@
 *Produces the sourced, verifiable present-state country report (one of two layers).*
 
 > **LAYER: Present-state.** This template produces the sourced, verifiable layer of a country report:
-> `political · economy · territory · capacity · society · security · actors · risks · sources`.
+> `territory · society · economy · political order · capacity to deliver · security & diplomacy`, then
+> `situation · actors · risks · sources`.
 >
 > **Governed by:** `research-quality-bar.md` (present-state layer). Its rejection criteria override any ambiguous behaviour here.
 >
@@ -15,17 +16,31 @@
 
 ## 0. What changed, and why (orientation — read once)
 
-1. **Six peers, not four.** `territory`, `capacity`, and `society` now stand as top-level peers alongside `political`, `economy`, and `security` — same rank, same sourcing rigor, each its own collapsible card.
-   Order: `political · economy · territory · capacity · society · security`. All three were previously demoted: the physical body of the country surfaced only as "border situation" or "energy dependency" (now `territory`); the state's ability to build, permit, and deliver had no field, though "knowledge isn't the constraint, capacity is" is the project's spine (now `capacity`); society appeared only where it was a "problem" — a *risk factor*, never a *component of the country in itself* (now `society`). A deep-time **`political.constitutionalSubstrate`** sub-field was also added (deep legal bedrock beneath current politics — the allocation of sovereignty and any predating or diminished sovereignties, held distinct).
-2. **The template is tool-agnostic.** It was Perplexity-shaped. The durable machinery (two-pass, validator gates, Fact/Interpretation, the source schema, time-binding) must survive a tool swap. Perplexity is now **one option, for sourcing only**.
+1. **The 2026-07 rework** (per `country-report-rework-IMPLEMENTATION.md` — decided against external
+   country-report reference standards; do not redesign). The report is **33 fields across six peers**, in
+   the locked display order `territory · society · economy · political order · capacity to deliver ·
+   security & diplomacy`, followed by the dynamic tail `situation · actors · risks`. Key moves: **NINE
+   enforced openers** (heuristic-gated at the apply gate and audit validator), each doing three jobs —
+   state, signal, declare depth (§2.1 of the spec; WRITING RULES in §14); an **anchoring capability** for
+   derived claims (`[dot.path]` markers naming the already-cited fields a synthesis stands on — ghost
+   anchors are hard errors); the **executive snapshot is REMOVED**, replaced by a short compose-last
+   **Baseline** (the page's only always-visible prose); `situation`, `actors`, and `risks` are **emitted
+   empty by Pass B** and populated by their own dedicated passes from the finished report; sources carry a
+   **`volatility`** axis (freshness, orthogonal to confidence) driving the quarterly refresh worklist.
+2. **Six peers on their own terms** (the earlier expansion this rework builds on): `territory`, `capacity`,
+   and `society` stand at the same rank and sourcing rigor as the rest — the physical body of the country,
+   the state's ability to deliver, and the society as a component of the country in itself, not a risk
+   factor. The deep-time `political.constitutionalSubstrate` field holds the legal bedrock beneath current
+   politics, distinct substrates held separate.
+3. **The template is tool-agnostic.** It was Perplexity-shaped. The durable machinery (two-pass, validator gates, Fact/Interpretation, the source schema, time-binding) must survive a tool swap. Perplexity is now **one option, for sourcing only**.
 
 ---
 
 ## 1. The peers, and the on-its-own-terms principle
 
-A country is described as six peers, each on its own terms:
+A country is described as six peers, each on its own terms, in the locked display order:
 
-`political` · `economy` · **`territory`** · **`capacity`** · **`society`** · `security`
+**`territory`** · **`society`** · `economy` · `political order` · **`capacity to deliver`** · `security & diplomacy` — then the dynamic tail `situation` · `actors` · `risks`
 
 **Each peer is described *before* and *independent of* any stability implication.** A society, a territory, a capacity to build — each exists whether or not it threatens or serves anything. The register this template replaces demotes three of them: the physical body of the country surfaces only as "border situation" or "energy dependency" — a risk to assets or an input to trade, never the material fact the country IS (`territory` fixes this); the state's ability to build, permit, and deliver has no field at all, though "knowledge isn't the constraint, capacity is" is the whole project's spine (`capacity` fixes this); and society appears only where it is a "problem" (`society` fixes this).
 
