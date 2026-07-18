@@ -101,63 +101,12 @@ function sentenceTimeBindingWarnings(text, label, warnings) {
 const PEER_ORDER = ['political', 'situation', 'economy', 'territory', 'capacity', 'society', 'security', 'other'];
 
 // ── Situator-opener signature checks (heuristic) ─────────────────────────────
-// The "OPENER (required)" disciplines are prompt-only and silently erode. Each
-// check looks for the discipline's signature vocabulary at the START of the
-// field (for macroReality: BEFORE the first digit). WARNINGS here (existing
-// files audit); the apply gate in deepsearch-country-workflow.cjs fails hard.
-// The FIVE openers per Peggy's ruling: substrate, macro, geography
-// (territory-peer), climate, demographics — situation has NO opener (it is a
-// list of events). KEEP IN SYNC with the OPENER_RULES there.
-const OPENER_RULES = {
-  substrate: {
-    re: /constitution|founding|sovereign|federal|unitary|parliamentar|president|confederat|basic law|fundamental law|charter|souverain|fédéra|unitaire|parlementa|présidentiel|charte/i,
-    window: 300,
-    hint: 'must open by naming the constitutional form (founding instrument(s); how sovereignty is allocated)',
-  },
-  macro: {
-    beforeFirstDigit: true,
-    re: /service|manufactur|industri|agricult|agrari|commodit|resourc|extractiv|hydrocarbon|\boil\b|\bgas\b|mining|export-led|diversified|concentrated|post-industrial|knowledge|mixed econom|advanced econom|emerging|tertiar|primaire|secondaire|tertiaire|industriel|agricole|matières premières|ressourc|pétrol|gazier|minier|diversifié|concentré|avancée|émergent|mixte/i,
-    window: 300,
-    hint: 'must name the dominant economic character BEFORE any numbers (shape of production; what the economy lives on; diversified or concentrated)',
-  },
-  geography: {
-    re: /landlocked|coastal|island|archipelag|continent|peninsul|mountain|\bflat\b|plain|lowland|highland|isolated|embedded|neighbou?r|borders|enclavé|côtier|insulaire|archipel|péninsul|montagn|\bplat\b|plaine|isolé|voisin|frontali/i,
-    window: 300,
-    hint: 'the territory peer must open (first sentence of territory_geography) with the country-as-a-whole situator (landlocked/coastal/island/…; terrain; neighbours)',
-  },
-  climate: {
-    re: /\bcold\b|\bhot\b|temperate|tropical|arid|continental|maritime|mediterranean|polar|subarctic|boreal|equatorial|monsoon|desert|humid|altitude|uniform|dramatically regional|froid|chaud|tempéré|aride|méditerranéen|polaire|subarctique|boréal|équatorial|mousson|désert|humide/i,
-    window: 300,
-    hint: 'must open by establishing the baseline climate type before any warming/exposure/hazard content (warming is a change; a change needs a baseline)',
-  },
-  demographics: {
-    re: /indigenous|settler|immigrant|immigration|colonial|coloni[sz]|\bmixed\b|\bclosed\b|founded|peopled|autochtone|\bcolon|immigr|fermé|métiss|peuplé|fondé/i,
-    window: 250,
-    hint: 'must open with the one-line historical framing (indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed)',
-  },
-};
-
-function openerProblem(kind, text) {
-  const rule = OPENER_RULES[kind];
-  const t = String(text ?? '').trim();
-  if (!t) return null; // emptiness is not this check's job
-  let head;
-  if (rule.beforeFirstDigit) {
-    const i = t.search(/\d/);
-    head = i === -1 ? t.slice(0, rule.window) : t.slice(0, i);
-  } else {
-    head = t.slice(0, rule.window);
-  }
-  return rule.re.test(head) ? null : rule.hint;
-}
-
-const OPENER_FIELDS = [
-  ['political_constitutionalSubstrate', 'substrate'],
-  ['economy_macroReality', 'macro'],
-  ['territory_geography', 'geography'],
-  ['territory_climate', 'climate'],
-  ['society_demographics', 'demographics'],
-];
+// NINE enforced openers (rework spec §3/§9), pointed at the NEW field names.
+// WARNINGS here (existing-files audit); the apply gate in
+// deepsearch-country-workflow.cjs fails hard. ONE shared implementation:
+// scripts/lib/openers.cjs. Legacy fields (economy_macroReality_* etc.) are
+// absent under the new names and skip — existing countries stay valid.
+const { OPENER_FIELDS, openerProblem } = require('./lib/openers.cjs');
 
 // Best-effort classification of a source id into the peer whose section it belongs to, so
 // uncited (orphan) sources group by peer in the warning output (capacity before territory).
@@ -332,13 +281,15 @@ function validateCountryFile(filePath) {
   }
 
   // Situator openers — warning-level audit (the apply gate errors hard on these).
+  // OPENER_FIELDS carries dot paths; flat YAML keys use underscores.
   for (const [base, kind] of OPENER_FIELDS) {
+    const flatBase = base.replace(/\./g, '_');
     for (const lang of ['en', 'fr']) {
-      const v = contentClone[`${base}_${lang}`];
+      const v = contentClone[`${flatBase}_${lang}`];
       if (typeof v !== 'string' || !v.trim()) continue;
       const problem = openerProblem(kind, v);
       if (problem) {
-        warnings.push(`${base}_${lang}: missing situator OPENER — ${problem}`);
+        warnings.push(`${flatBase}_${lang}: missing situator OPENER — ${problem}`);
       }
     }
   }

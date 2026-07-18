@@ -224,56 +224,11 @@ function peerOfSource(id, name) {
 }
 
 // ── Situator-opener signature checks (heuristic) ─────────────────────────────
-// The "OPENER (required)" disciplines are prompt-only and silently erode: Pass B
-// skipped every opener on the USA run because nothing validated them. Each check
-// looks for the discipline's signature vocabulary at the START of the field (for
-// macroReality: BEFORE the first digit — the character must be named before any
-// number). Heuristics, not semantics — tuned to catch a skipped opener, not to
-// grade a written one. The FIVE openers per Peggy's ruling: substrate, macro,
-// geography (territory-peer), climate, demographics — situation has NO opener
-// (it is a list of events). KEEP IN SYNC with validate-country-citations.cjs.
-const OPENER_RULES = {
-  substrate: {
-    re: /constitution|founding|sovereign|federal|unitary|parliamentar|president|confederat|basic law|fundamental law|charter|souverain|fédéra|unitaire|parlementa|présidentiel|charte/i,
-    window: 300,
-    hint: 'must open by naming the constitutional form (founding instrument(s); how sovereignty is allocated)',
-  },
-  macro: {
-    beforeFirstDigit: true,
-    re: /service|manufactur|industri|agricult|agrari|commodit|resourc|extractiv|hydrocarbon|\boil\b|\bgas\b|mining|export-led|diversified|concentrated|post-industrial|knowledge|mixed econom|advanced econom|emerging|tertiar|primaire|secondaire|tertiaire|industriel|agricole|matières premières|ressourc|pétrol|gazier|minier|diversifié|concentré|avancée|émergent|mixte/i,
-    window: 300,
-    hint: 'must name the dominant economic character BEFORE any numbers (shape of production; what the economy lives on; diversified or concentrated)',
-  },
-  geography: {
-    re: /landlocked|coastal|island|archipelag|continent|peninsul|mountain|\bflat\b|plain|lowland|highland|isolated|embedded|neighbou?r|borders|enclavé|côtier|insulaire|archipel|péninsul|montagn|\bplat\b|plaine|isolé|voisin|frontali/i,
-    window: 300,
-    hint: 'the territory peer must open (first sentence of territory.geography) with the country-as-a-whole situator (landlocked/coastal/island/…; terrain; neighbours)',
-  },
-  climate: {
-    re: /\bcold\b|\bhot\b|temperate|tropical|arid|continental|maritime|mediterranean|polar|subarctic|boreal|equatorial|monsoon|desert|humid|altitude|uniform|dramatically regional|froid|chaud|tempéré|aride|méditerranéen|polaire|subarctique|boréal|équatorial|mousson|désert|humide/i,
-    window: 300,
-    hint: 'must open by establishing the baseline climate type before any warming/exposure/hazard content (warming is a change; a change needs a baseline)',
-  },
-  demographics: {
-    re: /indigenous|settler|immigrant|immigration|colonial|coloni[sz]|\bmixed\b|\bclosed\b|founded|peopled|autochtone|\bcolon|immigr|fermé|métiss|peuplé|fondé/i,
-    window: 250,
-    hint: 'must open with the one-line historical framing (indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed)',
-  },
-};
-
-function openerProblem(kind, text) {
-  const rule = OPENER_RULES[kind];
-  const t = String(text ?? '').trim();
-  if (!t) return null; // emptiness is reported by the citation check, not here
-  let head;
-  if (rule.beforeFirstDigit) {
-    const i = t.search(/\d/);
-    head = i === -1 ? t.slice(0, rule.window) : t.slice(0, i);
-  } else {
-    head = t.slice(0, rule.window);
-  }
-  return rule.re.test(head) ? null : rule.hint;
-}
+// NINE enforced openers (rework spec §3/§9), pointed at the NEW field names.
+// ONE shared implementation: scripts/lib/openers.cjs (also used by
+// validate-country-citations.cjs). Legacy fields (economy.macroReality etc.)
+// are absent under the new names and skip — existing countries stay valid.
+const { OPENER_FIELDS, openerProblem } = require('./lib/openers.cjs');
 
 // Situation threads (template §4d): shape checks for the verified event layer.
 // ARRAY ORDER IS SEMANTIC (threads by recency of last activity, events
@@ -416,18 +371,13 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA) 
 
   // Situator openers — HARD ERRORS at the apply gate (regeneration is cheap here;
   // a missed opener that reaches the YAML costs a manual retrofit instead).
-  const openerFields = [
-    ['political.constitutionalSubstrate', 'substrate', content?.political?.constitutionalSubstrate],
-    ['economy.macroReality', 'macro', content?.economy?.macroReality],
-    ['territory.geography', 'geography', content?.territory?.geography],
-    ['territory.climate', 'climate', content?.territory?.climate],
-    ['society.demographics', 'demographics', content?.society?.demographics],
-  ];
-  for (const [field, kind, node] of openerFields) {
+  for (const [fieldPath, kind] of OPENER_FIELDS) {
+    const [peer, fieldName] = fieldPath.split('.');
+    const node = content?.[peer]?.[fieldName];
     for (const lang of ['en', 'fr']) {
       const problem = openerProblem(kind, node?.[lang]);
       if (problem) {
-        errors.push(`${field}.${lang}: missing OPENER (required) — ${problem}`);
+        errors.push(`${fieldPath}.${lang}: missing OPENER (required) — ${problem}`);
       }
     }
   }
