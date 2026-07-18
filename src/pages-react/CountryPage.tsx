@@ -579,6 +579,9 @@ export default function CountryPage() {
   const [loading, setLoading] = useState(true);
   const [clickedSection, setClickedSection] = useState<string>('');
   const sourcesRef = useRef<FrameworkSectionHandle>(null);
+  // Per-section imperative handles so the nav rail can OPEN a collapsed
+  // accordion before scrolling to it (keyed by peer id: territory, society, …).
+  const sectionRefs = useRef<Record<string, FrameworkSectionHandle | null>>({});
 
   // Scoped dark mode for country report pages only: the `.dark` class is applied
   // to THIS page's wrapper (not <html>), so it never affects the rest of the site.
@@ -822,20 +825,82 @@ export default function CountryPage() {
     </>
   );
 
+  // Per-peer field rows [label, text, dot-id] — defined ONCE and reused by the
+  // section JSX and the nav-rail subsections so the two can never drift.
+  type Row = [string, string, string];
+  const filterRows = (rows: Row[]) => rows.filter(([, text]) => text.trim().length > 0);
+  const territoryRows: Row[] = hasTerritory ? filterRows([
+    [t.geography, lang!.territory!.geography, 'territory.geography'],
+    [t.biosphere, lang!.territory!.biosphere, 'territory.biosphere'],
+    [t.minerals, lang!.territory!.minerals, 'territory.minerals'],
+    [t.climate, lang!.territory!.climate, 'territory.climate'],
+    [t.metabolism, lang!.territory!.metabolism, 'territory.metabolism'],
+    [t.transition, lang!.territory!.transition, 'territory.transition'],
+  ]) : [];
+  const societyRows: Row[] = hasSociety ? filterRows([
+    [t.demographics, lang!.society!.demographics, 'society.demographics'],
+    [t.composition, lang!.society!.composition, 'society.composition'],
+    [t.languageField, lang!.society!.language ?? '', 'society.language'],
+    [t.religion, lang!.society!.religion, 'society.religion'],
+    [t.wellbeing, lang!.society!.wellbeing ?? '', 'society.wellbeing'],
+    [t.socialCohesionSection, lang!.society!.cohesion, 'society.cohesion'],
+  ]) : [];
+  const economyRows: Row[] = hasAnalysis ? filterRows([
+    [t.realEconomy, lang!.economy.realEconomy?.trim() ? lang!.economy.realEconomy : lang!.economy.macroReality, 'economy.realEconomy'],
+    [t.publicFinances, lang!.economy.publicFinances ?? '', 'economy.publicFinances'],
+    [t.externalVuln, lang!.economy.externalVulnerability, 'economy.externalVulnerability'],
+    [t.politicalEconomy, lang!.economy.politicalEconomy, 'economy.politicalEconomy'],
+  ]) : [];
+  const politicalRows: Row[] = hasAnalysis ? filterRows([
+    [t.powerStructure, lang!.political.powerStructure, 'political.powerStructure'],
+    [t.rightsAndChecks, lang!.political.rightsAndChecks ?? '', 'political.rightsAndChecks'],
+    [t.stabilityDrivers, lang!.political.stabilityDrivers, 'political.stabilityDrivers'],
+    [t.shockAbsorbers, lang!.political.shockAbsorbers, 'political.shockAbsorbers'],
+    [t.constitutionalSubstrate, lang!.political.constitutionalSubstrate ?? '', 'political.constitutionalSubstrate'],
+    [t.stateStructure, lang!.political.stateStructure ?? '', 'political.stateStructure'],
+  ]) : [];
+  const capacityRows: Row[] = hasCapacity ? filterRows([
+    [t.inheritedTerrain, lang!.capacity!.inheritedTerrain ?? '', 'capacity.inheritedTerrain'],
+    [t.steering, lang!.capacity!.steering ?? '', 'capacity.steering'],
+    [t.approvals, lang!.capacity!.approvals?.trim() ? lang!.capacity!.approvals : lang!.capacity!.permitting, 'capacity.approvals'],
+    [t.delivery, lang!.capacity!.delivery, 'capacity.delivery'],
+    [t.publicServices, lang!.capacity!.publicServices ?? '', 'capacity.publicServices'],
+    [t.productivity, lang!.capacity!.productivity, 'capacity.productivity'],
+  ]) : [];
+  const securityRows: Row[] = hasAnalysis ? filterRows([
+    [t.posture, lang!.security.posture ?? '', 'security.posture'],
+    [t.internalSecurity, lang!.security.internal, 'security.internal'],
+    [t.military, lang!.security.military ?? '', 'security.military'],
+    [t.transnationalExposure, lang!.security.transnationalExposure ?? '', 'security.transnationalExposure'],
+    [t.diplomacy, lang!.security.diplomacy, 'security.diplomacy'],
+  ]) : [];
+
   // Lateral nav (rework §5): persistent section list mirroring section order,
-  // opening at Territory. Sections render collapsed; the list is the map.
-  const navItems: { id: string; label: string }[] = [
-    ...(hasTerritory ? [{ id: 'territory', label: t.territory }] : []),
-    ...(hasSociety ? [{ id: 'society', label: t.society }] : []),
-    { id: 'economy', label: t.economy },
-    { id: 'political', label: t.political },
-    ...(hasCapacity ? [{ id: 'capacity', label: t.capacity }] : []),
-    { id: 'security', label: t.security },
+  // opening at Territory, with field-level subsections. Sections render
+  // collapsed; the list is the map. Clicking opens the target accordion first.
+  const navItems: { id: string; label: string; children?: { id: string; label: string }[] }[] = [
+    ...(hasTerritory ? [{ id: 'territory', label: t.territory, children: territoryRows.map(([label, , id]) => ({ id, label })) }] : []),
+    ...(hasSociety ? [{ id: 'society', label: t.society, children: societyRows.map(([label, , id]) => ({ id, label })) }] : []),
+    { id: 'economy', label: t.economy, children: economyRows.map(([label, , id]) => ({ id, label })) },
+    { id: 'political', label: t.political, children: politicalRows.map(([label, , id]) => ({ id, label })) },
+    ...(hasCapacity ? [{ id: 'capacity', label: t.capacity, children: capacityRows.map(([label, , id]) => ({ id, label })) }] : []),
+    { id: 'security', label: t.security, children: securityRows.map(([label, , id]) => ({ id, label })) },
     ...(hasSituation ? [{ id: 'situation', label: t.situation }] : []),
     { id: 'actors', label: t.actors },
     { id: 'risks', label: t.risks },
     { id: 'sources', label: t.sources },
   ];
+
+  // Nav click: open the target section's accordion, then scroll — a field
+  // block inside a collapsed section isn't in the DOM until it opens.
+  const openAndScroll = (id: string) => {
+    const peer = id.includes('.') ? id.split('.')[0] : id;
+    if (peer === 'sources') sourcesRef.current?.open();
+    else sectionRefs.current[peer]?.open();
+    setTimeout(() => {
+      (document.getElementById(id) ?? document.getElementById(peer))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
+  };
 
   return (
     <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
@@ -968,14 +1033,59 @@ export default function CountryPage() {
           </div>
         )}
 
-        {/* Scorecard inline on mobile — the rail is hidden there (rework §5) */}
+        {/* Scorecard inline on mobile — the rail is hidden there (rework §5).
+            Compact: three columns of two axes each. */}
         <div className="lg:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
           <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
-          {scorecardRows}
+          <div className="grid grid-cols-3 gap-x-4">{scorecardRows}</div>
         </div>
 
-        {/* ── Content + lateral rail (rework §5) ── */}
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_230px] lg:gap-8 lg:items-start">
+        {/* ── Lateral rail (LEFT) + content (rework §5) ── */}
+        <div className="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-8 lg:items-start">
+
+        {/* Nav (with field-level subsections) + scorecard — desktop only.
+            The scorecard is a visually DISTINCT block (assessment vs
+            navigation) — accent border vs the nav's neutral border. */}
+        <aside className="hidden lg:block sticky top-16 space-y-4">
+          <nav className="border border-[var(--cr-border)] bg-[var(--cr-surface)] px-4 py-3" aria-label={language === 'fr' ? 'Sections du rapport' : 'Report sections'}>
+            <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">
+              {language === 'fr' ? 'Sections' : 'Sections'}
+            </p>
+            <ul className="space-y-1.5">
+              {navItems.map(({ id, label, children }) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    className="font-body text-xs text-[var(--cr-body)] hover:text-[var(--cr-accent)] transition-colors"
+                    onClick={(e) => { e.preventDefault(); openAndScroll(id); }}
+                  >
+                    {label}
+                  </a>
+                  {(children?.length ?? 0) > 0 && (
+                    <ul className="mt-1 mb-1 ml-2 space-y-0.5 border-l border-[var(--cr-divider)] pl-2">
+                      {children!.map((c) => (
+                        <li key={c.id}>
+                          <a
+                            href={`#${c.id}`}
+                            className="font-body text-[11px] text-[var(--cr-muted)] hover:text-[var(--cr-accent)] transition-colors"
+                            onClick={(e) => { e.preventDefault(); openAndScroll(c.id); }}
+                          >
+                            {c.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
+            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+            {scorecardRows}
+          </div>
+        </aside>
+
         <div className="min-w-0">
 
         {/* ── Framework sections — standing body: Territory · Society · Economy ·
@@ -985,19 +1095,9 @@ export default function CountryPage() {
         {/* 1. Territory */}
         {hasTerritory && (
           <div data-section="Territory" id="territory" style={{ scrollMarginTop: 96 }}>
-          <FrameworkSection icon={Mountain} title={t.territory} headerNote={sectionMeta([
-            lang!.territory!.geography, lang!.territory!.biosphere, lang!.territory!.minerals,
-            lang!.territory!.climate, lang!.territory!.metabolism, lang!.territory!.transition,
-          ])}>
+          <FrameworkSection ref={(el) => { sectionRefs.current.territory = el; }} icon={Mountain} title={t.territory} headerNote={sectionMeta(territoryRows.map(([, text]) => text))}>
             <div className="space-y-6">
-              {([
-                [t.geography, lang!.territory!.geography, 'territory.geography'],
-                [t.biosphere, lang!.territory!.biosphere, 'territory.biosphere'],
-                [t.minerals, lang!.territory!.minerals, 'territory.minerals'],
-                [t.climate, lang!.territory!.climate, 'territory.climate'],
-                [t.metabolism, lang!.territory!.metabolism, 'territory.metabolism'],
-                [t.transition, lang!.territory!.transition, 'territory.transition'],
-              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+              {territoryRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
@@ -1010,20 +1110,10 @@ export default function CountryPage() {
 
         {/* 2. Society */}
         <div data-section="Society" id="society" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta([
-          lang!.society!.demographics, lang!.society!.composition, lang!.society!.language,
-          lang!.society!.religion, lang!.society!.wellbeing, lang!.society!.cohesion,
-        ]) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.society = el; }} icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta(societyRows.map(([, text]) => text)) : undefined}>
           {hasSociety ? (
             <div className="space-y-6">
-              {([
-                [t.demographics, lang!.society!.demographics, 'society.demographics'],
-                [t.composition, lang!.society!.composition, 'society.composition'],
-                [t.languageField, lang!.society!.language ?? '', 'society.language'],
-                [t.religion, lang!.society!.religion, 'society.religion'],
-                [t.wellbeing, lang!.society!.wellbeing ?? '', 'society.wellbeing'],
-                [t.socialCohesionSection, lang!.society!.cohesion, 'society.cohesion'],
-              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+              {societyRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
@@ -1038,18 +1128,10 @@ export default function CountryPage() {
 
         {/* 3. Economy */}
         <div data-section="Economy" id="economy" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta([
-          lang!.economy.realEconomy, lang!.economy.macroReality, lang!.economy.publicFinances,
-          lang!.economy.externalVulnerability, lang!.economy.politicalEconomy,
-        ]) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.economy = el; }} icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta(economyRows.map(([, text]) => text)) : undefined}>
           {hasAnalysis ? (
             <div className="space-y-6">
-              {([
-                [t.realEconomy, lang!.economy.realEconomy?.trim() ? lang!.economy.realEconomy : lang!.economy.macroReality, 'economy.realEconomy'],
-                [t.publicFinances, lang!.economy.publicFinances ?? '', 'economy.publicFinances'],
-                [t.externalVuln, lang!.economy.externalVulnerability, 'economy.externalVulnerability'],
-                [t.politicalEconomy, lang!.economy.politicalEconomy, 'economy.politicalEconomy'],
-              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+              {economyRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
@@ -1064,20 +1146,10 @@ export default function CountryPage() {
 
         {/* 4. Political Order */}
         <div data-section="Political Stability" id="political" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta([
-          lang!.political.powerStructure, lang!.political.rightsAndChecks, lang!.political.stabilityDrivers,
-          lang!.political.shockAbsorbers, lang!.political.constitutionalSubstrate, lang!.political.stateStructure,
-        ]) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.political = el; }} icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta(politicalRows.map(([, text]) => text)) : undefined}>
           {hasAnalysis ? (
             <div className="space-y-6">
-              {([
-                [t.powerStructure, lang!.political.powerStructure, 'political.powerStructure'],
-                [t.rightsAndChecks, lang!.political.rightsAndChecks ?? '', 'political.rightsAndChecks'],
-                [t.stabilityDrivers, lang!.political.stabilityDrivers, 'political.stabilityDrivers'],
-                [t.shockAbsorbers, lang!.political.shockAbsorbers, 'political.shockAbsorbers'],
-                [t.constitutionalSubstrate, lang!.political.constitutionalSubstrate ?? '', 'political.constitutionalSubstrate'],
-                [t.stateStructure, lang!.political.stateStructure ?? '', 'political.stateStructure'],
-              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+              {politicalRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
@@ -1093,19 +1165,9 @@ export default function CountryPage() {
         {/* 5. Capacity to Deliver */}
         {hasCapacity && (
           <div data-section="Capacity" id="capacity" style={{ scrollMarginTop: 96 }}>
-          <FrameworkSection icon={Hammer} title={t.capacity} headerNote={sectionMeta([
-            lang!.capacity!.inheritedTerrain, lang!.capacity!.steering, lang!.capacity!.approvals,
-            lang!.capacity!.permitting, lang!.capacity!.delivery, lang!.capacity!.publicServices, lang!.capacity!.productivity,
-          ])}>
+          <FrameworkSection ref={(el) => { sectionRefs.current.capacity = el; }} icon={Hammer} title={t.capacity} headerNote={sectionMeta(capacityRows.map(([, text]) => text))}>
             <div className="space-y-6">
-              {([
-                [t.inheritedTerrain, lang!.capacity!.inheritedTerrain ?? '', 'capacity.inheritedTerrain'],
-                [t.steering, lang!.capacity!.steering ?? '', 'capacity.steering'],
-                [t.approvals, lang!.capacity!.approvals?.trim() ? lang!.capacity!.approvals : lang!.capacity!.permitting, 'capacity.approvals'],
-                [t.delivery, lang!.capacity!.delivery, 'capacity.delivery'],
-                [t.publicServices, lang!.capacity!.publicServices ?? '', 'capacity.publicServices'],
-                [t.productivity, lang!.capacity!.productivity, 'capacity.productivity'],
-              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+              {capacityRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
@@ -1118,19 +1180,10 @@ export default function CountryPage() {
 
         {/* 6. Security & Diplomacy — posture displays first (composed last) */}
         <div data-section="Security & Diplomacy" id="security" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta([
-          lang!.security.posture, lang!.security.internal, lang!.security.military,
-          lang!.security.transnationalExposure, lang!.security.diplomacy,
-        ]) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.security = el; }} icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta(securityRows.map(([, text]) => text)) : undefined}>
           {hasAnalysis ? (
             <div className="space-y-6">
-              {([
-                [t.posture, lang!.security.posture ?? '', 'security.posture'],
-                [t.internalSecurity, lang!.security.internal, 'security.internal'],
-                [t.military, lang!.security.military ?? '', 'security.military'],
-                [t.transnationalExposure, lang!.security.transnationalExposure ?? '', 'security.transnationalExposure'],
-                [t.diplomacy, lang!.security.diplomacy, 'security.diplomacy'],
-              ] as [string, string, string][]).filter(([, text]) => text.trim().length > 0).map(([title, text, fieldId]) => (
+              {securityRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
                   <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{title}</h4>
                   <ProseParagraphs text={text} sources={activeSources} />
@@ -1147,6 +1200,7 @@ export default function CountryPage() {
         {hasSituation && (
           <div data-section="Situation" id="situation" style={{ scrollMarginTop: 96 }}>
           <FrameworkSection
+            ref={(el) => { sectionRefs.current.situation = el; }}
             icon={AlertTriangle}
             title={t.situation}
             // Situation is the most time-sensitive section — surface its own
@@ -1162,7 +1216,7 @@ export default function CountryPage() {
 
         {/* 8. Actors Map */}
         <div data-section="Actors" id="actors" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection icon={Users} title={t.actors}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.actors = el; }} icon={Users} title={t.actors}>
           {hasAnalysis ? (
             <div className="space-y-6">
               <div>
@@ -1197,7 +1251,7 @@ export default function CountryPage() {
 
         {/* 9. Risk Register */}
         <div data-section="Risk Register" id="risks" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection icon={AlertTriangle} title={t.risks}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.risks = el; }} icon={AlertTriangle} title={t.risks}>
           {hasAnalysis ? (
             <div className="space-y-2">
               {/* Redesign notice — the risk framing predates the two-phase pipeline and is
@@ -1355,36 +1409,6 @@ export default function CountryPage() {
 
         </div>
 
-        {/* ── Lateral rail (rework §5): nav list + scorecard, desktop only.
-            The scorecard is a visually DISTINCT block (assessment vs
-            navigation) — accent border vs the nav's neutral border. ── */}
-        <aside className="hidden lg:block sticky top-16 space-y-4">
-          <nav className="border border-[var(--cr-border)] bg-[var(--cr-surface)] px-4 py-3" aria-label={language === 'fr' ? 'Sections du rapport' : 'Report sections'}>
-            <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">
-              {language === 'fr' ? 'Sections' : 'Sections'}
-            </p>
-            <ul className="space-y-1.5">
-              {navItems.map(({ id, label }) => (
-                <li key={id}>
-                  <a
-                    href={`#${id}`}
-                    className="font-body text-xs text-[var(--cr-body)] hover:text-[var(--cr-accent)] transition-colors"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }}
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
-            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
-            {scorecardRows}
-          </div>
-        </aside>
         </div>
 
       </div>
