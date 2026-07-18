@@ -1051,7 +1051,10 @@ export default function CountryPage() {
             <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">
               {language === 'fr' ? 'Sections' : 'Sections'}
             </p>
-            <ul className="space-y-1.5">
+            {/* Capped + internally scrollable so the scorecard below stays in
+                view — the subsection lists make the full nav taller than the
+                viewport on desktop. */}
+            <ul className="space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
               {navItems.map(({ id, label, children }) => (
                 <li key={id}>
                   <a
