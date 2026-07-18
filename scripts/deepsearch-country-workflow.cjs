@@ -338,6 +338,22 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA) 
       anchorsLib.validateFieldAnchors('baseline', `baseline.${lang}`, text, (p) => resolveNested(p, lang), errors);
     }
   }
+  // Anchors inside the JSON layers (actors Layer 2, risk ratings — rework §8):
+  // ghost-check any [dot.path] markers in the serialized arrays.
+  for (const [label, arr, lg] of [
+    ['actors.domestic.en', content?.actors?.domestic?.en, 'en'],
+    ['actors.domestic.fr', content?.actors?.domestic?.fr, 'fr'],
+    ['actors.external.en', content?.actors?.external?.en, 'en'],
+    ['actors.external.fr', content?.actors?.external?.fr, 'fr'],
+    ['risks.en', content?.risks?.en, 'en'],
+    ['risks.fr', content?.risks?.fr, 'fr'],
+  ]) {
+    if (!Array.isArray(arr) || arr.length === 0) continue;
+    for (const mk of anchorsLib.extractMarkers(JSON.stringify(arr)).filter((x) => x.type === 'field')) {
+      if (!anchorsLib.FIELD_INDEX.has(mk.raw)) errors.push(`${label}: unknown anchor target [${mk.raw}]`);
+      else if (!resolveNested(mk.raw, lg)) errors.push(`${label}: GHOST ANCHOR [${mk.raw}] — target field empty or missing`);
+    }
+  }
   // Scorecard anchors gate (spec §4): values present AND each axis carries >=1
   // resolvable anchor + rationale — WARNING-FIRST migration; ghost anchors hard-error.
   anchorsLib.validateScorecardAnchors(

@@ -335,6 +335,17 @@ function validateCountryFile(filePath) {
       warnings,
     });
   }
+  // Anchors inside the JSON-in-text layers (actors Layer 2, risk ratings —
+  // rework §8): ghost-check any [dot.path] markers in the raw blocks.
+  for (const k of ['actors_domestic_en', 'actors_domestic_fr', 'actors_external_en', 'actors_external_fr', 'risks_en', 'risks_fr']) {
+    const v = data[k];
+    if (typeof v !== 'string' || !v.trim()) continue;
+    const lang = k.slice(-2);
+    for (const mk of anchorsLib.extractMarkers(v).filter((x) => x.type === 'field')) {
+      if (!anchorsLib.FIELD_INDEX.has(mk.raw)) errors.push(`${k}: unknown anchor target [${mk.raw}]`);
+      else if (!resolveFlat(mk.raw, lang)) errors.push(`${k}: GHOST ANCHOR [${mk.raw}] — target field empty or missing`);
+    }
+  }
 
   // Situation — the verified event layer (template §4d), populated by the
   // DEDICATED situation pass as JSON-in-text threads. Legacy prose is accepted
