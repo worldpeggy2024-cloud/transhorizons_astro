@@ -6,100 +6,6 @@ scorecard_securityLoyalty: High
 scorecard_economicPressure: High
 scorecard_protestCapacity: Low
 scorecard_institutionalResilience: Med
-executiveSnapshot_en: >-
-  Regime type: Centralized authoritarian state under President Vladimir Putin.
-  Putin holds consolidated power as President (since 2000, with prime
-  ministerial interlude 2008–2012). Constitutional amendments (2020) enable
-  Putin to remain in power until 2036. No meaningful opposition; elections are
-  managed events [1] [2].
-
-  Political equilibrium: Putin's authority is unchallenged among the elite [3].
-  The 2022 Ukraine invasion consolidated nationalist sentiment and
-  military-security apparatus loyalty [4]. However, economic sanctions, military
-  losses, and brain drain create latent pressure [5]. Elite purges continue in
-  security services and military [6].
-
-  Economy: GDP ~$1.8 trillion nominal (2025), heavily dependent on hydrocarbon
-  exports (oil, gas) [7]. Sanctions have reduced growth to 1–2% annually; import
-  substitution efforts underway but inefficient [8]. Inflation elevated; ruble
-  volatile [9]. Military spending increased to ~6% of GDP [10].
-
-  Top 3 risks: (1) Ukraine war escalation and NATO confrontation [11]; (2)
-  Economic collapse from sustained sanctions [12]; (3) Elite succession crisis
-  if Putin incapacitated [13].
-
-  Watch items: Military modernization pace; NATO expansion; China relationship
-  deepening; internal security apparatus tensions [14].
-
-  Dependencies: Energy exports (60% of budget revenue); China as economic
-  lifeline; military-industrial complex loyalty [15].
-
-  Security: Nuclear-armed; large standing army (1.3M active) [16]; extensive
-  internal security apparatus (FSB, GRU) [17]. Border tensions with Ukraine,
-  NATO members, Georgia [18].
-
-  Diplomacy: Isolated from West; deepening ties with China, Iran, North Korea
-  [19]. BRICS member; seeks multipolar world order [20]. Confrontational stance
-  toward NATO and US [21].
-
-  Confidence: HIGH — Analysis based on official Russian sources, international
-  sanctions databases, military assessments, and credible news organizations
-  [22].
-
-  Outlook: Medium-term instability likely. Ukraine war remains unresolved;
-  sanctions persist; succession uncertainty looms. Putin's regime is resilient
-  but faces structural economic and demographic challenges [23].
-executiveSnapshot_fr: >-
-  Type de régime : État autoritaire centralisé sous la présidence de Vladimir
-  Poutine. Poutine détient le pouvoir consolidé en tant que président (depuis
-  2000, avec intermède de premier ministre 2008–2012). Les amendements
-  constitutionnels (2020) permettent à M. Poutine de rester au pouvoir jusqu'en
-  2036. Pas d'opposition significative ; les élections sont des événements gérés
-  [1] [2].
-
-  Équilibre politique : L'autorité de Poutine est incontestée parmi l'élite [3].
-  L'invasion de l'Ukraine en 2022 a consolidé le sentiment nationaliste et la
-  loyauté de l'appareil militaire-sécuritaire [4]. Cependant, les sanctions
-  économiques, les pertes militaires et l'exode des cerveaux créent une pression
-  latente [5]. Les purges d'élite se poursuivent dans les services de sécurité
-  et l'armée [6].
-
-  Économie : PIB ~1,8 billion de dollars nominaux (2025), fortement dépendant
-  des exportations d'hydrocarbures (pétrole, gaz) [7]. Les sanctions ont réduit
-  la croissance à 1–2 % annuellement ; les efforts de substitution des
-  importations sont en cours mais inefficaces [8]. L'inflation est élevée ; le
-  rouble est volatil [9]. Les dépenses militaires ont augmenté à ~6 % du PIB
-  [10].
-
-  Top 3 risques : (1) Escalade de la guerre en Ukraine et confrontation avec
-  l'OTAN [11] ; (2) Effondrement économique dû aux sanctions prolongées [12] ;
-  (3) Crise de succession d'élite si Poutine est incapacité [13].
-
-  Points de surveillance : Rythme de modernisation militaire ; expansion de
-  l'OTAN ; approfondissement de la relation avec la Chine ; tensions au sein de
-  l'appareil de sécurité interne [14].
-
-  Dépendances : Exportations d'énergie (60 % des revenus budgétaires) ; la Chine
-  comme bouée de sauvetage économique ; loyauté du complexe militaro-industriel
-  [15].
-
-  Sécurité : Armée nucléaire ; grande armée régulière (1,3M actifs) [16] ;
-  appareil de sécurité interne étendu (FSB, GRU) [17]. Tensions frontalières
-  avec l'Ukraine, les membres de l'OTAN, la Géorgie [18].
-
-  Diplomatie : Isolée de l'Occident ; approfondissement des liens avec la Chine,
-  l'Iran, la Corée du Nord [19]. Membre des BRICS ; cherche un ordre mondial
-  multipolaire [20]. Posture de confrontation envers l'OTAN et les États-Unis
-  [21].
-
-  Confiance : HAUTE — L'analyse est basée sur des sources officielles russes,
-  des bases de données de sanctions internationales, des évaluations militaires
-  et des organisations de presse crédibles [22].
-
-  Perspectives : L'instabilité à moyen terme est probable. La guerre en Ukraine
-  reste non résolue ; les sanctions persistent ; l'incertitude de succession se
-  profile. Le régime de Poutine est résilient mais fait face à des défis
-  économiques et démographiques structurels [23].
 political_powerStructure_en: >-
   President Vladimir Putin holds supreme executive authority as head of state
   and commander-in-chief of the armed forces [1] [2]. The Presidential
@@ -117,7 +23,7 @@ political_powerStructure_fr: >-
   politiques et gère la bureaucratie [24]. Le Conseil de sécurité, présidé par
   Poutine, coordonne la défense et la politique étrangère entre les agences de
   sécurité (FSB, GRU, ministère de la Défense) [3] [4]. L'Assemblée fédérale
-  (parlement bicaméral) est subordonnée ; la Douma d'État (chambre basse) est
+  (parlement bicaméral) est subordonnée; la Douma d'État (chambre basse) est
   dominée par le parti Russie unie au pouvoir et approuve automatiquement la
   législation exécutive [5]. Les gouverneurs régionaux sont nommés par Poutine
   et exercent une autonomie limitée [6].
@@ -152,8 +58,8 @@ political_shockAbsorbers_fr: >-
   dissidence par des arrestations, du harcèlement et de la violence [12]. Les
   revenus énergétiques fournissent des ressources pour le patronage et les
   dépenses militaires [13]. La dissuasion nucléaire empêche l'intervention
-  militaire externe [14]. Cependant, la redondance institutionnelle est limitée
-  ; la planification de la succession est opaque, créant une vulnérabilité si
+  militaire externe [14]. Cependant, la redondance institutionnelle est limitée;
+  la planification de la succession est opaque, créant une vulnérabilité si
   Poutine est incapacité [15].
 economy_macroReality_en: >-
   Russia's economy is heavily dependent on hydrocarbon exports (oil and natural
@@ -168,15 +74,15 @@ economy_macroReality_en: >-
   crowding out civilian investment [11].
 economy_macroReality_fr: >-
   L'économie russe dépend fortement des exportations d'hydrocarbures (pétrole et
-  gaz naturel), qui représentent ~60 % des revenus budgétaires fédéraux et 40 %
+  gaz naturel), qui représentent ~60 % des revenus budgétaires fédéraux et 40 %
   des exportations totales [7] [8]. Le PIB nominal s'élève à environ 1,8 billion
   de dollars (2025), ce qui fait de la Russie la 11ème plus grande économie du
   monde [25]. Cependant, les sanctions imposées après l'invasion de l'Ukraine en
-  2022 ont gravement entravé la croissance, la réduisant à 1–2 % annuellement
-  [9]. Le secteur manufacturier est sous-développé ; les efforts de substitution
+  2022 ont gravement entravé la croissance, la réduisant à 1–2 % annuellement
+  [9]. Le secteur manufacturier est sous-développé; les efforts de substitution
   des importations ont été inefficaces et coûteux [10]. L'inflation reste élevée
-  à 5–7 % annuellement ; le rouble s'est considérablement déprécié par rapport
-  aux devises fortes [26]. Les dépenses militaires ont augmenté à ~6 % du PIB,
+  à 5–7 % annuellement; le rouble s'est considérablement déprécié par rapport
+  aux devises fortes [26]. Les dépenses militaires ont augmenté à ~6 % du PIB,
   évinçant l'investissement civil [11].
 economy_externalVulnerability_en: >-
   Russia is highly vulnerable to commodity price fluctuations and sanctions
@@ -194,7 +100,7 @@ economy_externalVulnerability_fr: >-
   l'accès aux semi-conducteurs avancés et aux logiciels [13]. Les restrictions
   du système SWIFT bancaire ont forcé la Russie à développer des mécanismes de
   paiement alternatifs (SPFS, systèmes chinois) [14]. La fuite des capitaux et
-  l'exode des cerveaux (estimés à 500 000–1 million de Russes émigrés depuis
+  l'exode des cerveaux (estimés à 500 000–1 million de Russes émigrés depuis
   2022) réduisent le capital humain [27]. La dépendance à la Chine pour la
   technologie et le commerce a augmenté, créant une vulnérabilité asymétrique
   [15].
@@ -208,14 +114,14 @@ economy_politicalEconomy_en: >-
   system is underfunded; healthcare and education systems are deteriorating
   [19].
 economy_politicalEconomy_fr: >-
-  L'économie russe est caractérisée par le capitalisme d'État : les secteurs
+  L'économie russe est caractérisée par le capitalisme d'État : les secteurs
   majeurs (énergie, défense, banque, télécommunications) sont contrôlés par des
   entreprises d'État ou des oligarques liés à Poutine [16]. La corruption est
-  endémique ; l'indice de perception de la corruption de la Banque mondiale
+  endémique; l'indice de perception de la corruption de la Banque mondiale
   classe la Russie 137ème sur 180 pays [28]. Les syndicats sont faibles et
   cooptés par l'État [17]. La classe moyenne a rétrécit en raison des contrôles
   de capitaux et de la stagnation économique [18]. Le système de retraite est
-  sous-financé ; les systèmes de santé et d'éducation se détériorent [19].
+  sous-financé; les systèmes de santé et d'éducation se détériorent [19].
 security_internal_en: >-
   Internal security is maintained through a vast apparatus including the Federal
   Security Service (FSB), Interior Ministry (MVD), and Federal Protective
@@ -229,12 +135,12 @@ security_internal_en: >-
 security_internal_fr: >-
   La sécurité interne est maintenue par un vaste appareil incluant le Service
   fédéral de sécurité (FSB), le ministère de l'Intérieur (MVD) et le Service
-  fédéral de protection (FSO) [7] [17]. La surveillance est omniprésente ; le
+  fédéral de protection (FSO) [7] [17]. La surveillance est omniprésente; le
   FSB surveille l'opposition politique, la société civile et les médias
   indépendants [20]. La dissidence est réprimée par des arrestations, des
   allégations de torture et des meurtres extrajudiciaires [21]. L'invasion de
-  l'Ukraine en 2022 a déclenché une répression contre les militants anti-guerre
-  ; des milliers ont été arrêtés ou ont fui le pays [22]. Cependant, la
+  l'Ukraine en 2022 a déclenché une répression contre les militants anti-guerre;
+  des milliers ont été arrêtés ou ont fui le pays [22]. Cependant, la
   résistance organisée reste minimale en raison de l'efficacité de l'appareil de
   sécurité et de la fatigue publique [29].
 security_diplomacy_en: >-
@@ -251,14 +157,14 @@ security_diplomacy_en: >-
 security_diplomacy_fr: >-
   La politique étrangère russe est confrontationnelle envers l'Occident et
   transactionnelle envers les puissances non-occidentales [19] [20]. L'invasion
-  de l'Ukraine a fait de la Russie un paria dans les capitales occidentales ;
+  de l'Ukraine a fait de la Russie un paria dans les capitales occidentales;
   les sanctions et l'isolement diplomatique persistent [23]. La Russie a
   approfondi ses liens avec la Chine, l'Iran et la Corée du Nord, formant une
   coalition informelle anti-occidentale [24]. L'adhésion aux BRICS fournit un
   forum pour contester les institutions dominées par l'Occident [25]. La Russie
   cherche à restaurer sa sphère d'influence dans les anciens États soviétiques
   (Biélorussie, Kazakhstan, Moldavie) [26]. L'expansion de l'OTAN reste une
-  ligne rouge ; la Russie considère l'adhésion de l'Ukraine et de la Géorgie à
+  ligne rouge; la Russie considère l'adhésion de l'Ukraine et de la Géorgie à
   l'OTAN comme des menaces existentielles [27]. L'Arctique est une nouvelle
   frontière pour la concurrence stratégique russe avec les membres de l'OTAN
   [30].
@@ -349,83 +255,83 @@ actors_domestic_fr: |-
   [
     {
       "name": "Vladimir Poutine (Président)",
-      "interests": "Maintenir le pouvoir ; restaurer l'influence russe mondialement ; prévenir le changement de régime ; sécuriser la succession",
-      "resources": "Autorité constitutionnelle ; contrôle de l'appareil de sécurité ; médias d'État ; revenus énergétiques ; arsenal nucléaire",
-      "constraints": "Isolement international ; sanctions économiques ; pertes militaires en Ukraine ; incertitude de succession",
-      "likelyMoves": "Escalader le conflit en Ukraine si la situation militaire s'améliore ; resserrer la répression interne ; chercher un règlement négocié si les coûts deviennent insupportables",
-      "dealability": "Faible — Poutine est idéologiquement engagé envers l'hégémonie russe et peu susceptible de faire des concessions majeures"
+      "interests": "Maintenir le pouvoir; restaurer l'influence russe mondialement; prévenir le changement de régime; sécuriser la succession",
+      "resources": "Autorité constitutionnelle; contrôle de l'appareil de sécurité; médias d'État; revenus énergétiques; arsenal nucléaire",
+      "constraints": "Isolement international; sanctions économiques; pertes militaires en Ukraine; incertitude de succession",
+      "likelyMoves": "Escalader le conflit en Ukraine si la situation militaire s'améliore; resserrer la répression interne; chercher un règlement négocié si les coûts deviennent insupportables",
+      "dealability": "Faible — Poutine est idéologiquement engagé envers l'hégémonie russe et peu susceptible de faire des concessions majeures"
     },
     {
       "name": "Sergey Shoygu (Ministre de la Défense)",
-      "interests": "Maintenir le budget militaire ; développer les capacités militaires ; préserver le complexe militaro-industriel",
-      "resources": "Contrôle des forces armées ; réseaux de patronage de l'industrie de défense ; confiance de Poutine",
-      "constraints": "Pertes militaires en Ukraine ; pénuries d'équipement ; sanctions internationales sur le secteur de la défense",
-      "likelyMoves": "Plaider pour des dépenses militaires continues ; préconiser l'escalade en Ukraine ; gérer le moral militaire",
-      "dealability": "Moyen — Shoygu est pragmatique et peut soutenir un règlement négocié si la situation militaire se détériore"
+      "interests": "Maintenir le budget militaire; développer les capacités militaires; préserver le complexe militaro-industriel",
+      "resources": "Contrôle des forces armées; réseaux de patronage de l'industrie de défense; confiance de Poutine",
+      "constraints": "Pertes militaires en Ukraine; pénuries d'équipement; sanctions internationales sur le secteur de la défense",
+      "likelyMoves": "Plaider pour des dépenses militaires continues; préconiser l'escalade en Ukraine; gérer le moral militaire",
+      "dealability": "Moyen — Shoygu est pragmatique et peut soutenir un règlement négocié si la situation militaire se détériore"
     },
     {
       "name": "Mikhail Mishustin (Premier ministre)",
-      "interests": "Gérer l'économie ; mettre en œuvre la substitution des importations ; maintenir la stabilité budgétaire",
-      "resources": "Contrôle de l'appareil gouvernemental ; leviers de politique économique ; expertise technocratique",
-      "constraints": "Sanctions limitant la croissance économique ; fuite des capitaux ; inflation ; autonomie limitée de Poutine",
-      "likelyMoves": "Poursuivre les politiques de substitution des importations ; chercher des partenaires commerciaux alternatifs ; gérer l'inflation",
-      "dealability": "Moyen — Mishustin est un technocrate qui peut soutenir des politiques économiques pragmatiques"
+      "interests": "Gérer l'économie; mettre en œuvre la substitution des importations; maintenir la stabilité budgétaire",
+      "resources": "Contrôle de l'appareil gouvernemental; leviers de politique économique; expertise technocratique",
+      "constraints": "Sanctions limitant la croissance économique; fuite des capitaux; inflation; autonomie limitée de Poutine",
+      "likelyMoves": "Poursuivre les politiques de substitution des importations; chercher des partenaires commerciaux alternatifs; gérer l'inflation",
+      "dealability": "Moyen — Mishustin est un technocrate qui peut soutenir des politiques économiques pragmatiques"
     },
     {
       "name": "Sergey Naryshkin (Directeur du FSB)",
-      "interests": "Élargir le pouvoir du FSB ; maintenir la sécurité interne ; prévenir la dissidence",
-      "resources": "Contrôle de l'appareil de renseignement ; capacités de surveillance ; loyauté des forces de sécurité",
-      "constraints": "Sanctions internationales ; ressources limitées pour les opérations à l'étranger",
-      "likelyMoves": "Intensifier la surveillance intérieure ; réprimer l'opposition ; mener des opérations de renseignement étrangères",
-      "dealability": "Faible — Naryshkin est idéologiquement engagé envers les intérêts de sécurité russes"
+      "interests": "Élargir le pouvoir du FSB; maintenir la sécurité interne; prévenir la dissidence",
+      "resources": "Contrôle de l'appareil de renseignement; capacités de surveillance; loyauté des forces de sécurité",
+      "constraints": "Sanctions internationales; ressources limitées pour les opérations à l'étranger",
+      "likelyMoves": "Intensifier la surveillance intérieure; réprimer l'opposition; mener des opérations de renseignement étrangères",
+      "dealability": "Faible — Naryshkin est idéologiquement engagé envers les intérêts de sécurité russes"
     },
     {
       "name": "Yuri Kovalchuk (Oligarque, allié de Poutine)",
-      "interests": "Maintenir l'empire commercial ; préserver l'accès à Poutine ; éviter les sanctions",
-      "resources": "Contrôle des grandes banques et médias ; richesse ; connexions internationales",
-      "constraints": "Sanctions occidentales ; restrictions sur la fuite des capitaux ; dépendance à la faveur de Poutine",
-      "likelyMoves": "Plaider pour l'allègement des sanctions ; maintenir le soutien médiatique à Poutine ; diversifier les actifs",
-      "dealability": "Moyen — Kovalchuk est pragmatique et peut soutenir des politiques réduisant la pression des sanctions"
+      "interests": "Maintenir l'empire commercial; préserver l'accès à Poutine; éviter les sanctions",
+      "resources": "Contrôle des grandes banques et médias; richesse; connexions internationales",
+      "constraints": "Sanctions occidentales; restrictions sur la fuite des capitaux; dépendance à la faveur de Poutine",
+      "likelyMoves": "Plaider pour l'allègement des sanctions; maintenir le soutien médiatique à Poutine; diversifier les actifs",
+      "dealability": "Moyen — Kovalchuk est pragmatique et peut soutenir des politiques réduisant la pression des sanctions"
     },
     {
       "name": "Gennady Timchenko (Oligarque, secteur énergétique)",
-      "interests": "Maintenir l'entreprise énergétique ; éviter les sanctions ; préserver les bénéfices",
-      "resources": "Contrôle des grandes entreprises énergétiques ; réseaux commerciaux internationaux ; richesse",
-      "constraints": "Sanctions occidentales sur le secteur énergétique ; marchés d'exportation réduits ; volatilité des prix",
-      "likelyMoves": "Chercher des marchés alternatifs (Chine, Inde) ; plaider pour l'allègement des sanctions ; investir dans la substitution des importations",
-      "dealability": "Moyen-Élevé — Timchenko est axé sur les affaires et peut soutenir des politiques réduisant la pression économique"
+      "interests": "Maintenir l'entreprise énergétique; éviter les sanctions; préserver les bénéfices",
+      "resources": "Contrôle des grandes entreprises énergétiques; réseaux commerciaux internationaux; richesse",
+      "constraints": "Sanctions occidentales sur le secteur énergétique; marchés d'exportation réduits; volatilité des prix",
+      "likelyMoves": "Chercher des marchés alternatifs (Chine, Inde); plaider pour l'allègement des sanctions; investir dans la substitution des importations",
+      "dealability": "Moyen-Élevé — Timchenko est axé sur les affaires et peut soutenir des politiques réduisant la pression économique"
     },
     {
       "name": "Alexei Navalny (Chef de l'opposition, emprisonné)",
-      "interests": "Renverser le régime de Poutine ; établir une gouvernance démocratique ; anti-corruption",
-      "resources": "Soutien international ; base de followers sur les réseaux sociaux ; autorité morale parmi l'opposition",
-      "constraints": "Emprisonné ; capacité limitée à s'organiser ; opposition de l'appareil de sécurité ; soutien public limité",
-      "likelyMoves": "Continuer la messagerie anti-corruption depuis la prison ; inspirer l'opposition ; chercher le soutien international",
-      "dealability": "Faible — Navalny est irréconciliable avec le régime de Poutine ; peu susceptible de négocier"
+      "interests": "Renverser le régime de Poutine; établir une gouvernance démocratique; anti-corruption",
+      "resources": "Soutien international; base de followers sur les réseaux sociaux; autorité morale parmi l'opposition",
+      "constraints": "Emprisonné; capacité limitée à s'organiser; opposition de l'appareil de sécurité; soutien public limité",
+      "likelyMoves": "Continuer la messagerie anti-corruption depuis la prison; inspirer l'opposition; chercher le soutien international",
+      "dealability": "Faible — Navalny est irréconciliable avec le régime de Poutine; peu susceptible de négocier"
     },
     {
       "name": "Ksenia Sobchak (Figure de l'opposition, personnalité de télévision)",
-      "interests": "Promouvoir les réformes libérales ; défier l'autorité de Poutine ; protéger les médias indépendants",
-      "resources": "Plateforme médiatique ; connexions internationales ; reconnaissance publique ; base de followers sur les réseaux sociaux",
-      "constraints": "Pression de l'appareil de sécurité ; pouvoir politique limité ; risque d'arrestation ou d'exil",
-      "likelyMoves": "Continuer la critique médiatique du régime ; chercher le soutien international ; maintenir la visibilité de l'opposition",
-      "dealability": "Faible — Sobchak est engagée envers la réforme démocratique et peu susceptible de compromettre avec le régime"
+      "interests": "Promouvoir les réformes libérales; défier l'autorité de Poutine; protéger les médias indépendants",
+      "resources": "Plateforme médiatique; connexions internationales; reconnaissance publique; base de followers sur les réseaux sociaux",
+      "constraints": "Pression de l'appareil de sécurité; pouvoir politique limité; risque d'arrestation ou d'exil",
+      "likelyMoves": "Continuer la critique médiatique du régime; chercher le soutien international; maintenir la visibilité de l'opposition",
+      "dealability": "Faible — Sobchak est engagée envers la réforme démocratique et peu susceptible de compromettre avec le régime"
     },
     {
       "name": "Église orthodoxe russe (Patriarche Kirill)",
-      "interests": "Maintenir l'influence de l'Église ; soutenir le régime de Poutine ; élargir l'autorité religieuse",
-      "resources": "Autorité morale ; réseau d'Église étendu ; soutien de Poutine ; plateforme médiatique",
-      "constraints": "Critique internationale ; pouvoir politique limité ; dépendance du soutien d'État",
-      "likelyMoves": "Fournir la légitimité morale à Poutine ; soutenir le récit nationaliste ; élargir l'influence de l'Église",
-      "dealability": "Faible — L'Église est alignée avec le régime de Poutine et peu susceptible de le défier"
+      "interests": "Maintenir l'influence de l'Église; soutenir le régime de Poutine; élargir l'autorité religieuse",
+      "resources": "Autorité morale; réseau d'Église étendu; soutien de Poutine; plateforme médiatique",
+      "constraints": "Critique internationale; pouvoir politique limité; dépendance du soutien d'État",
+      "likelyMoves": "Fournir la légitimité morale à Poutine; soutenir le récit nationaliste; élargir l'influence de l'Église",
+      "dealability": "Faible — L'Église est alignée avec le régime de Poutine et peu susceptible de le défier"
     },
     {
       "name": "Complexe militaro-industriel russe",
-      "interests": "Maintenir les dépenses militaires ; élargir les contrats de défense ; préserver la capacité technologique",
-      "resources": "Contrôle de la production d'armes ; expertise technique ; contrats d'État ; soutien de Poutine",
-      "constraints": "Sanctions sur le secteur de la défense ; restrictions sur l'importation de technologie ; exode des cerveaux",
-      "likelyMoves": "Plaider pour des dépenses militaires continues ; développer des technologies indigènes ; chercher des fournisseurs alternatifs",
-      "dealability": "Faible — Le complexe militaro-industriel est idéologiquement engagé envers la puissance militaire russe"
+      "interests": "Maintenir les dépenses militaires; élargir les contrats de défense; préserver la capacité technologique",
+      "resources": "Contrôle de la production d'armes; expertise technique; contrats d'État; soutien de Poutine",
+      "constraints": "Sanctions sur le secteur de la défense; restrictions sur l'importation de technologie; exode des cerveaux",
+      "likelyMoves": "Plaider pour des dépenses militaires continues; développer des technologies indigènes; chercher des fournisseurs alternatifs",
+      "dealability": "Faible — Le complexe militaro-industriel est idéologiquement engagé envers la puissance militaire russe"
     }
   ]
 actors_external_en: |-
@@ -475,43 +381,43 @@ actors_external_fr: |-
   [
     {
       "name": "Chine",
-      "interests": "Élargir l'influence économique ; sécuriser l'approvisionnement énergétique ; contrebalancer la puissance occidentale ; maintenir la stabilité en Asie centrale",
-      "resources": "Grande économie ; capacités technologiques ; capital ; réseaux commerciaux alternatifs",
-      "constraints": "Préoccupations concernant l'instabilité russe ; concurrence pour l'influence en Asie centrale ; volonté limitée de défier directement l'Occident",
-      "likelyMoves": "Augmenter les achats d'énergie à la Russie ; fournir un soutien technologique ; maintenir le partenariat stratégique ; éviter la confrontation directe avec l'Occident",
-      "dealability": "Moyen — La Chine est pragmatique et cherche un partenariat stable avec la Russie mais ne sacrifiera pas ses propres intérêts"
+      "interests": "Élargir l'influence économique; sécuriser l'approvisionnement énergétique; contrebalancer la puissance occidentale; maintenir la stabilité en Asie centrale",
+      "resources": "Grande économie; capacités technologiques; capital; réseaux commerciaux alternatifs",
+      "constraints": "Préoccupations concernant l'instabilité russe; concurrence pour l'influence en Asie centrale; volonté limitée de défier directement l'Occident",
+      "likelyMoves": "Augmenter les achats d'énergie à la Russie; fournir un soutien technologique; maintenir le partenariat stratégique; éviter la confrontation directe avec l'Occident",
+      "dealability": "Moyen — La Chine est pragmatique et cherche un partenariat stable avec la Russie mais ne sacrifiera pas ses propres intérêts"
     },
     {
       "name": "États-Unis",
-      "interests": "Contenir l'influence russe ; soutenir l'Ukraine ; maintenir la cohésion de l'OTAN ; prévenir l'escalade nucléaire",
-      "resources": "Supériorité militaire ; puissance économique ; alliance OTAN ; leadership technologique",
-      "constraints": "Risque d'escalade nucléaire ; divisions politiques internes ; priorités concurrentes (Chine, Moyen-Orient)",
-      "likelyMoves": "Continuer les sanctions ; fournir une aide militaire à l'Ukraine ; renforcer l'OTAN ; dissuader l'agression russe",
-      "dealability": "Faible — Les États-Unis sont engagés à contenir la Russie et peu susceptibles de négocier des concessions majeures"
+      "interests": "Contenir l'influence russe; soutenir l'Ukraine; maintenir la cohésion de l'OTAN; prévenir l'escalade nucléaire",
+      "resources": "Supériorité militaire; puissance économique; alliance OTAN; leadership technologique",
+      "constraints": "Risque d'escalade nucléaire; divisions politiques internes; priorités concurrentes (Chine, Moyen-Orient)",
+      "likelyMoves": "Continuer les sanctions; fournir une aide militaire à l'Ukraine; renforcer l'OTAN; dissuader l'agression russe",
+      "dealability": "Faible — Les États-Unis sont engagés à contenir la Russie et peu susceptibles de négocier des concessions majeures"
     },
     {
       "name": "Union européenne",
-      "interests": "Réduire la dépendance énergétique à la Russie ; soutenir l'Ukraine ; maintenir la sécurité ; gérer la crise des réfugiés",
-      "resources": "Puissance économique ; alternatives énergétiques ; membres de l'OTAN ; capacités technologiques",
-      "constraints": "Préoccupations concernant la sécurité énergétique ; interdépendance économique héritée ; divisions politiques entre les membres",
-      "likelyMoves": "Maintenir les sanctions ; diversifier l'approvisionnement énergétique ; soutenir l'Ukraine ; renforcer le flanc oriental de l'OTAN",
-      "dealability": "Faible-Moyen — L'UE est divisée mais généralement engagée à contenir la Russie ; certains membres peuvent chercher un règlement négocié"
+      "interests": "Réduire la dépendance énergétique à la Russie; soutenir l'Ukraine; maintenir la sécurité; gérer la crise des réfugiés",
+      "resources": "Puissance économique; alternatives énergétiques; membres de l'OTAN; capacités technologiques",
+      "constraints": "Préoccupations concernant la sécurité énergétique; interdépendance économique héritée; divisions politiques entre les membres",
+      "likelyMoves": "Maintenir les sanctions; diversifier l'approvisionnement énergétique; soutenir l'Ukraine; renforcer le flanc oriental de l'OTAN",
+      "dealability": "Faible-Moyen — L'UE est divisée mais généralement engagée à contenir la Russie; certains membres peuvent chercher un règlement négocié"
     },
     {
       "name": "Ukraine",
-      "interests": "Regagner l'intégrité territoriale ; prévenir la domination russe ; établir des garanties de sécurité ; reconstruire l'économie",
-      "resources": "Aide militaire de l'Occident ; connaissance territoriale ; mobilisation de la population ; soutien international",
-      "constraints": "Infériorité militaire ; dévastation économique ; déplacement de la population ; ressources limitées",
-      "likelyMoves": "Continuer la résistance militaire ; chercher l'adhésion à l'OTAN ; poursuivre les enquêtes sur les crimes de guerre ; reconstruire",
-      "dealability": "Faible — L'Ukraine est engagée envers l'intégrité territoriale et peu susceptible d'accepter les conditions russes"
+      "interests": "Regagner l'intégrité territoriale; prévenir la domination russe; établir des garanties de sécurité; reconstruire l'économie",
+      "resources": "Aide militaire de l'Occident; connaissance territoriale; mobilisation de la population; soutien international",
+      "constraints": "Infériorité militaire; dévastation économique; déplacement de la population; ressources limitées",
+      "likelyMoves": "Continuer la résistance militaire; chercher l'adhésion à l'OTAN; poursuivre les enquêtes sur les crimes de guerre; reconstruire",
+      "dealability": "Faible — L'Ukraine est engagée envers l'intégrité territoriale et peu susceptible d'accepter les conditions russes"
     },
     {
       "name": "OTAN",
-      "interests": "Dissuader l'agression russe ; élargir l'adhésion ; renforcer les membres de l'est ; maintenir la cohésion de l'alliance",
-      "resources": "Supériorité militaire ; armes nucléaires ; technologie avancée ; engagement de défense collective",
-      "constraints": "Risque d'escalade avec une puissance nucléaire ; divisions politiques dans les États membres ; coûts économiques",
-      "likelyMoves": "Renforcer le flanc oriental ; élargir l'adhésion ; fournir une aide militaire à l'Ukraine ; mener des exercices",
-      "dealability": "Faible — L'OTAN est engagée à la défense collective et peu susceptible de négocier des concessions majeures à la Russie"
+      "interests": "Dissuader l'agression russe; élargir l'adhésion; renforcer les membres de l'est; maintenir la cohésion de l'alliance",
+      "resources": "Supériorité militaire; armes nucléaires; technologie avancée; engagement de défense collective",
+      "constraints": "Risque d'escalade avec une puissance nucléaire; divisions politiques dans les États membres; coûts économiques",
+      "likelyMoves": "Renforcer le flanc oriental; élargir l'adhésion; fournir une aide militaire à l'Ukraine; mener des exercices",
+      "dealability": "Faible — L'OTAN est engagée à la défense collective et peu susceptible de négocier des concessions majeures à la Russie"
     }
   ]
 risks_en: |-
@@ -611,93 +517,93 @@ risks_fr: |-
   [
     {
       "title": "Escalade de la guerre en Ukraine et confrontation avec l'OTAN",
-      "trigger": "Offensive militaire russe en Ukraine ; intervention militaire de l'OTAN ; escalade du discours nucléaire",
+      "trigger": "Offensive militaire russe en Ukraine; intervention militaire de l'OTAN; escalade du discours nucléaire",
       "probability": "High",
       "impact": "High",
       "timeHorizon": "0–12 months",
-      "leadingIndicators": "Mobilisation militaire russe ; exercices militaires de l'OTAN près de la frontière russe ; discours inflammatoire de Moscou ; avancées militaires ukrainiennes",
-      "mitigants": "Négociations diplomatiques ; mesures de confiance ; canaux de communication militaire à militaire ; médiation internationale"
+      "leadingIndicators": "Mobilisation militaire russe; exercices militaires de l'OTAN près de la frontière russe; discours inflammatoire de Moscou; avancées militaires ukrainiennes",
+      "mitigants": "Négociations diplomatiques; mesures de confiance; canaux de communication militaire à militaire; médiation internationale"
     },
     {
       "title": "Effondrement économique dû aux sanctions prolongées",
-      "trigger": "Nouvelles sanctions occidentales ; effondrement des prix de l'énergie ; accélération de la fuite des capitaux ; crise monétaire",
+      "trigger": "Nouvelles sanctions occidentales; effondrement des prix de l'énergie; accélération de la fuite des capitaux; crise monétaire",
       "probability": "High",
       "impact": "High",
       "timeHorizon": "12–24 months",
-      "leadingIndicators": "Dépréciation du rouble ; pic d'inflation ; déficits budgétaires gouvernementaux ; faillites d'entreprises ; augmentation du chômage",
-      "mitigants": "Négociations d'allègement des sanctions ; partenaires commerciaux alternatifs (Chine, Inde) ; succès de la substitution des importations ; ajustement budgétaire"
+      "leadingIndicators": "Dépréciation du rouble; pic d'inflation; déficits budgétaires gouvernementaux; faillites d'entreprises; augmentation du chômage",
+      "mitigants": "Négociations d'allègement des sanctions; partenaires commerciaux alternatifs (Chine, Inde); succès de la substitution des importations; ajustement budgétaire"
     },
     {
       "title": "Crise de succession d'élite",
-      "trigger": "Incapacité de Poutine (maladie, accident, assassinat) ; lutte de pouvoir parmi les élites ; fragmentation de l'appareil de sécurité",
+      "trigger": "Incapacité de Poutine (maladie, accident, assassinat); lutte de pouvoir parmi les élites; fragmentation de l'appareil de sécurité",
       "probability": "Med",
       "impact": "High",
       "timeHorizon": "12–36 months",
-      "leadingIndicators": "Rumeurs sur la santé de Poutine ; purges d'élite ; tensions au sein de l'appareil de sécurité ; conflits militaires-civils ; changements constitutionnels",
-      "mitigants": "Plan de succession clair ; stabilité institutionnelle ; consensus d'élite ; reconnaissance internationale du successeur"
+      "leadingIndicators": "Rumeurs sur la santé de Poutine; purges d'élite; tensions au sein de l'appareil de sécurité; conflits militaires-civils; changements constitutionnels",
+      "mitigants": "Plan de succession clair; stabilité institutionnelle; consensus d'élite; reconnaissance internationale du successeur"
     },
     {
       "title": "Dissidence interne et mouvement de protestation",
-      "trigger": "Difficultés économiques ; pertes militaires ; sentiment anti-guerre ; changement générationnel ; mobilisation sur les réseaux sociaux",
+      "trigger": "Difficultés économiques; pertes militaires; sentiment anti-guerre; changement générationnel; mobilisation sur les réseaux sociaux",
       "probability": "Med",
       "impact": "Med",
       "timeHorizon": "6–18 months",
-      "leadingIndicators": "Activité de protestation ; augmentation de l'émigration ; critique sur les réseaux sociaux ; désengagement des jeunes ; mécontentement régional",
-      "mitigants": "Amélioration économique ; succès militaire ; répression efficace ; mobilisation nationaliste ; contrôle des médias"
+      "leadingIndicators": "Activité de protestation; augmentation de l'émigration; critique sur les réseaux sociaux; désengagement des jeunes; mécontentement régional",
+      "mitigants": "Amélioration économique; succès militaire; répression efficace; mobilisation nationaliste; contrôle des médias"
     },
     {
       "title": "Défaite militaire en Ukraine",
-      "trigger": "Contre-offensive ukrainienne ; escalade du soutien militaire de l'OTAN ; épuisement militaire russe ; effondrement du moral",
+      "trigger": "Contre-offensive ukrainienne; escalade du soutien militaire de l'OTAN; épuisement militaire russe; effondrement du moral",
       "probability": "Med",
       "impact": "High",
       "timeHorizon": "6–24 months",
-      "leadingIndicators": "Pertes territoriales ; taux de pertes ; pénuries d'équipement ; taux de désertion ; changements de direction militaire",
-      "mitigants": "Mobilisation militaire ; production d'armes ; soutien chinois ; règlement négocié ; retraite stratégique"
+      "leadingIndicators": "Pertes territoriales; taux de pertes; pénuries d'équipement; taux de désertion; changements de direction militaire",
+      "mitigants": "Mobilisation militaire; production d'armes; soutien chinois; règlement négocié; retraite stratégique"
     },
     {
       "title": "Détérioration de la relation avec la Chine",
-      "trigger": "Demandes chinoises de concessions ; faiblesse russe ; intérêts concurrents en Asie centrale ; pivot chinois vers l'Occident",
+      "trigger": "Demandes chinoises de concessions; faiblesse russe; intérêts concurrents en Asie centrale; pivot chinois vers l'Occident",
       "probability": "Med",
       "impact": "High",
       "timeHorizon": "12–36 months",
-      "leadingIndicators": "Différends commerciaux ; demandes chinoises de concessions ; faiblesse militaire russe ; rapprochement diplomatique chinois avec l'Occident",
-      "mitigants": "Maintenir le partenariat stratégique ; offrir des concessions à la Chine ; diversifier les partenariats ; démontrer la force"
+      "leadingIndicators": "Différends commerciaux; demandes chinoises de concessions; faiblesse militaire russe; rapprochement diplomatique chinois avec l'Occident",
+      "mitigants": "Maintenir le partenariat stratégique; offrir des concessions à la Chine; diversifier les partenariats; démontrer la force"
     },
     {
       "title": "Expansion de l'OTAN à l'Ukraine et à la Géorgie",
-      "trigger": "Adhésion de l'Ukraine à l'OTAN ; adhésion de la Géorgie à l'OTAN ; engagement occidental envers l'expansion ; faiblesse militaire russe",
+      "trigger": "Adhésion de l'Ukraine à l'OTAN; adhésion de la Géorgie à l'OTAN; engagement occidental envers l'expansion; faiblesse militaire russe",
       "probability": "Med",
       "impact": "High",
       "timeHorizon": "12–36 months",
-      "leadingIndicators": "Discussions sur l'adhésion à l'OTAN ; soutien militaire occidental ; capacité militaire ukrainienne ; faiblesse militaire russe",
-      "mitigants": "Dissuasion militaire ; négociations diplomatiques ; accords de sphères d'influence ; ambiguïté stratégique"
+      "leadingIndicators": "Discussions sur l'adhésion à l'OTAN; soutien militaire occidental; capacité militaire ukrainienne; faiblesse militaire russe",
+      "mitigants": "Dissuasion militaire; négociations diplomatiques; accords de sphères d'influence; ambiguïté stratégique"
     },
     {
       "title": "Escalade des cyberattaques et de la guerre de l'information",
-      "trigger": "Opérations de cyberguerre occidentales contre les infrastructures russes ; cyberattaques russes contre les cibles occidentales ; escalade de la guerre de l'information",
+      "trigger": "Opérations de cyberguerre occidentales contre les infrastructures russes; cyberattaques russes contre les cibles occidentales; escalade de la guerre de l'information",
       "probability": "High",
       "impact": "Med",
       "timeHorizon": "0–12 months",
-      "leadingIndicators": "Incidents de cyberguerre ; perturbations des infrastructures ; campagnes de guerre de l'information ; différends d'attribution",
-      "mitigants": "Améliorations de la défense informatique ; normes internationales ; mécanismes d'attribution ; contrôle de l'escalade"
+      "leadingIndicators": "Incidents de cyberguerre; perturbations des infrastructures; campagnes de guerre de l'information; différends d'attribution",
+      "mitigants": "Améliorations de la défense informatique; normes internationales; mécanismes d'attribution; contrôle de l'escalade"
     },
     {
       "title": "Instabilité régionale dans les anciens États soviétiques",
-      "trigger": "Troubles en Biélorussie ; conflit en Moldavie ; instabilité au Kazakhstan ; tentatives d'intervention russe",
+      "trigger": "Troubles en Biélorussie; conflit en Moldavie; instabilité au Kazakhstan; tentatives d'intervention russe",
       "probability": "Med",
       "impact": "Med",
       "timeHorizon": "6–24 months",
-      "leadingIndicators": "Protestations régionales ; mouvements militaires russes ; présence militaire de l'OTAN ; changements de direction régionale",
-      "mitigants": "Stabilité régionale ; médiation internationale ; dissuasion de l'OTAN ; coopération régionale"
+      "leadingIndicators": "Protestations régionales; mouvements militaires russes; présence militaire de l'OTAN; changements de direction régionale",
+      "mitigants": "Stabilité régionale; médiation internationale; dissuasion de l'OTAN; coopération régionale"
     },
     {
       "title": "Concurrence arctique et instabilité induite par le climat",
-      "trigger": "Concurrence pour les ressources arctiques ; impacts du changement climatique ; présence militaire de l'OTAN en Arctique ; modernisation militaire russe",
+      "trigger": "Concurrence pour les ressources arctiques; impacts du changement climatique; présence militaire de l'OTAN en Arctique; modernisation militaire russe",
       "probability": "Med",
       "impact": "Med",
       "timeHorizon": "12–36 months",
-      "leadingIndicators": "Découvertes de ressources arctiques ; exercices militaires arctiques de l'OTAN ; déploiements militaires russes ; impacts climatiques",
-      "mitigants": "Gouvernance arctique internationale ; adaptation climatique ; retenue militaire ; accords de coopération"
+      "leadingIndicators": "Découvertes de ressources arctiques; exercices militaires arctiques de l'OTAN; déploiements militaires russes; impacts climatiques",
+      "mitigants": "Gouvernance arctique internationale; adaptation climatique; retenue militaire; accords de coopération"
     }
   ]
 sources: |-

@@ -6,108 +6,6 @@ scorecard_securityLoyalty: High
 scorecard_economicPressure: High
 scorecard_protestCapacity: High
 scorecard_institutionalResilience: Med
-executiveSnapshot_en: >-
-  Regime type: Semi-presidential republic (Fifth Republic) [1]; power
-  concentrated in the presidency, but Macron's authority is eroding as his
-  second and final term approaches its end in 2027 [2].
-
-  Political equilibrium: PM Sébastien Lecornu (appointed Sept 2025) governs
-  without a parliamentary majority [2]. The National Assembly remains fragmented
-  across three blocs — centrist (Renaissance/Horizons/Modem), far-right
-  (National Rally), and a fractured left (Socialists, Greens, LFI) [2]. No
-  stable coalition is possible [2].
-
-  Economic model: Advanced services economy (finance, luxury, aerospace,
-  tourism, agriculture) [3] [4]; sixth-largest GDP globally [3]. Heavy state
-  spending (~57% of GDP) funds an extensive welfare system [3].
-
-  Top 3 risks (6–18 months): (1) Far-right victory in 2027 presidential election
-  destabilizing EU integration [2]; (2) Fiscal crisis if deficit reduction
-  stalls and bond markets react [3]; (3) Social unrest from energy price
-  inflation linked to Iran conflict and oil crisis [5].
-
-  Top 3 watch items (4–12 weeks): (1) Spring inflation spike from oil prices —
-  INSEE forecasts sharp rise [3]; (2) Le Pen's legal situation and its impact on
-  her 2027 candidacy [6]; (3) Government response to energy crisis — will
-  emergency subsidies be reintroduced? [3].
-
-  External dependencies: Energy imports (oil, gas — France generates ~70% of
-  electricity from nuclear but relies on imported hydrocarbons for
-  transport/heating) [4]. EU single market for trade [3]. NATO alliance for
-  collective defense, though France maintains independent nuclear deterrent [7].
-
-  Security posture: No active insurgency [8]. Elevated terrorism threat level
-  maintained since 2015 [8]. Strong military (largest in EU, nuclear-armed) [7].
-  New "advanced deterrence" doctrine extending nuclear umbrella to European
-  allies announced March 2026 [7].
-
-  Diplomatic orientation: Core EU member, UN Security Council permanent seat
-  [1], NATO ally but with Gaullist tradition of strategic autonomy [7].
-  Distancing from US on Iran/Middle East policy (refused overflight rights for
-  US military flights to Israel) [9]. Pushing independent Strait of Hormuz
-  security coalition [9].
-
-  Data confidence: HIGH — France has excellent institutional data (INSEE, Banque
-  de France, Court of Auditors) [3] and a free press [10].
-
-  Baseline outlook: Managed instability through 2027 [2]. The political system
-  will muddle through without a majority, deficit reduction will be slow but not
-  catastrophic, and the 2027 presidential election will be the decisive moment —
-  with a real possibility of a far-right presidency for the first time [2].
-executiveSnapshot_fr: >-
-  Type de régime : République semi-présidentielle (Ve République) [1] ; le
-  pouvoir est concentré dans la présidence, mais l'autorité d'Emmanuel Macron
-  s'érode à l'approche de la fin de son second et dernier mandat en 2027 [2].
-
-  Équilibre politique : Le PM Sébastien Lecornu (nommé sept. 2025) gouverne sans
-  majorité parlementaire [2]. L'Assemblée nationale reste fragmentée en trois
-  blocs — centriste (Renaissance/Horizons/Modem), extrême droite (RN), et une
-  gauche fracturée (PS, Verts, LFI) [2]. Aucune coalition stable n'est possible
-  [2].
-
-  Modèle économique : Économie de services avancée (finance, luxe, aéronautique,
-  tourisme, agriculture) [3] [4] ; 6e PIB mondial [3]. Dépenses publiques
-  élevées (~57 % du PIB) finançant un système social étendu [3].
-
-  Top 3 risques (6–18 mois) : (1) Victoire de l'extrême droite en 2027
-  déstabilisant l'intégration européenne [2] ; (2) Crise budgétaire si la
-  réduction du déficit stagne et que les marchés obligataires réagissent [3] ;
-  (3) Troubles sociaux liés à l'inflation énergétique causée par le conflit
-  iranien [5].
-
-  Top 3 points de surveillance (4–12 semaines) : (1) Pic d'inflation printanier
-  lié aux prix du pétrole — l'INSEE prévoit une hausse marquée [3] ; (2)
-  Situation juridique de Le Pen et impact sur sa candidature 2027 [6] ; (3)
-  Réponse gouvernementale à la crise énergétique — retour des aides d'urgence ?
-  [3].
-
-  Dépendances extérieures : Importations énergétiques (pétrole, gaz — la France
-  produit ~70 % de son électricité par le nucléaire mais dépend des
-  hydrocarbures importés pour le transport/chauffage) [4]. Marché unique UE pour
-  le commerce [3]. Alliance OTAN pour la défense collective, avec dissuasion
-  nucléaire indépendante [7].
-
-  Posture sécuritaire : Pas d'insurrection active [8]. Niveau de menace
-  terroriste élevé maintenu depuis 2015 [8]. Armée puissante (la plus importante
-  de l'UE, dotée de l'arme nucléaire) [7]. Nouvelle doctrine de « dissuasion
-  avancée » étendant le parapluie nucléaire aux alliés européens annoncée en
-  mars 2026 [7].
-
-  Orientation diplomatique : Membre fondateur de l'UE [1], siège permanent au
-  Conseil de sécurité de l'ONU [1], allié OTAN mais avec une tradition gaulliste
-  d'autonomie stratégique [7]. Distanciation des États-Unis sur l'Iran (refus de
-  survol pour les vols militaires US vers Israël) [9]. Coalition indépendante
-  pour la sécurité du détroit d'Ormuz [9].
-
-  Confiance dans les données : ÉLEVÉE — la France dispose d'excellentes données
-  institutionnelles (INSEE, Banque de France, Cour des comptes) [3] et d'une
-  presse libre [10].
-
-  Perspective de référence : Instabilité gérée jusqu'en 2027 [2]. Le système
-  politique fonctionnera sans majorité, la réduction du déficit sera lente mais
-  pas catastrophique, et l'élection présidentielle de 2027 sera le moment
-  décisif — avec une possibilité réelle d'une présidence d'extrême droite pour
-  la première fois [2].
 political_powerStructure_en: >-
   The President controls foreign policy, defense, and nuclear weapons [1]. The
   PM manages domestic policy but depends on parliamentary confidence [1].
@@ -123,15 +21,15 @@ political_powerStructure_en: >-
 political_powerStructure_fr: >-
   Le Président contrôle la politique étrangère, la défense et l'arme nucléaire
   [1]. Le PM gère la politique intérieure mais dépend de la confiance
-  parlementaire [1]. Le cercle rapproché de Macron s'est rétréci — il a
+  parlementaire [1]. Le cercle rapproché de Macron s'est rétréci — il a
   délibérément bloqué l'émergence d'un successeur [2]. Les services de sécurité
   (DGSE, DGSI) rendent compte à l'exécutif et restent loyaux [8]. Le pouvoir
-  judiciaire est indépendant mais sous pression politique — la condamnation de
+  judiciaire est indépendant mais sous pression politique — la condamnation de
   Marine Le Pen pour détournement de fonds du Parlement européen en 2024 a été
   confirmée, pouvant potentiellement l'empêcher de se présenter en 2027 [6]. Le
   Conseil constitutionnel et le Conseil d'État restent des contre-pouvoirs
-  fonctionnels [1]. Les médias sont pluralistes mais concentrés : le groupe
-  Bolloré (CNews, Europe 1, JDD) penche à droite ; les diffuseurs publics
+  fonctionnels [1]. Les médias sont pluralistes mais concentrés : le groupe
+  Bolloré (CNews, Europe 1, JDD) penche à droite; les diffuseurs publics
   (France Télévisions, Radio France) maintiennent leur indépendance éditoriale
   sous pression [10].
 political_stabilityDrivers_en: >-
@@ -150,16 +48,16 @@ political_stabilityDrivers_en: >-
   executive weakness when the president lacks a majority [1].
 political_stabilityDrivers_fr: >-
   La légitimité repose sur les élections démocratiques [1] et la performance de
-  l'État-providence — quand le pouvoir d'achat s'érode, la légitimité chute
+  l'État-providence — quand le pouvoir d'achat s'érode, la légitimité chute
   rapidement (comme lors de la crise des Gilets Jaunes en 2018-19) [11]. Les
   forces armées et la police sont loyales à l'ordre constitutionnel, pas à une
   faction politique [8]. La coalition centriste au pouvoir tient par l'absence
-  d'alternatives plutôt que par une cohésion réelle — Renaissance, Horizons
+  d'alternatives plutôt que par une cohésion réelle — Renaissance, Horizons
   (Philippe) et Modem (Bayrou) se positionnent déjà comme rivaux pour 2027 [2].
-  L'opposition est divisée : le RN domine électoralement à droite mais est
-  contraint judiciairement [6] ; la gauche est scindée entre un PS modéré en
+  L'opposition est divisée : le RN domine électoralement à droite mais est
+  contraint judiciairement [6]; la gauche est scindée entre un PS modéré en
   reconstruction locale et LFI (Mélenchon), dont le style maximaliste repousse
-  les alliés potentiels [2]. La force institutionnelle est réelle mais tendue —
+  les alliés potentiels [2]. La force institutionnelle est réelle mais tendue —
   l'architecture constitutionnelle de la Ve République concentre le pouvoir
   d'une manière qui amplifie la faiblesse exécutive quand le président n'a pas
   de majorité [1].
@@ -175,11 +73,11 @@ political_shockAbsorbers_en: >-
   coalition dissolves ahead of succession [2]. Growing cultural polarization
   around immigration, Islam, and national identity [10].
 political_shockAbsorbers_fr: >-
-  Amortisseurs : Marchés de capitaux profonds et crédit souverain proche du AAA
+  Amortisseurs : Marchés de capitaux profonds et crédit souverain proche du AAA
   (noté AA- par S&P) [3]. Banque de France au sein de l'Eurosystème [3]. Filets
   de sécurité sociale étendus (assurance chômage, santé, retraites) [3]. Base
   nucléaire assurant l'indépendance électrique [4]. Forte continuité de la
-  fonction publique [1]. Accélérateurs : Pics d'inflation liés aux prix du
+  fonction publique [1]. Accélérateurs : Pics d'inflation liés aux prix du
   pétrole érodant le pouvoir d'achat [5]. Élection présidentielle 2027 contestée
   avec potentiel de mobilisation de rue [2]. Trajectoire du déficit pouvant
   déclencher l'application des règles budgétaires européennes ou une
@@ -201,10 +99,10 @@ economy_macroReality_en: >-
   after prolonged political crisis, but further consolidation will be
   politically painful [2].
 economy_macroReality_fr: >-
-  La croissance du PIB est prévue sous 1 % pour 2025-2026 (FMI) [3]. Le déficit
-  public 2025 s'est établi à 5,1 % du PIB — mieux que l'objectif de 5,4 % mais
-  toujours bien au-dessus du plafond de 3 % de l'UE [3]. La dette publique a
-  atteint un record de 3 460,5 milliards d'euros (115,6 % du PIB) fin 2025 [3].
+  La croissance du PIB est prévue sous 1 % pour 2025-2026 (FMI) [3]. Le déficit
+  public 2025 s'est établi à 5,1 % du PIB — mieux que l'objectif de 5,4 % mais
+  toujours bien au-dessus du plafond de 3 % de l'UE [3]. La dette publique a
+  atteint un record de 3 460,5 milliards d'euros (115,6 % du PIB) fin 2025 [3].
   Les recettes fiscales ont augmenté plus rapidement que prévu en 2025, et la
   croissance des dépenses a ralenti, fournissant un allègement budgétaire [3].
   Cependant, l'inflation devrait augmenter fortement au printemps 2026 à mesure
@@ -230,14 +128,14 @@ economy_externalVulnerability_fr: >-
   La France enregistre un déficit persistant du compte courant [3]. Les
   exportations sont concentrées dans l'aéronautique (Airbus) [12], les biens de
   luxe (LVMH, Hermès), l'agriculture (vin, céréales) et l'équipement de défense
-  [4]. La dépendance aux importations est aiguë pour les hydrocarbures — la
+  [4]. La dépendance aux importations est aiguë pour les hydrocarbures — la
   crise pétrolière liée à l'Iran menace directement la balance commerciale et
   les prix à la consommation [5]. La dette publique est largement détenue par
-  des investisseurs internationaux (~50 % non-résidents), rendant la France
+  des investisseurs internationaux (~50 % non-résidents), rendant la France
   sensible aux sentiments des marchés obligataires [3]. Il n'y a pas de
   programme du FMI, mais la surveillance budgétaire de l'UE en vertu du Pacte de
   stabilité et de croissance révisé crée une pression externe pour réduire le
-  déficit à 3 % d'ici 2029 [3]. L'exposition aux perturbations du transport
+  déficit à 3 % d'ici 2029 [3]. L'exposition aux perturbations du transport
   maritime mondial (détroit d'Ormuz) est importante compte tenu de la dépendance
   aux importations énergétiques [5].
 economy_politicalEconomy_en: >-
@@ -256,16 +154,16 @@ economy_politicalEconomy_en: >-
 economy_politicalEconomy_fr: >-
   Le modèle économique bénéficie à la classe professionnelle métropolitaine, aux
   secteurs du luxe/tech et aux grands exportateurs [3]. La France rurale et
-  périurbaine — la « France périphérique » — subit le poids de la
+  périurbaine — la « France périphérique » — subit le poids de la
   désindustrialisation, de la hausse des coûts énergétiques et de la réduction
   des services publics [11]. Cette division géographique correspond directement
-  à la division politique : la force du RN est concentrée dans les petites
+  à la division politique : la force du RN est concentrée dans les petites
   villes et les zones rurales [2]. Les réformes techniquement nécessaires (âge
   de la retraite, réduction des dépenses publiques, flexibilité du marché du
-  travail) sont politiquement explosives — la réforme des retraites de 2023 a
+  travail) sont politiquement explosives — la réforme des retraites de 2023 a
   déclenché des mois de grèves et de protestations malgré son adoption finale
   [11]. Le contrat social repose sur l'énergie subventionnée, les retraites
-  généreuses et l'assurance maladie universelle — tous sous pression budgétaire
+  généreuses et l'assurance maladie universelle — tous sous pression budgétaire
   [3]. Toute tentative de réduire les subventions ou de relever davantage l'âge
   de la retraite risque de déclencher une mobilisation massive [11].
 security_internal_en: >-
@@ -283,17 +181,17 @@ security_internal_en: >-
   increase in March 2026) [7].
 security_internal_fr: >-
   La France ne fait face à aucune insurrection active mais maintient un niveau
-  de menace terroriste élevé (posture « sécurité renforcée » de Vigipirate)
+  de menace terroriste élevé (posture « sécurité renforcée » de Vigipirate)
   depuis les attaques de 2015 [8]. Le service de renseignement intérieur (DGSI)
   a déjoué plusieurs complots [8]. Les réseaux criminels opèrent principalement
   dans les territoires d'outre-mer (Guadeloupe, Martinique, Mayotte) et dans
   certaines banlieues, mais ne menacent pas la stabilité de l'État [8]. Les
   tensions communautaires autour de l'immigration et de l'islam s'enflamment
-  périodiquement — le meurtre de Nahel en 2023 a déclenché des émeutes
+  périodiquement — le meurtre de Nahel en 2023 a déclenché des émeutes
   nationales [11]. La police et la gendarmerie sont bien dotées en ressources
   mais font face à des problèmes de moral et à des accusations de recours
   excessif à la force [8]. L'armée (Armée de Terre, Marine Nationale, Armée de
-  l'Air) est la plus importante de l'UE avec ~205 000 personnels actifs et une
+  l'Air) est la plus importante de l'UE avec ~205 000 personnels actifs et une
   dissuasion nucléaire entièrement indépendante (290+ têtes nucléaires, Macron
   annonçant une augmentation en mars 2026) [7].
 security_diplomacy_en: >-
@@ -314,20 +212,20 @@ security_diplomacy_en: >-
   autonomy from the US [7].
 security_diplomacy_fr: >-
   La France est un membre fondateur de l'UE [1], membre permanent du Conseil de
-  sécurité de l'ONU (P5) [1], et allié de l'OTAN — mais maintient une tradition
-  gaulliste d'autonomie stratégique [7]. La doctrine de « dissuasion avancée »
-  de Macron en mars 2026 marque un tournant historique : la France augmentera
+  sécurité de l'ONU (P5) [1], et allié de l'OTAN — mais maintient une tradition
+  gaulliste d'autonomie stratégique [7]. La doctrine de « dissuasion avancée »
+  de Macron en mars 2026 marque un tournant historique : la France augmentera
   son arsenal nucléaire et pourrait potentiellement permettre aux alliés
   européens d'accueillir des aéronefs nucléaires français, créant une relation
   de dissuasion distincte des arrangements de l'OTAN [7]. La France s'est
-  distanciée des États-Unis sur le conflit iranien — refusant les droits de
+  distanciée des États-Unis sur le conflit iranien — refusant les droits de
   survol pour les vols militaires américains vers Israël et promouvant une
   coalition européenne indépendante pour sécuriser le détroit d'Ormuz [9]. Les
   relations avec l'administration Trump sont tendues (Trump a critiqué
   publiquement la France en mars 2026) [9]. La France reste le principal
   partenaire militaire de plusieurs États africains (Sahel, Djibouti) malgré le
   retrait forcé du Mali, du Burkina Faso et du Niger en 2022-2024 [9]. Lignes
-  rouges : intégrité territoriale (y compris les territoires d'outre-mer),
+  rouges : intégrité territoriale (y compris les territoires d'outre-mer),
   souveraineté nucléaire, architecture institutionnelle de l'UE, et le principe
   d'autonomie stratégique vis-à-vis des États-Unis [7].
 actors_domestic_en: |-
@@ -421,39 +319,39 @@ actors_domestic_fr: |-
       "resources": "Pouvoirs constitutionnels (politique étrangère, défense, nucléaire) [1], pouvoir de nomination [1], poids diplomatique européen [1]",
       "constraints": "Pas de majorité parlementaire [2], ne peut pas se présenter en 2027 [1], cotes d'approbation en baisse [2], a délibérément bloqué l'émergence d'un successeur [2]",
       "likelyMoves": "Concentration sur la politique étrangère et l'agenda de défense européenne [7]. Tentative de façonner indirectement la succession 2027 [2]. Dissolution possible si la crise politique s'approfondit [2].",
-      "dealability": "Limitée — de plus en plus un canard boiteux au niveau intérieur, mais toujours décisif en politique étrangère/défense [7]"
+      "dealability": "Limitée — de plus en plus un canard boiteux au niveau intérieur, mais toujours décisif en politique étrangère/défense [7]"
     },
     {
       "name": "Sébastien Lecornu (Premier ministre)",
       "interests": "Survie au pouvoir [2], adoption du budget [3], positionnement comme candidat potentiel 2027 [2]",
       "resources": "Appareil exécutif [1], soutien de Macron [2], compétence technocratique [2]",
-      "constraints": "Pas de majorité — gouverne via l'article 49.3 (passage forcé) et des accords ad hoc [1]. Vulnérable aux votes de censure [2].",
+      "constraints": "Pas de majorité — gouverne via l'article 49.3 (passage forcé) et des accords ad hoc [1]. Vulnérable aux votes de censure [2].",
       "likelyMoves": "Continuer la réduction du déficit par la retenue des dépenses [3]. Éviter les réformes provocatrices [2]. Gérer la réponse à la crise énergétique [5].",
-      "dealability": "Modérée — pragmatique et transactionnel, mais avec peu de marge de manœuvre [2]"
+      "dealability": "Modérée — pragmatique et transactionnel, mais avec peu de marge de manœuvre [2]"
     },
     {
       "name": "Marine Le Pen / Rassemblement national (RN)",
       "interests": "Remporter la présidence 2027 [2], normaliser le parti [2], réduire l'immigration [2], réaffirmer la souveraineté nationale [2]",
       "resources": "2,5M+ votes municipaux [2], 3000+ conseillers locaux [2], 88 sièges à l'Assemblée nationale [2], position dominante aux sondages pour 2027 [2], présence médiatique [10]",
-      "constraints": "Condamnation pénale (détournement de fonds européens) — inéligibilité potentielle pour 2027 si confirmée [6]. Le parti manque toujours d'expérience gouvernementale et d'un vivier profond de fonctionnaires compétents [2].",
+      "constraints": "Condamnation pénale (détournement de fonds européens) — inéligibilité potentielle pour 2027 si confirmée [6]. Le parti manque toujours d'expérience gouvernementale et d'un vivier profond de fonctionnaires compétents [2].",
       "likelyMoves": "Appel de la condamnation [6]. Positionnement de Jordan Bardella comme candidat présidentiel de secours [2]. Exploitation de la colère liée à la crise énergétique et au coût de la vie [5]. Distanciation avec Trump sur l'Iran [9].",
-      "dealability": "Faible — positionnement maximaliste, mais de plus en plus pragmatique sur la politique économique [2]"
+      "dealability": "Faible — positionnement maximaliste, mais de plus en plus pragmatique sur la politique économique [2]"
     },
     {
       "name": "Édouard Philippe (Horizons, centre-droit)",
-      "interests": "Remporter la présidence 2027 en tant que candidat « sérieux » post-Macron [2]",
+      "interests": "Remporter la présidence 2027 en tant que candidat « sérieux » post-Macron [2]",
       "resources": "Base électorale (Le Havre) [2], cotes de faveur élevées [2], appareil du parti Horizons [2], compétence perçue [2]",
       "constraints": "Doit se différencier de Macron sans aliéner les électeurs centristes [2]. Risque d'être écrasé entre le RN et une droite revitalisée [2].",
       "likelyMoves": "Construire un profil national via la gouvernance du Havre [2]. Courtiser les électeurs LR [2]. Se présenter comme le seul candidat capable de battre Le Pen au second tour [2].",
-      "dealability": "Élevée — pragmatique, ouvert aux coalitions, disposé à négocier [2]"
+      "dealability": "Élevée — pragmatique, ouvert aux coalitions, disposé à négocier [2]"
     },
     {
       "name": "Jean-Luc Mélenchon / LFI (extrême gauche)",
       "interests": "Rester le candidat présidentiel dominant de la gauche [2], transformation radicale de la Ve République [1]",
-      "resources": "Base militante loyale [2], talent rhétorique [2], portée des médias sociaux [2], plancher électoral de 10-11 % [2]",
+      "resources": "Base militante loyale [2], talent rhétorique [2], portée des médias sociaux [2], plancher électoral de 10-11 % [2]",
       "constraints": "Toxique pour les électeurs modérés (accusations d'antisémitisme, violence à Lyon, style maximaliste) [2]. Aliène les alliés socialistes/verts potentiels [2].",
       "likelyMoves": "Se présenter en 2027 indépendamment des perspectives d'unité de la gauche [2]. Maximiser la perturbation [2]. Exploiter la crise du coût de la vie [5].",
-      "dealability": "Très faible — rejette le compromis par principe [2]"
+      "dealability": "Très faible — rejette le compromis par principe [2]"
     },
     {
       "name": "Parti socialiste (PS)",
@@ -461,7 +359,7 @@ actors_domestic_fr: |-
       "resources": "Racines locales profondes (victoire électorale de Paris en mars 2026) [2], mémoire institutionnelle [1], attrait des électeurs modérés [2]",
       "constraints": "Endommagé par l'alliance intermittente avec LFI [2]. Pas de candidat présidentiel clair [2]. Affaibli organisationnellement [2].",
       "likelyMoves": "Consolider les gains locaux [2]. Tenter de construire une coalition de gauche excluant LFI [2]. Chercher un candidat crédible pour 2027 [2].",
-      "dealability": "Modérée — ouverte aux alliances mais contrainte par la question LFI [2]"
+      "dealability": "Modérée — ouverte aux alliances mais contrainte par la question LFI [2]"
     },
     {
       "name": "Armée / Services de sécurité",
@@ -469,7 +367,7 @@ actors_domestic_fr: |-
       "resources": "Armée la plus importante de l'UE [7], arsenal nucléaire [7], appareil de renseignement [8], confiance publique [8]",
       "constraints": "Subordination constitutionnelle à l'autorité civile [1]. Pressions budgétaires dues à la réduction du déficit [3].",
       "likelyMoves": "Soutien à l'expansion de la doctrine nucléaire de Macron [7]. Pression pour augmenter le budget de défense [7]. Maintien des déploiements opérationnels [9].",
-      "dealability": "Élevée — professionnel, apolitique, loyal à l'ordre constitutionnel [8]"
+      "dealability": "Élevée — professionnel, apolitique, loyal à l'ordre constitutionnel [8]"
     },
     {
       "name": "Élites commerciales / MEDEF",
@@ -477,7 +375,7 @@ actors_domestic_fr: |-
       "resources": "Poids économique [3], accès au lobbying [3], influence médiatique [10]",
       "constraints": "Divisé sur le rythme de la transition énergétique [4]. Tensions avec les syndicats sur les réformes du travail [11].",
       "likelyMoves": "Pression pour des réformes favorables aux entreprises [3]. Opposition aux subventions énergétiques [5]. Soutien aux candidats centristes [2].",
-      "dealability": "Élevée — transactionnel et pragmatique [3]"
+      "dealability": "Élevée — transactionnel et pragmatique [3]"
     },
     {
       "name": "Syndicats (CGT, CFDT, FO)",
@@ -485,7 +383,7 @@ actors_domestic_fr: |-
       "resources": "Capacité de grève [11], mobilisation de rue [11], levier politique [2]",
       "constraints": "Adhésion en déclin [11]. Fragmenté entre plusieurs confédérations [11].",
       "likelyMoves": "Mobilisation contre les augmentations des prix énergétiques [5]. Opposition à d'autres réformes des retraites [3]. Soutien aux candidats de gauche [2].",
-      "dealability": "Modérée — réactive aux pressions des adhérents, peut négocier mais imprévisible [11]"
+      "dealability": "Modérée — réactive aux pressions des adhérents, peut négocier mais imprévisible [11]"
     },
     {
       "name": "Réseaux Gilets Jaunes",
@@ -493,7 +391,7 @@ actors_domestic_fr: |-
       "resources": "Capacité de mobilisation de base [11], réseaux de médias sociaux [11], pouvoir symbolique [11]",
       "constraints": "Décentralisé et non structuré [11]. Pas de leadership clair [11].",
       "likelyMoves": "Mobilisation si les prix énergétiques augmentent [5]. Exploitation du sentiment anti-gouvernement [2]. Soutien aux candidats populistes [2].",
-      "dealability": "Très faible — non structuré, anti-institutionnel [11]"
+      "dealability": "Très faible — non structuré, anti-institutionnel [11]"
     }
   ]
 actors_external_en: |-
@@ -547,7 +445,7 @@ actors_external_fr: |-
       "resources": "Alliance militaire [7], poids économique [3], dominance du dollar [3]",
       "constraints": "La tradition d'autonomie stratégique de la France limite le levier américain [7]. Solidarité de l'UE sur les différends commerciaux [3].",
       "likelyMoves": "Continuation de la pression sur la France concernant les dépenses de défense et la politique iranienne [9]. Possible représailles commerciales [9].",
-      "dealability": "Faible actuellement — relations tendues en raison du refus de survol et de la divergence sur l'Iran [9]"
+      "dealability": "Faible actuellement — relations tendues en raison du refus de survol et de la divergence sur l'Iran [9]"
     },
     {
       "name": "Allemagne",
@@ -555,15 +453,15 @@ actors_external_fr: |-
       "resources": "Économie la plus importante de l'UE [3], poids politique [1], programme de chasseur conjoint FCAS [12]",
       "constraints": "Instabilité de sa propre coalition [1], philosophie budgétaire différente [3], écart de dépenses de défense [7].",
       "likelyMoves": "Recherche de coopération pragmatique sur la défense et l'énergie européennes [7]. Gestion des désaccords sur les règles budgétaires [3].",
-      "dealability": "Élevée — partenariat structurel malgré les frictions [1]"
+      "dealability": "Élevée — partenariat structurel malgré les frictions [1]"
     },
     {
       "name": "Institutions de l'Union européenne",
       "interests": "Application de la discipline budgétaire [3], intégrité du marché unique [3], progrès de la défense commune [7]",
       "resources": "Application du Pacte de stabilité et de croissance [3], politique monétaire de la BCE [3], fonds NextGenerationEU [3]",
       "constraints": "La France est trop importante pour être facilement disciplinée [1]. Sensibilité politique de l'imposition de l'austérité à un membre fondateur [1].",
-      "likelyMoves": "Surveillance de la trajectoire du déficit français [3]. Pression pour le respect de l'objectif de 3 % d'ici 2029 [3].",
-      "dealability": "Modérée — basée sur les règles mais politiquement flexible [3]"
+      "likelyMoves": "Surveillance de la trajectoire du déficit français [3]. Pression pour le respect de l'objectif de 3 % d'ici 2029 [3].",
+      "dealability": "Modérée — basée sur les règles mais politiquement flexible [3]"
     },
     {
       "name": "Russie",
@@ -571,7 +469,7 @@ actors_external_fr: |-
       "resources": "Arsenal nucléaire [7], exportations énergétiques (réduites) [5], guerre de l'information [10], droit de veto à l'ONU [1]",
       "constraints": "La guerre en Ukraine a isolé la Russie de la France [9]. Les sanctions limitent l'interaction économique [9].",
       "likelyMoves": "Opérations d'information ciblant les élections françaises [10]. Exploitation des narratifs de crise énergétique [5].",
-      "dealability": "Très faible — relation antagoniste depuis 2022 [9]"
+      "dealability": "Très faible — relation antagoniste depuis 2022 [9]"
     },
     {
       "name": "Chine",
@@ -579,7 +477,7 @@ actors_external_fr: |-
       "resources": "Poids économique [3], secteur technologique [3], capital d'investissement [3]",
       "constraints": "Restrictions technologiques de l'UE [3]. Les engagements de la France envers l'UE limitent les accords bilatéraux [1].",
       "likelyMoves": "Recherche d'opportunités d'investissement dans la tech/énergie française [3]. Exploitation des tensions US-France [9].",
-      "dealability": "Modérée — transactionnel mais contraint par le cadre de l'UE [3]"
+      "dealability": "Modérée — transactionnel mais contraint par le cadre de l'UE [3]"
     }
   ]
 risks_en: |-
@@ -693,16 +591,16 @@ risks_fr: |-
       "impact": "High",
       "timeHorizon": "3–12m",
       "leadingIndicators": "Écart OAT-Bund [3], révisions des agences de notation (S&P, Moody's) [3], données trimestrielles du déficit [3], votes budgétaires parlementaires [2]",
-      "mitigants": "Filet de sécurité de la BCE (instrument TPI) [3]. Déficit 2025 meilleur que prévu (5,1 % vs 5,4 % cible) [3]. Marchés de capitaux profonds [3]."
+      "mitigants": "Filet de sécurité de la BCE (instrument TPI) [3]. Déficit 2025 meilleur que prévu (5,1 % vs 5,4 % cible) [3]. Marchés de capitaux profonds [3]."
     },
     {
       "title": "Choc des prix énergétiques → troubles sociaux",
-      "trigger": "Prix du pétrole soutenus au-dessus de 120 $/baril en raison du conflit iranien, se répercutant sur l'essence, le chauffage et les prix alimentaires [5]",
+      "trigger": "Prix du pétrole soutenus au-dessus de 120 $/baril en raison du conflit iranien, se répercutant sur l'essence, le chauffage et les prix alimentaires [5]",
       "probability": "High",
       "impact": "Med",
       "timeHorizon": "0–3m",
       "leadingIndicators": "Prix du Brent [5], données d'inflation INSEE [3], prix du carburant à la pompe [5], appels à mobilisation de protestation (syndicats, réseaux Gilets Jaunes) [11]",
-      "mitigants": "Base d'électricité nucléaire (~70 %) limitant la répercussion des prix de l'électricité [4]. Subventions d'urgence gouvernementales (bien que fiscalement contraintes) [3]. Réserves stratégiques de pétrole [5]."
+      "mitigants": "Base d'électricité nucléaire (~70 %) limitant la répercussion des prix de l'électricité [4]. Subventions d'urgence gouvernementales (bien que fiscalement contraintes) [3]. Réserves stratégiques de pétrole [5]."
     },
     {
       "title": "Crise institutionnelle due à l'impasse parlementaire",
@@ -751,7 +649,7 @@ risks_fr: |-
     },
     {
       "title": "Réaction aux réformes des retraites/bien-être",
-      "trigger": "Le gouvernement tente d'autres réductions de pensions ou de soins de santé ; syndicats et Gilets Jaunes se mobilisent [11]",
+      "trigger": "Le gouvernement tente d'autres réductions de pensions ou de soins de santé; syndicats et Gilets Jaunes se mobilisent [11]",
       "probability": "Med",
       "impact": "Med",
       "timeHorizon": "3–12m",
