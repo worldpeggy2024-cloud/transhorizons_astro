@@ -23,8 +23,8 @@ These are caught by `npm run validate:countries` and will block the PR:
 | Issue | What the validator checks |
 |---|---|
 | Uncited claim | Every narrative field must contain at least one `[source-id]` |
-| Broken citation ID | Every `[id]` in text must match an entry in `*.sources.yaml` |
-| Citation parity gap | EN and FR must cite exactly the same IDs in each section |
+| Broken citation ID | Every `[id]` in text must match an entry in the sources JSON block of `analysis.yaml` |
+| Ghost anchor | Every `[dot.path]` anchor must resolve to a non-empty field of this report (same class as a ghost citation) |
 | ~~Orphan source~~ → **warning, not a reject** | An uncited source no longer blocks. It is a **warning, grouped by peer** in the apply/validate output — for both event sources (found, considered, excluded — a completed check) and non-event sources. An uncited non-event source signals thin PROSE (a section Pass B under-wrote), not a bad source; blocking it would stop the report being read in order to fix it. **Still hard errors:** ghost citations (a `[id]` with no matching source) and schema violations. |
 | Invalid source ID | IDs must be `lowercase-alphanumeric-hyphens` only |
 | Missing required fields | `name`, `url`, `desc` required on every source entry |
@@ -39,8 +39,10 @@ These require reviewer judgment — the validator cannot catch them:
 - **Wikipedia as a citation** — Wikipedia is useful for locating the primary source via its reference list. Never cite Wikipedia itself. Follow the citation chain to the originating dataset or official document and cite that instead.
 - **Interpretation tagged as Fact** — if the cited source is a think tank, business association, or news outlet analyzing data it did not originate, it must be `citationType: Interpretation`, not `Fact`. Example: a Canadian Chamber of Commerce survey on business sentiment is Interpretation; a Statistics Canada GDP release is Fact. On the website, Interpretation citations render with a dotted underline to flag them to readers — misclassifying Interpretation as Fact corrupts that signal and misleads reviewers.
 - **News article as primary source for statistics** — use the original data publication (IMF, Statistics Canada, etc.)
-- **Source older than 3 years** for fast-moving topics (politics, economics) — flag with `confidence: Low`
+- **Source older than 3 years** for fast-moving topics (politics, economics) — set `volatility: High` (freshness is the volatility axis's job; do NOT downgrade `confidence`, which measures source quality, not age)
 - **Paywalled source** with no archive link — must add `archiveUrl` or replace
+- **`desc` that states the data instead of the source** — `desc` gives the source's scope, role and authoritative status in ~20–30 words (what the source IS: a national inventory report, a live standings page, a court ruling), plus any bias or reservation. It never states the specific numbers or claims the prose draws from it. Test: if a fact in the `desc` could be edited to a new value while the prose still cites the id unchanged, it does not belong in the `desc`.
+- **EN/FR citation (and anchor) parity gap** — EN and FR must cite the same IDs and carry the same anchors in each section. This is a MANUAL reviewer check; no validator enforces it.
 
 ### Content quality
 - **Manus-generated text without re-research** — identifiable by vague, non-specific language, round numbers, or claims that don't survive a quick Google check
@@ -72,6 +74,20 @@ These require reviewer judgment — the validator cannot catch them:
 |---|---|
 | `High` | Primary source: official government data, central bank, international institution (IMF, World Bank, UN) |
 | `Med` | Secondary source: reputable think tank, academic paper, major news organization with named sources |
-| `Low` | Tertiary source: aggregator, blog, opinion piece; or data older than 3 years on fast-moving topic |
+| `Low` | Tertiary source: aggregator, blog, opinion piece |
 
 Target: ≥ 80% of sources at `High`. The validator warns (does not fail) if > 20% are `Med` or `Low`.
+
+## Volatility guidelines (orthogonal to confidence)
+
+`volatility` is the expected rate of change of the fact(s) the source backs — it drives the refresh
+worklist, never the quality judgment. A national-statistics figure is `High` confidence AND `High`
+volatility. Never overload `confidence` to signal freshness.
+
+| Level | Changes | Refresh | Typical |
+|---|---|---|---|
+| `High` | ≤ 1 year, or on events | annual / on-event | reserves-with-year, GDP and fiscal figures, seat composition, office-holders, sanctions, program status |
+| `Med` | a few years | ~2–3 years | demographic structure, composition shares, productivity trend, memberships |
+| `Low` | structural | on major event | constitution, geography, baseline climate type, legal tradition |
+
+The validator warns on missing `volatility` (migration is warning-first; backfill `High` sources first).

@@ -12,38 +12,35 @@ Each country analysis has a `lastUpdated` date in `*.meta.yaml`. The target is n
 
 ## Step 1 — Triage (Day 1, ~30 min)
 
-Open `src/lib/analysedCountries.ts` and note which countries have `lastUpdated` older than 3 months.
+Build the worklist **by query on the volatility axis** (rework §6.2): sources where `volatility: High`
+and `accessDate` is older than the tier cadence (High = annual/on-event; Med = ~2–3 years). Each hit
+points back to its claim via `[source-id]`. Also note countries whose `lastUpdated` (in
+`analysis.yaml`) is older than 3 months.
 
 For each stale country, decide:
-- **Full refresh** — major developments since last update; redo all sections
-- **Spot update** — one or two sections changed; update only those
+- **Full refresh** — major developments since last update; regenerate through the two-phase pipeline
+- **Spot update** — only the worklist ids' claims changed; update those facts only
 - **Skip** — situation unchanged; bump `lastUpdated` and note "no significant change"
 
 ---
 
 ## Step 2 — Research (Per country, 1–3 hrs)
 
-For each country requiring a full refresh:
+For each country requiring a full refresh: rerun the two-phase pipeline
+(`content/docs/country-report-present-state-template.md` + `scripts/deepsearch-country-workflow.cjs`).
 
-1. Open Perplexity Deep Research and run the standard prompt from `content/docs/perplexity-authoring-template.md`
-2. Read the output critically — verify surprising claims against primary sources
-3. Note which sources are new (add to `*.sources.yaml`) and which are unchanged (keep existing IDs)
-
-For spot updates:
-1. Go directly to the primary sources for that section (e.g. IMF for economy, parliament site for political)
-2. Update only the affected YAML fields
+For spot updates — **touch only the worklist ids from Step 1**:
+1. Go directly to that source (or its replacement) and verify the current value of the claim
+2. Update that fact in the prose, bump the source's `accessDate`, leave surrounding prose untouched
+3. New sources are added to the sources JSON block of `analysis.yaml`; never change a cited `source-id`
 
 ---
 
 ## Step 3 — Edit YAML files
 
-For each country being updated:
-
-```
-content/countries/[CODE]/[code].en.yaml   ← update EN content
-content/countries/[CODE]/[code].sources.yaml  ← add/update sources
-content/countries/[CODE]/[code].meta.yaml     ← bump lastUpdated
-```
+For each country being updated: everything lives in ONE flat file,
+`content/countries/[CODE]/analysis.yaml` (`<section>_<subsection>_<en|fr>` keys; sources as a
+JSON-in-text block; bump `lastUpdated` there).
 
 Rules:
 - Never change a `source-id` that is already cited in text (breaks citation links)
@@ -101,7 +98,7 @@ Run manually:
 node scripts/validate-sources.cjs
 ```
 
-Or trigger the `Source Health Check` workflow in the GitHub Actions tab. Review `.source-health.json` for any 404s or timeouts and fix broken URLs before the next quarterly cycle.
+Or trigger the `Source Health Check` workflow in the GitHub Actions tab. Review `.source-health.json` for any 404s or timeouts and fix broken URLs before the next quarterly cycle. The health check also flags **stale `volatility: High` sources** (accessDate older than the annual/on-event cadence) — treat those as next cycle's worklist even when the URL still resolves.
 
 ---
 

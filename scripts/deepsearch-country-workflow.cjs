@@ -161,6 +161,18 @@ function validateSources(sources) {
       warnings.push(`${key}.descFr absent (French page will fall back to the English desc)`);
     }
 
+    // Volatility axis (rework §6.2): WARN-on-missing during migration, then
+    // promote to required. Orthogonal to confidence — never overload confidence
+    // to signal freshness.
+    if (!['High', 'Med', 'Low'].includes(s?.volatility)) {
+      warnings.push(`${key}.volatility absent (High|Med|Low — expected rate of change of the fact(s) this source backs)`);
+    }
+
+    // desc discipline (rework §6.1): soft length warning.
+    if (nonEmptyString(s?.desc) && s.desc.trim().split(/\s+/).length > 50) {
+      warnings.push(`${key}.desc is ${s.desc.trim().split(/\s+/).length} words (target 20-30; state what the source IS, not its data)`);
+    }
+
     if (nonEmptyString(s?.id) && !/^[a-z0-9-]+$/.test(s.id)) {
       errors.push(`${key}.id must be lowercase slug (a-z0-9-)`);
     }

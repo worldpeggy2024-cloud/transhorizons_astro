@@ -205,6 +205,19 @@ function validateCountryFile(filePath) {
     if (typeof s?.descFr !== 'string' || !s.descFr.trim()) {
       warnings.push(`Source ${key}: missing French description (descFr; FR page falls back to English)`);
     }
+
+    // Volatility axis (rework §6.2): expected rate of change of the fact(s) the
+    // source backs — drives the refresh worklist. WARN-on-missing during
+    // migration (backfill High sources first); orthogonal to confidence.
+    if (!['High', 'Med', 'Low'].includes(s?.volatility)) {
+      warnings.push(`Source ${key}: missing volatility (High|Med|Low — expected rate of change; drives the refresh worklist)`);
+    }
+
+    // desc discipline (rework §6.1): soft length warning — a desc past ~50 words
+    // is usually carrying claims that belong in the prose.
+    if (typeof s?.desc === 'string' && s.desc.trim().split(/\s+/).length > 50) {
+      warnings.push(`Source ${key}: desc is ${s.desc.trim().split(/\s+/).length} words (target 20-30; state what the source IS, not its data)`);
+    }
   });
 
   // JSON-in-text blocks must actually parse: a raw newline or unescaped quote

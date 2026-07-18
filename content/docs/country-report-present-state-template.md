@@ -291,7 +291,20 @@ No "where available" escape hatches.
   accessDate: "YYYY-MM-DD"        # date you opened and verified the URL
   confidence: High | Med | Low
   citationType: Fact | Interpretation
+  volatility: High | Med | Low    # expected rate of change of the fact(s) this source backs — orthogonal to confidence
 ```
+
+**Volatility axis** (rework §6.2 — warn-on-missing during migration, then required):
+
+| Level | Changes | Refresh | Typical |
+|---|---|---|---|
+| `High` | ≤ 1 year, or on events | annual / on-event | reserves-with-year, GDP and fiscal figures, seat composition, office-holders, sanctions, program status |
+| `Med` | a few years | ~2–3 years | demographic structure, composition shares, productivity trend, memberships |
+| `Low` | structural | on major event | constitution, geography, baseline climate type, legal tradition |
+
+Orthogonal to `confidence` — a national-statistics figure is `High` confidence **and** `High` volatility. Never overload `confidence` to signal freshness. Defaults by field: **High** = `territory.minerals`, `economy.*` figures, `political.powerStructure`, `security.posture`, `situation`. **Med** = `society.demographics`, `society.composition`, `capacity.productivity`, `security.diplomacy`. **Low** = `political.constitutionalSubstrate`, `territory.geography`, `territory.climate` baseline.
+
+**Refresh query this enables:** sources where `volatility: High` and `accessDate` older than the tier cadence — the worklist. Each hit points back to its claim via `[source-id]`; update that fact, bump `accessDate`, leave surrounding prose untouched (see `quarterly-refresh-playbook.md`).
 
 **Source-description discipline.** `desc` states what the source *is* — its scope, role, authoritative status — in roughly 20 to 30 words. It names the kind of source (national inventory report, live standings page, court ruling, official assessment), its coverage domain, and any bias or reservation. It does **not** state the specific numbers or claims the prose will draw from it. Factual claims live in the prose, cited to the source ID. **Diagnostic test:** if a fact in the source `desc` could be silently edited to a new value while the prose still cites the ID unchanged, the fact does not belong in `desc` — it is a claim, and claims live in prose only. *(This supersedes the earlier "name the specific datum" rule.)*
 
