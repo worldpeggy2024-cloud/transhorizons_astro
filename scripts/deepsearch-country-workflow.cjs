@@ -1378,6 +1378,23 @@ SCHEMA (one object per event)
   fs.writeFileSync(contentTemplatePath, JSON.stringify(contentTemplate, null, 2), 'utf8');
   fs.writeFileSync(situationPassPath, situationPassText, 'utf8');
 
+  // Actors pass (rework §8.1): actors-pass.prompt.md is generated from the
+  // repo's source template — the v1.6 actors extraction prompt (extraction
+  // tradecraft must NOT be re-derived from the spec). Until that file is
+  // pasted in, init notes the gap instead of generating. Placeholders
+  // substituted: {{CODE}}, {{NAME_EN}}, {{NAME_FR}}, {{TODAY}}.
+  const actorsTemplatePath = path.join(process.cwd(), 'content', 'docs', 'actors-pass-template.md');
+  if (fs.existsSync(actorsTemplatePath)) {
+    const actorsPass = fs.readFileSync(actorsTemplatePath, 'utf8')
+      .replace(/\{\{CODE\}\}/g, code)
+      .replace(/\{\{NAME_EN\}\}/g, nameEn)
+      .replace(/\{\{NAME_FR\}\}/g, nameFr)
+      .replace(/\{\{TODAY\}\}/g, today);
+    fs.writeFileSync(path.join(jobDir, 'actors-pass.prompt.md'), actorsPass, 'utf8');
+  } else {
+    console.log('NOTE: content/docs/actors-pass-template.md missing — actors-pass.prompt.md NOT generated (paste the v1.6 actors extraction prompt there and re-run init; rework §8.1).');
+  }
+
   console.log(`Created Deepsearch job assets in ${path.relative(process.cwd(), jobDir)}`);
 }
 

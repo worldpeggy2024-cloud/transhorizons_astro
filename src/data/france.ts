@@ -145,10 +145,26 @@ export interface LangContent {
 
 export interface ActorEntry {
   name: string;
+  /** Layer 1 (extraction — rework §8.1): actor kind (party, institution, firm, movement…). */
+  kind?: string;
+  /** Layer 1: live status from the report (in office, opposition, dissolved…). */
+  liveActorStatus?: string;
+  /** Layer 1: current position extracted from the report. */
+  currentPosition?: string;
+  /** Layer 1: which report fields cite this actor. */
+  fieldsCitedIn?: string[];
+  /** Layer 2 (analytical draft — AI-drafted/unverified; renders collapsed + labelled). */
   interests: string;
   resources: string;
   constraints: string;
   likelyMoves: string;
+  /**
+   * Rework §8.1: structural engagement category (negotiable, statutorily-independent,
+   * judicial-deference, hijack-exposed, veto-holder, blocked / not-engageable,
+   * report-silent) with a one-line justification. Replaces dealability.
+   */
+  engagementMode?: string;
+  /** LEGACY rating — superseded by engagementMode; still displayed when present. */
   dealability: string;
 }
 

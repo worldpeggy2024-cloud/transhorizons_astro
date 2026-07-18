@@ -453,33 +453,61 @@ function ScoreRow({ label, value, language, detail }: {
 
 function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: string; sources?: SourceEntry[] }) {
   const [expanded, setExpanded] = useState(false);
+  // FR-PLACEHOLDER: Layer-2 labels + AI-drafted notice French wording — Peggy to verify.
   const labels = language === 'fr'
-    ? { interests: 'Intérêts', resources: 'Ressources', constraints: 'Contraintes', moves: 'Mouvements probables', deal: 'Négociabilité' }
-    : { interests: 'Interests', resources: 'Resources', constraints: 'Constraints', moves: 'Likely moves', deal: 'Dealability' };
+    ? { interests: 'Intérêts', resources: 'Ressources', constraints: 'Contraintes', moves: 'Mouvements probables', deal: 'Négociabilité', engagement: "Mode d'engagement", position: 'Position actuelle', aiDrafted: 'Ébauche générée par IA — non vérifiée', citedIn: 'Cité dans' }
+    : { interests: 'Interests', resources: 'Resources', constraints: 'Constraints', moves: 'Likely moves', deal: 'Dealability', engagement: 'Engagement mode', position: 'Current position', aiDrafted: 'AI-drafted — unverified', citedIn: 'Cited in' };
+
+  // Layer 1 (extraction — high reliability) shows on the row and above the fold;
+  // Layer 2 (analytical draft) renders collapsed by default and visibly labelled
+  // AI-drafted/unverified (rework §8.1 — this rendering is part of the change).
+  const layer2 = ([
+    [labels.interests, actor.interests],
+    [labels.resources, actor.resources],
+    [labels.constraints, actor.constraints],
+    [labels.moves, actor.likelyMoves],
+    ...(actor.engagementMode
+      ? [[labels.engagement, actor.engagementMode]]
+      : (actor.dealability ? [[labels.deal, ratingLabel(actor.dealability, language)]] : [])),
+  ] as [string, string][]).filter(([, v]) => v.trim().length > 0);
 
   return (
     <div className="border border-[var(--cr-border)] bg-[var(--cr-bg)]">
       <button
-        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[var(--cr-hover)] transition-colors"
+        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[var(--cr-hover)] transition-colors gap-3"
         onClick={() => setExpanded(e => !e)}
       >
-        <span className="font-body text-sm font-medium text-[var(--cr-ink)]">{actor.name}</span>
+        <span className="font-body text-sm font-medium text-[var(--cr-ink)] flex-1">
+          {actor.name}
+          {actor.kind && <span className="ml-2 font-normal text-[10px] uppercase tracking-widest text-[var(--cr-muted)]">{actor.kind}</span>}
+          {actor.liveActorStatus && <span className="ml-2 font-normal text-[10px] text-[var(--cr-muted)]">· {actor.liveActorStatus}</span>}
+        </span>
         {expanded ? <ChevronUp size={12} className="text-[var(--cr-muted)]" /> : <ChevronDown size={12} className="text-[var(--cr-muted)]" />}
       </button>
       {expanded && (
         <div className="px-4 pb-4 pt-1 border-t border-[var(--cr-border)] space-y-2">
-          {([
-            [labels.interests, actor.interests],
-            [labels.resources, actor.resources],
-            [labels.constraints, actor.constraints],
-            [labels.moves, actor.likelyMoves],
-            [labels.deal, ratingLabel(actor.dealability, language)],
-          ] as [string, string][]).map(([label, value]) => (
-            <div key={label}>
-              <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
-              <p className="font-body text-xs text-[var(--cr-body)] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
+          {/* Layer 1 — extracted from the report */}
+          {!!actor.currentPosition?.trim() && (
+            <div>
+              <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{labels.position}</span>
+              <p className="font-body text-xs text-[var(--cr-body)] leading-relaxed mt-0.5">{parseCitations(actor.currentPosition, sources)}</p>
             </div>
-          ))}
+          )}
+          {(actor.fieldsCitedIn?.length ?? 0) > 0 && (
+            <p className="font-body text-[10px] text-[var(--cr-muted)]">{labels.citedIn}: {actor.fieldsCitedIn!.join(' · ')}</p>
+          )}
+          {/* Layer 2 — analytical draft, labelled */}
+          {layer2.length > 0 && (
+            <div className="border border-[var(--cr-border)] rounded px-3 py-2 space-y-2">
+              <p className="font-body text-[10px] italic text-[var(--cr-muted)]">⚠ {labels.aiDrafted}</p>
+              {layer2.map(([label, value]) => (
+                <div key={label}>
+                  <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
+                  <p className="font-body text-xs text-[var(--cr-body)] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -519,6 +547,11 @@ function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: stri
       </button>
       {expanded && (
         <div className="px-4 pb-4 pt-1 border-t border-[var(--cr-border)] space-y-2">
+          {/* Layer 2 (rework §8.2): the risk FRAMING is an analytical draft —
+              labelled like actors Layer 2. FR-PLACEHOLDER: French wording. */}
+          <p className="font-body text-[10px] italic text-[var(--cr-muted)]">
+            ⚠ {language === 'fr' ? 'Ébauche générée par IA — non vérifiée' : 'AI-drafted — unverified'}
+          </p>
           {([
             [labels.trigger, risk.trigger],
             [labels.horizon, risk.timeHorizon],

@@ -28,10 +28,17 @@ function parseArrayInput(input: unknown): YamlRecord[] {
 function adaptActors(arr: unknown): ActorEntry[] {
   return parseArrayInput(arr).map((a: YamlRecord) => ({
     name: String(a.name ?? ''),
+    // Layer 1 (extraction) — rework §8.1; optional until the actors pass runs.
+    kind: a.kind ? String(a.kind) : undefined,
+    liveActorStatus: a.liveActorStatus ? String(a.liveActorStatus) : undefined,
+    currentPosition: a.currentPosition ? String(a.currentPosition) : undefined,
+    fieldsCitedIn: Array.isArray(a.fieldsCitedIn) ? (a.fieldsCitedIn as unknown[]).map(String) : undefined,
+    // Layer 2 (analytical draft — AI-drafted/unverified).
     interests: String(a.interests ?? ''),
     resources: String(a.resources ?? ''),
     constraints: String(a.constraints ?? ''),
     likelyMoves: String(a.likelyMoves ?? ''),
+    engagementMode: a.engagementMode ? String(a.engagementMode) : undefined,
     dealability: String(a.dealability ?? ''),
   }));
 }
