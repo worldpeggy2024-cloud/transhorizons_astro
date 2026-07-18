@@ -324,6 +324,14 @@ export default config({
           defaultValue: 'Med',
           validation: { isRequired: false },
         }),
+        // Anchoring (rework §1/§4): JSON-in-text — { axis: { anchors: ["source-id",
+        // "territory.climate"], rationale_en, rationale_fr } } for each of the six
+        // axes. Ratings are Interpretation; anchors name the cited facts they rest on.
+        scorecard_anchors: fields.text({
+          label: 'Scorecard Anchors (JSON)',
+          multiline: true,
+          description: 'Per-axis { anchors: [source-ids or field paths], rationale_en, rationale_fr } — validated by the citations validator',
+        }),
 
         // ── Executive Snapshot ────────────────────────────────────────────
         executiveSnapshot_en: fields.text({

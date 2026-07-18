@@ -23,6 +23,13 @@ export interface AnalysisContent {
     protestCapacity: 'High' | 'Med' | 'Low';
     institutionalResilience: 'High' | 'Med' | 'Low';
   };
+  /**
+   * Anchoring (rework §1/§4): per-axis { anchors: [source-ids or dot field
+   * paths], rationale_en, rationale_fr }. Ratings are Interpretation summarising
+   * already-cited facts; each axis reveals its rationale + anchors on expand.
+   * Optional until a country is regenerated with the reworked pipeline.
+   */
+  scorecardAnchors?: Record<string, { anchors?: string[]; rationale_en?: string; rationale_fr?: string }>;
   en: LangContent;
   fr: LangContent;
   /**

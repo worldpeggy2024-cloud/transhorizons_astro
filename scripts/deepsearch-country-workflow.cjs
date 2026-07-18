@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
+const anchorsLib = require('./lib/anchors.cjs');
 
 function usage() {
   console.log(`
@@ -375,6 +376,44 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA) 
   ];
   textFields.forEach(([field, val]) => mustHaveCitation(val, field, errors));
 
+  // Anchors (rework spec §1): [dot.path] markers must resolve to non-empty
+  // fields of THIS report (ghost anchor = hard error), respect compose order /
+  // allowed sets, never appear in baseline. Shared impl: scripts/lib/anchors.cjs.
+  const resolveNested = (p, lang) => {
+    if (p === 'situation') return typeof content?.situation?.[lang] === 'string' && content.situation[lang].trim().length > 0;
+    const [peer, field] = p.split('.');
+    const v = content?.[peer]?.[field]?.[lang];
+    return typeof v === 'string' && v.trim().length > 0;
+  };
+  for (const peer of ['territory', 'society', 'economy', 'political', 'capacity', 'security']) {
+    const sec = content?.[peer];
+    if (!sec || typeof sec !== 'object') continue;
+    for (const [field, byLang] of Object.entries(sec)) {
+      for (const lang of ['en', 'fr']) {
+        const text = byLang?.[lang];
+        if (typeof text !== 'string' || !text.trim()) continue;
+        anchorsLib.validateFieldAnchors(`${peer}.${field}`, `${peer}.${field}.${lang}`, text, (p) => resolveNested(p, lang), errors);
+      }
+    }
+  }
+  for (const lang of ['en', 'fr']) {
+    const text = content?.baseline?.[lang];
+    if (typeof text === 'string' && text.trim()) {
+      anchorsLib.validateFieldAnchors('baseline', `baseline.${lang}`, text, (p) => resolveNested(p, lang), errors);
+    }
+  }
+  // Scorecard anchors gate (spec §4): values present AND each axis carries >=1
+  // resolvable anchor + rationale — WARNING-FIRST migration; ghost anchors hard-error.
+  anchorsLib.validateScorecardAnchors(
+    content?.scorecardAnchors ? JSON.stringify(content.scorecardAnchors) : '',
+    {
+      sourceIds: new Set([...(sourceIds ?? []), ...(acceptedExtraIds ?? [])]),
+      resolveField: (p) => resolveNested(p, 'en') || resolveNested(p, 'fr'),
+      errors,
+      warnings,
+    }
+  );
+
   // Situator openers — HARD ERRORS at the apply gate (regeneration is cheap here;
   // a missed opener that reaches the YAML costs a manual retrofit instead).
   const openerFields = [
@@ -522,6 +561,7 @@ function buildYaml(payload) {
     `scorecard_economicPressure: ${c.scorecard.economicPressure}`,
     `scorecard_protestCapacity: ${c.scorecard.protestCapacity}`,
     `scorecard_institutionalResilience: ${c.scorecard.institutionalResilience}`,
+    ...(c.scorecardAnchors ? [yamlBlock('scorecard_anchors', JSON.stringify(c.scorecardAnchors, null, 2))] : []),
     yamlBlock('executiveSnapshot_en', c.executiveSnapshot.en.join('\n')),
     yamlBlock('executiveSnapshot_fr', c.executiveSnapshot.fr.join('\n')),
     yamlText('political_powerStructure_en', c.political.powerStructure.en),

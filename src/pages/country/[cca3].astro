@@ -43,7 +43,8 @@ if (!isCountryCode) {
 
 const stripCites = (s: unknown): string =>
   String(s ?? '')
-    .replace(/\[[a-z0-9-]+\]/g, '')
+    // Both marker kinds (rework §1): [source-id] citations and [dot.path] anchors.
+    .replace(/\[(?:[a-z0-9-]+|[a-z][a-zA-Z0-9]*(?:\.[a-z][a-zA-Z0-9]*)+)\]/g, '')
     .replace(/\s{2,}/g, ' ')
     // Removing a mid-sentence marker leaves " ." / " ," — collapse it. Plain
     // spaces only: French narrow-NBSP punctuation spacing must survive.

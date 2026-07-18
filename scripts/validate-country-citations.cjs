@@ -17,6 +17,7 @@ function loadYamlModule() {
 }
 
 const yaml = loadYamlModule();
+const anchorsLib = require('./lib/anchors.cjs');
 const countriesRoot = path.join(process.cwd(), 'content', 'countries');
 
 const denyDomains = [
@@ -340,6 +341,35 @@ function validateCountryFile(filePath) {
         warnings.push(`${base}_${lang}: missing situator OPENER — ${problem}`);
       }
     }
+  }
+
+  // Anchors (rework spec §1): [dot.path] markers in narrative fields must
+  // resolve to non-empty fields of THIS report (ghost anchor = hard error),
+  // respect compose order / allowed sets, and never appear in baseline.
+  // Shared implementation: scripts/lib/anchors.cjs.
+  const resolveFlat = (p, lang) => {
+    const key = `${p.replace(/\./g, '_')}_${lang}`;
+    return typeof data[key] === 'string' && data[key].trim().length > 0;
+  };
+  for (const [k, v] of Object.entries(contentClone)) {
+    if (typeof v !== 'string' || !v.trim()) continue;
+    const m = k.match(/^([a-z]+)_([a-zA-Z]+)_(en|fr)$/);
+    let fieldPath = null, lang = null;
+    if (m && ['territory', 'society', 'economy', 'political', 'capacity', 'security'].includes(m[1])) {
+      fieldPath = `${m[1]}.${m[2]}`; lang = m[3];
+    } else if (/^baseline_(en|fr)$/.test(k)) {
+      fieldPath = 'baseline'; lang = k.slice(-2);
+    }
+    if (!fieldPath) continue;
+    anchorsLib.validateFieldAnchors(fieldPath, k, v, (p) => resolveFlat(p, lang), errors);
+  }
+  if (typeof data.scorecard_anchors === 'string' && data.scorecard_anchors.trim()) {
+    anchorsLib.validateScorecardAnchors(data.scorecard_anchors, {
+      sourceIds: sourceKeys,
+      resolveField: (p) => resolveFlat(p, 'en') || resolveFlat(p, 'fr'),
+      errors,
+      warnings,
+    });
   }
 
   // Situation — the verified event layer (template §4d), populated by the

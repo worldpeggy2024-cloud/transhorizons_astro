@@ -117,7 +117,10 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
   const parts: (string | React.ReactNode)[] = [];
   const sourceMap = new Map((sources ?? []).map((s) => [s.id, s]));
   const sourceIndexMap = new Map((sources ?? []).map((s, i) => [s.id, i + 1]));
-  const citationRegex = /\[([a-z0-9-]+)\]/g;
+  // Two marker kinds (rework §1): [source-id] citations and [dot.path] anchors
+  // (derived claims naming the report field they stand on). The dot is the
+  // discriminator — source ids are lowercase-alphanumeric-hyphens only.
+  const citationRegex = /\[([a-z0-9-]+|[a-z][a-zA-Z0-9]*(?:\.[a-z][a-zA-Z0-9]*)+)\]/g;
   let lastIndex = 0;
   let match;
 
@@ -128,6 +131,27 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
       parts.push(text.substring(lastIndex, match.index).replace(/[ \t]+$/, '\u00A0'));
     }
     const citationId = match[1];
+    if (citationId.includes('.')) {
+      // Field-path anchor → in-page link to that section (deep-link ids live on
+      // the section wrappers). Rendered as a superscript section mark.
+      parts.push(
+        <a
+          key={`anchor-${match.index}`}
+          href={`#${citationId}`}
+          title={citationId}
+          className="text-[var(--cr-accent)] hover:text-[var(--cr-accent-hover)] transition-colors font-medium"
+          style={{ fontSize: '0.75em', verticalAlign: 'super', textDecoration: 'none', marginLeft: '0.08em' }}
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById(citationId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }}
+        >
+          [§]
+        </a>
+      );
+      lastIndex = match.index + match[0].length;
+      continue;
+    }
     const citationLabel = sourceIndexMap.get(citationId);
     parts.push(
       <a
@@ -359,19 +383,60 @@ function SituationSection({ text, sources }: { text: string; sources?: SourceEnt
 
 // ─── Scorecard row ────────────────────────────────────────────────────────────
 
-function ScoreRow({ label, value, language }: { label: string; value: 'High' | 'Med' | 'Low' | null; language: string }) {
+function ScoreRow({ label, value, language, detail }: {
+  label: string;
+  value: 'High' | 'Med' | 'Low' | null;
+  language: string;
+  /** Anchoring reveal (rework §1/§4): rationale + the anchors the rating summarises. */
+  detail?: { anchors?: string[]; rationale_en?: string; rationale_fr?: string };
+}) {
+  const [openDetail, setOpenDetail] = useState(false);
   const colors: Record<string, string> = {
     High: 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900',
     Med: 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900',
     Low: 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900',
   };
+  const rationale = language === 'fr' ? detail?.rationale_fr : detail?.rationale_en;
+  const hasDetail = !!(detail && ((detail.anchors?.length ?? 0) > 0 || rationale?.trim()));
   return (
-    <div className="flex items-center justify-between py-2 border-b border-[var(--cr-divider)] last:border-0">
-      <span className="font-body text-sm text-[var(--cr-body)]">{label}</span>
-      {value ? (
-        <span className={`font-body text-xs px-2 py-0.5 border rounded ${colors[value]}`}>{ratingLabel(value, language)}</span>
-      ) : (
-        <span className="font-body text-xs text-[var(--cr-faint)] italic">—</span>
+    <div className="border-b border-[var(--cr-divider)] last:border-0">
+      <div
+        className={`flex items-center justify-between py-2 ${hasDetail ? 'cursor-pointer hover:bg-[var(--cr-hover)]' : ''}`}
+        onClick={hasDetail ? () => setOpenDetail((o) => !o) : undefined}
+      >
+        <span className="font-body text-sm text-[var(--cr-body)]">
+          {label}
+          {hasDetail && <span className="ml-1 text-[10px] text-[var(--cr-muted)]">{openDetail ? '▾' : '▸'}</span>}
+        </span>
+        {value ? (
+          <span className={`font-body text-xs px-2 py-0.5 border rounded ${colors[value]}`}>{ratingLabel(value, language)}</span>
+        ) : (
+          <span className="font-body text-xs text-[var(--cr-faint)] italic">—</span>
+        )}
+      </div>
+      {hasDetail && openDetail && (
+        <div className="pb-2 pl-1">
+          {!!rationale?.trim() && (
+            <p className="font-body text-xs italic text-[var(--cr-muted)] mb-1">{rationale}</p>
+          )}
+          {(detail!.anchors?.length ?? 0) > 0 && (
+            <div className="flex flex-wrap gap-1">
+              {detail!.anchors!.map((a) => (
+                <a
+                  key={a}
+                  href={a.includes('.') ? `#${a}` : `#source-${a}`}
+                  className="font-body text-[10px] px-1.5 py-0.5 border border-[var(--cr-border)] rounded text-[var(--cr-accent)] hover:bg-[var(--cr-hover)]"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById(a.includes('.') ? a : `source-${a}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }}
+                >
+                  {a}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
       )}
     </div>
   );
@@ -802,12 +867,12 @@ export default function CountryPage() {
                 <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">
                   {language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard'}
                 </p>
-                <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} />
-                <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} language={language} />
-                <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} language={language} />
-                <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} />
-                <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} />
-                <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} language={language} />
+                <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} detail={analysis!.scorecardAnchors?.eliteCohesion} />
+                <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} language={language} detail={analysis!.scorecardAnchors?.socialCohesion} />
+                <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} language={language} detail={analysis!.scorecardAnchors?.securityLoyalty} />
+                <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} detail={analysis!.scorecardAnchors?.economicPressure} />
+                <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} detail={analysis!.scorecardAnchors?.protestCapacity} />
+                <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} language={language} detail={analysis!.scorecardAnchors?.institutionalResilience} />
               </div>
               {/* Subsections */}
               {([

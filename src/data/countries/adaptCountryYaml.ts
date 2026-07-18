@@ -36,6 +36,20 @@ function adaptActors(arr: unknown): ActorEntry[] {
   }));
 }
 
+// scorecard_anchors (rework §1/§4): JSON-in-text — swallow parse failures like
+// the other JSON blocks (the scorecard then renders without the reveal).
+function parseScorecardAnchors(v: unknown): AnalysisContent['scorecardAnchors'] {
+  if (typeof v !== 'string' || !v.trim()) return undefined;
+  try {
+    const parsed = JSON.parse(v);
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed)
+      ? (parsed as AnalysisContent['scorecardAnchors'])
+      : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 function adaptRisks(arr: unknown): RiskEntry[] {
   return parseArrayInput(arr).map((r: YamlRecord) => ({
     title: String(r.title ?? ''),
@@ -136,6 +150,7 @@ export function adaptCountryYaml(raw: unknown): AnalysisContent {
     lastUpdated: String(d.lastUpdated ?? ''),
     // Manually maintained in Keystatic; only surfaces when set (no fabricated date).
     situationUpdated: String(d.situation_lastUpdated ?? '') || undefined,
+    scorecardAnchors: parseScorecardAnchors(d.scorecard_anchors),
     scorecard: {
       eliteCohesion: (d.scorecard_eliteCohesion as AnalysisContent['scorecard']['eliteCohesion']) ?? 'Med',
       // Only set when present in the YAML (no 'Med' default): an unresearched
