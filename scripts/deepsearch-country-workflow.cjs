@@ -770,8 +770,6 @@ function situationPassPrompt(code, nameEn, nameFr, events, today) {
 Country: ${nameEn} (${nameFr})
 Date: ${today}
 
-This pass populates the situation field AFTER the peer sections exist. It is verification-heavy by design: it holds recent, fast-moving, contested events — exactly the material most likely to be stale or wrong, and least likely to have a settled primary source. The Pass Zero-B list below is a STARTING LIST TO VERIFY, never content. Research tools can propose events; they cannot be trusted to date them, bound them, or decide what they changed. EVERY event must be verified against an openable primary or authoritative source ON THE RUN DATE before it enters the field.
-
 ## Input — the finished report (attached)
 
 You are given ONE attachment: the finished country report as a YAML file (content/countries/${code}/analysis.yaml). No other project context is assumed; everything you need is in this prompt and that file.
@@ -780,6 +778,9 @@ You are given ONE attachment: the finished country report as a YAML file (conten
 - The report's SOURCE REGISTRY is the \`sources\` key: a JSON array of source objects, each with an \`id\`. Every [source-id] citation marker in the report resolves to an entry there. Situation events cite ids from this registry wherever it already holds the right source; a source that is genuinely NOT in the registry goes in the newSources output, never inline-invented.
 - The \`situation_en\` and \`situation_fr\` keys in the file are EMPTY — this pass is what writes them.
 - In the peerCorrections output, \`field\` uses the dot form of a peer field: e.g. "economy.externalVulnerability" refers to the economy_externalVulnerability_en/_fr keys.
+- "Pass Zero-B" is a prior automated lookup pass that scanned the last 12 months for major events; its PROPOSED events are listed near the end of this prompt.
+
+This pass populates the situation field AFTER the peer sections exist. It is verification-heavy by design: it holds recent, fast-moving, contested events — exactly the material most likely to be stale or wrong, and least likely to have a settled primary source. The Pass Zero-B list below is a STARTING LIST TO VERIFY, never content. Research tools can propose events; they cannot be trusted to date them, bound them, or decide what they changed. EVERY event must be verified against an openable primary or authoritative source ON THE RUN DATE before it enters the field.
 
 PURPOSE: The six peer sections describe standing conditions. They have no place to hold discrete events that materially changed the country's position — a war, a tariff regime, a rupture. Without this field, such events vanish from the report entirely even when they dominate the country's situation. This field holds them.
 
