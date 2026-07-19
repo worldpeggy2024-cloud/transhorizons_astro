@@ -330,19 +330,6 @@ sources: |-
       "volatility": "High"
     },
     {
-      "id": "iran-ceasefire-statement",
-      "name": "'Only the president knows what he will do' on Iran, White House says in statement",
-      "nameFr": "« Seul le président sait ce qu'il fera » sur l'Iran, déclare la Maison-Blanche",
-      "url": "https://www.euronews.com/2026/04/07/only-the-president-knows-what-he-will-do-on-iran-white-house-says-in-statement",
-      "desc": "News report relaying an official White House press-secretary statement on a ceasefire announcement; secondary but directly quotes primary government language.",
-      "descFr": "Reportage relayant une déclaration officielle de la porte-parole de la Maison-Blanche sur une annonce de cessez-le-feu; source secondaire citant du langage gouvernemental primaire.",
-      "publicationDate": "2026-04-07",
-      "accessDate": "2026-07-18",
-      "confidence": "Med",
-      "citationType": "Fact",
-      "volatility": "High"
-    },
-    {
       "id": "ndstrategy-2026",
       "name": "2026 National Defense Strategy",
       "nameFr": "2026 National Defense Strategy",

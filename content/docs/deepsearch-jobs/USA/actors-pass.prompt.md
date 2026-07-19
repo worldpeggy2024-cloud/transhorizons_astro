@@ -1,4 +1,4 @@
-# Actors extraction prompt — v1.7
+# Actors extraction prompt — v1.8
 
 **Country:** United States / États-Unis (USA) · **Run date:** 2026-07-19
 
@@ -8,6 +8,8 @@ For a rendered country report, produce a structured actors index by extracting e
 - **Layer 2 (analytical draft):** interests, resources, constraints, likely moves, engagement mode — inferred from the report text and the pattern of how the actor operates in the country's current situation. Lower reliability; will be marked as AI-drafted and rendered collapsed by default.
 
 You may not add actors not named in the report. Layer 2 fields may reason about actors but must stay anchored to what the report says; they may not import knowledge about the country from outside the text.
+
+**This pass is CLOSED-BOOK.** Run it with research/web search off; if search cannot be disabled, do not use it. Do not search, browse, or look anything up — every statement in the output must be traceable to the attached report text. Layer 1 is pure extraction and Layer 2 is anchored inference; neither requires nor permits outside sources.
 
 ---
 
@@ -192,6 +194,8 @@ A foreign state (e.g. the United States for a Canada report) is external even if
 ## Output
 
 Return a YAML block with two top-level arrays: `domestic` and `external`. Each entry contains Layer 1 fields plus a nested `layer2Draft` object.
+
+**Self-check before returning:** every Layer 1 actor names in `fieldsCitedIn` the field(s) it was found in, verified against the attached text. Any actor whose `fieldsCitedIn` cannot be filled from the attached text is DROPPED rather than kept — an actor you cannot place in a field is an actor the report did not name.
 
 After the YAML block, produce a summary noting:
 
