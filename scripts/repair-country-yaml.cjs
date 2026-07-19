@@ -209,8 +209,12 @@ function repairFile(filePath, write) {
       continue;
     }
     const result = tryParseArrayBlock(raw.slice(range.contentStart, range.contentEnd));
-    if (!result.ok || !Array.isArray(result.parsed) || result.parsed.length === 0) {
-      errors.push(`${mustHave}: missing/empty/invalid array`);
+    if (!result.ok || !Array.isArray(result.parsed)) {
+      errors.push(`${mustHave}: missing/invalid array`);
+    } else if (result.parsed.length === 0) {
+      // Rework §8: Pass B emits risks EMPTY — populated by the dedicated risks
+      // pass. Empty is the expected pending state, not corruption.
+      notes.push(`${mustHave}: empty — awaits the dedicated risks pass (rework §8.2)`);
     }
   }
 
