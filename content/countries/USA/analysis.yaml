@@ -40,8 +40,8 @@ economy_publicFinances_en: 'The federal government runs large structural deficit
 economy_publicFinances_fr: 'Le gouvernement fédéral accuse d''importants déficits structurels et une dette croissante. Le Congressional Budget Office prévoit pour l''exercice 2026 un déficit de 1 900 milliards de dollars, soit 5,8 % du PIB, contre une moyenne de 3,8 % sur cinquante ans [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. La dette fédérale détenue par le public passe de 101 % du PIB en 2026 à 120 % projetés en 2036, dépassant le pic de 106 % de 1946 [cbo-budget-outlook-2026]. Les dépenses représentent 23,3 % du PIB et les recettes 17,5 % en 2026 [cbo-budget-outlook-2026]. Les intérêts nets atteignent 1 000 milliards de dollars en 2026 et devraient doubler pour atteindre 2 100 milliards (4,6 % du PIB) d''ici 2036 [cbo-budget-outlook-2026]. Le CBO prévoit une inflation de l''indice des prix à la consommation (IPC) d''environ 2,8 % en 2026, en repli ensuite [crfb-cbo-outlook-2026].'
 economy_externalVulnerability_en: 'The United States runs a persistent trade deficit and finances it in part through foreign purchases of its sovereign debt. Foreign holdings of Treasury securities totalled roughly $9.2 trillion as of December 2025, about 31% of total federal debt [treasury-tic-debt-holders]. The largest holders as of February 2026 were Japan ($1.24 trillion), the United Kingdom ($897 billion) and mainland China ($693.3 billion) [treasury-tic-debt-holders]. China''s holdings have declined over the decade, reflecting geopolitical diversification [treasury-tic-debt-holders]. The country is highly exposed on critical-mineral supply: it was 100% net import reliant on 16 nonfuel mineral commodities in 2025, with China the primary source for 14 of the most import-dependent critical minerals [usgs-mcs-2026]. As the issuer of the principal global reserve currency, the United States faces no sovereign external financing constraint of the kind facing smaller economies [treasury-tic-debt-holders].'
 economy_externalVulnerability_fr: 'Les États-Unis accusent un déficit commercial persistant qu''ils financent en partie par les achats étrangers de leur dette souveraine. Les avoirs étrangers en bons du Trésor s''élevaient à environ 9 200 milliards de dollars fin décembre 2025, soit environ 31 % de la dette fédérale totale [treasury-tic-debt-holders]. Les principaux détenteurs, en février 2026, étaient le Japon (1 240 milliards de dollars), le Royaume-Uni (897 milliards) et la Chine continentale (693,3 milliards) [treasury-tic-debt-holders]. Les avoirs chinois ont diminué au cours de la décennie, signe d''une diversification géopolitique [treasury-tic-debt-holders]. Le pays est très exposé sur l''approvisionnement en minéraux critiques : il dépendait à 100 % des importations nettes pour 16 produits minéraux non combustibles en 2025, la Chine étant la source principale de 14 des minéraux critiques les plus dépendants des importations [usgs-mcs-2026]. En tant qu''émetteur de la principale monnaie de réserve mondiale, les États-Unis ne subissent aucune contrainte de financement extérieur souverain comparable à celle des petites économies [treasury-tic-debt-holders].'
-economy_politicalEconomy_en: 'The United States is a market-led economy with limited direct state ownership, and the current contested boundary lies in the reach of executive control over the regulatory state rather than in nationalisation. The 2025 reconciliation act (Public Law 119-21, the One Big Beautiful Bill Act) permanently extended 2017 tax provisions and raised projected deficits by $4.7 trillion over 2026–2035, benefiting taxpayers and defence and homeland-security spending while cutting Medicaid and the Supplemental Nutrition Assistance Program (SNAP) [obbba-hr1][cbo-budget-outlook-2026]. The technically necessary reform — closing the primary and interest-driven fiscal gap — is politically constrained, with mandatory spending rising and net interest the fastest-growing outlay [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. The 2026 Supreme Court removal-power ruling shifts the state–market boundary by making formerly independent regulators subject to at-will presidential removal, increasing the political variability of enforcement [trump-v-slaughter-2026].'
-economy_politicalEconomy_fr: 'Les États-Unis constituent une économie de marché à propriété publique directe limitée, la frontière contestée du moment portant sur la portée du contrôle exécutif sur l''État régulateur plutôt que sur des nationalisations. La loi de réconciliation de 2025 (loi publique 119-21, la One Big Beautiful Bill Act) a pérennisé les dispositions fiscales de 2017 et relevé les déficits projetés de 4 700 milliards de dollars sur 2026-2035, au bénéfice des contribuables et des dépenses de défense et de sécurité intérieure, tout en réduisant Medicaid et le Supplemental Nutrition Assistance Program (SNAP) [obbba-hr1][cbo-budget-outlook-2026]. La réforme techniquement nécessaire — résorber le déficit primaire et celui tiré par les intérêts — est politiquement contrainte, les dépenses obligatoires augmentant et les intérêts nets étant le poste à la croissance la plus rapide [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. L''arrêt de 2026 de la Cour suprême sur le pouvoir de révocation déplace la frontière État-marché en soumettant des régulateurs autrefois indépendants à la révocation discrétionnaire présidentielle, accroissant la variabilité politique de l''application des règles [trump-v-slaughter-2026].'
+economy_politicalEconomy_en: 'The United States is a market-led economy with limited direct state ownership, and the current contested boundary lies in the reach of executive control over the regulatory state rather than in nationalisation. The model''s load-bearing entities are named in public rankings and federal records: the Fortune 500 ranks the largest United States corporations by revenue [fortune-500-2026]; four technology firms — Meta, Microsoft, Amazon and Alphabet — carry the artificial-intelligence data-centre buildout, with combined capital expenditure of about $410 billion in 2025, plans of roughly $725 billion for 2026 and a Goldman Sachs projection of $5.3 trillion across fiscal years 2025–2030 [goldman-hyperscaler-capex-2026]; the defence industrial base runs through the Department of Defense''s top-100 contractor list, which names the long-standing prime contractors, Lockheed Martin, RTX, Boeing, General Dynamics and Northrop Grumman among them [dod-top100-contractors-list][crs-dod-contractors-primer]; and organised labour''s weight is measured in the Bureau of Labor Statistics'' annual union-membership release [bls-union-members-2025], which the Economic Policy Institute — a think tank with a pro-labour orientation — reads as a 2025 increase in unionisation [epi-unionization-increase-2025]. The 2025 reconciliation act (Public Law 119-21, the One Big Beautiful Bill Act) permanently extended 2017 tax provisions and raised projected deficits by $4.7 trillion over 2026–2035, benefiting taxpayers and defence and homeland-security spending while cutting Medicaid and the Supplemental Nutrition Assistance Program (SNAP) [obbba-hr1][cbo-budget-outlook-2026]. The technically necessary reform — closing the primary and interest-driven fiscal gap — is politically constrained, with mandatory spending rising and net interest the fastest-growing outlay [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. The 2026 Supreme Court removal-power ruling shifts the state–market boundary by making formerly independent regulators subject to at-will presidential removal, increasing the political variability of enforcement [trump-v-slaughter-2026].'
+economy_politicalEconomy_fr: 'Les États-Unis constituent une économie de marché à propriété publique directe limitée, la frontière contestée du moment portant sur la portée du contrôle exécutif sur l''État régulateur plutôt que sur des nationalisations. Les entités porteuses du modèle sont nommées dans les classements publics et les registres fédéraux : le Fortune 500 classe les plus grandes entreprises américaines par chiffre d''affaires [fortune-500-2026]; quatre entreprises technologiques — Meta, Microsoft, Amazon et Alphabet — portent l''expansion des centres de données d''intelligence artificielle, avec des dépenses d''investissement combinées d''environ 410 milliards de dollars en 2025, des plans d''environ 725 milliards pour 2026 et une projection de Goldman Sachs de 5 300 milliards sur les exercices 2025-2030 [goldman-hyperscaler-capex-2026]; la base industrielle de défense passe par la liste des 100 premiers entrepreneurs du département de la Défense, qui nomme les maîtres d''œuvre historiques, dont Lockheed Martin, RTX, Boeing, General Dynamics et Northrop Grumman [dod-top100-contractors-list][crs-dod-contractors-primer]; et le poids du travail organisé se mesure dans le communiqué annuel d''adhésion syndicale du Bureau of Labor Statistics [bls-union-members-2025], que l''Economic Policy Institute — groupe de réflexion à orientation pro-syndicale — lit comme une hausse de la syndicalisation en 2025 [epi-unionization-increase-2025]. La loi de réconciliation de 2025 (loi publique 119-21, la One Big Beautiful Bill Act) a pérennisé les dispositions fiscales de 2017 et relevé les déficits projetés de 4 700 milliards de dollars sur 2026-2035, au bénéfice des contribuables et des dépenses de défense et de sécurité intérieure, tout en réduisant Medicaid et le Supplemental Nutrition Assistance Program (SNAP) [obbba-hr1][cbo-budget-outlook-2026]. La réforme techniquement nécessaire — résorber le déficit primaire et celui tiré par les intérêts — est politiquement contrainte, les dépenses obligatoires augmentant et les intérêts nets étant le poste à la croissance la plus rapide [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. L''arrêt de 2026 de la Cour suprême sur le pouvoir de révocation déplace la frontière État-marché en soumettant des régulateurs autrefois indépendants à la révocation discrétionnaire présidentielle, accroissant la variabilité politique de l''application des règles [trump-v-slaughter-2026].'
 political_powerStructure_en: 'The United States is a federal presidential republic in which power is won through separately elected executive and legislative branches, and as of 18 July 2026 the federal government is unified under Republican control, with the balance of power moving toward the presidency — detail follows. The executive is held by President Donald Trump, a Republican who won the November 2024 election and was inaugurated in January 2025 [freedomhouse-usa-2026]. Legislative control is stated separately from executive control because the system permits divergence, but here it does not: in the Senate (100 seats) Republicans hold 53 seats to the Democrats'' 45, with 2 independents (Senators King and Sanders) caucusing with the Democrats [senate-partydiv][senate-dailypress]; in the House of Representatives (435 seats) Republicans hold 217 seats, Democrats 212, with 1 independent and 5 vacancies following deaths and resignations in 2026 [house-partybreakdown]. Government is therefore unified rather than divided. Whether operative power tracks the constitutional allocation is contested: the Constitution vests executive power in the President and legislative power in Congress, but 2026 apex-court doctrine has expanded presidential control over the executive branch (removal of independent-agency heads) [scotus-opinions-portal], and this pass presents that contest without resolving it. [calibration-executive-source]'
 political_powerStructure_fr: 'Les États-Unis sont une république fédérale présidentielle où le pouvoir se conquiert par l''élection distincte de l''exécutif et du législatif, et au 18 juillet 2026 le gouvernement fédéral est unifié sous contrôle républicain, l''équilibre des pouvoirs se déplaçant vers la présidence — les détails suivent. L''exécutif est détenu par le président Donald Trump, républicain élu en novembre 2024 et investi en janvier 2025 [freedomhouse-usa-2026]. Le contrôle du législatif est indiqué séparément de celui de l''exécutif, car le régime autorise leur divergence, mais tel n''est pas le cas ici : au Sénat (100 sièges), les républicains détiennent 53 sièges contre 45 aux démocrates, deux indépendants (les sénateurs King et Sanders) siégeant avec les démocrates [senate-partydiv][senate-dailypress]; à la Chambre des représentants (435 sièges), les républicains détiennent 217 sièges, les démocrates 212, avec un indépendant et cinq sièges vacants après des décès et démissions en 2026 [house-partybreakdown]. Le gouvernement est donc unifié et non divisé. La question de savoir si le pouvoir effectif suit la répartition constitutionnelle est contestée : la Constitution confie l''exécutif au président et le législatif au Congrès, mais la jurisprudence de la Cour suprême de 2026 a élargi le contrôle présidentiel sur la branche exécutive (révocation des dirigeants d''agences indépendantes) [scotus-opinions-portal]; cette étape présente ce différend sans le trancher. [calibration-executive-source]'
 political_rightsAndChecks_en: 'The federal judiciary is appointed by the President with Senate confirmation and holds life tenure, and judicial review has been exercised since Marbury v. Madison [marbury-v-madison-1803][constitution-usa-1787]. Independent scorers document measured erosion of checks: Freedom House rated the United States 81 of 100 in its Freedom in the World 2026 report, a 3-point decline, and per Pew Research Center the US rating from 2005 to 2025 declined more than any other country Freedom House categorizes as ''free'' except Nauru and Bulgaria — Freedom House is an advocacy-oriented US-based scorer whose ratings are interpretive [freedomhouse-usa-2026]. V-Dem''s Democracy Report 2026 downgraded the United States from ''liberal democracy'' to ''electoral democracy'' for the first time in over five decades and characterises the decline as unprecedented in modern history [vdem-democracy-report-2026]. The World Justice Project Rule of Law Index 2025 ranked the United States 27th of 143 countries overall and 112th of 143 on access to civil justice [wjp-rule-of-law-2025]. Transparency International''s 2025 Corruption Perceptions Index scored the United States 64 of 100 and ranked it 29th of 182, its lowest-ever score, down from 65 in 2024 [transparency-cpi-2025]. On media, Freedom House records a free and diverse press under strong constitutional protection but eroded by government pressure, market concentration and partisan polarisation [freedomhouse-usa-2026].'
@@ -74,8 +74,8 @@ security_military_en: 'The United States is the world''s pre-eminent military po
 security_military_fr: 'Les États-Unis sont la première puissance militaire mondiale, dotée d''une capacité de projection de puissance mondiale sur terre, mer, air, cyberespace et espace, et d''une armée de volontaires. Leurs dépenses militaires de 2025 se sont élevées à 954 milliards de dollars, soit environ 33 % du total mondial et plus que les six pays suivants réunis, selon le Stockholm International Peace Research Institute (SIPRI) [sipri-milex-2025]. Puissance nucléaire privilégiant la modernisation de son arsenal, le pays a alloué en 2025 9,9 milliards de dollars au sous-marin lanceur d''engins de classe Columbia et 13,9 milliards au programme de sous-marins d''attaque de classe Virginia [sipri-milex-2025]. La taille, la structure et les capacités par domaine des forces sont recensées par l''International Institute for Strategic Studies dans The Military Balance 2026 [iiss-military-balance-2026]. La Stratégie de défense nationale 2026 réoriente les priorités vers la défense du territoire, la dissuasion de la Chine par le déni dans l''Indo-Pacifique, le partage du fardeau avec les alliés et la reconstruction de la base industrielle de défense [ndstrategy-2026].'
 security_transnationalExposure_en: 'US transnational exposure centres on cross-border drug trafficking and migration flows, which the 2026 National Defense Strategy and administration frame as narco-terrorism warranting military response, including strikes on trafficking vessels and the January 2026 Venezuela operation targeting figures indicted for narco-terrorism [ndstrategy-2026][maduro-capture-wardept]. Border and migration flow statistics are compiled by Customs and Border Protection [dhs-cbp-border-stats]. Net international migration flows fell historically in 2024–2025 amid intensified enforcement [census-poprelease-2026].'
 security_transnationalExposure_fr: 'L''exposition transnationale des États-Unis se concentre sur le trafic de drogue transfrontalier et les flux migratoires, que la Stratégie de défense nationale 2026 et l''administration qualifient de narcoterrorisme justifiant une réponse militaire, dont des frappes sur des navires de trafic et l''opération au Venezuela de janvier 2026 visant des personnes inculpées de narcoterrorisme [ndstrategy-2026][maduro-capture-wardept]. Les statistiques des flux frontaliers et migratoires sont compilées par les douanes et la protection des frontières [dhs-cbp-border-stats]. Le solde migratoire international a chuté historiquement en 2024-2025 dans un contexte d''application renforcée [census-poprelease-2026].'
-security_diplomacy_en: 'The United States anchors a global alliance network while its 2026 National Defense Strategy shifts toward transactional burden-sharing, directing European allies to lead their own defence with limited US support and framing China as the primary balance-of-power competitor to be deterred by denial in the Indo-Pacific [ndstrategy-2026]. In the Western Hemisphere the administration has asserted a ''Trump corollary'' to the Monroe Doctrine and acted directly, capturing Venezuelan leader Nicolás Maduro in a January 2026 military operation and installing US influence over a political transition [maduro-capture-wardept][ndstrategy-2026]. In the Middle East, US and Israeli forces began major combat operations against Iran on 28 February 2026 (following the June 2025 strikes on Iranian nuclear sites) [iran-ops-transcript]; a Pakistan-mediated ceasefire took effect 8 April 2026 and was extended and formalised in an interim memorandum of understanding signed 17 June 2026 [whitehouse-epic-fury-ceasefire], then declared over by the President on 8 July 2026 [cnbc-iran-ceasefire-over], and as of 19 July 2026 hostilities are active, with United States strikes and a naval blockade ongoing and no ceasefire in effect [cnn-iran-war-july18]. The character of these relationships is interpretive, anchored to those documented operations and the strategy text [ndstrategy-2026][iran-ops-transcript].'
-security_diplomacy_fr: 'Les États-Unis ancrent un réseau d''alliances mondial tandis que leur Stratégie de défense nationale 2026 évolue vers un partage transactionnel du fardeau, enjoignant aux alliés européens de conduire leur propre défense avec un appui américain limité et qualifiant la Chine de principal concurrent d''équilibre des puissances, à dissuader par le déni dans l''Indo-Pacifique [ndstrategy-2026]. Dans l''hémisphère occidental, l''administration a affirmé un « corollaire Trump » à la doctrine Monroe et agi directement, capturant le dirigeant vénézuélien Nicolás Maduro lors d''une opération militaire en janvier 2026 et installant l''influence américaine sur une transition politique [maduro-capture-wardept][ndstrategy-2026]. Au Moyen-Orient, les forces américaines et israéliennes ont lancé des opérations de combat majeures contre l''Iran le 28 février 2026 (après les frappes de juin 2025 sur les sites nucléaires iraniens) [iran-ops-transcript]; un cessez-le-feu négocié par le Pakistan est entré en vigueur le 8 avril 2026, prolongé puis formalisé par un protocole d''accord intérimaire signé le 17 juin 2026 [whitehouse-epic-fury-ceasefire], avant d''être déclaré terminé par le président le 8 juillet 2026 [cnbc-iran-ceasefire-over]; au 19 juillet 2026, les hostilités sont actives, avec des frappes américaines et un blocus naval en cours, sans cessez-le-feu en vigueur [cnn-iran-war-july18]. Le caractère de ces relations est interprétatif, ancré à ces opérations documentées et au texte de la stratégie [ndstrategy-2026][iran-ops-transcript].'
+security_diplomacy_en: 'The United States anchors a global alliance network while its 2026 National Defense Strategy shifts toward transactional burden-sharing, directing European allies to lead their own defence with limited US support and framing China as the primary balance-of-power competitor to be deterred by denial in the Indo-Pacific [ndstrategy-2026]. That network is named and treaty-based: the North Atlantic Treaty binds the United States to the 31 other member states of the North Atlantic Treaty Organization (NATO), 32 members in all as of 2026 [nato-member-countries]; collective-defence treaties cover Japan, South Korea, the Philippines, Australia and New Zealand (ANZUS), Thailand and the Americas under the Rio Treaty [state-collective-defense-arrangements]; a further statutory tier of major non-NATO allies includes Israel, Japan, South Korea and Australia [state-major-non-nato-ally-status]; the AUKUS partnership adds submarine and advanced-capability cooperation with the United Kingdom and Australia [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599]; and the overseas basing and troop presence underwriting these commitments is documented by host country [crs-overseas-basing-r48123]. In the Western Hemisphere the administration has asserted a ''Trump corollary'' to the Monroe Doctrine and acted directly, capturing Venezuelan leader Nicolás Maduro in a January 2026 military operation and installing US influence over a political transition [maduro-capture-wardept][ndstrategy-2026]. In the Middle East, US and Israeli forces began major combat operations against Iran on 28 February 2026 (following the June 2025 strikes on Iranian nuclear sites) [iran-ops-transcript]; a Pakistan-mediated ceasefire took effect 8 April 2026 and was extended and formalised in an interim memorandum of understanding signed 17 June 2026 [whitehouse-epic-fury-ceasefire], then declared over by the President on 8 July 2026 [cnbc-iran-ceasefire-over], and as of 19 July 2026 hostilities are active, with United States strikes and a naval blockade ongoing and no ceasefire in effect [cnn-iran-war-july18]. The character of these relationships is interpretive, anchored to those documented operations and the strategy text [ndstrategy-2026][iran-ops-transcript].'
+security_diplomacy_fr: 'Les États-Unis ancrent un réseau d''alliances mondial tandis que leur Stratégie de défense nationale 2026 évolue vers un partage transactionnel du fardeau, enjoignant aux alliés européens de conduire leur propre défense avec un appui américain limité et qualifiant la Chine de principal concurrent d''équilibre des puissances, à dissuader par le déni dans l''Indo-Pacifique [ndstrategy-2026]. Ce réseau est nommé et fondé sur des traités : le traité de l''Atlantique Nord lie les États-Unis aux 31 autres États membres de l''Organisation du traité de l''Atlantique Nord (OTAN), soit 32 membres au total en 2026 [nato-member-countries]; des traités de défense collective couvrent le Japon, la Corée du Sud, les Philippines, l''Australie et la Nouvelle-Zélande (ANZUS), la Thaïlande et les Amériques via le traité de Rio [state-collective-defense-arrangements]; un étage statutaire supplémentaire d''alliés majeurs non membres de l''OTAN comprend Israël, le Japon, la Corée du Sud et l''Australie [state-major-non-nato-ally-status]; le partenariat AUKUS ajoute une coopération sur les sous-marins et les capacités avancées avec le Royaume-Uni et l''Australie [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599]; et les bases et la présence militaire à l''étranger qui sous-tendent ces engagements sont documentées par pays hôte [crs-overseas-basing-r48123]. Dans l''hémisphère occidental, l''administration a affirmé un « corollaire Trump » à la doctrine Monroe et agi directement, capturant le dirigeant vénézuélien Nicolás Maduro lors d''une opération militaire en janvier 2026 et installant l''influence américaine sur une transition politique [maduro-capture-wardept][ndstrategy-2026]. Au Moyen-Orient, les forces américaines et israéliennes ont lancé des opérations de combat majeures contre l''Iran le 28 février 2026 (après les frappes de juin 2025 sur les sites nucléaires iraniens) [iran-ops-transcript]; un cessez-le-feu négocié par le Pakistan est entré en vigueur le 8 avril 2026, prolongé puis formalisé par un protocole d''accord intérimaire signé le 17 juin 2026 [whitehouse-epic-fury-ceasefire], avant d''être déclaré terminé par le président le 8 juillet 2026 [cnbc-iran-ceasefire-over]; au 19 juillet 2026, les hostilités sont actives, avec des frappes américaines et un blocus naval en cours, sans cessez-le-feu en vigueur [cnn-iran-war-july18]. Le caractère de ces relations est interprétatif, ancré à ces opérations documentées et au texte de la stratégie [ndstrategy-2026][iran-ops-transcript].'
 situation_en: |-
   [
     {
@@ -2519,6 +2519,159 @@ sources: |-
       "accessDate": "2026-07-19",
       "confidence": "High",
       "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "nato-member-countries",
+      "name": "NATO member countries",
+      "nameFr": "Pays membres de l'OTAN",
+      "url": "https://www.nato.int/en/about-us/organization/nato-member-countries",
+      "desc": "NATO's official page listing all 32 current member states and accession dates; primary institutional source naming the alliance and its members.",
+      "descFr": "Page officielle de l'OTAN énumérant les 32 États membres actuels et leurs dates d'adhésion; source institutionnelle primaire nommant l'alliance et ses membres.",
+      "publicationDate": "2024-03-10",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "state-collective-defense-arrangements",
+      "name": "U.S. Collective Defense Arrangements",
+      "nameFr": "U.S. Collective Defense Arrangements",
+      "url": "https://2009-2017.state.gov/s/l/treaty/collectivedefense/",
+      "desc": "State Department archived list of U.S. bilateral and multilateral mutual-defence treaties and their parties, including the North Atlantic Treaty and Rio Treaty; primary official treaty-index source.",
+      "descFr": "Liste archivée du département d'État des traités de défense mutuelle bilatéraux et multilatéraux des États-Unis et de leurs parties; source officielle primaire d'index des traités.",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "state-major-non-nato-ally-status",
+      "name": "Major Non-NATO Ally Status",
+      "nameFr": "Major Non-NATO Ally Status",
+      "url": "https://www.state.gov/major-non-nato-ally-status",
+      "desc": "State Department's current official listing of countries designated Major Non-NATO Allies under U.S. statute, naming each designee; primary legal-status source.",
+      "descFr": "Liste officielle actuelle du département d'État des pays désignés alliés majeurs non membres de l'OTAN en vertu de la loi américaine, nommant chaque désigné; source primaire de statut juridique.",
+      "publicationDate": "2025-08-06",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "crs-overseas-basing-r48123",
+      "name": "U.S. Overseas Basing: Background and Issues for Congress",
+      "nameFr": "U.S. Overseas Basing: Background and Issues for Congress",
+      "url": "https://www.congress.gov/crs-product/R48123",
+      "desc": "Congressional Research Service report detailing U.S. overseas military bases and troop presence by host country, function, and resourcing; primary nonpartisan legislative-research source.",
+      "descFr": "Rapport du Congressional Research Service détaillant les bases militaires américaines à l'étranger et la présence des troupes par pays hôte; source primaire de recherche législative non partisane.",
+      "publicationDate": "2024-10-06",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "crs-aukus-indo-pacific",
+      "name": "AUKUS and Indo-Pacific Security",
+      "nameFr": "AUKUS and Indo-Pacific Security",
+      "url": "https://www.congress.gov/crs-product/IF12113",
+      "desc": "Congressional Research Service in-focus brief describing the AUKUS trilateral security partnership among the United States, United Kingdom, and Australia; primary nonpartisan legislative-research source.",
+      "descFr": "Bref du Congressional Research Service décrivant le partenariat de sécurité trilatéral AUKUS entre les États-Unis, le Royaume-Uni et l'Australie; source primaire de recherche législative non partisane.",
+      "publicationDate": "2025-03-02",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "crs-aukus-pillar2-r47599",
+      "name": "AUKUS Pillar 2 (Advanced Capabilities): Background and Issues for Congress",
+      "nameFr": "AUKUS Pillar 2 (Advanced Capabilities): Background and Issues for Congress",
+      "url": "https://www.congress.gov/crs-product/R47599",
+      "desc": "Congressional Research Service report on AUKUS advanced-capabilities cooperation and related congressional considerations; primary nonpartisan legislative-research source.",
+      "descFr": "Rapport du Congressional Research Service sur la coopération en capacités avancées d'AUKUS et les considérations législatives connexes; source primaire de recherche législative non partisane.",
+      "publicationDate": "2024-05-20",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "fortune-500-2026",
+      "name": "Fortune 500 – The largest companies in the U.S. by revenue",
+      "nameFr": "Fortune 500 – Les plus grandes entreprises américaines par chiffre d'affaires",
+      "url": "https://fortune.com/ranking/fortune500/",
+      "desc": "Fortune magazine's current annual ranking naming the 500 largest U.S. corporations by revenue; long-established authoritative business-media ranking, methodology disclosed.",
+      "descFr": "Classement annuel actuel du magazine Fortune nommant les 500 plus grandes entreprises américaines par chiffre d'affaires; classement médiatique d'affaires établi et faisant autorité.",
+      "publicationDate": "2026-06-02",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "goldman-hyperscaler-capex-2026",
+      "name": "Meta, Microsoft, Amazon, and Alphabet are about to spend a shocking amount of money to dominate the AI era",
+      "nameFr": "Meta, Microsoft, Amazon, and Alphabet are about to spend a shocking amount of money to dominate the AI era",
+      "url": "https://finance.yahoo.com/sectors/technology/article/meta-microsoft-amazon-and-alphabet-are-about-to-spend-a-shocking-amount-of-money-to-dominate-the-ai-era-115359575.html",
+      "desc": "Financial-news report citing Goldman Sachs analyst figures naming the four hyperscalers driving the AI data-centre capex buildout and disclosed spending scale; secondary source relaying primary earnings disclosures.",
+      "descFr": "Reportage financier citant les chiffres d'un analyste de Goldman Sachs nommant les quatre hyperscalers menant l'expansion des centres de données d'intelligence artificielle; source secondaire relayant des divulgations de résultats primaires.",
+      "publicationDate": "2026-06-03",
+      "accessDate": "2026-07-19",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "High"
+    },
+    {
+      "id": "crs-dod-contractors-primer",
+      "name": "Defense Primer: Department of Defense Contractors",
+      "nameFr": "Defense Primer: Department of Defense Contractors",
+      "url": "https://www.congress.gov/crs-product/IF10600",
+      "desc": "Congressional Research Service primer summarizing DOD contract obligations by scale and sector; primary nonpartisan legislative-research source on the defence industrial base.",
+      "descFr": "Aperçu du Congressional Research Service résumant les obligations contractuelles du département de la Défense par échelle et secteur; source primaire de recherche législative non partisane sur la base industrielle de défense.",
+      "publicationDate": "2024-06-05",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "dod-top100-contractors-list",
+      "name": "CY 2025-26 Top 100 Defense Contractors by Global Vendor Name",
+      "nameFr": "CY 2025-26 Top 100 Defense Contractors by Global Vendor Name",
+      "url": "https://dodsoco.ogc.osd.mil/Portals/102/Documents/Conflicts/CY%202025-26%20Top100%20Contractor%20List%20-Alpha%20(FY24).pdf",
+      "desc": "Department of Defense Standards of Conduct Office's official current list naming the top 100 defence contractors by global vendor name; primary federal contracting-office source.",
+      "descFr": "Liste officielle actuelle du bureau des normes de conduite du département de la Défense nommant les 100 principaux entrepreneurs de défense par nom de fournisseur mondial; source fédérale primaire des marchés publics.",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "bls-union-members-2025",
+      "name": "Union Members — 2025",
+      "nameFr": "Union Members — 2025",
+      "url": "https://www.bls.gov/news.release/pdf/union2.pdf",
+      "desc": "Bureau of Labor Statistics official annual news release reporting national union membership rate and count by sector; primary federal labour-statistics source.",
+      "descFr": "Communiqué annuel officiel du Bureau of Labor Statistics rapportant le taux et le nombre d'adhésion syndicale nationale par secteur; source statistique fédérale primaire sur le travail.",
+      "publicationDate": "2026-02-17",
+      "accessDate": "2026-07-19",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "epi-unionization-increase-2025",
+      "name": "Workers' resolve drives increase in unionization in 2025",
+      "nameFr": "Workers' resolve drives increase in unionization in 2025",
+      "url": "https://www.epi.org/publication/workers-resolve-drives-increase-in-unionization-in-2025/",
+      "desc": "Economic Policy Institute analysis of BLS union data identifying sectoral and demographic drivers of 2025 unionization gains; think-tank interpretive source with a pro-labour orientation.",
+      "descFr": "Analyse de l'Economic Policy Institute des données syndicales de la BLS identifiant les facteurs sectoriels et démographiques de la hausse de la syndicalisation en 2025; source interprétative d'un groupe de réflexion à orientation pro-syndicale.",
+      "accessDate": "2026-07-19",
+      "confidence": "Med",
+      "citationType": "Interpretation",
       "volatility": "Med"
     }
   ]
