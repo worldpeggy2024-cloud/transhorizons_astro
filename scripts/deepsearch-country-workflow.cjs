@@ -651,7 +651,7 @@ function calibrationBlock(cal) {
 
 function powerStructureAnchor(cal) {
   if (!cal) {
-    return 'Anchor to calibration. For each chamber in legislature.chambers, give that chamber\'s composition cited to its own liveStandingsUrl, verified on the run date; a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date. Where executive.unifiedDividedApplies is true, state plainly whether government is unified or divided. On powerLocus: where constitutionalOrganIsWherePowerSits is true, the constitutional allocation is the operative allocation and the field proceeds normally. Where it is false, the standings discipline still applies to the formal organ, but the field must locate actual power in powerLocus.actualLocus and say so explicitly — the formal organ is then described as formal, not operative. Where it is UNRESOLVED, state the constitutional allocation and also state plainly that whether operative power tracks it is contested; present the contest, do not resolve it.';
+    return 'Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). For each chamber in legislature.chambers, give that chamber\'s composition cited to its own liveStandingsUrl, verified on the run date; a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date. Where executive.unifiedDividedApplies is true, state plainly whether government is unified or divided. On powerLocus: where constitutionalOrganIsWherePowerSits is true, the constitutional allocation is the operative allocation and the field proceeds normally. Where it is false, the standings discipline still applies to the formal organ, but the field must locate actual power in powerLocus.actualLocus and say so explicitly — the formal organ is then described as formal, not operative. Where it is UNRESOLVED, state the constitutional allocation and also state plainly that whether operative power tracks it is contested; present the contest, do not resolve it.';
   }
   const chambers = Array.isArray(cal.legislature && cal.legislature.chambers) ? cal.legislature.chambers : [];
   const chamberText = chambers.length
@@ -670,12 +670,12 @@ function powerStructureAnchor(cal) {
       ? ` The formal organ is not where power sits: apply the standings discipline to the formal organ, but locate actual power in ${(cal.powerLocus && cal.powerLocus.actualLocus) || 'the actual locus named in Pass Zero'} and say so explicitly — describe the formal organ as formal, not operative.`
       : ' Whether operative power tracks the constitutional allocation is CONTESTED: state the constitutional allocation and state plainly that the operative locus is contested — present the contest, do not resolve it.';
   const execCite = (cal.executive && nonEmptyString(cal.executive.sourceUrl)) ? ' Cite the executive-type determination to calibration-executive-source.' : '';
-  return `Anchor to calibration. ${chamberText}${udText}${plText}${execCite}`;
+  return `Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). ${chamberText}${udText}${plText}${execCite}`;
 }
 
 function substrateAnchor(cal) {
   if (!cal) {
-    return 'Anchor to calibration. Cite ONLY the instruments listed in substrateInstruments, each by its id. Where legalOrders.structure is plural, hold each order SEPARATELY and name what each governs; do not treat the statutory order as the real one. Where it is UNRESOLVED, present the competing characterisations as contested.';
+    return 'Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). Cite ONLY the instruments listed in substrateInstruments, each by its id. Where legalOrders.structure is plural, hold each order SEPARATELY and name what each governs; do not treat the statutory order as the real one. Where it is UNRESOLVED, present the competing characterisations as contested.';
   }
   const instruments = Array.isArray(cal.substrateInstruments) ? cal.substrateInstruments : [];
   const list = instruments.map((i) => `${nonEmptyString(i.id) ? i.id : slugifyId(i.name)} (${i.name})`).join('; ');
@@ -687,16 +687,16 @@ function substrateAnchor(cal) {
     : s === 'single statutory'
       ? ' The legal order is a single statutory order.'
       : ' The legal-order structure is contested — present the competing characterisations as contested.';
-  return `Anchor to calibration. ${instrText}${ordersText}`;
+  return `Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). ${instrText}${ordersText}`;
 }
 
 function capacityAnchor(cal) {
   if (!cal) {
-    return 'Anchor to calibration. Where executionRegime.publishedApprovalsRegimeExists is true, capacity.approvals anchors to executionRegime.permittingAuthorityUrl. Where it is false, permitting timelines are NOT the instrument — name the actual binding constraint on execution and measure that instead. Where territorialControl.status is contested, state which territory the capacity measurement covers.';
+    return 'Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). Where executionRegime.publishedApprovalsRegimeExists is true, capacity.approvals anchors to executionRegime.permittingAuthorityUrl. Where it is false, permitting timelines are NOT the instrument — name the actual binding constraint on execution and measure that instead. Where territorialControl.status is contested, state which territory the capacity measurement covers.';
   }
   const e = calFlag(cal.executionRegime && cal.executionRegime.publishedApprovalsRegimeExists);
   const eText = e === 'true'
-    ? ` A published approvals regime exists: capacity.approvals anchors to ${(cal.executionRegime && cal.executionRegime.permittingAuthorityUrl) || 'the permitting authority named in Pass Zero'}.`
+    ? ` A published approvals regime exists: capacity.approvals anchors to ${(cal.executionRegime && cal.executionRegime.permittingAuthorityUrl) || 'the permitting authority named in Pass Zero'} — cite it as [permitting-authority].`
     : e === 'false'
       ? ' No published approvals regime exists: permitting timelines are NOT the instrument — name the actual binding constraint on execution and measure that instead.'
       : ' Whether a published approvals regime exists is unresolved; name the actual binding constraint on execution and measure that.';
@@ -719,7 +719,7 @@ function geographyPeripheryClause(cal) {
 
 function cohesionAnchor(cal) {
   if (!cal) {
-    return 'Anchor to calibration. The primary instrument is cohesionInstrument.primaryBarometer. Then, on selfReportReliabilityFlag:\n- unconstrained: report the figures directly.\n- partisan-sorted: respondents answer honestly, but responses track which party holds power rather than stable underlying trust. State this plainly, and report cohort or partisan breakdowns rather than the headline aggregate, which is a systematically distorted artefact.\n- constrained: respondents are not free to answer honestly (repression, preference falsification). Reported institutional trust does not measure trust. State this plainly and do not report the figure at face value.\n- UNRESOLVED: present the reliability question as contested and report the figures with that caveat attached.';
+    return 'Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). The primary instrument is cohesionInstrument.primaryBarometer. Then, on selfReportReliabilityFlag:\n- unconstrained: report the figures directly.\n- partisan-sorted: respondents answer honestly, but responses track which party holds power rather than stable underlying trust. State this plainly, and report cohort or partisan breakdowns rather than the headline aggregate, which is a systematically distorted artefact.\n- constrained: respondents are not free to answer honestly (repression, preference falsification). Reported institutional trust does not measure trust. State this plainly and do not report the figure at face value.\n- UNRESOLVED: present the reliability question as contested and report the figures with that caveat attached.';
   }
   const barometer = (cal.cohesionInstrument && nonEmptyString(cal.cohesionInstrument.primaryBarometer)) ? cal.cohesionInstrument.primaryBarometer : 'the citizen self-report barometer identified in Pass Zero';
   const f = calFlag(cal.cohesionInstrument && cal.cohesionInstrument.selfReportReliabilityFlag);
@@ -731,7 +731,7 @@ function cohesionAnchor(cal) {
         ? 'Respondents are not free to answer honestly (repression, preference falsification). Reported institutional trust does not measure trust. State this plainly and do not report the figure at face value.'
         : 'The reliability question is contested — present it as contested and report the figures with that caveat attached.';
   const flagLabel = (cal.cohesionInstrument && nonEmptyString(cal.cohesionInstrument.selfReportReliabilityFlag)) ? cal.cohesionInstrument.selfReportReliabilityFlag : 'UNRESOLVED';
-  return `Anchor to calibration. The primary instrument is ${barometer}. selfReportReliabilityFlag is ${flagLabel}: ${branch}`;
+  return `Anchored to the Pass Zero calibration (cite ONLY real instrument ids — never a literal [calibration] marker). The primary instrument is ${barometer}. selfReportReliabilityFlag is ${flagLabel}: ${branch}`;
 }
 
 // --- Event-layer resolvers (Pass Zero-B) -------------------------------------------------
@@ -1455,6 +1455,24 @@ function calibrationSources(calibration, accessDate) {
   const exec = (calibration && calibration.executive) || {};
   if (nonEmptyString(exec.sourceUrl)) {
     add('calibration-executive-source', 'Executive-type determination — constitutional/primary source', exec.sourceUrl, exec.note);
+  }
+  // The approvals regime the prompt tells capacity.approvals to anchor to must
+  // itself be citable — promote it under a deterministic id. The regime portal
+  // is BY DESIGN a landing page (the instrument is the published regime itself),
+  // so it carries landingPage: true; desc is fixed, never the calibration note
+  // (notes run long and read as claims).
+  const regime = (calibration && calibration.executionRegime) || {};
+  if (nonEmptyString(regime.permittingAuthorityUrl)) {
+    out.push({
+      id: 'permitting-authority',
+      name: 'Published approvals/permitting regime — authority named in Pass Zero calibration',
+      url: regime.permittingAuthorityUrl,
+      desc: 'The published federal approvals/permitting performance regime identified in Pass Zero; the portal capacity.approvals anchors to.',
+      accessDate,
+      confidence: 'High',
+      citationType: 'Fact',
+      landingPage: true,
+    });
   }
   return out;
 }
