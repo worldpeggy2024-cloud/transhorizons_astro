@@ -675,6 +675,47 @@ actors_domestic_en: |-
         "territory.geography",
         "insular-cases-1901"
       ]
+    },
+    {
+      "name": "The hyperscalers (Meta, Microsoft, Amazon, Alphabet)",
+      "kind": "private-sector",
+      "liveActorStatus": "current",
+      "currentPosition": "Named as the four technology firms carrying the artificial-intelligence data-centre buildout, with combined capital expenditure of about $410 billion in 2025, plans of roughly $725 billion for 2026 and a Goldman Sachs projection of $5.3 trillion across fiscal years 2025–2030 [goldman-hyperscaler-capex-2026].",
+      "fieldsCitedIn": [
+        "economy.politicalEconomy"
+      ],
+      "interests": "report-silent",
+      "resources": "Capital expenditure at a scale the report treats as macroeconomically material — generative artificial intelligence adds about 10 basis points a year to productivity growth and drives real business fixed investment in the Congressional Budget Office baseline [capacity.productivity][cbo-budget-outlook-2026].",
+      "constraints": "report-silent",
+      "likelyMoves": "Capital plans already announced for 2026 — roughly $725 billion combined [goldman-hyperscaler-capex-2026].",
+      "engagementMode": "negotiable / dealable. Private counterparts named for investment weight; the report describes no live regulatory contest with them [economy.politicalEconomy].",
+      "anchors": [
+        "economy.politicalEconomy",
+        "capacity.productivity",
+        "goldman-hyperscaler-capex-2026",
+        "cbo-budget-outlook-2026"
+      ]
+    },
+    {
+      "name": "Defence prime contractors (Lockheed Martin, RTX, Boeing, General Dynamics, Northrop Grumman)",
+      "kind": "private-sector",
+      "liveActorStatus": "current",
+      "currentPosition": "Named through the Department of Defense's top-100 contractor list, the record through which the report sees the defence industrial base [dod-top100-contractors-list][crs-dod-contractors-primer].",
+      "fieldsCitedIn": [
+        "economy.politicalEconomy"
+      ],
+      "interests": "report-silent",
+      "resources": "Position within a federal procurement portfolio of more than $750 billion [capacity.delivery][crs-dod-contractors-primer], in a strategy that prioritises rebuilding the defence industrial base [security.military].",
+      "constraints": "The acquisition system they sell into is the one the Government Accountability Office documents for cost growth and schedule delays, with Defense weapon systems acquisition among the regressed areas [capacity.delivery].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Contracting counterparts by definition; the report names them through the federal contracting record [economy.politicalEconomy].",
+      "anchors": [
+        "economy.politicalEconomy",
+        "capacity.delivery",
+        "security.military",
+        "dod-top100-contractors-list",
+        "crs-dod-contractors-primer"
+      ]
     }
   ]
 actors_domestic_fr: |-
@@ -1141,6 +1182,47 @@ actors_domestic_fr: |-
         "territory.geography",
         "insular-cases-1901"
       ]
+    },
+    {
+      "name": "The hyperscalers (Meta, Microsoft, Amazon, Alphabet)",
+      "kind": "secteur privé",
+      "liveActorStatus": "current",
+      "currentPosition": "Nommées comme les quatre entreprises technologiques portant l'expansion des centres de données d'intelligence artificielle, avec des dépenses d'investissement combinées d'environ 410 milliards de dollars en 2025, des plans d'environ 725 milliards pour 2026 et une projection de Goldman Sachs de 5 300 milliards sur les exercices 2025-2030 [goldman-hyperscaler-capex-2026].",
+      "fieldsCitedIn": [
+        "economy.politicalEconomy"
+      ],
+      "interests": "report-silent",
+      "resources": "Des dépenses d'investissement d'une ampleur que le rapport traite comme macroéconomiquement significative — l'intelligence artificielle générative ajoute environ 10 points de base par an à la croissance de la productivité et tire l'investissement fixe réel des entreprises dans la base du Congressional Budget Office [capacity.productivity][cbo-budget-outlook-2026].",
+      "constraints": "report-silent",
+      "likelyMoves": "Des plans d'investissement déjà annoncés pour 2026 — environ 725 milliards de dollars combinés [goldman-hyperscaler-capex-2026].",
+      "engagementMode": "negotiable / dealable. Des interlocuteurs privés nommés pour leur poids d'investissement; le rapport ne décrit aucune lutte réglementaire en cours avec eux [economy.politicalEconomy].",
+      "anchors": [
+        "economy.politicalEconomy",
+        "capacity.productivity",
+        "goldman-hyperscaler-capex-2026",
+        "cbo-budget-outlook-2026"
+      ]
+    },
+    {
+      "name": "Defence prime contractors (Lockheed Martin, RTX, Boeing, General Dynamics, Northrop Grumman)",
+      "kind": "secteur privé",
+      "liveActorStatus": "current",
+      "currentPosition": "Nommés via la liste des 100 premiers entrepreneurs du département de la Défense, le registre par lequel le rapport voit la base industrielle de défense [dod-top100-contractors-list][crs-dod-contractors-primer].",
+      "fieldsCitedIn": [
+        "economy.politicalEconomy"
+      ],
+      "interests": "report-silent",
+      "resources": "Une position au sein d'un portefeuille d'achats fédéral de plus de 750 milliards de dollars [capacity.delivery][crs-dod-contractors-primer], dans une stratégie qui priorise la reconstruction de la base industrielle de défense [security.military].",
+      "constraints": "Le système d'acquisition auquel ils vendent est celui que le Government Accountability Office documente pour dépassements de coûts et retards, l'acquisition des systèmes d'armes de la Défense figurant parmi les domaines en régression [capacity.delivery].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Interlocuteurs contractuels par définition; le rapport les nomme via le registre fédéral des marchés [economy.politicalEconomy].",
+      "anchors": [
+        "economy.politicalEconomy",
+        "capacity.delivery",
+        "security.military",
+        "dod-top100-contractors-list",
+        "crs-dod-contractors-primer"
+      ]
     }
   ]
 actors_external_en: |-
@@ -1279,54 +1361,83 @@ actors_external_en: |-
       "name": "Japan",
       "kind": "foreign state",
       "liveActorStatus": "current",
-      "currentPosition": "The largest foreign holder of United States Treasury securities as of February 2026, at $1.24 trillion.",
+      "currentPosition": "The largest foreign holder of United States Treasury securities as of February 2026, at $1.24 trillion, and a named treaty ally — covered by a bilateral mutual-defence treaty and designated a major non-NATO ally [treasury-tic-debt-holders][state-collective-defense-arrangements][state-major-non-nato-ally-status].",
       "fieldsCitedIn": [
-        "economy.externalVulnerability"
+        "economy.externalVulnerability",
+        "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "The largest single foreign position within roughly $9.2 trillion of foreign-held Treasuries, about 31% of total federal debt [economy.externalVulnerability].",
+      "resources": "The largest single foreign position within roughly $9.2 trillion of foreign-held Treasuries, about 31% of total federal debt [economy.externalVulnerability], and treaty-ally standing under a bilateral mutual-defence treaty [state-collective-defense-arrangements].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. The report names it as a holding jurisdiction and attributes no action or position to it [economy.externalVulnerability].",
+      "engagementMode": "negotiable / dealable. A treaty ally and major non-NATO ally as well as the leading Treasury holder; the report attributes no active position to it, but the relationship is named and institutional [security.diplomacy][economy.externalVulnerability].",
       "anchors": [
         "economy.externalVulnerability",
-        "treasury-tic-debt-holders"
+        "treasury-tic-debt-holders",
+        "state-collective-defense-arrangements",
+        "state-major-non-nato-ally-status"
       ]
     },
     {
       "name": "The United Kingdom",
       "kind": "foreign state",
       "liveActorStatus": "current",
-      "currentPosition": "The second-largest foreign holder of United States Treasury securities as of February 2026, at $897 billion.",
+      "currentPosition": "The second-largest foreign holder of United States Treasury securities as of February 2026, at $897 billion, and a named AUKUS partner in submarine and advanced-capability cooperation [treasury-tic-debt-holders][crs-aukus-indo-pacific].",
       "fieldsCitedIn": [
-        "economy.externalVulnerability"
+        "economy.externalVulnerability",
+        "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "A holding second only to Japan's within the foreign-held share of federal debt [economy.externalVulnerability].",
+      "resources": "A holding second only to Japan's within the foreign-held share of federal debt [economy.externalVulnerability], and AUKUS partnership standing in named trilateral cooperation [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. Named as a holding jurisdiction with no action or position attributed [economy.externalVulnerability].",
+      "engagementMode": "negotiable / dealable. An AUKUS partner in named trilateral cooperation as well as a leading Treasury holder [security.diplomacy][crs-aukus-indo-pacific].",
       "anchors": [
         "economy.externalVulnerability",
-        "treasury-tic-debt-holders"
+        "treasury-tic-debt-holders",
+        "crs-aukus-indo-pacific",
+        "crs-aukus-pillar2-r47599"
       ]
     },
     {
       "name": "North Atlantic Treaty Organization (NATO)",
       "kind": "international body",
       "liveActorStatus": "current",
-      "currentPosition": "Held the summit in Ankara, Turkey, at which President Trump declared the Iran ceasefire over on 8 July 2026.",
+      "currentPosition": "The North Atlantic Treaty binds the United States to the alliance's 31 other member states — 32 members in all as of 2026 — while the 2026 National Defense Strategy directs European allies to lead their own defence with limited United States support; the Ankara summit was the venue where President Trump declared the Iran ceasefire over on 8 July 2026 [nato-member-countries][security.diplomacy][cnbc-iran-ceasefire-over].",
       "fieldsCitedIn": [
+        "security.diplomacy",
         "situation"
       ],
       "interests": "report-silent",
-      "resources": "report-silent",
+      "resources": "A 32-member treaty alliance anchored by the North Atlantic Treaty, the treaty core of the network the report says the United States anchors [nato-member-countries][security.diplomacy].",
+      "constraints": "The strategy shift assigns European members lead responsibility for their own defence with limited United States support — burden-transfer directed rather than negotiated [security.diplomacy].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. The report now names the alliance and its membership as the treaty core of the United States network, under terms being reset toward transactional burden-sharing [security.diplomacy][ndstrategy-2026].",
+      "anchors": [
+        "security.diplomacy",
+        "nato-member-countries",
+        "ndstrategy-2026",
+        "cnbc-iran-ceasefire-over"
+      ]
+    },
+    {
+      "name": "Australia",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "Named three times over in the alliance system: a collective-defence treaty party (ANZUS), a designated major non-NATO ally, and an AUKUS partner in submarine and advanced-capability cooperation [state-collective-defense-arrangements][state-major-non-nato-ally-status][crs-aukus-indo-pacific].",
+      "fieldsCitedIn": [
+        "security.diplomacy"
+      ],
+      "interests": "report-silent",
+      "resources": "Treaty, statutory-ally and AUKUS standing — the one state the report names in all three tiers of the alliance system [security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. The report attributes no action to the alliance itself; its single appearance is as the setting for a United States announcement [cnbc-iran-ceasefire-over].",
+      "engagementMode": "negotiable / dealable. A named ally across three instruments; the report attributes no live negotiation beyond the standing relationships [security.diplomacy].",
       "anchors": [
-        "cnbc-iran-ceasefire-over",
-        "security.diplomacy"
+        "security.diplomacy",
+        "state-collective-defense-arrangements",
+        "state-major-non-nato-ally-status",
+        "crs-aukus-indo-pacific"
       ]
     }
   ]
@@ -1466,54 +1577,83 @@ actors_external_fr: |-
       "name": "Japan",
       "kind": "État étranger",
       "liveActorStatus": "current",
-      "currentPosition": "Premier détenteur étranger de bons du Trésor américains en février 2026, à 1 240 milliards de dollars.",
+      "currentPosition": "Premier détenteur étranger de bons du Trésor américains en février 2026, à 1 240 milliards de dollars, et allié conventionnel nommé — couvert par un traité de défense mutuelle bilatéral et désigné allié majeur non membre de l'OTAN [treasury-tic-debt-holders][state-collective-defense-arrangements][state-major-non-nato-ally-status].",
       "fieldsCitedIn": [
-        "economy.externalVulnerability"
+        "economy.externalVulnerability",
+        "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "La plus grande position étrangère au sein d'environ 9 200 milliards de dollars de bons du Trésor détenus à l'étranger, soit environ 31 % de la dette fédérale totale [economy.externalVulnerability].",
+      "resources": "La plus grande position étrangère au sein d'environ 9 200 milliards de dollars de bons du Trésor détenus à l'étranger, soit environ 31 % de la dette fédérale totale [economy.externalVulnerability], et un statut d'allié conventionnel au titre d'un traité de défense mutuelle bilatéral [state-collective-defense-arrangements].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. Le rapport le nomme comme juridiction détentrice et ne lui attribue aucune action ni position [economy.externalVulnerability].",
+      "engagementMode": "negotiable / dealable. Allié conventionnel et allié majeur non membre de l'OTAN autant que premier détenteur de bons du Trésor; le rapport ne lui attribue aucune position active, mais la relation est nommée et institutionnelle [security.diplomacy][economy.externalVulnerability].",
       "anchors": [
         "economy.externalVulnerability",
-        "treasury-tic-debt-holders"
+        "treasury-tic-debt-holders",
+        "state-collective-defense-arrangements",
+        "state-major-non-nato-ally-status"
       ]
     },
     {
       "name": "The United Kingdom",
       "kind": "État étranger",
       "liveActorStatus": "current",
-      "currentPosition": "Deuxième détenteur étranger de bons du Trésor américains en février 2026, à 897 milliards de dollars.",
+      "currentPosition": "Deuxième détenteur étranger de bons du Trésor américains en février 2026, à 897 milliards de dollars, et partenaire AUKUS nommé dans la coopération sur les sous-marins et les capacités avancées [treasury-tic-debt-holders][crs-aukus-indo-pacific].",
       "fieldsCitedIn": [
-        "economy.externalVulnerability"
+        "economy.externalVulnerability",
+        "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "Un avoir second seulement à celui du Japon dans la part étrangère de la dette fédérale [economy.externalVulnerability].",
+      "resources": "Un avoir second seulement à celui du Japon dans la part étrangère de la dette fédérale [economy.externalVulnerability], et un statut de partenaire AUKUS dans une coopération trilatérale nommée [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. Nommé comme juridiction détentrice, sans action ni position attribuée [economy.externalVulnerability].",
+      "engagementMode": "negotiable / dealable. Partenaire AUKUS d'une coopération trilatérale nommée autant que détenteur majeur de bons du Trésor [security.diplomacy][crs-aukus-indo-pacific].",
       "anchors": [
         "economy.externalVulnerability",
-        "treasury-tic-debt-holders"
+        "treasury-tic-debt-holders",
+        "crs-aukus-indo-pacific",
+        "crs-aukus-pillar2-r47599"
       ]
     },
     {
       "name": "North Atlantic Treaty Organization (NATO)",
       "kind": "organisme international",
       "liveActorStatus": "current",
-      "currentPosition": "A tenu le sommet d'Ankara, en Turquie, au cours duquel le président Trump a déclaré terminé le cessez-le-feu avec l'Iran le 8 juillet 2026.",
+      "currentPosition": "Le traité de l'Atlantique Nord lie les États-Unis aux 31 autres États membres de l'alliance — soit 32 membres au total en 2026 — tandis que la Stratégie de défense nationale 2026 enjoint aux alliés européens de conduire leur propre défense avec un appui américain limité; le sommet d'Ankara a été le cadre où le président Trump a déclaré terminé le cessez-le-feu avec l'Iran le 8 juillet 2026 [nato-member-countries][security.diplomacy][cnbc-iran-ceasefire-over].",
       "fieldsCitedIn": [
+        "security.diplomacy",
         "situation"
       ],
       "interests": "report-silent",
-      "resources": "report-silent",
+      "resources": "Une alliance de 32 membres fondée sur le traité de l'Atlantique Nord, cœur conventionnel du réseau que le rapport dit ancré par les États-Unis [nato-member-countries][security.diplomacy].",
+      "constraints": "Le virage stratégique confie aux membres européens la responsabilité première de leur propre défense avec un appui américain limité — un transfert de charge ordonné plutôt que négocié [security.diplomacy].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Le rapport nomme désormais l'alliance et ses membres comme le cœur conventionnel du réseau américain, dans des termes en cours de redéfinition vers un partage transactionnel du fardeau [security.diplomacy][ndstrategy-2026].",
+      "anchors": [
+        "security.diplomacy",
+        "nato-member-countries",
+        "ndstrategy-2026",
+        "cnbc-iran-ceasefire-over"
+      ]
+    },
+    {
+      "name": "Australia",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "Nommée à trois titres dans le système d'alliances : partie à un traité de défense collective (ANZUS), alliée majeure non membre de l'OTAN désignée, et partenaire AUKUS de la coopération sur les sous-marins et les capacités avancées [state-collective-defense-arrangements][state-major-non-nato-ally-status][crs-aukus-indo-pacific].",
+      "fieldsCitedIn": [
+        "security.diplomacy"
+      ],
+      "interests": "report-silent",
+      "resources": "Un statut conventionnel, statutaire et AUKUS — le seul État que le rapport nomme dans les trois étages du système d'alliances [security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. Le rapport n'attribue aucune action à l'alliance elle-même; sa seule apparition est comme cadre d'une annonce américaine [cnbc-iran-ceasefire-over].",
+      "engagementMode": "negotiable / dealable. Une alliée nommée dans trois instruments; le rapport n'attribue aucune négociation en cours au-delà des relations établies [security.diplomacy].",
       "anchors": [
-        "cnbc-iran-ceasefire-over",
-        "security.diplomacy"
+        "security.diplomacy",
+        "state-collective-defense-arrangements",
+        "state-major-non-nato-ally-status",
+        "crs-aukus-indo-pacific"
       ]
     }
   ]
