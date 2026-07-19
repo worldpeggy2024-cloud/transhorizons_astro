@@ -639,5 +639,82 @@
     "confidence": "High",
     "citationType": "Fact",
     "volatility": "Med"
+  },
+  {
+    "id": "ceq-eis-timeline-factsheet-2020",
+    "name": "Fact Sheet: CEQ Report on Length of Environmental Impact Statements",
+    "nameFr": "Fact Sheet: CEQ Report on Length of Environmental Impact Statements",
+    "url": "https://ceq.doe.gov/docs/nepa-practice/CEQ_EIS_Length_Fact_Sheet_2020-6-12.pdf",
+    "desc": "Council on Environmental Quality official report finding an average 4.5-year completion time for federal Environmental Impact Statements; primary executive-office regulatory-process source.",
+    "descFr": "Rapport officiel du Council on Environmental Quality constatant un temps moyen d'achèvement de 4,5 ans pour les études d'impact environnemental fédérales; source primaire de l'exécutif sur le processus réglementaire.",
+    "publicationDate": "2020-06-11",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "Med"
+  },
+  {
+    "id": "permits-performance-gov-data-portal",
+    "name": "Permitting Dashboard Data Portal",
+    "nameFr": "Permitting Dashboard Data Portal",
+    "url": "https://data.permits.performance.gov/projects",
+    "desc": "Official downloadable dataset of federal permitting-project status by lead agency, feeding the Permitting Dashboard; primary structured government data source.",
+    "descFr": "Ensemble de données téléchargeable officiel de l'état des projets de permis fédéraux par agence responsable, alimentant le tableau de bord; source de données gouvernementale structurée primaire.",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "High"
+  },
+  {
+    "id": "gao-nepa-review-2014",
+    "name": "National Environmental Policy Act: Little Information Exists on NEPA Analyses",
+    "nameFr": "National Environmental Policy Act: Little Information Exists on NEPA Analyses",
+    "url": "https://www.gao.gov/products/gao-14-370",
+    "desc": "Government Accountability Office audit examining the number, type, and duration of federal NEPA environmental reviews and data-tracking gaps; primary nonpartisan federal-audit source.",
+    "descFr": "Audit du Government Accountability Office examinant le nombre, le type et la durée des examens environnementaux fédéraux NEPA et les lacunes de suivi; source d'audit fédéral primaire non partisane.",
+    "publicationDate": "2014-04-14",
+    "accessDate": "2026-07-19",
+    "confidence": "Med",
+    "citationType": "Fact",
+    "volatility": "Low"
+  },
+  {
+    "id": "usgs-water-use-united-states",
+    "name": "Water Use in the United States",
+    "nameFr": "Water Use in the United States",
+    "url": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+    "desc": "USGS's quinquennial national accounting of freshwater and saline water withdrawals by category (irrigation, public supply, industrial); primary national geological survey source for water stock as a physical resource.",
+    "descFr": "Bilan quinquennal national de l'USGS des prélèvements d'eau douce et salée par catégorie (irrigation, approvisionnement public, industriel); source primaire du service géologique national sur l'eau comme ressource physique.",
+    "publicationDate": "2026-06-16",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "Med"
+  },
+  {
+    "id": "usda-ers-major-land-uses",
+    "name": "Major Land Uses",
+    "nameFr": "Major Land Uses",
+    "url": "https://www.ers.usda.gov/data-products/major-land-uses",
+    "desc": "USDA Economic Research Service's longest-running comprehensive national accounting of land use by category, including cropland and grassland acreage; primary federal agricultural-statistics source.",
+    "descFr": "Bilan national complet et le plus ancien de l'utilisation des terres par catégorie, incluant les superficies cultivées et de pâturage, tenu par l'Economic Research Service de l'USDA; source statistique agricole fédérale primaire.",
+    "publicationDate": "2024-09-12",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "Med"
+  },
+  {
+    "id": "noaa-status-of-stocks",
+    "name": "Status of Stocks Reports (Report to Congress on the Status of U.S. Fisheries)",
+    "nameFr": "Status of Stocks Reports (Report to Congress on the Status of U.S. Fisheries)",
+    "url": "https://www.fisheries.noaa.gov/national/sustainable-fisheries/status-stocks-reports",
+    "desc": "NOAA Fisheries' annual congressionally mandated report on the overfishing/overfished status of federally managed U.S. fish stocks; primary federal fisheries-management source.",
+    "descFr": "Rapport annuel mandaté par le Congrès de NOAA Fisheries sur l'état de surpêche des stocks de poissons géré fédéralement aux États-Unis; source primaire fédérale de gestion des pêches.",
+    "publicationDate": "2024-02-04",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "High"
   }
 ]
