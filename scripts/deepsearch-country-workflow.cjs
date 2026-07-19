@@ -273,7 +273,7 @@ function validateSituationThreads(str, label, errors, warnings, isUSA) {
   }
 }
 
-function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA) {
+function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, passNotesEventIds = null) {
   const errors = [];
   const warnings = [];
 
@@ -399,8 +399,10 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA) 
       continue;
     }
     validateSituationThreads(t, `situation.${lang}`, errors, warnings, isUSA);
-    // Populated threads should engage the event scan.
-    if (eventIds && eventIds.size > 0) {
+    // Populated threads should engage the event scan. A passNotes record
+    // (situation-pass.output.json) supersedes this citation heuristic — scan
+    // ids never match registry ids, so citations cannot prove engagement.
+    if (eventIds && eventIds.size > 0 && !passNotesEventIds) {
       const cited = new Set();
       const citeRe = /\[([a-z0-9-]+)\]/g;
       let cm;
@@ -802,6 +804,7 @@ CONTENT RULES:
 - No explanation by character or motive. State what changed, not why anyone did it.
 - Every event carries a source citation [source-id], same as any other field.
 - Where an event supersedes or contradicts a claim in a peer section, the PEER SECTION must be corrected — this field does not exist to hold contradictions, it exists to surface them. List any such corrections in "peerCorrections".
+- EVERY event proposed by Pass Zero-B gets a recorded verdict in "passNotes": kept, folded (carried as context inside another event or thread, not as its own entry), or dropped — with the test a non-kept event failed and the decisive evidence. The scan is automated and has no memory: a decision recorded only in a chat transcript is a decision the next run re-litigates from zero.
 
 DISCIPLINES (same as the main passes): acronyms spelled out at first mention, no exceptions; source titles in the source's own language(s), never translated; source desc states what the source IS (roughly 20-30 words), never the specific numbers or claims; EN and FR carry the same facts and cite the same IDs.
 
@@ -814,7 +817,12 @@ Return ONLY a JSON object:
     "fr": [ the same threads, in French ]
   },
   "newSources": [ any sources cited above that are not already in the report's registry — all fields: id, name, nameFr, url, desc, descFr, publicationDate (omit if undated), accessDate, confidence, citationType ],
-  "peerCorrections": [ { "field": "e.g. economy.externalVulnerability", "correction": "what the peer section must now say and why" } ]
+  "peerCorrections": [ { "field": "e.g. economy.externalVulnerability", "correction": "what the peer section must now say and why" } ],
+  "passNotes": {
+    "runDate": "the run date (YYYY-MM-DD)",
+    "events": [ ONE entry per Pass Zero-B event id, no omissions: { "id": "the scanned event id", "verdict": "kept | folded | dropped", "test": "for folded/dropped: the rule it failed and the decisive evidence, one or two sentences" } ],
+    "notes": "run-note resolutions and anything the NEXT run must see: window calls, sources to retire or rename, could-not-verify items"
+  }
 }
 `;
 }
@@ -1548,7 +1556,28 @@ function applyCommand(iso3, opts) {
     }
   } catch (err) { /* no events file → all sources required */ }
 
-  const contentCheck = validateContent(content, sourcesCheck.ids, promotedIds, eventIds, code === 'USA');
+  // passNotes: the situation pass's per-event verdict record (kept/folded/dropped),
+  // committed as situation-pass.output.json. When present it is the engagement
+  // record for the event scan; the citation heuristic in validateContent is the
+  // legacy fallback.
+  let passNotesEventIds = null;
+  try {
+    const outFile = path.join(process.cwd(), 'content', 'docs', 'deepsearch-jobs', code, 'situation-pass.output.json');
+    if (fs.existsSync(outFile)) {
+      const pn = JSON.parse(fs.readFileSync(outFile, 'utf8')).passNotes;
+      if (pn && Array.isArray(pn.events)) {
+        passNotesEventIds = new Set(pn.events.map((e) => e && e.id).filter(Boolean));
+      }
+    }
+  } catch (err) { /* unreadable output file → citation heuristic applies */ }
+
+  const contentCheck = validateContent(content, sourcesCheck.ids, promotedIds, eventIds, code === 'USA', passNotesEventIds);
+  if (passNotesEventIds && eventIds.size > 0) {
+    const missing = [...eventIds].filter((id) => !passNotesEventIds.has(id));
+    if (missing.length) {
+      contentCheck.warnings.push(`situation passNotes: no verdict for scanned event(s) ${missing.join(', ')} — every Pass Zero-B event gets kept/folded/dropped`);
+    }
+  }
   const errors = [...sourcesCheck.errors, ...contentCheck.errors];
   const warnings = [...(sourcesCheck.warnings || []), ...(contentCheck.warnings || [])];
   if (warnings.length) {

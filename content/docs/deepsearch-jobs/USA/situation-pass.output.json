@@ -238,5 +238,76 @@
       "citationType": "Fact",
       "volatility": "Med"
     }
-  ]
+  ],
+  "peerCorrections": [
+    {
+      "field": "security.diplomacy",
+      "correction": "The field stops on 7 April 2026 and states 'hostilities remained active with no ceasefire in effect.' This is now superseded and must be corrected: a Pakistan-mediated ceasefire took effect 8 April 2026 (7 April in the United States), was extended and formalised in a 17 June 2026 interim memorandum of understanding, then was declared 'over' by the President on 8 July 2026, after which active United States–Iran hostilities resumed. As of the run date (19 July 2026) hostilities are active with United States strikes and a naval blockade ongoing and no ceasefire in effect. Cite [whitehouse-epic-fury-ceasefire][cnbc-iran-ceasefire-over][cnn-iran-war-july18] alongside [iran-ops-transcript]; the misnamed [iran-ceasefire-statement] should no longer be cited as evidence of the ceasefire's status."
+    },
+    {
+      "field": "political.shockAbsorbers",
+      "correction": "The FY2026 shutdown ran 43 days (1 October–12 November 2025), not 42. Correct the figure and retain the 14 February 2026 Homeland Security lapse; the Homeland Security lapse ultimately ran 76 days to 30 April 2026, the longest shutdown of a single department on record. Cite [crs-r48832-shutdowns][house-approps-dhs-76day]."
+    },
+    {
+      "field": "capacity.steering",
+      "correction": "Correct '42 days, October–November 2025' to 43 days (1 October–12 November 2025). Clarify that the 43-day episode was the longest full-government shutdown on record, whereas the 14 February–30 April 2026 Homeland Security lapse (76 days) was the longest shutdown of a single department; both statements can stand once distinguished. Cite [crs-r48832-shutdowns][house-approps-dhs-76day]."
+    }
+  ],
+  "passNotes": {
+    "runDate": "2026-07-19",
+    "events": [
+      {
+        "id": "iran-operation-epic-fury",
+        "verdict": "kept"
+      },
+      {
+        "id": "iran-ceasefire-april2026",
+        "verdict": "kept",
+        "test": "RESOLVED to a primary source: the White House statement (whitehouse-epic-fury-ceasefire) documents the ceasefire taking hold; the Euronews piece is not used as evidence of a ceasefire."
+      },
+      {
+        "id": "shutdown-2025-fy2026",
+        "verdict": "kept"
+      },
+      {
+        "id": "shutdown-2026-second-dhs",
+        "verdict": "kept"
+      },
+      {
+        "id": "venezuela-maduro-capture",
+        "verdict": "kept"
+      },
+      {
+        "id": "obbba-signed",
+        "verdict": "dropped",
+        "test": "Signed 4 July 2025, roughly two weeks outside the 12-month window from the run date; already held structurally in economy.politicalEconomy and capacity.steering; a standing fiscal/policy condition, not a discrete positional shock without a home. Its ICE/CBP reconciliation-funding role is captured in the DHS thread currentState without a dedicated event."
+      },
+      {
+        "id": "shutdown-2026-first",
+        "verdict": "folded",
+        "test": "Verified real (31 January–3 February 2026) but immaterial standalone: four days over a weekend with minimal operational impact; subsumed by the Federal funding lapses thread as context under the material-change rule and the 8-event cap."
+      },
+      {
+        "id": "alex-pretti-killing",
+        "verdict": "folded",
+        "test": "Folded into the Federal funding lapses thread as the trigger for the DHS lapse, sourced to the CBS reproduction of the CBP Office of Professional Responsibility report to Congress (cbs-pretti-cbp-report). Fails the standalone no-natural-home/material-change test: the material consequence (the 76-day DHS shutdown) is what changed the country position."
+      },
+      {
+        "id": "national-defense-strategy-2026",
+        "verdict": "dropped",
+        "test": "No explicit note from the run branch; consistent with the exclusion rule for standing policy already held structurally — security.military, security.internal and security.diplomacy all cite ndstrategy-2026. [Verdict text reconstructed at install, not authored by the pass.]"
+      },
+      {
+        "id": "fy2026-appropriations-act",
+        "verdict": "folded",
+        "test": "Verified real (H.R. 7148 signed 3 February 2026 ending the four-day lapse) but immaterial standalone; subsumed by the Federal funding lapses thread together with the four-day shutdown it ended."
+      },
+      {
+        "id": "senate-pay-withholding-resolution",
+        "verdict": "dropped",
+        "test": "Verified as S.Res. 526 (119th Congress), adopted by unanimous consent 14 May 2026 after a 99–0 procedural vote on 13 May. Fails the exclusion test: a Senate-only internal procedural rule that binds neither the House nor the President and, under the 27th Amendment, takes effect only after the November 2026 election — no standing condition changed as of the run date."
+      }
+    ],
+    "notes": "Full run-note resolutions (notes 1–8, verbatim from the pass branch) are committed alongside as situation-pass.notes.md. Key carries for the next run: iran-ceasefire-statement (Euronews) is misnamed — its content documents active hostilities and an ultimatum, not a ceasefire — recommendation to RETIRE or rename to euronews-iran-ultimatum-apr2026 and downgrade to interpretive/context (currently uncited, pending author decision). Could-not-verify: no standalone government PDF of the CBP OPR notification on Pretti (CBS reproduction used); no written legal order implementing the announced 15% Section 122 rate (operative surcharge took effect at 10% on 24 February 2026); cumulative Iran-war casualty/cost figures excluded (non-primary trackers diverge); the intermediate DHS became-longest-on-~29-March milestone not carried as an event."
+  }
 }

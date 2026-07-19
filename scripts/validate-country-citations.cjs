@@ -359,6 +359,28 @@ function validateCountryFile(filePath) {
   // KEEP the shape checks in sync with validateSituationThreads in
   // deepsearch-country-workflow.cjs.
   const countryCode = path.basename(path.dirname(filePath));
+  // passNotes (the situation pass's per-event verdict record, committed in the
+  // job folder as situation-pass.output.json) is the authoritative engagement
+  // record when present: scan-event ids never match registry source ids, so
+  // the citation heuristic below cannot prove the scan was engaged.
+  let passNotesEventIds = null;
+  if (eventIds.size > 0) {
+    try {
+      const outFile = path.join(process.cwd(), 'content', 'docs', 'deepsearch-jobs', countryCode, 'situation-pass.output.json');
+      if (fs.existsSync(outFile)) {
+        const pn = JSON.parse(fs.readFileSync(outFile, 'utf8')).passNotes;
+        if (pn && Array.isArray(pn.events)) {
+          passNotesEventIds = new Set(pn.events.map((e) => e && e.id).filter(Boolean));
+        }
+      }
+    } catch { /* unreadable output file → fall back to the citation heuristic */ }
+    if (passNotesEventIds) {
+      const missing = [...eventIds].filter((id) => !passNotesEventIds.has(id));
+      if (missing.length) {
+        warnings.push(`situation passNotes: no verdict for scanned event(s) ${missing.join(', ')} — every Pass Zero-B event gets kept/folded/dropped`);
+      }
+    }
+  }
   for (const lang of ['en', 'fr']) {
     const key = `situation_${lang}`;
     const v = contentClone[key];
@@ -397,8 +419,10 @@ function validateCountryFile(filePath) {
     }
     // Engagement with the Pass Zero-B scan: a populated situation section can
     // still quietly ignore the event scan. The events may legitimately all be
-    // "not material", but that must be said, not skipped.
-    if (eventIds.size > 0) {
+    // "not material", but that must be said, not skipped. Skipped when a
+    // passNotes record covers the scan (checked above) — the heuristic is a
+    // legacy fallback and false-positives on id-scheme mismatch.
+    if (eventIds.size > 0 && !passNotesEventIds) {
       const cited = new Set();
       collectCitations(v, cited);
       if (![...cited].some((id) => eventIds.has(id))) {

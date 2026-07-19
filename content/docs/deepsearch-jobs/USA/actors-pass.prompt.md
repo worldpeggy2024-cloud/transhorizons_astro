@@ -1,6 +1,6 @@
 # Actors extraction prompt — v1.7
 
-**Country:** United States / États-Unis (USA) · **Run date:** 2026-07-18
+**Country:** United States / États-Unis (USA) · **Run date:** 2026-07-19
 
 For a rendered country report, produce a structured actors index by extracting entities the report itself named. Two epistemic layers are produced per actor:
 
