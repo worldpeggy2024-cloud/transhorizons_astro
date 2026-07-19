@@ -2,67 +2,14 @@ code: USA
 nameEn: United States
 nameFr: États-Unis
 lastUpdated: '2026-07-19'
-scorecard_eliteCohesion: Med
-scorecard_socialCohesion: Low
-scorecard_securityLoyalty: High
-scorecard_economicPressure: Med
-scorecard_protestCapacity: High
-scorecard_institutionalResilience: Med
-scorecard_anchors: |-
-  {
-    "eliteCohesion": {
-      "anchors": [
-        "political.stabilityDrivers",
-        "senate-partydiv",
-        "house-partybreakdown"
-      ],
-      "rationale_en": "Unified Republican control of the presidency and both chambers gives high intra-bloc cohesion, but razor-thin House margins and cross-party rupture cap it at medium.",
-      "rationale_fr": "Le contrôle républicain unifié de la présidence et des deux chambres assure une forte cohésion intra-bloc, mais les marges infimes à la Chambre et la rupture inter-partisane la limitent à un niveau moyen."
-    },
-    "socialCohesion": {
-      "anchors": [
-        "pew-trust-in-government",
-        "society.cohesion"
-      ],
-      "rationale_en": "Institutional trust near 70-year lows and sharply partisan-sorted (26% Republicans vs 9% Democrats) indicates low society-wide cohesion.",
-      "rationale_fr": "Une confiance institutionnelle proche des plus bas en 70 ans et fortement clivée (26 % des républicains contre 9 % des démocrates) indique une faible cohésion sociétale."
-    },
-    "securityLoyalty": {
-      "anchors": [
-        "security.military",
-        "ndstrategy-2026"
-      ],
-      "rationale_en": "Professional volunteer force under firm civilian command with no factional contestation of authority supports high loyalty.",
-      "rationale_fr": "Une armée professionnelle de volontaires sous ferme commandement civil, sans contestation factionnelle de l'autorité, soutient une loyauté élevée."
-    },
-    "economicPressure": {
-      "anchors": [
-        "economy.publicFinances",
-        "cbo-budget-outlook-2026"
-      ],
-      "rationale_en": "Robust growth and reserve-currency financing offset a 5.8%-of-GDP deficit and debt rising toward 120%, yielding medium pressure.",
-      "rationale_fr": "Une croissance robuste et un financement en monnaie de réserve compensent un déficit de 5,8 % du PIB et une dette montant vers 120 %, d'où une pression moyenne."
-    },
-    "protestCapacity": {
-      "anchors": [
-        "acled-usa",
-        "society.cohesion"
-      ],
-      "rationale_en": "Strong civil-society tradition, mass mobilisation capacity and high polarisation support high protest capacity.",
-      "rationale_fr": "Une forte tradition de société civile, une capacité de mobilisation de masse et une forte polarisation soutiennent une capacité de contestation élevée."
-    },
-    "institutionalResilience": {
-      "anchors": [
-        "political.constitutionalSubstrate",
-        "freedomhouse-usa-2026",
-        "crs-r48832-shutdowns"
-      ],
-      "rationale_en": "Durable federal-constitutional architecture endures, but apex-court reallocation of power, record shutdowns and declining freedom scores pull resilience to medium.",
-      "rationale_fr": "L'architecture fédérale-constitutionnelle durable perdure, mais la redistribution du pouvoir par la Cour suprême, des fermetures records et des notes de liberté en baisse ramènent la résilience à un niveau moyen."
-    }
-  }
-baseline_en: 'The United States is the world''s largest economy and pre-eminent military power, operating under a 1787 federal presidential constitution, and as of 18 July 2026 it is governed by a unified Republican federal government: President Donald Trump holds the executive, Republicans hold the Senate 53–45 (two independents caucusing with Democrats) [senate-partydiv][senate-dailypress] and the House 217–212 with one independent and five vacancies [house-partybreakdown]. Its economy is overwhelmingly services-based, grew 2.2% in real terms in 2025 [cbo-budget-outlook-2026], and runs a large structural deficit — $1.9 trillion, 5.8% of GDP in FY2026 — with public debt at 101% of GDP and rising [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. The present state is defined by an apex court that is actively reallocating power toward the executive: in 2026 the Supreme Court overruled Humphrey''s Executor, ending for-cause protection for independent-agency heads, while sparing the Federal Reserve and upholding birthright citizenship [scotus-opinions-portal]. External rankings register measured democratic erosion — Freedom House scored the country 81/100 in 2025, its lowest ever, and Transparency International scored it 64/100 in 2025, also its lowest [freedomhouse-usa-2026][transparency-cpi-2025] — even as it remains a critically-insufficient climate actor after voiding its emissions targets [climateactiontracker-usa].'
-baseline_fr: 'Les États-Unis constituent la première économie et la première puissance militaire mondiale, régis par une constitution fédérale présidentielle de 1787, et au 18 juillet 2026 le gouvernement fédéral est unifié aux mains des républicains : le président Donald Trump détient l''exécutif, les républicains contrôlent le Sénat par 53 voix contre 45 (deux indépendants siégeant avec les démocrates) [senate-partydiv][senate-dailypress] et la Chambre par 217 contre 212, avec un indépendant et cinq sièges vacants [house-partybreakdown]. L''économie repose massivement sur les services, a progressé de 2,2 % en termes réels en 2025 [cbo-budget-outlook-2026] et accuse un déficit structurel élevé — 1 900 milliards de dollars, soit 5,8 % du PIB pour l''exercice 2026 — la dette publique atteignant 101 % du PIB et continuant de croître [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. L''état présent se caractérise par une Cour suprême qui redistribue activement le pouvoir vers l''exécutif : en 2026, elle a renversé l''arrêt Humphrey''s Executor, supprimant la protection des dirigeants d''agences indépendantes, tout en épargnant la Réserve fédérale et en confirmant le droit du sol [scotus-opinions-portal]. Les classements externes enregistrent une érosion démocratique mesurée — Freedom House a attribué au pays 81/100 en 2025, son plus bas niveau, et Transparency International 64/100 en 2025, également un plancher [freedomhouse-usa-2026][transparency-cpi-2025] — alors qu''il demeure un acteur climatique « critiquement insuffisant » après avoir annulé ses objectifs d''émissions [climateactiontracker-usa].'
+scorecard_eliteCohesion: ''
+scorecard_socialCohesion: ''
+scorecard_securityLoyalty: ''
+scorecard_economicPressure: ''
+scorecard_protestCapacity: ''
+scorecard_institutionalResilience: ''
+baseline_en: ''
+baseline_fr: ''
 territory_geography_en: 'The United States is a continental-scale country spanning the middle of North America from the Atlantic to the Pacific, bordered by Canada to the north and Mexico to the south, with the non-contiguous state of Alaska in the far northwest and the Hawaiian archipelago in the central Pacific — a diversified terrain of coastal plains, interior lowlands, the Rocky Mountains and western deserts; detail follows. The periphery comprises five inhabited unincorporated territories: the Commonwealth of Puerto Rico, Guam, the United States Virgin Islands, the Commonwealth of the Northern Mariana Islands and American Samoa, plus uninhabited outlying possessions (Wake, Midway, Johnston, Palmyra, Howland, Baker, Jarvis, Navassa, Kingman Reef) [constitution-usa-1787][insular-cases-1901]. Alaska and Hawaii are non-contiguous states [constitution-usa-1787]. The physical arrangement is central to how the country functions as one country, with large internal distances and a mix of densely settled coasts and sparsely populated interior west.'
 territory_geography_fr: 'Les États-Unis sont un pays à l''échelle continentale s''étendant au centre de l''Amérique du Nord de l''Atlantique au Pacifique, bordés par le Canada au nord et le Mexique au sud, avec l''État non contigu de l''Alaska à l''extrême nord-ouest et l''archipel hawaïen dans le Pacifique central — un relief diversifié de plaines côtières, de basses terres intérieures, des montagnes Rocheuses et de déserts occidentaux; les détails suivent. La périphérie comprend cinq territoires non incorporés habités : le Commonwealth de Porto Rico, Guam, les îles Vierges américaines, le Commonwealth des îles Mariannes du Nord et les Samoa américaines, ainsi que des possessions périphériques inhabitées (Wake, Midway, Johnston, Palmyra, Howland, Baker, Jarvis, Navassa, récif Kingman) [constitution-usa-1787][insular-cases-1901]. L''Alaska et Hawaï sont des États non contigus [constitution-usa-1787]. L''agencement physique est central pour le fonctionnement du pays en tant qu''entité unique, avec de vastes distances internes et un mélange de côtes densément peuplées et d''un intérieur occidental faiblement peuplé.'
 territory_biosphere_en: 'The renewable base is vast and its condition diverges by resource: forest area and managed fish stocks broadly hold, while groundwater extraction and cropland do not [fao-forest-water-usa][noaa-status-of-stocks][usgs-water-use-united-states][usda-ers-major-land-uses]. Of a total land area of 2.26 billion acres in 2017, grassland pasture and range accounted for 659 million acres (29%), forest-use land 622 million acres (28%), cropland 390 million acres (17%), special uses such as parks and wildlife areas 318 million acres (14%), miscellaneous uses including wetlands and tundra 197 million acres (9%), and urban land 74 million acres (3%) [usda-ers-major-land-uses]. Agricultural land totalled 1.19 billion acres in 2017, or 52.5% of the land base, down from 59% in 1959; cropland fell 15% and grazed forestland 46% across that period, to 132 million acres [usda-ers-major-land-uses]. Forest area stood at about 310 million hectares in 2020, roughly 8% of the world total, placing the United States among the five countries that together hold more than half of all forest [fao-forest-water-usa]; North American forest area was broadly stable between 1990 and 2015, gains in the United States offsetting losses in Canada and Mexico [fao-forest-water-usa]. Total water withdrawals were 322 billion gallons per day in 2015, 9% below 2010 and the lowest level reported since before 1970, of which fresh water was 281 billion gallons per day (87%) and saline water 41.0 billion gallons per day (13%) [usgs-water-use-united-states]. The aggregate decline masks a divergence within the resource: fresh surface-water withdrawals fell 14% from 2010 to 198 billion gallons per day, while fresh groundwater withdrawals rose about 8% to 82.3 billion gallons per day, shifting extraction toward the slower-recharging stock [usgs-water-use-united-states]. Irrigation and thermoelectric power remained the two largest uses in 2015, and modelled across the conterminous United States for water years 2010–2020, crop irrigation withdrew an average of 105,497 million gallons per day, of which 75,698 million gallons per day was consumed rather than returned to the system [usgs-water-use-united-states]. Of the 506 federally managed stocks and stock complexes covered by the 2023 report to Congress, 21 were subject to overfishing — an all-time low — and 47 were overfished, with 94% not subject to overfishing and 82% not overfished, and 50 stocks rebuilt since 2000 [noaa-status-of-stocks]. The binding constraint is knowledge as much as harvest: only 364 of the 506 stocks had a known overfishing status and only 263 a known overfished status [noaa-status-of-stocks].'

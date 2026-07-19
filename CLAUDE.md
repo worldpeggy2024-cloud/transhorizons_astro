@@ -59,8 +59,11 @@
     guard) / steering (new) / approvals (RENAMES permitting) / delivery / publicServices (new) / productivity.
   - SECURITY & DIPLOMACY: posture (new, anchored synthesis, displays first, composed LAST) / internal /
     military (new) / transnationalExposure (new) / diplomacy.
-  - NO executive snapshot (removed; content lives in the section openers). baseline_en/fr is the compose-last
-    derivative and the page's only always-visible prose — render nothing when empty, never back-fill.
+  - NO executive snapshot (removed; content lives in the section openers). baseline_en/fr is a derivative and
+    the page's only always-visible prose — render nothing when empty, never back-fill. Since 2026-07-19 the
+    baseline AND the scorecard (values + scorecard_anchors) are composed by the dedicated DERIVATIVES pass
+    (derivatives-pass.prompt.md, generated at init), run AFTER the situation pass installs and its peer
+    corrections are approved — Pass B emits both EMPTY; the page hides the Quick scorecard while empty.
   - NINE enforced openers (heuristic-gated, scripts/lib/openers.cjs — hard errors at apply, warnings at
     audit): territory.geography, territory.climate, society.demographics, economy.realEconomy,
     economy.politicalEconomy, political.powerStructure, political.constitutionalSubstrate,
@@ -69,9 +72,12 @@
     (inheritedTerrain, steering, posture, scorecard_anchors, actors Layer 2, risk ratings). Ghost anchor
     (empty/missing target) = hard error; compose-order + allowed-set rules; baseline carries no anchors;
     anchor parity EN/FR is manual like citation parity.
-  - Pass B emits situation, actors.*, and risks EMPTY — each is populated by its own dedicated pass working
-    from the finished report (situation pass §4d; two-layer actors/risks passes per rework §8). Actors Layer 2
-    renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
+  - Pass B emits situation, actors.*, risks, scorecard, and baseline EMPTY — each is populated by its own
+    dedicated pass working from the finished report (situation pass §4d; two-layer actors/risks passes per
+    rework §8; derivatives pass for scorecard + baseline). Pass order: B → situation (+ approved
+    peerCorrections) → derivatives → actors/risks. The situation pass also emits passNotes (per-event
+    kept/folded/dropped verdicts) — the validators treat it as the event-scan engagement record. Actors
+    Layer 2 renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
   - LEGACY fields (economy_macroReality_*, capacity_permitting_*) stay DECLARED in Keystatic so saves
     don't strip not-yet-regenerated countries; renderer/adapter read new-name-first with legacy fallback;
     new generation never writes them. (executiveSnapshot_* is fully REMOVED — declarations AND YAML keys;

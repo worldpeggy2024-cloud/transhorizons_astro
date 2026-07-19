@@ -338,6 +338,17 @@ function validateCountryFile(filePath) {
       warnings,
     });
   }
+  // Derivatives pending (amendment 2026-07-19): Pass B emits scorecard + baseline
+  // EMPTY; the dedicated derivatives pass composes them after the situation pass
+  // installs. All-empty is a pending state, not a defect — surface it as one line.
+  {
+    const scoreAxisKeys = anchorsLib.SCORECARD_AXES.map((a) => `scorecard_${a}`);
+    const scoreEmpty = scoreAxisKeys.every((k) => typeof data[k] !== 'string' || !data[k].trim());
+    const baselineEmpty = ['baseline_en', 'baseline_fr'].every((k) => typeof data[k] !== 'string' || !data[k].trim());
+    if (scoreEmpty && baselineEmpty) {
+      warnings.push('scorecard + baseline empty — awaits the derivatives pass (run after the situation pass installs)');
+    }
+  }
   // Anchors inside the JSON-in-text layers (actors Layer 2, risk ratings —
   // rework §8): ghost-check any [dot.path] markers in the raw blocks.
   for (const k of ['actors_domestic_en', 'actors_domestic_fr', 'actors_external_en', 'actors_external_fr', 'risks_en', 'risks_fr']) {

@@ -262,3 +262,28 @@ Same two-layer pattern, three differences:
 - [ ] Actors prompt input list updated; Layer 2 renders collapsed and labelled.
 - [ ] Section renames applied in template labels and renderer.
 - [ ] Validators pass on an existing country before regenerating any report.
+
+---
+
+## Amendment 2026-07-19 — derivatives compose after the situation pass (decided)
+
+Supersedes the §14 GENERATION ORDER rule that Pass B composes the scorecard and baseline last
+*within Pass B*. Decided after the USA run 2 situation pass corrected two peer fields and rewrote
+the Iran status in `security.diplomacy` — derivatives composed before that pass can rest on facts
+the verification layer then changes, and a baseline blind to an active war is not a faithful
+summary of the report it fronts.
+
+- Pass B emits `scorecard` (all six axes), `scorecardAnchors`, and `baseline` EMPTY, exactly as it
+  already does for situation/actors/risks. Partial fills are apply-gate errors; all-empty is a
+  warning ("awaits the derivatives pass").
+- A dedicated DERIVATIVES pass (closed-book, `derivatives-pass.prompt.md`, generated at init)
+  composes both from the finished report — including the installed situation threads — after the
+  situation pass's peer corrections are approved: the last point at which the report's facts can
+  change. Sequencing guard: the pass stops if `situation_en` is empty.
+- Pass order: Pass B → situation pass (+ approved peerCorrections) → derivatives pass →
+  actors / risks passes.
+- The page hides the Quick scorecard block while the scorecard is empty (the baseline already
+  rendered nothing when empty, by the §4 ruling — never back-fill).
+- Contracts unchanged: six axes High|Med|Low, Interpretation, ≥1 resolvable anchor + bilingual
+  rationale per axis, ghost anchors hard-error; baseline short, present-state, no new facts, no
+  anchors, never "Outlook".

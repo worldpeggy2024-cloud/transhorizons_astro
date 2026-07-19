@@ -804,7 +804,20 @@ export default function CountryPage() {
 
   // Scorecard rows — rendered twice (desktop rail + mobile inline), rework §5:
   // a visually distinct assessment block, out of the Political section.
+  // Pending state (amendment 2026-07-19): Pass B emits the scorecard EMPTY and
+  // the derivatives pass composes it after the situation pass — until then the
+  // whole block hides (like the baseline), rather than showing six blank axes.
   const scorecardTitle = language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard';
+  const scorecardPending = hasAnalysis && !(
+    [
+      analysis!.scorecard.eliteCohesion,
+      analysis!.scorecard.socialCohesion,
+      analysis!.scorecard.securityLoyalty,
+      analysis!.scorecard.economicPressure,
+      analysis!.scorecard.protestCapacity,
+      analysis!.scorecard.institutionalResilience,
+    ] as Array<string | null | undefined>
+  ).some((v) => typeof v === 'string' && v.trim().length > 0);
   const scorecardRows = hasAnalysis ? (
     <>
       <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} detail={analysis!.scorecardAnchors?.eliteCohesion} />
@@ -1037,11 +1050,14 @@ export default function CountryPage() {
         )}
 
         {/* Scorecard inline on mobile — the rail is hidden there (rework §5).
-            Compact: three columns of two axes each. */}
-        <div className="lg:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
-          <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
-          <div className="grid grid-cols-3 gap-x-4">{scorecardRows}</div>
-        </div>
+            Compact: three columns of two axes each. Hidden while the
+            derivatives pass hasn't composed the scorecard yet. */}
+        {!scorecardPending && (
+          <div className="lg:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
+            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+            <div className="grid grid-cols-3 gap-x-4">{scorecardRows}</div>
+          </div>
+        )}
 
         {/* ── Lateral rail (LEFT) + content (rework §5) ── */}
         <div className="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-8 lg:items-start">
@@ -1086,10 +1102,12 @@ export default function CountryPage() {
               ))}
             </ul>
           </nav>
-          <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
-            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
-            {scorecardRows}
-          </div>
+          {!scorecardPending && (
+            <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
+              <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+              {scorecardRows}
+            </div>
+          )}
         </aside>
 
         <div className="min-w-0">

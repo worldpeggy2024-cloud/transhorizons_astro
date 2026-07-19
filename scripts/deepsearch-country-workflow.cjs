@@ -277,22 +277,33 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
   const errors = [];
   const warnings = [];
 
+  // Scorecard + baseline are DERIVATIVES composed by the dedicated derivatives
+  // pass AFTER the situation pass installs (amendment 2026-07-19). At apply
+  // they are legal in exactly two states: ALL-EMPTY (pending the pass) or
+  // fully composed. Partial fills are errors, never a valid intermediate.
   const score = content?.scorecard ?? {};
   const scoreKeys = ['eliteCohesion', 'socialCohesion', 'securityLoyalty', 'economicPressure', 'protestCapacity', 'institutionalResilience'];
-  for (const k of scoreKeys) {
-    if (!['High', 'Med', 'Low'].includes(score[k])) {
-      errors.push(`scorecard.${k} must be High|Med|Low`);
+  const filledScores = scoreKeys.filter((k) => nonEmptyString(score[k]));
+  if (filledScores.length === 0) {
+    warnings.push('scorecard is empty — awaits the derivatives pass (run after the situation pass installs)');
+  } else if (filledScores.length < scoreKeys.length) {
+    errors.push(`scorecard partially filled (${filledScores.length}/6) — all six axes or none`);
+  } else {
+    for (const k of scoreKeys) {
+      if (!['High', 'Med', 'Low'].includes(score[k])) {
+        errors.push(`scorecard.${k} must be High|Med|Low`);
+      }
     }
   }
 
   // There is NO executive snapshot (rework §5) — its content lives in the
-  // section openers. BASELINE replaces it as the compose-last derivative:
-  // required in both languages; may cite only already-approved ids; carries
-  // no anchors (enforced by the anchor block below).
-  for (const lg of ['en', 'fr']) {
-    if (!nonEmptyString(content?.baseline?.[lg])) {
-      errors.push(`baseline.${lg} is required (short derivative paragraph — the page's only always-visible prose)`);
-    }
+  // section openers. BASELINE replaces it as the derivative always-visible
+  // prose: composed by the derivatives pass; both languages or neither.
+  const baselineFilled = ['en', 'fr'].filter((lg) => nonEmptyString(content?.baseline?.[lg]));
+  if (baselineFilled.length === 0) {
+    warnings.push('baseline is empty — awaits the derivatives pass (the page renders nothing there by design; never back-fill)');
+  } else if (baselineFilled.length === 1) {
+    errors.push(`baseline present in ${baselineFilled[0]} only — both languages or neither`);
   }
 
   // The 33 fields (rework §3), new names. The anchored-synthesis trio
@@ -357,17 +368,25 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
       else if (!resolveNested(mk.raw, lg)) errors.push(`${label}: GHOST ANCHOR [${mk.raw}] — target field empty or missing`);
     }
   }
-  // Scorecard anchors gate (spec §4): values present AND each axis carries >=1
-  // resolvable anchor + rationale — WARNING-FIRST migration; ghost anchors hard-error.
-  anchorsLib.validateScorecardAnchors(
-    content?.scorecardAnchors ? JSON.stringify(content.scorecardAnchors) : '',
-    {
-      sourceIds: new Set([...(sourceIds ?? []), ...(acceptedExtraIds ?? [])]),
-      resolveField: (p) => resolveNested(p, 'en') || resolveNested(p, 'fr'),
-      errors,
-      warnings,
+  // Scorecard anchors gate (spec §4): when the scorecard is composed, each axis
+  // carries >=1 resolvable anchor + rationale — WARNING-FIRST migration; ghost
+  // anchors hard-error. Skipped entirely while the scorecard is empty-pending;
+  // anchors without values is the inverse partial fill and is an error.
+  const anchorsPresent = content?.scorecardAnchors && Object.keys(content.scorecardAnchors).length > 0;
+  if (filledScores.length > 0 || anchorsPresent) {
+    if (filledScores.length === 0 && anchorsPresent) {
+      errors.push('scorecardAnchors present but scorecard values empty — compose both in the derivatives pass or neither');
     }
-  );
+    anchorsLib.validateScorecardAnchors(
+      anchorsPresent ? JSON.stringify(content.scorecardAnchors) : '',
+      {
+        sourceIds: new Set([...(sourceIds ?? []), ...(acceptedExtraIds ?? [])]),
+        resolveField: (p) => resolveNested(p, 'en') || resolveNested(p, 'fr'),
+        errors,
+        warnings,
+      }
+    );
+  }
 
   // Situator openers — HARD ERRORS at the apply gate (regeneration is cheap here;
   // a missed opener that reaches the YAML costs a manual retrofit instead).
@@ -526,13 +545,16 @@ function buildYaml(payload) {
     `nameEn: ${payload.nameEn}`,
     `nameFr: ${payload.nameFr}`,
     yamlText('lastUpdated', payload.lastUpdated),
-    `scorecard_eliteCohesion: ${c.scorecard.eliteCohesion}`,
-    `scorecard_socialCohesion: ${c.scorecard.socialCohesion}`,
-    `scorecard_securityLoyalty: ${c.scorecard.securityLoyalty}`,
-    `scorecard_economicPressure: ${c.scorecard.economicPressure}`,
-    `scorecard_protestCapacity: ${c.scorecard.protestCapacity}`,
-    `scorecard_institutionalResilience: ${c.scorecard.institutionalResilience}`,
-    ...(c.scorecardAnchors ? [yamlBlock('scorecard_anchors', JSON.stringify(c.scorecardAnchors, null, 2))] : []),
+    // Empty scorecard values are legal at apply — pending the derivatives pass.
+    yamlText('scorecard_eliteCohesion', c.scorecard?.eliteCohesion),
+    yamlText('scorecard_socialCohesion', c.scorecard?.socialCohesion),
+    yamlText('scorecard_securityLoyalty', c.scorecard?.securityLoyalty),
+    yamlText('scorecard_economicPressure', c.scorecard?.economicPressure),
+    yamlText('scorecard_protestCapacity', c.scorecard?.protestCapacity),
+    yamlText('scorecard_institutionalResilience', c.scorecard?.institutionalResilience),
+    ...(c.scorecardAnchors && Object.keys(c.scorecardAnchors).length
+      ? [yamlBlock('scorecard_anchors', JSON.stringify(c.scorecardAnchors, null, 2))]
+      : []),
     // No executiveSnapshot (rework §5) — baseline is the compose-last derivative.
     // TODO(post-migration): the ?? macroReality / ?? permitting fallbacks below
     // exist only for old-shape content JSON; remove once CAN + USA are on the
@@ -827,6 +849,69 @@ Return ONLY a JSON object:
 `;
 }
 
+// Derivatives pass (amendment 2026-07-19 to the rework's compose-last rule):
+// the scorecard and baseline are composed by THIS dedicated pass, after the
+// situation pass has installed and its peer corrections are approved — the
+// last point at which the report's facts can change. Pass B emits both empty.
+function derivativesPassPrompt(code, nameEn, nameFr, today) {
+  return `# Derivatives Pass (${code}) — scorecard + baseline
+
+Country: ${nameEn} (${nameFr})
+Date: ${today}
+
+## Input — the finished report (attached)
+
+You are given ONE attachment: the finished country report as a YAML file (content/countries/${code}/analysis.yaml). No other project context is assumed; everything you need is in this prompt and that file.
+
+- The report's keys are flat: <section>_<subsection>_<language>, e.g. political_powerStructure_en. Its SIX PEER SECTIONS are the territory_*, society_*, economy_*, political_*, capacity_*, and security_* field families (each field in _en and _fr), and situation_en/_fr hold the verified event layer as JSON threads. Work from the _en fields as primary; the _fr fields carry the same content in French.
+- The report's SOURCE REGISTRY is the \`sources\` key: a JSON array of source objects, each with an \`id\`. Every [source-id] marker in the report resolves there.
+- The scorecard_* keys and baseline_en/fr in the file are EMPTY — this pass is what writes them.
+
+**This pass is CLOSED-BOOK.** Run it with research/web search off; if search cannot be disabled, do not use it. Both outputs are DERIVATIVES: they summarise the attached report and may introduce NO fact that does not already appear, cited, in it.
+
+SEQUENCING GUARD: this pass runs AFTER the situation pass has installed and its peer corrections are applied — the report you are reading is the final fact state. If situation_en is empty, STOP and say so instead of composing: the sequencing is wrong.
+
+## Scorecard
+
+Six axes, each rated High, Med, or Low — citationType: Interpretation, derivative:
+
+- eliteCohesion — intra-power-bloc unity (start from political.stabilityDrivers, political.powerStructure)
+- socialCohesion — society-wide trust and polarisation, distinct from elite cohesion (society.cohesion)
+- securityLoyalty — armed-forces and security-force loyalty AND who controls them (political.stabilityDrivers, security.internal)
+- economicPressure — the pressure the economy currently puts on the political order (economy.*, situation)
+- protestCapacity — the population's demonstrated capacity to mobilise (society.cohesion, situation)
+- institutionalResilience — the institutions' demonstrated capacity to absorb shocks (political.shockAbsorbers, political.rightsAndChecks, capacity.*, situation)
+
+The field pointers are starting points, not limits — rate each axis from the WHOLE report, including the situation threads: the fast-moving event layer is exactly what the ratings must reflect.
+
+## Scorecard anchors
+
+For EACH of the six axes: the anchors the rating summarises and a one-line rationale in both languages.
+
+"scorecardAnchors": {
+  "eliteCohesion": { "anchors": ["source-id", "political.stabilityDrivers"], "rationale_en": "one line — why those facts produce this value", "rationale_fr": "une ligne" },
+  ... (all six axes)
+}
+
+Each axis needs >= 1 anchor. Anchors are [source-id]s from the registry or dot field paths (e.g. political.shockAbsorbers, situation); an anchor to an empty field or an id not in the registry is a GHOST and is rejected by the validators.
+
+## Baseline
+
+A short paragraph (not one line, not long) in BOTH languages — the page's only always-visible prose, enough for a reader to decide whether to open this country. Present-state characterisation, never a forecast. It introduces no fact not already cited in the report and carries NO new sources; any citation markers must be ids already used in this report. It carries no [dot.path] anchors. It is named Baseline, never "Outlook." Where the situation field holds material events (a war, a rupture, a regime change), the baseline reflects them — it must not read as if the standing conditions were the whole story.
+
+DISCIPLINES: acronyms spelled out at first mention, no exceptions; EN and FR carry the same substance and the same citation ids.
+
+**Self-check before returning:** every anchor resolves to a non-empty field of the attached report or an id present in its registry; the baseline cites no id outside the registry; all six axes carry a value, at least one anchor, and both rationales. Fix failures before returning; do not ship them.
+
+Return ONLY a JSON object:
+{
+  "scorecard": { "eliteCohesion": "High|Med|Low", "socialCohesion": "…", "securityLoyalty": "…", "economicPressure": "…", "protestCapacity": "…", "institutionalResilience": "…" },
+  "scorecardAnchors": { all six axes as specified above },
+  "baseline": { "en": "…", "fr": "…" }
+}
+`;
+}
+
 function initCommand(iso3, nameEn, nameFr) {
   const code = String(iso3).toUpperCase();
   const jobDir = path.join(process.cwd(), 'content', 'docs', 'deepsearch-jobs', code);
@@ -1022,7 +1107,7 @@ Hard rules:
 - Omit any claim that cannot be tied to an approved source — do not write it with weaker sourcing or vague attribution.
 - EN and FR fields must be synchronized in substance (same facts, same depth). FR may adapt phrasing naturally.
 - COMPLETENESS: every one of the 33 narrative fields is REQUIRED and NON-EMPTY, in BOTH languages — the apply gate rejects an empty field outright, and an incomplete JSON is sent back whole. Thin means SHORT (an honest one-line field), never EMPTY. Do not leave a field blank because the figures were not already at hand: Pass A harvested sources for every field family — consult the approved list below and write each field from it. If, after consulting the sources, a field genuinely cannot be supported, still write its honest one-line finding and name the sourcing gap in a note AFTER the JSON (outside it) so Pass A can be extended. KNOW THE LOOP: a field whose one-liner carries NO citation at all will still fail the apply gate's required-citation check — that failure is the designed trigger for a targeted Pass A extension, after which only that field is rewritten citing the new sources. Never fabricate a citation to pass the gate.
-- situation, actors.domestic, actors.external, and risks are the ONLY empty emissions (empty strings / empty arrays, both languages) — each is populated afterward by its own dedicated pass working from this finished report. Do not fold their content into the peer sections to compensate.
+- situation, actors.domestic, actors.external, risks, the scorecard (values AND anchors), and baseline are the ONLY empty emissions (empty strings / arrays / objects, both languages) — each is populated afterward by its own dedicated pass working from this finished report (situation pass; actors and risks passes; derivatives pass for scorecard + baseline). Do not fold their content into the peer sections to compensate.
 - ANTI-PADDING: no per-section word caps; never pad a thin section to match a rich one. Every sentence after an opener carries a [source-id] or is cut — no restatement, no meta-commentary, no connective throat-clearing. Thinness is a finding: a country with negligible endowment on a dimension gets an honest one-line field, never an empty field, never a padded paragraph.
 - ANCHORS: capacity.inheritedTerrain and security.posture are ANCHORED SYNTHESES — they introduce no new sourced facts and point at the fields they stand on with [dot.path] markers (e.g. [territory.climate], [security.military]); capacity.steering is Interpretation anchored to the observable record and may combine [source-id] citations with [dot.path] anchors. An anchor must target a NON-EMPTY field composed before it (inheritedTerrain → territory./society./economy. only; posture → the other four security fields only); an anchor to an empty field is rejected at the apply gate, same class as a ghost citation. baseline carries NO anchors.
 - Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only; all subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. The report is written for a reader who does not work in the sector, and the extra half-line per acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when they appear as data-field identifiers; when such a code appears in reader-facing prose, spell it: "Canada," not "CAN."
@@ -1041,9 +1126,9 @@ Hard rules:
 
 Section-by-section instructions:
 
-GENERATION ORDER — there is NO executive snapshot (its former content lives in the section openers). The DERIVATIVE items are composed LAST, after every peer section is written and verified: (1) the SCORECARD (values + anchors + rationale) and (2) the BASELINE. Both summarise sections already written and may introduce no fact that does not already appear, cited, in a section above. Within SECURITY, compose posture LAST (it anchors to the other four security fields). The schema is key-addressed and key order carries no meaning.
+GENERATION ORDER — there is NO executive snapshot (its former content lives in the section openers). The DERIVATIVE items — the SCORECARD (values + anchors + rationales) and the BASELINE — are NOT composed by this pass: emit them EMPTY (see the empty-emissions block below). They are composed by the dedicated DERIVATIVES pass, which runs after the situation pass has installed and its peer corrections are approved — the last point at which the report's facts can change (amendment 2026-07-19 to the rework's compose-last rule). Within SECURITY, compose posture LAST (it anchors to the other four security fields). The schema is key-addressed and key order carries no meaning.
 
-baseline (en and fr — composed LAST): a short paragraph (not one line, not long), the page's only always-visible prose — enough for a reader to decide whether to open this country. Present-state characterisation, never a forecast. It introduces no fact not already cited in a section above and carries NO new sources; any citation markers must be ids already used in this report. It carries no [dot.path] anchors. It is named Baseline, never "Outlook."
+baseline (en and fr): EMITTED EMPTY ("" in both languages) — composed by the derivatives pass. Do not draft it; the page deliberately renders nothing where the baseline is empty.
 
 political.powerStructure: OPENER (required, one sentence): the regime type and how power is won and held. Then: who holds the executive and how it was won. State legislative control separately from executive control — in presidential and semi-presidential systems these diverge, and the report must say plainly whether government is unified or divided. Where the legislature is bicameral, give each chamber's composition separately, each cited to that chamber's own official live standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date). Use the country's own vocabulary — "governing coalition," "majority," "divided government" — do not force one system's term onto another's structure. Majority/minority/coalition; opposition strength and legitimacy. Where actual power sits outside the formal organ, locate it explicitly. Judicial and media independence belong to rightsAndChecks; who controls the security forces belongs to stabilityDrivers. This is the MOST VOLATILE field in the report — dated to run date. ${powerAnchorText}
 
@@ -1123,18 +1208,12 @@ security.transnationalExposure: cross-border flows and non-state entanglements �
 
 security.diplomacy: treaty alliances; multilateral memberships; transactional partners; territorial disputes; regional flashpoints; and PER-RELATIONSHIP TEXTURE for key bilateral relationships, built on hard citable facts (treaty texts, trade volumes by partner, basing agreements and troop presence, United Nations voting alignment, energy dependence, state visits). The character of a relationship is Interpretation ANCHORED to those facts.
 
-actors.domestic, actors.external, and risks are EMITTED EMPTY — each is populated afterward by its own dedicated two-layer pass working from this finished report (implementation spec §8):
+actors.domestic, actors.external, risks, the scorecard, scorecardAnchors, and baseline are EMITTED EMPTY — actors and risks are populated afterward by their dedicated two-layer passes (implementation spec §8); the scorecard and baseline by the DERIVATIVES pass after the situation pass installs (amendment 2026-07-19). Emit exactly:
 "actors": { "domestic": { "en": [], "fr": [] }, "external": { "en": [], "fr": [] } }
 "risks": { "en": [], "fr": [] }
-
-scorecard (composed LAST, with the baseline — derivative): six axes (eliteCohesion, socialCohesion, securityLoyalty, economicPressure, protestCapacity, institutionalResilience), each High, Med, or Low. socialCohesion is the second of the two-cohesions split — society-wide trust/polarisation, distinct from elite cohesion. All six are citationType: Interpretation and DERIVATIVE — they introduce no fact not already cited in a section above.
-
-scorecardAnchors (composed with the scorecard): for EACH of the six axes, the anchors the rating summarises and a one-line rationale in both languages:
-"scorecardAnchors": {
-  "eliteCohesion": { "anchors": ["source-id", "political.stabilityDrivers"], "rationale_en": "one line — why those facts produce this value", "rationale_fr": "une ligne" },
-  ... (all six axes)
-}
-Each axis needs >= 1 anchor; anchors are [source-id]s already used in this report or dot field paths; an anchor to an empty field or unknown id is rejected.
+"scorecard": { "eliteCohesion": "", "socialCohesion": "", "securityLoyalty": "", "economicPressure": "", "protestCapacity": "", "institutionalResilience": "" }
+"scorecardAnchors": {}
+"baseline": { "en": "", "fr": "" }
 
 Approved source IDs from Pass A:
 [PASTE THE SOURCE IDs FROM pass-a.sources.json HERE BEFORE SUBMITTING]
@@ -1157,22 +1236,18 @@ Approved source IDs from Pass A:
   ];
 
   const contentTemplate = {
+    // scorecard + scorecardAnchors + baseline are EMITTED EMPTY by Pass B —
+    // composed by the derivatives pass after the situation pass installs
+    // (amendment 2026-07-19; empty scorecard values are pending, not invalid).
     scorecard: {
-      eliteCohesion: 'Med',
-      socialCohesion: 'Med',
-      securityLoyalty: 'Med',
-      economicPressure: 'Med',
-      protestCapacity: 'Med',
-      institutionalResilience: 'Med',
+      eliteCohesion: '',
+      socialCohesion: '',
+      securityLoyalty: '',
+      economicPressure: '',
+      protestCapacity: '',
+      institutionalResilience: '',
     },
-    scorecardAnchors: {
-      eliteCohesion: { anchors: ['source-id-or-dot.path'], rationale_en: '', rationale_fr: '' },
-      socialCohesion: { anchors: [], rationale_en: '', rationale_fr: '' },
-      securityLoyalty: { anchors: [], rationale_en: '', rationale_fr: '' },
-      economicPressure: { anchors: [], rationale_en: '', rationale_fr: '' },
-      protestCapacity: { anchors: [], rationale_en: '', rationale_fr: '' },
-      institutionalResilience: { anchors: [], rationale_en: '', rationale_fr: '' },
-    },
+    scorecardAnchors: {},
     baseline: { en: '', fr: '' },
     territory: {
       geography: { en: '', fr: '' },
@@ -1421,6 +1496,10 @@ SCHEMA (one object per event)
   fs.writeFileSync(srcTemplatePath, JSON.stringify(sourceTemplate, null, 2), 'utf8');
   fs.writeFileSync(contentTemplatePath, JSON.stringify(contentTemplate, null, 2), 'utf8');
   fs.writeFileSync(situationPassPath, situationPassText, 'utf8');
+
+  // Derivatives pass (amendment 2026-07-19): scorecard + baseline compose LAST,
+  // after the situation pass installs — the prompt is generated here, run then.
+  fs.writeFileSync(path.join(jobDir, 'derivatives-pass.prompt.md'), derivativesPassPrompt(code, nameEn, nameFr, today), 'utf8');
 
   // Actors pass (rework §8.1): actors-pass.prompt.md is generated from the
   // repo's source template — the versioned actors extraction prompt, currently
