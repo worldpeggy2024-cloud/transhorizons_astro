@@ -212,13 +212,1311 @@ situation_fr: |-
   ]
 situation_lastUpdated: '2026-07-19'
 actors_domestic_en: |-
-  []
+  [
+    {
+      "name": "President Donald Trump / the Trump administration",
+      "kind": "federal executive",
+      "liveActorStatus": "current",
+      "currentPosition": "The executive is held by President Donald Trump, a Republican inaugurated in January 2025, governing with unified party control while 2026 apex-court doctrine expands presidential control of the executive branch; the administration voided the prior Nationally Determined Contribution targets, prioritised homeland and hemispheric security, asserted a \"Trump corollary\" to the Monroe Doctrine, and declared the Iran ceasefire over on 8 July 2026.",
+      "fieldsCitedIn": [
+        "territory.transition",
+        "political.powerStructure",
+        "political.stabilityDrivers",
+        "capacity.steering",
+        "security.transnationalExposure",
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "Consolidating executive control over the regulatory state rather than over ownership of production [economy.politicalEconomy], and converting that control into rapid action on a narrow priority set — homeland defence, border enforcement, counter-narcotics, hemispheric primacy and domestic mineral production [capacity.steering][security.transnationalExposure][capacity.approvals].",
+      "resources": "Unified Republican control of the presidency and both chambers [political.powerStructure], command of the armed forces as commander-in-chief [political.stabilityDrivers], at-will removal of principal officers of independent agencies after Trump v. Slaughter [political.constitutionalSubstrate], executive orders that redirect agency priorities [capacity.approvals], and a demonstrated capacity for fast implementation where it has prioritised, as in the January 2026 Venezuela operation [capacity.steering][maduro-capture-wardept].",
+      "constraints": "A five-seat working majority in the House with five vacancies [political.powerStructure], repeated inability to fund the government on time [capacity.steering], and an apex court that has cut against it as well as for it — striking the International Emergency Economic Powers Act tariffs, striking Executive Order 14160 on birthright citizenship, and signalling a central-bank carve-out from at-will removal [political.constitutionalSubstrate][crs-lsb11398-tariffs].",
+      "likelyMoves": "Shift durable tariff authority toward Section 232 and Section 301 as the Section 122 surcharge expires by operation of law on 24 July 2026 absent congressional extension [crs-lsb11398-tariffs], and sustain strikes and the naval blockade against Iran alongside continued kinetic action against transnational criminal organisations in the hemisphere [cnn-iran-war-july18][security.internal].",
+      "engagementMode": "negotiable / dealable. The report shows a counterpart that bargains — transactional burden-sharing with allies, a Pakistan-mediated ceasefire and an interim memorandum of understanding [security.diplomacy] — and one that exits deals unilaterally when it judges them unproductive [cnbc-iran-ceasefire-over].",
+      "anchors": [
+        "political.powerStructure",
+        "capacity.steering",
+        "security.diplomacy",
+        "territory.transition",
+        "ndstrategy-2026",
+        "cnbc-iran-ceasefire-over"
+      ]
+    },
+    {
+      "name": "Congress (the Senate and the House of Representatives)",
+      "kind": "legislature",
+      "liveActorStatus": "current",
+      "currentPosition": "Both chambers are under Republican control — Senate 53 to 45 with 2 independents, House 217 to 212 with 1 independent and 5 vacancies — and Congress holds legislative power, confirms federal judges, exercises plenary authority over the territories and Indian country, has produced the two longest shutdowns on record through the FY2026 appropriations cycle, and must act by 24 July 2026 for the Section 122 tariff surcharge to continue.",
+      "fieldsCitedIn": [
+        "political.powerStructure",
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "situation"
+      ],
+      "interests": "The report describes an institution whose revealed priority is holding the governing coalition together rather than reasserting institutional prerogative: it financed Immigration and Customs Enforcement and Customs and Border Protection through reconciliation rather than annual appropriations [house-approps-dhs-76day] and enacted a reconciliation act that raised projected deficits by $4.7 trillion while announced priorities were deficit reduction [capacity.steering].",
+      "resources": "The appropriations power, the confirmation power over life-tenured judges [political.rightsAndChecks], plenary authority over the five inhabited territories and over tribal sovereignty [political.constitutionalSubstrate], the reconciliation route around ordinary appropriations [house-approps-dhs-76day], and statutory tariff authorities that the executive must borrow [crs-lsb11398-tariffs].",
+      "constraints": "Margins thin enough that a small bloc can withhold consent — the 76-day Homeland Security lapse followed Senate Democrats withdrawing support [crs-r48832-shutdowns] — and a fiscal baseline where mandatory spending and net interest, the fastest-growing outlay, crowd the discretionary space it actually controls [economy.politicalEconomy][economy.publicFinances].",
+      "likelyMoves": "Face a forced decision on extending the Section 122 surcharge beyond 24 July 2026, and confront the unresolved refund exposure of more than $160 billion from the terminated tariffs [crs-lsb11398-tariffs].",
+      "engagementMode": "veto-holder. Consent is required and has been withheld: appropriations lapses of 43 and 76 days show that non-obstruction by a Senate minority is a live condition of government operation, and the tariff surcharge lapses by operation of law without congressional action [political.shockAbsorbers][crs-lsb11398-tariffs].",
+      "anchors": [
+        "political.powerStructure",
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "senate-partydiv",
+        "house-partybreakdown",
+        "crs-lsb11398-tariffs"
+      ]
+    },
+    {
+      "name": "Republican Party / congressional Republican majorities",
+      "kind": "other",
+      "liveActorStatus": "current",
+      "currentPosition": "The governing party, holding the presidency and both chambers, which the report treats as the source of high intra-bloc elite cohesion alongside low cross-party cohesion.",
+      "fieldsCitedIn": [
+        "political.powerStructure",
+        "political.stabilityDrivers"
+      ],
+      "interests": "Holding unified control through a period in which the balance of power is moving toward the presidency [political.powerStructure], with the party's own supporters showing sharply elevated institutional trust relative to the other party (26% against 9%) [society.cohesion].",
+      "resources": "53 Senate seats and 217 House seats [senate-partydiv][house-partybreakdown], control of the executive, and the reconciliation route used to fund enforcement agencies outside the ordinary appropriations gate [house-approps-dhs-76day].",
+      "constraints": "A five-seat House majority against five vacancies makes the working margin narrower than the nominal one [political.powerStructure], and its supporters' institutional trust tracks which party holds power rather than stable underlying trust, so the cohesion is contingent [society.cohesion].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. The report describes it as the governing bloc rather than an independent institution; engagement runs through ordinary partisan bargaining [political.powerStructure].",
+      "anchors": [
+        "political.powerStructure",
+        "political.stabilityDrivers",
+        "senate-partydiv",
+        "house-partybreakdown",
+        "pew-trust-in-government"
+      ]
+    },
+    {
+      "name": "Democratic Party / congressional Democrats (including Senators King and Sanders, independents caucusing with them)",
+      "kind": "opposition party",
+      "liveActorStatus": "current",
+      "currentPosition": "In the minority in both chambers — 45 Senate seats plus 2 independents caucusing with them, and 212 House seats — and withdrew support for the Department of Homeland Security's appropriations after Customs and Border Protection agents killed Alex Pretti on 24 January 2026, precipitating the 76-day department shutdown.",
+      "fieldsCitedIn": [
+        "political.powerStructure",
+        "situation"
+      ],
+      "interests": "Using the one gate available to a legislative minority — consent to appropriations — to contest immigration enforcement conduct [crs-r48832-shutdowns][cbs-pretti-cbp-report].",
+      "resources": "A Senate bloc of 45 plus two caucusing independents, sufficient to withhold the consent that annual appropriations require [political.powerStructure][crs-r48832-shutdowns].",
+      "constraints": "The leverage proved partial: the department reopened without funding for Immigration and Customs Enforcement and Customs and Border Protection, which were financed instead through reconciliation, routing around the gate it had used [house-approps-dhs-76day]. Institutional trust among its own supporters stands at 9%, the lowest ever recorded in the series [society.cohesion].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "veto-holder. The report's only account of it acting is the withholding of consent to appropriations and the 76-day lapse that followed [crs-r48832-shutdowns][house-approps-dhs-76day].",
+      "anchors": [
+        "political.powerStructure",
+        "crs-r48832-shutdowns",
+        "cbs-pretti-cbp-report",
+        "house-approps-dhs-76day",
+        "pew-trust-in-government"
+      ]
+    },
+    {
+      "name": "Supreme Court of the United States",
+      "kind": "judicial",
+      "liveActorStatus": "current",
+      "currentPosition": "Actively reallocating power in 2026 — Trump v. Slaughter (at-will removal of independent-agency principal officers, overruling Humphrey's Executor), Trump v. Cook (allowing Governor Lisa Cook to remain, signalling a central-bank carve-out), Trump v. Barbara (birthright citizenship, striking Executive Order 14160), Watson v. Republican National Committee (late-arriving absentee ballots) and Learning Resources, Inc. v. Trump (the International Emergency Economic Powers Act does not authorise tariffs).",
+      "fieldsCitedIn": [
+        "economy.politicalEconomy",
+        "political.powerStructure",
+        "political.constitutionalSubstrate",
+        "situation"
+      ],
+      "interests": "The pattern the report records is doctrinal rather than partisan: expanding presidential control over the executive branch while holding the line on statutory authority and constitutional text elsewhere [political.constitutionalSubstrate].",
+      "resources": "Judicial review since Marbury v. Madison [political.rightsAndChecks], life tenure, and a 2026 docket that has resolved removal power, birthright citizenship, ballot deadlines and tariff authority in a single term [political.constitutionalSubstrate].",
+      "constraints": "The report notes the majorities are narrow — 6–3 in Slaughter and Barbara, 5–4 in Cook and Watson — and that the substrate is \"in motion, not stable\" [political.constitutionalSubstrate].",
+      "likelyMoves": "Merits review in Trump v. Cook remains pending, so the central-bank carve-out is signalled rather than settled [trump-v-cook-2026].",
+      "engagementMode": "judicial-deference. The report treats its rulings as reallocating the constitutional substrate itself and presents the contest over operative power without resolving it [political.powerStructure].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "economy.politicalEconomy",
+        "trump-v-slaughter-2026",
+        "trump-v-cook-2026",
+        "scotus-learning-resources"
+      ]
+    },
+    {
+      "name": "The federal judiciary",
+      "kind": "judicial",
+      "liveActorStatus": "current",
+      "currentPosition": "Appointed by the President with Senate confirmation and holding life tenure, exercising judicial review since Marbury v. Madison, within a rule-of-law standing the report records as 27th of 143 overall but 112th of 143 on access to civil justice.",
+      "fieldsCitedIn": [
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate"
+      ],
+      "interests": "report-silent",
+      "resources": "Life tenure and the power of judicial review, insulating tenure from the removal contest that reached independent agencies [political.rightsAndChecks][political.constitutionalSubstrate].",
+      "constraints": "Access is the weak point rather than independence: 112th of 143 on access to civil justice sits against 27th overall [political.rightsAndChecks].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "judicial-deference. The report describes appointment and tenure as structurally protected and does not describe political contestation of judicial tenure itself [political.rightsAndChecks].",
+      "anchors": [
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate",
+        "marbury-v-madison-1803",
+        "wjp-rule-of-law-2025"
+      ]
+    },
+    {
+      "name": "The Federal Reserve (Governor Lisa Cook)",
+      "kind": "independent institution",
+      "liveActorStatus": "current",
+      "currentPosition": "Its independence is under live contest: in Trump v. Cook (No. 25A312, 2026) the Court allowed Governor Lisa Cook to remain pending merits review by 5–4, which the report reads as signalling a central-bank carve-out from the at-will removal power established in Trump v. Slaughter.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate"
+      ],
+      "interests": "Preserving the tenure protection that Slaughter removed from other independent agencies [political.constitutionalSubstrate].",
+      "resources": "A judicially signalled carve-out distinguishing it from other independent agencies, and, by implication of the report's account of the dollar's reserve-currency role, standing with the foreign holders of roughly $9.2 trillion in Treasuries [political.shockAbsorbers].",
+      "constraints": "The carve-out is a 5–4 interim signal pending merits review, not a holding [political.constitutionalSubstrate][trump-v-cook-2026].",
+      "likelyMoves": "Its position turns on merits review in Cook, which the report records as unresolved [political.constitutionalSubstrate].",
+      "engagementMode": "hijack-exposed. Nominally independent, but a sitting governor's removal was attempted and reached the apex court, where only a 5–4 interim order kept her in place [political.constitutionalSubstrate][trump-v-cook-2026].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "trump-v-cook-2026",
+        "trump-v-slaughter-2026"
+      ]
+    },
+    {
+      "name": "Independent regulatory agencies (the Federal Trade Commission named)",
+      "kind": "regulatory",
+      "liveActorStatus": "current",
+      "currentPosition": "Formerly insulated regulators are now subject to at-will presidential removal after Trump v. Slaughter held statutory for-cause protections for Federal Trade Commission commissioners unconstitutional, which the report says shifts the state–market boundary and increases the political variability of enforcement.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate",
+        "economy.politicalEconomy"
+      ],
+      "interests": "report-silent",
+      "resources": "Statutory enforcement mandates remain, but the tenure protection that made them independent of the presidency does not [economy.politicalEconomy].",
+      "constraints": "At-will removal of principal officers converts enforcement posture into a variable of presidential preference [economy.politicalEconomy][political.constitutionalSubstrate].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "hijack-exposed. The report describes the exposure as already realised rather than prospective: the protection was struck down, not merely threatened, and the central-bank carve-out signalled in Cook implies the rest of the class has none [political.constitutionalSubstrate].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "economy.politicalEconomy",
+        "trump-v-slaughter-2026"
+      ]
+    },
+    {
+      "name": "Congressional Budget Office",
+      "kind": "independent institution",
+      "liveActorStatus": "current",
+      "currentPosition": "Supplies the fiscal, demographic and productivity baseline the report works from — an FY2026 deficit of $1.9 trillion (5.8% of GDP), debt held by the public rising from 101% of GDP in 2026 to 120% by 2036, net interest doubling to $2.1 trillion, growth of 2.2% in 2026 slowing to about 1.8%, and generative AI adding about 10 basis points a year to productivity growth.",
+      "fieldsCitedIn": [
+        "society.demographics",
+        "economy.realEconomy",
+        "economy.publicFinances",
+        "capacity.productivity"
+      ],
+      "interests": "report-silent",
+      "resources": "A statutory analytic mandate whose projections the report treats as the reference baseline across four fields, including the scoring of the 2025 reconciliation act at $4.7 trillion of added deficits over 2026–2035 [economy.politicalEconomy][cbo-budget-outlook-2026].",
+      "constraints": "It scores and projects; the report attributes no authority to it over what is enacted — announced fiscal priorities diverged from implemented ones despite the scoring [capacity.steering].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "statutorily-independent. It operates by analytic mandate rather than bargaining, and the report reports no contest over its independence [economy.publicFinances].",
+      "anchors": [
+        "economy.publicFinances",
+        "capacity.productivity",
+        "cbo-budget-outlook-2026"
+      ]
+    },
+    {
+      "name": "Government Accountability Office",
+      "kind": "independent institution",
+      "liveActorStatus": "current",
+      "currentPosition": "Documents the federal delivery record — a February 2025 high-risk list of 38 areas, three regressions between 2023 and 2025, cost growth and schedule delays across a procurement portfolio above $750 billion, about $2.8 trillion in estimated improper payments since 2003 — and found in April 2014 that governmentwide data on environmental reviews were not readily available.",
+      "fieldsCitedIn": [
+        "capacity.approvals",
+        "capacity.delivery",
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "Audit access across the executive branch and a high-risk list that is the report's main instrument for seeing delivery capacity, including the 2025 addition of disaster recovery as a new area [capacity.delivery][gao-high-risk-list].",
+      "constraints": "Its findings recur rather than resolve: three areas regressed between assessments, deferred maintenance rose from $170 billion in 2017 to $370 billion in 2024, and improper payments have exceeded $150 billion government-wide in each of the last seven years [capacity.delivery][capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "statutorily-independent. It audits and reports on a statutory footing; the report describes no bargaining relationship and no contest over its access [capacity.delivery].",
+      "anchors": [
+        "capacity.delivery",
+        "capacity.publicServices",
+        "capacity.approvals",
+        "gao-high-risk-list",
+        "gao-high-risk-cost-schedule-2025",
+        "gao-nepa-review-2014"
+      ]
+    },
+    {
+      "name": "Council on Environmental Quality",
+      "kind": "regulatory",
+      "liveActorStatus": "current",
+      "currentPosition": "Sets and measures the National Environmental Policy Act review regime — its January 2025 timeline update puts the median environmental impact statement at 2.8 years for 2019–2024 against a 3.2-year 2010–2018 median, its recommended page limits of 150 (300 for unusual scope) are routinely exceeded, and it estimates that about 95% of reviews are categorical exclusions.",
+      "fieldsCitedIn": [
+        "capacity.approvals"
+      ],
+      "interests": "Reducing elapsed review time is the metric it publishes against, and the trend it reports is improving — 41% of statements completed in two years or less in 2024 against 24% in 2019 [capacity.approvals].",
+      "resources": "Governmentwide guidance over the review process and the timeline dataset that makes the regime legible at all [capacity.approvals][ceq-eis-timelines-2010-2024].",
+      "constraints": "Its own recommended limits are not binding — draft statements averaged 575 pages with 1,042 pages of appendices at final — and the bulk of delay sits upstream of the draft document, in the 58.4% of elapsed time between notice of intent and draft [capacity.approvals][ceq-eis-timeline-factsheet-2020].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode). It is an executive-branch office acting on presidential direction — the executive order of 20 March 2025 directed publication of designated mineral projects on the dashboard — so engagement runs through the administration rather than with the office independently [capacity.approvals].",
+      "anchors": [
+        "capacity.approvals",
+        "ceq-eis-timelines-2010-2024",
+        "ceq-eis-timeline-factsheet-2020",
+        "gao-nepa-review-2014"
+      ]
+    },
+    {
+      "name": "The Permitting Council",
+      "kind": "regulatory",
+      "liveActorStatus": "current",
+      "currentPosition": "Operates the Permitting Dashboard required under Title 41 of the Fixing America's Surface Transportation Act, tracking each covered project through a status field, and its executive director was directed by the executive order of 20 March 2025 to publish designated mineral production projects as transparency projects.",
+      "fieldsCitedIn": [
+        "capacity.approvals"
+      ],
+      "interests": "report-silent",
+      "resources": "The statutory requirement that lead agencies post target completion dates, and a downloadable project and timeline dataset by lead agency [capacity.approvals][permits-performance-gov-data-portal].",
+      "constraints": "The dashboard covers a defined project set only; the report notes that governmentwide review data have not been routinely tracked [capacity.approvals][gao-nepa-review-2014].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode). Its listing decisions were directed by executive order, and the resulting status skew tracks policy — offshore wind paused or cancelled while mining projects proceed [capacity.approvals].",
+      "anchors": [
+        "capacity.approvals",
+        "permits-performance-gov-dashboard",
+        "permits-performance-gov-data-portal"
+      ]
+    },
+    {
+      "name": "United States armed forces",
+      "kind": "military",
+      "liveActorStatus": "current",
+      "currentPosition": "A professional volunteer force under civilian command through the President as commander-in-chief, the world's pre-eminent military at $954 billion of expenditure in 2025 (about 33% of the world total), currently conducting strikes and a naval blockade against Iran, supporting interagency border operations and striking alleged drug-trafficking vessels.",
+      "fieldsCitedIn": [
+        "political.stabilityDrivers",
+        "security.internal",
+        "security.military",
+        "situation"
+      ],
+      "interests": "The 2026 National Defense Strategy reorients it toward homeland defence, deterring China by denial in the Indo-Pacific, allied burden-sharing and rebuilding the defence industrial base [security.military].",
+      "resources": "Global power projection across land, sea, air, cyber and space, nuclear forces under modernisation ($9.9 billion to the Columbia class and $13.9 billion to the Virginia class in 2025), and spending greater than the next six countries combined [security.military][sipri-milex-2025].",
+      "constraints": "Simultaneity: active hostilities with Iran, a naval blockade, hemispheric counter-narcotics operations and domestic-adjacent border missions run concurrently [security.diplomacy][security.internal]. The report attaches no readiness or force-structure ceiling beyond the Military Balance catalogue [iiss-military-balance-2026].",
+      "likelyMoves": "Sustain consecutive nights of strikes on Iranian infrastructure and blockade enforcement, and continue kinetic action against transnational criminal organisations in the hemisphere [cnn-iran-war-july18][security.internal].",
+      "engagementMode": "executive-subordinate (non-standard mode). The report records firm civilian command with no factional contestation of authority, and the scorecard rests security loyalty on exactly that [political.stabilityDrivers][security.military].",
+      "anchors": [
+        "security.military",
+        "security.internal",
+        "political.stabilityDrivers",
+        "ndstrategy-2026",
+        "sipri-milex-2025",
+        "cnn-iran-war-july18"
+      ]
+    },
+    {
+      "name": "Customs and Border Protection",
+      "kind": "security or intelligence service",
+      "liveActorStatus": "current",
+      "currentPosition": "Compiles border enforcement and migration flow statistics and operates at the centre of the enforcement escalation; its agents killed Alex Pretti, a 37-year-old intensive-care nurse, on 24 January 2026, the proximate trigger of the 76-day Homeland Security funding lapse, and it is now financed through reconciliation rather than regular annual appropriations.",
+      "fieldsCitedIn": [
+        "security.internal",
+        "security.transnationalExposure",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Military support to interagency border operations directed by the 2026 National Defense Strategy [security.internal], and funding insulated from the annual appropriations gate through reconciliation [house-approps-dhs-76day].",
+      "constraints": "Its conduct is itself a political constraint on the wider department: the Pretti killing withdrew the Senate consent on which Homeland Security appropriations depended [crs-r48832-shutdowns][cbs-pretti-cbp-report].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode), with a funding route that bypasses the ordinary legislative gate. The report notes the department reopened without appropriated funding for it, financing it by reconciliation instead [house-approps-dhs-76day].",
+      "anchors": [
+        "security.internal",
+        "security.transnationalExposure",
+        "cbs-pretti-cbp-report",
+        "house-approps-dhs-76day",
+        "ndstrategy-2026"
+      ]
+    },
+    {
+      "name": "Immigration and Customs Enforcement",
+      "kind": "security or intelligence service",
+      "liveActorStatus": "current",
+      "currentPosition": "Financed through budget reconciliation rather than regular annual appropriations after the Department of Homeland Security reopened on 30 April 2026 without appropriated funding for it.",
+      "fieldsCitedIn": [
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Funding routed outside the annual appropriations cycle, which removes the recurring consent point that the 76-day lapse demonstrated [house-approps-dhs-76day].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode). The report's single account of it is a financing arrangement that places it outside the ordinary legislative gate [house-approps-dhs-76day].",
+      "anchors": [
+        "house-approps-dhs-76day",
+        "crs-r48832-shutdowns"
+      ]
+    },
+    {
+      "name": "Department of Homeland Security",
+      "kind": "federal executive",
+      "liveActorStatus": "current",
+      "currentPosition": "Its funding lapsed on 14 February 2026 and ran 76 days to 30 April 2026, the longest shutdown of a single federal department on record, and it reopened without appropriated funding for Immigration and Customs Enforcement and Customs and Border Protection.",
+      "fieldsCitedIn": [
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Priority standing in the 2026 National Defense Strategy, which elevates border security and counter-narcotics to top homeland priorities and directs military support to its operations [security.internal].",
+      "constraints": "It is the department where the appropriations conflict concentrated, and its two largest enforcement components now sit on a financing route outside its regular appropriation [house-approps-dhs-76day][capacity.steering].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode), but uniquely exposed to the legislative gate: it is the one department the report shows being shut down on its own [political.shockAbsorbers].",
+      "anchors": [
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "house-approps-dhs-76day",
+        "crs-r48832-shutdowns"
+      ]
+    },
+    {
+      "name": "Federal acquisition and delivery agencies (Departments of Defense, Energy and Veterans Affairs; the National Aeronautics and Space Administration; the Federal Aviation Administration)",
+      "kind": "federal executive",
+      "liveActorStatus": "current",
+      "currentPosition": "Named by the Government Accountability Office for cost growth, schedule delays or both across major acquisitions — with Defense weapon systems acquisition among three areas that regressed between 2023 and 2025, the Veterans Affairs electronic health record modernisation deployed to six of more than 166 locations at an estimated $49.8 billion life-cycle cost, 51 of 138 Federal Aviation Administration air traffic control systems assessed unsustainable, and Veterans Affairs health care on the high-risk list.",
+      "fieldsCitedIn": [
+        "capacity.delivery",
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "A federal procurement portfolio of more than $750 billion and a real-property estate of 277,000 buildings [capacity.delivery].",
+      "constraints": "Cost and schedule control is the binding weakness — deferred maintenance rose from $170 billion in 2017 to $370 billion in 2024, and twenty of the 38 high-risk areas are listed in part because of skills gaps or inadequate staffing [capacity.delivery][capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode). These are implementing agencies; the report describes them as objects of audit and direction, not as bargaining counterparts [capacity.delivery].",
+      "anchors": [
+        "capacity.delivery",
+        "capacity.publicServices",
+        "gao-high-risk-cost-schedule-2025",
+        "gao-high-risk-list"
+      ]
+    },
+    {
+      "name": "Food and Drug Administration",
+      "kind": "regulatory",
+      "liveActorStatus": "current",
+      "currentPosition": "Inspection capacity is a binding constraint: it conducted an average of 917 foreign food safety inspections a year over fiscal years 2018–2023, about 5% of its 19,200 annual target.",
+      "fieldsCitedIn": [
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "A statutory oversight mandate over medical products and food safety, listed among the high-risk areas covering continuous public-service systems [capacity.publicServices][gao-high-risk-list].",
+      "constraints": "A 95% shortfall against its own inspection target, in a wider pattern where staffing gaps underlie twenty of the 38 high-risk areas [capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (non-standard mode). The report describes a regulator whose limit is capacity rather than mandate, and the 2026 removal doctrine places principal officers of such agencies at will [political.constitutionalSubstrate].",
+      "anchors": [
+        "capacity.publicServices",
+        "gao-high-risk-cost-schedule-2025"
+      ]
+    },
+    {
+      "name": "The 50 states (state governments)",
+      "kind": "subnational government",
+      "liveActorStatus": "current",
+      "currentPosition": "Each maintains its own constitution, legislature, courts and code under powers reserved by the Tenth Amendment, operating concurrently with federal law subject to the Supremacy Clause — with Louisiana retaining a civil-law tradition for private law — and Watson v. Republican National Committee confirmed that federal election-day statutes do not prevent states from counting absentee ballots postmarked by election day and received afterward.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure"
+      ],
+      "interests": "report-silent",
+      "resources": "Reserved powers under the Tenth Amendment, independent constitutions, legislatures, courts and codes, and confirmed control over absentee ballot receipt deadlines [political.stateStructure][political.constitutionalSubstrate].",
+      "constraints": "Federal statutory law is supreme over state law under Article VI [political.constitutionalSubstrate].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "veto-holder. In the domains reserved to them — including the election-administration question decided in Watson — federal action requires state non-obstruction rather than state agreement [political.constitutionalSubstrate].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "watson-v-rnc-2026",
+        "constitution-usa-1787"
+      ]
+    },
+    {
+      "name": "Federally recognised tribes",
+      "kind": "indigenous body",
+      "liveActorStatus": "current",
+      "currentPosition": "Exercise inherent pre-constitutional sovereignty over their members and Indian country, not derived from federal or state law but subject to congressional plenary power, and federal programmes serving tribes and their members sit on the Government Accountability Office's high-risk list.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "Inherent sovereignty predating the Constitution, a distinct legal order held separately from federal and state law, and a case line running through the Marshall Trilogy, McGirt, Castro-Huerta and Brackeen [political.constitutionalSubstrate].",
+      "constraints": "Congressional plenary power over that sovereignty [political.constitutionalSubstrate], and dependence on federal programmes the report places on the high-risk list [capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "veto-holder, qualified. Sovereignty over Indian country is inherent and not delegated, so consent operates within that jurisdiction — but the report states plainly that it remains subject to congressional plenary power, which is not a relationship of equals [political.constitutionalSubstrate].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "capacity.publicServices",
+        "usc-title25",
+        "marshall-trilogy",
+        "mcgirt-v-oklahoma-2020"
+      ]
+    },
+    {
+      "name": "The five inhabited unincorporated territories (Puerto Rico, Guam, the United States Virgin Islands, the Northern Mariana Islands, American Samoa)",
+      "kind": "subnational government",
+      "liveActorStatus": "current",
+      "currentPosition": "Governed under the regime established by the Insular Cases, with Congress holding plenary authority, the Constitution applying only selectively, and residents holding no presidential vote and no voting congressional representation.",
+      "fieldsCitedIn": [
+        "territory.geography",
+        "political.constitutionalSubstrate",
+        "political.stateStructure"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "No presidential vote, no voting representation in Congress, and selective application of the Constitution — the report calls this asymmetry pronounced [political.stateStructure].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. The report characterises their constitutional standing but describes no action by them and no channel through which they engage; the absence of the ordinary federal franchise is itself the finding [political.stateStructure].",
+      "anchors": [
+        "political.stateStructure",
+        "political.constitutionalSubstrate",
+        "territory.geography",
+        "insular-cases-1901"
+      ]
+    }
+  ]
 actors_domestic_fr: |-
-  []
+  [
+    {
+      "name": "President Donald Trump / the Trump administration",
+      "kind": "exécutif fédéral",
+      "liveActorStatus": "current",
+      "currentPosition": "L'exécutif est détenu par le président Donald Trump, républicain investi en janvier 2025, gouvernant avec un contrôle partisan unifié tandis que la jurisprudence de la Cour suprême de 2026 étend le contrôle présidentiel sur l'exécutif; l'administration a annulé les cibles de la Contribution déterminée au niveau national antérieure, priorisé la sécurité du territoire et de l'hémisphère, affirmé un « corollaire Trump » à la doctrine Monroe et déclaré terminé le cessez-le-feu avec l'Iran le 8 juillet 2026.",
+      "fieldsCitedIn": [
+        "territory.transition",
+        "political.powerStructure",
+        "political.stabilityDrivers",
+        "capacity.steering",
+        "security.transnationalExposure",
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "Consolider le contrôle de l'exécutif sur l'État régulateur plutôt que sur la propriété de la production [economy.politicalEconomy], et convertir ce contrôle en action rapide sur un ensemble restreint de priorités — défense du territoire, contrôle frontalier, lutte antidrogue, primauté hémisphérique et production minérale nationale [capacity.steering][security.transnationalExposure][capacity.approvals].",
+      "resources": "Le contrôle républicain unifié de la présidence et des deux chambres [political.powerStructure], le commandement des forces armées comme chef des armées [political.stabilityDrivers], la révocation à discrétion des dirigeants d'agences indépendantes depuis Trump v. Slaughter [political.constitutionalSubstrate], des décrets qui réorientent les priorités des agences [capacity.approvals], et une capacité démontrée de mise en œuvre rapide là où il a établi une priorité, comme lors de l'opération au Venezuela de janvier 2026 [capacity.steering][maduro-capture-wardept].",
+      "constraints": "Une majorité effective de cinq sièges à la Chambre avec cinq sièges vacants [political.powerStructure], une incapacité répétée à financer le gouvernement à temps [capacity.steering], et une cour suprême qui a tranché contre lui autant que pour lui — invalidant les tarifs fondés sur l'International Emergency Economic Powers Act, invalidant le décret 14160 sur le droit du sol et signalant une exception pour la banque centrale à la révocation à discrétion [political.constitutionalSubstrate][crs-lsb11398-tariffs].",
+      "likelyMoves": "Déplacer l'autorité tarifaire durable vers les Sections 232 et 301 à mesure que la surtaxe de la Section 122 expire de plein droit le 24 juillet 2026 sans prolongation par le Congrès [crs-lsb11398-tariffs], et poursuivre les frappes et le blocus naval contre l'Iran ainsi que l'action cinétique contre les organisations criminelles transnationales dans l'hémisphère [cnn-iran-war-july18][security.internal].",
+      "engagementMode": "negotiable / dealable. Le rapport montre un interlocuteur qui négocie — partage transactionnel du fardeau avec les alliés, cessez-le-feu négocié par le Pakistan et protocole d'accord intérimaire [security.diplomacy] — et qui sort unilatéralement des accords lorsqu'il les juge improductifs [cnbc-iran-ceasefire-over].",
+      "anchors": [
+        "political.powerStructure",
+        "capacity.steering",
+        "security.diplomacy",
+        "territory.transition",
+        "ndstrategy-2026",
+        "cnbc-iran-ceasefire-over"
+      ]
+    },
+    {
+      "name": "Congress (the Senate and the House of Representatives)",
+      "kind": "législature",
+      "liveActorStatus": "current",
+      "currentPosition": "Les deux chambres sont sous contrôle républicain — Sénat 53 contre 45 plus 2 indépendants, Chambre 217 contre 212 avec 1 indépendant et 5 sièges vacants — et le Congrès détient le pouvoir législatif, confirme les juges fédéraux, exerce l'autorité plénière sur les territoires et les terres indiennes, a produit les deux plus longues paralysies jamais enregistrées lors du cycle d'appropriations de l'exercice 2026, et doit agir avant le 24 juillet 2026 pour que la surtaxe tarifaire de la Section 122 se poursuive.",
+      "fieldsCitedIn": [
+        "political.powerStructure",
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "situation"
+      ],
+      "interests": "Le rapport décrit une institution dont la priorité révélée est de maintenir la cohésion de la coalition au pouvoir plutôt que de réaffirmer sa prérogative institutionnelle : elle a financé l'Immigration and Customs Enforcement et la Customs and Border Protection par la réconciliation budgétaire plutôt que par les crédits annuels [house-approps-dhs-76day] et adopté une loi de réconciliation qui a accru les déficits projetés de 4 700 milliards de dollars alors que les priorités affichées étaient la réduction du déficit [capacity.steering].",
+      "resources": "Le pouvoir d'appropriation, le pouvoir de confirmation des juges à vie [political.rightsAndChecks], l'autorité plénière sur les cinq territoires habités et sur la souveraineté tribale [political.constitutionalSubstrate], la voie de la réconciliation contournant les crédits ordinaires [house-approps-dhs-76day], et des autorités tarifaires légales que l'exécutif doit emprunter [crs-lsb11398-tariffs].",
+      "constraints": "Des marges assez étroites pour qu'un petit bloc puisse refuser son consentement — la paralysie de 76 jours de la Sécurité intérieure a suivi le retrait du soutien des sénateurs démocrates [crs-r48832-shutdowns] — et une base budgétaire où les dépenses obligatoires et les intérêts nets, le poste qui croît le plus vite, compriment l'espace discrétionnaire qu'il contrôle réellement [economy.politicalEconomy][economy.publicFinances].",
+      "likelyMoves": "Faire face à une décision forcée sur la prolongation de la surtaxe de la Section 122 au-delà du 24 juillet 2026, et affronter l'exposition non résolue aux remboursements de plus de 160 milliards de dollars des tarifs supprimés [crs-lsb11398-tariffs].",
+      "engagementMode": "veto-holder. Le consentement est requis et a été refusé : des ruptures de crédits de 43 et 76 jours montrent que la non-obstruction d'une minorité sénatoriale est une condition effective du fonctionnement du gouvernement, et la surtaxe tarifaire expire de plein droit sans action du Congrès [political.shockAbsorbers][crs-lsb11398-tariffs].",
+      "anchors": [
+        "political.powerStructure",
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "senate-partydiv",
+        "house-partybreakdown",
+        "crs-lsb11398-tariffs"
+      ]
+    },
+    {
+      "name": "Republican Party / congressional Republican majorities",
+      "kind": "autre",
+      "liveActorStatus": "current",
+      "currentPosition": "Le parti au pouvoir, détenant la présidence et les deux chambres, que le rapport traite comme la source d'une forte cohésion des élites au sein du bloc, parallèlement à une faible cohésion inter-partisane.",
+      "fieldsCitedIn": [
+        "political.powerStructure",
+        "political.stabilityDrivers"
+      ],
+      "interests": "Conserver le contrôle unifié pendant une période où l'équilibre des pouvoirs se déplace vers la présidence [political.powerStructure], les sympathisants du parti affichant une confiance institutionnelle nettement supérieure à celle de l'autre parti (26 % contre 9 %) [society.cohesion].",
+      "resources": "53 sièges au Sénat et 217 à la Chambre [senate-partydiv][house-partybreakdown], le contrôle de l'exécutif, et la voie de la réconciliation utilisée pour financer les agences d'application hors de la porte des crédits ordinaires [house-approps-dhs-76day].",
+      "constraints": "Une majorité de cinq sièges à la Chambre face à cinq sièges vacants rend la marge effective plus étroite que la marge nominale [political.powerStructure], et la confiance institutionnelle de ses sympathisants suit le parti au pouvoir plutôt qu'une confiance de fond stable, rendant cette cohésion contingente [society.cohesion].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Le rapport le décrit comme le bloc au pouvoir plutôt que comme une institution indépendante; l'engagement passe par la négociation partisane ordinaire [political.powerStructure].",
+      "anchors": [
+        "political.powerStructure",
+        "political.stabilityDrivers",
+        "senate-partydiv",
+        "house-partybreakdown",
+        "pew-trust-in-government"
+      ]
+    },
+    {
+      "name": "Democratic Party / congressional Democrats (including Senators King and Sanders, independents caucusing with them)",
+      "kind": "parti d'opposition",
+      "liveActorStatus": "current",
+      "currentPosition": "Minoritaire dans les deux chambres — 45 sièges au Sénat plus 2 indépendants siégeant avec eux, et 212 sièges à la Chambre — et a retiré son soutien aux crédits du Department of Homeland Security après que des agents de la Customs and Border Protection eurent tué Alex Pretti le 24 janvier 2026, précipitant la paralysie de 76 jours du ministère.",
+      "fieldsCitedIn": [
+        "political.powerStructure",
+        "situation"
+      ],
+      "interests": "Utiliser la seule porte disponible à une minorité législative — le consentement aux appropriations — pour contester la conduite de l'application des lois migratoires [crs-r48832-shutdowns][cbs-pretti-cbp-report].",
+      "resources": "Un bloc sénatorial de 45 plus deux indépendants, suffisant pour refuser le consentement que les crédits annuels exigent [political.powerStructure][crs-r48832-shutdowns].",
+      "constraints": "Le levier s'est révélé partiel : le ministère a rouvert sans financement pour l'Immigration and Customs Enforcement et la Customs and Border Protection, financées à la place par la réconciliation, contournant la porte qu'il avait utilisée [house-approps-dhs-76day]. La confiance institutionnelle de ses propres sympathisants s'établit à 9 %, le plus bas niveau jamais enregistré dans la série [society.cohesion].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "veto-holder. Le seul récit que le rapport donne de son action est le refus du consentement aux appropriations et la rupture de 76 jours qui a suivi [crs-r48832-shutdowns][house-approps-dhs-76day].",
+      "anchors": [
+        "political.powerStructure",
+        "crs-r48832-shutdowns",
+        "cbs-pretti-cbp-report",
+        "house-approps-dhs-76day",
+        "pew-trust-in-government"
+      ]
+    },
+    {
+      "name": "Supreme Court of the United States",
+      "kind": "judiciaire",
+      "liveActorStatus": "current",
+      "currentPosition": "Redistribue activement le pouvoir en 2026 — Trump v. Slaughter (révocation à discrétion des dirigeants d'agences indépendantes, renversant Humphrey's Executor), Trump v. Cook (maintien de la gouverneure Lisa Cook, signalant une exception pour la banque centrale), Trump v. Barbara (droit du sol, invalidant le décret 14160), Watson v. Republican National Committee (bulletins par correspondance reçus après le scrutin) et Learning Resources, Inc. v. Trump (l'International Emergency Economic Powers Act n'autorise pas les tarifs).",
+      "fieldsCitedIn": [
+        "economy.politicalEconomy",
+        "political.powerStructure",
+        "political.constitutionalSubstrate",
+        "situation"
+      ],
+      "interests": "Le motif que le rapport enregistre est doctrinal plutôt que partisan : étendre le contrôle présidentiel sur l'exécutif tout en tenant la ligne sur l'autorité légale et le texte constitutionnel ailleurs [political.constitutionalSubstrate].",
+      "resources": "Le contrôle de constitutionnalité depuis Marbury v. Madison [political.rightsAndChecks], le mandat à vie, et un rôle de 2026 qui a tranché en un seul terme le pouvoir de révocation, le droit du sol, les délais électoraux et l'autorité tarifaire [political.constitutionalSubstrate].",
+      "constraints": "Le rapport note que les majorités sont étroites — 6 contre 3 dans Slaughter et Barbara, 5 contre 4 dans Cook et Watson — et que le substrat est « en mouvement et non stable » [political.constitutionalSubstrate].",
+      "likelyMoves": "L'examen au fond dans Trump v. Cook demeure pendant, de sorte que l'exception pour la banque centrale est signalée plutôt qu'établie [trump-v-cook-2026].",
+      "engagementMode": "judicial-deference. Le rapport traite ses arrêts comme redistribuant le substrat constitutionnel lui-même et présente la lutte pour le pouvoir effectif sans la résoudre [political.powerStructure].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "economy.politicalEconomy",
+        "trump-v-slaughter-2026",
+        "trump-v-cook-2026",
+        "scotus-learning-resources"
+      ]
+    },
+    {
+      "name": "The federal judiciary",
+      "kind": "judiciaire",
+      "liveActorStatus": "current",
+      "currentPosition": "Nommée par le président avec confirmation du Sénat et jouissant d'un mandat à vie, exerçant le contrôle de constitutionnalité depuis Marbury v. Madison, dans un état de droit que le rapport situe au 27e rang sur 143 au total mais au 112e sur 143 pour l'accès à la justice civile.",
+      "fieldsCitedIn": [
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate"
+      ],
+      "interests": "report-silent",
+      "resources": "Le mandat à vie et le pouvoir de contrôle de constitutionnalité, mettant la magistrature à l'abri de la lutte sur la révocation qui a atteint les agences indépendantes [political.rightsAndChecks][political.constitutionalSubstrate].",
+      "constraints": "L'accès est le point faible plutôt que l'indépendance : le 112e rang sur 143 pour l'accès à la justice civile côtoie le 27e rang au total [political.rightsAndChecks].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "judicial-deference. Le rapport décrit la nomination et le mandat comme structurellement protégés et ne décrit aucune contestation politique du mandat judiciaire lui-même [political.rightsAndChecks].",
+      "anchors": [
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate",
+        "marbury-v-madison-1803",
+        "wjp-rule-of-law-2025"
+      ]
+    },
+    {
+      "name": "The Federal Reserve (Governor Lisa Cook)",
+      "kind": "institution indépendante",
+      "liveActorStatus": "current",
+      "currentPosition": "Son indépendance fait l'objet d'une lutte en cours : dans Trump v. Cook (n° 25A312, 2026), la Cour a autorisé la gouverneure Lisa Cook à rester en fonction en attendant l'examen au fond, par 5 voix contre 4, ce que le rapport lit comme le signal d'une exception pour la banque centrale au pouvoir de révocation à discrétion établi dans Trump v. Slaughter.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate"
+      ],
+      "interests": "Préserver la protection du mandat que Slaughter a retirée aux autres agences indépendantes [political.constitutionalSubstrate].",
+      "resources": "Une exception signalée par la voie judiciaire la distinguant des autres agences indépendantes et, par implication du récit que le rapport fait du rôle de monnaie de réserve du dollar, une position vis-à-vis des détenteurs étrangers d'environ 9 200 milliards de dollars de bons du Trésor [political.shockAbsorbers].",
+      "constraints": "L'exception est un signal intérimaire à 5 voix contre 4 en attente d'examen au fond, non un arrêt de principe [political.constitutionalSubstrate][trump-v-cook-2026].",
+      "likelyMoves": "Sa position dépend de l'examen au fond dans Cook, que le rapport enregistre comme non résolu [political.constitutionalSubstrate].",
+      "engagementMode": "hijack-exposed. Nominalement indépendante, mais la révocation d'une gouverneure en exercice a été tentée et a atteint la cour suprême, où seule une ordonnance intérimaire à 5 voix contre 4 l'a maintenue en place [political.constitutionalSubstrate][trump-v-cook-2026].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "trump-v-cook-2026",
+        "trump-v-slaughter-2026"
+      ]
+    },
+    {
+      "name": "Independent regulatory agencies (the Federal Trade Commission named)",
+      "kind": "organisme de régulation",
+      "liveActorStatus": "current",
+      "currentPosition": "Des régulateurs autrefois protégés sont désormais soumis à la révocation présidentielle à discrétion depuis que Trump v. Slaughter a jugé inconstitutionnelles les protections légales contre la révocation sans motif des commissaires de la Federal Trade Commission, ce qui, selon le rapport, déplace la frontière État-marché et accroît la variabilité politique de l'application du droit.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate",
+        "economy.politicalEconomy"
+      ],
+      "interests": "report-silent",
+      "resources": "Les mandats légaux d'application subsistent, mais non la protection du mandat qui les rendait indépendants de la présidence [economy.politicalEconomy].",
+      "constraints": "La révocation à discrétion des dirigeants convertit la posture d'application en variable de la préférence présidentielle [economy.politicalEconomy][political.constitutionalSubstrate].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "hijack-exposed. Le rapport décrit l'exposition comme déjà réalisée plutôt que prospective : la protection a été invalidée, non simplement menacée, et l'exception pour la banque centrale signalée dans Cook implique que le reste de la catégorie n'en a aucune [political.constitutionalSubstrate].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "economy.politicalEconomy",
+        "trump-v-slaughter-2026"
+      ]
+    },
+    {
+      "name": "Congressional Budget Office",
+      "kind": "institution indépendante",
+      "liveActorStatus": "current",
+      "currentPosition": "Fournit la base budgétaire, démographique et de productivité sur laquelle le rapport s'appuie — un déficit de 1 900 milliards de dollars pour l'exercice 2026 (5,8 % du PIB), une dette publique passant de 101 % du PIB en 2026 à 120 % en 2036, des intérêts nets doublant à 2 100 milliards, une croissance de 2,2 % en 2026 ralentissant vers 1,8 %, et l'IA générative ajoutant environ 10 points de base par an à la croissance de la productivité.",
+      "fieldsCitedIn": [
+        "society.demographics",
+        "economy.realEconomy",
+        "economy.publicFinances",
+        "capacity.productivity"
+      ],
+      "interests": "report-silent",
+      "resources": "Un mandat analytique légal dont les projections servent de référence au rapport dans quatre sections, y compris l'évaluation de la loi de réconciliation de 2025 à 4 700 milliards de dollars de déficits ajoutés sur 2026-2035 [economy.politicalEconomy][cbo-budget-outlook-2026].",
+      "constraints": "Il évalue et projette; le rapport ne lui attribue aucune autorité sur ce qui est adopté — les priorités budgétaires affichées ont divergé de celles mises en œuvre malgré l'évaluation [capacity.steering].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "statutorily-independent. Il opère par mandat analytique plutôt que par négociation, et le rapport ne signale aucune contestation de son indépendance [economy.publicFinances].",
+      "anchors": [
+        "economy.publicFinances",
+        "capacity.productivity",
+        "cbo-budget-outlook-2026"
+      ]
+    },
+    {
+      "name": "Government Accountability Office",
+      "kind": "institution indépendante",
+      "liveActorStatus": "current",
+      "currentPosition": "Documente le bilan de mise en œuvre fédéral — une liste à haut risque de 38 domaines en février 2025, trois régressions entre 2023 et 2025, des dépassements de coûts et retards dans un portefeuille d'achats supérieur à 750 milliards de dollars, environ 2 800 milliards de paiements indus estimés depuis 2003 — et a constaté en avril 2014 que les données pangouvernementales sur les examens environnementaux n'étaient pas aisément disponibles.",
+      "fieldsCitedIn": [
+        "capacity.approvals",
+        "capacity.delivery",
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "Un accès d'audit à l'ensemble de l'exécutif et une liste à haut risque qui est le principal instrument du rapport pour voir la capacité de mise en œuvre, y compris l'ajout en 2025 du relèvement après catastrophe comme nouveau domaine [capacity.delivery][gao-high-risk-list].",
+      "constraints": "Ses constats se répètent plutôt qu'ils ne se résolvent : trois domaines ont régressé entre les évaluations, l'entretien différé est passé de 170 milliards de dollars en 2017 à 370 milliards en 2024, et les paiements indus ont dépassé 150 milliards à l'échelle du gouvernement chacune des sept dernières années [capacity.delivery][capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "statutorily-independent. Il audite et rapporte sur un fondement légal; le rapport ne décrit aucune relation de négociation ni aucune contestation de son accès [capacity.delivery].",
+      "anchors": [
+        "capacity.delivery",
+        "capacity.publicServices",
+        "capacity.approvals",
+        "gao-high-risk-list",
+        "gao-high-risk-cost-schedule-2025",
+        "gao-nepa-review-2014"
+      ]
+    },
+    {
+      "name": "Council on Environmental Quality",
+      "kind": "organisme de régulation",
+      "liveActorStatus": "current",
+      "currentPosition": "Définit et mesure le régime d'examen de la National Environmental Policy Act — sa mise à jour de janvier 2025 situe la médiane des études d'impact environnemental à 2,8 ans pour 2019-2024 contre une médiane 2010-2018 de 3,2 ans, ses limites de pages recommandées de 150 (300 pour les projets d'ampleur inhabituelle) sont régulièrement dépassées, et il estime qu'environ 95 % des examens sont des exclusions catégorielles.",
+      "fieldsCitedIn": [
+        "capacity.approvals"
+      ],
+      "interests": "La réduction du délai d'examen est la métrique qu'il publie, et la tendance qu'il rapporte s'améliore — 41 % des études achevées en deux ans ou moins en 2024 contre 24 % en 2019 [capacity.approvals].",
+      "resources": "L'orientation pangouvernementale du processus d'examen et le jeu de données des délais qui rend le régime lisible [capacity.approvals][ceq-eis-timelines-2010-2024].",
+      "constraints": "Ses propres limites recommandées ne sont pas contraignantes — les projets d'étude atteignaient en moyenne 575 pages avec 1 042 pages d'annexes au stade final — et l'essentiel du délai se loge en amont du projet de document, dans les 58,4 % du temps écoulé entre l'avis d'intention et le projet [capacity.approvals][ceq-eis-timeline-factsheet-2020].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard). C'est un bureau de l'exécutif agissant sur directive présidentielle — le décret du 20 mars 2025 a ordonné la publication de projets minéraux désignés sur le tableau de bord — de sorte que l'engagement passe par l'administration plutôt que par le bureau lui-même [capacity.approvals].",
+      "anchors": [
+        "capacity.approvals",
+        "ceq-eis-timelines-2010-2024",
+        "ceq-eis-timeline-factsheet-2020",
+        "gao-nepa-review-2014"
+      ]
+    },
+    {
+      "name": "The Permitting Council",
+      "kind": "organisme de régulation",
+      "liveActorStatus": "current",
+      "currentPosition": "Exploite le Permitting Dashboard requis par le titre 41 de la loi Fixing America's Surface Transportation Act, suivant chaque projet couvert par un champ d'état, et son directeur exécutif a reçu du décret du 20 mars 2025 l'ordre de publier des projets de production minérale désignés comme projets de transparence.",
+      "fieldsCitedIn": [
+        "capacity.approvals"
+      ],
+      "interests": "report-silent",
+      "resources": "L'obligation légale que les agences chefs de file affichent des dates cibles d'achèvement, et un jeu de données de projets et d'échéanciers téléchargeable par agence [capacity.approvals][permits-performance-gov-data-portal].",
+      "constraints": "Le tableau de bord ne couvre qu'un ensemble défini de projets; le rapport note que les données pangouvernementales d'examen n'ont pas été systématiquement suivies [capacity.approvals][gao-nepa-review-2014].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard). Ses décisions d'inscription ont été ordonnées par décret, et le déséquilibre d'états qui en résulte suit la politique menée — l'éolien en mer suspendu ou annulé tandis que les projets miniers avancent [capacity.approvals].",
+      "anchors": [
+        "capacity.approvals",
+        "permits-performance-gov-dashboard",
+        "permits-performance-gov-data-portal"
+      ]
+    },
+    {
+      "name": "United States armed forces",
+      "kind": "forces armées",
+      "liveActorStatus": "current",
+      "currentPosition": "Une force professionnelle de volontaires sous commandement civil via le président, chef des armées, première puissance militaire mondiale avec 954 milliards de dollars de dépenses en 2025 (environ 33 % du total mondial), menant actuellement des frappes et un blocus naval contre l'Iran, appuyant les opérations frontalières interagences et frappant des navires soupçonnés de trafic de drogue.",
+      "fieldsCitedIn": [
+        "political.stabilityDrivers",
+        "security.internal",
+        "security.military",
+        "situation"
+      ],
+      "interests": "La Stratégie de défense nationale 2026 la réoriente vers la défense du territoire, la dissuasion de la Chine par le déni dans l'Indo-Pacifique, le partage du fardeau avec les alliés et la reconstruction de la base industrielle de défense [security.military].",
+      "resources": "Une projection de puissance mondiale sur terre, mer, air, cyberespace et espace, des forces nucléaires en modernisation (9,9 milliards de dollars pour la classe Columbia et 13,9 milliards pour la classe Virginia en 2025), et des dépenses supérieures aux six pays suivants réunis [security.military][sipri-milex-2025].",
+      "constraints": "La simultanéité : hostilités actives avec l'Iran, blocus naval, opérations antidrogue hémisphériques et missions frontalières à caractère quasi intérieur se déroulent en parallèle [security.diplomacy][security.internal]. Le rapport n'attache aucun plafond de disponibilité ou de structure de forces au-delà du catalogue du Military Balance [iiss-military-balance-2026].",
+      "likelyMoves": "Poursuivre les frappes plusieurs nuits d'affilée sur les infrastructures iraniennes et l'application du blocus, et continuer l'action cinétique contre les organisations criminelles transnationales dans l'hémisphère [cnn-iran-war-july18][security.internal].",
+      "engagementMode": "executive-subordinate (mode non standard). Le rapport enregistre un commandement civil ferme sans contestation factionnelle de l'autorité, et le tableau de bord fonde la loyauté des forces exactement là-dessus [political.stabilityDrivers][security.military].",
+      "anchors": [
+        "security.military",
+        "security.internal",
+        "political.stabilityDrivers",
+        "ndstrategy-2026",
+        "sipri-milex-2025",
+        "cnn-iran-war-july18"
+      ]
+    },
+    {
+      "name": "Customs and Border Protection",
+      "kind": "service de sécurité ou de renseignement",
+      "liveActorStatus": "current",
+      "currentPosition": "Compile les statistiques d'application aux frontières et de flux migratoires et opère au centre de l'escalade répressive; ses agents ont tué Alex Pretti, infirmier en soins intensifs de 37 ans, le 24 janvier 2026, déclencheur immédiat de la rupture de financement de 76 jours de la Sécurité intérieure, et elle est désormais financée par la réconciliation plutôt que par les crédits annuels ordinaires.",
+      "fieldsCitedIn": [
+        "security.internal",
+        "security.transnationalExposure",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "L'appui militaire aux opérations frontalières interagences ordonné par la Stratégie de défense nationale 2026 [security.internal], et un financement mis à l'abri de la porte des crédits annuels par la réconciliation [house-approps-dhs-76day].",
+      "constraints": "Sa conduite est elle-même une contrainte politique pour le ministère : la mort de Pretti a retiré le consentement sénatorial dont dépendaient les crédits de la Sécurité intérieure [crs-r48832-shutdowns][cbs-pretti-cbp-report].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard), avec une voie de financement qui contourne la porte législative ordinaire. Le rapport note que le ministère a rouvert sans crédits votés pour elle, la finançant par la réconciliation [house-approps-dhs-76day].",
+      "anchors": [
+        "security.internal",
+        "security.transnationalExposure",
+        "cbs-pretti-cbp-report",
+        "house-approps-dhs-76day",
+        "ndstrategy-2026"
+      ]
+    },
+    {
+      "name": "Immigration and Customs Enforcement",
+      "kind": "service de sécurité ou de renseignement",
+      "liveActorStatus": "current",
+      "currentPosition": "Financée par la réconciliation budgétaire plutôt que par les crédits annuels ordinaires depuis que le Department of Homeland Security a rouvert le 30 avril 2026 sans crédits votés pour elle.",
+      "fieldsCitedIn": [
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Un financement acheminé hors du cycle annuel des appropriations, ce qui supprime le point de consentement récurrent que la rupture de 76 jours avait démontré [house-approps-dhs-76day].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard). Le seul récit que le rapport en donne est un montage de financement qui la place hors de la porte législative ordinaire [house-approps-dhs-76day].",
+      "anchors": [
+        "house-approps-dhs-76day",
+        "crs-r48832-shutdowns"
+      ]
+    },
+    {
+      "name": "Department of Homeland Security",
+      "kind": "exécutif fédéral",
+      "liveActorStatus": "current",
+      "currentPosition": "Son financement a cessé le 14 février 2026 et la rupture a duré 76 jours jusqu'au 30 avril 2026, la plus longue paralysie d'un seul ministère fédéral jamais enregistrée, et il a rouvert sans crédits votés pour l'Immigration and Customs Enforcement et la Customs and Border Protection.",
+      "fieldsCitedIn": [
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Un rang prioritaire dans la Stratégie de défense nationale 2026, qui érige la sécurité frontalière et la lutte antidrogue en priorités majeures du territoire et ordonne l'appui militaire à ses opérations [security.internal].",
+      "constraints": "C'est le ministère où le conflit des appropriations s'est concentré, et ses deux plus grandes composantes répressives reposent désormais sur une voie de financement extérieure à ses crédits ordinaires [house-approps-dhs-76day][capacity.steering].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard), mais singulièrement exposé à la porte législative : c'est le seul ministère que le rapport montre paralysé à lui seul [political.shockAbsorbers].",
+      "anchors": [
+        "political.shockAbsorbers",
+        "capacity.steering",
+        "house-approps-dhs-76day",
+        "crs-r48832-shutdowns"
+      ]
+    },
+    {
+      "name": "Federal acquisition and delivery agencies (Departments of Defense, Energy and Veterans Affairs; the National Aeronautics and Space Administration; the Federal Aviation Administration)",
+      "kind": "exécutif fédéral",
+      "liveActorStatus": "current",
+      "currentPosition": "Nommées par le Government Accountability Office pour dépassements de coûts, retards ou les deux dans les grands programmes — l'acquisition des systèmes d'armes de la Défense figurant parmi trois domaines en régression entre 2023 et 2025, la modernisation du dossier de santé électronique des Anciens Combattants déployée sur six sites sur plus de 166 pour un coût de cycle de vie estimé à 49,8 milliards de dollars, 51 des 138 systèmes de contrôle aérien de la Federal Aviation Administration jugés non soutenables, et les soins de santé des Anciens Combattants inscrits à la liste à haut risque.",
+      "fieldsCitedIn": [
+        "capacity.delivery",
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "Un portefeuille d'achats fédéral de plus de 750 milliards de dollars et un patrimoine immobilier de 277 000 bâtiments [capacity.delivery].",
+      "constraints": "La maîtrise des coûts et des délais est la faiblesse déterminante — l'entretien différé est passé de 170 milliards de dollars en 2017 à 370 milliards en 2024, et vingt des 38 domaines à haut risque sont inscrits en partie pour déficits de compétences ou d'effectifs [capacity.delivery][capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard). Ce sont des agences d'exécution; le rapport les décrit comme objets d'audit et de directive, non comme interlocuteurs de négociation [capacity.delivery].",
+      "anchors": [
+        "capacity.delivery",
+        "capacity.publicServices",
+        "gao-high-risk-cost-schedule-2025",
+        "gao-high-risk-list"
+      ]
+    },
+    {
+      "name": "Food and Drug Administration",
+      "kind": "organisme de régulation",
+      "liveActorStatus": "current",
+      "currentPosition": "La capacité d'inspection est une contrainte déterminante : elle a mené en moyenne 917 inspections alimentaires à l'étranger par an sur les exercices 2018-2023, soit environ 5 % de sa cible annuelle de 19 200.",
+      "fieldsCitedIn": [
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "Un mandat légal de surveillance des produits médicaux et de la sécurité alimentaire, inscrit parmi les domaines à haut risque couvrant les services publics continus [capacity.publicServices][gao-high-risk-list].",
+      "constraints": "Un déficit de 95 % par rapport à sa propre cible d'inspection, dans un ensemble plus large où les manques d'effectifs sous-tendent vingt des 38 domaines à haut risque [capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "executive-subordinate (mode non standard). Le rapport décrit un régulateur dont la limite est la capacité plutôt que le mandat, et la doctrine de révocation de 2026 place les dirigeants de telles agences sous révocation à discrétion [political.constitutionalSubstrate].",
+      "anchors": [
+        "capacity.publicServices",
+        "gao-high-risk-cost-schedule-2025"
+      ]
+    },
+    {
+      "name": "The 50 states (state governments)",
+      "kind": "gouvernement infranational",
+      "liveActorStatus": "current",
+      "currentPosition": "Chacun conserve sa propre constitution, sa législature, ses tribunaux et son code au titre des pouvoirs réservés par le dixième amendement, coexistant avec le droit fédéral sous la clause de suprématie — la Louisiane conservant une tradition de droit civil pour le droit privé — et Watson v. Republican National Committee a confirmé que les lois fédérales sur le jour du scrutin n'empêchent pas les États de compter les bulletins par correspondance oblitérés le jour du scrutin et reçus après.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure"
+      ],
+      "interests": "report-silent",
+      "resources": "Les pouvoirs réservés par le dixième amendement, des constitutions, législatures, tribunaux et codes indépendants, et un contrôle confirmé des délais de réception des bulletins par correspondance [political.stateStructure][political.constitutionalSubstrate].",
+      "constraints": "Le droit fédéral est supérieur au droit des États en vertu de l'article VI [political.constitutionalSubstrate].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "veto-holder. Dans les domaines qui leur sont réservés — dont la question d'administration électorale tranchée dans Watson — l'action fédérale requiert la non-obstruction des États plutôt que leur accord [political.constitutionalSubstrate].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "watson-v-rnc-2026",
+        "constitution-usa-1787"
+      ]
+    },
+    {
+      "name": "Federally recognised tribes",
+      "kind": "instance autochtone",
+      "liveActorStatus": "current",
+      "currentPosition": "Exercent une souveraineté inhérente préconstitutionnelle sur leurs membres et les terres indiennes, non dérivée du droit fédéral ou des États mais soumise au pouvoir plénier du Congrès, et les programmes fédéraux destinés aux tribus et à leurs membres figurent sur la liste à haut risque du Government Accountability Office.",
+      "fieldsCitedIn": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "capacity.publicServices"
+      ],
+      "interests": "report-silent",
+      "resources": "Une souveraineté inhérente antérieure à la Constitution, un ordre juridique distinct tenu séparément du droit fédéral et des États, et une lignée jurisprudentielle courant de la trilogie Marshall à McGirt, Castro-Huerta et Brackeen [political.constitutionalSubstrate].",
+      "constraints": "Le pouvoir plénier du Congrès sur cette souveraineté [political.constitutionalSubstrate], et la dépendance à des programmes fédéraux que le rapport place sur la liste à haut risque [capacity.publicServices].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "veto-holder, avec réserve. La souveraineté sur les terres indiennes est inhérente et non déléguée, de sorte que le consentement opère dans cette juridiction — mais le rapport énonce clairement qu'elle demeure soumise au pouvoir plénier du Congrès, ce qui n'est pas une relation d'égaux [political.constitutionalSubstrate].",
+      "anchors": [
+        "political.constitutionalSubstrate",
+        "political.stateStructure",
+        "capacity.publicServices",
+        "usc-title25",
+        "marshall-trilogy",
+        "mcgirt-v-oklahoma-2020"
+      ]
+    },
+    {
+      "name": "The five inhabited unincorporated territories (Puerto Rico, Guam, the United States Virgin Islands, the Northern Mariana Islands, American Samoa)",
+      "kind": "gouvernement infranational",
+      "liveActorStatus": "current",
+      "currentPosition": "Régis par le régime établi par les Insular Cases, le Congrès détenant l'autorité plénière, la Constitution ne s'appliquant que sélectivement, et les résidents n'ayant ni vote présidentiel ni représentation votante au Congrès.",
+      "fieldsCitedIn": [
+        "territory.geography",
+        "political.constitutionalSubstrate",
+        "political.stateStructure"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "Ni vote présidentiel, ni représentation votante au Congrès, et une application sélective de la Constitution — le rapport qualifie cette asymétrie de marquée [political.stateStructure].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. Le rapport caractérise leur statut constitutionnel mais ne décrit aucune action de leur part ni aucun canal d'engagement; l'absence du suffrage fédéral ordinaire est en soi le constat [political.stateStructure].",
+      "anchors": [
+        "political.stateStructure",
+        "political.constitutionalSubstrate",
+        "territory.geography",
+        "insular-cases-1901"
+      ]
+    }
+  ]
 actors_external_en: |-
-  []
+  [
+    {
+      "name": "China",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "Simultaneously the primary source for 14 of the most import-dependent critical minerals (about 70% of rare earths and 55% of antimony), the third-largest foreign holder of Treasury securities at $693.3 billion with holdings declining over the decade in what the report reads as geopolitical diversification, and the primary balance-of-power competitor the 2026 National Defense Strategy directs the United States to deter by denial in the Indo-Pacific.",
+      "fieldsCitedIn": [
+        "territory.minerals",
+        "economy.externalVulnerability",
+        "security.military",
+        "security.diplomacy"
+      ],
+      "interests": "The declining Treasury position is the one intention the report attributes to it — diversification away from exposure to United States sovereign debt [economy.externalVulnerability].",
+      "resources": "Supply concentration in exactly the commodities on which United States import reliance rose in 2025 (100% net import reliant on 16 commodities, up from 15), and a Treasury holding large enough to be named among the top three [territory.minerals][economy.externalVulnerability].",
+      "constraints": "report-silent",
+      "likelyMoves": "Continued reduction of Treasury exposure is the only trajectory the report projects [economy.externalVulnerability]; the strategy text implies a deterrence contest in the Indo-Pacific rather than a negotiation [security.military].",
+      "engagementMode": "Split by register, and the report does not resolve it: an economic counterpart the United States depends on for critical minerals and sovereign financing [territory.minerals][economy.externalVulnerability], and a security competitor to be deterred by denial [security.diplomacy]. No live negotiation is described.",
+      "anchors": [
+        "territory.minerals",
+        "economy.externalVulnerability",
+        "security.military",
+        "security.diplomacy",
+        "usgs-mcs-2026",
+        "treasury-tic-debt-holders",
+        "ndstrategy-2026"
+      ]
+    },
+    {
+      "name": "Iran",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "In active armed conflict with the United States: major combat operations began 28 February 2026 following the June 2025 strikes on its nuclear sites, a Pakistan-mediated ceasefire took effect 8 April 2026 and was formalised in an interim memorandum of understanding on 17 June 2026, the President declared it over on 8 July 2026, and as of 19 July 2026 Iran is attacking Gulf shipping and states hosting United States bases under renewed strikes and a naval blockade.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "It negotiated over its nuclear programme and the Strait of Hormuz during the pause, and agreed to reopen the Strait as the ceasefire condition [whitehouse-epic-fury-ceasefire].",
+      "resources": "Missile and drone retaliation against Gulf states hosting United States forces, closure of the Strait of Hormuz, and attacks on Gulf shipping — leverage the report shows moving oil prices, with Brent rising about 5% to roughly $78 on the ceasefire's collapse [whitehouse-epic-fury-ceasefire][cnbc-iran-ceasefire-over].",
+      "constraints": "It is under a naval blockade and consecutive nights of strikes on its infrastructure, having already absorbed a 38-day principal combat phase [cnn-iran-war-july18][whitehouse-epic-fury-ceasefire].",
+      "likelyMoves": "Continued attacks on Gulf shipping and on states hosting United States bases while no ceasefire is in effect [cnn-iran-war-july18].",
+      "engagementMode": "blocked / not-engageable, and the report describes the change explicitly: a negotiated pause formalised on 17 June 2026 was declared over on 8 July 2026, returning both sides to active hostilities with no ceasefire in effect [cnbc-iran-ceasefire-over][cnn-iran-war-july18].",
+      "anchors": [
+        "security.diplomacy",
+        "iran-ops-transcript",
+        "whitehouse-epic-fury-ceasefire",
+        "cnbc-iran-ceasefire-over",
+        "cnn-iran-war-july18"
+      ]
+    },
+    {
+      "name": "Israel",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "Co-belligerent: United States and Israeli forces began major combat operations against Iran on 28 February 2026, striking nuclear, ballistic-missile and naval targets in coordination.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Forces committed alongside United States forces in the opening phase of the campaign [security.diplomacy].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. The report describes coordinated joint operations, the closest relationship of alignment it records anywhere [security.diplomacy][iran-ops-transcript].",
+      "anchors": [
+        "security.diplomacy",
+        "iran-ops-transcript"
+      ]
+    },
+    {
+      "name": "Pakistan",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "Mediated the two-week United States–Iran ceasefire that took effect 8 April 2026 and was later extended and formalised in the interim memorandum of understanding signed 17 June 2026.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Standing with both belligerents sufficient to broker a halt to the principal combat phase after 38 days of strikes [whitehouse-epic-fury-ceasefire].",
+      "constraints": "The channel it opened did not hold: the pause it mediated was declared over on 8 July 2026 [cnbc-iran-ceasefire-over].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Its recorded role is that of a third-party mediator, the only such channel the report names [security.diplomacy].",
+      "anchors": [
+        "security.diplomacy",
+        "whitehouse-epic-fury-ceasefire"
+      ]
+    },
+    {
+      "name": "Venezuela (interim government under Delcy Rodríguez)",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "Under a political transition over which the United States installed leverage after the 3 January 2026 raid on Caracas, with Vice President Delcy Rodríguez sworn in as interim president, a large United States military presence retained off its coast, and a further United States strike in June 2026 against a Venezuelan gang leader.",
+      "fieldsCitedIn": [
+        "security.internal",
+        "security.transnationalExposure",
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "The transition proceeds under installed United States influence and a retained military presence offshore, with the deposed president in United States custody [security.diplomacy][crs-maduro-capture].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable, but asymmetric to the point of dependence: the report says the United States installed its influence over the transition rather than negotiating with an existing government [security.diplomacy][maduro-capture-wardept].",
+      "anchors": [
+        "security.diplomacy",
+        "security.internal",
+        "security.transnationalExposure",
+        "maduro-capture-wardept",
+        "crs-maduro-capture"
+      ]
+    },
+    {
+      "name": "Nicolás Maduro (and Cilia Flores)",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "Captured with his wife Cilia Flores in the 3 January 2026 raid on Caracas and transported to New York on narco-terrorism and drug-trafficking charges; as of 19 July 2026 he remains in United States custody awaiting trial in the Southern District of New York.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "In custody pending trial, removed from office by foreign military action [crs-maduro-capture].",
+      "likelyMoves": "Trial in the Southern District of New York is pending and unresolved in the report [crs-maduro-capture].",
+      "engagementMode": "blocked / not-engageable. A sitting head of state removed by foreign military action and held as a criminal defendant is not a counterpart; the report treats the interim government as the channel instead [security.diplomacy].",
+      "anchors": [
+        "security.diplomacy",
+        "maduro-capture-wardept",
+        "crs-maduro-capture"
+      ]
+    },
+    {
+      "name": "Japan",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "The largest foreign holder of United States Treasury securities as of February 2026, at $1.24 trillion.",
+      "fieldsCitedIn": [
+        "economy.externalVulnerability"
+      ],
+      "interests": "report-silent",
+      "resources": "The largest single foreign position within roughly $9.2 trillion of foreign-held Treasuries, about 31% of total federal debt [economy.externalVulnerability].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. The report names it as a holding jurisdiction and attributes no action or position to it [economy.externalVulnerability].",
+      "anchors": [
+        "economy.externalVulnerability",
+        "treasury-tic-debt-holders"
+      ]
+    },
+    {
+      "name": "The United Kingdom",
+      "kind": "foreign state",
+      "liveActorStatus": "current",
+      "currentPosition": "The second-largest foreign holder of United States Treasury securities as of February 2026, at $897 billion.",
+      "fieldsCitedIn": [
+        "economy.externalVulnerability"
+      ],
+      "interests": "report-silent",
+      "resources": "A holding second only to Japan's within the foreign-held share of federal debt [economy.externalVulnerability].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. Named as a holding jurisdiction with no action or position attributed [economy.externalVulnerability].",
+      "anchors": [
+        "economy.externalVulnerability",
+        "treasury-tic-debt-holders"
+      ]
+    },
+    {
+      "name": "North Atlantic Treaty Organization (NATO)",
+      "kind": "international body",
+      "liveActorStatus": "current",
+      "currentPosition": "Held the summit in Ankara, Turkey, at which President Trump declared the Iran ceasefire over on 8 July 2026.",
+      "fieldsCitedIn": [
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. The report attributes no action to the alliance itself; its single appearance is as the setting for a United States announcement [cnbc-iran-ceasefire-over].",
+      "anchors": [
+        "cnbc-iran-ceasefire-over",
+        "security.diplomacy"
+      ]
+    }
+  ]
 actors_external_fr: |-
-  []
+  [
+    {
+      "name": "China",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "À la fois source primaire de 14 des minéraux critiques les plus dépendants des importations (environ 70 % des terres rares et 55 % de l'antimoine), troisième détenteur étranger de bons du Trésor à 693,3 milliards de dollars avec des avoirs en baisse sur la décennie — ce que le rapport lit comme une diversification géopolitique — et principal concurrent d'équilibre des puissances que la Stratégie de défense nationale 2026 ordonne de dissuader par le déni dans l'Indo-Pacifique.",
+      "fieldsCitedIn": [
+        "territory.minerals",
+        "economy.externalVulnerability",
+        "security.military",
+        "security.diplomacy"
+      ],
+      "interests": "La position décroissante en bons du Trésor est la seule intention que le rapport lui attribue — une diversification hors de l'exposition à la dette souveraine américaine [economy.externalVulnerability].",
+      "resources": "Une concentration de l'offre exactement dans les matières premières sur lesquelles la dépendance américaine aux importations a augmenté en 2025 (dépendance nette de 100 % pour 16 matières, contre 15), et un avoir en bons du Trésor assez important pour figurer parmi les trois premiers [territory.minerals][economy.externalVulnerability].",
+      "constraints": "report-silent",
+      "likelyMoves": "La poursuite de la réduction de l'exposition aux bons du Trésor est la seule trajectoire que le rapport projette [economy.externalVulnerability]; le texte stratégique implique une contestation de dissuasion dans l'Indo-Pacifique plutôt qu'une négociation [security.military].",
+      "engagementMode": "Partagé selon le registre, et le rapport ne le résout pas : un partenaire économique dont les États-Unis dépendent pour les minéraux critiques et le financement souverain [territory.minerals][economy.externalVulnerability], et un concurrent de sécurité à dissuader par le déni [security.diplomacy]. Aucune négociation en cours n'est décrite.",
+      "anchors": [
+        "territory.minerals",
+        "economy.externalVulnerability",
+        "security.military",
+        "security.diplomacy",
+        "usgs-mcs-2026",
+        "treasury-tic-debt-holders",
+        "ndstrategy-2026"
+      ]
+    },
+    {
+      "name": "Iran",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "En conflit armé actif avec les États-Unis : les opérations de combat majeures ont commencé le 28 février 2026 après les frappes de juin 2025 sur ses sites nucléaires, un cessez-le-feu négocié par le Pakistan est entré en vigueur le 8 avril 2026 et a été formalisé par un protocole d'accord intérimaire le 17 juin 2026, le président l'a déclaré terminé le 8 juillet 2026, et au 19 juillet 2026 l'Iran attaque la navigation dans le Golfe et les États hébergeant des bases américaines sous frappes renouvelées et blocus naval.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "Il a négocié sur son programme nucléaire et le détroit d'Ormuz pendant la pause, et accepté de rouvrir le détroit comme condition du cessez-le-feu [whitehouse-epic-fury-ceasefire].",
+      "resources": "Des représailles par missiles et drones contre les États du Golfe hébergeant des forces américaines, la fermeture du détroit d'Ormuz et des attaques contre la navigation dans le Golfe — un levier que le rapport montre agissant sur les prix du pétrole, le Brent gagnant environ 5 % à près de 78 dollars à l'effondrement du cessez-le-feu [whitehouse-epic-fury-ceasefire][cnbc-iran-ceasefire-over].",
+      "constraints": "Il est sous blocus naval et frappes plusieurs nuits d'affilée sur ses infrastructures, ayant déjà absorbé une phase principale de combats de 38 jours [cnn-iran-war-july18][whitehouse-epic-fury-ceasefire].",
+      "likelyMoves": "La poursuite des attaques contre la navigation dans le Golfe et contre les États hébergeant des bases américaines tant qu'aucun cessez-le-feu n'est en vigueur [cnn-iran-war-july18].",
+      "engagementMode": "blocked / not-engageable, et le rapport décrit le basculement explicitement : une pause négociée, formalisée le 17 juin 2026, a été déclarée terminée le 8 juillet 2026, ramenant les deux parties à des hostilités actives sans cessez-le-feu en vigueur [cnbc-iran-ceasefire-over][cnn-iran-war-july18].",
+      "anchors": [
+        "security.diplomacy",
+        "iran-ops-transcript",
+        "whitehouse-epic-fury-ceasefire",
+        "cnbc-iran-ceasefire-over",
+        "cnn-iran-war-july18"
+      ]
+    },
+    {
+      "name": "Israel",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "Cobelligérant : les forces américaines et israéliennes ont lancé des opérations de combat majeures contre l'Iran le 28 février 2026, frappant en coordination des cibles nucléaires, balistiques et navales.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Des forces engagées aux côtés des forces américaines dans la phase d'ouverture de la campagne [security.diplomacy].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Le rapport décrit des opérations conjointes coordonnées, la relation d'alignement la plus étroite qu'il enregistre où que ce soit [security.diplomacy][iran-ops-transcript].",
+      "anchors": [
+        "security.diplomacy",
+        "iran-ops-transcript"
+      ]
+    },
+    {
+      "name": "Pakistan",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "A négocié le cessez-le-feu de deux semaines entre les États-Unis et l'Iran entré en vigueur le 8 avril 2026, ensuite prolongé et formalisé par le protocole d'accord intérimaire signé le 17 juin 2026.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "Une position auprès des deux belligérants suffisante pour obtenir l'arrêt de la phase principale de combats après 38 jours de frappes [whitehouse-epic-fury-ceasefire].",
+      "constraints": "Le canal qu'il a ouvert n'a pas tenu : la pause qu'il a négociée a été déclarée terminée le 8 juillet 2026 [cnbc-iran-ceasefire-over].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable. Son rôle attesté est celui d'un médiateur tiers, le seul canal de ce type que le rapport nomme [security.diplomacy].",
+      "anchors": [
+        "security.diplomacy",
+        "whitehouse-epic-fury-ceasefire"
+      ]
+    },
+    {
+      "name": "Venezuela (interim government under Delcy Rodríguez)",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "Sous une transition politique sur laquelle les États-Unis ont installé leur influence après le raid du 3 janvier 2026 sur Caracas, la vice-présidente Delcy Rodríguez ayant prêté serment comme présidente par intérim, une importante présence militaire américaine étant maintenue au large de ses côtes, et une nouvelle frappe américaine ayant visé en juin 2026 un chef de gang vénézuélien.",
+      "fieldsCitedIn": [
+        "security.internal",
+        "security.transnationalExposure",
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "La transition se déroule sous influence américaine installée et présence militaire maintenue au large, l'ancien président déchu étant en détention aux États-Unis [security.diplomacy][crs-maduro-capture].",
+      "likelyMoves": "report-silent",
+      "engagementMode": "negotiable / dealable, mais asymétrique jusqu'à la dépendance : le rapport dit que les États-Unis ont installé leur influence sur la transition plutôt que négocié avec un gouvernement existant [security.diplomacy][maduro-capture-wardept].",
+      "anchors": [
+        "security.diplomacy",
+        "security.internal",
+        "security.transnationalExposure",
+        "maduro-capture-wardept",
+        "crs-maduro-capture"
+      ]
+    },
+    {
+      "name": "Nicolás Maduro (and Cilia Flores)",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "Capturé avec son épouse Cilia Flores lors du raid du 3 janvier 2026 sur Caracas et transféré à New York pour des accusations de narcoterrorisme et de trafic de drogue; au 19 juillet 2026, il reste en détention aux États-Unis en attente de son procès dans le district sud de New York.",
+      "fieldsCitedIn": [
+        "security.diplomacy",
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "En détention en attente de procès, écarté du pouvoir par une action militaire étrangère [crs-maduro-capture].",
+      "likelyMoves": "Le procès dans le district sud de New York est pendant et non résolu dans le rapport [crs-maduro-capture].",
+      "engagementMode": "blocked / not-engageable. Un chef d'État en exercice écarté par une action militaire étrangère et détenu comme prévenu n'est pas un interlocuteur; le rapport traite le gouvernement intérimaire comme le canal à la place [security.diplomacy].",
+      "anchors": [
+        "security.diplomacy",
+        "maduro-capture-wardept",
+        "crs-maduro-capture"
+      ]
+    },
+    {
+      "name": "Japan",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "Premier détenteur étranger de bons du Trésor américains en février 2026, à 1 240 milliards de dollars.",
+      "fieldsCitedIn": [
+        "economy.externalVulnerability"
+      ],
+      "interests": "report-silent",
+      "resources": "La plus grande position étrangère au sein d'environ 9 200 milliards de dollars de bons du Trésor détenus à l'étranger, soit environ 31 % de la dette fédérale totale [economy.externalVulnerability].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. Le rapport le nomme comme juridiction détentrice et ne lui attribue aucune action ni position [economy.externalVulnerability].",
+      "anchors": [
+        "economy.externalVulnerability",
+        "treasury-tic-debt-holders"
+      ]
+    },
+    {
+      "name": "The United Kingdom",
+      "kind": "État étranger",
+      "liveActorStatus": "current",
+      "currentPosition": "Deuxième détenteur étranger de bons du Trésor américains en février 2026, à 897 milliards de dollars.",
+      "fieldsCitedIn": [
+        "economy.externalVulnerability"
+      ],
+      "interests": "report-silent",
+      "resources": "Un avoir second seulement à celui du Japon dans la part étrangère de la dette fédérale [economy.externalVulnerability].",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. Nommé comme juridiction détentrice, sans action ni position attribuée [economy.externalVulnerability].",
+      "anchors": [
+        "economy.externalVulnerability",
+        "treasury-tic-debt-holders"
+      ]
+    },
+    {
+      "name": "North Atlantic Treaty Organization (NATO)",
+      "kind": "organisme international",
+      "liveActorStatus": "current",
+      "currentPosition": "A tenu le sommet d'Ankara, en Turquie, au cours duquel le président Trump a déclaré terminé le cessez-le-feu avec l'Iran le 8 juillet 2026.",
+      "fieldsCitedIn": [
+        "situation"
+      ],
+      "interests": "report-silent",
+      "resources": "report-silent",
+      "constraints": "report-silent",
+      "likelyMoves": "report-silent",
+      "engagementMode": "report-silent. Le rapport n'attribue aucune action à l'alliance elle-même; sa seule apparition est comme cadre d'une annonce américaine [cnbc-iran-ceasefire-over].",
+      "anchors": [
+        "cnbc-iran-ceasefire-over",
+        "security.diplomacy"
+      ]
+    }
+  ]
 risks_en: |-
   []
 risks_fr: |-
