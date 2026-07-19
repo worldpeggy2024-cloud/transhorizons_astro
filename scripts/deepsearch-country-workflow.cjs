@@ -1530,6 +1530,21 @@ SCHEMA (one object per event)
     console.log('NOTE: content/docs/actors-pass-template.md missing — actors-pass.prompt.md NOT generated (restore the versioned actors extraction prompt template and re-run init; rework §8.1).');
   }
 
+  // Risks pass (rework §8.2): generated from the versioned template, currently
+  // v1.0 — two-layer register (stated stress points → framed risks), closed-book,
+  // run LAST (after situation + derivatives). Same placeholders as actors.
+  const risksTemplatePath = path.join(process.cwd(), 'content', 'docs', 'risks-pass-template.md');
+  if (fs.existsSync(risksTemplatePath)) {
+    const risksPass = fs.readFileSync(risksTemplatePath, 'utf8')
+      .replace(/\{\{CODE\}\}/g, code)
+      .replace(/\{\{NAME_EN\}\}/g, nameEn)
+      .replace(/\{\{NAME_FR\}\}/g, nameFr)
+      .replace(/\{\{TODAY\}\}/g, today);
+    fs.writeFileSync(path.join(jobDir, 'risks-pass.prompt.md'), risksPass, 'utf8');
+  } else {
+    console.log('NOTE: content/docs/risks-pass-template.md missing — risks-pass.prompt.md NOT generated (restore the versioned risks pass template and re-run init; rework §8.2).');
+  }
+
   console.log(`Created Deepsearch job assets in ${path.relative(process.cwd(), jobDir)}`);
 }
 
