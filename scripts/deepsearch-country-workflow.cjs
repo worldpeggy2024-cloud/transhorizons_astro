@@ -696,7 +696,7 @@ function capacityAnchor(cal) {
   }
   const e = calFlag(cal.executionRegime && cal.executionRegime.publishedApprovalsRegimeExists);
   const eText = e === 'true'
-    ? ` A published approvals regime exists: capacity.approvals anchors to ${(cal.executionRegime && cal.executionRegime.permittingAuthorityUrl) || 'the permitting authority named in Pass Zero'} — cite it as [permitting-authority].`
+    ? ` A published approvals regime exists: capacity.approvals anchors to ${(cal.executionRegime && cal.executionRegime.permittingAuthorityUrl) || 'the permitting authority named in Pass Zero'} — cite the Pass A source harvested for that regime where one exists; only where Pass A has none, cite it as [permitting-authority] (the promoted fallback id).`
     : e === 'false'
       ? ' No published approvals regime exists: permitting timelines are NOT the instrument — name the actual binding constraint on execution and measure that instead.'
       : ' Whether a published approvals regime exists is unresolved; name the actual binding constraint on execution and measure that.';

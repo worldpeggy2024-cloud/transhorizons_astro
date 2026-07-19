@@ -716,5 +716,32 @@
     "confidence": "High",
     "citationType": "Fact",
     "volatility": "High"
+  },
+  {
+    "id": "permits-performance-gov-dashboard",
+    "name": "Permitting Dashboard",
+    "nameFr": "Permitting Dashboard",
+    "url": "https://www.permits.performance.gov/",
+    "desc": "Official federal online tool tracking environmental review and authorization timelines and live project status for large infrastructure projects across agencies; primary interagency permitting-transparency source.",
+    "descFr": "Outil officiel fédéral en ligne suivant les échéanciers d'examen environnemental et d'autorisation et l'état en direct des grands projets d'infrastructure entre agences; source primaire de transparence en matière de permis.",
+    "publicationDate": "2024-12-16",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "High",
+    "landingPage": true
+  },
+  {
+    "id": "ceq-eis-timelines-2010-2024",
+    "name": "EIS Timelines (2010-2024)",
+    "nameFr": "EIS Timelines (2010-2024)",
+    "url": "https://ceq.doe.gov/docs/nepa-practice/CEQ_EIS_Timeline_Report_2025-1-13.pdf",
+    "desc": "Council on Environmental Quality report updating governmentwide Environmental Impact Statement completion-time data to cover 1,903 statements finalized 2010-2024; the current edition of the timelines instrument.",
+    "descFr": "Rapport du Council on Environmental Quality actualisant les données pangouvernementales de délais d'achèvement des études d'impact environnemental pour couvrir 1 903 études finalisées de 2010 à 2024; l'édition courante de l'instrument.",
+    "publicationDate": "2025-01-13",
+    "accessDate": "2026-07-19",
+    "confidence": "High",
+    "citationType": "Fact",
+    "volatility": "High"
   }
 ]
