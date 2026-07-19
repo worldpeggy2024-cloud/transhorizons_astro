@@ -51,3 +51,14 @@ Return ONLY a JSON object:
   "newSources": [ any sources cited above that are not already in the report's registry — all fields: id, name, nameFr, url, desc, descFr, publicationDate (omit if undated), accessDate, confidence, citationType ],
   "peerCorrections": [ { "field": "e.g. economy.externalVulnerability", "correction": "what the peer section must now say and why" } ]
 }
+
+## Run notes for THIS pass (USA, 2026-07-19) — resolve explicitly, do not skip
+
+1. THREE EVENTS ARE STATUS UNRESOLVED and must be resolved or dropped, never carried as-is:
+   - iran-ceasefire-april2026 — currently sourced to a Euronews article (a news outlet; fails the primary rule). Find the actual White House / press-secretary statement, or drop the event. See also note 2.
+   - alex-pretti-killing — the CRS shutdown report documents the SHUTDOWNS, not the killing itself. A primary or authoritative source for the killing is required (e.g. CBP statement, DHS OIG, court record), or the event is folded into the shutdown thread as context without its own entry.
+   - senate-pay-withholding-resolution — needs the Senate record itself: the S.Res. number and the vote, cited to senate.gov or the Congressional Record.
+2. CONTRADICTION TO RECONCILE: the event scan says a two-week ceasefire was announced 7 April 2026; the report's security.diplomacy field, reading the SAME Euronews source, found active hostilities and an ultimatum with NO ceasefire in effect. Verify which is true on the run date. If the diplomacy field is right, the ceasefire event is corrected or dropped; if the event is right, security.diplomacy goes in peerCorrections.
+3. WINDOW CALL: obbba-signed (2025-07-04) falls ~2 weeks OUTSIDE the 12-month window from the run date. It is load-bearing context for the shutdown thread (its ICE/CBP funding pool). KEEP it as the thread's opening event or DROP it — but say which, explicitly, in a note after the JSON.
+4. SOURCE CONCENTRATION: five shutdown-cluster events currently hang on the single CRS report R48832. Where the thread's events can each cite their own primary (the appropriations acts, the TSA payroll executive order), prefer that; R48832 remains valid as the timeline backbone.
+5. The report's registry already contains every event source plus the Pass A top-up (70 ids) — cite existing ids where they serve; put genuinely new sources in newSources with ALL schema fields including volatility.
