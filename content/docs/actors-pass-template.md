@@ -1,4 +1,4 @@
-# Actors extraction prompt — v1.8
+# Actors extraction prompt — v1.9
 
 **Country:** {{NAME_EN}} / {{NAME_FR}} ({{CODE}}) · **Run date:** {{TODAY}}
 
@@ -118,7 +118,7 @@ For every actor produced in Layer 1, produce a Layer 2 draft.
 **Layer 2 requirements (implementation spec §8.1):**
 
 - Layer 2 is `citationType: Interpretation`.
-- Layer 2 ANCHORS per §1 of the spec: each draft carries the `[source-id]`s or `[dot.path]` field anchors it reasons from (e.g. `[political.stabilityDrivers]`, an already-cited source id) — inline in the field text and/or in the `anchors` list of the output structure. An anchor must point at a non-empty report field or a source id present in this report's registry; ghost anchors are rejected by the validators.
+- Layer 2 ANCHORS per §1 of the spec: each draft carries the `[source-id]`s or `[dot.path]` field anchors it reasons from (e.g. `[political.stabilityDrivers]`, an already-cited source id) — inline in the field text and/or in the `anchors` list of the output structure. An anchor must point at a non-empty report field or a source id present in this report's registry; ghost anchors are rejected by the validators. The bare `situation` is a valid FIELD anchor (the event layer has no peer prefix — it is the one dotless field path, reserved; v1.9).
 - Layer 2 renders COLLAPSED by default and visibly labelled AI-drafted / unverified on the site.
 
 ### Layer 2 fields
