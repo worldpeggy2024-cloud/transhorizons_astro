@@ -36,8 +36,12 @@
   JSON-in-text blocks in the same file — KEEP them JSON-in-text (decided; do not convert to structured
   fields).
 - Authoring: TWO-PHASE deep research only (Pass A = sources; Pass B = prose citing only approved IDs), via scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
-  do not treat existing single-phase country content as ground truth. Only DEU and BRA are two-phase so far.
-  Tool-agnostic: Perplexity is one sourcing option, not hard-wired.
+  do not treat existing single-phase country content as ground truth.
+  STANDING TOOL SPLIT (decided 2026-07-19 after the USA head-to-head): Perplexity runs Pass A (source
+  harvesting, Pass Zero-B event scans, targeted Pass A top-ups — its search strength); Claude runs Pass B
+  prose and the derived passes (situation, actors) — Perplexity's Pass B left 17 fields empty, Claude's
+  filled all 33 with run-date verification. The pipeline stays tool-agnostic by design; this is the
+  working default, not a hard-wiring.
 - Structure (rework 2026-07, per content/docs/country-report-rework-IMPLEMENTATION.md — DECIDED, do not
   redesign): 33 fields, SIX peers, display order territory · society · economy · political order ·
   capacity to deliver · security & diplomacy; dynamic tail situation · actors · risks; then sources.
