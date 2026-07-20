@@ -32,7 +32,8 @@
 - Storage: ONE flat file per country, content/countries/<ISO3>/analysis.yaml. NOT split (can.en.yaml etc. is
   the dead convention) and NOT in `sectionFields` (that is the Articles collection). Country fields live in
   the `countries` Keystatic collection (path content/countries/*/analysis, slugField code). Keys are flat
-  underscores: <section>_<subsection>_<lang>, e.g. political_powerStructure_en. actors/risks/sources are
+  underscores: <section>_<subsection>_<lang>, e.g. political_powerStructure_en. actors/sources (and the
+  gap register capacity_knownAndUnbuilt_*) are
   JSON-in-text blocks in the same file — KEEP them JSON-in-text (decided; do not convert to structured
   fields).
 - Authoring: TWO-PHASE deep research only (Pass A = sources; Pass B = prose citing only approved IDs), via scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
@@ -44,7 +45,9 @@
   working default, not a hard-wiring.
 - Structure (rework 2026-07, per content/docs/country-report-rework-IMPLEMENTATION.md — DECIDED, do not
   redesign): 33 fields, SIX peers, display order territory · society · economy · political order ·
-  capacity to deliver · security & diplomacy; dynamic tail situation · actors · risks; then sources.
+  capacity to deliver · security & diplomacy; dynamic tail situation · actors; then sources. (The Risk
+  Register was REMOVED 2026-07-20 per workorder-gap-register.md — risks_* fields no longer exist; the gap
+  register capacity.knownAndUnbuilt replaces it. Report is 34 fields.)
   - TERRITORY: geography / biosphere / minerals / climate / metabolism / transition. Metabolism absorbs
     connectivity+transport+comms; freshwater STOCK is biosphere. Disciplines: exposure paired with capacity,
     located geographically, scenario+horizon binding, demonstrated-over-declared.
@@ -78,11 +81,11 @@
     (inheritedTerrain, steering, posture, scorecard_anchors, actors Layer 2, risk ratings). Ghost anchor
     (empty/missing target) = hard error; compose-order + allowed-set rules; baseline carries no anchors;
     anchor parity EN/FR is manual like citation parity.
-  - Pass B emits situation, actors.*, risks, scorecard, and baseline EMPTY — each is populated by its own
-    dedicated pass working from the finished report (situation pass §4d; two-layer actors pass per rework
-    §8.1; Layer-1 stress-index risks pass, v2.0 draft; derivatives pass for scorecard + baseline). Pass
+  - Pass B emits situation, actors.*, capacity.knownAndUnbuilt, scorecard, and baseline EMPTY — each is
+    populated by its own dedicated pass working from the finished report (situation pass §4d; two-layer
+    actors pass per rework §8.1; derivatives pass for scorecard + baseline + gap register). Pass
     order: B → situation (+ approved
-    peerCorrections) → derivatives → actors/risks. The situation pass also emits passNotes (per-event
+    peerCorrections) → derivatives → actors. The situation pass also emits passNotes (per-event
     kept/folded/dropped verdicts) — the validators treat it as the event-scan engagement record. Actors
     Layer 2 renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
   - LEGACY fields (economy_macroReality_*, capacity_permitting_*) stay DECLARED in Keystatic so saves
@@ -98,18 +101,17 @@
 - Risk notion (REWORKED 2026-07-19/20, study open): the globe risk-level FILTER FACET and the TOPICS
   FACET are both REMOVED — hand-assigned Manus-era labels (the risk labels recycled from the
   correlation matrix). KEYWORD SEARCH replaces them (src/lib/countryKeywords.ts, shipped 2026-07-20):
-  the World Analysis search matches real report content — actor names, situation thread names, risk
-  titles — for TWO-PHASE countries only; add a country's YAML import there when its regeneration lands.
-  region = static table, the one factual facet remaining. The RISKS PASS is Layer-1 only: a structured,
-  CITED stress index (dependency / fragility / capacity-gap / adverse-trend) of what the report itself
-  asserts — risks-pass-template.md v2.0, DRAFT pending author approval; the former Layer 2 (trigger,
-  horizon, probability x impact, mitigants), the aggregate riskLevel, and the correlation cascades are
-  PARKED pending study. deriveRiskLevel keeps the strict High/Med/Low rule but returns null for empty or
-  unrated registers ('Low' means assessed-low, never nothing-to-assess); the on-page chip renders only
-  from rated legacy registers (CAN). countryMetadata.riskCategory AND .topics are legacy-unused.
-  Installing a stress index needs a renderer for the new entry shape first (RiskCard expects the old
-  rated shape). The "report available" marker must track two-phase-regenerated status, not mere file
-  existence.
+  the World Analysis search matches real report content — actor names, situation thread names — for
+  TWO-PHASE countries only; add a country's YAML import there when its regeneration lands.
+  region = static table, the one factual facet remaining. The RISK REGISTER ITSELF WAS REMOVED
+  2026-07-20 (workorder-gap-register.md step 4): risks_*/riskLevel/deriveRiskLevel/RiskCard are gone
+  from schema, Keystatic, validators, adapter, renderer; YAML keys stripped from all 13 country files
+  (CAN's 7-entry two-phase register cleared — contents preserved in git history at commit a7bb7fe4 and
+  earlier; the 11 legacy single-phase registers were regeneration-discard material). The GAP REGISTER
+  capacity.knownAndUnbuilt replaces it. The former Layer-2 framing (trigger, horizon, probability x
+  impact, mitigants), the aggregate riskLevel, and the correlation cascades stay PARKED pending study.
+  countryMetadata.riskCategory AND .topics are legacy-unused. The "report available" marker must track
+  two-phase-regenerated status, not mere file existence.
 - Two layers: present-state (sourced, validated = analysis.yaml) and a SEPARATE, openly-speculative
   trajectory/extrapolation layer (own contract: plural, anchored to present-state facts, never sourced, never
   a single forecast). Trajectories branch PRIMARILY on capacity.* (knowledge isn't the constraint, capacity

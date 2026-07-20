@@ -2,7 +2,6 @@ import type {
   AnalysisContent,
   LangContent,
   ActorEntry,
-  RiskEntry,
   SourceEntry,
   KnownAndUnbuiltRegister,
   GapRegisterItem,
@@ -84,18 +83,8 @@ function parseScorecardAnchors(v: unknown): AnalysisContent['scorecardAnchors'] 
   }
 }
 
-function adaptRisks(arr: unknown): RiskEntry[] {
-  return parseArrayInput(arr).map((r: YamlRecord) => ({
-    title: String(r.title ?? ''),
-    trigger: String(r.trigger ?? ''),
-    probability: (r.probability as RiskEntry['probability']) ?? 'Low',
-    impact: (r.impact as RiskEntry['impact']) ?? 'Low',
-    timeHorizon: String(r.timeHorizon ?? ''),
-    leadingIndicators: String(r.leadingIndicators ?? ''),
-    mitigants: String(r.mitigants ?? ''),
-    lastAssessed: r.lastAssessed ? String(r.lastAssessed) : undefined,
-  }));
-}
+// adaptRisks REMOVED 2026-07-20 (workorder-gap-register.md step 4): the Risk
+// Register is replaced by the gap register (parseKnownAndUnbuilt above).
 
 function adaptSources(arr: unknown): SourceEntry[] {
   return parseArrayInput(arr).map((s: YamlRecord) => ({
@@ -196,7 +185,6 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
       domestic: adaptActors(d[`actors_domestic${s}`]),
       external: adaptActors(d[`actors_external${s}`]),
     },
-    risks: adaptRisks(d[`risks${s}`]),
   };
 }
 

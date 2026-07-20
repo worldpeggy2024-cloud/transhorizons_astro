@@ -5,7 +5,7 @@
 
 > **LAYER: Present-state.** This template produces the sourced, verifiable layer of a country report:
 > `territory · society · economy · political order · capacity to deliver · security & diplomacy`, then
-> `situation · actors · risks · sources`.
+> `situation · actors · sources` (the Risk Register was removed 2026-07-20; the gap register capacity.knownAndUnbuilt replaces it).
 >
 > **Governed by:** `research-quality-bar.md` (present-state layer). Its rejection criteria override any ambiguous behaviour here.
 >
@@ -21,14 +21,14 @@
    from the rework + `capacity.knownAndUnbuilt`, the gap register, added 2026-07-20 per
    `workorder-gap-register.md`), in
    the locked display order `territory · society · economy · political order · capacity to deliver ·
-   security & diplomacy`, followed by the dynamic tail `situation · actors · risks`. Key moves: **NINE
+   security & diplomacy`, followed by the dynamic tail `situation · actors`. Key moves: **TEN
    enforced openers** (heuristic-gated at the apply gate and audit validator), each doing three jobs —
    state, signal, declare depth (§2.1 of the spec; WRITING RULES in §14); an **anchoring capability** for
    derived claims (`[dot.path]` markers naming the already-cited fields a synthesis stands on — ghost
    anchors are hard errors); the **executive snapshot is REMOVED**, replaced by a short derivative
-   **Baseline** (the page's only always-visible prose); `situation`, `actors`, `risks`, the **scorecard**,
+   **Baseline** (the page's only always-visible prose); `situation`, `actors`, the gap register `capacity.knownAndUnbuilt`, the **scorecard**,
    and the **baseline** are **emitted empty by Pass B** and populated by their own dedicated passes from
-   the finished report — situation pass, actors and risks passes, and (amendment 2026-07-19) the
+   the finished report — situation pass, actors pass, and (amendment 2026-07-19) the
    **derivatives pass**, which composes scorecard + baseline AFTER the situation pass installs and its
    peer corrections are approved, the last point at which the report's facts can change; sources carry a
    **`volatility`** axis (freshness, orthogonal to confidence) driving the quarterly refresh worklist.
@@ -45,7 +45,7 @@
 
 A country is described as six peers, each on its own terms, in the locked display order:
 
-**`territory`** · **`society`** · `economy` · `political order` · **`capacity to deliver`** · `security & diplomacy` — then the dynamic tail `situation` · `actors` · `risks`
+**`territory`** · **`society`** · `economy` · `political order` · **`capacity to deliver`** · `security & diplomacy` — then the dynamic tail `situation` · `actors` (Risk Register removed 2026-07-20)
 
 **Each peer is described *before* and *independent of* any stability implication.** A society, a territory, a capacity to build — each exists whether or not it threatens or serves anything. The register this template replaces demotes three of them: the physical body of the country surfaces only as "border situation" or "energy dependency" — a risk to assets or an input to trade, never the material fact the country IS (`territory` fixes this); the state's ability to build, permit, and deliver has no field at all, though "knowledge isn't the constraint, capacity is" is the whole project's spine (`capacity` fixes this); and society appears only where it is a "problem" (`society` fixes this).
 
@@ -53,7 +53,7 @@ A country is described as six peers, each on its own terms, in the locked displa
 
 - **Religion appears in every report**, including where its political salience is low.
 - **The absence of a fault line is itself a finding**, stated as one — not an omission.
-- Describe the society neutrally and fully first; let `security` and `risks` reference it afterward, not the other way around.
+- Describe the society neutrally and fully first; let `security` and the gap register reference it afterward, not the other way around.
 
 ---
 
@@ -76,7 +76,7 @@ Any deep-research-capable assistant can run the passes. **Perplexity Deep Resear
 ```
 content/countries/[CODE]/analysis.yaml   ← ONE flat file: all sections, both languages
                                             (<section>_<subsection>_<en|fr> keys);
-                                            actors/risks/sources as JSON-in-text blocks
+                                            actors/sources as JSON-in-text blocks
 ```
 
 `[CODE]` = ISO3 (e.g. `BRA`, `SEN`, `CAN`). *(Replaces the earlier split `[code].en/fr/sources/meta.yaml`
@@ -141,7 +141,7 @@ The `situation` field is populated in its own pass, after the peer sections exis
 
 **Cross-referencing:** where an event supersedes or contradicts a claim in a peer section, the peer section must be **corrected** — the situation field does not exist to hold contradictions, it exists to surface them.
 
-**Storage.** `situation_en` / `situation_fr` hold the threads as JSON-in-text (the same convention as actors/risks): an array of
+**Storage.** `situation_en` / `situation_fr` hold the threads as JSON-in-text (the same convention as actors): an array of
 `{ "thread": "…", "status": "…", "events": [{ "date": "…", "what": "… [source-id]", "changed": "… [source-id]" }], "currentState": "…" }`
 (`status` and `currentState` optional — `status` is a short activity label shown beside the thread title, e.g. "ongoing" / "June 2025").
 Each language field carries its OWN complete array (monolingual keys — no `_en`/`_fr` suffixes inside the JSON); both languages hold the
@@ -177,7 +177,7 @@ Do **not** write the claim with weaker sourcing or vague attribution — omit it
 ### Hard gates (blocking)
 
 - **Validator (`npm run validate:country -- content/countries/[CODE]/` single / `npm run validate:countries` all):** FAILS on orphan citations (a `[id]` with no source), homepage URLs, denied low-reliability domains, missing source fields, duplicate source ids, and unparseable JSON-in-text blocks. WARNS (does not fail) on an **orphan source** — a source never cited, reported peer-grouped; event sources are accepted-but-not-required — a **missing situator OPENER**, and undated / untranslated / time-unbound entries.
-- **Apply gate (`apply`, before the YAML is written):** additionally HARD-ERRORS on a **missing situator OPENER** on any of the NINE enforced fields, on any narrative field lacking a citation, on ghost anchors (a `[dot.path]` targeting an empty or missing field — same class as a ghost citation), and on malformed actors / risks / scorecard. Regeneration is cheap at the gate; a missed opener reaching the YAML costs a manual retrofit. EN/FR citation parity — and anchor parity — is a **manual** check, enforced by neither.
+- **Apply gate (`apply`, before the YAML is written):** additionally HARD-ERRORS on a **missing situator OPENER** on any of the TEN enforced fields, on any narrative field lacking a citation, on ghost anchors (a `[dot.path]` targeting an empty or missing field — same class as a ghost citation), and on malformed actors / scorecard. Regeneration is cheap at the gate; a missed opener reaching the YAML costs a manual retrofit. EN/FR citation parity — and anchor parity — is a **manual** check, enforced by neither.
 - **Research quality bar:** validation is necessary, not sufficient. If the validator passes but the content fails `research-quality-bar.md` (present-state layer), the content is still rejected.
 
 ---
@@ -419,7 +419,7 @@ Where the approved sources carry no duration, write the gap without one and name
 **Dynamic tail + derivatives**
 - **`situation`** — the EVENT layer: threads of verified events, populated by the dedicated situation pass (§4d), never by Pass B; scanned by Pass Zero-B (§4c); sources harvested in Pass A; own manual `situation_lastUpdated`.
 - **`actors.domestic` / `actors.external`** — populated by the dedicated two-layer actors pass (implementation spec §8.1), never by Pass B.
-- **`risks`** — populated by the dedicated two-layer risks pass (implementation spec §8.2), never by Pass B.
+- The Risk Register was REMOVED 2026-07-20 (workorder-gap-register.md): the gap register `capacity.knownAndUnbuilt` replaces it, composed by the derivatives pass.
 - **`scorecard` + `scorecard_anchors`** — six axes, each value + anchors + rationale (§14 item 10); composed last; Interpretation; volatility High.
 - **`baseline`** — the page's only always-visible prose; composed last; derivative; no new facts, no anchors (§14 item 11).
 - `sources` — appears once, at the end; every cited source, all schema fields; ghost citations are errors, orphan sources are peer-grouped warnings.
@@ -463,7 +463,7 @@ GENERATION ORDER — the DERIVATIVE items — the SCORECARD (values + anchors + 
    - Metabolism: first line signals scope (energy, food, water, movement, information). Then: how the country physically runs and circulates AS A SYSTEM — energy, food and water flows; movement of goods and people within the country; the physical communications backbone; self-sufficiency vs dependence in each, and the networks that carry them (absorbs energy + transport + communications, plus the connectivity networks removed from geography). Boundaries: circulation WITHIN the country, not export logistics (ports-as-competitiveness → ECONOMY); physical comms infrastructure, not the media ecosystem (→ SOCIETY); throughput, not balance-sheet.
    - Transition: the country's position in decarbonisation — energy mix, emissions profile and DELIVERED path, pledged targets measured against delivered policy; name the gap. Climate Action Tracker as the PRIMARY pledge-vs-policy instrument. "Trajectory" here means delivered emissions path against pledge — present-state fact, not forward extrapolation.
 
-2. SOCIETY (describe the society ON ITS OWN TERMS, before and independent of any stability implication. Religion and language appear in EVERY report; low salience is a finding. Describe neutrally first; security/risks reference it after, never the reverse. Order: demographics → composition → language → religion → wellbeing → cohesion.)
+2. SOCIETY (describe the society ON ITS OWN TERMS, before and independent of any stability implication. Religion and language appear in EVERY report; low salience is a finding. Describe neutrally first; security and the gap register reference it after, never the reverse. Order: demographics → composition → language → religion → wellbeing → cohesion.)
    - Demographics: OPENER (required, one very short historical framing sentence): indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed. Migration numbers depend on this baseline. Then: total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
    - Composition: ethnic composition (rounded shares with year and source) and the CLEAVAGE GEOMETRY: whether cleavages across ethnicity, language and religion are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry, don't just list groups. Shares = Fact; geometry judgment = Interpretation. Language content lives in its own field below, NOT here.
    - Language: linguistic composition (rounded shares, year, source; flag contested or suppressed counts); the lived texture the census label hides (diglossia, vernacular vs official, lingua franca, language of instruction vs home language); political salience — how far language structures authority, allegiance and access (official-language regime, language law, linguistic nationalism). Name each source and its known bias.
@@ -512,8 +512,8 @@ GENERATION ORDER — the DERIVATIVE items — the SCORECARD (values + anchors + 
 8. KEY ACTORS (held in the schema, but NOT written in this pass)
    - Emit actors.domestic and actors.external as empty arrays for both languages. Actors are populated afterward by the dedicated two-layer actors pass (implementation spec §8.1), which EXTRACTS Layer 1 from this finished report and drafts Layer 2 analytically, anchored to the report's fields and sources.
 
-9. RISK REGISTER (held in the schema, but NOT written in this pass)
-   - Emit risks as an empty array for both languages. Risks are populated afterward by the dedicated two-layer risks pass (implementation spec §8.2): Layer 1 gathers the STATED STRESS POINTS the report already asserts with a [source-id] (plus situation threads trending badly); Layer 2 drafts the risk framing (trigger, horizon, leading indicators, mitigants), with qualitative probability/impact anchored to the stress facts.
+9. RISK REGISTER — REMOVED (2026-07-20, workorder-gap-register.md)
+   The risks field no longer exists in the schema. Its replacement is the GAP REGISTER, capacity.knownAndUnbuilt (see the Capacity section above): a cited index of gaps the report itself asserts, composed by the derivatives pass. The former Layer-2 framing (trigger, horizon, probability × impact, mitigants) and the aggregate risk level remain parked with the correlation study.
 
 10. SCORECARD (held in the schema, but NOT written in this pass — amendment 2026-07-19)
    Emit all six axis values as empty strings and scorecardAnchors as an empty object. The scorecard is composed by the dedicated DERIVATIVES pass after the situation pass installs. Its contract (enforced there and at install): six axes — eliteCohesion, socialCohesion, securityLoyalty, economicPressure, protestCapacity, institutionalResilience; each carries a value (High | Med | Low); anchors — the [source-id]s (or dot field paths) of already-cited claims the rating summarises (>= 1; must resolve in the report's sources registry / fields); rationale_en + rationale_fr — one line: why those facts produce this value. All six are citationType: Interpretation, volatility: High, and DERIVATIVE — they introduce no fact not already cited in the report, and they read the WHOLE report including the situation threads. Cross-peer by design — rendered at page level, not inside a section; the page hides the block while the scorecard is empty.
@@ -522,7 +522,7 @@ GENERATION ORDER — the DERIVATIVE items — the SCORECARD (values + anchors + 
    Emit baseline as empty strings for both languages; the page renders nothing there by design (never back-fill). The baseline is composed by the dedicated DERIVATIVES pass after the situation pass installs. Its contract (enforced there and at install): a short paragraph (not one line, not long), in both languages: the page's only always-visible prose — enough for a reader to decide whether to open this country. Present-state characterisation, never a forecast. It introduces no fact not already cited in the report and carries NO new sources; any citation markers must be ids already present in the report. It carries no [dot.path] anchors. Where the situation field holds material events, the baseline reflects them. Name it Baseline, never "Outlook."
 
 FORMAT one block per section using ## headers matching these YAML field names, in THIS order:
-territory.geography, territory.biosphere, territory.minerals, territory.climate, territory.metabolism, territory.transition, society.demographics, society.composition, society.language, society.religion, society.wellbeing, society.cohesion, economy.realEconomy, economy.publicFinances, economy.externalVulnerability, economy.politicalEconomy, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, political.stateStructure, capacity.inheritedTerrain, capacity.steering, capacity.approvals, capacity.delivery, capacity.publicServices, capacity.productivity, capacity.knownAndUnbuilt (empty), security.internal, security.military, security.transnationalExposure, security.diplomacy, security.posture, situation (empty), actors.domestic (empty), actors.external (empty), risks (empty), scorecard (empty), scorecardAnchors (empty), baseline (empty). End with a complete ## sources block in YAML, all fields per source: id, name, url, desc, publicationDate, accessDate, confidence, citationType (see §11; volatility joins the schema per implementation spec §6).
+territory.geography, territory.biosphere, territory.minerals, territory.climate, territory.metabolism, territory.transition, society.demographics, society.composition, society.language, society.religion, society.wellbeing, society.cohesion, economy.realEconomy, economy.publicFinances, economy.externalVulnerability, economy.politicalEconomy, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, political.stateStructure, capacity.inheritedTerrain, capacity.steering, capacity.approvals, capacity.delivery, capacity.publicServices, capacity.productivity, capacity.knownAndUnbuilt (empty), security.internal, security.military, security.transnationalExposure, security.diplomacy, security.posture, situation (empty), actors.domestic (empty), actors.external (empty), scorecard (empty), scorecardAnchors (empty), baseline (empty). End with a complete ## sources block in YAML, all fields per source: id, name, url, desc, publicationDate, accessDate, confidence, citationType (see §11; volatility joins the schema per implementation spec §6).
 
 DO NOT include any forward-looking extrapolation, scenario, or "where this is heading" content. This report is the PRESENT-STATE layer only. Forward-looking reasoning belongs in a separate trajectory layer with its own contract.
 ```
@@ -570,7 +570,7 @@ DO NOT include any forward-looking extrapolation, scenario, or "where this is he
 | Situation (dedicated pass) | `situation` |
 | Domestic actors (dedicated pass) | `actors.domestic[]` |
 | External actors (dedicated pass) | `actors.external[]` |
-| Risk register (dedicated pass) | `risks[]` |
+
 | Scorecard anchors | `scorecard_anchors` |
 | Baseline | `baseline` |
 

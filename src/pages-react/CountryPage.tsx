@@ -1,7 +1,7 @@
 /*
  * TransHorizons — Country Analysis Page
  * Design: Editorial Horizon — clean ivory background, gold accents, structured framework
- * Framework: Country Situation Report (Executive Snapshot → Political → Economy → Security → Actors → Risks → Sources)
+ * Framework: Country report (Baseline; Territory → Security peers; Situation · Actors; Sources)
  * Bilingual: EN/FR toggle
  * France analysis: fully populated from /data/france.ts
  */
@@ -9,19 +9,15 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useParams, Link } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { RiskTrendVisualization } from '@/components/RiskTrendVisualization';
 import { FlagIcon } from '@/components/FlagIcon';
 import { CountryLocatorMap } from '@/components/CountryLocatorMap';
-import { irelandRiskTrends } from '@/data/irelandRiskTrends';
-import type { RiskTrendData } from '@/lib/riskTrendTypes';
-import { deriveRiskLevel } from '@/lib/deriveRiskLevel';
 import {
   ArrowLeft, Globe, Users, MapPin, BarChart2, Shield, TrendingUp,
   AlertTriangle, BookOpen, Clock, ChevronDown, ChevronUp, ExternalLink, Sun, Moon,
   Mountain, Hammer
 } from 'lucide-react';
 import { franceAnalysis } from '@/data/france-yaml';
-import { type AnalysisContent, type ActorEntry, type RiskEntry, type SourceEntry } from '@/data/france';
+import { type AnalysisContent, type ActorEntry, type SourceEntry } from '@/data/france';
 import { canadaAnalysis } from '@/data/canada';
 import { usaAnalysis } from '@/data/usa-yaml';
 import { chinaAnalysis } from '@/data/china-yaml';
@@ -86,7 +82,7 @@ function formatPopulationFr(n: number): string {
 /**
  * Display-layer translation of the canonical rating enums (High|Med|Low, plus
  * Medium in actor dealability). The DATA keeps the English enum values — the
- * validator and deriveRiskLevel depend on them — only the rendering localizes.
+ * validator depends on them — only the rendering localizes.
  * FR-PLACEHOLDER: French wording — Peggy to verify.
  */
 function ratingLabel(v: string | null | undefined, language: string): string {
@@ -325,7 +321,7 @@ function ProseParagraphs({ text, sources }: { text: string; sources?: SourceEntr
 }
 
 // ─── Situation threads — the verified event layer ─────────────────────────────
-// situation_en/_fr may hold JSON-in-text threads (same convention as actors/risks):
+// situation_en/_fr may hold JSON-in-text threads (same convention as actors):
 //   [{ "thread": "…", "status"?, "events": [{ "date", "what", "changed" }], "currentState"? }]
 // Threads render natively; anything that isn't a parsable threads array falls
 // back to plain prose (legacy content).
@@ -514,62 +510,6 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
   );
 }
 
-// ─── Risk Row ────────────────────────────────────────────────────────────────
-
-function RiskCard({ risk, language, sources }: { risk: RiskEntry; language: string; sources?: SourceEntry[] }) {
-  const [expanded, setExpanded] = useState(false);
-  const probColors: Record<string, string> = {
-    High: 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900',
-    Med: 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900',
-    Low: 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900',
-  };
-  const impactColors = probColors;
-  const labels = language === 'fr'
-    ? { trigger: 'Déclencheur', prob: 'Probabilité', impact: 'Impact', horizon: 'Horizon', indicators: 'Indicateurs avancés', mitigants: 'Atténuation', lastAssessed: 'Dernière évaluation' }
-    : { trigger: 'Trigger', prob: 'Probability', impact: 'Impact', horizon: 'Time horizon', indicators: 'Leading indicators', mitigants: 'Mitigants', lastAssessed: 'Last assessed' };
-
-  return (
-    <div className="border border-[var(--cr-border)] bg-[var(--cr-bg)]">
-      <button
-        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[var(--cr-hover)] transition-colors gap-3"
-        onClick={() => setExpanded(e => !e)}
-      >
-        <span className="font-body text-sm font-medium text-[var(--cr-ink)] flex-1">{risk.title}</span>
-        <div className="flex items-center gap-2 shrink-0">
-          <span className={`font-body text-[10px] px-1.5 py-0.5 border rounded ${probColors[risk.probability]}`}>
-            {ratingLabel(risk.probability, language)}
-          </span>
-          <span className={`font-body text-[10px] px-1.5 py-0.5 border rounded ${impactColors[risk.impact]}`}>
-            {ratingLabel(risk.impact, language)}
-          </span>
-          {expanded ? <ChevronUp size={12} className="text-[var(--cr-muted)]" /> : <ChevronDown size={12} className="text-[var(--cr-muted)]" />}
-        </div>
-      </button>
-      {expanded && (
-        <div className="px-4 pb-4 pt-1 border-t border-[var(--cr-border)] space-y-2">
-          {/* Layer 2 (rework §8.2): the risk FRAMING is an analytical draft —
-              labelled like actors Layer 2. FR-PLACEHOLDER: French wording. */}
-          <p className="font-body text-[10px] italic text-[var(--cr-muted)]">
-            ⚠ {language === 'fr' ? 'Ébauche générée par IA — non vérifiée' : 'AI-drafted — unverified'}
-          </p>
-          {([
-            [labels.trigger, risk.trigger],
-            [labels.horizon, risk.timeHorizon],
-            [labels.indicators, risk.leadingIndicators],
-            [labels.mitigants, risk.mitigants],
-            ...(risk.lastAssessed ? [[labels.lastAssessed, risk.lastAssessed]] : []),
-          ] as [string, string][]).map(([label, value]) => (
-            <div key={label}>
-              <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
-              <p className="font-body text-xs text-[var(--cr-body)] leading-relaxed mt-0.5">{parseCitations(value, sources)}</p>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function CountryPage() {
@@ -619,12 +559,6 @@ export default function CountryPage() {
     return language === 'fr' ? analysis.fr : analysis.en;
   }, [analysis, language]);
 
-  // Overall risk level: derived by rule from this country's own risk register
-  // (never hand-assigned). Uses the active-language risks so drivenBy is localized.
-  const derivedRisk = useMemo(
-    () => (lang ? deriveRiskLevel(lang.risks) : null),
-    [lang]
-  );
 
   if (loading) {
     return (
@@ -704,7 +638,6 @@ export default function CountryPage() {
     economy: language === 'fr' ? 'Économie' : 'Economy',
     security: language === 'fr' ? 'Sécurité & Diplomatie' : 'Security & Diplomacy',
     actors: language === 'fr' ? 'Carte des acteurs' : 'Actors Map',
-    risks: language === 'fr' ? 'Registre des risques' : 'Risk Register',
     sources: language === 'fr' ? 'Sources recommandées' : 'Recommended Sources',
     eliteCohesion: language === 'fr' ? 'Cohésion des élites' : 'Elite cohesion',
     securityLoyalty: language === 'fr' ? 'Loyauté des forces' : 'Security loyalty',
@@ -735,7 +668,7 @@ export default function CountryPage() {
     diplomacy: language === 'fr' ? 'Diplomatie & posture extérieure' : 'Diplomacy & external posture',
     domesticActors: language === 'fr' ? 'Acteurs nationaux' : 'Domestic actors',
     externalActors: language === 'fr' ? 'Acteurs extérieurs' : 'External actors',
-    // FR-PLACEHOLDER: society/territory/capacity/substrate + overall-risk UI labels — Peggy to verify French wording.
+    // FR-PLACEHOLDER: society/territory/capacity/substrate UI labels — Peggy to verify French wording.
     constitutionalSubstrate: language === 'fr' ? 'Substrat constitutionnel' : 'Constitutional substrate',
     territory: language === 'fr' ? 'Territoire' : 'Territory',
     geography: language === 'fr' ? 'Géographie' : 'Geography',
@@ -759,11 +692,6 @@ export default function CountryPage() {
     composition: language === 'fr' ? 'Composition' : 'Composition',
     religion: language === 'fr' ? 'Religion' : 'Religion',
     socialCohesionSection: language === 'fr' ? 'Cohésion sociale' : 'Social cohesion',
-    overallRisk: language === 'fr' ? 'Niveau de risque global' : 'Overall risk level',
-    drivenBy: language === 'fr' ? 'déterminé par' : 'driven by',
-    riskHigh: language === 'fr' ? 'Élevé' : 'High',
-    riskMedium: language === 'fr' ? 'Moyen' : 'Medium',
-    riskLow: language === 'fr' ? 'Faible' : 'Low',
   };
 
   const hasAnalysis = !!analysis && !!lang;
@@ -916,7 +844,6 @@ export default function CountryPage() {
     { id: 'security', label: t.security, children: securityRows.map(([label, , id]) => ({ id, label })) },
     ...(hasSituation ? [{ id: 'situation', label: t.situation }] : []),
     { id: 'actors', label: t.actors },
-    { id: 'risks', label: t.risks },
     { id: 'sources', label: t.sources },
   ];
 
@@ -1127,7 +1054,7 @@ export default function CountryPage() {
 
         {/* ── Framework sections — standing body: Territory · Society · Economy ·
             Political Order · Capacity to Deliver · Security & Diplomacy;
-            dynamic tail: Situation · Actors · Risks (rework §5 order). ── */}
+            dynamic tail: Situation · Actors (rework §5 order; Risk Register removed 2026-07-20). ── */}
 
         {/* 1. Territory */}
         {hasTerritory && (
@@ -1312,82 +1239,10 @@ export default function CountryPage() {
         </FrameworkSection>
         </div>
 
-        {/* 9. Risk Register */}
-        <div data-section="Risk Register" id="risks" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.risks = el; }} icon={AlertTriangle} title={t.risks}>
-          {hasAnalysis ? (
-            <div className="space-y-2">
-              {/* Redesign notice — the risk framing predates the two-phase pipeline and is
-                  being reworked; entries (and the level derived from them) read accordingly.
-                  FR-PLACEHOLDER: French wording below awaits Peggy's review. */}
-              <div className="mb-3 px-3 py-2 border rounded font-body text-xs italic bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900">
-                {language === 'fr'
-                  ? 'Section en cours de remaniement — les entrées actuelles reflètent un cadrage obsolète.'
-                  : 'Under redesign — current entries reflect an outdated framing.'}
-              </div>
-              {/* Derived overall risk level — rule-based, from this country's own register */}
-              {derivedRisk && (
-                <div className="mb-4 flex items-center gap-2 flex-wrap pb-3 border-b border-[var(--cr-divider)]">
-                  <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)]">{t.overallRisk}:</span>
-                  <span className={`font-body text-xs px-2 py-0.5 border rounded ${
-                    derivedRisk.level === 'High'
-                      ? 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900'
-                      : derivedRisk.level === 'Medium'
-                        ? 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900'
-                        : 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900'
-                  }`}>
-                    {derivedRisk.level === 'High' ? t.riskHigh : derivedRisk.level === 'Medium' ? t.riskMedium : t.riskLow}
-                  </span>
-                  {derivedRisk.drivenBy && (
-                    <span className="font-body text-xs text-[var(--cr-muted)] italic">
-                      — {t.drivenBy}: <span className="not-italic font-medium text-[var(--cr-body)]">{derivedRisk.drivenBy}</span>
-                    </span>
-                  )}
-                </div>
-              )}
-              {/* Legend */}
-              <div className="flex items-center gap-4 mb-3 text-[10px] font-body text-[var(--cr-muted)]">
-                <span>{language === 'fr' ? 'Badges :' : 'Badges:'}</span>
-                <span className="px-1.5 py-0.5 border rounded bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900">
-                  {language === 'fr' ? 'Élevé' : 'High'}
-                </span>
-                <span className="px-1.5 py-0.5 border rounded bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900">
-                  {language === 'fr' ? 'Moyen' : 'Med'}
-                </span>
-                <span className="px-1.5 py-0.5 border rounded bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900">
-                  {language === 'fr' ? 'Faible' : 'Low'}
-                </span>
-                <span className="ml-2 italic">{language === 'fr' ? '(Probabilité · Impact)' : '(Probability · Impact)'}</span>
-              </div>
-              {lang!.risks.map((risk) => {
-                // Check if this risk has trend data (Ireland only for now)
-                const riskKey = risk.title.toLowerCase().split(' ').join('-');
-                const trendData = cca3?.toUpperCase() === 'IRL' 
-                  ? irelandRiskTrends[riskKey]
-                  : null;
-                
-                return (
-                  <div key={risk.title}>
-                    <RiskCard risk={risk} language={language} sources={activeSources} />
-                    {trendData && <RiskTrendVisualization trendData={trendData} language={language} />}
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            <>
-              <ComingSoonBlock language={language} />
-              <div className="mt-4 text-[var(--cr-muted)] font-body text-xs leading-relaxed">
-                <p className="font-medium text-[var(--cr-body)] mb-2">
-                  {language === 'fr'
-                    ? 'Chaque risque : Déclencheur · Probabilité · Impact · Horizon · Indicateurs avancés · Atténuation'
-                    : 'Each risk: Trigger · Probability · Impact · Time horizon · Leading indicators · Mitigants'}
-                </p>
-              </div>
-            </>
-          )}
-        </FrameworkSection>
-        </div>
+        {/* Risk Register REMOVED 2026-07-20 (workorder-gap-register.md step 4):
+            replaced by the gap register (capacity.knownAndUnbuilt, rendered in
+            the Capacity section). The correlation prototype page is separate
+            and untouched. */}
 
         {/* 10. Sources */}
         <div id="sources" style={{ scrollMarginTop: 96 }}>

@@ -8,8 +8,6 @@ const jsonBlockKeys = [
   'actors_domestic_fr',
   'actors_external_en',
   'actors_external_fr',
-  'risks_en',
-  'risks_fr',
   'sources',
 ];
 
@@ -155,9 +153,8 @@ function indentBlock(jsonText) {
     .join('\n');
 }
 
-function hasRequiredRiskShape(arr) {
-  return arr.every((r) => r && typeof r === 'object' && typeof r.title === 'string' && typeof r.trigger === 'string');
-}
+// hasRequiredRiskShape REMOVED 2026-07-20 with the Risk Register
+// (workorder-gap-register.md step 4).
 
 function hasRequiredActorShape(arr) {
   return arr.every((a) => a && typeof a === 'object' && typeof a.name === 'string' && typeof a.likelyMoves === 'string');
@@ -187,10 +184,6 @@ function repairFile(filePath, write) {
       continue;
     }
 
-    if (key.startsWith('risks_') && !hasRequiredRiskShape(result.parsed)) {
-      errors.push(`${key}: parsed but risk shape is invalid`);
-    }
-
     if (key.startsWith('actors_') && !hasRequiredActorShape(result.parsed)) {
       errors.push(`${key}: parsed but actor shape is invalid`);
     }
@@ -202,21 +195,8 @@ function repairFile(filePath, write) {
     }
   }
 
-  for (const mustHave of ['risks_en', 'risks_fr']) {
-    const range = findBlockRange(raw, mustHave);
-    if (!range) {
-      errors.push(`${mustHave}: missing required block`);
-      continue;
-    }
-    const result = tryParseArrayBlock(raw.slice(range.contentStart, range.contentEnd));
-    if (!result.ok || !Array.isArray(result.parsed)) {
-      errors.push(`${mustHave}: missing/invalid array`);
-    } else if (result.parsed.length === 0) {
-      // Rework §8: Pass B emits risks EMPTY — populated by the dedicated risks
-      // pass. Empty is the expected pending state, not corruption.
-      notes.push(`${mustHave}: empty — awaits the dedicated risks pass (rework §8.2)`);
-    }
-  }
+  // risks_en/fr required-block check REMOVED 2026-07-20 (Risk Register removed;
+  // the gap register capacity.knownAndUnbuilt is validated via jsonBlockKeys).
 
   const replacementCount = (raw.match(/�/g) || []).length;
   if (replacementCount > 0) {

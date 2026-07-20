@@ -229,14 +229,23 @@ function validateCountryFile(filePath) {
   const jsonTextFields = [
     'actors_domestic_en', 'actors_domestic_fr',
     'actors_external_en', 'actors_external_fr',
-    'risks_en', 'risks_fr',
+    'capacity_knownAndUnbuilt_en', 'capacity_knownAndUnbuilt_fr',
   ];
   for (const k of jsonTextFields) {
     const v = data[k];
     if (typeof v !== 'string' || !v.trim()) continue;
+    // Actors are JSON arrays; the gap register (capacity_knownAndUnbuilt_*) is
+    // a JSON OBJECT {opener, items[], denominator}.
+    const wantsObject = k.startsWith('capacity_knownAndUnbuilt');
     try {
       const parsed = JSON.parse(v);
-      if (!Array.isArray(parsed)) errors.push(`${k}: JSON-in-text must be an array`);
+      if (wantsObject) {
+        if (!parsed || Array.isArray(parsed) || typeof parsed !== 'object') {
+          errors.push(`${k}: JSON-in-text must be an object {opener, items, denominator}`);
+        }
+      } else if (!Array.isArray(parsed)) {
+        errors.push(`${k}: JSON-in-text must be an array`);
+      }
     } catch (err) {
       errors.push(`${k}: JSON-in-text does not parse (${err.message}) — this field renders EMPTY on the site`);
     }
@@ -351,7 +360,7 @@ function validateCountryFile(filePath) {
   }
   // Anchors inside the JSON-in-text layers (actors Layer 2, risk ratings —
   // rework §8): ghost-check any [dot.path] markers in the raw blocks.
-  for (const k of ['actors_domestic_en', 'actors_domestic_fr', 'actors_external_en', 'actors_external_fr', 'risks_en', 'risks_fr']) {
+  for (const k of ['actors_domestic_en', 'actors_domestic_fr', 'actors_external_en', 'actors_external_fr', 'capacity_knownAndUnbuilt_en', 'capacity_knownAndUnbuilt_fr']) {
     const v = data[k];
     if (typeof v !== 'string' || !v.trim()) continue;
     const lang = k.slice(-2);

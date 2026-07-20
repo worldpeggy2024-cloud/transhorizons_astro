@@ -50,10 +50,9 @@ JSON schema expectations:
       "capacity":   { "inheritedTerrain|steering|approvals|delivery|publicServices|productivity": { "en": "... [id]", "fr": "... [id]" } },
       "security":   { "posture|internal|military|transnationalExposure|diplomacy": { "en": "... [id]", "fr": "... [id]" } },
       "situation": { "en": "", "fr": "" },
-      "actors": { "domestic": { "en": [], "fr": [] }, "external": { "en": [], "fr": [] } },
-      "risks": { "en": [], "fr": [] }
+      "actors": { "domestic": { "en": [], "fr": [] }, "external": { "en": [], "fr": [] } }
     }
-    (situation/actors/risks are emitted EMPTY — populated by their dedicated passes)
+    (situation/actors/capacity.knownAndUnbuilt are emitted EMPTY — populated by their dedicated passes; the Risk Register was REMOVED 2026-07-20, gap register replaces it)
 `);
 }
 
@@ -361,8 +360,6 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
     ['actors.domestic.fr', content?.actors?.domestic?.fr, 'fr'],
     ['actors.external.en', content?.actors?.external?.en, 'en'],
     ['actors.external.fr', content?.actors?.external?.fr, 'fr'],
-    ['risks.en', content?.risks?.en, 'en'],
-    ['risks.fr', content?.risks?.fr, 'fr'],
   ]) {
     if (!Array.isArray(arr) || arr.length === 0) continue;
     for (const mk of anchorsLib.extractMarkers(JSON.stringify(arr)).filter((x) => x.type === 'field')) {
@@ -434,11 +431,11 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
     }
   }
 
-  // Actors and risks are EMITTED EMPTY by Pass B (rework §8 — both are
-  // populated by their dedicated two-layer passes, which take the finished
-  // report as input). Empty arrays are the expected state at apply; when
-  // content IS present (a pass output or legacy), shape-check it. Actors
-  // accept engagementMode (rework §8.1) or legacy dealability.
+  // Actors are EMITTED EMPTY by Pass B (rework §8.1 — populated by the
+  // dedicated two-layer actors pass from the finished report). Empty arrays
+  // are the expected state at apply; when content IS present, shape-check it.
+  // Actors accept engagementMode (rework §8.1) or legacy dealability.
+  // (Risk Register REMOVED 2026-07-20 — the gap register replaces it.)
   // TODO(post-migration): drop the legacy-dealability acceptance once every
   // displayed country's actors have been regenerated through the actors pass
   // (engagementMode becomes the only accepted key).
@@ -468,34 +465,7 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
     });
   }
 
-  const riskReq = ['title', 'trigger', 'probability', 'impact', 'timeHorizon', 'leadingIndicators', 'mitigants'];
-  const riskPaths = [
-    ['risks.en', content?.risks?.en],
-    ['risks.fr', content?.risks?.fr],
-  ];
-  for (const [label, arr] of riskPaths) {
-    if (!Array.isArray(arr)) {
-      errors.push(`${label} must be an array (empty until the risks pass runs)`);
-      continue;
-    }
-    if (arr.length === 0) {
-      warnings.push(`${label} is empty — awaits the dedicated risks pass (rework §8.2)`);
-      continue;
-    }
-    arr.forEach((r, i) => {
-      riskReq.forEach((k) => {
-        if (!nonEmptyString(r?.[k])) errors.push(`${label}[${i}].${k} is required`);
-      });
-      if (r && !['High', 'Med', 'Low'].includes(r.probability)) {
-        errors.push(`${label}[${i}].probability must be High|Med|Low`);
-      }
-      if (r && !['High', 'Med', 'Low'].includes(r.impact)) {
-        errors.push(`${label}[${i}].impact must be High|Med|Low`);
-      }
-    });
-  }
 
-  const usedIds = new Set();
   collectCitationIds(content, usedIds);
   // Accepted-to-cite = Pass A sources PLUS calibration-promoted instruments.
   const accepted = new Set([...sourceIds, ...(acceptedExtraIds instanceof Set ? acceptedExtraIds : [])]);
@@ -638,8 +608,6 @@ function buildYaml(payload) {
     yamlBlock('actors_domestic_fr', toJsonBlock(c.actors.domestic.fr)),
     yamlBlock('actors_external_en', toJsonBlock(c.actors.external.en)),
     yamlBlock('actors_external_fr', toJsonBlock(c.actors.external.fr)),
-    yamlBlock('risks_en', toJsonBlock(c.risks.en)),
-    yamlBlock('risks_fr', toJsonBlock(c.risks.fr)),
     yamlBlock('sources', toJsonBlock(sources)),
     '',
   ];
@@ -1131,7 +1099,7 @@ SECURITY & DIPLOMACY (posture composed last; internal → military → transnati
 32. security.diplomacy — treaty alliances; multilateral memberships; territorial disputes; regional flashpoints; per-relationship texture for key bilaterals built on hard citable facts (treaty texts, trade volumes by partner, basing agreements and troop presence, United Nations voting alignment, energy dependence). MUST include the sources that NAME the alliance system — the treaty text, the member list, the basing/presence record; a nameless "alliance network" is an unsupported claim.
 33. security.posture — anchored synthesis of the other four security fields (introduces no facts of its own — needs no sources of its own).
 
-situation (the event layer) — populated by its own dedicated pass; its sources come from the Pass Zero-B event scan (the Events block above), NOT the institutional source-priority list: a primary or authoritative source for EACH event. actors and risks are ALSO populated by dedicated passes AFTER the report exists — do not harvest for them separately; they cite the report's own registry.
+situation (the event layer) — populated by its own dedicated pass; its sources come from the Pass Zero-B event scan (the Events block above), NOT the institutional source-priority list: a primary or authoritative source for EACH event. actors are ALSO populated by a dedicated pass AFTER the report exists — do not harvest for them separately; they cite the report's own registry.
 
 Aim for 30–45 sources total. Ensure ≥ 70% of sources per section are citationType: Fact (primary authors of the data), not Interpretation. Give every source a volatility rating (High | Med | Low — the expected rate of change of the fact it backs, orthogonal to confidence).
 `;
@@ -1258,9 +1226,9 @@ security.transnationalExposure: cross-border flows and non-state entanglements �
 
 security.diplomacy: treaty alliances; multilateral memberships; transactional partners; territorial disputes; regional flashpoints; and PER-RELATIONSHIP TEXTURE for key bilateral relationships, built on hard citable facts (treaty texts, trade volumes by partner, basing agreements and troop presence, United Nations voting alignment, energy dependence, state visits). The character of a relationship is Interpretation ANCHORED to those facts. NAMED-ACTOR RULE applies: an alliance system is its members — name the alliances and the key allies, each cited to treaty text or membership record; a nameless "alliance network" is an under-sourced claim.
 
-actors.domestic, actors.external, risks, the scorecard, scorecardAnchors, and baseline are EMITTED EMPTY — actors and risks are populated afterward by their dedicated two-layer passes (implementation spec §8); the scorecard and baseline by the DERIVATIVES pass after the situation pass installs (amendment 2026-07-19). Emit exactly:
+actors.domestic, actors.external, the gap register capacity.knownAndUnbuilt, the scorecard, scorecardAnchors, and baseline are EMITTED EMPTY — actors are populated afterward by the dedicated two-layer actors pass (implementation spec §8.1); the gap register, scorecard and baseline by the DERIVATIVES pass after the situation pass installs. Emit exactly:
 "actors": { "domestic": { "en": [], "fr": [] }, "external": { "en": [], "fr": [] } }
-"risks": { "en": [], "fr": [] }
+"capacity": { ..., "knownAndUnbuilt": { "en": "", "fr": "" } }
 "scorecard": { "eliteCohesion": "", "socialCohesion": "", "securityLoyalty": "", "economicPressure": "", "protestCapacity": "", "institutionalResilience": "" }
 "scorecardAnchors": {}
 "baseline": { "en": "", "fr": "" }
@@ -1347,13 +1315,12 @@ Approved source IDs from Pass A:
       diplomacy: { en: '', fr: '' },
     },
     // Emitted EMPTY by Pass B — populated by the dedicated situation/actors/
-    // risks passes (rework §8; situation per template §4d) from the finished report.
+    // passes (rework §8; situation per template §4d) from the finished report.
     situation: { en: '', fr: '' },
     actors: {
       domestic: { en: [], fr: [] },
       external: { en: [], fr: [] },
     },
-    risks: { en: [], fr: [] },
   };
 
   const passZero = `# Pass Zero Prompt (calibration) — ${nameEn}
@@ -1570,20 +1537,8 @@ SCHEMA (one object per event)
     console.log('NOTE: content/docs/actors-pass-template.md missing — actors-pass.prompt.md NOT generated (restore the versioned actors extraction prompt template and re-run init; rework §8.1).');
   }
 
-  // Risks pass (rework §8.2): generated from the versioned template, currently
-  // v1.0 — two-layer register (stated stress points → framed risks), closed-book,
-  // run LAST (after situation + derivatives). Same placeholders as actors.
-  const risksTemplatePath = path.join(process.cwd(), 'content', 'docs', 'risks-pass-template.md');
-  if (fs.existsSync(risksTemplatePath)) {
-    const risksPass = fs.readFileSync(risksTemplatePath, 'utf8')
-      .replace(/\{\{CODE\}\}/g, code)
-      .replace(/\{\{NAME_EN\}\}/g, nameEn)
-      .replace(/\{\{NAME_FR\}\}/g, nameFr)
-      .replace(/\{\{TODAY\}\}/g, today);
-    fs.writeFileSync(path.join(jobDir, 'risks-pass.prompt.md'), risksPass, 'utf8');
-  } else {
-    console.log('NOTE: content/docs/risks-pass-template.md missing — risks-pass.prompt.md NOT generated (restore the versioned risks pass template and re-run init; rework §8.2).');
-  }
+  // Risks pass REMOVED 2026-07-20 (workorder-gap-register.md step 4): the gap
+  // register (capacity.knownAndUnbuilt) composes inside the derivatives pass.
 
   console.log(`Created Deepsearch job assets in ${path.relative(process.cwd(), jobDir)}`);
 }

@@ -4,7 +4,7 @@
  * The replacement for the removed Manus-era risk-level and topics facets
  * (author decision 2026-07-19): search matches REAL report content instead of
  * hand-assigned labels. Keywords are derived at build time from the two-phase
- * analysis.yaml files — actor names, situation thread names, risk titles —
+ * analysis.yaml files — actor names, situation thread names —
  * so the index grows exactly as countries are regenerated, and a country can
  * be found by what its report actually says (e.g. "NATO", "Iran",
  * "Lockheed", "tariff").
@@ -44,10 +44,6 @@ function keywordsFor(raw: Raw): string[] {
   // Situation thread names, EN + FR (threads are titled per language)
   for (const key of ['situation_en', 'situation_fr']) {
     for (const th of parseArray(raw[key])) add(th.thread);
-  }
-  // Risk register titles, EN + FR (rated legacy shape and future stress index both carry title)
-  for (const key of ['risks_en', 'risks_fr']) {
-    for (const r of parseArray(raw[key])) add(r.title);
   }
 
   return [...out];

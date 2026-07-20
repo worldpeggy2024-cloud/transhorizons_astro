@@ -65,7 +65,7 @@ const parseJsonArray = (v: unknown): any[] => {
 };
 
 // Situation is the verified event layer: threads-JSON (same JSON-in-text
-// convention as actors/risks) flattened to crawlable lines, or legacy prose
+// convention as actors) flattened to crawlable lines, or legacy prose
 // split into paragraphs. ARRAY ORDER IS SEMANTIC (threads by recency of last
 // activity, events chronologically forward) — never sort or reverse here.
 const situationLines = (v: unknown): string[] => {
@@ -98,7 +98,6 @@ interface LangSeo {
   security: string[];
   situation: string[];
   actors: string[];
-  risks: string[];
   sources: string[];
 }
 
@@ -117,10 +116,6 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
     ...parseJsonArray(data?.[`actors_external_${lang}`]),
   ]
     .map((a) => `${stripCites(a?.name)}: ${stripCites(a?.interests)}`)
-    .filter(nonEmpty);
-
-  const risks = parseJsonArray(data?.[`risks_${lang}`])
-    .map((r) => `${stripCites(r?.title)} — ${stripCites(r?.trigger)}`)
     .filter(nonEmpty);
 
   const sources = parseJsonArray(data?.sources)
@@ -149,7 +144,7 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
   })();
 
   // Rework §5 order: Baseline; Territory · Society · Economy · Political Order ·
-  // Capacity to Deliver · Security & Diplomacy; Situation · Actors · Risks.
+  // Capacity to Deliver · Security & Diplomacy; Situation · Actors. (Risk Register removed 2026-07-20.)
   // Executive snapshot REMOVED (its content lives in the section openers).
   return {
     baseline: [g('baseline')].filter(Boolean),
@@ -201,7 +196,6 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
     ].filter(Boolean),
     situation: situationLines(data?.[`situation_${lang}`]),
     actors,
-    risks,
     sources,
   };
 }
@@ -220,7 +214,6 @@ const HEADINGS = {
     society: 'Society',
     security: 'Security & Diplomacy',
     actors: 'Key Actors',
-    risks: 'Risk Register',
     sources: 'Sources',
   },
   fr: {
@@ -234,7 +227,6 @@ const HEADINGS = {
     society: 'Société',
     security: 'Sécurité & Diplomatie',
     actors: 'Carte des acteurs',
-    risks: 'Registre des risques',
     sources: 'Sources',
   },
 } as const;
@@ -260,9 +252,9 @@ const blocks = [
 ];
 
 // Ordered sections for the old-browser reading view — mirrors the six-peer
-// schema plus snapshot / situation / actors / risks / sources. `type` picks a
-// bullet list vs prose paragraphs; `risks` flags the caveat below.
-type ReadingSection = { title: string; items: string[]; type: 'list' | 'prose'; risks?: boolean };
+// schema plus snapshot / situation / actors / sources. `type` picks a
+// bullet list vs prose paragraphs.
+type ReadingSection = { title: string; items: string[]; type: 'list' | 'prose' };
 const readingSections = (seo: LangSeo, h: typeof HEADINGS.en): ReadingSection[] =>
   // Rework §5 order: Baseline; standing body Territory → Security; dynamic tail.
   ([
@@ -275,17 +267,11 @@ const readingSections = (seo: LangSeo, h: typeof HEADINGS.en): ReadingSection[] 
     { title: h.security, items: seo.security, type: 'prose' },
     { title: h.situation, items: seo.situation, type: 'list' },
     { title: h.actors, items: seo.actors, type: 'list' },
-    { title: h.risks, items: seo.risks, type: 'list', risks: true },
     { title: h.sources, items: seo.sources, type: 'list' },
   ] as ReadingSection[]).filter((s) => s.items && s.items.length > 0);
 
 // Risk-register caveat mirrors the visible page (framing under redesign).
 // FR-PLACEHOLDER: French wording awaits Peggy's review.
-const riskNotice = {
-  en: 'Under redesign — current entries reflect an outdated framing.',
-  fr: 'Section en cours de remaniement — les entrées actuelles reflètent un cadrage obsolète.',
-} as const;
-
 const pageTitle = seoEn
   ? `${nameEn} — Country Situation Report | TransHorizons`
   : 'TransHorizons — World Views';
@@ -363,16 +349,7 @@ const pageDesc =
               <ul>{seo.actors.map((a) => <li>{a}</li>)}</ul>
             </section>
           )}
-          {seo.risks.length > 0 && (
-            <section>
-              <h2>{h.risks}</h2>
-              {/* Mirrors the visible-page notice. FR-PLACEHOLDER: French wording awaits Peggy's review. */}
-              <p><em>{lang === 'fr'
-                ? 'Section en cours de remaniement — les entrées actuelles reflètent un cadrage obsolète.'
-                : 'Under redesign — current entries reflect an outdated framing.'}</em></p>
-              <ul>{seo.risks.map((r) => <li>{r}</li>)}</ul>
-            </section>
-          )}
+          {/* Risk Register REMOVED 2026-07-20 (gap register lives in Capacity). */}
           {seo.sources.length > 0 && (
             <section>
               <h2>{h.sources}</h2>
@@ -398,7 +375,6 @@ const pageDesc =
           {readingSections(seo, h).map((sec) => (
             <div>
               <h2 class="thf-h2">{sec.title}</h2>
-              {sec.risks && <p class="thf-note">{lang === 'fr' ? riskNotice.fr : riskNotice.en}</p>}
               {sec.type === 'list'
                 ? <ul class="thf-list">{sec.items.map((it) => <li>{it}</li>)}</ul>
                 : sec.items.map((it) => <p class="thf-p">{it}</p>)}

@@ -29,7 +29,7 @@ Work from the English fields (`_en`) as the primary text. The French fields (`_f
 
 **The current `actors_domestic_en/fr` and `actors_external_en/fr` fields are NOT input to this extraction.** They represent the prior structured actors field that this extraction pass is intended to replace. Ignore them entirely; they must not influence which actors you extract, aggregate, or characterise. The extraction is anchored exclusively to the six-peer substantive content plus the `situation` field. Reading them would let old-schema thinking leak into the new extraction and would let claims that are not grounded in the report's substantive analysis contaminate the output.
 
-Same rule for the existing `risks_en/fr` field: it is not input. Do not use it to identify actors.
+(The former `risks_en/fr` field was removed 2026-07-20; the gap register `capacity_knownAndUnbuilt_*` is likewise NOT input — it is a derivative.)
 
 ---
 

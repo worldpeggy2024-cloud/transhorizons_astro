@@ -152,7 +152,13 @@ export interface LangContent {
     domestic: ActorEntry[];
     external: ActorEntry[];
   };
-  risks: RiskEntry[];
+  /**
+   * LEGACY — the Risk Register was REMOVED 2026-07-20 (workorder-gap-register.md;
+   * replaced by capacity.knownAndUnbuilt). Optional so legacy hardcoded country
+   * data files still typecheck; nothing renders it. TODO(post-migration): strip
+   * the arrays from the hardcoded .ts files and delete RiskEntry.
+   */
+  risks?: RiskEntry[];
   /** Per-language sources (old format). For new-format countries, use top-level AnalysisContent.sources instead. */
   sources?: SourceEntry[];
 }

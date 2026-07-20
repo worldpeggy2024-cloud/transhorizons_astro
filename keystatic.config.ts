@@ -815,16 +815,11 @@ export default config({
         }),
 
         // ── Risks ─────────────────────────────────────────────────────────
-        risks_en: fields.text({
-          label: 'Risks (EN)',
-          multiline: true,
-          description: 'JSON array. One block edit for all risks.',
-        }),
-        risks_fr: fields.text({
-          label: 'Risks (FR)',
-          multiline: true,
-          description: 'Tableau JSON. Edition en un seul bloc pour tous les risques.',
-        }),
+        // risks_en/fr REMOVED 2026-07-20 (workorder-gap-register.md step 4):
+        // the Risk Register is replaced by the gap register
+        // (capacity_knownAndUnbuilt_*). YAML keys were stripped from all 13
+        // country files in the same change (Keystatic hard-fails on
+        // undeclared keys).
 
         // ── Sources (Shared Registry) ─────────────────────────────────────
         sources: fields.text({
