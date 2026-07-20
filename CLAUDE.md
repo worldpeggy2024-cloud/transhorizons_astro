@@ -73,8 +73,9 @@
     (empty/missing target) = hard error; compose-order + allowed-set rules; baseline carries no anchors;
     anchor parity EN/FR is manual like citation parity.
   - Pass B emits situation, actors.*, risks, scorecard, and baseline EMPTY — each is populated by its own
-    dedicated pass working from the finished report (situation pass §4d; two-layer actors/risks passes per
-    rework §8; derivatives pass for scorecard + baseline). Pass order: B → situation (+ approved
+    dedicated pass working from the finished report (situation pass §4d; two-layer actors pass per rework
+    §8.1; Layer-1 stress-index risks pass, v2.0 draft; derivatives pass for scorecard + baseline). Pass
+    order: B → situation (+ approved
     peerCorrections) → derivatives → actors/risks. The situation pass also emits passNotes (per-event
     kept/folded/dropped verdicts) — the validators treat it as the event-scan engagement record. Actors
     Layer 2 renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
@@ -88,19 +89,28 @@
     together then.
   - Declare EVERY new field in the `countries` collection schema BEFORE writing content — the strip rule
     eats undeclared fields silently.
-- riskLevel (globe filter): DERIVED by rule from the country's own risk register, never assigned by hand or
-  AI fiat. Strict rule: High = >=1 risk that is High on BOTH probability and impact; Medium = none High-both
-  but >=1 risk touching High on either axis; Low = otherwise. region = static table; topics =
-  pipeline-proposed, human-confirmed. The "report available" marker must track two-phase-regenerated status,
-  not mere file existence.
+- Risk notion (REWORKED 2026-07-19, study open): the globe risk-level FILTER FACET is REMOVED — it was a
+  Manus-era recycling of the correlation-matrix labels (region + topics facets remain; keyword search over
+  report content is the studied replacement). The RISKS PASS is Layer-1 only: a structured, CITED stress
+  index (dependency / fragility / capacity-gap / adverse-trend) of what the report itself asserts —
+  risks-pass-template.md v2.0, DRAFT pending author approval; the former Layer 2 (trigger, horizon,
+  probability x impact, mitigants), the aggregate riskLevel, and the correlation cascades are PARKED
+  pending study. deriveRiskLevel keeps the strict High/Med/Low rule but returns null for empty or unrated
+  registers ('Low' means assessed-low, never nothing-to-assess); the on-page chip renders only from rated
+  legacy registers (CAN). countryMetadata.riskCategory is legacy-unused. Installing a stress index needs a
+  renderer for the new entry shape first (RiskCard expects the old rated shape). region = static table;
+  topics = pipeline-proposed, human-confirmed. The "report available" marker must track
+  two-phase-regenerated status, not mere file existence.
 - Two layers: present-state (sourced, validated = analysis.yaml) and a SEPARATE, openly-speculative
   trajectory/extrapolation layer (own contract: plural, anchored to present-state facts, never sourced, never
   a single forecast). Trajectories branch PRIMARILY on capacity.* (knowledge isn't the constraint, capacity
   is) and lead from both substrates — society.* (human) and territory.* (physical); settler-state
   resource/land branches anchor to political_constitutionalSubstrate. Moral guard: a capacity gap is
   inherited/unjustly-distributed, never merit or desert. Never mix trajectory content into the sourced body.
-  The Manus-era risk-cascade visualizations belong to the trajectory layer and are PARKED until per-country
-  risk registers are trustworthy.
+  The Manus-era risk-cascade visualizations (/risk-correlations, hardcoded riskCorrelations.ts data) stay
+  VISIBLE as a prototype by author decision (2026-07-19) while the correlation mechanism is re-derived some
+  other way — the displayed cascades are Manus-era illustrative data, not register-derived; do not extend
+  them.
 - SSR: country pages have a dual-renderer SEO layer at src/pages/country/[cca3].astro (hidden SEO div +
   LegacyReveal reading view + AppShell client:only="react"; do NOT switch to client:load). It deliberately
   SHADOWS [...slug].astro for /country/* — treat any change there as affecting the catch-all. Crawlability is

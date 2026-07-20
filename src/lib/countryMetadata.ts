@@ -7,6 +7,15 @@
 export interface CountryMetadata {
   cca3: string;
   region: 'North America' | 'South America' | 'Europe' | 'Africa' | 'Middle East' | 'Asia-Pacific';
+  /**
+   * LEGACY-UNUSED since 2026-07-19 (author decision): the risk-level filter
+   * facet was removed — the tri-level label was a Manus-era recycling of the
+   * correlation-matrix labels and no UI reads this field any more. Values are
+   * hand-set Manus-era assignments EXCEPT where a comment says derived
+   * (CAN, BRA). Retained while the risk-notion study (aggregate level,
+   * Layer-2 framing, correlations) is open; delete or repopulate when it
+   * concludes.
+   */
   riskCategory: 'High' | 'Medium' | 'Low';
   topics: ('Geopolitics' | 'Resources' | 'Technology')[];
 }
@@ -197,6 +206,6 @@ export const REGIONS = [
   'Asia-Pacific',
 ] as const;
 
-export const RISK_CATEGORIES = ['Low', 'Medium', 'High'] as const;
+// RISK_CATEGORIES export removed 2026-07-19 with the filter facet (no consumers).
 
 export const TOPICS = ['Geopolitics', 'Resources', 'Technology'] as const;

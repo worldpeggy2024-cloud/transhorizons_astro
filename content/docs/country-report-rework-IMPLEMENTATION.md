@@ -287,3 +287,26 @@ summary of the report it fronts.
 - Contracts unchanged: six axes High|Med|Low, Interpretation, ≥1 resolvable anchor + bilingual
   rationale per axis, ghost anchors hard-error; baseline short, present-state, no new facts, no
   anchors, never "Outlook".
+
+---
+
+## Amendment 2026-07-19b — risk notion reworked (decided; study open)
+
+Partially supersedes §8.2. Decided after the author traced the "globe risk" notion to its
+Manus-era origin: correlation-matrix labels recycled into a filter facet, never derived from
+anything and never driving the globe.
+
+- The globe **risk-level filter facet is removed** (region + topics remain; keyword search over
+  report content is the studied replacement).
+- The **risks pass is Layer 1 only**: a structured, cited **stress index** — every dependency,
+  fragility, capacity gap, and adverse trend the report itself asserts (risks-pass-template.md
+  v2.0, draft pending author approval). The former **Layer 2** (trigger, horizon, probability ×
+  impact, mitigants — the judgment layer), the **aggregate riskLevel**, and the **correlation
+  cascades** are PARKED pending study.
+- `deriveRiskLevel` keeps the strict rule but returns null for empty or unrated registers —
+  'Low' means assessed-low, never nothing-to-assess. The on-page chip renders only from rated
+  legacy registers (CAN). `countryMetadata.riskCategory` is legacy-unused.
+- `/risk-correlations` stays visible as a prototype by author decision while the correlation
+  mechanism is re-derived some other way; its displayed data is Manus-era illustrative.
+- Installing a stress index requires a renderer for the new entry shape (title, kind, statement,
+  loci, anchors, deadline?) — built with the first install, not before the design is approved.

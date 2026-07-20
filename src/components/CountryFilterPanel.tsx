@@ -6,11 +6,13 @@
 
 import { ChevronDown, ChevronUp, X, Info } from 'lucide-react';
 import { useState, useRef } from 'react';
-import { REGIONS, RISK_CATEGORIES, TOPICS } from '@/lib/countryMetadata';
+import { REGIONS, TOPICS } from '@/lib/countryMetadata';
 
+// Risk-level facet REMOVED 2026-07-19 (author decision): the tri-level label was
+// a Manus-era recycling of the correlation-matrix labels; region + topics remain
+// and keyword search is the studied replacement.
 export interface FilterState {
   regions: Set<string>;
-  riskCategories: Set<string>;
   topics: Set<string>;
 }
 
@@ -27,7 +29,6 @@ export default function CountryFilterPanel({
 }: CountryFilterPanelProps) {
   const [expandedSections, setExpandedSections] = useState({
     regions: true,
-    risks: true,
     topics: true,
   });
   const [showTooltip, setShowTooltip] = useState(false);
@@ -40,10 +41,9 @@ export default function CountryFilterPanel({
     }));
   };
 
-  const toggleFilter = (type: 'regions' | 'riskCategories' | 'topics', value: string) => {
+  const toggleFilter = (type: 'regions' | 'topics', value: string) => {
     const newFilters = {
       regions: new Set(filters.regions),
-      riskCategories: new Set(filters.riskCategories),
       topics: new Set(filters.topics),
     };
     const set = newFilters[type];
@@ -60,14 +60,12 @@ export default function CountryFilterPanel({
   const clearAllFilters = () => {
     onFiltersChange({
       regions: new Set(),
-      riskCategories: new Set(),
       topics: new Set(),
     });
   };
 
-  const hasActiveFilters = 
-    filters.regions.size > 0 || 
-    filters.riskCategories.size > 0 || 
+  const hasActiveFilters =
+    filters.regions.size > 0 ||
     filters.topics.size > 0;
 
   return (
@@ -104,32 +102,8 @@ export default function CountryFilterPanel({
                     Country Filter
                   </p>
 
-                  {/* Risk Level */}
-                  <div className="space-y-1.5">
-                    <p className="text-white/90 text-[11px]">
-                      This categorizes each country based on geopolitical, economic, and systemic stability.
-                    </p>
-                    <ul className="space-y-1 pl-1">
-                      <li className="flex gap-1.5">
-                        <span className="text-red-400 shrink-0">•</span>
-                        <span><span className="text-white/90">High risk:</span> Countries with active conflicts, political instability, or major resource/technology vulnerabilities (e.g., Ukraine, Iran, Venezuela)</span>
-                      </li>
-                      <li className="flex gap-1.5">
-                        <span className="text-amber-400 shrink-0">•</span>
-                        <span><span className="text-white/90">Medium risk:</span> Countries with emerging tensions or moderate structural challenges (e.g., Turkey, Pakistan, Brazil)</span>
-                      </li>
-                      <li className="flex gap-1.5">
-                        <span className="text-emerald-400 shrink-0">•</span>
-                        <span><span className="text-white/90">Low risk:</span> Stable democracies with predictable governance and lower geopolitical exposure (e.g., Canada, Germany, Japan)</span>
-                      </li>
-                    </ul>
-                    <p className="text-white/50 text-[10px] italic">
-                      The risk level is a summary assessment you assign to each country based on your analytical judgment.
-                    </p>
-                  </div>
-
-                  {/* Divider */}
-                  <div className="border-t border-white/10 pt-2 space-y-1.5">
+                  {/* Risk-level explainer removed with the facet (2026-07-19). */}
+                  <div className="pt-1 space-y-1.5">
                     <p className="text-white/90 text-[11px] font-medium">
                       "Filter by analysis focus" (Geopolitics / Resources / Technology):
                     </p>
@@ -158,7 +132,7 @@ export default function CountryFilterPanel({
                   {/* Example */}
                   <div className="border-t border-white/10 pt-2">
                     <p className="text-white/40 text-[10px] font-mono">
-                      CHN: &#123; region: 'Asia-Pacific', riskLevel: 'High', topics: ['Geopolitics', 'Technology', 'Resources'] &#125;
+                      CHN: &#123; region: 'Asia-Pacific', topics: ['Geopolitics', 'Technology', 'Resources'] &#125;
                     </p>
                   </div>
                 </div>
@@ -205,40 +179,6 @@ export default function CountryFilterPanel({
                   />
                   <span className="text-white/60 font-body text-xs group-hover:text-white transition-colors">
                     {region}
-                  </span>
-                </label>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Risk Categories */}
-        <div className="border-b border-white/5">
-          <button
-            onClick={() => toggleSection('risks')}
-            className="w-full px-4 py-3 flex items-center justify-between hover:bg-white/5 transition-colors"
-          >
-            <span className="text-white/70 font-body text-xs font-medium tracking-wide uppercase">
-              Risk Level
-            </span>
-            {expandedSections.risks ? (
-              <ChevronUp size={14} className="text-white/40" />
-            ) : (
-              <ChevronDown size={14} className="text-white/40" />
-            )}
-          </button>
-          {expandedSections.risks && (
-            <div className="px-4 py-2 space-y-2 bg-white/2">
-              {RISK_CATEGORIES.map(category => (
-                <label key={category} className="flex items-center gap-3 cursor-pointer group">
-                  <input
-                    type="checkbox"
-                    checked={filters.riskCategories.has(category)}
-                    onChange={() => toggleFilter('riskCategories', category)}
-                    className="w-4 h-4 accent-[#7D1A2E] cursor-pointer"
-                  />
-                  <span className="text-white/60 font-body text-xs group-hover:text-white transition-colors">
-                    {category}
                   </span>
                 </label>
               ))}

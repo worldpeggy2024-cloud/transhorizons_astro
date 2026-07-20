@@ -19,6 +19,15 @@
  * rule inline:
  *   1. the globe/filter meta (countryMetadata) to stamp riskCategory, and
  *   2. CountryPage, for the self-justifying on-page label ("High — driven by …").
+ *
+ * STATUS 2026-07-19 (author decision): the globe risk-level FACET is removed —
+ * consumer (1) is gone; riskCategory in countryMetadata is legacy-unused. The
+ * on-page chip (2) remains for registers that carry rated entries (CAN). The
+ * aggregate-level notion, the Layer-2 probability/impact framing, and the
+ * correlation cascades are ALL under study; the risks pass is being reworked
+ * to a Layer-1 cited stress index (risks-pass-template v2.0 draft), which
+ * carries no ratings — an unrated or empty register derives NO level (null),
+ * never a default 'Low'.
  */
 
 export type RiskLevel = 'High' | 'Medium' | 'Low';
@@ -39,8 +48,14 @@ const isHigh = (v: unknown): boolean => String(v ?? '').trim().toLowerCase() ===
 
 export function deriveRiskLevel(
   risks: readonly RiskLike[] | undefined | null,
-): DerivedRiskLevel {
+): DerivedRiskLevel | null {
   const list = Array.isArray(risks) ? risks : [];
+
+  // No register, or a register with no rated entries (the Layer-1 stress
+  // index carries none): no level. 'Low' must mean "assessed low", never
+  // "nothing to assess".
+  const rated = list.filter((r) => String(r.probability ?? '').trim() || String(r.impact ?? '').trim());
+  if (rated.length === 0) return null;
 
   const highOnBoth = list.filter((r) => isHigh(r.probability) && isHigh(r.impact));
   if (highOnBoth.length > 0) {

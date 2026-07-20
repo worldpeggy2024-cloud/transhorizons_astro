@@ -120,7 +120,6 @@ export default function WorldAnalysis() {
   const [showCountryDisclaimer, setShowCountryDisclaimer] = useState(false);
   const [filters, setFilters]         = useState<FilterState>({
     regions: new Set(),
-    riskCategories: new Set(),
     topics: new Set(),
   });
   const [highlightedCard, setHighlightedCard] = useState<string | null>(null);
@@ -356,11 +355,6 @@ export default function WorldAnalysis() {
         
         // Check region filter
         if (filters.regions.size > 0 && !filters.regions.has(meta.region)) {
-          return false;
-        }
-        
-        // Check risk category filter
-        if (filters.riskCategories.size > 0 && !filters.riskCategories.has(meta.riskCategory)) {
           return false;
         }
         
@@ -632,7 +626,7 @@ export default function WorldAnalysis() {
               <button
                 onClick={() => setShowFilters(!showFilters)}
                 className={`shrink-0 p-2 border transition-colors ${
-                  showFilters || (filters.regions.size > 0 || filters.riskCategories.size > 0 || filters.topics.size > 0)
+                  showFilters || (filters.regions.size > 0 || filters.topics.size > 0)
                     ? 'border-[#7D1A2E] bg-[#7D1A2E]/10 text-[#7D1A2E]'
                     : 'border-white/10 text-white/40 hover:text-white/60'
                 }`}
@@ -644,8 +638,8 @@ export default function WorldAnalysis() {
             <div className="flex items-start gap-1.5">
               <p className="text-white/40 font-body text-[10px] leading-relaxed flex-1">
                 {fr
-                  ? 'Filtrez par région géographique, niveau de risque (faible/moyen/élevé) et domaines d\'analyse (géopolitique, ressources, technologie).'
-                  : 'Filter by geographic region, risk level (low/medium/high), and analysis focus (geopolitics, resources, technology).'}
+                  ? 'Filtrez par région géographique et domaines d\'analyse (géopolitique, ressources, technologie).'
+                  : 'Filter by geographic region and analysis focus (geopolitics, resources, technology).'}
               </p>
               {/* Info tooltip */}
               <div
@@ -671,34 +665,12 @@ export default function WorldAnalysis() {
                         {fr ? 'Filtre par pays' : 'Country Filter'}
                       </p>
 
-                      <div className="space-y-1.5">
-                        <p className="text-white/90 text-[11px]">
-                          {fr
-                            ? 'Stabilité géopolitique, économique et systémique.'
-                            : 'Geopolitical, economic, and systemic stability.'}
-                        </p>
-                        <ul className="space-y-1 pl-1">
-                          <li className="flex gap-1.5">
-                            <span className="text-red-400 shrink-0">•</span>
-                            <span><span className="text-white/90">{fr ? 'Risque élevé :' : 'High risk:'}</span> {fr ? 'conflits actifs, instabilité politique ou vulnérabilités majeures en ressources/technologie' : 'active conflicts, political instability, or major resource/technology vulnerabilities'}</span>
-                          </li>
-                          <li className="flex gap-1.5">
-                            <span className="text-amber-400 shrink-0">•</span>
-                            <span><span className="text-white/90">{fr ? 'Risque moyen :' : 'Medium risk:'}</span> {fr ? 'tensions émergentes ou défis structurels modérés' : 'emerging tensions or moderate structural challenges'}</span>
-                          </li>
-                          <li className="flex gap-1.5">
-                            <span className="text-emerald-400 shrink-0">•</span>
-                            <span><span className="text-white/90">{fr ? 'Risque faible :' : 'Low risk:'}</span> {fr ? 'démocraties stables à gouvernance prévisible et faible exposition géopolitique' : 'stable democracies with predictable governance and lower geopolitical exposure'}</span>
-                          </li>
-                        </ul>
-                        <p className="text-white/50 text-[10px] italic">
-                          {fr
-                            ? 'Évaluation sommaire par jugement analytique.'
-                            : 'Summary assessment assigned based on analytical judgment.'}
-                        </p>
-                      </div>
-
-                      <div className="border-t border-white/10 pt-2 space-y-1.5">
+                      {/* Risk-level facet REMOVED 2026-07-19 (author decision):
+                          the tri-level label was a Manus-era recycling of the
+                          correlation-matrix labels and filtered nothing real.
+                          Region + topics remain; keyword search is the studied
+                          replacement. */}
+                      <div className="pt-1 space-y-1.5">
                         <p className="text-white/90 text-[11px] font-medium">
                           {fr
                             ? '"Axe d\'analyse" (Géopolitique / Ressources / Technologie) :'
@@ -734,7 +706,7 @@ export default function WorldAnalysis() {
                         <p className="text-white/40 text-[10px] font-mono">
                           {fr
                             ? 'Dans le fichier de métadonnées, chaque pays est catégorisé; p.ex. :'
-                            : 'In the meta file, each country has assignments like:'} CHN: region: 'Asia-Pacific', riskLevel: 'High', topics: ['Geopolitics', 'Technology', 'Resources'] &#125;
+                            : 'In the meta file, each country has assignments like:'} CHN: region: 'Asia-Pacific', topics: ['Geopolitics', 'Technology', 'Resources'] &#125;
                         </p>
                       </div>
                     </div>
