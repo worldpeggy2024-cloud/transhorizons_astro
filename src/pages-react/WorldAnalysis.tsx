@@ -343,9 +343,8 @@ export default function WorldAnalysis() {
     }
     
     // Apply metadata filters
-    const hasActiveFilters = 
-      filters.regions.size > 0 || 
-      filters.riskCategories.size > 0 || 
+    const hasActiveFilters =
+      filters.regions.size > 0 ||
       filters.topics.size > 0;
     
     if (hasActiveFilters) {
