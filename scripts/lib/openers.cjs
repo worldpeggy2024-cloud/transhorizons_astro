@@ -68,9 +68,20 @@ const OPENER_RULES = {
     window: 300,
     hint: 'must open with the overall security posture (defensive / expeditionary / neutral / alliance-dependent) and diplomatic orientation (aligned / non-aligned / hedging)',
   },
+  // Gap register (capacity.knownAndUnbuilt, 2026-07-20): the opener declares the
+  // DOCUMENTATION BASE the register rests on — audit institution, fiscal/budget
+  // office, statutory review bodies, statistics series, or their stated absence.
+  // The field is JSON-in-text; the opener string sits at the head of the JSON,
+  // inside the heuristic window.
+  knownAndUnbuilt: {
+    re: /audit|auditor|comptroller|accountability office|budget office|fiscal council|statutory review|evaluation|statistic|self-assessment|oversight|inspector|documentation base|documents itself|vérificat|bureau du budget|conseil budgétaire|examen statutaire|évaluation|statistique|autoévaluation|surveillance|inspecteur/i,
+    window: 340,
+    hint: 'must open by declaring the documentation base the register rests on (audit institution / fiscal or budget office / statutory review bodies / statistics series — or their absence; a thin base is the finding)',
+  },
 };
 
-// [dot-path, rule kind] — nine enforced openers, NEW field names.
+// [dot-path, rule kind] — TEN enforced openers, NEW field names
+// (nine from the rework §3/§9 + capacity.knownAndUnbuilt, 2026-07-20).
 const OPENER_FIELDS = [
   ['territory.geography', 'geography'],
   ['territory.climate', 'climate'],
@@ -81,6 +92,7 @@ const OPENER_FIELDS = [
   ['political.constitutionalSubstrate', 'substrate'],
   ['capacity.inheritedTerrain', 'inheritedTerrain'],
   ['security.posture', 'posture'],
+  ['capacity.knownAndUnbuilt', 'knownAndUnbuilt'],
 ];
 
 function openerProblem(kind, text) {

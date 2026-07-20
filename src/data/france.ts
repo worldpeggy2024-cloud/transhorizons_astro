@@ -116,6 +116,12 @@ export interface LangContent {
     /** New (rework §3): realised record running continuous service systems. */
     publicServices?: string;
     productivity: string;
+    /**
+     * Gap register (2026-07-20, workorder-gap-register.md): "known and unbuilt" —
+     * anchored synthesis composed by the derivatives pass, NOT Pass B. Parsed
+     * from JSON-in-text; null until the pass runs (render nothing then).
+     */
+    knownAndUnbuilt?: KnownAndUnbuiltRegister | null;
   };
   /**
    * Society section — top-level peer of political/economy/security, positioned
@@ -149,6 +155,27 @@ export interface LangContent {
   risks: RiskEntry[];
   /** Per-language sources (old format). For new-format countries, use top-level AnalysisContent.sources instead. */
   sources?: SourceEntry[];
+}
+
+/** Gap register item — a shortfall the report itself asserts (close paraphrase). */
+export interface GapRegisterItem {
+  /** One sentence, the report speaking, with inline [markers] preserved. */
+  gap: string;
+  /** [dot.path] field(s) and [source-id](s) the item rests on. */
+  anchor: string[];
+  /** When first officially identified / span given, cited — or 'report-silent'. */
+  since: string;
+  /** never-attempted | announced-not-implemented | attempted-and-failed | in-progress-unclosed (Interpretation). */
+  class: string;
+}
+
+/** capacity.knownAndUnbuilt — the gap register (anchored synthesis, derivatives pass). */
+export interface KnownAndUnbuiltRegister {
+  /** Opener declaring the documentation base the register rests on. */
+  opener: string;
+  items: GapRegisterItem[];
+  /** The guard's denominator sentence (capacity is inherited, never deserved). */
+  denominator?: string;
 }
 
 export interface ActorEntry {

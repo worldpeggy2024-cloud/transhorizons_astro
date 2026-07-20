@@ -44,6 +44,9 @@ const FIELD_COMPOSE_ORDER = [
   'security.internal', 'security.military', 'security.transnationalExposure',
   'security.diplomacy', 'security.posture',
   'situation',
+  // Gap register (2026-07-20): composed by the derivatives pass AFTER the
+  // situation layer, so it sits last and may anchor any field above it.
+  'capacity.knownAndUnbuilt',
 ];
 
 const FIELD_INDEX = new Map(FIELD_COMPOSE_ORDER.map((p, i) => [p, i]));

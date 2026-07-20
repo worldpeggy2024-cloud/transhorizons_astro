@@ -131,6 +131,23 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
     )
     .filter(nonEmpty);
 
+  // Gap register (capacity.knownAndUnbuilt, 2026-07-20): JSON-in-text object;
+  // SEO surfaces its prose (opener, item gaps, denominator) as plain lines.
+  const gapRegisterLines = (() => {
+    const v = data?.[`capacity_knownAndUnbuilt_${lang}`];
+    if (typeof v !== 'string' || !v.trim().startsWith('{')) return [];
+    try {
+      const p = JSON.parse(v);
+      return [
+        stripCites(p?.opener),
+        ...(Array.isArray(p?.items) ? p.items.map((i) => stripCites(i?.gap)) : []),
+        stripCites(p?.denominator),
+      ].filter(nonEmpty);
+    } catch {
+      return [];
+    }
+  })();
+
   // Rework §5 order: Baseline; Territory · Society · Economy · Political Order ·
   // Capacity to Deliver · Security & Diplomacy; Situation · Actors · Risks.
   // Executive snapshot REMOVED (its content lives in the section openers).
@@ -173,6 +190,7 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
       g('capacity_delivery'),
       g('capacity_publicServices'),
       g('capacity_productivity'),
+      ...gapRegisterLines,
     ].filter(Boolean),
     security: [
       g('security_posture'),

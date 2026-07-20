@@ -693,6 +693,16 @@ export default config({
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),
+        capacity_knownAndUnbuilt_en: fields.text({
+          label: 'Capacity: Known and unbuilt (EN) — gap register, composed by the derivatives pass',
+          multiline: true,
+          description: 'JSON object {opener, items[{gap,anchor,since,class}], denominator}. Empty until the derivatives pass runs.',
+        }),
+        capacity_knownAndUnbuilt_fr: fields.text({
+          label: 'Capacity: Known and unbuilt (FR) — gap register, composed by the derivatives pass',
+          multiline: true,
+          description: 'Objet JSON {opener, items, denominator}. Vide jusqu’au passage des dérivés.',
+        }),
         capacity_permitting_en: fields.text({
           label: 'Capacity: Permitting (EN) — LEGACY (superseded by Approvals)',
           multiline: true,

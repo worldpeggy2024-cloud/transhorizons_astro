@@ -56,7 +56,12 @@
     stabilityDrivers (force loyalty AND control) / shockAbsorbers / constitutionalSubstrate /
     stateStructure (new — admin divisions, NEVER in substrate).
   - CAPACITY TO DELIVER (renamed from State Capacity): inheritedTerrain (new, anchored synthesis, merit-gap
-    guard) / steering (new) / approvals (RENAMES permitting) / delivery / publicServices (new) / productivity.
+    guard) / steering (new) / approvals (RENAMES permitting) / delivery / publicServices (new) / productivity /
+    knownAndUnbuilt (GAP REGISTER, added 2026-07-20 per workorder-gap-register.md: JSON-in-text
+    {opener, items[{gap,anchor,since,class}], denominator}; anchored synthesis, no new facts; emitted EMPTY
+    by Pass B, composed by the derivatives pass; opener declares the DOCUMENTATION BASE; four-test gate
+    asserted/gap-not-condition/internal/open; classes never-attempted | announced-not-implemented |
+    attempted-and-failed | in-progress-unclosed; carries the inherited-capacity denominator guard).
   - SECURITY & DIPLOMACY: posture (new, anchored synthesis, displays first, composed LAST) / internal /
     military (new) / transnationalExposure (new) / diplomacy.
   - NO executive snapshot (removed; content lives in the section openers). baseline_en/fr is a derivative and
@@ -64,10 +69,11 @@
     baseline AND the scorecard (values + scorecard_anchors) are composed by the dedicated DERIVATIVES pass
     (derivatives-pass.prompt.md, generated at init), run AFTER the situation pass installs and its peer
     corrections are approved — Pass B emits both EMPTY; the page hides the Quick scorecard while empty.
-  - NINE enforced openers (heuristic-gated, scripts/lib/openers.cjs — hard errors at apply, warnings at
+  - TEN enforced openers (heuristic-gated, scripts/lib/openers.cjs — hard errors at apply, warnings at
     audit): territory.geography, territory.climate, society.demographics, economy.realEconomy,
     economy.politicalEconomy, political.powerStructure, political.constitutionalSubstrate,
-    capacity.inheritedTerrain, security.posture. situation has NO opener.
+    capacity.inheritedTerrain, security.posture + capacity.knownAndUnbuilt (documentation-base opener,
+    gated only once composed — empty is pending, not a violation). situation has NO opener.
   - ANCHORS (scripts/lib/anchors.cjs, shared by both validators): derived claims carry [dot.path] markers
     (inheritedTerrain, steering, posture, scorecard_anchors, actors Layer 2, risk ratings). Ghost anchor
     (empty/missing target) = hard error; compose-order + allowed-set rules; baseline carries no anchors;

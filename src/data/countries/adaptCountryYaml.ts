@@ -4,9 +4,36 @@ import type {
   ActorEntry,
   RiskEntry,
   SourceEntry,
+  KnownAndUnbuiltRegister,
+  GapRegisterItem,
 } from '../france';
 
 type YamlRecord = Record<string, unknown>;
+
+// Gap register (capacity.knownAndUnbuilt, 2026-07-20): JSON-in-text object
+// {opener, items[], denominator}. Defensive like the other JSON blocks —
+// malformed content yields null (render nothing), never a crash.
+function parseKnownAndUnbuilt(v: unknown): KnownAndUnbuiltRegister | null {
+  if (typeof v !== 'string' || !v.trim().startsWith('{')) return null;
+  try {
+    const parsed = JSON.parse(v) as YamlRecord;
+    const items: GapRegisterItem[] = (Array.isArray(parsed.items) ? parsed.items : []).map((i: YamlRecord) => ({
+      gap: String(i.gap ?? ''),
+      anchor: Array.isArray(i.anchor) ? (i.anchor as unknown[]).map(String) : [],
+      since: String(i.since ?? ''),
+      class: String(i.class ?? ''),
+    }));
+    const opener = String(parsed.opener ?? '');
+    if (!opener && items.length === 0) return null;
+    return {
+      opener,
+      items,
+      denominator: parsed.denominator ? String(parsed.denominator) : undefined,
+    };
+  } catch {
+    return null;
+  }
+}
 
 function parseArrayInput(input: unknown): YamlRecord[] {
   if (Array.isArray(input)) {
@@ -148,6 +175,7 @@ function buildLang(d: YamlRecord, lang: 'en' | 'fr'): LangContent {
       delivery: String(d[`capacity_delivery${s}`] ?? ''),
       publicServices: String(d[`capacity_publicServices${s}`] ?? ''),
       productivity: String(d[`capacity_productivity${s}`] ?? ''),
+      knownAndUnbuilt: parseKnownAndUnbuilt(d[`capacity_knownAndUnbuilt${s}`]),
     },
     society: {
       demographics: String(d[`society_demographics${s}`] ?? ''),

@@ -750,6 +750,9 @@ export default function CountryPage() {
     permitting: language === 'fr' ? 'Autorisations' : 'Permitting',
     delivery: language === 'fr' ? 'Réalisation' : 'Delivery',
     productivity: language === 'fr' ? 'Productivité' : 'Productivity',
+    // FR-PLACEHOLDER: gap-register labels — Peggy to verify wording.
+    knownAndUnbuilt: language === 'fr' ? 'Documenté et non réalisé' : 'Known and unbuilt',
+    gapSince: language === 'fr' ? 'Depuis' : 'Since',
     society: language === 'fr' ? 'Société' : 'Society',
     socialCohesion: language === 'fr' ? 'Cohésion sociale' : 'Social cohesion',
     demographics: language === 'fr' ? 'Démographie' : 'Demographics',
@@ -883,6 +886,9 @@ export default function CountryPage() {
     [t.publicServices, lang!.capacity!.publicServices ?? '', 'capacity.publicServices'],
     [t.productivity, lang!.capacity!.productivity, 'capacity.productivity'],
   ]) : [];
+  // Gap register (capacity.knownAndUnbuilt) — structured, rendered after the
+  // prose rows; null until the derivatives pass composes it (render nothing).
+  const gapRegister = hasCapacity ? lang!.capacity!.knownAndUnbuilt ?? null : null;
   const securityRows: Row[] = hasAnalysis ? filterRows([
     [t.posture, lang!.security.posture ?? '', 'security.posture'],
     [t.internalSecurity, lang!.security.internal, 'security.internal'],
@@ -899,7 +905,14 @@ export default function CountryPage() {
     ...(hasSociety ? [{ id: 'society', label: t.society, children: societyRows.map(([label, , id]) => ({ id, label })) }] : []),
     { id: 'economy', label: t.economy, children: economyRows.map(([label, , id]) => ({ id, label })) },
     { id: 'political', label: t.political, children: politicalRows.map(([label, , id]) => ({ id, label })) },
-    ...(hasCapacity ? [{ id: 'capacity', label: t.capacity, children: capacityRows.map(([label, , id]) => ({ id, label })) }] : []),
+    ...(hasCapacity ? [{
+      id: 'capacity',
+      label: t.capacity,
+      children: [
+        ...capacityRows.map(([label, , id]) => ({ id, label })),
+        ...(gapRegister ? [{ id: 'capacity.knownAndUnbuilt', label: t.knownAndUnbuilt }] : []),
+      ],
+    }] : []),
     { id: 'security', label: t.security, children: securityRows.map(([label, , id]) => ({ id, label })) },
     ...(hasSituation ? [{ id: 'situation', label: t.situation }] : []),
     { id: 'actors', label: t.actors },
@@ -1197,6 +1210,32 @@ export default function CountryPage() {
                   <ProseParagraphs text={text} sources={activeSources} />
                 </div>
               ))}
+              {/* Gap register — anchored synthesis; nothing renders until the
+                  derivatives pass composes it. Class values are controlled
+                  vocabulary (Interpretation) and display as-is. */}
+              {gapRegister && (
+                <div id="capacity.knownAndUnbuilt" style={{ scrollMarginTop: 96 }}>
+                  <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-2">{t.knownAndUnbuilt}</h4>
+                  {!!gapRegister.opener?.trim() && (
+                    <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed mb-3">{parseCitations(gapRegister.opener, activeSources)}</p>
+                  )}
+                  <div className="space-y-3">
+                    {gapRegister.items.map((item, i) => (
+                      <div key={i} className="border-l-2 border-[var(--cr-divider)] pl-3">
+                        <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(item.gap, activeSources)}</p>
+                        <p className="font-body text-[11px] text-[var(--cr-muted)] mt-1">
+                          <span className="uppercase tracking-wider">{item.class}</span>
+                          {!!item.since?.trim() && <> · {t.gapSince}: {parseCitations(item.since, activeSources)}</>}
+                          {item.anchor.length > 0 && <> · {parseCitations(item.anchor.map((a) => `[${a}]`).join(''), activeSources)}</>}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  {!!gapRegister.denominator?.trim() && (
+                    <p className="font-body text-sm italic text-[var(--cr-muted)] leading-relaxed mt-3">{parseCitations(gapRegister.denominator, activeSources)}</p>
+                  )}
+                </div>
+              )}
             </div>
           </FrameworkSection>
           </div>

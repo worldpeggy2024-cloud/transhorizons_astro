@@ -309,7 +309,9 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
   // The 33 fields (rework §3), new names. The anchored-synthesis trio
   // (inheritedTerrain, steering, posture) may satisfy accountability with
   // [dot.path] anchors instead of [source-id] citations.
-  const FIELD_SET = anchorsLib.FIELD_COMPOSE_ORDER.filter((p) => p !== 'situation');
+  // situation and capacity.knownAndUnbuilt are dedicated-pass fields — emitted
+  // empty by Pass B, so exempt from the required-non-empty sweep.
+  const FIELD_SET = anchorsLib.FIELD_COMPOSE_ORDER.filter((p) => p !== 'situation' && p !== 'capacity.knownAndUnbuilt');
   const ANCHOR_OK = new Set(['capacity.inheritedTerrain', 'capacity.steering', 'security.posture']);
   for (const fieldPath of FIELD_SET) {
     const [peer, fieldName] = fieldPath.split('.');
@@ -617,6 +619,9 @@ function buildYaml(payload) {
     yamlText('capacity_publicServices_fr', c.capacity?.publicServices?.fr),
     yamlText('capacity_productivity_en', c.capacity?.productivity?.en),
     yamlText('capacity_productivity_fr', c.capacity?.productivity?.fr),
+    // Gap register — emitted EMPTY by Pass B; composed by the derivatives pass.
+    yamlText('capacity_knownAndUnbuilt_en', c.capacity?.knownAndUnbuilt?.en),
+    yamlText('capacity_knownAndUnbuilt_fr', c.capacity?.knownAndUnbuilt?.fr),
     yamlText('security_posture_en', c.security?.posture?.en),
     yamlText('security_posture_fr', c.security?.posture?.fr),
     yamlText('security_internal_en', c.security.internal.en),
@@ -1117,7 +1122,7 @@ Hard rules:
 - Omit any claim that cannot be tied to an approved source — do not write it with weaker sourcing or vague attribution.
 - EN and FR fields must be synchronized in substance (same facts, same depth). FR may adapt phrasing naturally.
 - COMPLETENESS: every one of the 33 narrative fields is REQUIRED and NON-EMPTY, in BOTH languages — the apply gate rejects an empty field outright, and an incomplete JSON is sent back whole. Thin means SHORT (an honest one-line field), never EMPTY. Do not leave a field blank because the figures were not already at hand: Pass A harvested sources for every field family — consult the approved list below and write each field from it. If, after consulting the sources, a field genuinely cannot be supported, still write its honest one-line finding and name the sourcing gap in a note AFTER the JSON (outside it) so Pass A can be extended. KNOW THE LOOP: a field whose one-liner carries NO citation at all will still fail the apply gate's required-citation check — that failure is the designed trigger for a targeted Pass A extension, after which only that field is rewritten citing the new sources. Never fabricate a citation to pass the gate.
-- situation, actors.domestic, actors.external, risks, the scorecard (values AND anchors), and baseline are the ONLY empty emissions (empty strings / arrays / objects, both languages) — each is populated afterward by its own dedicated pass working from this finished report (situation pass; actors and risks passes; derivatives pass for scorecard + baseline). Do not fold their content into the peer sections to compensate.
+- situation, actors.domestic, actors.external, capacity.knownAndUnbuilt (the gap register), the scorecard (values AND anchors), and baseline are the ONLY empty emissions (empty strings / arrays / objects, both languages) — each is populated afterward by its own dedicated pass working from this finished report (situation pass; actors pass; derivatives pass for scorecard + baseline + gap register). Do not fold their content into the peer sections to compensate.
 - ANTI-PADDING: no per-section word caps; never pad a thin section to match a rich one. Every sentence after an opener carries a [source-id] or is cut — no restatement, no meta-commentary, no connective throat-clearing. Thinness is a finding: a country with negligible endowment on a dimension gets an honest one-line field, never an empty field, never a padded paragraph.
 - NAMED-ACTOR RULE: a claim about a network, sector, or elite NAMES its principal members, cited — alliances have member states, sectors have producers, elites have firms, organised labour has federations. A nameless collective ("a global alliance network", "the business elite") is an under-sourced claim: enter the loop (targeted Pass A top-up, then a single-field rewrite) — never publish the abstraction.
 - POINTERS ARE NOT CONTENT: citing a tracker, dataset, or dashboard without reporting a figure from it (with its year) is a gap wearing a citation — "unrest is tracked by X [x]" covers nothing and starves the derivative layers downstream. Report the figure, or enter the loop.
@@ -1193,6 +1198,8 @@ capacity.delivery: the state's realised record of executing INFRASTRUCTURE AT SC
 capacity.publicServices: the state's realised record of running CONTINUOUS public-service systems — health and education systems (staffing, coverage, access, waiting times, quality of provision), and other universal services where relevant. Receives the systems half of society.wellbeing (outcomes stay there).
 
 capacity.productivity: productivity level and trend; internal barriers to the movement of goods, labour and capital between subnational units — ${productivityTermText}; value-add processing built domestically vs raw material exported for others to process; innovation and research capacity.
+
+capacity.knownAndUnbuilt: EMITTED EMPTY ("" both languages) — the GAP REGISTER, composed by the derivatives pass after the situation pass installs (it indexes gaps the finished report asserts; a register composed before the event layer can be falsified by it).
 
 SOCIETY — describe the society ON ITS OWN TERMS, before and independent of any stability implication; a society is a component of the country in itself, not a risk factor:
 
@@ -1298,6 +1305,8 @@ Approved source IDs from Pass A:
       delivery: { en: '', fr: '' },
       publicServices: { en: '', fr: '' },
       productivity: { en: '', fr: '' },
+      // Gap register — EMITTED EMPTY (derivatives pass composes it).
+      knownAndUnbuilt: { en: '', fr: '' },
     },
     security: {
       posture: { en: '', fr: '' },
