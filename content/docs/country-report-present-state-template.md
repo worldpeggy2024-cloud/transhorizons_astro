@@ -354,6 +354,17 @@ Every numeric is tied to a specific period. **No exceptions — and this applies
 
 A barometer round (R9 / 2024) counts as its time-binding. If a figure arrives without a year, re-query for the period; don't include it.
 
+**Every asserted gap is tied to a duration** (persistence clause, 2026-07-20). Where a field asserts a standing shortfall — a backlog, a deficit against need, an absent capability, an unmet requirement, a barrier not removed — state how long it has stood, or when it was first officially identified, cited, in that sentence or the next.
+
+- Correct: `"deferred maintenance rose from $170 billion in 2017 to $370 billion in 2024 [id]"`; `"identified as a growth constraint in the 2016 review and unresolved at the most recent assessment [id][id]"`
+- Wrong: `"a substantial maintenance backlog [id]"`; `"long-standing internal barriers [id]"`
+
+Date from an official or primary identification (audit body, statutory review, government evaluation, national statistics series), not from the earliest advocacy publication naming the problem. Where only advocacy dating exists, say so and flag the source's orientation inline, as the bias rule already requires.
+
+Where the approved sources carry no duration, write the gap without one and name the sourcing gap in the same sentence. An undated gap is a Pass A finding, not a silent omission.
+
+**Openers are exempt** — the opener contract requires orientation, not history. An opener that asserts a shortfall states it plainly and undated; the duration binding applies to the detail beneath.
+
 ---
 
 ## 13. Output structure (33 fields, six peers — display order: territory · society · economy · political order · capacity to deliver · security & diplomacy; dynamic tail: situation · actors · risks)
