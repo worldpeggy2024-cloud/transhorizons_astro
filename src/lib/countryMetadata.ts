@@ -17,6 +17,12 @@ export interface CountryMetadata {
    * concludes.
    */
   riskCategory: 'High' | 'Medium' | 'Low';
+  /**
+   * LEGACY-UNUSED since 2026-07-19, same decision as riskCategory: the topics
+   * facet was hand-assigned Manus-era labelling and was removed with it.
+   * Keyword search over real report content (countryKeywords.ts) replaces
+   * both. Retained while the study is open.
+   */
   topics: ('Geopolitics' | 'Resources' | 'Technology')[];
 }
 
@@ -208,4 +214,4 @@ export const REGIONS = [
 
 // RISK_CATEGORIES export removed 2026-07-19 with the filter facet (no consumers).
 
-export const TOPICS = ['Geopolitics', 'Resources', 'Technology'] as const;
+// TOPICS export removed 2026-07-19 with the topics facet (no consumers).

@@ -310,3 +310,12 @@ anything and never driving the globe.
   mechanism is re-derived some other way; its displayed data is Manus-era illustrative.
 - Installing a stress index requires a renderer for the new entry shape (title, kind, statement,
   loci, anchors, deadline?) — built with the first install, not before the design is approved.
+
+### Addendum 2026-07-20 (to amendment 2026-07-19b)
+
+The **topics facet is removed as well** — same class of hand-assigned Manus-era label as the
+risk levels. **Keyword search shipped** as the replacement for both
+(`src/lib/countryKeywords.ts`): the World Analysis search now matches real report content —
+actor names, situation thread names, risk titles — for two-phase countries only (CAN, USA);
+a country's YAML import is added there when its regeneration lands. `region` remains the one
+factual facet. `countryMetadata.topics` joins `riskCategory` as legacy-unused.

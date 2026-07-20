@@ -89,18 +89,21 @@
     together then.
   - Declare EVERY new field in the `countries` collection schema BEFORE writing content — the strip rule
     eats undeclared fields silently.
-- Risk notion (REWORKED 2026-07-19, study open): the globe risk-level FILTER FACET is REMOVED — it was a
-  Manus-era recycling of the correlation-matrix labels (region + topics facets remain; keyword search over
-  report content is the studied replacement). The RISKS PASS is Layer-1 only: a structured, CITED stress
-  index (dependency / fragility / capacity-gap / adverse-trend) of what the report itself asserts —
-  risks-pass-template.md v2.0, DRAFT pending author approval; the former Layer 2 (trigger, horizon,
-  probability x impact, mitigants), the aggregate riskLevel, and the correlation cascades are PARKED
-  pending study. deriveRiskLevel keeps the strict High/Med/Low rule but returns null for empty or unrated
-  registers ('Low' means assessed-low, never nothing-to-assess); the on-page chip renders only from rated
-  legacy registers (CAN). countryMetadata.riskCategory is legacy-unused. Installing a stress index needs a
-  renderer for the new entry shape first (RiskCard expects the old rated shape). region = static table;
-  topics = pipeline-proposed, human-confirmed. The "report available" marker must track
-  two-phase-regenerated status, not mere file existence.
+- Risk notion (REWORKED 2026-07-19/20, study open): the globe risk-level FILTER FACET and the TOPICS
+  FACET are both REMOVED — hand-assigned Manus-era labels (the risk labels recycled from the
+  correlation matrix). KEYWORD SEARCH replaces them (src/lib/countryKeywords.ts, shipped 2026-07-20):
+  the World Analysis search matches real report content — actor names, situation thread names, risk
+  titles — for TWO-PHASE countries only; add a country's YAML import there when its regeneration lands.
+  region = static table, the one factual facet remaining. The RISKS PASS is Layer-1 only: a structured,
+  CITED stress index (dependency / fragility / capacity-gap / adverse-trend) of what the report itself
+  asserts — risks-pass-template.md v2.0, DRAFT pending author approval; the former Layer 2 (trigger,
+  horizon, probability x impact, mitigants), the aggregate riskLevel, and the correlation cascades are
+  PARKED pending study. deriveRiskLevel keeps the strict High/Med/Low rule but returns null for empty or
+  unrated registers ('Low' means assessed-low, never nothing-to-assess); the on-page chip renders only
+  from rated legacy registers (CAN). countryMetadata.riskCategory AND .topics are legacy-unused.
+  Installing a stress index needs a renderer for the new entry shape first (RiskCard expects the old
+  rated shape). The "report available" marker must track two-phase-regenerated status, not mere file
+  existence.
 - Two layers: present-state (sourced, validated = analysis.yaml) and a SEPARATE, openly-speculative
   trajectory/extrapolation layer (own contract: plural, anchored to present-state facts, never sourced, never
   a single forecast). Trajectories branch PRIMARILY on capacity.* (knowledge isn't the constraint, capacity

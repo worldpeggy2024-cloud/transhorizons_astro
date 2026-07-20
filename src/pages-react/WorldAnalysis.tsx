@@ -14,10 +14,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useLocation } from 'wouter';
 import { FlagIcon } from '@/components/FlagIcon';
 import {
-  ArrowLeft, ArrowRight, Globe, Search, Map as MapIcon, ChevronRight, Network, Filter, Info,
+  ArrowLeft, ArrowRight, Globe, Search, Map as MapIcon, ChevronRight, Network, Filter,
 } from 'lucide-react';
 import { SEO_READY_COUNTRIES } from '@/lib/analysedCountries';
 import { COUNTRY_METADATA } from '@/lib/countryMetadata';
+import { matchesKeywords } from '@/lib/countryKeywords';
 import CountryFilterPanel, { type FilterState } from '@/components/CountryFilterPanel';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -116,11 +117,9 @@ export default function WorldAnalysis() {
   const [globeSize, setGlobeSize]     = useState({ w: 800, h: 600 });
   const { language, setLanguage }     = useLanguage();
   const [showFilters, setShowFilters] = useState(false);
-  const [showFilterInfo, setShowFilterInfo] = useState(false);
   const [showCountryDisclaimer, setShowCountryDisclaimer] = useState(false);
   const [filters, setFilters]         = useState<FilterState>({
     regions: new Set(),
-    topics: new Set(),
   });
   const [highlightedCard, setHighlightedCard] = useState<string | null>(null);
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
@@ -331,42 +330,28 @@ export default function WorldAnalysis() {
       return na.localeCompare(nb);
     });
     
-    // Apply text search
+    // Text search: names/codes, plus REAL report content for two-phase
+    // countries (actor names, situation threads, risk titles) — the
+    // replacement for the removed risk/topics facets (2026-07-19).
     let result = sorted;
     if (search.trim()) {
-    const q = search.toLowerCase();
+      const q = search.toLowerCase();
       result = result.filter(c =>
-      c.nameEn.toLowerCase().includes(q) ||
-      c.nameFr.toLowerCase().includes(q) ||
-      c.cca3.toLowerCase().includes(q)
-    );
+        c.nameEn.toLowerCase().includes(q) ||
+        c.nameFr.toLowerCase().includes(q) ||
+        c.cca3.toLowerCase().includes(q) ||
+        matchesKeywords(c.cca3, q)
+      );
     }
-    
-    // Apply metadata filters
-    const hasActiveFilters =
-      filters.regions.size > 0 ||
-      filters.topics.size > 0;
-    
-    if (hasActiveFilters) {
+
+    // Region facet (the one factual facet that remains)
+    if (filters.regions.size > 0) {
       result = result.filter(c => {
         const meta = COUNTRY_METADATA[c.cca3];
-        if (!meta) return false; // Exclude if no metadata when filters are active
-        
-        // Check region filter
-        if (filters.regions.size > 0 && !filters.regions.has(meta.region)) {
-          return false;
-        }
-        
-        // Check topics filter (must have at least one matching topic)
-        if (filters.topics.size > 0) {
-          const hasMatchingTopic = meta.topics.some(topic => filters.topics.has(topic));
-          if (!hasMatchingTopic) return false;
-        }
-        
-        return true;
+        return meta ? filters.regions.has(meta.region) : false;
       });
     }
-    
+
     return result;
   }, [countries, search, fr, filters]);
 
@@ -618,14 +603,14 @@ export default function WorldAnalysis() {
                 type="text"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                placeholder={fr ? 'Rechercher un pays…' : 'Search countries…'}
+                placeholder={fr ? 'Rechercher pays ou mot-clé…' : 'Search countries or keywords…'}
                 className="w-full bg-white/5 border border-white/10 text-white font-body text-sm pl-9 pr-3 py-2 placeholder:text-white/30 focus:outline-none focus:border-[#7D1A2E]/40 transition-colors"
               />
             </div>
               <button
                 onClick={() => setShowFilters(!showFilters)}
                 className={`shrink-0 p-2 border transition-colors ${
-                  showFilters || (filters.regions.size > 0 || filters.topics.size > 0)
+                  showFilters || filters.regions.size > 0
                     ? 'border-[#7D1A2E] bg-[#7D1A2E]/10 text-[#7D1A2E]'
                     : 'border-white/10 text-white/40 hover:text-white/60'
                 }`}
@@ -635,83 +620,15 @@ export default function WorldAnalysis() {
               </button>
             </div>
             <div className="flex items-start gap-1.5">
+              {/* Risk-level AND topics facets REMOVED 2026-07-19 (author
+                  decision): both were hand-assigned Manus-era labels. Search
+                  now matches real report content (actor names, situation
+                  threads, risk titles) for two-phase countries. */}
               <p className="text-white/40 font-body text-[10px] leading-relaxed flex-1">
                 {fr
-                  ? 'Filtrez par région géographique et domaines d\'analyse (géopolitique, ressources, technologie).'
-                  : 'Filter by geographic region and analysis focus (geopolitics, resources, technology).'}
+                  ? 'Filtrez par région, ou cherchez par nom et mot-clé — la recherche couvre le contenu des rapports analysés (acteurs, situations, risques).'
+                  : 'Filter by region, or search by name and keyword — search covers the content of analysed reports (actors, situations, risks).'}
               </p>
-              {/* Info tooltip */}
-              <div
-                className="relative shrink-0 mt-0.5"
-                onMouseEnter={() => setShowFilterInfo(true)}
-                onMouseLeave={() => setShowFilterInfo(false)}
-              >
-                <button
-                  type="button"
-                  className="text-white/30 hover:text-white/70 transition-colors focus:outline-none"
-                  aria-label="Filter explanation"
-                >
-                  <Info size={18} />
-                </button>
-
-                {showFilterInfo && (
-                  <div
-                    className="absolute right-0 top-full mt-2 z-50 w-[480px] bg-[#0D0D18] border border-white/15 shadow-2xl text-white/80 font-body text-xs leading-relaxed"
-                    style={{ pointerEvents: 'none', right: '-16px' }}
-                  >
-                    <div className="p-4 space-y-3">
-                      <p className="text-white font-medium text-[11px] tracking-wider uppercase border-b border-white/10 pb-2">
-                        {fr ? 'Filtre par pays' : 'Country Filter'}
-                      </p>
-
-                      {/* Risk-level facet REMOVED 2026-07-19 (author decision):
-                          the tri-level label was a Manus-era recycling of the
-                          correlation-matrix labels and filtered nothing real.
-                          Region + topics remain; keyword search is the studied
-                          replacement. */}
-                      <div className="pt-1 space-y-1.5">
-                        <p className="text-white/90 text-[11px] font-medium">
-                          {fr
-                            ? '"Axe d\'analyse" (Géopolitique / Ressources / Technologie) :'
-                            : '"Analysis focus" (Geopolitics / Resources / Technology):'}
-                        </p>
-                        <p className="text-white/70 text-[11px]">
-                          {fr
-                            ? 'Principale grille de lecture.'
-                            : 'Primary lens of analysis.'}
-                        </p>
-                        <ul className="space-y-1 pl-1">
-                          <li className="flex gap-1.5">
-                            <span className="text-blue-400 shrink-0">•</span>
-                            <span><span className="text-white/90">{fr ? 'Géopolitique :' : 'Geopolitics:'}</span> {fr ? 'puissance militaire, alliances, conflits territoriaux, influence diplomatique' : 'Military power, alliances, territorial disputes, diplomatic influence'}</span>
-                          </li>
-                          <li className="flex gap-1.5">
-                            <span className="text-yellow-400 shrink-0">•</span>
-                            <span><span className="text-white/90">{fr ? 'Ressources :' : 'Resources:'}</span> {fr ? 'réserves énergétiques, richesses minières, contrôle des chaînes d\'approvisionnement, dépendances aux matières premières' : 'Energy reserves, mineral wealth, supply chain control, commodity dependencies'}</span>
-                          </li>
-                          <li className="flex gap-1.5">
-                            <span className="text-purple-400 shrink-0">•</span>
-                            <span><span className="text-white/90">{fr ? 'Technologie :' : 'Technology:'}</span> {fr ? 'innovation technologique, production de semi-conducteurs, développement de l\'IA, infrastructure numérique' : 'Tech innovation, semiconductor production, AI development, digital infrastructure'}</span>
-                          </li>
-                        </ul>
-                        <p className="text-white/50 text-[10px] italic">
-                          {fr
-                            ? 'Un pays peut avoir plusieurs axes.'
-                            : 'A country can have multiple focus areas.'}
-                        </p>
-                      </div>
-
-                      <div className="border-t border-white/10 pt-2">
-                        <p className="text-white/40 text-[10px] font-mono">
-                          {fr
-                            ? 'Dans le fichier de métadonnées, chaque pays est catégorisé; p.ex. :'
-                            : 'In the meta file, each country has assignments like:'} CHN: region: 'Asia-Pacific', topics: ['Geopolitics', 'Technology', 'Resources'] &#125;
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
             </div>
           </div>
 
