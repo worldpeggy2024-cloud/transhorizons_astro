@@ -67,7 +67,7 @@ Read every field in the six families and every thread in `situation_en`. Collect
 
 Recall over precision here — collect generously; the gate decides.
 
-### 2. Gate — four tests, all four must hold
+### 2. Gate — five tests, all five must hold
 
 **Test 1 — ASSERTED.** The report already states it, with a resolvable `[source-id]`, in one of the six section families or in a `situation` thread. Not implied, not inferable: stated.
 
@@ -82,6 +82,8 @@ Recall over precision here — collect generously; the gate decides.
 **Test 3 — INTERNAL.** Closing it lies within the country's own authority. Where the report asserts an external dependency, do not carry the dependency — carry the **unbuilt domestic response** to it, if the report asserts one. Refining capacity that was never built is a gap; reliance on a foreign supplier is not. The register is about what was in the country's own hands.
 
 **Test 4 — OPEN.** The report does not state it closed. Where a `situation` thread shows it closing, it leaves the register. Where a thread shows a commitment to close it that has not landed, it stays, classed accordingly.
+
+**Test 5 — MISSING, NOT UNDONE.** The report states this as a capability or provision that is absent or insufficient — not as a commitment, target, project or programme that existed and was withdrawn, cancelled, or reversed by decision. A reversal is a choice; choices are carried by the fields that describe policy, not by this register. *(Added 2026-07-21 after the second USA run surfaced the hole: a voided target and a cancelled project class passed all four tests while describing decisions, and rendering a decision as an unclosed gap smuggles in a norm that it ought to have been done — the exact indictment the denominator exists to prevent.)*
 
 **Record every rejection** in `notCarried`, naming which test it failed. A candidate dropped silently is invisible; a candidate recorded is a finding about the report.
 
@@ -196,7 +198,7 @@ Return ONE JSON object and nothing else before it:
 ## Self-check before returning
 
 - Every anchor resolves to a non-empty field of this report or to an identifier in the registry
-- Every item passes all four gate tests
+- Every item passes all five gate tests
 - No item rests on `actors_*`, `risks_*`, `scorecard*`, `baseline_*`, `capacity_inheritedTerrain_*` or `security_posture_*`
 - The opener declares the documentation base
 - The denominator sentence is present where the report supports it

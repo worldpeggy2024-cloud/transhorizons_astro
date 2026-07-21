@@ -882,11 +882,12 @@ ANCHORED SYNTHESIS — introduces NO new sourced fact. Every item is a close par
 
 SCAN every peer field and every situation thread for claims the report asserts with a resolvable [source-id] that describe a shortfall between what the state can do and what it requires — a backlog, an unmet standard, an absent capability, an unremoved barrier, a capacity named alongside a requirement it does not meet, a project class proposed but not built. Recall over precision; the gate decides.
 
-GATE — an item qualifies only if all four hold:
+GATE — an item qualifies only if all five hold:
 1. ASSERTED. The report already states it, with a resolvable [source-id], in a peer field or a situation thread.
 2. A GAP, NOT A CONDITION. A shortfall between capability and requirement — not a fact, a trend, a trade-off, or an exposure. Population ageing is a trend; a commodity exposure is a structural position; neither is a gap.
 3. INTERNAL. Closing it lies within the country's own authority. Where the report asserts an external dependency, the register names the UNBUILT DOMESTIC RESPONSE, not the exposure.
 4. OPEN. The report does not state it closed. Where the situation layer shows it closing, it leaves the register; where it shows a commitment to close it, it stays, classed accordingly.
+5. MISSING, NOT UNDONE. The report states this as a capability or provision that is absent or insufficient — not as a commitment, target, project or programme that existed and was withdrawn, cancelled, or reversed by decision. A reversal is a choice; choices are carried by the fields that describe policy, not by this register.
 Record every rejection in notCarried with the test it failed.
 
 AGGREGATE where several assertions across fields are one gap, naming every contributing anchor. KEEP ATOMIC where the gaps would be closed by different actions. Never generalise beyond citation.
@@ -901,7 +902,7 @@ NOT IN SCOPE: no trigger, no probability, no impact, no mitigants, no forecast, 
 
 DISCIPLINES: acronyms spelled out at first mention, no exceptions; EN and FR carry the same substance, the same items in the same order, and the same citation ids.
 
-**Self-check before returning:** every anchor resolves to a non-empty field of the attached report or an id present in its registry; the baseline cites no id outside the registry; all six axes carry a value, at least one anchor, and both rationales; every register item passes all four gate tests; no register item rests on actors, scorecard, baseline, inheritedTerrain or posture content (each is itself assembled from other fields — a summary may not rest on a summary); the register opener declares the documentation base; the denominator sentence is present where the report supports it; no trigger/probability/impact/mitigant/forecast anywhere; nothing in the register comes from your own knowledge of the country. Fix failures before returning; do not ship them.
+**Self-check before returning:** every anchor resolves to a non-empty field of the attached report or an id present in its registry; the baseline cites no id outside the registry; all six axes carry a value, at least one anchor, and both rationales; every register item passes all five gate tests; no register item rests on actors, scorecard, baseline, inheritedTerrain or posture content (each is itself assembled from other fields — a summary may not rest on a summary); the register opener declares the documentation base; the denominator sentence is present where the report supports it; no trigger/probability/impact/mitigant/forecast anywhere; nothing in the register comes from your own knowledge of the country. Fix failures before returning; do not ship them.
 
 Return ONLY a JSON object:
 {
