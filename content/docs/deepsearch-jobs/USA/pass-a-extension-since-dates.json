@@ -1,0 +1,221 @@
+{
+  "dated": [
+    {
+      "gap": "Reaching a state of good repair across the eighteen infrastructure categories graded in 2025 requires $9.1 trillion, against $5.4 trillion of forecast investment, leaving a $3.7 trillion shortfall (ASCE Infrastructure Report Card)",
+      "field": "capacity.delivery",
+      "sinceValue": "1998",
+      "establishedBy": "asce-report-card-history",
+      "evidence": "ASCE released the first Report Card for America's Infrastructure in 1998, establishing a national infrastructure investment gap as a recurring finding [web:42][web:46][web:50].",
+      "datingBasis": "advocacy",
+      "orientationNote": "ASCE is a professional engineering society with a stated advocacy orientation favoring higher infrastructure spending; its Report Card series has recurringly quantified an investment gap since its first edition."
+    },
+    {
+      "gap": "Federal government difficulty controlling costs across a $750B+ procurement portfolio, including weapon-systems and IT acquisition regression 2023–2025",
+      "field": "capacity.delivery",
+      "sinceValue": "1990 (weapon systems acquisition; NASA acquisition management; DOD contract management lineage) / 2015 (IT acquisition and operations)",
+      "establishedBy": "gao-high-risk-list",
+      "evidence": "GAO has designated DOD weapon systems acquisition and NASA acquisition management as high risk since 1990, and identified 'Improving the Management of IT Acquisitions and Operations' as a new high-risk area in its 2015 list [web:6][web:31][web:35][web:29].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "VA electronic health record modernization, estimated at $49.8B in life-cycle costs, deployed to only six of 160+ locations as of December 2024",
+      "field": "capacity.delivery",
+      "sinceValue": "2015 (VA health care management, encompassing EHRM, added to GAO High-Risk List)",
+      "establishedBy": "gao-high-risk-list",
+      "evidence": "GAO designated 'Managing Risks and Improving VA Health Care' a high-risk area in 2015, later citing EHRM implementation challenges as part of that designation [web:32][web:36][web:39][web:3].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "FAA operational risk assessment found 51 of 138 air traffic control systems unsustainable and 54 more potentially unsustainable",
+      "field": "capacity.delivery",
+      "sinceValue": "undated at first identification",
+      "establishedBy": "gao-atc-systems-2024",
+      "evidence": "GAO's September 2024 report reported FAA's own 2023 determination that 51 of 138 systems are unsustainable, but no earlier official assessment naming ATC system unsustainability as a standing shortfall was located [web:53][web:56].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "The February 2025 high-risk list contains thirty-eight areas covering continuously delivered public services (VA health care, Medicare/Medicaid, medical products oversight, public health emergency leadership, tribal programs)",
+      "field": "capacity.publicServices",
+      "sinceValue": "1990 (Medicare); 2003 (Medicaid); 2015 (VA health care); 1990 (medical products oversight lineage); 2022 (HHS leadership/coordination of public health emergencies); 2017 (federal programs serving tribes)",
+      "establishedBy": "gao-high-risk-list",
+      "evidence": "GAO added Medicare to its High-Risk List in 1990 and Medicaid in 2003; VA health care was designated in 2015; HHS leadership and coordination of public health emergencies was added in January 2022; programs serving tribes and their members were added in 2017 [web:40][web:32][web:99][web:44].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "Twenty of the thirty-eight high-risk areas are on the list in part because of skills gaps or inadequate staffing",
+      "field": "capacity.publicServices",
+      "sinceValue": "2001",
+      "establishedBy": "gao-strategic-human-capital-2023",
+      "evidence": "GAO first designated strategic human capital management, the skills-gap issue underlying many high-risk areas, as high risk in 2001 [web:41][web:45].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "FDA conducted an average of 917 foreign food safety inspections a year over FY2018–2023, about 5% of its 19,200 annual target",
+      "field": "capacity.publicServices",
+      "sinceValue": "2011 (FSMA-mandated target established)",
+      "establishedBy": "fsma-2011-target",
+      "evidence": "The Food Safety Modernization Act, enacted in 2011, set the statutory ramp to an annual target of 19,200 foreign facility inspections that FDA has never approached [web:80][web:83].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "53% of public schools reported understaffing entering 2022–23; completions of teacher-prep programmes fell 20% from 2012–13 to 2019–20",
+      "field": "capacity.publicServices",
+      "sinceValue": "undated at first identification",
+      "establishedBy": null,
+      "evidence": null,
+      "datingBasis": "official"
+    },
+    {
+      "gap": "Environmental impact statements run well past CEQ's recommended page limits; draft EISs averaged 575 pages for 2013–2018 actions",
+      "field": "capacity.approvals",
+      "sinceValue": "2014",
+      "establishedBy": "gao-nepa-review-2014",
+      "evidence": "GAO's April 2014 report on NEPA found that federal agencies lacked reliable data on time frames and document length, first officially flagging the EIS length problem that CEQ's later page-limit rule sought to address [web:88][web:95].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "Fisheries management limited by assessment coverage: only 364 of 506 stocks had known overfishing status and 263 known overfished status (2023 report to Congress)",
+      "field": "territory.biosphere",
+      "sinceValue": "1996",
+      "establishedBy": "noaa-status-of-stocks-since1996",
+      "evidence": "NOAA Fisheries has reported on the status of U.S. fisheries, including unknown-status stocks, since 1996 under the Magnuson-Stevens Fishery Conservation and Management Act's statutory reporting requirement [web:57].",
+      "datingBasis": "official"
+    },
+    {
+      "gap": "Low-income and historically redlined neighborhoods face up to 12°F hotter heatwave temperatures and greater flood risk; adaptive capacity unevenly distributed",
+      "field": "territory.climate",
+      "sinceValue": "undated at first identification",
+      "establishedBy": null,
+      "evidence": null,
+      "datingBasis": "advocacy"
+    },
+    {
+      "gap": "Access to civil justice ranks 112th of 143 countries in the 2025 Rule of Law Index, against 27th overall",
+      "field": "political.rightsAndChecks",
+      "sinceValue": "2015",
+      "establishedBy": "wjp-roli-2015-first",
+      "evidence": "The World Justice Project's Rule of Law Index, which separately scores 'accessibility and affordability of civil justice,' began its current comparable annual ranking methodology in 2015 [web:98][web:100][web:104].",
+      "datingBasis": "advocacy",
+      "orientationNote": "The World Justice Project is a rule-of-law advocacy and research organization; no official U.S. government body independently dates when civil-justice-access weakness was first identified."
+    },
+    {
+      "gap": "Uncorrected age-adjusted death rates understate deaths by 34% for non-Hispanic American Indian/Alaska Native population and 3% for Hispanic/Asian populations due to death-certificate race misclassification",
+      "field": "society.wellbeing",
+      "sinceValue": "1999",
+      "establishedBy": "nchs-rosenberg-1999",
+      "evidence": "NCHS's 1999 report 'Quality of Death Rates by Race and Hispanic Origin' first formally documented systematic misclassification of race and Hispanic origin on U.S. death certificates as a measurable, uncorrected data-quality problem [web:87].",
+      "datingBasis": "official"
+    }
+  ],
+  "newSources": [
+    {
+      "id": "asce-report-card-history",
+      "name": "Infrastructure Report Card History",
+      "nameFr": "Historique du bulletin des infrastructures",
+      "url": "https://infrastructurereportcard.org/making-the-grade/report-card-history/",
+      "desc": "ASCE's own historical timeline of its Infrastructure Report Card series; authoritative on the series' launch date and grading methodology; ASCE is an advocacy body favoring higher infrastructure spending.",
+      "descFr": "Chronologie historique de l'ASCE sur sa série de bulletins d'infrastructure; source autorisée sur la date de lancement de la série; l'ASCE est un organisme de plaidoyer favorable à des dépenses accrues.",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "gao-strategic-human-capital-2023",
+      "name": "Federal Workforce: OPM Advances Efforts to Close Government-wide Skills Gaps",
+      "nameFr": "Effectifs fédéraux : l'OPM progresse pour combler les lacunes de compétences à l'échelle du gouvernement",
+      "url": "https://www.gao.gov/assets/gao-23-105528.pdf",
+      "desc": "A Government Accountability Office report on federal workforce skills gaps; authoritative on the origin and duration of strategic human capital management as a high-risk designation.",
+      "descFr": "Rapport du Government Accountability Office sur les lacunes de compétences de la main-d'œuvre fédérale; source autorisée sur l'origine de la désignation à haut risque de la gestion stratégique du capital humain.",
+      "publicationDate": "2023-02-26",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "fsma-2011-target",
+      "name": "FDA Food Safety Modernization Act (FSMA)",
+      "nameFr": "Loi sur la modernisation de la sécurité alimentaire de la FDA (FSMA)",
+      "url": "https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma",
+      "desc": "FDA's own summary of the 2011 statute that established mandatory foreign facility inspection targets; authoritative on the origin of the FSMA-mandated 19,200 annual inspection target.",
+      "descFr": "Résumé de la FDA sur la loi de 2011 établissant les objectifs obligatoires d'inspection des installations étrangères; source autorisée sur l'origine de l'objectif d'inspection annuel de la FSMA.",
+      "publicationDate": "2011-01-04",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "noaa-status-of-stocks-since1996",
+      "name": "Fishery Stock Status Updates",
+      "nameFr": "Mises à jour de l'état des stocks de pêche",
+      "url": "https://www.fisheries.noaa.gov/national/population-assessments/fishery-stock-status-updates",
+      "desc": "NOAA Fisheries' own record of its statutory stock-status reporting program under the Magnuson-Stevens Fishery Conservation and Management Act; authoritative on when this reporting series began.",
+      "descFr": "Registre officiel de NOAA Fisheries sur son programme statutaire de rapport sur l'état des stocks en vertu de la loi Magnuson-Stevens; source autorisée sur le début de cette série de rapports.",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "wjp-roli-2015-first",
+      "name": "World Justice Project Releases WJP Rule of Law Index 2015 Scores and Rankings for 102 Countries",
+      "nameFr": "Le World Justice Project publie les scores et classements de l'Indice de l'état de droit 2015 pour 102 pays",
+      "url": "https://worldjusticeproject.org/news/world-justice-project-releases-wjp-rule-law-index-2015-scores-and-rankings-102-countries",
+      "desc": "The World Justice Project's press release announcing its 2015 Rule of Law Index edition; an advocacy/research organization; establishes when the current comparable ranking methodology began.",
+      "descFr": "Communiqué de presse du World Justice Project annonçant l'édition 2015 de son Indice de l'état de droit; organisme de plaidoyer et de recherche; établit le début de la méthodologie de classement comparable actuelle.",
+      "publicationDate": "2015-06-01",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "nchs-rosenberg-1999",
+      "name": "Quality of Death Rates by Race and Hispanic Origin: A Summary of Current Research, 1999",
+      "nameFr": "Qualité des taux de mortalité par race et origine hispanique : résumé de la recherche actuelle, 1999",
+      "url": "https://stacks.cdc.gov/view/cdc/6399/cdc_6399_DS1.pdf",
+      "desc": "A National Center for Health Statistics vital statistics report; the statutory federal vital-records body's own analysis first quantifying race/Hispanic-origin misclassification on U.S. death certificates.",
+      "descFr": "Rapport de statistiques vitales du National Center for Health Statistics; analyse officielle de l'organisme fédéral d'état civil quantifiant pour la première fois la mauvaise classification raciale/hispanique sur les certificats de décès.",
+      "publicationDate": "1999-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "gao-atc-systems-2024",
+      "name": "Air Traffic Control: FAA Actions Are Urgently Needed to Modernize Aging Systems",
+      "nameFr": "Contrôle du trafic aérien : la FAA doit agir de toute urgence pour moderniser des systèmes vieillissants",
+      "url": "https://www.gao.gov/products/gao-24-107001",
+      "desc": "A Government Accountability Office report on FAA air traffic control system sustainability; authoritative on FAA's own 2023 operational risk assessment findings and their reporting date, not an earlier identification.",
+      "descFr": "Rapport du Government Accountability Office sur la durabilité des systèmes de contrôle du trafic aérien de la FAA; source autorisée sur l'évaluation des risques opérationnels de la FAA de 2023, mais pas sur une identification antérieure.",
+      "publicationDate": "2024-09-22",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    }
+  ],
+  "stillUndated": [
+    {
+      "gap": "FAA air traffic control systems: 51 of 138 unsustainable, 54 potentially unsustainable",
+      "field": "capacity.delivery",
+      "searched": "GAO High-Risk List (ATC modernization is not itself a high-risk designation), GAO recurring reports on FAA systems, FAA inspector general reports, FAA's own record, congressional oversight",
+      "note": "No official document identifies a specific year when ATC system unsustainability was first flagged as a standing shortfall; the earliest official quantification found is FAA's 2023 assessment itself, which is a measurement, not an identification of a pre-existing recognized deficiency."
+    },
+    {
+      "gap": "53% of public schools reported understaffing entering 2022–23; teacher-prep completions fell 20% from 2012–13 to 2019–20",
+      "field": "capacity.publicServices",
+      "searched": "NCES Condition of Education recurring reports, GAO reports on teacher workforce, Department of Education record, congressional oversight, advocacy publications (EPI 2019 series)",
+      "note": "NCES School Pulse Panel and Condition of Education data are measurement series without a stated first-identification year for teacher shortages as an official designated shortfall; EPI's 2019 report claims to be the first in a series but is an advocacy organization, not an official body."
+    },
+    {
+      "gap": "Redlined/low-income neighborhoods up to 12°F hotter during heatwaves; unequal flood risk and heat mortality among elderly",
+      "field": "territory.climate",
+      "searched": "NOAA/EPA official environmental justice reports, National Climate Assessment editions, CDC heat mortality data, academic redlining-heat studies, congressional record",
+      "note": "Findings trace to academic and NGO research (e.g., 2020 Science Advances redlining-heat study) rather than an official body naming this specific disparity as an identified shortfall with a first-identification date; no GAO or federal statutory body was found dating it."
+    }
+  ]
+}

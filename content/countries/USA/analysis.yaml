@@ -149,7 +149,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.delivery",
           "asce-infrastructure-report-card-2025"
         ],
-        "since": "report-silent",
+        "since": "The investment gap has been a recurring finding of the grading series since its first edition in 1998 — an advocacy-body dating; no official first identification was located [asce-report-card-history].",
         "class": "in-progress-unclosed"
       },
       {
@@ -159,7 +159,7 @@ capacity_knownAndUnbuilt_en: |-
           "gao-high-risk-cost-schedule-2025",
           "gao-high-risk-list"
         ],
-        "since": "report-silent",
+        "since": "Weapon-systems acquisition and National Aeronautics and Space Administration acquisition management have been designated high risk since 1990, and information-technology acquisition and operations since 2015 [gao-high-risk-list].",
         "class": "no-attempt-documented"
       },
       {
@@ -178,7 +178,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.delivery",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "report-silent",
+        "since": "Veterans Affairs health care, the designation under which the record modernisation is tracked, has been on the high-risk list since 2015 [gao-high-risk-list].",
         "class": "in-progress-unclosed"
       },
       {
@@ -206,7 +206,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.publicServices",
           "gao-high-risk-list"
         ],
-        "since": "report-silent",
+        "since": "The designations date from 1990 (Medicare), 2003 (Medicaid), 2015 (Veterans Affairs health care), 2017 (federal programmes serving tribes) and 2022 (public health emergency leadership and coordination) [gao-high-risk-list].",
         "class": "no-attempt-documented"
       },
       {
@@ -215,7 +215,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.publicServices",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "report-silent",
+        "since": "Strategic human capital management, the skills-gap issue underlying these areas, was first designated high risk in 2001 [gao-strategic-human-capital-2023].",
         "class": "no-attempt-documented"
       },
       {
@@ -233,7 +233,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.publicServices",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "report-silent",
+        "since": "The statutory inspection target dates from the Food Safety Modernization Act of 2011 and has never been met [fsma-2011-target].",
         "class": "no-attempt-documented"
       },
       {
@@ -251,7 +251,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.approvals",
           "ceq-eis-timeline-factsheet-2020"
         ],
-        "since": "report-silent",
+        "since": "The documentation problem was first officially flagged in the Government Accountability Office's April 2014 review, which the Council on Environmental Quality's later page-limit guidance sought to address [gao-nepa-review-2014].",
         "class": "no-attempt-documented"
       },
       {
@@ -316,7 +316,7 @@ capacity_knownAndUnbuilt_en: |-
           "territory.biosphere",
           "noaa-status-of-stocks"
         ],
-        "since": "report-silent",
+        "since": "The unknown-status share has been documented in the statutory reporting series to Congress under the Magnuson-Stevens Fishery Conservation and Management Act since 1996 [noaa-status-of-stocks-since1996].",
         "class": "no-attempt-documented"
       },
       {
@@ -335,7 +335,7 @@ capacity_knownAndUnbuilt_en: |-
           "political.rightsAndChecks",
           "wjp-rule-of-law-2025"
         ],
-        "since": "report-silent",
+        "since": "Scored as a distinct factor in the World Justice Project's comparable series since 2015 — an advocacy-organisation series dating; no official United States body dates the shortfall's identification [wjp-roli-2015-first].",
         "class": "no-attempt-documented"
       },
       {
@@ -344,7 +344,7 @@ capacity_knownAndUnbuilt_en: |-
           "society.wellbeing",
           "nchs-mortality-2024"
         ],
-        "since": "report-silent",
+        "since": "The misclassification was first formally documented by the National Center for Health Statistics in 1999 [nchs-rosenberg-1999].",
         "class": "in-progress-unclosed"
       },
       {
@@ -369,7 +369,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.delivery",
           "asce-infrastructure-report-card-2025"
         ],
-        "since": "report-silent",
+        "since": "L'écart d'investissement est un constat récurrent de la série de bulletins depuis sa première édition en 1998 — datation d'un organisme de plaidoyer; aucune identification officielle antérieure n'a été repérée [asce-report-card-history].",
         "class": "in-progress-unclosed"
       },
       {
@@ -379,7 +379,7 @@ capacity_knownAndUnbuilt_fr: |-
           "gao-high-risk-cost-schedule-2025",
           "gao-high-risk-list"
         ],
-        "since": "report-silent",
+        "since": "L'acquisition des systèmes d'armes et la gestion des acquisitions de la National Aeronautics and Space Administration sont désignées à haut risque depuis 1990, l'acquisition et l'exploitation des technologies de l'information depuis 2015 [gao-high-risk-list].",
         "class": "no-attempt-documented"
       },
       {
@@ -398,7 +398,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.delivery",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "report-silent",
+        "since": "Les soins de santé des Anciens Combattants, désignation sous laquelle la modernisation du dossier est suivie, figurent sur la liste à haut risque depuis 2015 [gao-high-risk-list].",
         "class": "in-progress-unclosed"
       },
       {
@@ -426,7 +426,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.publicServices",
           "gao-high-risk-list"
         ],
-        "since": "report-silent",
+        "since": "Les désignations remontent à 1990 (Medicare), 2003 (Medicaid), 2015 (soins de santé des Anciens Combattants), 2017 (programmes fédéraux destinés aux tribus) et 2022 (pilotage et coordination des urgences de santé publique) [gao-high-risk-list].",
         "class": "no-attempt-documented"
       },
       {
@@ -435,7 +435,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.publicServices",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "report-silent",
+        "since": "La gestion stratégique du capital humain, le déficit de compétences sous-jacent à ces domaines, a été désignée à haut risque pour la première fois en 2001 [gao-strategic-human-capital-2023].",
         "class": "no-attempt-documented"
       },
       {
@@ -453,7 +453,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.publicServices",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "report-silent",
+        "since": "La cible d'inspection légale date de la loi sur la modernisation de la sécurité alimentaire (Food Safety Modernization Act) de 2011 et n'a jamais été atteinte [fsma-2011-target].",
         "class": "no-attempt-documented"
       },
       {
@@ -471,7 +471,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.approvals",
           "ceq-eis-timeline-factsheet-2020"
         ],
-        "since": "report-silent",
+        "since": "Le problème documentaire a été signalé officiellement pour la première fois dans l'examen d'avril 2014 du Government Accountability Office, que les limites de pages recommandées ensuite par le Council on Environmental Quality visaient à corriger [gao-nepa-review-2014].",
         "class": "no-attempt-documented"
       },
       {
@@ -536,7 +536,7 @@ capacity_knownAndUnbuilt_fr: |-
           "territory.biosphere",
           "noaa-status-of-stocks"
         ],
-        "since": "report-silent",
+        "since": "La part des stocks au statut inconnu est documentée dans la série de rapports statutaires au Congrès en vertu de la loi Magnuson-Stevens depuis 1996 [noaa-status-of-stocks-since1996].",
         "class": "no-attempt-documented"
       },
       {
@@ -555,7 +555,7 @@ capacity_knownAndUnbuilt_fr: |-
           "political.rightsAndChecks",
           "wjp-rule-of-law-2025"
         ],
-        "since": "report-silent",
+        "since": "Noté comme facteur distinct dans la série comparable du World Justice Project depuis 2015 — datation issue de la série d'un organisme de plaidoyer; aucun organisme officiel américain ne date l'identification de ce manque [wjp-roli-2015-first].",
         "class": "no-attempt-documented"
       },
       {
@@ -564,7 +564,7 @@ capacity_knownAndUnbuilt_fr: |-
           "society.wellbeing",
           "nchs-mortality-2024"
         ],
-        "since": "report-silent",
+        "since": "La mauvaise classification a été documentée formellement pour la première fois par le National Center for Health Statistics en 1999 [nchs-rosenberg-1999].",
         "class": "in-progress-unclosed"
       },
       {
@@ -3322,5 +3322,81 @@ sources: |-
       "confidence": "Med",
       "citationType": "Interpretation",
       "volatility": "Med"
+    },
+    {
+      "id": "asce-report-card-history",
+      "name": "Infrastructure Report Card History",
+      "nameFr": "Historique du bulletin des infrastructures",
+      "url": "https://infrastructurereportcard.org/making-the-grade/report-card-history/",
+      "desc": "ASCE's own historical timeline of its Infrastructure Report Card series; authoritative on the series' launch date and grading methodology; ASCE is an advocacy body favoring higher infrastructure spending.",
+      "descFr": "Chronologie historique de l'ASCE sur sa série de bulletins d'infrastructure; source autorisée sur la date de lancement de la série; l'ASCE est un organisme de plaidoyer favorable à des dépenses accrues.",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "gao-strategic-human-capital-2023",
+      "name": "Federal Workforce: OPM Advances Efforts to Close Government-wide Skills Gaps",
+      "nameFr": "Effectifs fédéraux : l'OPM progresse pour combler les lacunes de compétences à l'échelle du gouvernement",
+      "url": "https://www.gao.gov/assets/gao-23-105528.pdf",
+      "desc": "A Government Accountability Office report on federal workforce skills gaps; authoritative on the origin and duration of strategic human capital management as a high-risk designation.",
+      "descFr": "Rapport du Government Accountability Office sur les lacunes de compétences de la main-d'œuvre fédérale; source autorisée sur l'origine de la désignation à haut risque de la gestion stratégique du capital humain.",
+      "publicationDate": "2023-02-26",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "fsma-2011-target",
+      "name": "FDA Food Safety Modernization Act (FSMA)",
+      "nameFr": "Loi sur la modernisation de la sécurité alimentaire de la FDA (FSMA)",
+      "url": "https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma",
+      "desc": "FDA's own summary of the 2011 statute that established mandatory foreign facility inspection targets; authoritative on the origin of the FSMA-mandated 19,200 annual inspection target.",
+      "descFr": "Résumé de la FDA sur la loi de 2011 établissant les objectifs obligatoires d'inspection des installations étrangères; source autorisée sur l'origine de l'objectif d'inspection annuel de la FSMA.",
+      "publicationDate": "2011-01-04",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "noaa-status-of-stocks-since1996",
+      "name": "Fishery Stock Status Updates",
+      "nameFr": "Mises à jour de l'état des stocks de pêche",
+      "url": "https://www.fisheries.noaa.gov/national/population-assessments/fishery-stock-status-updates",
+      "desc": "NOAA Fisheries' own record of its statutory stock-status reporting program under the Magnuson-Stevens Fishery Conservation and Management Act; authoritative on when this reporting series began.",
+      "descFr": "Registre officiel de NOAA Fisheries sur son programme statutaire de rapport sur l'état des stocks en vertu de la loi Magnuson-Stevens; source autorisée sur le début de cette série de rapports.",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "wjp-roli-2015-first",
+      "name": "World Justice Project Releases WJP Rule of Law Index 2015 Scores and Rankings for 102 Countries",
+      "nameFr": "Le World Justice Project publie les scores et classements de l'Indice de l'état de droit 2015 pour 102 pays",
+      "url": "https://worldjusticeproject.org/news/world-justice-project-releases-wjp-rule-law-index-2015-scores-and-rankings-102-countries",
+      "desc": "The World Justice Project's press release announcing its 2015 Rule of Law Index edition; an advocacy/research organization; establishes when the current comparable ranking methodology began.",
+      "descFr": "Communiqué de presse du World Justice Project annonçant l'édition 2015 de son Indice de l'état de droit; organisme de plaidoyer et de recherche; établit le début de la méthodologie de classement comparable actuelle.",
+      "publicationDate": "2015-06-01",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "nchs-rosenberg-1999",
+      "name": "Quality of Death Rates by Race and Hispanic Origin: A Summary of Current Research, 1999",
+      "nameFr": "Qualité des taux de mortalité par race et origine hispanique : résumé de la recherche actuelle, 1999",
+      "url": "https://stacks.cdc.gov/view/cdc/6399/cdc_6399_DS1.pdf",
+      "desc": "A National Center for Health Statistics vital statistics report; the statutory federal vital-records body's own analysis first quantifying race/Hispanic-origin misclassification on U.S. death certificates.",
+      "descFr": "Rapport de statistiques vitales du National Center for Health Statistics; analyse officielle de l'organisme fédéral d'état civil quantifiant pour la première fois la mauvaise classification raciale/hispanique sur les certificats de décès.",
+      "publicationDate": "1999-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
     }
   ]

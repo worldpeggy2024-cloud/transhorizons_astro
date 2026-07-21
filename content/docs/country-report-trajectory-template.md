@@ -27,8 +27,14 @@ Then, per country:
 
 ## 2. Plural by design *(B.1)*
 
-**At least 2-4 trajectories. No single headline forecast. No "most likely future."** Honesty lives in the plurality; collapsing to one future misrepresents what extrapolation is.
+**Do not present a contingent outcome as settled. No single headline forecast, no "most likely future".** Honesty lives in the plurality; collapsing to one future misrepresents what extrapolation is. In practice this yields 2–4 trajectories — that is what the discipline usually produces, not a quota to fill.
 
+Two failure modes on either side:
+
+Padding. A branch that differs only in degree — more of the same thing, less of the same thing — is not a second branch. Trajectories must differ in kind: different destinations, not different settings on one dial. And a wrong-branch is never manufactured: inventing a catastrophe the present-state facts don't support is preference dressed as rigour, the mirror of the saviorism guard in §3. Where the levers all point somewhere good, say so; the register's right-branch seeds don't need shadow versions.
+Collapsing. Where more than one destination is genuinely open, it is not honest to pick one.
+
+Single-trajectory exception (documented, not casual). If the present-state facts genuinely close the alternatives, a single trajectory is permitted — but it must state what closed them (anchored, per §3) and what would reopen them. Without the reopening condition it is a forecast wearing a trajectory's label, and §8 forbids it.
 You may describe **what pulls between** the trajectories (the `tensions` field, §6). You may **not** rank them into one answer or attach probabilities that read as fact. Qualitative "what would make this more or less plausible" is allowed inside each trajectory's `conditions`; a portfolio-level "the country will most likely…" is not.
 
 ---
@@ -126,7 +132,7 @@ trajectory:
     - "every forward-claim anchored to an existing present-state field"
     - "no claim reasons from an external preference about where the country should go"
     - "no external actor (or the analyst) cast as the agent of the country's future"
-    - "trajectories remain plural — no single headline forecast, no probabilities read as fact"
+    - "no contingent outcome presented as settled; branches differ in kind, not degree; any single-trajectory case names what closed the alternatives and what would reopen them"
     - "'already-visible reaching' is evidenced from the present-state, not asserted"
     - "at least one trajectory leads from a society.* anchor (human substrate)"
     - "at least one trajectory leads from a territory.* anchor (physical substrate)"
