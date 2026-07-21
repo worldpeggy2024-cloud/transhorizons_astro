@@ -100,6 +100,10 @@ interface FrameworkSectionHandle {
 
 // Store reference to sources section for opening on citation click
 let sourcesFrameworkRef: React.RefObject<FrameworkSectionHandle | null> | null = null;
+// Assigned by the page each render: opens the target section's accordion, then
+// scrolls — [§] markers and scorecard/gap-register anchor chips all need it,
+// because a field block inside a collapsed section isn't in the DOM.
+let openPeerAndScroll: ((id: string) => void) | null = null;
 
 // Store state for tracking which section the reader was in
 let lastClickedSectionName: string = '';
@@ -127,7 +131,9 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
       parts.push(text.substring(lastIndex, match.index).replace(/[ \t]+$/, '\u00A0'));
     }
     const citationId = match[1];
-    if (citationId.includes('.')) {
+    // Field-set-first, like the validators: bare `situation` is the one
+    // dotless field path (reserved — never a source id).
+    if (citationId.includes('.') || citationId === 'situation') {
       // Field-path anchor → in-page link to that section (deep-link ids live on
       // the section wrappers). Rendered as a superscript section mark.
       parts.push(
@@ -139,8 +145,9 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
           style={{ fontSize: '0.75em', verticalAlign: 'super', textDecoration: 'none', marginLeft: '0.08em' }}
           onClick={(e) => {
             e.preventDefault();
-            // Field blocks inside a collapsed section aren't in the DOM —
-            // fall back to the peer section wrapper (id = peer name).
+            // Open the accordion, then scroll — a field block inside a
+            // collapsed section isn't in the DOM until it opens.
+            if (openPeerAndScroll) { openPeerAndScroll(citationId); return; }
             const el = document.getElementById(citationId) ?? document.getElementById(citationId.split('.')[0]);
             el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }}
@@ -420,23 +427,44 @@ function ScoreRow({ label, value, language, detail }: {
           )}
           {(detail!.anchors?.length ?? 0) > 0 && (
             <div className="flex flex-wrap gap-1">
-              {detail!.anchors!.map((a) => (
-                <a
-                  key={a}
-                  href={a.includes('.') ? `#${a}` : `#source-${a}`}
-                  className="font-body text-[10px] px-1.5 py-0.5 border border-[var(--cr-border)] rounded text-[var(--cr-accent)] hover:bg-[var(--cr-hover)]"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Collapsed-section fallback: peer wrapper, then source anchor.
-                    const el = a.includes('.')
-                      ? (document.getElementById(a) ?? document.getElementById(a.split('.')[0]))
-                      : document.getElementById(`source-${a}`);
-                    el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                  }}
-                >
-                  {a}
-                </a>
-              ))}
+              {detail!.anchors!.map((a) => {
+                // Field-set-first, like the validators: bare `situation` is a
+                // field anchor, everything else dotless is a source id.
+                const isField = a.includes('.') || a === 'situation';
+                return (
+                  <a
+                    key={a}
+                    href={isField ? `#${a}` : `#source-${a}`}
+                    title={isField
+                      ? (language === 'fr' ? 'Aller à la section du rapport' : 'Jump to this report section')
+                      : (language === 'fr' ? 'Aller à la source citée' : 'Jump to the cited source')}
+                    className="font-body text-[10px] px-1.5 py-0.5 border border-[var(--cr-border)] rounded text-[var(--cr-accent)] hover:bg-[var(--cr-hover)]"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (isField) {
+                        // Open the accordion first — a collapsed section's
+                        // field blocks aren't in the DOM.
+                        if (openPeerAndScroll) { openPeerAndScroll(a); return; }
+                        (document.getElementById(a) ?? document.getElementById(a.split('.')[0]))?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        return;
+                      }
+                      // Source chip: open the Sources accordion, then scroll
+                      // to the card with the same highlight the prose markers use.
+                      sourcesFrameworkRef?.current?.open();
+                      setTimeout(() => {
+                        const el = document.getElementById(`source-${a}`);
+                        if (el) {
+                          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                          el.classList.add('ring-2', 'ring-[var(--cr-accent)]', 'ring-offset-2');
+                          setTimeout(() => el.classList.remove('ring-2', 'ring-[var(--cr-accent)]', 'ring-offset-2'), 2000);
+                        }
+                      }, 60);
+                    }}
+                  >
+                    {a}
+                  </a>
+                );
+              })}
             </div>
           )}
         </div>
@@ -978,6 +1006,9 @@ export default function CountryPage() {
       (document.getElementById(id) ?? document.getElementById(peer))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 60);
   };
+  // openAndScroll closes over per-render state — keep the module hook current
+  // for [§] markers and anchor chips rendered outside this component's scope.
+  openPeerAndScroll = openAndScroll;
 
 
   return (
@@ -1127,7 +1158,11 @@ export default function CountryPage() {
         {/* Nav (with field-level subsections) + scorecard — desktop only.
             The scorecard is a visually DISTINCT block (assessment vs
             navigation) — accent border vs the nav's neutral border. */}
-        <aside className="hidden lg:block sticky top-16 space-y-4">
+        {/* The rail is capped to the viewport and scrolls INTERNALLY, so the
+            scorecard (and its expanded details) stays reachable at any page
+            position — previously it was only reachable with the page scrolled
+            to the bottom (sticky release). */}
+        <aside className="hidden lg:block sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pr-1">
           <SectionNav items={navItems} language={language} onNavigate={openAndScroll} />
           {!scorecardPending && (
             <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
