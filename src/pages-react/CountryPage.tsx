@@ -247,7 +247,9 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
   defaultOpen?: boolean;
   /** Small muted note on the right of the header band (e.g. the situation verification date). */
   headerNote?: string;
-}>(({ icon: Icon, title, children, defaultOpen = false, headerNote }, ref) => {
+  /** Optional hover explanation for the header note (what the badge measures). */
+  headerNoteTitle?: string;
+}>(({ icon: Icon, title, children, defaultOpen = false, headerNote, headerNoteTitle }, ref) => {
   const [open, setOpen] = useState(defaultOpen);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -281,7 +283,7 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
         </div>
         <div className="flex items-center gap-3">
           {!!headerNote && (
-            <span className="font-body text-xs text-[var(--cr-muted)] whitespace-nowrap">{headerNote}</span>
+            <span title={headerNoteTitle} className="font-body text-xs text-[var(--cr-muted)] whitespace-nowrap">{headerNote}</span>
           )}
           {open ? <ChevronUp size={14} className="text-[var(--cr-muted)]" /> : <ChevronDown size={14} className="text-[var(--cr-muted)]" />}
         </div>
@@ -879,8 +881,20 @@ export default function CountryPage() {
       label = ratingLabel(high >= 0.8 ? 'High' : low > 0.2 ? 'Low' : 'Med', language);
     }
     const latest = cited.map((s) => s.accessDate ?? '').filter(Boolean).sort().pop() ?? '';
-    return [label, latest].filter(Boolean).join(' · ') || undefined;
+    // Self-labelling (2026-07-21): a bare "High · date" read as anything —
+    // risk, importance — so the band now names what it measures.
+    // FR-PLACEHOLDER: French wording below awaits Peggy's review.
+    if (label) {
+      return language === 'fr'
+        ? `Sources : confiance ${label.toLowerCase()} · ${latest}`
+        : `Sources: ${label} confidence · ${latest}`;
+    }
+    return latest ? (language === 'fr' ? `Sources vérifiées le ${latest}` : `Sources verified ${latest}`) : undefined;
   };
+  // Hover explanation for the band (same for all six peers).
+  const sectionMetaHint = language === 'fr'
+    ? 'Confiance globale des sources citées dans cette section, et la date de vérification la plus récente parmi elles'
+    : 'Aggregate confidence of the sources cited in this section, and the most recent date any of them was verified';
 
   // Scorecard rows — rendered twice (desktop rail + mobile inline), rework §5:
   // a visually distinct assessment block, out of the Political section.
