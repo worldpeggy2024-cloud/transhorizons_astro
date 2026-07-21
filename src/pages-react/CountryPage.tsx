@@ -510,6 +510,127 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
   );
 }
 
+// ─── Section nav (scroll-spy) ────────────────────────────────────────────────
+// Own component so its hooks never interact with CountryPage's early returns
+// (the loading spinner return would change the hook count mid-lifecycle).
+// Tracks the deepest anchor at or above the reading line, highlights it, and
+// keeps the active item visible inside the rail's OWN scroll box — the page
+// scroll is never touched. Subsections inside a collapsed accordion aren't in
+// the DOM, so tracking degrades to the section ids.
+
+type NavItem = { id: string; label: string; children?: { id: string; label: string }[] };
+
+function SectionNav({ items, language, onNavigate }: {
+  items: NavItem[];
+  language: string;
+  onNavigate: (id: string) => void;
+}) {
+  const [activeNavId, setActiveNavId] = useState('');
+  const activeNavRef = useRef('');
+  const navListRef = useRef<HTMLUListElement | null>(null);
+  const navIdsKey = items
+    .map((n) => [n.id, ...(n.children ?? []).map((c) => c.id)].join(','))
+    .join('|');
+  useEffect(() => {
+    const ids = navIdsKey.split('|').flatMap((s) => s.split(',')).filter(Boolean);
+    let raf = 0;
+    const measure = () => {
+      raf = 0;
+      const READING_LINE = 130;
+      let bestId = '';
+      let bestTop = -Infinity;
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top;
+        if (top <= READING_LINE && top > bestTop) { bestTop = top; bestId = id; }
+      }
+      if (!bestId && ids.length) bestId = ids[0];
+      if (bestId !== activeNavRef.current) {
+        activeNavRef.current = bestId;
+        setActiveNavId(bestId);
+      }
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(measure); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    measure();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, [navIdsKey]);
+
+  // Keep the active item in view within the rail's internal scroll area.
+  useEffect(() => {
+    const list = navListRef.current;
+    if (!list || !activeNavId) return;
+    const el = list.querySelector<HTMLElement>(`[data-nav-id="${CSS.escape(activeNavId)}"]`);
+    if (!el) return;
+    const listRect = list.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    const offset = elRect.top - listRect.top;
+    if (offset < 0 || offset + elRect.height > list.clientHeight) {
+      list.scrollTop += offset - list.clientHeight / 2 + elRect.height / 2;
+    }
+  }, [activeNavId]);
+
+  const parentActive = (id: string, children?: { id: string }[]) =>
+    activeNavId === id
+    || activeNavId.startsWith(`${id}.`)
+    || (children ?? []).some((c) => c.id === activeNavId);
+
+  return (
+    <nav className="border border-[var(--cr-border)] bg-[var(--cr-surface)] px-4 py-3" aria-label={language === 'fr' ? 'Sections du rapport' : 'Report sections'}>
+      <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">
+        {language === 'fr' ? 'Sections' : 'Sections'}
+      </p>
+      {/* Capped + internally scrollable so the scorecard below stays in
+          view — the subsection lists make the full nav taller than the
+          viewport on desktop. */}
+      <ul ref={navListRef} className="space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
+        {items.map(({ id, label, children }) => (
+          <li key={id}>
+            <a
+              href={`#${id}`}
+              data-nav-id={id}
+              className={`font-body text-xs transition-colors ${
+                parentActive(id, children)
+                  ? 'text-[var(--cr-accent)] font-medium'
+                  : 'text-[var(--cr-body)] hover:text-[var(--cr-accent)]'
+              }`}
+              onClick={(e) => { e.preventDefault(); onNavigate(id); }}
+            >
+              {label}
+            </a>
+            {(children?.length ?? 0) > 0 && (
+              <ul className="mt-1 mb-1 ml-2 space-y-0.5 border-l border-[var(--cr-divider)] pl-2">
+                {children!.map((c) => (
+                  <li key={c.id}>
+                    <a
+                      href={`#${c.id}`}
+                      data-nav-id={c.id}
+                      className={`font-body text-[11px] transition-colors ${
+                        activeNavId === c.id
+                          ? 'text-[var(--cr-accent)] font-medium'
+                          : 'text-[var(--cr-muted)] hover:text-[var(--cr-accent)]'
+                      }`}
+                      onClick={(e) => { e.preventDefault(); onNavigate(c.id); }}
+                    >
+                      {c.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function CountryPage() {
@@ -858,66 +979,6 @@ export default function CountryPage() {
     }, 60);
   };
 
-  // Scroll-spy (2026-07-20): the rail follows the reader. Tracks the deepest
-  // anchor at or above the reading line (just below the sticky top bar),
-  // highlights it, and keeps it visible inside the rail's OWN scroll box —
-  // the page scroll is never touched. Subsections inside a collapsed
-  // accordion aren't in the DOM, so tracking degrades to the section ids.
-  const [activeNavId, setActiveNavId] = useState('');
-  const activeNavRef = useRef('');
-  const navListRef = useRef<HTMLUListElement | null>(null);
-  const navIdsKey = navItems
-    .map((n) => [n.id, ...(n.children ?? []).map((c) => c.id)].join(','))
-    .join('|');
-  useEffect(() => {
-    const ids = navIdsKey.split('|').flatMap((s) => s.split(',')).filter(Boolean);
-    let raf = 0;
-    const measure = () => {
-      raf = 0;
-      const READING_LINE = 130;
-      let bestId = '';
-      let bestTop = -Infinity;
-      for (const id of ids) {
-        const el = document.getElementById(id);
-        if (!el) continue;
-        const top = el.getBoundingClientRect().top;
-        if (top <= READING_LINE && top > bestTop) { bestTop = top; bestId = id; }
-      }
-      if (!bestId && ids.length) bestId = ids[0];
-      if (bestId !== activeNavRef.current) {
-        activeNavRef.current = bestId;
-        setActiveNavId(bestId);
-      }
-    };
-    const onScroll = () => { if (!raf) raf = requestAnimationFrame(measure); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
-    measure();
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-      if (raf) cancelAnimationFrame(raf);
-    };
-  }, [navIdsKey]);
-
-  // Keep the active item in view within the rail's internal scroll area.
-  useEffect(() => {
-    const list = navListRef.current;
-    if (!list || !activeNavId) return;
-    const el = list.querySelector<HTMLElement>(`[data-nav-id="${CSS.escape(activeNavId)}"]`);
-    if (!el) return;
-    const listRect = list.getBoundingClientRect();
-    const elRect = el.getBoundingClientRect();
-    const offset = elRect.top - listRect.top;
-    if (offset < 0 || offset + elRect.height > list.clientHeight) {
-      list.scrollTop += offset - list.clientHeight / 2 + elRect.height / 2;
-    }
-  }, [activeNavId]);
-
-  const navParentActive = (id: string, children?: { id: string }[]) =>
-    activeNavId === id
-    || activeNavId.startsWith(`${id}.`)
-    || (children ?? []).some((c) => c.id === activeNavId);
 
   return (
     <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
@@ -1067,52 +1128,7 @@ export default function CountryPage() {
             The scorecard is a visually DISTINCT block (assessment vs
             navigation) — accent border vs the nav's neutral border. */}
         <aside className="hidden lg:block sticky top-16 space-y-4">
-          <nav className="border border-[var(--cr-border)] bg-[var(--cr-surface)] px-4 py-3" aria-label={language === 'fr' ? 'Sections du rapport' : 'Report sections'}>
-            <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">
-              {language === 'fr' ? 'Sections' : 'Sections'}
-            </p>
-            {/* Capped + internally scrollable so the scorecard below stays in
-                view — the subsection lists make the full nav taller than the
-                viewport on desktop. */}
-            <ul ref={navListRef} className="space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
-              {navItems.map(({ id, label, children }) => (
-                <li key={id}>
-                  <a
-                    href={`#${id}`}
-                    data-nav-id={id}
-                    className={`font-body text-xs transition-colors ${
-                      navParentActive(id, children)
-                        ? 'text-[var(--cr-accent)] font-medium'
-                        : 'text-[var(--cr-body)] hover:text-[var(--cr-accent)]'
-                    }`}
-                    onClick={(e) => { e.preventDefault(); openAndScroll(id); }}
-                  >
-                    {label}
-                  </a>
-                  {(children?.length ?? 0) > 0 && (
-                    <ul className="mt-1 mb-1 ml-2 space-y-0.5 border-l border-[var(--cr-divider)] pl-2">
-                      {children!.map((c) => (
-                        <li key={c.id}>
-                          <a
-                            href={`#${c.id}`}
-                            data-nav-id={c.id}
-                            className={`font-body text-[11px] transition-colors ${
-                              activeNavId === c.id
-                                ? 'text-[var(--cr-accent)] font-medium'
-                                : 'text-[var(--cr-muted)] hover:text-[var(--cr-accent)]'
-                            }`}
-                            onClick={(e) => { e.preventDefault(); openAndScroll(c.id); }}
-                          >
-                            {c.label}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <SectionNav items={navItems} language={language} onNavigate={openAndScroll} />
           {!scorecardPending && (
             <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
               <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
