@@ -31,7 +31,7 @@ Keys are flat: `<section>_<subsection>_<language>`, e.g. `capacity_delivery_en`.
 **Two kinds of marker appear in the report and in your output:**
 
 - `[source-id]` — no dots, lowercase letters, digits and hyphens. Resolves to an entry in the `sources` registry.
-- `[dot.path]` — contains a dot, e.g. `capacity.delivery`. Names a field of this report. Resolves to `<section>_<subsection>_en` / `_fr`.
+- `[dot.path]` — contains a dot, e.g. `capacity.delivery`. Names a field of this report. Resolves to `<section>_<subsection>_en` / `_fr`. **One dotless exception: the bare `situation` is a valid FIELD marker** — the event layer has no section prefix; it resolves to `situation_en` / `_fr`, and no source ever uses the id `situation`. A gap asserted only in a situation thread anchors `situation` plus the event's source id.
 
 A marker that resolves to neither is an error. Never invent either kind.
 
@@ -124,14 +124,23 @@ The opener carries no `[dot.path]` anchors and states no new facts.
 | `since` | When it was first officially identified, or the span the report gives, cited. Use `report-silent` where the report does not carry it. **Never invent a date.** |
 | `class` | One of the four below. |
 
-### The four classes
+### The four classes — assign by decision table, keyed to what the report STATES
 
-- **`never-attempted`** — documented, internal, and never got onto an agenda. Assign only where the report is silent on any attempt **and** carries a source that would have recorded one had it happened.
-- **`announced-not-implemented`** — the report states an announcement, commitment or plan that did not land.
-- **`attempted-and-failed`** — the report states an attempt that was made and did not close the gap.
-- **`in-progress-unclosed`** — under way, not yet closed.
+Work down the rows and take the FIRST that matches. Every row keys to a statement in the report — never to an inference from a rating movement alone.
 
-Assign from the observable record in the report only. `class` is a judgment; the rest of the item is the report's own statement.
+1. The report **states remediation work is under way** on this gap, and does not state that it failed or regressed → **`in-progress-unclosed`**.
+2. The report **states an announcement, commitment, plan or target** addressing this gap, and states no implementation or states it did not land → **`announced-not-implemented`**.
+3. The report **states an attempt, program or remediation effort AND states the gap persisted, failed or regressed after it** — including a named standing remediation record (a high-risk list, a remediation program) where the report states the area worsened between assessments → **`attempted-and-failed`**.
+4. The report **states no attempt of any kind**, and carries a source that would have recorded one had it happened → **`never-attempted`**.
+
+Tie-breakers:
+
+- A worsening rating with **no named attempt or remediation program behind it** is `never-attempted`, not `attempted-and-failed` — a measurement is not an attempt.
+- A **named standing remediation record** with a stated regression IS an attempt record — `attempted-and-failed`.
+- Where the report states both an ongoing effort and no closure, row 1 wins **unless the report itself states failure or regression**.
+- Where no row is satisfiable from stated text, assign the class requiring the least inference and flag the item in the summary.
+
+`class` is the register's one judgment; the rest of each item is the report's own statement.
 
 ---
 
