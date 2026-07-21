@@ -1,6 +1,6 @@
 # Known and Unbuilt — composition pass
 
-**Country:** United States / États-Unis (USA) · **Run date:** 2026-07-20
+**Country:** {{NAME_EN}} / {{NAME_FR}} ({{CODE}}) · **Run date:** {{TODAY}}
 
 Compose one field of a finished country report: `capacity_knownAndUnbuilt_en` and `capacity_knownAndUnbuilt_fr`. No project context is assumed — everything you need is in this prompt and the attached file.
 
@@ -12,7 +12,7 @@ Compose one field of a finished country report: `capacity_knownAndUnbuilt_en` an
 
 ## Input
 
-ONE attachment: the finished country report as a YAML file (`content/countries/USA/analysis.yaml`).
+ONE attachment: the finished country report as a YAML file (`content/countries/{{CODE}}/analysis.yaml`).
 
 Keys are flat: `<section>_<subsection>_<language>`, e.g. `capacity_delivery_en`. Work from the `_en` fields as primary; the `_fr` fields carry the same content in French.
 

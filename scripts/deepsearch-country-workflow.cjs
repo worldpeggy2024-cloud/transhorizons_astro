@@ -839,7 +839,7 @@ You are given ONE attachment: the finished country report as a YAML file (conten
 - The report's keys are flat: <section>_<subsection>_<language>, e.g. political_powerStructure_en. Its SIX PEER SECTIONS are the territory_*, society_*, economy_*, political_*, capacity_*, and security_* field families (each field in _en and _fr), and situation_en/_fr hold the verified event layer as JSON threads. Work from the _en fields as primary; the _fr fields carry the same content in French.
 - The report's SOURCE REGISTRY is the \`sources\` key: a JSON array of source objects, each with an \`id\`. Every [source-id] marker in the report resolves there.
 - The scorecard_* keys, baseline_en/fr, and capacity_knownAndUnbuilt_en/fr in the file are EMPTY — this pass is what writes them.
-- The actors_* keys are NOT input, even where populated: actors Layer 2 is unverified AI-drafted interpretation. Compose from the peer fields, the situation threads, and the registry ONLY — a derivative may not summarise another derivative. capacity_inheritedTerrain_* is read for orientation and as the denominator the gap-register guard requires — it introduces no facts of its own, so trace anything it reflects back to the underlying peer field and anchor there.
+- The actors_* keys are NOT input, even where populated: actors Layer 2 is unverified AI-drafted interpretation. Compose from the peer fields, the situation threads, and the registry ONLY — a derivative may not summarise another derivative. For the GAP REGISTER specifically, capacity_inheritedTerrain_* and security_posture_* are also not sources of gaps (each is assembled from other fields); capacity_inheritedTerrain_* is read for orientation and as the denominator the guard requires — trace anything it reflects back to the underlying peer field and anchor there.
 
 **This pass is CLOSED-BOOK.** Run it with research/web search off; if search cannot be disabled, do not use it. Both outputs are DERIVATIVES: they summarise the attached report and may introduce NO fact that does not already appear, cited, in it.
 
@@ -873,9 +873,9 @@ Each axis needs >= 1 anchor. Anchors are [source-id]s from the registry or dot f
 
 A short paragraph (not one line, not long) in BOTH languages — the page's only always-visible prose, enough for a reader to decide whether to open this country. Present-state characterisation, never a forecast. It introduces no fact not already cited in the report and carries NO new sources; any citation markers must be ids already used in this report. It carries no [dot.path] anchors. It is named Baseline, never "Outlook." Where the situation field holds material events (a war, a rupture, a regime change), the baseline reflects them — it must not read as if the standing conditions were the whole story.
 
-## Gap register — capacity.knownAndUnbuilt (known-and-unbuilt-pass.md)
+## Gap register — capacity.knownAndUnbuilt (canonical contract: known-and-unbuilt-pass-template.md)
 
-ANCHORED SYNTHESIS — introduces NO new sourced fact. Every item is a close paraphrase of a claim already cited in this report, anchored to the field(s) asserting it.
+ANCHORED SYNTHESIS — introduces NO new sourced fact. Every item is a close paraphrase of a claim already cited in this report, anchored to the field(s) asserting it. Never invent a marker of either kind. A real, well-known gap this country plainly has that the report does not assert is a VIOLATION — record its absence in notCarried instead.
 
 SCAN every peer field and every situation thread for claims the report asserts with a resolvable [source-id] that describe a shortfall between what the state can do and what it requires — a backlog, an unmet standard, an absent capability, an unremoved barrier, a capacity named alongside a requirement it does not meet, a project class proposed but not built. Recall over precision; the gate decides.
 
@@ -888,7 +888,7 @@ Record every rejection in notCarried with the test it failed.
 
 AGGREGATE where several assertions across fields are one gap, naming every contributing anchor. KEEP ATOMIC where the gaps would be closed by different actions. Never generalise beyond citation.
 
-OPENER (required): one sentence that DECLARES THE DOCUMENTATION BASE the register rests on — the national audit institution, independent fiscal or budget office, statutory review bodies, or their absence. A country that publishes little self-assessment produces a short register because it documents less, not because it has closed more; where the base is thin, say so — the thinness is the finding.
+OPENER (required, one to three sentences): the standard three jobs — state what kind of case this country is on documented-but-unclosed gaps, signal how central and which way it is moving, declare depth — PLUS one job specific to this field: DECLARE THE DOCUMENTATION BASE the register rests on (the national audit institution, independent fiscal or budget office, statutory review bodies, government evaluation units, or their absence). A country that publishes little self-assessment produces a short register because it documents less, not because it has closed more; where the base is thin, say so — the thinness is the finding. The opener carries NO [dot.path] anchors and states no new facts.
 
 PER ITEM: gap (one sentence, close paraphrase — the report speaking, not the composer, with inline markers); anchor ([dot.path] field(s) and [source-id](s), at least one, all resolving; the bare situation is a valid field anchor); since (when first officially identified, or the span the report gives, cited; 'report-silent' where the sources carry no duration — never fabricate); class (never-attempted | announced-not-implemented | attempted-and-failed | in-progress-unclosed — Interpretation, assigned only from the observable record: announced-not-implemented needs a stated announcement in the report; never-attempted needs the report's silence on any attempt PLUS a source that would have recorded one).
 
@@ -898,7 +898,7 @@ NOT IN SCOPE: no trigger, no probability, no impact, no mitigants, no forecast, 
 
 DISCIPLINES: acronyms spelled out at first mention, no exceptions; EN and FR carry the same substance, the same items in the same order, and the same citation ids.
 
-**Self-check before returning:** every anchor resolves to a non-empty field of the attached report or an id present in its registry; the baseline cites no id outside the registry; all six axes carry a value, at least one anchor, and both rationales; every register item passes all four gate tests; no item rests on actors, scorecard, baseline or inheritedTerrain content; the register opener declares the documentation base; no trigger/probability/impact/mitigant/forecast anywhere. Fix failures before returning; do not ship them.
+**Self-check before returning:** every anchor resolves to a non-empty field of the attached report or an id present in its registry; the baseline cites no id outside the registry; all six axes carry a value, at least one anchor, and both rationales; every register item passes all four gate tests; no register item rests on actors, scorecard, baseline, inheritedTerrain or posture content (each is itself assembled from other fields — a summary may not rest on a summary); the register opener declares the documentation base; the denominator sentence is present where the report supports it; no trigger/probability/impact/mitigant/forecast anywhere; nothing in the register comes from your own knowledge of the country. Fix failures before returning; do not ship them.
 
 Return ONLY a JSON object:
 {
