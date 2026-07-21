@@ -858,6 +858,67 @@ export default function CountryPage() {
     }, 60);
   };
 
+  // Scroll-spy (2026-07-20): the rail follows the reader. Tracks the deepest
+  // anchor at or above the reading line (just below the sticky top bar),
+  // highlights it, and keeps it visible inside the rail's OWN scroll box —
+  // the page scroll is never touched. Subsections inside a collapsed
+  // accordion aren't in the DOM, so tracking degrades to the section ids.
+  const [activeNavId, setActiveNavId] = useState('');
+  const activeNavRef = useRef('');
+  const navListRef = useRef<HTMLUListElement | null>(null);
+  const navIdsKey = navItems
+    .map((n) => [n.id, ...(n.children ?? []).map((c) => c.id)].join(','))
+    .join('|');
+  useEffect(() => {
+    const ids = navIdsKey.split('|').flatMap((s) => s.split(',')).filter(Boolean);
+    let raf = 0;
+    const measure = () => {
+      raf = 0;
+      const READING_LINE = 130;
+      let bestId = '';
+      let bestTop = -Infinity;
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top;
+        if (top <= READING_LINE && top > bestTop) { bestTop = top; bestId = id; }
+      }
+      if (!bestId && ids.length) bestId = ids[0];
+      if (bestId !== activeNavRef.current) {
+        activeNavRef.current = bestId;
+        setActiveNavId(bestId);
+      }
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(measure); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    measure();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, [navIdsKey]);
+
+  // Keep the active item in view within the rail's internal scroll area.
+  useEffect(() => {
+    const list = navListRef.current;
+    if (!list || !activeNavId) return;
+    const el = list.querySelector<HTMLElement>(`[data-nav-id="${CSS.escape(activeNavId)}"]`);
+    if (!el) return;
+    const listRect = list.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    const offset = elRect.top - listRect.top;
+    if (offset < 0 || offset + elRect.height > list.clientHeight) {
+      list.scrollTop += offset - list.clientHeight / 2 + elRect.height / 2;
+    }
+  }, [activeNavId]);
+
+  const navParentActive = (id: string, children?: { id: string }[]) =>
+    activeNavId === id
+    || activeNavId.startsWith(`${id}.`)
+    || (children ?? []).some((c) => c.id === activeNavId);
+
   return (
     <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
 
@@ -1013,12 +1074,17 @@ export default function CountryPage() {
             {/* Capped + internally scrollable so the scorecard below stays in
                 view — the subsection lists make the full nav taller than the
                 viewport on desktop. */}
-            <ul className="space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
+            <ul ref={navListRef} className="space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
               {navItems.map(({ id, label, children }) => (
                 <li key={id}>
                   <a
                     href={`#${id}`}
-                    className="font-body text-xs text-[var(--cr-body)] hover:text-[var(--cr-accent)] transition-colors"
+                    data-nav-id={id}
+                    className={`font-body text-xs transition-colors ${
+                      navParentActive(id, children)
+                        ? 'text-[var(--cr-accent)] font-medium'
+                        : 'text-[var(--cr-body)] hover:text-[var(--cr-accent)]'
+                    }`}
                     onClick={(e) => { e.preventDefault(); openAndScroll(id); }}
                   >
                     {label}
@@ -1029,7 +1095,12 @@ export default function CountryPage() {
                         <li key={c.id}>
                           <a
                             href={`#${c.id}`}
-                            className="font-body text-[11px] text-[var(--cr-muted)] hover:text-[var(--cr-accent)] transition-colors"
+                            data-nav-id={c.id}
+                            className={`font-body text-[11px] transition-colors ${
+                              activeNavId === c.id
+                                ? 'text-[var(--cr-accent)] font-medium'
+                                : 'text-[var(--cr-muted)] hover:text-[var(--cr-accent)]'
+                            }`}
                             onClick={(e) => { e.preventDefault(); openAndScroll(c.id); }}
                           >
                             {c.label}
