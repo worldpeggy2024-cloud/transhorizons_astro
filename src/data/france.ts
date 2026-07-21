@@ -171,7 +171,7 @@ export interface GapRegisterItem {
   anchor: string[];
   /** When first officially identified / span given, cited — or 'report-silent'. */
   since: string;
-  /** never-attempted | announced-not-implemented | attempted-and-failed | in-progress-unclosed (Interpretation). */
+  /** no-attempt-documented | announced-not-implemented | attempted-and-failed | in-progress-unclosed (Interpretation). */
   class: string;
 }
 

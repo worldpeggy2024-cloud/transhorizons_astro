@@ -157,6 +157,11 @@ function validateCountryFile(filePath) {
     if (sourceKeys.has(key)) {
       errors.push(`Duplicate source key: ${key}`);
     }
+    // Field-set-first marker grammar: a source id equal to a field name could
+    // never be cited (rec 2026-07-20; two passes hit the ambiguity).
+    if (anchorsLib.isReservedSourceId(key)) {
+      errors.push(`Source ${key}: id equals a report field name — reserved, pick another id`);
+    }
     sourceKeys.add(key);
 
     const url = typeof s?.url === 'string' ? s.url.trim() : '';

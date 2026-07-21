@@ -63,7 +63,7 @@
     knownAndUnbuilt (GAP REGISTER, added 2026-07-20 per workorder-gap-register.md: JSON-in-text
     {opener, items[{gap,anchor,since,class}], denominator}; anchored synthesis, no new facts; emitted EMPTY
     by Pass B, composed by the derivatives pass; opener declares the DOCUMENTATION BASE; four-test gate
-    asserted/gap-not-condition/internal/open; classes never-attempted | announced-not-implemented |
+    asserted/gap-not-condition/internal/open; classes no-attempt-documented | announced-not-implemented |
     attempted-and-failed | in-progress-unclosed; carries the inherited-capacity denominator guard).
   - SECURITY & DIPLOMACY: posture (new, anchored synthesis, displays first, composed LAST) / internal /
     military (new) / transnationalExposure (new) / diplomacy.

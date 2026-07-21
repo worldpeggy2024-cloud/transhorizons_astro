@@ -124,23 +124,14 @@ The opener carries no `[dot.path]` anchors and states no new facts.
 | `since` | When it was first officially identified, or the span the report gives, cited. Use `report-silent` where the report does not carry it. **Never invent a date.** |
 | `class` | One of the four below. |
 
-### The four classes — assign by decision table, keyed to what the report STATES
+### The four classes
 
-Work down the rows and take the FIRST that matches. Every row keys to a statement in the report — never to an inference from a rating movement alone.
+- **`no-attempt-documented`** — documented, internal, and the report records no attempt against it. Assign only where the report is silent on any attempt **and** carries a source that would have recorded one had it happened. *(Renamed from `never-attempted`, 2026-07-20: the class states what the report documents, never what the country did.)*
+- **`announced-not-implemented`** — the report states an announcement, commitment or plan that did not land.
+- **`attempted-and-failed`** — the report states an attempt that was made and did not close the gap.
+- **`in-progress-unclosed`** — under way, not yet closed.
 
-1. The report **states remediation work is under way** on this gap, and does not state that it failed or regressed → **`in-progress-unclosed`**.
-2. The report **states an announcement, commitment, plan or target** addressing this gap, and states no implementation or states it did not land → **`announced-not-implemented`**.
-3. The report **states an attempt, program or remediation effort AND states the gap persisted, failed or regressed after it** — including a named standing remediation record (a high-risk list, a remediation program) where the report states the area worsened between assessments → **`attempted-and-failed`**.
-4. The report **states no attempt of any kind**, and carries a source that would have recorded one had it happened → **`never-attempted`**.
-
-Tie-breakers:
-
-- A worsening rating with **no named attempt or remediation program behind it** is `never-attempted`, not `attempted-and-failed` — a measurement is not an attempt.
-- A **named standing remediation record** with a stated regression IS an attempt record — `attempted-and-failed`.
-- Where the report states both an ongoing effort and no closure, row 1 wins **unless the report itself states failure or regression**.
-- Where no row is satisfiable from stated text, assign the class requiring the least inference and flag the item in the summary.
-
-`class` is the register's one judgment; the rest of each item is the report's own statement.
+Assign from the observable record in the report only. `class` is a judgment; the rest of the item is the report's own statement. *(A tighter decision table is parked pending evidence the rename does not absorb the run-to-run instability.)*
 
 ---
 
@@ -174,7 +165,7 @@ Return ONE JSON object and nothing else before it:
     "en": {
       "opener": "…",
       "items": [
-        { "gap": "…", "anchor": ["capacity.approvals", "some-source-id"], "since": "…", "class": "never-attempted" }
+        { "gap": "…", "anchor": ["capacity.approvals", "some-source-id"], "since": "…", "class": "no-attempt-documented" }
       ],
       "denominator": "…"
     },

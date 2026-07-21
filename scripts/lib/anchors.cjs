@@ -7,10 +7,13 @@
  * anchor. Two target types:
  *   - source ids        [pbo-nato-5-percent-2026]   (lowercase-alphanumeric-hyphens)
  *   - field paths       [territory.climate]          (dot-separated camelCase)
- * The DOT is the discriminator: source ids may not contain dots or uppercase;
- * field paths always contain at least one dot — with ONE reserved exception:
- * the bare word `situation` is a field path (the event layer has no peer
- * prefix). No source may ever use the id `situation`.
+ * Marker classification (generalised 2026-07-20 after two passes hit the
+ * dotless-field ambiguity — actors, then known-and-unbuilt): a token is
+ * matched against the KNOWN FIELD-SET FIRST; only on no match does it fall
+ * back to source-id lookup. Today `situation` is the one dotless field path,
+ * but the rule is set-membership, not a special case. The companion guard —
+ * NO SOURCE ID MAY EQUAL A FIELD NAME (isReservedSourceId) — is enforced by
+ * both validators at the source-schema level.
  *
  * Rules (decided; see country-report-rework-IMPLEMENTATION.md §1 + rulings):
  *   - A field-path anchor must resolve to a field that exists and is non-empty
@@ -71,8 +74,9 @@ function extractMarkers(text) {
   let m;
   MARKER_RE.lastIndex = 0;
   while ((m = MARKER_RE.exec(String(text ?? ''))) !== null) {
-    // `situation` is the one dotless field path (reserved — never a source id).
-    out.push({ raw: m[1], type: m[1].includes('.') || m[1] === 'situation' ? 'field' : 'source' });
+    // Field-set membership FIRST; source-id lookup is the fallback. Dotted
+    // tokens are always field-shaped (unknown ones error as unknown targets).
+    out.push({ raw: m[1], type: m[1].includes('.') || FIELD_INDEX.has(m[1]) ? 'field' : 'source' });
   }
   return out;
 }
@@ -153,7 +157,7 @@ function validateScorecardAnchors(jsonText, { sourceIds, resolveField, errors, w
     if (!anchors.length) warnings.push(`scorecard_anchors.${axis}: no anchors — the rating must name the cited facts it summarises`);
     for (const a of anchors) {
       const s = String(a ?? '');
-      if (s.includes('.') || s === 'situation') {
+      if (s.includes('.') || FIELD_INDEX.has(s)) {
         if (!FIELD_INDEX.has(s)) errors.push(`scorecard_anchors.${axis}: unknown anchor target [${s}]`);
         else if (!resolveField(s)) errors.push(`scorecard_anchors.${axis}: GHOST ANCHOR [${s}] — target field empty or missing`);
       } else if (!sourceIds.has(s)) {
@@ -165,6 +169,14 @@ function validateScorecardAnchors(jsonText, { sourceIds, resolveField, errors, w
   }
 }
 
+/**
+ * Guard for the source schema: no source id may equal a field name — the
+ * marker grammar resolves field-set-first, so such an id could never be cited.
+ */
+function isReservedSourceId(id) {
+  return FIELD_INDEX.has(String(id ?? ''));
+}
+
 module.exports = {
   FIELD_COMPOSE_ORDER,
   FIELD_INDEX,
@@ -173,4 +185,5 @@ module.exports = {
   extractMarkers,
   validateFieldAnchors,
   validateScorecardAnchors,
+  isReservedSourceId,
 };

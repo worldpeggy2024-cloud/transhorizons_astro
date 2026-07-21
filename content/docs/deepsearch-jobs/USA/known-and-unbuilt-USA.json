@@ -1,0 +1,288 @@
+{
+  "knownAndUnbuilt": {
+    "en": {
+      "opener": "The United States is a heavily self-audited state, and this register rests on that: the Government Accountability Office's high-risk list and its cost-and-schedule work, the Congressional Budget Office's projections, the Council on Environmental Quality's reviews of its own permitting record, the National Center for Education Statistics, the National Center for Health Statistics, the statutory fisheries report to Congress and the Fifth National Climate Assessment all measure and publish shortfalls in detail. The register is therefore long because the documentation base is thick, not because the country performs worse than states that publish less about themselves; and on the country's own figures several of these gaps are widening rather than closing. Detail follows, gap by gap.",
+      "items": [
+        {
+          "gap": "Of the 506 federally managed fish stocks and stock complexes covered by the 2023 report to Congress, only 364 had a known overfishing status and only 263 a known overfished status, so the binding constraint on the fishery is knowledge as much as harvest.",
+          "anchor": ["territory.biosphere", "noaa-status-of-stocks"],
+          "since": "2023 report to Congress [noaa-status-of-stocks]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The country ranks among the high-readiness economies on aggregate adaptive capacity, yet that capacity does not reach the populations most exposed: low-income neighbourhoods, including those historically affected by redlining, can be as much as 12°F hotter during heatwaves than wealthier neighbourhoods in the same city and face substantially higher flood risk, so the binding constraint is distribution rather than national capacity.",
+          "anchor": ["territory.climate", "nca5-fifth-national-climate-assessment", "ndgain-country-index"],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Uncorrected death rates understate deaths by 34% for the non-Hispanic American Indian and Alaska Native population and by 3% for the Hispanic and non-Hispanic Asian populations, so misclassification persists in the death-certificate record itself and uncorrected series systematically flatter the mortality gradient.",
+          "anchor": ["society.wellbeing", "nchs-mortality-2024"],
+          "since": "2024 final mortality data [nchs-mortality-2024]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The United States ranks 27th of 143 countries overall on the Rule of Law Index but 112th of 143 on access to civil justice.",
+          "anchor": ["political.rightsAndChecks", "wjp-rule-of-law-2025"],
+          "since": "2025 index [wjp-rule-of-law-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The ordinary budget process repeatedly failed to prioritise among competing demands: the fiscal year 2026 appropriations cycle produced the longest full-government shutdown on record at 43 days, a further lapse from 1 February 2026, and a Department of Homeland Security funding lapse of 76 days — the longest shutdown of a single federal department on record — resolved only through consolidated and continuing appropriations.",
+          "anchor": ["capacity.steering", "political.shockAbsorbers", "crs-r48832-shutdowns", "house-approps-dhs-76day", "hr7148-appropriations"],
+          "since": "1 October 2025 to 30 April 2026 [crs-r48832-shutdowns][house-approps-dhs-76day]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "The Department of Homeland Security reopened without appropriations for Immigration and Customs Enforcement and Customs and Border Protection, which are financed through budget reconciliation rather than through regular annual appropriations.",
+          "anchor": ["house-approps-dhs-76day"],
+          "since": "since the department reopened on 30 April 2026 [house-approps-dhs-76day]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Announced fiscal priorities diverge from implemented ones: deficit reduction was the stated priority while the 2025 reconciliation act raised projected deficits by $4.7 trillion over 2026–2035, and closing the primary and interest-driven fiscal gap is described as technically necessary but politically constrained.",
+          "anchor": ["capacity.steering", "economy.politicalEconomy", "obbba-hr1", "cbo-budget-outlook-2026", "crfb-cbo-outlook-2026"],
+          "since": "2025 reconciliation act, against projections spanning 2026–2035 [obbba-hr1][cbo-budget-outlook-2026]",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "The median time to complete an environmental impact statement under the National Environmental Policy Act was 2.8 years for statements finalized between January 2019 and December 2024 and 2.2 years for those issued in 2024, against a pre-reform 2010–2018 median of 3.2 years and a pre-reform average of 4.5 years measured to the record of decision — faster, and still measured in years.",
+          "anchor": ["capacity.approvals", "ceq-eis-timelines-2010-2024", "ceq-eis-timeline-factsheet-2020"],
+          "since": "statements finalized 2010–2024 [ceq-eis-timelines-2010-2024]",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Environmental impact statements run well past the Council on Environmental Quality's own recommended limits of 150 pages, or 300 for proposals of unusual scope or complexity: across 761 actions with a final statement published between 2013 and 2018, draft statements averaged 575 pages, with appendices averaging a further 584 pages at draft stage and 1,042 at final.",
+          "anchor": ["capacity.approvals", "ceq-eis-timeline-factsheet-2020"],
+          "since": "final statements published 1 January 2013 to 31 December 2018 [ceq-eis-timeline-factsheet-2020]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Predictability in federal environmental review is limited less by the statute than by the absence of a governmentwide record of its own operation: the Government Accountability Office found in April 2014 that data on the number and type of most reviews were not readily available and that agencies did not routinely track environmental assessments or categorical exclusions, which the Council on Environmental Quality estimates at about 95% of all reviews.",
+          "anchor": ["capacity.approvals", "gao-nepa-review-2014"],
+          "since": "April 2014 [gao-nepa-review-2014]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Reaching a state of good repair across the 18 graded infrastructure categories is costed at $9.1 trillion against $5.4 trillion in forecast public and private investment over 2024–2033, leaving a $3.7 trillion gap, on grades that moved from D+ in 2017 to C- in 2021 to C in 2025; the grading body is a professional engineering association with a known advocacy orientation toward higher infrastructure spending.",
+          "anchor": ["capacity.delivery", "asce-infrastructure-report-card-2025"],
+          "since": "graded across the quadrennial series from 2017, with the investment gap measured over 2024–2033 [asce-infrastructure-report-card-2025]",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "The federal government has great difficulty controlling costs in a procurement portfolio of more than $750 billion, with major acquisitions at the Departments of Defense, Energy and Veterans Affairs and at the National Aeronautics and Space Administration experiencing cost growth, schedule delays or both, and both weapon systems acquisition and information-technology acquisition and management regressed between the 2023 and 2025 high-risk assessments.",
+          "anchor": ["capacity.delivery", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "regression measured between the 2023 and 2025 high-risk assessments [gao-high-risk-list][gao-high-risk-cost-schedule-2025]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Reported deferred maintenance and repairs on the federal real-property estate rose from $170 billion in 2017 to $370 billion in 2024, across 277,000 buildings whose annual maintenance and operating costs exceeded $10.3 billion in fiscal year 2023, and management of federal real property regressed between the 2023 and 2025 high-risk assessments.",
+          "anchor": ["capacity.delivery", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "$170 billion in 2017 rising to $370 billion in 2024 [gao-high-risk-cost-schedule-2025]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "The Veterans Affairs electronic health record modernisation, estimated in 2022 at $49.8 billion in life-cycle costs, had been deployed to six locations as of December 2024 with more than 160 remaining.",
+          "anchor": ["capacity.delivery", "gao-high-risk-cost-schedule-2025"],
+          "since": "life-cycle estimate dated 2022, deployment status as of December 2024 [gao-high-risk-cost-schedule-2025]",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "A 2023 operational risk assessment found 51 of the Federal Aviation Administration's 138 air traffic control systems (37%) unsustainable and a further 54 (39%) potentially unsustainable.",
+          "anchor": ["capacity.delivery", "gao-high-risk-cost-schedule-2025"],
+          "since": "2023 operational risk assessment [gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Delivery of disaster recovery was added to the high-risk list as a new area in 2025, with federal disaster assistance fragmented across more than 30 entities, against appropriations of at least $448 billion over fiscal years 2015–2024 plus $110 billion in supplemental appropriations in December 2024.",
+          "anchor": ["capacity.delivery", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "added as a new high-risk area in 2025, against appropriations spanning fiscal years 2015–2024 [gao-high-risk-list][gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Federal agencies have reported about $2.8 trillion in estimated improper payments since 2003, including more than $150 billion government-wide in each of the last seven years, with high-risk-list programmes accounting for about 80% of the government-wide estimate for fiscal year 2023.",
+          "anchor": ["capacity.publicServices", "gao-high-risk-cost-schedule-2025"],
+          "since": "reported since 2003 [gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Twenty of the 38 areas on the February 2025 high-risk list are on it in part because of skills gaps or inadequate staffing.",
+          "anchor": ["capacity.publicServices", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "February 2025 high-risk list [gao-high-risk-list]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The Food and Drug Administration conducted an average of 917 foreign food safety inspections a year over fiscal years 2018–2023, about 5% of its 19,200 annual target.",
+          "anchor": ["capacity.publicServices", "gao-high-risk-cost-schedule-2025"],
+          "since": "fiscal years 2018–2023 [gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "53% of public schools reported being understaffed entering the 2022–23 school year, among them 65% in special education and 45% in general elementary teaching, and 44% reported at least one vacant teaching position in October 2022 after the year had started, while difficulty filling positions rose across all twelve reported subject fields and completions of teacher preparation programmes fell 20%, from 189,200 in 2012–13 to 151,100 in 2019–20.",
+          "anchor": ["capacity.publicServices", "nces-condition-of-education"],
+          "since": "hiring difficulty tracked from 2011–12 to 2020–21, understaffing reported entering 2022–23 [nces-condition-of-education]",
+          "class": "no-attempt-documented"
+        }
+      ],
+      "denominator": "The capacity to close any of these rests on ground the state did not choose: a continental-scale, resource-rich but internally distant territory; a large, ageing, immigration-built population whose growth has just slowed sharply; an extensive energy and mineral endowment paired with deep import dependence on critical minerals; the world's largest and most diversified services economy; and a fiscal base carrying historically high public debt. That inheritance is distributed by history, geography and scale rather than earned, and it is the denominator against which every shortfall above is read."
+    },
+    "fr": {
+      "opener": "Les États-Unis sont un État qui s'audite abondamment lui-même, et ce registre repose là-dessus : la liste à haut risque du Government Accountability Office et ses travaux sur les coûts et les échéanciers, les projections du Congressional Budget Office, les examens que le Council on Environmental Quality consacre à son propre bilan d'autorisation, le National Center for Education Statistics, le National Center for Health Statistics, le rapport halieutique statutaire au Congrès et le Fifth National Climate Assessment mesurent et publient ces manques dans le détail. Le registre est donc long parce que la base documentaire est épaisse, et non parce que le pays ferait moins bien que des États qui publient moins sur eux-mêmes; et selon les chiffres du pays lui-même, plusieurs de ces écarts se creusent au lieu de se refermer. Le détail suit, écart par écart.",
+      "items": [
+        {
+          "gap": "Sur les 506 stocks et complexes de stocks halieutiques gérés au niveau fédéral et couverts par le rapport 2023 au Congrès, seuls 364 avaient un statut de surpêche connu et seuls 263 un statut de surexploitation connu : la contrainte qui pèse sur la pêcherie est autant cognitive qu'halieutique.",
+          "anchor": ["territory.biosphere", "noaa-status-of-stocks"],
+          "since": "rapport 2023 au Congrès [noaa-status-of-stocks]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Le pays figure parmi les économies à forte préparation en matière de capacité d'adaptation agrégée, mais cette capacité n'atteint pas les populations les plus exposées : les quartiers à faibles revenus, dont ceux historiquement touchés par le redlining, peuvent être jusqu'à 12 °F plus chauds pendant les vagues de chaleur que les quartiers aisés d'une même ville et sont nettement plus exposés aux inondations; la contrainte déterminante est donc la répartition et non la capacité nationale.",
+          "anchor": ["territory.climate", "nca5-fifth-national-climate-assessment", "ndgain-country-index"],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Les taux de mortalité non corrigés sous-estiment les décès de 34 % pour la population amérindienne et autochtone d'Alaska non hispanique et de 3 % pour les populations hispanique et asiatique non hispanique : les erreurs de classement subsistent donc dans le registre des certificats de décès lui-même, et les séries non corrigées atténuent systématiquement le gradient de mortalité.",
+          "anchor": ["society.wellbeing", "nchs-mortality-2024"],
+          "since": "données définitives de mortalité de 2024 [nchs-mortality-2024]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Les États-Unis se classent 27e sur 143 pays au total dans l'indice de l'État de droit, mais 112e sur 143 pour l'accès à la justice civile.",
+          "anchor": ["political.rightsAndChecks", "wjp-rule-of-law-2025"],
+          "since": "indice 2025 [wjp-rule-of-law-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Le processus budgétaire ordinaire a échoué de façon répétée à hiérarchiser les demandes concurrentes : le cycle d'appropriations de l'exercice 2026 a produit la plus longue fermeture complète du gouvernement jamais enregistrée, soit 43 jours, un nouveau blocage à compter du 1er février 2026 et un blocage du financement du département de la Sécurité intérieure de 76 jours — la plus longue paralysie d'un seul ministère fédéral jamais enregistrée —, résolus seulement par des appropriations consolidées et provisoires.",
+          "anchor": ["capacity.steering", "political.shockAbsorbers", "crs-r48832-shutdowns", "house-approps-dhs-76day", "hr7148-appropriations"],
+          "since": "du 1er octobre 2025 au 30 avril 2026 [crs-r48832-shutdowns][house-approps-dhs-76day]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Le département de la Sécurité intérieure a rouvert sans crédits pour Immigration and Customs Enforcement ni pour Customs and Border Protection, financés par la réconciliation budgétaire plutôt que par les appropriations annuelles ordinaires.",
+          "anchor": ["house-approps-dhs-76day"],
+          "since": "depuis la réouverture du département le 30 avril 2026 [house-approps-dhs-76day]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Les priorités budgétaires affichées divergent de celles mises en œuvre : la réduction du déficit était la priorité annoncée alors que la loi de réconciliation de 2025 a accru les déficits projetés de 4 700 milliards de dollars sur 2026-2035, et la résorption du déficit primaire et de celui tiré par les intérêts est qualifiée de techniquement nécessaire mais politiquement contrainte.",
+          "anchor": ["capacity.steering", "economy.politicalEconomy", "obbba-hr1", "cbo-budget-outlook-2026", "crfb-cbo-outlook-2026"],
+          "since": "loi de réconciliation de 2025, au regard de projections portant sur 2026-2035 [obbba-hr1][cbo-budget-outlook-2026]",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "Le délai médian d'achèvement d'une étude d'impact environnemental au titre de la loi nationale sur la politique environnementale (National Environmental Policy Act) s'établissait à 2,8 ans pour les études finalisées entre janvier 2019 et décembre 2024 et à 2,2 ans pour celles publiées en 2024, contre une médiane pré-réforme de 3,2 ans sur 2010-2018 et une moyenne pré-réforme de 4,5 ans mesurée jusqu'à la décision finale — plus rapide, et toujours compté en années.",
+          "anchor": ["capacity.approvals", "ceq-eis-timelines-2010-2024", "ceq-eis-timeline-factsheet-2020"],
+          "since": "études finalisées de 2010 à 2024 [ceq-eis-timelines-2010-2024]",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Les études d'impact environnemental dépassent largement les limites que le Council on Environmental Quality recommande lui-même — 150 pages, ou 300 pour les projets d'ampleur ou de complexité inhabituelles : sur 761 actions dont l'étude finale a été publiée entre 2013 et 2018, les projets d'étude atteignaient en moyenne 575 pages, auxquelles s'ajoutaient des annexes de 584 pages en moyenne au stade du projet et de 1 042 pages au stade final.",
+          "anchor": ["capacity.approvals", "ceq-eis-timeline-factsheet-2020"],
+          "since": "études finales publiées du 1er janvier 2013 au 31 décembre 2018 [ceq-eis-timeline-factsheet-2020]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La prévisibilité de l'examen environnemental fédéral tient moins à la loi qu'à l'absence de relevé pangouvernemental de son propre fonctionnement : le Government Accountability Office a constaté en avril 2014 que les données sur le nombre et le type de la plupart des examens n'étaient pas aisément disponibles et que les agences ne recensaient pas systématiquement les évaluations environnementales ni les exclusions catégorielles, que le Council on Environmental Quality estime à environ 95 % de l'ensemble des examens.",
+          "anchor": ["capacity.approvals", "gao-nepa-review-2014"],
+          "since": "avril 2014 [gao-nepa-review-2014]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Atteindre un bon état d'entretien dans les 18 catégories d'infrastructures notées est chiffré à 9 100 milliards de dollars, face à 5 400 milliards d'investissements publics et privés prévus sur 2024-2033, soit un écart de 3 700 milliards, sur des notes passées de D+ en 2017 à C- en 2021 puis à C en 2025; l'organisme notateur est une société savante d'ingénieurs dont l'orientation de plaidoyer en faveur d'investissements accrus est connue.",
+          "anchor": ["capacity.delivery", "asce-infrastructure-report-card-2025"],
+          "since": "noté au fil de la série quadriennale depuis 2017, l'écart d'investissement étant mesuré sur 2024-2033 [asce-infrastructure-report-card-2025]",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Le gouvernement fédéral peine fortement à maîtriser les coûts d'un portefeuille d'achats de plus de 750 milliards de dollars, les grands programmes des départements de la Défense, de l'Énergie et des Anciens Combattants ainsi que de la National Aeronautics and Space Administration connaissant des dépassements de coûts, des retards ou les deux, et l'acquisition des systèmes d'armes comme l'acquisition et la gestion des technologies de l'information ont régressé entre les évaluations à haut risque de 2023 et de 2025.",
+          "anchor": ["capacity.delivery", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "régression mesurée entre les évaluations à haut risque de 2023 et de 2025 [gao-high-risk-list][gao-high-risk-cost-schedule-2025]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "L'entretien et les réparations différés déclarés sur le patrimoine immobilier fédéral sont passés de 170 milliards de dollars en 2017 à 370 milliards en 2024, pour 277 000 bâtiments dont les coûts annuels d'entretien et d'exploitation ont dépassé 10,3 milliards lors de l'exercice 2023, et la gestion du patrimoine immobilier fédéral a régressé entre les évaluations à haut risque de 2023 et de 2025.",
+          "anchor": ["capacity.delivery", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "de 170 milliards de dollars en 2017 à 370 milliards en 2024 [gao-high-risk-cost-schedule-2025]",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "La modernisation du dossier de santé électronique des Anciens Combattants, dont le coût sur le cycle de vie était estimé en 2022 à 49,8 milliards de dollars, n'avait été déployée que sur six sites en décembre 2024, plus de 160 restant à couvrir.",
+          "anchor": ["capacity.delivery", "gao-high-risk-cost-schedule-2025"],
+          "since": "estimation du cycle de vie datée de 2022, état de déploiement en décembre 2024 [gao-high-risk-cost-schedule-2025]",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Une évaluation des risques opérationnels de 2023 a conclu que 51 des 138 systèmes de contrôle aérien de la Federal Aviation Administration (37 %) n'étaient pas soutenables, 54 autres (39 %) étant potentiellement non soutenables.",
+          "anchor": ["capacity.delivery", "gao-high-risk-cost-schedule-2025"],
+          "since": "évaluation des risques opérationnels de 2023 [gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La prestation de l'aide au relèvement après catastrophe a été ajoutée à la liste à haut risque comme nouveau domaine en 2025, l'aide fédérale étant fragmentée entre plus de 30 entités, face à des crédits d'au moins 448 milliards de dollars sur les exercices 2015-2024 auxquels s'ajoutent 110 milliards de crédits supplémentaires en décembre 2024.",
+          "anchor": ["capacity.delivery", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "ajoutée comme nouveau domaine à haut risque en 2025, face à des crédits couvrant les exercices 2015-2024 [gao-high-risk-list][gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Les agences fédérales ont déclaré environ 2 800 milliards de dollars de paiements indus estimés depuis 2003, dont plus de 150 milliards à l'échelle du gouvernement chaque année depuis sept ans, les programmes inscrits à la liste à haut risque représentant environ 80 % de l'estimation gouvernementale pour l'exercice 2023.",
+          "anchor": ["capacity.publicServices", "gao-high-risk-cost-schedule-2025"],
+          "since": "déclarés depuis 2003 [gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Vingt des 38 domaines de la liste à haut risque de février 2025 y figurent en partie en raison de déficits de compétences ou d'effectifs insuffisants.",
+          "anchor": ["capacity.publicServices", "gao-high-risk-list", "gao-high-risk-cost-schedule-2025"],
+          "since": "liste à haut risque de février 2025 [gao-high-risk-list]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La Food and Drug Administration a mené en moyenne 917 inspections alimentaires à l'étranger par an sur les exercices 2018-2023, soit environ 5 % de sa cible annuelle de 19 200.",
+          "anchor": ["capacity.publicServices", "gao-high-risk-cost-schedule-2025"],
+          "since": "exercices 2018-2023 [gao-high-risk-cost-schedule-2025]",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "53 % des écoles publiques déclaraient manquer de personnel à l'entrée de l'année scolaire 2022-2023, dont 65 % en éducation spécialisée et 45 % en enseignement primaire général, et 44 % faisaient état d'au moins un poste d'enseignant vacant en octobre 2022, l'année déjà commencée, tandis que les difficultés de recrutement se sont accrues dans les douze disciplines recensées et que les diplômés des programmes de formation à l'enseignement ont reculé de 20 %, de 189 200 en 2012-2013 à 151 100 en 2019-2020.",
+          "anchor": ["capacity.publicServices", "nces-condition-of-education"],
+          "since": "difficultés de recrutement suivies de 2011-2012 à 2020-2021, manque de personnel déclaré à l'entrée de 2022-2023 [nces-condition-of-education]",
+          "class": "no-attempt-documented"
+        }
+      ],
+      "denominator": "La capacité de refermer l'un quelconque de ces écarts repose sur un terrain que l'État n'a pas choisi : un territoire à l'échelle continentale, riche en ressources mais aux distances internes considérables; une population nombreuse, vieillissante et bâtie par l'immigration, dont la croissance vient de ralentir fortement; une vaste dotation énergétique et minérale associée à une forte dépendance aux importations de minéraux critiques; la plus grande et la plus diversifiée des économies de services au monde; et une base budgétaire portant une dette publique historiquement élevée. Cet héritage est distribué par l'histoire, la géographie et l'échelle — jamais mérité ni acquis — et il constitue le dénominateur au regard duquel se lit chacun des manques ci-dessus."
+    }
+  },
+  "notCarried": [
+    { "candidate": "100% net import reliance on 16 nonfuel mineral commodities, with China the primary source for 14 of the most import-dependent critical minerals", "test": "Test 3 — INTERNAL: an external dependency; the report asserts no unbuilt domestic response to it, only mining projects already carrying in-progress status on the permitting dashboard" },
+    { "candidate": "Foreign holdings of Treasury securities at roughly $9.2 trillion, about 31% of federal debt, concentrated in Japan, the United Kingdom and mainland China", "test": "Test 3 — INTERNAL: external exposure, and the report states the country faces no sovereign external financing constraint" },
+    { "candidate": "Ageing population and the historic fall in net international migration", "test": "Test 2 — A GAP, NOT A CONDITION: a demographic trend" },
+    { "candidate": "Public debt rising from 101% of GDP in 2026 toward 120% by 2036, with net interest doubling to $2.1 trillion", "test": "Test 2 — A GAP, NOT A CONDITION: a fiscal condition and trajectory; the closable shortfall is carried as the announced-versus-implemented consolidation item" },
+    { "candidate": "Trust in the federal government at 17%, near a seventy-year low and partisan-sorted", "test": "Test 2 — A GAP, NOT A CONDITION: a measured condition" },
+    { "candidate": "V-Dem downgrade from liberal to electoral democracy, the 3-point Freedom House decline, and the lowest-ever Corruption Perceptions Index score", "test": "Test 2 — A GAP, NOT A CONDITION: measured trends in scored condition, not a shortfall between a capability and a requirement" },
+    { "candidate": "Erosion of anticorruption safeguards recorded under the current administration", "test": "Test 2 — A GAP, NOT A CONDITION: a reversal of an existing safeguard rather than a capability never built" },
+    { "candidate": "Residents of the five inhabited unincorporated territories holding no presidential vote and no voting congressional representation", "test": "Test 2 — A GAP, NOT A CONDITION: the report states this as the constitutional regime established by the Insular Cases, not as a shortfall the state has documented against itself" },
+    { "candidate": "Voided 2030 and 2035 Nationally Determined Contribution targets, no net-zero target, and a 'Critically Insufficient' overall rating", "test": "Test 2 — A GAP, NOT A CONDITION: the report states the standard was withdrawn as a policy choice, not left unmet as an open internal shortfall" },
+    { "candidate": "Federal offshore wind projects carrying paused or cancelled status on the permitting dashboard while mining projects carry in-progress status", "test": "Test 2 — A GAP, NOT A CONDITION: the report attributes the sectoral skew to policy direction, and a policy choice is not a capability shortfall" },
+    { "candidate": "Fresh groundwater withdrawals rising about 8% while surface withdrawals fell, shifting extraction toward the slower-recharging stock", "test": "Test 2 — A GAP, NOT A CONDITION: a trend in resource use" },
+    { "candidate": "Mortality and educational attainment gradients by race and ethnicity", "test": "Test 2 — A GAP, NOT A CONDITION: measured outcomes; the measurement defect that flattens the mortality gradient is carried instead" },
+    { "candidate": "Rebuilding the defence industrial base as a 2026 National Defense Strategy priority", "test": "Test 1 — ASSERTED: the report states the strategic priority but never states the shortfall it addresses" },
+    { "candidate": "Shift toward allied burden-sharing, with European allies directed to lead their own defence", "test": "Test 1 — ASSERTED: a stated strategic reorientation, not a documented shortfall; and its object lies outside the country's own authority" },
+    { "candidate": "Unresolved refund process for the terminated tariffs collected under emergency economic powers, exposure above $160 billion", "test": "Test 2 — A GAP, NOT A CONDITION: an open consequence of a court ruling rather than a documented shortfall between capability and requirement" },
+    { "candidate": "The 10% import surcharge expiring by operation of law on 24 July 2026 absent congressional extension, with replacement investigations pending", "test": "Test 2 — A GAP, NOT A CONDITION: a statutory clock and a pending policy choice" },
+    { "candidate": "Active hostilities with Iran, the naval blockade and the collapsed ceasefire", "test": "Test 3 — INTERNAL: closing this does not lie within the country's own authority alone" },
+    { "candidate": "Venezuela transition and the custody of the former Venezuelan president pending trial", "test": "Test 3 — INTERNAL: an external operation and its consequences" },
+    { "candidate": "Absence of any usable source measuring current interstate barriers to the movement of goods, labour and capital", "test": "Test 1 — ASSERTED: carries no source identifier, and it is a gap in the report's own sourcing rather than in the state's capacity" },
+    { "candidate": "Absence of source coverage on internal transport self-sufficiency", "test": "Test 1 — ASSERTED: carries no source identifier for a shortfall; the report states only that the approved sources do not characterise it" },
+    { "candidate": "Electricity consumption rising 2.1% annually, driven by data centres and artificial intelligence", "test": "Test 2 — A GAP, NOT A CONDITION: a demand trend; the report asserts no generation or grid capacity that fails to meet it" },
+    { "candidate": "Increased political variability of enforcement following at-will presidential removal of independent regulators", "test": "Test 2 — A GAP, NOT A CONDITION: a contested reallocation of power, preserved as such, not a capability shortfall" }
+  ],
+  "undatedGaps": [
+    { "field": "territory.climate", "gap": "Adaptive capacity not reaching the most exposed populations", "note": "the report carries no date and no duration for this gap — only the observational spans behind the underlying climate findings" },
+    { "field": "territory.biosphere", "gap": "Incomplete assessment coverage of federally managed fish stocks", "note": "the report carries the 2023 reporting year but no duration — it does not say how long assessment coverage has been incomplete" },
+    { "field": "society.wellbeing", "gap": "Death-certificate misclassification of race and ethnicity in the mortality record", "note": "the report carries the 2024 data year but no duration and no first identification" },
+    { "field": "political.rightsAndChecks", "gap": "Access to civil justice ranked 112th of 143", "note": "the report carries a single index year with no prior-year series, so no duration can be read from it" },
+    { "field": "capacity.delivery", "gap": "Air traffic control systems assessed as unsustainable", "note": "the report carries the 2023 assessment date but no duration and no earlier identification" },
+    { "field": "capacity.publicServices", "gap": "Skills gaps and inadequate staffing behind twenty of the thirty-eight high-risk areas", "note": "the report carries the February 2025 list date but no duration" }
+  ]
+}
