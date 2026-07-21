@@ -104,6 +104,10 @@ let sourcesFrameworkRef: React.RefObject<FrameworkSectionHandle | null> | null =
 // scrolls — [§] markers and scorecard/gap-register anchor chips all need it,
 // because a field block inside a collapsed section isn't in the DOM.
 let openPeerAndScroll: ((id: string) => void) | null = null;
+// Scroll position to restore when the reader jumped from the scorecard (which
+// has no data-section wrapper the toast's Back can target). Null = the Back
+// button uses the ordinary section lookup.
+let backScrollY: number | null = null;
 
 // Store state for tracking which section the reader was in
 let lastClickedSectionName: string = '';
@@ -178,6 +182,7 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
           const element = (e.target as HTMLElement).closest('[data-section]');
           const sectionName = element?.getAttribute('data-section') || 'Report';
           if (setLastClickedSectionName) {
+            backScrollY = null; // section jump: Back targets the wrapper, not a stored position
             setLastClickedSectionName(sectionName);
           }
           if (sourcesFrameworkRef?.current) {
@@ -443,6 +448,12 @@ function ScoreRow({ label, value, language, detail }: {
                     className="font-body text-[10px] px-1.5 py-0.5 border border-[var(--cr-border)] rounded text-[var(--cr-accent)] hover:bg-[var(--cr-hover)]"
                     onClick={(e) => {
                       e.preventDefault();
+                      // Same return affordance the prose markers get: remember
+                      // where the reader was and show the Back toast (the
+                      // scorecard has no data-section, so Back restores the
+                      // scroll position instead).
+                      backScrollY = window.scrollY;
+                      setLastClickedSectionName?.(language === 'fr' ? 'Tableau de bord rapide' : 'Quick scorecard');
                       if (isField) {
                         // Open the accordion first — a collapsed section's
                         // field blocks aren't in the DOM.
@@ -619,7 +630,7 @@ function SectionNav({ items, language, onNavigate }: {
       {/* Capped + internally scrollable so the scorecard below stays in
           view — the subsection lists make the full nav taller than the
           viewport on desktop. */}
-      <ul ref={navListRef} className="space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
+      <ul ref={navListRef} className="cr-scroll space-y-1.5 max-h-[42vh] overflow-y-auto overscroll-contain pr-1">
         {items.map(({ id, label, children }) => (
           <li key={id}>
             <a
@@ -1176,7 +1187,7 @@ export default function CountryPage() {
             scorecard (and its expanded details) stays reachable at any page
             position — previously it was only reachable with the page scrolled
             to the bottom (sticky release). */}
-        <aside className="hidden lg:block sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pr-1">
+        <aside className="cr-scroll hidden lg:block sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pr-1">
           <SectionNav items={navItems} language={language} onNavigate={openAndScroll} />
           {!scorecardPending && (
             <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
@@ -1447,6 +1458,14 @@ export default function CountryPage() {
               </span>
               <button
                 onClick={() => {
+                  // Scorecard jumps store a scroll position (no data-section
+                  // to target); ordinary section jumps look the wrapper up.
+                  if (backScrollY !== null) {
+                    window.scrollTo({ top: backScrollY, behavior: 'smooth' });
+                    backScrollY = null;
+                    setClickedSection('');
+                    return;
+                  }
                   const sectionElement = document.querySelector(`[data-section="${clickedSection}"]`);
                   if (sectionElement) {
                     sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
