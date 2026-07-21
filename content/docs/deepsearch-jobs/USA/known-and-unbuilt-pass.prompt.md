@@ -1,6 +1,6 @@
 # Known and Unbuilt — composition pass
 
-**Country:** United States / États-Unis (USA) · **Run date:** 2026-07-20
+**Country:** United States / États-Unis (USA) · **Run date:** 2026-07-21
 
 Compose one field of a finished country report: `capacity_knownAndUnbuilt_en` and `capacity_knownAndUnbuilt_fr`. No project context is assumed — everything you need is in this prompt and the attached file.
 
@@ -131,7 +131,9 @@ The opener carries no `[dot.path]` anchors and states no new facts.
 - **`attempted-and-failed`** — the report states an attempt that was made and did not close the gap.
 - **`in-progress-unclosed`** — under way, not yet closed.
 
-Assign from the observable record in the report only. `class` is a judgment; the rest of the item is the report's own statement. *(A tighter decision table is parked pending evidence the rename does not absorb the run-to-run instability.)*
+**A rating that worsened across assessments is not by itself evidence of an attempt.** Assign `attempted-and-failed` only where the report states an attempt was made and did not close the gap; assign `in-progress-unclosed` only where the report states work is under way.
+
+Assign from the observable record in the report only. `class` is a judgment; the rest of the item is the report's own statement. *(Two boundaries, two text tests — does the report mention an attempt; does the report state one was made or under way. A fuller decision table is warranted only if a third run still diverges after both.)*
 
 ---
 
