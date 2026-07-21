@@ -1195,7 +1195,7 @@ export default function CountryPage() {
         {/* 1. Territory */}
         {hasTerritory && (
           <div data-section="Territory" id="territory" style={{ scrollMarginTop: 96 }}>
-          <FrameworkSection ref={(el) => { sectionRefs.current.territory = el; }} icon={Mountain} title={t.territory} headerNote={sectionMeta(territoryRows.map(([, text]) => text))}>
+          <FrameworkSection ref={(el) => { sectionRefs.current.territory = el; }} icon={Mountain} title={t.territory} headerNote={sectionMeta(territoryRows.map(([, text]) => text))} headerNoteTitle={sectionMetaHint}>
             <div className="space-y-6">
               {territoryRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
@@ -1210,7 +1210,7 @@ export default function CountryPage() {
 
         {/* 2. Society */}
         <div data-section="Society" id="society" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.society = el; }} icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta(societyRows.map(([, text]) => text)) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.society = el; }} icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta(societyRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasSociety ? (
             <div className="space-y-6">
               {societyRows.map(([title, text, fieldId]) => (
@@ -1228,7 +1228,7 @@ export default function CountryPage() {
 
         {/* 3. Economy */}
         <div data-section="Economy" id="economy" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.economy = el; }} icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta(economyRows.map(([, text]) => text)) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.economy = el; }} icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta(economyRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasAnalysis ? (
             <div className="space-y-6">
               {economyRows.map(([title, text, fieldId]) => (
@@ -1246,7 +1246,7 @@ export default function CountryPage() {
 
         {/* 4. Political Order */}
         <div data-section="Political Stability" id="political" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.political = el; }} icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta(politicalRows.map(([, text]) => text)) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.political = el; }} icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta(politicalRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasAnalysis ? (
             <div className="space-y-6">
               {politicalRows.map(([title, text, fieldId]) => (
@@ -1265,7 +1265,7 @@ export default function CountryPage() {
         {/* 5. Capacity to Deliver */}
         {hasCapacity && (
           <div data-section="Capacity" id="capacity" style={{ scrollMarginTop: 96 }}>
-          <FrameworkSection ref={(el) => { sectionRefs.current.capacity = el; }} icon={Hammer} title={t.capacity} headerNote={sectionMeta(capacityRows.map(([, text]) => text))}>
+          <FrameworkSection ref={(el) => { sectionRefs.current.capacity = el; }} icon={Hammer} title={t.capacity} headerNote={sectionMeta(capacityRows.map(([, text]) => text))} headerNoteTitle={sectionMetaHint}>
             <div className="space-y-6">
               {capacityRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
@@ -1306,7 +1306,7 @@ export default function CountryPage() {
 
         {/* 6. Security & Diplomacy — posture displays first (composed last) */}
         <div data-section="Security & Diplomacy" id="security" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.security = el; }} icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta(securityRows.map(([, text]) => text)) : undefined}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.security = el; }} icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta(securityRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasAnalysis ? (
             <div className="space-y-6">
               {securityRows.map(([title, text, fieldId]) => (
