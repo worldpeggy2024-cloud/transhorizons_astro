@@ -616,6 +616,41 @@
       "field": "society.wellbeing",
       "gap": "Race and ethnicity misclassification on death certificates",
       "note": "The report carries the 2024 mortality data as a measurement date; the correction factors imply a longer-standing defect the report does not date"
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "Reaching a state of good repair across the eighteen infrastructure categories graded in 20",
+      "note": "since silenced at install per the since rule of 2026-07-21 (grading-series vintages (D+ 2017 … C 2025) — measurement editions, not a duration of the gap); the displaced text read: \"The report carries the grading series from D+ in 2017 through C- in 2021 to C in 2025, the first C in the series [asce-infrastructure-report-card-2025].\""
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "The federal government has great difficulty controlling costs across a procurement portfol",
+      "note": "since silenced at install per the since rule of 2026-07-21 (its own since text states the report carries no first-identification date); the displaced text read: \"The report dates the regression of weapon-systems and information-technology acquisition to between the 2023 and 2025 assessments; it carries no first-identification date for the cost-control finding itself [gao-high-risk-list].\""
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "The Department of Veterans Affairs electronic health record modernisation, estimated in 20",
+      "note": "since silenced at install per the since rule of 2026-07-21 (2022 estimate and December 2024 status are vintages of an unclosed programme); the displaced text read: \"Life-cycle costs were estimated in 2022; deployment stood at six locations in December 2024 [gao-high-risk-cost-schedule-2025].\""
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "A 2023 operational risk assessment found 51 of the Federal Aviation Administration's 138 a",
+      "note": "since silenced at install per the since rule of 2026-07-21 (the 2023 assessment is a measurement date); the displaced text read: \"The 2023 operational risk assessment [gao-high-risk-cost-schedule-2025].\""
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "The Food and Drug Administration conducted an average of 917 foreign food safety inspectio",
+      "note": "since silenced at install per the since rule of 2026-07-21 (the FY2018–2023 average is a measurement window); the displaced text read: \"The fiscal year 2018–2023 average, measured against the standing annual target [gao-high-risk-cost-schedule-2025].\""
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "Fifty-three per cent of public schools reported being understaffed entering the 2022–23 sc",
+      "note": "since silenced at install per the since rule of 2026-07-21 (tracking series (2011–12 … 2022–23) are measurement vintages); the displaced text read: \"The report tracks hiring difficulty from 2011–12 and preparation-programme completions from 2012–13 [nces-condition-of-education].\""
+    },
+    {
+      "field": "applied-at-install",
+      "gap": "Environmental impact statements run well past the Council on Environmental Quality's own r",
+      "note": "since silenced at install per the since rule of 2026-07-21 (the 2013–2018 window is the measurement span of the study); the displaced text read: \"Measured across final statements published between 1 January 2013 and 31 December 2018 [ceq-eis-timeline-factsheet-2020].\""
     }
   ]
 }

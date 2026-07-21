@@ -149,7 +149,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.delivery",
           "asce-infrastructure-report-card-2025"
         ],
-        "since": "The report carries the grading series from D+ in 2017 through C- in 2021 to C in 2025, the first C in the series [asce-infrastructure-report-card-2025].",
+        "since": "report-silent",
         "class": "in-progress-unclosed"
       },
       {
@@ -159,7 +159,7 @@ capacity_knownAndUnbuilt_en: |-
           "gao-high-risk-cost-schedule-2025",
           "gao-high-risk-list"
         ],
-        "since": "The report dates the regression of weapon-systems and information-technology acquisition to between the 2023 and 2025 assessments; it carries no first-identification date for the cost-control finding itself [gao-high-risk-list].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -178,7 +178,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.delivery",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "Life-cycle costs were estimated in 2022; deployment stood at six locations in December 2024 [gao-high-risk-cost-schedule-2025].",
+        "since": "report-silent",
         "class": "in-progress-unclosed"
       },
       {
@@ -187,7 +187,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.delivery",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "The 2023 operational risk assessment [gao-high-risk-cost-schedule-2025].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -233,7 +233,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.publicServices",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "The fiscal year 2018–2023 average, measured against the standing annual target [gao-high-risk-cost-schedule-2025].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -242,7 +242,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.publicServices",
           "nces-condition-of-education"
         ],
-        "since": "The report tracks hiring difficulty from 2011–12 and preparation-programme completions from 2012–13 [nces-condition-of-education].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -251,7 +251,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.approvals",
           "ceq-eis-timeline-factsheet-2020"
         ],
-        "since": "Measured across final statements published between 1 January 2013 and 31 December 2018 [ceq-eis-timeline-factsheet-2020].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -369,7 +369,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.delivery",
           "asce-infrastructure-report-card-2025"
         ],
-        "since": "Le rapport porte la série de notes, de D+ en 2017 à C- en 2021 puis C en 2025, première note C de la série [asce-infrastructure-report-card-2025].",
+        "since": "report-silent",
         "class": "in-progress-unclosed"
       },
       {
@@ -379,7 +379,7 @@ capacity_knownAndUnbuilt_fr: |-
           "gao-high-risk-cost-schedule-2025",
           "gao-high-risk-list"
         ],
-        "since": "Le rapport situe la régression de l'acquisition des systèmes d'armes et des technologies de l'information entre les évaluations de 2023 et de 2025; il ne porte aucune date de première identification pour le constat de maîtrise des coûts lui-même [gao-high-risk-list].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -398,7 +398,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.delivery",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "Le coût sur le cycle de vie a été estimé en 2022; le déploiement s'établissait à six sites en décembre 2024 [gao-high-risk-cost-schedule-2025].",
+        "since": "report-silent",
         "class": "in-progress-unclosed"
       },
       {
@@ -407,7 +407,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.delivery",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "L'évaluation des risques opérationnels de 2023 [gao-high-risk-cost-schedule-2025].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -453,7 +453,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.publicServices",
           "gao-high-risk-cost-schedule-2025"
         ],
-        "since": "La moyenne des exercices 2018-2023, mesurée par rapport à la cible annuelle en vigueur [gao-high-risk-cost-schedule-2025].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -462,7 +462,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.publicServices",
           "nces-condition-of-education"
         ],
-        "since": "Le rapport suit les difficultés de recrutement depuis 2011-2012 et les diplômés des programmes de formation depuis 2012-2013 [nces-condition-of-education].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
@@ -471,7 +471,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.approvals",
           "ceq-eis-timeline-factsheet-2020"
         ],
-        "since": "Mesuré sur les études finales publiées entre le 1er janvier 2013 et le 31 décembre 2018 [ceq-eis-timeline-factsheet-2020].",
+        "since": "report-silent",
         "class": "no-attempt-documented"
       },
       {
