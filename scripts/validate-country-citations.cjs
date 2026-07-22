@@ -256,6 +256,27 @@ function validateCountryFile(filePath) {
     }
   }
 
+  // EN/FR paragraph parity (added 2026-07-21 after a Keystatic editing pass
+  // lost two FR paragraphs and an EN section silently): substance review can't
+  // see what isn't there, but a paragraph-count mismatch between the language
+  // pair is mechanical. Counts on the loaded value — folded scalars (>-) turn
+  // blank-line paragraph breaks into single \n. Narrative fields only; the
+  // JSON-in-text pairs (actors, gap register, situation) are excluded — their
+  // internal parity is the citation-parity manual check.
+  const paragraphCount = (v) => v.trim().split(/\n+/).filter((p) => p.trim()).length;
+  const parityExempt = new Set([...jsonTextFields, 'situation_en', 'situation_fr']);
+  for (const [k, v] of Object.entries(data)) {
+    if (!k.endsWith('_en') || parityExempt.has(k)) continue;
+    const fk = k.slice(0, -3) + '_fr';
+    const fv = data[fk];
+    if (typeof v !== 'string' || typeof fv !== 'string' || !v.trim() || !fv.trim()) continue;
+    const en = paragraphCount(v);
+    const fr = paragraphCount(fv);
+    if (en !== fr) {
+      warnings.push(`PARITY ${k.slice(0, -3)}: EN has ${en} paragraph(s), FR has ${fr} — likely missing content on the ${en > fr ? 'FR' : 'EN'} side`);
+    }
+  }
+
   const contentClone = { ...data };
   delete contentClone.sources;
 

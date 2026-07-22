@@ -704,7 +704,11 @@ society_language_en: >-
   bilingual Canadians living in Quebec [statcan-2021-census-language]. It is
   carried mainly by minorities: 85.3% of French-mother-tongue people outside
   Quebec are bilingual, against 9.0% of English-mother-tongue people
-  [statcan-2021-census-language].
+  [statcan-2021-census-language]. Minority-language schooling shows the same
+  asymmetry: 897,000 children were eligible for instruction in the minority
+  official language in 2021 — 593,000 in French outside Quebec, 304,000 in
+  English in Quebec — and take-up was 64.7% of eligible children outside Quebec
+  against 76.2% inside it [statcan-minority-instruction-2021].
 
 
   Language structures authority through the demographic movement beneath these
@@ -739,131 +743,323 @@ society_language_fr: >-
   bilingues sur dix vivant au Québec [statcan-2021-census-language]. Il est
   porté principalement par les minorités : 85,3 % des personnes de langue
   maternelle française hors Québec sont bilingues, contre 9,0 % des personnes de
-  langue maternelle anglaise [statcan-2021-census-language].
+  langue maternelle anglaise [statcan-2021-census-language]. La scolarisation
+  dans la langue en situation minoritaire présente la même asymétrie : 897 000
+  enfants étaient admissibles à l'enseignement dans la langue officielle
+  minoritaire en 2021 (593 000 en français hors Québec et 304 000 en anglais au
+  Québec); le taux de fréquentation s'établissait à 64,7 % des enfants
+  admissibles hors Québec, contre 76,2 % au Québec
+  [statcan-minority-instruction-2021].
 
 
-  Language structures authority through the demographic movement beneath these
-  shares. French grows in absolute numbers and falls in share, from 27.2 % of the
-  population in 1971 to 21.4 % in 2021, because speakers of other languages grow
-  faster [statcan-2021-census-language]. In Quebec, the population whose first
-  official language is English passed one million for the first time, rising to
-  13.0 % [statcan-2021-census-language]. That divergence is what the federal
-  official-languages regime and Quebec's Charter of the French language each
-  respond to.
+  La langue structure l'autorité par le mouvement démographique qui sous-tend
+  ces proportions. Le français progresse en nombres absolus et recule en
+  proportion, passant de 27,2 % de la population en 1971 à 21,4 % en 2021, parce
+  que les locuteurs d'autres langues progressent plus rapidement
+  [statcan-2021-census-language]. Au Québec, la population dont la première
+  langue officielle parlée est l'anglais a franchi pour la première fois le
+  seuil du million, atteignant 13,0 % [statcan-2021-census-language]. C'est à
+  cette divergence que répondent, chacune à sa manière, la Loi fédérale sur les
+  langues officielles [justice-official-languages-act] et la Charte de la langue
+  française du Québec [legisquebec-charte-langue-francaise].
 society_religion_en: >-
-  Religion in Canada is measured by the Census, which is self-declared and
-  voluntary — tending to overcount nominal "Christian" among the non-practising
-  and to undercount both practising believers in some non-Christian traditions
-  and syncretic Indigenous practice [statcan-2021-census-ethno-religion].
-  Composition in 2021: ~53% Christian (of which ~30% Catholic, ~23% Protestant
-  and other Christian); ~35% no religious affiliation; ~5% Muslim; ~2% Hindu;
-  ~2% Sikh; the remaining ~3% includes Buddhist, Jewish, and Indigenous
-  spiritual traditions. The Catholic/Protestant fault line (French Catholic
-  Quebec vs. British Protestant English Canada) is historically significant but
-  has faded as a political cleavage since the Quiet Revolution; the growing
-  Muslim and Hindu communities are metropolitan and young, with no
-  religious-bloc political organisation. Political salience is low: Canada is a
-  secular state, faith-based mobilisation is marginal in federal politics, and
-  high observance in immigrant communities does not translate into bloc voting
-  [freedom-house-canada-2026][statcan-2021-census-ethno-religion].
+  Religion is recorded by the census long-form questionnaire as self-declared
+  affiliation, not belief or practice, so the figures describe identification
+  and say nothing about observance; the question also takes one answer per
+  person, so practice that coexists with a declared affiliation (Indigenous
+  ceremonial practice in particular) does not appear in the count
+  [statcan-2021-census-ethno-religion]. In 2021 about 53% of the population
+  reported a Christian affiliation, of which roughly 30% Catholic and 23% other
+  Christian; 35% reported no religious affiliation; 5% Muslim; 2% Hindu; 2%
+  Sikh; and the remaining 3% Buddhist, Jewish and Indigenous spiritual
+  traditions [statcan-2021-census-ethno-religion].
+
+
+  The historic Catholic–Protestant fault line — Catholic French Quebec against
+  Protestant British English Canada — has faded as a political cleavage since
+  the Quiet Revolution [statcan-2021-census-ethno-religion]. Federal salience is
+  low: the state is secular, faith-based mobilisation is marginal, and the
+  growing Muslim, Hindu and Sikh populations are metropolitan and young without
+  organising as voting blocs
+  [freedom-house-canada-2026][statcan-2021-census-ethno-religion]. What replaced
+  the confessional cleavage is a dispute over state secularism, live in Quebec
+  and absent federally. Quebec's Act respecting the laicity of the State bars
+  provincial public employees in positions of authority — including judges,
+  police officers and teachers — from wearing religious symbols on duty, and is
+  shielded from Charter review by the notwithstanding clause
+  [legisquebec-laicite-etat]; successive statutes have widened it in April 2026,
+  when the reinforcement Act extended the reach of laicity beyond state
+  employment into the public domain, restricting collective religious practice
+  in publicly controlled spaces from September 2026
+  [quebec-loi-renforcement-laicite-2026][quebec-bulletin-laicite-municipal-2026].
+  Its constitutionality is before the Supreme Court of Canada
+  [scc-41231-laicite].
 society_religion_fr: >-
-  La religion au Canada est mesurée par le Recensement, sur une base déclarative
-  et volontaire; ce qui tend à surestimer le nombre de « chrétiens » nominaux
-  parmi les non-pratiquants et à sous-estimer à la fois les croyants pratiquants
-  de certaines traditions non chrétiennes et les pratiques autochtones
-  syncrétiques [statcan-2021-census-ethno-religion]. Composition en 2021 :
-  environ 53 % de chrétiens (dont environ 30 % de catholiques et 23 % de
-  protestants et autres chrétiens); environ 35 % de personnes sans affiliation
-  religieuse; environ 5 % de musulmans; environ 2 % d'hindous; environ 2 % de
-  sikhs; les 3 % restants comprennent les traditions bouddhiste, juive et
-  spirituelles autochtones. La ligne de faille catholique/protestante (Québec
-  catholique francophone par rapport au Canada anglais protestant britannique)
-  est historiquement significative, mais s'est estompée comme clivage politique
-  depuis la Révolution tranquille; les communautés musulmane et hindoue en
-  croissance sont métropolitaines et jeunes, sans organisation politique de bloc
-  religieux. La saillance politique est faible : le Canada est un État laïc, la
-  mobilisation confessionnelle est marginale en politique fédérale, et une
-  pratique religieuse élevée dans les communautés immigrantes ne se traduit pas
-  par un vote de bloc
-  [freedom-house-canada-2026][statcan-2021-census-ethno-religion].
+  La religion est consignée par le questionnaire détaillé du recensement comme
+  une affiliation autodéclarée, et non comme une croyance ou une pratique, de
+  sorte que les chiffres décrivent l'identification et ne disent rien de
+  l'observance; la question n'admet en outre qu'une seule réponse par personne,
+  si bien que les pratiques qui coexistent avec une affiliation déclarée
+  (pratiques cérémonielles autochtones en particulier) n'apparaissent pas dans
+  le décompte [statcan-2021-census-ethno-religion]. En 2021, environ 53 % de la
+  population a déclaré une affiliation chrétienne, dont environ 30 % de
+  catholiques et 23 % de chrétiens d'autres confessions; 35 % ont déclaré
+  n'avoir aucune affiliation religieuse; 5 % étaient musulmans; 2 % hindous; 2 %
+  sikhs; et les 3 % restants se répartissaient entre les traditions bouddhistes,
+  juives et spirituelles autochtones [statcan-2021-census-ethno-religion].
+
+
+  La ligne de fracture historique catholiques–protestants (le Québec français et
+  catholique face au Canada anglais britannique et protestant) s'est estompée
+  comme clivage politique depuis la Révolution tranquille
+  [statcan-2021-census-ethno-religion]. Sa saillance fédérale est faible :
+  l'État est laïque, la mobilisation confessionnelle est marginale, et les
+  populations musulmane, hindoue et sikhe, en croissance, sont métropolitaines
+  et jeunes, sans s'organiser en blocs électoraux
+  [freedom-house-canada-2026][statcan-2021-census-ethno-religion]. Un différend
+  sur la laïcité de l'État, vif au Québec et absent à l'échelon fédéral, a
+  remplacé le clivage confessionnel. La Loi sur la laïcité de l'État du Québec
+  interdit aux employés des services publics provinciaux en position d'autorité
+  (dont les juges, les policiers et les enseignants) le port de symboles
+  religieux dans l'exercice de leurs fonctions. Elle est soustraite au contrôle
+  fondé sur la Charte par la disposition de dérogation
+  [legisquebec-laicite-etat]. Des lois successives en ont élargi la portée. La
+  loi de renforcement d'avril 2026, a étendu la laïcité au-delà de l'emploi
+  étatique jusque dans le domaine public, restreignant la pratique religieuse
+  collective dans les espaces sous contrôle public à compter de septembre 2026
+  [quebec-loi-renforcement-laicite-2026][quebec-bulletin-laicite-municipal-2026].
+  Sa constitutionnalité est actuellement examinée par la Cour suprême du Canada
+  [scc-41231-laicite].
+society_wellbeing_en: >-
+  Life expectancy at birth reached 82.16 years in 2024, a second consecutive
+  annual increase and effectively a return to the 2019 level of 82.22 years
+  after the pandemic decline; it stands at 80.03 years for men and 84.29 years
+  for women, and the strongest recovery was in the western provinces
+  [statcan-deaths-2024]. Perceived health has moved the other way: the share of
+  adults rating their health as very good or excellent fell from roughly six in
+  ten over 2015 to 2020 to 52.2% in 2023, and to 40.5% among those aged 65 and
+  over; it splits by income, 60.9% in the highest household quintile against
+  42.8% in the lowest [statcan-health-of-canadians-2024].
+
+
+  Cancer has been the leading cause of death since the early 1990s and accounted
+  for 26.2% of deaths in 2024, ahead of heart disease. Dementia, which the
+  official ranking omits by classification convention, would place third if it
+  was taken into account, with deaths rising 4.8% in a year and concentrated
+  among those over 85 [statcan-deaths-2024]. The mortality profile is that of an
+  old, chronically ill population rather than one exposed to infectious or
+  violent death.
+
+
+  The sharpest health inequality falls between Indigenous and non-Indigenous
+  people. Over 2016 to 2021, life expectancy at birth was 77.2 years for the
+  Indigenous population against 85.0 years for the non-Indigenous population, a
+  gap of 7.8 years, and it has widened since the 2006-to-2011 period rather than
+  closed [statcan-indigenous-life-expectancy]. The gap varies sharply by group:
+  80.5 years for Métis, 74.0 for First Nations with Registered or Treaty status,
+  and 71.9 for Inuit — thirteen years below the non-Indigenous figure. Among
+  First Nations with status, those living on reserve reach 71.4 years against
+  76.0 off reserve [statcan-indigenous-life-expectancy]. These estimates exclude
+  people living in institutions and collective dwellings, among whom Indigenous
+  people are overrepresented, so the true gap is likely wider than the published
+  one [statcan-indigenous-life-expectancy].
+
+
+  Education outcomes are strong by international comparison. Canadian adults
+  scored 271 in literacy, 271 in numeracy and 259 in adaptive problem solving in
+  the 2022–23 international adult skills assessment, above the respective
+  averages of 259, 262 and 250 across the 27 participating countries, placing
+  Canada in the top ten in all three domains [statcan-piaac-2022]. The
+  distribution is widening rather than the average falling: between the 2012 and
+  2023 cycles, literacy among adults with tertiary qualifications held roughly
+  steady (290 to 288) while literacy among adults without upper secondary
+  qualifications fell from 221 to 214 [oecd-eag-2025-canada].
+society_wellbeing_fr: >-
+  L'espérance de vie à la naissance a atteint 82,16 ans en 2024, soit une
+  deuxième hausse annuelle consécutive et un retour de fait au niveau de 2019,
+  qui était de 82,22 ans, après le recul enregistré durant la pandémie; elle
+  s'établit à 80,03 ans chez les hommes et à 84,29 ans chez les femmes, la
+  reprise la plus marquée s'observant dans les provinces de l'Ouest
+  [statcan-deaths-2024]. La santé perçue a évolué en sens inverse : la
+  proportion d'adultes qualifiant leur santé de très bonne ou d'excellente est
+  passée d'environ six sur dix entre 2015 et 2020 à 52,2 % en 2023, et à 40,5 %
+  chez les personnes de 65 ans et plus; elle varie selon le revenu,
+  s'établissant à 60,9 % dans le quintile de ménages le plus élevé, contre 42,8
+  % dans le plus bas [statcan-health-of-canadians-2024].
+
+
+  Le cancer est la principale cause de décès depuis le début des années 1990 et
+  a représenté 26,2 % des décès en 2024, devant les maladies du cœur. La
+  démence, que le classement officiel omet par convention de codification,
+  occuperait la troisième place si elle était prise en compte, les décès
+  augmentant de 4,8 % en un an et se concentrant chez les personnes de plus de
+  85 ans [statcan-deaths-2024]. Le profil de mortalité est celui d'une
+  population âgée et atteinte de maladies chroniques, plutôt que d'une
+  population exposée à la mort infectieuse ou violente.
+
+
+  L'inégalité de santé la plus marquée sépare la population autochtone et non
+  autochtone. Entre 2016 et 2021, l'espérance de vie à la naissance était de
+  77,2 ans pour la population autochtone contre 85,0 ans pour la population non
+  autochtone, soit un écart de 7,8 ans; cet écart s'est creusé depuis la période
+  2006-2011 plutôt que réduit [statcan-indigenous-life-expectancy]. L'écart
+  varie fortement d'un groupe à l'autre : 80,5 ans chez les Métis, 74,0 ans chez
+  les membres des Premières Nations inscrits ou visés par un traité, et 71,9 ans
+  chez les Inuits; soit treize ans de moins que la population non autochtone.
+  Parmi les membres inscrits des Premières Nations, ceux vivant dans une réserve
+  atteignent 71,4 ans, contre 76,0 ans hors réserve
+  [statcan-indigenous-life-expectancy]. Ces estimations excluent les personnes
+  vivant en établissement et en logement collectif, parmi lesquelles les
+  Autochtones sont surreprésentés, de sorte que l'écart réel est probablement
+  plus important que celui qui est publié [statcan-indigenous-life-expectancy].
+
+
+  Les résultats scolaires se comparent favorablement à l'international. Les
+  adultes canadiens ont obtenu 271 en littératie, 271 en numératie et 259 en
+  résolution adaptative de problèmes lors de l'évaluation internationale des
+  compétences des adultes de 2022-2023, soit au-dessus des moyennes respectives
+  de 259, 262 et 250 des 27 pays participants; ce qui place le Canada dans les
+  dix premiers pour les trois domaines [statcan-piaac-2022]. L'élargissement se
+  joue dans la distribution, non dans la moyenne : entre les cycles de 2012 et
+  de 2023, la littératie chez les adultes titulaires d'un diplôme d'études
+  tertiaires est demeurée à peu près stable (de 290 à 288), tandis que celle des
+  adultes n'ayant pas terminé leurs études secondaires supérieures est passée de
+  221 à 214 [oecd-eag-2025-canada].
 society_cohesion_en: >-
-  Citizen self-report data is the primary instrument here. Statistics Canada's
-  Canadian Social Survey Q4 2024 (November–December 2024) shows measurable
-  erosion in institutional confidence — confidence in the federal government,
-  courts, police, and media all recorded negative trends
-  [statcan-css-trust-institutions-q4-2024]. Interpersonal trust data from the
-  same survey cycle shows 43.5% of Canadians reported that most people can be
-  trusted [statcan-css-trust-others]; a moderate figure by international
-  standards that places Canada in the mid-range among OECD liberal democracies.
-  World Values Survey microdata for Canada (Waves 1, 2, 4, 5 and 7, covering
-  fieldwork from 1982 to 2020; Canada did not field Waves 3 or 6) give the
-  underlying self-report evidence on trust, national identity and political
-  values, and the picture is one of volatility and recent divergence rather than
-  steady erosion. Interpersonal trust followed a trough-and-recovery path: the
-  share saying most people can be trusted ran 49% (1982) → 52% (1990) → 39%
-  (2000) → 43% (2006) → 47% (2020), bottoming around 2000 and climbing gradually
-  since without regaining its 1990 peak. The sharper development is generational
-  : a trust gap between older and younger cohorts that had closed to near-zero
-  by 2000 widened steadily to roughly nine points by 2020, with younger
-  Canadians the progressively less trusting group. Two slower shifts run
-  alongside it. Strong national pride, stable near 95% "proud" through 2006,
-  softened markedly by 2020, with the "very proud" share falling from 70% to
-  52%. And left–right self-placement has been dispersing since 1990: the
-  ideological centre thinned from 58% to 47% of respondents as the left flank
-  grew, indicating a widening — though asymmetric — spread of political values
-  rather than symmetric polarisation [wvs-canada]. Canada scores 75/100 on
-  Transparency International's CPI 2025, in gradual decline since 2012,
-  signalling that perceived institutional integrity is softening, which
-  reinforces the institutional trust erosion story [ti-cpi-2025]. Canadians
-  still broadly identify with a pluralist, bilingual, multicultural self-image,
-  but housing and cost-of-living pressures, increasingly linked in public debate
-  to immigration levels, are beginning to erode the long-standing consensus in
-  favour of high immigration [statcan-css-trust-institutions-q4-2024].
+  Institutional confidence is uneven rather than uniformly low. In the fourth
+  quarter of 2024, 63.4% of Canadians reported high confidence in the police and
+  48.2% in the justice system and courts, against 45.0% in the school system,
+  36.2% in Canadian media and 28.3% in the federal Parliament — where 40.0%
+  reported low confidence, the worst reading of any institution measured
+  [statcan-css-trust-institutions-q4-2024]. The regional split runs counter to
+  the usual assumption: Quebec records the highest confidence in the police
+  (74.4%), the courts (59.8%) and Parliament (38.4%), while the Prairie
+  provinces record the lowest confidence in Parliament (23.4%) and in the media
+  (28.5%) [statcan-css-trust-institutions-q4-2024].
+
+
+  Interpersonal trust is moderate and drifting down slowly: 43.5% of the
+  population said most people can be trusted in the fourth quarter of 2024,
+  against 46.8% in the second quarter of 2022, with the series moving between
+  42.5% and 46.8% across that period [statcan-css-trust-others].
+
+
+  Computed across the five World Values Survey waves Canada has fielded, from
+  1982 to 2020, the longer record shows volatility and recent divergence rather
+  than steady erosion. The share saying most people can be trusted ran 49% in
+  1982, 52% in 1990, 39% in 2000, 43% in 2006 and 47% in 2020 — a trough around
+  2000 and a gradual climb since that has not regained the 1990 peak
+  [wvs-canada]. The sharper development is generational: a trust gap between
+  older and younger cohorts that had closed to near zero by 2000 widened to
+  roughly nine points by 2020, with younger Canadians the less trusting group
+  [wvs-canada].
+
+
+  Two slower shifts run alongside it. Strong national pride, stable near 95%
+  describing themselves as proud through 2006, softened markedly by 2020, with
+  the share saying "very proud" falling from 70% to 52% [wvs-canada]. Left–right
+  self-placement has been dispersing since 1990: the ideological centre thinned
+  from 58% to 47% of respondents as the left flank grew — a widening but
+  asymmetric spread of political values rather than symmetric polarisation
+  [wvs-canada].
+
+
+  Canada scored 75 out of 100 on the Transparency International Corruption
+  Perceptions Index for 2025, in gradual decline since 2012 [ti-cpi-2025]. That
+  instrument measures expert and business assessments of public-sector
+  corruption rather than citizen self-report, so it sits beside the trust data
+  as a separate signal rather than confirming it.
+
+
+  The self-image has held while the immigration consensus has not. A majority
+  now say there is too much immigration — 58% in 2024, more than double the 27%
+  of 2022 — though that view stabilised through 2025, and those holding it
+  increasingly attribute the problem to government management rather than to
+  immigrants themselves [environics-focus-canada-immigration-2025]. It sorts
+  sharply by party: 82% of Conservative supporters agree levels are too high,
+  against 40% of Liberal supporters [environics-focus-canada-immigration-2025].
+  That concern does not carry over into rejection of diversity itself. A survey
+  of 6,818 adults in spring 2026 found majorities agreeing multiculturalism has
+  contributed positively to Canadian identity, with support spanning racialized
+  and white respondents alike, and a four-to-one preference for selecting
+  immigrants on skills regardless of origin over selecting by country
+  [environics-multiculturalism-2026]. Support is narrower for differential
+  treatment than for equal treatment: the principle of preventing discrimination
+  draws broad agreement, separate institutions for ethnic or religious
+  minorities much less [environics-multiculturalism-2026].
 society_cohesion_fr: >-
-  Les données autodéclarées des citoyens constituent ici l'instrument principal.
-  L'Enquête sociale canadienne (ESC) du quatrième trimestre 2024 de Statistique
-  Canada (novembre–décembre 2024) montre une érosion mesurable de la confiance
-  institutionnelle; la confiance envers le gouvernement fédéral, les tribunaux,
-  la police et les médias ont toutes enregistré des tendances négatives
-  [statcan-css-trust-institutions-q4-2024]. Les données sur la confiance
-  interpersonnelle du même cycle d'enquête montrent que 43,5 % de la population
-  canadienne estiment que la plupart des gens peuvent être fiables
-  [statcan-css-trust-others]; chiffre modéré par rapport aux normes
-  internationales, qui place le Canada dans la moyenne des démocraties libérales
-  de l'OCDE. Les microdonnées du Sondage mondial sur les valeurs pour le Canada
-  (vagues 1, 2, 4, 5 et 7, couvrant les enquêtes de terrain menées de 1982 à
-  2020; le Canada n'ayant pas participé aux vagues 3 et 6) fournissent les
-  données déclaratives de base sur la confiance, l'identité nationale et les
-  valeurs politiques; le portrait qui s'en dégage est celui d'une volatilité et
-  d'une divergence récente plutôt que d'une érosion régulière.
+  La confiance envers les institutions est inégale plutôt qu'uniformément
+  faible. Au quatrième trimestre de 2024, 63,4 % de la population canadienne
+  déclaraient une confiance élevée envers la police et 48,2 % envers le système
+  de justice et les tribunaux, contre 45,0 % envers le système scolaire, 36,2 %
+  envers les médias canadiens et 28,3 % envers le Parlement fédéral, envers
+  lequel 40,0 % déclaraient une faible confiance, le résultat le plus bas parmi
+  toutes les institutions mesurées [statcan-css-trust-institutions-q4-2024]. Le
+  clivage régional va à l'encontre de l'idée reçue : le Québec enregistre la
+  confiance la plus élevée envers la police (74,4 %), les tribunaux (59,8 %) et
+  le Parlement (38,4 %), tandis que les provinces des Prairies enregistrent la
+  confiance la plus faible envers le Parlement (23,4 %) et les médias (28,5 %)
+  [statcan-css-trust-institutions-q4-2024].
 
-  La confiance interpersonnelle a suivi une trajectoire de creux et de reprise :
-  la part des répondants estimant que la plupart des gens sont dignes de
-  confiance s'établissait à 49 % en 1982, 52 % en 1990, 39 % en 2000, 43 % en
-  2006 et 47 % en 2020, atteignant donc son point le plus bas vers 2000 et
-  remontant graduellement depuis sans retrouver son sommet de 1990. L'évolution
-  la plus marquée est générationnelle : un écart de confiance entre les cohortes
-  plus âgées et les plus jeunes qui s'était refermé à près de zéro vers 2000
-  s'est creusé régulièrement pour atteindre environ neuf points vers 2020, la
-  population canadienne plus jeune étant progressivement le groupe le moins
-  confiant.
 
-  Deux évolutions plus lentes accompagnent ces tendances. La forte fierté
-  nationale, stable autour de 95 % de répondants « fiers » jusqu'en 2006, s'est
-  nettement affaiblie vers 2020; la part des personnes « très fières » du pays
-  passant de 70 % à 52 %. Et l'auto-positionnement sur l'axe gauche-droite se
-  disperse depuis 1990 : le centre idéologique passant de 58 % à 47 % des
-  répondants au fur et à mesure de l'élargissement du flanc gauche; ce qui
-  indique une dispersion croissante, quoique asymétrique, des valeurs politiques
-  plutôt qu'une polarisation symétrique [wvs-canada]. Le Canada obtient 75/100 à
-  l'IPC 2025 de Transparency International, en recul graduel depuis 2012,
-  signalant que l'intégrité institutionnelle perçue s'affaiblit; ce qui renforce
-  le récit d'érosion de la confiance institutionnelle [ti-cpi-2025]. La
-  population canadienne continue de s'identifier largement à une image
-  pluraliste, bilingue et multiculturelle, mais les pressions sur le logement et
-  le coût de la vie, de plus en plus reliées dans le débat public aux niveaux
-  d'immigration, commencent à éroder le consensus de longue date en faveur d'une
-  immigration élevée [statcan-css-trust-institutions-q4-2024].
+  La confiance interpersonnelle est modérée et s'effrite lentement : 43,5 % de
+  la population estimaient qu'on peut faire confiance à la plupart des gens au
+  quatrième trimestre de 2024, contre 46,8 % au deuxième trimestre de 2022; la
+  série ayant oscillé entre 42,5 % et 46,8 % sur cette période
+  [statcan-css-trust-others].
+
+
+  Calculé sur les cinq vagues de l'Enquête mondiale sur les valeurs auxquelles
+  le Canada a participé, de 1982 à 2020, l'historique plus long fait apparaître
+  une volatilité et une divergence récente plutôt qu'une érosion continue. La
+  proportion estimant qu'on peut faire confiance à la plupart des gens
+  s'établissait à 49 % en 1982, 52 % en 1990, 39 % en 2000, 43 % en 2006 et 47 %
+  en 2020; creux autour de 2000 et remontée progressive depuis, sans retour au
+  sommet de 1990 [wvs-canada]. L'évolution la plus marquée est générationnelle :
+  un écart de confiance entre les cohortes plus âgées et plus jeunes, qui
+  s'était résorbé à près de zéro en 2000, s'est creusé à environ neuf points en
+  2020; les jeunes Canadiens et Canadiennes étant le groupe le moins confiant
+  [wvs-canada].
+
+
+  Deux évolutions plus lentes l'accompagnent. La fierté nationale, forte et
+  stable (près de 95 % de personnes se déclarant fières jusqu'en 2006), s'est
+  nettement atténuée en 2020; la proportion se déclarant « très fière » étant
+  passée de 70 % à 52 % [wvs-canada]. Le positionnement gauche-droite se
+  disperse depuis 1990 : le centre idéologique est passé de 58 % à 47 % des
+  répondants à mesure que le flanc gauche s'élargissait; dispersion croissante
+  mais asymétrique des valeurs politiques, plutôt qu'une polarisation symétrique
+  [wvs-canada].
+
+
+  Le Canada a obtenu 75 sur 100 à l'Indice de perception de la corruption de
+  Transparency International pour 2025, en déclin graduel depuis 2012
+  [ti-cpi-2025]. Cet instrument mesure l'évaluation, par les experts et les
+  milieux d'affaires, de la corruption dans le secteur public, plutôt que
+  l'autoévaluation citoyenne, et vient donc compléter les données sur la
+  confiance comme un signal distinct, sans les confirmer.
+
+
+  L'image de soi a tenu, contrairement au consensus sur l'immigration. Une
+  majorité estime désormais que l'immigration est trop élevée : 58 % en 2024,
+  soit plus du double des 27 % de 2022. Ce point de vue s'est cependant
+  stabilisé au cours de 2025; ceux qui l'expriment attribuant de plus en plus le
+  problème à la gestion gouvernementale plutôt qu'aux immigrants eux-mêmes
+  [environics-focus-canada-immigration-2025]. L'opinion se répartit nettement
+  selon l'appartenance partisane : 82 % des partisans conservateurs estiment que
+  les seuils sont trop élevés, contre 40 % des partisans libéraux
+  [environics-focus-canada-immigration-2025]. Cette inquiétude ne se traduit pas
+  par un rejet de la diversité elle-même. Une enquête menée auprès de 6 818
+  adultes au printemps 2026 a révélé qu'une majorité s'accorde à dire que le
+  multiculturalisme a contribué positivement à l'identité canadienne (cet appui
+  s'observant chez les répondants racisés comme chez les répondants blancs) et
+  qu'une préférence de quatre contre un se dégage en faveur d'une sélection des
+  immigrants fondée sur les compétences, indépendamment de l'origine, plutôt que
+  sur le pays [environics-multiculturalism-2026]. L'appui est plus étroit pour
+  un traitement différencié que pour un traitement égal : le principe de
+  prévention de la discrimination fait largement consensus; celui d'institutions
+  distinctes pour les minorités ethniques ou religieuses, beaucoup moins
+  [environics-multiculturalism-2026].
 economy_externalVulnerability_en: >-
   Canada's export base is resource-intensive and heavily concentrated on the
   United States, but the familiar "75 percent" dependence needs unpacking. That
@@ -2118,27 +2314,29 @@ sources: |-
     },
     {
       "id": "statcan-2021-census-ethno-religion",
-      "name": "Statistics Canada – 2021 Census of Population: Ethnocultural and Religious Diversity (Topic Hub)",
-      "nameFr": "Statistique Canada — Recensement de la population de 2021 : diversité ethnoculturelle et religieuse (carrefour thématique)",
-      "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethno-religion-eng.cfm",
-      "desc": "Primary census data hub for 2021 religious and ethnocultural composition.",
-      "descFr": "Principal carrefour de données du recensement de 2021 sur la composition religieuse et ethnoculturelle.",
-      "publicationDate": "2022-10-25",
-      "accessDate": "2026-06-28",
+      "name": "The Canadian census: A rich portrait of the country's religious and ethnocultural diversity",
+      "nameFr": "Le recensement canadien : un riche portrait de la diversité religieuse et ethnoculturelle du pays",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/221026/dq221026b-eng.htm",
+      "desc": "Statistics Canada release in The Daily presenting 2021 Census results on ethnic or cultural origin, racialized groups and religious affiliation, with national, provincial and metropolitan breakdowns; carries the agency's own warning that origin data are not comparable across censuses.",
+      "descFr": "Diffusion de Statistique Canada dans Le Quotidien présentant les résultats du Recensement de 2021 sur l'origine ethnique ou culturelle, les groupes racisés et l'appartenance religieuse, avec ventilations nationales, provinciales et métropolitaines; comporte l'avertissement de l'organisme selon lequel les données sur les origines ne sont pas comparables d'un recensement à l'autre.",
+      "publicationDate": "2022-10-26",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "volatility": "Med"
     },
     {
       "id": "statcan-2021-census-language",
-      "name": "Statistics Canada – 2021 Census of Population: Language (Topic Hub)",
-      "nameFr": "Statistique Canada — Recensement de la population de 2021 : langue (carrefour thématique)",
-      "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/language-langue-eng.cfm",
-      "desc": "Primary census data hub for 2021 language composition.",
-      "descFr": "Principal carrefour de données du recensement de 2021 sur la composition linguistique.",
-      "publicationDate": "2022-08-16",
-      "accessDate": "2026-06-28",
+      "name": "While English and French are still the main languages spoken in Canada, the country's linguistic diversity continues to grow",
+      "nameFr": "Bien que l'anglais et le français demeurent les principales langues parlées au Canada, la diversité linguistique continue de s'accroître",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/220817/dq220817a-eng.htm",
+      "desc": "Statistics Canada release in The Daily presenting 2021 Census results on mother tongue, language spoken at home, knowledge of official languages, English-French bilingualism and Indigenous languages.",
+      "descFr": "Diffusion de Statistique Canada dans Le Quotidien présentant les résultats du Recensement de 2021 sur la langue maternelle, la langue parlée à la maison, la connaissance des langues officielles, le bilinguisme anglais-français et les langues autochtones.",
+      "publicationDate": "2022-08-17",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "volatility": "Med"
     },
     {
       "id": "statcan-2021-indigenous-profile",
@@ -2154,15 +2352,16 @@ sources: |-
     },
     {
       "id": "statcan-css-trust-institutions-q4-2024",
-      "name": "Statistics Canada – Confidence in Institutions, Canadian Social Survey Q4 2024",
-      "nameFr": "Statistique Canada — Confiance envers les institutions, Enquête sociale canadienne T4 2024",
-      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260106/dq260106c-eng.htm",
-      "desc": "Official government survey data on Canadians' institutional confidence (federal government, courts, police, media) collected November–December 2024.",
-      "descFr": "Données d'enquête gouvernementale officielle sur la confiance de la populations canadienne envers les institutions (gouvernement fédéral, tribunaux, police, médias), recueillies en novembre-décembre 2024.",
-      "publicationDate": "2026-01-05",
-      "accessDate": "2026-06-28",
+      "name": "Confidence in institutions, by gender and province (Table 45-10-0073-01)",
+      "nameFr": "Confiance envers les institutions, selon le genre et la province (tableau 45-10-0073-01)",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4510007301",
+      "desc": "Statistics Canada table reporting the share of the population aged 15 and over rating their confidence in the police, the justice system and courts, the school system, the federal Parliament and Canadian media, by gender, province and region, from the Canadian Social Survey.",
+      "descFr": "Tableau de Statistique Canada présentant la proportion de la population de 15 ans et plus selon son degré de confiance envers la police, le système de justice et les tribunaux, le système scolaire, le Parlement fédéral et les médias canadiens, selon le genre, la province et la région, tiré de l'Enquête sociale canadienne.",
+      "publicationDate": "2026-01-06",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "volatility": "High"
     },
     {
       "id": "statcan-css-trust-others",
@@ -2171,20 +2370,24 @@ sources: |-
       "url": "https://www.statcan.gc.ca/hub-carrefour/quality-life-qualite-vie/society-societe/trust-confiance-eng.htm",
       "desc": "Longitudinal indicator showing the share of Canadians reporting that most people can be trusted, providing interpersonal social trust baseline for cohesion analysis.",
       "descFr": "Indicateur longitudinal indiquant la proportion de la population canadienne estimant pouvoir faire confiance à la plupart des gens, fournissant une référence de confiance sociale interpersonnelle pour l'analyse de la cohésion.",
-      "accessDate": "2026-06-28",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "publicationDate": "2025-02-19",
+      "volatility": "High"
     },
     {
       "id": "wvs-canada",
-      "name": "World Values Survey – Canada",
-      "nameFr": "World Values Survey — Canada",
+      "name": "World Values Survey, Canada: Waves 1, 2, 4, 5 and 7 (fieldwork 1982–2020)",
+      "nameFr": "World Values Survey, Canada : vagues 1, 2, 4, 5 et 7 (collecte 1982-2020)",
       "url": "https://www.worldvaluessurvey.org/WVSContents.jsp",
-      "desc": "World Values Survey for Canada providing citizen self-report measures of interpersonal trust, institutional confidence, national identity, and political values.",
-      "descFr": "Microdonnées du Sondage mondial sur les valeurs pour le Canada, fournissant des mesures autodéclarées par les citoyens sur la confiance interpersonnelle, la confiance envers les institutions, l'identité nationale et les valeurs politiques.",
-      "accessDate": "2026-07-10",
+      "desc": "Respondent-level World Values Survey data for Canada across the five waves Canada fielded, covering interpersonal trust, national identity and left–right self-placement. Files are downloaded per wave from the Data Download section at the address given; access requires free registration under the survey's non-redistribution licence. Figures cited are computed from these files, not read from a published table.",
+      "descFr": "Données individuelles du World Values Survey pour le Canada pour les cinq vagues auxquelles le Canada a participé, portant sur la confiance interpersonnelle, l'identité nationale et le positionnement gauche-droite. Les fichiers se téléchargent vague par vague dans la section Data Download à l'adresse indiquée; l'accès exige une inscription gratuite sous licence de non-redistribution. Les chiffres cités sont calculés à partir de ces fichiers et ne proviennent pas d'un tableau publié.",
+      "accessDate": "2026-07-11",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Interpretation",
+      "publicationDate": "2020-01-01",
+      "volatility": "Low"
     },
     {
       "id": "freedom-house-canada-2026",
@@ -2652,7 +2855,8 @@ sources: |-
       "descFr": "Texte officiel consolidé du Code civil du Québec, adopté comme L.Q. 1991, c. 64 et en vigueur depuis le 1er janvier 1994. Régit les personnes, la famille, les successions, les biens, les obligations et la responsabilité civile au Québec; sa disposition préliminaire énonce qu'il établit le droit commun de la province, en harmonie avec la Charte de la langue française et la Charte des droits et libertés de la personne. A remplacé le Code civil du Bas-Canada de 1866.",
       "accessDate": "2026-07-08",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "publicationDate": "1991-01-01"
     },
     {
       "id": "justice-harmonization-act-2001",
@@ -3014,6 +3218,214 @@ sources: |-
       "url": "https://tc.canada.ca/en/corporate-services/transparency/corporate-management-reporting/transportation-canada-annual-reports/2020-2021/canada-s-rail-network",
       "desc": "Transport Canada annual-report profile of the national rail system — total route-kilometres, the Class 1 freight carriers' share, shortline role, and VIA Rail passenger service.",
       "publicationDate": "2021-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-subprovincial-2025",
+      "name": "Canada's population estimates: Subprovincial areas, 2025",
+      "nameFr": "Estimations de la population du Canada : régions infraprovinciales, 2025",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260114/dq260114a-eng.htm",
+      "desc": "Statistics Canada annual release of postcensal population estimates for census metropolitan areas, census agglomerations and census divisions, with components of growth and intraprovincial migration by region.",
+      "descFr": "Diffusion annuelle par Statistique Canada des estimations postcensitaires de population pour les régions métropolitaines de recensement, les agglomérations de recensement et les divisions de recensement, avec les composantes de l'accroissement et la migration intraprovinciale par région.",
+      "publicationDate": "2026-01-14",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "statcan-fertility-2024",
+      "name": "Fertility and baby names, 2024",
+      "nameFr": "Fécondité et prénoms, 2024",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250924/dq250924d-eng.htm",
+      "desc": "Statistics Canada annual release of fertility indicators from the Canadian Vital Statistics Birth Database, reporting the total fertility rate and average age of mothers nationally and by province and territory, with international comparison.",
+      "descFr": "Diffusion annuelle par Statistique Canada des indicateurs de fécondité tirés de la Base canadienne de données de l'état civil sur les naissances, présentant l'indice synthétique de fécondité et l'âge moyen des mères à l'échelle nationale, provinciale et territoriale, avec comparaison internationale.",
+      "publicationDate": "2025-09-24",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-minority-instruction-2021",
+      "name": "Instruction in the Minority Official Language, 2021 Census",
+      "nameFr": "Instruction dans la langue officielle minoritaire, Recensement de 2021",
+      "url": "https://www.statcan.gc.ca/en/census/census-engagement/community-supporter/official-language-minority",
+      "desc": "Statistics Canada summary of 2021 Census results on children eligible for instruction in the minority official language and their attendance rates; a communications product restating the release of 30 November 2022 in The Daily.",
+      "descFr": "Résumé par Statistique Canada des résultats du Recensement de 2021 sur les enfants admissibles à l'instruction dans la langue officielle minoritaire et leur taux de fréquentation; produit de communication reprenant la diffusion du 30 novembre 2022 dans Le Quotidien.",
+      "publicationDate": "2022-11-30",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "legisquebec-charte-langue-francaise",
+      "name": "Charter of the French language, CQLR c. C-11 (LégisQuébec)",
+      "nameFr": "Charte de la langue française, RLRQ c. C-11 (LégisQuébec)",
+      "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/c-11",
+      "desc": "Official consolidated text of Quebec's language statute, which makes French the official language of the province and governs its use in legislation, justice, public administration, commerce, work and instruction.",
+      "descFr": "Texte officiel consolidé de la loi linguistique québécoise, qui fait du français la langue officielle de la province et en régit l'usage dans la législation, la justice, l'administration, le commerce, le travail et l'enseignement.",
+      "publicationDate": "1977-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "justice-official-languages-act",
+      "name": "Official Languages Act, R.S.C. 1985, c. 31 (4th Supp.) (Justice Laws Website)",
+      "nameFr": "Loi sur les langues officielles, L.R.C. (1985), ch. 31 (4e suppl.) (Site Web de la législation (Justice))",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/o-3.01/",
+      "desc": "Official consolidated text of the federal statute establishing the equality of English and French in federal institutions and setting out obligations on service to the public, language of work, and support for official-language minority communities.",
+      "descFr": "Texte officiel consolidé de la loi fédérale établissant l'égalité de l'anglais et du français dans les institutions fédérales et fixant les obligations en matière de service au public, de langue de travail et d'appui aux communautés de langue officielle en situation minoritaire.",
+      "publicationDate": "1988-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "legisquebec-laicite-etat",
+      "name": "Act respecting the laicity of the State, CQLR c. L-0.3 (LégisQuébec)",
+      "nameFr": "Loi sur la laïcité de l'État, RLRQ c. L-0.3 (LégisQuébec)",
+      "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/l-0.3",
+      "desc": "Official consolidated text of Quebec's secularism statute, assented to in June 2019, which affirms the laicity of the state, restricts the wearing of religious symbols by certain public employees, and invokes section 33 of the Canadian Charter of Rights and Freedoms.",
+      "descFr": "Texte officiel consolidé de la loi québécoise sur la laïcité, sanctionnée en juin 2019, qui affirme la laïcité de l'État, restreint le port de signes religieux par certains employés de l'État et invoque l'article 33 de la Charte canadienne des droits et libertés.",
+      "publicationDate": "2019-06-16",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "quebec-loi-renforcement-laicite-2026",
+      "name": "Act respecting the reinforcement of laicity in Québec, S.Q. 2026, c. 6 (Éditeur officiel du Québec)",
+      "nameFr": "Loi sur le renforcement de la laïcité au Québec, L.Q. 2026, c. 6 (Éditeur officiel du Québec)",
+      "url": "https://www.publicationsduquebec.gouv.qc.ca/fileadmin/Fichiers_client/lois_et_reglements/LoisAnnuelles/fr/2026/2026C6F.PDF",
+      "desc": "Official text of the Quebec statute assented to on 2 April 2026 amending the Act respecting the laicity of the State and enacting a companion act on living together and religious accommodation; invokes the derogation clauses of both the Quebec and Canadian charters.",
+      "descFr": "Texte officiel de la loi québécoise sanctionnée le 2 avril 2026 modifiant la Loi sur la laïcité de l'État et édictant une loi complémentaire sur le vivre-ensemble et les accommodements religieux; invoque les clauses de dérogation des chartes québécoise et canadienne.",
+      "publicationDate": "2026-04-02",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "quebec-bulletin-laicite-municipal-2026",
+      "name": "Muni-Express no. 11, 25 May 2026 — Act respecting the reinforcement of laicity in Québec (Bill 9)",
+      "nameFr": "Muni-Express n° 11, 25 mai 2026 — Loi sur le renforcement de la laïcité au Québec (projet de loi n° 9)",
+      "url": "https://www.quebec.ca/gouvernement/ministeres-organismes/affaires-municipales/publications/bulletin-muni-express/2026/n-11-25-mai-2026",
+      "desc": "Quebec ministry bulletin setting out the obligations created by the 2026 laicity statute for municipal bodies, including the restriction on collective religious practice in premises under municipal authority effective 1 September 2026.",
+      "descFr": "Bulletin ministériel québécois exposant les obligations créées par la loi de 2026 sur la laïcité pour les organismes municipaux, dont la restriction de la pratique religieuse collective dans les lieux relevant de leur autorité à compter du 1er septembre 2026.",
+      "publicationDate": "2026-05-25",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "scc-41231-laicite",
+      "name": "Supreme Court of Canada, Court File No. 41231 — case documents",
+      "nameFr": "Cour suprême du Canada, dossier n° 41231 — documents de la cause",
+      "url": "https://www.scc-csc.ca/pdf/case-documents/41231/FM040_Appelant_Organisation-mondiale-sikhe-du-Canada-et-Amrit-Kaur.pdf",
+      "desc": "Appellant factum filed with the Supreme Court of Canada in the constitutional challenge to Quebec's Act respecting the laicity of the State, on appeal from Organisation mondiale sikhe du Canada c. Procureur général du Québec, 2024 QCCA 254. The appeal was argued over four days in March 2026 and judgment is reserved.",
+      "descFr": "Mémoire d'appelant déposé à la Cour suprême du Canada dans la contestation constitutionnelle de la Loi sur la laïcité de l'État, en appel de Organisation mondiale sikhe du Canada c. Procureur général du Québec, 2024 QCCA 254. L'appel a été entendu sur quatre jours en mars 2026 et le jugement est en délibéré.",
+      "publicationDate": "2025-04-23",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "statcan-deaths-2024",
+      "name": "Deaths, 2024",
+      "nameFr": "Décès, 2024",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260113/dq260113b-eng.htm",
+      "desc": "Statistics Canada release in The Daily reporting preliminary vital statistics for 2024, including life expectancy at birth nationally and by province, mortality rates by age and sex, and leading causes of death.",
+      "descFr": "Diffusion de Statistique Canada dans Le Quotidien présentant les statistiques de l'état civil préliminaires de 2024, dont l'espérance de vie à la naissance à l'échelle nationale et provinciale, les taux de mortalité selon l'âge et le sexe, et les principales causes de décès.",
+      "publicationDate": "2026-01-13",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-health-of-canadians-2024",
+      "name": "Key findings from the Health of Canadians report, 2024",
+      "nameFr": "Principales conclusions du rapport L'état de santé des Canadiens, 2024",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250305/dq250305a-eng.htm",
+      "desc": "Statistics Canada overview of population health indicators, including life expectancy, self-rated health, chronic-condition prevalence and leading causes of death, disaggregated by geography, sex, age, immigrant status and household income.",
+      "descFr": "Aperçu de Statistique Canada des indicateurs de santé de la population, dont l'espérance de vie, la santé perçue, la prévalence des maladies chroniques et les principales causes de décès, ventilés selon la géographie, le sexe, l'âge, le statut d'immigrant et le revenu du ménage.",
+      "publicationDate": "2025-03-05",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-indigenous-life-expectancy",
+      "name": "Life expectancy at birth of Indigenous populations in Canada (Table 17-10-0160-01)",
+      "nameFr": "Espérance de vie à la naissance des populations autochtones au Canada (tableau 17-10-0160-01)",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710016001",
+      "desc": "Statistics Canada estimates of life expectancy at birth by Indigenous identity, derived from census-mortality linked cohorts, for three five-year periods from 2006-2011 to 2016-2021, at national, regional and metropolitan/non-metropolitan level. Excludes people living in institutions and collective dwellings.",
+      "descFr": "Estimations de Statistique Canada de l'espérance de vie à la naissance selon l'identité autochtone, tirées de cohortes couplées recensement-mortalité, pour trois périodes quinquennales de 2006-2011 à 2016-2021, aux échelles nationale, régionale et métropolitaine/non métropolitaine. Exclut les personnes vivant en établissement ou en logement collectif.",
+      "publicationDate": "2025-06-03",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "statcan-piaac-2022",
+      "name": "Literacy, numeracy and adaptive problem-solving skills of Canadians: Results from the 2022 Programme for the International Assessment of Adult Competencies",
+      "nameFr": "Compétences des Canadiens en littératie, en numératie et en résolution adaptative de problèmes : résultats du Programme pour l'évaluation internationale des compétences des adultes de 2022",
+      "url": "https://www150.statcan.gc.ca/n1/en/daily-quotidien/241210/dq241210a-eng.pdf",
+      "desc": "Statistics Canada release of Canadian results from the second cycle of the international adult skills assessment, with national and provincial scores in literacy, numeracy and adaptive problem solving benchmarked against participating countries.",
+      "descFr": "Diffusion par Statistique Canada des résultats canadiens du deuxième cycle de l'évaluation internationale des compétences des adultes, avec les scores nationaux et provinciaux en littératie, en numératie et en résolution adaptative de problèmes comparés aux pays participants.",
+      "publicationDate": "2024-12-10",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "oecd-eag-2025-canada",
+      "name": "Education at a Glance 2025: Canada (country note)",
+      "nameFr": "Regards sur l'éducation 2025 : Canada (note par pays)",
+      "url": "https://www.oecd.org/en/publications/education-at-a-glance-2025_1a3543e2-en/canada_a2529d00-en.html",
+      "desc": "Organisation for Economic Co-operation and Development country note comparing Canadian educational attainment, participation and adult skills against member averages, including changes in literacy proficiency by attainment level between assessment cycles.",
+      "descFr": "Note par pays de l'Organisation de coopération et de développement économiques comparant la scolarisation, la participation et les compétences des adultes au Canada aux moyennes des pays membres, dont l'évolution de la littératie selon le niveau de scolarité entre les cycles d'évaluation.",
+      "publicationDate": "2025-09-09",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "environics-focus-canada-immigration-2025",
+      "name": "Canadian public opinion about immigration and refugees, Fall 2025 (Focus Canada)",
+      "nameFr": "L'opinion publique canadienne sur l'immigration et les réfugiés, automne 2025 (Focus Canada)",
+      "url": "https://www.environicsinstitute.org/projects/project-details/canadian-public-opinion-about-immigration-and-refugees---fall-2025",
+      "desc": "Environics Institute survey of 2,004 Canadians conducted by telephone from 8 to 21 September 2025, part of the Focus Canada programme running since 1976, tracking opinion on immigration levels, refugees and integration. Conducted with the Diversity Institute at Toronto Metropolitan University and supported by the Century Initiative, a privately funded charity advocating Canadian population growth to 100 million by 2100.",
+      "descFr": "Sondage de l'Institut Environics auprès de 2 004 personnes au Canada, réalisé par téléphone du 8 au 21 septembre 2025, dans le cadre du programme Focus Canada mené depuis 1976, portant sur les niveaux d'immigration, les réfugiés et l'intégration. Réalisé avec le Diversity Institute de l'Université métropolitaine de Toronto et soutenu par l'Initiative du Siècle, organisme de bienfaisance à financement privé qui prône une croissance de la population canadienne à 100 millions d'ici 2100.",
+      "publicationDate": "2025-10-16",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "environics-multiculturalism-2026",
+      "name": "Canadian Perspectives on Multiculturalism and Diversity, 2026",
+      "nameFr": "Perspectives canadiennes sur le multiculturalisme et la diversité, 2026",
+      "url": "https://environicsinstitute.org/canadian-perspectives-on-multiculturalism-and-diversity/",
+      "desc": "Environics Institute online survey of 6,818 adults in Canada conducted from 4 March to 24 April 2026, in partnership with the Bridging Divides programme at the Global Migration Institute, Toronto Metropolitan University. Oversamples racialized groups, immigrants and Indigenous Peoples; weighted to the 2021 census. Examines attitudes to multiculturalism, diversity and immigration.",
+      "descFr": "Sondage en ligne de l'Institut Environics auprès de 6 818 adultes au Canada, réalisé du 4 mars au 24 avril 2026, en partenariat avec le programme Bridging Divides du Global Migration Institute de l'Université métropolitaine de Toronto. Suréchantillonnage des groupes racisés, des personnes immigrantes et des Peuples autochtones; pondération selon le recensement de 2021. Porte sur le multiculturalisme, la diversité et l'immigration.",
+      "publicationDate": "2026-06-30",
       "accessDate": "2026-07-21",
       "confidence": "High",
       "citationType": "Fact",
