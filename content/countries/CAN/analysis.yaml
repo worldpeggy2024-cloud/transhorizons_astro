@@ -541,123 +541,215 @@ territory_transition_fr: >-
   véhicules zéro émission pour 2026 a été suspendue en attente d'une révision
   [cat-canada-2026].
 society_demographics_en: >-
-  Canada is a settler-immigrant society built on Indigenous lands: outside the
-  First Nations, Métis, and Inuit peoples whose presence long predates the
-  state, essentially the entire population descends from successive waves of
-  immigration, and the country has depended on continued immigration for its
-  growth throughout its modern history.
+  Canada is a settler-immigrant society built on Indigenous lands: apart from
+  the First Nations, Métis and Inuit peoples whose presence long predates the
+  state, essentially the whole population descends from successive waves of
+  immigration. That dependency is now running in reverse, with intake cut by
+  policy and the population contracting.
 
-  Canada's population stood at 41,651,653 on July 1, 2025
-  [statcan-pop-age-jul2025], declining to 41,472,081 by Q1 2026; the first
-  annual population decline in Canadian history, driven by the government's
-  policy-driven reduction of non-permanent residents
-  [statcan-pop-quarterly][pbo-ircc-immigration-demographic]. This reversal
-  follows a decade of immigration-fuelled growth and signals a structural
-  demographic inflection point. Long-range projections show Canada reaching
-  57.4M under a moderate scenario by 2075, but outcomes depend heavily on
-  immigration policy continuity [statcan-pop-projections-2026]. Canada is an
-  aging society: the median age trend is upward and dependency ratios are
-  increasing as Baby Boomers exit the labour force, placing pressure on pension
-  and health-care systems [statcan-pop-age-jul2025]. Urban concentration is high
-  — the majority of the population is concentrated in the Greater Toronto Area,
-  Montréal, Vancouver, and Calgary census metropolitan areas. Internal migration
-  flows toward energy-producing provinces (Alberta) and away from high-cost
-  cities remain a structural dynamic. The NPR population reduction plan aims to
-  reduce the number of non-permanent residents to under 5% of the total
-  population by end-2027 [pbo-ircc-immigration-demographic].
+
+  The population was 41,651,653 on 1 July 2025 [statcan-pop-age-jul2025] and
+  41,417,056 on 1 April 2026, a decrease of 55,025 over the quarter, in which
+  natural increase was itself negative [statcan-pop-quarterly]. The total
+  fertility rate was 1.25 children per woman in 2024, a record low and within
+  the range described as ultra-low fertility [statcan-fertility-2024].
+  Non-permanent residents peaked at 3,149,131 on 1 October 2024, 7.6% of the
+  population [statcan-pop-age-jul2025], and stood at 2,558,562 on 1 April 2026,
+  just over 6% [statcan-pop-quarterly]; the declared objective is below 5% by
+  the end of 2027 [pbo-ircc-immigration-demographic]. Statistics Canada flags
+  these estimates as subject to larger-than-usual upward revision
+  [statcan-pop-quarterly].
+
+
+  Ageing has resumed as younger temporary migrants leave: median age rose from
+  40.3 to 40.6 years over the year to 1 July 2025, when 19.5% of the population
+  was 65 or older [statcan-pop-age-jul2025].
+
+
+  Three in four people (74.8%) lived in one of the 41 census metropolitan areas
+  on 1 July 2025 [statcan-subprovincial-2025]. The urbanisation rate did not
+  rise that year — the first time outside the pandemic since records began in
+  2001/2002 — and the form is deconcentration rather than core growth: Toronto
+  recorded no net change and lost 64,794 people to the rest of Ontario, Edmonton
+  and Calgary grew fastest, and the share of immigrants to Ontario settling in
+  Toronto fell from 76.1% to 60.5% over five years [statcan-subprovincial-2025].
 society_demographics_fr: >-
-  Le Canada est une société d'immigration et de peuplement établie sur des
-  terres autochtones : en dehors des Premières Nations, des Métis et des Inuits,
-  dont la présence est bien antérieure à l'État, la totalité ou presque de la
-  population descend de vagues successives d'immigration, et le pays a dépendu
-  d'une immigration continue pour sa croissance tout au long de son histoire
-  moderne.
+  Le Canada est une société de peuplement issue de l'immigration, établie sur
+  des terres autochtones : hormis les Premières Nations, les Métis et les
+  Inuits, dont la présence est bien antérieure à l'État, la quasi-totalité de la
+  population descend de vagues successives d'immigration. Cette dépendance joue
+  désormais en sens inverse, l'admission étant réduite par voie politique et la
+  population, en recul.
 
-  La population du Canada s'élevait à 41 651 653 personnes le 1er juillet 2025
-  [statcan-pop-age-jul2025], pour diminuer à 41 472 081 au T1 2026; première
-  baisse annuelle de la population dans l'histoire canadienne, liée à la
-  réduction du nombre de résidents non permanents par la politique
-  gouvernementale [statcan-pop-quarterly][pbo-ircc-immigration-demographic]. Ce
-  renversement fait suite à une décennie de croissance alimentée par
-  l'immigration et signale un point d'inflexion démographique structurel. Les
-  projections à long terme montrent que le Canada pourrait atteindre 57,4
-  millions d'habitants dans un scénario modéré d'ici 2075, mais les résultats
-  dépendent fortement de la continuité de la politique d'immigration
-  [statcan-pop-projections-2026]. Le Canada est une société vieillissante : la
-  tendance à la hausse de l'âge médian et l'augmentation des ratios de
-  dépendance, à mesure que les baby-boomers quittent le marché du travail,
-  exercent des pressions sur les systèmes de retraite et de soins de santé
-  [statcan-pop-age-jul2025]. La concentration urbaine est élevée; la majorité de
-  la population est concentrée dans les régions métropolitaines de recensement
-  du Grand Toronto, de Montréal, de Vancouver et de Calgary. Les flux de
-  migration interne vers les provinces productrices d'énergie (Alberta) et au
-  départ des grandes villes à coût élevé demeurent une dynamique structurelle.
-  Le plan de réduction de la population des résidents non permanents vise à
-  réduire le nombre de résidents non permanents à moins de 5 % de la population
-  totale d'ici fin 2027 [pbo-ircc-immigration-demographic].
+
+  La population s'établissait à 41,7 millions de personnes au 1er juillet 2025
+  [statcan-pop-age-jul2025] et à 41,4 millions au 1er avril 2026, en recul au
+  cours du trimestre, où l'accroissement naturel a lui-même été négatif
+  [statcan-pop-quarterly]. L'indice synthétique de fécondité s'est établi à 1,25
+  enfant par femme en 2024, creux historique se situant dans la fourchette
+  qualifiée de fécondité ultra-basse [statcan-fertility-2024]. Les résidents non
+  permanents ont atteint un sommet de 7,6 % de la population en octobre 2024
+  [statcan-pop-age-jul2025] et représentaient un peu plus de 6 % en avril 2026
+  [statcan-pop-quarterly]; l'objectif déclaré est de passer sous la barre des 5
+  % d'ici la fin de 2027 [pbo-ircc-immigration-demographic]. Statistique Canada
+  signale que ces estimations sont susceptibles de faire l'objet de révisions à
+  la hausse plus importantes que d'ordinaire [statcan-pop-quarterly].
+
+
+  Le vieillissement a repris à mesure que les migrants temporaires, plus jeunes,
+  quittent le pays : l'âge médian est passé de 40,3 à 40,6 ans entre le 1er
+  juillet 2024 et le 1er juillet 2025, date à laquelle 19,5 % de la population
+  était âgée de 65 ans ou plus [statcan-pop-age-jul2025].
+
+
+  Trois personnes sur quatre (74,8 %) vivaient dans l'une des 41 régions
+  métropolitaines de recensement au 1er juillet 2025
+  [statcan-subprovincial-2025]. Le taux d'urbanisation n'a pas progressé cette
+  année-là (une première hors pandémie depuis le début des relevés en 2001-2002)
+  et la dynamique en est une de déconcentration plutôt que de croissance des
+  noyaux urbains : Toronto n'a enregistré aucune variation nette et a perdu 64
+  794 personnes au profit du reste de l'Ontario, Edmonton et Calgary ont connu
+  la croissance la plus rapide, et la part des immigrants à destination de
+  l'Ontario qui s'établissent à Toronto est passée de 76,1 % à 60,5 % en cinq
+  ans [statcan-subprovincial-2025].
 society_composition_en: >-
-  Canada's society is ethnically diverse and officially bilingual. The 2021
-  Census shows English as the first official language spoken by 75.5% of the
-  population and French by 21.4% [statcan-2021-census-language]. The census
-  recorded 5.0% of the population identifying as Indigenous (First Nations,
-  Métis, and Inuit); approximately 1.8 million persons
-  [statcan-2021-indigenous-profile]. Ethnocultural diversity is accelerating
-  through immigration, with racialized populations concentrated in major
-  metropolitan areas [statcan-2021-census-ethno-religion]. The principal
-  fault-line geometry is as follows: the English/French linguistic cleavage runs
-  roughly along provincial lines (Quebec vs. rest-of-Canada) and is reinforced
-  by distinct legal traditions (civil law in Quebec, common law elsewhere),
-  distinct cultural institutions, and periodic sovereignty debates. The
-  Indigenous/non-Indigenous cleavage is separate in geography (reserve
-  communities vs. urban centres), governance demands (inherent rights,
-  treaties), and socioeconomic outcomes. These two major cleavages are
-  cross-cutting with respect to each other — Francophone Quebecers and
-  Anglophone Canadians do not line up predictably on Indigenous issues; nor does
-  the Indigenous population align with either linguistic bloc — which tends to
-  diffuse rather than compound inter-group tension nationally.
-  [statcan-2021-census-language][statcan-2021-indigenous-profile][statcan-2021-census-ethno-religion].
-  The exception is provincial self-determination: where a province presses
+  Canada is ethnically plural, and the plurality is recent and urban. One in
+  four people belongs to a racialized group, the largest being South Asian
+  (7.1%), Chinese (4.7%) and Black (4.3%); close to 70% reported being White,
+  and of more than 450 origins reported, European origins account for 52.5%
+  (2021) [statcan-2021-census-ethno-religion]. These shares cannot be read as a
+  trend: the question changed in 2021 and Statistics Canada states directly that
+  the data cannot measure any group's growth or decline
+  [statcan-2021-census-ethno-religion]. Indigenous identity was reported by 5.0%
+  of the population, about 1.8 million people [statcan-2021-indigenous-profile].
+  The racialized population is concentrated in large urban centres — 95.3% live
+  in one, against 73.9% of the population overall
+  [statcan-2021-census-ethno-religion].
+
+
+  The cleavages are cross-cutting nationally except Quebec, where language,
+  French-descended origin and Catholic inheritance align along a provincial
+  boundary, reinforced by a distinct legal tradition and periodic sovereignty
+  debates.The Indigenous/non-Indigenous cleavage cuts across that line rather
+  than stacking on it: Francophone and Anglophone Canadians do not align
+  predictably on Indigenous questions, and Indigenous nations align with neither
+  bloc, which tends to defuse rather than compound tension nationally
+  [statcan-2021-census-ethno-religion][statcan-2021-indigenous-profile].
+
+
+  The exception is provincial self-determination. Where a province presses
   autonomy or secession, Indigenous nations assert treaty and title rights
   directly against it, since their constitutional relationship runs to the Crown
   rather than the province. Quebec's sovereignty movement collided with Cree
-  self-determination in this way in 1995; in 2025, in response to Alberta's
-  separation-referendum proposal, the Assembly of First Nations invoked the
-  numbered Treaties and called for a constitutional review of the 1930 Natural
-  Resources Transfer Agreement on the same ground [afn-nrta-2025].
+  self-determination on this ground in 1995; in 2025 the Assembly of First
+  Nations answered Alberta's separation-referendum proposal by invoking the
+  numbered Treaties and calling for constitutional review of the 1930 Natural
+  Resources Transfer Agreement [afn-nrta-2025].
 society_composition_fr: >-
-  La société canadienne est ethniquement diversifiée et officiellement bilingue.
-  Le recensement de 2021 indique que l'anglais est la première langue officielle
-  parlée par 75,5 % de la population et le français par 21,4 %
-  [statcan-2021-census-language]. Selon le recensement, 5,0 % de la population a
-  déclaré être autochtone (Premières Nations, Métis et Inuit); environ 1,8
-  million de personnes [statcan-2021-indigenous-profile]. La diversité
-  ethnoculturelle s'accélère grâce à l'immigration, avec des populations
-  racisées concentrées dans les grandes zones métropolitaines
-  [statcan-2021-census-ethno-religion]. La géométrie des principales lignes de
-  fracture est la suivante : le clivage linguistique anglais/français s'étend
-  approximativement le long des frontières provinciales (Québec contre reste du
-  Canada) et est renforcé par des traditions juridiques distinctes (droit civil
-  au Québec, common law ailleurs), des institutions culturelles distinctes et
-  des débats périodiques sur la souveraineté. Le clivage
-  autochtone/non-autochtone est distinct sur le plan géographique (communautés
-  de réserves vs. centres urbains), des revendications de gouvernance (droits
-  inhérents, traités) et des résultats socioéconomiques. Ces deux grands
-  clivages se recoupent transversalement : les Québécois francophones et les
-  Canadiens anglophones ne s'alignent pas de manière prévisible sur les enjeux
-  autochtones, et la population autochtone ne s'aligne sur aucun des deux blocs
-  linguistiques. Cette configuration tend à diffuser plutôt qu'à cumuler les
-  tensions intergroupes à l'échelle nationale
-  [statcan-2021-census-language][statcan-2021-indigenous-profile][statcan-2021-census-ethno-religion].
-  L'exception concerne l'autodétermination provinciale : lorsqu'une province
-  pousse pour l'autonomie ou la sécession, les nations autochtones font valoir
-  leurs droits issus des traités et leurs titres ancestraux directement contre
-  elle, puisque leur relation constitutionnelle s'exerce avec la Couronne et non
-  avec la province. Le mouvement souverainiste québécois est entré en collision
-  avec l'autodétermination crie de cette manière en 1995; en 2025, en réponse au
-  projet de référendum sur la séparation de l'Alberta, l'Assemblée des Premières
-  Nations a invoqué les traités numérotés et demandé une révision
-  constitutionnelle de la Convention sur le transfert des ressources naturelles
-  de 1930 au même titre [afn-nrta-2025].
+  Le Canada est ethniquement pluriel, et cette pluralité est récente et urbaine.
+  Une personne sur quatre appartient à un groupe racisé, les plus importants
+  étant les Sud-Asiatiques (7,1 %), les Chinois (4,7 %) et les Noirs (4,3 %);
+  près de 70 % se sont déclarés Blancs; sur plus de 450 origines déclarées, les
+  origines européennes représentent 52,5 % (2021)
+  [statcan-2021-census-ethno-religion]. Ces proportions ne peuvent être lues
+  comme une tendance : la question a été modifiée en 2021 et Statistique Canada
+  indique explicitement que les données ne permettent pas de mesurer la
+  croissance ou le déclin d'un groupe [statcan-2021-census-ethno-religion].
+  L'identité autochtone a été déclarée par 5,0 % de la population, soit environ
+  1,8 million de personnes [statcan-2021-indigenous-profile]. La population
+  racisée est concentrée dans les grands centres urbains : 95,3 % y vivent,
+  contre 73,9 % de la population dans son ensemble
+  [statcan-2021-census-ethno-religion].
+
+
+  Les clivages sont transversaux à l'échelle nationale, sauf au Québec où la
+  langue, l'origine française et l'héritage catholique coïncident avec une
+  frontière provinciale, renforcés par une tradition juridique distincte et des
+  débats souverainistes récurrents. Le clivage autochtones/non-autochtones
+  traverse ce clivage plutôt que de s'y superposer : les populations canadiennes
+  francophones et anglophones n'adoptent pas de positions prévisibles sur les
+  questions autochtones, et les nations autochtones ne s'alignent sur aucun des
+  deux blocs; ce qui tend à désamorcer les tensions à l'échelle nationale plutôt
+  qu'à les amplifier
+  [statcan-2021-census-ethno-religion][statcan-2021-indigenous-profile].
+
+
+  L'exception tient à l'autodétermination provinciale. Lorsqu'une province
+  revendique l'autonomie ou la sécession, les nations autochtones font valoir
+  directement contre elle leurs droits issus de traités et leurs titres
+  ancestraux, puisque leur rapport constitutionnel est établi avec la Couronne
+  et non avec la province. Le mouvement souverainiste québécois s'est heurté sur
+  ce terrain à l'autodétermination crie en 1995; en 2025, l'Assemblée des
+  Premières Nations a répondu au projet de référendum sur la séparation de
+  l'Alberta en invoquant les Traités numérotés et en appelant à une révision
+  constitutionnelle de la Convention de transfert des ressources naturelles de
+  1930 [afn-nrta-2025].
+society_language_en: >-
+  Canada has two official languages and a large third linguistic layer. English
+  was the first official language spoken by 75.5% of the population and French
+  by 21.4% in 2021, and 98.1% could hold a conversation in one or the other
+  [statcan-2021-census-language]. One in four reported a mother tongue that is
+  neither (a record) and 12.7% speak predominantly a non-official language at
+  home, Mandarin and Punjabi the largest [statcan-2021-census-language]. More
+  than 70 Indigenous languages are spoken; about 189,000 people reported an
+  Indigenous mother tongue while 243,000 could converse in one, the gap
+  indicating acquisition as a second language [statcan-2021-census-language].
+
+
+  The census label hides a convergence and an asymmetry. Nearly seven in ten
+  people whose mother tongue is neither official language speak English or
+  French at home at least regularly [statcan-2021-census-language].
+  English–French bilingualism stood at 18.0% nationally but splits: 46.4% in
+  Quebec and rising, 9.5% outside Quebec and falling, with close to six in ten
+  bilingual Canadians living in Quebec [statcan-2021-census-language]. It is
+  carried mainly by minorities: 85.3% of French-mother-tongue people outside
+  Quebec are bilingual, against 9.0% of English-mother-tongue people
+  [statcan-2021-census-language].
+
+
+  Language structures authority through the demographic movement beneath these
+  shares. French grows in absolute numbers and falls in share, from 27.2% of the
+  population in 1971 to 21.4% in 2021, because speakers of other languages grow
+  faster [statcan-2021-census-language]. In Quebec, the population whose first
+  official language is English passed one million for the first time, rising to
+  13.0% [statcan-2021-census-language]. That divergence is what the federal
+  official-languages regime and Quebec's Charter of the French language each
+  respond to.
+society_language_fr: >-
+  Le Canada compte deux langues officielles et une importante troisième strate
+  linguistique. L'anglais était la première langue officielle parlée par 75,5 %
+  de la population et le français par 21,4 % en 2021; 98,1 % des personnes
+  pouvaient soutenir une conversation dans l'une ou l'autre
+  [statcan-2021-census-language]. Une personne sur quatre a déclaré une langue
+  maternelle autre (un sommet) et 12,7 % parlent principalement une langue non
+  officielle à la maison; le mandarin et le pendjabi arrivant en tête
+  [statcan-2021-census-language]. Plus de 70 langues autochtones sont parlées;
+  environ 189 000 personnes ont déclaré une langue autochtone comme langue
+  maternelle, tandis que 243 000 pouvaient converser dans une telle langue;
+  l'écart témoignant d'une acquisition comme langue seconde
+  [statcan-2021-census-language].
+
+
+  L'étiquette du recensement masque une convergence et une asymétrie. Près de
+  sept personnes sur dix dont la langue maternelle n'est ni l'anglais ni le
+  français parlent l'une de ces deux langues à la maison au moins régulièrement
+  [statcan-2021-census-language]. Le bilinguisme français-anglais s'établissait
+  à 18,0 % à l'échelle nationale, mais avec un net contraste : 46,4 % au Québec,
+  en progression, et 9,5 % hors Québec, en recul; près de six Canadiens
+  bilingues sur dix vivant au Québec [statcan-2021-census-language]. Il est
+  porté principalement par les minorités : 85,3 % des personnes de langue
+  maternelle française hors Québec sont bilingues, contre 9,0 % des personnes de
+  langue maternelle anglaise [statcan-2021-census-language].
+
+
+  Language structures authority through the demographic movement beneath these
+  shares. French grows in absolute numbers and falls in share, from 27.2 % of the
+  population in 1971 to 21.4 % in 2021, because speakers of other languages grow
+  faster [statcan-2021-census-language]. In Quebec, the population whose first
+  official language is English passed one million for the first time, rising to
+  13.0 % [statcan-2021-census-language]. That divergence is what the federal
+  official-languages regime and Quebec's Charter of the French language each
+  respond to.
 society_religion_en: >-
   Religion in Canada is measured by the Census, which is self-declared and
   voluntary — tending to overcount nominal "Christian" among the non-practising
