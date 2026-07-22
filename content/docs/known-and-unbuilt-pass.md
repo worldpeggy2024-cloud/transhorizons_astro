@@ -37,7 +37,7 @@ Field 34. Capacity peer becomes seven subsections. Order: `inheritedTerrain → 
 
 **Epistemic status.** ANCHORED SYNTHESIS — introduces **no new sourced fact**. Every item is a close paraphrase of a claim already cited elsewhere in this report, carrying a `[dot.path]` anchor to the field asserting it. Ghost anchors are hard errors, per existing machinery. The `gap` and `since` values inherit the citation type of the field they came from; `class` is `Interpretation`, anchored to the observable record.
 
-**OPENER (required)** — one sentence doing the three jobs, plus one addition specific to this field:
+**OPENER (required)** — one to three sentences doing the three jobs, plus one addition specific to this field:
 
 > **Declare the documentation base.** The opener names what the register rests on — the national audit institution, the independent fiscal or budget office, statutory review bodies, or their absence. A country that publishes little self-assessment produces a short register because it documents less, not because it has closed more. Where the documentation base is thin, the opener says so, and the thinness is the finding.
 

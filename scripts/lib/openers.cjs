@@ -8,7 +8,11 @@
  * looks for the discipline's signature vocabulary at the START of the field (for
  * realEconomy: BEFORE the first digit — the character must be named before any
  * number). Heuristics, not semantics — tuned to catch a skipped opener, not to
- * grade a written one.
+ * grade a written one. The check is a signature check on state-and-signal
+ * vocabulary, NOT a count of three clauses — a compliant rich-field opener has
+ * no visible depth declaration, and openers may run one to three sentences
+ * (template edit 2026-07-21); never tighten this into sentence- or
+ * clause-counting.
  *
  * NINE enforced openers (rework spec §3/§9): territory.geography,
  * territory.climate, society.demographics, economy.realEconomy,

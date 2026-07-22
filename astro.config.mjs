@@ -5,15 +5,39 @@ import keystatic from '@keystatic/astro';
 import yaml from '@rollup/plugin-yaml';
 import node from '@astrojs/node';
 
-/** Sends a full-page reload to the browser whenever a YAML content file changes. */
+/**
+ * Full-page reload when RENDERED content YAML changes (content/countries/,
+ * content/pages/) — @rollup/plugin-yaml imports don't HMR cleanly. Scoped so
+ * job records and doc-folder YAML no longer trigger anything, and sent as a
+ * custom event so the /keystatic admin can ignore it (see yamlHmrClient):
+ * the admin UI is never force-reloaded, neither by installs nor by its own
+ * saves — Peggy can edit in Keystatic while the pipeline writes YAML.
+ */
 function yamlHmrPlugin() {
   return {
     name: 'yaml-hmr',
     handleHotUpdate({ file, server }) {
-      if (file.endsWith('.yaml') || file.endsWith('.yml')) {
-        server.ws.send({ type: 'full-reload' });
-        return [];
+      if (!/\.ya?ml$/.test(file)) return;
+      if (/[\\/]content[\\/](countries|pages)[\\/]/.test(file)) {
+        server.ws.send({ type: 'custom', event: 'yaml-reload' });
       }
+      return [];
+    },
+  };
+}
+
+/** Dev-only listener for yaml-reload: reloads every page EXCEPT /keystatic. */
+function yamlHmrClient() {
+  return {
+    name: 'yaml-hmr-client',
+    hooks: {
+      'astro:config:setup': ({ injectScript, command }) => {
+        if (command !== 'dev') return;
+        injectScript(
+          'page',
+          `if (import.meta.hot) { import.meta.hot.on('yaml-reload', () => { if (!location.pathname.startsWith('/keystatic')) location.reload(); }); }`
+        );
+      },
     },
   };
 }
@@ -25,7 +49,7 @@ export default defineConfig({
   site: 'https://transhorizons-astro.fly.dev',
   adapter: node({ mode: 'standalone' }),
   
-  integrations: [react(), keystatic()],
+  integrations: [react(), keystatic(), yamlHmrClient()],
   vite: {
     optimizeDeps: {
       exclude: [

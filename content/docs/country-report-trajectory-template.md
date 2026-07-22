@@ -125,6 +125,7 @@ trajectory:
       conditions: "what would have to hold / what would have to break"
       anchors: [capacity.permitting, territory.climate, society.cohesion, …]   # every forward-claim's anchor
       livedTexture: "…"                      # the consequence in human terms — the hinge toward VL (§7)
+      reopeningCondition: "…"    # required ONLY in a single-trajectory case (§2)
 
   tensions: "what pulls between the trajectories; why they stay plural rather than resolving to one"
 
@@ -160,7 +161,7 @@ This is exactly the seam between the layers: the present-state report states the
 
 - **Not sourced.** Don't fake citations — anchors are not sources. (If you find yourself wanting a
   `[source-id]`, the claim is really a present-state claim; move it down a layer.)
-- **Not a forecast.** No probabilities masquerading as fact; qualitative plausibility at most, always plural.
+- **Not a forecast.** No probabilities masquerading as fact; qualitative plausibility at most, plural unless the alternatives are demonstrably closed, per §2.
 - **Not a destiny, and not a "should."** The anti-saviorism guard (§3) is the hard line.
 - **Not a meritocracy.** The capacity-branching moral guard (§4c) is its own hard line: a capacity gap is an inherited, unjustly distributed fact, never a verdict on desert.
 - **Not the authored scene.** The wall (§5) is the hard line.
