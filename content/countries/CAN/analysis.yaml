@@ -1389,13 +1389,13 @@ economy_politicalEconomy_en: >-
   weight, among them the Business Development Bank of Canada, Export Development
   Canada and the Canada Infrastructure Bank, while at provincial level
   Hydro-Québec is the country's largest electricity producer and a pillar of
-  Quebec's economy [gac-state-of-trade-2025][pm-canada-strong-fund-2026]. The
+  Quebec's economy [gac-state-of-trade-2025][pmo-canada-strong-fund-2026]. The
   newest and most contested addition to this configuration is the Canada Strong
   Fund, announced 27 April 2026 as Canada's first federal sovereign wealth fund,
   seeded with $25 billion over three years and structured as an arm's-length
   Crown corporation that takes minority equity positions alongside private
   capital in energy, critical minerals, agriculture, infrastructure and advanced
-  manufacturing [pm-canada-strong-fund-2026]. The contested boundary is
+  manufacturing [pmo-canada-strong-fund-2026]. The contested boundary is
   precisely there: the fund is designed to co-invest rather than to displace
   private capital or nationalise assets, and critics have questioned whether a
   debt-financed fund taking equity in favoured projects is investment or
@@ -1435,7 +1435,7 @@ economy_politicalEconomy_en: >-
   agenda through a Productivity Super-Deduction for business investment, and the
   Canada Strong Fund followed in April 2026; whether either shifts the
   productivity trajectory depends on sustained delivery rather than announcement
-  [budget-2025-canada-strong][seu-2026][pm-canada-strong-fund-2026]. Housing and
+  [budget-2025-canada-strong][seu-2026][pmo-canada-strong-fund-2026]. Housing and
   consumer demand, long sustained by immigration-driven population growth, now
   face the reverse: the reduction of permanent-resident admissions toward
   380,000 a year and of non-permanent residents below 5% of the population by
@@ -1450,14 +1450,14 @@ economy_politicalEconomy_fr: >-
   de développement du Canada, Exportation et développement Canada et la Banque
   de l'infrastructure du Canada, tandis qu'à l'échelon provincial, Hydro-Québec
   est le plus grand producteur d'électricité au pays et un pilier de l'économie
-  québécoise [gac-state-of-trade-2025][pm-canada-strong-fund-2026]. Le plus
+  québécoise [gac-state-of-trade-2025][pmo-canada-strong-fund-2026]. Le plus
   récent ajout à cette configuration, et le plus contesté, est le Fonds Canada
   fort, annoncé le 27 avril 2026 à titre de premier fonds souverain fédéral
   canadien, doté de 25 milliards de dollars sur trois ans et constitué en
   société d'État sans lien de dépendance qui prend des participations
   minoritaires aux côtés du capital privé dans les secteurs de l'énergie, des
   minéraux critiques, de l'agriculture, des infrastructures et de la fabrication
-  de pointe [pm-canada-strong-fund-2026]. La frontière contestée se situe
+  de pointe [pmo-canada-strong-fund-2026]. La frontière contestée se situe
   précisément là : le fonds est conçu pour coinvestir plutôt que pour évincer le
   capital privé ou nationaliser des actifs, et les critiques ont soulevé la
   question de savoir si un fonds financé par emprunt prenant des participations
@@ -1505,7 +1505,7 @@ economy_politicalEconomy_fr: >-
   à l'investissement des entreprises, suivi par le Fonds pour un Canada fort en
   avril 2026; la question de savoir si l'une ou l'autre modifiera la trajectoire
   de productivité dépendra d'une exécution soutenue plutôt que de la seule
-  annonce [budget-2025-canada-strong][seu-2026][pm-canada-strong-fund-2026]. Le
+  annonce [budget-2025-canada-strong][seu-2026][pmo-canada-strong-fund-2026]. Le
   logement et la demande de consommation, longtemps soutenus par la croissance
   démographique portée par l'immigration, connaissent maintenant la tendance
   inverse : la réduction des admissions de résidents permanents vers 380 000 par
@@ -2452,8 +2452,8 @@ sources: |-
       "name": "Global Affairs Canada – Canada's State of Trade 2025",
       "nameFr": "Affaires mondiales Canada — Le commerce international du Canada 2025",
       "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/state-trade/2025",
-      "desc": "Annual government trade report documenting Canada's export ($997B) and import ($1T+) totals for 2024, sector performance, and partner concentration, with SME focus.",
-      "descFr": "Rapport commercial gouvernemental annuel documentant les exportations (997 G$) et importations (plus de 1 000 G$) totales du Canada en 2024, la performance sectorielle et la concentration des partenaires, avec un accent sur les PME.",
+      "desc": "Global Affairs Canada annual trade report documenting Canada's 2024 export and import totals, sector performance and partner concentration, with a focus on small and medium enterprises.",
+      "descFr": "Rapport commercial annuel d'Affaires mondiales Canada documentant les totaux des exportations et importations du Canada en 2024, la performance sectorielle et la concentration des partenaires, avec un accent sur les petites et moyennes entreprises.",
       "publicationDate": "2025-06-22",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -2476,24 +2476,26 @@ sources: |-
       "name": "Government of Canada – Spring Economic Update 2026: Economic and Fiscal Overview",
       "nameFr": "Gouvernement du Canada — Mise à jour économique du printemps 2026 : aperçu de la situation économique et budgétaire",
       "url": "https://budget.canada.ca/update-miseajour/2026/report-rapport/overview-apercu-en.html",
-      "desc": "Official federal Spring Economic Update 2026 ('Canada strong for all'): projects a $65.3B deficit (1.9% of GDP) for FY2026-27 with a declining deficit track; announces the Canada Strong Fund (a national sovereign wealth fund) and builds on the $13B Build Canada Homes housing plan.",
-      "descFr": "Mise à jour économique du printemps 2026 (« Un Canada fort pour tous »), fédérale et officielle : projette un déficit de 65,3 G$ (1,9 % du PIB) pour l'exercice 2026-2027 avec une trajectoire de déficit en baisse; annonce le Fonds pour un Canada fort (fonds souverain national) et s'appuie sur le plan de logement Maisons Canada de 13 G$.",
+      "desc": "Federal Spring Economic Update 2026 (\"Canada Strong for All\"): economic and fiscal overview setting out the budgetary balance and federal debt track to 2030-31, the two fiscal anchors, the capital-versus-operating deficit split, the private-sector economist survey underpinning the projections, and the announcement of the Canada Strong Fund.",
+      "descFr": "Mise à jour économique fédérale du printemps 2026 (« Un Canada fort pour tous ») : aperçu économique et budgétaire présentant le solde budgétaire et la trajectoire de la dette fédérale jusqu'en 2030-2031, les deux cibles budgétaires, la répartition du déficit entre investissements en capital et fonctionnement, l'enquête auprès des économistes du secteur privé qui sous-tend les projections, et l'annonce du Fonds pour un Canada fort.",
       "publicationDate": "2026-04-27",
-      "accessDate": "2026-06-28",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "volatility": "High"
     },
     {
       "id": "pbo-efo-jun2026",
-      "name": "Parliamentary Budget Office – Economic and Fiscal Outlook, June 2026",
-      "nameFr": "Bureau de la directrice parlementaire du budget — Perspectives économiques et financières, juin 2026",
+      "name": "Economic and Fiscal Outlook — June 2026 (Parliamentary Budget Officer)",
+      "nameFr": "Perspectives économiques et financières — juin 2026 (Directeur parlementaire du budget)",
       "url": "https://www.pbo-dpb.ca/en/publications/RP-2627-002-S--economic-fiscal-outlook-june-2026--perspectives-economiques-financieres-juin-2026",
-      "desc": "Independent federal fiscal watchdog report projecting a $72B deficit (2.2% of GDP) in 2025-26, real GDP growth of 1.1% in 2026, with US tariffs treated as permanent.",
-      "descFr": "Rapport de l'organisme indépendant de surveillance budgétaire fédéral projetant un déficit de 72 G$ (2,2 % du PIB) en 2025-2026 et une croissance du PIB réel de 1,1 % en 2026, les droits de douane imposés par les États-Unis étant considérés comme permanents.",
-      "publicationDate": "2026-06-03",
-      "accessDate": "2026-06-28",
+      "desc": "Parliamentary Budget Officer's independent baseline projection of the federal budgetary balance, debt-to-GDP ratio and debt-service ratio, incorporating Budget 2025 and Spring Economic Update 2026 measures and treating United States tariffs as permanent.",
+      "descFr": "Projection de référence indépendante du Directeur parlementaire du budget sur le solde budgétaire fédéral, le ratio de la dette au PIB et le ratio du service de la dette, tenant compte des mesures du budget de 2025 et de la mise à jour économique du printemps 2026 et considérant les tarifs américains comme permanents.",
+      "publicationDate": "2026-06-04",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "volatility": "High"
     },
     {
       "id": "oecd-eo-june2026",
@@ -2748,18 +2750,21 @@ sources: |-
       "descFr": "Page gouvernementale officielle sur les 15 accords de libre-échange du Canada couvrant 51 pays, la Stratégie indo-pacifique, le PTPGP, l'AECG et les objectifs de diversification commerciale au-delà des États-Unis.",
       "accessDate": "2026-06-28",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "publicationDate": "2025-01-01"
     },
     {
       "id": "statcan-international-trade",
       "name": "Statistics Canada – International Trade Statistics Portal",
       "nameFr": "Statistique Canada — Portail des statistiques sur le commerce international",
       "url": "https://www.statcan.gc.ca/en/subjects-start/international_trade",
-      "desc": "Statistics Canada's portal for monthly and annual merchandise and services trade data, showing April 2026 total trade at $92.9B and partner/commodity breakdowns.",
-      "descFr": "Portail de Statistique Canada présentant les données commerciales mensuelles et annuelles de marchandises et de services, indiquant le commerce total et des ventilations par partenaire et par produit.",
-      "accessDate": "2026-06-28",
+      "desc": "Statistics Canada's portal for monthly and annual merchandise and services trade data, with partner and commodity breakdowns.",
+      "descFr": "Portail de Statistique Canada présentant les données commerciales mensuelles et annuelles de marchandises et de services, avec ventilations par partenaire et par produit.",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "publicationDate": "2026-07-07",
+      "volatility": "High"
     },
     {
       "id": "pbo-ircc-immigration-demographic",
@@ -2833,15 +2838,16 @@ sources: |-
     },
     {
       "id": "pmo-canada-strong-fund-2026",
-      "name": "Prime Minister's Office – Prime Minister Carney announces the Canada Strong Fund, Canada's first sovereign wealth fund",
-      "nameFr": "Cabinet du premier ministre — Le premier ministre Carney annonce le Fonds pour un Canada fort, le premier fonds souverain du Canada",
+      "name": "Prime Minister Carney announces the Canada Strong Fund — Canada's first sovereign wealth fund",
+      "nameFr": "Le premier ministre Carney annonce le Fonds pour un Canada fort — le premier fonds souverain du Canada",
       "url": "https://www.pm.gc.ca/en/news/news-releases/2026/04/27/prime-minister-carney-announces-canada-strong-fund-canadas-first",
-      "desc": "Prime Minister's Office news release (27 April 2026) announcing the Canada Strong Fund, a $25B national sovereign wealth fund — a broader vehicle distinct from the narrower Critical Minerals Sovereign Fund that Budget 2025 only proposed.",
-      "descFr": "Communiqué du Cabinet du premier ministre (27 avril 2026) annonçant le Fonds pour un Canada fort, un fonds souverain national de 25 G$; véhicule plus large et distinct du Fonds souverain pour les minéraux critiques, plus restreint, que le budget 2025 s'était limité à proposer.",
+      "desc": "Prime Minister's Office release of 27 April 2026 announcing the Canada Strong Fund, a federal sovereign wealth fund seeded with $25 billion over three years, structured as an arm's-length Crown corporation co-investing alongside private capital, and situating it among existing federal financing entities and the Major Projects Office pipeline.",
+      "descFr": "Communiqué du Cabinet du premier ministre du 27 avril 2026 annonçant le Fonds pour un Canada fort, un fonds souverain fédéral doté de 25 milliards de dollars sur trois ans, constitué en société d'État sans lien de dépendance coinvestissant aux côtés du capital privé, et le situant parmi les entités de financement fédérales existantes et le portefeuille du Bureau des grands projets.",
       "publicationDate": "2026-04-27",
-      "accessDate": "2026-07-06",
+      "accessDate": "2026-07-21",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "volatility": "Med"
     },
     {
       "id": "usgs-mcs-2026",
@@ -3684,6 +3690,188 @@ sources: |-
       "accessDate": "2026-07-21",
       "confidence": "High",
       "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-employment-industry-2025",
+      "name": "Employment by class of worker and industry, annual (Table 14-10-0377-01)",
+      "nameFr": "Emploi selon la catégorie de travailleur et l'industrie, données annuelles (tableau 14-10-0377-01)",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410037701",
+      "desc": "Statistics Canada annual table of employment by North American Industry Classification System sector and class of worker, giving goods-producing and services-producing totals and sub-sector detail; 2025 values released 9 January 2026.",
+      "descFr": "Tableau annuel de Statistique Canada sur l'emploi selon le secteur du Système de classification des industries de l'Amérique du Nord et la catégorie de travailleur, donnant les totaux des secteurs producteur de biens et producteur de services ainsi que le détail par sous-secteur; valeurs de 2025 diffusées le 9 janvier 2026.",
+      "publicationDate": "2026-01-09",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "ised-ict-profile-2024",
+      "name": "Canadian ICT Sector Profile 2024 (Innovation, Science and Economic Development Canada)",
+      "nameFr": "Profil du secteur canadien des TIC 2024 (Innovation, Sciences et Développement économique Canada)",
+      "url": "https://ised-isde.canada.ca/site/digital-technologies-ict/en/canadian-ict-sector-profile",
+      "desc": "Federal department profile of the information and communications technology sector, reporting sector employment, firm counts, output growth and comparison with overall economic growth.",
+      "descFr": "Profil ministériel fédéral du secteur des technologies de l'information et des communications, présentant l'emploi du secteur, le nombre d'entreprises, la croissance de la production et la comparaison avec la croissance économique globale.",
+      "publicationDate": "2025-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-digital-economy-2020",
+      "name": "Digital supply and use tables, 2017 to 2020",
+      "nameFr": "Tableaux des ressources et des emplois numériques, 2017 à 2020",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/230725/dq230725a-eng.htm",
+      "desc": "Statistics Canada release measuring the digital economy's share of gross domestic product and employment across all industries, distinct from the information and communications technology sector; latest available reference year is 2020.",
+      "descFr": "Diffusion de Statistique Canada mesurant la part de l'économie numérique dans le produit intérieur brut et l'emploi dans l'ensemble des industries, distincte du secteur des technologies de l'information et des communications; l'année de référence la plus récente est 2020.",
+      "publicationDate": "2023-07-25",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "fraser-debt-2026",
+      "name": "The Growing Debt Burden for Canadians: 2026 Edition (Fraser Institute)",
+      "nameFr": "Le fardeau croissant de la dette pour les Canadiens : édition 2026 (Institut Fraser)",
+      "url": "https://www.fraserinstitute.org/studies/growing-debt-burden-canadians-2026-edition",
+      "desc": "Fraser Institute study compiling combined federal and provincial net debt as a share of gross domestic product and per person. The Fraser Institute is a free-market think tank that advocates lower government spending and debt; figures used here are its compilation of government debt data, cited for the combined federal-provincial total.",
+      "descFr": "Étude de l'Institut Fraser compilant la dette nette fédérale et provinciale combinée en proportion du produit intérieur brut et par habitant. L'Institut Fraser est un groupe de réflexion favorable au libre marché qui prône une réduction des dépenses et de la dette publiques; les chiffres utilisés ici constituent sa compilation de données sur la dette publique, cités pour le total combiné fédéral-provincial.",
+      "publicationDate": "2026-05-26",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "boc-mpr-jul2026",
+      "name": "Monetary Policy Report — July 2026 (Bank of Canada)",
+      "nameFr": "Rapport sur la politique monétaire — juillet 2026 (Banque du Canada)",
+      "url": "https://www.bankofcanada.ca/publications/mpr/mpr-2026-07-15/",
+      "desc": "Bank of Canada quarterly Monetary Policy Report and rate decision of 15 July 2026, holding the overnight rate target at 2.25% for a sixth consecutive decision, with the base-case projection for growth and inflation and its assessment of United States trade and Middle East oil-price risks.",
+      "descFr": "Rapport trimestriel sur la politique monétaire et décision de taux de la Banque du Canada du 15 juillet 2026, maintenant la cible du taux du financement à un jour à 2,25 % pour une sixième décision consécutive, avec la projection de référence pour la croissance et l'inflation et l'évaluation des risques liés au commerce avec les États-Unis et au prix du pétrole au Moyen-Orient.",
+      "publicationDate": "2026-07-15",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "statcan-cpi-jun2026",
+      "name": "Consumer Price Index, June 2026",
+      "nameFr": "Indice des prix à la consommation, juin 2026",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260720/dq260720a-eng.htm",
+      "desc": "Statistics Canada release in The Daily reporting a 2.8% year-over-year increase in the Consumer Price Index in June 2026, down from 3.2% in May, with gasoline the main contributor to the deceleration and detail on core measures and major components.",
+      "descFr": "Diffusion de Statistique Canada dans Le Quotidien faisant état d'une hausse de 2,8 % sur douze mois de l'Indice des prix à la consommation en juin 2026, en baisse par rapport à 3,2 % en mai, l'essence étant le principal facteur du ralentissement, avec le détail des mesures de l'inflation fondamentale et des grandes composantes.",
+      "publicationDate": "2026-07-20",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "dbrs-canada-2025",
+      "name": "Morningstar DBRS Confirms Government of Canada at AAA Stable",
+      "nameFr": "Morningstar DBRS confirme la note AAA stable du gouvernement du Canada",
+      "url": "https://dbrs.morningstar.com/research/449161",
+      "desc": "Morningstar DBRS press release of 28 February 2025 confirming the Government of Canada's long-term issuer ratings at AAA with a stable trend, naming weakened fiscal commitment and United States tariffs as the principal downside risks.",
+      "descFr": "Communiqué de Morningstar DBRS du 28 février 2025 confirmant les notes d'émetteur à long terme du gouvernement du Canada à AAA avec tendance stable, désignant l'affaiblissement de l'engagement budgétaire et les tarifs américains comme principaux risques à la baisse.",
+      "publicationDate": "2025-02-28",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "sp-canada-2025",
+      "name": "Canada Sovereign Ratings Affirmed At 'AAA/A-1+'; Outlook Stable (S&P Global Ratings)",
+      "nameFr": "Notes souveraines du Canada confirmées à « AAA/A-1+ »; perspective stable (S&P Global Ratings)",
+      "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/13486469",
+      "desc": "S&P Global Ratings regulatory disclosure affirming Canada's long-term sovereign credit rating at AAA and short-term at A-1+, with a stable outlook, on 5 May 2025.",
+      "descFr": "Communication réglementaire de S&P Global Ratings confirmant la note de crédit souveraine à long terme du Canada à AAA et à court terme à A-1+, avec perspective stable, le 5 mai 2025.",
+      "publicationDate": "2025-05-05",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "fitch-canada-2025",
+      "name": "Fitch Ratings maintains Canada at AA+/Stable following federal budget (November 2025)",
+      "nameFr": "Fitch Ratings maintient le Canada à AA+/stable après le budget fédéral (novembre 2025)",
+      "url": "https://ca.finance.yahoo.com/news/heres-only-credit-rating-agency-123856595.html",
+      "desc": "Report of Fitch Ratings' decision to maintain Canada's sovereign rating at AA+ with a stable outlook after the 4 November 2025 federal budget, including Fitch's warning that persistent fiscal expansion and a rising debt burden could increase rating pressure over the medium term. Fitch is the one major agency rating Canada below the top grade, having downgraded in 2020.",
+      "descFr": "Compte rendu de la décision de Fitch Ratings de maintenir la note souveraine du Canada à AA+ avec perspective stable après le budget fédéral du 4 novembre 2025, y compris l'avertissement de Fitch selon lequel l'expansion budgétaire persistante et l'alourdissement de la dette pourraient accroître la pression sur la note à moyen terme. Fitch est la seule grande agence à noter le Canada sous la note maximale, l'ayant abaissée en 2020.",
+      "publicationDate": "2025-11-13",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "statcan-merch-trade-may2026",
+      "name": "Canadian international merchandise trade, May 2026",
+      "nameFr": "Le commerce international de marchandises du Canada, mai 2026",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260707/dq260707a-eng.htm",
+      "desc": "Statistics Canada release in The Daily reporting May 2026 merchandise trade: a third consecutive world surplus and a four-year-high surplus with the United States, a fourth consecutive monthly rise in exports to the United States, and a reversal of unwrought-gold exports to the United Kingdom.",
+      "descFr": "Diffusion de Statistique Canada dans Le Quotidien présentant le commerce de marchandises de mai 2026 : un troisième excédent mondial consécutif et un excédent avec les États-Unis à un sommet de quatre ans, une quatrième hausse mensuelle consécutive des exportations vers les États-Unis, et un renversement des exportations d'or non ouvré vers le Royaume-Uni.",
+      "publicationDate": "2026-07-07",
+      "accessDate": "2026-07-21",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "companydata-energy-2026",
+      "name": "Top energy companies in Canada (CompanyData sector overview)",
+      "nameFr": "Principales entreprises énergétiques au Canada (aperçu sectoriel CompanyData)",
+      "url": "https://companydata.com/canada/energy-companies-canada/",
+      "desc": "Commercial business-registry overview identifying the principal Canadian energy firms by segment: oil-and-gas producers (Canadian Natural Resources, Suncor Energy, Cenovus, Imperial Oil), pipeline operators (Enbridge, TC Energy, Pembina) and major utilities. Used only to identify the load-bearing named producers; a data-aggregator source, not a ranking authority.",
+      "descFr": "Aperçu commercial fondé sur les registres d'entreprises identifiant les principales sociétés énergétiques canadiennes par segment : producteurs pétroliers et gaziers (Canadian Natural Resources, Suncor Energy, Cenovus, Imperial Oil), exploitants de pipelines (Enbridge, TC Energy, Pembina) et grands services publics. Utilisé uniquement pour désigner les producteurs nommés; source d'agrégation de données, non une autorité de classement.",
+      "publicationDate": "2026-06-01",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "disfold-canada-2026",
+      "name": "Largest Canadian companies by market capitalisation (Disfold)",
+      "nameFr": "Plus grandes entreprises canadiennes par capitalisation boursière (Disfold)",
+      "url": "https://disfold.com/canada/companies/",
+      "desc": "Market-capitalisation ranking of the largest Canadian public companies, used to identify the five dominant chartered banks (Royal Bank of Canada, Toronto-Dominion, Bank of Nova Scotia, Bank of Montreal, Canadian Imperial Bank of Commerce). A financial-data aggregator, cited only to name the load-bearing firms, not for precise figures.",
+      "descFr": "Classement par capitalisation boursière des plus grandes sociétés ouvertes canadiennes, utilisé pour désigner les cinq banques à charte dominantes (Banque Royale du Canada, Banque Toronto-Dominion, Banque de Nouvelle-Écosse, Banque de Montréal, Banque Canadienne Impériale de Commerce). Agrégateur de données financières, cité uniquement pour nommer les entreprises, non pour des chiffres précis.",
+      "publicationDate": "2026-01-01",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "clc-unifor-2025",
+      "name": "Canadian labour federations and largest unions (Canadian Labour Congress; Unifor)",
+      "nameFr": "Fédérations syndicales canadiennes et plus grands syndicats (Congrès du travail du Canada; Unifor)",
+      "url": "https://www.unifor.org/about-us",
+      "desc": "Unifor's own organisational profile establishing it as Canada's largest private-sector union at over 315,000 members, with corroborating reporting that it left the Canadian Labour Congress in 2024; the Canadian Labour Congress remains the peak federation representing roughly three million workers, and Quebec's Confédération des syndicats nationaux organises about 300,000.",
+      "descFr": "Profil organisationnel d'Unifor l'établissant comme le plus grand syndicat du secteur privé au Canada avec plus de 315 000 membres, avec des rapports corroborants sur son départ du Congrès du travail du Canada en 2024; le Congrès du travail du Canada demeure la fédération faîtière représentant environ trois millions de travailleurs, et la Confédération des syndicats nationaux du Québec en regroupe environ 300 000.",
+      "publicationDate": "2025-06-24",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "csf-thedeepdive-2026",
+      "name": "What the Canada Strong Fund is, how it works, and why critics call it a debt fund (The Deep Dive)",
+      "nameFr": "Ce qu'est le Fonds pour un Canada fort, son fonctionnement et pourquoi des critiques y voient un fonds financé par la dette (The Deep Dive)",
+      "url": "https://thedeepdive.ca/canadas-first-sovereign-wealth-fund-what-the-canada-strong-fund-is-how-it-works-and-why-critics-call-it-a-debt-fund/",
+      "desc": "Financial-media explainer of the Canada Strong Fund's structure and the criticism that a debt-financed sovereign fund taking equity in selected projects functions as industrial policy; cited for the existence of the contested-boundary critique, not as an endorsement of it.",
+      "descFr": "Article explicatif de la presse financière sur la structure du Fonds pour un Canada fort et la critique selon laquelle un fonds souverain financé par la dette prenant des participations dans des projets choisis relève de la politique industrielle; cité pour l'existence de la critique, non comme adhésion à celle-ci.",
+      "publicationDate": "2026-05-13",
+      "accessDate": "2026-07-21",
+      "confidence": "Med",
+      "citationType": "Interpretation",
       "volatility": "Med"
     }
   ]
