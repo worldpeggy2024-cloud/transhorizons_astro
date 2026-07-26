@@ -2547,19 +2547,20 @@ capacity_inheritedTerrain_fr: >-
   est-ouest (ferroviaire, électrique et de télécommunications
   [territory.metabolism]), de sorte qu'une rupture en un point de ce corridor ne
   dispose d'aucune solution de remplacement redondante. La population est faible
-  par rapport au territoire, elle se contracte désormais et elle est concentrée :
-  trois personnes sur quatre vivent dans l'une des 41 régions métropolitaines
-  de recensement, et la croissance se déplace vers la périphérie des plus
-  grandes plutôt que vers leur centre [society.demographics]. La fécondité
-  atteint un creux historique et l'âge médian remonte, maintenant que s'en vont
-  les résidents non permanents, plus jeunes, qui l'avaient brièvement tiré vers
-  le bas, de sorte que la main-d'œuvre appelée à tout construire et à tout doter
-  en personnel diminue en termes relatifs et dépend d'une immigration que la
-  politique vient de réduire [society.demographics]. Les aléas climatiques ne
-  sont pas répartis uniformément, mais ils sont localisables et chiffrés
-  (dégradation du pergélisol dans le Nord, incendies, et contrainte hydrique
-  estivale dans l'Ouest et les Prairies [territory.climate]) et ils frappent le
-  plus durement précisément les infrastructures les plus difficiles d'accès.
+  par rapport au territoire, elle se contracte désormais et elle est
+  concentrée : trois personnes sur quatre vivent dans l'une des 41 régions
+  métropolitaines de recensement, et la croissance se déplace vers la périphérie
+  des plus grandes plutôt que vers leur centre [society.demographics]. La
+  fécondité atteint un creux historique et l'âge médian remonte, maintenant que
+  s'en vont les résidents non permanents, plus jeunes, qui l'avaient brièvement
+  tiré vers le bas, de sorte que la main-d'œuvre appelée à tout construire et à
+  tout doter en personnel diminue en termes relatifs et dépend d'une immigration
+  que la politique vient de réduire [society.demographics]. Les aléas
+  climatiques ne sont pas répartis uniformément, mais ils sont localisables et
+  chiffrés (dégradation du pergélisol dans le Nord, incendies, et contrainte
+  hydrique estivale dans l'Ouest et les Prairies [territory.climate]) et ils
+  frappent le plus durement précisément les infrastructures les plus difficiles
+  d'accès.
 
 
   Le Canada a hérité à la fois de ses ressources et du schéma commercial dans
@@ -2898,118 +2899,385 @@ capacity_approvals_fr: >-
   observable qu'une fois les premières désignations prononcées.
 capacity_delivery_en: >-
   Delivery capacity is the state's realised record of executing infrastructure
-  at scale, distinct from its stated intent. Budget 2025 commits $81.8 billion
-  over five years for defence, doubles the Indigenous Loan Guarantee Program
-  from $5 billion to $10 billion to enable Indigenous equity participation in
-  major projects, and establishes a Productivity Super-Deduction and a $25
-  billion Canada Strong sovereign wealth vehicle among a broader infrastructure
-  and housing agenda [budget-2025-canada-strong]. The IMF's 2025 Article IV
-  Consultation identifies raising competitiveness and productivity — through
-  stronger competition, more agile regulation, and deeper internal-market
-  integration — as Canada's central medium-term challenge (see below)
-  [imf-can-2025-art4]. Investment in electricity infrastructure has moved
-  substantially: capital expenditures on power plants reached $11.8 billion in
-  2024, up 32% from 2018, with 83% directed at non-emitting sources;
-  hydroelectric investment alone accounted for 38% of that total. The delivery
-  test facing the federal state through the current cycle is whether the
-  newly-consolidated Major Projects Office pipeline (see the State Capacity -
-  Permitting section), the Indigenous Loan Guarantee Program expansion, and the
-  Budget 2025 vehicles translate the stated 2-year approval timeline and the
-  announced capital commitments into observable schedule and cost performance on
-  the referred projects; a record not yet in evidence.
+  at scale, distinct from its stated intent; on that measure Canada's problem is
+  not intent or money announced but a maintenance gap that is widening. Owners
+  of core public infrastructure estimated at the end of 2022 that $294.4 billion
+  was required to rehabilitate or replace existing assets to bring or keep them
+  in good condition; $31.3 billion was actually invested in renewal that year,
+  or 11% of the identified requirement, but the share of assets rated in good or
+  very good condition fell from 59% in 2020 to 55% in 2022
+  [statcan-ccpi-renewal-2022]. Transportation accounts for the largest single
+  share of the requirement at $160.8 billion, and the burden is heavier in rural
+  municipalities, where it is 61% of the required renewal budget against 48% in
+  urban ones [statcan-ccpi-renewal-2022]. The scale of what has to be maintained
+  is $2.6 trillion in transportation and water assets alone, and 72% of it
+  belongs to local and regional governments rather than to the federal or
+  provincial state — municipalities own 64% of the replacement value of roads,
+  76% of public transit and 82% of active transportation
+  [statcan-ccpi-replacement-2022]. Most of the deficit therefore sits with the
+  level of government least able to finance it, and climate adaptation adds a
+  further unfunded layer on the same assets [cci-infrastructure-2026].
+
+
+  On cost and schedule performance the federal record on its own megaproject is
+  poor and fully documented. The Trans Mountain Expansion was priced at $5.4
+  billion in 2013 and at $7.4 billion when the federal government bought it in
+  2018; the estimate reached $12.6 billion in 2020, $21.4 billion in 2022, $30.9
+  billion in 2023 and $34.2 billion on completion, and commercial operation
+  began on 1 May 2024, years after the schedules successively announced
+  [pbo-trans-mountain-2024]. The Parliamentary Budget Officer records a $12.8
+  billion increase between its own June 2022 report and 2024 alone
+  [pbo-trans-mountain-2024]. The state proved able to finish the project; it did
+  not prove able to forecast or contain what finishing it would cost.
+
+
+  Where delivery is visibly happening, it is concentrated and uneven. Total
+  capital spending on infrastructure assets rose 3.8% to $141.0 billion in 2024,
+  with public transit the fastest-growing function at 36.3% growth to $17.1
+  billion, led by Ontario and British Columbia [statcan-capex-2026]. The same
+  release shows the mechanical effect of completion rather than expansion: the
+  finishing of major air, rail, water and pipeline projects produced a $9.0
+  billion drop in capital outlays and pulled down infrastructure investment in
+  Alberta and British Columbia in 2024, offsetting a 12.6% increase across all
+  other functions [statcan-capex-2026]. Utilities capital spending is expected
+  to rise $4.5 billion, or 9.7%, in 2026 as grid reliability and forecast demand
+  growth are addressed [statcan-capex-2026]. The pattern is a state that can
+  execute individual large projects, at costs it does not control, while the
+  accumulated renewal requirement across the stock it already owns goes largely
+  unmet.
 capacity_delivery_fr: >-
-  La capacité de mise en œuvre correspond au bilan réel de l'État en matière de
-  réalisation d'infrastructures à grande échelle, distinct de l'intention
-  affichée. Le Budget 2025 engage 81,8 milliards de dollars sur cinq ans pour la
-  défense, double le Programme de garantie de prêts pour les Autochtones de 5 à
-  10 milliards de dollars afin de permettre la participation autochtone en
-  capitaux propres aux grands projets, et met en place une superdéduction à la
-  productivité ainsi qu'un fonds souverain Canada Fort de 25 milliards de
-  dollars, dans le cadre d'un programme plus large d'infrastructures et de
-  logement [budget-2025-canada-strong]. La Consultation de 2025 au titre de
-  l'article IV du FMI désigne le renforcement de la compétitivité et de la
-  productivité (par une concurrence accrue, une réglementation plus souple et
-  une intégration plus poussée du marché intérieur) comme le défi central du
-  Canada à moyen terme (voir ci-dessous) [imf-can-2025-art4]. L'investissement
-  dans les infrastructures d'électricité a progressé de façon substantielle :
-  les dépenses en immobilisations dans les centrales ont atteint 11,8 milliards
-  de dollars en 2024, en hausse de 32 % depuis 2018, dont 83 % vers des sources
-  non émettrices; l'investissement hydroélectrique représente à lui seul 38 % de
-  ce total. Le test de mise en œuvre auquel l'État fédéral fait face dans le
-  cycle actuel consiste à savoir si la chaîne de traitement de projets
-  nouvellement consolidé du Bureau des grands projets (voir la section Capacité
-  de l'État - Autorisations), l'élargissement du Programme de garantie de prêts
-  pour les Autochtones et les instruments du Budget 2025 traduiront la cible
-  affichée d'approbation en deux ans et les engagements en capital annoncés en
-  performances observables de calendrier et de coûts sur les projets soumis;
-  bilan qui n'est pas encore établi.
+  La capacité de réalisation correspond au bilan effectif de l'État en matière
+  d'exécution d'infrastructures à grande échelle, distinct de ses intentions
+  déclarées; à cet égard, le problème du Canada ne tient pas à l'intention ni
+  aux sommes annoncées, mais à un déficit d'entretien qui se creuse. Les
+  propriétaires d'infrastructures publiques essentielles estimaient à la fin de
+  2022 qu'il fallait 294,4 milliards de dollars pour remettre en état ou
+  remplacer les actifs existants afin de les amener ou de les maintenir en bon
+  état; 31,3 milliards de dollars ont effectivement été investis dans le
+  renouvellement cette année-là, soit 11 % du besoin recensé, mais la proportion
+  d'actifs jugés en bon ou en très bon état est passée de 59 % en 2020 à 55 % en
+  2022 [statcan-ccpi-renewal-2022]. Le transport représente à lui seul la plus
+  grande part du besoin, à 160,8 milliards de dollars, et le fardeau est plus
+  lourd dans les municipalités rurales, où il correspond à 61 % du budget de
+  renouvellement requis, contre 48 % dans les municipalités urbaines
+  [statcan-ccpi-renewal-2022]. L'ampleur de ce qui doit être entretenu atteint 2
+  600 milliards de dollars pour les seuls actifs de transport et d'aqueduc, et
+  72 % de cette valeur appartient aux administrations locales et régionales
+  plutôt qu'à l'État fédéral ou provincial; les municipalités détiennent 64 % de
+  la valeur de remplacement des routes, 76 % de celle du transport en commun et
+  82 % de celle du transport actif [statcan-ccpi-replacement-2022]. L'essentiel
+  du déficit incombe donc à l'ordre de gouvernement le moins en mesure de le
+  financer, et l'adaptation aux changements climatiques ajoute une charge
+  supplémentaire non financée sur ces mêmes actifs [cci-infrastructure-2026].
+
+
+  En matière de respect des coûts et des échéanciers, le bilan fédéral à l'égard
+  de son propre mégaprojet est médiocre et entièrement documenté. Le projet
+  d'agrandissement du réseau de Trans Mountain était chiffré à 5,4 milliards de
+  dollars en 2013, et à 7,4 milliards lorsque le gouvernement fédéral en a fait
+  l'acquisition en 2018; l'estimation a atteint 12,6 milliards en 2020, 21,4
+  milliards en 2022, 30,9 milliards en 2023 et 34,2 milliards à l'achèvement;
+  l'exploitation commerciale a débuté le 1er mai 2024, des années après les
+  échéanciers successivement annoncés [pbo-trans-mountain-2024]. La directrice
+  parlementaire du budget relève une hausse de 12,8 milliards de dollars entre
+  son propre rapport de juin 2022 et 2024 seulement [pbo-trans-mountain-2024].
+  L'État s'est révélé capable de mener le projet à terme; il ne s'est pas révélé
+  capable de prévoir ni de contenir ce que cet achèvement coûterait.
+
+
+  Là où la réalisation est visible, elle est concentrée et inégale. Les dépenses
+  en immobilisations totales consacrées aux actifs d'infrastructure ont
+  progressé de 3,8 % pour atteindre 141,0 milliards de dollars en 2024; le
+  transport en commun affichant la croissance la plus rapide, à 36,3 %, pour
+  s'établir à 17,1 milliards de dollars, sous l'impulsion de l'Ontario et de la
+  Colombie-Britannique [statcan-capex-2026]. La même publication met en évidence
+  l'effet mécanique de l'achèvement plutôt que de l'expansion : la fin de grands
+  projets aériens, ferroviaires, hydrauliques et pipeliniers a entraîné une
+  baisse de 9,0 milliards de dollars des dépenses en immobilisations et fait
+  reculer l'investissement en infrastructures en Alberta et en
+  Colombie-Britannique en 2024, annulant une hausse de 12,6 % dans toutes les
+  autres fonctions [statcan-capex-2026]. Les dépenses en immobilisations du
+  secteur des services publics devraient augmenter de 4,5 milliards de dollars,
+  soit 9,7 %, en 2026, à mesure que sont abordées la fiabilité du réseau et la
+  croissance prévue de la demande [statcan-capex-2026]. Le schéma est celui d'un
+  État capable d'exécuter de grands projets pris isolément, à des coûts qu'il ne
+  maîtrise pas, tandis que le besoin de renouvellement accumulé sur le parc
+  qu'il possède déjà demeure largement non satisfait.
+capacity_publicServices_en: >-
+  Health care is delivered by the provinces and the binding constraint is
+  primary-care coverage. Some 5.7 million adults had no regular primary care
+  provider in 2024, and the Canadian Institute for Health Information estimates
+  that meeting current demand would require 49% more family physicians
+  [cihi-health-workforce-2024]. Physician supply is not collapsing but it is
+  losing ground: 99,555 physicians in 2024, or 241 per 100,000 population, down
+  from 243 the year before, with specialist numbers growing faster (2.5%) than
+  family medicine (1.9%) [cihi-physicians-2024]. Family physician supply per
+  capita has fallen over five years, from 11.8 to 11.5 per 10,000 population
+  [cihi-health-workforce-2024]. Headcount is only part of it: family physicians
+  saw an average of 1,353 patients a year in 2021 against 1,746 in 2013, close
+  to 30% now practise primarily outside primary care, and some family medicine
+  training places go unfilled each year
+  [cihi-primary-care-access][cihi-health-workforce-2024]. On international
+  comparison Canada ranks last among ten high-income countries on having a
+  regular provider, and lowest on same- or next-day appointments, at 26%
+  [cihi-primary-care-access].
+
+
+  Waiting times show a system doing more work and still moving more slowly. In
+  2024 Canadian hospitals performed 26% more hip replacements, 21% more knee
+  replacements, 11% more cataract surgeries, 7% more cancer surgeries and 16%
+  more magnetic resonance and computed tomography scans than in 2019, yet only
+  68% of hip replacements and 61% of knee replacements were completed within the
+  26-week benchmark, against 75% and 70% respectively in 2019
+  [cihi-wait-times-priority-2025]. Radiation therapy within 28 days and hip
+  fracture repair within 48 hours each fell three percentage points over the
+  same period, to 94% and 83% [cihi-wait-times-priority-2025]. By 2026 joint
+  replacements were approaching pre-pandemic levels and cataract and urgent
+  treatments had largely returned to them, but most cancer surgeries remained
+  slower than before the pandemic and diagnostic imaging delays persisted
+  [cihi-wait-times-2026]. The institute's own diagnosis locates the constraint
+  in flow rather than in any single setting: emergency department waits and
+  patient acuity both rose between 2018-19 and 2024-25, limited inpatient bed
+  availability keeps admitted patients in emergency departments and consumes the
+  capacity to treat new arrivals, and shortages of long-term care beds and
+  community supports delay discharge from acute care, backing the whole chain up
+  [cihi-wait-times-2026].
+
+
+  Education is also provincial, better resourced in aggregate, and carries two
+  specific fragilities. Elementary and secondary education spending reached
+  $95.9 billion in 2022-23, of which provincial and territorial governments
+  provided $72.5 billion, or 73.3%; 5.8 million students were enrolled, 91.3% of
+  them in public schools, with public enrolment at its highest level since
+  2002-03 on the largest population aged 4 to 17 since 1977
+  [statcan-elem-sec-2022-23]. Aggregate spending growth has not translated into
+  much per-student gain: on one independent compilation of the same data,
+  inflation-adjusted operational spending per student rose 2.9% in total across
+  the nine years to 2022-23 [fraser-education-spending-2025]. The private-school
+  share has risen for two consecutive years, to 7.7% [statcan-elem-sec-2022-23].
+  The first fragility is minority-language provision: French immersion enrolment
+  fell to 11.7% of the total from a 12.3% peak, ending a twenty-one-year upward
+  trend, and many provinces and territories report educator shortages for
+  minority-language programmes [statcan-elem-sec-2022-23]. The second is the
+  funding structure of postsecondary education, which has come to depend on
+  differential fees: international undergraduates are expected to pay more than
+  five times what Canadian students pay in 2025-26, against 3.6 times a decade
+  earlier, and international graduate students more than three times, against
+  2.2 [statcan-tuition-2025-26]. That revenue base is precisely what the
+  international student permit cap has cut.
+capacity_publicServices_fr: >-
+  Les soins de santé relèvent des provinces; la contrainte déterminante est
+  l'accès aux soins primaires. Quelque 5,7 millions d'adultes n'avaient aucun
+  fournisseur régulier de soins primaires en 2024, et l'Institut canadien
+  d'information sur la santé estime qu'il faudrait 49 % de médecins de famille
+  en plus pour répondre à la demande actuelle [cihi-health-workforce-2024].
+  L'offre médicale ne s'effondre pas, mais elle perd du terrain : 99 555
+  médecins en 2024, soit 241 pour 100 000 habitants, en baisse par rapport à 243
+  l'année précédente; le nombre de spécialistes progressant plus vite (2,5 %)
+  que celui des médecins de famille (1,9 %) [cihi-physicians-2024]. L'offre de
+  médecins de famille par habitant a reculé sur cinq ans, de 11,8 à 11,5 pour 10
+  000 habitants [cihi-health-workforce-2024]. Le nombre de praticiens n'explique
+  qu'une partie du phénomène : les médecins de famille voyaient en moyenne 1 353
+  patients par année en 2021, contre 1 746 en 2013, près de 30 % exercent
+  aujourd'hui principalement en dehors des soins primaires, et certaines places
+  de formation en médecine familiale demeurent vacantes chaque année
+  [cihi-primary-care-access][cihi-health-workforce-2024]. À l'échelle
+  internationale, le Canada se classe au dernier rang de dix pays à revenu élevé
+  pour ce qui est de disposer d'un fournisseur régulier, et au plus bas rang
+  pour l'obtention d'un rendez-vous le jour même ou le lendemain, à 26 %
+  [cihi-primary-care-access].
+
+
+  Les temps d'attente révèlent un système qui accomplit plus de travail tout en
+  avançant plus lentement. En 2024, les hôpitaux canadiens ont pratiqué 26 %
+  plus d'arthroplasties de la hanche, 21 % plus d'arthroplasties du genou, 11 %
+  plus de chirurgies de la cataracte, 7 % plus de chirurgies oncologiques et 16
+  % plus d'examens d'imagerie par résonance magnétique et de tomodensitométrie
+  qu'en 2019; pourtant, seulement 68 % des arthroplasties de la hanche et 61 %
+  de celles du genou ont été réalisées dans le délai repère de 26 semaines,
+  contre respectivement 75 % et 70 % en 2019 [cihi-wait-times-priority-2025]. La
+  radiothérapie dans les 28 jours et la réparation d'une fracture de la hanche
+  dans les 48 heures ont chacune reculé de trois points de pourcentage sur la
+  même période, pour s'établir à 94 % et à 83 % [cihi-wait-times-priority-2025].
+  En 2026, les arthroplasties s'approchaient des niveaux d'avant la pandémie, et
+  les interventions pour cataracte ainsi que les traitements urgents avaient
+  largement renoué avec les niveaux antérieurs, mais la plupart des chirurgies
+  oncologiques demeuraient plus lentes qu'avant la pandémie et les retards en
+  imagerie diagnostique persistaient [cihi-wait-times-2026]. Le diagnostic posé
+  par l'Institut lui-même situe la contrainte dans la circulation des patients
+  plutôt que dans un milieu de soins en particulier : entre 2018-2019 et
+  2024-2025, les attentes aux urgences et la gravité des cas ont augmenté de
+  concert, le nombre limité de lits d'hospitalisation retient aux urgences des
+  patients déjà admis et consomme la capacité de traiter les nouvelles arrivées,
+  alors que la pénurie de places en soins de longue durée et de soutiens
+  communautaires retarde les congés des soins aigus; ce qui engorge toute la
+  chaîne [cihi-wait-times-2026].
+
+
+  L'éducation relève également des provinces, dispose globalement de meilleures
+  ressources et porte deux fragilités précises. Les dépenses au titre de
+  l'enseignement primaire et secondaire ont atteint 95,9 milliards de dollars en
+  2022-2023, dont 72,5 milliards, soit 73,3 %, provenaient des gouvernements
+  provinciaux et territoriaux.; 5,8 millions d'élèves étaient inscrits, dont
+  91,3 % dans des écoles publiques; l'effectif du réseau public atteignant son
+  plus haut niveau depuis 2002-2003, portant sur la population de 4 à 17 ans la
+  plus nombreuse depuis 1977 [statcan-elem-sec-2022-23]. La croissance des
+  dépenses globales ne s'est guère traduite en gains par élève : selon une
+  compilation indépendante des mêmes données, les dépenses de fonctionnement par
+  élève, corrigées de l'inflation, ont augmenté de 2,9 % au total sur les neuf
+  années précédant 2022-2023 [fraser-education-spending-2025]. La part des
+  écoles privées progresse pour une deuxième année consécutive, à 7,7 %
+  [statcan-elem-sec-2022-23]. La première fragilité concerne l'offre en langue
+  en situation minoritaire : les inscriptions en immersion française ont reculé
+  à 11,7 % du total, après un sommet de 12,3 % (ce qui met fin à une tendance
+  haussière de vingt et un ans) et de nombreuses provinces et territoires
+  signalent une pénurie d'enseignants pour les programmes en langue en situation
+  minoritaire [statcan-elem-sec-2022-23]. La seconde tient à la structure de
+  financement de l'enseignement postsecondaire, qui en est venue à dépendre de
+  droits de scolarité différenciés : les étudiants internationaux de premier
+  cycle devraient payer plus de cinq fois ce que paient les étudiants canadiens
+  en 2025-2026, contre 3,6 fois une décennie plus tôt, et les étudiants
+  internationaux des cycles supérieurs plus de trois fois, contre 2,2
+  [statcan-tuition-2025-26]. Or cette assiette de revenus est précisément celle
+  qu'a amputée le plafond imposé aux permis d'études internationaux.
 capacity_productivity_en: >-
-  Productivity has been Canada's central medium-term economic challenge across
-  the last decade, distinct from headline GDP growth and directly consequential
-  for real wages. Statistics Canada's May 2026 analytical review documents weak
-  Canadian labour-productivity growth broadly across the 2014–2024 period, and
-  identifies industries dependent on United States export demand as
-  concentrating the country's most productive jobs and therefore the exposure to
-  tariff-driven disruption [statcan-productivity-us-2026]. The IMF's 2025
-  Article IV Consultation identifies the same weakness as structural, driven by
-  weak business dynamism, slow capital deepening, lagging innovation, high
-  concentration in key service sectors, and barriers to firm scaling, and calls
-  the reform bundle to address it Canada's highest-return set of policies
-  [imf-can-2025-art4]. The IMF quantifies non-geographic, policy-related
-  internal / interprovincial trade barriers as equivalent to about a 9% national
-  tariff, rising to up to 50% in health-care, education, and retail services;
-  full elimination of these barriers could raise real GDP by up to 7% over time
-  (roughly $210 billion in 2025 dollars) with services liberalisation accounting
-  for approximately 90% of that gain
-  [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. Part 1 of the One
-  Canadian Economy Act (the Free Trade and Labour Mobility in Canada Act)
-  received royal assent on 26 June 2025 as the federal response, and provincial
-  mutual-recognition agreements advanced through 2025; the December 2025
-  interprovincial agreement covered many goods but largely exempted services,
-  where the IMF locates most of the potential gain
-  [imf-country-focus-internal-trade-2026]. Value-add processing built
-  domestically versus raw material exported for others to process is a
-  structural sub-question inside productivity: Canada is among the top five
-  global producers of 10 of its 34 critical minerals but has not built out the
-  corresponding domestic processing and refining capacity at scale; a gap
-  explicitly targeted by the current critical-minerals strategy
-  [nrcan-cm-strategy-annual-2024].
+  Productivity has been Canada's central medium-term economic challenge for a
+  decade, and it is the mechanism that converts into living standards: since the
+  early 1980s, labour productivity growth has accounted for over 90% of the
+  increase in real gross domestic product per person
+  [statcan-productivity-us-2026]. Since 2000, Canadian labour productivity has
+  grown 0.8% a year against 1.9% in the United States — less than half the pace
+  — and the slowdown since 2015 is attributable largely to weak capital
+  investment, pervasive across industries, with investment per worker falling
+  nearly 20% between 2014 and 2022 [statcan-productivity-us-2026]. Statistics
+  Canada's May 2026 review adds a specific exposure: the industries dependent on
+  United States export demand concentrate the country's most productive jobs, so
+  the tariff shock falls hardest on the most productive part of the economy
+  [statcan-productivity-us-2026]. The International Monetary Fund identifies the
+  same weakness as structural — weak business dynamism, slow capital deepening,
+  lagging innovation, high concentration in key service sectors and barriers to
+  firm scaling — and calls the reform bundle addressing it Canada's
+  highest-return set of policies [imf-can-2025-art4].
+
+
+  Innovation and research capacity is the clearest single gap. Canada's gross
+  domestic expenditure on research and development was about 1.8% of gross
+  domestic product in 2023, against an average of 2.7% across countries in the
+  Organisation for Economic Co-operation and Development, 3.3% in the United
+  States and 4.9% in Korea; Canadian research intensity has been flat since 2010
+  while it rose in most member countries, and the business share of that
+  spending is particularly low [oecd-canada-survey-2025]. The capacity that does
+  exist is substantially foreign-owned: foreign multinationals accounted for
+  over 40% of business research and development spending in 2022 and 30% of
+  corporate intellectual property expenditure in 2023 [oecd-canada-survey-2025].
+
+
+  Interprovincial barriers are the quantified drag. The International Monetary
+  Fund puts non-geographic, policy-related internal trade barriers at the
+  equivalent of about a 9% national tariff, rising to as much as 50% in health
+  care, education and retail services, and estimates that eliminating them could
+  raise real output by up to 7% over time — roughly $210 billion in 2025 dollars
+  — with about 90% of that gain coming from services rather than goods
+  [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. The federal
+  response is Part 1 of the One Canadian Economy Act, the Free Trade and Labour
+  Mobility in Canada Act, given royal assent on 26 June 2025, alongside the
+  elimination of all federal exceptions under the Canadian Free Trade Agreement.
+  Implementation is partial and running behind its own timetable. The Canadian
+  Mutual Recognition Agreement covers the sale of goods and a new financial
+  services chapter has entered into force, but ministers only committed in March
+  2026 to extend mutual recognition to services by the end of that year, labour
+  mobility provisions were still under negotiation, and credential recognition
+  for tradespersons through digital verification is targeted for spring 2027
+  [cit-communique-2026]. One deadline has already been missed: the framework for
+  direct-to-consumer alcohol sales was due in May 2026 and was not delivered,
+  with the responsible federal minister noting publicly that much of the
+  outstanding work lies in provincial and territorial jurisdiction
+  [canada-leblanc-cit-2026]. At their meeting of 23 July 2026 — their fourteenth
+  since March 2025 — First Ministers agreed to work toward an agreement in
+  principle by the end of 2026 on model mutual recognition legislation, which is
+  a commitment to negotiate rather than a completed instrument
+  [pm-first-ministers-jul2026].
+
+
+  Value-added processing is the structural sub-question inside productivity.
+  Canada is among the top five global producers of 10 of its 34 critical
+  minerals but has not built the corresponding domestic processing and refining
+  capacity at scale — a gap the current critical minerals strategy explicitly
+  targets [nrcan-cm-strategy-annual-2024].
 capacity_productivity_fr: >-
-  La productivité est le défi économique central du Canada à moyen terme depuis
-  une décennie, distinct de la croissance du PIB global et directement
-  conséquent pour les salaires réels. Le rapport économique et social de mai
-  2026 de Statistique Canada documente une faible croissance de la productivité
-  du travail canadienne sur l'ensemble de la période 2014-2024 et cite les
-  industries dépendantes de la demande à l'exportation vers les États-Unis comme
-  concentrant les emplois les plus productifs du pays, et donc l'exposition aux
-  perturbations liées aux droits de douane [statcan-productivity-us-2026]. La
-  Consultation de 2025 au titre de l'article IV du FMI souligne également la
-  même faiblesse comme étant structurelle, tirée par un dynamisme
-  entrepreneurial faible, une intensification lente du capital, une innovation à
-  la traîne, une forte concentration dans des secteurs de services clés et des
-  obstacles à la mise à l'échelle des entreprises, et qualifie le train de
-  réformes visant à y remédier comme l'ensemble de politiques le plus rentable
-  pour le Canada [imf-can-2025-art4]. Le FMI chiffre les obstacles au commerce
-  intérieur / interprovincial non géographiques et d'origine réglementaire comme
-  équivalents à des droits de douane nationaux d'environ 9 %, pouvant atteindre
-  50 % dans les services de santé, d'éducation et de commerce de détail;
-  l'élimination complète de ces obstacles pourrait accroître le PIB réel jusqu'à
-  7 % au fil du temps (environ 210 milliards de dollars en dollars de 2025); la
-  libéralisation des services représentant environ 90 % de ce gain
-  [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. La partie 1 de la
-  Loi sur l’unité de l’économie canadienne (Loi sur le libre-échange et la
-  mobilité de la main-d'œuvre au Canada) a reçu la sanction royale le 26 juin
-  2025 comme réponse fédérale; les ententes provinciales de reconnaissance
-  mutuelle progressant en 2025. L'entente interprovinciale de décembre 2025 a
-  couvert de nombreux biens, mais écarté en grande partie les services, secteur
-  où le FMI situe la majeure partie du gain potentiel
-  [imf-country-focus-internal-trade-2026]. La transformation à valeur ajoutée
-  réalisée sur le territoire canadien plutôt que d'exporter la matière première
-  pour qu'elle soit traitée ailleurs constitue une sous-question structurelle au
-  sein de la productivité : le Canada figure parmi les cinq premiers producteurs
-  mondiaux de 10 de ses 34 minéraux critiques, mais n'a pas bâti la capacité
-  correspondante de traitement et de raffinage à grande échelle; écart
-  explicitement ciblé par la stratégie actuelle des minéraux critiques
+  La productivité constitue le principal défi économique à moyen terme du Canada
+  depuis une décennie, et c'est le mécanisme par lequel se traduit le niveau de
+  vie : depuis le début des années 1980, la croissance de la productivité du
+  travail représente plus de 90 % de la hausse du produit intérieur brut réel
+  par habitant [statcan-productivity-us-2026]. Depuis 2000, la productivité du
+  travail au Canada a progressé de 0,8 % par année, contre 1,9 % aux États-Unis
+  (moins de la moitié de ce rythme), et le ralentissement observé depuis 2015
+  s'explique en grande partie par la faiblesse de l'investissement en capital,
+  généralisée dans l'ensemble des industries; l'investissement par travailleur
+  ayant chuté de près de 20 % entre 2014 et 2022 [statcan-productivity-us-2026].
+  L'examen de mai 2026 de Statistique Canada ajoute une exposition particulière :
+  les industries qui dépendent de la demande d'exportation états-unienne
+  concentrent les emplois les plus productifs du pays, de sorte que le choc des
+  droits de douane frappe le plus durement la partie la plus productive de
+  l'économie [statcan-productivity-us-2026]. Le Fonds monétaire international
+  qualifie cette même faiblesse de structurelle (dynamisme entrepreneurial
+  anémique, intensification du capital lente, innovation à la traîne, forte
+  concentration dans des secteurs de services clés et obstacles à la croissance
+  des entreprises) et présente l'ensemble de réformes qui s'y attaque comme le
+  train de politiques au plus fort rendement dont le Canada dispose
+  [imf-can-2025-art4].
+
+
+  La capacité d'innovation et de recherche constitue l'écart le plus net. Les
+  dépenses intérieures brutes de recherche et développement du Canada
+  s'établissaient à environ 1,8 % du produit intérieur brut en 2023, contre une
+  moyenne de 2,7 % dans les pays de l'Organisation de coopération et de
+  développement économiques, 3,3 % aux États-Unis et 4,9 % en Corée; l'intensité
+  de la recherche au Canada stagne depuis 2010, alors qu'elle a augmenté dans la
+  plupart des pays membres, et la part des entreprises dans ces dépenses est
+  particulièrement faible [oecd-canada-survey-2025]. La capacité qui existe bel
+  et bien est en grande partie sous propriété étrangère : les multinationales
+  étrangères comptaient pour plus de 40 % des dépenses de recherche et
+  développement des entreprises en 2022 et pour 30 % des dépenses des sociétés
+  en propriété intellectuelle en 2023 [oecd-canada-survey-2025].
+
+
+  Les obstacles interprovinciaux constituent le frein chiffré. Le Fonds
+  monétaire international évalue les obstacles internes au commerce, non
+  géographiques et liés aux politiques publiques, à l'équivalent de droits de
+  douane nationaux d'environ 9 %, atteignant jusqu'à 50 % dans les soins de
+  santé, l'éducation et les services de détail, et estime que leur élimination
+  pourrait accroître la production réelle de 7 % au fil du temps (soit environ
+  210 milliards de dollars de 2025), dont environ 90 % proviendrait des services
+  plutôt que des biens
+  [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. La réponse
+  fédérale est la partie 1 de la Loi sur l'unité de l'économie canadienne, soit
+  la Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada,
+  sanctionnée le 26 juin 2025, assortie de l'élimination de toutes les
+  exceptions fédérales prévues à l'Accord de libre-échange canadien. La mise en
+  œuvre est partielle et accuse un retard sur son propre calendrier. L'Accord
+  canadien de reconnaissance mutuelle couvre la vente de biens et un nouveau
+  chapitre sur les services financiers est entré en vigueur, mais les ministres
+  ne se sont engagés qu'en mars 2026 à étendre la reconnaissance mutuelle aux
+  services avant la fin de la même année; les dispositions sur la mobilité de la
+  main-d'œuvre étaient toujours en négociation, et la reconnaissance des titres
+  de compétence des gens de métier par vérification numérique est visée pour le
+  printemps 2027 [cit-communique-2026]. Une échéance a déjà été manquée : le
+  cadre régissant la vente directe d'alcool aux consommateurs était attendu en
+  mai 2026 et n'a pas été livré; le ministre fédéral responsable soulignant
+  publiquement qu'une grande partie du travail restant relève de la compétence
+  des provinces et des territoires [canada-leblanc-cit-2026]. À leur réunion du
+  23 juillet 2026 (leur quatorzième depuis mars 2025), les premiers ministres
+  ont convenu de travailler à une entente de principe avant la fin de 2026 sur
+  une loi type de reconnaissance mutuelle; ce qui constitue un engagement à
+  négocier plutôt qu'un instrument achevé [pm-first-ministers-jul2026].
+
+
+  La transformation à valeur ajoutée constitue la sous-question structurelle au
+  cœur de la productivité. Le Canada figure parmi les cinq premiers producteurs
+  mondiaux de 10 de ses 34 minéraux critiques, mais il n'a pas bâti à grande
+  échelle la capacité nationale correspondante de traitement et de raffinage;
+  écart que la stratégie actuelle sur les minéraux critiques cible explicitement
   [nrcan-cm-strategy-annual-2024].
 capacity_permitting_en: >-
   Canada's federal permitting and impact-assessment regime has been the
