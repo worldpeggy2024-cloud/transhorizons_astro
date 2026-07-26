@@ -62,9 +62,17 @@ function parseSources(rawSources) {
   return [];
 }
 
+// A source id is a letter-bearing slug (lowercase alnum + hyphens). Requiring
+// at least one [a-z] is what separates a real citation from a neutral legal
+// citation, which is bracketed and purely numeric — "[1998] 2 S.C.R. 217",
+// "[2026] 1 F.C.R." — and must NOT be read as a ghost citation (2026-07-25,
+// after CAN constitutionalSubstrate cited the Quebec Secession Reference).
+const CITATION_RE_G = /\[([a-z0-9-]*[a-z][a-z0-9-]*)\]/g;
+const CITATION_RE = /\[[a-z0-9-]*[a-z][a-z0-9-]*\]/;
+
 function collectCitations(value, out) {
   if (typeof value === 'string') {
-    const regex = /\[([a-z0-9-]+)\]/g;
+    const regex = new RegExp(CITATION_RE_G.source, 'g');
     let m;
     while ((m = regex.exec(value)) !== null) {
       out.add(m[1]);
@@ -452,7 +460,7 @@ function validateCountryFile(filePath) {
           for (const f of ['date', 'what', 'changed']) {
             if (!e || typeof e[f] !== 'string' || !e[f].trim()) warnings.push(`${key}[${i}].events[${j}]: missing "${f}"`);
           }
-          if (!/\[[a-z0-9-]+\]/.test(`${e?.what ?? ''} ${e?.changed ?? ''}`)) {
+          if (!CITATION_RE.test(`${e?.what ?? ''} ${e?.changed ?? ''}`)) {
             warnings.push(`${key}[${i}].events[${j}]: no source citation — every event carries one`);
           }
         });

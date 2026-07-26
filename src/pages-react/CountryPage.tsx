@@ -817,7 +817,7 @@ export default function CountryPage() {
     rightsAndChecks: language === 'fr' ? 'Droits et contre-pouvoirs' : 'Rights & checks',
     stateStructure: language === 'fr' ? 'Structure de l\'État' : 'State structure',
     inheritedTerrain: language === 'fr' ? 'Terrain hérité' : 'Inherited terrain',
-    steering: language === 'fr' ? 'Pilotage' : 'Steering',
+    steering: language === 'fr' ? 'Gouverne' : 'Steering',
     approvals: language === 'fr' ? 'Autorisations' : 'Approvals',
     publicServices: language === 'fr' ? 'Services publics' : 'Public services',
     languageField: language === 'fr' ? 'Langue' : 'Language',
