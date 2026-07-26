@@ -1,6 +1,6 @@
 nameEn: Canada
 nameFr: Canada
-lastUpdated: '2026-07-14'
+lastUpdated: '2026-07-25'
 scorecard_eliteCohesion: Med
 scorecard_socialCohesion: Med
 scorecard_securityLoyalty: High
@@ -1435,9 +1435,9 @@ economy_politicalEconomy_en: >-
   agenda through a Productivity Super-Deduction for business investment, and the
   Canada Strong Fund followed in April 2026; whether either shifts the
   productivity trajectory depends on sustained delivery rather than announcement
-  [budget-2025-canada-strong][seu-2026][pmo-canada-strong-fund-2026]. Housing and
-  consumer demand, long sustained by immigration-driven population growth, now
-  face the reverse: the reduction of permanent-resident admissions toward
+  [budget-2025-canada-strong][seu-2026][pmo-canada-strong-fund-2026]. Housing
+  and consumer demand, long sustained by immigration-driven population growth,
+  now face the reverse: the reduction of permanent-resident admissions toward
   380,000 a year and of non-permanent residents below 5% of the population by
   end-2027 is projected to materially cut population-driven demand
   [pbo-ircc-immigration-demographic].
@@ -1513,331 +1513,959 @@ economy_politicalEconomy_fr: >-
   d'ici la fin de 2027 devrait réduire de manière substantielle la demande liée
   à la population [pbo-ircc-immigration-demographic].
 political_powerStructure_en: >-
-  Executive power formally rests with the Crown, exercised by the Prime Minister
-  and Cabinet through the Privy Council. Prime Minister Mark Carney leads a
-  Liberal majority government: the Liberals were returned with a minority at the
-  28 April 2025 general election (169 seats) and subsequently reached a majority
-  through five floor crossings and a sweep of three by-elections on 13 April
-  2026 (their first majority since 2015) [ourcommons-membership-changes]. The
-  route to that majority — the first time a Canadian prime minister has crossed
-  the threshold partly through floor crossings rather than at an election — is
-  contested by the Conservative Official Opposition as illegitimate; it
-  nonetheless gives the government effective control of the Commons agenda.
+  Canada is a Westminster parliamentary democracy under a constitutional
+  monarchy. Power is won by commanding the confidence of the elected House of
+  Commons: the party able to hold a majority of votes in the House forms the
+  government, and the executive sits inside the legislature rather than apart
+  from it, so executive and legislative control are fused rather than divided.
+  Formal executive authority rests with the Crown, represented by the Governor
+  General, and is exercised in practice by the Prime Minister and Cabinet
+  through the Privy Council.
 
-  The majority is real but thin and in motion. The Liberal count peaked at 174
-  seats in April [cbc-carney-majority-byelections-2026] and stood at 172 of 343
-  as of 7 July 2026 — a figure that includes the Speaker, who by convention
-  votes only to break ties, leaving an operative voting bloc of 171 against 167
-  for the combined opposition, with four seats vacant. The slip from 174
-  followed two Liberal resignations [ourcommons-party-standings-2026]; at 172
-  the government sits at the bare majority threshold. By-elections in the
-  vacated seats are now the pivot: recovering the Liberal-held ridings would
-  restore a cushion, while further losses on its own benches would leave the
-  government's ability to legislate without opposition support resting on the
-  Speaker's tie-breaking vote — a materially weaker position than a majority
-  normally implies. The bicameral Parliament consists of an elected House of
-  Commons (343 seats since the 2025 redistribution) and an appointed Senate; the
-  Supreme Court of Canada exercises judicial review with full independence and
-  serves as the final court of appeal
-  [freedom-house-canada-2026][wjp-canada-2025]. The Royal Canadian Mounted
-  Police (RCMP) is civilian-directed under the Minister of Public Safety; the
-  Canadian Armed Forces (CAF) are under civilian ministerial control via the
-  Department of National Defence [dnd-departmental-results-2024-25]. Media
-  independence is robust — Freedom House classifies Canada Free in 2026, noting
-  independent broadcasters and print outlets with no direct state ownership of
-  major private media [freedom-house-canada-2026]. Canada ranked 13th of 143
-  countries on the WJP Rule of Law Index 2025, reflecting strong scores on
-  constraints on government powers and absence of corruption [wjp-canada-2025].
-  V-Dem classifies Canada as a Liberal Democracy ranked 23rd globally on the
-  Liberal Democracy Index in the 2026 report [vdem-democracy-report-2026].
+
+  Mark Carney is Prime Minister, leading a Liberal government. The Liberals were
+  returned with a minority at the general election of 28 April 2025, winning 169
+  of 343 seats, and reached a majority through five floor crossings — four
+  Conservative, one New Democrat — and a sweep of three by-elections on 13 April
+  2026, their first parliamentary majority since 2015
+  [ourcommons-membership-changes][cbc-carney-majority-byelections-2026]. That
+  route, the first time a Canadian government has crossed the threshold partly
+  through floor crossings rather than at an election, is rejected as
+  illegitimate by the Conservative Official Opposition; it nonetheless gives the
+  government working control of the House agenda
+  [cbc-carney-majority-byelections-2026].
+
+
+  The majority is real but thin and in motion. As of 25 July 2026 the House
+  stands at 172 Liberals, 139 Conservatives, 21 Bloc Québécois, 5 New Democrats,
+  1 Green and 1 Independent, with 4 seats vacant — 339 members in office of 343
+  [ourcommons-party-standings-2026]. The Liberal count peaked at 174 in April
+  before two resignations brought it to 172, exactly the number a majority of
+  the full House requires [ourcommons-membership-changes]. One of those 172 is
+  the Speaker, who by convention votes only to break ties, leaving an operative
+  government bloc of 171 against 167 for the combined opposition. By-elections
+  in the vacant seats are therefore the pivot: recovering Liberal-held ridings
+  would restore a cushion, while further losses on the government benches would
+  leave the government's ability to legislate resting on the Speaker's casting
+  vote — a materially weaker position than a majority normally implies.
+
+
+  Parliament is bicameral. The House of Commons has 343 seats filled by
+  first-past-the-post election on the boundaries set by the 2025 redistribution.
+  The Senate has 105 seats filled by appointment, and as of 25 July 2026 stands
+  at 40 Independent Senators Group, 18 Canadian Senators Group, 17 Progressive
+  Senate Group, 12 Conservative Party of Canada — the only group tied to a
+  federal party — 5 in the Government Representative's Office, and 4
+  non-affiliated, with 9 seats vacant, five of them in Quebec
+  [sencanada-standings-2026]. The upper chamber's character is itself in motion:
+  on 7 July 2026 the Prime Minister announced changes to the appointment
+  process, dropping the non-partisan criterion that had governed appointments
+  since 2016 and reworking the independent advisory board, alongside his first
+  four appointments — one of which, a sitting Conservative member of Parliament,
+  accounts for one of the Commons vacancies [pmo-senate-2026].
 political_powerStructure_fr: >-
-  Le pouvoir exécutif appartient formellement à la Couronne et s'exerce par
-  l'entremise du premier ministre et du Cabinet au sein du Conseil privé. Le
-  premier ministre Mark Carney dirige un gouvernement libéral majoritaire : les
-  libéraux ont été reportés au pouvoir avec une minorité lors de l'élection
-  générale du 28 avril 2025 (169 sièges), puis ont atteint la majorité grâce à
-  cinq changements d'allégeance et à la victoire dans les trois élections
-  partielles du 13 avril 2026 (leur première majorité depuis 2015)
-  [ourcommons-membership-changes]. La voie empruntée pour y parvenir — première
-  fois qu'un premier ministre canadien franchit le seuil de la majorité en
-  partie par des changements d'allégeance plutôt qu'au terme d'un scrutin — est
-  dénoncée comme illégitime par l'Opposition officielle conservatrice; elle
-  donne néanmoins au gouvernement le contrôle effectif de l'ordre du jour aux
-  Communes. La majorité est réelle, mais fragile et mouvante. Le nombre de
-  sièges libéraux a culminé à 174 en avril
-  [cbc-carney-majority-byelections-2026], pour s'établir à 172 sur 343 au 7
-  juillet 2026 (chiffre qui inclut le président de la Chambre, lequel, par
-  convention, ne vote qu'en cas d'égalité pour la départager; ce qui laisse un
-  bloc votant effectif de 171 voix contre 167 pour l'opposition réunie, avec
-  quatre sièges vacants. Le recul de 174 à 172 fait suite à deux démissions de
-  députés libéraux [ourcommons-party-standings-2026]; à 172, le gouvernement se
-  situe au seuil même de la majorité. Les élections partielles dans les
-  circonscriptions devenues vacantes constituent désormais le point de bascule :
-  reprendre les sièges libéraux rétablirait une marge de manœuvre, tandis que de
-  nouvelles pertes dans ses propres rangs feraient reposer sa capacité de
-  légiférer sans l'appui de l'opposition sur la voix prépondérante du président;
-  position nettement plus faible que ne le laisse entendre une majorité. Le
-  Parlement bicaméral comprend une Chambre des communes élue (343 sièges depuis
-  le redécoupage de 2025) et un Sénat nommé; la Cour suprême du Canada exerce un
-  contrôle judiciaire en toute indépendance et est le tribunal d'appel de
-  dernier ressort [freedom-house-canada-2026][wjp-canada-2025]. La Gendarmerie
-  royale du Canada (GRC) est sous direction civile et relève du ministre de la
-  Sécurité publique; les Forces armées canadiennes (FAC) sont sous contrôle
-  ministériel civil par l'intermédiaire du ministère de la Défense nationale
-  [dnd-departmental-results-2024-25]. L'indépendance des médias est robuste :
-  Freedom House classe le Canada comme Libre en 2026, notant des diffuseurs
-  indépendants et des imprimés sans propriété d'État directe des grands médias
-  privés [freedom-house-canada-2026]. Le Canada se classe 13e sur 143 pays dans
-  l'Indice d'état de droit du WJP 2025, reflétant de bons résultats sur les
-  contraintes aux pouvoirs gouvernementaux et l'absence de corruption
-  [wjp-canada-2025]. V-Dem classe le Canada comme Démocratie libérale, 23e
-  mondial sur l'Indice de démocratie libérale dans son rapport 2026
-  [vdem-democracy-report-2026].
+  Le Canada est une démocratie parlementaire de type Westminster sous monarchie
+  constitutionnelle. Le pouvoir s'y remporte en obtenant la confiance de la
+  Chambre des communes, élue au suffrage universel : le parti en mesure de
+  réunir la majorité des voix à la Chambre forme le gouvernement; le pouvoir
+  exécutif siège au sein du pouvoir législatif plutôt que d'en être distinct, de
+  sorte que la maîtrise de l'exécutif et celle du législatif sont fusionnées
+  plutôt que séparées. L'autorité exécutive formelle revient à la Couronne,
+  représentée par le gouverneur général, et s'exerce en pratique par le premier
+  ministre et le Cabinet par l'intermédiaire du Conseil privé.
+
+
+  Mark Carney est premier ministre à la tête d'un gouvernement libéral. Les
+  libéraux ont été reportés au pouvoir avec un gouvernement minoritaire aux
+  élections générales du 28 avril 2025, remportant 169 des 343 sièges; ils ont
+  atteint la majorité à la faveur de cinq changements d'allégeance (quatre
+  conservateurs, un néo-démocrate) et de la victoire dans les trois élections
+  partielles le 13 avril 2026 (leur première majorité parlementaire depuis 2015)
+  [ourcommons-membership-changes][cbc-carney-majority-byelections-2026]. Cette
+  voie, la première fois qu'un gouvernement canadien franchit le seuil en partie
+  par des changements d'allégeance plutôt qu'à l'occasion d'un scrutin, est
+  rejetée comme illégitime par l'opposition officielle conservatrice; elle donne
+  néanmoins au gouvernement une maîtrise effective de l'ordre du jour de la
+  Chambre [cbc-carney-majority-byelections-2026].
+
+
+  La majorité est réelle, mais mince et mouvante. Au 25 juillet 2026, la Chambre
+  compte 172 libéraux, 139 conservateurs, 21 bloquistes, 5 néo-démocrates, 1
+  vert et 1 indépendant, avec 4 sièges vacants; 339 députés en fonction sur 343
+  [ourcommons-party-standings-2026]. Le total libéral a culminé à 174 en avril
+  avant que deux démissions ne le ramènent à 172, soit exactement le nombre
+  requis pour la majorité de la Chambre au complet
+  [ourcommons-membership-changes]. L'un de ces 172 députés est le Président de
+  la Chambre, qui, par convention, ne vote que pour départager les voix; ce qui
+  laisse un bloc gouvernemental opérationnel de 171 contre 167 pour l'opposition
+  combinée. Les élections partielles dans les sièges vacants constituent donc le
+  pivot : la reconquête des circonscriptions détenues par les libéraux
+  rétablirait une marge de manœuvre, tandis que d'autres pertes du côté
+  ministériel feraient reposer la capacité du gouvernement de légiférer sur la
+  voix prépondérante du Président; position sensiblement plus faible que ce que
+  suppose habituellement une majorité.
+
+
+  Le Parlement est bicaméral. La Chambre des communes compte 343 sièges pourvus
+  au scrutin majoritaire uninominal à un tour selon les délimitations établies
+  par le redécoupage électoral de 2025. Le Sénat compte 105 sièges pourvus par
+  nomination et, au 25 juillet 2026, il se répartit comme suit : 40 membres du
+  Groupe des sénateurs indépendants, 18 du Groupe des sénateurs canadiens, 17 du
+  Groupe progressiste du Sénat, 12 du Parti conservateur du Canada (seul groupe
+  rattaché à un parti fédéral), 5 au Bureau du représentant du gouvernement et 4
+  non affiliés, avec 9 sièges vacants, dont cinq au Québec
+  [sencanada-standings-2026]. Le caractère même de la chambre haute est en
+  mouvement : le 7 juillet 2026, le premier ministre a annoncé des modifications
+  au processus de nomination, abandonnant le critère non partisan qui régissait
+  les nominations depuis 2016 et remaniant le Comité consultatif indépendant, en
+  même temps que ses quatre premières nominations, dont l'une, un député
+  conservateur en poste, explique l'un des sièges vacants aux Communes
+  [pmo-senate-2026].
+political_rightsAndChecks_en: >-
+  The judiciary is independent and exercises full judicial review, with the
+  Supreme Court of Canada as final court of appeal [freedom-house-canada-2026].
+  Its nine judges are appointed by the Governor in Council from a shortlist of
+  three to five candidates prepared by a non-partisan Independent Advisory
+  Board, which assesses applicants against published criteria including
+  functional bilingualism and regional representation, and publishes a report on
+  each process; the nominee then appears at a moderated public
+  question-and-answer session with parliamentarians from both chambers
+  [fja-scc-process]. The mechanism was used in full this year: the Prime
+  Minister launched the process on 30 March 2026 to fill the seat vacated by
+  Justice Sheilah Martin, named the advisory board on 19 May, and appointed
+  Justice Glenn Joyal on 30 June [pm-scc-appointment-2026]. Notably, the
+  non-partisan criterion was retained here at the same moment it was dropped for
+  Senate appointments [pm-scc-appointment-2026][pmo-senate-2026]. Provincial
+  superior court judges are appointed separately, by the federal government on
+  the advice of independent judicial advisory committees in each province. That
+  mechanism is now contested in one province: in January 2026 Alberta's Premier
+  proposed a four-person committee requiring both federal and provincial
+  ministerial approval before appointments to Alberta's superior courts proceed,
+  which the Canadian Bar Association and its Alberta branch opposed as
+  incompatible with section 96 of the Constitution Act, 1867, which vests that
+  appointment power in the federal government alone
+  [cba-alberta-appointments-2026].
+
+
+  Media are independent of the state, with no direct government ownership of
+  major private outlets [freedom-house-canada-2026]. Press freedom is
+  nonetheless eroding on the economic rather than the political axis. Canada's
+  score on the Reporters Without Borders index fell from 81.7 in 2024 to about
+  78.8 in 2025 and held flat in 2026, leaving it the highest-scoring country in
+  the Americas but roughly eight points below its 2013 level [rsf-index-2026].
+  The organisation attributes the decline to ownership concentration — more than
+  80% of Canadian media controlled by five corporations — and to financial
+  fragility, alongside inconsistent access to information and harassment of
+  journalists covering polarising subjects [rsf-index-2026]. Reporters Without
+  Borders is a French press-freedom advocacy organisation, and its index
+  measures the conditions for journalism rather than the quality of it.
+
+
+  On the civil-liberties and human-rights record, Canada's own national human
+  rights institution reports rising pressure. The Canadian Human Rights
+  Commission received over 4,600 inquiries and potential complaints in 2025 and
+  accepted more than 960, both five-year highs, with its Chief Commissioner
+  describing the country as at a historic crossroads amid rising hate, record
+  income inequality and cost-of-living strain [chrc-annual-report-2025].
+  Race-based complaints are the persistent structural finding: since 2020 the
+  Commission has referred them to the Canadian Human Rights Tribunal at a higher
+  rate than other complaints and dismissed them at an equal or lower rate, and
+  it reports that use of force by law enforcement falls disproportionately on
+  Indigenous, Black and racialized people [chrc-annual-report-2025]. The
+  Commission has also called for an independent Indigenous human rights system
+  distinct from its own [chrc-annual-report-2025]. Its standing is itself
+  qualified: the Global Alliance of National Human Rights Institutions upheld
+  the Commission's A-status accreditation after a review prompted by
+  civil-society concerns about systemic racial discrimination within the
+  Commission, while urging it to keep addressing that discrimination internally
+  as well as externally [chrc-anti-racism-2025].
+
+
+  External assessments place Canada in the upper tier while recording slippage.
+  Freedom House classifies Canada as Free in 2026 [freedom-house-canada-2026];
+  the Varieties of Democracy Institute classifies it as a Liberal Democracy,
+  ranked 23rd globally in its 2026 report [vdem-democracy-report-2026]; and the
+  World Justice Project ranked it 13th of 143 countries in its 2025 index, on
+  strong scores for constraints on government powers and absence of corruption,
+  but recorded a weakening in civil justice (longer delays, less effective
+  alternatives to court) in Canada as in most countries measured
+  [wjp-canada-2025]. These instruments carry their own standpoints: Freedom
+  House is a United States–based organisation funded largely by the United
+  States government; the Varieties of Democracy Institute is an academic project
+  at the University of Gothenburg working from expert coding; the World Justice
+  Project builds its index from household and legal-practitioner surveys rather
+  than institutional review.
+political_rightsAndChecks_fr: >-
+  Le pouvoir judiciaire est indépendant et exerce un contrôle judiciaire
+  complet, la Cour suprême du Canada agissant comme tribunal de dernier ressort
+  [freedom-house-canada-2026]. Ses neuf juges sont nommés par le gouverneur en
+  conseil à partir d'une liste restreinte de trois à cinq candidatures dressée
+  par un comité consultatif indépendant non partisan, qui évalue les
+  candidatures au regard de critères publiés (dont le bilinguisme fonctionnel et
+  la représentation régionale) et publie un rapport sur chaque processus. La
+  personne dont la candidature est retenue participe ensuite à une séance
+  publique de questions et réponses animée par un modérateur, avec des
+  parlementaires des deux chambres [fja-scc-process]. Le mécanisme a été utilisé
+  intégralement cette année : le premier ministre a lancé le processus le 30
+  mars 2026 pour pourvoir le siège laissé vacant par la juge Sheilah Martin, a
+  nommé les membres du comité consultatif le 19 mai et a nommé le juge Glenn
+  Joyal le 30 juin [pm-scc-appointment-2026]. Fait notable, le critère non
+  partisan a été maintenu ici au moment même où il était abandonné pour les
+  nominations au Sénat [pm-scc-appointment-2026][pmo-senate-2026]. Les juges des
+  cours supérieures provinciales sont nommés séparément, par le gouvernement
+  fédéral sur l'avis de comités consultatifs indépendants sur les nominations à
+  la magistrature établis dans chaque province. Ce mécanisme est aujourd'hui
+  contesté dans une province : en janvier 2026, la première ministre de
+  l'Alberta a proposé un comité de quatre personnes exigeant l'approbation
+  ministérielle tant fédérale que provinciale avant que les nominations aux
+  cours supérieures de l'Alberta puissent aller de l'avant; ce à quoi
+  l'Association du Barreau canadien et sa section albertaine se sont opposées
+  comme étant incompatible avec l'article 96 de la Loi constitutionnelle de
+  1867, qui confère ce pouvoir de nomination au seul gouvernement fédéral
+  [cba-alberta-appointments-2026].
+
+
+  Les médias sont indépendants de l'État; aucun grand organe de presse privé
+  n'appartenant directement au gouvernement [freedom-house-canada-2026]. La
+  liberté de la presse s'érode néanmoins sur l'axe économique plutôt que
+  politique. Le score du Canada à l'indice de Reporters sans frontières est
+  passé de 81,7 en 2024 à environ 78,8 en 2025, puis s'est maintenu en 2026; ce
+  qui lui laisse le meilleur score des Amériques, mais quelque huit points sous
+  son niveau de 2013 [rsf-index-2026]. L'organisation attribue ce recul à la
+  concentration de la propriété (plus de 80 % des médias canadiens étant
+  contrôlés par cinq entreprises) et à la fragilité financière, auxquelles
+  s'ajoutent un accès à l'information inégal et le harcèlement des journalistes
+  couvrant des sujets polarisants [rsf-index-2026]. Reporters sans frontières
+  est une organisation française de défense de la liberté de la presse; son
+  indice mesure les conditions d'exercice du journalisme plutôt que sa qualité.
+
+
+  En ce qui concerne les libertés civiles et les droits de la personne,
+  l'institution nationale canadienne des droits de la personne fait état de
+  pressions croissantes. La Commission canadienne des droits de la personne a
+  reçu plus de 4 600 demandes de renseignements et plaintes potentielles en 2025
+  et en a accepté plus de 960 (deux sommets sur cinq ans); sa présidence
+  décrivant le pays comme se trouvant à un carrefour historique, sur fond de
+  haine croissante, d'inégalités de revenus records et de tensions liées au coût
+  de la vie [chrc-annual-report-2025]. Les plaintes fondées sur la race
+  constituent le constat structurel persistant : depuis 2020, la Commission les
+  renvoie au Tribunal canadien des droits de la personne à un taux plus élevé
+  que les autres plaintes et les rejette à un taux égal ou inférieur; elle
+  rapporte que le recours à la force par les forces de l'ordre frappe de manière
+  disproportionnée les personnes autochtones, noires et racisées
+  [chrc-annual-report-2025]. La Commission a également réclamé la création d'un
+  système autochtone indépendant de protection des droits de la personne,
+  distinct du sien [chrc-annual-report-2025]. Sa propre position est elle-même
+  nuancée : l'Alliance globale des institutions nationales des droits de l'homme
+  a confirmé l'accréditation de statut A de la Commission au terme d'un examen
+  déclenché par les préoccupations de la société civile concernant la
+  discrimination raciale systémique au sein même de la Commission, tout en
+  l'exhortant à continuer de s'attaquer à cette discrimination à l'interne comme
+  à l'externe [chrc-anti-racism-2025].
+
+
+  Les évaluations externes situent le Canada parmi les pays les mieux classés,
+  tout en enregistrant un glissement. Freedom House classe le Canada comme libre
+  en 2026 [freedom-house-canada-2026]; l'institut Varieties of Democracy le
+  classe comme démocratie libérale, au 23e rang mondial dans son rapport de 2026
+  [vdem-democracy-report-2026]; et le World Justice Project l'a classé 13e sur
+  143 pays dans son indice de 2025, grâce à de solides résultats quant aux
+  contraintes exercées sur les pouvoirs gouvernementaux et à l'absence de
+  corruption, mais y a constaté un affaiblissement de la justice civile (délais
+  plus longs, modes de règlement extrajudiciaire moins efficaces) au Canada
+  comme dans la plupart des pays mesurés [wjp-canada-2025]. Ces instruments ont
+  leurs propres points de vue : Freedom House est une organisation établie aux
+  États-Unis et financée en grande partie par le gouvernement états-unien;
+  l'institut Varieties of Democracy est un projet universitaire de l'Université
+  de Göteborg reposant sur le codage d'experts; le World Justice Project
+  construit son indice à partir de sondages menés auprès des ménages et des
+  praticiens du droit plutôt qu'à partir d'un examen institutionnel.
 political_stabilityDrivers_en: >-
   Legitimacy rests on procedural democratic foundations: regular, competitive,
   monitored elections; an independent judiciary; and constitutional protection
-  of rights under the Charter
-  [freedom-house-canada-2026][vdem-democracy-report-2026]. The Canadian Armed
-  Forces maintain strong institutional loyalty to civilian control with no
-  history of coup attempts; RCMP loyalty to constitutional order is embedded
-  [dnd-departmental-results-2024-25]. The governing Liberal party now commands a
-  working majority, removing the confidence-vote fragility that defined its
-  first year and allowing it to pass legislation without opposition support; the
-  binding constraint shifts from inter-party bargaining to internal discipline
-  across an enlarged, ideologically broad caucus that now includes recent
-  floor-crossers
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
-  Business elite alignment is conditional: the energy sector, financial
-  services, and export manufacturers support macroeconomic stability but
-  increasingly pressure the government on trade diversification, regulatory
-  competitiveness, and US tariff response
-  [imf-can-2025-art4][gac-trade-diversification]. Transparency International's
-  Corruption Perceptions Index 2025 ranks Canada 16th of 182, score 75/100 — its
-  lowest-ever ranking, with the score unchanged from 2024 [ti-cpi-2025].
+  of rights under the Canadian Charter of Rights and Freedoms
+  [freedom-house-canada-2026][vdem-democracy-report-2026].
+
+
+  Civilian control of the security forces is statutory and unambiguous. Under
+  the National Defence Act, the Minister of National Defence has the management
+  and direction of the Canadian Armed Forces; the Chief of the Defence Staff is
+  appointed by the Governor in Council and is charged with their control and
+  administration under the direction of the Minister, and all orders giving
+  effect to government decisions issue by or through that office
+  [justice-national-defence-act]. Under the Royal Canadian Mounted Police Act,
+  the Commissioner of the Royal Canadian Mounted Police is likewise appointed by
+  the Governor in Council and has control and management of the force under the
+  direction of the Minister of Public Safety [justice-rcmp-act]. The force's own
+  doctrine draws the line precisely: the Commissioner is accountable to the
+  Minister but operationally independent, and free from the direction of elected
+  officials in core law-enforcement functions [rcmp-transition-binder].
+  Institutional loyalty to civilian authority is not in question, and Canada has
+  no history of military intervention in politics.
+
+
+  Government composition is single-party rather than coalition. The governing
+  Liberal party holds a majority in its own right, which removes the
+  confidence-vote fragility that defined its first year; the binding constraint
+  shifts from inter-party bargaining to internal discipline across an enlarged
+  and ideologically broad caucus that now includes five recent floor-crossers
+  [ourcommons-membership-changes][cbc-carney-majority-byelections-2026].
+
+
+  Business-elite alignment is conditional rather than automatic. The energy
+  producers, the chartered banks and export manufacturers support macroeconomic
+  stability but press the government on trade diversification, regulatory
+  competitiveness and the response to United States tariffs
+  [imf-can-2025-art4][gac-state-of-trade-2025].
+
+
+  The consequential fracture in the governing bloc is vertical, between the
+  federal government and one province, not horizontal within the caucus. Alberta
+  has set a provincial referendum for 19 October 2026 carrying ten questions,
+  four of them constitutional and directed at the province's relationship with
+  the federal government, under Orders in Council 109/2026, 110/2026 and
+  160/2026 [elections-alberta-referendum-2026]. The tenth question asks whether
+  Alberta should remain a province of Canada or whether its government should
+  commence the legal process required to hold a binding referendum on
+  separation; the Order in Council states the result is not binding, and the
+  Premier has said she supports remaining in Canada and will campaign for that
+  option [elections-alberta-referendum-2026][alberta-premier-address-2026]. The
+  same province has separately proposed a joint federal–provincial committee to
+  approve appointments to its superior courts, which the legal profession
+  opposed as constitutionally impermissible [cba-alberta-appointments-2026]. 
+
+  Indigenous treaty rights have twice halted the citizen-petition route to such
+  a vote. In December 2025 the Court of King's Bench of Alberta found a proposed
+  separation question contravened the Canadian Charter of Rights and Freedoms
+  and historic treaties; on 13 May 2026, in a case brought by four First
+  Nations, Athabasca Chipewyan, Piikani, Siksika and Blood Tribe (Kainai), the
+  same court set aside approval of a petition on substantially the same
+  question, holding that Alberta had breached its duty to consult and that
+  secession would necessarily affect Treaties 7 and 8
+  [fasken-alberta-secession-2026][aptn-alberta-petition-2026]. The province had
+  by then amended its Citizen Initiative Act to remove the requirement that
+  proposed questions be constitutional and the chief electoral officer's power
+  to refer them to the courts, and the government subsequently placed its own
+  separation-process question on the October ballot by Order in Council, a route
+  that requires no citizen petition
+  [aptn-alberta-petition-2026][elections-alberta-referendum-2026]. The Premier
+  has said the ruling is wrong in law and is being appealed
+  [aptn-alberta-petition-2026]. The Assembly of First Nations has separately
+  invoked the numbered Treaties and called for federal review of the 1930
+  Natural Resources Transfer Agreement [afn-nrta-2025].
 political_stabilityDrivers_fr: >-
   La légitimité repose sur des fondements démocratiques procéduraux : des
-  élections régulières, compétitives et surveillées; un pouvoir judiciaire
-  indépendant; et la protection constitutionnelle des droits par la Charte
-  [freedom-house-canada-2026][vdem-democracy-report-2026]. Les Forces armées
-  canadiennes maintiennent une solide loyauté institutionnelle envers le
-  contrôle civil, sans antécédent de tentative de coup d'État; la loyauté de la
-  GRC envers l'ordre constitutionnel est ancrée
-  [dnd-departmental-results-2024-25]. Le Parti libéral au pouvoir dispose
-  désormais d'une majorité fonctionnelle, ce qui élimine la fragilité des votes
-  de confiance qui a marqué sa première année et lui permet d'adopter des lois
-  sans l'appui de l'opposition; la contrainte déterminante passe de la
-  négociation interpartis à la discipline interne de caucus élargi et
-  idéologiquement hétérogène, qui compte désormais des élus ayant récemment
-  changé d'allégeance
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
-  L'alignement des élites économiques est conditionnel : le secteur énergétique,
-  les services financiers et les fabricants exportateurs soutiennent la
-  stabilité macroéconomique, mais font pression de plus en plus sur le
-  gouvernement concernant la diversification commerciale, la compétitivité
-  réglementaire et la réponse aux droits de douane imposés par les États-Unis
-  [imf-can-2025-art4][gac-trade-diversification]. L'indice de perception de la
-  corruption 2025 de Transparency International classe le Canada au 16ᵉ rang sur
-  182, avec un score de 75/100 : son plus mauvais classement à ce jour, le score
-  étant resté stable depuis 2024 [ti-cpi-2025].
+  élections régulières, concurrentielles et observées; un pouvoir judiciaire
+  indépendant; et la protection constitutionnelle des droits garantie par la
+  Charte canadienne des droits et libertés
+  [freedom-house-canada-2026][vdem-democracy-report-2026].
+
+
+  Le contrôle civil des forces de sécurité est de nature législative et sans
+  ambiguïté. En vertu de la Loi sur la défense nationale, le ministre de la
+  Défense nationale assure la gestion et la direction des Forces armées
+  canadiennes; le chef d'état-major de la défense est nommé par le gouverneur en
+  conseil et est chargé de leur contrôle et de leur administration sous la
+  direction du ministre, et tous les ordres donnant effet aux décisions du
+  gouvernement émanent de ce poste ou transitent par lui
+  [justice-national-defence-act]. En vertu de la Loi sur la Gendarmerie royale
+  du Canada, le commissaire de la Gendarmerie royale du Canada est de même nommé
+  par le gouverneur en conseil et assure le contrôle et la gestion du corps
+  policier sous la direction du ministre de la Sécurité publique
+  [justice-rcmp-act]. Les politiques internes de la Gendarmerie tracent la ligne
+  avec précision : le commissaire répond de son action devant le ministre, mais
+  demeure indépendant sur le plan opérationnel et soustrait à la direction des
+  élus dans l'exercice des fonctions policières fondamentales
+  [rcmp-transition-binder]. La loyauté institutionnelle envers l'autorité civile
+  n'est pas en cause, et le Canada ne connaît aucun antécédent d'intervention
+  militaire dans la vie politique.
+
+
+  La composition du gouvernement est monopartisane plutôt que de coalition. Le
+  Parti libéral au pouvoir détient une majorité à lui seul; ce qui écarte la
+  fragilité liée aux votes de confiance qui avait marqué sa première année. La
+  contrainte déterminante se déplace de la négociation entre les partis vers la
+  discipline interne au sein d'un caucus élargi et idéologiquement hétérogène,
+  qui compte désormais cinq députés ayant récemment changé d'allégeance
+  [ourcommons-membership-changes][cbc-carney-majority-byelections-2026].
+
+
+  L'adhésion des élites économiques est conditionnelle plutôt qu'automatique.
+  Les producteurs énergétiques, les banques à charte et les manufacturiers
+  exportateurs appuient la stabilité macroéconomique, mais pressent le
+  gouvernement sur la diversification commerciale, la compétitivité
+  réglementaire et la riposte aux droits de douane imposés par les États-unis
+  [imf-can-2025-art4][gac-state-of-trade-2025].
+
+
+  La fracture lourde de conséquences au sein du bloc gouvernant est verticale,
+  entre le gouvernement fédéral et une province, et non horizontale à
+  l'intérieur du caucus. L'Alberta a fixé au 19 octobre 2026 un référendum
+  provincial portant dix questions, dont quatre de nature constitutionnelle et
+  visant les rapports de la province avec le gouvernement fédéral, en vertu des
+  décrets 109/2026, 110/2026 et 160/2026 [elections-alberta-referendum-2026]. La
+  dixième question demande si l'Alberta devrait demeurer une province du Canada
+  ou si son gouvernement devrait entamer le processus juridique requis pour
+  tenir un référendum exécutoire sur la séparation; le décret précise que le
+  résultat n'est pas exécutoire, et la première ministre a déclaré qu'elle est
+  favorable au maintien au sein du Canada et qu'elle fera campagne en ce sens
+  [elections-alberta-referendum-2026][alberta-premier-address-2026]. La même
+  province a par ailleurs proposé un comité mixte fédéral-provincial chargé
+  d'approuver les nominations à ses cours supérieures; ce à quoi la profession
+  juridique s'est opposée comme étant constitutionnellement inadmissible
+  [cba-alberta-appointments-2026]. 
+
+  Les droits issus de traités des peuples autochtones ont bloqué à deux reprises
+  la voie de la pétition citoyenne menant à un tel scrutin. En décembre 2025, la
+  Cour du Banc du Roi de l'Alberta a jugé qu'une question de séparation proposée
+  contrevenait à la Charte canadienne des droits et libertés ainsi qu'à des
+  traités historiques; le 13 mai 2026, dans une affaire intentée par quatre
+  Premières Nations (les Chipewyans d'Athabasca, les Piikani, les Siksika et la
+  Tribu des Blood [Kainai]), le même tribunal a annulé l'approbation d'une
+  pétition portant sur une question substantiellement identique, statuant que
+  l'Alberta avait manqué à son obligation de consulter et que la sécession
+  toucherait nécessairement les Traités nos 7 et 8
+  [fasken-alberta-secession-2026][aptn-alberta-petition-2026]. La province avait
+  entre-temps modifié sa loi sur les initiatives citoyennes pour supprimer
+  l'exigence voulant que les questions proposées soient constitutionnelles ainsi
+  que le pouvoir du directeur général des élections de les soumettre aux
+  tribunaux. Le gouvernement a par la suite inscrit sa propre question sur le
+  processus de séparation au bulletin de vote d'octobre par décret; voie qui ne
+  requiert aucune pétition citoyenne
+  [aptn-alberta-petition-2026][elections-alberta-referendum-2026]. La première
+  ministre a déclaré que la décision est erronée en droit et qu'elle est portée
+  en appel [aptn-alberta-petition-2026]. L'Assemblée des Premières Nations a par
+  ailleurs invoqué les traités numérotés et réclamé un réexamen fédéral de la
+  Convention sur le transfert des ressources naturelles de 1930 [afn-nrta-2025].
 political_shockAbsorbers_en: >-
-  Canada's institutional shock absorbers are substantial: federal transfers and
-  employment insurance automatically cushion regional economic downturns; the
-  Bank of Canada retains rate flexibility with the policy rate at 2.25% and room
-  to cut if activity deteriorates further [boc-mpr-apr2026]; fiscal capacity
-  exists to run elevated deficits (PBO projects $72B / 2.2% of GDP in 2025-26)
-  without triggering a sovereign debt crisis given Canada's AAA/AA+ credit
-  profile and domestically held debt structure
-  [pbo-efo-jun2026][imf-can-2025-art4]. On the acceleration side, the principal
-  political vulnerability is no longer a confidence-vote collapse but the
-  durability and legitimacy of the majority itself: it rests on a thin margin
-  (172 of 343) and on floor crossings the opposition frames as illegitimate, so
-  defections, further vacancies, or sustained legitimacy attacks could narrow
-  the government's freedom of action; and the TI CPI score of 75/100, in gradual
-  decline since 2012, signals public-trust erosion that, if it accelerates,
-  could compound that legitimacy strain
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026][ti-cpi-2025].
-  The combination of rising inflation (3.2% y/y in May 2026) and stagnant output
-  — GDP flat in Q1 2026 after a Q4 2025 contraction — creates a stagflationary
-  corridor where monetary policy tightening to fight inflation worsens fiscal
-  and output stress simultaneously
-  [statcan-gdp-q1-2026][statcan-cpi-may2026][boc-mpr-apr2026].
+  The buffers are substantial and mostly fiscal. Major federal transfers to the
+  provinces and territories reach $108.4 billion in 2026-27, including $27.2
+  billion in unconditional equalization payments to less prosperous provinces,
+  which cushions regional downturns automatically rather than by discretionary
+  decision [finance-major-transfers-2026]. Federal fiscal capacity is real: the
+  deficit sits at 2.1% of output on a declining track and federal debt at 41.1%
+  is projected to stay broadly flat rather than climb, three of the four major
+  rating agencies place Canada at their highest grade and the fourth one notch
+  below, and sovereign debt is held predominantly by domestic institutional
+  investors, so the government can borrow at low cost without foreign-creditor
+  or currency exposure [seu-2026][pbo-efo-jun2026][imf-can-2025-art4]. Monetary
+  room is thinner than it was: the Bank of Canada has already cut its policy
+  rate from 5.00% to 2.25% since early 2024 and has held it there for six
+  consecutive decisions, so far less room remains to cut in a fresh downturn
+  than was available two years ago [boc-mpr-jul2026][seu-2026].
+
+
+  The political accelerants concern the durability of the majority rather than
+  its survival. The government holds 172 of 343 seats (the bare majority
+  threshold, one of which is the Speaker's) with four seats vacant, and it
+  crossed that threshold between elections rather than at one, which the
+  Official Opposition argues gives the majority no democratic mandate
+  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026].
+  Defections, further vacancies or by-election losses would leave its ability to
+  legislate resting on the Speaker's casting vote. Confidence in the institution
+  is the weakest link: only 28.3% of Canadians reported high confidence in the
+  federal Parliament in the fourth quarter of 2024, and 40.0% reported low
+  confidence, the worst reading of any institution measured
+  [statcan-css-trust-institutions-q4-2024].
+
+
+  The sharper accelerant is constitutional and dated. Alberta holds a referendum
+  on 19 October 2026 whose tenth question asks whether the province should
+  remain in Canada or commence the legal process toward a binding separation
+  vote; the result is not binding and the Premier campaigns for remaining, but a
+  majority for the second option would open a constitutional process with no
+  agreed procedure and against active Indigenous treaty litigation, which the
+  province is appealing
+  [elections-alberta-referendum-2026][aptn-alberta-petition-2026].
+
+
+  Two external shocks are live and unresolved. The Canada–United States–Mexico
+  Agreement passed its review deadline on 1 July 2026 without renewal, moving to
+  rolling annual reviews with steel, aluminum, autos, lumber and procurement
+  unsettled, while the Parliamentary Budget Officer treats existing United
+  States tariffs as permanent [statcan-merch-trade-may2026][pbo-efo-jun2026].
+  The Middle East oil shock cuts both ways: as a net energy exporter with little
+  exposure to the Strait of Hormuz, Canada gains on its terms of trade and in
+  government revenue while households and businesses absorb higher costs
+  [seu-2026]. The scale of the damage if it worsens has been quantified : in the
+  government's own adverse scenario, a prolonged supply disruption pushing crude
+  toward US$115 a barrel with broader supply-chain spillovers would leave real
+  output 1.3% below baseline at peak impact in 2028 [seu-2026]. Inflation is
+  easing from its peak, at 2.8% in June 2026 after 3.2% in May, and output was
+  flat in the first quarter of 2026 after a fourth-quarter contraction, so the
+  stress is a stalled recovery exposed to an unresolved external shock rather
+  than an inflationary spiral [statcan-cpi-jun2026][statcan-gdp-q1-2026].
 political_shockAbsorbers_fr: >-
-  Les amortisseurs institutionnels du Canada sont substantiels : les transferts
-  fédéraux et l'assurance-emploi atténuent automatiquement les ralentissements
-  économiques régionaux; la Banque du Canada conserve une marge de manœuvre sur
-  les taux avec un taux directeur à 2,25 % et la possibilité de le réduire si
-  l'activité se dégrade davantage [boc-mpr-apr2026]; la capacité budgétaire
-  permet de creuser des déficits élevés (la directrice parlementaire du budget
-  projette 72 G$ / 2,2 % du PIB en 2025-2026) sans déclencher de crise de la
-  dette souveraine, compte tenu du profil de crédit AAA/AA+ du Canada et de sa
-  structure de dette à détention nationale [pbo-efo-jun2026][imf-can-2025-art4].
-  Du côté des accélérateurs d'instabilité, la principale vulnérabilité politique
-  n'est plus l'effondrement d'un vote de confiance, mais la durabilité et la
-  légitimité de la majorité elle-même : elle repose sur une marge mince (172 sur
-  343) et sur des changements d'allégeance que l'opposition qualifie
-  d'illégitimes, de sorte que des défections, de nouvelles vacances ou des
-  attaques soutenues contre sa légitimité pourraient restreindre la marge de
-  manœuvre du gouvernement; et le score IPC de 75/100 de Transparency
-  International, en recul graduel depuis 2012, indique une érosion de la
-  confiance publique qui, si elle s'accélère, pourrait aggraver cette tension de
-  légitimité
-  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026][ti-cpi-2025].
-  La combinaison d'une inflation en hausse (3,2 % en g.a. en mai 2026) et d'une
-  production stagnante  (PIB stable au T1 2026 après une contraction au T4 2025)
-  crée un corridor stagflationniste où un resserrement de la politique monétaire
-  pour combattre l'inflation aggraverait simultanément le stress budgétaire et
-  la pression sur la production
-  [statcan-gdp-q1-2026][statcan-cpi-may2026][boc-mpr-apr2026].
+  Les facteurs d'atténuation sont substantiels et pour l'essentiel budgétaires.
+  Les principaux transferts fédéraux aux provinces et aux territoires atteignent
+  108,4 milliards de dollars en 2026-2027, dont 27,2 milliards en paiements de
+  péréquation sans condition versés aux provinces moins prospères; ce qui
+  atténue les replis régionaux de façon automatique plutôt que par décision
+  discrétionnaire [finance-major-transfers-2026]. La capacité budgétaire
+  fédérale est bien réelle : le déficit s'établit à 2,1 % du produit intérieur
+  brut sur une trajectoire descendante, la dette fédérale à 41,1 % devrait
+  demeurer globalement stable plutôt que de progresser, trois des quatre grandes
+  agences de notation accordent au Canada leur cote la plus élevée et la
+  quatrième la situe un cran en dessous, et la dette souveraine est détenue
+  majoritairement par des investisseurs institutionnels canadiens, de sorte que
+  le gouvernement peut emprunter à faible coût sans exposition aux créanciers
+  étrangers ni au risque de change
+  [seu-2026][pbo-efo-jun2026][imf-can-2025-art4]. La marge de manœuvre monétaire
+  est plus étroite qu'auparavant : la Banque du Canada a déjà abaissé son taux
+  directeur de 5,00 % à 2,25 % depuis le début de 2024 et le maintient à ce
+  niveau depuis six décisions consécutives, de sorte qu'il lui reste bien moins
+  de marge pour réduire ce taux advenant un nouveau repli qu'elle n'en avait
+  deux ans plus tôt [boc-mpr-jul2026][seu-2026].
+
+
+  Les facteurs d'aggravation politiques concernent la durabilité de la majorité
+  plutôt que sa survie. Le gouvernement détient 172 des 343 sièges (le seuil
+  strict de la majorité, dont l'un est celui du Président de la Chambre), avec
+  quatre sièges vacants, et il a franchi ce seuil entre deux élections plutôt
+  qu'à l'occasion d'un scrutin; ce qui, selon l'opposition officielle, prive
+  cette majorité de tout mandat démocratique
+  [ourcommons-party-standings-2026][cbc-carney-majority-byelections-2026]. Des
+  défections, de nouvelles vacances ou des défaites aux élections partielles
+  feraient reposer sa capacité de légiférer sur la voix prépondérante du
+  Président. La confiance envers l'institution constitue le maillon faible :
+  seulement 28,3 % de la population canadienne déclaraient une confiance élevée
+  envers le Parlement fédéral au quatrième trimestre de 2024, et 40,0 % une
+  faible confiance; plus mauvais résultat parmi toutes les institutions mesurées
+  [statcan-css-trust-institutions-q4-2024].
+
+
+  Le facteur d'aggravation le plus aigu est de nature constitutionnelle et porte
+  une date. L'Alberta tient un référendum le 19 octobre 2026 dont la dixième
+  question demande si la province devrait demeurer au sein du Canada ou entamer
+  le processus juridique menant à un vote exécutoire sur la séparation. Le
+  résultat n'est pas exécutoire et la première ministre fait campagne pour le
+  maintien, mais une majorité en faveur de la seconde option ouvrirait un
+  processus constitutionnel dépourvu de procédure convenue, et ce, dans un
+  contexte de litiges autochtones actifs fondés sur les traités, que la province
+  porte en appel
+  [elections-alberta-referendum-2026][aptn-alberta-petition-2026].
+
+
+  Deux chocs externes sont en cours et non résolus. L'Accord
+  Canada–États-Unis–Mexique a franchi son échéance d'examen le 1er juillet 2026
+  sans être reconduit, passant à des examens annuels successifs, alors que les
+  dossiers de l'acier, de l'aluminium, de l'automobile, du bois d'œuvre et des
+  marchés publics demeurent en suspens, tandis que la directrice parlementaire
+  du budget considère les droits de douane états-uniens en vigueur comme
+  permanents [statcan-merch-trade-may2026][pbo-efo-jun2026]. Le choc pétrolier
+  au Moyen-Orient joue dans les deux sens : exportateur net d'énergie et peu
+  exposé au détroit d'Ormuz, le Canada y gagne sur le plan de ses termes de
+  l'échange et des revenus de l'État, tandis que les ménages et les entreprises
+  en absorbent les coûts accrus [seu-2026]. L'ampleur des dommages en cas
+  d'aggravation a été chiffrée : dans le scénario défavorable établi par le
+  gouvernement lui-même, une perturbation prolongée de l'approvisionnement
+  portant le brut vers 115 dollars américains le baril, assortie de
+  répercussions plus larges sur les chaînes d'approvisionnement, se traduirait
+  par une production inférieure de 1,3 % au scénario de référence en 2028, année
+  où l'écart atteindrait son maximum [seu-2026]. L'inflation reflue depuis son
+  sommet, à 2,8 % en juin 2026 après 3,2 % en mai, et la production est demeurée
+  stable au premier trimestre de 2026 après une contraction au quatrième
+  trimestre : la tension tient donc à une reprise en panne exposée à un choc
+  externe non résolu, et non à une spirale inflationniste
+  [statcan-cpi-jun2026][statcan-gdp-q1-2026].
 political_constitutionalSubstrate_en: >-
-  Beneath current politics sits a plural constitutional-legal substrate that
-  shapes what any government can do on land, resource, and private-law
-  questions. Because the legal foundations differ substantially between Canada's
-  constituent parts, each has to be described on its own terms rather than
-  merged into a single account. Indeed, two distinct pluralities coexist.
+  Canada is a federal parliamentary democracy under a constitutional monarchy,
+  founded by the Constitution Act, 1867, which distributed sovereignty between a
+  federal Parliament and the provincial legislatures and continued the pre-Union
+  legal systems in force [canlii-constitution-act-1867]. That founding was
+  completed only in 1982: the Canada Act 1982 ended the British Parliament's
+  power to legislate for Canada, and the Constitution Act, 1982 enacted as its
+  schedule brought home a domestic amending formula, entrenched the Canadian
+  Charter of Rights and Freedoms, and recognised and affirmed existing
+  Aboriginal and treaty rights at section 35 [justice-constitution-acts].
+  Beneath that architecture sit two distinct pluralities — two private-law
+  traditions within one federation, and Indigenous legal orders whose
+  foundations predate the state — which have to be described on their own terms
+  rather than merged. The substrate is stable in its bijural dimension and in
+  motion in its federal and Indigenous dimensions, where apex-court and
+  superior-court doctrine is actively determining what the vertical allocation
+  permits.
 
 
-
-  The first is bijuridicalism : the coexistence of two private-law traditions
-  within one federation. Quebec operates under civil law, codified in the Civil
-  Code of Québec (S.Q. 1991, c. 64, in force 1 January 1994), which governs
-  persons, family, succession, property, obligations, and civil liability, and
-  which lays down the jus commune of the province in harmony with the Charter of
-  the French language and the Charter of human rights and freedoms; the Code
-  replaced the 1866 Civil Code of Lower Canada [legisquebec-ccq-1991]. The other
-  nine provinces and three territories operate under English common law,
-  continued in force at Confederation by section 129 of the Constitution Act,
-  1867, which maintained all pre-Union laws and courts of civil and criminal
-  jurisdiction "as if the Union had not been made," subject to alteration by
-  Parliament or the respective provincial legislature
+  The first plurality is bijuralism. Quebec operates under civil law, codified
+  in the Civil Code of Québec (S.Q. 1991, c. 64, in force 1 January 1994), which
+  governs persons, family, succession, property, obligations and civil
+  liability, and which lays down the jus commune of the province in harmony with
+  the Charter of the French language and the Charter of human rights and
+  freedoms; the Code replaced the 1866 Civil Code of Lower Canada
+  [legisquebec-ccq-1991]. The other nine provinces and three territories operate
+  under English common law, continued in force at Confederation by section 129
+  of the Constitution Act, 1867, which maintained all pre-Union laws and courts
+  subject to alteration by Parliament or the respective legislature
   [canlii-constitution-act-1867]. Federal law is officially bijural: the Federal
   Law–Civil Law Harmonization Act, No. 1 (S.C. 2001, c. 4), assented to 10 May
   2001, repealed the pre-Confederation provisions of the Civil Code of Lower
-  Canada that fell within federal jurisdiction, harmonised several federal
+  Canada falling within federal jurisdiction, harmonised several federal
   statutes with the Civil Code of Québec, and added sections 8.1 and 8.2 to the
-  Interpretation Act, recognising bijuralism as an interpretive principle for
-  all federal statutes and providing that provincial private law completes
-  federal legislation on a suppletive basis when the two touch
-  [justice-harmonization-act-2001]. The Department of Justice defines this as
-  legislative bijuralism : the requirement that each language version of a
-  federal enactment take both common-law and civil-law traditions into account
-  when it contacts provincial private law [justice-bijuralism-terminology]. The
-  practical consequence is that questions of property, contract, and civil
-  liability behave differently in Quebec than in the rest of Canada, and every
-  federal statute touching those matters must be drafted to work in both
-  traditions simultaneously.
-
+  Interpretation Act, making bijuralism an interpretive principle for all
+  federal statutes and providing that provincial private law completes federal
+  legislation on a suppletive basis [justice-harmonization-act-2001]. The
+  Department of Justice defines this as legislative bijuralism: the requirement
+  that each language version of a federal enactment take both traditions into
+  account where it touches provincial private law
+  [justice-bijuralism-terminology]. The practical consequence is that property,
+  contract and civil liability behave differently in Quebec than elsewhere, and
+  every federal statute touching those matters must work in both traditions at
+  once.
 
 
   The second plurality is Indigenous constitutional rights and title, held
-  distinct across substrates because the legal foundations themselves are
-  distinct. In Quebec, the James Bay and Northern Quebec Agreement (11 November
-  1975) is the country's first modern comprehensive land-claim treaty, covering
-  roughly 1 million km² (about 65% of Quebec) and signed by Canada, Quebec,
-  Hydro-Québec, the Grand Council of the Crees, and the Northern Quebec Inuit
-  Association; it has since been amended by 24 complementary agreements and
-  extended by the Paix des Braves (7 February 2002) between Quebec and the Cree
-  Nation, the Federal New Relationship Agreement (2008) with Canada, and the
-  Agreement on Cree Nation Governance (2017) with its companion Cree
-  Constitution [cngov-agreements]. In much of British Columbia, by contrast,
-  most First Nations never signed a treaty with the Crown, and Aboriginal title
-  is established territorially rather than by settlement: in Tsilhqot'in Nation
-  v. British Columbia, 2014 SCC 44, the Supreme Court of Canada issued the first
-  declaration of Aboriginal title in Canadian history over 1,750 km², holding
-  that title is grounded in sufficient, continuous, and exclusive
-  pre-sovereignty occupation extending to territory and not merely site-specific
-  use, that Crown incursions on title land require consent or must meet the
-  section 35 justification framework, and that the province had breached its
-  duty to consult [canlii-tsilhqotin-2014][tsilhqotin-ng-rights-title]. These
-  two substrates (historic-treaty / modern-agreement lineage in Quebec, unceded
-  / title-litigated in much of British Columbia) are constitutional bedrock,
-  distinct from current political contest, and gate what any resource, land-use,
-  or infrastructure decision can lawfully do. A third mechanism operates on the
-  prairies, where provincial control of resources rests on the 1930 Natural
-  Resources Transfer Agreement, which First Nations hold cannot lawfully
-  alienate what the numbered Treaties never surrendered — a tension the Assembly
-  of First Nations invoked against Alberta's 2025 separation proposal
-  [afn-nrta-2025]. Canada's Indigenous population was 1.8 million or 5.0% of the
-  total at the 2021 Census, comprising First Nations, Métis, and Inuit
-  [statcan-2021-indigenous-profile].
+  distinct across substrates because the legal foundations themselves differ. In
+  Quebec, the James Bay and Northern Quebec Agreement of 11 November 1975 is the
+  country's first modern comprehensive land-claim treaty, covering roughly one
+  million square kilometres and signed by Canada, Quebec, Hydro-Québec, the
+  Grand Council of the Crees and the Northern Quebec Inuit Association; it has
+  since been amended by 24 complementary agreements and extended by the Paix des
+  Braves of 7 February 2002 between Quebec and the Cree Nation, the Federal New
+  Relationship Agreement of 2008, and the Agreement on Cree Nation Governance of
+  2017 with its companion Cree Constitution [cngov-agreements]. 
+
+  In much of British Columbia, by contrast, most First Nations never signed a
+  treaty with the Crown and Aboriginal title is established territorially rather
+  than by settlement: in Tsilhqot'in Nation v. British Columbia, 2014 SCC 44,
+  the Supreme Court issued the first declaration of Aboriginal title in Canadian
+  history over 1,750 square kilometres, holding that title rests on sufficient,
+  continuous and exclusive pre-sovereignty occupation extending to territory
+  rather than merely site-specific use, that Crown incursions on title land
+  require consent or must satisfy the section 35 justification framework, and
+  that the province had breached its duty to consult
+  [canlii-tsilhqotin-2014][tsilhqotin-ng-rights-title]. 
+
+  A third mechanism operates on the prairies, where provincial control of
+  natural resources rests on the transfer of 1930, given constitutional force
+  among the enactments comprised in the Constitution Acts, 1867 to 1982; an
+  instrument First Nations hold cannot lawfully alienate what the numbered
+  Treaties never surrendered [justice-constitution-acts].
+
+
+  The vertical allocation is under active judicial determination, and this is
+  where the substrate is in motion. The governing doctrine is the Supreme
+  Court's unanimous opinion in Reference re Secession of Quebec, [1998] 2 S.C.R.
+  217: no province may secede unilaterally, secession would require a
+  constitutional amendment, and a clear majority on a clear question would
+  confer democratic legitimacy creating a reciprocal constitutional duty on the
+  other participants in Confederation to negotiate — with the content of "clear
+  majority" and "clear question" left to the political actors, and the
+  negotiation obliged to address the rights of minorities and of Indigenous
+  peoples [canlii-secession-reference-1998]. Parliament codified its own side of
+  that relationship in the Clarity Act (S.C. 2000, c. 26), which reserves to the
+  House of Commons the determination of whether a referendum question is clear
+  and whether a clear majority has been expressed, and bars the Government of
+  Canada from entering secession negotiations otherwise [justice-clarity-act].
+  That framework is now being applied against a live provincial initiative. In
+  Athabasca Chipewyan First Nation v Alberta (Chief Electoral Officer), 2026
+  ABKB 375, the Court of King's Bench of Alberta set aside the Chief Electoral
+  Officer's approval of an initiative petition for a referendum on Alberta
+  independence, holding that the Crown owed and had breached a duty to consult
+  the applicant First Nations (Athabasca Chipewyan, Piikani, Siksika and Blood
+  Tribe [Kainai]) and that Alberta's secession would necessarily affect Treaties
+  7 and 8; the court also relied on its own earlier decision in Chief Electoral
+  Officer of Alberta v Sylvestre, which had held that the proposed question
+  contravened treaty rights protected by section 35 [canlii-acfn-2026]. The
+  province is appealing. The operative doctrine is therefore that Indigenous
+  treaty rights are not a consideration within a secession process but a
+  constitutional precondition to initiating one.
 political_constitutionalSubstrate_fr: >-
-  Sous la politique courante repose un substrat constitutionnel et juridique
-  pluriel qui définit la marge de manœuvre de tout gouvernement sur les
-  questions relatives au territoire, aux terres, aux ressources et au droit
-  privé. Parce que les fondements juridiques diffèrent substantiellement entre
-  les composantes du Canada, chacun doit être décrit selon ses propres termes
-  plutôt que fusionné en un récit unique. En effet, deux pluralités distinctes
-  coexistent.
+  Le Canada est une démocratie parlementaire fédérale sous monarchie
+  constitutionnelle, fondée par la Loi constitutionnelle de 1867, qui a réparti
+  la souveraineté entre un parlement fédéral et les législatures provinciales et
+  maintenu en vigueur les systèmes juridiques antérieurs à l'Union
+  [canlii-constitution-act-1867]. Cette fondation ne s'est achevée qu'en 1982 :
+  la Loi de 1982 sur le Canada a mis fin au pouvoir du Parlement britannique de
+  légiférer pour le Canada, et la Loi constitutionnelle de 1982, adoptée à titre
+  d'annexe de celle-ci, a rapatrié une formule de modification
+  constitutionnelle, enchâssé la Charte canadienne des droits et libertés et
+  reconnu et confirmé les droits existants (ancestraux ou issus de traités) à
+  son article 35 [justice-constitution-acts]. Sous cette architecture reposent
+  deux pluralités distinctes (deux traditions de droit privé au sein d'une même
+  fédération, et des ordres juridiques autochtones dont les fondements précèdent
+  l'État), qui doivent être décrites selon leurs propres termes plutôt que
+  fusionnées. Le substrat est stable dans sa dimension bijuridique et en
+  mouvement dans ses dimensions fédérale et autochtone, où la jurisprudence de
+  la juridiction suprême et des cours supérieures détermine activement ce que le
+  partage vertical des compétences autorise.
 
 
-  La première est le bijuridisme : la coexistence de deux traditions de droit
-  privé au sein d'une même fédération. Le Québec relève du droit civil, codifié
-  dans le Code civil du Québec (L.Q. 1991, ch. 64, en vigueur le 1er janvier
-  1994), qui régit les personnes, la famille, les successions, les biens, les
-  obligations et la responsabilité civile, et qui établit le droit commun de la
-  province conformément à la Charte de la langue française et la Charte des
-  droits et libertés de la personne; il a remplacé le Code civil du Bas-Canada
-  de 1866 [legisquebec-ccq-1991]. Les neuf autres provinces et les trois
-  territoires relèvent de la common law d'origine anglaise, maintenue en vigueur
-  à la Confédération par l'article 129 de la Loi constitutionnelle de 1867, qui
-  a conservé l'ensemble des lois et tribunaux de juridiction civile et
-  criminelle antérieurs à l'Union « comme si l'Union n'avait pas été faite »,
-  sous réserve de modification par le Parlement ou la législature provinciale
+  La première pluralité est le bijuridisme. Le Québec relève du droit civil,
+  codifié dans le Code civil du Québec (L.Q. 1991, ch. 64, en vigueur le 1er
+  janvier 1994), qui régit les personnes, la famille, les successions, les
+  biens, les obligations et la responsabilité civile, et qui établit le droit
+  commun de la province en harmonie avec la Charte de la langue française et la
+  Charte des droits et libertés de la personne; le Code a remplacé le Code civil
+  du Bas-Canada de 1866 [legisquebec-ccq-1991]. Les neuf autres provinces et les
+  trois territoires relèvent de la common law anglaise, maintenue en vigueur au
+  moment de la Confédération par l'article 129 de la Loi constitutionnelle de
+  1867, qui a préservé l'ensemble des lois et des tribunaux antérieurs à
+  l'Union, sous réserve de modification par le Parlement ou par la législature
   concernée [canlii-constitution-act-1867]. Le droit fédéral est officiellement
-  bijural : la Loi d'harmonisation n° 1 du droit fédéral avec le droit civil
-  (L.C. 2001, ch. 4), sanctionnée le 10 mai 2001, a abrogé les dispositions du
-  Code civil du Bas-Canada relevant de la compétence fédérale, harmonisé
-  plusieurs lois fédérales avec le Code civil du Québec et ajouté à la Loi
-  d'interprétation les articles 8.1 et 8.2, qui reconnaissent le bijuridisme
-  comme principe d'interprétation applicable à l'ensemble des lois fédérales et
-  prévoient que le droit privé provincial complète à titre supplétif la
-  législation fédérale lorsque le droit fédéral fait appel à des concepts de
-  droit privé [justice-harmonization-act-2001]. Le ministère de la Justice
-  définit ce principe comme le bijuridisme législatif : l'obligation, pour
-  chaque version linguistique d'une loi fédérale, de prendre en compte à la fois
-  la common law et le droit civil lorsqu'elle touche au droit privé provincial
-  [justice-bijuralism-terminology]. La conséquence pratique est que les
-  questions de biens, de contrats et de responsabilité civile ne se comportent
-  pas de la même façon au Québec qu'ailleurs au Canada, et que toute loi
-  fédérale touchant ces matières doit être rédigée pour fonctionner
-  simultanément dans les deux traditions.
+  bijuridique : la Loi d'harmonisation no 1 du droit fédéral avec le droit civil
+  (L.C. 2001, ch. 4), sanctionnée le 10 mai 2001, a abrogé les dispositions
+  préconfédératives du Code civil du Bas-Canada relevant de la compétence
+  fédérale, harmonisé plusieurs lois fédérales avec le Code civil du Québec et
+  ajouté les articles 8.1 et 8.2 à la Loi d'interprétation, faisant du
+  bijuridisme un principe d'interprétation applicable à toutes les lois
+  fédérales et prévoyant que le droit privé provincial complète la législation
+  fédérale à titre supplétif [justice-harmonization-act-2001]. Le ministère de
+  la Justice qualifie cette réalité de bijuridisme législatif : l'exigence
+  voulant que chaque version linguistique d'un texte fédéral tienne compte des
+  deux traditions lorsqu'elle touche au droit privé provincial
+  [justice-bijuralism-terminology]. La conséquence pratique est que les biens,
+  les contrats et la responsabilité civile ne se comportent pas de la même
+  manière au Québec qu'ailleurs, et que chaque loi fédérale touchant ces
+  matières doit fonctionner simultanément dans les deux traditions.
 
 
-  La seconde pluralité concerne les droits et titres constitutionnels
-  autochtones, tenus distincts d'un substrat à l'autre parce que les fondements
-  juridiques eux-mêmes sont distincts. Au Québec, la Convention de la Baie-James
-  et du Nord québécois (11 novembre 1975) est le premier traité moderne de
-  revendication territoriale globale du pays, couvrant environ 1 million de
-  km² (soit près de 65 % du Québec) et signé par le Canada, le Québec,
-  Hydro-Québec, le Grand Conseil des Cris et l'Association des Inuits du Nord
-  québécois; elle a depuis été modifiée par 24 conventions complémentaires et
-  prolongée par la Paix des Braves (7 février 2002) entre le Québec et la Nation
-  crie, l'Entente concernant une nouvelle relation (2008) avec le Canada, ainsi
-  que l'Entente sur la gouvernance de la Nation crie (2017) et sa Constitution
-  crie [cngov-agreements]. En Colombie-Britannique, à l'inverse, la plupart des
-  Premières Nations n'ont jamais signé de traité avec la Couronne, et le titre
-  ancestral s'établit territorialement plutôt que par entente : dans Nation
-  Tsilhqot'in c. Colombie-Britannique, 2014 CSC 44, la Cour suprême du Canada a
-  rendu la première déclaration de titre ancestral de l'histoire canadienne, sur
-  1 750 km², jugeant que le titre reposait sur une occupation suffisante,
-  continue et exclusive au moment de la souveraineté, qu'il s'étendait au
-  territoire et non seulement aux sites précis d'usage, que toute atteinte de la
-  Couronne au titre requérait le consentement ou devait satisfaire au cadre de
-  justification de l'article 35, et que la province avait manqué à son
-  obligation de consultation
-  [canlii-tsilhqotin-2014][tsilhqotin-ng-rights-title]. Ces deux
-  substrats (filiation historique-traité / entente moderne au Québec, non cédé /
-  titre en litige dans une grande partie de la Colombie-Britannique) sont des
-  socles constitutionnels distincts de la lutte politique courante et encadrent
-  ce que toute décision de ressources, d'aménagement ou d'infrastructure peut
-  légalement faire. Un troisième mécanisme opère dans les Prairies, où le
-  contrôle provincial des ressources repose sur la Convention sur le transfert
-  des ressources naturelles de 1930, dont les Premières Nations soutiennent
-  qu'elle ne peut pas légalement aliéner ce que les traités numérotés n'ont
-  jamais cédé; tension que l'Assemblée des Premières Nations a invoquée contre
-  le projet de séparation de l'Alberta en 2025 [afn-nrta-2025]. Au recensement
-  de 2021, la population autochtone du Canada atteignait 1,8 million de
-  personnes, soit 5,0 % du total, comprenant les Premières Nations, les Métis et
-  les Inuits [statcan-2021-indigenous-profile].
+  La seconde pluralité tient aux droits et au titre constitutionnels
+  autochtones, maintenus distincts d'un substrat à l'autre parce que les
+  fondements juridiques eux-mêmes diffèrent. Au Québec, la Convention de la
+  Baie-James et du Nord québécois du 11 novembre 1975 est le premier traité
+  moderne global de revendication territoriale au pays. Elle couvre environ un
+  million de kilomètres carrés et a été signée par le Canada, le Québec,
+  Hydro-Québec, le Grand Conseil des Cris et l'Association des Inuit du
+  Nouveau-Québec. Elle a depuis été modifiée par 24 conventions complémentaires
+  et prolongée par la Paix des Braves du 7 février 2002 entre le Québec et la
+  Nation crie; l'Entente concernant une nouvelle relation avec le gouvernement
+  du Canada de 2008 et l'Entente sur la gouvernance de la nation crie de 2017,
+  assortie de la Constitution crie qui l'accompagne [cngov-agreements]. 
+
+  Dans une grande partie de la Colombie-Britannique, en revanche, la plupart des
+  Premières Nations n'ont jamais signé de traité avec la Couronne et le titre
+  ancestral s'établit sur une base territoriale plutôt que par règlement : dans
+  Nation Tsilhqot'in c. Colombie-Britannique, 2014 CSC 44, la Cour suprême a
+  rendu la première déclaration de titre ancestral de l'histoire canadienne,
+  portant sur 1 750 kilomètres carrés, statuant que le titre repose sur une
+  occupation suffisante, continue et exclusive antérieure à l'affirmation de
+  souveraineté et s'étendant au territoire plutôt qu'à un usage limité à des
+  sites précis, que les atteintes de la Couronne aux terres visées par un titre
+  exigent le consentement ou doivent satisfaire au cadre de justification de
+  l'article 35, et que la province avait manqué à son obligation de consulter
+  [canlii-tsilhqotin-2014][tsilhqotin-ng-rights-title]. 
+
+  Un troisième mécanisme s'applique dans les Prairies, où le contrôle provincial
+  des ressources naturelles repose sur le transfert de 1930, qui figure parmi
+  les textes constitutionnels énumérés dans les Lois constitutionnelles de 1867
+  à 1982; instrument qui, selon les Premières Nations, ne peut légalement
+  aliéner ce que les traités numérotés n'ont jamais cédé
+  [justice-constitution-acts].
+
+
+  Le partage vertical des compétences fait l'objet d'une détermination
+  judiciaire active; c'est là que le substrat est en mouvement. La règle
+  applicable découle de l'avis unanime de la Cour suprême dans le Renvoi relatif
+  à la sécession du Québec, [1998] 2 R.C.S. 217 : aucune province ne peut faire
+  sécession unilatéralement, la sécession exigerait une modification
+  constitutionnelle, et une majorité claire à une question claire conférerait
+  une légitimité démocratique donnant naissance à une obligation
+  constitutionnelle réciproque de négocier pour les autres participants à la
+  Confédération; le contenu de la « majorité claire » et de la « question claire »
+  étant laissé aux acteurs politiques, et la négociation devant nécessairement
+  porter sur les droits des minorités et sur ceux des peuples autochtones
+  [canlii-secession-reference-1998]. Le Parlement a codifié sa propre part de
+  cette relation dans la Loi sur la clarté référendaire (L.C. 2000, ch. 26), qui
+  réserve à la Chambre des communes le soin de déterminer si une question
+  référendaire est claire et si une majorité claire s'est exprimée, et qui
+  interdit au gouvernement du Canada d'engager des négociations sur la sécession
+  à défaut de ces conditions [justice-clarity-act]. Ce cadre est maintenant
+  appliqué à une initiative provinciale en cours. Dans Athabasca Chipewyan First
+  Nation c. Alberta (Chief Electoral Officer), 2026 ABKB 375, la Cour du Banc du
+  Roi de l'Alberta a annulé l'approbation, par le directeur général des
+  élections, d'une pétition d'initiative visant la tenue d'un référendum sur
+  l'indépendance de l'Alberta, statuant que la Couronne était tenue à une
+  obligation de consulter les Premières Nations requérantes (les Chipewyans
+  d'Athabasca, les Piikani, les Siksika et la Tribu des Blood [Kainai]) et
+  qu'elle y avait manqué, et que la sécession de l'Alberta toucherait
+  nécessairement les Traités nos 7 et 8; le tribunal s'est également appuyé sur
+  sa propre décision antérieure dans Chief Electoral Officer of Alberta c.
+  Sylvestre, où il avait jugé que la question proposée contrevenait à des droits
+  issus de traités protégés par l'article 35 [canlii-acfn-2026]. La province
+  porte l'affaire en appel. L'état du droit veut donc que les droits issus de
+  traités des peuples autochtones ne constituent pas un élément à considérer au
+  sein d'un processus de sécession, mais une condition constitutionnelle
+  préalable à son déclenchement.
+political_stateStructure_en: >-
+  Canada is a federation of ten provinces and three territories. The provinces
+  are Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and
+  Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec and Saskatchewan;
+  the territories are the Northwest Territories, Nunavut and Yukon
+  [ourcommons-party-standings-2026]. Sovereignty is divided between one federal
+  Parliament and ten provincial legislatures, each drawing its authority
+  directly from the Constitution rather than by delegation from the other
+  [canlii-constitution-act-1867].
+
+
+  The division of powers is set out in Part VI of the Constitution Act, 1867.
+  Section 91 assigns Parliament an enumerated list — trade and commerce, banking
+  and currency, criminal law, navigation and shipping, defence, the postal
+  service, and "Indians, and Lands reserved for the Indians" — together with a
+  residual power to legislate for the peace, order and good government of
+  Canada. Section 92 assigns the provinces exclusive jurisdiction over direct
+  taxation within the province, property and civil rights, the administration of
+  justice, hospitals, municipal institutions and local works and undertakings;
+  section 92A, added at patriation in 1982, confirms provincial jurisdiction
+  over exploration, development, conservation and management of non-renewable
+  natural resources, forestry and electrical generation, with a power to tax
+  them; and section 93 assigns education exclusively to the provinces
+  [canlii-constitution-act-1867]. Two heads are concurrent, and they run in
+  opposite directions: under section 95 agriculture and immigration are shared
+  with federal paramountcy, so provincial law operates only so far as it is not
+  repugnant to a federal Act, while under section 94A Parliament may legislate
+  on old age pensions and supplementary benefits but no such law may affect the
+  operation of a provincial law — the one place where provincial legislation is
+  paramount [canlii-constitution-act-1867][lop-distribution-powers].
+
+
+  The sharpest asymmetry is between provinces and territories. Provincial
+  jurisdiction is constitutionally entrenched; territorial jurisdiction is
+  delegated by federal statute (the Yukon Act, the Northwest Territories Act and
+  the Nunavut Act) so the territories have no inherent authority beyond what
+  Parliament confers, even though those statutes now grant them powers largely
+  equivalent to provincial ones, including property and civil rights
+  [justice-territories-jurisdiction]. The consequences are structural rather
+  than nominal: a territory's constitution is a federal statute amendable by
+  Parliament alone, the territories are not parties to the constitutional
+  amending formula, and a territory seeking provincial status would require a
+  constitutional amendment carrying the consent of Parliament and seven
+  provinces representing half the national population [ntassembly-differences].
+  Devolution has narrowed the practical gap — Yukon took control of its public
+  lands and resources in 2003 and the Northwest Territories in 2014 — without
+  altering the legal footing [justice-territories-jurisdiction].
+
+
+  Quebec holds the most extensive asymmetric arrangements. It operates under
+  civil law rather than common law, and it is the only province to have
+  exercised the option under section 94A to run its own contributory pension
+  plan instead of the federal one [lop-distribution-powers]. Under the section
+  95 concurrency it has turned shared jurisdiction into a distinct selection
+  regime: the Canada–Québec Accord relating to Immigration and Temporary
+  Admission of Aliens, signed 5 February 1991 and in force since 1 April that
+  year, gives Quebec sole authority to select economic immigrants and refugees
+  resettled from abroad, an explicit veto over resettled refugees destined for
+  Quebec who do not meet its criteria, exclusive responsibility for settlement
+  and integration services, and an annual federal grant no other province
+  receives; Canada retains admissibility screening, permanent-resident visa
+  issuance, and selection in the family and protected-person classes
+  [ircc-canada-quebec-accord][ircc-accord-briefing]. Tax administration is
+  asymmetric on the same pattern: under tax collection agreements the Canada
+  Revenue Agency collects and administers income taxes for every province and
+  territory except Quebec's personal and corporate income taxes and Alberta's
+  corporate income tax, so Quebec taxpayers file separate federal and provincial
+  returns where taxpayers elsewhere file one [cra-tax-collection-agreements].
+
+
+  Fiscal asymmetry is formalised in the transfer system. Equalization pays $27.2
+  billion in 2026-27 to provinces with below-average fiscal capacity, an
+  unconditional payment that some provinces receive and others do not, while the
+  territories are funded through a separate instrument, Territorial Formula
+  Financing, worth $5.8 billion, which reflects the higher cost of delivering
+  services in the North [finance-major-transfers-2026]. One structural
+  consequence of section 92 runs the other way: because property, civil rights
+  and local undertakings are provincial, regulatory requirements differ across
+  provincial borders, and internal barriers to the movement of goods, services
+  and labour persist within the federation despite repeated efforts to reduce
+  them [imf-country-focus-internal-trade-2026].
+political_stateStructure_fr: >-
+  Le Canada est une fédération composée de dix provinces et de trois
+  territoires. Les provinces sont l'Alberta, la Colombie-Britannique, le
+  Manitoba, le Nouveau-Brunswick, Terre-Neuve-et-Labrador, la Nouvelle-Écosse,
+  l'Ontario, l'Île-du-Prince-Édouard, le Québec et la Saskatchewan; les
+  territoires sont les Territoires du Nord-Ouest, le Nunavut et le Yukon
+  [ourcommons-party-standings-2026]. La souveraineté est partagée entre un
+  parlement fédéral et dix législatures provinciales, chacune tirant son
+  autorité directement de la Constitution plutôt que par délégation de l'autre
+  ordre de gouvernement [canlii-constitution-act-1867].
+
+
+  Le partage des compétences est énoncé à la partie VI de la Loi
+  constitutionnelle de 1867. L'article 91 attribue au Parlement une liste
+  énumérée (les échanges et le commerce, les banques et la monnaie, le droit
+  criminel, la navigation et les expéditions par eau, la défense, le service
+  postal, ainsi que « les Indiens et les terres réservées pour les Indiens »),
+  assortie d'un pouvoir résiduel de légiférer pour la paix, l'ordre et le bon
+  gouvernement du Canada. L'article 92 confère aux provinces une compétence
+  exclusive sur la taxation directe dans les limites de la province, la
+  propriété et les droits civils, l'administration de la justice, les hôpitaux,
+  les institutions municipales et les travaux et entreprises d'une nature
+  locale. L'article 92A, ajouté lors du rapatriement de 1982, confirme la
+  compétence provinciale sur l'exploration, l'exploitation, la conservation et
+  la gestion des ressources naturelles non renouvelables, des ressources
+  forestières et de la production d'électricité, avec un pouvoir de taxation à
+  leur égard. L'article 93 attribue l'éducation exclusivement aux provinces
+  [canlii-constitution-act-1867]. Deux chefs de compétence sont concurrents, et
+  ils jouent en sens inverse : en vertu de l'article 95, l'agriculture et
+  l'immigration sont partagées avec prépondérance fédérale, de sorte que la loi
+  provinciale n'a d'effet que dans la mesure où elle n'est pas incompatible avec
+  une loi fédérale; alors qu'en vertu de l'article 94A, le Parlement peut
+  légiférer en matière de pensions de vieillesse et de prestations
+  additionnelles, mais aucune loi de ce type ne peut porter atteinte à
+  l'application d'une loi provinciale, le seul cas où la législation provinciale
+  est prépondérante [canlii-constitution-act-1867][lop-distribution-powers].
+
+
+  L'asymétrie la plus marquée sépare les provinces des territoires. La
+  compétence provinciale est enchâssée dans la Constitution. La compétence
+  territoriale est déléguée par une loi fédérale (la Loi sur le Yukon, la Loi
+  sur les Territoires du Nord-Ouest et la Loi sur le Nunavut), de sorte que les
+  territoires ne disposent d'aucune autorité inhérente au-delà de ce que le
+  Parlement leur confère, même si ces lois leur accordent aujourd'hui des
+  pouvoirs largement équivalents à ceux des provinces, y compris sur la
+  propriété et les droits civils [justice-territories-jurisdiction]. Les
+  conséquences sont structurelles plutôt que nominales : la constitution d'un
+  territoire est une loi fédérale que le Parlement peut modifier seul; les
+  territoires ne sont pas parties à la formule de modification
+  constitutionnelle, et un territoire qui chercherait à accéder au statut de
+  province devrait obtenir une modification constitutionnelle appuyée par le
+  Parlement et par sept provinces représentant la moitié de la population du
+  pays [ntassembly-differences]. Le transfert de responsabilités a réduit
+  l'écart en pratique (le Yukon a pris le contrôle de ses terres publiques et de
+  ses ressources en 2003, et les Territoires du Nord-Ouest en 2014), sans
+  modifier le fondement juridique [justice-territories-jurisdiction].
+
+
+  Le Québec détient les arrangements asymétriques les plus étendus. Il relève du
+  droit civil plutôt que de la common law, et il est la seule province à avoir
+  exercé l'option prévue à l'article 94A pour administrer son propre régime de
+  rentes contributif au lieu du régime fédéral [lop-distribution-powers]. Dans
+  le cadre de la compétence concurrente de l'article 95, il a converti une
+  compétence partagée en un régime de sélection distinct : l'Accord
+  Canada-Québec relatif à l'immigration et à l'admission temporaire des aubains
+  (ressortissants étrangers), signé le 5 février 1991 et en vigueur depuis le
+  1er avril de la même année, confère au Québec l'autorité exclusive de
+  sélectionner les immigrants économiques et les réfugiés réinstallés depuis
+  l'étranger, un droit de veto explicite sur les réfugiés réinstallés à
+  destination du Québec qui ne satisfont pas à ses critères, la responsabilité
+  exclusive des services d'accueil et d'intégration, ainsi qu'une subvention
+  fédérale annuelle qu'aucune autre province ne reçoit; le Canada conserve le
+  contrôle de l'admissibilité, la délivrance des visas de résidence permanente
+  et la sélection dans les catégories du regroupement familial et des personnes
+  protégées [ircc-canada-quebec-accord][ircc-accord-briefing]. L'administration
+  fiscale est asymétrique suivant le même schéma : en vertu des accords de
+  perception fiscale, l'Agence du revenu du Canada perçoit et administre les
+  impôts sur le revenu de toutes les provinces et de tous les territoires, à
+  l'exception des impôts québécois sur le revenu des particuliers et des
+  sociétés et de l'impôt albertain sur le revenu des sociétés, de sorte que les
+  contribuables québécois produisent des déclarations fédérale et provinciale
+  distinctes, là où les contribuables des autres provinces n'en produisent
+  qu'une [cra-tax-collection-agreements].
+
+
+  L'asymétrie budgétaire est formalisée dans le régime de transferts. La
+  péréquation verse 27,2 milliards de dollars en 2026-2027 aux provinces dont la
+  capacité fiscale est inférieure à la moyenne (paiement sans condition que
+  certaines provinces reçoivent et d'autres non). Les territoires sont financés
+  par un instrument distinct : la formule de financement des territoires, dotée
+  de 5,8 milliards de dollars, qui tient compte du coût plus élevé de la
+  prestation des services dans le Nord [finance-major-transfers-2026]. Une
+  conséquence structurelle de l'article 92 joue en sens inverse : puisque la
+  propriété, les droits civils et les entreprises d'une nature locale relèvent
+  des provinces, les exigences réglementaires diffèrent d'une province à
+  l'autre, et des obstacles internes à la circulation des biens, des services et
+  de la main-d'œuvre subsistent au sein de la fédération, malgré les efforts
+  répétés pour les réduire [imf-country-focus-internal-trade-2026].
 capacity_delivery_en: >-
   Delivery capacity is the state's realised record of executing infrastructure
   at scale, distinct from its stated intent. Budget 2025 commits $81.8 billion

@@ -808,7 +808,7 @@ export default function CountryPage() {
     institutionalResilience: language === 'fr' ? 'Résilience institutionnelle' : 'Institutional resilience',
     powerStructure: language === 'fr' ? 'Structure du pouvoir' : 'Power structure',
     stabilityDrivers: language === 'fr' ? 'Facteurs de stabilité' : 'Stability drivers',
-    shockAbsorbers: language === 'fr' ? 'Amortisseurs & accélérateurs' : 'Shock absorbers & accelerants',
+    shockAbsorbers: language === 'fr' ? 'Facteurs d\'atténuation et d\'aggravation' : 'Shock absorbers & accelerants',
     // FR-PLACEHOLDER: new-field labels below — Peggy to verify French wording.
     realEconomy: language === 'fr' ? 'Économie réelle' : 'Real economy',
     publicFinances: language === 'fr' ? 'Finances publiques' : 'Public finances',
