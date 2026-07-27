@@ -3341,6 +3341,82 @@ capacity_permitting_fr: >-
   déplacera de l'évaluation d'impact fédérale vers les processus réglementaires
   provinciaux ou de consentement autochtone, ne pourra être observé qu'à partir
   de 2026.
+security_posture_en: >-
+  Canada's security posture is defensive and alliance-dependent, and its
+  diplomatic orientation is aligned but increasingly hedging. It faces no armed
+  threat to its territory and no challenge to its monopoly on force
+  [security.internal]; it maintains a force too small to act alone beyond
+  constabulary tasks and can project only at brigade scale within a coalition
+  [security.military]; and it belongs to the core Western alliance structures
+  while actively building a second set of security relationships in Europe and
+  repairing damaged ones in Asia [security.diplomacy].
+
+
+  The dependency has a specific shape, and it is the defining feature.
+  Continental defence is conducted binationally with the United States and has
+  no alternative arrangement [security.military], while the same state is the
+  source of the tariff pressure and the lapsed trade framework that dominate
+  Canada's external economic position [security.diplomacy]. Canada is therefore
+  structurally reliant for its physical security on the partner generating most
+  of its strategic uncertainty. The hedge that has developed in response is real
+  but thin: the European security partnership is explicitly non-binding, the
+  defence procurement agreement is commercial access rather than a defence
+  guarantee, and the trade resets with China and India address markets rather
+  than security [security.diplomacy].
+
+
+  Capability lags commitment across the board. Defence spending reached the
+  alliance benchmark only in 2025-26, and partly by counting expenditure across
+  several departments; the far larger 2035 commitment has no published pathway;
+  and the force remains below its own authorised strength [security.military].
+  The instrument created to counter the interference the state has formally
+  identified as its principal external threat was not yet operating two years
+  after the enabling legislation passed [security.transnationalExposure]. The
+  picture is of a country that has recognised its exposures accurately and is
+  early in acting on them — with the two relationships named as most damaging to
+  its democratic institutions being the same two it has just moved to repair
+  commercially [security.transnationalExposure][security.diplomacy].
+security_posture_fr: >-
+  La posture de sécurité du Canada est défensive et tributaire de ses alliances,
+  et son orientation diplomatique demeure alignée, tout en cherchant de plus en
+  plus à se prémunir. Le pays ne fait face à aucune menace armée contre son
+  territoire ni à aucune contestation de son monopole de la force
+  [security.internal]; il entretient une force trop réduite pour agir seul
+  au-delà des tâches de maintien de l'ordre et ne peut projeter qu'à l'échelle
+  de la brigade, au sein d'une coalition [security.military]. Il appartient aux
+  structures d'alliance occidentales centrales tout en bâtissant activement un
+  second réseau de relations de sécurité en Europe et en réparant celles qui
+  s'étaient détériorées en Asie [security.diplomacy].
+
+
+  La dépendance prend une forme précise; c'est là son trait déterminant. La
+  défense continentale s'exerce sur une base binationale avec les États-Unis et
+  ne dispose d'aucun arrangement de rechange [security.military], alors que ce
+  même État est la source de la pression tarifaire et du cadre commercial devenu
+  caduc qui dominent la position économique extérieure du Canada
+  [security.diplomacy]. Le Canada dépend donc structurellement, pour sa sécurité
+  physique, du partenaire qui génère l'essentiel de son incertitude stratégique.
+  La couverture qui s'est développée en réponse est réelle, mais mince : le
+  partenariat européen de sécurité est explicitement non contraignant, l'entente
+  sur les acquisitions de défense relève de l'accès commercial et non d'une
+  garantie de défense, et les remises à niveau commerciales avec la Chine et
+  l'Inde portent sur des marchés et non sur la sécurité [security.diplomacy].
+
+
+  La capacité accuse partout un retard sur l'engagement. Les dépenses de défense
+  n'ont atteint la cible de l'Alliance qu'en 2025-2026, et en partie grâce à la
+  comptabilisation de dépenses réparties entre plusieurs ministères;
+  l'engagement bien plus considérable de 2035 ne s'accompagne d'aucune
+  trajectoire publiée; et les effectifs demeurent inférieurs à leur propre
+  niveau autorisé [security.military]. L'instrument créé pour contrer
+  l'ingérence que l'État a officiellement désignée comme sa principale menace
+  extérieure n'était toujours pas opérant deux ans après l'adoption de la loi
+  habilitante [security.transnationalExposure]. Le portrait est celui d'un pays
+  qui a cerné ses vulnérabilités avec justesse et qui n'en est qu'aux premiers
+  gestes pour y remédier; les deux relations désignées comme les plus
+  dommageables pour ses institutions démocratiques étant précisément les deux
+  qu'il vient de rétablir sur le plan commercial
+  [security.transnationalExposure][security.diplomacy].
 security_internal_en: >-
   Canada faces no armed groups, no insurgency and no challenge to its monopoly
   on force. Territorial control is uncontested throughout the country, though it
@@ -3464,12 +3540,12 @@ security_internal_fr: >-
   La frontière terrestre avec les États-Unis n'est pas défendue militairement et
   est gérée par la coopération policière bilatérale plutôt que par la
   militarisation; le contrôle opérationnel s'exerçant aux points d'entrée. Les
-  données d'application de la loi vont à l'encontre du sens communément supposé :
-  lors d'une opération d'interception d'un mois menée à l'échelle du pays au
-  début de 2025, l'Agence des services frontaliers du Canada a effectué plus de
-  2 600 saisies de stupéfiants, dont environ 67,5 % portaient sur des drogues
-  entrant au Canada depuis les États-Unis et 17,5 % sur des drogues quittant le
-  Canada vers les États-Unis [cbsa-border-review-2025]. 
+  données d'application de la loi vont à l'encontre du sens communément
+  supposé : lors d'une opération d'interception d'un mois menée à l'échelle du
+  pays au début de 2025, l'Agence des services frontaliers du Canada a effectué
+  plus de 2 600 saisies de stupéfiants, dont environ 67,5 % portaient sur des
+  drogues entrant au Canada depuis les États-Unis et 17,5 % sur des drogues
+  quittant le Canada vers les États-Unis [cbsa-border-review-2025]. 
 
 
   Aucune corruption systémique au sein des forces de sécurité n'est consignée
@@ -3816,28 +3892,40 @@ security_diplomacy_en: >-
   anti-discrimination tariffs on canola meal, peas, lobster and crab; Global
   Affairs Canada has set a target of increasing exports to China by 50% by 2030
   [gac-china-market-access-2026]. India was named the second most active
-  [hogue-final-report-2025]; after the rupture of 2023 and 2024, high
-  commissioners were reinstated in September 2025, law-enforcement channels on
-  shared security concerns resumed, and a ministerial energy dialogue was
-  relaunched in January 2026 covering liquefied natural gas, crude, potash and
-  uranium [mea-india-canada-2026]. In both cases commercial diversification away
-  from the United States is proceeding alongside unresolved security findings
-  about the same partners.
+  [hogue-final-report-2025]. After high commissioners were expelled by both
+  sides in 2024, the two prime ministers met at the Group of Seven summit in
+  Alberta in June 2025 and again at the Group of Twenty in November; high
+  commissioners were reinstated in August 2025, a shared roadmap was announced
+  during the foreign minister's visit to New Delhi that October, and the Prime
+  Minister led a delegation to India in February and March 2026
+  [gac-india-relations]. Two-way merchandise trade reached $10.9 billion in
+  2025, though the flow is lopsided and moving further that way: Canadian
+  exports of $3.9 billion fell 26.5% from 2024 while imports of $7.0 billion
+  rose 18.9%, and negotiations toward a comprehensive economic partnership
+  agreement are under way [gac-india-relations]. In both cases commercial
+  diversification away from the United States is proceeding alongside unresolved
+  security findings about the same partners.
 
 
-  Territorial disputes are narrow and managed. Canada has two Arctic maritime
-  boundary disputes — with the United States over a portion of the Beaufort Sea,
-  and with Denmark over two small zones in the Lincoln Sea — both of which the
-  government treats as well managed and to be resolved peacefully under
-  international law [gac-arctic-sovereignty]. The larger disagreement is not
-  about ownership but about control of navigation: Canada maintains that all
-  waters of its Arctic archipelago, including the Northwest Passage, are
-  internal waters by historic title, while the United States and other maritime
-  states hold the Passage to be a strait used for international navigation
-  [gac-arctic-sovereignty][belfer-nwp-2025]. The two sides have long agreed to
-  disagree, and the dispute has been assessed as posing no acute sovereignty or
-  security concern; receding sea ice raises its salience rather than its
-  temperature [belfer-nwp-2025].
+  Territorial disputes are narrow and under active negotiation. In September
+  2024 Canada launched negotiations with the United States to resolve the
+  long-standing maritime boundary dispute in the Beaufort Sea, where the two
+  states claim jurisdiction under differing legal interpretations of an 1825
+  treaty between Russia and Great Britain; the negotiations involve the affected
+  Inuit treaty organisations and close consultation with territorial and
+  Indigenous governments [gac-arctic-foreign-policy-2024]. A second, smaller
+  disagreement with the Kingdom of Denmark concerns two zones in the Lincoln
+  Sea, and the boundary agreement settling Tartupaluk, or Hans Island, is being
+  implemented [gac-arctic-foreign-policy-2024]. The larger disagreement is not
+  about ownership but about control of navigation. Canada's stated position is
+  that all waters of its Arctic archipelago, including the channels comprising
+  the Northwest Passage, are internal waters by virtue of historic title, and
+  that its Arctic sovereignty encompasses land, sea and ice
+  [gac-arctic-foreign-policy-2024]. The United States and other maritime states
+  hold the Passage to be a strait used for international navigation; the two
+  sides have long agreed to disagree, and the dispute has been assessed as
+  posing no acute sovereignty or security concern, with receding sea ice raising
+  its salience rather than its temperature [belfer-nwp-2025].
 security_diplomacy_fr: >-
   L'architecture d'alliances du Canada repose sur trois piliers de longue date
   et sur un ajout récent. Le Canada est membre fondateur de l'Organisation du
@@ -3894,32 +3982,47 @@ security_diplomacy_fr: >-
   pois, le homard et le crabe. Affaires mondiales Canada s'est fixé pour cible
   d'accroître de 50 % les exportations vers la Chine d'ici 2030
   [gac-china-market-access-2026]. L'Inde a été nommée le deuxième auteur le plus
-  actif [hogue-final-report-2025]. Après la rupture de 2023 et de 2024, les
-  hauts-commissaires ont été réinstallés en septembre 2025; les canaux policiers
-  portant sur des préoccupations de sécurité communes ont repris leurs
-  activités, et un dialogue ministériel sur l'énergie a été relancé en janvier
-  2026, couvrant le gaz naturel liquéfié, le pétrole brut, la potasse et
-  l'uranium [mea-india-canada-2026]. Dans les deux cas, la diversification
-  commerciale au détriment des États-Unis progresse parallèlement à des constats
-  de sécurité non résolus concernant ces mêmes partenaires.
+  actif [hogue-final-report-2025]. Après l'expulsion réciproque des
+  hauts-commissaires en 2024, les deux premiers ministres se sont rencontrés au
+  sommet du Groupe des Sept en Alberta en juin 2025, puis de nouveau au Groupe
+  des Vingt en novembre. Les hauts-commissaires ont été rétablis dans leurs
+  fonctions en août 2025, une feuille de route commune a été annoncée lors de la
+  visite de la ministre des Affaires étrangères à New Delhi en octobre, et le
+  premier ministre a conduit une délégation en Inde en février et en mars 2026
+  [gac-india-relations]. Les échanges bilatéraux de marchandises ont atteint
+  10,9 milliards de dollars en 2025, mais le flux est déséquilibré et le devient
+  davantage : les exportations canadiennes, à 3,9 milliards de dollars, ont
+  reculé de 26,5 % par rapport à 2024, tandis que les importations, à 7,0
+  milliards, ont progressé de 18,9 %; des négociations en vue d'un accord de
+  partenariat économique global sont en cours [gac-india-relations]. Dans les
+  deux cas, la diversification commerciale au détriment des États-Unis progresse
+  parallèlement à des constats de sécurité non résolus concernant ces mêmes
+  partenaires.
 
 
-  Les différends territoriaux sont circonscrits et gérés. Le Canada a deux
-  différends de délimitation maritime dans l'Arctique : avec les États-Unis, au
-  sujet d'une portion de la mer de Beaufort, et avec le Danemark, au sujet de
-  deux petites zones de la mer de Lincoln; que le gouvernement considère l'un et
-  l'autre comme bien gérés et devant se régler pacifiquement en vertu du droit
-  international [gac-arctic-sovereignty]. Le désaccord le plus important ne
-  porte pas sur la propriété, mais sur le contrôle de la navigation : le Canada
-  soutient que toutes les eaux de son archipel arctique, y compris le passage du
-  Nord-Ouest, sont des eaux intérieures en vertu d'un titre historique, alors
-  que les États-Unis et d'autres États maritimes tiennent le passage pour un
-  détroit servant à la navigation internationale
-  [gac-arctic-sovereignty][belfer-nwp-2025]. Les deux camps ont convenu depuis
-  longtemps de maintenir leur désaccord. Il a été établi que ce différend ne
-  soulevait aucune préoccupation aiguë de souveraineté ou de sécurité; le recul
-  de la glace de mer en accroît la visibilité plutôt que la virulence
-  [belfer-nwp-2025].
+  Les différends territoriaux sont circonscrits et font l'objet de négociations
+  actives. En septembre 2024, le Canada a entamé des négociations avec les
+  États-Unis en vue de régler le différend de longue date sur la délimitation
+  maritime dans la mer de Beaufort, où les deux États revendiquent compétence en
+  s'appuyant sur des interprétations juridiques divergentes d'un traité de 1825
+  conclu entre la Russie et la Grande-Bretagne; les négociations associent les
+  organisations inuites signataires de traités concernées et prévoient une
+  consultation étroite des gouvernements territoriaux et autochtones
+  [gac-arctic-foreign-policy-2024]. Un second désaccord, de moindre portée, avec
+  le Royaume du Danemark porte sur deux zones de la mer de Lincoln, et l'accord
+  de délimitation réglant le cas de Tartupaluk, ou île Hans, est en cours de
+  mise en œuvre [gac-arctic-foreign-policy-2024]. Le désaccord le plus important
+  ne porte pas sur la propriété, mais sur le contrôle de la navigation. La
+  position déclarée du Canada est que toutes les eaux de son archipel arctique,
+  y compris les chenaux qui composent le passage du Nord-Ouest, sont des eaux
+  intérieures en vertu d'un titre historique, et que sa souveraineté dans
+  l'Arctique s'étend aux terres, à la mer et aux glaces
+  [gac-arctic-foreign-policy-2024]. Les États-Unis et d'autres États maritimes
+  tiennent le passage pour un détroit servant à la navigation internationale;
+  les deux camps s'accommodent depuis longtemps de leur désaccord, et il a été
+  établi que ce différend ne soulevait aucune préoccupation aiguë de
+  souveraineté ou de sécurité, le recul de la glace de mer en accroissant la
+  visibilité plutôt que la virulence [belfer-nwp-2025].
 situation_en: |-
   [
     {
@@ -6290,5 +6393,317 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High"
+    },
+    {
+      "id": "cisc-organized-crime-2025",
+      "name": "Criminal Intelligence Service Canada — Summary, 2025 Public Report on Organized Crime",
+      "nameFr": "Service canadien de renseignements criminels — Sommaire, Rapport public 2025 sur le crime organisé",
+      "url": "https://cisc-scrc.gc.ca/media/2025/2026-01-19-eng.htm",
+      "desc": "Annual national threat assessment of organised crime groups by the federal criminal intelligence service, covering group ratings, street gangs, criminal markets and transnational connections.",
+      "descFr": "Évaluation nationale annuelle de la menace posée par les groupes du crime organisé, produite par le service fédéral de renseignements criminels; couvre la cotation des groupes, les gangs de rue, les marchés criminels et les liens transnationaux.",
+      "publicationDate": "2026-01-19",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "fincan-ml-assessment-2025",
+      "name": "Department of Finance Canada — 2025 Assessment of Money Laundering and Terrorist Financing Risks in Canada",
+      "nameFr": "Ministère des Finances Canada — Évaluation de 2025 des risques de blanchiment d'argent et de financement des activités terroristes au Canada",
+      "url": "https://www.canada.ca/en/department-finance/programs/financial-sector-policy/nira-neri/2025/report.html",
+      "desc": "Statutory national risk assessment produced by the federal anti-money-laundering regime, rating threats, sector vulnerabilities and terrorist financing exposure across the financial system.",
+      "descFr": "Évaluation nationale des risques prévue par la loi, produite par le régime fédéral de lutte contre le blanchiment d'argent; évalue les menaces, les vulnérabilités sectorielles et l'exposition au financement du terrorisme dans le système financier.",
+      "publicationDate": "2025-08-01",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "ps-terrorist-entities-2025",
+      "name": "Public Safety Canada — Government of Canada lists seven transnational criminal organizations as terrorist entities",
+      "nameFr": "Sécurité publique Canada — Le gouvernement du Canada inscrit sept organisations criminelles transnationales comme entités terroristes",
+      "url": "https://www.canada.ca/en/public-safety-canada/news/2025/02/government-of-canada-lists-seven-transnational-criminal-organizations-as-terrorist-entities.html",
+      "desc": "Ministerial news release recording a Criminal Code listing decision applying terrorist-entity designation to transnational criminal organisations, with accompanying border and enforcement measures.",
+      "descFr": "Communiqué ministériel consignant une décision d'inscription en vertu du Code criminel appliquant la désignation d'entité terroriste à des organisations criminelles transnationales, avec les mesures frontalières et d'application connexes.",
+      "publicationDate": "2025-02-20",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "canada-terrorism-threat-level",
+      "name": "Government of Canada — Canada's National Terrorism Threat Levels",
+      "nameFr": "Gouvernement du Canada — Niveaux de menace terroriste nationale du Canada",
+      "url": "https://www.canada.ca/en/services/defence/nationalsecurity/terrorism-threat-level.html",
+      "desc": "Official page stating the current national terrorism threat level, the scale and its definitions, the authority that sets it and the reassessment interval.",
+      "descFr": "Page officielle indiquant le niveau actuel de menace terroriste nationale, l'échelle et ses définitions, l'autorité qui l'établit et l'intervalle de réévaluation.",
+      "publicationDate": "2025-05-15",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "cbsa-border-review-2025",
+      "name": "Government of Canada — Strengthening Canada's Borders: 2025 in review",
+      "nameFr": "Gouvernement du Canada — Renforcer les frontières du Canada : bilan de 2025",
+      "url": "https://www.canada.ca/en/services/defence/securingborder/strengthen-border-security/2025-review.html",
+      "desc": "Government summary of border security measures and enforcement results for the year, covering interception operations, seizures, new units and cross-border cooperation.",
+      "descFr": "Bilan gouvernemental des mesures de sécurité frontalière et des résultats d'application pour l'année; couvre les opérations d'interception, les saisies, les nouvelles unités et la coopération transfrontalière.",
+      "publicationDate": "2026-04-29",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "dnd-state-of-caf",
+      "name": "National Defence — State of the Canadian Armed Forces",
+      "nameFr": "Défense nationale — État des Forces armées canadiennes",
+      "url": "https://www.canada.ca/en/department-national-defence/corporate/organizational-structure/military-personnel-command/state-of-the-canadian-armed-forces.html",
+      "desc": "Departmental page reporting Regular Force and Primary Reserve strength against authorised targets, with recruitment process changes and the rebuilding timeline.",
+      "descFr": "Page ministérielle indiquant l'effectif de la Force régulière et de la Première réserve par rapport aux cibles autorisées, avec les changements au processus de recrutement et l'échéancier de reconstitution.",
+      "publicationDate": "2026-05-12",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "dnd-recruitment-2026",
+      "name": "National Defence — Canadian Armed Forces reach highest recruitment in 30 years",
+      "nameFr": "Défense nationale — Les Forces armées canadiennes atteignent leur plus haut niveau de recrutement en 30 ans",
+      "url": "https://www.canada.ca/en/department-national-defence/news/2026/04/canadian-armed-forces-reach-highest-recruitment-in-30-years.html",
+      "desc": "Departmental news release on Regular Force enrolment against the annual recruiting objective, with the objective set for the following fiscal year.",
+      "descFr": "Communiqué ministériel sur les enrôlements dans la Force régulière par rapport à l'objectif annuel de recrutement, avec l'objectif fixé pour l'exercice suivant.",
+      "publicationDate": "2026-04-20",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "pm-nato-2-percent-2026",
+      "name": "Prime Minister of Canada — Canada has achieved the NATO 2% defence spending target",
+      "nameFr": "Premier ministre du Canada — Le Canada a atteint la cible de dépenses de défense de 2 % de l'OTAN",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/03/26/prime-minister-carney-announces-canada-has-achieved-nato-2-defence",
+      "desc": "Prime Minister's Office release on reaching the alliance defence-spending benchmark, the departments across which spending is counted, and the 2035 investment pledge.",
+      "descFr": "Communiqué du Cabinet du premier ministre sur l'atteinte de la cible de dépenses de défense de l'Alliance, les ministères visés par le calcul de ces dépenses et l'engagement d'investissement pour 2035.",
+      "publicationDate": "2026-03-26",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "dnd-cyber-command-2024",
+      "name": "National Defence — Canadian Armed Forces establishes a new Cyber Command",
+      "nameFr": "Défense nationale — Les Forces armées canadiennes créent un nouveau Commandement cyber",
+      "url": "https://www.canada.ca/en/department-national-defence/news/2024/09/canadian-armed-forces-establishes-a-new-cyber-command.html",
+      "desc": "Departmental news release establishing the military cyber command, setting out its authority, constituent functions and partnership with the national cryptologic agency.",
+      "descFr": "Communiqué ministériel créant le commandement cyber militaire, énonçant son autorité, ses fonctions constitutives et son partenariat avec l'organisme cryptologique national.",
+      "publicationDate": "2024-09-26",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "dnd-op-reassurance",
+      "name": "National Defence — Operation REASSURANCE",
+      "nameFr": "Défense nationale — Opération REASSURANCE",
+      "url": "https://www.canada.ca/en/department-national-defence/services/operations/military-operations/current-operations/operation-reassurance.html",
+      "desc": "Departmental operation page describing Canada's largest overseas deployment, its land, sea and air components, and the multinational brigade Canada leads.",
+      "descFr": "Page ministérielle décrivant le plus important déploiement outre-mer du Canada, ses composantes terrestre, maritime et aérienne, et la brigade multinationale dirigée par le Canada.",
+      "publicationDate": "2026-05-29",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "pm-latvia-renewal-2025",
+      "name": "Prime Minister of Canada — Canada strengthens ties with Latvia and renews key NATO mission",
+      "nameFr": "Premier ministre du Canada — Le Canada renforce ses liens avec la Lettonie et renouvelle une mission clé de l'OTAN",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2025/08/26/canada-strengthens-ties-latvia-and-renews-key-nato",
+      "desc": "Prime Minister's Office release on the renewal of the Latvia deployment, its duration, troop contribution and Canada's framework-nation role in the multinational brigade.",
+      "descFr": "Communiqué du Cabinet du premier ministre sur le renouvellement du déploiement en Lettonie, sa durée, la contribution en personnel et le rôle du Canada comme nation-cadre de la brigade multinationale.",
+      "publicationDate": "2025-08-26",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "gac-nuclear-nonproliferation",
+      "name": "Global Affairs Canada — Nuclear disarmament and non-proliferation",
+      "nameFr": "Affaires mondiales Canada — Désarmement et non-prolifération nucléaires",
+      "url": "https://www.international.gc.ca/world-monde/issues_development-enjeux_developpement/peace_security-paix_securite/nuclear_radiological-nucleaire_radiologique.aspx?lang=eng",
+      "desc": "Departmental policy page setting out Canada's position on nuclear non-proliferation and disarmament and the treaty framework on which it rests.",
+      "descFr": "Page de politique ministérielle exposant la position du Canada en matière de non-prolifération et de désarmement nucléaires et le cadre conventionnel sur lequel elle repose.",
+      "publicationDate": "2024-06-24",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "csis-public-report-2025",
+      "name": "Canadian Security Intelligence Service — CSIS Public Report 2025",
+      "nameFr": "Service canadien du renseignement de sécurité — Rapport public 2025 du SCRS",
+      "url": "https://www.canada.ca/en/security-intelligence-service/news/2026/04/canadian-security-intelligence-service-releases-2025-public-report.html",
+      "desc": "Release accompanying the intelligence service's annual public report, summarising its counterterrorism, counterintelligence, counter-foreign-interference and cyber lines of effort.",
+      "descFr": "Communiqué accompagnant le rapport public annuel du service de renseignement, résumant ses activités de lutte contre le terrorisme, de contre-espionnage, de contre-ingérence étrangère et de cybersécurité.",
+      "publicationDate": "2026-04-30",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "ps-foreign-interference-laws",
+      "name": "Public Safety Canada — Laws to counter foreign interference",
+      "nameFr": "Sécurité publique Canada — Lois de lutte contre l'ingérence étrangère",
+      "url": "https://www.securitepublique.gc.ca/cnt/ntnl-scrt/frgn-ntrfrnc/lws-cntr-frgn-ntrfrnc-en.aspx",
+      "desc": "Departmental page setting out the statutory framework against foreign interference, including the transparency registry, the independent commissioner and the offences created.",
+      "descFr": "Page ministérielle exposant le cadre législatif de lutte contre l'ingérence étrangère, dont le registre de transparence, le commissaire indépendant et les infractions créées.",
+      "publicationDate": "2025-12-29",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "ps-commissioner-named-2026",
+      "name": "Public Safety Canada — Minister Anandasangaree names proposed Foreign Influence Transparency Commissioner",
+      "nameFr": "Sécurité publique Canada — Le ministre Anandasangaree annonce le commissaire à la transparence en matière d'influence étrangère proposé",
+      "url": "https://www.canada.ca/en/public-safety-canada/news/2026/03/minister-anandasangaree-names-proposed-foreign-influence-transparency-commissioner.html",
+      "desc": "Ministerial news release naming the proposed commissioner and setting out the statutory appointment procedure and the regulatory steps preceding the registry's operation.",
+      "descFr": "Communiqué ministériel annonçant le commissaire proposé et exposant la procédure de nomination prévue par la loi ainsi que les étapes réglementaires précédant la mise en service du registre.",
+      "publicationDate": "2026-03-13",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "nrf-fitaa-2026",
+      "name": "Norton Rose Fulbright — Canada finalizes the Foreign Influence Regulations and names its first commissioner",
+      "nameFr": "Norton Rose Fulbright — Le Canada finalise le Règlement sur l'influence étrangère et nomme son premier commissaire",
+      "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/c12b3131/canada-finalizes-the-foreign-influence-regulations",
+      "desc": "Law-firm regulatory bulletin on the registration of the final regulations, the opening date of the commissioner's office and registration deadlines. Professional analysis, cited for commencement.",
+      "descFr": "Bulletin réglementaire de cabinet d'avocats sur l'enregistrement du règlement définitif, la date d'ouverture du bureau du commissaire et les délais d'inscription. Analyse professionnelle, citée pour l'entrée en vigueur.",
+      "publicationDate": "2026-07-10",
+      "accessDate": "2026-07-25",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "ircc-asylum-statistics",
+      "name": "Immigration, Refugees and Citizenship Canada — Asylum statistics, trends and data",
+      "nameFr": "Immigration, Réfugiés et Citoyenneté Canada — Statistiques, tendances et données sur l'asile",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/statistics-open-data/immigration-stats/asylum-claims.html",
+      "desc": "Departmental statistics page on asylum claim volumes and border measures, updated monthly, with the policy changes affecting claim eligibility and irregular crossings.",
+      "descFr": "Page ministérielle de statistiques sur le volume des demandes d'asile et les mesures frontalières, mise à jour mensuellement, avec les changements de politique touchant l'admissibilité et les passages irréguliers.",
+      "publicationDate": "2026-07-19",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "bc-columbia-treaty-2025",
+      "name": "Government of British Columbia — Columbia River Treaty negotiations paused",
+      "nameFr": "Gouvernement de la Colombie-Britannique — Pause des négociations sur le Traité du fleuve Columbia",
+      "url": "https://news.gov.bc.ca/releases/2025ECS0009-000191",
+      "desc": "Provincial government release on the status of Columbia River Treaty modernisation, the agreement in principle reached with the United States and the pause in negotiations.",
+      "descFr": "Communiqué du gouvernement provincial sur l'état de la modernisation du Traité du fleuve Columbia, l'entente de principe conclue avec les États-Unis et la pause des négociations.",
+      "publicationDate": "2025-03-25",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "gac-canada-eu",
+      "name": "Global Affairs Canada — Canada and the European Union",
+      "nameFr": "Affaires mondiales Canada — Le Canada et l'Union européenne",
+      "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/eu-ue/index.aspx?lang=eng",
+      "desc": "Departmental country-relations page setting out the instruments governing the Canada-European Union relationship in trade, security and defence cooperation.",
+      "descFr": "Page ministérielle des relations bilatérales exposant les instruments qui régissent la relation Canada-Union européenne en matière de commerce, de sécurité et de coopération en défense.",
+      "publicationDate": "2026-07-10",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "consilium-safe-canada-2026",
+      "name": "Council of the European Union — SAFE: Council concludes agreement with Canada",
+      "nameFr": "Conseil de l'Union européenne — SAFE : le Conseil conclut l'accord avec le Canada",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/15/safe-council-concludes-agreement-with-canada/",
+      "desc": "Council press release formally concluding the agreement on Canadian participation in the European Union's defence procurement instrument, with signature and eligibility terms.",
+      "descFr": "Communiqué du Conseil concluant formellement l'accord sur la participation du Canada à l'instrument européen d'acquisition de défense, avec les modalités de signature et d'admissibilité.",
+      "publicationDate": "2026-06-15",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "gac-china-market-access-2026",
+      "name": "Global Affairs Canada — Canada secures renewed market access with China",
+      "nameFr": "Affaires mondiales Canada — Le Canada obtient un accès renouvelé au marché chinois",
+      "url": "https://www.canada.ca/en/global-affairs/news/2026/03/canada-secures-renewed-market-access-with-china-to-boost-exports-and-strengthen-economic-collaboration.html",
+      "desc": "Departmental news release on the tariff and market-access outcomes of the renewed economic relationship with China, and the government's export growth objective.",
+      "descFr": "Communiqué ministériel sur les résultats tarifaires et d'accès au marché découlant de la relation économique renouvelée avec la Chine, et sur l'objectif gouvernemental de croissance des exportations.",
+      "publicationDate": "2026-03-04",
+      "accessDate": "2026-07-25",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "mea-india-canada-2026",
+      "name": "Ministry of External Affairs (India) — Brief on India-Canada Bilateral Relations",
+      "nameFr": "Ministère des Affaires extérieures (Inde) — Note sur les relations bilatérales Inde-Canada",
+      "url": "https://www.mea.gov.in/Portal/ForeignRelation/India-Canada.pdf",
+      "desc": "Indian government bilateral relations brief recording the sequence of diplomatic re-engagement with Canada and the dialogues resumed. Counterpart-government source; reflects New Delhi's framing.",
+      "descFr": "Note du gouvernement indien sur les relations bilatérales consignant la séquence du réengagement diplomatique avec le Canada et les dialogues repris. Source du gouvernement partenaire; reflète le cadrage de New Delhi.",
+      "publicationDate": "2026-04-01",
+      "accessDate": "2026-07-25",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "gac-arctic-sovereignty",
+      "name": "Global Affairs Canada — Arctic Sovereignty (question period note)",
+      "nameFr": "Affaires mondiales Canada — Souveraineté dans l'Arctique (note pour la période des questions)",
+      "url": "https://search.open.canada.ca/qpnotes/record/dfatd-maecd,00093-2010",
+      "desc": "Departmental briefing note stating Canada's legal position on Arctic sovereignty, its Arctic maritime boundary disputes and the status of the Northwest Passage. Standing legal position; note is dated.",
+      "descFr": "Note d'information ministérielle énonçant la position juridique du Canada sur la souveraineté dans l'Arctique, ses différends de frontières maritimes arctiques et le statut du passage du Nord-Ouest. Position permanente; la note est ancienne.",
+      "publicationDate": "2010-01-01",
+      "accessDate": "2026-07-25",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "belfer-nwp-2025",
+      "name": "Belfer Center for Science and International Affairs — Explainer: The Northwest Passage's shipping potential, legal status and what's at stake",
+      "nameFr": "Belfer Center for Science and International Affairs — Explication : le potentiel maritime du passage du Nord-Ouest, son statut juridique et les enjeux",
+      "url": "https://www.belfercenter.org/research-analysis/explainer-northwest-passages-shipping-potential-legal-status-and-whats-stake",
+      "desc": "University research centre explainer on the competing legal characterisations of the Northwest Passage and the assessed severity of the dispute. Academic analysis, not a government position.",
+      "descFr": "Note explicative d'un centre de recherche universitaire sur les qualifications juridiques concurrentes du passage du Nord-Ouest et la gravité évaluée du différend. Analyse universitaire, non une position gouvernementale.",
+      "publicationDate": "2025-07-28",
+      "accessDate": "2026-07-25",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "Low"
     }
   ]
