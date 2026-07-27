@@ -798,7 +798,7 @@ export default function CountryPage() {
     political: language === 'fr' ? 'Ordre politique' : 'Political Order',
     situation: language === 'fr' ? 'Situation' : 'Situation',
     economy: language === 'fr' ? 'Économie' : 'Economy',
-    security: language === 'fr' ? 'Sécurité & Diplomatie' : 'Security & Diplomacy',
+    security: language === 'fr' ? 'Sécurité et Diplomatie' : 'Security & Diplomacy',
     actors: language === 'fr' ? 'Carte des acteurs' : 'Actors Map',
     sources: language === 'fr' ? 'Sources recommandées' : 'Recommended Sources',
     eliteCohesion: language === 'fr' ? 'Cohésion des élites' : 'Elite cohesion',
@@ -827,7 +827,7 @@ export default function CountryPage() {
     transnationalExposure: language === 'fr' ? 'Exposition transnationale' : 'Transnational exposure',
     baseline: language === 'fr' ? 'État des lieux' : 'Baseline',
     internalSecurity: language === 'fr' ? 'Sécurité intérieure' : 'Internal security',
-    diplomacy: language === 'fr' ? 'Diplomatie & posture extérieure' : 'Diplomacy & external posture',
+    diplomacy: language === 'fr' ? 'Diplomatie et posture extérieure' : 'Diplomacy & external posture',
     domesticActors: language === 'fr' ? 'Acteurs nationaux' : 'Domestic actors',
     externalActors: language === 'fr' ? 'Acteurs extérieurs' : 'External actors',
     // FR-PLACEHOLDER: society/territory/capacity/substrate UI labels — Peggy to verify French wording.

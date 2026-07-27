@@ -3215,17 +3215,17 @@ capacity_productivity_fr: >-
   s'explique en grande partie par la faiblesse de l'investissement en capital,
   généralisée dans l'ensemble des industries; l'investissement par travailleur
   ayant chuté de près de 20 % entre 2014 et 2022 [statcan-productivity-us-2026].
-  L'examen de mai 2026 de Statistique Canada ajoute une exposition particulière :
-  les industries qui dépendent de la demande d'exportation états-unienne
-  concentrent les emplois les plus productifs du pays, de sorte que le choc des
-  droits de douane frappe le plus durement la partie la plus productive de
-  l'économie [statcan-productivity-us-2026]. Le Fonds monétaire international
-  qualifie cette même faiblesse de structurelle (dynamisme entrepreneurial
-  anémique, intensification du capital lente, innovation à la traîne, forte
-  concentration dans des secteurs de services clés et obstacles à la croissance
-  des entreprises) et présente l'ensemble de réformes qui s'y attaque comme le
-  train de politiques au plus fort rendement dont le Canada dispose
-  [imf-can-2025-art4].
+  L'examen de mai 2026 de Statistique Canada ajoute une exposition
+  particulière : les industries qui dépendent de la demande d'exportation
+  états-unienne concentrent les emplois les plus productifs du pays, de sorte
+  que le choc des droits de douane frappe le plus durement la partie la plus
+  productive de l'économie [statcan-productivity-us-2026]. Le Fonds monétaire
+  international qualifie cette même faiblesse de structurelle (dynamisme
+  entrepreneurial anémique, intensification du capital lente, innovation à la
+  traîne, forte concentration dans des secteurs de services clés et obstacles à
+  la croissance des entreprises) et présente l'ensemble de réformes qui s'y
+  attaque comme le train de politiques au plus fort rendement dont le Canada
+  dispose [imf-can-2025-art4].
 
 
   La capacité d'innovation et de recherche constitue l'écart le plus net. Les
@@ -3342,124 +3342,584 @@ capacity_permitting_fr: >-
   provinciaux ou de consentement autochtone, ne pourra être observé qu'à partir
   de 2026.
 security_internal_en: >-
-  Canada faces no active insurgency and no conventional armed threat to
-  territorial control. Organized crime (particularly transnational drug
-  trafficking (fentanyl supply chains), money laundering through real estate,
-  and gang activity in urban centres) is the primary public safety concern
-  managed by the RCMP and provincial police services
-  [freedom-house-canada-2026][dnd-departmental-results-2024-25]. Foreign
-  interference, particularly from China, India, and Russia, targeting diaspora
-  communities and electoral processes, has been a declared national security
-  concern as documented in parliamentary testimony and public CSIS annual
-  reports; Freedom House notes this as a challenge to political rights in its
-  2026 assessment [freedom-house-canada-2026]. Terrorism threat levels are
-  assessed as medium — no major attack in the assessed period; lone-actor and
-  ideologically motivated violence remain latent threats
-  [freedom-house-canada-2026]. The Canadian Armed Forces (CAF) number
-  approximately 68,000 regular force members; loyalty to civilian control is
-  unquestioned and institutionally embedded [dnd-departmental-results-2024-25].
-  NORAD modernization investment totals $38.6B over 20 years and Arctic
-  surveillance capacity is being expanded, with new radar networks and
-  icebreaker procurement as declared priorities
-  [dnd-departmental-results-2024-25]. The US–Canada border is the world's
-  longest undefended border; it remains operationally open with periodic
-  irregular migration pressure points, managed through bilateral law enforcement
-  cooperation rather than militarization [freedom-house-canada-2026].
+  Canada faces no armed groups, no insurgency and no challenge to its monopoly
+  on force. Territorial control is uncontested throughout the country, though it
+  is thinly exercised in the North, where the Criminal Intelligence Service
+  identifies a shifting Arctic security landscape as an emerging risk to remote
+  communities [cisc-organized-crime-2025]. Federal policing is exercised by the
+  Royal Canadian Mounted Police under the direction of the Minister of Public
+  Safety. The force also serves as the provincial or territorial police service
+  under contract in every province except Ontario and Quebec (which maintain
+  their own provincial forces) and in all three territories, as well as in many
+  municipalities [rcmp-transition-binder][justice-rcmp-act].
+
+
+  Organised crime is the primary internal security problem, and it is largely
+  transnational in character. The Criminal Intelligence Service assessed and
+  rated 493 organised crime groups in 2025 (eight as national high-level
+  threats, 100 as medium and 385 as low) alongside more than 560 street gangs,
+  many expanding into new jurisdictions and readily using violence
+  [cisc-organized-crime-2025]. Ninety-three percent of assessed groups are
+  involved in drug manufacturing or distribution, and the most threatening
+  maintain connections across some fifty countries, principally the United
+  States, Mexico, Colombia and the United Arab Emirates
+  [cisc-organized-crime-2025][fincan-ml-assessment-2025]. Indigenous communities
+  face an escalating threat, driven by the opioid toxicity crisis and violent
+  street gangs [cisc-organized-crime-2025]. Illicit finance is the enabling
+  layer: the federal assessment estimates that between $45 billion and $113
+  billion is laundered in Canada annually, with illegal drug trafficking the
+  highest single money-laundering threat and crypto-asset channels rated a very
+  high vulnerability [fincan-ml-assessment-2025].
+
+
+  The state's response escalated sharply in 2025 and crossed a categorical line.
+  On 20 February 2025 Canada listed seven transnational criminal organisations
+  as terrorist entities under the Criminal Code — extending counter-terrorism
+  authorities to criminal cartels for the first time — alongside a $1.3 billion
+  border plan, the appointment of a commissioner for the fight against fentanyl,
+  a joint operational intelligence cell and a partnership between the financial
+  sector and law enforcement on laundering
+  [ps-terrorist-entities-2025][cbsa-border-review-2025].
+
+
+  The terrorism threat level is Medium, meaning a violent act of terrorism could
+  occur. It is set by the Director of the Canadian Security Intelligence Service
+  on the advice of the Integrated Terrorism Assessment Centre, is reassessed at
+  least every four months, and has remained at this level since October 2014
+  [canada-terrorism-threat-level]. Domestic attacks in recent years have been
+  carried out predominantly by lone actors, often ideologically motivated, and
+  terrorist financing activity in Canada is assessed as low in both volume and
+  value [fincan-ml-assessment-2025].
+
+
+  The land border with the United States is undefended and managed through
+  bilateral law enforcement cooperation rather than militarisation, with
+  operational control exercised at ports of entry. Enforcement data cuts against
+  the direction commonly assumed: in a month-long cross-country interception
+  operation in early 2025 the Canada Border Services Agency made over 2,600
+  narcotics seizures, of which about 67.5% involved drugs entering Canada from
+  the United States and 17.5% drugs leaving for it [cbsa-border-review-2025]. 
+
+
+  No systemic corruption in the security forces is recorded in the sources
+  consulted.
 security_internal_fr: >-
-  Le Canada ne fait face à aucune insurrection active ni à aucune menace armée
-  conventionnelle contre son intégrité territoriale. La criminalité
-  organisée (notamment le trafic transnational de drogues [chaînes
-  d'approvisionnement en fentanyl], le blanchiment d'argent par l'immobilier et
-  les activités de gangs dans les centres urbains) est la principale
-  préoccupation de sécurité publique gérée par la GRC et les services de police
-  provinciaux [freedom-house-canada-2026][dnd-departmental-results-2024-25].
-  L'ingérence étrangère, notamment de la Chine, de l'Inde et de la Russie,
-  ciblant les communautés diasporiques et les processus électoraux, a été une
-  préoccupation de sécurité nationale déclarée, documentée dans des témoignages
-  parlementaires et les rapports annuels publics du Service canadien du
-  renseignement de sécurité (SCRS); Freedom House note ce défi aux droits
-  politiques dans son évaluation 2026 [freedom-house-canada-2026]. Les niveaux
-  de menace terroriste sont évalués comme moyens : aucune attaque majeure dans
-  la période évaluée; la violence perpétrée par des acteurs isolés et
-  idéologiquement motivés reste une menace latente [freedom-house-canada-2026].
-  Les Forces armées canadiennes (FAC) comptent environ 68 000 membres de la
-  force régulière; la loyauté envers le contrôle civil est incontestée et
-  institutionnellement ancrée [dnd-departmental-results-2024-25].
-  L'investissement dans la modernisation du Commandement de la défense
-  aérospatiale de l'Amérique du Nord (NORAD) totalise 38,6 G$ sur 20 ans et la
-  capacité de surveillance dans l'Arctique est en cours d'expansion, avec de
-  nouveaux réseaux radar et l'acquisition de brise-glaces comme priorités
-  déclarées [dnd-departmental-results-2024-25]. La frontière entre les
-  États-Unis et le Canada est la plus longue frontière non fortifiée du monde;
-  elle reste opérationnellement ouverte avec des points de pression périodiques
-  liés à la migration irrégulière, gérés par une coopération bilatérale des
-  forces de l'ordre plutôt que par une militarisation
-  [freedom-house-canada-2026].
+  Le Canada ne fait face à aucun groupe armé, à aucune insurrection et à aucune
+  contestation de son monopole de la force. Le contrôle territorial est
+  incontesté dans l'ensemble du pays, bien qu'il s'exerce faiblement dans le
+  Nord, où le Service canadien de renseignements criminels relève l'évolution du
+  contexte de sécurité dans l'Arctique comme un risque émergent pour les
+  collectivités éloignées [cisc-organized-crime-2025]. Les services de police
+  fédéraux sont assurés par la Gendarmerie royale du Canada sous la direction du
+  ministre de la Sécurité publique. La Gendarmerie agit également comme service
+  de police provincial ou territorial, à contrat, dans toutes les provinces sauf
+  l'Ontario et le Québec (qui maintiennent leurs propres corps policiers
+  provinciaux) ainsi que dans les trois territoires et dans de nombreuses
+  municipalités [rcmp-transition-binder][justice-rcmp-act].
+
+
+  Le crime organisé constitue le principal problème de sécurité intérieure; il
+  est en grande partie de nature transnationale. Le Service canadien de
+  renseignements criminels a évalué et coté 493 groupes du crime organisé en
+  2025 (huit comme menaces nationales de haut niveau, 100 comme menaces moyennes
+  et 385 comme menaces faibles), en plus de plus de 560 gangs de rue, dont
+  beaucoup s'étendent à de nouveaux territoires et recourent sans hésiter à la
+  violence [cisc-organized-crime-2025]. Quatre-vingt-treize pour cent des
+  groupes évalués prennent part à la fabrication ou à la distribution de
+  drogues; les plus menaçants entretiennent des liens dans une cinquantaine de
+  pays, principalement les États-Unis, le Mexique, la Colombie et les Émirats
+  arabes unis [cisc-organized-crime-2025][fincan-ml-assessment-2025]. Les
+  collectivités autochtones font face à une menace grandissante, alimentée par
+  la crise des surdoses d'opioïdes et par les gangs de rue violents
+  [cisc-organized-crime-2025]. Le financement illicite constitue
+  l'infrastructure qui rend le reste possible : l'évaluation fédérale estime
+  qu'entre 45 et 113 milliards de dollars sont blanchis au Canada chaque année;
+  le trafic de drogues illégales représentant la principale menace de
+  blanchiment et les circuits de cryptoactifs étant cotés comme une
+  vulnérabilité très élevée [fincan-ml-assessment-2025].
+
+
+  La riposte de l'État s'est nettement intensifiée en 2025 et a franchi un
+  seuil. Le 20 février 2025, le Canada a inscrit sept organisations criminelles
+  transnationales sur la liste des entités terroristes en vertu du Code criminel
+  (étendant pour la première fois les pouvoirs antiterroristes aux cartels
+  criminels), en même temps qu'un plan frontalier de 1,3 milliard de dollars, la
+  nomination d'un commissaire à la lutte contre le fentanyl, une cellule mixte
+  de renseignement opérationnel et un partenariat entre le secteur financier et
+  les forces de l'ordre en matière de blanchiment
+  [ps-terrorist-entities-2025][cbsa-border-review-2025].
+
+
+  Le niveau de menace terroriste est moyen; ce qui signifie qu'un acte de
+  terrorisme violent pourrait se produire. Il est fixé par le directeur du
+  Service canadien du renseignement de sécurité sur l'avis du Centre intégré
+  d'évaluation du terrorisme; il est réévalué au moins tous les quatre mois et
+  il demeure à ce niveau depuis octobre 2014 [canada-terrorism-threat-level].
+  Les attentats survenus au pays ces dernières années ont été commis en majorité
+  par des acteurs solitaires, souvent mus par des motifs idéologiques, et
+  l'activité de financement du terrorisme au Canada est évaluée comme faible
+  tant en volume qu'en valeur [fincan-ml-assessment-2025].
+
+
+  La frontière terrestre avec les États-Unis n'est pas défendue militairement et
+  est gérée par la coopération policière bilatérale plutôt que par la
+  militarisation; le contrôle opérationnel s'exerçant aux points d'entrée. Les
+  données d'application de la loi vont à l'encontre du sens communément supposé :
+  lors d'une opération d'interception d'un mois menée à l'échelle du pays au
+  début de 2025, l'Agence des services frontaliers du Canada a effectué plus de
+  2 600 saisies de stupéfiants, dont environ 67,5 % portaient sur des drogues
+  entrant au Canada depuis les États-Unis et 17,5 % sur des drogues quittant le
+  Canada vers les États-Unis [cbsa-border-review-2025]. 
+
+
+  Aucune corruption systémique au sein des forces de sécurité n'est consignée
+  dans les sources consultées.
+security_military_en: >-
+  The Canadian Armed Forces are an all-volunteer force. Regular Force strength
+  stood at 67,827 on 31 March 2026, still 3,673 below the authorised 71,500,
+  with the Primary Reserve some 5,000 short of its own target of 30,000
+  [dnd-state-of-caf]. That shortfall is now closing rather than widening: the
+  force enrolled 7,310 Regular Force members in 2025-26, beating its recruiting
+  target for a second consecutive year and recording the highest intake in more
+  than thirty years, and has raised the objective to 8,200 for 2026-27
+  [dnd-recruitment-2026]. The defence policy commitment is to reach 71,500
+  Regular and 38,800 Reserve members before 31 March 2032 [dnd-state-of-caf].
+  Personnel remain the binding constraint on capability rather than equipment or
+  money.
+
+
+  Defence spending crossed a long-missed threshold in 2025-26. Canada reached
+  the North Atlantic Treaty Organization's benchmark of 2% of gross domestic
+  product, spending more than $63 billion — the first time in roughly
+  thirty-five years and the largest year-over-year increase in generations
+  [pm-nato-2-percent-2026]. The composition matters: that figure spans the
+  Department of National Defence, the Canadian Armed Forces, the Canadian Coast
+  Guard and other federal departments, counted according to alliance reporting
+  practices, rather than the defence department alone [pm-nato-2-percent-2026].
+  A Defence Investment Agency was established in October 2025 to accelerate
+  procurement, and North American Aerospace Defense Command modernisation
+  carries $38.6 billion over twenty years
+  [pm-nato-2-percent-2026][dnd-departmental-results-2024-25]. The larger
+  commitment is unfunded in any published plan: at the Hague summit in June 2025
+  Canada agreed to invest 5% of output by 2035, 3.5% on core defence and 1.5% on
+  defence-related infrastructure [pm-nato-2-percent-2026]. The Parliamentary
+  Budget Officer estimates that core defence spending would have to reach $159.1
+  billion by 2035-36, some $33.5 billion a year in additional expenditure,
+  raising the deficit by $63 billion and the debt-to-output ratio by 6.3
+  percentage points — and records that no government projection of the pathway
+  has been published [pbo-nato-5-percent-2026].
+
+
+  The force is organised as a single unified service under the Chief of the
+  Defence Staff, with the Canadian Army, the Royal Canadian Navy and the Royal
+  Canadian Air Force as its environmental commands. Cyber became a formal domain
+  in September 2024 with the establishment of Canadian Armed Forces Cyber
+  Command as the single departmental authority for cyber operations, integrating
+  signals intelligence and joint electronic warfare and operating in close
+  partnership with the Communications Security Establishment
+  [dnd-cyber-command-2024]. Space capability is developing chiefly through
+  continental surveillance rather than as an independent domain, within the
+  North American Aerospace Defense Command modernisation programme
+  [dnd-departmental-results-2024-25].
+
+
+  Canada can project force, but only at brigade scale and only within a
+  coalition. Operation REASSURANCE is its largest overseas mission, with
+  approximately 2,000 personnel in Latvia and over 3,000 deployed across the
+  operation through the year; Canada is the framework nation for the North
+  Atlantic Treaty Organization's Multinational Brigade Latvia, a formation of
+  roughly 3,000 personnel from fourteen allies, and the mission was renewed in
+  August 2025 for a further three years to 2029
+  [dnd-op-reassurance][pm-latvia-renewal-2025]. The operation also deploys ships
+  to standing alliance maritime groups and an air task force
+  [dnd-op-reassurance]. Canada holds no overseas bases of its own and hosts no
+  foreign bases; continental defence is conducted through the binational North
+  American Aerospace Defense Command with the United States
+  [dnd-departmental-results-2024-25]. Canada is a non-nuclear-weapon state party
+  to the Treaty on the Non-Proliferation of Nuclear Weapons, holds no nuclear
+  weapons, and bases its policy on that treaty while declining to join the
+  Treaty on the Prohibition of Nuclear Weapons [gac-nuclear-nonproliferation].
+security_military_fr: >-
+  Les Forces armées canadiennes sont une force entièrement composée de
+  volontaires. L'effectif de la Force régulière s'établissait à 67 827 membres
+  au 31 mars 2026, soit 3 673 de moins que les 71 500 autorisés; la Première
+  réserve accusant pour sa part un manque de quelque 5 000 membres par rapport à
+  sa propre cible de 30 000 [dnd-state-of-caf]. Ce déficit se resserre désormais
+  plutôt qu'il ne se creuse : les Forces ont enrôlé 7 310 membres de la Force
+  régulière en 2025-2026, dépassant leur cible de recrutement pour une deuxième
+  année consécutive et enregistrant le plus fort recrutement en plus de trente
+  ans; elles ont porté l'objectif à 8 200 pour 2026-2027 [dnd-recruitment-2026].
+  Le personnel demeure la contrainte déterminante sur la capacité militaire,
+  plutôt que l'équipement ou les ressources financières.
+
+
+  Les dépenses de défense ont franchi en 2025-2026 un seuil longtemps manqué. Le
+  Canada a atteint la cible de 2 % du produit intérieur brut fixée par
+  l'Organisation du Traité de l'Atlantique Nord, dépensant plus de 63 milliards
+  de dollars; première depuis une trentaine d'années et la plus forte hausse
+  d'une année sur l'autre depuis des générations [pm-nato-2-percent-2026]. La
+  composition de ce chiffre importe : il englobe le ministère de la Défense
+  nationale, les Forces armées canadiennes, la Garde côtière canadienne et
+  d'autres ministères fédéraux, selon les pratiques de déclaration de
+  l'Alliance, plutôt que le seul ministère de la Défense
+  [pm-nato-2-percent-2026]. Une Agence des investissements en défense a été
+  créée en octobre 2025 pour accélérer les acquisitions, et la modernisation du
+  Commandement de la défense aérospatiale de l'Amérique du Nord représente 38,6
+  milliards de dollars sur vingt ans
+  [pm-nato-2-percent-2026][dnd-departmental-results-2024-25]. L'engagement plus
+  vaste n'est financé dans aucun plan publié : au sommet de La Haye, en juin
+  2025, le Canada a convenu d'investir 5 % de sa production d'ici 2035, dont 3,5
+  % en défense de base et 1,5 % en infrastructures liées à la défense
+  [pm-nato-2-percent-2026]. La directrice parlementaire du budget estime que les
+  dépenses de défense de base devraient atteindre 159,1 milliards de dollars
+  d'ici 2035-2036, soit quelque 33,5 milliards de dollars de dépenses
+  additionnelles par année; ce qui accroîtrait le déficit de 63 milliards de
+  dollars et le ratio de la dette au produit intérieur brut de 6,3 points de
+  pourcentage. Elle signale qu'aucune projection gouvernementale de la
+  trajectoire n'a été publiée [pbo-nato-5-percent-2026].
+
+
+  Les Forces sont organisées en un service unifié unique sous l'autorité du chef
+  d'état-major de la défense; l'Armée canadienne, la Marine royale canadienne et
+  l'Aviation royale canadienne en constituant les commandements d'armée. Le
+  cyberespace est devenu un domaine officiel en septembre 2024 avec la création
+  du Commandement des cyberopérations des Forces armées canadiennes : autorité
+  ministérielle unique en matière de cyberopérations, qui intègre le
+  renseignement d'origine électromagnétique et la guerre électronique
+  interarmées et travaille en étroit partenariat avec le Centre de la sécurité
+  des télécommunications [dnd-cyber-command-2024]. La capacité spatiale se
+  développe principalement par la surveillance continentale plutôt que comme
+  domaine autonome, dans le cadre du programme de modernisation du Commandement
+  de la défense aérospatiale de l'Amérique du Nord
+  [dnd-departmental-results-2024-25].
+
+
+  Le Canada peut projeter sa force, mais seulement à l'échelle de la brigade et
+  seulement au sein d'une coalition. L'opération REASSURANCE est sa plus
+  importante mission à l'étranger, avec environ 2 000 militaires en Lettonie et
+  plus de 3 000 déployés dans l'ensemble de l'opération au cours de l'année; le
+  Canada est la nation-cadre de la Brigade multinationale Lettonie de l'Alliance
+  (formation d'environ 3 000 militaires provenant de quatorze pays alliés), et
+  la mission a été renouvelée en août 2025 pour trois années supplémentaires,
+  jusqu'en 2029 [dnd-op-reassurance][pm-latvia-renewal-2025]. L'opération
+  déploie également des navires au sein des groupes maritimes permanents de
+  l'Alliance ainsi qu'une force opérationnelle aérienne [dnd-op-reassurance]. Le
+  Canada ne possède aucune base à l'étranger et n'accueille aucune base
+  étrangère; la défense continentale s'exerce par l'intermédiaire du
+  Commandement de la défense aérospatiale de l'Amérique du Nord, organisme
+  binational partagé avec les États-Unis [dnd-departmental-results-2024-25]. Le
+  Canada est un État non doté d'armes nucléaires, partie au Traité sur la
+  non-prolifération des armes nucléaires; il ne détient aucune arme nucléaire et
+  il fonde sa politique sur ce traité, tout en refusant d'adhérer au Traité sur
+  l'interdiction des armes nucléaires [gac-nuclear-nonproliferation].
+security_transnationalExposure_en: >-
+  Foreign interference is Canada's largest non-state and state-adjacent
+  exposure, and it has been formally adjudicated. The public inquiry led by
+  Justice Marie-Josée Hogue concluded in its final report of January 2025 that
+  the People's Republic of China was the most active perpetrator of foreign
+  interference targeting Canadian democratic institutions and India the second
+  most active, and that transnational repression against diaspora communities in
+  Canada was serious enough to warrant a warning beyond the inquiry's own
+  mandate [hogue-final-report-2025]. The intelligence service reports
+  counter-interference, transnational repression and prevention of cyber
+  intrusion by foreign states among its principal operational lines
+  [csis-public-report-2025]. The legislative response is in place but not yet
+  operating. The Countering Foreign Interference Act of 2024 created new
+  offences for deceptive acts undermining democratic processes and for
+  transnational repression, renamed the governing statute the Foreign
+  Interference and Security of Information Act, and enacted a Foreign Influence
+  Transparency and Accountability Act providing for a registry of foreign
+  influence activities under an independent commissioner
+  [ps-foreign-interference-laws]. The appointment procedure is deliberately
+  insulated: it requires consultation with the parliamentary leaders of all
+  recognised parties and approval by both the House of Commons and the Senate,
+  and on that basis the Minister of Public Safety named Anton Boegman, formerly
+  British Columbia's chief electoral officer, as proposed commissioner in March
+  2026 [ps-commissioner-named-2026]. The supporting regulations were published
+  for comment in January 2026 and registered in final form in mid-2026, with the
+  commissioner's office and the registry to open on 4 August 2026 — more than
+  two years after the enabling legislation received royal assent
+  [nrf-fitaa-2026].
+
+
+  Trafficking and illicit finance run in both directions and are structurally
+  transnational. The most threatening organised crime groups maintain
+  connections across some fifty countries, sourcing illicit drugs and firearms
+  and laundering proceeds abroad, with the United States, Mexico, Colombia and
+  the United Arab Emirates the most frequented destinations for criminal
+  purposes and China and Australia completing the principal list
+  [cisc-organized-crime-2025]. Firearms flow north: dozens of street gangs are
+  assessed as involved in smuggling weapons from the United States
+  [cisc-organized-crime-2025]. Illicit value flows out through trade-based
+  laundering and crypto-asset channels, both rated high vulnerabilities in the
+  federal assessment, and the state's own analysis identifies foreign
+  interference as an emerging threat vector that combines state sponsorship with
+  organised crime [fincan-ml-assessment-2025]. A dedicated trade transparency
+  unit was established within the border agency to detect illicit financial
+  flows moving through international trade [cbsa-border-review-2025].
+
+
+  Migration pressure has fallen sharply from its peak, by policy rather than by
+  circumstance. Asylum claim volumes rose from over 92,000 in 2022 to over
+  144,000 in 2023 and over 173,000 in 2024 [ircc-asylum-statistics]. Extending
+  the Safe Third Country Agreement across the entire land border in March 2023
+  cut claims made between ports of entry from an average of 165 a day to 13, and
+  irregular crossings fell from roughly 17,000 in 2023 to under 4,500 in 2024
+  [ircc-asylum-statistics]. Further measures followed: a partial visa
+  requirement for Mexican nationals, and new eligibility restrictions in force
+  from 26 March 2026 under the Strengthening Canada's Immigration System and
+  Borders Act, after which claims from temporary resident visa holders fell 84%
+  year on year [ircc-asylum-statistics]. The residual pressure is concentrated
+  rather than general, running mainly through the Lacolle port of entry in
+  Quebec, and the federal government transferred $750 million to Quebec in
+  recognition of housing and asylum costs incurred between 2021 and 2024
+  [ircc-asylum-statistics].
+
+
+  Shared-resource friction is concentrated on one instrument. Canada and the
+  United States reached an agreement in principle in July 2024, after six years
+  of negotiation, to modernise the Columbia River Treaty, which governs flood
+  control, hydropower allocation, water supply and salmon restoration on a river
+  whose headwaters are in British Columbia. In March 2025 the United States
+  paused negotiations pending a broad review of its international engagements,
+  leaving the modernised agreement unratified and interim arrangements bridging
+  the original treaty [bc-columbia-treaty-2025].
+security_transnationalExposure_fr: >-
+  L'ingérence étrangère constitue la plus grande vulnérabilité du Canada de
+  source non étatique ou para-étatique, et elle a fait l'objet d'un jugement
+  formel. L'enquête publique menée par la juge Marie-Josée Hogue a conclu, dans
+  son rapport final de janvier 2025, que la République populaire de Chine était
+  l'auteur le plus actif d'ingérence étrangère visant les institutions
+  démocratiques canadiennes et l'Inde le deuxième plus actif, et que la
+  répression transnationale exercée contre les communautés diasporiques au
+  Canada était suffisamment grave pour justifier une mise en garde débordant le
+  mandat même de la Commission [hogue-final-report-2025]. Le service de
+  renseignement inscrit la lutte contre l'ingérence, la répression
+  transnationale et la prévention des intrusions informatiques d'origine
+  étatique étrangère parmi ses principaux axes opérationnels
+  [csis-public-report-2025]. La réponse législative est en place, mais n'est pas
+  encore opérante. La Loi sur la lutte contre l'ingérence étrangère de 2024 a
+  créé de nouvelles infractions visant les actes trompeurs qui minent les
+  processus démocratiques ainsi que la répression transnationale, a renommé la
+  loi habilitante Loi sur l'ingérence étrangère et la sécurité de l'information,
+  et a édicté la Loi sur la transparence et la responsabilité en matière
+  d'influence étrangère, laquelle prévoit un registre des activités d'influence
+  étrangère relevant d'un commissaire indépendant
+  [ps-foreign-interference-laws]. La procédure de nomination est délibérément
+  soustraite à l'influence partisane : elle exige la consultation des chefs
+  parlementaires de tous les partis reconnus et l'approbation de la Chambre des
+  communes comme du Sénat; c'est à ce titre que le ministre de la Sécurité
+  publique a désigné Anton Boegman, ancien directeur général des élections de la
+  Colombie-Britannique, comme commissaire proposé en mars 2026
+  [ps-commissioner-named-2026]. Le règlement d'application a été publié pour
+  commentaires en janvier 2026 et enregistré dans sa forme définitive au milieu
+  de 2026; le bureau du commissaire et le registre devant ouvrir le 4 août 2026
+  (plus de deux ans après la sanction royale de la loi habilitante)
+  [nrf-fitaa-2026].
+
+
+  Le trafic et le financement illicite circulent dans les deux sens et sont
+  structurellement transnationaux. Les groupes du crime organisé les plus
+  menaçants entretiennent des liens dans une cinquantaine de pays,
+  s'approvisionnant en drogues et en armes à feu illicites et blanchissant leurs
+  produits à l'étranger; les États-Unis, le Mexique, la Colombie et les Émirats
+  arabes unis constituant les destinations les plus fréquentées à des fins
+  criminelles, la Chine et l'Australie complétant la liste principale
+  [cisc-organized-crime-2025]. Les armes à feu remontent vers le nord : des
+  dizaines de gangs de rue sont considérés comme prenant part à la contrebande
+  d'armes depuis les États-Unis [cisc-organized-crime-2025]. La valeur illicite
+  sort du pays par le blanchiment fondé sur le commerce et par les circuits de
+  cryptoactifs, tous deux cotés comme des vulnérabilités élevées dans
+  l'évaluation fédérale; l'analyse de l'État lui-même désigne l'ingérence
+  étrangère comme un vecteur de menace émergent, qui allie le parrainage
+  étatique au crime organisé [fincan-ml-assessment-2025]. Une unité spécialisée
+  en transparence commerciale a été créée au sein de l'agence frontalière pour
+  détecter les flux financiers illicites qui transitent par le commerce
+  international [cbsa-border-review-2025].
+
+
+  La pression migratoire a fortement diminué par rapport à son sommet, du fait
+  des politiques et non des circonstances. Le volume des demandes d'asile est
+  passé de plus de 92 000 en 2022 à plus de 144 000 en 2023, puis à plus de 173
+  000 en 2024 [ircc-asylum-statistics]. L'extension de l'Entente entre le Canada
+  et les États-Unis sur les tiers pays sûrs à l'ensemble de la frontière
+  terrestre, en mars 2023, a fait chuter les demandes présentées entre les
+  points d'entrée d'une moyenne de 165 par jour à 13, et les passages
+  irréguliers ont reculé d'environ 17 000 en 2023 à moins de 4 500 en 2024
+  [ircc-asylum-statistics]. D'autres mesures ont suivi : une obligation de visa
+  partielle pour les ressortissants mexicains, et de nouvelles restrictions
+  d'admissibilité en vigueur depuis le 26 mars 2026 en vertu de la Loi visant à
+  renforcer le système d'immigration et les frontières du Canada, après quoi les
+  demandes provenant de titulaires d'un visa de résident temporaire ont chuté de
+  84 % sur un an [ircc-asylum-statistics]. La pression résiduelle est concentrée
+  plutôt que générale, passant principalement par le point d'entrée de Lacolle,
+  au Québec, et le gouvernement fédéral a transféré 750 millions de dollars au
+  Québec en reconnaissance des coûts de logement et d'asile engagés entre 2021
+  et 2024 [ircc-asylum-statistics].
+
+
+  Les frictions liées aux ressources partagées se concentrent sur un seul
+  instrument. Le Canada et les États-Unis sont parvenus à une entente de
+  principe en juillet 2024, après six ans de négociations, pour moderniser le
+  Traité du fleuve Columbia, qui régit la maîtrise des crues, la répartition de
+  l'hydroélectricité, l'approvisionnement en eau et le rétablissement du saumon
+  sur un fleuve dont les eaux d'amont se trouvent en Colombie-Britannique. En
+  mars 2025, les États-Unis ont suspendu les négociations en attendant un vaste
+  réexamen de leurs engagements internationaux, laissant l'entente modernisée
+  non ratifiée et des arrangements provisoires assurant la transition depuis le
+  traité original [bc-columbia-treaty-2025].
 security_diplomacy_en: >-
-  Canada's treaty alliance architecture centres on NATO (founding member), NORAD
-  (bilateral defence with the US), and the Five Eyes intelligence-sharing
-  network [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada
-  activated an EU Security and Defence Partnership in early 2026, representing a
-  structural diversification of its security relationships beyond the US
-  bilateral frame [cgai-diplomats-guide-2026]. Key bilateral relationships: (1)
-  United States — the dominant partner on trade, defence, and border management,
-  currently under structural stress due to tariff disputes; (2) United Kingdom —
-  Five Eyes and Commonwealth partner; (3) European Union — CETA trade framework
-  and new security partnership; (4) China — transactional trade relationship
-  with elevated foreign interference and human rights tension; (5) Indo-Pacific
-  partners — CPTPP engagement with Japan, Australia, and others
-  [cgai-diplomats-guide-2026][gac-trade-diversification]. Regional flashpoints
-  relevant to Canada: Arctic sovereignty and resource access, where Canada
-  competes diplomatically with Russia and Denmark/Kingdom of Denmark (Greenland)
-  and increasingly with China's Arctic ambitions; and the Canada–US trade
-  dispute, which is the primary bilateral flashpoint in 2026
-  [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Canada holds
-  G7, G20, OECD, Commonwealth, and La Francophonie memberships, providing
-  multilateral influence beyond its military weight [cgai-diplomats-guide-2026].
-  Canada committed at the June 2025 NATO summit in The Hague to spend 5% of GDP
-  on defence by 2035 (3.5% core defence, 1.5% defence-related infrastructure).
-  No government projection of the pathway to the target has been published. The
-  Parliamentary Budget Officer estimates this requires core defence spending of
-  $159.1 billion by 2035-36 (approximately $33.5 billion per year in additional
-  expenditure) raising the deficit by $63 billion and the debt-to-GDP ratio by
-  6.3 points by 2035-36 [pbo-nato-5-percent-2026].
+  Canada's alliance architecture rests on three long-standing pillars and one
+  recent addition. It is a founding member of the North Atlantic Treaty
+  Organization and the sixth-largest contributor to its common funded budget; it
+  shares the binational North American Aerospace Defense Command with the United
+  States; and it belongs to the Five Eyes intelligence partnership with the
+  United States, the United Kingdom, Australia and New Zealand
+  [pm-nato-2-percent-2026][cgai-diplomats-guide-2026]. The newest addition is
+  European. Canada and the European Union signed a Security and Defence
+  Partnership at their summit of 23 June 2025 — a non-legally-binding political
+  framework regrouping existing cooperation across crisis management, military
+  mobility, defence procurement, maritime security, cyber and space
+  [gac-canada-eu]. On 14 February 2026 the two signed a further agreement
+  admitting Canadian firms to procurement under the European Union's Security
+  Action for Europe instrument, making Canada the first non-European participant
+  in that €150 billion facility; it has applied provisionally since 13 April
+  2026 and was formally concluded by the Council on 15 June 2026
+  [gac-canada-eu][consilium-safe-canada-2026]. Canada has also been a
+  third-state participant in European Permanent Structured Cooperation since
+  2021, in the military mobility and logistics hub projects [gac-canada-eu].
+  Multilateral membership extends to the Group of Seven, the Group of Twenty,
+  the Organisation for Economic Co-operation and Development, the Commonwealth
+  and La Francophonie, giving Canada institutional reach beyond its military
+  weight [cgai-diplomats-guide-2026].
+
+
+  The United States remains the dominant relationship on trade, defence and
+  border management, and it is the one under structural stress. Roughly
+  three-quarters of merchandise exports go south, tariffs imposed in 2025-26 are
+  treated as permanent by the Parliamentary Budget Officer, and the
+  Canada–United States–Mexico Agreement passed its review deadline on 1 July
+  2026 without renewal [statcan-merch-trade-may2026][pbo-efo-jun2026]. Defence
+  integration continues regardless, through the North American Aerospace Defense
+  Command and the modernisation programme.
+
+
+  The two relationships the foreign interference inquiry identified as most
+  damaging have both been reset, and that is the central tension in Canada's
+  current diplomacy. China was named the most active perpetrator of interference
+  against Canadian democratic institutions [hogue-final-report-2025]; in January
+  2026 the Prime Minister made the first Canadian visit to Beijing since 2017,
+  and the two governments issued an economic and trade cooperation roadmap under
+  a declared strategic partnership. Canada cut its tariff on Chinese electric
+  vehicles from 100% to the most-favoured-nation rate of 6.1% within an annual
+  quota, while China reduced canola seed duties and suspended
+  anti-discrimination tariffs on canola meal, peas, lobster and crab; Global
+  Affairs Canada has set a target of increasing exports to China by 50% by 2030
+  [gac-china-market-access-2026]. India was named the second most active
+  [hogue-final-report-2025]; after the rupture of 2023 and 2024, high
+  commissioners were reinstated in September 2025, law-enforcement channels on
+  shared security concerns resumed, and a ministerial energy dialogue was
+  relaunched in January 2026 covering liquefied natural gas, crude, potash and
+  uranium [mea-india-canada-2026]. In both cases commercial diversification away
+  from the United States is proceeding alongside unresolved security findings
+  about the same partners.
+
+
+  Territorial disputes are narrow and managed. Canada has two Arctic maritime
+  boundary disputes — with the United States over a portion of the Beaufort Sea,
+  and with Denmark over two small zones in the Lincoln Sea — both of which the
+  government treats as well managed and to be resolved peacefully under
+  international law [gac-arctic-sovereignty]. The larger disagreement is not
+  about ownership but about control of navigation: Canada maintains that all
+  waters of its Arctic archipelago, including the Northwest Passage, are
+  internal waters by historic title, while the United States and other maritime
+  states hold the Passage to be a strait used for international navigation
+  [gac-arctic-sovereignty][belfer-nwp-2025]. The two sides have long agreed to
+  disagree, and the dispute has been assessed as posing no acute sovereignty or
+  security concern; receding sea ice raises its salience rather than its
+  temperature [belfer-nwp-2025].
 security_diplomacy_fr: >-
-  L'architecture d'alliances conventionnelles du Canada est centrée sur l'OTAN
-  (membre fondateur), NORAD (défense bilatérale avec les États-Unis) et le
-  réseau de partage de renseignements Five Eyes (ou Groupe des cinq)
-  [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Partenariat
-  de sécurité et de défense entre l’Union européenne et le Canada a été établi
-  lors du sommet Canada‑UE de juin 2025, représentant une diversification
-  structurelle de ses relations de sécurité au-delà du cadre bilatéral
-  états-unien [cgai-diplomats-guide-2026]. Principales relations bilatérales :
-  (1) États-Unis — partenaire dominant en matière de commerce, de défense et de
-  gestion des frontières, actuellement sous pression structurelle en raison des
-  différends tarifaires; (2) Royaume-Uni — partenaire du Groupe des cinq et du
-  Commonwealth; (3) Union européenne — cadre commercial de l'Accord économique
-  et commercial global (AECG) et nouveau partenariat de sécurité; (4) Chine —
-  relation commerciale transactionnelle avec des tensions élevées concernant
-  l'ingérence étrangère et les droits de la personne; (5) Partenaires
-  indo-pacifiques — engagement dans l’Accord de partenariat transpacifique
-  global et progressiste (PTPGP) avec le Japon, l'Australie et d'autres
-  [cgai-diplomats-guide-2026][gac-trade-diversification]. Points de friction
-  régionaux pertinents pour le Canada : la souveraineté arctique et l'accès aux
-  ressources, où le Canada rivalise diplomatiquement avec la Russie et le
-  Danemark/Royaume du Danemark (Groenland) et de plus en plus avec les ambitions
-  arctiques de la Chine; et le différend commercial Canada–États-Unis, qui est
-  le principal point de friction bilatéral en 2026
-  [cgai-diplomats-guide-2026][dnd-departmental-results-2024-25]. Le Canada est
-  membre du G7, du G20, de l'OCDE, du Commonwealth et de la Francophonie; ce qui
-  lui confère une influence multilatérale au-delà de son poids militaire
-  [cgai-diplomats-guide-2026]. Au sommet de l'OTAN tenu à La Haye en juin 2025,
-  le Canada s'est engagé à consacrer 5 % de son PIB à la défense d'ici 2035 (3,5
-  % aux besoins fondamentaux de défense et 1,5 % aux infrastructures liées à la
-  défense), cible qui vient remplacer le seuil de 2 %. Le gouvernement n'a
-  publié aucune projection à l'appui de cette cible. La directrice parlementaire
-  du budget estime que cela exige des dépenses de défense fondamentales de 159,1
-  milliards de dollars d'ici l'exercice 2035-2036 (environ 33,5 milliards de
-  dollars de dépenses supplémentaires), creusant le déficit de 63 milliards de
-  dollars et accroissant le ratio de la dette au PIB de 6,3 points d'ici
-  2035-2036 [pbo-nato-5-percent-2026].
+  L'architecture d'alliances du Canada repose sur trois piliers de longue date
+  et sur un ajout récent. Le Canada est membre fondateur de l'Organisation du
+  Traité de l'Atlantique Nord et le sixième contributeur à son budget commun; il
+  partage avec les États-Unis le Commandement binational de la défense
+  aérospatiale de l'Amérique du Nord; et il appartient au partenariat de
+  renseignement du Groupe des cinq, avec les États-Unis, le Royaume-Uni,
+  l'Australie et la Nouvelle-Zélande
+  [pm-nato-2-percent-2026][cgai-diplomats-guide-2026]. Le plus récent ajout est
+  européen. Le Canada et l'Union européenne ont signé un Partenariat de sécurité
+  et de défense à leur sommet du 23 juin 2025; cadre politique sans caractère
+  juridiquement contraignant qui regroupe la coopération existante en matière de
+  gestion de crise, de mobilité militaire, d'acquisitions de défense, de
+  sécurité maritime, de cyberespace et d'espace [gac-canada-eu]. Le 14 février
+  2026, les deux parties ont signé une entente supplémentaire admettant les
+  entreprises canadiennes aux marchés publics ouverts par l'instrument européen
+  d'action pour la sécurité en Europe, faisant du Canada le premier participant
+  non européen à ce mécanisme de 150 milliards d'euros; l'entente s'applique à
+  titre provisoire depuis le 13 avril 2026 et a été formellement conclue par le
+  Conseil le 15 juin 2026 [gac-canada-eu][consilium-safe-canada-2026]. Le Canada
+  participe également, à titre d'État tiers, à la coopération structurée
+  permanente européenne depuis 2021, dans les projets de mobilité militaire et
+  de pôle logistique [gac-canada-eu]. Ses appartenances multilatérales
+  s'étendent au Groupe des Sept, au Groupe des Vingt, à l'Organisation de
+  coopération et de développement économiques, au Commonwealth et à la
+  Francophonie; ce qui lui confère une portée institutionnelle supérieure à son
+  poids militaire [cgai-diplomats-guide-2026].
+
+
+  Les États-Unis demeurent la relation dominante en matière de commerce, de
+  défense et de gestion frontalière, et celle subissant une tension
+  structurelle. Environ les trois quarts des exportations de marchandises
+  prennent la direction du sud, les droits de douane imposés en 2025-2026 sont
+  tenus pour permanents par la directrice parlementaire du budget, et l'Accord
+  Canada–États-Unis–Mexique a franchi son échéance d'examen le 1er juillet 2026
+  sans être reconduit [statcan-merch-trade-may2026][pbo-efo-jun2026].
+  L'intégration en matière de défense se poursuit néanmoins, par l'intermédiaire
+  du Commandement de la défense aérospatiale de l'Amérique du Nord et de son
+  programme de modernisation.
+
+
+  Les deux relations que l'enquête sur l'ingérence étrangère a désignées comme
+  les plus dommageables ont l'une et l'autre été rétablies; il s'agit de la
+  tension centrale de la diplomatie canadienne actuelle. La Chine a été nommée
+  l'auteur le plus actif d'ingérence contre les institutions démocratiques
+  canadiennes [hogue-final-report-2025]; en janvier 2026, le premier ministre a
+  effectué la première visite canadienne à Pékin depuis 2017, et les deux
+  gouvernements ont publié une feuille de route de coopération économique et
+  commerciale dans le cadre d'un partenariat stratégique déclaré. Le Canada a
+  ramené ses droits de douane sur les véhicules électriques chinois de 100 % au
+  taux de la nation la plus favorisée de 6,1 % à l'intérieur d'un contingent
+  annuel, tandis que la Chine réduisait ses droits sur les graines de canola et
+  suspendait ses droits antidiscriminatoires sur le tourteau de canola, les
+  pois, le homard et le crabe. Affaires mondiales Canada s'est fixé pour cible
+  d'accroître de 50 % les exportations vers la Chine d'ici 2030
+  [gac-china-market-access-2026]. L'Inde a été nommée le deuxième auteur le plus
+  actif [hogue-final-report-2025]. Après la rupture de 2023 et de 2024, les
+  hauts-commissaires ont été réinstallés en septembre 2025; les canaux policiers
+  portant sur des préoccupations de sécurité communes ont repris leurs
+  activités, et un dialogue ministériel sur l'énergie a été relancé en janvier
+  2026, couvrant le gaz naturel liquéfié, le pétrole brut, la potasse et
+  l'uranium [mea-india-canada-2026]. Dans les deux cas, la diversification
+  commerciale au détriment des États-Unis progresse parallèlement à des constats
+  de sécurité non résolus concernant ces mêmes partenaires.
+
+
+  Les différends territoriaux sont circonscrits et gérés. Le Canada a deux
+  différends de délimitation maritime dans l'Arctique : avec les États-Unis, au
+  sujet d'une portion de la mer de Beaufort, et avec le Danemark, au sujet de
+  deux petites zones de la mer de Lincoln; que le gouvernement considère l'un et
+  l'autre comme bien gérés et devant se régler pacifiquement en vertu du droit
+  international [gac-arctic-sovereignty]. Le désaccord le plus important ne
+  porte pas sur la propriété, mais sur le contrôle de la navigation : le Canada
+  soutient que toutes les eaux de son archipel arctique, y compris le passage du
+  Nord-Ouest, sont des eaux intérieures en vertu d'un titre historique, alors
+  que les États-Unis et d'autres États maritimes tiennent le passage pour un
+  détroit servant à la navigation internationale
+  [gac-arctic-sovereignty][belfer-nwp-2025]. Les deux camps ont convenu depuis
+  longtemps de maintenir leur désaccord. Il a été établi que ce différend ne
+  soulevait aucune préoccupation aiguë de souveraineté ou de sécurité; le recul
+  de la glace de mer en accroît la visibilité plutôt que la virulence
+  [belfer-nwp-2025].
 situation_en: |-
   [
     {
