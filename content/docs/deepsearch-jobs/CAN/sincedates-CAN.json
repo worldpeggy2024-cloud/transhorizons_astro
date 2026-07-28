@@ -1,0 +1,304 @@
+{
+  "dated": [
+    {
+      "gap": "Delivered policy does not reach the targets legislated under the Canadian Net-Zero Emissions Accountability Act: projected 2030 emissions of 645 to 647 megatonnes against a target range of 426 to 484 megatonnes leave a shortfall of roughly 160 to 220 megatonnes, and policies and action are rated highly insufficient.",
+      "field": "territory.transition",
+      "sinceValue": "2021 (Act received royal assent 29 June 2021, legislating the 2030 target; first Emissions Reduction Plan required under the Act published March 2022)",
+      "establishedBy": "oag-cnzeaa-2023",
+      "evidence": "\"The Canadian Net-Zero Emissions Accountability Act... came into force on 29 June 2021... In March 2022, the Minister of Environment and Climate Change published the 2030 Emissions Reduction Plan. This was the first plan under the act.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "Owners of core public infrastructure identified $294.4 billion required to rehabilitate or replace existing assets to bring or keep them in good condition, against $31.3 billion actually invested in renewal that year — 11% of the identified requirement — while the share of assets rated in good or very good condition fell from 59% to 55%.",
+      "field": "capacity.delivery",
+      "sinceValue": "2016 (first Canadian Infrastructure Report Card documented the national renewal underinvestment gap)",
+      "establishedBy": "cci-infrastructure-2016",
+      "evidence": "The 2016 Canadian Infrastructure Report Card (\"Informing the Future\") first quantified municipal infrastructure renewal funding gaps and adaptation planning shortfalls nationally.",
+      "datingBasis": "advocacy",
+      "orientationNote": "Canadian Infrastructure Report Card is produced by a coalition of engineering and municipal associations (Canadian Construction Association, FCM, CSCE, CPWA) advocating for infrastructure investment."
+    },
+    {
+      "gap": "The federal state finished the Trans Mountain Expansion but did not prove able to forecast or contain what finishing it would cost, the estimate running from $5.4 billion in 2013 to $34.2 billion on completion, years after the schedules successively announced.",
+      "field": "capacity.delivery",
+      "sinceValue": "16 December 2013 (original capital cost estimate filed with the National Energy Board)",
+      "establishedBy": "boereport-tmx-timeline-2024",
+      "evidence": "\"Dec. 16, 2013: Kinder Morgan Canada formally files to the then-National Energy Board for regulatory approval for the project... The company pegs the capital cost of the project at $5.4 billion.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "The Royal Canadian Mounted Police made recruitment a top priority yet set targets below its actual needs and then missed them, leaving a shortfall of at least 3,400 officers as of September 2025, vacancy rates above the force's own critical threshold in nine of the eleven provinces and territories it serves, and target processing times missed on 97% of applications.",
+      "field": "capacity.steering",
+      "sinceValue": "2018 (RCMP identified recruitment as a top priority)",
+      "establishedBy": "oag-rcmp-recruiting-2026",
+      "evidence": "\"Since 2018, the RCMP has identified recruitment as a top priority. However, it did not accurately identify the total number of police officers it needed to fully staff the force.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "The responsible department investigated roughly 4,000 of some 153,000 flagged compliance cases in the international student programme and did not pursue 800 identified fraud cases.",
+      "field": "capacity.steering",
+      "sinceValue": "2018–2023 (the 800 fraudulent study permits were issued in this window and never actioned; the audit that first identified the pattern was tabled 23 March 2026)",
+      "establishedBy": "oag-ircc-international-students-2026",
+      "evidence": "\"The audit identified 800 study permits issued between 2018 and 2023 where applicants used fraudulent documents or misrepresented information... The department did not take follow-up action in any of these cases.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "Indigenous Services Canada was found not to have effectively implemented, monitored or assessed the initiatives it had committed to under the New Fiscal Relationship.",
+      "field": "capacity.steering",
+      "sinceValue": "2016 (Government of Canada and Assembly of First Nations agreed to establish the New Fiscal Relationship initiatives; shortfall in implementation first identified by the Auditor General in the report tabled 4 May 2026)",
+      "establishedBy": "oag-isc-new-fiscal-relationship-2026",
+      "evidence": "\"The Government of Canada and the Assembly of First Nations agreed in 2016 to establish the initiatives to advance First Nations' right to self-determination... Overall, Indigenous Services Canada did not effectively implement, monitor, or assess the New Fiscal Relationship initiatives it committed to with First Nations.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "The avian influenza audit found gaps in planning, data and decision-making that the experience of the pandemic had not closed.",
+      "field": "capacity.steering",
+      "sinceValue": "2021 (H5N1 outbreak began, surfacing the planning, documentation and vaccine-inventory gaps later confirmed by the Commissioner of the Environment and Sustainable Development's 2026 audit)",
+      "establishedBy": "cesd-avian-influenza-2026",
+      "evidence": "\"An outbreak of the disease began in Canada in 2021... we found that they need to improve on planning, documentation and the management of human vaccines to better prepare for future threats to public health and vulnerable wildlife.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "The Spring Economic Update of April 2026 enacted a subset of what Budget 2025 proposed, with new measures costing $37.5 billion over six years against a budget that had announced considerably more.",
+      "field": "capacity.steering",
+      "sinceValue": "28 April 2026 (date of the Spring Economic Update itself, which is the source document establishing the shortfall against Budget 2025 commitments)",
+      "establishedBy": "seu-2026",
+      "evidence": "\"On April 28, 2026, Finance and National Revenue Minister François-Philippe Champagne released the 2026 Spring Economic Update... with $37.5 billion in net new spending.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "Canada is among the top five global producers of 10 of its 34 critical minerals but has not built the corresponding domestic processing and refining capacity at scale, a gap the current critical minerals strategy explicitly targets.",
+      "field": "capacity.productivity",
+      "sinceValue": "2022 (Canadian Critical Minerals Strategy launched, explicitly targeting the upstream production vs. midstream processing gap; the Commissioner of the Environment and Sustainable Development's 2024 audit confirmed the gap persisted)",
+      "establishedBy": "cesd-critical-minerals-2024",
+      "evidence": "\"In the strategy, the Government of Canada identified 31 'critical minerals' and prioritized 6 for their potential to spur Canadian economic growth... In June 2024, the Government of Canada released updated criteria along with an updated list of 34 critical minerals.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "Internal barriers to the movement of goods, services and labour persist at the equivalent of about a 9% national tariff, rising to as much as 50% in health care, education and retail services, and their removal is running behind its own timetable: mutual recognition for services was only committed to in March 2026, labour mobility provisions were still under negotiation, credential recognition for tradespersons is targeted for spring 2027, the direct-to-consumer alcohol framework due in May 2026 was not delivered, and First Ministers agreed in July 2026 to work toward an agreement in principle rather than a completed instrument.",
+      "field": "capacity.productivity",
+      "sinceValue": "2019 (IMF's first comprehensive estimate of Canada's internal, non-geographic trade-barrier tariff equivalent, at 21%; the 2026 IMF update recalculated the barrier at roughly 9%)",
+      "establishedBy": "imf-internal-trade-2019",
+      "evidence": "\"A 2019 IMF study—widely regarded as the most comprehensive analysis of internal trade barriers—estimated the average tariff equivalent of non-geographic internal trade barriers in Canada at 21%.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    },
+    {
+      "gap": "No government projection of the pathway to the declared 2035 defence spending commitment has been published, so the commitment stands without a costed route to it, against an independent estimate that core defence spending would have to reach $159.1 billion by 2035-36, some $33.5 billion a year in additional expenditure.",
+      "field": "security.military",
+      "sinceValue": "Budget 2025 (the government's uncosted 'pathway' commitment originates here; the Parliamentary Budget Officer identified the absence of a costed plan in its report of 5 February 2026)",
+      "establishedBy": "pbo-nato-5-percent-2026",
+      "evidence": "\"In Budget 2025, the Government stated that accelerating investments will put Canada on a pathway to meet the NATO 5% commitment by 2035. However, it has not provided detailed projections showing how the target will be achieved.\"",
+      "datingBasis": "official",
+      "orientationNote": ""
+    }
+  ],
+  "newSources": [
+    {
+      "id": "oag-cnzeaa-2023",
+      "name": "Report 6—Canadian Net-Zero Emissions Accountability Act—2030 Emissions Reduction Plan",
+      "nameFr": "Rapport 6 — Loi canadienne sur la responsabilité en matière de carboneutralité — Plan de réduction des émissions pour 2030",
+      "url": "https://www.oag-bvg.gc.ca/internet/English/att__e_44374.html",
+      "desc": "Auditor General of Canada performance audit examining implementation of the Net-Zero Emissions Accountability Act and the government's first Emissions Reduction Plan; authoritative on federal climate accountability process, not on projected tonnage figures.",
+      "descFr": "Audit de performance du Bureau du vérificateur général du Canada sur la mise en œuvre de la Loi sur la responsabilité en matière de carboneutralité et le premier plan de réduction des émissions.",
+      "publicationDate": "2023-11-06",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "cci-infrastructure-2016",
+      "name": "Informing the Future: The Canadian Infrastructure Report Card 2016",
+      "nameFr": "Éclairer l'avenir : Bulletin de rendement des infrastructures canadiennes 2016",
+      "url": "http://canadianinfrastructure.ca/downloads/canadian_infrastructure_report_2016.pdf",
+      "desc": "First national report card compiled jointly by Canadian engineering, public works and municipal associations assessing municipal infrastructure condition and renewal funding gaps; industry/municipal-sector advocacy document, not a federal statistical release.",
+      "descFr": "Premier bulletin national des associations d'ingénierie et municipales canadiennes évaluant l'état des infrastructures municipales et les écarts de financement du renouvellement.",
+      "publicationDate": "2016",
+      "accessDate": "2026-07-27",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "Low"
+    },
+    {
+      "id": "boereport-tmx-timeline-2024",
+      "name": "A timeline of the Trans Mountain pipeline expansion's major milestones and setbacks",
+      "nameFr": "Une chronologie des principales étapes et difficultés du projet d'expansion de l'oléoduc Trans Mountain",
+      "url": "https://boereport.com/2024/01/30/a-timeline-of-the-trans-mountain-pipeline-expansions-major-milestones-and-setbacks/",
+      "desc": "Industry news timeline compiling regulatory filing dates and successive cost estimates for the Trans Mountain Expansion, sourced from company and National Energy Board/Canada Energy Regulator filings.",
+      "descFr": "Chronologie journalistique sectorielle compilant les dates de dépôt réglementaire et les estimations de coûts successives du projet d'expansion de Trans Mountain.",
+      "publicationDate": "2024-01-29",
+      "accessDate": "2026-07-27",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "oag-rcmp-recruiting-2026",
+      "name": "Recruiting for the Royal Canadian Mounted Police",
+      "nameFr": "Le recrutement pour la Gendarmerie royale du Canada",
+      "url": "https://www.canada.ca/en/auditor-general/our-work/audit-reports/auditor-general-report-2026-recruiting-royal-canadian-mounted-police.html",
+      "desc": "Auditor General of Canada performance audit on RCMP recruitment and staffing practices; authoritative on federal police workforce planning history and vacancy-rate data, not on future recruitment outcomes.",
+      "descFr": "Audit de performance du Bureau du vérificateur général du Canada sur les pratiques de recrutement et de dotation de la GRC.",
+      "publicationDate": "2026-03-17",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "oag-ircc-international-students-2026",
+      "name": "International Student Program",
+      "nameFr": "Programme des étudiants étrangers",
+      "url": "https://www.canada.ca/en/auditor-general/our-work/audit-reports.html",
+      "desc": "Auditor General of Canada performance audit on Immigration, Refugees and Citizenship Canada's oversight of the International Student Program; authoritative on compliance-investigation and fraud-case handling, not on enrolment volume trends.",
+      "descFr": "Audit de performance du Bureau du vérificateur général du Canada sur la surveillance du Programme des étudiants étrangers par IRCC.",
+      "publicationDate": "2026-03-23",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "oag-isc-new-fiscal-relationship-2026",
+      "name": "New Fiscal Initiatives With First Nations",
+      "nameFr": "Nouvelles initiatives fiscales avec les Premières Nations",
+      "url": "https://www.canada.ca/content/dam/oag-bvg/audit-reports/documents/ag-202605-new-fiscal-initiatives-with-first-nations.pdf",
+      "desc": "Auditor General of Canada performance audit assessing Indigenous Services Canada's implementation of New Fiscal Relationship commitments made with the Assembly of First Nations; authoritative on federal program delivery, not on funding totals independently.",
+      "descFr": "Audit de performance du Bureau du vérificateur général du Canada sur la mise en œuvre par Services aux Autochtones Canada des engagements de la nouvelle relation financière avec l'Assemblée des Premières Nations.",
+      "publicationDate": "2026-04-30",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "cesd-avian-influenza-2026",
+      "name": "Avian Influenza",
+      "nameFr": "L'influenza aviaire",
+      "url": "https://www.canada.ca/en/auditor-general/our-work/audit-reports/commissioner-environment-sustainable-development-202605-avian-influenza.html",
+      "desc": "Commissioner of the Environment and Sustainable Development audit of the federal response to avian influenza, covering ECCC, CFIA and PHAC; authoritative on planning, documentation and vaccine-management practices, not on outbreak epidemiology.",
+      "descFr": "Audit du commissaire à l'environnement et au développement durable sur la réponse fédérale à l'influenza aviaire, couvrant ECCC, l'ACIA et l'ASPC.",
+      "publicationDate": "2026-04-29",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "seu-2026",
+      "name": "Spring Economic Update 2026",
+      "nameFr": "Mise à jour économique de printemps 2026",
+      "url": "https://budget.canada.ca/update-miseajour/2026/home-accueil-en.html",
+      "desc": "Department of Finance Canada's official fiscal update document setting out new federal spending and revenue measures; authoritative primary source on federal fiscal commitments, not on prior-budget baseline comparisons independently.",
+      "descFr": "Document officiel du ministère des Finances du Canada présentant les nouvelles mesures fédérales de dépenses et de revenus.",
+      "publicationDate": "2026-04-27",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "cesd-critical-minerals-2024",
+      "name": "Report 6—The Canadian Critical Minerals Strategy",
+      "nameFr": "Rapport 6 — La Stratégie canadienne sur les minéraux critiques",
+      "url": "https://www.canada.ca/content/dam/oag-bvg/2021-2024-reports/documents/parl_cesd_202411_06_e.pdf",
+      "desc": "Commissioner of the Environment and Sustainable Development audit of Natural Resources Canada's implementation of the Canadian Critical Minerals Strategy; authoritative on federal strategy execution, not on mineral-production rankings independently.",
+      "descFr": "Audit du commissaire à l'environnement et au développement durable sur la mise en œuvre par Ressources naturelles Canada de la Stratégie canadienne sur les minéraux critiques.",
+      "publicationDate": "2024-11-01",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "imf-internal-trade-2019",
+      "name": "Internal Trade in Canada: Case for Liberalization",
+      "nameFr": "Le commerce intérieur au Canada : plaidoyer pour la libéralisation",
+      "url": "https://www.imf.org/-/media/files/publications/wp/2019/wpiea2019158.pdf",
+      "desc": "International Monetary Fund working paper providing the first comprehensive tariff-equivalent estimate of Canada's internal, non-geographic trade barriers; authoritative multilateral-institution research, not a Canadian government publication.",
+      "descFr": "Document de travail du Fonds monétaire international fournissant la première estimation exhaustive de l'équivalent tarifaire des barrières commerciales internes non géographiques du Canada.",
+      "publicationDate": "2019",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "pbo-nato-5-percent-2026",
+      "name": "Fiscal Implications of Meeting NATO's 5% Commitment",
+      "nameFr": "Répercussions financières de l'atteinte de la cible de 5 % de l'OTAN",
+      "url": "https://www.pbo-dpb.ca/en/publications--publications/RP-2526-022-S--fiscal-implications-meeting-nato-5-commitment--repercussions-financieres-atteinte-cible-5-otan",
+      "desc": "Parliamentary Budget Officer costing report analyzing the fiscal path to Canada's declared NATO 5%-of-GDP defence spending commitment by 2035; authoritative independent fiscal-projection source, not a government-published plan.",
+      "descFr": "Rapport de chiffrage du directeur parlementaire du budget analysant la trajectoire budgétaire de l'engagement déclaré du Canada envers la cible de dépenses de défense de 5 % du PIB de l'OTAN d'ici 2035.",
+      "publicationDate": "2026-02-05",
+      "accessDate": "2026-07-27",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    }
+  ],
+  "stillUndated": [
+    {
+      "gap": "Salmonids hold the highest proportion of critical fish stocks and most of those lack rebuilding plans, with 47% of 199 key stocks in the healthy or cautious zones against a federal target of 55% by 2026 and the critical share at its highest on record.",
+      "field": "territory.biosphere",
+      "searched": "Supreme audit institution (CESD fish stocks reporting), DFO's own Sustainability Survey for Fisheries and Precautionary Approach Policy record, recurring report series (annual Status of Key Fish Stocks), advocacy tracking (Oceana Canada Fishery Audit)",
+      "note": "Sources establish the 2009 Precautionary Approach Policy as the rebuilding-plan requirement and confirm 2023 as a record-high critical-zone share, but no primary source states the year salmonids specifically were first flagged as the worst-off critical-stock group lacking rebuilding plans."
+    },
+    {
+      "gap": "Durable diversification away from the United States market has not been built: the sharp 2025 fall in the United States share of merchandise exports partly reflected a surge of unwrought-gold shipments to vaults rather than new industrial markets, and it reversed through the first half of 2026 as exports to the United States rose for four consecutive months.",
+      "field": "economy.externalVulnerability",
+      "searched": "Statistics Canada international trade releases, Bank of Canada Monetary Policy Report, Global Affairs Canada state-of-trade reporting",
+      "note": "Available sources (StatCan trade data, Bank of Canada MPR) measure and describe the 2025 export-share shift but do not identify a prior official date when the lack of durable US-market diversification was first named as a structural shortfall; this reads as a longstanding structural characteristic rather than a dated finding."
+    },
+    {
+      "gap": "The Canadian Human Rights Commission has called for the creation of an independent Indigenous human rights system distinct from its own.",
+      "field": "political.rightsAndChecks",
+      "searched": "Canadian Human Rights Commission statements and annual reports, National Inquiry into Missing and Murdered Indigenous Women and Girls Final Report (Call for Justice 1.7, 2019), Senate Standing Committee on Indigenous Peoples study record",
+      "note": "The National Inquiry's Call for Justice 1.7 (2019) calls for an Indigenous human rights ombudsperson/tribunal, and CHRC issued its own explicit statement that this is 'overdue' in 2024, but no single official source clearly establishes when CHRC itself first called for a distinct Indigenous human rights system as opposed to endorsing the 2019 Call for Justice; dating is ambiguous between these two markers."
+    },
+    {
+      "gap": "Climate adaptation is an unfunded layer on the same assets: municipalities own 64% of the replacement value of roads, 76% of public transit and 82% of active transportation and rely on property taxes and user fees never designed to finance large-scale adaptation, while Indigenous governments face additional constraints rooted in federal funding frameworks.",
+      "field": "capacity.delivery",
+      "searched": "Statistics Canada Core Public Infrastructure Survey releases, Auditor General/CESD climate adaptation audits, Federation of Canadian Municipalities financing reports",
+      "note": "StatCan's infrastructure ownership figures are 2022 measurement data, not a first-identification date; no official source found stating when the mismatch between municipal tax/fee financing tools and adaptation costs was first named as a shortfall."
+    },
+    {
+      "gap": "Some 5.7 million adults had no regular primary care provider in 2024 and meeting current demand would require 49% more family physicians, while family physician supply per capita fell from 11.8 to 11.5 per 10,000 population over five years.",
+      "field": "capacity.publicServices",
+      "searched": "CIHI state of the health workforce reports, Statistics Canada Canadian Community Health Survey, provincial/federal health human resources evaluation reports",
+      "note": "CIHI's 2024 workforce report is the measurement source; no earlier official report was found establishing the year the primary-care access shortfall was first identified as such rather than simply measured each cycle."
+    },
+    {
+      "gap": "Hospitals performed more procedures than in 2019 and still met fewer benchmarks: 68% of hip and 61% of knee replacements were completed within the 26-week benchmark against 75% and 70% in 2019, radiation therapy within 28 days and hip fracture repair within 48 hours each fell three percentage points, and most cancer surgeries and diagnostic imaging remained slower than before the pandemic.",
+      "field": "capacity.publicServices",
+      "searched": "CIHI wait times reporting series (since 2008), 2004 First Ministers' 10-Year Plan to Strengthen Health Care (national wait-time benchmarks), Wait Time Alliance reports",
+      "note": "National wait-time benchmarks trace to the 2004 health accord, but no source in this search directly linked that origin to the current 2019-vs-2024 comparison as a first identification of today's shortfall; treated as undated pending a direct citation."
+    },
+    {
+      "gap": "Limited inpatient bed availability keeps admitted patients in emergency departments and consumes the capacity to treat new arrivals, while shortages of long-term care beds and community supports delay discharge from acute care, backing the whole chain up.",
+      "field": "capacity.publicServices",
+      "searched": "CIHI hospital capacity and alternate level of care reporting, provincial auditor general health system reports, CIHI wait times 2019-2024 report",
+      "note": "No official source was retrieved that states when hospital bed-blocking from inadequate long-term care capacity was first identified as a systemic shortfall; this is described in multiple reports as a longstanding, non-dated structural issue."
+    },
+    {
+      "gap": "Many provinces and territories report educator shortages for minority official-language programmes.",
+      "field": "capacity.publicServices",
+      "searched": "Commissioner of Official Languages annual reports (1983 to present), Canadian Heritage Annual Report on Official Languages, provincial language commissioner reports",
+      "note": "The Commissioner of Official Languages' 2018–2019 annual report references a prior dedicated study on the French second-language teacher shortage, but the search did not locate the specific year that study was published, so no precise first-identification date could be confirmed."
+    },
+    {
+      "gap": "The international student permit cap overshot its own target in the opposite direction, with just under 150,000 permits issued in 2024 against a forecast of about 350,000, and Newfoundland and Labrador and Saskatchewan recording declines of at least 59% where increases of 10% had been projected.",
+      "field": "capacity.steering",
+      "searched": "IRCC 2024 Annual Report to Parliament on Immigration, House of Commons Standing Committee on Citizenship and Immigration report (Reconstituting Canada's International Student Program), ICEF Monitor tracking",
+      "note": "Sources confirm the 2024 target-setting (January 2024) and the subsequent shortfall in approvals were reported through 2025 committee and industry analysis, but no single official source explicitly frames a 'first identification' date distinct from these ongoing measurement updates."
+    }
+  ]
+}

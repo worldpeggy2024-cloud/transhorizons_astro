@@ -1,0 +1,2011 @@
+# Actors extraction — Canada / Canada (CAN)
+# Run date: 2026-07-27 · prompt v1.9 · CLOSED-BOOK (no search)
+# Input: analysis.yaml six-peer substantive fields (_en) + situation.
+# Excluded from input: actors_domestic_*, actors_external_*, capacity_permitting_* (legacy field, superseded by capacity.approvals).
+
+domestic:
+
+  - name: Prime Minister Mark Carney and the federal Cabinet
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, economy.publicFinances, economy.politicalEconomy, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, political.stateStructure, capacity.steering, capacity.approvals, capacity.delivery, capacity.productivity, security.military, security.transnationalExposure, security.diplomacy, situation]
+    currentPositionFromReport: >
+      Mark Carney is Prime Minister leading a Liberal government that reached a majority between
+      elections through five floor crossings and a sweep of three by-elections; it is running a
+      project-approval, internal-trade and defence agenda the report describes as early and mostly
+      unrealised, negotiating under United States tariffs, and resetting relations with China and
+      India while the interference findings against both stand unresolved.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, capacity.steering, capacity.approvals, security.diplomacy, situation]
+      interests: >
+        Converting announced agendas into delivered outcomes — first national-interest designations,
+        the Canada Strong Fund, mutual recognition, the defence pathway — while containing tariff
+        damage without conceding the sectoral duties [capacity.steering][situation].
+      resources: >
+        Fused executive-legislative control of the House agenda, appointment power exercised through
+        the Governor in Council, federal fiscal room (deficit at 2.1% of output, three top-tier
+        ratings, debt held domestically), $108.4 billion in transfers and a $25 billion sovereign
+        fund [political.powerStructure][political.shockAbsorbers][economy.politicalEconomy].
+      constraints: >
+        A bare majority of 172 of which one is the Speaker, with four seats vacant; the Auditor
+        General's finding that programmes and funding are in place but implementation and monitoring
+        are not; and a division of powers that leaves health, education, resources and most
+        infrastructure outside federal control, with a duty to consult gating its own approvals
+        machinery [political.shockAbsorbers][capacity.steering][political.stateStructure].
+      likelyMoves: >
+        Complete the listing decisions targeted for autumn 2026, use the window before the 19 August
+        Section 338 duties for negotiation having announced no counter-measures, and contest the four
+        vacant seats on which the majority rests [capacity.approvals][situation][political.powerStructure].
+      engagementMode: >
+        negotiable / dealable. The report shows it bargaining on every axis at once — with provinces
+        through memoranda of understanding and First Ministers, with Indigenous rights holders through
+        a statutory consultation duty, and with Washington through intensified talks [capacity.steering][situation].
+
+  - name: Liberal Party of Canada (governing caucus)
+    kind: governing party
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.stabilityDrivers, political.shockAbsorbers, capacity.approvals]
+    currentPositionFromReport: >
+      The governing party holds 172 of 343 seats after five floor crossings and three by-election
+      wins, the exact number a majority of the full House requires, and the report locates the
+      binding constraint in internal discipline across an enlarged and ideologically broad caucus
+      rather than in inter-party bargaining.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.stabilityDrivers, political.shockAbsorbers]
+      interests: >
+        Holding the caucus together at a seat count with no margin, and defending the legitimacy of a
+        majority assembled between elections [political.powerStructure][political.shockAbsorbers].
+      resources: >
+        Single-party government without coalition partners, control of the House agenda, and an
+        enlarged caucus including five recent floor-crossers [political.stabilityDrivers].
+      constraints: >
+        Every defection, resignation or by-election loss moves the government onto the Speaker's
+        casting vote; the caucus is described as ideologically broad, which is the same fact read as
+        a discipline problem [political.powerStructure][political.stabilityDrivers].
+      likelyMoves: >
+        Contest the four vacant seats to restore a cushion; the report identifies by-elections as the
+        pivot [political.powerStructure].
+      engagementMode: >
+        negotiable / dealable. As governing caucus it is the government's own bargaining surface —
+        the report says the constraint has shifted from between parties to inside one [political.stabilityDrivers].
+
+  - name: Conservative Party of Canada (Official Opposition)
+    kind: opposition party
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.shockAbsorbers, capacity.approvals]
+    currentPositionFromReport: >
+      With 139 seats the Official Opposition rejects as illegitimate the route by which the government
+      crossed the majority threshold, arguing it carries no democratic mandate, while having supported
+      the One Canadian Economy Act at third reading; it is also the only federal party with a named
+      group in the Senate.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.shockAbsorbers, capacity.approvals]
+      interests: >
+        Denying the government the legitimacy of its majority while remaining aligned with it on major
+        project delivery [political.shockAbsorbers][capacity.approvals].
+      resources: >
+        139 seats, the largest opposition bloc, twelve Senate seats, and — on the immigration
+        question — the sharpest partisan sorting the report records [political.powerStructure][society.cohesion].
+      constraints: >
+        It cannot defeat a government that holds the bare majority threshold, and its own support
+        passed the flagship legislation it might otherwise contest [political.powerStructure][capacity.approvals].
+      likelyMoves: >
+        Contest the vacant seats and keep pressing the mandate argument; the report treats by-election
+        outcomes as the operative variable [political.powerStructure].
+      engagementMode: >
+        negotiable / dealable. The report records it voting with the government on the Building Canada
+        Act while denying its legitimacy — a counterpart on legislation and an opponent on standing [capacity.approvals][political.shockAbsorbers].
+
+  - name: Bloc Québécois
+    kind: opposition party
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, capacity.approvals]
+    currentPositionFromReport: >
+      Holds 21 seats and recorded its opposition to the One Canadian Economy Act at third reading on
+      20 June 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, capacity.approvals]
+      interests: >
+        Contesting federal approvals legislation reaching into areas the report elsewhere describes as
+        provincial jurisdiction [capacity.approvals][political.stateStructure].
+      resources: >
+        21 seats, the third-largest bloc in the House [political.powerStructure].
+      constraints: >
+        Its opposition to the Act was recorded but not decisive, the bill passing with Liberal and
+        Conservative support [capacity.approvals].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. The report shows it as a recorded vote against, with no bargaining
+        relationship described [capacity.approvals].
+
+  - name: New Democratic Party
+    kind: opposition party
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, capacity.approvals]
+    currentPositionFromReport: >
+      Reduced to 5 seats, one of its members having crossed the floor to the government, and recorded
+      its opposition to the One Canadian Economy Act at third reading.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, capacity.approvals]
+      interests: >
+        Opposing the approvals regime on the rights and procedural grounds the report attributes to
+        the recorded opposition [capacity.approvals].
+      resources: >
+        5 seats [political.powerStructure].
+      constraints: >
+        Below the bloc sizes of every other named party and having lost a member to the government
+        benches [political.powerStructure].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. No bargaining leverage is described; the government no longer requires
+        its confidence [political.stabilityDrivers].
+
+  - name: Parliament of Canada (House of Commons and Senate)
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [society.cohesion, political.powerStructure, political.shockAbsorbers, political.constitutionalSubstrate, political.stateStructure, capacity.steering, capacity.approvals, security.transnationalExposure]
+    currentPositionFromReport: >
+      The bicameral legislature holds the enumerated powers of section 91 and the residual power, is
+      the body to which the Auditor General reports and the sole amender of territorial constitutions;
+      it reserved to the House of Commons the determination of a clear question and clear majority
+      under the Clarity Act, passed the One Canadian Economy Act at third reading on 20 June 2025, and
+      both chambers must approve the foreign influence transparency commissioner — while carrying the
+      worst institutional confidence reading the report measures, 28.3% high and 40.0% low.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.stateStructure, capacity.approvals, society.cohesion]
+      interests: >
+        The report attributes institutional rather than strategic interests: exercising the legislative
+        and scrutiny functions the constitutional texts assign it [political.stateStructure][capacity.steering].
+      resources: >
+        Enumerated and residual legislative power, the statutory determination of referendum clarity,
+        exclusive amendment of territorial constitutions, and a confirmation role over the foreign
+        influence commissioner [political.stateStructure][political.constitutionalSubstrate][security.transnationalExposure].
+      constraints: >
+        Executive and legislative control are fused, so a government with the confidence of the House
+        controls its agenda; and public confidence in the institution is the weakest of any measured
+        [political.powerStructure][society.cohesion].
+      likelyMoves: >
+        Process the by-elections in four vacant seats and the confirmation of the commissioner whose
+        office opens 4 August 2026 [political.powerStructure][security.transnationalExposure].
+      engagementMode: >
+        statutorily-independent. Its powers come from the constitutional texts rather than from
+        bargaining, though the fusion of executive and legislature means the government of the day
+        directs its agenda [political.powerStructure][political.stateStructure].
+
+  - name: Senate of Canada
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, security.transnationalExposure]
+    currentPositionFromReport: >
+      The 105-seat appointed chamber stands at 40 Independent Senators Group, 18 Canadian Senators
+      Group, 17 Progressive Senate Group, 12 Conservative Party of Canada, 5 Government
+      Representative's Office and 4 non-affiliated with 9 vacancies; on 7 July 2026 the Prime Minister
+      dropped the non-partisan criterion that had governed appointments since 2016 and reworked the
+      independent advisory board, alongside his first four appointments.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.rightsAndChecks, security.transnationalExposure]
+      interests: report-silent
+      resources: >
+        A co-equal approval role over the foreign influence transparency commissioner, and a
+        composition in which only one group of twelve is tied to a federal party
+        [security.transnationalExposure][political.powerStructure].
+      constraints: >
+        Every seat is filled by appointment on the Prime Minister's recommendation, and the criterion
+        that insulated that process has just been removed; nine seats are vacant, five of them in
+        Quebec [political.powerStructure].
+      likelyMoves: >
+        Receive further appointments under the revised process [political.powerStructure].
+      engagementMode: >
+        hijack-exposed. The report describes the removal of the non-partisan appointment criterion and
+        the reworking of the advisory board as a change in the chamber's character, and notes that the
+        same criterion was retained for Supreme Court appointments at the same moment — the contrast
+        is the report's own [political.powerStructure][political.rightsAndChecks].
+
+  - name: Speaker of the House of Commons
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.shockAbsorbers]
+    currentPositionFromReport: >
+      One of the 172 government members is the Speaker, who by convention votes only to break ties,
+      leaving an operative government bloc of 171 against 167 — so further losses would leave the
+      government's ability to legislate resting on the Speaker's casting vote.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.shockAbsorbers]
+      interests: report-silent
+      resources: >
+        A casting vote that becomes decisive at the seat counts the report describes [political.shockAbsorbers].
+      constraints: >
+        Bound by a convention that restricts the vote to tie-breaking [political.powerStructure].
+      likelyMoves: >
+        The report frames the Speaker's vote as a contingency that activates on further defections,
+        vacancies or by-election losses rather than as an action taken [political.shockAbsorbers].
+      engagementMode: >
+        statutorily-independent. The office operates by convention rather than by bargaining, and the
+        report treats the casting vote as a rule, not a negotiable position [political.powerStructure].
+
+  - name: The Crown (Governor General; Governor in Council)
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [society.composition, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.constitutionalSubstrate, capacity.steering, capacity.approvals]
+    currentPositionFromReport: >
+      Formal executive authority rests with the Crown, represented by the Governor General and
+      exercised in practice by the Prime Minister and Cabinet through the Privy Council; the Governor
+      in Council appoints Supreme Court judges, the Chief of the Defence Staff and the Commissioner of
+      the Royal Canadian Mounted Police and lists national-interest projects by Order — and the Crown
+      is the party that owes the duty to consult, the constitutional relationship of Indigenous nations
+      running to it rather than to the provinces.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.constitutionalSubstrate, society.composition, capacity.approvals]
+      interests: report-silent
+      resources: >
+        Formal appointment and listing powers exercised on ministerial recommendation, and standing as
+        the constitutional counterparty to treaty and title holders
+        [political.rightsAndChecks][capacity.approvals][society.composition].
+      constraints: >
+        Every power is exercised on advice, so the Crown acts as the formal channel of Cabinet
+        decisions; and its own duty to consult has twice been enforced against a provincial initiative
+        [political.powerStructure][political.constitutionalSubstrate].
+      likelyMoves: >
+        Issue the listing Orders the government has targeted for autumn 2026 [capacity.approvals].
+      engagementMode: >
+        veto-holder in one specific sense — the Tsilhqot'in framework requires consent or section 35
+        justification for Crown incursions on title land, so the Crown is the address at which consent
+        is sought and the party whose failure to consult voids provincial process
+        [political.constitutionalSubstrate][political.stabilityDrivers].
+
+  - name: Supreme Court of Canada
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [society.religion, political.rightsAndChecks, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      The final court of appeal, nine judges appointed by the Governor in Council from a shortlist
+      prepared by a non-partisan Independent Advisory Board — the mechanism used in full this year to
+      appoint Justice Glenn Joyal on 30 June 2026; its Secession Reference doctrine and its
+      Tsilhqot'in title ruling govern the questions the report describes as in motion, and the
+      constitutionality of Quebec's laicity legislation is before it.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks, political.constitutionalSubstrate, society.religion]
+      interests: report-silent
+      resources: >
+        Full judicial review as final court of appeal, an appointment process with published criteria
+        and a public parliamentary hearing, and standing doctrine on secession and Aboriginal title
+        that lower courts are applying [political.rightsAndChecks][political.constitutionalSubstrate].
+      constraints: >
+        It decides what reaches it: the laicity statute is shielded from Charter review by the
+        notwithstanding clause, which sets the terms on which that case arrives [society.religion].
+      likelyMoves: >
+        Rule on the laicity reference now before it; the report gives no timetable [society.religion].
+      engagementMode: >
+        judicial-deference. The report records the non-partisan appointment criterion being retained
+        for this court at the same moment it was dropped for the Senate [political.rightsAndChecks].
+
+  - name: Independent Advisory Board for Supreme Court of Canada Judicial Appointments
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [political.rightsAndChecks]
+    reviewFlag: >
+      Named by function rather than by proper name, and appears in one field only; include-or-fold is
+      a judgement call.
+    currentPositionFromReport: >
+      A non-partisan board that assesses applicants against published criteria including functional
+      bilingualism and regional representation, prepares a shortlist of three to five names and
+      publishes a report on each process; it was named on 19 May 2026 for the appointment completed
+      on 30 June.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks]
+      interests: report-silent
+      resources: >
+        Control of the shortlist from which the appointment must be made, and a published report on
+        each process [political.rightsAndChecks].
+      constraints: >
+        It is constituted for each process by the government, and the report notes the equivalent
+        Senate board was reworked and its non-partisan criterion dropped
+        [political.rightsAndChecks][political.powerStructure].
+      likelyMoves: report-silent
+      engagementMode: >
+        statutorily-independent. The report treats its non-partisan character as the thing that
+        distinguishes this process from the Senate one [political.rightsAndChecks].
+
+  - name: Canadian Human Rights Commission
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [political.rightsAndChecks]
+    currentPositionFromReport: >
+      The national human rights institution received over 4,600 inquiries and potential complaints in
+      2025 and accepted more than 960, both five-year highs, with its Chief Commissioner describing
+      the country as at a historic crossroads; it reports that use of force by law enforcement falls
+      disproportionately on Indigenous, Black and racialized people and has called for an independent
+      Indigenous human rights system distinct from its own — while its own A-status accreditation was
+      upheld after a review prompted by civil-society concerns about systemic racial discrimination
+      within the Commission.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks]
+      interests: >
+        Sustaining a complaints and referral function under rising volume, and displacing part of its
+        own mandate toward a separate Indigenous system [political.rightsAndChecks].
+      resources: >
+        Statutory complaints intake, referral power to the Canadian Human Rights Tribunal, an annual
+        public report, and A-status international accreditation [political.rightsAndChecks].
+      constraints: >
+        Record intake against fixed capacity, and a contested internal record on the same
+        discrimination it adjudicates — the report preserves both the accreditation and the concerns
+        that prompted its review [political.rightsAndChecks].
+      likelyMoves: >
+        Continue referring race-based complaints at a higher rate than others and press the case for a
+        distinct Indigenous system [political.rightsAndChecks].
+      engagementMode: >
+        statutorily-independent. It operates by mandate and reports publicly; the report describes it
+        making demands of government rather than bargaining with it [political.rightsAndChecks].
+
+  - name: Canadian Human Rights Tribunal
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [political.rightsAndChecks]
+    reviewFlag: >
+      Named once, as the destination of Commission referrals; no action of its own is described.
+    currentPositionFromReport: >
+      The adjudicative body to which the Canadian Human Rights Commission refers complaints, and to
+      which race-based complaints have been referred at a higher rate than others since 2020.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks]
+      interests: report-silent
+      resources: >
+        Adjudication of complaints referred to it [political.rightsAndChecks].
+      constraints: >
+        Its caseload is set by another body's referral decisions [political.rightsAndChecks].
+      likelyMoves: report-silent
+      engagementMode: >
+        judicial-deference. The report positions it as an adjudicator downstream of the Commission,
+        not as a counterpart [political.rightsAndChecks].
+
+  - name: Auditor General of Canada
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.steering]
+    currentPositionFromReport: >
+      Reporting to Parliament in May 2026, the Auditor General found that programmes are in place,
+      funding is being delivered and risks are known, but that weaknesses in implementation and
+      monitoring hold back results — adding that this is not a new pattern and repeats concerns raised
+      the previous year; the specific audits cover Royal Canadian Mounted Police recruitment, the
+      federal pay-system replacement, the student permit cap, Indigenous Services Canada's New Fiscal
+      Relationship commitments and avian influenza preparedness.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.steering]
+      interests: >
+        Getting implementation and monitoring weaknesses closed rather than restated — the report
+        records the finding being repeated year on year [capacity.steering].
+      resources: >
+        A statutory audit mandate across departments, direct reporting to Parliament, and quantified
+        findings that the report treats as the authoritative account of the state's own delivery
+        [capacity.steering].
+      constraints: >
+        It audits and reports; it does not implement, and the report shows the same pattern recurring
+        after the previous year's findings [capacity.steering].
+      likelyMoves: >
+        Continue auditing the domains named; the report records one instance of learning, the phasing
+        out of the flexible posting plan from July 2025 [capacity.steering].
+      engagementMode: >
+        statutorily-independent. It reports to Parliament by mandate and its findings are not
+        negotiated with the departments audited [capacity.steering].
+
+  - name: Parliamentary Budget Officer
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, economy.publicFinances, economy.externalVulnerability, political.shockAbsorbers, capacity.steering, capacity.delivery, security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Publishes independent projections that run above the government's own — a 2025-26 deficit of
+      2.2% against 2.1%, deficits averaging around $64 billion a year, debt reaching 42.5% by 2030-31
+      — treats the 2025-26 United States tariff measures as permanent in its growth and fiscal
+      projections, records that no pathway projection to the 5% defence commitment has been published
+      and prices that commitment at $159.1 billion by 2035-36, and documents the Trans Mountain
+      Expansion cost escalation.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.publicFinances, security.military, capacity.delivery, economy.externalVulnerability]
+      interests: >
+        Maintaining an independent costed account against which the government's own numbers can be
+        read [economy.publicFinances][security.military].
+      resources: >
+        A statutory costing mandate, published projections on deficit, debt, defence and megaproject
+        costs, and the standing to treat a policy as permanent where the government does not
+        [economy.externalVulnerability][security.military].
+      constraints: >
+        It projects and prices; the report shows its defence pathway finding standing unanswered
+        rather than acted on [security.military][capacity.steering].
+      likelyMoves: >
+        Continue publishing projections that diverge modestly upward from the government's, and to
+        price commitments that lack a published route [economy.publicFinances][security.military].
+      engagementMode: >
+        statutorily-independent. The report uses its numbers as the counterweight to the government's
+        own, with no bargaining relationship described [economy.publicFinances].
+
+  - name: Bank of Canada
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, economy.publicFinances, political.shockAbsorbers]
+    currentPositionFromReport: >
+      Held its policy rate at 2.25% on 15 July 2026, a sixth consecutive hold, after a cumulative 275
+      basis points of cuts since early 2024; it judges the setting appropriate to sustain recovery and
+      return inflation to its 2% target, and continues to frame Middle East oil prices feeding through
+      supply chains as a material pressure on the outlook.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.publicFinances, political.shockAbsorbers]
+      interests: >
+        Returning inflation to the 2% target while sustaining a recovery the report describes as
+        stalled [economy.publicFinances][economy.realEconomy].
+      resources: >
+        The policy rate, preferred core measures, and the credibility of a target the report treats as
+        the reference point [economy.publicFinances].
+      constraints: >
+        Monetary room is thinner than it was — the rate has already fallen from 5.00% to 2.25%, so far
+        less room remains to cut in a fresh downturn — and the driver of the inflation it faces is
+        external and unresolved [political.shockAbsorbers][economy.publicFinances].
+      likelyMoves: >
+        Hold while the oil-price channel remains unresolved; the report records six consecutive holds
+        and no signalled change [economy.publicFinances].
+      engagementMode: >
+        statutorily-independent. The report describes it setting rates against a target, with no
+        political interference or capture risk recorded [economy.publicFinances][political.shockAbsorbers].
+
+  - name: Statistics Canada
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [society.demographics, society.composition, economy.realEconomy, capacity.productivity]
+    currentPositionFromReport: >
+      The national statistical office supplies the population, composition, language, productivity and
+      digital-economy measures the report rests on, and constrains their use directly — flagging
+      population estimates as subject to larger-than-usual upward revision and stating that the 2021
+      composition data cannot measure any group's growth or decline; its May 2026 review adds that the
+      industries dependent on United States export demand concentrate the country's most productive
+      jobs.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [society.demographics, society.composition, capacity.productivity]
+      interests: report-silent
+      resources: >
+        The census and the national accounts, and the standing to state what its own data cannot
+        support [society.composition][society.demographics].
+      constraints: >
+        Question changes break comparability, and its own estimates carry flagged revision risk
+        [society.composition][society.demographics].
+      likelyMoves: report-silent
+      engagementMode: >
+        statutorily-independent. The report shows it limiting the inferences others may draw from its
+        series rather than negotiating over them [society.composition].
+
+  - name: Canada Revenue Agency
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [political.stateStructure]
+    currentPositionFromReport: >
+      Collects and administers income taxes for every province and territory except Quebec's personal
+      and corporate income taxes and Alberta's corporate income tax, so Quebec taxpayers file separate
+      federal and provincial returns where taxpayers elsewhere file one.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stateStructure]
+      interests: report-silent
+      resources: >
+        Tax collection agreements covering all provinces and territories bar the two named exceptions
+        [political.stateStructure].
+      constraints: >
+        Its coverage is set by agreement, and two jurisdictions have opted out in part
+        [political.stateStructure].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. The report presents it as the administrative expression of federal
+        fiscal arrangements, not as an actor with a position [political.stateStructure].
+
+  - name: Major Projects Office (with its Indigenous Advisory Council)
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.steering, capacity.approvals]
+    currentPositionFromReport: >
+      Created by the Building Canada Act and launched on 29 August 2025 with an Indigenous Advisory
+      Council, it coordinates approvals on a one-project-one-review basis with willing provinces
+      under a stated maximum two-year timeline; fifteen projects had been referred as of 21 May 2026
+      and none has been designated, the listing process having been initiated only on 24 June 2026
+      with decisions targeted for autumn — so the two-year clock has not started running on any
+      project, and a parallel stream handles transformative strategies, under one of which the
+      proposed West Coast Oil Pipeline was handed to the office on 2 July 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.approvals, capacity.steering]
+      interests: >
+        Getting the first designations made so the mechanism it exists to run can be tested
+        [capacity.approvals].
+      resources: >
+        A statutory route by which listed projects receive the Schedule 2 approvals automatically
+        under a single binding conditions document deemed to be a permit under every applicable
+        statute [capacity.approvals].
+      constraints: >
+        Referral carries no legal effect; designation requires consultation with provinces,
+        territories and Indigenous rights holders, a thirty-day Gazette notice and an Order of the
+        Governor in Council, and the Act carries a five-year sunset on new designations
+        [capacity.approvals].
+      likelyMoves: >
+        Complete consultations on Grays Bay, the Mackenzie Valley Highway and the deep geologic
+        repository toward listing decisions targeted for autumn 2026 [capacity.approvals].
+      engagementMode: >
+        executive-subordinate. It coordinates but does not decide — listing rests with the Governor in
+        Council on the responsible Minister's recommendation [capacity.approvals].
+
+  - name: Indigenous Services Canada
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.steering]
+    currentPositionFromReport: >
+      Found by the Auditor General not to have effectively implemented, monitored or assessed the
+      initiatives it had committed to under the New Fiscal Relationship.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.steering]
+      interests: report-silent
+      resources: >
+        Carriage of the federal commitments made under the New Fiscal Relationship [capacity.steering].
+      constraints: >
+        The audit finding is one of implementation and monitoring failure, the same pattern the
+        Auditor General reports across departments [capacity.steering].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It appears as a department audited against its own commitments, not as
+        a counterpart [capacity.steering].
+
+  - name: Global Affairs Canada
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Has set a target of increasing exports to China by 50% by 2030, alongside the economic and trade
+      cooperation roadmap issued under the declared strategic partnership.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, economy.externalVulnerability]
+      interests: >
+        Commercial diversification away from a United States market that takes roughly three-quarters
+        of merchandise exports [security.diplomacy][economy.externalVulnerability].
+      resources: >
+        Fifteen free trade agreements covering 51 countries, and the bilateral roadmaps with China and
+        India [economy.externalVulnerability][security.diplomacy].
+      constraints: >
+        Both diversification partners are the two states the interference inquiry named as most
+        damaging to Canadian democratic institutions, and the report treats that as the central
+        tension [security.diplomacy][security.posture].
+      likelyMoves: >
+        Pursue the China export target and the comprehensive economic partnership negotiations with
+        India [security.diplomacy].
+      engagementMode: >
+        executive-subordinate. It executes the government's diversification policy; the report
+        attributes the political decisions to the Prime Minister and Cabinet [security.diplomacy].
+
+  - name: Natural Resources Canada
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [territory.minerals]
+    currentPositionFromReport: >
+      Maintains the federal Critical Minerals List of 34 minerals and metals, first released in 2021
+      and updated in 2024, and counts 171 advanced critical-mineral projects alongside operating mines
+      and 31 processing facilities.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [territory.minerals, capacity.productivity]
+      interests: >
+        Converting a broad endowment into developed capacity — the critical minerals strategy
+        explicitly targets the missing domestic processing and refining scale
+        [territory.minerals][capacity.productivity].
+      resources: >
+        The list itself, which defines what counts as critical, and the project inventory
+        [territory.minerals].
+      constraints: >
+        Canada is among the top five global producers of 10 of the 34 minerals but has not built the
+        corresponding processing capacity, and much of the endowment is undeveloped
+        [capacity.productivity][territory.minerals].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It classifies and counts; the report locates the decisions elsewhere
+        [territory.minerals].
+
+  - name: Department of Justice
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [political.constitutionalSubstrate]
+    reviewFlag: >
+      Named once, for defining legislative bijuralism; thin role, include-or-fold is a judgement call.
+    currentPositionFromReport: >
+      Defines legislative bijuralism as the requirement that each language version of a federal
+      enactment take both legal traditions into account where it touches provincial private law.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Authorship of the harmonisation terminology and the interpretive rules added to the
+        Interpretation Act [political.constitutionalSubstrate].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It states the doctrine the federal legislative machinery operates
+        under; no bargaining relationship is described [political.constitutionalSubstrate].
+
+  - name: Department of National Defence and the Canadian Armed Forces
+    kind: military
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, security.military]
+    currentPositionFromReport: >
+      An all-volunteer single unified service under the Chief of the Defence Staff — Army, Navy, Air
+      Force and, since September 2024, Cyber Command — at 67,827 Regular Force against an authorised
+      71,500, with recruitment beating target for a second year; spending crossed the 2% alliance
+      benchmark in 2025-26 at more than $63 billion counted across several departments, and the force
+      is framework nation for Multinational Brigade Latvia with roughly 2,000 personnel there under
+      Operation REASSURANCE, renewed to 2029. Under the National Defence Act the Minister has
+      management and direction of the force and the Chief of the Defence Staff its control and
+      administration under that direction.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, political.stabilityDrivers, security.posture]
+      interests: >
+        Closing the personnel gap the report identifies as the binding constraint on capability, and
+        sustaining the alliance contribution that gives a mid-sized force standing [security.military].
+      resources: >
+        A budget past the 2% benchmark, a Defence Investment Agency created to accelerate procurement,
+        $38.6 billion over twenty years for continental surveillance modernisation, and framework-nation
+        status in Latvia [security.military].
+      constraints: >
+        3,673 below authorised Regular Force strength and the Reserve some 5,000 short; projection
+        limited to brigade scale within a coalition; no overseas bases; and the larger 2035 commitment
+        carries no published pathway [security.military][security.posture].
+      likelyMoves: >
+        Enrol against a raised 8,200 objective for 2026-27 and continue Operation REASSURANCE to its
+        2029 renewal horizon [security.military].
+      engagementMode: >
+        executive-subordinate. Civilian control is statutory and unambiguous, all orders giving effect
+        to government decisions issuing by or through the Chief of the Defence Staff, and the report
+        records no history of military intervention in politics [political.stabilityDrivers].
+
+  - name: Defence Investment Agency
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Established in October 2025 to accelerate defence procurement.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: >
+        Faster procurement, against a spending trajectory the report says has no published pathway
+        [security.military].
+      resources: report-silent
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. Created by government to execute procurement; no independent standing
+        is described [security.military].
+
+  - name: Communications Security Establishment
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Operates in close partnership with Canadian Armed Forces Cyber Command, which since September
+      2024 is the single departmental authority for cyber operations integrating signals intelligence
+      and joint electronic warfare.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.transnationalExposure]
+      interests: report-silent
+      resources: >
+        Signals intelligence capability integrated into the military cyber domain [security.military].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It appears as a partner agency inside the defence cyber structure
+        [security.military].
+
+  - name: Canadian Security Intelligence Service (with the Integrated Terrorism Assessment Centre)
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.transnationalExposure]
+    currentPositionFromReport: >
+      Reports counter-interference, transnational repression and prevention of cyber intrusion by
+      foreign states among its principal operational lines; its Director sets the terrorism threat
+      level on the advice of the Integrated Terrorism Assessment Centre, reassessed at least every
+      four months and at Medium since October 2014.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.internal]
+      interests: >
+        Countering the interference the inquiry adjudicated as Canada's largest state-adjacent
+        exposure [security.transnationalExposure].
+      resources: >
+        Statutory intelligence collection, the threat-level determination, and a public reporting line
+        [security.internal][security.transnationalExposure].
+      constraints: >
+        The legislative instrument built to counter interference — the registry and its commissioner —
+        was still not operating more than two years after royal assent
+        [security.transnationalExposure][security.posture].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It assesses and advises within the state; the report describes no
+        external bargaining role [security.internal].
+
+  - name: Royal Canadian Mounted Police
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, capacity.steering, security.internal]
+    currentPositionFromReport: >
+      Federal police force under the direction of the Minister of Public Safety, also serving under
+      contract as the provincial or territorial service in every province except Ontario and Quebec,
+      in all three territories and in many municipalities; the March 2026 audit found it had made
+      recruitment a top priority yet set targets below its needs and missed them — a shortfall of at
+      least 3,400 officers as of September 2025, vacancy rates above its own critical threshold in
+      nine of eleven jurisdictions and target processing times missed on 97% of applications. Its
+      doctrine holds the Commissioner accountable to the Minister but operationally independent.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, capacity.steering, political.stabilityDrivers]
+      interests: >
+        Closing a staffing shortfall that runs through contract policing obligations it cannot decline
+        [capacity.steering][security.internal].
+      resources: >
+        Federal, provincial, territorial and municipal policing mandates, and appointment of the
+        Commissioner by the Governor in Council with statutory operational independence in core
+        law-enforcement functions [security.internal][political.stabilityDrivers].
+      constraints: >
+        3,400 officers short with cancelled training classes, and one remedy — the 2023 flexible
+        posting plan — that attracted applicants while worsening chronic vacancies and began being
+        phased out in July 2025 [capacity.steering].
+      likelyMoves: >
+        Continue phasing out the flexible posting plan and recruiting against revised targets
+        [capacity.steering].
+      engagementMode: >
+        executive-subordinate on management and direction, statutorily-independent in core
+        law-enforcement functions — the report draws that line precisely, the Commissioner accountable
+        to the Minister but free from the direction of elected officials in policing decisions
+        [political.stabilityDrivers].
+
+  - name: Criminal Intelligence Service Canada
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.transnationalExposure]
+    currentPositionFromReport: >
+      Assessed and rated 493 organised crime groups in 2025 — eight national high-level threats, 100
+      medium, 385 low — alongside more than 560 street gangs, finding 93% involved in drug
+      manufacturing or distribution, the most threatening maintaining connections across some fifty
+      countries, an escalating threat to Indigenous communities, and a shifting Arctic security
+      landscape as an emerging risk to remote communities.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, security.transnationalExposure]
+      interests: report-silent
+      resources: >
+        A national threat-assessment function covering organised crime groups and street gangs
+        [security.internal].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It assesses and rates; enforcement and listing decisions are taken
+        elsewhere in the state [security.internal].
+
+  - name: Canada Border Services Agency
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.transnationalExposure]
+    currentPositionFromReport: >
+      Made over 2,600 narcotics seizures in a month-long cross-country interception operation in early
+      2025, of which about 67.5% involved drugs entering Canada from the United States and 17.5%
+      leaving for it, and established a dedicated trade transparency unit to detect illicit financial
+      flows moving through international trade.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, security.transnationalExposure]
+      interests: >
+        Interdiction at ports of entry on a border managed through bilateral law enforcement
+        cooperation rather than militarisation [security.internal].
+      resources: >
+        Operational control at ports of entry, a $1.3 billion border plan, a joint operational
+        intelligence cell and the trade transparency unit
+        [security.internal][security.transnationalExposure].
+      constraints: >
+        The enforcement data cuts against the direction commonly assumed, with most seized narcotics
+        entering rather than leaving — the pressure it answers is framed abroad
+        [security.internal].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. It executes border policy set by the government [security.internal].
+
+  - name: Foreign Influence Transparency Commissioner (Anton Boegman, proposed)
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure]
+    currentPositionFromReport: >
+      Named in March 2026 by the Minister of Public Safety as proposed commissioner under an
+      appointment procedure requiring consultation with the parliamentary leaders of all recognised
+      parties and approval by both chambers; the office and the registry of foreign influence
+      activities are to open on 4 August 2026, more than two years after the enabling legislation
+      received royal assent.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.posture]
+      interests: >
+        Standing up a registry that the report describes as the state's answer to the interference
+        finding [security.transnationalExposure].
+      resources: >
+        An independent statutory office, a registry of foreign influence activities, and an
+        appointment deliberately insulated by cross-party consultation and bicameral approval
+        [security.transnationalExposure].
+      constraints: >
+        The office does not yet exist operationally; the report notes the instrument created to
+        counter Canada's formally identified principal external threat was not operating two years
+        after the legislation passed [security.posture].
+      likelyMoves: >
+        Open the office and the registry on 4 August 2026 [security.transnationalExposure].
+      engagementMode: >
+        statutorily-independent. The report emphasises the insulation of the appointment as the
+        design feature [security.transnationalExposure].
+
+  - name: Public Inquiry into Foreign Interference (Justice Marie-Josée Hogue)
+    kind: commission of inquiry
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.transnationalExposure, security.diplomacy, security.posture]
+    currentPositionFromReport: >
+      Concluded in its final report of January 2025 that the People's Republic of China was the most
+      active perpetrator of foreign interference targeting Canadian democratic institutions and India
+      the second most active, and that transnational repression against diaspora communities in Canada
+      was serious enough to warrant a warning beyond the inquiry's own mandate.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.diplomacy]
+      interests: report-silent
+      resources: >
+        A concluded public adjudication that the report treats as the authoritative naming of the two
+        states involved, and which it uses as the benchmark against which the subsequent commercial
+        resets are read [security.diplomacy][security.posture].
+      constraints: >
+        Its mandate has ended; the transnational repression warning was issued beyond that mandate
+        [security.transnationalExposure].
+      likelyMoves: >
+        Not applicable — the inquiry has reported; what remains live is the implementation of the
+        legislative response [security.transnationalExposure].
+      engagementMode: >
+        report-silent. A concluded inquiry is not a counterpart; the report uses its findings as a
+        standing benchmark against current diplomacy [security.diplomacy].
+
+  - name: Government of Alberta (the Premier)
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [society.composition, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, political.stateStructure, capacity.approvals]
+    currentPositionFromReport: >
+      Has set a provincial referendum for 19 October 2026 carrying ten questions under Orders in
+      Council, the tenth asking whether Alberta should remain a province or commence the legal process
+      toward a binding separation vote — non-binding, with the Premier saying she supports remaining
+      and will campaign for that; it amended its Citizen Initiative Act to remove the constitutionality
+      requirement and the chief electoral officer's referral power after courts twice halted the
+      citizen-petition route, is appealing the ruling as wrong in law, proposed a joint
+      federal-provincial committee to approve superior court appointments which the legal profession
+      opposed as constitutionally impermissible, and is party to the memorandum of understanding
+      committing the federal government in advance to declare the proposed West Coast Oil Pipeline a
+      project of national interest.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, political.constitutionalSubstrate, political.rightsAndChecks, capacity.approvals]
+      interests: >
+        Enlarging provincial control at the federal boundary — over the constitutional relationship,
+        over judicial appointments within the province, and over the route to tidewater for its energy
+        sector [political.stabilityDrivers][political.rightsAndChecks][capacity.approvals].
+      resources: >
+        Order-in-Council control of the ballot without a citizen petition, entrenched provincial
+        jurisdiction over resources under section 92A, the energy cluster the report locates in the
+        province, and a federal commitment made in advance on the pipeline
+        [political.stabilityDrivers][political.stateStructure][economy.politicalEconomy][capacity.approvals].
+      constraints: >
+        Two rulings of the Court of King's Bench hold the Crown owed and breached a duty to consult and
+        that secession would necessarily affect Treaties 7 and 8; the Secession Reference bars
+        unilateral secession; and the Clarity Act reserves the clarity determination to the House of
+        Commons [political.constitutionalSubstrate].
+      likelyMoves: >
+        Run the 19 October 2026 referendum and pursue the appeal [political.shockAbsorbers][political.constitutionalSubstrate].
+      engagementMode: >
+        negotiable / dealable on projects — the report records it signing a memorandum of understanding
+        with the federal government — while on the constitutional question the report describes it
+        working around rather than with federal and judicial process
+        [capacity.approvals][political.stabilityDrivers].
+
+  - name: Government of Quebec
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [society.language, society.religion, economy.politicalEconomy, political.constitutionalSubstrate, political.stateStructure, security.transnationalExposure]
+    currentPositionFromReport: >
+      Holds the most extensive asymmetric arrangements in the federation — civil law, its own pension
+      plan under section 94A, sole authority to select economic immigrants and resettled refugees with
+      an explicit veto over those destined for Quebec under the 1991 Canada-Québec Accord, and its own
+      personal and corporate income tax administration; it legislates on language through the Charter
+      of the French language and on secularism through the Act respecting the laicity of the State,
+      shielded from Charter review by the notwithstanding clause and widened in April 2026 beyond
+      state employment into the public domain, with its constitutionality now before the Supreme
+      Court; it received a $750 million federal transfer for asylum costs incurred between 2021 and
+      2024.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stateStructure, society.religion, society.language, security.transnationalExposure]
+      interests: >
+        Maintaining and extending a distinct jurisdictional space — language, secularism, immigration
+        selection, civil law and tax administration — against a demographic movement in which French
+        grows in number and falls in share [political.stateStructure][society.language].
+      resources: >
+        Constitutionally entrenched jurisdiction, the notwithstanding clause, an immigration accord no
+        other province holds with an annual federal grant attached, separate tax administration, and
+        Hydro-Québec as a pillar of the provincial economy
+        [political.stateStructure][society.religion][economy.politicalEconomy].
+      constraints: >
+        The laicity statute is before the Supreme Court; the population whose first official language
+        is English has passed one million in the province; and its own asylum costs required a federal
+        transfer [society.religion][society.language][security.transnationalExposure].
+      likelyMoves: >
+        Bring the reinforcement Act's restrictions on collective religious practice in publicly
+        controlled spaces into force from September 2026 while the reference proceeds [society.religion].
+      engagementMode: >
+        veto-holder. The report describes an explicit veto over resettled refugees destined for the
+        province, paramountcy of provincial law under section 94A, and the notwithstanding clause used
+        to place a statute beyond Charter review [political.stateStructure][society.religion].
+
+  - name: Territorial governments (Yukon, Northwest Territories, Nunavut)
+    kind: subnational government
+    liveActorStatus: current
+    reviewFlag: >
+      Named largely for their constitutional status rather than for actions; the devolution actions
+      cited are 2003 and 2014. Treated as one category because the report treats them as a class.
+    fieldsCitedIn: [political.stateStructure, capacity.approvals]
+    currentPositionFromReport: >
+      Hold jurisdiction delegated by federal statute rather than entrenched, with no inherent authority
+      beyond what Parliament confers, are not parties to the amending formula, and would require a
+      constitutional amendment carrying Parliament and seven provinces to gain provincial status;
+      devolution transferred public lands and resources to Yukon in 2003 and the Northwest Territories
+      in 2014 without altering that footing, and territorial governments appear among the proponents or
+      co-proponents of four of the fifteen projects referred to the Major Projects Office.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stateStructure, capacity.approvals, territory.climate]
+      interests: >
+        Closing the gap between delegated and entrenched jurisdiction, and advancing northern
+        infrastructure projects in which they are proponents
+        [political.stateStructure][capacity.approvals].
+      resources: >
+        Powers largely equivalent to provincial ones including property and civil rights, control of
+        public lands where devolved, Territorial Formula Financing worth $5.8 billion, and proponent
+        status in the approvals process [political.stateStructure][capacity.approvals].
+      constraints: >
+        Their constitutions are federal statutes amendable by Parliament alone; they are outside the
+        amending formula; and permafrost thaw destabilises infrastructure and community access across
+        the territories [political.stateStructure][territory.climate].
+      likelyMoves: >
+        Advance the referred northern projects — Grays Bay and the Mackenzie Valley Highway are among
+        those whose listing process was initiated on 24 June 2026 [capacity.approvals].
+      engagementMode: >
+        negotiable / dealable, but from a delegated position: the report is explicit that they hold no
+        inherent authority and cannot alter their own constitutional footing [political.stateStructure].
+
+  - name: First Ministers (federal, provincial and territorial)
+    kind: other
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.productivity]
+    currentPositionFromReport: >
+      At their meeting of 23 July 2026, their fourteenth since March 2025, First Ministers agreed to
+      work toward an agreement in principle by the end of 2026 on model mutual recognition
+      legislation — a commitment to negotiate rather than a completed instrument.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.productivity, political.stateStructure]
+      interests: >
+        Reducing internal trade barriers the International Monetary Fund prices at the equivalent of a
+        9% national tariff [capacity.productivity].
+      resources: >
+        A standing forum meeting frequently — fourteen times in under eighteen months — and the
+        combined jurisdiction required for mutual recognition to work [capacity.productivity].
+      constraints: >
+        It can only commit to negotiate: much of the outstanding work lies in provincial and
+        territorial jurisdiction, labour mobility provisions are still under negotiation, and the
+        alcohol framework due in May 2026 was not delivered [capacity.productivity].
+      likelyMoves: >
+        Work toward the agreement in principle by end-2026 [capacity.productivity].
+      engagementMode: >
+        negotiable / dealable. The forum is bargaining itself; the report is precise that what emerged
+        is a commitment to negotiate [capacity.productivity].
+
+  - name: Chief Electoral Officer of Alberta
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Approved an initiative petition for a referendum on Alberta independence, an approval the Court
+      of King's Bench set aside; the province had by then amended its Citizen Initiative Act to remove
+      both the requirement that proposed questions be constitutional and the chief electoral officer's
+      power to refer them to the courts.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Statutory administration of the initiative petition process [political.stabilityDrivers].
+      constraints: >
+        The referral power that let it send questions to the courts has been removed by provincial
+        statute, and its approval decision was set aside judicially
+        [political.stabilityDrivers][political.constitutionalSubstrate].
+      likelyMoves: report-silent
+      engagementMode: >
+        hijack-exposed. The report records a provincial government legislating away this officer's
+        power to refer proposed questions to the courts in the middle of a live dispute over those
+        questions [political.stabilityDrivers].
+
+  - name: Court of King's Bench of Alberta
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Found in December 2025 that a proposed separation question contravened the Charter and historic
+      treaties, and on 13 May 2026 in Athabasca Chipewyan First Nation v Alberta (Chief Electoral
+      Officer) set aside approval of a petition on substantially the same question, holding that the
+      Crown owed and had breached a duty to consult and that secession would necessarily affect
+      Treaties 7 and 8; the province is appealing.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.stabilityDrivers]
+      interests: report-silent
+      resources: >
+        Superior court jurisdiction to set aside the administrative approval on which the
+        citizen-petition route depended, twice [political.constitutionalSubstrate].
+      constraints: >
+        Its rulings reached the petition route only; the province placed its own question on the ballot
+        by Order in Council, which requires no petition [political.stabilityDrivers].
+      likelyMoves: >
+        The report records the appeal as pending and gives no timetable [political.constitutionalSubstrate].
+      engagementMode: >
+        judicial-deference. The report treats its holding as establishing the operative doctrine that
+        Indigenous treaty rights are a precondition to initiating a secession process, not a
+        consideration within one [political.constitutionalSubstrate].
+
+  - name: Assembly of First Nations
+    kind: indigenous body
+    liveActorStatus: current
+    fieldsCitedIn: [society.composition, political.stabilityDrivers]
+    currentPositionFromReport: >
+      Answered Alberta's separation-referendum proposal in 2025 by invoking the numbered Treaties and
+      calling for constitutional review of the 1930 Natural Resources Transfer Agreement.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [society.composition, political.stabilityDrivers, political.constitutionalSubstrate]
+      interests: >
+        Establishing that provincial autonomy or secession cannot proceed over treaty rights, and
+        reopening the instrument by which prairie provinces hold resource control
+        [society.composition][political.stabilityDrivers].
+      resources: >
+        Apex national standing, section 35 recognition of existing Aboriginal and treaty rights, and
+        the argument that the 1930 transfer cannot lawfully alienate what the numbered Treaties never
+        surrendered [political.constitutionalSubstrate].
+      constraints: >
+        Its call for constitutional review is addressed to the federal government; the report records
+        no federal response [political.stabilityDrivers].
+      likelyMoves: >
+        Continue pressing the treaty argument against the Alberta process [political.stabilityDrivers].
+      engagementMode: >
+        veto-holder. The report's operative doctrine is that Indigenous treaty rights are a
+        constitutional precondition to initiating a secession process, and the constitutional
+        relationship runs to the Crown rather than the province
+        [political.constitutionalSubstrate][society.composition].
+
+  - name: Athabasca Chipewyan, Piikani, Siksika and Blood Tribe (Kainai) First Nations
+    kind: indigenous body
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Brought the case in which the Court of King's Bench of Alberta set aside the Chief Electoral
+      Officer's approval of the separation-referendum petition on 13 May 2026, the court holding that
+      the Crown owed and had breached a duty to consult them and that Alberta's secession would
+      necessarily affect Treaties 7 and 8.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.stabilityDrivers]
+      interests: >
+        Preventing a secession process from proceeding without their consent, on treaty grounds
+        [political.constitutionalSubstrate].
+      resources: >
+        Treaties 7 and 8, section 35 protection, standing to litigate, and two successful rulings
+        [political.constitutionalSubstrate][political.stabilityDrivers].
+      constraints: >
+        The litigation reached the petition route only, and the province both amended the enabling
+        statute and placed its own question on the ballot by Order in Council, then appealed
+        [political.stabilityDrivers].
+      likelyMoves: >
+        Defend the ruling on appeal [political.constitutionalSubstrate].
+      engagementMode: >
+        veto-holder. The report states the operative doctrine plainly — treaty rights are a
+        precondition to initiating the process, not a consideration inside it
+        [political.constitutionalSubstrate].
+
+  - name: Cree Nation (Cree Nation Government)
+    kind: indigenous body
+    liveActorStatus: current
+    fieldsCitedIn: [political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Party to the lineage of instruments running from the James Bay and Northern Quebec Agreement of
+      1975 through 24 complementary agreements to the Paix des Braves of 2002 with Quebec, the Federal
+      New Relationship Agreement of 2008, and the Agreement on Cree Nation Governance of 2017 with its
+      companion Cree Constitution.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, society.composition]
+      interests: >
+        Operating a governance order built by successive negotiated instruments rather than by
+        litigation [political.constitutionalSubstrate].
+      resources: >
+        A modern comprehensive treaty covering roughly one million square kilometres, a constitution of
+        its own, and bilateral agreements with both Canada and Quebec [political.constitutionalSubstrate].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, and demonstrably so: the report records a fifty-year sequence of
+        agreements with both orders of government, which is a different mode from the litigation route
+        the report describes elsewhere [political.constitutionalSubstrate].
+
+  - name: Tsilhqot'in Nation
+    kind: indigenous body
+    liveActorStatus: current
+    reviewFlag: >
+      Appears only through the 2014 case that bears its name; live as title-holder, but the mention
+      could be read as doctrinal scaffolding.
+    currentPositionFromReport: >
+      Holds the first declaration of Aboriginal title in Canadian history, over 1,750 square
+      kilometres, from Tsilhqot'in Nation v. British Columbia, 2014 SCC 44 — the ruling establishing
+      that title rests on sufficient, continuous and exclusive pre-sovereignty occupation extending to
+      territory, that Crown incursions on title land require consent or must satisfy the section 35
+      justification framework, and that the province had breached its duty to consult.
+    fieldsCitedIn: [political.constitutionalSubstrate]
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Declared territorial title and the consent requirement attached to it [political.constitutionalSubstrate].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        veto-holder. The report states that Crown incursions on title land require consent or must
+        satisfy the section 35 justification framework [political.constitutionalSubstrate].
+
+  - name: First Nations political territorial organisations
+    kind: indigenous body
+    liveActorStatus: current
+    reviewFlag: >
+      The report names this category in prose but names no individual organisation; the only one
+      identifiable is Chiefs of Ontario, and only through the cited source id. Aggregation here runs
+      ahead of citation, which the prompt otherwise forbids.
+    fieldsCitedIn: [capacity.steering, capacity.approvals]
+    currentPositionFromReport: >
+      Have opposed the Building Canada Act sustainedly on rights and procedural grounds, while federal
+      memoranda of understanding with provinces advanced individual projects.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.approvals, capacity.steering]
+      interests: >
+        Contesting an approvals regime that consolidates federal permits into a single conditions
+        document, on both rights and process [capacity.approvals].
+      resources: >
+        A statutory consultation duty at three separate points — before the national-interest
+        determination, before the conditions document issues, and before any amendment — and a doubled
+        $10 billion Indigenous Loan Guarantee Program enabling equity participation
+        [capacity.approvals][capacity.steering].
+      constraints: >
+        The Act passed with Liberal and Conservative support; and four of the fifteen referred projects
+        have Indigenous or territorial proponents, which the report says complicates any simple account
+        of Indigenous opposition [capacity.approvals].
+      likelyMoves: >
+        Engage the consultations initiated on 24 June 2026 toward the autumn listing decisions
+        [capacity.approvals].
+      engagementMode: >
+        veto-holder in the statutory sense — consultation is a precondition the Act itself imposes at
+        three points, and the courts have twice enforced the equivalent duty against a provincial
+        initiative [capacity.approvals][political.constitutionalSubstrate].
+
+  - name: Canada Strong Fund
+    kind: state-owned enterprise
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Announced 27 April 2026 as Canada's first federal sovereign wealth fund, seeded with $25 billion
+      over three years and structured as an arm's-length Crown corporation taking minority equity
+      positions alongside private capital in energy, critical minerals, agriculture, infrastructure and
+      advanced manufacturing; designed to co-invest rather than displace private capital or nationalise
+      assets, and contested — critics question whether a debt-financed fund taking equity in favoured
+      projects is investment or industrial policy by another name.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, capacity.productivity]
+      interests: >
+        Mobilising private capital into the sectors named, as the equity instrument of a productivity
+        agenda otherwise carried by a tax deduction [economy.politicalEconomy].
+      resources: >
+        $25 billion over three years, arm's-length Crown corporation status, and a minority-equity
+        mandate across five named sectors [economy.politicalEconomy].
+      constraints: >
+        Debt-financed and contested at the boundary the report identifies as the live one; and the
+        report is explicit that whether it shifts the productivity trajectory depends on sustained
+        delivery rather than announcement [economy.politicalEconomy].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate, with arm's-length design asserted and contested — the report preserves
+        both the co-investment framing and the industrial-policy objection [economy.politicalEconomy].
+
+  - name: Federal Crown financing corporations (Business Development Bank of Canada, Export Development Canada, Canada Infrastructure Bank)
+    kind: state-owned enterprise
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Named as federal Crown corporations already carrying significant economic weight in a mixed
+      economy that sits toward the market-led end.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: report-silent
+      resources: >
+        Federal financing capacity across business development, export credit and infrastructure
+        [economy.politicalEconomy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. Named for the weight they carry rather than for positions they hold
+        [economy.politicalEconomy].
+
+  - name: Hydro-Québec
+    kind: state-owned enterprise
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      The country's largest electricity producer and a pillar of Quebec's economy; it is also one of
+      the signatories of the James Bay and Northern Quebec Agreement of 1975.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, territory.metabolism, political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Provincial generation dominated by hydro — Quebec is among the provinces generating over 85%
+        of electricity from it — and treaty-party standing in the James Bay instruments
+        [territory.metabolism][political.constitutionalSubstrate].
+      constraints: >
+        The east-west grid is fragmented, with inter-provincial transmission limited compared with the
+        north-south lines connecting Canadian generation to United States markets [territory.metabolism].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate to the provincial government, which the report describes it as a pillar
+        of rather than an independent actor within [economy.politicalEconomy].
+
+  - name: VIA Rail Canada
+    kind: state-owned enterprise
+    liveActorStatus: current
+    fieldsCitedIn: [territory.metabolism]
+    reviewFlag: >
+      One field, one function; carried because it is named with a specifiable operating role.
+    currentPositionFromReport: >
+      The Crown corporation running passenger rail service as a thin overlay largely over freight-owned
+      track.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [territory.metabolism]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It runs largely over track owned by the freight railways, on a single east-west spine with no
+        redundant alternative [territory.metabolism][capacity.inheritedTerrain].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. Named as a Crown corporation operating a service, with no position
+        attributed [territory.metabolism].
+
+  - name: Class 1 freight railways (Canadian National; Canadian Pacific Kansas City)
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [territory.metabolism]
+    currentPositionFromReport: >
+      The two Class 1 freight railways operate roughly 80% of some 43,000 route-kilometres of track,
+      moving grain, potash, coal and containers over transcontinental distances.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [territory.metabolism, capacity.inheritedTerrain]
+      interests: report-silent
+      resources: >
+        Ownership and operation of roughly 80% of the national track network, and the bulk commodity
+        traffic that moves on it [territory.metabolism].
+      constraints: >
+        The network is a single east-west spine covering thousands of kilometres, with no redundant
+        alternative at any point on the corridor [capacity.inheritedTerrain].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. Private operators of infrastructure the state depends on; the report
+        describes no regulatory contest [territory.metabolism].
+
+  - name: Oil-and-gas sector (Canadian Natural Resources, Suncor Energy, Cenovus, Imperial Oil; Enbridge, TC Energy)
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy, political.stabilityDrivers]
+    currentPositionFromReport: >
+      The oil-sands and pipeline majors clustered in Alberta are among the principal beneficiaries of
+      the current model, operating in concentrated markets with high barriers to entry; with the
+      chartered banks and export manufacturers they support macroeconomic stability but press the
+      government on trade diversification, regulatory competitiveness and the response to United States
+      tariffs.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, political.stabilityDrivers, capacity.approvals]
+      interests: >
+        Pipeline-to-tidewater capacity, regulatory competitiveness and tariff relief; the report lists
+        building that capacity among the reforms most analysts call technically necessary
+        [economy.politicalEconomy][political.stabilityDrivers].
+      resources: >
+        Concentrated market position, the largest single share of national emissions at 208 megatonnes,
+        and a memorandum of understanding under which the federal government committed in advance to
+        declaring the proposed West Coast Oil Pipeline a project of national interest
+        [economy.politicalEconomy][territory.transition][capacity.approvals].
+      constraints: >
+        Environmental and some Indigenous opposition to new pipelines is named as the organised
+        constituency each such reform runs into, and alignment with the government is described as
+        conditional rather than automatic [economy.politicalEconomy][political.stabilityDrivers].
+      likelyMoves: >
+        Advance the West Coast Oil Pipeline through the Pathways Plus stream handed to the Major
+        Projects Office on 2 July 2026 [capacity.approvals].
+      engagementMode: >
+        negotiable / dealable. The report shows the sector obtaining an advance federal commitment
+        through a memorandum of understanding rather than through the designation process itself
+        [capacity.approvals].
+
+  - name: Oil Sands Alliance
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.approvals]
+    currentPositionFromReport: >
+      Party, with Canada and Alberta, to the memorandum of understanding in which the federal
+      government committed in advance to declaring the proposed West Coast Oil Pipeline a project of
+      national interest, handed to the Major Projects Office on 2 July 2026 under the Pathways Plus
+      strategy.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.approvals, economy.politicalEconomy]
+      interests: >
+        Securing national-interest designation for the pipeline and the carbon-capture strategy it
+        sits inside [capacity.approvals].
+      resources: >
+        A tripartite memorandum of understanding carrying an advance federal commitment, and a
+        parallel approvals stream for transformative strategies rather than individual projects
+        [capacity.approvals].
+      constraints: >
+        No project has yet been designated under the Act, and the government states explicitly that
+        not all referred projects will be [capacity.approvals].
+      likelyMoves: >
+        Press for the designation the memorandum anticipates [capacity.approvals].
+      engagementMode: >
+        negotiable / dealable — the report records the deal already struck, with the federal commitment
+        made in advance of the statutory process [capacity.approvals].
+
+  - name: Chartered banks (Royal Bank of Canada, Toronto-Dominion, Bank of Nova Scotia, Bank of Montreal, Canadian Imperial Bank of Commerce)
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy, political.stabilityDrivers]
+    currentPositionFromReport: >
+      Dominate a concentrated financial market and are named among the principal beneficiaries of the
+      current model; with the energy producers and export manufacturers they support macroeconomic
+      stability while pressing the government on trade diversification, regulatory competitiveness and
+      the tariff response.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, political.stabilityDrivers]
+      interests: >
+        Macroeconomic stability and the regulatory conditions of a concentrated market
+        [political.stabilityDrivers][economy.politicalEconomy].
+      resources: >
+        Market dominance among a handful of firms with high barriers to entry [economy.politicalEconomy].
+      constraints: >
+        High concentration in key service sectors is named by the International Monetary Fund among
+        the structural weaknesses behind the productivity gap [capacity.productivity].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. Alignment with government is described as conditional and expressed as
+        pressure on policy [political.stabilityDrivers].
+
+  - name: Canadian Labour Congress
+    kind: labour
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      The peak labour federation, representing roughly three million workers across its affiliates in
+      a counterweight concentrated in the public sector and heavy industry.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: >
+        Resisting labour-market flexibility measures, which the report names as one of the organised
+        constituencies the necessary reforms run into [economy.politicalEconomy].
+      resources: >
+        Roughly three million workers across affiliates, and peak-federation standing [economy.politicalEconomy].
+      constraints: >
+        Unifor, the largest private-sector union, left the Congress in 2024 [economy.politicalEconomy].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. Described as a counterweight within the political economy rather than a
+        veto point [economy.politicalEconomy].
+
+  - name: Unifor
+    kind: labour
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      The largest private-sector union at over 315,000 members in autos, energy, media and
+      manufacturing; it left the Canadian Labour Congress in 2024.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, economy.externalVulnerability]
+      interests: >
+        Its membership sits in autos, energy and manufacturing — precisely the sectors carrying the
+        50% and 25% United States duties [economy.politicalEconomy][economy.externalVulnerability].
+      resources: >
+        Over 315,000 members and independence from the peak federation since 2024 [economy.politicalEconomy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. No distinct bargaining relationship with government is described
+        [economy.politicalEconomy].
+
+  - name: Confédération des syndicats nationaux
+    kind: labour
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Organises a distinct labour bloc of around 300,000 members in Quebec.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: report-silent
+      resources: >
+        Around 300,000 members organised separately from the national federation [economy.politicalEconomy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. Named as a distinct bloc without a position attributed [economy.politicalEconomy].
+
+  - name: Canadian Bar Association (and its Alberta branch)
+    kind: civil-society
+    liveActorStatus: current
+    fieldsCitedIn: [political.rightsAndChecks]
+    currentPositionFromReport: >
+      Opposed Alberta's proposed four-person committee requiring both federal and provincial
+      ministerial approval before superior court appointments proceed, as incompatible with section 96
+      of the Constitution Act, 1867, which vests that power in the federal government alone.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks, political.stabilityDrivers]
+      interests: >
+        Keeping superior court appointments within the federal power section 96 assigns
+        [political.rightsAndChecks].
+      resources: >
+        Professional standing and a constitutional argument the report records as the profession's
+        position [political.rightsAndChecks][political.stabilityDrivers].
+      constraints: >
+        It objects; the proposal sits with the province, and the report records no resolution
+        [political.rightsAndChecks].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. A professional body making a public constitutional objection, with no
+        formal role in the appointment process described [political.rightsAndChecks].
+
+  - name: Canada Port Authorities
+    kind: other
+    liveActorStatus: current
+    reviewFlag: >
+      Named for structural role rather than for an action; carried because the role is statutory and
+      specifiable.
+    fieldsCitedIn: [territory.geography]
+    currentPositionFromReport: >
+      Seventeen federally designated authorities established under the Canada Marine Act of 1998,
+      grouped in Pacific, Great Lakes, St. Lawrence and Atlantic regions with none on the Arctic
+      coast, among over 550 port facilities.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [territory.geography, capacity.inheritedTerrain]
+      interests: report-silent
+      resources: >
+        Federal designation under statute, covering the ocean and inland systems that carry maritime
+        access to the interior as far as Thunder Bay [territory.geography].
+      constraints: >
+        No designated authority sits on the Arctic coast, on a coastline the report describes as one
+        of three ocean basins the country fronts [territory.geography][capacity.inheritedTerrain].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. Statutory bodies established under federal legislation, with no
+        position attributed [territory.geography].
+
+external:
+
+  - name: United States
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [territory.geography, territory.metabolism, economy.externalVulnerability, political.shockAbsorbers, capacity.productivity, security.posture, security.internal, security.military, security.transnationalExposure, security.diplomacy, situation]
+    currentPositionFromReport: >
+      Canada's single land neighbour and dominant relationship on trade, defence and border
+      management, and the one under structural stress: it took 75.9% of merchandise exports in 2024,
+      has imposed successive tariff regimes since February 2025 that the Parliamentary Budget Officer
+      treats as permanent, let the trilateral agreement pass its 1 July 2026 review without renewal,
+      invoked Section 338 of the Tariff Act of 1930 for the first time in its history on 20 July 2026
+      to impose an additional 50% duty on named Canadian sectors from 19 August with no exemption for
+      agreement-compliant goods, and paused Columbia River Treaty negotiations in March 2025 — while
+      continental defence continues to be conducted binationally with it and no alternative
+      arrangement exists.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability, security.posture, security.diplomacy, situation]
+      interests: >
+        Sectoral protection pursued through successively different legal authorities, and renegotiation
+        of the continental trade framework on annual rather than long-term terms
+        [situation][economy.externalVulnerability].
+      resources: >
+        The destination of roughly three-quarters of Canadian merchandise exports, multiple unilateral
+        tariff authorities including one carrying no time limit, and the position of indispensable
+        partner in continental defence [economy.externalVulnerability][security.military].
+      constraints: >
+        The report records limits reached in its own system rather than imposed by Canada: the
+        emergency-powers tariffs ruled unlawful with refunds available from April 2026, and the
+        Section 122 surcharge lapsing at the end of its 150-day statutory window with no extension
+        introduced in Congress [situation].
+      likelyMoves: >
+        Bring the Section 338 duties into effect on 19 August 2026 unless the intensified talks agreed
+        on 21 July produce an alternative [situation].
+      engagementMode: >
+        negotiable / dealable, with the report recording the shelter removed: agreement compliance had
+        been the reliable protection throughout the dispute and no longer guarantees duty-free entry.
+        The structural point the report makes is that Canada is reliant for its physical security on
+        the partner generating most of its strategic uncertainty
+        [economy.externalVulnerability][security.posture].
+
+  - name: People's Republic of China
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.posture, security.internal, security.transnationalExposure, security.diplomacy]
+    currentPositionFromReport: >
+      Named by the foreign interference inquiry as the most active perpetrator of interference
+      targeting Canadian democratic institutions; also the counterpart of a January 2026 reset — the
+      first Canadian prime ministerial visit to Beijing since 2017, an economic and trade cooperation
+      roadmap under a declared strategic partnership, Canada cutting its tariff on Chinese electric
+      vehicles from 100% to 6.1% within a quota while China reduced canola seed duties and suspended
+      tariffs on canola meal, peas, lobster and crab — and among the countries completing the
+      principal list of destinations for organised crime connections.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.transnationalExposure, security.posture]
+      interests: >
+        Market access and tariff relief on agricultural and seafood exports, obtained alongside an
+        interference finding that remains unresolved [security.diplomacy][security.transnationalExposure].
+      resources: >
+        A market Global Affairs Canada targets for 50% export growth by 2030, and reciprocal tariff
+        instruments it has already used and suspended [security.diplomacy].
+      constraints: >
+        The inquiry's finding stands adjudicated and public, and the report treats the gap between that
+        finding and the reset as the central tension in Canadian diplomacy
+        [security.diplomacy][security.posture].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable on trade while unresolved on security — the report's own formulation is
+        that commercial diversification is proceeding alongside unresolved security findings about the
+        same partner [security.diplomacy].
+
+  - name: India
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.posture, security.transnationalExposure, security.diplomacy]
+    currentPositionFromReport: >
+      Named by the inquiry as the second most active perpetrator of foreign interference; after high
+      commissioners were expelled by both sides in 2024 the two prime ministers met at the Group of
+      Seven summit in Alberta in June 2025 and at the Group of Twenty in November, high commissioners
+      were reinstated in August 2025, a shared roadmap was announced in October and a Canadian
+      delegation visited in February and March 2026, with two-way merchandise trade at $10.9 billion in
+      2025 — Canadian exports down 26.5% and imports up 18.9% — and comprehensive economic partnership
+      negotiations under way.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.transnationalExposure]
+      interests: >
+        A comprehensive economic partnership on a trade flow already lopsided in its favour and moving
+        further that way [security.diplomacy].
+      resources: >
+        A restored diplomatic relationship, a shared roadmap, and an import position that grew 18.9%
+        while Canadian exports fell [security.diplomacy].
+      constraints: >
+        The interference finding against it is public and unresolved, and the report notes
+        transnational repression against diaspora communities was serious enough to warrant a warning
+        beyond the inquiry's mandate [security.transnationalExposure].
+      likelyMoves: >
+        Continue the partnership negotiations under way [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable on trade while unresolved on security, on the same pattern the report
+        identifies for the other named interference actor [security.diplomacy][security.posture].
+
+  - name: European Union
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Signed a Security and Defence Partnership with Canada at the summit of 23 June 2025 — explicitly
+      non-legally-binding, regrouping existing cooperation across crisis management, military mobility,
+      defence procurement, maritime security, cyber and space — and on 14 February 2026 a further
+      agreement admitting Canadian firms to procurement under the Security Action for Europe
+      instrument, making Canada the first non-European participant in that €150 billion facility,
+      applied provisionally since 13 April 2026 and concluded by the Council on 15 June 2026; Canada
+      has also been a third-state participant in European Permanent Structured Cooperation since 2021.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.posture]
+      interests: >
+        Widening the industrial base of European defence procurement to a first non-European
+        participant [security.diplomacy].
+      resources: >
+        A €150 billion procurement facility, an existing structured cooperation framework, and treaty
+        machinery capable of concluding agreements at Council level [security.diplomacy].
+      constraints: >
+        The partnership is explicitly non-binding and the procurement agreement is commercial access
+        rather than a defence guarantee — the report calls the resulting hedge real but thin
+        [security.posture].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. The relationship is built from signed but non-binding instruments,
+        which is the report's own characterisation of its limit [security.posture].
+
+  - name: North Atlantic Treaty Organization
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Canada is a founding member and the sixth-largest contributor to its common funded budget, is
+      framework nation for Multinational Brigade Latvia — roughly 3,000 personnel from fourteen allies
+      — and reached the 2% spending benchmark in 2025-26 for the first time in roughly thirty-five
+      years, having agreed at the Hague summit in June 2025 to invest 5% of output by 2035, 3.5% on
+      core defence and 1.5% on defence-related infrastructure.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.diplomacy, security.posture]
+      interests: >
+        Burden-sharing measured against benchmarks members have agreed collectively [security.military].
+      resources: >
+        Agreed spending benchmarks, a common funded budget, and the multinational force structure in
+        which Canada holds framework-nation status [security.military][security.diplomacy].
+      constraints: >
+        Compliance rests with members: Canada met 2% partly by counting expenditure across several
+        departments, and the 5% commitment has no published pathway [security.military].
+      likelyMoves: report-silent
+      engagementMode: >
+        commitment-bound — a forged category. The report describes benchmarks agreed at summit level
+        and then met or missed, not bargained: the alliance is not a counterpart Canada negotiates
+        with but a standard it is measured against [security.military].
+
+  - name: Five Eyes
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      The intelligence partnership with the United States, the United Kingdom, Australia and New
+      Zealand, named as one of the three long-standing pillars of Canada's alliance architecture.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        Standing intelligence-sharing among five states [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. Named as a membership pillar with no activity attributed to it in the reporting
+        period [security.diplomacy].
+
+  - name: International Monetary Fund
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, economy.externalVulnerability, capacity.productivity]
+    currentPositionFromReport: >
+      Forecasts 1.5% Canadian growth for 2026, the highest of the projections the report assembles;
+      identifies the productivity weakness as structural — weak business dynamism, slow capital
+      deepening, lagging innovation, high concentration in key service sectors and barriers to firm
+      scaling — and calls the reform bundle addressing it Canada's highest-return set of policies;
+      prices internal trade barriers at the equivalent of a 9% national tariff, up to 50% in health
+      care, education and retail services, with elimination worth up to 7% of real output. No Fund
+      programme is in place.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.productivity, economy.externalVulnerability, economy.realEconomy]
+      interests: >
+        Article IV policy advice concentrated on productivity and internal trade
+        [capacity.productivity][economy.externalVulnerability].
+      resources: >
+        Surveillance standing over a member state, and quantified estimates the report uses as the
+        reference figures for the internal-barrier question [capacity.productivity].
+      constraints: >
+        No programme is in place, so its influence runs through advice rather than conditionality
+        [economy.externalVulnerability].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable as a membership body — Canada is a member consulting with it, not a
+        country under programme conditions [economy.externalVulnerability].
+
+  - name: Organisation for Economic Co-operation and Development
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, capacity.productivity, security.diplomacy]
+    currentPositionFromReport: >
+      A body Canada belongs to and is measured against: it forecasts 1.2% growth for 2026, supplies the
+      comparison showing Canadian research intensity at 1.8% of output against a 2.7% member average
+      and flat since 2010 with a particularly low business share, records that foreign multinationals
+      account for over 40% of business research spending, and is named among the multilateral
+      memberships giving Canada institutional reach beyond its military weight.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.productivity, security.diplomacy, economy.realEconomy]
+      interests: >
+        Peer review and comparative positioning across member economies [capacity.productivity].
+      resources: >
+        Country surveys, comparative indicators, and membership standing [capacity.productivity][security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable as a membership body — Canada participates in it rather than being rated
+        by it, which is the distinction the extraction rule turns on [security.diplomacy].
+
+  - name: Group of Seven
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, security.diplomacy]
+    currentPositionFromReport: >
+      A multilateral membership giving Canada institutional reach beyond its military weight; Canada
+      hosted the June 2025 summit in Alberta, at which the Canadian and Indian prime ministers met, and
+      the report benchmarks 2026 Canadian growth as second-fastest in the group.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, economy.realEconomy]
+      interests: report-silent
+      resources: >
+        A summit format the report shows being used to restart a bilateral relationship [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable as a membership body; the report shows Canada using the format rather
+        than being acted on by it [security.diplomacy].
+
+  - name: Group of Twenty
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      A multilateral membership named alongside the Group of Seven; the Canadian and Indian prime
+      ministers met again at its November meeting.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        A second summit format in the same bilateral sequence [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable as a membership body [security.diplomacy].
+
+  - name: Commonwealth
+    kind: international body
+    liveActorStatus: current
+    reviewFlag: >
+      Named for membership status only; no action attributed. Drop candidate.
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Named among the multilateral memberships giving Canada institutional reach beyond its military
+      weight.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. Membership is asserted; no engagement is described [security.diplomacy].
+
+  - name: La Francophonie
+    kind: international body
+    liveActorStatus: current
+    reviewFlag: >
+      Named for membership status only; no action attributed. Drop candidate.
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Named among the multilateral memberships giving Canada institutional reach beyond its military
+      weight.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. Membership is asserted; no engagement is described [security.diplomacy].
+
+  - name: Comprehensive and Progressive Agreement for Trans-Pacific Partnership
+    kind: international body
+    liveActorStatus: current
+    reviewFlag: >
+      The prompt lists this among membership bodies that ARE actors, but the report names it as an
+      instrument — a lever of diversification, not a body acting. Carried per the prompt; flagged
+      because filter (f) would exclude it.
+    fieldsCitedIn: [economy.externalVulnerability]
+    currentPositionFromReport: >
+      One of the two primary levers of Canada's diversification across 15 free trade agreements
+      covering 51 countries, operating across the Indo-Pacific.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability]
+      interests: report-silent
+      resources: >
+        Preferential access across the Indo-Pacific membership [economy.externalVulnerability].
+      constraints: >
+        Diversification through it has not displaced the concentration: merchandise exports remained
+        overwhelmingly southbound and rose again to the United States through the first half of 2026
+        [economy.externalVulnerability].
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. Named as an instrument Canada uses, not as a counterpart it engages
+        [economy.externalVulnerability].
+
+  - name: Comprehensive Economic and Trade Agreement
+    kind: international body
+    liveActorStatus: current
+    reviewFlag: >
+      Same tension as the Trans-Pacific entry: listed as an actor by the prompt, named as an
+      instrument by the report.
+    fieldsCitedIn: [economy.externalVulnerability]
+    currentPositionFromReport: >
+      The second primary lever of diversification, covering Europe.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability, security.diplomacy]
+      interests: report-silent
+      resources: >
+        Preferential access to the European market alongside the newer security and procurement
+        instruments [economy.externalVulnerability][security.diplomacy].
+      constraints: >
+        Part of the 2025 shift away from the United States share was a gold flow to vaults rather than
+        durable industrial diversification, and it reversed [economy.externalVulnerability].
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. Named as an instrument, not as a counterpart [economy.externalVulnerability].
+
+  - name: Kingdom of Denmark
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Counterpart in a small disagreement over two zones in the Lincoln Sea, and party to the boundary
+      agreement settling Tartupaluk, or Hans Island, now being implemented.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        Standing as a boundary counterpart with a settled agreement in implementation [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: >
+        Continue implementing the Tartupaluk boundary agreement [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable. The report describes a settled agreement being implemented and a narrow
+        residual disagreement [security.diplomacy].
+
+  - name: Global Alliance of National Human Rights Institutions
+    kind: international body
+    liveActorStatus: current
+    reviewFlag: >
+      Borderline under filter (e): it accredits, which is assessment, but the Canadian Human Rights
+      Commission is a member and the action described is peer review of a member.
+    fieldsCitedIn: [political.rightsAndChecks]
+    currentPositionFromReport: >
+      Upheld the Canadian Human Rights Commission's A-status accreditation after a review prompted by
+      civil-society concerns about systemic racial discrimination within the Commission, while urging
+      it to keep addressing that discrimination internally as well as externally.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks]
+      interests: >
+        Maintaining the accreditation standard applied to member institutions [political.rightsAndChecks].
+      resources: >
+        Accreditation status, which the report treats as the qualification on the Commission's standing
+        [political.rightsAndChecks].
+      constraints: >
+        It upheld the status while the concerns that triggered the review remained live
+        [political.rightsAndChecks].
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. A peer accreditation body reviewing a member; no bargaining relationship is
+        described [political.rightsAndChecks].

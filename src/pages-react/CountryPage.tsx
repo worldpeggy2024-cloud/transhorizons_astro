@@ -991,6 +991,18 @@ export default function CountryPage() {
   // Gap register (capacity.knownAndUnbuilt) — structured, rendered after the
   // prose rows; null until the derivatives pass composes it (render nothing).
   const gapRegister = hasCapacity ? lang!.capacity!.knownAndUnbuilt ?? null : null;
+  // Gap-register `class` is a canonical English token (a controlled status the
+  // derivatives pass keeps identical in EN and FR); localise it for display.
+  // `since: "report-silent"` is the sentinel for "the report does not date it" —
+  // it is not a date and must not render as one. FR-PLACEHOLDER: FR labels.
+  const GAP_CLASS_LABEL: Record<string, { en: string; fr: string }> = {
+    'no-attempt-documented': { en: 'No documented attempt', fr: 'Aucune tentative documentée' },
+    'announced-not-implemented': { en: 'Announced, not implemented', fr: 'Annoncé, non réalisé' },
+    'attempted-and-failed': { en: 'Attempted, not closed', fr: 'Tenté, sans succès' },
+    'in-progress-unclosed': { en: 'In progress, unclosed', fr: 'En cours, non réglé' },
+  };
+  const gapClassLabel = (c: string) => GAP_CLASS_LABEL[c]?.[language === 'fr' ? 'fr' : 'en'] ?? c;
+  const gapHasSince = (s?: string) => !!s?.trim() && s.trim() !== 'report-silent';
   const securityRows: Row[] = hasAnalysis ? filterRows([
     [t.posture, lang!.security.posture ?? '', 'security.posture'],
     [t.internalSecurity, lang!.security.internal, 'security.internal'],
@@ -1298,8 +1310,8 @@ export default function CountryPage() {
                       <div key={i} className="border-l-2 border-[var(--cr-divider)] pl-3">
                         <p className="font-body text-sm text-[var(--cr-body)] leading-relaxed">{parseCitations(item.gap, activeSources)}</p>
                         <p className="font-body text-[11px] text-[var(--cr-muted)] mt-1">
-                          <span className="uppercase tracking-wider">{item.class}</span>
-                          {!!item.since?.trim() && <> · {t.gapSince}: {parseCitations(item.since, activeSources)}</>}
+                          <span className="uppercase tracking-wider">{gapClassLabel(item.class)}</span>
+                          {gapHasSince(item.since) && <> · {t.gapSince}: {parseCitations(item.since, activeSources)}</>}
                           {item.anchor.length > 0 && <> · {parseCitations(item.anchor.map((a) => `[${a}]`).join(''), activeSources)}</>}
                         </p>
                       </div>
@@ -1394,6 +1406,33 @@ export default function CountryPage() {
         {/* 10. Sources */}
         <div id="sources" style={{ scrollMarginTop: 96 }}>
         <FrameworkSection ref={sourcesRef} icon={BookOpen} title={t.sources}>
+          {hasAnalysis && (
+            // Legend for the per-source badges (confidence rating + Fact/Interpretation).
+            // FR-PLACEHOLDER: French legend wording — Peggy to verify.
+            <div className="mb-4 rounded-lg border border-[var(--cr-border)] bg-[var(--cr-hover-2)] px-3 py-2.5 text-xs leading-relaxed text-[var(--cr-muted)]">
+              <span className="font-medium text-[var(--cr-body)]">{language === 'fr' ? 'Légende' : 'Legend'}</span>
+              {' — '}
+              {language === 'fr' ? (
+                <>
+                  chaque source porte une cote de fiabilité —{' '}
+                  <span className="font-medium text-green-700 dark:text-green-300">✓ Élevée</span>,{' '}
+                  <span className="font-medium text-yellow-700 dark:text-yellow-300">◐ Moyenne</span> ou{' '}
+                  <span className="font-medium text-red-700 dark:text-red-300">✗ Faible</span> — selon son caractère faisant autorité, et l'étiquette{' '}
+                  <span className="font-medium text-[var(--cr-body)]">Fait</span> (la source est l'auteure première de la donnée ou de l'événement) ou{' '}
+                  <span className="font-medium text-[var(--cr-body)]">Interprétation</span> (elle analyse ou résume des données d'ailleurs).
+                </>
+              ) : (
+                <>
+                  each source carries a confidence rating —{' '}
+                  <span className="font-medium text-green-700 dark:text-green-300">✓ High</span>,{' '}
+                  <span className="font-medium text-yellow-700 dark:text-yellow-300">◐ Medium</span>,{' '}
+                  <span className="font-medium text-red-700 dark:text-red-300">✗ Low</span> — for how authoritative and reliable it is, and a{' '}
+                  <span className="font-medium text-[var(--cr-body)]">Fact</span> (the source is the primary author of the data or event) or{' '}
+                  <span className="font-medium text-[var(--cr-body)]">Interpretation</span> (it analyses or summarises data from elsewhere) tag.
+                </>
+              )}
+            </div>
+          )}
           <div className="space-y-2 mt-2">
             {(hasAnalysis ? (analysis!.sources ?? lang!.sources ?? []) : [
               { name: 'IMF', url: 'https://www.imf.org', desc: language === 'fr' ? 'Macro & dette' : 'Macro & debt' },

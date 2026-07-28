@@ -292,9 +292,15 @@ function validateCountryFile(filePath) {
   collectCitations(contentClone, citations);
 
   for (const c of citations) {
-    if (!sourceKeys.has(c)) {
-      errors.push(`Orphan citation: [${c}] has no matching source`);
-    }
+    if (sourceKeys.has(c)) continue;
+    // A dotless field anchor — `[situation]`, the one field path without a dot —
+    // is not a source citation. Dot-path anchors ([capacity.approvals]) never
+    // reach here (the dot breaks the citation pattern); `situation` is the lone
+    // dotless field path, and the derived layers (actors, scorecard, posture,
+    // inheritedTerrain) legitimately anchor to it. Skip anything the shared
+    // FIELD_INDEX recognises as a field (2026-07-27, first hit on CAN actors).
+    if (anchorsLib.FIELD_INDEX.has(c)) continue;
+    errors.push(`Orphan citation: [${c}] has no matching source`);
   }
 
   const uncitedEvents = [];

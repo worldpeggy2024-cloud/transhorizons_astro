@@ -39,6 +39,7 @@ A marker that resolves to neither is an error. Never invent either kind.
 
 - `capacity_knownAndUnbuilt_*` — the field you are composing; it is empty.
 - `actors_*`, `risks_*`, `scorecard*`, `baseline_*`, `capacity_inheritedTerrain_*`, `security_posture_*` — these fields introduce no facts of their own; each is assembled from other fields. Building this register on one of them would rest a summary on a summary. Where one of them reflects a gap, find the field it came from and use that.
+- **Legacy fields — never read them:** `capacity_permitting_*` (renamed `capacity_approvals_*`), `economy_macroReality_*` (renamed `economy_realEconomy_*`), `executiveSnapshot_*` (removed). A properly two-phase report carries only the new names; any content under a legacy key is superseded and may be stale. Anchor only to the current-name fields. *(Added 2026-07-27: a stale `capacity_permitting_*` left behind by an incomplete migration is non-empty, so an anchor to it resolves and silently points at outdated content.)*
 
 `capacity_inheritedTerrain_*` has a second role: **read it for the denominator** (see the guard below). It describes the structural ground the state works against — scale, resource base, colonial and extractive legacy, conflict history, inherited education and health base.
 
@@ -67,7 +68,7 @@ Read every field in the six families and every thread in `situation_en`. Collect
 
 Recall over precision here — collect generously; the gate decides.
 
-### 2. Gate — five tests, all five must hold
+### 2. Gate — six tests, all six must hold
 
 **Test 1 — ASSERTED.** The report already states it, with a resolvable `[source-id]`, in one of the six section families or in a `situation` thread. Not implied, not inferable: stated.
 
@@ -84,6 +85,8 @@ Recall over precision here — collect generously; the gate decides.
 **Test 4 — OPEN.** The report does not state it closed. Where a `situation` thread shows it closing, it leaves the register. Where a thread shows a commitment to close it that has not landed, it stays, classed accordingly.
 
 **Test 5 — MISSING, NOT UNDONE.** The report states this as a capability or provision that is absent or insufficient — not as a commitment, target, project or programme that existed and was withdrawn, cancelled, or reversed by decision. A reversal is a choice; choices are carried by the fields that describe policy, not by this register. *(Added 2026-07-21 after the second USA run surfaced the hole: a voided target and a cancelled project class passed all four tests while describing decisions, and rendering a decision as an unclosed gap smuggles in a norm that it ought to have been done — the exact indictment the denominator exists to prevent.)*
+
+**Test 6 — AGAINST A SELF-SET STANDARD.** The requirement the shortfall falls short of is one the country set for ITSELF — a domestic law, target, strategy or audit finding; a commitment it chose to adopt (a ratified treaty, convention, UN framework, or Nationally Determined Contribution); or a constitutional or statutory guarantee. A shortfall stated only against an external comparison or peer benchmark the country never committed to — a foreign average, an OECD/G7 mean, a better-performing country — is NOT a register item; record it in `notCarried`. The peer fields carry such comparisons; the register carries broken commitments. *(Added 2026-07-27 after the Canada run: research-and-development intensity at 1.8% of output against the 2.7% average across countries in the OECD — which the report itself calls "the clearest single gap" — is out, because the comparator is an external average, not a requirement Canada set itself; the critical-mineral value-added processing gap is in, because Canada's own strategy names it as a target.)* This is what lets the register work across accountability regimes rather than rewarding opacity: a state with no audit office still has treaties it ratified and a constitution it wrote to be measured against. Where even those are thin, the opener declares the thin base — the thinness is the finding, never a licence to import an outside standard of what the country "should" provide (which would also trip the inherited-capacity guard).
 
 **Record every rejection** in `notCarried`, naming which test it failed. A candidate dropped silently is invisible; a candidate recorded is a finding about the report.
 
@@ -198,7 +201,7 @@ Return ONE JSON object and nothing else before it:
 ## Self-check before returning
 
 - Every anchor resolves to a non-empty field of this report or to an identifier in the registry
-- Every item passes all five gate tests
+- Every item passes all six gate tests
 - No item rests on `actors_*`, `risks_*`, `scorecard*`, `baseline_*`, `capacity_inheritedTerrain_*` or `security_posture_*`
 - The opener declares the documentation base
 - The denominator sentence is present where the report supports it
