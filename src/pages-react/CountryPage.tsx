@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import { franceAnalysis } from '@/data/france-yaml';
 import { type AnalysisContent, type ActorEntry, type SourceEntry, type ScoreRating } from '@/data/countries/analysisTypes';
+import { useReportSpeech, type SpeechSection } from '@/hooks/useReportSpeech';
+import { SectionAudioButton, ReportAudioBar, FloatingReportPlayer } from '@/components/ReportAudio';
 import { canadaAnalysis } from '@/data/canada';
 import { usaAnalysis } from '@/data/usa-yaml';
 import { chinaAnalysis } from '@/data/china-yaml';
@@ -88,7 +90,7 @@ function formatPopulationFr(n: number): string {
 function ratingLabel(v: string | null | undefined, language: string): string {
   if (!v) return '';
   if (language !== 'fr') return v;
-  const map: Record<string, string> = { High: 'Élevé', 'Med-High': 'Moyen-élevé', Med: 'Moyen', Medium: 'Moyen', 'Med-Low': 'Moyen-faible', Low: 'Faible' };
+  const map: Record<string, string> = { High: 'Élevée', 'Med-High': 'Moy.-élev.', Med: 'Moyenne', Medium: 'Moyenne', 'Med-Low': 'Moy.-faible', Low: 'Faible' };
   return map[v] ?? v;
 }
 
@@ -254,7 +256,10 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
   headerNote?: string;
   /** Optional hover explanation for the header note (what the badge measures). */
   headerNoteTitle?: string;
-}>(({ icon: Icon, title, children, defaultOpen = false, headerNote, headerNoteTitle }, ref) => {
+  /** Optional audio control shown in the header; it stops event propagation so it
+   * never toggles the section open/closed. */
+  audio?: React.ReactNode;
+}>(({ icon: Icon, title, children, defaultOpen = false, headerNote, headerNoteTitle, audio }, ref) => {
   const [open, setOpen] = useState(defaultOpen);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -278,21 +283,31 @@ const FrameworkSection = React.forwardRef<FrameworkSectionHandle, {
 
   return (
     <div ref={containerRef} className="border border-[var(--cr-border)] mb-4" style={{ scrollMarginTop: `${NAV_OFFSET + 8}px` }}>
-      <button
-        className={`w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[var(--cr-hover)] transition-colors sticky top-12 z-10 bg-[var(--cr-bg)] ${open ? 'border-b border-[var(--cr-border)]' : ''}`}
+      <div
+        role="button"
+        tabIndex={0}
+        aria-expanded={open}
+        className={`w-full flex items-center justify-between gap-2 px-4 sm:px-6 py-4 text-left cursor-pointer hover:bg-[var(--cr-hover)] transition-colors sticky top-12 z-10 bg-[var(--cr-bg)] ${open ? 'border-b border-[var(--cr-border)]' : ''}`}
         onClick={toggle}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } }}
       >
-        <div className="flex items-center gap-3">
-          <Icon size={15} className="text-[var(--cr-accent)]" />
+        {/* Title — priority, always fully shown. */}
+        <div className="flex items-center gap-3 shrink-0">
+          <Icon size={15} className="text-[var(--cr-accent)] shrink-0" />
           <span className="font-display text-base font-medium text-[var(--cr-ink)]">{title}</span>
         </div>
-        <div className="flex items-center gap-3">
+        {/* Source note — takes the leftover space and truncates first (right-aligned). */}
+        <div className="flex-1 min-w-0 flex justify-end">
           {!!headerNote && (
-            <span title={headerNoteTitle} className="font-body text-xs text-[var(--cr-muted)] whitespace-nowrap">{headerNote}</span>
+            <span title={headerNoteTitle} className="truncate text-right font-body text-[10px] sm:text-xs text-[var(--cr-muted)]">{headerNote}</span>
           )}
+        </div>
+        {/* Audio + chevron — fixed on the right. */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {audio}
           {open ? <ChevronUp size={14} className="text-[var(--cr-muted)]" /> : <ChevronDown size={14} className="text-[var(--cr-muted)]" />}
         </div>
-      </button>
+      </div>
       {open && (
         <div className="px-6 pb-6 pt-2 bg-[var(--cr-surface)]">
           {children}
@@ -354,6 +369,20 @@ function parseSituationThreads(text: string): SituationThread[] | null {
   } catch {
     return null;
   }
+}
+
+/** Flatten the situation threads into a plain narration string (thread name +
+ * status, then each event's what/changed, then the current state). Falls back to
+ * the raw text when it isn't the JSON thread shape. Citation markers are stripped
+ * downstream by the speech hook. */
+function situationNarration(text: string): string {
+  const threads = parseSituationThreads(text);
+  if (!threads) return text;
+  return threads.map((th) => {
+    const head = [th.thread, th.status].filter(Boolean).join(', ');
+    const evs = (th.events ?? []).map((e) => [e.what, e.changed].filter(Boolean).join(' ')).join(' ');
+    return [head, evs, th.currentState].filter(Boolean).join('. ');
+  }).join(' ');
 }
 
 function SituationSection({ text, sources }: { text: string; sources?: SourceEntry[] }) {
@@ -448,9 +477,11 @@ function ScoreRow({ label, value, language, detail, polarity = 'goodHigh' }: {
         className={`flex items-center justify-between py-2 ${hasDetail ? 'cursor-pointer hover:bg-[var(--cr-hover)]' : ''}`}
         onClick={hasDetail ? () => setOpenDetail((o) => !o) : undefined}
       >
-        <span className="font-body text-sm text-[var(--cr-body)]">
+        <span className="font-body text-sm text-[var(--cr-body)] inline-flex items-center gap-1">
           {label}
-          {hasDetail && <span className="ml-1 text-[10px] text-[var(--cr-muted)]">{openDetail ? '▾' : '▸'}</span>}
+          {hasDetail && (openDetail
+            ? <ChevronUp size={17} className="text-[var(--cr-accent)] shrink-0" />
+            : <ChevronDown size={17} className="text-[var(--cr-accent)] shrink-0" />)}
         </span>
         {value ? (
           <span className="font-body text-xs px-2 py-0.5 rounded" style={{ backgroundColor: sw!.bg, color: sw!.fg }}>{ratingLabel(value, language)}</span>
@@ -708,6 +739,7 @@ function SectionNav({ items, language, onNavigate }: {
 export default function CountryPage() {
   const { cca3 } = useParams<{ cca3: string }>();
   const { language, setLanguage } = useLanguage();
+  const speech = useReportSpeech();
   const [country, setCountry] = useState<CountryData | null>(null);
   const [loading, setLoading] = useState(true);
   const [clickedSection, setClickedSection] = useState<string>('');
@@ -1042,6 +1074,31 @@ export default function CountryPage() {
     [t.diplomacy, lang!.security.diplomacy, 'security.diplomacy'],
   ]) : [];
 
+  // Audio narration (Web Speech, step 1): one entry per section, in reading order.
+  // Each section's prose is the field rows joined "Label. text"; situation is
+  // flattened from its threads. Citation/anchor markers are stripped by the hook.
+  // Empty sections drop out so their header shows no speaker. Keyed by id so a
+  // section header and the "listen to all" bar drive the same queue.
+  const rowsNarration = (rows: Row[]) => rows.map(([label, text]) => `${label}. ${text}`).join(' ');
+  const narrationSections: SpeechSection[] = ([
+    { id: 'baseline', text: hasBaseline ? lang!.baseline! : '' },
+    { id: 'territory', text: rowsNarration(territoryRows) },
+    { id: 'society', text: rowsNarration(societyRows) },
+    { id: 'economy', text: rowsNarration(economyRows) },
+    { id: 'political', text: rowsNarration(politicalRows) },
+    { id: 'capacity', text: rowsNarration(capacityRows) },
+    { id: 'security', text: rowsNarration(securityRows) },
+    { id: 'situation', text: hasAnalysis && lang!.situation ? situationNarration(lang!.situation) : '' },
+  ] as SpeechSection[]).filter((s) => s.text.trim().length > 0);
+  const narrationById: Record<string, SpeechSection> = Object.fromEntries(narrationSections.map((s) => [s.id, s]));
+  const sectionAudio = (id: string) =>
+    narrationById[id] ? <SectionAudioButton speech={speech} section={narrationById[id]} lang={language} /> : undefined;
+  const AUDIO_LABELS: Record<string, string> = {
+    baseline: t.baseline, territory: t.territory, society: t.society, economy: t.economy,
+    political: t.political, capacity: t.capacity, security: t.security, situation: t.situation,
+  };
+  const audioSectionName = speech.activeId ? (AUDIO_LABELS[speech.activeId] ?? '') : '';
+
   // Lateral nav (rework §5): persistent section list mirroring section order,
   // opening at Territory, with field-level subsections. Sections render
   // collapsed; the list is the map. Clicking opens the target accordion first.
@@ -1081,6 +1138,9 @@ export default function CountryPage() {
 
   return (
     <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
+
+      {/* Audio transport — fixed pill, visible only while narration is sounding. */}
+      <FloatingReportPlayer speech={speech} lang={language} sectionName={audioSectionName} />
 
       {/* Top bar */}
       <div className="sticky top-0 z-30 bg-[var(--cr-bg)]/95 backdrop-blur-sm border-b border-[var(--cr-border)]">
@@ -1205,7 +1265,12 @@ export default function CountryPage() {
             placeholder, no back-fill from the removed executive snapshot). */}
         {hasBaseline && (
           <div className="mb-8 border-l-2 border-[var(--cr-accent)] pl-4">
-            <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)] mb-2">{t.baseline}</p>
+            <div className="flex items-center justify-between gap-3 mb-2">
+              <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)]">{t.baseline}</p>
+              {narrationSections.length > 0 && (
+                <ReportAudioBar speech={speech} sections={narrationSections} lang={language} />
+              )}
+            </div>
             <ProseParagraphs text={lang!.baseline!} sources={activeSources} />
           </div>
         )}
@@ -1216,7 +1281,7 @@ export default function CountryPage() {
         {!scorecardPending && (
           <div className="lg:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
             <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
-            <div className="grid grid-cols-3 gap-x-4">{scorecardRows}</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6">{scorecardRows}</div>
           </div>
         )}
 
@@ -1249,7 +1314,7 @@ export default function CountryPage() {
         {/* 1. Territory */}
         {hasTerritory && (
           <div data-section="Territory" id="territory" style={{ scrollMarginTop: 96 }}>
-          <FrameworkSection ref={(el) => { sectionRefs.current.territory = el; }} icon={Mountain} title={t.territory} headerNote={sectionMeta(territoryRows.map(([, text]) => text))} headerNoteTitle={sectionMetaHint}>
+          <FrameworkSection ref={(el) => { sectionRefs.current.territory = el; }} audio={sectionAudio('territory')} icon={Mountain} title={t.territory} headerNote={sectionMeta(territoryRows.map(([, text]) => text))} headerNoteTitle={sectionMetaHint}>
             <div className="space-y-6">
               {territoryRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
@@ -1264,7 +1329,7 @@ export default function CountryPage() {
 
         {/* 2. Society */}
         <div data-section="Society" id="society" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.society = el; }} icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta(societyRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.society = el; }} audio={sectionAudio('society')} icon={Users} title={t.society} headerNote={hasSociety ? sectionMeta(societyRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasSociety ? (
             <div className="space-y-6">
               {societyRows.map(([title, text, fieldId]) => (
@@ -1282,7 +1347,7 @@ export default function CountryPage() {
 
         {/* 3. Economy */}
         <div data-section="Economy" id="economy" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.economy = el; }} icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta(economyRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.economy = el; }} audio={sectionAudio('economy')} icon={BarChart2} title={t.economy} headerNote={hasAnalysis ? sectionMeta(economyRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasAnalysis ? (
             <div className="space-y-6">
               {economyRows.map(([title, text, fieldId]) => (
@@ -1300,7 +1365,7 @@ export default function CountryPage() {
 
         {/* 4. Political Order */}
         <div data-section="Political Stability" id="political" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.political = el; }} icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta(politicalRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.political = el; }} audio={sectionAudio('political')} icon={Shield} title={t.political} headerNote={hasAnalysis ? sectionMeta(politicalRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasAnalysis ? (
             <div className="space-y-6">
               {politicalRows.map(([title, text, fieldId]) => (
@@ -1319,7 +1384,7 @@ export default function CountryPage() {
         {/* 5. Capacity to Deliver */}
         {hasCapacity && (
           <div data-section="Capacity" id="capacity" style={{ scrollMarginTop: 96 }}>
-          <FrameworkSection ref={(el) => { sectionRefs.current.capacity = el; }} icon={Hammer} title={t.capacity} headerNote={sectionMeta(capacityRows.map(([, text]) => text))} headerNoteTitle={sectionMetaHint}>
+          <FrameworkSection ref={(el) => { sectionRefs.current.capacity = el; }} audio={sectionAudio('capacity')} icon={Hammer} title={t.capacity} headerNote={sectionMeta(capacityRows.map(([, text]) => text))} headerNoteTitle={sectionMetaHint}>
             <div className="space-y-6">
               {capacityRows.map(([title, text, fieldId]) => (
                 <div key={fieldId} id={fieldId} style={{ scrollMarginTop: 96 }}>
@@ -1360,7 +1425,7 @@ export default function CountryPage() {
 
         {/* 6. Security & Diplomacy — posture displays first (composed last) */}
         <div data-section="Security & Diplomacy" id="security" style={{ scrollMarginTop: 96 }}>
-        <FrameworkSection ref={(el) => { sectionRefs.current.security = el; }} icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta(securityRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
+        <FrameworkSection ref={(el) => { sectionRefs.current.security = el; }} audio={sectionAudio('security')} icon={Globe} title={t.security} headerNote={hasAnalysis ? sectionMeta(securityRows.map(([, text]) => text)) : undefined} headerNoteTitle={sectionMetaHint}>
           {hasAnalysis ? (
             <div className="space-y-6">
               {securityRows.map(([title, text, fieldId]) => (
@@ -1381,6 +1446,7 @@ export default function CountryPage() {
           <div data-section="Situation" id="situation" style={{ scrollMarginTop: 96 }}>
           <FrameworkSection
             ref={(el) => { sectionRefs.current.situation = el; }}
+            audio={sectionAudio('situation')}
             icon={AlertTriangle}
             title={t.situation}
             // Situation is the most time-sensitive section — surface its own
