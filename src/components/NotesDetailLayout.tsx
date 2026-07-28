@@ -165,6 +165,8 @@ export default function NotesDetailLayout({
                 text={ttsText}
                 lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
                 dark
+                floating
+                title={title}
               />
             </div>
           )}

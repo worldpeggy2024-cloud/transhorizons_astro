@@ -1,12 +1,14 @@
 /*
- * PortfolioTTSPlayer — Full-article audio player for portfolio cards
- * Uses Web Speech API via useSpeech hook.
- * Shows a compact "Listen" button when idle, expanding to a progress player when active.
+ * PortfolioTTSPlayer — full-article audio player (hero / cards).
+ * Uses the shared useReportSpeech engine (an article = one "section"), so it has
+ * the same pause/resume, seekable progress bar, and ±10s skip as the country
+ * reports, plus per-language voice selection persisted across the whole site.
  */
 
 import { useEffect, useRef, useState } from 'react';
-import { Volume2, Square, RotateCcw, ChevronDown } from 'lucide-react';
-import { useSpeech } from '../hooks/useSpeech';
+import { Volume2, Play, Pause, Rewind, FastForward, ChevronDown } from 'lucide-react';
+import { useReportSpeech } from '../hooks/useReportSpeech';
+import { FloatingReportPlayer } from './ReportAudio';
 
 interface Props {
   id: string;
@@ -14,179 +16,135 @@ interface Props {
   lang: string;
   /** Use on dark backgrounds (e.g. article hero) */
   dark?: boolean;
+  /** Detail pages: also show the fixed floating transport, reachable while
+   * scrolling through maps/visuals. Leave off on list/index cards. */
+  floating?: boolean;
+  /** Label shown in the floating pill (e.g. the article title). */
+  title?: string;
 }
 
-// Estimated TTS rate for progress/time approximation (chars per second)
+// Estimated TTS rate for the progress/time approximation (chars per second)
 const CHARS_PER_SEC = 14;
 
 function formatTime(seconds: number): string {
+  if (!isFinite(seconds) || seconds < 0) seconds = 0;
   const m = Math.floor(seconds / 60);
   const s = Math.floor(seconds % 60);
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-export default function PortfolioTTSPlayer({ id, text, lang, dark = false }: Props) {
+export default function PortfolioTTSPlayer({ id, text, lang, dark = false, floating = false, title }: Props) {
   const isFr = lang.startsWith('fr');
-  const { voices, selectedVoiceName, selectVoice, speak, speakingId, stop, restart, charIndex, textLength } =
-    useSpeech();
+  const speech = useReportSpeech();
   const [voiceOpen, setVoiceOpen] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);
 
-  const isSupported = typeof window !== 'undefined' && 'speechSynthesis' in window;
-  const isPlaying = speakingId === id;
-
-  // Use textLength from hook when available (set after first play), else estimate from text prop
-  const totalChars = textLength > 0 && speakingId === id ? textLength : text.length;
+  const active = speech.activeId === id;
+  const playing = active && speech.status === 'playing';
+  const totalChars = active ? speech.totalChars : text.length;
   const totalDuration = totalChars / CHARS_PER_SEC;
-  const currentChar = isPlaying ? charIndex : 0;
-  const elapsed = currentChar / CHARS_PER_SEC;
-  const progress = totalChars > 0 ? Math.min(currentChar / totalChars, 1) : 0;
+  const progress = active ? speech.progress : 0;
+  const elapsed = progress * totalDuration;
+  const step = (10 * CHARS_PER_SEC) / (totalChars || 1);
 
-  // Close voice popover on outside click
+  const voices = speech.voicesForLang(lang);
+  const selected = speech.selectedVoiceName(lang);
+
   useEffect(() => {
     if (!voiceOpen) return;
     const handler = (e: MouseEvent) => {
-      if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) {
-        setVoiceOpen(false);
-      }
+      if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) setVoiceOpen(false);
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
   }, [voiceOpen]);
 
-  if (!isSupported) return null;
+  if (!speech.supported) return null;
 
-  const handlePlay = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    speak(id, text, lang);
+  const section = { id, text };
+  const accent = dark ? 'text-white hover:text-white/70' : 'text-[#7D1A2E] hover:text-[#5C1220]';
+  const dim = dark ? 'text-white/40 hover:text-white' : 'text-[#CCC] hover:text-[#7D1A2E]';
+
+  const onSeek = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!active) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    speech.seek((e.clientX - rect.left) / rect.width);
   };
 
-  const handleStop = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    stop();
-  };
-
-  const handleRestart = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    restart(id, text, lang);
-  };
-
-  const handleVoicePicker = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setVoiceOpen((v) => !v);
-  };
-
-  const handleVoiceSelect = (e: React.MouseEvent, name: string) => {
-    e.stopPropagation();
-    selectVoice(name);
-    setVoiceOpen(false);
-    if (isPlaying) restart(id, text, lang);
-  };
-
-  // ── Active player (playing or stopped after interaction) ───────────────────
   return (
-    <div
-      className="pt-3 w-full"
-      ref={popoverRef}
-      onClick={(e) => e.stopPropagation()}
-    >
+    <>
+    <div className="pt-3 w-full" ref={popoverRef} onClick={(e) => e.stopPropagation()}>
       <div className="flex items-center gap-2">
 
-        {/* Play / Stop toggle */}
-        {isPlaying ? (
-          <button
-            onClick={handleStop}
-            className={`p-1 flex-shrink-0 transition-colors ${
-              dark ? 'text-white hover:text-white/70' : 'text-[#7D1A2E] hover:text-[#5C1220]'
-            }`}
-            title="Stop"
-            aria-label="Stop playback"
-          >
-            <Square size={12} fill="currentColor" />
-          </button>
-        ) : (
-          <button
-            onClick={handleRestart}
-            className={`p-1 flex-shrink-0 transition-colors ${
-              dark ? 'text-white hover:text-white/70' : 'text-[#7D1A2E] hover:text-[#5C1220]'
-            }`}
-            title="Play from beginning"
-            aria-label="Restart playback"
-          >
-            <Volume2 size={12} />
+        {/* Play / Pause / Resume */}
+        <button
+          onClick={(e) => { e.stopPropagation(); speech.play(section, lang); }}
+          className={`p-1 flex-shrink-0 transition-colors ${accent}`}
+          title={playing ? 'Pause' : (active ? (isFr ? 'Reprendre' : 'Resume') : (isFr ? 'Écouter' : 'Listen'))}
+          aria-label={playing ? 'Pause' : 'Play'}
+        >
+          {playing ? <Pause size={13} fill="currentColor" /> : active ? <Play size={13} fill="currentColor" /> : <Volume2 size={13} />}
+        </button>
+
+        {/* Back 10s (only while this article is loaded) */}
+        {active && (
+          <button onClick={(e) => { e.stopPropagation(); speech.seek(speech.progress - step); }} className={`p-1 flex-shrink-0 transition-colors ${dim}`} title={isFr ? 'Reculer de 10 s' : 'Back 10 seconds'} aria-label={isFr ? 'Reculer de 10 secondes' : 'Back 10 seconds'}>
+            <Rewind size={12} />
           </button>
         )}
 
-        {/* Progress bar */}
+        {/* Seekable progress bar */}
         <div
-          className={`flex-1 h-[3px] rounded-full overflow-hidden ${
-            dark ? 'bg-white/20' : 'bg-[#E0E0E0]'
-          }`}
-          title={`${formatTime(elapsed)} of ${formatTime(totalDuration)}`}
+          className={`flex-1 py-2 ${active ? 'cursor-pointer' : ''}`}
+          onClick={onSeek}
+          role="slider"
+          aria-label={isFr ? 'Position de lecture' : 'Playback position'}
+          aria-valuenow={Math.round(progress * 100)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          title={`${formatTime(elapsed)} / ${formatTime(totalDuration)}`}
         >
-          <div
-            className={`h-full rounded-full transition-[width] duration-300 ${
-              dark ? 'bg-white' : 'bg-[#7D1A2E]'
-            }`}
-            style={{ width: `${progress * 100}%` }}
-          />
+          <div className={`h-[3px] rounded-full overflow-hidden ${dark ? 'bg-white/20' : 'bg-[#E0E0E0]'}`}>
+            <div className={`h-full rounded-full transition-[width] duration-150 ${dark ? 'bg-white' : 'bg-[#7D1A2E]'}`} style={{ width: `${progress * 100}%` }} />
+          </div>
         </div>
 
-        {/* Time display */}
-        <span className={`text-[9px] font-mono flex-shrink-0 tabular-nums leading-none ${
-          dark ? 'text-white/60' : 'text-[#999]'
-        }`}>
-          {formatTime(elapsed)}<span className={dark ? 'text-white/30 mx-0.5' : 'text-[#CCC] mx-0.5'}>/</span>{formatTime(totalDuration)}
-        </span>
-
-        {/* Restart button (shown while playing) */}
-        {isPlaying && (
-          <button
-            onClick={handleRestart}
-            className={`p-1 flex-shrink-0 transition-colors ${
-              dark ? 'text-white/40 hover:text-white' : 'text-[#CCC] hover:text-[#7D1A2E]'
-            }`}
-            title="Restart from beginning"
-            aria-label="Restart from beginning"
-          >
-            <RotateCcw size={11} />
+        {/* Forward 10s */}
+        {active && (
+          <button onClick={(e) => { e.stopPropagation(); speech.seek(speech.progress + step); }} className={`p-1 flex-shrink-0 transition-colors ${dim}`} title={isFr ? 'Avancer de 10 s' : 'Forward 10 seconds'} aria-label={isFr ? 'Avancer de 10 secondes' : 'Forward 10 seconds'}>
+            <FastForward size={12} />
           </button>
         )}
+
+        {/* Time */}
+        <span className={`text-[9px] font-mono flex-shrink-0 tabular-nums leading-none ${dark ? 'text-white/60' : 'text-[#999]'}`}>
+          {formatTime(elapsed)}<span className={dark ? 'text-white/30 mx-0.5' : 'text-[#CCC] mx-0.5'}>/</span>{formatTime(totalDuration)}
+        </span>
 
         {/* Voice picker */}
         {voices.length > 0 && (
           <div className="relative flex-shrink-0">
             <button
-              onClick={handleVoicePicker}
-              className={`p-0.5 transition-colors ${
-                dark ? 'text-white/40 hover:text-white' : 'text-[#CCC] hover:text-[#7D1A2E]'
-              }`}
-              title="Choose voice"
-              aria-label="Choose voice"
+              onClick={(e) => { e.stopPropagation(); setVoiceOpen((v) => !v); }}
+              className={`p-0.5 transition-colors ${dim}`}
+              title={isFr ? 'Choisir la voix' : 'Choose voice'}
+              aria-label={isFr ? 'Choisir la voix' : 'Choose voice'}
             >
-              <ChevronDown
-                size={10}
-                className={`transition-transform duration-200 ${voiceOpen ? 'rotate-180' : ''}`}
-              />
+              <ChevronDown size={10} className={`transition-transform duration-200 ${voiceOpen ? 'rotate-180' : ''}`} />
             </button>
 
             {voiceOpen && (
-              <div
-                className="absolute bottom-full right-0 mb-2 w-56 bg-white border border-[#D4CDC5] shadow-lg z-50 rounded"
-                onClick={(e) => e.stopPropagation()}
-              >
+              <div className="absolute bottom-full right-0 mb-2 w-56 bg-white border border-[#D4CDC5] shadow-lg z-50 rounded" onClick={(e) => e.stopPropagation()}>
                 <div className="px-3 py-2 border-b border-[#EFEFEF] text-[9px] tracking-[0.2em] uppercase text-[#999] font-body">
-                  Voice
+                  {isFr ? 'Voix · français' : 'Voice · English'}
                 </div>
                 <ul className="max-h-48 overflow-y-auto">
                   {voices.map((v) => (
                     <li key={v.name}>
                       <button
-                        onClick={(e) => handleVoiceSelect(e, v.name)}
+                        onClick={(e) => { e.stopPropagation(); speech.selectVoice(lang, v.name); setVoiceOpen(false); }}
                         className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
-                          selectedVoiceName === v.name
-                            ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium'
-                            : 'text-[#333] hover:bg-[#F5F5F5]'
+                          selected === v.name ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium' : 'text-[#333] hover:bg-[#F5F5F5]'
                         }`}
                       >
                         <span className="block truncate">{v.name}</span>
@@ -201,13 +159,13 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false }: Pro
         )}
       </div>
       {voices.length > 0 && (
-        <p className={`mt-1.5 flex items-center gap-1 text-[8px] font-body leading-none ${
-          dark ? 'text-white/25' : 'text-[#C0C0C0]'
-        }`}>
-          {isFr ? 'Voix et langue sélectionnables au bout de la ligne :' : 'Voice & language selectable at the end of the line:'}
+        <p className={`mt-1.5 flex items-center gap-1 text-[8px] font-body leading-none ${dark ? 'text-white/25' : 'text-[#C0C0C0]'}`}>
+          {isFr ? 'Voix et langue sélectionnables au bout de la ligne :' : 'Voice & language selectable at the end of the line:'}
           <ChevronDown size={9} strokeWidth={2} />
         </p>
       )}
     </div>
+    {floating && <FloatingReportPlayer speech={speech} lang={lang} sectionName={title} />}
+    </>
   );
 }

@@ -242,6 +242,8 @@ export default function ProjectDetailLayout({
                 text={buildArticleTextFromProps(title, subtitle, introduction, sections, keyTakeaways)}
                 lang={lang === 'fr' ? 'fr-FR' : 'en-CA'}
                 dark
+                floating
+                title={title}
               />
             </div>
           </div>
