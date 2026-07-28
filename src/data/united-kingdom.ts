@@ -6,7 +6,7 @@
  * Sources: Office for National Statistics, Bank of England, HM Treasury, Foreign Office, UK Parliament, SIPRI, ACLED, V-Dem Institute
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const unitedKingdomAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-20',

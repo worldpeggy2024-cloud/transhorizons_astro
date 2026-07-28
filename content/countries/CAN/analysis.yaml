@@ -1,37 +1,39 @@
 nameEn: Canada
 nameFr: Canada
-lastUpdated: '2026-07-27'
-scorecard_eliteCohesion: Med
-scorecard_socialCohesion: Med
+lastUpdated: '2026-07-28'
+scorecard_eliteCohesion: Med-High
+scorecard_socialCohesion: High
 scorecard_securityLoyalty: High
 scorecard_economicPressure: Med
 scorecard_protestCapacity: Low
-scorecard_institutionalResilience: High
+scorecard_institutionalResilience: Med-High
 scorecard_anchors: |-
   {
     "eliteCohesion": {
       "anchors": [
-        "political.stabilityDrivers",
         "political.powerStructure",
+        "political.stabilityDrivers",
         "political.shockAbsorbers",
-        "cbc-carney-majority-byelections-2026",
         "ourcommons-party-standings-2026",
-        "elections-alberta-referendum-2026"
+        "cbc-carney-majority-byelections-2026",
+        "elections-alberta-referendum-2026",
+        "aptn-alberta-petition-2026"
       ],
-      "rationale_en": "Single-party government with the confidence-vote fragility removed, but the majority is the bare threshold, crossed between elections through five floor crossings and rejected as illegitimate by the Official Opposition, so cohesion now rests on internal discipline across an enlarged and ideologically broad caucus — and the consequential fracture is vertical rather than horizontal, between the federal government and a province whose 19 October ballot carries a separation-process question.",
-      "rationale_fr": "Gouvernement d'un seul parti, la fragilité des votes de confiance ayant disparu, mais la majorité correspond au seuil strict, franchi entre deux élections par cinq passages de députés et jugé illégitime par l'opposition officielle : la cohésion repose désormais sur la discipline interne d'un caucus élargi et idéologiquement large; la fracture conséquente est verticale plutôt qu'horizontale, entre le gouvernement fédéral et une province dont le scrutin du 19 octobre porte une question sur le processus de séparation."
+      "rationale_en": "A single-party government with working control of the House and no faction contesting the federal order, carrying one real and contained strain — a vertical fracture with Alberta, whose 19 October 2026 referendum puts a separation-process question on the ballot, though the result is not binding, the Premier campaigns for remaining, and the courts have twice halted the citizen-petition route on treaty grounds; the thin route to majority, crossed between elections and rejected as illegitimate by the Official Opposition, sits alongside it rather than above it.",
+      "rationale_fr": "Un gouvernement monopartite disposant du contrôle effectif de la Chambre et aucune faction ne conteste l'ordre fédéral, mais une tension réelle et circonscrite subsiste : la fracture verticale avec l'Alberta, dont le référendum du 19 octobre 2026 inscrit au bulletin une question sur l'amorce d'un processus de sécession — résultat non contraignant, première ministre faisant campagne pour le maintien, et route de la pétition citoyenne bloquée deux fois par les tribunaux sur le fondement des traités; la voie étroite vers la majorité, franchie entre deux élections et jugée illégitime par l'opposition officielle, l'accompagne sans la dominer."
     },
     "socialCohesion": {
       "anchors": [
         "society.cohesion",
+        "society.religion",
         "statcan-css-trust-institutions-q4-2024",
         "statcan-css-trust-others",
         "wvs-canada",
-        "environics-focus-canada-immigration-2025",
-        "environics-multiculturalism-2026"
+        "environics-multiculturalism-2026",
+        "environics-focus-canada-immigration-2025"
       ],
-      "rationale_en": "Trust is uneven rather than low — majority confidence in the police and courts against the worst reading of any institution measured for the federal Parliament, interpersonal trust drifting slowly down with a nine-point generational gap opening and strong national pride softening — and the immigration consensus broke and now sorts sharply by party, but rejection of diversity itself did not follow, support for multiculturalism spanning racialized and white respondents alike.",
-      "rationale_fr": "Confiance inégale plutôt que faible : majorité de confiance envers la police et les tribunaux, contre la pire lecture de toutes les institutions mesurées pour le Parlement fédéral; confiance interpersonnelle en léger recul avec un écart générationnel se creusant de neuf points et une fierté nationale forte qui s'érode. Le consensus sur l'immigration s'est rompu et se clive désormais nettement selon l'allégeance partisane, sans qu'un rejet de la diversité elle-même s'ensuive : l'appui au multiculturalisme se maintient tant chez les répondants racisés que chez les répondants blancs."
+      "rationale_en": "The report records no political violence and no communal or sectarian division: cleavages run through courts, ballots and surveys, majorities affirm that multiculturalism has contributed positively to Canadian identity across racialized and white respondents alike, and the long values record shows an asymmetric spread of political values rather than symmetric polarisation; the located erosions — interpersonal trust drifting inside a narrow band, a nine-point generational trust gap, confidence in the federal Parliament the weakest reading of any institution measured, and a reversed immigration consensus attributed to government management rather than to immigrants — qualify the reading without changing the structure.",
+      "rationale_fr": "Le rapport ne relève aucune violence politique ni division communautaire ou confessionnelle : les clivages passent par les tribunaux, les urnes et les sondages, des majorités affirment que le multiculturalisme a contribué positivement à l'identité canadienne, tant chez les répondants racisés que blancs, et le long relevé des valeurs montre une dispersion asymétrique des valeurs politiques plutôt qu'une polarisation symétrique; les érosions localisées — confiance interpersonnelle qui dérive à l'intérieur d'une bande étroite, écart de confiance générationnel de neuf points, confiance envers le Parlement fédéral la plus faible de toutes les institutions mesurées, et consensus sur l'immigration renversé mais imputé à la gestion gouvernementale plutôt qu'aux immigrants — nuancent la lecture sans modifier la structure."
     },
     "securityLoyalty": {
       "anchors": [
@@ -41,35 +43,41 @@ scorecard_anchors: |-
         "justice-rcmp-act",
         "rcmp-transition-binder"
       ],
-      "rationale_en": "Civilian control is statutory and unambiguous : the Minister of National Defence has the management and direction of the Canadian Armed Forces and the Minister of Public Safety directs the Royal Canadian Mounted Police, and both the Chief of the Defence Staff and the Commissioner of the Royal Canadian Mounted Police are appointed by the Governor in Council, with operational independence exercised inside that accountability rather than against it. Institutional loyalty to civilian authority is not in question, there is no history of military intervention in politics, and no systemic corruption in the security forces is recorded.",
-      "rationale_fr": "Contrôle civil de nature législative et sans ambiguïté : le ministre de la Défense nationale assure la gestion et la direction des Forces armées canadiennes et le ministre de la Sécurité publique dirige la Gendarmerie royale du Canada; le chef d'état-major de la défense comme le commissaire de la Gendarmerie sont nommés par le gouverneur en conseil, l'indépendance opérationnelle s'exerçant à l'intérieur de cette responsabilité et non contre elle. La loyauté institutionnelle envers l'autorité civile n'est pas en cause, aucune intervention militaire dans la vie politique n'est attestée dans l'histoire du pays, et aucune corruption systémique des forces de sécurité n'est consignée."
+      "rationale_en": "Civilian control is both statutory and demonstrated: the Minister of National Defence has the management and direction of the Canadian Armed Forces and the Chief of the Defence Staff exercises control under that direction, the Commissioner of the Royal Canadian Mounted Police is likewise appointed by the Governor in Council and answerable to the Minister of Public Safety while operationally independent in core law-enforcement functions, institutional loyalty to civilian authority is not in question, Canada has no history of military intervention in politics, and no systemic corruption in the security forces is recorded in the sources consulted.",
+      "rationale_fr": "Le contrôle civil est à la fois légal et démontré : le ministre de la Défense nationale a la gestion et la direction des Forces armées canadiennes et le chef d'état-major de la défense en exerce le contrôle sous cette direction, le commissaire de la Gendarmerie royale du Canada est de même nommé par le gouverneur en conseil et répond au ministre de la Sécurité publique tout en demeurant indépendant sur le plan opérationnel dans les fonctions policières essentielles, la loyauté institutionnelle envers l'autorité civile n'est pas en cause, le Canada n'a aucun antécédent d'intervention militaire en politique, et aucune corruption systémique des forces de sécurité n'est consignée dans les sources consultées."
     },
     "economicPressure": {
       "anchors": [
-        "situation",
-        "economy.externalVulnerability",
         "economy.realEconomy",
+        "economy.externalVulnerability",
         "economy.publicFinances",
-        "capacity.productivity",
-        "whitehouse-section338-2026",
-        "pbo-efo-jun2026",
+        "situation",
         "statcan-gdp-q1-2026",
-        "seu-2026"
+        "pbo-efo-jun2026",
+        "whitehouse-section338-2026",
+        "seu-2026",
+        "political.shockAbsorbers",
+        "finance-major-transfers-2026",
+        "statcan-cpi-jun2026",
+        "statcan-lfs-may2026"
       ],
-      "rationale_en": "Pressure is sustained and escalating on the external side: eighteen months in which the tariff regime shifted repeatedly in rate, scope and legal basis, a trade agreement past its review deadline and now on annual reviews, a first-ever Section 338 proclamation that from 19 August gives no shelter to goods qualifying under that agreement, output flat after a contraction, and the Parliamentary Budget Officer treating the tariffs as permanent. But it lands on a state with real fiscal room — a deficit near 2% of output on a declining track, top-tier ratings and debt held at home — so the strain reads as a stalled recovery exposed to an unresolved shock rather than a fiscal or financial crisis.",
-      "rationale_fr": "La pression est soutenue et va croissant du côté extérieur : dix-huit mois pendant lesquels le régime de droits de douane a changé à répétition de taux, de portée et de fondement juridique, un accord commercial dont l'échéance d'examen est franchie et qui passe désormais à des examens annuels, une première proclamation en vertu de l'article 338 qui, à compter du 19 août, ne protège plus les marchandises admissibles au titre de cet accord, une production stable après une contraction, et la directrice parlementaire du budget qui tient ces droits de douane pour permanents. Mais cette pression s'exerce sur un État qui dispose d'une réelle marge budgétaire (un déficit d'environ 2 % du produit intérieur brut sur une trajectoire descendante, des cotes de premier rang et une dette détenue au pays), de sorte que la tension se lit comme une reprise en panne exposée à un choc non résolu, et non comme une crise budgétaire ou financière."
+      "rationale_en": "Real strain landing on a state with the means to absorb it: output contracted 0.6% at an annual rate in the fourth quarter of 2025 and was flat in the first quarter of 2026, the Parliamentary Budget Officer treats the tariff measures as permanent, the trade framework has passed into rolling annual review and a first-ever Section 338 duty of 50% reaches named sectors from 19 August 2026 with no exemption for compliant goods — against a deficit of 2.1% of gross domestic product on a declining track, federal debt at 41.1% held predominantly at home, three of four rating agencies at their highest grade, inflation easing to 2.8%, unemployment easing to 6.6%, and $108.4 billion in largely automatic transfers.",
+      "rationale_fr": "Une tension réelle qui frappe un État ayant les moyens de l'absorber : la production s'est contractée de 0,6 % en rythme annualisé au quatrième trimestre de 2025 et a stagné au premier trimestre de 2026, le directeur parlementaire du budget traite les mesures tarifaires comme permanentes, le cadre commercial est passé à des examens annuels successifs et un droit de 50 % au titre de l'article 338, invoqué pour la première fois, frappera des secteurs nommés à compter du 19 août 2026 sans exemption pour les marchandises conformes — face à un déficit de 2,1 % du produit intérieur brut sur une trajectoire descendante, une dette fédérale à 41,1 % détenue majoritairement au pays, trois agences de notation sur quatre à leur note la plus élevée, une inflation ramenée à 2,8 %, un chômage ramené à 6,6 % et 108,4 milliards de dollars de transferts largement automatiques."
     },
     "protestCapacity": {
       "anchors": [
         "society.cohesion",
+        "society.religion",
+        "situation",
         "economy.politicalEconomy",
         "political.stabilityDrivers",
+        "political.constitutionalSubstrate",
         "clc-unifor-2025",
-        "afn-nrta-2025",
-        "aptn-alberta-petition-2026"
+        "elections-alberta-referendum-2026",
+        "canlii-acfn-2026"
       ],
-      "rationale_en": "The report records no demonstration, strike or mass-mobilisation event in any of its six sections or in its event layer. The contestation it does document runs through courts and organisations rather than streets: First Nations litigation twice halting the citizen-petition route to a separation vote, the Assembly of First Nations invoking the numbered Treaties, and three labour federations of substantial membership acting as a counterweight. The value therefore reflects the absence of a mobilisation record in the report, not a measured incapacity in the population.",
-      "rationale_fr": "Le rapport ne consigne aucune manifestation, aucune grève ni aucun événement de mobilisation de masse dans l'une ou l'autre de ses six sections ni dans sa section situationnelle. La contestation qu'il documente passe par les tribunaux et les organisations plutôt que par la rue : les recours judiciaires des Premières Nations ayant bloqué à deux reprises la voie de la pétition citoyenne pour un vote sur la séparation, l'Assemblée des Premières Nations invoquant les traités numérotés, et trois centrales syndicales à l'effectif considérable agissant comme contrepoids. La valeur retenue traduit donc l'absence de données sur la mobilisation dans le rapport, et non une incapacité mesurée au sein de la population."
+      "rationale_en": "Low by absence: the report carries no mobilisation event of any kind — no demonstration, strike or mass protest in the society fields or in the situation layer — and records faith-based mobilisation as marginal; the organisational capacity exists on paper, with roughly three million workers across the Canadian Labour Congress affiliates, 315,000 in Unifor and around 300,000 in the Confédération des syndicats nationaux, but the contestation the report actually documents runs through courts, petitions and ballots, from the Alberta referendum to the First Nations litigation that twice set aside the petition route.",
+      "rationale_fr": "Faible par absence : le rapport ne fait état d'aucun événement de mobilisation — aucune manifestation, grève ou protestation de masse dans les champs sociétaux ni dans la couche situationnelle — et qualifie de marginale la mobilisation d'origine religieuse; la capacité d'organisation existe sur le papier, avec quelque trois millions de travailleurs dans les affiliés du Congrès du travail du Canada, 315 000 chez Unifor et environ 300 000 à la Confédération des syndicats nationaux, mais la contestation effectivement documentée passe par les tribunaux, les pétitions et les urnes, du référendum albertain aux litiges des Premières Nations qui ont écarté deux fois la voie pétitionnaire."
     },
     "institutionalResilience": {
       "anchors": [
@@ -77,75 +85,97 @@ scorecard_anchors: |-
         "political.rightsAndChecks",
         "political.constitutionalSubstrate",
         "capacity.steering",
+        "capacity.delivery",
         "finance-major-transfers-2026",
-        "canlii-acfn-2026",
         "canlii-secession-reference-1998",
-        "statcan-css-trust-institutions-q4-2024"
+        "oag-may-2026",
+        "statcan-ccpi-renewal-2022",
+        "pm-scc-appointment-2026"
       ],
-      "rationale_en": "Three shocks were absorbed on the record: a tariff rupture without fiscal or financial distress, a provincial secession initiative twice set aside by a superior court on treaty grounds within a settled doctrinal framework, and a contested route to majority absorbed without a confidence crisis. The buffers doing that work operate automatically rather than by discretion — $108.4 billion in major transfers, including unconditional equalization. Three qualifications: the follow-through weakness the audit office reports is chronic and repeating, monetary room is thinner than it was, and the institution that would have to legitimate any future absorption records the lowest confidence of any measured.",
-      "rationale_fr": "Trois chocs ont été absorbés au vu du bilan : une rupture en matière de droits de douane sans détresse budgétaire ni financière, une initiative provinciale de sécession écartée à deux reprises par une cour supérieure au motif des droits issus de traités, à l'intérieur d'un cadre jurisprudentiel bien établi, et une voie contestée vers la majorité absorbée sans crise de confiance. Les mécanismes d'atténuation qui accomplissent ce travail jouent automatiquement plutôt que par décision discrétionnaire : 108,4 milliards de dollars en transferts principaux, dont la péréquation sans condition. Trois réserves : la faiblesse du suivi que signale le bureau de vérification est chronique et récurrente, la marge de manœuvre monétaire est plus étroite qu'auparavant, et l'institution qui devrait légitimer toute absorption future enregistre le plus faible niveau de confiance de toutes celles qui ont été mesurées."
+      "rationale_en": "The buffers are largely automatic and the doctrine is settled — $108.4 billion in major transfers including $27.2 billion of unconditional equalization cushioning regional downturns without discretionary decision, an independent judiciary exercising full judicial review, an apex-court appointment run through the published non-partisan process this year, and the 1998 secession doctrine now being applied to a live provincial initiative — carrying one real and contained strain: the country's own audit office finds that programmes are in place, funding is delivered and risks are known while weaknesses in implementation and monitoring hold back results, a pattern it says is not new, and the renewal of core public infrastructure runs at 11% of the requirement its owners identified while condition ratings fall.",
+      "rationale_fr": "Les amortisseurs sont largement automatiques et la doctrine est établie — 108,4 milliards de dollars de transferts majeurs, dont 27,2 milliards de péréquation inconditionnelle qui amortissent les ralentissements régionaux sans décision discrétionnaire, une magistrature indépendante exerçant un plein contrôle judiciaire, une nomination à la cour suprême menée cette année selon le processus non partisan publié, et la doctrine de sécession de 1998 désormais appliquée à une initiative provinciale en cours — avec une tension réelle et circonscrite : le bureau de vérification du pays constate que les programmes sont en place, les fonds versés et les risques connus, mais que des faiblesses de mise en œuvre et de suivi freinent les résultats, un constat qu'il dit ne pas être nouveau, tandis que le renouvellement des infrastructures publiques essentielles atteint 11 % du besoin recensé par leurs propriétaires et que l'état des actifs se dégrade."
     }
   }
 baseline_en: >-
-  Canada is a Westminster federation with an unusually favourable endowment, an
-  unusually punishing geography, and one dominant external relationship that has
-  become the source of its principal strain. A Liberal government under Mark
-  Carney holds the bare majority threshold in a House of Commons it crossed
-  between elections rather than at one, and it governs against a fracture that
-  is vertical rather than horizontal: Alberta votes on 19 October on ten
-  questions, one of which asks whether to begin the legal process toward
-  separation — a route First Nations litigation has twice halted on treaty
-  grounds. Eighteen months of shifting United States tariff authority have left
-  damage that is sectoral rather than general: steel, aluminum, copper, vehicles
-  and softwood lumber carry duties the trade agreement does not shelter, the
-  agreement itself passed its review deadline unrenewed and now runs on annual
-  reviews, and a first-ever use of Section 338 of the US Tariff Act of 1930
-  reaches vehicles, alcohol, dairy and a long annex of consumer goods from 19
-  August with no exemption for compliant goods. The economy taking that is
-  high-income and service-dominated on a resource-export base, with output flat
-  in the first quarter of 2026 after a contraction, and it absorbs the strain
-  from strength: a deficit near two percent of output on a declining track, debt
-  held domestically, top-tier ratings from three of the four major agencies, and
-  $108.4 billion in transfers that cushion regions automatically. What the state
-  documents about itself is follow-through rather than means — a widening
-  infrastructure maintenance backlog, 5.7 million adults without a regular
-  primary care provider, an approvals regime whose two-year clock has not
-  started on any project — alongside a life-expectancy gap of nearly eight years
-  between Indigenous and non-Indigenous people that is widening rather than
-  closing.
+  Canada is the world's second-largest country by area and one of its most
+  thinly settled: close to 10 million square kilometres holding roughly 41.5
+  million people, two in three of them living within 100 kilometres of a single
+  land border, strung along an east-west rail, transmission and
+  telecommunications spine that is costlier to hold together than the shorter
+  and more natural north-south routes; the cost of distance and cold climate
+  making every kilometre of infrastructure and every unit of service expensive
+  to deliver. Its endowment is exceptional — about a fifth of the world's
+  freshwater reserves, forests covering close to a tenth of the global total,
+  potash reserves second only to Russia's, the third-largest uranium and
+  fourth-largest proven oil reserves, and thirty-four listed critical minerals
+  (several of which it already produces at world scale), without, however,
+  having built the capacity to process them. The economy is high-income and
+  service-dominated, with four in five jobs outside the goods sector, but it
+  rests on a resource-export base and a manufacturing belt in the Ontario–Quebec
+  corridor; the productivity record has however trailed comparable economies for
+  two decades and roughly three-quarters of merchandise exports going to one
+  neighbour. Society is plural (despite an immigration consensus that has
+  recently broken while support for pluralism has held), urban, high-trust by
+  international standards and officially bilingual: francophone-majority Quebec
+  operates under civil law, the other provinces under common law, and Indigenous
+  constitutional rights run to the Crown rather than to the provinces. The
+  sharpest inequality is a life-expectancy gap of nearly eight years between
+  Indigenous and non-Indigenous people, and it is widening. The state is a
+  Westminster parliamentary federation under a constitutional monarchy in which
+  sovereignty is divided: ten provinces, which own the resources and run health
+  and education, and three territories, whose jurisdiction is delegated by
+  federal statute. It is wealthy, top-rated and constitutionally constrained,
+  with an independent judiciary and deep, largely automatic fiscal buffers; its
+  recurring weakness is neither intent nor money but follow-through — its own
+  audit office reports programmes funded and risks known while implementation
+  and monitoring lag. Security is defensive and alliance-dependent, and defence
+  is continentally integrated with the same neighbour whose tariffs have, since
+  2025, turned the trading asymmetry from a background condition into open
+  rupture and the source of most of the country's economic and strategic
+  uncertainty.
 baseline_fr: >-
-  Le Canada est une fédération de type Westminster dotée d'une richesse
-  naturelle exceptionnellement favorable, d'une géographie exceptionnellement
-  punitive et d'une relation extérieure dominante devenue la source de sa
-  principale tension. Un gouvernement libéral dirigé par Mark Carney détient le
-  seuil strict de la majorité dans une Chambre des communes qu'il a franchi
-  entre deux élections plutôt qu'à l'occasion d'une élection, et il gouverne
-  face à une fracture verticale plutôt qu'horizontale : l'Alberta vote le 19
-  octobre sur dix questions, dont l'une demande s'il faut amorcer le processus
-  juridique menant à la séparation; voie qu'un litige des Premières Nations a
-  bloquée à deux reprises sur le fondement des traités. Dix-huit mois de
-  changements dans l'assise juridique des droits de douane états-uniens ont
-  laissé un dommage sectoriel plutôt que général : l'acier, l'aluminium, le
-  cuivre, les véhicules et le bois d'œuvre portent des droits contre lesquels
-  l'accord commercial n'offre aucun abri, l'accord lui-même a dépassé son
-  échéance de révision sans renouvellement et fonctionne désormais par examens
-  annuels, et un premier recours dans l'histoire à l'article 338 de la loi
-  tarifaire de 1930 des États-Unis atteint les véhicules, l'alcool, les produits
-  laitiers et une longue annexe de biens de consommation à compter du 19 août,
-  sans exemption pour les marchandises conformes. L'économie qui subit ce choc
-  est à revenu élevé et dominée par les services sur une base d'exportation de
-  ressources; la production ayant stagné au premier trimestre de 2026 après une
-  contraction, et elle absorbe la tension depuis une position de force : un
-  déficit voisin de deux pour cent de la production sur une trajectoire
-  descendante, une dette détenue au pays, les meilleures notations chez trois
-  des quatre grandes agences et 108,4 milliards de dollars de transferts qui
-  amortissent automatiquement les replis régionaux. Ce que l'État documente sur
-  lui-même relève du suivi et non des moyens (un déficit d'entretien des
-  infrastructures qui se creuse, 5,7 millions d'adultes sans fournisseur
-  régulier de soins primaires, un régime d'autorisation dont le délai de deux
-  ans n'a commencé à courir pour aucun projet) parallèlement à un écart
-  d'espérance de vie de près de huit ans entre les populations autochtones et
-  non autochtones, qui se creuse plutôt qu'il ne se resserre.
+  Le Canada est le deuxième pays du monde par la superficie et l'un des plus
+  faiblement peuplés : près de 10 millions de kilomètres carrés pour environ
+  41,5 millions d'habitants, dont deux sur trois vivent à moins de 100
+  kilomètres d'une seule frontière terrestre, égrenés le long d'une épine
+  dorsale est-ouest (ferroviaire, électrique et de télécommunications) dont le
+  maintien coûte plus cher que celui des tracés nord-sud, plus courts et plus
+  naturels; le coût de la distance et du climat rigoureux rendant coûteux chaque
+  kilomètre d'infrastructure et chaque unité de service à livrer. La dotation
+  est exceptionnelle : environ le cinquième des réserves mondiales d'eau douce,
+  des forêts couvrant près du dixième du total mondial, des réserves de potasse
+  au deuxième rang derrière celles de la Russie, les troisièmes réserves
+  d'uranium et les quatrièmes réserves prouvées de pétrole, ainsi que
+  trente-quatre minéraux critiques répertoriés (dont plusieurs classés parmi les
+  productions mondiales de premier plan), sans avoir cependant bâti la capacité
+  de les transformer. L'économie est à revenu élevé et dominée par les services,
+  quatre emplois sur cinq se situant hors du secteur des biens, reposant sur une
+  base d'exportation de ressources et sur une ceinture manufacturière dans le
+  corridor Ontario-Québec; cependant le bilan de productivité est inférieur à
+  celui d'économies comparables depuis deux décennies et environ les trois
+  quarts des exportations de marchandises destinées à un seul voisin. La société
+  est plurielle (le consensus sur l'immigration s'étant cependant récemment
+  rompu malgré le maintien de l'appui au pluralisme), urbaine, marquée par un
+  niveau de confiance élevé selon les normes internationales et officiellement
+  bilingue : le Québec, à majorité francophone, relève du droit civil, les
+  autres provinces relèvent de la common law, et les droits constitutionnels
+  autochtones s'exercent à l'égard de la Couronne plutôt que des provinces.
+  L'inégalité la plus vive est un écart (qui se creuse) d'espérance de vie de
+  près de huit ans entre les personnes autochtones et non autochtones. L'État
+  est une fédération démocratique et parlementaire de type Westminster, sous
+  monarchie constitutionnelle, où la souveraineté est partagée : dix provinces,
+  détenant les ressources et administrant la santé et l'éducation, et trois
+  territoires, aux compétences déléguées par loi fédérale. L'État est riche,
+  doté des meilleures cotes de crédit et encadré par la Constitution, avec un
+  pouvoir judiciaire indépendant et des mécanismes budgétaires d'atténuation
+  profonds et en grande partie automatiques; sa faiblesse récurrente ne tient ni
+  à l'intention ni aux moyens, mais au suivi : son propre bureau de vérification
+  signale des programmes financés et des risques connus, alors que la mise en
+  œuvre et la surveillance accusent un retard. La sécurité est défensive et
+  tributaire des alliances; la défense est intégrée à l'échelle continentale
+  avec ce même voisin dont les droits de douane ont, depuis 2025, transformé
+  l'asymétrie commerciale d'une caractéristique de fond en une rupture ouverte
+  et la source principale de l'incertitude économique et stratégique du pays.
 territory_geography_en: >-
   The world's second-largest country by area, Canada spans a continent from the
   Atlantic to the Pacific and north to the Arctic Ocean — coastal on three
@@ -856,7 +886,8 @@ society_language_en: >-
   faster [statcan-2021-census-language]. In Quebec, the population whose first
   official language is English passed one million for the first time, rising to
   13.0% [statcan-2021-census-language]. That divergence is what the federal
-  official-languages regime and Quebec's Charter of the French language each
+  official-languages regime [justice-official-languages-act] and Quebec's
+  Charter of the French language [legisquebec-charte-langue-francaise] each
   respond to.
 society_language_fr: >-
   Le Canada compte deux langues officielles et une importante troisième strate
@@ -3659,7 +3690,7 @@ capacity_knownAndUnbuilt_en: |-
           "capacity.steering",
           "pbo-nato-5-percent-2026"
         ],
-        "since": "since Budget 2025, where the uncosted pathway to the 2035 commitment originates and which the Parliamentary Budget Officer found lacks a costed plan [pbo-nato-5-percent-2026]",
+        "since": "since the Hague summit of June 2025, where Canada committed to 5% of output by 2035 — a commitment the Parliamentary Budget Officer records as standing without any published costed pathway [pbo-nato-5-percent-2026]",
         "class": "announced-not-implemented"
       },
       {
@@ -3903,7 +3934,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.steering",
           "pbo-nato-5-percent-2026"
         ],
-        "since": "depuis le budget de 2025, d’où provient la trajectoire non chiffrée vers l’engagement de 2035 et dont la directrice parlementaire du budget a constaté l’absence de plan chiffré [pbo-nato-5-percent-2026]",
+        "since": "depuis le sommet de La Haye de juin 2025, où le Canada s’est engagé à consacrer 5 % de sa production d’ici 2035 — un engagement qui, selon la directrice parlementaire du budget, demeure sans aucune trajectoire chiffrée publiée [pbo-nato-5-percent-2026]",
         "class": "announced-not-implemented"
       },
       {

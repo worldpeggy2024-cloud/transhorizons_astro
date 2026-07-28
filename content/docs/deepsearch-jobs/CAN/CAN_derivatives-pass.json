@@ -1,0 +1,555 @@
+{
+  "scorecard": {
+    "eliteCohesion": "Med",
+    "socialCohesion": "High",
+    "securityLoyalty": "High",
+    "economicPressure": "Med",
+    "protestCapacity": "Low",
+    "institutionalResilience": "High"
+  },
+  "scorecardAnchors": {
+    "eliteCohesion": {
+      "anchors": [
+        "political.powerStructure",
+        "political.stabilityDrivers",
+        "ourcommons-membership-changes",
+        "cbc-carney-majority-byelections-2026",
+        "elections-alberta-referendum-2026",
+        "cba-alberta-appointments-2026"
+      ],
+      "rationale_en": "Leadership transitions are routine and no faction contests the state's existence, but the governing majority was assembled between elections through floor crossings and is rejected as illegitimate by the Official Opposition, and one provincial government has placed a separation-process question on a ballot while also contesting the federal power to appoint superior court judges: real factional strain inside a system nobody is trying to break, sitting between Med and High and closer to High, because the contest is jurisdictional rather than about the legitimacy of the state.",
+      "rationale_fr": "Les transitions du pouvoir sont routinières et aucune faction ne conteste l'existence de l'État, mais la majorité gouvernementale a été constituée entre deux élections par des changements d'allégeance et l'opposition officielle en récuse la légitimité, tandis qu'un gouvernement provincial soumet à scrutin une question sur l'amorce d'un processus de sécession tout en contestant le pouvoir fédéral de nommer les juges des cours supérieures : tension factionnelle réelle au sein d'un système que personne ne cherche à briser, située entre Med et High et plus près de High, le litige portant sur le partage des compétences et non sur la légitimité de l'État."
+    },
+    "socialCohesion": {
+      "anchors": [
+        "society.cohesion",
+        "society.composition",
+        "statcan-css-trust-institutions-q4-2024",
+        "statcan-css-trust-others",
+        "wvs-canada",
+        "environics-multiculturalism-2026"
+      ],
+      "rationale_en": "A society with no record of political violence, cleavages that cross-cut rather than stack outside Quebec, interpersonal trust that is moderate and drifting only slowly, and broad majority agreement that multiculturalism has contributed positively; softening national pride, a widening generational trust gap and a sharp turn in immigration opinion are real strains inside a settled society rather than a breach in it.",
+      "rationale_fr": "Une société sans antécédents de violence politique, dont les clivages sont transversaux plutôt que cumulatifs hors du Québec, où la confiance interpersonnelle est modérée et ne fléchit que lentement, et où une large majorité juge que le multiculturalisme a contribué positivement ; l'affaiblissement de la fierté nationale, le creusement de l'écart de confiance entre générations et le net revirement de l'opinion sur l'immigration constituent des tensions réelles au sein d'une société stabilisée, non une rupture."
+    },
+    "securityLoyalty": {
+      "anchors": [
+        "political.stabilityDrivers",
+        "security.internal",
+        "justice-national-defence-act",
+        "justice-rcmp-act",
+        "rcmp-transition-binder"
+      ],
+      "rationale_en": "Civilian control is statutory and demonstrated in the observed record: ministerial direction of the armed forces and of the federal police is set out in statute, police doctrine draws the operational-independence line explicitly, there is no history of military intervention in politics, and no systemic corruption in the security forces is recorded.",
+      "rationale_fr": "Le contrôle civil est à la fois statutaire et avéré dans les faits observés : la direction ministérielle des forces armées et de la police fédérale est inscrite dans la loi, la doctrine policière trace explicitement la limite de l'indépendance opérationnelle, aucun antécédent d'intervention militaire en politique n'existe et aucune corruption systémique n'est constatée au sein des forces de sécurité."
+    },
+    "economicPressure": {
+      "anchors": [
+        "economy.realEconomy",
+        "economy.publicFinances",
+        "economy.externalVulnerability",
+        "situation",
+        "pbo-efo-jun2026",
+        "seu-2026",
+        "statcan-cpi-jun2026",
+        "boc-mpr-jul2026"
+      ],
+      "rationale_en": "A real external shock, with a tariff regime the Parliamentary Budget Officer treats as permanent, output flat after a quarterly contraction and growth around 1.1 to 1.5%, is landing on a state with the means to absorb it: a deficit at 2.1% of output, top-tier credit ratings on debt held predominantly at home, inflation easing to 2.8% and a policy rate held at 2.25%.",
+      "rationale_fr": "Un choc externe réel — un régime tarifaire que le directeur parlementaire du budget tient pour permanent, une production stagnante après une contraction trimestrielle et une croissance de l'ordre de 1,1 à 1,5 % — s'abat sur un État qui a les moyens de l'absorber : un déficit à 2,1 % de la production, des notes de crédit du meilleur rang sur une dette détenue majoritairement au pays, une inflation revenue à 2,8 % et un taux directeur maintenu à 2,25 %."
+    },
+    "protestCapacity": {
+      "anchors": [
+        "society.cohesion",
+        "situation",
+        "economy.politicalEconomy"
+      ],
+      "rationale_en": "Low by absence: the report records no mass demonstration, general strike or comparable mobilisation event anywhere in the peer fields or in its single situation thread; contestation runs through courts, elections and intergovernmental bargaining, and the trade union figures the report carries describe membership rather than any demonstrated mobilisation.",
+      "rationale_fr": "Faible par absence : le rapport ne consigne aucune manifestation de masse, grève générale ou mobilisation comparable, ni dans les champs pairs ni dans son unique fil de situation ; la contestation passe par les tribunaux, les élections et la négociation intergouvernementale, et les effectifs syndicaux que rapporte le rapport décrivent une adhésion et non une mobilisation démontrée."
+    },
+    "institutionalResilience": {
+      "anchors": [
+        "political.shockAbsorbers",
+        "political.constitutionalSubstrate",
+        "political.rightsAndChecks",
+        "finance-major-transfers-2026",
+        "canlii-secession-reference-1998",
+        "canlii-acfn-2026",
+        "fja-scc-process"
+      ],
+      "rationale_en": "The buffers are large and largely automatic, with $108.4 billion in major transfers including unconditional equalization that cushions regional downturns without a discretionary decision, and the constitutional doctrine is settled and demonstrably operating, the 1998 secession framework and section 35 treaty rights both having been applied by the courts against a live provincial initiative; thinner monetary room, a bare parliamentary majority and weak confidence in Parliament are strain within a working structure, not failure of it.",
+      "rationale_fr": "Les amortisseurs sont considérables et largement automatiques, avec 108,4 milliards de dollars de transferts majeurs dont une péréquation inconditionnelle qui amortit les ralentissements régionaux sans décision discrétionnaire, et la doctrine constitutionnelle est établie et manifestement opérante, le cadre de 1998 sur la sécession et les droits issus de traités protégés par l'article 35 ayant tous deux été appliqués par les tribunaux face à une initiative provinciale en cours ; l'étroitesse accrue de la marge monétaire, une majorité parlementaire minimale et la faible confiance envers le Parlement relèvent de la tension au sein d'une structure qui fonctionne, non de sa défaillance."
+    }
+  },
+  "baseline": {
+    "en": "Canada is a continental federation of roughly forty-one and a half million people spread thinly across the world's second-largest landmass, two of every three of them living within a hundred kilometres of a single land border, and much of how the country works follows from that geometry: one east-west rail, transmission and telecommunications spine links population clusters that trade more naturally north-south. It is a high-income service economy, services carrying four jobs in five, resting on a geographically concentrated resource-export base, with public finances among the strongest rated anywhere and a productivity record that has trailed comparable economies for two decades. Its politics are Westminster and federal: a Liberal majority government working on a bare margin, an independent judiciary and settled constitutional doctrine, and an unresolved jurisdictional contest with Alberta over the terms of the federal bargain, in which Indigenous treaty rights have proved decisive. Society is plural, peaceful and high-trust by international comparison, with the gap between Indigenous and non-Indigenous outcomes the sharpest and most persistent inequality it carries. Security is defensive and alliance-dependent, conducted continentally with the same neighbour whose tariffs have unsettled the trading relationship on which the export economy was built.",
+    "fr": "Le Canada est une fédération continentale d'environ quarante et un millions et demi d'habitants répartis de façon clairsemée sur le deuxième plus vaste territoire du monde, dont deux sur trois vivent à moins de cent kilomètres d'une frontière terrestre unique ; l'essentiel du fonctionnement du pays découle de cette géométrie : une seule épine dorsale ferroviaire, électrique et de télécommunications d'est en ouest relie des grappes de population qui commercent plus naturellement du nord au sud. C'est une économie de services à revenu élevé, les services portant quatre emplois sur cinq, adossée à une base d'exportation de ressources géographiquement concentrée, avec des finances publiques parmi les mieux notées au monde et une productivité qui accuse un retard sur les économies comparables depuis deux décennies. Sa vie politique est de type Westminster et fédérale : un gouvernement libéral majoritaire opérant sur une marge minimale, une magistrature indépendante et une doctrine constitutionnelle établie, et un différend de compétences non résolu avec l'Alberta sur les termes du pacte fédéral, où les droits issus de traités autochtones se sont révélés déterminants. La société est plurielle, pacifique et marquée par une confiance élevée en comparaison internationale, l'écart entre les résultats des populations autochtones et non autochtones y demeurant l'inégalité la plus marquée et la plus persistante. La sécurité est défensive et tributaire des alliances, assurée à l'échelle continentale avec le voisin même dont les droits de douane ont déréglé la relation commerciale sur laquelle l'économie exportatrice a été bâtie."
+  },
+  "knownAndUnbuilt": {
+    "en": {
+      "opener": "Canada is a heavily self-audited state, and this register is mostly its own institutions speaking: an Auditor General reporting to Parliament, an independent Parliamentary Budget Officer, national statistical, health-information and resource agencies that publish their own shortfall estimates, and a statutory human rights commission. That documentation base is deep, and the register is correspondingly long, not because the country closes fewer gaps than others but because it records more of them. The central and recurring finding is one of follow-through rather than intent, commitments being made, funded and announced while implementation, monitoring and measurement fall short of them; the direction is mixed rather than uniformly worsening, with some shortfalls narrowing on the record and others widening while investment continued.",
+      "items": [
+        {
+          "gap": "Most key fish stocks in the critical zone lack rebuilding plans, and 47% of stocks sit in the healthy or cautious zones against a federal target of 55% by 2026, with the critical share at its highest recorded level [eccc-fish-stocks].",
+          "anchor": [
+            "territory.biosphere",
+            "eccc-fish-stocks"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Delivered policy does not reach the emissions targets legislated under the Canadian Net-Zero Emissions Accountability Act: 2030 emissions are projected at 645 to 647 megatonnes of carbon dioxide equivalent against a legislated target range of 426 to 484 megatonnes, a shortfall of roughly 160 to 220 megatonnes [cat-canada-2026][eccc-nir-2026-summary].",
+          "anchor": [
+            "territory.transition",
+            "cat-canada-2026",
+            "eccc-nir-2026-summary"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Owners of core public infrastructure identified $294.4 billion as needed to rehabilitate or replace existing assets and invested $31.3 billion in renewal, 11% of their own identified requirement, while the share of assets rated in good or very good condition fell from 59% to 55%, the burden falling heaviest on rural municipalities and on a local level of government that owns 72% of the stock [statcan-ccpi-renewal-2022][statcan-ccpi-replacement-2022].",
+          "anchor": [
+            "capacity.delivery",
+            "statcan-ccpi-renewal-2022",
+            "statcan-ccpi-replacement-2022"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "The Royal Canadian Mounted Police made recruitment a top priority, set targets below its actual needs and then missed them, leaving a shortfall of at least 3,400 officers, vacancy rates above the force's own critical threshold in nine of the eleven provinces and territories it serves, and target processing times missed on 97% of applications [oag-spring-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-spring-2026"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "The central lesson of the Phoenix pay failure, to simplify pay rules before installing a new system, has produced little progress, leaving a backlog of more than 233,000 pay transactions affecting over 133,000 employees and roughly $4 million a year in avoidable customisation [oag-spring-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-spring-2026"
+          ],
+          "since": "About a decade: the report records that the central lesson of the Phoenix pay failure has produced little progress a decade later [oag-spring-2026].",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Indigenous Services Canada did not effectively implement, monitor or assess the initiatives it had committed to under the New Fiscal Relationship [oag-may-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-may-2026"
+          ],
+          "since": "report-silent",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "The avian influenza audit found gaps in planning, data and decision-making that the experience of the pandemic had not closed [oag-may-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-may-2026"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Under the international student permit programme the responsible department investigated roughly 4,000 of some 153,000 flagged compliance cases and did not pursue 800 identified fraud cases [oag-spring-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-spring-2026"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Hospitals performed substantially more procedures than before the pandemic yet met fewer of the national benchmarks, with 68% of hip replacements and 61% of knee replacements completed within the 26-week benchmark against 75% and 70% previously, and radiation therapy within 28 days and hip fracture repair within 48 hours each falling three percentage points; the Canadian Institute for Health Information locates the constraint in inpatient bed availability and in shortages of long-term care beds and community supports that delay discharge [cihi-wait-times-priority-2025][cihi-wait-times-2026].",
+          "anchor": [
+            "capacity.publicServices",
+            "cihi-wait-times-priority-2025",
+            "cihi-wait-times-2026"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "No costed pathway to the defence spending commitment has been published: the Parliamentary Budget Officer estimates that core defence spending would have to reach $159.1 billion by 2035-36, some $33.5 billion a year in additional expenditure, and records that no government projection of the route to it exists [pbo-nato-5-percent-2026].",
+          "anchor": [
+            "security.military",
+            "capacity.steering",
+            "pbo-nato-5-percent-2026"
+          ],
+          "since": "The Hague summit of June 2025, when Canada adopted the commitment to invest 5% of output on defence and defence-related infrastructure by 2035 [nato-hague-declaration-2025][pm-nato-2-percent-2026].",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "The Canadian Armed Forces remain below their own authorised strength, at 67,827 Regular Force members against 71,500 authorised and a Primary Reserve some 5,000 short of its 30,000 target, with personnel rather than equipment or money the binding constraint on capability; recruitment has beaten its target for a second consecutive year and the policy commitment runs to 31 March 2032 [dnd-state-of-caf][dnd-recruitment-2026].",
+          "anchor": [
+            "security.military",
+            "dnd-state-of-caf",
+            "dnd-recruitment-2026"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "The registry of foreign influence activities and its independent commissioner, created to counter the interference a public inquiry formally identified as the state's principal external threat, are not yet operating [ps-foreign-interference-laws][nrf-fitaa-2026].",
+          "anchor": [
+            "security.transnationalExposure",
+            "ps-foreign-interference-laws",
+            "nrf-fitaa-2026"
+          ],
+          "since": "The Countering Foreign Interference Act of 2024; the report records the commissioner's office and the registry opening more than two years after royal assent [nrf-fitaa-2026].",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Removal of internal trade barriers is running behind its own timetable: mutual recognition has not been extended to services, labour mobility provisions remain under negotiation, credential recognition for tradespersons is targeted only for spring 2027, and First Ministers have agreed to work toward an agreement in principle on model legislation rather than to a completed instrument, against barriers the International Monetary Fund values at the equivalent of about a 9% national tariff [cit-communique-2026][imf-country-focus-internal-trade-2026][pm-first-ministers-jul2026].",
+          "anchor": [
+            "capacity.productivity",
+            "cit-communique-2026",
+            "imf-country-focus-internal-trade-2026",
+            "pm-first-ministers-jul2026"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "The framework for direct-to-consumer alcohol sales across provincial borders was due in May 2026 and was not delivered [canada-leblanc-cit-2026].",
+          "anchor": [
+            "capacity.productivity",
+            "canada-leblanc-cit-2026"
+          ],
+          "since": "May 2026, the deadline by which the framework was due and was not delivered [canada-leblanc-cit-2026].",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "Canada is among the top five global producers of 10 of its 34 critical minerals but has not built the corresponding domestic processing and refining capacity at scale, a gap its own critical minerals strategy explicitly targets, with 171 advanced projects standing against 31 processing facilities [nrcan-cm-strategy-annual-2024][nrcan-cm-progress-update].",
+          "anchor": [
+            "capacity.productivity",
+            "territory.minerals",
+            "nrcan-cm-strategy-annual-2024",
+            "nrcan-cm-progress-update"
+          ],
+          "since": "report-silent",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "No project has been designated under the Building Canada Act, so the two-year federal approval timeline the Act sets against a baseline of roughly five years has not begun to run on any of the fifteen projects referred, the listing process having been initiated only in June 2026 with decisions targeted for the autumn [oce-building-canada-act][mpo-listing-process-2026][mpo-referred-projects].",
+          "anchor": [
+            "capacity.approvals",
+            "oce-building-canada-act",
+            "mpo-listing-process-2026",
+            "mpo-referred-projects"
+          ],
+          "since": "26 June 2025, the royal assent of the Building Canada Act; the report records more than a year elapsed with no project designated [oce-building-canada-act][mpo-listing-process-2026].",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "The state finished the Trans Mountain Expansion but did not forecast or contain what finishing it would cost, the estimate moving from $5.4 billion at pricing and $7.4 billion at federal purchase to $34.2 billion on completion, including a $12.8 billion increase between two Parliamentary Budget Officer reports [pbo-trans-mountain-2024].",
+          "anchor": [
+            "capacity.delivery",
+            "pbo-trans-mountain-2024"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        }
+      ],
+      "denominator": "The capacity Canada brings to closing these gaps is inherited rather than earned: a mineral, freshwater and forest endowment that is a matter of geology and latitude, adjacency to the largest consumer market on earth, an inherited public administration and a high education base, and the absence of war on its own soil, all set against a cost of distance, cold and thinness that raises the price of every kilometre of infrastructure and that no policy retires, and all set inside a state built by settlement on Indigenous lands, along which line its deepest documented shortfalls still run. The length of this register measures how much Canada writes down about itself, not how far it has fallen short."
+    },
+    "fr": {
+      "opener": "Le Canada est un État fortement auto-audité, et ce registre donne surtout la parole à ses propres institutions : une vérificatrice générale qui fait rapport au Parlement, un directeur parlementaire du budget indépendant, des organismes nationaux de statistique, d'information sur la santé et des ressources qui publient leurs propres estimations de manques, et une commission des droits de la personne créée par la loi. Cette base documentaire est profonde, et le registre est long en conséquence, non parce que le pays comble moins d'écarts que d'autres, mais parce qu'il en consigne davantage. Le constat central et récurrent porte sur le suivi plutôt que sur l'intention, les engagements étant pris, financés et annoncés tandis que la mise en œuvre, le suivi et la mesure restent en deçà ; la direction est mitigée plutôt qu'uniformément défavorable, certains manques se resserrant dans les faits et d'autres s'élargissant alors que l'investissement se poursuivait.",
+      "items": [
+        {
+          "gap": "La plupart des grands stocks halieutiques en zone critique n'ont pas de plan de rétablissement, et 47 % des stocks se situent dans la zone saine ou de prudence face à une cible fédérale de 55 % d'ici 2026, la part en zone critique atteignant son plus haut niveau enregistré [eccc-fish-stocks].",
+          "anchor": [
+            "territory.biosphere",
+            "eccc-fish-stocks"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Les politiques mises en œuvre n'atteignent pas les cibles d'émissions inscrites dans la Loi canadienne sur la responsabilité en matière de carboneutralité : les émissions de 2030 sont projetées à 645 à 647 mégatonnes d'équivalent dioxyde de carbone face à une fourchette cible légiférée de 426 à 484 mégatonnes, soit un manque d'environ 160 à 220 mégatonnes [cat-canada-2026][eccc-nir-2026-summary].",
+          "anchor": [
+            "territory.transition",
+            "cat-canada-2026",
+            "eccc-nir-2026-summary"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Les propriétaires d'infrastructures publiques essentielles ont chiffré à 294,4 milliards de dollars le besoin de remise en état ou de remplacement des actifs existants et ont investi 31,3 milliards en renouvellement, soit 11 % de l'exigence qu'ils avaient eux-mêmes établie, tandis que la part des actifs jugés en bon ou très bon état reculait de 59 % à 55 %, la charge pesant le plus lourdement sur les municipalités rurales et sur un palier local qui détient 72 % du parc [statcan-ccpi-renewal-2022][statcan-ccpi-replacement-2022].",
+          "anchor": [
+            "capacity.delivery",
+            "statcan-ccpi-renewal-2022",
+            "statcan-ccpi-replacement-2022"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "La Gendarmerie royale du Canada a fait du recrutement une priorité absolue, s'est fixé des cibles inférieures à ses besoins réels puis ne les a pas atteintes, laissant un déficit d'au moins 3 400 agents, des taux de vacance supérieurs au seuil critique établi par la Gendarmerie elle-même dans neuf des onze provinces et territoires qu'elle dessert, et des délais de traitement cibles non respectés pour 97 % des candidatures [oag-spring-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-spring-2026"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "La leçon centrale de l'échec du système de paye Phénix, soit simplifier les règles de rémunération avant d'installer un nouveau système, n'a produit que peu de progrès, laissant un arriéré de plus de 233 000 opérations de paye touchant plus de 133 000 employés et environ 4 millions de dollars par an de personnalisation évitable [oag-spring-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-spring-2026"
+          ],
+          "since": "Environ une décennie : le rapport constate que la leçon centrale de l'échec du système de paye Phénix n'a produit que peu de progrès dix ans plus tard [oag-spring-2026].",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Services aux Autochtones Canada n'a pas mis en œuvre, suivi ni évalué efficacement les initiatives auxquelles il s'était engagé dans le cadre de la nouvelle relation financière [oag-may-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-may-2026"
+          ],
+          "since": "report-silent",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "L'audit sur la grippe aviaire a relevé des lacunes de planification, de données et de prise de décision que l'expérience de la pandémie n'avait pas comblées [oag-may-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-may-2026"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Dans le cadre du programme de permis d'études pour étudiants étrangers, le ministère responsable a enquêté sur environ 4 000 des quelque 153 000 dossiers de conformité signalés et n'a pas donné suite à 800 cas de fraude repérés [oag-spring-2026].",
+          "anchor": [
+            "capacity.steering",
+            "oag-spring-2026"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Les hôpitaux ont réalisé nettement plus d'interventions qu'avant la pandémie tout en respectant moins souvent les cibles nationales : 68 % des prothèses de la hanche et 61 % des prothèses du genou ont été posées dans le délai repère de 26 semaines, contre 75 % et 70 % auparavant, tandis que la radiothérapie dans les 28 jours et la réparation des fractures de la hanche dans les 48 heures reculaient chacune de trois points de pourcentage ; l'Institut canadien d'information sur la santé situe la contrainte dans la disponibilité des lits d'hospitalisation et dans la pénurie de lits de soins de longue durée et de soutiens communautaires qui retardent les congés [cihi-wait-times-priority-2025][cihi-wait-times-2026].",
+          "anchor": [
+            "capacity.publicServices",
+            "cihi-wait-times-priority-2025",
+            "cihi-wait-times-2026"
+          ],
+          "since": "report-silent",
+          "class": "attempted-and-failed"
+        },
+        {
+          "gap": "Aucune trajectoire chiffrée menant à l'engagement de dépenses de défense n'a été publiée : le directeur parlementaire du budget estime que les dépenses de défense de base devraient atteindre 159,1 milliards de dollars d'ici 2035-2036, soit environ 33,5 milliards de dollars de dépenses additionnelles par an, et constate qu'aucune projection gouvernementale de la trajectoire n'existe [pbo-nato-5-percent-2026].",
+          "anchor": [
+            "security.military",
+            "capacity.steering",
+            "pbo-nato-5-percent-2026"
+          ],
+          "since": "Le sommet de La Haye de juin 2025, où le Canada a souscrit à l'engagement d'investir 5 % de sa production dans la défense et les infrastructures connexes d'ici 2035 [nato-hague-declaration-2025][pm-nato-2-percent-2026].",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "Les Forces armées canadiennes demeurent sous leur propre effectif autorisé, avec 67 827 membres de la Force régulière pour 71 500 autorisés et une Première réserve inférieure d'environ 5 000 membres à sa cible de 30 000, le personnel et non l'équipement ou l'argent constituant la contrainte déterminante sur la capacité ; le recrutement a dépassé sa cible pour une deuxième année consécutive et l'engagement de politique porte jusqu'au 31 mars 2032 [dnd-state-of-caf][dnd-recruitment-2026].",
+          "anchor": [
+            "security.military",
+            "dnd-state-of-caf",
+            "dnd-recruitment-2026"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Le registre des activités d'influence étrangère et son commissaire indépendant, créés pour contrer l'ingérence qu'une enquête publique a formellement désignée comme la principale menace externe pour l'État, ne sont pas encore en fonction [ps-foreign-interference-laws][nrf-fitaa-2026].",
+          "anchor": [
+            "security.transnationalExposure",
+            "ps-foreign-interference-laws",
+            "nrf-fitaa-2026"
+          ],
+          "since": "La Loi de 2024 sur la lutte contre l'ingérence étrangère ; le rapport constate que le bureau du commissaire et le registre ouvrent plus de deux ans après la sanction royale [nrf-fitaa-2026].",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "La levée des barrières au commerce intérieur accuse un retard sur son propre calendrier : la reconnaissance mutuelle n'a pas été étendue aux services, les dispositions sur la mobilité de la main-d'œuvre demeurent en négociation, la reconnaissance des titres de compétence des gens de métier n'est visée que pour le printemps 2027, et les premiers ministres se sont entendus pour travailler à un accord de principe sur une loi type plutôt qu'à un instrument achevé, face à des barrières que le Fonds monétaire international évalue à l'équivalent d'environ un tarif national de 9 % [cit-communique-2026][imf-country-focus-internal-trade-2026][pm-first-ministers-jul2026].",
+          "anchor": [
+            "capacity.productivity",
+            "cit-communique-2026",
+            "imf-country-focus-internal-trade-2026",
+            "pm-first-ministers-jul2026"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Le cadre relatif à la vente directe d'alcool aux consommateurs par-delà les frontières provinciales était attendu en mai 2026 et n'a pas été livré [canada-leblanc-cit-2026].",
+          "anchor": [
+            "capacity.productivity",
+            "canada-leblanc-cit-2026"
+          ],
+          "since": "Mai 2026, échéance à laquelle le cadre était attendu et n'a pas été livré [canada-leblanc-cit-2026].",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "Le Canada figure parmi les cinq premiers producteurs mondiaux pour 10 de ses 34 minéraux critiques, mais n'a pas bâti à l'échelle la capacité nationale correspondante de transformation et d'affinage, un écart que sa propre stratégie sur les minéraux critiques vise explicitement, 171 projets avancés faisant face à 31 installations de transformation [nrcan-cm-strategy-annual-2024][nrcan-cm-progress-update].",
+          "anchor": [
+            "capacity.productivity",
+            "territory.minerals",
+            "nrcan-cm-strategy-annual-2024",
+            "nrcan-cm-progress-update"
+          ],
+          "since": "report-silent",
+          "class": "announced-not-implemented"
+        },
+        {
+          "gap": "Aucun projet n'a été désigné en vertu de la Loi visant à bâtir le Canada, de sorte que le délai fédéral d'approbation de deux ans que la Loi fixe par rapport à une référence d'environ cinq ans n'a commencé à courir pour aucun des quinze projets soumis, le processus d'inscription n'ayant été amorcé qu'en juin 2026 et les décisions étant visées pour l'automne [oce-building-canada-act][mpo-listing-process-2026][mpo-referred-projects].",
+          "anchor": [
+            "capacity.approvals",
+            "oce-building-canada-act",
+            "mpo-listing-process-2026",
+            "mpo-referred-projects"
+          ],
+          "since": "Le 26 juin 2025, sanction royale de la Loi visant à bâtir le Canada ; le rapport constate que plus d'un an s'est écoulé sans qu'aucun projet ne soit désigné [oce-building-canada-act][mpo-listing-process-2026].",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "L'État a mené à terme l'agrandissement du réseau Trans Mountain, mais n'a su ni prévoir ni contenir ce que cet achèvement coûterait, l'estimation passant de 5,4 milliards de dollars à l'établissement du prix et de 7,4 milliards à l'achat fédéral à 34,2 milliards à l'achèvement, dont une hausse de 12,8 milliards entre deux rapports du directeur parlementaire du budget [pbo-trans-mountain-2024].",
+          "anchor": [
+            "capacity.delivery",
+            "pbo-trans-mountain-2024"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        }
+      ],
+      "denominator": "La capacité dont dispose le Canada pour combler ces écarts est héritée et non méritée : une dotation minérale, hydrique et forestière qui relève de la géologie et de la latitude, la proximité du plus grand marché de consommation du monde, une administration publique héritée et un haut niveau de scolarisation, ainsi que l'absence de guerre sur son propre sol, le tout opposé à un coût de distance, de froid et de faible densité qui renchérit chaque kilomètre d'infrastructure et qu'aucune politique ne supprime, et le tout inscrit dans un État bâti par la colonisation de peuplement sur des terres autochtones, ligne le long de laquelle courent encore ses manques documentés les plus profonds. La longueur de ce registre mesure ce que le Canada consigne sur lui-même, et non l'ampleur de ses défaillances."
+    }
+  },
+  "notCarried": [
+    {
+      "candidate": "Gross domestic expenditure on research and development at about 1.8% of gross domestic product, flat since 2010 and with a low business share [capacity.productivity][oecd-canada-survey-2025].",
+      "test": "Test 6, against a self-set standard. The shortfall is stated only against the Organisation for Economic Co-operation and Development average and the levels of the United States and Korea; the report names no domestic research intensity target, law or strategy that it falls short of."
+    },
+    {
+      "candidate": "Labour productivity growth of 0.8% a year since 2000 against 1.9% in the United States, with investment per worker down nearly 20% between 2014 and 2022 [capacity.productivity][statcan-productivity-us-2026].",
+      "test": "Test 6, against a self-set standard, and test 2, a gap not a condition. The comparison is to another country's rate, and the underlying claim is a trend in an economic outcome rather than a shortfall between a capability and a requirement Canada set for itself."
+    },
+    {
+      "candidate": "Primary care attachment: 5.7 million adults without a regular primary care provider, with 49% more family physicians estimated as needed to meet current demand [capacity.publicServices][cihi-health-workforce-2024][cihi-primary-care-access].",
+      "test": "Test 6, against a self-set standard. The requirement is an information institute's estimate of current demand alongside a ranking against nine other high-income countries; the report names no domestic law, target or strategy establishing an attachment standard. The waiting-time benchmarks, which are domestic standards, are carried instead."
+    },
+    {
+      "candidate": "Absence of an independent Indigenous human rights system distinct from the Canadian Human Rights Commission's own [political.rightsAndChecks][chrc-annual-report-2025].",
+      "test": "Test 6, against a self-set standard. The report records the Commission calling for such a system but names no domestic law, target or adopted commitment establishing it as a requirement, so the shortfall runs against a recommendation rather than against a standard the country set for itself."
+    },
+    {
+      "candidate": "The life expectancy gap of 7.8 years between the Indigenous and non-Indigenous populations, widening rather than closing and wider still on reserve [society.wellbeing][statcan-indigenous-life-expectancy].",
+      "test": "Test 2, a gap not a condition. This is an outcome disparity and an inherited structural fact rather than a shortfall between a capability and a stated requirement, and the report carries no domestic target for closing it. It is carried instead in this register's denominator."
+    },
+    {
+      "candidate": "Educator shortages for minority official language programmes reported by many provinces and territories, alongside French immersion enrolment falling from a 12.3% peak to 11.7% [capacity.publicServices][society.language][statcan-elem-sec-2022-23].",
+      "test": "Test 6, against a self-set standard. The report records the shortage and records eligibility and take-up rates, but names no staffing standard, target or statutory provision level that the shortage falls short of."
+    },
+    {
+      "candidate": "The final Clean Electricity Regulations moving the net-zero grid timeline from 2035 to 2050, and the pausing of the 2026 zero-emission vehicle sales target pending review [territory.transition][cat-canada-2026].",
+      "test": "Test 5, missing not undone. Both are commitments withdrawn or deferred by decision, and a reversal is a choice carried by the fields that describe policy rather than by this register. The underlying insufficiency of delivered policy against the legislated target is carried as an item."
+    },
+    {
+      "candidate": "The modernised Columbia River Treaty left unratified after the United States paused negotiations in March 2025 [security.transnationalExposure][bc-columbia-treaty-2025].",
+      "test": "Test 3, internal. Ratification depends on the other party, so closing this does not lie within Canada's own authority, and the report asserts no unbuilt domestic response to it."
+    },
+    {
+      "candidate": "Tariff exposure and the lapse of the Canada-United States-Mexico Agreement review without renewal, including the Section 338 duties effective 19 August 2026 [situation][economy.externalVulnerability][whitehouse-section338-2026].",
+      "test": "Test 3, internal. This is an externally imposed exposure. The unbuilt domestic responses the report does assert, notably absent critical mineral processing capacity and unremoved internal trade barriers, are carried as items of their own."
+    },
+    {
+      "candidate": "The international student permit cap undershooting its own forecast, with just under 150,000 permits issued in 2024 against a forecast of about 350,000 [capacity.steering][oag-spring-2026].",
+      "test": "Test 2, a gap not a condition. This is a forecasting and implementation outcome running in the opposite direction to the target rather than a shortfall between a capability and a requirement. The compliance enforcement shortfall found in the same audit is carried as an item."
+    },
+    {
+      "candidate": "The absence of an agreed procedure for a constitutional secession process, should Alberta's referendum produce a majority for commencing one [political.shockAbsorbers][canlii-secession-reference-1998].",
+      "test": "Test 2, a gap not a condition. The content of a clear question and a clear majority was left by the Supreme Court to the political actors, so this is a doctrinal indeterminacy in the constitutional order rather than a capability the state has failed to build."
+    },
+    {
+      "candidate": "Media ownership concentration, with more than 80% of Canadian media controlled by five corporations, and the financial fragility behind the fall in the press freedom score [political.rightsAndChecks][rsf-index-2026].",
+      "test": "Test 6, against a self-set standard, and test 2, a gap not a condition. Ownership concentration is a structural market position, and the score is an external advocacy organisation's assessment rather than a domestic standard Canada set for itself."
+    },
+    {
+      "candidate": "Housing supply and affordability, commonly treated as one of Canada's defining unclosed gaps.",
+      "test": "Test 1, asserted. The report records high house prices as an interest of urban homeowners and deregulating housing supply as a reform analysts call necessary, but asserts no housing supply shortfall against any requirement with a resolvable source identifier. Recorded here as an absence rather than composed."
+    },
+    {
+      "candidate": "Long-term drinking water advisories in First Nations communities, a widely known Canadian capability gap.",
+      "test": "Test 1, asserted. The report does not assert this anywhere in its peer fields or its situation thread. Carrying it would introduce a fact from outside the report, which this pass forbids, so it is recorded here as an absence."
+    },
+    {
+      "candidate": "Emergency department flow, inpatient bed availability, and shortages of long-term care beds and community supports [capacity.publicServices][cihi-wait-times-2026].",
+      "test": "Not rejected but aggregated. The report presents these as the mechanism behind the missed waiting-time benchmarks rather than as a separate shortfall against a separate standard, so they are named within that item's anchors rather than carried as an item of their own."
+    }
+  ],
+  "undatedGaps": [
+    {
+      "field": "territory.biosphere",
+      "gap": "Absent rebuilding plans for most key fish stocks in the critical zone, and 47% of stocks in the healthy or cautious zones against a federal target of 55% by 2026.",
+      "note": "The report carries the 2023 assessment date and the 2026 target date, both measurement or target vintages rather than a first identification, and states no duration in the approved sources. Pass A extension needed."
+    },
+    {
+      "field": "territory.transition",
+      "gap": "Delivered policy falls roughly 160 to 220 megatonnes short of the 2030 emissions target legislated under the Canadian Net-Zero Emissions Accountability Act.",
+      "note": "The report dates the target and the projection but not the first official identification of the shortfall, and states no duration. Pass A extension needed."
+    },
+    {
+      "field": "capacity.delivery",
+      "gap": "Renewal investment at 11% of the identified requirement while the share of assets in good or very good condition falls.",
+      "note": "The end-of-2022 survey date is a measurement vintage rather than a since, and no duration is stated in the approved sources. Pass A extension needed."
+    },
+    {
+      "field": "capacity.steering",
+      "gap": "Royal Canadian Mounted Police officer shortfall of at least 3,400, with vacancy rates above the force's own critical threshold in nine of eleven jurisdictions served.",
+      "note": "September 2025 is the measurement date in the audit rather than a first identification, and no duration is stated. Pass A extension needed."
+    },
+    {
+      "field": "capacity.steering",
+      "gap": "Indigenous Services Canada did not effectively implement, monitor or assess its New Fiscal Relationship commitments.",
+      "note": "The report gives the audit's reporting date but neither the date the commitments were made nor a stated duration. Pass A extension needed."
+    },
+    {
+      "field": "capacity.steering",
+      "gap": "Gaps in planning, data and decision-making on avian influenza that the pandemic experience had not closed.",
+      "note": "The report ties the gaps to the pandemic experience without giving a date or a stated duration for them. Pass A extension needed."
+    },
+    {
+      "field": "capacity.steering",
+      "gap": "Compliance enforcement shortfall under the international student permit programme, with roughly 4,000 of some 153,000 flagged cases investigated.",
+      "note": "The report carries the audit reporting date only, which is a publication vintage rather than a since. Pass A extension needed."
+    },
+    {
+      "field": "capacity.publicServices",
+      "gap": "National waiting-time benchmarks met less often than before the pandemic across joint replacement, radiation therapy and hip fracture repair.",
+      "note": "The 2019 to 2024 comparison is a measurement series rather than a first identification of the shortfall, and no duration is stated. Pass A extension needed."
+    },
+    {
+      "field": "security.military",
+      "gap": "Canadian Armed Forces below authorised Regular Force strength and below the Primary Reserve target.",
+      "note": "31 March 2026 is the measurement date and 31 March 2032 the target date; the report gives no date on which the shortfall was first identified. Pass A extension needed."
+    },
+    {
+      "field": "capacity.productivity",
+      "gap": "Internal trade liberalisation running behind its own timetable on services, labour mobility and credential recognition.",
+      "note": "The report states that barriers persist despite repeated efforts but gives no date of first official identification and no duration. Pass A extension needed."
+    },
+    {
+      "field": "capacity.productivity",
+      "gap": "Domestic processing and refining capacity for critical minerals not built at scale.",
+      "note": "The critical minerals list is dated to 2021 and 2024, but the strategy's identification of the processing gap is undated in the approved sources. Pass A extension needed."
+    },
+    {
+      "field": "capacity.delivery",
+      "gap": "Absent capability to forecast or contain megaproject cost, evidenced on the Trans Mountain Expansion.",
+      "note": "The report carries the 2013 to 2024 estimate series, which dates the estimates rather than the identification of the capability shortfall. Pass A extension needed."
+    }
+  ]
+}

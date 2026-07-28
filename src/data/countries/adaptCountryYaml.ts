@@ -5,7 +5,7 @@ import type {
   SourceEntry,
   KnownAndUnbuiltRegister,
   GapRegisterItem,
-} from '../france';
+} from './analysisTypes';
 
 type YamlRecord = Record<string, unknown>;
 

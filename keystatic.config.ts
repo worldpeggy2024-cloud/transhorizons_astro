@@ -64,9 +64,14 @@ const relatedProjectFields = {
 
 // ── Country Analysis Fields ─────────────────────────────────────────────────
 
+// Scorecard rating scale — 5 levels (2026-07-28, widened from 3). Ordered High →
+// Low so the Keystatic dropdown reads top-to-bottom. Med-High / Med-Low give the
+// "strong-but-strained" and "weak-but-functioning" cases their own home.
 const ratingOptions = [
   { label: 'High', value: 'High' },
+  { label: 'Med-High', value: 'Med-High' },
   { label: 'Med', value: 'Med' },
+  { label: 'Med-Low', value: 'Med-Low' },
   { label: 'Low', value: 'Low' },
 ];
 

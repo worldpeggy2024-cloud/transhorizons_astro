@@ -6,7 +6,7 @@
  * Sources: ABS, RBA, DFAT, Department of Defence, IMF, World Bank, SIPRI, V-Dem, Transparency International
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const australiaAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-20',

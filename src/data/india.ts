@@ -6,7 +6,7 @@
  * Sources: IMF, World Bank, Reserve Bank of India, Ministry of External Affairs, Election Commission of India, SIPRI, ACLED, V-Dem Institute
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const indiaAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-19',

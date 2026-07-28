@@ -6,7 +6,7 @@
  * Sources: IMF, Statistics Korea, Bank of Korea, National Intelligence Service, Ministry of Unification, OECD, World Bank, Transparency International
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const southKoreaAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-19',

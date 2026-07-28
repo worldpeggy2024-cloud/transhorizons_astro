@@ -7,7 +7,7 @@
 // @ts-ignore – @rollup/plugin-yaml resolves YAML at build time; no .d.ts needed
 import raw from '../../content/countries/MEX/analysis.yaml';
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 import { adaptCountryYaml } from './countries/adaptCountryYaml';
 
 export const mexicoAnalysis: AnalysisContent = adaptCountryYaml(raw);

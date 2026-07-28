@@ -17,7 +17,7 @@ import {
   Mountain, Hammer
 } from 'lucide-react';
 import { franceAnalysis } from '@/data/france-yaml';
-import { type AnalysisContent, type ActorEntry, type SourceEntry } from '@/data/france';
+import { type AnalysisContent, type ActorEntry, type SourceEntry, type ScoreRating } from '@/data/countries/analysisTypes';
 import { canadaAnalysis } from '@/data/canada';
 import { usaAnalysis } from '@/data/usa-yaml';
 import { chinaAnalysis } from '@/data/china-yaml';
@@ -88,7 +88,7 @@ function formatPopulationFr(n: number): string {
 function ratingLabel(v: string | null | undefined, language: string): string {
   if (!v) return '';
   if (language !== 'fr') return v;
-  const map: Record<string, string> = { High: 'Élevé', Med: 'Moyen', Medium: 'Moyen', Low: 'Faible' };
+  const map: Record<string, string> = { High: 'Élevé', 'Med-High': 'Moyen-élevé', Med: 'Moyen', Medium: 'Moyen', 'Med-Low': 'Moyen-faible', Low: 'Faible' };
   return map[v] ?? v;
 }
 
@@ -396,19 +396,50 @@ function SituationSection({ text, sources }: { text: string; sources?: SourceEnt
 
 // ─── Scorecard row ────────────────────────────────────────────────────────────
 
-function ScoreRow({ label, value, language, detail }: {
+/** Which end of an axis is the good/stable one — drives the diverging colour. */
+type ScorePolarity = 'goodHigh' | 'badHigh' | 'neutral';
+
+function ScoreRow({ label, value, language, detail, polarity = 'goodHigh' }: {
   label: string;
-  value: 'High' | 'Med' | 'Low' | null;
+  value: ScoreRating | null;
   language: string;
+  /** goodHigh: High is the stable end (cohesion, loyalty, resilience). badHigh: High is the
+   * concerning end (economic pressure). neutral: descriptive, no valence (protest capacity). */
+  polarity?: ScorePolarity;
   /** Anchoring reveal (rework §1/§4): rationale + the anchors the rating summarises. */
   detail?: { anchors?: string[]; rationale_en?: string; rationale_fr?: string };
 }) {
   const [openDetail, setOpenDetail] = useState(false);
-  const colors: Record<string, string> = {
-    High: 'bg-red-100 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900',
-    Med: 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900',
-    Low: 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950 dark:text-green-300 dark:border-green-900',
+  // Grey → Burgundy scale (2026-07-28, "lifted"): grey = the stable pole, burgundy = the
+  // concern pole, with the ramp deepening smoothly between them. Mode-INDEPENDENT — the
+  // same hexes in light and dark, since the badges are solid chips that read on either
+  // ground. Good-when-high axes (cohesion, loyalty, resilience) run grey→burgundy;
+  // economic pressure reverses (high pressure = burgundy); protest capacity is
+  // descriptive, so it uses the valence-free grey ramp. A stable country reads as a calm
+  // field of greys; only genuine shortfalls pull toward burgundy. The badge always shows
+  // its text label, so colour is reinforcement, never the sole encoding.
+  const ORDER: ScoreRating[] = ['High', 'Med-High', 'Med', 'Med-Low', 'Low'];
+  // index 0..4 = High..Low
+  const VALENCED: Array<{ bg: string; fg: string }> = [
+    { bg: '#8A847C', fg: '#2E2B27' }, // High     — grey anchor (stable)
+    { bg: '#97726F', fg: '#FBF1F2' }, // Med-High
+    { bg: '#A15A61', fg: '#FCEEF0' }, // Med
+    { bg: '#A6414F', fg: '#FDE8EB' }, // Med-Low
+    { bg: '#8A2038', fg: '#F7DDE3' }, // Low      — burgundy (concern)
+  ];
+  const NEUTRAL: Array<{ bg: string; fg: string }> = [
+    { bg: '#8A847C', fg: '#2E2B27' },
+    { bg: '#9A928A', fg: '#2E2B27' },
+    { bg: '#A9A199', fg: '#2E2B27' },
+    { bg: '#B7AFA6', fg: '#33302B' },
+    { bg: '#C4BCB2', fg: '#33302B' },
+  ];
+  const swatch = (v: ScoreRating): { bg: string; fg: string } => {
+    const i = ORDER.indexOf(v);
+    if (polarity === 'neutral') return NEUTRAL[i] ?? NEUTRAL[2];
+    return polarity === 'badHigh' ? VALENCED[4 - i] : VALENCED[i];
   };
+  const sw = value ? swatch(value) : null;
   const rationale = language === 'fr' ? detail?.rationale_fr : detail?.rationale_en;
   const hasDetail = !!(detail && ((detail.anchors?.length ?? 0) > 0 || rationale?.trim()));
   return (
@@ -422,7 +453,7 @@ function ScoreRow({ label, value, language, detail }: {
           {hasDetail && <span className="ml-1 text-[10px] text-[var(--cr-muted)]">{openDetail ? '▾' : '▸'}</span>}
         </span>
         {value ? (
-          <span className={`font-body text-xs px-2 py-0.5 border rounded ${colors[value]}`}>{ratingLabel(value, language)}</span>
+          <span className="font-body text-xs px-2 py-0.5 rounded" style={{ backgroundColor: sw!.bg, color: sw!.fg }}>{ratingLabel(value, language)}</span>
         ) : (
           <span className="font-body text-xs text-[var(--cr-faint)] italic">—</span>
         )}
@@ -928,8 +959,8 @@ export default function CountryPage() {
       <ScoreRow label={t.eliteCohesion} value={analysis!.scorecard.eliteCohesion} language={language} detail={analysis!.scorecardAnchors?.eliteCohesion} />
       <ScoreRow label={t.socialCohesion} value={analysis!.scorecard.socialCohesion ?? null} language={language} detail={analysis!.scorecardAnchors?.socialCohesion} />
       <ScoreRow label={t.securityLoyalty} value={analysis!.scorecard.securityLoyalty} language={language} detail={analysis!.scorecardAnchors?.securityLoyalty} />
-      <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} detail={analysis!.scorecardAnchors?.economicPressure} />
-      <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} detail={analysis!.scorecardAnchors?.protestCapacity} />
+      <ScoreRow label={t.economicPressure} value={analysis!.scorecard.economicPressure} language={language} polarity="badHigh" detail={analysis!.scorecardAnchors?.economicPressure} />
+      <ScoreRow label={t.protestCapacity} value={analysis!.scorecard.protestCapacity} language={language} polarity="neutral" detail={analysis!.scorecardAnchors?.protestCapacity} />
       <ScoreRow label={t.institutionalResilience} value={analysis!.scorecard.institutionalResilience} language={language} detail={analysis!.scorecardAnchors?.institutionalResilience} />
     </>
   ) : (

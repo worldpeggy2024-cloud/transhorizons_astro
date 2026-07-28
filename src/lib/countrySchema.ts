@@ -151,12 +151,13 @@ export const CountryMetaSchema = z.object({
   lastUpdated: z
     .string()
     .regex(/^\d{4}-\d{2}-\d{2}$/, 'lastUpdated must be YYYY-MM-DD'),
+  // Scorecard ratings: 5-level scale since 2026-07-28 (was High|Med|Low).
   scorecard: z.object({
-    eliteCohesion: z.enum(['High', 'Med', 'Low']),
-    securityLoyalty: z.enum(['High', 'Med', 'Low']),
-    economicPressure: z.enum(['High', 'Med', 'Low']),
-    protestCapacity: z.enum(['High', 'Med', 'Low']),
-    institutionalResilience: z.enum(['High', 'Med', 'Low']),
+    eliteCohesion: z.enum(['High', 'Med-High', 'Med', 'Med-Low', 'Low']),
+    securityLoyalty: z.enum(['High', 'Med-High', 'Med', 'Med-Low', 'Low']),
+    economicPressure: z.enum(['High', 'Med-High', 'Med', 'Med-Low', 'Low']),
+    protestCapacity: z.enum(['High', 'Med-High', 'Med', 'Med-Low', 'Low']),
+    institutionalResilience: z.enum(['High', 'Med-High', 'Med', 'Med-Low', 'Low']),
   }),
 });
 

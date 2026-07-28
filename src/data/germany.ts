@@ -5,7 +5,7 @@
  * Sources: Allianz, IFO, Munich Security Conference, DGAP, German Federal Government, NATO
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const germanyAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-12',

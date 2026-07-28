@@ -1,4 +1,4 @@
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const mexicoAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-19',

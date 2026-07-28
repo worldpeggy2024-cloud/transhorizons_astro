@@ -6,7 +6,7 @@
  * Sources: National Bureau of Statistics, People's Bank of China, Ministry of Foreign Affairs, State Council, SIPRI, IMF, World Bank, OECD, Rhodium Group, ODNI, CSIS, Brookings Institution
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const chinaAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-19',

@@ -7,7 +7,7 @@
 
 import { useEffect, useRef, useState, useMemo } from 'react';
 import { ChevronDown, ChevronUp, Info } from 'lucide-react';
-import type { ActorEntry } from '@/data/france';
+import type { ActorEntry } from '@/data/countries/analysisTypes';
 
 interface ActorNode {
   id: string;

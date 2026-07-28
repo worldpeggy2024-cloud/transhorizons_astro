@@ -6,7 +6,7 @@
  * Sources: Cabinet Office, Bank of Japan, METI, MOFA, National Diet, SIPRI, ACLED, V-Dem Institute
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const japanAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-20',

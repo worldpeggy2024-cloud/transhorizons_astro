@@ -285,6 +285,30 @@ function validateCountryFile(filePath) {
     }
   }
 
+  // EN/FR citation-id parity (added 2026-07-28 after a proofing pass found
+  // society_language_fr citing two statutes its EN twin had dropped — the
+  // paragraph counts matched, so the check above could not see it). Compares the
+  // SET of citation ids per narrative field pair; a repetition-count difference
+  // is legitimate (a differently-structured sentence may cite an id more or fewer
+  // times), so sets, not multisets. Same exemptions as paragraph parity — the
+  // JSON-in-text pairs carry their id parity per-item, checked at composition.
+  const citeSet = (v) => new Set([...v.matchAll(new RegExp(CITATION_RE_G.source, 'g'))].map((m) => m[1]));
+  for (const [k, v] of Object.entries(data)) {
+    if (!k.endsWith('_en') || parityExempt.has(k)) continue;
+    const fv = data[k.slice(0, -3) + '_fr'];
+    if (typeof v !== 'string' || typeof fv !== 'string' || !v.trim() || !fv.trim()) continue;
+    const en = citeSet(v);
+    const fr = citeSet(fv);
+    const enOnly = [...en].filter((x) => !fr.has(x));
+    const frOnly = [...fr].filter((x) => !en.has(x));
+    if (enOnly.length || frOnly.length) {
+      const parts = [];
+      if (enOnly.length) parts.push(`EN-only [${enOnly.join('][')}]`);
+      if (frOnly.length) parts.push(`FR-only [${frOnly.join('][')}]`);
+      warnings.push(`CITE-PARITY ${k.slice(0, -3)}: ${parts.join(', ')} — the language pair cites different sources`);
+    }
+  }
+
   const contentClone = { ...data };
   delete contentClone.sources;
 

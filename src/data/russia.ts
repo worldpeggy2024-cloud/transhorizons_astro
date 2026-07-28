@@ -5,7 +5,7 @@
  * Framework: CountrySituationFramework v1.0
  */
 
-import type { AnalysisContent } from './france';
+import type { AnalysisContent } from './countries/analysisTypes';
 
 export const russiaAnalysis: AnalysisContent = {
   lastUpdated: '2026-04-19',
