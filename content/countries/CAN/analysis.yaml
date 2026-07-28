@@ -19,8 +19,8 @@ scorecard_anchors: |-
         "elections-alberta-referendum-2026",
         "aptn-alberta-petition-2026"
       ],
-      "rationale_en": "A single-party government with working control of the House and no faction contesting the federal order, carrying one real and contained strain — a vertical fracture with Alberta, whose 19 October 2026 referendum puts a separation-process question on the ballot, though the result is not binding, the Premier campaigns for remaining, and the courts have twice halted the citizen-petition route on treaty grounds; the thin route to majority, crossed between elections and rejected as illegitimate by the Official Opposition, sits alongside it rather than above it.",
-      "rationale_fr": "Un gouvernement monopartite disposant du contrôle effectif de la Chambre et aucune faction ne conteste l'ordre fédéral, mais une tension réelle et circonscrite subsiste : la fracture verticale avec l'Alberta, dont le référendum du 19 octobre 2026 inscrit au bulletin une question sur l'amorce d'un processus de sécession — résultat non contraignant, première ministre faisant campagne pour le maintien, et route de la pétition citoyenne bloquée deux fois par les tribunaux sur le fondement des traités; la voie étroite vers la majorité, franchie entre deux élections et jugée illégitime par l'opposition officielle, l'accompagne sans la dominer."
+      "rationale_en": "A single-party government with working control of the House and no faction contesting the federal order, carrying two contained strains : a vertical fracture with Alberta, whose 19 October 2026 referendum puts a separation-process question on the ballot (though the result is not binding, the Premier campaigns for remaining, and the courts have twice halted the citizen-petition route on Indigenous treaty grounds), and a thin route to majority, crossed between elections and rejected as illegitimate by the Official Opposition.",
+      "rationale_fr": "Gouvernement monopartite disposant du contrôle effectif de la Chambre et aucune faction ne contestant l'ordre fédéral, mais deux tensions réelles et circonscrite subsistent : la fracture verticale avec l'Alberta, dont le référendum du 19 octobre 2026 inscrit au bulletin une question sur l'amorce d'un processus de sécession (résultat non contraignant; la première ministre faisant campagne pour le maintien, et la route de la pétition citoyenne ayant été bloquée deux fois par les tribunaux sur le fondement des traités autochtones) et une voie étroite vers la majorité, franchie entre deux élections et jugée illégitime par l'opposition officielle."
     },
     "socialCohesion": {
       "anchors": [
@@ -33,7 +33,7 @@ scorecard_anchors: |-
         "environics-focus-canada-immigration-2025"
       ],
       "rationale_en": "The report records no political violence and no communal or sectarian division: cleavages run through courts, ballots and surveys, majorities affirm that multiculturalism has contributed positively to Canadian identity across racialized and white respondents alike, and the long values record shows an asymmetric spread of political values rather than symmetric polarisation; the located erosions — interpersonal trust drifting inside a narrow band, a nine-point generational trust gap, confidence in the federal Parliament the weakest reading of any institution measured, and a reversed immigration consensus attributed to government management rather than to immigrants — qualify the reading without changing the structure.",
-      "rationale_fr": "Le rapport ne relève aucune violence politique ni division communautaire ou confessionnelle : les clivages passent par les tribunaux, les urnes et les sondages, des majorités affirment que le multiculturalisme a contribué positivement à l'identité canadienne, tant chez les répondants racisés que blancs, et le long relevé des valeurs montre une dispersion asymétrique des valeurs politiques plutôt qu'une polarisation symétrique; les érosions localisées — confiance interpersonnelle qui dérive à l'intérieur d'une bande étroite, écart de confiance générationnel de neuf points, confiance envers le Parlement fédéral la plus faible de toutes les institutions mesurées, et consensus sur l'immigration renversé mais imputé à la gestion gouvernementale plutôt qu'aux immigrants — nuancent la lecture sans modifier la structure."
+      "rationale_fr": "Le rapport ne relève aucune violence politique ni division communautaire ou confessionnelle : les clivages passent par les tribunaux, les urnes et les sondages; des majorités affirment que le multiculturalisme a contribué positivement à l'identité canadienne, tant chez les répondants racisés que blancs, et le long relevé des valeurs montre une dispersion asymétrique des valeurs politiques plutôt qu'une polarisation symétrique; les érosions localisées (confiance interpersonnelle dérivant au sein d'une bande étroite, écart de confiance générationnel de neuf points, confiance envers le Parlement fédéral la plus faible de toutes les institutions mesurées, et consensus sur l'immigration renversé, mais imputé à la gestion gouvernementale plutôt qu'aux immigrants) nuancent la lecture sans modifier la structure."
     },
     "securityLoyalty": {
       "anchors": [
@@ -43,8 +43,8 @@ scorecard_anchors: |-
         "justice-rcmp-act",
         "rcmp-transition-binder"
       ],
-      "rationale_en": "Civilian control is both statutory and demonstrated: the Minister of National Defence has the management and direction of the Canadian Armed Forces and the Chief of the Defence Staff exercises control under that direction, the Commissioner of the Royal Canadian Mounted Police is likewise appointed by the Governor in Council and answerable to the Minister of Public Safety while operationally independent in core law-enforcement functions, institutional loyalty to civilian authority is not in question, Canada has no history of military intervention in politics, and no systemic corruption in the security forces is recorded in the sources consulted.",
-      "rationale_fr": "Le contrôle civil est à la fois légal et démontré : le ministre de la Défense nationale a la gestion et la direction des Forces armées canadiennes et le chef d'état-major de la défense en exerce le contrôle sous cette direction, le commissaire de la Gendarmerie royale du Canada est de même nommé par le gouverneur en conseil et répond au ministre de la Sécurité publique tout en demeurant indépendant sur le plan opérationnel dans les fonctions policières essentielles, la loyauté institutionnelle envers l'autorité civile n'est pas en cause, le Canada n'a aucun antécédent d'intervention militaire en politique, et aucune corruption systémique des forces de sécurité n'est consignée dans les sources consultées."
+      "rationale_en": "Civilian control is both statutory and demonstrated: the Minister of National Defence has the management and direction of the Canadian Armed Forces and the Chief of the Defence Staff exercises control under that direction, the Commissioner of the Royal Canadian Mounted Police is likewise appointed by the Governor in Council and answerable to the Minister of Public Safety while operationally independent in core law-enforcement functions. Institutional loyalty to civilian authority is not in question, Canada has no history of military intervention in politics, and no systemic corruption in the security forces is recorded in the sources consulted.",
+      "rationale_fr": "Le contrôle civil est à la fois légal et démontré : le ministre de la Défense nationale assume la gestion et la direction des Forces armées canadiennes et le chef d'état-major de la défense en exerce le contrôle sous cette direction, le commissaire de la Gendarmerie royale du Canada est de même nommé par le gouverneur en conseil et répond au ministre de la Sécurité publique tout en demeurant indépendant sur le plan opérationnel dans les fonctions policières essentielles. La loyauté institutionnelle envers l'autorité civile n'est pas en cause, le Canada n'a aucun antécédent d'intervention militaire en politique, et aucune corruption systémique des forces de sécurité n'est consignée dans les sources consultées."
     },
     "economicPressure": {
       "anchors": [
@@ -61,8 +61,8 @@ scorecard_anchors: |-
         "statcan-cpi-jun2026",
         "statcan-lfs-may2026"
       ],
-      "rationale_en": "Real strain landing on a state with the means to absorb it: output contracted 0.6% at an annual rate in the fourth quarter of 2025 and was flat in the first quarter of 2026, the Parliamentary Budget Officer treats the tariff measures as permanent, the trade framework has passed into rolling annual review and a first-ever Section 338 duty of 50% reaches named sectors from 19 August 2026 with no exemption for compliant goods — against a deficit of 2.1% of gross domestic product on a declining track, federal debt at 41.1% held predominantly at home, three of four rating agencies at their highest grade, inflation easing to 2.8%, unemployment easing to 6.6%, and $108.4 billion in largely automatic transfers.",
-      "rationale_fr": "Une tension réelle qui frappe un État ayant les moyens de l'absorber : la production s'est contractée de 0,6 % en rythme annualisé au quatrième trimestre de 2025 et a stagné au premier trimestre de 2026, le directeur parlementaire du budget traite les mesures tarifaires comme permanentes, le cadre commercial est passé à des examens annuels successifs et un droit de 50 % au titre de l'article 338, invoqué pour la première fois, frappera des secteurs nommés à compter du 19 août 2026 sans exemption pour les marchandises conformes — face à un déficit de 2,1 % du produit intérieur brut sur une trajectoire descendante, une dette fédérale à 41,1 % détenue majoritairement au pays, trois agences de notation sur quatre à leur note la plus élevée, une inflation ramenée à 2,8 %, un chômage ramené à 6,6 % et 108,4 milliards de dollars de transferts largement automatiques."
+      "rationale_en": "Real strain landing on a state with the means to absorb it: output contracted 0.6% at an annual rate in the fourth quarter of 2025 and was flat in the first quarter of 2026, the Parliamentary Budget Officer treats the tariff measures as permanent, the trade framework has passed into rolling annual review and a 50% duty reaches named sectors from 19 August 2026 with no exemption for compliant goods — against a deficit of 2.1% of gross domestic product on a declining track, federal debt at 41.1% held predominantly at home, three of four rating agencies at their highest grade, inflation easing to 2.8%, unemployment easing to 6.6%, and $108.4 billion in largely automatic transfers.",
+      "rationale_fr": "Tension réelle frappant un État ayant les moyens de l'absorber : le produit intérieur brut s'est contracté de 0,6 % en rythme annualisé au quatrième trimestre de 2025 et a stagné au premier trimestre de 2026, la directrice parlementaire du budget considère les mesures tarifaires comme permanentes, le cadre commercial est passé à des examens annuels successifs et un droit de 50 % frappera des secteurs nommés à compter du 19 août 2026 sans exemption pour les marchandises conformes; face à un déficit de 2,1 % du PIB sur une trajectoire descendante, une dette fédérale à 41,1 % détenue majoritairement au pays, la plus élevée selon trois agences de notation sur quatre, une inflation ramenée à 2,8 %, un chômage ramené à 6,6 % et 108,4 milliards de dollars de transferts largement automatiques."
     },
     "protestCapacity": {
       "anchors": [
@@ -76,8 +76,8 @@ scorecard_anchors: |-
         "elections-alberta-referendum-2026",
         "canlii-acfn-2026"
       ],
-      "rationale_en": "Low by absence: the report carries no mobilisation event of any kind — no demonstration, strike or mass protest in the society fields or in the situation layer — and records faith-based mobilisation as marginal; the organisational capacity exists on paper, with roughly three million workers across the Canadian Labour Congress affiliates, 315,000 in Unifor and around 300,000 in the Confédération des syndicats nationaux, but the contestation the report actually documents runs through courts, petitions and ballots, from the Alberta referendum to the First Nations litigation that twice set aside the petition route.",
-      "rationale_fr": "Faible par absence : le rapport ne fait état d'aucun événement de mobilisation — aucune manifestation, grève ou protestation de masse dans les champs sociétaux ni dans la couche situationnelle — et qualifie de marginale la mobilisation d'origine religieuse; la capacité d'organisation existe sur le papier, avec quelque trois millions de travailleurs dans les affiliés du Congrès du travail du Canada, 315 000 chez Unifor et environ 300 000 à la Confédération des syndicats nationaux, mais la contestation effectivement documentée passe par les tribunaux, les pétitions et les urnes, du référendum albertain aux litiges des Premières Nations qui ont écarté deux fois la voie pétitionnaire."
+      "rationale_en": "Low by absence: the report carries no mobilisation event of any kind — no demonstration, strike or mass protest in the society fields or in the situation layer — and records faith-based mobilisation as marginal; the organisational capacity exists on paper, with roughly three million workers across the Canadian Labour Congress affiliates, 315,000 in Unifor and around 300,000 in the Confédération des syndicats nationaux, but the contestation the report actually documents runs through courts, petitions and ballots.",
+      "rationale_fr": "Faible par absence : le rapport ne fait état d'aucun événement de mobilisation (aucune manifestation, grève ou protestation de masse dans les sections sociétales ni dans la section situationnelle) et qualifie de marginale la mobilisation d'origine religieuse; la capacité d'organisation existe formellement, avec quelque trois millions de membres affiliés au Congrès du travail du Canada, 315 000 chez Unifor et environ 300 000 à la Confédération des syndicats nationaux, mais la contestation effectivement documentée passe par les tribunaux, les pétitions et les urnes."
     },
     "institutionalResilience": {
       "anchors": [
@@ -93,7 +93,7 @@ scorecard_anchors: |-
         "pm-scc-appointment-2026"
       ],
       "rationale_en": "The buffers are largely automatic and the doctrine is settled — $108.4 billion in major transfers including $27.2 billion of unconditional equalization cushioning regional downturns without discretionary decision, an independent judiciary exercising full judicial review, an apex-court appointment run through the published non-partisan process this year, and the 1998 secession doctrine now being applied to a live provincial initiative — carrying one real and contained strain: the country's own audit office finds that programmes are in place, funding is delivered and risks are known while weaknesses in implementation and monitoring hold back results, a pattern it says is not new, and the renewal of core public infrastructure runs at 11% of the requirement its owners identified while condition ratings fall.",
-      "rationale_fr": "Les amortisseurs sont largement automatiques et la doctrine est établie — 108,4 milliards de dollars de transferts majeurs, dont 27,2 milliards de péréquation inconditionnelle qui amortissent les ralentissements régionaux sans décision discrétionnaire, une magistrature indépendante exerçant un plein contrôle judiciaire, une nomination à la cour suprême menée cette année selon le processus non partisan publié, et la doctrine de sécession de 1998 désormais appliquée à une initiative provinciale en cours — avec une tension réelle et circonscrite : le bureau de vérification du pays constate que les programmes sont en place, les fonds versés et les risques connus, mais que des faiblesses de mise en œuvre et de suivi freinent les résultats, un constat qu'il dit ne pas être nouveau, tandis que le renouvellement des infrastructures publiques essentielles atteint 11 % du besoin recensé par leurs propriétaires et que l'état des actifs se dégrade."
+      "rationale_fr": "Les mécanismes d'atténuation sont en grande partie automatiques et la jurisprudence est bien établie : 108,4 milliards de dollars en transferts fédéraux principaux, dont 27,2 milliards en péréquation sans condition amortissant les replis régionaux sans décision discrétionnaire, un pouvoir judiciaire indépendant exerçant un contrôle judiciaire complet, une nomination à la Cour suprême menée cette année selon le processus non partisan publié, et la règle de 1998 sur la sécession désormais appliquée à une initiative provinciale en cours. À cela s'ajoute une tension réelle et circonscrite : le bureau de vérification du pays lui-même constate que les programmes sont en place, que les fonds sont versés et que les risques sont connus, mais des faiblesses dans la mise en œuvre et la surveillance freinent les résultats; schéma qui est signalé ne pas être nouveau . Le renouvellement des infrastructures publiques essentielles s'effectue à hauteur de 11 % du besoin recensé par leurs propriétaires, pendant que l'état des actifs se dégrade."
     }
   }
 baseline_en: >-
@@ -1302,33 +1302,33 @@ economy_realEconomy_fr: >-
   place croissante, mais encore modeste dans cette économie. Il employait
   environ 803 000 personnes en 2024 et a affiché sur cinq ans un taux de
   croissance supérieur à celui de l'économie dans son ensemble (5,0 % en rythme
-  annuel composé contre 1,7 %). La croissance de sa production en 2024 at
-  ralenti pour s'établir à 0,7 % et, pour la première fois en dix ans, n'a pas
-  dépassé celle de l'économie dans son ensemble [ised-ict-profile-2024]. La
-  mesure élargie de l'économie numérique de Statistique Canada, qui saisit
-  l'activité numérique dans l'ensemble des industries plutôt que dans le seul
-  secteur des technologies, situait l'économie numérique à 5,9 % du produit
-  intérieur brut en 2020, en deçà du secteur de la finance et de l'assurance
+  annuel composé contre 1,7 %). La croissance de son PIB en 2024 at ralenti pour
+  s'établir à 0,7 % et, pour la première fois en dix ans, n'a pas dépassé celle
+  de l'économie dans son ensemble [ised-ict-profile-2024]. La mesure élargie de
+  l'économie numérique de Statistique Canada, qui saisit l'activité numérique
+  dans l'ensemble des industries plutôt que dans le seul secteur des
+  technologies, situait l'économie numérique à 5,9 % du produit intérieur brut
+  en 2020, en deçà du secteur de la finance et de l'assurance
   [statcan-digital-economy-2020].
 
 
   La croissance ralentit et les perspectives affichent une dispersion
   inhabituelle. Le produit intérieur brut réel a progressé de 1,7 % sur
-  l'ensemble de 2025, avant de s'essouffler : la production s'est contractée de
-  0,6 % en rythme annualisé au quatrième trimestre de 2025, puis est demeurée
-  stable au premier trimestre de 2026 [statcan-gdp-q1-2026]. Pour 2026, le
-  consensus du secteur privé sur lequel le gouvernement fonde ses projections
-  s'établit à 1,1 %, la directrice parlementaire du budget prévoit 1,1 % en
-  tenant les droits de douane états-uniens pour permanents, la Banque du Canada
-  et l'Organisation de coopération et de développement économiques tablent sur
+  l'ensemble de 2025, avant de s'essouffler : il s'est contracté de 0,6 % en
+  rythme annualisé au quatrième trimestre de 2025, puis est demeuré stable au
+  premier trimestre de 2026 [statcan-gdp-q1-2026]. Pour 2026, le consensus du
+  secteur privé sur lequel le gouvernement fonde ses projections s'établit à
+  1,1 %, la directrice parlementaire du budget prévoit 1,1 % en tenant les
+  droits de douane états-uniens pour permanents, la Banque du Canada et
+  l'Organisation de coopération et de développement économiques tablent sur
   1,2 %, et le Fonds monétaire international sur 1,5 %; le deuxième rythme le
   plus rapide au sein du Groupe des Sept
   [seu-2026][pbo-efo-jun2026][oecd-eo-june2026]. Une reprise entre 1,7 % et 1,9
   % est attendue en 2027 [seu-2026][oecd-eo-june2026]. L'écart entre les
   prévisions les plus élevées et les plus basses du secteur privé atteint près
-  de 2 % de la production d'ici la fin de 2027, les risques étant orientés à la
-  baisse, et la production réelle devrait demeurer environ 1,6 % sous sa
-  trajectoire d'avant les droits de douane d'ici 2029 [seu-2026].
+  de 2 % du PIB d'ici la fin de 2027, les risques étant orientés à la baisse, et
+  le PIB réel devrait demeurer environ 1,6 % sous sa trajectoire d'avant les
+  droits de douane d'ici 2029 [seu-2026].
 economy_publicFinances_en: >-
   The federal deficit was $66.9 billion in 2025-26, or 2.1% of gross domestic
   product — $11.5 billion below the Budget 2025 projection, as stronger nominal
@@ -1388,10 +1388,10 @@ economy_publicFinances_en: >-
 economy_publicFinances_fr: >-
   Le déficit fédéral s'est établi à 66,9 milliards de dollars en 2025-2026, soit
   2,1 % du produit intérieur brut : 11,5 milliards de dollars en deçà de la
-  projection du Budget 2025; la vigueur de la production nominale et les
-  résultats cumulés depuis le début de l'exercice ayant amélioré la situation
-  [seu-2026]. Le gouvernement prévoit un recul à 53,2 milliards de dollars, ou
-  1,4 %, d'ici 2030-2031 [seu-2026]; la projection indépendante de la directrice
+  projection du Budget 2025; la vigueur du PIB nominal et les résultats cumulés
+  depuis le début de l'exercice ayant amélioré la situation [seu-2026]. Le
+  gouvernement prévoit un recul à 53,2 milliards de dollars, ou 1,4 %, d'ici
+  2030-2031 [seu-2026]; la projection indépendante de la directrice
   parlementaire du budget est légèrement plus élevée, portant l'exercice
   2025-2026 à 2,2 % et le déficit à environ 64 milliards de dollars par année en
   moyenne sur les cinq exercices suivants [pbo-efo-jun2026]. Deux ancrages
@@ -2255,12 +2255,12 @@ political_shockAbsorbers_fr: >-
   gouvernement lui-même, une perturbation prolongée de l'approvisionnement
   portant le brut vers 115 dollars américains le baril, assortie de
   répercussions plus larges sur les chaînes d'approvisionnement, se traduirait
-  par une production inférieure de 1,3 % au scénario de référence en 2028, année
-  où l'écart atteindrait son maximum [seu-2026]. L'inflation reflue depuis son
-  sommet, à 2,8 % en juin 2026 après 3,2 % en mai, et la production est demeurée
-  stable au premier trimestre de 2026 après une contraction au quatrième
-  trimestre : la tension tient donc à une reprise en panne exposée à un choc
-  externe non résolu, et non à une spirale inflationniste
+  par un PIB inférieur de 1,3 % au scénario de référence en 2028, année où
+  l'écart atteindrait son maximum [seu-2026]. L'inflation reflue depuis son
+  sommet, à 2,8 % en juin 2026 après 3,2 % en mai, et le PIB est demeuré stable
+  au premier trimestre de 2026 après une contraction au quatrième trimestre : la
+  tension tient donc à une reprise en panne exposée à un choc externe non
+  résolu, et non à une spirale inflationniste
   [statcan-cpi-jun2026][statcan-gdp-q1-2026].
 political_constitutionalSubstrate_en: >-
   Canada is a federal parliamentary democracy under a constitutional monarchy,
@@ -3441,15 +3441,14 @@ capacity_productivity_fr: >-
   géographiques et liés aux politiques publiques, à l'équivalent de droits de
   douane nationaux d'environ 9 %, atteignant jusqu'à 50 % dans les soins de
   santé, l'éducation et les services de détail, et estime que leur élimination
-  pourrait accroître la production réelle de 7 % au fil du temps (soit environ
-  210 milliards de dollars de 2025), dont environ 90 % proviendrait des services
-  plutôt que des biens
-  [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. La réponse
-  fédérale est la partie 1 de la Loi sur l'unité de l'économie canadienne, soit
-  la Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada,
-  sanctionnée le 26 juin 2025, assortie de l'élimination de toutes les
-  exceptions fédérales prévues à l'Accord de libre-échange canadien. La mise en
-  œuvre est partielle et accuse un retard sur son propre calendrier. L'Accord
+  pourrait accroître le PIB de 7 % au fil du temps (soit environ 210 milliards
+  de dollars de 2025), dont environ 90 % proviendrait des services plutôt que
+  des biens [imf-country-focus-internal-trade-2026][imf-can-2025-art4]. La
+  réponse fédérale est la partie 1 de la Loi sur l'unité de l'économie
+  canadienne, soit la Loi sur le libre-échange et la mobilité de la main-d'œuvre
+  au Canada, sanctionnée le 26 juin 2025, assortie de l'élimination de toutes
+  les exceptions fédérales prévues à l'Accord de libre-échange canadien. La mise
+  en œuvre est partielle et accuse un retard sur son propre calendrier. L'Accord
   canadien de reconnaissance mutuelle couvre la vente de biens et un nouveau
   chapitre sur les services financiers est entré en vigueur, mais les ministres
   ne se sont engagés qu'en mars 2026 à étendre la reconnaissance mutuelle aux
@@ -3715,24 +3714,24 @@ capacity_knownAndUnbuilt_en: |-
         "class": "in-progress-unclosed"
       }
     ],
-    "denominator": "The capacity to close any of this is inherited rather than earned: the fiscal room, the top-tier credit and the debt held at home that make these gaps closable at all rest on geology, latitude and adjacency to the largest consumer market on earth, while the cost of distance, cold and a small population spread across a continent raises the price of every kilometre of infrastructure and every unit of service delivered, and no policy choice retires it. The state's own capacity was built by settlement on Indigenous lands, and the widest gap in this report is not on this list: the life-expectancy difference of nearly eight years between the Indigenous and non-Indigenous populations, widening rather than closing, is the inherited cost of that dispossession rather than a shortfall any register entry could close [statcan-indigenous-life-expectancy]. The length of this register measures what Canada publishes about itself, never merit."
+    "denominator": "The capacity to close any of this is inherited rather than earned: the fiscal room, the top-tier credit and the debt held at home that make these gaps closable at all rest on geology, latitude and adjacency to the largest consumer market on earth, while the cost of distance, cold and a small population spread across a continent raises the price of every kilometre of infrastructure and every unit of service delivered, and no policy choice retires it. The state's own capacity was built by settlement on Indigenous lands, and the widest gap in this report is not on this list: the life-expectancy difference of nearly eight years between the Indigenous and non-Indigenous populations, widening rather than closing, is the inherited cost of that dispossession rather than a shortfall any register entry could close [statcan-indigenous-life-expectancy]. The length of this register reflects the transparency of the auditing, not the depth of the dysfunction."
   }
 capacity_knownAndUnbuilt_fr: |-
   {
-    "opener": "Le Canada est un cas fortement autodocumenté, et presque chacun des manques ci-dessous est un manque que l'État a mesuré et publié à son propre sujet : le registre repose sur le Bureau du vérificateur général du Canada qui fait rapport au Parlement, sur la directrice parlementaire du budget qui chiffre des engagements que le gouvernement n'a pas chiffrés, sur l'Institut canadien d'information sur la santé qui mesure les systèmes de santé provinciaux et sur l'enquête de Statistique Canada sur les infrastructures publiques essentielles — une base profonde, et c'est cette profondeur qui explique la longueur du registre, non un signe de carence inhabituelle. Le centre de gravité est la mise en œuvre plutôt que l'intention, ce qui est le constat répété du bureau de vérification lui-même : les programmes sont en place, les fonds sont versés et les risques sont connus, mais des faiblesses dans la mise en œuvre et la surveillance freinent les résultats. La direction est mixte plutôt qu'uniforme — le déficit d'entretien se creuse tandis que le déficit d'effectifs des forces armées se resserre — et la profondeur est ici substantielle, vingt-quatre entrées, dont la plupart sont des engagements assortis d'un mécanisme en place et sans étape de clôture franchie.",
+    "opener": "Le Canada est un cas fortement autodocumenté, et presque chacun des manques ci-dessous est un manque que l'État a mesuré et publié à son propre sujet : le registre repose sur le Bureau du vérificateur général du Canada qui fait rapport au Parlement, sur la directrice parlementaire du budget qui chiffre des engagements que le gouvernement n'a pas chiffrés, sur l'Institut canadien d'information sur la santé qui mesure les systèmes de santé provinciaux et sur l'enquête de Statistique Canada sur les infrastructures publiques essentielles; base profonde qui explique la longueur du registre, non un signe de carence inhabituelle. Le centre de gravité est la mise en œuvre plutôt que l'intention, qui est le constat répété du bureau du vérificateur lui-même : les programmes sont en place, les fonds sont versés et les risques sont connus, mais des faiblesses dans la mise en œuvre et la surveillance freinent les résultats. La direction est mixte plutôt qu'uniforme (le déficit d'entretien se creuse tandis que le déficit d'effectifs des forces armées se resserre) et la profondeur est ici substantielle, vingt-quatre entrées, dont la plupart sont des engagements assortis d'un mécanisme en place et sans étape de clôture franchie.",
     "items": [
       {
-        "gap": "Les politiques mises en œuvre ne permettent pas d'atteindre les cibles inscrites dans la loi par la Loi canadienne sur la responsabilité en matière de carboneutralité : des émissions projetées de 645 à 647 mégatonnes en 2030 contre une fourchette cible de 426 à 484 mégatonnes laissent un écart d'environ 160 à 220 mégatonnes, et les politiques et mesures sont jugées hautement insuffisantes [cat-canada-2026][eccc-nir-2026-summary].",
+        "gap": "Les politiques mises en œuvre ne permettent pas d'atteindre les cibles inscrites dans la Loi canadienne sur la responsabilité en matière de carboneutralité : des émissions projetées de 645 à 647 mégatonnes en 2030 contre une fourchette cible de 426 à 484 mégatonnes laissent un écart d'environ 160 à 220 mégatonnes, et les politiques et mesures sont jugées hautement insuffisantes [cat-canada-2026][eccc-nir-2026-summary].",
         "anchor": [
           "territory.transition",
           "cat-canada-2026",
           "eccc-nir-2026-summary"
         ],
-        "since": "depuis 2021 — la Loi canadienne sur la responsabilité en matière de carboneutralité a reçu la sanction royale le 29 juin 2021, fixant la cible de 2030 que la trajectoire n’atteint pas [oag-cnzeaa-2023]",
+        "since": "2021; la Loi canadienne sur la responsabilité en matière de carboneutralité a reçu la sanction royale le 29 juin 2021, fixant la cible de 2030 que la trajectoire n’atteint pas [oag-cnzeaa-2023]",
         "class": "announced-not-implemented"
       },
       {
-        "gap": "Les salmonidés présentent la plus forte proportion de stocks de poissons critiques et la plupart de ces stocks ne disposent pas de plan de rétablissement, alors que 47 % des 199 stocks clés se trouvent dans les zones saine ou de prudence contre une cible fédérale de 55 % d'ici 2026, et que la part des stocks critiques atteint son plus haut niveau enregistré [eccc-fish-stocks].",
+        "gap": "Les salmonidés représentent la plus forte proportion de stocks de poissons critiques et la plupart de ces stocks ne disposent pas de plan de rétablissement, alors que 47 % des 199 stocks clés se trouvent dans des zones saine ou de prudence contre une cible fédérale de 55 % d'ici 2026, et que la part des stocks critiques atteint son plus haut niveau enregistré [eccc-fish-stocks].",
         "anchor": [
           "territory.biosphere",
           "eccc-fish-stocks"
@@ -3741,7 +3740,7 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "no-attempt-documented"
       },
       {
-        "gap": "Aucune diversification durable hors du marché états-unien n'a été bâtie : le fort recul de la part des États-Unis dans les exportations de marchandises en 2025 reflétait en partie une flambée d'expéditions d'or non ouvré vers des chambres fortes plutôt que vers de nouveaux marchés industriels, et il s'est inversé au premier semestre de 2026, les exportations vers les États-Unis progressant quatre mois d'affilée [statcan-merch-trade-may2026][gac-trade-diversification].",
+        "gap": "Aucune diversification durable hors du marché états-unien n'a été bâtie : le fort recul de la part des États-Unis dans les exportations de marchandises en 2025 reflétait en partie une flambée d'expéditions d'or non ouvré vers des chambres fortes plutôt que vers de nouveaux marchés industriels, et il s'est inversé au premier semestre de 2026, les exportations vers les États-Unis progressant quatre mois de suite [statcan-merch-trade-may2026][gac-trade-diversification].",
         "anchor": [
           "economy.externalVulnerability",
           "situation",
@@ -3761,12 +3760,12 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "no-attempt-documented"
       },
       {
-        "gap": "Les propriétaires d'infrastructures publiques essentielles ont recensé un besoin de 294,4 milliards de dollars pour remettre en état ou remplacer les actifs existants afin de les amener ou de les maintenir en bon état, contre 31,3 milliards effectivement investis dans le renouvellement cette année-là — soit 11 % du besoin recensé — tandis que la proportion d'actifs jugés en bon ou en très bon état passait de 59 % à 55 % [statcan-ccpi-renewal-2022].",
+        "gap": "Les propriétaires d'infrastructures publiques essentielles ont recensé un besoin de 294,4 milliards de dollars pour remettre en état ou remplacer les actifs existants afin de les amener ou de les maintenir en bon état, contre 31,3 milliards effectivement investis dans le renouvellement cette année-là (soit 11 % du besoin recensé) tandis que la proportion d'actifs jugés en bon ou en très bon état passait de 59 % à 55 % [statcan-ccpi-renewal-2022].",
         "anchor": [
           "capacity.delivery",
           "statcan-ccpi-renewal-2022"
         ],
-        "since": "depuis 2016, année où le premier Bulletin de rendement des infrastructures canadiennes a documenté l’écart national d’investissement dans le renouvellement — organisme de plaidoyer du génie et des municipalités, non un audit officiel [cci-infrastructure-2016]",
+        "since": "2016, année où le premier Bulletin de rendement des infrastructures canadiennes a documenté l’écart national d’investissement dans le renouvellement; organisme de plaidoyer du génie et des municipalités, non un audit officiel [cci-infrastructure-2016]",
         "class": "in-progress-unclosed"
       },
       {
@@ -3790,7 +3789,7 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "no-attempt-documented"
       },
       {
-        "gap": "Quelque 5,7 millions d'adultes n'avaient aucun fournisseur régulier de soins primaires en 2024 et il faudrait 49 % de médecins de famille en plus pour répondre à la demande actuelle, alors que l'offre de médecins de famille par habitant a reculé de 11,8 à 11,5 pour 10 000 habitants sur cinq ans [cihi-health-workforce-2024][cihi-primary-care-access].",
+        "gap": "Quelque 5,7 millions d'adultes n'avaient aucun fournisseur régulier de soins de santé primaires en 2024; il faudrait 49 % de médecins de famille en plus pour répondre à la demande actuelle, alors que l'offre de médecins de famille par habitant a reculé de 11,8 à 11,5 pour 10 000 habitants sur cinq ans [cihi-health-workforce-2024][cihi-primary-care-access].",
         "anchor": [
           "capacity.publicServices",
           "cihi-health-workforce-2024",
@@ -3800,7 +3799,7 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "no-attempt-documented"
       },
       {
-        "gap": "Les hôpitaux ont pratiqué plus d'interventions qu'en 2019 tout en respectant moins de délais repères : 68 % des arthroplasties de la hanche et 61 % de celles du genou ont été réalisées dans le délai repère de 26 semaines, contre 75 % et 70 % en 2019, la radiothérapie dans les 28 jours et la réparation d'une fracture de la hanche dans les 48 heures ont chacune reculé de trois points de pourcentage, et la plupart des chirurgies oncologiques ainsi que l'imagerie diagnostique demeuraient plus lentes qu'avant la pandémie [cihi-wait-times-priority-2025][cihi-wait-times-2026].",
+        "gap": "Les hôpitaux ont pratiqué plus d'interventions qu'en 2019 tout en respectant moins de délais repères : 68 % des arthroplasties de la hanche et 61 % de celles du genou ont été réalisées dans le délai repère de 26 semaines, contre 75 % et 70 % en 2019; la radiothérapie dans les 28 jours et la réparation d'une fracture de la hanche dans les 48 heures ont chacune reculé de trois points de pourcentage, et la plupart des chirurgies oncologiques ainsi que l'imagerie diagnostique demeuraient plus lentes qu'avant la pandémie [cihi-wait-times-priority-2025][cihi-wait-times-2026].",
         "anchor": [
           "capacity.publicServices",
           "cihi-wait-times-priority-2025",
@@ -3810,7 +3809,7 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "in-progress-unclosed"
       },
       {
-        "gap": "Le nombre limité de lits d'hospitalisation retient aux urgences des patients déjà admis et consomme la capacité de traiter les nouvelles arrivées, tandis que la pénurie de places en soins de longue durée et de soutiens communautaires retarde les congés des soins aigus, ce qui engorge toute la chaîne [cihi-wait-times-2026].",
+        "gap": "Le nombre limité de lits d'hospitalisation retient aux urgences des patients déjà admis et consomme la capacité de traiter les nouvelles arrivées, tandis que la pénurie de places en soins de longue durée et de soutiens communautaires retarde les congés des soins aigus; ce qui engorge toute la chaîne [cihi-wait-times-2026].",
         "anchor": [
           "capacity.publicServices",
           "cihi-wait-times-2026"
@@ -3828,25 +3827,25 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "no-attempt-documented"
       },
       {
-        "gap": "La Gendarmerie royale du Canada a fait du recrutement une priorité de premier plan tout en fixant des cibles inférieures à ses besoins réels, puis en les manquant, laissant un déficit d'au moins 3 400 agents en septembre 2025, des taux de vacance supérieurs à son propre seuil critique dans neuf des onze provinces et territoires qu'elle dessert, et des délais de traitement cibles non respectés pour 97 % des candidatures [oag-spring-2026].",
+        "gap": "La Gendarmerie royale du Canada a fait du recrutement une priorité tout en fixant des cibles inférieures à ses besoins réels, puis en les manquant; laissant un déficit d'au moins 3 400 agents en septembre 2025, des taux de vacance supérieurs à son propre seuil critique dans neuf des onze provinces et territoires qu'elle dessert, et des délais de traitement cibles non respectés pour 97 % des candidatures [oag-spring-2026].",
         "anchor": [
           "capacity.steering",
           "oag-spring-2026"
         ],
-        "since": "depuis 2018, année où la Gendarmerie royale du Canada a elle-même désigné le recrutement comme une priorité absolue [oag-rcmp-recruiting-2026]",
+        "since": "2018, année où la Gendarmerie royale du Canada a elle-même désigné le recrutement comme une priorité absolue [oag-rcmp-recruiting-2026]",
         "class": "attempted-and-failed"
       },
       {
-        "gap": "La leçon centrale de l'échec de Phénix, soit simplifier les règles de rémunération avant d'installer un nouveau système, avait produit peu de progrès une décennie plus tard, laissant un arriéré de plus de 233 000 opérations de paye touchant plus de 133 000 employés et quelque 4 millions de dollars par année en adaptations logicielles évitables [oag-spring-2026].",
+        "gap": "La leçon centrale de l'échec de Phénix (système de paie du gouvernement fédéral), soit simplifier les règles de rémunération avant d'installer un nouveau système, avait produit peu de progrès une décennie plus tard, laissant un arriéré de plus de 233 000 opérations de paye touchant plus de 133 000 employés et quelque 4 millions de dollars par année en adaptations logicielles évitables [oag-spring-2026].",
         "anchor": [
           "capacity.steering",
           "oag-spring-2026"
         ],
-        "since": "environ une décennie — le rapport situe la leçon à l'échec de Phénix et constate peu de progrès une décennie plus tard [oag-spring-2026]",
+        "since": "environ une décennie; le rapport situe la leçon à l'échec de Phénix et constate peu de progrès une décennie plus tard [oag-spring-2026]",
         "class": "in-progress-unclosed"
       },
       {
-        "gap": "Le plafond imposé aux permis d'études internationaux a dépassé sa propre cible en sens inverse, un peu moins de 150 000 permis ayant été délivrés en 2024 contre une prévision d'environ 350 000, Terre-Neuve-et-Labrador et la Saskatchewan enregistrant des baisses d'au moins 59 % là où des hausses de 10 % avaient été projetées [oag-spring-2026].",
+        "gap": "Le plafond imposé aux permis d'études internationaux a dépassé sa propre cible en sens inverse, un peu moins de 150 000 permis ayant été délivrés en 2024 contre une prévision d'environ 350 000; Terre-Neuve-et-Labrador et la Saskatchewan enregistrant des baisses d'au moins 59 % là où des hausses de 10 % avaient été projetées [oag-spring-2026].",
         "anchor": [
           "capacity.steering",
           "oag-spring-2026"
@@ -3860,7 +3859,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.steering",
           "oag-spring-2026"
         ],
-        "since": "depuis 2018 — les plus anciens des cas signalés non traités, les permis frauduleux remontant à 2018, selon l’audit de mars 2026 [oag-ircc-international-students-2026]",
+        "since": "2018 pour les plus anciens des cas signalés non traités; les permis frauduleux remontant à 2018, selon l’audit de mars 2026 [oag-ircc-international-students-2026]",
         "class": "attempted-and-failed"
       },
       {
@@ -3869,7 +3868,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.steering",
           "oag-may-2026"
         ],
-        "since": "depuis 2016, année où le Canada et l’Assemblée des Premières Nations ont convenu d’établir les initiatives de la nouvelle relation financière que le ministère n’a pas mises en œuvre efficacement [oag-isc-new-fiscal-relationship-2026]",
+        "since": "2016, année où le Canada et l’Assemblée des Premières Nations ont convenu d’établir les initiatives de la nouvelle relation financière que le ministère n’a pas mises en œuvre efficacement [oag-isc-new-fiscal-relationship-2026]",
         "class": "announced-not-implemented"
       },
       {
@@ -3878,7 +3877,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.steering",
           "oag-may-2026"
         ],
-        "since": "depuis la pandémie de COVID-19 — l’audit de 2026 a relevé des lacunes de planification, de données et de gestion des stocks de vaccins que l’expérience de la pandémie n’avait pas comblées [cesd-avian-influenza-2026]",
+        "since": "la pandémie de COVID-19; l’audit de 2026 a relevé des lacunes de planification, de données et de gestion des stocks de vaccins que l’expérience de la pandémie n’avait pas comblées [cesd-avian-influenza-2026]",
         "class": "no-attempt-documented"
       },
       {
@@ -3892,7 +3891,7 @@ capacity_knownAndUnbuilt_fr: |-
         "class": "announced-not-implemented"
       },
       {
-        "gap": "Les délais décisionnels fédéraux n'ont pas été ramenés d'un niveau de référence d'environ cinq ans à la cible de deux ans : quinze projets avaient été renvoyés au Bureau des grands projets au 21 mai 2026 et aucun n'a été désigné, le processus d'inscription n'a été amorcé que le 24 juin 2026, et le délai de deux ans n'a donc commencé à courir pour aucun projet [dwpv-bill-c5-analysis][mpo-referred-projects][mpo-listing-process-2026][oce-building-canada-act].",
+        "gap": "Les délais décisionnels fédéraux n'ont pas été ramenés d'un niveau de référence d'environ cinq ans à la cible de deux ans : quinze projets avaient été renvoyés au Bureau des grands projets au 21 mai 2026 et aucun n'a été désigné; le processus d'inscription n'a été amorcé que le 24 juin 2026, et le délai de deux ans n'a donc commencé à courir pour aucun projet [dwpv-bill-c5-analysis][mpo-referred-projects][mpo-listing-process-2026][oce-building-canada-act].",
         "anchor": [
           "capacity.approvals",
           "capacity.steering",
@@ -3901,21 +3900,21 @@ capacity_knownAndUnbuilt_fr: |-
           "mpo-listing-process-2026",
           "oce-building-canada-act"
         ],
-        "since": "sanction royale le 26 juin 2025 — le rapport indique que la cible de deux ans demeure inéprouvée plus d'un an plus tard, le mécanisme de désignation n'ayant été appliqué à aucun projet dix mois après les premiers renvois [oce-building-canada-act][mpo-listing-process-2026]",
+        "since": "sanction royale le 26 juin 2025; le rapport indique que la cible de deux ans demeure inéprouvée plus d'un an plus tard, le mécanisme de désignation n'ayant été appliqué à aucun projet dix mois après les premiers renvois [oce-building-canada-act][mpo-listing-process-2026]",
         "class": "in-progress-unclosed"
       },
       {
-        "gap": "Le Canada figure parmi les cinq premiers producteurs mondiaux de 10 de ses 34 minéraux critiques, mais il n'a pas bâti à grande échelle la capacité nationale correspondante de traitement et de raffinage, écart que la stratégie actuelle sur les minéraux critiques cible explicitement [nrcan-cm-strategy-annual-2024].",
+        "gap": "Le Canada figure parmi les cinq premiers producteurs mondiaux de 10 de ses 34 minéraux critiques, mais il n'a pas bâti à grande échelle la capacité nationale correspondante de traitement et de raffinage; écart que la stratégie actuelle sur les minéraux critiques cible explicitement [nrcan-cm-strategy-annual-2024].",
         "anchor": [
           "capacity.productivity",
           "territory.minerals",
           "nrcan-cm-strategy-annual-2024"
         ],
-        "since": "depuis 2022, année où la Stratégie canadienne sur les minéraux critiques a désigné la construction d’une capacité de traitement nationale comme objectif [cesd-critical-minerals-2024]",
+        "since": "2022, année où la Stratégie canadienne sur les minéraux critiques a désigné l'établissement d’une capacité de traitement nationale comme objectif [cesd-critical-minerals-2024]",
         "class": "announced-not-implemented"
       },
       {
-        "gap": "Les obstacles internes à la circulation des biens, des services et de la main-d'œuvre subsistent à l'équivalent de droits de douane nationaux d'environ 9 %, atteignant jusqu'à 50 % dans les soins de santé, l'éducation et les services de détail, et leur élimination accuse un retard sur son propre calendrier : la reconnaissance mutuelle des services n'a fait l'objet d'un engagement qu'en mars 2026, les dispositions sur la mobilité de la main-d'œuvre étaient toujours en négociation, la reconnaissance des titres de compétence des gens de métier est visée pour le printemps 2027, le cadre de vente directe d'alcool aux consommateurs attendu en mai 2026 n'a pas été livré, et les premiers ministres ont convenu en juillet 2026 de travailler à une entente de principe plutôt qu'à un instrument achevé [imf-country-focus-internal-trade-2026][cit-communique-2026][canada-leblanc-cit-2026][pm-first-ministers-jul2026].",
+        "gap": "Les obstacles internes à la circulation des biens, des services et de la main-d'œuvre subsistent et équivalent à des droits de douane nationaux d'environ 9 %, atteignant jusqu'à 50 % dans les soins de santé, l'éducation et les services de détail, et leur élimination accuse un retard : la reconnaissance mutuelle des services n'a fait l'objet d'un engagement qu'en mars 2026, les dispositions sur la mobilité de la main-d'œuvre étaient toujours en négociation, la reconnaissance des titres de compétence des gens de métier est visée pour le printemps 2027, le cadre de vente directe d'alcool aux consommateurs attendu en mai 2026 n'a pas été livré, et les premiers ministres ont convenu en juillet 2026 de travailler à une entente de principe plutôt qu'à un instrument achevé [imf-country-focus-internal-trade-2026][cit-communique-2026][canada-leblanc-cit-2026][pm-first-ministers-jul2026].",
         "anchor": [
           "capacity.productivity",
           "political.stateStructure",
@@ -3934,7 +3933,7 @@ capacity_knownAndUnbuilt_fr: |-
           "capacity.steering",
           "pbo-nato-5-percent-2026"
         ],
-        "since": "depuis le sommet de La Haye de juin 2025, où le Canada s’est engagé à consacrer 5 % de sa production d’ici 2035 — un engagement qui, selon la directrice parlementaire du budget, demeure sans aucune trajectoire chiffrée publiée [pbo-nato-5-percent-2026]",
+        "since": "le sommet de La Haye de juin 2025, où le Canada s’est engagé à consacrer 5 % du produit intérieur brut d’ici 2035; engagement qui, selon la directrice parlementaire du budget, demeure sans aucune trajectoire chiffrée publiée [pbo-nato-5-percent-2026]",
         "class": "announced-not-implemented"
       },
       {
@@ -3944,22 +3943,22 @@ capacity_knownAndUnbuilt_fr: |-
           "dnd-state-of-caf",
           "dnd-recruitment-2026"
         ],
-        "since": "depuis au moins 2002 — le vérificateur général a constaté que les Forces canadiennes manquaient de personnel dans la plupart des groupes professionnels militaires et a relevé que des audits antérieurs avaient déjà porté sur la gestion du personnel militaire [oag-cf-recruitment-retention-2002]",
+        "since": "au moins 2002; le vérificateur général a constaté que les Forces canadiennes manquaient de personnel dans la plupart des groupes professionnels militaires et a relevé que des audits antérieurs avaient déjà porté sur la gestion du personnel militaire [oag-cf-recruitment-retention-2002]",
         "class": "in-progress-unclosed"
       },
       {
-        "gap": "Le registre des activités d'influence étrangère édicté par la Loi sur la lutte contre l'ingérence étrangère n'est pas encore en service : un commissaire proposé a été désigné en mars 2026, le règlement d'application a été enregistré dans sa forme définitive au milieu de 2026, et le bureau du commissaire ainsi que le registre ouvrent le 4 août 2026 [ps-foreign-interference-laws][ps-commissioner-named-2026][nrf-fitaa-2026].",
+        "gap": "Le registre des activités d'influence étrangère édicté par la Loi sur la lutte contre l'ingérence étrangère n'est pas encore en service : un candidat au poste de commissaire a été désigné en mars 2026, le règlement d'application a été enregistré dans sa forme définitive au milieu de 2026, et le bureau du commissaire ainsi que le registre doivent être mis en service le 4 août 2026 [ps-foreign-interference-laws][ps-commissioner-named-2026][nrf-fitaa-2026].",
         "anchor": [
           "security.transnationalExposure",
           "ps-foreign-interference-laws",
           "ps-commissioner-named-2026",
           "nrf-fitaa-2026"
         ],
-        "since": "plus de deux ans — le rapport indique que le registre ouvre plus de deux ans après la sanction royale de la loi habilitante [nrf-fitaa-2026]",
+        "since": "plus de deux ans; le rapport indique que le registre entrerait en vigueur plus de deux ans après la sanction royale de la loi habilitante [nrf-fitaa-2026]",
         "class": "in-progress-unclosed"
       }
     ],
-    "denominator": "La capacité de combler quoi que ce soit de ce qui précède est héritée plutôt que méritée : la marge budgétaire, les meilleures notations de crédit et la dette détenue au pays, qui rendent ces manques comblables tout court, tiennent à la géologie, à la latitude et au voisinage du plus grand marché de consommation du monde, tandis que le coût de la distance, du froid et d'une population restreinte dispersée sur un continent renchérit chaque kilomètre d'infrastructure et chaque unité de service livrée, et aucun choix de politique ne l'abolit. La capacité même de l'État s'est édifiée par la colonisation de peuplement sur des terres autochtones, et le plus large écart du présent rapport ne figure pas dans cette liste : l'écart d'espérance de vie de près de huit ans entre les populations autochtones et non autochtones, qui se creuse plutôt qu'il ne se resserre, constitue le coût hérité de cette dépossession et non un manque qu'une entrée de registre pourrait combler [statcan-indigenous-life-expectancy]. La longueur de ce registre mesure ce que le Canada publie sur lui-même, jamais un mérite."
+    "denominator": "La capacité de combler ces lacunes est héritée plutôt qu'acquise : la marge budgétaire, les notations de crédit favorables et la dette détenue au pays, qui devraient permettre de combler ces lacunes, tiennent à la géologie, à la latitude et au voisinage du plus grand marché de consommation du monde, tandis que le coût de la distance, du climat froid et d'une population restreinte dispersée sur un continent renchérit chaque kilomètre d'infrastructure et chaque unité de service livrée, et aucun choix de politique ne l'abolit. La capacité même de l'État s'est édifiée par la colonisation de peuplement sur des terres autochtones, et le plus large écart du présent rapport ne figure pas dans cette liste : l'écart d'espérance de vie de près de huit ans entre les populations autochtones et non autochtones, qui se creuse plutôt qu'il ne se resserre, constitue le coût hérité de cette dépossession et non un manque qu'une entrée de registre pourrait combler [statcan-indigenous-life-expectancy]. La longueur de ce registre reflète la transparence de la vérification, et non l'ampleur des dysfonctionnements."
   }
 security_posture_en: >-
   Canada's security posture is defensive and alliance-dependent, and its
@@ -4265,8 +4264,8 @@ security_military_fr: >-
   milliards de dollars sur vingt ans
   [pm-nato-2-percent-2026][dnd-departmental-results-2024-25]. L'engagement plus
   vaste n'est financé dans aucun plan publié : au sommet de La Haye, en juin
-  2025, le Canada a convenu d'investir 5 % de sa production d'ici 2035, dont 3,5
-  % en défense de base et 1,5 % en infrastructures liées à la défense
+  2025, le Canada a convenu d'investir 5 % de son PIB d'ici 2035, dont 3,5 % en
+  défense de base et 1,5 % en infrastructures liées à la défense
   [pm-nato-2-percent-2026][nato-hague-declaration-2025]. La directrice
   parlementaire du budget estime que les dépenses de défense de base devraient
   atteindre 159,1 milliards de dollars d'ici 2035-2036, soit quelque 33,5
@@ -5572,7 +5571,7 @@ actors_domestic_fr: |-
         "situation"
       ],
       "interests": "Convertir des programmes annoncés en résultats concrets — les premières désignations d'intérêt national, le Fonds Canada fort, la reconnaissance mutuelle, la voie vers la défense — tout en limitant les dommages tarifaires sans concéder les droits sectoriels [capacity.steering][situation].",
-      "resources": "Contrôle exécutif-législatif fusionné du programme de la Chambre, pouvoir de nomination exercé par l'intermédiaire du gouverneur en conseil, marge budgétaire fédérale (déficit à 2,1 % de la production, trois cotes de premier rang, dette détenue à l'intérieur du pays), 108,4 milliards de dollars en transferts et un fonds souverain de 25 milliards de dollars [political.powerStructure][political.shockAbsorbers][economy.politicalEconomy].",
+      "resources": "Contrôle exécutif-législatif fusionné du programme de la Chambre, pouvoir de nomination exercé par l'intermédiaire du gouverneur en conseil, marge budgétaire fédérale (déficit à 2,1 % du PIB, trois cotes de premier rang, dette détenue à l'intérieur du pays), 108,4 milliards de dollars en transferts et un fonds souverain de 25 milliards de dollars [political.powerStructure][political.shockAbsorbers][economy.politicalEconomy].",
       "constraints": "Une majorité serrée de 172 sièges dont un est occupé par le Président, avec quatre sièges vacants; la conclusion de la vérificatrice générale selon laquelle les programmes et le financement sont en place mais la mise en œuvre et le suivi ne le sont pas; et un partage des compétences qui laisse la santé, l'éducation, les ressources et la majeure partie des infrastructures hors du contrôle fédéral, avec une obligation de consulter qui conditionne sa propre machinerie d'approbation [political.shockAbsorbers][capacity.steering][political.stateStructure].",
       "likelyMoves": "Achever les décisions d'inscription visées pour l'automne 2026, utiliser la fenêtre avant les droits de l'article 338 du 19 août pour négocier, n'ayant annoncé aucune contre-mesure, et disputer les quatre sièges vacants sur lesquels repose la majorité [capacity.approvals][situation][political.powerStructure].",
       "engagementMode": "negotiable / dealable. Le rapport le montre en train de négocier sur tous les axes à la fois — avec les provinces au moyen de protocoles d'entente et des premiers ministres, avec les titulaires de droits autochtones au moyen d'une obligation légale de consultation, et avec Washington au moyen de pourparlers intensifiés [capacity.steering][situation].",
@@ -6687,7 +6686,7 @@ actors_external_fr: |-
       "name": "Organisation du Traité de l'Atlantique Nord",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Le Canada est un membre fondateur et le sixième contributeur en importance à son budget financé en commun, est nation-cadre de la Brigade multinationale Lettonie — environ 3 000 militaires de quatorze alliés — et a atteint le seuil de dépenses de 2 % en 2025-2026 pour la première fois en environ trente-cinq ans, ayant convenu au sommet de La Haye en juin 2025 d'investir 5 % de la production d'ici 2035, 3,5 % dans la défense de base et 1,5 % dans l'infrastructure liée à la défense.",
+      "currentPosition": "Le Canada est un membre fondateur et le sixième contributeur en importance à son budget financé en commun, est nation-cadre de la Brigade multinationale Lettonie — environ 3 000 militaires de quatorze alliés — et a atteint le seuil de dépenses de 2 % en 2025-2026 pour la première fois en environ trente-cinq ans, ayant convenu au sommet de La Haye en juin 2025 d'investir 5 % de son PIB d'ici 2035, 3,5 % dans la défense de base et 1,5 % dans l'infrastructure liée à la défense.",
       "fieldsCitedIn": [
         "security.military",
         "security.diplomacy"
@@ -6724,7 +6723,7 @@ actors_external_fr: |-
       "name": "Fonds monétaire international",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Prévoit une croissance canadienne de 1,5 % pour 2026, la plus élevée des projections que le rapport rassemble; qualifie la faiblesse de la productivité de structurelle — faible dynamisme des entreprises, approfondissement lent du capital, innovation à la traîne, forte concentration dans des secteurs de services clés et obstacles à la croissance des firmes — et appelle l'ensemble de réformes qui y répond l'ensemble de politiques au rendement le plus élevé du Canada; chiffre les barrières au commerce intérieur à l'équivalent d'un tarif national de 9 %, allant jusqu'à 50 % dans les soins de santé, l'éducation et les services de détail, leur élimination valant jusqu'à 7 % de la production réelle. Aucun programme du Fonds n'est en place.",
+      "currentPosition": "Prévoit une croissance canadienne de 1,5 % pour 2026, la plus élevée des projections que le rapport rassemble; qualifie la faiblesse de la productivité de structurelle — faible dynamisme des entreprises, approfondissement lent du capital, innovation à la traîne, forte concentration dans des secteurs de services clés et obstacles à la croissance des firmes — et appelle l'ensemble de réformes qui y répond l'ensemble de politiques au rendement le plus élevé du Canada; chiffre les barrières au commerce intérieur à l'équivalent d'un tarif national de 9 %, allant jusqu'à 50 % dans les soins de santé, l'éducation et les services de détail, leur élimination valant jusqu'à 7 % du PIB réel. Aucun programme du Fonds n'est en place.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "economy.externalVulnerability",
@@ -6745,7 +6744,7 @@ actors_external_fr: |-
       "name": "Organisation de coopération et de développement économiques",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Un organisme auquel le Canada appartient et à l'aune duquel il est mesuré : elle prévoit une croissance de 1,2 % pour 2026, fournit la comparaison montrant l'intensité de recherche canadienne à 1,8 % de la production contre une moyenne des membres de 2,7 % et stable depuis 2010 avec une part des entreprises particulièrement faible, indique que les multinationales étrangères représentent plus de 40 % des dépenses de recherche des entreprises, et est nommée parmi les appartenances multilatérales conférant au Canada une portée institutionnelle au-delà de son poids militaire.",
+      "currentPosition": "Un organisme auquel le Canada appartient et à l'aune duquel il est mesuré : elle prévoit une croissance de 1,2 % pour 2026, fournit la comparaison montrant l'intensité de recherche canadienne à 1,8 % du PIB contre une moyenne des membres de 2,7 % et stable depuis 2010 avec une part des entreprises particulièrement faible, indique que les multinationales étrangères représentent plus de 40 % des dépenses de recherche des entreprises, et est nommée parmi les appartenances multilatérales conférant au Canada une portée institutionnelle au-delà de son poids militaire.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "capacity.productivity",
@@ -6869,7 +6868,7 @@ sources: |-
       "nameFr": "Statistique Canada — Le Quotidien : Produit intérieur brut, revenus et dépenses, premier trimestre de 2026",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260529/dq260529a-eng.htm",
       "desc": "Statistics Canada quarterly national accounts release (GDP, income and expenditure) for the first quarter of 2026, giving the latest output performance.",
-      "descFr": "Communiqué des comptes nationaux trimestriels de Statistique Canada (PIB, revenus et dépenses) pour le premier trimestre 2026, donnant la production la plus récente.",
+      "descFr": "Communiqué des comptes nationaux trimestriels de Statistique Canada (PIB, revenus et dépenses) pour le premier trimestre 2026, donnant le PIB le plus récent.",
       "publicationDate": "2026-05-28",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -6893,7 +6892,7 @@ sources: |-
       "nameFr": "Affaires mondiales Canada — Rapport économique et commercial trimestriel : printemps 2026",
       "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/quarterly/spring-2026",
       "desc": "Global Affairs Canada quarterly economic and trade report (Spring 2026) on Canadian output growth and the near-term outlook.",
-      "descFr": "Rapport économique et commercial trimestriel d'Affaires mondiales Canada (printemps 2026) sur la croissance de la production canadienne et les perspectives à court terme.",
+      "descFr": "Rapport économique et commercial trimestriel d'Affaires mondiales Canada (printemps 2026) sur la croissance du PIB canadien et les perspectives à court terme.",
       "publicationDate": "2026-03-31",
       "accessDate": "2026-06-28",
       "confidence": "High",
@@ -8172,7 +8171,7 @@ sources: |-
       "nameFr": "Le fardeau croissant de la dette pour les Canadiens : édition 2026 (Institut Fraser)",
       "url": "https://www.fraserinstitute.org/studies/growing-debt-burden-canadians-2026-edition",
       "desc": "Fraser Institute study compiling combined federal and provincial net debt as a share of output and per person. Free-market think tank advocating lower government spending; cited for its compilation of government debt data.",
-      "descFr": "Étude de l'Institut Fraser compilant la dette nette fédérale et provinciale combinée en proportion de la production et par habitant. Groupe de réflexion favorable au libre marché prônant une réduction des dépenses publiques; cité pour sa compilation de données sur la dette publique.",
+      "descFr": "Étude de l'Institut Fraser compilant la dette nette fédérale et provinciale combinée en proportion du PIB et par habitant. Groupe de réflexion favorable au libre marché prônant une réduction des dépenses publiques; cité pour sa compilation de données sur la dette publique.",
       "publicationDate": "2026-05-26",
       "accessDate": "2026-07-21",
       "confidence": "Med",
