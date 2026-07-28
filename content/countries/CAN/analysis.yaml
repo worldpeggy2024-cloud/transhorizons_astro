@@ -6967,6 +6967,7 @@ sources: |-
       "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901",
       "desc": "Statistics Canada quarterly population estimates (Table 17-10-0009-01) — the national population level and its components of change; preliminary estimates subject to revision.",
       "descFr": "Estimations démographiques trimestrielles de Statistique Canada (tableau 17-10-0009-01) — le niveau de la population nationale et ses composantes d'accroissement; estimations préliminaires sujettes à révision.",
+      "publicationDate": "2026-06-17",
       "accessDate": "2026-06-28",
       "confidence": "High",
       "citationType": "Fact",
@@ -7251,6 +7252,7 @@ sources: |-
       "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1210001101",
       "desc": "Statistics Canada table of monthly merchandise exports and imports by principal trading partner, seasonally adjusted, on a balance-of-payments basis.",
       "descFr": "Tableau de Statistique Canada des exportations et importations mensuelles de marchandises par principal partenaire commercial, désaisonnalisées, sur la base de la balance des paiements.",
+      "publicationDate": "2026-07-07",
       "accessDate": "2026-07-06",
       "confidence": "High",
       "citationType": "Fact"
@@ -7300,6 +7302,7 @@ sources: |-
       "url": "https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html",
       "desc": "Official page for Canada's Critical Minerals List: 34 minerals, first released 2021, updated 2024 (adding high-purity iron ore, phosphorus, silicon metal); value-chain framing and project locations in every province/territory except PEI.",
       "descFr": "Page officielle de la Liste canadienne des minéraux critiques : 34 minéraux, première publication en 2021, mise à jour en 2024 (ajout du minerai de fer de haute pureté, du phosphore et du silicium métal); cadrage par chaînes de valeur et projets dans chaque province et territoire sauf l'Île-du-Prince-Édouard.",
+      "publicationDate": "2026-06-30",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact",
@@ -7338,6 +7341,7 @@ sources: |-
       "url": "https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/temperature-change.html",
       "desc": "Live official indicator: 2024 tied 2010 as Canada's warmest year on record at 3.1°C above the 1961–1990 reference; 7 of the 10 warmest years in the last 20; Canadian warming roughly twice the global average rate.",
       "descFr": "Indicateur officiel en direct : 2024 a égalé 2010 comme année la plus chaude enregistrée au Canada, à 3,1 °C au-dessus de la référence 1961-1990; 7 des 10 années les plus chaudes dans les 20 dernières années; réchauffement canadien environ deux fois le rythme moyen mondial.",
+      "publicationDate": "2025-07-31",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact",
@@ -7363,6 +7367,7 @@ sources: |-
       "url": "https://climateactiontracker.org/countries/canada/",
       "desc": "Climate Action Tracker's independent pledge-versus-policy assessment of Canada — the primary instrument for that comparison — rating current policies against the 2030 target and tracking key climate regulations.",
       "descFr": "Évaluation indépendante engagements-contre-politiques du Canada par le Climate Action Tracker — l'instrument principal pour cette comparaison — évaluant les politiques actuelles par rapport à la cible de 2030 et suivant les principaux règlements climatiques.",
+      "publicationDate": "2025-11-03",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Interpretation",
@@ -7414,6 +7419,7 @@ sources: |-
       "url": "https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/province-territory-energy-profiles/canada.html",
       "desc": "Canada Energy Regulator national energy-system profile — crude oil and natural gas production and exports and the provincial electricity-generation mixes.",
       "descFr": "Profil du système énergétique national de la Régie de l'énergie du Canada — production et exportations de pétrole brut et de gaz naturel et bouquets provinciaux de production d'électricité.",
+      "publicationDate": "2026-03-26",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact",
@@ -7487,6 +7493,7 @@ sources: |-
       "url": "https://tsilhqotin.ca/governance/tsilhqotin-rights-title/",
       "desc": "The Nation's own account of the title litigation (1989–2014) and the June 26, 2014 declaration — the in-culture primary voice on what the title declaration means for the title-holding Nation.",
       "descFr": "Le récit de la Nation elle-même sur le litige relatif au titre (1989-2014) et sur la déclaration du 26 juin 2014; source première interne à la culture concernée sur la portée de la déclaration de titre pour la Nation détentrice.",
+      "publicationDate": "2014-06-26",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -7569,6 +7576,7 @@ sources: |-
       "url": "https://publications.gc.ca/site/eng/9.689696/publication.html",
       "desc": "Official Department of Justice publication defining Canadian bijuralism — the co-existence of common law and civil law — and legislative bijuralism, and describing the federal harmonization methodology.",
       "descFr": "Publication officielle du ministère de la Justice définissant le bijuridisme canadien — la coexistence de la common law et du droit civil — et le bijuridisme législatif, et décrivant la méthodologie fédérale d'harmonisation.",
+      "publicationDate": "2013-04-03",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -7592,6 +7600,7 @@ sources: |-
       "url": "https://openparliament.ca/bills/45-1/C-5/?singlepage=1",
       "desc": "Full parliamentary record of Bill C-5, the One Canadian Economy Act (Free Trade and Labour Mobility in Canada Act; Building Canada Act), including recorded votes and debate through third reading.",
       "descFr": "Dossier parlementaire complet du projet de loi C-5, la Loi sur l'unité de l'économie canadienne (Loi sur le libre-échange et la mobilité de la main-d'œuvre au Canada; Loi visant à bâtir le Canada), incluant les votes par appel nominal et les débats jusqu'à la troisième lecture.",
+      "publicationDate": "2025-06-20",
       "accessDate": "2026-07-08",
       "confidence": "High",
       "citationType": "Fact"
@@ -7690,6 +7699,7 @@ sources: |-
       "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs.html",
       "desc": "Department of Finance Canada hub page, since archived, recording the federal counter-tariff measures taken in response to United States tariffs, their product coverage, and subsequent adjustments.",
       "descFr": "Page de référence du ministère des Finances du Canada, depuis archivée, recensant les contre-mesures tarifaires fédérales prises en réponse aux droits de douane américains, leur portée et leurs ajustements ultérieurs.",
+      "publicationDate": "2026-06-19",
       "accessDate": "2026-07-13",
       "confidence": "High",
       "citationType": "Fact"
@@ -7701,6 +7711,7 @@ sources: |-
       "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies",
       "desc": "Official overview page from United States Customs and Border Protection describing active trade-remedy measures, including tariffs imposed under Section 232 of the Trade Expansion Act of 1962.",
       "descFr": "Page officielle du Service des douanes et de la protection des frontières des États-Unis décrivant les mesures commerciales correctives en vigueur, dont les droits imposés en vertu de l'article 232 de la Trade Expansion Act de 1962.",
+      "publicationDate": "2026-07-24",
       "accessDate": "2026-07-13",
       "confidence": "High",
       "citationType": "Fact"
@@ -7724,6 +7735,7 @@ sources: |-
       "url": "https://www.international.gc.ca/trade-commerce/trade-agreements-accords-commerciaux/agr-acc/cusma-aceum/joint-review-examen-conjoint.aspx?lang=eng",
       "desc": "Global Affairs Canada explainer on the agreement's mandatory joint-review mechanism: its timing, the term-extension decision it opens, and the consultation process feeding Canada's preparation.",
       "descFr": "Page explicative d'Affaires mondiales Canada sur le mécanisme d'examen conjoint obligatoire de l'accord : son échéancier, la décision de prolongation qu'il ouvre et les consultations préparatoires canadiennes.",
+      "publicationDate": "2026-06-29",
       "accessDate": "2026-07-13",
       "confidence": "High",
       "citationType": "Fact"
@@ -7770,6 +7782,7 @@ sources: |-
       "url": "https://www.international.gc.ca/controls-controles/softwood-bois_oeuvre/other-autres/faq.aspx?lang=eng",
       "desc": "Global Affairs Canada reference page on United States softwood lumber trade measures, tracking anti-dumping and countervailing duty rates by administrative review and the added Section 232 tariff.",
       "descFr": "Page de référence d'Affaires mondiales Canada sur les mesures commerciales américaines visant le bois d'œuvre résineux, suivant les taux des droits antidumping et compensateurs par examen administratif et le droit additionnel de l'article 232.",
+      "publicationDate": "2026-07-10",
       "accessDate": "2026-07-15",
       "confidence": "High",
       "citationType": "Fact"
