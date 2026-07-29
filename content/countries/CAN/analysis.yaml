@@ -4294,7 +4294,7 @@ security_military_fr: >-
   seulement au sein d'une coalition. L'opération REASSURANCE est sa plus
   importante mission à l'étranger, avec environ 2 000 militaires en Lettonie et
   plus de 3 000 déployés dans l'ensemble de l'opération au cours de l'année; le
-  Canada est la nation-cadre de la Brigade multinationale Lettonie de l'Alliance
+  Canada est la nation-cadre de la Brigade multinationale de l'OTAN en Lettonie
   (formation d'environ 3 000 militaires provenant de quatorze pays alliés), et
   la mission a été renouvelée en août 2025 pour trois années supplémentaires,
   jusqu'en 2029 [dnd-op-reassurance][pm-latvia-renewal-2025]. L'opération
@@ -4774,7 +4774,7 @@ actors_domestic_en: |-
       "resources": "Fused executive-legislative control of the House agenda, appointment power exercised through the Governor in Council, federal fiscal room (deficit at 2.1% of output, three top-tier ratings, debt held domestically), $108.4 billion in transfers and a $25 billion sovereign fund [political.powerStructure][political.shockAbsorbers][economy.politicalEconomy].",
       "constraints": "A bare majority of 172 of which one is the Speaker, with four seats vacant; the Auditor General's finding that programmes and funding are in place but implementation and monitoring are not; and a division of powers that leaves health, education, resources and most infrastructure outside federal control, with a duty to consult gating its own approvals machinery [political.shockAbsorbers][capacity.steering][political.stateStructure].",
       "likelyMoves": "Complete the listing decisions targeted for autumn 2026, use the window before the 19 August Section 338 duties for negotiation having announced no counter-measures, and contest the four vacant seats on which the majority rests [capacity.approvals][situation][political.powerStructure].",
-      "engagementMode": "negotiable / dealable. The report shows it bargaining on every axis at once — with provinces through memoranda of understanding and First Ministers, with Indigenous rights holders through a statutory consultation duty, and with Washington through intensified talks [capacity.steering][situation].",
+      "engagementMode": "negotiable / dealable. Bargaining on every axis at once — with provinces through memoranda of understanding and First Ministers, with Indigenous rights holders through a statutory consultation duty, and with Washington through intensified talks [capacity.steering][situation].",
       "anchors": [
         "political.powerStructure",
         "capacity.steering",
@@ -4904,7 +4904,7 @@ actors_domestic_en: |-
       "resources": "A co-equal approval role over the foreign influence transparency commissioner, and a composition in which only one group of twelve is tied to a federal party [security.transnationalExposure][political.powerStructure].",
       "constraints": "Every seat is filled by appointment on the Prime Minister's recommendation, and the criterion that insulated that process has just been removed; nine seats are vacant, five of them in Quebec [political.powerStructure].",
       "likelyMoves": "Receive further appointments under the revised process [political.powerStructure].",
-      "engagementMode": "hijack-exposed. The report describes the removal of the non-partisan appointment criterion and the reworking of the advisory board as a change in the chamber's character, and notes that the same criterion was retained for Supreme Court appointments at the same moment — the contrast is the report's own [political.powerStructure][political.rightsAndChecks].",
+      "engagementMode": "hijack-exposed. The report describes the removal of the non-partisan appointment criterion and the reworking of the advisory board as a change in the chamber's character, and notes that the same criterion was retained for Supreme Court appointments at the same moment [political.powerStructure][political.rightsAndChecks].",
       "anchors": [
         "political.powerStructure",
         "political.rightsAndChecks",
@@ -5419,7 +5419,7 @@ actors_domestic_en: |-
       ],
       "interests": "Mobilising private capital into the named sectors, the Canada Strong Fund serving as the equity instrument of a productivity agenda otherwise carried by a tax deduction [economy.politicalEconomy].",
       "resources": "Federal financing capacity across business development, export credit and infrastructure, and the Fund's $25 billion over three years under an arm's-length minority-equity mandate across five named sectors [economy.politicalEconomy].",
-      "constraints": "The Fund is debt-financed and contested at the boundary the report identifies as the live one, and the report is explicit that whether it shifts the productivity trajectory depends on sustained delivery rather than announcement [economy.politicalEconomy].",
+      "constraints": "The Fund is debt-financed, and the contest is over whether taking equity in favoured projects is co-investment or industrial policy by another name, and the report is explicit that whether it shifts the productivity trajectory depends on sustained delivery rather than announcement [economy.politicalEconomy].",
       "likelyMoves": "report-silent",
       "engagementMode": "executive-subordinate. Federal financing vehicles named for the weight they carry; the Canada Strong Fund's arm's-length design is asserted and contested, the report preserving both the co-investment framing and the industrial-policy objection [economy.politicalEconomy].",
       "anchors": [
@@ -5515,7 +5515,7 @@ actors_domestic_en: |-
         "economy.politicalEconomy",
         "economy.externalVulnerability"
       ],
-      "interests": "Resisting labour-market flexibility measures, which the report names among the organised constituencies the necessary reforms run into; Unifor’s membership sits in autos, energy and manufacturing — precisely the sectors carrying the 50% and 25% United States duties [economy.politicalEconomy][economy.externalVulnerability].",
+      "interests": "Resisting labour-market flexibility measures — the report names labour resistance among the organised constituencies the necessary reforms run into; Unifor’s membership sits in autos, energy and manufacturing — precisely the sectors carrying the 50% and 25% United States duties [economy.politicalEconomy][economy.externalVulnerability].",
       "resources": "Roughly three million workers across the Congress’s affiliates, over 315,000 in Unifor and around 300,000 in the Confédération des syndicats nationaux, and peak-federation standing [economy.politicalEconomy].",
       "constraints": "Fragmented rather than unified: Unifor, the largest private-sector union, left the Congress in 2024, and the Quebec bloc organises separately [economy.politicalEconomy].",
       "likelyMoves": "report-silent",
@@ -5550,7 +5550,7 @@ actors_domestic_fr: |-
       "name": "Le premier ministre Mark Carney et le Cabinet fédéral",
       "kind": "exécutif fédéral",
       "liveActorStatus": "current",
-      "currentPosition": "Mark Carney est premier ministre à la tête d'un gouvernement libéral qui a atteint la majorité entre deux élections grâce à cinq changements d'allégeance et à un balayage de trois élections partielles; il mène un programme d'approbation de projets, de commerce intérieur et de défense que le rapport décrit comme naissant et largement inachevé, négocie sous le régime des tarifs douaniers des États-Unis, et réinitialise ses relations avec la Chine et l'Inde alors que les conclusions d'ingérence visant les deux demeurent non résolues.",
+      "currentPosition": "Mark Carney est premier ministre à la tête d'un gouvernement libéral qui a atteint la majorité entre deux élections grâce à cinq changements d'allégeance et à trois victoires en élections partielles; il mène un programme d'approbation de projets, de commerce intérieur et de défense que le rapport décrit comme naissant et largement inachevé, négocie sous le régime des tarifs douaniers des États-Unis, et réinitialise ses relations avec la Chine et l'Inde alors que les conclusions d'ingérence visant les deux demeurent non résolues.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "economy.publicFinances",
@@ -5570,11 +5570,11 @@ actors_domestic_fr: |-
         "security.diplomacy",
         "situation"
       ],
-      "interests": "Convertir des programmes annoncés en résultats concrets — les premières désignations d'intérêt national, le Fonds Canada fort, la reconnaissance mutuelle, la voie vers la défense — tout en limitant les dommages tarifaires sans concéder les droits sectoriels [capacity.steering][situation].",
-      "resources": "Contrôle exécutif-législatif fusionné du programme de la Chambre, pouvoir de nomination exercé par l'intermédiaire du gouverneur en conseil, marge budgétaire fédérale (déficit à 2,1 % du PIB, trois cotes de premier rang, dette détenue à l'intérieur du pays), 108,4 milliards de dollars en transferts et un fonds souverain de 25 milliards de dollars [political.powerStructure][political.shockAbsorbers][economy.politicalEconomy].",
-      "constraints": "Une majorité serrée de 172 sièges dont un est occupé par le Président, avec quatre sièges vacants; la conclusion de la vérificatrice générale selon laquelle les programmes et le financement sont en place mais la mise en œuvre et le suivi ne le sont pas; et un partage des compétences qui laisse la santé, l'éducation, les ressources et la majeure partie des infrastructures hors du contrôle fédéral, avec une obligation de consulter qui conditionne sa propre machinerie d'approbation [political.shockAbsorbers][capacity.steering][political.stateStructure].",
-      "likelyMoves": "Achever les décisions d'inscription visées pour l'automne 2026, utiliser la fenêtre avant les droits de l'article 338 du 19 août pour négocier, n'ayant annoncé aucune contre-mesure, et disputer les quatre sièges vacants sur lesquels repose la majorité [capacity.approvals][situation][political.powerStructure].",
-      "engagementMode": "negotiable / dealable. Le rapport le montre en train de négocier sur tous les axes à la fois — avec les provinces au moyen de protocoles d'entente et des premiers ministres, avec les titulaires de droits autochtones au moyen d'une obligation légale de consultation, et avec Washington au moyen de pourparlers intensifiés [capacity.steering][situation].",
+      "interests": "Convertir des programmes annoncés en résultats concrets (les premières désignations d'intérêt national, le Fonds Canada fort, la reconnaissance mutuelle, la voie vers la défense ) tout en limitant les dommages tarifaires sans concéder les droits sectoriels [capacity.steering][situation].",
+      "resources": "Contrôle exécutif-législatif fusionné sur le programme de la Chambre, pouvoir de nomination exercé par l'intermédiaire du gouverneur en conseil, marge budgétaire fédérale (déficit à 2,1 % du PIB, trois cotes de premier rang, dette détenue à l'intérieur du pays), 108,4 milliards de dollars en transferts et un fonds souverain de 25 milliards de dollars [political.powerStructure][political.shockAbsorbers][economy.politicalEconomy].",
+      "constraints": "Une majorité serrée de 172 sièges dont un est occupé par le Président, avec quatre sièges vacants; la conclusion de la vérificatrice générale selon laquelle les programmes et le financement sont en place, mais la mise en œuvre et le suivi ne le sont pas; et un partage des compétences qui laisse la santé, l'éducation, les ressources et la majeure partie des infrastructures hors du contrôle fédéral, avec une obligation de consulter qui conditionne sa propre machinerie d'approbation [political.shockAbsorbers][capacity.steering][political.stateStructure].",
+      "likelyMoves": "Achever les décisions d'inscription visées pour l'automne 2026; n'ayant annoncé aucune contre-mesure, utiliser la fenêtre de négociation avant les droits imposés à partir du 19 août; et disputer les quatre sièges vacants sur lesquels repose la majorité [capacity.approvals][situation][political.powerStructure].",
+      "engagementMode": "negotiable / dealable. Négociations sur tous les axes à la fois : avec les provinces au moyen de protocoles d'entente et des premiers ministres, avec les titulaires de droits autochtones au moyen d'une obligation légale de consultation, et avec Washington au moyen de pourparlers intensifiés. [capacity.steering][situation].",
       "anchors": [
         "political.powerStructure",
         "capacity.steering",
@@ -5595,10 +5595,10 @@ actors_domestic_fr: |-
         "capacity.approvals"
       ],
       "interests": "Maintenir la cohésion du caucus à un nombre de sièges sans marge, et défendre la légitimité d'une majorité constituée entre deux élections [political.powerStructure][political.shockAbsorbers].",
-      "resources": "Gouvernement d'un seul parti sans partenaires de coalition, contrôle du programme de la Chambre, et un caucus élargi comprenant cinq récents transfuges [political.stabilityDrivers].",
+      "resources": "Gouvernement d'un seul parti sans partenaires de coalition, contrôle du programme de la Chambre, et un caucus élargi comprenant cinq récents changements d'allégeance [political.stabilityDrivers].",
       "constraints": "Chaque défection, démission ou défaite en élection partielle fait basculer le gouvernement vers la voix prépondérante du Président; le caucus est décrit comme idéologiquement large, ce qui est le même fait interprété comme un problème de discipline [political.powerStructure][political.stabilityDrivers].",
-      "likelyMoves": "Disputer les quatre sièges vacants pour rétablir un coussin; le rapport désigne les élections partielles comme le pivot [political.powerStructure].",
-      "engagementMode": "negotiable / dealable. En tant que caucus au pouvoir, il constitue la propre surface de négociation du gouvernement — le rapport indique que la contrainte s'est déplacée d'entre les partis vers l'intérieur d'un seul [political.stabilityDrivers].",
+      "likelyMoves": "Disputer les quatre sièges vacants pour rétablir une marge; le rapport désigne les élections partielles comme le pivot [political.powerStructure].",
+      "engagementMode": "negotiable / dealable. En tant que caucus au pouvoir, il constitue la propre surface de négociation du gouvernement; le rapport indique que la contrainte s'est déplacée de la négociation entre les partis vers celle au sein d'un seul [political.stabilityDrivers].",
       "anchors": [
         "political.powerStructure",
         "political.stabilityDrivers",
@@ -5609,17 +5609,17 @@ actors_domestic_fr: |-
       "name": "Parti conservateur du Canada (Opposition officielle)",
       "kind": "parti d'opposition",
       "liveActorStatus": "current",
-      "currentPosition": "Avec 139 sièges, l'Opposition officielle rejette comme illégitime la voie par laquelle le gouvernement a franchi le seuil de la majorité, faisant valoir qu'il ne détient aucun mandat démocratique, tout en ayant appuyé la Loi sur une économie canadienne unie en troisième lecture; il est aussi le seul parti fédéral doté d'un groupe désigné au Sénat.",
+      "currentPosition": "Avec 139 sièges, l'Opposition officielle juge illégitime la voie par laquelle le gouvernement a franchi le seuil de la majorité, faisant valoir qu'il ne détient aucun mandat démocratique, tout en ayant appuyé la Loi sur une économie canadienne unie en troisième lecture; il est aussi le seul parti fédéral doté d'un groupe désigné au Sénat.",
       "fieldsCitedIn": [
         "political.powerStructure",
         "political.shockAbsorbers",
         "capacity.approvals"
       ],
       "interests": "Nier au gouvernement la légitimité de sa majorité tout en restant aligné avec lui sur la réalisation des grands projets [political.shockAbsorbers][capacity.approvals].",
-      "resources": "139 sièges, le plus grand bloc d'opposition, douze sièges au Sénat, et — sur la question de l'immigration — le tri partisan le plus marqué que le rapport recense [political.powerStructure][society.cohesion].",
-      "constraints": "Il ne peut pas défaire un gouvernement qui détient le seuil de la majorité serrée, et son propre appui a fait adopter la loi phare qu'il pourrait autrement contester [political.powerStructure][capacity.approvals].",
+      "resources": "139 sièges, le plus grand bloc d'opposition, douze sièges au Sénat, et, sur la question de l'immigration, le tri partisan le plus marqué que le rapport recense [political.powerStructure][society.cohesion].",
+      "constraints": "Ne peut pas défaire un gouvernement qui détient le seuil de la majorité serrée, et son propre appui a fait adopter la loi phare qu'il pourrait autrement contester [political.powerStructure][capacity.approvals].",
       "likelyMoves": "Disputer les sièges vacants et continuer de marteler l'argument du mandat; le rapport considère les résultats des élections partielles comme la variable opérante [political.powerStructure].",
-      "engagementMode": "negotiable / dealable. Le rapport le recense votant avec le gouvernement sur la Loi visant à bâtir le Canada tout en niant sa légitimité — un homologue sur le plan législatif et un adversaire sur le plan du statut [capacity.approvals][political.shockAbsorbers].",
+      "engagementMode": "negotiable / dealable. Le rapport le recense votant avec le gouvernement sur la Loi visant à bâtir le Canada tout en niant sa légitimité; homologue sur le plan législatif et adversaire sur le plan du statut [capacity.approvals][political.shockAbsorbers].",
       "anchors": [
         "political.powerStructure",
         "political.shockAbsorbers",
@@ -5637,9 +5637,9 @@ actors_domestic_fr: |-
       ],
       "interests": "Contester la loi fédérale d'approbation qui empiète sur des domaines que le rapport décrit ailleurs comme relevant de la compétence provinciale [capacity.approvals][political.stateStructure].",
       "resources": "21 sièges, le troisième bloc en importance à la Chambre [political.powerStructure].",
-      "constraints": "Son opposition à la loi a été consignée mais n'a pas été décisive, le projet de loi ayant été adopté avec l'appui libéral et conservateur [capacity.approvals].",
-      "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. Le rapport le présente comme un vote consigné contre, sans qu'aucune relation de négociation ne soit décrite [capacity.approvals].",
+      "constraints": "Son opposition à la loi a été consignée, mais n'a pas été décisive, le projet de loi ayant été adopté avec l'appui libéral et conservateur [capacity.approvals].",
+      "likelyMoves": "aucune donnée au rapport",
+      "engagementMode": "négociable. Le rapport le présente comme un vote consigné contre, sans qu'aucune relation de négociation ne soit décrite [capacity.approvals].",
       "anchors": [
         "political.powerStructure",
         "capacity.approvals"
@@ -5657,8 +5657,8 @@ actors_domestic_fr: |-
       "interests": "S'opposer au régime d'approbation pour les motifs relatifs aux droits et à la procédure que le rapport attribue à l'opposition consignée [capacity.approvals].",
       "resources": "5 sièges [political.powerStructure].",
       "constraints": "En deçà de la taille des blocs de tous les autres partis nommés et ayant perdu un membre au profit des banquettes gouvernementales [political.powerStructure].",
-      "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. Aucun levier de négociation n'est décrit; le gouvernement n'a plus besoin de sa confiance [political.stabilityDrivers].",
+      "likelyMoves": "aucune donnée dans le rapport",
+      "engagementMode": "négociable. Aucun levier de négociation n'est décrit; le gouvernement n'a plus besoin de sa confiance [political.stabilityDrivers].",
       "anchors": [
         "political.powerStructure",
         "capacity.approvals"
@@ -5668,7 +5668,7 @@ actors_domestic_fr: |-
       "name": "Parlement du Canada (Chambre des communes et Sénat)",
       "kind": "législature",
       "liveActorStatus": "current",
-      "currentPosition": "La législature bicamérale détient les pouvoirs énumérés de l'article 91 ainsi que le pouvoir résiduel, elle est l'organe auquel la vérificatrice générale fait rapport et le seul à pouvoir modifier les constitutions territoriales; elle a réservé à la Chambre des communes la détermination d'une question claire et d'une majorité claire en vertu de la Loi sur la clarté, a adopté la Loi sur une économie canadienne unie en troisième lecture le 20 juin 2025, et les deux chambres doivent approuver le commissaire à la transparence en matière d'influence étrangère — tout en affichant le pire indice de confiance institutionnelle que le rapport mesure, 28,3 % élevé et 40,0 % faible.",
+      "currentPosition": "La législature bicamérale détient les pouvoirs énumérés de l'article 91 ainsi que le pouvoir résiduel, elle est l'organe auquel la vérificatrice générale fait rapport et le seul à pouvoir modifier les constitutions territoriales; elle a réservé à la Chambre des communes la détermination d'une question claire et d'une majorité claire en vertu de la Loi sur la clarté référendaire, a adopté la Loi sur une économie canadienne unie en troisième lecture le 20 juin 2025, et les deux chambres doivent approuver le commissaire à la transparence en matière d'influence étrangère, tout en affichant le pire indice de confiance institutionnelle que le rapport mesure, 28,3 % de confiance élevée et 40,0 % de faible confiance.",
       "fieldsCitedIn": [
         "society.cohesion",
         "political.powerStructure",
@@ -5679,7 +5679,7 @@ actors_domestic_fr: |-
         "capacity.approvals",
         "security.transnationalExposure"
       ],
-      "interests": "Le rapport lui attribue des intérêts institutionnels plutôt que stratégiques : exercer les fonctions législatives et de contrôle que les textes constitutionnels lui assignent [political.stateStructure][capacity.steering].",
+      "interests": "Le rapport lui attribue des intérêts institutionnels plutôt que stratégiques : exercer les fonctions législatives et de contrôle que les textes constitutionnels lui attribuent [political.stateStructure][capacity.steering].",
       "resources": "Pouvoir législatif énuméré et résiduel, la détermination légale de la clarté référendaire, la modification exclusive des constitutions territoriales, et un rôle de confirmation à l'égard du commissaire à l'influence étrangère [political.stateStructure][political.constitutionalSubstrate][security.transnationalExposure].",
       "constraints": "Le contrôle exécutif et législatif est fusionné, de sorte qu'un gouvernement jouissant de la confiance de la Chambre contrôle son programme; et la confiance du public envers l'institution est la plus faible de toutes celles mesurées [political.powerStructure][society.cohesion].",
       "likelyMoves": "Traiter les élections partielles dans quatre sièges vacants et la confirmation du commissaire dont le bureau ouvre le 4 août 2026 [political.powerStructure][security.transnationalExposure].",
@@ -5695,16 +5695,16 @@ actors_domestic_fr: |-
       "name": "Sénat du Canada",
       "kind": "législature",
       "liveActorStatus": "current",
-      "currentPosition": "La chambre nommée de 105 sièges se compose de 40 membres du Groupe des sénateurs indépendants, 18 du Groupe des sénateurs canadiens, 17 du Groupe progressiste du Sénat, 12 du Parti conservateur du Canada, 5 du Bureau du représentant du gouvernement et 4 non affiliés, avec 9 sièges vacants; le 7 juillet 2026, le premier ministre a abandonné le critère non partisan qui régissait les nominations depuis 2016 et a remanié le comité consultatif indépendant, en même temps que ses quatre premières nominations.",
+      "currentPosition": "La chambre nommée de 105 sièges se compose de 40 membres du Groupe des sénateurs indépendants, 18 du Groupe des sénateurs canadiens, 17 du Groupe progressiste du Sénat, 12 du Parti conservateur du Canada, 5 du Bureau du représentant du gouvernement et 4 non affiliés, avec 9 sièges vacants; le 7 juillet 2026, le premier ministre a abandonné le critère non partisan qui régissait les nominations depuis 2016 et a remanié le comité consultatif indépendant, en annonçant en même temps ses quatre premières nominations.",
       "fieldsCitedIn": [
         "political.powerStructure",
         "security.transnationalExposure"
       ],
       "interests": "report-silent",
-      "resources": "Un rôle d'approbation à parts égales à l'égard du commissaire à la transparence en matière d'influence étrangère, et une composition dans laquelle un seul groupe de douze est lié à un parti fédéral [security.transnationalExposure][political.powerStructure].",
+      "resources": "Rôle d'approbation à parts égales à l'égard du commissaire à la transparence en matière d'influence étrangère, et une composition dans laquelle un seul groupe de douze est lié à un parti fédéral [security.transnationalExposure][political.powerStructure].",
       "constraints": "Chaque siège est pourvu par nomination sur recommandation du premier ministre, et le critère qui isolait ce processus vient d'être retiré; neuf sièges sont vacants, dont cinq au Québec [political.powerStructure].",
       "likelyMoves": "Recevoir d'autres nominations dans le cadre du processus révisé [political.powerStructure].",
-      "engagementMode": "hijack-exposed. Le rapport décrit le retrait du critère de nomination non partisan et le remaniement du comité consultatif comme un changement de caractère de la chambre, et note que le même critère a été maintenu pour les nominations à la Cour suprême au même moment — le contraste est celui du rapport lui-même [political.powerStructure][political.rightsAndChecks].",
+      "engagementMode": "hijack-exposed. Le rapport décrit le retrait du critère de nomination non partisan et le remaniement du comité consultatif comme un changement de caractère de la chambre, et note que le même critère a parallèlement été maintenu pour les nominations à la Cour suprême [political.powerStructure][political.rightsAndChecks].",
       "anchors": [
         "political.powerStructure",
         "political.rightsAndChecks",
@@ -5715,15 +5715,15 @@ actors_domestic_fr: |-
       "name": "Président de la Chambre des communes",
       "kind": "législature",
       "liveActorStatus": "current",
-      "currentPosition": "L'un des 172 membres du gouvernement est le Président, qui par convention ne vote que pour départager les égalités, laissant un bloc gouvernemental opérant de 171 contre 167 — de sorte que de nouvelles pertes feraient reposer la capacité du gouvernement de légiférer sur la voix prépondérante du Président.",
+      "currentPosition": "L'un des 172 membres du gouvernement est le Président de la Chambre, qui par convention ne vote que pour départager les égalités, laissant un bloc gouvernemental opérant de 171 contre 167; de sorte que de nouvelles pertes feraient reposer la capacité du gouvernement de légiférer sur la voix prépondérante du Président.",
       "fieldsCitedIn": [
         "political.powerStructure",
         "political.shockAbsorbers"
       ],
       "interests": "report-silent",
-      "resources": "Une voix prépondérante qui devient décisive au nombre de sièges que le rapport décrit [political.shockAbsorbers].",
+      "resources": "Voix prépondérante qui devient décisive au nombre de sièges que le rapport décrit [political.shockAbsorbers].",
       "constraints": "Lié par une convention qui restreint le vote au départage des égalités [political.powerStructure].",
-      "likelyMoves": "Le rapport présente le vote du Président comme une éventualité qui s'active en cas de nouvelles défections, vacances ou défaites en élections partielles plutôt que comme une action entreprise [political.shockAbsorbers].",
+      "likelyMoves": "Le rapport présente le vote du Président comme une éventualité en cas de nouvelles défections, vacances ou défaites en élections partielles plutôt que comme une action entreprise [political.shockAbsorbers].",
       "engagementMode": "statutorily-independent. La charge fonctionne par convention plutôt que par négociation, et le rapport traite la voix prépondérante comme une règle, non comme une position négociable [political.powerStructure].",
       "anchors": [
         "political.powerStructure",
@@ -5734,7 +5734,7 @@ actors_domestic_fr: |-
       "name": "La Couronne (gouverneur général; gouverneur en conseil)",
       "kind": "exécutif fédéral",
       "liveActorStatus": "current",
-      "currentPosition": "L'autorité exécutive formelle appartient à la Couronne, représentée par le gouverneur général et exercée en pratique par le premier ministre et le Cabinet par l'intermédiaire du Conseil privé; le gouverneur en conseil nomme les juges de la Cour suprême, le chef d'état-major de la défense et le commissaire de la Gendarmerie royale du Canada et inscrit les projets d'intérêt national par décret — et la Couronne est la partie qui a l'obligation de consulter, la relation constitutionnelle des nations autochtones se rattachant à elle plutôt qu'aux provinces.",
+      "currentPosition": "L'autorité exécutive formelle appartient à la Couronne, représentée par le gouverneur général et exercée en pratique par le premier ministre et le Cabinet par l'intermédiaire du Conseil privé; le gouverneur en conseil nomme les juges de la Cour suprême, le chef d'état-major de la défense et le commissaire de la Gendarmerie royale du Canada et inscrit les projets d'intérêt national par décret. La Couronne est la partie qui a l'obligation de consulter; la relation constitutionnelle des nations autochtones se rattachant à elle plutôt qu'aux provinces.",
       "fieldsCitedIn": [
         "society.composition",
         "political.powerStructure",
@@ -5746,9 +5746,9 @@ actors_domestic_fr: |-
       ],
       "interests": "report-silent",
       "resources": "Pouvoirs formels de nomination et d'inscription exercés sur recommandation ministérielle, et statut de contrepartie constitutionnelle des titulaires de droits issus de traités et de titre ancestral [political.rightsAndChecks][capacity.approvals][society.composition].",
-      "constraints": "Chaque pouvoir est exercé sur avis, de sorte que la Couronne agit comme le canal formel des décisions du Cabinet; et sa propre obligation de consulter a été exécutée à deux reprises contre une initiative provinciale [political.powerStructure][political.constitutionalSubstrate].",
+      "constraints": "Chaque pouvoir est exercé sur avis, de sorte que la Couronne agit comme le canal formel des décisions du Cabinet; sa propre obligation de consulter a été exécutée à deux reprises contre une initiative provinciale [political.powerStructure][political.constitutionalSubstrate].",
       "likelyMoves": "Prendre les décrets d'inscription que le gouvernement a visés pour l'automne 2026 [capacity.approvals].",
-      "engagementMode": "veto-holder dans un sens précis — le cadre Tsilhqot'in exige le consentement ou une justification au titre de l'article 35 pour toute incursion de la Couronne sur des terres visées par un titre, de sorte que la Couronne est l'adresse à laquelle le consentement est demandé et la partie dont le défaut de consultation invalide le processus provincial [political.constitutionalSubstrate][political.stabilityDrivers].",
+      "engagementMode": "pouvoir de veto dans un sens précis : le cadre établi par l'arrêt Tsilhqot'in exige le consentement, ou la justification prévue à l'article 35, pour toute atteinte de la Couronne aux terres visées par un titre; la Couronne est donc l'instance à laquelle le consentement est demandé, et la partie dont le manquement à l'obligation de consulter invalide le processus provincial [political.constitutionalSubstrate][political.stabilityDrivers].",
       "anchors": [
         "political.powerStructure",
         "political.constitutionalSubstrate",
@@ -5760,7 +5760,7 @@ actors_domestic_fr: |-
       "name": "Cour suprême du Canada (et son comité consultatif indépendant sur les nominations judiciaires)",
       "kind": "judiciaire",
       "liveActorStatus": "current",
-      "currentPosition": "La juridiction d'appel de dernière instance, neuf juges nommés par le gouverneur en conseil à partir d'une liste restreinte préparée par un comité consultatif indépendant non partisan — qui évalue les candidats selon des critères publiés dont le bilinguisme fonctionnel et la représentation régionale, dresse une liste de trois à cinq noms et publie un rapport sur chaque processus — utilisé intégralement cette année pour nommer le juge Glenn Joyal le 30 juin 2026; sa doctrine du Renvoi relatif à la sécession et son arrêt Tsilhqot'in sur le titre régissent les questions que le rapport décrit comme en mouvement, et la constitutionnalité de la loi québécoise sur la laïcité est devant elle.",
+      "currentPosition": "La juridiction d'appel de dernière instance, neuf juges nommés par le gouverneur en conseil à partir d'une liste restreinte préparée par un comité consultatif indépendant non partisan (qui évalue les candidats selon des critères publiés dont le bilinguisme fonctionnel et la représentation régionale, dresse une liste de trois à cinq noms et publie un rapport sur chaque processus) utilisé intégralement cette année pour nommer le juge Glenn Joyal le 30 juin 2026; sa doctrine du Renvoi relatif à la sécession et son arrêt Tsilhqot'in sur le titre régissent les questions que le rapport décrit comme en mouvement, et la constitutionnalité de la loi québécoise sur la laïcité est devant elle.",
       "fieldsCitedIn": [
         "society.religion",
         "political.rightsAndChecks",
@@ -5768,10 +5768,10 @@ actors_domestic_fr: |-
         "political.powerStructure"
       ],
       "interests": "report-silent",
-      "resources": "Un contrôle judiciaire complet en tant que juridiction d'appel de dernière instance; un processus de nomination doté de critères publiés, d'une audience parlementaire publique et d'un comité consultatif qui contrôle la liste restreinte d'où la nomination doit être tirée; et une doctrine établie sur la sécession et le titre ancestral que les tribunaux inférieurs appliquent [political.rightsAndChecks][political.constitutionalSubstrate].",
-      "constraints": "Elle décide de ce qui lui parvient : la loi sur la laïcité est soustraite au contrôle fondé sur la Charte par la clause dérogatoire, qui fixe les conditions dans lesquelles cette cause lui arrive; et le comité consultatif est constitué pour chaque processus par le gouvernement — le rapport note que le comité équivalent du Sénat a été refondu et son critère non partisan supprimé [society.religion][political.rightsAndChecks][political.powerStructure].",
+      "resources": "Contrôle judiciaire complet en tant que juridiction d'appel de dernière instance; processus de nomination doté de critères publiés, d'une audience parlementaire publique et d'un comité consultatif qui contrôle la liste restreinte d'où la nomination doit être tirée; et une doctrine établie sur la sécession et le titre ancestral que les tribunaux inférieurs appliquent [political.rightsAndChecks][political.constitutionalSubstrate].",
+      "constraints": "Décide de ce qui lui parvient : la loi sur la laïcité est soustraite au contrôle fondé sur la Charte par la clause dérogatoire, qui fixe les conditions dans lesquelles cette cause lui arrive; et le comité consultatif est constitué pour chaque processus par le gouvernement. Le rapport note que le comité équivalent du Sénat a été refondu et son critère non partisan supprimé [society.religion][political.rightsAndChecks][political.powerStructure].",
       "likelyMoves": "Statuer sur le renvoi relatif à la laïcité dont elle est saisie; le rapport ne donne aucun échéancier [society.religion].",
-      "engagementMode": "judicial-deference. Le rapport consigne le maintien du critère de nomination non partisan pour cette cour — et la préservation du caractère non partisan de son comité consultatif — au moment même où les deux étaient abandonnés pour le Sénat [political.rightsAndChecks].",
+      "engagementMode": "judicial-deference. Le rapport consigne le maintien du critère de nomination non partisan pour cette cour (et la préservation du caractère non partisan de son comité consultatif) au moment même où les deux étaient abandonnés pour le Sénat [political.rightsAndChecks].",
       "anchors": [
         "political.rightsAndChecks",
         "political.constitutionalSubstrate",
@@ -5783,15 +5783,15 @@ actors_domestic_fr: |-
       "name": "Vérificatrice générale du Canada",
       "kind": "institution indépendante",
       "liveActorStatus": "current",
-      "currentPosition": "Faisant rapport au Parlement en mai 2026, la vérificatrice générale a constaté que les programmes sont en place, que le financement est versé et que les risques sont connus, mais que des faiblesses dans la mise en œuvre et le suivi freinent les résultats — ajoutant qu'il ne s'agit pas d'un nouveau schéma et que cela reprend des préoccupations soulevées l'année précédente; les vérifications précises portent sur le recrutement de la Gendarmerie royale du Canada, le remplacement du système de paye fédéral, le plafond des permis d'études, les engagements de Services aux Autochtones Canada au titre de la Nouvelle relation financière et la préparation à la grippe aviaire.",
+      "currentPosition": "Faisant rapport au Parlement en mai 2026, la vérificatrice générale a constaté que les programmes sont en place, que le financement est versé et que les risques sont connus, mais que des faiblesses dans la mise en œuvre et le suivi freinent les résultats, ajoutant qu'il ne s'agit pas d'un nouveau schéma et que cela reprend des préoccupations soulevées l'année précédente; les vérifications précises portent sur le recrutement de la Gendarmerie royale du Canada, le remplacement du système de paye fédéral, le plafond des permis d'études, les engagements de Services aux Autochtones Canada au titre de la Nouvelle relation financière et la préparation à la grippe aviaire.",
       "fieldsCitedIn": [
         "capacity.steering"
       ],
-      "interests": "Faire fermer les faiblesses de mise en œuvre et de suivi plutôt que de les voir réitérées — le rapport recense la conclusion répétée d'une année à l'autre [capacity.steering].",
-      "resources": "Un mandat de vérification légal couvrant l'ensemble des ministères, un rapport direct au Parlement, et des conclusions quantifiées que le rapport considère comme le compte rendu faisant autorité de la propre prestation de l'État [capacity.steering].",
-      "constraints": "Elle vérifie et fait rapport; elle ne met pas en œuvre, et le rapport montre le même schéma se reproduire après les conclusions de l'année précédente [capacity.steering].",
+      "interests": "Voir résorber les faiblesses de mise en œuvre et de suivi plutôt que de les voir réitérées; le rapport recense la conclusion répétée d'une année à l'autre [capacity.steering].",
+      "resources": "Mandat de vérification légal couvrant l'ensemble des ministères, rapport direct au Parlement et conclusions quantifiées que le rapport considère comme le compte rendu faisant autorité de la propre prestation de l'État [capacity.steering].",
+      "constraints": "Vérifie et fait rapport; ne met pas en œuvre; le rapport montre le même schéma se reproduire après les conclusions de l'année précédente [capacity.steering].",
       "likelyMoves": "Continuer de vérifier les domaines nommés; le rapport recense un cas d'apprentissage, l'élimination progressive du plan d'affectation flexible à partir de juillet 2025 [capacity.steering].",
-      "engagementMode": "statutorily-independent. Elle fait rapport au Parlement en vertu de son mandat et ses conclusions ne sont pas négociées avec les ministères vérifiés [capacity.steering].",
+      "engagementMode": "statutorily-independent. Fait rapport au Parlement en vertu de son mandat et ses conclusions ne sont pas négociées avec les ministères vérifiés [capacity.steering].",
       "anchors": [
         "capacity.steering"
       ]
@@ -5800,7 +5800,7 @@ actors_domestic_fr: |-
       "name": "Directrice parlementaire du budget",
       "kind": "institution indépendante",
       "liveActorStatus": "current",
-      "currentPosition": "Publie des projections indépendantes supérieures à celles du gouvernement lui-même — un déficit de 2,2 % pour 2025-2026 contre 2,1 %, des déficits d'environ 64 milliards de dollars par an en moyenne, une dette atteignant 42,5 % d'ici 2030-2031 — traite les mesures tarifaires américaines de 2025-2026 comme permanentes dans ses projections de croissance et budgétaires, indique qu'aucune projection de trajectoire vers l'engagement de 5 % en matière de défense n'a été publiée et chiffre cet engagement à 159,1 milliards de dollars d'ici 2035-2036, et documente l'escalade des coûts de l'agrandissement de Trans Mountain.",
+      "currentPosition": "Publie des projections indépendantes supérieures à celles du gouvernement lui-même : déficit de 2,2 % pour 2025-2026 contre 2,1 %, déficits d'environ 64 milliards de dollars par an en moyenne, dette atteignant 42,5 % d'ici 2030-2031; traite les mesures tarifaires des États-Unis de 2025-2026 comme permanentes dans ses projections de croissance et budgétaires, indique qu'aucune projection de trajectoire vers l'engagement de 5 % en matière de défense n'a été publiée et chiffre cet engagement à 159,1 milliards de dollars d'ici 2035-2036, et documente l'escalade des coûts de l'agrandissement de Trans Mountain.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "economy.publicFinances",
@@ -5811,11 +5811,11 @@ actors_domestic_fr: |-
         "security.military",
         "security.diplomacy"
       ],
-      "interests": "Maintenir un compte chiffré indépendant à l'aune duquel les propres chiffres du gouvernement peuvent être lus [economy.publicFinances][security.military].",
-      "resources": "Un mandat légal de chiffrage, des projections publiées sur le déficit, la dette, la défense et les coûts des mégaprojets, et la latitude de traiter une politique comme permanente là où le gouvernement ne le fait pas [economy.externalVulnerability][security.military].",
-      "constraints": "Elle projette et chiffre; le rapport montre sa conclusion sur la trajectoire de défense demeurant sans réponse plutôt qu'objet d'action [security.military][capacity.steering].",
+      "interests": "Maintenir un compte chiffré indépendant par rapport auquel les propres chiffres du gouvernement peuvent être lus [economy.publicFinances][security.military].",
+      "resources": "Mandat légal d'établissement des coûts, projections publiées sur le déficit, la dette, la défense et les coûts des mégaprojets, et latitude de traiter une politique comme permanente là où le gouvernement ne le fait pas [economy.externalVulnerability][security.military].",
+      "constraints": "Projette et chiffre; le rapport montre sa conclusion sur la trajectoire de défense demeurant sans réponse plutôt qu'objet d'action [security.military][capacity.steering].",
       "likelyMoves": "Continuer de publier des projections qui divergent modestement à la hausse de celles du gouvernement, et chiffrer les engagements dépourvus d'un parcours publié [economy.publicFinances][security.military].",
-      "engagementMode": "statutorily-independent. Le rapport utilise ses chiffres comme contrepoids à ceux du gouvernement, sans qu'aucune relation de négociation ne soit décrite [economy.publicFinances].",
+      "engagementMode": "statutorily-independent. Le rapport utilise ses chiffres comme contrepoids à ceux du gouvernement, sans relation de négociation [economy.publicFinances].",
       "anchors": [
         "economy.publicFinances",
         "security.military",
@@ -5827,16 +5827,16 @@ actors_domestic_fr: |-
       "name": "Banque du Canada",
       "kind": "institution indépendante",
       "liveActorStatus": "current",
-      "currentPosition": "A maintenu son taux directeur à 2,25 % le 15 juillet 2026, un sixième maintien consécutif, après une réduction cumulative de 275 points de base depuis le début de 2024; elle juge ce niveau approprié pour soutenir la reprise et ramener l'inflation à sa cible de 2 %, et continue de présenter les prix du pétrole du Moyen-Orient se répercutant dans les chaînes d'approvisionnement comme une pression importante sur les perspectives.",
+      "currentPosition": "A maintenu son taux directeur à 2,25 % le 15 juillet 2026, sixième maintien consécutif, après une réduction cumulative de 275 points de base depuis le début de 2024; juge ce niveau approprié pour soutenir la reprise et ramener l'inflation à sa cible de 2 %, et continue de présenter les prix du pétrole du Moyen-Orient se répercutant dans les chaînes d'approvisionnement comme une pression importante sur les perspectives.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "economy.publicFinances",
         "political.shockAbsorbers"
       ],
       "interests": "Ramener l'inflation à la cible de 2 % tout en soutenant une reprise que le rapport décrit comme au point mort [economy.publicFinances][economy.realEconomy].",
-      "resources": "Le taux directeur, les mesures de l'inflation fondamentale privilégiées, et la crédibilité d'une cible que le rapport considère comme le point de référence [economy.publicFinances].",
-      "constraints": "La marge monétaire est plus mince qu'elle ne l'était — le taux est déjà passé de 5,00 % à 2,25 %, de sorte qu'il reste bien moins de marge pour réduire en cas de nouveau ralentissement — et le moteur de l'inflation à laquelle elle fait face est externe et non résolu [political.shockAbsorbers][economy.publicFinances].",
-      "likelyMoves": "Maintenir le taux tant que le canal des prix du pétrole demeure non résolu; le rapport recense six maintiens consécutifs et aucun changement signalé [economy.publicFinances].",
+      "resources": "Taux directeur, mesures de l'inflation fondamentale privilégiées et crédibilité d'une cible que le rapport considère comme le point de référence [economy.publicFinances].",
+      "constraints": "La marge monétaire est plus mince qu'elle ne l'était (taux déjà passé de 5,00 % à 2,25 %, de sorte qu'il reste bien moins de marge pour réduire en cas de nouveau ralentissement) et le moteur de l'inflation à laquelle elle fait face est externe et non résolu [political.shockAbsorbers][economy.publicFinances].",
+      "likelyMoves": "Maintenir le taux tant que l'enjeu du prix du pétrole demeure non résolu; le rapport recense six maintiens consécutifs et aucun changement signalé [economy.publicFinances].",
       "engagementMode": "statutorily-independent. Le rapport la décrit fixant les taux par rapport à une cible, sans qu'aucune ingérence politique ni risque de capture ne soit consigné [economy.publicFinances][political.shockAbsorbers].",
       "anchors": [
         "economy.publicFinances",
@@ -5847,7 +5847,7 @@ actors_domestic_fr: |-
       "name": "Statistique Canada",
       "kind": "institution indépendante",
       "liveActorStatus": "current",
-      "currentPosition": "Le bureau national de la statistique fournit les mesures de population, de composition, de langue, de productivité et d'économie numérique sur lesquelles le rapport repose, et en encadre directement l'usage — signalant que les estimations de population sont sujettes à une révision à la hausse plus importante que d'habitude et affirmant que les données de composition de 2021 ne peuvent mesurer la croissance ou le déclin d'aucun groupe; son examen de mai 2026 ajoute que les industries dépendantes de la demande d'exportation américaine concentrent les emplois les plus productifs du pays.",
+      "currentPosition": "Le bureau national de la statistique fournit les mesures de population, de composition, de langue, de productivité et d'économie numérique sur lesquelles le rapport repose, et en encadre directement l'usage, signalant que les estimations de population sont sujettes à une révision à la hausse plus importante que d'habitude et affirmant que les données de composition de 2021 ne peuvent mesurer la croissance ou le déclin d'aucun groupe; son examen de mai 2026 ajoute que les industries dépendantes de la demande d'exportation aux États-Unis concentrent les emplois les plus productifs du pays.",
       "fieldsCitedIn": [
         "society.demographics",
         "society.composition",
@@ -5855,10 +5855,10 @@ actors_domestic_fr: |-
         "capacity.productivity"
       ],
       "interests": "report-silent",
-      "resources": "Le recensement et les comptes nationaux, et la latitude d'énoncer ce que ses propres données ne peuvent étayer [society.composition][society.demographics].",
+      "resources": "Recensement et comptes nationaux, et latitude d'énoncer ce que ses propres données ne peuvent étayer [society.composition][society.demographics].",
       "constraints": "Les changements de questions rompent la comparabilité, et ses propres estimations comportent un risque de révision signalé [society.composition][society.demographics].",
       "likelyMoves": "report-silent",
-      "engagementMode": "statutorily-independent. Le rapport la montre limitant les inférences que d'autres peuvent tirer de ses séries plutôt que négociant à leur sujet [society.composition].",
+      "engagementMode": "Indépendant de par la loi. Le rapport la montre limitant les inférences que d'autres peuvent tirer de ses séries plutôt que négociant à leur sujet [society.composition].",
       "anchors": [
         "society.demographics",
         "society.composition",
@@ -5874,10 +5874,10 @@ actors_domestic_fr: |-
         "political.stateStructure"
       ],
       "interests": "report-silent",
-      "resources": "Des ententes de perception fiscale couvrant l'ensemble des provinces et territoires, sauf les deux exceptions nommées [political.stateStructure].",
-      "constraints": "Sa couverture est fixée par entente, et deux administrations s'en sont retirées en partie [political.stateStructure].",
+      "resources": "Ententes de perception fiscale couvrant l'ensemble des provinces et territoires, sauf les deux exceptions nommées [political.stateStructure].",
+      "constraints": "Couverture est fixée par entente, et deux administrations s'en sont retirées en partie [political.stateStructure].",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate. Le rapport la présente comme l'expression administrative des arrangements budgétaires fédéraux, non comme un acteur doté d'une position [political.stateStructure].",
+      "engagementMode": "Subordonnée à l'exécutif. Le rapport la présente comme l'expression administrative des arrangements budgétaires fédéraux, non comme un acteur doté d'une position [political.stateStructure].",
       "anchors": [
         "political.stateStructure"
       ]
@@ -5886,16 +5886,16 @@ actors_domestic_fr: |-
       "name": "Bureau des grands projets (avec son Conseil consultatif autochtone)",
       "kind": "organisme de réglementation",
       "liveActorStatus": "current",
-      "currentPosition": "Créé par la Loi visant à bâtir le Canada et lancé le 29 août 2025 avec un Conseil consultatif autochtone, il coordonne les approbations selon le principe d'un seul examen par projet avec les provinces consentantes selon un échéancier maximal déclaré de deux ans; quinze projets avaient été renvoyés au 21 mai 2026 et aucun n'a été désigné, le processus d'inscription n'ayant été amorcé que le 24 juin 2026, avec des décisions visées pour l'automne — de sorte que le compte à rebours de deux ans n'a démarré pour aucun projet, et un volet parallèle traite les stratégies transformatrices, dans le cadre de l'une desquelles le projet de pipeline pétrolier de la côte Ouest a été confié au bureau le 2 juillet 2026.",
+      "currentPosition": "Créé par la Loi visant à bâtir le Canada et lancé le 29 août 2025 avec un Conseil consultatif autochtone, il coordonne les approbations selon le principe d'un seul examen par projet avec les provinces consentantes selon un échéancier maximal déclaré de deux ans; quinze projets renvoyés au 21 mai 2026 et aucun n'a été désigné, le processus d'inscription n'ayant été amorcé que le 24 juin 2026, avec des décisions visées pour l'automne, de sorte que le compte à rebours de deux ans n'a démarré pour aucun projet, et un volet parallèle traite les stratégies transformatrices, dans le cadre de l'une desquelles le projet d'oléoduc de la côte Ouest a été confié au bureau le 2 juillet 2026.",
       "fieldsCitedIn": [
         "capacity.steering",
         "capacity.approvals"
       ],
-      "interests": "Faire prononcer les premières désignations afin que le mécanisme qu'il existe pour faire fonctionner puisse être mis à l'épreuve [capacity.approvals].",
-      "resources": "Une voie légale par laquelle les projets inscrits reçoivent automatiquement les approbations de l'annexe 2 dans le cadre d'un document de conditions contraignant unique réputé être un permis en vertu de chaque loi applicable [capacity.approvals].",
+      "interests": "Faire prononcer les premières désignations, afin de mettre à l'épreuve le mécanisme même qu'il a été créé pour appliquer. [capacity.approvals].",
+      "resources": "Voie légale par laquelle les projets inscrits reçoivent automatiquement les approbations de l'annexe 2 dans le cadre d'un document de conditions contraignant unique réputé être un permis en vertu de chaque loi applicable [capacity.approvals].",
       "constraints": "Le renvoi n'a aucun effet juridique; la désignation exige la consultation des provinces, des territoires et des titulaires de droits autochtones, un avis de trente jours dans la Gazette et un décret du gouverneur en conseil, et la loi prévoit une temporisation de cinq ans sur les nouvelles désignations [capacity.approvals].",
       "likelyMoves": "Achever les consultations sur Grays Bay, la route de la vallée du Mackenzie et le dépôt géologique en profondeur en vue des décisions d'inscription visées pour l'automne 2026 [capacity.approvals].",
-      "engagementMode": "executive-subordinate. Il coordonne mais ne décide pas — l'inscription appartient au gouverneur en conseil sur recommandation du ministre responsable [capacity.approvals].",
+      "engagementMode": "Subordonné à l'exécutif. Coordonne, mais ne décide pas; l'inscription appartient au gouverneur en conseil sur recommandation du ministre responsable [capacity.approvals].",
       "anchors": [
         "capacity.approvals",
         "capacity.steering"
@@ -5909,11 +5909,11 @@ actors_domestic_fr: |-
       "fieldsCitedIn": [
         "security.diplomacy"
       ],
-      "interests": "La diversification commerciale au détriment d'un marché américain qui absorbe environ les trois quarts des exportations de marchandises [security.diplomacy][economy.externalVulnerability].",
+      "interests": "Diversification commerciale au détriment d'un marché états-unien qui absorbe environ les trois quarts des exportations de marchandises [security.diplomacy][economy.externalVulnerability].",
       "resources": "Quinze accords de libre-échange couvrant 51 pays, et les feuilles de route bilatérales avec la Chine et l'Inde [economy.externalVulnerability][security.diplomacy].",
-      "constraints": "Les deux partenaires de diversification sont les deux États que l'enquête sur l'ingérence a désignés comme les plus dommageables pour les institutions démocratiques canadiennes, et le rapport considère cela comme la tension centrale [security.diplomacy][security.posture].",
+      "constraints": "Les deux partenaires de diversification sont les deux États que l'enquête sur l'ingérence a désignés comme les plus dommageables pour les institutions démocratiques canadiennes; le rapport considère cela comme la tension centrale [security.diplomacy][security.posture].",
       "likelyMoves": "Poursuivre l'objectif d'exportation vers la Chine et les négociations d'un partenariat économique global avec l'Inde [security.diplomacy].",
-      "engagementMode": "executive-subordinate. Il exécute la politique de diversification du gouvernement; le rapport attribue les décisions politiques au premier ministre et au Cabinet [security.diplomacy].",
+      "engagementMode": "Subordonné à l'exécutif. Exécute la politique de diversification du gouvernement; le rapport attribue les décisions politiques au premier ministre et au Cabinet [security.diplomacy].",
       "anchors": [
         "security.diplomacy",
         "economy.externalVulnerability"
@@ -5927,11 +5927,11 @@ actors_domestic_fr: |-
       "fieldsCitedIn": [
         "territory.minerals"
       ],
-      "interests": "Convertir une dotation vaste en capacité développée — la stratégie sur les minéraux critiques cible explicitement l'échelle nationale manquante de traitement et de raffinage [territory.minerals][capacity.productivity].",
+      "interests": "Convertir une dotation vaste en capacité développée; la stratégie sur les minéraux critiques cible explicitement l'échelle nationale manquante de traitement et de raffinage [territory.minerals][capacity.productivity].",
       "resources": "La liste elle-même, qui définit ce qui compte comme critique, et l'inventaire des projets [territory.minerals].",
       "constraints": "Le Canada figure parmi les cinq premiers producteurs mondiaux de 10 des 34 minéraux, mais n'a pas bâti la capacité de traitement correspondante, et une grande partie de la dotation demeure non développée [capacity.productivity][territory.minerals].",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate. Il classifie et dénombre; le rapport situe les décisions ailleurs [territory.minerals].",
+      "engagementMode": "Subordonné à l'exécutif. Classifie et dénombre; le rapport situe les décisions ailleurs [territory.minerals].",
       "anchors": [
         "territory.minerals",
         "capacity.productivity"
@@ -5941,16 +5941,16 @@ actors_domestic_fr: |-
       "name": "Ministère de la Défense nationale et les Forces armées canadiennes",
       "kind": "militaire",
       "liveActorStatus": "current",
-      "currentPosition": "Un service unifié unique entièrement composé de volontaires sous l'autorité du chef d'état-major de la défense — Armée de terre, Marine, Aviation royale et, depuis septembre 2024, le Commandement cyber — comptant 67 827 membres de la Force régulière contre un effectif autorisé de 71 500, le recrutement dépassant la cible pour une deuxième année; les dépenses ont franchi le seuil de 2 % de l'Alliance en 2025-2026, à plus de 63 milliards de dollars comptabilisés dans plusieurs ministères, et la force est nation-cadre de la Brigade multinationale Lettonie avec environ 2 000 militaires sur place dans le cadre de l'opération REASSURANCE, reconduite jusqu'en 2029. En vertu de la Loi sur la défense nationale, le ministre a la gestion et la direction de la force et le chef d'état-major de la défense en a le contrôle et l'administration sous cette direction.",
+      "currentPosition": "Service unifié unique entièrement composé de volontaires sous l'autorité du chef d'état-major de la défense (Armée de terre, Marine, Aviation royale et, depuis septembre 2024, le commandement des cyberopérations) comptant 67 827 membres de la Force régulière contre un effectif autorisé de 71 500, le recrutement dépassant la cible pour une deuxième année; les dépenses ont franchi le seuil de 2 % de l'Alliance en 2025-2026, à plus de 63 milliards de dollars comptabilisés dans plusieurs ministères, et la force est nation-cadre de la Brigade multinationale de l'OTAN en Lettonie avec environ 2 000 militaires sur place dans le cadre de l'opération REASSURANCE, reconduite jusqu'en 2029. En vertu de la Loi sur la défense nationale, le ministre assume la gestion et la direction de la force et le chef d'état-major de la défense assume le contrôle et l'administration sous cette direction.",
       "fieldsCitedIn": [
         "political.stabilityDrivers",
         "security.military"
       ],
       "interests": "Combler l'écart d'effectifs que le rapport désigne comme la contrainte déterminante sur la capacité, et soutenir la contribution à l'Alliance qui confère à une force de taille moyenne un certain statut [security.military].",
-      "resources": "Un budget dépassant le seuil de 2 %, une Agence des investissements en défense créée pour accélérer l'approvisionnement, 38,6 milliards de dollars sur vingt ans pour la modernisation de la surveillance continentale, et le statut de nation-cadre en Lettonie [security.military].",
-      "constraints": "3 673 en deçà de l'effectif autorisé de la Force régulière et une Réserve en manque d'environ 5 000; une projection limitée à l'échelle d'une brigade au sein d'une coalition; aucune base à l'étranger; et l'engagement plus important de 2035 ne comporte aucun parcours publié [security.military][security.posture].",
+      "resources": "Budget dépassant le seuil de 2 %, Agence des investissements en défense créée pour accélérer l'approvisionnement, 38,6 milliards de dollars sur vingt ans pour la modernisation de la surveillance continentale, et statut de nation-cadre en Lettonie [security.military].",
+      "constraints": "3 673 en deçà de l'effectif autorisé de la Force régulière et manque de quelque 5 000 membres à la Réserve; projection limitée à l'échelle d'une brigade au sein d'une coalition; aucune base à l'étranger; et l'engagement plus important de 2035 ne comporte aucun plan publié [security.military][security.posture].",
       "likelyMoves": "Recruter en fonction d'un objectif rehaussé de 8 200 pour 2026-2027 et poursuivre l'opération REASSURANCE jusqu'à son horizon de reconduction de 2029 [security.military].",
-      "engagementMode": "executive-subordinate. Le contrôle civil est légal et sans ambiguïté, tous les ordres donnant effet aux décisions du gouvernement étant émis par le chef d'état-major de la défense ou par son intermédiaire, et le rapport ne recense aucun antécédent d'intervention militaire en politique [political.stabilityDrivers].",
+      "engagementMode": "Subordonné à l'exécutif. Le contrôle civil est légal et sans ambiguïté, tous les ordres donnant effet aux décisions du gouvernement étant émis par le chef d'état-major de la défense ou par son intermédiaire, et le rapport ne recense aucun antécédent d'intervention militaire en politique [political.stabilityDrivers].",
       "anchors": [
         "security.military",
         "political.stabilityDrivers",
@@ -5965,11 +5965,11 @@ actors_domestic_fr: |-
       "fieldsCitedIn": [
         "security.military"
       ],
-      "interests": "Un approvisionnement plus rapide, face à une trajectoire de dépenses que le rapport dit dépourvue de parcours publié [security.military].",
+      "interests": "Approvisionnement plus rapide, face à une trajectoire de dépenses que le rapport dit dépourvue de plan publié [security.military].",
       "resources": "report-silent",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate. Créée par le gouvernement pour exécuter l'approvisionnement; aucune autonomie indépendante n'est décrite [security.military].",
+      "engagementMode": "Subordonné à l'exécutif. Créée par le gouvernement pour exécuter l'approvisionnement; aucune autonomie indépendante n'est décrite [security.military].",
       "anchors": [
         "security.military"
       ]
@@ -5978,17 +5978,17 @@ actors_domestic_fr: |-
       "name": "Services de renseignement et de sécurité (Centre de la sécurité des télécommunications; Service canadien du renseignement de sécurité, avec le Centre intégré d’évaluation du terrorisme; Service canadien de renseignements criminels; commissaire à la transparence en matière d’influence étrangère)",
       "kind": "service de sécurité ou de renseignement",
       "liveActorStatus": "current",
-      "currentPosition": "L'appareil canadien de renseignement et de sécurité : le Centre de la sécurité des télécommunications (renseignement électromagnétique, en partenariat étroit avec le Commandement cyber des Forces armées canadiennes, depuis septembre 2024 l'autorité ministérielle unique pour les opérations cybernétiques); le Service canadien du renseignement de sécurité (contre-ingérence, répression transnationale et prévention des intrusions cybernétiques, son directeur fixant le niveau de menace terroriste — à « moyen » depuis octobre 2014 — sur l'avis du Centre intégré d'évaluation du terrorisme); le Service canadien de renseignements criminels (évaluation nationale de la menace des groupes du crime organisé et des gangs de rue, signalant une menace croissante pour les communautés autochtones et un risque arctique émergent); et le commissaire à la transparence en matière d'influence étrangère proposé (Anton Boegman), dont le bureau et le registre doivent ouvrir le 4 août 2026, plus de deux ans après la sanction royale de la loi habilitante.",
+      "currentPosition": "L'appareil canadien de renseignement et de sécurité : le Centre de la sécurité des télécommunications (renseignement électromagnétique, en partenariat étroit avec le commandement des cyberopérations des Forces armées canadiennes, depuis septembre 2024 l'autorité ministérielle unique pour les opérations cybernétiques); le Service canadien du renseignement de sécurité (contre-ingérence, répression transnationale et prévention des intrusions cybernétiques, son directeur fixant le niveau de menace terroriste — à « moyen » depuis octobre 2014 — sur l'avis du Centre intégré d'évaluation du terrorisme); le Service canadien de renseignements criminels (évaluation nationale de la menace des groupes du crime organisé et des gangs de rue, signalant une menace croissante pour les communautés autochtones et un risque arctique émergent); et le commissaire à la transparence en matière d'influence étrangère proposé (Anton Boegman), dont le bureau et le registre doivent ouvrir le 4 août 2026, plus de deux ans après la sanction royale de la loi habilitante.",
       "fieldsCitedIn": [
         "security.military",
         "security.internal",
         "security.transnationalExposure"
       ],
       "interests": "Contrer l'ingérence étrangère que l'enquête publique a jugée la plus grande exposition para-étatique du Canada, et mettre sur pied le registre que le rapport décrit comme la réponse de l'État à ce constat [security.transnationalExposure].",
-      "resources": "Une collecte statutaire de renseignement électromagnétique et de sécurité intégrée au domaine cybernétique militaire, la détermination du niveau de menace terroriste, une fonction nationale d'évaluation de la menace du crime organisé, et — à compter du 4 août 2026 — un registre indépendant de l'influence étrangère insulé par une consultation multipartite et une nomination approuvée par les deux chambres [security.internal][security.transnationalExposure][security.military].",
-      "constraints": "L'instrument législatif conçu pour contrer l'ingérence — le registre et son commissaire — n'était toujours pas opérationnel plus de deux ans après la sanction royale; et les organismes d'évaluation conseillent au sein de l'État, les décisions d'application et d'inscription étant prises ailleurs [security.transnationalExposure][security.posture][security.internal].",
+      "resources": "Collecte statutaire de renseignement électromagnétique et de sécurité intégrée au domaine cybernétique militaire, détermination du niveau de menace terroriste, fonction nationale d'évaluation de la menace du crime organisé, et (à compter du 4 août 2026) registre indépendant de l'influence étrangère protégé par une consultation multipartite et une nomination approuvée par les deux chambres [security.internal][security.transnationalExposure][security.military].",
+      "constraints": "Instrument législatif conçu pour contrer l'ingérence (registre et commissaire) n'était toujours pas opérationnel plus de deux ans après la sanction royale; les organismes d'évaluation conseillent au sein de l'État, les décisions d'application et d'inscription étant prises ailleurs [security.transnationalExposure][security.posture][security.internal].",
       "likelyMoves": "Ouvrir le bureau et le registre de l'influence étrangère le 4 août 2026 [security.transnationalExposure].",
-      "engagementMode": "executive-subordinate — les services évaluent, collectent et conseillent au sein de l’État, les décisions d’application et d’inscription étant prises ailleurs; le commissaire à la transparence en matière d’influence étrangère fait exception, statutorily-independent, sa nomination étant délibérément insulée par une consultation multipartite et l’approbation des deux chambres [security.internal][security.transnationalExposure].",
+      "engagementMode": "Subordonné à l'exécutif; les services évaluent, collectent et conseillent au sein de l’État, les décisions d’application et d’inscription étant prises ailleurs; le commissaire à la transparence en matière d’influence étrangère fait exception, indépendant de par la loi, sa nomination étant délibérément protégée par une consultation multipartite et l’approbation des deux chambres [security.internal][security.transnationalExposure].",
       "anchors": [
         "security.military",
         "security.internal",
@@ -6000,17 +6000,17 @@ actors_domestic_fr: |-
       "name": "Gendarmerie royale du Canada",
       "kind": "service de sécurité ou de renseignement",
       "liveActorStatus": "current",
-      "currentPosition": "Corps de police fédéral sous la direction du ministre de la Sécurité publique, servant aussi par contrat comme service provincial ou territorial dans chaque province sauf l'Ontario et le Québec, dans les trois territoires et dans de nombreuses municipalités; la vérification de mars 2026 a constaté qu'elle avait fait du recrutement une priorité absolue tout en fixant des cibles inférieures à ses besoins et en les ratant — un déficit d'au moins 3 400 agents en date de septembre 2025, des taux de vacance supérieurs à son propre seuil critique dans neuf des onze administrations et des délais de traitement cibles ratés pour 97 % des demandes. Sa doctrine veut que le commissaire soit responsable devant le ministre mais indépendant sur le plan opérationnel.",
+      "currentPosition": "Corps de police fédéral sous la direction du ministre de la Sécurité publique, servant aussi par contrat comme service provincial ou territorial dans les provinces (sauf l'Ontario et le Québec), dans les trois territoires et dans de nombreuses municipalités; la vérification de mars 2026 a constaté qu'elle avait fait du recrutement une priorité absolue tout en fixant des cibles inférieures à ses besoins et en ne les atteignant pas; déficit d'au moins 3 400 agents en date de septembre 2025, des taux de vacance supérieurs à son propre seuil critique dans neuf des onze administrations et des délais de traitement cibles manqués pour 97 % des demandes. Son principe directeur veut que le commissaire soit responsable devant le ministre, mais indépendant sur le plan opérationnel.",
       "fieldsCitedIn": [
         "political.stabilityDrivers",
         "capacity.steering",
         "security.internal"
       ],
-      "interests": "Combler un déficit d'effectifs qui traverse des obligations de services de police contractuels qu'elle ne peut refuser [capacity.steering][security.internal].",
-      "resources": "Des mandats de police fédéraux, provinciaux, territoriaux et municipaux, et la nomination du commissaire par le gouverneur en conseil assortie d'une indépendance opérationnelle légale dans les fonctions essentielles d'application de la loi [security.internal][political.stabilityDrivers].",
-      "constraints": "3 400 agents en moins, avec des classes de formation annulées, et un remède — le plan d'affectation flexible de 2023 — qui a attiré des candidats tout en aggravant les vacances chroniques et a commencé à être éliminé progressivement en juillet 2025 [capacity.steering].",
+      "interests": "Combler un déficit d'effectifs qui touche des obligations de police contractuelle auxquelles elle ne peut se soustraire [capacity.steering][security.internal].",
+      "resources": "Mandats de police fédéraux, provinciaux, territoriaux et municipaux, et nomination du commissaire par le gouverneur en conseil assortie d'une indépendance opérationnelle légale dans les fonctions essentielles d'application de la loi [security.internal][political.stabilityDrivers].",
+      "constraints": "Manque de 3 400 agents, avec des classes de formation annulées, et un remède (plan d'affectation flexible de 2023) qui a attiré des candidats tout en aggravant les vacances chroniques et a commencé à être éliminé progressivement en juillet 2025 [capacity.steering].",
       "likelyMoves": "Poursuivre l'élimination progressive du plan d'affectation flexible et le recrutement en fonction de cibles révisées [capacity.steering].",
-      "engagementMode": "executive-subordinate sur la gestion et la direction, statutorily-independent dans les fonctions essentielles d'application de la loi — le rapport trace cette ligne avec précision, le commissaire étant responsable devant le ministre mais soustrait à la direction des élus dans les décisions policières [political.stabilityDrivers].",
+      "engagementMode": "Subordonné à l'exécutif sur la gestion et la direction, indépendant de par la loi dans les fonctions essentielles d'application de la loi; le rapport trace cette ligne avec précision, le commissaire étant responsable devant le ministre, mais soustrait à la direction des élus dans les décisions policières [political.stabilityDrivers].",
       "anchors": [
         "security.internal",
         "capacity.steering",
@@ -6026,11 +6026,11 @@ actors_domestic_fr: |-
         "security.internal",
         "security.transnationalExposure"
       ],
-      "interests": "L'interception aux points d'entrée à une frontière gérée par la coopération bilatérale en matière d'application de la loi plutôt que par la militarisation [security.internal].",
-      "resources": "Le contrôle opérationnel aux points d'entrée, un plan frontalier de 1,3 milliard de dollars, une cellule conjointe de renseignement opérationnel et l'unité de transparence commerciale [security.internal][security.transnationalExposure].",
-      "constraints": "Les données d'application vont à l'encontre de la direction communément supposée, la plupart des stupéfiants saisis entrant plutôt que sortant — la pression à laquelle elle répond est présentée comme venant de l'étranger [security.internal].",
+      "interests": "Interception aux points d'entrée d'une frontière gérée par la coopération bilatérale en matière d'application de la loi plutôt que par la militarisation [security.internal].",
+      "resources": "Contrôle opérationnel aux points d'entrée, plan frontalier de 1,3 milliard de dollars, cellule conjointe de renseignement opérationnel et unité de transparence commerciale [security.internal][security.transnationalExposure].",
+      "constraints": "Les données d'application vont à l'encontre de la direction communément supposée; la plupart des stupéfiants saisis entrant plutôt que sortant. Pression à laquelle elle répond est présentée comme venant de l'étranger [security.internal].",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate. Elle exécute la politique frontalière établie par le gouvernement [security.internal].",
+      "engagementMode": "Subordonnée à l'exécutif. Exécute la politique frontalière établie par le gouvernement [security.internal].",
       "anchors": [
         "security.internal",
         "security.transnationalExposure"
@@ -6039,7 +6039,7 @@ actors_domestic_fr: |-
     {
       "name": "Enquête publique sur l'ingérence étrangère (juge Marie-Josée Hogue)",
       "kind": "commission d'enquête",
-      "liveActorStatus": "recently-live",
+      "liveActorStatus": "récemment en vigueur",
       "currentPosition": "A conclu dans son rapport final de janvier 2025 que la République populaire de Chine était l'auteur le plus actif d'ingérence étrangère visant les institutions démocratiques canadiennes et l'Inde le deuxième plus actif, et que la répression transnationale contre les communautés diasporiques au Canada était assez grave pour justifier un avertissement au-delà du mandat même de l'enquête.",
       "fieldsCitedIn": [
         "security.transnationalExposure",
@@ -6047,20 +6047,20 @@ actors_domestic_fr: |-
         "security.posture"
       ],
       "interests": "report-silent",
-      "resources": "Une adjudication publique conclue que le rapport considère comme la désignation faisant autorité des deux États en cause, et qu'il utilise comme référence à l'aune de laquelle les réinitialisations commerciales ultérieures sont lues [security.diplomacy][security.posture].",
+      "resources": "Adjudication publique conclue que le rapport considère comme la désignation faisant autorité des deux États en cause, et utilisée comme référence par rapport à laquelle les réinitialisations commerciales ultérieures sont lues [security.diplomacy][security.posture].",
       "constraints": "Son mandat a pris fin; l'avertissement sur la répression transnationale a été émis au-delà de ce mandat [security.transnationalExposure].",
-      "likelyMoves": "Sans objet — l'enquête a fait rapport; ce qui demeure d'actualité est la mise en œuvre de la réponse législative [security.transnationalExposure].",
-      "engagementMode": "report-silent. Une enquête conclue n'est pas un homologue; le rapport utilise ses conclusions comme référence permanente au regard de la diplomatie actuelle [security.diplomacy].",
+      "likelyMoves": "Sans objet; l'enquête a fait rapport; ce qui demeure d'actualité est la mise en œuvre de la réponse législative [security.transnationalExposure].",
+      "engagementMode": "Aucune donnée dans le rapport. Une enquête conclue n'est pas un interlocuteur; le rapport utilise ses conclusions comme d'un point de repère permanent au regard de la diplomatie actuelle [security.diplomacy].",
       "anchors": [
         "security.transnationalExposure",
         "security.diplomacy"
       ]
     },
     {
-      "name": "Gouvernement de l'Alberta (la première ministre)",
+      "name": "Gouvernement de l'Alberta (première ministre)",
       "kind": "gouvernement infranational",
       "liveActorStatus": "current",
-      "currentPosition": "A fixé un référendum provincial au 19 octobre 2026 comportant dix questions au titre de décrets, la dixième demandant si l'Alberta devrait demeurer une province ou entamer le processus juridique menant à un vote de séparation contraignant — non contraignant, la première ministre disant appuyer le maintien et vouloir faire campagne en ce sens; elle a modifié sa Citizen Initiative Act pour supprimer l'exigence de constitutionnalité et le pouvoir de renvoi du directeur général des élections après que les tribunaux ont bloqué à deux reprises la voie de la pétition citoyenne, porte le jugement en appel comme erroné en droit, a proposé un comité mixte fédéral-provincial pour approuver les nominations aux cours supérieures, auquel la profession juridique s'est opposée comme constitutionnellement inadmissible, et est partie au protocole d'entente engageant à l'avance le gouvernement fédéral à déclarer le projet de pipeline pétrolier de la côte Ouest un projet d'intérêt national.",
+      "currentPosition": "A fixé un référendum provincial au 19 octobre 2026 comportant dix questions au titre de décrets, la dixième demandant si l'Alberta devrait demeurer une province ou entamer le processus juridique menant à un vote de séparation contraignant; non contraignant, la première ministre disant appuyer le maintien et vouloir faire campagne en ce sens; elle a modifié la loi Citizen Initiative Act pour supprimer l'exigence de constitutionnalité et le pouvoir de renvoi du directeur général des élections après que les tribunaux ont bloqué à deux reprises la voie de la pétition citoyenne, porte le jugement en appel comme erroné en droit, a proposé un comité mixte fédéral-provincial pour approuver les nominations aux cours supérieures, auquel la profession juridique s'est opposée comme constitutionnellement inadmissible, et est partie au protocole d'entente engageant à l'avance le gouvernement fédéral à déclarer le projet de pipeline pétrolier de la côte Ouest comme étant un projet d'intérêt national.",
       "fieldsCitedIn": [
         "society.composition",
         "political.rightsAndChecks",
@@ -6070,11 +6070,11 @@ actors_domestic_fr: |-
         "political.stateStructure",
         "capacity.approvals"
       ],
-      "interests": "Élargir le contrôle provincial à la frontière fédérale — sur la relation constitutionnelle, sur les nominations judiciaires dans la province, et sur la route vers les eaux littorales pour son secteur énergétique [political.stabilityDrivers][political.rightsAndChecks][capacity.approvals].",
-      "resources": "Le contrôle par décret du scrutin sans pétition citoyenne, une compétence provinciale enchâssée sur les ressources en vertu de l'article 92A, la grappe énergétique que le rapport situe dans la province, et un engagement fédéral pris à l'avance sur le pipeline [political.stabilityDrivers][political.stateStructure][economy.politicalEconomy][capacity.approvals].",
-      "constraints": "Deux jugements de la Cour du Banc du Roi tiennent que la Couronne avait une obligation de consulter et l'a violée et que la sécession affecterait nécessairement les traités 7 et 8; le Renvoi relatif à la sécession interdit la sécession unilatérale; et la Loi sur la clarté réserve la détermination de la clarté à la Chambre des communes [political.constitutionalSubstrate].",
+      "interests": "Élargir le contrôle provincial à la frontière fédérale : sur la relation constitutionnelle, sur les nominations judiciaires dans la province, et sur l'accès aux eaux littorales pour son secteur énergétique [political.stabilityDrivers][political.rightsAndChecks][capacity.approvals].",
+      "resources": "Contrôle par décret du scrutin sans pétition citoyenne, compétence provinciale enchâssée sur les ressources en vertu de l'article 92A, grappe énergétique que le rapport situe dans la province, et engagement fédéral pris à l'avance sur le pipeline [political.stabilityDrivers][political.stateStructure][economy.politicalEconomy][capacity.approvals].",
+      "constraints": "Deux jugements de la Cour du Banc du Roi tiennent que la Couronne n'a pas respecté son obligation de consultation et que la sécession affecterait nécessairement les traités 7 et 8; le Renvoi relatif à la sécession interdit la sécession unilatérale; et la Loi sur la clarté référendaire réserve la détermination de la clarté à la Chambre des communes [political.constitutionalSubstrate].",
       "likelyMoves": "Tenir le référendum du 19 octobre 2026 et poursuivre l'appel [political.shockAbsorbers][political.constitutionalSubstrate].",
-      "engagementMode": "negotiable / dealable sur les projets — le rapport la recense signant un protocole d'entente avec le gouvernement fédéral — tandis que sur la question constitutionnelle le rapport la décrit contournant le processus fédéral et judiciaire plutôt que collaborant avec lui [capacity.approvals][political.stabilityDrivers].",
+      "engagementMode": "négociable sur les projets (le rapport la recense signant un protocole d'entente avec le gouvernement fédéral) tandis que sur la question constitutionnelle le rapport la décrit contournant le processus fédéral et judiciaire plutôt que collaborant avec lui [capacity.approvals][political.stabilityDrivers].",
       "anchors": [
         "political.stabilityDrivers",
         "political.constitutionalSubstrate",
@@ -6086,7 +6086,7 @@ actors_domestic_fr: |-
       "name": "Gouvernement du Québec",
       "kind": "gouvernement infranational",
       "liveActorStatus": "current",
-      "currentPosition": "Détient les arrangements asymétriques les plus étendus de la fédération — droit civil, son propre régime de rentes en vertu de l'article 94A, l'autorité exclusive de sélectionner les immigrants économiques et les réfugiés réinstallés avec un veto explicite sur ceux destinés au Québec en vertu de l'Accord Canada-Québec de 1991, et sa propre administration de l'impôt sur le revenu des particuliers et des sociétés; il légifère sur la langue au moyen de la Charte de la langue française et sur la laïcité au moyen de la Loi sur la laïcité de l'État, soustraite au contrôle fondé sur la Charte par la clause dérogatoire et élargie en avril 2026 au-delà de l'emploi étatique jusqu'au domaine public, sa constitutionnalité étant maintenant devant la Cour suprême; il a reçu un transfert fédéral de 750 millions de dollars pour les coûts d'asile engagés entre 2021 et 2024.",
+      "currentPosition": "Détient les arrangements asymétriques les plus étendus de la fédération : droit civil, propre régime de rentes en vertu de l'article 94A, autorité exclusive de sélectionner les immigrants économiques et les réfugiés réinstallés avec un veto explicite sur ceux destinés au Québec en vertu de l'Accord Canada-Québec de 1991, et propre administration de l'impôt sur le revenu des particuliers et des sociétés; légifère sur la langue au moyen de la Charte de la langue française et sur la laïcité au moyen de la Loi sur la laïcité de l'État, soustraite au contrôle fondé sur la Charte par la clause dérogatoire et élargie en avril 2026 au-delà de l'emploi étatique jusqu'au domaine public, sa constitutionnalité étant maintenant devant la Cour suprême; a reçu un transfert fédéral de 750 millions de dollars pour les coûts d'asile engagés entre 2021 et 2024.",
       "fieldsCitedIn": [
         "society.language",
         "society.religion",
@@ -6095,11 +6095,11 @@ actors_domestic_fr: |-
         "political.stateStructure",
         "security.transnationalExposure"
       ],
-      "interests": "Maintenir et étendre un espace juridictionnel distinct — langue, laïcité, sélection de l'immigration, droit civil et administration fiscale — face à un mouvement démographique dans lequel le français croît en nombre et décline en proportion [political.stateStructure][society.language].",
-      "resources": "Une compétence constitutionnellement enchâssée, la clause dérogatoire, un accord d'immigration qu'aucune autre province ne détient assorti d'une subvention fédérale annuelle, une administration fiscale distincte, et Hydro-Québec comme pilier de l'économie provinciale [political.stateStructure][society.religion][economy.politicalEconomy].",
-      "constraints": "La loi sur la laïcité est devant la Cour suprême; la population dont la première langue officielle est l'anglais a dépassé le million dans la province; et ses propres coûts d'asile ont nécessité un transfert fédéral [society.religion][society.language][security.transnationalExposure].",
+      "interests": "Maintenir et étendre un espace juridictionnel distinct (langue, laïcité, sélection de l'immigration, droit civil et administration fiscale) face à un mouvement démographique dans lequel le français croît en nombre et décline en proportion [political.stateStructure][society.language].",
+      "resources": "Compétence constitutionnellement enchâssée, clause dérogatoire, accord d'immigration qu'aucune autre province ne détient assorti d'une subvention fédérale annuelle, administration fiscale distincte, et Hydro-Québec comme pilier de l'économie provinciale [political.stateStructure][society.religion][economy.politicalEconomy].",
+      "constraints": "Loi sur la laïcité devant la Cour suprême; la population dont la première langue officielle est l'anglais a dépassé le million dans la province; et ses propres coûts d'asile ont nécessité un transfert fédéral [society.religion][society.language][security.transnationalExposure].",
       "likelyMoves": "Mettre en vigueur, à compter de septembre 2026, les restrictions de la loi de renforcement sur la pratique religieuse collective dans les espaces sous contrôle public pendant que le renvoi suit son cours [society.religion].",
-      "engagementMode": "veto-holder. Le rapport décrit un veto explicite sur les réfugiés réinstallés destinés à la province, la primauté du droit provincial en vertu de l'article 94A, et la clause dérogatoire utilisée pour placer une loi hors de portée du contrôle fondé sur la Charte [political.stateStructure][society.religion].",
+      "engagementMode": "pouvoir de veto. Le rapport décrit un veto explicite sur les réfugiés réinstallés destinés à la province, la primauté du droit provincial en vertu de l'article 94A, et la clause dérogatoire utilisée pour placer une loi hors de portée du contrôle fondé sur la Charte [political.stateStructure][society.religion].",
       "anchors": [
         "political.stateStructure",
         "society.religion",
@@ -6111,16 +6111,16 @@ actors_domestic_fr: |-
       "name": "Gouvernements territoriaux (Yukon, Territoires du Nord-Ouest, Nunavut)",
       "kind": "gouvernement infranational",
       "liveActorStatus": "current",
-      "currentPosition": "Détiennent une compétence déléguée par loi fédérale plutôt qu'enchâssée, sans autorité inhérente au-delà de ce que le Parlement leur confère, ne sont pas parties à la formule de modification, et auraient besoin d'une modification constitutionnelle réunissant le Parlement et sept provinces pour accéder au statut de province; la dévolution a transféré les terres et ressources publiques au Yukon en 2003 et aux Territoires du Nord-Ouest en 2014 sans modifier cette assise, et les gouvernements territoriaux figurent parmi les promoteurs ou copromoteurs de quatre des quinze projets renvoyés au Bureau des grands projets.",
+      "currentPosition": "Détiennent une compétence déléguée par loi fédérale plutôt qu'enchâssée, sans autorité inhérente au-delà de ce que le Parlement leur confère, ne sont pas parties à la formule de modification, et nécessiteraient une modification constitutionnelle réunissant le Parlement et sept provinces pour accéder au statut de province; la dévolution a transféré les terres et ressources publiques au Yukon en 2003 et aux Territoires du Nord-Ouest en 2014 sans modifier cette assise, et les gouvernements territoriaux figurent parmi les promoteurs ou copromoteurs de quatre des quinze projets renvoyés au Bureau des grands projets.",
       "fieldsCitedIn": [
         "political.stateStructure",
         "capacity.approvals"
       ],
       "interests": "Combler l'écart entre la compétence déléguée et enchâssée, et faire avancer les projets d'infrastructure nordiques dont ils sont promoteurs [political.stateStructure][capacity.approvals].",
-      "resources": "Des pouvoirs largement équivalents à ceux des provinces, y compris la propriété et les droits civils, le contrôle des terres publiques là où elles ont été dévolues, la Formule de financement des territoires d'une valeur de 5,8 milliards de dollars, et le statut de promoteur dans le processus d'approbation [political.stateStructure][capacity.approvals].",
-      "constraints": "Leurs constitutions sont des lois fédérales modifiables par le Parlement seul; ils sont hors de la formule de modification; et le dégel du pergélisol déstabilise les infrastructures et l'accès aux communautés dans l'ensemble des territoires [political.stateStructure][territory.climate].",
-      "likelyMoves": "Faire avancer les projets nordiques renvoyés — Grays Bay et la route de la vallée du Mackenzie comptent parmi ceux dont le processus d'inscription a été amorcé le 24 juin 2026 [capacity.approvals].",
-      "engagementMode": "negotiable / dealable, mais depuis une position déléguée : le rapport est explicite sur le fait qu'ils ne détiennent aucune autorité inhérente et ne peuvent modifier leur propre assise constitutionnelle [political.stateStructure].",
+      "resources": "Pouvoirs largement équivalents à ceux des provinces, y compris la propriété et les droits civils, le contrôle des terres publiques là où elles ont été dévolues, la Formule de financement des territoires d'une valeur de 5,8 milliards de dollars, et le statut de promoteur dans le processus d'approbation [political.stateStructure][capacity.approvals].",
+      "constraints": "Leurs constitutions sont des lois fédérales modifiables par le Parlement seul; sont hors de la formule de modification; le dégel du pergélisol déstabilise les infrastructures et l'accès aux communautés dans l'ensemble des territoires [political.stateStructure][territory.climate].",
+      "likelyMoves": "Faire avancer les projets nordiques renvoyés; Grays Bay et la route de la vallée du Mackenzie comptent parmi ceux dont le processus d'inscription a été amorcé le 24 juin 2026 [capacity.approvals].",
+      "engagementMode": "négociable, mais depuis une position déléguée : le rapport est explicite sur le fait qu'ils ne détiennent aucune autorité inhérente et ne peuvent modifier leur propre assise constitutionnelle [political.stateStructure].",
       "anchors": [
         "political.stateStructure",
         "capacity.approvals",
@@ -6128,18 +6128,18 @@ actors_domestic_fr: |-
       ]
     },
     {
-      "name": "Les premiers ministres (fédéral, provinciaux et territoriaux)",
+      "name": "Premiers ministres (fédéral, provinciaux et territoriaux)",
       "kind": "autre",
       "liveActorStatus": "current",
-      "currentPosition": "Lors de leur réunion du 23 juillet 2026, la quatorzième depuis mars 2025, les premiers ministres ont convenu de travailler à une entente de principe d'ici la fin de 2026 sur une loi modèle de reconnaissance mutuelle — un engagement à négocier plutôt qu'un instrument achevé.",
+      "currentPosition": "Lors de leur réunion du 23 juillet 2026, la quatorzième depuis mars 2025, les premiers ministres ont convenu de travailler à une entente de principe d'ici la fin de 2026 sur une loi modèle de reconnaissance mutuelle; engagement à négocier plutôt qu'un instrument achevé.",
       "fieldsCitedIn": [
         "capacity.productivity"
       ],
-      "interests": "Réduire les barrières au commerce intérieur que le Fonds monétaire international chiffre à l'équivalent d'un tarif national de 9 % [capacity.productivity].",
-      "resources": "Un forum permanent se réunissant fréquemment — quatorze fois en moins de dix-huit mois — et la compétence combinée requise pour que la reconnaissance mutuelle fonctionne [capacity.productivity].",
-      "constraints": "Il ne peut que s'engager à négocier : une grande partie du travail restant relève de la compétence provinciale et territoriale, les dispositions sur la mobilité de la main-d'œuvre sont encore en négociation, et le cadre sur l'alcool attendu en mai 2026 n'a pas été livré [capacity.productivity].",
+      "interests": "Réduire les barrières au commerce intérieur que le Fonds monétaire international chiffre à l'équivalent d'un droit de douane national de 9 % [capacity.productivity].",
+      "resources": "Forum permanent se réunissant fréquemment (quatorze fois en moins de dix-huit mois) et compétence combinée requise pour que la reconnaissance mutuelle fonctionne [capacity.productivity].",
+      "constraints": "Ne peut que s'engager à négocier : une grande partie du travail restant relève de la compétence provinciale et territoriale, les dispositions sur la mobilité de la main-d'œuvre sont encore en négociation, et le cadre sur l'alcool attendu en mai 2026 n'a pas été livré [capacity.productivity].",
       "likelyMoves": "Travailler à l'entente de principe d'ici la fin de 2026 [capacity.productivity].",
-      "engagementMode": "negotiable / dealable. Le forum est lui-même une négociation; le rapport précise que ce qui en est ressorti est un engagement à négocier [capacity.productivity].",
+      "engagementMode": "négociable. Le forum est lui-même une négociation; le rapport précise que ce qui en est ressorti est un engagement à négocier [capacity.productivity].",
       "anchors": [
         "capacity.productivity",
         "political.stateStructure"
@@ -6149,16 +6149,16 @@ actors_domestic_fr: |-
       "name": "Directeur général des élections de l'Alberta",
       "kind": "institution indépendante",
       "liveActorStatus": "current",
-      "currentPosition": "A approuvé une pétition d'initiative en vue d'un référendum sur l'indépendance de l'Alberta, une approbation que la Cour du Banc du Roi a annulée; la province avait entre-temps modifié sa Citizen Initiative Act pour supprimer à la fois l'exigence que les questions proposées soient constitutionnelles et le pouvoir du directeur général des élections de les renvoyer aux tribunaux.",
+      "currentPosition": "A approuvé une pétition d'initiative en vue d'un référendum sur l'indépendance de l'Alberta, une approbation que la Cour du Banc du Roi a annulée; la province avait entre-temps modifié sa loi Citizen Initiative Act pour supprimer à la fois l'exigence que les questions proposées soient constitutionnelles et le pouvoir du directeur général des élections de les renvoyer aux tribunaux.",
       "fieldsCitedIn": [
         "political.stabilityDrivers",
         "political.constitutionalSubstrate"
       ],
       "interests": "report-silent",
-      "resources": "L'administration légale du processus de pétition d'initiative [political.stabilityDrivers].",
+      "resources": "Administration légale du processus de pétition d'initiative [political.stabilityDrivers].",
       "constraints": "Le pouvoir de renvoi qui lui permettait d'envoyer des questions aux tribunaux a été supprimé par une loi provinciale, et sa décision d'approbation a été annulée judiciairement [political.stabilityDrivers][political.constitutionalSubstrate].",
       "likelyMoves": "report-silent",
-      "engagementMode": "hijack-exposed. Le rapport recense un gouvernement provincial abolissant par voie législative le pouvoir de ce fonctionnaire de renvoyer les questions proposées aux tribunaux au milieu d'un litige en cours sur ces questions [political.stabilityDrivers].",
+      "engagementMode": "Exposition au détournement. Le rapport recense un gouvernement provincial abolissant par voie législative le pouvoir de ce fonctionnaire de renvoyer les questions proposées aux tribunaux au milieu d'un litige en cours sur ces questions [political.stabilityDrivers].",
       "anchors": [
         "political.stabilityDrivers",
         "political.constitutionalSubstrate"
@@ -6168,16 +6168,16 @@ actors_domestic_fr: |-
       "name": "Cour du Banc du Roi de l'Alberta",
       "kind": "judiciaire",
       "liveActorStatus": "current",
-      "currentPosition": "A conclu en décembre 2025 qu'une question de séparation proposée contrevenait à la Charte et aux traités historiques, et le 13 mai 2026, dans l'affaire Athabasca Chipewyan First Nation c. Alberta (Chief Electoral Officer), a annulé l'approbation d'une pétition portant sur essentiellement la même question, jugeant que la Couronne avait une obligation de consulter et l'avait violée et que la sécession affecterait nécessairement les traités 7 et 8; la province porte le jugement en appel.",
+      "currentPosition": "A conclu en décembre 2025 qu'une question de séparation proposée contrevenait à la Charte et aux traités historiques, et le 13 mai 2026, dans l'affaire Athabasca Chipewyan First Nation c. Alberta (Chief Electoral Officer), a annulé l'approbation d'une pétition portant sur essentiellement la même question, jugeant que la Couronne avait une obligation de consulter et ne l'avait pas respecter et que la sécession affecterait nécessairement les traités 7 et 8; la province porte le jugement en appel.",
       "fieldsCitedIn": [
         "political.stabilityDrivers",
         "political.constitutionalSubstrate"
       ],
       "interests": "report-silent",
-      "resources": "La compétence de cour supérieure d'annuler l'approbation administrative dont dépendait la voie de la pétition citoyenne, à deux reprises [political.constitutionalSubstrate].",
+      "resources": "Compétence de cour supérieure d'annuler l'approbation administrative dont dépendait la voie de la pétition citoyenne, à deux reprises [political.constitutionalSubstrate].",
       "constraints": "Ses jugements n'ont touché que la voie de la pétition; la province a inscrit sa propre question au scrutin par décret, qui ne requiert aucune pétition [political.stabilityDrivers].",
       "likelyMoves": "Le rapport recense l'appel comme pendant et ne donne aucun calendrier [political.constitutionalSubstrate].",
-      "engagementMode": "judicial-deference. Le rapport considère que son jugement établit la doctrine opérante selon laquelle les droits issus de traités des Autochtones sont une condition préalable à l'amorce d'un processus de sécession, non une considération à l'intérieur de celui-ci [political.constitutionalSubstrate].",
+      "engagementMode": "Déférence judiciaire. Le rapport considère que sa décision établit la règle en vigueur : les droits issus de traités des peuples autochtones constituent une condition préalable au déclenchement d'un processus de sécession, et non un élément à considérer une fois celui-ci engagé [political.constitutionalSubstrate].",
       "anchors": [
         "political.constitutionalSubstrate",
         "political.stabilityDrivers"
@@ -6187,7 +6187,7 @@ actors_domestic_fr: |-
       "name": "Titulaires de droits autochtones (Assemblée des Premières Nations; Athabasca Chipewyan, Piikani, Siksika et Tribu des Blood; Nation crie)",
       "kind": "organisation autochtone",
       "liveActorStatus": "current",
-      "currentPosition": "Les titulaires de droits autochtones dont le rapport traite les droits issus de traités et le titre comme une condition préalable constitutionnelle tant à toute sécession provinciale qu'à l'approbation des grands projets, agissant à la fois par la voie judiciaire et par la négociation. Sur la sécession, la doctrine opérante veut que les droits issus de traités ne soient pas une considération à l'intérieur d'un processus de séparation mais une condition préalable à son engagement : ces droits ont deux fois stoppé la voie de la pétition citoyenne en Alberta — les Premières Nations Athabasca Chipewyan, Piikani, Siksika et la Tribu des Blood (Kainai) ayant intenté la cause dans laquelle la Cour du Banc du Roi de l'Alberta a annulé la pétition référendaire le 13 mai 2026 au regard des Traités 7 et 8 — et l'Assemblée des Premières Nations a répondu à la proposition référendaire en invoquant les traités numérotés et en réclamant une révision fédérale de l'Entente sur le transfert des ressources naturelles de 1930. La Nation crie illustre la voie négociée : une lignée d'ententes de cinquante ans avec le Canada et le Québec, de la Convention de la Baie-James et du Nord québécois (1975) à l'Accord sur la gouvernance de la nation crie (2017) et sa propre constitution. Sur les approbations, ils s'opposent de façon soutenue à la Loi visant à bâtir le Canada pour des motifs de droits et de procédure, et sous le cadre Tsilhqot'in, les atteintes de la Couronne aux terres visées par le titre exigent le consentement ou une justification au titre de l'article 35.",
+      "currentPosition": "Les titulaires de droits autochtones dont le rapport traite les droits issus de traités et le titre comme une condition préalable constitutionnelle tant à toute sécession provinciale qu'à l'approbation de grands projets, agissant à la fois par la voie judiciaire et par la négociation. Sur la sécession, la doctrine opérante veut que les droits issus de traités ne soient pas une considération au sein d'un processus de séparation, mais une condition préalable à son engagement : ces droits ont deux fois stoppé la voie de la pétition citoyenne en Alberta (les Premières Nations Athabasca Chipewyan, Piikani, Siksika et la Tribu des Blood (Kainai) ayant intenté la cause dans laquelle la Cour du Banc du Roi de l'Alberta a annulé la pétition référendaire le 13 mai 2026 au regard des Traités 7 et 8) et l'Assemblée des Premières Nations a répondu à la proposition référendaire en invoquant les traités numérotés et en réclamant une révision fédérale de l'Entente sur le transfert des ressources naturelles de 1930. La Nation crie illustre la voie négociée : une lignée d'ententes de cinquante ans avec le Canada et le Québec, de la Convention de la Baie-James et du Nord québécois (1975) à l'Accord sur la gouvernance de la nation crie (2017) et sa propre constitution. Sur les approbations, ils s'opposent de façon soutenue à la Loi visant à bâtir le Canada pour des motifs de droits et de procédure, et sous le cadre Tsilhqot'in, les atteintes de la Couronne aux terres visées par le titre exigent le consentement ou une justification au titre de l'article 35.",
       "fieldsCitedIn": [
         "political.constitutionalSubstrate",
         "political.stabilityDrivers",
@@ -6196,10 +6196,10 @@ actors_domestic_fr: |-
         "capacity.steering"
       ],
       "interests": "Établir que l'autonomie ou la sécession provinciale ne peut passer outre les droits issus de traités et rouvrir l'Entente de 1930 par laquelle les provinces des Prairies détiennent le contrôle des ressources; et défendre ces droits contre un régime d'approbation qui consolide les permis fédéraux en un document de conditions unique [political.constitutionalSubstrate][society.composition][capacity.approvals].",
-      "resources": "La reconnaissance à l'article 35 des droits ancestraux et issus de traités existants, qui relèvent de la Couronne et non de la province; les traités numérotés (6, 7 et 8) et deux décisions favorables stoppant la voie de la pétition albertaine; le statut national de faîtière de l'Assemblée des Premières Nations; le traité global moderne de la Nation crie sur environ un million de kilomètres carrés et sa propre constitution; une obligation légale de consultation à trois points sous la Loi visant à bâtir le Canada; le Programme de garantie de prêts pour les Autochtones doublé à 10 milliards de dollars; et, sous le cadre Tsilhqot'in, une exigence de consentement sur les terres visées par un titre [political.constitutionalSubstrate][political.stabilityDrivers][capacity.approvals][capacity.steering].",
+      "resources": "Reconnaissance en vertu de l'article 35 des droits ancestraux et issus de traités existants, qui relèvent de la Couronne et non de la province; traités numérotés (6, 7 et 8) et deux décisions favorables stoppant la voie de la pétition albertaine; position nationale de premier plan de l'Assemblée des Premières Nations; traité global moderne de la Nation crie sur environ un million de kilomètres carrés et sa propre constitution; obligation légale de consultation à trois moments selon la Loi visant à bâtir le Canada; Programme de garantie de prêts pour les Autochtones doublé à 10 milliards de dollars; et, selon le cadre Tsilhqot'in, exigence de consentement sur les terres visées par un titre [political.constitutionalSubstrate][political.stabilityDrivers][capacity.approvals][capacity.steering].",
       "constraints": "Le litige albertain n'a atteint que la voie de la pétition, et la province a modifié la loi habilitante, inscrit sa propre question au scrutin par décret et interjeté appel; la Loi visant à bâtir le Canada a été adoptée avec l'appui libéral et conservateur, et quatre des quinze projets soumis ont des promoteurs autochtones ou territoriaux, ce qui complique tout récit simple d'opposition autochtone; le référendum non exécutoire de l'Alberta sur la séparation a néanmoins lieu le 19 octobre 2026 [political.stabilityDrivers][capacity.approvals][political.shockAbsorbers].",
       "likelyMoves": "Défendre la décision du 13 mai 2026 en appel, continuer de faire valoir l'argument des traités contre le processus albertain à l'approche du référendum du 19 octobre, et participer aux consultations lancées le 24 juin 2026 en vue des décisions d'inscription de l'automne [political.constitutionalSubstrate][political.stabilityDrivers][capacity.approvals].",
-      "engagementMode": "veto-holder au sens statutaire et constitutionnel — les droits issus de traités sont une condition préalable à l'engagement d'un processus de sécession provinciale, les tribunaux ayant deux fois stoppé la voie de la pétition albertaine sur ce fondement; la consultation est une condition préalable que la Loi visant à bâtir le Canada impose à trois points; et les atteintes de la Couronne aux terres visées par un titre exigent le consentement ou une justification au titre de l'article 35. La Nation crie illustre le mode négociable parallèle, une séquence d'ententes de cinquante ans avec les deux ordres de gouvernement [political.constitutionalSubstrate][political.stabilityDrivers][capacity.approvals].",
+      "engagementMode": "Pouvoir de veto au sens statutaire et constitutionnel; les droits issus de traités sont une condition préalable à l'engagement d'un processus de sécession provinciale, les tribunaux ayant deux fois stoppé la voie de la pétition albertaine sur ce fondement; la consultation est une condition préalable que la Loi visant à bâtir le Canada impose à trois étapes; et les atteintes de la Couronne aux terres visées par un titre exigent le consentement ou une justification au titre de l'article 35. La Nation crie illustre le mode négociable parallèle, une séquence d'ententes de cinquante ans avec les deux ordres de gouvernement [political.constitutionalSubstrate][political.stabilityDrivers][capacity.approvals].",
       "anchors": [
         "political.constitutionalSubstrate",
         "political.stabilityDrivers",
@@ -6210,18 +6210,18 @@ actors_domestic_fr: |-
       ]
     },
     {
-      "name": "Sociétés d’État fédérales de financement et le Fonds pour un Canada fort (Banque de développement du Canada, Exportation et développement Canada, Banque de l’infrastructure du Canada; Fonds pour un Canada fort)",
+      "name": "Sociétés d’État fédérales de financement et Fonds pour un Canada fort (Banque de développement du Canada, Exportation et développement Canada, Banque de l’infrastructure du Canada; Fonds pour un Canada fort)",
       "kind": "société d’État",
       "liveActorStatus": "current",
-      "currentPosition": "Les sociétés d'État fédérales qui portent un poids économique important dans une économie mixte penchant vers le pôle axé sur le marché — la Banque de développement du Canada, Exportation et développement Canada et la Banque de l'infrastructure du Canada — désormais rejointes par le Fonds pour un Canada fort, annoncé le 27 avril 2026 comme le premier fonds souverain fédéral du Canada, doté de 25 milliards de dollars sur trois ans et constitué en société d'État sans lien de dépendance prenant des participations minoritaires aux côtés du capital privé dans l'énergie, les minéraux critiques, l'agriculture, les infrastructures et la fabrication de pointe; le Fonds est contesté — des critiques se demandent si un fonds financé par la dette prenant des participations dans des projets favorisés relève de l'investissement ou de la politique industrielle sous un autre nom.",
+      "currentPosition": "Les sociétés d'État fédérales qui portent un poids économique important dans une économie mixte penchant vers le pôle axé sur le marché (la Banque de développement du Canada, Exportation et développement Canada et la Banque de l'infrastructure du Canada) désormais rejointes par le Fonds pour un Canada fort, annoncé le 27 avril 2026 comme le premier fonds souverain fédéral du Canada, doté de 25 milliards de dollars sur trois ans et constitué en société d'État sans lien de dépendance prenant des participations minoritaires aux côtés du capital privé dans l'énergie, les minéraux critiques, l'agriculture, les infrastructures et la fabrication de pointe; le Fonds est contesté; des critiques se demandent si un fonds financé par la dette prenant des participations dans des projets favorisés relève de l'investissement ou de la politique industrielle sous un autre nom.",
       "fieldsCitedIn": [
         "economy.politicalEconomy"
       ],
       "interests": "Mobiliser le capital privé dans les secteurs nommés, le Fonds pour un Canada fort servant d'instrument de participation d'un programme de productivité par ailleurs porté par une déduction fiscale [economy.politicalEconomy].",
-      "resources": "Une capacité de financement fédérale couvrant le développement des entreprises, le crédit à l'exportation et les infrastructures, et les 25 milliards de dollars du Fonds sur trois ans sous un mandat de participation minoritaire sans lien de dépendance dans cinq secteurs nommés [economy.politicalEconomy].",
-      "constraints": "Le Fonds est financé par la dette et contesté à la frontière que le rapport identifie comme la ligne vive, et le rapport précise que sa capacité à modifier la trajectoire de productivité dépend d'une exécution soutenue plutôt que d'une annonce [economy.politicalEconomy].",
+      "resources": "Capacité de financement fédérale couvrant le développement des entreprises, le crédit à l'exportation et les infrastructures, et les 25 milliards de dollars du Fonds sur trois ans sous un mandat de participation minoritaire sans lien de dépendance dans cinq secteurs nommés [economy.politicalEconomy].",
+      "constraints": "Fonds financé par emprunt et le débat porte sur la nature de ses prises de participation dans des projets privilégiés : coinvestissement ou politique industrielle sous un autre nom?; le rapport indique explicitement que sa capacité à infléchir la trajectoire de productivité dépendra d'une exécution soutenue plutôt que de l'annonce [economy.politicalEconomy].",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate. Véhicules de financement fédéraux nommés pour le poids qu’ils portent; la conception sans lien de dépendance du Fonds pour un Canada fort est affirmée et contestée, le rapport préservant à la fois le cadrage de coinvestissement et l’objection de politique industrielle [economy.politicalEconomy].",
+      "engagementMode": "executive-subordinate. Véhicules de financement fédéraux nommés pour le poids qu’ils portent; la conception sans lien de dépendance du Fonds pour un Canada fort est affirmée et contestée; le rapport préservant à la fois le cadrage de coinvestissement et l’objection de politique industrielle [economy.politicalEconomy].",
       "anchors": [
         "economy.politicalEconomy",
         "capacity.productivity"
@@ -6231,16 +6231,16 @@ actors_domestic_fr: |-
       "name": "Hydro-Québec",
       "kind": "société d'État",
       "liveActorStatus": "current",
-      "currentPosition": "Le plus grand producteur d'électricité du pays et un pilier de l'économie du Québec; elle est aussi l'une des signataires de la Convention de la Baie-James et du Nord québécois de 1975.",
+      "currentPosition": "Plus grand producteur d'électricité du pays et pilier de l'économie du Québec; en outre l'une des signataires de la Convention de la Baie-James et du Nord québécois de 1975.",
       "fieldsCitedIn": [
         "economy.politicalEconomy",
         "political.constitutionalSubstrate"
       ],
       "interests": "report-silent",
-      "resources": "Une production provinciale dominée par l'hydroélectricité — le Québec figure parmi les provinces produisant plus de 85 % de leur électricité à partir de celle-ci — et un statut de partie aux traités dans les instruments de la Baie-James [territory.metabolism][political.constitutionalSubstrate].",
-      "constraints": "Le réseau est-ouest est fragmenté, la transmission interprovinciale étant limitée comparativement aux lignes nord-sud reliant la production canadienne aux marchés américains [territory.metabolism].",
+      "resources": "Production provinciale dominée par l'hydroélectricité (le Québec figure parmi les provinces produisant plus de 85 % de leur électricité à partir de celle-ci) et statut de partie aux traités dans les instruments de la Baie-James [territory.metabolism][political.constitutionalSubstrate].",
+      "constraints": "Le réseau est-ouest est fragmenté, la transmission interprovinciale étant limitée comparativement aux lignes nord-sud reliant la production canadienne aux marchés états-uniens [territory.metabolism].",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate à l'égard du gouvernement provincial, dont le rapport la décrit comme un pilier plutôt que comme un acteur indépendant en son sein [economy.politicalEconomy].",
+      "engagementMode": "Subordonnée au gouvernement provincial, dont le rapport la décrit comme un pilier plutôt que comme un acteur indépendant en son sein [economy.politicalEconomy].",
       "anchors": [
         "economy.politicalEconomy",
         "territory.metabolism",
@@ -6256,10 +6256,10 @@ actors_domestic_fr: |-
         "territory.metabolism"
       ],
       "interests": "report-silent",
-      "resources": "La propriété et l'exploitation d'environ 80 % du réseau ferroviaire national, et le trafic de produits en vrac qui y circule [territory.metabolism].",
-      "constraints": "Le réseau est une seule épine dorsale est-ouest s'étendant sur des milliers de kilomètres, sans solution de rechange redondante en aucun point du corridor [capacity.inheritedTerrain].",
+      "resources": "Propriété et exploitation d'environ 80 % du réseau ferroviaire national, et des produits en vrac qui y circulent [territory.metabolism].",
+      "constraints": "Le réseau est une seule épine dorsale est-ouest s'étendant sur des milliers de kilomètres, sans d'autre option redondante en aucun point du corridor [capacity.inheritedTerrain].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. Des exploitants privés d'une infrastructure dont l'État dépend; le rapport ne décrit aucun litige réglementaire [territory.metabolism].",
+      "engagementMode": "négociable. Exploitants privés d'une infrastructure dont l'État dépend; le rapport ne décrit aucun litige réglementaire [territory.metabolism].",
       "anchors": [
         "territory.metabolism",
         "capacity.inheritedTerrain"
@@ -6269,17 +6269,17 @@ actors_domestic_fr: |-
       "name": "Secteur pétrolier et gazier et l’Oil Sands Alliance (Canadian Natural Resources, Suncor Energy, Cenovus, Imperial Oil; Enbridge, TC Energy)",
       "kind": "secteur privé",
       "liveActorStatus": "current",
-      "currentPosition": "Les grandes sociétés des sables bitumineux et des pipelines regroupées en Alberta — parmi les principaux bénéficiaires du modèle actuel, évoluant dans des marchés concentrés à fortes barrières à l'entrée — avec l'Oil Sands Alliance, qui, avec le Canada et l'Alberta, est partie au protocole d'entente par lequel le gouvernement fédéral s'est engagé d'avance à déclarer le projet d'oléoduc vers la côte Ouest projet d'intérêt national, soumis au Bureau des grands projets le 2 juillet 2026 dans le cadre de la stratégie Pathways Plus; avec les banques à charte et les exportateurs manufacturiers, elles soutiennent la stabilité macroéconomique mais pressent le gouvernement sur la diversification commerciale, la compétitivité réglementaire et la réponse aux droits de douane américains.",
+      "currentPosition": "Grandes sociétés des sables bitumineux et des pipelines regroupées en Alberta (parmi les principaux bénéficiaires du modèle actuel, évoluant dans des marchés concentrés à fortes barrières à l'entrée) avec l'Oil Sands Alliance, qui, avec le Canada et l'Alberta, est partie au protocole d'entente par lequel le gouvernement fédéral s'est engagé d'avance à déclarer que le projet d'oléoduc vers la côte Ouest était un projet d'intérêt national, soumis au Bureau des grands projets le 2 juillet 2026 dans le cadre de la stratégie Pathways Plus; avec les banques à charte et les exportateurs manufacturiers, elles soutiennent la stabilité macroéconomique, mais pressent le gouvernement en matière de diversification commerciale, de compétitivité réglementaire et de réponse aux droits de douane imposés par les États-Unis.",
       "fieldsCitedIn": [
         "economy.politicalEconomy",
         "political.stabilityDrivers",
         "capacity.approvals"
       ],
-      "interests": "Une capacité d'acheminement du pétrole vers les eaux de marée, la compétitivité réglementaire et un allègement tarifaire, ainsi que la désignation d'intérêt national de l'oléoduc vers la côte Ouest et de la stratégie de captage du carbone qui l'englobe; le rapport range la création de cette capacité parmi les réformes que la plupart des analystes jugent techniquement nécessaires [economy.politicalEconomy][political.stabilityDrivers][capacity.approvals].",
-      "resources": "Une position de marché concentrée, la plus grande part des émissions nationales à 208 mégatonnes, et un protocole d'entente tripartite porteur d'un engagement fédéral anticipé, par un volet d'approbation parallèle réservé aux stratégies transformatrices plutôt qu'aux projets individuels [economy.politicalEconomy][territory.transition][capacity.approvals].",
-      "constraints": "L'opposition environnementale et, en partie, autochtone aux nouveaux pipelines est nommée comme le groupe organisé que rencontre chacune de ces réformes; l'alignement sur le gouvernement est conditionnel plutôt qu'automatique; et aucun projet n'a encore été désigné en vertu de la Loi, dont le gouvernement affirme explicitement qu'elle ne couvrira pas tous les projets soumis [economy.politicalEconomy][political.stabilityDrivers][capacity.approvals].",
+      "interests": "Capacité d'acheminement du pétrole jusqu'aux côtes, compétitivité réglementaire et allègement tarifaire, ainsi que la désignation d'intérêt national de l'oléoduc vers la côte Ouest et de la stratégie de captage du carbone qui l'englobe; le rapport classe la création de cette capacité parmi les réformes que la plupart des analystes jugent techniquement nécessaires [economy.politicalEconomy][political.stabilityDrivers][capacity.approvals].",
+      "resources": "Position de marché concentrée, plus grande part des émissions nationales à 208 mégatonnes, et protocole d'entente tripartite porteur d'un engagement fédéral anticipé, par un volet d'approbation parallèle réservé aux stratégies transformatrices plutôt qu'aux projets individuels [economy.politicalEconomy][territory.transition][capacity.approvals].",
+      "constraints": "Opposition environnementale et, en partie, autochtone aux nouveaux pipelines nommée comme le groupe organisé que rencontre chacune de ces réformes; l'alignement sur le gouvernement est conditionnel plutôt qu'automatique; et aucun projet n'a encore été désigné en vertu de la Loi, dont le gouvernement affirme explicitement qu'elle ne couvrira pas tous les projets soumis [economy.politicalEconomy][political.stabilityDrivers][capacity.approvals].",
       "likelyMoves": "Faire avancer l'oléoduc vers la côte Ouest par le volet Pathways Plus soumis au Bureau des grands projets le 2 juillet 2026, en pressant pour la désignation que le protocole d'entente anticipe [capacity.approvals].",
-      "engagementMode": "negotiable / dealable. Le rapport montre le secteur obtenant un engagement fédéral anticipé par protocole d’entente plutôt que par le processus de désignation lui-même [capacity.approvals].",
+      "engagementMode": "négociable. Le rapport montre le secteur obtenant un engagement fédéral anticipé par protocole d’entente plutôt que par le processus de désignation lui-même [capacity.approvals].",
       "anchors": [
         "economy.politicalEconomy",
         "political.stabilityDrivers",
@@ -6291,16 +6291,16 @@ actors_domestic_fr: |-
       "name": "Banques à charte (Banque Royale du Canada, Banque Toronto-Dominion, Banque de Nouvelle-Écosse, Banque de Montréal, Banque Canadienne Impériale de Commerce)",
       "kind": "secteur privé",
       "liveActorStatus": "current",
-      "currentPosition": "Dominent un marché financier concentré et sont nommées parmi les principaux bénéficiaires du modèle actuel; avec les producteurs d'énergie et les fabricants exportateurs, elles soutiennent la stabilité macroéconomique tout en faisant pression sur le gouvernement en matière de diversification commerciale, de compétitivité réglementaire et de réponse tarifaire.",
+      "currentPosition": "Dominent un marché financier concentré et nommées parmi les principaux bénéficiaires du modèle actuel; avec les producteurs d'énergie et les fabricants exportateurs, elles soutiennent la stabilité macroéconomique tout en faisant pression sur le gouvernement en matière de diversification commerciale, de compétitivité réglementaire et de réponse tarifaire.",
       "fieldsCitedIn": [
         "economy.politicalEconomy",
         "political.stabilityDrivers"
       ],
-      "interests": "La stabilité macroéconomique et les conditions réglementaires d'un marché concentré [political.stabilityDrivers][economy.politicalEconomy].",
-      "resources": "Une domination du marché par une poignée de firmes à barrières d'entrée élevées [economy.politicalEconomy].",
+      "interests": "Stabilité macroéconomique et conditions réglementaires d'un marché concentré [political.stabilityDrivers][economy.politicalEconomy].",
+      "resources": "Domination du marché par une poignée de firmes à barrières d'entrée élevées [economy.politicalEconomy].",
       "constraints": "La forte concentration dans des secteurs de services clés est nommée par le Fonds monétaire international parmi les faiblesses structurelles à l'origine de l'écart de productivité [capacity.productivity].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. L'alignement avec le gouvernement est décrit comme conditionnel et exprimé sous forme de pression sur les politiques [political.stabilityDrivers].",
+      "engagementMode": "négociable / dealable. L'alignement avec le gouvernement est décrit comme conditionnel et exprimé sous forme de pression sur les politiques [political.stabilityDrivers].",
       "anchors": [
         "economy.politicalEconomy",
         "political.stabilityDrivers"
@@ -6310,16 +6310,16 @@ actors_domestic_fr: |-
       "name": "Mouvement syndical (Congrès du travail du Canada, Unifor, Confédération des syndicats nationaux)",
       "kind": "mouvement syndical",
       "liveActorStatus": "current",
-      "currentPosition": "Le mouvement syndical canadien, réunissant le Congrès du travail du Canada (la fédération faîtière, environ trois millions de travailleurs répartis dans ses affiliés, concentrés dans le secteur public et l'industrie lourde), Unifor (le plus grand syndicat du secteur privé avec plus de 315 000 membres dans l'automobile, l'énergie, les médias et la fabrication, qui a quitté le Congrès en 2024) et la Confédération des syndicats nationaux du Québec (un bloc distinct d'environ 300 000 membres).",
+      "currentPosition": "Mouvement syndical canadien, réunissant le Congrès du travail du Canada (la fédération faîtière, environ trois millions de membres affiliés, concentrés dans le secteur public et l'industrie lourde), Unifor (le plus grand syndicat du secteur privé avec plus de 315 000 membres dans l'automobile, l'énergie, les médias et la fabrication, qui a quitté le Congrès en 2024) et la Confédération des syndicats nationaux du Québec (bloc distinct d'environ 300 000 membres).",
       "fieldsCitedIn": [
         "economy.politicalEconomy",
         "economy.externalVulnerability"
       ],
-      "interests": "Résister aux mesures d'assouplissement du marché du travail, que le rapport nomme parmi les groupes organisés que rencontrent les réformes nécessaires; les membres d'Unifor se trouvent dans l'automobile, l'énergie et la fabrication — précisément les secteurs frappés par les droits américains de 50 % et de 25 % [economy.politicalEconomy][economy.externalVulnerability].",
-      "resources": "Environ trois millions de travailleurs dans les affiliés du Congrès, plus de 315 000 dans Unifor et environ 300 000 dans la Confédération des syndicats nationaux, ainsi qu'un statut de fédération faîtière [economy.politicalEconomy].",
+      "interests": "Résister aux mesures d'assouplissement du marché du travail, résistance que le rapport range parmi les groupes d'intérêts organisés auxquels se heurtent les réformes jugées nécessaires; les membres d'Unifor se trouvent dans l'automobile, l'énergie et la fabrication, précisément les secteurs frappés par les droits de douane de 50 % et de 25 % imposés par les États-Unis [economy.politicalEconomy][economy.externalVulnerability].",
+      "resources": "Environ trois millions de membres affiliés du Congrès, plus de 315 000 dans Unifor et environ 300 000 dans la Confédération des syndicats nationaux, ainsi qu'un statut de fédération faîtière [economy.politicalEconomy].",
       "constraints": "Fragmenté plutôt qu'unifié : Unifor, le plus grand syndicat du secteur privé, a quitté le Congrès en 2024, et le bloc québécois s'organise séparément [economy.politicalEconomy].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. Décrit comme un contrepoids au sein de l’économie politique plutôt que comme un point de veto [economy.politicalEconomy].",
+      "engagementMode": "négociable. Décrit comme un contrepoids au sein de l’économie politique plutôt que comme un point de veto [economy.politicalEconomy].",
       "anchors": [
         "economy.politicalEconomy",
         "economy.externalVulnerability"
@@ -6329,15 +6329,15 @@ actors_domestic_fr: |-
       "name": "Association du Barreau canadien (et sa division de l'Alberta)",
       "kind": "société civile",
       "liveActorStatus": "current",
-      "currentPosition": "S'est opposée au comité de quatre personnes proposé par l'Alberta exigeant l'approbation ministérielle tant fédérale que provinciale avant que les nominations aux cours supérieures puissent aller de l'avant, comme incompatible avec l'article 96 de la Loi constitutionnelle de 1867, qui confère ce pouvoir au seul gouvernement fédéral.",
+      "currentPosition": "S'est opposée au comité de quatre personnes proposé par l'Alberta, qui exigerait l'approbation ministérielle tant fédérale que provinciale avant que les nominations aux cours supérieures puissent aller de l'avant, au motif qu'il est incompatible avec l'article 96 de la Loi constitutionnelle de 1867, lequel confère ce pouvoir au seul gouvernement fédéral.",
       "fieldsCitedIn": [
         "political.rightsAndChecks"
       ],
       "interests": "Maintenir les nominations aux cours supérieures dans le cadre du pouvoir fédéral que l'article 96 assigne [political.rightsAndChecks].",
-      "resources": "Un statut professionnel et un argument constitutionnel que le rapport recense comme la position de la profession [political.rightsAndChecks][political.stabilityDrivers].",
-      "constraints": "Elle formule une objection; la proposition relève de la province, et le rapport ne recense aucune résolution [political.rightsAndChecks].",
+      "resources": "Statut professionnel et argument constitutionnel que le rapport recense comme la position de la profession [political.rightsAndChecks][political.stabilityDrivers].",
+      "constraints": "Formule une objection; la proposition relève de la province, et le rapport ne recense aucune résolution [political.rightsAndChecks].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. Un organisme professionnel formulant une objection constitutionnelle publique, sans aucun rôle formel dans le processus de nomination décrit [political.rightsAndChecks].",
+      "engagementMode": "négociable. Organisme professionnel formulant une objection constitutionnelle publique, sans aucun rôle formel dans le processus de nomination décrit [political.rightsAndChecks].",
       "anchors": [
         "political.rightsAndChecks",
         "political.stabilityDrivers"
@@ -6596,7 +6596,7 @@ actors_external_fr: |-
       "name": "États-Unis",
       "kind": "État étranger",
       "liveActorStatus": "current",
-      "currentPosition": "Le seul voisin terrestre du Canada et sa relation dominante en matière de commerce, de défense et de gestion frontalière, et celle qui est sous tension structurelle : ils ont absorbé 75,9 % des exportations de marchandises en 2024, ont imposé des régimes tarifaires successifs depuis février 2025 que la directrice parlementaire du budget traite comme permanents, ont laissé l'accord trilatéral franchir son examen du 1er juillet 2026 sans renouvellement, ont invoqué l'article 338 de la Tariff Act of 1930 pour la première fois de leur histoire le 20 juillet 2026 afin d'imposer un droit supplémentaire de 50 % sur des secteurs canadiens nommés à compter du 19 août sans exemption pour les biens conformes à l'accord, et ont suspendu les négociations sur le Traité du fleuve Columbia en mars 2025 — tandis que la défense continentale continue d'être menée de façon binationale avec eux et qu'aucun arrangement de rechange n'existe.",
+      "currentPosition": "Seul voisin terrestre du Canada et relation dominante en matière de commerce, de défense et de gestion frontalière, et celle qui est sous tension structurelle : ont absorbé 75,9 % des exportations de marchandises en 2024, ont imposé des régimes tarifaires successifs depuis février 2025 que la directrice parlementaire du budget considère comme permanents, ont laissé l'accord trilatéral franchir son examen du 1er juillet 2026 sans renouvellement, ont invoqué l'article 338 de la Tariff Act of 1930 pour la première fois de leur histoire le 20 juillet 2026 afin d'imposer un droit supplémentaire de 50 % sur des secteurs canadiens nommés à compter du 19 août sans exemption pour les biens conformes à l'accord, et ont suspendu les négociations sur le Traité du fleuve Columbia en mars 2025, tandis que la défense continentale continue d'être menée de façon binationale et qu'aucun autre arrangement n'existe.",
       "fieldsCitedIn": [
         "territory.geography",
         "territory.metabolism",
@@ -6610,11 +6610,11 @@ actors_external_fr: |-
         "security.diplomacy",
         "situation"
       ],
-      "interests": "Une protection sectorielle poursuivie au moyen d'autorités juridiques successivement différentes, et la renégociation du cadre commercial continental sur une base annuelle plutôt qu'à long terme [situation][economy.externalVulnerability].",
-      "resources": "La destination d'environ les trois quarts des exportations de marchandises canadiennes, de multiples autorités tarifaires unilatérales dont l'une ne comporte aucune limite de temps, et la position de partenaire indispensable dans la défense continentale [economy.externalVulnerability][security.military].",
-      "constraints": "Le rapport recense des limites atteintes dans leur propre système plutôt qu'imposées par le Canada : les tarifs fondés sur les pouvoirs d'urgence jugés illégaux avec remboursements disponibles à compter d'avril 2026, et la surtaxe de l'article 122 venant à échéance à la fin de sa fenêtre légale de 150 jours sans prolongation présentée au Congrès [situation].",
-      "likelyMoves": "Mettre en vigueur les droits de l'article 338 le 19 août 2026 à moins que les pourparlers intensifiés convenus le 21 juillet ne produisent une solution de rechange [situation].",
-      "engagementMode": "negotiable / dealable, le rapport recensant l'abri retiré : la conformité à l'accord avait été la protection fiable tout au long du différend et ne garantit plus l'entrée en franchise de droits. Le point structurel que soulève le rapport est que le Canada dépend pour sa sécurité physique du partenaire qui génère l'essentiel de son incertitude stratégique [economy.externalVulnerability][security.posture].",
+      "interests": "Protection sectorielle poursuivie au moyen d'autorités juridiques successivement différentes, et la renégociation du cadre commercial continental sur une base annuelle plutôt qu'à long terme [situation][economy.externalVulnerability].",
+      "resources": "Destination d'environ les trois quarts des exportations de marchandises canadiennes, multiples pouvoirs unilatéraux en matière de droits de douane dont l'un sans limite de durée, et position de partenaire indispensable dans la défense continentale [economy.externalVulnerability][security.military].",
+      "constraints": "Le rapport recense des limites atteintes dans leur propre système plutôt qu'imposées par le Canada : les droits de douane fondés sur les pouvoirs d'urgence jugés illégaux avec remboursements disponibles à compter d'avril 2026, et la surtaxe de l'article 122 arrivant à échéance à la fin de sa fenêtre légale de 150 jours sans prolongation présentée au Congrès [situation].",
+      "likelyMoves": "Mettre en vigueur les droits de l'article 338 le 19 août 2026 à moins que les pourparlers intensifiés convenus le 21 juillet ne produisent une autre solution [situation].",
+      "engagementMode": "négociable, le rapport recensant l'abri retiré : la conformité à l'accord avait été la protection fiable tout au long du différend et ne garantit plus l'entrée en franchise de droits. Le point structurel que soulève le rapport est que le Canada dépend pour sa sécurité physique du partenaire qui génère l'essentiel de son incertitude stratégique [economy.externalVulnerability][security.posture].",
       "anchors": [
         "economy.externalVulnerability",
         "security.posture",
@@ -6626,18 +6626,18 @@ actors_external_fr: |-
       "name": "République populaire de Chine",
       "kind": "État étranger",
       "liveActorStatus": "current",
-      "currentPosition": "Désignée par l'enquête sur l'ingérence étrangère comme l'auteur le plus actif d'ingérence visant les institutions démocratiques canadiennes; également la contrepartie d'une réinitialisation de janvier 2026 — la première visite d'un premier ministre canadien à Pékin depuis 2017, une feuille de route de coopération économique et commerciale dans le cadre d'un partenariat stratégique déclaré, le Canada réduisant son tarif sur les véhicules électriques chinois de 100 % à 6,1 % à l'intérieur d'un quota tandis que la Chine réduisait les droits sur les graines de canola et suspendait les tarifs sur le tourteau de canola, les pois, le homard et le crabe — et parmi les pays complétant la principale liste de destinations des liens du crime organisé.",
+      "currentPosition": "Désignée par l'enquête sur l'ingérence étrangère comme l'auteur le plus actif d'ingérence visant les institutions démocratiques canadiennes; également la contrepartie d'un rétablissement des relations en janvier 2026 (première visite d'un premier ministre canadien à Pékin depuis 2017), une feuille de route de coopération économique et commerciale dans le cadre d'un partenariat stratégique déclaré, le Canada ramenant son droit de douane sur les véhicules électriques chinois de 100 % à 6,1 % dans le cadre d'un quota tandis que la Chine réduisait ses droits sur les graines de canola et suspendait ses droits sur le tourteau de canola, les pois, le homard et le crabe; et parmi les pays complétant la principale liste de destinations des liens du crime organisé.",
       "fieldsCitedIn": [
         "security.posture",
         "security.internal",
         "security.transnationalExposure",
         "security.diplomacy"
       ],
-      "interests": "L'accès au marché et l'allègement tarifaire sur les exportations agricoles et de fruits de mer, obtenus parallèlement à une conclusion d'ingérence qui demeure non résolue [security.diplomacy][security.transnationalExposure].",
-      "resources": "Un marché qu'Affaires mondiales Canada cible pour une croissance des exportations de 50 % d'ici 2030, et des instruments tarifaires réciproques qu'elle a déjà utilisés et suspendus [security.diplomacy].",
-      "constraints": "La conclusion de l'enquête demeure adjugée et publique, et le rapport considère l'écart entre cette conclusion et la réinitialisation comme la tension centrale de la diplomatie canadienne [security.diplomacy][security.posture].",
+      "interests": "Accès au marché et allègement tarifaire sur les exportations agricoles et de fruits de mer, obtenus parallèlement à une conclusion d'ingérence qui demeure non résolue [security.diplomacy][security.transnationalExposure].",
+      "resources": "Marché qu'Affaires mondiales Canada cible pour une croissance des exportations de 50 % d'ici 2030, et instruments tarifaires réciproques qu'elle a déjà utilisés et suspendus [security.diplomacy].",
+      "constraints": "La conclusion de l'enquête demeure adjugée et publique, et le rapport considère l'écart entre cette conclusion et le rétablissement comme la tension centrale de la diplomatie canadienne [security.diplomacy][security.posture].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable sur le commerce tout en demeurant non résolue sur la sécurité — la formulation même du rapport est que la diversification commerciale progresse parallèlement à des conclusions de sécurité non résolues concernant le même partenaire [security.diplomacy].",
+      "engagementMode": "négociable en matière de commerce tout en demeurant non résolue en matière de sécurité; la formulation même du rapport est que la diversification commerciale progresse parallèlement à des conclusions de sécurité non résolues concernant le même partenaire [security.diplomacy].",
       "anchors": [
         "security.diplomacy",
         "security.transnationalExposure",
@@ -6648,17 +6648,17 @@ actors_external_fr: |-
       "name": "Inde",
       "kind": "État étranger",
       "liveActorStatus": "current",
-      "currentPosition": "Désignée par l'enquête comme le deuxième auteur le plus actif d'ingérence étrangère; après l'expulsion de hauts-commissaires par les deux parties en 2024, les deux premiers ministres se sont rencontrés au sommet du Groupe des Sept en Alberta en juin 2025 et au Groupe des Vingt en novembre, les hauts-commissaires ont été réintégrés en août 2025, une feuille de route commune a été annoncée en octobre et une délégation canadienne s'y est rendue en février et mars 2026, avec un commerce bilatéral de marchandises de 10,9 milliards de dollars en 2025 — les exportations canadiennes en baisse de 26,5 % et les importations en hausse de 18,9 % — et des négociations en vue d'un partenariat économique global en cours.",
+      "currentPosition": "Désignée par l'enquête comme le deuxième auteur le plus actif d'ingérence étrangère; après l'expulsion de hauts-commissaires par les deux parties en 2024, les deux premiers ministres se sont rencontrés au sommet du Groupe des Sept en Alberta en juin 2025 et au Groupe des Vingt en novembre, les hauts-commissaires ont été réintégrés en août 2025, une feuille de route commune a été annoncée en octobre et une délégation canadienne s'y est rendue en février et mars 2026; commerce bilatéral de marchandises de 10,9 milliards de dollars en 2025 (exportations canadiennes en baisse de 26,5 % et importations en hausse de 18,9 %) et négociations en vue d'un partenariat économique global en cours.",
       "fieldsCitedIn": [
         "security.posture",
         "security.transnationalExposure",
         "security.diplomacy"
       ],
-      "interests": "Un partenariat économique global sur un flux commercial déjà déséquilibré en sa faveur et évoluant davantage en ce sens [security.diplomacy].",
-      "resources": "Une relation diplomatique rétablie, une feuille de route commune, et une position d'importateur qui a crû de 18,9 % tandis que les exportations canadiennes chutaient [security.diplomacy].",
+      "interests": "Partenariat économique global sur un flux commercial déjà déséquilibré en sa faveur et évoluant davantage en ce sens [security.diplomacy].",
+      "resources": "Relation diplomatique rétablie, feuille de route commune et position d'importateur croissant de 18,9 % parallèlement à la diminution des exportations canadiennes [security.diplomacy].",
       "constraints": "La conclusion d'ingérence à son encontre est publique et non résolue, et le rapport note que la répression transnationale contre les communautés diasporiques était assez grave pour justifier un avertissement au-delà du mandat de l'enquête [security.transnationalExposure].",
       "likelyMoves": "Poursuivre les négociations du partenariat en cours [security.diplomacy].",
-      "engagementMode": "negotiable / dealable sur le commerce tout en demeurant non résolue sur la sécurité, selon le même schéma que le rapport identifie pour l'autre acteur d'ingérence nommé [security.diplomacy][security.posture].",
+      "engagementMode": "négociable sur le commerce tout en demeurant non résolue sur la sécurité, selon le même schéma que le rapport signale pour l'autre acteur d'ingérence nommé [security.diplomacy][security.posture].",
       "anchors": [
         "security.diplomacy",
         "security.transnationalExposure"
@@ -6668,15 +6668,15 @@ actors_external_fr: |-
       "name": "Union européenne",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "A signé un Partenariat de sécurité et de défense avec le Canada au sommet du 23 juin 2025 — explicitement non juridiquement contraignant, regroupant la coopération existante en matière de gestion de crise, de mobilité militaire, d'approvisionnement en défense, de sécurité maritime, de cyber et d'espace — et le 14 février 2026 un accord supplémentaire admettant les entreprises canadiennes à l'approvisionnement au titre de l'instrument Action de sécurité pour l'Europe, faisant du Canada le premier participant non européen à cette facilité de 150 milliards d'euros, appliqué provisoirement depuis le 13 avril 2026 et conclu par le Conseil le 15 juin 2026; le Canada est aussi un État tiers participant à la Coopération structurée permanente européenne depuis 2021.",
+      "currentPosition": "A signé un Partenariat de sécurité et de défense avec le Canada au sommet du 23 juin 2025 (explicitement non juridiquement contraignant, regroupant la coopération existante en matière de gestion de crise, de mobilité militaire, d'approvisionnement en défense, de sécurité maritime, de cybersécurité et d'espace) et le 14 février 2026 un accord supplémentaire admettant les entreprises canadiennes à l'approvisionnement au titre de l'instrument Action de sécurité pour l'Europe, faisant du Canada le premier participant non européen à ce mécanisme d'acquisition de 150 milliards d'euros, appliqué provisoirement depuis le 13 avril 2026 et conclu par le Conseil le 15 juin 2026; le Canada est aussi un État tiers participant à la Coopération structurée permanente européenne depuis 2021.",
       "fieldsCitedIn": [
         "security.diplomacy"
       ],
       "interests": "Élargir la base industrielle de l'approvisionnement en défense européen à un premier participant non européen [security.diplomacy].",
-      "resources": "Une facilité d'approvisionnement de 150 milliards d'euros, un cadre de coopération structurée existant, et une machinerie conventionnelle capable de conclure des accords au niveau du Conseil [security.diplomacy].",
-      "constraints": "Le partenariat est explicitement non contraignant et l'accord d'approvisionnement est un accès commercial plutôt qu'une garantie de défense — le rapport qualifie la couverture qui en résulte de réelle mais mince [security.posture].",
+      "resources": "Mécanisme d'acquisition de 150 milliards d'euros, cadre de coopération structurée existant, et appareil conventionnel capable de conclure des accords au niveau du Conseil [security.diplomacy].",
+      "constraints": "Le partenariat est explicitement non contraignant et l'accord d'approvisionnement est un accès commercial plutôt qu'une garantie de défense; le rapport qualifie la couverture qui en résulte de réelle, mais mince [security.posture].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. La relation est bâtie à partir d'instruments signés mais non contraignants, ce qui est la caractérisation même que le rapport fait de sa limite [security.posture].",
+      "engagementMode": "négociable. La relation est bâtie à partir d'instruments signés, mais non contraignants; ce qui est la caractérisation même que le rapport fait de sa limite [security.posture].",
       "anchors": [
         "security.diplomacy",
         "security.posture"
@@ -6686,16 +6686,16 @@ actors_external_fr: |-
       "name": "Organisation du Traité de l'Atlantique Nord",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Le Canada est un membre fondateur et le sixième contributeur en importance à son budget financé en commun, est nation-cadre de la Brigade multinationale Lettonie — environ 3 000 militaires de quatorze alliés — et a atteint le seuil de dépenses de 2 % en 2025-2026 pour la première fois en environ trente-cinq ans, ayant convenu au sommet de La Haye en juin 2025 d'investir 5 % de son PIB d'ici 2035, 3,5 % dans la défense de base et 1,5 % dans l'infrastructure liée à la défense.",
+      "currentPosition": "Le Canada est membre fondateur et sixième contributeur en importance à son budget financé en commun, est nation-cadre de la Brigade multinationale en Lettonie (environ 3 000 militaires de quatorze alliés) et a atteint le seuil de dépenses de 2 % en 2025-2026 pour la première fois en environ trente-cinq ans, ayant convenu au sommet de La Haye en juin 2025 d'investir 5 % de son PIB d'ici 2035, 3,5 % dans la défense de base et 1,5 % dans l'infrastructure liée à la défense.",
       "fieldsCitedIn": [
         "security.military",
         "security.diplomacy"
       ],
-      "interests": "Le partage du fardeau mesuré au regard de seuils que les membres ont convenus collectivement [security.military].",
-      "resources": "Des seuils de dépenses convenus, un budget financé en commun, et la structure de force multinationale dans laquelle le Canada détient le statut de nation-cadre [security.military][security.diplomacy].",
-      "constraints": "La conformité incombe aux membres : le Canada a atteint 2 % en partie en comptabilisant des dépenses réparties dans plusieurs ministères, et l'engagement de 5 % ne comporte aucun parcours publié [security.military].",
+      "interests": "Partage du fardeau mesuré au regard de seuils que les membres ont convenus collectivement [security.military].",
+      "resources": "Seuils de dépenses convenus, budget financé en commun et structure de force multinationale dans laquelle le Canada détient le statut de nation-cadre [security.military][security.diplomacy].",
+      "constraints": "Conformité incombant aux membres : le Canada a atteint 2 % en partie en comptabilisant des dépenses réparties dans plusieurs ministères, et l'engagement de 5 % ne comporte aucun parcours publié [security.military].",
       "likelyMoves": "report-silent",
-      "engagementMode": "commitment-bound — catégorie forgée. Le rapport décrit des seuils convenus au niveau des sommets puis atteints ou ratés, non négociés : l'Alliance n'est pas un homologue avec lequel le Canada négocie mais une norme à l'aune de laquelle il est mesuré [security.military].",
+      "engagementMode": "Lié par engagement; catégorie forgée. Le rapport décrit des seuils convenus au niveau des sommets, puis atteints ou manqués, non négociés : l'Alliance n'est pas un homologue avec lequel le Canada négocie, mais une norme par rapport à laquelle il est mesuré [security.military].",
       "anchors": [
         "security.military",
         "security.diplomacy",
@@ -6706,15 +6706,15 @@ actors_external_fr: |-
       "name": "Five Eyes",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Le partenariat de renseignement avec les États-Unis, le Royaume-Uni, l'Australie et la Nouvelle-Zélande, nommé comme l'un des trois piliers de longue date de l'architecture d'alliance du Canada.",
+      "currentPosition": "Partenariat de renseignements avec les États-Unis, le Royaume-Uni, l'Australie et la Nouvelle-Zélande, nommé comme l'un des trois piliers de longue date de l'architecture d'alliance du Canada.",
       "fieldsCitedIn": [
         "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "Un partage permanent de renseignement entre cinq États [security.diplomacy].",
+      "resources": "Partage permanent de renseignements entre cinq États [security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. Nommé comme un pilier d'appartenance sans qu'aucune activité ne lui soit attribuée durant la période visée [security.diplomacy].",
+      "engagementMode": "report-silent. Nommé comme pilier d'appartenance sans qu'aucune activité ne lui soit attribuée durant la période visée [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
       ]
@@ -6723,17 +6723,17 @@ actors_external_fr: |-
       "name": "Fonds monétaire international",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Prévoit une croissance canadienne de 1,5 % pour 2026, la plus élevée des projections que le rapport rassemble; qualifie la faiblesse de la productivité de structurelle — faible dynamisme des entreprises, approfondissement lent du capital, innovation à la traîne, forte concentration dans des secteurs de services clés et obstacles à la croissance des firmes — et appelle l'ensemble de réformes qui y répond l'ensemble de politiques au rendement le plus élevé du Canada; chiffre les barrières au commerce intérieur à l'équivalent d'un tarif national de 9 %, allant jusqu'à 50 % dans les soins de santé, l'éducation et les services de détail, leur élimination valant jusqu'à 7 % du PIB réel. Aucun programme du Fonds n'est en place.",
+      "currentPosition": "Prévoit une croissance canadienne de 1,5 % pour 2026, la plus élevée des projections que le rapport rassemble; qualifie la faiblesse de la productivité de structurelle (faible dynamisme des entreprises, approfondissement lent du capital, innovation à la traîne, forte concentration dans des secteurs de services clés et obstacles à la croissance des entreprises) et appelle l'ensemble de réformes qui y répond l'ensemble de politiques au rendement le plus élevé du Canada; chiffre les barrières au commerce intérieur à l'équivalent d'un tarif national de 9 %, allant jusqu'à 50 % dans les soins de santé, l'éducation et les services de détail, leur élimination valant jusqu'à 7 % du PIB réel. Aucun programme du Fonds n'est en place.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "economy.externalVulnerability",
         "capacity.productivity"
       ],
-      "interests": "Des conseils de politique de l'article IV concentrés sur la productivité et le commerce intérieur [capacity.productivity][economy.externalVulnerability].",
-      "resources": "Un statut de surveillance à l'égard d'un État membre, et des estimations quantifiées que le rapport utilise comme chiffres de référence pour la question des barrières intérieures [capacity.productivity].",
-      "constraints": "Aucun programme n'est en place, de sorte que son influence passe par les conseils plutôt que par la conditionnalité [economy.externalVulnerability].",
+      "interests": "Conseils de politique de l'article IV concentrés sur la productivité et le commerce intérieur [capacity.productivity][economy.externalVulnerability].",
+      "resources": "Statut de surveillance à l'égard d'un État membre, et estimations quantifiées que le rapport utilise comme chiffres de référence pour la question des barrières intérieures [capacity.productivity].",
+      "constraints": "Aucun programme n'est en place, de sorte que son influence passe par des conseils plutôt que par la conditionnalité [economy.externalVulnerability].",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable en tant qu'organisme d'appartenance — le Canada est un membre qui le consulte, non un pays soumis à des conditions de programme [economy.externalVulnerability].",
+      "engagementMode": "négociable  en tant qu'organisme d'appartenance; le Canada est un membre qui le consulte, non un pays soumis à des conditions de programme [economy.externalVulnerability].",
       "anchors": [
         "capacity.productivity",
         "economy.externalVulnerability",
@@ -6744,17 +6744,17 @@ actors_external_fr: |-
       "name": "Organisation de coopération et de développement économiques",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Un organisme auquel le Canada appartient et à l'aune duquel il est mesuré : elle prévoit une croissance de 1,2 % pour 2026, fournit la comparaison montrant l'intensité de recherche canadienne à 1,8 % du PIB contre une moyenne des membres de 2,7 % et stable depuis 2010 avec une part des entreprises particulièrement faible, indique que les multinationales étrangères représentent plus de 40 % des dépenses de recherche des entreprises, et est nommée parmi les appartenances multilatérales conférant au Canada une portée institutionnelle au-delà de son poids militaire.",
+      "currentPosition": "Organisme auquel le Canada appartient et par rapport auquel il est mesuré : prévoit une croissance de 1,2 % pour 2026, fournit la comparaison montrant l'intensité de recherche canadienne à 1,8 % du PIB contre une moyenne des membres de 2,7 % et stable depuis 2010 avec une part des entreprises particulièrement faible, indique que les multinationales étrangères représentent plus de 40 % des dépenses de recherche des entreprises, et est nommée parmi les appartenances multilatérales conférant au Canada une portée institutionnelle au-delà de son poids militaire.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "capacity.productivity",
         "security.diplomacy"
       ],
-      "interests": "L'examen par les pairs et le positionnement comparatif entre économies membres [capacity.productivity].",
-      "resources": "Des études par pays, des indicateurs comparatifs, et un statut d'appartenance [capacity.productivity][security.diplomacy].",
+      "interests": "Examen par les pairs et positionnement comparatif entre économies membres [capacity.productivity].",
+      "resources": "Études par pays, indicateurs comparatifs, et statut d'appartenance [capacity.productivity][security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable en tant qu'organisme d'appartenance — le Canada y participe plutôt que d'en être évalué, ce qui est la distinction sur laquelle repose la règle d'extraction [security.diplomacy].",
+      "engagementMode": "négociable / apte à conclure des ententes en tant qu'organisation à adhésion; le Canada y participe plutôt que d'y être évalué, distinction sur laquelle repose la règle d'extraction [security.diplomacy].",
       "anchors": [
         "capacity.productivity",
         "security.diplomacy",
@@ -6765,16 +6765,16 @@ actors_external_fr: |-
       "name": "Groupe des Sept",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Une appartenance multilatérale conférant au Canada une portée institutionnelle au-delà de son poids militaire; le Canada a accueilli le sommet de juin 2025 en Alberta, où les premiers ministres canadien et indien se sont rencontrés, et le rapport situe la croissance canadienne de 2026 comme la deuxième plus rapide du groupe.",
+      "currentPosition": "Appartenance multilatérale conférant au Canada une portée institutionnelle au-delà de son poids militaire; le Canada a accueilli le sommet de juin 2025 en Alberta, où les premiers ministres canadien et indien se sont rencontrés; le rapport situe la croissance canadienne de 2026 comme la deuxième plus rapide du groupe.",
       "fieldsCitedIn": [
         "economy.realEconomy",
         "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "Un format de sommet que le rapport montre utilisé pour relancer une relation bilatérale [security.diplomacy].",
+      "resources": "Format de sommet que le rapport montre être utilisé pour relancer une relation bilatérale [security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable en tant qu'organisme d'appartenance; le rapport montre le Canada utilisant le format plutôt que subissant son action [security.diplomacy].",
+      "engagementMode": "négociable / apte à conclure des ententes en tant qu'organisme d'appartenance; le rapport montre le Canada utilisant le format plutôt que subissant son action [security.diplomacy].",
       "anchors": [
         "security.diplomacy",
         "economy.realEconomy"
@@ -6784,15 +6784,15 @@ actors_external_fr: |-
       "name": "Groupe des Vingt",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Une appartenance multilatérale nommée aux côtés du Groupe des Sept; les premiers ministres canadien et indien se sont rencontrés de nouveau à sa réunion de novembre.",
+      "currentPosition": "Appartenance multilatérale nommée aux côtés du Groupe des Sept; les premiers ministres canadien et indien se sont rencontrés de nouveau à sa réunion de novembre.",
       "fieldsCitedIn": [
         "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "Un deuxième format de sommet dans la même séquence bilatérale [security.diplomacy].",
+      "resources": "Deuxième format de sommet dans la même séquence bilatérale [security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable en tant qu'organisme d'appartenance [security.diplomacy].",
+      "engagementMode": "négociable / apte à conclure des ententes en tant qu'organisme d'appartenance [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
       ]
@@ -6806,10 +6806,10 @@ actors_external_fr: |-
         "security.diplomacy"
       ],
       "interests": "report-silent",
-      "resources": "Un statut de contrepartie frontalière avec un accord réglé en cours de mise en œuvre [security.diplomacy].",
+      "resources": "Statut de contrepartie frontalière avec un accord réglé en cours de mise en œuvre [security.diplomacy].",
       "constraints": "report-silent",
       "likelyMoves": "Continuer de mettre en œuvre l'accord frontalier de Tartupaluk [security.diplomacy].",
-      "engagementMode": "negotiable / dealable. Le rapport décrit un accord réglé en cours de mise en œuvre et un désaccord résiduel étroit [security.diplomacy].",
+      "engagementMode": "négociable / apte à conclure des ententes. Le rapport décrit un accord réglé en cours de mise en œuvre et un désaccord résiduel étroit [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
       ]
@@ -6818,17 +6818,17 @@ actors_external_fr: |-
       "name": "Commandement de la défense aérospatiale de l'Amérique du Nord (NORAD)",
       "kind": "organisation internationale",
       "liveActorStatus": "current",
-      "currentPosition": "Le commandement binational Canada–États-Unis par lequel sont menées l'alerte et la défense aérospatiales et maritimes continentales; le rapport affirme qu'il n'existe aucun arrangement de rechange, recense sa modernisation chiffrée à 38,6 milliards de dollars sur vingt ans, et décrit la capacité spatiale en développement du Canada comme progressant principalement par la surveillance continentale dans le cadre du programme de modernisation.",
+      "currentPosition": "Commandement binational Canada–États-Unis par lequel sont menées l'alerte et la défense aérospatiales et maritimes continentales; le rapport affirme qu'il n'existe aucun autre arrangement, recense sa modernisation chiffrée à 38,6 milliards de dollars sur vingt ans, et décrit la capacité spatiale en développement du Canada comme progressant principalement par la surveillance continentale dans le cadre du programme de modernisation.",
       "fieldsCitedIn": [
         "security.military",
         "security.posture",
         "security.diplomacy"
       ],
-      "interests": "L'alerte et la défense aérospatiales et maritimes continentales, menées conjointement avec les États-Unis [security.military].",
-      "resources": "Une autorité de commandement binationale sur la défense aérospatiale nord-américaine et le programme de modernisation financé dans le cadre du plan de défense sur vingt ans [security.military].",
-      "constraints": "Sa fonction d'alerte et de défense est exercée conjointement avec les États-Unis, et le rapport ne décrit aucune solution de rechange canadienne — rendant la défense continentale indissociable de la relation avec l'État qui génère l'essentiel de l'incertitude stratégique du Canada [security.military][security.posture].",
+      "interests": "Alerte et défense aérospatiales et maritimes continentales, menées conjointement avec les États-Unis [security.military].",
+      "resources": "Autorité de commandement binationale sur la défense aérospatiale nord-américaine et le programme de modernisation financé dans le cadre du plan de défense sur vingt ans [security.military].",
+      "constraints": "Sa fonction d'alerte et de défense est exercée conjointement avec les États-Unis, et le rapport ne décrit aucune autre solution canadienne, rendant la défense continentale indissociable de la relation avec l'État qui génère l'essentiel de l'incertitude stratégique du Canada [security.military][security.posture].",
       "likelyMoves": "report-silent",
-      "engagementMode": "structurally-bound — un commandement binational à l'intérieur duquel le Canada opère plutôt qu'un homologue avec lequel il négocie : la défense continentale y est menée et le rapport ne décrit aucune solution de rechange [security.military][security.posture].",
+      "engagementMode": "structurellement lié; commandement binational au sein duquel le Canada agit plutôt qu'un vis-à-vis avec lequel il négocie : la défense continentale s'exerce par son intermédiaire, et le rapport ne décrit aucune autre solution [security.military][security.posture].",
       "anchors": [
         "security.military",
         "security.posture",
@@ -6917,7 +6917,7 @@ sources: |-
       "nameFr": "Perspectives économiques et financières — juin 2026 (Directeur parlementaire du budget)",
       "url": "https://www.pbo-dpb.ca/en/publications/RP-2627-002-S--economic-fiscal-outlook-june-2026--perspectives-economiques-financieres-juin-2026",
       "desc": "Parliamentary Budget Officer's independent baseline projection of the federal budgetary balance, debt-to-GDP ratio and debt-service ratio, incorporating Budget 2025 and Spring Economic Update 2026 measures and treating United States tariffs as permanent.",
-      "descFr": "Projection de référence indépendante du Directeur parlementaire du budget sur le solde budgétaire fédéral, le ratio de la dette au PIB et le ratio du service de la dette, tenant compte des mesures du budget de 2025 et de la mise à jour économique du printemps 2026 et considérant les tarifs américains comme permanents.",
+      "descFr": "Projection de référence indépendante du Directeur parlementaire du budget sur le solde budgétaire fédéral, le ratio de la dette au PIB et le ratio du service de la dette, tenant compte des mesures du budget de 2025 et de la mise à jour économique du printemps 2026 et considérant les droits de douane imposés par les États-Unis comme permanents.",
       "publicationDate": "2026-06-04",
       "accessDate": "2026-07-21",
       "confidence": "High",
@@ -7431,7 +7431,7 @@ sources: |-
       "nameFr": "Statistique Canada — Le Quotidien : taille et croissance de la population, Recensement de 2016",
       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/170208/dq170208a-eng.htm",
       "desc": "Statistics Canada 2016 Census release documenting Canada's spatial structure — the population's concentration near the Canada–United States border, national population density and land area.",
-      "descFr": "Communiqué du Recensement de 2016 de Statistique Canada documentant la structure spatiale du Canada — la concentration de la population près de la frontière canado-américaine, la densité de population nationale et la superficie terrestre.",
+      "descFr": "Communiqué du Recensement de 2016 de Statistique Canada documentant la structure spatiale du Canada : la concentration de la population près de la frontière entre le Canada et les États-Unis, la densité de population nationale et la superficie terrestre.",
       "publicationDate": "2017-02-08",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -7575,7 +7575,7 @@ sources: |-
       "nameFr": "Ministère de la Justice du Canada — Bijuridisme canadien : méthodologie et terminologie de l'harmonisation",
       "url": "https://publications.gc.ca/site/eng/9.689696/publication.html",
       "desc": "Official Department of Justice publication defining Canadian bijuralism — the co-existence of common law and civil law — and legislative bijuralism, and describing the federal harmonization methodology.",
-      "descFr": "Publication officielle du ministère de la Justice définissant le bijuridisme canadien — la coexistence de la common law et du droit civil — et le bijuridisme législatif, et décrivant la méthodologie fédérale d'harmonisation.",
+      "descFr": "Publication officielle du ministère de la Justice définissant le bijuridisme canadien (coexistence de la common law et du droit civil) et le bijuridisme législatif, et décrivant la méthodologie fédérale d'harmonisation.",
       "publicationDate": "2013-04-03",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -7636,7 +7636,7 @@ sources: |-
       "nameFr": "Cabinet du premier ministre — Communiqué du 7 juillet 2026 : Le premier ministre Carney modernise le processus de nomination au Sénat pour relever les nouveaux défis auxquels est confronté le Canada",
       "url": "https://www.pm.gc.ca/en/news/news-releases/2026/07/07/prime-minister-carney-modernises-senate-appointment-process-respond",
       "desc": "Prime Minister's Office news release of 7 July 2026 announcing changes to the Senate appointment process — removing the non-partisan criterion in place since 2016 and reworking the independent advisory board — together with four appointments, including a sitting Conservative member of Parliament.",
-      "descFr": "Communiqué du Cabinet du premier ministre du 7 juillet 2026 annonçant des changements au processus de nomination au Sénat — suppression du critère non partisan en vigueur depuis 2016 et refonte du comité consultatif indépendant — ainsi que quatre nominations, dont celle d'un député conservateur en exercice.",
+      "descFr": "Communiqué du Cabinet du premier ministre du 7 juillet 2026 annonçant des changements au processus de nomination au Sénat (suppression du critère non partisan en vigueur depuis 2016 et refonte du comité consultatif indépendant)  ainsi que quatre nominations, dont celle d'un député conservateur en exercice.",
       "publicationDate": "2026-07-07",
       "accessDate": "2026-07-08",
       "confidence": "High",
@@ -7698,7 +7698,7 @@ sources: |-
       "nameFr": "Ministère des Finances du Canada — Réponse du Canada aux droits de douane américains",
       "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs.html",
       "desc": "Department of Finance Canada hub page, since archived, recording the federal counter-tariff measures taken in response to United States tariffs, their product coverage, and subsequent adjustments.",
-      "descFr": "Page de référence du ministère des Finances du Canada, depuis archivée, recensant les contre-mesures tarifaires fédérales prises en réponse aux droits de douane américains, leur portée et leurs ajustements ultérieurs.",
+      "descFr": "Page de référence du ministère des Finances du Canada, depuis archivée, recensant les contre-mesures tarifaires fédérales prises en réponse aux droits de douane imposés par les États-Unis, leur portée et leurs ajustements ultérieurs.",
       "publicationDate": "2026-06-19",
       "accessDate": "2026-07-13",
       "confidence": "High",
@@ -7781,7 +7781,7 @@ sources: |-
       "nameFr": "Affaires mondiales Canada — Foire aux questions – Bois d'œuvre résineux",
       "url": "https://www.international.gc.ca/controls-controles/softwood-bois_oeuvre/other-autres/faq.aspx?lang=eng",
       "desc": "Global Affairs Canada reference page on United States softwood lumber trade measures, tracking anti-dumping and countervailing duty rates by administrative review and the added Section 232 tariff.",
-      "descFr": "Page de référence d'Affaires mondiales Canada sur les mesures commerciales américaines visant le bois d'œuvre résineux, suivant les taux des droits antidumping et compensateurs par examen administratif et le droit additionnel de l'article 232.",
+      "descFr": "Page de référence d'Affaires mondiales Canada sur les mesures commerciales des États-Unis visant le bois d'œuvre résineux, suivant les taux des droits antidumping et compensateurs par examen administratif et le droit additionnel de l'article 232.",
       "publicationDate": "2026-07-10",
       "accessDate": "2026-07-15",
       "confidence": "High",
@@ -7793,7 +7793,7 @@ sources: |-
       "nameFr": "Affaires mondiales Canada — Déclaration du ministre LeBlanc à la suite de la réunion trilatérale d'examen conjoint de l'ACEUM",
       "url": "https://www.canada.ca/en/global-affairs/news/2026/07/statement-by-minister-leblanc-following-trilateral-cusma-joint-review-meeting.html",
       "desc": "Official statement from the minister responsible for Canada-U.S. trade following the July 2026 trilateral Free Trade Commission meeting that constituted the agreement's first mandatory joint review.",
-      "descFr": "Déclaration officielle du ministre responsable du commerce canado-américain à la suite de la réunion trilatérale de la Commission du libre-échange de juillet 2026, qui constituait le premier examen conjoint obligatoire de l'accord.",
+      "descFr": "Déclaration officielle du ministre responsable du commerce Canada–États-Unis, à la suite de la réunion trilatérale de la Commission du libre-échange de juillet 2026, qui constituait le premier examen conjoint obligatoire de l'accord.",
       "publicationDate": "2026-07-01",
       "accessDate": "2026-07-15",
       "confidence": "High",

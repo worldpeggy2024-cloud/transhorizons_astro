@@ -1279,14 +1279,14 @@ export default function CountryPage() {
             Compact: three columns of two axes each. Hidden while the
             derivatives pass hasn't composed the scorecard yet. */}
         {!scorecardPending && (
-          <div className="lg:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
+          <div className="md:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
             <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6">{scorecardRows}</div>
           </div>
         )}
 
         {/* ── Lateral rail (LEFT) + content (rework §5) ── */}
-        <div className="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-8 lg:items-start">
+        <div className="md:grid md:grid-cols-[200px_minmax(0,1fr)] lg:grid-cols-[230px_minmax(0,1fr)] md:gap-6 lg:gap-8 md:items-start">
 
         {/* Nav (with field-level subsections) + scorecard — desktop only.
             The scorecard is a visually DISTINCT block (assessment vs
@@ -1295,7 +1295,7 @@ export default function CountryPage() {
             scorecard (and its expanded details) stays reachable at any page
             position — previously it was only reachable with the page scrolled
             to the bottom (sticky release). */}
-        <aside className="cr-scroll hidden lg:block sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pr-1">
+        <aside className="cr-scroll hidden md:block sticky top-16 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pr-1">
           <SectionNav items={navItems} language={language} onNavigate={openAndScroll} />
           {!scorecardPending && (
             <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
@@ -1511,12 +1511,12 @@ export default function CountryPage() {
               {' — '}
               {language === 'fr' ? (
                 <>
-                  chaque source porte une cote de fiabilité —{' '}
+                  chaque source est assortie d'une cote de fiabilité ({' '}
                   <span className="font-medium text-green-700 dark:text-green-300">✓ Élevée</span>,{' '}
                   <span className="font-medium text-yellow-700 dark:text-yellow-300">◐ Moyenne</span> ou{' '}
-                  <span className="font-medium text-red-700 dark:text-red-300">✗ Faible</span> — selon son caractère faisant autorité, et l'étiquette{' '}
+                  <span className="font-medium text-red-700 dark:text-red-300">✗ Faible</span>) indiquant son caractère faisant autorité et sa fiabilité, ainsi que d'une étiquette{' '}
                   <span className="font-medium text-[var(--cr-body)]">Fait</span> (la source est l'auteure première de la donnée ou de l'événement) ou{' '}
-                  <span className="font-medium text-[var(--cr-body)]">Interprétation</span> (elle analyse ou résume des données d'ailleurs).
+                  <span className="font-medium text-[var(--cr-body)]">Interprétation</span> (elle analyse ou résume des données provenant d'ailleurs).
                 </>
               ) : (
                 <>
@@ -1575,8 +1575,8 @@ export default function CountryPage() {
                     </div>
                     <p className="font-body text-xs text-[var(--cr-muted)] mb-2">{dDesc}</p>
                     <div className="flex flex-wrap gap-2 items-center text-[10px]">
-                      {publicationDate && <span className="text-[var(--cr-muted)]">{language === 'fr' ? 'Pub. :' : 'Pub:'} {publicationDate}</span>}
-                      {accessDate && <span className="text-[var(--cr-muted)]">{language === 'fr' ? 'Consulté :' : 'Accessed:'} {accessDate}</span>}
+                      {publicationDate && <span className="text-[var(--cr-muted)]">{language === 'fr' ? 'Publication :' : 'Pub:'} {publicationDate}</span>}
+                      {accessDate && <span className="text-[var(--cr-muted)]">{language === 'fr' ? 'Consultation :' : 'Accessed:'} {accessDate}</span>}
                       {confidence && <span className={`font-medium ${confidenceTextColor}`}>{confidenceLabel}</span>}
                     </div>
                   </div>
