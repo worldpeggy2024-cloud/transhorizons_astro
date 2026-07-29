@@ -218,6 +218,12 @@ function validateCountryFile(filePath) {
     if (typeof s?.descFr !== 'string' || !s.descFr.trim()) {
       warnings.push(`Source ${key}: missing French description (descFr; FR page falls back to English)`);
     }
+    // AI-drafted French awaiting Peggy's review — a placeholder flag on the source.
+    // Surfaces here (and clears when she finalizes and removes the flag) so drafted
+    // FR is never mistaken for reviewed FR just because nameFr/descFr are present.
+    if (s?.frReview) {
+      warnings.push(`Source ${key}: French is an AI draft awaiting review (frReview — verify + remove the flag)`);
+    }
 
     // Volatility axis (rework §6.2): expected rate of change of the fact(s) the
     // source backs — drives the refresh worklist. WARN-on-missing during
