@@ -150,7 +150,25 @@ For every actor produced in Layer 1, produce a Layer 2 draft.
 - `blocked / not-engageable`: hostile or non-recognising counterpart (sanctioned states, insurgent groups)
 - `report-silent`: not derivable from the text
 
-The categories are illustrative — forge a new one where none fits, but say so inline ("… — a forged category") and prefer an existing one over a synonym. The bracketed mode label stays in English even in the French output; only the justification is translated.
+The categories are illustrative — forge a new one where none fits, but say so inline ("… — a forged category") and prefer an existing one over a synonym.
+
+**English output** keeps the English token. **French output** renders the label in FRENCH per this table (and translates the justification; translate a forged label into French too) — **nothing in the French actor fields stays in English** (added v1.11, after English tokens were found displaying in the French Canada card; the actor section is a lot of work for something rarely read, so it must not create French clean-up):
+
+| English token | French label |
+|---|---|
+| `current` (liveActorStatus) | En vigueur |
+| `recently-live` (liveActorStatus) | Récemment en vigueur |
+| `historical-only-excluded` (liveActorStatus) | Historique (exclu) |
+| `report-silent` (any field) | Sans mention dans le rapport |
+| `negotiable / dealable` | Négociation / conclusion d'ententes |
+| `statutorily-independent` | Indépendance de par la loi |
+| `judicial-deference` | Déférence judiciaire |
+| `hijack-exposed` | Exposition au détournement |
+| `veto-holder` | Pouvoir de veto |
+| `executive-subordinate` | Subordination à l'exécutif |
+| `commitment-bound` | Lien par engagement |
+| `structurally-bound` | Lien structurel |
+| `blocked / not-engageable` | Blocage / non-négociable |
 
 Choose the most accurate mode for this actor in the current situation the report describes. If the report describes a *change* in engagement mode (independence contested, capture risk emerging, standing newly asserted), note it. Do not force actors into modes that misrepresent them.
 
@@ -217,7 +235,7 @@ A foreign state (e.g. the United States for a Canada report) is external even if
 
 Return a YAML block with two top-level arrays: `domestic` and `external`. Each entry is ONE FLAT object (Layer 1 + Layer 2 fields at the same level, key order per the structure above — no nested `layer2Draft`, no `currentPositionFromReport`).
 
-**Language.** This pass emits ENGLISH only (`actors_*_en`). The French fields (`actors_*_fr`) are produced as a separate downstream translation step — same structure, same order, anchors and `fieldsCitedIn` copied verbatim, engagement-mode labels kept in English, `report-silent` kept verbatim. Do not attempt the French here.
+**Language.** This pass emits ENGLISH only (`actors_*_en`). The French fields (`actors_*_fr`) are produced as a separate downstream translation step — same structure, same order, anchors and `fieldsCitedIn` copied verbatim, and the engagement-mode label, `liveActorStatus` and `report-silent` **rendered in French per the label table (§engagementMode)** — nothing left in English in the French fields. Do not attempt the French here.
 
 **Self-check before returning:** every Layer 1 actor names in `fieldsCitedIn` the field(s) it was found in, verified against the attached text. Any actor whose `fieldsCitedIn` cannot be filled from the attached text is DROPPED rather than kept — an actor you cannot place in a field is an actor the report did not name.
 
