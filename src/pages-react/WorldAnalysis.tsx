@@ -367,8 +367,8 @@ export default function WorldAnalysis() {
   }, [filteredCountries, fr]);
 
   const hintText = fr
-    ? `Outil conservé comme prototype expérimental conceptuellement prometteur, soulignant les limites actuelles de la recherche assistée par IA. Malgré un cadre rigoureux élaboré avec Manus, des instructions structurées et des contraintes de sources définies vérifiées avec Perplexity Pro, ainsi qu'une infrastructure de schéma/Git/validation conçue avec Claude Opus 4.7 et Claude Sonnet 4.6, les résultats produits n'ont jamais respecté les contraintes de sources imposées. L'exercice demeure un cas d'apprentissage précieux sur les limites pratiques de la synthèse automatisée et des IA, même dans des conditions strictement contrôlées.`
-    : '(This tool is kept as a conceptually promising experimental prototype highlighting however current limitations in AI-assisted research workflows. Despite a rigorous framework created with Manus, structured prompts and defined source constraints checked with Perplexity Pro, and a schema/Git/validation infrastructure created with Claude Opus 4.7 and Claude Sonnet 4.6, outputs never respected the source constraints. The exercise remains valuable as a learning case on the practical limits of automated synthesis and AIs even under strictly controlled conditions.)';
+    ? `Cet outil s'est révélé une expérience précieuse sur les limites concrètes de la synthèse automatisée : une exploration approfondie de flux de recherche assistée par IA sous contrôle strict. Il a nécessité un cadre rigoureux prototypé avec Manus, des requêtes structurées rédigées avec ChatGPT et Claude, des contraintes de sources définies et appliquées via Perplexity Pro, et une infrastructure de schéma, de validation et de gestion de versions développée avec Claude (Sonnet 4.6 - Fable 5). Versions françaises des rapports intégralement révisées par une personne.`
+    : 'This tool proved a valuable exercise in the practical limits of automated synthesis — an extended experiment in strictly controlled, AI-assisted research workflows. It required a rigorous framework prototyped with Manus, structured prompts drafted with ChatGPT and Claude, defined source constraints applied through Perplexity Pro, and a schema, validation, and version-control infrastructure built with Claude (Sonnet 4.6 to Fable 5). French versions of the reports fully reviewed by a human.';
 
   // ── World Views tool cards ────────────────────────────────────────────────
   const toolCards: ToolCard[] = [
@@ -477,8 +477,8 @@ export default function WorldAnalysis() {
         </h1>
         <p className="text-white/60 font-body text-sm mt-2 leading-relaxed">
           {fr
-            ? <>Cartes interactives et explorations visuelles traduisant les dynamiques géopolitiques et des ressources complexes en analyses spatiales.<br />Des corridors énergétiques et chaînes d&apos;approvisionnement en minéraux aux infrastructures technologiques et régions stratégiques, ces rapports visuels apportent un éclairage géographique sur l&apos;évolution des systèmes mondiaux.</>
-            : <>Interactive maps and visual explorations translating complex geopolitical and resource dynamics into spatial analysis.<br />From energy corridors and mineral supply chains to technological infrastructures and strategic regions, these visual reports provide geographic context to evolving global systems.</>}
+            ? <>Cartes interactives et explorations visuelles traduisant les dynamiques géopolitiques et des ressources complexes en analyses spatiales. Des corridors énergétiques et chaînes d&apos;approvisionnement en minéraux aux infrastructures technologiques et régions stratégiques, ces rapports visuels apportent un éclairage géographique sur l&apos;évolution des systèmes mondiaux.</>
+            : <>Interactive maps and visual explorations translating complex geopolitical and resource dynamics into spatial analysis. From energy corridors and mineral supply chains to technological infrastructures and strategic regions, these visual reports provide geographic context to evolving global systems.</>}
         </p>
       </div>
 
@@ -490,16 +490,14 @@ export default function WorldAnalysis() {
         <p className="text-white/50 font-body text-[13px] mt-1.5 leading-relaxed">
           {fr
             ? <>
-                Survolez un territoire pour afficher de brèves données (drapeau, nom, capitale, population; en rouge si le rapport est prêt); cliquez pour ouvrir son analyse.<br />
-                Les rapports sont classés par pays; le globe inclut aussi des territoires autonomes ou contestés, et les analyses s'ajoutent au fil de leur rédaction.
-                Chaque rapport de pays présente une analyse structurée : situation politique, économique, physique; capacité, société et sécurité.<br />
+                Survolez un territoire pour afficher de brèves données (drapeau, nom, capitale, population; s'affiche en rouge si le rapport est prêt); cliquez pour ouvrir le rapport. Le globe inclut des territoires autonomes ou contestés; les analyses sont ajoutées au fur et à mesure de leur rédaction. Chaque rapport de pays présente une analyse structurée : situation physique, sociale, économique, politique, capacités, sécurité et situation.<br />
                 <span className="relative inline-block">
                   <span
                     className="text-white/55 underline decoration-dotted underline-offset-2 cursor-help"
                     onMouseEnter={() => setShowCountryDisclaimer(true)}
                     onMouseLeave={() => setShowCountryDisclaimer(false)}
                   >
-                    (Avertissement sur les informations pays.)
+                    (Processus.)
                   </span>
                   {showCountryDisclaimer && (
                     <span className="absolute left-0 top-full mt-2 z-20 w-[min(560px,calc(100vw-3rem))] bg-[#0D0D18] border border-white/15 text-white/80 text-[11px] leading-relaxed p-3 shadow-2xl">
@@ -509,16 +507,15 @@ export default function WorldAnalysis() {
                 </span>
               </>
             : <>
-                Hover a territory to see brief data (flag, name, capital, population; display in red if the report is ready); click to open its analysis.<br />
-                Reports are organized by country; the globe also includes autonomous and contested territories, and analyses are added as they are written.
-                Each country report presents structured analysis: political, economic, physical, capacity, society and security snapshots.<br />
+                Hover a territory to see brief data (flag, name, capital, population; displays in red if the report is ready); click to open the report. The globe includes autonomous and contested territories, and analyses are added as they are written.
+                Each country report presents structured analysis: physical, social, economic, political, capacity, security and situation snapshots.<br />
                 <span className="relative inline-block">
                   <span
                     className="text-white/55 underline decoration-dotted underline-offset-2 cursor-help"
                     onMouseEnter={() => setShowCountryDisclaimer(true)}
                     onMouseLeave={() => setShowCountryDisclaimer(false)}
                   >
-                    (Disclaimer about the country info.)
+                    (Process.)
                   </span>
                   {showCountryDisclaimer && (
                     <span className="absolute left-0 top-full mt-2 z-20 w-[min(560px,calc(100vw-3rem))] bg-[#0D0D18] border border-white/15 text-white/80 text-[11px] leading-relaxed p-3 shadow-2xl">
@@ -622,12 +619,12 @@ export default function WorldAnalysis() {
             <div className="flex items-start gap-1.5">
               {/* Risk-level AND topics facets REMOVED 2026-07-19 (author
                   decision): both were hand-assigned Manus-era labels. Search
-                  now matches real report content (actor names, situation
-                  threads, risk titles) for two-phase countries. */}
+                  now matches real report content (every prose section, the gap
+                  register, actors and situations) for two-phase countries. */}
               <p className="text-white/40 font-body text-[10px] leading-relaxed flex-1">
                 {fr
-                  ? 'Filtrez par région, ou cherchez par nom et mot-clé — la recherche couvre le contenu des rapports analysés (acteurs, situations, risques).'
-                  : 'Filter by region, or search by name and keyword — search covers the content of analysed reports (actors, situations, risks).'}
+                  ? 'Filtrez par région, ou cherchez par nom et mot-clé; la recherche couvre le contenu des rapports analysés (toutes les sections, acteurs et situations).'
+                  : 'Filter by region, or search by name and keyword — search covers the content of analysed reports (all sections, actors and situations).'}
               </p>
             </div>
           </div>
@@ -636,7 +633,7 @@ export default function WorldAnalysis() {
           <div className="shrink-0 px-4 py-2 border-b border-white/10 flex items-center gap-2">
             <span className="text-[#7D1A2E] text-[11px]">&#9679;</span>
             <span className="text-white/40 font-body text-[10px] tracking-wide">
-              {fr ? 'Rapport disponible — fond bordeaux au survol' : 'Full report available — burgundy tooltip on hover'}
+              {fr ? 'Rapport disponible = fond bordeaux au survol' : 'Full report available = burgundy tooltip on hover'}
             </span>
           </div>
 
