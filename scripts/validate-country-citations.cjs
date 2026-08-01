@@ -115,6 +115,8 @@ const PEER_ORDER = ['political', 'situation', 'economy', 'territory', 'capacity'
 // scripts/lib/openers.cjs. Legacy fields (economy_macroReality_* etc.) are
 // absent under the new names and skip — existing countries stay valid.
 const { OPENER_FIELDS, openerProblem } = require('./lib/openers.cjs');
+const { pointerProblems } = require('./lib/pointers.cjs');
+const { coverageProblems } = require('./lib/coverage.cjs');
 
 // Best-effort classification of a source id into the peer whose section it belongs to, so
 // uncited (orphan) sources group by peer in the warning output (capacity before territory).
@@ -389,6 +391,32 @@ function validateCountryFile(filePath) {
     }
   }
 
+  // Pointers are not content — warning-level audit (the apply gate errors hard).
+  // A starving pointer cites a source only to name who holds the data, reports no
+  // figure, and that source is figure-absent in its field. scripts/lib/pointers.cjs.
+  for (const [k, v] of Object.entries(contentClone)) {
+    if (typeof v !== 'string' || !v.trim()) continue;
+    if (!/^(territory|society|economy|political|capacity|security)_[a-zA-Z]+_(en|fr)$/.test(k)) continue;
+    if (/^capacity_knownAndUnbuilt_/.test(k)) continue; // JSON-in-text register, not prose
+    for (const p of pointerProblems(v)) {
+      warnings.push(`${k} sentence ${p.index}: POINTER — cites ${p.starvingIds.join(', ')} with no figure ("${p.sentence.slice(0, 60)}…"); report the figure or cut`);
+    }
+  }
+
+  // Element coverage — warning-level audit (the automatable slice of the review
+  // checklist). For enumerable fields, flag a required element whose keywords
+  // appear nowhere in the prose. Keyword coverage, not semantics: catches a whole
+  // element omitted (publicFinances that never names a credit rating), not a thin
+  // one. scripts/lib/coverage.cjs. A flag is a prompt to look, not a verdict.
+  for (const [k, v] of Object.entries(contentClone)) {
+    if (typeof v !== 'string' || !v.trim()) continue;
+    const m = k.match(/^([a-z]+_[a-zA-Z]+)_(en|fr)$/);
+    if (!m) continue;
+    for (const el of coverageProblems(m[1], v)) {
+      warnings.push(`${k}: required element possibly missing — "${el}" (element-coverage heuristic; confirm in review)`);
+    }
+  }
+
   // Anchors (rework spec §1): [dot.path] markers in narrative fields must
   // resolve to non-empty fields of THIS report (ghost anchor = hard error),
   // respect compose order / allowed sets, and never appear in baseline.
@@ -533,8 +561,11 @@ function listCountryFiles(root) {
     .filter((p) => fs.existsSync(p));
 }
 
-const files = process.argv.length > 2
-  ? process.argv.slice(2).map((p) => path.resolve(process.cwd(), p))
+const rawArgs = process.argv.slice(2);
+const checkUrls = rawArgs.includes('--check-urls'); // opt-in, network — see scripts/lib/urlcheck.cjs
+const fileArgs = rawArgs.filter((a) => !a.startsWith('--'));
+const files = fileArgs.length > 0
+  ? fileArgs.map((p) => path.resolve(process.cwd(), p))
   : listCountryFiles(countriesRoot);
 
 if (files.length === 0) {
@@ -568,7 +599,60 @@ for (const file of files) {
   }
 }
 
-console.log(`\nSummary: ${errorCount} error(s), ${warningCount} warning(s) across ${files.length} file(s).`);
-if (errorCount > 0) {
-  process.exit(2);
+// Opt-in URL resolution pass (--check-urls, network). Deterministic backstop for
+// the "open the URL before you cite it" discipline the prompt can only request.
+// Warning-level: a SUSPECT link (404 / wrong host / constructed) is surfaced but
+// never fails the run — bot-blocked government sites resolve as "unconfirmed".
+async function runUrlChecks() {
+  if (!checkUrls) return 0;
+  const { checkUrl, mapPool } = require('./lib/urlcheck.cjs');
+  let suspectTotal = 0;
+  for (const file of files) {
+    const rel = path.relative(process.cwd(), file);
+    let sources = [];
+    try {
+      sources = JSON.parse(yaml.load(fs.readFileSync(file, 'utf8')).sources || '[]');
+    } catch {
+      continue; // malformed sources already reported by the offline pass
+    }
+    const items = sources.filter((s) => s && s.url && s.id).map((s) => ({ id: s.id, url: String(s.url) }));
+    if (!items.length) continue;
+    console.log(`\nURL check ${rel} — opening ${items.length} source URL(s)…`);
+    const results = await mapPool(items, 8, async (it) => ({ it, res: await checkUrl(it.url) }));
+    const okCount = results.filter((r) => r.res.ok === true).length;
+    // Offline guard: if NOTHING resolved, the network is down, not the links —
+    // don't flag every URL as suspect. One 2xx proves the network is up.
+    if (okCount === 0 && results.length > 0) {
+      console.log(`  network unavailable or unreachable — URL check inconclusive, skipped (${results.length} URLs not confirmed)`);
+      continue;
+    }
+    let ok = 0, unconfirmed = 0, suspect = 0;
+    for (const { it, res } of results) {
+      if (res.ok === true) { ok++; continue; }
+      if (res.ok === false) {
+        suspect++;
+        console.log(`  - SUSPECT URL [${it.id}]: ${res.note} (HTTP ${res.status || '—'}) — likely dead or constructed: ${it.url}`);
+      } else {
+        unconfirmed++;
+        console.log(`  - unconfirmed [${it.id}]: ${res.note} (HTTP ${res.status || '—'}) — open manually: ${it.url}`);
+      }
+    }
+    suspectTotal += suspect;
+    console.log(`  (${ok} resolve · ${unconfirmed} could not be confirmed · ${suspect} suspect)`);
+  }
+  return suspectTotal;
 }
+
+runUrlChecks()
+  .then((suspect) => {
+    console.log(
+      `\nSummary: ${errorCount} error(s), ${warningCount} warning(s)` +
+        (checkUrls ? `, ${suspect} suspect URL(s)` : '') +
+        ` across ${files.length} file(s).`
+    );
+    if (errorCount > 0) process.exit(2);
+  })
+  .catch((e) => {
+    console.error('URL check failed:', e && e.message ? e.message : e);
+    if (errorCount > 0) process.exit(2);
+  });

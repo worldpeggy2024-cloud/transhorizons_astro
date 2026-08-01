@@ -302,15 +302,17 @@ territory_minerals_fr: >-
   réserves sont partout compilés par le Geological Survey, qui en est
   l'organisme estimateur [usgs-mcs-2026].
 territory_climate_en: >-
-  The United States spans a dramatically regional climate — from Arctic and
+  The climate of the United States is dramatically regional — from Arctic and
   subarctic Alaska through the temperate continental interior and humid east to
   the arid Southwest and tropical Hawaii and territories — so any warming signal
-  sits atop a highly varied baseline; detail follows. Observed warming is faster
-  than the global mean: temperatures in the contiguous United States have risen
-  2.5°F and in Alaska 4.2°F since 1970, against roughly 1.7°F globally over the
-  same period, with the continental United States including Alaska warming about
-  60% faster than the planet as a whole
-  [nca5-fifth-national-climate-assessment]. Precipitation has diverged
+  sits atop a highly varied baseline. 
+
+
+  Observed warming is faster than the global mean: temperatures in the
+  contiguous United States have risen 2.5°F and in Alaska 4.2°F since 1970,
+  against roughly 1.7°F globally over the same period, with the continental
+  United States including Alaska warming about 60% faster than the planet as a
+  whole [nca5-fifth-national-climate-assessment]. Precipitation has diverged
   regionally: annual precipitation over 2002–2021 was 5%–15% above the 1901–1960
   average across the central and eastern United States, while Hawaii and parts
   of the Southwest recorded decreases of 10%–15% over the same period
@@ -333,443 +335,693 @@ territory_climate_en: >-
   [nca5-fifth-national-climate-assessment]. Billion-dollar weather and climate
   disasters arrived roughly every four months in the 1980s and now arrive
   roughly every three weeks, with 18 such events in 2022
-  [nca5-fifth-national-climate-assessment]. Projections, each bound to its
-  scenario and horizon: at a global warming level of 2°C relative to 1851–1900,
-  average United States temperature is very likely to rise 4.4°F–5.6°F, with
-  each further 1°C of global warming adding about 2.5°F and the largest
-  increases in the north and west [nca5-fifth-national-climate-assessment].
-  Average sea level along United States coastlines is likely to stand 12–20
-  inches above 2000 levels by 2050 across the range of global warming levels —
-  4–12 inches in the Pacific Northwest but 20–27 inches in the western Gulf of
-  Mexico — and at a 2°C global warming level 2–3 feet by 2100 and 2.5–5 feet by
-  2150; rises of 3–6 feet by 2100 and 5–12 feet by 2150 cannot be ruled out
+  [nca5-fifth-national-climate-assessment].
+
+
+  Projections, each bound to its scenario and horizon: at a global warming level
+  of 2°C relative to 1851–1900, average United States temperature is very likely
+  to rise 4.4°F–5.6°F, with each further 1°C of global warming adding about
+  2.5°F and the largest increases in the north and west
+  [nca5-fifth-national-climate-assessment]. Average sea level along United
+  States coastlines is likely to stand 12–20 inches above 2000 levels by 2050
+  across the range of global warming levels, 4–12 inches in the Pacific
+  Northwest but 20–27 inches in the western Gulf of Mexico, and at a 2°C global
+  warming level 2–3 feet by 2100 and 2.5–5 feet by 2150; rises of 3–6 feet by
+  2100 and 5–12 feet by 2150 cannot be ruled out
   [nca5-fifth-national-climate-assessment]. Coastal flooding events that are
   currently damaging are projected to become more than ten times more frequent
   over the next 30 years [nca5-fifth-national-climate-assessment]. In the
-  Southwest, the risk of a single-year drought as dry as 2002 rises 8% at a 2°C
-  global warming level and 24% at 4°C, while multidecadal soil-moisture droughts
-  are projected to increase regardless of warming level
-  [nca5-fifth-national-climate-assessment]. Under a very high emissions scenario
-  (Shared Socioeconomic Pathway 5-8.5) the world is very likely to pass 2°C
-  between 2033 and 2054; under a low scenario (Shared Socioeconomic Pathway
-  1-2.6) it is very likely not to cross that threshold at all
-  [nca5-fifth-national-climate-assessment]. Exposure and the capacity to meet it
-  are unevenly distributed within the country, and the gap is measurable:
-  low-income neighbourhoods, including those historically affected by redlining,
-  can be as much as 12°F hotter during heatwaves than wealthier neighbourhoods
-  in the same city and face substantially higher flood risk
-  [nca5-fifth-national-climate-assessment]; Americans over 65 are several times
-  more likely than younger people to die of heat-related cardiovascular disease
-  [nca5-fifth-national-climate-assessment]. At national scale the country ranks
-  among the high-readiness economies on adaptive capacity
-  [ndgain-country-index], so the binding constraint is not aggregate national
-  capacity but its distribution across the exposed populations named above
+  Southwest, the risk of a single dry year as severe as 2002 rises 8% at a 2°C
+  warming level and 24% at 4°C; but the decades-long megadroughts, in which the
+  soil stays dry year after year, are projected to worsen regardless of how far
+  warming is limited [nca5-fifth-national-climate-assessment]. Under a very high
+  emissions scenario (Shared Socioeconomic Pathway 5-8.5) the world is very
+  likely to pass 2°C between 2033 and 2054; under a low scenario (Shared
+  Socioeconomic Pathway 1-2.6) it is very likely not to cross that threshold at
+  all [nca5-fifth-national-climate-assessment].
+
+
+  Exposure and the capacity to meet it are unevenly distributed within the
+  country, and the gap is measurable: low-income neighbourhoods, including those
+  historically affected by redlining, can be as much as 12°F hotter during
+  heatwaves than wealthier neighbourhoods in the same city and face
+  substantially higher flood risk [nca5-fifth-national-climate-assessment];
+  Americans over 65 are several times more likely than younger people to die of
+  heat-related cardiovascular disease [nca5-fifth-national-climate-assessment].
+  The country ranks among the high-readiness economies on adaptive capacity at
+  national scale [ndgain-country-index] — which is precisely what conceals the
+  problem: the binding constraint is not aggregate national capacity but its
+  distribution across the exposed populations named above
   [nca5-fifth-national-climate-assessment].
 territory_climate_fr: >-
-  Les États-Unis couvrent un climat très régionalisé — de l'Alaska arctique et
+  Le climat des États-Unis est fortement régionalisé : de l'Alaska arctique et
   subarctique à l'intérieur continental tempéré et à l'est humide, jusqu'au
-  Sud-Ouest aride et à Hawaï et aux territoires tropicaux — de sorte que tout
-  signal de réchauffement se superpose à une base très variée; les détails
-  suivent. Le réchauffement observé dépasse la moyenne mondiale : les
-  températures des États-Unis contigus ont augmenté de 2,5 °F et celles de
-  l'Alaska de 4,2 °F depuis 1970, contre environ 1,7 °F à l'échelle du globe sur
-  la même période, les États-Unis continentaux Alaska compris se réchauffant
-  environ 60 % plus vite que la planète dans son ensemble
+  Sud-Ouest aride et aux tropiques d'Hawaï et des territoires; de sorte que tout
+  signal de réchauffement s'inscrit sur une base de référence très variée. 
+
+
+  Le réchauffement observé est plus rapide que la moyenne mondiale : les
+  températures ont augmenté de 1.4 °C dans les États-Unis contigus et de 2.3 °C en
+  Alaska depuis 1970, contre environ 0.9 °C à l'échelle mondiale sur la même
+  période; les États-Unis continentaux, Alaska compris, se réchauffant environ
+  60 % plus vite que la planète dans son ensemble
   [nca5-fifth-national-climate-assessment]. Les précipitations ont divergé selon
-  les régions : sur 2002-2021, les précipitations annuelles ont dépassé de 5 % à
-  15 % la moyenne 1901-1960 dans le centre et l'est du pays, tandis qu'Hawaï et
-  une partie du Sud-Ouest enregistraient des baisses de 10 % à 15 % sur la même
-  période [nca5-fifth-national-climate-assessment]. Le niveau de la mer le long
-  du littoral continental s'est élevé d'environ 11 pouces au cours du siècle
-  dernier contre 7 pouces à l'échelle mondiale, et progressait de 1,8 pouce par
-  décennie sur 1993-2020 contre 1,3 pouce à l'échelle mondiale, les rythmes les
-  plus élevés se trouvant sur les côtes du Golfe et du Mid-Atlantic (plus de 2,4
-  pouces par décennie), les plus faibles dans le Nord-Ouest pacifique (0 à 1
-  pouce par décennie), avec une baisse relative du niveau de la mer dans le
-  sud-est de l'Alaska [nca5-fifth-national-climate-assessment]. Le Sud-Ouest a
-  connu sur 2000-2021 l'humidité des sols la plus faible de toute période
-  équivalente depuis au moins 1 200 ans, et constitue la seule région où la
-  superficie totale de sols anormalement secs augmente
-  [nca5-fifth-national-climate-assessment]. La chaleur extrême se concentre dans
-  l'Ouest, qui enregistre depuis les années 1980 la plus forte hausse du nombre
-  de journées dépassant 95 °F, tandis que dans 50 grandes villes le nombre moyen
-  de vagues de chaleur a doublé depuis les années 1980 et que la saison des
-  vagues de chaleur s'est allongée d'environ 40 à environ 70 jours
-  [nca5-fifth-national-climate-assessment]. Les fortes précipitations ont le
-  plus augmenté dans le Nord-Est (environ 60 % de journées de précipitations
+  les régions : les précipitations annuelles sur 2002-2021 dépassaient de 5 à 15
+  % la moyenne de 1901-1960 dans le centre et l'est du pays, tandis qu'Hawaï et
+  certaines parties du Sud-Ouest enregistraient des baisses de 10 à 15 % sur la
+  même période [nca5-fifth-national-climate-assessment]. Le niveau de la mer le
+  long du littoral continental s'est élevé d'environ 28 cm (11 pouces) au cours
+  du dernier siècle, contre 18 cm (7 po) à l'échelle mondiale, et progressait de
+  4.6 cm (1,8 po) par décennie entre 1993 et 2020 contre 3.3 cm (1,3 po) à
+  l'échelle mondiale; les taux les plus élevés se situant sur les côtes du Golfe
+  et de l'Atlantique central (plus de 6 cm [2,4 po] par décennie), les plus
+  faibles dans le Nord-Ouest pacifique (0 à 2.5 cm [1 po] par décennie), avec
+  une baisse relative du niveau de la mer dans le sud-est de l'Alaska
+  [nca5-fifth-national-climate-assessment]. Le Sud-Ouest a connu l'humidité des
+  sols la plus faible de toute période équivalente depuis au moins 1 200 ans sur
+  2000-2021; c'est la seule région où la superficie totale de sols anormalement
+  secs augmente [nca5-fifth-national-climate-assessment]. La chaleur extrême se
+  concentre dans l'Ouest, qui a connu la plus forte hausse du nombre de jours
+  au-dessus de 35 °C depuis les années 1980, tandis que, dans 50 grandes villes,
+  le nombre moyen de vagues de chaleur a doublé depuis les années 1980 et que la
+  saison des vagues de chaleur s'est allongée d'environ 40 à environ 70 jours
+  [nca5-fifth-national-climate-assessment]. Les précipitations intenses ont le
+  plus augmenté dans le Nord-Est (environ 60 % de jours de précipitations
   extrêmes en plus) et le Midwest (environ 45 %)
   [nca5-fifth-national-climate-assessment]. Les catastrophes météorologiques et
   climatiques à plus d'un milliard de dollars survenaient environ tous les
   quatre mois dans les années 1980 et surviennent désormais environ toutes les
   trois semaines, avec 18 événements de ce type en 2022
-  [nca5-fifth-national-climate-assessment]. Projections, chacune rattachée à son
-  scénario et à son horizon : à un niveau de réchauffement planétaire de 2 °C
-  par rapport à 1851-1900, la température moyenne des États-Unis augmentera très
-  probablement de 4,4 °F à 5,6 °F, chaque degré Celsius supplémentaire de
-  réchauffement mondial ajoutant environ 2,5 °F, les hausses les plus fortes
-  touchant le nord et l'ouest [nca5-fifth-national-climate-assessment]. Le
-  niveau moyen de la mer le long des côtes américaines devrait probablement
-  dépasser de 12 à 20 pouces les niveaux de 2000 d'ici 2050 sur l'ensemble des
-  niveaux de réchauffement — de 4 à 12 pouces dans le Nord-Ouest pacifique mais
-  de 20 à 27 pouces dans l'ouest du golfe du Mexique — et, à un niveau de
-  réchauffement de 2 °C, de 2 à 3 pieds d'ici 2100 et de 2,5 à 5 pieds d'ici
-  2150; des hausses de 3 à 6 pieds en 2100 et de 5 à 12 pieds en 2150 ne peuvent
-  être exclues [nca5-fifth-national-climate-assessment]. Les épisodes
-  d'inondation côtière aujourd'hui dommageables devraient devenir plus de dix
-  fois plus fréquents au cours des 30 prochaines années
+  [nca5-fifth-national-climate-assessment].
+
+
+  Projections, chacune liée à son scénario et à son horizon : à un niveau de
+  réchauffement mondial de 2 °C par rapport à 1851-1900, la température moyenne
+  des États-Unis augmentera très probablement de 2,4 à 3,1 °C, chaque degré
+  Celsius supplémentaire de réchauffement mondial ajoutant environ 1,4 °C; les
+  hausses les plus fortes touchant le nord et l'ouest
+  [nca5-fifth-national-climate-assessment]. Le niveau moyen de la mer le long
+  des côtes des États-Unis se situera probablement de 30 à 50 cm (12 à 20 p)
+  au-dessus des niveaux de 2000 d'ici 2050, sur l'ensemble des niveaux de
+  réchauffement (de 10 à 30 cm [4 à 12 po] dans le Nord-Ouest pacifique, mais de
+  50 à 70 cm [20 à 27 po] dans l'ouest du golfe du Mexique; à un niveau de
+  réchauffement de 2 °C, de 0,6 à 0,9 m [2 à 3 pieds] d'ici 2100 et de 0,8 à 1,5
+  m [2,5 à 5 pi] d'ici 2150; des hausses de 0,9 à 1,8 m [3 à 6 pi] d'ici 2100
+  et de 1,5 à 3,7 [5 à 12 pi] d'ici 2150 ne peuvent être exclues
+  [nca5-fifth-national-climate-assessment]. Les inondations côtières aujourd'hui
+  dommageables deviendront, selon les projections, plus de dix fois plus
+  fréquentes au cours des 30 prochaines années
   [nca5-fifth-national-climate-assessment]. Dans le Sud-Ouest, le risque d'une
-  sécheresse annuelle aussi sévère que celle de 2002 augmente de 8 % à un niveau
-  de réchauffement de 2 °C et de 24 % à 4 °C, tandis que les sécheresses
-  pluridécennales de l'humidité des sols devraient s'accentuer quel que soit le
-  niveau de réchauffement [nca5-fifth-national-climate-assessment]. Selon un
-  scénario d'émissions très élevées (trajectoire socio-économique partagée
-  5-8.5), le monde franchira très probablement le seuil de 2 °C entre 2033 et
-  2054; selon un scénario bas (trajectoire socio-économique partagée 1-2.6), il
-  ne le franchira très probablement pas
-  [nca5-fifth-national-climate-assessment]. L'exposition et la capacité d'y
-  faire face sont inégalement réparties à l'intérieur du pays, et l'écart est
-  mesurable : les quartiers à faibles revenus, dont ceux historiquement touchés
-  par le redlining, peuvent être jusqu'à 12 °F plus chauds pendant les vagues de
-  chaleur que les quartiers aisés d'une même ville et sont nettement plus
-  exposés aux inondations [nca5-fifth-national-climate-assessment]; les
-  Américains de plus de 65 ans ont plusieurs fois plus de risques que les plus
-  jeunes de mourir d'une maladie cardiovasculaire liée à la chaleur
-  [nca5-fifth-national-climate-assessment]. À l'échelle nationale, le pays
-  figure parmi les économies à forte préparation en matière de capacité
-  d'adaptation [ndgain-country-index] : la contrainte déterminante n'est donc
-  pas la capacité nationale agrégée mais sa répartition entre les populations
-  exposées nommées ci-dessus [nca5-fifth-national-climate-assessment].
+  seule année aussi sèche que 2002 augmente de 8 % à un niveau de réchauffement
+  de 2 °C et de 24 % à 4 °C; mais les mégasécheresses pluridécennales, lorsque
+  le sol demeure sec année après année, devraient s'aggraver quel que soit le
+  degré de limitation du réchauffement [nca5-fifth-national-climate-assessment].
+  Selon un scénario d'émissions très élevées (Shared Socioeconomic Pathway
+  5-8.5), le monde franchira très probablement les 2 °C entre 2033 et 2054;
+  selon un scénario d'émissions faibles (Shared Socioeconomic Pathway 1-2.6), il
+  ne franchira très probablement pas du tout ce seuil
+  [nca5-fifth-national-climate-assessment].
+
+
+  L'exposition et la capacité d'y faire face sont inégalement réparties à
+  l'intérieur du pays, et l'écart est mesurable : les quartiers à faible revenu,
+  y compris ceux historiquement touchés par le « redlining » (discrimination
+  hypothécaire par quartier), peuvent être jusqu'à 6,5 °C plus chauds pendant
+  les vagues de chaleur que les quartiers plus aisés de la même ville et sont
+  exposés à un risque d'inondation nettement plus élevé
+  [nca5-fifth-national-climate-assessment]; les personnes de plus de 65 ans sont
+  plusieurs fois plus susceptibles que les plus jeunes de mourir d'une maladie
+  cardiovasculaire liée à la chaleur [nca5-fifth-national-climate-assessment].
+  Le pays se classe parmi les économies à forte capacité d'adaptation à
+  l'échelle nationale [ndgain-country-index]; ce qui masque précisément le
+  problème : la contrainte déterminante n'est pas la capacité nationale globale,
+  mais sa répartition entre les populations exposées nommées ci-dessus
+  [nca5-fifth-national-climate-assessment].
 territory_metabolism_en: >-
-  Scope: energy, food, water, movement and information. The United States is
-  broadly self-sufficient in energy: after fifteen years of near-flat demand,
-  electricity consumption has risen 2.1% annually over the past five years,
-  driven by data centres and AI, and is projected to keep growing 0.9%–1.6% per
-  year through 2050 [eia-aeo-2026][eia-power-outlook-2026]. Natural gas
-  production reached 107 billion cubic feet per day in 2025 and crude oil
-  production 13.6 million barrels per day in 2025 [eia-aeo-2026]. Natural gas
-  supplied about 40% of electricity generation in 2025 and coal about 16%, with
-  natural gas, solar and wind together about 60% of generation in 2025
-  [eia-aeo-2026][eia-power-outlook-2026]. The physical grid, transport and
-  broadband networks carry these flows across continental distances; the
-  approved sources characterise energy throughput in detail but not internal
-  transport self-sufficiency [eia-aeo-2026].
+  The United States runs on high and rising energy throughput, a dense
+  continental freight system, and physical distribution networks (water,
+  broadband) that are extensive but ageing, and its self-sufficiency varies
+  sharply by system. 
+
+
+  Energy is abundant and domestically produced: after fifteen years of near-flat
+  demand, electricity consumption has risen 2.1% annually over the past five
+  years, driven by data centres and artificial intelligence, and is projected to
+  keep growing 0.9%–1.6% per year through 2050
+  [eia-aeo-2026][eia-power-outlook-2026]. 
+
+
+  Production is at record levels — natural gas reached 107 billion cubic feet
+  per day and crude oil 13.6 million barrels per day in 2025 — with natural gas
+  supplying about 40% of electricity generation, coal about 16%, and natural
+  gas, solar and wind together roughly 60%
+  [eia-aeo-2026][eia-power-outlook-2026]. Goods move at continental scale: the
+  freight system carried about 20.2 billion tons in 2023, a daily average of
+  55.5 million tons, projected to grow about 1.2% per year through 2050, with
+  trucks in the supply chain of all ten leading commodities
+  [bts-freight-analysis-framework]. 
+
+
+  Food self-sufficiency has quietly reversed: the country ran an agricultural
+  trade surplus for nearly sixty years until 2019, but by 2025 imports exceeded
+  exports by about $41 billion (a record deficit driven by high-value consumer
+  imports) even as it remains the world's largest exporter of bulk grains and
+  oilseeds [usda-ers-ag-trade-2026]. 
+
+
+  The physical distribution networks are extensive but under strain: about 95%
+  of homes and small businesses had access to fixed 100/20 megabit-per-second
+  broadband by December 2024, but rural access lagged at 72% and more than 23%
+  of people on Tribal lands lacked it [fcc-broadband-map-2024]; and the
+  drinking-water system faces a $625 billion twenty-year investment need,
+  two-thirds of it for ageing transmission and distribution pipes, with 9.2
+  million lead service lines still to replace [epa-dwinsa-2023].
 territory_metabolism_fr: >-
-  Portée : énergie, alimentation, eau, mobilité et information. Les États-Unis
-  sont largement autosuffisants en énergie : après quinze ans de demande quasi
-  stable, la consommation d'électricité a augmenté de 2,1 % par an au cours des
-  cinq dernières années, tirée par les centres de données et l'IA, et devrait
-  continuer de croître de 0,9 % à 1,6 % par an jusqu'en 2050
-  [eia-aeo-2026][eia-power-outlook-2026]. La production de gaz naturel a atteint
-  107 milliards de pieds cubes par jour en 2025 et la production de pétrole brut
-  13,6 millions de barils par jour en 2025 [eia-aeo-2026]. Le gaz naturel a
-  fourni environ 40 % de la production d'électricité en 2025 et le charbon
-  environ 16 %, gaz naturel, solaire et éolien représentant ensemble environ 60
-  % de la production en 2025 [eia-aeo-2026][eia-power-outlook-2026]. Les réseaux
-  physiques d'électricité, de transport et de haut débit acheminent ces flux sur
-  des distances continentales; les sources approuvées caractérisent en détail le
-  débit énergétique mais non l'autosuffisance du transport interne
-  [eia-aeo-2026].
+  Les États-Unis fonctionnent sur un débit énergétique élevé et croissant, un
+  système de fret continental dense et des réseaux de distribution physique
+  (eau, télécommunications) vastes mais vieillissants; leur autosuffisance
+  variant fortement d'un système à l'autre. L'énergie est abondante et produite
+  sur le territoire : après quinze ans de demande quasi stable, la consommation
+  d'électricité a augmenté de 2,1 % par an au cours des cinq dernières années,
+  sous l'effet des centres de données et de l'intelligence artificielle, et
+  devrait continuer de croître de 0,9 à 1,6 % par an jusqu'en 2050
+  [eia-aeo-2026][eia-power-outlook-2026]. 
+
+
+  La production atteint des niveaux record (le gaz naturel a atteint 107
+  milliards de pieds cubes par jour et le pétrole brut 13,6 millions de barils
+  par jour en 2025); le gaz naturel fournissant environ 40 % de la production
+  d'électricité, le charbon environ 16 %, et le gaz naturel, le solaire et
+  l'éolien ensemble environ 60 % [eia-aeo-2026][eia-power-outlook-2026]. 
+
+
+  Les marchandises circulent à l'échelle continentale : le système de fret a
+  transporté environ 20,2 milliards de tonnes en 2023, soit une moyenne
+  quotidienne de 55,5 millions de tonnes, avec une croissance prévue d'environ
+  1,2 % par an jusqu'en 2050; les camions intervenant dans la chaîne
+  d'approvisionnement des dix principales marchandises
+  [bts-freight-analysis-framework]. 
+
+
+  L'autosuffisance alimentaire s'est discrètement inversée : le pays a
+  enregistré un excédent commercial agricole pendant près de soixante ans
+  jusqu'en 2019; toutefois, en 2025 les importations dépassaient les
+  exportations d'environ 41 milliards de dollars (déficit record tiré par des
+  importations de produits de consommation à forte valeur) tout en demeurant le
+  premier exportateur mondial de céréales et d'oléagineux en vrac
+  [usda-ers-ag-trade-2026]. 
+
+
+  Les réseaux de distribution physique sont vastes mais sous tension : environ
+  95 % des ménages et petites entreprises avaient accès à un service fixe à
+  large bande de 100/20 mégabits par seconde à la fin de 2024, mais l'accès
+  rural n'atteignait que 72 % et plus de 23 % des personnes vivant sur des
+  terres autochtones en étaient privées [fcc-broadband-map-2024]; le système
+  d'eau potable fait face à un besoin d'investissement de 625 milliards de
+  dollars sur vingt ans, dont les deux tiers pour des conduites de transport et
+  de distribution vieillissantes, avec 9,2 millions de branchements en plomb
+  encore à remplacer [epa-dwinsa-2023].
 territory_transition_en: >-
-  The United States is a laggard in decarbonisation relative to its capacity,
-  and its pledge-versus-policy gap has widened sharply. The Climate Action
-  Tracker rates US climate targets, action and finance as 'Critically
-  Insufficient' overall, with policies and action 'Highly Insufficient'
-  [climateactiontracker-usa]. The Trump administration voided the existing 2030
-  and 2035 Nationally Determined Contribution (NDC) targets set under the prior
-  administration, and the Climate Action Tracker considers the United States to
-  no longer have a net-zero target [climateactiontracker-usa]. Under current
-  policy, US emissions are projected to fall 19%–30% below 2005 levels by 2030
-  (excluding land use, land-use change and forestry, LULUCF), versus the 29%–39%
-  the prior administration was on track to deliver — roughly 600–800 million
-  tonnes of carbon dioxide equivalent higher in 2030 [climateactiontracker-usa].
-  Energy-related carbon dioxide emissions data are compiled by the Energy
-  Information Administration [eia-emissions-outlook].
+  The United States has a widening gap between what it has pledged on climate
+  and what its policies will deliver, and its emissions have begun to rise
+  again. The Climate Action Tracker rates United States climate targets, action
+  and finance as "Critically Insufficient" overall, with policies and action
+  "Highly Insufficient" [climateactiontracker-usa]. The current administration
+  voided the 2030 and 2035 Nationally Determined Contribution (NDC) targets set
+  under the prior administration, and the Climate Action Tracker considers the
+  United States to no longer hold a net-zero target [climateactiontracker-usa].
+  Under current policy, United States emissions are projected to fall 19%–30%
+  below 2005 levels by 2030, excluding land use, land-use change and forestry
+  (LULUCF), against the 29%–39% the prior administration was on track to deliver
+  — roughly 600–800 million tonnes of carbon dioxide equivalent higher in 2030
+  [climateactiontracker-usa]. The delivered path is already turning the wrong
+  way: after two decades of decline that left emissions about 20% below 2005
+  levels, energy-related carbon dioxide emissions rose 2% in 2025 — about 115
+  million tonnes — increasing across every sector, driven largely by a 13% rise
+  in coal-fired electricity generation [eia-co2-emissions-2025].
 territory_transition_fr: >-
-  Les États-Unis sont à la traîne en matière de décarbonation au regard de leurs
-  capacités, et l'écart entre engagements et politiques s'est fortement creusé.
-  Le Climate Action Tracker qualifie de « critiquement insuffisants » les
-  objectifs, l'action et le financement climatiques américains dans leur
-  ensemble, les politiques et l'action étant « hautement insuffisantes »
-  [climateactiontracker-usa]. L'administration Trump a annulé les objectifs de
-  contribution déterminée au niveau national (CDN) pour 2030 et 2035 fixés sous
-  l'administration précédente, et le Climate Action Tracker considère que les
-  États-Unis n'ont plus d'objectif de neutralité carbone
-  [climateactiontracker-usa]. Selon les politiques actuelles, les émissions
-  américaines devraient baisser de 19 % à 30 % sous les niveaux de 2005 d'ici
-  2030 (hors utilisation des terres, changement d'affectation des terres et
-  foresterie, UTCATF), contre les 29 % à 39 % que l'administration précédente
-  était en voie d'atteindre — soit environ 600 à 800 millions de tonnes
-  d'équivalent CO2 de plus en 2030 [climateactiontracker-usa]. Les données
-  d'émissions de CO2 liées à l'énergie sont compilées par l'Energy Information
-  Administration [eia-emissions-outlook].
+  Les États-Unis présentent un écart croissant entre leurs engagements
+  climatiques et ce que leurs politiques permettront de réaliser, et leurs
+  émissions ont recommencé à augmenter. Le Climate Action Tracker juge les
+  cibles, l'action et le financement climatiques des États-Unis « gravement
+  insuffisants » dans l'ensemble; les politiques et l'action étant « très
+  insuffisantes » [climateactiontracker-usa]. L'administration actuelle a annulé
+  les cibles de contribution déterminée au niveau national (CDN) pour 2030 et
+  2035 fixées sous l'administration précédente, et le Climate Action Tracker
+  considère que les États-Unis n'ont plus de cible de carboneutralité
+  [climateactiontracker-usa]. Selon les politiques actuelles, les émissions des
+  États-Unis devraient diminuer de 19 à 30 % sous les niveaux de 2005 d'ici
+  2030, hors utilisation des terres, changement d'affectation des terres et
+  foresterie (UTCATF), contre les 29 à 39 % que l'administration précédente
+  était en voie de réaliser; soit environ 600 à 800 millions de tonnes
+  d'équivalent dioxyde de carbone de plus en 2030 [climateactiontracker-usa]. La
+  trajectoire réelle s'inverse déjà : après deux décennies de baisse qui avaient
+  ramené les émissions à environ 20 % sous les niveaux de 2005, les émissions de
+  dioxyde de carbone liées à l'énergie ont augmenté de 2 % en 2025 (environ 115
+  millions de tonnes), en hausse dans tous les secteurs, sous l'effet surtout
+  d'une progression de 13 % de la production d'électricité au charbon
+  [eia-co2-emissions-2025].
 society_demographics_en: >-
-  The United States is a settler-immigrant-built society whose population growth
-  has depended on migration, and that growth has just slowed sharply; detail
-  follows. The population reached 341.8 million as of 1 July 2025, growing only
-  0.5% (about 1.8 million) over the year, the slowest since 2021
+  The United States is a settler-and-immigrant society whose population growth
+  has always depended on migration; and that growth has just slowed sharply. The
+  population reached 341.8 million as of 1 July 2025, growing only 0.5% (about
+  1.8 million) over the year, the slowest pace since 2021
   [census-poprelease-2026]. The slowdown was driven by a historic fall in net
-  international migration, from 2.7 million in the prior year to 1.3 million in
+  international migration, from 2.7 million the prior year to 1.3 million in
   July 2024–June 2025, projected to fall further to about 321,000 by July 2026
   [census-poprelease-2026]. Natural change (births minus deaths) was about
   519,000, roughly flat year-on-year but far below prior-decade levels
-  [census-poprelease-2026]. Long-term demographic pressures include an ageing
-  population documented by the Congressional Budget Office
-  [cbo-demographic-outlook-2026][census-popclock].
+  [census-poprelease-2026]. The country is ageing: median age reached a record
+  39.1 in 2024, the population aged 65 and over rose to 61.2 million (18.0%, up
+  from 12.4% in 2004) while children fell to 21.5%, and by 2024 nearly 45% of
+  counties held more older adults than children [census-median-age-2025]. The
+  growth that remains has shifted decisively south and west: the South grew 6.0%
+  between 2020 and 2025 against 3.1% nationally, while the Northeast and Midwest
+  lost population — and within the growing regions, gains concentrated not in
+  the city cores, which grew sluggishly or declined, but in the exurban outlying
+  counties on the fringes of metros such as Dallas, Atlanta, Charlotte and
+  Nashville [census-poprelease-2026].
 society_demographics_fr: >-
-  Les États-Unis sont une société bâtie par les colons et l'immigration, dont la
-  croissance démographique a dépendu des migrations, et cette croissance vient
-  de ralentir fortement; les détails suivent. La population a atteint 341,8
-  millions au 1er juillet 2025, ne progressant que de 0,5 % (environ 1,8
-  million) sur l'année, le rythme le plus lent depuis 2021
-  [census-poprelease-2026]. Ce ralentissement s'explique par une chute
-  historique du solde migratoire international, de 2,7 millions l'année
-  précédente à 1,3 million de juillet 2024 à juin 2025, devant encore reculer à
-  environ 321 000 d'ici juillet 2026 [census-poprelease-2026]. Le solde naturel
-  (naissances moins décès) s'est établi à environ 519 000, à peu près stable
-  d'une année sur l'autre mais bien inférieur aux niveaux de la décennie
-  précédente [census-poprelease-2026]. Les pressions démographiques à long terme
-  comprennent le vieillissement de la population documenté par le Congressional
-  Budget Office [cbo-demographic-outlook-2026][census-popclock].
+  Les États-Unis sont une société de colons et d'immigrants dont la croissance
+  démographique a toujours reposé sur la migration; cette croissance vient de
+  ralentir fortement. La population a atteint 341,8 millions au 1er juillet
+  2025, ne croissant que de 0,5 % (environ 1,8 million) sur l'année; le rythme
+  le plus lent depuis 2021 [census-poprelease-2026]. Ce ralentissement découle
+  d'une baisse historique de la migration internationale nette, passée de 2,7
+  millions l'année précédente à 1,3 million de juillet 2024 à juin 2025, et qui
+  devrait encore diminuer jusqu'à environ 321 000 d'ici juillet 2026
+  [census-poprelease-2026]. L'accroissement naturel (naissances moins décès)
+  s'est établi à environ 519 000, à peu près stable d'une année à l'autre, mais
+  bien en deçà des niveaux de la décennie précédente [census-poprelease-2026].
+  Le pays vieillit : l'âge médian a atteint un record de 39,1 ans en 2024; la
+  population de 65 ans et plus a atteint 61,2 millions (18,0 %, contre 12,4 % en
+  2004) tandis que la part des enfants tombait à 21,5 %, et en 2024 près de 45 %
+  des comtés comptaient plus d'aînés que d'enfants [census-median-age-2025]. La
+  croissance qui subsiste s'est déplacée nettement vers le sud et l'ouest : le
+  Sud a crû de 6,0 % entre 2020 et 2025 contre 3,1 % à l'échelle nationale,
+  tandis que le Nord-Est et le Midwest perdaient de la population; à l'intérieur
+  des régions en croissance, les gains se sont concentrés non pas dans les cœurs
+  urbains, en croissance faible ou en déclin, mais dans les comtés exurbains
+  périphériques des agglomérations comme Dallas, Atlanta, Charlotte et Nashville
+  [census-poprelease-2026].
 society_composition_en: >-
-  The United States population was about 340 million in 2024, of whom roughly
-  56% were non-Hispanic White alone, 20% Hispanic or Latino of any race, 12%
-  Black or African American alone, 6% Asian alone, and 1% American Indian and
-  Alaska Native alone [census-acs-dp05]. The Hispanic or Latino category is an
-  ethnicity recorded independently of race, so its members are distributed
-  across every racial category rather than forming a separate one
-  [census-acs-dp05]. Spanish is the largest minority home language, while
-  English functions as the universal lingua franca and language of instruction
-  [census-acs-language]. Religious affiliation is predominantly Christian with a
-  large unaffiliated share, and observance does not track racial or linguistic
-  lines [pewresearch-religious-landscape]. Cleavage geometry (Interpretation):
-  across ethnicity, language and religion the fault lines are largely
-  CROSS-CUTTING — the ethnicity category cuts across the racial categories by
-  construction [census-acs-dp05], home language does not partition access to the
-  national lingua franca [census-acs-language], and religious observance is not
-  coextensive with either [pewresearch-religious-landscape]. The REINFORCING
+  The United States population was about 340 million in 2024, of whom, counting
+  those who reported a single race, roughly 56% were non-Hispanic White, 12%
+  Black or African American, 6% Asian, and 1% American Indian or Alaska Native,
+  alongside 20% Hispanic or Latino of any race [census-acs-dp05]. The Hispanic
+  or Latino category is an ethnicity recorded independently of race, so its
+  members are distributed across every racial category rather than forming a
+  separate one [census-acs-dp05]. Cleavage geometry (Interpretation): across
+  ethnicity, language and religion the fault lines are largely cross-cutting;
+  the ethnicity category cuts across the racial categories by construction
+  [census-acs-dp05], home language does not partition access to the national
+  lingua franca [census-acs-language], and religious observance is not
+  coextensive with either [pewresearch-religious-landscape]. The reinforcing
   line is partisan rather than ethnic: institutional trust splits sharply by
-  party (26% of Republicans versus 9% of Democrats in 2025) and responses track
-  which party holds power rather than stable underlying trust
-  [pew-trust-in-government], and religious observance is increasingly aligned
-  with partisan identity [pewresearch-religious-landscape]. The principal fault
-  line therefore runs along partisan identity, which absorbs and organises the
-  demographic differences rather than being produced by them.
+  party — 26% of Republicans versus 9% of Democrats expressed trust in the
+  federal government in 2025, and responses track which party holds power rather
+  than a stable underlying level [pew-trust-in-government] — and religious
+  observance is increasingly aligned with partisan identity
+  [pewresearch-religious-landscape]. The principal fault line therefore runs
+  along partisan identity, which absorbs and organises the demographic
+  differences rather than being produced by them.
 society_composition_fr: >-
-  La population des États-Unis s'élevait à environ 340 millions d'habitants en
-  2024, dont environ 56 % de Blancs non hispaniques d'une seule race, 20 %
-  d'Hispaniques ou Latinos toutes races confondues, 12 % de Noirs ou
-  Afro-Américains d'une seule race, 6 % d'Asiatiques d'une seule race et 1 %
-  d'Amérindiens et d'Autochtones d'Alaska d'une seule race [census-acs-dp05]. La
-  catégorie hispanique ou latino relève de l'ethnicité, consignée indépendamment
-  de la race : ses membres se répartissent donc dans toutes les catégories
-  raciales au lieu d'en constituer une distincte [census-acs-dp05]. L'espagnol
-  est la première langue minoritaire parlée à la maison, tandis que l'anglais
-  fait office de langue véhiculaire universelle et de langue d'enseignement
-  [census-acs-language]. L'affiliation religieuse est majoritairement chrétienne
-  avec une forte part de personnes sans affiliation, et la pratique ne recoupe
-  ni les lignes raciales ni les lignes linguistiques
-  [pewresearch-religious-landscape]. Géométrie des clivages (Interprétation) :
-  sur les axes ethnicité, langue et religion, les lignes de fracture sont
-  largement TRANSVERSALES — la catégorie ethnique traverse par construction les
-  catégories raciales [census-acs-dp05], la langue parlée à la maison ne
-  conditionne pas l'accès à la langue véhiculaire nationale
-  [census-acs-language], et la pratique religieuse ne coïncide avec aucune des
-  deux [pewresearch-religious-landscape]. La ligne CUMULATIVE est partisane et
-  non ethnique : la confiance institutionnelle se scinde nettement selon le
-  parti (26 % des républicains contre 9 % des démocrates en 2025) et les
-  réponses suivent le parti au pouvoir plutôt qu'une confiance de fond stable
-  [pew-trust-in-government], tandis que la pratique religieuse s'aligne de plus
-  en plus sur l'identité partisane [pewresearch-religious-landscape]. La
-  principale ligne de fracture court donc le long de l'identité partisane, qui
-  absorbe et organise les différences démographiques plutôt que d'en découler.
+  La population des États-Unis s'élevait à environ 340 millions en 2024, dont,
+  parmi les personnes ayant déclaré une seule race, environ 56 % de Blancs non
+  hispaniques, 12 % de Noirs ou Afro-Américains, 6 % d'Asiatiques et 1 %
+  d'Amérindiens ou d'Autochtones de l'Alaska, auxquels s'ajoutent 20 %
+  d'Hispaniques ou de Latino-Américains de toute race [census-acs-dp05]. La
+  catégorie hispanique ou latino-américaine est une appartenance ethnique
+  consignée indépendamment de la race; ses membres se répartissent donc dans
+  toutes les catégories raciales plutôt que d'en former une distincte
+  [census-acs-dp05]. Géométrie des clivages (interprétation) : entre
+  l'ethnicité, la langue et la religion, les lignes de fracture sont largement
+  transversales; la catégorie ethnique recoupe les catégories raciales par
+  construction [census-acs-dp05], la langue parlée à la maison ne conditionne
+  pas l'accès à la langue véhiculaire nationale [census-acs-language], et la
+  pratique religieuse ne coïncide avec ni l'une ni l'autre
+  [pewresearch-religious-landscape]. La ligne qui se renforce est partisane
+  plutôt qu'ethnique : la confiance envers les institutions se divise fortement
+  selon le parti : 26 % des Républicains contre 9 % des Démocrates déclaraient
+  faire confiance au gouvernement fédéral en 2025, et les réponses suivent le
+  parti au pouvoir plutôt qu'un niveau de fond stable [pew-trust-in-government];
+  et la pratique religieuse s'aligne de plus en plus sur l'identité partisane
+  [pewresearch-religious-landscape]. La principale ligne de fracture court donc
+  le long de l'identité partisane, qui absorbe et organise les différences
+  démographiques au lieu d'en être le produit.
 society_language_en: >-
-  English is the dominant lingua franca and language of instruction, with
-  Spanish the largest minority language; the American Community Survey tabulates
-  language spoken at home as the primary instrument [census-acs-language].
-  Specific rounded shares by language for 2024 are compiled in that survey
-  [census-acs-language].
+  English is the universal lingua franca and language of instruction, and
+  language does not partition the country the way it does in many plural
+  societies. About 78% of the population aged five and over speaks only English
+  at home; roughly 22% speaks another language, overwhelmingly Spanish, which
+  accounts for around 61% of non-English home languages and about 14% of the
+  total population, followed at a distance by Chinese and Tagalog
+  [census-acs-language]. The lived pattern is convergence, not division: among
+  Spanish-speaking children aged five to seventeen, about 80% also speak English
+  "very well," so minority home languages rarely survive as barriers past the
+  second generation [census-acs-language]. Language became politically salient
+  in 2025: Executive Order 14224 (1 March 2025) designated English the official
+  language of the United States for the first time in the country's history,
+  revoking a 2000 mandate that had required federal agencies to provide
+  assistance to people with limited English proficiency [eo-14224-english-2025].
+  The order is largely declaratory — it creates no enforceable right and
+  requires no agency to change services — but it reframes a de facto lingua
+  franca as a matter of official national identity, consistent with the
+  administration's broader immigration posture [eo-14224-english-2025].
 society_language_fr: >-
-  L'anglais est la langue véhiculaire dominante et la langue d'enseignement,
-  l'espagnol étant la première langue minoritaire; l'American Community Survey
-  recense la langue parlée à la maison comme instrument principal
-  [census-acs-language]. Les parts arrondies précises par langue pour 2024 sont
-  compilées dans cette enquête [census-acs-language].
+  L'anglais est la langue véhiculaire universelle et la langue d'enseignement;
+  la langue ne divise pas le pays comme elle le fait dans bien des sociétés
+  plurielles. Environ 78 % de la population de cinq ans et plus ne parle que
+  l'anglais à la maison; à peu près 22 % parle une autre langue, très
+  majoritairement l'espagnol, qui représente environ 61 % des langues parlées à
+  la maison autres que l'anglais et à peu près 14 % de la population totale,
+  suivi de loin par le chinois et le tagalog [census-acs-language]. La tendance
+  vécue est la convergence, non la division : chez les enfants hispanophones de
+  cinq à dix-sept ans, environ 80 % parlent aussi l'anglais « très bien », de
+  sorte que les langues d'origine survivent rarement comme obstacles au-delà de
+  la deuxième génération [census-acs-language]. La langue est devenue un enjeu
+  politique en 2025 : le décret 14224 (1er mars 2025) a désigné l'anglais comme
+  langue officielle des États-Unis pour la première fois de l'histoire du pays,
+  révoquant un mandat de 2000 qui obligeait les organismes fédéraux à offrir de
+  l'aide aux personnes ayant une maîtrise limitée de l'anglais
+  [eo-14224-english-2025]. Le décret est largement déclaratoire (il ne crée
+  aucun droit exécutoire et n'oblige aucun organisme à modifier ses services),
+  mais il fait d'une langue véhiculaire de fait une question d'identité
+  nationale officielle, en cohérence avec la posture migratoire plus large de
+  l'administration [eo-14224-english-2025].
 society_religion_en: >-
   The United States is a predominantly Christian country with a large and
-  growing religiously unaffiliated share, measured by the Pew Research Center's
-  Religious Landscape Study, a self-report survey subject to social-desirability
-  and sampling bias [pewresearch-religious-landscape]. The principal salience of
-  religion runs along the religiously observant/secular divide, which is
-  increasingly aligned with partisan identity [pewresearch-religious-landscape].
+  no-longer-growing religiously unaffiliated share. In the Pew Research Center's
+  2023–24 Religious Landscape Study, 62% of adults identify as Christian — 40%
+  Protestant, 19% Catholic, 3% other Christian — 29% are religiously
+  unaffiliated (5% atheist, 6% agnostic, 19% "nothing in particular"), and 7%
+  belong to non-Christian religions, the largest being Judaism (2%), Islam,
+  Buddhism and Hinduism (about 1% each) [pewresearch-religious-landscape]. The
+  long trend is decline levelling off: the Christian share fell from 78% in 2007
+  to 62%, but has held between 62% and 64% since 2019, and the unaffiliated
+  share has plateaued after decades of rapid growth
+  [pewresearch-religious-landscape]. These are self-reported figures from a
+  survey subject to social-desirability and sampling bias; the United States
+  conducts no official religious census, so all national religion data comes
+  from private surveys [pewresearch-religious-landscape]. The salient fault line
+  is not between faiths but between the observant and the secular — and it is
+  increasingly partisan: Pew finds the decline of Christian identity far more
+  pronounced among political liberals than conservatives, so religious
+  observance now tracks partisan alignment more closely than it tracks ethnicity
+  or region [pewresearch-religious-landscape].
 society_religion_fr: >-
-  Les États-Unis sont un pays à prédominance chrétienne avec une part importante
-  et croissante de personnes sans affiliation religieuse, mesurée par la
-  Religious Landscape Study du Pew Research Center, une enquête déclarative
-  sujette au biais de désirabilité sociale et d'échantillonnage
-  [pewresearch-religious-landscape]. La principale saillance de la religion suit
-  le clivage pratiquants/laïcs, de plus en plus aligné sur l'identité partisane
-  [pewresearch-religious-landscape].
+  Les États-Unis sont un pays majoritairement chrétien où la part des personnes
+  sans affiliation religieuse est importante et a cessé de croître. Dans l'étude
+  Religious Landscape 2023-2024 du Pew Research Center, 62 % des adultes se
+  déclarent chrétiens (40 % protestants, 19 % catholiques, 3 % autres
+  chrétiens), 29 % sont sans affiliation religieuse (5 % athées, 6 %
+  agnostiques, 19 % « rien en particulier ») et 7 % appartiennent à des
+  religions non chrétiennes; les plus importantes étant étant le judaïsme (2 %),
+  l'islam, le bouddhisme et l'hindouisme (environ 1 % chacun)
+  [pewresearch-religious-landscape]. La tendance de fond est un déclin qui se
+  stabilise : la part chrétienne est passée de 78 % en 2007 à 62 %, mais se
+  maintient entre 62 et 64 % depuis 2019, et la part des personnes sans
+  affiliation plafonne après des décennies de croissance rapide
+  [pewresearch-religious-landscape]. Ces chiffres sont autodéclarés et
+  proviennent d'une enquête sujette au biais de désirabilité sociale et
+  d'échantillonnage; les États-Unis ne mènent aucun recensement religieux
+  officiel, de sorte que toutes les données nationales sur la religion
+  proviennent d'enquêtes privées [pewresearch-religious-landscape]. La ligne de
+  fracture marquante n'oppose pas les confessions entre elles, mais les
+  pratiquants aux laïques, et elle est de plus en plus partisane : le Pew
+  constate que le déclin de l'identité chrétienne est bien plus prononcé chez
+  les libéraux que chez les conservateurs, de sorte que la pratique religieuse
+  suit désormais l'appartenance partisane de plus près que l'ethnicité ou la
+  région [pewresearch-religious-landscape].
 society_wellbeing_en: >-
-  Life expectancy at birth was 79.0 years in 2024, up 0.6 year from 78.4 in
-  2023, with 81.4 years for females and 76.5 for males — a sex gap of 4.9 years,
-  narrowed by 0.4 year from 2023 [nchs-mortality-2024]. Life expectancy at age
-  65 was 19.7 years in 2024 [nchs-mortality-2024]. The age-adjusted death rate
-  fell 3.8%, from 750.5 deaths per 100,000 standard population in 2023 to 722.1
-  in 2024, with 3,072,666 registered deaths in 2024
-  [nchs-mortality-2024][nchs-mortality-2023-databrief]. The three leading causes
-  in 2024 were heart disease (157.6 per 100,000), cancer (139.4) and
-  unintentional injuries (53.3, down 14.4% from 2023); suicide entered the top
-  ten at tenth place (13.7) while COVID-19 fell out of the top ten to fifteenth,
-  its death count dropping 37.1% from 49,932 in 2023 to 31,426 in 2024
-  [nchs-mortality-2024]. The infant mortality rate was 552.5 infant deaths per
-  100,000 live births in 2024, not significantly different from 560.2 in 2023
-  [nchs-mortality-2024]. The mortality access gradient is steep by race and
-  ethnicity: among males in 2024, age-adjusted death rates corrected for
-  death-certificate misclassification were 1,213.0 per 100,000 for non-Hispanic
-  American Indian and Alaska Native, 1,094.9 for non-Hispanic Black, 871.1 for
-  non-Hispanic White, 651.9 for Hispanic and 454.2 for non-Hispanic Asian
-  [nchs-mortality-2024]. Uncorrected rates understate deaths by 34% for the
-  non-Hispanic American Indian and Alaska Native population and by 3% for the
-  Hispanic and non-Hispanic Asian populations, so uncorrected series
-  systematically flatter the gradient [nchs-mortality-2024]. On education, among
-  25- to 29-year-olds in 2022, 95% had completed at least high school (up from
-  89% in 2010), 49% held an associate's or higher degree (from 41%), 40% a
-  bachelor's or higher degree (from 32%), and 10% a master's or higher degree
-  (from 7%) [nces-condition-of-education]. The attainment gradient widens with
-  each level: in 2022 the bachelor's-or-higher rate was 72% for Asian, 45% for
-  White, 28% for Black and 25% for Hispanic 25- to 29-year-olds, while the
+  The defining feature of United States health outcomes is that they are poor
+  for the country's wealth. Life expectancy at birth reached a record 79.0 years
+  in 2024 — up 0.6 year from 2023, 81.4 for females and 76.5 for males — yet
+  remained 3.7 years below the comparable-country average of 82.7, even as the
+  United States spent an estimated $14,775 per person on health care in 2024,
+  more than any peer nation [nchs-mortality-2024][kff-life-expectancy-peers].
+  The gap has widened over decades: American life expectancy matched wealthy
+  peers in 1980, then plateaued as theirs kept rising
+  [kff-life-expectancy-peers]. Mortality is nonetheless improving at the margin:
+  the age-adjusted death rate fell 3.8% to 722.1 per 100,000 in 2024, with 3.07
+  million registered deaths; heart disease (157.6 per 100,000), cancer (139.4)
+  and unintentional injuries (53.3) led, while COVID-19 fell out of the top ten
+  and suicide entered it at tenth [nchs-mortality-2024]. Infant mortality was
+  5.5 per 1,000 live births in 2024, statistically unchanged from 2023
+  [nchs-mortality-2024]. The mortality gradient by race is steep and understated
+  in raw data: among males in 2024, age-adjusted death rates corrected for
+  death-certificate misclassification ran from 1,213.0 per 100,000 for American
+  Indian and Alaska Native men and 1,094.9 for Black men down to 454.2 for Asian
+  men; and uncorrected series understate American Indian and Alaska Native
+  deaths by 34%, systematically flattering the gradient [nchs-mortality-2024].
+
+
+  Educational attainment is high and rising, and the racial gaps are narrow at
+  high-school level but widen sharply at each degree above it. Among
+  25-to-29-year-olds in 2022, 95% had completed at least high school (up from
+  89% in 2010), 40% held a bachelor's degree or higher (up from 32%), and 10% a
+  master's or higher [nces-condition-of-education]. The gaps widen at every
+  level up: the bachelor's-or-higher rate ran 72% for Asian, 45% for White, 28%
+  for Black and 25% for Hispanic 25-to-29-year-olds, while the
   associate's-or-higher rate ranged from 78% for Asian down to 19% for American
-  Indian/Alaska Native [nces-condition-of-education]. The White–Hispanic high
-  school completion gap narrowed from 25 to 9 percentage points between 2010 and
-  2022, but the Asian–White gap at bachelor's level widened by 9 points over the
-  same period [nces-condition-of-education]. Attainment is higher for females at
-  every level, with an 11-point sex gap among White 25- to 29-year-olds at
-  bachelor's or higher [nces-condition-of-education].
+  Indian and Alaska Native [nces-condition-of-education]. The gradients are
+  moving in opposite directions at different levels: the White–Hispanic
+  high-school-completion gap narrowed from 25 to 9 points between 2010 and 2022,
+  while the Asian–White gap at bachelor's level widened by 9 points
+  [nces-condition-of-education]. Attainment is higher for females at every
+  level, an 11-point sex gap among White 25-to-29-year-olds at bachelor's or
+  higher [nces-condition-of-education].
 society_wellbeing_fr: >-
-  L'espérance de vie à la naissance atteignait 79,0 ans en 2024, en hausse de
-  0,6 an par rapport à 78,4 ans en 2023, soit 81,4 ans pour les femmes et 76,5
-  ans pour les hommes — un écart de 4,9 ans, réduit de 0,4 an depuis 2023
-  [nchs-mortality-2024]. L'espérance de vie à 65 ans s'établissait à 19,7 ans en
-  2024 [nchs-mortality-2024]. Le taux de mortalité standardisé par âge a reculé
-  de 3,8 %, passant de 750,5 décès pour 100 000 habitants de la population type
-  en 2023 à 722,1 en 2024, pour 3 072 666 décès enregistrés en 2024
-  [nchs-mortality-2024][nchs-mortality-2023-databrief]. Les trois premières
-  causes de décès en 2024 étaient les maladies cardiaques (157,6 pour 100 000),
-  le cancer (139,4) et les accidents (53,3, en baisse de 14,4 % sur un an); le
-  suicide est entré dans les dix premières causes au dixième rang (13,7) tandis
-  que la COVID-19 en est sortie pour tomber au quinzième rang, ses décès
-  reculant de 37,1 %, de 49 932 en 2023 à 31 426 en 2024 [nchs-mortality-2024].
-  Le taux de mortalité infantile s'établissait à 552,5 décès pour 100 000
-  naissances vivantes en 2024, sans différence significative avec les 560,2 de
-  2023 [nchs-mortality-2024]. Le gradient d'accès en matière de mortalité est
-  prononcé selon la race et l'origine ethnique : chez les hommes en 2024, les
-  taux standardisés corrigés des erreurs de classement sur les certificats de
-  décès atteignaient 1 213,0 pour 100 000 chez les Amérindiens et Autochtones
-  d'Alaska non hispaniques, 1 094,9 chez les Noirs non hispaniques, 871,1 chez
-  les Blancs non hispaniques, 651,9 chez les Hispaniques et 454,2 chez les
-  Asiatiques non hispaniques [nchs-mortality-2024]. Les taux non corrigés
-  sous-estiment les décès de 34 % pour la population amérindienne et autochtone
-  d'Alaska non hispanique et de 3 % pour les populations hispanique et asiatique
-  non hispanique : les séries non corrigées atténuent donc systématiquement le
-  gradient [nchs-mortality-2024]. Sur le plan éducatif, chez les 25-29 ans en
-  2022, 95 % avaient au moins achevé le secondaire (contre 89 % en 2010), 49 %
-  détenaient un diplôme d'associate ou supérieur (contre 41 %), 40 % un
-  baccalauréat américain ou supérieur (contre 32 %) et 10 % une maîtrise ou plus
-  (contre 7 %) [nces-condition-of-education]. Le gradient de réussite se creuse
-  à chaque échelon : en 2022, le taux de baccalauréat ou plus atteignait 72 %
-  chez les 25-29 ans asiatiques, 45 % chez les Blancs, 28 % chez les Noirs et 25
-  % chez les Hispaniques, tandis que le taux d'associate ou plus allait de 78 %
-  chez les Asiatiques à 19 % chez les Amérindiens et Autochtones d'Alaska
-  [nces-condition-of-education]. L'écart Blancs-Hispaniques pour l'achèvement du
-  secondaire s'est resserré de 25 à 9 points de pourcentage entre 2010 et 2022,
-  mais l'écart Asiatiques-Blancs au niveau du baccalauréat s'est élargi de 9
-  points sur la même période [nces-condition-of-education]. La réussite est plus
-  élevée chez les femmes à tous les niveaux, avec un écart de 11 points entre
-  sexes chez les Blancs de 25-29 ans au niveau du baccalauréat ou plus
-  [nces-condition-of-education].
+  Le trait déterminant des résultats de santé aux États-Unis est qu'ils sont
+  médiocres au regard de la richesse du pays. L'espérance de vie à la naissance
+  a atteint un record de 79,0 ans en 2024 (en hausse de 0,6 an par rapport à
+  2023, soit 81,4 ans pour les femmes et 76,5 pour les hommes), mais demeurait
+  inférieure de 3,7 ans à la moyenne des pays comparables (82,7 ans), alors même
+  que les États-Unis dépensaient environ 14 775 $ par personne en soins de santé
+  en 2024, plus que tout autre pays pair
+  [nchs-mortality-2024][kff-life-expectancy-peers]. L'écart s'est creusé au fil
+  des décennies : l'espérance de vie aux États-Unis égalait celle des pays
+  riches comparables en 1980, puis a plafonné tandis qu'elle continuait de
+  croître dans ces autres pays [kff-life-expectancy-peers]. La mortalité
+  s'améliore néanmoins à la marge : le taux de mortalité normalisé selon l'âge a
+  reculé de 3,8 % pour s'établir à 722,1 pour 100 000 en 2024, avec 3,07
+  millions de décès enregistrés; les cardiopathies (157,6 pour 100 000), le
+  cancer (139,4) et les blessures non intentionnelles (53,3) venaient en tête,
+  tandis que l'épidémie de COVID-19 sortait du top dix et que le suicide y
+  entrait au dixième rang [nchs-mortality-2024]. La mortalité infantile
+  s'établissait à 5,5 pour 1 000 naissances vivantes en 2024, statistiquement
+  inchangée par rapport à 2023 [nchs-mortality-2024]. Le gradient de mortalité
+  selon l'origine ethnique est marqué et sous-estimé dans les données brutes :
+  chez les hommes en 2024, les taux de mortalité normalisés selon l'âge et
+  corrigés pour tenir compte des erreurs de classification sur les certificats
+  de décès allaient de 1 213,0 pour 100 000 chez les Amérindiens et Autochtones
+  de l'Alaska et 1 094,9 chez les Noirs jusqu'à 454,2 chez les Asiatiques. Les
+  séries non corrigées sous-estiment de 34 % les décès chez les Amérindiens et
+  Autochtones de l'Alaska; ce qui atténue artificiellement le gradient
+  [nchs-mortality-2024].
+
+
+  Le niveau de scolarité est élevé et en hausse, et les écarts raciaux, étroits
+  au secondaire, se creusent nettement à chaque diplôme supérieur. Chez les 25 à
+  29 ans en 2022, 95 % avaient terminé au moins le secondaire (contre 89 % en
+  2010), 40 % détenaient un diplôme universitaire de premier cycle ou plus
+  (contre 32 %) et 10 % une maîtrise ou plus [nces-condition-of-education]. Ces
+  écarts se creusent à chaque palier : le taux de baccalauréat ou plus
+  atteignait 72 % chez les Asiatiques, 45 % chez les Blancs, 28 % chez les Noirs
+  et 25 % chez les Hispaniques de 25 à 29 ans, tandis que le taux de diplôme
+  d'associé ou plus allait de 78 % chez les Asiatiques à 19 % chez les
+  Amérindiens et Autochtones de l'Alaska [nces-condition-of-education]. Les
+  gradients évoluent en sens contraire selon le palier : l'écart
+  Blancs–Hispaniques pour l'achèvement du secondaire s'est resserré de 25 à 9
+  points entre 2010 et 2022, tandis que l'écart Asiatiques–Blancs au
+  baccalauréat se creusait de 9 points [nces-condition-of-education]. Le niveau
+  de scolarité est plus élevé chez les femmes à chaque palier, avec un écart de
+  11 points entre les sexes chez les étudiants blancs de 25 à 29 ans au delà du
+  premier cycle universitaire [nces-condition-of-education].
 society_cohesion_en: >-
-  Social and institutional trust in the United States is low and, crucially,
-  partisan-sorted, so the headline aggregate is a systematically distorted
-  artefact and cohort breakdowns are reported instead. Per the Pew Research
-  Center, just 17% of Americans said in 2025 they trust the federal government
-  to do what is right just about always or most of the time, down from 22% in
-  2024 and near the lowest in about 70 years [pew-trust-in-government]. The
-  figure splits sharply by party: 26% of Republicans versus only 9% of
-  Democrats, the lowest level ever recorded for Democrats in Pew's data —
-  respondents answer honestly, but responses track which party holds power
-  rather than stable underlying trust [pew-trust-in-government]. Gallup's
-  parallel governance series shows the same partisan swing, with Republican
-  confidence in the executive branch rising sharply and Democratic confidence
-  falling by comparable margins after the 2024 change of administration
-  [gallup-confidence-institutions].
+  Cohesion in the United States is under strain along two different axes that
+  behave oppositely. Institutional trust is low and partisan-sorted: just 17% of
+  Americans said in 2025 they trust the federal government to do what is right
+  most of the time, near the lowest in about 70 years, and the figure swings
+  with power rather than measuring a stable underlying level — 26% of
+  Republicans against 9% of Democrats in 2025, with Gallup's parallel series
+  showing Republican confidence in the executive rising and Democratic
+  confidence falling by comparable margins after the 2024 change of
+  administration [pew-trust-in-government][gallup-confidence-institutions].
+  Interpersonal trust is the deeper problem, and it is not partisan: the share
+  of Americans saying most people can be trusted fell from 46% in 1972 to 34% by
+  the 2020s, and the decline runs across liberals, conservatives and moderates
+  alike [pew-interpersonal-trust]. The erosion is generational — in 2026
+  polling, 77% of those born before 1960 said most people can be trusted,
+  against 35% of those born in the 2000s — so it deepens as older cohorts are
+  replaced [marquette-trust-2026]. The society's institutional trust divides it
+  by party; its social trust is thinning across the whole population regardless
+  of party, and each cohort enters adulthood trusting others less than the last.
 society_cohesion_fr: >-
-  La confiance sociale et institutionnelle aux États-Unis est faible et,
-  surtout, clivée selon les lignes partisanes, de sorte que l'agrégat global est
-  un artefact systématiquement biaisé et que des ventilations par cohorte sont
-  rapportées à la place. Selon le Pew Research Center, seuls 17 % des Américains
-  déclaraient en 2025 faire confiance au gouvernement fédéral pour agir
-  correctement presque toujours ou la plupart du temps, contre 22 % en 2024 et
-  près du plus bas niveau depuis environ 70 ans [pew-trust-in-government]. Le
-  chiffre se scinde nettement selon le parti : 26 % des républicains contre
-  seulement 9 % des démocrates, le plus bas niveau jamais enregistré pour les
-  démocrates dans les données de Pew — les répondants répondent honnêtement,
-  mais leurs réponses suivent le parti au pouvoir plutôt qu'une confiance de
-  fond stable [pew-trust-in-government]. La série de gouvernance parallèle de
-  Gallup montre le même basculement partisan, la confiance républicaine envers
-  la branche exécutive augmentant fortement et la confiance démocrate chutant
-  dans des proportions comparables après le changement d'administration de 2024
-  [gallup-confidence-institutions].
+  La cohésion aux États-Unis subit des tensions selon deux axes distincts qui
+  évoluent en sens contraire. La confiance envers les institutions est faible et
+  clivée selon le parti : seuls 17 % des États-Uniens déclaraient en 2025 faire
+  confiance au gouvernement fédéral pour agir correctement la plupart du temps
+  (niveau proche du plus bas en une soixantaine d'années). Ce chiffre varie
+  selon le parti au pouvoir plutôt que de mesurer un niveau de fond stable : 26
+  % chez les Républicains contre 9 % chez les Démocrates en 2025; la série
+  parallèle de Gallup montrant la confiance républicaine envers l'exécutif en
+  hausse et la confiance démocrate en baisse dans des proportions comparables
+  après le changement d'administration de 2024
+  [pew-trust-in-government][gallup-confidence-institutions]. La confiance
+  interpersonnelle constitue le problème plus profond, et elle n'est pas
+  partisane : la part des États-Uniens estimant qu'on peut faire confiance à la
+  plupart des gens est passée de 46 % en 1972 à 34 % dans les années 2020,;
+  recul qui touche autant les libéraux que les conservateurs et les modérés
+  [pew-interpersonal-trust]. L'érosion est générationnelle (dans les sondages de
+  2026, 77 % des personnes nées avant 1960 estimaient qu'on peut faire confiance
+  à la plupart des gens, contre 35 % de celles nées dans les années 2000), de
+  sorte qu'elle s'accentue à mesure que les cohortes âgées sont remplacées
+  [marquette-trust-2026]. La confiance institutionnelle divise la société selon
+  le parti; sa confiance sociale s'amincit dans l'ensemble de la population sans
+  égard au parti; chaque cohorte entrant dans l'âge adulte en se fiant aux
+  autres moins que la précédente.
 economy_realEconomy_en: >-
-  The United States has a diversified, services-dominated economy — services
-  accounted for the large majority of value added, well above other major
-  economies — that lives on domestic consumption, finance, technology and
-  healthcare, and this character precedes the numbers that follow. Real GDP grew
-  2.2% in 2025, and the Congressional Budget Office projects growth accelerating
-  to 2.2% in 2026 before slowing to about 1.8% annually from 2027
-  [cbo-budget-outlook-2026]. The value of US nonfuel mineral production reached
-  $112 billion in 2025, up 5.6% [usgs-mcs-2026]. Business fixed investment is
-  being driven by generative artificial intelligence (AI) and data-centre
-  construction, which the CBO cites as a factor supporting productivity and
-  electricity demand growth [cbo-budget-outlook-2026][eia-aeo-2026].
+  The United States is a diversified economy in which services dominate both
+  production and employment, and the country lives on domestic consumption,
+  finance, technology and health care. Growth is moderate and set to firm in
+  2026, with the generative artificial intelligence (AI) and data-centre
+  buildout the leading impulse behind business investment. 
+
+
+  Of 159.0 million nonfarm payroll jobs in June 2026, private service-providing
+  industries account for 114.1 million (71.8%), goods-producing industries for
+  21.5 million (13.5%) and government for 23.4 million (14.7%)
+  [bls-empsit-june2026]. Within services, trade, transportation and utilities
+  employ 28.7 million, health care and social assistance 23.9 million — more
+  than the entire goods-producing sector — professional and business services
+  22.5 million, and financial activities 9.1 million; manufacturing employs 12.6
+  million, or 7.9% of nonfarm payrolls [bls-empsit-june2026]. Nonfarm employment
+  rose 57,000 in June 2026, a pace in line with the average monthly gain of
+  36,000 over the prior twelve months, and the April and May figures were
+  revised down by a combined 74,000 [bls-empsit-june2026]. The unemployment rate
+  was 4.2% in June 2026, with 7.1 million people unemployed and a labour-force
+  participation rate of 61.5%, both rate and level little changed over the year;
+  the number of people jobless for 27 weeks or longer rose by 286,000 over that
+  year to 1.9 million, 27.3% of all unemployed [bls-empsit-june2026]. 
+
+
+  Real gross domestic product (GDP) grew 2.1% in 2025; by industry that year,
+  real value added rose 2.7% in private services-producing industries, 1.2% in
+  private goods-producing industries and less than 0.1% in government
+  [bea-gdp-q4-2025-third]. The Congressional Budget Office (CBO) projects 2.2%
+  growth in 2026, an acceleration it attributes to the 2025 reconciliation act
+  and to the rebound following the late-2025 lapse in discretionary
+  appropriations [cbo-budget-outlook-2026]. Real business fixed investment is
+  projected to grow 3.9% in 2026, driven by generative AI and data-centre
+  investment [cbo-budget-outlook-2026][eia-aeo-2026]. Employment in the
+  information sector stood at 2.8 million in June 2026, about 89,000 below its
+  level a year earlier, while computer systems design and related services
+  employed 2.4 million [bls-empsit-june2026]. Nonfuel mineral production was
+  valued at $112 billion in 2025, up 5.6% [usgs-mcs-2026].
 economy_realEconomy_fr: >-
-  Les États-Unis ont une économie diversifiée et dominée par les services —
-  ceux-ci représentent la grande majorité de la valeur ajoutée, bien au-dessus
-  des autres grandes économies — qui vit de la consommation intérieure, de la
-  finance, de la technologie et de la santé, ce caractère précédant les chiffres
-  qui suivent. Le PIB réel a progressé de 2,2 % en 2025, et le Congressional
-  Budget Office prévoit une accélération à 2,2 % en 2026 avant un ralentissement
-  à environ 1,8 % par an à partir de 2027 [cbo-budget-outlook-2026]. La valeur
-  de la production minière non combustible des États-Unis a atteint 112
-  milliards de dollars en 2025, en hausse de 5,6 % [usgs-mcs-2026].
-  L'investissement fixe des entreprises est tiré par l'intelligence artificielle
-  (IA) générative et la construction de centres de données, que le CBO cite
-  comme facteur soutenant la productivité et la demande d'électricité
-  [cbo-budget-outlook-2026][eia-aeo-2026].
+  Les États-Unis ont une économie diversifiée où les services dominent tant la
+  production que l'emploi; le pays vit de la consommation intérieure, de la
+  finance, de la technologie et de la santé. La croissance est modérée et
+  devrait se raffermir en 2026, l'essor de l'intelligence artificielle (IA)
+  générative et des centres de données constituant le principal ressort de
+  l'investissement des entreprises. 
+
+
+  Sur 159,0 millions d'emplois salariés non agricoles en juin 2026, les services
+  privés en comptent 114,1 millions (71,8 %), les industries productrices de
+  biens 21,5 millions (13,5 %) et les administrations publiques 23,4 millions
+  (14,7 %) [bls-empsit-june2026]. Au sein des services, le commerce, le
+  transport et les services d'utilité publique emploient 28,7 millions de
+  personnes, les soins de santé et l'aide sociale 23,9 millions (davantage que
+  l'ensemble du secteur des biens), les services professionnels et aux
+  entreprises 22,5 millions et les activités financières 9,1 millions; la
+  fabrication en emploie 12,6 millions, soit 7,9 % des emplois non agricoles
+  [bls-empsit-june2026]. L'emploi non agricole total a progressé de 57 000 en
+  juin 2026, rythme comparable au gain mensuel moyen de 36 000 enregistré au
+  cours des douze mois précédents, et les données d'avril et de mai ont été
+  révisées à la baisse de 74 000 au total [bls-empsit-june2026]. Le taux de
+  chômage s'établissait à 4,2 % en juin 2026, avec 7,1 millions de personnes au
+  chômage et un taux d'activité de 61,5 %, taux et effectif ayant peu varié sur
+  un an. Le nombre de personnes sans emploi depuis 27 semaines ou plus a
+  augmenté de 286 000 sur cette même année pour atteindre 1,9 million, soit 27,3
+  % de l'ensemble des chômeurs [bls-empsit-june2026]. 
+
+
+  Le produit intérieur brut (PIB) réel a progressé de 2,1 % en 2025; par
+  industrie cette année-là, la valeur ajoutée réelle a augmenté de 2,7 % dans
+  les services privés, de 1,2 % dans les industries privées productrices de
+  biens et de moins de 0,1 % dans les administrations publiques
+  [bea-gdp-q4-2025-third]. Le Congressional Budget Office (CBO) prévoit une
+  croissance de 2,2 % en 2026, accélération qu'il attribue à la loi de
+  réconciliation de 2025 et au rebond consécutif à l'interruption des crédits
+  discrétionnaires de la fin de 2025 [cbo-budget-outlook-2026]. L'investissement
+  fixe des entreprises devrait progresser de 3,9 % en 2026, tiré par l'IA
+  générative et l'investissement dans les centres de données
+  [cbo-budget-outlook-2026][eia-aeo-2026]. L'emploi dans le secteur de
+  l'information s'établissait à 2,8 millions en juin 2026, soit environ 89 000
+  de moins qu'un an plus tôt, tandis que la conception de systèmes informatiques
+  et les services connexes employaient 2,4 millions de personnes
+  [bls-empsit-june2026]. La production minière non combustible a été évaluée à
+  112 milliards de dollars en 2025, en hausse de 5,6 % [usgs-mcs-2026].
 economy_publicFinances_en: >-
   The federal government runs large structural deficits and rising debt. The
-  Congressional Budget Office projects an FY2026 deficit of $1.9 trillion, equal
-  to 5.8% of GDP, against a 50-year average of 3.8%
+  Congressional Budget Office (CBO) projects a fiscal-year 2026 deficit of $1.9
+  trillion, equal to 5.8% of gross domestic product (GDP) against a 50-year
+  average of 3.8%, on outlays of 23.3% of GDP and revenues 17.5%
   [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. Federal debt held by the
-  public rises from 101% of GDP in 2026 to a projected 120% by 2036, surpassing
-  the prior 1946 peak of 106% [cbo-budget-outlook-2026]. Outlays are 23.3% of
-  GDP and revenues 17.5% of GDP in 2026 [cbo-budget-outlook-2026]. Net interest
-  outlays reach $1.0 trillion in 2026 and are projected to double to $2.1
-  trillion (4.6% of GDP) by 2036 [cbo-budget-outlook-2026]. CBO projects
-  Consumer Price Index (CPI) inflation of about 2.8% in 2026, easing thereafter
-  [crfb-cbo-outlook-2026].
+  public (that is, excluding securities held by the federal government's own
+  trust funds) rises from 101% of GDP in 2026 to a projected 120% by 2036, above
+  any level in the country's history and past the prior 1946 peak of 106%
+  [cbo-budget-outlook-2026]. Net interest outlays reach $1.0 trillion in 2026
+  and are projected to double to $2.1 trillion, or 4.6% of GDP, by 2036
+  [cbo-budget-outlook-2026]. 
+
+
+  Monetary policy is restrictive and inflation is above target: the Federal Open
+  Market Committee held the federal funds target range at 3.50–3.75% in July
+  2026, judging inflation still elevated relative to its 2% goal and attributing
+  that in part to supply shocks raising prices in sectors including energy
+  [fomc-statement-july-2026]. Consumer Price Index (CPI) inflation ran at 3.5%
+  over the twelve months to June 2026, with the index excluding food and energy
+  up 2.6% and the energy index up 15.7% [bls-cpi-june2026]. 
+
+  The country no longer holds a top rating from either agency that has published
+  a recent sovereign action: Moody's downgraded its long-term issuer and senior
+  unsecured ratings to Aa1 from Aaa in May 2025 [moodys-us-rating], and Standard
+  & Poor's rates the country AA+, with a stable outlook resting on the economy's
+  resilience and on deficits it judges high but not rising [sp-us-rating-2025].
 economy_publicFinances_fr: >-
   Le gouvernement fédéral accuse d'importants déficits structurels et une dette
-  croissante. Le Congressional Budget Office prévoit pour l'exercice 2026 un
-  déficit de 1 900 milliards de dollars, soit 5,8 % du PIB, contre une moyenne
-  de 3,8 % sur cinquante ans [cbo-budget-outlook-2026][crfb-cbo-outlook-2026].
-  La dette fédérale détenue par le public passe de 101 % du PIB en 2026 à 120 %
-  projetés en 2036, dépassant le pic de 106 % de 1946 [cbo-budget-outlook-2026].
-  Les dépenses représentent 23,3 % du PIB et les recettes 17,5 % en 2026
-  [cbo-budget-outlook-2026]. Les intérêts nets atteignent 1 000 milliards de
-  dollars en 2026 et devraient doubler pour atteindre 2 100 milliards (4,6 % du
-  PIB) d'ici 2036 [cbo-budget-outlook-2026]. Le CBO prévoit une inflation de
-  l'indice des prix à la consommation (IPC) d'environ 2,8 % en 2026, en repli
-  ensuite [crfb-cbo-outlook-2026].
+  croissante. Le Congressional Budget Office (CBO) prévoit pour l'exercice 2026
+  un déficit de 1 900 milliards de dollars, soit 5,8 % du produit intérieur brut
+  (PIB) contre une moyenne de 3,8 % sur cinquante ans : les dépenses
+  représentant 23,3 % du PIB et les recettes 17,5 %
+  [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. La dette fédérale détenue
+  par le public (c'est-à-dire hors titres détenus par les fonds fiduciaires
+  fédéraux eux-mêmes) passe de 101 % du PIB en 2026 à 120 % projetés en 2036,
+  au-delà de tout niveau atteint dans l'histoire du pays et du pic antérieur de
+  106 % de 1946 [cbo-budget-outlook-2026]. Les intérêts nets atteignent 1 000
+  milliards de dollars en 2026 et devraient doubler pour atteindre 2 100
+  milliards, soit 4,6 % du PIB, d'ici 2036 [cbo-budget-outlook-2026]. 
+
+
+  La politique monétaire est restrictive et l'inflation dépasse la cible : le
+  Comité fédéral de l'open market a maintenu en juillet 2026 la fourchette cible
+  du taux des fonds fédéraux à 3,50-3,75 %, jugeant l'inflation encore élevée
+  par rapport à sa cible de 2 % et l'attribuant en partie à des chocs d'offre
+  ayant fait monter les prix dans certains secteurs, dont l'énergie
+  [fomc-statement-july-2026]. L'indice des prix à la consommation (IPC) a
+  progressé de 3,5 % sur les douze mois clos en juin 2026; l'indice hors
+  alimentation et énergie augmentant de 2,6 % et celui de l'énergie, de 15,7 %
+  [bls-cpi-june2026]. 
+
+  Le pays ne détient plus la note maximale d'aucune des agences ayant publié une
+  décision souveraine récente : Moody's a abaissé en mai 2025 sa note d'émetteur
+  à long terme et celle de sa dette non garantie de premier rang de Aaa à Aa1
+  [moodys-us-rating], et Standard & Poor's attribue au pays la note AA+,
+  assortie d'une perspective stable fondée sur la résilience de l'économie et
+  sur des déficits qu'elle juge élevés, mais non croissants [sp-us-rating-2025].
 economy_externalVulnerability_en: >-
   The United States runs a persistent trade deficit and finances it in part
   through foreign purchases of its sovereign debt. Foreign holdings of Treasury
@@ -943,10 +1195,10 @@ political_rightsAndChecks_fr: >-
   par Freedom House, hormis Nauru et la Bulgarie — Freedom House étant un
   évaluateur américain à vocation militante dont les notes sont interprétatives
   [freedomhouse-usa-2026]. Le rapport Democracy Report 2026 de V-Dem a
-  rétrogradé les États-Unis de « démocratie libérale » à « démocratie électorale »
-  pour la première fois en plus de cinquante ans, qualifiant ce déclin
-  d'inédit dans l'histoire moderne [vdem-democracy-report-2026]. L'indice de
-  l'État de droit 2025 du World Justice Project classe les États-Unis 27e sur
+  rétrogradé les États-Unis de « démocratie libérale » à « démocratie
+  électorale » pour la première fois en plus de cinquante ans, qualifiant ce
+  déclin d'inédit dans l'histoire moderne [vdem-democracy-report-2026]. L'indice
+  de l'État de droit 2025 du World Justice Project classe les États-Unis 27e sur
   143 pays au total et 112e sur 143 pour l'accès à la justice civile
   [wjp-rule-of-law-2025]. L'indice de perception de la corruption 2025 de
   Transparency International attribue aux États-Unis 64 sur 100 et un rang de
@@ -1436,9 +1688,9 @@ capacity_publicServices_fr: >-
   liées à l'intégrité des programmes sont massives et persistantes : les agences
   fédérales ont déclaré environ 2 800 milliards de dollars de paiements indus
   estimés depuis 2003, dont plus de 150 milliards à l'échelle du gouvernement
-  chaque année depuis sept ans, les programmes inscrits à la liste à haut risque —
-  Medicare et Medicaid comptant parmi ceux dont la croissance est la plus
-  rapide — représentant environ 80 % de l'estimation gouvernementale pour
+  chaque année depuis sept ans, les programmes inscrits à la liste à haut
+  risque — Medicare et Medicaid comptant parmi ceux dont la croissance est la
+  plus rapide — représentant environ 80 % de l'estimation gouvernementale pour
   l'exercice 2023 [gao-high-risk-cost-schedule-2025]. La capacité d'inspection
   constitue une contrainte déterminante en matière de surveillance alimentaire
   et pharmaceutique : la Food and Drug Administration a mené en moyenne 917
@@ -3831,31 +4083,6 @@ sources: |-
       "volatility": "High"
     },
     {
-      "id": "cbo-demographic-outlook-2026",
-      "name": "The Demographic Outlook: 2026 to 2056",
-      "nameFr": "The Demographic Outlook: 2026 to 2056",
-      "url": "https://www.cbo.gov/publication/61879",
-      "desc": "CBO's nonpartisan long-term population and demographic projections including migration, fertility, and age structure; primary nonpartisan analytic source.",
-      "descFr": "Projections démographiques non partisanes à long terme du CBO incluant migration, fécondité et structure d'âge; source analytique primaire non partisane.",
-      "publicationDate": "2026-01-06",
-      "accessDate": "2026-07-18",
-      "confidence": "High",
-      "citationType": "Fact",
-      "volatility": "Med"
-    },
-    {
-      "id": "census-popclock",
-      "name": "U.S. and World Population Clock",
-      "nameFr": "U.S. and World Population Clock",
-      "url": "https://www.census.gov/popclock/",
-      "desc": "U.S. Census Bureau's live population estimate page for the United States; primary national statistical office source, continuously updated.",
-      "descFr": "Page d'estimation en direct de la population des États-Unis par le Census Bureau; source primaire de l'office statistique national, mise à jour continue.",
-      "accessDate": "2026-07-18",
-      "confidence": "High",
-      "citationType": "Fact",
-      "volatility": "High"
-    },
-    {
       "id": "census-poprelease-2026",
       "name": "U.S. Population Growth Slows Due to Historic Decline in Net International Migration",
       "nameFr": "La croissance démographique américaine ralentit en raison d'un déclin historique de la migration nette internationale",
@@ -4068,16 +4295,144 @@ sources: |-
       "volatility": "High"
     },
     {
-      "id": "eia-emissions-outlook",
-      "name": "U.S. Energy-Related Carbon Dioxide Emissions Outlook",
-      "nameFr": "Perspectives des émissions de dioxyde de carbone liées à l'énergie aux États-Unis",
+      "id": "eia-co2-emissions-2025",
+      "name": "U.S. Energy-Related Carbon Dioxide Emissions, 2025",
+      "nameFr": "U.S. Energy-Related Carbon Dioxide Emissions, 2025",
       "url": "https://www.eia.gov/environment/emissions/carbon/",
-      "desc": "EIA's official time series and projections of U.S. energy-sector greenhouse-gas emissions; primary federal emissions-statistics source feeding transition analysis.",
-      "descFr": "Série chronologique officielle et projections de l'EIA sur les émissions de gaz à effet de serre du secteur énergétique américain; source statistique fédérale primaire.",
-      "accessDate": "2026-07-18",
+      "desc": "Energy Information Administration annual report on United States energy-related carbon dioxide emissions by sector and fuel. Primary federal source; documents the 2% rise in 2025 and the return of coal-fired generation.",
+      "descFr": "Rapport annuel de l'Energy Information Administration sur les émissions de dioxyde de carbone liées à l'énergie aux États-Unis, par secteur et par combustible. Source fédérale primaire; documente la hausse de 2 % en 2025 et le retour de la production au charbon.",
+      "publicationDate": "2026-07-01",
+      "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "High"
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "bts-freight-analysis-framework",
+      "name": "Freight Analysis Framework, Moving Goods in the United States",
+      "nameFr": "Freight Analysis Framework, Moving Goods in the United States",
+      "url": "https://data.bts.gov/stories/s/Moving-Goods-in-the-United-States/bcyt-rqmu/",
+      "desc": "Bureau of Transportation Statistics / Federal Highway Administration joint dataset estimating freight movement across the United States by all modes, commodity, and origin-destination. Primary federal source for internal goods circulation.",
+      "descFr": "Jeu de données conjoint du Bureau of Transportation Statistics et de la Federal Highway Administration estimant le transport de fret aux États-Unis par mode, produit et origine-destination. Source fédérale primaire sur la circulation intérieure des marchandises.",
+      "publicationDate": "2025-01-01",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "usda-ers-ag-trade-2026",
+      "name": "U.S. Agricultural Trade at a Glance",
+      "nameFr": "U.S. Agricultural Trade at a Glance",
+      "url": "https://www.ers.usda.gov/topics/international-markets-us-trade/us-agricultural-trade/us-agricultural-trade-at-a-glance",
+      "desc": "USDA Economic Research Service data on United States agricultural exports, imports, and trade balance. Primary federal source; documents the post-2019 shift from agricultural trade surplus to deficit.",
+      "descFr": "Données du Economic Research Service de l'USDA sur les exportations, importations et la balance commerciale agricoles des États-Unis. Source fédérale primaire; documente le passage, après 2019, de l'excédent au déficit commercial agricole.",
+      "publicationDate": "2026-06-30",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "fcc-broadband-map-2024",
+      "name": "National Broadband Map / Broadband Data Collection",
+      "nameFr": "National Broadband Map / Broadband Data Collection",
+      "url": "https://www.fcc.gov/news-events/blog/2025/05/20/broadband-data-collection-shows-access-high-speed-internet-services",
+      "desc": "Federal Communications Commission location-level broadband availability data as of December 2024. Primary federal source for communications-backbone reach, including rural and Tribal-lands gaps.",
+      "descFr": "Données de la Federal Communications Commission sur la disponibilité du haut débit à l'échelle des localités, au 31 décembre 2024. Source fédérale primaire sur la portée de l'infrastructure de communication, y compris les lacunes en zones rurales et sur les terres tribales.",
+      "publicationDate": "2025-05-20",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "epa-dwinsa-2023",
+      "name": "7th Drinking Water Infrastructure Needs Survey and Assessment",
+      "nameFr": "7th Drinking Water Infrastructure Needs Survey and Assessment",
+      "url": "https://www.epa.gov/system/files/documents/2023-04/Final_FAQ_DWINSA_4.4.23.v1.pdf",
+      "desc": "Environmental Protection Agency congressionally mandated 20-year assessment of national drinking-water infrastructure investment need. Primary federal source for water-distribution system condition.",
+      "descFr": "Évaluation sur 20 ans, mandatée par le Congrès, de l'Environmental Protection Agency sur les besoins d'investissement dans l'infrastructure nationale d'eau potable. Source fédérale primaire sur l'état des réseaux de distribution d'eau.",
+      "publicationDate": "2023-09-06",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "census-median-age-2025",
+      "name": "Older Adults Outnumber Children in 11 States and Nearly Half of U.S. Counties",
+      "nameFr": "Older Adults Outnumber Children in 11 States and Nearly Half of U.S. Counties",
+      "url": "https://www.census.gov/newsroom/press-releases/2025/older-adults-outnumber-children.html",
+      "desc": "Census Bureau Vintage 2024 population estimates on age structure: record median age 39.1, the 65-and-over share, and the shrinking child-to-elder gap. Primary federal source for the ageing profile.",
+      "descFr": "Estimations de population Vintage 2024 du Census Bureau sur la structure par âge : âge médian record de 39,1 ans, part des 65 ans et plus, et rétrécissement de l'écart entre enfants et aînés. Source fédérale primaire pour le profil de vieillissement.",
+      "publicationDate": "2025-06-26",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "eo-14224-english-2025",
+      "name": "Executive Order 14224 — Designating English as the Official Language of the United States",
+      "nameFr": "Executive Order 14224 — Designating English as the Official Language of the United States",
+      "url": "https://www.govinfo.gov/content/pkg/DCPD-202500315/html/DCPD-202500315.htm",
+      "desc": "Presidential executive order of 1 March 2025 designating English the official language of the United States for the first time and revoking Executive Order 13166 on limited-English-proficiency access. Primary source (Government Publishing Office); official gazette record.",
+      "descFr": "Décret présidentiel du 1er mars 2025 désignant l'anglais langue officielle des États-Unis pour la première fois et abrogeant le décret 13166 sur l'accès des personnes à maîtrise limitée de l'anglais. Source primaire (Government Publishing Office); document officiel du journal officiel.",
+      "publicationDate": "2025-03-01",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "kff-life-expectancy-peers",
+      "name": "How Does U.S. Life Expectancy Compare to Other Countries?",
+      "nameFr": "How Does U.S. Life Expectancy Compare to Other Countries?",
+      "url": "https://www.healthsystemtracker.org/chart-collection/u-s-life-expectancy-compare-countries/",
+      "desc": "Peterson-KFF Health System Tracker comparison of United States life expectancy and per-capita health spending against peer high-income OECD countries. Documents the 3.7-year 2024 life-expectancy gap and the highest-spending / lower-outcome pattern. Non-governmental health-policy analyst; methodology transparent, peer-country set named.",
+      "descFr": "Comparaison du Peterson-KFF Health System Tracker de l'espérance de vie et des dépenses de santé par habitant des États-Unis avec les pays pairs de l'OCDE à revenu élevé. Documente l'écart d'espérance de vie de 3,7 ans en 2024 et le schéma dépenses élevées / résultats moindres. Analyste non gouvernemental en politiques de santé; méthodologie transparente, ensemble de pays pairs nommé.",
+      "publicationDate": "2026-03-31",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "pew-interpersonal-trust",
+      "name": "Americans' Trust in One Another",
+      "nameFr": "Americans' Trust in One Another",
+      "url": "https://www.pewresearch.org/2025/05/08/americans-trust-in-one-another/",
+      "desc": "Pew Research Center analysis of interpersonal (person-to-person) trust drawing on General Social Survey time series and Pew's own 2023-24 polling. Documents the long-run decline in 'most people can be trusted' and its non-partisan character. Self-report survey; methodology disclosed.",
+      "descFr": "Analyse du Pew Research Center sur la confiance interpersonnelle (de personne à personne), s'appuyant sur la série chronologique du General Social Survey et les sondages 2023-2024 de Pew. Documente le déclin de long terme de « la plupart des gens sont dignes de confiance » et son caractère non partisan. Enquête déclarative; méthodologie divulguée.",
+      "publicationDate": "2025-05-08",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "marquette-trust-2026",
+      "name": "Marquette Law School Poll: Steady Decline, by Age, in Trust in Other People",
+      "nameFr": "Marquette Law School Poll: Steady Decline, by Age, in Trust in Other People",
+      "url": "https://law.marquette.edu/poll/2026/07/07/marquette-law-school-poll-finds-a-steady-decline-by-age-in-trust-in-other-people/",
+      "desc": "Marquette Law School national poll (4,500 respondents, 2026) documenting the generational gradient in interpersonal trust: 77% of pre-1960 cohorts versus 35% of 2000s-born. University-run survey; sample and method disclosed.",
+      "descFr": "Sondage national de la Marquette Law School (4 500 répondants, 2026) documentant le gradient générationnel de la confiance interpersonnelle : 77 % des cohortes d'avant 1960 contre 35 % des personnes nées dans les années 2000. Enquête universitaire; échantillon et méthode divulgués.",
+      "publicationDate": "2026-07-07",
+      "accessDate": "2026-07-31",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
     },
     {
       "id": "fao-forest-water-usa",

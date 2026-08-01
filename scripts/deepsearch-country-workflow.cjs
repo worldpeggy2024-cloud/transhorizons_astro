@@ -238,6 +238,23 @@ function peerOfSource(id, name) {
 // validate-country-citations.cjs). Legacy fields (economy.macroReality etc.)
 // are absent under the new names and skip — existing countries stay valid.
 const { OPENER_FIELDS, openerProblem } = require('./lib/openers.cjs');
+const { pointerProblems } = require('./lib/pointers.cjs');
+const { FIELDS: FIELD_ELEMENTS } = require('./lib/field-elements.cjs');
+
+// Render the element registry (scripts/lib/field-elements.cjs) into prompt text.
+// ONE source of truth feeds the Pass A harvest checklist, the Pass B coverage-map
+// contract, and the apply-gate coverage check.
+function passAElementChecklist() {
+  return FIELD_ELEMENTS.map((f) => `- ${f.key}: ${f.elements.map((e) => e.label).join('; ')}`).join('\n');
+}
+function passBElementList() {
+  return FIELD_ELEMENTS.map((f) => {
+    const ids = f.elements.map((e) => e.id).join(', ');
+    return f.gate === false
+      ? `- ${f.key} [anchored synthesis — cover in prose; NO coverage-map entry required]: ${ids}`
+      : `- ${f.key}: ${ids}`;
+  }).join('\n');
+}
 
 // Situation threads (template §4d): shape checks for the verified event layer.
 // ARRAY ORDER IS SEMANTIC (threads by recency of last activity, events
@@ -275,7 +292,7 @@ function validateSituationThreads(str, label, errors, warnings, isUSA) {
   }
 }
 
-function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, passNotesEventIds = null) {
+function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, passNotesEventIds = null, opts = {}) {
   const errors = [];
   const warnings = [];
 
@@ -403,6 +420,28 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
     }
   }
 
+  // Pointers are not content — HARD ERRORS at the apply gate (the strengthened
+  // prompt tells Pass B not to write them; this catches the slips and loops the
+  // single field before it reaches review). A starving pointer cites a source
+  // only to name who holds the data, reports no figure, and that source is
+  // figure-absent in its field. Shared detector: scripts/lib/pointers.cjs.
+  for (const peer of ['territory', 'society', 'economy', 'political', 'capacity', 'security']) {
+    const peerNode = content?.[peer];
+    if (!peerNode || typeof peerNode !== 'object') continue;
+    for (const [fieldName, node] of Object.entries(peerNode)) {
+      if (fieldName === 'knownAndUnbuilt' || !node || typeof node !== 'object') continue; // JSON-in-text register, not prose
+      for (const lang of ['en', 'fr']) {
+        const v = node[lang];
+        if (typeof v !== 'string' || !v.trim()) continue;
+        for (const p of pointerProblems(v)) {
+          errors.push(
+            `${peer}.${fieldName}.${lang}: POINTER (no figure) — cites ${p.starvingIds.join(', ')} to name a data-holder but reports no figure from it: "${p.sentence.slice(0, 90)}…". Report the figure with its year, or enter the loop.`
+          );
+        }
+      }
+    }
+  }
+
   // Situation: held in the schema, populated by the DEDICATED situation pass —
   // never by Pass B (template §4d). At apply it must be EMPTY (pass pending) or
   // already-verified thread JSON; prose is rejected (a generated draft is a
@@ -469,6 +508,7 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
   }
 
 
+  const usedIds = new Set();
   collectCitationIds(content, usedIds);
   // Accepted-to-cite = Pass A sources PLUS calibration-promoted instruments.
   const accepted = new Set([...sourceIds, ...(acceptedExtraIds instanceof Set ? acceptedExtraIds : [])]);
@@ -506,6 +546,52 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
     for (const peer of PEER_ORDER) {
       const list = orphansByPeer[peer];
       if (list && list.length) warnings.push(`  ${peer} (${list.length}): ${list.join(', ')}`);
+    }
+  }
+
+  // COVERAGE-MAP GATE (HARD) — the deterministic completeness check. Pass B emits
+  // a top-level `coverage` object (validated here, discarded by buildYaml). For every
+  // gated field, every declared element (scripts/lib/field-elements.cjs) must be
+  // mapped to either {source} — a source-id actually cited in that field's prose —
+  // or {na: reason}. An unmapped or wrongly-mapped element fails the field, which is
+  // the designed trigger for a targeted Pass A top-up. This is what makes a missing
+  // credit rating a minute-one failure instead of a week-three discovery. The
+  // anchored-synthesis fields (gate:false) carry no new sources and are exempt.
+  // `--skip-coverage` (opts.skipCoverage) is the escape for pre-contract re-applies.
+  if (!opts.skipCoverage) {
+    const acceptedIds = new Set([...(sourceIds || []), ...(acceptedExtraIds || [])]);
+    const cov = content && content.coverage;
+    if (!cov || typeof cov !== 'object') {
+      errors.push('coverage map missing — Pass B must emit a top-level "coverage" object mapping each field\'s elements to {source} or {na} (see the coverage-map contract). Use --skip-coverage only for pre-contract re-applies.');
+    } else {
+      for (const f of FIELD_ELEMENTS) {
+        if (f.gate === false) continue;
+        const [peer, field] = f.key.split('.');
+        const enText = String(content?.[peer]?.[field]?.en ?? '');
+        if (!enText.trim()) continue; // empty field already failed the completeness check
+        const fieldCov = cov[f.key];
+        if (!fieldCov || typeof fieldCov !== 'object') {
+          errors.push(`coverage[${f.key}] missing — map each element to {source:"<id cited here>"} or {na:"<reason>"}`);
+          continue;
+        }
+        for (const el of f.elements) {
+          const entry = fieldCov[el.id];
+          if (!entry || typeof entry !== 'object') {
+            errors.push(`coverage[${f.key}].${el.id} missing — {source:"<id cited here>"} or {na:"<reason>"} (${el.label})`);
+          } else if (typeof entry.na === 'string' && entry.na.trim()) {
+            /* N/A with a reason — accepted */
+          } else if (typeof entry.source === 'string' && entry.source.trim()) {
+            const sid = entry.source.trim();
+            if (!acceptedIds.has(sid)) {
+              errors.push(`coverage[${f.key}].${el.id} cites [${sid}] — not in Pass A sources or calibration instruments`);
+            } else if (!enText.includes('[' + sid + ']')) {
+              errors.push(`coverage[${f.key}].${el.id} maps to [${sid}] but that source is not cited in ${f.key}.en — the discharging sentence must be IN the field`);
+            }
+          } else {
+            errors.push(`coverage[${f.key}].${el.id} must be {source:"<id>"} or {na:"<reason>"}`);
+          }
+        }
+      }
     }
   }
 
@@ -1076,6 +1162,7 @@ Source priority rules:
 - Recent events of fact: national news outlets ONLY for events verified as fact in the last 90 days
 - Do NOT cite Wikipedia, homepages, aggregators, or blogs
 - Deep links only — the specific document or data page, not a site homepage
+- The URL is a separate verification object from the fact — a verified figure does NOT verify its link (confidence in the number, even from several independent pages, is not confidence in the specific URL). Rule for THIS sourcing pass: NEVER construct, complete, or guess a URL to fit a known fact — cite ONLY a link you actually retrieved, and where you cannot retrieve or confirm a page, FLAG it rather than emit a plausible-looking link. A search-only tool that cannot open an arbitrary URL must SAY SO for that source, not fabricate one. Opening every link to confirm it RESOLVES to the exact document cited is then the acceptance step — a human or a fetch-capable tool does it before the URL enters the block. The constructed link that merely looks right, including one lifted from a search-result snippet, is the failure mode.
 
 The sources you collect must be sufficient to support ALL of the following content fields in Pass B
 (33 fields, six peers — there is NO executive snapshot; the BASELINE and the scorecard are composed by
@@ -1128,6 +1215,10 @@ SECURITY & DIPLOMACY (posture composed last; internal → military → transnati
 
 situation (the event layer) — populated by its own dedicated pass; its sources come from the Pass Zero-B event scan (the Events block above), NOT the institutional source-priority list: a primary or authoritative source for EACH event. actors are ALSO populated by a dedicated pass AFTER the report exists — do not harvest for them separately; they cite the report's own registry.
 
+PER-ELEMENT HARVEST (this is the checklist the Pass B coverage gate enforces — harvest a source for EACH element below, not one per field; a field naming five elements is not covered by one source):
+${passAElementChecklist()}
+An element with no source is a HOLE, not a rounding error: Pass B can cite only what you harvested, so an unharvested element forces Pass B to declare it unmet and the apply gate bounces the field back for a targeted top-up — slower than harvesting it now. Where an element is genuinely inapplicable to this country (no sovereign external debt, no nuclear force, no IMF program), do NOT hunt for a nonexistent source — name it in a gaps note at the end so Pass B can mark it N/A with that reason. (The two anchored-synthesis fields, capacity.inheritedTerrain and security.posture, need no sources of their own.)
+
 Aim for 30–45 sources total. Ensure ≥ 70% of sources per section are citationType: Fact (primary authors of the data), not Interpretation. Give every source a volatility rating (High | Med | Low — the expected rate of change of the fact it backs, orthogonal to confidence).
 `;
 
@@ -1149,13 +1240,15 @@ Hard rules:
 - EN and FR fields must be synchronized in substance (same facts, same depth). FR may adapt phrasing naturally.
 - COMPLETENESS: every one of the 33 narrative fields is REQUIRED and NON-EMPTY, in BOTH languages — the apply gate rejects an empty field outright, and an incomplete JSON is sent back whole. Thin means SHORT (an honest one-line field), never EMPTY. Do not leave a field blank because the figures were not already at hand: Pass A harvested sources for every field family — consult the approved list below and write each field from it. If, after consulting the sources, a field genuinely cannot be supported, still write its honest one-line finding and name the sourcing gap in a note AFTER the JSON (outside it) so Pass A can be extended. KNOW THE LOOP: a field whose one-liner carries NO citation at all will still fail the apply gate's required-citation check — that failure is the designed trigger for a targeted Pass A extension, after which only that field is rewritten citing the new sources. Never fabricate a citation to pass the gate.
 - situation, actors.domestic, actors.external, capacity.knownAndUnbuilt (the gap register), the scorecard (values AND anchors), and baseline are the ONLY empty emissions (empty strings / arrays / objects, both languages) — each is populated afterward by its own dedicated pass working from this finished report (situation pass; actors pass; derivatives pass for scorecard + baseline + gap register). Do not fold their content into the peer sections to compensate.
+- COVERAGE MAP (emit alongside the content as a top-level "coverage" object — it is validated at the apply gate, then discarded, never written into the report): for EVERY field below except the two anchored-syntheses (capacity.inheritedTerrain, security.posture), map EACH of that field's element ids to ONE of — {"source": "<a source-id you actually cite in THAT field's prose>"}, meaning the element is discharged by a cited sentence there; OR {"na": "<one-line reason this element is genuinely inapplicable to this country>"}. An element left unmapped, or mapped to a source that is not cited in that field, FAILS the gate and bounces the field back for a targeted Pass A top-up. This is the mechanism that turns a missing element — a credit rating, a monetary stance — into a minute-one gate failure instead of a week-three discovery, and it is why an element Pass A could not source must be declared {"na": …}, never silently dropped. The element ids to map, per field:
+${passBElementList()}
 - ANTI-PADDING: no per-section word caps; never pad a thin section to match a rich one. Every sentence after an opener carries a [source-id] or is cut — no restatement, no meta-commentary, no connective throat-clearing. Thinness is a finding: a country with negligible endowment on a dimension gets an honest one-line field, never an empty field, never a padded paragraph.
 - NAMED-ACTOR RULE: a claim about a network, sector, or elite NAMES its principal members, cited — alliances have member states, sectors have producers, elites have firms, organised labour has federations. A nameless collective ("a global alliance network", "the business elite") is an under-sourced claim: enter the loop (targeted Pass A top-up, then a single-field rewrite) — never publish the abstraction.
-- POINTERS ARE NOT CONTENT: citing a tracker, dataset, or dashboard without reporting a figure from it (with its year) is a gap wearing a citation — "unrest is tracked by X [x]" covers nothing and starves the derivative layers downstream. Report the figure, or enter the loop.
+- POINTERS ARE NOT CONTENT: citing ANY source — tracker, dataset, dashboard, official report, statistical series, or projection — for merely HOLDING or PRODUCING data, without reporting a figure from it (with its year), is a gap wearing a citation. The tell is a pointer verb with no number: "unrest is tracked by X [x]", "an ageing population documented by the CBO [x]", "statistics are compiled / reported / maintained / published / assessed / estimated by X [x]" — each names a who and reports nothing, and starves the derivative layers downstream. This is NOT limited to trackers and dashboards: an authoritative report cited without the figure it contains is the same violation. Where a REQUIRED element (e.g. society.demographics' age structure — median age, ageing reality) is discharged by such a pointer, the element is UNMET. Report the figure with its year, or enter the loop — never close a field on a "documented by X" sentence.
 - ANCHORS: capacity.inheritedTerrain and security.posture are ANCHORED SYNTHESES — they introduce no new sourced facts and point at the fields they stand on with [dot.path] markers (e.g. [territory.climate], [security.military]); capacity.steering is Interpretation anchored to the observable record and may combine [source-id] citations with [dot.path] anchors. An anchor must target a NON-EMPTY field composed before it (inheritedTerrain → territory./society./economy. only; posture → the other four security fields only); an anchor to an empty field is rejected at the apply gate, same class as a ghost citation. baseline carries NO anchors.
 - Acronyms: the first mention of any acronym or initialism — no exceptions — spells the term in full, followed by the abbreviation in parentheses on that first mention only; all subsequent mentions in the same report may use the short form. This applies to every acronym without carve-outs: universal ones (GDP, UN, EU), sectoral ones (LULUCF, RCP, FPIC), organizational ones (IMF, OECD, NATO, WHO), country-specific ones (RCMP, NRCan, StatCan, PBO), and any others. The report is written for a reader who does not work in the sector, and the extra half-line per acronym on first mention is a discipline, not a compromise. ISO-3166 alpha-3 country codes used as internal identifiers (CAN, USA, DEU) are structural markers, not acronyms in prose, and are exempt when they appear as data-field identifiers; when such a code appears in reader-facing prose, spell it: "Canada," not "CAN."
 - Source titles: cite every source exactly as the approved Pass A list titles it — never retitle a source into the reader's language. A source's title is a proper name in its own official language(s) as published; where Pass A supplies an original-language title with a translation in the source's desc, keep the original title and do NOT substitute the translation.
-- OPENERS (hard requirement — a field whose opener is missing is REJECTED at the apply gate and sent back for regeneration; the standalone validator flags it too). NINE fields MUST begin with a situator that does three jobs IN ORDER: (1) STATE the country's shape on this dimension in one sentence — orientation, not history; (2) SIGNAL salience AND direction — how central this dimension is to this country and which way it is moving; (3) DECLARE DEPTH — either "detail follows" or an honest one-line close where the country has little here. Job 3 is written ONLY when the answer is "little here": where the dimension carries depth, job 3 is discharged by the body itself — the detail follows, so the opener does not announce that it does, and a literal "detail follows" is meta-commentary and is cut. Job 3 produces visible words only in the thin case, where it is the honest one-line close and the field ends there. Length: one to three sentences. Where the dimension is thin, all three jobs collapse into a single sentence — the normal case for a thin field, not a failure. Where the dimension is central to the country, two or three. Never a paragraph: the opener orients, the body carries the load. Write the situator FIRST; do not lead with detail and append it later. The nine, and what each opener establishes first:
+- OPENERS (hard requirement — a field whose opener is missing is REJECTED at the apply gate and sent back for regeneration; the standalone validator flags it too). NINE fields MUST begin with a situator that does three jobs IN ORDER: (1) STATE the country's shape on this dimension in one sentence — orientation, not history; (2) SIGNAL salience AND direction — how central this dimension is to this country and which way it is moving; (3) DECLARE DEPTH — where the country has little on this dimension, close it honestly in one line and end the field there; where the dimension carries depth, job 3 is discharged by the body itself and produces NO visible words. NEVER write a transition that announces more is coming — no "detail follows", no "detail below", no "as follows", no dash-then-promise of elaboration. Any such phrase is meta-commentary and is always cut. Job 3 produces visible words ONLY in the thin case, where it is the honest one-line close and the field ends there. Length: one to three sentences. Where the dimension is thin, all three jobs collapse into a single sentence — the normal case for a thin field, not a failure. Where the dimension is central to the country, two or three. Never a paragraph: the opener orients, the body carries the load. Write the situator FIRST; do not lead with detail and append it later. The nine, and what each opener establishes first:
     - territory.geography — the country as a whole (landlocked / coastal / island / archipelago / continent / peninsula; terrain; who the neighbours are); this is the territory peer's opener.
     - territory.climate — the baseline climate type (cold / hot / temperate / tropical / arid; altitude; uniform or regional) BEFORE any warming, exposure, or hazard.
     - society.demographics — the very short historical framing (indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed).
@@ -1207,7 +1300,7 @@ territory.biosphere: the biological and renewable base — forests, freshwater, 
 
 territory.climate: OPENER (required): establish the baseline climate type (cold / hot / temperate / tropical / arid; high altitude; uniform or dramatically regional) before any warming, exposure, or hazard content. Warming is a change; a change needs a baseline. Then: observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically. Every projection carries its emissions scenario AND horizon. Physical science only. PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence.
 
-territory.metabolism: first line signals scope (energy, food, water, movement, information). Then: how the country physically runs and circulates AS A SYSTEM — energy, food and water flows; movement of goods and people within the country; the physical communications backbone; self-sufficiency vs dependence in each, and the networks that carry them (absorbs energy + transport + communications, plus the connectivity networks removed from geography). Boundaries: circulation WITHIN the country, not export logistics (ECONOMY); physical comms infrastructure, not the media ecosystem (SOCIETY); throughput, not balance-sheet.
+territory.metabolism: how the country physically runs and circulates AS A SYSTEM — energy, food and water flows; movement of goods and people within the country; the physical communications backbone; self-sufficiency vs dependence in each (each such claim cited, never asserted bare), and the networks that carry them (absorbs energy + transport + communications, plus the connectivity networks removed from geography). Open directly on the substance: do NOT prefix the field with a scope label ("Scope: …") or a list of the topics to come — that is meta-commentary and is cut. Boundaries: circulation WITHIN the country, not export logistics (ECONOMY); physical comms infrastructure, not the media ecosystem (SOCIETY); throughput, not balance-sheet.
 
 territory.transition: the country's position in decarbonization — energy mix, emissions profile and TRAJECTORY, pledged targets measured against DELIVERED policy. A target is not an outcome; report the actual path against the pledge and name the gap. Climate Action Tracker as the PRIMARY pledge-vs-policy instrument.
 
@@ -1347,6 +1440,19 @@ Approved source IDs from Pass A:
     actors: {
       domestic: { en: [], fr: [] },
       external: { en: [], fr: [] },
+    },
+    // Coverage map (validated at apply, then discarded — never written to the
+    // report). One entry per element id for EVERY gated field (see the Pass B
+    // coverage-map contract). {source} = a source-id cited in that field's prose;
+    // {na} = why the element is inapplicable. publicFinances shown as the shape.
+    coverage: {
+      'economy.publicFinances': {
+        budgetBalance: { source: 'source-id-cited-in-this-field' },
+        publicDebt: { source: 'source-id-cited-in-this-field' },
+        monetaryStance: { source: 'source-id-cited-in-this-field' },
+        inflation: { source: 'source-id-cited-in-this-field' },
+        creditRating: { na: 'reason, if this element is genuinely inapplicable' },
+      },
     },
   };
 
@@ -1699,7 +1805,7 @@ function applyCommand(iso3, opts) {
     }
   } catch (err) { /* unreadable output file → citation heuristic applies */ }
 
-  const contentCheck = validateContent(content, sourcesCheck.ids, promotedIds, eventIds, code === 'USA', passNotesEventIds);
+  const contentCheck = validateContent(content, sourcesCheck.ids, promotedIds, eventIds, code === 'USA', passNotesEventIds, { skipCoverage: !!opts['skip-coverage'] });
   if (passNotesEventIds && eventIds.size > 0) {
     const missing = [...eventIds].filter((id) => !passNotesEventIds.has(id));
     if (missing.length) {
@@ -1737,7 +1843,13 @@ function applyCommand(iso3, opts) {
   });
   if (repair.status !== 0) process.exit(repair.status || 1);
 
-  const validate = spawnSync('node', ['scripts/validate-country-citations.cjs', analysisPath], {
+  // Pre-handback validation. --check-urls is ON by default here (apply is the
+  // point the report is committed as done): every source URL is fetched and dead/
+  // constructed links flagged. Offline runs degrade gracefully (see the validator's
+  // offline guard). Opt out with --skip-url-check for a deliberately offline apply.
+  const validateArgs = ['scripts/validate-country-citations.cjs', analysisPath];
+  if (!opts['skip-url-check']) validateArgs.push('--check-urls');
+  const validate = spawnSync('node', validateArgs, {
     cwd: process.cwd(),
     stdio: 'inherit',
   });
@@ -1798,9 +1910,16 @@ function main() {
   throw new Error(`Unknown command: ${cmd}`);
 }
 
-try {
-  main();
-} catch (err) {
-  console.error(err.message || err);
-  process.exit(1);
+if (require.main === module) {
+  try {
+    main();
+  } catch (err) {
+    console.error(err.message || err);
+    process.exit(1);
+  }
 }
+
+// Exported for unit tests (the gate is load-bearing; a false failure would block
+// all future generation). CLI behaviour is unchanged — main() runs only when the
+// file is invoked directly.
+module.exports = { validateContent, buildYaml };
