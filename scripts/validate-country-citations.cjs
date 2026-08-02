@@ -216,6 +216,17 @@ function validateCountryFile(filePath) {
     // absent). Warn — don't fail — so untranslated sources surface in the audit.
     if (typeof s?.nameFr !== 'string' || !s.nameFr.trim()) {
       warnings.push(`Source ${key}: missing French name (nameFr; FR page falls back to English)`);
+    } else if (s.nameFr !== s.name) {
+      // A French-looking nameFr that differs from an English name is EITHER a
+      // genuinely bilingual source's real French title OR an invented translation
+      // (template §11 forbids inventing a title in a language the source does not
+      // publish in). No check can tell them apart — surface it for a quick look so
+      // fabricated titles do not have to be hunted by hand (the Canada lesson).
+      const frCue = /[éèêâçîïôûùœ]|«|\b(du|des|de|la|les|par|dans|sur|aux|selon)\b/i;
+      const enCue = /\b(the|of|and|for|by|report|act|survey|statistics|department|bureau|office|index|data|list|outlook|situation|amendment|opinions?|holders?|members?|effects?)\b/i;
+      if (frCue.test(s.nameFr) && enCue.test(s.name)) {
+        warnings.push(`Source ${key}: nameFr differs from an English name — confirm the source really publishes this French title (bilingual body). If it is a translation, set nameFr = name and move the translation to descFr (template §11).`);
+      }
     }
     if (typeof s?.descFr !== 'string' || !s.descFr.trim()) {
       warnings.push(`Source ${key}: missing French description (descFr; FR page falls back to English)`);

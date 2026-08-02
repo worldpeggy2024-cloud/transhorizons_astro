@@ -1,7 +1,9 @@
 /*
- * Field element registry — the single machine-readable source of truth for
- * "what each field must cover", extracted from the template's SECTIONS REQUIRED
- * lists (content/docs/country-report-present-state-template.md). Used by:
+ * Field element registry — the single machine-readable SOURCE OF TRUTH for
+ * "what each field must cover". The template's SECTIONS REQUIRED prose
+ * (content/docs/country-report-present-state-template.md) and the review checklist
+ * (content/docs/country-report-review-checklist.md) are human MIRRORS of this file:
+ * change the element set HERE first, then reflect it in those two. Used by:
  *   - the generator (deepsearch-country-workflow.cjs): injects the per-field
  *     element list into Pass A (harvest a source per element) and Pass B (cover
  *     each element + emit a coverage map), and gates the coverage map at apply;

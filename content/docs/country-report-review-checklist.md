@@ -1,6 +1,8 @@
 # Country report — field review checklist
 
-**Run this BEFORE reading the prose.** For each field, tick the required elements first — two minutes per field front-loads discovery instead of surfacing a missing element mid-rewrite. Elements are extracted from the template's SECTIONS REQUIRED lists (`country-report-present-state-template.md` §"SECTIONS REQUIRED"); this is the checklist form of the same contract.
+**Run this BEFORE reading the prose.** For each field, tick the required elements first — two minutes per field front-loads discovery instead of surfacing a missing element mid-rewrite. This is the checklist form of the same contract.
+
+> **Source of truth:** the machine-enforced element list is [`scripts/lib/field-elements.cjs`](../../scripts/lib/field-elements.cjs) — the apply-gate coverage check obeys it. This checklist and the template's SECTIONS REQUIRED prose are human MIRRORS of it. All three must stay consistent; if they diverge, `field-elements.cjs` wins, and any intended change is made THERE first, then reflected here and in the template.
 
 **Legend:**
 - ⚙ — an **element-coverage validator flag** exists for this field (`scripts/lib/coverage.cjs`): run `node scripts/validate-country-citations.cjs <file>` and it will warn if a keyword-detectable element is absent. The validator catches the *whole-element omission*; you still confirm the element is real, not just keyword-present.

@@ -60,8 +60,7 @@ scorecard_anchors: |-
         "society.cohesion",
         "situation",
         "acled-usa",
-        "bls-union-members-2025",
-        "epi-unionization-increase-2025"
+        "bls-union-members-2025"
       ],
       "rationale_en": "The report carries no measure of demonstrated mobilisation — the tracker of political violence and unrest is named without figures — so the value rests on indirect signals only: a reported rise in unionisation in 2025 and a killing by border agents that fed into the longest funding lapse of a single federal department on record.",
       "rationale_fr": "Le rapport ne contient aucune mesure de mobilisation démontrée — l'organisme qui suit la violence politique et les troubles est nommé sans aucun chiffre —, de sorte que la valeur repose uniquement sur des signaux indirects : une hausse rapportée de la syndicalisation en 2025 et la mort d'un homme tué par des agents frontaliers, qui a alimenté la plus longue paralysie d'un seul ministère fédéral jamais enregistrée."
@@ -381,8 +380,8 @@ territory_climate_fr: >-
 
 
   Le réchauffement observé est plus rapide que la moyenne mondiale : les
-  températures ont augmenté de 1.4 °C dans les États-Unis contigus et de 2.3 °C en
-  Alaska depuis 1970, contre environ 0.9 °C à l'échelle mondiale sur la même
+  températures ont augmenté de 1.4 °C dans les États-Unis contigus et de 2.3 °C
+  en Alaska depuis 1970, contre environ 0.9 °C à l'échelle mondiale sur la même
   période; les États-Unis continentaux, Alaska compris, se réchauffant environ
   60 % plus vite que la planète dans son ensemble
   [nca5-fifth-national-climate-assessment]. Les précipitations ont divergé selon
@@ -426,8 +425,8 @@ territory_climate_fr: >-
   réchauffement (de 10 à 30 cm [4 à 12 po] dans le Nord-Ouest pacifique, mais de
   50 à 70 cm [20 à 27 po] dans l'ouest du golfe du Mexique; à un niveau de
   réchauffement de 2 °C, de 0,6 à 0,9 m [2 à 3 pieds] d'ici 2100 et de 0,8 à 1,5
-  m [2,5 à 5 pi] d'ici 2150; des hausses de 0,9 à 1,8 m [3 à 6 pi] d'ici 2100
-  et de 1,5 à 3,7 [5 à 12 pi] d'ici 2150 ne peuvent être exclues
+  m [2,5 à 5 pi] d'ici 2150; des hausses de 0,9 à 1,8 m [3 à 6 pi] d'ici 2100 et
+  de 1,5 à 3,7 [5 à 12 pi] d'ici 2150 ne peuvent être exclues
   [nca5-fifth-national-climate-assessment]. Les inondations côtières aujourd'hui
   dommageables deviendront, selon les projections, plus de dix fois plus
   fréquentes au cours des 30 prochaines années
@@ -556,8 +555,8 @@ territory_transition_en: >-
   — roughly 600–800 million tonnes of carbon dioxide equivalent higher in 2030
   [climateactiontracker-usa]. The delivered path is already turning the wrong
   way: after two decades of decline that left emissions about 20% below 2005
-  levels, energy-related carbon dioxide emissions rose 2% in 2025 — about 115
-  million tonnes — increasing across every sector, driven largely by a 13% rise
+  levels, energy-related carbon dioxide emissions rose 2% in 2025 (about 115
+  million tonnes) increasing across every sector, driven largely by a 13% rise
   in coal-fired electricity generation [eia-co2-emissions-2025].
 territory_transition_fr: >-
   Les États-Unis présentent un écart croissant entre leurs engagements
@@ -1009,11 +1008,13 @@ economy_publicFinances_fr: >-
   La politique monétaire est restrictive et l'inflation dépasse la cible : le
   Comité fédéral de l'open market a maintenu en juillet 2026 la fourchette cible
   du taux des fonds fédéraux à 3,50-3,75 %, jugeant l'inflation encore élevée
-  par rapport à sa cible de 2 % et l'attribuant en partie à des chocs d'offre
-  ayant fait monter les prix dans certains secteurs, dont l'énergie
-  [fomc-statement-july-2026]. L'indice des prix à la consommation (IPC) a
-  progressé de 3,5 % sur les douze mois clos en juin 2026; l'indice hors
-  alimentation et énergie augmentant de 2,6 % et celui de l'énergie, de 15,7 %
+  par rapport à sa cible de 2 % (que le Comité mesure sur l'indice des dépenses
+  de consommation personnelle [personal consumption expenditures, PCE]),
+  distinct de l'indice des prix à la consommation [IPC]) et l'attribuant en
+  partie à des chocs d'offre ayant fait monter les prix dans certains secteurs,
+  dont l'énergie [fomc-statement-july-2026]. Sur l'IPC, les prix ont progressé
+  de 3,5 % sur les douze mois clos en juin 2026; l'indice hors alimentation et
+  énergie augmentant de 2,6 % et celui de l'énergie, de 15,7 %
   [bls-cpi-june2026]. 
 
   Le pays ne détient plus la note maximale d'aucune des agences ayant publié une
@@ -1023,102 +1024,349 @@ economy_publicFinances_fr: >-
   assortie d'une perspective stable fondée sur la résilience de l'économie et
   sur des déficits qu'elle juge élevés, mais non croissants [sp-us-rating-2025].
 economy_externalVulnerability_en: >-
-  The United States runs a persistent trade deficit and finances it in part
-  through foreign purchases of its sovereign debt. Foreign holdings of Treasury
-  securities totalled roughly $9.2 trillion as of December 2025, about 31% of
-  total federal debt [treasury-tic-debt-holders]. The largest holders as of
-  February 2026 were Japan ($1.24 trillion), the United Kingdom ($897 billion)
-  and mainland China ($693.3 billion) [treasury-tic-debt-holders]. China's
-  holdings have declined over the decade, reflecting geopolitical
-  diversification [treasury-tic-debt-holders]. The country is highly exposed on
-  critical-mineral supply: it was 100% net import reliant on 16 nonfuel mineral
-  commodities in 2025, with China the primary source for 14 of the most
-  import-dependent critical minerals [usgs-mcs-2026]. As the issuer of the
-  principal global reserve currency, the United States faces no sovereign
-  external financing constraint of the kind facing smaller economies
-  [treasury-tic-debt-holders].
+  The United States runs a large and persistent deficit in goods, partly offset
+  by a services surplus, and finances the gap by borrowing abroad on terms no
+  other borrower obtains. Exports of goods and services were $3,432.3 billion in
+  2025 against imports of $4,333.8 billion, a deficit of $901.5 billion — $2.1
+  billion narrower than 2024, but composed of a goods deficit that widened $25.5
+  billion to $1,240.9 billion and a services surplus that grew 8.9% to $339.5
+  billion [bea-census-trade-annual-2025]. The composition is asymmetric: goods
+  imports rose $143.2 billion, led by capital goods at $165.9 billion, within
+  which computers rose $101.4 billion, computer accessories $42.7 billion and
+  telecommunications equipment $30.3 billion, while services exports rose $82.1
+  billion, led by other business services, charges for the use of intellectual
+  property, and financial services [bea-census-trade-annual-2025]. Goods-partner
+  concentration is broad rather than narrow, and it shifted sharply in 2025: the
+  largest bilateral goods deficits were with the European Union ($218.8
+  billion), mainland China ($202.1 billion), Mexico ($196.9 billion), Vietnam
+  ($178.2 billion) and Taiwan ($146.8 billion), against surpluses with the
+  Netherlands ($60.7 billion), South and Central America ($52.4 billion) and the
+  United Kingdom ($32.2 billion) [bea-census-trade-annual-2025]. The deficit
+  with China fell $93.4 billion as imports from China dropped $130.4 billion to
+  $308.4 billion, while the deficits with Taiwan and Vietnam rose $73.0 billion
+  and $54.7 billion [bea-census-trade-annual-2025]. Measured at end-2025 rather
+  than as a full-year average, China's share of United States goods imports had
+  fallen to 7.7% from 13.2% in 2024, which the International Monetary Fund reads
+  as substitution across suppliers rather than a reduction in import demand
+  [imf-art-iv-usa-2026].
+
+
+  Energy and food run in opposite directions. Total energy exports reached a
+  record 31 quadrillion British thermal units (quads) in 2025 against imports of
+  21 quads, giving record net exports of 11 quads, 20% above the previous
+  record; petroleum supplied 63% of exports and natural gas a record 9 quads, or
+  29% [eia-energy-trade-2025]. Petroleum is simultaneously the largest single
+  import at 83% of the total, and natural gas imports from Canada remain
+  important for balancing seasonal demand [eia-energy-trade-2025]. Agriculture
+  has reversed within five years: fiscal 2021 and fiscal 2022 closed in surplus
+  ($8.5 billion and $1.9 billion), followed by deficits of $17.3 billion in
+  fiscal 2023, $31.9 billion in fiscal 2024 and $43.7 billion in fiscal 2025,
+  when exports of $175.6 billion met imports of $219.4 billion; the fiscal 2026
+  deficit is forecast at $29.0 billion [usda-aes-136].
+
+
+  Foreign holdings of federal debt totalled approximately $9.2 trillion in
+  December 2025, equal to 31% of publicly held debt of $30.1 trillion — a share
+  down from 34% in December 2021 because total debt grew faster than foreign
+  holdings [crs-rs22331-foreign-holdings]. Governmental sources hold 41.9% of
+  that ($3.9 trillion) and private investors 58.1% ($5.4 trillion)
+  [crs-rs22331-foreign-holdings]. The largest country holdings in December 2025
+  were Japan at $1,185.5 billion (12.8% of foreign holdings), the United Kingdom
+  at $866.0 billion (9.3%) and mainland China at $683.5 billion (7.4%)
+  [treasury-tic-debt-holders]. China's holdings have fallen in both nominal
+  terms and share, from 13.4% of all foreign holdings in December 2021
+  [crs-rs22331-foreign-holdings]. Country attribution is weaker than it appears:
+  the Treasury records the location of a holding, not the nationality of its
+  holder, so securities held for third-country clients in Belgium, Luxembourg,
+  the Cayman Islands or Switzerland are attributed to those jurisdictions
+  [crs-rs22331-foreign-holdings].
+
+
+  The reserve-currency position removes the financing constraint smaller
+  economies face, but not the accumulating claim. The current-account deficit
+  was 3.7% of gross domestic product (GDP) in 2025, against roughly 2% in
+  2013–19, and the net international investment position now exceeds −80% of
+  GDP, widened by government external borrowing and by non-resident inflows into
+  United States equities and corporate debt [imf-art-iv-usa-2026]. The
+  composition of that funding has shifted from official-sector holders toward
+  non-bank private investors whose behaviour is more price- and risk-sensitive,
+  which the International Monetary Fund (IMF) names as the principal external
+  vulnerability: an abrupt shift in portfolio preferences could force a
+  disorderly rebalancing [imf-art-iv-usa-2026]. The Fund judged the 2025
+  external position moderately weaker than medium-term fundamentals and
+  appropriate policies imply, attributing the misalignment largely to the
+  chronic federal deficit, which weakens the current account and appreciates the
+  dollar — the external finding restates the fiscal one rather than adding a
+  second [imf-art-iv-usa-2026]. The country holds no IMF program; the Fund's
+  engagement is annual Article IV surveillance, last concluded on 1 April 2026
+  [imf-art-iv-usa-2026]. On physical supply the exposure inverts: the country
+  was 100% net import reliant on 16 nonfuel mineral commodities in 2025, with
+  China the primary source for 14 of the most import-dependent critical minerals
+  [usgs-mcs-2026].
 economy_externalVulnerability_fr: >-
-  Les États-Unis accusent un déficit commercial persistant qu'ils financent en
-  partie par les achats étrangers de leur dette souveraine. Les avoirs étrangers
-  en bons du Trésor s'élevaient à environ 9 200 milliards de dollars fin
-  décembre 2025, soit environ 31 % de la dette fédérale totale
-  [treasury-tic-debt-holders]. Les principaux détenteurs, en février 2026,
-  étaient le Japon (1 240 milliards de dollars), le Royaume-Uni (897 milliards)
-  et la Chine continentale (693,3 milliards) [treasury-tic-debt-holders]. Les
-  avoirs chinois ont diminué au cours de la décennie, signe d'une
-  diversification géopolitique [treasury-tic-debt-holders]. Le pays est très
-  exposé sur l'approvisionnement en minéraux critiques : il dépendait à 100 %
-  des importations nettes pour 16 produits minéraux non combustibles en 2025, la
-  Chine étant la source principale de 14 des minéraux critiques les plus
-  dépendants des importations [usgs-mcs-2026]. En tant qu'émetteur de la
-  principale monnaie de réserve mondiale, les États-Unis ne subissent aucune
-  contrainte de financement extérieur souverain comparable à celle des petites
-  économies [treasury-tic-debt-holders].
+  Les États-Unis accusent un déficit important et persistant sur les biens,
+  partiellement compensé par un excédent sur les services, et financent l'écart
+  en empruntant à l'étranger à des conditions qu'aucun autre emprunteur
+  n'obtient. Les exportations de biens et services se sont établies à 3 432,3
+  milliards de dollars en 2025 contre 4 333,8 milliards d'importations, soit un
+  déficit de 901,5 milliards; 2,1 milliards de moins qu'en 2024, mais composé
+  d'un déficit sur les biens qui s'est creusé de 25,5 milliards pour atteindre 1
+  240,9 milliards et d'un excédent sur les services en hausse de 8,9 % à 339,5
+  milliards [bea-census-trade-annual-2025]. La composition est asymétrique : les
+  importations de biens ont augmenté de 143,2 milliards, tirées par les biens
+  d'équipement à hauteur de 165,9 milliards, dont les ordinateurs pour 101,4
+  milliards, les accessoires informatiques pour 42,7 milliards et le matériel de
+  télécommunication pour 30,3 milliards, tandis que les exportations de services
+  progressaient de 82,1 milliards, portées par les autres services aux
+  entreprises, les redevances d'utilisation de la propriété intellectuelle et
+  les services financiers [bea-census-trade-annual-2025]. La concentration des
+  partenaires sur les biens est large plutôt qu'étroite, et elle s'est nettement
+  déplacée en 2025 : les principaux déficits bilatéraux visaient l'Union
+  européenne (218,8 milliards), la Chine continentale (202,1 milliards), le
+  Mexique (196,9 milliards), le Vietnam (178,2 milliards) et Taïwan (146,8
+  milliards), contre des excédents avec les Pays-Bas (60,7 milliards),
+  l'Amérique du Sud et centrale (52,4 milliards) et le Royaume-Uni (32,2
+  milliards) [bea-census-trade-annual-2025]. Le déficit avec la Chine a reculé
+  de 93,4 milliards, les importations chinoises chutant de 130,4 milliards à
+  308,4 milliards, tandis que les déficits avec Taïwan et le Vietnam
+  augmentaient de 73,0 et 54,7 milliards [bea-census-trade-annual-2025]. Mesurée
+  en fin d'année 2025 plutôt qu'en moyenne annuelle, la part de la Chine dans
+  les importations de biens des États-Unis était tombée à 7,7 %, contre 13,2 %
+  en 2024; ce que le Fonds monétaire international interprète comme une
+  substitution entre fournisseurs plutôt que comme une réduction de la demande
+  d'importation [imf-art-iv-usa-2026].
+
+
+  L'énergie et l'alimentation évoluent en sens inverse. Les exportations totales
+  d'énergie ont atteint un record de 31 quadrillions d'unités thermiques
+  britanniques (quads) en 2025, contre 21 quads d'importations, soit des
+  exportations nettes record de 11 quads, en hausse de 20 % par rapport au
+  record précédent; le pétrole a fourni 63 % des exportations et le gaz naturel
+  un record de 9 quads, soit 29 % [eia-energy-trade-2025]. Le pétrole constitue
+  simultanément la première importation, à 83 % du total, et les importations de
+  gaz naturel en provenance du Canada demeurent importantes pour équilibrer la
+  demande saisonnière [eia-energy-trade-2025]. L'agriculture s'est renversée en
+  cinq ans : les exercices 2021 et 2022 se sont soldés par des excédents (8,5 et
+  1,9 milliards), suivis de déficits de 17,3 milliards à l'exercice 2023, de
+  31,9 milliards à l'exercice 2024 et de 43,7 milliards à l'exercice 2025, où
+  175,6 milliards d'exportations ont fait face à 219,4 milliards d'importations;
+  le déficit de l'exercice 2026 est prévu à 29,0 milliards [usda-aes-136].
+
+
+  Les avoirs étrangers en dette fédérale s'élevaient à environ 9 200 milliards
+  de dollars en décembre 2025, soit 31 % de la dette détenue par le public, qui
+  atteignait 30 100 milliards; part en recul par rapport aux 34 % de décembre
+  2021, la dette totale ayant crû plus vite que les avoirs étrangers
+  [crs-rs22331-foreign-holdings]. Les sources gouvernementales en détiennent
+  41,9 % (3 900 milliards) et les investisseurs privés 58,1 % (5 400 milliards)
+  [crs-rs22331-foreign-holdings]. Les principaux avoirs par pays en décembre
+  2025 étaient ceux du Japon, à 1 185,5 milliards (12,8 % des avoirs étrangers),
+  du Royaume-Uni, à 866,0 milliards (9,3 %), et de la Chine continentale, à
+  683,5 milliards (7,4 %) [treasury-tic-debt-holders]. Les avoirs chinois ont
+  diminué tant en valeur nominale qu'en part, contre 13,4 % de l'ensemble des
+  avoirs étrangers en décembre 2021 [crs-rs22331-foreign-holdings].
+  L'attribution par pays est plus fragile qu'il n'y paraît : le Trésor
+  enregistre le lieu de détention et non la nationalité du détenteur, de sorte
+  que les titres détenus pour des clients de pays tiers en Belgique, au
+  Luxembourg, aux îles Caïmans ou en Suisse sont attribués à ces territoires
+  [crs-rs22331-foreign-holdings].
+
+
+  La position de monnaie de réserve lève la contrainte de financement que
+  subissent les petites économies, mais non la créance qui s'accumule. Le
+  déficit du compte courant s'élevait à 3,7 % du produit intérieur brut (PIB) en
+  2025, contre environ 2 % en 2013-2019, et la position extérieure globale nette
+  dépasse désormais −80 % du PIB, creusée par l'emprunt extérieur des
+  administrations publiques et par les entrées non résidentes dans les actions
+  et la dette d'entreprise des États-Unis [imf-art-iv-usa-2026]. La composition
+  de ce financement s'est déplacée des détenteurs du secteur officiel vers des
+  investisseurs privés non bancaires, dont le comportement est plus sensible aux
+  prix et au risque; ce que le Fonds monétaire international (FMI) désigne comme
+  la principale vulnérabilité extérieure : un revirement brutal des préférences
+  de portefeuille pourrait imposer un rééquilibrage désordonné
+  [imf-art-iv-usa-2026]. Le Fonds a jugé la position extérieure de 2025
+  modérément plus faible que ne l'indiquent les fondamentaux à moyen terme et
+  des politiques appropriées, attribuant ce désalignement en grande partie au
+  déficit fédéral chronique, qui affaiblit le compte courant et apprécie le
+  dollar; le constat extérieur reformule le constat budgétaire plutôt qu'il n'en
+  ajoute un second [imf-art-iv-usa-2026]. Le pays ne fait l'objet d'aucun
+  programme du FMI; l'engagement du Fonds se limite à la surveillance annuelle
+  au titre de l'article IV, dont la dernière conclusion date du 1er avril 2026
+  [imf-art-iv-usa-2026]. Sur l'approvisionnement physique, l'exposition
+  s'inverse : le pays dépendait à 100 % des importations nettes pour 16 produits
+  minéraux non combustibles en 2025, la Chine étant la source principale de 14
+  des minéraux critiques les plus dépendants des importations [usgs-mcs-2026].
 economy_politicalEconomy_en: >-
-  The United States is a market-led economy with limited direct state ownership,
-  and the current contested boundary lies in the reach of executive control over
-  the regulatory state rather than in nationalisation. The model's load-bearing
-  entities are named in public rankings and federal records: the Fortune 500
-  ranks the largest United States corporations by revenue [fortune-500-2026];
-  four technology firms — Meta, Microsoft, Amazon and Alphabet — carry the
+  The United States is a market-led economy in which direct state ownership has
+  historically been minimal, and both edges of the state–market boundary are now
+  being redrawn at once — the executive taking equity in named firms, and the
+  courts removing the insulation of independent regulators. The movement is
+  toward executive discretion over both ownership and enforcement, and it is
+  happening largely outside legislation.
+
+
+  On ownership, the federal government announced investments worth $27.6 billion
+  across thirty-seven deals involving direct ownership between January 2025 and
+  July 2026 — the Department of Commerce leading at twenty-four deals, the
+  Department of Defense at seven, the Development Finance Corporation at six and
+  the Department of Energy at two — a portfolio for which the only consolidated
+  record is a think-tank compilation assembled from open sources
+  [cfr-equity-tracker-2026]. The two largest positions are documented by the
+  companies themselves. The government purchased 433.3 million Intel shares at
+  $20.47, a 9.9% stake worth $8.9 billion, funded by the $5.7 billion in
+  Creating Helpful Incentives to Produce Semiconductors (CHIPS) and Science Act
+  grants awarded but not yet paid and $3.2 billion from the Secure Enclave
+  program; the holding is passive, carrying no board seat or governance rights,
+  the government agreed to vote with the board on shareholder matters, and it
+  took a five-year warrant for a further 5% exercisable only if Intel ceases to
+  own a majority of its foundry business [intel-usg-agreement-2025]. The
+  Department of Defense committed $400 million to convertible preferred stock
+  and a warrant in MP Materials at a $30.03 conversion price, representing 15%
+  of shares outstanding as of 9 July 2025 and positioning the department as the
+  company's largest shareholder, alongside a ten-year floor price of $110 per
+  kilogram for its neodymium-praseodymium products and a ten-year commitment to
+  purchase the entire output of its planned second magnet plant
+  [mp-materials-dod-2025].
+
+
+  The private structure is concentrated and health-weighted. The 2026 Fortune
+  500, in its seventy-second year, accounted for $21.0 trillion in revenue and
+  $2.1 trillion in profits and employed 30.5 million people worldwide
+  [fortune-500-2026]. Amazon took first place, ending Walmart's thirteen-year
+  run, and four of the top ten are health-care companies — UnitedHealth Group
+  third, CVS Health sixth, McKesson eighth and Cencora tenth — alongside Apple,
+  Alphabet, Berkshire Hathaway and ExxonMobil [fortune-500-2026]. Amazon took
+  first place with revenue above $700 billion in 2025, up 12%, ending Walmart's
+  thirteen-year run; UnitedHealth Group held third as the largest health-care
+  company; and Alphabet, at fifth, was the most profitable company on the list
+  with record earnings of $132 billion [fortune-500-2026]. Financial companies
+  were the largest sector bloc at ninety-five firms, $4.1 trillion in revenue
+  and over $474 billion in profits, while health care generated $3.6 trillion
+  and placed eight companies in the top twenty-five [fortune-500-2026]. Four
+  technology firms — Meta, Microsoft, Amazon and Alphabet — carry the
   artificial-intelligence data-centre buildout, with combined capital
-  expenditure of about $410 billion in 2025, plans of roughly $725 billion for
-  2026 and a Goldman Sachs projection of $5.3 trillion across fiscal years
-  2025–2030 [goldman-hyperscaler-capex-2026]; the defence industrial base runs
-  through the Department of Defense's top-100 contractor list, which names the
-  long-standing prime contractors, Lockheed Martin, RTX, Boeing, General
-  Dynamics and Northrop Grumman among them
-  [dod-top100-contractors-list][crs-dod-contractors-primer]; and organised
-  labour's weight is measured in the Bureau of Labor Statistics' annual
-  union-membership release [bls-union-members-2025], which the Economic Policy
-  Institute — a think tank with a pro-labour orientation — reads as a 2025
-  increase in unionisation [epi-unionization-increase-2025]. The 2025
-  reconciliation act (Public Law 119-21, the One Big Beautiful Bill Act)
-  permanently extended 2017 tax provisions and raised projected deficits by $4.7
-  trillion over 2026–2035, benefiting taxpayers and defence and
-  homeland-security spending while cutting Medicaid and the Supplemental
-  Nutrition Assistance Program (SNAP) [obbba-hr1][cbo-budget-outlook-2026]. The
-  technically necessary reform — closing the primary and interest-driven fiscal
-  gap — is politically constrained, with mandatory spending rising and net
-  interest the fastest-growing outlay
-  [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. The 2026 Supreme Court
-  removal-power ruling shifts the state–market boundary by making formerly
-  independent regulators subject to at-will presidential removal, increasing the
-  political variability of enforcement [trump-v-slaughter-2026].
+  expenditure of about $410 billion in 2025 and announced plans of roughly $725
+  billion for 2026 [goldman-hyperscaler-capex-2026]. The defence industrial base
+  runs through the Department of Defense's top-100 contractor list, naming the
+  long-standing prime contractors Lockheed Martin, RTX, Boeing, General Dynamics
+  and Northrop Grumman among them
+  [dod-top100-contractors-list][crs-dod-contractors-primer].
+
+
+  Organised labour is the weak counterparty. The union membership rate was 10.0%
+  in 2025 with 14.7 million members, against 20.1% and 17.7 million in 1983, the
+  first year of comparable data; a further 1.8 million workers are covered by a
+  union contract without membership, putting union representation at 11.2%
+  [bls-union-members-2025]. The remaining density is public: 32.9% in the public
+  sector against 5.9% in the private sector, and 1.5% in financial activities
+  and 2.1% in professional and business services — the sectors the Fortune 500
+  is concentrated in [bls-union-members-2025]. Union members' median usual
+  weekly earnings were $1,404 in 2025 against $1,174 for non-union workers
+  [bls-union-members-2025].
+
+
+  Distribution under the 2025 reconciliation act (Public Law 119-21, the One Big
+  Beautiful Bill Act) runs against the bottom decile. The act permanently
+  extended 2017 tax provisions and raised projected deficits by $4.7 trillion
+  over 2026–2035 [obbba-hr1][cbo-budget-outlook-2026]. CBO estimates households
+  on average will gain resources over 2026–2034, but the gradient runs against
+  the bottom: the lowest decile loses about $1,200 a year, or 3.1% of income,
+  driven by reduced Medicaid and Supplemental Nutrition Assistance Program
+  (SNAP) benefits; the fifth and sixth deciles gain $800 and $1,200 (0.8% and
+  1.0%); and the highest decile gains about $13,600, or 2.7%, driven by
+  reductions in the taxes it owes [cbo-distributional-pl119-21]. The technically
+  necessary reform — closing the primary and interest-driven fiscal gap — is
+  politically constrained, with mandatory spending rising and net interest the
+  fastest-growing outlay [cbo-budget-outlook-2026][crfb-cbo-outlook-2026].
 economy_politicalEconomy_fr: >-
-  Les États-Unis constituent une économie de marché à propriété publique directe
-  limitée, la frontière contestée du moment portant sur la portée du contrôle
-  exécutif sur l'État régulateur plutôt que sur des nationalisations. Les
-  entités porteuses du modèle sont nommées dans les classements publics et les
-  registres fédéraux : le Fortune 500 classe les plus grandes entreprises
-  américaines par chiffre d'affaires [fortune-500-2026]; quatre entreprises
-  technologiques — Meta, Microsoft, Amazon et Alphabet — portent l'expansion des
-  centres de données d'intelligence artificielle, avec des dépenses
-  d'investissement combinées d'environ 410 milliards de dollars en 2025, des
-  plans d'environ 725 milliards pour 2026 et une projection de Goldman Sachs de
-  5 300 milliards sur les exercices 2025-2030 [goldman-hyperscaler-capex-2026];
-  la base industrielle de défense passe par la liste des 100 premiers
-  entrepreneurs du département de la Défense, qui nomme les maîtres d'œuvre
-  historiques, dont Lockheed Martin, RTX, Boeing, General Dynamics et Northrop
-  Grumman [dod-top100-contractors-list][crs-dod-contractors-primer]; et le poids
-  du travail organisé se mesure dans le communiqué annuel d'adhésion syndicale
-  du Bureau of Labor Statistics [bls-union-members-2025], que l'Economic Policy
-  Institute — groupe de réflexion à orientation pro-syndicale — lit comme une
-  hausse de la syndicalisation en 2025 [epi-unionization-increase-2025]. La loi
-  de réconciliation de 2025 (loi publique 119-21, la One Big Beautiful Bill Act)
-  a pérennisé les dispositions fiscales de 2017 et relevé les déficits projetés
-  de 4 700 milliards de dollars sur 2026-2035, au bénéfice des contribuables et
-  des dépenses de défense et de sécurité intérieure, tout en réduisant Medicaid
-  et le Supplemental Nutrition Assistance Program (SNAP)
-  [obbba-hr1][cbo-budget-outlook-2026]. La réforme techniquement nécessaire —
-  résorber le déficit primaire et celui tiré par les intérêts — est
-  politiquement contrainte, les dépenses obligatoires augmentant et les intérêts
-  nets étant le poste à la croissance la plus rapide
-  [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. L'arrêt de 2026 de la Cour
-  suprême sur le pouvoir de révocation déplace la frontière État-marché en
-  soumettant des régulateurs autrefois indépendants à la révocation
-  discrétionnaire présidentielle, accroissant la variabilité politique de
-  l'application des règles [trump-v-slaughter-2026].
+  Les États-Unis constituent une économie de marché où la propriété publique
+  directe est historiquement minime, et les deux bords de la frontière
+  État-marché sont désormais redessinés simultanément : l'exécutif prenant des
+  participations dans des entreprises nommées, et les tribunaux retirant leur
+  protection aux régulateurs indépendants. Le mouvement va vers une discrétion
+  accrue de l'exécutif sur la propriété comme sur l'application des règles, et
+  il s'opère largement hors du champ législatif.
+
+
+  Du côté de la propriété, le gouvernement fédéral a annoncé des investissements
+  de 27,6 milliards de dollars répartis sur trente-sept opérations comportant
+  une participation directe entre janvier 2025 et juillet 2026 (le département
+  du Commerce en menant vingt-quatre, celui de la Défense sept, la Development
+  Finance Corporation six et celui de l'Énergie deux), portefeuille dont le seul
+  relevé consolidé est une compilation de groupe de réflexion établie à partir
+  de sources ouvertes [cfr-equity-tracker-2026]. Les deux plus importantes
+  positions sont documentées par les entreprises elles-mêmes. Le gouvernement a
+  acheté 433,3 millions d'actions d'Intel à 20,47 dollars, soit une
+  participation de 9,9 % valant 8,9 milliards, financée par les 5,7 milliards de
+  subventions du Creating Helpful Incentives to Produce Semiconductors (CHIPS)
+  and Science Act attribuées, mais non versées et par 3,2 milliards du programme
+  Secure Enclave. Cette participation est passive, sans siège au conseil ni
+  droits de gouvernance; le gouvernement s'engageant à voter avec le conseil sur
+  les questions soumises aux actionnaires, et assortie d'un bon de souscription
+  de cinq ans portant sur 5 % supplémentaires, exerçable seulement si Intel
+  cesse de détenir la majorité de son activité de fonderie
+  [intel-usg-agreement-2025]. Le département de la Défense a engagé 400 millions
+  de dollars en actions privilégiées convertibles et bons de souscription dans
+  MP Materials, au prix de conversion de 30,03 dollars, représentant 15 % des
+  actions en circulation au 9 juillet 2025 et faisant du département le premier
+  actionnaire de l'entreprise, avec un prix plancher sur dix ans de 110 dollars
+  le kilogramme pour ses produits de néodyme-praséodyme et un engagement d'achat
+  sur dix ans de toute la production de sa deuxième usine d'aimants prévue
+  [mp-materials-dod-2025].
+
+
+  La structure privée est concentrée et pondérée par la santé. Le Fortune 500 de
+  2026, dans sa soixante-douzième année, représentait 21 000 milliards de
+  dollars de chiffre d'affaires et 2 100 milliards de profits, et employait 30,5
+  millions de personnes dans le monde [fortune-500-2026]. Amazon a pris la
+  première place, mettant fin à treize ans de règne de Walmart, et quatre des
+  dix premières sont des entreprises de santé (UnitedHealth Group en troisième,
+  CVS Health en sixième, McKesson en huitième et Cencora en dixième), aux côtés
+  d'Apple, Alphabet, Berkshire Hathaway et ExxonMobil [fortune-500-2026]. Les
+  sociétés financières formaient le premier bloc sectoriel avec
+  quatre-vingt-quinze entreprises, 4 100 milliards de chiffre d'affaires et plus
+  de 474 milliards de profits, tandis que la santé générait 3 600 milliards et
+  plaçait huit entreprises dans les vingt-cinq premières [fortune-500-2026].
+  Quatre entreprises technologiques (Meta, Microsoft, Amazon et Alphabet)
+  portent l'expansion des centres de données d'intelligence artificielle, avec
+  des dépenses d'investissement combinées d'environ 410 milliards en 2025 et des
+  plans annoncés d'environ 725 milliards pour 2026
+  [goldman-hyperscaler-capex-2026]. La base industrielle de défense passe par la
+  liste des cent premiers entrepreneurs du département de la Défense, qui nomme
+  les maîtres d'œuvre historiques, dont Lockheed Martin, RTX, Boeing, General
+  Dynamics et Northrop Grumman
+  [dod-top100-contractors-list][crs-dod-contractors-primer].
+
+
+  Le travail organisé est la contrepartie faible. Le taux de syndicalisation
+  s'établissait à 10,0 % en 2025, pour 14,7 millions de membres, contre 20,1 %
+  et 17,7 millions en 1983, première année de données comparables; 1,8 million
+  de travailleurs supplémentaires sont couverts par une convention collective
+  sans être membres, portant la représentation syndicale à 11,2 %
+  [bls-union-members-2025]. La densité résiduelle est publique : 32,9 % dans le
+  secteur public contre 5,9 % dans le privé, et 1,5 % dans les activités
+  financières et 2,1 % dans les services professionnels et aux entreprises (soit
+  les secteurs où se concentre le Fortune 500) [bls-union-members-2025]. Le
+  salaire hebdomadaire médian habituel des syndiqués atteignait 1 404 dollars en
+  2025, contre 1 174 dollars pour les non-syndiqués [bls-union-members-2025].
+
+
+  La répartition sous la loi de réconciliation de 2025 (loi publique 119-21, la
+  One Big Beautiful Bill Act) joue contre le décile inférieur. La loi a
+  pérennisé les dispositions fiscales de 2017 et relevé les déficits projetés de
+  4 700 milliards de dollars sur 2026-2035 [obbba-hr1][cbo-budget-outlook-2026].
+  Le CBO estime que les ménages gagneront en moyenne des ressources sur
+  2026-2034, mais le gradient joue contre le bas de la distribution : le décile
+  inférieur perd environ 1 200 dollars par an, soit 3,1 % de son revenu, en
+  raison de la réduction des prestations de Medicaid et du Supplemental
+  Nutrition Assistance Program (SNAP); les cinquième et sixième déciles gagnent
+  800 et 1 200 dollars (0,8 % et 1,0 %); et le décile supérieur gagne environ 13
+  600 dollars, soit 2,7 %, grâce à la baisse des impôts qu'il doit
+  [cbo-distributional-pl119-21]. La réforme techniquement nécessaire (résorber
+  le déficit primaire et celui tiré par les intérêts) est politiquement
+  contrainte; les dépenses obligatoires augmentant et les intérêts nets étant le
+  poste à la croissance la plus rapide
+  [cbo-budget-outlook-2026][crfb-cbo-outlook-2026].
 political_powerStructure_en: >-
   The United States is a federal presidential republic in which power is won
   through separately elected executive and legislative branches, and as of 18
@@ -3918,10 +4166,10 @@ sources: |-
     {
       "id": "obbba-hr1",
       "name": "H.R.1 — One Big Beautiful Bill Act, 119th Congress",
-      "nameFr": "H.R.1 — One Big Beautiful Bill Act, 119e Congrès",
+      "nameFr": "H.R.1 — One Big Beautiful Bill Act, 119th Congress",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/1",
       "desc": "Official congressional legislative record for the reconciliation bill; tracks text, actions, and signature into law. Primary government source.",
-      "descFr": "Registre législatif officiel du Congrès pour le projet de loi de réconciliation; suit le texte, les actions et la promulgation. Source gouvernementale primaire.",
+      "descFr": "Registre législatif officiel du Congrès pour le projet de loi de réconciliation; suit le texte, les actions et la promulgation. Source gouvernementale primaire. Titre traduit : « H.R.1 — One Big Beautiful Bill Act, 119e Congrès ».",
       "publicationDate": "2025-07-04",
       "accessDate": "2026-07-18",
       "confidence": "High",
@@ -3931,10 +4179,10 @@ sources: |-
     {
       "id": "crs-r48832-shutdowns",
       "name": "Congressional Research Service Report R48832 — Government Shutdown Background",
-      "nameFr": "Rapport R48832 du Congressional Research Service — Contexte des fermetures gouvernementales",
+      "nameFr": "Congressional Research Service Report R48832 — Government Shutdown Background",
       "url": "https://www.congress.gov/crs-product/R48832",
       "desc": "Nonpartisan legislative research service report tracking federal shutdown timelines, causes, and durations; authoritative primary congressional analysis, not news.",
-      "descFr": "Rapport non partisan du service de recherche du Congrès retraçant les fermetures fédérales, leurs causes et durées; analyse primaire faisant autorité.",
+      "descFr": "Rapport non partisan du service de recherche du Congrès retraçant les fermetures fédérales, leurs causes et durées; analyse primaire faisant autorité. Titre traduit : « Rapport R48832 du Congressional Research Service — Contexte des fermetures gouvernementales ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -3982,10 +4230,10 @@ sources: |-
     {
       "id": "hr7148-appropriations",
       "name": "H.R. 7148 Signed Into Law — Consolidated Appropriations Act, 2026",
-      "nameFr": "H.R. 7148 promulgué — Consolidated Appropriations Act, 2026",
+      "nameFr": "H.R. 7148 Signed Into Law — Consolidated Appropriations Act, 2026",
       "url": "https://www.whitehouse.gov/briefings-statements/2026/02/congressional-bill-h-r-7148-signed-into-law/",
       "desc": "Official White House bill-signing announcement confirming enactment of federal appropriations legislation; primary executive-branch source.",
-      "descFr": "Annonce officielle de la Maison-Blanche confirmant la promulgation d'une loi de crédits fédéraux; source primaire de l'exécutif.",
+      "descFr": "Annonce officielle de la Maison-Blanche confirmant la promulgation d'une loi de crédits fédéraux; source primaire de l'exécutif. Titre traduit : « H.R. 7148 promulgué — Consolidated Appropriations Act, 2026 ».",
       "publicationDate": "2026-02-03",
       "accessDate": "2026-07-18",
       "confidence": "High",
@@ -4085,10 +4333,10 @@ sources: |-
     {
       "id": "census-poprelease-2026",
       "name": "U.S. Population Growth Slows Due to Historic Decline in Net International Migration",
-      "nameFr": "La croissance démographique américaine ralentit en raison d'un déclin historique de la migration nette internationale",
+      "nameFr": "U.S. Population Growth Slows Due to Historic Decline in Net International Migration",
       "url": "https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html",
       "desc": "Official Census Bureau press release presenting Vintage 2025 population estimates including migration, births, and deaths; primary national statistics source.",
-      "descFr": "Communiqué officiel du Census Bureau présentant les estimations démographiques Vintage 2025 incluant migration, naissances et décès; source statistique nationale primaire.",
+      "descFr": "Communiqué officiel du Census Bureau présentant les estimations démographiques Vintage 2025 incluant migration, naissances et décès; source statistique nationale primaire. Titre traduit : « La croissance démographique américaine ralentit en raison d'un déclin historique de la migration nette internationale ».",
       "publicationDate": "2026-01-26",
       "accessDate": "2026-07-18",
       "confidence": "High",
@@ -4174,10 +4422,10 @@ sources: |-
     {
       "id": "eia-power-outlook-2026",
       "name": "Short-Term Energy Outlook — U.S. Power Demand Projections",
-      "nameFr": "Short-Term Energy Outlook — Projections de la demande électrique américaine",
+      "nameFr": "Short-Term Energy Outlook — U.S. Power Demand Projections",
       "url": "https://www.eia.gov/outlooks/steo/",
       "desc": "EIA's monthly short-term forecast of U.S. electricity generation, demand, and fuel mix; primary federal energy-statistics source.",
-      "descFr": "Prévision mensuelle à court terme de l'EIA sur la production, la demande et le mix énergétique américains; source statistique fédérale primaire sur l'énergie.",
+      "descFr": "Prévision mensuelle à court terme de l'EIA sur la production, la demande et le mix énergétique américains; source statistique fédérale primaire sur l'énergie. Titre traduit : « Short-Term Energy Outlook — Projections de la demande électrique américaine ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4186,10 +4434,10 @@ sources: |-
     {
       "id": "un-comtrade",
       "name": "UN Comtrade Database",
-      "nameFr": "Base de données Comtrade de l'ONU",
+      "nameFr": "UN Comtrade Database",
       "url": "https://comtradeplus.un.org/TradeFlow",
       "desc": "United Nations global trade-statistics database aggregating detailed annual and monthly import/export data reported by national statistical authorities; primary trade-data source.",
-      "descFr": "Base de données commerciales mondiales de l'ONU agrégeant les données annuelles et mensuelles d'importation/exportation rapportées par les autorités nationales; source primaire.",
+      "descFr": "Base de données commerciales mondiales de l'ONU agrégeant les données annuelles et mensuelles d'importation/exportation rapportées par les autorités nationales; source primaire. Titre traduit : « Base de données Comtrade de l'ONU ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4198,10 +4446,10 @@ sources: |-
     {
       "id": "census-foreign-trade",
       "name": "U.S. International Trade in Goods and Services (Foreign Trade Data)",
-      "nameFr": "Commerce international des biens et services des États-Unis",
+      "nameFr": "U.S. International Trade in Goods and Services (Foreign Trade Data)",
       "url": "https://www.census.gov/foreign-trade/data/",
       "desc": "U.S. Census Bureau's official trade-data portal reporting merchandise trade by partner and commodity at national and state level; primary federal trade-statistics source.",
-      "descFr": "Portail officiel de données commerciales du Census Bureau rapportant le commerce de marchandises par partenaire et produit; source statistique fédérale primaire.",
+      "descFr": "Portail officiel de données commerciales du Census Bureau rapportant le commerce de marchandises par partenaire et produit; source statistique fédérale primaire. Titre traduit : « Commerce international des biens et services des États-Unis ».",
       "publicationDate": "2019-04-14",
       "accessDate": "2026-07-18",
       "confidence": "High",
@@ -4211,10 +4459,10 @@ sources: |-
     {
       "id": "congress-gov-portal",
       "name": "Congress.gov — Congressional Research Service Reports",
-      "nameFr": "Congress.gov — Rapports du Congressional Research Service",
+      "nameFr": "Congress.gov — Congressional Research Service Reports",
       "url": "https://www.congress.gov/crs-product/",
       "desc": "Public portal for nonpartisan Congressional Research Service reports on legislation, budget, and policy; primary nonpartisan legislative research repository.",
-      "descFr": "Portail public des rapports non partisans du Congressional Research Service sur la législation et les politiques; dépôt primaire de recherche législative non partisane.",
+      "descFr": "Portail public des rapports non partisans du Congressional Research Service sur la législation et les politiques; dépôt primaire de recherche législative non partisane. Titre traduit : « Congress.gov — Rapports du Congressional Research Service ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4235,10 +4483,10 @@ sources: |-
     {
       "id": "constitution-usa-1787",
       "name": "Constitution of the United States",
-      "nameFr": "Constitution des États-Unis",
+      "nameFr": "Constitution of the United States",
       "url": "https://www.archives.gov/founding-docs/constitution-transcript",
       "desc": "Founding constitutional text of the United States (1787, in force 1789), hosted by the National Archives; the deep-time legal substrate document.",
-      "descFr": "Texte constitutionnel fondateur des États-Unis (1787, en vigueur 1789), hébergé par les Archives nationales; document fondamental de l'ordre juridique.",
+      "descFr": "Texte constitutionnel fondateur des États-Unis (1787, en vigueur 1789), hébergé par les Archives nationales; document fondamental de l'ordre juridique. Titre traduit : « Constitution des États-Unis ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4247,10 +4495,10 @@ sources: |-
     {
       "id": "scotus-opinions-portal",
       "name": "Supreme Court of the United States — Opinions",
-      "nameFr": "Cour suprême des États-Unis — Opinions",
+      "nameFr": "Supreme Court of the United States — Opinions",
       "url": "https://www.supremecourt.gov/opinions/opinions.aspx",
       "desc": "Official Supreme Court portal publishing full text of apex-court rulings including recent constitutional decisions; primary judicial source, never news-derived.",
-      "descFr": "Portail officiel de la Cour suprême publiant le texte intégral des décisions, y compris les récentes décisions constitutionnelles; source judiciaire primaire.",
+      "descFr": "Portail officiel de la Cour suprême publiant le texte intégral des décisions, y compris les récentes décisions constitutionnelles; source judiciaire primaire. Titre traduit : « Cour suprême des États-Unis — Opinions ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4284,10 +4532,10 @@ sources: |-
     {
       "id": "crfb-cbo-outlook-2026",
       "name": "CBO Releases February 2026 Budget and Economic Outlook",
-      "nameFr": "Le CBO publie ses perspectives budgétaires et économiques de février 2026",
+      "nameFr": "CBO Releases February 2026 Budget and Economic Outlook",
       "url": "https://www.crfb.org/blogs/cbo-releases-february-2026-budget-and-economic-outlook",
       "desc": "Nonpartisan fiscal watchdog's summary and analysis of CBO's debt and deficit projections; secondary interpretive source citing primary CBO figures.",
-      "descFr": "Résumé et analyse par un organisme de surveillance budgétaire non partisan des projections de dette et de déficit du CBO; source secondaire interprétative.",
+      "descFr": "Résumé et analyse par un organisme de surveillance budgétaire non partisan des projections de dette et de déficit du CBO; source secondaire interprétative. Titre traduit : « Le CBO publie ses perspectives budgétaires et économiques de février 2026 ».",
       "publicationDate": "2026-02-10",
       "accessDate": "2026-07-18",
       "confidence": "Med",
@@ -4435,12 +4683,207 @@ sources: |-
       "frReview": true
     },
     {
+      "id": "bea-gdp-q4-2025-third",
+      "name": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 4th Quarter and Year 2025",
+      "nameFr": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 4th Quarter and Year 2025",
+      "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-4th",
+      "desc": "Quarterly and annual national-accounts release of the Bureau of Economic Analysis carrying the annual gross domestic product estimate and value added by broad industry group; primary federal statistical source.",
+      "descFr": "Communiqué trimestriel et annuel des comptes nationaux du Bureau of Economic Analysis portant l'estimation annuelle du produit intérieur brut et la valeur ajoutée par grand groupe industriel; source statistique fédérale primaire. Titre traduit : « PIB (troisième estimation), industries, bénéfices des sociétés, PIB des États et revenu personnel des États, 4e trimestre et année 2025 ».",
+      "publicationDate": "2026-04-09",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "bea-census-trade-annual-2025",
+      "name": "U.S. International Trade in Goods and Services, December and Annual 2025",
+      "nameFr": "U.S. International Trade in Goods and Services, December and Annual 2025",
+      "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025",
+      "desc": "Joint monthly and annual trade release of the U.S. Census Bureau and Bureau of Economic Analysis, covering goods and services trade by commodity and by partner country; primary federal statistical source.",
+      "descFr": "Communiqué mensuel et annuel conjoint du U.S. Census Bureau et du Bureau of Economic Analysis sur le commerce de biens et services par produit et par pays partenaire; source statistique fédérale primaire. Titre traduit : « Commerce international de biens et services des États-Unis, décembre et année 2025 ».",
+      "publicationDate": "2026-02-19",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "eia-energy-trade-2025",
+      "name": "The United States is a major energy exporter and importer, especially for petroleum",
+      "nameFr": "The United States is a major energy exporter and importer, especially for petroleum",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67724",
+      "desc": "Analytical note of the U.S. Energy Information Administration drawing on its Monthly Energy Review, covering total primary energy trade by fuel and direction; primary federal statistical source on energy.",
+      "descFr": "Note analytique de l'U.S. Energy Information Administration fondée sur son Monthly Energy Review, portant sur les échanges totaux d'énergie primaire par source et par sens; source statistique fédérale primaire en énergie. Titre traduit : « Les États-Unis sont un grand exportateur et importateur d'énergie, surtout de pétrole ».",
+      "publicationDate": "2026-05-27",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "usda-aes-136",
+      "name": "Outlook for U.S. Agricultural Trade: May 2026",
+      "nameFr": "Outlook for U.S. Agricultural Trade: May 2026",
+      "url": "https://www.ers.usda.gov/publications/114206",
+      "desc": "Quarterly joint forecast of the USDA Economic Research Service and Foreign Agricultural Service on agricultural trade by commodity and region, carrying a fiscal-year historical series; primary federal source.",
+      "descFr": "Prévision trimestrielle conjointe de l'Economic Research Service et du Foreign Agricultural Service du USDA sur le commerce agricole par produit et par région, comportant une série historique par exercice; source fédérale primaire. Titre traduit : « Perspectives du commerce agricole des États-Unis : mai 2026 ».",
+      "publicationDate": "2026-05-28",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "crs-rs22331-foreign-holdings",
+      "name": "Foreign Holdings of Federal Debt",
+      "nameFr": "Foreign Holdings of Federal Debt",
+      "url": "https://www.congress.gov/crs-product/RS22331",
+      "desc": "Report of the Congressional Research Service, the legislature's non-partisan research service, analysing Federal Reserve and Treasury data on foreign ownership of federal debt, including the location-not-nationality caveat.",
+      "descFr": "Rapport du Congressional Research Service, service de recherche non partisan du législateur, analysant les données de la Réserve fédérale et du Trésor sur la détention étrangère de la dette fédérale, y compris la réserve selon laquelle les données suivent le lieu de détention et non la nationalité du détenteur. Titre traduit : « Avoirs étrangers en dette fédérale ».",
+      "publicationDate": "2026-04-22",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "High"
+    },
+    {
+      "id": "imf-art-iv-usa-2026",
+      "name": "United States: 2026 Article IV Consultation-Press Release; Staff Report; and Statement by the Executive Director for the United States",
+      "nameFr": "United States: 2026 Article IV Consultation-Press Release; Staff Report; and Statement by the Executive Director for the United States",
+      "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1usaea2026001.pdf",
+      "desc": "Annual surveillance assessment of the International Monetary Fund's Western Hemisphere Department (Country Report 26/76), covering the external position, current account, net international investment position, fiscal path and distributional effects; the Fund's own analytical judgement rather than originated data.",
+      "descFr": "Évaluation annuelle de surveillance du Département Hémisphère occidental du Fonds monétaire international (rapport pays 26/76), portant sur la position extérieure, le compte courant, la position extérieure globale nette, la trajectoire budgétaire et les effets distributifs; jugement analytique propre au Fonds plutôt que données originales. Titre traduit : « États-Unis : consultation de 2026 au titre de l'article IV — communiqué, rapport des services et déclaration de l'administrateur pour les États-Unis ».",
+      "publicationDate": "2026-04-01",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "High"
+    },
+    {
+      "id": "cfr-equity-tracker-2026",
+      "name": "Washington's Growing Portfolio: Tracking U.S. Government Investments",
+      "nameFr": "Washington's Growing Portfolio: Tracking U.S. Government Investments",
+      "url": "https://www.cfr.org/articles/washingtons-growing-portfolio-tracking-u-s-government-investments",
+      "desc": "Open-source deal tracker of the Council on Foreign Relations' Greenberg Center for Geoeconomics recording federal equity and quasi-equity stakes announced since January 2025; think-tank compilation, the only consolidated record available.",
+      "descFr": "Registre des opérations, en sources ouvertes, du Greenberg Center for Geoeconomics du Council on Foreign Relations, recensant les participations fédérales en capital ou quasi-capital annoncées depuis janvier 2025; compilation d'un groupe de réflexion, seul relevé consolidé existant. Titre traduit : « Le portefeuille croissant de Washington : suivi des investissements du gouvernement des États-Unis ».",
+      "publicationDate": "2026-07-30",
+      "accessDate": "2026-08-01",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "High"
+    },
+    {
+      "id": "cbo-distributional-pl119-21",
+      "name": "Distributional Effects of Public Law 119-21",
+      "nameFr": "Distributional Effects of Public Law 119-21",
+      "url": "https://www.cbo.gov/system/files/2025-08/61367-Distributional-Effects.pdf",
+      "desc": "Letter of the Congressional Budget Office allocating the enacted reconciliation act's revenue and spending effects across household income deciles through four channels, incorporating Joint Committee on Taxation tax estimates; primary non-partisan legislative analysis.",
+      "descFr": "Lettre du Congressional Budget Office répartissant les effets de la loi de réconciliation adoptée sur les recettes et les dépenses entre les déciles de revenu des ménages selon quatre canaux, intégrant les estimations fiscales du Joint Committee on Taxation; analyse législative non partisane primaire. Titre traduit : « Effets distributifs de la loi publique 119-21 ».",
+      "publicationDate": "2025-08-11",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "bls-empsit-june2026",
+      "name": "The Employment Situation — June 2026",
+      "nameFr": "The Employment Situation — June 2026",
+      "url": "https://www.bls.gov/news.release/archives/empsit_07022026.pdf",
+      "desc": "Monthly federal labour-market release of the Bureau of Labor Statistics combining household and establishment surveys; primary national statistical source for employment, unemployment and payrolls by industry.",
+      "descFr": "Communiqué mensuel du Bureau of Labor Statistics sur le marché du travail, combinant les enquêtes auprès des ménages et des établissements; source statistique nationale primaire pour l'emploi, le chômage et les effectifs par industrie. Titre traduit : « La situation de l'emploi — juin 2026 ».",
+      "publicationDate": "2026-07-02",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "intel-usg-agreement-2025",
+      "name": "Intel and Trump Administration Reach Historic Agreement to Accelerate American Technology and Manufacturing Leadership",
+      "nameFr": "Intel and Trump Administration Reach Historic Agreement to Accelerate American Technology and Manufacturing Leadership",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1748/intel-and-trump-administration-reach-historic-agreement-to",
+      "desc": "Investor-relations announcement by Intel Corporation setting out the terms of the federal equity investment; issuer disclosure and primary author of the transaction terms.",
+      "descFr": "Communiqué aux investisseurs d'Intel Corporation exposant les conditions de la prise de participation fédérale; information de l'émetteur, auteur primaire des conditions de l'opération. Titre traduit : « Intel et l'administration Trump concluent un accord historique pour accélérer le leadership technologique et manufacturier des États-Unis ».",
+      "publicationDate": "2025-08-22",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "mp-materials-dod-2025",
+      "name": "MP Materials Announces Transformational Public-Private Partnership with the Department of Defense to Accelerate U.S. Rare Earth Magnet Independence",
+      "nameFr": "MP Materials Announces Transformational Public-Private Partnership with the Department of Defense to Accelerate U.S. Rare Earth Magnet Independence",
+      "url": "https://investors.mpmaterials.com/investor-news/news-details/2025/MP-Materials-Announces-Transformational-Public-Private-Partnership-with-the-Department-of-Defense-to-Accelerate-U-S--Rare-Earth-Magnet-Independence/default.aspx",
+      "desc": "Investor-relations announcement by MP Materials Corp setting out the equity, price-floor and offtake terms of its Department of Defense partnership; issuer disclosure and primary author of the transaction terms.",
+      "descFr": "Communiqué aux investisseurs de MP Materials Corp exposant les conditions de participation, de prix plancher et d'enlèvement de son partenariat avec le département de la Défense; information de l'émetteur, auteur primaire des conditions de l'opération. Titre traduit : « MP Materials annonce un partenariat public-privé transformationnel avec le département de la Défense pour accélérer l'indépendance des États-Unis en aimants de terres rares ».",
+      "publicationDate": "2025-07-10",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "fomc-statement-july-2026",
+      "name": "Federal Reserve issues FOMC statement",
+      "nameFr": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "desc": "Federal Open Market Committee monetary-policy statement of 29 July 2026, setting the federal funds target range and the Committee's inflation assessment; primary federal monetary-authority source.",
+      "descFr": "Communiqué de politique monétaire du Federal Open Market Committee du 29 juillet 2026, fixant la fourchette cible du taux des fonds fédéraux et l'appréciation du Comité sur l'inflation; source primaire de l'autorité monétaire fédérale. Titre traduit : « La Réserve fédérale publie le communiqué du FOMC ».",
+      "publicationDate": "2026-07-29",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "bls-cpi-june2026",
+      "name": "Consumer Price Index — June 2026",
+      "nameFr": "Consumer Price Index — June 2026",
+      "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm",
+      "desc": "Bureau of Labor Statistics Consumer Price Index news release for June 2026, carrying the all-items, core, and energy twelve-month changes; primary federal price-statistics source.",
+      "descFr": "Communiqué de l'indice des prix à la consommation du Bureau of Labor Statistics pour juin 2026, portant les variations sur douze mois de l'ensemble, du sous-jacent et de l'énergie; source statistique fédérale primaire des prix. Titre traduit : « Indice des prix à la consommation — juin 2026 ».",
+      "publicationDate": "2026-07-14",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "moodys-us-rating",
+      "name": "2025 United States Sovereign Rating Action",
+      "nameFr": "2025 United States Sovereign Rating Action",
+      "url": "https://www.moodys.com/web/en/us/about-us/usrating.html",
+      "desc": "Moody's Ratings record of its 16 May 2025 downgrade of the United States long-term issuer and senior unsecured ratings to Aa1 from Aaa; primary rating-agency source.",
+      "descFr": "Relevé de Moody's Ratings de sa décision du 16 mai 2025 abaissant les notes d'émetteur à long terme et de dette senior non garantie des États-Unis à Aa1 depuis Aaa; source primaire d'agence de notation. Titre traduit : « Décision de notation souveraine des États-Unis de 2025 ».",
+      "publicationDate": "2025-05-16",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "sp-us-rating-2025",
+      "name": "U.S. 'AA+/A-1+' Sovereign Ratings Affirmed; Outlook Stable",
+      "nameFr": "U.S. 'AA+/A-1+' Sovereign Ratings Affirmed; Outlook Stable",
+      "url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3426678",
+      "desc": "S&P Global Ratings affirmation of the United States 'AA+/A-1+' sovereign ratings with a stable outlook (June 2026); primary rating-agency source.",
+      "descFr": "Confirmation par S&P Global Ratings des notes souveraines « AA+/A-1+ » des États-Unis assorties d'une perspective stable (juin 2026); source primaire d'agence de notation. Titre traduit : « Notes souveraines « AA+/A-1+ » des États-Unis confirmées; perspective stable ».",
+      "publicationDate": "2026-06-26",
+      "accessDate": "2026-08-01",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
       "id": "fao-forest-water-usa",
       "name": "FAOSTAT — Forestry and Land Use Data (United States)",
-      "nameFr": "FAOSTAT — Données forestières et d'utilisation des terres (États-Unis)",
+      "nameFr": "FAOSTAT — Forestry and Land Use Data (United States)",
       "url": "https://www.fao.org/faostat/en/#country/231",
       "desc": "Food and Agriculture Organization's statistical database on national forest cover, arable land, and fisheries stock; primary UN agency source for biosphere data.",
-      "descFr": "Base de données statistique de la FAO sur la couverture forestière nationale, les terres arables et les stocks de pêche; source primaire de l'agence de l'ONU.",
+      "descFr": "Base de données statistique de la FAO sur la couverture forestière nationale, les terres arables et les stocks de pêche; source primaire de l'agence de l'ONU. Titre traduit : « FAOSTAT — Données forestières et d'utilisation des terres (États-Unis) ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4449,10 +4892,10 @@ sources: |-
     {
       "id": "census-acs-language",
       "name": "American Community Survey — Language Spoken at Home",
-      "nameFr": "American Community Survey — Langue parlée à la maison",
+      "nameFr": "American Community Survey — Language Spoken at Home",
       "url": "https://data.census.gov/table/ACSST1Y2024.S1601",
       "desc": "Census Bureau's annual survey table on languages spoken at home across the U.S. population; primary national statistical source for linguistic composition.",
-      "descFr": "Tableau annuel de l'enquête du Census Bureau sur les langues parlées à la maison dans la population américaine; source statistique nationale primaire.",
+      "descFr": "Tableau annuel de l'enquête du Census Bureau sur les langues parlées à la maison dans la population américaine; source statistique nationale primaire. Titre traduit : « American Community Survey — Langue parlée à la maison ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4510,10 +4953,10 @@ sources: |-
     {
       "id": "dhs-cbp-border-stats",
       "name": "CBP Enforcement Statistics",
-      "nameFr": "Statistiques d'application de la loi de la CBP",
+      "nameFr": "CBP Enforcement Statistics",
       "url": "https://www.cbp.gov/newsroom/stats/cbp-enforcement-statistics",
       "desc": "U.S. Customs and Border Protection's official statistical reporting on border encounters, seizures, and enforcement; primary federal border-security data source.",
-      "descFr": "Rapport statistique officiel de la CBP sur les rencontres frontalières, saisies et application de la loi; source primaire fédérale sur la sécurité frontalière.",
+      "descFr": "Rapport statistique officiel de la CBP sur les rencontres frontalières, saisies et application de la loi; source primaire fédérale sur la sécurité frontalière. Titre traduit : « Statistiques d'application de la loi de la CBP ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
@@ -4522,11 +4965,11 @@ sources: |-
     {
       "id": "treasury-tic-debt-holders",
       "name": "Major Foreign Holders of Treasury Securities",
-      "nameFr": "Principaux détenteurs étrangers de titres du Trésor",
+      "nameFr": "Major Foreign Holders of Treasury Securities",
       "url": "https://ticdata.treasury.gov/Publish/mfh.txt",
       "desc": "U.S. Treasury Department's monthly official data on foreign holdings of Treasury securities by country; primary source for who holds sovereign debt.",
-      "descFr": "Données mensuelles officielles du département du Trésor américain sur les avoirs étrangers en titres du Trésor par pays; source primaire sur les détenteurs de la dette souveraine.",
-      "accessDate": "2026-07-18",
+      "descFr": "Données mensuelles officielles du département du Trésor américain sur les avoirs étrangers en titres du Trésor par pays; source primaire sur les détenteurs de la dette souveraine. Titre traduit : « Principaux détenteurs étrangers de titres du Trésor ».",
+      "accessDate": "2026-08-01",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High"
@@ -4534,10 +4977,10 @@ sources: |-
     {
       "id": "census-acs-dp05",
       "name": "DP05: ACS Demographic and Housing Estimates",
-      "nameFr": "DP05 : Estimations démographiques et du logement de l'ACS",
+      "nameFr": "DP05: ACS Demographic and Housing Estimates",
       "url": "https://data.census.gov/table/ACSDP1Y2024.DP05",
       "desc": "U.S. Census Bureau's American Community Survey 1-year data profile table reporting national race, ethnicity, age, and sex composition; primary federal statistical source.",
-      "descFr": "Tableau de profil de données de l'enquête sur la communauté américaine du Census Bureau rapportant la composition raciale, ethnique, d'âge et de sexe; source statistique fédérale primaire.",
+      "descFr": "Tableau de profil de données de l'enquête sur la communauté américaine du Census Bureau rapportant la composition raciale, ethnique, d'âge et de sexe; source statistique fédérale primaire. Titre traduit : « DP05 : Estimations démographiques et du logement de l'ACS ».",
       "publicationDate": "2025-09-11",
       "accessDate": "2026-07-19",
       "confidence": "High",
@@ -4757,7 +5200,8 @@ sources: |-
       "desc": "Legal re-founding: abolished slavery, established birthright citizenship and equal protection, prohibited race-based denial of suffrage. Held as a separate instrument from the founding text.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Reconstruction Amendments: Thirteenth Amendment (1865), Fourteenth Amendment (1868), Fifteenth Amendment (1870)"
     },
     {
       "id": "marbury-v-madison-1803",
@@ -4766,7 +5210,8 @@ sources: |-
       "desc": "Official Library of Congress United States Reports scan. Established judicial review.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803)"
     },
     {
       "id": "marshall-trilogy",
@@ -4775,7 +5220,8 @@ sources: |-
       "desc": "Official Library of Congress United States Reports scans. Foundational rulings on the federal-tribal sovereignty relationship. Cherokee Nation: https://tile.loc.gov/storage-services/service/ll/usrep/usrep030/usrep030001/usrep030001.pdf — Worcester: https://tile.loc.gov/storage-services/service/ll/usrep/usrep031/usrep031515/usrep031515.pdf",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "The Marshall Trilogy — Johnson v. M'Intosh, 21 U.S. 543 (1823); Cherokee Nation v. Georgia, 30 U.S. 1 (1831); Worcester v. Georgia, 31 U.S. 515 (1832)"
     },
     {
       "id": "insular-cases-1901",
@@ -4784,7 +5230,8 @@ sources: |-
       "desc": "Official Library of Congress United States Reports scans. Founding rulings of the distinct constitutional regime governing unincorporated territories. Downes: https://tile.loc.gov/storage-services/service/ll/usrep/usrep182/usrep182244/usrep182244.pdf",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "The Insular Cases — De Lima v. Bidwell, 182 U.S. 1 (1901); Downes v. Bidwell, 182 U.S. 244 (1901)"
     },
     {
       "id": "shelby-county-2013",
@@ -4793,7 +5240,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Bears on Fifteenth Amendment enforcement and federal oversight of state election law. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Shelby County v. Holder, 570 U.S. 529 (2013)"
     },
     {
       "id": "mcgirt-v-oklahoma-2020",
@@ -4802,7 +5250,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Reservation disestablishment and criminal jurisdiction in Indian country. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "McGirt v. Oklahoma, 591 U.S. 894 (2020)"
     },
     {
       "id": "oklahoma-v-castro-huerta-2022",
@@ -4811,7 +5260,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. State concurrent criminal jurisdiction in Indian country; reallocates jurisdiction toward the states. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Oklahoma v. Castro-Huerta, 597 U.S. 629 (2022)"
     },
     {
       "id": "wv-v-epa-2022",
@@ -4820,7 +5270,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Major questions doctrine as a clear-statement rule constraining agency authority. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "West Virginia v. Environmental Protection Agency, 597 U.S. 697 (2022)"
     },
     {
       "id": "haaland-v-brackeen-2023",
@@ -4829,7 +5280,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Congressional plenary power over Indian affairs; federal preemption of state family law.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Haaland v. Brackeen, 599 U.S. 255 (2023)"
     },
     {
       "id": "loper-bright-2024",
@@ -4838,7 +5290,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Judicial deference to agency statutory interpretation. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024)"
     },
     {
       "id": "trump-v-usa-2024",
@@ -4847,7 +5300,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Presidential immunity from criminal prosecution for official acts. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Trump v. United States, 603 U.S. 593 (2024)"
     },
     {
       "id": "trump-v-casa-2025",
@@ -4856,7 +5310,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Equitable authority of federal district courts to issue universal injunctions. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Trump v. CASA, Inc., 606 U.S. 831 (2025)"
     },
     {
       "id": "trump-v-slaughter-2026",
@@ -4865,7 +5320,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion, decided 29 June 2026. For-cause removal protections for independent multimember agencies; overruled Humphrey's Executor (1935). SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Trump v. Slaughter, 609 U.S. ___ (2026), No. 25-332"
     },
     {
       "id": "trump-v-cook-2026",
@@ -4874,7 +5330,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion, decided 29 June 2026 on the interim docket. Removal protections for Federal Reserve Board governors. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Trump v. Cook, 609 U.S. ___ (2026), No. 25A312"
     },
     {
       "id": "trump-v-barbara-2026",
@@ -4883,7 +5340,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion, decided 30 June 2026. Fourteenth Amendment Citizenship Clause and Executive Order 14160. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365"
     },
     {
       "id": "watson-v-rnc-2026",
@@ -4892,7 +5350,8 @@ sources: |-
       "desc": "Official Supreme Court slip opinion. Federal election-day statutes and state authority over absentee ballot receipt periods. SUBSTRATE IN MOTION.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Watson v. Republican National Committee, 609 U.S. ___ (2026), No. 24-1260"
     },
     {
       "id": "crs-congress-gov",
@@ -4901,7 +5360,8 @@ sources: |-
       "desc": "Non-partisan research arm of Congress, operating under the Library of Congress. Admissible as citationType: Interpretation.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Congressional Research Service — public report portal"
     },
     {
       "id": "calibration-executive-source",
@@ -4910,7 +5370,8 @@ sources: |-
       "desc": "Article II vests executive power in a directly elected President serving a 4-year term. The President is not drawn from and does not depend on the confidence of Congress. Unified/divided government applies and is a standard analytic variable in the United States system.",
       "accessDate": "2026-07-19",
       "confidence": "High",
-      "citationType": "Fact"
+      "citationType": "Fact",
+      "nameFr": "Executive-type determination — constitutional/primary source"
     },
     {
       "id": "whitehouse-epic-fury-ceasefire",
@@ -5095,16 +5556,16 @@ sources: |-
     },
     {
       "id": "fortune-500-2026",
-      "name": "Fortune 500 – The largest companies in the U.S. by revenue",
-      "nameFr": "Fortune 500 – Les plus grandes entreprises américaines par chiffre d'affaires",
+      "name": "Fortune 500",
+      "nameFr": "Fortune 500",
       "url": "https://fortune.com/ranking/fortune500/",
-      "desc": "Fortune magazine's current annual ranking naming the 500 largest U.S. corporations by revenue; long-established authoritative business-media ranking, methodology disclosed.",
-      "descFr": "Classement annuel actuel du magazine Fortune nommant les 500 plus grandes entreprises américaines par chiffre d'affaires; classement médiatique d'affaires établi et faisant autorité.",
-      "publicationDate": "2026-06-02",
-      "accessDate": "2026-07-19",
+      "desc": "Annual ranking by Fortune magazine of the largest United States corporations by revenue, in its seventy-second year, with aggregate revenue, profit and employment totals; established business-media ranking.",
+      "descFr": "Classement annuel du magazine Fortune des plus grandes sociétés des États-Unis par chiffre d'affaires, dans sa soixante-douzième année, avec les totaux agrégés de chiffre d'affaires, de profits et d'emploi; classement médiatique d'affaires établi.",
+      "publicationDate": "2026-06-03",
+      "accessDate": "2026-08-01",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med"
+      "volatility": "High"
     },
     {
       "id": "goldman-hyperscaler-capex-2026",
@@ -5148,34 +5609,22 @@ sources: |-
       "id": "bls-union-members-2025",
       "name": "Union Members — 2025",
       "nameFr": "Union Members — 2025",
-      "url": "https://www.bls.gov/news.release/pdf/union2.pdf",
-      "desc": "Bureau of Labor Statistics official annual news release reporting national union membership rate and count by sector; primary federal labour-statistics source.",
-      "descFr": "Communiqué annuel officiel du Bureau of Labor Statistics rapportant le taux et le nombre d'adhésion syndicale nationale par secteur; source statistique fédérale primaire sur le travail.",
-      "publicationDate": "2026-02-17",
-      "accessDate": "2026-07-19",
+      "url": "https://www.bls.gov/news.release/union2.nr0.htm",
+      "desc": "Annual release of the Bureau of Labor Statistics on union membership, representation and earnings drawn from the Current Population Survey; primary federal statistical source on organised labour.",
+      "descFr": "Communiqué annuel du Bureau of Labor Statistics sur l'adhésion syndicale, la représentation et les rémunérations, tiré de la Current Population Survey; source statistique fédérale primaire sur le travail organisé. Titre traduit : « Membres de syndicats — 2025 ».",
+      "publicationDate": "2026-02-18",
+      "accessDate": "2026-08-01",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med"
     },
     {
-      "id": "epi-unionization-increase-2025",
-      "name": "Workers' resolve drives increase in unionization in 2025",
-      "nameFr": "Workers' resolve drives increase in unionization in 2025",
-      "url": "https://www.epi.org/publication/workers-resolve-drives-increase-in-unionization-in-2025/",
-      "desc": "Economic Policy Institute analysis of BLS union data identifying sectoral and demographic drivers of 2025 unionization gains; think-tank interpretive source with a pro-labour orientation.",
-      "descFr": "Analyse de l'Economic Policy Institute des données syndicales de la BLS identifiant les facteurs sectoriels et démographiques de la hausse de la syndicalisation en 2025; source interprétative d'un groupe de réflexion à orientation pro-syndicale.",
-      "accessDate": "2026-07-19",
-      "confidence": "Med",
-      "citationType": "Interpretation",
-      "volatility": "Med"
-    },
-    {
       "id": "asce-report-card-history",
       "name": "Infrastructure Report Card History",
-      "nameFr": "Historique du bulletin des infrastructures",
+      "nameFr": "Infrastructure Report Card History",
       "url": "https://infrastructurereportcard.org/making-the-grade/report-card-history/",
       "desc": "ASCE's own historical timeline of its Infrastructure Report Card series; authoritative on the series' launch date and grading methodology; ASCE is an advocacy body favoring higher infrastructure spending.",
-      "descFr": "Chronologie historique de l'ASCE sur sa série de bulletins d'infrastructure; source autorisée sur la date de lancement de la série; l'ASCE est un organisme de plaidoyer favorable à des dépenses accrues.",
+      "descFr": "Chronologie historique de l'ASCE sur sa série de bulletins d'infrastructure; source autorisée sur la date de lancement de la série; l'ASCE est un organisme de plaidoyer favorable à des dépenses accrues. Titre traduit : « Historique du bulletin des infrastructures ».",
       "accessDate": "2026-07-21",
       "confidence": "High",
       "citationType": "Fact",
@@ -5184,10 +5633,10 @@ sources: |-
     {
       "id": "gao-strategic-human-capital-2023",
       "name": "Federal Workforce: OPM Advances Efforts to Close Government-wide Skills Gaps",
-      "nameFr": "Effectifs fédéraux : l'OPM progresse pour combler les lacunes de compétences à l'échelle du gouvernement",
+      "nameFr": "Federal Workforce: OPM Advances Efforts to Close Government-wide Skills Gaps",
       "url": "https://www.gao.gov/assets/gao-23-105528.pdf",
       "desc": "A Government Accountability Office report on federal workforce skills gaps; authoritative on the origin and duration of strategic human capital management as a high-risk designation.",
-      "descFr": "Rapport du Government Accountability Office sur les lacunes de compétences de la main-d'œuvre fédérale; source autorisée sur l'origine de la désignation à haut risque de la gestion stratégique du capital humain.",
+      "descFr": "Rapport du Government Accountability Office sur les lacunes de compétences de la main-d'œuvre fédérale; source autorisée sur l'origine de la désignation à haut risque de la gestion stratégique du capital humain. Titre traduit : « Effectifs fédéraux : l'OPM progresse pour combler les lacunes de compétences à l'échelle du gouvernement ».",
       "publicationDate": "2023-02-26",
       "accessDate": "2026-07-21",
       "confidence": "High",
@@ -5197,10 +5646,10 @@ sources: |-
     {
       "id": "fsma-2011-target",
       "name": "FDA Food Safety Modernization Act (FSMA)",
-      "nameFr": "Loi sur la modernisation de la sécurité alimentaire de la FDA (FSMA)",
+      "nameFr": "FDA Food Safety Modernization Act (FSMA)",
       "url": "https://www.fda.gov/food/guidance-regulation-food-and-dietary-supplements/food-safety-modernization-act-fsma",
       "desc": "FDA's own summary of the 2011 statute that established mandatory foreign facility inspection targets; authoritative on the origin of the FSMA-mandated 19,200 annual inspection target.",
-      "descFr": "Résumé de la FDA sur la loi de 2011 établissant les objectifs obligatoires d'inspection des installations étrangères; source autorisée sur l'origine de l'objectif d'inspection annuel de la FSMA.",
+      "descFr": "Résumé de la FDA sur la loi de 2011 établissant les objectifs obligatoires d'inspection des installations étrangères; source autorisée sur l'origine de l'objectif d'inspection annuel de la FSMA. Titre traduit : « Loi sur la modernisation de la sécurité alimentaire de la FDA (FSMA) ».",
       "publicationDate": "2011-01-04",
       "accessDate": "2026-07-21",
       "confidence": "High",
@@ -5210,10 +5659,10 @@ sources: |-
     {
       "id": "noaa-status-of-stocks-since1996",
       "name": "Fishery Stock Status Updates",
-      "nameFr": "Mises à jour de l'état des stocks de pêche",
+      "nameFr": "Fishery Stock Status Updates",
       "url": "https://www.fisheries.noaa.gov/national/population-assessments/fishery-stock-status-updates",
       "desc": "NOAA Fisheries' own record of its statutory stock-status reporting program under the Magnuson-Stevens Fishery Conservation and Management Act; authoritative on when this reporting series began.",
-      "descFr": "Registre officiel de NOAA Fisheries sur son programme statutaire de rapport sur l'état des stocks en vertu de la loi Magnuson-Stevens; source autorisée sur le début de cette série de rapports.",
+      "descFr": "Registre officiel de NOAA Fisheries sur son programme statutaire de rapport sur l'état des stocks en vertu de la loi Magnuson-Stevens; source autorisée sur le début de cette série de rapports. Titre traduit : « Mises à jour de l'état des stocks de pêche ».",
       "accessDate": "2026-07-21",
       "confidence": "High",
       "citationType": "Fact",
@@ -5222,10 +5671,10 @@ sources: |-
     {
       "id": "wjp-roli-2015-first",
       "name": "World Justice Project Releases WJP Rule of Law Index 2015 Scores and Rankings for 102 Countries",
-      "nameFr": "Le World Justice Project publie les scores et classements de l'Indice de l'état de droit 2015 pour 102 pays",
+      "nameFr": "World Justice Project Releases WJP Rule of Law Index 2015 Scores and Rankings for 102 Countries",
       "url": "https://worldjusticeproject.org/news/world-justice-project-releases-wjp-rule-law-index-2015-scores-and-rankings-102-countries",
       "desc": "The World Justice Project's press release announcing its 2015 Rule of Law Index edition; an advocacy/research organization; establishes when the current comparable ranking methodology began.",
-      "descFr": "Communiqué de presse du World Justice Project annonçant l'édition 2015 de son Indice de l'état de droit; organisme de plaidoyer et de recherche; établit le début de la méthodologie de classement comparable actuelle.",
+      "descFr": "Communiqué de presse du World Justice Project annonçant l'édition 2015 de son Indice de l'état de droit; organisme de plaidoyer et de recherche; établit le début de la méthodologie de classement comparable actuelle. Titre traduit : « Le World Justice Project publie les scores et classements de l'Indice de l'état de droit 2015 pour 102 pays ».",
       "publicationDate": "2015-06-01",
       "accessDate": "2026-07-21",
       "confidence": "Med",
@@ -5235,10 +5684,10 @@ sources: |-
     {
       "id": "nchs-rosenberg-1999",
       "name": "Quality of Death Rates by Race and Hispanic Origin: A Summary of Current Research, 1999",
-      "nameFr": "Qualité des taux de mortalité par race et origine hispanique : résumé de la recherche actuelle, 1999",
+      "nameFr": "Quality of Death Rates by Race and Hispanic Origin: A Summary of Current Research, 1999",
       "url": "https://stacks.cdc.gov/view/cdc/6399/cdc_6399_DS1.pdf",
       "desc": "A National Center for Health Statistics vital statistics report; the statutory federal vital-records body's own analysis first quantifying race/Hispanic-origin misclassification on U.S. death certificates.",
-      "descFr": "Rapport de statistiques vitales du National Center for Health Statistics; analyse officielle de l'organisme fédéral d'état civil quantifiant pour la première fois la mauvaise classification raciale/hispanique sur les certificats de décès.",
+      "descFr": "Rapport de statistiques vitales du National Center for Health Statistics; analyse officielle de l'organisme fédéral d'état civil quantifiant pour la première fois la mauvaise classification raciale/hispanique sur les certificats de décès. Titre traduit : « Qualité des taux de mortalité par race et origine hispanique : résumé de la recherche actuelle, 1999 ».",
       "publicationDate": "1999-01-01",
       "accessDate": "2026-07-21",
       "confidence": "High",
