@@ -1368,48 +1368,202 @@ economy_politicalEconomy_fr: >-
   poste à la croissance la plus rapide
   [cbo-budget-outlook-2026][crfb-cbo-outlook-2026].
 political_powerStructure_en: >-
-  The United States is a federal presidential republic in which power is won
-  through separately elected executive and legislative branches, and as of 18
-  July 2026 the federal government is unified under Republican control, with the
-  balance of power moving toward the presidency — detail follows. The executive
-  is held by President Donald Trump, a Republican who won the November 2024
-  election and was inaugurated in January 2025 [freedomhouse-usa-2026].
-  Legislative control is stated separately from executive control because the
-  system permits divergence, but here it does not: in the Senate (100 seats)
-  Republicans hold 53 seats to the Democrats' 45, with 2 independents (Senators
-  King and Sanders) caucusing with the Democrats
-  [senate-partydiv][senate-dailypress]; in the House of Representatives (435
-  seats) Republicans hold 217 seats, Democrats 212, with 1 independent and 5
-  vacancies following deaths and resignations in 2026 [house-partybreakdown].
-  Government is therefore unified rather than divided. Whether operative power
-  tracks the constitutional allocation is contested: the Constitution vests
-  executive power in the President and legislative power in Congress, but 2026
-  apex-court doctrine has expanded presidential control over the executive
-  branch (removal of independent-agency heads) [scotus-opinions-portal], and
-  this pass presents that contest without resolving it.
-  [calibration-executive-source]
+  The United States is a federal presidential republic in which the executive
+  and the legislature are elected separately and for different terms, so that
+  control of one does not follow from control of the other
+  [calibration-executive-source]. Since January 2025 the same party has held
+  both, and the operative boundary between them is being redrawn — not by
+  legislation but by judicial doctrine on the President's power to remove
+  officials.
+
+
+  The executive is held by President Donald Trump, a Republican, who won 312
+  electoral votes to Kamala Harris's 226 of 538 in November 2024, above the 270
+  required, and was inaugurated in January 2025 [nara-electoral-college-2024].
+  Legislative control is stated separately because the system permits
+  divergence. In the Senate (100 seats) Republicans hold 53 and Democrats 45,
+  with two independents — Angus King and Bernie Sanders — caucusing with the
+  Democrats [senate-partydiv]. That division survived a
+  change of membership in July 2026: following the death of Senator Lindsey
+  Graham of South Carolina, Governor Henry McMaster appointed Darline Graham
+  Nordone to complete the term on 13 July, and she was sworn in the following
+  day [scott-senate-nordone-appointment]. In the House of Representatives (435
+  seats) the chamber's own party-breakdown page, accessed 2 August 2026, records
+  218 Republicans, 212 Democrats, one independent and four vacancies, the page
+  having last been revised on 10 June 2026 [house-partybreakdown]. Government is
+  unified rather than divided.
+
+
+  Vacancies are repaired at different speeds in the two chambers, which affects
+  what each margin means in practice. A Senate seat can be filled by
+  gubernatorial appointment within days, as South Carolina's was. A House seat
+  cannot: Georgia's thirteenth district has been vacant since the death of
+  Representative David Scott on 22 April 2026, its 28 July special election
+  produced no majority, and a runoff is scheduled for 25 August
+  [gasos-ga13-special]. The House adjourned into a district work period on 23
+  July 2026, with votes not expected until 31 August [house-partybreakdown].
+
+
+  The margins are thin in both chambers and they bind differently. In the House,
+  218 Republicans is exactly the number required for a majority of the full
+  chamber, against 212 Democrats and four vacant seats [house-partybreakdown].
+  In the Senate, 53 seats is a governing majority but not the three-fifths of
+  all senators duly chosen and sworn — normally 60 votes — that Rule XXII
+  requires to close debate on ordinary legislation; a numerical majority
+  suffices for nominations, and budget reconciliation is exempt
+  [crs-rl30360-cloture]. That threshold, not the seat count, determines what
+  unified control can enact, and it is why the majority's principal 2025
+  enactment moved through reconciliation rather than regular order [obbba-hr1].
+
+
+  Opposition strength follows from the same thresholds rather than from seat
+  counts. In the Senate, Democrats and the two independents caucusing with them
+  hold 47 — six more than the 41 needed to deny cloture — so the minority can
+  block ordinary legislation indefinitely, though not nominations or
+  reconciliation [senate-partydiv][crs-rl30360-cloture]. In the House there is
+  no equivalent, and the minority's only route around the committee of referral,
+  the majority leadership and the Rules Committee is the discharge petition
+  under clause 2 of Rule XV, which requires 218 signatures — a majority of the
+  full chamber, and six more than the Democrats hold
+  [house-partybreakdown][crs-r45920-discharge]. That route has been unusually
+  active: two discharge petitions reached the threshold across the entire 118th
+  Congress, and four did so in the first session of the 119th alone, each
+  necessarily carrying majority-party signatures [crs-r45920-discharge]. The
+  opposition is led by Hakeem Jeffries of New York's eighth district in the
+  House and Chuck Schumer of New York in the Senate [house-democratic-leader].
+  Its institutional standing is not in question — the minority holds ranking
+  positions, contests scheduled elections, and faces no legal impediment to
+  organising — so the operative question is procedural rather than one of
+  legitimacy. Structurally, this is a system in which a party holding the
+  presidency and both chambers still cannot legislate alone: the binding
+  constraints are the sixty-vote threshold, the 218-signature threshold, and
+  judicial review, none of which track the partisan division of the legislature.
+
+
+  Whether operative power tracks the constitutional allocation is contested, and
+  the contest ran in both directions on a single day. Article II vests executive
+  power in a separately elected President who does not depend on the confidence
+  of Congress [calibration-executive-source]. On 29 June 2026 the Supreme Court
+  held by six votes to three that statutory provisions permitting the President
+  to remove Federal Trade Commission commissioners only for cause violate the
+  Constitution; the decision overruled Humphrey's Executor and invalidated
+  removal protections for those commissioners and, in the Congressional Research
+  Service's reading, likely for officials of other commission-style agencies
+  that wield executive power [crs-lsb11448-slaughter]. The same day, in a case
+  arising from the attempted removal of Governor Lisa Cook — the first Federal
+  Reserve governor a president has moved to fire in the institution's 111-year
+  history — the Court held by five votes to four that the for-cause protections
+  applicable to Federal Reserve governors are constitutional and require notice
+  and a hearing before removal takes effect, and it declined to stay the
+  injunction keeping Cook in office
+  [crs-lsb11449-cook][scotus-trump-v-cook-2026]. Chief Justice Roberts wrote
+  both opinions, with different majorities. Presidential control over the
+  commission-style agencies expanded; the central bank was carved out of it.
 political_powerStructure_fr: >-
-  Les États-Unis sont une république fédérale présidentielle où le pouvoir se
-  conquiert par l'élection distincte de l'exécutif et du législatif, et au 18
-  juillet 2026 le gouvernement fédéral est unifié sous contrôle républicain,
-  l'équilibre des pouvoirs se déplaçant vers la présidence — les détails
-  suivent. L'exécutif est détenu par le président Donald Trump, républicain élu
-  en novembre 2024 et investi en janvier 2025 [freedomhouse-usa-2026]. Le
-  contrôle du législatif est indiqué séparément de celui de l'exécutif, car le
-  régime autorise leur divergence, mais tel n'est pas le cas ici : au Sénat (100
-  sièges), les républicains détiennent 53 sièges contre 45 aux démocrates, deux
-  indépendants (les sénateurs King et Sanders) siégeant avec les démocrates
-  [senate-partydiv][senate-dailypress]; à la Chambre des représentants (435
-  sièges), les républicains détiennent 217 sièges, les démocrates 212, avec un
-  indépendant et cinq sièges vacants après des décès et démissions en 2026
-  [house-partybreakdown]. Le gouvernement est donc unifié et non divisé. La
-  question de savoir si le pouvoir effectif suit la répartition
-  constitutionnelle est contestée : la Constitution confie l'exécutif au
-  président et le législatif au Congrès, mais la jurisprudence de la Cour
-  suprême de 2026 a élargi le contrôle présidentiel sur la branche exécutive
-  (révocation des dirigeants d'agences indépendantes) [scotus-opinions-portal];
-  cette étape présente ce différend sans le trancher.
-  [calibration-executive-source]
+  Les États-Unis sont une république présidentielle fédérale où l'exécutif et le
+  législatif sont élus séparément et pour des mandats de durées différentes, de
+  sorte que le contrôle de l'un ne découle pas du contrôle de l'autre
+  [calibration-executive-source]. Depuis janvier 2025, le même parti détient les
+  deux; la frontière opérationnelle entre eux se redessine, non par voie
+  législative, mais par la jurisprudence relative au pouvoir présidentiel de
+  révocation des titulaires de charge.
+
+
+  L'exécutif est détenu par le président Donald Trump, républicain, qui a obtenu
+  312 voix du collège électoral contre 226 à Kamala Harris sur 538, au-delà des
+  270 requises, et a été investi en janvier 2025 [nara-electoral-college-2024].
+  Le contrôle du législatif est énoncé séparément parce que le système permet la
+  divergence. Au Sénat (100 sièges), les républicains en détiennent 53 et les
+  démocrates 45, deux indépendants (Angus King et Bernie Sanders) siégeant avec
+  le caucus démocrate [senate-partydiv]. Cette
+  répartition a survécu à un changement de composition en juillet 2026 : à la
+  suite du décès du sénateur Lindsey Graham, de la Caroline du Sud, le
+  gouverneur Henry McMaster a nommé Darline Graham Nordone pour achever le
+  mandat le 13 juillet; elle a prêté serment le lendemain
+  [scott-senate-nordone-appointment]. À la Chambre des représentants (435
+  sièges), la page de répartition partisane de la chambre elle-même, consultée
+  le 2 août 2026, fait état de 218 républicains, 212 démocrates, un indépendant
+  et quatre sièges vacants, la page n'ayant pas été révisée depuis le 10 juin
+  2026 [house-partybreakdown]. Le gouvernement est donc unifié plutôt que
+  divisé.
+
+
+  Les sièges vacants se comblent à des vitesses différentes dans les deux
+  chambres; ce qui modifie le sens pratique de chaque majorité. Un siège de
+  sénateur peut être pourvu par nomination du gouverneur en quelques jours,
+  comme ce fut le cas en Caroline du Sud. Un siège de représentant ne le peut
+  pas : le treizième district de la Géorgie est vacant depuis le décès du
+  représentant David Scott, le 22 avril 2026; son élection spéciale du 28
+  juillet n'a dégagé aucune majorité, et un second tour est prévu le 25 août
+  [gasos-ga13-special]. La Chambre s'est ajournée le 23 juillet 2026 pour une
+  période de travail en circonscription; les votes n'étant pas attendus avant le
+  31 août [house-partybreakdown].
+
+
+  Les marges sont minces dans les deux chambres et elles contraignent
+  différemment. À la Chambre, 218 républicains correspondent exactement au
+  nombre requis pour une majorité de l'ensemble de la chambre, contre 212
+  démocrates et quatre sièges vacants [house-partybreakdown]. Au Sénat, 53
+  sièges constituent une majorité de gouvernement, mais non les trois cinquièmes
+  des sénateurs dûment élus et assermentés (normalement 60 voix) qu'exige la
+  règle XXII pour clore le débat sur une loi ordinaire; une majorité simple
+  suffit pour les nominations, et la réconciliation budgétaire y échappe
+  [crs-rl30360-cloture]. C'est ce seuil, et non le nombre de sièges, qui
+  détermine ce qu'un contrôle unifié peut faire adopter; c'est pourquoi la
+  principale loi de la majorité en 2025 est passée par la réconciliation plutôt
+  que par la procédure ordinaire [obbba-hr1].
+
+
+  La force de l'opposition découle des mêmes seuils plutôt que du nombre de
+  sièges. Au Sénat, les démocrates et les deux indépendants qui siègent avec eux
+  en détiennent 47 (six de plus que les 41 nécessaires pour refuser la clôture),
+  de sorte que la minorité peut bloquer indéfiniment une loi ordinaire, mais non
+  les nominations ni la réconciliation [senate-partydiv][crs-rl30360-cloture]. À
+  la Chambre, il n'existe pas d'équivalent. La seule voie dont dispose la
+  minorité pour contourner le comité saisi, la direction de la majorité et le
+  comité du Règlement est la pétition de dessaisissement prévue à l'alinéa 2 de
+  la règle XV, qui exige 218 signatures; majorité de l'ensemble de la chambre,
+  soit six de plus que n'en détiennent les démocrates
+  [house-partybreakdown][crs-r45920-discharge]. Cette voie a été
+  inhabituellement active : deux pétitions de dessaisissement ont atteint le
+  seuil pendant tout le 118e Congrès, et quatre l'ont fait durant la seule
+  première session du 119e; chacune portant nécessairement des signatures de la
+  majorité [crs-r45920-discharge]. L'opposition est dirigée par Hakeem Jeffries,
+  du huitième district de New York, à la Chambre, et par Chuck Schumer, de New
+  York, au Sénat [house-democratic-leader]. Sa légitimité institutionnelle n'est
+  pas en cause (la minorité occupe les postes de chef de file en comité, se
+  présente aux élections prévues et ne rencontre aucun obstacle juridique à
+  s'organiser), de sorte que la question opérante est procédurale et non pas une
+  question de légitimité. Structurellement, il s'agit d'un système où un parti
+  détenant la présidence et les deux chambres ne peut pas légiférer seul : les
+  contraintes qui lient sont le seuil de soixante voix, le seuil de 218
+  signatures et le contrôle judiciaire, dont aucun ne suit la division partisane
+  du législatif.
+
+
+  La question de savoir si le pouvoir opérant suit la répartition
+  constitutionnelle est contestée, et la contestation s'est jouée dans les deux
+  sens le même jour. L'article II confère le pouvoir exécutif à un président élu
+  séparément, qui ne dépend pas de la confiance du Congrès
+  [calibration-executive-source]. Le 29 juin 2026, la Cour suprême a jugé, par
+  six voix contre trois, que les dispositions législatives ne permettant au
+  président de révoquer les commissaires de la Federal Trade Commission que pour
+  motif valable violent la Constitution; la décision a renversé l'arrêt
+  Humphrey's Executor et invalidé les protections contre la révocation
+  applicables à ces commissaires et, selon la lecture du Congressional Research
+  Service, vraisemblablement à ceux d'autres organismes collégiaux exerçant un
+  pouvoir exécutif [crs-lsb11448-slaughter]. Le même jour, dans une affaire née
+  de la tentative de révocation de la gouverneure Lisa Cook (première
+  gouverneure de la Réserve fédérale qu'un président ait cherché à démettre en
+  111 ans d'existence de l'institution), la Cour a jugé, par cinq voix contre
+  quatre, que les protections pour motif valable applicables aux gouverneurs de
+  la Réserve fédérale sont constitutionnelles et exigent un préavis et une
+  audience avant qu'une révocation prenne effet, et elle a refusé de suspendre
+  l'injonction maintenant Lisa Cook en fonction
+  [crs-lsb11449-cook][scotus-trump-v-cook-2026]. Le juge en chef Roberts a
+  rédigé les deux opinions, avec des majorités différentes. Le contrôle
+  présidentiel sur les organismes collégiaux s'est étendu; la banque centrale en
+  a été soustraite.
 political_rightsAndChecks_en: >-
   The federal judiciary is appointed by the President with Senate confirmation
   and holds life tenure, and judicial review has been exercised since Marbury v.
@@ -4878,6 +5032,128 @@ sources: |-
       "volatility": "Med"
     },
     {
+      "id": "nara-electoral-college-2024",
+      "name": "2024 Electoral College Results",
+      "nameFr": "2024 Electoral College Results",
+      "url": "https://www.archives.gov/electoral-college/2024",
+      "desc": "Official electoral-vote record of the Office of the Federal Register, National Archives and Records Administration, which coordinates Electoral College functions between the states and Congress; primary federal record of the certified result.",
+      "descFr": "Relevé officiel des votes électoraux de l'Office of the Federal Register (National Archives and Records Administration), qui coordonne les fonctions du Collège électoral entre les États et le Congrès; registre fédéral primaire du résultat certifié. Titre traduit : « Résultats du Collège électoral de 2024 ».",
+      "publicationDate": "2025-01-06",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "crs-rl30360-cloture",
+      "name": "Filibusters and Cloture in the Senate",
+      "nameFr": "Filibusters and Cloture in the Senate",
+      "url": "https://www.congress.gov/crs-product/RL30360",
+      "desc": "Standing report of the Congressional Research Service on Senate Rule XXII, setting out the three-fifths cloture threshold, the majority threshold for nominations, and the exemptions.",
+      "descFr": "Rapport permanent du Congressional Research Service sur la règle XXII du Sénat, exposant le seuil de clôture des trois cinquièmes, le seuil de majorité pour les nominations et les exemptions. Titre traduit : « Obstruction et clôture au Sénat ».",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "crs-lsb11448-slaughter",
+      "name": "Trump v. Slaughter and the Future of For-Cause Removal Protections",
+      "nameFr": "Trump v. Slaughter and the Future of For-Cause Removal Protections",
+      "url": "https://www.congress.gov/crs-product/LSB11448",
+      "desc": "Legal Sidebar of the Congressional Research Service analysing the Supreme Court's 29 June 2026 decision on removal of Federal Trade Commission commissioners and its likely reach to other commission-style agencies.",
+      "descFr": "Note juridique (Legal Sidebar) du Congressional Research Service analysant la décision de la Cour suprême du 29 juin 2026 sur la révocation des commissaires de la Federal Trade Commission et sa portée probable sur d'autres agences de type commission. Titre traduit : « Trump v. Slaughter et l'avenir des protections contre la révocation sans motif ».",
+      "publicationDate": "2026-07-02",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "crs-lsb11449-cook",
+      "name": "Trump v. Cook and For-Cause Removal of Federal Reserve Governors",
+      "nameFr": "Trump v. Cook and For-Cause Removal of Federal Reserve Governors",
+      "url": "https://www.congress.gov/crs-product/LSB11449",
+      "desc": "Legal Sidebar of the Congressional Research Service analysing the Supreme Court's 29 June 2026 decision on removal of Federal Reserve governors, the notice-and-hearing requirement, and the options open to Congress.",
+      "descFr": "Note juridique (Legal Sidebar) du Congressional Research Service analysant la décision de la Cour suprême du 29 juin 2026 sur la révocation des gouverneurs de la Réserve fédérale, l'exigence de préavis et d'audience, et les options ouvertes au Congrès. Titre traduit : « Trump v. Cook et la révocation sans motif des gouverneurs de la Réserve fédérale ».",
+      "publicationDate": "2026-07-06",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "scotus-trump-v-cook-2026",
+      "name": "Trump v. Cook, No. 25A312",
+      "nameFr": "Trump v. Cook, No. 25A312",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25a312.html",
+      "desc": "Official Supreme Court docket for Trump v. Cook (No. 25A312), the case record linking the opinion and orders, argued 21 January 2026 and decided 29 June 2026; primary judicial source.",
+      "descFr": "Rôle officiel de la Cour suprême des États-Unis pour Trump v. Cook (n° 25A312), dossier de l'affaire reliant l'opinion et les ordonnances, plaidée le 21 janvier 2026 et rendue le 29 juin 2026; source judiciaire primaire.",
+      "publicationDate": "2026-06-29",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "scott-senate-nordone-appointment",
+      "name": "Sen. Tim Scott releases statement on appointment of Darline Graham Nordone to the U.S. Senate",
+      "nameFr": "Sen. Tim Scott releases statement on appointment of Darline Graham Nordone to the U.S. Senate",
+      "url": "https://www.scott.senate.gov/media-center/press-releases/sen-tim-scott-releases-statement-on-appointment-of-darline-graham-nordone-to-the-u-s-senate/",
+      "desc": "Official Senate office release recording the gubernatorial appointment to complete the late Senator Graham's term; a serving senator's official site, cited for the appointment fact rather than for its characterisations.",
+      "descFr": "Communiqué officiel du bureau d'un sénateur consignant la nomination par le gouverneur pour achever le mandat du regretté sénateur Graham; site officiel d'un sénateur en exercice, cité pour le fait de la nomination et non pour ses caractérisations. Titre traduit : « Le sénateur Tim Scott publie une déclaration sur la nomination de Darline Graham Nordone au Sénat des États-Unis ».",
+      "publicationDate": "2026-07-13",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "gasos-ga13-special",
+      "name": "July 28th US House District 13 Special Election",
+      "nameFr": "July 28th US House District 13 Special Election",
+      "url": "https://sos.ga.gov/july-28th-us-house-district-13-special-election",
+      "desc": "Official election page of the Georgia Secretary of State for the special election called to fill the vacancy caused by the death of Representative David Scott, carrying the election and runoff dates and the returns; primary state election authority.",
+      "descFr": "Page électorale officielle du secrétaire d'État de Géorgie pour l'élection spéciale convoquée afin de pourvoir la vacance causée par le décès du représentant David Scott, portant les dates de l'élection et du second tour ainsi que les résultats; autorité électorale primaire de l'État. Titre traduit : « Élection spéciale du 28 juillet pour le 13e district de la Chambre des représentants des États-Unis ».",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "frReview": true
+    },
+    {
+      "id": "crs-r45920-discharge",
+      "name": "Discharge Procedure in the House",
+      "nameFr": "Discharge Procedure in the House",
+      "url": "https://www.congress.gov/crs-product/R45920",
+      "desc": "Report of the Congressional Research Service on clause 2 of House Rule XV, setting out the 218-signature threshold, the procedural sequence, and counts of petitions reaching the threshold by Congress.",
+      "descFr": "Rapport du Congressional Research Service sur la clause 2 de la règle XV de la Chambre, exposant le seuil de 218 signatures, la séquence procédurale et le nombre de pétitions ayant atteint le seuil par législature. Titre traduit : « Procédure de décharge à la Chambre ».",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "house-democratic-leader",
+      "name": "Office of the Democratic Leader — About the House Democratic Leader",
+      "nameFr": "Office of the Democratic Leader — About the House Democratic Leader",
+      "url": "https://democraticleader.house.gov/about-house-democratic-leader",
+      "desc": "Official House website of the Office of the Democratic Leader giving the leader's identity, district and election to the post; a party office and partisan in its characterisations, cited only for factual leadership identification.",
+      "descFr": "Site officiel de la Chambre du Bureau du chef de file démocrate donnant l'identité du chef de file, sa circonscription et son élection à ce poste; bureau partisan dans ses caractérisations, cité uniquement pour l'identification factuelle de la direction. Titre traduit : « Bureau du chef de file démocrate — À propos du chef de file démocrate de la Chambre ».",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
       "id": "fao-forest-water-usa",
       "name": "FAOSTAT — Forestry and Land Use Data (United States)",
       "nameFr": "FAOSTAT — Forestry and Land Use Data (United States)",
@@ -4917,11 +5193,11 @@ sources: |-
       "id": "pew-trust-in-government",
       "name": "Public Trust in Government: 1958-2025",
       "nameFr": "Public Trust in Government: 1958-2025",
-      "url": "https://www.pewresearch.org/politics/2025/06/24/public-trust-in-government-1958-2025/",
+      "url": "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
       "desc": "Pew Research Center's longitudinal survey series tracking American trust in federal government; designated primary instrument for cohesion, with partisan-sorting caveat.",
       "descFr": "Série d'enquêtes longitudinales du Pew Research Center suivant la confiance des Américains envers le gouvernement fédéral; instrument primaire désigné avec réserve sur le biais partisan.",
-      "publicationDate": "2025-06-24",
-      "accessDate": "2026-07-18",
+      "publicationDate": "2025-12-04",
+      "accessDate": "2026-08-02",
       "confidence": "Med",
       "citationType": "Fact",
       "volatility": "Med"
