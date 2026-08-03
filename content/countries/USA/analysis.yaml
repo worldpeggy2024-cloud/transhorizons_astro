@@ -1383,11 +1383,11 @@ political_powerStructure_en: >-
   Legislative control is stated separately because the system permits
   divergence. In the Senate (100 seats) Republicans hold 53 and Democrats 45,
   with two independents — Angus King and Bernie Sanders — caucusing with the
-  Democrats [senate-partydiv]. That division survived a
-  change of membership in July 2026: following the death of Senator Lindsey
-  Graham of South Carolina, Governor Henry McMaster appointed Darline Graham
-  Nordone to complete the term on 13 July, and she was sworn in the following
-  day [scott-senate-nordone-appointment]. In the House of Representatives (435
+  Democrats [senate-partydiv]. That division survived a change of membership in
+  July 2026: following the death of Senator Lindsey Graham of South Carolina,
+  Governor Henry McMaster appointed Darline Graham Nordone to complete the term
+  on 13 July, and she was sworn in the following day
+  [scott-senate-nordone-appointment]. In the House of Representatives (435
   seats) the chamber's own party-breakdown page, accessed 2 August 2026, records
   218 Republicans, 212 Democrats, one independent and four vacancies, the page
   having last been revised on 10 June 2026 [house-partybreakdown]. Government is
@@ -1452,12 +1452,13 @@ political_powerStructure_en: >-
   that wield executive power [crs-lsb11448-slaughter]. The same day, in a case
   arising from the attempted removal of Governor Lisa Cook — the first Federal
   Reserve governor a president has moved to fire in the institution's 111-year
-  history — the Court held by five votes to four that the for-cause protections
-  applicable to Federal Reserve governors are constitutional and require notice
-  and a hearing before removal takes effect, and it declined to stay the
-  injunction keeping Cook in office
-  [crs-lsb11449-cook][scotus-trump-v-cook-2026]. Chief Justice Roberts wrote
-  both opinions, with different majorities. Presidential control over the
+  history — the Court held by five votes to four that the President's asserted
+  cause for removing a Federal Reserve governor is subject to judicial review,
+  that any definition of cause must reflect the institution's particular history
+  and role, and that the governor was entitled to notice and an opportunity to
+  respond before removal; it declined to stay the injunction keeping Cook in
+  office [crs-lsb11449-cook][scotus-trump-v-cook-2026]. Chief Justice Roberts
+  wrote both opinions, with different majorities. Presidential control over the
   commission-style agencies expanded; the central bank was carved out of it.
 political_powerStructure_fr: >-
   Les États-Unis sont une république présidentielle fédérale où l'exécutif et le
@@ -1475,17 +1476,16 @@ political_powerStructure_fr: >-
   Le contrôle du législatif est énoncé séparément parce que le système permet la
   divergence. Au Sénat (100 sièges), les républicains en détiennent 53 et les
   démocrates 45, deux indépendants (Angus King et Bernie Sanders) siégeant avec
-  le caucus démocrate [senate-partydiv]. Cette
-  répartition a survécu à un changement de composition en juillet 2026 : à la
-  suite du décès du sénateur Lindsey Graham, de la Caroline du Sud, le
-  gouverneur Henry McMaster a nommé Darline Graham Nordone pour achever le
-  mandat le 13 juillet; elle a prêté serment le lendemain
-  [scott-senate-nordone-appointment]. À la Chambre des représentants (435
-  sièges), la page de répartition partisane de la chambre elle-même, consultée
-  le 2 août 2026, fait état de 218 républicains, 212 démocrates, un indépendant
-  et quatre sièges vacants, la page n'ayant pas été révisée depuis le 10 juin
-  2026 [house-partybreakdown]. Le gouvernement est donc unifié plutôt que
-  divisé.
+  le caucus démocrate [senate-partydiv]. Cette répartition a survécu à un
+  changement de composition en juillet 2026 : à la suite du décès du sénateur
+  Lindsey Graham, de la Caroline du Sud, le gouverneur Henry McMaster a nommé
+  Darline Graham Nordone pour achever le mandat le 13 juillet; elle a prêté
+  serment le lendemain [scott-senate-nordone-appointment]. À la Chambre des
+  représentants (435 sièges), la page de répartition partisane de la chambre
+  elle-même, consultée le 2 août 2026, fait état de 218 républicains, 212
+  démocrates, un indépendant et quatre sièges vacants, la page n'ayant pas été
+  révisée depuis le 10 juin 2026 [house-partybreakdown]. Le gouvernement est
+  donc unifié plutôt que divisé.
 
 
   Les sièges vacants se comblent à des vitesses différentes dans les deux
@@ -1556,251 +1556,851 @@ political_powerStructure_fr: >-
   de la tentative de révocation de la gouverneure Lisa Cook (première
   gouverneure de la Réserve fédérale qu'un président ait cherché à démettre en
   111 ans d'existence de l'institution), la Cour a jugé, par cinq voix contre
-  quatre, que les protections pour motif valable applicables aux gouverneurs de
-  la Réserve fédérale sont constitutionnelles et exigent un préavis et une
-  audience avant qu'une révocation prenne effet, et elle a refusé de suspendre
-  l'injonction maintenant Lisa Cook en fonction
+  quatre, que le motif invoqué par le président pour révoquer une gouverneure de
+  la Réserve fédérale était susceptible de contrôle judiciaire, que toute
+  définition du motif valable devait tenir compte de l'histoire et du rôle
+  particuliers de l'institution, et que la gouverneure avait droit à un préavis
+  et à la possibilité de se faire entendre avant sa révocation; elle a refusé de
+  suspendre l'injonction maintenant Lisa Cook en fonction
   [crs-lsb11449-cook][scotus-trump-v-cook-2026]. Le juge en chef Roberts a
   rédigé les deux opinions, avec des majorités différentes. Le contrôle
   présidentiel sur les organismes collégiaux s'est étendu; la banque centrale en
   a été soustraite.
 political_rightsAndChecks_en: >-
-  The federal judiciary is appointed by the President with Senate confirmation
-  and holds life tenure, and judicial review has been exercised since Marbury v.
-  Madison [marbury-v-madison-1803][constitution-usa-1787]. Independent scorers
-  document measured erosion of checks: Freedom House rated the United States 81
-  of 100 in its Freedom in the World 2026 report, a 3-point decline, and per Pew
-  Research Center the US rating from 2005 to 2025 declined more than any other
-  country Freedom House categorizes as 'free' except Nauru and Bulgaria —
-  Freedom House is an advocacy-oriented US-based scorer whose ratings are
-  interpretive [freedomhouse-usa-2026]. V-Dem's Democracy Report 2026 downgraded
-  the United States from 'liberal democracy' to 'electoral democracy' for the
-  first time in over five decades and characterises the decline as unprecedented
-  in modern history [vdem-democracy-report-2026]. The World Justice Project Rule
-  of Law Index 2025 ranked the United States 27th of 143 countries overall and
-  112th of 143 on access to civil justice [wjp-rule-of-law-2025]. Transparency
-  International's 2025 Corruption Perceptions Index scored the United States 64
-  of 100 and ranked it 29th of 182, its lowest-ever score, down from 65 in 2024
-  [transparency-cpi-2025]. On media, Freedom House records a free and diverse
-  press under strong constitutional protection but eroded by government
-  pressure, market concentration and partisan polarisation
+  Federal judges are nominated by the President and confirmed by the Senate,
+  hold office during good behaviour rather than for fixed terms, and cannot have
+  their salaries reduced while in office; the power of judicial review has been
+  exercised since Marbury v. Madison in 1803
+  [constitution-usa-1787][marbury-v-madison-1803]. Independence is observable in
+  outcome rather than asserted: on 29 June 2026 the Supreme Court ruled for the
+  President on removal of Federal Trade Commission commissioners and against him
+  on removal of a Federal Reserve governor, declining to disturb the injunction
+  that kept his removal target in office, with the Chief Justice writing both
+  opinions [crs-lsb11448-slaughter][crs-lsb11449-cook]. The court that expanded
+  executive control over the commission-style agencies is the same court that
+  refused to extend it to the central bank, holding that the President's
+  asserted cause for removing a Federal Reserve governor is subject to judicial
+  review. Chief Justice Roberts wrote both opinions, joined by two almost
+  entirely different sets of justices; only one member of the Court was in both
+  majorities. The Inter-American Commission on Human Rights, reviewing federal
+  measures adopted in 2025, recorded that many had been challenged before United
+  States courts and read this as the continued operation of the country's system
+  of checks and balances, while expressing concern at public statements by
+  senior officials that could undermine the credibility and independence of the
+  judiciary [iachr-usa-2025].
+
+
+  Press freedom is constitutionally protected and materially declining.
+  Reporters Without Borders placed the United States 64th of 180 countries in
+  its 2026 World Press Freedom Index, a fall of seven places, attributing the
+  slide to growing political pressure [rsf-index-2026]. The Inter-American
+  Commission identified changes and exclusions to the accreditation of
+  journalists covering the federal government, Federal Communications Commission
+  investigations into broadcasters over content deemed critical of the
+  administration, and funding cuts to national and international media outlets,
+  assessing that these weaken public access to plural and independent
+  information [iachr-usa-2025]. Freedom House records a free and diverse press
+  under strong constitutional protection, eroded by government pressure, market
+  concentration and partisan polarisation; Freedom House is a United
+  States-based advocacy-oriented scorer and its ratings are interpretive
   [freedomhouse-usa-2026].
+
+
+  On civil liberties and human rights, the regional treaty body has moved from
+  concern to adjudication, and the state has not answered. The Inter-American
+  Commission on Human Rights — the Organization of American States organ before
+  which the United States answers under the American Declaration of the Rights
+  and Duties of Man — published Merits Report No. 60/25 in Case 14.042 on 28
+  April 2025, holding the country responsible for violating the rights to life,
+  personal integrity, health, justice and humane treatment during arrest in the
+  death of Anastasio Hernández Rojas in Customs and Border Protection custody
+  [iachr-merits-60-25]. The finding reaches past the individual case to the
+  legal framework: the Commission concluded that federal and state rules
+  condition the use of force, including lethal force, on an officer's
+  "reasonable belief", require no assessment of proportionality, and do not
+  clearly distinguish general from lethal force — one state expressly invokes
+  proportionality, three urge officers to seek alternatives before deploying
+  force, and three generally require a warning before deadly force
+  [iachr-merits-60-25]. It also recorded that of thousands of police-related
+  deaths between 2005 and 2015, 54 officers were charged and most were released
+  or acquitted [iachr-merits-60-25]. The Commission transmitted its findings in
+  December 2024 requesting a response within two months, and again in March 2025
+  allowing three further weeks; no response was received either time, and it
+  published the report under Article 47.3 of its Rules of Procedure
+  [iachr-pr-85-25]. Separately, in March 2025 the Commission recorded the
+  detention and deportation of foreign-born scholars lawfully resident in the
+  country in response to their political speech, entry denials based on private
+  messages critical of the administration, the cancellation of federal
+  university funding conditioned on disciplinary action against student
+  protesters, and the deportation of more than 200 Venezuelan nationals to a
+  third-country prison under the Alien Enemies Act of 1798 [iachr-usa-2025].
+  There is no accredited national human-rights institution: the United States
+  appears nowhere on the accreditation chart of the Global Alliance of National
+  Human Rights Institutions, which as of 4 June 2025 listed 118 reviewed
+  institutions worldwide — 91 fully compliant with the Paris Principles and 27
+  partially compliant — including eighteen in the Americas, among them Canada
+  and Mexico [ganhri-accreditation-chart].
+
+
+  Composite scorers, which measure different things and should not be read as
+  one instrument, register decline across all of them. Freedom House rated the
+  United States 81 of 100 in Freedom in the World 2026, a three-point fall
+  [freedomhouse-usa-2026]. The Varieties of Democracy project, an academic
+  measurement programme based at the University of Gothenburg, reclassified the
+  United States from liberal democracy to electoral democracy in its 2026
+  Democracy Report, the first such downgrade in more than five decades, and
+  characterises the decline as unprecedented in modern history
+  [vdem-democracy-report-2026]. The World Justice Project, an independent
+  civil-society organisation measuring rule of law through household and expert
+  surveys, ranked the country 27th of 143 overall and 112th of 143 on access to
+  civil justice in its 2025 index [wjp-rule-of-law-2025]. Transparency
+  International, an anti-corruption advocacy organisation whose index measures
+  perceived rather than measured corruption, scored the United States 64 of 100
+  in its 2025 Corruption Perceptions Index, its lowest score since the index
+  began, down from 65 in 2024 [transparency-cpi-2025].
 political_rightsAndChecks_fr: >-
-  La magistrature fédérale est nommée par le président avec confirmation du
-  Sénat et jouit d'un mandat à vie, le contrôle de constitutionnalité s'exerçant
-  depuis l'arrêt Marbury v. Madison
-  [marbury-v-madison-1803][constitution-usa-1787]. Les évaluateurs indépendants
-  documentent une érosion mesurée des contre-pouvoirs : Freedom House a attribué
-  aux États-Unis 81 sur 100 dans son rapport Freedom in the World 2026, soit un
-  recul de 3 points, et selon le Pew Research Center la note américaine a, de
-  2005 à 2025, davantage reculé que celle de tout autre pays classé « libre »
-  par Freedom House, hormis Nauru et la Bulgarie — Freedom House étant un
-  évaluateur américain à vocation militante dont les notes sont interprétatives
-  [freedomhouse-usa-2026]. Le rapport Democracy Report 2026 de V-Dem a
-  rétrogradé les États-Unis de « démocratie libérale » à « démocratie
-  électorale » pour la première fois en plus de cinquante ans, qualifiant ce
-  déclin d'inédit dans l'histoire moderne [vdem-democracy-report-2026]. L'indice
-  de l'État de droit 2025 du World Justice Project classe les États-Unis 27e sur
-  143 pays au total et 112e sur 143 pour l'accès à la justice civile
-  [wjp-rule-of-law-2025]. L'indice de perception de la corruption 2025 de
-  Transparency International attribue aux États-Unis 64 sur 100 et un rang de
-  29e sur 182, leur plus bas score jamais enregistré, contre 65 en 2024
-  [transparency-cpi-2025]. Concernant les médias, Freedom House constate une
-  presse libre et plurielle sous forte protection constitutionnelle, mais érodée
-  par la pression gouvernementale, la concentration du marché et la polarisation
-  partisane [freedomhouse-usa-2026].
+  Les juges fédéraux sont nommés par le président et confirmés par le Sénat,
+  occupent leur charge tant qu'ils en sont dignes plutôt que pour un mandat
+  déterminé, et leur traitement ne peut être réduit pendant qu'ils sont en
+  fonction; le pouvoir de contrôle judiciaire s'exerce depuis l'arrêt Marbury v.
+  Madison de 1803 [constitution-usa-1787][marbury-v-madison-1803].
+  L'indépendance s'observe dans les résultats plutôt qu'elle ne s'affirme : le
+  29 juin 2026, la Cour suprême a tranché en faveur du président sur la
+  révocation des commissaires de la Federal Trade Commission et contre lui sur
+  celle d'une gouverneure de la Réserve fédérale, refusant de lever l'injonction
+  qui maintenait en fonction la personne visée; le juge en chef rédigeant les
+  deux opinions [crs-lsb11448-slaughter][crs-lsb11449-cook]. La cour qui a
+  étendu le contrôle de l'exécutif sur les organismes collégiaux est la même que
+  celle qui a refusé de l'étendre à la banque centrale, jugeant que le motif
+  invoqué pour révoquer un gouverneur de la Réserve fédérale est susceptible de
+  contrôle judiciaire. Le juge en chef Roberts a rédigé les deux opinions,
+  entouré de deux ensembles de juges presque entièrement différents; un seul
+  membre de la Cour figurait dans les deux majorités. La Commission
+  interaméricaine des droits de l'homme (l'organe de l'Organisation des États
+  américains devant lequel les États-Unis répondent au titre de la Déclaration
+  américaine des droits et devoirs de l'homme), examinant les mesures fédérales
+  adoptées en 2025, a constaté que plusieurs d'entre elles avaient été
+  contestées devant les tribunaux des États-Unis et y a vu le fonctionnement
+  continu du système national de freins et contrepoids, tout en s'inquiétant de
+  déclarations publiques de hauts responsables susceptibles de miner la
+  crédibilité et l'indépendance de la magistrature [iachr-usa-2025].
+
+
+  La liberté de la presse est protégée par la Constitution et se dégrade
+  concrètement. Reporters sans frontières a classé les États-Unis au 64e rang
+  sur 180 pays dans son Classement mondial de la liberté de la presse 2026, en
+  recul de sept places; attribuant ce glissement à une pression politique
+  croissante [rsf-index-2026]. La Commission interaméricaine a relevé des
+  modifications et des exclusions dans l'accréditation des journalistes couvrant
+  le gouvernement fédéral, des enquêtes de la Federal Communications Commission
+  visant des diffuseurs pour des contenus jugés critiques envers
+  l'administration, ainsi que des coupes de financement touchant des médias
+  nationaux et internationaux; estimant que ces mesures affaiblissent l'accès du
+  public à une information plurielle et indépendante [iachr-usa-2025]. Freedom
+  House fait état d'une presse libre et diversifiée, fortement protégée par la
+  Constitution, mais érodée par la pression gouvernementale, la concentration du
+  marché et la polarisation partisane (Freedom House est un organisme de
+  notation établi aux États-Unis, à vocation militante, et ses évaluations
+  relèvent de l'interprétation) [freedomhouse-usa-2026].
+
+
+  Sur les libertés civiles et les droits de la personne, l'organe régional est
+  passé de la préoccupation à la décision, et l'État n'a pas répondu. La
+  Commission interaméricaine des droits de l'homme a publié le 28 avril 2025 le
+  rapport sur le fond no 60/25 dans l'affaire 14.042, tenant le pays responsable
+  de la violation des droits à la vie, à l'intégrité de la personne, à la santé,
+  à la justice et à un traitement humain pendant l'arrestation, dans le décès
+  d'Anastasio Hernández Rojas sous la garde du service des douanes et de la
+  protection des frontières [iachr-merits-60-25]. La conclusion dépasse le cas
+  individuel pour viser le cadre juridique : la Commission a établi que les
+  règles fédérales et étatiques subordonnent l'usage de la force, y compris
+  létale, à la « conviction raisonnable » de l'agent, n'exigent aucune
+  évaluation de la proportionnalité et ne distinguent pas clairement la force
+  générale de la force létale; un seul État invoque expressément la
+  proportionnalité, trois incitent les agents à chercher des solutions de
+  rechange avant de recourir à la force, et trois exigent généralement un
+  avertissement avant l'usage de la force meurtrière [iachr-merits-60-25]. Elle
+  a également relevé que, sur des milliers de décès liés à des interventions
+  policières entre 2005 et 2015, 54 agents ont été inculpés et la plupart ont
+  été libérés ou acquittés [iachr-merits-60-25]. La Commission a transmis ses
+  conclusions en décembre 2024 en demandant une réponse dans un délai de deux
+  mois, puis de nouveau en mars 2025 en accordant trois semaines
+  supplémentaires; aucune réponse n'a été reçue dans l'un ni l'autre cas, et
+  elle a publié le rapport en vertu de l'article 47.3 de son Règlement
+  [iachr-pr-85-25]. Par ailleurs, en mars 2025, la Commission a fait état de la
+  détention et de l'expulsion d'universitaires nés à l'étranger et résidant
+  légalement au pays en réaction à leurs prises de position politiques, de refus
+  d'entrée fondés sur des messages privés critiques envers l'administration, de
+  l'annulation de financements universitaires fédéraux conditionnée à des
+  sanctions disciplinaires contre des étudiants manifestants, et de l'expulsion
+  de plus de 200 ressortissants vénézuéliens vers une prison d'un pays tiers en
+  vertu de l'Alien Enemies Act de 1798 [iachr-usa-2025]. Il n'existe aucune
+  institution nationale des droits de la personne accréditée : les États-Unis ne
+  figurent nulle part sur le tableau d'accréditation de l'Alliance mondiale des
+  institutions nationales des droits de l'homme, qui recensait au 4 juin 2025
+  118 institutions examinées dans le monde (91 pleinement conformes aux
+  Principes de Paris et 27 partiellement conformes), dont dix-huit dans les
+  Amériques [ganhri-accreditation-chart].
+
+
+  Les organismes de notation composite, qui mesurent des réalités différentes et
+  ne doivent pas être lus comme un instrument unique, enregistrent tous un
+  recul. Freedom House a attribué aux États-Unis 81 points sur 100 dans son
+  rapport Freedom in the World 2026, soit une baisse de trois points
+  [freedomhouse-usa-2026]. Le projet Varieties of Democracy, programme
+  universitaire de mesure établi à l'Université de Göteborg, a reclassé les
+  États-Unis de démocratie libérale à démocratie électorale dans son rapport
+  2026 sur la démocratie, premier déclassement de ce type en plus de cinq
+  décennies, et qualifie ce recul de sans précédent dans l'histoire moderne
+  [vdem-democracy-report-2026]. Le World Justice Project, organisation
+  indépendante de la société civile qui mesure la primauté du droit au moyen
+  d'enquêtes auprès des ménages et d'experts, a classé le pays au 27e rang sur
+  143 au classement général et au 112e rang sur 143 pour l'accès à la justice
+  civile dans son indice de 2025 [wjp-rule-of-law-2025]. Transparency
+  International, organisation militante de lutte contre la corruption dont
+  l'indice mesure la corruption perçue et non mesurée, a attribué aux États-Unis
+  64 points sur 100 dans son Indice de perception de la corruption 2025 (son
+  plus faible résultat depuis la création de l'indice), contre 65 en 2024
+  [transparency-cpi-2025].
 political_stabilityDrivers_en: >-
-  The regime is legitimated by regular competitive elections and a long
-  constitutional tradition, and armed forces and federal law-enforcement are
-  under civilian command through the President as commander-in-chief
-  [constitution-usa-1787]. The 2026 National Defense Strategy directs the
-  military toward homeland defence and Western Hemisphere operations, including
-  border security and counter-narcotics support, indicating executive use of the
-  armed forces for domestic-adjacent missions [ndstrategy-2026]. Elite cohesion
-  within the governing bloc is high — unified Republican control of the
-  presidency and both chambers [senate-partydiv][house-partybreakdown] — while
-  cross-party elite cohesion is low, reflected in institutional trust that is
-  sharply partisan-sorted [pew-trust-in-government]. Corruption safeguards
-  weakened: Freedom House recorded a score decline tied to the erosion of
-  anticorruption safeguards under the administration [freedomhouse-usa-2026].
+  Legitimation rests on regular competitive elections and a written constitution
+  in continuous operation since 1789; the Inter-American Commission on Human
+  Rights, reviewing the country in 2025, described its constitutional framework,
+  independent judiciary, free press and active civil society as the pillars of
+  that tradition [constitution-usa-1787][iachr-usa-2025]. The current executive
+  holds office by an electoral-college margin of 312 to 226
+  [nara-electoral-college-2024].
+
+
+  Control of the coercive apparatus runs along three separate lines, and
+  conflating them misstates the structure. The President is commander-in-chief
+  of the armed forces under Article II [constitution-usa-1787]. Federal
+  law-enforcement agencies answer to the President not through that clause but
+  through the statutory power to appoint and remove their heads — the power the
+  Supreme Court expanded in June 2026 by voiding for-cause removal protections
+  at the Federal Trade Commission and, in the Congressional Research Service's
+  reading, likely at other commission-style agencies that wield executive power
+  [crs-lsb11448-slaughter]. The National Guard answers to whoever has called it:
+  under state active duty the governor commands and the state pays; under Title
+  32 the state retains command with federal funding; under Title 10 the
+  President federalises the force, which then falls under the Posse Comitatus
+  Act of 1878, barring the armed forces from executing the laws except where the
+  Constitution or an Act of Congress expressly authorises it
+  [crs-r42659-posse-comitatus]. Congress reaffirmed that statute's continued
+  applicability in 6 U.S.C. § 466, while acknowledging it is not a complete
+  barrier where the President determines the armed forces are required to
+  respond to war, insurrection or other serious emergency [uscode-6-466].
+
+
+  That third line was contested and judicially settled during the period. On 4
+  October 2025 the Secretary invoked 10 U.S.C. § 12406 to federalise up to 300
+  members of the Illinois National Guard over the governor's objection, after
+  the governor declined to mobilise them under Title 32, and the following day
+  federalised up to 400 Texas Guard members for deployment to Chicago
+  [scotus-trump-v-illinois-2025]. On 23 December 2025 the Supreme Court denied
+  the government's emergency application by six votes to three, reading "regular
+  forces" in § 12406(3) to mean the regular forces of the United States military
+  — so that the President must be unable to execute federal law with the
+  professional military before federalising a state's Guard
+  [scotus-trump-v-illinois-2025]. Governors in California and Oregon had
+  obtained parallel injunctions [scotus-trump-v-illinois-2025]. Under the
+  Federal Protection Mission, National Guard soldiers in Title 10 status served
+  under the command of United States Army North with the Department of Homeland
+  Security as lead federal agency [northcom-federal-protection-mission].
+  Demobilisation in Portland, Los Angeles and Chicago was completed on 21
+  January 2026, and Texas National Guard personnel were released from stand-by
+  on 11 March 2026 [northcom-federal-protection-mission]. 
+
+  The 2026 National Defense Strategy directs the military toward homeland
+  defence and Western Hemisphere operations, including border security and
+  counter-narcotics support [ndstrategy-2026].
+
+
+  Loyalty in the narrow sense is not the variable in question: no episode in the
+  period involved forces declining lawful orders. What was contested was who is
+  entitled to issue them, and the answer was supplied by courts rather than by
+  the security forces themselves.
+
+
+  There is no governing coalition in the parliamentary sense; the system
+  produces single-party control of each institution rather than negotiated
+  coalitions, and one party currently holds the presidency, the Senate at 53
+  seats and the House at 218 [senate-partydiv][house-partybreakdown]. Elite
+  cohesion within that bloc is high in formal terms and measurably imperfect in
+  operation: four discharge petitions reached the 218-signature threshold during
+  the first session of the 119th Congress, against two across the whole of the
+  118th, and since the minority holds 212 seats each necessarily carried
+  majority-party signatures [crs-r45920-discharge]. The apex court divided
+  differently on each of the three 2026 questions concerning executive power,
+  ruling for the President on removal at the Federal Trade Commission, against
+  him on removal at the Federal Reserve, where it held his asserted cause
+  subject to judicial review
+  [crs-lsb11448-slaughter][crs-lsb11449-cook][scotus-trump-v-illinois-2025].
+
+
+  Business-elite alignment is being restructured by firm-specific policy rather
+  than by sectoral rule. Between January 2025 and July 2026 the federal
+  government announced thirty-seven deals involving direct ownership worth $27.6
+  billion [cfr-equity-tracker-2026]. The International Monetary Fund records
+  that the administration has taken ownership stakes in named companies,
+  loosened semiconductor export restrictions for certain firms in return for a
+  25% levy on the revenues from those sales, and imposed a 25% import tariff on
+  semiconductor producers viewed as not supporting expansion of the domestic
+  technology supply chain; the Fund assesses such firm-specific policies as
+  distortionary and likely to misallocate resources [imf-art-iv-usa-2026]. The
+  operative alignment mechanism is therefore transactional and
+  company-by-company, which makes it responsive to the executive but weakly
+  institutionalised.
 political_stabilityDrivers_fr: >-
-  Le régime tire sa légitimité d'élections compétitives régulières et d'une
-  longue tradition constitutionnelle, les forces armées et les forces fédérales
-  de maintien de l'ordre relevant du commandement civil via le président, chef
-  des armées [constitution-usa-1787]. La Stratégie de défense nationale 2026
-  oriente l'armée vers la défense du territoire et les opérations dans
-  l'hémisphère occidental, dont la sécurité frontalière et l'appui à la lutte
-  antidrogue, signe d'un recours de l'exécutif aux forces armées pour des
-  missions à caractère quasi intérieur [ndstrategy-2026]. La cohésion des élites
-  au sein du bloc au pouvoir est forte — contrôle républicain unifié de la
-  présidence et des deux chambres [senate-partydiv][house-partybreakdown] —
-  tandis que la cohésion inter-partisane est faible, comme en témoigne une
-  confiance institutionnelle fortement clivée selon les lignes partisanes
-  [pew-trust-in-government]. Les garde-fous anticorruption se sont affaiblis :
-  Freedom House a enregistré un recul de note lié à l'érosion de ces garde-fous
-  sous l'administration [freedomhouse-usa-2026].
+  La légitimation repose sur des élections régulières et concurrentielles et sur
+  une constitution écrite en vigueur sans interruption depuis 1789; la
+  Commission interaméricaine des droits de l'homme, examinant le pays en 2025, a
+  décrit son cadre constitutionnel, sa magistrature indépendante, sa presse
+  libre et sa société civile active comme les piliers de cette tradition
+  [constitution-usa-1787][iachr-usa-2025]. L'exécutif en place détient sa charge
+  grâce à une marge de 312 voix contre 226 au collège électoral
+  [nara-electoral-college-2024].
+
+
+  Le contrôle de l'appareil coercitif suit trois lignes distinctes, et les
+  confondre revient à décrire faussement la structure. Le président est
+  commandant en chef des forces armées en vertu de l'article II
+  [constitution-usa-1787]. Les organismes fédéraux d'application de la loi
+  relèvent du président non par cette clause, mais par le pouvoir législatif de
+  nommer et de révoquer leurs dirigeants; pouvoir que la Cour suprême a élargi
+  en juin 2026 en invalidant les protections contre la révocation pour motif
+  valable à la Federal Trade Commission et, selon la lecture du Congressional
+  Research Service, vraisemblablement dans d'autres organismes collégiaux
+  exerçant un pouvoir exécutif [crs-lsb11448-slaughter]. La Garde nationale
+  relève de qui l'a appelée : en service actif d'État, le gouverneur commande et
+  l'État paie; sous le titre 32, l'État conserve le commandement avec un
+  financement fédéral; sous le titre 10, le président fédéralise la force, qui
+  tombe alors sous le coup du Posse Comitatus Act de 1878, lequel interdit aux
+  forces armées d'appliquer les lois sauf autorisation expresse de la
+  Constitution ou d'une loi du Congrès [crs-r42659-posse-comitatus]. Le Congrès
+  a réaffirmé la validité continue de cette loi au 6 U.S.C. § 466, tout en
+  reconnaissant qu'elle ne constitue pas un obstacle absolu lorsque le président
+  estime que les forces armées sont nécessaires pour répondre à une guerre, à
+  une insurrection ou à une autre urgence grave [uscode-6-466].
+
+
+  Cette troisième ligne a été contestée et tranchée par les tribunaux au cours
+  de la période. Le 4 octobre 2025, le secrétaire a invoqué le 10 U.S.C. § 12406
+  pour fédéraliser jusqu'à 300 membres de la Garde nationale de l'Illinois
+  malgré l'opposition du gouverneur, après que celui-ci eut refusé de les
+  mobiliser sous le titre 32, puis a fédéralisé le lendemain jusqu'à 400 membres
+  de la Garde du Texas en vue d'un déploiement à Chicago
+  [scotus-trump-v-illinois-2025]. Le 23 décembre 2025, la Cour suprême a rejeté
+  la demande d'urgence du gouvernement par six voix contre trois, interprétant
+  l'expression « regular forces » du § 12406(3) comme désignant les forces
+  régulières de l'armée des États-Unis; de sorte que le président doit être dans
+  l'incapacité d'appliquer la loi fédérale avec l'armée professionnelle avant de
+  fédéraliser la Garde d'un État [scotus-trump-v-illinois-2025]. Les gouverneurs
+  de la Californie et de l'Oregon avaient obtenu des injonctions parallèles
+  [scotus-trump-v-illinois-2025]. Dans le cadre de la Federal Protection
+  Mission, les soldats de la Garde nationale placés sous le titre 10 relevaient
+  du commandement de l'United States Army North, département de la Sécurité
+  intérieure agissant comme organisme fédéral responsable
+  [northcom-federal-protection-mission]. La démobilisation à Portland, à Los
+  Angeles et à Chicago s'est achevée le 21 janvier 2026, et les militaires de la
+  Garde nationale du Texas ont été libérés de l'état d'alerte le 11 mars 2026
+  [northcom-federal-protection-mission]. 
+
+  La Stratégie de défense nationale de 2026 oriente l'armée vers la défense du
+  territoire et les opérations dans l'hémisphère occidental, y compris la
+  sécurité frontalière et l'appui à la lutte antidrogue [ndstrategy-2026].
+
+
+  La loyauté au sens étroit n'est pas la variable en cause : aucun épisode de la
+  période n'a vu des forces refuser des ordres légaux. La contestation portait
+  sur savoir qui avait le droit de les donner; la réponse est venue des
+  tribunaux plutôt que des forces de sécurité elles-mêmes.
+
+
+  Il n'existe pas de coalition gouvernementale au sens parlementaire; le système
+  produit le contrôle de chaque institution par un seul parti plutôt que des
+  coalitions négociées; un même parti détient actuellement la présidence, le
+  Sénat avec 53 sièges et la Chambre avec 218
+  [senate-partydiv][house-partybreakdown]. La cohésion des élites au sein de ce
+  bloc est élevée sur le plan formel et mesurablement imparfaite dans les faits :
+  quatre pétitions de dessaisissement ont atteint le seuil de 218 signatures
+  durant la première session du 119e Congrès, contre deux pendant tout le 118e,
+  et comme la minorité ne détient que 212 sièges, chacune portait nécessairement
+  des signatures de la majorité [crs-r45920-discharge]. La plus haute cour s'est
+  divisée différemment sur chacune des trois questions de 2026 touchant le
+  pouvoir exécutif, tranchant en faveur du président sur la révocation à la
+  Federal Trade Commission, contre lui sur la révocation à la Réserve fédérale,
+  et contre lui sur la révocation à la Réserve fédérale, où elle a jugé le motif
+  invoqué susceptible de contrôle judiciaire
+  [crs-lsb11448-slaughter][crs-lsb11449-cook][scotus-trump-v-illinois-2025].
+
+
+  L'alignement des élites d'affaires se restructure par des politiques visant
+  des entreprises précises plutôt que par des règles sectorielles. Entre janvier
+  2025 et juillet 2026, le gouvernement fédéral a annoncé trente-sept opérations
+  comportant une participation directe, d'une valeur de 27,6 milliards de
+  dollars [cfr-equity-tracker-2026]. Le Fonds monétaire international relève que
+  l'administration a pris des participations dans des entreprises nommées,
+  assoupli les restrictions à l'exportation de semiconducteurs pour certaines
+  d'entre elles en échange d'un prélèvement de 25 % sur les revenus tirés de ces
+  ventes, et imposé un tarif d'importation de 25 % aux producteurs de
+  semiconducteurs jugés ne pas soutenir l'expansion de la chaîne
+  d'approvisionnement technologique nationale; le Fonds estime que de telles
+  politiques ciblant des entreprises précises créent des distorsions et risquent
+  de mal répartir les ressources [imf-art-iv-usa-2026]. Le mécanisme
+  d'alignement opérant est donc transactionnel, entreprise par entreprise; ce
+  qui le rend sensible à l'exécutif, mais faiblement institutionnalisé.
 political_shockAbsorbers_en: >-
-  The economy's scale and the dollar's reserve-currency role cushion fiscal and
-  financial shocks — foreign investors held roughly $9.2 trillion in Treasuries
-  as of December 2025, sustaining low-friction government borrowing
-  [treasury-tic-debt-holders] — and deep, diversified services output provides
-  resilience [cbo-budget-outlook-2026]. Against this, the rising debt trajectory
-  (public debt from 101% of GDP in 2026 toward 120% by 2036, with net interest
-  doubling to $2.1 trillion by 2036) narrows fiscal room
-  [cbo-budget-outlook-2026], and recurrent funding lapses accelerate
-  instability: the FY2026 shutdown ran 43 days (1 October–12 November 2025), the
-  longest full-government shutdown on record, and a further Homeland Security
-  funding lapse beginning 14 February 2026 ran 76 days to 30 April 2026, the
-  longest shutdown of a single federal department on record
-  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations].
+  Four buffers carry most of the absorptive capacity, and one of them is
+  currently degraded. The dollar's reserve role and the depth of the Treasury
+  market sustain government borrowing at scale: foreign holdings stood at
+  roughly $9.2 trillion in December 2025, equal to 31% of publicly held debt
+  [crs-rs22331-foreign-holdings]. That cushion has changed composition, however
+  — the International Monetary Fund records a shift in the non-resident investor
+  base from official-sector holders toward non-bank financial institutions whose
+  behaviour is more price- and risk-sensitive, and names this as the principal
+  external vulnerability [imf-art-iv-usa-2026]. Energy self-sufficiency buffers
+  precisely the shock now in play: total energy exports reached a record 31
+  quadrillion British thermal units in 2025 against 21 quads of imports, for
+  record net exports of 11 quads [eia-energy-trade-2025]. The productive base is
+  broad, with private service-providing industries accounting for 114.1 million
+  of 159.0 million nonfarm payroll jobs [bls-empsit-june2026].
+
+
+  Monetary policy is the buffer under strain. The central bank's operational
+  independence was judicially affirmed in June 2026, when the Supreme Court held
+  that the President's asserted cause for removing a Federal Reserve governor is
+  subject to judicial review and that removal requires notice and an opportunity
+  to respond [crs-lsb11449-cook]. But its room to ease is narrow: the Federal
+  Open Market Committee held the target range at 3½ to 3¾ percent on 29 July
+  2026, where it has stood since December 2025, by a vote of nine to three with
+  all three dissents favouring a quarter-point increase; the Committee reports
+  inflation elevated relative to its 2 percent goal, attributing this in part to
+  supply shocks driving price increases in sectors including energy, and
+  describes activity as expanding despite elevated uncertainty owing in part to
+  the conflict in the Middle East [fomc-statement-july-2026]. Ample reserves are
+  being maintained in the banking system [fomc-statement-july-2026].
+
+
+  The accelerants are fiscal, procedural and structural. Fiscal room is
+  narrowing: debt held by the public stands at about 101% of gross domestic
+  product, with net interest the fastest-growing outlay
+  [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. Legislative response to a
+  shock is slow by construction — 218 Republican seats is exactly the number
+  required for a majority of the full House, and 53 Senate seats is a governing
+  majority but not the sixty needed to close debate on ordinary legislation
+  [house-partybreakdown][senate-partydiv][crs-rl30360-cloture]. Authority over
+  the domestic deployment of force is unsettled rather than resolved: the
+  Supreme Court blocked federalisation of a state National Guard in December
+  2025 on a reading of the statutory trigger, without deciding whether
+  protecting federal property and personnel constitutes executing the law
+  [scotus-trump-v-illinois-2025]. And physical supply is concentrated: the
+  country was 100% net import reliant on 16 nonfuel mineral commodities in 2025,
+  with China the primary source for 14 of the most import-dependent critical
+  minerals [usgs-mcs-2026].
+
+
+  The procedural accelerant is demonstrated rather than hypothetical, though its
+  macroeconomic bite is modest. The fiscal 2026 funding lapse ran 43 days, from
+  1 October to 12 November 2025, the longest full-government shutdown on record,
+  and a further lapse in Homeland Security funding beginning 14 February 2026
+  ran 76 days to 30 April 2026, the longest shutdown of a single federal
+  department on record
+  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. The
+  Congressional Budget Office estimated during the lapse that it would reduce
+  annualised real growth in the fourth quarter of 2025 by one to two percentage
+  points, and that between $7 billion and $14 billion of output in 2025 dollars
+  would not be recovered — $11 billion under the six-week scenario closest to
+  the eventual duration [cbo-shutdown-61823]. The Congressional Research Service
+  reads the combined direct and indirect effects as unlikely to have a large
+  long-term impact, consistent with the three previous long shutdowns, none of
+  which led to recession [crs-r48832-shutdowns]. The accelerant is therefore
+  institutional rather than macroeconomic: what recurs is a demonstrated
+  inability to fund the state on schedule.
 political_shockAbsorbers_fr: >-
-  L'ampleur de l'économie et le rôle du dollar comme monnaie de réserve
-  amortissent les chocs budgétaires et financiers — les investisseurs étrangers
-  détenaient environ 9 200 milliards de dollars de bons du Trésor fin décembre
-  2025, garantissant un endettement public sans heurts
-  [treasury-tic-debt-holders] — et une production de services vaste et
-  diversifiée assure une résilience [cbo-budget-outlook-2026]. En regard, la
-  trajectoire ascendante de la dette (dette publique passant de 101 % du PIB en
-  2026 vers 120 % en 2036, les intérêts nets doublant pour atteindre 2 100
-  milliards de dollars d'ici 2036) réduit la marge budgétaire
-  [cbo-budget-outlook-2026], et les blocages budgétaires répétés accélèrent
-  l'instabilité : la fermeture de l'exercice 2026 a duré 43 jours (1er
-  octobre-12 novembre 2025), la plus longue paralysie complète du gouvernement
-  jamais enregistrée, et un nouveau blocage du financement de la Sécurité
-  intérieure débutant le 14 février 2026 a duré 76 jours, jusqu'au 30 avril
-  2026, la plus longue paralysie d'un seul ministère fédéral jamais enregistrée
-  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations].
+  Quatre facteurs d'atténuation assurent l'essentiel de la capacité
+  d'absorption, et l'un d'eux est actuellement affaibli. Le rôle du dollar comme
+  monnaie de réserve et la profondeur du marché des titres du Trésor soutiennent
+  l'emprunt public à grande échelle : les avoirs étrangers s'élevaient à environ
+  9 200 milliards de dollars en décembre 2025, soit 31 % de la dette détenue par
+  le public [crs-rs22331-foreign-holdings]. Ce coussin a toutefois changé de
+  composition : le Fonds monétaire international constate un déplacement de la
+  base d'investisseurs non résidents (des détenteurs du secteur officiel vers
+  des institutions financières non bancaires dont le comportement est plus
+  sensible aux prix et au risque), et y voit la principale vulnérabilité
+  extérieure [imf-art-iv-usa-2026]. L'autosuffisance énergétique atténue
+  précisément le choc en cours : les exportations totales d'énergie ont atteint
+  un record de 31 quadrillions d'unités thermiques britanniques (quads) en 2025,
+  contre 21 quads d'importations, soit des exportations nettes record de 11
+  quads [eia-energy-trade-2025]. La base productive est large, les services
+  privés comptant pour 114,1 des 159,0 millions d'emplois salariés non agricoles
+  [bls-empsit-june2026].
+
+
+  La politique monétaire est le facteur d'atténuation sous tension.
+  L'indépendance opérationnelle de la banque centrale a été confirmée par les
+  tribunaux en juin 2026, lorsque la Cour suprême a jugé que le motif invoqué
+  pour révoquer un gouverneur de la Réserve fédérale était susceptible de
+  contrôle judiciaire et qu'une révocation exigeait un préavis et la possibilité
+  de se faire entendre [crs-lsb11449-cook]. Toutefois, sa marge
+  d'assouplissement est étroite : le Federal Open Market Committee a maintenu la
+  fourchette cible de 3,5 % à 3,75 % le 29 juillet 2026 (niveau inchangé depuis
+  décembre 2025) par neuf voix contre trois, les trois dissidences réclamant
+  toutes une hausse d'un quart de point; le comité signale une inflation élevée
+  par rapport à sa cible de 2 %, qu'il attribue en partie à des chocs d'offre
+  entraînant des hausses de prix dans certains secteurs, dont l'énergie, et
+  décrit une activité en expansion malgré une forte incertitude tenant en partie
+  au conflit au Moyen-Orient [fomc-statement-july-2026]. Des réserves abondantes
+  sont maintenues dans le système bancaire [fomc-statement-july-2026].
+
+
+  Les facteurs d'aggravation sont budgétaires, procéduraux et structurels. La
+  marge budgétaire se resserre : la dette détenue par le public s'établit à
+  environ 101 % du produit intérieur brut; les intérêts nets constituant le
+  poste de dépense à la croissance la plus rapide
+  [cbo-budget-outlook-2026][crfb-cbo-outlook-2026]. La réponse législative à un
+  choc est lente par construction : 218 sièges républicains correspondent
+  exactement au nombre requis pour une majorité de l'ensemble de la Chambre, et
+  53 sièges au Sénat constituent une majorité de gouvernement, mais non les
+  soixante nécessaires pour clore le débat sur une loi ordinaire
+  [house-partybreakdown][senate-partydiv][crs-rl30360-cloture]. L'autorité sur
+  le déploiement intérieur de la force demeure indécise plutôt que réglée : la
+  Cour suprême a bloqué la fédéralisation de la Garde nationale d'un État en
+  décembre 2025 en interprétant le seuil prévu par la loi, sans trancher la
+  question de savoir si protéger des biens et du personnel fédéraux revient à
+  appliquer la loi [scotus-trump-v-illinois-2025]. Et l'approvisionnement
+  physique est concentré : le pays dépendait à 100 % des importations nettes
+  pour 16 produits minéraux non combustibles en 2025; la Chine étant la source
+  principale de 14 des minéraux critiques les plus dépendants des importations
+  [usgs-mcs-2026].
+
+
+  Le facteur d'aggravation procédural est avéré plutôt qu'hypothétique, même si
+  sa portée macroéconomique reste modeste. L'interruption des crédits de
+  l'exercice 2026 a duré 43 jours (du 1er octobre au 12 novembre 2025), soit la
+  plus longue fermeture de l'ensemble de l'administration jamais enregistrée, et
+  une nouvelle interruption des crédits de la Sécurité intérieure, entamée le 14
+  février 2026, a duré 76 jours jusqu'au 30 avril 2026; soit la plus longue
+  fermeture d'un seul département fédéral jamais enregistrée
+  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. Le
+  Congressional Budget Office a estimé, pendant l'interruption, qu'elle
+  réduirait la croissance réelle annualisée du quatrième trimestre de 2025 de un
+  à deux points de pourcentage et qu'entre 7 et 14 milliards de dollars de
+  production, en dollars de 2025, ne seraient pas récupérés; 11 milliards selon
+  le scénario de six semaines, le plus proche de la durée effective
+  [cbo-shutdown-61823]. Le Congressional Research Service juge que les effets
+  directs et indirects combinés ne devraient pas avoir d'incidence importante à
+  long terme; ce qui concorde avec les trois longues fermetures antérieures,
+  dont aucune n'a provoqué de récession [crs-r48832-shutdowns]. Le facteur
+  d'aggravation est donc institutionnel plutôt que macroéconomique : ce qui se
+  répète, c'est l'incapacité démontrée à financer l'État dans les délais.
 political_constitutionalSubstrate_en: >-
-  The constitutional form is a federal presidential republic founded on the
-  written Constitution of the United States (1787, in force 4 March 1789), which
-  allocates sovereignty between a national government and the states and
-  separates legislative, executive and judicial power [constitution-usa-1787].
-  The Reconstruction Amendments re-founded the terms of citizenship and equal
-  protection (Thirteenth 1865, Fourteenth 1868, Fifteenth 1870)
-  [reconstruction-amendments], and judicial review has anchored the order since
-  Marbury v. Madison [marbury-v-madison-1803]. The legal order is plural and
-  each order is held separately: federal statutory law, supreme over state law
-  under the Supremacy Clause (Article VI) [constitution-usa-1787]; state
-  statutory and common law, each of the 50 states maintaining its own
-  constitution, legislature, courts and code under powers reserved by the Tenth
-  Amendment, with Louisiana retaining a civil-law tradition for private law
-  [constitution-usa-1787]; tribal law, under which federally recognised tribes
-  exercise inherent pre-constitutional sovereignty over their members and Indian
-  country, subject to congressional plenary power and not derived from federal
-  or state law (the Marshall Trilogy; McGirt v. Oklahoma; Oklahoma v.
-  Castro-Huerta; Haaland v. Brackeen)
-  [marshall-trilogy][mcgirt-v-oklahoma-2020][oklahoma-v-castro-huerta-2022][haaland-v-brackeen-2023][usc-title25];
-  and the insular territorial order, under which the five inhabited
-  unincorporated territories are governed under the regime established by the
-  Insular Cases, Congress holding plenary authority and the Constitution
-  applying only selectively, residents holding no presidential vote and no
-  voting congressional representation [insular-cases-1901]. This substrate is in
-  motion, not stable: apex-court doctrine is actively reallocating power. In
-  2026 the Court held in Trump v. Slaughter (No. 25-332, decided 29 June 2026,
-  6–3) that statutory for-cause removal protections for Federal Trade Commission
-  commissioners are unconstitutional, overruling Humphrey's Executor v. United
-  States (1935) and vesting the President with at-will removal of principal
-  officers of independent agencies
-  [trump-v-slaughter-2026][scotus-opinions-portal]; in Trump v. Cook (No.
-  25A312, 2026) the Court, 5–4, allowed Federal Reserve Governor Lisa Cook to
-  remain pending merits review, signalling a central-bank carve-out
-  [trump-v-cook-2026][scotus-opinions-portal]; in Trump v. Barbara (No. 25-365,
-  decided 30 June 2026, 6–3) the Court held that children born in the United
-  States to parents unlawfully or temporarily present are subject to the
-  jurisdiction of the United States and are citizens at birth under the
-  Fourteenth Amendment, striking down Executive Order 14160
-  [trump-v-barbara-2026][scotus-opinions-portal]; and in Watson v. Republican
-  National Committee (decided 29 June 2026, 5–4) the Court held that federal
-  election-day statutes do not prevent states from counting absentee ballots
-  postmarked by election day but received afterward
-  [watson-v-rnc-2026][scotus-opinions-portal]. This 2026 reallocation follows
-  Trump v. United States (2024) on presidential immunity, Trump v. CASA (2025)
-  on nationwide injunctions, Loper Bright (2024) ending Chevron deference, West
-  Virginia v. EPA (2022), and Shelby County v. Holder (2013)
-  [trump-v-usa-2024][trump-v-casa-2025][loper-bright-2024][wv-v-epa-2022][shelby-county-2013].
-  Administrative rules that implement this order are published in the Federal
-  Register [federal-register], and non-partisan analysis is available through
-  the Congressional Research Service [crs-congress-gov].
+  The constitutional form is a federal presidential republic resting on a single
+  written founding instrument, the Constitution of the United States (1787, in
+  force 4 March 1789), which allocates sovereignty between a national government
+  and the states and separates legislative, executive and judicial power
+  [constitution-usa-1787]. Beneath it sit four legal orders that are not
+  reducible to one another. The substrate is in motion rather than stable:
+  during 2026 apex-court doctrine reallocated power on both the horizontal and
+  the vertical axis.
+
+
+  The founding instrument was re-founded once. The Reconstruction Amendments
+  reset the terms of membership in the polity — the Thirteenth (1865) abolishing
+  slavery, the Fourteenth (1868) establishing birthright citizenship and equal
+  protection, the Fifteenth (1870) barring racial denial of the franchise
+  [reconstruction-amendments]. Judicial review has anchored the order since
+  Marbury v. Madison (1803) [marbury-v-madison-1803].
+
+
+  Four orders coexist and each governs a different thing. Federal statutory law
+  is supreme over state law under the Supremacy Clause of Article VI
+  [constitution-usa-1787]. State law operates under powers reserved by the Tenth
+  Amendment, each of the fifty states maintaining its own constitution,
+  legislature, courts and code [constitution-usa-1787]. Tribal law is derived
+  from neither: federally recognised tribes exercise inherent pre-constitutional
+  sovereignty over their members and over Indian country, subject to
+  congressional plenary power — a relationship established in the Marshall
+  Trilogy and reaffirmed in McGirt v. Oklahoma (2020), qualified as to state
+  concurrent jurisdiction in Oklahoma v. Castro-Huerta (2022), and upheld
+  against constitutional challenge in Haaland v. Brackeen (2023)
+  [marshall-trilogy][mcgirt-v-oklahoma-2020][oklahoma-v-castro-huerta-2022][haaland-v-brackeen-2023][usc-title25].
+  Five hundred and seventy-five tribal entities were federally recognised as of
+  30 January 2026 under a list published annually pursuant to the Federally
+  Recognized Indian Tribe List Act of 1994; recognition may be conferred
+  administratively, by act of Congress, or by court decision, and the most
+  recent addition (the Lumbee Tribe of North Carolina) came by statute in
+  December 2025 [bia-tribal-entities-2026]. The insular order governs the five
+  inhabited unincorporated territories under the regime of the Insular Cases
+  (from 1901), Congress holding plenary authority, the Constitution applying
+  only selectively, and residents holding neither a presidential vote nor voting
+  congressional representation [insular-cases-1901].
+
+
+  Two populations hold membership in diminished form, and they are diminished
+  differently. Persons born in American Samoa and Swains Island (defined by
+  statute as outlying possessions) are nationals but not citizens of the United
+  States at birth under 8 U.S.C. § 1408 [uscode-8-1408]; the Department of
+  State's Foreign Affairs Manual states that these are not incorporated
+  territories and that the citizenship acquisition provisions of the Fourteenth
+  Amendment do not apply to persons born there [state-fam-308-2]. Residents of
+  the District of Columbia hold citizenship and, since the Twenty-third
+  Amendment (1961), vote in presidential elections through electors allotted to
+  the District, but they have no voting representation in either chamber of
+  Congress [constitution-usa-1787].
+
+
+  On the horizontal axis, two rulings issued the same day reallocated power
+  between the President, Congress and the agencies, and a third the following
+  day held a boundary. In Trump v. Slaughter (No. 25-332, decided 29 June 2026,
+  six to three) the Court held the Federal Trade Commission's statutory
+  for-cause removal protection contrary to the separation of powers, overruling
+  Humphrey's Executor v. United States (1935) on the reasoning that subordinates
+  exercising the President's power are removable by him; the Congressional
+  Research Service reads the decision as likely reaching officials of other
+  commission-style agencies that wield executive power
+  [trump-v-slaughter-2026][crs-lsb11448-slaughter]. In Trump v. Cook (No.
+  25A312, five to four) the Court held that a President's asserted for-cause
+  basis for removing a Federal Reserve governor is judicially reviewable, that
+  any definition of cause must reflect the Federal Reserve's particular history
+  and role, and that the governor was entitled to notice and an opportunity to
+  respond before removal — so the reallocation stops at the central bank
+  [trump-v-cook-2026][crs-lsb11449-cook]. Chief Justice Roberts wrote both
+  opinions, joined by two almost entirely different sets of justices; only one
+  member of the Court was in both majorities
+  [trump-v-slaughter-2026][trump-v-cook-2026]. The following day, in Trump v.
+  Barbara (No. 25-365, decided 30 June 2026, six to three), the Court held that
+  children born in the United States to parents unlawfully or temporarily
+  present are subject to its jurisdiction and are citizens at birth, striking
+  Executive Order 14160 and reaffirming United States v. Wong Kim Ark (1898)
+  [trump-v-barbara-2026].
+
+
+  On the vertical axis, the Court restricted federal reach into state
+  institutions twice. In Trump v. Illinois (No. 25A443, decided 23 December
+  2025, six to three) it read the statutory trigger for federalising a state
+  National Guard to require that the President be unable to execute federal law
+  with the regular forces of the United States military
+  [scotus-trump-v-illinois-2025]. In Watson v. Republican National Committee
+  (No. 24-1260, decided 29 June 2026, five to four) the Court held that the
+  federal election-day statutes do not preempt a state law counting absentee
+  ballots postmarked by election day and received up to five business days
+  later, reversing the Fifth Circuit; the Court noted that roughly thirty states
+  count at least some ballots mailed by election day and received afterward
+  [watson-v-rnc-2026].
+
+
+  This follows a decade of doctrinal movement. Shelby County v. Holder (2013)
+  disabled the coverage formula subjecting certain states to federal
+  preclearance of election-law changes [shelby-county-2013]; West Virginia v.
+  Environmental Protection Agency (2022) established the major questions
+  doctrine as a clear-statement rule constraining agency authority
+  [wv-v-epa-2022]; Loper Bright Enterprises v. Raimondo (2024) ended judicial
+  deference to agency statutory interpretation [loper-bright-2024]; Trump v.
+  United States (2024) recognised presidential immunity for official acts
+  [trump-v-usa-2024]; and Trump v. CASA (2025) restricted universal injunctions
+  as a remedy [trump-v-casa-2025].
 political_constitutionalSubstrate_fr: >-
-  La forme constitutionnelle est une république fédérale présidentielle fondée
-  sur la Constitution écrite des États-Unis (1787, en vigueur le 4 mars 1789),
-  qui répartit la souveraineté entre un gouvernement national et les États et
-  sépare les pouvoirs législatif, exécutif et judiciaire
-  [constitution-usa-1787]. Les amendements de la Reconstruction ont refondé les
-  termes de la citoyenneté et de l'égale protection (treizième 1865, quatorzième
-  1868, quinzième 1870) [reconstruction-amendments], et le contrôle de
-  constitutionnalité ancre l'ordre juridique depuis Marbury v. Madison
-  [marbury-v-madison-1803]. L'ordre juridique est pluriel et chaque ordre est
-  tenu séparément : le droit fédéral, supérieur au droit des États en vertu de
-  la clause de suprématie (article VI) [constitution-usa-1787]; le droit
-  statutaire et coutumier des États, chacun des 50 États conservant sa propre
-  constitution, législature, tribunaux et code au titre des pouvoirs réservés
-  par le dixième amendement, la Louisiane conservant une tradition de droit
-  civil pour le droit privé [constitution-usa-1787]; le droit tribal, en vertu
-  duquel les tribus reconnues au niveau fédéral exercent une souveraineté
-  inhérente préconstitutionnelle sur leurs membres et les terres indiennes, sous
-  réserve du pouvoir plénier du Congrès et non dérivée du droit fédéral ou des
-  États (la trilogie Marshall; McGirt v. Oklahoma; Oklahoma v. Castro-Huerta;
-  Haaland v. Brackeen)
-  [marshall-trilogy][mcgirt-v-oklahoma-2020][oklahoma-v-castro-huerta-2022][haaland-v-brackeen-2023][usc-title25];
-  et l'ordre territorial insulaire, en vertu duquel les cinq territoires non
-  incorporés habités sont régis par le régime établi par les Insular Cases, le
-  Congrès détenant l'autorité plénière et la Constitution ne s'appliquant que
-  sélectivement, les résidents n'ayant ni vote présidentiel ni représentation
-  votante au Congrès [insular-cases-1901]. Ce substrat est en mouvement et non
-  stable : la jurisprudence de la Cour suprême redistribue activement le
-  pouvoir. En 2026, la Cour a jugé dans Trump v. Slaughter (n° 25-332, rendu le
-  29 juin 2026, 6 voix contre 3) que la protection légale contre la révocation
-  sans motif des commissaires de la Federal Trade Commission est
-  inconstitutionnelle, renversant Humphrey's Executor v. United States (1935) et
-  conférant au président le pouvoir de révoquer à discrétion les dirigeants
-  d'agences indépendantes [trump-v-slaughter-2026][scotus-opinions-portal]; dans
-  Trump v. Cook (n° 25A312, 2026), la Cour a, par 5 voix contre 4, autorisé la
-  gouverneure de la Réserve fédérale Lisa Cook à rester en fonction en attendant
-  l'examen au fond, signalant une exception pour la banque centrale
-  [trump-v-cook-2026][scotus-opinions-portal]; dans Trump v. Barbara (n° 25-365,
-  rendu le 30 juin 2026, 6 voix contre 3), la Cour a jugé que les enfants nés
-  aux États-Unis de parents en situation irrégulière ou temporaire relèvent de
-  la juridiction des États-Unis et sont citoyens à la naissance en vertu du
-  quatorzième amendement, invalidant le décret 14160
-  [trump-v-barbara-2026][scotus-opinions-portal]; et dans Watson v. Republican
-  National Committee (rendu le 29 juin 2026, 5 voix contre 4), la Cour a jugé
-  que les lois fédérales sur le jour du scrutin n'empêchent pas les États de
-  compter les bulletins par correspondance oblitérés le jour du scrutin mais
-  reçus après [watson-v-rnc-2026][scotus-opinions-portal]. Cette redistribution
-  de 2026 fait suite à Trump v. United States (2024) sur l'immunité
-  présidentielle, Trump v. CASA (2025) sur les injonctions nationales, Loper
-  Bright (2024) mettant fin à la déférence Chevron, West Virginia v. EPA (2022)
-  et Shelby County v. Holder (2013)
-  [trump-v-usa-2024][trump-v-casa-2025][loper-bright-2024][wv-v-epa-2022][shelby-county-2013].
-  Les règlements administratifs mettant en œuvre cet ordre sont publiés au
-  Federal Register [federal-register], et une analyse non partisane est
-  disponible auprès du Congressional Research Service [crs-congress-gov].
+  La forme constitutionnelle est celle d'une république présidentielle fédérale
+  reposant sur un instrument fondateur écrit unique : la Constitution des
+  États-Unis (1787, en vigueur le 4 mars 1789), qui répartit la souveraineté
+  entre un gouvernement national et les États et sépare les pouvoirs législatif,
+  exécutif et judiciaire [constitution-usa-1787]. Sous cet instrument coexistent
+  quatre ordres juridiques irréductibles les uns aux autres. Le substrat est en
+  mouvement plutôt que stable : au cours de 2026, la jurisprudence de la plus
+  haute cour a redistribué le pouvoir sur l'axe horizontal comme sur l'axe
+  vertical.
+
+
+  L'instrument fondateur a été refondé une fois. Les amendements de la
+  Reconstruction ont redéfini les conditions d'appartenance à la communauté
+  politique : le Treizième (1865) abolissant l'esclavage, le Quatorzième (1868)
+  établissant la citoyenneté par droit du sol et l'égale protection des lois, le
+  Quinzième (1870) interdisant le refus du droit de vote fondé sur la race
+  [reconstruction-amendments]. Le contrôle judiciaire ancre l'ordre juridique
+  depuis l'arrêt Marbury v. Madison (1803) [marbury-v-madison-1803].
+
+
+  Quatre ordres coexistent, chacun régissant un objet distinct. Le droit fédéral
+  prime sur le droit des États en vertu de la clause de suprématie de l'article
+  VI [constitution-usa-1787]. Le droit des États s'exerce en vertu des pouvoirs
+  réservés par le Dixième amendement; chacun des cinquante États maintenant sa
+  propre constitution, sa législature, ses tribunaux et son code
+  [constitution-usa-1787]. Le droit tribal ne découle ni de l'un ni de l'autre :
+  les tribus reconnues par le gouvernement fédéral exercent une souveraineté
+  inhérente et préconstitutionnelle sur leurs membres et sur le territoire
+  indien, sous réserve du pouvoir plénier du Congrès; relation établie par la
+  trilogie Marshall et réaffirmée dans McGirt v. Oklahoma (2020), nuancée quant
+  à la compétence concurrente des États dans Oklahoma v. Castro-Huerta (2022),
+  et confirmée face à une contestation constitutionnelle dans Haaland v.
+  Brackeen (2023)
+  [marshall-trilogy][mcgirt-v-oklahoma-2020][oklahoma-v-castro-huerta-2022][haaland-v-brackeen-2023][usc-title25].
+  Au 30 janvier 2026, 575 entités tribales étaient reconnues par le gouvernement
+  fédéral, selon la liste publiée annuellement en application du Federally
+  Recognized Indian Tribe List Act de 1994; la reconnaissance peut être conférée
+  par voie administrative, par loi du Congrès ou par décision judiciaire, et le
+  dernier ajout (Lumbee Tribe of North Carolina) s'est fait par voie législative
+  en décembre 2025 [bia-tribal-entities-2026]. L'ordre insulaire régit les cinq
+  territoires non incorporés habités selon le régime issu des arrêts insulaires
+  (Insular Cases, à partir de 1901) : le Congrès y détient un pouvoir plénier,
+  la Constitution ne s'y applique que de façon sélective, et les résidents ne
+  disposent ni du droit de vote à l'élection présidentielle ni d'une
+  représentation votante au Congrès [insular-cases-1901].
+
+
+  Deux populations détiennent une appartenance diminuée, et elles le sont
+  différemment. Les personnes nées aux Samoa américaines et à l'île Swains
+  (définies par la loi comme des possessions éloignées) sont des ressortissants
+  et non des citoyens des États-Unis à la naissance, en vertu du 8 U.S.C. § 1408
+  [uscode-8-1408]; le Foreign Affairs Manual du département d'État précise que
+  ces territoires ne sont pas incorporés et que les dispositions du Quatorzième
+  amendement relatives à l'acquisition de la citoyenneté ne s'appliquent pas aux
+  personnes qui y naissent [state-fam-308-2]. Les résidents du district de
+  Columbia détiennent la citoyenneté et, depuis le Vingt-troisième amendement
+  (1961), votent à l'élection présidentielle (le district disposant de grands
+  électeurs), mais ils n'ont aucune représentation votante dans l'une ou l'autre
+  chambre du Congrès [constitution-usa-1787].
+
+
+  Sur l'axe horizontal, deux arrêts rendus le même jour ont redistribué le
+  pouvoir entre le président, le Congrès et les organismes fédéraux, et un
+  troisième, le lendemain, a fixé une limite. Dans Trump v. Slaughter (no
+  25-332, rendu le 29 juin 2026, par six voix contre trois), la Cour a jugé que
+  la protection légale contre la révocation pour motif valable dont
+  bénéficiaient les commissaires de la Federal Trade Commission contrevient à la
+  séparation des pouvoirs, renversant l'arrêt Humphrey's Executor v. United
+  States (1935) au motif que les subordonnés qui exercent le pouvoir du
+  président sont révocables par lui; le Congressional Research Service estime
+  que la décision atteint vraisemblablement les titulaires de charge d'autres
+  organismes collégiaux exerçant un pouvoir exécutif
+  [trump-v-slaughter-2026][crs-lsb11448-slaughter]. Dans Trump v. Cook (no
+  25A312, par cinq voix contre quatre), la Cour a jugé que le motif invoqué par
+  un président pour révoquer une gouverneure de la Réserve fédérale était
+  susceptible de contrôle judiciaire, que toute définition du motif valable
+  devait tenir compte de l'histoire et du rôle particuliers de la Réserve
+  fédérale, et que la gouverneure avait droit à un préavis et à la possibilité
+  de se faire entendre avant sa révocation; la redistribution s'arrête donc à la
+  banque centrale [trump-v-cook-2026][crs-lsb11449-cook]. Le juge en chef
+  Roberts a rédigé les deux opinions, entouré de deux ensembles de juges presque
+  entièrement différents; un seul membre de la Cour figurait dans les deux
+  majorités [trump-v-slaughter-2026][trump-v-cook-2026]. Le lendemain, dans
+  Trump v. Barbara (no 25-365, rendu le 30 juin 2026, par six voix contre
+  trois), la Cour a jugé que les enfants nés aux États-Unis de parents en
+  situation irrégulière ou de séjour temporaire relevaient de la juridiction du
+  pays et étaient citoyens dès la naissance, invalidant le décret présidentiel
+  14160 et réaffirmant l'arrêt United States v. Wong Kim Ark (1898)
+  [trump-v-barbara-2026].
+
+
+  Sur l'axe vertical, la Cour a restreint à deux reprises la portée fédérale sur
+  les institutions des États. Dans Trump v. Illinois (no 25A443, rendu le 23
+  décembre 2025, par six voix contre trois), elle a interprété le seuil légal
+  permettant de fédéraliser la Garde nationale d'un État comme exigeant que le
+  président soit dans l'incapacité d'appliquer la loi fédérale avec les forces
+  régulières de l'armée des États-Unis [scotus-trump-v-illinois-2025]. Dans
+  Watson v. Republican National Committee (no 24-1260, rendu le 29 juin 2026,
+  par cinq voix contre quatre), elle a jugé que les lois fédérales fixant le
+  jour du scrutin n'écartaient pas une loi d'État permettant de compter les
+  bulletins postaux oblitérés au plus tard le jour du scrutin et reçus dans les
+  cinq jours ouvrables suivants, infirmant l'arrêt du cinquième circuit et
+  relevant qu'une trentaine d'États comptaient au moins certains bulletins
+  postés le jour du scrutin et reçus après [watson-v-rnc-2026].
+
+
+  Ce mouvement s'inscrit dans une décennie d'évolution jurisprudentielle. Shelby
+  County v. Holder (2013) a neutralisé la formule de couverture soumettant
+  certains États à l'autorisation fédérale préalable de leurs modifications au
+  droit électoral [shelby-county-2013]; West Virginia v. Environmental
+  Protection Agency (2022) a établi la règle dite des questions majeures, qui
+  exige du législateur un énoncé explicite pour habiliter une agence à trancher
+  des questions d'importance majeure [wv-v-epa-2022]; Loper Bright Enterprises
+  v. Raimondo (2024) a mis fin à la déférence judiciaire envers l'interprétation
+  des lois par les agences [loper-bright-2024]; Trump v. United States (2024) a
+  reconnu l'immunité présidentielle pour les actes officiels [trump-v-usa-2024];
+  et Trump v. CASA (2025) a restreint le recours aux injonctions universelles
+  [trump-v-casa-2025].
 political_stateStructure_en: >-
-  The United States is a federal republic of 50 states plus the federal District
-  of Columbia and five inhabited unincorporated territories
-  [constitution-usa-1787]. Powers not delegated to the federal government are
-  reserved to the states under the Tenth Amendment, so states maintain their own
+  The United States is a federal republic comprising fifty states, the federal
+  District of Columbia, and five inhabited unincorporated territories
+  [constitution-usa-1787][insular-cases-1901]. Beneath the states sits a dense
+  administrative layer created under state rather than federal law: the 2022
+  Census of Governments enumerated 3,031 county governments, 35,705 municipal
+  and township governments, 12,546 independent school districts and 39,555
+  special district governments — 90,837 local governments in all, counted every
+  five years as required by 13 U.S.C. § 161 [census-governments-2022]. Special
+  districts are single- or limited-purpose bodies operating independently of
+  counties and municipalities, with their own authority to levy taxes for
+  functions such as irrigation, water treatment, and soil and water
+  conservation; they are the largest category and they are growing — 39,555 in
+  2022 against 38,542 in 2017 — with 16,020 of them, or 41%, serving
+  natural-resource functions [census-governments-2022][census-cog-story-2023].
+
+
+  The vertical allocation runs in both directions. Federal powers are enumerated
+  in Article I, Section 8, and federal law made in pursuance of the Constitution
+  is supreme under Article VI; powers not delegated to the federal government
+  nor prohibited to the states are reserved to the states under the Tenth
+  Amendment [constitution-usa-1787]. States accordingly maintain their own
   constitutions, legislatures, courts and codes operating concurrently with
-  federal law [constitution-usa-1787][reconstruction-amendments]. Asymmetries
-  are pronounced: the five inhabited territories (Puerto Rico, Guam, United
-  States Virgin Islands, Northern Mariana Islands, American Samoa) have no
-  presidential vote and no voting representation in Congress, and federally
-  recognised tribes exercise inherent sovereignty over Indian country
-  [usc-title25][insular-cases-1901].
+  federal law [constitution-usa-1787]. Below that, the structure of local
+  government — what units exist, what they may do, and how they are financed —
+  is set by each state's own law and varies substantially between them
+  [census-governments-2022].
+
+
+  Asymmetries between units are pronounced and of two distinct kinds. The five
+  inhabited territories — Puerto Rico, Guam, the United States Virgin Islands,
+  the Northern Mariana Islands and American Samoa — have no vote in presidential
+  elections and no voting representation in Congress [insular-cases-1901]. The
+  District of Columbia is different: its residents vote in presidential
+  elections through electors allotted to the District under the Twenty-third
+  Amendment (1961), capped at the number held by the least populous state, but
+  the District has no voting representation in either chamber, and Congress
+  retains legislative authority over it under Article I, Section 8, Clause 17
+  [constitution-usa-1787].
 political_stateStructure_fr: >-
-  Les États-Unis sont une république fédérale de 50 États, plus le district
-  fédéral de Columbia et cinq territoires non incorporés habités
-  [constitution-usa-1787]. Les pouvoirs non délégués au gouvernement fédéral
-  sont réservés aux États par le dixième amendement, de sorte que les États
-  conservent leurs propres constitutions, législatures, tribunaux et codes,
-  coexistant avec le droit fédéral
-  [constitution-usa-1787][reconstruction-amendments]. Les asymétries sont
-  marquées : les cinq territoires habités (Porto Rico, Guam, îles Vierges
-  américaines, îles Mariannes du Nord, Samoa américaines) n'ont ni vote
-  présidentiel ni représentation votante au Congrès, et les tribus reconnues au
-  niveau fédéral exercent une souveraineté inhérente sur les terres indiennes
-  [usc-title25][insular-cases-1901].
+  Les États-Unis forment une république fédérale composée de cinquante États, du
+  district fédéral de Columbia et de cinq territoires non incorporés habités
+  [constitution-usa-1787][insular-cases-1901]. Sous les États s'étend une couche
+  administrative dense, créée par le droit des États et non par le droit fédéral :
+  le Census of Governments de 2022 a recensé 3 031 administrations de comté,
+  35 705 administrations municipales et de canton (townships), 12 546 districts
+  scolaires indépendants et 39 555 districts spéciaux; soit 90 837
+  administrations locales au total, dénombrées tous les cinq ans comme l'exige
+  le 13 U.S.C. § 161 [census-governments-2022]. Les districts spéciaux sont des
+  entités à vocation unique ou limitée, fonctionnant indépendamment des comtés
+  et des municipalités et disposant de leur propre pouvoir de taxation pour des
+  fonctions telles que l'irrigation, le traitement de l'eau et la conservation
+  des sols et de l'eau; ils constituent la catégorie la plus nombreuse et ils
+  progressent (39 555 en 2022 contre 38 542 en 2017), dont 16 020, soit 41 %,
+  remplissent des fonctions liées aux ressources naturelles
+  [census-governments-2022][census-cog-story-2023].
+
+
+  La répartition verticale joue dans les deux sens. Les pouvoirs fédéraux sont
+  énumérés à l'article I, section 8, et le droit fédéral adopté en conformité
+  avec la Constitution prime en vertu de l'article VI; les pouvoirs qui ne sont
+  ni délégués au gouvernement fédéral ni interdits aux États sont réservés à ces
+  derniers par le Dixième amendement [constitution-usa-1787]. Les États
+  maintiennent en conséquence leur propre constitution, leur législature, leurs
+  tribunaux et leur code, qui s'appliquent concurremment avec le droit fédéral
+  [constitution-usa-1787]. En dessous, la structure des administrations locales
+  (quelles entités existent, ce qu'elles peuvent faire et comment elles sont
+  financées) relève du droit de chaque État et varie sensiblement de l'un à
+  l'autre [census-governments-2022].
+
+
+  Les asymétries entre unités sont marquées et de deux ordres distincts. Les
+  cinq territoires habités (Porto Rico, Guam, les îles Vierges américaines, les
+  îles Mariannes du Nord et les Samoa américaines) ne votent pas à l'élection
+  présidentielle et n'ont aucune représentation votante au Congrès
+  [insular-cases-1901]. Le district de Columbia se trouve dans une autre
+  situation : ses résidents votent à l'élection présidentielle grâce aux grands
+  électeurs attribués au district par le Vingt-troisième amendement (1961), dont
+  le nombre est plafonné à celui de l'État le moins peuplé, mais le district n'a
+  aucune représentation votante dans l'une ou l'autre chambre, et le Congrès
+  conserve à son égard l'autorité législative en vertu de l'article I, section
+  8, clause 17 [constitution-usa-1787].
 capacity_inheritedTerrain_en: >-
   The state works against a continental-scale, resource-rich but internally
   distant terrain and a large, ageing, immigration-built population whose growth
@@ -4485,6 +5085,20 @@ sources: |-
       "volatility": "High"
     },
     {
+      "id": "cbo-shutdown-61823",
+      "name": "A Quantitative Analysis of the Effects of the Government Shutdown on the Economy Under Three Scenarios, as of October 29, 2025",
+      "nameFr": "A Quantitative Analysis of the Effects of the Government Shutdown on the Economy Under Three Scenarios, as of October 29, 2025",
+      "url": "https://www.cbo.gov/publication/61823",
+      "desc": "Letter of the Congressional Budget Office to the Chairman of the House Budget Committee estimating the output effects of the fiscal 2026 funding lapse under four-, six- and eight-week scenarios; primary non-partisan legislative analysis, prepared during the lapse rather than after it.",
+      "descFr": "Lettre du Congressional Budget Office au président de la commission du budget de la Chambre estimant les effets sur la production de l'interruption de financement de l'exercice 2026 selon des scénarios de quatre, six et huit semaines; analyse législative primaire non partisane, établie pendant l'interruption plutôt qu'après. Titre traduit : « Analyse quantitative des effets de la fermeture de l'administration sur l'économie selon trois scénarios, au 29 octobre 2025 ».",
+      "publicationDate": "2025-10-29",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
       "id": "census-poprelease-2026",
       "name": "U.S. Population Growth Slows Due to Historic Decline in Net International Migration",
       "nameFr": "U.S. Population Growth Slows Due to Historic Decline in Net International Migration",
@@ -4647,18 +5261,6 @@ sources: |-
       "volatility": "Low"
     },
     {
-      "id": "scotus-opinions-portal",
-      "name": "Supreme Court of the United States — Opinions",
-      "nameFr": "Supreme Court of the United States — Opinions",
-      "url": "https://www.supremecourt.gov/opinions/opinions.aspx",
-      "desc": "Official Supreme Court portal publishing full text of apex-court rulings including recent constitutional decisions; primary judicial source, never news-derived.",
-      "descFr": "Portail officiel de la Cour suprême publiant le texte intégral des décisions, y compris les récentes décisions constitutionnelles; source judiciaire primaire. Titre traduit : « Cour suprême des États-Unis — Opinions ».",
-      "accessDate": "2026-07-18",
-      "confidence": "High",
-      "citationType": "Fact",
-      "volatility": "High"
-    },
-    {
       "id": "usc-title25",
       "name": "United States Code, Title 25 — Indians",
       "nameFr": "United States Code, Title 25 — Indians",
@@ -4669,19 +5271,6 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low"
-    },
-    {
-      "id": "senate-dailypress",
-      "name": "U.S. Senate Press Gallery — Daily Press",
-      "nameFr": "U.S. Senate Press Gallery — Daily Press",
-      "url": "https://www.dailypress.senate.gov/on-the-floor/",
-      "desc": "Official live Senate floor-activity log maintained by the Senate Press Gallery, tracking votes and proceedings in real time; primary legislative-process record.",
-      "descFr": "Journal officiel en direct de l'activité du Sénat tenu par la galerie de presse, suivant les votes et débats en temps réel; registre primaire du processus législatif.",
-      "publicationDate": "2026-07-16",
-      "accessDate": "2026-07-18",
-      "confidence": "High",
-      "citationType": "Fact",
-      "volatility": "High"
     },
     {
       "id": "crfb-cbo-outlook-2026",
@@ -5154,6 +5743,143 @@ sources: |-
       "frReview": true
     },
     {
+      "id": "rsf-index-2026",
+      "name": "2026 RSF Index: press freedom at a 25-year low",
+      "nameFr": "Classement 2026 : la liberté de la presse au plus bas niveau depuis 25 ans",
+      "url": "https://rsf.org/en/2026-rsf-index-press-freedom-25-year-low",
+      "desc": "Annual World Press Freedom Index of Reporters Without Borders, ranking 180 countries on political, legal, economic, sociocultural and safety indicators drawn from practitioner surveys; a press-freedom advocacy organisation, and its rankings are interpretive.",
+      "descFr": "Classement mondial annuel de la liberté de la presse de Reporters sans frontières, notant 180 pays sur des indicateurs politiques, juridiques, économiques, socioculturels et sécuritaires issus d'enquêtes auprès de praticiens; organisation de plaidoyer pour la liberté de la presse, dont les classements sont interprétatifs.",
+      "publicationDate": "2026-04-30",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "iachr-merits-60-25",
+      "name": "Report No. 60/25, Case 14.042, Merits (Publication), Anastasio Hernández Rojas and family, United States",
+      "nameFr": "Report No. 60/25, Case 14.042, Merits (Publication), Anastasio Hernández Rojas and family, United States",
+      "url": "https://www.oas.org/en/iachr/decisions/2025/US_14.042_EN.PDF",
+      "desc": "Adjudicated merits report of the Inter-American Commission on Human Rights finding the United States internationally responsible under the American Declaration of the Rights and Duties of Man; a regional human-rights body's formal decision and the primary instrument.",
+      "descFr": "Rapport de fond adjugé de la Commission interaméricaine des droits de l'homme concluant à la responsabilité internationale des États-Unis au titre de la Déclaration américaine des droits et devoirs de l'homme; décision formelle d'un organe régional des droits de l'homme et instrument primaire. Titre traduit : « Rapport n° 60/25, affaire 14.042, fond (publication), Anastasio Hernández Rojas et famille, États-Unis ».",
+      "publicationDate": "2025-04-28",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "iachr-pr-85-25",
+      "name": "IACHR publishes merits report on the case of Anastasio Hernández Rojas (United States)",
+      "nameFr": "IACHR publishes merits report on the case of Anastasio Hernández Rojas (United States)",
+      "url": "https://www.oas.org/en/IACHR/jsForm/?File=%2Fen%2Fiachr%2Fmedia_center%2FPReleases%2F2025%2F085.asp",
+      "desc": "Press release of the Inter-American Commission on Human Rights summarising its own findings and recommendations in Merits Report No. 60/25 and recording the absence of any response from the United States; the deciding body's own account of its decision.",
+      "descFr": "Communiqué de la Commission interaméricaine des droits de l'homme résumant ses propres conclusions et recommandations dans le rapport de fond n° 60/25 et consignant l'absence de réponse des États-Unis; récit de l'organe décideur sur sa propre décision. Titre traduit : « La CIDH publie le rapport de fond sur l'affaire Anastasio Hernández Rojas (États-Unis) ».",
+      "publicationDate": "2025-05-01",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "iachr-usa-2025",
+      "name": "IACHR concerned over United States' measures that impact the effective exercise of human rights",
+      "nameFr": "IACHR concerned over United States' measures that impact the effective exercise of human rights",
+      "url": "https://www.oas.org/en/IACHR/jsForm/?File=%2Fen%2Fiachr%2Fmedia_center%2FPReleases%2F2025%2F065.asp",
+      "desc": "Press release of the Inter-American Commission on Human Rights, the Organization of American States treaty body with competence over the United States under the American Declaration of the Rights and Duties of Man; a regional human-rights body speaking in its own institutional voice.",
+      "descFr": "Communiqué de la Commission interaméricaine des droits de l'homme, organe conventionnel de l'Organisation des États américains compétent à l'égard des États-Unis au titre de la Déclaration américaine des droits et devoirs de l'homme; organe régional des droits de l'homme s'exprimant en son nom propre. Titre traduit : « La CIDH s'inquiète des mesures des États-Unis affectant l'exercice effectif des droits de l'homme ».",
+      "publicationDate": "2025-03-31",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "ganhri-accreditation-chart",
+      "name": "Chart of the Status of National Institutions Accredited by the Global Alliance of National Human Rights Institutions",
+      "nameFr": "Chart of the Status of National Institutions Accredited by the Global Alliance of National Human Rights Institutions",
+      "url": "https://www.ohchr.org/sites/default/files/documents/countries/nhri/ganhri/ganhri-status-accreditation-chart.pdf",
+      "desc": "Official accreditation register maintained by the Sub-Committee on Accreditation of the Global Alliance of National Human Rights Institutions, with the UN Office of the High Commissioner for Human Rights as secretariat; the authoritative record of which states hold a Paris Principles-compliant national human-rights institution.",
+      "descFr": "Registre officiel d'accréditation tenu par le Sous-Comité d'accréditation de l'Alliance mondiale des institutions nationales des droits de l'homme, avec le Haut-Commissariat des Nations Unies aux droits de l'homme comme secrétariat; relevé faisant autorité des États dotés d'une institution nationale des droits de l'homme conforme aux Principes de Paris. Titre traduit : « Tableau de l'état des institutions nationales accréditées par l'Alliance mondiale des institutions nationales des droits de l'homme ».",
+      "publicationDate": "2025-06-04",
+      "accessDate": "2026-08-02",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "crs-r42659-posse-comitatus",
+      "name": "The Posse Comitatus Act and Related Matters: The Use of the Military to Execute Civilian Law",
+      "nameFr": "The Posse Comitatus Act and Related Matters: The Use of the Military to Execute Civilian Law",
+      "url": "https://www.congress.gov/crs-product/R42659",
+      "desc": "Standing report of the Congressional Research Service on the statutory framework governing domestic use of the armed forces, covering the Posse Comitatus Act, its exceptions, and National Guard command status.",
+      "descFr": "Rapport permanent du Congressional Research Service sur le cadre légal régissant l'emploi intérieur des forces armées, couvrant le Posse Comitatus Act, ses exceptions et le statut de commandement de la Garde nationale. Titre traduit : « Le Posse Comitatus Act et les questions connexes : l'emploi de l'armée pour exécuter le droit civil ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "uscode-6-466",
+      "name": "6 U.S.C. § 466 — Sense of Congress reaffirming the continued importance and applicability of the Posse Comitatus Act",
+      "nameFr": "6 U.S.C. § 466 — Sense of Congress reaffirming the continued importance and applicability of the Posse Comitatus Act",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title6/html/USCODE-2024-title6-chap1-subchapVIII-partH-sec466.htm",
+      "desc": "Codified statutory text published by the Government Publishing Office, carrying Congress's own findings on the scope and limits of the Posse Comitatus Act; primary legal instrument.",
+      "descFr": "Texte légal codifié publié par le Government Publishing Office, portant les constatations du Congrès sur la portée et les limites du Posse Comitatus Act; instrument juridique primaire. Titre traduit : « 6 U.S.C. § 466 — Avis du Congrès réaffirmant l'importance et l'applicabilité continues du Posse Comitatus Act ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "scotus-trump-v-illinois-2025",
+      "name": "Trump v. Illinois, No. 25A443",
+      "nameFr": "Trump v. Illinois, No. 25A443",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/25a443_new_b07d.pdf",
+      "desc": "Opinion of the Supreme Court of the United States on the emergency docket, decided 23 December 2025, on presidential authority to federalise a state National Guard under 10 U.S.C. § 12406; primary judicial source.",
+      "descFr": "Opinion de la Cour suprême des États-Unis sur le rôle d'urgence, rendue le 23 décembre 2025, sur le pouvoir présidentiel de fédéraliser la Garde nationale d'un État au titre du 10 U.S.C. § 12406; source judiciaire primaire.",
+      "publicationDate": "2025-12-23",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "northcom-federal-protection-mission",
+      "name": "Federal Protection Mission",
+      "nameFr": "Federal Protection Mission",
+      "url": "https://www.northcom.mil/Missions/Homeland-Defense/Federal-Protection-Mission/",
+      "desc": "Standing mission page of U.S. Northern Command giving the command arrangement for federalised National Guard deployments in Title 10 status and a dated log of force-level updates; the operating command's own record.",
+      "descFr": "Page de mission permanente du U.S. Northern Command donnant le dispositif de commandement des déploiements fédéralisés de la Garde nationale en statut Title 10 et un journal daté des mises à jour d'effectifs; relevé propre au commandement opérationnel. Titre traduit : « Mission de protection fédérale ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "frReview": true
+    },
+    {
+      "id": "northcom-tf51-release-2025",
+      "name": "Task Force 51 releases 150 members of the California National Guard",
+      "nameFr": "Task Force 51 releases 150 members of the California National Guard",
+      "url": "https://www.northcom.mil/Newsroom/Press-Releases/Article/4232021/task-force-51-releases-150-members-of-the-california-national-guard/",
+      "desc": "Press release of U.S. Northern Command recording a drawdown of the Los Angeles Federal Protection mission on the recommendation of the combatant commander with the Secretary's approval, and identifying Task Force 51 as U.S. Army North's Contingency Command Post.",
+      "descFr": "Communiqué de presse du U.S. Northern Command consignant une réduction des effectifs de la mission de protection fédérale de Los Angeles sur recommandation du commandant interarmées avec l'approbation du secrétaire, et identifiant la Task Force 51 comme poste de commandement de contingence de l'U.S. Army North. Titre traduit : « La Task Force 51 libère 150 membres de la Garde nationale de Californie ».",
+      "publicationDate": "2025-07-01",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
       "id": "fao-forest-water-usa",
       "name": "FAOSTAT — Forestry and Land Use Data (United States)",
       "nameFr": "FAOSTAT — Forestry and Land Use Data (United States)",
@@ -5594,50 +6320,44 @@ sources: |-
       "name": "Trump v. Slaughter, 609 U.S. ___ (2026), No. 25-332",
       "url": "https://www.supremecourt.gov/opinions/25pdf/25-332_qn12.pdf",
       "desc": "Official Supreme Court slip opinion, decided 29 June 2026. For-cause removal protections for independent multimember agencies; overruled Humphrey's Executor (1935). SUBSTRATE IN MOTION.",
-      "accessDate": "2026-07-19",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "nameFr": "Trump v. Slaughter, 609 U.S. ___ (2026), No. 25-332"
+      "nameFr": "Trump v. Slaughter, 609 U.S. ___ (2026), No. 25-332",
+      "publicationDate": "2026-06-29"
     },
     {
       "id": "trump-v-cook-2026",
       "name": "Trump v. Cook, 609 U.S. ___ (2026), No. 25A312",
       "url": "https://www.supremecourt.gov/opinions/25pdf/25a312_5468.pdf",
       "desc": "Official Supreme Court slip opinion, decided 29 June 2026 on the interim docket. Removal protections for Federal Reserve Board governors. SUBSTRATE IN MOTION.",
-      "accessDate": "2026-07-19",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "nameFr": "Trump v. Cook, 609 U.S. ___ (2026), No. 25A312"
+      "nameFr": "Trump v. Cook, 609 U.S. ___ (2026), No. 25A312",
+      "publicationDate": "2026-06-29"
     },
     {
       "id": "trump-v-barbara-2026",
       "name": "Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365",
       "url": "https://www.supremecourt.gov/opinions/25pdf/25-365_4hdj.pdf",
       "desc": "Official Supreme Court slip opinion, decided 30 June 2026. Fourteenth Amendment Citizenship Clause and Executive Order 14160. SUBSTRATE IN MOTION.",
-      "accessDate": "2026-07-19",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "nameFr": "Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365"
+      "nameFr": "Trump v. Barbara, 609 U.S. ___ (2026), No. 25-365",
+      "publicationDate": "2026-06-30"
     },
     {
       "id": "watson-v-rnc-2026",
       "name": "Watson v. Republican National Committee, 609 U.S. ___ (2026), No. 24-1260",
       "url": "https://www.supremecourt.gov/opinions/25pdf/24-1260_g3cn.pdf",
       "desc": "Official Supreme Court slip opinion. Federal election-day statutes and state authority over absentee ballot receipt periods. SUBSTRATE IN MOTION.",
-      "accessDate": "2026-07-19",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "nameFr": "Watson v. Republican National Committee, 609 U.S. ___ (2026), No. 24-1260"
-    },
-    {
-      "id": "crs-congress-gov",
-      "name": "Congressional Research Service — public report portal",
-      "url": "https://www.congress.gov/crs-products",
-      "desc": "Non-partisan research arm of Congress, operating under the Library of Congress. Admissible as citationType: Interpretation.",
-      "accessDate": "2026-07-19",
-      "confidence": "High",
-      "citationType": "Fact",
-      "nameFr": "Congressional Research Service — public report portal"
+      "nameFr": "Watson v. Republican National Committee, 609 U.S. ___ (2026), No. 24-1260",
+      "publicationDate": "2026-06-29"
     },
     {
       "id": "calibration-executive-source",
@@ -5969,5 +6689,73 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low"
+    },
+    {
+      "id": "uscode-8-1408",
+      "name": "8 U.S.C. § 1408 — Nationals but not citizens of the United States at birth",
+      "nameFr": "8 U.S.C. § 1408 — Nationals but not citizens of the United States at birth",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title8-section1408&num=0&edition=prelim",
+      "desc": "Codified statutory text maintained by the Office of the Law Revision Counsel of the House of Representatives, establishing non-citizen national status for persons born in outlying possessions; primary legal instrument.",
+      "descFr": "Texte légal codifié tenu par l'Office of the Law Revision Counsel de la Chambre des représentants, établissant le statut de ressortissant non-citoyen pour les personnes nées dans les possessions périphériques; instrument juridique primaire. Titre traduit : « 8 U.S.C. § 1408 — Ressortissants mais non-citoyens des États-Unis à la naissance ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "state-fam-308-2",
+      "name": "8 FAM 308.2 — Acquisition by Birth in American Samoa and Swains Island",
+      "nameFr": "8 FAM 308.2 — Acquisition by Birth in American Samoa and Swains Island",
+      "url": "https://fam.state.gov/FAM/08FAM/08FAM030802.html",
+      "desc": "Foreign Affairs Manual of the Department of State, the executive's own codified guidance on nationality determination, stating the non-incorporated status of American Samoa and Swains Island and the non-application of the Fourteenth Amendment's citizenship provisions there.",
+      "descFr": "Foreign Affairs Manual du Department of State, directive codifiée propre à l'exécutif sur la détermination de la nationalité, énonçant le statut non incorporé des Samoa américaines et de l'île Swains et la non-application des dispositions de citoyenneté du Quatorzième amendement en ces lieux. Titre traduit : « 8 FAM 308.2 — Acquisition par la naissance aux Samoa américaines et à l'île Swains ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "bia-tribal-entities-2026",
+      "name": "Indian Entities Recognized by and Eligible To Receive Services From the United States Bureau of Indian Affairs (91 FR 4102)",
+      "nameFr": "Indian Entities Recognized by and Eligible To Receive Services From the United States Bureau of Indian Affairs (91 FR 4102)",
+      "url": "https://www.federalregister.gov/documents/2026/01/30/2026-01899/indian-entities-recognized-by-and-eligible-to-receive-services-from-the-united-states-bureau-of",
+      "desc": "Annual notice of the Bureau of Indian Affairs published in the Federal Register under the Federally Recognized Indian Tribe List Act of 1994, establishing the authoritative list of federally recognised tribal entities; official gazette.",
+      "descFr": "Avis annuel du Bureau of Indian Affairs publié au Federal Register en vertu du Federally Recognized Indian Tribe List Act of 1994, établissant la liste faisant autorité des entités tribales reconnues au niveau fédéral; journal officiel. Titre traduit : « Entités indiennes reconnues par le Bureau of Indian Affairs des États-Unis et admissibles à ses services (91 FR 4102) ».",
+      "publicationDate": "2026-01-30",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "frReview": true
+    },
+    {
+      "id": "census-governments-2022",
+      "name": "2022 Census of Governments — Organization: Technical Documentation",
+      "nameFr": "2022 Census of Governments — Organization: Technical Documentation",
+      "url": "https://www2.census.gov/programs-surveys/gus/datasets/2022/2022_gov_org_meth_tech_doc.pdf",
+      "desc": "Technical documentation of the U.S. Census Bureau's quinquennial Census of Governments, conducted under 13 U.S.C. § 161, giving counts and classification criteria for state and local governmental units; primary federal statistical source.",
+      "descFr": "Documentation technique du recensement quinquennal des administrations publiques (Census of Governments) du U.S. Census Bureau, mené en vertu du 13 U.S.C. § 161, donnant les dénombrements et les critères de classification des unités gouvernementales des États et des collectivités locales; source statistique fédérale primaire. Titre traduit : « Recensement des administrations publiques 2022 — Organisation : documentation technique ».",
+      "publicationDate": "2023-08-01",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "census-cog-story-2023",
+      "name": "Special District Governments Manage Natural Resources in Many U.S. Communities",
+      "nameFr": "Special District Governments Manage Natural Resources in Many U.S. Communities",
+      "url": "https://www.census.gov/library/stories/2023/08/2022-census-of-governments.html",
+      "desc": "America Counts article of the U.S. Census Bureau presenting findings from the 2022 Census of Governments — Organization, including the special-district count against 2017 and the share serving natural-resource functions; the statistical agency's own account of its data.",
+      "descFr": "Article America Counts du U.S. Census Bureau présentant les résultats du recensement des administrations publiques 2022 — Organisation, dont le nombre de districts spéciaux comparé à 2017 et la part exerçant des fonctions liées aux ressources naturelles; le compte rendu de ses propres données par l'agence statistique. Titre traduit : « Les districts spéciaux gèrent les ressources naturelles dans de nombreuses communautés américaines ».",
+      "publicationDate": "2023-08-24",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
     }
   ]

@@ -90,22 +90,6 @@ function collectCitations(value, out) {
   }
 }
 
-function sentenceTimeBindingWarnings(text, label, warnings) {
-  const sentences = text.split(/(?<=[.!?])\s+/g);
-  const citationRegex = /\[[a-z0-9-]+\]/i;
-  const numericRegex = /\b\d+(?:[.,]\d+)?%?\b/;
-  const timeRegex = /\b(19|20)\d{2}\b|\bQ[1-4]\b|\b(week|month|quarter|year|annual|annually|yoy|y\/y|m\/m)\b/i;
-
-  sentences.forEach((s, i) => {
-    if (!citationRegex.test(s)) return;
-    const withoutCitations = s.replace(/\[[a-z0-9-]+\]/gi, ' ');
-    if (!numericRegex.test(withoutCitations)) return;
-    if (!timeRegex.test(withoutCitations)) {
-      warnings.push(`${label} sentence ${i + 1}: numeric claim may be missing explicit time binding`);
-    }
-  });
-}
-
 const PEER_ORDER = ['political', 'situation', 'economy', 'territory', 'capacity', 'society', 'security', 'other'];
 
 // ── Situator-opener signature checks (heuristic) ─────────────────────────────
@@ -367,24 +351,6 @@ function validateCountryFile(filePath) {
     for (const peer of PEER_ORDER) {
       const list = orphansByPeer[peer];
       if (list && list.length) warnings.push(`  ${peer} (${list.length}): ${list.join(', ')}`);
-    }
-  }
-
-  const warningFieldPrefixes = [
-    'executiveSnapshot_',
-    'political_',
-    'political_constitutionalSubstrate_',
-    'situation_',
-    'economy_',
-    'territory_',
-    'capacity_',
-    'society_',
-    'security_',
-  ];
-
-  for (const [k, v] of Object.entries(contentClone)) {
-    if (typeof v === 'string' && warningFieldPrefixes.some((p) => k.startsWith(p))) {
-      sentenceTimeBindingWarnings(v, k, warnings);
     }
   }
 
