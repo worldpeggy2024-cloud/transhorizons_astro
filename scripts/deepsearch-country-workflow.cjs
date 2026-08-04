@@ -195,9 +195,9 @@ function validateSources(sources) {
 
     if (nonEmptyString(s?.url) && isGenericHomepage(s.url)) {
       if (s?.landingPage === true) {
-        warnings.push(`${key}: landing-page URL accepted (landingPage: true — bilingual access by design)`);
+        warnings.push(`${key}: landing-page URL accepted (landingPage: true — deliberate entry point: bilingual language-chooser or single-purpose data-portal root)`);
       } else {
-        errors.push(`${key}.url must be a deep link, not homepage (or set "landingPage": true for a deliberate bilingual landing page)`);
+        errors.push(`${key}.url must be a deep link, not homepage (or set "landingPage": true for a deliberate landing page — a bilingual language-chooser or a single-purpose data-portal root)`);
       }
     }
   }
@@ -1306,7 +1306,7 @@ territory.transition: the country's position in decarbonization — energy mix, 
 
 CAPACITY TO DELIVER — whether the state can DO: build, permit, deliver, run — present-state and sourceable. NOT what the country has (ECONOMY) or who benefits (SOCIETY), but whether intent becomes built fact. Where "knowledge isn't the constraint, capacity is" becomes a measured field: ${capacityAnchorText}
 
-capacity.inheritedTerrain: OPENER (required): the structural terrain the state works against, before any performance claim. Then: geographic and demographic scale; resource base; colonial / extractive legacy and terms of trade; conflict history; the inherited education and health base. ANCHORED SYNTHESIS — point at facts already cited in territory.*, society.*, economy.* with [dot.path] anchors; introduce NO new sourced facts. It is the denominator for every performance claim in this section. GUARD (mandatory): capacity is inherited and distributed — by history, colonialism, resource geography, luck — never earned or deserved. A capacity gap is never rendered as a merit gap.
+capacity.inheritedTerrain: OPENER (required): the structural terrain the state works against, before any performance claim. Then: geographic and demographic scale; resource base; colonial / extractive legacy and terms of trade; damage from armed conflict fought on its own soil (war destruction, wartime displacement, munitions contamination), stated plainly even where there is none; the inherited education and health base. ANCHORED SYNTHESIS — point at facts already cited in territory.*, society.*, economy.* with [dot.path] anchors; introduce NO new sourced facts. It is the denominator for every performance claim in this section. GUARD (mandatory): capacity is inherited and distributed — by history, colonialism, resource geography, luck — never earned or deserved. A capacity gap is never rendered as a merit gap. In a settler or colonised state, colonial dispossession, slavery and forced removal are part of the inherited terrain — they belong to the colonial/extractive legacy element above and are NEVER rendered as absent. The armed-conflict null covers war damage on the territory only, never these.
 
 capacity.steering: governance-as-process, distinct from execution — can the government prioritise among competing demands, implement what it announces, build consensus with strategic actors, and learn from policy. citationType: Interpretation, ANCHORED to the observable record (announced priorities vs implemented ones, auditor-general and evaluation reports, delivered-vs-declared). One to two paragraphs. RESPONSE RECORD (added 2026-07-20 — the first USA gap register came back with 12 of 20 items classed never-attempted, a finding about the REPORT, not the country): the announced-versus-implemented record must span the DOMAINS where the report documents shortfalls (delivery, public services, staffing, approvals — never fiscal policy alone). For each such domain, state what response was announced, attempted, or budgeted, cited — or state plainly that the approved sources record none (that absence is itself a finding). The gap register's class assignment reads its attempt record from THIS field.
 

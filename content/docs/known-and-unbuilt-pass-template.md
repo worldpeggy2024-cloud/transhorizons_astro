@@ -41,7 +41,7 @@ A marker that resolves to neither is an error. Never invent either kind.
 - `actors_*`, `risks_*`, `scorecard*`, `baseline_*`, `capacity_inheritedTerrain_*`, `security_posture_*` — these fields introduce no facts of their own; each is assembled from other fields. Building this register on one of them would rest a summary on a summary. Where one of them reflects a gap, find the field it came from and use that.
 - **Legacy fields — never read them:** `capacity_permitting_*` (renamed `capacity_approvals_*`), `economy_macroReality_*` (renamed `economy_realEconomy_*`), `executiveSnapshot_*` (removed). A properly two-phase report carries only the new names; any content under a legacy key is superseded and may be stale. Anchor only to the current-name fields. *(Added 2026-07-27: a stale `capacity_permitting_*` left behind by an incomplete migration is non-empty, so an anchor to it resolves and silently points at outdated content.)*
 
-`capacity_inheritedTerrain_*` has a second role: **read it for the denominator** (see the guard below). It describes the structural ground the state works against — scale, resource base, colonial and extractive legacy, conflict history, inherited education and health base.
+`capacity_inheritedTerrain_*` has a second role: **read it for the denominator** (see the guard below). It describes the structural ground the state works against — scale, resource base, colonial and extractive legacy, damage from armed conflict fought on its own soil (or its absence), inherited education and health base.
 
 ---
 

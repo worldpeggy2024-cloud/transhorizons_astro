@@ -977,7 +977,7 @@ economy_publicFinances_en: >-
   [cbo-budget-outlook-2026]. 
 
 
-  Monetary policy is restrictive and inflation is above target: the Federal Open
+  Monetary policy is on hold with inflation above target: the Federal Open
   Market Committee held the federal funds target range at 3.50–3.75% in July
   2026, judging inflation still elevated relative to its 2% goal and attributing
   that in part to supply shocks raising prices in sectors including energy
@@ -1005,16 +1005,16 @@ economy_publicFinances_fr: >-
   milliards, soit 4,6 % du PIB, d'ici 2036 [cbo-budget-outlook-2026]. 
 
 
-  La politique monétaire est restrictive et l'inflation dépasse la cible : le
-  Comité fédéral de l'open market a maintenu en juillet 2026 la fourchette cible
-  du taux des fonds fédéraux à 3,50-3,75 %, jugeant l'inflation encore élevée
-  par rapport à sa cible de 2 % (que le Comité mesure sur l'indice des dépenses
-  de consommation personnelle [personal consumption expenditures, PCE]),
-  distinct de l'indice des prix à la consommation [IPC]) et l'attribuant en
-  partie à des chocs d'offre ayant fait monter les prix dans certains secteurs,
-  dont l'énergie [fomc-statement-july-2026]. Sur l'IPC, les prix ont progressé
-  de 3,5 % sur les douze mois clos en juin 2026; l'indice hors alimentation et
-  énergie augmentant de 2,6 % et celui de l'énergie, de 15,7 %
+  La politique monétaire est en pause, l'inflation demeurant supérieure à la
+  cible : le Federal Open Market Committee a maintenu en juillet 2026 la
+  fourchette cible du taux des fonds fédéraux à 3,50-3,75 %, jugeant l'inflation
+  encore élevée par rapport à sa cible de 2 % (que le Comité mesure sur l'indice
+  des dépenses de consommation personnelle [personal consumption expenditures,
+  PCE]), distinct de l'indice des prix à la consommation [IPC]) et l'attribuant
+  en partie à des chocs d'offre ayant fait monter les prix dans certains
+  secteurs, dont l'énergie [fomc-statement-july-2026]. Sur l'IPC, les prix ont
+  progressé de 3,5 % sur les douze mois clos en juin 2026; l'indice hors
+  alimentation et énergie augmentant de 2,6 % et celui de l'énergie, de 15,7 %
   [bls-cpi-june2026]. 
 
   Le pays ne détient plus la note maximale d'aucune des agences ayant publié une
@@ -1922,16 +1922,16 @@ political_stabilityDrivers_fr: >-
   coalitions négociées; un même parti détient actuellement la présidence, le
   Sénat avec 53 sièges et la Chambre avec 218
   [senate-partydiv][house-partybreakdown]. La cohésion des élites au sein de ce
-  bloc est élevée sur le plan formel et mesurablement imparfaite dans les faits :
-  quatre pétitions de dessaisissement ont atteint le seuil de 218 signatures
-  durant la première session du 119e Congrès, contre deux pendant tout le 118e,
-  et comme la minorité ne détient que 212 sièges, chacune portait nécessairement
-  des signatures de la majorité [crs-r45920-discharge]. La plus haute cour s'est
-  divisée différemment sur chacune des trois questions de 2026 touchant le
-  pouvoir exécutif, tranchant en faveur du président sur la révocation à la
-  Federal Trade Commission, contre lui sur la révocation à la Réserve fédérale,
-  et contre lui sur la révocation à la Réserve fédérale, où elle a jugé le motif
-  invoqué susceptible de contrôle judiciaire
+  bloc est élevée sur le plan formel et mesurablement imparfaite dans les
+  faits : quatre pétitions de dessaisissement ont atteint le seuil de 218
+  signatures durant la première session du 119e Congrès, contre deux pendant
+  tout le 118e, et comme la minorité ne détient que 212 sièges, chacune portait
+  nécessairement des signatures de la majorité [crs-r45920-discharge]. La plus
+  haute cour s'est divisée différemment sur chacune des trois questions de 2026
+  touchant le pouvoir exécutif, tranchant en faveur du président sur la
+  révocation à la Federal Trade Commission, contre lui sur la révocation à la
+  Réserve fédérale, et contre lui sur la révocation à la Réserve fédérale, où
+  elle a jugé le motif invoqué susceptible de contrôle judiciaire
   [crs-lsb11448-slaughter][crs-lsb11449-cook][scotus-trump-v-illinois-2025].
 
 
@@ -2362,10 +2362,10 @@ political_stateStructure_fr: >-
   Les États-Unis forment une république fédérale composée de cinquante États, du
   district fédéral de Columbia et de cinq territoires non incorporés habités
   [constitution-usa-1787][insular-cases-1901]. Sous les États s'étend une couche
-  administrative dense, créée par le droit des États et non par le droit fédéral :
-  le Census of Governments de 2022 a recensé 3 031 administrations de comté,
-  35 705 administrations municipales et de canton (townships), 12 546 districts
-  scolaires indépendants et 39 555 districts spéciaux; soit 90 837
+  administrative dense, créée par le droit des États et non par le droit
+  fédéral : le Census of Governments de 2022 a recensé 3 031 administrations de
+  comté, 35 705 administrations municipales et de canton (townships), 12 546
+  districts scolaires indépendants et 39 555 districts spéciaux; soit 90 837
   administrations locales au total, dénombrées tous les cinq ans comme l'exige
   le 13 U.S.C. § 161 [census-governments-2022]. Les districts spéciaux sont des
   entités à vocation unique ou limitée, fonctionnant indépendamment des comtés
@@ -2402,342 +2402,772 @@ political_stateStructure_fr: >-
   conserve à son égard l'autorité législative en vertu de l'article I, section
   8, clause 17 [constitution-usa-1787].
 capacity_inheritedTerrain_en: >-
-  The state works against a continental-scale, resource-rich but internally
-  distant terrain and a large, ageing, immigration-built population whose growth
-  has just slowed sharply [territory.geography][society.demographics]. It
-  inherits an extensive energy and mineral endowment paired with deep import
-  dependence on critical minerals [territory.minerals][territory.metabolism],
-  the world's largest and most diversified services economy
-  [economy.realEconomy], and a fiscal base carrying historically high public
-  debt [economy.publicFinances]. This inherited capacity is distributed by
-  history, geography and scale — never earned or deserved — and forms the
-  denominator for every performance claim below.
+  The state works against a continental-scale terrain whose defining feature is
+  internal distance — densely settled coasts, a sparsely populated interior
+  west, two non-contiguous states, and a Pacific and Caribbean periphery of five
+  inhabited territories [territory.geography]. The population it serves is
+  large, ageing and immigration-built, and its growth has just slowed sharply
+  [society.demographics].
+
+
+  The resource base is unusually favourable and unevenly so: an extensive energy
+  and food endowment paired with total import dependence on a set of critical
+  minerals concentrated in a single supplier
+  [territory.metabolism][territory.minerals]. The productive base is the world's
+  largest and most services-weighted [economy.realEconomy], and the fiscal base
+  carries historically high public debt [economy.publicFinances].
+
+
+  The colonial legacy runs inward and is live rather than historical. The
+  country is a settler-and-immigrant society by construction
+  [society.demographics], its present composition carries the demographic
+  residue of dispossession and enslavement [society.composition], and it holds
+  five inhabited territories whose residents do not vote for the government that
+  legislates for them [territory.geography]. Terms of trade run the opposite way
+  from the usual extractive case: the state issues the principal reserve
+  currency and sets trade terms rather than taking them, which lifts the
+  external financing constraint that binds most states of comparable ambition
+  [economy.externalVulnerability]. No armed conflict has been fought on the
+  continental territory since 1865, and it carries no reconstruction burden nor
+  conflict contamination; the Pacific and Caribbean periphery is not covered by
+  this statement.
+
+
+  The country inherits an educated population and an expensive health system,
+  but the national averages conceal very large differences between groups.
+  Educational attainment is rising — 95% of 25-to-29-year-olds had completed at
+  least high school by 2022 and 40% held a bachelor's degree or higher — but the
+  gaps widen at every level above secondary, the associate's-or-higher rate
+  running from 78% among Asian young adults down to 19% among American Indian
+  and Alaska Native [society.wellbeing]. Health outcomes are poor for the
+  country's wealth, life expectancy sitting below the comparable-country average
+  despite the highest per-person health spending of any peer nation, and the
+  mortality gradient runs in the same direction: age-adjusted death rates among
+  American Indian and Alaska Native men reach more than twice those among Asian
+  men [society.wellbeing]. The same populations sit at the bottom of both
+  rankings, in attainment and in mortality.
+
+
+  All of this is inherited. Continental scale, energy and mineral endowment,
+  reserve-currency issuance, and attainment and mortality gradients laid down
+  over generations are distributed by history, geography, colonisation and luck
+  — never earned, never deserved, and never a measure of merit. They are the
+  denominator against which every performance claim below must be read.
 capacity_inheritedTerrain_fr: >-
-  L'État agit sur un terrain à l'échelle continentale, riche en ressources mais
-  aux distances internes considérables, et sur une population nombreuse,
-  vieillissante et bâtie par l'immigration, dont la croissance vient de ralentir
-  fortement [territory.geography][society.demographics]. Il hérite d'une vaste
-  dotation énergétique et minérale associée à une forte dépendance aux
-  importations de minéraux critiques [territory.minerals][territory.metabolism],
-  de la plus grande et de la plus diversifiée des économies de services au monde
-  [economy.realEconomy], et d'une base budgétaire portant une dette publique
-  historiquement élevée [economy.publicFinances]. Cette capacité héritée est
-  distribuée par l'histoire, la géographie et l'échelle — jamais méritée ni
-  acquise — et constitue le dénominateur de toute affirmation de performance
-  ci-dessous.
+  L'État compose avec un territoire d'échelle continentale dont la
+  caractéristique déterminante est la distance interne : des littoraux densément
+  peuplés, un intérieur occidental clairsemé, deux États non contigus et une
+  périphérie pacifique et caraïbe formée de cinq territoires habités
+  [territory.geography]. La population qu'il dessert est nombreuse,
+  vieillissante et bâtie par l'immigration, et sa croissance vient de ralentir
+  brusquement [society.demographics].
+
+
+  La base de ressources est exceptionnellement favorable, mais inégalement : une
+  dotation énergétique et alimentaire étendue, doublée d'une dépendance totale
+  aux importations pour une série de minéraux critiques concentrés chez un seul
+  fournisseur [territory.metabolism][territory.minerals]. La base productive est
+  la plus vaste au monde et la plus orientée vers les services
+  [economy.realEconomy], et la base budgétaire porte une dette publique
+  historiquement élevée [economy.publicFinances].
+
+
+  L'héritage colonial est tourné vers l'intérieur et demeure actuel plutôt
+  qu'historique. Le pays est par construction une société de peuplement et
+  d'immigration [society.demographics], sa composition actuelle porte la trace
+  démographique de la dépossession et de l'esclavage [society.composition], et
+  il détient cinq territoires habités dont les résidents ne votent pas pour le
+  gouvernement qui légifère à leur égard [territory.geography]. Les termes de
+  l'échange jouent à l'inverse du cas extractif habituel : l'État émet la
+  principale monnaie de réserve et fixe les conditions du commerce plutôt que de
+  les subir; ce qui lève la contrainte de financement extérieur qui pèse sur la
+  plupart des États d'ambition comparable [economy.externalVulnerability]. Aucun
+  conflit armé ne s'est déroulé sur le territoire continental depuis 1865, et
+  celui-ci ne porte aucun fardeau de reconstruction ni aucune contamination
+  héritée de la guerre; la périphérie pacifique et caraïbe n'est pas visée par
+  ce constat.
+
+
+  Le pays hérite d'une population instruite et d'un système de santé coûteux,
+  mais les moyennes nationales masquent des écarts considérables entre groupes.
+  La scolarisation progresse (95 % des 25 à 29 ans avaient terminé au moins le
+  secondaire en 2022 et 40 % détenaient un un diplôme de premier cycle
+  universitaire ou supérieur), mais les écarts se creusent à chaque échelon
+  au-dessus du secondaire; le taux de diplomation collégiale ou supérieure
+  passant de 78 % chez les jeunes adultes asiatiques à 19 % chez les Amérindiens
+  et les autochtones d'Alaska [society.wellbeing]. Les résultats de santé sont
+  médiocres au regard de la richesse du pays; l'espérance de vie se situant sous
+  la moyenne des pays comparables malgré la dépense de santé par personne la
+  plus élevée de tous ses pairs. Le gradient de mortalité joue dans le même sens :
+  la mortalité normalisée selon l'âge chez les hommes amérindiens et
+  autochtones d'Alaska atteint plus du double de celle des hommes asiatiques
+  [society.wellbeing]. Les mêmes populations occupent le bas des deux
+  classements, en scolarisation comme en mortalité.
+
+
+  Tout cela est hérité. L'échelle continentale, la dotation énergétique et
+  minérale, l'émission de la monnaie de réserve et les gradients de
+  scolarisation et de mortalité constitués sur des générations sont distribués
+  par l'histoire, la géographie, la colonisation et le hasard; jamais acquis,
+  jamais mérités, et jamais une mesure de valeur. Ils forment le dénominateur au
+  regard duquel toute affirmation de performance ci-dessous doit être lue.
 capacity_steering_en: >-
-  The federal state retains formidable analytic and implementation capacity but
-  its steering is degraded by fiscal gridlock and partisan volatility. The
-  record shows repeated failure to prioritise among competing demands through
-  the ordinary budget process: the FY2026 appropriations cycle produced the
-  longest full-government shutdown on record (43 days, 1 October–12 November
-  2025), a further lapse from 1 February 2026, and a Homeland Security funding
-  lapse from 14 February 2026 that ran 76 days to 30 April 2026 — the longest
-  shutdown of a single federal department on record — resolved only through
-  consolidated and continuing appropriations
+  The federal state retains formidable analytic and implementation capacity, and
+  its steering is degraded not by ignorance of its own failures but by an
+  inability to convert diagnosis into sustained action. Prioritisation through
+  the ordinary budget process repeatedly failed: the fiscal 2026 appropriations
+  cycle produced the longest full-government shutdown on record — 43 days, 1
+  October to 12 November 2025 — and a Homeland Security funding lapse from 14
+  February 2026 that ran 76 days to 30 April 2026, the longest for a single
+  department, resolved only through consolidated and continuing appropriations
   [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations].
-  Announced fiscal priorities (deficit reduction) diverge from implemented ones
-  (the 2025 reconciliation act raised deficits by $4.7 trillion over 2026–2035)
-  [obbba-hr1][cbo-budget-outlook-2026]. Where the executive has prioritised —
-  homeland and hemispheric security — it has demonstrated rapid implementation,
-  as in the January 2026 Venezuela operation
-  [ndstrategy-2026][maduro-capture-wardept].
+  Announced priorities diverge from implemented ones: deficit reduction was
+  declared while the 2025 reconciliation act raised projected deficits by $4.7
+  trillion over 2026–2035 [obbba-hr1][cbo-budget-outlook-2026]. Where the
+  executive has prioritised — homeland and hemispheric security — implementation
+  has been rapid [ndstrategy-2026][maduro-capture-wardept].
+
+
+  The response record across the domains where this report documents shortfalls
+  is mixed, and in one case inverted. On approvals, an announced reform produced
+  measured effect: the median time to complete an environmental impact statement
+  fell from 3.2 years before reform to 2.2 years for statements issued in 2024,
+  and the Permitting Dashboard established under Title 41 of the Fixing
+  America's Surface Transportation Act now publishes target dates for covered
+  projects [ceq-eis-timelines-2010-2024][permits-performance-gov-dashboard]. On
+  delivery, the state's own audit body records both response and its limits:
+  since 2023 ten high-risk areas improved, yielding some $84 billion in
+  financial benefits, while three regressed — and those three, Department of
+  Defense weapon systems acquisition, information-technology acquisition and
+  management, and management of federal real property, are precisely the
+  delivery domains this report documents as failing [gao-high-risk-list]. On
+  staffing, the response runs against the diagnosis: twenty of the thirty-eight
+  high-risk areas are listed in part because of skills gaps or inadequate
+  staffing, while federal employment excluding the postal service was cut by
+  around 13%, to levels last seen in 2009
+  [gao-high-risk-cost-schedule-2025][imf-art-iv-usa-2026]. On public services,
+  the approved sources record no response to the two sharpest measured gaps —
+  foreign food-safety inspections running at about 5% of target, and a
+  teacher-preparation pipeline down a fifth over seven years. The audit
+  machinery is itself unusually strong: thirty-eight areas rated every two years
+  against five criteria, with nearly $759 billion in benefits recorded since
+  2006; what it lacks is the sustained legislative and executive attention the
+  audit body identifies as the condition for progress [gao-high-risk-list].
 capacity_steering_fr: >-
-  L'État fédéral conserve une formidable capacité d'analyse et de mise en œuvre,
-  mais son pilotage est dégradé par le blocage budgétaire et la volatilité
-  partisane. Le bilan montre un échec répété à hiérarchiser les demandes
-  concurrentes par le processus budgétaire ordinaire : le cycle d'appropriations
-  de l'exercice 2026 a produit la plus longue fermeture complète du gouvernement
-  jamais enregistrée (43 jours, 1er octobre-12 novembre 2025), un nouveau
-  blocage à compter du 1er février 2026 et un blocage du financement de la
-  Sécurité intérieure à compter du 14 février 2026 qui a duré 76 jours, jusqu'au
-  30 avril 2026 — la plus longue paralysie d'un seul ministère fédéral jamais
-  enregistrée —, résolus seulement par des appropriations consolidées et
-  provisoires
+  L'État fédéral conserve des capacités d'analyse et de mise en œuvre
+  considérables, et son pilotage est dégradé non par l'ignorance de ses propres
+  défaillances, mais par l'incapacité de convertir le diagnostic en action
+  soutenue. L'établissement des priorités par le processus budgétaire ordinaire
+  a échoué à répétition : le cycle des crédits de l'exercice 2026 a produit la
+  plus longue fermeture de l'ensemble de l'administration jamais enregistrée (43
+  jours, du 1er octobre au 12 novembre 2025) et une interruption des crédits de
+  la Sécurité intérieure, à partir du 14 février 2026, qui a duré 76 jours
+  jusqu'au 30 avril 2026, la plus longue pour un seul département, résolue
+  uniquement par des crédits consolidés et provisoires
   [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. Les
-  priorités budgétaires affichées (réduction du déficit) divergent de celles
-  mises en œuvre (la loi de réconciliation de 2025 a accru les déficits de 4 700
-  milliards de dollars sur 2026-2035) [obbba-hr1][cbo-budget-outlook-2026]. Là
-  où l'exécutif a établi une priorité — sécurité du territoire et de
-  l'hémisphère — il a démontré une mise en œuvre rapide, comme lors de
-  l'opération au Venezuela de janvier 2026
+  priorités annoncées divergent des priorités mises en œuvre : la réduction du
+  déficit a été proclamée alors que la loi de réconciliation de 2025 relevait
+  les déficits projetés de 4 700 milliards de dollars sur 2026-2035
+  [obbba-hr1][cbo-budget-outlook-2026]. Là où l'exécutif a établi une priorité
+  (la sécurité du territoire et de l'hémisphère), la mise en œuvre a été rapide
   [ndstrategy-2026][maduro-capture-wardept].
+
+
+  Le bilan des réponses, dans les domaines où le présent rapport documente des
+  défaillances, est contrasté et, dans un cas, inversé. Du côté des
+  autorisations, une réforme annoncée a produit un effet mesurable : le délai
+  médian d'achèvement d'une étude d'impact environnemental est passé de 3,2 ans
+  avant la réforme à 2,2 ans pour les études publiées en 2024, et le tableau de
+  bord des autorisations établi par le titre 41 du Fixing America's Surface
+  Transportation Act publie désormais les dates cibles des projets visés
+  [ceq-eis-timelines-2010-2024][permits-performance-gov-dashboard]. Du côté de
+  la livraison, l'organisme de vérification de l'État consigne à la fois la
+  réponse et ses limites : depuis 2023, dix domaines à haut risque se sont
+  améliorés, pour quelque 84 milliards de dollars de retombées financières,
+  tandis que trois ont régressé; ces trois-là (l'acquisition des systèmes
+  d'armes du département de la Défense, l'acquisition et la gestion des
+  technologies de l'information et la gestion des biens immobiliers fédéraux)
+  sont précisément les domaines de livraison que ce rapport documente comme
+  défaillants [gao-high-risk-list]. Du côté des effectifs, la réponse joue
+  contre le diagnostic : vingt des trente-huit domaines à haut risque y figurent
+  en partie en raison de lacunes de compétences ou d'effectifs insuffisants,
+  alors que l'emploi fédéral hors service postal a été réduit d'environ 13 %, à
+  des niveaux inédits depuis 2009
+  [gao-high-risk-cost-schedule-2025][imf-art-iv-usa-2026]. Du côté des services
+  publics, les sources retenues ne consignent aucune réponse aux deux écarts
+  mesurés les plus marqués : les inspections de salubrité des aliments importés,
+  réalisées à environ 5 % de la cible, et une filière de formation des
+  enseignants en recul d'un cinquième en sept ans. Le dispositif est lui-même
+  remarquablement solide : trente-huit domaines évalués tous les deux ans selon
+  cinq critères, pour près de 759 milliards de dollars de retombées consignées
+  depuis 2006; ce qui lui manque, c'est l'attention législative et exécutive
+  soutenue que l'organisme de vérification désigne comme la condition du progrès
+  [gao-high-risk-list].
 capacity_approvals_en: >-
   The federal state can say yes or no to a major project, but the decision is
-  slow and only partially measured. Across all federal agencies, the median time
-  to complete an environmental impact statement under the National Environmental
-  Policy Act — from notice of intent to final statement — was 2.8 years for
-  statements finalized between January 2019 and December 2024, and 2.2 years for
-  those issued in 2024, when about 41% were completed in two years or less
-  against 24% in 2019; the figures come from the Council on Environmental
-  Quality's January 2025 timeline update covering 1,903 statements finalized
-  2010–2024, which puts the pre-reform 2010–2018 median at 3.2 years
-  [ceq-eis-timelines-2010-2024]. The pre-reform record measured to the record of
-  decision was slower still: a 4.5-year average across the 1,276 statements
-  whose final version was published between 1 January 2010 and 31 December 2018,
-  half taking longer than 3.5 years and one quarter more than 6.0 years
-  [ceq-eis-timeline-factsheet-2020]. The delay sits upstream of the draft
-  document: notice of intent to draft statement consumed on average 58.4% of
-  elapsed time, draft to final 32.2%, and final to record of decision 9.4%
-  [ceq-eis-timeline-factsheet-2020]. Documents ran well past the Council on
-  Environmental Quality's own recommended limits of 150 pages, or 300 for
-  proposals of unusual scope or complexity: across 761 actions with a final
-  statement published between 1 January 2013 and 31 December 2018, draft
-  statements averaged 575 pages, with appendices averaging a further 584 pages
-  at draft stage and 1,042 at final [ceq-eis-timeline-factsheet-2020].
-  Predictability is limited less by the statute than by the absence of a
-  governmentwide record of its own operation: the Government Accountability
-  Office found in April 2014 that data on the number and type of most reviews
-  were not readily available and that agencies did not routinely track
-  environmental assessments or categorical exclusions, with the Council on
-  Environmental Quality estimating that about 95% of reviews are categorical
-  exclusions, under 5% environmental assessments and under 1% environmental
-  impact statements [gao-nepa-review-2014]. A published approvals regime exists:
-  Title 41 of the Fixing America's Surface Transportation Act, enacted 4
-  December 2015 and codified at 42 United States Code § 4370m, requires the lead
-  federal agency for every covered project to post target completion dates for
-  environmental review and authorization on the Permitting Dashboard, which
-  tracks each project through a status field — planned, in progress, paused,
-  complete, cancelled — across covered projects, transparency projects,
-  Department of Transportation projects and others
-  [permits-performance-gov-dashboard]. The full project and timeline dataset is
-  downloadable by lead agency [permits-performance-gov-data-portal]. That status
-  field is where the proposed-versus-consented-versus-built record becomes
-  visible, and it is sectorally uneven: among covered projects listed on 19 July
-  2026, several federal offshore wind projects carried paused or cancelled
-  status while mining projects carried in-progress status
-  [permits-performance-gov-dashboard]. The skew tracks policy — an executive
+  slow, only partially measured, and the framework governing it was dismantled
+  in 2025. Across all federal agencies, the median time to complete an
+  environmental impact statement under the National Environmental Policy Act —
+  from notice of intent to final statement — was 2.8 years for statements
+  finalized between January 2019 and December 2024, and 2.2 years for those
+  issued in 2024, when about 41% were completed in two years or less against 24%
+  in 2019; the figures come from the Council on Environmental Quality's January
+  2025 timeline update covering 1,903 statements finalized 2010–2024, which puts
+  the pre-reform 2010–2018 median at 3.2 years [ceq-eis-timelines-2010-2024].
+  The pre-reform record measured to the record of decision was slower still: a
+  4.5-year average across the 1,276 statements whose final version was published
+  between 1 January 2010 and 31 December 2018, half taking longer than 3.5 years
+  and one quarter more than 6.0 years [ceq-eis-timeline-factsheet-2020]. The
+  delay sits upstream of the draft document: notice of intent to draft statement
+  consumed on average 58.4% of elapsed time, draft to final 32.2%, and final to
+  record of decision 9.4% [ceq-eis-timeline-factsheet-2020]. Documents ran well
+  past the 150-page limit then recommended by the Council, or 300 pages for
+  proposals of unusual scope: across 761 actions with a final statement
+  published between 1 January 2013 and 31 December 2018, draft statements
+  averaged 575 pages, with appendices averaging a further 584 pages at draft
+  stage and 1,042 at final [ceq-eis-timeline-factsheet-2020].
+
+
+  Regulatory predictability was reduced twice in 2025, from opposite directions.
+  Executive Order 14154 rescinded the executive order on which the Council on
+  Environmental Quality had based its rulemaking authority for five decades, and
+  the Council rescinded all government-wide regulations implementing the Act by
+  interim final rule effective April 2025; agencies have since issued their own
+  procedures, so no uniform federal framework now governs review
+  [crs-lsb11333-seven-county]. In May 2025 the Supreme Court, in Seven County
+  Infrastructure Coalition v. Eagle County, constrained the analysis of separate
+  but related projects, expanded agency discretion over the scope of review, and
+  limited judicial review of the result [crs-lsb11333-seven-county]. Both
+  changes shorten reviews and make them harder to challenge; both also remove
+  the common standard against which a developer could previously predict what a
+  review would require. The earlier deficiency compounds this: the Government
+  Accountability Office found in April 2014 that data on the number and type of
+  most reviews were not readily available and that agencies did not routinely
+  track environmental assessments or categorical exclusions, with the Council
+  estimating that about 95% of reviews are categorical exclusions, under 5%
+  environmental assessments and under 1% environmental impact statements
+  [gao-nepa-review-2014]. Statements are therefore the best-measured and rarest
+  category, and the 99% of reviews below them remain unmeasured government-wide.
+
+
+  A published approvals regime survives the rescission because it rests on
+  statute rather than regulation. Title 41 of the Fixing America's Surface
+  Transportation Act, enacted 4 December 2015 and codified at 42 United States
+  Code § 4370m, requires the lead federal agency for every covered project to
+  post target completion dates for environmental review and authorization on the
+  Permitting Dashboard, which tracks each project through eight status values —
+  planned, in progress, paused, complete, cancelled, class of action changed,
+  financing withdrawn, and no longer required to be tracked — across covered
+  projects, transparency projects, Department of Transportation projects and
+  others [permits-performance-gov-dashboard]. The dashboard states that
+  inclusion implies no federal endorsement and creates no presumption that a
+  covered project will be approved [permits-performance-gov-dashboard]. That
+  status field is where the proposed-versus-consented-versus-built record
+  becomes visible, and the sectoral skew is legible in it: among the first
+  twenty covered projects listed alphabetically on 3 August 2026, all three
+  mining projects carried in-progress status, while of six federal offshore wind
+  projects two were cancelled, two paused, one complete and one planned, and of
+  three solar projects two were cancelled [permits-performance-gov-dashboard].
+  Covered projects run to seven pages of twenty and the dashboard publishes no
+  status breakdown for the full set; the complete project and timeline dataset
+  is downloadable by lead agency from the data portal
+  [permits-performance-gov-data-portal]. The skew tracks policy — an executive
   order of 20 March 2025 on immediate measures to increase American mineral
   production directed the Permitting Council's executive director to publish
   designated mineral production projects on the dashboard as transparency
   projects [permits-performance-gov-dashboard].
 capacity_approvals_fr: >-
-  L'État fédéral sait dire oui ou non à un grand projet, mais la décision est
-  lente et n'est mesurée qu'en partie. Toutes agences fédérales confondues, le
-  délai médian d'achèvement d'une étude d'impact environnemental au titre de la
-  loi nationale sur la politique environnementale (National Environmental Policy
-  Act) — de l'avis d'intention à l'étude finale — s'établit à 2,8 ans pour les
-  études finalisées entre janvier 2019 et décembre 2024, et à 2,2 ans pour
-  celles publiées en 2024, année où environ 41 % ont été achevées en deux ans ou
-  moins, contre 24 % en 2019; ces chiffres proviennent de la mise à jour de
-  janvier 2025 du Council on Environmental Quality sur les délais, couvrant 1
-  903 études finalisées de 2010 à 2024, qui situe la médiane pré-réforme
-  2010-2018 à 3,2 ans [ceq-eis-timelines-2010-2024]. Le bilan pré-réforme mesuré
-  jusqu'à la décision finale était plus lent encore : une moyenne de 4,5 ans sur
-  les 1 276 études dont la version finale a été publiée entre le 1er janvier
-  2010 et le 31 décembre 2018, la moitié dépassant 3,5 ans et un quart 6,0 ans
-  [ceq-eis-timeline-factsheet-2020]. Le délai se loge en amont du projet de
-  document : le passage de l'avis d'intention au projet d'étude a absorbé en
-  moyenne 58,4 % du temps écoulé, celui du projet à la version finale 32,2 %, et
-  celui de la version finale à la décision 9,4 %
-  [ceq-eis-timeline-factsheet-2020]. Les documents dépassent largement les
-  limites que le Council on Environmental Quality recommande lui-même — 150
-  pages, ou 300 pour les projets d'ampleur ou de complexité inhabituelles : sur
-  761 actions dont l'étude finale a été publiée entre le 1er janvier 2013 et le
-  31 décembre 2018, les projets d'étude atteignaient en moyenne 575 pages,
-  auxquelles s'ajoutaient des annexes de 584 pages en moyenne au stade du projet
-  et de 1 042 pages au stade final [ceq-eis-timeline-factsheet-2020]. La
-  prévisibilité tient moins à la loi qu'à l'absence de relevé pangouvernemental
-  de son propre fonctionnement : le Government Accountability Office a constaté
-  en avril 2014 que les données sur le nombre et le type de la plupart des
-  examens n'étaient pas aisément disponibles et que les agences ne recensaient
-  pas systématiquement les évaluations environnementales ni les exclusions
-  catégorielles, le Council on Environmental Quality estimant qu'environ 95 %
-  des examens sont des exclusions catégorielles, moins de 5 % des évaluations
-  environnementales et moins de 1 % des études d'impact [gao-nepa-review-2014].
-  Un régime d'autorisation publié existe : le titre 41 de la loi Fixing
-  America's Surface Transportation Act, promulgué le 4 décembre 2015 et codifié
-  au titre 42 du United States Code, § 4370m, impose à l'agence fédérale chef de
-  file de tout projet couvert d'afficher les dates cibles d'achèvement de
-  l'examen environnemental et de l'autorisation sur le Permitting Dashboard,
-  lequel suit chaque projet par un champ d'état — planifié, en cours, suspendu,
-  achevé, annulé — pour les projets couverts, les projets de transparence, ceux
-  du département des Transports et les autres
-  [permits-performance-gov-dashboard]. L'ensemble des données de projets et
-  d'échéanciers est téléchargeable par agence chef de file
-  [permits-performance-gov-data-portal]. C'est dans ce champ d'état qu'apparaît
-  le bilan proposé-consenti-construit, et il est sectoriellement inégal : parmi
-  les projets couverts répertoriés le 19 juillet 2026, plusieurs projets éoliens
-  en mer fédéraux portaient l'état suspendu ou annulé tandis que des projets
-  miniers portaient l'état en cours [permits-performance-gov-dashboard]. Ce
-  déséquilibre suit la politique menée — un décret du 20 mars 2025 sur les
-  mesures immédiates d'augmentation de la production minérale américaine a
-  enjoint au directeur exécutif du Permitting Council de publier sur le tableau
-  de bord, à titre de projets de transparence, des projets de production
-  minérale désignés [permits-performance-gov-dashboard].
+  L'État fédéral détient le pouvoir d'autoriser ou de refuser un grand projet,
+  mais la décision est lente, mesurée en partie seulement, et le cadre qui la
+  régissait a été démantelé en 2025. Tous organismes fédéraux confondus, le
+  délai médian d'achèvement d'une étude d'impact environnemental au titre du
+  National Environmental Policy Act (de l'avis d'intention à l'étude finale)
+  s'établissait à 2,8 ans pour les études finalisées entre janvier 2019 et
+  décembre 2024, et à 2,2 ans pour celles publiées en 2024, année où environ 41
+  % ont été achevées en deux ans ou moins contre 24 % en 2019; les chiffres
+  proviennent de la mise à jour de janvier 2025 du Council on Environmental
+  Quality, portant sur 1 903 études finalisées de 2010 à 2024, qui situe la
+  médiane d'avant la réforme, de 2010 à 2018, à 3,2 ans
+  [ceq-eis-timelines-2010-2024]. Le bilan d'avant la réforme, mesuré jusqu'au
+  registre de décision, était plus lent encore : une moyenne de 4,5 ans pour les
+  1 276 études dont la version finale a été publiée entre le 1er janvier 2010 et
+  le 31 décembre 2018; la moitié dépassant 3,5 ans et le quart plus de 6,0 ans
+  [ceq-eis-timeline-factsheet-2020]. Le retard se situe en amont du document
+  provisoire : le passage de l'avis d'intention à l'étude provisoire a consommé
+  en moyenne 58,4 % du temps écoulé, celui de l'étude provisoire à l'étude
+  finale 32,2 %, et celui de l'étude finale au registre de décision 9,4 %
+  [ceq-eis-timeline-factsheet-2020]. Les documents dépassaient largement la
+  limite de 150 pages alors recommandée par le Council, ou de 300 pages pour les
+  propositions d'ampleur inhabituelle : pour 761 interventions dont l'étude
+  finale a été publiée entre le 1er janvier 2013 et le 31 décembre 2018, les
+  études provisoires comptaient en moyenne 575 pages; les annexes ajoutant en
+  moyenne 584 pages au stade provisoire et 1 042 au stade final
+  [ceq-eis-timeline-factsheet-2020].
+
+
+  La prévisibilité réglementaire a été réduite deux fois en 2025, dans des
+  directions opposées. Le décret présidentiel 14154 a abrogé le décret sur
+  lequel le Council on Environmental Quality fondait depuis cinq décennies son
+  pouvoir réglementaire, et le Council a abrogé l'ensemble des règlements
+  fédéraux d'application de la loi par règle provisoire définitive entrée en
+  vigueur en avril 2025. Les organismes ont depuis adopté leurs propres
+  procédures, de sorte qu'aucun cadre fédéral uniforme ne régit plus l'examen
+  [crs-lsb11333-seven-county]. En mai 2025, la Cour suprême, dans Seven County
+  Infrastructure Coalition v. Eagle County, a restreint l'analyse des projets
+  distincts mais connexes, élargi le pouvoir d'appréciation des organismes quant
+  à la portée de l'examen, et limité le contrôle judiciaire du résultat
+  [crs-lsb11333-seven-county]. Les deux changements raccourcissent les examens
+  et les rendent plus difficiles à contester; tous deux suppriment aussi la
+  norme commune qui permettait auparavant à un promoteur de prévoir ce qu'un
+  examen exigerait. La lacune antérieure aggrave cet effet : le Government
+  Accountability Office a constaté en avril 2014 que les données sur le nombre
+  et la nature de la plupart des examens n'étaient pas aisément accessibles et
+  que les organismes ne suivaient pas systématiquement les évaluations
+  environnementales ni les exclusions catégorielles; le Council estimant
+  qu'environ 95 % des examens sont des exclusions catégorielles, moins de 5 %
+  des évaluations environnementales et moins de 1 % des études d'impact
+  [gao-nepa-review-2014]. Les études d'impact constituent donc la catégorie la
+  mieux mesurée et la plus rare, et les 99 % d'examens qui se situent en dessous
+  demeurent non mesurés à l'échelle fédérale.
+
+
+  Un régime d'autorisation publié survit à l'abrogation parce qu'il repose sur
+  la loi et non sur le règlement. Le titre 41 du Fixing America's Surface
+  Transportation Act, adopté le 4 décembre 2015 et codifié au 42 United States
+  Code § 4370m, oblige l'organisme fédéral responsable de chaque projet visé à
+  publier les dates cibles d'achèvement de l'examen environnemental et de
+  l'autorisation sur le tableau de bord des autorisations, qui suit chaque
+  projet selon huit états (prévu, en cours, suspendu, terminé, annulé, catégorie
+  d'intervention modifiée, financement retiré, et suivi non requis) pour les
+  projets visés, les projets de transparence, les projets du département des
+  Transports et d'autres [permits-performance-gov-dashboard]. Le tableau de bord
+  précise que l'inscription ne fait intervenir aucun appui fédéral et ne crée
+  aucune présomption d'approbation [permits-performance-gov-dashboard]. C'est
+  dans ces états que devient visible le bilan des projets proposés, autorisés et
+  construits, et l'asymétrie sectorielle s'y lit : parmi les vingt premiers
+  projets visés inscrits par ordre alphabétique le 3 août 2026, les trois
+  projets miniers étaient tous en cours, tandis que sur six projets éoliens en
+  mer fédéraux, deux étaient annulés, deux suspendus, un terminé et un prévu, et
+  sur trois projets solaires, deux étaient annulés
+  [permits-performance-gov-dashboard]. Les projets visés s'étalent sur sept
+  pages de vingt et le tableau de bord ne publie aucune ventilation par état
+  pour l'ensemble; le jeu de données complet des projets et des échéanciers est
+  téléchargeable par organisme responsable depuis le portail de données
+  [permits-performance-gov-data-portal]. L'asymétrie suit la politique : un
+  décret présidentiel du 20 mars 2025 sur les mesures immédiates visant à
+  accroître la production minérale a chargé le directeur exécutif du Permitting
+  Council de publier certains projets de production minérale sur le tableau de
+  bord à titre de projets de transparence [permits-performance-gov-dashboard].
 capacity_delivery_en: >-
-  The American Society of Civil Engineers graded United States infrastructure a
-  C overall in its 2025 quadrennial assessment of 18 categories — the first C in
-  the series, up from C- in 2021 and D+ in 2017 — and estimates that $9.1
-  trillion is needed across those categories to reach a state of good repair,
-  against $5.4 trillion in forecast public and private investment over
-  2024–2033, leaving a $3.7 trillion gap; the Society is a professional
+  The realised record on infrastructure at scale is best read against the money
+  the state itself appropriated for it. The American Society of Civil Engineers
+  graded United States infrastructure a C overall in its 2025 quadrennial
+  assessment of 18 categories — the first C in the series, up from C- in 2021
+  and D+ in 2017 — and estimates that $9.1 trillion is needed to reach a state
+  of good repair against $5.4 trillion in forecast public and private investment
+  over 2024–2033, leaving a $3.7 trillion gap; the Society is a professional
   engineering body with a known advocacy orientation toward higher
-  infrastructure spending [asce-infrastructure-report-card-2025]. On execution
-  rather than condition, the Government Accountability Office reports that the
-  federal government has great difficulty controlling costs in its procurement
-  portfolio of more than $750 billion, with major acquisitions at the
-  Departments of Defense, Energy and Veterans Affairs and the National
-  Aeronautics and Space Administration experiencing cost growth, schedule delays
-  or both [gao-high-risk-cost-schedule-2025]. Three areas regressed between the
-  2023 and 2025 assessments — Department of Defense weapon systems acquisition,
+  infrastructure spending [asce-infrastructure-report-card-2025]. Against that
+  deficit, the Infrastructure Investment and Jobs Act made $711.8 billion
+  available in grants to tribes, states, localities and territories across
+  fifteen federal agencies, the Department of Transportation receiving 74%
+  [gao-iija-grants-status-2025]. As of 31 December 2024, agencies had obligated
+  $275.1 billion of that total, or 39%, and outlayed $119.4 billion, or 17%;
+  measured against the $580.6 billion actually available between fiscal 2022 and
+  fiscal 2025 rather than the full authorisation, the rates were 47% obligated
+  and 21% outlayed [gao-iija-grants-status-2025].
+
+
+  What moves is the money nobody has to decide about. At the Department of
+  Transportation, at least 76% of obligated funding and roughly 91% of outlayed
+  funding was formula grant money distributed to states by statutory formula
+  rather than by award decision, and two formula programmes alone accounted for
+  at least 68% of the department's outlayed formula funding [gao-iija-dot-2025].
+  Discretionary money moved far more slowly: about 23% of surveyed awardees of
+  fiscal 2022 discretionary grants still had no signed grant agreement when they
+  responded between December 2024 and March 2025, citing inflation cost
+  increases, difficulty defining project budget and schedule, environmental
+  review, and domestic-content requirements [gao-iija-dot-2025]. From January
+  2025, executive orders directed agencies to pause disbursement pending review
+  of consistency with administration priorities; across four agencies holding
+  about $574.7 billion, roughly 76% had been obligated, and the reviews approved
+  about 9,500 awards worth $128 billion, cancelled about 800 worth $17.8
+  billion, and left more than 2,500 worth $33.6 billion pending decision
+  [gao-funding-status-2026].
+
+
+  On its own operations rather than the national estate, the execution record is
+  weaker and in places deteriorating. The Government Accountability Office
+  reports great difficulty controlling costs across a procurement portfolio of
+  more than $750 billion, with major acquisitions at the Departments of Defense,
+  Energy and Veterans Affairs and at the National Aeronautics and Space
+  Administration experiencing cost growth, schedule delays or both
+  [gao-high-risk-cost-schedule-2025]. Three areas regressed between the 2023 and
+  2025 high-risk assessments — Department of Defense weapon systems acquisition,
   information-technology acquisition and management, and management of federal
   real property [gao-high-risk-list][gao-high-risk-cost-schedule-2025]. The
   federal real-property estate comprises 277,000 buildings whose annual
-  maintenance and operating costs exceeded $10.3 billion in fiscal year 2023,
-  while reported deferred maintenance and repairs rose from $170 billion in 2017
-  to $370 billion in 2024 [gao-high-risk-cost-schedule-2025]. Two projects
+  maintenance and operating costs exceeded $10.3 billion in fiscal 2023, while
+  reported deferred maintenance and repairs rose from $170 billion in 2017 to
+  $370 billion in 2024 [gao-high-risk-cost-schedule-2025]. Two projects
   illustrate the schedule record: the Veterans Affairs electronic health record
-  modernisation, estimated in 2022 at $49.8 billion in life-cycle costs ($32.7
-  billion for 13 years of implementation and $17.1 billion for 15 years of
-  sustainment), had been deployed to six locations as of December 2024 with more
-  than 160 remaining [gao-high-risk-cost-schedule-2025]; and a 2023 operational
-  risk assessment found 51 of the Federal Aviation Administration's 138 air
-  traffic control systems (37%) unsustainable and a further 54 (39%) potentially
-  unsustainable [gao-high-risk-cost-schedule-2025]. Delivery of disaster
-  recovery was added to the high-risk list as a new area in 2025, with federal
-  disaster assistance fragmented across more than 30 entities; appropriations
-  for disaster assistance totalled at least $448 billion over fiscal years
-  2015–2024, plus $110 billion in supplemental appropriations in December 2024
+  modernisation, costed in 2022 at $49.8 billion over its life cycle, had
+  reached six locations as of December 2024 with more than 160 remaining; and a
+  2023 assessment found 51 of the Federal Aviation Administration's 138 air
+  traffic control systems unsustainable and a further 54 potentially so
+  [gao-high-risk-cost-schedule-2025]. Delivery of federal disaster assistance
+  was added to the high-risk list as a new area in 2025, fragmented across more
+  than 30 entities, against appropriations of at least $448 billion over fiscal
+  years 2015–2024 plus $110 billion supplemental in December 2024
   [gao-high-risk-list][gao-high-risk-cost-schedule-2025].
 capacity_delivery_fr: >-
-  L'American Society of Civil Engineers a attribué la note globale C aux
-  infrastructures américaines dans son évaluation quadriennale de 2025 portant
-  sur 18 catégories — la première note C de la série, contre C- en 2021 et D+ en
-  2017 — et estime à 9 100 milliards de dollars les besoins d'investissement
-  pour atteindre un bon état d'entretien, face à 5 400 milliards
-  d'investissements publics et privés prévus sur 2024-2033, soit un écart de 3
-  700 milliards; cette société savante d'ingénieurs a une orientation de
-  plaidoyer connue en faveur d'investissements accrus
-  [asce-infrastructure-report-card-2025]. Du côté de l'exécution plutôt que de
-  l'état, le Government Accountability Office signale que le gouvernement
-  fédéral peine fortement à maîtriser les coûts de son portefeuille d'achats de
-  plus de 750 milliards de dollars, les grands programmes des départements de la
-  Défense, de l'Énergie et des Anciens Combattants ainsi que de la National
-  Aeronautics and Space Administration connaissant des dépassements de coûts,
-  des retards ou les deux [gao-high-risk-cost-schedule-2025]. Trois domaines ont
-  régressé entre les évaluations de 2023 et de 2025 : l'acquisition des systèmes
+  Le bilan réel en matière d'infrastructures à grande échelle se lit d'abord au
+  regard des fonds que l'État lui-même y a affectés. L'American Society of Civil
+  Engineers a attribué la note globale de C aux infrastructures des États-Unis
+  dans son évaluation quadriennale de 2025 portant sur 18 catégories (première
+  note C de la série, après C- en 2021 et D+ en 2017) et estime qu'il faudrait 9
+  100 milliards de dollars pour les ramener en bon état, contre 5 400 milliards
+  d'investissements publics et privés prévus de 2024 à 2033, soit un écart de 3
+  700 milliards (la Society est un organisme professionnel d'ingénierie dont
+  l'orientation militante en faveur d'une hausse des dépenses d'infrastructure
+  est connue) [asce-infrastructure-report-card-2025]. Face à ce déficit,
+  l'Infrastructure Investment and Jobs Act a rendu disponibles 711,8 milliards
+  de dollars en subventions aux tribus, aux États, aux administrations locales
+  et aux territoires, répartis entre quinze organismes fédéraux, le département
+  des Transports en recevant 74 % [gao-iija-grants-status-2025]. Au 31 décembre
+  2024, les organismes en avaient engagé 275,1 milliards, soit 39 %, et déboursé
+  119,4 milliards, soit 17 %; rapportés aux 580,6 milliards effectivement
+  disponibles entre les exercices 2022 et 2025 plutôt qu'à l'autorisation
+  totale, les taux atteignaient 47 % d'engagement et 21 % de décaissement
+  [gao-iija-grants-status-2025].
+
+
+  Ce qui circule, c'est l'argent sur lequel personne n'a à décider. Au
+  département des Transports, au moins 76 % des fonds engagés et environ 91 %
+  des fonds décaissés relevaient de subventions par formule, réparties entre les
+  États selon une formule légale plutôt que par décision d'attribution, et deux
+  programmes par formule représentaient à eux seuls au moins 68 % des fonds par
+  formule décaissés par le département [gao-iija-dot-2025]. Les fonds
+  discrétionnaires ont circulé bien plus lentement : environ 23 % des
+  bénéficiaires interrogés de subventions discrétionnaires de l'exercice 2022
+  n'avaient toujours pas d'entente signée au moment de répondre (entre décembre
+  2024 et mars 2025); invoquant la hausse des coûts liée à l'inflation, la
+  difficulté de définir le budget et l'échéancier des projets, l'examen
+  environnemental et les exigences de contenu national [gao-iija-dot-2025]. À
+  compter de janvier 2025, des décrets présidentiels ont ordonné aux organismes
+  de suspendre les décaissements en attendant un examen de conformité aux
+  priorités de l'administration; pour quatre organismes détenant environ 574,7
+  milliards de dollars, quelque 76 % avaient été engagés, et les examens ont
+  approuvé environ 9 500 attributions valant 128 milliards, annulé environ 800
+  valant 17,8 milliards, et laissé plus de 2 500 attributions valant 33,6
+  milliards en attente de décision [gao-funding-status-2026].
+
+
+  Pour ses propres opérations plutôt que pour le patrimoine national, le bilan
+  d'exécution est plus faible et, par endroits, se dégrade. Le Government
+  Accountability Office fait état de grandes difficultés à maîtriser les coûts
+  d'un portefeuille d'approvisionnement de plus de 750 milliards de dollars; les
+  grandes acquisitions des départements de la Défense, de l'Énergie et des
+  Anciens Combattants ainsi que de la National Aeronautics and Space
+  Administration connaissant des dépassements de coûts, des retards, ou les deux
+  [gao-high-risk-cost-schedule-2025]. Trois domaines ont régressé entre les
+  évaluations à haut risque de 2023 et de 2025 : l'acquisition des systèmes
   d'armes du département de la Défense, l'acquisition et la gestion des
-  technologies de l'information, et la gestion du patrimoine immobilier fédéral
-  [gao-high-risk-list][gao-high-risk-cost-schedule-2025]. Ce patrimoine
-  immobilier fédéral compte 277 000 bâtiments dont les coûts annuels d'entretien
-  et d'exploitation ont dépassé 10,3 milliards de dollars lors de l'exercice
-  2023, tandis que l'entretien et les réparations différés déclarés sont passés
-  de 170 milliards en 2017 à 370 milliards en 2024
-  [gao-high-risk-cost-schedule-2025]. Deux projets illustrent la tenue des
-  échéanciers : la modernisation du dossier de santé électronique des Anciens
-  Combattants, dont le coût sur le cycle de vie était estimé en 2022 à 49,8
-  milliards de dollars (32,7 milliards pour 13 ans de déploiement et 17,1
-  milliards pour 15 ans de maintien en condition), n'avait été déployée que sur
-  six sites en décembre 2024, plus de 160 restant à couvrir
-  [gao-high-risk-cost-schedule-2025]; et une évaluation des risques
-  opérationnels de 2023 a conclu que 51 des 138 systèmes de contrôle aérien de
-  la Federal Aviation Administration (37 %) n'étaient pas soutenables, 54 autres
-  (39 %) étant potentiellement non soutenables
-  [gao-high-risk-cost-schedule-2025]. La prestation de l'aide au relèvement
-  après catastrophe a été ajoutée à la liste à haut risque comme nouveau domaine
-  en 2025, l'aide fédérale étant fragmentée entre plus de 30 entités; les
-  crédits d'aide aux sinistrés ont totalisé au moins 448 milliards de dollars
-  sur les exercices 2015-2024, auxquels s'ajoutent 110 milliards de crédits
-  supplémentaires en décembre 2024
+  technologies de l'information, et la gestion des biens immobiliers fédéraux
+  [gao-high-risk-list][gao-high-risk-cost-schedule-2025]. Le parc immobilier
+  fédéral compte 277 000 bâtiments dont les coûts annuels d'entretien et
+  d'exploitation ont dépassé 10,3 milliards de dollars à l'exercice 2023, tandis
+  que l'entretien différé déclaré est passé de 170 milliards en 2017 à 370
+  milliards en 2024 [gao-high-risk-cost-schedule-2025]. Deux projets illustrent
+  le bilan des échéanciers : la modernisation du dossier de santé électronique
+  des Anciens Combattants (chiffrée en 2022 à 49,8 milliards sur son cycle de
+  vie) avait atteint six sites en décembre 2024, plus de 160 restant à déployer;
+  et une évaluation de 2023 a jugé 51 des 138 systèmes de contrôle du trafic
+  aérien de la Federal Aviation Administration non viables, et 54 autres
+  potentiellement non viables [gao-high-risk-cost-schedule-2025]. La prestation
+  de l'aide fédérale en cas de catastrophe a été ajoutée à la liste des domaines
+  à haut risque en 2025, répartie entre plus de 30 entités, face à des crédits
+  d'au moins 448 milliards de dollars sur les exercices 2015 à 2024, auxquels
+  s'ajoutent 110 milliards de crédits supplémentaires en décembre 2024
   [gao-high-risk-list][gao-high-risk-cost-schedule-2025].
 capacity_publicServices_en: >-
-  The Government Accountability Office's February 2025 high-risk list contains
-  38 areas, of which a substantial block covers continuous public-service
-  systems: Veterans Affairs health care, Medicare and improper payments,
-  Medicaid programme integrity, oversight of medical products, leadership and
-  coordination of public health emergencies, and federal programmes serving
-  tribes and their members [gao-high-risk-list]. Twenty of the 38 areas are on
-  the list in part because of skills gaps or inadequate staffing
-  [gao-high-risk-cost-schedule-2025]. Programme-integrity losses are large and
-  persistent: federal agencies have reported about $2.8 trillion in estimated
-  improper payments since 2003, including more than $150 billion government-wide
-  in each of the last seven years, and high-risk-list programmes — Medicare and
-  Medicaid among the fastest-growing — accounted for about 80% of the
-  government-wide improper-payment estimate for fiscal year 2023
-  [gao-high-risk-cost-schedule-2025]. Inspection capacity is a binding
-  constraint in food and drug oversight: the Food and Drug Administration
-  conducted an average of 917 foreign food safety inspections a year over fiscal
-  years 2018–2023, about 5% of its 19,200 annual target
-  [gao-high-risk-cost-schedule-2025]. In education, 53% of public schools
-  reported being understaffed entering the 2022–23 school year, among them 65%
-  in special education and 45% in general elementary teaching, and 44% reported
-  at least one vacant teaching position in October 2022 after the year had
-  started [nces-condition-of-education]. The share of public schools hiring for
-  at least one open teaching position rose from 66% in 2011–12 to 80% in
-  2020–21, and difficulty filling those positions rose across all twelve
-  reported subject fields — in special education, from 17% of hiring schools in
-  2011–12 to 40% in 2020–21 [nces-condition-of-education]. The supply pipeline
-  contracted over the same period: completions of teacher preparation programmes
-  fell 20%, from 189,200 in 2012–13 to 151,100 in 2019–20, with
-  traditional-route completions down 28% and the alternative-route share of
-  completers rising from 15% to 23% [nces-condition-of-education]. Staffing
-  difficulty is distributed unevenly by place and poverty: among public schools
-  hiring in mathematics in 2020–21, 24% of low-poverty schools reported
-  difficulty filling the position against 31%–34% of higher-poverty schools, and
-  27% of suburban schools against 35% of rural schools and 41% of schools in
-  towns [nces-condition-of-education].
+  Health care is the largest continuous system the state runs and the only
+  universal service it does not universally provide. Health consumption
+  expenditure reached about $5.0 trillion in 2024, or 17.2% of gross domestic
+  product [crs-if10830-health-coverage]. Coverage is near-universal above 65 and
+  incomplete below it: 8.3% of the population, 28.0 million people, had no
+  health insurance in 2025, against 9.2% and 30.0 million in 2021, while 11.6%
+  of working-age adults were uninsured, unchanged from 2024
+  [nchs-insurance-2025]. Coverage depends materially on which state a person
+  lives in — adults aged 18 to 64 in states that had not expanded Medicaid were
+  almost twice as likely to be uninsured, at 18.1%, as those in expansion
+  states, at 9.0% [nchs-insurance-2025]. The public programme is contracting:
+  Medicaid and the Children's Health Insurance Program covered 73.9 million
+  people in April 2026, down 5 million or 6% over the year, with enrolment
+  falling in every state; work requirements enacted in the 2025 reconciliation
+  act take effect from January 2027 and eligibility restrictions for certain
+  immigrant populations from October 2026 [kff-medicaid-enrollment-tracker].
+
+
+  The administrative systems running those programmes sit on the state's own
+  high-risk register. The Government Accountability Office's February 2025 list
+  contains 38 areas, of which a substantial block covers continuous
+  public-service systems: Veterans Affairs health care, Medicare and improper
+  payments, Medicaid programme integrity, oversight of medical products,
+  leadership and coordination of public health emergencies, and federal
+  programmes serving tribes and their members [gao-high-risk-list]. Waiting
+  times are published facility by facility on the department's Access to Care
+  website rather than as a national series [va-access-to-care], and independent
+  readings of those figures have diverged sharply from departmental summaries:
+  minority staff of the Senate Committee on Veterans' Affairs, tracking the
+  published data weekly from January 2025, reported Connecticut clinics where
+  new-patient mental health waits exceeded 100 days in most weeks from May 2025,
+  against an agencywide average the department put at about fifteen days
+  [senate-vac-wait-times-2025]. The committee minority is the opposition party's
+  staff and its facilities are not a national sample; what the divergence
+  establishes is that the department's own published data sustains readings its
+  summary figures do not. Twenty of the 38 are listed in part because of skills
+  gaps or inadequate staffing [gao-high-risk-cost-schedule-2025].
+  Programme-integrity losses are large and persistent: federal agencies have
+  reported about $2.8 trillion in estimated improper payments since 2003,
+  including more than $150 billion government-wide in each of the last seven
+  years, and high-risk-list programmes — Medicare and Medicaid among the
+  fastest-growing — accounted for about 80% of the government-wide estimate for
+  fiscal 2023 [gao-high-risk-cost-schedule-2025]. Inspection capacity is a
+  binding constraint in food and drug oversight: the Food and Drug
+  Administration conducted an average of 917 foreign food safety inspections a
+  year over fiscal years 2018–2023, about 5% of its 19,200 annual target
+  [gao-high-risk-cost-schedule-2025].
+
+
+  In education the binding constraint is staffing, and it is worsening on both
+  sides of the ledger: vacancies are rising while the supply of new teachers
+  falls. Fifty-three per cent of public schools reported being understaffed
+  entering the 2022–23 school year, among them 65% in special education and 45%
+  in general elementary teaching, and 44% reported at least one vacant teaching
+  position in October 2022 after the year had started
+  [nces-condition-of-education]. The share of public schools hiring for at least
+  one open teaching position rose from 66% in 2011–12 to 80% in 2020–21, and
+  difficulty filling those positions rose across all twelve reported subject
+  fields — in special education, from 17% of hiring schools to 40%
+  [nces-condition-of-education]. The supply pipeline contracted over the same
+  period: completions of teacher preparation programmes fell 20%, from 189,200
+  in 2012–13 to 151,100 in 2019–20, traditional-route completions down 28% and
+  the alternative-route share of completers rising from 15% to 23%
+  [nces-condition-of-education]. Staffing difficulty is distributed unevenly by
+  place and poverty: among public schools hiring in mathematics in 2020–21, 24%
+  of low-poverty schools reported difficulty filling the position against 31% to
+  34% of higher-poverty schools, and 27% of suburban schools against 35% of
+  rural schools and 41% of schools in towns [nces-condition-of-education].
 capacity_publicServices_fr: >-
-  La liste à haut risque du Government Accountability Office de février 2025
-  comprend 38 domaines, dont un bloc important porte sur des systèmes de
-  services publics à prestation continue : les soins de santé des Anciens
-  Combattants, Medicare et les paiements indus, l'intégrité du programme
-  Medicaid, la surveillance des produits médicaux, le pilotage et la
-  coordination des urgences de santé publique, et les programmes fédéraux
-  destinés aux tribus et à leurs membres [gao-high-risk-list]. Vingt des 38
-  domaines figurent sur la liste en partie en raison de déficits de compétences
-  ou d'effectifs insuffisants [gao-high-risk-cost-schedule-2025]. Les pertes
-  liées à l'intégrité des programmes sont massives et persistantes : les agences
-  fédérales ont déclaré environ 2 800 milliards de dollars de paiements indus
-  estimés depuis 2003, dont plus de 150 milliards à l'échelle du gouvernement
-  chaque année depuis sept ans, les programmes inscrits à la liste à haut
-  risque — Medicare et Medicaid comptant parmi ceux dont la croissance est la
-  plus rapide — représentant environ 80 % de l'estimation gouvernementale pour
-  l'exercice 2023 [gao-high-risk-cost-schedule-2025]. La capacité d'inspection
-  constitue une contrainte déterminante en matière de surveillance alimentaire
-  et pharmaceutique : la Food and Drug Administration a mené en moyenne 917
-  inspections alimentaires à l'étranger par an sur les exercices 2018-2023, soit
+  Les soins de santé constituent le plus vaste système continu géré par l'État
+  et le seul service universel qu'il n'assure pas universellement. Les dépenses
+  de consommation en santé ont atteint environ 5 000 milliards de dollars en
+  2024, soit 17,2 % du produit intérieur brut [crs-if10830-health-coverage]. La
+  couverture est quasi universelle au-delà de 65 ans et incomplète en deçà : 8,3
+  % de la population, soit 28,0 millions de personnes, n'avaient aucune
+  assurance maladie en 2025, contre 9,2 % et 30,0 millions en 2021, tandis que
+  11,6 % des adultes en âge de travailler n'étaient pas assurés, proportion
+  inchangée depuis 2024 [nchs-insurance-2025]. La couverture dépend sensiblement
+  de l'État de résidence : les adultes de 18 à 64 ans vivant dans un État
+  n'ayant pas étendu Medicaid étaient presque deux fois plus susceptibles d'être
+  sans assurance (à 18,1 %) que ceux des États l'ayant étendu (à 9,0 %)
+  [nchs-insurance-2025]. Le programme public se contracte : Medicaid et le
+  Children's Health Insurance Program couvraient 73,9 millions de personnes en
+  avril 2026, en baisse de 5 millions ou 6 % sur un an, les inscriptions
+  reculant dans tous les États; les exigences de travail adoptées dans la loi de
+  réconciliation de 2025 entrent en vigueur en janvier 2027 et les restrictions
+  d'admissibilité visant certaines populations immigrantes en octobre 2026
+  [kff-medicaid-enrollment-tracker].
+
+
+  Les systèmes administratifs qui gèrent ces programmes figurent au registre des
+  secteurs à risque élevé (High-Risk List) établi par l'État lui-même. La liste
+  de février 2025 du Government Accountability Office compte 38 domaines, dont
+  un bloc important couvre des systèmes de services publics continus : les soins
+  de santé aux anciens combattants, Medicare et les paiements irréguliers,
+  l'intégrité du programme Medicaid, la surveillance des produits médicaux, la
+  direction et la coordination des urgences de santé publique, et les programmes
+  fédéraux au service des tribus et de leurs membres [gao-high-risk-list]. Les
+  délais d'attente sont publiés établissement par établissement sur le site
+  Access to Care du département plutôt que sous forme de série nationale
+  [va-access-to-care], et les lectures indépendantes de ces chiffres divergent
+  fortement des synthèses ministérielles. Les services du parti d'opposition au
+  sein du comité sénatorial des Anciens Combattants, qui suivent les données
+  publiées chaque semaine depuis janvier 2025, ont relevé des cliniques du
+  Connecticut où l'attente d'un premier rendez-vous en santé mentale dépassait
+  100 jours la plupart des semaines depuis mai 2025, contre une moyenne
+  nationale que le département situait à une quinzaine de jours
+  [senate-vac-wait-times-2025]. Ces établissements ne constituent pas un
+  échantillon national; la divergence établit que les données publiées par le
+  département lui-même autorisent des lectures que ses chiffres de synthèse
+  n'autorisent pas. Vingt des 38 y figurent en partie en raison de lacunes de
+  compétences ou d'effectifs insuffisants [gao-high-risk-cost-schedule-2025].
+  Les pertes d'intégrité des programmes sont importantes et persistantes : les
+  organismes fédéraux ont déclaré environ 2 800 milliards de dollars de
+  paiements irréguliers estimés depuis 2003, dont plus de 150 milliards à
+  l'échelle fédérale chacune des sept dernières années; les programmes inscrits
+  au registre (Medicare et Medicaid parmi ceux qui progressent le plus vite)
+  représentant environ 80 % de l'estimation fédérale pour l'exercice 2023
+  [gao-high-risk-cost-schedule-2025]. La capacité d'inspection est une
+  contrainte déterminante dans la surveillance des aliments et des médicaments :
+  la Food and Drug Administration a mené en moyenne 917 inspections de salubrité
+  des aliments importés par an de l'exercice 2018 à l'exercice 2023, soit
   environ 5 % de sa cible annuelle de 19 200 [gao-high-risk-cost-schedule-2025].
-  Dans l'éducation, 53 % des écoles publiques déclaraient manquer de personnel à
-  l'entrée de l'année scolaire 2022-2023, dont 65 % en éducation spécialisée et
-  45 % en enseignement primaire général, et 44 % faisaient état d'au moins un
-  poste d'enseignant vacant en octobre 2022, l'année déjà commencée
-  [nces-condition-of-education]. La part des écoles publiques recrutant pour au
-  moins un poste vacant est passée de 66 % en 2011-2012 à 80 % en 2020-2021, et
-  les difficultés de recrutement se sont accrues dans les douze disciplines
-  recensées — en éducation spécialisée, de 17 % des écoles recruteuses en
-  2011-2012 à 40 % en 2020-2021 [nces-condition-of-education]. Le vivier s'est
-  contracté sur la même période : les diplômés des programmes de formation à
-  l'enseignement ont reculé de 20 %, de 189 200 en 2012-2013 à 151 100 en
-  2019-2020, la filière traditionnelle chutant de 28 % et la part des filières
-  alternatives parmi les diplômés passant de 15 % à 23 %
-  [nces-condition-of-education]. Les difficultés de dotation se répartissent
-  inégalement selon le territoire et la pauvreté : parmi les écoles publiques
+
+
+  En éducation, la contrainte déterminante est celle des effectifs, et elle
+  s'aggrave des deux côtés du bilan : les postes vacants augmentent pendant que
+  la relève diminue. Cinquante-trois pour cent des écoles publiques se
+  déclaraient en sous-effectif à l'entrée de l'année scolaire 2022-2023, dont 65
+  % en adaptation scolaire et 45 % en enseignement primaire général, et 44 %
+  signalaient au moins un poste d'enseignant vacant en octobre 2022, l'année
+  déjà commencée [nces-condition-of-education]. La proportion d'écoles publiques
+  recrutant pour au moins un poste d'enseignant est passée de 66 % en 2011-2012
+  à 80 % en 2020-2021, et la difficulté à pourvoir ces postes a augmenté dans
+  les douze champs disciplinaires recensés; en adaptation scolaire, de 17 % des
+  écoles recruteuses à 40 % [nces-condition-of-education]. La filière
+  d'alimentation s'est contractée sur la même période : les diplomations des
+  programmes de formation à l'enseignement ont reculé de 20 %, de 189 200 en
+  2012-2013 à 151 100 en 2019-2020; celles de la voie traditionnelle chutant de
+  28 % et la part des voies parallèles passant de 15 % à 23 %
+  [nces-condition-of-education]. La difficulté de recrutement se répartit
+  inégalement selon le lieu et la pauvreté : parmi les écoles publiques
   recrutant en mathématiques en 2020-2021, 24 % des écoles à faible taux de
-  pauvreté signalaient des difficultés de recrutement contre 31 % à 34 % des
-  écoles à taux plus élevé, et 27 % des écoles de banlieue contre 35 % des
-  écoles rurales et 41 % des écoles de petites villes
-  [nces-condition-of-education].
+  pauvreté déclaraient de la difficulté, contre 31 % à 34 % des écoles à taux
+  plus élevé, et 27 % des écoles de banlieue contre 35 % des écoles rurales et
+  41 % des écoles de petites villes [nces-condition-of-education].
 capacity_productivity_en: >-
-  US productivity growth is being supported by generative AI, which the
-  Congressional Budget Office incorporates as adding about 10 basis points per
-  year to average productivity growth, raising nonfarm business-sector output by
-  about 1% by 2036 [cbo-budget-outlook-2026]. Real business fixed investment
-  grows 3.9% in 2026, driven by AI and the 2025 reconciliation act's investment
-  incentives [cbo-budget-outlook-2026]. On internal barriers to the movement of
-  goods, labour and capital between the 50 states, the approved Pass A source
-  list contains no usable source measuring current interstate barriers.
+  Productivity is growing but decelerating, and the recent gains come as much
+  from shedding hours as from producing more. Nonfarm business sector labour
+  productivity rose 0.3% at an annual rate in the first quarter of 2026 — output
+  up 1.0%, hours up 0.7% — the smallest quarterly increase since the first
+  quarter of 2025, when productivity fell 0.9%; measured against the same
+  quarter a year earlier the increase was 2.8%, and across the current business
+  cycle the annualised rate is 2.1% [bls-productivity-2026]. Total factor
+  productivity in the private nonfarm business sector rose 0.8% in 2025, output
+  up 2.6% against combined inputs up 1.7% [bls-productivity-2026]. The industry
+  detail qualifies the headline: labour productivity rose in 41 of 85
+  manufacturing and mining industries in 2025, but output fell in 66 of the 85
+  and hours worked fell in 52 — productivity improving in much of the sector
+  because hours contracted faster than output [bls-productivity-2026]. By state
+  the pattern was broader: productivity rose in 42 states and the District of
+  Columbia in 2025, with output rising in all fifty states and the District
+  [bls-productivity-2026]. The Congressional Budget Office incorporates
+  generative artificial intelligence as adding about 10 basis points a year to
+  average productivity growth [cbo-budget-outlook-2026].
+
+
+  Research capacity is large, and the share of it funded by the state has fallen
+  by two thirds over six decades. The ratio of research and development to gross
+  domestic product reached 3.40% in 2021, having passed 3% for the first time in
+  2019; at the previous peak in 1964 federal expenditure alone accounted for
+  1.86% of gross domestic product and 67% of all domestic research, against
+  business funding of 0.86% and 31% [ncses-federally-funded-rd]. By 2020
+  businesses accounted for 73% of domestic research at 2.47% of gross domestic
+  product, and the federally funded share had fallen to 21% and 0.70%
+  [ncses-federally-funded-rd]. The shift now reaches the long-horizon work:
+  businesses funded 75% of total research performed in 2023 against 18% from the
+  federal government, and the business share of basic research funding grew from
+  21% in 2012 to an estimated 35% in 2023 while the federal share fell from 52%
+  to 41% [ncses-indicators-2025]. Federal research obligations in fiscal 2023
+  were weighted toward the near term — 25% basic research at $47 billion, 29%
+  applied at $54 billion, 46% experimental development at $85 billion
+  [ncses-indicators-2025].
+
+
+  On value added, the country builds high-value services and imports the goods.
+  Services exports produced a surplus of $339.5 billion in 2025 against a goods
+  deficit of $1,240.9 billion [bea-census-trade-annual-2025], and manufacturing
+  employs 12.6 million people, 7.9% of nonfarm payrolls [bls-empsit-june2026].
+  In minerals the extraction-versus-processing gap is the binding one: nonfuel
+  mineral production was valued at $112 billion in 2025, yet the country was
+  100% net import reliant on 16 nonfuel mineral commodities, with China the
+  primary source for 14 of the most import-dependent critical minerals
+  [usgs-mcs-2026]. The approved sources measure production and import reliance
+  but not domestic processing capacity separately, so the share of domestically
+  mined material processed domestically cannot be stated. On internal barriers
+  to the movement of goods, labour and capital between the fifty states —
+  interstate barriers, in the country's own term — the largest measurable one is
+  occupational licensing. In 2024, 21.6% of employed persons aged 16 and over
+  held a state licence to work in their occupation and a further 2.4% held a
+  certification without a licence, out of 161.3 million employed; among
+  management, professional and related occupations the licensed share was 30.5%
+  [bls-cps-licensing-2024]. Licences are issued under each state's own
+  regulatory structure [census-governments-2022], so a licensed worker moving
+  between states generally faces re-licensing. The approved sources do not
+  measure how much movement this forecloses.
 capacity_productivity_fr: >-
-  La croissance de la productivité américaine est soutenue par l'IA générative,
-  que le Congressional Budget Office intègre comme ajoutant environ 10 points de
-  base par an à la croissance moyenne de la productivité, relevant la production
-  du secteur des entreprises non agricoles d'environ 1 % d'ici 2036
-  [cbo-budget-outlook-2026]. L'investissement fixe réel des entreprises croît de
-  3,9 % en 2026, tiré par l'IA et les incitations à l'investissement de la loi
-  de réconciliation de 2025 [cbo-budget-outlook-2026]. Concernant les barrières
-  internes à la circulation des biens, de la main-d'œuvre et du capital entre
-  les 50 États, la liste de sources approuvée de la phase A ne contient aucune
-  source utilisable mesurant les barrières interétatiques actuelles.
+  La productivité progresse mais décélère, et les gains récents proviennent
+  autant de la réduction des heures que d'une hausse de la production. La
+  productivité du travail dans le secteur des entreprises non agricoles a
+  augmenté de 0,3 % en rythme annualisé au premier trimestre de 2026 (production
+  en hausse de 1,0 %, heures travaillées de 0,7 %), soit la plus faible hausse
+  trimestrielle depuis le premier trimestre de 2025, où la productivité avait
+  reculé de 0,9 %. Mesurée par rapport au même trimestre un an plus tôt, la
+  hausse atteignait 2,8 %, et sur le cycle économique en cours, le rythme
+  annualisé s'établit à 2,1 % [bls-productivity-2026]. La productivité globale
+  des facteurs dans le secteur privé non agricole a progressé de 0,8 % en 2025,
+  la production augmentant de 2,6 % contre 1,7 % pour l'ensemble des intrants
+  [bls-productivity-2026]. Le détail sectoriel nuance le résultat global : la
+  productivité du travail a augmenté dans 41 des 85 industries manufacturières
+  et minières en 2025, mais la production a reculé dans 66 d'entre elles et les
+  heures travaillées dans 52; la productivité s'améliorant dans une grande
+  partie du secteur parce que les heures se contractaient plus vite que la
+  production [bls-productivity-2026]. Par État, la tendance était plus large :
+  la productivité a augmenté dans 42 États et le district de Columbia en 2025,
+  la production progressant dans les cinquante États et le district
+  [bls-productivity-2026]. Le Congressional Budget Office intègre l'intelligence
+  artificielle générative comme ajoutant environ 10 points de base par an à la
+  croissance moyenne de la productivité [cbo-budget-outlook-2026].
+
+
+  La capacité de recherche est considérable, et la part financée par l'État a
+  chuté des deux tiers en six décennies. Le rapport de la
+  recherche-développement au produit intérieur brut atteignait 3,40 % en 2021,
+  après avoir dépassé 3 % pour la première fois en 2019; au sommet précédent, en
+  1964, les dépenses fédérales représentaient à elles seules 1,86 % du produit
+  intérieur brut et 67 % de toute la recherche intérieure, contre 0,86 % et 31 %
+  pour le financement des entreprises [ncses-federally-funded-rd]. En 2020, les
+  entreprises assuraient 73 % de la recherche intérieure, soit 2,47 % du produit
+  intérieur brut, et la part financée par le fédéral était tombée à 21 % et 0,70
+  % [ncses-federally-funded-rd]. Le déplacement touche désormais les travaux à
+  long horizon : les entreprises ont financé 75 % de la recherche totale
+  réalisée en 2023, contre 18 % pour le gouvernement fédéral, et leur part du
+  financement de la recherche fondamentale est passée de 21 % en 2012 à environ
+  35 % en 2023, tandis que la part fédérale reculait de 52 % à 41 %
+  [ncses-indicators-2025]. Les engagements fédéraux de recherche de l'exercice
+  2023 penchaient vers le court terme : 25 % en recherche fondamentale (soit 47
+  milliards de dollars), 29 % en recherche appliquée (soit 54 milliards) et 46 %
+  en développement expérimental (soit 85 milliards) [ncses-indicators-2025].
+
+
+  Du côté de la valeur ajoutée, le pays fabrique des services à forte valeur et
+  importe les biens. Les exportations de services ont dégagé un excédent de
+  339,5 milliards de dollars en 2025, contre un déficit de 1 240,9 milliards sur
+  les biens [bea-census-trade-annual-2025], et la fabrication emploie 12,6
+  millions de personnes, soit 7,9 % des emplois salariés non agricoles
+  [bls-empsit-june2026]. Dans les minéraux, l'écart déterminant se situe entre
+  l'extraction et la transformation : la production minière non combustible a
+  été évaluée à 112 milliards de dollars en 2025, alors que le pays dépendait à
+  100 % des importations nettes pour 16 produits minéraux non combustibles; la
+  Chine étant la source principale de 14 des minéraux critiques les plus
+  dépendants des importations [usgs-mcs-2026]. Les sources retenues mesurent la
+  production et la dépendance aux importations, mais non la capacité de
+  transformation intérieure prise séparément; la part du minerai extrait au pays
+  qui y est aussi transformée ne peut donc être établie. Quant aux obstacles
+  internes à la circulation des biens, de la main-d'œuvre et des capitaux entre
+  les cinquante États (les obstacles interétatiques, selon le terme du pays), le
+  plus important qui soit mesurable est la réglementation professionnelle. En
+  2024, 21,6 % des personnes occupées de 16 ans et plus détenaient un permis
+  d'exercice délivré par un État, et 2,4 % supplémentaires une attestation sans
+  permis, sur 161,3 millions de personnes occupées; dans les professions de
+  gestion et les professions libérales et connexes, la part détenant un permis
+  atteignait 30,5 % [bls-cps-licensing-2024]. Les permis sont délivrés selon la
+  structure réglementaire propre à chaque État [census-governments-2022], de
+  sorte qu'un travailleur titulaire d'un permis qui change d'État doit
+  généralement le refaire valider. Les sources retenues ne mesurent pas
+  l'ampleur des déplacements que cela empêche.
 capacity_knownAndUnbuilt_en: |-
   {
     "opener": "On documented-but-unclosed gaps the United States is a case of abundant self-assessment rather than scarce: the register below rests almost entirely on the country's own institutions — the Government Accountability Office, the Council on Environmental Quality, the Congressional Budget Office, the National Center for Education Statistics, the National Center for Health Statistics and the National Climate Assessment — supplemented at only two points by external scorers, so its length reflects how much the state publishes about itself as much as how much it has left unclosed. This is a central register here, and it is being added to rather than cleared: the auditing bodies record areas regressing between successive assessments and backlogs more than doubling, while most entries carry no documented response at all. Detail follows.",
@@ -6022,7 +6452,7 @@ sources: |-
       "desc": "American Society of Civil Engineers' quadrennial national assessment grading 18 categories of U.S. infrastructure condition and investment need; primary professional-engineering-body source with a known advocacy orientation toward higher infrastructure spending.",
       "descFr": "Évaluation nationale quadriennale de l'American Society of Civil Engineers notant 18 catégories d'infrastructure américaine; source primaire d'un ordre professionnel avec une orientation de plaidoyer connue en faveur d'investissements accrus.",
       "publicationDate": "2025-03-24",
-      "accessDate": "2026-07-19",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Interpretation",
       "volatility": "Med"
@@ -6756,6 +7186,185 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "crs-lsb11333-seven-county",
+      "name": "\"Deference Squared\": Supreme Court Limits NEPA's Scope and Courts' Reach in Seven County Infrastructure Coalition",
+      "url": "https://www.congress.gov/crs-product/LSB11333",
+      "desc": "Legal Sidebar of the Congressional Research Service analysing the Supreme Court's May 2025 decision narrowing National Environmental Policy Act review, together with the rescission of government-wide implementing regulations under Executive Order 14154.",
+      "descFr": "Legal Sidebar du Congressional Research Service analysant la décision de mai 2025 de la Cour suprême restreignant l'examen prévu par le National Environmental Policy Act, ainsi que l'abrogation des règlements d'application applicables à l'ensemble du gouvernement en vertu du décret 14154. Titre traduit : « \"Déférence au carré\" : la Cour suprême limite la portée du NEPA et l'action des tribunaux dans l'affaire Seven County Infrastructure Coalition ».",
+      "publicationDate": "2025-07-07",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "\"Deference Squared\": Supreme Court Limits NEPA's Scope and Courts' Reach in Seven County Infrastructure Coalition",
+      "frReview": true
+    },
+    {
+      "id": "gao-iija-grants-status-2025",
+      "name": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024 (GAO-25-107243)",
+      "url": "https://www.gao.gov/products/gao-25-107243",
+      "desc": "Report of the Government Accountability Office analysing USAspending.gov data on obligation and outlay of Infrastructure Investment and Jobs Act grant funding to non-federal jurisdictions; the legislature's non-partisan audit body.",
+      "descFr": "Rapport du Government Accountability Office analysant les données d'USAspending.gov sur l'engagement et le décaissement des subventions de l'Infrastructure Investment and Jobs Act aux administrations non fédérales; l'organe d'audit non partisan du Congrès. Titre traduit : « Subventions d'infrastructure : état du financement versé aux tribus, États, collectivités locales et territoires au 31 décembre 2024 (GAO-25-107243) ».",
+      "publicationDate": "2025-04-29",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024 (GAO-25-107243)",
+      "frReview": true
+    },
+    {
+      "id": "gao-iija-dot-2025",
+      "name": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks (GAO-25-107166)",
+      "url": "https://www.gao.gov/products/gao-25-107166",
+      "desc": "Report of the Government Accountability Office on Department of Transportation delivery of infrastructure funding, distinguishing formula from discretionary grants and surveying 316 project awardees on execution obstacles.",
+      "descFr": "Rapport du Government Accountability Office sur l'acheminement du financement d'infrastructure par le Department of Transportation, distinguant les subventions par formule des subventions discrétionnaires et interrogeant 316 bénéficiaires de projets sur les obstacles à l'exécution. Titre traduit : « Infrastructure Investment and Jobs Act : le DOT devrait mieux communiquer l'état du financement et évaluer les risques (GAO-25-107166) ».",
+      "publicationDate": "2025-07-24",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks (GAO-25-107166)",
+      "frReview": true
+    },
+    {
+      "id": "gao-funding-status-2026",
+      "name": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act (GAO-26-108434)",
+      "url": "https://www.gao.gov/products/gao-26-108434",
+      "desc": "Report of the Government Accountability Office on the status of infrastructure and clean-energy funding following the January 2025 executive orders pausing disbursement, recording awards approved, cancelled and pending across selected agencies.",
+      "descFr": "Rapport du Government Accountability Office sur l'état du financement des infrastructures et de l'énergie propre à la suite des décrets de janvier 2025 suspendant les décaissements, recensant les octrois approuvés, annulés et en attente dans une sélection d'agences. Titre traduit : « État du financement : Infrastructure Investment and Jobs Act et Inflation Reduction Act (GAO-26-108434) ».",
+      "publicationDate": "2026-07-22",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act (GAO-26-108434)",
+      "frReview": true
+    },
+    {
+      "id": "nchs-insurance-2025",
+      "name": "U.S. Uninsured Rate Unchanged in 2025",
+      "url": "https://www.cdc.gov/nchs/pressroom/releases/20260528.html",
+      "desc": "Release of the National Center for Health Statistics presenting early estimates from the 2025 National Health Interview Survey on health insurance coverage by age, plan type and state Medicaid expansion status; primary federal statistical source.",
+      "descFr": "Communiqué du National Center for Health Statistics présentant les premières estimations de l'enquête 2025 National Health Interview Survey sur la couverture d'assurance maladie selon l'âge, le type de régime et le statut d'expansion de Medicaid par État; source statistique fédérale primaire. Titre traduit : « Le taux de non-assurés aux États-Unis inchangé en 2025 ».",
+      "publicationDate": "2026-05-28",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "U.S. Uninsured Rate Unchanged in 2025",
+      "frReview": true
+    },
+    {
+      "id": "crs-if10830-health-coverage",
+      "name": "Health Care Coverage and Spending (IF10830)",
+      "url": "https://www.congress.gov/crs-product/IF10830",
+      "desc": "In Focus brief of the Congressional Research Service compiling federal statistical data on health insurance coverage by type and on national health expenditure as a share of gross domestic product.",
+      "descFr": "Note In Focus du Congressional Research Service compilant des données statistiques fédérales sur la couverture d'assurance maladie par type et sur les dépenses nationales de santé en part du produit intérieur brut. Titre traduit : « Couverture et dépenses de santé (IF10830) ».",
+      "publicationDate": "2026-03-30",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "Health Care Coverage and Spending (IF10830)",
+      "frReview": true
+    },
+    {
+      "id": "kff-medicaid-enrollment-tracker",
+      "name": "Medicaid/CHIP Monthly Enrollment Tracker",
+      "url": "https://www.kff.org/medicaid/medicaid-enrollment-tracker/",
+      "desc": "Monthly enrolment series maintained by KFF from Centers for Medicare and Medicaid Services performance data and state dashboards; an independent health-policy research organisation, non-governmental, already used elsewhere in this report for comparative health data.",
+      "descFr": "Série mensuelle d'inscriptions tenue par KFF à partir des données de performance des Centers for Medicare and Medicaid Services et des tableaux de bord des États; organisation indépendante de recherche en politique de santé, non gouvernementale, déjà utilisée ailleurs dans ce rapport pour des données de santé comparatives. Titre traduit : « Suivi mensuel des inscriptions à Medicaid/CHIP ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "High",
+      "nameFr": "Medicaid/CHIP Monthly Enrollment Tracker",
+      "frReview": true
+    },
+    {
+      "id": "va-access-to-care",
+      "name": "Access to Care — Veterans Health Administration",
+      "url": "https://www.accesstocare.va.gov/",
+      "desc": "Public reporting site of the Department of Veterans Affairs publishing appointment wait times by facility and care type; the operating department's own service-delivery record.",
+      "descFr": "Site public de reddition de comptes du Department of Veterans Affairs publiant les délais d'attente pour rendez-vous par établissement et type de soins; le relevé de prestation de services propre au ministère opérationnel. Titre traduit : « Accès aux soins — Veterans Health Administration ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Access to Care — Veterans Health Administration",
+      "frReview": true,
+      "landingPage": true
+    },
+    {
+      "id": "senate-vac-wait-times-2025",
+      "name": "Letter to the Secretary of Veterans Affairs on new patient mental health appointment wait times, 13 November 2025",
+      "url": "https://www.veterans.senate.gov/services/files/3A4C2B28-65FA-4E58-ACCF-6EA7181F1D47",
+      "desc": "Oversight letter published by the Senate Committee on Veterans' Affairs, drawing on the department's own weekly published wait-time data; written by minority staff and therefore partisan in framing, cited for the figures it reports from the department's series.",
+      "descFr": "Lettre de surveillance publiée par la commission des anciens combattants du Sénat, s'appuyant sur les données hebdomadaires de délais d'attente publiées par le ministère lui-même; rédigée par le personnel de la minorité et donc partisane dans son cadrage, citée pour les chiffres qu'elle rapporte de la série du ministère. Titre traduit : « Lettre au secrétaire aux Anciens combattants sur les délais d'attente des nouveaux patients en santé mentale, 13 novembre 2025 ».",
+      "publicationDate": "2025-11-13",
+      "accessDate": "2026-08-03",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "High",
+      "nameFr": "Letter to the Secretary of Veterans Affairs on new patient mental health appointment wait times, 13 November 2025",
+      "frReview": true
+    },
+    {
+      "id": "bls-productivity-2026",
+      "name": "Productivity and Costs — Major Sector Productivity and Costs Program",
+      "url": "https://www.bls.gov/productivity/",
+      "desc": "Programme page of the Bureau of Labor Statistics carrying quarterly labour productivity and unit labour cost measures for the nonfarm business, manufacturing and nonfinancial corporate sectors, together with annual total factor productivity and industry- and state-level series; primary federal statistical source. Quarterly headline figures rotate on release.",
+      "descFr": "Page de programme du Bureau of Labor Statistics portant les mesures trimestrielles de productivité du travail et de coût unitaire du travail pour les secteurs des entreprises non agricoles, de la fabrication et des sociétés non financières, ainsi que les séries annuelles de productivité globale des facteurs et par industrie et par État; source statistique fédérale primaire. Les chiffres phares trimestriels changent à chaque publication. Titre traduit : « Productivité et coûts — programme de productivité et de coûts des grands secteurs ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Productivity and Costs — Major Sector Productivity and Costs Program",
+      "frReview": true
+    },
+    {
+      "id": "bls-cps-licensing-2024",
+      "name": "Certification and licensing status of the employed by occupation, 2024 annual averages (Table 53)",
+      "nameFr": "Certification and licensing status of the employed by occupation, 2024 annual averages (Table 53)",
+      "url": "https://www.bls.gov/cps/cpsaat53.pdf",
+      "desc": "Annual average table from the Current Population Survey of the Bureau of Labor Statistics, giving the share of employed persons holding an occupational certification or state licence by occupation group; primary federal statistical source.",
+      "descFr": "Tableau de moyennes annuelles issu de la Current Population Survey du Bureau of Labor Statistics, donnant la part des personnes en emploi détenant une certification professionnelle ou une licence d'État par groupe professionnel; source statistique fédérale primaire. Titre traduit : « Statut de certification et de licence des personnes en emploi par profession, moyennes annuelles 2024 (tableau 53) ».",
+      "publicationDate": "2025-01-01",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "frReview": true
+    },
+    {
+      "id": "ncses-federally-funded-rd",
+      "name": "Federally Funded R&D Declines as a Share of GDP and Total R&D (NSF 23-339)",
+      "url": "https://ncses.nsf.gov/pubs/nsf23339",
+      "desc": "Analysis of the National Center for Science and Engineering Statistics within the National Science Foundation, drawing on its National Patterns of R&D Resources series, on the long-run shift in research funding from federal to business sources; primary federal statistical source.",
+      "descFr": "Analyse du National Center for Science and Engineering Statistics au sein de la National Science Foundation, s'appuyant sur sa série National Patterns of R&D Resources, sur le glissement de long terme du financement de la recherche des sources fédérales vers les sources privées; source statistique fédérale primaire. Titre traduit : « Le financement fédéral de la R-D décline en part du PIB et de la R-D totale (NSF 23-339) ».",
+      "publicationDate": "2023-06-13",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Federally Funded R&D Declines as a Share of GDP and Total R&D (NSF 23-339)",
+      "frReview": true
+    },
+    {
+      "id": "ncses-indicators-2025",
+      "name": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons (NSB-2025-7)",
+      "url": "https://ncses.nsf.gov/pubs/nsb20257",
+      "desc": "Congressionally mandated indicators report of the National Science Board and the National Center for Science and Engineering Statistics, giving research funding and performance by sector and by character of work; primary federal statistical source.",
+      "descFr": "Rapport d'indicateurs mandaté par le Congrès, du National Science Board et du National Center for Science and Engineering Statistics, donnant le financement et la performance de la recherche par secteur et par nature des travaux; source statistique fédérale primaire. Titre traduit : « Indicateurs scientifiques et d'ingénierie — Recherche et développement : tendances américaines et comparaisons internationales (NSB-2025-7) ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons (NSB-2025-7)",
       "frReview": true
     }
   ]

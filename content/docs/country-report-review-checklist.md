@@ -134,7 +134,7 @@
 
 **capacity.inheritedTerrain** — [OPENER] the denominator
 - ☐ OPENER: structural terrain the state works against, BEFORE any performance claim
-- ☐ Scale; resource base; colonial/extractive legacy; conflict history; inherited education/health base
+- ☐ Scale; resource base; colonial/extractive legacy; damage from armed conflict on its own soil, or plainly none; inherited education/health base
 - ☐ ANCHORED SYNTHESIS ([dot.path], no new facts); merit-gap GUARD present (capacity inherited, never earned)
 
 **capacity.steering** — governance as process

@@ -65,7 +65,7 @@ const OPENER_RULES = {
   inheritedTerrain: {
     re: /inherit|hérit|terrain|colonial|coloni[sz]|legacy|\blegs\b|endow|dotation|scale|échelle|conflict histor|extractiv|post-?colonial|settler|structural|structurel|geography|géographi/i,
     window: 300,
-    hint: 'must open with the structural terrain the state works against, before any performance claim (scale; resource base; colonial/extractive legacy; conflict history; inherited education/health base)',
+    hint: 'must open with the structural terrain the state works against, before any performance claim (scale; resource base; colonial/extractive legacy; damage from armed conflict on its own soil, or plainly none; inherited education/health base)',
   },
   posture: {
     re: /defensive|expeditionary|neutral|alliance|non-?aligned|hedg|aligned|défensi|expéditionnair|neutre|alliance|non-?align|alignement|équilibr/i,

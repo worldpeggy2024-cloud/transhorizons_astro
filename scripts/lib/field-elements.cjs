@@ -148,7 +148,7 @@ const FIELDS = [
   { key: 'capacity.inheritedTerrain', gate: false, elements: [
     { id: 'scale', label: 'geographic and demographic scale' },
     { id: 'resourceBase', label: 'resource base' },
-    { id: 'legacy', label: 'colonial/extractive legacy and terms of trade; conflict history' },
+    { id: 'legacy', label: 'colonial/extractive legacy and terms of trade; damage from armed conflict fought on its own soil (war destruction, wartime displacement, munitions contamination), or plainly none' },
     { id: 'inheritedBase', label: 'inherited education and health base' },
   ] },
   { key: 'capacity.steering', elements: [

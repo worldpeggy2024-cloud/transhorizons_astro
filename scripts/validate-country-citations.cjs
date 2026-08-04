@@ -171,9 +171,9 @@ function validateCountryFile(filePath) {
           if (s?.landingPage === true) {
             // Deliberate curator choice: an official landing page that offers the
             // document in both languages beats a language-locked deep link (PDF).
-            warnings.push(`Source ${key}: landing-page URL accepted (landingPage: true — bilingual access by design)`);
+            warnings.push(`Source ${key}: landing-page URL accepted (landingPage: true — deliberate entry point: bilingual language-chooser or single-purpose data-portal root)`);
           } else {
-            errors.push(`Source ${key}: generic homepage URL (needs deep link, or "landingPage": true for a deliberate bilingual landing page)`);
+            errors.push(`Source ${key}: generic homepage URL (needs a deep link, or "landingPage": true for a deliberate landing page — a bilingual language-chooser or a single-purpose data-portal root)`);
           }
         }
       } catch {
