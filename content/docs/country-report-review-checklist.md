@@ -157,7 +157,7 @@
 ## SECURITY & DIPLOMACY
 
 **security.internal** — monopoly on force
-- ☐ Armed groups; organised crime/trafficking/illicit finance; communal violence; terrorism level; corruption in forces; border situation; monopoly on force + territorial control across the WHOLE territory (military strength is NOT here)
+- ☐ Armed groups; organised crime/trafficking/illicit finance; communal violence; terrorism level; corruption in forces (name the auditing body + its independence from the forces; where only the forces' own sources exist, say so); border situation; monopoly on force + territorial control across the WHOLE territory (military strength is NOT here)
 
 **security.military** ⚙ — capability
 - ☐ Force size and structure

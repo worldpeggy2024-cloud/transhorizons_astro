@@ -40,7 +40,7 @@ A marker that resolves to neither is an error. Never invent either kind.
 - `capacity_knownAndUnbuilt_*` — the field you are composing; it is empty.
 - `actors_*`, `risks_*`, `scorecard*`, `baseline_*`, `capacity_inheritedTerrain_*`, `security_posture_*` — these fields introduce no facts of their own; each is assembled from other fields. Building this register on one of them would rest a summary on a summary. Where one of them reflects a gap, find the field it came from and use that.
 
-`capacity_inheritedTerrain_*` has a second role: **read it for the denominator** (see the guard below). It describes the structural ground the state works against — scale, resource base, colonial and extractive legacy, conflict history, inherited education and health base.
+`capacity_inheritedTerrain_*` has a second role: **read it for the denominator** (see the guard below). It describes the structural ground the state works against — scale, resource base, colonial and extractive legacy, damage from armed conflict fought on its own soil (or its absence), inherited education and health base.
 
 ---
 

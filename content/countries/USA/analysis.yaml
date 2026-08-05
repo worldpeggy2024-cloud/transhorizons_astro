@@ -2498,8 +2498,8 @@ capacity_inheritedTerrain_fr: >-
   et les autochtones d'Alaska [society.wellbeing]. Les résultats de santé sont
   médiocres au regard de la richesse du pays; l'espérance de vie se situant sous
   la moyenne des pays comparables malgré la dépense de santé par personne la
-  plus élevée de tous ses pairs. Le gradient de mortalité joue dans le même sens :
-  la mortalité normalisée selon l'âge chez les hommes amérindiens et
+  plus élevée de tous ses pairs. Le gradient de mortalité joue dans le même
+  sens : la mortalité normalisée selon l'âge chez les hommes amérindiens et
   autochtones d'Alaska atteint plus du double de celle des hommes asiatiques
   [society.wellbeing]. Les mêmes populations occupent le bas des deux
   classements, en scolarisation comme en mortalité.
@@ -3609,161 +3609,752 @@ capacity_knownAndUnbuilt_fr: |-
     "denominator": "La capacité de combler ces manques se situe là où elle est du fait d'un terrain hérité et non d'un mérite acquis : une masse continentale riche en ressources mais aux distances internes considérables, une population nombreuse bâtie par l'immigration dont la croissance vient de ralentir fortement, une vaste dotation énergétique et minérale associée à une forte dépendance aux importations de minéraux critiques, la plus grande et la plus diversifiée des économies de services au monde, et une base budgétaire portant une dette publique historiquement élevée — une répartition fixée par l'histoire, la géographie et l'échelle, jamais méritée ni acquise, et le dénominateur au regard duquel chaque entrée ci-dessus doit être lue."
   }
 security_posture_en: >-
-  The United States maintains a globally expeditionary, power-projecting
-  security posture increasingly reoriented toward homeland and Western
-  Hemisphere defence, with an aligned diplomatic orientation anchored in its
-  alliance network but shifting toward burden-transfer to partners
-  [security.military][security.internal][security.transnationalExposure][security.diplomacy].
+  The security posture is expeditionary and unmatched in reach; the diplomatic
+  orientation is aligned, with the country at the centre of the bloc rather than
+  attached to one, and disengaging from institutions. Both are narrowing rather
+  than expanding: military spending is falling and its share of the world total
+  shrinking while allies' rises, and the standing strategy reorients from global
+  presence toward homeland defence and the Western Hemisphere
+  [security.military]. Capability itself is intact — forces are permanently
+  based across dozens of countries, only two locations without host-nation
+  consent, and the treaty alliance system remains the largest in the world, with
+  Japan meeting the majority of the identifiable costs of the presence on its
+  territory and South Korea a substantial share
+  [security.military][security.diplomacy]. The reorientation is visible inward
+  as well, in military support to interagency border operations and in a contest
+  over which level of government commands federalised forces that the courts
+  settled against the executive [security.internal]. The assessment machinery is
+  being reduced at both ends at once: the statutory body coordinating
+  intelligence on foreign influence was dissolved in August 2025 along with the
+  equivalent task force at the federal police, while withdrawal from 66
+  international organisations included the multilateral bodies for countering
+  hybrid threats and for cyber expertise — all in the same period in which the
+  intelligence services documented cartel networks, pre-positioned cyber
+  intrusions and interference operations in detail
+  [security.transnationalExposure][security.diplomacy]. The posture is therefore
+  expeditionary in capability, hemispheric in emphasis, aligned but
+  transactional in orientation, and increasingly unaccompanied by the
+  institutional machinery through which that alignment was formerly exercised.
 security_posture_fr: >-
-  Les États-Unis maintiennent une posture de sécurité expéditionnaire mondiale
-  et de projection de puissance, de plus en plus réorientée vers la défense du
-  territoire et de l'hémisphère occidental, avec une orientation diplomatique
-  alignée ancrée dans leur réseau d'alliances mais évoluant vers un transfert de
-  charge aux partenaires
-  [security.military][security.internal][security.transnationalExposure][security.diplomacy].
+  La posture de sécurité est expéditionnaire et d'une portée sans égale;
+  l'orientation diplomatique est alignée, le pays occupant le centre du bloc
+  plutôt qu'y étant rattaché, et se désengage des institutions. Les deux se
+  resserrent plutôt qu'elles ne s'étendent : les dépenses militaires reculent et
+  leur part dans le total mondial diminue tandis que celle des alliés progresse,
+  et la stratégie en vigueur réoriente la présence mondiale vers la défense du
+  territoire et l'hémisphère occidental [security.military]. La capacité, elle,
+  demeure intacte : des forces sont stationnées en permanence dans des dizaines
+  de pays (deux emplacements seulement l'étant sans le consentement du pays
+  hôte) et le système d'alliances par traité reste le plus vaste au monde; le
+  Japon assumant la majorité des coûts identifiables de cette présence sur son
+  territoire et la Corée du Sud une part substantielle
+  [security.military][security.diplomacy]. La réorientation se lit aussi vers
+  l'intérieur, dans l'appui militaire aux opérations frontalières interagences
+  et dans un conflit sur le palier de gouvernement habilité à commander des
+  forces fédéralisées, que les tribunaux ont tranché contre l'exécutif
+  [security.internal]. L'appareil d'évaluation se réduit simultanément aux deux
+  extrémités : l'organisme créé par la loi pour coordonner le renseignement sur
+  l'influence étrangère a été dissous en août 2025, de même que le groupe de
+  travail équivalent de la police fédérale, tandis que le retrait de 66
+  organisations internationales visait notamment les organismes multilatéraux de
+  lutte contre les menaces hybrides et de cyberexpertise; le tout durant la
+  période même où les services de renseignement documentaient en détail les
+  réseaux de cartels, les intrusions informatiques pré-positionnées et les
+  opérations d'ingérence [security.transnationalExposure][security.diplomacy].
+  La posture est donc expéditionnaire par la capacité, hémisphérique par
+  l'accent, alignée mais transactionnelle par l'orientation, et de moins en
+  moins accompagnée de l'appareil institutionnel par lequel cet alignement
+  s'exerçait auparavant.
 security_internal_en: >-
-  The state maintains its monopoly on force across the whole territory, and the
-  2026 National Defense Strategy elevates border security and counter-narcotics
-  as top homeland priorities, directing military support to interagency border
-  operations and strikes on alleged drug-trafficking vessels [ndstrategy-2026].
-  Border enforcement statistics are compiled by Customs and Border Protection
-  [dhs-cbp-border-stats]. Political violence and unrest are tracked by the Armed
-  Conflict Location & Event Data Project (ACLED) [acled-usa]. Following the
-  January 2026 Venezuela operation, the United States conducted a further strike
-  in June 2026 against a Venezuelan gang leader, indicating continued kinetic
-  action against transnational criminal organisations in the hemisphere
-  [maduro-capture-wardept].
+  The state's monopoly on force is uncontested by non-state actors and was
+  contested during the period between levels of government. From October 2025
+  the executive federalised National Guard units under Title 10 for deployment
+  to Chicago over the objection of Illinois's governor, having federalised units
+  for Los Angeles and Portland earlier in the year; governors in three states
+  obtained injunctions, and in December 2025 the Supreme Court declined to
+  disturb them by six votes to three [scotus-trump-v-illinois-2025]. Under the
+  Federal Protection Mission those forces served under United States Army North
+  with the Department of Homeland Security as lead federal agency;
+  demobilisation in all three cities completed on 21 January 2026, and Texas
+  National Guard personnel were released from stand-by on 11 March 2026
+  [northcom-federal-protection-mission]. No episode involved forces declining
+  lawful orders; what was disputed was which level of government was entitled to
+  issue them.
+
+
+  The border situation has changed by an order of magnitude. Nationwide
+  encounters totalled 91,603 across October, November and December 2025, the
+  lowest start to any fiscal year on record and 28% below the previous low set
+  in fiscal 2012; the October figure of 30,561 was itself 29% below the previous
+  record October [dhs-cbp-border-stats]. Southwest border apprehensions have
+  averaged 258 a day, against a daily average of 5,110 between February 2021 and
+  December 2024 [dhs-cbp-border-stats]. The Border Patrol recorded fourteen
+  consecutive months without releasing an apprehended person into the country
+  through June 2026 [dhs-border-releases-2026]. Interdiction has risen as
+  crossings have fallen: nationwide seizures of cocaine, methamphetamine,
+  heroin, fentanyl and cannabis by weight were 57% higher in fiscal 2026 through
+  June than in the same period of fiscal 2024, with 1,072 pounds of fentanyl
+  seized in June 2026 alone [dhs-border-releases-2026]. The 2026 National
+  Defense Strategy elevates border security and counter-narcotics to top
+  homeland priorities and directs military support to interagency border
+  operations [ndstrategy-2026]. Domestic organised crime and illicit finance are
+  not measured in consolidated form beyond these seizure weights. Illicit
+  finance is assessed rather than counted, and enforced through a reporting
+  regime of unusual scale. The Treasury's 2024 National Money Laundering Risk
+  Assessment, issued with companion assessments of terrorist and proliferation
+  financing, identifies the fentanyl trade, domestic and foreign terrorist
+  financing, ransomware, professional money-laundering networks and the
+  continued digitisation of payments as the principal threats, and a
+  beneficial-ownership reporting requirement took effect on 1 January 2024
+  [treasury-nra-2024]. Roughly 324,000 registered financial institutions and
+  other filers report to the Financial Crimes Enforcement Network, which
+  received 4.7 million suspicious activity reports in fiscal 2024 against 4.3
+  million in fiscal 2022 [fincen-year-in-review]. In fiscal 2025 the Federal
+  Bureau of Investigation arrested 5,957 investigative subjects tied to those
+  filings, indicted 4,727 and obtained 2,795 convictions; the network's stated
+  priority threats were cartels, Chinese money-laundering networks, fentanyl and
+  terrorism financing [fincen-year-in-review].
+
+
+  Conduct within the security forces is audited principally by bodies inside the
+  executive that commands them, and the significant finding of the period came
+  from outside it. The Inter-American Commission on Human Rights held the state
+  responsible for the torture and death of a detainee in Customs and Border
+  Protection custody, found that United States law governing the use of force
+  lacked the parameters necessary to safeguard rights, identified serious flaws
+  in the criminal investigation including destruction of evidence, and recorded
+  that the state did not respond when the finding was transmitted to it twice
+  [political.rightsAndChecks].
+
+
+  Political mobilisation is very large and almost entirely peaceful.
+  Demonstrations rose roughly 77% in 2025 over the previous year, the highest
+  count since 2020, driven principally by opposition to the administration and
+  its migration policy; approximately 97% saw no violence and no police
+  intervention [acled-us-overview-2026]. Firearms were present at more than 50
+  demonstrations, more than double the 2024 figure. Over two-thirds of those
+  demonstrations were explicitly about the President, and about 17% of them
+  turned violent — more than five times the rate for demonstrations without
+  firearms [acled-us-overview-2026].
+
+
+  The terrorism threat level is assessed as heightened: the Department of
+  Homeland Security judges that the primary threat of mass-casualty violence
+  comes from lone offenders and small groups motivated by a mix of ideological
+  belief and personal grievance, and issued a bulletin tying the elevated
+  environment to direct United States involvement in the conflict between Israel
+  and Iran [dhs-ntas].
 security_internal_fr: >-
-  L'État conserve son monopole de la force sur l'ensemble du territoire, et la
-  Stratégie de défense nationale 2026 érige la sécurité frontalière et la lutte
-  antidrogue en priorités majeures du territoire, orientant l'appui militaire
-  vers les opérations frontalières interagences et les frappes contre des
-  navires soupçonnés de trafic de drogue [ndstrategy-2026]. Les statistiques
-  d'application aux frontières sont compilées par les douanes et la protection
-  des frontières [dhs-cbp-border-stats]. La violence politique et les troubles
-  sont suivis par l'Armed Conflict Location & Event Data Project (ACLED)
-  [acled-usa]. Après l'opération au Venezuela de janvier 2026, les États-Unis
-  ont mené une nouvelle frappe en juin 2026 contre un chef de gang vénézuélien,
-  signe d'une action cinétique continue contre les organisations criminelles
-  transnationales dans l'hémisphère [maduro-capture-wardept].
+  Le monopole de l'État sur la force n'est contesté par aucun acteur non
+  étatique, mais il l'a été durant la période entre paliers de gouvernement. À
+  compter d'octobre 2025, l'exécutif a fédéralisé des unités de la Garde
+  nationale en vertu du titre 10 pour un déploiement à Chicago malgré
+  l'opposition du gouverneur de l'Illinois, après avoir fédéralisé des unités
+  pour Los Angeles et Portland plus tôt dans l'année; les gouverneurs de trois
+  États ont obtenu des injonctions et, en décembre 2025, la Cour suprême a
+  refusé de les lever par six voix contre trois [scotus-trump-v-illinois-2025].
+  Dans le cadre de la Federal Protection Mission, ces forces relevaient de
+  l'United States Army North, le département de la Sécurité intérieure agissant
+  comme organisme fédéral responsable; la démobilisation s'est achevée dans les
+  trois villes le 21 janvier 2026, et les militaires de la Garde nationale du
+  Texas ont été libérés de l'état d'alerte le 11 mars 2026
+  [northcom-federal-protection-mission]. Aucun épisode n'a vu des forces refuser
+  des ordres légaux; la contestation portait sur le palier de gouvernement
+  habilité à les donner.
+
+
+  La situation frontalière a changé d'un ordre de grandeur. Les interceptions de
+  personnes à la frontière (que le service désigne par le terme « encounters »
+  et qui regroupent les appréhensions entre les points d'entrée et les personnes
+  jugées inadmissibles aux points d'entrée) ont totalisé 91 603 en octobre,
+  novembre et décembre 2025, soit le plus faible début d'exercice jamais
+  enregistré et 28 % en dessous du creux précédent de l'exercice 2012; le
+  chiffre d'octobre, 30 561, se situait lui-même 29 % sous le record précédent
+  pour ce mois [dhs-cbp-border-stats]. Les appréhensions à la frontière
+  sud-ouest s'établissent en moyenne à 258 par jour, contre une moyenne
+  quotidienne de 5 110 entre février 2021 et décembre 2024
+  [dhs-cbp-border-stats]. La Border Patrol a enregistré quatorze mois
+  consécutifs sans remise en liberté sur le territoire d'une personne
+  appréhendée, jusqu'en juin 2026 [dhs-border-releases-2026]. Les saisies
+  progressent à mesure que les passages diminuent : les saisies nationales de
+  cocaïne, de méthamphétamine, d'héroïne, de fentanyl et de cannabis, en poids,
+  étaient supérieures de 57 % à l'exercice 2026 jusqu'en juin par rapport à la
+  même période de l'exercice 2024, avec 1 072 livres de fentanyl saisies au seul
+  mois de juin 2026 [dhs-border-releases-2026]. La Stratégie de défense
+  nationale de 2026 érige la sécurité frontalière et la lutte antidrogue en
+  priorités intérieures de premier rang et prescrit un appui militaire aux
+  opérations frontalières interagences [ndstrategy-2026]. Le crime organisé
+  intérieur et le financement illicite ne font l'objet d'aucune mesure
+  consolidée au-delà de ces poids de saisie. Le financement illicite fait
+  l'objet d'une évaluation plutôt que d'un dénombrement, et il est réprimé au
+  moyen d'un régime de déclaration d'une ampleur inhabituelle. L'évaluation
+  nationale des risques de blanchiment d'argent publiée par le Trésor en 2024,
+  accompagnée d'évaluations parallèles du financement du terrorisme et de la
+  prolifération, désigne comme principales menaces le commerce du fentanyl, le
+  financement du terrorisme intérieur et étranger, les rançongiciels, les
+  réseaux professionnels de blanchiment et la numérisation continue des
+  paiements, et une obligation de déclaration des bénéficiaires effectifs est
+  entrée en vigueur le 1er janvier 2024 [treasury-nra-2024]. Environ 324 000
+  institutions financières inscrites et autres déclarants transmettent leurs
+  données au Financial Crimes Enforcement Network, qui a reçu 4,7 millions de
+  déclarations d'opérations douteuses à l'exercice 2024, contre 4,3 millions à
+  l'exercice 2022 [fincen-year-in-review]. À l'exercice 2025, le Federal Bureau
+  of Investigation a arrêté 5 957 personnes visées par une enquête à partir de
+  ces déclarations, en a mis 4 727 en accusation et a obtenu 2 795
+  condamnations; les menaces prioritaires déclarées par l'organisme étaient les
+  cartels, les réseaux chinois de blanchiment d'argent, le fentanyl et le
+  financement du terrorisme [fincen-year-in-review].
+
+
+  La conduite au sein des forces de sécurité est vérifiée principalement par des
+  organes internes à l'exécutif qui les commande, et le constat marquant de la
+  période est venu de l'extérieur. La Commission interaméricaine des droits de
+  l'homme a tenu l'État responsable de la torture et du décès d'une personne
+  détenue sous la garde du service des douanes et de la protection des
+  frontières, a jugé que le droit des États-Unis régissant l'usage de la force
+  ne comportait pas les paramètres nécessaires pour protéger les droits, a
+  relevé de graves lacunes dans l'enquête criminelle, dont la destruction
+  d'éléments de preuve, et a consigné que l'État n'a pas répondu lorsque le
+  constat lui a été transmis à deux reprises [political.rightsAndChecks].
+
+
+  La mobilisation politique est massive et presque toujours pacifique. Les
+  manifestations ont augmenté d'environ 77 % en 2025 par rapport à l'année
+  précédente, soit le nombre le plus élevé depuis 2020, portées principalement
+  par l'opposition à l'administration et à sa politique migratoire; environ 97 %
+  n'ont donné lieu à aucune violence ni à aucune intervention policière
+  [acled-us-overview-2026]. Des armes à feu étaient présentes à plus de 50
+  manifestations, soit plus du double du chiffre de 2024. Plus des deux tiers de
+  ces manifestations portaient explicitement sur le président, et environ 17 %
+  d'entre elles ont donné lieu à des violences; ce qui les rend plus de cinq
+  fois plus susceptibles de le faire que les manifestations sans armes
+  [acled-us-overview-2026]. 
+
+
+  Le niveau de menace terroriste est jugé élevé : le département de la Sécurité
+  intérieure estime que la principale menace de violence de masse provient
+  d'auteurs isolés et de petits groupes mus par un mélange de convictions
+  idéologiques et de griefs personnels, et a émis un bulletin liant cet
+  environnement à l'implication directe des États-Unis dans le conflit entre
+  Israël et l'Iran [dhs-ntas].
 security_military_en: >-
-  The United States is the world's pre-eminent military power with global
-  power-projection across land, sea, air, cyber and space, and a volunteer
-  force. Its 2025 military expenditure was $954 billion, about 33% of the world
-  total and more than the next six countries combined, per the Stockholm
-  International Peace Research Institute (SIPRI) [sipri-milex-2025]. It is a
-  nuclear-weapons state prioritising nuclear modernisation, and in 2025 it
-  allocated $9.9 billion to the Columbia-class ballistic-missile submarine and
-  $13.9 billion to the Virginia-class attack submarine programmes
-  [sipri-milex-2025]. Force size, structure and domain capabilities are
-  catalogued by the International Institute for Strategic Studies in The
-  Military Balance 2026 [iiss-military-balance-2026]. The 2026 National Defense
-  Strategy reorients priorities to homeland defence, deterring China through
-  denial in the Indo-Pacific, allied burden-sharing and rebuilding the defence
-  industrial base [ndstrategy-2026].
+  The United States is the world's pre-eminent military power, with an
+  all-volunteer force and power projection across land, sea, air, cyber and
+  space; the Space Force, established in 2019, is the sixth service. The active
+  force stood at 1,298,099 across the five Department of Defense services at the
+  end of fiscal 2025 — Army 454,637, Navy 341,109, Air Force 319,119, Marine
+  Corps 173,249 and Space Force 9,985, comprising 235,575 officers, 1,049,509
+  enlisted personnel and 13,015 academy cadets — with reserve components adding
+  760,210, of which the Army National Guard accounted for 328,870 and the Air
+  National Guard 105,120 [budget-appendix-fy2027-personnel]. Congress sets an
+  authorised ceiling annually under 10 U.S.C. § 115; for fiscal 2026 it
+  authorised 1,302,800 across those five services, an increase of 26,100
+  concentrated in the Army and Navy, or 1,352,800 including the Coast Guard
+  [crs-end-strength-2026].
+
+
+  The overseas footprint has no parallel. The Department of Defense manages or
+  uses at least 128 overseas bases in at least 51 countries — 68 persistent
+  bases, of which 56 were established during the Cold War, and 60 other sites to
+  which it has access [crs-overseas-basing-r48123]. As of March 2024 roughly
+  156,000 active-duty personnel were permanently assigned abroad: about 81,000
+  in the Indo-Pacific across 24 persistent bases and 20 other sites,
+  concentrated in Japan (54,774) and South Korea (24,234); about 67,200 in
+  Europe across 31 persistent bases and 19 other sites, concentrated in Germany
+  (35,068), Italy (12,375) and the United Kingdom (10,058); about 5,400 in the
+  Middle East across eight persistent bases and 11 other sites, concentrated in
+  Bahrain (3,479); about 1,650 in Latin America and the Caribbean; and about
+  1,150 in Africa, where the regional command describes its seven access sites
+  as minimal-presence posture locations [crs-overseas-basing-r48123]. Those
+  figures exclude rotational deployments, which are substantial: in June 2024
+  the executive reported roughly 80,000 personnel assigned or deployed to North
+  Atlantic Treaty Organization countries in Europe against the 67,200
+  permanently assigned [crs-overseas-basing-r48123]. Only two locations covered
+  by the report (Syria and Guantánamo Bay) are used without host-nation consent,
+  and access elsewhere carries political risk: Niger revoked its
+  status-of-forces agreement in March 2024, compelling withdrawal from two bases
+  by September [crs-overseas-basing-r48123].
+
+
+  Host nations carry a larger share of the cost than the headline figure
+  suggests. The department reported $714.2 million in burden-sharing
+  contributions in fiscal 2023, from Kuwait, Japan, South Korea, Saudi Arabia
+  and Poland — but that measure is narrow: the Government Accountability Office
+  found that between fiscal 2016 and 2019 Japan provided $12.6 billion and South
+  Korea $5.8 billion in direct financial support, equal to 60.2% and 43.3%
+  respectively of the departmental obligations associated with the United States
+  presence in each country [crs-overseas-basing-r48123]. Total overseas basing
+  cost cannot be stated precisely because budget documents do not disaggregate
+  by location; the department's own two estimates for fiscal 2023 were $27.8
+  billion and $31.7 billion, and overseas military construction took $5.355
+  billion of $13.593 billion appropriated worldwide
+  [crs-overseas-basing-r48123].
+
+
+  Spending is the largest in the world and falling. Military expenditure was
+  $954 billion in 2025, equal to 3.1% of gross domestic product against 3.4% in
+  2016, and 33% of world military spending [sipri-milex-2025]. That was a
+  real-terms fall of 7.5% from 2024, against increases by twelve of the fifteen
+  largest spenders, and the country's share of world spending dropped 4.3
+  percentage points in a single year [sipri-milex-2025]. It still spent 2.8
+  times as much as China, down from 3.2 times in 2024, and more than the next
+  six countries combined [sipri-milex-2025]. The decline was driven mainly by
+  the end of supplemental appropriations for military assistance abroad: of $127
+  billion allocated for Ukraine-related support between 2022 and 2025, only
+  $65.1 billion had been disbursed by the end of 2025, and no new supplemental
+  appropriations were made in 2025 for either Ukraine or Israel
+  [sipri-milex-2025].
+
+
+  It is a nuclear-weapons state prioritising modernisation, allocating $9.9
+  billion in 2025 to the nuclear-armed Columbia-class submarine programme and
+  $13.9 billion to the conventionally armed Virginia-class programme
+  [sipri-milex-2025]. The 2026 National Defense Strategy reorients priorities to
+  homeland defence, deterring China through denial in the Indo-Pacific, allied
+  burden-sharing and rebuilding the defence industrial base [ndstrategy-2026].
 security_military_fr: >-
-  Les États-Unis sont la première puissance militaire mondiale, dotée d'une
-  capacité de projection de puissance mondiale sur terre, mer, air, cyberespace
-  et espace, et d'une armée de volontaires. Leurs dépenses militaires de 2025 se
-  sont élevées à 954 milliards de dollars, soit environ 33 % du total mondial et
-  plus que les six pays suivants réunis, selon le Stockholm International Peace
-  Research Institute (SIPRI) [sipri-milex-2025]. Puissance nucléaire
-  privilégiant la modernisation de son arsenal, le pays a alloué en 2025 9,9
-  milliards de dollars au sous-marin lanceur d'engins de classe Columbia et 13,9
-  milliards au programme de sous-marins d'attaque de classe Virginia
-  [sipri-milex-2025]. La taille, la structure et les capacités par domaine des
-  forces sont recensées par l'International Institute for Strategic Studies dans
-  The Military Balance 2026 [iiss-military-balance-2026]. La Stratégie de
-  défense nationale 2026 réoriente les priorités vers la défense du territoire,
-  la dissuasion de la Chine par le déni dans l'Indo-Pacifique, le partage du
-  fardeau avec les alliés et la reconstruction de la base industrielle de
-  défense [ndstrategy-2026].
+  Les États-Unis sont la première puissance militaire mondiale, disposant d'une
+  force entièrement volontaire et d'une capacité de projection sur terre, sur
+  mer, dans les airs, dans le cyberespace et dans l'espace; la Space Force,
+  créée en 2019, en constitue la sixième armée. L'effectif actif s'établissait à
+  1 298 099 pour les cinq armées du département de la Défense à la fin de
+  l'exercice 2025 : armée de terre 454 637, marine 341 109, force aérienne 319
+  119, corps des marines 173 249 et Space Force 9 985, soit 235 575 officiers, 1
+  049 509 militaires du rang et 13 015 élèves des académies militaires; les
+  composantes de réserve y ajoutant 760 210, dont 328 870 pour la Garde
+  nationale de l'armée de terre et 105 120 pour la Garde nationale aérienne
+  [budget-appendix-fy2027-personnel]. Le Congrès fixe annuellement un plafond
+  autorisé en vertu du 10 U.S.C. § 115; pour l'exercice 2026, il a autorisé 1
+  302 800 pour ces cinq armées, en hausse de 26 100 concentrée dans l'armée de
+  terre et la marine, ou 1 352 800 en incluant la garde côtière
+  [crs-end-strength-2026]. 
+
+
+  L'empreinte outre-mer est sans équivalent. Le département de la Défense gère
+  ou utilise au moins 128 bases à l'étranger dans au moins 51 pays : 68 bases
+  permanentes, dont 56 établies pendant la guerre froide, et 60 autres sites
+  auxquels il a accès [crs-overseas-basing-r48123]. En mars 2024, environ 156
+  000 militaires en service à temps plein y étaient affectés en permanence :
+  quelque 81 000 dans l'Indo-Pacifique, répartis entre 24 bases permanentes et
+  20 autres sites, concentrés au Japon (54 774) et en Corée du Sud (24 234);
+  quelque 67 200 en Europe, répartis entre 31 bases permanentes et 19 autres
+  sites, concentrés en Allemagne (35 068), en Italie (12 375) et au Royaume-Uni
+  (10 058); quelque 5 400 au Moyen-Orient, répartis entre huit bases permanentes
+  et 11 autres sites, concentrés à Bahreïn (3 479); quelque 1 650 en Amérique
+  latine et dans les Caraïbes; et quelque 1 150 en Afrique, où le commandement
+  régional qualifie ses sept sites d'accès "d'emplacements de présence minimale"
+  [crs-overseas-basing-r48123]. Ces chiffres excluent les déploiements par
+  rotation, qui sont considérables : en juin 2024, l'exécutif faisait état
+  d'environ 80 000 militaires affectés ou déployés dans les pays de
+  l'Organisation du Traité de l'Atlantique Nord en Europe, contre 67 200
+  affectés en permanence [crs-overseas-basing-r48123]. Deux emplacements parmi
+  ceux que recense le rapport (Syrie et Guantánamo) sont utilisés sans le
+  consentement du pays hôte; l'accès ailleurs comporte un risque politique : le
+  Niger a révoqué son accord sur le statut des forces en mars 2024, contraignant
+  au retrait de deux bases avant septembre [crs-overseas-basing-r48123].
+
+
+  Les pays hôtes assument une part des coûts plus importante que ne le laisse
+  croire le chiffre global. Le département a déclaré 714,2 millions de dollars
+  de contributions au partage du fardeau à l'exercice 2023, en provenance du
+  Koweït, du Japon, de la Corée du Sud, de l'Arabie saoudite et de la Pologne.
+  Ce chiffre ne recense toutefois qu'une catégorie de versements formellement
+  comptabilisés comme telle : le Government Accountability Office a établi
+  qu'entre les exercices 2016 et 2019, le Japon avait versé 12,6 milliards de
+  dollars et la Corée du Sud 5,8 milliards en soutien financier direct, soit
+  respectivement 60,2 % et 43,3 % des engagements du département liés à la
+  présence des États-Unis dans chacun de ces pays [crs-overseas-basing-r48123].
+  Le coût total des bases à l'étranger ne peut être établi avec précision; les
+  documents budgétaires ne le ventilant pas par lieu. Les deux estimations du
+  département pour l'exercice 2023 s'élevaient à 27,8 et à 31,7 milliards de
+  dollars, et les constructions militaires outre-mer ont absorbé 5,355 milliards
+  des 13,593 milliards affectés dans le monde [crs-overseas-basing-r48123].
+
+
+  Les dépenses militaires des États-Unis sont les plus élevées au monde et elles
+  reculent. Elles ont atteint 954 milliards de dollars en 2025, soit 3,1 % du
+  produit intérieur brut contre 3,4 % en 2016, et 33 % des dépenses militaires
+  mondiales [sipri-milex-2025]. Il s'agit d'un recul de 7,5 % en termes réels
+  par rapport à 2024, alors que douze des quinze premiers pays dépensiers
+  augmentaient les leurs, et la part du pays dans les dépenses mondiales a chuté
+  de 4,3 points de pourcentage en une seule année [sipri-milex-2025]. Le pays
+  dépensait encore 2,8 fois plus que la Chine, contre 3,2 fois en 2024, et
+  davantage que les six pays suivants réunis [sipri-milex-2025]. Ce repli tient
+  principalement à la fin des crédits supplémentaires d'aide militaire à
+  l'étranger : sur les 127 milliards affectés au soutien lié à l'Ukraine entre
+  2022 et 2025, seuls 65,1 milliards avaient été versés à la fin de 2025, et
+  aucun nouveau crédit supplémentaire n'a été accordé en 2025 pour l'Ukraine ou
+  pour Israël [sipri-milex-2025].
+
+
+  Il s'agit d'un État doté de l'arme nucléaire qui privilégie la modernisation,
+  ayant affecté 9,9 milliards de dollars en 2025 au programme de sous-marins de
+  la classe Columbia, à armement nucléaire, et 13,9 milliards au programme de la
+  classe Virginia, à armement conventionnel [sipri-milex-2025]. La Stratégie de
+  défense nationale de 2026 réoriente les priorités vers la défense du
+  territoire, la dissuasion de la Chine par le déni dans l'Indo-Pacifique, le
+  partage du fardeau entre alliés et la reconstruction de la base industrielle
+  de défense [ndstrategy-2026].
 security_transnationalExposure_en: >-
-  US transnational exposure centres on cross-border drug trafficking and
-  migration flows, which the 2026 National Defense Strategy and administration
-  frame as narco-terrorism warranting military response, including strikes on
-  trafficking vessels and the January 2026 Venezuela operation targeting figures
-  indicted for narco-terrorism [ndstrategy-2026][maduro-capture-wardept]. Border
-  and migration flow statistics are compiled by Customs and Border Protection
-  [dhs-cbp-border-stats]. Net international migration flows fell historically in
-  2024–2025 amid intensified enforcement [census-poprelease-2026].
+  The dominant cross-border flow reversed direction during the period. Net
+  international migration fell from roughly 2.7 million in 2023 to 1.3 million
+  in 2024 and to about 321,000 in 2025 [census-poprelease-2026]. Border
+  encounters fell with it: nationwide encounters totalled 91,603 across October,
+  November and December 2025, the lowest start to any fiscal year on record, and
+  southwest border apprehensions have averaged 258 a day against 5,110 between
+  February 2021 and December 2024 [dhs-cbp-border-stats]. The Intelligence
+  Community attributes the decline to changes in United States policy during
+  2025 and to increased enforcement both at the border and regionally
+  [odni-ata-2026].
+
+
+  Transnational criminal organisations are the principal non-state entanglement,
+  and the assessment names them. Mexico-based organisations — the Sinaloa Cartel
+  and the Jalisco New Generation Cartel — dominate production and smuggling of
+  fentanyl, heroin, methamphetamine and cocaine into the country; Colombia-based
+  organisations and armed groups including the Revolutionary Armed Forces of
+  Colombia and the National Liberation Army traffic cocaine to United States and
+  European markets, with Colombia remaining the world's largest producer and
+  Colombian groups extending trafficking relationships to Ecuadorian and
+  Brazilian gangs; and MS-13 maintains established cells inside the country,
+  using violence against the Salvadoran diaspora [odni-ata-2026]. Fentanyl
+  overdose deaths fell about 30% between September 2024 and September 2025 and
+  potency declined, which the assessment attributes to disruption of the
+  production supply chain, while cooperation with China and India on precursor
+  chemicals is described as improving against tens of thousands of
+  fentanyl-related deaths a year [odni-ata-2026]. Beyond narcotics, these
+  organisations engage in financial fraud and launder money through
+  international financial institutions [odni-ata-2026]. The 2026 National
+  Defense Strategy frames this exposure as warranting military response,
+  including strikes on trafficking vessels [ndstrategy-2026].
+
+
+  Cyber exposure is the entanglement with no border at all. Actors linked to
+  China, Russia, Iran and North Korea, together with non-state ransomware
+  groups, seek to compromise government and private-sector networks and critical
+  infrastructure to collect intelligence, create options for future disruption,
+  and for financial gain; China and Russia are assessed as the most persistent
+  and active [odni-ata-2026]. North Korean cryptocurrency thefts probably took
+  $2 billion in 2025 alone, funding the regime including its strategic weapons
+  programmes — illicit finance operating as state revenue [odni-ata-2026].
+  Financially and ideologically motivated non-state actors are becoming bolder,
+  with ransomware groups shifting to faster, high-volume attacks that are harder
+  to identify and mitigate, and the assessment expects artificial intelligence
+  to accelerate cyber threats [odni-ata-2026].
+
+
+  Foreign influence is a standing exposure whose assessment apparatus was
+  dismantled during the period. Congress established the Foreign Malign
+  Influence Center within the Office of the Director of National Intelligence
+  under the Intelligence Authorization Act for fiscal years 2018 to 2020,
+  codified at 50 U.S.C. § 3059, following the Intelligence Community's
+  assessment of Russian efforts to influence the 2016 presidential election; it
+  began operating in September 2022 and housed the Election Threats Executive,
+  the Community's coordinating authority on election security
+  [crs-if12470-fmic]. In August 2025 the Director of National Intelligence
+  announced its dissolution as part of a reorganisation, and the Federal Bureau
+  of Investigation's Foreign Influence Task Force was dissolved in parallel; the
+  ranking members of the House and Senate intelligence committees state that
+  intelligence production on foreign plans and intentions toward future United
+  States elections has been paralysed and that repeated requests for legally
+  required briefings on threats to the 2026 midterms have gone unanswered
+  [himes-warner-letter-2026]. Those members are the opposition party's senior
+  representatives on the committees; what is not in dispute is that the
+  statutory body was created by bipartisan legislation and no longer operates.
+
+
+  Shared-resource friction runs on water. The 1944 Water Treaty entitles the
+  United States to an average of at least 350,000 acre-feet a year from Mexican
+  tributaries feeding the Rio Grande, measured over five-year cycles totalling
+  1.75 million acre-feet, and the International Boundary and Water Commission
+  administers it [crs-if12976-water-treaty]. Mexico has failed to meet the cycle
+  obligation on multiple occasions since 1994, and at the close of the cycle in
+  late October 2025 had delivered 0.88 million acre-feet against the 1.75
+  million owed [crs-if12976-water-treaty]. Congress responded in the
+  Consolidated Appropriations Act, 2026, conditioning some funds on the
+  Secretary of State certifying delivery, and in February 2026 the State
+  Department announced Mexico had committed to annual deliveries of at least
+  350,000 acre-feet and to a plan addressing the shortfall
+  [crs-if12976-water-treaty]. The same treaty governs border sanitation,
+  including raw sewage and industrial wastewater flows in the Tijuana River
+  Valley [crs-if12976-water-treaty].
 security_transnationalExposure_fr: >-
-  L'exposition transnationale des États-Unis se concentre sur le trafic de
-  drogue transfrontalier et les flux migratoires, que la Stratégie de défense
-  nationale 2026 et l'administration qualifient de narcoterrorisme justifiant
-  une réponse militaire, dont des frappes sur des navires de trafic et
-  l'opération au Venezuela de janvier 2026 visant des personnes inculpées de
-  narcoterrorisme [ndstrategy-2026][maduro-capture-wardept]. Les statistiques
-  des flux frontaliers et migratoires sont compilées par les douanes et la
-  protection des frontières [dhs-cbp-border-stats]. Le solde migratoire
-  international a chuté historiquement en 2024-2025 dans un contexte
-  d'application renforcée [census-poprelease-2026].
+  Le principal flux transfrontalier s'est inversé au cours de la période. La
+  migration internationale nette est passée d'environ 2,7 millions en 2023 à 1,3
+  million en 2024, puis à quelque 321 000 en 2025 [census-poprelease-2026]. Les
+  interceptions de personnes à la frontière ont suivi : elles ont totalisé 91
+  603 en octobre, novembre et décembre 2025, soit le plus faible début
+  d'exercice jamais enregistré, et les appréhensions à la frontière sud-ouest
+  s'établissent en moyenne à 258 par jour, contre 5 110 entre février 2021 et
+  décembre 2024 [dhs-cbp-border-stats]. La communauté du renseignement attribue
+  ce recul aux changements de politique intervenus aux États-Unis en 2025 et au
+  renforcement de l'application des règles, à la frontière comme dans la région
+  [odni-ata-2026].
+
+
+  Les organisations criminelles transnationales constituent le principal
+  enchevêtrement non étatique, et l'évaluation les nomme. Les organisations
+  basées au Mexique (le cartel de Sinaloa et le cartel Jalisco Nouvelle
+  Génération) dominent la production et l'acheminement du fentanyl, de
+  l'héroïne, de la méthamphétamine et de la cocaïne vers le pays; les
+  organisations et groupes armés basés en Colombie (dont les Forces armées
+  révolutionnaires de Colombie et l'Armée de libération nationale) acheminent la
+  cocaïne vers les marchés états-uniens et européens; la Colombie demeurant le
+  premier producteur mondial et les groupes colombiens étendant leurs relations
+  aux gangs équatoriens et brésiliens. La MS-13 maintient des cellules établies
+  à l'intérieur du pays, recourant à la violence contre la diaspora
+  salvadorienne [odni-ata-2026]. Les décès par surdose de fentanyl ont reculé
+  d'environ 30 % entre septembre 2024 et septembre 2025 et la puissance du
+  produit a diminué; ce que l'évaluation attribue à la perturbation de la chaîne
+  de production, tandis que la coopération avec la Chine et l'Inde sur les
+  précurseurs chimiques est jugée en progrès face à des dizaines de milliers de
+  décès liés au fentanyl chaque année [odni-ata-2026]. Au-delà des stupéfiants,
+  ces organisations pratiquent la fraude financière et blanchissent des fonds
+  par l'entremise d'institutions financières internationales [odni-ata-2026]. La
+  Stratégie de défense nationale de 2026 présente cette exposition comme
+  justifiant une réponse militaire, y compris des frappes contre des navires de
+  trafic [ndstrategy-2026].
+
+
+  L'exposition cybernétique est l'enchevêtrement sans frontière aucune. Des
+  acteurs liés à la Chine, à la Russie, à l'Iran et à la Corée du Nord, de même
+  que des groupes non étatiques de rançongiciels, cherchent à compromettre les
+  réseaux gouvernementaux, ceux du secteur privé et les infrastructures
+  essentielles, afin de recueillir du renseignement, de se ménager des
+  possibilités de perturbation future et d'en tirer un gain financier; la Chine
+  et la Russie sont jugées les plus persistantes et les plus actives
+  [odni-ata-2026]. Les vols de cryptomonnaie nord-coréens ont probablement
+  rapporté 2 milliards de dollars pour la seule année 2025, finançant le régime
+  et notamment ses programmes d'armement stratégique; financement illicite
+  servant de recette d'État [odni-ata-2026]. Les acteurs non étatiques motivés
+  par l'argent ou l'idéologie s'enhardissent; les groupes de rançongiciels
+  adoptant des attaques plus rapides et plus nombreuses, plus difficiles à
+  repérer et à contrer, et l'évaluation prévoit que l'intelligence artificielle
+  accélérera les menaces dans le cyberespace [odni-ata-2026].
+
+
+  L'influence étrangère constitue une exposition permanente dont l'appareil
+  d'évaluation a été démantelé au cours de la période. Le Congrès a créé le
+  Foreign Malign Influence Center au sein de l'Office of the Director of
+  National Intelligence par la loi d'autorisation du renseignement pour les
+  exercices 2018 à 2020, codifiée au 50 U.S.C. § 3059, à la suite de
+  l'évaluation par la communauté du renseignement des efforts russes visant à
+  influencer l'élection présidentielle de 2016. Il est entré en fonction en
+  septembre 2022 et abritait l'Election Threats Executive, autorité de
+  coordination de la communauté en matière de sécurité électorale
+  [crs-if12470-fmic]. En août 2025, la directrice du renseignement national a
+  annoncé sa dissolution dans le cadre d'une réorganisation, et la Foreign
+  Influence Task Force du Federal Bureau of Investigation a été dissoute en
+  parallèle. Les chefs de file de l'opposition aux comités du renseignement de
+  la Chambre et du Sénat affirment que la production de renseignement sur les
+  intentions étrangères à l'égard des prochaines élections états-uniennes est
+  paralysée et que des demandes répétées de séances d'information exigées par la
+  loi sur les menaces visant les élections de mi-mandat de 2026 sont restées
+  sans réponse [himes-warner-letter-2026]. Ces élus sont les représentants
+  principaux du parti d'opposition au sein de ces comités; ce qui n'est pas
+  contesté est que l'organisme créé par une loi bipartisane n'existe plus.
+
+
+  La friction sur les ressources partagées porte sur l'eau. Le traité sur les
+  eaux de 1944 donne aux États-Unis droit à une moyenne minimale de 350 000
+  acres-pieds par an provenant des affluents mexicains alimentant le Rio Grande,
+  calculée sur des cycles de cinq ans totalisant 1,75 million d'acres-pieds; la
+  Commission internationale des frontières et des eaux en assure
+  l'administration [crs-if12976-water-treaty]. Le Mexique a manqué à cette
+  obligation de cycle à plusieurs reprises depuis 1994 et, à la clôture du cycle
+  à la fin d'octobre 2025, avait livré 0,88 million d'acres-pieds sur les 1,75
+  million dus [crs-if12976-water-treaty]. Le Congrès a réagi dans la loi de
+  crédits consolidés de 2026 en conditionnant certains fonds à une attestation
+  de livraison par le secrétaire d'État; en février 2026 le département d'État a
+  annoncé que le Mexique s'engageait à livrer au moins 350 000 acres-pieds par
+  an et à établir un plan pour combler le déficit [crs-if12976-water-treaty]. Le
+  même traité régit l'assainissement frontalier, notamment les rejets d'eaux
+  usées brutes et d'effluents industriels dans la vallée de la rivière Tijuana
+  [crs-if12976-water-treaty].
 security_diplomacy_en: >-
-  The United States anchors a global alliance network while its 2026 National
-  Defense Strategy shifts toward transactional burden-sharing, directing
-  European allies to lead their own defence with limited US support and framing
-  China as the primary balance-of-power competitor to be deterred by denial in
-  the Indo-Pacific [ndstrategy-2026]. That network is named and treaty-based:
-  the North Atlantic Treaty binds the United States to the 31 other member
-  states of the North Atlantic Treaty Organization (NATO), 32 members in all as
-  of 2026 [nato-member-countries]; collective-defence treaties cover Japan,
-  South Korea, the Philippines, Australia and New Zealand (ANZUS), Thailand and
-  the Americas under the Rio Treaty [state-collective-defense-arrangements]; a
-  further statutory tier of major non-NATO allies includes Israel, Japan, South
-  Korea and Australia [state-major-non-nato-ally-status]; the AUKUS partnership
-  adds submarine and advanced-capability cooperation with the United Kingdom and
-  Australia [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599]; and the overseas
-  basing and troop presence underwriting these commitments is documented by host
-  country [crs-overseas-basing-r48123]. In the Western Hemisphere the
-  administration has asserted a 'Trump corollary' to the Monroe Doctrine and
-  acted directly, capturing Venezuelan leader Nicolás Maduro in a January 2026
-  military operation and installing US influence over a political transition
-  [maduro-capture-wardept][ndstrategy-2026]. In the Middle East, US and Israeli
-  forces began major combat operations against Iran on 28 February 2026
-  (following the June 2025 strikes on Iranian nuclear sites)
-  [iran-ops-transcript]; a Pakistan-mediated ceasefire took effect 8 April 2026
-  and was extended and formalised in an interim memorandum of understanding
-  signed 17 June 2026 [whitehouse-epic-fury-ceasefire], then declared over by
-  the President on 8 July 2026 [cnbc-iran-ceasefire-over], and as of 19 July
-  2026 hostilities are active, with United States strikes and a naval blockade
-  ongoing and no ceasefire in effect [cnn-iran-war-july18]. The character of
-  these relationships is interpretive, anchored to those documented operations
-  and the strategy text [ndstrategy-2026][iran-ops-transcript].
+  The United States anchors the largest treaty alliance system in the world
+  while its 2026 National Defense Strategy shifts toward transactional
+  burden-sharing, directing European allies to lead their own defence with
+  limited support and framing China as the primary balance-of-power competitor
+  to be deterred by denial in the Indo-Pacific [ndstrategy-2026]. The system is
+  named and treaty-based: the North Atlantic Treaty binds the country to the 31
+  other members of the North Atlantic Treaty Organization, 32 in all as of 2026
+  [nato-member-countries]; collective-defence treaties cover Japan, South Korea,
+  the Philippines, Australia and New Zealand, Thailand, and the Americas under
+  the Rio Treaty [state-collective-defense-arrangements]; a statutory tier of
+  major non-NATO allies includes Israel, Japan, South Korea and Australia
+  [state-major-non-nato-ally-status]; and the AUKUS partnership adds submarine
+  and advanced-capability cooperation with the United Kingdom and Australia
+  [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599].
+
+
+  The commitments are underwritten by forces on the ground, and the weight is
+  unevenly distributed. As of March 2024, 54,774 personnel were permanently
+  assigned in Japan, 35,068 in Germany, 24,234 in South Korea, 12,375 in Italy
+  and 10,058 in the United Kingdom [crs-overseas-basing-r48123]. Host-nation
+  support tracks that weight: between fiscal 2016 and 2019 Japan provided $12.6
+  billion and South Korea $5.8 billion in direct financial support, covering
+  60.2% and 43.3% respectively of the departmental obligations associated with
+  the presence in each country [crs-overseas-basing-r48123]. Trade runs the
+  other way from security: the largest bilateral goods deficits in 2025 were
+  with the European Union at $218.8 billion, mainland China at $202.1 billion,
+  Mexico at $196.9 billion, Vietnam at $178.2 billion and Taiwan at $146.8
+  billion, against surpluses with the Netherlands at $60.7 billion and the
+  United Kingdom at $32.2 billion [bea-census-trade-annual-2025]. The China
+  relationship is being restructured through that channel: its share of United
+  States goods imports fell from 13.2% in 2024 to 7.7% by the end of 2025
+  [imf-art-iv-usa-2026].
+
+
+  The standing territorial dispute is Guantánamo Bay. Under a February 1903
+  lease agreement for coaling and naval stations, the United States recognised
+  the continuance of Cuba's ultimate sovereignty over the leased area while Cuba
+  consented that the United States would exercise complete jurisdiction and
+  control within it [crs-r44137-guantanamo]. The 1934 Treaty of Relations
+  repealed the 1903 treaty under which the lease was made but preserved the
+  lease agreements themselves, which can now be modified or abrogated only by
+  agreement between the two governments; the territorial limits therefore stand
+  as they were in 1934 unless the United States abandons the station
+  [crs-r44137-guantanamo]. Cuba's government regards the presence as an illegal
+  occupation of its territory [crs-r44137-guantanamo].
+
+
+  In the Western Hemisphere the administration has asserted a corollary to the
+  Monroe Doctrine and acted directly, capturing Venezuelan leader Nicolás Maduro
+  in a January 2026 military operation and installing influence over a political
+  transition [maduro-capture-wardept][ndstrategy-2026].
+
+
+  In the Middle East, United States and Israeli forces began major combat
+  operations against Iran on 28 February 2026, following the June 2025 strikes
+  on Iranian nuclear sites [iran-ops-transcript]. A Pakistan-mediated ceasefire
+  took effect on 8 April and was formalised in an interim memorandum of
+  understanding on 17 June [whitehouse-epic-fury-ceasefire], which the President
+  declared over on 8 July [cnbc-iran-ceasefire-over]. The naval blockade of
+  Iranian ports was reimposed thereafter and remains in force: Central Command
+  reports 44 commercial vessels redirected, two disabled and two boarded as of
+  early August 2026, and planned strikes were called off on 1 August
+  [cnn-iran-war-august2026]. The substantive negotiating channel has moved to
+  Muscat, with Iran and Oman reporting talks on a new Strait of Hormuz transit
+  route close to conclusion while Iran attributes the strait's closure to the
+  blockade [cnn-iran-war-august2026].
+
+
+  Multilateral membership is being reduced on a scale without precedent since
+  1945. An executive order of 20 January 2025 directed withdrawal from the Paris
+  Agreement, effective 27 January 2026 under Article 28 of that agreement
+  [crs-r48504-paris]. Executive Order 14199 of 4 February 2025 terminated
+  participation in the United Nations Human Rights Council and ordered the
+  Secretary of State to review every intergovernmental organisation, convention
+  and treaty to which the country belongs [potus-memo-withdrawals-2026]. Acting
+  on that review, a presidential memorandum of 7 January 2026 directed
+  withdrawal from 66 named organisations — 35 outside the United Nations system
+  and 31 within it — instructing agencies to effect the withdrawals as soon as
+  possible and, for United Nations entities, to cease participation and funding
+  so far as law permits; the memorandum states that review of further findings
+  remains ongoing [potus-memo-withdrawals-2026]. The named bodies include the
+  United Nations Framework Convention on Climate Change and the
+  Intergovernmental Panel on Climate Change, and — bearing directly on exposures
+  recorded elsewhere in this report — the European Centre of Excellence for
+  Countering Hybrid Threats, the Global Forum on Cyber Expertise, the Global
+  Counterterrorism Forum and the Global Forum on Migration and Development
+  [potus-memo-withdrawals-2026][state-withdrawal-66-2026].
 security_diplomacy_fr: >-
-  Les États-Unis ancrent un réseau d'alliances mondial tandis que leur Stratégie
-  de défense nationale 2026 évolue vers un partage transactionnel du fardeau,
-  enjoignant aux alliés européens de conduire leur propre défense avec un appui
-  américain limité et qualifiant la Chine de principal concurrent d'équilibre
-  des puissances, à dissuader par le déni dans l'Indo-Pacifique
-  [ndstrategy-2026]. Ce réseau est nommé et fondé sur des traités : le traité de
-  l'Atlantique Nord lie les États-Unis aux 31 autres États membres de
-  l'Organisation du traité de l'Atlantique Nord (OTAN), soit 32 membres au total
-  en 2026 [nato-member-countries]; des traités de défense collective couvrent le
-  Japon, la Corée du Sud, les Philippines, l'Australie et la Nouvelle-Zélande
-  (ANZUS), la Thaïlande et les Amériques via le traité de Rio
-  [state-collective-defense-arrangements]; un étage statutaire supplémentaire
-  d'alliés majeurs non membres de l'OTAN comprend Israël, le Japon, la Corée du
-  Sud et l'Australie [state-major-non-nato-ally-status]; le partenariat AUKUS
-  ajoute une coopération sur les sous-marins et les capacités avancées avec le
-  Royaume-Uni et l'Australie [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599];
-  et les bases et la présence militaire à l'étranger qui sous-tendent ces
-  engagements sont documentées par pays hôte [crs-overseas-basing-r48123]. Dans
-  l'hémisphère occidental, l'administration a affirmé un « corollaire Trump » à
-  la doctrine Monroe et agi directement, capturant le dirigeant vénézuélien
-  Nicolás Maduro lors d'une opération militaire en janvier 2026 et installant
-  l'influence américaine sur une transition politique
-  [maduro-capture-wardept][ndstrategy-2026]. Au Moyen-Orient, les forces
-  américaines et israéliennes ont lancé des opérations de combat majeures contre
-  l'Iran le 28 février 2026 (après les frappes de juin 2025 sur les sites
-  nucléaires iraniens) [iran-ops-transcript]; un cessez-le-feu négocié par le
-  Pakistan est entré en vigueur le 8 avril 2026, prolongé puis formalisé par un
-  protocole d'accord intérimaire signé le 17 juin 2026
-  [whitehouse-epic-fury-ceasefire], avant d'être déclaré terminé par le
-  président le 8 juillet 2026 [cnbc-iran-ceasefire-over]; au 19 juillet 2026,
-  les hostilités sont actives, avec des frappes américaines et un blocus naval
-  en cours, sans cessez-le-feu en vigueur [cnn-iran-war-july18]. Le caractère de
-  ces relations est interprétatif, ancré à ces opérations documentées et au
-  texte de la stratégie [ndstrategy-2026][iran-ops-transcript].
+  Les États-Unis ancrent le plus vaste système d'alliances par traité au monde,
+  tandis que leur Stratégie de défense nationale de 2026 s'oriente vers un
+  partage transactionnel du fardeau, enjoignant aux alliés européens d'assurer
+  eux-mêmes leur défense avec un appui limité et désignant la Chine comme le
+  principal concurrent dans l'équilibre des puissances, à dissuader par le déni
+  dans l'Indo-Pacifique [ndstrategy-2026]. Le système est nommé et fondé sur des
+  traités : le Traité de l'Atlantique Nord lie le pays aux 31 autres membres de
+  l'Organisation du Traité de l'Atlantique Nord, soit 32 en tout en 2026
+  [nato-member-countries]; des traités de défense collective visent le Japon, la
+  Corée du Sud, les Philippines, l'Australie et la Nouvelle-Zélande, la
+  Thaïlande, ainsi que les Amériques au titre du Traité de Rio
+  [state-collective-defense-arrangements]; un palier statutaire d'alliés majeurs
+  hors OTAN comprend Israël, le Japon, la Corée du Sud et l'Australie
+  [state-major-non-nato-ally-status]; et le partenariat AUKUS y ajoute une
+  coopération sur les sous-marins et les capacités avancées avec le Royaume-Uni
+  et l'Australie [crs-aukus-indo-pacific][crs-aukus-pillar2-r47599].
+
+
+  Ces engagements reposent sur des forces déployées, et le poids en est
+  inégalement réparti. En mars 2024, 54 774 militaires étaient affectés en
+  permanence au Japon, 35 068 en Allemagne, 24 234 en Corée du Sud, 12 375 en
+  Italie et 10 058 au Royaume-Uni [crs-overseas-basing-r48123]. Le soutien des
+  pays hôtes suit cette répartition : entre les exercices 2016 et 2019, le Japon
+  a fourni 12,6 milliards de dollars et la Corée du Sud 5,8 milliards en soutien
+  financier direct, couvrant respectivement 60,2 % et 43,3 % des engagements du
+  département liés à cette présence [crs-overseas-basing-r48123]. Le commerce
+  joue en sens inverse de la sécurité : les principaux déficits bilatéraux sur
+  les biens en 2025 visaient l'Union européenne (218,8 milliards), la Chine
+  continentale (202,1 milliards), le Mexique (196,9 milliards), le Vietnam
+  (178,2 milliards) et Taïwan (146,8 milliards), contre des excédents avec les
+  Pays-Bas (60,7 milliards) et le Royaume-Uni (32,2 milliards)
+  [bea-census-trade-annual-2025]. La relation avec la Chine se restructure par
+  ce canal : sa part dans les importations de biens des États-Unis est passée de
+  13,2 % en 2024 à 7,7 % à la fin de 2025 [imf-art-iv-usa-2026].
+
+
+  Le différend territorial permanent porte sur la baie de Guantánamo. Aux termes
+  d'un accord de bail de février 1903 visant l'établissement de stations navales
+  et de soutage, les États-Unis ont reconnu le maintien de la souveraineté
+  ultime de Cuba sur la zone louée; Cuba consentant en retour à ce que les
+  États-Unis y exercent une compétence et un contrôle complets
+  [crs-r44137-guantanamo]. Le traité de relations de 1934 a abrogé le traité de
+  1903 en vertu duquel le bail avait été conclu, mais a préservé les accords de
+  bail eux-mêmes, qui ne peuvent désormais être modifiés ou abrogés que par
+  entente entre les deux gouvernements. Les limites territoriales demeurent donc
+  celles de 1934, à moins que les États-Unis n'abandonnent la station
+  [crs-r44137-guantanamo]. Le gouvernement cubain considère cette présence comme
+  une occupation illégale de son territoire [crs-r44137-guantanamo].
+
+
+  Dans l'hémisphère occidental, l'administration a affirmé un corollaire à la
+  doctrine Monroe et agi directement, capturant le dirigeant vénézuélien Nicolás
+  Maduro lors d'une opération militaire en janvier 2026 et installant son
+  influence sur une transition politique
+  [maduro-capture-wardept][ndstrategy-2026].
+
+
+  Au Moyen-Orient, les forces états-uniennes et israéliennes ont lancé des
+  opérations de combat majeures contre l'Iran le 28 février 2026, après les
+  frappes de juin 2025 sur des sites nucléaires iraniens [iran-ops-transcript].
+  Un cessez-le-feu négocié par le Pakistan est entré en vigueur le 8 avril et a
+  été formalisé dans un protocole d'entente provisoire le 17 juin
+  [whitehouse-epic-fury-ceasefire], que le président a déclaré caduc le 8
+  juillet [cnbc-iran-ceasefire-over]. Le blocus naval des ports iraniens a été
+  rétabli par la suite et demeure en vigueur : le Central Command fait état de
+  44 navires commerciaux détournés, deux mis hors d'état et deux arraisonnés au
+  début d'août 2026; des frappes prévues ont été annulées le 1er août
+  [cnn-iran-war-august2026]. Le canal de négociation substantiel s'est déplacé
+  vers Mascate; l'Iran et Oman faisant état de pourparlers proches de leur
+  conclusion sur une nouvelle voie de transit dans le détroit d'Ormuz, tandis
+  que l'Iran impute la fermeture du détroit au blocus [cnn-iran-war-august2026].
+
+
+  L'appartenance multilatérale se réduit à une échelle sans précédent depuis
+  1945. Un décret présidentiel du 20 janvier 2025 a ordonné le retrait de
+  l'Accord de Paris, effectif le 27 janvier 2026 en application de l'article 28
+  de cet accord [crs-r48504-paris]. Le décret présidentiel 14199 du 4 février
+  2025 a mis fin à la participation au Conseil des droits de l'homme des Nations
+  unies et chargé le secrétaire d'État d'examiner l'ensemble des organisations
+  intergouvernementales, conventions et traités auxquels le pays est partie
+  [potus-memo-withdrawals-2026]. Donnant suite à cet examen, un mémorandum
+  présidentiel du 7 janvier 2026 a ordonné le retrait de 66 organisations
+  nommément désignées (35 hors du système des Nations unies et 31 en son sein),
+  enjoignant aux organismes de procéder aux retraits dans les meilleurs délais
+  et, pour les entités onusiennes, de cesser toute participation et tout
+  financement dans la mesure permise par la loi; le mémorandum précise que
+  l'examen d'autres conclusions se poursuit [potus-memo-withdrawals-2026]. Parmi
+  les organismes visés figurent la Convention-cadre des Nations unies sur les
+  changements climatiques et le Groupe d'experts intergouvernemental sur
+  l'évolution du climat ainsi que (ce qui touche directement des expositions
+  relevées ailleurs dans le présent rapport) le Centre d'excellence européen
+  pour la lutte contre les menaces hybrides, le Forum mondial sur la
+  cyberexpertise, le Forum mondial de lutte contre le terrorisme et le Forum
+  mondial sur la migration et le développement
+  [potus-memo-withdrawals-2026][state-withdrawal-66-2026].
 situation_en: |-
   [
     {
@@ -5406,7 +5997,7 @@ sources: |-
       "desc": "Official U.S. Department of Defense strategic policy document outlining defense priorities and geographic focal points; primary government source, English-only.",
       "descFr": "Document officiel de stratégie de défense du département de la Défense des États-Unis énonçant les priorités; source gouvernementale primaire, en anglais seulement.",
       "publicationDate": "2026-01-22",
-      "accessDate": "2026-07-18",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High"
@@ -5464,13 +6055,13 @@ sources: |-
     },
     {
       "id": "sipri-milex-2025",
-      "name": "Trends in World Military Expenditure, 2025",
-      "nameFr": "Trends in World Military Expenditure, 2025",
+      "name": "Trends in World Military Expenditure, 2025 (SIPRI Fact Sheet, April 2026)",
+      "nameFr": "Trends in World Military Expenditure, 2025 (SIPRI Fact Sheet, April 2026)",
       "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
       "desc": "SIPRI fact sheet presenting authoritative annual global and national military spending estimates; independent research institute, primary data compiler.",
       "descFr": "Fiche d'information du SIPRI présentant des estimations mondiales et nationales de dépenses militaires; institut de recherche indépendant, compilateur primaire.",
-      "publicationDate": "2026-04-26",
-      "accessDate": "2026-07-18",
+      "publicationDate": "2026-04-27",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High"
@@ -5525,8 +6116,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "census-poprelease-2026",
@@ -5726,8 +6316,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "bts-freight-analysis-framework",
@@ -5740,8 +6329,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "usda-ers-ag-trade-2026",
@@ -5754,8 +6342,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "fcc-broadband-map-2024",
@@ -5768,8 +6355,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "epa-dwinsa-2023",
@@ -5782,8 +6368,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "census-median-age-2025",
@@ -5796,8 +6381,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "eo-14224-english-2025",
@@ -5810,8 +6394,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "kff-life-expectancy-peers",
@@ -5824,8 +6407,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "pew-interpersonal-trust",
@@ -5838,8 +6420,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "marquette-trust-2026",
@@ -5852,8 +6433,7 @@ sources: |-
       "accessDate": "2026-07-31",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "bea-gdp-q4-2025-third",
@@ -6061,8 +6641,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "crs-rl30360-cloture",
@@ -6074,8 +6653,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "crs-lsb11448-slaughter",
@@ -6088,8 +6666,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Interpretation",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "crs-lsb11449-cook",
@@ -6102,8 +6679,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Interpretation",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "scotus-trump-v-cook-2026",
@@ -6116,8 +6692,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "scott-senate-nordone-appointment",
@@ -6130,8 +6705,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "gasos-ga13-special",
@@ -6143,8 +6717,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "High",
-      "frReview": true
+      "volatility": "High"
     },
     {
       "id": "crs-r45920-discharge",
@@ -6156,8 +6729,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "house-democratic-leader",
@@ -6169,8 +6741,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "rsf-index-2026",
@@ -6183,8 +6754,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Interpretation",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "iachr-merits-60-25",
@@ -6197,8 +6767,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "iachr-pr-85-25",
@@ -6211,8 +6780,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "iachr-usa-2025",
@@ -6225,8 +6793,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Interpretation",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "ganhri-accreditation-chart",
@@ -6239,8 +6806,7 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "crs-r42659-posse-comitatus",
@@ -6252,8 +6818,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "uscode-6-466",
@@ -6265,8 +6830,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "scotus-trump-v-illinois-2025",
@@ -6279,8 +6843,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "northcom-federal-protection-mission",
@@ -6292,8 +6855,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "High",
-      "frReview": true
+      "volatility": "High"
     },
     {
       "id": "northcom-tf51-release-2025",
@@ -6306,8 +6868,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "fao-forest-water-usa",
@@ -6371,25 +6932,13 @@ sources: |-
       "volatility": "Med"
     },
     {
-      "id": "acled-usa",
-      "name": "ACLED United States Data",
-      "nameFr": "ACLED United States Data",
-      "url": "https://acleddata.com/region/united-states/",
-      "desc": "Armed Conflict Location & Event Data Project's disaggregated event dataset tracking political violence and demonstrations in the U.S.; primary conflict-event monitoring source.",
-      "descFr": "Ensemble de données désagrégées de l'ACLED suivant la violence politique et les manifestations aux États-Unis; source primaire de surveillance des événements conflictuels.",
-      "accessDate": "2026-07-18",
-      "confidence": "Med",
-      "citationType": "Fact",
-      "volatility": "High"
-    },
-    {
       "id": "dhs-cbp-border-stats",
       "name": "CBP Enforcement Statistics",
       "nameFr": "CBP Enforcement Statistics",
       "url": "https://www.cbp.gov/newsroom/stats/cbp-enforcement-statistics",
       "desc": "U.S. Customs and Border Protection's official statistical reporting on border encounters, seizures, and enforcement; primary federal border-security data source.",
       "descFr": "Rapport statistique officiel de la CBP sur les rencontres frontalières, saisies et application de la loi; source primaire fédérale sur la sécurité frontalière. Titre traduit : « Statistiques d'application de la loi de la CBP ».",
-      "accessDate": "2026-07-18",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High"
@@ -6943,13 +7492,13 @@ sources: |-
     },
     {
       "id": "crs-overseas-basing-r48123",
-      "name": "U.S. Overseas Basing: Background and Issues for Congress",
-      "nameFr": "U.S. Overseas Basing: Background and Issues for Congress",
+      "name": "U.S. Overseas Basing: Background and Issues for Congress (R48123)",
+      "nameFr": "U.S. Overseas Basing: Background and Issues for Congress (R48123)",
       "url": "https://www.congress.gov/crs-product/R48123",
       "desc": "Congressional Research Service report detailing U.S. overseas military bases and troop presence by host country, function, and resourcing; primary nonpartisan legislative-research source.",
       "descFr": "Rapport du Congressional Research Service détaillant les bases militaires américaines à l'étranger et la présence des troupes par pays hôte; source primaire de recherche législative non partisane.",
-      "publicationDate": "2024-10-06",
-      "accessDate": "2026-07-19",
+      "publicationDate": "2024-07-10",
+      "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med"
@@ -7130,8 +7679,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "state-fam-308-2",
@@ -7143,8 +7691,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "bia-tribal-entities-2026",
@@ -7157,8 +7704,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med",
-      "frReview": true
+      "volatility": "Med"
     },
     {
       "id": "census-governments-2022",
@@ -7171,8 +7717,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "census-cog-story-2023",
@@ -7185,8 +7730,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "crs-lsb11333-seven-county",
@@ -7199,8 +7743,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Interpretation",
       "volatility": "Med",
-      "nameFr": "\"Deference Squared\": Supreme Court Limits NEPA's Scope and Courts' Reach in Seven County Infrastructure Coalition",
-      "frReview": true
+      "nameFr": "\"Deference Squared\": Supreme Court Limits NEPA's Scope and Courts' Reach in Seven County Infrastructure Coalition"
     },
     {
       "id": "gao-iija-grants-status-2025",
@@ -7213,8 +7756,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024 (GAO-25-107243)",
-      "frReview": true
+      "nameFr": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024 (GAO-25-107243)"
     },
     {
       "id": "gao-iija-dot-2025",
@@ -7227,8 +7769,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks (GAO-25-107166)",
-      "frReview": true
+      "nameFr": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks (GAO-25-107166)"
     },
     {
       "id": "gao-funding-status-2026",
@@ -7241,8 +7782,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act (GAO-26-108434)",
-      "frReview": true
+      "nameFr": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act (GAO-26-108434)"
     },
     {
       "id": "nchs-insurance-2025",
@@ -7255,8 +7795,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med",
-      "nameFr": "U.S. Uninsured Rate Unchanged in 2025",
-      "frReview": true
+      "nameFr": "U.S. Uninsured Rate Unchanged in 2025"
     },
     {
       "id": "crs-if10830-health-coverage",
@@ -7269,8 +7808,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Interpretation",
       "volatility": "Med",
-      "nameFr": "Health Care Coverage and Spending (IF10830)",
-      "frReview": true
+      "nameFr": "Health Care Coverage and Spending (IF10830)"
     },
     {
       "id": "kff-medicaid-enrollment-tracker",
@@ -7282,8 +7820,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Interpretation",
       "volatility": "High",
-      "nameFr": "Medicaid/CHIP Monthly Enrollment Tracker",
-      "frReview": true
+      "nameFr": "Medicaid/CHIP Monthly Enrollment Tracker"
     },
     {
       "id": "va-access-to-care",
@@ -7296,7 +7833,6 @@ sources: |-
       "citationType": "Fact",
       "volatility": "High",
       "nameFr": "Access to Care — Veterans Health Administration",
-      "frReview": true,
       "landingPage": true
     },
     {
@@ -7310,8 +7846,7 @@ sources: |-
       "confidence": "Med",
       "citationType": "Interpretation",
       "volatility": "High",
-      "nameFr": "Letter to the Secretary of Veterans Affairs on new patient mental health appointment wait times, 13 November 2025",
-      "frReview": true
+      "nameFr": "Letter to the Secretary of Veterans Affairs on new patient mental health appointment wait times, 13 November 2025"
     },
     {
       "id": "bls-productivity-2026",
@@ -7323,8 +7858,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Productivity and Costs — Major Sector Productivity and Costs Program",
-      "frReview": true
+      "nameFr": "Productivity and Costs — Major Sector Productivity and Costs Program"
     },
     {
       "id": "bls-cps-licensing-2024",
@@ -7337,8 +7871,7 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low",
-      "frReview": true
+      "volatility": "Low"
     },
     {
       "id": "ncses-federally-funded-rd",
@@ -7351,8 +7884,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low",
-      "nameFr": "Federally Funded R&D Declines as a Share of GDP and Total R&D (NSF 23-339)",
-      "frReview": true
+      "nameFr": "Federally Funded R&D Declines as a Share of GDP and Total R&D (NSF 23-339)"
     },
     {
       "id": "ncses-indicators-2025",
@@ -7364,7 +7896,221 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med",
-      "nameFr": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons (NSB-2025-7)",
-      "frReview": true
+      "nameFr": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons (NSB-2025-7)"
+    },
+    {
+      "id": "dhs-border-releases-2026",
+      "name": "Trump Administration Delivers 14 Straight Months of Zero Releases at the Border",
+      "url": "https://www.dhs.gov/news/2026/07/16/trump-administration-delivers-14-straight-months-zero-releases-border",
+      "desc": "Operational statistics release of the Department of Homeland Security reporting Border Patrol release counts and nationwide drug seizure weights; the department's own enforcement data, published in a promotional frame — cited for the figures, not the characterisation.",
+      "descFr": "Communiqué de statistiques opérationnelles du Department of Homeland Security rapportant le nombre de remises en liberté par la Border Patrol et les poids de saisies de drogue à l'échelle nationale; données d'application propres au ministère, publiées dans un cadre promotionnel — citées pour les chiffres, non pour la caractérisation. Titre traduit : « L'administration Trump réalise 14 mois consécutifs sans aucune remise en liberté à la frontière ».",
+      "publicationDate": "2026-07-16",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Trump Administration Delivers 14 Straight Months of Zero Releases at the Border"
+    },
+    {
+      "id": "acled-us-overview-2026",
+      "name": "United States and Canada Overview: January 2026",
+      "url": "https://acleddata.com/update/united-states-and-canada-overview-january-2026",
+      "desc": "Annual review of the Armed Conflict Location & Event Data Project covering demonstration counts, armed demonstrations and organised-group activity in the United States; an independent non-profit conflict data organisation, event coding derived from media and partner reporting.",
+      "descFr": "Revue annuelle de l'Armed Conflict Location & Event Data Project couvrant le nombre de manifestations, les manifestations armées et l'activité des groupes organisés aux États-Unis; organisation indépendante à but non lucratif de données sur les conflits, codage des événements dérivé de la presse et de rapports partenaires. Titre traduit : « Aperçu des États-Unis et du Canada : janvier 2026 ».",
+      "publicationDate": "2026-01-12",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "United States and Canada Overview: January 2026"
+    },
+    {
+      "id": "acled-usa",
+      "name": "ACLED United States Data",
+      "nameFr": "ACLED United States Data",
+      "url": "https://acleddata.com/region/united-states/",
+      "desc": "Armed Conflict Location & Event Data Project's disaggregated event dataset tracking political violence and demonstrations in the U.S.; primary conflict-event monitoring source.",
+      "descFr": "Ensemble de données désagrégées de l'ACLED suivant la violence politique et les manifestations aux États-Unis; source primaire de surveillance des événements conflictuels.",
+      "accessDate": "2026-07-18",
+      "confidence": "Med",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "dhs-ntas",
+      "name": "National Terrorism Advisory System",
+      "url": "https://www.dhs.gov/keywords/national-terrorism-advisory-system-ntas",
+      "desc": "Advisory system of the Department of Homeland Security publishing bulletins and alerts on the terrorism threat environment; the department's own threat assessment.",
+      "descFr": "Système d'alerte du Department of Homeland Security publiant des bulletins et des alertes sur l'environnement de la menace terroriste; l'évaluation de la menace propre au ministère. Titre traduit : « Système national d'alerte antiterroriste ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "High",
+      "nameFr": "National Terrorism Advisory System"
+    },
+    {
+      "id": "treasury-nra-2024",
+      "name": "Treasury Publishes 2024 National Risk Assessments for Money Laundering, Terrorist Financing, and Proliferation Financing",
+      "url": "https://home.treasury.gov/news/press-releases/jy2080",
+      "desc": "Release of the U.S. Department of the Treasury announcing its statutory national risk assessments on illicit finance and summarising the threats they identify; the department's own assessment of the financial system it regulates.",
+      "descFr": "Communiqué du U.S. Department of the Treasury annonçant ses évaluations nationales des risques prévues par la loi sur la finance illicite et résumant les menaces qu'elles recensent; l'évaluation par le ministère du système financier qu'il réglemente. Titre traduit : « Le Trésor publie les évaluations nationales des risques 2024 pour le blanchiment d'argent, le financement du terrorisme et le financement de la prolifération ».",
+      "publicationDate": "2024-02-07",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "Treasury Publishes 2024 National Risk Assessments for Money Laundering, Terrorist Financing, and Proliferation Financing"
+    },
+    {
+      "id": "fincen-year-in-review",
+      "name": "FinCEN Year in Review",
+      "url": "https://www.fincen.gov/about-fincen/fincen-year-review",
+      "desc": "Annual review of the Financial Crimes Enforcement Network, the Treasury bureau administering the Bank Secrecy Act, giving filing volumes by report type and law-enforcement outcomes attributed to those filings; the bureau's own operational record.",
+      "descFr": "Revue annuelle du Financial Crimes Enforcement Network, le bureau du Trésor chargé d'appliquer le Bank Secrecy Act, donnant les volumes de déclarations par type de rapport et les résultats répressifs attribués à ces déclarations; le relevé opérationnel propre au bureau. Titre traduit : « Rétrospective annuelle du FinCEN ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "FinCEN Year in Review"
+    },
+    {
+      "id": "crs-end-strength-2026",
+      "name": "FY2026 NDAA: Active Component End-Strength (IN12651)",
+      "url": "https://www.congress.gov/crs-product/IN12651",
+      "desc": "In Focus product of the Congressional Research Service on statutory active-component end-strength authorised under 10 U.S.C. § 115 in the National Defense Authorization Act for Fiscal Year 2026 (P.L. 119-60).",
+      "descFr": "Note In Focus du Congressional Research Service sur les effectifs autorisés de la composante active en vertu du 10 U.S.C. § 115 dans la loi d'autorisation de la défense nationale pour l'exercice 2026 (P.L. 119-60). Titre traduit : « NDAA de l'exercice 2026 : effectifs autorisés de la composante active (IN12651) ».",
+      "publicationDate": "2026-02-06",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "FY2026 NDAA: Active Component End-Strength (IN12651)"
+    },
+    {
+      "id": "budget-appendix-fy2027-personnel",
+      "name": "Budget of the U.S. Government, Fiscal Year 2027 — Appendix: Military Personnel, Active and Reserve Forces",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/dow_fy2027.pdf",
+      "desc": "Appendix to the President's Budget giving year-end active and reserve force numbers by service — actual for fiscal 2025 and estimated for fiscal 2026 and 2027 — alongside military personnel appropriations; primary federal budget document.",
+      "descFr": "Annexe au budget du président donnant les effectifs de fin d'exercice des forces d'active et de réserve par armée — chiffres réels pour l'exercice 2025 et estimés pour les exercices 2026 et 2027 — ainsi que les crédits de personnel militaire; document budgétaire fédéral primaire. Titre traduit : « Budget du gouvernement des États-Unis, exercice 2027 — Annexe : personnel militaire, forces d'active et de réserve ».",
+      "publicationDate": "2026-04-01",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "Budget of the U.S. Government, Fiscal Year 2027 — Appendix: Military Personnel, Active and Reserve Forces"
+    },
+    {
+      "id": "odni-ata-2026",
+      "name": "Annual Threat Assessment of the U.S. Intelligence Community, 2026",
+      "url": "https://www.odni.gov/files/ODNI/documents/assessments/ATA-2026-Unclassified-Report.pdf",
+      "desc": "Unclassified annual assessment compiled by the National Intelligence Council with the sixteen-agency Intelligence Community, using information available as of 14 March 2026; the executive's own collective threat judgement, and its accompanying release carries explicit political framing that the assessment's substantive findings do not require.",
+      "descFr": "Évaluation annuelle non classifiée compilée par le National Intelligence Council avec les seize agences de la communauté du renseignement, à partir d'informations disponibles au 14 mars 2026; le jugement collectif de la menace propre à l'exécutif, dont le communiqué d'accompagnement porte un cadrage politique explicite que les conclusions de fond de l'évaluation n'exigent pas. Titre traduit : « Évaluation annuelle de la menace de la communauté du renseignement des États-Unis, 2026 ».",
+      "publicationDate": "2026-03-18",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "Annual Threat Assessment of the U.S. Intelligence Community, 2026"
+    },
+    {
+      "id": "crs-if12470-fmic",
+      "name": "The Foreign Malign Influence Center (IF12470)",
+      "url": "https://www.congress.gov/crs-product/IF12470",
+      "desc": "In Focus product of the Congressional Research Service on the statutory establishment, mandate and structure of the Foreign Malign Influence Center under 50 U.S.C. § 3059.",
+      "descFr": "Note In Focus du Congressional Research Service sur l'établissement statutaire, le mandat et la structure du Foreign Malign Influence Center en vertu du 50 U.S.C. § 3059. Titre traduit : « Le Foreign Malign Influence Center (IF12470) ».",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "The Foreign Malign Influence Center (IF12470)"
+    },
+    {
+      "id": "himes-warner-letter-2026",
+      "name": "Letter from Representative Himes and Senator Warner to the Director of National Intelligence, 29 January 2026",
+      "url": "https://democrats-intelligence.house.gov/uploadedfiles/himes-warner_letter_to_dni_1.29.2026_.pdf",
+      "desc": "Oversight letter published by the minority of the House Permanent Select Committee on Intelligence, signed by the ranking members of both congressional intelligence committees; written by the opposition party and partisan in framing, cited for the institutional actions it records.",
+      "descFr": "Lettre de surveillance publiée par la minorité du House Permanent Select Committee on Intelligence, signée par les chefs de file de la minorité des deux commissions du renseignement du Congrès; rédigée par le parti d'opposition et partisane dans son cadrage, citée pour les actions institutionnelles qu'elle consigne. Titre traduit : « Lettre du représentant Himes et du sénateur Warner au directeur du renseignement national, 29 janvier 2026 ».",
+      "publicationDate": "2026-01-29",
+      "accessDate": "2026-08-03",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "Letter from Representative Himes and Senator Warner to the Director of National Intelligence, 29 January 2026"
+    },
+    {
+      "id": "crs-if12976-water-treaty",
+      "name": "1944 U.S.-Mexico Water Treaty: Issues in the 119th Congress (IF12976)",
+      "url": "https://www.congress.gov/crs-product/IF12976",
+      "desc": "In Focus product of the Congressional Research Service on delivery obligations under the 1944 Water Treaty, cycle performance recorded by the International Boundary and Water Commission, and related appropriations conditions.",
+      "descFr": "Note In Focus du Congressional Research Service sur les obligations de livraison prévues par le traité de 1944 sur les eaux, la performance par cycle consignée par la Commission internationale des limites et des eaux, et les conditions d'appropriation connexes. Titre traduit : « Traité de 1944 sur les eaux entre les États-Unis et le Mexique : enjeux au 119e Congrès (IF12976) ».",
+      "publicationDate": "2026-03-06",
+      "accessDate": "2026-08-03",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "1944 U.S.-Mexico Water Treaty: Issues in the 119th Congress (IF12976)"
+    },
+    {
+      "id": "cnn-iran-war-august2026",
+      "name": "Live updates: US-Iran war news",
+      "url": "https://www.cnn.com/2026/08/04/world/live-news/iran-war-trump",
+      "desc": "Rolling news coverage of the Iran conflict carrying United States Central Command operational figures on blockade interdictions; commercial news reporting on a fast-moving situation, superseded as events develop.",
+      "descFr": "Couverture d'actualité en continu du conflit iranien portant des chiffres opérationnels du United States Central Command sur les interdictions de blocus; reportage de presse commerciale sur une situation en évolution rapide, appelé à être dépassé au fil des événements. Titre traduit : « En direct : nouvelles de la guerre États-Unis–Iran ».",
+      "publicationDate": "2026-08-04",
+      "accessDate": "2026-08-04",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "High",
+      "nameFr": "Live updates: US-Iran war news"
+    },
+    {
+      "id": "crs-r48504-paris",
+      "name": "U.S. Withdrawal from the Paris Agreement: Process and Potential Effects (R48504)",
+      "url": "https://www.congress.gov/crs-product/R48504",
+      "desc": "Report of the Congressional Research Service on the legal process and effective date of withdrawal from the Paris Agreement under Executive Order 14162 and Article 28 of the agreement.",
+      "descFr": "Rapport du Congressional Research Service sur le processus juridique et la date d'effet du retrait de l'Accord de Paris en vertu du décret 14162 et de l'article 28 de l'accord. Titre traduit : « Retrait des États-Unis de l'Accord de Paris : processus et effets potentiels (R48504) ».",
+      "accessDate": "2026-08-04",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "U.S. Withdrawal from the Paris Agreement: Process and Potential Effects (R48504)"
+    },
+    {
+      "id": "potus-memo-withdrawals-2026",
+      "name": "Memorandum of January 7, 2026 — Withdrawing the United States From International Organizations, Conventions, and Treaties That Are Contrary to the Interests of the United States (91 FR 2281)",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-01-16/pdf/2026-00976.pdf",
+      "desc": "Presidential memorandum published in the Federal Register, naming each organisation from which withdrawal is directed and setting out the authority and implementation instruction; primary legal instrument and official gazette.",
+      "descFr": "Mémorandum présidentiel publié au Federal Register, nommant chaque organisation dont le retrait est ordonné et énonçant l'autorité et l'instruction de mise en œuvre; instrument juridique primaire et journal officiel. Titre traduit : « Mémorandum du 7 janvier 2026 — Retrait des États-Unis des organisations, conventions et traités internationaux contraires aux intérêts des États-Unis (91 FR 2281) ».",
+      "publicationDate": "2026-01-16",
+      "accessDate": "2026-08-04",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Memorandum of January 7, 2026 — Withdrawing the United States From International Organizations, Conventions, and Treaties That Are Contrary to the Interests of the United States (91 FR 2281)"
+    },
+    {
+      "id": "state-withdrawal-66-2026",
+      "name": "Withdrawal from Wasteful, Ineffective, or Harmful International Organizations",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/01/withdrawal-from-wasteful-ineffective-or-harmful-international-organizations",
+      "desc": "Press statement of the Department of State accompanying the January 2026 withdrawal memorandum and linking the published list; the department's own announcement, cited for the fact of the announcement rather than its characterisations.",
+      "descFr": "Déclaration de presse du Department of State accompagnant le mémorandum de retrait de janvier 2026 et renvoyant à la liste publiée; l'annonce propre au ministère, citée pour le fait de l'annonce plutôt que pour ses caractérisations. Titre traduit : « Retrait des organisations internationales inutiles, inefficaces ou nuisibles ».",
+      "publicationDate": "2026-01-07",
+      "accessDate": "2026-08-04",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Withdrawal from Wasteful, Ineffective, or Harmful International Organizations"
+    },
+    {
+      "id": "crs-r44137-guantanamo",
+      "name": "Naval Station Guantanamo Bay: History and Legal Issues Regarding Its Lease Agreements (R44137)",
+      "url": "https://www.congress.gov/crs-product/R44137",
+      "desc": "Report of the Congressional Research Service on the 1903 lease agreements, the 1934 Treaty of Relations, and the legal conditions under which the lease may be modified or terminated.",
+      "descFr": "Rapport du Congressional Research Service sur les accords de bail de 1903, le traité relationnel de 1934, et les conditions juridiques dans lesquelles le bail peut être modifié ou résilié. Titre traduit : « Station navale de Guantánamo Bay : histoire et enjeux juridiques de ses accords de bail (R44137) ».",
+      "accessDate": "2026-08-04",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Naval Station Guantanamo Bay: History and Legal Issues Regarding Its Lease Agreements (R44137)"
     }
   ]

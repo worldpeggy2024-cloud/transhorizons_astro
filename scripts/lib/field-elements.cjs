@@ -177,6 +177,7 @@ const FIELDS = [
   // ── SECURITY & DIPLOMACY ─────────────────────────────────────────────────────
   { key: 'security.internal', elements: [
     { id: 'armedGroupsCrime', label: 'armed groups; organised crime, trafficking, illicit finance; communal violence; terrorism level' },
+    { id: 'securityForceCorruption', label: "corruption in security forces — name the auditing body and its independence from the forces; where the only sources are the forces' own, say so" },
     { id: 'monopolyForce', label: 'monopoly on force + territorial control across the WHOLE territory' },
     { id: 'border', label: 'border situation' },
   ] },

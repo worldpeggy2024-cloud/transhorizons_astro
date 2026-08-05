@@ -215,12 +215,10 @@ function validateCountryFile(filePath) {
     if (typeof s?.descFr !== 'string' || !s.descFr.trim()) {
       warnings.push(`Source ${key}: missing French description (descFr; FR page falls back to English)`);
     }
-    // AI-drafted French awaiting Peggy's review — a placeholder flag on the source.
-    // Surfaces here (and clears when she finalizes and removes the flag) so drafted
-    // FR is never mistaken for reviewed FR just because nameFr/descFr are present.
-    if (s?.frReview) {
-      warnings.push(`Source ${key}: French is an AI draft awaiting review (frReview — verify + remove the flag)`);
-    }
+    // NOTE: no "AI-drafted French" flag. All source French is AI-drafted and Peggy
+    // reviews all of it, so a flag marking that would mark every source — no signal.
+    // The useful French flag is the INVERSE: the nameFr-differs warning below, which
+    // catches a claimed OFFICIAL French title to verify it is genuine (decided 2026-08).
 
     // Volatility axis (rework §6.2): expected rate of change of the fact(s) the
     // source backs — drives the refresh worklist. WARN-on-missing during
