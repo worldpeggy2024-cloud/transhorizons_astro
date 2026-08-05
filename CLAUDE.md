@@ -38,11 +38,21 @@
   fields).
 - Authoring: TWO-PHASE deep research only (Pass A = sources; Pass B = prose citing only approved IDs), via scripts/deepsearch-country-workflow.cjs. Single-phase output is NOT trustworthy and is being regenerated;
   do not treat existing single-phase country content as ground truth.
-  STANDING TOOL SPLIT (decided 2026-07-19 after the USA head-to-head): Perplexity runs Pass A (source
-  harvesting, Pass Zero-B event scans, targeted Pass A top-ups — its search strength); Claude runs Pass B
-  prose and the derived passes (situation, actors) — Perplexity's Pass B left 17 fields empty, Claude's
-  filled all 33 with run-date verification. The pipeline stays tool-agnostic by design; this is the
-  working default, not a hard-wiring.
+  STANDING TOOL SPLIT (decided 2026-07-19, REFINED 2026-08-04 after the USA review): the two-phase
+  approved-list ARCHITECTURE is the load-bearing part and is engine-agnostic — the approve-then-cite gate
+  matters far more than which retrieval tool feeds it. Perplexity is NO LONGER the default for the lookup
+  passes (Pass A harvest, Pass Zero-B event scans, targeted Pass A top-ups): the USA review added 79 of
+  174 final sources and fixed many dead / non-primary links, and those were VERIFICATION failures (dead
+  URLs, opinion-PDFs that 404, law-firm client alerts / trade-press standing in for the primary
+  instrument) that Perplexity cannot self-check. Run the lookup passes where URLs can be watched and
+  rejected in real time — an interactive frontier model with web fetch, Claude Code, or by hand. Perplexity
+  is retained ONLY for the DISCOVERY moment in Pass A: casting wide to surface candidate primary
+  instruments on a country whose source landscape you don't already know (Senegal's francophone
+  institutional sources especially). Pass A is therefore TWO steps — Perplexity discovery (where the
+  landscape is unfamiliar) → human approval gate → fetch-based verification that each candidate is truly
+  primary AND openable, before it enters the approved list. Claude runs Pass B prose and the derived passes
+  (situation, actors) — Perplexity's Pass B left 17 fields empty, Claude's filled all 33 with run-date
+  verification. Tool-agnostic by design; this is the working default, not a hard-wiring.
 - Structure (rework 2026-07, per content/docs/country-report-rework-IMPLEMENTATION.md — DECIDED, do not
   redesign): 33 fields, SIX peers, display order territory · society · economy · political order ·
   capacity to deliver · security & diplomacy; dynamic tail situation · actors; then sources. (The Risk

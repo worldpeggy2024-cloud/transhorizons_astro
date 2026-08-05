@@ -1095,6 +1095,8 @@ Date: ${today}
 
 You are a geopolitical analyst preparing to write a structured country situation report on ${nameEn} for an audience of senior decision-makers and investors. Before writing any prose, your task in this pass is to assemble a high-quality source list only.
 
+DISCOVERY vs VERIFICATION — the two halves of this pass. Surfacing candidate sources (discovery) is the easy half, and the only half a search-only tool should do. The load-bearing half is VERIFICATION: before any source enters this list, OPEN its URL and confirm, from the page you actually fetched, BOTH that (1) it RESOLVES — the exact URL loads the document itself, not a 404, a redirect to a homepage, or a paywall/login wall — and (2) it is the PRIMARY INSTRUMENT: the issuing body's own text (statute, ruling, official gazette, agency release, statistical table), never a law-firm client alert, trade-press summary, news aggregator, or encyclopedia restating it. A plausible URL that was never opened is this pass's single most common failure — constructed document paths that 404, and secondary summaries standing in for the primary instrument, both pass a search and fail a fetch. If you cannot open a candidate and confirm it is primary, it does NOT enter the list; note it for a targeted follow-up instead. A tool that can search but cannot open and reject URLs in real time is a discovery tool only — its candidates go through the human approval gate and a fetch-based verification before they are cited.
+
 ${calBlockText}
 
 ${eventsBlockText}
