@@ -1,0 +1,112 @@
+[
+  {
+    "id": "obbba-signed",
+    "date": "2025-07-04",
+    "title": "One Big Beautiful Bill Act signed into law",
+    "whatHappened": "President Trump signed H.R.1, the One Big Beautiful Bill Act, a reconciliation bill making major changes to tax policy, federal spending, and the statutory debt limit.",
+    "whatItChanged": "Reduced taxes, altered federal program spending levels, raised the debt ceiling, and created a dedicated funding pool for immigration enforcement agencies later used to shield ICE/CBP from shutdown effects.",
+    "sourceName": "Congress.gov, H.R.1 - 119th Congress",
+    "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/1",
+    "status": "concluded"
+  },
+  {
+    "id": "shutdown-2025-fy2026",
+    "date": "2025-10-01",
+    "title": "FY2026 federal government shutdown begins",
+    "whatHappened": "A funding gap began on October 1, 2025, at the start of fiscal year 2026, shutting down large portions of the federal government amid an appropriations impasse.",
+    "whatItChanged": "Furloughed federal employees and disrupted agency operations until a deal was reached in November 2025 providing a continuing resolution and several full-year appropriations bills.",
+    "sourceName": "Congressional Research Service, R48832",
+    "sourceUrl": "https://www.congress.gov/crs-product/R48832",
+    "status": "concluded"
+  },
+  {
+    "id": "shutdown-2026-first",
+    "date": "2026-01-31",
+    "title": "First 2026 government shutdown",
+    "whatHappened": "A four-day partial federal shutdown occurred from January 31 to February 3, 2026, after the Senate and House failed to pass a funding package on schedule, following the killing of Alex Pretti by CBP agents which caused Senate Democrats to withdraw support for the DHS funding bill.",
+    "whatItChanged": "Furloughed roughly half of federal departments, including State, Treasury, Defense (partial), Transportation, HUD, HHS, Labor, Education and DHS, until President Trump signed the funding bill on February 3, 2026.",
+    "sourceName": "Congressional Research Service / Congress.gov shutdown tracking",
+    "sourceUrl": "https://www.congress.gov/crs-product/R48832",
+    "status": "concluded"
+  },
+  {
+    "id": "shutdown-2026-second-dhs",
+    "date": "2026-02-14",
+    "title": "Second 2026 shutdown (DHS), longest in US history",
+    "whatHappened": "A partial shutdown limited to the Department of Homeland Security began February 14, 2026 amid a stalemate over federal immigration enforcement reform proposals, lasting 76 days until April 30, 2026, becoming the longest shutdown in US history on March 29.",
+    "whatItChanged": "TSA employees missed paychecks starting March 13, prompting an executive order to resume TSA payroll and deployment of ICE agents to airport security; DHS funding was restored when Trump signed a Senate-passed bill on April 30, 2026.",
+    "sourceName": "Congressional Research Service, R48832",
+    "sourceUrl": "https://www.congress.gov/crs-product/R48832",
+    "status": "concluded"
+  },
+  {
+    "id": "venezuela-maduro-capture",
+    "date": "2026-01-03",
+    "title": "US military operation captures Venezuelan President Maduro",
+    "whatHappened": "The US military conducted 'Operation Absolute Resolve,' a joint special-operations raid on Nicolás Maduro's fortified residence in Caracas, capturing Maduro and his wife Cilia Flores de Maduro and transporting them to the US to face narcoterrorism and drug-trafficking charges.",
+    "whatItChanged": "Ended Maduro's presidency in Venezuela; the US announced it would 'manage' Venezuela's transition and oversee its oil reserves pending a new government, per President Trump's public remarks.",
+    "sourceName": "US Department of War (war.gov) news release",
+    "sourceUrl": "https://www.war.gov/News/News-Stories/Article/Article/4370431/trump-announces-us-militarys-capture-of-maduro/",
+    "status": "concluded"
+  },
+  {
+    "id": "iran-operation-epic-fury",
+    "date": "2026-02-28",
+    "title": "US launches military operations against Iran",
+    "whatHappened": "President Trump announced the US military began major combat operations against Iran, targeting ballistic missile facilities, nuclear infrastructure, and naval assets, in coordination with Israel.",
+    "whatItChanged": "Opened a sustained air and naval campaign (reported by US Central Command officials as 'Operation Epic Fury') involving carriers, aircraft, and tens of thousands of troops; led to a temporary two-week ceasefire agreement announced in early April 2026.",
+    "sourceName": "The White House, Remarks by President Trump on Iran (via Miller Center archive of official transcript)",
+    "sourceUrl": "https://millercenter.org/the-presidency/presidential-speeches/february-28-2026-remarks-us-military-operations-against-iran",
+    "status": "ongoing"
+  },
+  {
+    "id": "iran-ceasefire-april2026",
+    "date": "2026-04-07",
+    "title": "US-Iran two-week ceasefire announced",
+    "whatHappened": "President Trump announced he agreed to a two-week pause in bombing and military action against Iran, reportedly including reopening of the Strait of Hormuz, after issuing an ultimatum for a diplomatic deal.",
+    "whatItChanged": "Temporarily halted active US-Iran combat operations pending negotiation outcomes; status of broader conflict left unresolved beyond ceasefire window.",
+    "sourceName": "White House statement relayed via press secretary Karoline Leavitt (reported by Euronews, citing official statement)",
+    "sourceUrl": "https://www.euronews.com/2026/04/07/only-the-president-knows-what-he-will-do-on-iran-white-house-says-in-statement",
+    "status": "UNRESOLVED"
+  },
+  {
+    "id": "alex-pretti-killing",
+    "date": "2026-01-24",
+    "title": "Killing of Alex Pretti by CBP agents",
+    "whatHappened": "US Customs and Border Protection (CBP) agents killed Alex Pretti, an event that directly triggered Senate Democrats to withdraw support for DHS appropriations and precipitated both 2026 shutdowns.",
+    "whatItChanged": "Catalyzed a legislative standoff over federal immigration-enforcement reform (body cameras, warrant requirements, use-of-force policy) embedded in subsequent DHS funding negotiations.",
+    "sourceName": "Congressional Research Service shutdown background (R48832) citing timeline of events",
+    "sourceUrl": "https://www.congress.gov/crs-product/R48832",
+    "status": "UNRESOLVED"
+  },
+  {
+    "id": "national-defense-strategy-2026",
+    "date": "2026-01-22",
+    "title": "2026 National Defense Strategy released",
+    "whatHappened": "The US Department of Defense published its 2026 National Defense Strategy, emphasizing guaranteed US access to key terrain including the Panama Canal, Gulf of America (renamed Gulf of Mexico), and Greenland.",
+    "whatItChanged": "Formally reoriented declared US strategic priorities toward Western Hemisphere dominance and contested territorial/maritime access points.",
+    "sourceName": "US Department of Defense (media.defense.gov), 2026 National Defense Strategy",
+    "sourceUrl": "https://media.defense.gov/2026/Jan/23/2003864773/-1/-1/0/2026-national-defense-strategy.pdf",
+    "status": "ongoing"
+  },
+  {
+    "id": "fy2026-appropriations-act",
+    "date": "2026-02-03",
+    "title": "Consolidated Appropriations Act, 2026 signed",
+    "whatHappened": "President Trump signed H.R. 7148, the Consolidated Appropriations Act, 2026, ending the first 2026 shutdown by funding federal agencies through fiscal year 2026.",
+    "whatItChanged": "Restored discretionary funding to most federal agencies (excluding continued DHS-specific funding gap), ending the first shutdown of 2026.",
+    "sourceName": "The White House, official bill-signing announcement",
+    "sourceUrl": "https://www.whitehouse.gov/briefings-statements/2026/02/congressional-bill-h-r-7148-signed-into-law/",
+    "status": "concluded"
+  },
+  {
+    "id": "senate-pay-withholding-resolution",
+    "date": "2026-05-14",
+    "title": "Senate passes resolution withholding pay during shutdowns",
+    "whatHappened": "Following the two 2026 shutdowns, the US Senate unanimously passed a resolution to withhold senators' pay during future government shutdowns.",
+    "whatItChanged": "Established a new Senate-imposed financial disincentive intended to deter future funding lapses.",
+    "sourceName": "US Senate action reported via CRS/legislative tracking (primary Senate record pending direct citation)",
+    "sourceUrl": "https://www.congress.gov/crs-product/R48832",
+    "status": "UNRESOLVED"
+  }
+]

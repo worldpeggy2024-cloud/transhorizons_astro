@@ -2002,10 +2002,9 @@ political_shockAbsorbers_en: >-
 
   The procedural accelerant is demonstrated rather than hypothetical, though its
   macroeconomic bite is modest. The fiscal 2026 funding lapse ran 43 days, from
-  1 October to 12 November 2025, the longest full-government shutdown on record,
-  and a further lapse in Homeland Security funding beginning 14 February 2026
-  ran 76 days to 30 April 2026, the longest shutdown of a single federal
-  department on record
+  1 October to 12 November 2025, and a further lapse in Homeland Security
+  funding beginning 14 February 2026 ran 76 days to 30 April 2026, the longest
+  shutdown of a single federal department on record
   [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. The
   Congressional Budget Office estimated during the lapse that it would reduce
   annualised real growth in the fourth quarter of 2025 by one to two percentage
@@ -2077,9 +2076,8 @@ political_shockAbsorbers_fr: >-
 
   Le facteur d'aggravation procédural est avéré plutôt qu'hypothétique, même si
   sa portée macroéconomique reste modeste. L'interruption des crédits de
-  l'exercice 2026 a duré 43 jours (du 1er octobre au 12 novembre 2025), soit la
-  plus longue fermeture de l'ensemble de l'administration jamais enregistrée, et
-  une nouvelle interruption des crédits de la Sécurité intérieure, entamée le 14
+  l'exercice 2026 a duré 43 jours (du 1er octobre au 12 novembre 2025), et une
+  nouvelle interruption des crédits de la Sécurité intérieure, entamée le 14
   février 2026, a duré 76 jours jusqu'au 30 avril 2026; soit la plus longue
   fermeture d'un seul département fédéral jamais enregistrée
   [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. Le
@@ -2516,15 +2514,15 @@ capacity_steering_en: >-
   its steering is degraded not by ignorance of its own failures but by an
   inability to convert diagnosis into sustained action. Prioritisation through
   the ordinary budget process repeatedly failed: the fiscal 2026 appropriations
-  cycle produced the longest full-government shutdown on record — 43 days, 1
-  October to 12 November 2025 — and a Homeland Security funding lapse from 14
-  February 2026 that ran 76 days to 30 April 2026, the longest for a single
-  department, resolved only through consolidated and continuing appropriations
+  cycle produced produced a 43-day funding lapse, 1 October to 12 November 2025;
+  and a Homeland Security funding lapse from 14 February 2026 that ran 76 days
+  to 30 April 2026, the longest for a single department, resolved only through
+  consolidated and continuing appropriations
   [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations].
   Announced priorities diverge from implemented ones: deficit reduction was
   declared while the 2025 reconciliation act raised projected deficits by $4.7
   trillion over 2026–2035 [obbba-hr1][cbo-budget-outlook-2026]. Where the
-  executive has prioritised — homeland and hemispheric security — implementation
+  executive has prioritised (homeland and hemispheric security) implementation
   has been rapid [ndstrategy-2026][maduro-capture-wardept].
 
 
@@ -2558,12 +2556,12 @@ capacity_steering_fr: >-
   considérables, et son pilotage est dégradé non par l'ignorance de ses propres
   défaillances, mais par l'incapacité de convertir le diagnostic en action
   soutenue. L'établissement des priorités par le processus budgétaire ordinaire
-  a échoué à répétition : le cycle des crédits de l'exercice 2026 a produit la
-  plus longue fermeture de l'ensemble de l'administration jamais enregistrée (43
-  jours, du 1er octobre au 12 novembre 2025) et une interruption des crédits de
-  la Sécurité intérieure, à partir du 14 février 2026, qui a duré 76 jours
-  jusqu'au 30 avril 2026, la plus longue pour un seul département, résolue
-  uniquement par des crédits consolidés et provisoires
+  a échoué à répétition : le cycle des crédits de l'exercice 2026 a produit une
+  fermeture de l'ensemble de l'administration de 43 jours (du 1er octobre au 12
+  novembre 2025) et une interruption des crédits de la Sécurité intérieure (à
+  partir du 14 février 2026) qui a duré 76 jours jusqu'au 30 avril 2026, la plus
+  longue pour un seul département, résolue uniquement par des crédits consolidés
+  et provisoires
   [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. Les
   priorités annoncées divergent des priorités mises en œuvre : la réduction du
   déficit a été proclamée alors que la loi de réconciliation de 2025 relevait
@@ -4361,135 +4359,135 @@ situation_en: |-
       "thread": "United States–Iran war",
       "events": [
         {
-          "date": "28 February 2026",
-          "what": "The United States, in coordination with Israel, began major combat operations against Iran ('Operation Epic Fury'), striking nuclear, ballistic-missile and naval targets [iran-ops-transcript].",
-          "changed": "Placed the United States in open armed conflict with Iran, triggering Iranian missile and drone retaliation against Gulf states hosting United States forces and Iran's closure of the Strait of Hormuz [whitehouse-epic-fury-ceasefire]."
+          "date": "2026-02-28",
+          "what": "United States and Israeli forces began major combat operations against Iran, announced by the President under claimed Article II authority [iran-ops-transcript].",
+          "changed": "It moved the country from episodic strikes on Iranian nuclear sites to an interstate war conducted without a congressional authorisation for the use of military force [iran-ops-transcript]."
         },
         {
-          "date": "8 April 2026 (7 April in the United States)",
-          "what": "A two-week United States–Iran ceasefire mediated by Pakistan took effect, with Iran agreeing to reopen the Strait of Hormuz [whitehouse-epic-fury-ceasefire].",
-          "changed": "Halted the principal combat phase after 38 days of strikes and opened negotiations on Iran's nuclear program and the Strait; the pause was later extended and formalised in an interim memorandum of understanding signed 17 June 2026 [whitehouse-epic-fury-ceasefire]."
+          "date": "2026-04-08 – 2026-06-17",
+          "what": "A Pakistan-mediated ceasefire took effect on 8 April 2026 and was formalised in an interim memorandum of understanding on 17 June [whitehouse-epic-fury-ceasefire].",
+          "changed": "It suspended hostilities for about three months and moved the Strait of Hormuz transit question into a negotiated instrument [whitehouse-epic-fury-ceasefire]."
         },
         {
-          "date": "8 July 2026",
-          "what": "Speaking at the North Atlantic Treaty Organization (NATO) summit in Ankara, Turkey, President Trump declared the ceasefire with Iran 'over' ('For me, I think it's over ... It's just a waste of time dealing with them') after both sides exchanged strikes [cnbc-iran-ceasefire-over].",
-          "changed": "Ended the negotiated pause and returned the United States and Iran to active hostilities, with renewed United States strikes, a reimposed naval blockade and Brent crude jumping about 5% to roughly $78 a barrel [cnbc-iran-ceasefire-over]."
+          "date": "2026-07-08",
+          "what": "The President declared the ceasefire over, and the naval blockade of Iranian ports was reimposed [cnbc-iran-ceasefire-over][cnn-iran-war-august2026].",
+          "changed": "It returned the country to active hostilities and to interdiction of commercial shipping: United States Central Command reported 44 commercial vessels redirected, two disabled and two boarded as of early August 2026 [cnn-iran-war-august2026]."
         }
       ],
-      "currentState": "As of 19 July 2026 United States–Iran hostilities are active: United States forces are conducting consecutive nights of strikes on Iranian infrastructure and enforcing a naval blockade while Iran attacks Gulf shipping and states hosting United States bases; no ceasefire is in effect [cnn-iran-war-july18]."
+      "currentState": "The blockade remains in force and the war is unresolved; planned strikes were called off on 1 August 2026 and the negotiating channel has moved to Muscat, where Iran and Oman report talks on a new Strait of Hormuz transit route close to conclusion while Iran attributes the strait's closure to the blockade [cnn-iran-war-august2026]."
     },
     {
-      "thread": "Federal funding lapses",
+      "thread": "Tariff authority struck down and rebuilt",
       "events": [
         {
-          "date": "1 October – 12 November 2025",
-          "what": "A lapse in fiscal year 2026 appropriations shut down the federal government for 43 days, ending 12 November 2025 when a continuing resolution and three full-year appropriations bills were enacted [crs-r48832-shutdowns].",
-          "changed": "Became the longest full government shutdown in United States history and funded only part of the government through 30 January 2026, setting up the further 2026 lapses [crs-r48832-shutdowns]."
+          "date": "2026-02-20",
+          "what": "The Supreme Court held in Learning Resources, Inc. v. Trump that the International Emergency Economic Powers Act does not authorise the President to impose tariffs, and the same day Proclamation 11012 imposed a temporary import surcharge of 10 percent ad valorem on most imports under Section 122 of the Trade Act of 1974, effective 24 February for 150 days [scotus-learning-resources][fr-proclamation-11012-section122].",
+          "changed": "It voided the legal basis of most of the tariff wall and replaced country-specific rates with a single flat baseline resting on a balance-of-payments authority that the President cannot extend [scotus-learning-resources][fr-proclamation-11012-section122][crs-lsb11398-tariffs]."
         },
         {
-          "date": "14 February – 30 April 2026",
-          "what": "Department of Homeland Security (DHS) funding lapsed on 14 February 2026 — after Customs and Border Protection (CBP) agents killed Alex Pretti, a 37-year-old intensive-care nurse, on 24 January 2026 and Senate Democrats withdrew support for the department's appropriations — and ran 76 days until 30 April 2026 [cbs-pretti-cbp-report][crs-r48832-shutdowns].",
-          "changed": "Became the longest shutdown of a single federal department in United States history; the department reopened without funding for Immigration and Customs Enforcement (ICE) and CBP, which were financed instead through budget reconciliation [house-approps-dhs-76day]."
+          "date": "2026-07-24",
+          "what": "The Section 122 surcharge lapsed at its 150-day statutory limit, and Section 301 duties of 10 percent or 12.5 percent on the products of 60 economies took effect the same moment [fr-proclamation-11012-section122][ustr-301-forced-labor-final-action].",
+          "changed": "It moved the tariff base off time-limited emergency authority onto trade-remedy authority carrying no statutory rate ceiling and no fixed expiry, and tied the rate a partner pays to its enforcement of a forced-labour import prohibition rather than to bilateral bargaining [ustr-301-forced-labor-final-action]."
         }
       ],
-      "currentState": "As of 19 July 2026 all twelve fiscal year 2026 appropriations are enacted, but Immigration and Customs Enforcement and Customs and Border Protection remain funded through reconciliation rather than regular annual appropriations [house-approps-dhs-76day]."
+      "currentState": "The tariff wall now rests on Section 301 and Section 232 actions rather than on emergency economic powers [ustr-301-forced-labor-final-action][crs-lsb11398-tariffs]."
     },
     {
-      "thread": "Tariff authority",
+      "thread": "Lethal military operations in the Western Hemisphere",
       "events": [
         {
-          "date": "20 February 2026",
-          "what": "The Supreme Court ruled 6–3 in Learning Resources, Inc. v. Trump that the International Emergency Economic Powers Act (IEEPA) does not authorize the President to impose tariffs, striking down the 'reciprocal' and 'trafficking' tariffs [scotus-learning-resources].",
-          "changed": "Invalidated the legal basis for the administration's signature tariff program and exposed the government to potential refunds of more than $160 billion in collected duties; the IEEPA tariffs were terminated on 24 February 2026 [crs-lsb11398-tariffs]."
+          "date": "2025-09-02",
+          "what": "The United States executed its first lethal strike on a vessel the Department of War said was operated by a Venezuelan cartel, and on 13 November 2025 the campaign was named Operation Southern Spear [oss-lead-ig-q3-2026].",
+          "changed": "It established standing lethal military action against non-state targets in the Caribbean and eastern Pacific, notified to Congress under the War Powers Resolution rather than authorised by it, with the mission statement and the list of designated targets classified [oss-lead-ig-q3-2026]."
         },
         {
-          "date": "24 February 2026",
-          "what": "A 10% global import surcharge under Section 122 of the Trade Act of 1974 took effect as a replacement, with President Trump announcing an increase to the 15% statutory ceiling, and capped at 150 days [crs-lsb11398-tariffs].",
-          "changed": "Restored broad tariffs on a temporary, statutorily capped footing that requires congressional action to extend beyond 24 July 2026, shifting the administration toward Section 232 and Section 301 authorities for durable duties [crs-lsb11398-tariffs]."
+          "date": "2026-01-03",
+          "what": "Nicolás Maduro was taken into United States custody by a military operation in Caracas [maduro-capture-wardept][crs-maduro-capture].",
+          "changed": "It removed a sitting head of state by force and placed the United States inside a Venezuelan political transition [maduro-capture-wardept][crs-maduro-capture]."
         }
       ],
-      "currentState": "As of 19 July 2026 the Section 122 surcharge remains in effect and is set to expire by operation of law on 24 July 2026 absent congressional extension, with Section 301 investigations pending as a replacement and the refund process for the terminated IEEPA tariffs unresolved [crs-lsb11398-tariffs]."
+      "currentState": "The strike rate is rising while the force and the spending behind it fall: at least 19 vessels were struck and an estimated 56 people killed or presumed dead in the quarter to 30 June 2026, against 12 vessels and 40 people the previous quarter, on quarterly obligations of $173.9 million against $527.0 million and a reduced naval presence the command attributes to a transition to steady-state operations [oss-lead-ig-q3-2026]."
     },
     {
-      "thread": "Venezuela intervention",
+      "thread": "Federal command of city policing",
       "events": [
         {
-          "date": "3 January 2026",
-          "what": "United States forces raided Caracas ('Operation Absolute Resolve'), capturing Venezuelan President Nicolás Maduro and his wife Cilia Flores and transporting them to New York on narco-terrorism and drug-trafficking charges [maduro-capture-wardept].",
-          "changed": "Removed a sitting head of state by foreign military action and installed United States leverage over a Venezuelan transition, with Vice President Delcy Rodríguez sworn in as interim president [crs-maduro-capture]."
+          "date": "2025-08-11",
+          "what": "Executive Order 14333 declared a crime emergency in the District of Columbia and directed measures including federal use of the Metropolitan Police Department alongside a National Guard deployment [eo-14333-dc-crime-emergency].",
+          "changed": "It placed a municipal police force under federal direction under the emergency provision of the District of Columbia Home Rule Act, and preceded the federalised National Guard deployments to other cities, one of which the Supreme Court declined to permit in December 2025 [eo-14333-dc-crime-emergency][scotus-trump-v-illinois-2025]."
         }
       ],
-      "currentState": "As of 19 July 2026 Maduro remains in United States custody awaiting trial in the Southern District of New York while the United States retains a large military presence off Venezuela [crs-maduro-capture]."
+      "currentState": "Federalised deployments in Portland, Los Angeles and Chicago were demobilised on 21 January 2026, and Texas National Guard personnel were released from stand-by on 11 March 2026 [northcom-federal-protection-mission]."
     }
   ]
 situation_fr: |-
   [
     {
-      "thread": "Guerre entre les États-Unis et l'Iran",
+      "thread": "Guerre États-Unis–Iran",
       "events": [
         {
-          "date": "28 février 2026",
-          "what": "Les États-Unis, en coordination avec Israël, ont lancé des opérations de combat d'envergure contre l'Iran (« Operation Epic Fury »), frappant des cibles nucléaires, balistiques et navales [iran-ops-transcript].",
-          "changed": "Ont placé les États-Unis en conflit armé ouvert avec l'Iran, provoquant des représailles iraniennes par missiles et drones contre les États du Golfe hébergeant des forces américaines ainsi que la fermeture du détroit d'Ormuz par l'Iran [whitehouse-epic-fury-ceasefire]."
+          "date": "2026-02-28",
+          "what": "Les forces américaines et israéliennes ont lancé des opérations de combat majeures contre l'Iran, annoncées par le président au titre d'une autorité revendiquée en vertu de l'article II [iran-ops-transcript].",
+          "changed": "Cela a fait passer le pays de frappes ponctuelles sur des sites nucléaires iraniens à une guerre interétatique menée sans autorisation du Congrès pour l'emploi de la force militaire [iran-ops-transcript]."
         },
         {
-          "date": "8 avril 2026 (7 avril aux États-Unis)",
-          "what": "Un cessez-le-feu de deux semaines entre les États-Unis et l'Iran, négocié par le Pakistan, est entré en vigueur, l'Iran acceptant de rouvrir le détroit d'Ormuz [whitehouse-epic-fury-ceasefire].",
-          "changed": "A interrompu la phase principale de combats après 38 jours de frappes et ouvert des négociations sur le programme nucléaire iranien et le détroit; la trêve a ensuite été prolongée puis formalisée par un protocole d'accord intérimaire signé le 17 juin 2026 [whitehouse-epic-fury-ceasefire]."
+          "date": "2026-04-08 – 2026-06-17",
+          "what": "Un cessez-le-feu médié par le Pakistan est entré en vigueur le 8 avril 2026 et a été formalisé dans un protocole d'entente intérimaire le 17 juin [whitehouse-epic-fury-ceasefire].",
+          "changed": "Cela a suspendu les hostilités pendant environ trois mois et a fait passer la question du transit par le détroit d'Ormuz dans un instrument négocié [whitehouse-epic-fury-ceasefire]."
         },
         {
-          "date": "8 juillet 2026",
-          "what": "Lors du sommet de l'Organisation du traité de l'Atlantique Nord (OTAN) à Ankara, en Turquie, le président Trump a déclaré le cessez-le-feu avec l'Iran « terminé » (« For me, I think it's over ... It's just a waste of time dealing with them ») après un nouvel échange de frappes [cnbc-iran-ceasefire-over].",
-          "changed": "A mis fin à la pause négociée et ramené les États-Unis et l'Iran à des hostilités actives, avec la reprise des frappes américaines, le rétablissement d'un blocus naval et une hausse du Brent d'environ 5 %, à près de 78 dollars le baril [cnbc-iran-ceasefire-over]."
+          "date": "2026-07-08",
+          "what": "Le président a déclaré le cessez-le-feu terminé et le blocus naval des ports iraniens a été rétabli [cnbc-iran-ceasefire-over][cnn-iran-war-august2026].",
+          "changed": "Cela a ramené le pays à des hostilités actives et à l'interception de la navigation commerciale : le United States Central Command fait état de 44 navires de commerce détournés, deux mis hors d'état et deux arraisonnés au début d'août 2026 [cnn-iran-war-august2026]."
         }
       ],
-      "currentState": "Au 19 juillet 2026, les hostilités entre les États-Unis et l'Iran sont actives : les forces américaines mènent des frappes plusieurs nuits d'affilée contre des infrastructures iraniennes et appliquent un blocus naval, tandis que l'Iran vise la navigation dans le Golfe et les États hébergeant des bases américaines; aucun cessez-le-feu n'est en vigueur [cnn-iran-war-july18]."
+      "currentState": "Le blocus demeure en vigueur et la guerre n'est pas réglée; des frappes prévues ont été annulées le 1er août 2026 et le canal de négociation s'est déplacé à Mascate, où l'Iran et Oman annoncent des pourparlers proches de leur terme sur une nouvelle route de transit dans le détroit d'Ormuz, tandis que l'Iran attribue la fermeture du détroit au blocus [cnn-iran-war-august2026]."
     },
     {
-      "thread": "Ruptures de financement fédéral",
+      "thread": "Pouvoir tarifaire invalidé puis reconstruit",
       "events": [
         {
-          "date": "1er octobre – 12 novembre 2025",
-          "what": "Une interruption des crédits pour l'exercice budgétaire 2026 a paralysé le gouvernement fédéral pendant 43 jours, prenant fin le 12 novembre 2025 avec l'adoption d'une résolution de financement provisoire et de trois lois de crédits pour l'année entière [crs-r48832-shutdowns].",
-          "changed": "Est devenue la plus longue paralysie complète du gouvernement de l'histoire des États-Unis et n'a financé qu'une partie du gouvernement jusqu'au 30 janvier 2026, préparant les ruptures ultérieures de 2026 [crs-r48832-shutdowns]."
+          "date": "2026-02-20",
+          "what": "La Cour suprême a jugé dans Learning Resources, Inc. v. Trump que l'International Emergency Economic Powers Act n'autorise pas le président à imposer des droits de douane, et le même jour la Proclamation 11012 a imposé une surtaxe temporaire à l'importation de 10 pour cent ad valorem sur la plupart des importations en vertu de la Section 122 du Trade Act of 1974, en vigueur le 24 février pour 150 jours [scotus-learning-resources][fr-proclamation-11012-section122].",
+          "changed": "Cela a anéanti le fondement juridique de l'essentiel du mur tarifaire et remplacé les taux par pays par un seuil unique et uniforme reposant sur une autorité de balance des paiements que le président ne peut pas prolonger [scotus-learning-resources][fr-proclamation-11012-section122][crs-lsb11398-tariffs]."
         },
         {
-          "date": "14 février – 30 avril 2026",
-          "what": "Le financement du Department of Homeland Security (DHS) a cessé le 14 février 2026 — après que des agents de la Customs and Border Protection (CBP) eurent tué Alex Pretti, infirmier en soins intensifs de 37 ans, le 24 janvier 2026, et que les sénateurs démocrates eurent retiré leur soutien aux crédits du ministère — et a duré 76 jours, jusqu'au 30 avril 2026 [cbs-pretti-cbp-report][crs-r48832-shutdowns].",
-          "changed": "Est devenue la plus longue paralysie d'un seul ministère fédéral de l'histoire des États-Unis; le ministère a rouvert sans financement pour l'Immigration and Customs Enforcement (ICE) et la CBP, financées à la place par la voie de la réconciliation budgétaire [house-approps-dhs-76day]."
+          "date": "2026-07-24",
+          "what": "La surtaxe de la Section 122 a expiré à sa limite légale de 150 jours, et des droits au titre de la Section 301 de 10 pour cent ou 12,5 pour cent sur les produits de 60 économies sont entrés en vigueur au même instant [fr-proclamation-11012-section122][ustr-301-forced-labor-final-action].",
+          "changed": "Cela a fait passer l'assise tarifaire d'une autorité d'urgence à durée limitée à une autorité de recours commercial sans plafond de taux ni échéance fixe, et a lié le taux payé par un partenaire à son application d'une interdiction d'importer des biens produits par le travail forcé plutôt qu'à une négociation bilatérale [ustr-301-forced-labor-final-action]."
         }
       ],
-      "currentState": "Au 19 juillet 2026, l'ensemble des douze lois de crédits de l'exercice 2026 est adopté, mais l'Immigration and Customs Enforcement et la Customs and Border Protection restent financées par la réconciliation budgétaire plutôt que par les crédits annuels ordinaires [house-approps-dhs-76day]."
+      "currentState": "Le mur tarifaire repose désormais sur des mesures prises au titre des Sections 301 et 232 plutôt que sur des pouvoirs économiques d'urgence [ustr-301-forced-labor-final-action][crs-lsb11398-tariffs]."
     },
     {
-      "thread": "Pouvoir tarifaire",
+      "thread": "Opérations militaires létales dans l'hémisphère occidental",
       "events": [
         {
-          "date": "20 février 2026",
-          "what": "La Cour suprême a jugé, par 6 voix contre 3 dans l'arrêt Learning Resources, Inc. v. Trump, que l'International Emergency Economic Powers Act (IEEPA) n'autorise pas le président à imposer des droits de douane, annulant les tarifs « réciproques » et « anti-trafic » [scotus-learning-resources].",
-          "changed": "A invalidé le fondement juridique du programme tarifaire phare de l'administration et exposé le gouvernement à des remboursements potentiels de plus de 160 milliards de dollars de droits perçus; les tarifs fondés sur l'IEEPA ont pris fin le 24 février 2026 [crs-lsb11398-tariffs]."
+          "date": "2025-09-02",
+          "what": "Les États-Unis ont exécuté leur première frappe létale contre un navire que le Department of War a dit exploité par un cartel vénézuélien, et le 13 novembre 2025 la campagne a reçu le nom d'Operation Southern Spear [oss-lead-ig-q3-2026].",
+          "changed": "Cela a établi une action militaire létale permanente contre des cibles non étatiques dans les Caraïbes et le Pacifique oriental, notifiée au Congrès au titre de la War Powers Resolution plutôt qu'autorisée par lui, l'énoncé de mission et la liste des cibles désignées demeurant classés [oss-lead-ig-q3-2026]."
         },
         {
-          "date": "24 février 2026",
-          "what": "Une surtaxe mondiale à l'importation de 10 %, fondée sur la Section 122 du Trade Act of 1974, est entrée en vigueur en remplacement, le président Trump ayant annoncé une hausse jusqu'au plafond légal de 15 %, et plafonnée à 150 jours [crs-lsb11398-tariffs].",
-          "changed": "A rétabli des droits de douane étendus sur une base temporaire et plafonnée par la loi, exigeant une action du Congrès pour être prolongée au-delà du 24 juillet 2026, et a orienté l'administration vers les autorités des Sections 232 et 301 pour des droits durables [crs-lsb11398-tariffs]."
+          "date": "2026-01-03",
+          "what": "Nicolás Maduro a été placé sous la garde des États-Unis par une opération militaire à Caracas [maduro-capture-wardept][crs-maduro-capture].",
+          "changed": "Cela a écarté par la force un chef d'État en exercice et installé les États-Unis à l'intérieur d'une transition politique vénézuélienne [maduro-capture-wardept][crs-maduro-capture]."
         }
       ],
-      "currentState": "Au 19 juillet 2026, la surtaxe de la Section 122 demeure en vigueur et doit expirer de plein droit le 24 juillet 2026 en l'absence de prolongation par le Congrès, des enquêtes au titre de la Section 301 étant en cours comme remplacement et la procédure de remboursement des tarifs IEEPA supprimés restant non résolue [crs-lsb11398-tariffs]."
+      "currentState": "Le rythme des frappes augmente tandis que les forces et les dépenses qui les portent diminuent : au moins 19 navires ont été frappés et environ 56 personnes tuées ou présumées telles au trimestre clos le 30 juin 2026, contre 12 navires et 40 personnes au trimestre précédent, sur des engagements trimestriels de 173,9 millions de dollars contre 527,0 millions, avec une présence navale réduite que le commandement attribue à un passage en régime permanent [oss-lead-ig-q3-2026]."
     },
     {
-      "thread": "Intervention au Venezuela",
+      "thread": "Commandement fédéral de la police municipale",
       "events": [
         {
-          "date": "3 janvier 2026",
-          "what": "Les forces américaines ont mené un raid sur Caracas (« Operation Absolute Resolve »), capturant le président vénézuélien Nicolás Maduro et son épouse Cilia Flores et les transférant à New York pour des accusations de narcoterrorisme et de trafic de drogue [maduro-capture-wardept].",
-          "changed": "Ont écarté un chef d'État en exercice par une action militaire étrangère et instauré une influence américaine sur une transition vénézuélienne, la vice-présidente Delcy Rodríguez ayant prêté serment comme présidente par intérim [crs-maduro-capture]."
+          "date": "2025-08-11",
+          "what": "Le décret 14333 a déclaré une urgence criminelle dans le district de Columbia et ordonné des mesures comprenant l'emploi fédéral du Metropolitan Police Department ainsi qu'un déploiement de la Garde nationale [eo-14333-dc-crime-emergency].",
+          "changed": "Cela a placé une police municipale sous direction fédérale au titre de la disposition d'urgence du District of Columbia Home Rule Act, et a précédé les déploiements fédéralisés de la Garde nationale dans d'autres villes, dont l'un que la Cour suprême a refusé d'autoriser en décembre 2025 [eo-14333-dc-crime-emergency][scotus-trump-v-illinois-2025]."
         }
       ],
-      "currentState": "Au 19 juillet 2026, Maduro reste en détention aux États-Unis en attente de son procès dans le district sud de New York, tandis que les États-Unis maintiennent une importante présence militaire au large du Venezuela [crs-maduro-capture]."
+      "currentState": "Les déploiements fédéralisés à Portland, Los Angeles et Chicago ont été démobilisés le 21 janvier 2026, et le personnel de la Garde nationale du Texas a été libéré de son état d'alerte le 11 mars 2026 [northcom-federal-protection-mission]."
     }
   ]
-situation_lastUpdated: '2026-07-19'
+situation_lastUpdated: '2026-08-06'
 actors_domestic_en: |-
   [
     {
@@ -5953,15 +5951,16 @@ sources: |-
     },
     {
       "id": "crs-r48832-shutdowns",
-      "name": "Congressional Research Service Report R48832 — Government Shutdown Background",
-      "nameFr": "Congressional Research Service Report R48832 — Government Shutdown Background",
+      "name": "The 2025 (FY2026) Government Shutdown: Economic Effects",
+      "nameFr": "The 2025 (FY2026) Government Shutdown: Economic Effects",
       "url": "https://www.congress.gov/crs-product/R48832",
       "desc": "Nonpartisan legislative research service report tracking federal shutdown timelines, causes, and durations; authoritative primary congressional analysis, not news.",
       "descFr": "Rapport non partisan du service de recherche du Congrès retraçant les fermetures fédérales, leurs causes et durées; analyse primaire faisant autorité. Titre traduit : « Rapport R48832 du Congressional Research Service — Contexte des fermetures gouvernementales ».",
       "accessDate": "2026-07-18",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "High"
+      "volatility": "High",
+      "publicationDate": "2026-01-29"
     },
     {
       "id": "maduro-capture-wardept",
@@ -6653,7 +6652,8 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low"
+      "volatility": "Low",
+      "publicationDate": "2017-04-07"
     },
     {
       "id": "crs-lsb11448-slaughter",
@@ -6729,7 +6729,8 @@ sources: |-
       "accessDate": "2026-08-02",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Med"
+      "volatility": "Med",
+      "publicationDate": "2026-02-12"
     },
     {
       "id": "house-democratic-leader",
@@ -6818,7 +6819,8 @@ sources: |-
       "accessDate": "2026-08-03",
       "confidence": "High",
       "citationType": "Fact",
-      "volatility": "Low"
+      "volatility": "Low",
+      "publicationDate": "2018-11-06"
     },
     {
       "id": "uscode-6-466",
@@ -7433,7 +7435,7 @@ sources: |-
       "url": "https://www.congress.gov/crs-product/LSB11398",
       "desc": "Congressional Research Service legal sidebar analysing the Supreme Court's tariff ruling, the termination of IEEPA tariffs and the administration's turn to Section 122 and other authorities.",
       "descFr": "Note juridique du Congressional Research Service analysant l'arrêt de la Cour suprême sur les tarifs, la fin des tarifs IEEPA et le recours de l'administration à la Section 122 et à d'autres autorités.",
-      "publicationDate": "2026-02",
+      "publicationDate": "2026-02-23",
       "accessDate": "2026-07-19",
       "confidence": "High",
       "citationType": "Fact",
@@ -7492,8 +7494,8 @@ sources: |-
     },
     {
       "id": "crs-overseas-basing-r48123",
-      "name": "U.S. Overseas Basing: Background and Issues for Congress (R48123)",
-      "nameFr": "U.S. Overseas Basing: Background and Issues for Congress (R48123)",
+      "name": "U.S. Overseas Basing: Background and Issues for Congress",
+      "nameFr": "U.S. Overseas Basing: Background and Issues for Congress",
       "url": "https://www.congress.gov/crs-product/R48123",
       "desc": "Congressional Research Service report detailing U.S. overseas military bases and troop presence by host country, function, and resourcing; primary nonpartisan legislative-research source.",
       "descFr": "Rapport du Congressional Research Service détaillant les bases militaires américaines à l'étranger et la présence des troupes par pays hôte; source primaire de recherche législative non partisane.",
@@ -7510,7 +7512,7 @@ sources: |-
       "url": "https://www.congress.gov/crs-product/IF12113",
       "desc": "Congressional Research Service in-focus brief describing the AUKUS trilateral security partnership among the United States, United Kingdom, and Australia; primary nonpartisan legislative-research source.",
       "descFr": "Bref du Congressional Research Service décrivant le partenariat de sécurité trilatéral AUKUS entre les États-Unis, le Royaume-Uni et l'Australie; source primaire de recherche législative non partisane.",
-      "publicationDate": "2025-03-02",
+      "publicationDate": "2025-03-03",
       "accessDate": "2026-07-19",
       "confidence": "High",
       "citationType": "Fact",
@@ -7523,7 +7525,7 @@ sources: |-
       "url": "https://www.congress.gov/crs-product/R47599",
       "desc": "Congressional Research Service report on AUKUS advanced-capabilities cooperation and related congressional considerations; primary nonpartisan legislative-research source.",
       "descFr": "Rapport du Congressional Research Service sur la coopération en capacités avancées d'AUKUS et les considérations législatives connexes; source primaire de recherche législative non partisane.",
-      "publicationDate": "2024-05-20",
+      "publicationDate": "2024-05-21",
       "accessDate": "2026-07-19",
       "confidence": "High",
       "citationType": "Fact",
@@ -7562,7 +7564,7 @@ sources: |-
       "url": "https://www.congress.gov/crs-product/IF10600",
       "desc": "Congressional Research Service primer summarizing DOD contract obligations by scale and sector; primary nonpartisan legislative-research source on the defence industrial base.",
       "descFr": "Aperçu du Congressional Research Service résumant les obligations contractuelles du département de la Défense par échelle et secteur; source primaire de recherche législative non partisane sur la base industrielle de défense.",
-      "publicationDate": "2024-06-05",
+      "publicationDate": "2026-02-06",
       "accessDate": "2026-07-19",
       "confidence": "High",
       "citationType": "Fact",
@@ -7747,7 +7749,7 @@ sources: |-
     },
     {
       "id": "gao-iija-grants-status-2025",
-      "name": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024 (GAO-25-107243)",
+      "name": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024",
       "url": "https://www.gao.gov/products/gao-25-107243",
       "desc": "Report of the Government Accountability Office analysing USAspending.gov data on obligation and outlay of Infrastructure Investment and Jobs Act grant funding to non-federal jurisdictions; the legislature's non-partisan audit body.",
       "descFr": "Rapport du Government Accountability Office analysant les données d'USAspending.gov sur l'engagement et le décaissement des subventions de l'Infrastructure Investment and Jobs Act aux administrations non fédérales; l'organe d'audit non partisan du Congrès. Titre traduit : « Subventions d'infrastructure : état du financement versé aux tribus, États, collectivités locales et territoires au 31 décembre 2024 (GAO-25-107243) ».",
@@ -7756,11 +7758,11 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024 (GAO-25-107243)"
+      "nameFr": "Infrastructure Grants: Status of Funding to Tribes, States, Localities, and Territories as of December 31, 2024"
     },
     {
       "id": "gao-iija-dot-2025",
-      "name": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks (GAO-25-107166)",
+      "name": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks",
       "url": "https://www.gao.gov/products/gao-25-107166",
       "desc": "Report of the Government Accountability Office on Department of Transportation delivery of infrastructure funding, distinguishing formula from discretionary grants and surveying 316 project awardees on execution obstacles.",
       "descFr": "Rapport du Government Accountability Office sur l'acheminement du financement d'infrastructure par le Department of Transportation, distinguant les subventions par formule des subventions discrétionnaires et interrogeant 316 bénéficiaires de projets sur les obstacles à l'exécution. Titre traduit : « Infrastructure Investment and Jobs Act : le DOT devrait mieux communiquer l'état du financement et évaluer les risques (GAO-25-107166) ».",
@@ -7769,11 +7771,11 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks (GAO-25-107166)"
+      "nameFr": "Infrastructure Investment and Jobs Act: DOT Should Better Communicate Funding Status and Assess Risks"
     },
     {
       "id": "gao-funding-status-2026",
-      "name": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act (GAO-26-108434)",
+      "name": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act",
       "url": "https://www.gao.gov/products/gao-26-108434",
       "desc": "Report of the Government Accountability Office on the status of infrastructure and clean-energy funding following the January 2025 executive orders pausing disbursement, recording awards approved, cancelled and pending across selected agencies.",
       "descFr": "Rapport du Government Accountability Office sur l'état du financement des infrastructures et de l'énergie propre à la suite des décrets de janvier 2025 suspendant les décaissements, recensant les octrois approuvés, annulés et en attente dans une sélection d'agences. Titre traduit : « État du financement : Infrastructure Investment and Jobs Act et Inflation Reduction Act (GAO-26-108434) ».",
@@ -7782,7 +7784,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act (GAO-26-108434)"
+      "nameFr": "Funding Status: Infrastructure Investment and Jobs Act and Inflation Reduction Act"
     },
     {
       "id": "nchs-insurance-2025",
@@ -7799,7 +7801,7 @@ sources: |-
     },
     {
       "id": "crs-if10830-health-coverage",
-      "name": "Health Care Coverage and Spending (IF10830)",
+      "name": "U.S. Health Care Coverage and Spending",
       "url": "https://www.congress.gov/crs-product/IF10830",
       "desc": "In Focus brief of the Congressional Research Service compiling federal statistical data on health insurance coverage by type and on national health expenditure as a share of gross domestic product.",
       "descFr": "Note In Focus du Congressional Research Service compilant des données statistiques fédérales sur la couverture d'assurance maladie par type et sur les dépenses nationales de santé en part du produit intérieur brut. Titre traduit : « Couverture et dépenses de santé (IF10830) ».",
@@ -7808,7 +7810,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Interpretation",
       "volatility": "Med",
-      "nameFr": "Health Care Coverage and Spending (IF10830)"
+      "nameFr": "U.S. Health Care Coverage and Spending"
     },
     {
       "id": "kff-medicaid-enrollment-tracker",
@@ -7875,7 +7877,7 @@ sources: |-
     },
     {
       "id": "ncses-federally-funded-rd",
-      "name": "Federally Funded R&D Declines as a Share of GDP and Total R&D (NSF 23-339)",
+      "name": "Federally Funded R&D Declines as a Share of GDP and Total R&D",
       "url": "https://ncses.nsf.gov/pubs/nsf23339",
       "desc": "Analysis of the National Center for Science and Engineering Statistics within the National Science Foundation, drawing on its National Patterns of R&D Resources series, on the long-run shift in research funding from federal to business sources; primary federal statistical source.",
       "descFr": "Analyse du National Center for Science and Engineering Statistics au sein de la National Science Foundation, s'appuyant sur sa série National Patterns of R&D Resources, sur le glissement de long terme du financement de la recherche des sources fédérales vers les sources privées; source statistique fédérale primaire. Titre traduit : « Le financement fédéral de la R-D décline en part du PIB et de la R-D totale (NSF 23-339) ».",
@@ -7884,11 +7886,11 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low",
-      "nameFr": "Federally Funded R&D Declines as a Share of GDP and Total R&D (NSF 23-339)"
+      "nameFr": "Federally Funded R&D Declines as a Share of GDP and Total R&D"
     },
     {
       "id": "ncses-indicators-2025",
-      "name": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons (NSB-2025-7)",
+      "name": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons",
       "url": "https://ncses.nsf.gov/pubs/nsb20257",
       "desc": "Congressionally mandated indicators report of the National Science Board and the National Center for Science and Engineering Statistics, giving research funding and performance by sector and by character of work; primary federal statistical source.",
       "descFr": "Rapport d'indicateurs mandaté par le Congrès, du National Science Board et du National Center for Science and Engineering Statistics, donnant le financement et la performance de la recherche par secteur et par nature des travaux; source statistique fédérale primaire. Titre traduit : « Indicateurs scientifiques et d'ingénierie — Recherche et développement : tendances américaines et comparaisons internationales (NSB-2025-7) ».",
@@ -7896,7 +7898,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med",
-      "nameFr": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons (NSB-2025-7)"
+      "nameFr": "Science and Engineering Indicators — Research and Development: U.S. Trends and International Comparisons"
     },
     {
       "id": "dhs-border-releases-2026",
@@ -7975,7 +7977,7 @@ sources: |-
     },
     {
       "id": "crs-end-strength-2026",
-      "name": "FY2026 NDAA: Active Component End-Strength (IN12651)",
+      "name": "FY2026 NDAA: Active Component End-Strength",
       "url": "https://www.congress.gov/crs-product/IN12651",
       "desc": "In Focus product of the Congressional Research Service on statutory active-component end-strength authorised under 10 U.S.C. § 115 in the National Defense Authorization Act for Fiscal Year 2026 (P.L. 119-60).",
       "descFr": "Note In Focus du Congressional Research Service sur les effectifs autorisés de la composante active en vertu du 10 U.S.C. § 115 dans la loi d'autorisation de la défense nationale pour l'exercice 2026 (P.L. 119-60). Titre traduit : « NDAA de l'exercice 2026 : effectifs autorisés de la composante active (IN12651) ».",
@@ -7984,7 +7986,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med",
-      "nameFr": "FY2026 NDAA: Active Component End-Strength (IN12651)"
+      "nameFr": "FY2026 NDAA: Active Component End-Strength"
     },
     {
       "id": "budget-appendix-fy2027-personnel",
@@ -8014,7 +8016,7 @@ sources: |-
     },
     {
       "id": "crs-if12470-fmic",
-      "name": "The Foreign Malign Influence Center (IF12470)",
+      "name": "The Intelligence Community's Foreign Malign Influence Center",
       "url": "https://www.congress.gov/crs-product/IF12470",
       "desc": "In Focus product of the Congressional Research Service on the statutory establishment, mandate and structure of the Foreign Malign Influence Center under 50 U.S.C. § 3059.",
       "descFr": "Note In Focus du Congressional Research Service sur l'établissement statutaire, le mandat et la structure du Foreign Malign Influence Center en vertu du 50 U.S.C. § 3059. Titre traduit : « Le Foreign Malign Influence Center (IF12470) ».",
@@ -8022,7 +8024,8 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med",
-      "nameFr": "The Foreign Malign Influence Center (IF12470)"
+      "nameFr": "The Intelligence Community's Foreign Malign Influence Center",
+      "publicationDate": "2024-11-27"
     },
     {
       "id": "himes-warner-letter-2026",
@@ -8039,7 +8042,7 @@ sources: |-
     },
     {
       "id": "crs-if12976-water-treaty",
-      "name": "1944 U.S.-Mexico Water Treaty: Issues in the 119th Congress (IF12976)",
+      "name": "1944 U.S.-Mexico Water Treaty: Issues in the 119th Congress",
       "url": "https://www.congress.gov/crs-product/IF12976",
       "desc": "In Focus product of the Congressional Research Service on delivery obligations under the 1944 Water Treaty, cycle performance recorded by the International Boundary and Water Commission, and related appropriations conditions.",
       "descFr": "Note In Focus du Congressional Research Service sur les obligations de livraison prévues par le traité de 1944 sur les eaux, la performance par cycle consignée par la Commission internationale des limites et des eaux, et les conditions d'appropriation connexes. Titre traduit : « Traité de 1944 sur les eaux entre les États-Unis et le Mexique : enjeux au 119e Congrès (IF12976) ».",
@@ -8048,7 +8051,7 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "High",
-      "nameFr": "1944 U.S.-Mexico Water Treaty: Issues in the 119th Congress (IF12976)"
+      "nameFr": "1944 U.S.-Mexico Water Treaty: Issues in the 119th Congress"
     },
     {
       "id": "cnn-iran-war-august2026",
@@ -8065,7 +8068,7 @@ sources: |-
     },
     {
       "id": "crs-r48504-paris",
-      "name": "U.S. Withdrawal from the Paris Agreement: Process and Potential Effects (R48504)",
+      "name": "U.S. Withdrawal from the Paris Agreement: Process and Potential Effects",
       "url": "https://www.congress.gov/crs-product/R48504",
       "desc": "Report of the Congressional Research Service on the legal process and effective date of withdrawal from the Paris Agreement under Executive Order 14162 and Article 28 of the agreement.",
       "descFr": "Rapport du Congressional Research Service sur le processus juridique et la date d'effet du retrait de l'Accord de Paris en vertu du décret 14162 et de l'article 28 de l'accord. Titre traduit : « Retrait des États-Unis de l'Accord de Paris : processus et effets potentiels (R48504) ».",
@@ -8073,7 +8076,8 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low",
-      "nameFr": "U.S. Withdrawal from the Paris Agreement: Process and Potential Effects (R48504)"
+      "nameFr": "U.S. Withdrawal from the Paris Agreement: Process and Potential Effects",
+      "publicationDate": "2025-04-14"
     },
     {
       "id": "potus-memo-withdrawals-2026",
@@ -8103,7 +8107,7 @@ sources: |-
     },
     {
       "id": "crs-r44137-guantanamo",
-      "name": "Naval Station Guantanamo Bay: History and Legal Issues Regarding Its Lease Agreements (R44137)",
+      "name": "Naval Station Guantanamo Bay: History and Legal Issues Regarding Its Lease Agreements",
       "url": "https://www.congress.gov/crs-product/R44137",
       "desc": "Report of the Congressional Research Service on the 1903 lease agreements, the 1934 Treaty of Relations, and the legal conditions under which the lease may be modified or terminated.",
       "descFr": "Rapport du Congressional Research Service sur les accords de bail de 1903, le traité relationnel de 1934, et les conditions juridiques dans lesquelles le bail peut être modifié ou résilié. Titre traduit : « Station navale de Guantánamo Bay : histoire et enjeux juridiques de ses accords de bail (R44137) ».",
@@ -8111,6 +8115,176 @@ sources: |-
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Low",
-      "nameFr": "Naval Station Guantanamo Bay: History and Legal Issues Regarding Its Lease Agreements (R44137)"
+      "nameFr": "Naval Station Guantanamo Bay: History and Legal Issues Regarding Its Lease Agreements",
+      "publicationDate": "2022-08-01"
+    },
+    {
+      "id": "fr-proclamation-11012-section122",
+      "name": "Proclamation 11012 of February 20, 2026 — Imposing a Temporary Import Surcharge To Address Fundamental International Payments Problems (91 FR 9339)",
+      "nameFr": "Proclamation 11012 of February 20, 2026 — Imposing a Temporary Import Surcharge To Address Fundamental International Payments Problems (91 FR 9339)",
+      "url": "https://www.federalregister.gov/documents/2026/02/25/2026-03824/imposing-a-temporary-import-surcharge-to-address-fundamental-international-payments-problems",
+      "desc": "Presidential proclamation published in the Federal Register invoking Section 122 of the Trade Act of 1974, stating the surcharge rate, effective date, statutory duration and exception list; primary legal instrument and official gazette.",
+      "descFr": "Proclamation présidentielle publiée au Federal Register invoquant la Section 122 du Trade Act of 1974 et énonçant le taux de surtaxe, la date d'entrée en vigueur, la durée légale et la liste d'exceptions; instrument juridique primaire et journal officiel. Titre traduit : « Proclamation 11012 du 20 février 2026 — Imposition d'une surtaxe temporaire à l'importation pour remédier à des problèmes fondamentaux de paiements internationaux (91 FR 9339) ».",
+      "publicationDate": "2026-02-25",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "ustr-301-forced-labor-final-action",
+      "name": "USTR Takes Action in Forced Labor Section 301 Investigations",
+      "nameFr": "USTR Takes Action in Forced Labor Section 301 Investigations",
+      "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-takes-action-forced-labor-section-301-investigations",
+      "desc": "Press release of the Office of the United States Trade Representative announcing final action in the forced-labour Section 301 investigations, giving the rate tiers, the economies covered and the effective date; the agency's own announcement.",
+      "descFr": "Communiqué de l'Office of the United States Trade Representative annonçant l'action finale dans les enquêtes de la Section 301 sur le travail forcé, avec les paliers de taux, les économies visées et la date d'entrée en vigueur; annonce propre à l'organisme. Titre traduit : « L'USTR prend des mesures dans les enquêtes de la Section 301 sur le travail forcé ».",
+      "publicationDate": "2026-07-23",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "eo-14333-dc-crime-emergency",
+      "name": "Executive Order 14333 of August 11, 2025 — Declaring a Crime Emergency in the District of Columbia (90 FR 39301)",
+      "nameFr": "Executive Order 14333 of August 11, 2025 — Declaring a Crime Emergency in the District of Columbia (90 FR 39301)",
+      "url": "https://www.federalregister.gov/documents/2025/08/14/2025-15550/declaring-a-crime-emergency-in-the-district-of-columbia",
+      "desc": "Executive order published in the Federal Register declaring an emergency in the capital and directing the police and National Guard measures taken under it; primary legal instrument and official gazette.",
+      "descFr": "Décret publié au Federal Register déclarant une urgence dans la capitale et ordonnant les mesures de police et de Garde nationale prises à ce titre; instrument juridique primaire et journal officiel. Titre traduit : « Décret 14333 du 11 août 2025 — Déclaration d'une urgence criminelle dans le district de Columbia (90 FR 39301) ».",
+      "publicationDate": "2025-08-14",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low"
+    },
+    {
+      "id": "oss-lead-ig-q3-2026",
+      "name": "Operation Southern Spear — Lead Inspector General Report to the United States Congress, April 1, 2026–June 30, 2026",
+      "nameFr": "Operation Southern Spear — Lead Inspector General Report to the United States Congress, April 1, 2026–June 30, 2026",
+      "url": "https://media.defense.gov/2026/Jul/31/2003973662/-1/-1/1/OSS_Q3_JUN2026_REV_FINAL_508.PDF",
+      "desc": "Statutory quarterly oversight report to Congress by the Lead Inspector General for the operation, covering strikes and interdictions, assets deployed, funding and ongoing oversight work; primary government oversight source, English-only.",
+      "descFr": "Rapport de surveillance trimestriel obligatoire au Congrès par le Lead Inspector General de l'opération, portant sur les frappes et interceptions, les moyens déployés, le financement et les travaux de surveillance en cours; source gouvernementale primaire de surveillance, en anglais seulement. Titre traduit : « Operation Southern Spear — Rapport du Lead Inspector General au Congrès des États-Unis, 1er avril 2026 – 30 juin 2026 ».",
+      "publicationDate": "2026-07-31",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High"
+    },
+    {
+      "id": "newstart-cd-statement-2026",
+      "name": "Statement to the Conference on Disarmament",
+      "url": "https://www.state.gov/releases/under-secretary-for-arms-control-and-international-security-affairs/2026/02/statement-to-the-conference-on-disarmament",
+      "desc": "Statement of the U.S. Under Secretary for Arms Control and International Security Affairs to the Conference on Disarmament recording the expiry of the New START treaty with no successor framework; the executive's own arms-control statement.",
+      "descFr": "Déclaration du sous-secrétaire d'État au contrôle des armements et à la sécurité internationale devant la Conférence du désarmement consignant l'expiration du traité New START sans cadre successeur; déclaration de contrôle des armements propre à l'exécutif. Titre traduit : « Déclaration à la Conférence du désarmement ».",
+      "publicationDate": "2026-02-06",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Statement to the Conference on Disarmament"
+    },
+    {
+      "id": "secure-america-act-pl119-98",
+      "name": "Secure America Act (Public Law 119-98)",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ98/html/PLAW-119publ98.htm",
+      "desc": "Enacted text of the Secure America Act, a fiscal-2026 reconciliation statute appropriating multi-year funding for Customs and Border Protection, Immigration and Customs Enforcement, and border technology outside the annual appropriations cycle; primary legal instrument.",
+      "descFr": "Texte promulgué du Secure America Act, loi de rapprochement budgétaire de l'exercice 2026 affectant des crédits pluriannuels aux douanes et à la protection des frontières, à l'application des lois sur l'immigration et à la technologie frontalière hors du cycle budgétaire annuel; instrument juridique primaire. Titre traduit : « Loi Secure America (loi publique 119-98) ».",
+      "publicationDate": "2026-06-10",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Secure America Act (Public Law 119-98)"
+    },
+    {
+      "id": "sres-526-senator-pay",
+      "name": "A resolution withholding the pay of Senators if a Government shutdown occurs",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-resolution/526",
+      "desc": "Senate resolution (S.Res. 526, 119th Congress) adopted May 2026 withholding senators’ pay during future funding lapses, effective after the November 2026 elections; an internal chamber rule.",
+      "descFr": "Résolution du Sénat (S.Res. 526, 119e Congrès) adoptée en mai 2026 suspendant la rémunération des sénateurs lors de futures interruptions de financement, applicable après les élections de novembre 2026; règle interne de la chambre. Titre traduit : « Résolution suspendant la rémunération des sénateurs en cas de fermeture de l'administration ».",
+      "publicationDate": "2026-05-14",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "A resolution withholding the pay of Senators if a Government shutdown occurs"
+    },
+    {
+      "id": "fema-dr4931-bavi",
+      "name": "Commonwealth of the Northern Mariana Islands Super Typhoon Bavi (DR-4931-MP)",
+      "url": "https://www.fema.gov/disaster/4931",
+      "desc": "Federal Emergency Management Agency major-disaster declaration (DR-4931-MP) for the Commonwealth of the Northern Mariana Islands following Super Typhoon Bavi, incident period 4-12 July 2026, declared 3 August 2026; the agency’s own disaster record.",
+      "descFr": "Déclaration de catastrophe majeure de la Federal Emergency Management Agency (DR-4931-MP) pour le Commonwealth des îles Mariannes du Nord à la suite du super typhon Bavi, période d'incident du 4 au 12 juillet 2026, déclarée le 3 août 2026; relevé de catastrophe propre à l'agence. Titre traduit : « Commonwealth des îles Mariannes du Nord — super typhon Bavi (DR-4931-MP) ».",
+      "publicationDate": "2026-08-03",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "Commonwealth of the Northern Mariana Islands Super Typhoon Bavi (DR-4931-MP)"
+    },
+    {
+      "id": "scotus-callais-2026",
+      "name": "Louisiana v. Callais, No. 24-109 (2026)",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/24-109_new_jifl.pdf",
+      "desc": "Supreme Court slip opinion in Louisiana v. Callais (No. 24-109), decided 29 April 2026, on Section 2 of the Voting Rights Act and majority-minority congressional districting; primary court ruling.",
+      "descFr": "Arrêt (slip opinion) de la Cour suprême dans Louisiana v. Callais (n° 24-109), rendu le 29 avril 2026, sur l'article 2 du Voting Rights Act et le découpage électoral à majorité-minorité; décision judiciaire primaire. Titre traduit : « Louisiana c. Callais, n° 24-109 (2026) ».",
+      "publicationDate": "2026-04-29",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Louisiana v. Callais, No. 24-109 (2026)"
+    },
+    {
+      "id": "scotus-mullin-2026",
+      "name": "Mullin v. Doe, No. 25-1083 (2026)",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/25-1083_f204.pdf",
+      "desc": "Supreme Court slip opinion in Mullin v. Doe (No. 25-1083), decided 25 June 2026, on interim relief governing terminations of Temporary Protected Status; primary court ruling.",
+      "descFr": "Arrêt (slip opinion) de la Cour suprême dans Mullin v. Doe (n° 25-1083), rendu le 25 juin 2026, sur les mesures provisoires régissant la cessation du statut de protection temporaire; décision judiciaire primaire. Titre traduit : « Mullin c. Doe, n° 25-1083 (2026) ».",
+      "publicationDate": "2026-06-25",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Mullin v. Doe, No. 25-1083 (2026)"
+    },
+    {
+      "id": "state-who-termination-2026",
+      "name": "Termination of U.S. Membership in the World Health Organization",
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/01/termination-of-u-s-membership-in-the-world-health-organization-who-joint-statement-by-secretary-of-state-rubio-and-secretary-of-health-and-human-services-kennedy",
+      "desc": "Joint statement of the Secretary of State and the Secretary of Health and Human Services announcing the completed withdrawal of the United States from the World Health Organization on 22 January 2026; the executive’s own announcement.",
+      "descFr": "Déclaration conjointe du secrétaire d'État et du secrétaire à la Santé et aux Services sociaux annonçant le retrait effectif des États-Unis de l'Organisation mondiale de la santé le 22 janvier 2026; annonce propre à l'exécutif. Titre traduit : « Fin de l'adhésion des États-Unis à l'Organisation mondiale de la santé ».",
+      "publicationDate": "2026-01-22",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Low",
+      "nameFr": "Termination of U.S. Membership in the World Health Organization"
+    },
+    {
+      "id": "crs-lsb11431-callais",
+      "name": "Congressional Redistricting: High Court Narrows Voting Rights Act in Louisiana v. Callais",
+      "url": "https://www.congress.gov/crs-product/LSB11431",
+      "desc": "Legal Sidebar of the Congressional Research Service analysing the Supreme Court’s April 2026 decision in Louisiana v. Callais narrowing Section 2 of the Voting Rights Act; nonpartisan legislative legal analysis.",
+      "descFr": "Legal Sidebar du Congressional Research Service analysant la décision d'avril 2026 de la Cour suprême dans Louisiana v. Callais restreignant l'article 2 du Voting Rights Act; analyse juridique législative non partisane. Titre traduit : « Redécoupage électoral : la Cour suprême restreint le Voting Rights Act dans Louisiana c. Callais ».",
+      "publicationDate": "2026-05-14",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "Congressional Redistricting: High Court Narrows Voting Rights Act in Louisiana v. Callais"
+    },
+    {
+      "id": "crs-lsb11446-mullin",
+      "name": "Mullin v. Doe: Supreme Court Allows Termination of Temporary Protected Status for Haiti and Syria",
+      "url": "https://www.congress.gov/crs-product/LSB11446",
+      "desc": "Legal Sidebar of the Congressional Research Service analysing the Supreme Court’s June 2026 decision in Mullin v. Doe on judicial review of Temporary Protected Status terminations for Haiti and Syria; nonpartisan legislative legal analysis.",
+      "descFr": "Legal Sidebar du Congressional Research Service analysant la décision de juin 2026 de la Cour suprême dans Mullin v. Doe sur le contrôle juridictionnel des cessations du statut de protection temporaire pour Haïti et la Syrie; analyse juridique législative non partisane. Titre traduit : « Mullin c. Doe : la Cour suprême autorise la cessation du statut de protection temporaire pour Haïti et la Syrie ».",
+      "publicationDate": "2026-07-02",
+      "accessDate": "2026-08-06",
+      "confidence": "High",
+      "citationType": "Interpretation",
+      "volatility": "Med",
+      "nameFr": "Mullin v. Doe: Supreme Court Allows Termination of Temporary Protected Status for Haiti and Syria"
     }
   ]
