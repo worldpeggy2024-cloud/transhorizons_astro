@@ -1,0 +1,578 @@
+{
+  "scorecard": {
+    "eliteCohesion": "Med",
+    "socialCohesion": "Med-Low",
+    "securityLoyalty": "Med-High",
+    "economicPressure": "Med",
+    "protestCapacity": "High",
+    "institutionalResilience": "Med-High"
+  },
+  "scorecardAnchors": {
+    "eliteCohesion": {
+      "anchors": [
+        "political.powerStructure",
+        "political.stabilityDrivers",
+        "political.shockAbsorbers",
+        "crs-r45920-discharge",
+        "crs-r48832-shutdowns",
+        "scotus-trump-v-illinois-2025"
+      ],
+      "rationale_en": "One party holds the presidency and both chambers, transitions are routine and uncontested and no faction contests the system itself, but the bloc shows real factional strain in operation — four discharge petitions crossed the 218-signature threshold in one session against two in the whole previous Congress, funding lapsed three times in eight months, and contests over the removal power and over command of federalised Guard units were settled by courts rather than inside the bloc; that is strain within a system nobody is trying to break, which resolves to Med rather than the Med-High reserved for a single contained strain.",
+      "rationale_fr": "Un seul parti détient la présidence et les deux chambres, les transitions sont ordinaires et incontestées et aucune faction ne conteste le système lui-même, mais le bloc au pouvoir montre de véritables tensions factionnelles à l'usage : quatre pétitions de décharge ont franchi le seuil des 218 signatures en une seule session, contre deux pour tout le Congrès précédent, le financement de l'État a fait défaut trois fois en huit mois, et les conflits sur le pouvoir de révocation et sur le commandement des unités de la Garde fédéralisées ont été tranchés par les tribunaux plutôt qu'au sein du bloc ; il s'agit de tensions à l'intérieur d'un système que personne ne cherche à briser, ce qui situe l'axe à Med plutôt qu'au Med-High réservé à une tension unique et circonscrite."
+    },
+    "socialCohesion": {
+      "anchors": [
+        "society.cohesion",
+        "society.composition",
+        "security.internal",
+        "pew-interpersonal-trust",
+        "marquette-trust-2026",
+        "acled-us-overview-2026"
+      ],
+      "rationale_en": "Interpersonal trust fell from 46% in 1972 to 34% by the 2020s across every political grouping and stands at 35% among those born in the 2000s against 77% among those born before 1960, trust in the federal government is near its lowest in about seventy years and sorts by party, and firearms were present at more than double the number of demonstrations — clearly on the weak side of the global range, held above Low by one real functioning element: the cleavages are cross-cutting rather than communal, and about 97% of a record volume of demonstrations passed without violence or police intervention.",
+      "rationale_fr": "La confiance interpersonnelle est passée de 46 % en 1972 à 34 % dans les années 2020 dans tous les groupes politiques et s'établit à 35 % chez les personnes nées dans les années 2000 contre 77 % chez celles nées avant 1960, la confiance envers le gouvernement fédéral avoisine son plus bas niveau en quelque soixante-dix ans et se répartit selon l'appartenance partisane, et des armes à feu étaient présentes à plus du double de manifestations — nettement du côté faible de l'échelle mondiale, maintenu au-dessus de Low par un élément réellement fonctionnel : les clivages se recoupent au lieu de se superposer et environ 97 % d'un volume record de manifestations se sont déroulées sans violence ni intervention policière."
+    },
+    "securityLoyalty": {
+      "anchors": [
+        "political.stabilityDrivers",
+        "security.internal",
+        "crs-r42659-posse-comitatus",
+        "scotus-trump-v-illinois-2025",
+        "northcom-federal-protection-mission"
+      ],
+      "rationale_en": "Civilian control is both statutory and demonstrated — no episode in the period involved forces declining lawful orders, and the executive demobilised in Portland, Los Angeles and Chicago once the courts ruled against it — with one real, named and contained strain: which civilian authority may command federalised National Guard units was genuinely unsettled, decided by the apex court over three governors' objections rather than resolved politically.",
+      "rationale_fr": "Le contrôle civil est à la fois statutaire et démontré — aucun épisode de la période n'a vu des forces refuser des ordres légaux, et l'exécutif a démobilisé à Portland, Los Angeles et Chicago dès que les tribunaux ont tranché contre lui — avec une tension réelle, nommée et circonscrite : la question de savoir quelle autorité civile peut commander les unités fédéralisées de la Garde nationale était véritablement ouverte et a été tranchée par la cour suprême malgré l'opposition de trois gouverneurs, non réglée politiquement."
+    },
+    "economicPressure": {
+      "anchors": [
+        "economy.realEconomy",
+        "economy.publicFinances",
+        "economy.externalVulnerability",
+        "situation",
+        "cbo-budget-outlook-2026",
+        "bls-cpi-june2026",
+        "mts-june-2026"
+      ],
+      "rationale_en": "Real strain — consumer prices up 3.5% over the year with energy up 15.7%, the policy rate held with inflation above target, a deficit at 5.8% of gross domestic product with net interest the fastest-growing outlay, neither ratings agency still at the top tier, and a tariff base struck down and rebuilt twice with about $100 billion refunded — landing on a state that grew 2.1% in 2025 at 4.2% unemployment, exports record net energy and borrows in the currency it issues.",
+      "rationale_fr": "Une tension réelle — prix à la consommation en hausse de 3,5 % sur un an, dont 15,7 % pour l'énergie, taux directeur maintenu alors que l'inflation dépasse la cible, déficit de 5,8 % du produit intérieur brut avec des intérêts nets comme poste à la croissance la plus rapide, aucune des deux agences de notation ne maintenant la note maximale, et une base tarifaire invalidée puis reconstruite deux fois avec environ 100 milliards de dollars remboursés — qui s'exerce sur un État dont l'économie a crû de 2,1 % en 2025 avec un chômage à 4,2 %, qui exporte un solde énergétique net record et qui emprunte dans la monnaie qu'il émet."
+    },
+    "protestCapacity": {
+      "anchors": [
+        "security.internal",
+        "acled-us-overview-2026"
+      ],
+      "rationale_en": "Demonstrations rose about 77% in 2025 over the previous year to the highest count since 2020, driven principally by opposition to the administration and its migration policy, with over two-thirds explicitly about the President — a demonstrated record of large-scale mobilisation, rated descriptively and not as a judgement about the country.",
+      "rationale_fr": "Les manifestations ont augmenté d'environ 77 % en 2025 par rapport à l'année précédente, atteignant le plus grand nombre depuis 2020, portées principalement par l'opposition à l'administration et à sa politique migratoire, plus des deux tiers visant explicitement le président — un bilan démontré de mobilisation à grande échelle, mesuré de façon descriptive et non comme un jugement sur le pays."
+    },
+    "institutionalResilience": {
+      "anchors": [
+        "political.shockAbsorbers",
+        "political.rightsAndChecks",
+        "political.constitutionalSubstrate",
+        "capacity.steering",
+        "crs-rs22331-foreign-holdings",
+        "eia-energy-trade-2025",
+        "crs-lsb11449-cook"
+      ],
+      "rationale_en": "Shocks were absorbed on the record through largely automatic buffers and settled doctrine — reserve-currency borrowing at scale, record net energy exports, and an apex court that ruled against the executive on emergency-powers tariffs, on federalising a state's Guard, on birthright citizenship and on removal of a central-bank governor, each outcome complied with — carrying one real strain: the state failed to fund itself on schedule three times in eight months while fiscal room narrowed and the monetary buffer sat on hold with inflation above target.",
+      "rationale_fr": "Les chocs ont été absorbés dans les faits par des amortisseurs largement automatiques et une doctrine établie — emprunt à grande échelle dans la monnaie de réserve, exportations énergétiques nettes record et une cour suprême qui a tranché contre l'exécutif sur les tarifs fondés sur les pouvoirs d'urgence, sur la fédéralisation de la Garde d'un État, sur la citoyenneté par le droit du sol et sur la révocation d'un gouverneur de la banque centrale, chaque décision ayant été respectée — avec une tension réelle : l'État n'a pas réussi à se financer dans les délais trois fois en huit mois, alors que la marge budgétaire se resserrait et que l'amortisseur monétaire restait immobile, l'inflation dépassant la cible."
+    }
+  },
+  "baseline": {
+    "en": "The United States is a continental federation of fifty states, a federal district and five inhabited Pacific and Caribbean territories whose residents send no voting member to the Congress that legislates for them. It is a settler-and-immigrant society of about 342 million, ageing and growing slowly as migration falls, held together by a near-universal English lingua franca and divided along a cleavage that is partisan rather than ethnic, linguistic or religious. The economy is diversified and services-dominated — consumption, finance, technology and health care — exports more energy than it imports, depends wholly on imports for critical minerals concentrated in one supplier, and borrows on terms no other borrower obtains because it issues the principal reserve currency, alongside public debt at about the size of gross domestic product. Its institutions are old and separated: courts, not security forces, settle contests over power, and the state diagnoses its delivery failures far better than it closes them. Health outcomes are poor for the country's wealth and social trust thins with each cohort. It is the pre-eminent military power, permanently based across dozens of countries, and currently at war with Iran.",
+    "fr": "Les États-Unis forment une fédération continentale de cinquante États, d'un district fédéral et de cinq territoires habités du Pacifique et des Caraïbes dont les résidents n'envoient aucun élu votant au Congrès qui légifère pour eux. C'est une société de peuplement et d'immigration d'environ 342 millions d'habitants, vieillissante et à croissance lente à mesure que la migration recule, tenue ensemble par une langue véhiculaire anglaise quasi universelle et traversée par un clivage partisan plutôt qu'ethnique, linguistique ou religieux. L'économie est diversifiée et dominée par les services — consommation, finance, technologie et santé — exporte plus d'énergie qu'elle n'en importe, dépend entièrement des importations pour des minéraux critiques concentrés chez un seul fournisseur, et emprunte à des conditions qu'aucun autre emprunteur n'obtient parce qu'elle émet la principale monnaie de réserve, avec une dette publique de l'ordre du produit intérieur brut. Ses institutions sont anciennes et séparées : ce sont les tribunaux, et non les forces de sécurité, qui tranchent les conflits de pouvoir, et l'État diagnostique ses défaillances de mise en œuvre bien mieux qu'il ne les corrige. Les résultats de santé sont médiocres au regard de la richesse du pays et la confiance sociale s'amincit à chaque cohorte. C'est la première puissance militaire mondiale, implantée en permanence dans des dizaines de pays, et elle est actuellement en guerre contre l'Iran."
+  },
+  "knownAndUnbuilt": {
+    "en": {
+      "opener": "The United States documents its own shortfalls more thoroughly than most states can: a national audit office rating thirty-eight high-risk areas every two years against five criteria, a legislative budget office, statutory needs assessments, departmental evaluation units and congressional oversight staff — so this register is long because the country publishes, not because it performs worse than states whose registers are short. What it records is a state rarely ignorant of its failures and often unable to convert diagnosis into sustained action: the audit body's own count has ten high-risk areas improving since 2023 and three regressing, and the three that regressed are among the delivery domains this report documents as failing. Depth is greatest on delivery, public services and the state's own operations, and thinnest on the renewable and mineral base, where the absence of measurement is itself the recorded shortfall.",
+      "items": [
+        {
+          "gap": "The drinking-water system faces a $625 billion twenty-year investment need, two-thirds of it for ageing transmission and distribution pipes, with 9.2 million lead service lines still to replace [epa-dwinsa-2023].",
+          "anchor": [
+            "territory.metabolism",
+            "epa-dwinsa-2023"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "About 95% of homes and small businesses had access to fixed 100/20 megabit-per-second broadband by December 2024, but rural access lagged at 72% and more than 23% of people on Tribal lands lacked it [fcc-broadband-map-2024].",
+          "anchor": [
+            "territory.metabolism",
+            "fcc-broadband-map-2024"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Of the 506 federally managed fish stocks in the 2023 report to Congress, only 364 had a known overfishing status and only 263 a known overfished status, so what is unmeasured is larger than what is depleted [noaa-status-of-stocks].",
+          "anchor": [
+            "territory.biosphere",
+            "noaa-status-of-stocks"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "On a critical-minerals list the country widened from 50 commodities in 2022 to 60 in 2025, it was 100% net import reliant on 16 nonfuel mineral commodities, and the binding shortfall is between extraction and processing: nonfuel mineral production was valued at $112 billion, yet domestic processing capacity is not measured separately, so the share of domestically mined material processed at home cannot be stated [usgs-mcs-2026].",
+          "anchor": [
+            "capacity.productivity",
+            "territory.minerals",
+            "economy.politicalEconomy",
+            "usgs-mcs-2026",
+            "mp-materials-dod-2025"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "The Government Accountability Office found that data on the number and type of most environmental reviews were not readily available and that agencies did not routinely track environmental assessments or categorical exclusions; with about 95% of reviews categorical exclusions and under 1% environmental impact statements, the 99% below the statement threshold remain unmeasured government-wide [gao-nepa-review-2014].",
+          "anchor": [
+            "capacity.approvals",
+            "gao-nepa-review-2014"
+          ],
+          "since": "First officially identified in an April 2014 finding of the Government Accountability Office [gao-nepa-review-2014].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Of the $711.8 billion the Infrastructure Investment and Jobs Act made available in grants to tribes, states, localities and territories, agencies had obligated 39% and outlayed 17% as of 31 December 2024, and about 23% of surveyed awardees of fiscal 2022 discretionary grants still had no signed grant agreement when they responded between December 2024 and March 2025 [gao-iija-grants-status-2025][gao-iija-dot-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-iija-grants-status-2025",
+            "gao-iija-dot-2025"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "The Government Accountability Office reports great difficulty controlling costs across a procurement portfolio of more than $750 billion, with major acquisitions at the Departments of Defense, Energy and Veterans Affairs and at the National Aeronautics and Space Administration experiencing cost growth, schedule delays or both, and two acquisition areas — Department of Defense weapon systems, and information-technology acquisition and management — regressed between the 2023 and 2025 high-risk assessments [gao-high-risk-cost-schedule-2025][gao-high-risk-list].",
+          "anchor": [
+            "capacity.delivery",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025",
+            "gao-high-risk-list"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "A 2023 assessment found 51 of the Federal Aviation Administration's 138 air traffic control systems unsustainable and a further 54 potentially so [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "Identified in a 2023 assessment [gao-high-risk-cost-schedule-2025].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The Department of Veterans Affairs electronic health record modernisation, costed in 2022 at $49.8 billion over its life cycle, had reached six locations as of December 2024 with more than 160 remaining [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Across a federal real-property estate of 277,000 buildings costing more than $10.3 billion a year to maintain and operate, reported deferred maintenance and repairs rose from $170 billion in 2017 to $370 billion in 2024, and management of federal real property regressed between the 2023 and 2025 high-risk assessments [gao-high-risk-cost-schedule-2025][gao-high-risk-list].",
+          "anchor": [
+            "capacity.delivery",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025",
+            "gao-high-risk-list"
+          ],
+          "since": "Documented open since at least 2017, when the reported backlog stood at $170 billion [gao-high-risk-cost-schedule-2025].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Delivery of federal disaster assistance is fragmented across more than 30 entities, against appropriations of at least $448 billion over fiscal years 2015 to 2024 plus $110 billion supplemental in December 2024 [gao-high-risk-list][gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-high-risk-list",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "Added to the high-risk list as a new area in 2025 [gao-high-risk-list].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Federal agencies have reported about $2.8 trillion in estimated improper payments, including more than $150 billion government-wide in each of the last seven years, with high-risk-list programmes accounting for about 80% of the government-wide estimate for fiscal 2023 [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.publicServices",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "Reported by federal agencies since 2003 [gao-high-risk-cost-schedule-2025].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The Food and Drug Administration conducted an average of 917 foreign food safety inspections a year over fiscal years 2018 to 2023, about 5% of its 19,200 annual target, and the approved sources record no response to it [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.publicServices",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Fifty-three per cent of public schools reported being understaffed entering the 2022–23 school year and 44% reported at least one vacant teaching position after it had started, while completions of teacher preparation programmes fell 20%, from 189,200 in 2012–13 to 151,100 in 2019–20 [nces-condition-of-education].",
+          "anchor": [
+            "capacity.publicServices",
+            "capacity.steering",
+            "nces-condition-of-education"
+          ],
+          "since": "The report records schools hiring for at least one open teaching position rising from 66% in 2011–12 to 80% in 2020–21, with preparation completions down a fifth over the seven years to 2019–20 [nces-condition-of-education].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Twenty of the thirty-eight areas on the state's own high-risk list are listed in part because of skills gaps or inadequate staffing [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.publicServices",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "The Inter-American Commission on Human Rights concluded that federal and state rules condition the use of force, including lethal force, on an officer's reasonable belief, require no assessment of proportionality and do not clearly distinguish general from lethal force — one state expressly invokes proportionality, three urge officers to seek alternatives before deploying force, and three generally require a warning before deadly force [iachr-merits-60-25].",
+          "anchor": [
+            "political.rightsAndChecks",
+            "security.internal",
+            "iachr-merits-60-25",
+            "iachr-pr-85-25"
+          ],
+          "since": "Transmitted to the state in December 2024 with a two-month deadline to respond, transmitted again in March 2025, and published as Merits Report No. 60/25 on 28 April 2025 [iachr-merits-60-25][iachr-pr-85-25].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Funding lapsed three times in eight months — 43 days from 1 October to 12 November 2025, a second lapse from 31 January to 3 February 2026, and a 76-day Homeland Security lapse from 14 February to 30 April 2026, the longest shutdown of a single federal department on record — so what recurs is a demonstrated inability to fund the state on schedule, against which the Senate's own standing rule withholding senators' pay during funding lapses takes effect only after the November 2026 elections [crs-r48832-shutdowns][house-approps-dhs-76day][sres-526-senator-pay].",
+          "anchor": [
+            "capacity.steering",
+            "political.shockAbsorbers",
+            "political.powerStructure",
+            "crs-r48832-shutdowns",
+            "house-approps-dhs-76day",
+            "sres-526-senator-pay"
+          ],
+          "since": "Documented across three lapses beginning 1 October 2025 [crs-r48832-shutdowns].",
+          "class": "announced-not-implemented"
+        }
+      ],
+      "denominator": "The capacity to close these gaps sits where it does because of what the country was handed rather than what it earned: continental scale and a settled interior, an energy and land endowment it did not create, issuance of the principal reserve currency, and attainment and mortality gradients laid down over generations by dispossession, enslavement and immigration — a state that has fought no war on its continental territory since 1865 and carries no reconstruction burden begins every one of these problems from a position most states never reach. The length of this register measures what the country publishes about itself, never what it deserves."
+    },
+    "fr": {
+      "opener": "Les États-Unis documentent leurs propres manquements plus complètement que la plupart des États : un bureau national de vérification qui évalue trente-huit domaines à haut risque tous les deux ans selon cinq critères, un bureau budgétaire législatif, des évaluations de besoins prévues par la loi, des unités ministérielles d'évaluation et le personnel de surveillance du Congrès — ce registre est donc long parce que le pays publie, et non parce qu'il ferait moins bien que des États au registre court. Ce qu'il consigne, c'est un État rarement ignorant de ses échecs et souvent incapable de convertir le diagnostic en action soutenue : le décompte de l'organe de vérification lui-même recense dix domaines à haut risque en amélioration depuis 2023 et trois en recul, et ces trois-là comptent parmi les domaines de mise en œuvre que ce rapport documente comme défaillants. La profondeur est maximale sur la mise en œuvre, les services publics et les opérations propres de l'État, et minimale sur la base renouvelable et minérale, où l'absence de mesure constitue elle-même le manquement consigné.",
+      "items": [
+        {
+          "gap": "Le réseau d'eau potable présente un besoin d'investissement de 625 milliards de dollars sur vingt ans, aux deux tiers destiné au vieillissement des conduites de transport et de distribution, et 9,2 millions de branchements en plomb restent à remplacer [epa-dwinsa-2023].",
+          "anchor": [
+            "territory.metabolism",
+            "epa-dwinsa-2023"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Environ 95 % des ménages et des petites entreprises avaient accès à la large bande fixe de 100/20 mégabits par seconde en décembre 2024, mais l'accès en milieu rural n'atteignait que 72 % et plus de 23 % des personnes vivant sur des terres tribales en étaient privées [fcc-broadband-map-2024].",
+          "anchor": [
+            "territory.metabolism",
+            "fcc-broadband-map-2024"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Sur les 506 stocks halieutiques gérés par le fédéral dans le rapport de 2023 au Congrès, seuls 364 avaient un état de surpêche connu et seuls 263 un état d'épuisement connu : ce qui n'est pas mesuré dépasse ce qui est épuisé [noaa-status-of-stocks].",
+          "anchor": [
+            "territory.biosphere",
+            "noaa-status-of-stocks"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Sur une liste de minéraux critiques que le pays a élargie de 50 produits en 2022 à 60 en 2025, il dépendait à 100 % des importations nettes pour 16 produits minéraux non énergétiques, et l'écart contraignant se situe entre l'extraction et la transformation : la production minérale non énergétique était évaluée à 112 milliards de dollars, mais la capacité nationale de transformation n'est pas mesurée séparément, de sorte que la part des matériaux extraits au pays qui y sont transformés ne peut être énoncée [usgs-mcs-2026].",
+          "anchor": [
+            "capacity.productivity",
+            "territory.minerals",
+            "economy.politicalEconomy",
+            "usgs-mcs-2026",
+            "mp-materials-dod-2025"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Le Government Accountability Office a constaté que les données sur le nombre et le type de la plupart des examens environnementaux n'étaient pas facilement disponibles et que les organismes ne suivaient pas systématiquement les évaluations environnementales ni les exclusions catégorielles ; environ 95 % des examens étant des exclusions catégorielles et moins de 1 % des énoncés d'incidence environnementale, les 99 % situés sous ce seuil demeurent non mesurés à l'échelle du gouvernement [gao-nepa-review-2014].",
+          "anchor": [
+            "capacity.approvals",
+            "gao-nepa-review-2014"
+          ],
+          "since": "Relevé officiellement pour la première fois dans une constatation d'avril 2014 du Government Accountability Office [gao-nepa-review-2014].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Sur les 711,8 milliards de dollars rendus disponibles en subventions aux tribus, aux États, aux administrations locales et aux territoires par l'Infrastructure Investment and Jobs Act, les organismes en avaient engagé 39 % et déboursé 17 % au 31 décembre 2024, et environ 23 % des bénéficiaires sondés de subventions discrétionnaires de l'exercice 2022 n'avaient toujours aucune entente de subvention signée au moment de répondre, entre décembre 2024 et mars 2025 [gao-iija-grants-status-2025][gao-iija-dot-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-iija-grants-status-2025",
+            "gao-iija-dot-2025"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Le Government Accountability Office fait état de très grandes difficultés à maîtriser les coûts sur un portefeuille d'approvisionnement de plus de 750 milliards de dollars, les grandes acquisitions des ministères de la Défense, de l'Énergie et des Anciens Combattants ainsi que de la National Aeronautics and Space Administration connaissant des dépassements de coûts, des retards d'échéancier ou les deux, et deux domaines d'acquisition — les systèmes d'armes du ministère de la Défense ainsi que l'acquisition et la gestion des technologies de l'information — ont reculé entre les évaluations à haut risque de 2023 et de 2025 [gao-high-risk-cost-schedule-2025][gao-high-risk-list].",
+          "anchor": [
+            "capacity.delivery",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025",
+            "gao-high-risk-list"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Une évaluation de 2023 a conclu que 51 des 138 systèmes de contrôle de la circulation aérienne de la Federal Aviation Administration n'étaient pas viables à terme, et 54 autres potentiellement pas [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "Relevé dans une évaluation de 2023 [gao-high-risk-cost-schedule-2025].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La modernisation du dossier de santé électronique du ministère des Anciens Combattants, chiffrée en 2022 à 49,8 milliards de dollars sur son cycle de vie, avait atteint six sites en décembre 2024, plus de 160 restant à desservir [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "report-silent",
+          "class": "in-progress-unclosed"
+        },
+        {
+          "gap": "Sur un parc immobilier fédéral de 277 000 bâtiments dont l'entretien et l'exploitation coûtent plus de 10,3 milliards de dollars par an, l'entretien et les réparations reportés déclarés sont passés de 170 milliards de dollars en 2017 à 370 milliards en 2024, et la gestion des biens immobiliers fédéraux a reculé entre les évaluations à haut risque de 2023 et de 2025 [gao-high-risk-cost-schedule-2025][gao-high-risk-list].",
+          "anchor": [
+            "capacity.delivery",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025",
+            "gao-high-risk-list"
+          ],
+          "since": "Documenté comme ouvert depuis 2017 au moins, année où l'arriéré déclaré s'établissait à 170 milliards de dollars [gao-high-risk-cost-schedule-2025].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La prestation de l'aide fédérale en cas de catastrophe est fragmentée entre plus de 30 entités, pour des crédits d'au moins 448 milliards de dollars sur les exercices 2015 à 2024, auxquels s'ajoutent 110 milliards de dollars supplémentaires en décembre 2024 [gao-high-risk-list][gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.delivery",
+            "gao-high-risk-list",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "Ajouté à la liste des domaines à haut risque comme nouveau domaine en 2025 [gao-high-risk-list].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Les organismes fédéraux ont déclaré environ 2 800 milliards de dollars de paiements irréguliers estimés, dont plus de 150 milliards à l'échelle du gouvernement au cours de chacune des sept dernières années, les programmes inscrits à la liste des domaines à haut risque représentant environ 80 % de l'estimation gouvernementale pour l'exercice 2023 [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.publicServices",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "Déclaré par les organismes fédéraux depuis 2003 [gao-high-risk-cost-schedule-2025].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La Food and Drug Administration a mené en moyenne 917 inspections étrangères de salubrité des aliments par an au cours des exercices 2018 à 2023, soit environ 5 % de sa cible annuelle de 19 200, et les sources approuvées ne consignent aucune réponse à cet écart [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.publicServices",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Cinquante-trois pour cent des écoles publiques déclaraient manquer de personnel à l'entrée de l'année scolaire 2022-2023 et 44 % signalaient au moins un poste d'enseignant vacant après la rentrée, tandis que les diplômés des programmes de formation à l'enseignement chutaient de 20 %, de 189 200 en 2012-2013 à 151 100 en 2019-2020 [nces-condition-of-education].",
+          "anchor": [
+            "capacity.publicServices",
+            "capacity.steering",
+            "nces-condition-of-education"
+          ],
+          "since": "Le rapport consigne une hausse de la proportion d'écoles recrutant pour au moins un poste d'enseignant vacant, de 66 % en 2011-2012 à 80 % en 2020-2021, et une baisse d'un cinquième des diplômés des programmes de formation sur les sept années jusqu'en 2019-2020 [nces-condition-of-education].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Vingt des trente-huit domaines de la propre liste à haut risque de l'État y figurent en partie en raison de lacunes de compétences ou d'effectifs insuffisants [gao-high-risk-cost-schedule-2025].",
+          "anchor": [
+            "capacity.publicServices",
+            "capacity.steering",
+            "gao-high-risk-cost-schedule-2025"
+          ],
+          "since": "report-silent",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "La Commission interaméricaine des droits de l'homme a conclu que les règles fédérales et étatiques subordonnent le recours à la force, y compris la force létale, à la croyance raisonnable de l'agent, n'exigent aucune appréciation de la proportionnalité et ne distinguent pas clairement la force générale de la force létale — un État invoque expressément la proportionnalité, trois incitent les agents à chercher des solutions de rechange avant d'employer la force et trois exigent généralement un avertissement avant l'emploi de la force meurtrière [iachr-merits-60-25].",
+          "anchor": [
+            "political.rightsAndChecks",
+            "security.internal",
+            "iachr-merits-60-25",
+            "iachr-pr-85-25"
+          ],
+          "since": "Transmis à l'État en décembre 2024 avec un délai de réponse de deux mois, transmis de nouveau en mars 2025, puis publié sous le numéro 60/25 (rapport sur le fond) le 28 avril 2025 [iachr-merits-60-25][iachr-pr-85-25].",
+          "class": "no-attempt-documented"
+        },
+        {
+          "gap": "Le financement a fait défaut trois fois en huit mois — 43 jours du 1er octobre au 12 novembre 2025, une deuxième interruption du 31 janvier au 3 février 2026, et une interruption de 76 jours à la Sécurité intérieure du 14 février au 30 avril 2026, la plus longue jamais enregistrée pour un seul ministère fédéral — ce qui se répète est donc une incapacité démontrée à financer l'État dans les délais, face à laquelle la règle permanente adoptée par le Sénat lui-même, retenant la rémunération des sénateurs pendant les interruptions de financement, ne prend effet qu'après les élections de novembre 2026 [crs-r48832-shutdowns][house-approps-dhs-76day][sres-526-senator-pay].",
+          "anchor": [
+            "capacity.steering",
+            "political.shockAbsorbers",
+            "political.powerStructure",
+            "crs-r48832-shutdowns",
+            "house-approps-dhs-76day",
+            "sres-526-senator-pay"
+          ],
+          "since": "Documenté à travers trois interruptions de financement à compter du 1er octobre 2025 [crs-r48832-shutdowns].",
+          "class": "announced-not-implemented"
+        }
+      ],
+      "denominator": "La capacité de combler ces écarts se trouve où elle est en raison de ce que le pays a reçu plutôt que de ce qu'il a mérité : une échelle continentale et un intérieur pacifié, une dotation énergétique et foncière qu'il n'a pas créée, l'émission de la principale monnaie de réserve, et des gradients de scolarisation et de mortalité installés sur des générations par la dépossession, l'esclavage et l'immigration — un État qui n'a livré aucune guerre sur son territoire continental depuis 1865 et ne porte aucun fardeau de reconstruction aborde chacun de ces problèmes depuis une position que la plupart des États n'atteignent jamais. La longueur de ce registre mesure ce que le pays publie sur lui-même, jamais ce qu'il mérite."
+    }
+  },
+  "notCarried": [
+    {
+      "candidate": "The $3.7 trillion shortfall between the $9.1 trillion the American Society of Civil Engineers judges necessary to reach a state of good repair and the $5.4 trillion of investment projected for 2024–2033 [capacity.delivery][asce-infrastructure-report-card-2025].",
+      "test": "Test 6 — against a self-set standard: the 'state of good repair' benchmark is set by a professional engineering body the report identifies as advocacy-oriented, not by a domestic law, target, strategy, audit finding or adopted commitment."
+    },
+    {
+      "candidate": "The absence of any uniform federal framework governing environmental review, after the Council on Environmental Quality rescinded all government-wide implementing regulations effective April 2025 [capacity.approvals][crs-lsb11333-seven-county].",
+      "test": "Test 5 — missing, not undone: a framework that existed and was withdrawn by decision."
+    },
+    {
+      "candidate": "The voided 2030 and 2035 Nationally Determined Contribution targets and the absence of a net-zero target, with policies rated Highly Insufficient and emissions rising 2% in 2025 [territory.transition][climateactiontracker-usa][eia-co2-emissions-2025].",
+      "test": "Test 5 — missing, not undone: the self-set targets were withdrawn by decision; the residual 'Critically Insufficient' rating is an external assessor's standard, which would also fail Test 6."
+    },
+    {
+      "candidate": "The 28.0 million people without health insurance, and the near-doubled uninsured rate for working-age adults in states that did not expand Medicaid (18.1% against 9.0%) [capacity.publicServices][nchs-insurance-2025].",
+      "test": "Test 6 — against a self-set standard: the report states no domestic universal-coverage guarantee or target the shortfall falls short of, and expansion is a state option rather than an unmet commitment."
+    },
+    {
+      "candidate": "Medicaid and Children's Health Insurance Program enrolment down 5 million over the year, with work requirements and immigrant eligibility restrictions taking effect in 2026–27 [capacity.publicServices][kff-medicaid-enrollment-tracker].",
+      "test": "Test 5 — missing, not undone: an enacted policy change, carried by the fields describing policy."
+    },
+    {
+      "candidate": "The dissolution of the Foreign Malign Influence Center and the Federal Bureau of Investigation's Foreign Influence Task Force, and unanswered requests for legally required briefings on threats to the 2026 midterms [security.transnationalExposure][crs-if12470-fmic][himes-warner-letter-2026].",
+      "test": "Test 5 — missing, not undone: a statutory body that existed and was dissolved by decision."
+    },
+    {
+      "candidate": "Declines across composite scorers — Freedom House 81 of 100, the Varieties of Democracy reclassification from liberal to electoral democracy, 64th of 180 on press freedom, 27th of 143 on rule of law and 112th of 143 on access to civil justice, and the lowest corruption-perception score since that index began [political.rightsAndChecks].",
+      "test": "Test 6 — against a self-set standard: external comparative instruments the country did not adopt as its own requirement."
+    },
+    {
+      "candidate": "The absence of any accredited national human-rights institution, the country appearing nowhere on the accreditation chart that lists 118 institutions including Canada's and Mexico's [political.rightsAndChecks][ganhri-accreditation-chart].",
+      "test": "Test 6 — against a self-set standard: the report records no commitment by the country to establish one, so the shortfall stands only against a peer comparison."
+    },
+    {
+      "candidate": "Occupational licensing as the largest measurable internal barrier to movement between the states, covering 21.6% of employed persons and generally requiring re-licensing on a move [capacity.productivity][bls-cps-licensing-2024].",
+      "test": "Test 6 — against a self-set standard: the report states no domestic mobility requirement the barrier falls short of, and does not measure how much movement it forecloses."
+    },
+    {
+      "candidate": "Fresh groundwater withdrawals rising about 8% to 82.3 billion gallons per day while surface-water withdrawals fell 14%, shifting extraction to aquifers that take decades to recharge [territory.biosphere][usgs-water-use-united-states].",
+      "test": "Test 2 — a gap, not a condition: a resource trend, not a shortfall between capability and requirement."
+    },
+    {
+      "candidate": "Agricultural land down to 52.5% of the land base with cropland down 15% since 1959, and the reversal of a sixty-year agricultural trade surplus into a $41 billion deficit [territory.biosphere][territory.metabolism][usda-ers-major-land-uses][usda-ers-ag-trade-2026].",
+      "test": "Test 2 — a gap, not a condition: a structural trend and a trade position, neither a shortfall against a requirement."
+    },
+    {
+      "candidate": "100% net import reliance on 16 nonfuel mineral commodities with China the primary source for 14 of the most import-dependent critical minerals [territory.minerals][economy.externalVulnerability][usgs-mcs-2026].",
+      "test": "Test 3 — internal: an external dependency; the register carries the unbuilt domestic response (processing capacity) instead."
+    },
+    {
+      "candidate": "Mexico's delivery of 0.88 million acre-feet against the 1.75 million owed at the close of the 1944 Water Treaty cycle in late October 2025 [security.transnationalExposure][crs-if12976-water-treaty].",
+      "test": "Test 3 — internal: a counterparty's shortfall, and the report records a domestic response rather than an unbuilt one."
+    },
+    {
+      "candidate": "The expiry of New START on 5 February 2026 with no successor instrument, leaving deployed strategic forces under no legally binding numerical limit [security.military][newstart-cd-statement-2026].",
+      "test": "Test 3 — internal: closing it requires a counterparty, so it is not within the country's own authority."
+    },
+    {
+      "candidate": "The uneven distribution of adaptive capacity, with low-income and historically redlined neighbourhoods up to 12°F hotter in heatwaves and older people several times more likely to die of heat-related cardiovascular disease [territory.climate][nca5-fifth-national-climate-assessment].",
+      "test": "Test 6 — against a self-set standard: the report states an exposure and its distribution, but no domestic standard of protection the shortfall falls short of."
+    },
+    {
+      "candidate": "Veterans Affairs new-patient mental health waits above 100 days in most weeks at Connecticut clinics against an agencywide average of about fifteen days, and the publication of waiting times facility by facility rather than as a national series [capacity.publicServices][senate-vac-wait-times-2025][va-access-to-care].",
+      "test": "Test 2 — a gap, not a condition: the report expressly limits the finding to a divergence between published data and summary figures at a non-representative set of facilities, not a stated national capability shortfall."
+    },
+    {
+      "candidate": "The Permitting Dashboard publishing no status breakdown for the full set of covered projects [capacity.approvals][permits-performance-gov-dashboard].",
+      "test": "Test 2 — a gap, not a condition: the statutory requirement is to post target completion dates, which the dashboard does; no requirement is stated as unmet."
+    },
+    {
+      "candidate": "Federal employment excluding the postal service cut by around 13%, to levels last seen in 2009, while twenty of thirty-eight high-risk areas are listed partly for skills gaps [capacity.steering][imf-art-iv-usa-2026].",
+      "test": "Test 5 — missing, not undone: the reduction is a decision; the underlying skills and staffing shortfall is carried in the register on its own terms."
+    },
+    {
+      "candidate": "The absence of voting congressional representation for the five inhabited territories and the District of Columbia, and the status of persons born in American Samoa as nationals but not citizens [political.constitutionalSubstrate][political.stateStructure][insular-cases-1901][uscode-8-1408].",
+      "test": "Test 2 — a gap, not a condition: a constitutional and statutory allocation of membership, not a shortfall between a capability and a requirement the country set."
+    },
+    {
+      "candidate": "Population ageing to a record median age of 39.1 and the fall in net international migration from 2.7 million to about 321,000 [society.demographics][census-poprelease-2026][census-median-age-2025].",
+      "test": "Test 2 — a gap, not a condition: a demographic trend, the prompt's own example of what the register excludes."
+    },
+    {
+      "candidate": "Interpersonal trust down to 34% and federal-government trust at 17%, near its lowest in about seventy years [society.cohesion][pew-interpersonal-trust][pew-trust-in-government].",
+      "test": "Test 2 — a gap, not a condition: a social condition measured over time, not a shortfall against a requirement."
+    },
+    {
+      "candidate": "The shift in the non-resident investor base from official-sector holders toward price- and risk-sensitive non-bank financial institutions, named as the principal external vulnerability [economy.externalVulnerability][political.shockAbsorbers][imf-art-iv-usa-2026].",
+      "test": "Test 2 — a gap, not a condition: a structural exposure in the financing base, not a shortfall between capability and requirement."
+    }
+  ],
+  "undatedGaps": [
+    {
+      "field": "territory.metabolism",
+      "gap": "The $625 billion twenty-year drinking-water investment need and the 9.2 million lead service lines still to replace.",
+      "note": "no duration in the approved sources — Pass A extension needed"
+    },
+    {
+      "field": "territory.metabolism",
+      "gap": "Fixed 100/20 megabit-per-second broadband reaching 72% of rural homes and small businesses, with more than 23% of people on Tribal lands without it.",
+      "note": "no duration in the approved sources; December 2024 is a measurement date — Pass A extension needed"
+    },
+    {
+      "field": "territory.biosphere",
+      "gap": "142 of 506 federally managed fish stocks without a known overfishing status and 243 without a known overfished status.",
+      "note": "no duration in the approved sources; the 2023 report to Congress is an edition date — Pass A extension needed"
+    },
+    {
+      "field": "capacity.productivity",
+      "gap": "The extraction-versus-processing shortfall in critical minerals, with domestic processing capacity not measured separately.",
+      "note": "no duration in the approved sources — Pass A extension needed"
+    },
+    {
+      "field": "capacity.delivery",
+      "gap": "Infrastructure Investment and Jobs Act grant money obligated at 39% and outlayed at 17%, with about 23% of surveyed fiscal 2022 discretionary awardees holding no signed grant agreement.",
+      "note": "no duration in the approved sources; 31 December 2024 is a measurement date — Pass A extension needed"
+    },
+    {
+      "field": "capacity.delivery",
+      "gap": "Cost and schedule control across a procurement portfolio of more than $750 billion, including the two acquisition areas that regressed between assessments.",
+      "note": "no duration in the approved sources; the 2023-to-2025 comparison is an assessment interval — Pass A extension needed"
+    },
+    {
+      "field": "capacity.delivery",
+      "gap": "The Department of Veterans Affairs electronic health record modernisation at six locations with more than 160 remaining.",
+      "note": "no duration in the approved sources; the 2022 life-cycle costing is a programme milestone, not an identification of the shortfall — Pass A extension needed"
+    },
+    {
+      "field": "capacity.publicServices",
+      "gap": "Foreign food safety inspections at about 5% of the 19,200 annual target.",
+      "note": "no duration in the approved sources; fiscal 2018–2023 is a measurement window — Pass A extension needed"
+    },
+    {
+      "field": "capacity.publicServices",
+      "gap": "Twenty of thirty-eight high-risk areas listed in part because of skills gaps or inadequate staffing.",
+      "note": "no duration in the approved sources — Pass A extension needed"
+    }
+  ]
+}

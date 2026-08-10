@@ -867,7 +867,7 @@ export default function CountryPage() {
     eliteCohesion: language === 'fr' ? 'Cohésion des élites' : 'Elite cohesion',
     securityLoyalty: language === 'fr' ? 'Loyauté des forces' : 'Security loyalty',
     economicPressure: language === 'fr' ? 'Pression économique' : 'Economic pressure',
-    protestCapacity: language === 'fr' ? 'Capacité de mobilisation' : 'Protest/mobilization capacity',
+    protestCapacity: language === 'fr' ? 'Capacité de mobilisation' : 'Mobilization capacity',
     institutionalResilience: language === 'fr' ? 'Résilience institutionnelle' : 'Institutional resilience',
     powerStructure: language === 'fr' ? 'Structure du pouvoir' : 'Power structure',
     stabilityDrivers: language === 'fr' ? 'Facteurs de stabilité' : 'Stability drivers',
@@ -1060,9 +1060,9 @@ export default function CountryPage() {
   // it is not a date and must not render as one. FR-PLACEHOLDER: FR labels.
   const GAP_CLASS_LABEL: Record<string, { en: string; fr: string }> = {
     'no-attempt-documented': { en: 'No documented attempt', fr: 'Aucune tentative documentée' },
-    'announced-not-implemented': { en: 'Announced, not implemented', fr: 'Annoncé, non réalisé' },
-    'attempted-and-failed': { en: 'Attempted, not closed', fr: 'Tenté, sans succès' },
-    'in-progress-unclosed': { en: 'In progress, unclosed', fr: 'En cours, non réglé' },
+    'announced-not-implemented': { en: 'Announced, not implemented', fr: 'Annonce sans réalisation' },
+    'attempted-and-failed': { en: 'Attempted, not closed', fr: 'Tentative sans résolution' },
+    'in-progress-unclosed': { en: 'In progress, unclosed', fr: 'En cours, sans résolution' },
   };
   const gapClassLabel = (c: string) => GAP_CLASS_LABEL[c]?.[language === 'fr' ? 'fr' : 'en'] ?? c;
   const gapHasSince = (s?: string) => !!s?.trim() && s.trim() !== 'report-silent';
