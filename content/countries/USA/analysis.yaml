@@ -334,7 +334,12 @@ territory_climate_en: >-
   [nca5-fifth-national-climate-assessment]. Billion-dollar weather and climate
   disasters arrived roughly every four months in the 1980s and now arrive
   roughly every three weeks, with 18 such events in 2022
-  [nca5-fifth-national-climate-assessment].
+  [nca5-fifth-national-climate-assessment]. That national accounting does not
+  reach the inhabited territories, whose exposure is cyclonic rather than
+  continental. The Northern Mariana Islands were struck by two super typhoons in
+  2026; the second, Bavi, drew an emergency declaration on 3 July and a major
+  disaster declaration on 3 August covering an incident period of 4 to 12 July,
+  with Rota approved for all categories of public assistance [fema-dr4931-bavi].
 
 
   Projections, each bound to its scenario and horizon: at a global warming level
@@ -411,7 +416,13 @@ territory_climate_fr: >-
   climatiques à plus d'un milliard de dollars survenaient environ tous les
   quatre mois dans les années 1980 et surviennent désormais environ toutes les
   trois semaines, avec 18 événements de ce type en 2022
-  [nca5-fifth-national-climate-assessment].
+  [nca5-fifth-national-climate-assessment]. Cette comptabilité nationale ne
+  couvre pas les territoires habités, dont l'exposition est cyclonique plutôt
+  que continentale. Les îles Mariannes du Nord ont été frappées par deux super
+  typhons en 2026; le second, Bavi, a donné lieu à une déclaration d'urgence le
+  3 juillet et à une déclaration de catastrophe majeure le 3 août, portant sur
+  une période d'incident du 4 au 12 juillet; l'île de Rota étant admise à toutes
+  les catégories d'aide publique [fema-dr4931-bavi].
 
 
   Projections, chacune liée à son scénario et à son horizon : à un niveau de
@@ -911,13 +922,19 @@ economy_realEconomy_en: >-
   [bea-gdp-q4-2025-third]. The Congressional Budget Office (CBO) projects 2.2%
   growth in 2026, an acceleration it attributes to the 2025 reconciliation act
   and to the rebound following the late-2025 lapse in discretionary
-  appropriations [cbo-budget-outlook-2026]. Real business fixed investment is
-  projected to grow 3.9% in 2026, driven by generative AI and data-centre
-  investment [cbo-budget-outlook-2026][eia-aeo-2026]. Employment in the
-  information sector stood at 2.8 million in June 2026, about 89,000 below its
-  level a year earlier, while computer systems design and related services
-  employed 2.4 million [bls-empsit-june2026]. Nonfuel mineral production was
-  valued at $112 billion in 2025, up 5.6% [usgs-mcs-2026].
+  appropriations [cbo-budget-outlook-2026]. That projection was published before
+  the tariff regime changed twice: an across-the-board 10% import surcharge
+  applied from 24 February to 24 July 2026 and was replaced by Section 301
+  duties on the products of 60 economies, neither of which the projection
+  incorporates
+  [fr-proclamation-11012-section122][ustr-301-forced-labor-final-action]. Real
+  business fixed investment is projected to grow 3.9% in 2026, driven by
+  generative AI and data-centre investment
+  [cbo-budget-outlook-2026][eia-aeo-2026]. Employment in the information sector
+  stood at 2.8 million in June 2026, about 89,000 below its level a year
+  earlier, while computer systems design and related services employed 2.4
+  million [bls-empsit-june2026]. Nonfuel mineral production was valued at $112
+  billion in 2025, up 5.6% [usgs-mcs-2026].
 economy_realEconomy_fr: >-
   Les États-Unis ont une économie diversifiée où les services dominent tant la
   production que l'emploi; le pays vit de la consommation intérieure, de la
@@ -954,15 +971,18 @@ economy_realEconomy_fr: >-
   [bea-gdp-q4-2025-third]. Le Congressional Budget Office (CBO) prévoit une
   croissance de 2,2 % en 2026, accélération qu'il attribue à la loi de
   réconciliation de 2025 et au rebond consécutif à l'interruption des crédits
-  discrétionnaires de la fin de 2025 [cbo-budget-outlook-2026]. L'investissement
-  fixe des entreprises devrait progresser de 3,9 % en 2026, tiré par l'IA
-  générative et l'investissement dans les centres de données
-  [cbo-budget-outlook-2026][eia-aeo-2026]. L'emploi dans le secteur de
-  l'information s'établissait à 2,8 millions en juin 2026, soit environ 89 000
-  de moins qu'un an plus tôt, tandis que la conception de systèmes informatiques
-  et les services connexes employaient 2,4 millions de personnes
-  [bls-empsit-june2026]. La production minière non combustible a été évaluée à
-  112 milliards de dollars en 2025, en hausse de 5,6 % [usgs-mcs-2026].
+  discrétionnaires de la fin de 2025 [cbo-budget-outlook-2026]. Cette prévision
+  a été publiée avant que le régime tarifaire ne change deux fois : une surtaxe
+  générale de 10 % sur les importations s'est appliquée du 24 février au 24
+  juillet 2026, remplacée par des droits au titre de la section 301 visant les
+  produits de 60 économies; la prévision ne tient compte ni de l'une ni des
+  autres [fr-proclamation-11012-section122][ustr-301-forced-labor-final-action].
+  L'emploi dans le secteur de l'information s'établissait à 2,8 millions en juin
+  2026, soit environ 89 000 de moins qu'un an plus tôt, tandis que la conception
+  de systèmes informatiques et les services connexes employaient 2,4 millions de
+  personnes [bls-empsit-june2026]. La production minière non combustible a été
+  évaluée à 112 milliards de dollars en 2025, en hausse de 5,6 %
+  [usgs-mcs-2026].
 economy_publicFinances_en: >-
   The federal government runs large structural deficits and rising debt. The
   Congressional Budget Office (CBO) projects a fiscal-year 2026 deficit of $1.9
@@ -974,7 +994,39 @@ economy_publicFinances_en: >-
   any level in the country's history and past the prior 1946 peak of 106%
   [cbo-budget-outlook-2026]. Net interest outlays reach $1.0 trillion in 2026
   and are projected to double to $2.1 trillion, or 4.6% of GDP, by 2036
-  [cbo-budget-outlook-2026]. 
+  [cbo-budget-outlook-2026]. That projection excludes a customs reversal already
+  visible in the monthly accounts. Customs duties had become the fastest-growing
+  federal revenue source, but the invalidation of the emergency-powers tariffs
+  on 20 February 2026 turned them negative: in June 2026 the Treasury collected
+  $23.6 billion in gross customs duties and paid out $49.2 billion in refunds, a
+  net customs outflow of $25.6 billion, against May's near-balance of roughly
+  $22 billion each way [mts-june-2026]. The June federal deficit was $120
+  billion, reversing a $27 billion surplus in June 2025, and the cumulative
+  deficit through the first nine months of fiscal 2026 reached $1.367 trillion
+  on receipts of $4.151 trillion against outlays of $5.518 trillion
+  [mts-june-2026]. Customs and Border Protection has reported to the Court of
+  International Trade that it collected roughly $166 billion under the
+  invalidated authority from some 330,000 importers, and that about $100 billion
+  of that had been refunded by early August 2026 — around three-fifths of the
+  total owed [cnbc-tariff-refunds-2026]. The pool is that large because the
+  Court of International Trade directed reliquidation even of entries whose
+  liquidation had become final, piercing a bar that would ordinarily have
+  extinguished those claims [cit-ieepa-refund-order]. The government filed
+  notices of appeal in the Federal Circuit on 3 June 2026, arguing that orders
+  reaching importers who never sued are impermissible universal injunctions;
+  refunds continue while the appeal proceeds, but the finally liquidated entries
+  — the contested category — are being processed only for importers that have
+  filed suit at the trade court [hk-ieepa-appeal-2026]. The Section 301 duties
+  that replaced the lapsed surcharge carry no statutory expiry and so constitute
+  a recurring revenue line rather than a temporary one
+  [ustr-301-forced-labor-final-action]. Two tariff regimes bear on that path and
+  sit outside the projection. Duties collected under the emergency-powers
+  tariffs invalidated on 20 February 2026 create a refund exposure
+  [scotus-learning-resources], as does the Section 122 surcharge that ran from
+  24 February to 24 July 2026 [fr-proclamation-11012-section122]; the Section
+  301 duties that replaced it carry no statutory expiry and so constitute a
+  recurring revenue line rather than a temporary one
+  [ustr-301-forced-labor-final-action].
 
 
   Monetary policy is on hold with inflation above target: the Federal Open
@@ -1002,7 +1054,43 @@ economy_publicFinances_fr: >-
   au-delà de tout niveau atteint dans l'histoire du pays et du pic antérieur de
   106 % de 1946 [cbo-budget-outlook-2026]. Les intérêts nets atteignent 1 000
   milliards de dollars en 2026 et devraient doubler pour atteindre 2 100
-  milliards, soit 4,6 % du PIB, d'ici 2036 [cbo-budget-outlook-2026]. 
+  milliards, soit 4,6 % du PIB, d'ici 2036 [cbo-budget-outlook-2026]. Cette
+  prévision exclut un renversement douanier déjà visible dans les comptes
+  mensuels. Les droits de douane étaient devenus la source de recettes fédérales
+  à la croissance la plus rapide, mais l'invalidation des tarifs d'urgence le 20
+  février 2026 les a rendus négatifs : en juin 2026, le Trésor a perçu 23,6
+  milliards de dollars de droits de douane bruts et versé 49,2 milliards en
+  remboursements, soit une sortie nette de 25,6 milliards au titre des douanes,
+  après un quasi-équilibre en mai, à environ 22 milliards de part et d'autre
+  [mts-june-2026]. Le déficit fédéral de juin s'est établi à 120 milliards de
+  dollars, renversant l'excédent de 27 milliards de juin 2025, et le déficit
+  cumulé des neuf premiers mois de l'exercice 2026 a atteint 1 367 milliards,
+  pour des recettes de 4 151 milliards et des dépenses de 5 518 milliards
+  [mts-june-2026]. Le service des douanes et de la protection des frontières a
+  déclaré au Tribunal du commerce international avoir perçu environ 166
+  milliards de dollars au titre de l'autorité invalidée, et en avoir remboursé
+  environ 100 milliards au début d'août 2026, soit près des trois cinquièmes du
+  total dû [cnbc-tariff-refunds-2026]. Ce montant est aussi élevé parce que le
+  Tribunal du commerce international a ordonné la reliquidation même des entrées
+  dont la liquidation était devenue définitive, levant un obstacle qui aurait
+  normalement éteint ces créances [cit-ieepa-refund-order]. Le gouvernement a
+  déposé des avis d'appel devant le Federal Circuit le 3 juin 2026, faisant
+  valoir que des ordonnances visant des importateurs qui n'ont jamais intenté de
+  poursuite constituent des injonctions universelles inadmissibles; les
+  remboursements se poursuivent pendant l'appel, mais les entrées définitivement
+  liquidées (la catégorie contestée) ne sont traitées que pour les importateurs
+  ayant saisi le tribunal du commerce [hk-ieepa-appeal-2026]. Les droits de la
+  section 301 qui ont remplacé la surtaxe expirée ne comportent aucune échéance
+  légale et constituent donc une source de recettes récurrente plutôt que
+  temporaire [ustr-301-forced-labor-final-action]. Deux régimes tarifaires
+  influent sur cette trajectoire et se situent hors de la prévision. Les droits
+  perçus au titre des tarifs d'urgence invalidés le 20 février 2026 créent une
+  exposition au remboursement [scotus-learning-resources], tout comme la surtaxe
+  de la section 122 en vigueur du 24 février au 24 juillet 2026
+  [fr-proclamation-11012-section122]; les droits de la section 301 qui l'ont
+  remplacée ne comportent aucune échéance légale et constituent donc une source
+  de recettes récurrente plutôt que temporaire
+  [ustr-301-forced-labor-final-action].
 
 
   La politique monétaire est en pause, l'inflation demeurant supérieure à la
@@ -1026,28 +1114,43 @@ economy_publicFinances_fr: >-
 economy_externalVulnerability_en: >-
   The United States runs a large and persistent deficit in goods, partly offset
   by a services surplus, and finances the gap by borrowing abroad on terms no
-  other borrower obtains. Exports of goods and services were $3,432.3 billion in
-  2025 against imports of $4,333.8 billion, a deficit of $901.5 billion — $2.1
-  billion narrower than 2024, but composed of a goods deficit that widened $25.5
-  billion to $1,240.9 billion and a services surplus that grew 8.9% to $339.5
-  billion [bea-census-trade-annual-2025]. The composition is asymmetric: goods
-  imports rose $143.2 billion, led by capital goods at $165.9 billion, within
-  which computers rose $101.4 billion, computer accessories $42.7 billion and
-  telecommunications equipment $30.3 billion, while services exports rose $82.1
-  billion, led by other business services, charges for the use of intellectual
-  property, and financial services [bea-census-trade-annual-2025]. Goods-partner
-  concentration is broad rather than narrow, and it shifted sharply in 2025: the
-  largest bilateral goods deficits were with the European Union ($218.8
-  billion), mainland China ($202.1 billion), Mexico ($196.9 billion), Vietnam
-  ($178.2 billion) and Taiwan ($146.8 billion), against surpluses with the
-  Netherlands ($60.7 billion), South and Central America ($52.4 billion) and the
-  United Kingdom ($32.2 billion) [bea-census-trade-annual-2025]. The deficit
-  with China fell $93.4 billion as imports from China dropped $130.4 billion to
-  $308.4 billion, while the deficits with Taiwan and Vietnam rose $73.0 billion
-  and $54.7 billion [bea-census-trade-annual-2025]. Measured at end-2025 rather
-  than as a full-year average, China's share of United States goods imports had
-  fallen to 7.7% from 13.2% in 2024, which the International Monetary Fund reads
-  as substitution across suppliers rather than a reduction in import demand
+  other borrower obtains. Its import regime was rebuilt twice in 2026 and the
+  trade figures below all predate that rebuilding. On 20 February 2026 the
+  Supreme Court held in Learning Resources, Inc. v. Trump that the International
+  Emergency Economic Powers Act does not authorise the President to impose
+  tariffs, voiding the legal basis of most of the tariff wall
+  [scotus-learning-resources]. The same day, Proclamation 11012 imposed a flat
+  temporary import surcharge of 10% ad valorem on most imports under Section 122
+  of the Trade Act of 1974, effective 24 February for the 150 days that statute
+  permits [fr-proclamation-11012-section122]. That surcharge lapsed at its
+  statutory limit on 24 July 2026, and Section 301 duties of 10% or 12.5% on the
+  products of 60 economies took effect the same moment, tying the rate a partner
+  pays to its enforcement of a forced-labour import prohibition
+  [ustr-301-forced-labor-final-action]. The tariff base now rests on
+  trade-remedy authority carrying no statutory rate ceiling and no fixed expiry
+  [ustr-301-forced-labor-final-action]. Exports of goods and services were
+  $3,432.3 billion in 2025 against imports of $4,333.8 billion, a deficit of
+  $901.5 billion — $2.1 billion narrower than 2024, but composed of a goods
+  deficit that widened $25.5 billion to $1,240.9 billion and a services surplus
+  that grew 8.9% to $339.5 billion [bea-census-trade-annual-2025]. The
+  composition is asymmetric: goods imports rose $143.2 billion, led by capital
+  goods at $165.9 billion, within which computers rose $101.4 billion, computer
+  accessories $42.7 billion and telecommunications equipment $30.3 billion,
+  while services exports rose $82.1 billion, led by other business services,
+  charges for the use of intellectual property, and financial services
+  [bea-census-trade-annual-2025]. Goods-partner concentration is broad rather
+  than narrow, and it shifted sharply in 2025: the largest bilateral goods
+  deficits were with the European Union ($218.8 billion), mainland China ($202.1
+  billion), Mexico ($196.9 billion), Vietnam ($178.2 billion) and Taiwan ($146.8
+  billion), against surpluses with the Netherlands ($60.7 billion), South and
+  Central America ($52.4 billion) and the United Kingdom ($32.2 billion)
+  [bea-census-trade-annual-2025]. The deficit with China fell $93.4 billion as
+  imports from China dropped $130.4 billion to $308.4 billion, while the
+  deficits with Taiwan and Vietnam rose $73.0 billion and $54.7 billion
+  [bea-census-trade-annual-2025]. Measured at end-2025 rather than as a
+  full-year average, China's share of United States goods imports had fallen to
+  7.7% from 13.2% in 2024, which the International Monetary Fund reads as
+  substitution across suppliers rather than a reduction in import demand
   [imf-art-iv-usa-2026].
 
 
@@ -1107,34 +1210,51 @@ economy_externalVulnerability_fr: >-
   Les États-Unis accusent un déficit important et persistant sur les biens,
   partiellement compensé par un excédent sur les services, et financent l'écart
   en empruntant à l'étranger à des conditions qu'aucun autre emprunteur
-  n'obtient. Les exportations de biens et services se sont établies à 3 432,3
-  milliards de dollars en 2025 contre 4 333,8 milliards d'importations, soit un
-  déficit de 901,5 milliards; 2,1 milliards de moins qu'en 2024, mais composé
-  d'un déficit sur les biens qui s'est creusé de 25,5 milliards pour atteindre 1
-  240,9 milliards et d'un excédent sur les services en hausse de 8,9 % à 339,5
-  milliards [bea-census-trade-annual-2025]. La composition est asymétrique : les
-  importations de biens ont augmenté de 143,2 milliards, tirées par les biens
-  d'équipement à hauteur de 165,9 milliards, dont les ordinateurs pour 101,4
-  milliards, les accessoires informatiques pour 42,7 milliards et le matériel de
-  télécommunication pour 30,3 milliards, tandis que les exportations de services
-  progressaient de 82,1 milliards, portées par les autres services aux
-  entreprises, les redevances d'utilisation de la propriété intellectuelle et
-  les services financiers [bea-census-trade-annual-2025]. La concentration des
-  partenaires sur les biens est large plutôt qu'étroite, et elle s'est nettement
-  déplacée en 2025 : les principaux déficits bilatéraux visaient l'Union
-  européenne (218,8 milliards), la Chine continentale (202,1 milliards), le
-  Mexique (196,9 milliards), le Vietnam (178,2 milliards) et Taïwan (146,8
-  milliards), contre des excédents avec les Pays-Bas (60,7 milliards),
-  l'Amérique du Sud et centrale (52,4 milliards) et le Royaume-Uni (32,2
-  milliards) [bea-census-trade-annual-2025]. Le déficit avec la Chine a reculé
-  de 93,4 milliards, les importations chinoises chutant de 130,4 milliards à
-  308,4 milliards, tandis que les déficits avec Taïwan et le Vietnam
-  augmentaient de 73,0 et 54,7 milliards [bea-census-trade-annual-2025]. Mesurée
-  en fin d'année 2025 plutôt qu'en moyenne annuelle, la part de la Chine dans
-  les importations de biens des États-Unis était tombée à 7,7 %, contre 13,2 %
-  en 2024; ce que le Fonds monétaire international interprète comme une
-  substitution entre fournisseurs plutôt que comme une réduction de la demande
-  d'importation [imf-art-iv-usa-2026].
+  n'obtient. Leur régime d'importation a été refondu deux fois en 2026; les
+  chiffres commerciaux ci-dessous sont tous antérieurs à cette refonte. Le 20
+  février 2026, la Cour suprême a jugé, dans Learning Resources, Inc. v. Trump,
+  que l'International Emergency Economic Powers Act n'autorisait pas le
+  président à imposer des droits de douane, annulant le fondement juridique de
+  l'essentiel du mur tarifaire [scotus-learning-resources]. Le même jour, la
+  proclamation 11012 a instauré une surtaxe temporaire uniforme de 10 % ad
+  valorem sur la plupart des importations, au titre de la section 122 du Trade
+  Act de 1974, en vigueur le 24 février pour les 150 jours que cette loi permet
+  [fr-proclamation-11012-section122]. Cette surtaxe a expiré à son échéance
+  légale le 24 juillet 2026, et des droits de 10 % ou 12,5 % au titre de la
+  section 301, visant les produits de 60 économies, sont entrés en vigueur au
+  même moment, liant le taux applicable à un partenaire à sa mise en œuvre d'une
+  interdiction d'importation de biens issus du travail forcé
+  [ustr-301-forced-labor-final-action]. L'assise tarifaire repose désormais sur
+  une autorité de recours commercial sans plafond de taux légal ni échéance fixe
+  [ustr-301-forced-labor-final-action]. Les exportations de biens et services se
+  sont établies à 3 432,3 milliards de dollars en 2025 contre 4 333,8 milliards
+  d'importations, soit un déficit de 901,5 milliards; 2,1 milliards de moins
+  qu'en 2024, mais composé d'un déficit sur les biens qui s'est creusé de 25,5
+  milliards pour atteindre 1 240,9 milliards et d'un excédent sur les services
+  en hausse de 8,9 % à 339,5 milliards [bea-census-trade-annual-2025]. La
+  composition est asymétrique : les importations de biens ont augmenté de 143,2
+  milliards, tirées par les biens d'équipement à hauteur de 165,9 milliards,
+  dont les ordinateurs pour 101,4 milliards, les accessoires informatiques pour
+  42,7 milliards et le matériel de télécommunication pour 30,3 milliards, tandis
+  que les exportations de services progressaient de 82,1 milliards, portées par
+  les autres services aux entreprises, les redevances d'utilisation de la
+  propriété intellectuelle et les services financiers
+  [bea-census-trade-annual-2025]. La concentration des partenaires sur les biens
+  est large plutôt qu'étroite, et elle s'est nettement déplacée en 2025 : les
+  principaux déficits bilatéraux visaient l'Union européenne (218,8 milliards),
+  la Chine continentale (202,1 milliards), le Mexique (196,9 milliards), le
+  Vietnam (178,2 milliards) et Taïwan (146,8 milliards), contre des excédents
+  avec les Pays-Bas (60,7 milliards), l'Amérique du Sud et centrale (52,4
+  milliards) et le Royaume-Uni (32,2 milliards) [bea-census-trade-annual-2025].
+  Le déficit avec la Chine a reculé de 93,4 milliards, les importations
+  chinoises chutant de 130,4 milliards à 308,4 milliards, tandis que les
+  déficits avec Taïwan et le Vietnam augmentaient de 73,0 et 54,7 milliards
+  [bea-census-trade-annual-2025]. Mesurée en fin d'année 2025 plutôt qu'en
+  moyenne annuelle, la part de la Chine dans les importations de biens des
+  États-Unis était tombée à 7,7 %, contre 13,2 % en 2024; ce que le Fonds
+  monétaire international interprète comme une substitution entre fournisseurs
+  plutôt que comme une réduction de la demande d'importation
+  [imf-art-iv-usa-2026].
 
 
   L'énergie et l'alimentation évoluent en sens inverse. Les exportations totales
@@ -1414,6 +1534,13 @@ political_powerStructure_en: >-
   [crs-rl30360-cloture]. That threshold, not the seat count, determines what
   unified control can enact, and it is why the majority's principal 2025
   enactment moved through reconciliation rather than regular order [obbba-hr1].
+  It did so again: the Secure America Act, Public Law 119-98 of 10 June 2026,
+  was a second reconciliation enactment, making the route a settled practice
+  rather than a single instance [secure-america-act-pl119-98]. The Senate has
+  also legislated against itself on the consequences of deadlock, adopting
+  S.Res. 526 on 14 May 2026 to withhold senators' pay during funding lapses — a
+  standing chamber rule, though one that takes effect only after the November
+  2026 elections [sres-526-senator-pay].
 
 
   Opposition strength follows from the same thresholds rather than from seat
@@ -1511,7 +1638,14 @@ political_powerStructure_fr: >-
   [crs-rl30360-cloture]. C'est ce seuil, et non le nombre de sièges, qui
   détermine ce qu'un contrôle unifié peut faire adopter; c'est pourquoi la
   principale loi de la majorité en 2025 est passée par la réconciliation plutôt
-  que par la procédure ordinaire [obbba-hr1].
+  que par la procédure ordinaire [obbba-hr1]. La voie a resservi : la Secure
+  America Act, loi publique 119-98 du 10 juin 2026, constitue une deuxième loi
+  de réconciliation, faisant de ce recours une pratique établie plutôt qu'un cas
+  isolé [secure-america-act-pl119-98]. Le Sénat a par ailleurs légiféré contre
+  lui-même quant aux conséquences du blocage, adoptant le 14 mai 2026 la
+  résolution S.Res. 526 qui suspend la rémunération des sénateurs pendant les
+  interruptions de crédits; règle interne permanente, mais qui ne prendra effet
+  qu'après les élections de novembre 2026 [sres-526-senator-pay].
 
 
   La force de l'opposition découle des mêmes seuils plutôt que du nombre de
@@ -1772,7 +1906,7 @@ political_stabilityDrivers_en: >-
   [nara-electoral-college-2024].
 
 
-  Control of the coercive apparatus runs along three separate lines, and
+  Control of the coercive apparatus runs along four separate lines, and
   conflating them misstates the structure. The President is commander-in-chief
   of the armed forces under Article II [constitution-usa-1787]. Federal
   law-enforcement agencies answer to the President not through that clause but
@@ -1786,10 +1920,15 @@ political_stabilityDrivers_en: >-
   President federalises the force, which then falls under the Posse Comitatus
   Act of 1878, barring the armed forces from executing the laws except where the
   Constitution or an Act of Congress expressly authorises it
-  [crs-r42659-posse-comitatus]. Congress reaffirmed that statute's continued
+  [crs-r42659-posse-comitatus].Congress reaffirmed that statute's continued
   applicability in 6 U.S.C. § 466, while acknowledging it is not a complete
   barrier where the President determines the armed forces are required to
-  respond to war, insurrection or other serious emergency [uscode-6-466].
+  respond to war, insurrection or other serious emergency [uscode-6-466]. A
+  fourth line runs through none of these: under the District of Columbia Home
+  Rule Act the President may direct the capital's municipal police force, which
+  he did on 11 August 2025 in declaring a crime emergency there — an authority
+  resting neither on Article II, nor on the removal power, nor on Title 10
+  [eo-14333-dc-crime-emergency].
 
 
   That third line was contested and judicially settled during the period. On 4
@@ -1862,7 +2001,7 @@ political_stabilityDrivers_fr: >-
   [nara-electoral-college-2024].
 
 
-  Le contrôle de l'appareil coercitif suit trois lignes distinctes, et les
+  Le contrôle de l'appareil coercitif suit quatre lignes distinctes, et les
   confondre revient à décrire faussement la structure. Le président est
   commandant en chef des forces armées en vertu de l'article II
   [constitution-usa-1787]. Les organismes fédéraux d'application de la loi
@@ -1881,7 +2020,12 @@ political_stabilityDrivers_fr: >-
   a réaffirmé la validité continue de cette loi au 6 U.S.C. § 466, tout en
   reconnaissant qu'elle ne constitue pas un obstacle absolu lorsque le président
   estime que les forces armées sont nécessaires pour répondre à une guerre, à
-  une insurrection ou à une autre urgence grave [uscode-6-466].
+  une insurrection ou à une autre urgence grave [uscode-6-466]. Une quatrième
+  ligne ne relève d'aucune de ces voies : en vertu du Home Rule Act du district
+  de Columbia, le président peut diriger la police municipale de la capitale; ce
+  qu'il a fait le 11 août 2025 en y déclarant une urgence criminelle; il s'agit
+  d'une autorité qui ne repose ni sur l'article II, ni sur le pouvoir de
+  révocation, ni sur le titre 10 [eo-14333-dc-crime-emergency].
 
 
   Cette troisième ligne a été contestée et tranchée par les tribunaux au cours
@@ -2001,11 +2145,12 @@ political_shockAbsorbers_en: >-
 
 
   The procedural accelerant is demonstrated rather than hypothetical, though its
-  macroeconomic bite is modest. The fiscal 2026 funding lapse ran 43 days, from
-  1 October to 12 November 2025, and a further lapse in Homeland Security
-  funding beginning 14 February 2026 ran 76 days to 30 April 2026, the longest
-  shutdown of a single federal department on record
-  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. The
+  macroeconomic bite is modest. Funding lapsed three times in eight months: 43
+  days from 1 October to 12 November 2025, a second lapse from 31 January to 3
+  February 2026 resolved by the Consolidated Appropriations Act, 2026, and a
+  Homeland Security lapse of 76 days from 14 February to 30 April 2026, the
+  longest shutdown of a single federal department on record
+  [crs-r48832-shutdowns][hr7148-appropriations][house-approps-dhs-76day]. The
   Congressional Budget Office estimated during the lapse that it would reduce
   annualised real growth in the fourth quarter of 2025 by one to two percentage
   points, and that between $7 billion and $14 billion of output in 2025 dollars
@@ -2075,12 +2220,13 @@ political_shockAbsorbers_fr: >-
 
 
   Le facteur d'aggravation procédural est avéré plutôt qu'hypothétique, même si
-  sa portée macroéconomique reste modeste. L'interruption des crédits de
-  l'exercice 2026 a duré 43 jours (du 1er octobre au 12 novembre 2025), et une
-  nouvelle interruption des crédits de la Sécurité intérieure, entamée le 14
-  février 2026, a duré 76 jours jusqu'au 30 avril 2026; soit la plus longue
-  fermeture d'un seul département fédéral jamais enregistrée
-  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. Le
+  sa portée macroéconomique reste modeste. Les crédits ont été interrompus trois
+  fois en huit mois : 43 jours du 1er octobre au 12 novembre 2025; une deuxième
+  interruption du 31 janvier au 3 février 2026, résolue par la loi de crédits
+  consolidés de 2026; et une interruption des crédits de la Sécurité intérieure
+  de 76 jours, du 14 février au 30 avril 2026, soit la plus longue fermeture
+  d'un seul département fédéral jamais enregistrée
+  [crs-r48832-shutdowns][hr7148-appropriations][house-approps-dhs-76day]. Le
   Congressional Budget Office a estimé, pendant l'interruption, qu'elle
   réduirait la croissance réelle annualisée du quatrième trimestre de 2025 de un
   à deux points de pourcentage et qu'entre 7 et 14 milliards de dollars de
@@ -2148,30 +2294,36 @@ political_constitutionalSubstrate_en: >-
   Congress [constitution-usa-1787].
 
 
-  On the horizontal axis, two rulings issued the same day reallocated power
-  between the President, Congress and the agencies, and a third the following
-  day held a boundary. In Trump v. Slaughter (No. 25-332, decided 29 June 2026,
-  six to three) the Court held the Federal Trade Commission's statutory
-  for-cause removal protection contrary to the separation of powers, overruling
-  Humphrey's Executor v. United States (1935) on the reasoning that subordinates
-  exercising the President's power are removable by him; the Congressional
-  Research Service reads the decision as likely reaching officials of other
-  commission-style agencies that wield executive power
-  [trump-v-slaughter-2026][crs-lsb11448-slaughter]. In Trump v. Cook (No.
-  25A312, five to four) the Court held that a President's asserted for-cause
-  basis for removing a Federal Reserve governor is judicially reviewable, that
-  any definition of cause must reflect the Federal Reserve's particular history
-  and role, and that the governor was entitled to notice and an opportunity to
-  respond before removal — so the reallocation stops at the central bank
-  [trump-v-cook-2026][crs-lsb11449-cook]. Chief Justice Roberts wrote both
-  opinions, joined by two almost entirely different sets of justices; only one
-  member of the Court was in both majorities
+  On the horizontal axis, four rulings in a single fortnight reallocated power
+  between the President, Congress, the agencies and the courts: two issued the
+  same day, a third the following day holding a boundary, and a fourth that
+  removed the courts from a question rather than deciding it. In Trump v.
+  Slaughter (No. 25-332, decided 29 June 2026, six to three) the Court held the
+  Federal Trade Commission's statutory for-cause removal protection contrary to
+  the separation of powers, overruling Humphrey's Executor v. United States
+  (1935) on the reasoning that subordinates exercising the President's power are
+  removable by him; the Congressional Research Service reads the decision as
+  likely reaching officials of other commission-style agencies that wield
+  executive power [trump-v-slaughter-2026][crs-lsb11448-slaughter]. In Trump v.
+  Cook (No. 25A312, five to four) the Court held that a President's asserted
+  for-cause basis for removing a Federal Reserve governor is judicially
+  reviewable, that any definition of cause must reflect the Federal Reserve's
+  particular history and role, and that the governor was entitled to notice and
+  an opportunity to respond before removal — so the reallocation stops at the
+  central bank [trump-v-cook-2026][crs-lsb11449-cook]. Chief Justice Roberts
+  wrote both opinions, joined by two almost entirely different sets of justices;
+  only one member of the Court was in both majorities
   [trump-v-slaughter-2026][trump-v-cook-2026]. The following day, in Trump v.
   Barbara (No. 25-365, decided 30 June 2026, six to three), the Court held that
   children born in the United States to parents unlawfully or temporarily
   present are subject to its jurisdiction and are citizens at birth, striking
   Executive Order 14160 and reaffirming United States v. Wong Kim Ark (1898)
-  [trump-v-barbara-2026].
+  [trump-v-barbara-2026]. That fourth ruling came first in time: in Mullin v.
+  Doe (No. 25-1083, decided 25 June 2026, six to three) the Court held that 8
+  U.S.C. § 1254a(b)(5)(A) plainly bars judicial review of non-constitutional
+  challenges to terminations of temporary protected status, so terminations
+  affecting Haitian and Syrian nationals — some 350,000 people — proceed, with
+  constitutional claims left open [scotus-mullin-2026][crs-lsb11446-mullin].
 
 
   On the vertical axis, the Court restricted federal reach into state
@@ -2185,7 +2337,15 @@ political_constitutionalSubstrate_en: >-
   ballots postmarked by election day and received up to five business days
   later, reversing the Fifth Circuit; the Court noted that roughly thirty states
   count at least some ballots mailed by election day and received afterward
-  [watson-v-rnc-2026].
+  [watson-v-rnc-2026]. Two months earlier it had narrowed the federal statute
+  constraining state redistricting: in Louisiana v. Callais (No. 24-109, decided
+  29 April 2026, six to three) it held the state's second majority-minority
+  district an unconstitutional racial gerrymander and raised the threshold for
+  vote-dilution claims under section 2 of the Voting Rights Act, which now
+  require a strong inference that a state drew its districts intentionally to
+  give minority voters less opportunity because of race
+  [scotus-callais-2026][crs-lsb11431-callais]. The dissent read that standard as
+  leaving section 2 with no practical effect [scotus-callais-2026].
 
 
   This follows a decade of doctrinal movement. Shelby County v. Holder (2013)
@@ -2260,34 +2420,43 @@ political_constitutionalSubstrate_fr: >-
   chambre du Congrès [constitution-usa-1787].
 
 
-  Sur l'axe horizontal, deux arrêts rendus le même jour ont redistribué le
-  pouvoir entre le président, le Congrès et les organismes fédéraux, et un
-  troisième, le lendemain, a fixé une limite. Dans Trump v. Slaughter (no
-  25-332, rendu le 29 juin 2026, par six voix contre trois), la Cour a jugé que
-  la protection légale contre la révocation pour motif valable dont
-  bénéficiaient les commissaires de la Federal Trade Commission contrevient à la
-  séparation des pouvoirs, renversant l'arrêt Humphrey's Executor v. United
-  States (1935) au motif que les subordonnés qui exercent le pouvoir du
-  président sont révocables par lui; le Congressional Research Service estime
-  que la décision atteint vraisemblablement les titulaires de charge d'autres
-  organismes collégiaux exerçant un pouvoir exécutif
-  [trump-v-slaughter-2026][crs-lsb11448-slaughter]. Dans Trump v. Cook (no
-  25A312, par cinq voix contre quatre), la Cour a jugé que le motif invoqué par
-  un président pour révoquer une gouverneure de la Réserve fédérale était
-  susceptible de contrôle judiciaire, que toute définition du motif valable
-  devait tenir compte de l'histoire et du rôle particuliers de la Réserve
-  fédérale, et que la gouverneure avait droit à un préavis et à la possibilité
-  de se faire entendre avant sa révocation; la redistribution s'arrête donc à la
-  banque centrale [trump-v-cook-2026][crs-lsb11449-cook]. Le juge en chef
-  Roberts a rédigé les deux opinions, entouré de deux ensembles de juges presque
-  entièrement différents; un seul membre de la Cour figurait dans les deux
-  majorités [trump-v-slaughter-2026][trump-v-cook-2026]. Le lendemain, dans
-  Trump v. Barbara (no 25-365, rendu le 30 juin 2026, par six voix contre
-  trois), la Cour a jugé que les enfants nés aux États-Unis de parents en
-  situation irrégulière ou de séjour temporaire relevaient de la juridiction du
-  pays et étaient citoyens dès la naissance, invalidant le décret présidentiel
-  14160 et réaffirmant l'arrêt United States v. Wong Kim Ark (1898)
-  [trump-v-barbara-2026].
+  Sur l'axe horizontal, quatre arrêts rendus en quinze jours ont redistribué le
+  pouvoir entre le président, le Congrès, les organismes fédéraux et les
+  tribunaux : deux le même jour, un troisième le lendemain fixant une limite, et
+  un quatrième qui a écarté les tribunaux d'une question plutôt que de la
+  trancher. Dans Trump v. Slaughter (no 25-332, rendu le 29 juin 2026, par six
+  voix contre trois), la Cour a jugé que la protection légale contre la
+  révocation pour motif valable dont bénéficiaient les commissaires de la
+  Federal Trade Commission contrevient à la séparation des pouvoirs, renversant
+  l'arrêt Humphrey's Executor v. United States (1935) au motif que les
+  subordonnés qui exercent le pouvoir du président sont révocables par lui; le
+  Congressional Research Service estime que la décision atteint
+  vraisemblablement les titulaires de charge d'autres organismes collégiaux
+  exerçant un pouvoir exécutif [trump-v-slaughter-2026][crs-lsb11448-slaughter].
+  Dans Trump v. Cook (no 25A312, par cinq voix contre quatre), la Cour a jugé
+  que le motif invoqué par un président pour révoquer une gouverneure de la
+  Réserve fédérale était susceptible de contrôle judiciaire, que toute
+  définition du motif valable devait tenir compte de l'histoire et du rôle
+  particuliers de la Réserve fédérale, et que la gouverneure avait droit à un
+  préavis et à la possibilité de se faire entendre avant sa révocation; la
+  redistribution s'arrête donc à la banque centrale
+  [trump-v-cook-2026][crs-lsb11449-cook]. Le juge en chef Roberts a rédigé les
+  deux opinions, entouré de deux ensembles de juges presque entièrement
+  différents; un seul membre de la Cour figurait dans les deux majorités
+  [trump-v-slaughter-2026][trump-v-cook-2026]. Le lendemain, dans Trump v.
+  Barbara (no 25-365, rendu le 30 juin 2026, par six voix contre trois), la Cour
+  a jugé que les enfants nés aux États-Unis de parents en situation irrégulière
+  ou de séjour temporaire relevaient de la juridiction du pays et étaient
+  citoyens dès la naissance, invalidant le décret présidentiel 14160 et
+  réaffirmant l'arrêt United States v. Wong Kim Ark (1898)
+  [trump-v-barbara-2026]. Ce quatrième arrêt est le premier dans l'ordre
+  chronologique : dans Mullin v. Doe (no 25-1083, rendu le 25 juin 2026, par six
+  voix contre trois), la Cour a jugé que le 8 U.S.C. § 1254a(b)(5)(A) excluait
+  manifestement le contrôle judiciaire des recours non constitutionnels contre
+  les révocations du statut de protection temporaire, de sorte que les
+  révocations visant les ressortissants haïtiens et syriens (quelque 350 000
+  personnes) suivent leur cours; les moyens constitutionnels demeurant ouverts
+  [scotus-mullin-2026][crs-lsb11446-mullin].
 
 
   Sur l'axe vertical, la Cour a restreint à deux reprises la portée fédérale sur
@@ -2302,7 +2471,17 @@ political_constitutionalSubstrate_fr: >-
   bulletins postaux oblitérés au plus tard le jour du scrutin et reçus dans les
   cinq jours ouvrables suivants, infirmant l'arrêt du cinquième circuit et
   relevant qu'une trentaine d'États comptaient au moins certains bulletins
-  postés le jour du scrutin et reçus après [watson-v-rnc-2026].
+  postés le jour du scrutin et reçus après [watson-v-rnc-2026]. Deux mois plus
+  tôt, elle avait restreint la loi fédérale encadrant le redécoupage électoral
+  des États : dans Louisiana v. Callais (no 24-109, rendu le 29 avril 2026, par
+  six voix contre trois), elle a jugé que la deuxième circonscription à majorité
+  minoritaire de l'État constituait un découpage électoral inconstitutionnel
+  fondé sur la race et a relevé le seuil des recours pour dilution du vote au
+  titre de l'article 2 de la Voting Rights Act, qui exigent désormais une forte
+  présomption que l'État a délibérément tracé ses circonscriptions pour réduire
+  les possibilités des électeurs issus de minorités en raison de leur race
+  [scotus-callais-2026][crs-lsb11431-callais]. L'opinion dissidente y a vu une
+  norme privant l'article 2 de tout effet pratique [scotus-callais-2026].
 
 
   Ce mouvement s'inscrit dans une décennie d'évolution jurisprudentielle. Shelby
@@ -2513,17 +2692,22 @@ capacity_steering_en: >-
   The federal state retains formidable analytic and implementation capacity, and
   its steering is degraded not by ignorance of its own failures but by an
   inability to convert diagnosis into sustained action. Prioritisation through
-  the ordinary budget process repeatedly failed: the fiscal 2026 appropriations
-  cycle produced produced a 43-day funding lapse, 1 October to 12 November 2025;
-  and a Homeland Security funding lapse from 14 February 2026 that ran 76 days
-  to 30 April 2026, the longest for a single department, resolved only through
-  consolidated and continuing appropriations
-  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations].
+  the ordinary budget process failed three times in eight months: a 43-day
+  funding lapse from 1 October to 12 November 2025, a second lapse from 31
+  January to 3 February 2026 resolved by the Consolidated Appropriations Act,
+  2026, and a Homeland Security lapse from 14 February to 30 April 2026 running
+  76 days, the longest for a single department
+  [crs-r48832-shutdowns][hr7148-appropriations][house-approps-dhs-76day].
   Announced priorities diverge from implemented ones: deficit reduction was
   declared while the 2025 reconciliation act raised projected deficits by $4.7
-  trillion over 2026–2035 [obbba-hr1][cbo-budget-outlook-2026]. Where the
-  executive has prioritised (homeland and hemispheric security) implementation
-  has been rapid [ndstrategy-2026][maduro-capture-wardept].
+  trillion over 2026–2035 [obbba-hr1][cbo-budget-outlook-2026]. Nor was that act
+  the only instrument bypassing the annual cycle — the Secure America Act,
+  Public Law 119-98 of 10 June 2026, appropriated multi-year funding for Customs
+  and Border Protection personnel, Immigration and Customs Enforcement and
+  border technology outside it, making reconciliation a settled practice rather
+  than a single episode [secure-america-act-pl119-98]. Where the executive has
+  prioritised (homeland and hemispheric security) implementation has been rapid
+  [ndstrategy-2026][maduro-capture-wardept].
 
 
   The response record across the domains where this report documents shortfalls
@@ -2556,18 +2740,23 @@ capacity_steering_fr: >-
   considérables, et son pilotage est dégradé non par l'ignorance de ses propres
   défaillances, mais par l'incapacité de convertir le diagnostic en action
   soutenue. L'établissement des priorités par le processus budgétaire ordinaire
-  a échoué à répétition : le cycle des crédits de l'exercice 2026 a produit une
-  fermeture de l'ensemble de l'administration de 43 jours (du 1er octobre au 12
-  novembre 2025) et une interruption des crédits de la Sécurité intérieure (à
-  partir du 14 février 2026) qui a duré 76 jours jusqu'au 30 avril 2026, la plus
-  longue pour un seul département, résolue uniquement par des crédits consolidés
-  et provisoires
-  [crs-r48832-shutdowns][house-approps-dhs-76day][hr7148-appropriations]. Les
+  a échoué trois fois en huit mois : une interruption des crédits de 43 jours,
+  du 1er octobre au 12 novembre 2025; une deuxième interruption, du 31 janvier
+  au 3 février 2026, résolue par la loi de crédits consolidés de 2026; et une
+  interruption des crédits de la Sécurité intérieure, du 14 février au 30 avril
+  2026, d'une durée de 76 jours, la plus longue pour un seul département
+  [crs-r48832-shutdowns][hr7148-appropriations][house-approps-dhs-76day]. Les
   priorités annoncées divergent des priorités mises en œuvre : la réduction du
   déficit a été proclamée alors que la loi de réconciliation de 2025 relevait
   les déficits projetés de 4 700 milliards de dollars sur 2026-2035
-  [obbba-hr1][cbo-budget-outlook-2026]. Là où l'exécutif a établi une priorité
-  (la sécurité du territoire et de l'hémisphère), la mise en œuvre a été rapide
+  [obbba-hr1][cbo-budget-outlook-2026]. Cette loi n'a pas été le seul instrument
+  à contourner le cycle annuel : la Secure America Act, loi publique 119-98 du
+  10 juin 2026, a affecté des crédits pluriannuels au personnel du service des
+  douanes et de la protection des frontières, au service de l'immigration et des
+  douanes ainsi qu'aux technologies frontalières en dehors de ce cycle, faisant
+  de la réconciliation une pratique établie plutôt qu'un épisode isolé
+  [secure-america-act-pl119-98]. Là où l'exécutif a établi une priorité (la
+  sécurité du territoire et de l'hémisphère), la mise en œuvre a été rapide
   [ndstrategy-2026][maduro-capture-wardept].
 
 
@@ -3607,17 +3796,17 @@ capacity_knownAndUnbuilt_fr: |-
     "denominator": "La capacité de combler ces manques se situe là où elle est du fait d'un terrain hérité et non d'un mérite acquis : une masse continentale riche en ressources mais aux distances internes considérables, une population nombreuse bâtie par l'immigration dont la croissance vient de ralentir fortement, une vaste dotation énergétique et minérale associée à une forte dépendance aux importations de minéraux critiques, la plus grande et la plus diversifiée des économies de services au monde, et une base budgétaire portant une dette publique historiquement élevée — une répartition fixée par l'histoire, la géographie et l'échelle, jamais méritée ni acquise, et le dénominateur au regard duquel chaque entrée ci-dessus doit être lue."
   }
 security_posture_en: >-
-  The security posture is expeditionary and unmatched in reach; the diplomatic
-  orientation is aligned, with the country at the centre of the bloc rather than
-  attached to one, and disengaging from institutions. Both are narrowing rather
-  than expanding: military spending is falling and its share of the world total
-  shrinking while allies' rises, and the standing strategy reorients from global
-  presence toward homeland defence and the Western Hemisphere
-  [security.military]. Capability itself is intact — forces are permanently
-  based across dozens of countries, only two locations without host-nation
-  consent, and the treaty alliance system remains the largest in the world, with
-  Japan meeting the majority of the identifiable costs of the presence on its
-  territory and South Korea a substantial share
+  The security posture is expeditionary, unmatched in reach, and currently at
+  war [security.diplomacy]; the diplomatic orientation is aligned, with the
+  country at the centre of the bloc rather than attached to one, and disengaging
+  from institutions. Both are narrowing rather than expanding: military spending
+  is falling and its share of the world total shrinking while allies' rises, and
+  the standing strategy reorients from global presence toward homeland defence
+  and the Western Hemisphere [security.military]. Capability itself is intact —
+  forces are permanently based across dozens of countries, only two locations
+  without host-nation consent, and the treaty alliance system remains the
+  largest in the world, with Japan meeting the majority of the identifiable
+  costs of the presence on its territory and South Korea a substantial share
   [security.military][security.diplomacy]. The reorientation is visible inward
   as well, in military support to interagency border operations and in a contest
   over which level of government commands federalised forces that the courts
@@ -3634,45 +3823,49 @@ security_posture_en: >-
   transactional in orientation, and increasingly unaccompanied by the
   institutional machinery through which that alignment was formerly exercised.
 security_posture_fr: >-
-  La posture de sécurité est expéditionnaire et d'une portée sans égale;
-  l'orientation diplomatique est alignée, le pays occupant le centre du bloc
-  plutôt qu'y étant rattaché, et se désengage des institutions. Les deux se
-  resserrent plutôt qu'elles ne s'étendent : les dépenses militaires reculent et
-  leur part dans le total mondial diminue tandis que celle des alliés progresse,
-  et la stratégie en vigueur réoriente la présence mondiale vers la défense du
-  territoire et l'hémisphère occidental [security.military]. La capacité, elle,
-  demeure intacte : des forces sont stationnées en permanence dans des dizaines
-  de pays (deux emplacements seulement l'étant sans le consentement du pays
-  hôte) et le système d'alliances par traité reste le plus vaste au monde; le
-  Japon assumant la majorité des coûts identifiables de cette présence sur son
-  territoire et la Corée du Sud une part substantielle
-  [security.military][security.diplomacy]. La réorientation se lit aussi vers
-  l'intérieur, dans l'appui militaire aux opérations frontalières interagences
-  et dans un conflit sur le palier de gouvernement habilité à commander des
-  forces fédéralisées, que les tribunaux ont tranché contre l'exécutif
-  [security.internal]. L'appareil d'évaluation se réduit simultanément aux deux
-  extrémités : l'organisme créé par la loi pour coordonner le renseignement sur
-  l'influence étrangère a été dissous en août 2025, de même que le groupe de
-  travail équivalent de la police fédérale, tandis que le retrait de 66
-  organisations internationales visait notamment les organismes multilatéraux de
-  lutte contre les menaces hybrides et de cyberexpertise; le tout durant la
-  période même où les services de renseignement documentaient en détail les
-  réseaux de cartels, les intrusions informatiques pré-positionnées et les
-  opérations d'ingérence [security.transnationalExposure][security.diplomacy].
-  La posture est donc expéditionnaire par la capacité, hémisphérique par
-  l'accent, alignée mais transactionnelle par l'orientation, et de moins en
-  moins accompagnée de l'appareil institutionnel par lequel cet alignement
-  s'exerçait auparavant.
+  La posture de sécurité est expéditionnaire, d'une portée sans égale et
+  actuellement engagée dans une guerre [security.diplomacy]; l'orientation
+  diplomatique est alignée, le pays occupant le centre du bloc plutôt qu'y étant
+  rattaché, et se désengage des institutions. Les deux se resserrent plutôt
+  qu'elles ne s'étendent : les dépenses militaires reculent et leur part dans le
+  total mondial diminue tandis que celle des alliés progresse, et la stratégie
+  en vigueur réoriente la présence mondiale vers la défense du territoire et
+  l'hémisphère occidental [security.military]. La capacité, elle, demeure
+  intacte : des forces sont stationnées en permanence dans des dizaines de pays
+  (deux emplacements seulement l'étant sans le consentement du pays hôte) et le
+  système d'alliances par traité reste le plus vaste au monde; le Japon assumant
+  la majorité des coûts identifiables de cette présence sur son territoire et la
+  Corée du Sud une part substantielle [security.military][security.diplomacy].
+  La réorientation se lit aussi vers l'intérieur, dans l'appui militaire aux
+  opérations frontalières interagences et dans un conflit sur le palier de
+  gouvernement habilité à commander des forces fédéralisées, que les tribunaux
+  ont tranché contre l'exécutif [security.internal]. L'appareil d'évaluation se
+  réduit simultanément aux deux extrémités : l'organisme créé par la loi pour
+  coordonner le renseignement sur l'influence étrangère a été dissous en août
+  2025, de même que le groupe de travail équivalent de la police fédérale,
+  tandis que le retrait de 66 organisations internationales visait notamment les
+  organismes multilatéraux de lutte contre les menaces hybrides et de
+  cyberexpertise; le tout durant la période même où les services de
+  renseignement documentaient en détail les réseaux de cartels, les intrusions
+  informatiques pré-positionnées et les opérations d'ingérence
+  [security.transnationalExposure][security.diplomacy]. La posture est donc
+  expéditionnaire par la capacité, hémisphérique par l'accent, alignée mais
+  transactionnelle par l'orientation, et de moins en moins accompagnée de
+  l'appareil institutionnel par lequel cet alignement s'exerçait auparavant.
 security_internal_en: >-
   The state's monopoly on force is uncontested by non-state actors and was
-  contested during the period between levels of government. From October 2025
-  the executive federalised National Guard units under Title 10 for deployment
-  to Chicago over the objection of Illinois's governor, having federalised units
-  for Los Angeles and Portland earlier in the year; governors in three states
-  obtained injunctions, and in December 2025 the Supreme Court declined to
-  disturb them by six votes to three [scotus-trump-v-illinois-2025]. Under the
-  Federal Protection Mission those forces served under United States Army North
-  with the Department of Homeland Security as lead federal agency;
+  contested during the period between levels of government. The sequence began
+  on 11 August 2025, when the President declared a crime emergency in the
+  District of Columbia and took federal direction of the capital's municipal
+  police force under the Home Rule Act — not a National Guard federalisation but
+  an authority peculiar to the District [eo-14333-dc-crime-emergency]. From
+  October 2025 the executive federalised National Guard units under Title 10 for
+  deployment to Chicago over the objection of Illinois's governor, having
+  federalised units for Los Angeles and Portland earlier in the year; governors
+  in three states obtained injunctions, and in December 2025 the Supreme Court
+  declined to disturb them by six votes to three [scotus-trump-v-illinois-2025].
+  Under the Federal Protection Mission those forces served under United States
+  Army North with the Department of Homeland Security as lead federal agency;
   demobilisation in all three cities completed on 21 January 2026, and Texas
   National Guard personnel were released from stand-by on 11 March 2026
   [northcom-federal-protection-mission]. No episode involved forces declining
@@ -3744,21 +3937,25 @@ security_internal_en: >-
   and Iran [dhs-ntas].
 security_internal_fr: >-
   Le monopole de l'État sur la force n'est contesté par aucun acteur non
-  étatique, mais il l'a été durant la période entre paliers de gouvernement. À
-  compter d'octobre 2025, l'exécutif a fédéralisé des unités de la Garde
-  nationale en vertu du titre 10 pour un déploiement à Chicago malgré
-  l'opposition du gouverneur de l'Illinois, après avoir fédéralisé des unités
-  pour Los Angeles et Portland plus tôt dans l'année; les gouverneurs de trois
-  États ont obtenu des injonctions et, en décembre 2025, la Cour suprême a
-  refusé de les lever par six voix contre trois [scotus-trump-v-illinois-2025].
-  Dans le cadre de la Federal Protection Mission, ces forces relevaient de
-  l'United States Army North, le département de la Sécurité intérieure agissant
-  comme organisme fédéral responsable; la démobilisation s'est achevée dans les
-  trois villes le 21 janvier 2026, et les militaires de la Garde nationale du
-  Texas ont été libérés de l'état d'alerte le 11 mars 2026
-  [northcom-federal-protection-mission]. Aucun épisode n'a vu des forces refuser
-  des ordres légaux; la contestation portait sur le palier de gouvernement
-  habilité à les donner.
+  étatique, mais il l'a été durant la période entre paliers de gouvernement. La
+  séquence s'est ouverte le 11 août 2025, lorsque le président a déclaré une
+  urgence criminelle dans le district de Columbia et pris la direction fédérale
+  de la police municipale de la capitale en vertu du Home Rule Act; non pas une
+  fédéralisation de la Garde nationale, mais une autorité propre au district
+  [eo-14333-dc-crime-emergency]. À compter d'octobre 2025, l'exécutif a
+  fédéralisé des unités de la Garde nationale en vertu du titre 10 pour un
+  déploiement à Chicago malgré l'opposition du gouverneur de l'Illinois, après
+  avoir fédéralisé des unités pour Los Angeles et Portland plus tôt dans
+  l'année; les gouverneurs de trois États ont obtenu des injonctions et, en
+  décembre 2025, la Cour suprême a refusé de les lever par six voix contre trois
+  [scotus-trump-v-illinois-2025]. Dans le cadre de la Federal Protection
+  Mission, ces forces relevaient de l'United States Army North, le département
+  de la Sécurité intérieure agissant comme organisme fédéral responsable; la
+  démobilisation s'est achevée dans les trois villes le 21 janvier 2026, et les
+  militaires de la Garde nationale du Texas ont été libérés de l'état d'alerte
+  le 11 mars 2026 [northcom-federal-protection-mission]. Aucun épisode n'a vu
+  des forces refuser des ordres légaux; la contestation portait sur le palier de
+  gouvernement habilité à les donner.
 
 
   La situation frontalière a changé d'un ordre de grandeur. Les interceptions de
@@ -3838,17 +4035,21 @@ security_internal_fr: >-
 security_military_en: >-
   The United States is the world's pre-eminent military power, with an
   all-volunteer force and power projection across land, sea, air, cyber and
-  space; the Space Force, established in 2019, is the sixth service. The active
-  force stood at 1,298,099 across the five Department of Defense services at the
-  end of fiscal 2025 — Army 454,637, Navy 341,109, Air Force 319,119, Marine
-  Corps 173,249 and Space Force 9,985, comprising 235,575 officers, 1,049,509
-  enlisted personnel and 13,015 academy cadets — with reserve components adding
-  760,210, of which the Army National Guard accounted for 328,870 and the Air
-  National Guard 105,120 [budget-appendix-fy2027-personnel]. Congress sets an
-  authorised ceiling annually under 10 U.S.C. § 115; for fiscal 2026 it
-  authorised 1,302,800 across those five services, an increase of 26,100
-  concentrated in the Army and Navy, or 1,352,800 including the Coast Guard
-  [crs-end-strength-2026].
+  space; the Space Force, established in 2019, is the sixth service. The
+  department is styled the Department of War in its own publications under an
+  executive order of 5 September 2025 authorising that secondary title, but
+  remains statutorily the Department of Defense; this report uses the statutory
+  name throughout, while sources are cited under the titles they carry
+  [eo-14347-department-of-war]. The active force stood at 1,298,099 across the
+  five Department of Defense services at the end of fiscal 2025 — Army 454,637,
+  Navy 341,109, Air Force 319,119, Marine Corps 173,249 and Space Force 9,985,
+  comprising 235,575 officers, 1,049,509 enlisted personnel and 13,015 academy
+  cadets — with reserve components adding 760,210, of which the Army National
+  Guard accounted for 328,870 and the Air National Guard 105,120
+  [budget-appendix-fy2027-personnel]. Congress sets an authorised ceiling
+  annually under 10 U.S.C. § 115; for fiscal 2026 it authorised 1,302,800 across
+  those five services, an increase of 26,100 concentrated in the Army and Navy,
+  or 1,352,800 including the Coast Guard [crs-end-strength-2026].
 
 
   The overseas footprint has no parallel. The Department of Defense manages or
@@ -3907,20 +4108,26 @@ security_military_en: >-
   It is a nuclear-weapons state prioritising modernisation, allocating $9.9
   billion in 2025 to the nuclear-armed Columbia-class submarine programme and
   $13.9 billion to the conventionally armed Virginia-class programme
-  [sipri-milex-2025]. The 2026 National Defense Strategy reorients priorities to
-  homeland defence, deterring China through denial in the Indo-Pacific, allied
-  burden-sharing and rebuilding the defence industrial base [ndstrategy-2026].
+  [sipri-milex-2025]. That modernisation now proceeds without a treaty ceiling:
+  New START expired on 5 February 2026 with no successor instrument, leaving
+  deployed strategic forces under no legally binding numerical limit
+  [newstart-cd-statement-2026].
 security_military_fr: >-
-  Les États-Unis sont la première puissance militaire mondiale, disposant d'une
-  force entièrement volontaire et d'une capacité de projection sur terre, sur
-  mer, dans les airs, dans le cyberespace et dans l'espace; la Space Force,
-  créée en 2019, en constitue la sixième armée. L'effectif actif s'établissait à
-  1 298 099 pour les cinq armées du département de la Défense à la fin de
-  l'exercice 2025 : armée de terre 454 637, marine 341 109, force aérienne 319
-  119, corps des marines 173 249 et Space Force 9 985, soit 235 575 officiers, 1
-  049 509 militaires du rang et 13 015 élèves des académies militaires; les
-  composantes de réserve y ajoutant 760 210, dont 328 870 pour la Garde
-  nationale de l'armée de terre et 105 120 pour la Garde nationale aérienne
+  Les États-Unis sont la première puissance militaire mondiale, avec une force
+  entièrement volontaire et une capacité de projection sur terre, sur mer, dans
+  les airs, dans le cyberespace et dans l'espace; la Space Force, créée en 2019,
+  en constitue la sixième armée. Le département porte le nom de département de
+  la Guerre dans ses propres publications, en vertu d'un décret présidentiel du
+  5 septembre 2025 autorisant ce titre secondaire, mais demeure statutairement
+  le département de la Défense; le présent rapport emploie partout la
+  dénomination légale, les sources étant citées sous le titre qu'elles portent
+  [eo-14347-department-of-war]. L'effectif actif s'établissait à 1 298 099 pour
+  les cinq armées du département de la Défense à la fin de l'exercice 2025 :
+  armée de terre 454 637, marine 341 109, force aérienne 319 119, corps des
+  marines 173 249 et Space Force 9 985, soit 235 575 officiers, 1 049 509
+  militaires du rang et 13 015 élèves des académies militaires; les composantes
+  de réserve y ajoutant 760 210, dont 328 870 pour la Garde nationale de l'armée
+  de terre et 105 120 pour la Garde nationale aérienne
   [budget-appendix-fy2027-personnel]. Le Congrès fixe annuellement un plafond
   autorisé en vertu du 10 U.S.C. § 115; pour l'exercice 2026, il a autorisé 1
   302 800 pour ces cinq armées, en hausse de 26 100 concentrée dans l'armée de
@@ -3988,11 +4195,11 @@ security_military_fr: >-
   Il s'agit d'un État doté de l'arme nucléaire qui privilégie la modernisation,
   ayant affecté 9,9 milliards de dollars en 2025 au programme de sous-marins de
   la classe Columbia, à armement nucléaire, et 13,9 milliards au programme de la
-  classe Virginia, à armement conventionnel [sipri-milex-2025]. La Stratégie de
-  défense nationale de 2026 réoriente les priorités vers la défense du
-  territoire, la dissuasion de la Chine par le déni dans l'Indo-Pacifique, le
-  partage du fardeau entre alliés et la reconstruction de la base industrielle
-  de défense [ndstrategy-2026].
+  classe Virginia, à armement conventionnel [sipri-milex-2025]. Cette
+  modernisation se poursuit désormais sans plafond conventionnel : le traité New
+  START a expiré le 5 février 2026 sans instrument successeur, laissant les
+  forces stratégiques déployées sans aucune limite numérique juridiquement
+  contraignante [newstart-cd-statement-2026].
 security_transnationalExposure_en: >-
   The dominant cross-border flow reversed direction during the period. Net
   international migration fell from roughly 2.7 million in 2023 to 1.3 million
@@ -4223,19 +4430,15 @@ security_diplomacy_en: >-
   transition [maduro-capture-wardept][ndstrategy-2026].
 
 
-  In the Middle East, United States and Israeli forces began major combat
-  operations against Iran on 28 February 2026, following the June 2025 strikes
-  on Iranian nuclear sites [iran-ops-transcript]. A Pakistan-mediated ceasefire
-  took effect on 8 April and was formalised in an interim memorandum of
-  understanding on 17 June [whitehouse-epic-fury-ceasefire], which the President
-  declared over on 8 July [cnbc-iran-ceasefire-over]. The naval blockade of
-  Iranian ports was reimposed thereafter and remains in force: Central Command
-  reports 44 commercial vessels redirected, two disabled and two boarded as of
-  early August 2026, and planned strikes were called off on 1 August
-  [cnn-iran-war-august2026]. The substantive negotiating channel has moved to
-  Muscat, with Iran and Oman reporting talks on a new Strait of Hormuz transit
-  route close to conclusion while Iran attributes the strait's closure to the
-  blockade [cnn-iran-war-august2026].
+  In the Middle East the country has been at war with Iran since 28 February
+  2026, fighting alongside Israel [iran-ops-transcript]. Mediation has run
+  through third parties rather than bilaterally: Pakistan brokered the ceasefire
+  that held from April to July, and the substantive channel has since moved to
+  Muscat, where Iran and Oman are negotiating a new Strait of Hormuz transit
+  route [whitehouse-epic-fury-ceasefire][cnn-iran-war-august2026]. The naval
+  blockade of Iranian ports reaches third-country commercial shipping, which
+  gives states with no part in the conflict a direct interest in its terms
+  [cnn-iran-war-august2026].
 
 
   Multilateral membership is being reduced on a scale without precedent since
@@ -4256,7 +4459,12 @@ security_diplomacy_en: >-
   recorded elsewhere in this report — the European Centre of Excellence for
   Countering Hybrid Threats, the Global Forum on Cyber Expertise, the Global
   Counterterrorism Forum and the Global Forum on Migration and Development
-  [potus-memo-withdrawals-2026][state-withdrawal-66-2026].
+  [potus-memo-withdrawals-2026][state-withdrawal-66-2026]. Ordered withdrawals
+  are now completing: membership of the World Health Organization terminated on
+  22 January 2026 [state-who-termination-2026]. The retreat reaches arms control
+  as well — the New START treaty expired on 5 February 2026 with no successor
+  instrument, leaving deployed strategic nuclear forces under no legally binding
+  numerical limit [newstart-cd-statement-2026].
 security_diplomacy_fr: >-
   Les États-Unis ancrent le plus vaste système d'alliances par traité au monde,
   tandis que leur Stratégie de défense nationale de 2026 s'oriente vers un
@@ -4315,20 +4523,16 @@ security_diplomacy_fr: >-
   [maduro-capture-wardept][ndstrategy-2026].
 
 
-  Au Moyen-Orient, les forces états-uniennes et israéliennes ont lancé des
-  opérations de combat majeures contre l'Iran le 28 février 2026, après les
-  frappes de juin 2025 sur des sites nucléaires iraniens [iran-ops-transcript].
-  Un cessez-le-feu négocié par le Pakistan est entré en vigueur le 8 avril et a
-  été formalisé dans un protocole d'entente provisoire le 17 juin
-  [whitehouse-epic-fury-ceasefire], que le président a déclaré caduc le 8
-  juillet [cnbc-iran-ceasefire-over]. Le blocus naval des ports iraniens a été
-  rétabli par la suite et demeure en vigueur : le Central Command fait état de
-  44 navires commerciaux détournés, deux mis hors d'état et deux arraisonnés au
-  début d'août 2026; des frappes prévues ont été annulées le 1er août
-  [cnn-iran-war-august2026]. Le canal de négociation substantiel s'est déplacé
-  vers Mascate; l'Iran et Oman faisant état de pourparlers proches de leur
-  conclusion sur une nouvelle voie de transit dans le détroit d'Ormuz, tandis
-  que l'Iran impute la fermeture du détroit au blocus [cnn-iran-war-august2026].
+  Au Moyen-Orient, le pays est en guerre contre l'Iran depuis le 28 février
+  2026, aux côtés d'Israël [iran-ops-transcript]. La médiation passe par des
+  tiers plutôt que par un canal bilatéral : le Pakistan a négocié le
+  cessez-le-feu en vigueur d'avril à juillet, et le canal substantiel s'est
+  depuis déplacé vers Mascate, où l'Iran et Oman négocient une nouvelle voie de
+  transit dans le détroit d'Ormuz
+  [whitehouse-epic-fury-ceasefire][cnn-iran-war-august2026]. Le blocus naval des
+  ports iraniens touche la navigation commerciale de pays tiers; ce qui donne à
+  des États étrangers au conflit un intérêt direct dans ses modalités
+  [cnn-iran-war-august2026].
 
 
   L'appartenance multilatérale se réduit à une échelle sans précédent depuis
@@ -4352,7 +4556,13 @@ security_diplomacy_fr: >-
   pour la lutte contre les menaces hybrides, le Forum mondial sur la
   cyberexpertise, le Forum mondial de lutte contre le terrorisme et le Forum
   mondial sur la migration et le développement
-  [potus-memo-withdrawals-2026][state-withdrawal-66-2026].
+  [potus-memo-withdrawals-2026][state-withdrawal-66-2026]. Les retraits ordonnés
+  se concrétisent : l'appartenance à l'Organisation mondiale de la santé a pris
+  fin le 22 janvier 2026 [state-who-termination-2026]. Ce repli atteint aussi la
+  maîtrise des armements : le traité New START a expiré le 5 février 2026 sans
+  instrument successeur, laissant les forces nucléaires stratégiques déployées
+  sans aucune limite numérique juridiquement contraignante
+  [newstart-cd-statement-2026].
 situation_en: |-
   [
     {
@@ -4427,13 +4637,13 @@ situation_fr: |-
       "events": [
         {
           "date": "2026-02-28",
-          "what": "Les forces américaines et israéliennes ont lancé des opérations de combat majeures contre l'Iran, annoncées par le président au titre d'une autorité revendiquée en vertu de l'article II [iran-ops-transcript].",
+          "what": "Les forces états-uniennes et israéliennes ont lancé des opérations de combat majeures contre l'Iran, annoncées par le président au titre d'une autorité revendiquée en vertu de l'article II [iran-ops-transcript].",
           "changed": "Cela a fait passer le pays de frappes ponctuelles sur des sites nucléaires iraniens à une guerre interétatique menée sans autorisation du Congrès pour l'emploi de la force militaire [iran-ops-transcript]."
         },
         {
           "date": "2026-04-08 – 2026-06-17",
           "what": "Un cessez-le-feu médié par le Pakistan est entré en vigueur le 8 avril 2026 et a été formalisé dans un protocole d'entente intérimaire le 17 juin [whitehouse-epic-fury-ceasefire].",
-          "changed": "Cela a suspendu les hostilités pendant environ trois mois et a fait passer la question du transit par le détroit d'Ormuz dans un instrument négocié [whitehouse-epic-fury-ceasefire]."
+          "changed": "Cela a suspendu les hostilités pendant environ trois mois et soumis la question du transit par le détroit d'Ormuz à un règlement négocié [whitehouse-epic-fury-ceasefire]."
         },
         {
           "date": "2026-07-08",
@@ -4448,12 +4658,12 @@ situation_fr: |-
       "events": [
         {
           "date": "2026-02-20",
-          "what": "La Cour suprême a jugé dans Learning Resources, Inc. v. Trump que l'International Emergency Economic Powers Act n'autorise pas le président à imposer des droits de douane, et le même jour la Proclamation 11012 a imposé une surtaxe temporaire à l'importation de 10 pour cent ad valorem sur la plupart des importations en vertu de la Section 122 du Trade Act of 1974, en vigueur le 24 février pour 150 jours [scotus-learning-resources][fr-proclamation-11012-section122].",
-          "changed": "Cela a anéanti le fondement juridique de l'essentiel du mur tarifaire et remplacé les taux par pays par un seuil unique et uniforme reposant sur une autorité de balance des paiements que le président ne peut pas prolonger [scotus-learning-resources][fr-proclamation-11012-section122][crs-lsb11398-tariffs]."
+          "what": "La Cour suprême a jugé dans Learning Resources, Inc. v. Trump que l'International Emergency Economic Powers Act n'autorisait pas le président à imposer des droits de douane; le même jour la Proclamation 11012 a imposé une surtaxe temporaire à l'importation de 10 % ad valorem sur la plupart des importations en vertu de la Section 122 du Trade Act of 1974, en vigueur le 24 février pour 150 jours [scotus-learning-resources][fr-proclamation-11012-section122].",
+          "changed": "Cela a invalidé le fondement juridique de l'essentiel du mur tarifaire et remplacé les taux par pays par un seuil unique et uniforme reposant sur une autorité de balance des paiements que le président ne peut pas prolonger [scotus-learning-resources][fr-proclamation-11012-section122][crs-lsb11398-tariffs]."
         },
         {
           "date": "2026-07-24",
-          "what": "La surtaxe de la Section 122 a expiré à sa limite légale de 150 jours, et des droits au titre de la Section 301 de 10 pour cent ou 12,5 pour cent sur les produits de 60 économies sont entrés en vigueur au même instant [fr-proclamation-11012-section122][ustr-301-forced-labor-final-action].",
+          "what": "La surtaxe de la Section 122 a expiré à sa limite légale de 150 jours, et des droits au titre de la Section 301 de 10 % ou 12,5 % sur les produits de 60 économies sont entrés en vigueur au même instant [fr-proclamation-11012-section122][ustr-301-forced-labor-final-action].",
           "changed": "Cela a fait passer l'assise tarifaire d'une autorité d'urgence à durée limitée à une autorité de recours commercial sans plafond de taux ni échéance fixe, et a lié le taux payé par un partenaire à son application d'une interdiction d'importer des biens produits par le travail forcé plutôt qu'à une négociation bilatérale [ustr-301-forced-labor-final-action]."
         }
       ],
@@ -4465,12 +4675,12 @@ situation_fr: |-
         {
           "date": "2025-09-02",
           "what": "Les États-Unis ont exécuté leur première frappe létale contre un navire que le Department of War a dit exploité par un cartel vénézuélien, et le 13 novembre 2025 la campagne a reçu le nom d'Operation Southern Spear [oss-lead-ig-q3-2026].",
-          "changed": "Cela a établi une action militaire létale permanente contre des cibles non étatiques dans les Caraïbes et le Pacifique oriental, notifiée au Congrès au titre de la War Powers Resolution plutôt qu'autorisée par lui, l'énoncé de mission et la liste des cibles désignées demeurant classés [oss-lead-ig-q3-2026]."
+          "changed": "Cela a établi une action militaire létale permanente contre des cibles non étatiques dans les Caraïbes et le Pacifique oriental, notifiée au Congrès au titre de la War Powers Resolution plutôt qu'autorisée par lui; l'énoncé de mission et la liste des cibles désignées demeurant classés [oss-lead-ig-q3-2026]."
         },
         {
           "date": "2026-01-03",
           "what": "Nicolás Maduro a été placé sous la garde des États-Unis par une opération militaire à Caracas [maduro-capture-wardept][crs-maduro-capture].",
-          "changed": "Cela a écarté par la force un chef d'État en exercice et installé les États-Unis à l'intérieur d'une transition politique vénézuélienne [maduro-capture-wardept][crs-maduro-capture]."
+          "changed": "Cela a écarté par la force un chef d'État en exercice et placé les États-Unis en position de contrôle sur une transition politique vénézuélienne [maduro-capture-wardept][crs-maduro-capture]."
         }
       ],
       "currentState": "Le rythme des frappes augmente tandis que les forces et les dépenses qui les portent diminuent : au moins 19 navires ont été frappés et environ 56 personnes tuées ou présumées telles au trimestre clos le 30 juin 2026, contre 12 navires et 40 personnes au trimestre précédent, sur des engagements trimestriels de 173,9 millions de dollars contre 527,0 millions, avec une présence navale réduite que le commandement attribue à un passage en régime permanent [oss-lead-ig-q3-2026]."
@@ -7417,8 +7627,8 @@ sources: |-
     },
     {
       "id": "scotus-learning-resources",
-      "name": "24-1287 Learning Resources, Inc. v. Trump (02/20/2026)",
-      "nameFr": "24-1287 Learning Resources, Inc. v. Trump (02/20/2026)",
+      "name": "Learning Resources, Inc. v. Trump, No. 24-1287, 607 U.S. ___ (2026)",
+      "nameFr": "Learning Resources, Inc. v. Trump, No. 24-1287, 607 U.S. ___ (2026)",
       "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
       "desc": "Slip opinion of the Supreme Court of the United States holding that the International Emergency Economic Powers Act does not authorize the President to impose tariffs.",
       "descFr": "Opinion de la Cour suprême des États-Unis jugeant que l'International Emergency Economic Powers Act n'autorise pas le président à imposer des droits de douane.",
@@ -8211,16 +8421,16 @@ sources: |-
     },
     {
       "id": "fema-dr4931-bavi",
-      "name": "Commonwealth of the Northern Mariana Islands Super Typhoon Bavi (DR-4931-MP)",
-      "url": "https://www.fema.gov/disaster/4931",
-      "desc": "Federal Emergency Management Agency major-disaster declaration (DR-4931-MP) for the Commonwealth of the Northern Mariana Islands following Super Typhoon Bavi, incident period 4-12 July 2026, declared 3 August 2026; the agency’s own disaster record.",
-      "descFr": "Déclaration de catastrophe majeure de la Federal Emergency Management Agency (DR-4931-MP) pour le Commonwealth des îles Mariannes du Nord à la suite du super typhon Bavi, période d'incident du 4 au 12 juillet 2026, déclarée le 3 août 2026; relevé de catastrophe propre à l'agence. Titre traduit : « Commonwealth des îles Mariannes du Nord — super typhon Bavi (DR-4931-MP) ».",
-      "publicationDate": "2026-08-03",
-      "accessDate": "2026-08-06",
+      "name": "Presidential Declaration of a Major Disaster for the Commonwealth of the Northern Mariana Islands",
+      "url": "https://www.federalregister.gov/documents/2026/08/07/2026-16147/presidential-declaration-of-a-major-disaster-for-the-commonwealth-of-the-northern-mariana-islands",
+      "desc": "Presidential major-disaster declaration for Super Typhoon Bavi (FEMA-4931-DR), published in the Federal Register; incident period 4-12 July 2026, declared 3 August 2026; the official gazette record of the declaration.",
+      "descFr": "Déclaration présidentielle de catastrophe majeure pour le Commonwealth des îles Mariannes du Nord à la suite du super typhon Bavi (FEMA-4931-DR), publiée au Federal Register; période d'incident du 4 au 12 juillet 2026, déclarée le 3 août 2026; relevé au journal officiel. Titre traduit : « Déclaration présidentielle de catastrophe majeure pour le Commonwealth des îles Mariannes du Nord ».",
+      "publicationDate": "2026-08-07",
+      "accessDate": "2026-08-07",
       "confidence": "High",
       "citationType": "Fact",
       "volatility": "Med",
-      "nameFr": "Commonwealth of the Northern Mariana Islands Super Typhoon Bavi (DR-4931-MP)"
+      "nameFr": "Presidential Declaration of a Major Disaster for the Commonwealth of the Northern Mariana Islands"
     },
     {
       "id": "scotus-callais-2026",
@@ -8286,5 +8496,70 @@ sources: |-
       "citationType": "Interpretation",
       "volatility": "Med",
       "nameFr": "Mullin v. Doe: Supreme Court Allows Termination of Temporary Protected Status for Haiti and Syria"
+    },
+    {
+      "id": "mts-june-2026",
+      "name": "Monthly Treasury Statement of Receipts and Outlays of the United States Government, June 2026",
+      "url": "https://fiscaldata.treasury.gov/static-data/published-reports/mts/MonthlyTreasuryStatement_202606.pdf",
+      "desc": "Monthly account of federal receipts and outlays published by the Bureau of the Fiscal Service, reporting customs duties gross of refunds and the monthly and cumulative budget balance; primary federal fiscal record.",
+      "descFr": "Relevé mensuel des recettes et des dépenses de l'État fédéral publié par le Bureau of the Fiscal Service, indiquant les droits de douane bruts avant remboursements et le solde budgétaire mensuel et cumulé; relevé budgétaire fédéral primaire. Titre traduit : « Relevé mensuel du Trésor des recettes et dépenses du gouvernement des États-Unis, juin 2026 ».",
+      "publicationDate": "2026-07-13",
+      "accessDate": "2026-08-07",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "High",
+      "nameFr": "Monthly Treasury Statement of Receipts and Outlays of the United States Government, June 2026"
+    },
+    {
+      "id": "cnbc-tariff-refunds-2026",
+      "name": "Trump admin refunds $100 billion in 'liberation day' tariffs",
+      "url": "https://www.cnbc.com/2026/08/05/trump-tariffs-refunds-ieepa-lawsuit.html",
+      "desc": "Business news reporting on Customs and Border Protection's court-ordered progress declarations to the Court of International Trade on refunds of duties collected under the invalidated authority; commercial reporting of a court filing, pending direct access to the docket.",
+      "descFr": "Reportage de presse économique sur les déclarations d'avancement ordonnées par la justice que la Customs and Border Protection a soumises à la Court of International Trade concernant les remboursements de droits perçus au titre de l'autorité invalidée; reportage commercial d'un dépôt judiciaire, en attendant l'accès direct au dossier. Titre traduit : « L'administration Trump rembourse 100 milliards de dollars de droits de douane du \"jour de la libération\" ».",
+      "publicationDate": "2026-08-05",
+      "accessDate": "2026-08-07",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "High",
+      "nameFr": "Trump admin refunds $100 billion in 'liberation day' tariffs"
+    },
+    {
+      "id": "eo-14347-department-of-war",
+      "name": "Executive Order 14347 — Restoring the United States Department of War",
+      "url": "https://www.federalregister.gov/documents/2025/09/10/2025-17508/restoring-the-united-states-department-of-war",
+      "desc": "Executive order published in the Federal Register authorising Department of War as a secondary title for the Department of Defense in official communications and non-statutory documents, and directing the Secretary to recommend actions toward a permanent renaming; primary legal instrument.",
+      "descFr": "Décret publié au Federal Register autorisant « Department of War » comme titre secondaire du Department of Defense dans les communications officielles et les documents non statutaires, et chargeant le secrétaire de recommander des mesures en vue d'un changement de nom permanent; instrument juridique primaire. Titre traduit : « Décret 14347 — Rétablissement du Department of War des États-Unis ».",
+      "publicationDate": "2025-09-10",
+      "accessDate": "2026-08-07",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med",
+      "nameFr": "Executive Order 14347 — Restoring the United States Department of War"
+    },
+    {
+      "id": "cit-ieepa-refund-order",
+      "name": "Atmus Filtration, Inc. v. United States, Court No. 26-01259 (Ct. Int'l Trade) — amended refund orders of 20 and 27 March 2026",
+      "nameFr": "Atmus Filtration, Inc. v. United States, Court No. 26-01259 (Ct. Int'l Trade) — amended refund orders of 20 and 27 March 2026",
+      "url": "https://www.courtlistener.com/docket/72339861/atmus-filtration-inc-v-united-states/",
+      "desc": "Docket of the Court of International Trade proceeding before Judge Richard K. Eaton in which the order directing liquidation and reliquidation of entries without regard to the invalidated duties was entered, including declarations by the Executive Director of Customs and Border Protection's Trade Programs Directorate; mirrored from the federal docket system by the Free Law Project. The plaintiff withdrew and the action was dismissed on 8 April 2026, the court re-entering a materially similar order the previous day in Euro-Notions Florida v. United States, Court No. 25-595.",
+      "descFr": "Dossier de la procédure devant la Court of International Trade présidée par le juge Richard K. Eaton dans laquelle a été rendue l'ordonnance de liquidation et de reliquidation des entrées sans tenir compte des droits invalidés, y compris les déclarations du directeur exécutif de la Trade Programs Directorate de la Customs and Border Protection; reproduit du système de dossiers fédéral par le Free Law Project. Le demandeur s'est désisté et l'action a été rejetée le 8 avril 2026, la cour ayant rendu la veille une ordonnance substantiellement similaire dans Euro-Notions Florida v. United States, Court No. 25-595. Titre traduit : « Atmus Filtration, Inc. c. États-Unis, dossier nº 26-01259 (Cour du commerce international) — ordonnances de remboursement modifiées des 20 et 27 mars 2026 ».",
+      "publicationDate": "2026-03-27",
+      "accessDate": "2026-08-07",
+      "confidence": "High",
+      "citationType": "Fact",
+      "volatility": "Med"
+    },
+    {
+      "id": "hk-ieepa-appeal-2026",
+      "name": "IEEPA Tariff Refund Update: Government Appeals CIT Refund Order and the Road Ahead for Importers",
+      "nameFr": "IEEPA Tariff Refund Update: Government Appeals CIT Refund Order and the Road Ahead for Importers",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/06/ieepa-tariff-refund-update-government-appeals",
+      "desc": "Client alert of a United States law firm reporting the government's Federal Circuit appeal of the trade court's refund orders and the phased eligibility of entry categories under the refund system; commercial legal analysis, corroborated by several firms reporting the same filings.",
+      "descFr": "Note d'information d'un cabinet d'avocats américain rapportant l'appel du gouvernement devant le Federal Circuit contre les ordonnances de remboursement de la cour du commerce, et l'admissibilité échelonnée des catégories d'entrées dans le système de remboursement; analyse juridique commerciale, corroborée par plusieurs cabinets rapportant les mêmes dépôts. Titre traduit : « Mise à jour sur les remboursements de droits IEEPA : le gouvernement fait appel de l'ordonnance de remboursement de la CIT et la suite pour les importateurs ».",
+      "publicationDate": "2026-06-15",
+      "accessDate": "2026-08-07",
+      "confidence": "Med",
+      "citationType": "Interpretation",
+      "volatility": "High"
     }
   ]
