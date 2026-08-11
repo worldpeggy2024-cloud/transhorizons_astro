@@ -1264,89 +1264,262 @@ ${passBElementList()}
 
 Section-by-section instructions:
 
+FORMAT — each field below is a bulleted CHECKLIST, not a paragraph. EVERY plain "- " bullet is a REQUIRED element: cover it in that field's prose, or declare it {"na": "<reason>"} in the coverage map (an element covered nowhere and not declared na fails the apply gate). No bullet is optional and none outranks another. Bullets that lead with a CAPS tag — OPENER, BOUNDARY, PLACEMENT, VOCABULARY, VOLATILITY, DISCIPLINE, SOURCING, CITATION, FALLBACK, RESPONSE RECORD, INSTANCES, NAMED-ACTOR RULE, GUARD, ANCHOR, ANCHORED SYNTHESIS — are NOT content to cover but rules on HOW to write the field, WHERE a topic belongs, or WHAT to cite; obey them, but do not treat them as coverage-map elements.
+
 GENERATION ORDER — there is NO executive snapshot (its former content lives in the section openers). The DERIVATIVE items — the SCORECARD (values + anchors + rationales) and the BASELINE — are NOT composed by this pass: emit them EMPTY (see the empty-emissions block below). They are composed by the dedicated DERIVATIVES pass, which runs after the situation pass has installed and its peer corrections are approved — the last point at which the report's facts can change (amendment 2026-07-19 to the rework's compose-last rule). Within SECURITY, compose posture LAST (it anchors to the other four security fields). The schema is key-addressed and key order carries no meaning.
 
 baseline (en and fr): EMITTED EMPTY ("" in both languages) — composed by the derivatives pass. Do not draft it; the page deliberately renders nothing where the baseline is empty.
 
-political.powerStructure: OPENER (required): the regime type and how power is won and held. Then: who holds the executive and how it was won. State legislative control separately from executive control — in presidential and semi-presidential systems these diverge, and the report must say plainly whether government is unified or divided. Where the legislature is bicameral, give each chamber's composition separately, each cited to that chamber's own official live standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date). Use the country's own vocabulary — "governing coalition," "majority," "divided government" — do not force one system's term onto another's structure. Majority/minority/coalition; opposition strength and legitimacy. Where actual power sits outside the formal organ, locate it explicitly. Judicial and media independence belong to rightsAndChecks; who controls the security forces belongs to stabilityDrivers. This is the MOST VOLATILE field in the report — dated to run date. ${powerAnchorText}
+political.powerStructure:
+- OPENER: the regime type and how power is won and held.
+- who holds the executive and how it was won
+- legislative control, stated SEPARATELY from executive control — in presidential and semi-presidential systems these diverge; say plainly whether government is unified or divided
+- where the legislature is bicameral, each chamber's composition separately, each cited to that chamber's own official live standings page verified on the run date (a standings source is disqualified if it predates the most recent composition-changing event, regardless of publication date)
+- majority / minority / coalition; opposition strength and legitimacy
+- where actual power sits outside the formal organ, locate it explicitly
+- VOCABULARY: use the country's own terms — "governing coalition," "majority," "divided government" — do not force one system's term onto another's structure.
+- BOUNDARY: judicial and media independence belong to rightsAndChecks; who controls the security forces belongs to stabilityDrivers.
+- VOLATILITY: the MOST VOLATILE field in the report — dated to run date.
+- ANCHOR: ${powerAnchorText}
 
-political.rightsAndChecks: judicial independence and appointment mechanism; media independence and press freedom; civil-liberties and human-rights record. Sourcing: prefer regional instruments where they exist; court rulings, national human-rights institutions and regional human-rights bodies are primary; Freedom House / Bertelsmann usable with the scorer and its bias named explicitly.
+political.rightsAndChecks:
+- judicial independence and appointment mechanism
+- media independence and press freedom
+- civil-liberties and human-rights record
+- SOURCING: prefer regional instruments where they exist; court rulings, national human-rights institutions and regional human-rights bodies are primary; Freedom House / Bertelsmann usable with the scorer and its bias named explicitly.
 
-political.stabilityDrivers: What legitimizes the regime; armed-forces and security-force loyalty AND who controls them; coalition composition; business elite alignment; elite cohesion (intra-power-bloc unity — distinct from social cohesion, which belongs in SOCIETY).
+political.stabilityDrivers:
+- what legitimizes the regime
+- armed-forces and security-force loyalty AND who controls them
+- coalition composition
+- business-elite alignment
+- elite cohesion (intra-power-bloc unity)
+- BOUNDARY: elite cohesion is distinct from social cohesion, which belongs in SOCIETY.
 
-political.shockAbsorbers: What cushions shocks vs. what could accelerate instability — both dimensions in a single paragraph.
+political.shockAbsorbers:
+- what CUSHIONS shocks
+- what could ACCELERATE instability
+- cover BOTH dimensions.
 
-political.stateStructure: unitary or federal; the administrative divisions named using the country's own term (provinces and territories, Länder, wilayas, oblasts…); which powers sit at which level; asymmetries between units. Placement rule: administrative divisions belong here, never alongside Indigenous or predating sovereignty in constitutionalSubstrate.
+political.stateStructure:
+- unitary or federal
+- the administrative divisions, named using the country's own term (provinces and territories, Länder, wilayas, oblasts…)
+- which powers sit at which level
+- asymmetries between units
+- PLACEMENT: administrative divisions belong HERE, never alongside Indigenous or predating sovereignty in constitutionalSubstrate.
 
-political.constitutionalSubstrate: OPENER (required): name the constitutional form — the founding instrument(s) and how sovereignty is allocated (unitary or federal; parliamentary or presidential; one legal tradition or several). Then: the deep legal architecture beneath current politics — the allocation of sovereignty between levels of government; the founding and re-founding instruments that fix that allocation; and the status of any peoples, nations, or territories whose sovereignty predates the central state, sits outside it, or is held in a diminished or non-voting form relative to it. Identify the country's substrate on its own terms. Do not import another country's structure. Where distinct legal substrates coexist, hold them SEPARATELY — do not collapse them or project a single model of consent onto plural governance. State explicitly whether the substrate is STABLE or IN MOTION: where apex-court doctrine is actively reallocating power, that reallocation is present-state fact and belongs in this field, cited to rulings — not deferred to the trajectory layer and not treated as ordinary politics. Sources: the founding text, apex-court rulings, the statutory codification of the sovereignty relationship, treaty text where applicable, official gazette — never news, never advocacy; a legislature's non-partisan research service is admissible as citationType: Interpretation. Instances (examples, not the schema — use the ones the country actually has): settler states with treaty and title lineages, held distinct where historic-treaty/modern-agreement and unceded/title-litigated substrates coexist; federal states, where the vertical allocation and the doctrine currently governing it are the substrate; states with a legal re-founding, where later amendments or instruments reset the original terms; states holding unincorporated, overseas, or non-voting territories, where the legal status of those territories and their populations is substrate. ${substrateAnchorText}
+political.constitutionalSubstrate:
+- OPENER: name the constitutional form — the founding instrument(s) and how sovereignty is allocated (unitary or federal; parliamentary or presidential; one legal tradition or several).
+- the deep legal architecture beneath current politics — the allocation of sovereignty between levels of government
+- the founding and re-founding instruments that fix that allocation
+- the status of any peoples, nations, or territories whose sovereignty predates the central state, sits outside it, or is held in a diminished or non-voting form relative to it
+- STATE whether the substrate is STABLE or IN MOTION — where apex-court doctrine is actively reallocating power, that reallocation is present-state fact and belongs in this field, cited to rulings; not deferred to the trajectory layer, not treated as ordinary politics
+- DISCIPLINE: identify the country's substrate on its own terms; do not import another country's structure. Where distinct legal substrates coexist, hold them SEPARATELY — do not collapse them or project a single model of consent onto plural governance.
+- SOURCING: the founding text, apex-court rulings, the statutory codification of the sovereignty relationship, treaty text where applicable, official gazette — never news, never advocacy; a legislature's non-partisan research service is admissible as citationType: Interpretation.
+- INSTANCES (examples, not the schema — use the ones the country actually has): settler states with treaty and title lineages, held distinct where historic-treaty/modern-agreement and unceded/title-litigated substrates coexist; federal states, where the vertical allocation and the doctrine currently governing it are the substrate; states with a legal re-founding, where later amendments or instruments reset the original terms; states holding unincorporated, overseas, or non-voting territories, where the legal status of those territories and their populations is substrate.
+- ANCHOR: ${substrateAnchorText}
 
 ${situationFieldText}
 
-economy.realEconomy: OPENER (required): name the dominant economic character before any numbers — the shape of production (primary / manufacturing / services), what the economy lives on, whether it is diversified or concentrated on a few sectors. Then: sectors and what people do for a living; growth; sector performance — specific figures and years. Technology as a business sector lives here. Fiscal / monetary / debt content belongs to publicFinances, NOT here.
+economy.realEconomy:
+- OPENER: the dominant economic character, named BEFORE any numbers — the shape of production (primary / manufacturing / services); what the economy lives on; diversified or concentrated on a few sectors.
+- sectors and what people do for a living
+- growth — specific figures and years
+- sector performance — specific figures and years
+- technology as a business sector lives here
+- BOUNDARY: fiscal / monetary / debt content belongs to publicFinances, NOT here.
 
-economy.publicFinances: the state's money — budget balance (deficit/surplus, % of GDP), public debt as a share of the economy, central-bank / monetary-policy stance, inflation, credit rating — figures with years. (Debt SIZE here; WHO HOLDS it in externalVulnerability.)
+economy.publicFinances:
+- budget balance (deficit / surplus, % of GDP) — figures with years
+- public debt as a share of the economy — figures with years
+- central-bank / monetary-policy stance
+- inflation — figures with years
+- credit rating
+- BOUNDARY: debt SIZE here; WHO HOLDS it in externalVulnerability.
 
-economy.externalVulnerability: Export/import profile by value and commodity; trade partner concentration; sovereign debt holders; IMF program status; sanctions exposure.
+economy.externalVulnerability:
+- export / import profile by value and commodity
+- trade-partner concentration
+- sovereign-debt holders
+- IMF program status
+- sanctions exposure
 
-economy.politicalEconomy: OPENER (required): the state–market configuration before any distributional detail — state-directed / mixed / market-led; the role of Crown corporations, state-owned enterprises or sovereign funds where they exist; where the boundary is currently contested. Then: who benefits and who loses under the current model; business elite structure — NAMING the load-bearing entities (largest firms, principal producers of the leading sectors, main labour federations), each cited; what reforms are technically necessary vs. politically possible. NAMED-ACTOR RULE applies: a nameless "business elite" or producer-less sector is an under-sourced claim.
+economy.politicalEconomy:
+- OPENER: the state–market configuration BEFORE any distributional detail — state-directed / mixed / market-led; the role of Crown corporations, state-owned enterprises or sovereign funds where they exist; where the boundary is currently contested.
+- who benefits and who loses under the current model
+- business-elite structure — NAMING the load-bearing entities (largest firms, principal producers of the leading sectors, main labour federations), each cited
+- what reforms are technically necessary vs. politically possible
+- NAMED-ACTOR RULE: a nameless "business elite" or producer-less sector is an under-sourced claim.
 
-TERRITORY — describe the physical body of the country ON ITS OWN TERMS, not merely a risk to assets or an input to trade. Throughout: PAIR every exposure with the capacity to act on it and name the gap; LOCATE effects geographically — who inside the country is exposed or served; BIND every projection to its emissions scenario AND horizon; report DEMONSTRATED over DECLARED. Neither doom-catalogue nor techno-triumph:
+TERRITORY — describe the physical body of the country ON ITS OWN TERMS, not merely a risk to assets or an input to trade. Neither doom-catalogue nor techno-triumph. Disciplines throughout the peer:
+- PAIR every exposure with the capacity to act on it, and name the gap.
+- LOCATE effects geographically — who inside the country is exposed or served.
+- BIND every projection to its emissions scenario AND horizon.
+- report DEMONSTRATED over DECLARED.
 
-OPENER (required): the territory peer opens — at the start of territory.geography — for the country as a whole: landlocked / coastal / island / archipelago / continent / peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours are.
+territory.geography:
+- OPENER (the territory peer's opener, at the start of territory.geography): the country as a whole — landlocked / coastal / island / archipelago / continent / peninsula; mountainous / flat / diversified; geographically isolated or embedded; who the neighbours are.
+- the physical arrangement the country must overcome to function as one country — land area and internal distances
+- habitable vs empty land
+- coastlines and ports
+- ${geographyPeripheryText}
+- for large or fragmented states this is often the central fact, not backdrop
+- BOUNDARY: internal connectivity (road, rail, grid, broadband) belongs to metabolism, NOT here; distinct from the border-security question (SECURITY).
 
-territory.geography: the physical arrangement the country must overcome to function as one country — land area and internal distances; habitable vs empty land; coastlines and ports; ${geographyPeripheryText}. Internal connectivity (road, rail, grid, broadband) belongs to metabolism, NOT here. For large or fragmented states this is often the central fact, not backdrop. Distinct from the border-security question (SECURITY).
+territory.minerals:
+- the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named), including undeveloped and stranded deposits
+- reserve figures are political — flag disputed or state-controlled counts
+- BOUNDARY: what the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
 
-territory.minerals: the critical-mineral and subsurface endowment — what is physically present (reserves and resources, each with year and estimating body named; reserve figures are political — flag disputed or state-controlled counts), including undeveloped and stranded deposits. What the ground HOLDS, distinct from the mining sector's output and exports (ECONOMY).
+territory.biosphere:
+- the biological and renewable base — forests, freshwater, arable land, fisheries — as physical stock, with year and source
+- its condition / trend (depletion, degradation, resilience)
+- BOUNDARY: distinct from agricultural / forestry GDP (ECONOMY).
 
-territory.biosphere: the biological and renewable base — forests, freshwater, arable land, fisheries — as physical stock and its condition/trend (depletion, degradation, resilience), with year and source. Distinct from agricultural/forestry GDP (ECONOMY).
+territory.climate:
+- OPENER: the baseline climate type (cold / hot / temperate / tropical / arid; high altitude; uniform or dramatically regional), BEFORE any warming, exposure, or hazard content — warming is a change, and a change needs a baseline.
+- observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically
+- every projection carries its emissions scenario AND horizon
+- PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence
+- DISCIPLINE: physical science only.
 
-territory.climate: OPENER (required): establish the baseline climate type (cold / hot / temperate / tropical / arid; high altitude; uniform or dramatically regional) before any warming, exposure, or hazard content. Warming is a change; a change needs a baseline. Then: observed and projected physical climate — zones, warming already recorded, and principal hazards (flood, wildfire, drought, heat, sea-level rise, permafrost thaw) LOCATED geographically. Every projection carries its emissions scenario AND horizon. Physical science only. PAIR each exposure with the adaptive capacity to meet it; name who inside the country is exposed vs who can afford the defence.
+territory.metabolism:
+- how the country physically runs and circulates AS A SYSTEM — energy, food and water flows
+- movement of goods and people within the country
+- the physical communications backbone
+- self-sufficiency vs dependence in each (each such claim cited, never asserted bare), and the networks that carry them (absorbs energy + transport + communications, plus the connectivity networks removed from geography)
+- DISCIPLINE: open directly on the substance — do NOT prefix the field with a scope label ("Scope: …") or a list of the topics to come; that is meta-commentary and is cut.
+- BOUNDARY: circulation WITHIN the country, not export logistics (ECONOMY); physical comms infrastructure, not the media ecosystem (SOCIETY); throughput, not balance-sheet.
 
-territory.metabolism: how the country physically runs and circulates AS A SYSTEM — energy, food and water flows; movement of goods and people within the country; the physical communications backbone; self-sufficiency vs dependence in each (each such claim cited, never asserted bare), and the networks that carry them (absorbs energy + transport + communications, plus the connectivity networks removed from geography). Open directly on the substance: do NOT prefix the field with a scope label ("Scope: …") or a list of the topics to come — that is meta-commentary and is cut. Boundaries: circulation WITHIN the country, not export logistics (ECONOMY); physical comms infrastructure, not the media ecosystem (SOCIETY); throughput, not balance-sheet.
+territory.transition:
+- the country's position in decarbonization — energy mix, emissions profile and TRAJECTORY
+- pledged targets measured against DELIVERED policy — a target is not an outcome; report the actual path against the pledge and name the gap
+- SOURCING: Climate Action Tracker as the PRIMARY pledge-vs-policy instrument.
 
-territory.transition: the country's position in decarbonization — energy mix, emissions profile and TRAJECTORY, pledged targets measured against DELIVERED policy. A target is not an outcome; report the actual path against the pledge and name the gap. Climate Action Tracker as the PRIMARY pledge-vs-policy instrument.
+CAPACITY TO DELIVER — whether the state can DO: build, permit, deliver, run — present-state and sourceable. NOT what the country has (ECONOMY) or who benefits (SOCIETY), but whether intent becomes built fact; "knowledge isn't the constraint, capacity is" becomes a measured field.
+- ANCHOR: ${capacityAnchorText}
 
-CAPACITY TO DELIVER — whether the state can DO: build, permit, deliver, run — present-state and sourceable. NOT what the country has (ECONOMY) or who benefits (SOCIETY), but whether intent becomes built fact. Where "knowledge isn't the constraint, capacity is" becomes a measured field: ${capacityAnchorText}
+capacity.inheritedTerrain:
+- OPENER: the structural terrain the state works against, stated BEFORE any performance claim.
+- geographic and demographic scale
+- resource base
+- colonial / extractive legacy and terms of trade
+- damage from armed conflict fought on its own soil (war destruction, wartime displacement, munitions contamination) — stated plainly even where there is none
+- the inherited education and health base
+- ANCHORED SYNTHESIS: point at facts already cited in territory.*, society.*, economy.* with [dot.path] anchors; introduce NO new sourced facts. This field is the denominator for every performance claim in the CAPACITY peer.
+- GUARD: capacity is inherited and distributed — by history, colonialism, resource geography, luck — never earned or deserved; a capacity gap is NEVER rendered as a merit gap.
+- GUARD: in a settler or colonised state, colonial dispossession, slavery and forced removal ARE part of the inherited terrain — they belong to the colonial / extractive legacy element above and are NEVER rendered as absent. The armed-conflict null covers war damage on the territory only, never these.
 
-capacity.inheritedTerrain: OPENER (required): the structural terrain the state works against, before any performance claim. Then: geographic and demographic scale; resource base; colonial / extractive legacy and terms of trade; damage from armed conflict fought on its own soil (war destruction, wartime displacement, munitions contamination), stated plainly even where there is none; the inherited education and health base. ANCHORED SYNTHESIS — point at facts already cited in territory.*, society.*, economy.* with [dot.path] anchors; introduce NO new sourced facts. It is the denominator for every performance claim in this section. GUARD (mandatory): capacity is inherited and distributed — by history, colonialism, resource geography, luck — never earned or deserved. A capacity gap is never rendered as a merit gap. In a settler or colonised state, colonial dispossession, slavery and forced removal are part of the inherited terrain — they belong to the colonial/extractive legacy element above and are NEVER rendered as absent. The armed-conflict null covers war damage on the territory only, never these.
+capacity.steering:
+- governance-as-process, distinct from execution — can the government prioritise among competing demands, implement what it announces, build consensus with strategic actors, and learn from policy
+- RESPONSE RECORD: the announced-versus-implemented record must span the DOMAINS where the report documents shortfalls (delivery, public services, staffing, approvals — never fiscal policy alone). For each such domain, state what response was announced, attempted, or budgeted, cited — or state plainly that the approved sources record none (that absence is itself a finding). The gap register's class assignment reads its attempt record from THIS field.
+- CITATION: citationType Interpretation, ANCHORED to the observable record (announced priorities vs implemented ones, auditor-general and evaluation reports, delivered-vs-declared). One to two paragraphs.
 
-capacity.steering: governance-as-process, distinct from execution — can the government prioritise among competing demands, implement what it announces, build consensus with strategic actors, and learn from policy. citationType: Interpretation, ANCHORED to the observable record (announced priorities vs implemented ones, auditor-general and evaluation reports, delivered-vs-declared). One to two paragraphs. RESPONSE RECORD (added 2026-07-20 — the first USA gap register came back with 12 of 20 items classed never-attempted, a finding about the REPORT, not the country): the announced-versus-implemented record must span the DOMAINS where the report documents shortfalls (delivery, public services, staffing, approvals — never fiscal policy alone). For each such domain, state what response was announced, attempted, or budgeted, cited — or state plainly that the approved sources record none (that absence is itself a finding). The gap register's class assignment reads its attempt record from THIS field.
+capacity.approvals:
+- can the state say yes or no to a major project, and how long does that take?
+- approval and permitting timelines for major projects
+- regulatory predictability
+- the record of projects proposed vs consented vs built
+- FALLBACK: where no published approvals regime exists, name and measure the actual binding constraint instead.
 
-capacity.approvals: can the state say yes or no to a major project, and how long does that take? Approval and permitting timelines for major projects; regulatory predictability; the record of projects proposed vs consented vs built. Where no published approvals regime exists, name and measure the actual binding constraint instead.
+capacity.delivery:
+- the state's realised record of executing INFRASTRUCTURE AT SCALE, distinct from stated intent
+- infrastructure deficit
+- cost and schedule performance
+- the administrative and fiscal ability to execute capital projects
 
-capacity.delivery: the state's realised record of executing INFRASTRUCTURE AT SCALE, distinct from stated intent — infrastructure deficit; cost and schedule performance; the administrative and fiscal ability to execute capital projects.
+capacity.publicServices:
+- the state's realised record of running CONTINUOUS public-service systems — health and education systems (staffing, coverage, access, waiting times, quality of provision), and other universal services where relevant
+- BOUNDARY: receives the systems half of society.wellbeing (outcomes stay there).
 
-capacity.publicServices: the state's realised record of running CONTINUOUS public-service systems — health and education systems (staffing, coverage, access, waiting times, quality of provision), and other universal services where relevant. Receives the systems half of society.wellbeing (outcomes stay there).
-
-capacity.productivity: productivity level and trend; internal barriers to the movement of goods, labour and capital between subnational units — ${productivityTermText}; value-add processing built domestically vs raw material exported for others to process; innovation and research capacity.
+capacity.productivity:
+- productivity level and trend
+- internal barriers to the movement of goods, labour and capital between subnational units — ${productivityTermText}
+- value-add processing built domestically vs raw material exported for others to process
+- innovation and research capacity
 
 capacity.knownAndUnbuilt: EMITTED EMPTY ("" both languages) — the GAP REGISTER, composed by the derivatives pass after the situation pass installs (it indexes gaps the finished report asserts; a register composed before the event layer can be falsified by it).
 
 SOCIETY — describe the society ON ITS OWN TERMS, before and independent of any stability implication; a society is a component of the country in itself, not a risk factor:
 
-society.demographics: OPENER (required, kept very short): indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed. Migration numbers depend on this baseline. Then: total population and age structure (median age, youth-bulge or ageing reality); urban/rural split; internal and cross-border migration patterns; fertility/dependency where relevant. All figures tied to a year.
+society.demographics:
+- OPENER (kept very short): indigenous-continuous / settler-immigrant-built / mixed from the onset / historically closed — migration numbers depend on this baseline.
+- total population and age structure (median age, youth-bulge or ageing reality)
+- urban / rural split
+- internal and cross-border migration patterns
+- fertility / dependency where relevant
+- DISCIPLINE: all figures tied to a year.
 
-society.composition: ethnic composition (rounded shares with year and source) and the cleavage geometry across ethnicity, language and religion. State where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame). Name the geometry; do not just list groups. Shares = Fact; geometry judgment = Interpretation. Language content lives in its own field below, NOT here.
+society.composition:
+- ethnic composition (rounded shares with year and source)
+- the cleavage geometry across ethnicity, language and religion — state where the principal fault lines run, and EXPLICITLY whether the cleavages are CROSS-CUTTING (membership on one cleavage does not predict membership on another — tends to defuse) or REINFORCING (cleavages stack along the same line — tends to inflame)
+- DISCIPLINE: name the geometry, do not just list groups. Shares = Fact; geometry judgment = Interpretation.
+- BOUNDARY: language content lives in its own field below, NOT here.
 
-society.language: linguistic composition (rounded shares, year, source; flag contested or suppressed counts); the lived texture the census label hides (diglossia, vernacular vs official, lingua franca, language of instruction vs home language); political salience — how far language structures authority, allegiance and access (official-language regime, language law, linguistic nationalism). Name each source and its known bias.
+society.language:
+- linguistic composition (rounded shares, year, source; flag contested or suppressed counts)
+- the lived texture the census label hides (diglossia, vernacular vs official, lingua franca, language of instruction vs home language)
+- political salience — how far language structures authority, allegiance and access (official-language regime, language law, linguistic nationalism)
+- SOURCING: name each source and its known bias.
 
-society.religion: (a) composition rounded, and the fault line if there is one; (b) lived/syncretic texture — indigenous, folk, and syncretic practice the official label hides; (c) political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience). For every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
+society.religion:
+- composition rounded, and the fault line if there is one
+- lived / syncretic texture — indigenous, folk, and syncretic practice the official label hides
+- political salience — how far religion structures authority, allegiance, and daily life (e.g. parallel religious authority such as Sufi brotherhoods; prosperity-gospel political mobilisation; or high adherence with low salience)
+- SOURCING: for every religious-composition figure, NAME the source and its known bias, and flag where the count itself is contested or politically suppressed. Round, do not over-precise.
 
-society.wellbeing: health and educational OUTCOMES as a component of the country in itself — life expectancy, healthy-life expectancy, principal mortality/morbidity drivers, child/maternal mortality where relevant; educational attainment, literacy, skills — each with the access gradient. Outcomes only; the systems that produce them go to capacity.publicServices.
+society.wellbeing:
+- health OUTCOMES — life expectancy, healthy-life expectancy, principal mortality / morbidity drivers, child / maternal mortality where relevant
+- educational OUTCOMES — educational attainment, literacy, skills
+- each with the access gradient
+- BOUNDARY: outcomes only; the systems that produce them go to capacity.publicServices.
 
-society.cohesion: population-wide social trust (interpersonal AND institutional), social capital, and how the society sees itself, including national identity and self-conception. Use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check. ${cohesionAnchorText}
+society.cohesion:
+- population-wide social trust (interpersonal AND institutional)
+- social capital
+- how the society sees itself, including national identity and self-conception
+- SOURCING: use citizen self-report survey data (the region's own barometer / WVS / Pew) as the PRIMARY instrument here — not as a triangulation check.
+- ANCHOR: ${cohesionAnchorText}
 
 SECURITY & DIPLOMACY — display order posture → internal → military → transnationalExposure → diplomacy; COMPOSE posture LAST (it is an anchored synthesis of the other four):
 
-security.posture: OPENER (required): the overall security posture (defensive / expeditionary / neutral / alliance-dependent) and diplomatic orientation (aligned / non-aligned / hedging). ANCHORED SYNTHESIS via [dot.path] anchors to security.internal / security.military / security.transnationalExposure / security.diplomacy; introduces no facts of its own.
+security.posture:
+- OPENER: the overall security posture (defensive / expeditionary / neutral / alliance-dependent) and diplomatic orientation (aligned / non-aligned / hedging).
+- ANCHORED SYNTHESIS: via [dot.path] anchors to security.internal / security.military / security.transnationalExposure / security.diplomacy; introduces no facts of its own. Composed LAST.
 
-security.internal: armed groups; organised crime, trafficking, illicit finance; communal violence; terrorism threat level; corruption in security forces — name the auditing body and whether it is independent of the forces, and where the only sources are the forces' own, say so; border situation; the state's monopoly on force and territorial control across the whole territory. Military strength belongs to military, NOT here. (May reference the SOCIETY section, but does not replace it.)
+security.internal:
+- armed groups
+- organised crime, trafficking, illicit finance
+- communal violence
+- terrorism threat level
+- corruption in security forces — name the auditing body and whether it is independent of the forces; where the only sources are the forces' own, say so
+- border situation
+- the state's monopoly on force and territorial control across the whole territory
+- BOUNDARY: military strength belongs to military, NOT here. (May reference the SOCIETY section, but does not replace it.)
 
-security.military: force size and structure; defence spending in money and as a share of the economy; domains — land, sea, air, cyber, space; conscription vs volunteer; foreign bases hosted or held; nuclear status; whether the force can project or only defend. Reference instrument: International Institute for Strategic Studies, Military Balance. Boundary: capability here; loyalty and control remain in political.stabilityDrivers.
+security.military:
+- force size and structure
+- defence spending in money and as a share of the economy
+- domains — land, sea, air, cyber, space
+- conscription vs volunteer
+- foreign bases hosted or held
+- nuclear status
+- whether the force can project or only defend
+- SOURCING: reference instrument — International Institute for Strategic Studies, Military Balance.
+- BOUNDARY: capability here; loyalty and control remain in political.stabilityDrivers.
 
-security.transnationalExposure: cross-border flows and non-state entanglements — trafficking, illicit finance, cross-border crime, foreign interference and disinformation, migration pressure, shared-resource frictions. Dividing rule: relationships with named states → diplomacy; flows and non-state entanglements → here. Territorial disputes stay in diplomacy.
+security.transnationalExposure:
+- cross-border flows and non-state entanglements — trafficking, illicit finance, cross-border crime, foreign interference and disinformation, migration pressure, shared-resource frictions
+- BOUNDARY: relationships with named states → diplomacy; flows and non-state entanglements → here; territorial disputes stay in diplomacy.
 
-security.diplomacy: treaty alliances; multilateral memberships; transactional partners; territorial disputes; regional flashpoints; and PER-RELATIONSHIP TEXTURE for key bilateral relationships, built on hard citable facts (treaty texts, trade volumes by partner, basing agreements and troop presence, United Nations voting alignment, energy dependence, state visits). The character of a relationship is Interpretation ANCHORED to those facts. NAMED-ACTOR RULE applies: an alliance system is its members — name the alliances and the key allies, each cited to treaty text or membership record; a nameless "alliance network" is an under-sourced claim.
+security.diplomacy:
+- treaty alliances
+- multilateral memberships
+- transactional partners
+- territorial disputes
+- regional flashpoints
+- PER-RELATIONSHIP TEXTURE for key bilateral relationships, built on hard citable facts (treaty texts, trade volumes by partner, basing agreements and troop presence, United Nations voting alignment, energy dependence, state visits) — the character of a relationship is Interpretation ANCHORED to those facts
+- NAMED-ACTOR RULE: an alliance system is its members — name the alliances and the key allies, each cited to treaty text or membership record; a nameless "alliance network" is an under-sourced claim.
 
 actors.domestic, actors.external, the gap register capacity.knownAndUnbuilt, the scorecard, scorecardAnchors, and baseline are EMITTED EMPTY — actors are populated afterward by the dedicated two-layer actors pass (implementation spec §8.1); the gap register, scorecard and baseline by the DERIVATIVES pass after the situation pass installs. Emit exactly:
 "actors": { "domestic": { "en": [], "fr": [] }, "external": { "en": [], "fr": [] } }
