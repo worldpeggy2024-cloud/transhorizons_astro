@@ -1,0 +1,2707 @@
+# Actors index — United States / États-Unis (USA)
+# Extraction pass v1.8 · run date 2026-08-07 · CLOSED-BOOK (no search used)
+# Layer 1 = extraction from report text. Layer 2 = AI-drafted interpretation, collapsed by default.
+# Source: six-peer substantive fields + situation. Prior actors_* and risks_* fields not read.
+
+domestic:
+
+  - name: "President Donald Trump and the federal executive (the administration)"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [territory.transition, society.language, economy.politicalEconomy, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.constitutionalSubstrate, capacity.approvals, capacity.steering, capacity.delivery, security.internal, security.military, security.transnationalExposure, security.diplomacy, situation]
+    currentPositionFromReport: >
+      Holds the presidency on a 312–226 electoral-college margin with unified party control of both
+      chambers, and is expanding executive discretion by order and litigation rather than by
+      legislation — voiding climate targets, taking equity in named firms, federalising police and
+      Guard forces, withdrawing from 66 international organisations, and conducting war and lethal
+      hemispheric operations without congressional authorisation.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.constitutionalSubstrate, capacity.steering, security.diplomacy, situation]
+      interests: >
+        Maximising unilateral executive discretion over personnel, tariffs, force and multilateral
+        commitments, and converting that discretion into rapid delivery in the domains it has
+        prioritised — homeland and hemispheric security, border enforcement, and firm-specific
+        industrial policy [capacity.steering][security.diplomacy].
+      resources: >
+        Article II command authority, the removal power as expanded at commission-style agencies,
+        executive orders and proclamations, reconciliation majorities in both chambers, the
+        District of Columbia Home Rule authority, and trade-remedy statutes with no rate ceiling
+        [political.powerStructure][political.constitutionalSubstrate][situation].
+      constraints: >
+        The sixty-vote cloture threshold on ordinary legislation, a 218-seat House majority with
+        four vacancies, judicial review that ran against it on the Federal Reserve, birthright
+        citizenship and Guard federalisation, and a fiscal path in which net interest is the
+        fastest-growing outlay [political.powerStructure][political.constitutionalSubstrate][political.shockAbsorbers].
+      likelyMoves: >
+        Continued reliance on reconciliation, trade-remedy tariffs and executive action over regular
+        order; further withdrawals under the ongoing organisational review; continued lethal
+        operations in the Western Hemisphere and prosecution of the Iran blockade
+        [capacity.steering][security.diplomacy][situation].
+      engagementMode: >
+        negotiable / dealable, transactionally. The report describes alignment mechanisms that are
+        company-by-company and burden-sharing that is transactional rather than institutional, so
+        counterparts deal with the executive directly rather than through standing frameworks
+        [political.stabilityDrivers][security.diplomacy].
+
+  - name: "Department of Defense (styled Department of War)"
+    kind: military
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy, capacity.delivery, capacity.steering, political.stabilityDrivers, security.military, security.internal, security.transnationalExposure, security.diplomacy, situation]
+    currentPositionFromReport: >
+      Runs a 1,298,099-strong active force and at least 128 overseas bases in 51 countries on falling
+      real spending, holds a 15% convertible position in MP Materials as that company's largest
+      shareholder, and is directed by the 2026 National Defense Strategy toward homeland defence,
+      border support and Western Hemisphere operations including strikes on trafficking vessels.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, economy.politicalEconomy, capacity.delivery, situation]
+      interests: >
+        Sustaining global reach and nuclear modernisation while reorienting toward the Western
+        Hemisphere, and securing domestic supply of the critical minerals its programmes depend on
+        [security.military][economy.politicalEconomy].
+      resources: >
+        $954 billion in 2025 expenditure (33% of world total), five services plus reserve components,
+        the overseas basing network, a procurement portfolio above $750 billion, and equity and
+        offtake instruments used with named suppliers [security.military][economy.politicalEconomy][capacity.delivery].
+      constraints: >
+        A 7.5% real-terms spending fall in a single year, an authorised end-strength ceiling set
+        annually by Congress, host-nation consent that can be revoked, and an audited record of cost
+        growth and schedule slippage in weapon systems and information technology
+        [security.military][capacity.delivery].
+      likelyMoves: >
+        Continued steady-state lethal operations in the Caribbean and eastern Pacific at rising
+        strike rates on falling obligations, continued military support to border operations, and
+        further direct investment in mineral suppliers [situation][security.transnationalExposure][economy.politicalEconomy].
+      engagementMode: >
+        executive-subordinate. It answers to the President as commander-in-chief and executed the
+        priorities the report describes as rapidly implemented [political.stabilityDrivers][capacity.steering].
+
+  - name: "Department of Homeland Security"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.shockAbsorbers, capacity.steering, security.internal]
+    currentPositionFromReport: >
+      Served as lead federal agency for the Federal Protection Mission under which Title 10 Guard
+      forces deployed to three cities, assesses the terrorism threat level as heightened from lone
+      offenders and small groups, and absorbed a 76-day funding lapse from 14 February to 30 April
+      2026, the longest shutdown of a single federal department on record.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, political.shockAbsorbers, capacity.steering]
+      interests: >
+        Holding the border enforcement gains the report records and sustaining domestic protective
+        operations across a fragmented mission set [security.internal].
+      resources: >
+        Lead-agency status in interagency protective missions, the National Terrorism Advisory
+        System, and multi-year funding for personnel and border technology appropriated outside the
+        annual cycle by the Secure America Act [security.internal][capacity.steering].
+      constraints: >
+        Demonstrated exposure to appropriations failure — a 76-day departmental lapse — and reliance
+        on Guard forces whose federalisation the Supreme Court declined to permit
+        [political.shockAbsorbers][security.internal].
+      likelyMoves: >
+        Continued high-interdiction, low-release border posture and continued threat bulletins tied
+        to the Middle East conflict [security.internal].
+      engagementMode: >
+        executive-subordinate. The report places it under executive direction as lead federal agency
+        rather than as an independently mandated body [political.stabilityDrivers].
+
+  - name: "U.S. Customs and Border Protection (including the Border Patrol)"
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [economy.publicFinances, political.rightsAndChecks, capacity.steering, security.internal, security.transnationalExposure]
+    currentPositionFromReport: >
+      Reports record-low border encounters and fourteen consecutive months without releasing an
+      apprehended person, has reported to the Court of International Trade that it collected roughly
+      $166 billion under the invalidated tariff authority from some 330,000 importers, and is the
+      agency in whose custody the Inter-American Commission found the state responsible for the
+      death of Anastasio Hernández Rojas.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, economy.publicFinances, political.rightsAndChecks]
+      interests: >
+        Sustaining the enforcement posture that produced the encounter collapse and interdiction
+        rise, while processing an unprecedented refund exposure [security.internal][economy.publicFinances].
+      resources: >
+        Multi-year personnel funding under the Secure America Act, revenue-collection machinery, and
+        military support to interagency border operations directed by the 2026 defence strategy
+        [capacity.steering][security.internal].
+      constraints: >
+        A refund obligation of roughly $166 billion under court order, and a use-of-force framework
+        the regional treaty body found lacking the parameters necessary to safeguard rights, with no
+        state response to the finding [economy.publicFinances][political.rightsAndChecks].
+      likelyMoves: >
+        Continued high-seizure, low-release operations and continued reliquidation processing while
+        the government's Federal Circuit appeal proceeds [security.internal][economy.publicFinances].
+      engagementMode: >
+        executive-subordinate. It acts on executive priority and is audited principally from inside
+        the executive that commands it; the significant adverse finding of the period came from
+        outside the state entirely [security.internal].
+
+  - name: "Immigration and Customs Enforcement"
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.steering]
+    currentPositionFromReport: >
+      Received multi-year funding through the Secure America Act, Public Law 119-98 of 10 June 2026,
+      appropriated outside the annual budget cycle alongside Customs and Border Protection personnel
+      and border technology.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.steering]
+      interests: >
+        Sustaining interior enforcement capacity on funding insulated from annual appropriations
+        risk [capacity.steering].
+      resources: >
+        Multi-year reconciliation funding that bypasses the annual cycle in which the state failed
+        three times in eight months [capacity.steering].
+      constraints: report-silent
+      likelyMoves: >
+        Continued operation at the funded level; the report records no further specific action
+        [capacity.steering].
+      engagementMode: >
+        executive-subordinate. The report names it only as a funded instrument of executive priority
+        [capacity.steering].
+
+  - name: "Department of State"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [political.constitutionalSubstrate, security.transnationalExposure, security.diplomacy]
+    currentPositionFromReport: >
+      Was ordered to review every intergovernmental organisation, convention and treaty to which the
+      country belongs, is effecting withdrawal from 66 named organisations, announced in February
+      2026 that Mexico had committed to annual Rio Grande deliveries of at least 350,000 acre-feet,
+      and states in its Foreign Affairs Manual that Fourteenth Amendment citizenship does not reach
+      persons born in American Samoa and Swains Island.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.transnationalExposure]
+      interests: >
+        Executing the ordered contraction of multilateral membership while holding bilateral
+        obligations the executive still values, such as Rio Grande water deliveries
+        [security.diplomacy][security.transnationalExposure].
+      resources: >
+        Certification authority tied to appropriations conditions, the treaty-review mandate, and the
+        diplomatic channel with Mexico [security.transnationalExposure][security.diplomacy].
+      constraints: >
+        Its brief is set by executive order and presidential memorandum rather than chosen, and
+        further withdrawals depend on a review the memorandum says is ongoing [security.diplomacy].
+      likelyMoves: >
+        Completion of the ordered withdrawals as law permits and further findings from the continuing
+        review [security.diplomacy].
+      engagementMode: >
+        executive-subordinate. It is the instrument through which the withdrawal memorandum is
+        executed rather than a source of independent position [security.diplomacy].
+
+  - name: "Department of the Treasury"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [economy.publicFinances, economy.externalVulnerability, security.internal]
+    currentPositionFromReport: >
+      Collected $23.6 billion in gross customs duties against $49.2 billion in refunds in June 2026,
+      records the location rather than the nationality of foreign holdings of federal debt, and
+      issued the 2024 National Money Laundering Risk Assessment naming fentanyl, terrorist financing,
+      ransomware and professional laundering networks as principal threats.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.publicFinances, economy.externalVulnerability, security.internal]
+      interests: >
+        Financing a $1.9 trillion deficit at scale while administering a customs line that has turned
+        negative and an illicit-finance regime of unusual reporting volume
+        [economy.publicFinances][security.internal].
+      resources: >
+        The deepest sovereign debt market in the world, reserve-currency issuance, and a reporting
+        regime covering roughly 324,000 registered filers [economy.externalVulnerability][security.internal].
+      constraints: >
+        A net customs outflow of $25.6 billion in a single month, a non-resident investor base
+        shifting toward price-sensitive non-bank holders, and attribution data that cannot identify
+        the nationality of holders [economy.publicFinances][economy.externalVulnerability].
+      likelyMoves: >
+        Continued refund processing under court order and continued large-scale issuance into a
+        market whose composition is changing [economy.publicFinances][economy.externalVulnerability].
+      engagementMode: >
+        executive-subordinate, market-constrained. Its financing terms are set by non-resident
+        investor behaviour the report identifies as the principal external vulnerability
+        [economy.externalVulnerability].
+
+  - name: "Department of Commerce"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Led the federal government's direct-ownership programme with twenty-four of the thirty-seven
+      equity deals announced between January 2025 and July 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: >
+        Converting appropriated industrial-policy grants into equity positions in firms the executive
+        judges strategic [economy.politicalEconomy].
+      resources: >
+        CHIPS and Science Act grant authority repurposed as equity consideration, as in the $5.7
+        billion converted in the Intel transaction [economy.politicalEconomy].
+      constraints: >
+        Positions taken are passive, carrying no board seat or governance rights in the largest case,
+        and the only consolidated record of the portfolio is an outside compilation
+        [economy.politicalEconomy].
+      likelyMoves: >
+        Further firm-specific transactions on the same pattern, given the portfolio's growth rate
+        over eighteen months [economy.politicalEconomy].
+      engagementMode: >
+        executive-subordinate, deal-making. It is the operative counterpart for firms seeking or
+        facing federal equity participation [economy.politicalEconomy].
+
+  - name: "Department of Energy"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy, capacity.delivery]
+    currentPositionFromReport: >
+      Holds two of the thirty-seven federal direct-ownership deals and is one of the departments
+      whose major acquisitions the audit body records as experiencing cost growth, schedule delays
+      or both.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, capacity.delivery]
+      interests: report-silent
+      resources: >
+        Equity-taking authority exercised in two deals and a large acquisition portfolio
+        [economy.politicalEconomy][capacity.delivery].
+      constraints: >
+        An audited record of cost growth and schedule delay in major acquisitions [capacity.delivery].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate. The report names it as a participant in executive industrial policy
+        and as an audited acquirer, not as an independent position-holder [economy.politicalEconomy].
+
+  - name: "Department of Transportation"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.approvals, capacity.delivery]
+    currentPositionFromReport: >
+      Received 74% of the $711.8 billion made available in Infrastructure Investment and Jobs Act
+      grants, moved at least 76% of obligated and about 91% of outlayed funding through statutory
+      formula rather than award decision, and had about 23% of surveyed fiscal 2022 discretionary
+      awardees still without a signed grant agreement by early 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.delivery, capacity.approvals]
+      interests: >
+        Moving appropriated infrastructure money at scale against a national repair gap the
+        engineering body puts at $3.7 trillion [capacity.delivery].
+      resources: >
+        Formula-grant machinery that distributes without award decisions, and the largest share of
+        the infrastructure appropriation [capacity.delivery].
+      constraints: >
+        Discretionary money moves slowly — awardees cite inflation, budget and schedule definition,
+        environmental review and domestic-content requirements — and disbursement was paused from
+        January 2025 pending priority review [capacity.delivery].
+      likelyMoves: >
+        Continued formula distribution at pace with discretionary awards remaining the slow channel
+        [capacity.delivery].
+      engagementMode: >
+        executive-subordinate, formula-bound. Much of what it distributes is not discretionary and
+        therefore not negotiable [capacity.delivery].
+
+  - name: "Department of Veterans Affairs"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.delivery, capacity.publicServices]
+    currentPositionFromReport: >
+      Carries an electronic health record modernisation costed in 2022 at $49.8 billion that had
+      reached six of more than 166 locations by December 2024, sits on the high-risk register for
+      health care, and publishes facility-level wait times whose readings diverge sharply from its
+      own agencywide summary figures.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.delivery, capacity.publicServices]
+      interests: >
+        Completing a long-horizon records modernisation and sustaining a continuous health service
+        under audit scrutiny [capacity.delivery][capacity.publicServices].
+      resources: >
+        A dedicated health system, appropriated modernisation funding, and its own published
+        facility-level access data [capacity.publicServices].
+      constraints: >
+        A deployment rate that leaves the modernisation more than a decade from completion at
+        current pace, high-risk listing, and published data that sustains readings its summary
+        figures do not [capacity.delivery][capacity.publicServices].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate, audit-exposed. Its performance is contested through published data
+        and legislative-staff analysis rather than through negotiation [capacity.publicServices].
+
+  - name: "U.S. International Development Finance Corporation"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Holds six of the thirty-seven federal deals involving direct ownership announced between
+      January 2025 and July 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: report-silent
+      resources: >
+        Development-finance instruments used to take direct ownership positions [economy.politicalEconomy].
+      constraints: report-silent
+      likelyMoves: >
+        Further participation in the executive's equity portfolio, which grew to thirty-seven deals
+        in eighteen months [economy.politicalEconomy].
+      engagementMode: >
+        executive-subordinate, deal-making [economy.politicalEconomy].
+
+  - name: "National Aeronautics and Space Administration"
+    kind: federal executive
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.delivery]
+    currentPositionFromReport: >
+      Named among the agencies whose major acquisitions the audit body records as experiencing cost
+      growth, schedule delays or both.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.delivery]
+      interests: report-silent
+      resources: >
+        A share of the federal procurement portfolio exceeding $750 billion [capacity.delivery].
+      constraints: >
+        Audited cost growth and schedule delay in major acquisitions [capacity.delivery].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate, audit-exposed [capacity.delivery].
+
+  - name: "Food and Drug Administration"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.steering, capacity.publicServices]
+    currentPositionFromReport: >
+      Conducts an average of 917 foreign food-facility inspections a year against a statutory target
+      of 19,200, holds the target unachievable with its workforce, and has not proposed a replacement
+      to Congress in the decade since the auditor recommended one.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.publicServices, capacity.steering]
+      interests: >
+        Maintaining oversight of medical products and food safety within a workforce it says cannot
+        meet its statutory mandate [capacity.publicServices].
+      resources: >
+        Statutory inspection authority under the Food Safety Modernization Act [capacity.publicServices].
+      constraints: >
+        A binding staffing constraint that leaves it achieving about 5% of its target, and an
+        unresolved recommendation outstanding since January 2015 [capacity.publicServices][capacity.steering].
+      likelyMoves: >
+        Continued operation at roughly 5% of target absent either resources or a proposed statutory
+        replacement [capacity.steering].
+      engagementMode: >
+        statutorily-mandated but under-resourced. It cannot deliver the mandate and has not sought to
+        change it, so the gap persists rather than being negotiated [capacity.steering].
+
+  - name: "Federal Aviation Administration"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.delivery]
+    currentPositionFromReport: >
+      Was found in a 2023 assessment to have 51 of its 138 air traffic control systems unsustainable
+      and a further 54 potentially so.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.delivery]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        A majority of its air traffic control systems assessed as unsustainable or potentially so
+        [capacity.delivery].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate, audit-exposed. The report names it as a documented delivery failure
+        rather than as a negotiating counterpart [capacity.delivery].
+
+  - name: "Federal Bureau of Investigation (including the dissolved Foreign Influence Task Force)"
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.transnationalExposure, security.posture]
+    currentPositionFromReport: >
+      Arrested 5,957 investigative subjects tied to suspicious-activity filings in fiscal 2025,
+      indicting 4,727 and obtaining 2,795 convictions, while its Foreign Influence Task Force was
+      dissolved in parallel with the Foreign Malign Influence Center in August 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, security.transnationalExposure]
+      interests: >
+        Sustaining financial-crime and cartel enforcement while its foreign-influence function has
+        been removed [security.internal][security.transnationalExposure].
+      resources: >
+        Suspicious-activity reporting from roughly 324,000 filers, and priority-threat targeting on
+        cartels, Chinese laundering networks, fentanyl and terrorism financing [security.internal].
+      constraints: >
+        The dissolution of its foreign-influence task force at the same moment the intelligence
+        services were documenting interference operations in detail [security.transnationalExposure][security.posture].
+      likelyMoves: >
+        Continued high-volume financial-crime enforcement; the report records no replacement of the
+        dissolved influence function [security.internal][security.transnationalExposure].
+      engagementMode: >
+        executive-subordinate. Federal law-enforcement agencies answer to the President through the
+        statutory power to appoint and remove their heads rather than through Article II command
+        [political.stabilityDrivers].
+
+  - name: "Financial Crimes Enforcement Network"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal]
+    currentPositionFromReport: >
+      Received 4.7 million suspicious activity reports in fiscal 2024 from roughly 324,000 registered
+      filers, against 4.3 million in fiscal 2022, with stated priority threats of cartels, Chinese
+      money-laundering networks, fentanyl and terrorism financing.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal]
+      interests: >
+        Converting a very large reporting flow into enforcement referrals against the named priority
+        threats [security.internal].
+      resources: >
+        A mandatory reporting regime of unusual scale and a beneficial-ownership requirement in
+        effect since 1 January 2024 [security.internal].
+      constraints: >
+        Illicit finance is assessed rather than counted, so the regime's coverage cannot be measured
+        against the flows it targets [security.internal].
+      likelyMoves: >
+        Continued growth in filing volume and continued enforcement partnership with the federal
+        police [security.internal].
+      engagementMode: >
+        statutorily-mandated reporting counterpart for financial institutions [security.internal].
+
+  - name: "Office of the Director of National Intelligence and the Intelligence Community"
+    kind: security or intelligence service
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure, security.posture]
+    currentPositionFromReport: >
+      Attributes the migration decline to policy change and enforcement, names Mexican, Colombian and
+      Salvadoran criminal organisations and Chinese, Russian, Iranian and North Korean cyber actors
+      in its assessment, and announced in August 2025 the dissolution of the Foreign Malign Influence
+      Center it housed.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.posture]
+      interests: >
+        Maintaining threat assessment across cartels, cyber and foreign influence while reorganising
+        its own structure [security.transnationalExposure].
+      resources: >
+        The annual threat assessment, statutory coordination authority, and community-wide collection
+        [security.transnationalExposure].
+      constraints: >
+        Its own reorganisation removed the statutory foreign-influence coordinating body and the
+        election-threats function it housed, which opposition committee members say has paralysed
+        production on election threats [security.transnationalExposure].
+      likelyMoves: >
+        Continued annual threat assessment; the report records no replacement of the dissolved
+        influence-coordination function [security.transnationalExposure][security.posture].
+      engagementMode: >
+        executive-subordinate. Its head announced the dissolution as part of an executive
+        reorganisation, and legally required congressional briefings have gone unanswered
+        [security.transnationalExposure].
+
+  - name: "Foreign Malign Influence Center (with the Election Threats Executive)"
+    kind: independent institution
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.transnationalExposure, security.posture]
+    currentPositionFromReport: >
+      Established by Congress under the Intelligence Authorization Act for fiscal years 2018 to 2020
+      and codified at 50 U.S.C. § 3059, operating from September 2022 and housing the Election
+      Threats Executive, it was dissolved by the Director of National Intelligence in August 2025 and
+      no longer operates.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.posture]
+      interests: >
+        Coordinating intelligence on foreign influence and election security — a mandate the report
+        records as created by bipartisan legislation following the 2016 interference assessment
+        [security.transnationalExposure].
+      resources: >
+        Statutory basis in 50 U.S.C. § 3059; none operative, the body having been dissolved
+        [security.transnationalExposure].
+      constraints: >
+        It was dissolved by executive reorganisation notwithstanding its statutory creation, and no
+        successor is recorded [security.transnationalExposure][security.posture].
+      likelyMoves: >
+        None as an actor; the live question the report leaves open is whether the statutory mandate
+        is revived before the 2026 midterms [security.transnationalExposure].
+      engagementMode: >
+        dissolved / not-engageable. The report records the statutory body as no longer operating
+        [security.transnationalExposure].
+
+  - name: "Council on Environmental Quality"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.approvals]
+    currentPositionFromReport: >
+      Lost the executive order on which its rulemaking authority had rested for five decades under
+      Executive Order 14154 and rescinded all government-wide regulations implementing the National
+      Environmental Policy Act by interim final rule effective April 2025, so no uniform federal
+      review framework now governs.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.approvals]
+      interests: report-silent
+      resources: >
+        Residual convening and reporting capacity — it published the January 2025 timeline update
+        covering 1,903 statements — but no government-wide rulemaking authority [capacity.approvals].
+      constraints: >
+        Its regulatory foundation was rescinded by executive order, and agencies have since issued
+        their own procedures [capacity.approvals].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate, hollowed. The report describes a body whose framework-setting function
+        was removed rather than reassigned [capacity.approvals].
+
+  - name: "Permitting Council (executive director)"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.approvals]
+    currentPositionFromReport: >
+      Operates the Permitting Dashboard required by Title 41 of the Fixing America's Surface
+      Transportation Act and was directed by an executive order of 20 March 2025 to publish
+      designated mineral production projects there as transparency projects.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.approvals]
+      interests: >
+        Maintaining a published approvals record that survived the regulatory rescission because it
+        rests on statute rather than regulation [capacity.approvals].
+      resources: >
+        Statutory authority at 42 U.S.C. § 4370m requiring lead agencies to post target completion
+        dates, and an eight-value status field across covered projects [capacity.approvals].
+      constraints: >
+        Inclusion on the dashboard implies no endorsement and creates no presumption of approval, and
+        the dashboard publishes no status breakdown for the full covered set [capacity.approvals].
+      likelyMoves: >
+        Continued publication of designated mineral projects as directed, tracking the policy skew
+        visible in the status field [capacity.approvals].
+      engagementMode: >
+        statutorily-mandated transparency body, executive-directed as to what it lists
+        [capacity.approvals].
+
+  - name: "Federal Communications Commission"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [political.rightsAndChecks]
+    currentPositionFromReport: >
+      Opened investigations into broadcasters over content deemed critical of the administration,
+      which the Inter-American Commission identified among the changes weakening public access to
+      plural and independent information.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks, political.constitutionalSubstrate]
+      interests: >
+        Exercising broadcast oversight in a direction the regional treaty body reads as political
+        pressure on media [political.rightsAndChecks].
+      resources: >
+        Licensing and investigative authority over broadcasters [political.rightsAndChecks].
+      constraints: >
+        Constitutional press protection and litigation exposure, in a system the same body credits
+        with continuing to operate through the courts [political.rightsAndChecks].
+      likelyMoves: >
+        Continued content-related investigations, given the pattern the treaty body records
+        [political.rightsAndChecks].
+      engagementMode: >
+        hijack-exposed. It is a commission-style agency of the type the apex court's June 2026
+        removal ruling is read as reaching, and the report describes it acting in line with
+        administration preference on editorial content
+        [political.rightsAndChecks][political.constitutionalSubstrate].
+
+  - name: "Federal Trade Commission"
+    kind: regulatory
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Lost its statutory for-cause removal protection on 29 June 2026 when the Supreme Court held it
+      contrary to the separation of powers in Trump v. Slaughter, overruling Humphrey's Executor, a
+      ruling the Congressional Research Service reads as likely reaching officials of other
+      commission-style agencies wielding executive power.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.powerStructure]
+      interests: report-silent
+      resources: >
+        Its statutory enforcement mandate remains; the insulation around its commissioners does not
+        [political.constitutionalSubstrate].
+      constraints: >
+        Commissioners are now removable by the President, so the agency's positions are exposed to
+        executive preference [political.powerStructure][political.constitutionalSubstrate].
+      likelyMoves: >
+        Alignment of commission positions with executive preference is the direction the loss of
+        removal protection implies; the report records no specific subsequent action
+        [political.constitutionalSubstrate].
+      engagementMode: >
+        hijack-exposed. The report describes the removal of the statutory insulation that previously
+        made it statutorily-independent, and identifies this as the template for other commission-style
+        agencies [political.constitutionalSubstrate][political.stabilityDrivers].
+
+  - name: "Federal Reserve (Board of Governors, Federal Open Market Committee, Governor Lisa Cook)"
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [economy.publicFinances, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Held the federal funds target range at 3.50–3.75% on 29 July 2026 by nine votes to three with
+      all dissents favouring an increase, judging inflation elevated against its 2% goal, and had its
+      governors' removal protection judicially reinforced on 29 June 2026 when the Supreme Court
+      held the President's asserted cause reviewable and left Governor Lisa Cook in office — the
+      first attempted removal of a governor in the institution's 111-year history.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.shockAbsorbers, economy.publicFinances]
+      interests: >
+        Returning inflation to its 2% goal while preserving the operational independence that was
+        directly contested during the period [economy.publicFinances][political.shockAbsorbers].
+      resources: >
+        Rate-setting authority, ample reserves maintained in the banking system, and a judicial
+        holding that cause for removal must reflect the institution's particular history and role
+        [political.shockAbsorbers][political.constitutionalSubstrate].
+      constraints: >
+        Inflation at 3.5% with an energy index up 15.7% narrows room to ease; internal dissent runs
+        toward tightening; and its insulation now rests on a five-to-four holding
+        [economy.publicFinances][political.shockAbsorbers][political.constitutionalSubstrate].
+      likelyMoves: >
+        Holding the target range while inflation remains above goal, with the direction of any
+        surprise skewed by three dissents favouring a rise [political.shockAbsorbers].
+      engagementMode: >
+        statutorily-independent, hijack-tested. The report describes an attempted removal that the
+        apex court blocked by a single vote, so independence here is judicially held rather than
+        structurally unquestioned [political.constitutionalSubstrate][political.powerStructure].
+
+  - name: "Government Accountability Office"
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.approvals, capacity.delivery, capacity.publicServices, capacity.steering, security.military]
+    currentPositionFromReport: >
+      Maintains a 38-area high-risk list rated every two years, records ten areas improved and three
+      regressed since 2023 against $759 billion in benefits since 2006, finds the state has great
+      difficulty controlling costs across a procurement portfolio above $750 billion, and identifies
+      sustained legislative and executive attention as the condition for progress.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.steering, capacity.delivery, capacity.publicServices]
+      interests: >
+        Converting audit findings into corrective action across the delivery and public-service
+        domains it documents as failing [capacity.steering].
+      resources: >
+        A biennial rating framework across 38 areas with five criteria, statutory access to agency
+        data, and a recorded benefit stream that gives its findings standing [capacity.steering].
+      constraints: >
+        It can diagnose but not compel: three areas regressed, twenty are listed in part for skills
+        gaps while federal employment was cut around 13%, and a recommendation from January 2015
+        remains unanswered [capacity.steering][capacity.publicServices].
+      likelyMoves: >
+        Continued biennial reassessment and continued documentation of the regressing areas
+        [capacity.steering].
+      engagementMode: >
+        statutorily-independent. It reports on the executive rather than bargaining with it, and its
+        leverage runs through legislative attention it does not control [capacity.steering].
+
+  - name: "Congressional Budget Office"
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [economy.realEconomy, economy.publicFinances, economy.politicalEconomy, political.shockAbsorbers, capacity.steering, capacity.productivity]
+    currentPositionFromReport: >
+      Projects a fiscal-year 2026 deficit of $1.9 trillion and debt held by the public rising from
+      101% to 120% of gross domestic product by 2036, estimates the 2025 reconciliation act raised
+      projected deficits by $4.7 trillion and costs the bottom decile about $1,200 a year, and
+      published a 2.2% growth projection that predates two tariff-regime changes.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.publicFinances, economy.politicalEconomy, capacity.steering]
+      interests: >
+        Supplying Congress with non-partisan baselines and distributional estimates against which
+        enacted policy can be measured [economy.publicFinances][economy.politicalEconomy].
+      resources: >
+        Statutory scorekeeping role, distributional analysis capacity, and baseline projections that
+        the report treats as the reference for fiscal claims [economy.publicFinances].
+      constraints: >
+        Its projections are overtaken by executive action outside the legislative cycle — the tariff
+        regime changed twice after publication — and its findings did not prevent enactment of a bill
+        raising deficits by $4.7 trillion while deficit reduction was declared
+        [economy.realEconomy][capacity.steering].
+      likelyMoves: >
+        Revised baselines incorporating the Section 301 regime, which carries no statutory expiry and
+        therefore becomes a recurring revenue line [economy.publicFinances].
+      engagementMode: >
+        statutorily-independent. It scores rather than bargains, and the report uses it as the
+        measurement against which announced priorities are compared [capacity.steering].
+
+  - name: "Congressional Research Service"
+    kind: independent institution
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Supplies the readings the report relies on for the scope of the removal rulings — including that
+      Trump v. Slaughter likely reaches officials of other commission-style agencies — for cloture and
+      discharge thresholds, and for the assessment that shutdown effects are unlikely to have a large
+      long-term impact.
+    humanReview: >
+      Borderline against filter (e): it is an analytic body rather than a bargaining counterpart, but
+      it sits inside the legislature it advises rather than measuring the country from outside.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.powerStructure]
+      interests: >
+        Supplying Congress with authoritative readings of doctrine and procedure as the boundary
+        between the branches is redrawn [political.constitutionalSubstrate].
+      resources: >
+        Non-partisan standing such that the report adopts its readings of the scope of apex-court
+        rulings [political.powerStructure][political.constitutionalSubstrate].
+      constraints: >
+        Advisory only; its readings of the removal rulings describe a reallocation it has no part in
+        [political.constitutionalSubstrate].
+      likelyMoves: >
+        Continued analysis of the doctrinal reallocation and of recurring appropriations failure
+        [political.shockAbsorbers].
+      engagementMode: >
+        statutorily-independent, advisory [political.powerStructure].
+
+  - name: "Supreme Court of the United States (Chief Justice Roberts)"
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [economy.externalVulnerability, political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, capacity.approvals, security.internal, situation]
+    currentPositionFromReport: >
+      Reallocated power on both the horizontal and vertical axes during 2026 — voiding tariff
+      authority under the emergency-powers act, ending for-cause removal protection at the Federal
+      Trade Commission while holding removal of a Federal Reserve governor judicially reviewable,
+      affirming birthright citizenship, barring review of protected-status terminations, blocking
+      Guard federalisation, and narrowing section 2 of the Voting Rights Act — with the Chief Justice
+      writing both 29 June removal opinions for almost entirely different majorities.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.rightsAndChecks, political.powerStructure]
+      interests: >
+        Settling the allocation of power case by case rather than by a single doctrine, which the
+        divergent majorities and the central-bank carve-out suggest is deliberate
+        [political.constitutionalSubstrate][political.rightsAndChecks].
+      resources: >
+        Judicial review exercised since Marbury v. Madison, and final say over the statutory triggers
+        for tariffs, removals and force deployment [political.rightsAndChecks][political.constitutionalSubstrate].
+      constraints: >
+        It acts only on cases brought to it, several 2026 rulings turned on single votes, and it
+        removed itself from one question (protected-status terminations) rather than deciding it
+        [political.constitutionalSubstrate].
+      likelyMoves: >
+        Further case-by-case resolution of executive-power questions, including the open question of
+        whether protecting federal property and personnel constitutes executing the law
+        [political.shockAbsorbers][political.constitutionalSubstrate].
+      engagementMode: >
+        judicial-deference. The report treats its rulings as settling contests the political branches
+        could not, with independence observable in outcome — the same court ruled for the President
+        on one removal and against him on another the same day [political.rightsAndChecks].
+
+  - name: "Court of International Trade"
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [economy.publicFinances]
+    currentPositionFromReport: >
+      Directed reliquidation even of entries whose liquidation had become final, piercing a bar that
+      would ordinarily have extinguished those claims, and is the forum to which Customs and Border
+      Protection reports on roughly $166 billion collected under the invalidated tariff authority.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.publicFinances]
+      interests: >
+        Giving full effect to the invalidation of the emergency-powers tariffs, including for
+        importers whose claims would otherwise be time-barred [economy.publicFinances].
+      resources: >
+        Specialised jurisdiction over customs matters and the reliquidation remedy [economy.publicFinances].
+      constraints: >
+        Its reach over importers who never sued is under appeal in the Federal Circuit, and finally
+        liquidated entries are being processed only for importers that have filed suit there
+        [economy.publicFinances].
+      likelyMoves: >
+        Continued supervision of the refund process pending the appeal [economy.publicFinances].
+      engagementMode: >
+        judicial-deference [economy.publicFinances].
+
+  - name: "U.S. Court of Appeals for the Federal Circuit"
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [economy.publicFinances]
+    currentPositionFromReport: >
+      Holds the government's appeal, filed 3 June 2026, arguing that orders reaching importers who
+      never sued are impermissible universal injunctions, with refunds continuing while it proceeds.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.publicFinances]
+      interests: report-silent
+      resources: >
+        Appellate jurisdiction over the trade court's reliquidation orders [economy.publicFinances].
+      constraints: report-silent
+      likelyMoves: >
+        A ruling on whether the refund order may reach non-suing importers, which determines the size
+        of a refund exposure already around $100 billion paid of roughly $166 billion collected
+        [economy.publicFinances].
+      engagementMode: >
+        judicial-deference [economy.publicFinances].
+
+  - name: "U.S. Court of Appeals for the Fifth Circuit"
+    kind: judicial
+    liveActorStatus: current
+    fieldsCitedIn: [political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Was reversed in Watson v. Republican National Committee, the Supreme Court holding that federal
+      election-day statutes do not preempt a state law counting absentee ballots postmarked by
+      election day and received up to five business days later.
+    humanReview: >
+      Named only as the reversed lower court within a case description; retained under the
+      recall-over-precision rule but may be scaffolding rather than a live actor.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Appellate jurisdiction over the states in its circuit [political.constitutionalSubstrate].
+      constraints: >
+        Its reading of federal preemption of state ballot-receipt deadlines was reversed
+        [political.constitutionalSubstrate].
+      likelyMoves: report-silent
+      engagementMode: >
+        judicial-deference [political.constitutionalSubstrate].
+
+  - name: "House of Representatives (including the Rules Committee and the discharge petition route)"
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.stabilityDrivers, political.shockAbsorbers, security.transnationalExposure]
+    currentPositionFromReport: >
+      Records 218 Republicans, 212 Democrats, one independent and four vacancies as of 2 August 2026 —
+      exactly the number required for a majority of the full chamber — has been in a district work
+      period since 23 July with votes not expected until 31 August, and saw four discharge petitions
+      reach the 218-signature threshold in the first session of the 119th Congress against two across
+      the whole of the 118th.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.stabilityDrivers]
+      interests: >
+        Holding a majority that has no margin at all, while the discharge route repeatedly carries
+        majority-party signatures against leadership control of the floor [political.powerStructure][political.stabilityDrivers].
+      resources: >
+        Origination of revenue measures, the reconciliation route used twice since 2025, and control
+        of referral, leadership scheduling and the Rules Committee [political.powerStructure].
+      constraints: >
+        A vacancy in Georgia's thirteenth district unresolved since 22 April with a runoff on 25
+        August, no mechanism for rapid replacement, and a demonstrated inability to fund the state on
+        schedule three times in eight months [political.powerStructure][political.shockAbsorbers].
+      likelyMoves: >
+        Continued use of reconciliation for major enactments and continued discharge activity at
+        historically high rates [political.powerStructure][political.stabilityDrivers].
+      engagementMode: >
+        veto-holder, at a threshold rather than a seat count. Nothing passes without 218, and the
+        same number opens the discharge route around leadership [political.powerStructure].
+
+  - name: "Senate"
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure, political.rightsAndChecks, political.stabilityDrivers, political.shockAbsorbers, capacity.publicServices, security.transnationalExposure]
+    currentPositionFromReport: >
+      Divides 53 Republicans to 45 Democrats with two independents caucusing with the minority,
+      repaired a vacancy within days by gubernatorial appointment after Senator Lindsey Graham's
+      death, confirms judicial nominations by simple majority, and adopted S.Res. 526 on 14 May 2026
+      withholding senators' pay during funding lapses from after the November 2026 elections.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, political.shockAbsorbers]
+      interests: >
+        Preserving the chamber's own procedural architecture — the cloture threshold, the nominations
+        carve-out and reconciliation — while legislating against itself on the consequences of
+        deadlock [political.powerStructure].
+      resources: >
+        Confirmation of judges and executive officers by simple majority, Rule XXII, reconciliation,
+        and rapid vacancy repair through gubernatorial appointment [political.powerStructure][political.rightsAndChecks].
+      constraints: >
+        A governing majority of 53 that falls seven short of the sixty needed to close debate on
+        ordinary legislation, so unified control cannot enact through regular order
+        [political.powerStructure][political.shockAbsorbers].
+      likelyMoves: >
+        Continued reliance on reconciliation and nominations, with the pay-withholding rule taking
+        effect only after the midterms [political.powerStructure].
+      engagementMode: >
+        veto-holder. The sixty-vote threshold, not the partisan division, determines what can be
+        enacted [political.powerStructure].
+
+  - name: "Republican Party (congressional majority)"
+    kind: other
+    liveActorStatus: current
+    fieldsCitedIn: [society.composition, society.cohesion, political.powerStructure, political.shockAbsorbers]
+    currentPositionFromReport: >
+      Holds the presidency, 53 Senate seats and exactly 218 House seats, has passed its principal
+      enactments through reconciliation rather than regular order, and its identifiers report 26%
+      trust in the federal government against 9% among Democrats, with confidence in the executive
+      rising since the 2024 change of administration.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure, society.cohesion]
+      interests: >
+        Enacting its programme through the routes that a 53-seat Senate permits — reconciliation and
+        nominations — while holding a House majority with no margin [political.powerStructure].
+      resources: >
+        Unified control of the elected branches, two completed reconciliation enactments, and a
+        supportive partisan base whose institutional trust tracks its holding power
+        [political.powerStructure][society.cohesion].
+      constraints: >
+        Elite cohesion is measurably imperfect — four discharge petitions reached 218 in a single
+        session, each necessarily carrying majority-party signatures — and the cloture threshold
+        blocks ordinary legislation [political.powerStructure][political.stabilityDrivers].
+      likelyMoves: >
+        Further reconciliation enactments as settled practice rather than exception
+        [political.powerStructure].
+      engagementMode: >
+        negotiable / dealable, but only within thresholds it cannot change unilaterally
+        [political.powerStructure].
+
+  - name: "Democratic Party (congressional minority; Hakeem Jeffries and Chuck Schumer)"
+    kind: opposition party
+    liveActorStatus: current
+    fieldsCitedIn: [society.composition, society.cohesion, political.powerStructure]
+    currentPositionFromReport: >
+      Holds 47 Senate votes with the two caucusing independents — six more than the 41 needed to deny
+      cloture — and 212 House seats, six short of a discharge majority, is led by Hakeem Jeffries in
+      the House and Chuck Schumer in the Senate, and faces no legal impediment to organising or
+      contesting elections.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure]
+      interests: >
+        Blocking ordinary legislation it opposes and forcing disclosure where it lacks a floor route,
+        as its committee staff and ranking members have done on wait times and election-threat
+        briefings [political.powerStructure][capacity.publicServices][security.transnationalExposure].
+      resources: >
+        A durable cloture veto, ranking committee positions, and scheduled elections its standing in
+        which is not in question [political.powerStructure].
+      constraints: >
+        No cloture veto over nominations or reconciliation, and six seats short of the discharge
+        threshold in the House [political.powerStructure].
+      likelyMoves: >
+        Continued denial of cloture on ordinary legislation and continued use of minority staff
+        analysis and ranking-member correspondence as substitutes for floor power
+        [political.powerStructure].
+      engagementMode: >
+        veto-holder in the Senate on ordinary legislation; without equivalent leverage in the House
+        or over nominations and reconciliation [political.powerStructure].
+
+  - name: "Independent senators Angus King and Bernie Sanders"
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure]
+    currentPositionFromReport: >
+      Are the two independents in the Senate, caucusing with the Democrats and bringing the
+      minority's total to 47.
+    humanReview: >
+      Named individuals with a role, but the report attaches no position to them distinct from the
+      caucus arithmetic.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure]
+      interests: report-silent
+      resources: >
+        Two votes that carry the minority from 45 to 47, six above the cloture-denial threshold
+        [political.powerStructure].
+      constraints: report-silent
+      likelyMoves: >
+        Continued caucusing with the minority, which the report treats as the operative fact
+        [political.powerStructure].
+      engagementMode: >
+        negotiable / dealable individually, given that the minority's margin above 41 is six votes
+        [political.powerStructure].
+
+  - name: "Senate Committee on Veterans' Affairs (minority staff)"
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.publicServices]
+    currentPositionFromReport: >
+      Tracked the department's published wait-time data weekly from January 2025 and reported
+      Connecticut clinics where new-patient mental health waits exceeded 100 days in most weeks from
+      May 2025, against an agencywide average the department put at about fifteen days; the report
+      notes the staff are the opposition party's and the facilities are not a national sample.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.publicServices]
+      interests: >
+        Establishing that the department's own published data sustains readings its summary figures
+        do not [capacity.publicServices].
+      resources: >
+        Committee standing, weekly access to published facility-level data, and the credibility of
+        working from the department's own series [capacity.publicServices].
+      constraints: >
+        Minority status and a non-representative sample, both of which the report flags
+        [capacity.publicServices].
+      likelyMoves: >
+        Continued weekly tracking and publication of divergences [capacity.publicServices].
+      engagementMode: >
+        oversight counterpart without compulsion. It can publish but not compel [capacity.publicServices].
+
+  - name: "Ranking members of the House and Senate intelligence committees"
+    kind: legislature
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure]
+    currentPositionFromReport: >
+      State that intelligence production on foreign plans and intentions toward future United States
+      elections has been paralysed since the dissolution of the Foreign Malign Influence Center, and
+      that repeated requests for legally required briefings on threats to the 2026 midterms have gone
+      unanswered; the report notes they are the opposition party's senior committee representatives.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure]
+      interests: >
+        Restoring the statutory foreign-influence coordination function before the 2026 midterms
+        [security.transnationalExposure].
+      resources: >
+        Statutory briefing entitlements and the standing to place a contested claim on the record
+        [security.transnationalExposure].
+      constraints: >
+        Their requests have gone unanswered and they are in the minority; what is not in dispute is
+        only that the statutory body no longer operates [security.transnationalExposure].
+      likelyMoves: >
+        Continued correspondence and public pressure as the midterms approach
+        [security.transnationalExposure].
+      engagementMode: >
+        oversight counterpart without compulsion. The report records the entitlement and the
+        non-response together [security.transnationalExposure].
+
+  - name: "Government of South Carolina (Governor Henry McMaster)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.powerStructure]
+    currentPositionFromReport: >
+      Appointed Darline Graham Nordone on 13 July 2026 to complete the term of the late Senator
+      Lindsey Graham, and she was sworn in the following day, preserving the 53–45 Senate division.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.powerStructure]
+      interests: >
+        Preserving the chamber division through immediate appointment [political.powerStructure].
+      resources: >
+        Gubernatorial appointment power that fills a Senate seat within days
+        [political.powerStructure].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. The report names it as a state executive exercising an appointment
+        power, not as a contesting party [political.powerStructure].
+
+  - name: "Government of Illinois (the Governor)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, security.internal, situation]
+    currentPositionFromReport: >
+      Declined to mobilise the Illinois National Guard under Title 32 and objected to the
+      federalisation of up to 300 of its members on 4 October 2025, obtaining relief the Supreme
+      Court declined to disturb by six votes to three in December 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, security.internal, political.constitutionalSubstrate]
+      interests: >
+        Retaining state command of its own Guard and excluding federalised deployment into Chicago
+        [security.internal][political.stabilityDrivers].
+      resources: >
+        Command of the Guard under state active duty and Title 32, litigation standing, and a
+        favourable reading of § 12406(3) by the apex court [political.stabilityDrivers][political.constitutionalSubstrate].
+      constraints: >
+        The Court decided on the statutory trigger without deciding whether protecting federal
+        property and personnel constitutes executing the law, so the underlying authority question
+        remains open [political.shockAbsorbers].
+      likelyMoves: >
+        Renewed litigation if federalisation is attempted on the undecided ground
+        [political.shockAbsorbers][political.constitutionalSubstrate].
+      engagementMode: >
+        veto-holder over Guard mobilisation in the first instance, its refusal under Title 32 being
+        what triggered the federalisation attempt [political.stabilityDrivers].
+
+  - name: "Government of California (the Governor)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers]
+    currentPositionFromReport: >
+      Obtained an injunction parallel to Illinois's against federalised Guard deployment, its
+      Los Angeles deployment being demobilised on 21 January 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, security.internal]
+      interests: >
+        Excluding federalised Guard forces deployed over the governor's objection
+        [political.stabilityDrivers].
+      resources: >
+        Litigation standing and parallel injunctive relief [political.stabilityDrivers].
+      constraints: >
+        The same open question left undecided in the Illinois ruling applies
+        [political.shockAbsorbers].
+      likelyMoves: report-silent
+      engagementMode: >
+        veto-holder in the same posture as Illinois, established by parallel injunction
+        [political.stabilityDrivers].
+
+  - name: "Government of Oregon (the Governor)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers]
+    currentPositionFromReport: >
+      Obtained an injunction parallel to Illinois's against federalised Guard deployment, its
+      Portland deployment being demobilised on 21 January 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, security.internal]
+      interests: >
+        Excluding federalised Guard forces deployed over the governor's objection
+        [political.stabilityDrivers].
+      resources: >
+        Litigation standing and parallel injunctive relief [political.stabilityDrivers].
+      constraints: >
+        The same open question left undecided in the Illinois ruling applies
+        [political.shockAbsorbers].
+      likelyMoves: report-silent
+      engagementMode: >
+        veto-holder in the same posture as Illinois, established by parallel injunction
+        [political.stabilityDrivers].
+
+  - name: "State of Texas (Texas National Guard)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, security.internal, situation]
+    currentPositionFromReport: >
+      Had up to 400 of its Guard members federalised on 5 October 2025 for deployment to Chicago,
+      with those personnel released from stand-by on 11 March 2026; the report records no objection
+      from the state.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, security.internal]
+      interests: report-silent
+      resources: >
+        A Guard force large enough to be federalised for out-of-state deployment
+        [political.stabilityDrivers].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. Unlike Illinois, California and Oregon, the report records no
+        objection or litigation from this state [political.stabilityDrivers].
+
+  - name: "State of Louisiana"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.constitutionalSubstrate]
+    currentPositionFromReport: >
+      Had its second majority-minority district held an unconstitutional racial gerrymander in
+      Louisiana v. Callais on 29 April 2026, in a ruling that raised the threshold for vote-dilution
+      claims under section 2 of the Voting Rights Act.
+    humanReview: >
+      Named as a party within a case description; retained because the report attributes the
+      districting act to the state itself.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Districting authority under state law, now subject to a higher federal threshold for
+        vote-dilution challenge [political.constitutionalSubstrate].
+      constraints: >
+        Its map was struck as a racial gerrymander even as the standard for challenging dilution was
+        raised [political.constitutionalSubstrate].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, with the federal constraint on its districting now narrower
+        [political.constitutionalSubstrate].
+
+  - name: "District of Columbia (municipal government and Metropolitan Police Department)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.constitutionalSubstrate, political.stateStructure, security.internal, situation]
+    currentPositionFromReport: >
+      Had its municipal police force placed under federal direction on 11 August 2025 under the
+      emergency provision of the Home Rule Act when the President declared a crime emergency, and its
+      residents vote in presidential elections under the Twenty-third Amendment but hold no voting
+      representation in either chamber, with Congress retaining legislative authority over the
+      District.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, political.constitutionalSubstrate, political.stateStructure]
+      interests: report-silent
+      resources: >
+        Home-rule municipal government and presidential electors capped at the number held by the
+        least populous state [political.constitutionalSubstrate].
+      constraints: >
+        Presidential direction of its police force rests on an authority peculiar to the District,
+        resting neither on Article II nor on Title 10, and Congress legislates for it
+        [security.internal][political.stateStructure].
+      likelyMoves: report-silent
+      engagementMode: >
+        hijack-exposed by construction. The report describes a municipal force directed by the
+        President under a statutory provision unique to the District, with no state-level command to
+        interpose [security.internal][political.stabilityDrivers].
+
+  - name: "National Guard (Army and Air National Guard, including Illinois and Texas units)"
+    kind: military
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, political.shockAbsorbers, political.constitutionalSubstrate, security.internal, security.military, situation]
+    currentPositionFromReport: >
+      Numbers 328,870 in the Army National Guard and 105,120 in the Air National Guard, answers to
+      whoever has called it — governor under state active duty, state with federal funding under
+      Title 32, President under Title 10 — and its Title 10 federalisation over gubernatorial
+      objection was blocked by the Supreme Court in December 2025, with demobilisation completed on
+      21 January 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.stabilityDrivers, security.internal, political.constitutionalSubstrate]
+      interests: report-silent
+      resources: >
+        Over 430,000 personnel across two components and three distinct command statuses
+        [security.military][political.stabilityDrivers].
+      constraints: >
+        Under Title 10 it falls under the Posse Comitatus Act, and the statutory trigger for
+        federalisation now requires that the President be unable to execute federal law with the
+        regular forces [political.stabilityDrivers][political.constitutionalSubstrate].
+      likelyMoves: >
+        Availability for further domestic missions contingent on which command status is invoked;
+        no episode in the period involved forces declining lawful orders
+        [political.stabilityDrivers][security.internal].
+      engagementMode: >
+        contested-command. The report describes command as the live variable rather than loyalty,
+        with the courts rather than the force supplying the answer [political.stabilityDrivers][security.internal].
+
+  - name: "United States armed forces (Army, Navy, Air Force, Marine Corps, Space Force)"
+    kind: military
+    liveActorStatus: current
+    fieldsCitedIn: [security.military, security.posture, security.internal, situation]
+    currentPositionFromReport: >
+      Number 1,298,099 active personnel against a fiscal 2026 authorised ceiling of 1,302,800, are
+      permanently based across at least 51 countries, are prosecuting a war against Iran alongside
+      Israel with a naval blockade of Iranian ports, and are modernising nuclear forces with New
+      START expired and no numerical limit in force.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.posture, situation]
+      interests: >
+        Preserving expeditionary reach while executing a reorientation toward homeland defence and
+        the Western Hemisphere [security.posture][security.military].
+      resources: >
+        Five services, 760,210 reserve-component personnel, 128 overseas bases, and the largest
+        military expenditure in the world at $954 billion [security.military].
+      constraints: >
+        A 7.5% real-terms spending fall in one year and a share of world spending down 4.3 points,
+        an annually set end-strength ceiling, and host-nation consent that can be withdrawn
+        [security.military].
+      likelyMoves: >
+        Continued blockade enforcement and hemispheric strike operations at rising rates on falling
+        obligations [situation][security.diplomacy].
+      engagementMode: >
+        executive-subordinate under Article II command; loyalty was not the variable in question
+        during the period [political.stabilityDrivers].
+
+  - name: "United States Army North"
+    kind: military
+    liveActorStatus: current
+    fieldsCitedIn: [political.stabilityDrivers, security.internal]
+    currentPositionFromReport: >
+      Commanded National Guard soldiers in Title 10 status under the Federal Protection Mission, with
+      the Department of Homeland Security as lead federal agency, through to demobilisation on
+      21 January 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.internal, political.stabilityDrivers]
+      interests: report-silent
+      resources: >
+        Operational command of federalised forces in the homeland mission [security.internal].
+      constraints: >
+        Its mission depended on federalisation authority the courts curtailed, and it operated under
+        a civilian lead agency [security.internal][political.stabilityDrivers].
+      likelyMoves: report-silent
+      engagementMode: >
+        executive-subordinate [security.internal].
+
+  - name: "United States Central Command"
+    kind: military
+    liveActorStatus: current
+    fieldsCitedIn: [situation]
+    currentPositionFromReport: >
+      Reported 44 commercial vessels redirected, two disabled and two boarded as of early August 2026
+      under the reimposed naval blockade of Iranian ports.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [situation, security.diplomacy]
+      interests: >
+        Enforcing the blockade as the operative instrument of pressure while the negotiating channel
+        runs through Muscat [situation][security.diplomacy].
+      resources: >
+        Naval interdiction capability reaching third-country commercial shipping [situation].
+      constraints: >
+        Interdiction of neutral shipping gives uninvolved states a direct interest in the terms of
+        the conflict [security.diplomacy].
+      likelyMoves: >
+        Continued interdiction while the blockade remains in force and the war is unresolved
+        [situation].
+      engagementMode: >
+        executive-subordinate [situation].
+
+  - name: "Federally recognised tribal nations (575 entities, including the Lumbee Tribe of North Carolina)"
+    kind: indigenous body
+    liveActorStatus: current
+    fieldsCitedIn: [territory.metabolism, political.constitutionalSubstrate, capacity.delivery, capacity.publicServices]
+    currentPositionFromReport: >
+      Exercise inherent pre-constitutional sovereignty over their members and Indian country subject
+      to congressional plenary power, reaffirmed in McGirt and upheld in Haaland v. Brackeen though
+      qualified as to state concurrent jurisdiction in Castro-Huerta; 575 entities were recognised as
+      of 30 January 2026, the most recent addition being the Lumbee Tribe of North Carolina by
+      statute in December 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, capacity.publicServices, territory.metabolism]
+      interests: >
+        Holding a legal order derived from neither federal nor state law, and closing service gaps —
+        more than 23% of people on Tribal lands lack fixed broadband and federal programmes serving
+        tribes sit on the high-risk register [political.constitutionalSubstrate][territory.metabolism][capacity.publicServices].
+      resources: >
+        Inherent sovereignty recognised in a doctrinal line from the Marshall Trilogy through McGirt
+        and Brackeen, statutory recognition procedures, and eligibility for infrastructure grants
+        alongside states and territories [political.constitutionalSubstrate][capacity.delivery].
+      constraints: >
+        Congressional plenary power over the relationship, state concurrent jurisdiction after
+        Castro-Huerta, and federal programmes serving them classed as high-risk
+        [political.constitutionalSubstrate][capacity.publicServices].
+      likelyMoves: >
+        Continued recognition additions by the three available routes — administrative, statutory and
+        judicial [political.constitutionalSubstrate].
+      engagementMode: >
+        sovereign counterpart, subject to congressional plenary power. The report locates their law
+        outside both federal and state orders while recording that Congress can qualify it
+        [political.constitutionalSubstrate].
+
+  - name: "The five inhabited unincorporated territories (Puerto Rico, Guam, U.S. Virgin Islands, Northern Mariana Islands, American Samoa)"
+    kind: subnational government
+    liveActorStatus: current
+    fieldsCitedIn: [territory.geography, territory.climate, political.constitutionalSubstrate, political.stateStructure]
+    currentPositionFromReport: >
+      Are governed under the Insular Cases regime with Congress holding plenary authority and the
+      Constitution applying only selectively, their residents holding neither a presidential vote nor
+      voting congressional representation; persons born in American Samoa are nationals but not
+      citizens, and the Northern Mariana Islands were struck by two super typhoons in 2026, the
+      second drawing a major disaster declaration on 3 August.
+    humanReview: >
+      Named as a class with a distinct constitutional standing and a live disaster exposure, but the
+      report describes them as acted upon rather than acting.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.constitutionalSubstrate, political.stateStructure, territory.climate]
+      interests: report-silent
+      resources: >
+        Territorial governments and access to federal disaster assistance, as with Rota's approval
+        for all categories of public assistance [territory.climate][political.stateStructure].
+      constraints: >
+        No presidential vote, no voting congressional representation, selective application of the
+        Constitution, and cyclonic exposure the national disaster accounting does not reach
+        [political.constitutionalSubstrate][territory.climate].
+      likelyMoves: report-silent
+      engagementMode: >
+        engaged through Congress's plenary authority rather than through representation — the report
+        frames the relationship as a live colonial legacy running inward
+        [political.constitutionalSubstrate][capacity.inheritedTerrain].
+
+  - name: "Intel Corporation"
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Sold the federal government 433.3 million shares at $20.47 — a 9.9% stake worth $8.9 billion
+      funded by $5.7 billion in awarded-but-unpaid CHIPS Act grants and $3.2 billion from the Secure
+      Enclave program — with the holding passive, carrying no board seat, the government agreeing to
+      vote with the board, and a five-year warrant for a further 5% exercisable only if Intel ceases
+      to own a majority of its foundry business.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: >
+        Converting awarded grant money into capital while retaining governance control and majority
+        ownership of its foundry business [economy.politicalEconomy].
+      resources: >
+        $8.9 billion in equity consideration, a governance structure the state agreed not to
+        contest, and strategic status in semiconductor policy [economy.politicalEconomy].
+      constraints: >
+        A warrant that penalises divestiture of the foundry majority, and dependence on a state that
+        is simultaneously its shareholder and its policy-maker [economy.politicalEconomy].
+      likelyMoves: >
+        Retention of foundry majority ownership, which is the condition on which the warrant does not
+        trigger [economy.politicalEconomy].
+      engagementMode: >
+        negotiable / dealable, firm-specific. The report describes alignment restructured
+        company-by-company rather than by sectoral rule [political.stabilityDrivers][economy.politicalEconomy].
+
+  - name: "MP Materials"
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Received a $400 million Department of Defense commitment in convertible preferred stock and a
+      warrant at a $30.03 conversion price representing 15% of shares outstanding, making the
+      department its largest shareholder, alongside a ten-year $110 per kilogram floor price for its
+      neodymium-praseodymium products and a ten-year commitment to purchase the entire output of its
+      planned second magnet plant.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, territory.minerals]
+      interests: >
+        Building domestic magnet capacity against guaranteed price and offtake rather than against
+        market risk [economy.politicalEconomy].
+      resources: >
+        A price floor, a ten-year full-output purchase commitment, and the largest shareholder being
+        the department that also buys the product [economy.politicalEconomy].
+      constraints: >
+        Its economics are now bound to a single counterparty, and the underlying dependence — China
+        supplying roughly 70% of rare earths — is a supply position it does not yet displace
+        [economy.politicalEconomy][territory.minerals].
+      likelyMoves: >
+        Construction of the second magnet plant whose entire output is pre-committed
+        [economy.politicalEconomy].
+      engagementMode: >
+        negotiable / dealable, firm-specific, with the state as shareholder, price-setter and
+        customer simultaneously [economy.politicalEconomy].
+
+  - name: "Hyperscaler technology firms (Meta, Microsoft, Amazon, Alphabet)"
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Carry the artificial-intelligence data-centre buildout with combined capital expenditure of
+      about $410 billion in 2025 and announced plans of roughly $725 billion for 2026, with Amazon
+      first on the 2026 Fortune 500 and Alphabet the most profitable company on the list at $132
+      billion.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, economy.realEconomy, territory.metabolism]
+      interests: >
+        Sustaining a capital programme that is itself the leading impulse behind national business
+        investment [economy.realEconomy][economy.politicalEconomy].
+      resources: >
+        Capital expenditure larger than most national budgets, record profits, and demand weight
+        sufficient to lift national electricity consumption growth [economy.politicalEconomy][territory.metabolism].
+      constraints: >
+        Electricity demand growth of 2.1% a year driven by data centres runs into an ageing physical
+        distribution network, and firm-specific federal policy has become the operative alignment
+        mechanism [territory.metabolism][political.stabilityDrivers].
+      likelyMoves: >
+        Execution of roughly $725 billion in announced 2026 capital expenditure, which the budget
+        office already incorporates into projected productivity growth
+        [economy.politicalEconomy][capacity.productivity].
+      engagementMode: >
+        negotiable / dealable, firm-specific. The report describes export-restriction relief traded
+        for revenue levies on a company-by-company basis [political.stabilityDrivers].
+
+  - name: "Health-care corporate majors (UnitedHealth Group, CVS Health, McKesson, Cencora)"
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Occupy four of the top ten places on the 2026 Fortune 500 — UnitedHealth Group third as the
+      largest health-care company, CVS Health sixth, McKesson eighth and Cencora tenth — within a
+      health-care sector generating $3.6 trillion in revenue and eight of the top twenty-five firms.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, capacity.publicServices]
+      interests: report-silent
+      resources: >
+        Revenue scale within a system consuming 17.2% of gross domestic product, and a top-ten
+        weighting that makes health care the defining sector of the corporate structure
+        [economy.politicalEconomy][capacity.publicServices].
+      constraints: >
+        A contracting public programme — Medicaid and the Children's Health Insurance Program down
+        5 million enrollees over a year, with work requirements from January 2027
+        [capacity.publicServices].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. The report names them for policy weight in the private structure
+        without recording a specific engagement [economy.politicalEconomy].
+
+  - name: "Defence prime contractors (Lockheed Martin, RTX, Boeing, General Dynamics, Northrop Grumman)"
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Are named as the long-standing prime contractors on the Department of Defense's top-100
+      contractor list, through which the defence industrial base runs.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy, capacity.delivery, security.military]
+      interests: report-silent
+      resources: >
+        Standing positions on the top-100 contractor list within a procurement portfolio exceeding
+        $750 billion [economy.politicalEconomy][capacity.delivery].
+      constraints: >
+        Weapon systems acquisition regressed between the 2023 and 2025 high-risk assessments, and
+        military expenditure fell 7.5% in real terms in 2025 [capacity.delivery][security.military].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable through contracting rather than through policy bargaining
+        [economy.politicalEconomy].
+
+  - name: "Other Fortune 500 revenue leaders named (Walmart, Apple, Berkshire Hathaway, ExxonMobil)"
+    kind: private-sector
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Are named among the top ten of the 2026 Fortune 500, Walmart having lost first place to Amazon
+      after a thirteen-year run, within a list accounting for $21.0 trillion in revenue, $2.1
+      trillion in profits and 30.5 million employees worldwide.
+    humanReview: >
+      Named only for ranking position within a concentration measure; no policy role, contest or
+      transaction is attached to them in the report.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: report-silent
+      resources: >
+        Revenue scale within the largest bloc of the private structure [economy.politicalEconomy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. The report attaches no engagement to them beyond their ranking
+        [economy.politicalEconomy].
+
+  - name: "Organised labour (unions; no individual body named in the report)"
+    kind: labour
+    liveActorStatus: current
+    fieldsCitedIn: [economy.politicalEconomy]
+    currentPositionFromReport: >
+      Is described as the weak counterparty: union membership stood at 10.0% and 14.7 million in 2025
+      against 20.1% and 17.7 million in 1983, with representation at 11.2%, density of 32.9% in the
+      public sector against 5.9% in the private, and 1.5% in financial activities and 2.1% in
+      professional and business services — the sectors the corporate structure is concentrated in.
+    humanReview: >
+      Included as a named institutional category, but the report names no individual union, so the
+      actor has no specific entity behind it.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.politicalEconomy]
+      interests: >
+        Holding a wage premium — $1,404 against $1,174 in median usual weekly earnings — in a
+        shrinking share of the workforce [economy.politicalEconomy].
+      resources: >
+        14.7 million members concentrated in the public sector, where density remains above 30%
+        [economy.politicalEconomy].
+      constraints: >
+        Near-absence from the sectors where corporate revenue and profit are concentrated, and a
+        density halved over four decades [economy.politicalEconomy].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable but structurally weak. The report's own term is "the weak counterparty"
+        [economy.politicalEconomy].
+
+  - name: "American Society of Civil Engineers"
+    kind: civil-society
+    liveActorStatus: current
+    fieldsCitedIn: [capacity.delivery]
+    currentPositionFromReport: >
+      Graded United States infrastructure a C overall in its 2025 quadrennial assessment — the first
+      C in the series — and estimates a $3.7 trillion gap between the $9.1 trillion needed for a
+      state of good repair and $5.4 trillion in forecast investment; the report notes it is a
+      professional engineering body with a known advocacy orientation toward higher infrastructure
+      spending.
+    humanReview: >
+      Borderline against filter (e): it produces an assessment of the country, but the report
+      characterises it as an advocacy-oriented professional body rather than a neutral measurer.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [capacity.delivery]
+      interests: >
+        Higher public and private infrastructure investment, an orientation the report states
+        explicitly [capacity.delivery].
+      resources: >
+        A quadrennial assessment across 18 categories that supplies the reference figure against
+        which appropriated infrastructure money is measured [capacity.delivery].
+      constraints: >
+        Its advocacy orientation is disclosed in the report, which qualifies the weight of its
+        estimate [capacity.delivery].
+      likelyMoves: >
+        A further quadrennial grade on the same cycle [capacity.delivery].
+      engagementMode: >
+        negotiable / dealable as an advocacy counterpart; it holds no statutory role
+        [capacity.delivery].
+
+external:
+
+  - name: "China (People's Republic of China)"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [territory.minerals, economy.externalVulnerability, political.shockAbsorbers, capacity.productivity, security.internal, security.military, security.transnationalExposure, security.diplomacy]
+    currentPositionFromReport: >
+      Is the primary source for 14 of the most import-dependent critical minerals, supplying roughly
+      70% of rare earths and 55% of antimony, held $683.5 billion of federal debt in December 2025 on
+      a falling share, saw its share of United States goods imports fall from 13.2% to 7.7% across
+      2025, is framed by the 2026 National Defense Strategy as the primary balance-of-power
+      competitor to be deterred by denial in the Indo-Pacific, and is assessed among the most
+      persistent and active cyber actors while cooperating on fentanyl precursor chemicals.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [territory.minerals, economy.externalVulnerability, security.transnationalExposure, security.diplomacy]
+      interests: >
+        Retaining leverage over critical-mineral supply while its trade and debt exposure to the
+        United States falls, and contesting the Indo-Pacific balance
+        [territory.minerals][economy.externalVulnerability][security.diplomacy].
+      resources: >
+        Supply concentration in 14 critical minerals, $683.5 billion in Treasury holdings, and cyber
+        capability the intelligence assessment ranks among the most persistent
+        [territory.minerals][economy.externalVulnerability][security.transnationalExposure].
+      constraints: >
+        A goods-import share cut nearly in half in a year through substitution across suppliers
+        rather than reduced United States demand, and $954 billion in United States military
+        expenditure against its own [economy.externalVulnerability][security.military].
+      likelyMoves: >
+        Continued supply leverage on minerals, continued cyber pre-positioning, and continued
+        cooperation on precursor chemicals, which the assessment describes as improving
+        [territory.minerals][security.transnationalExposure].
+      engagementMode: >
+        negotiable / dealable, adversarially. The report records simultaneous competition,
+        substitution and functional cooperation on narcotics precursors
+        [security.diplomacy][security.transnationalExposure].
+
+  - name: "Mexico"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [economy.externalVulnerability, security.transnationalExposure, security.diplomacy]
+    currentPositionFromReport: >
+      Runs the third-largest bilateral goods surplus with the United States at $196.9 billion, had
+      delivered 0.88 million of the 1.75 million acre-feet owed at the close of the 1944 Water Treaty
+      cycle in October 2025, and committed in February 2026 to annual deliveries of at least 350,000
+      acre-feet and a plan addressing the shortfall; Mexico-based organisations dominate fentanyl and
+      cocaine smuggling into the country.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, economy.externalVulnerability]
+      interests: >
+        Preserving trade access while managing water obligations it has repeatedly failed to meet
+        since 1994 [economy.externalVulnerability][security.transnationalExposure].
+      resources: >
+        Treaty cycles measured over five years rather than annually, and the shared administration of
+        the treaty through a joint commission [security.transnationalExposure].
+      constraints: >
+        United States appropriations now condition some funds on certification of delivery, and
+        cartels operating from its territory are the principal named non-state entanglement
+        [security.transnationalExposure].
+      likelyMoves: >
+        Delivery against the February 2026 commitment under certification pressure
+        [security.transnationalExposure].
+      engagementMode: >
+        negotiable / dealable, with a conditionality mechanism now attached
+        [security.transnationalExposure].
+
+  - name: "Canada"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [territory.geography, economy.externalVulnerability]
+    currentPositionFromReport: >
+      Borders the country to the north and supplies natural gas imports that remain important for
+      balancing seasonal demand.
+    humanReview: >
+      Appears mainly in geographic, comparative and trade-statistic frames; retained only for the
+      seasonal gas-balancing dependency.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability, territory.metabolism]
+      interests: report-silent
+      resources: >
+        Natural gas supply that balances seasonal demand in a country that is otherwise a record net
+        energy exporter [economy.externalVulnerability].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable. The report records a functional supply relationship and no contest
+        [economy.externalVulnerability].
+
+  - name: "European Union"
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [economy.externalVulnerability, security.diplomacy]
+    currentPositionFromReport: >
+      Holds the largest bilateral goods deficit with the United States at $218.8 billion in 2025, and
+      its member states are among the European allies the 2026 National Defense Strategy directs to
+      lead their own defence with limited United States support.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability, security.diplomacy]
+      interests: >
+        Preserving market access under a tariff base that now rests on trade-remedy authority with no
+        rate ceiling, while absorbing a directed shift of defence burden
+        [economy.externalVulnerability][security.diplomacy].
+      resources: >
+        The largest single trading relationship by bilateral deficit, and rising allied military
+        spending as the United States share of world spending falls
+        [economy.externalVulnerability][security.military].
+      constraints: >
+        Section 301 rates are tied to enforcement of a forced-labour import prohibition rather than to
+        bilateral bargaining [security.diplomacy][economy.externalVulnerability].
+      likelyMoves: >
+        Adaptation to a tariff schedule set by compliance criteria rather than negotiation, and
+        assumption of a larger share of European defence [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable, but with the tariff channel now rule-tied rather than bargained
+        [economy.externalVulnerability].
+
+  - name: "United Kingdom"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [economy.externalVulnerability, security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Held $866.0 billion of federal debt in December 2025, hosts 10,058 permanently assigned United
+      States personnel, runs a $32.2 billion goods deficit with the United States, and is a partner
+      in the AUKUS submarine and advanced-capability arrangement.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability, security.diplomacy, security.military]
+      interests: >
+        Maintaining the security partnership and the financial relationship simultaneously
+        [security.diplomacy][economy.externalVulnerability].
+      resources: >
+        The second-largest foreign holding of federal debt, host-nation status, and AUKUS
+        participation [economy.externalVulnerability][security.diplomacy].
+      constraints: >
+        Its debt holdings are recorded by location rather than nationality, so its apparent position
+        may not be its own [economy.externalVulnerability].
+      likelyMoves: >
+        Continued AUKUS cooperation on submarines and advanced capability [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable, treaty-anchored through the North Atlantic Treaty and AUKUS
+        [security.diplomacy].
+
+  - name: "Japan"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [economy.externalVulnerability, security.posture, security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Is the largest foreign holder of federal debt at $1,185.5 billion, hosts 54,774 permanently
+      assigned personnel, provided $12.6 billion in direct financial support between fiscal 2016 and
+      2019 covering 60.2% of the departmental obligations associated with the presence on its
+      territory, and holds both a collective-defence treaty and major non-NATO ally status.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.diplomacy, economy.externalVulnerability]
+      interests: >
+        Sustaining the alliance and the forward presence it substantially pays for, as the strategy
+        reorients toward denial in the Indo-Pacific [security.military][security.diplomacy].
+      resources: >
+        Host-nation support meeting the majority of identifiable costs, the largest foreign holding
+        of federal debt, and treaty and statutory alliance status
+        [security.military][economy.externalVulnerability][security.diplomacy].
+      constraints: >
+        A transactional burden-sharing turn in the standing strategy raises the price of the same
+        arrangement [security.diplomacy][security.posture].
+      likelyMoves: >
+        Continued host-nation support at or above current levels under transactional pressure
+        [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable, treaty-anchored, and the report's clearest case of a partner meeting
+        the majority of identifiable costs [security.posture][security.military].
+
+  - name: "South Korea"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.posture, security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Hosts 24,234 permanently assigned personnel, provided $5.8 billion in direct financial support
+      between fiscal 2016 and 2019 covering 43.3% of the associated departmental obligations, and
+      holds both a collective-defence treaty and major non-NATO ally status.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.diplomacy]
+      interests: >
+        Sustaining the forward presence and the treaty guarantee [security.diplomacy].
+      resources: >
+        Substantial host-nation support and dual treaty and statutory alliance standing
+        [security.military][security.diplomacy].
+      constraints: >
+        The transactional burden-sharing shift applies to it as to Japan, at a lower current cost
+        share [security.posture][security.diplomacy].
+      likelyMoves: >
+        Renegotiation pressure on its cost share [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable, treaty-anchored [security.diplomacy].
+
+  - name: "Germany"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Hosts 35,068 permanently assigned United States personnel, the largest European concentration,
+      within a European footprint of 31 persistent bases and 19 other sites.
+    humanReview: >
+      Named as a basing host with a personnel count; no independent action is attributed to it.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.diplomacy]
+      interests: report-silent
+      resources: >
+        Host-nation consent for the largest European concentration of United States forces
+        [security.military].
+      constraints: >
+        It is among the European allies directed to lead their own defence with limited United States
+        support [security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, treaty-anchored through the North Atlantic Treaty
+        [security.diplomacy].
+
+  - name: "Italy"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Hosts 12,375 permanently assigned United States personnel within the European footprint.
+    humanReview: >
+      Named as a basing host with a personnel count; no independent action is attributed to it.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military, security.diplomacy]
+      interests: report-silent
+      resources: >
+        Host-nation consent for a significant European basing concentration [security.military].
+      constraints: >
+        It is among the European allies directed to lead their own defence with limited United States
+        support [security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, treaty-anchored [security.diplomacy].
+
+  - name: "Bahrain"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Hosts 3,479 permanently assigned personnel, the largest concentration of the roughly 5,400 in
+      the Middle East across eight persistent bases and 11 other sites.
+    humanReview: >
+      Named as a basing host with a personnel count; no independent action is attributed to it.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: report-silent
+      resources: >
+        Host-nation consent for the principal Middle East basing concentration during an active war
+        with Iran [security.military][situation].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, host-nation consent being the operative variable
+        [security.military].
+
+  - name: "Kuwait"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Is named among the five states contributing to the $714.2 million in burden-sharing
+      contributions the department reported for fiscal 2023.
+    humanReview: >
+      Thin: named only within a burden-sharing contributor list.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: report-silent
+      resources: >
+        Financial contribution to the United States presence [security.military].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable [security.military].
+
+  - name: "Saudi Arabia"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Is named among the five states contributing to the $714.2 million in burden-sharing
+      contributions the department reported for fiscal 2023.
+    humanReview: >
+      Thin: named only within a burden-sharing contributor list.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: report-silent
+      resources: >
+        Financial contribution to the United States presence [security.military].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable [security.military].
+
+  - name: "Poland"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Is named among the five states contributing to the $714.2 million in burden-sharing
+      contributions the department reported for fiscal 2023.
+    humanReview: >
+      Thin: named only within a burden-sharing contributor list.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: report-silent
+      resources: >
+        Financial contribution to the United States presence within the North Atlantic Treaty area
+        [security.military].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable [security.military].
+
+  - name: "Niger"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Revoked its status-of-forces agreement in March 2024, compelling United States withdrawal from
+      two bases by September — the report's illustration that basing access carries political risk.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: report-silent
+      resources: >
+        Sovereign control over the status-of-forces agreement on which access depended
+        [security.military].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        withdrawn consent. The report names it as the case where host-nation consent was revoked
+        rather than negotiated [security.military].
+
+  - name: "Australia"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Holds a collective-defence treaty alongside New Zealand, statutory major non-NATO ally status,
+      and participation in the AUKUS submarine and advanced-capability arrangement.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: >
+        Securing submarine and advanced capability through AUKUS within the treaty alliance system
+        [security.diplomacy].
+      resources: >
+        Three overlapping tiers of alliance standing — treaty, statutory and partnership
+        [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: >
+        Continued AUKUS cooperation [security.diplomacy].
+      engagementMode: >
+        negotiable / dealable, treaty-anchored [security.diplomacy].
+
+  - name: "New Zealand"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is covered with Australia by a collective-defence treaty arrangement within the alliance system
+      the report describes as the largest in the world.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        Treaty-based collective-defence standing [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, treaty-anchored [security.diplomacy].
+
+  - name: "Philippines"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is covered by a collective-defence treaty within the alliance system anchoring the Indo-Pacific
+      posture.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        Treaty-based collective-defence standing in the theatre the strategy prioritises for denial
+        [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, treaty-anchored [security.diplomacy].
+
+  - name: "Thailand"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is covered by a collective-defence treaty within the alliance system.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        Treaty-based collective-defence standing [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, treaty-anchored [security.diplomacy].
+
+  - name: "Israel"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.military, security.diplomacy, situation]
+    currentPositionFromReport: >
+      Holds statutory major non-NATO ally status, has fought alongside United States forces against
+      Iran since 28 February 2026, received no new supplemental appropriations in 2025, and is named
+      in the homeland threat bulletin tying the elevated domestic threat environment to United States
+      involvement in the Israel–Iran conflict.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [situation, security.diplomacy, security.internal]
+      interests: >
+        Sustaining joint prosecution of the war against Iran [situation][security.diplomacy].
+      resources: >
+        Co-belligerent status with the pre-eminent military power and statutory alliance standing
+        [security.diplomacy].
+      constraints: >
+        No new supplemental appropriations were made in 2025, and the mediation channel has moved to
+        third parties rather than running bilaterally [security.military][security.diplomacy].
+      likelyMoves: >
+        Continued joint operations while the war remains unresolved [situation].
+      engagementMode: >
+        negotiable / dealable, co-belligerent [situation][security.diplomacy].
+
+  - name: "Iran"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.transnationalExposure, security.diplomacy, situation]
+    currentPositionFromReport: >
+      Has been at war with the United States since 28 February 2026, is under a naval blockade of its
+      ports reaching third-country commercial shipping, is negotiating with Oman in Muscat on a new
+      Strait of Hormuz transit route while attributing the strait's closure to the blockade, and is
+      among the state actors linked to cyber operations against United States networks.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [situation, security.diplomacy, security.transnationalExposure]
+      interests: >
+        Lifting the blockade and settling Strait of Hormuz transit on terms it can accept
+        [situation][security.diplomacy].
+      resources: >
+        Control of the strait's status as a negotiating object, a mediated channel through Oman and
+        earlier through Pakistan, and cyber capability [situation][security.transnationalExposure].
+      constraints: >
+        A blockade that has redirected 44 commercial vessels and disabled two, and a war fought
+        against the pre-eminent military power and Israel together [situation].
+      likelyMoves: >
+        Conclusion of the Muscat transit talks, which both parties report as close
+        [situation].
+      engagementMode: >
+        blocked / not-engageable bilaterally, engaged through third-party mediation. The report shows
+        every channel running through Pakistan or Oman rather than directly
+        [situation][security.diplomacy].
+
+  - name: "Oman"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy, situation]
+    currentPositionFromReport: >
+      Hosts the substantive negotiating channel in Muscat, where it and Iran report talks on a new
+      Strait of Hormuz transit route close to conclusion.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [situation, security.diplomacy]
+      interests: >
+        Converting mediation standing into a settled transit arrangement for the strait
+        [situation].
+      resources: >
+        Acceptability to both belligerents as the venue after the Pakistan-brokered ceasefire lapsed
+        [situation][security.diplomacy].
+      constraints: >
+        It mediates rather than decides; the blockade remains in force and the war unresolved
+        [situation].
+      likelyMoves: >
+        Conclusion of the transit talks it reports as close [situation].
+      engagementMode: >
+        negotiable / dealable, as mediator and channel-holder [situation].
+
+  - name: "Pakistan"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy, situation]
+    currentPositionFromReport: >
+      Brokered the ceasefire that took effect on 8 April 2026, was formalised in an interim
+      memorandum of understanding on 17 June, and held until the President declared it over on
+      8 July 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [situation, security.diplomacy]
+      interests: report-silent
+      resources: >
+        Demonstrated capacity to broker a ceasefire between the belligerents [situation].
+      constraints: >
+        The ceasefire it brokered was ended unilaterally, and the substantive channel has since moved
+        to Muscat [situation][security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, as a mediator whose channel has been superseded [situation].
+
+  - name: "India"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure]
+    currentPositionFromReport: >
+      Is named alongside China as a counterpart on fentanyl precursor chemicals, cooperation being
+      described as improving against tens of thousands of fentanyl-related deaths a year.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure]
+      interests: report-silent
+      resources: >
+        Jurisdiction over precursor-chemical supply chains [security.transnationalExposure].
+      constraints: report-silent
+      likelyMoves: >
+        Continued cooperation on precursors, the trajectory the assessment records
+        [security.transnationalExposure].
+      engagementMode: >
+        negotiable / dealable, on a cooperative track [security.transnationalExposure].
+
+  - name: "Russia"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure]
+    currentPositionFromReport: >
+      Is assessed with China as the most persistent and active cyber actor seeking to compromise
+      government and private networks and critical infrastructure, and its efforts to influence the
+      2016 presidential election were the occasion for the statutory foreign-influence body that has
+      since been dissolved.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.posture]
+      interests: >
+        Intelligence collection and pre-positioned options for disruption in United States networks
+        [security.transnationalExposure].
+      resources: >
+        Cyber capability ranked among the most persistent and active, and a demonstrated influence
+        record [security.transnationalExposure].
+      constraints: report-silent
+      likelyMoves: >
+        Continued network compromise and influence activity into an election cycle whose
+        threat-assessment machinery has been dismantled
+        [security.transnationalExposure][security.posture].
+      engagementMode: >
+        blocked / not-engageable. The report names it only as a threat actor
+        [security.transnationalExposure].
+
+  - name: "North Korea"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure]
+    currentPositionFromReport: >
+      Is linked to cyber operations against United States networks and probably took $2 billion in
+      cryptocurrency thefts in 2025 alone, funding the regime including its strategic weapons
+      programmes.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure]
+      interests: >
+        Financing the regime and its strategic weapons programmes through illicit cyber revenue
+        [security.transnationalExposure].
+      resources: >
+        Cryptocurrency theft operating as state revenue at around $2 billion a year
+        [security.transnationalExposure].
+      constraints: report-silent
+      likelyMoves: >
+        Continued theft at scale, the assessment recording no disruption
+        [security.transnationalExposure].
+      engagementMode: >
+        blocked / not-engageable [security.transnationalExposure].
+
+  - name: "Ukraine"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.military]
+    currentPositionFromReport: >
+      Was allocated $127 billion in related support between 2022 and 2025, of which only $65.1
+      billion had been disbursed by the end of 2025, with no new supplemental appropriations made in
+      2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.military]
+      interests: report-silent
+      resources: >
+        An undisbursed balance of roughly $62 billion from prior allocations [security.military].
+      constraints: >
+        The end of supplemental appropriations was the main driver of a 7.5% real-terms fall in
+        United States military expenditure, so the flow has stopped rather than slowed
+        [security.military].
+      likelyMoves: report-silent
+      engagementMode: >
+        report-silent. The report records the funding position without describing engagement terms
+        [security.military].
+
+  - name: "Cuba"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Retains ultimate sovereignty over the Guantánamo Bay leased area under the February 1903
+      agreement preserved by the 1934 Treaty of Relations, regards the presence as an illegal
+      occupation, and holds a lease that can be modified or abrogated only by agreement between the
+      two governments.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: >
+        Ending what it characterises as an illegal occupation of its territory [security.diplomacy].
+      resources: >
+        Recognised ultimate sovereignty over the leased area and a mutual-consent requirement for any
+        change [security.diplomacy].
+      constraints: >
+        The territorial limits stand as they were in 1934 unless the United States abandons the
+        station, so its consent requirement cannot force an exit [security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        blocked / not-engageable on the standing dispute, which the report records as unresolved and
+        contested in characterisation [security.diplomacy].
+
+  - name: "Venezuela (Nicolás Maduro; the political transition)"
+    kind: foreign state
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy, situation]
+    currentPositionFromReport: >
+      Had its leader Nicolás Maduro taken into United States custody by a military operation in
+      Caracas on 3 January 2026, removing a sitting head of state by force and placing the United
+      States inside a Venezuelan political transition over which it has installed influence, in the
+      context of a strike campaign against vessels said to be operated by Venezuelan cartels.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [situation, security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        Its head of state was removed by force and an external power holds influence over the
+        succession [situation][security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        externally-managed transition. The report describes the United States as installed inside the
+        succession rather than negotiating with a counterpart [security.diplomacy][situation].
+
+  - name: "North Atlantic Treaty Organization"
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.military, security.diplomacy]
+    currentPositionFromReport: >
+      Binds the country to 31 other members, 32 in all as of 2026, with roughly 80,000 United States
+      personnel assigned or deployed to member countries in Europe as of June 2024 against 67,200
+      permanently assigned, while the 2026 National Defense Strategy directs European allies to lead
+      their own defence with limited support.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.military]
+      interests: >
+        Preserving the collective-defence guarantee as the United States reorients toward the
+        homeland and the Western Hemisphere [security.diplomacy][security.posture].
+      resources: >
+        Treaty obligation across 32 members, a permanent United States presence at 31 persistent
+        bases in Europe, and rising allied military spending [security.military].
+      constraints: >
+        A standing strategy that directs allies to lead with limited support, and a United States
+        share of world military spending down 4.3 points in a single year
+        [security.diplomacy][security.military].
+      likelyMoves: >
+        Continued allied spending increases against a shrinking relative United States contribution
+        [security.military].
+      engagementMode: >
+        negotiable / dealable, treaty-anchored but transactionally reframed
+        [security.diplomacy][security.posture].
+
+  - name: "International Monetary Fund"
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [economy.externalVulnerability, political.stabilityDrivers, political.shockAbsorbers]
+    currentPositionFromReport: >
+      Concluded Article IV surveillance on 1 April 2026 with no program in place, judged the 2025
+      external position moderately weaker than fundamentals imply and attributed the misalignment
+      largely to the chronic federal deficit, names the shift of non-resident holders toward
+      price-sensitive non-bank investors as the principal external vulnerability, and assesses
+      firm-specific ownership and export-levy policies as distortionary and likely to misallocate
+      resources.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [economy.externalVulnerability, political.stabilityDrivers, political.shockAbsorbers]
+      interests: >
+        Surfacing the fiscal source of the external imbalance and the distortion of firm-specific
+        industrial policy [economy.externalVulnerability][political.stabilityDrivers].
+      resources: >
+        Annual Article IV surveillance of a member state, and analytical standing the report relies
+        on for the composition of the investor base [economy.externalVulnerability].
+      constraints: >
+        The country holds no program, so the Fund has advice and no leverage; its external finding
+        restates the fiscal one rather than adding a second [economy.externalVulnerability].
+      likelyMoves: >
+        A further annual Article IV consultation on the same analytical line
+        [economy.externalVulnerability].
+      engagementMode: >
+        surveillance counterpart, advisory and non-binding. Membership without a program leaves the
+        relationship entirely persuasive [economy.externalVulnerability].
+
+  - name: "Inter-American Commission on Human Rights (Organization of American States)"
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [political.rightsAndChecks, political.stabilityDrivers, security.internal]
+    currentPositionFromReport: >
+      Published Merits Report No. 60/25 on 28 April 2025 holding the country responsible for
+      violations in the death of Anastasio Hernández Rojas in Customs and Border Protection custody
+      and finding the use-of-force framework lacking proportionality requirements, recorded
+      detentions and deportations tied to political speech and the removal of more than 200
+      Venezuelan nationals under the Alien Enemies Act, received no state response after two
+      transmissions, and also describes the constitutional framework, independent judiciary, free
+      press and active civil society as pillars of the legitimation tradition.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [political.rightsAndChecks, security.internal, political.stabilityDrivers]
+      interests: >
+        Securing a state response and remedial change to the use-of-force framework it found
+        deficient [political.rightsAndChecks].
+      resources: >
+        Treaty standing under the American Declaration, merits reports publishable under Article 47.3
+        of its Rules of Procedure, and the country's participation as an Organization of American
+        States member [political.rightsAndChecks].
+      constraints: >
+        The state did not respond to either transmission, there is no accredited national
+        human-rights institution as domestic counterpart, and its findings carry no enforcement
+        [political.rightsAndChecks].
+      likelyMoves: >
+        Continued publication of merits findings and country monitoring without state engagement
+        [political.rightsAndChecks].
+      engagementMode: >
+        adjudicative counterpart, currently unanswered. The report records a shift from concern to
+        adjudication and a state that has not replied [political.rightsAndChecks].
+
+  - name: "World Health Organization"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      United States membership terminated on 22 January 2026, the first of the ordered withdrawals to
+      complete.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It has lost a member state, and the report records the exit as completed rather than pending
+        [security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaged. Membership has terminated [security.diplomacy].
+
+  - name: "United Nations Human Rights Council"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      United States participation was terminated by Executive Order 14199 of 4 February 2025, the
+      same order that directed review of every intergovernmental organisation, convention and treaty
+      to which the country belongs.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        Participation was terminated by executive order, and the review it triggered produced 66
+        further withdrawals [security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaged [security.diplomacy].
+
+  - name: "United Nations Framework Convention on Climate Change"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is named among the 66 organisations from which a presidential memorandum of 7 January 2026
+      directed withdrawal, alongside withdrawal from the Paris Agreement effective 27 January 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, territory.transition]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It loses a party whose targets were voided and which is assessed as no longer holding a
+        net-zero target [security.diplomacy][territory.transition].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaging, agencies having been instructed to cease participation and funding so
+        far as law permits [security.diplomacy].
+
+  - name: "Intergovernmental Panel on Climate Change"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is named among the 66 organisations from which the 7 January 2026 presidential memorandum
+      directed withdrawal.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It loses the participation and funding of a member state by executive instruction
+        [security.diplomacy].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaging [security.diplomacy].
+
+  - name: "European Centre of Excellence for Countering Hybrid Threats"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.posture, security.diplomacy]
+    currentPositionFromReport: >
+      Is named among the 66 organisations from which withdrawal was directed, and is identified as
+      bearing directly on exposures recorded elsewhere in the report — the withdrawal falling in the
+      same period as the dissolution of the domestic foreign-influence apparatus.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.posture]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It loses a participant at the moment that participant's own hybrid-threat machinery was being
+        dismantled [security.posture].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaging [security.diplomacy].
+
+  - name: "Global Forum on Cyber Expertise"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.posture, security.diplomacy]
+    currentPositionFromReport: >
+      Is named among the 66 organisations from which withdrawal was directed, and is identified as
+      bearing directly on cyber exposures recorded elsewhere in the report.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy, security.posture]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It loses a participant while that participant's intelligence services document pre-positioned
+        cyber intrusions in detail [security.posture][security.transnationalExposure].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaging [security.diplomacy].
+
+  - name: "Global Counterterrorism Forum"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is named among the 66 organisations from which the 7 January 2026 memorandum directed
+      withdrawal, and among those bearing directly on exposures recorded elsewhere in the report.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It loses a participant whose homeland threat level is assessed as heightened
+        [security.diplomacy][security.internal].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaging [security.diplomacy].
+
+  - name: "Global Forum on Migration and Development"
+    kind: international body
+    liveActorStatus: recently-live
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Is named among the 66 organisations from which the 7 January 2026 memorandum directed
+      withdrawal, and among those bearing directly on exposures recorded elsewhere in the report.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: report-silent
+      constraints: >
+        It loses a participant whose net international migration fell from roughly 2.7 million to
+        about 321,000 across the period [security.diplomacy][security.transnationalExposure].
+      likelyMoves: report-silent
+      engagementMode: >
+        exited / disengaging [security.diplomacy].
+
+  - name: "International Boundary and Water Commission"
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.transnationalExposure]
+    currentPositionFromReport: >
+      Administers the 1944 Water Treaty entitling the United States to at least 350,000 acre-feet a
+      year from Mexican tributaries over five-year cycles, and the same treaty's border-sanitation
+      provisions covering raw sewage and industrial wastewater in the Tijuana River Valley.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure]
+      interests: >
+        Administering delivery cycles and sanitation obligations across the border
+        [security.transnationalExposure].
+      resources: >
+        Treaty administration authority over both water allocation and border sanitation
+        [security.transnationalExposure].
+      constraints: >
+        Cycle obligations have been missed repeatedly since 1994, and the enforcement lever the
+        report records is a United States appropriations condition rather than a commission remedy
+        [security.transnationalExposure].
+      likelyMoves: >
+        Administration of the delivery plan agreed in February 2026
+        [security.transnationalExposure].
+      engagementMode: >
+        statutorily-independent bilateral administrator, without enforcement of its own
+        [security.transnationalExposure].
+
+  - name: "AUKUS partnership"
+    kind: international body
+    liveActorStatus: current
+    fieldsCitedIn: [security.diplomacy]
+    currentPositionFromReport: >
+      Adds submarine and advanced-capability cooperation with the United Kingdom and Australia to the
+      treaty alliance system.
+    humanReview: >
+      Borderline against filter (f): it may be an arrangement rather than a body; its two partners are
+      separately extracted.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.diplomacy]
+      interests: report-silent
+      resources: >
+        A trilateral channel for submarine and advanced-capability cooperation outside the treaty
+        alliance structures [security.diplomacy].
+      constraints: report-silent
+      likelyMoves: report-silent
+      engagementMode: >
+        negotiable / dealable, as a standing partnership among three allies [security.diplomacy].
+
+  - name: "Transnational criminal organisations (Sinaloa Cartel, Jalisco New Generation Cartel, MS-13, Revolutionary Armed Forces of Colombia, National Liberation Army)"
+    kind: other
+    liveActorStatus: current
+    fieldsCitedIn: [security.internal, security.transnationalExposure, situation]
+    currentPositionFromReport: >
+      Are the principal non-state entanglement: Mexico-based organisations dominate production and
+      smuggling of fentanyl, heroin, methamphetamine and cocaine into the country, Colombia-based
+      organisations and armed groups traffic cocaine to United States and European markets and extend
+      relationships to Ecuadorian and Brazilian gangs, MS-13 maintains established cells inside the
+      country using violence against the Salvadoran diaspora, and all engage in financial fraud and
+      launder money through international financial institutions; they are named priority threats in
+      financial-crime enforcement and targets of lethal military strikes at sea.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors: [security.transnationalExposure, security.internal, situation]
+      interests: >
+        Sustaining narcotics revenue and laundering channels into and through the United States
+        [security.transnationalExposure][security.internal].
+      resources: >
+        Production and smuggling networks, cells inside the country, and access to international
+        financial institutions for laundering [security.transnationalExposure].
+      constraints: >
+        Fentanyl overdose deaths fell about 30% and potency declined on supply-chain disruption,
+        seizures rose 57%, and at least 19 vessels were struck in a single quarter
+        [security.transnationalExposure][security.internal][situation].
+      likelyMoves: >
+        Continued trafficking under rising interdiction and standing lethal military action, with
+        relationships extending to Ecuadorian and Brazilian groups
+        [security.transnationalExposure][situation].
+      engagementMode: >
+        blocked / not-engageable. The report records the response as interdiction, prosecution and
+        lethal strike rather than any form of engagement [situation][security.internal].

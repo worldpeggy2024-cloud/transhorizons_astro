@@ -1,0 +1,2375 @@
+domestic:
+  - name: Le président Donald Trump et l'exécutif fédéral (l'administration)
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - territory.transition
+      - society.language
+      - economy.politicalEconomy
+      - political.powerStructure
+      - political.rightsAndChecks
+      - political.stabilityDrivers
+      - political.constitutionalSubstrate
+      - capacity.approvals
+      - capacity.steering
+      - capacity.delivery
+      - security.internal
+      - security.military
+      - security.transnationalExposure
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      Détient la présidence avec une marge de 312 à 226 au collège électoral et un contrôle unifié des deux chambres, et élargit la discrétion exécutive par décret et par voie judiciaire plutôt que par la loi : annulation des cibles climatiques, prises de participation dans des entreprises nommées, fédéralisation de forces de police et de la Garde, retrait de 66 organisations internationales, guerre et opérations létales dans l'hémisphère sans autorisation du Congrès.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+        - political.constitutionalSubstrate
+        - capacity.steering
+        - security.diplomacy
+        - situation
+      interests: |
+        Maximiser la discrétion exécutive unilatérale sur les nominations, les tarifs, l'emploi de la force et les engagements multilatéraux, et convertir cette discrétion en exécution rapide dans les domaines priorisés : sécurité intérieure et hémisphérique, application des lois frontalières et politique industrielle propre à chaque entreprise [capacity.steering][security.diplomacy].
+      resources: |
+        L'autorité de commandement de l'article II, le pouvoir de révocation tel qu'élargi dans les organismes collégiaux, les décrets et proclamations, des majorités de réconciliation dans les deux chambres, l'autorité issue du Home Rule Act pour le district de Columbia, et des lois de recours commercial sans plafond de taux [political.powerStructure][political.constitutionalSubstrate][situation].
+      constraints: |
+        Le seuil de 60 voix pour clore le débat sur une loi ordinaire, une majorité de 218 sièges à la Chambre avec quatre vacances, un contrôle judiciaire qui a tranché contre lui sur la Réserve fédérale, la citoyenneté par droit du sol et la fédéralisation de la Garde, et une trajectoire budgétaire où le service de la dette est la dépense qui croît le plus vite [political.powerStructure][political.constitutionalSubstrate][political.shockAbsorbers].
+      likelyMoves: |
+        Recours continu à la réconciliation, aux tarifs de recours commercial et à l'action exécutive plutôt qu'à la procédure ordinaire; nouveaux retraits au terme de la revue en cours; poursuite des opérations létales dans l'hémisphère occidental et du blocus de l'Iran [capacity.steering][security.diplomacy][situation].
+      engagementMode: |
+        Négociation / conclusion d'ententes, de façon transactionnelle. Le rapport décrit des mécanismes d'alignement établis entreprise par entreprise et un partage du fardeau transactionnel plutôt qu'institutionnel : les contreparties traitent directement avec l'exécutif plutôt que par des cadres permanents [political.stabilityDrivers][security.diplomacy].
+  - name: Le département de la Défense (nommé département de la Guerre dans ses publications)
+    kind: military
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+      - capacity.delivery
+      - capacity.steering
+      - political.stabilityDrivers
+      - security.military
+      - security.internal
+      - security.transnationalExposure
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      Dirige une force active de 1 298 099 militaires et au moins 128 bases outre-mer dans 51 pays avec des dépenses en baisse réelle, détient 15 % de MP Materials en actions convertibles à titre de premier actionnaire, et se voit orienté par la stratégie de défense nationale de 2026 vers la défense du territoire, l'appui à la frontière et les opérations dans l'hémisphère occidental, y compris des frappes sur des navires de trafiquants.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+        - economy.politicalEconomy
+        - capacity.delivery
+        - situation
+      interests: |
+        Maintenir une portée mondiale et la modernisation nucléaire tout en se réorientant vers l'hémisphère occidental, et sécuriser l'approvisionnement intérieur en minéraux critiques dont dépendent ses programmes [security.military][economy.politicalEconomy].
+      resources: |
+        954 milliards de dollars de dépenses en 2025 (33 % du total mondial), cinq armées et leurs composantes de réserve, le réseau de bases outre-mer, un portefeuille d'approvisionnement de plus de 750 milliards, et des instruments de participation et d'achat garanti utilisés auprès de fournisseurs nommés [security.military][economy.politicalEconomy][capacity.delivery].
+      constraints: |
+        Une baisse réelle de 7,5 % des dépenses en une seule année, un plafond d'effectifs autorisé fixé annuellement par le Congrès, un consentement des pays hôtes révocable, et un bilan vérifié de dépassements de coûts et de retards dans l'armement et les technologies de l'information [security.military][capacity.delivery].
+      likelyMoves: |
+        Poursuite d'opérations létales en régime permanent dans les Caraïbes et le Pacifique oriental, à un rythme de frappes croissant sur des engagements financiers décroissants; appui militaire continu aux opérations frontalières; nouveaux investissements directs dans des fournisseurs de minéraux [situation][security.transnationalExposure][economy.politicalEconomy].
+      engagementMode: |
+        Subordination à l'exécutif. Il relève du président à titre de commandant en chef et a exécuté les priorités que le rapport décrit comme rapidement mises en œuvre [political.stabilityDrivers][capacity.steering].
+  - name: Le département de la Sécurité intérieure
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - capacity.steering
+      - security.internal
+    currentPositionFromReport: |
+      A agi comme organisme fédéral responsable de la Federal Protection Mission sous laquelle des forces de la Garde en titre 10 ont été déployées dans trois villes, évalue la menace terroriste comme accrue et provenant d'auteurs isolés et de petits groupes, et a absorbé une interruption de crédits de 76 jours du 14 février au 30 avril 2026, la plus longue jamais enregistrée pour un seul département fédéral.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.internal
+        - political.shockAbsorbers
+        - capacity.steering
+      interests: |
+        Préserver les gains d'application des lois frontalières que consigne le rapport et maintenir les opérations de protection sur le territoire [security.internal].
+      resources: |
+        Le statut d'organisme responsable dans les missions interagences, le système national d'alerte terroriste, et un financement pluriannuel du personnel et des technologies frontalières adopté hors du cycle annuel par la Secure America Act [security.internal][capacity.steering].
+      constraints: |
+        Une exposition démontrée à l'échec budgétaire — une interruption départementale de 76 jours — et une dépendance à des forces de la Garde dont la Cour suprême a refusé d'autoriser la fédéralisation [political.shockAbsorbers][security.internal].
+      likelyMoves: |
+        Maintien d'une posture frontalière à forte interception et à faible remise en liberté, et poursuite des bulletins de menace liés au conflit au Moyen-Orient [security.internal].
+      engagementMode: |
+        Subordination à l'exécutif. Le rapport le place sous direction exécutive comme organisme responsable plutôt que comme organisme à mandat indépendant [political.stabilityDrivers].
+  - name: Le service des douanes et de la protection des frontières (incluant le Border Patrol)
+    kind: security or intelligence service
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.publicFinances
+      - political.rightsAndChecks
+      - capacity.steering
+      - security.internal
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Fait état d'un creux historique des interceptions frontalières et de quatorze mois consécutifs sans remise en liberté d'une personne appréhendée, a déclaré au Tribunal du commerce international avoir perçu environ 166 milliards de dollars au titre de l'autorité tarifaire invalidée auprès de quelque 330 000 importateurs, et est le service dans la garde duquel la Commission interaméricaine a tenu l'État responsable du décès d'Anastasio Hernández Rojas.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.internal
+        - economy.publicFinances
+        - political.rightsAndChecks
+      interests: |
+        Maintenir la posture d'application qui a produit l'effondrement des interceptions et la hausse des saisies, tout en traitant une exposition de remboursement sans précédent [security.internal][economy.publicFinances].
+      resources: |
+        Un financement pluriannuel du personnel au titre de la Secure America Act, l'appareil de perception des recettes, et l'appui militaire aux opérations frontalières interagences prévu par la stratégie de défense de 2026 [capacity.steering][security.internal].
+      constraints: |
+        Une obligation de remboursement d'environ 166 milliards de dollars sous ordonnance judiciaire, et un cadre d'emploi de la force que l'organe régional a jugé dépourvu des paramètres nécessaires à la protection des droits, sans réponse de l'État [economy.publicFinances][political.rightsAndChecks].
+      likelyMoves: |
+        Poursuite des opérations à fortes saisies et à faibles remises en liberté, et traitement continu des reliquidations pendant l'appel du gouvernement devant le Federal Circuit [security.internal][economy.publicFinances].
+      engagementMode: |
+        Subordination à l'exécutif. Il agit selon la priorité exécutive et est contrôlé principalement de l'intérieur de l'exécutif qui le commande; le constat défavorable marquant de la période est venu de l'extérieur de l'État [security.internal].
+  - name: Immigration and Customs Enforcement
+    kind: security or intelligence service
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.steering
+    currentPositionFromReport: |
+      A reçu un financement pluriannuel par la Secure America Act, loi publique 119-98 du 10 juin 2026, adopté hors du cycle budgétaire annuel, aux côtés du personnel des douanes et de la protection des frontières et des technologies frontalières.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.steering
+      interests: |
+        Maintenir la capacité d'application à l'intérieur du territoire grâce à un financement soustrait au risque des crédits annuels [capacity.steering].
+      resources: |
+        Un financement pluriannuel par réconciliation qui contourne le cycle annuel où l'État a échoué trois fois en huit mois [capacity.steering].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Fonctionnement continu au niveau financé; le rapport ne consigne aucune autre action précise [capacity.steering].
+      engagementMode: |
+        Subordination à l'exécutif. Le rapport ne le nomme que comme instrument financé d'une priorité exécutive [capacity.steering].
+  - name: Le département d'État
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.constitutionalSubstrate
+      - security.transnationalExposure
+      - security.diplomacy
+    currentPositionFromReport: |
+      S'est vu ordonner d'examiner chaque organisation intergouvernementale, convention et traité auxquels le pays appartient, met en œuvre le retrait de 66 organisations nommées, a annoncé en février 2026 que le Mexique s'était engagé à des livraisons annuelles d'au moins 350 000 acres-pieds, et précise dans son Foreign Affairs Manual que la citoyenneté du Quatorzième amendement ne s'étend pas aux personnes nées aux Samoa américaines et à l'île Swains.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+        - security.transnationalExposure
+      interests: |
+        Exécuter la contraction ordonnée de l'appartenance multilatérale tout en préservant les obligations bilatérales que l'exécutif valorise encore, comme les livraisons d'eau du Rio Grande [security.diplomacy][security.transnationalExposure].
+      resources: |
+        Un pouvoir de certification lié à des conditions budgétaires, le mandat d'examen des traités, et le canal diplomatique avec le Mexique [security.transnationalExposure][security.diplomacy].
+      constraints: |
+        Son mandat est fixé par décret et par mémorandum présidentiel plutôt que choisi, et les retraits ultérieurs dépendent d'une revue que le mémorandum dit toujours en cours [security.diplomacy].
+      likelyMoves: |
+        Achèvement des retraits ordonnés dans la mesure permise par la loi, et nouvelles conclusions issues de la revue en cours [security.diplomacy].
+      engagementMode: |
+        Subordination à l'exécutif. Il est l'instrument d'exécution du mémorandum de retrait plutôt qu'une source de position indépendante [security.diplomacy].
+  - name: Le Trésor
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.publicFinances
+      - economy.externalVulnerability
+      - security.internal
+    currentPositionFromReport: |
+      A perçu 23,6 milliards de dollars de droits de douane bruts contre 49,2 milliards en remboursements en juin 2026, consigne le lieu de détention et non la nationalité du détenteur pour les avoirs étrangers en dette fédérale, et a publié l'évaluation nationale des risques de blanchiment de 2024 nommant le fentanyl, le financement du terrorisme, les rançongiciels et les réseaux professionnels de blanchiment comme principales menaces.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.publicFinances
+        - economy.externalVulnerability
+        - security.internal
+      interests: |
+        Financer un déficit de 1 900 milliards de dollars à grande échelle tout en administrant une ligne douanière devenue négative et un régime de lutte contre la finance illicite d'un volume déclaratif inhabituel [economy.publicFinances][security.internal].
+      resources: |
+        Le marché de dette souveraine le plus profond au monde, l'émission de la principale monnaie de réserve, et un régime déclaratif couvrant environ 324 000 déclarants inscrits [economy.externalVulnerability][security.internal].
+      constraints: |
+        Une sortie nette de 25,6 milliards de dollars au titre des douanes en un seul mois, une base d'investisseurs non résidents qui se déplace vers des détenteurs non bancaires sensibles au prix, et des données d'attribution incapables d'identifier la nationalité des détenteurs [economy.publicFinances][economy.externalVulnerability].
+      likelyMoves: |
+        Poursuite du traitement des remboursements sous ordonnance judiciaire et émission continue à grande échelle sur un marché dont la composition change [economy.publicFinances][economy.externalVulnerability].
+      engagementMode: |
+        Subordination à l'exécutif, sous contrainte de marché. Ses conditions de financement sont fixées par le comportement d'investisseurs non résidents que le rapport désigne comme la principale vulnérabilité externe [economy.externalVulnerability].
+  - name: Le département du Commerce
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      A mené le programme fédéral de participation directe avec vingt-quatre des trente-sept opérations annoncées entre janvier 2025 et juillet 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+      interests: |
+        Convertir des subventions de politique industrielle déjà octroyées en participations dans des entreprises jugées stratégiques par l'exécutif [economy.politicalEconomy].
+      resources: |
+        Les subventions du CHIPS and Science Act réaffectées en contrepartie de capital, comme les 5,7 milliards convertis dans l'opération Intel [economy.politicalEconomy].
+      constraints: |
+        Les positions prises sont passives, sans siège au conseil ni droits de gouvernance dans le cas le plus important, et le seul relevé consolidé du portefeuille est une compilation extérieure [economy.politicalEconomy].
+      likelyMoves: |
+        D'autres opérations propres à des entreprises selon le même modèle, vu la croissance du portefeuille en dix-huit mois [economy.politicalEconomy].
+      engagementMode: |
+        Subordination à l'exécutif, conclusion d'ententes. Il est la contrepartie opérationnelle des entreprises qui recherchent ou subissent une participation fédérale [economy.politicalEconomy].
+  - name: Le département de l'Énergie
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+      - capacity.delivery
+    currentPositionFromReport: |
+      Détient deux des trente-sept opérations fédérales de participation directe et compte parmi les départements dont les grandes acquisitions accusent, selon l'organisme de vérification, des dépassements de coûts, des retards, ou les deux.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+        - capacity.delivery
+      interests: Sans mention dans le rapport
+      resources: |
+        Un pouvoir de prise de participation exercé dans deux opérations et un vaste portefeuille d'acquisitions [economy.politicalEconomy][capacity.delivery].
+      constraints: |
+        Un bilan vérifié de dépassements de coûts et de retards dans les grandes acquisitions [capacity.delivery].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Subordination à l'exécutif. Le rapport le nomme comme participant à la politique industrielle exécutive et comme acquéreur vérifié, non comme détenteur de position autonome [economy.politicalEconomy].
+  - name: Le département des Transports
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.approvals
+      - capacity.delivery
+    currentPositionFromReport: |
+      A reçu 74 % des 711,8 milliards de dollars de subventions rendus disponibles par l'Infrastructure Investment and Jobs Act, a acheminé au moins 76 % des fonds engagés et environ 91 % des fonds décaissés par formule statutaire plutôt que par décision d'attribution, et comptait encore environ 23 % des bénéficiaires sondés de subventions discrétionnaires de l'exercice 2022 sans entente signée au début de 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.delivery
+        - capacity.approvals
+      interests: |
+        Faire circuler à grande échelle les crédits d'infrastructure face à un déficit national de remise en état que l'organisme d'ingénieurs chiffre à 3 700 milliards de dollars [capacity.delivery].
+      resources: |
+        Un mécanisme de subventions par formule qui distribue sans décision d'attribution, et la plus grande part de l'enveloppe d'infrastructure [capacity.delivery].
+      constraints: |
+        L'argent discrétionnaire circule lentement — les bénéficiaires invoquent l'inflation, la définition des budgets et échéanciers, l'examen environnemental et les exigences de contenu national — et les décaissements ont été suspendus dès janvier 2025 en attente d'une revue de conformité aux priorités [capacity.delivery].
+      likelyMoves: |
+        Poursuite de la distribution par formule au même rythme, les attributions discrétionnaires demeurant le canal lent [capacity.delivery].
+      engagementMode: |
+        Subordination à l'exécutif, lié par formule. Une grande partie de ce qu'il distribue n'est pas discrétionnaire et donc pas négociable [capacity.delivery].
+  - name: Le département des Anciens Combattants
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.delivery
+      - capacity.publicServices
+    currentPositionFromReport: |
+      Porte une modernisation du dossier de santé électronique chiffrée en 2022 à 49,8 milliards de dollars et déployée dans six sites seulement sur plus de 166 en décembre 2024, figure au registre à haut risque pour les soins de santé, et publie des délais d'attente par établissement dont les lectures divergent fortement de ses propres synthèses nationales.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.delivery
+        - capacity.publicServices
+      interests: |
+        Achever une modernisation documentaire de longue haleine et maintenir un service de santé continu sous surveillance de vérification [capacity.delivery][capacity.publicServices].
+      resources: |
+        Un système de santé dédié, un financement de modernisation voté, et ses propres données d'accès publiées par établissement [capacity.publicServices].
+      constraints: |
+        Un rythme de déploiement qui laisse la modernisation à plus d'une décennie de son terme, l'inscription au registre à haut risque, et des données publiées qui soutiennent des lectures que ses synthèses ne soutiennent pas [capacity.delivery][capacity.publicServices].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Subordination à l'exécutif, exposé à l'audit. Sa performance est contestée par des données publiées et par l'analyse de services parlementaires plutôt que par la négociation [capacity.publicServices].
+  - name: La Development Finance Corporation
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      Détient six des trente-sept opérations fédérales comportant une participation directe annoncées entre janvier 2025 et juillet 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+      interests: Sans mention dans le rapport
+      resources: |
+        Des instruments de financement du développement employés pour prendre des participations directes [economy.politicalEconomy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Participation continue au portefeuille de participations de l'exécutif, passé à trente-sept opérations en dix-huit mois [economy.politicalEconomy].
+      engagementMode: |
+        Subordination à l'exécutif, conclusion d'ententes [economy.politicalEconomy].
+  - name: La National Aeronautics and Space Administration
+    kind: federal executive
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.delivery
+    currentPositionFromReport: |
+      Est nommée parmi les organismes dont les grandes acquisitions accusent, selon l'organisme de vérification, des dépassements de coûts, des retards, ou les deux.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.delivery
+      interests: Sans mention dans le rapport
+      resources: |
+        Une part du portefeuille fédéral d'approvisionnement de plus de 750 milliards de dollars [capacity.delivery].
+      constraints: |
+        Des dépassements de coûts et des retards vérifiés dans les grandes acquisitions [capacity.delivery].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Subordination à l'exécutif, exposé à l'audit [capacity.delivery].
+  - name: La Food and Drug Administration
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.steering
+      - capacity.publicServices
+    currentPositionFromReport: |
+      Mène en moyenne 917 inspections annuelles d'établissements alimentaires étrangers contre une cible statutaire de 19 200, juge la cible inatteignable avec son effectif, et n'a proposé aucun remplacement au Congrès depuis la recommandation du vérificateur il y a dix ans.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.publicServices
+        - capacity.steering
+      interests: |
+        Maintenir la surveillance des produits médicaux et de la salubrité alimentaire avec un effectif qu'elle dit incapable de remplir son mandat statutaire [capacity.publicServices].
+      resources: |
+        Un pouvoir d'inspection statutaire au titre du Food Safety Modernization Act [capacity.publicServices].
+      constraints: |
+        Une contrainte d'effectif déterminante qui la laisse à environ 5 % de sa cible, et une recommandation non réglée depuis janvier 2015 [capacity.publicServices][capacity.steering].
+      likelyMoves: |
+        Fonctionnement continu à environ 5 % de la cible, faute de ressources comme de proposition de remplacement statutaire [capacity.steering].
+      engagementMode: |
+        Mandaté par la loi but under-resourced. Elle ne peut pas remplir le mandat et n'a pas cherché à le modifier : l'écart persiste plutôt qu'il ne se négocie [capacity.steering].
+  - name: La Federal Aviation Administration
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.delivery
+    currentPositionFromReport: |
+      Comptait, selon une évaluation de 2023, 51 de ses 138 systèmes de contrôle de la circulation aérienne jugés non viables et 54 autres potentiellement non viables.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.delivery
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Une majorité de ses systèmes de contrôle aérien évalués comme non viables ou potentiellement non viables [capacity.delivery].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Subordination à l'exécutif, exposé à l'audit. Le rapport la nomme comme défaillance de livraison documentée plutôt que comme contrepartie de négociation [capacity.delivery].
+  - name: Le Federal Bureau of Investigation (y compris son groupe de travail sur l'influence étrangère, dissous)
+    kind: security or intelligence service
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.internal
+      - security.transnationalExposure
+      - security.posture
+    currentPositionFromReport: |
+      A arrêté 5 957 personnes visées par des enquêtes liées aux déclarations d'opérations douteuses à l'exercice 2025, en a mis 4 727 en accusation et obtenu 2 795 condamnations, tandis que son groupe de travail sur l'influence étrangère était dissous en parallèle du Foreign Malign Influence Center en août 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.internal
+        - security.transnationalExposure
+      interests: |
+        Maintenir l'application en matière de criminalité financière et de cartels alors que sa fonction d'influence étrangère a été supprimée [security.internal][security.transnationalExposure].
+      resources: |
+        Les déclarations d'opérations douteuses d'environ 324 000 déclarants, et un ciblage prioritaire sur les cartels, les réseaux chinois de blanchiment, le fentanyl et le financement du terrorisme [security.internal].
+      constraints: |
+        La dissolution de son groupe de travail sur l'influence étrangère au moment même où les services de renseignement documentaient en détail des opérations d'ingérence [security.transnationalExposure][security.posture].
+      likelyMoves: |
+        Poursuite d'une application à fort volume en criminalité financière; le rapport ne consigne aucun remplacement de la fonction d'influence dissoute [security.internal][security.transnationalExposure].
+      engagementMode: |
+        Subordination à l'exécutif. Les organismes fédéraux d'application de la loi relèvent du président par le pouvoir statutaire de nommer et de révoquer leurs dirigeants, et non par le commandement de l'article II [political.stabilityDrivers].
+  - name: Le Financial Crimes Enforcement Network
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.internal
+    currentPositionFromReport: |
+      A reçu 4,7 millions de déclarations d'opérations douteuses à l'exercice 2024 d'environ 324 000 déclarants inscrits, contre 4,3 millions à l'exercice 2022, avec pour menaces prioritaires déclarées les cartels, les réseaux chinois de blanchiment, le fentanyl et le financement du terrorisme.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.internal
+      interests: |
+        Convertir un flux déclaratif très volumineux en renvois d'enquête contre les menaces prioritaires nommées [security.internal].
+      resources: |
+        Un régime déclaratif obligatoire d'une ampleur inhabituelle et une exigence de déclaration des bénéficiaires effectifs en vigueur depuis le 1er janvier 2024 [security.internal].
+      constraints: |
+        La finance illicite est évaluée plutôt que comptée : la couverture du régime ne peut être mesurée par rapport aux flux visés [security.internal].
+      likelyMoves: |
+        Croissance continue du volume de déclarations et poursuite du partenariat d'application avec la police fédérale [security.internal].
+      engagementMode: |
+        Mandaté par la loi reporting counterpart pour les institutions financières [security.internal].
+  - name: L'Office of the Director of National Intelligence et la communauté du renseignement
+    kind: security or intelligence service
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+      - security.posture
+    currentPositionFromReport: |
+      Attribue la baisse de la migration au changement de politique et au renforcement de l'application, nomme dans son évaluation les organisations criminelles mexicaines, colombiennes et salvadorienne ainsi que les acteurs cyber liés à la Chine, à la Russie, à l'Iran et à la Corée du Nord, et a annoncé en août 2025 la dissolution du Foreign Malign Influence Center qu'il hébergeait.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+        - security.posture
+      interests: |
+        Maintenir l'évaluation des menaces liées aux cartels, au cyberespace et à l'influence étrangère tout en réorganisant sa propre structure [security.transnationalExposure].
+      resources: |
+        L'évaluation annuelle des menaces, un pouvoir statutaire de coordination et la collecte à l'échelle de la communauté [security.transnationalExposure].
+      constraints: |
+        Sa propre réorganisation a supprimé l'organe statutaire de coordination sur l'influence étrangère et la fonction de menaces électorales qu'il abritait, ce que des membres de l'opposition en comité disent avoir paralysé la production [security.transnationalExposure].
+      likelyMoves: |
+        Poursuite de l'évaluation annuelle des menaces; le rapport ne consigne aucun remplacement de la fonction de coordination dissoute [security.transnationalExposure][security.posture].
+      engagementMode: |
+        Subordination à l'exécutif. Son dirigeant a annoncé la dissolution dans le cadre d'une réorganisation exécutive, et des séances d'information exigées par la loi sont demeurées sans réponse [security.transnationalExposure].
+  - name: Le Foreign Malign Influence Center (avec l'Election Threats Executive)
+    kind: independent institution
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+      - security.posture
+    currentPositionFromReport: |
+      Créé par le Congrès en vertu de la loi d'autorisation du renseignement pour les exercices 2018 à 2020 et codifié au 50 U.S.C. § 3059, en activité depuis septembre 2022 et hébergeant l'Election Threats Executive, il a été dissous par le Director of National Intelligence en août 2025 et ne fonctionne plus.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+        - security.posture
+      interests: |
+        Coordonner le renseignement sur l'influence étrangère et la sécurité électorale — mandat que le rapport consigne comme issu d'une loi bipartisane après l'évaluation de l'ingérence de 2016 [security.transnationalExposure].
+      resources: |
+        Un fondement statutaire au 50 U.S.C. § 3059; aucune ressource opérante, l'organe ayant été dissous [security.transnationalExposure].
+      constraints: |
+        Il a été dissous par réorganisation exécutive malgré sa création par la loi, et aucun successeur n'est consigné [security.transnationalExposure][security.posture].
+      likelyMoves: |
+        Aucune en tant qu'acteur; la question vive que laisse ouverte le rapport est celle de la reprise du mandat statutaire avant les élections de mi-mandat de 2026 [security.transnationalExposure].
+      engagementMode: |
+        Dissous / non-négociable. Le rapport consigne que l'organe statutaire ne fonctionne plus [security.transnationalExposure].
+  - name: Le Council on Environmental Quality
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.approvals
+    currentPositionFromReport: |
+      A perdu le décret sur lequel reposait son pouvoir réglementaire depuis cinq décennies en vertu du décret 14154 et a abrogé par règle finale intérimaire, en vigueur en avril 2025, tous les règlements pangouvernementaux d'application de la loi environnementale, de sorte qu'aucun cadre fédéral uniforme ne régit désormais l'examen.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.approvals
+      interests: Sans mention dans le rapport
+      resources: |
+        Une capacité résiduelle de rassemblement et de production de données — il a publié la mise à jour de janvier 2025 portant sur 1 903 énoncés — mais aucun pouvoir réglementaire pangouvernemental [capacity.approvals].
+      constraints: |
+        Son fondement réglementaire a été abrogé par décret, et les organismes ont depuis adopté leurs propres procédures [capacity.approvals].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Subordination à l'exécutif, vidé de sa substance. Le rapport décrit un organe dont la fonction d'établissement du cadre a été supprimée plutôt que réattribuée [capacity.approvals].
+  - name: Le Permitting Council (directeur exécutif)
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.approvals
+    currentPositionFromReport: |
+      Exploite le tableau de bord des permis exigé par le titre 41 du Fixing America's Surface Transportation Act et s'est vu chargé, par un décret présidentiel du 20 mars 2025, d'y publier certains projets de production minérale à titre de projets de transparence.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.approvals
+      interests: |
+        Maintenir un registre public des approbations qui a survécu à l'abrogation réglementaire parce qu'il repose sur la loi plutôt que sur un règlement [capacity.approvals].
+      resources: |
+        Un pouvoir statutaire au 42 U.S.C. § 4370m obligeant les organismes responsables à publier des dates cibles, et un champ de statut à huit valeurs pour les projets visés [capacity.approvals].
+      constraints: |
+        L'inscription au tableau de bord n'emporte aucun appui fédéral ni présomption d'approbation, et aucune ventilation des statuts n'est publiée pour l'ensemble des projets visés [capacity.approvals].
+      likelyMoves: |
+        Publication continue des projets miniers désignés, conformément à l'instruction, avec l'asymétrie de politique visible dans le champ de statut [capacity.approvals].
+      engagementMode: |
+        Mandaté par la loi transparency body, dont l'exécutif dirige toutefois le contenu de la liste [capacity.approvals].
+  - name: La Federal Communications Commission
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.rightsAndChecks
+    currentPositionFromReport: |
+      A ouvert des enquêtes visant des diffuseurs pour des contenus jugés critiques envers l'administration, que la Commission interaméricaine a relevées parmi les mesures affaiblissant l'accès du public à une information plurielle et indépendante.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.rightsAndChecks
+        - political.constitutionalSubstrate
+      interests: |
+        Exercer la surveillance de la radiodiffusion dans une direction que l'organe régional lit comme une pression politique sur les médias [political.rightsAndChecks].
+      resources: |
+        Un pouvoir d'attribution de licences et d'enquête sur les diffuseurs [political.rightsAndChecks].
+      constraints: |
+        La protection constitutionnelle de la presse et l'exposition au contentieux, dans un système que le même organe crédite de continuer à fonctionner par les tribunaux [political.rightsAndChecks].
+      likelyMoves: |
+        Poursuite des enquêtes liées au contenu, vu le schéma que consigne l'organe régional [political.rightsAndChecks].
+      engagementMode: |
+        Exposition au détournement. C'est un organisme collégial du type que l'arrêt de juin 2026 sur la révocation est réputé atteindre, et le rapport la décrit agissant conformément à la préférence de l'administration en matière éditoriale [political.rightsAndChecks][political.constitutionalSubstrate].
+  - name: La Federal Trade Commission
+    kind: regulatory
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.powerStructure
+      - political.rightsAndChecks
+      - political.stabilityDrivers
+      - political.constitutionalSubstrate
+    currentPositionFromReport: |
+      A perdu la protection statutaire de révocation pour motif valable le 29 juin 2026, la Cour suprême la jugeant contraire à la séparation des pouvoirs dans Trump v. Slaughter et infirmant Humphrey's Executor, arrêt que le Congressional Research Service lit comme atteignant vraisemblablement les titulaires d'autres organismes collégiaux exerçant un pouvoir exécutif.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+        - political.powerStructure
+      interests: Sans mention dans le rapport
+      resources: |
+        Son mandat statutaire d'application demeure; l'isolement de ses commissaires, non [political.constitutionalSubstrate].
+      constraints: |
+        Les commissaires sont désormais révocables par le président : les positions de l'organisme sont exposées à la préférence exécutive [political.powerStructure][political.constitutionalSubstrate].
+      likelyMoves: |
+        L'alignement des positions de la commission sur la préférence exécutive est la direction qu'implique la perte de la protection; le rapport ne consigne aucune action subséquente précise [political.constitutionalSubstrate].
+      engagementMode: |
+        Exposition au détournement. Le rapport décrit la suppression de l'isolement statutaire qui la rendait auparavant Indépendance de par la loi, et y voit le modèle applicable aux autres organismes collégiaux [political.constitutionalSubstrate][political.stabilityDrivers].
+  - name: La Réserve fédérale (conseil des gouverneurs, Federal Open Market Committee, gouverneure Lisa Cook)
+    kind: independent institution
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.publicFinances
+      - political.powerStructure
+      - political.rightsAndChecks
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - political.constitutionalSubstrate
+    currentPositionFromReport: |
+      A maintenu la fourchette cible des fonds fédéraux à 3,50–3,75 % le 29 juillet 2026 par neuf voix contre trois, les trois dissidences favorisant une hausse, jugeant l'inflation élevée par rapport à sa cible de 2 %, et a vu la protection de ses gouverneurs renforcée judiciairement le 29 juin 2026, la Cour suprême jugeant le motif invoqué par le président susceptible de contrôle judiciaire et laissant la gouverneure Lisa Cook en fonction — première tentative de révocation d'un gouverneur en 111 ans d'histoire de l'institution.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+        - political.shockAbsorbers
+        - economy.publicFinances
+      interests: |
+        Ramener l'inflation à sa cible de 2 % tout en préservant l'indépendance opérationnelle directement contestée au cours de la période [economy.publicFinances][political.shockAbsorbers].
+      resources: |
+        Le pouvoir de fixer les taux, des réserves abondantes maintenues dans le système bancaire, et une décision judiciaire selon laquelle le motif de révocation doit refléter l'histoire et le rôle propres de l'institution [political.shockAbsorbers][political.constitutionalSubstrate].
+      constraints: |
+        Une inflation à 3,5 % avec un indice de l'énergie en hausse de 15,7 % qui restreint la marge d'assouplissement, une dissidence interne orientée vers le resserrement, et un isolement qui repose désormais sur une décision à cinq voix contre quatre [economy.publicFinances][political.shockAbsorbers][political.constitutionalSubstrate].
+      likelyMoves: |
+        Maintien de la fourchette tant que l'inflation dépasse la cible, la direction de toute surprise étant infléchie par trois dissidences favorables à une hausse [political.shockAbsorbers].
+      engagementMode: |
+        Indépendance de par la loi, détournement éprouvé. Le rapport décrit une tentative de révocation que la plus haute cour a bloquée par une seule voix : l'indépendance est ici tenue par le juge plutôt que structurellement incontestée [political.constitutionalSubstrate][political.powerStructure].
+  - name: Le Government Accountability Office
+    kind: independent institution
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.approvals
+      - capacity.delivery
+      - capacity.publicServices
+      - capacity.steering
+      - security.military
+    currentPositionFromReport: |
+      Tient une liste de 38 domaines à haut risque évalués tous les deux ans, consigne dix domaines améliorés et trois en régression depuis 2023 pour 759 milliards de dollars de bénéfices depuis 2006, constate que l'État peine fortement à maîtriser les coûts d'un portefeuille d'approvisionnement de plus de 750 milliards, et désigne l'attention législative et exécutive soutenue comme condition du progrès.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.steering
+        - capacity.delivery
+        - capacity.publicServices
+      interests: |
+        Convertir les constats de vérification en mesures correctives dans les domaines de livraison et de services publics qu'il documente comme défaillants [capacity.steering].
+      resources: |
+        Un cadre d'évaluation biennal sur 38 domaines et cinq critères, un accès statutaire aux données des organismes, et un flux de bénéfices consigné qui donne du poids à ses constats [capacity.steering].
+      constraints: |
+        Il peut diagnostiquer sans contraindre : trois domaines ont régressé, vingt sont inscrits en partie pour des lacunes de compétences alors que l'emploi fédéral a été réduit d'environ 13 %, et une recommandation de janvier 2015 demeure sans suite [capacity.steering][capacity.publicServices].
+      likelyMoves: |
+        Poursuite de la réévaluation biennale et de la documentation des domaines en régression [capacity.steering].
+      engagementMode: |
+        Indépendance de par la loi. Il rend compte de l'exécutif plutôt qu'il ne négocie avec lui, et son levier passe par une attention législative qu'il ne contrôle pas [capacity.steering].
+  - name: Le Congressional Budget Office
+    kind: independent institution
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.realEconomy
+      - economy.publicFinances
+      - economy.politicalEconomy
+      - political.shockAbsorbers
+      - capacity.steering
+      - capacity.productivity
+    currentPositionFromReport: |
+      Projette un déficit de 1 900 milliards de dollars pour l'exercice 2026 et une dette détenue par le public passant de 101 % à 120 % du produit intérieur brut d'ici 2036, estime que la loi de réconciliation de 2025 a accru les déficits projetés de 4 700 milliards et coûte environ 1 200 dollars par an au décile inférieur, et a publié une projection de croissance de 2,2 % antérieure à deux changements du régime tarifaire.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.publicFinances
+        - economy.politicalEconomy
+        - capacity.steering
+      interests: |
+        Fournir au Congrès des scénarios de référence et des analyses distributives non partisans permettant de mesurer la politique adoptée [economy.publicFinances][economy.politicalEconomy].
+      resources: |
+        Un rôle statutaire de chiffrage, une capacité d'analyse distributive, et des projections de référence que le rapport traite comme l'étalon des affirmations budgétaires [economy.publicFinances].
+      constraints: |
+        Ses projections sont dépassées par l'action exécutive hors du cycle législatif — le régime tarifaire a changé deux fois après publication — et ses constats n'ont pas empêché l'adoption d'une loi accroissant les déficits de 4 700 milliards alors que la réduction du déficit était proclamée [economy.realEconomy][capacity.steering].
+      likelyMoves: |
+        Des scénarios révisés intégrant le régime de la section 301, qui, sans échéance statutaire, devient une ligne de recettes récurrente [economy.publicFinances].
+      engagementMode: |
+        Indépendance de par la loi. Il chiffre plutôt qu'il ne négocie, et le rapport s'en sert comme mesure des priorités annoncées [capacity.steering].
+  - name: Le Congressional Research Service
+    kind: independent institution
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.powerStructure
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - political.constitutionalSubstrate
+    currentPositionFromReport: |
+      Fournit les lectures sur lesquelles s'appuie le rapport quant à la portée des arrêts sur la révocation — notamment que Trump v. Slaughter atteint vraisemblablement d'autres organismes collégiaux — quant aux seuils de clôture et de pétition de décharge, et quant à l'appréciation selon laquelle les effets des interruptions de crédits n'auront vraisemblablement pas d'impact important à long terme.
+    humanReview: |
+      Cas limite au regard du filtre (e) : organe analytique plutôt que contrepartie de négociation, mais situé à l'intérieur du législatif qu'il conseille plutôt qu'à l'extérieur du pays qu'il mesurerait.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+        - political.powerStructure
+      interests: |
+        Fournir au Congrès des lectures faisant autorité sur la jurisprudence et la procédure alors que la frontière entre les branches se redessine [political.constitutionalSubstrate].
+      resources: |
+        Une autorité non partisane telle que le rapport adopte ses lectures de la portée des arrêts de la plus haute cour [political.powerStructure][political.constitutionalSubstrate].
+      constraints: |
+        Rôle purement consultatif : ses lectures des arrêts sur la révocation décrivent une redistribution à laquelle il ne prend aucune part [political.constitutionalSubstrate].
+      likelyMoves: |
+        Poursuite de l'analyse de la redistribution jurisprudentielle et de l'échec budgétaire récurrent [political.shockAbsorbers].
+      engagementMode: |
+        Indépendance de par la loi, consultatif [political.powerStructure].
+  - name: La Cour suprême des États-Unis (le juge en chef Roberts)
+    kind: judicial
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.externalVulnerability
+      - political.powerStructure
+      - political.rightsAndChecks
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - political.constitutionalSubstrate
+      - capacity.approvals
+      - security.internal
+      - situation
+    currentPositionFromReport: |
+      A redistribué le pouvoir sur l'axe horizontal comme sur l'axe vertical en 2026 : invalidation de l'autorité tarifaire fondée sur les pouvoirs d'urgence, suppression de la protection de révocation à la Federal Trade Commission mais contrôle judiciaire du motif de révocation d'une gouverneure de la Réserve fédérale, confirmation de la citoyenneté par droit du sol, exclusion du contrôle judiciaire des cessations de statut protégé, blocage de la fédéralisation de la Garde, et resserrement de l'article 2 de la loi sur le droit de vote — le juge en chef rédigeant les deux opinions du 29 juin pour des majorités presque entièrement différentes.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+        - political.rightsAndChecks
+        - political.powerStructure
+      interests: |
+        Régler la répartition du pouvoir affaire par affaire plutôt que par une doctrine unique, ce que suggèrent les majorités divergentes et l'exception faite à la banque centrale [political.constitutionalSubstrate][political.rightsAndChecks].
+      resources: |
+        Le contrôle judiciaire exercé depuis Marbury v. Madison, et le dernier mot sur les déclencheurs statutaires des tarifs, des révocations et du déploiement de la force [political.rightsAndChecks][political.constitutionalSubstrate].
+      constraints: |
+        Elle n'agit que sur les affaires qui lui sont soumises, plusieurs arrêts de 2026 ont tenu à une seule voix, et elle s'est retirée d'une question — les cessations de statut protégé — au lieu de la trancher [political.constitutionalSubstrate].
+      likelyMoves: |
+        Poursuite du règlement au cas par cas des questions de pouvoir exécutif, y compris la question ouverte de savoir si protéger des biens et du personnel fédéraux équivaut à exécuter la loi [political.shockAbsorbers][political.constitutionalSubstrate].
+      engagementMode: |
+        Déférence judiciaire. Le rapport traite ses arrêts comme réglant des différends que les branches élues ne pouvaient trancher, l'indépendance s'observant dans le résultat : la même cour a tranché pour le président sur une révocation et contre lui sur une autre le même jour [political.rightsAndChecks].
+  - name: Le Tribunal du commerce international
+    kind: judicial
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.publicFinances
+    currentPositionFromReport: |
+      A ordonné la reliquidation même d'entrées dont la liquidation était devenue définitive, perçant une prescription qui aurait normalement éteint ces créances, et constitue l'instance devant laquelle le service des douanes rend compte des quelque 166 milliards de dollars perçus au titre de l'autorité tarifaire invalidée.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.publicFinances
+      interests: |
+        Donner plein effet à l'invalidation des tarifs d'urgence, y compris pour les importateurs dont les créances seraient autrement prescrites [economy.publicFinances].
+      resources: |
+        Une compétence spécialisée en matière douanière et le recours en reliquidation [economy.publicFinances].
+      constraints: |
+        Sa portée à l'égard des importateurs qui n'ont pas poursuivi fait l'objet d'un appel devant le Federal Circuit, et les entrées définitivement liquidées ne sont traitées que pour les importateurs ayant saisi le tribunal [economy.publicFinances].
+      likelyMoves: |
+        Poursuite de la supervision du processus de remboursement en attendant l'appel [economy.publicFinances].
+      engagementMode: |
+        Déférence judiciaire [economy.publicFinances].
+  - name: Le Federal Circuit (cour d'appel)
+    kind: judicial
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.publicFinances
+    currentPositionFromReport: |
+      Est saisi de l'appel du gouvernement, déposé le 3 juin 2026, soutenant que des ordonnances visant des importateurs n'ayant jamais poursuivi constituent des injonctions universelles inadmissibles, les remboursements se poursuivant pendant l'instance.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.publicFinances
+      interests: Sans mention dans le rapport
+      resources: |
+        La compétence d'appel sur les ordonnances de reliquidation du tribunal du commerce [economy.publicFinances].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Une décision sur la possibilité pour l'ordonnance de remboursement d'atteindre les importateurs n'ayant pas poursuivi, qui déterminera l'ampleur d'une exposition déjà d'environ 100 milliards versés sur quelque 166 milliards perçus [economy.publicFinances].
+      engagementMode: |
+        Déférence judiciaire [economy.publicFinances].
+  - name: Le cinquième circuit (cour d'appel)
+    kind: judicial
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.constitutionalSubstrate
+    currentPositionFromReport: |
+      A été infirmé dans Watson v. Republican National Committee, la Cour suprême jugeant que les lois fédérales sur le jour du scrutin n'écartent pas une loi d'État permettant de compter les bulletins postaux oblitérés au plus tard le jour du scrutin et reçus dans les cinq jours ouvrables suivants.
+    humanReview: |
+      Nommé uniquement comme juridiction inférieure infirmée dans la description d'une affaire; conservé au titre de la règle de rappel plutôt que de précision, mais possiblement un simple élément de contexte.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+      interests: Sans mention dans le rapport
+      resources: |
+        La compétence d'appel sur les États de son ressort [political.constitutionalSubstrate].
+      constraints: |
+        Sa lecture de la primauté fédérale sur les délais de réception des bulletins a été infirmée [political.constitutionalSubstrate].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Déférence judiciaire [political.constitutionalSubstrate].
+  - name: La Chambre des représentants (y compris le comité du Règlement et la voie de la pétition de décharge)
+    kind: legislature
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.powerStructure
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Compte 218 républicains, 212 démocrates, un indépendant et quatre sièges vacants au 2 août 2026 — exactement le nombre requis pour une majorité de l'ensemble de la chambre —, est en période de travail en circonscription depuis le 23 juillet, les votes n'étant pas attendus avant le 31 août, et a vu quatre pétitions de décharge atteindre le seuil de 218 signatures durant la seule première session du 119e Congrès, contre deux pour tout le 118e.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+        - political.stabilityDrivers
+      interests: |
+        Tenir une majorité sans aucune marge, alors que la voie de la décharge porte de façon répétée des signatures de la majorité contre le contrôle du parquet par la direction [political.powerStructure][political.stabilityDrivers].
+      resources: |
+        L'initiative des mesures fiscales, la voie de la réconciliation employée deux fois depuis 2025, et la maîtrise du renvoi en comité, du calendrier de la direction et du comité du Règlement [political.powerStructure].
+      constraints: |
+        Une vacance dans le treizième district de la Géorgie non résolue depuis le 22 avril avec un second tour le 25 août, aucun mécanisme de remplacement rapide, et une incapacité démontrée à financer l'État à temps trois fois en huit mois [political.powerStructure][political.shockAbsorbers].
+      likelyMoves: |
+        Recours continu à la réconciliation pour les grandes adoptions et activité de décharge maintenue à des niveaux historiquement élevés [political.powerStructure][political.stabilityDrivers].
+      engagementMode: |
+        Pouvoir de veto, par un seuil plutôt que par un nombre de sièges. Rien ne passe sans 218, et le même nombre ouvre la voie de la décharge contournant la direction [political.powerStructure].
+  - name: Le Sénat
+    kind: legislature
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.powerStructure
+      - political.rightsAndChecks
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - capacity.publicServices
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Se répartit entre 53 républicains et 45 démocrates, deux indépendants siégeant avec la minorité, a comblé une vacance en quelques jours par nomination du gouverneur après le décès du sénateur Lindsey Graham, confirme les nominations judiciaires à la majorité simple, et a adopté le 14 mai 2026 la résolution S.Res. 526 suspendant la rémunération des sénateurs pendant les interruptions de crédits, à compter d'après les élections de novembre 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+        - political.shockAbsorbers
+      interests: |
+        Préserver sa propre architecture procédurale — le seuil de clôture, l'exception des nominations et la réconciliation — tout en légiférant contre lui-même sur les conséquences du blocage [political.powerStructure].
+      resources: |
+        La confirmation des juges et des titulaires de charge à la majorité simple, la règle XXII, la réconciliation, et le comblement rapide des vacances par nomination du gouverneur [political.powerStructure][political.rightsAndChecks].
+      constraints: |
+        Une majorité de gouvernement de 53 sièges, à sept voix des 60 requises pour clore le débat sur une loi ordinaire : le contrôle unifié ne peut légiférer par la procédure ordinaire [political.powerStructure][political.shockAbsorbers].
+      likelyMoves: |
+        Recours continu à la réconciliation et aux nominations, la règle sur la rémunération ne prenant effet qu'après les élections de mi-mandat [political.powerStructure].
+      engagementMode: |
+        Pouvoir de veto. C'est le seuil de 60 voix, et non la répartition partisane, qui détermine ce qui peut être adopté [political.powerStructure].
+  - name: Le Parti républicain (majorité au Congrès)
+    kind: other
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - society.composition
+      - society.cohesion
+      - political.powerStructure
+      - political.shockAbsorbers
+    currentPositionFromReport: |
+      Détient la présidence, 53 sièges au Sénat et exactement 218 à la Chambre, a fait adopter ses principales lois par réconciliation plutôt que par la procédure ordinaire, et ses partisans déclarent 26 % de confiance envers le gouvernement fédéral contre 9 % chez les démocrates, la confiance envers l'exécutif ayant augmenté depuis le changement d'administration de 2024.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+        - society.cohesion
+      interests: |
+        Faire adopter son programme par les voies que permet un Sénat à 53 sièges — réconciliation et nominations — tout en tenant une majorité sans marge à la Chambre [political.powerStructure].
+      resources: |
+        Le contrôle unifié des branches élues, deux lois de réconciliation adoptées, et une base partisane dont la confiance institutionnelle suit la détention du pouvoir [political.powerStructure][society.cohesion].
+      constraints: |
+        Une cohésion des élites mesurablement imparfaite — quatre pétitions de décharge ont atteint 218 en une seule session, chacune portant nécessairement des signatures de la majorité — et un seuil de clôture qui bloque la législation ordinaire [political.powerStructure][political.stabilityDrivers].
+      likelyMoves: |
+        D'autres lois de réconciliation, désormais pratique établie plutôt qu'exception [political.powerStructure].
+      engagementMode: |
+        Négociation / conclusion d'ententes, mais seulement à l'intérieur de seuils qu'il ne peut modifier unilatéralement [political.powerStructure].
+  - name: Le Parti démocrate (minorité au Congrès; Hakeem Jeffries et Chuck Schumer)
+    kind: opposition party
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - society.composition
+      - society.cohesion
+      - political.powerStructure
+    currentPositionFromReport: |
+      Détient 47 voix au Sénat avec les deux indépendants qui siègent avec lui — six de plus que les 41 nécessaires pour refuser la clôture — et 212 sièges à la Chambre, six de moins qu'une majorité de décharge; il est dirigé par Hakeem Jeffries à la Chambre et Chuck Schumer au Sénat, et ne fait face à aucun obstacle juridique à s'organiser ou à contester les élections.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+      interests: |
+        Bloquer la législation ordinaire à laquelle il s'oppose et forcer la divulgation là où il n'a pas de voie en chambre, comme l'ont fait ses services de comité et ses membres de rang sur les délais d'attente et les séances d'information sur les menaces électorales [political.powerStructure][capacity.publicServices][security.transnationalExposure].
+      resources: |
+        Un veto de clôture durable, des postes de membre de rang en comité, et des élections prévues dont sa légitimité n'est pas contestée [political.powerStructure].
+      constraints: |
+        Aucun veto de clôture sur les nominations ni sur la réconciliation, et six sièges de moins que le seuil de décharge à la Chambre [political.powerStructure].
+      likelyMoves: |
+        Refus continu de la clôture sur la législation ordinaire et recours continu aux analyses des services de la minorité et à la correspondance des membres de rang, faute de pouvoir en chambre [political.powerStructure].
+      engagementMode: |
+        Pouvoir de veto au Sénat sur la législation ordinaire, sans levier équivalent à la Chambre ni sur les nominations et la réconciliation [political.powerStructure].
+  - name: Les sénateurs indépendants Angus King et Bernie Sanders
+    kind: legislature
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.powerStructure
+    currentPositionFromReport: |
+      Sont les deux indépendants du Sénat, siégeant avec le caucus démocrate et portant le total de la minorité à 47.
+    humanReview: |
+      Individus nommés avec un rôle, mais le rapport ne leur attache aucune position distincte de l'arithmétique du caucus.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+      interests: Sans mention dans le rapport
+      resources: |
+        Deux voix qui portent la minorité de 45 à 47, soit six au-dessus du seuil de refus de la clôture [political.powerStructure].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Maintien du rattachement au caucus de la minorité, ce que le rapport traite comme le fait opérant [political.powerStructure].
+      engagementMode: |
+        Négociation / conclusion d'ententes à titre individuel, la marge de la minorité au-dessus de 41 n'étant que de six voix [political.powerStructure].
+  - name: Le comité sénatorial des Anciens Combattants (services de la minorité)
+    kind: legislature
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.publicServices
+    currentPositionFromReport: |
+      A suivi chaque semaine depuis janvier 2025 les données d'attente publiées par le département et relevé des cliniques du Connecticut où l'attente d'un premier rendez-vous en santé mentale dépassait 100 jours la plupart des semaines depuis mai 2025, contre une moyenne nationale d'environ quinze jours avancée par le département; le rapport précise qu'il s'agit des services du parti d'opposition et que ces établissements ne constituent pas un échantillon national.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.publicServices
+      interests: |
+        Établir que les données publiées par le département soutiennent des lectures que ses synthèses ne soutiennent pas [capacity.publicServices].
+      resources: |
+        Le statut de comité, l'accès hebdomadaire aux données publiées par établissement, et la crédibilité que confère le travail sur les séries du département lui-même [capacity.publicServices].
+      constraints: |
+        Le statut de minorité et un échantillon non représentatif, tous deux signalés par le rapport [capacity.publicServices].
+      likelyMoves: |
+        Poursuite du suivi hebdomadaire et de la publication des écarts [capacity.publicServices].
+      engagementMode: |
+        contrepartie de surveillance sans pouvoir de contrainte : elle peut publier, non contraindre [capacity.publicServices].
+  - name: Les membres de rang des comités du renseignement de la Chambre et du Sénat
+    kind: legislature
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Affirment que la production de renseignement sur les plans et intentions étrangers visant les élections états-uniennes est paralysée depuis la dissolution du Foreign Malign Influence Center, et que des demandes répétées de séances d'information exigées par la loi sur les menaces visant les élections de mi-mandat de 2026 sont restées sans réponse; le rapport précise qu'il s'agit des représentants principaux du parti d'opposition en comité.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+      interests: |
+        Rétablir la fonction statutaire de coordination sur l'influence étrangère avant les élections de mi-mandat de 2026 [security.transnationalExposure].
+      resources: |
+        Des droits statutaires à l'information et la capacité de consigner publiquement une affirmation contestée [security.transnationalExposure].
+      constraints: |
+        Leurs demandes sont restées sans réponse et ils sont minoritaires; n'est incontesté que le fait que l'organe statutaire ne fonctionne plus [security.transnationalExposure].
+      likelyMoves: |
+        Poursuite de la correspondance et de la pression publique à l'approche des élections de mi-mandat [security.transnationalExposure].
+      engagementMode: |
+        contrepartie de surveillance sans pouvoir de contrainte. Le rapport consigne ensemble le droit à l'information et l'absence de réponse [security.transnationalExposure].
+  - name: Le gouvernement de la Caroline du Sud (le gouverneur Henry McMaster)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.powerStructure
+    currentPositionFromReport: |
+      A nommé Darline Graham Nordone le 13 juillet 2026 pour achever le mandat du sénateur Lindsey Graham, décédé, celle-ci prêtant serment le lendemain, ce qui a préservé la répartition 53–45 au Sénat.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.powerStructure
+      interests: |
+        Préserver la répartition de la chambre par une nomination immédiate [political.powerStructure].
+      resources: |
+        Un pouvoir de nomination du gouverneur qui comble un siège de sénateur en quelques jours [political.powerStructure].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes. Le rapport le nomme comme exécutif d'État exerçant un pouvoir de nomination, non comme partie à un différend [political.powerStructure].
+  - name: Le gouvernement de l'Illinois (le gouverneur)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - political.constitutionalSubstrate
+      - security.internal
+      - situation
+    currentPositionFromReport: |
+      A refusé de mobiliser la Garde nationale de l'Illinois sous le titre 32 et s'est opposé à la fédéralisation de jusqu'à 300 de ses membres le 4 octobre 2025, obtenant une mesure que la Cour suprême a refusé de lever par six voix contre trois en décembre 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.stabilityDrivers
+        - security.internal
+        - political.constitutionalSubstrate
+      interests: |
+        Conserver le commandement d'État sur sa propre Garde et exclure un déploiement fédéralisé à Chicago [security.internal][political.stabilityDrivers].
+      resources: |
+        Le commandement de la Garde en service actif d'État et sous le titre 32, la qualité pour agir en justice, et une lecture favorable du § 12406(3) par la plus haute cour [political.stabilityDrivers][political.constitutionalSubstrate].
+      constraints: |
+        La Cour a tranché sur le déclencheur statutaire sans décider si protéger des biens et du personnel fédéraux équivaut à exécuter la loi : la question de fond demeure ouverte [political.shockAbsorbers].
+      likelyMoves: |
+        Nouveau recours judiciaire si une fédéralisation est tentée sur le fondement non tranché [political.shockAbsorbers][political.constitutionalSubstrate].
+      engagementMode: |
+        Pouvoir de veto sur la mobilisation de la Garde en première instance, son refus sous le titre 32 étant ce qui a déclenché la tentative de fédéralisation [political.stabilityDrivers].
+  - name: Le gouvernement de la Californie (le gouverneur)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+    currentPositionFromReport: |
+      A obtenu une injonction parallèle à celle de l'Illinois contre le déploiement d'une Garde fédéralisée, le déploiement de Los Angeles ayant été démobilisé le 21 janvier 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.stabilityDrivers
+        - security.internal
+      interests: |
+        Exclure des forces de la Garde fédéralisées déployées malgré l'opposition du gouverneur [political.stabilityDrivers].
+      resources: |
+        La qualité pour agir en justice et une mesure injonctive parallèle [political.stabilityDrivers].
+      constraints: |
+        La même question laissée ouverte dans l'arrêt de l'Illinois s'applique [political.shockAbsorbers].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Pouvoir de veto dans la même posture que l'Illinois, établie par injonction parallèle [political.stabilityDrivers].
+  - name: Le gouvernement de l'Oregon (le gouverneur)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+    currentPositionFromReport: |
+      A obtenu une injonction parallèle à celle de l'Illinois contre le déploiement d'une Garde fédéralisée, le déploiement de Portland ayant été démobilisé le 21 janvier 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.stabilityDrivers
+        - security.internal
+      interests: |
+        Exclure des forces de la Garde fédéralisées déployées malgré l'opposition du gouverneur [political.stabilityDrivers].
+      resources: |
+        La qualité pour agir en justice et une mesure injonctive parallèle [political.stabilityDrivers].
+      constraints: |
+        La même question laissée ouverte dans l'arrêt de l'Illinois s'applique [political.shockAbsorbers].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Pouvoir de veto dans la même posture que l'Illinois, établie par injonction parallèle [political.stabilityDrivers].
+  - name: L'État du Texas (Garde nationale du Texas)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+      - security.internal
+      - situation
+    currentPositionFromReport: |
+      A vu jusqu'à 400 de ses membres de la Garde fédéralisés le 5 octobre 2025 pour un déploiement à Chicago, ce personnel étant relevé de l'état d'alerte le 11 mars 2026; le rapport ne consigne aucune opposition de l'État.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.stabilityDrivers
+        - security.internal
+      interests: Sans mention dans le rapport
+      resources: |
+        Une Garde assez nombreuse pour être fédéralisée en vue d'un déploiement hors de l'État [political.stabilityDrivers].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes. Contrairement à l'Illinois, à la Californie et à l'Oregon, le rapport ne consigne de cet État ni opposition ni recours [political.stabilityDrivers].
+  - name: L'État de la Louisiane
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.constitutionalSubstrate
+    currentPositionFromReport: |
+      A vu sa deuxième circonscription à majorité minoritaire jugée charcutage racial inconstitutionnel dans Louisiana v. Callais le 29 avril 2026, arrêt qui a relevé le seuil des recours pour dilution du vote au titre de l'article 2 de la loi sur le droit de vote.
+    humanReview: |
+      Nommé comme partie dans la description d'une affaire; conservé parce que le rapport attribue l'acte de découpage à l'État lui-même.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+      interests: Sans mention dans le rapport
+      resources: |
+        Un pouvoir de découpage électoral en vertu du droit de l'État, désormais soumis à un seuil fédéral plus élevé pour les contestations en dilution [political.constitutionalSubstrate].
+      constraints: |
+        Sa carte a été invalidée comme charcutage racial alors même que le critère de contestation de la dilution était relevé [political.constitutionalSubstrate].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, la contrainte fédérale sur son découpage étant désormais plus étroite [political.constitutionalSubstrate].
+  - name: Le district de Columbia (gouvernement municipal et Metropolitan Police Department)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+      - political.constitutionalSubstrate
+      - political.stateStructure
+      - security.internal
+      - situation
+    currentPositionFromReport: |
+      A vu sa police municipale placée sous direction fédérale le 11 août 2025 au titre de la disposition d'urgence du Home Rule Act lorsque le président a déclaré une urgence criminelle; ses résidents votent à l'élection présidentielle en vertu du Vingt-troisième amendement mais n'ont aucune représentation votante dans l'une ou l'autre chambre, le Congrès conservant l'autorité législative sur le district.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.internal
+        - political.constitutionalSubstrate
+        - political.stateStructure
+      interests: Sans mention dans le rapport
+      resources: |
+        Un gouvernement municipal autonome et des grands électeurs plafonnés au nombre détenu par l'État le moins peuplé [political.constitutionalSubstrate].
+      constraints: |
+        La direction présidentielle de sa police repose sur une autorité propre au district, qui ne relève ni de l'article II ni du titre 10, et le Congrès légifère pour lui [security.internal][political.stateStructure].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Exposition au détournement par construction. Le rapport décrit une police municipale dirigée par le président en vertu d'une disposition statutaire propre au district, sans commandement étatique pour s'interposer [security.internal][political.stabilityDrivers].
+  - name: La Garde nationale (composantes terrestre et aérienne, dont les unités de l'Illinois et du Texas)
+    kind: military
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+      - political.constitutionalSubstrate
+      - security.internal
+      - security.military
+      - situation
+    currentPositionFromReport: |
+      Compte 328 870 membres dans la Garde nationale de l'armée de terre et 105 120 dans la Garde nationale aérienne, relève de qui l'a appelée — le gouverneur en service actif d'État, l'État avec financement fédéral sous le titre 32, le président sous le titre 10 —, et sa fédéralisation sous le titre 10 malgré l'opposition d'un gouverneur a été bloquée par la Cour suprême en décembre 2025, la démobilisation s'achevant le 21 janvier 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.stabilityDrivers
+        - security.internal
+        - political.constitutionalSubstrate
+      interests: Sans mention dans le rapport
+      resources: |
+        Plus de 430 000 militaires répartis en deux composantes et trois statuts de commandement distincts [security.military][political.stabilityDrivers].
+      constraints: |
+        Sous le titre 10, elle tombe sous le Posse Comitatus Act, et le déclencheur statutaire de la fédéralisation exige désormais que le président soit incapable d'exécuter la loi fédérale avec les forces régulières [political.stabilityDrivers][political.constitutionalSubstrate].
+      likelyMoves: |
+        Disponibilité pour d'autres missions intérieures selon le statut de commandement invoqué; aucun épisode de la période n'a vu des forces refuser des ordres légaux [political.stabilityDrivers][security.internal].
+      engagementMode: |
+        Commandement contesté. Le rapport décrit le commandement, et non la loyauté, comme la variable vive, la réponse venant des tribunaux plutôt que de la force elle-même [political.stabilityDrivers][security.internal].
+  - name: Les forces armées des États-Unis (armée de terre, marine, force aérienne, Marine Corps, Space Force)
+    kind: military
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+      - security.posture
+      - security.internal
+      - situation
+    currentPositionFromReport: |
+      Comptent 1 298 099 militaires d'active contre un plafond autorisé de 1 302 800 pour l'exercice 2026, sont basées en permanence dans au moins 51 pays, mènent une guerre contre l'Iran aux côtés d'Israël avec un blocus naval des ports iraniens, et modernisent des forces nucléaires alors que le traité New START a expiré sans limite numérique en vigueur.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+        - security.posture
+        - situation
+      interests: |
+        Préserver une portée expéditionnaire tout en exécutant une réorientation vers la défense du territoire et l'hémisphère occidental [security.posture][security.military].
+      resources: |
+        Cinq armées, 760 210 militaires de réserve, 128 bases outre-mer, et les plus fortes dépenses militaires au monde à 954 milliards de dollars [security.military].
+      constraints: |
+        Une baisse réelle de 7,5 % des dépenses en un an et une part du total mondial en recul de 4,3 points, un plafond d'effectifs fixé annuellement, et un consentement des pays hôtes révocable [security.military].
+      likelyMoves: |
+        Poursuite du blocus et des frappes hémisphériques à un rythme croissant sur des engagements financiers décroissants [situation][security.diplomacy].
+      engagementMode: |
+        Subordination à l'exécutif sous le commandement de l'article II; la loyauté n'a pas été la variable en cause durant la période [political.stabilityDrivers].
+  - name: L'United States Army North
+    kind: military
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.stabilityDrivers
+      - security.internal
+    currentPositionFromReport: |
+      A commandé les soldats de la Garde nationale placés sous le titre 10 dans le cadre de la Federal Protection Mission, le département de la Sécurité intérieure agissant comme organisme fédéral responsable, jusqu'à la démobilisation du 21 janvier 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.internal
+        - political.stabilityDrivers
+      interests: Sans mention dans le rapport
+      resources: |
+        Le commandement opérationnel des forces fédéralisées dans la mission intérieure [security.internal].
+      constraints: |
+        Sa mission dépendait d'un pouvoir de fédéralisation que les tribunaux ont restreint, et elle s'exerçait sous un organisme civil responsable [security.internal][political.stabilityDrivers].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Subordination à l'exécutif [security.internal].
+  - name: L'United States Central Command
+    kind: military
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - situation
+    currentPositionFromReport: |
+      Fait état de 44 navires de commerce détournés, deux mis hors d'état et deux arraisonnés au début d'août 2026 dans le cadre du blocus naval rétabli des ports iraniens.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - situation
+        - security.diplomacy
+      interests: |
+        Faire appliquer le blocus comme instrument opérant de pression pendant que le canal de négociation passe par Mascate [situation][security.diplomacy].
+      resources: |
+        Une capacité d'interception navale atteignant la navigation commerciale de pays tiers [situation].
+      constraints: |
+        L'interception de navires neutres donne à des États étrangers au conflit un intérêt direct dans ses termes [security.diplomacy].
+      likelyMoves: |
+        Poursuite des interceptions tant que le blocus demeure en vigueur et la guerre non résolue [situation].
+      engagementMode: |
+        Subordination à l'exécutif [situation].
+  - name: Les nations tribales reconnues par le gouvernement fédéral (575 entités, dont la Lumbee Tribe of North Carolina)
+    kind: indigenous body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - territory.metabolism
+      - political.constitutionalSubstrate
+      - capacity.delivery
+      - capacity.publicServices
+    currentPositionFromReport: |
+      Exercent une souveraineté inhérente et préconstitutionnelle sur leurs membres et sur le territoire indien, sous réserve du pouvoir plénier du Congrès, réaffirmée dans McGirt et confirmée dans Haaland v. Brackeen mais nuancée quant à la compétence concurrente des États dans Castro-Huerta; 575 entités étaient reconnues au 30 janvier 2026, le dernier ajout étant la Lumbee Tribe of North Carolina par voie législative en décembre 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+        - capacity.publicServices
+        - territory.metabolism
+      interests: |
+        Maintenir un ordre juridique qui ne découle ni du fédéral ni des États, et combler des écarts de service : plus de 23 % des personnes sur les terres tribales n'ont pas d'accès Internet fixe et les programmes fédéraux qui les servent figurent au registre à haut risque [political.constitutionalSubstrate][territory.metabolism][capacity.publicServices].
+      resources: |
+        Une souveraineté inhérente reconnue d'une lignée jurisprudentielle allant de la trilogie Marshall à McGirt et Brackeen, des procédures statutaires de reconnaissance, et l'admissibilité aux subventions d'infrastructure au même titre que les États et territoires [political.constitutionalSubstrate][capacity.delivery].
+      constraints: |
+        Le pouvoir plénier du Congrès sur la relation, la compétence concurrente des États après Castro-Huerta, et des programmes fédéraux les servant classés à haut risque [political.constitutionalSubstrate][capacity.publicServices].
+      likelyMoves: |
+        Nouveaux ajouts de reconnaissance par les trois voies disponibles : administrative, législative et judiciaire [political.constitutionalSubstrate].
+      engagementMode: |
+        contrepartie souveraine, sous réserve du pouvoir plénier du Congrès. Le rapport situe leur droit hors des ordres fédéral et étatique tout en consignant que le Congrès peut le nuancer [political.constitutionalSubstrate].
+  - name: Les cinq territoires non incorporés habités (Porto Rico, Guam, les îles Vierges américaines, les îles Mariannes du Nord, les Samoa américaines)
+    kind: subnational government
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - territory.geography
+      - territory.climate
+      - political.constitutionalSubstrate
+      - political.stateStructure
+    currentPositionFromReport: |
+      Sont régis selon le régime des arrêts insulaires, le Congrès y détenant un pouvoir plénier et la Constitution ne s'y appliquant que sélectivement, leurs résidents ne disposant ni du vote présidentiel ni d'une représentation votante au Congrès; les personnes nées aux Samoa américaines sont ressortissantes et non citoyennes, et les îles Mariannes du Nord ont été frappées par deux super-typhons en 2026, le second donnant lieu à une déclaration de sinistre majeur le 3 août.
+    humanReview: |
+      Nommés comme catégorie dotée d'un statut constitutionnel distinct et d'une exposition cyclonique vive, mais le rapport les décrit comme subissant l'action plutôt qu'agissant.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.constitutionalSubstrate
+        - political.stateStructure
+        - territory.climate
+      interests: Sans mention dans le rapport
+      resources: |
+        Des gouvernements territoriaux et l'accès à l'aide fédérale en cas de sinistre, comme l'approbation de Rota pour toutes les catégories d'aide publique [territory.climate][political.stateStructure].
+      constraints: |
+        Aucun vote présidentiel, aucune représentation votante au Congrès, une application sélective de la Constitution, et une exposition cyclonique que la comptabilité nationale des sinistres n'atteint pas [political.constitutionalSubstrate][territory.climate].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        engagés par le pouvoir plénier du Congrès plutôt que par la représentation — le rapport présente la relation comme un legs colonial tourné vers l'intérieur et toujours vivant [political.constitutionalSubstrate][capacity.inheritedTerrain].
+  - name: Intel
+    kind: private-sector
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      A vendu au gouvernement fédéral 433,3 millions d'actions à 20,47 dollars — une participation de 9,9 % valant 8,9 milliards, financée par 5,7 milliards de subventions du CHIPS Act octroyées mais non versées et 3,2 milliards du programme Secure Enclave —, la participation étant passive, sans siège au conseil, le gouvernement s'engageant à voter avec le conseil, avec un bon de souscription de cinq ans pour 5 % supplémentaires exerçable seulement si Intel cesse de détenir la majorité de son activité de fonderie.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+      interests: |
+        Convertir des subventions déjà octroyées en capital tout en conservant le contrôle de la gouvernance et la majorité de son activité de fonderie [economy.politicalEconomy].
+      resources: |
+        8,9 milliards de dollars en contrepartie de capital, une structure de gouvernance que l'État s'est engagé à ne pas contester, et un statut stratégique dans la politique des semi-conducteurs [economy.politicalEconomy].
+      constraints: |
+        Un bon de souscription qui pénalise la cession de la majorité de la fonderie, et une dépendance à un État qui est simultanément son actionnaire et son législateur [economy.politicalEconomy].
+      likelyMoves: |
+        Conservation de la majorité de la fonderie, condition à laquelle le bon ne se déclenche pas [economy.politicalEconomy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, au cas par cas. Le rapport décrit un alignement restructuré entreprise par entreprise plutôt que par règle sectorielle [political.stabilityDrivers][economy.politicalEconomy].
+  - name: MP Materials
+    kind: private-sector
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      A reçu du département de la Défense un engagement de 400 millions de dollars en actions privilégiées convertibles et bons de souscription au prix de conversion de 30,03 dollars, représentant 15 % des actions en circulation et faisant du département son premier actionnaire, assorti d'un prix plancher de 110 dollars le kilogramme sur dix ans pour ses produits de néodyme-praséodyme et d'un engagement d'achat sur dix ans de toute la production de sa deuxième usine d'aimants prévue.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+        - territory.minerals
+      interests: |
+        Bâtir une capacité nationale d'aimants contre un prix et des débouchés garantis plutôt que contre le risque de marché [economy.politicalEconomy].
+      resources: |
+        Un prix plancher, un engagement d'achat de dix ans sur toute la production, et un premier actionnaire qui est aussi l'acheteur du produit [economy.politicalEconomy].
+      constraints: |
+        Son économie est désormais liée à une seule contrepartie, et la dépendance de fond — la Chine fournissant environ 70 % des terres rares — n'est pas encore déplacée [economy.politicalEconomy][territory.minerals].
+      likelyMoves: |
+        Construction de la deuxième usine d'aimants dont toute la production est déjà engagée [economy.politicalEconomy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, au cas par cas, l'État étant simultanément actionnaire, fixateur de prix et client [economy.politicalEconomy].
+  - name: Les hyperscalers technologiques (Meta, Microsoft, Amazon, Alphabet)
+    kind: private-sector
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      Portent la construction des centres de données d'intelligence artificielle avec des dépenses d'investissement combinées d'environ 410 milliards de dollars en 2025 et des plans annoncés d'environ 725 milliards pour 2026, Amazon étant première du Fortune 500 de 2026 et Alphabet la plus profitable de la liste avec 132 milliards.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+        - economy.realEconomy
+        - territory.metabolism
+      interests: |
+        Soutenir un programme d'investissement qui constitue lui-même la principale impulsion de l'investissement des entreprises à l'échelle nationale [economy.realEconomy][economy.politicalEconomy].
+      resources: |
+        Des dépenses d'investissement supérieures à bien des budgets nationaux, des profits records, et un poids de demande suffisant pour relever la croissance de la consommation nationale d'électricité [economy.politicalEconomy][territory.metabolism].
+      constraints: |
+        Une croissance de la demande d'électricité de 2,1 % par an tirée par les centres de données se heurte à un réseau de distribution physique vieillissant, et la politique fédérale propre à chaque entreprise est devenue le mécanisme d'alignement opérant [territory.metabolism][political.stabilityDrivers].
+      likelyMoves: |
+        Exécution d'environ 725 milliards de dollars d'investissements annoncés pour 2026, que le bureau du budget intègre déjà à la croissance projetée de la productivité [economy.politicalEconomy][capacity.productivity].
+      engagementMode: |
+        Négociation / conclusion d'ententes, au cas par cas. Le rapport décrit un assouplissement des restrictions à l'exportation échangé contre un prélèvement sur les revenus, entreprise par entreprise [political.stabilityDrivers].
+  - name: Les grandes entreprises de santé (UnitedHealth Group, CVS Health, McKesson, Cencora)
+    kind: private-sector
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      Occupent quatre des dix premières places du Fortune 500 de 2026 — UnitedHealth Group troisième comme première entreprise de santé, CVS Health sixième, McKesson huitième et Cencora dixième — dans un secteur de la santé générant 3 600 milliards de dollars de chiffre d'affaires et huit des vingt-cinq premières entreprises.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+        - capacity.publicServices
+      interests: Sans mention dans le rapport
+      resources: |
+        Une échelle de revenus dans un système consommant 17,2 % du produit intérieur brut, et une pondération dans le top dix qui fait de la santé le secteur déterminant de la structure privée [economy.politicalEconomy][capacity.publicServices].
+      constraints: |
+        Un programme public en contraction — Medicaid et le programme d'assurance santé des enfants en baisse de 5 millions d'inscrits en un an, avec des exigences de travail dès janvier 2027 [capacity.publicServices].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes. Le rapport les nomme pour leur poids dans la structure privée sans consigner d'engagement précis [economy.politicalEconomy].
+  - name: Les maîtres d'œuvre de la défense (Lockheed Martin, RTX, Boeing, General Dynamics, Northrop Grumman)
+    kind: private-sector
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      Sont nommés comme les maîtres d'œuvre de longue date figurant sur la liste des cent premiers fournisseurs du département de la Défense, par laquelle passe la base industrielle de défense.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+        - capacity.delivery
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Des positions établies sur la liste des cent premiers fournisseurs, dans un portefeuille d'approvisionnement de plus de 750 milliards de dollars [economy.politicalEconomy][capacity.delivery].
+      constraints: |
+        L'acquisition de systèmes d'armes a régressé entre les évaluations à haut risque de 2023 et de 2025, et les dépenses militaires ont reculé de 7,5 % en termes réels en 2025 [capacity.delivery][security.military].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes par voie contractuelle plutôt que par négociation de politique [economy.politicalEconomy].
+  - name: Les autres têtes de liste du Fortune 500 nommées (Walmart, Apple, Berkshire Hathaway, ExxonMobil)
+    kind: private-sector
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      Sont nommées parmi les dix premières du Fortune 500 de 2026, Walmart ayant cédé la première place à Amazon après treize ans, dans une liste représentant 21 000 milliards de dollars de chiffre d'affaires, 2 100 milliards de profits et 30,5 millions d'employés dans le monde.
+    humanReview: |
+      Nommées uniquement pour leur rang dans une mesure de concentration; aucun rôle de politique publique, différend ou opération ne leur est attaché dans le rapport.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+      interests: Sans mention dans le rapport
+      resources: |
+        Une échelle de revenus dans le plus grand bloc de la structure privée [economy.politicalEconomy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sans mention dans le rapport. Le rapport ne leur attache aucun mode d'engagement au-delà de leur rang [economy.politicalEconomy].
+  - name: Le travail organisé (syndicats; aucun organisme nommé individuellement dans le rapport)
+    kind: labour
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.politicalEconomy
+    currentPositionFromReport: |
+      Est décrit comme la contrepartie faible : le taux de syndicalisation s'établissait à 10,0 % et 14,7 millions de membres en 2025 contre 20,1 % et 17,7 millions en 1983, la représentation à 11,2 %, la densité à 32,9 % dans le secteur public contre 5,9 % dans le privé, et à 1,5 % dans les activités financières et 2,1 % dans les services professionnels — les secteurs où se concentre la structure des entreprises.
+    humanReview: |
+      Inclus comme catégorie institutionnelle nommée, mais le rapport ne nomme aucun syndicat particulier : l'acteur n'a donc aucune entité précise derrière lui.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.politicalEconomy
+      interests: |
+        Préserver une prime salariale — 1 404 dollars contre 1 174 de revenu hebdomadaire médian — dans une part décroissante de la main-d'œuvre [economy.politicalEconomy].
+      resources: |
+        14,7 millions de membres concentrés dans le secteur public, où la densité demeure supérieure à 30 % [economy.politicalEconomy].
+      constraints: |
+        Une quasi-absence des secteurs où se concentrent le chiffre d'affaires et les profits des entreprises, et une densité réduite de moitié en quatre décennies [economy.politicalEconomy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes mais structurellement faible. Le terme employé par le rapport est « la contrepartie faible » [economy.politicalEconomy].
+  - name: L'American Society of Civil Engineers
+    kind: civil-society
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - capacity.delivery
+    currentPositionFromReport: |
+      A attribué la note C aux infrastructures des États-Unis dans son évaluation quadriennale de 2025 — la première note C de la série — et estime à 3 700 milliards de dollars l'écart entre les 9 100 milliards nécessaires à un bon état d'entretien et les 5 400 milliards d'investissements prévus; le rapport précise qu'il s'agit d'un organisme professionnel d'ingénieurs à l'orientation de plaidoyer connue en faveur de dépenses d'infrastructure accrues.
+    humanReview: |
+      Cas limite au regard du filtre (e) : il produit une évaluation du pays, mais le rapport le présente comme un organisme professionnel de plaidoyer plutôt que comme un mesureur neutre.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - capacity.delivery
+      interests: |
+        Des investissements publics et privés accrus en infrastructure, orientation que le rapport énonce explicitement [capacity.delivery].
+      resources: |
+        Une évaluation quadriennale sur 18 catégories qui fournit le chiffre de référence auquel se mesurent les crédits d'infrastructure votés [capacity.delivery].
+      constraints: |
+        Son orientation de plaidoyer est divulguée dans le rapport, ce qui nuance le poids de son estimation [capacity.delivery].
+      likelyMoves: |
+        Une nouvelle note quadriennale au même rythme [capacity.delivery].
+      engagementMode: |
+        Négociation / conclusion d'ententes comme contrepartie de plaidoyer; il ne détient aucun rôle statutaire [capacity.delivery].
+external:
+  - name: La Chine (République populaire de Chine)
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - territory.minerals
+      - economy.externalVulnerability
+      - political.shockAbsorbers
+      - capacity.productivity
+      - security.internal
+      - security.military
+      - security.transnationalExposure
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est la source principale de 14 des minéraux critiques les plus dépendants des importations, fournissant environ 70 % des terres rares et 55 % de l'antimoine, détenait 683,5 milliards de dollars de dette fédérale en décembre 2025 avec une part en baisse, a vu sa part des importations de biens des États-Unis passer de 13,2 % à 7,7 % au cours de 2025, est présentée par la stratégie de défense de 2026 comme la principale rivale d'équilibre à dissuader par déni dans l'Indo-Pacifique, et est évaluée parmi les acteurs cyber les plus persistants tout en coopérant sur les précurseurs du fentanyl.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - territory.minerals
+        - economy.externalVulnerability
+        - security.transnationalExposure
+        - security.diplomacy
+      interests: |
+        Conserver un levier sur l'approvisionnement en minéraux critiques alors que son exposition commerciale et obligataire aux États-Unis diminue, et contester l'équilibre indo-pacifique [territory.minerals][economy.externalVulnerability][security.diplomacy].
+      resources: |
+        Une concentration de l'offre sur 14 minéraux critiques, 683,5 milliards de dollars en titres du Trésor, et une capacité cyber que l'évaluation classe parmi les plus persistantes [territory.minerals][economy.externalVulnerability][security.transnationalExposure].
+      constraints: |
+        Une part des importations de biens presque réduite de moitié en un an par substitution entre fournisseurs plutôt que par baisse de la demande états-unienne, et 954 milliards de dollars de dépenses militaires américaines face aux siennes [economy.externalVulnerability][security.military].
+      likelyMoves: |
+        Maintien du levier sur les minéraux, poursuite du prépositionnement cyber, et poursuite de la coopération sur les précurseurs, que l'évaluation décrit comme s'améliorant [territory.minerals][security.transnationalExposure].
+      engagementMode: |
+        Négociation / conclusion d'ententes, sur un mode d'adversité. Le rapport consigne simultanément concurrence, substitution et coopération fonctionnelle sur les précurseurs [security.diplomacy][security.transnationalExposure].
+  - name: Le Mexique
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.externalVulnerability
+      - security.transnationalExposure
+      - security.diplomacy
+    currentPositionFromReport: |
+      Enregistre le troisième excédent bilatéral de biens avec les États-Unis à 196,9 milliards de dollars, avait livré 0,88 million des 1,75 million d'acres-pieds dus à la clôture du cycle du traité de 1944 en octobre 2025, et s'est engagé en février 2026 à des livraisons annuelles d'au moins 350 000 acres-pieds et à un plan de rattrapage; les organisations basées au Mexique dominent l'acheminement du fentanyl et de la cocaïne vers le pays.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+        - economy.externalVulnerability
+      interests: |
+        Préserver l'accès commercial tout en gérant des obligations d'eau qu'il a manquées à répétition depuis 1994 [economy.externalVulnerability][security.transnationalExposure].
+      resources: |
+        Des cycles de traité calculés sur cinq ans plutôt qu'annuellement, et l'administration conjointe du traité par une commission [security.transnationalExposure].
+      constraints: |
+        Les crédits états-uniens conditionnent désormais certains fonds à une certification de livraison, et les cartels opérant depuis son territoire constituent le principal enchevêtrement non étatique nommé [security.transnationalExposure].
+      likelyMoves: |
+        Livraisons conformes à l'engagement de février 2026, sous pression de certification [security.transnationalExposure].
+      engagementMode: |
+        Négociation / conclusion d'ententes, avec un mécanisme de conditionnalité désormais attaché [security.transnationalExposure].
+  - name: Le Canada
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - territory.geography
+      - economy.externalVulnerability
+    currentPositionFromReport: |
+      Borde le pays au nord et fournit des importations de gaz naturel qui demeurent importantes pour équilibrer la demande saisonnière.
+    humanReview: |
+      Apparaît surtout dans des cadres géographiques, comparatifs et statistiques; conservé uniquement pour la dépendance gazière saisonnière.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.externalVulnerability
+        - territory.metabolism
+      interests: Sans mention dans le rapport
+      resources: |
+        Un approvisionnement en gaz naturel qui équilibre la demande saisonnière d'un pays par ailleurs exportateur net record d'énergie [economy.externalVulnerability].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes. Le rapport consigne une relation d'approvisionnement fonctionnelle et aucun différend [economy.externalVulnerability].
+  - name: L'Union européenne
+    kind: international body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.externalVulnerability
+      - security.diplomacy
+    currentPositionFromReport: |
+      Enregistre le plus important déficit bilatéral de biens des États-Unis à 218,8 milliards de dollars en 2025, et ses États membres comptent parmi les alliés européens que la stratégie de défense de 2026 invite à assurer eux-mêmes leur défense avec un appui américain limité.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.externalVulnerability
+        - security.diplomacy
+      interests: |
+        Préserver l'accès au marché sous une base tarifaire reposant désormais sur une autorité de recours commercial sans plafond de taux, tout en absorbant un transfert de fardeau en matière de défense [economy.externalVulnerability][security.diplomacy].
+      resources: |
+        La plus importante relation commerciale par déficit bilatéral, et des dépenses militaires alliées en hausse alors que la part américaine du total mondial recule [economy.externalVulnerability][security.military].
+      constraints: |
+        Les taux de la section 301 sont liés à l'application d'une interdiction d'importation liée au travail forcé plutôt qu'à une négociation bilatérale [security.diplomacy][economy.externalVulnerability].
+      likelyMoves: |
+        Adaptation à un barème tarifaire fixé par des critères de conformité plutôt que par négociation, et prise en charge d'une part accrue de la défense européenne [security.diplomacy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, mais avec un canal tarifaire désormais fondé sur des règles plutôt que négocié [economy.externalVulnerability].
+  - name: Le Royaume-Uni
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.externalVulnerability
+      - security.military
+      - security.diplomacy
+    currentPositionFromReport: |
+      Détenait 866,0 milliards de dollars de dette fédérale en décembre 2025, accueille 10 058 militaires américains affectés en permanence, enregistre un déficit de biens de 32,2 milliards avec les États-Unis, et est partenaire du partenariat AUKUS sur les sous-marins et les capacités avancées.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.externalVulnerability
+        - security.diplomacy
+        - security.military
+      interests: |
+        Maintenir simultanément le partenariat de sécurité et la relation financière [security.diplomacy][economy.externalVulnerability].
+      resources: |
+        La deuxième détention étrangère de dette fédérale, le statut de pays hôte, et la participation à AUKUS [economy.externalVulnerability][security.diplomacy].
+      constraints: |
+        Ses avoirs obligataires sont consignés par lieu et non par nationalité : sa position apparente peut ne pas être la sienne [economy.externalVulnerability].
+      likelyMoves: |
+        Poursuite de la coopération AUKUS sur les sous-marins et les capacités avancées [security.diplomacy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans le traité de l'Atlantique Nord et dans AUKUS [security.diplomacy].
+  - name: Le Japon
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.externalVulnerability
+      - security.posture
+      - security.military
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est le premier détenteur étranger de dette fédérale à 1 185,5 milliards de dollars, accueille 54 774 militaires affectés en permanence, a fourni 12,6 milliards de dollars d'appui financier direct entre les exercices 2016 et 2019 couvrant 60,2 % des obligations départementales liées à la présence sur son territoire, et détient à la fois un traité de défense collective et le statut d'allié majeur hors OTAN.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+        - security.diplomacy
+        - economy.externalVulnerability
+      interests: |
+        Maintenir l'alliance et la présence avancée qu'il finance largement, alors que la stratégie se réoriente vers une dissuasion par déni dans l'Indo-Pacifique [security.military][security.diplomacy].
+      resources: |
+        Un appui du pays hôte couvrant la majorité des coûts identifiables, la première détention étrangère de dette fédérale, et un statut d'allié à la fois conventionnel et statutaire [security.military][economy.externalVulnerability][security.diplomacy].
+      constraints: |
+        Un virage transactionnel du partage du fardeau dans la stratégie en vigueur, qui renchérit le même arrangement [security.diplomacy][security.posture].
+      likelyMoves: |
+        Maintien de l'appui du pays hôte à son niveau actuel ou au-delà sous pression transactionnelle [security.diplomacy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité, et cas le plus net du rapport d'un partenaire assumant la majorité des coûts identifiables [security.posture][security.military].
+  - name: La Corée du Sud
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.posture
+      - security.military
+      - security.diplomacy
+    currentPositionFromReport: |
+      Accueille 24 234 militaires affectés en permanence, a fourni 5,8 milliards de dollars d'appui financier direct entre les exercices 2016 et 2019 couvrant 43,3 % des obligations départementales associées, et détient à la fois un traité de défense collective et le statut d'allié majeur hors OTAN.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+        - security.diplomacy
+      interests: |
+        Maintenir la présence avancée et la garantie conventionnelle [security.diplomacy].
+      resources: |
+        Un appui substantiel du pays hôte et un double statut d'allié, conventionnel et statutaire [security.military][security.diplomacy].
+      constraints: |
+        Le virage transactionnel du partage du fardeau lui est applicable comme au Japon, à partir d'une part de coûts actuellement plus faible [security.posture][security.diplomacy].
+      likelyMoves: |
+        Pression de renégociation sur sa part de coûts [security.diplomacy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].
+  - name: L'Allemagne
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+      - security.diplomacy
+    currentPositionFromReport: |
+      Accueille 35 068 militaires américains affectés en permanence, la plus forte concentration européenne, au sein d'une empreinte de 31 bases permanentes et 19 autres sites.
+    humanReview: |
+      Nommée comme pays hôte avec un effectif; aucune action propre ne lui est attribuée.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Le consentement du pays hôte pour la plus forte concentration européenne de forces américaines [security.military].
+      constraints: |
+        Elle compte parmi les alliés européens invités à assurer eux-mêmes leur défense avec un appui américain limité [security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans le traité de l'Atlantique Nord [security.diplomacy].
+  - name: L'Italie
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+      - security.diplomacy
+    currentPositionFromReport: |
+      Accueille 12 375 militaires américains affectés en permanence au sein de l'empreinte européenne.
+    humanReview: |
+      Nommée comme pays hôte avec un effectif; aucune action propre ne lui est attribuée.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Le consentement du pays hôte pour une concentration européenne importante [security.military].
+      constraints: |
+        Elle compte parmi les alliés européens invités à assurer eux-mêmes leur défense avec un appui américain limité [security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].
+  - name: Le Bahreïn
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+    currentPositionFromReport: |
+      Accueille 3 479 militaires affectés en permanence, la plus forte concentration des quelque 5 400 présents au Moyen-Orient sur huit bases permanentes et onze autres sites.
+    humanReview: |
+      Nommé comme pays hôte avec un effectif; aucune action propre ne lui est attribuée.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Le consentement du pays hôte pour la principale concentration de bases au Moyen-Orient pendant une guerre active contre l'Iran [security.military][situation].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, le consentement du pays hôte étant la variable opérante [security.military].
+  - name: Le Koweït
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+    currentPositionFromReport: |
+      Est nommé parmi les cinq États contribuant aux 714,2 millions de dollars de contributions au partage du fardeau déclarées par le département pour l'exercice 2023.
+    humanReview: |
+      Mince : nommé uniquement dans une liste de contributeurs au partage du fardeau.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Une contribution financière à la présence américaine [security.military].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes [security.military].
+  - name: L'Arabie saoudite
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+    currentPositionFromReport: |
+      Est nommée parmi les cinq États contribuant aux 714,2 millions de dollars de contributions au partage du fardeau déclarées par le département pour l'exercice 2023.
+    humanReview: |
+      Mince : nommée uniquement dans une liste de contributeurs au partage du fardeau.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Une contribution financière à la présence américaine [security.military].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes [security.military].
+  - name: La Pologne
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+    currentPositionFromReport: |
+      Est nommée parmi les cinq États contribuant aux 714,2 millions de dollars de contributions au partage du fardeau déclarées par le département pour l'exercice 2023.
+    humanReview: |
+      Mince : nommée uniquement dans une liste de contributeurs au partage du fardeau.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Une contribution financière à la présence américaine à l'intérieur de la zone du traité de l'Atlantique Nord [security.military].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes [security.military].
+  - name: Le Niger
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+    currentPositionFromReport: |
+      A révoqué son accord sur le statut des forces en mars 2024, contraignant les États-Unis à se retirer de deux bases avant septembre — l'illustration, dans le rapport, du risque politique que comporte l'accès aux bases.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Un contrôle souverain sur l'accord relatif au statut des forces dont dépendait l'accès [security.military].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        consentement retiré. Le rapport le nomme comme le cas où le consentement du pays hôte a été révoqué plutôt que négocié [security.military].
+  - name: L'Australie
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Détient un traité de défense collective aux côtés de la Nouvelle-Zélande, le statut statutaire d'allié majeur hors OTAN, et une participation au partenariat AUKUS sur les sous-marins et les capacités avancées.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: |
+        Obtenir des capacités sous-marines et avancées par AUKUS à l'intérieur du système d'alliances [security.diplomacy].
+      resources: |
+        Trois paliers d'appartenance qui se superposent : conventionnel, statutaire et partenarial [security.diplomacy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Poursuite de la coopération AUKUS [security.diplomacy].
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].
+  - name: La Nouvelle-Zélande
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est couverte avec l'Australie par un arrangement de défense collective au sein du système d'alliances que le rapport décrit comme le plus vaste au monde.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Une appartenance de défense collective fondée sur un traité [security.diplomacy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].
+  - name: Les Philippines
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Sont couvertes par un traité de défense collective au sein du système d'alliances qui ancre la posture indo-pacifique.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Une appartenance de défense collective fondée sur un traité, dans le théâtre que la stratégie priorise pour la dissuasion par déni [security.diplomacy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].
+  - name: La Thaïlande
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est couverte par un traité de défense collective au sein du système d'alliances.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Une appartenance de défense collective fondée sur un traité [security.diplomacy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].
+  - name: Israël
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.internal
+      - security.military
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      Détient le statut statutaire d'allié majeur hors OTAN, combat aux côtés des forces américaines contre l'Iran depuis le 28 février 2026, n'a reçu aucun nouveau crédit supplémentaire en 2025, et est nommé dans le bulletin de menace intérieure liant l'environnement de menace accru à l'implication américaine dans le conflit entre Israël et l'Iran.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - situation
+        - security.diplomacy
+        - security.internal
+      interests: |
+        Maintenir la conduite conjointe de la guerre contre l'Iran [situation][security.diplomacy].
+      resources: |
+        Le statut de cobelligérant avec la première puissance militaire mondiale et une appartenance statutaire au système d'alliances [security.diplomacy].
+      constraints: |
+        Aucun nouveau crédit supplémentaire n'a été accordé en 2025, et la médiation passe par des tiers plutôt que par un canal bilatéral [security.military][security.diplomacy].
+      likelyMoves: |
+        Poursuite des opérations conjointes tant que la guerre demeure non résolue [situation].
+      engagementMode: |
+        Négociation / conclusion d'ententes, en cobelligérance [situation][security.diplomacy].
+  - name: L'Iran
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.internal
+      - security.transnationalExposure
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      Est en guerre avec les États-Unis depuis le 28 février 2026, subit un blocus naval de ses ports touchant la navigation commerciale de pays tiers, négocie avec Oman à Mascate une nouvelle voie de transit dans le détroit d'Ormuz tout en attribuant la fermeture du détroit au blocus, et figure parmi les acteurs étatiques liés à des opérations cyber contre les réseaux américains.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - situation
+        - security.diplomacy
+        - security.transnationalExposure
+      interests: |
+        Faire lever le blocus et régler le transit du détroit d'Ormuz à des conditions acceptables [situation][security.diplomacy].
+      resources: |
+        La maîtrise du statut du détroit comme objet de négociation, un canal médiatisé par Oman puis auparavant par le Pakistan, et une capacité cyber [situation][security.transnationalExposure].
+      constraints: |
+        Un blocus qui a détourné 44 navires de commerce et en a mis deux hors d'état, et une guerre menée contre la première puissance militaire mondiale et Israël réunis [situation].
+      likelyMoves: |
+        Conclusion des pourparlers de Mascate sur le transit, que les deux parties disent proches [situation].
+      engagementMode: |
+        Blocage / non-négociable sur le plan bilatéral, engagé par médiation tierce. Le rapport montre que tous les canaux passent par le Pakistan ou par Oman plutôt qu'en direct [situation][security.diplomacy].
+  - name: Oman
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      Accueille le canal substantiel de négociation à Mascate, où l'Iran et lui font état de pourparlers proches de leur conclusion sur une nouvelle voie de transit dans le détroit d'Ormuz.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - situation
+        - security.diplomacy
+      interests: |
+        Convertir sa position de médiateur en un arrangement de transit réglé pour le détroit [situation].
+      resources: |
+        Une acceptabilité auprès des deux belligérants comme lieu de négociation après l'expiration du cessez-le-feu négocié par le Pakistan [situation][security.diplomacy].
+      constraints: |
+        Il négocie sans décider; le blocus demeure en vigueur et la guerre non résolue [situation].
+      likelyMoves: |
+        Conclusion des pourparlers de transit qu'il dit proches [situation].
+      engagementMode: |
+        Négociation / conclusion d'ententes, comme médiateur et détenteur du canal [situation].
+  - name: Le Pakistan
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      A négocié le cessez-le-feu entré en vigueur le 8 avril 2026, formalisé dans un mémorandum d'entente intérimaire le 17 juin, et resté en vigueur jusqu'à ce que le président le déclare terminé le 8 juillet 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - situation
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Une capacité démontrée à négocier un cessez-le-feu entre les belligérants [situation].
+      constraints: |
+        Le cessez-le-feu qu'il a négocié a pris fin unilatéralement, et le canal substantiel s'est depuis déplacé vers Mascate [situation][security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, comme médiateur dont le canal a été supplanté [situation].
+  - name: L'Inde
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Est nommée aux côtés de la Chine comme contrepartie sur les précurseurs chimiques du fentanyl, la coopération étant décrite comme s'améliorant face à des dizaines de milliers de décès liés au fentanyl chaque année.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+      interests: Sans mention dans le rapport
+      resources: |
+        Une compétence sur les chaînes d'approvisionnement en précurseurs chimiques [security.transnationalExposure].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Poursuite de la coopération sur les précurseurs, trajectoire que consigne l'évaluation [security.transnationalExposure].
+      engagementMode: |
+        Négociation / conclusion d'ententes, sur une voie coopérative [security.transnationalExposure].
+  - name: La Russie
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Est évaluée avec la Chine comme l'acteur cyber le plus persistant et le plus actif cherchant à compromettre les réseaux gouvernementaux, privés et d'infrastructures critiques, et ses efforts d'influence sur l'élection présidentielle de 2016 ont été à l'origine de l'organe statutaire sur l'influence étrangère depuis dissous.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+        - security.posture
+      interests: |
+        Collecte de renseignement et options de perturbation prépositionnées dans les réseaux américains [security.transnationalExposure].
+      resources: |
+        Une capacité cyber classée parmi les plus persistantes et actives, et un antécédent d'influence démontré [security.transnationalExposure].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Poursuite des compromissions de réseaux et des activités d'influence à l'approche d'un cycle électoral dont l'appareil d'évaluation des menaces a été démantelé [security.transnationalExposure][security.posture].
+      engagementMode: |
+        Blocage / non-négociable. Le rapport ne la nomme que comme acteur de menace [security.transnationalExposure].
+  - name: La Corée du Nord
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Est liée à des opérations cyber contre les réseaux américains et a probablement dérobé pour 2 milliards de dollars en cryptomonnaies pour la seule année 2025, finançant le régime, y compris ses programmes d'armement stratégique.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+      interests: |
+        Financer le régime et ses programmes d'armement stratégique par des revenus cyber illicites [security.transnationalExposure].
+      resources: |
+        Un vol de cryptomonnaies fonctionnant comme recette d'État, à environ 2 milliards de dollars par an [security.transnationalExposure].
+      constraints: Sans mention dans le rapport
+      likelyMoves: |
+        Poursuite des vols à grande échelle, l'évaluation ne consignant aucune perturbation [security.transnationalExposure].
+      engagementMode: |
+        Blocage / non-négociable [security.transnationalExposure].
+  - name: L'Ukraine
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+    currentPositionFromReport: |
+      S'est vu affecter 127 milliards de dollars de soutien lié entre 2022 et 2025, dont seulement 65,1 milliards avaient été versés à la fin de 2025, aucun nouveau crédit supplémentaire n'ayant été accordé en 2025.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.military
+      interests: Sans mention dans le rapport
+      resources: |
+        Un solde non versé d'environ 62 milliards de dollars issu d'affectations antérieures [security.military].
+      constraints: |
+        La fin des crédits supplémentaires explique l'essentiel de la baisse réelle de 7,5 % des dépenses militaires américaines : le flux s'est arrêté plutôt que ralenti [security.military].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sans mention dans le rapport. Le rapport consigne la situation du financement sans décrire de modalités d'engagement [security.military].
+  - name: Cuba
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Conserve la souveraineté ultime sur la zone louée de Guantánamo aux termes de l'accord de février 1903 préservé par le traité de relations de 1934, considère la présence comme une occupation illégale, et détient un bail qui ne peut être modifié ou abrogé que par accord entre les deux gouvernements.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: |
+        Mettre fin à ce qu'il qualifie d'occupation illégale de son territoire [security.diplomacy].
+      resources: |
+        Une souveraineté ultime reconnue sur la zone louée et une exigence de consentement mutuel pour toute modification [security.diplomacy].
+      constraints: |
+        Les limites territoriales demeurent celles de 1934 à moins que les États-Unis n'abandonnent la station : son droit de consentement ne peut forcer un départ [security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Blocage / non-négociable sur le différend permanent, que le rapport consigne comme non résolu et contesté dans sa qualification [security.diplomacy].
+  - name: Le Venezuela (Nicolás Maduro; la transition politique)
+    kind: foreign state
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+      - situation
+    currentPositionFromReport: |
+      A vu son dirigeant Nicolás Maduro placé sous garde américaine par une opération militaire à Caracas le 3 janvier 2026, ce qui a retiré par la force un chef d'État en fonction et placé les États-Unis à l'intérieur d'une transition politique vénézuélienne sur laquelle ils ont installé leur influence, dans le contexte d'une campagne de frappes contre des navires dits exploités par des cartels vénézuéliens.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - situation
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Son chef d'État a été retiré par la force et une puissance étrangère détient une influence sur la succession [situation][security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        transition administrée de l'extérieur. Le rapport décrit les États-Unis comme installés à l'intérieur de la succession plutôt que négociant avec une contrepartie [security.diplomacy][situation].
+  - name: L'Organisation du Traité de l'Atlantique Nord (OTAN)
+    kind: international body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.military
+      - security.diplomacy
+    currentPositionFromReport: |
+      Lie le pays aux 31 autres membres, 32 en tout en 2026, avec environ 80 000 militaires américains affectés ou déployés dans les pays membres d'Europe en juin 2024 contre 67 200 affectés en permanence, tandis que la stratégie de défense de 2026 invite les alliés européens à assurer eux-mêmes leur défense avec un appui limité.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+        - security.military
+      interests: |
+        Préserver la garantie de défense collective alors que les États-Unis se réorientent vers le territoire national et l'hémisphère occidental [security.diplomacy][security.posture].
+      resources: |
+        Une obligation conventionnelle liant 32 membres, une présence américaine permanente sur 31 bases en Europe, et des dépenses militaires alliées en hausse [security.military].
+      constraints: |
+        Une stratégie en vigueur qui invite les alliés à prendre les devants avec un appui limité, et une part américaine des dépenses mondiales en recul de 4,3 points en une seule année [security.diplomacy][security.military].
+      likelyMoves: |
+        Hausses continues des dépenses alliées face à une contribution américaine relative en recul [security.military].
+      engagementMode: |
+        Négociation / conclusion d'ententes, ancré dans un traité mais reformulé de façon transactionnelle [security.diplomacy][security.posture].
+  - name: Le Fonds monétaire international
+    kind: international body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - economy.externalVulnerability
+      - political.stabilityDrivers
+      - political.shockAbsorbers
+    currentPositionFromReport: |
+      A conclu sa surveillance au titre de l'article IV le 1er avril 2026 en l'absence de tout programme, a jugé la position extérieure de 2025 modérément plus faible que ne l'impliquent les fondamentaux et attribué l'essentiel de l'écart au déficit fédéral chronique, désigne le déplacement des détenteurs non résidents vers des investisseurs non bancaires sensibles au prix comme la principale vulnérabilité externe, et juge les politiques de participation et de prélèvement propres à des entreprises distorsives et susceptibles de mal affecter les ressources.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - economy.externalVulnerability
+        - political.stabilityDrivers
+        - political.shockAbsorbers
+      interests: |
+        Faire apparaître l'origine budgétaire du déséquilibre extérieur et la distorsion d'une politique industrielle propre à chaque entreprise [economy.externalVulnerability][political.stabilityDrivers].
+      resources: |
+        Une surveillance annuelle au titre de l'article IV d'un État membre, et une autorité analytique sur laquelle le rapport s'appuie pour la composition de la base d'investisseurs [economy.externalVulnerability].
+      constraints: |
+        Le pays ne détient aucun programme : le Fonds dispose de conseils et d'aucun levier; son constat externe reformule le constat budgétaire plutôt qu'il n'en ajoute un second [economy.externalVulnerability].
+      likelyMoves: |
+        Une nouvelle consultation annuelle au titre de l'article IV suivant la même ligne analytique [economy.externalVulnerability].
+      engagementMode: |
+        contrepartie de surveillance, consultative et non contraignante. L'appartenance sans programme rend la relation entièrement persuasive [economy.externalVulnerability].
+  - name: La Commission interaméricaine des droits de l'homme (Organisation des États américains)
+    kind: international body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - political.rightsAndChecks
+      - political.stabilityDrivers
+      - security.internal
+    currentPositionFromReport: |
+      A publié le rapport de fond no 60/25 le 28 avril 2025 tenant le pays responsable de violations dans le décès d'Anastasio Hernández Rojas sous la garde des douanes et concluant que le cadre d'emploi de la force n'exige aucune évaluation de proportionnalité, a consigné des détentions et des expulsions liées à l'expression politique ainsi que l'expulsion de plus de 200 ressortissants vénézuéliens au titre de l'Alien Enemies Act, n'a reçu aucune réponse de l'État après deux transmissions, et décrit par ailleurs le cadre constitutionnel, la magistrature indépendante, la presse libre et la société civile active comme les piliers de la tradition de légitimation.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - political.rightsAndChecks
+        - security.internal
+        - political.stabilityDrivers
+      interests: |
+        Obtenir une réponse de l'État et une modification corrective du cadre d'emploi de la force qu'elle a jugé déficient [political.rightsAndChecks].
+      resources: |
+        Une qualité conventionnelle au titre de la Déclaration américaine, des rapports de fond publiables en vertu de l'article 47.3 de son règlement, et la participation du pays comme membre de l'Organisation des États américains [political.rightsAndChecks].
+      constraints: |
+        L'État n'a répondu à aucune des deux transmissions, il n'existe aucune institution nationale de droits de la personne accréditée comme interlocutrice, et ses constats n'emportent aucune exécution [political.rightsAndChecks].
+      likelyMoves: |
+        Poursuite de la publication de constats de fond et du suivi du pays sans engagement de l'État [political.rightsAndChecks].
+      engagementMode: |
+        contrepartie juridictionnelle, actuellement sans réponse. Le rapport consigne le passage de la préoccupation à l'adjudication et un État qui n'a pas répondu [political.rightsAndChecks].
+  - name: L'Organisation mondiale de la santé
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      L'appartenance des États-Unis y a pris fin le 22 janvier 2026, premier des retraits ordonnés à se concrétiser.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Elle a perdu un État membre, le rapport consignant le retrait comme achevé plutôt qu'en cours [security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / désengagé. L'appartenance a pris fin [security.diplomacy].
+  - name: Le Conseil des droits de l'homme des Nations Unies
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      La participation des États-Unis y a été résiliée par le décret 14199 du 4 février 2025, le même décret ordonnant l'examen de chaque organisation intergouvernementale, convention et traité auxquels le pays appartient.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        La participation a été résiliée par décret, et l'examen qui en a découlé a produit 66 retraits supplémentaires [security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / désengagé [security.diplomacy].
+  - name: La Convention-cadre des Nations Unies sur les changements climatiques
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est nommée parmi les 66 organisations dont un mémorandum présidentiel du 7 janvier 2026 a ordonné le retrait, aux côtés du retrait de l'Accord de Paris effectif le 27 janvier 2026.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+        - territory.transition
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Elle perd une partie dont les cibles ont été annulées et qui est évaluée comme ne détenant plus de cible de carboneutralité [security.diplomacy][territory.transition].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / en désengagement, les organismes ayant reçu instruction de cesser participation et financement dans la mesure permise par la loi [security.diplomacy].
+  - name: Le Groupe d'experts intergouvernemental sur l'évolution du climat
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est nommé parmi les 66 organisations dont le mémorandum présidentiel du 7 janvier 2026 a ordonné le retrait.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Il perd la participation et le financement d'un État membre par instruction exécutive [security.diplomacy].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / en désengagement [security.diplomacy].
+  - name: Le Centre d'excellence européen pour la lutte contre les menaces hybrides
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.posture
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est nommé parmi les 66 organisations dont le retrait a été ordonné, et désigné comme touchant directement des expositions consignées ailleurs dans le rapport, le retrait survenant dans la même période que la dissolution de l'appareil intérieur sur l'influence étrangère.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+        - security.posture
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Il perd un participant au moment même où l'appareil de ce participant en matière de menaces hybrides était démantelé [security.posture].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / en désengagement [security.diplomacy].
+  - name: Le Forum mondial sur la cyberexpertise
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.posture
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est nommé parmi les 66 organisations dont le retrait a été ordonné, et désigné comme touchant directement les expositions cyber consignées ailleurs dans le rapport.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+        - security.posture
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Il perd un participant alors même que les services de renseignement de celui-ci documentent en détail des intrusions cyber prépositionnées [security.posture][security.transnationalExposure].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / en désengagement [security.diplomacy].
+  - name: Le Forum mondial de lutte contre le terrorisme
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est nommé parmi les 66 organisations dont le mémorandum du 7 janvier 2026 a ordonné le retrait, et parmi celles touchant directement des expositions consignées ailleurs dans le rapport.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Il perd un participant dont le niveau de menace terroriste intérieure est évalué comme accru [security.diplomacy][security.internal].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / en désengagement [security.diplomacy].
+  - name: Le Forum mondial sur la migration et le développement
+    kind: international body
+    liveActorStatus: Récemment en vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Est nommé parmi les 66 organisations dont le mémorandum du 7 janvier 2026 a ordonné le retrait, et parmi celles touchant directement des expositions consignées ailleurs dans le rapport.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: Sans mention dans le rapport
+      constraints: |
+        Il perd un participant dont la migration internationale nette est passée d'environ 2,7 millions à quelque 321 000 au cours de la période [security.diplomacy][security.transnationalExposure].
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Sorti / en désengagement [security.diplomacy].
+  - name: La Commission internationale des frontières et des eaux
+    kind: international body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.transnationalExposure
+    currentPositionFromReport: |
+      Administre le traité de 1944 donnant droit aux États-Unis à au moins 350 000 acres-pieds par an provenant des affluents mexicains sur des cycles de cinq ans, ainsi que les dispositions du même traité sur l'assainissement frontalier visant les eaux usées brutes et industrielles dans la vallée de la rivière Tijuana.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+      interests: |
+        Administrer les cycles de livraison et les obligations d'assainissement de part et d'autre de la frontière [security.transnationalExposure].
+      resources: |
+        Un pouvoir d'administration du traité portant à la fois sur la répartition de l'eau et sur l'assainissement frontalier [security.transnationalExposure].
+      constraints: |
+        Les obligations de cycle ont été manquées à répétition depuis 1994, et le levier d'exécution que consigne le rapport est une condition budgétaire états-unienne plutôt qu'un recours de la commission [security.transnationalExposure].
+      likelyMoves: |
+        Administration du plan de livraison convenu en février 2026 [security.transnationalExposure].
+      engagementMode: |
+        Indépendance de par la loi, administrateur bilatéral sans pouvoir d'exécution propre [security.transnationalExposure].
+  - name: Le partenariat AUKUS
+    kind: international body
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.diplomacy
+    currentPositionFromReport: |
+      Ajoute au système d'alliances conventionnel une coopération sur les sous-marins et les capacités avancées avec le Royaume-Uni et l'Australie.
+    humanReview: |
+      Cas limite au regard du filtre (f) : possiblement un arrangement plutôt qu'un organisme; ses deux partenaires sont extraits séparément.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.diplomacy
+      interests: Sans mention dans le rapport
+      resources: |
+        Un canal trilatéral de coopération sur les sous-marins et les capacités avancées, hors des structures d'alliance conventionnelles [security.diplomacy].
+      constraints: Sans mention dans le rapport
+      likelyMoves: Sans mention dans le rapport
+      engagementMode: |
+        Négociation / conclusion d'ententes, comme partenariat permanent entre trois alliés [security.diplomacy].
+  - name: Les organisations criminelles transnationales (cartel de Sinaloa, cartel Jalisco Nouvelle Génération, MS-13, Forces armées révolutionnaires de Colombie, Armée de libération nationale)
+    kind: other
+    liveActorStatus: En vigueur
+    fieldsCitedIn:
+      - security.internal
+      - security.transnationalExposure
+      - situation
+    currentPositionFromReport: |
+      Constituent le principal enchevêtrement non étatique : les organisations basées au Mexique dominent la production et l'acheminement du fentanyl, de l'héroïne, de la méthamphétamine et de la cocaïne vers le pays, les organisations et groupes armés basés en Colombie acheminent la cocaïne vers les marchés états-uniens et européens et étendent leurs relations aux groupes équatoriens et brésiliens, MS-13 maintient des cellules établies dans le pays en usant de violence contre la diaspora salvadorienne, et toutes pratiquent la fraude financière et blanchissent de l'argent par des institutions financières internationales; elles sont désignées menaces prioritaires en matière de criminalité financière et cibles de frappes militaires létales en mer.
+    layer2Draft:
+      status: AI-drafted, unverified — collapsed by default
+      citationType: Interpretation
+      anchors:
+        - security.transnationalExposure
+        - security.internal
+        - situation
+      interests: |
+        Maintenir les revenus des stupéfiants et les canaux de blanchiment vers et à travers les États-Unis [security.transnationalExposure][security.internal].
+      resources: |
+        Des réseaux de production et d'acheminement, des cellules à l'intérieur du pays, et un accès aux institutions financières internationales pour le blanchiment [security.transnationalExposure].
+      constraints: |
+        Les décès par surdose de fentanyl ont reculé d'environ 30 % et la puissance du produit a baissé du fait de la perturbation de la chaîne d'approvisionnement, les saisies ont augmenté de 57 %, et au moins 19 navires ont été frappés en un seul trimestre [security.transnationalExposure][security.internal][situation].
+      likelyMoves: |
+        Poursuite du trafic sous des interceptions croissantes et une action militaire létale permanente, avec des relations qui s'étendent aux groupes équatoriens et brésiliens [security.transnationalExposure][situation].
+      engagementMode: |
+        Blocage / non-négociable. Le rapport consigne une réponse faite d'interception, de poursuite et de frappe létale plutôt que de toute forme d'engagement [situation][security.internal].
