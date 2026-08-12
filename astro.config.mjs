@@ -43,10 +43,13 @@ function yamlHmrClient() {
 }
 
 export default defineConfig({
-  // Canonical origin for the sitemap and any absolute URLs. Currently the Fly
-  // verification target; switch to 'https://transhorizons.net' at public launch
-  // (and add a 301 from the Fly host) — see deployment notes in CLAUDE.md.
-  site: 'https://transhorizons-astro.fly.dev',
+  // Canonical origin (single source of truth) for the sitemap, the per-page
+  // <link rel="canonical"> in Base.astro, and any absolute URLs — read via
+  // Astro.site, never hardcoded. Set to the public domain transhorizons.net so
+  // search signals consolidate there. fly.dev still SERVES the same app for
+  // verification (no redirect); the 301 from the Fly host to .net is deferred
+  // until public launch — see deployment notes in CLAUDE.md.
+  site: 'https://transhorizons.net',
   adapter: node({ mode: 'standalone' }),
   
   integrations: [react(), keystatic(), yamlHmrClient()],

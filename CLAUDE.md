@@ -24,9 +24,11 @@
 - AI-generated statistics require source verification before publication. Manus and Perplexity have both produced fabricated chokepoint percentages.
 
 ## Deployment
-- Working/verification target: transhorizons-astro.fly.dev (deploy here, verify here).
-- Eventual public domain: transhorizons.net — NOT yet receiving the latest work. Full deployment to .net is on hold until the AI-generated maps and country pages are corrected. Do not push to production .net without explicit go-ahead.
-- After deploying, always state which Fly app received the deployment.
+- transhorizons.net and transhorizons-astro.fly.dev are the SAME Fly app (`transhorizons-astro`) — .net is a custom domain on it (confirmed 2026-08-12: same anycast IP, byte-identical responses, no redirect). ONE `fly deploy` updates BOTH domains at once; there is no separate .net deployment.
+- Canonical origin is transhorizons.net (single source of truth = astro.config `site`, read via Astro.site). Base.astro's `<link rel="canonical">`, sitemap.xml.ts, and robots.txt all resolve to .net, so search signals consolidate there even though fly.dev serves the same pages.
+- The ".net hold" is a CONTENT/POLICY decision, NOT infrastructure: because .net = the same app, whatever is on fly.dev is ALREADY public on .net (including any not-yet-corrected maps/country pages). "Hold" means do NOT promote/announce .net or submit it for indexing until the AI-generated maps and country pages are corrected — it does NOT shield the public domain from current content.
+- Remaining launch step, DEFERRED until explicit go-ahead: a 301 redirect from the fly.dev host to .net. Not done, because it would make fly.dev redirect away and destroy the verification target. Do not add it without go-ahead.
+- Working/verification host is still transhorizons-astro.fly.dev. After deploying, always state which Fly app received the deployment.
 
 ## Country reports (World Views) — process & schema
 - Storage: ONE flat file per country, content/countries/<ISO3>/analysis.yaml. NOT split (can.en.yaml etc. is

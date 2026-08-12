@@ -16,8 +16,6 @@ import { SEO_READY_COUNTRIES } from '../lib/analysedCountries';
 // are listed once with no alternates.
 export const prerender = true;
 
-const SITE = 'https://transhorizons-astro.fly.dev';
-
 const pages: { path: string; fr?: boolean }[] = [
   { path: '/' },
   { path: '/about' },
@@ -28,11 +26,13 @@ const pages: { path: string; fr?: boolean }[] = [
   { path: '/portfolio/resource-civilization', fr: true },
   { path: '/notes/career-evolution', fr: true },
   { path: '/notes/travel-observation', fr: true },
-  // Country situation reports — gated by SEO_READY_COUNTRIES (currently: CAN).
+  // Country situation reports — gated by SEO_READY_COUNTRIES (currently: CAN, USA).
   ...SEO_READY_COUNTRIES.map((c) => ({ path: `/country/${c}` })),
 ];
 
-export const GET: APIRoute = () => {
+export const GET: APIRoute = (context) => {
+  // Origin from astro.config `site` (single source of truth); strip trailing slash.
+  const SITE = context.site ? context.site.href.replace(/\/$/, '') : 'https://transhorizons.net';
   const body = pages
     .map(({ path, fr }) => {
       const loc = `${SITE}${path}`;

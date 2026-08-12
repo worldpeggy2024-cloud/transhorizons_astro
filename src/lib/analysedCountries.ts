@@ -50,5 +50,7 @@ export const ANALYSED_COUNT = ANALYSED_COUNTRIES.length;
  *
  * CAN opened 2026-07-11: full six-peer rebuild (territory/capacity/substrate incl.),
  * proofed by Peggy, EN + FR. Brazil stays closed (society still PLACEHOLDER).
+ * USA opened 2026-08-12: two-phase six-peer report (situation refreshed 2026-08-06),
+ * proofed by Peggy, EN + FR.
  */
-export const SEO_READY_COUNTRIES: string[] = ['CAN'];
+export const SEO_READY_COUNTRIES: string[] = ['CAN', 'USA'];

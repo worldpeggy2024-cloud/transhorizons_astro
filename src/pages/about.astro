@@ -5,6 +5,8 @@
 // Interactive elements (EN/FR toggle) handled via a small inline script
 
 const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
+// Canonical origin from astro.config `site` (single source of truth).
+const canonicalHref = new URL('/about', Astro.site ?? 'https://transhorizons.net').href;
 ---
 
 <!doctype html>
@@ -14,6 +16,7 @@ const ABOUT_IMAGE = '/images/about_portrait-LYRozAghmFTyLmT3pDWY6n.webp';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About — TransHorizons | Peggy Brenier</title>
     <meta name="description" content="Independent research on Canadian resource geopolitics, trade, and strategic systems. Senior translator with more than twenty years supporting Canadian federal institutions including Statistics Canada and Natural Resources Canada. Independent research on geopolitics, resource systems, and technological transformation." />
+    <link rel="canonical" href={canonicalHref} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
