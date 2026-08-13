@@ -5,4 +5,8 @@ Allow: /
 Disallow: /keystatic
 Disallow: /api/
 
+# Private narration-review page and its audio — evaluation material, not content
+Disallow: /listen
+Disallow: /audio/
+
 Sitemap: https://transhorizons.net/sitemap.xml

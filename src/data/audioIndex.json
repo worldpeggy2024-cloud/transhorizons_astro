@@ -1,0 +1,172 @@
+{
+  "groups": [
+    {
+      "title": "Canada — full report",
+      "lang": "en",
+      "tracks": [
+        {
+          "id": "can-en-baseline",
+          "label": "Baseline",
+          "src": "/audio/countries/CAN/en/01-baseline.mp3",
+          "seconds": 171
+        },
+        {
+          "id": "can-en-territory",
+          "label": "Territory",
+          "src": "/audio/countries/CAN/en/02-territory.mp3",
+          "seconds": 957
+        },
+        {
+          "id": "can-en-society",
+          "label": "Society",
+          "src": "/audio/countries/CAN/en/03-society.mp3",
+          "seconds": 1003
+        },
+        {
+          "id": "can-en-economy",
+          "label": "Economy",
+          "src": "/audio/countries/CAN/en/04-economy.mp3",
+          "seconds": 887
+        },
+        {
+          "id": "can-en-political",
+          "label": "Political Order",
+          "src": "/audio/countries/CAN/en/05-political.mp3",
+          "seconds": 1768
+        },
+        {
+          "id": "can-en-capacity",
+          "label": "Capacity to Deliver",
+          "src": "/audio/countries/CAN/en/06-capacity.mp3",
+          "seconds": 1558
+        },
+        {
+          "id": "can-en-security",
+          "label": "Security & Diplomacy",
+          "src": "/audio/countries/CAN/en/07-security.mp3",
+          "seconds": 1284
+        },
+        {
+          "id": "can-en-situation",
+          "label": "Situation",
+          "src": "/audio/countries/CAN/en/08-situation.mp3",
+          "seconds": 292
+        }
+      ]
+    },
+    {
+      "title": "Canada — rapport complet",
+      "lang": "fr",
+      "tracks": [
+        {
+          "id": "can-fr-baseline",
+          "label": "État des lieux",
+          "src": "/audio/countries/CAN/fr/01-baseline.mp3",
+          "seconds": 185
+        },
+        {
+          "id": "can-fr-territory",
+          "label": "Territoire",
+          "src": "/audio/countries/CAN/fr/02-territory.mp3",
+          "seconds": 1032
+        },
+        {
+          "id": "can-fr-society",
+          "label": "Société",
+          "src": "/audio/countries/CAN/fr/03-society.mp3",
+          "seconds": 1054
+        },
+        {
+          "id": "can-fr-economy",
+          "label": "Économie",
+          "src": "/audio/countries/CAN/fr/04-economy.mp3",
+          "seconds": 978
+        },
+        {
+          "id": "can-fr-political",
+          "label": "Ordre politique",
+          "src": "/audio/countries/CAN/fr/05-political.mp3",
+          "seconds": 1897
+        },
+        {
+          "id": "can-fr-capacity",
+          "label": "Capacité de mise en œuvre",
+          "src": "/audio/countries/CAN/fr/06-capacity.mp3",
+          "seconds": 1651
+        },
+        {
+          "id": "can-fr-security",
+          "label": "Sécurité et diplomatie",
+          "src": "/audio/countries/CAN/fr/07-security.mp3",
+          "seconds": 1316
+        },
+        {
+          "id": "can-fr-situation",
+          "label": "Situation",
+          "src": "/audio/countries/CAN/fr/08-situation.mp3",
+          "seconds": 305
+        }
+      ]
+    },
+    {
+      "title": "Articles",
+      "lang": "en",
+      "tracks": [
+        {
+          "id": "art-en-resource-civilization",
+          "label": "Resource Civilization",
+          "src": "/audio/articles/resource-civilization/en/01-article.mp3",
+          "seconds": 925
+        },
+        {
+          "id": "art-en-canada-multipolar",
+          "label": "Canada in a Multipolar World",
+          "src": "/audio/articles/canada-multipolar/en/01-article.mp3",
+          "seconds": 782
+        },
+        {
+          "id": "art-en-career-evolution",
+          "label": "From Translation Toward Research",
+          "src": "/audio/articles/career-evolution/en/01-article.mp3",
+          "seconds": 465
+        },
+        {
+          "id": "art-en-travel-observation",
+          "label": "Travel and Observation",
+          "src": "/audio/articles/travel-observation/en/01-article.mp3",
+          "seconds": 636
+        }
+      ]
+    },
+    {
+      "title": "Articles",
+      "lang": "fr",
+      "tracks": [
+        {
+          "id": "art-fr-resource-civilization",
+          "label": "Civilisation des ressources",
+          "src": "/audio/articles/resource-civilization/fr/01-article.mp3",
+          "seconds": 930
+        },
+        {
+          "id": "art-fr-canada-multipolar",
+          "label": "Le Canada dans un monde multipolaire",
+          "src": "/audio/articles/canada-multipolar/fr/01-article.mp3",
+          "seconds": 733
+        },
+        {
+          "id": "art-fr-career-evolution",
+          "label": "De la traduction vers la recherche",
+          "src": "/audio/articles/career-evolution/fr/01-article.mp3",
+          "seconds": 490
+        },
+        {
+          "id": "art-fr-travel-observation",
+          "label": "Voyage et observation",
+          "src": "/audio/articles/travel-observation/fr/01-article.mp3",
+          "seconds": 652
+        }
+      ]
+    }
+  ]
+}

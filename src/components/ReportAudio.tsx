@@ -11,6 +11,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Volume2, Play, Pause, Square, Rewind, FastForward, Headphones, ChevronDown } from 'lucide-react';
+import { SPEEDS } from '../hooks/useReportSpeech';
 import type { ReportSpeech, SpeechSection } from '../hooks/useReportSpeech';
 
 const CHARS_PER_SEC = 14; // rough spoken rate for the time estimate
@@ -136,10 +137,18 @@ export function FloatingReportPlayer({ speech, lang, sectionName }: {
 }) {
   if (!speech.supported || speech.status === 'idle') return null;
   const fr = lang.toLowerCase().startsWith('fr');
-  const totalDur = speech.totalChars / CHARS_PER_SEC;
+  // Speed shortens the clock: at 1.5x the same text takes two thirds the time.
+  const totalDur = speech.totalChars / (CHARS_PER_SEC * speech.rate);
   const elapsed = speech.progress * totalDur;
   // 10 seconds as a fraction of the whole narration, for the skip buttons.
-  const step = (10 * CHARS_PER_SEC) / (speech.totalChars || 1);
+  const step = (10 * CHARS_PER_SEC * speech.rate) / (speech.totalChars || 1);
+
+  const nextSpeed = () => {
+    const i = SPEEDS.indexOf(speech.rate as typeof SPEEDS[number]);
+    speech.setRate(SPEEDS[(i + 1) % SPEEDS.length] ?? 1);
+  };
+  // "1x" reads better than "1×" at 10px; drop the trailing .0 on whole speeds.
+  const speedLabel = `${speech.rate}`.replace(/\.0$/, '') + '×';
 
   const onSeek = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -181,6 +190,17 @@ export function FloatingReportPlayer({ speech, lang, sectionName }: {
       <span className="flex-shrink-0 text-[10px] font-mono tabular-nums text-[var(--cr-muted)] leading-none">
         {fmt(elapsed)}<span className="text-[var(--cr-faint)] mx-0.5">/</span>{fmt(totalDur)}
       </span>
+
+      <button
+        onClick={nextSpeed}
+        className={`px-1 flex-shrink-0 font-mono text-[10px] tabular-nums leading-none transition-colors ${
+          speech.rate === 1 ? 'text-[var(--cr-faint)] hover:text-[var(--cr-accent)]' : 'text-[var(--cr-accent)]'
+        }`}
+        title={fr ? 'Vitesse de lecture' : 'Reading speed'}
+        aria-label={fr ? `Vitesse de lecture, actuellement ${speedLabel}` : `Reading speed, currently ${speedLabel}`}
+      >
+        {speedLabel}
+      </button>
 
       <button onClick={() => speech.seek(speech.progress - step)} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Reculer de 10 s' : 'Back 10 seconds'} aria-label={fr ? 'Reculer de 10 secondes' : 'Back 10 seconds'}>
         <Rewind size={14} />

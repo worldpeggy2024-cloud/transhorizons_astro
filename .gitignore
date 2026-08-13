@@ -19,6 +19,16 @@ pnpm-debug.log*
 .env.development
 .env.production
 
+# generated narration audio + its extracted source text.
+# public/audio is staged by scripts/stage-audio.cjs: kept out of git, but it
+# DOES ship in the Fly image, because the Dockerfile copies the working
+# directory rather than a git checkout. src/data/audioIndex.json is committed
+# so the /listen page still builds on a machine without the audio.
+tts-out/
+tts-text/
+public/audio/
+scripts/__pycache__/
+
 # editor/system files
 .vscode/
 .idea/

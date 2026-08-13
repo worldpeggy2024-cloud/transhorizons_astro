@@ -33,6 +33,13 @@ export type SpeechStatus = 'idle' | 'playing' | 'paused';
 
 const MAX_CHUNK = 240;
 
+/* Playback speeds. 0.75 is there for language learners following along in the
+ * text; 1.5 for listeners who want the piece faster than they could read it.
+ * Engine-agnostic: Web Speech takes it as utterance.rate, and a pre-generated
+ * audio file would take the same number as audio.playbackRate. */
+export const SPEEDS = [0.75, 1, 1.25, 1.5] as const;
+const DEFAULT_RATE = 1;
+
 function stripMarkers(text: string): string {
   return text.replace(/\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
 }
@@ -65,6 +72,12 @@ export function useReportSpeech() {
   const [voiceFr, setVoiceFr] = useState<string>(() =>
     typeof localStorage !== 'undefined' ? localStorage.getItem('tts-voice-fr') ?? '' : '');
 
+  const [rate, setRateState] = useState<number>(() => {
+    if (typeof localStorage === 'undefined') return DEFAULT_RATE;
+    const stored = Number(localStorage.getItem('tts-rate'));
+    return SPEEDS.includes(stored as typeof SPEEDS[number]) ? stored : DEFAULT_RATE;
+  });
+
   const [status, setStatus] = useState<SpeechStatus>('idle');
   const [activeId, setActiveId] = useState<string | null>(null);
   const [mode, setMode] = useState<'single' | 'all' | null>(null);
@@ -80,6 +93,7 @@ export function useReportSpeech() {
   const voiceRef = useRef<SpeechSynthesisVoice | undefined>(undefined);
   const gen = useRef(0);                                        // invalidates stale utterance callbacks
   const uRef = useRef<SpeechSynthesisUtterance | null>(null);   // keep-alive vs GC
+  const rateRef = useRef(rate);                                 // read by speakChunk, immune to re-renders
 
   useEffect(() => {
     if (!supported) return;
@@ -135,6 +149,7 @@ export function useReportSpeech() {
     uRef.current = u;
     if (voiceRef.current) u.voice = voiceRef.current;
     else u.lang = langOf(langRef.current) === 'fr' ? 'fr-FR' : 'en-US';
+    u.rate = rateRef.current;
     u.onboundary = (e) => { if (myGen === gen.current && e.name === 'word') { charInChunk.current = e.charIndex; syncProgress(); } };
     u.onend = () => { if (myGen === gen.current) speakChunk(i + 1, myGen); };
     u.onerror = (e) => {
@@ -191,6 +206,19 @@ export function useReportSpeech() {
     speakFrom(0, myGen);
   };
 
+  /* Web Speech cannot change rate on a sounding utterance, so a change while
+   * playing re-speaks the current chunk from its start — a sentence boundary,
+   * the same place a seek lands. Paused or idle, it simply takes effect next. */
+  const setRate = (next: number) => {
+    setRateState(next);
+    rateRef.current = next;
+    if (typeof localStorage !== 'undefined') localStorage.setItem('tts-rate', String(next));
+    if (status === 'playing' && chunks.current.length) {
+      const myGen = ++gen.current;
+      speakFrom(idx.current, myGen);
+    }
+  };
+
   const seek = (fraction: number) => {
     if (!chunks.current.length) return;
     const target = Math.max(0, Math.min(1, fraction)) * total.current;
@@ -222,6 +250,7 @@ export function useReportSpeech() {
   return {
     supported,
     voicesForLang, selectedVoiceName, selectVoice,
+    rate, setRate,
     status, activeId, mode, progress, totalChars,
     play, playAll, pause, resume, stop, restart, seek,
   };

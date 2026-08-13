@@ -1,0 +1,152 @@
+---
+/*
+ * /listen — private evaluation page for the Fish Audio narration.
+ *
+ * NOT part of the site: no nav link, noindex/nofollow, excluded from the
+ * sitemap. It exists so the generated MP3s can be auditioned on a phone,
+ * away from the desk, before any decision to wire narration into the real
+ * pages. Delete this file (and public/audio) once that decision is made.
+ *
+ * Audio comes from public/audio, staged by scripts/stage-audio.cjs. Those
+ * files are gitignored but ship in the Fly image, because the Dockerfile
+ * copies the working directory rather than a git checkout.
+ */
+import audioIndex from '../data/audioIndex.json';
+
+const { groups } = audioIndex as {
+  groups: { title: string; lang: string; tracks: { id: string; label: string; src: string; seconds: number }[] }[];
+};
+
+const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+const totalSeconds = groups.flatMap((g) => g.tracks).reduce((a, t) => a + t.seconds, 0);
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Narration review — TransHorizons</title>
+  <style>
+    :root {
+      --bg: #FBFAF8; --fg: #1A1A1A; --muted: #6B6B6B; --line: #E4E0DA; --accent: #7D1A2E;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #171716; --fg: #EDEAE5; --muted: #9A948C; --line: #2E2C29; --accent: #D98A9B; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      padding: 1rem 1rem 6rem;
+    }
+    main { max-width: 46rem; margin: 0 auto; }
+    h1 { font-size: 1.15rem; margin: .5rem 0 .25rem; }
+    .sub { color: var(--muted); font-size: .8rem; margin-bottom: 1.5rem; }
+    h2 {
+      font-size: .7rem; text-transform: uppercase; letter-spacing: .16em;
+      color: var(--muted); margin: 2rem 0 .5rem; font-weight: 600;
+    }
+    .track { border-top: 1px solid var(--line); padding: .85rem 0; }
+    .row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+    .label { font-weight: 500; }
+    .dur { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    audio { width: 100%; margin-top: .5rem; }
+    .bar {
+      position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg);
+      border-top: 1px solid var(--line); padding: .6rem 1rem;
+      display: flex; align-items: center; gap: .75rem; justify-content: center;
+    }
+    .bar span { font-size: .75rem; color: var(--muted); }
+    button {
+      font: inherit; font-size: .8rem; padding: .35rem .7rem; cursor: pointer;
+      background: transparent; color: var(--fg);
+      border: 1px solid var(--line); border-radius: 999px;
+    }
+    button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+    .note { color: var(--muted); font-size: .75rem; margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Narration review</h1>
+    <p class="sub">
+      Fish Audio · {fmt(totalSeconds)} total · position is remembered per track.
+      Private page — not indexed, not linked.
+    </p>
+
+    {groups.map((group) => (
+      <section>
+        <h2>{group.title}</h2>
+        {group.tracks.map((track) => (
+          <div class="track">
+            <div class="row">
+              <span class="label">{track.label}</span>
+              <span class="dur">{fmt(track.seconds)}</span>
+            </div>
+            <audio controls preload="none" src={track.src} data-id={track.id}></audio>
+          </div>
+        ))}
+      </section>
+    ))}
+
+    <p class="note">
+      Generated on the free tier at 128 kbps. Speed applies to every player and is
+      remembered. Playback position is stored in this browser only.
+    </p>
+  </main>
+
+  <div class="bar">
+    <span>Speed</span>
+    <button data-speed="0.75">0.75×</button>
+    <button data-speed="1">1×</button>
+    <button data-speed="1.25">1.25×</button>
+    <button data-speed="1.5">1.5×</button>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var players = Array.prototype.slice.call(document.querySelectorAll('audio'));
+      var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-speed]'));
+
+      // Speed: one setting for every player, remembered across visits.
+      var rate = parseFloat(localStorage.getItem('listen-rate') || '1') || 1;
+      function applyRate(next) {
+        rate = next;
+        localStorage.setItem('listen-rate', String(next));
+        players.forEach(function (a) { a.playbackRate = next; });
+        buttons.forEach(function (b) {
+          b.setAttribute('aria-pressed', String(parseFloat(b.dataset.speed) === next));
+        });
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () { applyRate(parseFloat(b.dataset.speed)); });
+      });
+
+      players.forEach(function (a) {
+        var key = 'listen-pos-' + a.dataset.id;
+
+        // A 30-minute section is not something you finish in one sitting.
+        a.addEventListener('loadedmetadata', function () {
+          var saved = parseFloat(localStorage.getItem(key) || '0');
+          if (saved > 5 && saved < a.duration - 5) a.currentTime = saved;
+          a.playbackRate = rate;
+        });
+        a.addEventListener('timeupdate', function () {
+          if (!a.paused) localStorage.setItem(key, String(a.currentTime));
+        });
+        a.addEventListener('ended', function () { localStorage.removeItem(key); });
+
+        // Only one thing sounding at a time.
+        a.addEventListener('play', function () {
+          a.playbackRate = rate;
+          players.forEach(function (other) { if (other !== a) other.pause(); });
+        });
+      });
+
+      applyRate(rate);
+    })();
+  </script>
+</body>
+</html>
