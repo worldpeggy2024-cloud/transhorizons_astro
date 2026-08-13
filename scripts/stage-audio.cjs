@@ -28,67 +28,124 @@ const TITLES = {
   'travel-observation':    { en: 'Travel and Observation', fr: 'Voyage et observation' },
 };
 const SECTION_LABELS = {
-  baseline:  { en: 'Baseline',            fr: 'État des lieux' },
-  territory: { en: 'Territory',           fr: 'Territoire' },
-  society:   { en: 'Society',             fr: 'Société' },
-  economy:   { en: 'Economy',             fr: 'Économie' },
-  political: { en: 'Political Order',     fr: 'Ordre politique' },
-  capacity:  { en: 'Capacity to Deliver', fr: 'Capacité de mise en œuvre' },
+  baseline:  { en: 'Baseline',             fr: 'État des lieux' },
+  territory: { en: 'Territory',            fr: 'Territoire' },
+  society:   { en: 'Society',              fr: 'Société' },
+  economy:   { en: 'Economy',              fr: 'Économie' },
+  political: { en: 'Political Order',      fr: 'Ordre politique' },
+  capacity:  { en: 'Capacity to Deliver',  fr: 'Capacité de mise en œuvre' },
   security:  { en: 'Security & Diplomacy', fr: 'Sécurité et diplomatie' },
-  situation: { en: 'Situation',           fr: 'Situation' },
+  situation: { en: 'Situation',            fr: 'Situation' },
 };
 
-/** 128 kbps CBR => 16000 bytes per second. Good enough to label a player. */
-const secondsOf = (bytes) => Math.round(bytes / 16000);
+// One male and one female voice per language, so the listener chooses.
+const VOICE_LABELS = {
+  adrian: 'Adrian', sarah: 'Sarah', laura: 'Laura',
+  angelokyly: 'angelokyly', 'annonce-calme': 'Annonce Calme',
+};
+
+// MPEG-1 Layer III bitrates (kbps) and sample rates, indexed as in the frame
+// header. Reading the real bitrate keeps durations honest when 64 and 128 kbps
+// files sit side by side — assuming either one mislabels every other track.
+const MP3_BITRATES = [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320, 0];
+const MP3_RATES = [44100, 48000, 32000, 0];
+
+/** Duration in seconds, from the first frame header of a CBR MP3. */
+function secondsOf(file) {
+  const size = fs.statSync(file).size;
+  const fd = fs.openSync(file, 'r');
+  const head = Buffer.alloc(4);
+  fs.readSync(fd, head, 0, 4, 0);
+  fs.closeSync(fd);
+  // Frame sync: 11 bits set, then a valid bitrate and sample-rate index.
+  if (head[0] === 0xff && (head[1] & 0xe0) === 0xe0) {
+    const kbps = MP3_BITRATES[head[2] >> 4];
+    const rate = MP3_RATES[(head[2] >> 2) & 0x03];
+    if (kbps && rate) return Math.round((size * 8) / (kbps * 1000));
+  }
+  return Math.round(size / 16000);   // fall back to assuming 128 kbps
+}
+
+/*
+ * --index-only rebuilds src/data/audioIndex.json without copying anything.
+ * Useful while reviewing locally: the committed index stays accurate without
+ * keeping a second, gigabyte-scale copy of every MP3 on disk. Run without the
+ * flag before a deploy, which is the only time public/audio needs to exist.
+ */
+const INDEX_ONLY = process.argv.includes('--index-only');
 
 function copy(from, to) {
+  if (INDEX_ONLY) return;
   fs.mkdirSync(path.dirname(to), { recursive: true });
   fs.copyFileSync(from, to);
 }
+
+const voicesIn = (dir) => (fs.existsSync(dir)
+  ? fs.readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name)
+  : []);
 
 function collect() {
   const groups = [];
 
   for (const lang of ['en', 'fr']) {
-    const dir = path.join(SRC, 'countries', 'CAN', lang);
-    if (!fs.existsSync(dir)) continue;
-    const tracks = fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).sort()
-      .map((file) => {
+    const langDir = path.join(SRC, 'countries', 'CAN', lang);
+    const voices = voicesIn(langDir);
+    const tracks = [];
+    for (const voice of voices) {
+      const dir = path.join(langDir, voice);
+      for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).sort()) {
         const id = file.replace(/^\d+-/, '').replace(/\.mp3$/, '');
         const src = path.join(dir, file);
-        const rel = `countries/CAN/${lang}/${file}`;
+        const rel = `countries/CAN/${lang}/${voice}/${file}`;
         copy(src, path.join(DEST, rel));
-        return {
-          id: `can-${lang}-${id}`,
+        tracks.push({
+          id: `can-${lang}-${voice}-${id}`,
           label: SECTION_LABELS[id]?.[lang] ?? id,
+          voice,
           src: `/audio/${rel}`,
-          seconds: secondsOf(fs.statSync(src).size),
-        };
-      });
+          seconds: secondsOf(src),
+        });
+      }
+    }
     if (tracks.length) {
-      groups.push({ title: lang === 'fr' ? 'Canada — rapport complet' : 'Canada — full report', lang, tracks });
+      groups.push({
+        title: lang === 'fr' ? 'Canada — rapport complet' : 'Canada — full report',
+        lang,
+        voices: voices.map((v) => ({ id: v, label: VOICE_LABELS[v] ?? v })),
+        tracks,
+      });
     }
   }
 
   for (const lang of ['en', 'fr']) {
     const tracks = [];
+    const seen = new Set();
     for (const slug of Object.keys(TITLES)) {
-      const dir = path.join(SRC, 'articles', slug, lang);
-      if (!fs.existsSync(dir)) continue;
-      for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).sort()) {
-        const src = path.join(dir, file);
-        const rel = `articles/${slug}/${lang}/${file}`;
-        copy(src, path.join(DEST, rel));
-        tracks.push({
-          id: `art-${lang}-${slug}`,
-          label: TITLES[slug][lang],
-          src: `/audio/${rel}`,
-          seconds: secondsOf(fs.statSync(src).size),
-        });
+      const langDir = path.join(SRC, 'articles', slug, lang);
+      for (const voice of voicesIn(langDir)) {
+        seen.add(voice);
+        const dir = path.join(langDir, voice);
+        for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).sort()) {
+          const src = path.join(dir, file);
+          const rel = `articles/${slug}/${lang}/${voice}/${file}`;
+          copy(src, path.join(DEST, rel));
+          tracks.push({
+            id: `art-${lang}-${voice}-${slug}`,
+            label: TITLES[slug][lang],
+            voice,
+            src: `/audio/${rel}`,
+            seconds: secondsOf(src),
+          });
+        }
       }
     }
     if (tracks.length) {
-      groups.push({ title: lang === 'fr' ? 'Articles' : 'Articles', lang, tracks });
+      groups.push({
+        title: 'Articles',
+        lang,
+        voices: [...seen].map((v) => ({ id: v, label: VOICE_LABELS[v] ?? v })),
+        tracks,
+      });
     }
   }
 
@@ -109,9 +166,18 @@ const walk = (dir) => {
 };
 if (fs.existsSync(DEST)) walk(DEST);
 
-const total = groups.flatMap((g) => g.tracks).reduce((a, t) => a + t.seconds, 0);
+// One voice per language, since the sets are alternates rather than extra listening.
+const primary = groups.flatMap((g) => g.tracks.filter((t) => t.voice === g.voices[0]?.id));
+const total = primary.reduce((a, t) => a + t.seconds, 0);
 console.log(`Staged ${count} file(s), ${(bytes / 1024 / 1024).toFixed(0)} MB, `
-  + `${Math.floor(total / 3600)}h${String(Math.round((total % 3600) / 60)).padStart(2, '0')} of audio`);
-for (const g of groups) console.log(`  ${g.title} [${g.lang}] — ${g.tracks.length} track(s)`);
+  + `${Math.floor(total / 3600)}h${String(Math.round((total % 3600) / 60)).padStart(2, '0')} per voice`);
+for (const g of groups) {
+  console.log(`  ${g.title} [${g.lang}] — ${g.tracks.length} track(s) across `
+    + `${g.voices.map((v) => v.label).join(', ')}`);
+}
 console.log(`\nIndex -> ${INDEX}`);
-console.log('Files are gitignored but WILL ship in the Fly image (Dockerfile copies the local dir).');
+if (INDEX_ONLY) {
+  console.log('--index-only: nothing copied. Run without it before deploying.');
+} else {
+  console.log('Files are gitignored but WILL ship in the Fly image (Dockerfile copies the local dir).');
+}

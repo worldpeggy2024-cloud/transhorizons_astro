@@ -17,7 +17,7 @@ Runbook for regenerating a country report from scratch. **This supersedes the ol
 |---|---|
 | `country-report-present-state-template.md` | The 34-field spec, the ten enforced openers, the source schema (§11), Fact/Interpretation, time-binding (§12), and the full Pass A/B research prompt (§14). |
 | `research-quality-bar.md` | The rejection criteria; overrides ambiguous behaviour in the template. |
-| `actors-pass-template.md` | The actors extraction+draft prompt (**v1.10**; flat output schema). Stamped into the job folder by `init`. |
+| `actors-pass-template.md` | The actors extraction+draft prompt (**v1.12**; flat output schema; emits the render-level `group` slug per actor). Stamped into the job folder by `init` — bumping this template does NOT update already-stamped job folders, so re-stamp them after a version bump. |
 | `known-and-unbuilt-pass-template.md` | The gap-register contract (six-test gate). The register is composed by the **derivatives** pass, which cites this contract. |
 | `since-dates-extension-template.md` | The targeted Pass A extension that dates gap-register items ({{GAPS}}/{{IDS}} placeholders). Run after derivatives. |
 | `country-report-trajectory-template.md` | The separate forward-looking layer. |

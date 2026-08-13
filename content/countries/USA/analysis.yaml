@@ -4645,7 +4645,8 @@ actors_domestic_en: |-
       "resources": "Article II command authority, the removal power as expanded at commission-style agencies, executive orders and proclamations, reconciliation majorities in both chambers, the District of Columbia Home Rule authority, and trade-remedy statutes with no rate ceiling [political.powerStructure][political.constitutionalSubstrate][situation].\n",
       "constraints": "The sixty-vote cloture threshold on ordinary legislation, a 218-seat House majority with four vacancies, judicial review that ran against it on the Federal Reserve, birthright citizenship and Guard federalisation, and a fiscal path in which net interest is the fastest-growing outlay [political.powerStructure][political.constitutionalSubstrate][political.shockAbsorbers].\n",
       "likelyMoves": "Continued reliance on reconciliation, trade-remedy tariffs and executive action over regular order; further withdrawals under the ongoing organisational review; continued lethal operations in the Western Hemisphere and prosecution of the Iran blockade [capacity.steering][security.diplomacy][situation].\n",
-      "engagementMode": "negotiable / dealable, transactionally. The report describes alignment mechanisms that are company-by-company and burden-sharing that is transactional rather than institutional, so counterparts deal with the executive directly rather than through standing frameworks [political.stabilityDrivers][security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, transactionally. The report describes alignment mechanisms that are company-by-company and burden-sharing that is transactional rather than institutional, so counterparts deal with the executive directly rather than through standing frameworks [political.stabilityDrivers][security.diplomacy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Department of Defense (styled Department of War)",
@@ -4675,7 +4676,8 @@ actors_domestic_en: |-
       "resources": "$954 billion in 2025 expenditure (33% of world total), five services plus reserve components, the overseas basing network, a procurement portfolio above $750 billion, and equity and offtake instruments used with named suppliers [security.military][economy.politicalEconomy][capacity.delivery].\n",
       "constraints": "A 7.5% real-terms spending fall in a single year, an authorised end-strength ceiling set annually by Congress, host-nation consent that can be revoked, and an audited record of cost growth and schedule slippage in weapon systems and information technology [security.military][capacity.delivery].\n",
       "likelyMoves": "Continued steady-state lethal operations in the Caribbean and eastern Pacific at rising strike rates on falling obligations, continued military support to border operations, and further direct investment in mineral suppliers [situation][security.transnationalExposure][economy.politicalEconomy].\n",
-      "engagementMode": "executive-subordinate. It answers to the President as commander-in-chief and executed the priorities the report describes as rapidly implemented [political.stabilityDrivers][capacity.steering].\n"
+      "engagementMode": "executive-subordinate. It answers to the President as commander-in-chief and executed the priorities the report describes as rapidly implemented [political.stabilityDrivers][capacity.steering].\n",
+      "group": "military"
     },
     {
       "name": "Department of Homeland Security",
@@ -4699,7 +4701,8 @@ actors_domestic_en: |-
       "resources": "Lead-agency status in interagency protective missions, the National Terrorism Advisory System, and multi-year funding for personnel and border technology appropriated outside the annual cycle by the Secure America Act [security.internal][capacity.steering].\n",
       "constraints": "Demonstrated exposure to appropriations failure — a 76-day departmental lapse — and reliance on Guard forces whose federalisation the Supreme Court declined to permit [political.shockAbsorbers][security.internal].\n",
       "likelyMoves": "Continued high-interdiction, low-release border posture and continued threat bulletins tied to the Middle East conflict [security.internal].\n",
-      "engagementMode": "executive-subordinate. The report places it under executive direction as lead federal agency rather than as an independently mandated body [political.stabilityDrivers].\n"
+      "engagementMode": "executive-subordinate. The report places it under executive direction as lead federal agency rather than as an independently mandated body [political.stabilityDrivers].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "U.S. Customs and Border Protection (including the Border Patrol)",
@@ -4724,7 +4727,8 @@ actors_domestic_en: |-
       "resources": "Multi-year personnel funding under the Secure America Act, revenue-collection machinery, and military support to interagency border operations directed by the 2026 defence strategy [capacity.steering][security.internal].\n",
       "constraints": "A refund obligation of roughly $166 billion under court order, and a use-of-force framework the regional treaty body found lacking the parameters necessary to safeguard rights, with no state response to the finding [economy.publicFinances][political.rightsAndChecks].\n",
       "likelyMoves": "Continued high-seizure, low-release operations and continued reliquidation processing while the government's Federal Circuit appeal proceeds [security.internal][economy.publicFinances].\n",
-      "engagementMode": "executive-subordinate. It acts on executive priority and is audited principally from inside the executive that commands it; the significant adverse finding of the period came from outside the state entirely [security.internal].\n"
+      "engagementMode": "executive-subordinate. It acts on executive priority and is audited principally from inside the executive that commands it; the significant adverse finding of the period came from outside the state entirely [security.internal].\n",
+      "group": "security-intel"
     },
     {
       "name": "Immigration and Customs Enforcement",
@@ -4743,7 +4747,8 @@ actors_domestic_en: |-
       "resources": "Multi-year reconciliation funding that bypasses the annual cycle in which the state failed three times in eight months [capacity.steering].\n",
       "constraints": "report-silent",
       "likelyMoves": "Continued operation at the funded level; the report records no further specific action [capacity.steering].\n",
-      "engagementMode": "executive-subordinate. The report names it only as a funded instrument of executive priority [capacity.steering].\n"
+      "engagementMode": "executive-subordinate. The report names it only as a funded instrument of executive priority [capacity.steering].\n",
+      "group": "security-intel"
     },
     {
       "name": "Department of State",
@@ -4765,7 +4770,8 @@ actors_domestic_en: |-
       "resources": "Certification authority tied to appropriations conditions, the treaty-review mandate, and the diplomatic channel with Mexico [security.transnationalExposure][security.diplomacy].\n",
       "constraints": "Its brief is set by executive order and presidential memorandum rather than chosen, and further withdrawals depend on a review the memorandum says is ongoing [security.diplomacy].\n",
       "likelyMoves": "Completion of the ordered withdrawals as law permits and further findings from the continuing review [security.diplomacy].\n",
-      "engagementMode": "executive-subordinate. It is the instrument through which the withdrawal memorandum is executed rather than a source of independent position [security.diplomacy].\n"
+      "engagementMode": "executive-subordinate. It is the instrument through which the withdrawal memorandum is executed rather than a source of independent position [security.diplomacy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Department of the Treasury",
@@ -4788,7 +4794,8 @@ actors_domestic_en: |-
       "resources": "The deepest sovereign debt market in the world, reserve-currency issuance, and a reporting regime covering roughly 324,000 registered filers [economy.externalVulnerability][security.internal].\n",
       "constraints": "A net customs outflow of $25.6 billion in a single month, a non-resident investor base shifting toward price-sensitive non-bank holders, and attribution data that cannot identify the nationality of holders [economy.publicFinances][economy.externalVulnerability].\n",
       "likelyMoves": "Continued refund processing under court order and continued large-scale issuance into a market whose composition is changing [economy.publicFinances][economy.externalVulnerability].\n",
-      "engagementMode": "executive-subordinate, market-constrained. Its financing terms are set by non-resident investor behaviour the report identifies as the principal external vulnerability [economy.externalVulnerability].\n"
+      "engagementMode": "executive-subordinate, market-constrained. Its financing terms are set by non-resident investor behaviour the report identifies as the principal external vulnerability [economy.externalVulnerability].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Department of Commerce",
@@ -4807,7 +4814,8 @@ actors_domestic_en: |-
       "resources": "CHIPS and Science Act grant authority repurposed as equity consideration, as in the $5.7 billion converted in the Intel transaction [economy.politicalEconomy].\n",
       "constraints": "Positions taken are passive, carrying no board seat or governance rights in the largest case, and the only consolidated record of the portfolio is an outside compilation [economy.politicalEconomy].\n",
       "likelyMoves": "Further firm-specific transactions on the same pattern, given the portfolio's growth rate over eighteen months [economy.politicalEconomy].\n",
-      "engagementMode": "executive-subordinate, deal-making. It is the operative counterpart for firms seeking or facing federal equity participation [economy.politicalEconomy].\n"
+      "engagementMode": "executive-subordinate, deal-making. It is the operative counterpart for firms seeking or facing federal equity participation [economy.politicalEconomy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Department of Energy",
@@ -4828,7 +4836,8 @@ actors_domestic_en: |-
       "resources": "Equity-taking authority exercised in two deals and a large acquisition portfolio [economy.politicalEconomy][capacity.delivery].\n",
       "constraints": "An audited record of cost growth and schedule delay in major acquisitions [capacity.delivery].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate. The report names it as a participant in executive industrial policy and as an audited acquirer, not as an independent position-holder [economy.politicalEconomy].\n"
+      "engagementMode": "executive-subordinate. The report names it as a participant in executive industrial policy and as an audited acquirer, not as an independent position-holder [economy.politicalEconomy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Department of Transportation",
@@ -4849,7 +4858,8 @@ actors_domestic_en: |-
       "resources": "Formula-grant machinery that distributes without award decisions, and the largest share of the infrastructure appropriation [capacity.delivery].\n",
       "constraints": "Discretionary money moves slowly — awardees cite inflation, budget and schedule definition, environmental review and domestic-content requirements — and disbursement was paused from January 2025 pending priority review [capacity.delivery].\n",
       "likelyMoves": "Continued formula distribution at pace with discretionary awards remaining the slow channel [capacity.delivery].\n",
-      "engagementMode": "executive-subordinate, formula-bound. Much of what it distributes is not discretionary and therefore not negotiable [capacity.delivery].\n"
+      "engagementMode": "executive-subordinate, formula-bound. Much of what it distributes is not discretionary and therefore not negotiable [capacity.delivery].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Department of Veterans Affairs",
@@ -4870,7 +4880,8 @@ actors_domestic_en: |-
       "resources": "A dedicated health system, appropriated modernisation funding, and its own published facility-level access data [capacity.publicServices].\n",
       "constraints": "A deployment rate that leaves the modernisation more than a decade from completion at current pace, high-risk listing, and published data that sustains readings its summary figures do not [capacity.delivery][capacity.publicServices].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate, audit-exposed. Its performance is contested through published data and legislative-staff analysis rather than through negotiation [capacity.publicServices].\n"
+      "engagementMode": "executive-subordinate, audit-exposed. Its performance is contested through published data and legislative-staff analysis rather than through negotiation [capacity.publicServices].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "U.S. International Development Finance Corporation",
@@ -4889,7 +4900,8 @@ actors_domestic_en: |-
       "resources": "Development-finance instruments used to take direct ownership positions [economy.politicalEconomy].\n",
       "constraints": "report-silent",
       "likelyMoves": "Further participation in the executive's equity portfolio, which grew to thirty-seven deals in eighteen months [economy.politicalEconomy].\n",
-      "engagementMode": "executive-subordinate, deal-making [economy.politicalEconomy].\n"
+      "engagementMode": "executive-subordinate, deal-making [economy.politicalEconomy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "National Aeronautics and Space Administration",
@@ -4908,7 +4920,8 @@ actors_domestic_en: |-
       "resources": "A share of the federal procurement portfolio exceeding $750 billion [capacity.delivery].\n",
       "constraints": "Audited cost growth and schedule delay in major acquisitions [capacity.delivery].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate, audit-exposed [capacity.delivery].\n"
+      "engagementMode": "executive-subordinate, audit-exposed [capacity.delivery].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Food and Drug Administration",
@@ -4929,7 +4942,8 @@ actors_domestic_en: |-
       "resources": "Statutory inspection authority under the Food Safety Modernization Act [capacity.publicServices].\n",
       "constraints": "A binding staffing constraint that leaves it achieving about 5% of its target, and an unresolved recommendation outstanding since January 2015 [capacity.publicServices][capacity.steering].\n",
       "likelyMoves": "Continued operation at roughly 5% of target absent either resources or a proposed statutory replacement [capacity.steering].\n",
-      "engagementMode": "statutorily-mandated but under-resourced. It cannot deliver the mandate and has not sought to change it, so the gap persists rather than being negotiated [capacity.steering].\n"
+      "engagementMode": "statutorily-mandated but under-resourced. It cannot deliver the mandate and has not sought to change it, so the gap persists rather than being negotiated [capacity.steering].\n",
+      "group": "regulators"
     },
     {
       "name": "Federal Aviation Administration",
@@ -4948,7 +4962,8 @@ actors_domestic_en: |-
       "resources": "report-silent",
       "constraints": "A majority of its air traffic control systems assessed as unsustainable or potentially so [capacity.delivery].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate, audit-exposed. The report names it as a documented delivery failure rather than as a negotiating counterpart [capacity.delivery].\n"
+      "engagementMode": "executive-subordinate, audit-exposed. The report names it as a documented delivery failure rather than as a negotiating counterpart [capacity.delivery].\n",
+      "group": "regulators"
     },
     {
       "name": "Federal Bureau of Investigation (including the dissolved Foreign Influence Task Force)",
@@ -4970,7 +4985,8 @@ actors_domestic_en: |-
       "resources": "Suspicious-activity reporting from roughly 324,000 filers, and priority-threat targeting on cartels, Chinese laundering networks, fentanyl and terrorism financing [security.internal].\n",
       "constraints": "The dissolution of its foreign-influence task force at the same moment the intelligence services were documenting interference operations in detail [security.transnationalExposure][security.posture].\n",
       "likelyMoves": "Continued high-volume financial-crime enforcement; the report records no replacement of the dissolved influence function [security.internal][security.transnationalExposure].\n",
-      "engagementMode": "executive-subordinate. Federal law-enforcement agencies answer to the President through the statutory power to appoint and remove their heads rather than through Article II command [political.stabilityDrivers].\n"
+      "engagementMode": "executive-subordinate. Federal law-enforcement agencies answer to the President through the statutory power to appoint and remove their heads rather than through Article II command [political.stabilityDrivers].\n",
+      "group": "security-intel"
     },
     {
       "name": "Financial Crimes Enforcement Network",
@@ -4989,7 +5005,8 @@ actors_domestic_en: |-
       "resources": "A mandatory reporting regime of unusual scale and a beneficial-ownership requirement in effect since 1 January 2024 [security.internal].\n",
       "constraints": "Illicit finance is assessed rather than counted, so the regime's coverage cannot be measured against the flows it targets [security.internal].\n",
       "likelyMoves": "Continued growth in filing volume and continued enforcement partnership with the federal police [security.internal].\n",
-      "engagementMode": "statutorily-mandated reporting counterpart for financial institutions [security.internal].\n"
+      "engagementMode": "statutorily-mandated reporting counterpart for financial institutions [security.internal].\n",
+      "group": "regulators"
     },
     {
       "name": "Office of the Director of National Intelligence and the Intelligence Community",
@@ -5010,7 +5027,8 @@ actors_domestic_en: |-
       "resources": "The annual threat assessment, statutory coordination authority, and community-wide collection [security.transnationalExposure].\n",
       "constraints": "Its own reorganisation removed the statutory foreign-influence coordinating body and the election-threats function it housed, which opposition committee members say has paralysed production on election threats [security.transnationalExposure].\n",
       "likelyMoves": "Continued annual threat assessment; the report records no replacement of the dissolved influence-coordination function [security.transnationalExposure][security.posture].\n",
-      "engagementMode": "executive-subordinate. Its head announced the dissolution as part of an executive reorganisation, and legally required congressional briefings have gone unanswered [security.transnationalExposure].\n"
+      "engagementMode": "executive-subordinate. Its head announced the dissolution as part of an executive reorganisation, and legally required congressional briefings have gone unanswered [security.transnationalExposure].\n",
+      "group": "security-intel"
     },
     {
       "name": "Foreign Malign Influence Center (with the Election Threats Executive)",
@@ -5031,7 +5049,8 @@ actors_domestic_en: |-
       "resources": "Statutory basis in 50 U.S.C. § 3059; none operative, the body having been dissolved [security.transnationalExposure].\n",
       "constraints": "It was dissolved by executive reorganisation notwithstanding its statutory creation, and no successor is recorded [security.transnationalExposure][security.posture].\n",
       "likelyMoves": "None as an actor; the live question the report leaves open is whether the statutory mandate is revived before the 2026 midterms [security.transnationalExposure].\n",
-      "engagementMode": "dissolved / not-engageable. The report records the statutory body as no longer operating [security.transnationalExposure].\n"
+      "engagementMode": "dissolved / not-engageable. The report records the statutory body as no longer operating [security.transnationalExposure].\n",
+      "group": "security-intel"
     },
     {
       "name": "Council on Environmental Quality",
@@ -5050,7 +5069,8 @@ actors_domestic_en: |-
       "resources": "Residual convening and reporting capacity — it published the January 2025 timeline update covering 1,903 statements — but no government-wide rulemaking authority [capacity.approvals].\n",
       "constraints": "Its regulatory foundation was rescinded by executive order, and agencies have since issued their own procedures [capacity.approvals].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate, hollowed. The report describes a body whose framework-setting function was removed rather than reassigned [capacity.approvals].\n"
+      "engagementMode": "executive-subordinate, hollowed. The report describes a body whose framework-setting function was removed rather than reassigned [capacity.approvals].\n",
+      "group": "regulators"
     },
     {
       "name": "Permitting Council (executive director)",
@@ -5069,7 +5089,8 @@ actors_domestic_en: |-
       "resources": "Statutory authority at 42 U.S.C. § 4370m requiring lead agencies to post target completion dates, and an eight-value status field across covered projects [capacity.approvals].\n",
       "constraints": "Inclusion on the dashboard implies no endorsement and creates no presumption of approval, and the dashboard publishes no status breakdown for the full covered set [capacity.approvals].\n",
       "likelyMoves": "Continued publication of designated mineral projects as directed, tracking the policy skew visible in the status field [capacity.approvals].\n",
-      "engagementMode": "statutorily-mandated transparency body, executive-directed as to what it lists [capacity.approvals].\n"
+      "engagementMode": "statutorily-mandated transparency body, executive-directed as to what it lists [capacity.approvals].\n",
+      "group": "regulators"
     },
     {
       "name": "Federal Communications Commission",
@@ -5089,7 +5110,8 @@ actors_domestic_en: |-
       "resources": "Licensing and investigative authority over broadcasters [political.rightsAndChecks].\n",
       "constraints": "Constitutional press protection and litigation exposure, in a system the same body credits with continuing to operate through the courts [political.rightsAndChecks].\n",
       "likelyMoves": "Continued content-related investigations, given the pattern the treaty body records [political.rightsAndChecks].\n",
-      "engagementMode": "hijack-exposed. It is a commission-style agency of the type the apex court's June 2026 removal ruling is read as reaching, and the report describes it acting in line with administration preference on editorial content [political.rightsAndChecks][political.constitutionalSubstrate].\n"
+      "engagementMode": "hijack-exposed. It is a commission-style agency of the type the apex court's June 2026 removal ruling is read as reaching, and the report describes it acting in line with administration preference on editorial content [political.rightsAndChecks][political.constitutionalSubstrate].\n",
+      "group": "regulators"
     },
     {
       "name": "Federal Trade Commission",
@@ -5112,7 +5134,8 @@ actors_domestic_en: |-
       "resources": "Its statutory enforcement mandate remains; the insulation around its commissioners does not [political.constitutionalSubstrate].\n",
       "constraints": "Commissioners are now removable by the President, so the agency's positions are exposed to executive preference [political.powerStructure][political.constitutionalSubstrate].\n",
       "likelyMoves": "Alignment of commission positions with executive preference is the direction the loss of removal protection implies; the report records no specific subsequent action [political.constitutionalSubstrate].\n",
-      "engagementMode": "hijack-exposed. The report describes the removal of the statutory insulation that previously made it statutorily-independent, and identifies this as the template for other commission-style agencies [political.constitutionalSubstrate][political.stabilityDrivers].\n"
+      "engagementMode": "hijack-exposed. The report describes the removal of the statutory insulation that previously made it statutorily-independent, and identifies this as the template for other commission-style agencies [political.constitutionalSubstrate][political.stabilityDrivers].\n",
+      "group": "regulators"
     },
     {
       "name": "Federal Reserve (Board of Governors, Federal Open Market Committee, Governor Lisa Cook)",
@@ -5138,7 +5161,8 @@ actors_domestic_en: |-
       "resources": "Rate-setting authority, ample reserves maintained in the banking system, and a judicial holding that cause for removal must reflect the institution's particular history and role [political.shockAbsorbers][political.constitutionalSubstrate].\n",
       "constraints": "Inflation at 3.5% with an energy index up 15.7% narrows room to ease; internal dissent runs toward tightening; and its insulation now rests on a five-to-four holding [economy.publicFinances][political.shockAbsorbers][political.constitutionalSubstrate].\n",
       "likelyMoves": "Holding the target range while inflation remains above goal, with the direction of any surprise skewed by three dissents favouring a rise [political.shockAbsorbers].\n",
-      "engagementMode": "statutorily-independent, hijack-tested. The report describes an attempted removal that the apex court blocked by a single vote, so independence here is judicially held rather than structurally unquestioned [political.constitutionalSubstrate][political.powerStructure].\n"
+      "engagementMode": "statutorily-independent, hijack-tested. The report describes an attempted removal that the apex court blocked by a single vote, so independence here is judicially held rather than structurally unquestioned [political.constitutionalSubstrate][political.powerStructure].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Government Accountability Office",
@@ -5163,7 +5187,8 @@ actors_domestic_en: |-
       "resources": "A biennial rating framework across 38 areas with five criteria, statutory access to agency data, and a recorded benefit stream that gives its findings standing [capacity.steering].\n",
       "constraints": "It can diagnose but not compel: three areas regressed, twenty are listed in part for skills gaps while federal employment was cut around 13%, and a recommendation from January 2015 remains unanswered [capacity.steering][capacity.publicServices].\n",
       "likelyMoves": "Continued biennial reassessment and continued documentation of the regressing areas [capacity.steering].\n",
-      "engagementMode": "statutorily-independent. It reports on the executive rather than bargaining with it, and its leverage runs through legislative attention it does not control [capacity.steering].\n"
+      "engagementMode": "statutorily-independent. It reports on the executive rather than bargaining with it, and its leverage runs through legislative attention it does not control [capacity.steering].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Congressional Budget Office",
@@ -5189,7 +5214,8 @@ actors_domestic_en: |-
       "resources": "Statutory scorekeeping role, distributional analysis capacity, and baseline projections that the report treats as the reference for fiscal claims [economy.publicFinances].\n",
       "constraints": "Its projections are overtaken by executive action outside the legislative cycle — the tariff regime changed twice after publication — and its findings did not prevent enactment of a bill raising deficits by $4.7 trillion while deficit reduction was declared [economy.realEconomy][capacity.steering].\n",
       "likelyMoves": "Revised baselines incorporating the Section 301 regime, which carries no statutory expiry and therefore becomes a recurring revenue line [economy.publicFinances].\n",
-      "engagementMode": "statutorily-independent. It scores rather than bargains, and the report uses it as the measurement against which announced priorities are compared [capacity.steering].\n"
+      "engagementMode": "statutorily-independent. It scores rather than bargains, and the report uses it as the measurement against which announced priorities are compared [capacity.steering].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Congressional Research Service",
@@ -5213,7 +5239,8 @@ actors_domestic_en: |-
       "resources": "Non-partisan standing such that the report adopts its readings of the scope of apex-court rulings [political.powerStructure][political.constitutionalSubstrate].\n",
       "constraints": "Advisory only; its readings of the removal rulings describe a reallocation it has no part in [political.constitutionalSubstrate].\n",
       "likelyMoves": "Continued analysis of the doctrinal reallocation and of recurring appropriations failure [political.shockAbsorbers].\n",
-      "engagementMode": "statutorily-independent, advisory [political.powerStructure].\n"
+      "engagementMode": "statutorily-independent, advisory [political.powerStructure].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Supreme Court of the United States (Chief Justice Roberts)",
@@ -5242,7 +5269,8 @@ actors_domestic_en: |-
       "resources": "Judicial review exercised since Marbury v. Madison, and final say over the statutory triggers for tariffs, removals and force deployment [political.rightsAndChecks][political.constitutionalSubstrate].\n",
       "constraints": "It acts only on cases brought to it, several 2026 rulings turned on single votes, and it removed itself from one question (protected-status terminations) rather than deciding it [political.constitutionalSubstrate].\n",
       "likelyMoves": "Further case-by-case resolution of executive-power questions, including the open question of whether protecting federal property and personnel constitutes executing the law [political.shockAbsorbers][political.constitutionalSubstrate].\n",
-      "engagementMode": "judicial-deference. The report treats its rulings as settling contests the political branches could not, with independence observable in outcome — the same court ruled for the President on one removal and against him on another the same day [political.rightsAndChecks].\n"
+      "engagementMode": "judicial-deference. The report treats its rulings as settling contests the political branches could not, with independence observable in outcome — the same court ruled for the President on one removal and against him on another the same day [political.rightsAndChecks].\n",
+      "group": "judiciary"
     },
     {
       "name": "Court of International Trade",
@@ -5261,7 +5289,8 @@ actors_domestic_en: |-
       "resources": "Specialised jurisdiction over customs matters and the reliquidation remedy [economy.publicFinances].\n",
       "constraints": "Its reach over importers who never sued is under appeal in the Federal Circuit, and finally liquidated entries are being processed only for importers that have filed suit there [economy.publicFinances].\n",
       "likelyMoves": "Continued supervision of the refund process pending the appeal [economy.publicFinances].\n",
-      "engagementMode": "judicial-deference [economy.publicFinances].\n"
+      "engagementMode": "judicial-deference [economy.publicFinances].\n",
+      "group": "judiciary"
     },
     {
       "name": "U.S. Court of Appeals for the Federal Circuit",
@@ -5280,7 +5309,8 @@ actors_domestic_en: |-
       "resources": "Appellate jurisdiction over the trade court's reliquidation orders [economy.publicFinances].\n",
       "constraints": "report-silent",
       "likelyMoves": "A ruling on whether the refund order may reach non-suing importers, which determines the size of a refund exposure already around $100 billion paid of roughly $166 billion collected [economy.publicFinances].\n",
-      "engagementMode": "judicial-deference [economy.publicFinances].\n"
+      "engagementMode": "judicial-deference [economy.publicFinances].\n",
+      "group": "judiciary"
     },
     {
       "name": "U.S. Court of Appeals for the Fifth Circuit",
@@ -5300,7 +5330,8 @@ actors_domestic_en: |-
       "resources": "Appellate jurisdiction over the states in its circuit [political.constitutionalSubstrate].\n",
       "constraints": "Its reading of federal preemption of state ballot-receipt deadlines was reversed [political.constitutionalSubstrate].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "judicial-deference [political.constitutionalSubstrate].\n"
+      "engagementMode": "judicial-deference [political.constitutionalSubstrate].\n",
+      "group": "judiciary"
     },
     {
       "name": "House of Representatives (including the Rules Committee and the discharge petition route)",
@@ -5323,7 +5354,8 @@ actors_domestic_en: |-
       "resources": "Origination of revenue measures, the reconciliation route used twice since 2025, and control of referral, leadership scheduling and the Rules Committee [political.powerStructure].\n",
       "constraints": "A vacancy in Georgia's thirteenth district unresolved since 22 April with a runoff on 25 August, no mechanism for rapid replacement, and a demonstrated inability to fund the state on schedule three times in eight months [political.powerStructure][political.shockAbsorbers].\n",
       "likelyMoves": "Continued use of reconciliation for major enactments and continued discharge activity at historically high rates [political.powerStructure][political.stabilityDrivers].\n",
-      "engagementMode": "veto-holder, at a threshold rather than a seat count. Nothing passes without 218, and the same number opens the discharge route around leadership [political.powerStructure].\n"
+      "engagementMode": "veto-holder, at a threshold rather than a seat count. Nothing passes without 218, and the same number opens the discharge route around leadership [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Senate",
@@ -5348,7 +5380,8 @@ actors_domestic_en: |-
       "resources": "Confirmation of judges and executive officers by simple majority, Rule XXII, reconciliation, and rapid vacancy repair through gubernatorial appointment [political.powerStructure][political.rightsAndChecks].\n",
       "constraints": "A governing majority of 53 that falls seven short of the sixty needed to close debate on ordinary legislation, so unified control cannot enact through regular order [political.powerStructure][political.shockAbsorbers].\n",
       "likelyMoves": "Continued reliance on reconciliation and nominations, with the pay-withholding rule taking effect only after the midterms [political.powerStructure].\n",
-      "engagementMode": "veto-holder. The sixty-vote threshold, not the partisan division, determines what can be enacted [political.powerStructure].\n"
+      "engagementMode": "veto-holder. The sixty-vote threshold, not the partisan division, determines what can be enacted [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Republican Party (congressional majority)",
@@ -5371,7 +5404,8 @@ actors_domestic_en: |-
       "resources": "Unified control of the elected branches, two completed reconciliation enactments, and a supportive partisan base whose institutional trust tracks its holding power [political.powerStructure][society.cohesion].\n",
       "constraints": "Elite cohesion is measurably imperfect — four discharge petitions reached 218 in a single session, each necessarily carrying majority-party signatures — and the cloture threshold blocks ordinary legislation [political.powerStructure][political.stabilityDrivers].\n",
       "likelyMoves": "Further reconciliation enactments as settled practice rather than exception [political.powerStructure].\n",
-      "engagementMode": "negotiable / dealable, but only within thresholds it cannot change unilaterally [political.powerStructure].\n"
+      "engagementMode": "negotiable / dealable, but only within thresholds it cannot change unilaterally [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Democratic Party (congressional minority; Hakeem Jeffries and Chuck Schumer)",
@@ -5392,7 +5426,8 @@ actors_domestic_en: |-
       "resources": "A durable cloture veto, ranking committee positions, and scheduled elections its standing in which is not in question [political.powerStructure].\n",
       "constraints": "No cloture veto over nominations or reconciliation, and six seats short of the discharge threshold in the House [political.powerStructure].\n",
       "likelyMoves": "Continued denial of cloture on ordinary legislation and continued use of minority staff analysis and ranking-member correspondence as substitutes for floor power [political.powerStructure].\n",
-      "engagementMode": "veto-holder in the Senate on ordinary legislation; without equivalent leverage in the House or over nominations and reconciliation [political.powerStructure].\n"
+      "engagementMode": "veto-holder in the Senate on ordinary legislation; without equivalent leverage in the House or over nominations and reconciliation [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Independent senators Angus King and Bernie Sanders",
@@ -5412,7 +5447,8 @@ actors_domestic_en: |-
       "resources": "Two votes that carry the minority from 45 to 47, six above the cloture-denial threshold [political.powerStructure].\n",
       "constraints": "report-silent",
       "likelyMoves": "Continued caucusing with the minority, which the report treats as the operative fact [political.powerStructure].\n",
-      "engagementMode": "negotiable / dealable individually, given that the minority's margin above 41 is six votes [political.powerStructure].\n"
+      "engagementMode": "negotiable / dealable individually, given that the minority's margin above 41 is six votes [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Senate Committee on Veterans' Affairs (minority staff)",
@@ -5431,7 +5467,8 @@ actors_domestic_en: |-
       "resources": "Committee standing, weekly access to published facility-level data, and the credibility of working from the department's own series [capacity.publicServices].\n",
       "constraints": "Minority status and a non-representative sample, both of which the report flags [capacity.publicServices].\n",
       "likelyMoves": "Continued weekly tracking and publication of divergences [capacity.publicServices].\n",
-      "engagementMode": "oversight counterpart without compulsion. It can publish but not compel [capacity.publicServices].\n"
+      "engagementMode": "oversight counterpart without compulsion. It can publish but not compel [capacity.publicServices].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Ranking members of the House and Senate intelligence committees",
@@ -5450,7 +5487,8 @@ actors_domestic_en: |-
       "resources": "Statutory briefing entitlements and the standing to place a contested claim on the record [security.transnationalExposure].\n",
       "constraints": "Their requests have gone unanswered and they are in the minority; what is not in dispute is only that the statutory body no longer operates [security.transnationalExposure].\n",
       "likelyMoves": "Continued correspondence and public pressure as the midterms approach [security.transnationalExposure].\n",
-      "engagementMode": "oversight counterpart without compulsion. The report records the entitlement and the non-response together [security.transnationalExposure].\n"
+      "engagementMode": "oversight counterpart without compulsion. The report records the entitlement and the non-response together [security.transnationalExposure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Government of South Carolina (Governor Henry McMaster)",
@@ -5469,7 +5507,8 @@ actors_domestic_en: |-
       "resources": "Gubernatorial appointment power that fills a Senate seat within days [political.powerStructure].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. The report names it as a state executive exercising an appointment power, not as a contesting party [political.powerStructure].\n"
+      "engagementMode": "negotiable / dealable. The report names it as a state executive exercising an appointment power, not as a contesting party [political.powerStructure].\n",
+      "group": "states-territories"
     },
     {
       "name": "Government of Illinois (the Governor)",
@@ -5494,7 +5533,8 @@ actors_domestic_en: |-
       "resources": "Command of the Guard under state active duty and Title 32, litigation standing, and a favourable reading of § 12406(3) by the apex court [political.stabilityDrivers][political.constitutionalSubstrate].\n",
       "constraints": "The Court decided on the statutory trigger without deciding whether protecting federal property and personnel constitutes executing the law, so the underlying authority question remains open [political.shockAbsorbers].\n",
       "likelyMoves": "Renewed litigation if federalisation is attempted on the undecided ground [political.shockAbsorbers][political.constitutionalSubstrate].\n",
-      "engagementMode": "veto-holder over Guard mobilisation in the first instance, its refusal under Title 32 being what triggered the federalisation attempt [political.stabilityDrivers].\n"
+      "engagementMode": "veto-holder over Guard mobilisation in the first instance, its refusal under Title 32 being what triggered the federalisation attempt [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "Government of California (the Governor)",
@@ -5514,7 +5554,8 @@ actors_domestic_en: |-
       "resources": "Litigation standing and parallel injunctive relief [political.stabilityDrivers].\n",
       "constraints": "The same open question left undecided in the Illinois ruling applies [political.shockAbsorbers].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "veto-holder in the same posture as Illinois, established by parallel injunction [political.stabilityDrivers].\n"
+      "engagementMode": "veto-holder in the same posture as Illinois, established by parallel injunction [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "Government of Oregon (the Governor)",
@@ -5534,7 +5575,8 @@ actors_domestic_en: |-
       "resources": "Litigation standing and parallel injunctive relief [political.stabilityDrivers].\n",
       "constraints": "The same open question left undecided in the Illinois ruling applies [political.shockAbsorbers].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "veto-holder in the same posture as Illinois, established by parallel injunction [political.stabilityDrivers].\n"
+      "engagementMode": "veto-holder in the same posture as Illinois, established by parallel injunction [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "State of Texas (Texas National Guard)",
@@ -5556,7 +5598,8 @@ actors_domestic_en: |-
       "resources": "A Guard force large enough to be federalised for out-of-state deployment [political.stabilityDrivers].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. Unlike Illinois, California and Oregon, the report records no objection or litigation from this state [political.stabilityDrivers].\n"
+      "engagementMode": "negotiable / dealable. Unlike Illinois, California and Oregon, the report records no objection or litigation from this state [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "State of Louisiana",
@@ -5576,7 +5619,8 @@ actors_domestic_en: |-
       "resources": "Districting authority under state law, now subject to a higher federal threshold for vote-dilution challenge [political.constitutionalSubstrate].\n",
       "constraints": "Its map was struck as a racial gerrymander even as the standard for challenging dilution was raised [political.constitutionalSubstrate].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, with the federal constraint on its districting now narrower [political.constitutionalSubstrate].\n"
+      "engagementMode": "negotiable / dealable, with the federal constraint on its districting now narrower [political.constitutionalSubstrate].\n",
+      "group": "states-territories"
     },
     {
       "name": "District of Columbia (municipal government and Metropolitan Police Department)",
@@ -5601,7 +5645,8 @@ actors_domestic_en: |-
       "resources": "Home-rule municipal government and presidential electors capped at the number held by the least populous state [political.constitutionalSubstrate].\n",
       "constraints": "Presidential direction of its police force rests on an authority peculiar to the District, resting neither on Article II nor on Title 10, and Congress legislates for it [security.internal][political.stateStructure].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "hijack-exposed by construction. The report describes a municipal force directed by the President under a statutory provision unique to the District, with no state-level command to interpose [security.internal][political.stabilityDrivers].\n"
+      "engagementMode": "hijack-exposed by construction. The report describes a municipal force directed by the President under a statutory provision unique to the District, with no state-level command to interpose [security.internal][political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "National Guard (Army and Air National Guard, including Illinois and Texas units)",
@@ -5627,7 +5672,8 @@ actors_domestic_en: |-
       "resources": "Over 430,000 personnel across two components and three distinct command statuses [security.military][political.stabilityDrivers].\n",
       "constraints": "Under Title 10 it falls under the Posse Comitatus Act, and the statutory trigger for federalisation now requires that the President be unable to execute federal law with the regular forces [political.stabilityDrivers][political.constitutionalSubstrate].\n",
       "likelyMoves": "Availability for further domestic missions contingent on which command status is invoked; no episode in the period involved forces declining lawful orders [political.stabilityDrivers][security.internal].\n",
-      "engagementMode": "contested-command. The report describes command as the live variable rather than loyalty, with the courts rather than the force supplying the answer [political.stabilityDrivers][security.internal].\n"
+      "engagementMode": "contested-command. The report describes command as the live variable rather than loyalty, with the courts rather than the force supplying the answer [political.stabilityDrivers][security.internal].\n",
+      "group": "military"
     },
     {
       "name": "United States armed forces (Army, Navy, Air Force, Marine Corps, Space Force)",
@@ -5651,7 +5697,8 @@ actors_domestic_en: |-
       "resources": "Five services, 760,210 reserve-component personnel, 128 overseas bases, and the largest military expenditure in the world at $954 billion [security.military].\n",
       "constraints": "A 7.5% real-terms spending fall in one year and a share of world spending down 4.3 points, an annually set end-strength ceiling, and host-nation consent that can be withdrawn [security.military].\n",
       "likelyMoves": "Continued blockade enforcement and hemispheric strike operations at rising rates on falling obligations [situation][security.diplomacy].\n",
-      "engagementMode": "executive-subordinate under Article II command; loyalty was not the variable in question during the period [political.stabilityDrivers].\n"
+      "engagementMode": "executive-subordinate under Article II command; loyalty was not the variable in question during the period [political.stabilityDrivers].\n",
+      "group": "military"
     },
     {
       "name": "United States Army North",
@@ -5672,7 +5719,8 @@ actors_domestic_en: |-
       "resources": "Operational command of federalised forces in the homeland mission [security.internal].\n",
       "constraints": "Its mission depended on federalisation authority the courts curtailed, and it operated under a civilian lead agency [security.internal][political.stabilityDrivers].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "executive-subordinate [security.internal].\n"
+      "engagementMode": "executive-subordinate [security.internal].\n",
+      "group": "military"
     },
     {
       "name": "United States Central Command",
@@ -5692,7 +5740,8 @@ actors_domestic_en: |-
       "resources": "Naval interdiction capability reaching third-country commercial shipping [situation].\n",
       "constraints": "Interdiction of neutral shipping gives uninvolved states a direct interest in the terms of the conflict [security.diplomacy].\n",
       "likelyMoves": "Continued interdiction while the blockade remains in force and the war is unresolved [situation].\n",
-      "engagementMode": "executive-subordinate [situation].\n"
+      "engagementMode": "executive-subordinate [situation].\n",
+      "group": "military"
     },
     {
       "name": "Federally recognised tribal nations (575 entities, including the Lumbee Tribe of North Carolina)",
@@ -5716,7 +5765,8 @@ actors_domestic_en: |-
       "resources": "Inherent sovereignty recognised in a doctrinal line from the Marshall Trilogy through McGirt and Brackeen, statutory recognition procedures, and eligibility for infrastructure grants alongside states and territories [political.constitutionalSubstrate][capacity.delivery].\n",
       "constraints": "Congressional plenary power over the relationship, state concurrent jurisdiction after Castro-Huerta, and federal programmes serving them classed as high-risk [political.constitutionalSubstrate][capacity.publicServices].\n",
       "likelyMoves": "Continued recognition additions by the three available routes — administrative, statutory and judicial [political.constitutionalSubstrate].\n",
-      "engagementMode": "sovereign counterpart, subject to congressional plenary power. The report locates their law outside both federal and state orders while recording that Congress can qualify it [political.constitutionalSubstrate].\n"
+      "engagementMode": "sovereign counterpart, subject to congressional plenary power. The report locates their law outside both federal and state orders while recording that Congress can qualify it [political.constitutionalSubstrate].\n",
+      "group": "tribal-nations"
     },
     {
       "name": "The five inhabited unincorporated territories (Puerto Rico, Guam, U.S. Virgin Islands, Northern Mariana Islands, American Samoa)",
@@ -5741,7 +5791,8 @@ actors_domestic_en: |-
       "resources": "Territorial governments and access to federal disaster assistance, as with Rota's approval for all categories of public assistance [territory.climate][political.stateStructure].\n",
       "constraints": "No presidential vote, no voting congressional representation, selective application of the Constitution, and cyclonic exposure the national disaster accounting does not reach [political.constitutionalSubstrate][territory.climate].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "engaged through Congress's plenary authority rather than through representation — the report frames the relationship as a live colonial legacy running inward [political.constitutionalSubstrate][capacity.inheritedTerrain].\n"
+      "engagementMode": "engaged through Congress's plenary authority rather than through representation — the report frames the relationship as a live colonial legacy running inward [political.constitutionalSubstrate][capacity.inheritedTerrain].\n",
+      "group": "states-territories"
     },
     {
       "name": "Intel Corporation",
@@ -5760,7 +5811,8 @@ actors_domestic_en: |-
       "resources": "$8.9 billion in equity consideration, a governance structure the state agreed not to contest, and strategic status in semiconductor policy [economy.politicalEconomy].\n",
       "constraints": "A warrant that penalises divestiture of the foundry majority, and dependence on a state that is simultaneously its shareholder and its policy-maker [economy.politicalEconomy].\n",
       "likelyMoves": "Retention of foundry majority ownership, which is the condition on which the warrant does not trigger [economy.politicalEconomy].\n",
-      "engagementMode": "negotiable / dealable, firm-specific. The report describes alignment restructured company-by-company rather than by sectoral rule [political.stabilityDrivers][economy.politicalEconomy].\n"
+      "engagementMode": "negotiable / dealable, firm-specific. The report describes alignment restructured company-by-company rather than by sectoral rule [political.stabilityDrivers][economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "MP Materials",
@@ -5780,7 +5832,8 @@ actors_domestic_en: |-
       "resources": "A price floor, a ten-year full-output purchase commitment, and the largest shareholder being the department that also buys the product [economy.politicalEconomy].\n",
       "constraints": "Its economics are now bound to a single counterparty, and the underlying dependence — China supplying roughly 70% of rare earths — is a supply position it does not yet displace [economy.politicalEconomy][territory.minerals].\n",
       "likelyMoves": "Construction of the second magnet plant whose entire output is pre-committed [economy.politicalEconomy].\n",
-      "engagementMode": "negotiable / dealable, firm-specific, with the state as shareholder, price-setter and customer simultaneously [economy.politicalEconomy].\n"
+      "engagementMode": "negotiable / dealable, firm-specific, with the state as shareholder, price-setter and customer simultaneously [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Hyperscaler technology firms (Meta, Microsoft, Amazon, Alphabet)",
@@ -5801,7 +5854,8 @@ actors_domestic_en: |-
       "resources": "Capital expenditure larger than most national budgets, record profits, and demand weight sufficient to lift national electricity consumption growth [economy.politicalEconomy][territory.metabolism].\n",
       "constraints": "Electricity demand growth of 2.1% a year driven by data centres runs into an ageing physical distribution network, and firm-specific federal policy has become the operative alignment mechanism [territory.metabolism][political.stabilityDrivers].\n",
       "likelyMoves": "Execution of roughly $725 billion in announced 2026 capital expenditure, which the budget office already incorporates into projected productivity growth [economy.politicalEconomy][capacity.productivity].\n",
-      "engagementMode": "negotiable / dealable, firm-specific. The report describes export-restriction relief traded for revenue levies on a company-by-company basis [political.stabilityDrivers].\n"
+      "engagementMode": "negotiable / dealable, firm-specific. The report describes export-restriction relief traded for revenue levies on a company-by-company basis [political.stabilityDrivers].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Health-care corporate majors (UnitedHealth Group, CVS Health, McKesson, Cencora)",
@@ -5821,7 +5875,8 @@ actors_domestic_en: |-
       "resources": "Revenue scale within a system consuming 17.2% of gross domestic product, and a top-ten weighting that makes health care the defining sector of the corporate structure [economy.politicalEconomy][capacity.publicServices].\n",
       "constraints": "A contracting public programme — Medicaid and the Children's Health Insurance Program down 5 million enrollees over a year, with work requirements from January 2027 [capacity.publicServices].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. The report names them for policy weight in the private structure without recording a specific engagement [economy.politicalEconomy].\n"
+      "engagementMode": "negotiable / dealable. The report names them for policy weight in the private structure without recording a specific engagement [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Defence prime contractors (Lockheed Martin, RTX, Boeing, General Dynamics, Northrop Grumman)",
@@ -5842,7 +5897,8 @@ actors_domestic_en: |-
       "resources": "Standing positions on the top-100 contractor list within a procurement portfolio exceeding $750 billion [economy.politicalEconomy][capacity.delivery].\n",
       "constraints": "Weapon systems acquisition regressed between the 2023 and 2025 high-risk assessments, and military expenditure fell 7.5% in real terms in 2025 [capacity.delivery][security.military].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable through contracting rather than through policy bargaining [economy.politicalEconomy].\n"
+      "engagementMode": "negotiable / dealable through contracting rather than through policy bargaining [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Other Fortune 500 revenue leaders named (Walmart, Apple, Berkshire Hathaway, ExxonMobil)",
@@ -5862,7 +5918,8 @@ actors_domestic_en: |-
       "resources": "Revenue scale within the largest bloc of the private structure [economy.politicalEconomy].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. The report attaches no engagement to them beyond their ranking [economy.politicalEconomy].\n"
+      "engagementMode": "report-silent. The report attaches no engagement to them beyond their ranking [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Organised labour (unions; no individual body named in the report)",
@@ -5882,7 +5939,8 @@ actors_domestic_en: |-
       "resources": "14.7 million members concentrated in the public sector, where density remains above 30% [economy.politicalEconomy].\n",
       "constraints": "Near-absence from the sectors where corporate revenue and profit are concentrated, and a density halved over four decades [economy.politicalEconomy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable but structurally weak. The report's own term is \"the weak counterparty\" [economy.politicalEconomy].\n"
+      "engagementMode": "negotiable / dealable but structurally weak. The report's own term is \"the weak counterparty\" [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "American Society of Civil Engineers",
@@ -5902,7 +5960,8 @@ actors_domestic_en: |-
       "resources": "A quadrennial assessment across 18 categories that supplies the reference figure against which appropriated infrastructure money is measured [capacity.delivery].\n",
       "constraints": "Its advocacy orientation is disclosed in the report, which qualifies the weight of its estimate [capacity.delivery].\n",
       "likelyMoves": "A further quadrennial grade on the same cycle [capacity.delivery].\n",
-      "engagementMode": "negotiable / dealable as an advocacy counterpart; it holds no statutory role [capacity.delivery].\n"
+      "engagementMode": "negotiable / dealable as an advocacy counterpart; it holds no statutory role [capacity.delivery].\n",
+      "group": "corporate-labour-civil"
     }
   ]
 actors_domestic_fr: |-
@@ -5942,7 +6001,8 @@ actors_domestic_fr: |-
       "resources": "L'autorité de commandement de l'article II, le pouvoir de révocation tel qu'élargi dans les organismes collégiaux, les décrets et proclamations, des majorités de réconciliation dans les deux chambres, l'autorité issue du Home Rule Act pour le district de Columbia, et des lois de recours commercial sans plafond de taux [political.powerStructure][political.constitutionalSubstrate][situation].\n",
       "constraints": "Le seuil de 60 voix pour clore le débat sur une loi ordinaire, une majorité de 218 sièges à la Chambre avec quatre vacances, un contrôle judiciaire qui a tranché contre lui sur la Réserve fédérale, la citoyenneté par droit du sol et la fédéralisation de la Garde, et une trajectoire budgétaire où le service de la dette est la dépense qui croît le plus vite [political.powerStructure][political.constitutionalSubstrate][political.shockAbsorbers].\n",
       "likelyMoves": "Recours continu à la réconciliation, aux tarifs de recours commercial et à l'action exécutive plutôt qu'à la procédure ordinaire; nouveaux retraits au terme de la revue en cours; poursuite des opérations létales dans l'hémisphère occidental et du blocus de l'Iran [capacity.steering][security.diplomacy][situation].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, de façon transactionnelle. Le rapport décrit des mécanismes d'alignement établis entreprise par entreprise et un partage du fardeau transactionnel plutôt qu'institutionnel : les contreparties traitent directement avec l'exécutif plutôt que par des cadres permanents [political.stabilityDrivers][security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, de façon transactionnelle. Le rapport décrit des mécanismes d'alignement établis entreprise par entreprise et un partage du fardeau transactionnel plutôt qu'institutionnel : les contreparties traitent directement avec l'exécutif plutôt que par des cadres permanents [political.stabilityDrivers][security.diplomacy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le département de la Défense (nommé département de la Guerre dans ses publications)",
@@ -5972,7 +6032,8 @@ actors_domestic_fr: |-
       "resources": "954 milliards de dollars de dépenses en 2025 (33 % du total mondial), cinq armées et leurs composantes de réserve, le réseau de bases outre-mer, un portefeuille d'approvisionnement de plus de 750 milliards, et des instruments de participation et d'achat garanti utilisés auprès de fournisseurs nommés [security.military][economy.politicalEconomy][capacity.delivery].\n",
       "constraints": "Une baisse réelle de 7,5 % des dépenses en une seule année, un plafond d'effectifs autorisé fixé annuellement par le Congrès, un consentement des pays hôtes révocable, et un bilan vérifié de dépassements de coûts et de retards dans l'armement et les technologies de l'information [security.military][capacity.delivery].\n",
       "likelyMoves": "Poursuite d'opérations létales en régime permanent dans les Caraïbes et le Pacifique oriental, à un rythme de frappes croissant sur des engagements financiers décroissants; appui militaire continu aux opérations frontalières; nouveaux investissements directs dans des fournisseurs de minéraux [situation][security.transnationalExposure][economy.politicalEconomy].\n",
-      "engagementMode": "Subordination à l'exécutif. Il relève du président à titre de commandant en chef et a exécuté les priorités que le rapport décrit comme rapidement mises en œuvre [political.stabilityDrivers][capacity.steering].\n"
+      "engagementMode": "Subordination à l'exécutif. Il relève du président à titre de commandant en chef et a exécuté les priorités que le rapport décrit comme rapidement mises en œuvre [political.stabilityDrivers][capacity.steering].\n",
+      "group": "military"
     },
     {
       "name": "Le département de la Sécurité intérieure",
@@ -5996,7 +6057,8 @@ actors_domestic_fr: |-
       "resources": "Le statut d'organisme responsable dans les missions interagences, le système national d'alerte terroriste, et un financement pluriannuel du personnel et des technologies frontalières adopté hors du cycle annuel par la Secure America Act [security.internal][capacity.steering].\n",
       "constraints": "Une exposition démontrée à l'échec budgétaire — une interruption départementale de 76 jours — et une dépendance à des forces de la Garde dont la Cour suprême a refusé d'autoriser la fédéralisation [political.shockAbsorbers][security.internal].\n",
       "likelyMoves": "Maintien d'une posture frontalière à forte interception et à faible remise en liberté, et poursuite des bulletins de menace liés au conflit au Moyen-Orient [security.internal].\n",
-      "engagementMode": "Subordination à l'exécutif. Le rapport le place sous direction exécutive comme organisme responsable plutôt que comme organisme à mandat indépendant [political.stabilityDrivers].\n"
+      "engagementMode": "Subordination à l'exécutif. Le rapport le place sous direction exécutive comme organisme responsable plutôt que comme organisme à mandat indépendant [political.stabilityDrivers].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le service des douanes et de la protection des frontières (incluant le Border Patrol)",
@@ -6021,7 +6083,8 @@ actors_domestic_fr: |-
       "resources": "Un financement pluriannuel du personnel au titre de la Secure America Act, l'appareil de perception des recettes, et l'appui militaire aux opérations frontalières interagences prévu par la stratégie de défense de 2026 [capacity.steering][security.internal].\n",
       "constraints": "Une obligation de remboursement d'environ 166 milliards de dollars sous ordonnance judiciaire, et un cadre d'emploi de la force que l'organe régional a jugé dépourvu des paramètres nécessaires à la protection des droits, sans réponse de l'État [economy.publicFinances][political.rightsAndChecks].\n",
       "likelyMoves": "Poursuite des opérations à fortes saisies et à faibles remises en liberté, et traitement continu des reliquidations pendant l'appel du gouvernement devant le Federal Circuit [security.internal][economy.publicFinances].\n",
-      "engagementMode": "Subordination à l'exécutif. Il agit selon la priorité exécutive et est contrôlé principalement de l'intérieur de l'exécutif qui le commande; le constat défavorable marquant de la période est venu de l'extérieur de l'État [security.internal].\n"
+      "engagementMode": "Subordination à l'exécutif. Il agit selon la priorité exécutive et est contrôlé principalement de l'intérieur de l'exécutif qui le commande; le constat défavorable marquant de la période est venu de l'extérieur de l'État [security.internal].\n",
+      "group": "security-intel"
     },
     {
       "name": "Immigration and Customs Enforcement",
@@ -6040,7 +6103,8 @@ actors_domestic_fr: |-
       "resources": "Un financement pluriannuel par réconciliation qui contourne le cycle annuel où l'État a échoué trois fois en huit mois [capacity.steering].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Fonctionnement continu au niveau financé; le rapport ne consigne aucune autre action précise [capacity.steering].\n",
-      "engagementMode": "Subordination à l'exécutif. Le rapport ne le nomme que comme instrument financé d'une priorité exécutive [capacity.steering].\n"
+      "engagementMode": "Subordination à l'exécutif. Le rapport ne le nomme que comme instrument financé d'une priorité exécutive [capacity.steering].\n",
+      "group": "security-intel"
     },
     {
       "name": "Le département d'État",
@@ -6062,7 +6126,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir de certification lié à des conditions budgétaires, le mandat d'examen des traités, et le canal diplomatique avec le Mexique [security.transnationalExposure][security.diplomacy].\n",
       "constraints": "Son mandat est fixé par décret et par mémorandum présidentiel plutôt que choisi, et les retraits ultérieurs dépendent d'une revue que le mémorandum dit toujours en cours [security.diplomacy].\n",
       "likelyMoves": "Achèvement des retraits ordonnés dans la mesure permise par la loi, et nouvelles conclusions issues de la revue en cours [security.diplomacy].\n",
-      "engagementMode": "Subordination à l'exécutif. Il est l'instrument d'exécution du mémorandum de retrait plutôt qu'une source de position indépendante [security.diplomacy].\n"
+      "engagementMode": "Subordination à l'exécutif. Il est l'instrument d'exécution du mémorandum de retrait plutôt qu'une source de position indépendante [security.diplomacy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le Trésor",
@@ -6085,7 +6150,8 @@ actors_domestic_fr: |-
       "resources": "Le marché de dette souveraine le plus profond au monde, l'émission de la principale monnaie de réserve, et un régime déclaratif couvrant environ 324 000 déclarants inscrits [economy.externalVulnerability][security.internal].\n",
       "constraints": "Une sortie nette de 25,6 milliards de dollars au titre des douanes en un seul mois, une base d'investisseurs non résidents qui se déplace vers des détenteurs non bancaires sensibles au prix, et des données d'attribution incapables d'identifier la nationalité des détenteurs [economy.publicFinances][economy.externalVulnerability].\n",
       "likelyMoves": "Poursuite du traitement des remboursements sous ordonnance judiciaire et émission continue à grande échelle sur un marché dont la composition change [economy.publicFinances][economy.externalVulnerability].\n",
-      "engagementMode": "Subordination à l'exécutif, sous contrainte de marché. Ses conditions de financement sont fixées par le comportement d'investisseurs non résidents que le rapport désigne comme la principale vulnérabilité externe [economy.externalVulnerability].\n"
+      "engagementMode": "Subordination à l'exécutif, sous contrainte de marché. Ses conditions de financement sont fixées par le comportement d'investisseurs non résidents que le rapport désigne comme la principale vulnérabilité externe [economy.externalVulnerability].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le département du Commerce",
@@ -6104,7 +6170,8 @@ actors_domestic_fr: |-
       "resources": "Les subventions du CHIPS and Science Act réaffectées en contrepartie de capital, comme les 5,7 milliards convertis dans l'opération Intel [economy.politicalEconomy].\n",
       "constraints": "Les positions prises sont passives, sans siège au conseil ni droits de gouvernance dans le cas le plus important, et le seul relevé consolidé du portefeuille est une compilation extérieure [economy.politicalEconomy].\n",
       "likelyMoves": "D'autres opérations propres à des entreprises selon le même modèle, vu la croissance du portefeuille en dix-huit mois [economy.politicalEconomy].\n",
-      "engagementMode": "Subordination à l'exécutif, conclusion d'ententes. Il est la contrepartie opérationnelle des entreprises qui recherchent ou subissent une participation fédérale [economy.politicalEconomy].\n"
+      "engagementMode": "Subordination à l'exécutif, conclusion d'ententes. Il est la contrepartie opérationnelle des entreprises qui recherchent ou subissent une participation fédérale [economy.politicalEconomy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le département de l'Énergie",
@@ -6125,7 +6192,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir de prise de participation exercé dans deux opérations et un vaste portefeuille d'acquisitions [economy.politicalEconomy][capacity.delivery].\n",
       "constraints": "Un bilan vérifié de dépassements de coûts et de retards dans les grandes acquisitions [capacity.delivery].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Subordination à l'exécutif. Le rapport le nomme comme participant à la politique industrielle exécutive et comme acquéreur vérifié, non comme détenteur de position autonome [economy.politicalEconomy].\n"
+      "engagementMode": "Subordination à l'exécutif. Le rapport le nomme comme participant à la politique industrielle exécutive et comme acquéreur vérifié, non comme détenteur de position autonome [economy.politicalEconomy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le département des Transports",
@@ -6146,7 +6214,8 @@ actors_domestic_fr: |-
       "resources": "Un mécanisme de subventions par formule qui distribue sans décision d'attribution, et la plus grande part de l'enveloppe d'infrastructure [capacity.delivery].\n",
       "constraints": "L'argent discrétionnaire circule lentement — les bénéficiaires invoquent l'inflation, la définition des budgets et échéanciers, l'examen environnemental et les exigences de contenu national — et les décaissements ont été suspendus dès janvier 2025 en attente d'une revue de conformité aux priorités [capacity.delivery].\n",
       "likelyMoves": "Poursuite de la distribution par formule au même rythme, les attributions discrétionnaires demeurant le canal lent [capacity.delivery].\n",
-      "engagementMode": "Subordination à l'exécutif, lié par formule. Une grande partie de ce qu'il distribue n'est pas discrétionnaire et donc pas négociable [capacity.delivery].\n"
+      "engagementMode": "Subordination à l'exécutif, lié par formule. Une grande partie de ce qu'il distribue n'est pas discrétionnaire et donc pas négociable [capacity.delivery].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "Le département des Anciens Combattants",
@@ -6167,7 +6236,8 @@ actors_domestic_fr: |-
       "resources": "Un système de santé dédié, un financement de modernisation voté, et ses propres données d'accès publiées par établissement [capacity.publicServices].\n",
       "constraints": "Un rythme de déploiement qui laisse la modernisation à plus d'une décennie de son terme, l'inscription au registre à haut risque, et des données publiées qui soutiennent des lectures que ses synthèses ne soutiennent pas [capacity.delivery][capacity.publicServices].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Subordination à l'exécutif, exposé à l'audit. Sa performance est contestée par des données publiées et par l'analyse de services parlementaires plutôt que par la négociation [capacity.publicServices].\n"
+      "engagementMode": "Subordination à l'exécutif, exposé à l'audit. Sa performance est contestée par des données publiées et par l'analyse de services parlementaires plutôt que par la négociation [capacity.publicServices].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "La Development Finance Corporation",
@@ -6186,7 +6256,8 @@ actors_domestic_fr: |-
       "resources": "Des instruments de financement du développement employés pour prendre des participations directes [economy.politicalEconomy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Participation continue au portefeuille de participations de l'exécutif, passé à trente-sept opérations en dix-huit mois [economy.politicalEconomy].\n",
-      "engagementMode": "Subordination à l'exécutif, conclusion d'ententes [economy.politicalEconomy].\n"
+      "engagementMode": "Subordination à l'exécutif, conclusion d'ententes [economy.politicalEconomy].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "La National Aeronautics and Space Administration",
@@ -6205,7 +6276,8 @@ actors_domestic_fr: |-
       "resources": "Une part du portefeuille fédéral d'approvisionnement de plus de 750 milliards de dollars [capacity.delivery].\n",
       "constraints": "Des dépassements de coûts et des retards vérifiés dans les grandes acquisitions [capacity.delivery].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Subordination à l'exécutif, exposé à l'audit [capacity.delivery].\n"
+      "engagementMode": "Subordination à l'exécutif, exposé à l'audit [capacity.delivery].\n",
+      "group": "presidency-executive"
     },
     {
       "name": "La Food and Drug Administration",
@@ -6226,7 +6298,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir d'inspection statutaire au titre du Food Safety Modernization Act [capacity.publicServices].\n",
       "constraints": "Une contrainte d'effectif déterminante qui la laisse à environ 5 % de sa cible, et une recommandation non réglée depuis janvier 2015 [capacity.publicServices][capacity.steering].\n",
       "likelyMoves": "Fonctionnement continu à environ 5 % de la cible, faute de ressources comme de proposition de remplacement statutaire [capacity.steering].\n",
-      "engagementMode": "Mandaté par la loi but under-resourced. Elle ne peut pas remplir le mandat et n'a pas cherché à le modifier : l'écart persiste plutôt qu'il ne se négocie [capacity.steering].\n"
+      "engagementMode": "Mandaté par la loi but under-resourced. Elle ne peut pas remplir le mandat et n'a pas cherché à le modifier : l'écart persiste plutôt qu'il ne se négocie [capacity.steering].\n",
+      "group": "regulators"
     },
     {
       "name": "La Federal Aviation Administration",
@@ -6245,7 +6318,8 @@ actors_domestic_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Une majorité de ses systèmes de contrôle aérien évalués comme non viables ou potentiellement non viables [capacity.delivery].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Subordination à l'exécutif, exposé à l'audit. Le rapport la nomme comme défaillance de livraison documentée plutôt que comme contrepartie de négociation [capacity.delivery].\n"
+      "engagementMode": "Subordination à l'exécutif, exposé à l'audit. Le rapport la nomme comme défaillance de livraison documentée plutôt que comme contrepartie de négociation [capacity.delivery].\n",
+      "group": "regulators"
     },
     {
       "name": "Le Federal Bureau of Investigation (y compris son groupe de travail sur l'influence étrangère, dissous)",
@@ -6267,7 +6341,8 @@ actors_domestic_fr: |-
       "resources": "Les déclarations d'opérations douteuses d'environ 324 000 déclarants, et un ciblage prioritaire sur les cartels, les réseaux chinois de blanchiment, le fentanyl et le financement du terrorisme [security.internal].\n",
       "constraints": "La dissolution de son groupe de travail sur l'influence étrangère au moment même où les services de renseignement documentaient en détail des opérations d'ingérence [security.transnationalExposure][security.posture].\n",
       "likelyMoves": "Poursuite d'une application à fort volume en criminalité financière; le rapport ne consigne aucun remplacement de la fonction d'influence dissoute [security.internal][security.transnationalExposure].\n",
-      "engagementMode": "Subordination à l'exécutif. Les organismes fédéraux d'application de la loi relèvent du président par le pouvoir statutaire de nommer et de révoquer leurs dirigeants, et non par le commandement de l'article II [political.stabilityDrivers].\n"
+      "engagementMode": "Subordination à l'exécutif. Les organismes fédéraux d'application de la loi relèvent du président par le pouvoir statutaire de nommer et de révoquer leurs dirigeants, et non par le commandement de l'article II [political.stabilityDrivers].\n",
+      "group": "security-intel"
     },
     {
       "name": "Le Financial Crimes Enforcement Network",
@@ -6286,7 +6361,8 @@ actors_domestic_fr: |-
       "resources": "Un régime déclaratif obligatoire d'une ampleur inhabituelle et une exigence de déclaration des bénéficiaires effectifs en vigueur depuis le 1er janvier 2024 [security.internal].\n",
       "constraints": "La finance illicite est évaluée plutôt que comptée : la couverture du régime ne peut être mesurée par rapport aux flux visés [security.internal].\n",
       "likelyMoves": "Croissance continue du volume de déclarations et poursuite du partenariat d'application avec la police fédérale [security.internal].\n",
-      "engagementMode": "Mandaté par la loi reporting counterpart pour les institutions financières [security.internal].\n"
+      "engagementMode": "Mandaté par la loi reporting counterpart pour les institutions financières [security.internal].\n",
+      "group": "regulators"
     },
     {
       "name": "L'Office of the Director of National Intelligence et la communauté du renseignement",
@@ -6307,7 +6383,8 @@ actors_domestic_fr: |-
       "resources": "L'évaluation annuelle des menaces, un pouvoir statutaire de coordination et la collecte à l'échelle de la communauté [security.transnationalExposure].\n",
       "constraints": "Sa propre réorganisation a supprimé l'organe statutaire de coordination sur l'influence étrangère et la fonction de menaces électorales qu'il abritait, ce que des membres de l'opposition en comité disent avoir paralysé la production [security.transnationalExposure].\n",
       "likelyMoves": "Poursuite de l'évaluation annuelle des menaces; le rapport ne consigne aucun remplacement de la fonction de coordination dissoute [security.transnationalExposure][security.posture].\n",
-      "engagementMode": "Subordination à l'exécutif. Son dirigeant a annoncé la dissolution dans le cadre d'une réorganisation exécutive, et des séances d'information exigées par la loi sont demeurées sans réponse [security.transnationalExposure].\n"
+      "engagementMode": "Subordination à l'exécutif. Son dirigeant a annoncé la dissolution dans le cadre d'une réorganisation exécutive, et des séances d'information exigées par la loi sont demeurées sans réponse [security.transnationalExposure].\n",
+      "group": "security-intel"
     },
     {
       "name": "Le Foreign Malign Influence Center (avec l'Election Threats Executive)",
@@ -6328,7 +6405,8 @@ actors_domestic_fr: |-
       "resources": "Un fondement statutaire au 50 U.S.C. § 3059; aucune ressource opérante, l'organe ayant été dissous [security.transnationalExposure].\n",
       "constraints": "Il a été dissous par réorganisation exécutive malgré sa création par la loi, et aucun successeur n'est consigné [security.transnationalExposure][security.posture].\n",
       "likelyMoves": "Aucune en tant qu'acteur; la question vive que laisse ouverte le rapport est celle de la reprise du mandat statutaire avant les élections de mi-mandat de 2026 [security.transnationalExposure].\n",
-      "engagementMode": "Dissous / non-négociable. Le rapport consigne que l'organe statutaire ne fonctionne plus [security.transnationalExposure].\n"
+      "engagementMode": "Dissous / non-négociable. Le rapport consigne que l'organe statutaire ne fonctionne plus [security.transnationalExposure].\n",
+      "group": "security-intel"
     },
     {
       "name": "Le Council on Environmental Quality",
@@ -6347,7 +6425,8 @@ actors_domestic_fr: |-
       "resources": "Une capacité résiduelle de rassemblement et de production de données — il a publié la mise à jour de janvier 2025 portant sur 1 903 énoncés — mais aucun pouvoir réglementaire pangouvernemental [capacity.approvals].\n",
       "constraints": "Son fondement réglementaire a été abrogé par décret, et les organismes ont depuis adopté leurs propres procédures [capacity.approvals].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Subordination à l'exécutif, vidé de sa substance. Le rapport décrit un organe dont la fonction d'établissement du cadre a été supprimée plutôt que réattribuée [capacity.approvals].\n"
+      "engagementMode": "Subordination à l'exécutif, vidé de sa substance. Le rapport décrit un organe dont la fonction d'établissement du cadre a été supprimée plutôt que réattribuée [capacity.approvals].\n",
+      "group": "regulators"
     },
     {
       "name": "Le Permitting Council (directeur exécutif)",
@@ -6366,7 +6445,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir statutaire au 42 U.S.C. § 4370m obligeant les organismes responsables à publier des dates cibles, et un champ de statut à huit valeurs pour les projets visés [capacity.approvals].\n",
       "constraints": "L'inscription au tableau de bord n'emporte aucun appui fédéral ni présomption d'approbation, et aucune ventilation des statuts n'est publiée pour l'ensemble des projets visés [capacity.approvals].\n",
       "likelyMoves": "Publication continue des projets miniers désignés, conformément à l'instruction, avec l'asymétrie de politique visible dans le champ de statut [capacity.approvals].\n",
-      "engagementMode": "Mandaté par la loi transparency body, dont l'exécutif dirige toutefois le contenu de la liste [capacity.approvals].\n"
+      "engagementMode": "Mandaté par la loi transparency body, dont l'exécutif dirige toutefois le contenu de la liste [capacity.approvals].\n",
+      "group": "regulators"
     },
     {
       "name": "La Federal Communications Commission",
@@ -6386,7 +6466,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir d'attribution de licences et d'enquête sur les diffuseurs [political.rightsAndChecks].\n",
       "constraints": "La protection constitutionnelle de la presse et l'exposition au contentieux, dans un système que le même organe crédite de continuer à fonctionner par les tribunaux [political.rightsAndChecks].\n",
       "likelyMoves": "Poursuite des enquêtes liées au contenu, vu le schéma que consigne l'organe régional [political.rightsAndChecks].\n",
-      "engagementMode": "Exposition au détournement. C'est un organisme collégial du type que l'arrêt de juin 2026 sur la révocation est réputé atteindre, et le rapport la décrit agissant conformément à la préférence de l'administration en matière éditoriale [political.rightsAndChecks][political.constitutionalSubstrate].\n"
+      "engagementMode": "Exposition au détournement. C'est un organisme collégial du type que l'arrêt de juin 2026 sur la révocation est réputé atteindre, et le rapport la décrit agissant conformément à la préférence de l'administration en matière éditoriale [political.rightsAndChecks][political.constitutionalSubstrate].\n",
+      "group": "regulators"
     },
     {
       "name": "La Federal Trade Commission",
@@ -6409,7 +6490,8 @@ actors_domestic_fr: |-
       "resources": "Son mandat statutaire d'application demeure; l'isolement de ses commissaires, non [political.constitutionalSubstrate].\n",
       "constraints": "Les commissaires sont désormais révocables par le président : les positions de l'organisme sont exposées à la préférence exécutive [political.powerStructure][political.constitutionalSubstrate].\n",
       "likelyMoves": "L'alignement des positions de la commission sur la préférence exécutive est la direction qu'implique la perte de la protection; le rapport ne consigne aucune action subséquente précise [political.constitutionalSubstrate].\n",
-      "engagementMode": "Exposition au détournement. Le rapport décrit la suppression de l'isolement statutaire qui la rendait auparavant Indépendance de par la loi, et y voit le modèle applicable aux autres organismes collégiaux [political.constitutionalSubstrate][political.stabilityDrivers].\n"
+      "engagementMode": "Exposition au détournement. Le rapport décrit la suppression de l'isolement statutaire qui la rendait auparavant Indépendance de par la loi, et y voit le modèle applicable aux autres organismes collégiaux [political.constitutionalSubstrate][political.stabilityDrivers].\n",
+      "group": "regulators"
     },
     {
       "name": "La Réserve fédérale (conseil des gouverneurs, Federal Open Market Committee, gouverneure Lisa Cook)",
@@ -6435,7 +6517,8 @@ actors_domestic_fr: |-
       "resources": "Le pouvoir de fixer les taux, des réserves abondantes maintenues dans le système bancaire, et une décision judiciaire selon laquelle le motif de révocation doit refléter l'histoire et le rôle propres de l'institution [political.shockAbsorbers][political.constitutionalSubstrate].\n",
       "constraints": "Une inflation à 3,5 % avec un indice de l'énergie en hausse de 15,7 % qui restreint la marge d'assouplissement, une dissidence interne orientée vers le resserrement, et un isolement qui repose désormais sur une décision à cinq voix contre quatre [economy.publicFinances][political.shockAbsorbers][political.constitutionalSubstrate].\n",
       "likelyMoves": "Maintien de la fourchette tant que l'inflation dépasse la cible, la direction de toute surprise étant infléchie par trois dissidences favorables à une hausse [political.shockAbsorbers].\n",
-      "engagementMode": "Indépendance de par la loi, détournement éprouvé. Le rapport décrit une tentative de révocation que la plus haute cour a bloquée par une seule voix : l'indépendance est ici tenue par le juge plutôt que structurellement incontestée [political.constitutionalSubstrate][political.powerStructure].\n"
+      "engagementMode": "Indépendance de par la loi, détournement éprouvé. Le rapport décrit une tentative de révocation que la plus haute cour a bloquée par une seule voix : l'indépendance est ici tenue par le juge plutôt que structurellement incontestée [political.constitutionalSubstrate][political.powerStructure].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Le Government Accountability Office",
@@ -6460,7 +6543,8 @@ actors_domestic_fr: |-
       "resources": "Un cadre d'évaluation biennal sur 38 domaines et cinq critères, un accès statutaire aux données des organismes, et un flux de bénéfices consigné qui donne du poids à ses constats [capacity.steering].\n",
       "constraints": "Il peut diagnostiquer sans contraindre : trois domaines ont régressé, vingt sont inscrits en partie pour des lacunes de compétences alors que l'emploi fédéral a été réduit d'environ 13 %, et une recommandation de janvier 2015 demeure sans suite [capacity.steering][capacity.publicServices].\n",
       "likelyMoves": "Poursuite de la réévaluation biennale et de la documentation des domaines en régression [capacity.steering].\n",
-      "engagementMode": "Indépendance de par la loi. Il rend compte de l'exécutif plutôt qu'il ne négocie avec lui, et son levier passe par une attention législative qu'il ne contrôle pas [capacity.steering].\n"
+      "engagementMode": "Indépendance de par la loi. Il rend compte de l'exécutif plutôt qu'il ne négocie avec lui, et son levier passe par une attention législative qu'il ne contrôle pas [capacity.steering].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Le Congressional Budget Office",
@@ -6486,7 +6570,8 @@ actors_domestic_fr: |-
       "resources": "Un rôle statutaire de chiffrage, une capacité d'analyse distributive, et des projections de référence que le rapport traite comme l'étalon des affirmations budgétaires [economy.publicFinances].\n",
       "constraints": "Ses projections sont dépassées par l'action exécutive hors du cycle législatif — le régime tarifaire a changé deux fois après publication — et ses constats n'ont pas empêché l'adoption d'une loi accroissant les déficits de 4 700 milliards alors que la réduction du déficit était proclamée [economy.realEconomy][capacity.steering].\n",
       "likelyMoves": "Des scénarios révisés intégrant le régime de la section 301, qui, sans échéance statutaire, devient une ligne de recettes récurrente [economy.publicFinances].\n",
-      "engagementMode": "Indépendance de par la loi. Il chiffre plutôt qu'il ne négocie, et le rapport s'en sert comme mesure des priorités annoncées [capacity.steering].\n"
+      "engagementMode": "Indépendance de par la loi. Il chiffre plutôt qu'il ne négocie, et le rapport s'en sert comme mesure des priorités annoncées [capacity.steering].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "Le Congressional Research Service",
@@ -6510,7 +6595,8 @@ actors_domestic_fr: |-
       "resources": "Une autorité non partisane telle que le rapport adopte ses lectures de la portée des arrêts de la plus haute cour [political.powerStructure][political.constitutionalSubstrate].\n",
       "constraints": "Rôle purement consultatif : ses lectures des arrêts sur la révocation décrivent une redistribution à laquelle il ne prend aucune part [political.constitutionalSubstrate].\n",
       "likelyMoves": "Poursuite de l'analyse de la redistribution jurisprudentielle et de l'échec budgétaire récurrent [political.shockAbsorbers].\n",
-      "engagementMode": "Indépendance de par la loi, consultatif [political.powerStructure].\n"
+      "engagementMode": "Indépendance de par la loi, consultatif [political.powerStructure].\n",
+      "group": "fiscal-monetary"
     },
     {
       "name": "La Cour suprême des États-Unis (le juge en chef Roberts)",
@@ -6539,7 +6625,8 @@ actors_domestic_fr: |-
       "resources": "Le contrôle judiciaire exercé depuis Marbury v. Madison, et le dernier mot sur les déclencheurs statutaires des tarifs, des révocations et du déploiement de la force [political.rightsAndChecks][political.constitutionalSubstrate].\n",
       "constraints": "Elle n'agit que sur les affaires qui lui sont soumises, plusieurs arrêts de 2026 ont tenu à une seule voix, et elle s'est retirée d'une question — les cessations de statut protégé — au lieu de la trancher [political.constitutionalSubstrate].\n",
       "likelyMoves": "Poursuite du règlement au cas par cas des questions de pouvoir exécutif, y compris la question ouverte de savoir si protéger des biens et du personnel fédéraux équivaut à exécuter la loi [political.shockAbsorbers][political.constitutionalSubstrate].\n",
-      "engagementMode": "Déférence judiciaire. Le rapport traite ses arrêts comme réglant des différends que les branches élues ne pouvaient trancher, l'indépendance s'observant dans le résultat : la même cour a tranché pour le président sur une révocation et contre lui sur une autre le même jour [political.rightsAndChecks].\n"
+      "engagementMode": "Déférence judiciaire. Le rapport traite ses arrêts comme réglant des différends que les branches élues ne pouvaient trancher, l'indépendance s'observant dans le résultat : la même cour a tranché pour le président sur une révocation et contre lui sur une autre le même jour [political.rightsAndChecks].\n",
+      "group": "judiciary"
     },
     {
       "name": "Le Tribunal du commerce international",
@@ -6558,7 +6645,8 @@ actors_domestic_fr: |-
       "resources": "Une compétence spécialisée en matière douanière et le recours en reliquidation [economy.publicFinances].\n",
       "constraints": "Sa portée à l'égard des importateurs qui n'ont pas poursuivi fait l'objet d'un appel devant le Federal Circuit, et les entrées définitivement liquidées ne sont traitées que pour les importateurs ayant saisi le tribunal [economy.publicFinances].\n",
       "likelyMoves": "Poursuite de la supervision du processus de remboursement en attendant l'appel [economy.publicFinances].\n",
-      "engagementMode": "Déférence judiciaire [economy.publicFinances].\n"
+      "engagementMode": "Déférence judiciaire [economy.publicFinances].\n",
+      "group": "judiciary"
     },
     {
       "name": "Le Federal Circuit (cour d'appel)",
@@ -6577,7 +6665,8 @@ actors_domestic_fr: |-
       "resources": "La compétence d'appel sur les ordonnances de reliquidation du tribunal du commerce [economy.publicFinances].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Une décision sur la possibilité pour l'ordonnance de remboursement d'atteindre les importateurs n'ayant pas poursuivi, qui déterminera l'ampleur d'une exposition déjà d'environ 100 milliards versés sur quelque 166 milliards perçus [economy.publicFinances].\n",
-      "engagementMode": "Déférence judiciaire [economy.publicFinances].\n"
+      "engagementMode": "Déférence judiciaire [economy.publicFinances].\n",
+      "group": "judiciary"
     },
     {
       "name": "Le cinquième circuit (cour d'appel)",
@@ -6597,7 +6686,8 @@ actors_domestic_fr: |-
       "resources": "La compétence d'appel sur les États de son ressort [political.constitutionalSubstrate].\n",
       "constraints": "Sa lecture de la primauté fédérale sur les délais de réception des bulletins a été infirmée [political.constitutionalSubstrate].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Déférence judiciaire [political.constitutionalSubstrate].\n"
+      "engagementMode": "Déférence judiciaire [political.constitutionalSubstrate].\n",
+      "group": "judiciary"
     },
     {
       "name": "La Chambre des représentants (y compris le comité du Règlement et la voie de la pétition de décharge)",
@@ -6620,7 +6710,8 @@ actors_domestic_fr: |-
       "resources": "L'initiative des mesures fiscales, la voie de la réconciliation employée deux fois depuis 2025, et la maîtrise du renvoi en comité, du calendrier de la direction et du comité du Règlement [political.powerStructure].\n",
       "constraints": "Une vacance dans le treizième district de la Géorgie non résolue depuis le 22 avril avec un second tour le 25 août, aucun mécanisme de remplacement rapide, et une incapacité démontrée à financer l'État à temps trois fois en huit mois [political.powerStructure][political.shockAbsorbers].\n",
       "likelyMoves": "Recours continu à la réconciliation pour les grandes adoptions et activité de décharge maintenue à des niveaux historiquement élevés [political.powerStructure][political.stabilityDrivers].\n",
-      "engagementMode": "Pouvoir de veto, par un seuil plutôt que par un nombre de sièges. Rien ne passe sans 218, et le même nombre ouvre la voie de la décharge contournant la direction [political.powerStructure].\n"
+      "engagementMode": "Pouvoir de veto, par un seuil plutôt que par un nombre de sièges. Rien ne passe sans 218, et le même nombre ouvre la voie de la décharge contournant la direction [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Le Sénat",
@@ -6645,7 +6736,8 @@ actors_domestic_fr: |-
       "resources": "La confirmation des juges et des titulaires de charge à la majorité simple, la règle XXII, la réconciliation, et le comblement rapide des vacances par nomination du gouverneur [political.powerStructure][political.rightsAndChecks].\n",
       "constraints": "Une majorité de gouvernement de 53 sièges, à sept voix des 60 requises pour clore le débat sur une loi ordinaire : le contrôle unifié ne peut légiférer par la procédure ordinaire [political.powerStructure][political.shockAbsorbers].\n",
       "likelyMoves": "Recours continu à la réconciliation et aux nominations, la règle sur la rémunération ne prenant effet qu'après les élections de mi-mandat [political.powerStructure].\n",
-      "engagementMode": "Pouvoir de veto. C'est le seuil de 60 voix, et non la répartition partisane, qui détermine ce qui peut être adopté [political.powerStructure].\n"
+      "engagementMode": "Pouvoir de veto. C'est le seuil de 60 voix, et non la répartition partisane, qui détermine ce qui peut être adopté [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Le Parti républicain (majorité au Congrès)",
@@ -6668,7 +6760,8 @@ actors_domestic_fr: |-
       "resources": "Le contrôle unifié des branches élues, deux lois de réconciliation adoptées, et une base partisane dont la confiance institutionnelle suit la détention du pouvoir [political.powerStructure][society.cohesion].\n",
       "constraints": "Une cohésion des élites mesurablement imparfaite — quatre pétitions de décharge ont atteint 218 en une seule session, chacune portant nécessairement des signatures de la majorité — et un seuil de clôture qui bloque la législation ordinaire [political.powerStructure][political.stabilityDrivers].\n",
       "likelyMoves": "D'autres lois de réconciliation, désormais pratique établie plutôt qu'exception [political.powerStructure].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, mais seulement à l'intérieur de seuils qu'il ne peut modifier unilatéralement [political.powerStructure].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, mais seulement à l'intérieur de seuils qu'il ne peut modifier unilatéralement [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Le Parti démocrate (minorité au Congrès; Hakeem Jeffries et Chuck Schumer)",
@@ -6689,7 +6782,8 @@ actors_domestic_fr: |-
       "resources": "Un veto de clôture durable, des postes de membre de rang en comité, et des élections prévues dont sa légitimité n'est pas contestée [political.powerStructure].\n",
       "constraints": "Aucun veto de clôture sur les nominations ni sur la réconciliation, et six sièges de moins que le seuil de décharge à la Chambre [political.powerStructure].\n",
       "likelyMoves": "Refus continu de la clôture sur la législation ordinaire et recours continu aux analyses des services de la minorité et à la correspondance des membres de rang, faute de pouvoir en chambre [political.powerStructure].\n",
-      "engagementMode": "Pouvoir de veto au Sénat sur la législation ordinaire, sans levier équivalent à la Chambre ni sur les nominations et la réconciliation [political.powerStructure].\n"
+      "engagementMode": "Pouvoir de veto au Sénat sur la législation ordinaire, sans levier équivalent à la Chambre ni sur les nominations et la réconciliation [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Les sénateurs indépendants Angus King et Bernie Sanders",
@@ -6709,7 +6803,8 @@ actors_domestic_fr: |-
       "resources": "Deux voix qui portent la minorité de 45 à 47, soit six au-dessus du seuil de refus de la clôture [political.powerStructure].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Maintien du rattachement au caucus de la minorité, ce que le rapport traite comme le fait opérant [political.powerStructure].\n",
-      "engagementMode": "Négociation / conclusion d'ententes à titre individuel, la marge de la minorité au-dessus de 41 n'étant que de six voix [political.powerStructure].\n"
+      "engagementMode": "Négociation / conclusion d'ententes à titre individuel, la marge de la minorité au-dessus de 41 n'étant que de six voix [political.powerStructure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Le comité sénatorial des Anciens Combattants (services de la minorité)",
@@ -6728,7 +6823,8 @@ actors_domestic_fr: |-
       "resources": "Le statut de comité, l'accès hebdomadaire aux données publiées par établissement, et la crédibilité que confère le travail sur les séries du département lui-même [capacity.publicServices].\n",
       "constraints": "Le statut de minorité et un échantillon non représentatif, tous deux signalés par le rapport [capacity.publicServices].\n",
       "likelyMoves": "Poursuite du suivi hebdomadaire et de la publication des écarts [capacity.publicServices].\n",
-      "engagementMode": "contrepartie de surveillance sans pouvoir de contrainte : elle peut publier, non contraindre [capacity.publicServices].\n"
+      "engagementMode": "contrepartie de surveillance sans pouvoir de contrainte : elle peut publier, non contraindre [capacity.publicServices].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Les membres de rang des comités du renseignement de la Chambre et du Sénat",
@@ -6747,7 +6843,8 @@ actors_domestic_fr: |-
       "resources": "Des droits statutaires à l'information et la capacité de consigner publiquement une affirmation contestée [security.transnationalExposure].\n",
       "constraints": "Leurs demandes sont restées sans réponse et ils sont minoritaires; n'est incontesté que le fait que l'organe statutaire ne fonctionne plus [security.transnationalExposure].\n",
       "likelyMoves": "Poursuite de la correspondance et de la pression publique à l'approche des élections de mi-mandat [security.transnationalExposure].\n",
-      "engagementMode": "contrepartie de surveillance sans pouvoir de contrainte. Le rapport consigne ensemble le droit à l'information et l'absence de réponse [security.transnationalExposure].\n"
+      "engagementMode": "contrepartie de surveillance sans pouvoir de contrainte. Le rapport consigne ensemble le droit à l'information et l'absence de réponse [security.transnationalExposure].\n",
+      "group": "congress-parties"
     },
     {
       "name": "Le gouvernement de la Caroline du Sud (le gouverneur Henry McMaster)",
@@ -6766,7 +6863,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir de nomination du gouverneur qui comble un siège de sénateur en quelques jours [political.powerStructure].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes. Le rapport le nomme comme exécutif d'État exerçant un pouvoir de nomination, non comme partie à un différend [political.powerStructure].\n"
+      "engagementMode": "Négociation / conclusion d'ententes. Le rapport le nomme comme exécutif d'État exerçant un pouvoir de nomination, non comme partie à un différend [political.powerStructure].\n",
+      "group": "states-territories"
     },
     {
       "name": "Le gouvernement de l'Illinois (le gouverneur)",
@@ -6791,7 +6889,8 @@ actors_domestic_fr: |-
       "resources": "Le commandement de la Garde en service actif d'État et sous le titre 32, la qualité pour agir en justice, et une lecture favorable du § 12406(3) par la plus haute cour [political.stabilityDrivers][political.constitutionalSubstrate].\n",
       "constraints": "La Cour a tranché sur le déclencheur statutaire sans décider si protéger des biens et du personnel fédéraux équivaut à exécuter la loi : la question de fond demeure ouverte [political.shockAbsorbers].\n",
       "likelyMoves": "Nouveau recours judiciaire si une fédéralisation est tentée sur le fondement non tranché [political.shockAbsorbers][political.constitutionalSubstrate].\n",
-      "engagementMode": "Pouvoir de veto sur la mobilisation de la Garde en première instance, son refus sous le titre 32 étant ce qui a déclenché la tentative de fédéralisation [political.stabilityDrivers].\n"
+      "engagementMode": "Pouvoir de veto sur la mobilisation de la Garde en première instance, son refus sous le titre 32 étant ce qui a déclenché la tentative de fédéralisation [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "Le gouvernement de la Californie (le gouverneur)",
@@ -6811,7 +6910,8 @@ actors_domestic_fr: |-
       "resources": "La qualité pour agir en justice et une mesure injonctive parallèle [political.stabilityDrivers].\n",
       "constraints": "La même question laissée ouverte dans l'arrêt de l'Illinois s'applique [political.shockAbsorbers].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Pouvoir de veto dans la même posture que l'Illinois, établie par injonction parallèle [political.stabilityDrivers].\n"
+      "engagementMode": "Pouvoir de veto dans la même posture que l'Illinois, établie par injonction parallèle [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "Le gouvernement de l'Oregon (le gouverneur)",
@@ -6831,7 +6931,8 @@ actors_domestic_fr: |-
       "resources": "La qualité pour agir en justice et une mesure injonctive parallèle [political.stabilityDrivers].\n",
       "constraints": "La même question laissée ouverte dans l'arrêt de l'Illinois s'applique [political.shockAbsorbers].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Pouvoir de veto dans la même posture que l'Illinois, établie par injonction parallèle [political.stabilityDrivers].\n"
+      "engagementMode": "Pouvoir de veto dans la même posture que l'Illinois, établie par injonction parallèle [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "L'État du Texas (Garde nationale du Texas)",
@@ -6853,7 +6954,8 @@ actors_domestic_fr: |-
       "resources": "Une Garde assez nombreuse pour être fédéralisée en vue d'un déploiement hors de l'État [political.stabilityDrivers].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes. Contrairement à l'Illinois, à la Californie et à l'Oregon, le rapport ne consigne de cet État ni opposition ni recours [political.stabilityDrivers].\n"
+      "engagementMode": "Négociation / conclusion d'ententes. Contrairement à l'Illinois, à la Californie et à l'Oregon, le rapport ne consigne de cet État ni opposition ni recours [political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "L'État de la Louisiane",
@@ -6873,7 +6975,8 @@ actors_domestic_fr: |-
       "resources": "Un pouvoir de découpage électoral en vertu du droit de l'État, désormais soumis à un seuil fédéral plus élevé pour les contestations en dilution [political.constitutionalSubstrate].\n",
       "constraints": "Sa carte a été invalidée comme charcutage racial alors même que le critère de contestation de la dilution était relevé [political.constitutionalSubstrate].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, la contrainte fédérale sur son découpage étant désormais plus étroite [political.constitutionalSubstrate].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, la contrainte fédérale sur son découpage étant désormais plus étroite [political.constitutionalSubstrate].\n",
+      "group": "states-territories"
     },
     {
       "name": "Le district de Columbia (gouvernement municipal et Metropolitan Police Department)",
@@ -6898,7 +7001,8 @@ actors_domestic_fr: |-
       "resources": "Un gouvernement municipal autonome et des grands électeurs plafonnés au nombre détenu par l'État le moins peuplé [political.constitutionalSubstrate].\n",
       "constraints": "La direction présidentielle de sa police repose sur une autorité propre au district, qui ne relève ni de l'article II ni du titre 10, et le Congrès légifère pour lui [security.internal][political.stateStructure].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Exposition au détournement par construction. Le rapport décrit une police municipale dirigée par le président en vertu d'une disposition statutaire propre au district, sans commandement étatique pour s'interposer [security.internal][political.stabilityDrivers].\n"
+      "engagementMode": "Exposition au détournement par construction. Le rapport décrit une police municipale dirigée par le président en vertu d'une disposition statutaire propre au district, sans commandement étatique pour s'interposer [security.internal][political.stabilityDrivers].\n",
+      "group": "states-territories"
     },
     {
       "name": "La Garde nationale (composantes terrestre et aérienne, dont les unités de l'Illinois et du Texas)",
@@ -6924,7 +7028,8 @@ actors_domestic_fr: |-
       "resources": "Plus de 430 000 militaires répartis en deux composantes et trois statuts de commandement distincts [security.military][political.stabilityDrivers].\n",
       "constraints": "Sous le titre 10, elle tombe sous le Posse Comitatus Act, et le déclencheur statutaire de la fédéralisation exige désormais que le président soit incapable d'exécuter la loi fédérale avec les forces régulières [political.stabilityDrivers][political.constitutionalSubstrate].\n",
       "likelyMoves": "Disponibilité pour d'autres missions intérieures selon le statut de commandement invoqué; aucun épisode de la période n'a vu des forces refuser des ordres légaux [political.stabilityDrivers][security.internal].\n",
-      "engagementMode": "Commandement contesté. Le rapport décrit le commandement, et non la loyauté, comme la variable vive, la réponse venant des tribunaux plutôt que de la force elle-même [political.stabilityDrivers][security.internal].\n"
+      "engagementMode": "Commandement contesté. Le rapport décrit le commandement, et non la loyauté, comme la variable vive, la réponse venant des tribunaux plutôt que de la force elle-même [political.stabilityDrivers][security.internal].\n",
+      "group": "military"
     },
     {
       "name": "Les forces armées des États-Unis (armée de terre, marine, force aérienne, Marine Corps, Space Force)",
@@ -6948,7 +7053,8 @@ actors_domestic_fr: |-
       "resources": "Cinq armées, 760 210 militaires de réserve, 128 bases outre-mer, et les plus fortes dépenses militaires au monde à 954 milliards de dollars [security.military].\n",
       "constraints": "Une baisse réelle de 7,5 % des dépenses en un an et une part du total mondial en recul de 4,3 points, un plafond d'effectifs fixé annuellement, et un consentement des pays hôtes révocable [security.military].\n",
       "likelyMoves": "Poursuite du blocus et des frappes hémisphériques à un rythme croissant sur des engagements financiers décroissants [situation][security.diplomacy].\n",
-      "engagementMode": "Subordination à l'exécutif sous le commandement de l'article II; la loyauté n'a pas été la variable en cause durant la période [political.stabilityDrivers].\n"
+      "engagementMode": "Subordination à l'exécutif sous le commandement de l'article II; la loyauté n'a pas été la variable en cause durant la période [political.stabilityDrivers].\n",
+      "group": "military"
     },
     {
       "name": "L'United States Army North",
@@ -6969,7 +7075,8 @@ actors_domestic_fr: |-
       "resources": "Le commandement opérationnel des forces fédéralisées dans la mission intérieure [security.internal].\n",
       "constraints": "Sa mission dépendait d'un pouvoir de fédéralisation que les tribunaux ont restreint, et elle s'exerçait sous un organisme civil responsable [security.internal][political.stabilityDrivers].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Subordination à l'exécutif [security.internal].\n"
+      "engagementMode": "Subordination à l'exécutif [security.internal].\n",
+      "group": "military"
     },
     {
       "name": "L'United States Central Command",
@@ -6989,7 +7096,8 @@ actors_domestic_fr: |-
       "resources": "Une capacité d'interception navale atteignant la navigation commerciale de pays tiers [situation].\n",
       "constraints": "L'interception de navires neutres donne à des États étrangers au conflit un intérêt direct dans ses termes [security.diplomacy].\n",
       "likelyMoves": "Poursuite des interceptions tant que le blocus demeure en vigueur et la guerre non résolue [situation].\n",
-      "engagementMode": "Subordination à l'exécutif [situation].\n"
+      "engagementMode": "Subordination à l'exécutif [situation].\n",
+      "group": "military"
     },
     {
       "name": "Les nations tribales reconnues par le gouvernement fédéral (575 entités, dont la Lumbee Tribe of North Carolina)",
@@ -7013,7 +7121,8 @@ actors_domestic_fr: |-
       "resources": "Une souveraineté inhérente reconnue d'une lignée jurisprudentielle allant de la trilogie Marshall à McGirt et Brackeen, des procédures statutaires de reconnaissance, et l'admissibilité aux subventions d'infrastructure au même titre que les États et territoires [political.constitutionalSubstrate][capacity.delivery].\n",
       "constraints": "Le pouvoir plénier du Congrès sur la relation, la compétence concurrente des États après Castro-Huerta, et des programmes fédéraux les servant classés à haut risque [political.constitutionalSubstrate][capacity.publicServices].\n",
       "likelyMoves": "Nouveaux ajouts de reconnaissance par les trois voies disponibles : administrative, législative et judiciaire [political.constitutionalSubstrate].\n",
-      "engagementMode": "contrepartie souveraine, sous réserve du pouvoir plénier du Congrès. Le rapport situe leur droit hors des ordres fédéral et étatique tout en consignant que le Congrès peut le nuancer [political.constitutionalSubstrate].\n"
+      "engagementMode": "contrepartie souveraine, sous réserve du pouvoir plénier du Congrès. Le rapport situe leur droit hors des ordres fédéral et étatique tout en consignant que le Congrès peut le nuancer [political.constitutionalSubstrate].\n",
+      "group": "tribal-nations"
     },
     {
       "name": "Les cinq territoires non incorporés habités (Porto Rico, Guam, les îles Vierges américaines, les îles Mariannes du Nord, les Samoa américaines)",
@@ -7038,7 +7147,8 @@ actors_domestic_fr: |-
       "resources": "Des gouvernements territoriaux et l'accès à l'aide fédérale en cas de sinistre, comme l'approbation de Rota pour toutes les catégories d'aide publique [territory.climate][political.stateStructure].\n",
       "constraints": "Aucun vote présidentiel, aucune représentation votante au Congrès, une application sélective de la Constitution, et une exposition cyclonique que la comptabilité nationale des sinistres n'atteint pas [political.constitutionalSubstrate][territory.climate].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "engagés par le pouvoir plénier du Congrès plutôt que par la représentation — le rapport présente la relation comme un legs colonial tourné vers l'intérieur et toujours vivant [political.constitutionalSubstrate][capacity.inheritedTerrain].\n"
+      "engagementMode": "engagés par le pouvoir plénier du Congrès plutôt que par la représentation — le rapport présente la relation comme un legs colonial tourné vers l'intérieur et toujours vivant [political.constitutionalSubstrate][capacity.inheritedTerrain].\n",
+      "group": "states-territories"
     },
     {
       "name": "Intel",
@@ -7057,7 +7167,8 @@ actors_domestic_fr: |-
       "resources": "8,9 milliards de dollars en contrepartie de capital, une structure de gouvernance que l'État s'est engagé à ne pas contester, et un statut stratégique dans la politique des semi-conducteurs [economy.politicalEconomy].\n",
       "constraints": "Un bon de souscription qui pénalise la cession de la majorité de la fonderie, et une dépendance à un État qui est simultanément son actionnaire et son législateur [economy.politicalEconomy].\n",
       "likelyMoves": "Conservation de la majorité de la fonderie, condition à laquelle le bon ne se déclenche pas [economy.politicalEconomy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, au cas par cas. Le rapport décrit un alignement restructuré entreprise par entreprise plutôt que par règle sectorielle [political.stabilityDrivers][economy.politicalEconomy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, au cas par cas. Le rapport décrit un alignement restructuré entreprise par entreprise plutôt que par règle sectorielle [political.stabilityDrivers][economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "MP Materials",
@@ -7077,7 +7188,8 @@ actors_domestic_fr: |-
       "resources": "Un prix plancher, un engagement d'achat de dix ans sur toute la production, et un premier actionnaire qui est aussi l'acheteur du produit [economy.politicalEconomy].\n",
       "constraints": "Son économie est désormais liée à une seule contrepartie, et la dépendance de fond — la Chine fournissant environ 70 % des terres rares — n'est pas encore déplacée [economy.politicalEconomy][territory.minerals].\n",
       "likelyMoves": "Construction de la deuxième usine d'aimants dont toute la production est déjà engagée [economy.politicalEconomy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, au cas par cas, l'État étant simultanément actionnaire, fixateur de prix et client [economy.politicalEconomy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, au cas par cas, l'État étant simultanément actionnaire, fixateur de prix et client [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Les hyperscalers technologiques (Meta, Microsoft, Amazon, Alphabet)",
@@ -7098,7 +7210,8 @@ actors_domestic_fr: |-
       "resources": "Des dépenses d'investissement supérieures à bien des budgets nationaux, des profits records, et un poids de demande suffisant pour relever la croissance de la consommation nationale d'électricité [economy.politicalEconomy][territory.metabolism].\n",
       "constraints": "Une croissance de la demande d'électricité de 2,1 % par an tirée par les centres de données se heurte à un réseau de distribution physique vieillissant, et la politique fédérale propre à chaque entreprise est devenue le mécanisme d'alignement opérant [territory.metabolism][political.stabilityDrivers].\n",
       "likelyMoves": "Exécution d'environ 725 milliards de dollars d'investissements annoncés pour 2026, que le bureau du budget intègre déjà à la croissance projetée de la productivité [economy.politicalEconomy][capacity.productivity].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, au cas par cas. Le rapport décrit un assouplissement des restrictions à l'exportation échangé contre un prélèvement sur les revenus, entreprise par entreprise [political.stabilityDrivers].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, au cas par cas. Le rapport décrit un assouplissement des restrictions à l'exportation échangé contre un prélèvement sur les revenus, entreprise par entreprise [political.stabilityDrivers].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Les grandes entreprises de santé (UnitedHealth Group, CVS Health, McKesson, Cencora)",
@@ -7118,7 +7231,8 @@ actors_domestic_fr: |-
       "resources": "Une échelle de revenus dans un système consommant 17,2 % du produit intérieur brut, et une pondération dans le top dix qui fait de la santé le secteur déterminant de la structure privée [economy.politicalEconomy][capacity.publicServices].\n",
       "constraints": "Un programme public en contraction — Medicaid et le programme d'assurance santé des enfants en baisse de 5 millions d'inscrits en un an, avec des exigences de travail dès janvier 2027 [capacity.publicServices].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes. Le rapport les nomme pour leur poids dans la structure privée sans consigner d'engagement précis [economy.politicalEconomy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes. Le rapport les nomme pour leur poids dans la structure privée sans consigner d'engagement précis [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Les maîtres d'œuvre de la défense (Lockheed Martin, RTX, Boeing, General Dynamics, Northrop Grumman)",
@@ -7139,7 +7253,8 @@ actors_domestic_fr: |-
       "resources": "Des positions établies sur la liste des cent premiers fournisseurs, dans un portefeuille d'approvisionnement de plus de 750 milliards de dollars [economy.politicalEconomy][capacity.delivery].\n",
       "constraints": "L'acquisition de systèmes d'armes a régressé entre les évaluations à haut risque de 2023 et de 2025, et les dépenses militaires ont reculé de 7,5 % en termes réels en 2025 [capacity.delivery][security.military].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes par voie contractuelle plutôt que par négociation de politique [economy.politicalEconomy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes par voie contractuelle plutôt que par négociation de politique [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Les autres têtes de liste du Fortune 500 nommées (Walmart, Apple, Berkshire Hathaway, ExxonMobil)",
@@ -7159,7 +7274,8 @@ actors_domestic_fr: |-
       "resources": "Une échelle de revenus dans le plus grand bloc de la structure privée [economy.politicalEconomy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sans mention dans le rapport. Le rapport ne leur attache aucun mode d'engagement au-delà de leur rang [economy.politicalEconomy].\n"
+      "engagementMode": "Sans mention dans le rapport. Le rapport ne leur attache aucun mode d'engagement au-delà de leur rang [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Le travail organisé (syndicats; aucun organisme nommé individuellement dans le rapport)",
@@ -7179,7 +7295,8 @@ actors_domestic_fr: |-
       "resources": "14,7 millions de membres concentrés dans le secteur public, où la densité demeure supérieure à 30 % [economy.politicalEconomy].\n",
       "constraints": "Une quasi-absence des secteurs où se concentrent le chiffre d'affaires et les profits des entreprises, et une densité réduite de moitié en quatre décennies [economy.politicalEconomy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes mais structurellement faible. Le terme employé par le rapport est « la contrepartie faible » [economy.politicalEconomy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes mais structurellement faible. Le terme employé par le rapport est « la contrepartie faible » [economy.politicalEconomy].\n",
+      "group": "corporate-labour-civil"
     },
     {
       "name": "L'American Society of Civil Engineers",
@@ -7199,7 +7316,8 @@ actors_domestic_fr: |-
       "resources": "Une évaluation quadriennale sur 18 catégories qui fournit le chiffre de référence auquel se mesurent les crédits d'infrastructure votés [capacity.delivery].\n",
       "constraints": "Son orientation de plaidoyer est divulguée dans le rapport, ce qui nuance le poids de son estimation [capacity.delivery].\n",
       "likelyMoves": "Une nouvelle note quadriennale au même rythme [capacity.delivery].\n",
-      "engagementMode": "Négociation / conclusion d'ententes comme contrepartie de plaidoyer; il ne détient aucun rôle statutaire [capacity.delivery].\n"
+      "engagementMode": "Négociation / conclusion d'ententes comme contrepartie de plaidoyer; il ne détient aucun rôle statutaire [capacity.delivery].\n",
+      "group": "corporate-labour-civil"
     }
   ]
 actors_external_en: |-
@@ -7231,7 +7349,8 @@ actors_external_en: |-
       "resources": "Supply concentration in 14 critical minerals, $683.5 billion in Treasury holdings, and cyber capability the intelligence assessment ranks among the most persistent [territory.minerals][economy.externalVulnerability][security.transnationalExposure].\n",
       "constraints": "A goods-import share cut nearly in half in a year through substitution across suppliers rather than reduced United States demand, and $954 billion in United States military expenditure against its own [economy.externalVulnerability][security.military].\n",
       "likelyMoves": "Continued supply leverage on minerals, continued cyber pre-positioning, and continued cooperation on precursor chemicals, which the assessment describes as improving [territory.minerals][security.transnationalExposure].\n",
-      "engagementMode": "negotiable / dealable, adversarially. The report records simultaneous competition, substitution and functional cooperation on narcotics precursors [security.diplomacy][security.transnationalExposure].\n"
+      "engagementMode": "negotiable / dealable, adversarially. The report records simultaneous competition, substitution and functional cooperation on narcotics precursors [security.diplomacy][security.transnationalExposure].\n",
+      "group": "rivals"
     },
     {
       "name": "Mexico",
@@ -7253,7 +7372,8 @@ actors_external_en: |-
       "resources": "Treaty cycles measured over five years rather than annually, and the shared administration of the treaty through a joint commission [security.transnationalExposure].\n",
       "constraints": "United States appropriations now condition some funds on certification of delivery, and cartels operating from its territory are the principal named non-state entanglement [security.transnationalExposure].\n",
       "likelyMoves": "Delivery against the February 2026 commitment under certification pressure [security.transnationalExposure].\n",
-      "engagementMode": "negotiable / dealable, with a conditionality mechanism now attached [security.transnationalExposure].\n"
+      "engagementMode": "negotiable / dealable, with a conditionality mechanism now attached [security.transnationalExposure].\n",
+      "group": "north-america"
     },
     {
       "name": "Canada",
@@ -7275,7 +7395,8 @@ actors_external_en: |-
       "resources": "Natural gas supply that balances seasonal demand in a country that is otherwise a record net energy exporter [economy.externalVulnerability].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable. The report records a functional supply relationship and no contest [economy.externalVulnerability].\n"
+      "engagementMode": "negotiable / dealable. The report records a functional supply relationship and no contest [economy.externalVulnerability].\n",
+      "group": "north-america"
     },
     {
       "name": "European Union",
@@ -7296,7 +7417,8 @@ actors_external_en: |-
       "resources": "The largest single trading relationship by bilateral deficit, and rising allied military spending as the United States share of world spending falls [economy.externalVulnerability][security.military].\n",
       "constraints": "Section 301 rates are tied to enforcement of a forced-labour import prohibition rather than to bilateral bargaining [security.diplomacy][economy.externalVulnerability].\n",
       "likelyMoves": "Adaptation to a tariff schedule set by compliance criteria rather than negotiation, and assumption of a larger share of European defence [security.diplomacy].\n",
-      "engagementMode": "negotiable / dealable, but with the tariff channel now rule-tied rather than bargained [economy.externalVulnerability].\n"
+      "engagementMode": "negotiable / dealable, but with the tariff channel now rule-tied rather than bargained [economy.externalVulnerability].\n",
+      "group": "europe-nato"
     },
     {
       "name": "United Kingdom",
@@ -7319,7 +7441,8 @@ actors_external_en: |-
       "resources": "The second-largest foreign holding of federal debt, host-nation status, and AUKUS participation [economy.externalVulnerability][security.diplomacy].\n",
       "constraints": "Its debt holdings are recorded by location rather than nationality, so its apparent position may not be its own [economy.externalVulnerability].\n",
       "likelyMoves": "Continued AUKUS cooperation on submarines and advanced capability [security.diplomacy].\n",
-      "engagementMode": "negotiable / dealable, treaty-anchored through the North Atlantic Treaty and AUKUS [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored through the North Atlantic Treaty and AUKUS [security.diplomacy].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Japan",
@@ -7343,7 +7466,8 @@ actors_external_en: |-
       "resources": "Host-nation support meeting the majority of identifiable costs, the largest foreign holding of federal debt, and treaty and statutory alliance status [security.military][economy.externalVulnerability][security.diplomacy].\n",
       "constraints": "A transactional burden-sharing turn in the standing strategy raises the price of the same arrangement [security.diplomacy][security.posture].\n",
       "likelyMoves": "Continued host-nation support at or above current levels under transactional pressure [security.diplomacy].\n",
-      "engagementMode": "negotiable / dealable, treaty-anchored, and the report's clearest case of a partner meeting the majority of identifiable costs [security.posture][security.military].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored, and the report's clearest case of a partner meeting the majority of identifiable costs [security.posture][security.military].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "South Korea",
@@ -7365,7 +7489,8 @@ actors_external_en: |-
       "resources": "Substantial host-nation support and dual treaty and statutory alliance standing [security.military][security.diplomacy].\n",
       "constraints": "The transactional burden-sharing shift applies to it as to Japan, at a lower current cost share [security.posture][security.diplomacy].\n",
       "likelyMoves": "Renegotiation pressure on its cost share [security.diplomacy].\n",
-      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Germany",
@@ -7387,7 +7512,8 @@ actors_external_en: |-
       "resources": "Host-nation consent for the largest European concentration of United States forces [security.military].\n",
       "constraints": "It is among the European allies directed to lead their own defence with limited United States support [security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, treaty-anchored through the North Atlantic Treaty [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored through the North Atlantic Treaty [security.diplomacy].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Italy",
@@ -7409,7 +7535,8 @@ actors_external_en: |-
       "resources": "Host-nation consent for a significant European basing concentration [security.military].\n",
       "constraints": "It is among the European allies directed to lead their own defence with limited United States support [security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Bahrain",
@@ -7429,7 +7556,8 @@ actors_external_en: |-
       "resources": "Host-nation consent for the principal Middle East basing concentration during an active war with Iran [security.military][situation].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, host-nation consent being the operative variable [security.military].\n"
+      "engagementMode": "negotiable / dealable, host-nation consent being the operative variable [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Kuwait",
@@ -7449,7 +7577,8 @@ actors_external_en: |-
       "resources": "Financial contribution to the United States presence [security.military].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable [security.military].\n"
+      "engagementMode": "negotiable / dealable [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Saudi Arabia",
@@ -7469,7 +7598,8 @@ actors_external_en: |-
       "resources": "Financial contribution to the United States presence [security.military].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable [security.military].\n"
+      "engagementMode": "negotiable / dealable [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Poland",
@@ -7489,7 +7619,8 @@ actors_external_en: |-
       "resources": "Financial contribution to the United States presence within the North Atlantic Treaty area [security.military].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable [security.military].\n"
+      "engagementMode": "negotiable / dealable [security.military].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Niger",
@@ -7508,7 +7639,8 @@ actors_external_en: |-
       "resources": "Sovereign control over the status-of-forces agreement on which access depended [security.military].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "withdrawn consent. The report names it as the case where host-nation consent was revoked rather than negotiated [security.military].\n"
+      "engagementMode": "withdrawn consent. The report names it as the case where host-nation consent was revoked rather than negotiated [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Australia",
@@ -7527,7 +7659,8 @@ actors_external_en: |-
       "resources": "Three overlapping tiers of alliance standing — treaty, statutory and partnership [security.diplomacy].\n",
       "constraints": "report-silent",
       "likelyMoves": "Continued AUKUS cooperation [security.diplomacy].\n",
-      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "New Zealand",
@@ -7546,7 +7679,8 @@ actors_external_en: |-
       "resources": "Treaty-based collective-defence standing [security.diplomacy].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Philippines",
@@ -7565,7 +7699,8 @@ actors_external_en: |-
       "resources": "Treaty-based collective-defence standing in the theatre the strategy prioritises for denial [security.diplomacy].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Thailand",
@@ -7584,7 +7719,8 @@ actors_external_en: |-
       "resources": "Treaty-based collective-defence standing [security.diplomacy].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Israel",
@@ -7608,7 +7744,8 @@ actors_external_en: |-
       "resources": "Co-belligerent status with the pre-eminent military power and statutory alliance standing [security.diplomacy].\n",
       "constraints": "No new supplemental appropriations were made in 2025, and the mediation channel has moved to third parties rather than running bilaterally [security.military][security.diplomacy].\n",
       "likelyMoves": "Continued joint operations while the war remains unresolved [situation].\n",
-      "engagementMode": "negotiable / dealable, co-belligerent [situation][security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, co-belligerent [situation][security.diplomacy].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Iran",
@@ -7632,7 +7769,8 @@ actors_external_en: |-
       "resources": "Control of the strait's status as a negotiating object, a mediated channel through Oman and earlier through Pakistan, and cyber capability [situation][security.transnationalExposure].\n",
       "constraints": "A blockade that has redirected 44 commercial vessels and disabled two, and a war fought against the pre-eminent military power and Israel together [situation].\n",
       "likelyMoves": "Conclusion of the Muscat transit talks, which both parties report as close [situation].\n",
-      "engagementMode": "blocked / not-engageable bilaterally, engaged through third-party mediation. The report shows every channel running through Pakistan or Oman rather than directly [situation][security.diplomacy].\n"
+      "engagementMode": "blocked / not-engageable bilaterally, engaged through third-party mediation. The report shows every channel running through Pakistan or Oman rather than directly [situation][security.diplomacy].\n",
+      "group": "rivals"
     },
     {
       "name": "Oman",
@@ -7653,7 +7791,8 @@ actors_external_en: |-
       "resources": "Acceptability to both belligerents as the venue after the Pakistan-brokered ceasefire lapsed [situation][security.diplomacy].\n",
       "constraints": "It mediates rather than decides; the blockade remains in force and the war unresolved [situation].\n",
       "likelyMoves": "Conclusion of the transit talks it reports as close [situation].\n",
-      "engagementMode": "negotiable / dealable, as mediator and channel-holder [situation].\n"
+      "engagementMode": "negotiable / dealable, as mediator and channel-holder [situation].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Pakistan",
@@ -7674,7 +7813,8 @@ actors_external_en: |-
       "resources": "Demonstrated capacity to broker a ceasefire between the belligerents [situation].\n",
       "constraints": "The ceasefire it brokered was ended unilaterally, and the substantive channel has since moved to Muscat [situation][security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, as a mediator whose channel has been superseded [situation].\n"
+      "engagementMode": "negotiable / dealable, as a mediator whose channel has been superseded [situation].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "India",
@@ -7693,7 +7833,8 @@ actors_external_en: |-
       "resources": "Jurisdiction over precursor-chemical supply chains [security.transnationalExposure].\n",
       "constraints": "report-silent",
       "likelyMoves": "Continued cooperation on precursors, the trajectory the assessment records [security.transnationalExposure].\n",
-      "engagementMode": "negotiable / dealable, on a cooperative track [security.transnationalExposure].\n"
+      "engagementMode": "negotiable / dealable, on a cooperative track [security.transnationalExposure].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Russia",
@@ -7713,7 +7854,8 @@ actors_external_en: |-
       "resources": "Cyber capability ranked among the most persistent and active, and a demonstrated influence record [security.transnationalExposure].\n",
       "constraints": "report-silent",
       "likelyMoves": "Continued network compromise and influence activity into an election cycle whose threat-assessment machinery has been dismantled [security.transnationalExposure][security.posture].\n",
-      "engagementMode": "blocked / not-engageable. The report names it only as a threat actor [security.transnationalExposure].\n"
+      "engagementMode": "blocked / not-engageable. The report names it only as a threat actor [security.transnationalExposure].\n",
+      "group": "rivals"
     },
     {
       "name": "North Korea",
@@ -7732,7 +7874,8 @@ actors_external_en: |-
       "resources": "Cryptocurrency theft operating as state revenue at around $2 billion a year [security.transnationalExposure].\n",
       "constraints": "report-silent",
       "likelyMoves": "Continued theft at scale, the assessment recording no disruption [security.transnationalExposure].\n",
-      "engagementMode": "blocked / not-engageable [security.transnationalExposure].\n"
+      "engagementMode": "blocked / not-engageable [security.transnationalExposure].\n",
+      "group": "rivals"
     },
     {
       "name": "Ukraine",
@@ -7751,7 +7894,8 @@ actors_external_en: |-
       "resources": "An undisbursed balance of roughly $62 billion from prior allocations [security.military].\n",
       "constraints": "The end of supplemental appropriations was the main driver of a 7.5% real-terms fall in United States military expenditure, so the flow has stopped rather than slowed [security.military].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "report-silent. The report records the funding position without describing engagement terms [security.military].\n"
+      "engagementMode": "report-silent. The report records the funding position without describing engagement terms [security.military].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Cuba",
@@ -7770,7 +7914,8 @@ actors_external_en: |-
       "resources": "Recognised ultimate sovereignty over the leased area and a mutual-consent requirement for any change [security.diplomacy].\n",
       "constraints": "The territorial limits stand as they were in 1934 unless the United States abandons the station, so its consent requirement cannot force an exit [security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "blocked / not-engageable on the standing dispute, which the report records as unresolved and contested in characterisation [security.diplomacy].\n"
+      "engagementMode": "blocked / not-engageable on the standing dispute, which the report records as unresolved and contested in characterisation [security.diplomacy].\n",
+      "group": "rivals"
     },
     {
       "name": "Venezuela (Nicolás Maduro; the political transition)",
@@ -7791,7 +7936,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "Its head of state was removed by force and an external power holds influence over the succession [situation][security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "externally-managed transition. The report describes the United States as installed inside the succession rather than negotiating with a counterpart [security.diplomacy][situation].\n"
+      "engagementMode": "externally-managed transition. The report describes the United States as installed inside the succession rather than negotiating with a counterpart [security.diplomacy][situation].\n",
+      "group": "rivals"
     },
     {
       "name": "North Atlantic Treaty Organization",
@@ -7812,7 +7958,8 @@ actors_external_en: |-
       "resources": "Treaty obligation across 32 members, a permanent United States presence at 31 persistent bases in Europe, and rising allied military spending [security.military].\n",
       "constraints": "A standing strategy that directs allies to lead with limited support, and a United States share of world military spending down 4.3 points in a single year [security.diplomacy][security.military].\n",
       "likelyMoves": "Continued allied spending increases against a shrinking relative United States contribution [security.military].\n",
-      "engagementMode": "negotiable / dealable, treaty-anchored but transactionally reframed [security.diplomacy][security.posture].\n"
+      "engagementMode": "negotiable / dealable, treaty-anchored but transactionally reframed [security.diplomacy][security.posture].\n",
+      "group": "europe-nato"
     },
     {
       "name": "International Monetary Fund",
@@ -7835,7 +7982,8 @@ actors_external_en: |-
       "resources": "Annual Article IV surveillance of a member state, and analytical standing the report relies on for the composition of the investor base [economy.externalVulnerability].\n",
       "constraints": "The country holds no program, so the Fund has advice and no leverage; its external finding restates the fiscal one rather than adding a second [economy.externalVulnerability].\n",
       "likelyMoves": "A further annual Article IV consultation on the same analytical line [economy.externalVulnerability].\n",
-      "engagementMode": "surveillance counterpart, advisory and non-binding. Membership without a program leaves the relationship entirely persuasive [economy.externalVulnerability].\n"
+      "engagementMode": "surveillance counterpart, advisory and non-binding. Membership without a program leaves the relationship entirely persuasive [economy.externalVulnerability].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Inter-American Commission on Human Rights (Organization of American States)",
@@ -7858,7 +8006,8 @@ actors_external_en: |-
       "resources": "Treaty standing under the American Declaration, merits reports publishable under Article 47.3 of its Rules of Procedure, and the country's participation as an Organization of American States member [political.rightsAndChecks].\n",
       "constraints": "The state did not respond to either transmission, there is no accredited national human-rights institution as domestic counterpart, and its findings carry no enforcement [political.rightsAndChecks].\n",
       "likelyMoves": "Continued publication of merits findings and country monitoring without state engagement [political.rightsAndChecks].\n",
-      "engagementMode": "adjudicative counterpart, currently unanswered. The report records a shift from concern to adjudication and a state that has not replied [political.rightsAndChecks].\n"
+      "engagementMode": "adjudicative counterpart, currently unanswered. The report records a shift from concern to adjudication and a state that has not replied [political.rightsAndChecks].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "World Health Organization",
@@ -7877,7 +8026,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It has lost a member state, and the report records the exit as completed rather than pending [security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaged. Membership has terminated [security.diplomacy].\n"
+      "engagementMode": "exited / disengaged. Membership has terminated [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "United Nations Human Rights Council",
@@ -7896,7 +8046,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "Participation was terminated by executive order, and the review it triggered produced 66 further withdrawals [security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaged [security.diplomacy].\n"
+      "engagementMode": "exited / disengaged [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "United Nations Framework Convention on Climate Change",
@@ -7916,7 +8067,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It loses a party whose targets were voided and which is assessed as no longer holding a net-zero target [security.diplomacy][territory.transition].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaging, agencies having been instructed to cease participation and funding so far as law permits [security.diplomacy].\n"
+      "engagementMode": "exited / disengaging, agencies having been instructed to cease participation and funding so far as law permits [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Intergovernmental Panel on Climate Change",
@@ -7935,7 +8087,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It loses the participation and funding of a member state by executive instruction [security.diplomacy].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaging [security.diplomacy].\n"
+      "engagementMode": "exited / disengaging [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "European Centre of Excellence for Countering Hybrid Threats",
@@ -7956,7 +8109,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It loses a participant at the moment that participant's own hybrid-threat machinery was being dismantled [security.posture].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaging [security.diplomacy].\n"
+      "engagementMode": "exited / disengaging [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Global Forum on Cyber Expertise",
@@ -7977,7 +8131,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It loses a participant while that participant's intelligence services document pre-positioned cyber intrusions in detail [security.posture][security.transnationalExposure].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaging [security.diplomacy].\n"
+      "engagementMode": "exited / disengaging [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Global Counterterrorism Forum",
@@ -7996,7 +8151,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It loses a participant whose homeland threat level is assessed as heightened [security.diplomacy][security.internal].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaging [security.diplomacy].\n"
+      "engagementMode": "exited / disengaging [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Global Forum on Migration and Development",
@@ -8015,7 +8171,8 @@ actors_external_en: |-
       "resources": "report-silent",
       "constraints": "It loses a participant whose net international migration fell from roughly 2.7 million to about 321,000 across the period [security.diplomacy][security.transnationalExposure].\n",
       "likelyMoves": "report-silent",
-      "engagementMode": "exited / disengaging [security.diplomacy].\n"
+      "engagementMode": "exited / disengaging [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "International Boundary and Water Commission",
@@ -8034,7 +8191,8 @@ actors_external_en: |-
       "resources": "Treaty administration authority over both water allocation and border sanitation [security.transnationalExposure].\n",
       "constraints": "Cycle obligations have been missed repeatedly since 1994, and the enforcement lever the report records is a United States appropriations condition rather than a commission remedy [security.transnationalExposure].\n",
       "likelyMoves": "Administration of the delivery plan agreed in February 2026 [security.transnationalExposure].\n",
-      "engagementMode": "statutorily-independent bilateral administrator, without enforcement of its own [security.transnationalExposure].\n"
+      "engagementMode": "statutorily-independent bilateral administrator, without enforcement of its own [security.transnationalExposure].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "AUKUS partnership",
@@ -8054,7 +8212,8 @@ actors_external_en: |-
       "resources": "A trilateral channel for submarine and advanced-capability cooperation outside the treaty alliance structures [security.diplomacy].\n",
       "constraints": "report-silent",
       "likelyMoves": "report-silent",
-      "engagementMode": "negotiable / dealable, as a standing partnership among three allies [security.diplomacy].\n"
+      "engagementMode": "negotiable / dealable, as a standing partnership among three allies [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Transnational criminal organisations (Sinaloa Cartel, Jalisco New Generation Cartel, MS-13, Revolutionary Armed Forces of Colombia, National Liberation Army)",
@@ -8077,7 +8236,8 @@ actors_external_en: |-
       "resources": "Production and smuggling networks, cells inside the country, and access to international financial institutions for laundering [security.transnationalExposure].\n",
       "constraints": "Fentanyl overdose deaths fell about 30% and potency declined on supply-chain disruption, seizures rose 57%, and at least 19 vessels were struck in a single quarter [security.transnationalExposure][security.internal][situation].\n",
       "likelyMoves": "Continued trafficking under rising interdiction and standing lethal military action, with relationships extending to Ecuadorian and Brazilian groups [security.transnationalExposure][situation].\n",
-      "engagementMode": "blocked / not-engageable. The report records the response as interdiction, prosecution and lethal strike rather than any form of engagement [situation][security.internal].\n"
+      "engagementMode": "blocked / not-engageable. The report records the response as interdiction, prosecution and lethal strike rather than any form of engagement [situation][security.internal].\n",
+      "group": "transnational-crime"
     }
   ]
 actors_external_fr: |-
@@ -8109,7 +8269,8 @@ actors_external_fr: |-
       "resources": "Une concentration de l'offre sur 14 minéraux critiques, 683,5 milliards de dollars en titres du Trésor, et une capacité cyber que l'évaluation classe parmi les plus persistantes [territory.minerals][economy.externalVulnerability][security.transnationalExposure].\n",
       "constraints": "Une part des importations de biens presque réduite de moitié en un an par substitution entre fournisseurs plutôt que par baisse de la demande états-unienne, et 954 milliards de dollars de dépenses militaires américaines face aux siennes [economy.externalVulnerability][security.military].\n",
       "likelyMoves": "Maintien du levier sur les minéraux, poursuite du prépositionnement cyber, et poursuite de la coopération sur les précurseurs, que l'évaluation décrit comme s'améliorant [territory.minerals][security.transnationalExposure].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, sur un mode d'adversité. Le rapport consigne simultanément concurrence, substitution et coopération fonctionnelle sur les précurseurs [security.diplomacy][security.transnationalExposure].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, sur un mode d'adversité. Le rapport consigne simultanément concurrence, substitution et coopération fonctionnelle sur les précurseurs [security.diplomacy][security.transnationalExposure].\n",
+      "group": "rivals"
     },
     {
       "name": "Le Mexique",
@@ -8131,7 +8292,8 @@ actors_external_fr: |-
       "resources": "Des cycles de traité calculés sur cinq ans plutôt qu'annuellement, et l'administration conjointe du traité par une commission [security.transnationalExposure].\n",
       "constraints": "Les crédits états-uniens conditionnent désormais certains fonds à une certification de livraison, et les cartels opérant depuis son territoire constituent le principal enchevêtrement non étatique nommé [security.transnationalExposure].\n",
       "likelyMoves": "Livraisons conformes à l'engagement de février 2026, sous pression de certification [security.transnationalExposure].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, avec un mécanisme de conditionnalité désormais attaché [security.transnationalExposure].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, avec un mécanisme de conditionnalité désormais attaché [security.transnationalExposure].\n",
+      "group": "north-america"
     },
     {
       "name": "Le Canada",
@@ -8153,7 +8315,8 @@ actors_external_fr: |-
       "resources": "Un approvisionnement en gaz naturel qui équilibre la demande saisonnière d'un pays par ailleurs exportateur net record d'énergie [economy.externalVulnerability].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes. Le rapport consigne une relation d'approvisionnement fonctionnelle et aucun différend [economy.externalVulnerability].\n"
+      "engagementMode": "Négociation / conclusion d'ententes. Le rapport consigne une relation d'approvisionnement fonctionnelle et aucun différend [economy.externalVulnerability].\n",
+      "group": "north-america"
     },
     {
       "name": "L'Union européenne",
@@ -8174,7 +8337,8 @@ actors_external_fr: |-
       "resources": "La plus importante relation commerciale par déficit bilatéral, et des dépenses militaires alliées en hausse alors que la part américaine du total mondial recule [economy.externalVulnerability][security.military].\n",
       "constraints": "Les taux de la section 301 sont liés à l'application d'une interdiction d'importation liée au travail forcé plutôt qu'à une négociation bilatérale [security.diplomacy][economy.externalVulnerability].\n",
       "likelyMoves": "Adaptation à un barème tarifaire fixé par des critères de conformité plutôt que par négociation, et prise en charge d'une part accrue de la défense européenne [security.diplomacy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, mais avec un canal tarifaire désormais fondé sur des règles plutôt que négocié [economy.externalVulnerability].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, mais avec un canal tarifaire désormais fondé sur des règles plutôt que négocié [economy.externalVulnerability].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Le Royaume-Uni",
@@ -8197,7 +8361,8 @@ actors_external_fr: |-
       "resources": "La deuxième détention étrangère de dette fédérale, le statut de pays hôte, et la participation à AUKUS [economy.externalVulnerability][security.diplomacy].\n",
       "constraints": "Ses avoirs obligataires sont consignés par lieu et non par nationalité : sa position apparente peut ne pas être la sienne [economy.externalVulnerability].\n",
       "likelyMoves": "Poursuite de la coopération AUKUS sur les sous-marins et les capacités avancées [security.diplomacy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans le traité de l'Atlantique Nord et dans AUKUS [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans le traité de l'Atlantique Nord et dans AUKUS [security.diplomacy].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Le Japon",
@@ -8221,7 +8386,8 @@ actors_external_fr: |-
       "resources": "Un appui du pays hôte couvrant la majorité des coûts identifiables, la première détention étrangère de dette fédérale, et un statut d'allié à la fois conventionnel et statutaire [security.military][economy.externalVulnerability][security.diplomacy].\n",
       "constraints": "Un virage transactionnel du partage du fardeau dans la stratégie en vigueur, qui renchérit le même arrangement [security.diplomacy][security.posture].\n",
       "likelyMoves": "Maintien de l'appui du pays hôte à son niveau actuel ou au-delà sous pression transactionnelle [security.diplomacy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité, et cas le plus net du rapport d'un partenaire assumant la majorité des coûts identifiables [security.posture][security.military].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité, et cas le plus net du rapport d'un partenaire assumant la majorité des coûts identifiables [security.posture][security.military].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "La Corée du Sud",
@@ -8243,7 +8409,8 @@ actors_external_fr: |-
       "resources": "Un appui substantiel du pays hôte et un double statut d'allié, conventionnel et statutaire [security.military][security.diplomacy].\n",
       "constraints": "Le virage transactionnel du partage du fardeau lui est applicable comme au Japon, à partir d'une part de coûts actuellement plus faible [security.posture][security.diplomacy].\n",
       "likelyMoves": "Pression de renégociation sur sa part de coûts [security.diplomacy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "L'Allemagne",
@@ -8265,7 +8432,8 @@ actors_external_fr: |-
       "resources": "Le consentement du pays hôte pour la plus forte concentration européenne de forces américaines [security.military].\n",
       "constraints": "Elle compte parmi les alliés européens invités à assurer eux-mêmes leur défense avec un appui américain limité [security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans le traité de l'Atlantique Nord [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans le traité de l'Atlantique Nord [security.diplomacy].\n",
+      "group": "europe-nato"
     },
     {
       "name": "L'Italie",
@@ -8287,7 +8455,8 @@ actors_external_fr: |-
       "resources": "Le consentement du pays hôte pour une concentration européenne importante [security.military].\n",
       "constraints": "Elle compte parmi les alliés européens invités à assurer eux-mêmes leur défense avec un appui américain limité [security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Le Bahreïn",
@@ -8307,7 +8476,8 @@ actors_external_fr: |-
       "resources": "Le consentement du pays hôte pour la principale concentration de bases au Moyen-Orient pendant une guerre active contre l'Iran [security.military][situation].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, le consentement du pays hôte étant la variable opérante [security.military].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, le consentement du pays hôte étant la variable opérante [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Le Koweït",
@@ -8327,7 +8497,8 @@ actors_external_fr: |-
       "resources": "Une contribution financière à la présence américaine [security.military].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes [security.military].\n"
+      "engagementMode": "Négociation / conclusion d'ententes [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "L'Arabie saoudite",
@@ -8347,7 +8518,8 @@ actors_external_fr: |-
       "resources": "Une contribution financière à la présence américaine [security.military].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes [security.military].\n"
+      "engagementMode": "Négociation / conclusion d'ententes [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "La Pologne",
@@ -8367,7 +8539,8 @@ actors_external_fr: |-
       "resources": "Une contribution financière à la présence américaine à l'intérieur de la zone du traité de l'Atlantique Nord [security.military].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes [security.military].\n"
+      "engagementMode": "Négociation / conclusion d'ententes [security.military].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Le Niger",
@@ -8386,7 +8559,8 @@ actors_external_fr: |-
       "resources": "Un contrôle souverain sur l'accord relatif au statut des forces dont dépendait l'accès [security.military].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "consentement retiré. Le rapport le nomme comme le cas où le consentement du pays hôte a été révoqué plutôt que négocié [security.military].\n"
+      "engagementMode": "consentement retiré. Le rapport le nomme comme le cas où le consentement du pays hôte a été révoqué plutôt que négocié [security.military].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "L'Australie",
@@ -8405,7 +8579,8 @@ actors_external_fr: |-
       "resources": "Trois paliers d'appartenance qui se superposent : conventionnel, statutaire et partenarial [security.diplomacy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Poursuite de la coopération AUKUS [security.diplomacy].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "La Nouvelle-Zélande",
@@ -8424,7 +8599,8 @@ actors_external_fr: |-
       "resources": "Une appartenance de défense collective fondée sur un traité [security.diplomacy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Les Philippines",
@@ -8443,7 +8619,8 @@ actors_external_fr: |-
       "resources": "Une appartenance de défense collective fondée sur un traité, dans le théâtre que la stratégie priorise pour la dissuasion par déni [security.diplomacy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "La Thaïlande",
@@ -8462,7 +8639,8 @@ actors_external_fr: |-
       "resources": "Une appartenance de défense collective fondée sur un traité [security.diplomacy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Israël",
@@ -8486,7 +8664,8 @@ actors_external_fr: |-
       "resources": "Le statut de cobelligérant avec la première puissance militaire mondiale et une appartenance statutaire au système d'alliances [security.diplomacy].\n",
       "constraints": "Aucun nouveau crédit supplémentaire n'a été accordé en 2025, et la médiation passe par des tiers plutôt que par un canal bilatéral [security.military][security.diplomacy].\n",
       "likelyMoves": "Poursuite des opérations conjointes tant que la guerre demeure non résolue [situation].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, en cobelligérance [situation][security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, en cobelligérance [situation][security.diplomacy].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "L'Iran",
@@ -8510,7 +8689,8 @@ actors_external_fr: |-
       "resources": "La maîtrise du statut du détroit comme objet de négociation, un canal médiatisé par Oman puis auparavant par le Pakistan, et une capacité cyber [situation][security.transnationalExposure].\n",
       "constraints": "Un blocus qui a détourné 44 navires de commerce et en a mis deux hors d'état, et une guerre menée contre la première puissance militaire mondiale et Israël réunis [situation].\n",
       "likelyMoves": "Conclusion des pourparlers de Mascate sur le transit, que les deux parties disent proches [situation].\n",
-      "engagementMode": "Blocage / non-négociable sur le plan bilatéral, engagé par médiation tierce. Le rapport montre que tous les canaux passent par le Pakistan ou par Oman plutôt qu'en direct [situation][security.diplomacy].\n"
+      "engagementMode": "Blocage / non-négociable sur le plan bilatéral, engagé par médiation tierce. Le rapport montre que tous les canaux passent par le Pakistan ou par Oman plutôt qu'en direct [situation][security.diplomacy].\n",
+      "group": "rivals"
     },
     {
       "name": "Oman",
@@ -8531,7 +8711,8 @@ actors_external_fr: |-
       "resources": "Une acceptabilité auprès des deux belligérants comme lieu de négociation après l'expiration du cessez-le-feu négocié par le Pakistan [situation][security.diplomacy].\n",
       "constraints": "Il négocie sans décider; le blocus demeure en vigueur et la guerre non résolue [situation].\n",
       "likelyMoves": "Conclusion des pourparlers de transit qu'il dit proches [situation].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, comme médiateur et détenteur du canal [situation].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, comme médiateur et détenteur du canal [situation].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "Le Pakistan",
@@ -8552,7 +8733,8 @@ actors_external_fr: |-
       "resources": "Une capacité démontrée à négocier un cessez-le-feu entre les belligérants [situation].\n",
       "constraints": "Le cessez-le-feu qu'il a négocié a pris fin unilatéralement, et le canal substantiel s'est depuis déplacé vers Mascate [situation][security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, comme médiateur dont le canal a été supplanté [situation].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, comme médiateur dont le canal a été supplanté [situation].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "L'Inde",
@@ -8571,7 +8753,8 @@ actors_external_fr: |-
       "resources": "Une compétence sur les chaînes d'approvisionnement en précurseurs chimiques [security.transnationalExposure].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Poursuite de la coopération sur les précurseurs, trajectoire que consigne l'évaluation [security.transnationalExposure].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, sur une voie coopérative [security.transnationalExposure].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, sur une voie coopérative [security.transnationalExposure].\n",
+      "group": "mena-southasia-africa"
     },
     {
       "name": "La Russie",
@@ -8591,7 +8774,8 @@ actors_external_fr: |-
       "resources": "Une capacité cyber classée parmi les plus persistantes et actives, et un antécédent d'influence démontré [security.transnationalExposure].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Poursuite des compromissions de réseaux et des activités d'influence à l'approche d'un cycle électoral dont l'appareil d'évaluation des menaces a été démantelé [security.transnationalExposure][security.posture].\n",
-      "engagementMode": "Blocage / non-négociable. Le rapport ne la nomme que comme acteur de menace [security.transnationalExposure].\n"
+      "engagementMode": "Blocage / non-négociable. Le rapport ne la nomme que comme acteur de menace [security.transnationalExposure].\n",
+      "group": "rivals"
     },
     {
       "name": "La Corée du Nord",
@@ -8610,7 +8794,8 @@ actors_external_fr: |-
       "resources": "Un vol de cryptomonnaies fonctionnant comme recette d'État, à environ 2 milliards de dollars par an [security.transnationalExposure].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Poursuite des vols à grande échelle, l'évaluation ne consignant aucune perturbation [security.transnationalExposure].\n",
-      "engagementMode": "Blocage / non-négociable [security.transnationalExposure].\n"
+      "engagementMode": "Blocage / non-négociable [security.transnationalExposure].\n",
+      "group": "rivals"
     },
     {
       "name": "L'Ukraine",
@@ -8629,7 +8814,8 @@ actors_external_fr: |-
       "resources": "Un solde non versé d'environ 62 milliards de dollars issu d'affectations antérieures [security.military].\n",
       "constraints": "La fin des crédits supplémentaires explique l'essentiel de la baisse réelle de 7,5 % des dépenses militaires américaines : le flux s'est arrêté plutôt que ralenti [security.military].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sans mention dans le rapport. Le rapport consigne la situation du financement sans décrire de modalités d'engagement [security.military].\n"
+      "engagementMode": "Sans mention dans le rapport. Le rapport consigne la situation du financement sans décrire de modalités d'engagement [security.military].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Cuba",
@@ -8648,7 +8834,8 @@ actors_external_fr: |-
       "resources": "Une souveraineté ultime reconnue sur la zone louée et une exigence de consentement mutuel pour toute modification [security.diplomacy].\n",
       "constraints": "Les limites territoriales demeurent celles de 1934 à moins que les États-Unis n'abandonnent la station : son droit de consentement ne peut forcer un départ [security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Blocage / non-négociable sur le différend permanent, que le rapport consigne comme non résolu et contesté dans sa qualification [security.diplomacy].\n"
+      "engagementMode": "Blocage / non-négociable sur le différend permanent, que le rapport consigne comme non résolu et contesté dans sa qualification [security.diplomacy].\n",
+      "group": "rivals"
     },
     {
       "name": "Le Venezuela (Nicolás Maduro; la transition politique)",
@@ -8669,7 +8856,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Son chef d'État a été retiré par la force et une puissance étrangère détient une influence sur la succession [situation][security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "transition administrée de l'extérieur. Le rapport décrit les États-Unis comme installés à l'intérieur de la succession plutôt que négociant avec une contrepartie [security.diplomacy][situation].\n"
+      "engagementMode": "transition administrée de l'extérieur. Le rapport décrit les États-Unis comme installés à l'intérieur de la succession plutôt que négociant avec une contrepartie [security.diplomacy][situation].\n",
+      "group": "rivals"
     },
     {
       "name": "L'Organisation du Traité de l'Atlantique Nord (OTAN)",
@@ -8690,7 +8878,8 @@ actors_external_fr: |-
       "resources": "Une obligation conventionnelle liant 32 membres, une présence américaine permanente sur 31 bases en Europe, et des dépenses militaires alliées en hausse [security.military].\n",
       "constraints": "Une stratégie en vigueur qui invite les alliés à prendre les devants avec un appui limité, et une part américaine des dépenses mondiales en recul de 4,3 points en une seule année [security.diplomacy][security.military].\n",
       "likelyMoves": "Hausses continues des dépenses alliées face à une contribution américaine relative en recul [security.military].\n",
-      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité mais reformulé de façon transactionnelle [security.diplomacy][security.posture].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, ancré dans un traité mais reformulé de façon transactionnelle [security.diplomacy][security.posture].\n",
+      "group": "europe-nato"
     },
     {
       "name": "Le Fonds monétaire international",
@@ -8713,7 +8902,8 @@ actors_external_fr: |-
       "resources": "Une surveillance annuelle au titre de l'article IV d'un État membre, et une autorité analytique sur laquelle le rapport s'appuie pour la composition de la base d'investisseurs [economy.externalVulnerability].\n",
       "constraints": "Le pays ne détient aucun programme : le Fonds dispose de conseils et d'aucun levier; son constat externe reformule le constat budgétaire plutôt qu'il n'en ajoute un second [economy.externalVulnerability].\n",
       "likelyMoves": "Une nouvelle consultation annuelle au titre de l'article IV suivant la même ligne analytique [economy.externalVulnerability].\n",
-      "engagementMode": "contrepartie de surveillance, consultative et non contraignante. L'appartenance sans programme rend la relation entièrement persuasive [economy.externalVulnerability].\n"
+      "engagementMode": "contrepartie de surveillance, consultative et non contraignante. L'appartenance sans programme rend la relation entièrement persuasive [economy.externalVulnerability].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "La Commission interaméricaine des droits de l'homme (Organisation des États américains)",
@@ -8736,7 +8926,8 @@ actors_external_fr: |-
       "resources": "Une qualité conventionnelle au titre de la Déclaration américaine, des rapports de fond publiables en vertu de l'article 47.3 de son règlement, et la participation du pays comme membre de l'Organisation des États américains [political.rightsAndChecks].\n",
       "constraints": "L'État n'a répondu à aucune des deux transmissions, il n'existe aucune institution nationale de droits de la personne accréditée comme interlocutrice, et ses constats n'emportent aucune exécution [political.rightsAndChecks].\n",
       "likelyMoves": "Poursuite de la publication de constats de fond et du suivi du pays sans engagement de l'État [political.rightsAndChecks].\n",
-      "engagementMode": "contrepartie juridictionnelle, actuellement sans réponse. Le rapport consigne le passage de la préoccupation à l'adjudication et un État qui n'a pas répondu [political.rightsAndChecks].\n"
+      "engagementMode": "contrepartie juridictionnelle, actuellement sans réponse. Le rapport consigne le passage de la préoccupation à l'adjudication et un État qui n'a pas répondu [political.rightsAndChecks].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "L'Organisation mondiale de la santé",
@@ -8755,7 +8946,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Elle a perdu un État membre, le rapport consignant le retrait comme achevé plutôt qu'en cours [security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / désengagé. L'appartenance a pris fin [security.diplomacy].\n"
+      "engagementMode": "Sorti / désengagé. L'appartenance a pris fin [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le Conseil des droits de l'homme des Nations Unies",
@@ -8774,7 +8966,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "La participation a été résiliée par décret, et l'examen qui en a découlé a produit 66 retraits supplémentaires [security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / désengagé [security.diplomacy].\n"
+      "engagementMode": "Sorti / désengagé [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "La Convention-cadre des Nations Unies sur les changements climatiques",
@@ -8794,7 +8987,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Elle perd une partie dont les cibles ont été annulées et qui est évaluée comme ne détenant plus de cible de carboneutralité [security.diplomacy][territory.transition].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / en désengagement, les organismes ayant reçu instruction de cesser participation et financement dans la mesure permise par la loi [security.diplomacy].\n"
+      "engagementMode": "Sorti / en désengagement, les organismes ayant reçu instruction de cesser participation et financement dans la mesure permise par la loi [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le Groupe d'experts intergouvernemental sur l'évolution du climat",
@@ -8813,7 +9007,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Il perd la participation et le financement d'un État membre par instruction exécutive [security.diplomacy].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n"
+      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le Centre d'excellence européen pour la lutte contre les menaces hybrides",
@@ -8834,7 +9029,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Il perd un participant au moment même où l'appareil de ce participant en matière de menaces hybrides était démantelé [security.posture].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n"
+      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le Forum mondial sur la cyberexpertise",
@@ -8855,7 +9051,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Il perd un participant alors même que les services de renseignement de celui-ci documentent en détail des intrusions cyber prépositionnées [security.posture][security.transnationalExposure].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n"
+      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le Forum mondial de lutte contre le terrorisme",
@@ -8874,7 +9071,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Il perd un participant dont le niveau de menace terroriste intérieure est évalué comme accru [security.diplomacy][security.internal].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n"
+      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le Forum mondial sur la migration et le développement",
@@ -8893,7 +9091,8 @@ actors_external_fr: |-
       "resources": "Sans mention dans le rapport",
       "constraints": "Il perd un participant dont la migration internationale nette est passée d'environ 2,7 millions à quelque 321 000 au cours de la période [security.diplomacy][security.transnationalExposure].\n",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n"
+      "engagementMode": "Sorti / en désengagement [security.diplomacy].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "La Commission internationale des frontières et des eaux",
@@ -8912,7 +9111,8 @@ actors_external_fr: |-
       "resources": "Un pouvoir d'administration du traité portant à la fois sur la répartition de l'eau et sur l'assainissement frontalier [security.transnationalExposure].\n",
       "constraints": "Les obligations de cycle ont été manquées à répétition depuis 1994, et le levier d'exécution que consigne le rapport est une condition budgétaire états-unienne plutôt qu'un recours de la commission [security.transnationalExposure].\n",
       "likelyMoves": "Administration du plan de livraison convenu en février 2026 [security.transnationalExposure].\n",
-      "engagementMode": "Indépendance de par la loi, administrateur bilatéral sans pouvoir d'exécution propre [security.transnationalExposure].\n"
+      "engagementMode": "Indépendance de par la loi, administrateur bilatéral sans pouvoir d'exécution propre [security.transnationalExposure].\n",
+      "group": "intl-orgs"
     },
     {
       "name": "Le partenariat AUKUS",
@@ -8932,7 +9132,8 @@ actors_external_fr: |-
       "resources": "Un canal trilatéral de coopération sur les sous-marins et les capacités avancées, hors des structures d'alliance conventionnelles [security.diplomacy].\n",
       "constraints": "Sans mention dans le rapport",
       "likelyMoves": "Sans mention dans le rapport",
-      "engagementMode": "Négociation / conclusion d'ententes, comme partenariat permanent entre trois alliés [security.diplomacy].\n"
+      "engagementMode": "Négociation / conclusion d'ententes, comme partenariat permanent entre trois alliés [security.diplomacy].\n",
+      "group": "indo-pacific"
     },
     {
       "name": "Les organisations criminelles transnationales (cartel de Sinaloa, cartel Jalisco Nouvelle Génération, MS-13, Forces armées révolutionnaires de Colombie, Armée de libération nationale)",
@@ -8955,7 +9156,8 @@ actors_external_fr: |-
       "resources": "Des réseaux de production et d'acheminement, des cellules à l'intérieur du pays, et un accès aux institutions financières internationales pour le blanchiment [security.transnationalExposure].\n",
       "constraints": "Les décès par surdose de fentanyl ont reculé d'environ 30 % et la puissance du produit a baissé du fait de la perturbation de la chaîne d'approvisionnement, les saisies ont augmenté de 57 %, et au moins 19 navires ont été frappés en un seul trimestre [security.transnationalExposure][security.internal][situation].\n",
       "likelyMoves": "Poursuite du trafic sous des interceptions croissantes et une action militaire létale permanente, avec des relations qui s'étendent aux groupes équatoriens et brésiliens [security.transnationalExposure][situation].\n",
-      "engagementMode": "Blocage / non-négociable. Le rapport consigne une réponse faite d'interception, de poursuite et de frappe létale plutôt que de toute forme d'engagement [situation][security.internal].\n"
+      "engagementMode": "Blocage / non-négociable. Le rapport consigne une réponse faite d'interception, de poursuite et de frappe létale plutôt que de toute forme d'engagement [situation][security.internal].\n",
+      "group": "transnational-crime"
     }
   ]
 sources: |-

@@ -207,6 +207,14 @@ export interface ActorEntry {
   currentPosition?: string;
   /** Layer 1: which report fields cite this actor. */
   fieldsCitedIn?: string[];
+  /**
+   * Render-level grouping slug (2026-08-13): language-neutral id resolved to a
+   * display label via src/lib/actorGroups.ts. A reading aid ONLY — actors stay
+   * individual entries (per-actor fieldsCitedIn granularity is the candidate
+   * substrate for the risk-correlations re-derivation). Absent on untagged
+   * countries (CAN/DEU/BRA) → flat-list rendering.
+   */
+  group?: string;
   /** Layer 2 (analytical draft — AI-drafted/unverified; renders collapsed + labelled). */
   interests: string;
   resources: string;

@@ -1,4 +1,4 @@
-# Actors extraction prompt — v1.8
+# Actors extraction prompt — v1.12
 
 **Country:** United States / États-Unis (USA) · **Run date:** 2026-08-07
 
@@ -29,7 +29,7 @@ Work from the English fields (`_en`) as the primary text. The French fields (`_f
 
 **The current `actors_domestic_en/fr` and `actors_external_en/fr` fields are NOT input to this extraction.** They represent the prior structured actors field that this extraction pass is intended to replace. Ignore them entirely; they must not influence which actors you extract, aggregate, or characterise. The extraction is anchored exclusively to the six-peer substantive content plus the `situation` field. Reading them would let old-schema thinking leak into the new extraction and would let claims that are not grounded in the report's substantive analysis contaminate the output.
 
-Same rule for the existing `risks_en/fr` field: it is not input. Do not use it to identify actors.
+(The former `risks_en/fr` field was removed 2026-07-20; the gap register `capacity_knownAndUnbuilt_*` is likewise NOT input — it is a derivative.)
 
 ---
 
@@ -73,9 +73,13 @@ Exclude entities that fall into these categories:
 
 - **Measurement and assessment bodies:** organisations named because they measure, rank, or assess the country are NOT actors. Examples: Freedom House, V-Dem, World Justice Project, Transparency International, SIPRI, U.S. Geological Survey, Climate Action Tracker, Canadian Climate Institute, credit rating agencies, ratings and index producers. They produce facts about the country; they do not act in the country's situation.
 
-  **Distinct from membership bodies where the country is a participant.** These ARE actors: IMF (issues Article IV policy advice; country is a member), OECD (peer review and policy positioning; country is a member), NATO, EU, G7, CPTPP, CETA, UN. The test is whether the country acts *with* the body (member, participant, counterpart) or is acted *upon* by the body (measured, rated, ranked). Membership bodies stay in as actors; measurement bodies filter out.
+  **Distinct from membership bodies where the country is a participant.** These ARE actors: IMF (issues Article IV policy advice; country is a member), OECD (peer review and policy positioning; country is a member), NATO, EU, G7, UN. The test is whether the country acts *with* the body (member, participant, counterpart) or is acted *upon* by the body (measured, rated, ranked). Membership bodies stay in as actors; measurement bodies filter out.
 
-**(f) Statutes and legal instruments.** Bill C-5, CUSMA, NORAD, section 129 of the Constitution Act — these are instruments, not actors. Exception: named international bodies operating under a treaty ARE actors (NATO, the EU, the G7).
+  **National statistics offices and audit institutions ARE actors** (state institutions that both act and constrain what their own data can support: a statistics office, an auditor general, a budget office). A body that measures the *country as its subject* is not (a health-data agency reporting on the health system, a ratings agency). Test: is it part of the state apparatus, or an external observer of it? (v1.10, after Statistics Canada resolved IN and the health-data agency OUT.)
+
+**(f) Statutes and legal instruments — including trade AGREEMENTS.** Bill C-5, CUSMA, CPTPP, CETA, section 129 of the Constitution Act — a named legal text or trade agreement is an *instrument* the country wields or operates under, not an actor, even when the country is a party to it. The distinguishing test (v1.10): a standing ORGANISATION or COMMAND with a membership, secretariat or mandate is an actor (NATO, the EU, the G7, the IMF, the OECD, **NORAD** — a binational command); a document, statute or agreement is an instrument (CUSMA, CPTPP, CETA, Bill C-5). NORAD was wrongly listed here as an instrument in v1.9 and is the single most consequential mis-exclusion a country report can make where continental/collective defence runs through such a command — a binational or multilateral command IS an actor.
+
+**(g) A source id is not a prose mention.** A field carrying `[nrcan-critical-minerals-list]` does NOT name Natural Resources Canada as an actor; a bracketed `[source-id]` is a citation, not a mention. An entity qualifies for extraction only where the *prose* names it. `fieldsCitedIn` lists the fields whose prose names the actor — never a field that merely cites a source the actor happens to publish. (v1.10 — otherwise every measurement body cited anywhere becomes a spurious actor.)
 
 ### Aggregate
 
@@ -91,7 +95,7 @@ Aggregation is asymmetric: within an aggregated category, always name the specif
 
 Do NOT aggregate provinces into a "provinces" bloc; provinces carry distinct positions and stay atomic.
 
-**Do NOT aggregate multilateral bodies into a "multilaterals" or "treaty-bodies" category.** NATO, the G7, the OECD, the EU, CETA, CPTPP, Five Eyes, and the IMF each have distinct memberships, mandates, and instruments. Keep them atomic. Cross-domain presence is surfaced through `fieldsCitedIn`, not by merging distinct bodies.
+**Do NOT aggregate multilateral bodies into a "multilaterals" or "treaty-bodies" category.** NATO, the G7, the OECD, the EU, Five Eyes, and the IMF each have distinct memberships, mandates, and instruments. Keep them atomic. (Trade agreements such as CETA and CPTPP are instruments, not actors — see filter (f).) Cross-domain presence is surfaced through `fieldsCitedIn`, not by merging distinct bodies.
 
 **Individual policy figures within a state:** if a foreign minister, ambassador, or head of a specific agency is named individually while the state itself is also named as an actor, treat the individual as part of the state actor unless they carry a distinctive position or role that the report highlights separately. Example: Trump as US President is not a separate actor from the "United States (Trump administration)" — merge. But a named cabinet minister with a specific policy position that the report characterises as distinct from the administration line would be a distinct actor.
 
@@ -99,13 +103,15 @@ Do NOT aggregate provinces into a "provinces" bloc; provinces carry distinct pos
 
 ```yaml
 name: [name or category]
-kind: [federal executive | legislature | opposition party | subnational government | indigenous body | private-sector | labour | civil-society | independent institution | judicial | regulatory | commission of inquiry | security or intelligence service | military | international body | foreign state | other]
+kind: [federal executive | governing party | opposition party | legislature | subnational government | indigenous body | private-sector | state-owned enterprise | labour | civil-society | independent institution | judicial | regulatory | commission of inquiry | security or intelligence service | military | international body | foreign state | other]
 liveActorStatus: [current | recently-live | historical-only-excluded]
-fieldsCitedIn: [comma-separated field names, e.g. political.powerStructure, political.stabilityDrivers, economy.realEconomy, situation]
-currentPositionFromReport: >
+fieldsCitedIn: [comma-separated field names whose PROSE names the actor, e.g. political.powerStructure, political.stabilityDrivers, economy.realEconomy, situation — never a field that merely cites a source (filter (g))]
+currentPosition: >
   One sentence, close paraphrase of what the report says the actor is doing
-  or its position. May include a citation.
+  or its position. May include a citation or [dot.path] anchor.
 ```
+
+`governing party` and `state-owned enterprise` were added in v1.10: the party of government is distinct from the executive, and a Crown corporation / sovereign fund is neither private-sector nor a department.
 
 ---
 
@@ -118,7 +124,7 @@ For every actor produced in Layer 1, produce a Layer 2 draft.
 **Layer 2 requirements (implementation spec §8.1):**
 
 - Layer 2 is `citationType: Interpretation`.
-- Layer 2 ANCHORS per §1 of the spec: each draft carries the `[source-id]`s or `[dot.path]` field anchors it reasons from (e.g. `[political.stabilityDrivers]`, an already-cited source id) — inline in the field text and/or in the `anchors` list of the output structure. An anchor must point at a non-empty report field or a source id present in this report's registry; ghost anchors are rejected by the validators.
+- Layer 2 ANCHORS per §1 of the spec: each draft carries the `[source-id]`s or `[dot.path]` field anchors it reasons from (e.g. `[political.stabilityDrivers]`, an already-cited source id) — inline in the field text and/or in the `anchors` list of the output structure. An anchor must point at a non-empty report field or a source id present in this report's registry; ghost anchors are rejected by the validators. The bare `situation` is a valid FIELD anchor (the event layer has no peer prefix — it is the one dotless field path, reserved; v1.9).
 - Layer 2 renders COLLAPSED by default and visibly labelled AI-drafted / unverified on the site.
 
 ### Layer 2 fields
@@ -138,18 +144,52 @@ For every actor produced in Layer 1, produce a Layer 2 draft.
 - `judicial-deference`: expected to be respected structurally (constitutional courts)
 - `hijack-exposed`: nominally independent but with observable risk of political capture — flag when the report describes such risk or when historical parallel makes it live (e.g. central bank facing political interference threats)
 - `veto-holder`: consent or non-obstruction required (indigenous nations with constitutional standing on some decisions, second chambers)
+- `executive-subordinate`: an administrative or executive body that executes government policy and holds no independent bargaining position of its own (line departments, delivery and coordinating agencies) — added v1.10, used widely
+- `commitment-bound`: not a counterpart the country negotiates with but a standard it is measured against — benchmarks agreed collectively at summit level, then met or missed, not bargained (defence-spending alliances) — added v1.10
+- `structurally-bound`: a joint or binational command the country operates *inside* rather than negotiates *with* — the function is conducted through it and the report describes no alternative (binational defence commands such as NORAD) — added v1.10
 - `blocked / not-engageable`: hostile or non-recognising counterpart (sanctioned states, insurgent groups)
 - `report-silent`: not derivable from the text
 
+The categories are illustrative — forge a new one where none fits, but say so inline ("… — a forged category") and prefer an existing one over a synonym.
+
+**English output** keeps the English token. **French output** renders the label in FRENCH per this table (and translates the justification; translate a forged label into French too) — **nothing in the French actor fields stays in English** (added v1.11, after English tokens were found displaying in the French Canada card; the actor section is a lot of work for something rarely read, so it must not create French clean-up):
+
+| English token | French label |
+|---|---|
+| `current` (liveActorStatus) | En vigueur |
+| `recently-live` (liveActorStatus) | Récemment en vigueur |
+| `historical-only-excluded` (liveActorStatus) | Historique (exclu) |
+| `report-silent` (any field) | Sans mention dans le rapport |
+| `negotiable / dealable` | Négociation / conclusion d'ententes |
+| `statutorily-independent` | Indépendance de par la loi |
+| `judicial-deference` | Déférence judiciaire |
+| `hijack-exposed` | Exposition au détournement |
+| `veto-holder` | Pouvoir de veto |
+| `executive-subordinate` | Subordination à l'exécutif |
+| `commitment-bound` | Lien par engagement |
+| `structurally-bound` | Lien structurel |
+| `blocked / not-engageable` | Blocage / non-négociable |
+
 Choose the most accurate mode for this actor in the current situation the report describes. If the report describes a *change* in engagement mode (independence contested, capture risk emerging, standing newly asserted), note it. Do not force actors into modes that misrepresent them.
 
-### Layer 2 output structure per actor
+### Output structure per actor — ONE FLAT OBJECT (v1.10)
+
+Emit each actor as a SINGLE flat object: Layer 1 and Layer 2 fields at the same
+level, in this key order. Do NOT nest Layer 2 under a `layer2Draft` object and do
+NOT rename `currentPosition` — v1.9 emitted a nested `layer2Draft` /
+`currentPositionFromReport` shape the site renderer cannot read, and every field
+had to be flattened by hand at install. The renderer applies the "AI-drafted,
+collapsed, Interpretation" treatment to the Layer 2 fields itself; do not emit
+`status` or `citationType` keys per actor.
 
 ```yaml
-layer2Draft:
-  status: AI-drafted, unverified — collapsed by default
-  citationType: Interpretation
-  anchors: [source-ids or dot.path field anchors the draft reasons from]
+- name: …
+  kind: …
+  liveActorStatus: …
+  group: …
+  currentPosition: >
+    One sentence, close paraphrase of the report.
+  fieldsCitedIn: [field names whose prose names the actor]
   interests: >
     …
   resources: >
@@ -159,9 +199,37 @@ layer2Draft:
   likelyMoves: >
     …
   engagementMode: >
-    [mode name]. [one sentence justifying the mode from the report text, or
-    noting a shift the report describes.]
+    [mode label]. [one sentence justifying the mode from the report text, or
+    noting a shift the report describes.] [anchors]
+  anchors: [source-ids or dot.path field anchors the draft reasons from]
 ```
+
+### `group` — render-level reading buckets (v1.12, 2026-08-13)
+
+Emit a `group` slug on EVERY actor. It is a **display-only reading aid**: the site
+renders one collapsible block per group instead of a flat list (USA's 101 actors
+were unreadable flat; CAN's 50 nearly so). It is NOT the `Aggregate` step above —
+**do not merge, fold, or drop actors to fit a group.** Every actor stays its own
+entry with its own `fieldsCitedIn`; grouping never blurs per-actor granularity,
+which is the substrate for cross-domain and correlation work.
+
+Rules:
+- The slug is **language-neutral** (lower-kebab-case, ASCII) and is copied
+  VERBATIM into the French translation step — never translated. Display labels
+  live in code (`src/lib/actorGroups.ts`), so no French enters the YAML.
+- **Reuse an existing slug** from `src/lib/actorGroups.ts` wherever the country's
+  institution genuinely matches it (`judiciary`, `military`, `regulators`,
+  `security-intel`, `corporate-labour-civil`, `intl-orgs`, …). Coin a new slug only
+  for an institution the existing set misdescribes — a country's own constitutional
+  furniture should be named in its own terms (USA `congress-parties` vs CAN
+  `parliament-parties`; CAN `crown-corporations`, `provinces-territories`).
+  List any NEW slug in the run summary so its EN/FR labels can be added to the table.
+- Aim for **8–14 groups per list**, each holding roughly 2–10 actors. A group of one
+  is acceptable when nothing else honestly belongs with it.
+- **External actors: group by TYPE, not by alignment** (e.g. `bilateral-states`,
+  `defence-alliances`, `intl-orgs`) unless the report itself asserts the bloc.
+  Sorting a country's counterparts into ally/rival buckets is an editorial judgment
+  the report has not made — do not invent it here.
 
 ---
 
@@ -193,7 +261,9 @@ A foreign state (e.g. the United States for a Canada report) is external even if
 
 ## Output
 
-Return a YAML block with two top-level arrays: `domestic` and `external`. Each entry contains Layer 1 fields plus a nested `layer2Draft` object.
+Return a YAML block with two top-level arrays: `domestic` and `external`. Each entry is ONE FLAT object (Layer 1 + Layer 2 fields at the same level, key order per the structure above — no nested `layer2Draft`, no `currentPositionFromReport`).
+
+**Language.** This pass emits ENGLISH only (`actors_*_en`). The French fields (`actors_*_fr`) are produced as a separate downstream translation step — same structure, same order, anchors, `group` and `fieldsCitedIn` copied verbatim (`group` is a language-neutral slug — NEVER translate it; its French label lives in `src/lib/actorGroups.ts`), and the engagement-mode label, `liveActorStatus` and `report-silent` **rendered in French per the label table (§engagementMode)** — nothing left in English in the French fields. Do not attempt the French here.
 
 **Self-check before returning:** every Layer 1 actor names in `fieldsCitedIn` the field(s) it was found in, verified against the attached text. Any actor whose `fieldsCitedIn` cannot be filled from the attached text is DROPPED rather than kept — an actor you cannot place in a field is an actor the report did not name.
 

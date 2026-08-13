@@ -74,3 +74,10 @@ node_modules/.pnpm/react-stately@3.46.0_react@19.2.5/node_modules/react-stately/
 !node_modules/.pnpm/react-stately@3.46.0_react@19.2.5/node_modules/react-stately/stories
 !node_modules/.pnpm/react-stately@3.46.0_react@19.2.5/node_modules/react-stately/test
 fly.toml
+
+# TTS raw output (~569 MB): staged into public/audio by scripts/stage-audio.cjs
+# before deploy; the app never reads tts-out itself. (public/audio stays IN.)
+tts-out
+
+# Git history (~309 MB): the build never shells out to git.
+.git

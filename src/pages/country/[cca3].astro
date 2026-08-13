@@ -111,11 +111,16 @@ function buildLangSeo(data: Record<string, any>, lang: 'en' | 'fr'): LangSeo {
 
   const nonEmpty = (x: string) => x.trim().length > 2;
 
+  // Layer 1 ONLY (sourced extraction): name + currentPosition. Never emit
+  // Layer-2 fields (interests/resources/constraints/likelyMoves) here — they
+  // are AI-drafted inference, and on the crawl surface any framing label
+  // detaches from the content (search snippets), so only the sourced layer
+  // meets the publish-nothing-unverified-as-verified rule (decided 2026-08-13).
   const actors = [
     ...parseJsonArray(data?.[`actors_domestic_${lang}`]),
     ...parseJsonArray(data?.[`actors_external_${lang}`]),
   ]
-    .map((a) => `${stripCites(a?.name)}: ${stripCites(a?.interests)}`)
+    .map((a) => `${stripCites(a?.name)}: ${stripCites(a?.currentPosition)}`)
     .filter(nonEmpty);
 
   const sources = parseJsonArray(data?.sources)
@@ -362,9 +367,9 @@ const pageDesc =
   )}
 
   <!-- Old-browser reading view (see components/LegacyReveal.astro). Hidden
-       unless the React app can't run. GATED to seoReady countries (Canada only
-       right now) so unreviewed reports never surface here. Reuses buildLangSeo
-       output, so it tracks the .astro SEO layer, not the React page. -->
+       unless the React app can't run. GATED to SEO_READY_COUNTRIES (Canada +
+       USA right now) so unreviewed reports never surface here. Reuses
+       buildLangSeo output, so it tracks the .astro SEO layer, not the React page. -->
   {seoReady && (
     <LegacyReveal>
       <p class="thf-kicker">Country situation report — Reading view</p>

@@ -3,137 +3,246 @@
     {
       "title": "Canada — full report",
       "lang": "en",
+      "voices": [
+        {
+          "id": "adrian",
+          "label": "Adrian"
+        },
+        {
+          "id": "sarah",
+          "label": "Sarah"
+        }
+      ],
       "tracks": [
         {
-          "id": "can-en-baseline",
+          "id": "can-en-adrian-baseline",
           "label": "Baseline",
-          "src": "/audio/countries/CAN/en/01-baseline.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/01-baseline.mp3",
           "seconds": 171
         },
         {
-          "id": "can-en-territory",
+          "id": "can-en-adrian-territory",
           "label": "Territory",
-          "src": "/audio/countries/CAN/en/02-territory.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/02-territory.mp3",
           "seconds": 957
         },
         {
-          "id": "can-en-society",
+          "id": "can-en-adrian-society",
           "label": "Society",
-          "src": "/audio/countries/CAN/en/03-society.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/03-society.mp3",
           "seconds": 1003
         },
         {
-          "id": "can-en-economy",
+          "id": "can-en-adrian-economy",
           "label": "Economy",
-          "src": "/audio/countries/CAN/en/04-economy.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/04-economy.mp3",
           "seconds": 887
         },
         {
-          "id": "can-en-political",
+          "id": "can-en-adrian-political",
           "label": "Political Order",
-          "src": "/audio/countries/CAN/en/05-political.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/05-political.mp3",
           "seconds": 1768
         },
         {
-          "id": "can-en-capacity",
+          "id": "can-en-adrian-capacity",
           "label": "Capacity to Deliver",
-          "src": "/audio/countries/CAN/en/06-capacity.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/06-capacity.mp3",
           "seconds": 1558
         },
         {
-          "id": "can-en-security",
+          "id": "can-en-adrian-security",
           "label": "Security & Diplomacy",
-          "src": "/audio/countries/CAN/en/07-security.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/07-security.mp3",
           "seconds": 1284
         },
         {
-          "id": "can-en-situation",
+          "id": "can-en-adrian-situation",
           "label": "Situation",
-          "src": "/audio/countries/CAN/en/08-situation.mp3",
+          "voice": "adrian",
+          "src": "/audio/countries/CAN/en/adrian/08-situation.mp3",
           "seconds": 292
+        },
+        {
+          "id": "can-en-sarah-baseline",
+          "label": "Baseline",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/01-baseline.mp3",
+          "seconds": 157
+        },
+        {
+          "id": "can-en-sarah-territory",
+          "label": "Territory",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/02-territory.mp3",
+          "seconds": 889
+        },
+        {
+          "id": "can-en-sarah-society",
+          "label": "Society",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/03-society.mp3",
+          "seconds": 939
+        },
+        {
+          "id": "can-en-sarah-economy",
+          "label": "Economy",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/04-economy.mp3",
+          "seconds": 777
+        },
+        {
+          "id": "can-en-sarah-political",
+          "label": "Political Order",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/05-political.mp3",
+          "seconds": 1638
+        },
+        {
+          "id": "can-en-sarah-capacity",
+          "label": "Capacity to Deliver",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/06-capacity.mp3",
+          "seconds": 1417
+        },
+        {
+          "id": "can-en-sarah-security",
+          "label": "Security & Diplomacy",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/07-security.mp3",
+          "seconds": 1134
+        },
+        {
+          "id": "can-en-sarah-situation",
+          "label": "Situation",
+          "voice": "sarah",
+          "src": "/audio/countries/CAN/en/sarah/08-situation.mp3",
+          "seconds": 260
         }
       ]
     },
     {
       "title": "Canada — rapport complet",
       "lang": "fr",
+      "voices": [
+        {
+          "id": "angelokyly",
+          "label": "angelokyly"
+        },
+        {
+          "id": "annonce-calme",
+          "label": "Annonce Calme"
+        }
+      ],
       "tracks": [
         {
-          "id": "can-fr-baseline",
+          "id": "can-fr-angelokyly-baseline",
           "label": "État des lieux",
-          "src": "/audio/countries/CAN/fr/01-baseline.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/01-baseline.mp3",
           "seconds": 185
         },
         {
-          "id": "can-fr-territory",
+          "id": "can-fr-angelokyly-territory",
           "label": "Territoire",
-          "src": "/audio/countries/CAN/fr/02-territory.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/02-territory.mp3",
           "seconds": 1032
         },
         {
-          "id": "can-fr-society",
+          "id": "can-fr-angelokyly-society",
           "label": "Société",
-          "src": "/audio/countries/CAN/fr/03-society.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/03-society.mp3",
           "seconds": 1054
         },
         {
-          "id": "can-fr-economy",
+          "id": "can-fr-angelokyly-economy",
           "label": "Économie",
-          "src": "/audio/countries/CAN/fr/04-economy.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/04-economy.mp3",
           "seconds": 978
         },
         {
-          "id": "can-fr-political",
+          "id": "can-fr-angelokyly-political",
           "label": "Ordre politique",
-          "src": "/audio/countries/CAN/fr/05-political.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/05-political.mp3",
           "seconds": 1897
         },
         {
-          "id": "can-fr-capacity",
+          "id": "can-fr-angelokyly-capacity",
           "label": "Capacité de mise en œuvre",
-          "src": "/audio/countries/CAN/fr/06-capacity.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/06-capacity.mp3",
           "seconds": 1651
         },
         {
-          "id": "can-fr-security",
+          "id": "can-fr-angelokyly-security",
           "label": "Sécurité et diplomatie",
-          "src": "/audio/countries/CAN/fr/07-security.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/07-security.mp3",
           "seconds": 1316
         },
         {
-          "id": "can-fr-situation",
+          "id": "can-fr-angelokyly-situation",
           "label": "Situation",
-          "src": "/audio/countries/CAN/fr/08-situation.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/countries/CAN/fr/angelokyly/08-situation.mp3",
           "seconds": 305
+        },
+        {
+          "id": "can-fr-annonce-calme-baseline",
+          "label": "État des lieux",
+          "voice": "annonce-calme",
+          "src": "/audio/countries/CAN/fr/annonce-calme/01-baseline.mp3",
+          "seconds": 179
         }
       ]
     },
     {
       "title": "Articles",
       "lang": "en",
+      "voices": [
+        {
+          "id": "adrian",
+          "label": "Adrian"
+        }
+      ],
       "tracks": [
         {
-          "id": "art-en-resource-civilization",
+          "id": "art-en-adrian-resource-civilization",
           "label": "Resource Civilization",
-          "src": "/audio/articles/resource-civilization/en/01-article.mp3",
+          "voice": "adrian",
+          "src": "/audio/articles/resource-civilization/en/adrian/01-article.mp3",
           "seconds": 925
         },
         {
-          "id": "art-en-canada-multipolar",
+          "id": "art-en-adrian-canada-multipolar",
           "label": "Canada in a Multipolar World",
-          "src": "/audio/articles/canada-multipolar/en/01-article.mp3",
+          "voice": "adrian",
+          "src": "/audio/articles/canada-multipolar/en/adrian/01-article.mp3",
           "seconds": 782
         },
         {
-          "id": "art-en-career-evolution",
+          "id": "art-en-adrian-career-evolution",
           "label": "From Translation Toward Research",
-          "src": "/audio/articles/career-evolution/en/01-article.mp3",
+          "voice": "adrian",
+          "src": "/audio/articles/career-evolution/en/adrian/01-article.mp3",
           "seconds": 465
         },
         {
-          "id": "art-en-travel-observation",
+          "id": "art-en-adrian-travel-observation",
           "label": "Travel and Observation",
-          "src": "/audio/articles/travel-observation/en/01-article.mp3",
+          "voice": "adrian",
+          "src": "/audio/articles/travel-observation/en/adrian/01-article.mp3",
           "seconds": 636
         }
       ]
@@ -141,29 +250,39 @@
     {
       "title": "Articles",
       "lang": "fr",
+      "voices": [
+        {
+          "id": "angelokyly",
+          "label": "angelokyly"
+        }
+      ],
       "tracks": [
         {
-          "id": "art-fr-resource-civilization",
+          "id": "art-fr-angelokyly-resource-civilization",
           "label": "Civilisation des ressources",
-          "src": "/audio/articles/resource-civilization/fr/01-article.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/articles/resource-civilization/fr/angelokyly/01-article.mp3",
           "seconds": 930
         },
         {
-          "id": "art-fr-canada-multipolar",
+          "id": "art-fr-angelokyly-canada-multipolar",
           "label": "Le Canada dans un monde multipolaire",
-          "src": "/audio/articles/canada-multipolar/fr/01-article.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/articles/canada-multipolar/fr/angelokyly/01-article.mp3",
           "seconds": 733
         },
         {
-          "id": "art-fr-career-evolution",
+          "id": "art-fr-angelokyly-career-evolution",
           "label": "De la traduction vers la recherche",
-          "src": "/audio/articles/career-evolution/fr/01-article.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/articles/career-evolution/fr/angelokyly/01-article.mp3",
           "seconds": 490
         },
         {
-          "id": "art-fr-travel-observation",
+          "id": "art-fr-angelokyly-travel-observation",
           "label": "Voyage et observation",
-          "src": "/audio/articles/travel-observation/fr/01-article.mp3",
+          "voice": "angelokyly",
+          "src": "/audio/articles/travel-observation/fr/angelokyly/01-article.mp3",
           "seconds": 652
         }
       ]

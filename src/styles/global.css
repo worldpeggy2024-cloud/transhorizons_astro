@@ -117,6 +117,12 @@
   --cr-hover-2: #FDF9F3;     /* subtle surface */
   --cr-divider: #F0EDE8;
   --cr-on-accent: #ffffff;   /* text on a filled accent button */
+  /* Caution (2026-08-13): epistemic notices — marks model-generated inference
+     as a different KIND of content from sourced reporting. Deliberately red, not
+     burgundy, so it never reads as ordinary accent decoration. */
+  --cr-caution: #A32017;          /* border + icon + heading */
+  --cr-caution-bg: #FDF2F1;       /* tinted panel */
+  --cr-caution-ink: #7A1810;      /* notice body text */
   /* Locator globe (Wikipedia-style orthographic) */
   --cr-map-ocean: #EAF1F7;        /* hemisphere water — very light blue */
   --cr-map-land: #DDD8CE;         /* neutral land grey */
@@ -137,6 +143,10 @@
   --cr-hover-2: #2B241C;
   --cr-divider: #2A2620;
   --cr-on-accent: #1A1815;   /* dark text on the (light) accent button */
+  /* Caution — lightened for contrast on the warm charcoal ground */
+  --cr-caution: #F0857A;
+  --cr-caution-bg: #2C1B18;
+  --cr-caution-ink: #F3B7B0;
   /* Locator globe (Wikipedia-style orthographic) */
   --cr-map-ocean: #2E2B26;        /* hemisphere water — dark grey, not black */
   --cr-map-land: #4C463C;         /* land clearly lighter than the water */

@@ -51,10 +51,33 @@ except ImportError:  # pragma: no cover
 MODEL = "s2.1-pro-free"
 
 # Voice reference IDs, per language. Fill these in once (see --find-voice).
-VOICE_IDS = {
-    "en": "bf322df2096a46f18c579d0baa36f41d",  # Adrian (en) — confirmed by ear 2026-08-12
-    "fr": "c51f4c0e9e414d9eaf7c71effd5b92d2",  # angelokyly (fr) — confirmed by ear 2026-08-12
+# Two voices per language, one of each gender, so a listener chooses rather than
+# inheriting the author's preference. Find IDs at fish.audio/app/m/<id>, or with
+# --find-voice. All four confirmed by ear 2026-08-12.
+VOICES = {
+    "en": {
+        "adrian": "bf322df2096a46f18c579d0baa36f41d",
+        "sarah":  "933563129e564b19a115bedd57b7406a",
+        "laura":  "e3cd384158934cc9a01029cd7d278634",
+    },
+    "fr": {
+        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",
+        "annonce-calme": "c5ec04dcb3f5450fb93a06f510d532b7",  # Annonce Française Calme
+    },
 }
+DEFAULT_VOICE = {"en": "adrian", "fr": "angelokyly"}
+
+
+def resolve_voice(lang: str, name: str | None) -> tuple[str, str]:
+    """Return (voice_name, reference_id) for a language."""
+    choices = VOICES.get(lang, {})
+    chosen = name or DEFAULT_VOICE.get(lang, "")
+    if chosen not in choices:
+        raise FishError(
+            f"Unknown voice '{chosen}' for '{lang}'. "
+            f"Known: {', '.join(choices) or '(none)'}"
+        )
+    return chosen, choices[chosen]
 
 # ---------------------------------------------------------------------------
 # SPOKEN-TEXT SUBSTITUTIONS
@@ -112,7 +135,11 @@ MAX_REQUEST_BYTES = 60_000
 # Verified by ear 2026-08-12. Override per run with --temperature.
 TEMPERATURE = {"en": 0.7, "fr": 0.3}
 
-MP3_BITRATE = 128          # 64 | 128 | 192
+# 64 | 128 | 192. 64 chosen by ear 2026-08-12: indistinguishable from 128 on
+# this material, and it halves both the Fly image and the listener's mobile
+# data. Note this value is part of the regeneration key, so changing it marks
+# every section stale — which is correct, it really is different audio.
+MP3_BITRATE = 64
 CHUNK_LENGTH = 300         # 100-300; how much text the engine batches internally
 NORMALIZE = True           # expands numbers and dates for natural reading
 # (connect, read). The read side is generous on purpose: a 26k-character report
@@ -486,11 +513,19 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     base = manifest_path.parent
     lang = manifest.get("lang", args.lang)
-    voice_id = args.voice or VOICE_IDS.get(lang, "")
+    voice_name, default_id = resolve_voice(lang, args.voice_name)
+    voice_id = args.voice or default_id
     temperature = (args.temperature if args.temperature is not None
                    else TEMPERATURE.get(lang, 0.7))
 
-    out_dir = args.out or Path("tts-out") / "countries" / manifest.get("country", "") / lang
+    # Each voice gets its own directory, so the sets coexist and each keeps its
+    # own generated.json — switching voice never invalidates the other set.
+    if args.out:
+        out_dir = args.out
+    elif manifest.get("country"):
+        out_dir = Path("tts-out") / "countries" / manifest["country"] / lang / voice_name
+    else:
+        out_dir = Path("tts-out") / "articles" / manifest.get("article", "") / lang / voice_name
     out_dir.mkdir(parents=True, exist_ok=True)
     state_path = out_dir / "generated.json"
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
@@ -530,7 +565,7 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     cost = total_bytes / 1_000_000 * PRICE_PER_MILLION_BYTES_USD
     print(f"\n{manifest_path}")
     print(f"  model      : {args.model}")
-    print(f"  voice      : {voice_id}  [{lang}]")
+    print(f"  voice      : {voice_name}  [{lang}]")
     print(f"  temperature: {temperature}")
     print(f"  sections   : {len(pending)} to generate, "
           f"{len(sections) - len(pending)} already current")
@@ -580,9 +615,11 @@ def main() -> int:
                         help="path to a UTF-8 .txt file (one report section)")
     parser.add_argument("-o", "--out", type=Path,
                         help="output .mp3 path (default: tts-out/<input>.mp3)")
-    parser.add_argument("--lang", choices=sorted(VOICE_IDS), default="en",
-                        help="selects the voice (default: en)")
-    parser.add_argument("--voice", help="voice reference_id, overrides --lang")
+    parser.add_argument("--lang", choices=sorted(VOICES), default="en",
+                        help="selects the voice set (default: en)")
+    parser.add_argument("--voice-name", help="named voice, e.g. adrian | sarah | "
+                                             "angelokyly | annonce-calme")
+    parser.add_argument("--voice", help="raw voice reference_id, overrides --voice-name")
     parser.add_argument("--model", default=MODEL, help=f"default: {MODEL}")
     parser.add_argument("--speed", type=float, default=1.0,
                         help="0.5-2.0, default 1.0")
@@ -633,19 +670,14 @@ def main() -> int:
         if not text:
             raise FishError(f"{args.input} is empty.")
 
-        voice_id = args.voice or VOICE_IDS.get(args.lang, "")
-        if not args.dry_run and (not voice_id or voice_id.startswith("PASTE_")):
-            raise FishError(
-                f"No voice ID set for '{args.lang}'.\n"
-                f"Find one with:  python scripts/fish_tts.py --find-voice \"Adrian\"\n"
-                f"then paste it into VOICE_IDS at the top of {Path(__file__).name}."
-            )
+        voice_name, default_id = resolve_voice(args.lang, args.voice_name)
+        voice_id = args.voice or default_id
 
         out_path = args.out or Path("tts-out") / f"{args.input.stem}.mp3"
 
         print(f"\n{args.input}")
         print(f"  model      : {args.model}")
-        print(f"  voice      : {voice_id or '(none)'}  [--lang {args.lang}]")
+        print(f"  voice      : {voice_name}  [--lang {args.lang}]")
         temperature = (args.temperature if args.temperature is not None
                        else TEMPERATURE.get(args.lang, 0.7))
 

@@ -115,7 +115,7 @@ But it was always also:
 
 ## WHO IS PEGGY
 
-Peggy Brenier, Montreal. French-born, Le Mans. Immigrated to Canada by cargo ship December 6, 2001 (Canmar Honour, officer's cabin, 120kg luggage, 26 stuffed toys — nobody searched anything).
+Peggy, Montreal. French-born, Le Mans. Immigrated to Canada by cargo ship December 6, 2001 (Canmar Honour, officer's cabin, 120kg luggage, 26 stuffed toys — nobody searched anything).
 
 **Professional:** Senior translator EN/ES→FR, ~30 years experience. Major clients: Statistics Canada, Natural Resources Canada, Environment Canada, EDSC, AEIC. OTTIAQ certified. Government of Canada Security Level II (Secret). Previously: Microsoft localizer Dublin 3 years (1998–2001). (Exchange/Outlook/Project/Office XP). Freelance since 2002 under TransHorizons.
 

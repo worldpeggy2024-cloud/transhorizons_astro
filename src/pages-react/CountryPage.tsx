@@ -19,6 +19,7 @@ import {
 import { franceAnalysis } from '@/data/france-yaml';
 import { type AnalysisContent, type ActorEntry, type SourceEntry, type ScoreRating } from '@/data/countries/analysisTypes';
 import { useReportSpeech, type SpeechSection } from '@/hooks/useReportSpeech';
+import { actorGroupLabel } from '@/lib/actorGroups';
 import { SectionAudioButton, ReportAudioBar, FloatingReportPlayer } from '@/components/ReportAudio';
 import { canadaAnalysis } from '@/data/canada';
 import { usaAnalysis } from '@/data/usa-yaml';
@@ -552,10 +553,12 @@ function ScoreRow({ label, value, language, detail, polarity = 'goodHigh' }: {
 
 function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: string; sources?: SourceEntry[] }) {
   const [expanded, setExpanded] = useState(false);
-  // FR-PLACEHOLDER: Layer-2 labels + AI-drafted notice French wording — Peggy to verify.
+  // FR REVIEWED by Peggy 2026-08-13 (Layer-2 labels + inference marker) — no longer a placeholder.
+  // Marker reworded 2026-08-13: names the KIND of content (model inference vs
+  // sourced reporting), not a confidence grade — see the section framing note.
   const labels = language === 'fr'
-    ? { interests: 'Intérêts', resources: 'Ressources', constraints: 'Contraintes', moves: 'Mouvements probables', deal: 'Négociabilité', engagement: "Mode d'engagement", position: 'Position actuelle', aiDrafted: 'Ébauche générée par IA — non vérifiée', citedIn: 'Cité dans' }
-    : { interests: 'Interests', resources: 'Resources', constraints: 'Constraints', moves: 'Likely moves', deal: 'Dealability', engagement: 'Engagement mode', position: 'Current position', aiDrafted: 'AI-drafted — unverified', citedIn: 'Cited in' };
+    ? { interests: 'Intérêts', resources: 'Ressources', constraints: 'Contraintes', moves: 'Mouvements probables', deal: 'Négociabilité', engagement: "Mode d'engagement", position: 'Position actuelle', aiDrafted: 'Inférence rédigée par IA — grille de raisonnement, à lire de façon critique', citedIn: 'Cité dans' }
+    : { interests: 'Interests', resources: 'Resources', constraints: 'Constraints', moves: 'Likely moves', deal: 'Dealability', engagement: 'Engagement mode', position: 'Current position', aiDrafted: 'Model-drafted inference — reasoning aid, read critically', citedIn: 'Cited in' };
 
   // Layer 1 (extraction — high reliability) shows on the row and above the fold;
   // Layer 2 (analytical draft) renders collapsed by default and visibly labelled
@@ -595,10 +598,13 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
           {(actor.fieldsCitedIn?.length ?? 0) > 0 && (
             <p className="font-body text-[10px] text-[var(--cr-muted)]">{labels.citedIn}: {actor.fieldsCitedIn!.join(' · ')}</p>
           )}
-          {/* Layer 2 — analytical draft, labelled */}
+          {/* Layer 2 — analytical inference, labelled by kind */}
           {layer2.length > 0 && (
-            <div className="border border-[var(--cr-border)] rounded px-3 py-2 space-y-2">
-              <p className="font-body text-[10px] italic text-[var(--cr-muted)]">⚠ {labels.aiDrafted}</p>
+            <div className="border border-[var(--cr-caution)] bg-[var(--cr-caution-bg)] rounded px-3 py-2 space-y-2">
+              <p className="flex items-center gap-1.5 font-body text-[10px] font-semibold uppercase tracking-wider text-[var(--cr-caution)]">
+                <AlertTriangle size={12} className="shrink-0" aria-hidden="true" />
+                {labels.aiDrafted}
+              </p>
               {layer2.map(([label, value]) => (
                 <div key={label}>
                   <span className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-accent)]">{label}</span>
@@ -609,6 +615,102 @@ function ActorCard({ actor, language, sources }: { actor: ActorEntry; language: 
           )}
         </div>
       )}
+    </div>
+  );
+}
+
+// ─── Actors: epistemic framing + render-level grouping (2026-08-13) ──────────
+// The framing note names the KIND of each content layer (sourced reporting vs
+// model-generated inference) rather than grading confidence. Grouping is a
+// READING aid only — actors stay individual entries in the YAML (per-actor
+// fieldsCitedIn granularity preserved for the risk-correlations re-derivation);
+// countries whose actors carry no `group` slugs (CAN, DEU, BRA) render the
+// flat lists unchanged.
+
+// FR REVIEWED by Peggy 2026-08-13 — do not redraft. Both strings support **bold**
+// (see renderBold below); French keeps U+202F narrow no-break space before : ; ! ?
+const ACTORS_FRAMING_FR = 'Chaque fiche d’acteur s’ouvre sur un résumé sourcé : la position actuelle de l’acteur, tirée des sources vérifiées du rapport. Les sections individuelles à ouvrir sont d’une autre nature : une inférence analytique générée par un modèle d’IA (intérêts, ressources, contraintes, mouvements probables) proposée comme **grille de raisonnement**, non comme constat vérifié. À lire **de façon critique et à vérifier**.';
+const ACTORS_FRAMING_EN = 'Each actor card opens with a sourced summary: the actor’s current position, drawn from this report’s verified sources. The collapsed section beneath it is different in kind: model-generated analytical inference — interests, resources, constraints, likely moves — offered as a structured way to **reason** about the actor, not as verified reporting. Read it **critically, check** it before relying on it.';
+
+/**
+ * Renders **bold** spans inside a plain copy string. The framing strings are
+ * edited by hand during review, so markdown-style `**…**` is honoured rather
+ * than requiring JSX tags in the copy — write `**like this**` and it bolds.
+ * Anything else passes through as literal text.
+ */
+function renderBold(text: string): React.ReactNode[] {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith('**') && part.endsWith('**') && part.length > 4
+      ? <strong key={i} className="font-bold">{part.slice(2, -2)}</strong>
+      : part
+  );
+}
+
+function ActorsFramingNote({ language }: { language: string }) {
+  return (
+    <div
+      role="note"
+      className="border-2 border-[var(--cr-caution)] bg-[var(--cr-caution-bg)] px-4 py-3 rounded-sm"
+    >
+      <p className="flex items-center gap-2 mb-1.5">
+        <AlertTriangle size={16} className="text-[var(--cr-caution)] shrink-0" aria-hidden="true" />
+        <span className="font-body text-xs font-bold uppercase tracking-widest text-[var(--cr-caution)] underline decoration-2 underline-offset-4">
+          {language === 'fr' ? 'À propos de cette section' : 'About this section'}
+        </span>
+        <AlertTriangle size={16} className="text-[var(--cr-caution)] shrink-0" aria-hidden="true" />
+      </p>
+      <p className="font-body text-xs text-[var(--cr-caution-ink)] leading-relaxed">
+        {renderBold(language === 'fr' ? ACTORS_FRAMING_FR : ACTORS_FRAMING_EN)}
+      </p>
+    </div>
+  );
+}
+
+function ActorGroupBlock({ slug, actors, language, sources }: { slug: string; actors: ActorEntry[]; language: string; sources?: SourceEntry[] }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border border-[var(--cr-border)]">
+      <button
+        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-[var(--cr-hover)] transition-colors gap-3"
+        onClick={() => setOpen(o => !o)}
+      >
+        <span className="font-body text-sm font-medium text-[var(--cr-ink)]">
+          {actorGroupLabel(slug, language)}
+          <span className="ml-2 font-normal text-[10px] text-[var(--cr-muted)]">({actors.length})</span>
+        </span>
+        {open ? <ChevronUp size={12} className="text-[var(--cr-muted)]" /> : <ChevronDown size={12} className="text-[var(--cr-muted)]" />}
+      </button>
+      {open && (
+        <div className="px-3 pb-3 pt-2 space-y-2 border-t border-[var(--cr-border)]">
+          {actors.map((a) => <ActorCard key={a.name} actor={a} language={language} sources={sources} />)}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Grouped when any actor carries a `group` slug (first-appearance order);
+ *  flat list otherwise (untagged countries). */
+function ActorList({ actors, language, sources }: { actors: ActorEntry[]; language: string; sources?: SourceEntry[] }) {
+  if (!actors.some((a) => a.group)) {
+    return (
+      <div className="space-y-2">
+        {actors.map((a) => <ActorCard key={a.name} actor={a} language={language} sources={sources} />)}
+      </div>
+    );
+  }
+  const order: string[] = [];
+  const byGroup = new Map<string, ActorEntry[]>();
+  for (const a of actors) {
+    const slug = a.group ?? 'other';
+    if (!byGroup.has(slug)) { byGroup.set(slug, []); order.push(slug); }
+    byGroup.get(slug)!.push(a);
+  }
+  return (
+    <div className="space-y-2">
+      {order.map((slug) => (
+        <ActorGroupBlock key={slug} slug={slug} actors={byGroup.get(slug)!} language={language} sources={sources} />
+      ))}
     </div>
   );
 }
@@ -892,7 +994,7 @@ export default function CountryPage() {
     internalSecurity: language === 'fr' ? 'Sécurité intérieure' : 'Internal security',
     diplomacy: language === 'fr' ? 'Diplomatie et posture extérieure' : 'Diplomacy & external posture',
     domesticActors: language === 'fr' ? 'Acteurs nationaux' : 'Domestic actors',
-    externalActors: language === 'fr' ? 'Acteurs extérieurs' : 'External actors',
+    externalActors: language === 'fr' ? 'Acteurs internationaux' : 'External actors',
     // FR-PLACEHOLDER: society/territory/capacity/substrate UI labels — Peggy to verify French wording.
     constitutionalSubstrate: language === 'fr' ? 'Substrat constitutionnel' : 'Constitutional substrate',
     territory: language === 'fr' ? 'Territoire' : 'Territory',
@@ -1465,21 +1567,14 @@ export default function CountryPage() {
         <FrameworkSection ref={(el) => { sectionRefs.current.actors = el; }} icon={Users} title={t.actors}>
           {hasAnalysis ? (
             <div className="space-y-6">
+              <ActorsFramingNote language={language} />
               <div>
                 <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-3">{t.domesticActors}</h4>
-                <div className="space-y-2">
-                  {lang!.actors.domestic.map((actor) => (
-                    <ActorCard key={actor.name} actor={actor} language={language} sources={activeSources} />
-                  ))}
-                </div>
+                <ActorList actors={lang!.actors.domestic} language={language} sources={activeSources} />
               </div>
               <div>
                 <h4 className="font-body text-xs text-[var(--cr-accent)] uppercase tracking-widest mb-3">{t.externalActors}</h4>
-                <div className="space-y-2">
-                  {lang!.actors.external.map((actor) => (
-                    <ActorCard key={actor.name} actor={actor} language={language} sources={activeSources} />
-                  ))}
-                </div>
+                <ActorList actors={lang!.actors.external} language={language} sources={activeSources} />
               </div>
             </div>
           ) : (

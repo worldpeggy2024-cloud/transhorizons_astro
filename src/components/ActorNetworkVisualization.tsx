@@ -278,7 +278,7 @@ export function ActorNetworkVisualization({
       subtitle: 'Carte interactive montrant les relations et les flux d\'influence',
       legend: 'Légende',
       domestic: 'Acteurs nationaux',
-      external: 'Acteurs externes',
+      external: 'Acteurs internationaux',
       bidirectional: 'Influence bidirectionnelle',
       oneway: 'Influence unidirectionnelle',
       high: 'Influence élevée',

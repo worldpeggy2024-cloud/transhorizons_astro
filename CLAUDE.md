@@ -100,6 +100,25 @@
     peerCorrections) → derivatives → actors. The situation pass also emits passNotes (per-event
     kept/folded/dropped verdicts) — the validators treat it as the event-scan engagement record. Actors
     Layer 2 renders collapsed and labelled AI-drafted; engagementMode replaces dealability (legacy accepted).
+  - ACTORS — STANDING DECISIONS (2026-08-13, apply to EVERY country from here on):
+    - LAYER 2 IS PUBLISHED, LABELLED BY KIND. Layer 2 (interests/resources/constraints/likelyMoves/
+      engagementMode) renders on the public page, collapsed, in a red caution panel, under a section-level
+      "About this section" notice. The label states the KIND of content (model-generated analytical
+      inference, offered as a reasoning aid, not a finding to cite) — NOT a confidence grade. The governing
+      rule is "never publish the unverified AS IF verified", not "never publish the unverified". Do not
+      weaken the notice; do not restore confidence-gradient wording ("AI-drafted — unverified").
+    - SEO LAYER 1 ONLY — HARD RULE. The crawlable SEO div in src/pages/country/[cca3].astro emits
+      `name: currentPosition` ONLY. NEVER emit interests/resources/constraints/likelyMoves/engagementMode
+      there. Rationale: on the crawl surface a framing label detaches from its content (search snippets),
+      so only the sourced layer qualifies. Generic code — carries to every country automatically.
+    - GROUPING IS RENDER-LEVEL, NEVER A DATA MERGE. Each actor carries a language-neutral `group` slug
+      (actors-pass-template v1.12 emits it; copied verbatim into the French step, never translated);
+      display labels live in src/lib/actorGroups.ts so NO French enters the YAML. Actors stay INDIVIDUAL
+      entries — per-actor fieldsCitedIn granularity is the substrate for cross-domain/correlation work.
+      Countries with no slugs fall back to flat lists. USA 101→17 groups, CAN 50→14 (tagged 2026-08-13).
+      Do NOT re-merge at data level (the 2026-07-27 CAN merge is the dead convention): raw pre-merge pass
+      output survives per country under content/docs/deepsearch-jobs/<ISO3>/, but it is ENGLISH-ONLY and
+      the French postdates the merge, so un-merging costs NEW French — it does not save review.
   - LEGACY fields (economy_macroReality_*, capacity_permitting_*) stay DECLARED in Keystatic so saves
     don't strip not-yet-regenerated countries; renderer/adapter read new-name-first with legacy fallback;
     new generation never writes them. (executiveSnapshot_* is fully REMOVED — declarations AND YAML keys;

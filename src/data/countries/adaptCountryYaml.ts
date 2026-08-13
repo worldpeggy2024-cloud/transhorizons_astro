@@ -59,6 +59,7 @@ function adaptActors(arr: unknown): ActorEntry[] {
     liveActorStatus: a.liveActorStatus ? String(a.liveActorStatus) : undefined,
     currentPosition: a.currentPosition ? String(a.currentPosition) : undefined,
     fieldsCitedIn: Array.isArray(a.fieldsCitedIn) ? (a.fieldsCitedIn as unknown[]).map(String) : undefined,
+    group: a.group ? String(a.group) : undefined,
     // Layer 2 (analytical draft — AI-drafted/unverified).
     interests: String(a.interests ?? ''),
     resources: String(a.resources ?? ''),

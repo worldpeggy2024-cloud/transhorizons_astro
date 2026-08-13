@@ -4797,7 +4797,8 @@ actors_domestic_en: |-
         "capacity.approvals",
         "security.diplomacy",
         "situation"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Liberal Party of Canada (governing caucus)",
@@ -4819,7 +4820,8 @@ actors_domestic_en: |-
         "political.powerStructure",
         "political.stabilityDrivers",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Conservative Party of Canada (Official Opposition)",
@@ -4840,7 +4842,8 @@ actors_domestic_en: |-
         "political.powerStructure",
         "political.shockAbsorbers",
         "capacity.approvals"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Bloc Québécois",
@@ -4859,7 +4862,8 @@ actors_domestic_en: |-
       "anchors": [
         "political.powerStructure",
         "capacity.approvals"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "New Democratic Party",
@@ -4878,7 +4882,8 @@ actors_domestic_en: |-
       "anchors": [
         "political.powerStructure",
         "capacity.approvals"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Parliament of Canada (House of Commons and Senate)",
@@ -4905,7 +4910,8 @@ actors_domestic_en: |-
         "political.stateStructure",
         "capacity.approvals",
         "society.cohesion"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Senate of Canada",
@@ -4925,7 +4931,8 @@ actors_domestic_en: |-
         "political.powerStructure",
         "political.rightsAndChecks",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Speaker of the House of Commons",
@@ -4944,7 +4951,8 @@ actors_domestic_en: |-
       "anchors": [
         "political.powerStructure",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "The Crown (Governor General; Governor in Council)",
@@ -4970,7 +4978,8 @@ actors_domestic_en: |-
         "political.constitutionalSubstrate",
         "society.composition",
         "capacity.approvals"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Supreme Court of Canada (and its Independent Advisory Board for judicial appointments)",
@@ -4993,7 +5002,8 @@ actors_domestic_en: |-
         "political.constitutionalSubstrate",
         "society.religion",
         "political.powerStructure"
-      ]
+      ],
+      "group": "judiciary"
     },
     {
       "name": "Auditor General of Canada",
@@ -5010,7 +5020,8 @@ actors_domestic_en: |-
       "engagementMode": "statutorily-independent. It reports to Parliament by mandate and its findings are not negotiated with the departments audited [capacity.steering].",
       "anchors": [
         "capacity.steering"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Parliamentary Budget Officer",
@@ -5037,7 +5048,8 @@ actors_domestic_en: |-
         "security.military",
         "capacity.delivery",
         "economy.externalVulnerability"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Bank of Canada",
@@ -5057,7 +5069,8 @@ actors_domestic_en: |-
       "anchors": [
         "economy.publicFinances",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Statistics Canada",
@@ -5079,7 +5092,8 @@ actors_domestic_en: |-
         "society.demographics",
         "society.composition",
         "capacity.productivity"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Canada Revenue Agency",
@@ -5096,7 +5110,8 @@ actors_domestic_en: |-
       "engagementMode": "executive-subordinate. The report presents it as the administrative expression of federal fiscal arrangements, not as an actor with a position [political.stateStructure].",
       "anchors": [
         "political.stateStructure"
-      ]
+      ],
+      "group": "regulators"
     },
     {
       "name": "Major Projects Office (with its Indigenous Advisory Council)",
@@ -5115,7 +5130,8 @@ actors_domestic_en: |-
       "anchors": [
         "capacity.approvals",
         "capacity.steering"
-      ]
+      ],
+      "group": "regulators"
     },
     {
       "name": "Global Affairs Canada",
@@ -5133,7 +5149,8 @@ actors_domestic_en: |-
       "anchors": [
         "security.diplomacy",
         "economy.externalVulnerability"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Natural Resources Canada",
@@ -5151,7 +5168,8 @@ actors_domestic_en: |-
       "anchors": [
         "territory.minerals",
         "capacity.productivity"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Department of National Defence and the Canadian Armed Forces",
@@ -5171,7 +5189,8 @@ actors_domestic_en: |-
         "security.military",
         "political.stabilityDrivers",
         "security.posture"
-      ]
+      ],
+      "group": "military"
     },
     {
       "name": "Defence Investment Agency",
@@ -5188,7 +5207,8 @@ actors_domestic_en: |-
       "engagementMode": "executive-subordinate. Created by government to execute procurement; no independent standing is described [security.military].",
       "anchors": [
         "security.military"
-      ]
+      ],
+      "group": "military"
     },
     {
       "name": "Intelligence and security services (Communications Security Establishment; Canadian Security Intelligence Service with the Integrated Terrorism Assessment Centre; Criminal Intelligence Service Canada; Foreign Influence Transparency Commissioner)",
@@ -5210,7 +5230,8 @@ actors_domestic_en: |-
         "security.internal",
         "security.transnationalExposure",
         "security.posture"
-      ]
+      ],
+      "group": "security-intel"
     },
     {
       "name": "Royal Canadian Mounted Police",
@@ -5231,7 +5252,8 @@ actors_domestic_en: |-
         "security.internal",
         "capacity.steering",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "security-intel"
     },
     {
       "name": "Canada Border Services Agency",
@@ -5250,7 +5272,8 @@ actors_domestic_en: |-
       "anchors": [
         "security.internal",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "security-intel"
     },
     {
       "name": "Public Inquiry into Foreign Interference (Justice Marie-Josée Hogue)",
@@ -5270,7 +5293,8 @@ actors_domestic_en: |-
       "anchors": [
         "security.transnationalExposure",
         "security.diplomacy"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Government of Alberta (the Premier)",
@@ -5296,7 +5320,8 @@ actors_domestic_en: |-
         "political.constitutionalSubstrate",
         "political.rightsAndChecks",
         "capacity.approvals"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Government of Quebec",
@@ -5321,7 +5346,8 @@ actors_domestic_en: |-
         "society.religion",
         "society.language",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Territorial governments (Yukon, Northwest Territories, Nunavut)",
@@ -5341,7 +5367,8 @@ actors_domestic_en: |-
         "political.stateStructure",
         "capacity.approvals",
         "territory.climate"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "First Ministers (federal, provincial and territorial)",
@@ -5359,7 +5386,8 @@ actors_domestic_en: |-
       "anchors": [
         "capacity.productivity",
         "political.stateStructure"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Chief Electoral Officer of Alberta",
@@ -5378,7 +5406,8 @@ actors_domestic_en: |-
       "anchors": [
         "political.stabilityDrivers",
         "political.constitutionalSubstrate"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Court of King's Bench of Alberta",
@@ -5397,7 +5426,8 @@ actors_domestic_en: |-
       "anchors": [
         "political.constitutionalSubstrate",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "judiciary"
     },
     {
       "name": "Indigenous rights-holders (Assembly of First Nations; Athabasca Chipewyan, Piikani, Siksika and Blood Tribe; Cree Nation)",
@@ -5423,7 +5453,8 @@ actors_domestic_en: |-
         "capacity.approvals",
         "capacity.steering",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "indigenous-rightsholders"
     },
     {
       "name": "Federal Crown financing corporations and the Canada Strong Fund (Business Development Bank of Canada, Export Development Canada, Canada Infrastructure Bank; Canada Strong Fund)",
@@ -5441,7 +5472,8 @@ actors_domestic_en: |-
       "anchors": [
         "economy.politicalEconomy",
         "capacity.productivity"
-      ]
+      ],
+      "group": "crown-corporations"
     },
     {
       "name": "Hydro-Québec",
@@ -5461,7 +5493,8 @@ actors_domestic_en: |-
         "economy.politicalEconomy",
         "territory.metabolism",
         "political.constitutionalSubstrate"
-      ]
+      ],
+      "group": "crown-corporations"
     },
     {
       "name": "Class 1 freight railways (Canadian National; Canadian Pacific Kansas City)",
@@ -5479,7 +5512,8 @@ actors_domestic_en: |-
       "anchors": [
         "territory.metabolism",
         "capacity.inheritedTerrain"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Oil-and-gas sector and the Oil Sands Alliance (Canadian Natural Resources, Suncor Energy, Cenovus, Imperial Oil; Enbridge, TC Energy)",
@@ -5501,7 +5535,8 @@ actors_domestic_en: |-
         "political.stabilityDrivers",
         "capacity.approvals",
         "territory.transition"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Chartered banks (Royal Bank of Canada, Toronto-Dominion, Bank of Nova Scotia, Bank of Montreal, Canadian Imperial Bank of Commerce)",
@@ -5520,7 +5555,8 @@ actors_domestic_en: |-
       "anchors": [
         "economy.politicalEconomy",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Organised labour (Canadian Labour Congress, Unifor, Confédération des syndicats nationaux)",
@@ -5539,7 +5575,8 @@ actors_domestic_en: |-
       "anchors": [
         "economy.politicalEconomy",
         "economy.externalVulnerability"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Canadian Bar Association (and its Alberta branch)",
@@ -5557,7 +5594,8 @@ actors_domestic_en: |-
       "anchors": [
         "political.rightsAndChecks",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     }
   ]
 actors_domestic_fr: |-
@@ -5597,7 +5635,8 @@ actors_domestic_fr: |-
         "capacity.approvals",
         "security.diplomacy",
         "situation"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Parti libéral du Canada (caucus au pouvoir)",
@@ -5619,7 +5658,8 @@ actors_domestic_fr: |-
         "political.powerStructure",
         "political.stabilityDrivers",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Parti conservateur du Canada (Opposition officielle)",
@@ -5640,7 +5680,8 @@ actors_domestic_fr: |-
         "political.powerStructure",
         "political.shockAbsorbers",
         "capacity.approvals"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Bloc Québécois",
@@ -5659,7 +5700,8 @@ actors_domestic_fr: |-
       "anchors": [
         "political.powerStructure",
         "capacity.approvals"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Nouveau Parti démocratique",
@@ -5678,7 +5720,8 @@ actors_domestic_fr: |-
       "anchors": [
         "political.powerStructure",
         "capacity.approvals"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Parlement du Canada (Chambre des communes et Sénat)",
@@ -5705,7 +5748,8 @@ actors_domestic_fr: |-
         "political.stateStructure",
         "capacity.approvals",
         "society.cohesion"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Sénat du Canada",
@@ -5725,7 +5769,8 @@ actors_domestic_fr: |-
         "political.powerStructure",
         "political.rightsAndChecks",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "Président de la Chambre des communes",
@@ -5744,7 +5789,8 @@ actors_domestic_fr: |-
       "anchors": [
         "political.powerStructure",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "parliament-parties"
     },
     {
       "name": "La Couronne (gouverneur général; gouverneur en conseil)",
@@ -5770,7 +5816,8 @@ actors_domestic_fr: |-
         "political.constitutionalSubstrate",
         "society.composition",
         "capacity.approvals"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Cour suprême du Canada (et son comité consultatif indépendant sur les nominations judiciaires)",
@@ -5793,7 +5840,8 @@ actors_domestic_fr: |-
         "political.constitutionalSubstrate",
         "society.religion",
         "political.powerStructure"
-      ]
+      ],
+      "group": "judiciary"
     },
     {
       "name": "Vérificatrice générale du Canada",
@@ -5810,7 +5858,8 @@ actors_domestic_fr: |-
       "engagementMode": "Indépendance de par la loi. Fait rapport au Parlement en vertu de son mandat et ses conclusions ne sont pas négociées avec les ministères vérifiés [capacity.steering].",
       "anchors": [
         "capacity.steering"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Directrice parlementaire du budget",
@@ -5837,7 +5886,8 @@ actors_domestic_fr: |-
         "security.military",
         "capacity.delivery",
         "economy.externalVulnerability"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Banque du Canada",
@@ -5857,7 +5907,8 @@ actors_domestic_fr: |-
       "anchors": [
         "economy.publicFinances",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Statistique Canada",
@@ -5879,7 +5930,8 @@ actors_domestic_fr: |-
         "society.demographics",
         "society.composition",
         "capacity.productivity"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Agence du revenu du Canada",
@@ -5896,7 +5948,8 @@ actors_domestic_fr: |-
       "engagementMode": "Subordination à l'exécutif. Le rapport la présente comme l'expression administrative des arrangements budgétaires fédéraux, non comme un acteur doté d'une position [political.stateStructure].",
       "anchors": [
         "political.stateStructure"
-      ]
+      ],
+      "group": "regulators"
     },
     {
       "name": "Bureau des grands projets (avec son Conseil consultatif autochtone)",
@@ -5915,7 +5968,8 @@ actors_domestic_fr: |-
       "anchors": [
         "capacity.approvals",
         "capacity.steering"
-      ]
+      ],
+      "group": "regulators"
     },
     {
       "name": "Affaires mondiales Canada",
@@ -5933,7 +5987,8 @@ actors_domestic_fr: |-
       "anchors": [
         "security.diplomacy",
         "economy.externalVulnerability"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Ressources naturelles Canada",
@@ -5951,7 +6006,8 @@ actors_domestic_fr: |-
       "anchors": [
         "territory.minerals",
         "capacity.productivity"
-      ]
+      ],
+      "group": "pm-executive"
     },
     {
       "name": "Ministère de la Défense nationale et les Forces armées canadiennes",
@@ -5971,7 +6027,8 @@ actors_domestic_fr: |-
         "security.military",
         "political.stabilityDrivers",
         "security.posture"
-      ]
+      ],
+      "group": "military"
     },
     {
       "name": "Agence des investissements en défense",
@@ -5988,7 +6045,8 @@ actors_domestic_fr: |-
       "engagementMode": "Subordination à l'exécutif. Créée par le gouvernement pour exécuter l'approvisionnement; aucune autonomie indépendante n'est décrite [security.military].",
       "anchors": [
         "security.military"
-      ]
+      ],
+      "group": "military"
     },
     {
       "name": "Services de renseignement et de sécurité (Centre de la sécurité des télécommunications; Service canadien du renseignement de sécurité, avec le Centre intégré d’évaluation du terrorisme; Service canadien de renseignements criminels; commissaire à la transparence en matière d’influence étrangère)",
@@ -6010,7 +6068,8 @@ actors_domestic_fr: |-
         "security.internal",
         "security.transnationalExposure",
         "security.posture"
-      ]
+      ],
+      "group": "security-intel"
     },
     {
       "name": "Gendarmerie royale du Canada",
@@ -6031,7 +6090,8 @@ actors_domestic_fr: |-
         "security.internal",
         "capacity.steering",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "security-intel"
     },
     {
       "name": "Agence des services frontaliers du Canada",
@@ -6050,7 +6110,8 @@ actors_domestic_fr: |-
       "anchors": [
         "security.internal",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "security-intel"
     },
     {
       "name": "Enquête publique sur l'ingérence étrangère (juge Marie-Josée Hogue)",
@@ -6070,7 +6131,8 @@ actors_domestic_fr: |-
       "anchors": [
         "security.transnationalExposure",
         "security.diplomacy"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Gouvernement de l'Alberta (première ministre)",
@@ -6096,7 +6158,8 @@ actors_domestic_fr: |-
         "political.constitutionalSubstrate",
         "political.rightsAndChecks",
         "capacity.approvals"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Gouvernement du Québec",
@@ -6121,7 +6184,8 @@ actors_domestic_fr: |-
         "society.religion",
         "society.language",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Gouvernements territoriaux (Yukon, Territoires du Nord-Ouest, Nunavut)",
@@ -6141,7 +6205,8 @@ actors_domestic_fr: |-
         "political.stateStructure",
         "capacity.approvals",
         "territory.climate"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Premiers ministres (fédéral, provinciaux et territoriaux)",
@@ -6159,7 +6224,8 @@ actors_domestic_fr: |-
       "anchors": [
         "capacity.productivity",
         "political.stateStructure"
-      ]
+      ],
+      "group": "provinces-territories"
     },
     {
       "name": "Directeur général des élections de l'Alberta",
@@ -6178,7 +6244,8 @@ actors_domestic_fr: |-
       "anchors": [
         "political.stabilityDrivers",
         "political.constitutionalSubstrate"
-      ]
+      ],
+      "group": "independent-institutions"
     },
     {
       "name": "Cour du Banc du Roi de l'Alberta",
@@ -6197,7 +6264,8 @@ actors_domestic_fr: |-
       "anchors": [
         "political.constitutionalSubstrate",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "judiciary"
     },
     {
       "name": "Titulaires de droits autochtones (Assemblée des Premières Nations; Athabasca Chipewyan, Piikani, Siksika et Tribu des Blood; Nation crie)",
@@ -6223,7 +6291,8 @@ actors_domestic_fr: |-
         "capacity.approvals",
         "capacity.steering",
         "political.shockAbsorbers"
-      ]
+      ],
+      "group": "indigenous-rightsholders"
     },
     {
       "name": "Sociétés d’État fédérales de financement et Fonds pour un Canada fort (Banque de développement du Canada, Exportation et développement Canada, Banque de l’infrastructure du Canada; Fonds pour un Canada fort)",
@@ -6241,7 +6310,8 @@ actors_domestic_fr: |-
       "anchors": [
         "economy.politicalEconomy",
         "capacity.productivity"
-      ]
+      ],
+      "group": "crown-corporations"
     },
     {
       "name": "Hydro-Québec",
@@ -6261,7 +6331,8 @@ actors_domestic_fr: |-
         "economy.politicalEconomy",
         "territory.metabolism",
         "political.constitutionalSubstrate"
-      ]
+      ],
+      "group": "crown-corporations"
     },
     {
       "name": "Chemins de fer de marchandises de catégorie 1 (Canadien National; Canadien Pacifique Kansas City)",
@@ -6279,7 +6350,8 @@ actors_domestic_fr: |-
       "anchors": [
         "territory.metabolism",
         "capacity.inheritedTerrain"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Secteur pétrolier et gazier et l’Oil Sands Alliance (Canadian Natural Resources, Suncor Energy, Cenovus, Imperial Oil; Enbridge, TC Energy)",
@@ -6301,7 +6373,8 @@ actors_domestic_fr: |-
         "political.stabilityDrivers",
         "capacity.approvals",
         "territory.transition"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Banques à charte (Banque Royale du Canada, Banque Toronto-Dominion, Banque de Nouvelle-Écosse, Banque de Montréal, Banque Canadienne Impériale de Commerce)",
@@ -6320,7 +6393,8 @@ actors_domestic_fr: |-
       "anchors": [
         "economy.politicalEconomy",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Mouvement syndical (Congrès du travail du Canada, Unifor, Confédération des syndicats nationaux)",
@@ -6339,7 +6413,8 @@ actors_domestic_fr: |-
       "anchors": [
         "economy.politicalEconomy",
         "economy.externalVulnerability"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     },
     {
       "name": "Association du Barreau canadien (et sa division de l'Alberta)",
@@ -6357,7 +6432,8 @@ actors_domestic_fr: |-
       "anchors": [
         "political.rightsAndChecks",
         "political.stabilityDrivers"
-      ]
+      ],
+      "group": "corporate-labour-civil"
     }
   ]
 actors_external_en: |-
@@ -6390,7 +6466,8 @@ actors_external_en: |-
         "security.posture",
         "security.diplomacy",
         "situation"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "People's Republic of China",
@@ -6412,7 +6489,8 @@ actors_external_en: |-
         "security.diplomacy",
         "security.transnationalExposure",
         "security.posture"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "India",
@@ -6432,7 +6510,8 @@ actors_external_en: |-
       "anchors": [
         "security.diplomacy",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "European Union",
@@ -6450,7 +6529,8 @@ actors_external_en: |-
       "anchors": [
         "security.diplomacy",
         "security.posture"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "North Atlantic Treaty Organization",
@@ -6470,7 +6550,8 @@ actors_external_en: |-
         "security.military",
         "security.diplomacy",
         "security.posture"
-      ]
+      ],
+      "group": "defence-alliances"
     },
     {
       "name": "Five Eyes",
@@ -6487,7 +6568,8 @@ actors_external_en: |-
       "engagementMode": "report-silent. Named as a membership pillar with no activity attributed to it in the reporting period [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
-      ]
+      ],
+      "group": "defence-alliances"
     },
     {
       "name": "International Monetary Fund",
@@ -6508,7 +6590,8 @@ actors_external_en: |-
         "capacity.productivity",
         "economy.externalVulnerability",
         "economy.realEconomy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Organisation for Economic Co-operation and Development",
@@ -6529,7 +6612,8 @@ actors_external_en: |-
         "capacity.productivity",
         "security.diplomacy",
         "economy.realEconomy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Group of Seven",
@@ -6548,7 +6632,8 @@ actors_external_en: |-
       "anchors": [
         "security.diplomacy",
         "economy.realEconomy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Group of Twenty",
@@ -6565,7 +6650,8 @@ actors_external_en: |-
       "engagementMode": "negotiable / dealable as a membership body [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Kingdom of Denmark",
@@ -6582,7 +6668,8 @@ actors_external_en: |-
       "engagementMode": "negotiable / dealable. The report describes a settled agreement being implemented and a narrow residual disagreement [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "North American Aerospace Defense Command (NORAD)",
@@ -6603,7 +6690,8 @@ actors_external_en: |-
         "security.military",
         "security.posture",
         "security.diplomacy"
-      ]
+      ],
+      "group": "defence-alliances"
     }
   ]
 actors_external_fr: |-
@@ -6636,7 +6724,8 @@ actors_external_fr: |-
         "security.posture",
         "security.diplomacy",
         "situation"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "République populaire de Chine",
@@ -6658,7 +6747,8 @@ actors_external_fr: |-
         "security.diplomacy",
         "security.transnationalExposure",
         "security.posture"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "Inde",
@@ -6678,7 +6768,8 @@ actors_external_fr: |-
       "anchors": [
         "security.diplomacy",
         "security.transnationalExposure"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "Union européenne",
@@ -6696,7 +6787,8 @@ actors_external_fr: |-
       "anchors": [
         "security.diplomacy",
         "security.posture"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Organisation du Traité de l'Atlantique Nord",
@@ -6716,7 +6808,8 @@ actors_external_fr: |-
         "security.military",
         "security.diplomacy",
         "security.posture"
-      ]
+      ],
+      "group": "defence-alliances"
     },
     {
       "name": "Five Eyes",
@@ -6733,7 +6826,8 @@ actors_external_fr: |-
       "engagementMode": "Sans mention dans le rapport. Nommé comme pilier d'appartenance sans qu'aucune activité ne lui soit attribuée durant la période visée [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
-      ]
+      ],
+      "group": "defence-alliances"
     },
     {
       "name": "Fonds monétaire international",
@@ -6754,7 +6848,8 @@ actors_external_fr: |-
         "capacity.productivity",
         "economy.externalVulnerability",
         "economy.realEconomy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Organisation de coopération et de développement économiques",
@@ -6775,7 +6870,8 @@ actors_external_fr: |-
         "capacity.productivity",
         "security.diplomacy",
         "economy.realEconomy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Groupe des Sept",
@@ -6794,7 +6890,8 @@ actors_external_fr: |-
       "anchors": [
         "security.diplomacy",
         "economy.realEconomy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Groupe des Vingt",
@@ -6811,7 +6908,8 @@ actors_external_fr: |-
       "engagementMode": "Négociation / conclusion d'ententes en tant qu'organisme d'appartenance [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
-      ]
+      ],
+      "group": "intl-orgs"
     },
     {
       "name": "Royaume du Danemark",
@@ -6828,7 +6926,8 @@ actors_external_fr: |-
       "engagementMode": "Négociation / conclusion d'ententes. Le rapport décrit un accord réglé en cours de mise en œuvre et un désaccord résiduel étroit [security.diplomacy].",
       "anchors": [
         "security.diplomacy"
-      ]
+      ],
+      "group": "bilateral-states"
     },
     {
       "name": "Commandement de la défense aérospatiale de l'Amérique du Nord (NORAD)",
@@ -6849,7 +6948,8 @@ actors_external_fr: |-
         "security.military",
         "security.posture",
         "security.diplomacy"
-      ]
+      ],
+      "group": "defence-alliances"
     }
   ]
 sources: |-

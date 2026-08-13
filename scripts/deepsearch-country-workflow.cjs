@@ -108,6 +108,27 @@ function nonEmptyString(v) {
   return typeof v === 'string' && v.trim().length > 0;
 }
 
+/**
+ * Slugs declared in the ACTOR_GROUPS table of src/lib/actorGroups.ts — the
+ * render-level actor group labels (2026-08-13). Parsed rather than imported:
+ * this is a .cjs script and that is a TypeScript module. Returns null when the
+ * table cannot be read, so the caller SKIPS the coverage check rather than
+ * reporting every slug as unlabelled.
+ */
+function knownActorGroupSlugs() {
+  try {
+    const src = fs.readFileSync(path.join(process.cwd(), 'src', 'lib', 'actorGroups.ts'), 'utf8');
+    const table = src.slice(src.indexOf('ACTOR_GROUPS'));
+    const slugs = new Set();
+    const re = /^\s*'([a-z0-9-]+)'\s*:\s*\{/gm;
+    let m;
+    while ((m = re.exec(table)) !== null) slugs.add(m[1]);
+    return slugs.size ? slugs : null;
+  } catch {
+    return null;
+  }
+}
+
 function isGenericHomepage(urlString) {
   try {
     const u = new URL(urlString);
@@ -481,6 +502,7 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
   // TODO(post-migration): drop the legacy-dealability acceptance once every
   // displayed country's actors have been regenerated through the actors pass
   // (engagementMode becomes the only accepted key).
+  const knownSlugs = knownActorGroupSlugs();
   const actorReq = ['name', 'interests', 'resources', 'constraints', 'likelyMoves'];
   const actorPaths = [
     ['actors.domestic.en', content?.actors?.domestic?.en],
@@ -504,7 +526,25 @@ function validateContent(content, sourceIds, acceptedExtraIds, eventIds, isUSA, 
       if (!nonEmptyString(a?.engagementMode) && !nonEmptyString(a?.dealability)) {
         errors.push(`${label}[${i}]: engagementMode (or legacy dealability) is required`);
       }
+      // `group` — render-level reading bucket (actors-pass-template v1.12).
+      // WARN, never error: legacy single-phase countries predate the field, and a
+      // missing slug degrades gracefully (that country renders flat lists). Warning
+      // exists because that degradation is otherwise SILENT — a pass that forgot to
+      // emit `group` looks identical to one that ran correctly until the page is opened.
+      if (!nonEmptyString(a?.group)) {
+        warnings.push(`${label}[${i}] (${a?.name || 'unnamed'}): no group slug — actors render as a FLAT list for this country (actors-pass-template §group)`);
+      } else if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(a.group)) {
+        warnings.push(`${label}[${i}] (${a?.name || 'unnamed'}): group "${a.group}" is not lower-kebab-case — slugs must be language-neutral ids, never display labels`);
+      }
     });
+    // Slug/label coverage: a slug with no entry in src/lib/actorGroups.ts renders
+    // as the raw slug on the page. Surfaced here so new slugs get their EN/FR
+    // labels added (and flagged FR-PLACEHOLDER) before the country goes live.
+    const slugs = [...new Set(arr.map((a) => a?.group).filter((s) => nonEmptyString(s)))];
+    const unlabelled = knownSlugs ? slugs.filter((s) => !knownSlugs.has(s)) : [];
+    if (unlabelled.length) {
+      warnings.push(`${label}: group slug(s) with no label in src/lib/actorGroups.ts — add EN + FR (mark the French FR-PLACEHOLDER): ${unlabelled.join(', ')}`);
+    }
   }
 
 
@@ -1830,8 +1870,11 @@ SCHEMA (one object per event)
 
   // Actors pass (rework §8.1): actors-pass.prompt.md is generated from the
   // repo's source template — the versioned actors extraction prompt, currently
-  // v1.8 (extraction tradecraft must NOT be re-derived from the spec). Until
+  // v1.12 (extraction tradecraft must NOT be re-derived from the spec). Until
   // that file is pasted in, init notes the gap instead of generating.
+  // NOTE: a job folder's stamped copy is frozen at the version current when it
+  // was stamped. After bumping the template, re-stamp existing folders (v1.12
+  // added the `group` slug) or a re-run will use stale tradecraft.
   // Placeholders substituted: {{CODE}}, {{NAME_EN}}, {{NAME_FR}}, {{TODAY}}.
   const actorsTemplatePath = path.join(process.cwd(), 'content', 'docs', 'actors-pass-template.md');
   if (fs.existsSync(actorsTemplatePath)) {

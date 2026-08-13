@@ -1,4 +1,4 @@
-# Actors extraction prompt — v1.10
+# Actors extraction prompt — v1.12
 
 **Country:** {{NAME_EN}} / {{NAME_FR}} ({{CODE}}) · **Run date:** {{TODAY}}
 
@@ -186,6 +186,7 @@ collapsed, Interpretation" treatment to the Layer 2 fields itself; do not emit
 - name: …
   kind: …
   liveActorStatus: …
+  group: …
   currentPosition: >
     One sentence, close paraphrase of the report.
   fieldsCitedIn: [field names whose prose names the actor]
@@ -202,6 +203,33 @@ collapsed, Interpretation" treatment to the Layer 2 fields itself; do not emit
     noting a shift the report describes.] [anchors]
   anchors: [source-ids or dot.path field anchors the draft reasons from]
 ```
+
+### `group` — render-level reading buckets (v1.12, 2026-08-13)
+
+Emit a `group` slug on EVERY actor. It is a **display-only reading aid**: the site
+renders one collapsible block per group instead of a flat list (USA's 101 actors
+were unreadable flat; CAN's 50 nearly so). It is NOT the `Aggregate` step above —
+**do not merge, fold, or drop actors to fit a group.** Every actor stays its own
+entry with its own `fieldsCitedIn`; grouping never blurs per-actor granularity,
+which is the substrate for cross-domain and correlation work.
+
+Rules:
+- The slug is **language-neutral** (lower-kebab-case, ASCII) and is copied
+  VERBATIM into the French translation step — never translated. Display labels
+  live in code (`src/lib/actorGroups.ts`), so no French enters the YAML.
+- **Reuse an existing slug** from `src/lib/actorGroups.ts` wherever the country's
+  institution genuinely matches it (`judiciary`, `military`, `regulators`,
+  `security-intel`, `corporate-labour-civil`, `intl-orgs`, …). Coin a new slug only
+  for an institution the existing set misdescribes — a country's own constitutional
+  furniture should be named in its own terms (USA `congress-parties` vs CAN
+  `parliament-parties`; CAN `crown-corporations`, `provinces-territories`).
+  List any NEW slug in the run summary so its EN/FR labels can be added to the table.
+- Aim for **8–14 groups per list**, each holding roughly 2–10 actors. A group of one
+  is acceptable when nothing else honestly belongs with it.
+- **External actors: group by TYPE, not by alignment** (e.g. `bilateral-states`,
+  `defence-alliances`, `intl-orgs`) unless the report itself asserts the bloc.
+  Sorting a country's counterparts into ally/rival buckets is an editorial judgment
+  the report has not made — do not invent it here.
 
 ---
 
@@ -235,7 +263,7 @@ A foreign state (e.g. the United States for a Canada report) is external even if
 
 Return a YAML block with two top-level arrays: `domestic` and `external`. Each entry is ONE FLAT object (Layer 1 + Layer 2 fields at the same level, key order per the structure above — no nested `layer2Draft`, no `currentPositionFromReport`).
 
-**Language.** This pass emits ENGLISH only (`actors_*_en`). The French fields (`actors_*_fr`) are produced as a separate downstream translation step — same structure, same order, anchors and `fieldsCitedIn` copied verbatim, and the engagement-mode label, `liveActorStatus` and `report-silent` **rendered in French per the label table (§engagementMode)** — nothing left in English in the French fields. Do not attempt the French here.
+**Language.** This pass emits ENGLISH only (`actors_*_en`). The French fields (`actors_*_fr`) are produced as a separate downstream translation step — same structure, same order, anchors, `group` and `fieldsCitedIn` copied verbatim (`group` is a language-neutral slug — NEVER translate it; its French label lives in `src/lib/actorGroups.ts`), and the engagement-mode label, `liveActorStatus` and `report-silent` **rendered in French per the label table (§engagementMode)** — nothing left in English in the French fields. Do not attempt the French here.
 
 **Self-check before returning:** every Layer 1 actor names in `fieldsCitedIn` the field(s) it was found in, verified against the attached text. Any actor whose `fieldsCitedIn` cannot be filled from the attached text is DROPPED rather than kept — an actor you cannot place in a field is an actor the report did not name.
 

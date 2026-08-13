@@ -14,11 +14,18 @@
 import audioIndex from '../data/audioIndex.json';
 
 const { groups } = audioIndex as {
-  groups: { title: string; lang: string; tracks: { id: string; label: string; src: string; seconds: number }[] }[];
+  groups: {
+    title: string; lang: string;
+    voices: { id: string; label: string }[];
+    tracks: { id: string; label: string; voice: string; src: string; seconds: number }[];
+  }[];
 };
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-const totalSeconds = groups.flatMap((g) => g.tracks).reduce((a, t) => a + t.seconds, 0);
+// Total counts one voice only — the sets are alternates, not extra listening.
+const totalSeconds = groups
+  .flatMap((g) => g.tracks.filter((t) => t.voice === g.voices[0]?.id))
+  .reduce((a, t) => a + t.seconds, 0);
 ---
 
 <!doctype html>
@@ -48,6 +55,13 @@ const totalSeconds = groups.flatMap((g) => g.tracks).reduce((a, t) => a + t.seco
       font-size: .7rem; text-transform: uppercase; letter-spacing: .16em;
       color: var(--muted); margin: 2rem 0 .5rem; font-weight: 600;
     }
+    .grouphead {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .grouphead h2 { margin-bottom: .4rem; }
+    .voices { display: flex; gap: .4rem; }
+    .voice { font-size: .72rem; padding: .2rem .6rem; }
     .track { border-top: 1px solid var(--line); padding: .85rem 0; }
     .row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
     .label { font-weight: 500; }
@@ -76,11 +90,22 @@ const totalSeconds = groups.flatMap((g) => g.tracks).reduce((a, t) => a + t.seco
       Private page — not indexed, not linked.
     </p>
 
-    {groups.map((group) => (
-      <section>
-        <h2>{group.title}</h2>
+    {groups.map((group, gi) => (
+      <section data-group={gi}>
+        <div class="grouphead">
+          <h2>{group.title}</h2>
+          {group.voices.length > 1 && (
+            <div class="voices">
+              {group.voices.map((voice, vi) => (
+                <button class="voice" data-group={gi} data-voice={voice.id}
+                        aria-pressed={vi === 0 ? 'true' : 'false'}>{voice.label}</button>
+              ))}
+            </div>
+          )}
+        </div>
         {group.tracks.map((track) => (
-          <div class="track">
+          <div class="track" data-group={gi} data-voice={track.voice}
+               style={track.voice === group.voices[0]?.id ? '' : 'display:none'}>
             <div class="row">
               <span class="label">{track.label}</span>
               <span class="dur">{fmt(track.seconds)}</span>
@@ -142,6 +167,21 @@ const totalSeconds = groups.flatMap((g) => g.tracks).reduce((a, t) => a + t.seco
         a.addEventListener('play', function () {
           a.playbackRate = rate;
           players.forEach(function (other) { if (other !== a) other.pause(); });
+        });
+      });
+
+      // Voice switch: the sets are alternates of the same text, so show one at a
+      // time. Pausing on switch stops two voices reading over each other.
+      Array.prototype.slice.call(document.querySelectorAll('.voice')).forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var g = btn.dataset.group, want = btn.dataset.voice;
+          players.forEach(function (a) { a.pause(); });
+          document.querySelectorAll('.voice[data-group="' + g + '"]').forEach(function (b) {
+            b.setAttribute('aria-pressed', String(b.dataset.voice === want));
+          });
+          document.querySelectorAll('.track[data-group="' + g + '"]').forEach(function (t) {
+            t.style.display = t.dataset.voice === want ? '' : 'none';
+          });
         });
       });
 
