@@ -27,7 +27,9 @@ const canonicalHref = new URL(canonicalPath + canonicalSuffix, Astro.site ?? 'ht
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- minimum-scale=1.0 stops mobile pinch from zooming the page OUT below fit-width
+         (it would shrink to empty margins and not snap back); zoom-IN stays enabled. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalHref} />
