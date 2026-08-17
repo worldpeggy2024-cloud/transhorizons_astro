@@ -40,6 +40,7 @@ const fs = require('fs');
 const path = require('path');
 
 const NNBSP = ' ';                        // narrow no-break space (the target)
+const NBSP = ' ';                    // FULL no-break space — binds a number to a word
 const S = '[ \\u00A0\\u2009\\u202F]';          // convertible spaces: regular, NBSP, thin, NNBSP
 
 // Units to bind to a preceding number. Curated + conservative (bare m/g/l/t are
@@ -58,6 +59,15 @@ const RULES = [
   ['emdash',    new RegExp(`(?<=\\S)${S}+—`, 'gu'),                         () => NNBSP + '—'],
   ['guillemet', new RegExp(`«${S}*(?=\\S)`, 'gu'),                          () => '«' + NNBSP],
   ['guillemet', new RegExp(`(?<=\\S)${S}*»`, 'gu'),                         () => NNBSP + '»'],
+  // Anti-orphan: bind a number to the word it qualifies, so "3,2 millions" and
+  // "103 transits" cannot split across a line break. Uses the FULL no-break
+  // space — a narrow one belongs before % : » — and looks cramped between a
+  // number and a word.
+  //
+  // LAST on purpose, and it matches only a PLAIN space, so it can never undo
+  // the narrow spaces the rules above have just inserted before %, units,
+  // currencies and thousands groups.
+  ['numword',   /(?<=\d) (?=[A-Za-zÀ-ÿ])/gu,                                () => NBSP],
 ];
 
 let YAML = null;
@@ -101,11 +111,38 @@ function isProseLineEnd(line) {
   return true;
 }
 
-function fix(text) {
+/*
+ * Every key name that really occurs in the document, at any depth. Used only in
+ * nested mode: an indented `Something:` is treated as a key ONLY if the parsed
+ * YAML actually has that key. Without this guard a French prose line beginning
+ * "Note :" would look like a key and silently switch French scope off for the
+ * rest of the block.
+ */
+function keyNamesOf(doc) {
+  const names = new Set();
+  (function walk(node) {
+    if (Array.isArray(node)) return node.forEach(walk);
+    if (node && typeof node === 'object') {
+      for (const [k, v] of Object.entries(node)) { names.add(k); walk(v); }
+    }
+  })(doc);
+  return names;
+}
+
+/*
+ * opts.nested — articles keep their French inside `sections:` and
+ * `keyTakeaways:` list items, so scope has to be detected on INDENTED keys too.
+ * Country reports are flat and stay on the stricter column-0 rule.
+ */
+function fix(text, opts = {}) {
+  const nested = !!opts.nested;
+  const keySet = opts.keySet || null;
   const eol = /\r\n/.test(text) ? '\r\n' : '\n';
   const lines = text.split(/\r?\n/);
   const counts = {};
-  const keyRe = /^([A-Za-z][\w]*)\s*:/;                                  // a top-level key line (col 0)
+  const keyRe = nested
+    ? /^[ \t]*(?:-[ \t]+)?([A-Za-z][\w]*)[ \t]*:/     // any depth, list items included
+    : /^([A-Za-z][\w]*)\s*:/;                          // a top-level key line (col 0)
   const wrapRe = new RegExp(`^([ \\t]*)([:—»])${S}*(.*)$`, 'u'); // line that STARTS with :/—/»
   const candidates = [];
   let isFrench = false;
@@ -114,8 +151,11 @@ function fix(text) {
 
   for (let i = 0; i < lines.length; i++) {
     const km = lines[i].match(keyRe);
-    if (km) {                                               // key line: set scope, never transform
-      isFrench = km[1].endsWith('_fr');
+    if (km && (!keySet || keySet.has(km[1]))) {             // key line: set scope, never transform
+      // Articles carry their citations as `sources: { en: [...], fr: [...] }`,
+      // so in nested mode a bare `fr:` opens French scope too. Country files
+      // have no such key, so their behaviour is unchanged.
+      isFrench = km[1].endsWith('_fr') || (nested && km[1] === 'fr');
       inSources = km[1] === 'sources';
       continue;
     }
@@ -158,15 +198,25 @@ function countryFiles() {
     .map((p) => path.relative(process.cwd(), p));
 }
 
+function articleFiles() {
+  const root = path.join(process.cwd(), 'content', 'articles');
+  if (!fs.existsSync(root)) return [];
+  return fs.readdirSync(root)
+    .filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'))
+    .map((f) => path.relative(process.cwd(), path.join(root, f)));
+}
+
 function main() {
   const args = process.argv.slice(2);
   const write = args.includes('--write');
   const all = args.includes('--all');
+  const articles = args.includes('--articles');
   let files = args.filter((a) => !a.startsWith('--'));
   if (all) files = [...new Set([...files, ...countryFiles()])];
+  if (articles) files = [...new Set([...files, ...articleFiles()])];
 
   if (files.length === 0) {
-    console.log('Usage: node scripts/fix-fr-typography.cjs <file...> [--all] [--write]');
+    console.log('Usage: node scripts/fix-fr-typography.cjs <file...> [--all] [--articles] [--write]');
     process.exit(1);
   }
 
@@ -174,7 +224,14 @@ function main() {
   for (const file of files) {
     if (!fs.existsSync(file)) { console.log(`SKIP (not found): ${file}`); continue; }
     const original = fs.readFileSync(file, 'utf8');
-    const res = fix(original);
+    // Articles nest their French inside sections/keyTakeaways; countries are flat.
+    const nested = file.replace(/\\/g, '/').includes('content/articles/');
+    let keySet = null;
+    if (nested && YAML) {
+      try { keySet = keyNamesOf(loadYaml(original)); }
+      catch (e) { console.log(`SKIP (unparseable): ${file} — ${e.message.split('\n')[0]}`); continue; }
+    }
+    const res = fix(original, { nested, keySet });
     const out = res.text, c = res.counts;
     const total = Object.values(c).reduce((a, b) => a + b, 0);
 

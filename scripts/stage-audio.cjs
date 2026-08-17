@@ -40,8 +40,23 @@ const SECTION_LABELS = {
 
 // One male and one female voice per language, so the listener chooses.
 const VOICE_LABELS = {
-  adrian: 'Adrian', sarah: 'Sarah', laura: 'Laura',
-  angelokyly: 'angelokyly', 'annonce-calme': 'Annonce Calme',
+  // English — male
+  adrian: 'Adrian (US)',
+  'deep-voice': 'Deep Voice (British)',
+  'war-arsenal': 'War Arsenal (US)',
+  'adam-stone': 'Adam Stone (British)',
+  // English — female
+  laura: 'Laura (deep)',
+  florence: 'Florence (lighter)',
+  'old-woman': 'Old Woman (softer)',
+  ogechi: 'Ogechi (British)',
+  sarah: 'Sarah (rejected)',
+  // French — male
+  angelokyly: 'angelokyly (deep)',
+  'le-narrateur': 'Le Narrateur (dramatic)',
+  // French — female
+  'annonce-calme': 'Annonce Calme',
+  ora: 'Ora (articulate)',
 };
 
 // MPEG-1 Layer III bitrates (kbps) and sample rates, indexed as in the frame
@@ -50,20 +65,56 @@ const VOICE_LABELS = {
 const MP3_BITRATES = [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320, 0];
 const MP3_RATES = [44100, 48000, 32000, 0];
 
-/** Duration in seconds, from the first frame header of a CBR MP3. */
+/*
+ * ffprobe, if we can find it. Reading the first frame header is NOT reliable
+ * on spliced files: ffmpeg writes a LAME/Xing info frame first, whose bitrate
+ * field is not the stream's, so a 64 kbps file was being reported as 48 kbps
+ * and its duration overstated by a third. ffprobe reads the real container.
+ */
+function findFfprobe() {
+  const { execFileSync } = require('child_process');
+  const candidates = ['ffprobe'];
+  const base = path.join(process.env.LOCALAPPDATA || '', 'Microsoft', 'WinGet', 'Packages');
+  if (fs.existsSync(base)) {
+    for (const dir of fs.readdirSync(base).filter((d) => d.startsWith('Gyan.FFmpeg'))) {
+      const guess = path.join(base, dir, 'ffmpeg-9.0-full_build', 'bin', 'ffprobe.exe');
+      if (fs.existsSync(guess)) candidates.push(guess);
+    }
+  }
+  for (const exe of candidates.reverse()) {
+    try {
+      execFileSync(exe, ['-version'], { stdio: 'ignore' });
+      return exe;
+    } catch { /* try the next */ }
+  }
+  return null;
+}
+
+const FFPROBE = findFfprobe();
+
+/** Duration in seconds. Exact via ffprobe; otherwise estimated from the header. */
 function secondsOf(file) {
+  if (FFPROBE) {
+    try {
+      const { execFileSync } = require('child_process');
+      const out = execFileSync(FFPROBE, ['-v', 'error', '-show_entries',
+        'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file],
+        { encoding: 'utf8' });
+      const seconds = parseFloat(out.trim());
+      if (Number.isFinite(seconds) && seconds > 0) return Math.round(seconds);
+    } catch { /* fall through to the estimate */ }
+  }
   const size = fs.statSync(file).size;
   const fd = fs.openSync(file, 'r');
   const head = Buffer.alloc(4);
   fs.readSync(fd, head, 0, 4, 0);
   fs.closeSync(fd);
-  // Frame sync: 11 bits set, then a valid bitrate and sample-rate index.
   if (head[0] === 0xff && (head[1] & 0xe0) === 0xe0) {
     const kbps = MP3_BITRATES[head[2] >> 4];
     const rate = MP3_RATES[(head[2] >> 2) & 0x03];
     if (kbps && rate) return Math.round((size * 8) / (kbps * 1000));
   }
-  return Math.round(size / 16000);   // fall back to assuming 128 kbps
+  return Math.round(size / 16000);
 }
 
 /*
@@ -73,6 +124,21 @@ function secondsOf(file) {
  * flag before a deploy, which is the only time public/audio needs to exist.
  */
 const INDEX_ONLY = process.argv.includes('--index-only');
+
+/*
+ * --only <substr>[,<substr>] stages just the matching paths, so a review deploy
+ * can carry the two files worth listening to rather than every superseded take.
+ *   node scripts/stage-audio.cjs --only resource-civilization
+ *   node scripts/stage-audio.cjs --only adam-stone,annonce-calme
+ */
+const ONLY = (() => {
+  const i = process.argv.indexOf('--only');
+  return i >= 0 && process.argv[i + 1]
+    ? process.argv[i + 1].split(',').map((s) => s.trim()).filter(Boolean)
+    : null;
+})();
+
+const wanted = (rel) => !ONLY || ONLY.some((s) => rel.includes(s));
 
 function copy(from, to) {
   if (INDEX_ONLY) return;
@@ -97,6 +163,7 @@ function collect() {
         const id = file.replace(/^\d+-/, '').replace(/\.mp3$/, '');
         const src = path.join(dir, file);
         const rel = `countries/CAN/${lang}/${voice}/${file}`;
+        if (!wanted(rel)) continue;
         copy(src, path.join(DEST, rel));
         tracks.push({
           id: `can-${lang}-${voice}-${id}`,
@@ -111,7 +178,10 @@ function collect() {
       groups.push({
         title: lang === 'fr' ? 'Canada — rapport complet' : 'Canada — full report',
         lang,
-        voices: voices.map((v) => ({ id: v, label: VOICE_LABELS[v] ?? v })),
+        // Derived from what was actually staged, so --only never offers a voice
+        // button whose tracks were filtered out.
+        voices: [...new Set(tracks.map((t) => t.voice))]
+          .map((v) => ({ id: v, label: VOICE_LABELS[v] ?? v })),
         tracks,
       });
     }
@@ -128,6 +198,7 @@ function collect() {
         for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).sort()) {
           const src = path.join(dir, file);
           const rel = `articles/${slug}/${lang}/${voice}/${file}`;
+          if (!wanted(rel)) continue;
           copy(src, path.join(DEST, rel));
           tracks.push({
             id: `art-${lang}-${voice}-${slug}`,
@@ -143,7 +214,8 @@ function collect() {
       groups.push({
         title: 'Articles',
         lang,
-        voices: [...seen].map((v) => ({ id: v, label: VOICE_LABELS[v] ?? v })),
+        voices: [...new Set(tracks.map((t) => t.voice))]
+          .map((v) => ({ id: v, label: VOICE_LABELS[v] ?? v })),
         tracks,
       });
     }

@@ -1,3 +1,16 @@
+# ---------------------------------------------------------------------------
+# Narration audio — TOGGLE.
+#
+# public/audio is staged by scripts/stage-audio.cjs and is gitignored, but the
+# Dockerfile does `COPY . .` from the WORKING DIRECTORY, so without this line it
+# ships in the image and adds ~900 MB to every single deploy.
+#
+# Keep it EXCLUDED for ordinary deploys. Comment the line out (and re-run
+# scripts/stage-audio.cjs first) only when you deliberately want the audio and
+# the /listen page live.
+# ---------------------------------------------------------------------------
+public/audio
+
 # flyctl launch added from .gitignore
 # dependencies
 **/node_modules

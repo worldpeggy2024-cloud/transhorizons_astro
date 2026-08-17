@@ -37,18 +37,34 @@ function cleanForTTS(text: string): string {
     .trim();
 }
 
+/* Spoken order MIRRORS ProjectDetailLayout: the layout shows Key Takeaways
+ * FIRST, "for quick orientation", under a heading, then the introduction under
+ * introductionTitle, then the sections. Read in page order but with takeaways
+ * appended last and unlabelled — the old behaviour — a listener got the summary
+ * after the argument it was meant to preface, with nothing to mark it as a
+ * summary at all. */
+const TAKEAWAYS_LABEL = { en: 'Key Takeaways', fr: 'Points clés' };
+
 export function buildArticleText(data: ArticleData, lang: 'en' | 'fr'): string {
   const parts: string[] = [];
   if (data[`title_${lang}`]) parts.push(cleanForTTS(data[`title_${lang}`]));
   if (data[`subtitle_${lang}`]) parts.push(cleanForTTS(data[`subtitle_${lang}`]));
+
+  const takeaways = data.keyTakeaways ?? [];
+  if (takeaways.length) {
+    parts.push(TAKEAWAYS_LABEL[lang]);
+    for (const k of takeaways) {
+      if (k[`title_${lang}`]) parts.push(cleanForTTS(k[`title_${lang}`]));
+      if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
+    }
+  }
+
+  if (data[`introductionTitle_${lang}`]) parts.push(cleanForTTS(data[`introductionTitle_${lang}`]));
   if (data[`introduction_${lang}`]?.trim()) parts.push(cleanForTTS(data[`introduction_${lang}`]));
+
   for (const s of (data.sections ?? [])) {
     if (s[`title_${lang}`]) parts.push(cleanForTTS(s[`title_${lang}`]));
     if (s[`content_${lang}`]) parts.push(cleanForTTS(s[`content_${lang}`]));
-  }
-  for (const k of (data.keyTakeaways ?? [])) {
-    if (k[`title_${lang}`]) parts.push(cleanForTTS(k[`title_${lang}`]));
-    if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
   }
   return parts.join('. ');
 }
@@ -60,18 +76,27 @@ export function buildArticleTextFromProps(
   introduction: string,
   sections: Array<{ title: string; content: string }>,
   keyTakeaways: Array<{ title: string; description: string }>,
+  introductionTitle?: string,
+  lang: 'en' | 'fr' = 'en',
 ): string {
   const parts: string[] = [];
   if (title) parts.push(cleanForTTS(title));
   if (subtitle) parts.push(cleanForTTS(subtitle));
+
+  if (keyTakeaways.length) {
+    parts.push(TAKEAWAYS_LABEL[lang]);
+    for (const k of keyTakeaways) {
+      if (k.title) parts.push(cleanForTTS(k.title));
+      if (k.description) parts.push(cleanForTTS(k.description));
+    }
+  }
+
+  if (introductionTitle) parts.push(cleanForTTS(introductionTitle));
   if (introduction?.trim()) parts.push(cleanForTTS(introduction));
+
   for (const s of sections) {
     if (s.title) parts.push(cleanForTTS(s.title));
     if (s.content) parts.push(cleanForTTS(s.content));
-  }
-  for (const k of keyTakeaways) {
-    if (k.title) parts.push(cleanForTTS(k.title));
-    if (k.description) parts.push(cleanForTTS(k.description));
   }
   return parts.join('. ');
 }

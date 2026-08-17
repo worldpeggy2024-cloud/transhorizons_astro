@@ -54,15 +54,43 @@ MODEL = "s2.1-pro-free"
 # Two voices per language, one of each gender, so a listener chooses rather than
 # inheriting the author's preference. Find IDs at fish.audio/app/m/<id>, or with
 # --find-voice. All four confirmed by ear 2026-08-12.
+# Shortlisted by Peggy 2026-08-12, kept broad on purpose: rotating voices
+# between reports (or between report and articles) is likely better over time
+# than one voice reading everything. Find IDs at fish.audio/app/m/<id>.
 VOICES = {
     "en": {
-        "adrian": "bf322df2096a46f18c579d0baa36f41d",
-        "sarah":  "933563129e564b19a115bedd57b7406a",
-        "laura":  "e3cd384158934cc9a01029cd7d278634",
+        # male
+        "adrian":      "bf322df2096a46f18c579d0baa36f41d",  # US — FAVOURITE
+        "deep-voice":  "e422370a73e4439b8ccc10d58b78819b",  # slightly British
+        "war-arsenal": "9184d174052b422d9fe2514ec0d4d095",  # US, clear
+        "adam-stone":  "b82d76382a3f40139e76ffbd095da13d",  # British, more expressive
+        # female
+        "laura":       "e3cd384158934cc9a01029cd7d278634",  # deep — CONFIRMED female EN (2026-08-15)
+        "florence":    "7cefff1c89464d7dbc412482f909ec2d",  # Florence Scovel Shinn, lighter
+        "old-woman":   "7e4baf13677e4b95b5e25a60b9a717b4",  # softer
+        "ogechi":      "64028e2c8f8640e6bebf4826b7dc1ebc",  # more British
+        # Peggy's own cloned voice, ENGLISH model ("Friendly Storyteller"),
+        # trained on English recordings. Use this and NOT the French clone for
+        # English: a clone trained only on French applies French phonology to
+        # English and produces a far heavier accent than she actually has.
+        # One clone per language, never one clone for both.
+        "peggy":       "5ef647b1e30a4165a135076f258b7f04",
+        # rejected 2026-08-12 ("really not pleasant to listen to"), kept only so
+        # the already-generated tts-out/**/sarah/ files stay addressable.
+        "sarah":       "933563129e564b19a115bedd57b7406a",
     },
     "fr": {
-        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",
-        "annonce-calme": "c5ec04dcb3f5450fb93a06f510d532b7",  # Annonce Française Calme
+        # male
+        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",  # very deep — FAVOURITE
+        "le-narrateur":  "4f2a0684dd0247dda68f339738c780e6",  # slightly dramatic
+        # female
+        "annonce-calme": "c5ec04dcb3f5450fb93a06f510d532b7",  # Annonce Française Calme — FAVOURITE
+        "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate
+        # Peggy's own cloned voice, FRENCH model ("Voix Féminine Chaleureuse").
+        # Both clones are PRIVATE and reachable only with this account's key —
+        # keep them private. Intended for the NOTES only: first-person pieces in
+        # her own voice, while the reports keep a neutral narrator.
+        "peggy":         "b31cd0e36a6d4e72864c4994cd1ec66e",
     },
 }
 DEFAULT_VOICE = {"en": "adrian", "fr": "angelokyly"}
@@ -100,10 +128,26 @@ SUBSTITUTIONS = {
         (r'\best-(ouest|Ouest)\b', r'este-\1', 'compass point'),
         (r'\bOuest-est\b', 'Ouest-este', 'compass point, reversed'),
         (r'\bouest-est\b', 'ouest-este', 'compass point, reversed'),
+        # Place name the French voice does not resolve; the trailing -e gives it
+        # the final syllable it was swallowing. English reads it correctly, so
+        # this is deliberately French-only.
+        (r'\bSaskatchewan\b', 'Saskatchewane', 'place name'),
+        # English term of art quoted inside French prose ("la théorie des
+        # principales ressources (staples thesis; Innis, 1930)"). The French
+        # voice reads it as French and it becomes unrecognisable; this respells
+        # the English pronunciation in French orthography.
+        (r'(?i)\bstaples[- ]thesis\b', 'stéïpeulz sessiss', 'English term in French'),
     ],
     "en": [
-        # Nothing needed so far — English reads figures and dates correctly
-        # with normalize on. Add rows here if you catch something.
+        # "kilometre" collapses to "kimeter" / "kinometer" / "kalibmeter" in
+        # every English voice tested. Doubling the L forces the first syllable.
+        # Found by Peggy 2026-08-12, after respelling, number spell-out, the km
+        # abbreviation, sentence splitting, temperature and request length had
+        # all failed — the fault is in the word, not its context. Hyphenated
+        # forms ("kill-oh-meter") also work but come out over-articulated.
+        # Matches the -re and -er spellings, singular and plural.
+        (r'\bkilomet(?:re|er)(s?)\b', r'killometer\1', 'kilometre pronunciation'),
+        (r'\bKilomet(?:re|er)(s?)\b', r'Killometer\1', 'kilometre pronunciation'),
     ],
 }
 
@@ -134,6 +178,20 @@ MAX_REQUEST_BYTES = 60_000
 # 0.3 reduces it. English was clean at 0.7, so it keeps the livelier setting.
 # Verified by ear 2026-08-12. Override per run with --temperature.
 TEMPERATURE = {"en": 0.7, "fr": 0.3}
+
+# Silence spliced between paragraphs, in milliseconds. Blank lines alone were
+# audible but far too short ("we end up gasping for air"). 0 disables splicing
+# and sends the whole section as a single request, as before.
+PARAGRAPH_PAUSE_MS = 700
+
+# Headings. extract-narration.cjs marks them with this prefix; it is stripped
+# before anything is spoken and never appears on the page. Read at body speed
+# and pace they fell flat and cost intelligibility, so they are slowed slightly
+# and framed by a long pause before, short pause after — the audiobook shape.
+HEADING_PREFIX = "## "
+HEADING_SPEED_FACTOR = 0.92
+HEADING_PAUSE_BEFORE_MS = 1100
+HEADING_PAUSE_AFTER_MS = 400
 
 # 64 | 128 | 192. 64 chosen by ear 2026-08-12: indistinguishable from 128 on
 # this material, and it halves both the Fly image and the listener's mobile
@@ -334,6 +392,122 @@ def join_mp3(parts: list[bytes]) -> bytes:
     joined = [parts[0]]
     joined.extend(_strip_id3(part) for part in parts[1:])
     return b"".join(joined)
+
+
+# ---------------------------------------------------------------------------
+# Exact pauses
+#
+# Fish has no SSML <break>, and blank lines are only a hint the model may or may
+# not honour — measurably, they bought very little. The reliable way to get a
+# real pause is to synthesise each paragraph as its own request and splice a
+# measured silence between them, which is what ffmpeg is here for.
+# ---------------------------------------------------------------------------
+
+def find_ffmpeg() -> str | None:
+    import shutil
+    found = shutil.which("ffmpeg")
+    if found:
+        return found
+    # winget installs it outside PATH until the shell restarts.
+    base = Path(os.environ.get("LOCALAPPDATA", "")) / "Microsoft" / "WinGet" / "Packages"
+    if base.is_dir():
+        for candidate in base.glob("Gyan.FFmpeg*/**/bin/ffmpeg.exe"):
+            return str(candidate)
+    return None
+
+
+def splice_with_silence(parts: list[bytes], gaps: list[int], bitrate: int) -> bytes:
+    """Concatenate MP3 parts, with gaps[i] milliseconds before parts[i + 1]."""
+    import subprocess, tempfile
+
+    ffmpeg = find_ffmpeg()
+    if not ffmpeg or len(parts) < 2:
+        return join_mp3(parts)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        work = Path(tmp)
+
+        # One silence file per distinct duration, matching Fish's output exactly
+        # (mono, 44.1 kHz) so the concat does not resample every part.
+        silences: dict[int, Path] = {}
+        for ms in sorted(set(gaps)):
+            if ms <= 0:
+                continue
+            path = work / f"sil{ms}.mp3"
+            subprocess.run(
+                [ffmpeg, "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono",
+                 "-t", f"{ms / 1000:.3f}", "-c:a", "libmp3lame",
+                 "-b:a", f"{bitrate}k", str(path)],
+                check=True, capture_output=True,
+            )
+            silences[ms] = path
+
+        listing = []
+        for index, part in enumerate(parts):
+            piece = work / f"part{index:03d}.mp3"
+            piece.write_bytes(part)
+            if index:
+                gap = gaps[index - 1]
+                if gap > 0:
+                    listing.append(f"file '{silences[gap].as_posix()}'")
+            listing.append(f"file '{piece.as_posix()}'")
+
+        list_file = work / "list.txt"
+        list_file.write_text("\n".join(listing) + "\n", encoding="utf-8")
+        out = work / "joined.mp3"
+        subprocess.run(
+            [ffmpeg, "-y", "-f", "concat", "-safe", "0", "-i", str(list_file),
+             "-c:a", "libmp3lame", "-b:a", f"{bitrate}k", str(out)],
+            check=True, capture_output=True,
+        )
+        return out.read_bytes()
+
+
+def render(text: str, voice_id: str, model: str, api_key: str, args,
+           temperature: float, pause_ms: int) -> bytes:
+    """One section of audio: paragraph pauses, and headings given weight."""
+    blocks = [b.strip() for b in re.split(r'\n\s*\n', text) if b.strip()]
+
+    if pause_ms <= 0 or len(blocks) < 2 or not find_ffmpeg():
+        plain = text.replace(HEADING_PREFIX, "")
+        return join_mp3([
+            synthesize(batch, voice_id, model, api_key,
+                       normalize=not args.no_normalize, bitrate=args.bitrate,
+                       speed=args.speed, temperature=temperature)
+            for batch in group_into_requests(plain, args.max_bytes)
+        ])
+
+    parts: list[bytes] = []
+    is_heading: list[bool] = []
+    for block in blocks:
+        heading = block.startswith(HEADING_PREFIX)
+        spoken = block[len(HEADING_PREFIX):].strip() if heading else block
+        if heading:
+            # A heading with no terminal punctuation is read with continuing
+            # intonation — it sounds like the first clause of the paragraph
+            # rather than its title. A full stop makes the pitch fall.
+            if spoken and spoken[-1] not in ".!?:":
+                spoken += "."
+        parts.append(synthesize(
+            spoken, voice_id, model, api_key,
+            normalize=not args.no_normalize, bitrate=args.bitrate,
+            speed=round(args.speed * (HEADING_SPEED_FACTOR if heading else 1.0), 3),
+            temperature=temperature,
+        ))
+        is_heading.append(heading)
+
+    # Longer silence BEFORE a heading than after it — the standard audiobook
+    # shape, which is what makes a heading read as a division of the text.
+    gaps = []
+    for index in range(1, len(parts)):
+        if is_heading[index]:
+            gaps.append(HEADING_PAUSE_BEFORE_MS)
+        elif is_heading[index - 1]:
+            gaps.append(HEADING_PAUSE_AFTER_MS)
+        else:
+            gaps.append(pause_ms)
+
+    return splice_with_silence(parts, gaps, args.bitrate)
 
 
 # ---------------------------------------------------------------------------
@@ -540,7 +714,8 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     def generation_key(spoken: str) -> str:
         digest = hashlib.sha256(spoken.encode("utf-8"))
         digest.update(f"|{voice_id}|{args.model}|{temperature}|{args.speed}"
-                      f"|{args.bitrate}|{not args.no_normalize}".encode("utf-8"))
+                      f"|{args.bitrate}|{not args.no_normalize}"
+                      f"|{args.paragraph_pause}".encode("utf-8"))
         return digest.hexdigest()
 
     prepared, keys = {}, {}
@@ -585,15 +760,13 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     started = time.monotonic()
     for index, section in enumerate(pending, start=1):
         text = prepared[section["id"]]
-        batches = group_into_requests(text, args.max_bytes)
+        blocks = len([p for p in re.split(r'\n\s*\n', text) if p.strip()])
         print(f"  [{index}/{len(pending)}] {section['id']:<10} "
-              f"{section['chars']:>7,} ch  ({len(batches)} request"
-              f"{'s' if len(batches) > 1 else ''})", flush=True)
-        parts = [synthesize(b, voice_id, args.model, api_key,
-                            normalize=not args.no_normalize, bitrate=args.bitrate,
-                            speed=args.speed, temperature=temperature)
-                 for b in batches]
-        (out_dir / section["mp3"]).write_bytes(join_mp3(parts))
+              f"{section['chars']:>7,} ch  ({blocks} paragraph"
+              f"{'s' if blocks > 1 else ''})", flush=True)
+        audio = render(text, voice_id, args.model, api_key, args,
+                       temperature, args.paragraph_pause)
+        (out_dir / section["mp3"]).write_bytes(audio)
         # Record the hash only after a successful write, so an interrupted run
         # resumes rather than silently leaving a section unspoken.
         state[section["id"]] = keys[section["id"]]
@@ -631,6 +804,10 @@ def main() -> int:
                         help="disable number/date expansion (for A/B testing)")
     parser.add_argument("--raw", action="store_true",
                         help="skip the spoken-text substitutions (for A/B testing)")
+    parser.add_argument("--paragraph-pause", type=int, default=PARAGRAPH_PAUSE_MS,
+                        metavar="MS",
+                        help=f"silence between paragraphs, default {PARAGRAPH_PAUSE_MS}ms; "
+                             f"0 sends the section as one request (no splicing)")
     parser.add_argument("--temperature", type=float, default=None,
                         help="0-1; lower is steadier prosody. Default is "
                              "per-language (see TEMPERATURE).")
@@ -694,28 +871,18 @@ def main() -> int:
             print("\n  dry run — nothing sent.\n")
             return 0
 
-        batches = group_into_requests(text, args.max_bytes)
-        if len(batches) == 1:
-            print("  requests   : 1 (whole section in one call)")
+        paragraphs = [p for p in re.split(r'\n\s*\n', text) if p.strip()]
+        spliced = args.paragraph_pause > 0 and len(paragraphs) > 1 and find_ffmpeg()
+        if spliced:
+            print(f"  requests   : {len(paragraphs)} paragraphs, "
+                  f"{args.paragraph_pause}ms silence between")
         else:
-            print(f"  requests   : {len(batches)} (split on sentence boundaries)")
+            print("  requests   : 1 (whole section in one call)")
 
         api_key = get_api_key()
-        parts: list[bytes] = []
         started = time.monotonic()
-        for index, batch in enumerate(batches, start=1):
-            if len(batches) > 1:
-                print(f"  … part {index}/{len(batches)} "
-                      f"({len(batch.encode('utf-8')):,} bytes)")
-            parts.append(synthesize(
-                batch, voice_id, args.model, api_key,
-                normalize=not args.no_normalize,
-                bitrate=args.bitrate,
-                speed=args.speed,
-                temperature=temperature,
-            ))
-
-        audio = join_mp3(parts)
+        audio = render(text, voice_id, args.model, api_key, args,
+                       temperature, args.paragraph_pause)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(audio)
 

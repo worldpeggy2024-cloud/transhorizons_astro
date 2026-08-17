@@ -80,10 +80,14 @@ export default function NotesDetailLayout({
   const followLabel = language === 'fr' ? 'Suivre' : 'Follow';
   const otherArticlesLabel = language === 'fr' ? 'Autres articles' : 'Other articles';
 
+  // Takeaways already lead here, matching the page. They were unannounced
+  // though, so a listener met a list of conclusions with nothing marking it as
+  // one — the same defect the essays had, minus the ordering half.
   const derivedAudioText = [
     title,
     category,
     date,
+    ...(keyTakeaways.length ? [language === 'fr' ? 'Points clés' : 'Key Takeaways'] : []),
     ...keyTakeaways.map((k) => k.point),
     textFromNode(content),
   ]

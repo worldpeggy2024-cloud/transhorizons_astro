@@ -239,7 +239,7 @@ export default function ProjectDetailLayout({
             <div className="mt-4" onClick={(e) => e.stopPropagation()}>
               <PortfolioTTSPlayer
                 id={`detail-${title}`}
-                text={buildArticleTextFromProps(title, subtitle, introduction, sections, keyTakeaways)}
+                text={buildArticleTextFromProps(title, subtitle, introduction, sections, keyTakeaways, introductionTitle, lang)}
                 lang={lang === 'fr' ? 'fr-FR' : 'en-CA'}
                 dark
                 floating

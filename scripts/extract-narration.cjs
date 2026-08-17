@@ -26,6 +26,14 @@ const path = require('path');
 const crypto = require('crypto');
 const yaml = require('js-yaml');
 
+/*
+ * Blocks beginning with this marker are HEADINGS. fish_tts.py strips the marker
+ * and speaks the block more slowly, with a longer pause around it, so a heading
+ * sounds like a heading instead of another sentence of prose. The marker never
+ * reaches the engine and never appears in the page.
+ */
+const HEADING = '## ';
+
 // ── Section definitions, mirroring CountryPage.tsx rows ──────────────────────
 // [yaml key stem, EN label, FR label, optional legacy key stem]
 const SECTIONS = [
@@ -98,17 +106,32 @@ const NOT_NARRATED = [
 function stripMarkers(text) {
   return String(text || '')
     .replace(/\[[^\]]*\]/g, '')
-    .replace(/\s+/g, ' ')
+    // French typography (narrow NBSP before « : » etc., inserted by
+    // fix-fr-typography.cjs) is a VISUAL convention. Fold it to ordinary
+    // spaces: the engine has no use for it, and leaving it in would make every
+    // typography pass change the text hash and force a pointless regeneration.
+    .replace(/[   ]/g, ' ')
+    .replace(/[ \t]+/g, ' ')
+    // Keep blank lines: they are the paragraph breaks, and the engine reads
+    // them as a longer pause. Collapsing all whitespace (the old behaviour)
+    // handed Fish one undifferentiated blob with nothing to breathe at.
+    .replace(/ ?\n[ \t]*\n[\s]*/g, '\n\n')
+    .replace(/([^\n])\n(?!\n)/g, '$1 ')
     .replace(/ +([.,])/g, '$1')
     .replace(/([(«]) | ([)»])/g, '$1$2')
-    .trim();
+    .split('\n\n').map((p) => p.trim()).filter(Boolean).join('\n\n');
 }
 
 /*
- * situation_<lang> is a JSON array of threads. Mirrors CountryPage.tsx
- * `situationNarration` exactly: "thread, status. what changed … . currentState".
- * Event DATES are deliberately not spoken — the page omits them too, because a
- * date read before every event turns the thread into a list rather than a story.
+ * situation_<lang> is a JSON array of threads, read as
+ * "thread, status. <date>: what changed. … currentState".
+ *
+ * DATES ARE SPOKEN, which is a deliberate DIVERGENCE from CountryPage.tsx's
+ * `situationNarration`. The page can omit them because a reader sees each event
+ * dated on screen; a listener has no such column, and without the date the
+ * events lose their sequence and stop making sense (confirmed by ear
+ * 2026-08-12). The same argument applies to the page's own Web Speech
+ * narration — worth fixing there too.
  */
 function situationText(raw) {
   const value = String(raw || '').trim();
@@ -125,10 +148,14 @@ function situationText(raw) {
     threads.map((th) => {
       const head = [th?.thread, th?.status].filter(Boolean).join(', ');
       const evs = (Array.isArray(th?.events) ? th.events : [])
-        .map((e) => [e?.what, e?.changed].filter(Boolean).join(' '))
-        .join(' ');
-      return [head, evs, th?.currentState].filter(Boolean).join('. ');
-    }).join(' ')
+        .map((e) => {
+          const body = [e?.what, e?.changed].filter(Boolean).join(' ');
+          // "4 February – 4 March 2025: The United States imposed …"
+          return e?.date ? `${e.date}: ${body}` : body;
+        })
+        .join('\n\n');
+      return [head, evs, th?.currentState].filter(Boolean).join('\n\n');
+    }).join('\n\n')          // one thread per block — the biggest pause here
   );
 }
 
@@ -144,9 +171,16 @@ function buildSections(data, lang) {
       const text = stem === 'situation' ? situationText(raw) : stripMarkers(raw);
       if (!text) continue;
       const label = lang === 'fr' ? labelFr : labelEn;
-      parts.push(section.bare || !label ? text : `${label}. ${text}`);
+      // A subsection label becomes its own block, marked as a heading, so the
+      // generator can give it weight and a longer pause. Run into the body as
+      // "Geography. <text>" it read exactly like prose and told the listener
+      // nothing.
+      if (section.bare || !label) parts.push(text);
+      else { parts.push(HEADING + label); parts.push(text); }
     }
-    const text = parts.join(' ');
+    // Blank line between subsections too — "Geography …" and "Biosphere …" are
+    // separate blocks, and ran together without a breath before this.
+    const text = parts.join('\n\n');
     if (text.trim()) {
       out.push({ id: section.id, label: lang === 'fr' ? section.fr : section.en, text });
     }
@@ -180,31 +214,62 @@ const ARTICLES = {
   'travel-observation':    '2026-04_Travel-Observation_Note.yaml',
 };
 
-/** Mirrors src/lib/articleTexts.ts cleanForTTS. */
+/*
+ * Mirrors src/lib/articleTexts.ts cleanForTTS, with one DIVERGENCE: that one
+ * turns a paragraph break into ". ", which reads as a full stop and gives the
+ * splicer nothing to work with. Here blank lines survive, so an article gets
+ * the same 700ms breathing room between paragraphs as a report section.
+ */
 function cleanForTTS(text) {
   return String(text || '')
     .replace(/•/g, ',')
-    .replace(/\n\n+/g, '. ')
-    .replace(/\n/g, ' ')
-    .replace(/\s+/g, ' ')
+    .replace(/[   ]/g, ' ')     // narrow NBSP / NBSP / thin space -> plain space
+    .replace(/[ \t]+/g, ' ')
+    .replace(/ ?\n[ \t]*\n[\s]*/g, '\n\n')
+    .replace(/([^\n])\n(?!\n)/g, '$1 ')
     .trim();
 }
 
 /** Mirrors src/lib/articleTexts.ts buildArticleText — same order, same joiner. */
+// ProjectDetailLayout.tsx renders this above the takeaways block.
+const TAKEAWAYS_LABEL = { en: 'Key Takeaways', fr: 'Points clés' };
+
+/*
+ * Order MIRRORS THE PAGE (ProjectDetailLayout.tsx): title, subtitle, then the
+ * Key Takeaways block — which the layout deliberately shows FIRST, "for quick
+ * orientation" — then the introduction under its own heading, then the
+ * sections.
+ *
+ * This DIVERGES from articleTexts.ts buildArticleText, which appends takeaways
+ * at the end and never speaks introductionTitle. Heard aloud that put the
+ * summary after the argument it was meant to preface, unannounced. The page's
+ * own Web Speech narration still has this defect — same fix, separate change.
+ */
 function buildArticleText(data, lang) {
   const parts = [];
-  if (data[`title_${lang}`]) parts.push(cleanForTTS(data[`title_${lang}`]));
+  const heading = (v) => parts.push(HEADING + cleanForTTS(v));
+  if (data[`title_${lang}`]) heading(data[`title_${lang}`]);
   if (data[`subtitle_${lang}`]) parts.push(cleanForTTS(data[`subtitle_${lang}`]));
+
+  const takeaways = data.keyTakeaways ?? [];
+  if (takeaways.length) {
+    heading(TAKEAWAYS_LABEL[lang] ?? TAKEAWAYS_LABEL.en);
+    for (const k of takeaways) {
+      if (k[`title_${lang}`]) heading(k[`title_${lang}`]);
+      if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
+    }
+  }
+
+  if (data[`introductionTitle_${lang}`]) heading(data[`introductionTitle_${lang}`]);
   if (String(data[`introduction_${lang}`] || '').trim()) parts.push(cleanForTTS(data[`introduction_${lang}`]));
+
   for (const s of data.sections ?? []) {
-    if (s[`title_${lang}`]) parts.push(cleanForTTS(s[`title_${lang}`]));
+    if (s[`title_${lang}`]) heading(s[`title_${lang}`]);
     if (s[`content_${lang}`]) parts.push(cleanForTTS(s[`content_${lang}`]));
   }
-  for (const k of data.keyTakeaways ?? []) {
-    if (k[`title_${lang}`]) parts.push(cleanForTTS(k[`title_${lang}`]));
-    if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
-  }
-  return stripMarkers(parts.join('. '));
+  // Blank line between blocks: title, subtitle, introduction, each section
+  // heading and body, each key takeaway. Each becomes a paced pause.
+  return stripMarkers(parts.join('\n\n'));
 }
 
 function writeManifest(outDir, meta, sections) {
