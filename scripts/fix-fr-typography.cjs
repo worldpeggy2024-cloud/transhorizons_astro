@@ -145,6 +145,7 @@ function fix(text, opts = {}) {
     : /^([A-Za-z][\w]*)\s*:/;                          // a top-level key line (col 0)
   const wrapRe = new RegExp(`^([ \\t]*)([:—»])${S}*(.*)$`, 'u'); // line that STARTS with :/—/»
   const candidates = [];
+  const frenchLines = new Set();
   let isFrench = false;
   let inSources = false;
   const srcFrLine = /^\s*"(nameFr|descFr)":/;              // French property lines in the sources JSON
@@ -164,6 +165,7 @@ function fix(text, opts = {}) {
       continue;
     }
     if (!isFrench) continue;                                // English / etc.
+    frenchLines.add(i);
     if (wrapRe.test(lines[i])) candidates.push(i);          // folded-wrap: handle after
     lines[i] = applyRules(lines[i], counts);
   }
@@ -186,7 +188,34 @@ function fix(text, opts = {}) {
     merged.push({ line: i + 1, ontoLine: j + 1, punct });
   }
 
-  return { text: lines.join(eol), counts, merged, flagged };
+  /*
+   * Anti-orphan across a FOLDED LINE BREAK. "840" can end one line with
+   * "millions" starting the next: the joining space exists only after YAML
+   * folds, so there is nothing on the line for the numword rule to convert.
+   * Pull that first word up onto the previous line, bound with a full NBSP.
+   *
+   * Guards: the line must keep content after the word is removed (emptying it
+   * would introduce a paragraph break into a folded scalar, changing the text),
+   * and both lines must be French prose.
+   */
+  const numFold = [];
+  const leadWordRe = /^([ \t]+)([A-Za-zÀ-ÿ][^\s]*)([ \t]+)(\S[\s\S]*)$/u;
+  for (let i = 1; i < lines.length; i++) {
+    if (!frenchLines.has(i)) continue;
+    const m = lines[i].match(leadWordRe);
+    if (!m) continue;
+    let j = i - 1;
+    while (j >= 0 && lines[j].trim() === '') j--;
+    if (j < 0 || !frenchLines.has(j)) continue;
+    const prev = lines[j].replace(/\s+$/, '');
+    if (!/\d$/.test(prev) || !isProseLineEnd(prev)) continue;
+    lines[j] = prev + NBSP + m[2];
+    lines[i] = m[1] + m[4];
+    numFold.push({ line: i + 1, word: m[2] });
+  }
+  if (numFold.length) counts.numword = (counts.numword || 0) + numFold.length;
+
+  return { text: lines.join(eol), counts, merged, flagged, numFold };
 }
 
 function countryFiles() {

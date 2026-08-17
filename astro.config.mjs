@@ -61,6 +61,15 @@ export default defineConfig({
       ],
     },
     plugins: [tailwindcss(), yaml(), yamlHmrPlugin()],
+    // Narration audio is staged into public/audio only when it is being
+    // deployed, and it is hundreds of megabytes. Watching it makes the dev
+    // server churn (and can hang it) every time the staging script runs.
+    // It is served as a static file either way — nothing needs to watch it.
+    server: {
+      watch: {
+        ignored: ['**/public/audio/**', '**/tts-out/**', '**/tts-text/**'],
+      },
+    },
     resolve: {
       alias: {
         '@': '/src',

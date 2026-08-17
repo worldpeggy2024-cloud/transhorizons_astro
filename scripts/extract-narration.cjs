@@ -115,11 +115,24 @@ function stripMarkers(text) {
     // Keep blank lines: they are the paragraph breaks, and the engine reads
     // them as a longer pause. Collapsing all whitespace (the old behaviour)
     // handed Fish one undifferentiated blob with nothing to breathe at.
+    // A bullet becomes a PARAGRAPH BREAK, not a comma. Replacing "•" with ","
+    // (what the page's own TTS does) left every list opening on a bare comma —
+    // the engine renders that as a stray noise — and produced ";," wherever an
+    // item already ended in a semicolon. As separate blocks the items also get
+    // the 700ms pause, so a list is heard as a list.
+    .replace(/\n[ \t]*[•·▪‣][ \t]*/g, '\n\n')
+    .replace(/^[ \t]*[•·▪‣][ \t]*/, '')
     .replace(/ ?\n[ \t]*\n[\s]*/g, '\n\n')
     .replace(/([^\n])\n(?!\n)/g, '$1 ')
     .replace(/ +([.,])/g, '$1')
     .replace(/([(«]) | ([)»])/g, '$1$2')
-    .split('\n\n').map((p) => p.trim()).filter(Boolean).join('\n\n');
+    .split('\n\n')
+    .map((p) => p.trim()
+      .replace(/^[,;:]+\s*/, '')            // never open a block on punctuation
+      .replace(/([;,])\s*[;,]+/g, '$1')     // ";," -> ";"
+      .trim())
+    .filter(Boolean)
+    .join('\n\n');
 }
 
 /*
@@ -222,9 +235,14 @@ const ARTICLES = {
  */
 function cleanForTTS(text) {
   return String(text || '')
-    .replace(/•/g, ',')
     .replace(/[   ]/g, ' ')     // narrow NBSP / NBSP / thin space -> plain space
     .replace(/[ \t]+/g, ' ')
+    // Each bullet becomes its own paragraph. This MUST happen before single
+    // newlines collapse to spaces below, or there is no line start left to
+    // recognise. NOT "• -> ," as articleTexts.ts does: that opened every list
+    // on a bare comma, which the engine spoke as a stray noise.
+    .replace(/\n[ \t]*[•·▪‣][ \t]*/g, '\n\n')
+    .replace(/^[ \t]*[•·▪‣][ \t]*/, '')
     .replace(/ ?\n[ \t]*\n[\s]*/g, '\n\n')
     .replace(/([^\n])\n(?!\n)/g, '$1 ')
     .trim();

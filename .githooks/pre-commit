@@ -15,7 +15,13 @@
 # to the same country file get pulled into the commit too. For whole-file edits (the
 # usual Keystatic case) that's a no-op difference.
 
-files=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^content/countries/.+/analysis\.yaml$')
+# Country reports AND articles. Articles were added 2026-08-15: their French is
+# authored the same way and deserves the same treatment, and the alternative was
+# remembering to run the tools by hand for one content type but not the other.
+# fix-fr-typography.cjs detects the nesting difference itself (articles keep
+# their French inside sections:/keyTakeaways:, country reports are flat).
+files=$(git diff --cached --name-only --diff-filter=ACM \
+  | grep -E '^content/(countries/.+/analysis|articles/.+)\.ya?ml$')
 [ -z "$files" ] && exit 0
 
 if ! command -v node >/dev/null 2>&1; then
@@ -23,7 +29,7 @@ if ! command -v node >/dev/null 2>&1; then
   exit 0
 fi
 
-echo "pre-commit: normalizing Canadian-French typography in staged country report(s)…"
+echo "pre-commit: normalizing Canadian-French typography in staged content…"
 node scripts/fix-fr-semicolon-spaces.cjs $files --write
 node scripts/fix-fr-typography.cjs $files --write
 

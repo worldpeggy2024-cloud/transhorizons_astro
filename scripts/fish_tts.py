@@ -189,7 +189,12 @@ PARAGRAPH_PAUSE_MS = 700
 # and pace they fell flat and cost intelligibility, so they are slowed slightly
 # and framed by a long pause before, short pause after — the audiobook shape.
 HEADING_PREFIX = "## "
-HEADING_SPEED_FACTOR = 0.92
+# 1.0 = no slowdown. Was 0.92, which made headings sound like a DIFFERENT
+# NARRATOR (heard 2026-08-15): prosody.speed shifts timbre, and a heading is
+# already its own request, so it starts fresh rather than continuing the
+# previous prosody. The long pause before, short pause after, and the appended
+# full stop mark it as a heading well enough on their own.
+HEADING_SPEED_FACTOR = 1.0
 HEADING_PAUSE_BEFORE_MS = 1100
 HEADING_PAUSE_AFTER_MS = 400
 
