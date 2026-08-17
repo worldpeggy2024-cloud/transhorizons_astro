@@ -60,32 +60,54 @@ MODEL = "s2.1-pro-free"
 VOICES = {
     "en": {
         # male
+        # https://fish.audio/app/m/bf322df2096a46f18c579d0baa36f41d/
         "adrian":      "bf322df2096a46f18c579d0baa36f41d",  # US — FAVOURITE
+        # https://fish.audio/app/m/e422370a73e4439b8ccc10d58b78819b/
         "deep-voice":  "e422370a73e4439b8ccc10d58b78819b",  # slightly British
+        # https://fish.audio/app/m/9184d174052b422d9fe2514ec0d4d095/
         "war-arsenal": "9184d174052b422d9fe2514ec0d4d095",  # US, clear
+        # https://fish.audio/app/m/b82d76382a3f40139e76ffbd095da13d/
+        # NB: the library holds many voices titled "adam stone" — this URL is
+        # the only reliable way back to the right one. Searching the name is not.
         "adam-stone":  "b82d76382a3f40139e76ffbd095da13d",  # British, more expressive
         # female
+        # https://fish.audio/app/m/e3cd384158934cc9a01029cd7d278634/
         "laura":       "e3cd384158934cc9a01029cd7d278634",  # deep — CONFIRMED female EN (2026-08-15)
+        # https://fish.audio/app/m/7cefff1c89464d7dbc412482f909ec2d/
         "florence":    "7cefff1c89464d7dbc412482f909ec2d",  # Florence Scovel Shinn, lighter
+        # https://fish.audio/app/m/7e4baf13677e4b95b5e25a60b9a717b4/
         "old-woman":   "7e4baf13677e4b95b5e25a60b9a717b4",  # softer
+        # https://fish.audio/app/m/64028e2c8f8640e6bebf4826b7dc1ebc/
         "ogechi":      "64028e2c8f8640e6bebf4826b7dc1ebc",  # more British
         # Peggy's own cloned voice, ENGLISH model ("Friendly Storyteller"),
         # trained on English recordings. Use this and NOT the French clone for
         # English: a clone trained only on French applies French phonology to
         # English and produces a far heavier accent than she actually has.
         # One clone per language, never one clone for both.
-        "peggy":       "5ef647b1e30a4165a135076f258b7f04",
+        # Three English clones, recorded 2026-08-15 in one sitting — presumably
+        # different reads rather than different voices. Which suits which piece
+        # is Peggy's call, not something to infer from the titles.
+        "peggy":            "5ef647b1e30a4165a135076f258b7f04",  # Friendly Storyteller
+        "peggy-warm":       "8bd5735eec2f4a99b8f118ac35943239",  # Warm Conversational Voice
+        "peggy-analytical": "73e52cf94f334f50bc30965b9adb72b2",  # Analytical Narrator
         # rejected 2026-08-12 ("really not pleasant to listen to"), kept only so
         # the already-generated tts-out/**/sarah/ files stay addressable.
         "sarah":       "933563129e564b19a115bedd57b7406a",
     },
     "fr": {
         # male
+        # https://fish.audio/app/m/c51f4c0e9e414d9eaf7c71effd5b92d2/
         "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",  # very deep — FAVOURITE
+        # https://fish.audio/app/m/4f2a0684dd0247dda68f339738c780e6/
         "le-narrateur":  "4f2a0684dd0247dda68f339738c780e6",  # slightly dramatic
         # female
-        "annonce-calme": "c5ec04dcb3f5450fb93a06f510d532b7",  # Annonce Française Calme — FAVOURITE
-        "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate
+        # https://fish.audio/app/m/c5ec04dcb3f5450fb93a06f510d532b7/
+        "annonce-calme": "c5ec04dcb3f5450fb93a06f510d532b7",  # Annonce Française Calme
+        # https://fish.audio/app/m/651751df29b140ab9c791aef35dc8fc2/
+        "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate, but monotone by nature
+        # https://fish.audio/app/m/b5061779983d410dab91f4d070ca5586/
+        "reflechie":     "b5061779983d410dab91f4d070ca5586",  # Voix Française Réfléchie
+                                                              # APPROVED for resource-civilization FR (2026-08-16)
         # Peggy's own cloned voice, FRENCH model ("Voix Féminine Chaleureuse").
         # Both clones are PRIVATE and reachable only with this account's key —
         # keep them private. Intended for the NOTES only: first-person pieces in
@@ -131,12 +153,27 @@ SUBSTITUTIONS = {
         # Place name the French voice does not resolve; the trailing -e gives it
         # the final syllable it was swallowing. English reads it correctly, so
         # this is deliberately French-only.
-        (r'\bSaskatchewan\b', 'Saskatchewane', 'place name'),
+        # "Saskatchewane" still came out as "Saskatch-chewan" inside a long
+        # paragraph, and it dragged the following "Labrador" down with it.
+        # "Sasskatchouane" reads cleanly and leaves its neighbours alone
+        # (chosen by ear 2026-08-16 from six variants in the real sentence).
+        (r'\bSaskatchewan\b', 'Sasskatchouane', 'place name'),
         # English term of art quoted inside French prose ("la théorie des
         # principales ressources (staples thesis; Innis, 1930)"). The French
         # voice reads it as French and it becomes unrecognisable; this respells
         # the English pronunciation in French orthography.
         (r'(?i)\bstaples[- ]thesis\b', 'stéïpeulz sessiss', 'English term in French'),
+        # "émergent" is a homograph: the ADJECTIVE ends /ɑ̃/ ("l'ordre mondial
+        # émergent"), the VERB does not ("les civilisations émergent d'une
+        # interaction"). The engine read the adjective as the verb. Respelling
+        # to "émergeant" forces the adjectival reading.
+        #
+        # The plural -s decides it. "émergents" is only ever the adjective, so
+        # it is always safe. Bare "émergent" is only substituted when the word
+        # BEFORE it does not end in s/x — a French plural subject does, so the
+        # verb is left untouched.
+        (r'\bémergents\b', 'émergeants', 'adjective, plural'),
+        (r'(?<=[^sxSX\W]\s)émergent\b', 'émergeant', 'adjective, singular'),
     ],
     "en": [
         # "kilometre" collapses to "kimeter" / "kinometer" / "kalibmeter" in
@@ -172,17 +209,37 @@ MODEL_LIST_URL = f"{API_BASE}/model"
 # well above any single report section, so normal runs are a single request.
 MAX_REQUEST_BYTES = 60_000
 
-# Generation temperature, per language. Lower is steadier prosody, less
-# expressive. French sits low because at 0.7 the engine occasionally inserts a
-# hesitation inside spelled-out numbers ("quarante … et un virgule cinq");
-# 0.3 reduces it. English was clean at 0.7, so it keeps the livelier setting.
-# Verified by ear 2026-08-12. Override per run with --temperature.
-TEMPERATURE = {"en": 0.7, "fr": 0.3}
+# Generation temperature, per language.
+#
+# French was 0.3 from 2026-08-12, chosen when a spelled-out number occasionally
+# stumbled. The cost only became audible over a full article: steadier prosody
+# is also FLATTER, and French was reported as rhythmically wrong, "really feels
+# like AI reading" — while English at 0.7 was called expressive on the same
+# engine and the same splicing. Raised to 0.7 on 2026-08-15 to test whether the
+# flatness was ever the voices' fault. If a number hesitates again, fix the
+# number rather than flattening every sentence to hide it.
+TEMPERATURE = {"en": 0.7, "fr": 0.7}
 
 # Silence spliced between paragraphs, in milliseconds. Blank lines alone were
 # audible but far too short ("we end up gasping for air"). 0 disables splicing
 # and sends the whole section as a single request, as before.
 PARAGRAPH_PAUSE_MS = 700
+
+# Fade applied to each spliced segment's edges, in milliseconds. Short enough to
+# be inaudible as a fade, long enough to kill the click where a separately
+# encoded paragraph meets silence.
+FADE_MS = 12
+
+# Per-paragraph audio cache. Each paragraph is already synthesised as its own
+# request and spliced; this simply KEEPS the pieces instead of discarding them.
+# A one-word pronunciation fix then re-synthesises the paragraph that contains
+# it, not the whole 16-minute article — and changes to splicing (pause length,
+# fade) cost nothing at all, because they re-glue what is already cached.
+#
+# The key deliberately covers only what determines the AUDIO OF ONE PARAGRAPH:
+# its spoken text and the generation settings. Splice settings are excluded, so
+# adjusting them never invalidates a single cached paragraph.
+CACHE_DIR = Path("tts-cache")
 
 # Headings. extract-narration.cjs marks them with this prefix; it is stripped
 # before anything is spoken and never appears on the page. Read at body speed
@@ -195,6 +252,15 @@ HEADING_PREFIX = "## "
 # previous prosody. The long pause before, short pause after, and the appended
 # full stop mark it as a heading well enough on their own.
 HEADING_SPEED_FACTOR = 1.0
+# Punctuation appended to a heading that lacks it, PER LANGUAGE.
+# "." forces the pitch to fall; "" leaves the heading alone.
+#
+# English keeps the full stop: Adam Stone's headings were approved as they are,
+# and nothing has been reported wrong with them. French drops it, because the
+# forced fall made the voice drop at the end of every title, which reads as
+# closing the title off rather than introducing what follows (2026-08-16).
+# Scoped per language on purpose — the evidence is French-only.
+HEADING_TERMINAL = {"en": ".", "fr": ""}
 HEADING_PAUSE_BEFORE_MS = 1100
 HEADING_PAUSE_AFTER_MS = 400
 
@@ -447,10 +513,41 @@ def splice_with_silence(parts: list[bytes], gaps: list[int], bitrate: int) -> by
             )
             silences[ms] = path
 
+        def probe_seconds(path: Path) -> float:
+            probe = Path(ffmpeg).with_name("ffprobe" + Path(ffmpeg).suffix)
+            if not probe.exists():
+                return 0.0
+            try:
+                out = subprocess.run(
+                    [str(probe), "-v", "error", "-show_entries", "format=duration",
+                     "-of", "default=noprint_wrappers=1:nokey=1", str(path)],
+                    check=True, capture_output=True, text=True).stdout.strip()
+                return float(out)
+            except (subprocess.CalledProcessError, ValueError):
+                return 0.0
+
         listing = []
         for index, part in enumerate(parts):
             piece = work / f"part{index:03d}.mp3"
             piece.write_bytes(part)
+            # Each paragraph is separately encoded, so its edges can sit at a
+            # non-zero amplitude; butted against silence that is an audible
+            # click at every paragraph change. A ~12ms fade at both ends removes
+            # it. Breathier voices click more, which is why the artifact was
+            # obvious on one voice and inaudible on another.
+            duration = probe_seconds(piece)
+            if duration > 2 * FADE_MS / 1000:
+                faded = work / f"fade{index:03d}.mp3"
+                fade = (f"afade=t=in:st=0:d={FADE_MS / 1000:.3f},"
+                        f"afade=t=out:st={duration - FADE_MS / 1000:.3f}:d={FADE_MS / 1000:.3f}")
+                try:
+                    subprocess.run(
+                        [ffmpeg, "-y", "-i", str(piece), "-af", fade,
+                         "-c:a", "libmp3lame", "-b:a", f"{bitrate}k", str(faded)],
+                        check=True, capture_output=True)
+                    piece = faded
+                except subprocess.CalledProcessError:
+                    pass          # keep the unfaded part rather than losing it
             if index:
                 gap = gaps[index - 1]
                 if gap > 0:
@@ -469,7 +566,7 @@ def splice_with_silence(parts: list[bytes], gaps: list[int], bitrate: int) -> by
 
 
 def render(text: str, voice_id: str, model: str, api_key: str, args,
-           temperature: float, pause_ms: int) -> bytes:
+           temperature: float, pause_ms: int, lang: str = 'en') -> bytes:
     """One section of audio: paragraph pauses, and headings given weight."""
     blocks = [b.strip() for b in re.split(r'\n\s*\n', text) if b.strip()]
 
@@ -484,22 +581,49 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
 
     parts: list[bytes] = []
     is_heading: list[bool] = []
+    hits = misses = 0
     for block in blocks:
         heading = block.startswith(HEADING_PREFIX)
         spoken = block[len(HEADING_PREFIX):].strip() if heading else block
-        if heading:
-            # A heading with no terminal punctuation is read with continuing
-            # intonation — it sounds like the first clause of the paragraph
-            # rather than its title. A full stop makes the pitch fall.
+        terminal = HEADING_TERMINAL.get(lang, '')
+        if heading and terminal:
+            # Kept configurable because the right answer changed. The full stop
+            # was added when a heading ran inline into the text that followed
+            # and sounded like its first clause. Headings are now their own
+            # request, so they end regardless — and the forced fall made the
+            # voice drop at the end of every title, which in French reads as odd
+            # rather than emphatic (heard 2026-08-16). Empty = leave it alone.
             if spoken and spoken[-1] not in ".!?:":
-                spoken += "."
-        parts.append(synthesize(
-            spoken, voice_id, model, api_key,
-            normalize=not args.no_normalize, bitrate=args.bitrate,
-            speed=round(args.speed * (HEADING_SPEED_FACTOR if heading else 1.0), 3),
-            temperature=temperature,
-        ))
+                spoken += terminal
+        speed = round(args.speed * (HEADING_SPEED_FACTOR if heading else 1.0), 3)
+
+        digest = hashlib.sha256(spoken.encode("utf-8"))
+        digest.update(f"|{voice_id}|{model}|{temperature}|{speed}|{args.bitrate}"
+                      f"|{not args.no_normalize}".encode("utf-8"))
+        key = digest.hexdigest()
+        cached = CACHE_DIR / key[:2] / f"{key}.mp3"
+
+        # --reroll forces a fresh attempt at just the paragraphs that match.
+        # Comma-separated, so a whole section can be redone in one pass and its
+        # paragraphs stay consistent with each other rather than one freshly
+        # generated block sitting among older ones.
+        reroll = any(n.strip() and n.strip().lower() in spoken.lower()
+                     for n in (args.reroll or "").split(","))
+        if not args.no_cache and not reroll and cached.is_file():
+            parts.append(cached.read_bytes())
+            hits += 1
+        else:
+            audio = synthesize(spoken, voice_id, model, api_key,
+                               normalize=not args.no_normalize, bitrate=args.bitrate,
+                               speed=speed, temperature=temperature)
+            cached.parent.mkdir(parents=True, exist_ok=True)
+            cached.write_bytes(audio)
+            parts.append(audio)
+            misses += 1
         is_heading.append(heading)
+
+    if hits:
+        print(f"      cache: {hits} paragraph(s) reused, {misses} synthesised", flush=True)
 
     # Longer silence BEFORE a heading than after it — the standard audiobook
     # shape, which is what makes a heading read as a division of the text.
@@ -679,6 +803,51 @@ def report_cost(text: str, model: str) -> int:
     return byte_count
 
 
+def refresh_from_source(manifest_path: Path, manifest: dict) -> dict:
+    """
+    Re-extract the narration text from the source YAML before generating.
+
+    Without this, generating uses whatever was extracted last — so an edit to
+    the article or report is silently ignored and the recording renders the
+    previous wording. That happened, and the fix should not depend on anyone
+    remembering to run the extractor first: it is fast, idempotent, and the
+    paragraph cache means unchanged text costs nothing to re-extract.
+    """
+    import json, subprocess
+
+    script = Path(__file__).with_name("extract-narration.cjs")
+    if not script.is_file():
+        return manifest
+
+    lang = manifest.get("lang", "en")
+    if manifest.get("country"):
+        target = ["--country", manifest["country"]]
+    elif manifest.get("article"):
+        target = ["--article", manifest["article"]]
+    else:
+        return manifest
+
+    before = manifest["sections"][0].get("sha256") if manifest.get("sections") else None
+    try:
+        subprocess.run(["node", str(script), *target, "--lang", lang],
+                       check=True, capture_output=True, text=True)
+    except FileNotFoundError:
+        print("  ! node not found — generating against the previously extracted text")
+        return manifest
+    except subprocess.CalledProcessError as exc:
+        raise FishError(
+            "Re-extracting from the source YAML failed, so the text may be stale.\n"
+            f"{(exc.stderr or exc.stdout or '').strip()[:400]}\n"
+            "Fix the source, or pass --no-extract to generate from the existing text."
+        )
+
+    refreshed = json.loads(manifest_path.read_text(encoding="utf-8"))
+    after = refreshed["sections"][0].get("sha256") if refreshed.get("sections") else None
+    if before and after and before != after:
+        print("  source     : re-extracted — the text has changed since the last run")
+    return refreshed
+
+
 def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     """
     Generate every section listed in a manifest.json from extract-narration.cjs.
@@ -690,6 +859,8 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     import json
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if not args.no_extract:
+        manifest = refresh_from_source(manifest_path, manifest)
     base = manifest_path.parent
     lang = manifest.get("lang", args.lang)
     voice_name, default_id = resolve_voice(lang, args.voice_name)
@@ -718,9 +889,14 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     # temperature, speed and bitrate are folded in for the same reason.
     def generation_key(spoken: str) -> str:
         digest = hashlib.sha256(spoken.encode("utf-8"))
+        # Splice settings are included so changing a pause or the fade DOES mark
+        # the section stale — which is cheap now: every paragraph comes back
+        # from the cache and only the gluing is redone, at no API cost.
         digest.update(f"|{voice_id}|{args.model}|{temperature}|{args.speed}"
                       f"|{args.bitrate}|{not args.no_normalize}"
-                      f"|{args.paragraph_pause}".encode("utf-8"))
+                      f"|{args.paragraph_pause}|{FADE_MS}"
+                      f"|{HEADING_TERMINAL.get(lang, '')}|{HEADING_SPEED_FACTOR}"
+                      f"|{HEADING_PAUSE_BEFORE_MS}|{HEADING_PAUSE_AFTER_MS}".encode("utf-8"))
         return digest.hexdigest()
 
     prepared, keys = {}, {}
@@ -738,8 +914,11 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
         if state.get(section["id"]) == section["sha256"] and (out_dir / section["mp3"]).exists():
             state[section["id"]] = keys[section["id"]]
 
-    pending = [s for s in sections
-               if not (out_dir / s["mp3"]).exists() or state.get(s["id"]) != keys[s["id"]]]
+    # A reroll bypasses the section-level "already current" check; the paragraph
+    # cache still means only the matching paragraphs are actually re-synthesised.
+    pending = sections if args.reroll else [
+        s for s in sections
+        if not (out_dir / s["mp3"]).exists() or state.get(s["id"]) != keys[s["id"]]]
 
     total_bytes = sum(s["bytes"] for s in pending)
     cost = total_bytes / 1_000_000 * PRICE_PER_MILLION_BYTES_USD
@@ -770,7 +949,7 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
               f"{section['chars']:>7,} ch  ({blocks} paragraph"
               f"{'s' if blocks > 1 else ''})", flush=True)
         audio = render(text, voice_id, args.model, api_key, args,
-                       temperature, args.paragraph_pause)
+                       temperature, args.paragraph_pause, lang)
         (out_dir / section["mp3"]).write_bytes(audio)
         # Record the hash only after a successful write, so an interrupted run
         # resumes rather than silently leaving a section unspoken.
@@ -807,6 +986,15 @@ def main() -> int:
                         help=f"split ceiling (default: {MAX_REQUEST_BYTES:,})")
     parser.add_argument("--no-normalize", action="store_true",
                         help="disable number/date expansion (for A/B testing)")
+    parser.add_argument("--no-extract", action="store_true",
+                        help="do NOT re-extract from the source YAML first; generate "
+                             "from the text already in tts-text/ (rarely what you want)")
+    parser.add_argument("--reroll", metavar="TEXT",
+                        help="re-synthesise only paragraphs containing TEXT. For when "
+                             "the text is right but the reading came out wrong: this "
+                             "engine is stochastic, so a second attempt often differs.")
+    parser.add_argument("--no-cache", action="store_true",
+                        help="ignore the per-paragraph cache and re-synthesise everything")
     parser.add_argument("--raw", action="store_true",
                         help="skip the spoken-text substitutions (for A/B testing)")
     parser.add_argument("--paragraph-pause", type=int, default=PARAGRAPH_PAUSE_MS,
@@ -887,7 +1075,7 @@ def main() -> int:
         api_key = get_api_key()
         started = time.monotonic()
         audio = render(text, voice_id, args.model, api_key, args,
-                       temperature, args.paragraph_pause)
+                       temperature, args.paragraph_pause, lang)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(audio)
 

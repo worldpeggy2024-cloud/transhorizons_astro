@@ -24,17 +24,17 @@
       "lang": "fr",
       "voices": [
         {
-          "id": "annonce-calme",
-          "label": "Annonce Calme"
+          "id": "reflechie",
+          "label": "Voix Reflechie"
         }
       ],
       "tracks": [
         {
-          "id": "art-fr-annonce-calme-resource-civilization",
+          "id": "art-fr-reflechie-resource-civilization",
           "label": "Civilisation des ressources",
-          "voice": "annonce-calme",
-          "src": "/audio/articles/resource-civilization/fr/annonce-calme/01-article.mp3",
-          "seconds": 946
+          "voice": "reflechie",
+          "src": "/audio/articles/resource-civilization/fr/reflechie/01-article.mp3",
+          "seconds": 906
         }
       ]
     }

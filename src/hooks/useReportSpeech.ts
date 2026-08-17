@@ -219,6 +219,28 @@ export function useReportSpeech() {
     }
   };
 
+  /*
+   * Skip by an approximate number of characters, ALWAYS landing on a different
+   * chunk. Plain seek() resolves a position to the chunk containing it and
+   * restarts that chunk — so a forward skip smaller than the current sentence
+   * resolved back to the same chunk and replayed it, which read as jumping
+   * backwards. Back appeared to work only because it more often crossed a
+   * boundary. The engine cannot start mid-sentence, so the honest behaviour is
+   * to move at least one sentence in the direction asked for.
+   */
+  const skip = (chars: number) => {
+    if (!chunks.current.length) return;
+    const here = idx.current;
+    const pos = (chunks.current[here]?.start ?? 0) + charInChunk.current + chars;
+    let i = chunks.current.findIndex((c) => pos < c.start + c.text.length + 1);
+    if (i < 0) i = chunks.current.length - 1;
+    if (chars > 0 && i <= here) i = Math.min(here + 1, chunks.current.length - 1);
+    if (chars < 0 && i >= here) i = Math.max(here - 1, 0);
+    const myGen = ++gen.current;
+    setStatus('playing');
+    speakFrom(i, myGen);
+  };
+
   const seek = (fraction: number) => {
     if (!chunks.current.length) return;
     const target = Math.max(0, Math.min(1, fraction)) * total.current;
@@ -252,7 +274,7 @@ export function useReportSpeech() {
     voicesForLang, selectedVoiceName, selectVoice,
     rate, setRate,
     status, activeId, mode, progress, totalChars,
-    play, playAll, pause, resume, stop, restart, seek,
+    play, playAll, pause, resume, stop, restart, seek, skip,
   };
 }
 

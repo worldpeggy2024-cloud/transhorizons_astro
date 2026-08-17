@@ -8,6 +8,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Volume2, Play, Pause, Rewind, FastForward, ChevronDown } from 'lucide-react';
 import { useReportSpeech } from '../hooks/useReportSpeech';
+import { useNarrationAudio } from '../hooks/useNarrationAudio';
+import { getArticleNarration, slugFromPath } from '../lib/narrationAudio';
 import { FloatingReportPlayer } from './ReportAudio';
 
 interface Props {
@@ -21,10 +23,42 @@ interface Props {
   floating?: boolean;
   /** Label shown in the floating pill (e.g. the article title). */
   title?: string;
+  /** Article slug used to look up a published recording. Defaults to the last
+   * path segment, which is the slug on every detail page. */
+  slug?: string;
 }
 
 // Estimated TTS rate for the progress/time approximation (chars per second)
 const CHARS_PER_SEC = 14;
+
+/*
+ * Reader-facing names. Deliberately NOT the Fish library titles: those are
+ * uploader-chosen, frequently duplicated ("adam stone" matches dozens of
+ * unrelated voices) and meaningless to a listener. What a reader wants to know
+ * is accent and register, so that is what the menu says.
+ * The slug still maps back to the exact model — see the URLs in fish_tts.py.
+ */
+const VOICE_LABELS: Record<string, string> = {
+  // English
+  'adam-stone': 'British narrator',
+  adrian: 'North American narrator',
+  'deep-voice': 'British narrator, deeper',
+  'war-arsenal': 'North American narrator, clear',
+  laura: 'British narrator, female',
+  florence: 'Narrator, female, lighter',
+  'old-woman': 'Narrator, female, softer',
+  ogechi: 'British narrator, female',
+  // French
+  angelokyly: 'Narrateur, voix grave',
+  'le-narrateur': 'Narrateur, plus expressif',
+  'annonce-calme': 'Narratrice, voix posée',
+  ora: 'Narratrice, articulée',
+  reflechie: 'Narratrice, voix réfléchie',
+  // Peggy's own clones — named as herself, since that is the point of using them
+  peggy: 'Peggy',
+  'peggy-warm': 'Peggy',
+  'peggy-analytical': 'Peggy',
+};
 
 function formatTime(seconds: number): string {
   if (!isFinite(seconds) || seconds < 0) seconds = 0;
@@ -33,19 +67,38 @@ function formatTime(seconds: number): string {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-export default function PortfolioTTSPlayer({ id, text, lang, dark = false, floating = false, title }: Props) {
+export default function PortfolioTTSPlayer({ id, text, lang, dark = false, floating = false, title, slug }: Props) {
   const isFr = lang.startsWith('fr');
   const speech = useReportSpeech();
   const [voiceOpen, setVoiceOpen] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);
 
-  const active = speech.activeId === id;
-  const playing = active && speech.status === 'playing';
-  const totalChars = active ? speech.totalChars : text.length;
-  const totalDuration = totalChars / CHARS_PER_SEC;
-  const progress = active ? speech.progress : 0;
-  const elapsed = progress * totalDuration;
-  const step = (10 * CHARS_PER_SEC) / (totalChars || 1);
+  /* A published recording, if this piece has one. Absent is the normal case and
+   * simply leaves the Web Speech path in charge. */
+  const resolvedSlug = slug ?? (typeof window !== 'undefined' ? slugFromPath(window.location.pathname) : '');
+  const narration = getArticleNarration(resolvedSlug, lang);
+  const audio = useNarrationAudio(narration?.src, narration?.seconds);
+  // The listener can drop back to a browser voice from the same dropdown; the
+  // recording is simply the default when one exists.
+  const [useSpeech, setUseSpeech] = useState(false);
+  const premium = audio.available && !useSpeech;
+
+  const speechActive = speech.activeId === id;
+  const speechChars = speechActive ? speech.totalChars : text.length;
+
+  /* One surface, either engine. The recording gives an exact duration and true
+   * time-seeking; Web Speech can only estimate from character count. */
+  const active = premium ? audio.status !== 'idle' : speechActive;
+  const playing = premium ? audio.status === 'playing' : (speechActive && speech.status === 'playing');
+  const totalDuration = premium ? audio.duration : speechChars / CHARS_PER_SEC;
+  const progress = premium ? audio.progress : (speechActive ? speech.progress : 0);
+  const elapsed = premium ? audio.elapsed : progress * totalDuration;
+  const step = premium ? 0 : (10 * CHARS_PER_SEC) / (speechChars || 1);
+
+  const onPlayToggle = () => (premium ? audio.toggle() : speech.play({ id, text }, lang));
+  const seekTo = (fraction: number) => (premium ? audio.seek(fraction) : speech.seek(fraction));
+  const skip = (seconds: number) =>
+    premium ? audio.nudge(seconds) : speech.skip(seconds * CHARS_PER_SEC);
 
   const voices = speech.voicesForLang(lang);
   const selected = speech.selectedVoiceName(lang);
@@ -59,16 +112,19 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
     return () => document.removeEventListener('mousedown', handler);
   }, [voiceOpen]);
 
-  if (!speech.supported) return null;
+  // A recording plays even where speechSynthesis is unavailable — which is the
+  // point of having one: old Safari gets audio instead of silence.
+  if (!speech.supported && !premium) return null;
 
-  const section = { id, text };
   const accent = dark ? 'text-white hover:text-white/70' : 'text-[#7D1A2E] hover:text-[#5C1220]';
   const dim = dark ? 'text-white/40 hover:text-white' : 'text-[#CCC] hover:text-[#7D1A2E]';
 
   const onSeek = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!active) return;
+    // Web Speech can only seek within a loaded narration; a recording can be
+    // scrubbed before it has ever been played.
+    if (!premium && !active) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    speech.seek((e.clientX - rect.left) / rect.width);
+    seekTo((e.clientX - rect.left) / rect.width);
   };
 
   return (
@@ -78,7 +134,7 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
 
         {/* Play / Pause / Resume */}
         <button
-          onClick={(e) => { e.stopPropagation(); speech.play(section, lang); }}
+          onClick={(e) => { e.stopPropagation(); onPlayToggle(); }}
           className={`p-1 flex-shrink-0 transition-colors ${accent}`}
           title={playing ? 'Pause' : (active ? (isFr ? 'Reprendre' : 'Resume') : (isFr ? 'Écouter' : 'Listen'))}
           aria-label={playing ? 'Pause' : 'Play'}
@@ -88,7 +144,7 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
 
         {/* Back 10s (only while this article is loaded) */}
         {active && (
-          <button onClick={(e) => { e.stopPropagation(); speech.seek(speech.progress - step); }} className={`p-1 flex-shrink-0 transition-colors ${dim}`} title={isFr ? 'Reculer de 10 s' : 'Back 10 seconds'} aria-label={isFr ? 'Reculer de 10 secondes' : 'Back 10 seconds'}>
+          <button onClick={(e) => { e.stopPropagation(); skip(-10); }} className={`p-1 flex-shrink-0 transition-colors ${dim}`} title={isFr ? 'Reculer de 10 s' : 'Back 10 seconds'} aria-label={isFr ? 'Reculer de 10 secondes' : 'Back 10 seconds'}>
             <Rewind size={12} />
           </button>
         )}
@@ -111,7 +167,7 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
 
         {/* Forward 10s */}
         {active && (
-          <button onClick={(e) => { e.stopPropagation(); speech.seek(speech.progress + step); }} className={`p-1 flex-shrink-0 transition-colors ${dim}`} title={isFr ? 'Avancer de 10 s' : 'Forward 10 seconds'} aria-label={isFr ? 'Avancer de 10 secondes' : 'Forward 10 seconds'}>
+          <button onClick={(e) => { e.stopPropagation(); skip(10); }} className={`p-1 flex-shrink-0 transition-colors ${dim}`} title={isFr ? 'Avancer de 10 s' : 'Forward 10 seconds'} aria-label={isFr ? 'Avancer de 10 secondes' : 'Forward 10 seconds'}>
             <FastForward size={12} />
           </button>
         )}
@@ -139,12 +195,37 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
                   {isFr ? 'Voix · français' : 'Voice · English'}
                 </div>
                 <ul className="max-h-48 overflow-y-auto">
+                  {/* The published recording, when there is one. Choosing a
+                    * voice IS choosing an engine: this entry plays the studio
+                    * file, everything below synthesises in the browser. */}
+                  {narration && (
+                    <>
+                      <li>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); speech.stop(); setUseSpeech(false); setVoiceOpen(false); }}
+                          className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
+                            premium ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium' : 'text-[#333] hover:bg-[#F5F5F5]'
+                          }`}
+                        >
+                          <span className="block truncate">
+                            {VOICE_LABELS[narration.voice] ?? narration.voice}
+                          </span>
+                          <span className="block text-[9px] text-[#AAA]">
+                            {isFr ? 'enregistrement · voix de studio' : 'recording · studio voice'}
+                          </span>
+                        </button>
+                      </li>
+                      <li className="px-3 py-1 border-y border-[#EFEFEF] text-[8px] tracking-[0.15em] uppercase text-[#BBB] font-body">
+                        {isFr ? 'ou voix du navigateur' : 'or browser voices'}
+                      </li>
+                    </>
+                  )}
                   {voices.map((v) => (
                     <li key={v.name}>
                       <button
-                        onClick={(e) => { e.stopPropagation(); speech.selectVoice(lang, v.name); setVoiceOpen(false); }}
+                        onClick={(e) => { e.stopPropagation(); audio.stop(); setUseSpeech(true); speech.selectVoice(lang, v.name); setVoiceOpen(false); }}
                         className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
-                          selected === v.name ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium' : 'text-[#333] hover:bg-[#F5F5F5]'
+                          !premium && selected === v.name ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium' : 'text-[#333] hover:bg-[#F5F5F5]'
                         }`}
                       >
                         <span className="block truncate">{v.name}</span>
@@ -165,7 +246,7 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
         </p>
       )}
     </div>
-    {floating && <FloatingReportPlayer speech={speech} lang={lang} sectionName={title} />}
+    {floating && <FloatingReportPlayer speech={speech} lang={lang} sectionName={title} audio={premium ? audio : undefined} />}
     </>
   );
 }

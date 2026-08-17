@@ -14,6 +14,7 @@
     "validate:critical-minerals": "node scripts/validate-critical-minerals-map-data.cjs",
     "apply:mineral-delta": "node scripts/apply-mineral-delta.cjs",
     "fix:fr": "node scripts/fix-fr-semicolon-spaces.cjs --all --write && node scripts/fix-fr-typography.cjs --all --write",
+    "deploy:audio": "node scripts/deploy-with-audio.cjs",
     "prepare": "git config core.hooksPath .githooks || true"
   },
   "dependencies": {

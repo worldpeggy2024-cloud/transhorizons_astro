@@ -1,0 +1,12 @@
+{
+  "articles/resource-civilization/en": {
+    "src": "/audio/articles/resource-civilization/en/adam-stone/01-article.mp3",
+    "voice": "adam-stone",
+    "seconds": 935
+  },
+  "articles/resource-civilization/fr": {
+    "src": "/audio/articles/resource-civilization/fr/reflechie/01-article.mp3",
+    "voice": "reflechie",
+    "seconds": 906
+  }
+}

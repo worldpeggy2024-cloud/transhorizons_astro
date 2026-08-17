@@ -13,6 +13,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Volume2, Play, Pause, Square, Rewind, FastForward, Headphones, ChevronDown } from 'lucide-react';
 import { SPEEDS } from '../hooks/useReportSpeech';
 import type { ReportSpeech, SpeechSection } from '../hooks/useReportSpeech';
+import type { NarrationAudio } from '../hooks/useNarrationAudio';
 
 const CHARS_PER_SEC = 14; // rough spoken rate for the time estimate
 const fmt = (s: number) => {
@@ -129,41 +130,58 @@ export function ReportAudioBar({ speech, sections, lang }: {
 
 /** Fixed transport pill — visible only while something is sounding, reachable from
  * any section. Drives the same queue as the section buttons and the baseline bar. */
-export function FloatingReportPlayer({ speech, lang, sectionName }: {
+export function FloatingReportPlayer({ speech, lang, sectionName, audio }: {
   speech: ReportSpeech;
   lang: string;
   /** Human label of the section currently sounding, if any. */
   sectionName?: string;
+  /** A pre-generated recording, when one is playing instead of Web Speech.
+   * The transport is identical either way — only the source differs. */
+  audio?: NarrationAudio;
 }) {
-  if (!speech.supported || speech.status === 'idle') return null;
+  // Whichever engine is actually sounding drives the pill. Without this it
+  // never appeared for a recording, because Web Speech sat idle throughout.
+  const onAudio = !!audio?.available && audio.status !== 'idle';
+  if (!onAudio && (!speech.supported || speech.status === 'idle')) return null;
+
   const fr = lang.toLowerCase().startsWith('fr');
+  const playing = onAudio ? audio!.status === 'playing' : speech.status === 'playing';
+  const rate = onAudio ? audio!.rate : speech.rate;
   // Speed shortens the clock: at 1.5x the same text takes two thirds the time.
-  const totalDur = speech.totalChars / (CHARS_PER_SEC * speech.rate);
-  const elapsed = speech.progress * totalDur;
-  // 10 seconds as a fraction of the whole narration, for the skip buttons.
-  const step = (10 * CHARS_PER_SEC * speech.rate) / (speech.totalChars || 1);
+  // A recording reports its true length, so no estimate is needed.
+  const totalDur = onAudio ? audio!.duration / rate : speech.totalChars / (CHARS_PER_SEC * rate);
+  const progress = onAudio ? audio!.progress : speech.progress;
+  const elapsed = progress * totalDur;
+
+  const toggle = () => (onAudio ? audio!.toggle() : (playing ? speech.pause() : speech.resume()));
+  const stopAll = () => (onAudio ? audio!.stop() : speech.stop());
+  // A recording skips by real seconds; Web Speech can only move whole sentences.
+  const skip = (seconds: number) =>
+    onAudio ? audio!.nudge(seconds) : speech.skip(seconds * CHARS_PER_SEC * rate);
 
   const nextSpeed = () => {
-    const i = SPEEDS.indexOf(speech.rate as typeof SPEEDS[number]);
-    speech.setRate(SPEEDS[(i + 1) % SPEEDS.length] ?? 1);
+    const i = SPEEDS.indexOf(rate as typeof SPEEDS[number]);
+    const next = SPEEDS[(i + 1) % SPEEDS.length] ?? 1;
+    if (onAudio) audio!.setRate(next); else speech.setRate(next);
   };
   // "1x" reads better than "1×" at 10px; drop the trailing .0 on whole speeds.
-  const speedLabel = `${speech.rate}`.replace(/\.0$/, '') + '×';
+  const speedLabel = `${rate}`.replace(/\.0$/, '') + '×';
 
   const onSeek = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    speech.seek((e.clientX - rect.left) / rect.width);
+    const fraction = (e.clientX - rect.left) / rect.width;
+    if (onAudio) audio!.seek(fraction); else speech.seek(fraction);
   };
 
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[min(94vw,560px)] flex items-center gap-3 px-4 py-2.5 rounded-full border border-[var(--cr-border)] bg-[var(--cr-bg)] shadow-lg">
       <button
-        onClick={() => (speech.status === 'playing' ? speech.pause() : speech.resume())}
+        onClick={toggle}
         className="p-1 flex-shrink-0 text-[var(--cr-accent)] hover:opacity-80 transition-opacity"
-        title={speech.status === 'playing' ? 'Pause' : (fr ? 'Reprendre' : 'Resume')}
-        aria-label={speech.status === 'playing' ? 'Pause' : 'Resume'}
+        title={playing ? 'Pause' : (fr ? 'Reprendre' : 'Resume')}
+        aria-label={playing ? 'Pause' : 'Resume'}
       >
-        {speech.status === 'playing' ? <Pause size={16} fill="currentColor" /> : <Play size={16} fill="currentColor" />}
+        {playing ? <Pause size={16} fill="currentColor" /> : <Play size={16} fill="currentColor" />}
       </button>
 
       {sectionName && (
@@ -177,13 +195,13 @@ export function FloatingReportPlayer({ speech, lang, sectionName }: {
         onClick={onSeek}
         role="slider"
         aria-label={fr ? 'Position de lecture' : 'Playback position'}
-        aria-valuenow={Math.round(speech.progress * 100)}
+        aria-valuenow={Math.round(progress * 100)}
         aria-valuemin={0}
         aria-valuemax={100}
         title={`${fmt(elapsed)} / ${fmt(totalDur)}`}
       >
         <div className="h-[4px] rounded-full bg-[var(--cr-border)] overflow-hidden">
-          <div className="h-full rounded-full bg-[var(--cr-accent)] transition-[width] duration-150" style={{ width: `${speech.progress * 100}%` }} />
+          <div className="h-full rounded-full bg-[var(--cr-accent)] transition-[width] duration-150" style={{ width: `${progress * 100}%` }} />
         </div>
       </div>
 
@@ -194,7 +212,7 @@ export function FloatingReportPlayer({ speech, lang, sectionName }: {
       <button
         onClick={nextSpeed}
         className={`px-1 flex-shrink-0 font-mono text-[10px] tabular-nums leading-none transition-colors ${
-          speech.rate === 1 ? 'text-[var(--cr-faint)] hover:text-[var(--cr-accent)]' : 'text-[var(--cr-accent)]'
+          rate === 1 ? 'text-[var(--cr-faint)] hover:text-[var(--cr-accent)]' : 'text-[var(--cr-accent)]'
         }`}
         title={fr ? 'Vitesse de lecture' : 'Reading speed'}
         aria-label={fr ? `Vitesse de lecture, actuellement ${speedLabel}` : `Reading speed, currently ${speedLabel}`}
@@ -202,13 +220,13 @@ export function FloatingReportPlayer({ speech, lang, sectionName }: {
         {speedLabel}
       </button>
 
-      <button onClick={() => speech.seek(speech.progress - step)} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Reculer de 10 s' : 'Back 10 seconds'} aria-label={fr ? 'Reculer de 10 secondes' : 'Back 10 seconds'}>
+      <button onClick={() => skip(-10)} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Reculer de 10 s' : 'Back 10 seconds'} aria-label={fr ? 'Reculer de 10 secondes' : 'Back 10 seconds'}>
         <Rewind size={14} />
       </button>
-      <button onClick={() => speech.seek(speech.progress + step)} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Avancer de 10 s' : 'Forward 10 seconds'} aria-label={fr ? 'Avancer de 10 secondes' : 'Forward 10 seconds'}>
+      <button onClick={() => skip(10)} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Avancer de 10 s' : 'Forward 10 seconds'} aria-label={fr ? 'Avancer de 10 secondes' : 'Forward 10 seconds'}>
         <FastForward size={14} />
       </button>
-      <button onClick={() => speech.stop()} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Arrêter' : 'Stop'} aria-label={fr ? 'Arrêter' : 'Stop'}>
+      <button onClick={stopAll} className="p-1 flex-shrink-0 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors" title={fr ? 'Arrêter' : 'Stop'} aria-label={fr ? 'Arrêter' : 'Stop'}>
         <Square size={13} />
       </button>
     </div>

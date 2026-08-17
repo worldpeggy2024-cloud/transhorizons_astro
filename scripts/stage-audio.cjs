@@ -57,6 +57,7 @@ const VOICE_LABELS = {
   // French — female
   'annonce-calme': 'Annonce Calme',
   ora: 'Ora (articulate)',
+  reflechie: 'Voix Reflechie',
 };
 
 // MPEG-1 Layer III bitrates (kbps) and sample rates, indexed as in the frame
@@ -227,6 +228,28 @@ function collect() {
 const groups = collect();
 fs.mkdirSync(path.dirname(INDEX), { recursive: true });
 fs.writeFileSync(INDEX, JSON.stringify({ groups }, null, 2) + '\n', 'utf8');
+
+/*
+ * narrationManifest.json — what the SITE reads, as opposed to audioIndex.json
+ * which only drives the private /listen page. Keyed "articles/<slug>/<lang>",
+ * one entry per piece that has a published recording. Absent key = no premium
+ * audio, and the player falls back to Web Speech.
+ */
+const NARRATION = path.join('src', 'data', 'narrationManifest.json');
+const narration = {};
+for (const g of groups) {
+  for (const t of g.tracks) {
+    const m = t.src.match(/^\/audio\/articles\/([^/]+)\/([^/]+)\/([^/]+)\//);
+    if (!m) continue;
+    const [, slug, lang, voice] = m;
+    // First voice staged for a slug+lang wins; staging is filtered with --only
+    // to exactly the approved recordings, so there is normally just the one.
+    const key = `articles/${slug}/${lang}`;
+    if (!narration[key]) narration[key] = { src: t.src, voice, seconds: t.seconds };
+  }
+}
+fs.writeFileSync(NARRATION, JSON.stringify(narration, null, 2) + '\n', 'utf8');
+console.log(`Narration manifest -> ${NARRATION}  (${Object.keys(narration).length} entry/entries)`);
 
 let bytes = 0, count = 0;
 const walk = (dir) => {
