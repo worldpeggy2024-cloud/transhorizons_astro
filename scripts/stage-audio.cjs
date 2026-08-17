@@ -139,7 +139,28 @@ const ONLY = (() => {
     : null;
 })();
 
-const wanted = (rel) => !ONLY || ONLY.some((s) => rel.includes(s));
+/*
+ * With no --only, stage exactly the APPROVED recordings listed in
+ * content/narration-approved.json. That file is the publication decision: what
+ * is in it ships, what is not stays in tts-out for review.
+ *
+ * Defaulting to "everything in tts-out" was wrong — it meant a deploy could
+ * quietly publish a superseded take, or 900 MB of evaluation material, simply
+ * because someone forgot a flag. --all restores that behaviour deliberately.
+ */
+const APPROVED = (() => {
+  if (ONLY || process.argv.includes('--all')) return null;
+  const file = path.join('content', 'narration-approved.json');
+  if (!fs.existsSync(file)) return null;
+  const map = JSON.parse(fs.readFileSync(file, 'utf8')).approved || {};
+  // "articles/<slug>/<lang>": "<voice>"  ->  "articles/<slug>/<lang>/<voice>/"
+  return Object.entries(map).map(([key, voice]) => `${key}/${voice}/`);
+})();
+
+const wanted = (rel) => {
+  const patterns = ONLY || APPROVED;
+  return !patterns || patterns.some((s) => rel.includes(s));
+};
 
 function copy(from, to) {
   if (INDEX_ONLY) return;

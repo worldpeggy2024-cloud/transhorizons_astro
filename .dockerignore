@@ -1,15 +1,20 @@
 # ---------------------------------------------------------------------------
-# Narration audio — TOGGLE.
+# Narration audio.
 #
-# public/audio is staged by scripts/stage-audio.cjs and is gitignored, but the
-# Dockerfile does `COPY . .` from the WORKING DIRECTORY, so without this line it
-# ships in the image and adds ~900 MB to every single deploy.
+# public/audio SHIPS. It holds only APPROVED recordings — the ones chosen for
+# publication — staged by scripts/stage-audio.cjs from content/narration-approved.json.
+# It is gitignored (regenerable, and binary), but the Dockerfile copies the
+# working directory rather than a git checkout, so it reaches the image anyway.
 #
-# Keep it EXCLUDED for ordinary deploys. Comment the line out (and re-run
-# scripts/stage-audio.cjs first) only when you deliberately want the audio and
-# the /listen page live.
+# It was excluded while public/audio was a scratch area holding every take under
+# evaluation (~900 MB). Now that it holds only what is published, excluding it
+# would mean the studio voice silently vanishing on any ordinary deploy.
+#
+# What must NOT ship is the generation working set below: source text, the
+# per-paragraph cache and every superseded take. None of it is served.
 # ---------------------------------------------------------------------------
-public/audio
+tts-text
+tts-cache
 
 # flyctl launch added from .gitignore
 # dependencies

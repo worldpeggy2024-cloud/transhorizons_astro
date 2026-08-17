@@ -1,0 +1,19 @@
+{
+  "_comment": [
+    "Which narration recording is APPROVED for publication, per piece and language.",
+    "Key: articles/<slug>/<lang>.  Value: the voice slug, matching a folder under",
+    "tts-out/articles/<slug>/<lang>/<voice>/ and a name in VOICES in scripts/fish_tts.py.",
+    "",
+    "scripts/stage-audio.cjs reads this by default and copies exactly these files",
+    "into public/audio, which then ships with every deploy. Adding a line here is",
+    "what publishes a recording; removing one unpublishes it (the page falls back",
+    "to browser speech, which always reads the current text).",
+    "",
+    "Generated takes that are not listed here stay in tts-out for review and are",
+    "never deployed."
+  ],
+  "approved": {
+    "articles/resource-civilization/en": "adam-stone",
+    "articles/resource-civilization/fr": "reflechie"
+  }
+}
