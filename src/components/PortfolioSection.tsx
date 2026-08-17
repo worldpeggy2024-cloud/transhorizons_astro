@@ -10,6 +10,7 @@ import { ArrowRight, Clock, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 import { getArticleText, getArticleDate } from '../lib/articleTexts';
+import ReviewBadge from './ReviewBadge';
 
 // portfolioItems are now built inside the component using translation keys
 
@@ -146,7 +147,8 @@ export default function PortfolioSection() {
                 style={{ transitionDelay: `${i * 120}ms` }}
               >
                 {/* Image */}
-                <div className="img-zoom h-48 bg-[#C8C8C8] overflow-hidden shrink-0">
+                <div className="img-zoom h-48 bg-[#C8C8C8] overflow-hidden shrink-0 relative">
+                  <ReviewBadge slug={item.slug} lang={lang} />
                   <img
                     src={item.image}
                     alt={item.title}

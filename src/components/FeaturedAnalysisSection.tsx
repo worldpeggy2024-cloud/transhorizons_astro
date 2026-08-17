@@ -11,6 +11,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import ArticleTTSButton from './ArticleTTSButton';
 import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 import { getArticleText, getArticleDate } from '../lib/articleTexts';
+import ReviewBadge from './ReviewBadge';
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -92,7 +93,8 @@ export default function FeaturedAnalysisSection() {
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              <div className="img-zoom h-52 overflow-hidden shrink-0">
+              <div className="img-zoom h-52 overflow-hidden shrink-0 relative">
+                  <ReviewBadge slug={article.slug} lang={language === 'fr' ? 'fr' : 'en'} />
                 <img
                   src={article.image}
                   alt={article.title}

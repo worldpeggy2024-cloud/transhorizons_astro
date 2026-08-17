@@ -10,6 +10,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Footer from '../components/Footer';
 import PortfolioTTSPlayer from '../components/PortfolioTTSPlayer';
 import { getNoteText } from '../lib/noteTexts';
+import ReviewBadge from '../components/ReviewBadge';
 
 type FilterKey = 'all' | 'notes' | 'observations' | 'systems-signals';
 
@@ -151,6 +152,7 @@ export default function NotesIndex() {
               }`}
             >
               <div className="h-52 overflow-hidden shrink-0 relative">
+                  <ReviewBadge slug={article.slug} lang={lang} />
                 <img
                   src={article.image}
                   alt={article.title}

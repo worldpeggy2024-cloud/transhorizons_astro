@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 import ArticleTTSButton from '../components/ArticleTTSButton';
 import PortfolioTTSPlayer from '../components/PortfolioTTSPlayer';
 import { getArticleText, getArticleDate } from '../lib/articleTexts';
+import ReviewBadge from '../components/ReviewBadge';
 
 type FilterKey = 'all' | 'systems' | 'geopolitics' | 'resources' | 'technology';
 
@@ -275,7 +276,8 @@ export default function AnalysesIndex() {
               onClick={() => navigate(`/portfolio/${article.slug}`)}
               className="group bg-white border border-[#C8C8C8] overflow-hidden flex flex-col cursor-pointer hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
             >
-              <div className="h-52 overflow-hidden shrink-0">
+              <div className="h-52 overflow-hidden shrink-0 relative">
+                  <ReviewBadge slug={article.slug} lang={lang} />
                 <img
                   src={article.image}
                   alt={article.title}

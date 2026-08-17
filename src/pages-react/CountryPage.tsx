@@ -19,6 +19,9 @@ import {
 import { franceAnalysis } from '@/data/france-yaml';
 import { type AnalysisContent, type ActorEntry, type SourceEntry, type ScoreRating } from '@/data/countries/analysisTypes';
 import { useReportSpeech, type SpeechSection } from '@/hooks/useReportSpeech';
+import DraftWatermark, { DraftBanner } from '@/components/DraftWatermark';
+import { isCountryInReview, countryReviewLabel, countryReviewNote } from '@/lib/articleStatus';
+import { SEO_READY_COUNTRIES } from '@/lib/analysedCountries';
 import { actorGroupLabel } from '@/lib/actorGroups';
 import { SectionAudioButton, ReportAudioBar, FloatingReportPlayer } from '@/components/ReportAudio';
 import { canadaAnalysis } from '@/data/canada';
@@ -842,6 +845,7 @@ export default function CountryPage() {
   const { cca3 } = useParams<{ cca3: string }>();
   const { language, setLanguage } = useLanguage();
   const speech = useReportSpeech();
+  const countryNotUpdated = isCountryInReview(cca3, SEO_READY_COUNTRIES);
   const [country, setCountry] = useState<CountryData | null>(null);
   const [loading, setLoading] = useState(true);
   const [clickedSection, setClickedSection] = useState<string>('');
@@ -1291,7 +1295,15 @@ export default function CountryPage() {
         </div>
       </div>
 
-      <div className="max-w-4xl lg:max-w-6xl mx-auto px-6 py-12">
+      <div className="relative max-w-4xl lg:max-w-6xl mx-auto px-6 py-12">
+        {/* Reports written before the two-phase research pipeline are marked as
+            not updated. The test is SEO_READY_COUNTRIES — the same gate that
+            decides crawlability, so a report cannot be "current" for search
+            engines and "not updated" for readers. */}
+        <DraftWatermark lang={language} active={countryNotUpdated} label={countryReviewLabel(language)} />
+        <div className="relative z-10">
+        <DraftBanner lang={language} active={countryNotUpdated}
+          label={countryReviewLabel(language)} note={countryReviewNote(language)} />
 
         {/* Country header */}
         <div className="mb-12">
@@ -1715,6 +1727,7 @@ export default function CountryPage() {
 
         </div>
 
+        </div>
       </div>
     </div>
   );

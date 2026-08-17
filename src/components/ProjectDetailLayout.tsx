@@ -10,6 +10,8 @@ import PortfolioTTSPlayer from './PortfolioTTSPlayer';
 import { buildArticleTextFromProps } from '../lib/articleTexts';
 import { smoothScrollTo } from '../lib/smoothScroll';
 import { useLanguage } from '../contexts/LanguageContext';
+import DraftWatermark, { DraftBanner } from './DraftWatermark';
+import { slugFromPath } from '../lib/narrationAudio';
 
 /** Renders a content string that may contain multiple paragraphs (separated by
  *  blank lines) and bullet-point blocks (lines starting with •). */
@@ -105,6 +107,7 @@ export default function ProjectDetailLayout({
   sectionExtras,
 }: ProjectDetailLayoutProps) {
   const [, navigate] = useLocation();
+  const narrationSlug = typeof window !== 'undefined' ? slugFromPath(window.location.pathname) : '';
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   const [lightboxScale, setLightboxScale] = useState(1);
   // Active image index per section, for dual-toggle map switchers (keyed by section index)
@@ -251,7 +254,12 @@ export default function ProjectDetailLayout({
       </section>
 
       {/* Main Content */}
-      <main className="max-w-[1000px] mx-auto px-6 lg:px-10 py-20">
+      <main className="relative max-w-[1000px] mx-auto px-6 lg:px-10 py-20">
+        {/* Draft marking: a watermark behind the whole article, and the same
+            thing said in words at the top. Both no-op on finished pieces. */}
+        <DraftWatermark slug={narrationSlug} lang={lang} />
+        <div className="relative z-10">
+        <DraftBanner slug={narrationSlug} lang={lang} />
         {/* Key Takeaways — shown first for quick orientation */}
         <section className="bg-[#F5F3F0] rounded-lg p-10 md:p-12 mb-20 border border-[#C8C8C8]">
           <h3 className="font-display text-2xl md:text-3xl font-light text-[#1A1A1A] mb-10">
@@ -452,6 +460,7 @@ export default function ProjectDetailLayout({
             </div>
           </section>
         )}
+        </div>
       </main>
 
       {/* Footer Navigation */}
