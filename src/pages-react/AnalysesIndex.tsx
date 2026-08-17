@@ -351,6 +351,7 @@ export default function AnalysesIndex() {
                     <PortfolioTTSPlayer
                       id={`analyses-${article.slug}`}
                       text={getArticleText(article.slug, lang)}
+                      slug={article.slug}
                       lang={isFr ? 'fr-FR' : 'en-CA'}
                     />
                   ) : (

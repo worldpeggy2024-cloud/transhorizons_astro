@@ -1,4 +1,4 @@
-﻿/*
+/*
  * TransHorizons — Portfolio Section
  * Design: Light ivory background, editorial grid, gold accents
  * Title: "Geopolitics. Resources. Technology."
@@ -192,6 +192,7 @@ export default function PortfolioSection() {
                   <PortfolioTTSPlayer
                     id={`portfolio-${item.slug}`}
                     text={getArticleText(item.slug, lang)}
+                    slug={item.slug}
                     lang={lang === 'fr' ? 'fr-FR' : 'en-CA'}
                   />
                 </div>

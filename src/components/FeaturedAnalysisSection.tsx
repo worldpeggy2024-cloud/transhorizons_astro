@@ -132,6 +132,7 @@ export default function FeaturedAnalysisSection() {
                   <PortfolioTTSPlayer
                     id={`featured-${article.slug}`}
                     text={getArticleText(article.slug, language === 'fr' ? 'fr' : 'en')}
+                    slug={article.slug}
                     lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
                   />
                 )}

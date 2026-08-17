@@ -177,8 +177,11 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
           {formatTime(elapsed)}<span className={dark ? 'text-white/30 mx-0.5' : 'text-[#CCC] mx-0.5'}>/</span>{formatTime(totalDuration)}
         </span>
 
-        {/* Voice picker */}
-        {voices.length > 0 && (
+        {/* Voice picker. Shown when there is anything to choose between — which
+          * includes a studio recording on its own: a browser with no speech
+          * voices installed would otherwise hide the menu entirely and give the
+          * listener no way to see, or leave, the recording. */}
+        {(voices.length > 0 || narration) && (
           <div className="relative flex-shrink-0">
             <button
               onClick={(e) => { e.stopPropagation(); setVoiceOpen((v) => !v); }}

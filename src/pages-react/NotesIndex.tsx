@@ -204,6 +204,7 @@ export default function NotesIndex() {
                       <PortfolioTTSPlayer
                         id={`notes-index-${article.slug}`}
                         text={getNoteText(article.slug, lang) || `${article.title}. ${article.excerpt}`}
+                        slug={article.slug}
                         lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
                       />
                     </>

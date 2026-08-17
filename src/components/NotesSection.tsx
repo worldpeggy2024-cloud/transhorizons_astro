@@ -153,6 +153,7 @@ export default function NotesSection() {
                 <PortfolioTTSPlayer
                   id={`notes-home-${blogPosts[0].slug}`}
                   text={getNoteText(blogPosts[0].slug, lang) || `${blogPosts[0].title}. ${blogPosts[0].excerpt}`}
+                  slug={blogPosts[0].slug}
                   lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
                 />
               </div>
@@ -218,6 +219,7 @@ export default function NotesSection() {
                         <PortfolioTTSPlayer
                           id={`notes-home-${post.slug}`}
                           text={getNoteText(post.slug, lang) || `${post.title}. ${post.excerpt}`}
+                          slug={post.slug}
                           lang={language === 'fr' ? 'fr-FR' : 'en-CA'}
                         />
                       </>
