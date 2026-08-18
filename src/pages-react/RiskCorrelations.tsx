@@ -30,7 +30,7 @@ export default function RiskCorrelations() {
         >
           <ArrowLeft size={20} />
           <span className="text-sm font-medium">
-            {fr ? 'Retour à Analyse mondiale' : 'Back to World Analysis'}
+            {fr ? 'Retour à Vues du monde' : 'Back to World Analysis'}
           </span>
         </button>
       </div>

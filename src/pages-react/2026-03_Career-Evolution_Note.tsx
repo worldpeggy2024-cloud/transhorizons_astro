@@ -24,12 +24,21 @@ function cleanForTTS(text: string): string {
 function buildNoteAudioText(language: 'en' | 'fr'): string {
   const parts: string[] = [];
   if (d[`title_${language}`]) parts.push(cleanForTTS(d[`title_${language}`]));
-  if (d[`introductionTitle_${language}`]) parts.push(cleanForTTS(d[`introductionTitle_${language}`]));
-  if (d[`introduction_${language}`]) parts.push(cleanForTTS(d[`introduction_${language}`]));
 
-  for (const k of (d.keyTakeaways ?? [])) {
+  /* Follow the PAGE, not the YAML. The reflections block renders under
+   * introductionTitle ("Key observations"), before the introduction — reading
+   * the heading, then the introduction, then the list announced the section
+   * name over the wrong content. Per-item title_* fields are never displayed
+   * and so are never spoken. */
+  const takeaways = (d.keyTakeaways ?? []);
+  if (takeaways.length && d[`introductionTitle_${language}`]) {
+    parts.push(cleanForTTS(d[`introductionTitle_${language}`]));
+  }
+  for (const k of takeaways) {
     if (k[`description_${language}`]) parts.push(cleanForTTS(k[`description_${language}`]));
   }
+
+  if (d[`introduction_${language}`]) parts.push(cleanForTTS(d[`introduction_${language}`]));
 
   for (const s of (d.sections ?? [])) {
     if (s[`title_${language}`]) parts.push(cleanForTTS(s[`title_${language}`]));

@@ -604,11 +604,14 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         cached = CACHE_DIR / key[:2] / f"{key}.mp3"
 
         # --reroll forces a fresh attempt at just the paragraphs that match.
-        # Comma-separated, so a whole section can be redone in one pass and its
-        # paragraphs stay consistent with each other rather than one freshly
-        # generated block sitting among older ones.
-        reroll = any(n.strip() and n.strip().lower() in spoken.lower()
-                     for n in (args.reroll or "").split(","))
+        #
+        # Separated by "|", NOT by commas: prose is full of commas, so a needle
+        # like "Across decades, movement" silently split into two and matched
+        # paragraphs nobody asked for. With no "|" the whole argument is one
+        # needle, which is the safe reading of a single phrase.
+        needles = ([n for n in args.reroll.split("|")] if args.reroll and "|" in args.reroll
+                   else ([args.reroll] if args.reroll else []))
+        reroll = any(n.strip() and n.strip().lower() in spoken.lower() for n in needles)
         if not args.no_cache and not reroll and cached.is_file():
             parts.append(cached.read_bytes())
             hits += 1
@@ -990,9 +993,11 @@ def main() -> int:
                         help="do NOT re-extract from the source YAML first; generate "
                              "from the text already in tts-text/ (rarely what you want)")
     parser.add_argument("--reroll", metavar="TEXT",
-                        help="re-synthesise only paragraphs containing TEXT. For when "
-                             "the text is right but the reading came out wrong: this "
-                             "engine is stochastic, so a second attempt often differs.")
+                        help="re-synthesise only paragraphs containing TEXT. Separate "
+                             "several targets with | — NOT commas, since prose is full "
+                             "of them. For when the text is right but the reading came "
+                             "out wrong: this engine is stochastic, so a second attempt "
+                             "often differs.")
     parser.add_argument("--no-cache", action="store_true",
                         help="ignore the per-paragraph cache and re-synthesise everything")
     parser.add_argument("--raw", action="store_true",
@@ -1075,7 +1080,7 @@ def main() -> int:
         api_key = get_api_key()
         started = time.monotonic()
         audio = render(text, voice_id, args.model, api_key, args,
-                       temperature, args.paragraph_pause, lang)
+                       temperature, args.paragraph_pause, args.lang)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(audio)
 

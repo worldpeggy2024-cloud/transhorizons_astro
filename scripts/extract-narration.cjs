@@ -263,23 +263,49 @@ const TAKEAWAYS_LABEL = { en: 'Key Takeaways', fr: 'Points clés' };
  * summary after the argument it was meant to preface, unannounced. The page's
  * own Web Speech narration still has this defect — same fix, separate change.
  */
-function buildArticleText(data, lang) {
+function buildArticleText(data, lang, isNote = false) {
   const parts = [];
   const heading = (v) => parts.push(HEADING + cleanForTTS(v));
   if (data[`title_${lang}`]) heading(data[`title_${lang}`]);
   if (data[`subtitle_${lang}`]) parts.push(cleanForTTS(data[`subtitle_${lang}`]));
 
   const takeaways = data.keyTakeaways ?? [];
-  if (takeaways.length) {
-    heading(TAKEAWAYS_LABEL[lang] ?? TAKEAWAYS_LABEL.en);
-    for (const k of takeaways) {
-      if (k[`title_${lang}`]) heading(k[`title_${lang}`]);
-      if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
-    }
-  }
 
-  if (data[`introductionTitle_${lang}`]) heading(data[`introductionTitle_${lang}`]);
-  if (String(data[`introduction_${lang}`] || '').trim()) parts.push(cleanForTTS(data[`introduction_${lang}`]));
+  if (isNote) {
+    /*
+     * NOTES render this block differently from essays, and the audio must
+     * follow the page rather than the YAML.
+     *
+     * The Note page (see pages-react/*_Note.tsx) shows the list under the
+     * piece's own `introductionTitle` — "Key observations" / "Observations
+     * clés" — and renders ONLY each item's description. The per-item
+     * `title_*` fields exist in Keystatic but are never displayed.
+     *
+     * Reading them aloud therefore announced headings no reader can see, and
+     * speaking a hard-coded "Key Takeaways" put the wrong name on the section
+     * while its real name arrived later, before the introduction — which is
+     * why it sounded like the label was repeated at the end of the block.
+     */
+    if (takeaways.length) {
+      if (data[`introductionTitle_${lang}`]) heading(data[`introductionTitle_${lang}`]);
+      for (const k of takeaways) {
+        if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
+      }
+    }
+    if (String(data[`introduction_${lang}`] || '').trim()) parts.push(cleanForTTS(data[`introduction_${lang}`]));
+  } else {
+    // Essays: ProjectDetailLayout shows a "Key Takeaways" block with a title
+    // and description per item, then the introduction under its own heading.
+    if (takeaways.length) {
+      heading(TAKEAWAYS_LABEL[lang] ?? TAKEAWAYS_LABEL.en);
+      for (const k of takeaways) {
+        if (k[`title_${lang}`]) heading(k[`title_${lang}`]);
+        if (k[`description_${lang}`]) parts.push(cleanForTTS(k[`description_${lang}`]));
+      }
+    }
+    if (data[`introductionTitle_${lang}`]) heading(data[`introductionTitle_${lang}`]);
+    if (String(data[`introduction_${lang}`] || '').trim()) parts.push(cleanForTTS(data[`introduction_${lang}`]));
+  }
 
   for (const s of data.sections ?? []) {
     if (s[`title_${lang}`]) heading(s[`title_${lang}`]);
@@ -326,8 +352,11 @@ function runArticle(slug, langs) {
   }
   const src = path.join('content', 'articles', filename);
   const data = yaml.load(fs.readFileSync(src, 'utf8'));
+  // Notes and essays use different layouts, and therefore a different spoken
+  // order. The filename carries the distinction the content files already made.
+  const isNote = /_Note\.ya?ml$/i.test(filename);
   for (const lang of langs) {
-    const text = buildArticleText(data, lang);
+    const text = buildArticleText(data, lang, isNote);
     if (!text) { console.error(`${slug}/${lang}: no text — skipped`); continue; }
     const outDir = path.join('tts-text', 'articles', slug, lang);
     const { totalChars } = writeManifest(

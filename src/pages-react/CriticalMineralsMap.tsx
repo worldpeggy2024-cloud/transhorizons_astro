@@ -294,7 +294,7 @@ export default function CriticalMineralsMap() {
             className="inline-flex items-center gap-1.5 text-slate-400 hover:text-[#C8860A] transition-colors font-body text-sm mb-4 group"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-0.5 transition-transform" />
-            {lang === "fr" ? "Retour à l'Analyse mondiale" : "Back to World Analysis"}
+            {lang === "fr" ? "Retour à Vues du monde" : "Back to World Analysis"}
           </Link>
           <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-2">
             TransHorizons · {labels.sources[lang]}: {CRITICAL_MINERALS_MAP_METADATA.headerBadge}
