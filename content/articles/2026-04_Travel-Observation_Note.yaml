@@ -88,9 +88,10 @@ sections:
       attention analytique plus large aux façons dont les institutions, les
       économies et les cultures fonctionnent concrètement.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Observation Rather Than Tourism
     title_fr: Observation plutôt que tourisme
-    image: /images/PICT4876.JPG
     content_en: >-
       Travel, for me, was never primarily about destinations. It became a method
       of inquiry. Fluency in local languages was rarely the reality. Most
@@ -132,7 +133,10 @@ sections:
 
       Le voyage est ainsi progressivement devenu une forme d’observation de
       terrain informelle.
+    image: /images/PICT4876.JPG
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Early Professional Formation Across Continents
     title_fr: Formation professionnelle précoce sur plusieurs continents
     content_en: >-
@@ -170,8 +174,8 @@ sections:
       J’ai émigré au Canada en traversant l’Atlantique en cargo : passage lent
       et physique qui a rendu le changement de continent concret. Ce
       déménagement a marqué une transformation décisive. La traduction
-      indépendante m'a permis une mobilité géographique dans l'ensemble du pays :
-      de Montréal aux régions plus éloignées du Québec, aux villes des
+      indépendante m'a permis une mobilité géographique dans l'ensemble du
+      pays : de Montréal aux régions plus éloignées du Québec, aux villes des
       Prairies, à la côte Ouest, ainsi qu’à deux des trois capitales
       territoriales du Canada. Le Canada n’était pas simplement un autre pays
       découvert par le voyage. Il est devenu un lieu d’appartenance civique.
@@ -183,6 +187,8 @@ sections:
       dans ce cadre suscite une gratitude durable et un intérêt intellectuel
       pour la façon dont les sociétés plurielles maintiennent leur cohésion.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Travel as Field Research
     title_fr: Le voyage comme recherche sur le terrain
     content_en: >-
@@ -232,58 +238,10 @@ sections:
       Across decades, movement increasingly followed a consistent principle:
       travel slowly, fly as little as possible, and remain long enough for
       patterns to emerge.
-    content_fr: >-
-      Une fois la stabilité professionnelle obtenue, le voyage s'est élargi en
-      exploration mondiale prolongée. La participation à une caravane médicale
-      au Maroc a constitué une première confrontation avec les stéréotypes
-      hérités et la complexité des identités nord-africaines. Une expédition en
-      4×4 à travers la Mauritanie a révélé la manière dont la géographie façonne
-      les civilisation. De longs voyages par la route dans les îles britanniques
-      ont mis en évidence les contrastes économiques régionaux au sein
-      d'économies avancées.
-
-
-      L'Asie a marqué un tournant. Un voyage de dix mois amorcé à Hong Kong et
-      en Asie du Sud-Est a compris un séjour prolongé et des études en Chine, à
-      Shanghai, mais aussi au cours de plusieurs milliers de kilomètres
-      parcourus en train à travers le pays. Cette exploration s’est poursuivie
-      jusqu'au Japon, en Mongolie, au Tibet, avant de se terminer par un voyage
-      en Transsibérien pour regagner l'Europe.
-
-
-      Des retours ultérieurs en Sibérie ont confirmé une profonde fascination
-      intellectuelle pour les régions-frontières : ces lieux où l’environnement,
-      les infrastructures et le pouvoir de l’État s’entrecroisent de manière
-      inégale, et où les centres politiques peuvent sembler éloignés des
-      réalités quotidiennes.
-
-
-      Les années suivantes ont étendu la carte observationnelle :
-
-
-      • voyages gemmologiques reliant la géologie, les réseaux commerciaux et
-      les marchés mondiaux;
-
-      • longs séjours en Australie et en Nouvelle-Zélande;
-
-      • voyage en Amérique du Sud, parfois en autobus, à travers le Brésil,
-      l'Argentine, le Chili et l'Uruguay;
-
-      • séjours prolongés répétés au Japon axés sur l'observation lente de
-      l’ordre collectif et de la coordination sociale;
-
-      • exploration terrestre des centres institutionnels et historiques de
-      l'Europe;
-
-      • traversées ferroviaires transcontinentales en Amérique du Nord;
-
-      • périodes de résidence prolongée à Séoul après la pandémie.
-
-
-      Au fil des décennies, le déplacement a de plus en plus obéi à un principe
-      constant : voyager lentement, prendre l’avion le moins possible et rester
-      assez longtemps pour que les dynamiques deviennent perceptibles.
+    content_fr: "Une fois la stabilité professionnelle obtenue, le voyage s'est élargi en exploration mondiale prolongée. La participation à une caravane médicale au Maroc a constitué une première confrontation avec les stéréotypes hérités et la complexité des identités nord-africaines. Une expédition en 4×4\_à travers la Mauritanie a révélé la manière dont la géographie façonne les civilisation. De longs voyages par la route dans les îles britanniques ont mis en évidence les contrastes économiques régionaux au sein d'économies avancées.\n\nL'Asie a marqué un tournant. Un voyage de dix mois amorcé à Hong Kong et en Asie du Sud-Est a compris un séjour prolongé et des études en Chine, à Shanghai, mais aussi au cours de plusieurs milliers de kilomètres parcourus en train à travers le pays. Cette exploration s’est poursuivie jusqu'au Japon, en Mongolie, au Tibet, avant de se terminer par un voyage en Transsibérien pour regagner l'Europe.\n\nDes retours ultérieurs en Sibérie ont confirmé une profonde fascination intellectuelle pour les régions-frontières : ces lieux où l’environnement, les infrastructures et le pouvoir de l’État s’entrecroisent de manière inégale, et où les centres politiques peuvent sembler éloignés des réalités quotidiennes.\n\nLes années suivantes ont étendu la carte observationnelle :\n\n• voyages gemmologiques reliant la géologie, les réseaux commerciaux et les marchés mondiaux;\n• longs séjours en Australie et en Nouvelle-Zélande;\n• voyage en Amérique du Sud, parfois en autobus, à travers le Brésil, l'Argentine, le Chili et l'Uruguay;\n• séjours prolongés répétés au Japon axés sur l'observation lente de l’ordre collectif et de la coordination sociale;\n• exploration terrestre des centres institutionnels et historiques de l'Europe;\n• traversées ferroviaires transcontinentales en Amérique du Nord;\n• périodes de résidence prolongée à Séoul après la pandémie.\n\nAu fil des décennies, le déplacement a de plus en plus obéi à un principe constant : voyager lentement, prendre l’avion le moins possible et rester assez longtemps pour que les dynamiques deviennent perceptibles."
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Civilizations Seen from the Ground
     title_fr: Les civilisations vues du terrain
     content_en: >-
@@ -325,6 +283,8 @@ sections:
       l'adaptation se poursuit.
     image: /images/IMG_0343.JPG
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: The Emergence of an Analytical Practice
     title_fr: Émergence d'une pratique analytique
     content_en: >-
@@ -357,6 +317,8 @@ sections:
       forment le socle d'une voix analytique fondée non seulement sur la
       lecture, mais également sur la comparaison vécue entre les sociétés.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Canada as Intellectual Anchor
     title_fr: 'Le Canada : ancre intellectuelle'
     content_en: >-
@@ -390,6 +352,8 @@ sections:
       fragmentation, le Canada montre que la diversité peut être organisée
       administrativement, plutôt que simplement célébrée dans le discours.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Continuing the Work
     title_fr: Continuer le travail
     content_en: >-
@@ -429,6 +393,8 @@ sections:
       mais vers une compréhension plus claire.
     image: /images/IMG_8090.JPG
     imagePosition: left
+    imageLayout: single
+    images: []
 keyTakeaways:
   - title_en: Travel as inquiry
     title_fr: Le voyage comme méthode d'enquête
@@ -436,23 +402,23 @@ keyTakeaways:
       Travel as observation—not tourism—provides insights into how societies
       function and adapt.
     description_fr: >-
-      Le voyage comme observation (et non comme tourisme) offre un éclairage sur
-      la manière dont les sociétés fonctionnent et s’adaptent.
+      Le voyage envisagé comme observation, et non comme tourisme, offre un
+      éclairage sur la manière dont les sociétés fonctionnent et s’adaptent.
   - title_en: Language as worldview
     title_fr: La langue comme vision du monde
     description_en: >-
       Understanding how different cultures think and communicate shapes a deeper
       understanding of geopolitics.
     description_fr: >-
-      Comprendre comment les différentes cultures pensent et communiquent permet
-      d’approfondir la compréhension de la géopolitique.
+      Tenter de saisir la façon dont les différentes cultures pensent et
+      communiquent permet de prendre conscience des enjeux géopolitiques.
   - title_en: Geopolitics as lived experience
     title_fr: La géopolitique comme expérience vécue
     description_en: >-
       Understanding geopolitics requires direct observation and human connection
       across societies.
     description_fr: >-
-      Comprendre la géopolitique exige une observation directe et des liens
+      Déchiffrer la géopolitique exige une observation directe et des liens
       humains entre les sociétés.
   - title_en: Institutional scale
     title_fr: Échelle institutionnelle
@@ -461,7 +427,7 @@ keyTakeaways:
       them requires understanding people.
     description_fr: >-
       Les systèmes économiques et les institutions fonctionnent à l'échelle
-      humaine; les comprendre suppose de comprendre les personnes.
+      humaine; les décoder suppose de comprendre les gens.
   - title_en: Complexity and resilience
     title_fr: Complexité et résilience
     description_en: >-

@@ -33,6 +33,8 @@ const yaml = require('js-yaml');
  * reaches the engine and never appears in the page.
  */
 const HEADING = '## ';
+/** A section title — outranks HEADING, and never joins the voice alternation. */
+const SECTION_HEADING = '# ';
 
 // ── Section definitions, mirroring CountryPage.tsx rows ──────────────────────
 // [yaml key stem, EN label, FR label, optional legacy key stem]
@@ -172,6 +174,50 @@ function situationText(raw) {
   );
 }
 
+/*
+ * Quick scorecard — six rated dimensions, each with a rationale.
+ *
+ * Rendered on the page between the baseline and the report sections, and until
+ * now absent from the audio entirely. Ratings are spoken in FULL WORDS: the
+ * page abbreviates them to fit a chip ("Med-High", "Moy.-élev.") and an
+ * abbreviation read aloud is noise.
+ */
+const SCORECARD_LABEL = { en: 'Quick scorecard', fr: 'Tableau de bord rapide' };
+
+const SCORECARD_ROWS = [
+  ['eliteCohesion',          'Elite cohesion',           'Cohésion des élites'],
+  ['socialCohesion',         'Social cohesion',          'Cohésion sociale'],
+  ['securityLoyalty',        'Security loyalty',         'Loyauté des forces'],
+  ['economicPressure',       'Economic pressure',        'Pression économique'],
+  ['protestCapacity',        'Mobilization capacity',    'Capacité de mobilisation'],
+  ['institutionalResilience', 'Institutional resilience', 'Résilience institutionnelle'],
+];
+
+const RATING_SPOKEN = {
+  en: { High: 'High', 'Med-High': 'Medium to high', Med: 'Medium', 'Med-Low': 'Low to medium', Low: 'Low' },
+  fr: { High: 'Élevée', 'Med-High': 'Moyenne à élevée', Med: 'Moyenne', 'Med-Low': 'Faible à moyenne', Low: 'Faible' },
+};
+
+function scorecardBlocks(data, lang) {
+  let anchors = {};
+  try {
+    const raw = data.scorecard_anchors;
+    if (typeof raw === 'string' && raw.trim().startsWith('{')) anchors = JSON.parse(raw);
+  } catch { /* rationales are optional; ratings still read */ }
+
+  const parts = [];
+  for (const [key, en, fr] of SCORECARD_ROWS) {
+    const value = data[`scorecard_${key}`];
+    if (!value) continue;
+    const spoken = RATING_SPOKEN[lang]?.[value] ?? value;
+    parts.push(HEADING + (lang === 'fr' ? fr : en));
+    const rationale = stripMarkers(anchors[key]?.[`rationale_${lang}`] ?? '');
+    parts.push(stripMarkers(`${spoken}.${rationale ? ' ' + rationale : ''}`));
+  }
+  if (!parts.length) return '';
+  return [SECTION_HEADING + (SCORECARD_LABEL[lang] ?? SCORECARD_LABEL.en), ...parts].join('\n\n');
+}
+
 function buildSections(data, lang) {
   const out = [];
   for (const section of SECTIONS) {
@@ -193,9 +239,33 @@ function buildSections(data, lang) {
     }
     // Blank line between subsections too — "Geography …" and "Biosphere …" are
     // separate blocks, and ran together without a breath before this.
-    const text = parts.join('\n\n');
+    const label = lang === 'fr' ? section.fr : section.en;
+    /*
+     * The SECTION title, one level above a subsection heading. Spoken by the
+     * first voice always and excluded from the alternation count, so every
+     * section opens the same way and adding it does not shift which voice reads
+     * which subsection. Without it the report announced "Geography" and
+     * "Biosphere" but never "Territory" — no spoken marker for the largest
+     * division of the text. The baseline is the page's opener rather than a
+     * titled division, so it stays bare.
+     */
+    const body = parts.join('\n\n');
+    const text = !body.trim() ? ''
+      : (section.id === 'baseline' ? body : [SECTION_HEADING + label, body].join('\n\n'));
     if (text.trim()) {
-      out.push({ id: section.id, label: lang === 'fr' ? section.fr : section.en, text });
+      out.push({ id: section.id, label, text });
+    }
+    // The page shows the scorecard between the baseline and the report
+    // sections; the audio follows the page.
+    if (section.id === 'baseline') {
+      const card = scorecardBlocks(data, lang);
+      if (card.trim()) {
+        out.push({
+          id: 'scorecard',
+          label: SCORECARD_LABEL[lang] ?? SCORECARD_LABEL.en,
+          text: card,
+        });
+      }
     }
   }
   return out;
@@ -429,6 +499,21 @@ function main() {
       JSON.stringify({ country: code, lang, source: src, sections: manifest }, null, 2) + '\n',
       'utf8'
     );
+
+    /*
+     * Remove text files the manifest no longer lists. Sections are numbered by
+     * position, so inserting one (the scorecard) renumbers everything after it
+     * and leaves the old files behind — 05-political.txt beside 06-political.txt,
+     * both looking current. Generation reads the manifest and was unaffected,
+     * but anything reading the directory saw every section twice.
+     */
+    const keep = new Set(manifest.map((m) => m.text));
+    for (const f of fs.readdirSync(outDir)) {
+      if (f.endsWith('.txt') && !keep.has(f)) {
+        fs.unlinkSync(path.join(outDir, f));
+        console.log(`   removed stale ${f}`);
+      }
+    }
 
     const mins = Math.round(totalChars / 900);
     console.log(`${code}/${lang}: ${sections.length} sections, ${totalChars.toLocaleString()} chars, ~${mins} min -> ${outDir}`);

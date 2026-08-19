@@ -58,56 +58,124 @@ MODEL = "s2.1-pro-free"
 # between reports (or between report and articles) is likely better over time
 # than one voice reading everything. Find IDs at fish.audio/app/m/<id>.
 VOICES = {
+    # ENGLISH — grouped by ACCENT, because the accent should suit the country.
+    # A United States report read in British English, or a United Kingdom report
+    # in American, undercuts the piece before a word of analysis lands.
+    #   GBR -> British      USA -> United States    AUS -> Australia
+    #   CAN -> either; in practice the British voices have read it well.
+    # Everywhere else, English is the reporting language rather than the local
+    # one, so no accent is "right" — pick for readability, not for geography.
+    # IND is deliberately NOT an exception, though Indian English is a local
+    # variety with its own standard and would otherwise qualify. Peggy's call
+    # (2026-08-18): the audience is international and largely non-native, and
+    # comprehension across that audience outranks accent-matching. A decision
+    # about listeners, not about the accent.
+    # The clones are NOT one of these choices: see their group below.
     "en": {
-        # male
-        # https://fish.audio/app/m/bf322df2096a46f18c579d0baa36f41d/
-        "adrian":      "bf322df2096a46f18c579d0baa36f41d",  # US — FAVOURITE
-        # https://fish.audio/app/m/e422370a73e4439b8ccc10d58b78819b/
-        "deep-voice":  "e422370a73e4439b8ccc10d58b78819b",  # slightly British
-        # https://fish.audio/app/m/9184d174052b422d9fe2514ec0d4d095/
-        "war-arsenal": "9184d174052b422d9fe2514ec0d4d095",  # US, clear
+        # ── British ──────────────────────────────────────────────────────────
         # https://fish.audio/app/m/b82d76382a3f40139e76ffbd095da13d/
         # NB: the library holds many voices titled "adam stone" — this URL is
         # the only reliable way back to the right one. Searching the name is not.
-        "adam-stone":  "b82d76382a3f40139e76ffbd095da13d",  # British, more expressive
-        # female
+        "adam-stone":  "b82d76382a3f40139e76ffbd095da13d",  # male, expressive — APPROVED
+                                                            # for resource-civilization EN and the
+                                                            # CAN report duet (2026-08-16/17)
+        # https://fish.audio/app/m/e422370a73e4439b8ccc10d58b78819b/
+        "deep-voice":  "e422370a73e4439b8ccc10d58b78819b",  # male, deeper. Untried on a full piece.
+        # https://fish.audio/app/m/64028e2c8f8640e6bebf4826b7dc1ebc/
+        "ogechi":      "64028e2c8f8640e6bebf4826b7dc1ebc",  # female — CAN report duet partner
+        # https://fish.audio/app/m/b7204d4e40ef4a548c7c8547b7f73492/
+        "alok":        "b7204d4e40ef4a548c7c8547b7f73492",  # male. Untried on a full piece.
+        # https://fish.audio/app/m/b99f2c4a0012471cb32ab61152e7e48d/
+        "black-struggles": "b99f2c4a0012471cb32ab61152e7e48d",  # male. Untried on a full piece.
+
+        # ── United States ────────────────────────────────────────────────────
+        # THE USA REPORT DUET (chosen 2026-08-18): laura + war-arsenal.
         # https://fish.audio/app/m/e3cd384158934cc9a01029cd7d278634/
-        "laura":       "e3cd384158934cc9a01029cd7d278634",  # deep — CONFIRMED female EN (2026-08-15)
+        "laura":       "e3cd384158934cc9a01029cd7d278634",  # female, deep — US duet partner
+        # https://fish.audio/app/m/9184d174052b422d9fe2514ec0d4d095/
+        "war-arsenal": "9184d174052b422d9fe2514ec0d4d095",  # male, clear — US duet partner.
+                                                            # Replaced "adrian", dropped 2026-08-17
+                                                            # as too monotone.
+        # https://fish.audio/app/m/fd176117735446968cca7911ee4da42b/
+        "deep-story":  "fd176117735446968cca7911ee4da42b",  # male. Untried on a full piece.
         # https://fish.audio/app/m/7cefff1c89464d7dbc412482f909ec2d/
         "florence":    "7cefff1c89464d7dbc412482f909ec2d",  # Florence Scovel Shinn, lighter
         # https://fish.audio/app/m/7e4baf13677e4b95b5e25a60b9a717b4/
-        "old-woman":   "7e4baf13677e4b95b5e25a60b9a717b4",  # softer
-        # https://fish.audio/app/m/64028e2c8f8640e6bebf4826b7dc1ebc/
-        "ogechi":      "64028e2c8f8640e6bebf4826b7dc1ebc",  # more British
-        # Peggy's own cloned voice, ENGLISH model ("Friendly Storyteller"),
-        # trained on English recordings. Use this and NOT the French clone for
-        # English: a clone trained only on French applies French phonology to
-        # English and produces a far heavier accent than she actually has.
-        # One clone per language, never one clone for both.
-        # Three English clones, recorded 2026-08-15 in one sitting — presumably
-        # different reads rather than different voices. Which suits which piece
-        # is Peggy's call, not something to infer from the titles.
+        "old-woman":   "7e4baf13677e4b95b5e25a60b9a717b4",  # softer — FAVOURITE
+        # REJECTED 2026-08-12 — monotone, "really not pleasant to listen to".
+        # Kept only so the already-generated tts-out/**/sarah/ files stay addressable.
+        "sarah":       "933563129e564b19a115bedd57b7406a",
+        #
+        # BALANCE, not preference: the British voices have been the better
+        # readers so far, but reading everything in marked British English would
+        # be wrong for a site covering many countries — and plainly wrong for the
+        # USA. Accent follows the subject.
+
+        # ── Ireland ──────────────────────────────────────────────────────────
+        # No Irish report exists yet — banked so the accent is not the thing
+        # that delays one.
+        # https://fish.audio/app/m/5309a299f3ea4c538f39c31a407bcfe8/
+        "shelb":          "5309a299f3ea4c538f39c31a407bcfe8",  # male ("Test shelb")
+        # https://fish.audio/app/m/a2ed529cad824e76b0bfe5edda31bd93/
+        "irish-narrator": "a2ed529cad824e76b0bfe5edda31bd93",  # female (Irish Cultural Narrator)
+
+        # ── Australia ────────────────────────────────────────────────────────
+        # Directly usable: AUS is one of the thirteen country files.
+        # https://fish.audio/app/m/6e2352b1dafe423889af34b5d8093ae1/
+        "younger":        "6e2352b1dafe423889af34b5d8093ae1",  # male ("Younger")
+        # https://fish.audio/app/m/46e236a33f0e49ec977b6d5f3c639a41/
+        "friendly-aus":   "46e236a33f0e49ec977b6d5f3c639a41",  # female (Friendly Australian)
+
+        # ── French-accented English (Peggy's own voice) ──────────────────────
+        # Not a third national accent to pick from: this is how Peggy actually
+        # speaks English, after 28 years outside France. Reserve these for the
+        # NOTES — first-person pieces where the voice IS hers and the accent is
+        # the point. Country reports keep a neutral narrator whose accent suits
+        # the country, so a clone never narrates one.
+        # Recorded 2026-08-15 in one sitting from ENGLISH source audio, so these
+        # carry her real accent. The FRENCH clone below is a different matter:
+        # trained only on French, it applies French phonology to English and
+        # comes out far heavier than she is ("really too much"). One clone per
+        # language, never one clone for both.
+        # Three reads rather than three voices — which suits which piece is
+        # Peggy's call, not something to infer from the titles.
         "peggy":            "5ef647b1e30a4165a135076f258b7f04",  # Friendly Storyteller
         "peggy-warm":       "8bd5735eec2f4a99b8f118ac35943239",  # Warm Conversational Voice
         "peggy-analytical": "73e52cf94f334f50bc30965b9adb72b2",  # Analytical Narrator
-        # rejected 2026-08-12 ("really not pleasant to listen to"), kept only so
-        # the already-generated tts-out/**/sarah/ files stay addressable.
-        "sarah":       "933563129e564b19a115bedd57b7406a",
     },
     "fr": {
         # male
         # https://fish.audio/app/m/c51f4c0e9e414d9eaf7c71effd5b92d2/
-        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",  # very deep — FAVOURITE
+        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",  # very deep 
         # https://fish.audio/app/m/4f2a0684dd0247dda68f339738c780e6/
         "le-narrateur":  "4f2a0684dd0247dda68f339738c780e6",  # slightly dramatic
+         # https://fish.audio/app/m/6e10fb8946b34ba6bec447789ccdc3de/
+        "stoic-2":       "6e10fb8946b34ba6bec447789ccdc3de",  # Voix stoïc 2 — FAVOURITE
         # female
-        # https://fish.audio/app/m/c5ec04dcb3f5450fb93a06f510d532b7/
-        "annonce-calme": "c5ec04dcb3f5450fb93a06f510d532b7",  # Annonce Française Calme
         # https://fish.audio/app/m/651751df29b140ab9c791aef35dc8fc2/
         "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate, but monotone by nature
         # https://fish.audio/app/m/b5061779983d410dab91f4d070ca5586/
-        "reflechie":     "b5061779983d410dab91f4d070ca5586",  # Voix Française Réfléchie
-                                                              # APPROVED for resource-civilization FR (2026-08-16)
+        "reflechie":     "b5061779983d410dab91f4d070ca5586",  # Voix Française Réfléchie — FAVOURITE
+                                                              # APPROVED for resource-civilization FR (2026-08-16).
+                                                              # Also the only voice (with le-narrateur) that reads a
+                                                              # parenthetical aside with the right drop — parentheses
+                                                              # turned out to be model-linked, not fixable in text.
+        # ── to try — unheard, so unranked ────────────────────────────────────
+        # French has a thinner bench than English, so these get worked through
+        # one at a time rather than banked as a finished set. The test that
+        # matters is the PARENTHETICAL ASIDE: only reflechie and le-narrateur
+        # drop the pitch correctly on one, and that turned out to be a property
+        # of the model, not something fixable in the text. Try a new French
+        # voice on a parenthesis paragraph before trusting it with a section.
+        # https://fish.audio/app/m/276b6ef7fd9f4fb0aef6885fcf3ebfe0/
+        "documentaire":  "276b6ef7fd9f4fb0aef6885fcf3ebfe0",  # "Documentaire vlog"
+        # https://fish.audio/app/m/276bd156a53f4a0199fff081bf083fc8/
+        "bon-a-savoir":  "276bd156a53f4a0199fff081bf083fc8",  # "Bon à savoir"
+        # https://fish.audio/app/m/76d65c1e73774db69683a553b30b414f/
+        # NB: unrelated to the US "adrian" dropped 2026-08-17 — different voice,
+        # different language, near-identical name.
+        "adrien":        "76d65c1e73774db69683a553b30b414f",  # male ("Adrien french")
+
         # Peggy's own cloned voice, FRENCH model ("Voix Féminine Chaleureuse").
         # Both clones are PRIVATE and reachable only with this account's key —
         # keep them private. Intended for the NOTES only: first-person pieces in
@@ -115,7 +183,9 @@ VOICES = {
         "peggy":         "b31cd0e36a6d4e72864c4994cd1ec66e",
     },
 }
-DEFAULT_VOICE = {"en": "adrian", "fr": "angelokyly"}
+# "adrian" (US) was removed from the registry, so the English default moved to
+# adam-stone — the only English voice approved on a full piece.
+DEFAULT_VOICE = {"en": "adam-stone", "fr": "reflechie"}
 
 
 def resolve_voice(lang: str, name: str | None) -> tuple[str, str]:
@@ -172,6 +242,21 @@ SUBSTITUTIONS = {
         # it is always safe. Bare "émergent" is only substituted when the word
         # BEFORE it does not end in s/x — a French plural subject does, so the
         # verb is left untouched.
+        # FEMININE NUMBER AGREEMENT. The normaliser expands a number ending in 1
+        # as "un" regardless of the noun that follows, so "31 installations"
+        # comes out "trente et un installations". Spelling the number out in
+        # full sidesteps the normaliser for exactly these phrases; the digits
+        # stay in the YAML and on the page. Confirmed by Peggy 2026-08-17.
+        # Only the noun's gender decides this, so each entry is deliberate
+        # rather than a general rule — a wrong guess would speak bad French.
+        (r'\b31 installations\b', 'trente et une installations', 'feminine number'),
+        (r'\b381 mégatonnes\b', 'trois cent quatre-vingt-une mégatonnes', 'feminine number'),
+        (r'\b41 régions\b', 'quarante et une régions', 'feminine number'),
+        # "relevant" (participle of relever) comes out as "relavant". A plain
+        # mispronunciation, not an English reading — the vowel in the unstressed
+        # first syllable is what goes wrong, and spelling it "eu" fixes it.
+        # Provisional: Peggy is testing alternatives directly in Fish.
+        (r'\brelevant\b', 'releuvant', 'mispronounced participle'),
         (r'\bémergents\b', 'émergeants', 'adjective, plural'),
         (r'(?<=[^sxSX\W]\s)émergent\b', 'émergeant', 'adjective, singular'),
     ],
@@ -245,6 +330,7 @@ CACHE_DIR = Path("tts-cache")
 # before anything is spoken and never appears on the page. Read at body speed
 # and pace they fell flat and cost intelligibility, so they are slowed slightly
 # and framed by a long pause before, short pause after — the audiobook shape.
+SECTION_PREFIX = "# "   # a section title: "# Territory"
 HEADING_PREFIX = "## "
 # 1.0 = no slowdown. Was 0.92, which made headings sound like a DIFFERENT
 # NARRATOR (heard 2026-08-15): prosody.speed shifts timbre, and a heading is
@@ -566,7 +652,9 @@ def splice_with_silence(parts: list[bytes], gaps: list[int], bitrate: int) -> by
 
 
 def render(text: str, voice_id: str, model: str, api_key: str, args,
-           temperature: float, pause_ms: int, lang: str = 'en') -> bytes:
+           temperature: float, pause_ms: int, lang: str = 'en',
+           alternates: list[tuple[str, str]] | None = None,
+           voice_name: str = '') -> bytes:
     """One section of audio: paragraph pauses, and headings given weight."""
     blocks = [b.strip() for b in re.split(r'\n\s*\n', text) if b.strip()]
 
@@ -579,14 +667,39 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
             for batch in group_into_requests(plain, args.max_bytes)
         ])
 
+    # ALTERNATING VOICES (--alternate a|b).
+    #
+    # The unit of alternation is a UNIT, not a block: a heading and everything
+    # under it stay in one voice, so a subsection is never split mid-thought.
+    # A block with no heading before it - a baseline paragraph, a situation
+    # event - is its own unit. That reproduces the natural item of each section
+    # without needing a different rule per section.
+    voices: list[tuple[str, str]] = alternates or [(voice_name, voice_id)]
+    # Sections that use headings alternate PER HEADING, so a subsection keeps
+    # one voice however many paragraphs it runs to. Sections without headings
+    # (baseline, situation) alternate per block, which is their natural item.
+    sectioned = any(b.startswith(HEADING_PREFIX) for b in blocks)
+    unit = -1
     parts: list[bytes] = []
     is_heading: list[bool] = []
     hits = misses = 0
+
     for block in blocks:
         heading = block.startswith(HEADING_PREFIX)
-        spoken = block[len(HEADING_PREFIX):].strip() if heading else block
+        # A SECTION title ("# Territory") announces the largest division. It is
+        # read by the first voice in every section and does NOT advance the
+        # alternation, so section openings sound alike and adding a title does
+        # not shift which voice reads which subsection.
+        section_title = block.startswith(SECTION_PREFIX) and not heading
+        if not section_title and (heading or not sectioned or unit < 0):
+            unit += 1
+        this_voice_name, this_voice_id = (
+            voices[0] if section_title else voices[unit % len(voices)]
+        )
+        marker = SECTION_PREFIX if section_title else HEADING_PREFIX
+        spoken = block[len(marker):].strip() if (heading or section_title) else block
         terminal = HEADING_TERMINAL.get(lang, '')
-        if heading and terminal:
+        if (heading or section_title) and terminal:
             # Kept configurable because the right answer changed. The full stop
             # was added when a heading ran inline into the text that followed
             # and sounded like its first clause. Headings are now their own
@@ -595,10 +708,10 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
             # rather than emphatic (heard 2026-08-16). Empty = leave it alone.
             if spoken and spoken[-1] not in ".!?:":
                 spoken += terminal
-        speed = round(args.speed * (HEADING_SPEED_FACTOR if heading else 1.0), 3)
+        speed = round(args.speed * (HEADING_SPEED_FACTOR if (heading or section_title) else 1.0), 3)
 
         digest = hashlib.sha256(spoken.encode("utf-8"))
-        digest.update(f"|{voice_id}|{model}|{temperature}|{speed}|{args.bitrate}"
+        digest.update(f"|{this_voice_id}|{model}|{temperature}|{speed}|{args.bitrate}"
                       f"|{not args.no_normalize}".encode("utf-8"))
         key = digest.hexdigest()
         cached = CACHE_DIR / key[:2] / f"{key}.mp3"
@@ -616,14 +729,14 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
             parts.append(cached.read_bytes())
             hits += 1
         else:
-            audio = synthesize(spoken, voice_id, model, api_key,
+            audio = synthesize(spoken, this_voice_id, model, api_key,
                                normalize=not args.no_normalize, bitrate=args.bitrate,
                                speed=speed, temperature=temperature)
             cached.parent.mkdir(parents=True, exist_ok=True)
             cached.write_bytes(audio)
             parts.append(audio)
             misses += 1
-        is_heading.append(heading)
+        is_heading.append(heading or section_title)
 
     if hits:
         print(f"      cache: {hits} paragraph(s) reused, {misses} synthesised", flush=True)
@@ -806,6 +919,17 @@ def report_cost(text: str, model: str) -> int:
     return byte_count
 
 
+
+def resolve_alternates(spec: str | None, lang: str):
+    """--alternate "a|b" -> [(name, id), ...]; None when not alternating."""
+    if not spec:
+        return None
+    pairs = [resolve_voice(lang, n.strip()) for n in spec.split("|") if n.strip()]
+    if len(pairs) < 2:
+        raise FishError('--alternate needs at least two voices, e.g. "adam-stone|ogechi"')
+    return pairs
+
+
 def refresh_from_source(manifest_path: Path, manifest: dict) -> dict:
     """
     Re-extract the narration text from the source YAML before generating.
@@ -867,18 +991,21 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     base = manifest_path.parent
     lang = manifest.get("lang", args.lang)
     voice_name, default_id = resolve_voice(lang, args.voice_name)
+    alternates = resolve_alternates(args.alternate, lang)
     voice_id = args.voice or default_id
     temperature = (args.temperature if args.temperature is not None
                    else TEMPERATURE.get(lang, 0.7))
 
     # Each voice gets its own directory, so the sets coexist and each keeps its
     # own generated.json — switching voice never invalidates the other set.
+    # An alternating run is its own edition, named after the pair.
+    folder = "-".join(n for n, _ in alternates) if alternates else voice_name
     if args.out:
         out_dir = args.out
     elif manifest.get("country"):
-        out_dir = Path("tts-out") / "countries" / manifest["country"] / lang / voice_name
+        out_dir = Path("tts-out") / "countries" / manifest["country"] / lang / folder
     else:
-        out_dir = Path("tts-out") / "articles" / manifest.get("article", "") / lang / voice_name
+        out_dir = Path("tts-out") / "articles" / manifest.get("article", "") / lang / folder
     out_dir.mkdir(parents=True, exist_ok=True)
     state_path = out_dir / "generated.json"
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
@@ -922,12 +1049,24 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     pending = sections if args.reroll else [
         s for s in sections
         if not (out_dir / s["mp3"]).exists() or state.get(s["id"]) != keys[s["id"]]]
+    if args.sections:
+        wanted = {w.strip().lower() for w in args.sections.split(",") if w.strip()}
+        unknown = wanted - {s["id"].lower() for s in sections}
+        if unknown:
+            raise FishError(
+                f"Unknown section(s): {', '.join(sorted(unknown))}. "
+                f"This manifest has: {', '.join(s['id'] for s in sections)}"
+            )
+        pending = [s for s in pending if s["id"].lower() in wanted]
 
     total_bytes = sum(s["bytes"] for s in pending)
     cost = total_bytes / 1_000_000 * PRICE_PER_MILLION_BYTES_USD
     print(f"\n{manifest_path}")
     print(f"  model      : {args.model}")
-    print(f"  voice      : {voice_name}  [{lang}]")
+    if alternates:
+        print(f"  voices     : {' / '.join(n for n, _ in alternates)}  [{lang}]  (alternating)")
+    else:
+        print(f"  voice      : {voice_name}  [{lang}]")
     print(f"  temperature: {temperature}")
     print(f"  sections   : {len(pending)} to generate, "
           f"{len(sections) - len(pending)} already current")
@@ -952,7 +1091,8 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
               f"{section['chars']:>7,} ch  ({blocks} paragraph"
               f"{'s' if blocks > 1 else ''})", flush=True)
         audio = render(text, voice_id, args.model, api_key, args,
-                       temperature, args.paragraph_pause, lang)
+                       temperature, args.paragraph_pause, lang,
+                       alternates=alternates, voice_name=voice_name)
         (out_dir / section["mp3"]).write_bytes(audio)
         # Record the hash only after a successful write, so an interrupted run
         # resumes rather than silently leaving a section unspoken.
@@ -977,7 +1117,7 @@ def main() -> int:
                         help="output .mp3 path (default: tts-out/<input>.mp3)")
     parser.add_argument("--lang", choices=sorted(VOICES), default="en",
                         help="selects the voice set (default: en)")
-    parser.add_argument("--voice-name", help="named voice, e.g. adrian | sarah | "
+    parser.add_argument("--voice-name", help="named voice, e.g. adam-stone | laura | "
                                              "angelokyly | annonce-calme")
     parser.add_argument("--voice", help="raw voice reference_id, overrides --voice-name")
     parser.add_argument("--model", default=MODEL, help=f"default: {MODEL}")
@@ -992,6 +1132,15 @@ def main() -> int:
     parser.add_argument("--no-extract", action="store_true",
                         help="do NOT re-extract from the source YAML first; generate "
                              "from the text already in tts-text/ (rarely what you want)")
+    parser.add_argument("--sections", metavar="LIST",
+                        help="generate only these manifest sections, comma-separated "
+                             "(e.g. baseline,scorecard,territory). Everything else is "
+                             "left exactly as it is.")
+    parser.add_argument("--alternate", metavar="A|B",
+                        help="alternate two (or more) registered voices, e.g. "
+                             "\"adam-stone|ogechi\". The unit is a SUBSECTION where "
+                             "the section has headings, and a paragraph where it does "
+                             "not (baseline, situation).")
     parser.add_argument("--reroll", metavar="TEXT",
                         help="re-synthesise only paragraphs containing TEXT. Separate "
                              "several targets with | — NOT commas, since prose is full "
@@ -1080,7 +1229,9 @@ def main() -> int:
         api_key = get_api_key()
         started = time.monotonic()
         audio = render(text, voice_id, args.model, api_key, args,
-                       temperature, args.paragraph_pause, args.lang)
+                       temperature, args.paragraph_pause, args.lang,
+                       alternates=resolve_alternates(args.alternate, args.lang),
+                       voice_name=voice_name)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(audio)
 

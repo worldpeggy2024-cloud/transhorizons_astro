@@ -41,13 +41,12 @@ const CHARS_PER_SEC = 14;
 const VOICE_LABELS: Record<string, string> = {
   // English
   'adam-stone': 'British narrator',
-  adrian: 'North American narrator',
   'deep-voice': 'British narrator, deeper',
-  'war-arsenal': 'North American narrator, clear',
-  laura: 'British narrator, female',
+  ogechi: 'British narrator, female',
+  'war-arsenal': 'American narrator',
+  laura: 'Narrator, female, deep',
   florence: 'Narrator, female, lighter',
   'old-woman': 'Narrator, female, softer',
-  ogechi: 'British narrator, female',
   // French
   angelokyly: 'Narrateur, voix grave',
   'le-narrateur': 'Narrateur, plus expressif',

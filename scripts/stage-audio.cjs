@@ -41,15 +41,14 @@ const SECTION_LABELS = {
 // One male and one female voice per language, so the listener chooses.
 const VOICE_LABELS = {
   // English — male
-  adrian: 'Adrian (US)',
-  'deep-voice': 'Deep Voice (British)',
-  'war-arsenal': 'War Arsenal (US)',
   'adam-stone': 'Adam Stone (British)',
+  'deep-voice': 'Deep Voice (British)',
+  ogechi: 'Ogechi (British)',
+  'war-arsenal': 'War Arsenal (US)',
   // English — female
   laura: 'Laura (deep)',
   florence: 'Florence (lighter)',
   'old-woman': 'Old Woman (softer)',
-  ogechi: 'Ogechi (British)',
   sarah: 'Sarah (rejected)',
   // French — male
   angelokyly: 'angelokyly (deep)',
@@ -58,6 +57,7 @@ const VOICE_LABELS = {
   'annonce-calme': 'Annonce Calme',
   ora: 'Ora (articulate)',
   reflechie: 'Voix Reflechie',
+  'stoic-2': 'Voix stoic 2',
 };
 
 // MPEG-1 Layer III bitrates (kbps) and sample rates, indexed as in the frame
