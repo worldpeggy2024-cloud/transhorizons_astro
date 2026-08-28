@@ -4,8 +4,9 @@
 Upload to chat when doing website/technical work
 Update this document after each technical session*
 
-*Last updated: July, 7th 2026*
+*Last updated: August, 20th 2026*
 
+This document is authoritative but not finished. Where an instance finds a contradiction, flag it — do not silently resolve it. The canon is corrected by Peggy, not by inference
 
 ## PORTFOLIO PURPOSE
 

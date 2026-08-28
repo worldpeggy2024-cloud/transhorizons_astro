@@ -2,7 +2,9 @@
 ### (COMPANION TO THE PROJECT FOUNDATION DOCUMENT)
 
 *Persistent context for all TransHorizons / Virtual Light chats*
-*Last updated: July, 6th 2026*
+*Last updated: August, 20th 2026*
+
+This document is authoritative but not finished. Where an instance finds a contradiction, flag it — do not silently resolve it. The canon is corrected by Peggy, not by inference
 
 ## THE REAL INTENT (why all of this exists)
 

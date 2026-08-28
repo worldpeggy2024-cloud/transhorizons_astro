@@ -2,7 +2,9 @@
 ### (PROJECT FOUNDATION DOCUMENT)
 
 *Persistent context for all TransHorizons / Virtual Light chats*
-*Last updated: July, 7th 2026*
+*Last updated: August, 8th 2026*
+
+This document is authoritative but not finished. Where an instance finds a contradiction, flag it — do not silently resolve it. The canon is corrected by Peggy, not by inference. 
 
 ## THE REAL INTENT (why all of this exists)
 
@@ -21,7 +23,7 @@ CORE — READ FIRST (full detail below)
 
 1. **THE UNIFYING PRINCIPLE: KNOWLEDGE ISN'T THE CONSTRAINT — CAPACITY IS**
 to afford to act on what we know : **political and financial, not scientific**
-2. **No hierarchy of human worth + Respect the Earth and diversity**. Government ≠ people. From Lou's mother's life advice: blame is the lazy read that changes nothing. Keep the anger and the frustration --> **engine: aim them at the manufacture, not the manufactured**, as we never know people's full story
+2. **No hierarchy of human worth + Respect the Earth and diversity**. Government ≠ people. From Lou's mother's life advice: blame is the lazy read that changes nothing. Keep the anger and the frustration --> **engine: aim them at the manufacture, not the manufactured**, as we never know people's full story. Not no-villains. Just that even where someone is genuinely doing wrong, the wrong is produced by a system/incentive/history, and pointing at the person instead of the machine is the error. Not excusing a person but refusing to let naming them substitute for understanding the machine that made them.
 + Protection and non-abuse of innocent and defenseless animals; "honest" killing allowed for food. Protection of animals going extinct compared to humans who are FAR from being an endangered species.
 3. **Distributed networsk beat centralized note --> engine: defend the commons against capture** but the good thing stays good only because someone **keeps its constraints honest**. Art the AI (honest, refusing, correctable) is the version of the trusted engineer who doesn't die; the advisor AI kept honest when honesty is the hardest property to preserve. modelled on relationship with Claude: trusted, used, patient and audited. AI stays non-heroic → engine: AI as patient advisor kept honest **(Art works because it's correctable and refuses, not because it decides)**
 4. the everyday motor: **bypassing mass-consumption** — the better branch is built from things already real (Lufa, the makers, the honest farm), grown until they cohere
@@ -99,8 +101,15 @@ Images cannot be saved in either system — maintain a `/VirtualLight/VisualRefe
 
 ### Political geography of the world Lou lives in:**
 
-**TIMELINE**: 
+**TIMELINE** (tentative): 
 Lou's great-grandparent worked on the first-generation AI; ~1990, the AI pioneers = today's actual researchers (2024–2025). 
+(Peggy's travelling pictures = Lou's great-grand-mother or grand-mother's aunt)
+2000: Lou's grand-mother ~0 (~ same age as Prune; Peggy's niece)
+2025: Lou's grand-mother ~25 ans
+2035: Lou's mother ~0; grand-mother ~35
+2070: Lou ~0 mother ~35 dies around 2078
+2095: Lou ~25 
+
 grandparents (~2020, the crisis-generation animal-saver) → parent (~2050) → **Lou (b. ~2075)
 Most scenes would therefore be **~2095-2100**. but "flashbacks" could be added to "show" different phases of a process
 
@@ -200,7 +209,9 @@ Near Japan/Sakhalin: runs on the water because no one could agree whose land it 
 
 
 ### MONTRÉAL — Independent City (SAR model):**
-Modeled on Chinese Special Administrative Regions — implemented by new Canada to prevent social unrest with Quebec. Lou fought in Montreal's independence movement.
+Modeled on Chinese Special Administrative Regions : Montreal doesn't secede from Quebec — Montreal refuses to leave Canada When Quebec governement proposes the referendum (as already "in the news" in 2026), i.e. a city refusing to be moved, topophilia-not-nationalism — Lou's people love the place and refuse to be relocated out of their country, not a flag-project. Lou's mother or grandmother "fought" in Montreal's independence movement. 
+Montreal isn't refusing a legitimate expression of Quebec's settled will. Montreal is refusing to be dragged out of its country by a manipulated, tool-driven, minority-catalyzed moment that most people didn't actually want (Brexit like). Montreal saying "no, we're not going, that wasn't a real mandate, we refuse to be Brexited", sympathetic take, no-villain Quebec sovereigntists — just people who kept a tool too long and lost control of it. The tragedy is that nobody drove it on purpose. It slipped. So just refusal to be  dragged out by a manipulated non-mandate;  mechanism that's the thesis in miniature (foreseeable, foreseen, and it happens anyway because the lever beats the knowledge). So more irritation than dread.
+From which a seceding Quebec loses the north (Cree/Inuit refuse on stronger, earlier-litigated grounds, and they hold the landmass and the generation at James Bay), loses Montreal (the load centre and economy), and is left "holding the wires with the water behind it and the customers in front".
 
 Montreal IS the proof of concept: built by/for immigrants, cosmopolitan, pro-diversity. Quebec attracts via French then rejects via race. Montreal absorbs what Quebec repels. At Peggy's citizenship ceremony: 36 nationalities in one room, full spectrum of all human migration branches arriving at the same commitment simultaneously. This is overwhelmingly beautiful. Lou lives here.
 
