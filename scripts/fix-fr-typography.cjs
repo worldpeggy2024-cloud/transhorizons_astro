@@ -70,6 +70,17 @@ const RULES = [
   ['numword',   /(?<=\d) (?=[A-Za-zÀ-ÿ])/gu,                                () => NBSP],
 ];
 
+// English (--en). English puts NO space before ; : ! ? % and uses commas for
+// thousands, so there is nothing to protect there — the ONLY wrapping risk is a
+// figure splitting from its unit or qualifier ("$34.2 billion", "9 984 670 km²",
+// "100 kilometres", "20 °C"). Bind number->unit and number->word with a FULL
+// no-break space (a narrow one would look cramped in English). numword already
+// covers letter-initial units (km, kg); `unit` catches the degree symbols.
+const EN_RULES = [
+  ['unit',    new RegExp(`(?<=\\d)${S}*(${UNITS})(?![A-Za-z])`, 'gu'), (_m, u) => NBSP + u],
+  ['numword', /(?<=\d) (?=[A-Za-z])/gu,                                () => NBSP],
+];
+
 let YAML = null;
 try { YAML = require('yaml'); } catch { try { YAML = require('js-yaml'); } catch { /* none */ } }
 
@@ -90,8 +101,8 @@ function validate(text) {
   return { ok: true };
 }
 
-function applyRules(line, counts) {
-  for (const [key, re, fn] of RULES) {
+function applyRules(line, counts, rules) {
+  for (const [key, re, fn] of rules) {
     line = line.replace(re, (...args) => {
       const rep = fn(...args);
       if (rep !== args[0]) counts[key] = (counts[key] || 0) + 1; // count real changes only (idempotent)
@@ -137,6 +148,8 @@ function keyNamesOf(doc) {
 function fix(text, opts = {}) {
   const nested = !!opts.nested;
   const keySet = opts.keySet || null;
+  const lang = opts.lang === 'en' ? 'en' : 'fr';        // default 'fr' — English path is opt-in
+  const ruleset = lang === 'en' ? EN_RULES : RULES;
   const eol = /\r\n/.test(text) ? '\r\n' : '\n';
   const lines = text.split(/\r?\n/);
   const counts = {};
@@ -156,18 +169,22 @@ function fix(text, opts = {}) {
       // Articles carry their citations as `sources: { en: [...], fr: [...] }`,
       // so in nested mode a bare `fr:` opens French scope too. Country files
       // have no such key, so their behaviour is unchanged.
-      isFrench = km[1].endsWith('_fr') || (nested && km[1] === 'fr');
+      isFrench = lang === 'en'
+        ? (km[1].endsWith('_en') || (nested && km[1] === 'en'))
+        : (km[1].endsWith('_fr') || (nested && km[1] === 'fr'));
       inSources = km[1] === 'sources';
       continue;
     }
-    if (inSources) {                                        // bilingual sources: French fields only
-      if (srcFrLine.test(lines[i])) lines[i] = applyRules(lines[i], counts);
+    if (inSources) {                                        // bilingual sources: touched in FR mode only
+      if (lang === 'fr' && srcFrLine.test(lines[i])) lines[i] = applyRules(lines[i], counts, ruleset);
       continue;
     }
-    if (!isFrench) continue;                                // English / etc.
+    if (!isFrench) continue;                                // not the target language
     frenchLines.add(i);
-    if (wrapRe.test(lines[i])) candidates.push(i);          // folded-wrap: handle after
-    lines[i] = applyRules(lines[i], counts);
+    // Folded-wrap merge (lines starting :/—/») is a FR-only concern — English
+    // has no space before those marks, so never collect candidates in EN mode.
+    if (lang === 'fr' && wrapRe.test(lines[i])) candidates.push(i);
+    lines[i] = applyRules(lines[i], counts, ruleset);
   }
 
   // Folded-wrap fix: a French prose line that STARTS with :/—/» means the space
@@ -240,12 +257,14 @@ function main() {
   const write = args.includes('--write');
   const all = args.includes('--all');
   const articles = args.includes('--articles');
+  const en = args.includes('--en');   // English number-binding pass (default is French)
   let files = args.filter((a) => !a.startsWith('--'));
   if (all) files = [...new Set([...files, ...countryFiles()])];
   if (articles) files = [...new Set([...files, ...articleFiles()])];
 
   if (files.length === 0) {
-    console.log('Usage: node scripts/fix-fr-typography.cjs <file...> [--all] [--articles] [--write]');
+    console.log('Usage: node scripts/fix-fr-typography.cjs <file...> [--all] [--articles] [--en] [--write]');
+    console.log('  default: French narrow-NBSP pass (_fr).  --en: English number-binding pass (_en).');
     process.exit(1);
   }
 
@@ -260,12 +279,12 @@ function main() {
       try { keySet = keyNamesOf(loadYaml(original)); }
       catch (e) { console.log(`SKIP (unparseable): ${file} — ${e.message.split('\n')[0]}`); continue; }
     }
-    const res = fix(original, { nested, keySet });
+    const res = fix(original, { nested, keySet, lang: en ? 'en' : 'fr' });
     const out = res.text, c = res.counts;
     const total = Object.values(c).reduce((a, b) => a + b, 0);
 
     console.log(`\n${file}`);
-    console.log('  narrow NBSP inserted: ' + total +
+    console.log('  no-break spaces inserted: ' + total +
       (total ? '  {' + Object.entries(c).map(([k, v]) => `${k}:${v}`).join(', ') + '}' : ''));
     if (res.merged.length) {
       console.log(`  folded-wrap merged up: ${res.merged.length}  [` +

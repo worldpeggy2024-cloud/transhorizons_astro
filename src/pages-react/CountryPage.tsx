@@ -73,7 +73,7 @@ interface CountryData {
 
 function formatPopulation(n: number): string {
   if (n >= 1_000_000_000) return (n / 1_000_000_000).toFixed(2) + ' billion';
-  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' millions';
+  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + ' million';
   if (n >= 1_000) return (n / 1_000).toFixed(0) + ',000';
   return n.toLocaleString();
 }
@@ -1357,17 +1357,19 @@ export default function CountryPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             {[
-              { icon: MapPin, label: t.capital, value: country.capital || '—' },
-              { icon: Users, label: t.population, value: pop },
-              { icon: Globe, label: t.region, value: translateRegion(country.subregion || country.region) },
-              { icon: BarChart2, label: t.area, value: country.area > 0 ? country.area.toLocaleString() + ' km²' : '—' },
-            ].map(({ icon: Icon, label, value }) => (
+              { icon: MapPin, label: t.capital, value: country.capital || '—', nowrap: false },
+              // nowrap: keep the figure glued to its unit so "41.7 million" / "9 984 670 km²"
+              // never split across a line break (same intent as the FR narrow-NBSP pass).
+              { icon: Users, label: t.population, value: pop, nowrap: true },
+              { icon: Globe, label: t.region, value: translateRegion(country.subregion || country.region), nowrap: false },
+              { icon: BarChart2, label: t.area, value: country.area > 0 ? country.area.toLocaleString() + ' km²' : '—', nowrap: true },
+            ].map(({ icon: Icon, label, value, nowrap }) => (
               <div key={label} className="bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
                 <div className="flex items-center gap-1.5 mb-1">
                   <Icon size={11} className="text-[var(--cr-accent)]" />
                   <span className="font-body text-[10px] tracking-widest uppercase text-[var(--cr-muted)]">{label}</span>
                 </div>
-                <p className="font-body text-sm text-[var(--cr-ink)] font-medium">{value}</p>
+                <p className={`font-body text-sm text-[var(--cr-ink)] font-medium${nowrap ? ' whitespace-nowrap' : ''}`}>{value}</p>
               </div>
             ))}
           </div>
