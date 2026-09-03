@@ -1,11 +1,14 @@
 #!/bin/sh
 #
-# pre-commit — auto-normalize Canadian-French typography in staged country reports.
+# pre-commit — auto-normalize French AND English typography in staged content.
 #
-# Runs the two FR tools (--write) on any staged content/countries/<ISO3>/analysis.yaml,
-# then re-stages the result so the corrected spacing is what actually gets committed:
+# Runs the typography tools (--write) on any staged content/countries/<ISO3>/analysis.yaml
+# and content/articles/*.yaml, then re-stages the result so the corrected spacing is what
+# actually gets committed — neither of us can hand-author non-breaking spaces in Keystatic,
+# so this is the only place the text-based typography gets applied:
 #   • scripts/fix-fr-semicolon-spaces.cjs  (removes the France-French space before ;)
-#   • scripts/fix-fr-typography.cjs        (narrow NBSP before : « » — , numbers, %, units)
+#   • scripts/fix-fr-typography.cjs        (FR: narrow NBSP before : « » — , numbers, %, units)
+#   • scripts/fix-fr-typography.cjs --en   (EN: full NBSP binding a figure to its unit/word)
 #
 # Non-blocking: if a file would fail validation the tool skips it (and prints why) and
 # the commit still proceeds. Enable with:  git config core.hooksPath .githooks
@@ -29,9 +32,10 @@ if ! command -v node >/dev/null 2>&1; then
   exit 0
 fi
 
-echo "pre-commit: normalizing Canadian-French typography in staged content…"
+echo "pre-commit: normalizing French + English typography in staged content…"
 node scripts/fix-fr-semicolon-spaces.cjs $files --write
 node scripts/fix-fr-typography.cjs $files --write
+node scripts/fix-fr-typography.cjs $files --en --write
 
 git add $files
 exit 0
