@@ -1,4 +1,64 @@
 {
+  "countries/CAN/en": {
+    "voice": "adam-stone-ogechi",
+    "seconds": 9271,
+    "sections": [
+      {
+        "id": "baseline",
+        "label": "Baseline",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/01-baseline.mp3",
+        "seconds": 169
+      },
+      {
+        "id": "scorecard",
+        "label": "scorecard",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/02-scorecard.mp3",
+        "seconds": 288
+      },
+      {
+        "id": "territory",
+        "label": "Territory",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/03-territory.mp3",
+        "seconds": 982
+      },
+      {
+        "id": "society",
+        "label": "Society",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/04-society.mp3",
+        "seconds": 995
+      },
+      {
+        "id": "economy",
+        "label": "Economy",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/05-economy.mp3",
+        "seconds": 902
+      },
+      {
+        "id": "political",
+        "label": "Political Order",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/06-political.mp3",
+        "seconds": 1739
+      },
+      {
+        "id": "capacity",
+        "label": "Capacity to Deliver",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/07-capacity.mp3",
+        "seconds": 2417
+      },
+      {
+        "id": "security",
+        "label": "Security & Diplomacy",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/08-security.mp3",
+        "seconds": 1325
+      },
+      {
+        "id": "situation",
+        "label": "Situation",
+        "src": "/audio/countries/CAN/en/adam-stone-ogechi/09-situation.mp3",
+        "seconds": 454
+      }
+    ]
+  },
   "articles/resource-civilization/en": {
     "src": "/audio/articles/resource-civilization/en/adam-stone/01-article.mp3",
     "voice": "adam-stone",

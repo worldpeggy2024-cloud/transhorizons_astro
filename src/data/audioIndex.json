@@ -1,6 +1,81 @@
 {
   "groups": [
     {
+      "title": "Canada — full report",
+      "lang": "en",
+      "voices": [
+        {
+          "id": "adam-stone-ogechi",
+          "label": "adam-stone-ogechi"
+        }
+      ],
+      "tracks": [
+        {
+          "id": "can-en-adam-stone-ogechi-baseline",
+          "label": "Baseline",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/01-baseline.mp3",
+          "seconds": 169
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-scorecard",
+          "label": "scorecard",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/02-scorecard.mp3",
+          "seconds": 288
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-territory",
+          "label": "Territory",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/03-territory.mp3",
+          "seconds": 982
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-society",
+          "label": "Society",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/04-society.mp3",
+          "seconds": 995
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-economy",
+          "label": "Economy",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/05-economy.mp3",
+          "seconds": 902
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-political",
+          "label": "Political Order",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/06-political.mp3",
+          "seconds": 1739
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-capacity",
+          "label": "Capacity to Deliver",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/07-capacity.mp3",
+          "seconds": 2417
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-security",
+          "label": "Security & Diplomacy",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/08-security.mp3",
+          "seconds": 1325
+        },
+        {
+          "id": "can-en-adam-stone-ogechi-situation",
+          "label": "Situation",
+          "voice": "adam-stone-ogechi",
+          "src": "/audio/countries/CAN/en/adam-stone-ogechi/09-situation.mp3",
+          "seconds": 454
+        }
+      ]
+    },
+    {
       "title": "Articles",
       "lang": "en",
       "voices": [

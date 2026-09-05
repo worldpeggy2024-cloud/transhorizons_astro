@@ -260,13 +260,33 @@ const NARRATION = path.join('src', 'data', 'narrationManifest.json');
 const narration = {};
 for (const g of groups) {
   for (const t of g.tracks) {
-    const m = t.src.match(/^\/audio\/articles\/([^/]+)\/([^/]+)\/([^/]+)\//);
-    if (!m) continue;
-    const [, slug, lang, voice] = m;
-    // First voice staged for a slug+lang wins; staging is filtered with --only
-    // to exactly the approved recordings, so there is normally just the one.
-    const key = `articles/${slug}/${lang}`;
-    if (!narration[key]) narration[key] = { src: t.src, voice, seconds: t.seconds };
+    const a = t.src.match(/^\/audio\/articles\/([^/]+)\/([^/]+)\/([^/]+)\//);
+    if (a) {
+      const [, slug, lang, voice] = a;
+      // First voice staged for a slug+lang wins; staging is filtered with --only
+      // to exactly the approved recordings, so there is normally just the one.
+      const key = `articles/${slug}/${lang}`;
+      if (!narration[key]) narration[key] = { src: t.src, voice, seconds: t.seconds };
+      continue;
+    }
+    /* A COUNTRY REPORT is not one file. It is one file per section, and the
+     * player walks them as a single timeline — so the entry carries the ordered
+     * sections and the total, not a single src. The order is the order the
+     * files were collected, which is the numeric filename order (01-, 02-, …),
+     * which is the report's display order. Do not sort by label. */
+    const c = t.src.match(/^\/audio\/countries\/([^/]+)\/([^/]+)\/([^/]+)\//);
+    if (!c) continue;
+    const [, cca3, lang, voice] = c;
+    const key = `countries/${cca3}/${lang}`;
+    if (!narration[key]) narration[key] = { voice, seconds: 0, sections: [] };
+    if (narration[key].voice !== voice) continue;   // one voice per language
+    narration[key].sections.push({
+      id: t.id.replace(new RegExp(`^${cca3.toLowerCase()}-${lang}-${voice}-`), ''),
+      label: t.label,
+      src: t.src,
+      seconds: t.seconds,
+    });
+    narration[key].seconds += t.seconds;
   }
 }
 fs.writeFileSync(NARRATION, JSON.stringify(narration, null, 2) + '\n', 'utf8');

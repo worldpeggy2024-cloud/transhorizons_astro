@@ -14,6 +14,7 @@ import { Volume2, Play, Pause, Square, Rewind, FastForward, Headphones, ChevronD
 import { SPEEDS } from '../hooks/useReportSpeech';
 import type { ReportSpeech, SpeechSection } from '../hooks/useReportSpeech';
 import type { NarrationAudio } from '../hooks/useNarrationAudio';
+import type { NarrationSequence } from '../hooks/useNarrationSequence';
 
 const CHARS_PER_SEC = 14; // rough spoken rate for the time estimate
 const fmt = (s: number) => {
@@ -23,15 +24,23 @@ const fmt = (s: number) => {
   return `${m}:${ss.toString().padStart(2, '0')}`;
 };
 
-export function SectionAudioButton({ speech, section, lang }: {
+export function SectionAudioButton({ speech, section, lang, audio, studio }: {
   speech: ReportSpeech;
   section: SpeechSection;
   lang: string;
+  audio?: NarrationSequence;
+  /* Which engine the reader picked. A section falls back to Web Speech when the
+   * recording has no file for it — a section added to the page after the report
+   * was recorded should still be listenable. */
+  studio?: boolean;
 }) {
-  if (!speech.supported || !section.text.trim()) return null;
-  const active = speech.activeId === section.id;
-  const playing = active && speech.status === 'playing';
-  const paused = active && speech.status === 'paused';
+  const useStudio = !!studio && !!audio?.available && audio.hasSection(section.id);
+  if (!useStudio && (!speech.supported || !section.text.trim())) return null;
+  const active = useStudio
+    ? audio!.activeSectionId === section.id
+    : speech.activeId === section.id;
+  const playing = active && (useStudio ? audio!.status === 'playing' : speech.status === 'playing');
+  const paused = active && (useStudio ? audio!.status === 'paused' : speech.status === 'paused');
   const fr = lang.toLowerCase().startsWith('fr');
   const label = playing
     ? (fr ? 'Mettre en pause' : 'Pause')
@@ -40,7 +49,11 @@ export function SectionAudioButton({ speech, section, lang }: {
       : (fr ? 'Écouter cette section' : 'Listen to this section');
   return (
     <button
-      onClick={(e) => { e.stopPropagation(); speech.play(section, lang); }}
+      onClick={(e) => {
+        e.stopPropagation();
+        if (useStudio) { speech.stop(); audio!.playSection(section.id); }
+        else { audio?.stop(); speech.play(section, lang); }
+      }}
       className={`p-1 rounded transition-colors ${active ? 'text-[var(--cr-accent)]' : 'text-[var(--cr-faint)] hover:text-[var(--cr-accent)]'}`}
       title={label}
       aria-label={label}
@@ -50,10 +63,19 @@ export function SectionAudioButton({ speech, section, lang }: {
   );
 }
 
-export function ReportAudioBar({ speech, sections, lang }: {
+export function ReportAudioBar({ speech, sections, lang, audio, studio, setStudio }: {
   speech: ReportSpeech;
   sections: SpeechSection[];
   lang: string;
+  /* A published studio recording of the WHOLE report, when one exists. It is
+   * offered as one more VOICE, not as a replacement: the browser voices stay in
+   * the list because they always read the CURRENT text, and a recording is a
+   * snapshot of the text as it stood when it was made. */
+  audio?: NarrationSequence;
+  /* Which engine the reader picked, and how to change it. Held by the page so
+   * the section buttons and this bar always agree. */
+  studio?: boolean;
+  setStudio?: (v: boolean) => void;
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -67,17 +89,40 @@ export function ReportAudioBar({ speech, sections, lang }: {
     return () => document.removeEventListener('mousedown', handler);
   }, [open]);
 
-  if (!speech.supported) return null;
+  const hasStudio = !!audio?.available;
+  const onStudio = !!studio && hasStudio;
+  // Without Web Speech AND without a recording there is nothing to offer; with a
+  // recording the bar is still worth showing on a browser that cannot speak.
+  if (!speech.supported && !hasStudio) return null;
   const fr = lang.toLowerCase().startsWith('fr');
   const voices = speech.voicesForLang(lang);
   const selected = speech.selectedVoiceName(lang);
   // "Reading" whenever the continuous (all-section) read is what's active.
-  const readingAll = speech.mode === 'all' && speech.status !== 'idle';
+  const readingAll = onStudio
+    ? audio!.status !== 'idle'
+    : speech.mode === 'all' && speech.status !== 'idle';
+  /* The recording starts at the Baseline and runs the whole report, which is
+   * what the Web Speech "read everything" does too — same promise, better
+   * voice. Switching engine stops the other one so the two never overlap. */
+  const startAll = () => {
+    if (onStudio) { speech.stop(); audio!.play(); }
+    else { audio?.stop(); speech.playAll(sections, lang); }
+  };
+  const stopAll = () => (onStudio ? audio!.stop() : speech.stop());
+  const pick = (useStudio: boolean, voiceName?: string) => {
+    speech.stop();
+    audio?.stop();
+    setStudio?.(useStudio);
+    if (!useStudio && voiceName) speech.selectVoice(lang, voiceName);
+    setOpen(false);
+  };
+  const studioLabel = fr ? 'Enregistrement studio' : 'Studio recording';
+  const studioNote = fr ? 'deux voix · qualité studio' : 'two narrators · studio quality';
 
   return (
     <div className="relative flex items-center gap-1" ref={ref}>
       <button
-        onClick={() => (readingAll ? speech.stop() : speech.playAll(sections, lang))}
+        onClick={() => (readingAll ? stopAll() : startAll())}
         className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border font-body text-xs transition-colors ${
           readingAll
             ? 'border-[var(--cr-accent)] text-[var(--cr-accent)]'
@@ -91,7 +136,7 @@ export function ReportAudioBar({ speech, sections, lang }: {
         </span>
       </button>
 
-      {voices.length > 0 && (
+      {(voices.length > 0 || hasStudio) && (
         <button
           onClick={() => setOpen((v) => !v)}
           className="p-1 text-[var(--cr-faint)] hover:text-[var(--cr-accent)] transition-colors"
@@ -102,18 +147,34 @@ export function ReportAudioBar({ speech, sections, lang }: {
         </button>
       )}
 
-      {open && voices.length > 0 && (
+      {open && (voices.length > 0 || hasStudio) && (
         <div className="absolute top-full right-0 mt-2 w-64 bg-[var(--cr-bg)] border border-[var(--cr-border)] shadow-lg z-50 rounded" onClick={(e) => e.stopPropagation()}>
           <div className="px-3 py-2 border-b border-[var(--cr-divider)] text-[9px] tracking-[0.2em] uppercase text-[var(--cr-muted)] font-body">
             {fr ? 'Voix · français' : 'Voice · English'}
           </div>
           <ul className="max-h-52 overflow-y-auto">
+            {/* The recording sits with the browser voices rather than replacing
+                them: it is one more voice to choose, and the browser voices stay
+                available because they always read the CURRENT text. */}
+            {hasStudio && (
+              <li>
+                <button
+                  onClick={() => pick(true)}
+                  className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
+                    onStudio ? 'text-[var(--cr-accent)] font-medium' : 'text-[var(--cr-body)] hover:bg-[var(--cr-hover)]'
+                  }`}
+                >
+                  <span className="block truncate">{studioLabel}</span>
+                  <span className="block text-[9px] text-[var(--cr-faint)]">{studioNote}</span>
+                </button>
+              </li>
+            )}
             {voices.map((v) => (
               <li key={v.name}>
                 <button
-                  onClick={() => { speech.selectVoice(lang, v.name); setOpen(false); }}
+                  onClick={() => pick(false, v.name)}
                   className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
-                    selected === v.name ? 'text-[var(--cr-accent)] font-medium' : 'text-[var(--cr-body)] hover:bg-[var(--cr-hover)]'
+                    !onStudio && selected === v.name ? 'text-[var(--cr-accent)] font-medium' : 'text-[var(--cr-body)] hover:bg-[var(--cr-hover)]'
                   }`}
                 >
                   <span className="block truncate">{v.name}</span>

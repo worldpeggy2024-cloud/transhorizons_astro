@@ -6,7 +6,7 @@
  * France analysis: fully populated from /data/france.ts
  */
 
-import React, { useEffect, useState, useMemo, useRef } from 'react';
+import React, { useEffect, useState, useMemo, useRef, useCallback } from 'react';
 import { useParams, Link } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { FlagIcon } from '@/components/FlagIcon';
@@ -19,6 +19,8 @@ import {
 import { franceAnalysis } from '@/data/france-yaml';
 import { type AnalysisContent, type ActorEntry, type SourceEntry, type ScoreRating } from '@/data/countries/analysisTypes';
 import { useReportSpeech, type SpeechSection } from '@/hooks/useReportSpeech';
+import { useNarrationSequence } from '@/hooks/useNarrationSequence';
+import { getCountryNarration } from '@/lib/narrationAudio';
 import DraftWatermark, { DraftBanner } from '@/components/DraftWatermark';
 import { isCountryInReview, countryReviewLabel, countryReviewNote } from '@/lib/articleStatus';
 import { SEO_READY_COUNTRIES } from '@/lib/analysedCountries';
@@ -845,6 +847,28 @@ export default function CountryPage() {
   const { cca3 } = useParams<{ cca3: string }>();
   const { language, setLanguage } = useLanguage();
   const speech = useReportSpeech();
+  /* The published recording of this report, if one has been approved. Absent is
+   * the normal case and not an error: the player falls back to Web Speech,
+   * which always reads the current text. */
+  const narration = getCountryNarration(cca3 ?? '', language);
+  const reportAudio = useNarrationSequence(narration?.sections);
+  /* Which voice the reader chose: the studio recording, or a browser voice.
+   * Held here rather than inside a control so the Baseline bar and every
+   * section button agree — picking the recording once applies everywhere.
+   * Defaults to the recording when one exists, because it is the better read;
+   * remembered per browser. */
+  const [studio, setStudioState] = useState(true);
+  useEffect(() => {
+    if (typeof localStorage === 'undefined') return;
+    const saved = localStorage.getItem('report-voice');
+    if (saved) setStudioState(saved === 'studio');
+  }, []);
+  const setStudio = useCallback((v: boolean) => {
+    setStudioState(v);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('report-voice', v ? 'studio' : 'browser');
+    }
+  }, []);
   const countryNotUpdated = isCountryInReview(cca3, SEO_READY_COUNTRIES);
   const [country, setCountry] = useState<CountryData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -1186,8 +1210,35 @@ export default function CountryPage() {
   // Empty sections drop out so their header shows no speaker. Keyed by id so a
   // section header and the "listen to all" bar drive the same queue.
   const rowsNarration = (rows: Row[]) => rows.map(([label, text]) => `${label}. ${text}`).join(' ');
+
+  /* Ratings are chips on screen — "Med-High" reads as an abbreviation, not a
+   * judgement — so speech gets the words. KEEP IN SYNC with RATING_SPOKEN in
+   * scripts/extract-narration.cjs, which produces the studio recording: the two
+   * engines must say the same thing. */
+  const RATING_SPOKEN: Record<string, Record<string, string>> = {
+    en: { High: 'High', 'Med-High': 'Medium to high', Med: 'Medium', 'Med-Low': 'Low to medium', Low: 'Low' },
+    fr: { High: 'Élevée', 'Med-High': 'Moyenne à élevée', Med: 'Moyenne', 'Med-Low': 'Faible à moyenne', Low: 'Faible' },
+  };
+  const scorecardNarration = (!hasAnalysis || scorecardPending) ? '' : ([
+    ['eliteCohesion', t.eliteCohesion],
+    ['socialCohesion', t.socialCohesion],
+    ['securityLoyalty', t.securityLoyalty],
+    ['economicPressure', t.economicPressure],
+    ['protestCapacity', t.protestCapacity],
+    ['institutionalResilience', t.institutionalResilience],
+  ] as const).map(([key, label]) => {
+    const value = (analysis!.scorecard as Record<string, string | null | undefined>)[key];
+    if (!value) return '';
+    const spoken = RATING_SPOKEN[language === 'fr' ? 'fr' : 'en'][value] ?? value;
+    const anchor = analysis!.scorecardAnchors?.[key];
+    const why = (language === 'fr' ? anchor?.rationale_fr : anchor?.rationale_en) ?? '';
+    return `${label}. ${spoken}.${why ? ' ' + why : ''}`;
+  }).filter(Boolean).join(' ');
+
   const narrationSections: SpeechSection[] = ([
     { id: 'baseline', text: hasBaseline ? lang!.baseline! : '' },
+    // After the baseline, matching both the page order and the recording's.
+    { id: 'scorecard', text: scorecardNarration },
     { id: 'territory', text: rowsNarration(territoryRows) },
     { id: 'society', text: rowsNarration(societyRows) },
     { id: 'economy', text: rowsNarration(economyRows) },
@@ -1198,7 +1249,10 @@ export default function CountryPage() {
   ] as SpeechSection[]).filter((s) => s.text.trim().length > 0);
   const narrationById: Record<string, SpeechSection> = Object.fromEntries(narrationSections.map((s) => [s.id, s]));
   const sectionAudio = (id: string) =>
-    narrationById[id] ? <SectionAudioButton speech={speech} section={narrationById[id]} lang={language} /> : undefined;
+    narrationById[id]
+      ? <SectionAudioButton speech={speech} section={narrationById[id]} lang={language}
+                            audio={reportAudio} studio={studio} />
+      : undefined;
   const AUDIO_LABELS: Record<string, string> = {
     baseline: t.baseline, territory: t.territory, society: t.society, economy: t.economy,
     political: t.political, capacity: t.capacity, security: t.security, situation: t.situation,
@@ -1246,7 +1300,7 @@ export default function CountryPage() {
     <div className={`min-h-screen bg-[var(--cr-bg)] text-[var(--cr-body)] ${dark ? 'dark' : ''}`}>
 
       {/* Audio transport — fixed pill, visible only while narration is sounding. */}
-      <FloatingReportPlayer speech={speech} lang={language} sectionName={audioSectionName} />
+      <FloatingReportPlayer speech={speech} lang={language} sectionName={audioSectionName} audio={reportAudio} />
 
       {/* Top bar */}
       <div className="sticky top-0 z-30 bg-[var(--cr-bg)]/95 backdrop-blur-sm border-b border-[var(--cr-border)]">
@@ -1384,7 +1438,8 @@ export default function CountryPage() {
             <div className="flex items-center justify-between gap-3 mb-2">
               <p className="font-body text-[10px] uppercase tracking-widest text-[var(--cr-muted)]">{t.baseline}</p>
               {narrationSections.length > 0 && (
-                <ReportAudioBar speech={speech} sections={narrationSections} lang={language} />
+                <ReportAudioBar speech={speech} sections={narrationSections} lang={language}
+                                audio={reportAudio} studio={studio} setStudio={setStudio} />
               )}
             </div>
             <ProseParagraphs text={lang!.baseline!} sources={activeSources} />
@@ -1396,7 +1451,9 @@ export default function CountryPage() {
             derivatives pass hasn't composed the scorecard yet. */}
         {!scorecardPending && (
           <div className="md:hidden mb-8 bg-[var(--cr-surface)] border border-[var(--cr-border)] px-4 py-3">
-            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+            <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3 flex items-center gap-2">
+              <span>{scorecardTitle}</span>{sectionAudio('scorecard')}
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6">{scorecardRows}</div>
           </div>
         )}
@@ -1415,7 +1472,9 @@ export default function CountryPage() {
           <SectionNav items={navItems} language={language} onNavigate={openAndScroll} />
           {!scorecardPending && (
             <div className="border border-[var(--cr-accent)] bg-[var(--cr-surface)] px-4 py-3">
-              <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3">{scorecardTitle}</p>
+              <p className="font-body text-xs text-[var(--cr-muted)] uppercase tracking-widest mb-3 flex items-center gap-2">
+              <span>{scorecardTitle}</span>{sectionAudio('scorecard')}
+            </p>
               {scorecardRows}
             </div>
           )}
