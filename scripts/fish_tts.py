@@ -228,6 +228,15 @@ SUBSTITUTIONS = {
         # "Sasskatchouane" reads cleanly and leaves its neighbours alone
         # (chosen by ear 2026-08-16 from six variants in the real sentence).
         (r'\bSaskatchewan\b', 'Sasskatchouane', 'place name'),
+        # WHY FRENCH HAS THIS ENTRY AND ENGLISH DOES NOT (Peggy, 2026-09-03):
+        # in French, "Saskatchewan" is a borrowed name — the province speaks
+        # English — so a French voice missing it is an expected foreign-word
+        # failure, and respelling it is a fair accommodation. In English it is a
+        # native place name: a mispronunciation there is a defect, not an
+        # accent, and the honest fix is to make the engine say the real word.
+        # Tested in Adam Stone in the real sentence (2026-09-03): the plain
+        # spelling read correctly, so the earlier failure was STOCHASTIC, not a
+        # property of the word. Use --reroll, never an English respelling.
         # English term of art quoted inside French prose ("la théorie des
         # principales ressources (staples thesis; Innis, 1930)"). The French
         # voice reads it as French and it becomes unrecognisable; this respells
@@ -270,6 +279,85 @@ SUBSTITUTIONS = {
         # Matches the -re and -er spellings, singular and plural.
         (r'\bkilomet(?:re|er)(s?)\b', r'killometer\1', 'kilometre pronunciation'),
         (r'\bKilomet(?:re|er)(s?)\b', r'Killometer\1', 'kilometre pronunciation'),
+
+        # ── CAN report, English pass 2026-08-18 ──────────────────────────────
+        # Currency symbols. The engine reads "US$115" as "you-ess-dollar-115"
+        # or drops the unit entirely; spelling the unit AFTER the number puts it
+        # where an English speaker expects it. The scale word has to be carried
+        # across, and it may be bound to the number by a no-break space from the
+        # number-binding pass, hence the explicit    class.
+        (r'US\$([\d.,]+)([\s  ]+(?:billion|million|trillion))?',
+         r'\1\2 US dollars', 'US currency'),
+        (r'C\$([\d.,]+)([\s  ]+(?:billion|million|trillion))?',
+         r'\1\2 Canadian dollars', 'Canadian currency'),
+
+        # Minus sign before a figure — read as a dash, a pause, or nothing at
+        # all, which silently inverts the meaning of an emissions or GDP change.
+        # Scoped to a sign that OPENS a number (preceded by a space or a paren)
+        # so date and page ranges ("2001-2002") are untouched.
+        (r'(?<=[\s(])[−–-](?=\d)', 'minus ', 'negative figure'),
+
+        # Comma-grouped thousands: "133,000 employees" came out unscaled. Not
+        # applied inside longer groupings (the negative lookahead), where the
+        # engine's own normalisation handles it.
+        (r'(?<![\d,])(\d{1,3}),000\b(?!,)', r'\1 thousand', 'thousands separator'),
+
+        # CUSMA is spelled out letter by letter. Peggy's reading: "KUZ-ma".
+        (r'\bCUSMA\b', 'Kuzma', 'acronym read as a word'),
+
+        # Case citations: "v." is read "vee" or "versus"; in spoken legal
+        # English it is "and". A capitalised party is required on the right so
+        # ordinary abbreviations are not caught.
+        (r'(?<=\w)\s+v\.?\s+(?=[A-Z])', ' and ', 'case citation'),
+        # A currency RANGE: the scale word sits at the far end but governs both
+        # figures. "$45 to $113 billion" was read "45 dollars to 113 billion
+        # dollars", which understates the floor by a factor of a billion.
+        (r'\$(\d[\d.,]*) to \$(\d[\d.,]*)([\s\u00a0\u202f]+(?:billion|million|trillion))',
+         r'\1\3 to \2\3 dollars', 'currency range'),
+
+        # ── respellings PROPOSED, not yet confirmed by ear ───────────────────
+        # Guesses at what the engine will accept. Check them with
+        # tts-text/tests/pronunciation-en.txt before committing to a full run.
+        (r'\blaicity\b', 'layissity', 'PROPOSED - laicity'),
+        (r'\bLaicity\b', 'Layissity', 'PROPOSED - laicity'),
+        (r'\blegislature(s?)\b', r'lejislature\1', 'PROPOSED - legislature'),
+        (r'\bSecession\b', 'Sesession', 'PROPOSED - secession'),
+        #
+        # CONSIDERED AND DELIBERATELY NOT ADDED — do not add these later:
+        #
+        # "salience" — Peggy expected "SAY-lee-uns" and heard something nearer
+        #   "SEE-lee-uns". Both are real: the vowel varies by accent, so there is
+        #   no single correct form to force. Left alone by her decision
+        #   (2026-09-04). Appears twice (society.religion, security.transnational).
+        #
+        # "constitutionality" — Ogechi drops a syllable ("constitunality") as the
+        #   LAST word of a 1,122-character paragraph. Not a mispronunciation: the
+        #   engine settles into one contour per request and compresses as it runs
+        #   out, the same mechanism behind the rising-intonation paragraphs in the
+        #   travel note. "constitutional" (x18) and "constitutionally" (x3) read
+        #   fine everywhere, which is what rules out the word itself as the cause.
+        #   Fix with --reroll, never a respelling (Peggy, 2026-09-04).
+
+        # Tsilhqot'in — "sill-ko-teen", per the Province of British Columbia's
+        # own "Guide to the Pronunciation of Indigenous Communities and
+        # Organizations in BC" (Oct 2018), which lists the Tsilhqot'in National
+        # Government by name. A published provincial source, not a guess.
+        (r"\bTsilhqot['’]in\b", 'Sill-ko-teen', 'Tsilhqot’in, per the BC government guide'),
+
+        # Iqaluit — chosen by ear from three rounds of variants (2026-09-03).
+        # Inuktitut "q" is a uvular stop, which English has no letter for;
+        # Peggy's ear described it as "a mix of hard h and k in the same
+        # letter", and heard the engine's default as "aye-KAL-oo-it" — wrong
+        # vowel AND wrong consonant. "eekh-raloo-it" carries an "r" the real
+        # word does not have: it is there to bend an English voice toward a
+        # sound it cannot otherwise make, the same trick as "killometer".
+        # An approximation of a sound English lacks, not a correct pronunciation
+        # — and it lives ONLY in the audio. The page, the SEO layer and the
+        # French all keep the true spelling.
+        (r'\bIqaluit\b', 'eekh-raloo-it', 'Iqaluit, chosen by ear'),
+        # Nukkiksautiit deliberately has NO entry: the engine reads it correctly
+        # as spelled (checked against a recording, 2026-09-03). It looks like it
+        # should be broken; it is not. Do not "fix" it.
     ],
 }
 
@@ -680,6 +768,9 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
     # (baseline, situation) alternate per block, which is their natural item.
     sectioned = any(b.startswith(HEADING_PREFIX) for b in blocks)
     unit = -1
+    # 0 until --flip-from matches a heading, 1 afterwards: see the loop below.
+    flip = 0
+    flip_needle = (args.flip_from or '').strip().lower()
     parts: list[bytes] = []
     is_heading: list[bool] = []
     hits = misses = 0
@@ -693,8 +784,18 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         section_title = block.startswith(SECTION_PREFIX) and not heading
         if not section_title and (heading or not sectioned or unit < 0):
             unit += 1
+        # --flip-from swaps which voice takes which subsection, from the named
+        # heading to the end of the section. Needed because the alternation is
+        # positional: when one voice cannot say a word in a particular
+        # subsection (Adam Stone and "Saskatchewan", 2026-09-03) the fix is to
+        # hand that subsection to the other voice — and every subsection after
+        # it then shifts too, or two in a row would share a voice.
+        if heading and flip_needle:
+            heading_text = block[len(HEADING_PREFIX):].strip().lower()
+            if flip_needle in heading_text:
+                flip = 1
         this_voice_name, this_voice_id = (
-            voices[0] if section_title else voices[unit % len(voices)]
+            voices[0] if section_title else voices[(unit + flip) % len(voices)]
         )
         marker = SECTION_PREFIX if section_title else HEADING_PREFIX
         spoken = block[len(marker):].strip() if (heading or section_title) else block
@@ -1141,6 +1242,11 @@ def main() -> int:
                              "\"adam-stone|ogechi\". The unit is a SUBSECTION where "
                              "the section has headings, and a paragraph where it does "
                              "not (baseline, situation).")
+    parser.add_argument("--flip-from", metavar="HEADING",
+                        help="swap the two alternating voices from the subsection "
+                             "whose heading contains HEADING to the end of that "
+                             "section. For when one voice cannot pronounce a word "
+                             "the other can. Only meaningful with --alternate.")
     parser.add_argument("--reroll", metavar="TEXT",
                         help="re-synthesise only paragraphs containing TEXT. Separate "
                              "several targets with | — NOT commas, since prose is full "

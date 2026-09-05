@@ -79,6 +79,7 @@ const SECTIONS = [
     ['capacity_delivery',         'Delivery',          'Réalisation'],
     ['capacity_publicServices',   'Public services',   'Services publics'],
     ['capacity_productivity',     'Productivity',      'Productivité'],
+    ['capacity_knownAndUnbuilt',  'Known and unbuilt', 'Connu et non bâti'],
   ]},
   { id: 'security', en: 'Security & Diplomacy', fr: 'Sécurité et Diplomatie', rows: [
     ['security_posture',               'Posture',                'Posture'],
@@ -95,7 +96,7 @@ const SECTIONS = [
 // Prose keys deliberately NOT narrated (reference apparatus / JSON-in-text).
 const NOT_NARRATED = [
   /^sources$/, /^actors_/, /^scorecard/, /_anchors$/, /^passNotes/,
-  /^peerCorrections/, /^capacity_knownAndUnbuilt_/,
+  /^peerCorrections/,
 ];
 
 /*
@@ -148,7 +149,13 @@ function stripMarkers(text) {
  * 2026-08-12). The same argument applies to the page's own Web Speech
  * narration — worth fixing there too.
  */
-function situationText(raw) {
+// Spoken label for an event's consequence. On the page the "changed" field is
+// set off visually; in speech it ran straight on from "what" with only a space,
+// so a listener could not tell the event from its effect. Peggy: the section is
+// "hard to understand as is".
+const RESULT_LABEL = { en: 'Result:', fr: 'Résultat :' };
+
+function situationText(raw, lang = 'en') {
   const value = String(raw || '').trim();
   if (!value) return '';
   if (!value.startsWith('[')) return stripMarkers(value);
@@ -164,7 +171,9 @@ function situationText(raw) {
       const head = [th?.thread, th?.status].filter(Boolean).join(', ');
       const evs = (Array.isArray(th?.events) ? th.events : [])
         .map((e) => {
-          const body = [e?.what, e?.changed].filter(Boolean).join(' ');
+          const label = RESULT_LABEL[lang] ?? RESULT_LABEL.en;
+          const body = [e?.what, e?.changed ? `${label} ${e.changed}` : null]
+            .filter(Boolean).join(' ');
           // "4 February – 4 March 2025: The United States imposed …"
           return e?.date ? `${e.date}: ${body}` : body;
         })
@@ -218,6 +227,55 @@ function scorecardBlocks(data, lang) {
   return [SECTION_HEADING + (SCORECARD_LABEL[lang] ?? SCORECARD_LABEL.en), ...parts].join('\n\n');
 }
 
+/*
+ * Gap register (capacity.knownAndUnbuilt) — JSON-in-text, like `situation`.
+ *
+ * {opener, items[{gap, anchor, since, class}], denominator}
+ *
+ * It was on NOT_NARRATED because it is JSON rather than prose, which meant the
+ * whole section was silently absent from the audio (caught by ear, 2026-09-03).
+ * A reader sees the class as a coloured tag beside each entry; a listener needs
+ * it said, otherwise twenty-four gaps arrive as one undifferentiated list with
+ * no sense of which were never attempted and which are merely unfinished.
+ *
+ * The denominator closes the section because it is the moral guard: the
+ * capacity to close any of this is inherited, never earned.
+ */
+const GAP_CLASS = {
+  en: {
+    'no-attempt-documented':     'No attempt documented.',
+    'announced-not-implemented': 'Announced but not implemented.',
+    'attempted-and-failed':      'Attempted, and failed.',
+    'in-progress-unclosed':      'In progress, not yet closed.',
+  },
+  fr: {
+    'no-attempt-documented':     'Aucune tentative documentée.',
+    'announced-not-implemented': 'Annoncé, mais non mis en œuvre.',
+    'attempted-and-failed':      'Tenté, sans succès.',
+    'in-progress-unclosed':      'En cours, non résolu.',
+  },
+};
+
+function gapRegisterText(raw, lang = 'en') {
+  const value = String(raw || '').trim();
+  if (!value) return '';                 // emitted empty by Pass B: not an error
+  if (!value.startsWith('{')) return stripMarkers(value);
+  let reg;
+  try { reg = JSON.parse(value); } catch { return stripMarkers(value); }
+  const classes = GAP_CLASS[lang] ?? GAP_CLASS.en;
+  const items = (Array.isArray(reg?.items) ? reg.items : []).map((it) => {
+    // "since 2021 — the Act received royal assent …" reads as a sentence of its
+    // own once capitalised; run into the gap it sounded like a subordinate
+    // clause and the date stopped registering.
+    const since = String(it?.since || '').trim();
+    const sinceSentence = since ? since.charAt(0).toUpperCase() + since.slice(1) : '';
+    return [it?.gap, classes[it?.class], sinceSentence].filter(Boolean).join(' ');
+  });
+  return stripMarkers(
+    [reg?.opener, ...items, reg?.denominator].filter(Boolean).join('\n\n')
+  );
+}
+
 function buildSections(data, lang) {
   const out = [];
   for (const section of SECTIONS) {
@@ -227,7 +285,9 @@ function buildSections(data, lang) {
       if ((raw === undefined || String(raw).trim() === '') && legacy) {
         raw = data[`${legacy}_${lang}`];
       }
-      const text = stem === 'situation' ? situationText(raw) : stripMarkers(raw);
+      const text = stem === 'situation'        ? situationText(raw, lang)
+                 : stem === 'capacity_knownAndUnbuilt' ? gapRegisterText(raw, lang)
+                 : stripMarkers(raw);
       if (!text) continue;
       const label = lang === 'fr' ? labelFr : labelEn;
       // A subsection label becomes its own block, marked as a heading, so the
