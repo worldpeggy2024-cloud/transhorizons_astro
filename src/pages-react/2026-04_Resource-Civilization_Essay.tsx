@@ -84,7 +84,7 @@ export default function PortfolioResourceCivilization() {
       exportColor: '#5e6673',
       title: L === 'fr' ? 'Bois & agriculture' : 'Timber & Agriculture',
       desc: L === 'fr' ? 'Expansion territoriale' : 'Territorial expansion',
-      export: L === 'fr' ? '→ Bretagne / Europe' : '→ Britain / Europe',
+      export: L === 'fr' ? '→ Grande-Bretagne / Europe' : '→ Britain / Europe',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style={{ width: 26, height: 26, strokeWidth: 1.2 }}>
           <rect x="4" y="5" width="6" height="6" rx="1" strokeLinecap="round" strokeLinejoin="round"/>

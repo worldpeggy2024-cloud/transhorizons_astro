@@ -475,12 +475,12 @@ export default config({
           description: 'Include citation markers [source-id]',
         }),
         society_wellbeing_en: fields.text({
-          label: 'Society: Wellbeing (EN)',
+          label: 'Society: Well-being (EN)',
           multiline: true,
           description: 'Health + educational OUTCOMES with access gradients. Include [source-id]',
         }),
         society_wellbeing_fr: fields.text({
-          label: 'Society: Wellbeing (FR)',
+          label: 'Society: Well-being (FR)',
           multiline: true,
           description: 'Include citation markers [source-id]',
         }),

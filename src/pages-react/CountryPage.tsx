@@ -1014,7 +1014,7 @@ export default function CountryPage() {
     approvals: language === 'fr' ? 'Autorisations' : 'Approvals',
     publicServices: language === 'fr' ? 'Services publics' : 'Public services',
     languageField: language === 'fr' ? 'Langue' : 'Language',
-    wellbeing: language === 'fr' ? 'Bien-être' : 'Wellbeing',
+    wellbeing: language === 'fr' ? 'Bien-être' : 'Well-being',
     posture: language === 'fr' ? 'Posture' : 'Posture',
     military: language === 'fr' ? 'Forces militaires' : 'Military',
     transnationalExposure: language === 'fr' ? 'Exposition transnationale' : 'Transnational exposure',

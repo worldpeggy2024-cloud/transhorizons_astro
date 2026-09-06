@@ -151,6 +151,8 @@ VOICES = {
         "le-narrateur":  "4f2a0684dd0247dda68f339738c780e6",  # slightly dramatic
          # https://fish.audio/app/m/6e10fb8946b34ba6bec447789ccdc3de/
         "stoic-2":       "6e10fb8946b34ba6bec447789ccdc3de",  # Voix stoïc 2 — FAVOURITE
+        # https://fish.audio/app/m/13a86cbd38904d96b965282dd32b8113/
+        "lucas-dupont":  "13a86cbd38904d96b965282dd32b8113",  # "Lucas Dupont yt". Untried on a full piece.
         # female
         # https://fish.audio/app/m/651751df29b140ab9c791aef35dc8fc2/
         "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate, but monotone by nature
@@ -208,6 +210,24 @@ def resolve_voice(lang: str, name: str | None) -> tuple[str, str]:
 # `--raw` disables the whole layer for A/B testing.
 #
 # Each entry is (regex pattern, replacement, why).
+#
+# THE TABLES ARE PER LANGUAGE AND A ROW NEVER TRANSFERS BETWEEN THEM. A
+# respelling is not a fact about the word; it is a phonetic instruction written
+# in ONE language's spelling system, aimed at one engine. The same target sound
+# needs different spellings: "van ASH" is "Van Ache" in French and would have to
+# be "Van Ash" in English, because an English voice reads "Ache" as /eɪk/.
+# Worked examples already in the tables:
+#   Saskatchewan  respelled in French only — a borrowed name there, native in
+#                 English, where a miss is a defect rather than an accent.
+#   CUSMA/ACEUM   the same treaty: a WORD in English ("KUZ-ma"), LETTERS in
+#                 French ("A.C.E.U.M.").
+#   Van Assche    respelled in BOTH, with different spellings for the same
+#                sound: "Van Ache" (fr), "Van Ash" (en).
+#
+# AND A ROW COSTS A REGENERATION. Changing the spoken text changes the cache key,
+# so every paragraph containing that word re-synthesises on the next run. Do not
+# add a row for a reading that has already been accepted: it buys nothing and
+# replaces an approved take with a fresh roll of the dice.
 # ---------------------------------------------------------------------------
 
 SUBSTITUTIONS = {
@@ -228,6 +248,26 @@ SUBSTITUTIONS = {
         # "Sasskatchouane" reads cleanly and leaves its neighbours alone
         # (chosen by ear 2026-08-16 from six variants in the real sentence).
         (r'\bSaskatchewan\b', 'Sasskatchouane', 'place name'),
+        # ACEUM (Accord Canada–États-Unis–Mexique) is SAID AS LETTERS in French —
+        # A-C-E-U-M — not as a word. Peggy's rule (2026-09-05). Note this is the
+        # opposite of the English CUSMA, which she reads as a word ("KUZ-ma"):
+        # the two acronyms are the same treaty and take different treatments,
+        # so neither language's rule may be copied to the other.
+        (r'\bACEUM\b', 'A.C.E.U.M.', 'acronym said as letters'),
+        # Van Assche — the surname of Kristof Van Assche, cited in the
+        # multipolar essay. Read "van ASH", the pronunciation he is addressed
+        # by in North America and lets stand (Peggy found him unchallenged on
+        # a conference recording, 2026-09-06).
+        #
+        # NOT the etymological reading. The name is Flemish, from the town Asse
+        # (formerly spelt Assche), and is [ˈɑsə] in Dutch — "van AH-suh", no
+        # "sh" at all. Peggy's rule and the right one: how a living person is
+        # actually addressed outranks where the name came from. Do not
+        # "correct" this to the Flemish reading.
+        #
+        # Chosen by ear in the REAL paragraph, not a short sample: without the
+        # respelling the engine said it two different ways within one paragraph.
+        (r'\bVan Assche\b', 'Van Ache', 'surname, as addressed in North America'),
         # WHY FRENCH HAS THIS ENTRY AND ENGLISH DOES NOT (Peggy, 2026-09-03):
         # in French, "Saskatchewan" is a borrowed name — the province speaks
         # English — so a French voice missing it is an expected foreign-word
@@ -355,6 +395,19 @@ SUBSTITUTIONS = {
         # — and it lives ONLY in the audio. The page, the SEO layer and the
         # French all keep the true spelling.
         (r'\bIqaluit\b', 'eekh-raloo-it', 'Iqaluit, chosen by ear'),
+        # Van Assche — "van ASH", how Kristof Van Assche is addressed in North
+        # America and lets stand. Without the rule the engine said it two ways
+        # inside one paragraph: "Aski" on the first mention, correct on the
+        # second (heard 2026-09-06).
+        #
+        # NOT the etymological reading: the name is Flemish, from the town Asse
+        # (formerly spelt Assche), [ˈɑsə] in Dutch — no "sh" at all. How a
+        # living person is actually addressed outranks where the name came
+        # from. Do not "correct" this to the Flemish reading.
+        #
+        # The French table spells it "Van Ache" for the same sound — an English
+        # voice would read that as /eɪk/.
+        (r'\bVan Assche\b', 'Van Ash', 'surname, as addressed in North America'),
         # Nukkiksautiit deliberately has NO entry: the engine reads it correctly
         # as spelled (checked against a recording, 2026-09-03). It looks like it
         # should be broken; it is not. Do not "fix" it.
