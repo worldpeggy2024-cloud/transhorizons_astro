@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Volume2, Play, Pause, Rewind, FastForward, ChevronDown } from 'lucide-react';
 import { useReportSpeech } from '../hooks/useReportSpeech';
 import { useNarrationAudio } from '../hooks/useNarrationAudio';
-import { getArticleNarration, slugFromPath } from '../lib/narrationAudio';
+import { getArticleNarration, narrationTakes, slugFromPath } from '../lib/narrationAudio';
 import { FloatingReportPlayer } from './ReportAudio';
 
 interface Props {
@@ -78,7 +78,12 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
    * simply leaves the Web Speech path in charge. */
   const resolvedSlug = slug ?? (typeof window !== 'undefined' ? slugFromPath(window.location.pathname) : '');
   const narration = getArticleNarration(resolvedSlug, lang);
-  const audio = useNarrationAudio(narration?.src, narration?.seconds);
+  /* A piece may be published in more than one voice. The reader picks; the
+   * first approved take is the default. */
+  const takes = narrationTakes(narration);
+  const [takeIndex, setTakeIndex] = useState(0);
+  const take = takes[takeIndex] ?? takes[0];
+  const audio = useNarrationAudio(take?.src, take?.seconds);
   // The listener can drop back to a browser voice from the same dropdown; the
   // recording is simply the default when one exists.
   const [useSpeech, setUseSpeech] = useState(false);
@@ -202,23 +207,29 @@ export default function PortfolioTTSPlayer({ id, text, lang, dark = false, float
                   {/* The published recording, when there is one. Choosing a
                     * voice IS choosing an engine: this entry plays the studio
                     * file, everything below synthesises in the browser. */}
-                  {narration && (
+                  {takes.length > 0 && (
                     <>
-                      <li>
-                        <button
-                          onClick={(e) => { e.stopPropagation(); speech.stop(); setUseSpeech(false); setVoiceOpen(false); }}
-                          className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
-                            premium ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium' : 'text-[#333] hover:bg-[#F5F5F5]'
-                          }`}
-                        >
-                          <span className="block truncate">
-                            {VOICE_LABELS[narration.voice] ?? narration.voice}
-                          </span>
-                          <span className="block text-[9px] text-[#AAA]">
-                            {isFr ? 'enregistrement · voix de studio' : 'recording · studio voice'}
-                          </span>
-                        </button>
-                      </li>
+                      {takes.map((t, i) => (
+                        <li key={t.voice}>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation(); speech.stop();
+                              if (i !== takeIndex) audio.stop();
+                              setTakeIndex(i); setUseSpeech(false); setVoiceOpen(false);
+                            }}
+                            className={`w-full text-left px-3 py-2 font-body text-[11px] leading-snug transition-colors ${
+                              premium && i === takeIndex ? 'bg-[#7D1A2E]/10 text-[#5C1220] font-medium' : 'text-[#333] hover:bg-[#F5F5F5]'
+                            }`}
+                          >
+                            <span className="block truncate">
+                              {VOICE_LABELS[t.voice] ?? t.voice}
+                            </span>
+                            <span className="block text-[9px] text-[#AAA]">
+                              {isFr ? 'enregistrement · voix de studio' : 'recording · studio voice'}
+                            </span>
+                          </button>
+                        </li>
+                      ))}
                       <li className="px-3 py-1 border-y border-[#EFEFEF] text-[8px] tracking-[0.15em] uppercase text-[#BBB] font-body">
                         {isFr ? 'ou voix du navigateur' : 'or browser voices'}
                       </li>

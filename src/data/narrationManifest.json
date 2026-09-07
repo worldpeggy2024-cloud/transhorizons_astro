@@ -69,6 +69,23 @@
     "voice": "laura",
     "seconds": 707
   },
+  "articles/career-evolution/en": {
+    "voice": "peggy-thoughtful",
+    "src": "/audio/articles/career-evolution/en/peggy-thoughtful/01-article.mp3",
+    "seconds": 476,
+    "alternates": [
+      {
+        "voice": "irish-3",
+        "src": "/audio/articles/career-evolution/en/irish-3/01-article.mp3",
+        "seconds": 456
+      }
+    ]
+  },
+  "articles/travel-observation/en": {
+    "src": "/audio/articles/travel-observation/en/peggy-thoughtful/01-article.mp3",
+    "voice": "peggy-thoughtful",
+    "seconds": 623
+  },
   "articles/resource-civilization/fr": {
     "src": "/audio/articles/resource-civilization/fr/reflechie/01-article.mp3",
     "voice": "reflechie",
@@ -78,5 +95,15 @@
     "src": "/audio/articles/canada-multipolar/fr/lucas-dupont/01-article.mp3",
     "voice": "lucas-dupont",
     "seconds": 675
+  },
+  "articles/career-evolution/fr": {
+    "src": "/audio/articles/career-evolution/fr/peggy/01-article.mp3",
+    "voice": "peggy",
+    "seconds": 491
+  },
+  "articles/travel-observation/fr": {
+    "src": "/audio/articles/travel-observation/fr/peggy/01-article.mp3",
+    "voice": "peggy",
+    "seconds": 625
   }
 }

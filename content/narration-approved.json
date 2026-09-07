@@ -4,6 +4,8 @@
     "Keys: articles/<slug>/<lang>  or  countries/<ISO3>/<lang>.",
     "Value: the voice slug, matching a folder under tts-out/<key>/<voice>/ and a",
     "name in VOICES in scripts/fish_tts.py. A duet folder is named \"a-b\".",
+    "A value may be an ARRAY of voices when a piece is published with more than",
+    "one recording; the reader picks. The FIRST is the default.",
     "",
     "scripts/stage-audio.cjs reads this by default and copies exactly these files",
     "into public/audio, which then ships with every deploy. Adding a line here is",
@@ -21,6 +23,13 @@
     "articles/resource-civilization/fr": "reflechie",
     "countries/CAN/en": "adam-stone-ogechi",
     "articles/canada-multipolar/en": "laura",
-    "articles/canada-multipolar/fr": "lucas-dupont"
+    "articles/canada-multipolar/fr": "lucas-dupont",
+    "articles/career-evolution/en": [
+      "peggy-thoughtful",
+      "irish-3"
+    ],
+    "articles/career-evolution/fr": "peggy",
+    "articles/travel-observation/en": "peggy-thoughtful",
+    "articles/travel-observation/fr": "peggy"
   }
 }

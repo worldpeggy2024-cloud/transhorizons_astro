@@ -16,6 +16,16 @@ export interface Narration {
   src: string;
   voice: string;
   seconds: number;
+  /* Further approved recordings of the same piece, in approved order. Present
+   * only where a piece was published in more than one voice — offering a choice
+   * is the point, so the reader picks rather than inheriting ours. */
+  alternates?: { voice: string; src: string; seconds: number }[];
+}
+
+/** Every approved recording of a piece, default first. Empty when there is none. */
+export function narrationTakes(n: Narration | undefined) {
+  if (!n) return [];
+  return [{ voice: n.voice, src: n.src, seconds: n.seconds }, ...(n.alternates ?? [])];
 }
 
 /*

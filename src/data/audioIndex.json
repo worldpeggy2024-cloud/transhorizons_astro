@@ -86,6 +86,14 @@
         {
           "id": "laura",
           "label": "Laura (deep)"
+        },
+        {
+          "id": "irish-3",
+          "label": "Irish (library title \"dggd\" — find it by URL)"
+        },
+        {
+          "id": "peggy-thoughtful",
+          "label": "Peggy (Thoughtful Narrator)"
         }
       ],
       "tracks": [
@@ -102,6 +110,27 @@
           "voice": "laura",
           "src": "/audio/articles/canada-multipolar/en/laura/01-article.mp3",
           "seconds": 707
+        },
+        {
+          "id": "art-en-irish-3-career-evolution",
+          "label": "From Translation Toward Research",
+          "voice": "irish-3",
+          "src": "/audio/articles/career-evolution/en/irish-3/01-article.mp3",
+          "seconds": 456
+        },
+        {
+          "id": "art-en-peggy-thoughtful-career-evolution",
+          "label": "From Translation Toward Research",
+          "voice": "peggy-thoughtful",
+          "src": "/audio/articles/career-evolution/en/peggy-thoughtful/01-article.mp3",
+          "seconds": 476
+        },
+        {
+          "id": "art-en-peggy-thoughtful-travel-observation",
+          "label": "Travel and Observation",
+          "voice": "peggy-thoughtful",
+          "src": "/audio/articles/travel-observation/en/peggy-thoughtful/01-article.mp3",
+          "seconds": 623
         }
       ]
     },
@@ -116,6 +145,10 @@
         {
           "id": "lucas-dupont",
           "label": "Lucas Dupont"
+        },
+        {
+          "id": "peggy",
+          "label": "Peggy (Voix Claire et Amicale)"
         }
       ],
       "tracks": [
@@ -132,6 +165,20 @@
           "voice": "lucas-dupont",
           "src": "/audio/articles/canada-multipolar/fr/lucas-dupont/01-article.mp3",
           "seconds": 675
+        },
+        {
+          "id": "art-fr-peggy-career-evolution",
+          "label": "De la traduction vers la recherche",
+          "voice": "peggy",
+          "src": "/audio/articles/career-evolution/fr/peggy/01-article.mp3",
+          "seconds": 491
+        },
+        {
+          "id": "art-fr-peggy-travel-observation",
+          "label": "Voyage et observation",
+          "voice": "peggy",
+          "src": "/audio/articles/travel-observation/fr/peggy/01-article.mp3",
+          "seconds": 625
         }
       ]
     }

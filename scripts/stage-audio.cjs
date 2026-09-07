@@ -61,6 +61,9 @@ const VOICE_LABELS = {
   'annonce-calme': 'Annonce Calme',
   ora: 'Ora (articulate)',
   reflechie: 'Voix Reflechie',
+  // Peggy's own French clone. Only the FRENCH clone carries this slug now — the
+  // English one is peggy-thoughtful.
+  peggy: 'Peggy (Voix Claire et Amicale)',
   'stoic-2': 'Voix stoic 2',
 };
 
@@ -158,7 +161,22 @@ const APPROVED = (() => {
   if (!fs.existsSync(file)) return null;
   const map = JSON.parse(fs.readFileSync(file, 'utf8')).approved || {};
   // "articles/<slug>/<lang>": "<voice>"  ->  "articles/<slug>/<lang>/<voice>/"
-  return Object.entries(map).map(([key, voice]) => `${key}/${voice}/`);
+  // A value may also be an ARRAY of voices, when a piece is published with more
+  // than one recording and the reader chooses. The FIRST is the default.
+  return Object.entries(map).flatMap(([key, v]) =>
+    (Array.isArray(v) ? v : [v]).map((voice) => `${key}/${voice}/`));
+})();
+
+/* The approved order, so the manifest can put the default first. Directory
+ * listing is alphabetical, which is not the same thing: for career-evolution EN
+ * it would put the Irish voice ahead of Peggy's for no reason but the letter i. */
+const APPROVED_ORDER = (() => {
+  const file = path.join('content', 'narration-approved.json');
+  if (!fs.existsSync(file)) return {};
+  const map = JSON.parse(fs.readFileSync(file, 'utf8')).approved || {};
+  const out = {};
+  for (const [key, v] of Object.entries(map)) out[key] = Array.isArray(v) ? v : [v];
+  return out;
 })();
 
 const wanted = (rel) => {
@@ -270,7 +288,9 @@ for (const g of groups) {
       // First voice staged for a slug+lang wins; staging is filtered with --only
       // to exactly the approved recordings, so there is normally just the one.
       const key = `articles/${slug}/${lang}`;
-      if (!narration[key]) narration[key] = { src: t.src, voice, seconds: t.seconds };
+      const entry = { voice, src: t.src, seconds: t.seconds };
+      if (!narration[key]) narration[key] = { ...entry, alternates: [] };
+      else narration[key].alternates.push(entry);
       continue;
     }
     /* A COUNTRY REPORT is not one file. It is one file per section, and the
@@ -292,6 +312,22 @@ for (const g of groups) {
     });
     narration[key].seconds += t.seconds;
   }
+}
+/* Put the approved default first and drop the empty alternates array, so a
+ * single-recording piece keeps exactly the shape it always had. */
+for (const [key, entry] of Object.entries(narration)) {
+  if (!entry.alternates) continue;
+  const all = [{ voice: entry.voice, src: entry.src, seconds: entry.seconds },
+               ...entry.alternates];
+  const order = APPROVED_ORDER[key] || [];
+  all.sort((a, b) => {
+    const ia = order.indexOf(a.voice), ib = order.indexOf(b.voice);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  const [first, ...rest] = all;
+  narration[key] = rest.length
+    ? { ...first, alternates: rest }
+    : { src: first.src, voice: first.voice, seconds: first.seconds };
 }
 fs.writeFileSync(NARRATION, JSON.stringify(narration, null, 2) + '\n', 'utf8');
 console.log(`Narration manifest -> ${NARRATION}  (${Object.keys(narration).length} entry/entries)`);
