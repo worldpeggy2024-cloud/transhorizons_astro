@@ -50,6 +50,42 @@
           "quatre-vingt-un": "quatre-vin-un"
         },
         "why": "81 read as \"quatre-vingt-T-un\" — a phantom liaison every model makes, including in Fish Audio directly. Dropping the silent gt removes the consonant it was latching onto. Peggy's suggestion."
+      },
+      {
+        "where": "Trois personnes sur quatre",
+        "replace": {
+          "Toronto": "Torontau"
+        },
+        "why": "read as English here; the -au spelling keeps the French nasal"
+      },
+      {
+        "where": "L'étiquette du recensement",
+        "replace": {
+          "dix": "diss"
+        },
+        "why": "final x swallowed — \"di\" instead of /dis/"
+      },
+      {
+        "where": "Le Canada est une société de peuplement",
+        "replace": {
+          "Métis": "Métiss"
+        },
+        "why": "the s is sounded in Canadian French; the engine used the France reading"
+      },
+      {
+        "where": "L'inégalité de santé la plus marquée",
+        "replace": {
+          "Métis": "Métiss",
+          "soixante-et-onze": "soixante-et-honze"
+        },
+        "why": "Métis needs its s; and 71 came out \"soixante-et-Tonze\" — the h aspiré blocks that liaison, as it did for quatre-vingt-honze"
+      },
+      {
+        "where": "L'image de soi a tenu",
+        "replace": {
+          "quatre contre un": "quatre contr'un"
+        },
+        "why": "read as \"quatre contre trin\" — the engine ran contre into un. The elision forces the break. This one is not optional: it stops the sentence being understood, unlike a soft Métis."
       }
     ]
   }

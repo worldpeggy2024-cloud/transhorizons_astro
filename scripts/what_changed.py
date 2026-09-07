@@ -72,9 +72,20 @@ def main() -> int:
 
     grand = 0
     for section in manifest["sections"]:
-        text = tts.prepare_spoken_text(
-            (base / section["text"]).read_text(encoding="utf-8").strip(),
-            lang, verbose=False, voices=set(names))
+        fixes = tts.load_local_fixes(args.piece)
+        raw = (base / section["text"]).read_text(encoding="utf-8").strip()
+        # Local fixes must be applied here too, or this tool under-reports: a
+        # paragraph changed only by a local fix would look unchanged.
+        parts = []
+        for chunk in re.split(r"(\n\s*\n)", raw):
+            if not chunk.strip():
+                parts.append(chunk)
+                continue
+            prepped = tts.prepare_spoken_text(chunk, lang, verbose=False,
+                                              voices=set(names))
+            prepped, _ = tts.apply_local_fixes(prepped, fixes)
+            parts.append(prepped)
+        text = "".join(parts)
         blocks = [b.strip() for b in re.split(r"\n\s*\n", text) if b.strip()]
         sectioned = any(b.startswith(tts.HEADING_PREFIX) for b in blocks)
         mp3 = out_dir / section["mp3"]

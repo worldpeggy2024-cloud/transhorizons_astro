@@ -45,9 +45,9 @@ const VOICE_LABELS: Record<string, string> = {
   ogechi: 'British narrator, female',
   'war-arsenal': 'American narrator',
   laura: 'American narrator, female',
-  florence: 'American narrator, female, lighter',
+  florence: 'American narrator',
   'old-woman': 'American narrator, female, softer',
-  'elderly-wisdom': 'American narrator, older',
+  'elderly-wisdom': 'American narrator, older, male',
   // French
   angelokyly: 'Narrateur, voix grave',
   'le-narrateur': 'Narrateur, plus expressif',

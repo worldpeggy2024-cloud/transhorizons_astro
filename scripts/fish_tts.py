@@ -101,11 +101,15 @@ VOICES = {
         # https://fish.audio/app/m/fd176117735446968cca7911ee4da42b/
         "deep-story":  "fd176117735446968cca7911ee4da42b",  # male. Untried on a full piece.
         # https://fish.audio/app/m/7cefff1c89464d7dbc412482f909ec2d/
-        "florence":    "7cefff1c89464d7dbc412482f909ec2d",  # Florence Scovel Shinn, lighter
+        # Library title is "florence scovel shinn" — the AUTHOR being read, not a
+        # description of the speaker. I recorded it as "female, lighter" on the
+        # strength of the name alone and never checked; Peggy heard it and took it
+        # for Adam Stone. A title names the material, not the voice.
+        "florence":    "7cefff1c89464d7dbc412482f909ec2d",  # gender UNVERIFIED, reads male
         # https://fish.audio/app/m/7e4baf13677e4b95b5e25a60b9a717b4/
         "old-woman":   "7e4baf13677e4b95b5e25a60b9a717b4",  # softer — FAVOURITE
         # https://fish.audio/app/m/fce31379a48945e69637267c7421f6c1/
-        "elderly-wisdom": "fce31379a48945e69637267c7421f6c1",  # "Elderly Wisdom". Untried on a full piece.
+        "elderly-wisdom": "fce31379a48945e69637267c7421f6c1",  # "Elderly Wisdom" — MALE (Peggy, 2026-09-07)
         # REJECTED 2026-08-12 — monotone, "really not pleasant to listen to".
         # Kept only so the already-generated tts-out/**/sarah/ files stay addressable.
         "sarah":       "933563129e564b19a115bedd57b7406a",
@@ -159,20 +163,20 @@ VOICES = {
     "fr": {
         # male
         # https://fish.audio/app/m/c51f4c0e9e414d9eaf7c71effd5b92d2/
-        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",  # very deep 
+        "angelokyly":    "c51f4c0e9e414d9eaf7c71effd5b92d2",  # very deep but dramatic (80s animes)
         # https://fish.audio/app/m/4f2a0684dd0247dda68f339738c780e6/
         "le-narrateur":  "4f2a0684dd0247dda68f339738c780e6",  # slightly dramatic
          # https://fish.audio/app/m/6e10fb8946b34ba6bec447789ccdc3de/
-        "stoic-2":       "6e10fb8946b34ba6bec447789ccdc3de",  # Voix stoïc 2 — FAVOURITE
+        "stoic-2":       "6e10fb8946b34ba6bec447789ccdc3de",  # Voix stoïc 2 — slow, 80s animes
         # https://fish.audio/app/m/13a86cbd38904d96b965282dd32b8113/
-        "lucas-dupont":  "13a86cbd38904d96b965282dd32b8113",  # "Lucas Dupont yt" — canada-multipolar FR
+        "lucas-dupont":  "13a86cbd38904d96b965282dd32b8113",  # "Lucas Dupont yt" young — canada-multipolar FR
         # Found 2026-09-06 while looking for a male voice less heavy than
         # stoic-2, which Peggy finds "sometimes too deeply dramatic" over a long
         # report. All three are French-language models despite the last title.
         # https://fish.audio/fr/app/m/3411db31b6df47b2b9441024baf7c8f1/
-        "flork":         "3411db31b6df47b2b9441024baf7c8f1",  # "11Flork2" — Peggy: "a really nice one"
+        "flork":         "3411db31b6df47b2b9441024baf7c8f1",  # "11Flork2" — Peggy: "a really nice one" very good but sometimes background noise at start up
         # https://fish.audio/app/m/755a3c914978420589431b9ee466a59c/
-        "militaire":     "755a3c914978420589431b9ee466a59c",  # "Voix Militaire Narrateur"
+        "militaire":     "755a3c914978420589431b9ee466a59c",  # "Voix Militaire Narrateur" - potentiall next fav
         # https://fish.audio/app/m/ed6e038bcc154c409f1f53be55046dc4/
         # Titled "Voz Sincera Portuguesa" but registered as a FRENCH model. The
         # title describes the speaker, not the language — do not read it as
@@ -359,8 +363,23 @@ def _fr_spell_decimal_any(match) -> str:
     w = int(re.sub(r'\D', '', whole))
     if w >= 1_000_000:
         return match.group(0)
-    frac_words = ' '.join(_FR_UNITS[int(d)] for d in frac)
-    return f'{_fr_block_liaison(fr_number(w))} virgule {frac_words}'
+    return f'{_fr_block_liaison(fr_number(w))} virgule {_fr_fraction(frac)}'
+
+
+def _fr_fraction(frac: str) -> str:
+    """The part after the comma, read as French does: a NUMBER, not digits.
+
+    "82,16" is "quatre-vingt-deux virgule seize", not "... virgule un six".
+    Reading it digit by digit is the English convention and was simply wrong
+    (caught by ear 2026-09-07). Leading zeros keep their "zéro", because
+    "80,03" is "quatre-vingts virgule zéro trois" — the zero is spoken.
+    """
+    zeros = len(frac) - len(frac.lstrip('0'))
+    rest = frac.lstrip('0')
+    words = ['zéro'] * zeros
+    if rest:
+        words.append(fr_number(int(rest)))
+    return ' '.join(words) if words else 'zéro'
 
 
 def _fr_spell_decimal(match) -> str:
@@ -369,8 +388,8 @@ def _fr_spell_decimal(match) -> str:
     w = int(re.sub(r'\D', '', whole))
     if w >= 1_000_000:
         return match.group(0)
-    frac_words = ' '.join(_FR_UNITS[int(d)] for d in frac)
-    return f'{_fr_block_liaison(fr_number(w))} virgule {frac_words} {unit}'
+    return (f'{_fr_block_liaison(fr_number(w))} virgule '
+            f'{_fr_fraction(frac)} {unit}')
 # ---------------------------------------------------------------------------
 # LOCAL FIXES — one paragraph, one replacement
 #
@@ -657,6 +676,15 @@ SUBSTITUTIONS = {
         # losing the range entirely. The lookarounds exclude a year touching a
         # hyphen on either side (caught by ear 2026-09-07).
         (r'(?<![\d.-])(?<!\d,)19\d{2}(?![\d.]|,\d|-\d)', _fr_spell_year, 'twentieth-century year'),
+        # A hyphen between two years is read as "moins". A COMMA replaces it:
+        # tested against both meanings and it is the only treatment that works
+        # for both (Peggy, 2026-09-07) —
+        #   fiscal year  "l'exercice 2025-2026"  ONE year, not a span
+        #   true span    "les relevés de 2001-2002"
+        # "à" is right for the span and WRONG for the fiscal year, so it could
+        # never be global; a bare space failed on both. The comma gives a pause
+        # where the hyphen was, which reads correctly either way.
+        (r'(?<=\d)-(?=\d{4}\b)', ', ', 'year range'),
         # Any decimal, not just those before "milliards": "6,6 %" lost its comma
         # entirely and was read "six six", while "2,8 %" was fine — the engine
         # varying. Spelling "virgule" removes the choice. The % sign is left
@@ -966,6 +994,22 @@ MEANING_CRITICAL = {
 }
 
 
+def needle_matches(needle: str, block: str) -> bool:
+    """Substring by default; EXACT when the needle starts with "=".
+
+    A one-word title cannot be targeted by substring — "Langue" also appears in
+    "deux langues officielles" and three other paragraphs. "=Langue" matches only
+    the block that IS that word, which is what a title is.
+    """
+    needle = needle.strip()
+    if not needle:
+        return False
+    if needle.startswith("="):
+        target = needle[1:].strip().lower()
+        return block.lstrip("# ").strip().lower() == target
+    return needle.lower() in block.lower()
+
+
 def prepare_spoken_text(text: str, lang: str, verbose: bool = True,
                         voices: set[str] | None = None,
                         only: set[str] | None = None) -> str:
@@ -1243,9 +1287,17 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
     blocks = [b.strip() for b in re.split(r'\n\s*\n', text) if b.strip()]
 
     if pause_ms <= 0 or len(blocks) < 2 or not find_ffmpeg():
+        # BUG FIXED 2026-09-07. This shortcut used `voice_id`, which with
+        # --alternate is the DEFAULT voice, not either of the two chosen: a
+        # one-block section came out in adam-stone while every other section
+        # alternated correctly. It hit the USA baseline, which is a single
+        # paragraph — Peggy heard a British man where a US woman belonged, and I
+        # spent three exchanges verifying IDs instead of reading this branch.
+        # The lead voice is the first alternate whenever alternates are given.
+        lead_id = alternates[0][1] if alternates else voice_id
         plain = text.replace(HEADING_PREFIX, "")
         return join_mp3([
-            synthesize(batch, voice_id, model, api_key,
+            synthesize(batch, lead_id, model, api_key,
                        normalize=not args.no_normalize, bitrate=args.bitrate,
                        speed=args.speed, temperature=temperature)
             for batch in group_into_requests(plain, args.max_bytes)
@@ -1328,7 +1380,7 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         # needle, which is the safe reading of a single phrase.
         needles = ([n for n in args.reroll.split("|")] if args.reroll and "|" in args.reroll
                    else ([args.reroll] if args.reroll else []))
-        reroll = any(n.strip() and n.strip().lower() in spoken.lower() for n in needles)
+        reroll = any(needle_matches(n, spoken) for n in needles)
         if not args.no_cache and not reroll and cached.is_file():
             parts.append(cached.read_bytes())
             hits += 1
@@ -1749,7 +1801,7 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
                     block = block.strip()
                     if not block:
                         continue
-                    if any(n.strip() and n.strip().lower() in block.lower() for n in needles):
+                    if any(needle_matches(n, block) for n in needles):
                         total += 1
                         kind = "TITLE " if block.startswith("#") else "      "
                         flat = " ".join(block.lstrip("# ").split())
@@ -1832,7 +1884,9 @@ def main() -> int:
                              "is what is breaking a particular paragraph. Separate "
                              "several with | . Every other paragraph is untouched.")
     parser.add_argument("--reroll", metavar="TEXT",
-                        help="re-synthesise only paragraphs containing TEXT. Separate "
+                        help="re-synthesise only paragraphs containing TEXT. Prefix "
+                             "with = for an EXACT match, which is how you target a "
+                             "one-word title (=Langue). Separate "
                              "several targets with | — NOT commas, since prose is full "
                              "of them. For when the text is right but the reading came "
                              "out wrong: this engine is stochastic, so a second attempt "
