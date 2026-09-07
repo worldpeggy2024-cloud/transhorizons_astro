@@ -30,8 +30,10 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import re
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -102,6 +104,8 @@ VOICES = {
         "florence":    "7cefff1c89464d7dbc412482f909ec2d",  # Florence Scovel Shinn, lighter
         # https://fish.audio/app/m/7e4baf13677e4b95b5e25a60b9a717b4/
         "old-woman":   "7e4baf13677e4b95b5e25a60b9a717b4",  # softer — FAVOURITE
+        # https://fish.audio/app/m/fce31379a48945e69637267c7421f6c1/
+        "elderly-wisdom": "fce31379a48945e69637267c7421f6c1",  # "Elderly Wisdom". Untried on a full piece.
         # REJECTED 2026-08-12 — monotone, "really not pleasant to listen to".
         # Kept only so the already-generated tts-out/**/sarah/ files stay addressable.
         "sarah":       "933563129e564b19a115bedd57b7406a",
@@ -258,12 +262,12 @@ def _fr_below_100(n: int) -> str:
         if rest == 0:
             return _FR_TENS[ten] + ('s' if ten == 80 else '')
         if rest == 1 and ten != 80:
-            return f'{_FR_TENS[ten]} et un'
+            return f'{_FR_TENS[ten]}-et-un'
         return f'{_FR_TENS[ten]}-{_FR_UNITS[rest]}'
     # 70-79 and 90-99 count in twenties: soixante-dix, quatre-vingt-dix
     base, rest = (60, n - 60) if n < 80 else (80, n - 80)
     if rest == 11 and base == 60:
-        return 'soixante et onze'
+        return 'soixante-et-onze'
     return f'{_FR_TENS[base]}-{_FR_UNITS[rest]}'
 
 
@@ -282,23 +286,81 @@ def fr_number(n: int) -> str:
     return head if rest == 0 else f'{head} {fr_number(rest)}'
 
 
+def _fr_block_liaison(words: str) -> str:
+    """Insert an "h aspire" where French forbids liaison but the engine makes one.
+
+    The engine linked the t in "cent un" (no liaison in French) and in
+    "quatre-vingt-onze" - heard as "cenT-un", "quatre-vingT-onze". French blocks
+    liaison before an aspirated h ("les heros" is /le eRo/), and the engine
+    honours that: "cent hun" and "quatre-vingt-honze" both read correctly
+    (confirmed by ear 2026-09-07). The h is silent, so nothing else changes.
+
+    NOT applied to "vingt-et-un": there the t SHOULD be sounded.
+    """
+    # WITHDRAWN 2026-09-07, one day after it was added. It fixed the liaison in
+    # an isolated sentence and BROKE the number in a real paragraph: "cent hun"
+    # came out "cent une" — the normalizer read the invented word as "une". A
+    # respelling that is not a true homophone is a nudge, and a nudge can be
+    # re-interpreted. The liaison fault it targeted is stochastic anyway (the
+    # plain "cent huit" passed), so the right tool is --reroll, not a rule.
+    #
+    # Kept as a no-op rather than deleted: the h-aspiré idea is sound French and
+    # may be worth retrying if a future engine honours it. The evidence that it
+    # did not is the point of this comment.
+    #
+    # SETTLED NEGATIVELY 2026-09-07. Five spellings of "cent un" were tried in
+    # the real sentence — cent hun, cent-hun, cent un, cent-un — and EVERY one
+    # made the liaison ("cent'un" for /sɑ̃ œ̃/). The engine liaises after "cent"
+    # whatever the orthography. This is a limit, not a missing rule: do not open
+    # another round on it. Accept it, or avoid the construction in the text.
+    return words
+
+
 def _fr_spell_int(match) -> str:
     """Spell an integer that ends in 1 — the shape the engine gets wrong."""
     raw = match.group(0)
     digits = re.sub(r'\D', '', raw)
-    # ONLY numbers ending in 1. Everything else the engine reads correctly, and
-    # spelling it out would rewrite most of the report for no gain — every
-    # figure would change its cache key and re-synthesise.
-    if not digits.endswith('1'):
+    # ONLY the number families the engine actually gets wrong. Narrowed
+    # 2026-09-07 after Peggy tried "101 milliards" directly in Fish Audio and it
+    # read PERFECTLY as digits — while our spelled "cent un" liaised. Spelling
+    # was creating the fault it was meant to prevent.
+    #
+    # Broken as digits, per her ear:  81 "quatre-vingt-TUN", 91
+    # "quatre-vingt-TONZE", and the -et-un tens (21..71) which pause before "et".
+    # Correct as digits: 101, 201, 1001 — hundreds plus one. So the test is the
+    # last TWO digits, not the last one.
+    if digits[-2:] not in {'21', '31', '41', '51', '61', '71', '81', '91'}:
         return raw
     n = int(digits)
-    # Years read correctly and are better left as digits: spelling 2021 gives a
-    # long "deux mille vingt et un" where the engine already says it well.
+    # 20xx years read correctly as digits and spelling them would rewrite most
+    # of the report for nothing. 19xx is different: the engine pauses after
+    # "mille" ("mille… neuf cent quarante-huit"), so those are spelled — see the
+    # separate rule below, which is why they are excluded here too.
     if 1900 <= n <= 2100 and len(digits) == 4:
         return raw
     if n >= 1_000_000:
         return raw
-    return fr_number(n)
+    return _fr_block_liaison(fr_number(n))
+
+
+def _fr_spell_year(match) -> str:
+    """Spell a 1900s year, fully hyphenated.
+
+    Spaces were not enough: "mille neuf cent quarante-huit" still broke after
+    "mille" (heard 2026-09-07). Hyphens throughout are the 1990 rectified
+    spelling and give the engine nothing to break on.
+    """
+    return _fr_block_liaison(fr_number(int(match.group(0)))).replace(' ', '-')
+
+
+def _fr_spell_decimal_any(match) -> str:
+    """"6,6" -> "six virgule six", whatever follows it."""
+    whole, frac = match.group(1), match.group(2)
+    w = int(re.sub(r'\D', '', whole))
+    if w >= 1_000_000:
+        return match.group(0)
+    frac_words = ' '.join(_FR_UNITS[int(d)] for d in frac)
+    return f'{_fr_block_liaison(fr_number(w))} virgule {frac_words}'
 
 
 def _fr_spell_decimal(match) -> str:
@@ -308,7 +370,91 @@ def _fr_spell_decimal(match) -> str:
     if w >= 1_000_000:
         return match.group(0)
     frac_words = ' '.join(_FR_UNITS[int(d)] for d in frac)
-    return f'{fr_number(w)} virgule {frac_words} {unit}'
+    return f'{_fr_block_liaison(fr_number(w))} virgule {frac_words} {unit}'
+# ---------------------------------------------------------------------------
+# LOCAL FIXES — one paragraph, one replacement
+#
+# The unit that actually works with this engine. A global rule cannot: the model
+# reads the same word differently depending on the surrounding text, so a
+# respelling that rescues one paragraph breaks another, and every such change
+# means re-listening to audio already approved.
+#
+# Lives in content/narration-fixes.json so a fix survives regeneration. Applied
+# AFTER the substitution table and only inside the paragraph it names, so it can
+# also override a global rule locally.
+# ---------------------------------------------------------------------------
+
+LOCKS_FILE = Path("content") / "narration-locks.json"
+
+
+def load_locks(piece: str) -> list[dict]:
+    """Paragraphs whose approved audio must never be re-synthesised.
+
+    A lock records the cache key of a take Peggy has accepted. If the spoken text
+    later changes — a rule added, a local fix, a typography pass — the block would
+    normally become a cache miss and be re-recorded, replacing an approved reading
+    with a fresh roll of the dice. A lock copies the approved audio onto the new
+    key instead, so the paragraph survives every regeneration unchanged.
+
+    This is the whole point: the engine is not consistent, so a paragraph that is
+    RIGHT is a result, not a reproducible state. Locking is how a result is kept.
+    """
+    if not LOCKS_FILE.is_file():
+        return []
+    try:
+        data = json.loads(LOCKS_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise FishError(f"{LOCKS_FILE} is not valid JSON: {exc}") from exc
+    return (data.get("locked") or {}).get(piece, [])
+
+
+def honour_lock(block: str, key: str, locks: list[dict]) -> str | None:
+    """If this block is locked, put the approved audio at `key`. Returns a note."""
+    for lock in locks:
+        where = str(lock.get("where", "")).strip()
+        if not where or where.lower() not in block.lower():
+            continue
+        approved = str(lock.get("key", ""))
+        if not approved:
+            continue
+        src = CACHE_DIR / approved[:2] / f"{approved}.mp3"
+        dst = CACHE_DIR / key[:2] / f"{key}.mp3"
+        if dst.is_file():
+            return None                      # already current, nothing to do
+        if not src.is_file():
+            return f"LOCK BROKEN — approved audio missing for: {where[:40]}"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, dst)
+        return f"kept approved take: {where[:40]}"
+    return None
+
+LOCAL_FIXES_FILE = Path("content") / "narration-fixes.json"
+
+
+def load_local_fixes(piece: str) -> list[dict]:
+    """Fixes for one piece, e.g. "countries/CAN/fr"."""
+    if not LOCAL_FIXES_FILE.is_file():
+        return []
+    try:
+        data = json.loads(LOCAL_FIXES_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise FishError(f"{LOCAL_FIXES_FILE} is not valid JSON: {exc}") from exc
+    return (data.get("fixes") or {}).get(piece, [])
+
+
+def apply_local_fixes(block: str, fixes: list[dict]) -> tuple[str, list[str]]:
+    """Apply every fix whose "where" matches this paragraph. Returns (text, notes)."""
+    notes = []
+    for fix in fixes:
+        where = str(fix.get("where", "")).strip()
+        if not where or where.lower() not in block.lower():
+            continue
+        for written, spoken in (fix.get("replace") or {}).items():
+            if written in block:
+                block = block.replace(written, spoken)
+                notes.append(f"{written} -> {spoken}")
+    return block, notes
+
 # ---------------------------------------------------------------------------
 # SPOKEN-TEXT SUBSTITUTIONS
 #
@@ -336,6 +482,24 @@ def _fr_spell_decimal(match) -> str:
 # so every paragraph containing that word re-synthesises on the next run. Do not
 # add a row for a reading that has already been accepted: it buys nothing and
 # replaces an approved take with a fresh roll of the dice.
+#
+# A RESPELLING IS A BIAS, NOT A GUARANTEE — and an isolated test cannot prove
+# one. Demonstrated on "Yukon" (2026-09-07): three rounds of variants, and in the
+# last round the PLAIN SPELLING passed — the very spelling whose failure started
+# the search. Peggy: "it clearly depends on the whole context."
+#
+# The engine settles into a contour per REQUEST, and the request is the whole
+# paragraph. A four-word test sentence is a different request from a 1,300-
+# character paragraph, so a variant can pass alone and fail in place, or the
+# reverse. Consequences for how to use this table:
+#   - Test in the REAL paragraph whenever the word only fails there.
+#   - Include the current spelling as a variant. If it passes, the fault was
+#     stochastic and the answer is --reroll, not a new row.
+#   - A rule that fails once is not thereby disproved; neither is one that
+#     passes once thereby proved.
+# Where a respelling is phonetically unambiguous in the target language it is
+# still worth having ("amplifié" for "amplifier" is a homophone, so it cannot be
+# wrong). Where it is a nudge, expect to reroll occasionally anyway.
 # ---------------------------------------------------------------------------
 
 SUBSTITUTIONS = {
@@ -413,9 +577,9 @@ SUBSTITUTIONS = {
         # stay in the YAML and on the page. Confirmed by Peggy 2026-08-17.
         # Only the noun's gender decides this, so each entry is deliberate
         # rather than a general rule — a wrong guess would speak bad French.
-        (r'\b31 installations\b', 'trente et une installations', 'feminine number'),
+        (r'\b31 installations\b', 'trente-et-une installations', 'feminine number'),
         (r'\b381 mégatonnes\b', 'trois cent quatre-vingt-une mégatonnes', 'feminine number'),
-        (r'\b41 régions\b', 'quarante et une régions', 'feminine number'),
+        (r'\b41 régions\b', 'quarante-et-une régions', 'feminine number'),
         # "relevant" (participle of relever) comes out as "relavant". A plain
         # mispronunciation, not an English reading — the vowel in the unstressed
         # first syllable is what goes wrong, and spelling it "eu" fixes it.
@@ -436,7 +600,33 @@ SUBSTITUTIONS = {
         # word, not just the ending: the engine's France reading starts at the
         # first vowel, so patching the tail alone did not carry.
         (r'\bNunavut\b', 'Nounavoute', 'place name, Québec pronunciation'),
-        (r'\bYukon\b', 'Youkon', 'place name, Québec pronunciation'),
+        # Yukon -> the Quebec reading /jukO~/, nasal, no final vowel.
+        # Three rounds: "Youkon" passed alone but gave "Yukone" in a paragraph;
+        # "Youcond" sounded the d. "-nds" is the reliably silent cluster in
+        # French (grands, fonds), so both consonants go quiet and only the nasal
+        # is left (2026-09-07).
+        (r'\bYukon\b', 'Youconds', 'place name, Quebec pronunciation'),
+        # Chosen by ear 2026-09-07. Where Peggy said "any", the plain spelling
+        # also passed IN THE TEST — but it is what failed in the report, and a
+        # short test sentence is a different request from a long paragraph. A
+        # respelling makes the reading deterministic instead of a dice roll.
+        #
+        # "provinciaux": the engine read the nasal "in" as /in/ — "proveenciaux".
+        (r'\bprovinciaux\b', 'provinnciaux', 'nasal vowel'),
+        (r'\bProvinciaux\b', 'Provinnciaux', 'nasal vowel'),
+        # "amplifier" came out "amplifiir", the -er read as English. In French
+        # amplifier / amplifié / amplifiez are HOMOPHONES, so this respelling
+        # costs nothing at all: same sound, no invention.
+        (r'\bamplifier\b', 'amplifié', 'infinitive read as English'),
+        # "Vancouveer" — the final syllable lengthened. The grave accent fixes it
+        # to /vɛʁ/.
+        (r'\bVancouver\b', 'Vancouvère', 'place name'),
+        # Manitoba: the trailing h keeps the final a sounded rather than swallowed.
+        (r'\bManitoba\b', 'Manitobah', 'place name'),
+        # Toronto has NO rule: every respelling passed the isolated test, and
+        # the doubled n I first chose produced the audible n Peggy did NOT want
+        # — she wants the nasal, which the plain spelling gives. My inference
+        # was wrong, not the test (2026-09-07).
 
         # ── CAN report, French pass 2026-09-06 ───────────────────────────────
         # Negative figures: same fault as English, but the French table never
@@ -454,7 +644,42 @@ SUBSTITUTIONS = {
          _fr_spell_decimal, 'decimal figure'),
         # Integers ending in 1 — the phantom liaison ("quatre-vingt-TUN").
         # Masculine; the feminine cases are hardcoded above and run first.
-        (r'(?<![\d,.])\d+(?![\d,.])', _fr_spell_int, 'number ending in 1'),
+        # The alternation matters: a grouped number (8 891) must match WHOLE.
+        # Matching \d+ alone caught "8" and "891" separately and spelled only
+        # the second — "8 huit cent quatre-vingt-onze" (caught by ear 2026-09-07).
+        (r'(?<![\d.])(?<!\d,)(?:\d{1,3}(?:[\s  ]\d{3})+|\d+)(?![\d.])(?!,\d)',
+         _fr_spell_int, 'number ending in 1'),
+        # 19xx years: the engine breaks after "mille" ("mille… neuf cent
+        # quarante-huit"). Spelling it removes the pause. 20xx is deliberately
+        # left as digits — "deux mille vingt-quatre" reads correctly and spelling
+        # every date would rewrite most of the report.
+        # NOT inside a range: "1961-1990" was spelled as one run-on word,
+        # losing the range entirely. The lookarounds exclude a year touching a
+        # hyphen on either side (caught by ear 2026-09-07).
+        (r'(?<![\d.-])(?<!\d,)19\d{2}(?![\d.]|,\d|-\d)', _fr_spell_year, 'twentieth-century year'),
+        # Any decimal, not just those before "milliards": "6,6 %" lost its comma
+        # entirely and was read "six six", while "2,8 %" was fine — the engine
+        # varying. Spelling "virgule" removes the choice. The % sign is left
+        # alone; the engine says "pour cent" correctly.
+        (r'(?<![\d.])(?<!\d,)(\d[\d\s  ]*),(\d+)(?![\d.])(?!,\d)', _fr_spell_decimal_any,
+         'decimal figure'),
+        # "multiculturalisme" lost its middle "a" — "multiculturlisme". The
+        # morpheme boundary restores it.
+        (r'\bmulticulturalisme\b', 'multi-culturalisme', 'swallowed vowel'),
+        # pergélisol: the single s between vowels is read /z/. Doubling it is
+        # standard French orthography for /s/ (poisson vs poison), so this is a
+        # GUARANTEED fix, not a nudge — it cannot be re-interpreted.
+        (r'\bpergélisol\b', 'pergélissol', 'intervocalic s read as z'),
+        (r'\bPergélisol\b', 'Pergélissol', 'intervocalic s read as z'),
+        # "Climate Action Tracker" — an English organisation name read as French,
+        # which makes it unrecognisable to anyone who knows it. Respelled in French
+        # orthography to approximate the ENGLISH sounds: "aï" carries the long i
+        # that a plain "i" never would, and "-eur" is how French says the agent
+        # ending anyway. Spelling chosen by Peggy ("Klaïmèt", not "Klaïmeut"). FRENCH TABLE ONLY — the English reports say the name in
+        # English and must not be touched. It recurs in every climate report, which
+        # is why this one IS global (Peggy, 2026-09-07).
+        (r'\bClimate Action Tracker\b', 'Klaïmèt Akcheun Trackeur',
+         'English organisation name'),
     ],
     "en": [
         # "kilometre" collapses to "kimeter" / "kinometer" / "kalibmeter" in
@@ -730,8 +955,20 @@ def expand_iso_dates(text: str, lang: str) -> tuple[str, int]:
     return _ISO_DATE.sub(replace, text), count
 
 
+# Rules that change WHAT THE WORDS ARE, as opposed to how they are said. These
+# are kept even under --plain: a unit left unread or a decimal without its
+# "virgule" is a defect a listener would act on, while a liaison is an accent.
+# Everything NOT in this set is a pronunciation nudge — helpful on average,
+# harmful in particular paragraphs, and the reason --plain exists.
+MEANING_CRITICAL = {
+    'unit', 'unit, singular', 'temperature unit', 'negative figure',
+    'decimal figure',
+}
+
+
 def prepare_spoken_text(text: str, lang: str, verbose: bool = True,
-                        voices: set[str] | None = None) -> str:
+                        voices: set[str] | None = None,
+                        only: set[str] | None = None) -> str:
     """Apply the substitution table and date expansion. Never touches source files.
 
     A rule may carry a fourth element: the set of VOICE NAMES it applies to.
@@ -753,8 +990,10 @@ def prepare_spoken_text(text: str, lang: str, verbose: bool = True,
 
     for rule in SUBSTITUTIONS.get(lang, []):
         pattern, replacement, why = rule[0], rule[1], rule[2]
-        only = rule[3] if len(rule) > 3 else None
-        if only is not None and not (voices and voices <= set(only)):
+        scope = rule[3] if len(rule) > 3 else None
+        if only is not None and why not in only:
+            continue
+        if scope is not None and not (voices and voices <= set(scope)):
             continue
         text, hits = re.subn(pattern, replacement, text)
         if hits:
@@ -999,7 +1238,7 @@ def splice_with_silence(parts: list[bytes], gaps: list[int], bitrate: int) -> by
 def render(text: str, voice_id: str, model: str, api_key: str, args,
            temperature: float, pause_ms: int, lang: str = 'en',
            alternates: list[tuple[str, str]] | None = None,
-           voice_name: str = '') -> bytes:
+           voice_name: str = '', piece_key: str = '') -> bytes:
     """One section of audio: paragraph pauses, and headings given weight."""
     blocks = [b.strip() for b in re.split(r'\n\s*\n', text) if b.strip()]
 
@@ -1020,6 +1259,7 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
     # event - is its own unit. That reproduces the natural item of each section
     # without needing a different rule per section.
     voices: list[tuple[str, str]] = alternates or [(voice_name, voice_id)]
+    locks = load_locks(piece_key) if piece_key else []
     # Sections that use headings alternate PER HEADING, so a subsection keeps
     # one voice however many paragraphs it runs to. Sections without headings
     # (baseline, situation) alternate per block, which is their natural item.
@@ -1075,6 +1315,9 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         digest.update(f"|{this_voice_id}|{model}|{this_temperature}|{speed}|{args.bitrate}"
                       f"|{not args.no_normalize}".encode("utf-8"))
         key = digest.hexdigest()
+        note = honour_lock(spoken, key, locks)
+        if note:
+            print(f"      lock: {note}", flush=True)
         cached = CACHE_DIR / key[:2] / f"{key}.mp3"
 
         # --reroll forces a fresh attempt at just the paragraphs that match.
@@ -1390,13 +1633,61 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
                       f"|{HEADING_PAUSE_BEFORE_MS}|{HEADING_PAUSE_AFTER_MS}".encode("utf-8"))
         return digest.hexdigest()
 
+    # --plain: paragraphs the substitution table must NOT touch.
+    #
+    # The rules are a net win across a report and a net LOSS in particular
+    # paragraphs — a respelling that helps one reading produces a liaison or a
+    # sounded consonant in another, because the engine is context-sensitive. When
+    # that happens the fix is not another rule: it is to hand the engine the
+    # words as written and let its own normaliser read them, which is often
+    # better (Peggy: "101 milliards is read perfectly by Flork in Fish Audio",
+    # while the spelled "cent un" liaised).
+    #
+    # Per paragraph, and nothing else changes: every other block keeps the exact
+    # spoken text — and therefore the exact cache entry — it already had.
+    plain_needles = ([n for n in args.plain.split("|")] if args.plain and "|" in args.plain
+                     else ([args.plain] if args.plain else []))
+    piece_key = str(manifest_path.parent).replace("\\", "/").replace("tts-text/", "")
+    local_fixes = load_local_fixes(piece_key)
+    local_applied: list[str] = []
+
     prepared, keys = {}, {}
     for section in sections:
         text = (base / section["text"]).read_text(encoding="utf-8").strip()
         if not args.raw:
-            text = prepare_spoken_text(
-                text, lang, verbose=False,
-                voices={n for n, _ in alternates} if alternates else {voice_name})
+            speakers = {n for n, _ in alternates} if alternates else {voice_name}
+            if plain_needles:
+                # Prepare block by block so the exempt ones can be left alone.
+                out = []
+                for block in re.split(r'(\n\s*\n)', text):
+                    if not block.strip():
+                        out.append(block)
+                    if not block.strip():
+                        out.append(block)
+                        continue
+                    exempt = any(n.strip() and n.strip().lower() in block.lower()
+                                 for n in plain_needles)
+                    prepped = prepare_spoken_text(
+                        block, lang, verbose=False, voices=speakers,
+                        only=MEANING_CRITICAL if exempt else None)
+                    prepped, notes = apply_local_fixes(prepped, local_fixes)
+                    for n in notes:
+                        local_applied.append(n)
+                    out.append(prepped)
+                text = "".join(out)
+            else:
+                out = []
+                for block in re.split(r'(\n\s*\n)', text):
+                    if not block.strip():
+                        out.append(block)
+                        continue
+                    prepped = prepare_spoken_text(block, lang, verbose=False,
+                                                  voices=speakers)
+                    prepped, notes = apply_local_fixes(prepped, local_fixes)
+                    for n in notes:
+                        local_applied.append(n)
+                    out.append(prepped)
+                text = "".join(out)
         prepared[section["id"]] = text
         keys[section["id"]] = generation_key(text)
 
@@ -1422,6 +1713,9 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
             )
         pending = [s for s in pending if s["id"].lower() in wanted]
 
+    if local_applied:
+        seen = sorted(set(local_applied))
+        print(f"  local fixes: {len(local_applied)} applied — {', '.join(seen)}")
     total_bytes = sum(s["bytes"] for s in pending)
     cost = total_bytes / 1_000_000 * PRICE_PER_MILLION_BYTES_USD
     print(f"\n{manifest_path}")
@@ -1477,7 +1771,8 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
               f"{'s' if blocks > 1 else ''})", flush=True)
         audio = render(text, voice_id, args.model, api_key, args,
                        temperature, args.paragraph_pause, lang,
-                       alternates=alternates, voice_name=voice_name)
+                       alternates=alternates, voice_name=voice_name,
+                       piece_key=piece_key)
         (out_dir / section["mp3"]).write_bytes(audio)
         # Record the hash only after a successful write, so an interrupted run
         # resumes rather than silently leaving a section unspoken.
@@ -1531,6 +1826,11 @@ def main() -> int:
                              "whose heading contains HEADING to the end of that "
                              "section. For when one voice cannot pronounce a word "
                              "the other can. Only meaningful with --alternate.")
+    parser.add_argument("--plain", metavar="TEXT",
+                        help="synthesise the paragraphs containing TEXT from the words "
+                             "AS WRITTEN, with no substitutions at all. For when a rule "
+                             "is what is breaking a particular paragraph. Separate "
+                             "several with | . Every other paragraph is untouched.")
     parser.add_argument("--reroll", metavar="TEXT",
                         help="re-synthesise only paragraphs containing TEXT. Separate "
                              "several targets with | — NOT commas, since prose is full "

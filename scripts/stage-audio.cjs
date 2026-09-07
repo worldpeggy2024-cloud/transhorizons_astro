@@ -49,6 +49,7 @@ const VOICE_LABELS = {
   laura: 'Laura (deep)',
   florence: 'Florence (lighter)',
   'old-woman': 'Old Woman (softer)',
+  'elderly-wisdom': 'Elderly Wisdom',
   sarah: 'Sarah (rejected)',
   // French — male
   angelokyly: 'angelokyly (deep)',

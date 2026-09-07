@@ -1,0 +1,56 @@
+{
+  "_comment": [
+    "LOCAL pronunciation fixes: a replacement that applies to ONE paragraph and",
+    "nowhere else. This is the right unit for this engine.",
+    "",
+    "A global rule cannot work here, and three days proved it: the model reads the",
+    "same word differently depending on what surrounds it, so a respelling that",
+    "rescues one paragraph creates a fault in another — and every such change sends",
+    "Peggy back to audio she had already approved. Vancouver is read correctly in",
+    "some paragraphs and as 'Vancouveer' in others. There is nothing to generalise.",
+    "",
+    "Shape:",
+    "  \"<piece key>\": [ { \"where\": \"<opening words of the paragraph>\",",
+    "                     \"replace\": { \"<written>\": \"<what to send the engine>\" } } ]",
+    "",
+    "\"where\" is a substring of the paragraph, matched case-insensitively — the same",
+    "kind of needle as --reroll. \"replace\" is applied ONLY inside that paragraph.",
+    "The source YAML is never touched: this changes what the engine hears, never",
+    "what a reader sees.",
+    "",
+    "These survive regeneration. Add a line when you hear a fault, and it stays",
+    "fixed without any risk to the rest of the report."
+  ],
+  "fixes": {
+    "countries/CAN/fr": [
+      {
+        "where": "Le Canada occupe près de 10 millions",
+        "replace": {
+          "Vancouver": "Vancouvère"
+        },
+        "why": "read as Vancouveer in this paragraph; correct elsewhere"
+      },
+      {
+        "where": "Le Canada se réchauffe à environ deux fois",
+        "replace": {
+          "1961-1990": "1961 à 1990"
+        },
+        "why": "the engine reads the hyphen in a year range as \"moins\""
+      },
+      {
+        "where": "Le pays a produit 623 térawattheures",
+        "replace": {
+          "Youconds": "Yukon"
+        },
+        "why": "Youconds sounds its final consonant HERE. Saskatchewan is NOT overridden: Sasskatchouane is a long-established global rule (2026-08-16) because French voices almost never read the name correctly — that one is not context-dependent."
+      },
+      {
+        "where": "Par secteur économique en 2024",
+        "replace": {
+          "quatre-vingt-un": "quatre-vin-un"
+        },
+        "why": "81 read as \"quatre-vingt-T-un\" — a phantom liaison every model makes, including in Fish Audio directly. Dropping the silent gt removes the consonant it was latching onto. Peggy's suggestion."
+      }
+    ]
+  }
+}

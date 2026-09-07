@@ -1,0 +1,198 @@
+{
+  "locked": {
+    "countries/CAN/fr": [
+      {
+        "where": "Le pays a produit 623 térawattheures",
+        "key": "f7b2e09a1fec41ebcfeaa8e46d2817bae447438f8896c696c369bdb9810d15dc",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Territoire",
+        "key": "9e88b002f79986a87d9c7dcc3619e7c6a92ad2ba26dce14e83d38e04af88322c",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Géographie",
+        "key": "de95f36cf4d525c25e131c5cdda1d4c9477733ad4685531585955e54fce0d3b5",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Deuxième pays du monde en superficie, le Canada s'étend d'un",
+        "key": "8ac52c9f55ef83c233d23c06668e1cdb18ac5f1a775ff9aead4b9c2ad7dc1f72",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada occupe près de 10 millions de kilomètres carrés ha",
+        "key": "820ab38ca1f53589d8ca5ff7ec440ebb8aca0b9cc890836ecf845596a8b3195d",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Biosphère",
+        "key": "34610add471fced0f1856fc6576f3448003c30f42e81a4135994342ec39d77d9",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La base biologique du Canada figure parmi les plus vastes ri",
+        "key": "6959ce516360bc5461beb8756b8911efd9d9a6099cdd7be171f6adea90cad83f",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les forêts couvrent 369 millions d'hectares, soit près de 9 ",
+        "key": "abe4ce43f2dbda77bf6a9a5b6d21ad1517a60059a675ede78a60af63d6dd7771",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada détient environ 20 % des réserves mondiales d'eau ",
+        "key": "2e3acb230942d50248c7b36dc6650123d423830a8ed76b454111b196f5c7a6e2",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les terres arables sont la composante rare de cette base de ",
+        "key": "1286a86995b9a61d660d73bed33fcaa579cde2fecfa0d0519e580761fce36b5b",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les pêches sont dans l'état le plus fragile. Sur 199 stocks ",
+        "key": "eba2f41b15504e26f1dfef88f1e4ab5ac3bc5f4cfca66cd12099d2be56e3131c",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Minéraux",
+        "key": "7d557dd2edde8f231cdf0e7d794639caffb79a0a3a91516480dc203411cf11b8",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les ressources du sous-sol canadien sont vastes plutôt que s",
+        "key": "82387135a0970cc7e43de44694d29212011bebec781a9c300aa2a528c9ecfddf",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les réserves sont concentrées sur quelques matières première",
+        "key": "6c848a83f9c4612bdb171439a17af9cab6bcb18252497fe03569446a8aec94e4",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cette dotation est répartie par région : la Colombie-Britann",
+        "key": "86836ed5aea94a7ebfd24b5e5704f6ed7e3b4e5ead14dde00e8fe70a6af5ced2",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Climat",
+        "key": "0b2d947aa680496ebd7325352434d2248e6be37182dc43a1edb3c487b56e6a5f",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le climat de fond du Canada est froid et nettement continent",
+        "key": "ff5778db44e380f044099e319d68c578bac783fa1f0e286273472b38bc5cf0a1",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada se réchauffe à environ deux fois le rythme moyen m",
+        "key": "cdb313dacae7a754713c173ca5c4db692149ce64eb0749fa336959c6c52568df",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'exposition est inégalement répartie. Le réchauffement prod",
+        "key": "bf6667bfcf7e12c4f5689f8892d1ac5ab1e93bab442a109d7d8cd7f2f67f375c",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'Institut climatique du Canada estime les dommages annuels ",
+        "key": "85a97f3ff7bbd58662a550afcfc26c8d438a53e1fa57619ca8ebe347f5d541f3",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La capacité d'adaptation n'est pas à la hauteur de cette exp",
+        "key": "20f9956cc7005bb5060ec15905b924f3ff0847c9d75cc2682cb8c7746a93997b",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Métabolisme",
+        "key": "c33bf538878c097c630aa243f2b58fd01742462643f802937d64c445c5c0c22a",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le métabolisme du Canada est dominé par l'énergie : une popu",
+        "key": "988899c628d9b4d262e8b59cce8ca387eddaa0a1cf89d8ae35b7531233914807",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'écoulement des eaux reflète la même tension nord-sud : env",
+        "key": "c656c28dc55713f912e6288bad01771ddb28a0f8a3717188c49acb536cf4c920",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le pays a produit 623 térawattheures d'électricité en 2024, ",
+        "key": "f7b2e09a1fec41ebcfeaa8e46d2817bae447438f8896c696c369bdb9810d15dc",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La géographie des réseaux découle de la distance. Une seule ",
+        "key": "51bc9ddbc93fd67dfe2fb97dc87044e9a4749a5ce7d2a10126effa90a1c006b2",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'approvisionnement alimentaire est largement autosuffisant ",
+        "key": "31ae2af8058af5cb1cd7354cb0e6a304e8568db2830199963e03b003a69405e4",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Transition",
+        "key": "e9b684ca7c854ad68b0ffbbd887ff99b67a1925396f27251394573399a93245d",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les émissions de gaz à effet de serre du Canada s'élevaient ",
+        "key": "6c96b33a0deb1101a7d7eaed6b28b09da4d4f95dd37ab2780d5d51f7968adc6e",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Par secteur économique en 2024 : pétrole et gaz 208 mégatonn",
+        "key": "988bdb01bb622f560eb9f9e18acece3b77f3e25a044fda045643bcd58ca8a030",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les cibles sont inscrites dans la loi par la Loi canadienne ",
+        "key": "eb494e69c9332124534b73636a178c6c8804b3d7c10db047ac2b412cec7d7b2e",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les politiques mises en œuvre ne permettent pas de les attei",
+        "key": "c7d76102f662a9cae27bd9655f6545b0b3ff47d789480819a77add42779f6103",
+        "section": "territory",
+        "voices": "reflechie-flork"
+      }
+    ]
+  }
+}
