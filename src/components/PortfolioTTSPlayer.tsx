@@ -44,19 +44,21 @@ const VOICE_LABELS: Record<string, string> = {
   'deep-voice': 'British narrator, deeper',
   ogechi: 'British narrator, female',
   'war-arsenal': 'American narrator',
-  laura: 'Narrator, female, deep',
-  florence: 'Narrator, female, lighter',
-  'old-woman': 'Narrator, female, softer',
+  laura: 'American narrator, female',
+  florence: 'American narrator, female, lighter',
+  'old-woman': 'American narrator, female, softer',
   // French
   angelokyly: 'Narrateur, voix grave',
   'le-narrateur': 'Narrateur, plus expressif',
+  'lucas-dupont': 'Narrateur',
   'annonce-calme': 'Narratrice, voix posée',
   ora: 'Narratrice, articulée',
   reflechie: 'Narratrice, voix réfléchie',
-  // Peggy's own clones — named as herself, since that is the point of using them
+  'irish-3': 'Irish narrator',
+  // Peggy's own clone — named as herself, since that is the point of using it.
+  // "peggy" here is the FRENCH clone; peggy-thoughtful is the English one.
   peggy: 'Peggy',
-  'peggy-warm': 'Peggy',
-  'peggy-analytical': 'Peggy',
+  'peggy-thoughtful': "Peggy — the author's voice",
 };
 
 function formatTime(seconds: number): string {

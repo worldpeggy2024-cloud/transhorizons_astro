@@ -100,15 +100,15 @@ sections:
       cadre de la langue :
 
 
-      • étudier des sujets peu familiers avant d'écrire à leur propos
+      • étudier des sujets peu familiers avant d'écrire à leur propos;
 
-      • suivre l'évolution des concepts d'une discipline à l'autre
+      • suivre l'évolution des concepts d'une discipline à l'autre;
 
       • reconnaître la manière dont les institutions expliquent l'incertitude et
-      la complexité
+      la complexité;
 
       • aborder l'information avec rigueur et prudence plutôt que de tirer des
-      conclusions hâtives
+      conclusions hâtives.
 
 
       Plutôt que de considérer la traduction comme une expertise dans un domaine
@@ -116,6 +116,8 @@ sections:
       formation de longue durée à la **curiosité intellectuelle et à l'enquête
       rigoureuse**.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: A Growing Interest in Research and Understanding
     title_fr: Intérêt croissant pour la recherche et la compréhension
     content_en: >-
@@ -138,8 +140,8 @@ sections:
 
 
       This collaboration with Canadian public institutions offers a privileged
-      vantage point, not as a decision-maker, but as an observer accompanying the
-      production of public knowledge.
+      vantage point, not as a decision-maker, but as an observer accompanying
+      the production of public knowledge.
 
 
       Repeated exposure to statistical analysis, resource policy discussions,
@@ -164,9 +166,9 @@ sections:
       move closer to the processes of researching, understanding, and explaining
       rather than remaining solely in the role of linguistic intermediary.
     content_fr: >-
-      La traduction à long terme dans le secteur institutionnel crée une exposition
-      interdisciplinaire exceptionnelle. Les traducteurs au service de
-      différents ministères passent constamment d’un domaine à l’autre, alors
+      La traduction à long terme dans le secteur institutionnel crée une
+      exposition interdisciplinaire exceptionnelle. Les traducteurs au service
+      de différents ministères passent constamment d’un domaine à l’autre, alors
       même que ces domaines sont souvent traités séparément dans les
       spécialisations universitaires ou professionnelles : économie,
       environnement, technologie, administration publique, énergie,
@@ -219,6 +221,8 @@ sections:
       linguistique.
     image: /images/IMG_3791Improved.JPG
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: From Language Work to Analytical Writing
     title_fr: Du travail linguistique à la rédaction analytique
     content_en: >-
@@ -270,6 +274,8 @@ sections:
 
       ancrées dans une observation attentive.
     imagePosition: right
+    imageLayout: single
+    images: []
   - title_en: Institutional Experience as Context, Not Authority
     title_fr: L'expérience institutionnelle comme contexte, non comme autorité
     content_en: >-
@@ -307,6 +313,8 @@ sections:
       modestement, la production et la communication de connaissances qui aident
       la société à comprendre des enjeux complexes.
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: 'Motivation: Curiosity and Public Contribution'
     title_fr: 'Motivation : curiosité et contribution publique'
     content_en: >-
@@ -351,9 +359,11 @@ sections:
       Si cette démarche réussit, ce sera sans doute par des contributions
       progressives plutôt que par un changement spectaculaire. Cette perspective
       me semble appropriée. Le savoir public progresse grâce à de nombreux
-      efforts modestes qui s’accumulent au fil du temps
+      efforts modestes qui s’accumulent au fil du temps.
     image: /images/WorldNetworkBlackBrightStretched.jpg
     imagePosition: left
+    imageLayout: single
+    images: []
   - title_en: Looking Forward
     title_fr: Regarder vers l’avenir
     content_en: >-
@@ -388,7 +398,7 @@ sections:
       d’instituts de recherche, d’organismes publics ou d’équipes d’analyse.
 
 
-      L'objectif est modeste mais sincère :
+      L'objectif est modeste, mais sincère :
 
 
       • continuer à apprendre;
@@ -398,6 +408,8 @@ sections:
       • contribuer, dans la mesure où cela peut être utile, à un dialogue public
       éclairé et à un avenir constructif.
     imagePosition: right
+    imageLayout: single
+    images: []
 keyTakeaways:
   - title_en: Institutional curiosity
     title_fr: Curiosité institutionnelle

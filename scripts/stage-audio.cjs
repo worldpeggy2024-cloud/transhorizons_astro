@@ -53,6 +53,10 @@ const VOICE_LABELS = {
   // French — male
   angelokyly: 'angelokyly (deep)',
   'le-narrateur': 'Le Narrateur (dramatic)',
+  'lucas-dupont': 'Lucas Dupont',
+  // English — other
+  'irish-3': 'Irish (library title "dggd" — find it by URL)',
+  'peggy-thoughtful': 'Peggy (Thoughtful Narrator)',
   // French — female
   'annonce-calme': 'Annonce Calme',
   ora: 'Ora (articulate)',

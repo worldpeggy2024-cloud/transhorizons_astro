@@ -109,6 +109,13 @@ const NOT_NARRATED = [
 function stripMarkers(text) {
   return String(text || '')
     .replace(/\[[^\]]*\]/g, '')
+    // Markdown emphasis. The page renders "**bold**" as bold; the engine read
+    // the asterisks ALOUD — "asterix asterix intellectual curiosity" (heard by
+    // Peggy in career-evolution EN, 2026-09-06). Pairs first, then any stray
+    // that is left, so an unbalanced marker cannot survive either.
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/\*/g, '')
     // French typography (narrow NBSP before « : » etc., inserted by
     // fix-fr-typography.cjs) is a VISUAL convention. Fold it to ordinary
     // spaces: the engine has no use for it, and leaving it in would make every

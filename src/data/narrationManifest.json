@@ -64,9 +64,19 @@
     "voice": "adam-stone",
     "seconds": 935
   },
+  "articles/canada-multipolar/en": {
+    "src": "/audio/articles/canada-multipolar/en/laura/01-article.mp3",
+    "voice": "laura",
+    "seconds": 707
+  },
   "articles/resource-civilization/fr": {
     "src": "/audio/articles/resource-civilization/fr/reflechie/01-article.mp3",
     "voice": "reflechie",
     "seconds": 906
+  },
+  "articles/canada-multipolar/fr": {
+    "src": "/audio/articles/canada-multipolar/fr/lucas-dupont/01-article.mp3",
+    "voice": "lucas-dupont",
+    "seconds": 675
   }
 }

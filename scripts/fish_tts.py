@@ -118,6 +118,12 @@ VOICES = {
         "shelb":          "5309a299f3ea4c538f39c31a407bcfe8",  # male ("Test shelb")
         # https://fish.audio/app/m/a2ed529cad824e76b0bfe5edda31bd93/
         "irish-narrator": "a2ed529cad824e76b0bfe5edda31bd93",  # female (Irish Cultural Narrator)
+        # https://fish.audio/app/m/7363bb5c99f744be9395234c83321640/
+        # Library title is "dggd" — meaningless, and searching it finds nothing.
+        # The URL is the ONLY handle on this voice; do not try to look it up by
+        # name. Offered on career-evolution EN as an alternative to Peggy's own
+        # voice (2026-09-06).
+        "irish-3":        "7363bb5c99f744be9395234c83321640",
 
         # ── Australia ────────────────────────────────────────────────────────
         # Directly usable: AUS is one of the thirteen country files.
@@ -132,16 +138,19 @@ VOICES = {
         # NOTES — first-person pieces where the voice IS hers and the accent is
         # the point. Country reports keep a neutral narrator whose accent suits
         # the country, so a clone never narrates one.
-        # Recorded 2026-08-15 in one sitting from ENGLISH source audio, so these
-        # carry her real accent. The FRENCH clone below is a different matter:
-        # trained only on French, it applies French phonology to English and
-        # comes out far heavier than she is ("really too much"). One clone per
-        # language, never one clone for both.
-        # Three reads rather than three voices — which suits which piece is
-        # Peggy's call, not something to infer from the titles.
-        "peggy":            "5ef647b1e30a4165a135076f258b7f04",  # Friendly Storyteller
-        "peggy-warm":       "8bd5735eec2f4a99b8f118ac35943239",  # Warm Conversational Voice
-        "peggy-analytical": "73e52cf94f334f50bc30965b9adb72b2",  # Analytical Narrator
+        # Recorded from ENGLISH source audio, so this carries her real accent.
+        # The FRENCH clone below is a different matter: trained only on French,
+        # it applies French phonology to English and comes out far heavier than
+        # she is ("really too much"). One clone per language, never one clone
+        # for both.
+        #
+        # The first three English clones (Friendly Storyteller, Warm
+        # Conversational, Analytical Narrator, all recorded 2026-08-15 in one
+        # sitting) were REMOVED at Peggy's request 2026-09-06, superseded by the
+        # recording below. Their takes under tts-out/**/peggy{,-warm,-analytical}/
+        # are therefore orphaned — nothing can address or regenerate them.
+        # https://fish.audio/app/m/048a6cbae79345a8a907899dec94ade5/
+        "peggy-thoughtful": "048a6cbae79345a8a907899dec94ade5",  # Thoughtful Narrator
     },
     "fr": {
         # male
@@ -182,7 +191,14 @@ VOICES = {
         # Both clones are PRIVATE and reachable only with this account's key —
         # keep them private. Intended for the NOTES only: first-person pieces in
         # her own voice, while the reports keep a neutral narrator.
-        "peggy":         "b31cd0e36a6d4e72864c4994cd1ec66e",
+        # https://fish.audio/app/m/db27d5fb158a484c9629c9f1b06531b7/
+        # "Voix Claire et Amicale", 2026-09-06 — REPLACES the earlier French
+        # clone "Voix Féminine Chaleureuse" (b31cd0e36a6d4e72864c4994cd1ec66e),
+        # superseded at Peggy's request. The slug is deliberately unchanged so
+        # the existing tts-out/**/fr/peggy/ folders keep their meaning; both FR
+        # Notes were regenerated with the new voice the same day, so nothing
+        # under that name is still the old recording.
+        "peggy":         "db27d5fb158a484c9629c9f1b06531b7",
     },
 }
 # "adrian" (US) was removed from the registry, so the English default moved to
@@ -248,6 +264,13 @@ SUBSTITUTIONS = {
         # "Sasskatchouane" reads cleanly and leaves its neighbours alone
         # (chosen by ear 2026-08-16 from six variants in the real sentence).
         (r'\bSaskatchewan\b', 'Sasskatchouane', 'place name'),
+        # Édimbourg — the final g is silent in French (/edɛ̃buʁ/); the engine
+        # sounded it. Dropping the letter is the whole fix.
+        (r'\bÉdimbourg\b', 'Édimbour', 'silent final consonant'),
+        # "pub" is a borrowing said /pœb/ in French, not with the English /ʌ/.
+        # "peub" spells that vowel. Word-bounded so publication, public and
+        # publique are untouched.
+        (r'\bpub(s?)\b', r'peub\1', 'English borrowing'),
         # ACEUM (Accord Canada–États-Unis–Mexique) is SAID AS LETTERS in French —
         # A-C-E-U-M — not as a word. Peggy's rule (2026-09-05). Note this is the
         # opposite of the English CUSMA, which she reads as a word ("KUZ-ma"):
@@ -395,6 +418,23 @@ SUBSTITUTIONS = {
         # — and it lives ONLY in the audio. The page, the SEO layer and the
         # French all keep the true spelling.
         (r'\bIqaluit\b', 'eekh-raloo-it', 'Iqaluit, chosen by ear'),
+        # Montréal — SCOPED to Peggy's own English clone (the fourth element).
+        # She says "montreeAL", the ordinary English reading; the engine was
+        # giving the French one on some mentions and not others inside the same
+        # piece. The accent is the signal: é tells it the word is French, and
+        # simply removing it restores the English reading — no invented
+        # spelling needed (chosen by ear over four alternatives, 2026-09-06).
+        #
+        # The INVERSE of the killometer case: there the engine mangled a word
+        # and a false spelling fixed it. Here it read the word CORRECTLY, as
+        # French, and the fix is to stop telling it the word is French.
+        #
+        # Scoped because the right answer depends on the speaker, not the word:
+        # this is her own Note about her own city. Montréal also appears in the
+        # English Canada report, which is approved and deployed — leave it be.
+        # Only the page keeps the accent either way; the source is never touched.
+        (r'\bMontréal\b', 'Montreal',
+         'Montréal, English reading', ['peggy-thoughtful']),
         # Van Assche — "van ASH", how Kristof Van Assche is addressed in North
         # America and lets stand. Without the rule the engine said it two ways
         # inside one paragraph: "Aski" on the first mention, correct on the
@@ -488,6 +528,29 @@ HEADING_SPEED_FACTOR = 1.0
 # closing the title off rather than introducing what follows (2026-08-16).
 # Scoped per language on purpose — the evidence is French-only.
 HEADING_TERMINAL = {"en": ".", "fr": ""}
+
+# PER-VOICE heading overrides. Deliberately NOT global: the language-level
+# settings above are approved and deployed across the country reports, and a
+# global change would mark every heading in every language stale to fix two
+# articles (Peggy, 2026-09-06: "Don't touch anything globally").
+#
+# Why one voice needs different settings at all: her French clone finishes LONG
+# titles on a rising intonation, as though the phrase were unfinished. The two
+# short ones ("Observations clés", "Réflexions clés") close correctly, so it is
+# length, not the words. Terminal punctuation alone did not fix it — the lever
+# that worked was TEMPERATURE. At 0.7 the engine is expressive, which is what
+# makes her prose good and what makes it invent a contour on a four-word
+# fragment; steadier is flatter, and flat is right for a title.
+#
+# Keyed by voice name. "terminal" replaces HEADING_TERMINAL for that voice,
+# "temperature" applies to HEADING BLOCKS ONLY — prose keeps the run's
+# temperature, so nothing about the reading of the article itself changes.
+VOICE_HEADING: dict[str, dict] = {
+    # Peggy's French clone. Chosen by ear 2026-09-06 from her real titles at
+    # three temperatures, with and without the stop: 0.1 + full stop closed them
+    # properly, 0.7 (the run default) left the long ones rising.
+    "peggy": {"terminal": ".", "temperature": 0.1},
+}
 HEADING_PAUSE_BEFORE_MS = 1100
 HEADING_PAUSE_AFTER_MS = 400
 
@@ -543,15 +606,32 @@ def expand_iso_dates(text: str, lang: str) -> tuple[str, int]:
     return _ISO_DATE.sub(replace, text), count
 
 
-def prepare_spoken_text(text: str, lang: str, verbose: bool = True) -> str:
-    """Apply the substitution table and date expansion. Never touches source files."""
+def prepare_spoken_text(text: str, lang: str, verbose: bool = True,
+                        voices: set[str] | None = None) -> str:
+    """Apply the substitution table and date expansion. Never touches source files.
+
+    A rule may carry a fourth element: the set of VOICE NAMES it applies to.
+    Unscoped rules (three elements) apply to every voice, which is right for a
+    mispronunciation — the word is wrong however it is read. Scoping exists for
+    the opposite case, where the "correct" reading depends on who is speaking:
+    Peggy's own clone says "Montréal" the way she says it, in her own Notes,
+    while a British narrator reading the Canada report should not.
+
+    A scoped rule applies only when EVERY voice in the run is listed. A duet
+    shares one prepared text but two speakers, so a rule true of one of them
+    cannot be applied to text the other will also read.
+    """
     changes: list[str] = []
 
     text, dates = expand_iso_dates(text, lang)
     if dates:
         changes.append(f"{dates} ISO date{'s' if dates > 1 else ''} spoken out")
 
-    for pattern, replacement, why in SUBSTITUTIONS.get(lang, []):
+    for rule in SUBSTITUTIONS.get(lang, []):
+        pattern, replacement, why = rule[0], rule[1], rule[2]
+        only = rule[3] if len(rule) > 3 else None
+        if only is not None and not (voices and voices <= set(only)):
+            continue
         text, hits = re.subn(pattern, replacement, text)
         if hits:
             changes.append(f"{hits}x {why}")
@@ -852,7 +932,8 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         )
         marker = SECTION_PREFIX if section_title else HEADING_PREFIX
         spoken = block[len(marker):].strip() if (heading or section_title) else block
-        terminal = HEADING_TERMINAL.get(lang, '')
+        override = VOICE_HEADING.get(this_voice_name, {})
+        terminal = override.get('terminal', HEADING_TERMINAL.get(lang, ''))
         if (heading or section_title) and terminal:
             # Kept configurable because the right answer changed. The full stop
             # was added when a heading ran inline into the text that followed
@@ -863,9 +944,11 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
             if spoken and spoken[-1] not in ".!?:":
                 spoken += terminal
         speed = round(args.speed * (HEADING_SPEED_FACTOR if (heading or section_title) else 1.0), 3)
+        this_temperature = (override.get('temperature', temperature)
+                            if (heading or section_title) else temperature)
 
         digest = hashlib.sha256(spoken.encode("utf-8"))
-        digest.update(f"|{this_voice_id}|{model}|{temperature}|{speed}|{args.bitrate}"
+        digest.update(f"|{this_voice_id}|{model}|{this_temperature}|{speed}|{args.bitrate}"
                       f"|{not args.no_normalize}".encode("utf-8"))
         key = digest.hexdigest()
         cached = CACHE_DIR / key[:2] / f"{key}.mp3"
@@ -885,7 +968,7 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         else:
             audio = synthesize(spoken, this_voice_id, model, api_key,
                                normalize=not args.no_normalize, bitrate=args.bitrate,
-                               speed=speed, temperature=temperature)
+                               speed=speed, temperature=this_temperature)
             cached.parent.mkdir(parents=True, exist_ok=True)
             cached.write_bytes(audio)
             parts.append(audio)
@@ -1187,7 +1270,9 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     for section in sections:
         text = (base / section["text"]).read_text(encoding="utf-8").strip()
         if not args.raw:
-            text = prepare_spoken_text(text, lang, verbose=False)
+            text = prepare_spoken_text(
+                text, lang, verbose=False,
+                voices={n for n, _ in alternates} if alternates else {voice_name})
         prepared[section["id"]] = text
         keys[section["id"]] = generation_key(text)
 
@@ -1231,6 +1316,28 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
         print(f"  cost       : ${cost:.2f}")
 
     if args.dry_run:
+        # With --reroll, show exactly WHICH blocks the needles hit. A needle is a
+        # substring match, so a title's words can also occur in the prose and
+        # quietly pull in paragraphs nobody asked for - that once rerolled ten
+        # instead of six. Cheap to check, expensive to discover afterwards.
+        if args.reroll:
+            needles = ([n for n in args.reroll.split("|")] if "|" in args.reroll
+                       else [args.reroll])
+            print(f"\n  --reroll would re-synthesise these blocks "
+                  f"({len(needles)} needle{'s' if len(needles) > 1 else ''}):")
+            total = 0
+            for section in pending:
+                for block in re.split(r'\n\s*\n', prepared[section["id"]]):
+                    block = block.strip()
+                    if not block:
+                        continue
+                    if any(n.strip() and n.strip().lower() in block.lower() for n in needles):
+                        total += 1
+                        kind = "TITLE " if block.startswith("#") else "      "
+                        flat = " ".join(block.lstrip("# ").split())
+                        print(f"    {kind}[{section['id']}] {flat[:64]}")
+            tail = "  - NOTHING MATCHED, check the needles" if not total else ""
+            print(f"    -> {total} block(s){tail}")
         print("\n  dry run — nothing sent.\n")
         return 0
     if not pending:
@@ -1370,7 +1477,7 @@ def main() -> int:
             print("  spoken-text: skipped (--raw)")
         else:
             # Done before costing, because substitutions change the byte count.
-            text = prepare_spoken_text(text, args.lang)
+            text = prepare_spoken_text(text, args.lang, voices={voice_name})
         report_cost(text, args.model)
 
         if args.dry_run:

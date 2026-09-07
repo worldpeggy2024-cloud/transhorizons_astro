@@ -82,6 +82,10 @@
         {
           "id": "adam-stone",
           "label": "Adam Stone (British)"
+        },
+        {
+          "id": "laura",
+          "label": "Laura (deep)"
         }
       ],
       "tracks": [
@@ -91,6 +95,13 @@
           "voice": "adam-stone",
           "src": "/audio/articles/resource-civilization/en/adam-stone/01-article.mp3",
           "seconds": 935
+        },
+        {
+          "id": "art-en-laura-canada-multipolar",
+          "label": "Canada in a Multipolar World",
+          "voice": "laura",
+          "src": "/audio/articles/canada-multipolar/en/laura/01-article.mp3",
+          "seconds": 707
         }
       ]
     },
@@ -101,6 +112,10 @@
         {
           "id": "reflechie",
           "label": "Voix Reflechie"
+        },
+        {
+          "id": "lucas-dupont",
+          "label": "Lucas Dupont"
         }
       ],
       "tracks": [
@@ -110,6 +125,13 @@
           "voice": "reflechie",
           "src": "/audio/articles/resource-civilization/fr/reflechie/01-article.mp3",
           "seconds": 906
+        },
+        {
+          "id": "art-fr-lucas-dupont-canada-multipolar",
+          "label": "Le Canada dans un monde multipolaire",
+          "voice": "lucas-dupont",
+          "src": "/audio/articles/canada-multipolar/fr/lucas-dupont/01-article.mp3",
+          "seconds": 675
         }
       ]
     }
