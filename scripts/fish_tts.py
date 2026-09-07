@@ -161,7 +161,19 @@ VOICES = {
          # https://fish.audio/app/m/6e10fb8946b34ba6bec447789ccdc3de/
         "stoic-2":       "6e10fb8946b34ba6bec447789ccdc3de",  # Voix stoïc 2 — FAVOURITE
         # https://fish.audio/app/m/13a86cbd38904d96b965282dd32b8113/
-        "lucas-dupont":  "13a86cbd38904d96b965282dd32b8113",  # "Lucas Dupont yt". Untried on a full piece.
+        "lucas-dupont":  "13a86cbd38904d96b965282dd32b8113",  # "Lucas Dupont yt" — canada-multipolar FR
+        # Found 2026-09-06 while looking for a male voice less heavy than
+        # stoic-2, which Peggy finds "sometimes too deeply dramatic" over a long
+        # report. All three are French-language models despite the last title.
+        # https://fish.audio/fr/app/m/3411db31b6df47b2b9441024baf7c8f1/
+        "flork":         "3411db31b6df47b2b9441024baf7c8f1",  # "11Flork2" — Peggy: "a really nice one"
+        # https://fish.audio/app/m/755a3c914978420589431b9ee466a59c/
+        "militaire":     "755a3c914978420589431b9ee466a59c",  # "Voix Militaire Narrateur"
+        # https://fish.audio/app/m/ed6e038bcc154c409f1f53be55046dc4/
+        # Titled "Voz Sincera Portuguesa" but registered as a FRENCH model. The
+        # title describes the speaker, not the language — do not read it as
+        # Portuguese.
+        "sincera":       "ed6e038bcc154c409f1f53be55046dc4",
         # female
         # https://fish.audio/app/m/651751df29b140ab9c791aef35dc8fc2/
         "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate, but monotone by nature
@@ -217,6 +229,86 @@ def resolve_voice(lang: str, name: str | None) -> tuple[str, str]:
         )
     return chosen, choices[chosen]
 
+# ---------------------------------------------------------------------------
+# FRENCH NUMBER SPELLING
+#
+# The engine mishandles French numbers ending in 1: it inserts a phantom liaison
+# ("81" as "quatre-vingt-TUN", "91" as "quatre-vingt-TONZE") and pauses oddly
+# before them. Writing the words removes the decision from the engine, which is
+# the same principle as "killometer" — spell what you want heard.
+#
+# GENDER: French "un/une" agrees with the noun, and that cannot be inferred from
+# the digits. This speller writes the MASCULINE. Feminine cases are handled by
+# explicit entries earlier in the table, which win because substitutions apply in
+# order: "31 installations", "381 mégatonnes", "41 régions". Add to those if a
+# new feminine noun appears; do not try to make the speller clever.
+_FR_UNITS = ['zéro', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept',
+             'huit', 'neuf', 'dix', 'onze', 'douze', 'treize', 'quatorze',
+             'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf']
+_FR_TENS = {20: 'vingt', 30: 'trente', 40: 'quarante', 50: 'cinquante',
+            60: 'soixante', 80: 'quatre-vingt'}
+
+
+def _fr_below_100(n: int) -> str:
+    if n < 20:
+        return _FR_UNITS[n]
+    if n < 70 or 80 <= n < 90:
+        ten = (n // 10) * 10
+        rest = n % 10
+        if rest == 0:
+            return _FR_TENS[ten] + ('s' if ten == 80 else '')
+        if rest == 1 and ten != 80:
+            return f'{_FR_TENS[ten]} et un'
+        return f'{_FR_TENS[ten]}-{_FR_UNITS[rest]}'
+    # 70-79 and 90-99 count in twenties: soixante-dix, quatre-vingt-dix
+    base, rest = (60, n - 60) if n < 80 else (80, n - 80)
+    if rest == 11 and base == 60:
+        return 'soixante et onze'
+    return f'{_FR_TENS[base]}-{_FR_UNITS[rest]}'
+
+
+def fr_number(n: int) -> str:
+    """Spell a non-negative integer below one million, masculine."""
+    if n < 100:
+        return _fr_below_100(n)
+    if n < 1000:
+        hundreds, rest = divmod(n, 100)
+        head = 'cent' if hundreds == 1 else f'{_FR_UNITS[hundreds]} cent'
+        if rest == 0:
+            return head + ('s' if hundreds > 1 else '')
+        return f'{head} {_fr_below_100(rest)}'
+    thousands, rest = divmod(n, 1000)
+    head = 'mille' if thousands == 1 else f'{fr_number(thousands)} mille'
+    return head if rest == 0 else f'{head} {fr_number(rest)}'
+
+
+def _fr_spell_int(match) -> str:
+    """Spell an integer that ends in 1 — the shape the engine gets wrong."""
+    raw = match.group(0)
+    digits = re.sub(r'\D', '', raw)
+    # ONLY numbers ending in 1. Everything else the engine reads correctly, and
+    # spelling it out would rewrite most of the report for no gain — every
+    # figure would change its cache key and re-synthesise.
+    if not digits.endswith('1'):
+        return raw
+    n = int(digits)
+    # Years read correctly and are better left as digits: spelling 2021 gives a
+    # long "deux mille vingt et un" where the engine already says it well.
+    if 1900 <= n <= 2100 and len(digits) == 4:
+        return raw
+    if n >= 1_000_000:
+        return raw
+    return fr_number(n)
+
+
+def _fr_spell_decimal(match) -> str:
+    """"27,2 milliards" -> "vingt-sept virgule deux milliards"."""
+    whole, frac, unit = match.group(1), match.group(2), match.group(3)
+    w = int(re.sub(r'\D', '', whole))
+    if w >= 1_000_000:
+        return match.group(0)
+    frac_words = ' '.join(_FR_UNITS[int(d)] for d in frac)
+    return f'{fr_number(w)} virgule {frac_words} {unit}'
 # ---------------------------------------------------------------------------
 # SPOKEN-TEXT SUBSTITUTIONS
 #
@@ -331,6 +423,38 @@ SUBSTITUTIONS = {
         (r'\brelevant\b', 'releuvant', 'mispronounced participle'),
         (r'\bémergents\b', 'émergeants', 'adjective, plural'),
         (r'(?<=[^sxSX\W]\s)émergent\b', 'émergeant', 'adjective, singular'),
+
+        # PLACE NAMES — QUÉBEC PRONUNCIATION, not the France one (Peggy,
+        # 2026-09-07). This is an editorial decision about whose French the
+        # site speaks, and for a report on Canada it is Canadian French:
+        #   Yukon    nasal, /jykɔ̃/ — NOT "Yukone" with the final vowel sounded
+        #   Nunavut  the final t IS pronounced — /nunavut/, not /nunavy/
+        # The engine defaults to the France reading on both. The respellings
+        # that achieve it are still to be chosen by ear from tts-out/mots-fr.mp3;
+        # this note records the TARGET so the reason survives the spelling.
+        # Chosen by ear 2026-09-07, four spellings each. Both respell the whole
+        # word, not just the ending: the engine's France reading starts at the
+        # first vowel, so patching the tail alone did not carry.
+        (r'\bNunavut\b', 'Nounavoute', 'place name, Québec pronunciation'),
+        (r'\bYukon\b', 'Youkon', 'place name, Québec pronunciation'),
+
+        # ── CAN report, French pass 2026-09-06 ───────────────────────────────
+        # Negative figures: same fault as English, but the French table never
+        # had the rule. Scoped to a sign that OPENS a number so ranges are safe.
+        (r'(?<=[\s(])[−–-](?=\d)', 'moins ', 'negative figure'),
+        # "au km²" is singular ("au kilomètre carré"), "de km²" plural. The
+        # engine said "km carre" — the unit unread and the accent lost.
+        (r'\bau km²', 'au kilomètre carré', 'unit, singular'),
+        (r'\bkm²', 'kilomètres carrés', 'unit'),
+        # "1,7 °C" — the degree sign was not read as a word.
+        (r'\s*°\s*C\b', ' degrés Celsius', 'temperature unit'),
+        # Decimals before a scale word: "27,2 milliards" came out wrong on some
+        # occurrences and right on others. Spelling it removes the variance.
+        (r'(\d[\d\s  ]*),(\d+)\s+(milliards?|millions?)',
+         _fr_spell_decimal, 'decimal figure'),
+        # Integers ending in 1 — the phantom liaison ("quatre-vingt-TUN").
+        # Masculine; the feminine cases are hardcoded above and run first.
+        (r'(?<![\d,.])\d+(?![\d,.])', _fr_spell_int, 'number ending in 1'),
     ],
     "en": [
         # "kilometre" collapses to "kimeter" / "kinometer" / "kalibmeter" in

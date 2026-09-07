@@ -112,9 +112,10 @@ let sourcesFrameworkRef: React.RefObject<FrameworkSectionHandle | null> | null =
 // scrolls — [§] markers and scorecard/gap-register anchor chips all need it,
 // because a field block inside a collapsed section isn't in the DOM.
 let openPeerAndScroll: ((id: string) => void) | null = null;
-// Scroll position to restore when the reader jumped from the scorecard (which
-// has no data-section wrapper the toast's Back can target). Null = the Back
-// button uses the ordinary section lookup.
+// Exact scroll position to restore when the reader clicks a citation or anchor,
+// so the toast's Back returns them to where they were reading rather than the
+// top of the (often long) section. Null only as a fallback — then Back looks the
+// section wrapper up by name and scrolls to its start.
 let backScrollY: number | null = null;
 
 // Store state for tracking which section the reader was in
@@ -190,7 +191,9 @@ function parseCitations(text: string, sources?: SourceEntry[]): (string | React.
           const element = (e.target as HTMLElement).closest('[data-section]');
           const sectionName = element?.getAttribute('data-section') || 'Report';
           if (setLastClickedSectionName) {
-            backScrollY = null; // section jump: Back targets the wrapper, not a stored position
+            // Remember the EXACT reading position so Back returns the reader to
+            // where they were, not the (often distant) top of the section.
+            backScrollY = window.scrollY;
             setLastClickedSectionName(sectionName);
           }
           if (sourcesFrameworkRef?.current) {
@@ -892,6 +895,23 @@ export default function CountryPage() {
     sourcesFrameworkRef = sourcesRef;
     setLastClickedSectionName = setClickedSection;
   }, []);
+
+  // Dismiss the floating "Back" toast on the reader's next scroll/movement, so
+  // it never lingers until a page reload. The citation click itself scrolls (to
+  // the source), so we wait for that programmatic scroll to go idle (~200ms)
+  // before arming — otherwise the jump would dismiss the toast instantly.
+  useEffect(() => {
+    if (!clickedSection) return;
+    let settled = false;
+    let settleTimer: ReturnType<typeof setTimeout>;
+    const onScroll = () => {
+      if (settled) { backScrollY = null; setClickedSection(''); return; }
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(() => { settled = true; }, 200);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => { clearTimeout(settleTimer); window.removeEventListener('scroll', onScroll); };
+  }, [clickedSection]);
 
   useEffect(() => {
     fetch('/countries-data.json')
@@ -1755,7 +1775,7 @@ export default function CountryPage() {
           </div>
           {/* Floating Back Button */}
           {clickedSection && (
-            <div className="fixed bottom-6 right-6 p-3 bg-[var(--cr-hover-2)] border border-[var(--cr-accent)] rounded shadow-lg flex items-center gap-3 z-40 max-w-xs">
+            <div className="fixed bottom-24 right-6 p-3 bg-[var(--cr-hover-2)] border border-[var(--cr-accent)] rounded shadow-lg flex items-center gap-3 z-40 max-w-xs">
               <span className="font-body text-xs text-[var(--cr-body)] hidden sm:inline">
                 {language === 'fr' ? 'Vous lisiez : ' : 'You were reading: '}
                 <span className="font-medium text-[var(--cr-accent)]">{clickedSection}</span>
@@ -1774,6 +1794,7 @@ export default function CountryPage() {
                   if (sectionElement) {
                     sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
+                  setClickedSection('');
                 }}
                 className="px-3 py-1.5 bg-[var(--cr-accent)] text-[var(--cr-on-accent)] text-xs font-medium rounded hover:bg-[var(--cr-accent-hover)] transition-colors whitespace-nowrap shrink-0"
               >

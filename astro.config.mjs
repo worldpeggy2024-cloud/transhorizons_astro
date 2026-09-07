@@ -67,6 +67,13 @@ export default defineConfig({
     // It is served as a static file either way — nothing needs to watch it.
     server: {
       watch: {
+        // CONSEQUENCE, worth knowing before you debug the player: the dev
+        // server never notices audio staged AFTER it started, and serves 404
+        // for it. The player treats a 404 as "no recording" and falls back to
+        // Web Speech — so a freshly staged recording looks like a broken voice
+        // picker rather than a missing file. RESTART THE DEV SERVER after
+        // `node scripts/stage-audio.cjs`. Production is unaffected: the deploy
+        // builds a fresh image with everything in it.
         ignored: ['**/public/audio/**', '**/tts-out/**', '**/tts-text/**'],
       },
     },
