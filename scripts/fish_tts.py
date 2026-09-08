@@ -431,7 +431,14 @@ def honour_lock(block: str, key: str, locks: list[dict]) -> str | None:
     """If this block is locked, put the approved audio at `key`. Returns a note."""
     for lock in locks:
         where = str(lock.get("where", "")).strip()
-        if not where or where.lower() not in block.lower():
+        # STARTS WITH, never "contains". A lock records the OPENING words, and a
+        # heading is a whole block of one or two words: "Minéraux" as a substring
+        # matched an Economy paragraph containing the word "minéraux", and this
+        # function then copied the Territory HEADING's audio over it. Peggy heard
+        # Réfléchie say "Minéraux" where a paragraph belonged (2026-09-07).
+        # A lock rewrites audio, so a loose match here is destructive in a way a
+        # loose --reroll never is.
+        if not where or not block.lstrip("# ").strip().lower().startswith(where.lower()):
             continue
         approved = str(lock.get("key", ""))
         if not approved:
@@ -534,11 +541,14 @@ SUBSTITUTIONS = {
         # Place name the French voice does not resolve; the trailing -e gives it
         # the final syllable it was swallowing. English reads it correctly, so
         # this is deliberately French-only.
-        # "Saskatchewane" still came out as "Saskatch-chewan" inside a long
-        # paragraph, and it dragged the following "Labrador" down with it.
-        # "Sasskatchouane" reads cleanly and leaves its neighbours alone
-        # (chosen by ear 2026-08-16 from six variants in the real sentence).
-        (r'\bSaskatchewan\b', 'Sasskatchouane', 'place name'),
+        # "Saskatchewane" came out as "Saskatch-chewan" inside a long paragraph
+        # and dragged the following "Labrador" down with it. "Sasskatchouane"
+        # (2026-08-16) fixed that but gave "Saskatchouan"; "Saskatchéwan" is
+        # Peggy's spelling and closer to the Canadian reading (2026-09-07).
+        # Changed globally because it was free: of the five paragraphs holding
+        # the word, one is locked, one was being redone, and three are not yet
+        # recorded. Checking that BEFORE changing a global rule is the habit.
+        (r'\bSaskatchewan\b', 'Saskatchéwan', 'place name'),
         # Édimbourg — the final g is silent in French (/edɛ̃buʁ/); the engine
         # sounded it. Dropping the letter is the whole fix.
         (r'\bÉdimbourg\b', 'Édimbour', 'silent final consonant'),
@@ -552,6 +562,11 @@ SUBSTITUTIONS = {
         # the two acronyms are the same treaty and take different treatments,
         # so neither language's rule may be copied to the other.
         (r'\bACEUM\b', 'A.C.E.U.M.', 'acronym said as letters'),
+        # PIB (produit intérieur brut) is said as its LETTERS in French, /pe i be/.
+        # The engine spelled it out wrongly — Peggy heard "P-I-I-B". Global: it
+        # appears 17 times across the French country texts and the fault is not
+        # context-dependent, like ACEUM above (2026-09-07).
+        (r'\bPIB\b', 'pé-i-bé', 'acronym said as letters'),
         # Van Assche — the surname of Kristof Van Assche, cited in the
         # multipolar essay. Read "van ASH", the pronunciation he is addressed
         # by in North America and lets stand (Peggy found him unchallenged on
@@ -666,16 +681,8 @@ SUBSTITUTIONS = {
         # The alternation matters: a grouped number (8 891) must match WHOLE.
         # Matching \d+ alone caught "8" and "891" separately and spelled only
         # the second — "8 huit cent quatre-vingt-onze" (caught by ear 2026-09-07).
-        (r'(?<![\d.])(?<!\d,)(?:\d{1,3}(?:[\s  ]\d{3})+|\d+)(?![\d.])(?!,\d)',
+        (r'(?<!\d)(?<!\d\.)(?<!\d,)(?:\d{1,3}(?:[\s  ]\d{3})+|\d+)(?!\d)(?!\.\d)(?!,\d)',
          _fr_spell_int, 'number ending in 1'),
-        # 19xx years: the engine breaks after "mille" ("mille… neuf cent
-        # quarante-huit"). Spelling it removes the pause. 20xx is deliberately
-        # left as digits — "deux mille vingt-quatre" reads correctly and spelling
-        # every date would rewrite most of the report.
-        # NOT inside a range: "1961-1990" was spelled as one run-on word,
-        # losing the range entirely. The lookarounds exclude a year touching a
-        # hyphen on either side (caught by ear 2026-09-07).
-        (r'(?<![\d.-])(?<!\d,)19\d{2}(?![\d.]|,\d|-\d)', _fr_spell_year, 'twentieth-century year'),
         # A hyphen between two years is read as "moins". A COMMA replaces it:
         # tested against both meanings and it is the only treatment that works
         # for both (Peggy, 2026-09-07) —
@@ -685,11 +692,24 @@ SUBSTITUTIONS = {
         # never be global; a bare space failed on both. The comma gives a pause
         # where the hyphen was, which reads correctly either way.
         (r'(?<=\d)-(?=\d{4}\b)', ', ', 'year range'),
+        # ORDER MATTERS: the range rule must run BEFORE the year rule. The year
+        # rule skips a year touching a hyphen (so "1961-1990" is not spelled as
+        # one run-on word); if the hyphen is only replaced afterwards, the years
+        # never get spelled at all and the engine's own pause after "mille" comes
+        # back. That regression shipped for one section (2026-09-07).
+        # 19xx years: the engine breaks after "mille" ("mille… neuf cent
+        # quarante-huit"). Spelling it removes the pause. 20xx is deliberately
+        # left as digits — "deux mille vingt-quatre" reads correctly and spelling
+        # every date would rewrite most of the report.
+        # NOT inside a range: "1961-1990" was spelled as one run-on word,
+        # losing the range entirely. The lookarounds exclude a year touching a
+        # hyphen on either side (caught by ear 2026-09-07).
+        (r'(?<![\d-])(?<!\d\.)(?<!\d,)19\d{2}(?!\d|\.\d|,\d|-\d)', _fr_spell_year, 'twentieth-century year'),
         # Any decimal, not just those before "milliards": "6,6 %" lost its comma
         # entirely and was read "six six", while "2,8 %" was fine — the engine
         # varying. Spelling "virgule" removes the choice. The % sign is left
         # alone; the engine says "pour cent" correctly.
-        (r'(?<![\d.])(?<!\d,)(\d[\d\s  ]*),(\d+)(?![\d.])(?!,\d)', _fr_spell_decimal_any,
+        (r'(?<!\d)(?<!\d\.)(?<!\d,)(\d[\d\s  ]*),(\d+)(?!\d)(?!\.\d)(?!,\d)', _fr_spell_decimal_any,
          'decimal figure'),
         # "multiculturalisme" lost its middle "a" — "multiculturlisme". The
         # morpheme boundary restores it.

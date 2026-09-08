@@ -86,6 +86,21 @@
           "quatre contre un": "quatre contr'un"
         },
         "why": "read as \"quatre contre trin\" — the engine ran contre into un. The elision forces the break. This one is not optional: it stops the sentence being understood, unlike a soft Métis."
+      },
+      {
+        "where": "La dette fédérale",
+        "replace": {
+          "quatre-vingt-un": "quatre-vin-un",
+          "2031": "deux-mille-trente-et-un"
+        },
+        "why": "81 came out \"80t'un\" again; 2031 was read \"deux mille trente… et un\" with a pause before et un, so it is spelled hyphenated. PIB is now a GLOBAL rule."
+      },
+      {
+        "where": "Dans le modèle actuel",
+        "replace": {
+          "CIBC": "cé-i-bé-cé"
+        },
+        "why": "a bank's initials, said as letters in French"
       }
     ]
   }

@@ -192,6 +192,300 @@
         "key": "c7d76102f662a9cae27bd9655f6545b0b3ff47d789480819a77add42779f6103",
         "section": "territory",
         "voices": "reflechie-flork"
+      },
+      {
+        "where": "Société",
+        "key": "6400cfba978f59d229a833f286cda0ad7b6d9e609ce3fd283958e906623b6b9a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Démographie",
+        "key": "6c5ce467f293fd1f1a243ebf6894d0fa6c39d702f213b6e8ef3d3b930d7004d1",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est une société de peuplement issue de l'immigrati",
+        "key": "2f148b216d41c15c67ad826cef0a74a5718f8eaf0bc3a14d3315a742ca968410",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La population s'établissait à quarante-et-un virgule six mil",
+        "key": "d5c3219ceb096893f3dd7bf19e8a553b1ddcbeccbd79ca4d4755b97f4298d8d6",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le vieillissement a repris à mesure que les migrants tempora",
+        "key": "28ca203baae33c8faa4d211555009b32c6bf18fcd0f4c9b4c497a5da56f31ee6",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Trois personnes sur quatre (soixante-quatorze virgule huit %",
+        "key": "4fb69f93e1a83c4b24a8d1ebc96a62e4ed7497e7a46150af044e0f1e59c6be1b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Composition",
+        "key": "355a4e1e58d072ed5d27622f6ecdafffc4163ef3e8bdf3258ba238b5fc18ab80",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est ethniquement pluriel, et cette pluralité est r",
+        "key": "98c9f180e8e4116bff00c9920c5356727549961731313e502c630d7104c3d54a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les clivages sont transversaux à l'échelle nationale, sauf a",
+        "key": "10f70ea1f3128e9cb07c14bd5ef8301cf6ef900554211b4468f0242f2f408243",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Langue",
+        "key": "0007dec05fd5ded68136b3259aa634bac23ad2f8e9c73bd1378ca2faa2de9e5f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada compte deux langues officielles et une importante ",
+        "key": "2baf4ffe7bc88c7910dec6483ad93681631ea757e16fe0c28fcb5f57cf35513a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'étiquette du recensement masque une convergence et une asy",
+        "key": "d88cda006483b7b0b15b6d0ac2821bb22bed7dac3e02b1218e5b451131cff806",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Sous ces proportions, le mouvement démographique va dans un ",
+        "key": "5fab0acb76c68a2b6970f19101b222580988df36a5074b5dfd409bd6d856e279",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Religion",
+        "key": "e457aaa532020495cf4a46eb3c72ad4cb8ba8aad2899204082660d403fbc93eb",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La religion est consignée par le questionnaire détaillé du r",
+        "key": "ca463f17ee2333ec277f4aa8dffe9cd79bda3b6761c14568ac0b2f06eb274d05",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La ligne de fracture historique catholiques–protestants (le ",
+        "key": "1ec9b0ae944b090a24fac64e2cb60aaef21892fb60edbcde4427271f52577514",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Bien-être",
+        "key": "a1703eafe73cd7f1cbf757feaa2847804784666a873c48383a658119f56e3a8e",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'espérance de vie à la naissance a atteint quatre-vingt-deu",
+        "key": "b3a57c5873279d9a740999a1a3cd4b6eade06f38b579293d50651eb49fb7fbaa",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le cancer est la principale cause de décès depuis le début d",
+        "key": "3fac839831ac4ba047f953ff687f072f09b985d034685e27a550405832d6c69f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'inégalité de santé la plus marquée sépare la population au",
+        "key": "ce4ddd88bc9fe2adc7ab334d6a2b02d9244b6cc56910fe611b6f1c334785ab1f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les résultats scolaires se comparent favorablement à l'inter",
+        "key": "df2e9b9f224953153319e970d3732eb7c8a719e049aea5c71c4b71d5803be496",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cohésion sociale",
+        "key": "8bb534d131c82181d7032f43ac5233d148d8bc17a325dd84598e1d3cc51d7a2b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La confiance envers les institutions est inégale plutôt qu'u",
+        "key": "f3ac62373401d258caa547e81e13b4ade4bd084950f5be6d65c706ea65cebfe0",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La confiance interpersonnelle est modérée et s'effrite lente",
+        "key": "1e51e08eb73f84b3c7117ea3cc97d90e37b0523831267de7c252a5c14c10f9a9",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Deux évolutions plus lentes l'accompagnent. La fierté nation",
+        "key": "7d44a8ab52e5a78057e790b4790efae73833cfe0abd90587670801a4e6a3fb62",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada a obtenu 75 sur 100 à l'Indice de perception de la",
+        "key": "47581626fa7dcdf7e3f72a208172dd391582415b4c43edea99382cc9efc33429",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'image de soi a tenu, contrairement au consensus sur l'immi",
+        "key": "a9b35edb6025aa0344a61ba2ab069246e1f287cebc1ff425fcae6c1a5dfa7405",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Économie",
+        "key": "6c114d32d417aabfe6f8c8eaaf9ceb766e4c25e2930939fc23f1c60210a8d84f",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Économie réelle",
+        "key": "6ea68bd681095b1a9e170b3ff946c4eaf25fc39e4f42d821821e86b9cf0de719",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'économie canadienne, avancée et à revenu élevé, est dominé",
+        "key": "bd9ad1430bf63d3a51dfc09a035efe4518de296974abd64a2995a14670826423",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les services représentent quatre emplois sur cinq : le secte",
+        "key": "f25cd076079aa59a34c443b6ed18cc475c246d27d9db02d403f502235ac4d350",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le secteur des technologies de l'information et des communic",
+        "key": "6bf9b6c6da69b8c4ae6f8e719bbd3720e1b647c971909448ae7df0ae7597fca7",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La croissance ralentit et les perspectives affichent une dis",
+        "key": "54aa2760a746a484c383cd9e01bed341d3751cd36a32192b25693b3e0f7f0483",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Finances publiques",
+        "key": "8d4ca07aae9bc37fd5026025986975fa69d505be32140d98c4c0f5989341edde",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le déficit fédéral s'est établi à soixante-six virgule neuf ",
+        "key": "923bfe44db59e89df9b349e3d91a78fcc68c7dfdb2a8cfb181662a6a75373957",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La dette fédérale s'établissait à quarante-et-un virgule un ",
+        "key": "90cd7ac924caa24df2baa4856a4d1f71a21dca6c57f23cc3fcfb4e32893fe5d7",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La Banque du Canada a maintenu son taux directeur à deux vir",
+        "key": "bfe984141d8a3f0ead70bc677a8bf8531c146c10baed4e043ef2bb736287e1c2",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada figure parmi les États bénéficiant des meilleures ",
+        "key": "df1d7ccbb2491b58df74ec768cfea480693bc3ad94ffa1e32d90cb11bc2e90f7",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Vulnérabilité externe",
+        "key": "947e9252bbce9616393e0c8be06bbc1537acfe13c35e8b18be685b868f5e6e2e",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La base d'exportation du Canada est à forte intensité de res",
+        "key": "9c6a39131fce84664614a7274fcbab457c96a6b2ad5f96091dd1b8af5f3a0c72",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La part des États-Unis dans les exportations de marchandises",
+        "key": "78c2ab6208c9f7fb7e2da6af76eaaf90af6f760e5293d4276121e777c98be7a6",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cette concentration engendre une vulnérabilité aiguë aux dro",
+        "key": "f272c7b588730cf3c881413ff13de132fb8807dd8e538f7eebc623bcfe82614e",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les exportations totales de biens ont atteint environ 778 mi",
+        "key": "cc67b5529a56aaa53ca8468762d5a426b401e7b19c52a74f46e7330bcf72149e",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Aucun programme du Fonds monétaire international n'est en pl",
+        "key": "96b7d465253180c878b27fbfff89b0d071edaedb12f952eca3655a452f0673df",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Économie politique",
+        "key": "2698ce0a30dfcd25b13dfce6711d92da686eb3459342663b00de30f7dd14990c",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada exploite une économie mixte qui penche vers le pôl",
+        "key": "7f76b164c3e6ac876e387c9d5dfc248f29e88f4815d4f594bee050cf0d610325",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Dans le modèle actuel, les principaux bénéficiaires sont les",
+        "key": "4473ccf2f198b56da4d7c4190d04a90bea07771e4c619ff07cd29eb93b03e27e",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le mouvement syndical constitue un contrepoids plus modeste,",
+        "key": "5696a1204e732517cf2c2629b39c6deb4d6ec79b780a23ab96d00a380af0d0af",
+        "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les réformes que la plupart des analystes jugent techniqueme",
+        "key": "2e1ba981dd96a12d215d3b2af215c41e33eb9150e79eb5403489a79235c74d4a",
+        "section": "economy",
+        "voices": "reflechie-flork"
       }
     ]
   }
