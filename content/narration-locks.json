@@ -194,164 +194,8 @@
         "voices": "reflechie-flork"
       },
       {
-        "where": "Société",
-        "key": "6400cfba978f59d229a833f286cda0ad7b6d9e609ce3fd283958e906623b6b9a",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Démographie",
-        "key": "6c5ce467f293fd1f1a243ebf6894d0fa6c39d702f213b6e8ef3d3b930d7004d1",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada est une société de peuplement issue de l'immigrati",
-        "key": "2f148b216d41c15c67ad826cef0a74a5718f8eaf0bc3a14d3315a742ca968410",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La population s'établissait à quarante-et-un virgule six mil",
-        "key": "d5c3219ceb096893f3dd7bf19e8a553b1ddcbeccbd79ca4d4755b97f4298d8d6",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le vieillissement a repris à mesure que les migrants tempora",
-        "key": "28ca203baae33c8faa4d211555009b32c6bf18fcd0f4c9b4c497a5da56f31ee6",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Trois personnes sur quatre (soixante-quatorze virgule huit %",
-        "key": "4fb69f93e1a83c4b24a8d1ebc96a62e4ed7497e7a46150af044e0f1e59c6be1b",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Composition",
-        "key": "355a4e1e58d072ed5d27622f6ecdafffc4163ef3e8bdf3258ba238b5fc18ab80",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada est ethniquement pluriel, et cette pluralité est r",
-        "key": "98c9f180e8e4116bff00c9920c5356727549961731313e502c630d7104c3d54a",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Les clivages sont transversaux à l'échelle nationale, sauf a",
-        "key": "10f70ea1f3128e9cb07c14bd5ef8301cf6ef900554211b4468f0242f2f408243",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Langue",
-        "key": "0007dec05fd5ded68136b3259aa634bac23ad2f8e9c73bd1378ca2faa2de9e5f",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada compte deux langues officielles et une importante ",
-        "key": "2baf4ffe7bc88c7910dec6483ad93681631ea757e16fe0c28fcb5f57cf35513a",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
         "where": "L'étiquette du recensement masque une convergence et une asy",
         "key": "d88cda006483b7b0b15b6d0ac2821bb22bed7dac3e02b1218e5b451131cff806",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Sous ces proportions, le mouvement démographique va dans un ",
-        "key": "5fab0acb76c68a2b6970f19101b222580988df36a5074b5dfd409bd6d856e279",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Religion",
-        "key": "e457aaa532020495cf4a46eb3c72ad4cb8ba8aad2899204082660d403fbc93eb",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La religion est consignée par le questionnaire détaillé du r",
-        "key": "ca463f17ee2333ec277f4aa8dffe9cd79bda3b6761c14568ac0b2f06eb274d05",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La ligne de fracture historique catholiques–protestants (le ",
-        "key": "1ec9b0ae944b090a24fac64e2cb60aaef21892fb60edbcde4427271f52577514",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Bien-être",
-        "key": "a1703eafe73cd7f1cbf757feaa2847804784666a873c48383a658119f56e3a8e",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'espérance de vie à la naissance a atteint quatre-vingt-deu",
-        "key": "b3a57c5873279d9a740999a1a3cd4b6eade06f38b579293d50651eb49fb7fbaa",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le cancer est la principale cause de décès depuis le début d",
-        "key": "3fac839831ac4ba047f953ff687f072f09b985d034685e27a550405832d6c69f",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'inégalité de santé la plus marquée sépare la population au",
-        "key": "ce4ddd88bc9fe2adc7ab334d6a2b02d9244b6cc56910fe611b6f1c334785ab1f",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Les résultats scolaires se comparent favorablement à l'inter",
-        "key": "df2e9b9f224953153319e970d3732eb7c8a719e049aea5c71c4b71d5803be496",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Cohésion sociale",
-        "key": "8bb534d131c82181d7032f43ac5233d148d8bc17a325dd84598e1d3cc51d7a2b",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La confiance envers les institutions est inégale plutôt qu'u",
-        "key": "f3ac62373401d258caa547e81e13b4ade4bd084950f5be6d65c706ea65cebfe0",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La confiance interpersonnelle est modérée et s'effrite lente",
-        "key": "1e51e08eb73f84b3c7117ea3cc97d90e37b0523831267de7c252a5c14c10f9a9",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Deux évolutions plus lentes l'accompagnent. La fierté nation",
-        "key": "7d44a8ab52e5a78057e790b4790efae73833cfe0abd90587670801a4e6a3fb62",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada a obtenu 75 sur 100 à l'Indice de perception de la",
-        "key": "47581626fa7dcdf7e3f72a208172dd391582415b4c43edea99382cc9efc33429",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'image de soi a tenu, contrairement au consensus sur l'immi",
-        "key": "a9b35edb6025aa0344a61ba2ab069246e1f287cebc1ff425fcae6c1a5dfa7405",
         "section": "society",
         "voices": "reflechie-flork"
       },
@@ -485,6 +329,432 @@
         "where": "Les réformes que la plupart des analystes jugent techniqueme",
         "key": "2e1ba981dd96a12d215d3b2af215c41e33eb9150e79eb5403489a79235c74d4a",
         "section": "economy",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Tableau de bord rapide",
+        "key": "6fcde74dd9aa9df7eb107ad758041339f8e8c26c83bc403cee529f3fa1366e01",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cohésion des élites",
+        "key": "486087d0103e1b0991ef54b740392bb318d4210a763b681d2665a2bdebc8d21f",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Moyenne à élevée. Gouvernement monopartite disposant du cont",
+        "key": "6326166932fe86dbc8a5b489cdd07dce9fbe4e0ca5606c092dfabaa438268b7f",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Élevée. Le rapport ne relève aucune violence politique ni di",
+        "key": "ac0b95c36c3fa2972107f612c2bb4a867d73bf0e1afc24a93bb476988b9a225e",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Loyauté des forces",
+        "key": "3da00aa65e057b0e0f47f7b9c56ff02b691f864a1c975c9e9c248f6967b0f3a8",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Élevée. Le contrôle civil est à la fois légal et démontré : ",
+        "key": "4f59507eb357035992f4007d109e12b01b5dac51318732038256f7167e3d5684",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Pression économique",
+        "key": "c63eef9b44ec3dc74f0d696f1ae69ad7a9ac96a7ff93d07f5baff40e7e131563",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Capacité de mobilisation",
+        "key": "d5af616329058ec9c5dc56b4a737f1afcfa1979ab2d548e3cb3c4acf06f9690c",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Faible. Faible par absence : le rapport ne fait état d'aucun",
+        "key": "4dd07d1ddcca25232661bef460c1fa75c7d2e0c1f7a6c3284262d547ee71bf1a",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Résilience institutionnelle",
+        "key": "5d1c0569d34992e6eec32fa59e4d08c0b4730667c236204be070862ef942d92d",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Société",
+        "key": "6400cfba978f59d229a833f286cda0ad7b6d9e609ce3fd283958e906623b6b9a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Démographie",
+        "key": "6c5ce467f293fd1f1a243ebf6894d0fa6c39d702f213b6e8ef3d3b930d7004d1",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est une société de peuplement issue de l'immigrati",
+        "key": "2f148b216d41c15c67ad826cef0a74a5718f8eaf0bc3a14d3315a742ca968410",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La population s'établissait à quarante-et-un virgule six mil",
+        "key": "d5c3219ceb096893f3dd7bf19e8a553b1ddcbeccbd79ca4d4755b97f4298d8d6",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le vieillissement a repris à mesure que les migrants tempora",
+        "key": "28ca203baae33c8faa4d211555009b32c6bf18fcd0f4c9b4c497a5da56f31ee6",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Trois personnes sur quatre (soixante-quatorze virgule huit %",
+        "key": "4fb69f93e1a83c4b24a8d1ebc96a62e4ed7497e7a46150af044e0f1e59c6be1b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Composition",
+        "key": "355a4e1e58d072ed5d27622f6ecdafffc4163ef3e8bdf3258ba238b5fc18ab80",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est ethniquement pluriel, et cette pluralité est r",
+        "key": "98c9f180e8e4116bff00c9920c5356727549961731313e502c630d7104c3d54a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les clivages sont transversaux à l'échelle nationale, sauf a",
+        "key": "10f70ea1f3128e9cb07c14bd5ef8301cf6ef900554211b4468f0242f2f408243",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'exception tient à l'autodétermination provinciale. Lorsqu'",
+        "key": "5f8049462af47d4fdec1762e52c3646aff7cba6b3f7001e7d257970865512f0b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Langue",
+        "key": "0007dec05fd5ded68136b3259aa634bac23ad2f8e9c73bd1378ca2faa2de9e5f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada compte deux langues officielles et une importante ",
+        "key": "2baf4ffe7bc88c7910dec6483ad93681631ea757e16fe0c28fcb5f57cf35513a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Sous ces proportions, le mouvement démographique va dans un ",
+        "key": "5fab0acb76c68a2b6970f19101b222580988df36a5074b5dfd409bd6d856e279",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Religion",
+        "key": "e457aaa532020495cf4a46eb3c72ad4cb8ba8aad2899204082660d403fbc93eb",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La religion est consignée par le questionnaire détaillé du r",
+        "key": "ca463f17ee2333ec277f4aa8dffe9cd79bda3b6761c14568ac0b2f06eb274d05",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La ligne de fracture historique catholiques–protestants (le ",
+        "key": "1ec9b0ae944b090a24fac64e2cb60aaef21892fb60edbcde4427271f52577514",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Bien-être",
+        "key": "a1703eafe73cd7f1cbf757feaa2847804784666a873c48383a658119f56e3a8e",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'espérance de vie à la naissance a atteint quatre-vingt-deu",
+        "key": "b3a57c5873279d9a740999a1a3cd4b6eade06f38b579293d50651eb49fb7fbaa",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le cancer est la principale cause de décès depuis le début d",
+        "key": "3fac839831ac4ba047f953ff687f072f09b985d034685e27a550405832d6c69f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'inégalité de santé la plus marquée sépare la population au",
+        "key": "ce4ddd88bc9fe2adc7ab334d6a2b02d9244b6cc56910fe611b6f1c334785ab1f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les résultats scolaires se comparent favorablement à l'inter",
+        "key": "df2e9b9f224953153319e970d3732eb7c8a719e049aea5c71c4b71d5803be496",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cohésion sociale",
+        "key": "8bb534d131c82181d7032f43ac5233d148d8bc17a325dd84598e1d3cc51d7a2b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La confiance envers les institutions est inégale plutôt qu'u",
+        "key": "f3ac62373401d258caa547e81e13b4ade4bd084950f5be6d65c706ea65cebfe0",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La confiance interpersonnelle est modérée et s'effrite lente",
+        "key": "1e51e08eb73f84b3c7117ea3cc97d90e37b0523831267de7c252a5c14c10f9a9",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Calculé sur les cinq vagues de l'Enquête mondiale sur les va",
+        "key": "d9c1fe6a22ab984d9b66a7381874f6ea375e08f8ab5a6c0cde74f71db0e01e00",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Deux évolutions plus lentes l'accompagnent. La fierté nation",
+        "key": "7d44a8ab52e5a78057e790b4790efae73833cfe0abd90587670801a4e6a3fb62",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada a obtenu 75 sur 100 à l'Indice de perception de la",
+        "key": "47581626fa7dcdf7e3f72a208172dd391582415b4c43edea99382cc9efc33429",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'image de soi a tenu, contrairement au consensus sur l'immi",
+        "key": "a9b35edb6025aa0344a61ba2ab069246e1f287cebc1ff425fcae6c1a5dfa7405",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Ordre politique",
+        "key": "8d9e4743a8252570fb45b6bd646f239a849d11186321c5d409b0c34d6180e775",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Structure du pouvoir",
+        "key": "992afd1499c80c9a5b216ea61dc89bdb5f05e381c0f4f86e41412daf38b51ba1",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est une démocratie parlementaire de type Westminst",
+        "key": "550c9c9edaebd4837a063a9e51d38d9c17e1384a6b291519fc2ae47f25e9aa2d",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Mark Carney est premier ministre à la tête d'un gouvernement",
+        "key": "6706947e55d2be8110499a8694f35ce0776791cb3f583bcae87836e5251c5e93",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La majorité est réelle, mais mince et mouvante. Au 25 juille",
+        "key": "998dff115ee6605e333f1bb8e944de71e0629e142a6e5f9981d8535c470f7eb5",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Parlement est bicaméral. La Chambre des communes compte 3",
+        "key": "4a4bae18a40e64b5c185b628a7eea123188c8c807c04fc0c9625815719c825c2",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Droits et contre-pouvoirs",
+        "key": "63a8236cc758fe2a75fbf7f1492bc382764260268b37140e961d2bf6dff5819a",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le pouvoir judiciaire est indépendant et exerce un contrôle ",
+        "key": "8a16c4526af5be42c555f90fd395dc1c277d9b63ede3511ad2b2b3d4fbc8c2e0",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les médias sont indépendants de l'État; aucun grand organe d",
+        "key": "0a5736dcd5ccc6da9419d64f45dca41055fda9f917182f4c3aac72d3110e2155",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "En ce qui concerne les libertés civiles et les droits de la ",
+        "key": "ac259b1cdfb59d415702f3f3e88e009cd6b83a415c15e11601bb5882d26551bc",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les évaluations externes situent le Canada parmi les pays le",
+        "key": "d0703ac481f7b55b7a8596f8ffdb854c6cd1e1d91ab3332c3a4880601f754860",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Facteurs de stabilité",
+        "key": "eed426e4b945cd58010f73a4c6e21dc8353d7031dd99156dbbea3caff3cc2723",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La légitimité repose sur des fondements démocratiques procéd",
+        "key": "e4b56149378f55b22502adaaa9dfe989f815af43c33b33eab98ace15a4ee1cca",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le contrôle civil des forces de sécurité est de nature légis",
+        "key": "305c91b1d4298b17c0a7590379a74b8cd9412bebcf4a6fe3909f758ac9f35c27",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La composition du gouvernement est monopartisane plutôt que ",
+        "key": "2d43a2da0770601bea9bf6295905136aff4009a79fe393426ab2e403d83ff7c3",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'adhésion des élites économiques est conditionnelle plutôt ",
+        "key": "063309c2037d4ace3fa18a54829eac406ef2d926daa3e3980a03ab15872e014d",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La fracture lourde de conséquences au sein du bloc gouvernan",
+        "key": "d3ee7c8d31279da95f934ed46ae7f281698708a31ece0e0a83572605f25ca3e2",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Facteurs d'atténuation et d'aggravation",
+        "key": "85fec6f3a8c44ae8865c4c2731c4b589176a46d50957d770b8e0b201af01ca12",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les facteurs d'atténuation sont substantiels et pour l'essen",
+        "key": "55f850f9c00b8acbb5792a5cb3869a17ea5d61a518e8f3c49ba6bc74d8fcdacd",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les facteurs d'aggravation politiques concernent la durabili",
+        "key": "166372a96244c0ae0397c52090406975009a80419b25e245eafb079ec8b4016c",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le facteur d'aggravation le plus aigu est de nature constitu",
+        "key": "d1943f128aecee2cb0ac96fa581751e824d36e54f2969a52164a314732e0daf2",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Deux chocs externes sont en cours et non résolus. L'Accord C",
+        "key": "6fe20cbe381a6433ee4606640a244d6d5135fa064545c524f5060ea9012c2165",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Substra constitutionnel",
+        "key": "2e8854bb264416e108e744822675bfe0890f0a6a16e0a6752247f07eadc1cd7a",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est une démocratie parlementaire fédérale sous mon",
+        "key": "813ae39a0bb2eacc2e0c0d20f0e53179672533c9f1667207407bdc4f3e9436b7",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La première pluralité est le bijuridisme. Le Québec relève d",
+        "key": "fd14e7a282535835d8122e801b4ef6fd123c3024b6e035ff68c1bb94a2b6ffd8",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La seconde pluralité tient aux droits et au titre constituti",
+        "key": "753f681b722538749c7d53e124d63e265b6dcf792354288efed1b9289d2f7b43",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le partage vertical des compétences fait l'objet d'une déter",
+        "key": "9e44dc2096aa85dcd64e8045a7d15e97906f1b505df4645c96fafe6cf05ac451",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Structure de l'État",
+        "key": "97dcef6130440b15ffc845d2d33e79e784cd427a7fe479b0640ca8c078325457",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est une fédération composée de dix provinces et de",
+        "key": "1a6c0e72a800112e2f0c55592ac69500f66b4168cfd9ea4b865db727e5c260af",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le partage des compétences est énoncé à la partie 6 de la Lo",
+        "key": "9513f4d36d0aaa8b6dddaaf0f943c07ea46ad9bdc26ce6c8f13d2744c4302a30",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'asymétrie la plus marquée sépare les provinces des territo",
+        "key": "e74564b6437a5b838ac281aa46247e3ebd65d2f3b1d1b62a95158b10330633e4",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Québec détient les arrangements asymétriques les plus éte",
+        "key": "f92c92c66419285087076d18423b82a05586b573c0e3e9e6071cf0a75d0e36b0",
+        "section": "political",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'asymétrie budgétaire est formalisée dans le régime de tran",
+        "key": "f1a95fe0184766532b6e131ffdfabb3c0de56298c14f333bfa364246cf68e5e8",
+        "section": "political",
         "voices": "reflechie-flork"
       }
     ]

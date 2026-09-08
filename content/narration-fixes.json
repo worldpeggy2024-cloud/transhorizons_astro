@@ -101,6 +101,78 @@
           "CIBC": "cé-i-bé-cé"
         },
         "why": "a bank's initials, said as letters in French"
+      },
+      {
+        "where": "Les médias sont indépendants de l'État",
+        "replace": {
+          "Reporters": "reportair"
+        },
+        "why": "English name read as English; the French approximation twice"
+      },
+      {
+        "where": "La composition du gouvernement",
+        "replace": {
+          "caucus": "caucuss"
+        },
+        "why": "final s must sound — caucus is /kokys/ in French"
+      },
+      {
+        "where": "La fracture lourde de conséquences",
+        "replace": {
+          "caucus": "caucuss",
+          "Chipewyan": "tchipuwaiyan",
+          "109/2026": "2026, 109",
+          "110/2026": "2026, 110",
+          "160/2026": "2026, 160"
+        },
+        "why": "caucus needs its s; Chipewyan respelled; the decree numbers keep their English written form (109/2026) but French cites a decree YEAR FIRST — 2026, 109. Spoken order only; the page is unchanged."
+      },
+      {
+        "where": "La seconde pluralité tient aux droits",
+        "replace": {
+          "Cris": "Cri",
+          "Tsilhqot'in": "tchilkotine",
+          "exigent": "exige",
+          "Chipewyan": "tchipuwaiyan"
+        },
+        "why": "Cris has a silent s; Tsilhqot'in is /tʃɪlˈkoʊtɪn/; exigent is the verb, so the -ent is silent, not \"exigeant\""
+      },
+      {
+        "where": "La première pluralité est le bijuridisme",
+        "replace": {
+          "articles 8.1 et 8.2": "articles 8 point 1 et 8 point 2"
+        },
+        "why": "the final s of soixante-six/sept was swallowed; 8.1 was read as a date"
+      },
+      {
+        "where": "Le partage vertical des compétences",
+        "replace": {
+          "Chipewyan": "tchipuwaiyan"
+        },
+        "why": "respelled"
+      },
+      {
+        "where": "Le partage des compétences",
+        "replace": {
+          "partie VI": "partie 6"
+        },
+        "why": "Roman numeral read as letters"
+      },
+      {
+        "where": "Substrat constitutionnel",
+        "replace": {
+          "Substrat": "Substra"
+        },
+        "why": "final t sounded in the title; it is silent"
+      }
+    ],
+    "countries/USA/en": [
+      {
+        "where": "Low to medium. Interpersonal trust fell",
+        "replace": {
+          "2020s": "twenty-twenties"
+        },
+        "why": "\"2020s\" was not read as a decade"
       }
     ]
   }

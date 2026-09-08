@@ -312,6 +312,20 @@ def _fr_block_liaison(words: str) -> str:
     # may be worth retrying if a future engine honours it. The evidence that it
     # did not is the point of this comment.
     #
+    # SUPERSEDED 2026-09-07 (evening): the fix is not an h but dropping the silent
+    # "gt". Peggy, after hearing both repeatedly: 81 is "quatre-vin-un", 91 is
+    # "quatre-vin-onze". That removes the consonant the engine was liaising from,
+    # rather than trying to block the liaison after the fact.
+    words = words.replace('quatre-vingt-un', 'quatre-vin-un')
+    # 91 needs BOTH: the silent gt dropped AND an h to block the liaison.
+    # Tested 2026-09-07 in the real sentence: digits no, quatre-vin-onze no,
+    # quatre-vingt-onze no — only quatre-vin-honze. 81 needs only the first
+    # half, which is why the two are not symmetrical.
+    words = words.replace('quatre-vingt-onze', 'quatre-vin-honze')
+    return words
+
+
+def _fr_block_liaison_notes() -> None:
     # SETTLED NEGATIVELY 2026-09-07. Five spellings of "cent un" were tried in
     # the real sentence — cent hun, cent-hun, cent un, cent-un — and EVERY one
     # made the liaison ("cent'un" for /sɑ̃ œ̃/). The engine liaises after "cent"
@@ -567,6 +581,10 @@ SUBSTITUTIONS = {
         # appears 17 times across the French country texts and the fault is not
         # context-dependent, like ACEUM above (2026-09-07).
         (r'\bPIB\b', 'pé-i-bé', 'acronym said as letters'),
+        # bilinguisme: the gu is /gw/ here, as in linguistique — the engine used
+        # a hard g. Heard repeatedly across sections (Peggy, 2026-09-07).
+        (r'\bbilinguisme\b', 'bilingwisme', 'gu read as hard g'),
+        (r'\bBilinguisme\b', 'Bilingwisme', 'gu read as hard g'),
         # Van Assche — the surname of Kristof Van Assche, cited in the
         # multipolar essay. Read "van ASH", the pronunciation he is addressed
         # by in North America and lets stand (Peggy found him unchallenged on
