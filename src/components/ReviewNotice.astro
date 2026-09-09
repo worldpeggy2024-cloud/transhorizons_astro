@@ -1,0 +1,51 @@
+---
+/*
+ * ReviewNotice — the SSR twin of ReviewBadge/DraftWatermark.
+ *
+ * The React reader has always seen a "Draft" badge on an unfinalised piece. The
+ * server-rendered .astro page — the one a crawler and a search visitor get —
+ * showed nothing, so the same article read as finished to Google and as a draft
+ * in the app. articleStatus.ts rules that out in as many words: a piece must not
+ * be "marked current for search engines and not updated for readers, or the
+ * reverse". This closes the article half of that (SEO_READY_COUNTRIES already
+ * closes the country half).
+ *
+ * Driven by isInReview(), so there is no second list to maintain: adding a slug
+ * to FINALISED removes the badge AND this notice together. Renders nothing for
+ * a finalised piece, which is why it is safe to drop into every article page.
+ *
+ * Deliberately visible, not a hidden SEO-only string: someone arriving from a
+ * search result is exactly the reader who most needs to know the piece is a
+ * draft, and hiding the disclosure from the person while showing it to the
+ * crawler would invert the problem rather than fix it. Both languages come from
+ * reviewLabel/reviewNote — no new French is introduced here.
+ */
+import { isInReview, reviewLabel, reviewNote } from '../lib/articleStatus';
+
+export interface Props {
+  slug: string;
+  lang: string;
+  /** 'onDark' for the hero band; 'onLight' for a body placement. */
+  tone?: 'onDark' | 'onLight';
+}
+const { slug, lang, tone = 'onDark' } = Astro.props;
+const show = isInReview(slug);
+const label = reviewLabel(lang);
+const note = reviewNote(lang);
+---
+{show && (
+  <div
+    class:list={[
+      'inline-flex flex-wrap items-center gap-x-3 gap-y-1 border px-3 py-2 mb-6',
+      tone === 'onDark'
+        ? 'border-[#C9A227]/60 bg-white/10 text-white/90'
+        : 'border-[#C9A227]/60 bg-[#C9A227]/10 text-[#6B5309]',
+    ]}
+    role="note"
+  >
+    <span class="text-[9px] tracking-[0.18em] uppercase font-medium border border-current px-2 py-0.5">
+      {label}
+    </span>
+    <span class="text-sm font-light">{note}</span>
+  </div>
+)}

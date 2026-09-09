@@ -4,9 +4,17 @@ import '../styles/global.css';
 export interface Props {
   title?: string;
   description?: string;
+  /**
+   * Emit <meta name="robots" content="noindex,follow"> for pages that serve HTTP 200
+   * but carry no server-rendered content — the client-only React shells and country
+   * reports not yet in SEO_READY_COUNTRIES. Without it those read to Google as thin
+   * or soft-404 pages. "follow" keeps links crawlable; only indexing is refused.
+   */
+  noindex?: boolean;
 }
 const {
   title = 'TransHorizons',
+  noindex = false,
   description = 'Structured analysis of geopolitical, resource, and technological systems, particularly those shaping Canada\'s position in the world. Independent research by Peggy Brenier, Montreal.'
 } = Astro.props;
 
@@ -32,6 +40,7 @@ const canonicalHref = new URL(canonicalPath + canonicalSuffix, Astro.site ?? 'ht
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
     <link rel="canonical" href={canonicalHref} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

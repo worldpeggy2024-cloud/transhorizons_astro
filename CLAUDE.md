@@ -2,6 +2,8 @@
 
 ## Architecture (do not violate)
 - Dual-renderer: React .tsx in pages-react/ = visual layer; .astro in pages/ = SEO layer. Both must stay in sync.
+  "In sync" means RENDERED FROM THE SAME SOURCE, not manually mirrored — a hand-copied SEO block is a
+  drift waiting to happen (see "Crawlability & publishing readiness").
 - [...slug].astro is the catch-all route AND contains the /keystatic carve-out. Never modify without explaining why.
 - AppShell client:only="react" is intentional. Do not change to client:load.
 - Keystatic silently strips undeclared YAML fields — extend the schema before adding fields.
@@ -9,7 +11,14 @@
 ## Known recurring failures
 - Past sessions have confused .astro and .tsx files and broken pages. Always verify which file type you are editing.
 - After any build change: npm run build must pass, then fly deploy, then verify on transhorizons-astro.fly.dev.
+  (`npm run deploy` rebuilds from scratch in Docker, so the local build is a CHECK, not a prerequisite.)
 - Local build success ≠ deployed. Always remind to deploy.
+- HAND-MAINTAINED CRAWLABLE BLOCKS DRIFT. Any .astro SEO mirror written as literal prose instead of
+  rendered from the shared YAML will silently fall behind the React page. research-approach.astro kept
+  its EN block hardcoded while FR was YAML-driven and lost four items before anyone noticed (fixed
+  2026-09-09). See "Crawlability & publishing readiness".
+- A page can look complete in a browser and be EMPTY to a crawler. NEVER verify crawlability by opening
+  the page — fetch it without JS (`curl` + strip tags + count words). 1 word = a client-only shell.
 
 ## Conventions
 - French content: Peggy reviews and finalizes all French. AI MAY draft French *placeholders* to speed her review — mark each with a greppable `FR-PLACEHOLDER` comment so she can find them — but never alter French Peggy has already finalized, and never publish French without her review.
@@ -29,6 +38,53 @@
 - The ".net hold" is a CONTENT/POLICY decision, NOT infrastructure: because .net = the same app, whatever is on fly.dev is ALREADY public on .net (including any not-yet-corrected maps/country pages). "Hold" means do NOT promote/announce .net or submit it for indexing until the AI-generated maps and country pages are corrected — it does NOT shield the public domain from current content.
 - Remaining launch step, DEFERRED until explicit go-ahead: a 301 redirect from the fly.dev host to .net. Not done, because it would make fly.dev redirect away and destroy the verification target. Do not add it without go-ahead.
 - Working/verification host is still transhorizons-astro.fly.dev. After deploying, always state which Fly app received the deployment.
+
+## Crawlability & publishing readiness (SEO layer)
+
+### ▶ TO MARK AN ARTICLE READY — this is the whole process
+- `npm run article:ready <slug>` then `npm run deploy`. Nothing else. (`npm run article:status` lists
+  every article's state; `npm run article:draft <slug>` reverses it. The command edits ONE flag,
+  `finalised`, in src/lib/articleRegistry.ts — hand-editing that line is equivalent.)
+- That single flag drives ALL of: the React Draft badge, the server-rendered "under review" notice
+  (ReviewNotice.astro), and the sitemap entry. NEVER hand-edit sitemap.xml.ts, articleStatus.ts or
+  analyses.astro's link gate to publish something — they all DERIVE from the registry. Re-adding a
+  hand-kept list there is what caused articles to be finalised for readers yet missing from the sitemap.
+- `hasStaticPage` is a SEPARATE flag on the same row and means something else: it governs LINKING, and
+  is true only when src/pages/<section>/<slug>.astro actually exists. `finalised` governs INDEXING.
+  A draft WITH a static page is linked and indexable but carries the notice — that is intended
+  (decided 2026-09-09: label the unfinished, don't hide it; portfolio reach matters for the pivot).
+
+### ▶ TO MARK A COUNTRY REPORT READY
+- Add the CCA3 to `SEO_READY_COUNTRIES` in src/lib/analysedCountries.ts. Same single-flag model: it
+  drives the crawlable SEO div, the sitemap, the globe "report available" marker, the teaser count,
+  the page's `noindex`, and the "Not updated" watermark together. Gate unchanged: two-phase-regenerated
+  AND hand-proofed. Currently CAN + USA only.
+
+### Readiness is a JUDGEMENT, not a detectable state
+- No script can tell whether the French has been reviewed. The commands RECORD Peggy's decision; they
+  do not form it. `article:ready` on a half-translated essay publishes a half-translated essay.
+- DEPLOYING DOES NOT SET READINESS. Deploy publishes whatever the flag currently says — a draft deploys
+  as a draft (notice shown, absent from sitemap). Flag without deploy changes only the local machine.
+
+### Rules that must not be broken
+- Crawlable mirrors are RENDERED, never hand-written: both languages from one template over the same
+  YAML the React page reads (publications.astro and research-approach.astro are the reference pattern).
+- NOTHING server-rendered may link to a route with no .astro twin — a crawler following it gets an empty
+  shell. Unready pieces render as PLAIN TEXT (title preserved, no href).
+- `Base.astro` takes `noindex`, set by [...slug].astro (every client-only shell) and country/[cca3].astro
+  (outside SEO_READY_COUNTRIES). 200-with-no-content otherwise reads to Google as thin content / soft 404.
+- Retired URLs go in the `retiredRoutes` 301 map in [...slug].astro, not to a 404 (e.g.
+  /notes/canada-resources → /portfolio/canada-resources, the essay having moved from Notes to Portfolio).
+- Route slug ≠ component/YAML filename. Read the `<Route>` list in AppShell.tsx before asserting a URL
+  exists; a URL guessed from a filename will 404 correctly and look like a bug that isn't one.
+
+### The build guard
+- `scripts/check-article-registry.cjs` runs as `prebuild`, so `npm run build` AND the Docker build inside
+  `fly deploy` both run it (verified: pnpm 10.33 does execute pre-scripts). It FAILS the build on: a row
+  claiming a static page that doesn't exist (and the reverse), finalised-without-a-page, a missing YAML
+  file, a duplicate slug, an unparseable row, and any server-rendered `href` to a slug with no static page.
+- It checks MECHANICAL consistency only — never editorial readiness.
+- `fly deploy` ships the WORKING DIRECTORY, not the last commit: uncommitted edits go live.
 
 ## Country reports (World Views) — process & schema
 - Storage: ONE flat file per country, content/countries/<ISO3>/analysis.yaml. NOT split (can.en.yaml etc. is
@@ -156,10 +212,11 @@
 - SSR: country pages have a dual-renderer SEO layer at src/pages/country/[cca3].astro (hidden SEO div +
   LegacyReveal reading view + AppShell client:only="react"; do NOT switch to client:load). It deliberately
   SHADOWS [...slug].astro for /country/* — treat any change there as affecting the catch-all. Crawlability is
-  GATED by SEO_READY_COUNTRIES in src/lib/analysedCountries.ts (drives SEO div, sitemap, globe marker, teaser
-  count). Expose a country only once its content is two-phase-regenerated and proofed; .net stays on hold
-  (see Deployment). The SEO div mirrors the React section order and reads new-name fields with legacy
-  fallback — keep the two renderers in sync.
+  GATED by SEO_READY_COUNTRIES in src/lib/analysedCountries.ts — ONE flag driving SEO div, sitemap, globe
+  marker, teaser count, the page's `noindex`, and the "Not updated" watermark (see "Crawlability &
+  publishing readiness" for the ready-marking process). Expose a country only once its content is
+  two-phase-regenerated and proofed; .net stays on hold (see Deployment). The SEO div mirrors the React
+  section order and reads new-name fields with legacy fallback — keep the two renderers in sync.
 - Validation: scripts/validate-country-citations.cjs (audit) + the workflow apply gate (hard). Required
   source fields: name, url, desc, accessDate, confidence, citationType (+ id); publicationDate optional
   (warning); volatility High|Med|Low warn-on-missing (freshness axis, orthogonal to confidence — drives the

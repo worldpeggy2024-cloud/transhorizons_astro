@@ -17,14 +17,25 @@ if (Astro.url.pathname.startsWith('/keystatic')) {
   return Astro.reroute(new Request(Astro.request));
 }
 
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+
+// Retired URLs → their current home (301). The Resource Wealth essay sat in Notes as a
+// placeholder before moving to Portfolio; the old path is kept as a redirect rather than
+// a 404 so anything still pointing at it lands on the article instead of a dead end, and
+// so the two URLs stop reading as duplicates of one page.
+const retiredRoutes: Record<string, string> = {
+  '/notes/canada-resources': '/portfolio/canada-resources',
+};
+if (retiredRoutes[path]) {
+  return Astro.redirect(retiredRoutes[path], 301);
+}
+
 // Real 404s. This catch-all only receives paths with no dedicated .astro page: either
 // valid client-only Wouter routes (serve 200 + SPA) or genuinely unknown paths (still
 // serve the SPA so its NotFound page renders, but with a real 404 status so search
 // engines don't treat dead URLs as live "soft-200" pages). Keep this list in sync with
 // the client routes in src/components/AppShell.tsx that have no .astro twin.
-const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const knownClientRoutes = new Set([
-  '/notes/canada-resources',
   '/world-analysis',
   '/tools/critical-minerals-map',
   '/portfolio/canada-resources',
@@ -39,7 +50,13 @@ const dynamicClientRoute = /^\/(country|world-analysis)\/[A-Za-z]{2,4}$/;
 if (!knownClientRoutes.has(path) && !dynamicClientRoute.test(path)) {
   Astro.response.status = 404;
 }
+
+// Everything this catch-all serves is a client-only React shell: the raw HTML carries
+// no content, so nothing here should be indexed. Known client routes are real pages
+// (200 + noindex, so Google doesn't bank an empty page as thin content); unknown paths
+// already carry a 404 above. Either way, noindex. A route earns indexing by getting a
+// dedicated .astro page with server-rendered text — not by being listed here.
 ---
-<Base>
+<Base noindex={true}>
   <AppShell client:only="react" />
 </Base>

@@ -15,7 +15,12 @@
     "apply:mineral-delta": "node scripts/apply-mineral-delta.cjs",
     "fix:fr": "node scripts/fix-fr-semicolon-spaces.cjs --all --write && node scripts/fix-fr-typography.cjs --all --write",
     "deploy": "node scripts/deploy.cjs",
-    "prepare": "git config core.hooksPath .githooks || true"
+    "prepare": "git config core.hooksPath .githooks || true",
+    "prebuild": "node scripts/check-article-registry.cjs",
+    "check:articles": "node scripts/check-article-registry.cjs",
+    "article:status": "node scripts/article-status.cjs status",
+    "article:ready": "node scripts/article-status.cjs ready",
+    "article:draft": "node scripts/article-status.cjs draft"
   },
   "dependencies": {
     "@astrojs/node": "^10.1.1",

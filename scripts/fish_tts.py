@@ -191,9 +191,27 @@ VOICES = {
         # title describes the speaker, not the language — do not read it as
         # Portuguese.
         "sincera":       "ed6e038bcc154c409f1f53be55046dc4",
+        # Candidates 2026-09-08, tried on the last Situation paragraph.
+        # https://fish.audio/app/m/90a49587f1774df48ab5bd4a0d167388/
+        "transport":     "90a49587f1774df48ab5bd4a0d167388",  # "Annonceur de Transport"
+        # https://fish.audio/app/m/fe7d55c36e384ea0a92880e0aab8b75c/
+        "annonceur":     "fe7d55c36e384ea0a92880e0aab8b75c",  # "Annonceur Publique Clair"
+        # https://fish.audio/app/m/76a69cf0d8884992b93e0c2a64f2442d/
+        "jessy":         "76a69cf0d8884992b93e0c2a64f2442d",  # "Jessy"
+        # https://fish.audio/app/m/733338fb946a4f72ada5bf0524fb723c/
+        "sage":          "733338fb946a4f72ada5bf0524fb723c",  # "Voix Sage et Réfléchie"
+        # https://fish.audio/app/m/0f0915b5d2914eb192668dc6f6dad310/
+        "adam-fr":       "0f0915b5d2914eb192668dc6f6dad310",  # "Adam for me"
         # female
         # https://fish.audio/app/m/651751df29b140ab9c791aef35dc8fc2/
         "ora":           "651751df29b140ab9c791aef35dc8fc2",  # articulate, but monotone by nature
+        # https://fish.audio/app/m/a5fcf77665304a6d80d954bc2bcd5880/
+        "sophie":        "a5fcf77665304a6d80d954bc2bcd5880",  # "Sophie"
+        # https://fish.audio/app/m/339d8b4a48bb4222acc5f58a9826ae96/
+        "artisane":      "339d8b4a48bb4222acc5f58a9826ae96",  # "Artisane confiante" — young female
+        # https://fish.audio/app/m/9ab918eff1784bdd938a92b629b1eaaa/
+        "claire":        "9ab918eff1784bdd938a92b629b1eaaa",  # "Dr. Claire Dupont" — chosen by
+                                                             # Peggy in Fish Audio directly
         # https://fish.audio/app/m/b5061779983d410dab91f4d070ca5586/
         "reflechie":     "b5061779983d410dab91f4d070ca5586",  # Voix Française Réfléchie — FAVOURITE
                                                               # APPROVED for resource-civilization FR (2026-08-16).

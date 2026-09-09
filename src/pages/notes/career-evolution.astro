@@ -11,6 +11,7 @@ import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
+import ReviewNotice from '../../components/ReviewNotice.astro';
 export const prerender = false;
 
 // ── Load YAML at build/request time ──────────────────────────────────────────
@@ -137,6 +138,7 @@ const UI = labels[L];
           {category} · {date}
         </span>
         <h1 class="font-playfair text-5xl md:text-6xl font-bold leading-tight mb-6">{title}</h1>
+        <ReviewNotice slug="career-evolution" lang={L} />
         <p class="text-xl text-white/80 mb-6 font-light">{subtitle}</p>
         <div class="flex items-center gap-6 text-sm">
           <span class="text-sand">{readTime}</span>

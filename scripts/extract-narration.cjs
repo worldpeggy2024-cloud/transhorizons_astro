@@ -219,7 +219,15 @@ function scorecardBlocks(data, lang) {
   try {
     const raw = data.scorecard_anchors;
     if (typeof raw === 'string' && raw.trim().startsWith('{')) anchors = JSON.parse(raw);
-  } catch { /* rationales are optional; ratings still read */ }
+  } catch (err) {
+    /* A malformed scorecard_anchors used to fail SILENTLY here: every rationale
+     * vanished and the section shrank from 4,000 characters to 250, leaving six
+     * bare ratings. Peggy lost a scorecard that way after a single unescaped
+     * quote inside the JSON (2026-09-08). Ratings still read — the fallback is
+     * right — but the loss must be visible. */
+    console.warn(`  !! scorecard_anchors is not valid JSON — RATIONALES DROPPED, `
+      + `ratings only. Fix the JSON: ${err.message}`);
+  }
 
   const parts = [];
   for (const [key, en, fr] of SCORECARD_ROWS) {

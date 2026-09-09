@@ -59,6 +59,66 @@
       }
     ]
   },
+  "countries/CAN/fr": {
+    "voice": "reflechie-flork",
+    "seconds": 9204,
+    "sections": [
+      {
+        "id": "baseline",
+        "label": "État des lieux",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/01-baseline.mp3",
+        "seconds": 169
+      },
+      {
+        "id": "scorecard",
+        "label": "scorecard",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/02-scorecard.mp3",
+        "seconds": 274
+      },
+      {
+        "id": "territory",
+        "label": "Territoire",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/03-territory.mp3",
+        "seconds": 971
+      },
+      {
+        "id": "society",
+        "label": "Société",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/04-society.mp3",
+        "seconds": 985
+      },
+      {
+        "id": "economy",
+        "label": "Économie",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/05-economy.mp3",
+        "seconds": 931
+      },
+      {
+        "id": "political",
+        "label": "Ordre politique",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/06-political.mp3",
+        "seconds": 1773
+      },
+      {
+        "id": "capacity",
+        "label": "Capacité de mise en œuvre",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/07-capacity.mp3",
+        "seconds": 2361
+      },
+      {
+        "id": "security",
+        "label": "Sécurité et diplomatie",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/08-security.mp3",
+        "seconds": 1308
+      },
+      {
+        "id": "situation",
+        "label": "Situation",
+        "src": "/audio/countries/CAN/fr/reflechie-flork/09-situation.mp3",
+        "seconds": 432
+      }
+    ]
+  },
   "countries/USA/en": {
     "voice": "florence-elderly-wisdom",
     "seconds": 8300,

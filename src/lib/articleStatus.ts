@@ -10,14 +10,14 @@
  * articleTexts.ts and content/narration-approved.json.
  */
 
-const FINALISED = new Set<string>([
-  // Portfolio / Analyses
-  'resource-civilization',
-  'canada-multipolar',
-  // Notes
-  'career-evolution',
-  'travel-observation',
-]);
+/*
+ * Readiness is declared once, in articleRegistry.ts — flipping `finalised: true`
+ * on an article's row there removes this badge, removes the SSR draft notice, and
+ * adds the page to the sitemap together. It used to be a hand-kept list here,
+ * which meant an article could be finalised for readers and still absent from the
+ * sitemap. Do not reintroduce a second list; edit the registry.
+ */
+import { FINALISED_SLUGS as FINALISED } from './articleRegistry';
 
 /** True when the piece has NOT been through a full review pass. */
 export function isInReview(slug?: string): boolean {

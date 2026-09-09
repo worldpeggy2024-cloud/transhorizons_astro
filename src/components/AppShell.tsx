@@ -19,7 +19,7 @@ import NotesTravelObservation from '@/pages-react/2026-04_Travel-Observation_Not
 import CountryPage from '@/pages-react/CountryPage';
 import WorldAnalysis from '@/pages-react/WorldAnalysis';
 import CriticalMineralsMap from '@/pages-react/CriticalMineralsMap';
-import NotesCanadaResources from '@/pages-react/2026-04_Canada-Resource-Wealth_Essay';
+import PortfolioCanadaResources from '@/pages-react/2026-04_Canada-Resource-Wealth_Essay';
 import PortfolioResourceCivilization from '@/pages-react/2026-04_Resource-Civilization_Essay';
 import PortfolioCanadaForestCarbon from '@/pages-react/2026-04_Canada-Forest-Carbon_Essay';
 import PortfolioForestSystemPressure from '@/pages-react/2026-04_Canada-Forest-System_Essay';
@@ -41,13 +41,12 @@ function Router() {
       <Route path={"/portfolio/ai-governance"} component={PortfolioTechnology} />
       <Route path={"/notes/career-evolution"} component={NotesCareerEvolution} />
       <Route path={"/notes/travel-observation"} component={NotesTravelObservation} />
-      <Route path={"/notes/canada-resources"} component={NotesCanadaResources} />
       <Route path={"/notes"} component={NotesIndex} />
       <Route path="/country/:cca3" component={CountryPage} />
       <Route path="/world-analysis/:cca3" component={CountryPage} />
       <Route path="/world-analysis" component={WorldAnalysis} />
       <Route path="/tools/critical-minerals-map" component={CriticalMineralsMap} />
-      <Route path="/portfolio/canada-resources" component={NotesCanadaResources} />
+      <Route path="/portfolio/canada-resources" component={PortfolioCanadaResources} />
       <Route path="/portfolio/resource-civilization" component={PortfolioResourceCivilization} />
       <Route path="/portfolio/canada-forest-carbon" component={PortfolioCanadaForestCarbon} />
       <Route path="/portfolio/canada-forest-system-climate-industrial-pressure" component={PortfolioForestSystemPressure} />

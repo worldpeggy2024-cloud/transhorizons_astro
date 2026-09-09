@@ -286,7 +286,11 @@ const pageDesc =
     : 'Structured country situation reports — territory, society, economy, political order, capacity to deliver, and security.';
 ---
 
-<Base title={pageTitle} description={pageDesc}>
+{/* Countries outside SEO_READY_COUNTRIES emit no SEO block and no reading view, so the
+    page is a bare React shell — 200 with ~3 words. Mark those noindex so Google reads
+    them as "not offered" rather than as thin content. The flag lifts automatically when
+    a country is added to SEO_READY_COUNTRIES, same gate as the SEO div. */}
+<Base title={pageTitle} description={pageDesc} noindex={!seoReady}>
 
   {seoEn && (
     <!-- Static SEO content: invisible to visitors, readable by crawlers. Emitted

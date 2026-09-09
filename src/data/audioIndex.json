@@ -76,6 +76,81 @@
       ]
     },
     {
+      "title": "Canada — rapport complet",
+      "lang": "fr",
+      "voices": [
+        {
+          "id": "reflechie-flork",
+          "label": "reflechie-flork"
+        }
+      ],
+      "tracks": [
+        {
+          "id": "can-fr-reflechie-flork-baseline",
+          "label": "État des lieux",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/01-baseline.mp3",
+          "seconds": 169
+        },
+        {
+          "id": "can-fr-reflechie-flork-scorecard",
+          "label": "scorecard",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/02-scorecard.mp3",
+          "seconds": 274
+        },
+        {
+          "id": "can-fr-reflechie-flork-territory",
+          "label": "Territoire",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/03-territory.mp3",
+          "seconds": 971
+        },
+        {
+          "id": "can-fr-reflechie-flork-society",
+          "label": "Société",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/04-society.mp3",
+          "seconds": 985
+        },
+        {
+          "id": "can-fr-reflechie-flork-economy",
+          "label": "Économie",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/05-economy.mp3",
+          "seconds": 931
+        },
+        {
+          "id": "can-fr-reflechie-flork-political",
+          "label": "Ordre politique",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/06-political.mp3",
+          "seconds": 1773
+        },
+        {
+          "id": "can-fr-reflechie-flork-capacity",
+          "label": "Capacité de mise en œuvre",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/07-capacity.mp3",
+          "seconds": 2361
+        },
+        {
+          "id": "can-fr-reflechie-flork-security",
+          "label": "Sécurité et diplomatie",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/08-security.mp3",
+          "seconds": 1308
+        },
+        {
+          "id": "can-fr-reflechie-flork-situation",
+          "label": "Situation",
+          "voice": "reflechie-flork",
+          "src": "/audio/countries/CAN/fr/reflechie-flork/09-situation.mp3",
+          "seconds": 432
+        }
+      ]
+    },
+    {
       "title": "United States — full report",
       "lang": "en",
       "voices": [

@@ -9,6 +9,7 @@ import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import yaml from 'js-yaml';
 import Base from '../../layouts/Base.astro';
+import ReviewNotice from '../../components/ReviewNotice.astro';
 export const prerender = false;
 
 const yamlPath = resolve(process.cwd(), 'content/articles/2026-01_AI-Governance_Essay.yaml');
@@ -102,6 +103,7 @@ const UI = labels[L];
       <div class="relative z-10 container max-w-4xl mx-auto px-6 text-white">
         <span class="text-xs uppercase tracking-widest text-sand/80 block mb-4">{category} · {date}</span>
         <h1 class="font-playfair text-5xl md:text-6xl font-bold leading-tight mb-6">{title}</h1>
+        <ReviewNotice slug="ai-governance" lang={L} />
         <p class="text-xl text-white/80 mb-6 font-light">{subtitle}</p>
         <div class="flex items-center gap-6 text-sm">
           <span class="text-sand">{readTime}</span>
