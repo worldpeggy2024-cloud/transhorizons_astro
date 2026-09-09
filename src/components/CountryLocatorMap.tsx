@@ -15,7 +15,7 @@
  */
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { geoOrthographic, geoPath, geoGraticule10 } from 'd3-geo';
+import { geoOrthographic, geoPath, geoGraticule10, geoContains } from 'd3-geo';
 import { SEO_READY_COUNTRIES } from '../lib/analysedCountries';
 
 type Ring = [number, number][];
@@ -165,31 +165,72 @@ export function CountryLocatorMap({
     const marker: [number, number] | null =
       center && path.area(target as any) < 40 ? (projection(center) ?? null) : null;
 
-    return { spherePath, graticulePath, land, targetPath, marker };
+    return { spherePath, graticulePath, land, targetPath, marker, projection };
   }, [features, code, width, height, center, rot?.[0], rot?.[1]]);
 
   // ── Drag-to-spin (interactive only) ────────────────────────────────────────
   // Latest rotation kept in a ref so the drag closures never go stale, and the
   // rotation is applied at most once per animation frame (SVG re-path is CPU-bound,
   // unlike the WebGL World Views globe — so no idle auto-spin, only on drag).
-  const rotRef = useRef(rot);
-  rotRef.current = rot;
-  const dragRef = useRef<{ x: number; y: number; moved: boolean } | null>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
   const rafRef = useRef<number | null>(null);
   const pendingRef = useRef<[number, number] | null>(null);
-  useEffect(() => () => { if (rafRef.current != null) cancelAnimationFrame(rafRef.current); }, []);
+  // Latest values the (attach-once) gesture listeners read — kept in refs so the
+  // listeners never go stale and never need re-attaching mid-drag.
+  const rotRef = useRef(rot); rotRef.current = rot;
+  const projRef = useRef(svg?.projection); projRef.current = svg?.projection;
+  const featRef = useRef(features); featRef.current = features;
+  const selRef = useRef(onSelectCountry); selRef.current = onSelectCountry;
+  const dimsRef = useRef({ width, height, code }); dimsRef.current = { width, height, code };
 
-  const onSvgPointerDown = (e: React.PointerEvent) => {
-    if (!interactive) return;
-    const st = { x: e.clientX, y: e.clientY, moved: false };
-    dragRef.current = st;
-    setGrabbing(true);
-    const move = (ev: PointerEvent) => {
-      const dx = ev.clientX - st.x, dy = ev.clientY - st.y;
-      st.x = ev.clientX; st.y = ev.clientY;
-      if (Math.abs(dx) + Math.abs(dy) > 3) st.moved = true;
+  // Native MOUSE + TOUCH listeners (NOT Pointer Events): iOS Safari/WebKit pointer
+  // events — especially setPointerCapture — are unreliable for touch drag and were
+  // the freeze. Touch events implicitly capture to the start element and are solid
+  // on iOS. touchmove is non-passive so we can preventDefault the page scroll while
+  // dragging; a lastTouch guard drops the ghost mouse events iOS fires after a touch.
+  const ready = !!svg;
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el || !interactive || !ready) return;
+    let active: { x: number; y: number; moved: boolean } | null = null;
+    let lastTouch = 0;
+    const point = (e: MouseEvent | TouchEvent) => {
+      if ('touches' in e) { const t = e.touches[0] ?? e.changedTouches[0]; return { x: t.clientX, y: t.clientY }; }
+      return { x: e.clientX, y: e.clientY };
+    };
+    const selectAt = (clientX: number, clientY: number) => {
+      const proj = projRef.current, feats = featRef.current, onSel = selRef.current;
+      const { width: w, height: h, code: cc } = dimsRef.current;
+      if (!proj || !feats || !onSel) return;
+      const rect = el.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+      const ux = (clientX - rect.left) * (w / rect.width);
+      const uy = (clientY - rect.top) * (h / rect.height);
+      const geo = (proj as any).invert?.([ux, uy]);
+      if (!geo) return;                                     // outside the globe disc
+      const hit = feats.find((f) => {
+        const fc = codeOf(f);
+        return fc !== cc && READY.has(fc) && geoContains(f as any, geo as [number, number]);
+      });
+      if (hit) onSel(codeOf(hit));
+    };
+    const start = (e: MouseEvent | TouchEvent) => {
+      const isTouch = 'touches' in e;
+      if (isTouch) lastTouch = Date.now();
+      else if (Date.now() - lastTouch < 500) return;        // ignore ghost mouse after a touch
+      const p = point(e);
+      active = { x: p.x, y: p.y, moved: false };
+      setGrabbing(true);
+    };
+    const move = (e: MouseEvent | TouchEvent) => {
+      if (!active) return;
+      const p = point(e);
+      const dx = p.x - active.x, dy = p.y - active.y;
+      active.x = p.x; active.y = p.y;
+      if (Math.abs(dx) + Math.abs(dy) > 3) active.moved = true;
+      if ('touches' in e && e.cancelable) e.preventDefault(); // block page scroll while dragging
       const cur = pendingRef.current ?? rotRef.current ?? [0, 0];
-      let lambda = cur[0] + dx * 0.4;                       // 0.4°/px — tune to taste
+      let lambda = cur[0] + dx * 0.4;                        // 0.4°/px — tune to taste
       const phi = Math.max(-90, Math.min(90, cur[1] - dy * 0.4));
       lambda = (((lambda + 180) % 360) + 360) % 360 - 180;
       pendingRef.current = [lambda, phi];
@@ -200,34 +241,46 @@ export function CountryLocatorMap({
         });
       }
     };
-    const up = () => {
-      window.removeEventListener('pointermove', move);
-      window.removeEventListener('pointerup', up);
-      pendingRef.current = null;
-      setGrabbing(false);
+    const end = (e: MouseEvent | TouchEvent) => {
+      const wasTap = !!active && !active.moved;
+      const p = active ? point(e) : null;
+      active = null; pendingRef.current = null; setGrabbing(false);
+      if (wasTap && p) selectAt(p.x, p.y);                  // a tap = jump to that report
     };
-    window.addEventListener('pointermove', move);
-    window.addEventListener('pointerup', up);
-  };
+    el.addEventListener('mousedown', start);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', end);
+    el.addEventListener('touchstart', start, { passive: true });
+    el.addEventListener('touchmove', move, { passive: false });
+    el.addEventListener('touchend', end);
+    el.addEventListener('touchcancel', end);
+    return () => {
+      el.removeEventListener('mousedown', start);
+      window.removeEventListener('mousemove', move);
+      window.removeEventListener('mouseup', end);
+      el.removeEventListener('touchstart', start);
+      el.removeEventListener('touchmove', move);
+      el.removeEventListener('touchend', end);
+      el.removeEventListener('touchcancel', end);
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
+  }, [interactive, ready]);
 
   const canSelect = (fc: string) => interactive && !!onSelectCountry && fc !== code && READY.has(fc);
-  const handleSelect = (fc: string) => {
-    if (dragRef.current?.moved) return;   // it was a drag, not a click
-    onSelectCountry?.(fc);
-  };
 
   if (!svg) return <div style={{ width, height }} aria-hidden="true" />;
 
   return (
     <svg
+      ref={svgRef}
       width={width}
       height={height}
       viewBox={`0 0 ${width} ${height}`}
       role="img"
       aria-label={label}
       className="bg-[var(--cr-bg)]"
-      style={interactive ? { cursor: grabbing ? 'grabbing' : 'grab', touchAction: 'none' } : undefined}
-      onPointerDown={interactive ? onSvgPointerDown : undefined}
+      // maxWidth/height:auto keep it from overflowing a narrow phone (scales via viewBox).
+      style={{ maxWidth: '100%', height: 'auto', ...(interactive ? { cursor: grabbing ? 'grabbing' : 'grab', touchAction: 'none' } : {}) }}
     >
       {/* Hemisphere (ocean) */}
       <path d={svg.spherePath} fill="var(--cr-map-ocean)" stroke="var(--cr-border)" strokeWidth={1} />
@@ -246,9 +299,8 @@ export function CountryLocatorMap({
             strokeWidth={selectable ? 0.6 : 0.4}
             fillRule="evenodd"
             style={selectable ? { cursor: 'pointer' } : undefined}
-            onClick={selectable ? () => handleSelect(n.code) : undefined}
-            onPointerEnter={selectable ? () => setHovered(n.code) : undefined}
-            onPointerLeave={selectable ? () => setHovered(null) : undefined}
+            onMouseEnter={selectable ? () => setHovered(n.code) : undefined}
+            onMouseLeave={selectable ? () => setHovered(null) : undefined}
           >
             {n.name && <title>{n.name}</title>}
           </path>

@@ -1381,7 +1381,7 @@ export default function CountryPage() {
 
         {/* Country header */}
         <div className="mb-12">
-          <div className="flex items-start justify-between gap-6 mb-6">
+          <div className="flex flex-col items-start gap-6 mb-6 sm:flex-row sm:justify-between">
             <div className="flex items-start gap-6">
             <FlagIcon
             cca2={country.cca2}
@@ -1411,7 +1411,7 @@ export default function CountryPage() {
             {/* Locator globe: the country against its neighbours (Natural Earth data),
                 now interactive — drag to spin, click another ready report to jump to it
                 (no trip back to World Views). FR-PLACEHOLDER: aria-label French — Peggy to verify. */}
-            <div className="hidden sm:block shrink-0">
+            <div className="order-first self-center w-[300px] max-w-full shrink-0 sm:order-none sm:self-auto">
               <CountryLocatorMap
                 cca3={country.cca3}
                 width={300}
