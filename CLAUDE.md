@@ -38,6 +38,11 @@
 - The ".net hold" is a CONTENT/POLICY decision, NOT infrastructure: because .net = the same app, whatever is on fly.dev is ALREADY public on .net (including any not-yet-corrected maps/country pages). "Hold" means do NOT promote/announce .net or submit it for indexing until the AI-generated maps and country pages are corrected — it does NOT shield the public domain from current content.
 - Remaining launch step, DEFERRED until explicit go-ahead: a 301 redirect from the fly.dev host to .net. Not done, because it would make fly.dev redirect away and destroy the verification target. Do not add it without go-ahead.
 - Working/verification host is still transhorizons-astro.fly.dev. After deploying, always state which Fly app received the deployment.
+- A DEPLOY CAN FAIL FOR REASONS UNRELATED TO THE CHANGE. `fly deploy` builds in Docker, and the Dockerfile
+  installs its own toolchain. pnpm is now PINNED (`pnpm@10.33.0`, matching local) because the unpinned
+  `npm install -g pnpm` picked up pnpm 12 on 2026-09-09 and broke the build with ERR_PNPM_IGNORED_BUILDS
+  (esbuild/sharp) with no repo change. If a deploy fails, read the Docker log before suspecting the diff;
+  keep the pin matched to the local pnpm version.
 
 ## Crawlability & publishing readiness (SEO layer)
 
