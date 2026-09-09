@@ -76,6 +76,81 @@
       ]
     },
     {
+      "title": "United States — full report",
+      "lang": "en",
+      "voices": [
+        {
+          "id": "florence-elderly-wisdom",
+          "label": "florence-elderly-wisdom"
+        }
+      ],
+      "tracks": [
+        {
+          "id": "usa-en-florence-elderly-wisdom-baseline",
+          "label": "Baseline",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/01-baseline.mp3",
+          "seconds": 71
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-scorecard",
+          "label": "scorecard",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/02-scorecard.mp3",
+          "seconds": 202
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-territory",
+          "label": "Territory",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/03-territory.mp3",
+          "seconds": 764
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-society",
+          "label": "Society",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/04-society.mp3",
+          "seconds": 574
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-economy",
+          "label": "Economy",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/05-economy.mp3",
+          "seconds": 1183
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-political",
+          "label": "Political Order",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/06-political.mp3",
+          "seconds": 1845
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-capacity",
+          "label": "Capacity to Deliver",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/07-capacity.mp3",
+          "seconds": 2003
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-security",
+          "label": "Security & Diplomacy",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/08-security.mp3",
+          "seconds": 1365
+        },
+        {
+          "id": "usa-en-florence-elderly-wisdom-situation",
+          "label": "Situation",
+          "voice": "florence-elderly-wisdom",
+          "src": "/audio/countries/USA/en/florence-elderly-wisdom/09-situation.mp3",
+          "seconds": 293
+        }
+      ]
+    },
+    {
       "title": "Articles",
       "lang": "en",
       "voices": [

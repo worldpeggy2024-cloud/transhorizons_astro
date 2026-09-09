@@ -59,6 +59,66 @@
       }
     ]
   },
+  "countries/USA/en": {
+    "voice": "florence-elderly-wisdom",
+    "seconds": 8300,
+    "sections": [
+      {
+        "id": "baseline",
+        "label": "Baseline",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/01-baseline.mp3",
+        "seconds": 71
+      },
+      {
+        "id": "scorecard",
+        "label": "scorecard",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/02-scorecard.mp3",
+        "seconds": 202
+      },
+      {
+        "id": "territory",
+        "label": "Territory",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/03-territory.mp3",
+        "seconds": 764
+      },
+      {
+        "id": "society",
+        "label": "Society",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/04-society.mp3",
+        "seconds": 574
+      },
+      {
+        "id": "economy",
+        "label": "Economy",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/05-economy.mp3",
+        "seconds": 1183
+      },
+      {
+        "id": "political",
+        "label": "Political Order",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/06-political.mp3",
+        "seconds": 1845
+      },
+      {
+        "id": "capacity",
+        "label": "Capacity to Deliver",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/07-capacity.mp3",
+        "seconds": 2003
+      },
+      {
+        "id": "security",
+        "label": "Security & Diplomacy",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/08-security.mp3",
+        "seconds": 1365
+      },
+      {
+        "id": "situation",
+        "label": "Situation",
+        "src": "/audio/countries/USA/en/florence-elderly-wisdom/09-situation.mp3",
+        "seconds": 293
+      }
+    ]
+  },
   "articles/resource-civilization/en": {
     "src": "/audio/articles/resource-civilization/en/adam-stone/01-article.mp3",
     "voice": "adam-stone",

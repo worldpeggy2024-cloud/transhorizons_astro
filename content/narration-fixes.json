@@ -164,6 +164,42 @@
           "Substrat": "Substra"
         },
         "why": "final t sounded in the title; it is silent"
+      },
+      {
+        "where": "Les dépenses de défense ont franchi",
+        "replace": {
+          "La Haye": "La Haie"
+        },
+        "why": "the Dutch city is /la ɛ/ in French, as in haie; the engine read the y"
+      },
+      {
+        "where": "Aucune projection gouvernementale de la trajectoire",
+        "replace": {
+          "La Haye": "La Haie"
+        },
+        "why": "the Dutch city is /la ɛ/ in French, as in haie; the engine read the y"
+      },
+      {
+        "where": "Services publics",
+        "replace": {
+          "Services publics": "Service publics"
+        },
+        "why": "the plural s was sounded in the title; two rerolls did not shift it, so it is the voice reading a plural title as a list. Singular in SPEECH only — the page keeps Services publics."
+      },
+      {
+        "where": "Forces militaires",
+        "replace": {
+          "Forces militaires": "Force militaires"
+        },
+        "why": "same sounded plural s, same remedy, speech only"
+      },
+      {
+        "where": "L'héritage colonial va dans une direction",
+        "replace": {
+          "(": "— ",
+          ")": " —"
+        },
+        "why": "the engine LOOPED at the close of a long parenthetical — it reached \"en éducation\", produced \"éducatie\" and fell back to an earlier word. Two rerolls did not help; em dashes did. Note this is a different failure from the parenthesis INTONATION problem, where dashes made no difference: here the nesting is what the engine cannot climb out of."
       }
     ],
     "countries/USA/en": [

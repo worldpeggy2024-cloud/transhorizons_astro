@@ -93,13 +93,21 @@ def main() -> int:
         for b in blocks:
             head = b.startswith(tts.HEADING_PREFIX)
             title = b.startswith(tts.SECTION_PREFIX) and not head
-            if not title and (head or not sectioned or unit < 0):
+            # The alternation marker starts a new unit, exactly as in the
+            # generator — without this the voices are assigned wrongly and half
+            # the marked blocks look changed when nothing has changed.
+            alt = b.startswith(tts.ALT_PREFIX)
+            if not title and (head or alt or not sectioned or unit < 0):
                 unit += 1
             if head:
                 at += tts.HEADING_PAUSE_BEFORE_MS / 1000
             vid = voices[0] if title else voices[unit % len(voices)]
             marker = tts.SECTION_PREFIX if title else tts.HEADING_PREFIX
             spoken = b[len(marker):].strip() if (head or title) else b
+            # Strip the alternation marker exactly as the generator does, or the
+            # key is wrong and every marked block looks changed.
+            if spoken.startswith(tts.ALT_PREFIX):
+                spoken = spoken[len(tts.ALT_PREFIX):].strip()
             override = tts.VOICE_HEADING.get(names[unit % len(names)], {})
             term = override.get("terminal", tts.HEADING_TERMINAL.get(lang, ""))
             if (head or title) and term and spoken and spoken[-1] not in ".!?:":

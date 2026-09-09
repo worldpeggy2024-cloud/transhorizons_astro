@@ -198,8 +198,20 @@ const voicesIn = (dir) => (fs.existsSync(dir)
 function collect() {
   const groups = [];
 
+  /* Every country with generated audio, not just Canada. This loop read
+   * `countries/CAN` literally until the USA report was finished and silently
+   * failed to stage — approved, staged nothing, no error. Derive the list from
+   * the directory instead, so the next country needs no code change. */
+  const countryDir = path.join(SRC, 'countries');
+  const countries = fs.existsSync(countryDir)
+    ? fs.readdirSync(countryDir, { withFileTypes: true })
+        .filter((e) => e.isDirectory()).map((e) => e.name).sort()
+    : [];
+  const COUNTRY_NAME = { CAN: 'Canada', USA: 'United States' };
+
+  for (const cca3 of countries) {
   for (const lang of ['en', 'fr']) {
-    const langDir = path.join(SRC, 'countries', 'CAN', lang);
+    const langDir = path.join(SRC, 'countries', cca3, lang);
     const voices = voicesIn(langDir);
     const tracks = [];
     for (const voice of voices) {
@@ -207,11 +219,11 @@ function collect() {
       for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).sort()) {
         const id = file.replace(/^\d+-/, '').replace(/\.mp3$/, '');
         const src = path.join(dir, file);
-        const rel = `countries/CAN/${lang}/${voice}/${file}`;
+        const rel = `countries/${cca3}/${lang}/${voice}/${file}`;
         if (!wanted(rel)) continue;
         copy(src, path.join(DEST, rel));
         tracks.push({
-          id: `can-${lang}-${voice}-${id}`,
+          id: `${cca3.toLowerCase()}-${lang}-${voice}-${id}`,
           label: SECTION_LABELS[id]?.[lang] ?? id,
           voice,
           src: `/audio/${rel}`,
@@ -220,8 +232,9 @@ function collect() {
       }
     }
     if (tracks.length) {
+      const name = COUNTRY_NAME[cca3] ?? cca3;
       groups.push({
-        title: lang === 'fr' ? 'Canada — rapport complet' : 'Canada — full report',
+        title: lang === 'fr' ? `${name} — rapport complet` : `${name} — full report`,
         lang,
         // Derived from what was actually staged, so --only never offers a voice
         // button whose tracks were filtered out.
@@ -230,6 +243,7 @@ function collect() {
         tracks,
       });
     }
+  }
   }
 
   for (const lang of ['en', 'fr']) {

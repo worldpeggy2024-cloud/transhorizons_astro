@@ -79,7 +79,7 @@ const SECTIONS = [
     ['capacity_delivery',         'Delivery',          'Réalisation'],
     ['capacity_publicServices',   'Public services',   'Services publics'],
     ['capacity_productivity',     'Productivity',      'Productivité'],
-    ['capacity_knownAndUnbuilt',  'Known and unbuilt', 'Connu et non bâti'],
+    ['capacity_knownAndUnbuilt',  'Known and unbuilt', 'Documenté et non réalisé'],
   ]},
   { id: 'security', en: 'Security & Diplomacy', fr: 'Sécurité et Diplomatie', rows: [
     ['security_posture',               'Posture',                'Posture'],
@@ -248,6 +248,12 @@ function scorecardBlocks(data, lang) {
  * The denominator closes the section because it is the moral guard: the
  * capacity to close any of this is inherited, never earned.
  */
+// A "since" value that carries no date: never spoken, in any language.
+const SINCE_PLACEHOLDER = new Set(['report-silent', 'Sans mention dans le rapport']);
+
+// Prefix meaning "start a new alternation unit here". See gapRegisterText.
+const ALT_PREFIX = '~ ';
+
 const GAP_CLASS = {
   en: {
     'no-attempt-documented':     'No attempt documented.',
@@ -274,9 +280,29 @@ function gapRegisterText(raw, lang = 'en') {
     // "since 2021 — the Act received royal assent …" reads as a sentence of its
     // own once capitalised; run into the gap it sounded like a subordinate
     // clause and the date stopped registering.
-    const since = String(it?.since || '').trim();
+    /* "since" carries the word in English ("since 2021 — …") but NOT in French,
+     * where the value starts with a bare year ("2021; la Loi …"). Spoken, that
+     * is a floating number: Peggy heard the date without any "depuis" and the
+     * sentence stopped making sense. Add the preposition only when the value
+     * actually opens with a date — the translated "Sans mention dans le
+     * rapport" is already a sentence and must not get one. */
+    let since = String(it?.since || '').trim();
+    /* "report-silent" is a PLACEHOLDER meaning the report gives no date — a
+     * field marker, not prose. On the page it sits in a labelled column so a
+     * reader understands it; spoken on its own it says nothing, because the
+     * thing it qualifies is never named (Peggy, 2026-09-08). Omit it entirely
+     * and the entry simply ends after its class, which is correct.
+     * The French value is the translated marker, kept for the PAGE. */
+    if (SINCE_PLACEHOLDER.has(since)) since = '';
+    else if (lang === 'fr' && since) since = `depuis ${since}`;
     const sinceSentence = since ? since.charAt(0).toUpperCase() + since.slice(1) : '';
-    return [it?.gap, classes[it?.class], sinceSentence].filter(Boolean).join(' ');
+    /* ALT_PREFIX marks a block as its own alternation unit. The register is a
+     * LIST of independent entries, not one argument, so handing all 24 to a
+     * single voice makes it a wall — the two narrators trading entry by entry
+     * is what a list wants (Peggy, 2026-09-08). The generator strips the
+     * marker; nothing reaches the engine. */
+    return ALT_PREFIX + [it?.gap, classes[it?.class], sinceSentence]
+      .filter(Boolean).join(' ');
   });
   return stripMarkers(
     [reg?.opener, ...items, reg?.denominator].filter(Boolean).join('\n\n')

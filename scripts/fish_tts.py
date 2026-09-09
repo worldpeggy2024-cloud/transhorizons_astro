@@ -174,7 +174,16 @@ VOICES = {
         # stoic-2, which Peggy finds "sometimes too deeply dramatic" over a long
         # report. All three are French-language models despite the last title.
         # https://fish.audio/fr/app/m/3411db31b6df47b2b9441024baf7c8f1/
-        "flork":         "3411db31b6df47b2b9441024baf7c8f1",  # "11Flork2" — Peggy: "a really nice one" very good but sometimes background noise at start up
+        # DELETED FROM FISH AUDIO 2026-09-08 — the id now returns 404 and nothing
+        # can be generated with it. The CAN French report was already 8/9 done in
+        # this pairing, so those recordings stand (they are files on disk, not
+        # dependent on the model) and SITUATION was finished with "militaire".
+        # The output folder is still named reflechie-flork; only 09-situation is
+        # a different second voice.
+        #
+        # The lesson worth keeping: a PUBLIC model can vanish mid-report. Locking
+        # a section as soon as it is approved is what makes that survivable.
+        "flork":         "3411db31b6df47b2b9441024baf7c8f1",  # "11Flork2" — GONE very good but sometimes background noise at start up
         # https://fish.audio/app/m/755a3c914978420589431b9ee466a59c/
         "militaire":     "755a3c914978420589431b9ee466a59c",  # "Voix Militaire Narrateur" - potentiall next fav
         # https://fish.audio/app/m/ed6e038bcc154c409f1f53be55046dc4/
@@ -317,6 +326,12 @@ def _fr_block_liaison(words: str) -> str:
     # "quatre-vin-onze". That removes the consonant the engine was liaising from,
     # rather than trying to block the liaison after the fact.
     words = words.replace('quatre-vingt-un', 'quatre-vin-un')
+    # 91 is an ENGINE-WIDE fault, not a voice or a dice roll: Peggy reproduced it
+    # in Fish Audio directly across every model she has, including ones that
+    # pronounce almost everything else correctly (2026-09-07). So this rule is
+    # permanent and voice-independent — do not re-test it per voice, and do not
+    # weaken it when a new voice is added.
+    #
     # 91 needs BOTH: the silent gt dropped AND an h to block the liaison.
     # Tested 2026-09-07 in the real sentence: digits no, quatre-vin-onze no,
     # quatre-vingt-onze no — only quatre-vin-honze. 81 needs only the first
@@ -514,7 +529,7 @@ def apply_local_fixes(block: str, fixes: list[dict]) -> tuple[str, list[str]]:
 #   Saskatchewan  respelled in French only — a borrowed name there, native in
 #                 English, where a miss is a defect rather than an accent.
 #   CUSMA/ACEUM   the same treaty: a WORD in English ("KUZ-ma"), LETTERS in
-#                 French ("A.C.E.U.M.").
+#                 French ("acéume").
 #   Van Assche    respelled in BOTH, with different spellings for the same
 #                sound: "Van Ache" (fr), "Van Ash" (en).
 #
@@ -570,12 +585,13 @@ SUBSTITUTIONS = {
         # "peub" spells that vowel. Word-bounded so publication, public and
         # publique are untouched.
         (r'\bpub(s?)\b', r'peub\1', 'English borrowing'),
-        # ACEUM (Accord Canada–États-Unis–Mexique) is SAID AS LETTERS in French —
-        # A-C-E-U-M — not as a word. Peggy's rule (2026-09-05). Note this is the
-        # opposite of the English CUSMA, which she reads as a word ("KUZ-ma"):
-        # the two acronyms are the same treaty and take different treatments,
-        # so neither language's rule may be copied to the other.
-        (r'\bACEUM\b', 'A.C.E.U.M.', 'acronym said as letters'),
+        # ACEUM (Accord Canada-Etats-Unis-Mexique) is said AS A WORD in French,
+        # "acéume" — corrected 2026-09-08 after Peggy heard the letter-by-letter
+        # version and reported it as "aséhum". The note here previously claimed
+        # it was said as LETTERS; that was wrong and stood for three days.
+        # Same treatment as the English CUSMA ("KUZ-ma") after all — but the
+        # spelling is not transferable, only the treatment.
+        (r'\bACEUM\b', 'Acéume', 'acronym said as a word'),
         # PIB (produit intérieur brut) is said as its LETTERS in French, /pe i be/.
         # The engine spelled it out wrongly — Peggy heard "P-I-I-B". Global: it
         # appears 17 times across the French country texts and the fault is not
@@ -926,6 +942,7 @@ CACHE_DIR = Path("tts-cache")
 # before anything is spoken and never appears on the page. Read at body speed
 # and pace they fell flat and cost intelligibility, so they are slowed slightly
 # and framed by a long pause before, short pause after — the audiobook shape.
+ALT_PREFIX = '~ '          # a block that starts its own alternation unit
 SECTION_PREFIX = "# "   # a section title: "# Territory"
 HEADING_PREFIX = "## "
 # 1.0 = no slowdown. Was 0.92, which made headings sound like a DIFFERENT
@@ -1369,7 +1386,11 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         # alternation, so section openings sound alike and adding a title does
         # not shift which voice reads which subsection.
         section_title = block.startswith(SECTION_PREFIX) and not heading
-        if not section_title and (heading or not sectioned or unit < 0):
+        # ALT_PREFIX ("~ ") marks a block that starts its own alternation unit,
+        # used by the gap register so its 24 entries trade between the two
+        # narrators instead of all falling to one. Stripped before synthesis.
+        alt_unit = block.startswith(ALT_PREFIX)
+        if not section_title and (heading or alt_unit or not sectioned or unit < 0):
             unit += 1
         # --flip-from swaps which voice takes which subsection, from the named
         # heading to the end of the section. Needed because the alternation is
@@ -1386,6 +1407,8 @@ def render(text: str, voice_id: str, model: str, api_key: str, args,
         )
         marker = SECTION_PREFIX if section_title else HEADING_PREFIX
         spoken = block[len(marker):].strip() if (heading or section_title) else block
+        if alt_unit:
+            spoken = spoken[len(ALT_PREFIX):].strip()
         override = VOICE_HEADING.get(this_voice_name, {})
         terminal = override.get('terminal', HEADING_TERMINAL.get(lang, ''))
         if (heading or section_title) and terminal:
