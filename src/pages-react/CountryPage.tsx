@@ -1408,16 +1408,19 @@ export default function CountryPage() {
               </p>
             </div>
             </div>
-            {/* Locator map: the country against its neighbours (Natural Earth data).
-                FR-PLACEHOLDER: aria-label French wording — Peggy to verify. */}
+            {/* Locator globe: the country against its neighbours (Natural Earth data),
+                now interactive — drag to spin, click another ready report to jump to it
+                (no trip back to World Views). FR-PLACEHOLDER: aria-label French — Peggy to verify. */}
             <div className="hidden sm:block shrink-0">
               <CountryLocatorMap
                 cca3={country.cca3}
                 width={300}
                 height={160}
+                interactive
+                onSelectCountry={(code) => { window.location.href = `/country/${code.toLowerCase()}`; }}
                 label={language === 'fr'
-                  ? `Carte de situation : ${name} et ses voisins`
-                  : `Locator map: ${name} and its neighbours`}
+                  ? `Carte de situation : ${name} et ses voisins — faites glisser pour tourner, cliquez un pays pour ouvrir son rapport`
+                  : `Locator globe: ${name} and its neighbours — drag to spin, click a country to open its report`}
               />
             </div>
           </div>

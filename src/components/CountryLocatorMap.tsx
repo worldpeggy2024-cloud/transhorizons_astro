@@ -14,8 +14,9 @@
  * Colors come from the --cr-map-* variables in global.css (light + dark).
  */
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { geoOrthographic, geoPath, geoGraticule10 } from 'd3-geo';
+import { SEO_READY_COUNTRIES } from '../lib/analysedCountries';
 
 type Ring = [number, number][];
 interface Feature {
@@ -81,13 +82,35 @@ function centerOf(ring: Ring): [number, number] {
   return [normLon(seed + (dxMin + dxMax) / 2), (latMin + latMax) / 2];
 }
 
+const READY = new Set(SEO_READY_COUNTRIES.map((c) => c.toUpperCase()));
+
+// Fixed brand burgundy — the World Views hover-card fill (rgba(125,26,46)). Used
+// for the current country so it reads the same in light AND dark, instead of the
+// theme --cr-accent, which is deliberately a light pink in dark mode.
+const REPORT_RED = '#7D1A2E';
+
 export function CountryLocatorMap({
   cca3,
   width = 300,
   height = 160,
   label,
-}: { cca3: string; width?: number; height?: number; label?: string }) {
+  interactive = false,
+  onSelectCountry,
+}: {
+  cca3: string;
+  width?: number;
+  height?: number;
+  label?: string;
+  // Opt-in: drag to spin, and click a report-ready country to jump to it.
+  // Off by default — the static locator ("Location of X") is unchanged.
+  interactive?: boolean;
+  onSelectCountry?: (cca3: string) => void;
+}) {
+  const code = cca3.toUpperCase();
   const [features, setFeatures] = useState<Feature[] | null>(null);
+  const [rotation, setRotation] = useState<[number, number] | null>(null);
+  const [hovered, setHovered] = useState<string | null>(null);
+  const [grabbing, setGrabbing] = useState(false);
 
   useEffect(() => {
     let alive = true;
@@ -95,19 +118,30 @@ export function CountryLocatorMap({
     return () => { alive = false; };
   }, []);
 
-  const svg = useMemo(() => {
+  // Country centre (largest landmass) = the initial orientation (Wikipedia-style).
+  const center = useMemo<[number, number] | null>(() => {
     if (!features) return null;
-    const code = cca3.toUpperCase();
+    const target = features.find((f) => codeOf(f) === code);
+    if (!target) return null;
+    const mainland = largestRing(ringsOf(target.geometry));
+    return mainland ? centerOf(mainland) : null;
+  }, [features, code]);
+
+  // (Re)centre when the target country changes; drag then takes over via setRotation.
+  useEffect(() => {
+    if (center) setRotation([-center[0], -center[1]]);
+  }, [code, center]);
+
+  const rot = rotation ?? (center ? ([-center[0], -center[1]] as [number, number]) : null);
+
+  const svg = useMemo(() => {
+    if (!features || !rot) return null;
     const target = features.find((f) => codeOf(f) === code);
     if (!target) return null;
 
-    const mainland = largestRing(ringsOf(target.geometry));
-    if (!mainland) return null;
-    const [lon0, lat0] = centerOf(mainland);
-
     const radius = Math.min(width, height) / 2 - 3;
     const projection = geoOrthographic()
-      .rotate([-lon0, -lat0])
+      .rotate([rot[0], rot[1]])
       .translate([width / 2, height / 2])
       .scale(radius)
       .clipAngle(90);
@@ -116,24 +150,71 @@ export function CountryLocatorMap({
     const spherePath = path({ type: 'Sphere' } as any) ?? '';
     const graticulePath = path(geoGraticule10() as any) ?? '';
 
-    const land: { d: string; name: string }[] = [];
+    const land: { d: string; name: string; code: string }[] = [];
     let targetPath = '';
     for (const f of features) {
       const d = path(f as any);
       if (!d) continue;
-      if (codeOf(f) === code) { targetPath = d; continue; }
-      land.push({ d, name: String(f.properties?.NAME ?? '') });
+      const fc = codeOf(f);
+      if (fc === code) { targetPath = d; continue; }
+      land.push({ d, name: String(f.properties?.NAME ?? ''), code: fc });
     }
 
     // Microstate fallback: too small to read at hemisphere scale → ring marker
     // at its location (the Wikipedia convention).
-    let marker: [number, number] | null = null;
-    if (path.area(target as any) < 40) {
-      marker = projection([lon0, lat0]) ?? null;
-    }
+    const marker: [number, number] | null =
+      center && path.area(target as any) < 40 ? (projection(center) ?? null) : null;
 
     return { spherePath, graticulePath, land, targetPath, marker };
-  }, [features, cca3, width, height]);
+  }, [features, code, width, height, center, rot?.[0], rot?.[1]]);
+
+  // ── Drag-to-spin (interactive only) ────────────────────────────────────────
+  // Latest rotation kept in a ref so the drag closures never go stale, and the
+  // rotation is applied at most once per animation frame (SVG re-path is CPU-bound,
+  // unlike the WebGL World Views globe — so no idle auto-spin, only on drag).
+  const rotRef = useRef(rot);
+  rotRef.current = rot;
+  const dragRef = useRef<{ x: number; y: number; moved: boolean } | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const pendingRef = useRef<[number, number] | null>(null);
+  useEffect(() => () => { if (rafRef.current != null) cancelAnimationFrame(rafRef.current); }, []);
+
+  const onSvgPointerDown = (e: React.PointerEvent) => {
+    if (!interactive) return;
+    const st = { x: e.clientX, y: e.clientY, moved: false };
+    dragRef.current = st;
+    setGrabbing(true);
+    const move = (ev: PointerEvent) => {
+      const dx = ev.clientX - st.x, dy = ev.clientY - st.y;
+      st.x = ev.clientX; st.y = ev.clientY;
+      if (Math.abs(dx) + Math.abs(dy) > 3) st.moved = true;
+      const cur = pendingRef.current ?? rotRef.current ?? [0, 0];
+      let lambda = cur[0] + dx * 0.4;                       // 0.4°/px — tune to taste
+      const phi = Math.max(-90, Math.min(90, cur[1] - dy * 0.4));
+      lambda = (((lambda + 180) % 360) + 360) % 360 - 180;
+      pendingRef.current = [lambda, phi];
+      if (rafRef.current == null) {
+        rafRef.current = requestAnimationFrame(() => {
+          rafRef.current = null;
+          if (pendingRef.current) setRotation(pendingRef.current);
+        });
+      }
+    };
+    const up = () => {
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+      pendingRef.current = null;
+      setGrabbing(false);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+
+  const canSelect = (fc: string) => interactive && !!onSelectCountry && fc !== code && READY.has(fc);
+  const handleSelect = (fc: string) => {
+    if (dragRef.current?.moved) return;   // it was a drag, not a click
+    onSelectCountry?.(fc);
+  };
 
   if (!svg) return <div style={{ width, height }} aria-hidden="true" />;
 
@@ -145,31 +226,41 @@ export function CountryLocatorMap({
       role="img"
       aria-label={label}
       className="bg-[var(--cr-bg)]"
+      style={interactive ? { cursor: grabbing ? 'grabbing' : 'grab', touchAction: 'none' } : undefined}
+      onPointerDown={interactive ? onSvgPointerDown : undefined}
     >
       {/* Hemisphere (ocean) */}
       <path d={svg.spherePath} fill="var(--cr-map-ocean)" stroke="var(--cr-border)" strokeWidth={1} />
       {/* Graticule */}
       <path d={svg.graticulePath} fill="none" stroke="var(--cr-map-graticule)" strokeWidth={0.4} />
-      {/* Land */}
-      {svg.land.map((n, i) => (
-        <path
-          key={i}
-          d={n.d}
-          fill="var(--cr-map-land)"
-          stroke="var(--cr-map-land-border)"
-          strokeWidth={0.4}
-          fillRule="evenodd"
-        >
-          {n.name && <title>{n.name}</title>}
-        </path>
-      ))}
-      {/* Target country */}
+      {/* Land — report-ready countries (interactive mode) render as clickable accents */}
+      {svg.land.map((n, i) => {
+        const selectable = canSelect(n.code);
+        return (
+          <path
+            key={i}
+            d={n.d}
+            fill={selectable ? 'var(--cr-accent)' : 'var(--cr-map-land)'}
+            fillOpacity={selectable ? (hovered === n.code ? 0.75 : 0.4) : 1}
+            stroke={selectable ? 'var(--cr-accent)' : 'var(--cr-map-land-border)'}
+            strokeWidth={selectable ? 0.6 : 0.4}
+            fillRule="evenodd"
+            style={selectable ? { cursor: 'pointer' } : undefined}
+            onClick={selectable ? () => handleSelect(n.code) : undefined}
+            onPointerEnter={selectable ? () => setHovered(n.code) : undefined}
+            onPointerLeave={selectable ? () => setHovered(null) : undefined}
+          >
+            {n.name && <title>{n.name}</title>}
+          </path>
+        );
+      })}
+      {/* Target country (the report you're on) */}
       {svg.targetPath && (
         <path
           d={svg.targetPath}
-          fill="var(--cr-accent)"
-          fillOpacity={0.9}
-          stroke="var(--cr-accent)"
+          fill={REPORT_RED}
+          fillOpacity={1}
+          stroke={REPORT_RED}
           strokeWidth={0.6}
           fillRule="evenodd"
         />
@@ -181,7 +272,7 @@ export function CountryLocatorMap({
           cy={svg.marker[1]}
           r={6}
           fill="none"
-          stroke="var(--cr-accent)"
+          stroke={REPORT_RED}
           strokeWidth={1.6}
         />
       )}
