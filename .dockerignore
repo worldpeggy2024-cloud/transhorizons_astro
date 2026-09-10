@@ -99,3 +99,8 @@ tts-out
 
 # Git history (~309 MB): the build never shells out to git.
 .git
+
+# site-film pipeline output (frames, builds, narration takes) — gigabytes, regenerable
+capture/out/
+capture/narration/*.wav
+capture/narration/*.mp3

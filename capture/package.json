@@ -1,0 +1,15 @@
+{
+  "name": "transhorizons-site-film",
+  "private": true,
+  "type": "module",
+  "description": "Playwright + ffmpeg pipeline that produces the TransHorizons site film (EN/FR) from one command.",
+  "scripts": {
+    "capture": "node src/capture.mjs",
+    "build:film": "node src/build-film.mjs",
+    "narration:list": "node src/narration-list.mjs",
+    "audio:units": "node src/audio-units.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.63.0"
+  }
+}

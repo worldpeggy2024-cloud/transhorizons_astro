@@ -20,7 +20,10 @@
     "check:articles": "node scripts/check-article-registry.cjs",
     "article:status": "node scripts/article-status.cjs status",
     "article:ready": "node scripts/article-status.cjs ready",
-    "article:draft": "node scripts/article-status.cjs draft"
+    "article:draft": "node scripts/article-status.cjs draft",
+    "capture": "npm --prefix capture run capture --",
+    "build:film": "npm --prefix capture run build:film --",
+    "film:narration": "npm --prefix capture run narration:list"
   },
   "dependencies": {
     "@astrojs/node": "^10.1.1",

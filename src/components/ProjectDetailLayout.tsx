@@ -54,6 +54,9 @@ interface ProjectDetailLayoutProps {
   title: string;
   subtitle: string;
   heroImage: string;
+  // Per-article focal point for the hero photo's object-cover crop (CSS
+  // object-position), e.g. 'center 25%' to reveal more of the top. Default center.
+  heroObjectPosition?: string;
   category: string;
   date: string;
   readTime: string;
@@ -92,6 +95,7 @@ export default function ProjectDetailLayout({
   title,
   subtitle,
   heroImage,
+  heroObjectPosition = 'center',
   category,
   date,
   readTime,
@@ -216,17 +220,22 @@ export default function ProjectDetailLayout({
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-[500px] overflow-hidden">
+      {/* Hero Section — min-height (not a fixed box) so a tall caption grows the
+          hero instead of overflowing and clipping on large screens; taller on xl
+          so more of the photo shows. Image + gradient are absolute so they cover
+          whatever height the caption needs; the caption is in normal flow,
+          bottom-aligned via the section's flex justify-end. */}
+      <section className="relative min-h-[500px] xl:min-h-[600px] overflow-hidden flex flex-col justify-end">
         <img
           src={heroImage}
           alt={title}
-          className="w-full h-full object-cover brightness-[0.45] saturate-[0.7]"
+          style={{ objectPosition: heroObjectPosition }}
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.45] saturate-[0.7]"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-12">
+        <div className="relative p-8 lg:p-12">
           <div className="max-w-3xl">
             <p className="text-[#7D1A2E] text-xs tracking-[0.25em] uppercase font-body font-bold mb-4">
               {category} • {date}

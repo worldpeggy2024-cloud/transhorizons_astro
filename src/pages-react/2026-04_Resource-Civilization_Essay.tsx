@@ -214,9 +214,7 @@ export default function PortfolioResourceCivilization() {
     <section className="mb-20">
       <div
         style={{
-          width: '100vw',
-          marginLeft: '50%',
-          transform: 'translateX(-50%)',
+          width: '100%',
           backgroundColor: surfaceBeige,
         }}
       >
@@ -236,9 +234,7 @@ export default function PortfolioResourceCivilization() {
         <p className="font-body font-medium mb-4" style={visualHeadingStyle}>{mapLabel}</p>
         <div
           style={{
-            width: '100vw',
-            marginLeft: '50%',
-            transform: 'translateX(-50%)',
+            width: '100%',
             backgroundColor: surfaceBeige,
           }}
         >
@@ -260,13 +256,11 @@ export default function PortfolioResourceCivilization() {
         <p className="font-body font-medium mb-4" style={visualHeadingStyle}>{diagramLabel}</p>
         <div
           style={{
-            width: '100vw',
-            marginLeft: '50%',
-            transform: 'translateX(-50%)',
+            width: '100%',
             backgroundColor: surfaceBeige,
           }}
         >
-          <div style={{ width: '90vw', margin: '0 auto' }}>
+          <div style={{ width: '100%', margin: '0 auto' }}>
             <img
               src={systemDiagramSrc}
               alt={L === 'fr'
@@ -306,6 +300,7 @@ export default function PortfolioResourceCivilization() {
       title={d[`title_${L}`] ?? ''}
       subtitle={d[`subtitle_${L}`] ?? ''}
       heroImage={d.heroImage ?? ''}
+      heroObjectPosition="center 25%"
       category={d[`category_${L}`] ?? ''}
       date={d.date ?? ''}
       readTime={d.readTime ?? ''}
