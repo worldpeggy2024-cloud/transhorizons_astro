@@ -105,9 +105,10 @@
       {
         "where": "Les médias sont indépendants de l'État",
         "replace": {
-          "Reporters": "reportair"
+          "Reporters": "reportair",
+          "quatre-vingt-un": "quatre-vin-un"
         },
-        "why": "English name read as English; the French approximation twice"
+        "why": "English name read as English; the French approximation twice || keeps the APPROVED reading after the global vingt->vin rule was withdrawn 2026-09-09. This paragraph was recorded and approved with it; a local fix is what the doctrine asked for all along. Do not remove — it would silently replace audio Peggy has already signed off."
       },
       {
         "where": "La composition du gouvernement",
@@ -154,9 +155,10 @@
       {
         "where": "Le partage des compétences",
         "replace": {
-          "partie VI": "partie 6"
+          "partie VI": "partie 6",
+          "quatre-vingt-onze": "quatre-vin-honze"
         },
-        "why": "Roman numeral read as letters"
+        "why": "Roman numeral read as letters || keeps the APPROVED reading after the global vingt->vin rule was withdrawn 2026-09-09. This paragraph was recorded and approved with it; a local fix is what the doctrine asked for all along. Do not remove — it would silently replace audio Peggy has already signed off."
       },
       {
         "where": "Substrat constitutionnel",
@@ -200,6 +202,13 @@
           ")": " —"
         },
         "why": "the engine LOOPED at the close of a long parenthetical — it reached \"en éducation\", produced \"éducatie\" and fell back to an earlier word. Two rerolls did not help; em dashes did. Note this is a different failure from the parenthesis INTONATION problem, where dashes made no difference: here the nesting is what the engine cannot climb out of."
+      },
+      {
+        "where": "L'éducation relève également des provinces",
+        "replace": {
+          "quatre-vingt-onze": "quatre-vin-honze"
+        },
+        "why": "keeps the APPROVED reading after the global vingt->vin rule was withdrawn 2026-09-09. This paragraph was recorded and approved with it; a local fix is what the doctrine asked for all along. Do not remove — it would silently replace audio Peggy has already signed off."
       }
     ],
     "countries/USA/en": [
@@ -209,6 +218,43 @@
           "2020s": "twenty-twenties"
         },
         "why": "\"2020s\" was not read as a decade"
+      }
+    ],
+    "countries/USA/fr": [
+      {
+        "where": "Les terres cultivées se contractent",
+        "replace": {
+          "un virgule dix-neuf milliard": "1,19 milliard",
+          "cinquante-deux virgule cinq %": "52,5 %",
+          "deux virgule vingt-six milliards": "2,26 milliards"
+        },
+        "why": "Peggy pasted this paragraph into Fish Audio and Lucas read every figure correctly — from the DIGITS. Our pipeline was sending the spelled-out forms, and \"deux virgule vingt-six\" is where it broke. So this paragraph sends exactly what she tested. The global decimal rule stays: it earned its place on 82,16 / 80,03, and this is one paragraph, not a policy."
+      },
+      {
+        "where": "Le réchauffement observé est plus rapide",
+        "replace": {
+          "contigus": "contigu",
+          "mille-neuf-cent-un": "mille-neuf-san-hun"
+        },
+        "why": "the plural s of contigus was sounded; and 1901 came out \"mille neuf cen-T-un\" — Peggy's respelling drops the t the engine was liaising from. Speech only, the page keeps both spellings."
+      },
+      {
+        "where": "Projections, chacune liée à son scénario",
+        "replace": {
+          "mille huit cent cinquante-et-un-1900": "mille-huit-cent-cinquante-et-un, mille-neuf-cent",
+          " m d'ici": " mètre d'ici",
+          "2002 augmente": "2002 haugmente",
+          "Pathway 5-huit virgule cinq": "Pathway cinq, huit virgule cinq",
+          "Pathway 1-deux virgule six": "Pathway un, deux virgule six"
+        },
+        "why": "four separate faults. 1851-1900 came out HALF-CONVERTED — \"mille huit cent cinquante-et-un-1900\" — because the ends-in-1 rule fired on 1851 before the range rule could reach the pair, so the range rule no longer recognised it. \"m\" was read as the letter. \"2002 augmente\" gave a Z liaison. And the two scenario names kept a bare hyphen, which reads as \"moins\" — a comma, as for every other range."
+      },
+      {
+        "where": "Les réseaux de distribution physique",
+        "replace": {
+          "100/20 mégabits": "cent sur vingt mégabits"
+        },
+        "why": "100/20 was read \"cent vingtième\". It is a download/upload pair, said \"cent sur vingt\" in French — Peggy was unsure and suggested \"100, 20\"; this is the idiomatic reading of a broadband spec, and one paragraph to change if she prefers hers."
       }
     ]
   }

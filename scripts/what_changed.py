@@ -70,6 +70,25 @@ def main() -> int:
     folder = "-".join(names)
     out_dir = Path("tts-out") / args.piece.replace(f"/{lang}", f"/{lang}/{folder}")
 
+    # A LOCKED paragraph is not a changed paragraph. The generator copies the
+    # approved take onto the new key, so the listener hears exactly what they
+    # approved — but this tool only looked for the key, so a locked-and-drifted
+    # paragraph was reported as "would change" and sent Peggy back to audio that
+    # was never going to move. False alarms here are not harmless: the whole
+    # point of this tool is to be trusted about what needs re-listening.
+    locks = tts.load_locks(args.piece)
+
+    def locked(block: str) -> bool:
+        head = block.lstrip("# ").strip().lower()
+        for lock in locks:
+            where = str(lock.get("where", "")).strip().lower()
+            if not where or not head.startswith(where):
+                continue
+            approved = str(lock.get("key", ""))
+            if approved and (tts.CACHE_DIR / approved[:2] / f"{approved}.mp3").is_file():
+                return True
+        return False
+
     grand = 0
     for section in manifest["sections"]:
         fixes = tts.load_local_fixes(args.piece)
@@ -87,6 +106,13 @@ def main() -> int:
             parts.append(prepped)
         text = "".join(parts)
         blocks = [b.strip() for b in re.split(r"\n\s*\n", text) if b.strip()]
+        # A one-block section (baseline) takes the generator's shortcut path in
+        # render(), which sends the whole thing in one request and never writes a
+        # paragraph cache entry. There is therefore never a key to find, and this
+        # tool reported the baseline as "would change" on every run of every
+        # country — a standing false alarm that trains the reader to ignore it.
+        if len(blocks) < 2:
+            continue
         sectioned = any(b.startswith(tts.HEADING_PREFIX) for b in blocks)
         mp3 = out_dir / section["mp3"]
         unit, at, rows = -1, 0.0, []
@@ -119,6 +145,8 @@ def main() -> int:
             d.update(f"|{vid}|{tts.MODEL}|{temp}|{speed}|{tts.MP3_BITRATE}|True".encode("utf-8"))
             key = d.hexdigest()
             cached = tts.CACHE_DIR / key[:2] / f"{key}.mp3"
+            if not cached.is_file() and locked(b):
+                continue          # approved take will be reused; nothing to hear
             if not cached.is_file():
                 rows.append((at, "TITLE" if (head or title) else "     ",
                              " ".join(b.lstrip("# ").split())[:58]))

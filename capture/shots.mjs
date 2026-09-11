@@ -50,28 +50,31 @@ export const config = {
   /*
    * Shot 21 — the report reading itself aloud.
    *
-   * mode 'bar'     — press "Listen to the report" (the Baseline audio bar) and,
-   *                  if entrySeconds > 0, seek that far into the Baseline
-   *                  recording on the very element the page plays. Reliable on
-   *                  the site as deployed.
-   * mode 'section' — press a section header's own "Listen to this section"
-   *                  button. BLOCKED by a site bug (2026-09-09): the sequence
-   *                  hook sets the new section's src on an element created
-   *                  with preload="none", so loadedmetadata never fires and
-   *                  playback never starts for any section but the current
-   *                  one (see README → "Site behaviour that differs").
+   * mode 'section' — press the section header's own speaker button, which is
+   *                  what the production document asks for ("section-header
+   *                  playback"). On the site as deployed this needs TWO
+   *                  presses with the studio recording chosen (the first only
+   *                  switches which section the player holds; see the comment
+   *                  in src/actions.mjs). The action presses, checks whether
+   *                  sound is actually coming out, and presses again only if
+   *                  it is not — so it keeps working unchanged once the
+   *                  two-click behaviour is fixed.
+   * mode 'bar'     — fallback: the Baseline "Listen to the report" bar, which
+   *                  always starts on one press. Same seek, same frame lock.
    *
-   * Entry point (measured with `npm run audio:units`): the Canada duet
-   * alternates per UNIT — per paragraph in the Baseline, per subsection
-   * heading in the six peers. In 01-baseline.mp3 Adam Stone's first paragraph
-   * ends at ~32.9 s and Ogechi starts the second at ~33.8 s; entering at 30.5 s
-   * puts the switch 3.3 s into the shot. (Once the bug above is fixed,
-   * section 'situation' with entry 0 switches voice at ~5.7 s with no seek.)
+   * ENTRY POINT. The Canada duet alternates per UNIT: per paragraph in the
+   * Baseline and Situation, per subsection heading in the six peers (measure
+   * with `npm run audio:units`). Situation, whose blocks are the event threads,
+   * runs: 0.0 s Adam Stone "Situation." · 1.5 s Adam Stone "Trade rupture with
+   * the United States, ongoing" · 5.75 s OGECHI takes the first event.
+   * Entering at 1.45 s opens the shot on the thread name and puts the voice
+   * change 4.3 s in — inside the shot, with both voices given room. Entry 0
+   * also works (the change lands at 5.75 s) and keeps the spoken section title.
    */
   reportAudio: {
-    mode: 'bar',
-    section: 'baseline',
-    entrySeconds: 30.5,
+    mode: 'section',
+    section: 'situation',
+    entrySeconds: 1.45,
     // The recording keeps sounding until the end of shot 21, then fades out
     // over this many seconds (the page player is paused at the same moment so
     // picture and sound agree).
@@ -163,7 +166,11 @@ export const config = {
     { id: '20', seconds: 5, action: 'reportVoicePicker', params: { holdPickerMs: 2000 },
       narration: { en: 'Reports are read aloud, in voices chosen for the material.',
                    fr: 'Les rapports sont lus à voix haute, dans des voix choisies pour le contenu.' } },
-    { id: '21', seconds: 8, action: 'reportReadsAloud', params: { pxPerFrame: 4, scrollPx: 1000, pauseAfter: true },
+    // 11 s, not the document's 6: the shot has to scroll to the section, open
+    // it and start the recording before the two voices can trade, and the change
+    // then needs room to register. Everything before the audio starts is the
+    // scroll the document asks for.
+    { id: '21', seconds: 11, action: 'reportReadsAloud', params: { pxPerFrame: 3, scrollPx: 900, pauseAfter: true },
       narration: null,
       // Site audio only — narrator silent. The recording is mixed from the
       // manifest's frame-locked playback timestamp.

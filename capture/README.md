@@ -8,45 +8,67 @@ changes in `shots.mjs` and the pipeline re-runs.
 Everything runs against `https://transhorizons.net` by default (`--base` to change).
 Nothing under `src/` is touched.
 
-## The four commands
+## The commands
 
 Run from the repository root (they delegate to `capture/`), or from `capture/` without
 the `npm run … --` prefix.
 
 | Command | What it does |
 |---|---|
+| `npm run narration:make` | Generates the 44 narration lines in Peggy's own cloned voices (see below). `-- --dry` lists them and sends nothing. |
 | `npm run capture -- --dry` | Walks the whole sequence, asserts every selector resolves, writes `capture/out/manifest.dry.json`, records nothing. ~1 minute. |
-| `npm run capture` | Full frame capture: `capture/out/frames/<shot>/` + `capture/out/manifest.json`. ~5 minutes, ~2–3 GB of PNG. |
+| `npm run capture` | Full frame capture: `capture/out/frames/<shot>/` + `capture/out/manifest.json`. ~5 minutes, ~1.5 GB of PNG. |
 | `npm run capture -- --shot 25a` | Re-captures one shot (from the page state it needs) and splices it into the existing manifest. |
 | `npm run build:film -- --lang fr` | Assembles, mixes, burns captions, exports `capture/out/transhorizons-film-full-fr.mp4`. Add `--cut short` for the 90-second version. |
 
-Helpers: `npm run film:narration` prints the 44 narration files expected (also written to
-`capture/narration/NARRATION-LIST.md`); `cd capture && npm run audio:units` lists where the
-two report voices switch in each section recording.
+Helpers: `npm run film:narration` writes `capture/narration/NARRATION-LIST.md` (every
+expected filename and its line); `cd capture && npm run audio:units` lists where the two
+report voices switch in each section recording; `npm run viewport:compare` renders the
+same article at two browser widths, for the framing decision.
 
 Options: `--base <url>` (e.g. `http://localhost:4321` for a local build), `--headed`
 (watch the browser), `--format jpeg` (smaller frames), `--from <id> --to <id>` (a range),
 `--narration-dir <dir>`, and on the build side `--crf <n>`, `--no-captions`, `--plan`
 (print the timeline and stop).
 
+## The narration
+
+Peggy's two cloned voices, the same ones the site's own recordings use, driven through the
+same `scripts/fish_tts.py`:
+
+| Language | Voice slug | Fish model |
+|---|---|---|
+| English | `peggy-thoughtful` | `048a6cbae79345a8a907899dec94ade5` |
+| French | `peggy` | `db27d5fb158a484c9629c9f1b06531b7` |
+
+`npm run narration:make` writes one MP3 per shot per language into `capture/narration/`,
+skipping any that already exist. One file per shot, never one per movement: a cloned voice
+drifts over a long passage, and a line that lands wrong has to be re-generatable alone.
+The text lives in `shots.mjs`, so editing a line there and re-running is the whole edit
+loop. All 44 lines together are about 2,300 characters, which is pennies.
+
+**Listen before building.** The engine is stochastic and nothing here can judge a reading.
+Two rows the production document flags: `shot08_en` is the longest sentence and most
+likely to flatten (split it at the colon into two shots if it does), and `shot15_fr` needs
+a beat before *routes arctiques*. To redo one line:
+
+```
+npm run narration:make -- --shot 8 --lang en --force
+```
+
+`capture/out/test-narration/` also holds 44 placeholder tones with the right names, for
+previewing the picture alone: build with `--narration-dir out/test-narration`.
+
 ## What you need to do
 
-1. **Generate the narration in Fish Audio** — 22 lines per language, 44 files, one file per
-   shot, saved under `capture/narration/` with exactly the names in
-   `capture/narration/NARRATION-LIST.md` (`shot01_en.wav`, `shot25a_fr.wav`, …; MP3 also
-   accepted). The pipeline never generates voice and fails loudly if a file is missing.
-2. **Run `npm run capture`.** If the narration files already exist, each shot is held at
-   least as long as its line; otherwise the assembler freeze-extends the shot's last frame
-   to fit the line (visible as a pause, never a cut-off sentence).
-3. **Run `npm run build:film -- --lang en` and `-- --lang fr`**, then the same with
+1. **`npm run narration:make`**, then listen to the 44 files and re-roll any you dislike.
+2. **`npm run capture`.** With the narration in place each shot is held at least as long as
+   its line; without it the assembler freeze-extends the shot's last frame to fit (a pause,
+   never a cut-off sentence).
+3. **`npm run build:film -- --lang en`** and `-- --lang fr`, then both again with
    `--cut short`. Four MP4s land in `capture/out/`.
 4. Watch them. To change a duration, a keyword, an entry point or a line: edit
    `shots.mjs`, re-capture the affected shot with `--shot <id>`, rebuild.
-
-To preview the picture before the narration exists: `capture/out/test-narration/` holds
-44 short placeholder tones with the right names; build with
-`--narration-dir out/test-narration` (from `capture/`). The films in `capture/out/`
-named `PREVIEW-tones-*` were made that way.
 
 ## What is in the box
 
@@ -89,16 +111,27 @@ overrides per build; the short cut is ~7 MB.
 
 The Canada report is a two-voice recording (Adam Stone / Ogechi) spliced per paragraph.
 `npm run audio:units` lists, per section file, where the voice changes. The capture presses
-the site's own **Listen to the report** button, seeks to `reportAudio.entrySeconds` on the
-very element the page plays, and records the exact millisecond of the `playing` event; the
-assembler mixes the site's MP3 (from `public/audio`) from that offset, at that time, fading
-out when the narrator resumes, and pauses the page player at the same moment.
+the **section header's own speaker button** — the "section-header playback" the production
+document asks for — seeks to `reportAudio.entrySeconds` on the very element the page plays,
+and measures the wall-clock millisecond at which the playhead was audibly at that position.
+The assembler mixes the site's MP3 (from `public/audio`) from that offset, at that time,
+fading out when the narrator resumes, and the page player is paused at the same moment so
+picture and sound agree.
 
-Default entry: Baseline at 30.5 s — Adam Stone finishes his first paragraph at ~32.9 s and
-Ogechi takes over at 33.8 s, 3.3 s into the shot (measured: the Baseline switches at 33.8 s,
-82.3 s and 128.9 s; the French duet's Baseline switches at 31.8 s, 79.9 s and 129.1 s, so the
-same entry also works if the French film mixes the French recording). Nothing is done to
-the voices.
+The lock is measured rather than inferred from a media event: `playing` does not fire again
+after a seek on an element that never stopped, and the sample reads the clock inside the
+page, on the same clock the recorder stamps frames with.
+
+Default entry: **Situation at 1.45 s**. That section's recording runs 0.0 s Adam Stone
+"Situation.", 1.5 s Adam Stone "Trade rupture with the United States, ongoing", 5.75 s
+Ogechi takes the first event. Entering at 1.45 s opens the shot on the thread name and puts
+the handover 4.3 s later — in the captured take, 7.3 s into the shot, with 3.8 s of the
+second voice after it. Entry `0` also works and keeps the spoken section title, at the cost
+of the change landing later. Nothing is done to the voices.
+
+Shot 21 is 11 s, not the document's 6: it has to scroll to the section, open it and start
+the recording before the two voices can trade, and everything before the audio starts is
+the scroll the document asks for.
 
 `npm run audio:units` pairs the splice silences of each section MP3 with its text blocks
 and replays the duet's alternation rule, printing the voice per block with the switches
@@ -115,15 +148,19 @@ position (`'french'`). Undecided — it is your call; the default is `'captured'
 
 The document was written from screenshots; these are the places the running site differs.
 
-- **"Listen to this section" does not start the studio recording** for any section other
-  than the one already loaded (bug in `src/hooks/useNarrationSequence.ts`: the new
-  section's `src` is set on an `Audio` created with `preload="none"`, so `loadedmetadata`
-  never fires and the deferred `play()` never runs; it silently falls back to nothing).
-  Shot 21 therefore starts from the Baseline bar with a seek. Once the hook calls
-  `audio.load()` (or plays directly) after switching `src`, set `reportAudio.mode:
-  'section'`, `section: 'situation'`, `entrySeconds: 0`: the Situation title and first
-  thread name are Adam Stone, and Ogechi takes the first event at ~5.7 s — a switch inside
-  the shot with no seek at all.
+- **A section's speaker button needs two presses** to start the studio recording (browser
+  voices need one). In `src/hooks/useNarrationSequence.ts`, `playSection` on a section that
+  is not the one loaded takes the `setIndex(next)` path and leaves the start to
+  `resume.current`, which only runs from the `loadedmetadata` handler — and the element is
+  created with `preload="none"`, so setting a new `src` fetches nothing and
+  `loadedmetadata` never fires. The second press then takes the `next === index` branch and
+  calls `play()` directly, which forces the load. Shot 21 presses, checks whether `play()`
+  was actually called (`paused` flips synchronously, so this is decided in well under a
+  second), and presses again only if it was not — so the shot keeps working unchanged once
+  this is fixed, and never sends a second press that would pause a playing report. The
+  manifest records a note when a second press was needed.
+  A fix would be to call `audio.load()` after assigning `src` (or to drop
+  `preload="none"` on the sequence element).
 - **Shot 26 "follow a link out to a note"** — a report links to nothing internal except
   its own sections and sources. The shot uses the site's real return-to-position feature:
   click a citation marker, the Sources section opens and the "You were reading: … Back"

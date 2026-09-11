@@ -1,10 +1,139 @@
 {
+  "_frozen_comment": [
+    "FROZEN pieces are finished reports. The generator refuses to touch them at",
+    "all — no regeneration, no reroll, nothing sent — until --thaw is passed.",
+    "",
+    "A lock protects ONE PARAGRAPH by key. A freeze protects a WHOLE REPORT,",
+    "including the paragraphs a lock cannot reach: those whose spoken text has",
+    "drifted since they were recorded, so the approved take no longer sits under",
+    "the key the current text computes. 68 paragraphs of countries/CAN/en are in",
+    "exactly that state — right audio, stale key, unlockable.",
+    "",
+    "Peggy, 2026-09-09: \"There is no touching the Canada report anymore at all.",
+    "it's done, all of it should be locked for now and nothing must be redone,",
+    "until i update the report.\"",
+    "",
+    "To update a frozen report: --thaw, regenerate, then re-lock each section",
+    "with scripts/lock_paragraph.py --section."
+  ],
+  "frozen": [
+    "countries/CAN/en",
+    "countries/CAN/fr"
+  ],
   "locked": {
     "countries/CAN/fr": [
       {
         "where": "Le pays a produit 623 térawattheures",
         "key": "f7b2e09a1fec41ebcfeaa8e46d2817bae447438f8896c696c369bdb9810d15dc",
         "section": "territory",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "18 au 22 août 2026: Quelques heures avant l'entrée en vigueu",
+        "key": "6ea6ba4953308754fd747d6984f305e82cc2e06d8397c2638ede62cec0fd4fec",
+        "section": "situation",
+        "voices": "reflechie-militaire"
+      },
+      {
+        "where": "Les produits conformes à l'Accord Canada–États-Unis–Mexique ",
+        "key": "83dc0a70d2431f9c75f36f6e9ada1acf1639d36e8e96b062f92bc7db40b5a3c4",
+        "section": "situation",
+        "voices": "reflechie-militaire"
+      },
+      {
+        "where": "Le Canada est le deuxième pays du monde par la superficie et",
+        "key": "38bfe2ff04214022fbe7ae33a1648198cd8e87225e2834c2fb84475a91766a44",
+        "section": "baseline",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Ses ressources naturelles sont exceptionnelles : environ le ",
+        "key": "41e20567dce2474b29a0b40c7cf2ef55487369753012c5277ef0f683a8b75350",
+        "section": "baseline",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La société canadienne est urbaine et plurielle, même si le c",
+        "key": "15163227dd9f84c595f3125f5bbf8a92427b2306e3e108f46a60a9966c7e7dde",
+        "section": "baseline",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'État est riche, doté des meilleures cotes de crédit et enc",
+        "key": "e1e6e2ec1a1eaf2a47f4aa49c784c379354ab9a1c4a1e10cb181d6335811f10e",
+        "section": "baseline",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Tableau de bord rapide",
+        "key": "6fcde74dd9aa9df7eb107ad758041339f8e8c26c83bc403cee529f3fa1366e01",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cohésion des élites",
+        "key": "486087d0103e1b0991ef54b740392bb318d4210a763b681d2665a2bdebc8d21f",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Moyenne à élevée. Gouvernement monopartite disposant du cont",
+        "key": "6326166932fe86dbc8a5b489cdd07dce9fbe4e0ca5606c092dfabaa438268b7f",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Élevée. Le rapport ne relève aucune violence politique ni di",
+        "key": "ac0b95c36c3fa2972107f612c2bb4a867d73bf0e1afc24a93bb476988b9a225e",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Loyauté des forces",
+        "key": "3da00aa65e057b0e0f47f7b9c56ff02b691f864a1c975c9e9c248f6967b0f3a8",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Élevée. Le contrôle civil est à la fois légal et démontré : ",
+        "key": "4f59507eb357035992f4007d109e12b01b5dac51318732038256f7167e3d5684",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Pression économique",
+        "key": "c63eef9b44ec3dc74f0d696f1ae69ad7a9ac96a7ff93d07f5baff40e7e131563",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Moyenne. Tension réelle frappant un État ayant les moyens de",
+        "key": "21cac434c2372c456fdfeef9972b24d9cd0591c221cd4362dba6695ece9ae6ac",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Capacité de mobilisation",
+        "key": "d5af616329058ec9c5dc56b4a737f1afcfa1979ab2d548e3cb3c4acf06f9690c",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Faible. Faible par absence : le rapport ne fait état d'aucun",
+        "key": "4dd07d1ddcca25232661bef460c1fa75c7d2e0c1f7a6c3284262d547ee71bf1a",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Résilience institutionnelle",
+        "key": "5d1c0569d34992e6eec32fa59e4d08c0b4730667c236204be070862ef942d92d",
+        "section": "scorecard",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Moyenne à élevée. Les mécanismes d'atténuation sont en grand",
+        "key": "d344a1838121ee974523b8da19227fb9a65023992da26f3fe0ed12c2409ee293",
+        "section": "scorecard",
         "voices": "reflechie-flork"
       },
       {
@@ -63,7 +192,7 @@
       },
       {
         "where": "Les pêches sont dans l'état le plus fragile. Sur 199 stocks ",
-        "key": "eba2f41b15504e26f1dfef88f1e4ab5ac3bc5f4cfca66cd12099d2be56e3131c",
+        "key": "f98c8766e3748014c356d402c4728d8e337eb480684ad19f5914c9cec8f9c910",
         "section": "territory",
         "voices": "reflechie-flork"
       },
@@ -105,7 +234,7 @@
       },
       {
         "where": "Le Canada se réchauffe à environ deux fois le rythme moyen m",
-        "key": "cdb313dacae7a754713c173ca5c4db692149ce64eb0749fa336959c6c52568df",
+        "key": "8608277d21e45e5747a0691dee28723165398b819fd9afc5e317453c71dea7be",
         "section": "territory",
         "voices": "reflechie-flork"
       },
@@ -147,7 +276,7 @@
       },
       {
         "where": "Le pays a produit 623 térawattheures d'électricité en 2024, ",
-        "key": "f7b2e09a1fec41ebcfeaa8e46d2817bae447438f8896c696c369bdb9810d15dc",
+        "key": "38992923c982b4000e67a423df538ed565268bf4f558595a606f0c96b391cd75",
         "section": "territory",
         "voices": "reflechie-flork"
       },
@@ -194,8 +323,176 @@
         "voices": "reflechie-flork"
       },
       {
+        "where": "Société",
+        "key": "6400cfba978f59d229a833f286cda0ad7b6d9e609ce3fd283958e906623b6b9a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Démographie",
+        "key": "6c5ce467f293fd1f1a243ebf6894d0fa6c39d702f213b6e8ef3d3b930d7004d1",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est une société de peuplement issue de l'immigrati",
+        "key": "2f148b216d41c15c67ad826cef0a74a5718f8eaf0bc3a14d3315a742ca968410",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La population s'établissait à quarante-et-un virgule six mil",
+        "key": "d5c3219ceb096893f3dd7bf19e8a553b1ddcbeccbd79ca4d4755b97f4298d8d6",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le vieillissement a repris à mesure que les migrants tempora",
+        "key": "28ca203baae33c8faa4d211555009b32c6bf18fcd0f4c9b4c497a5da56f31ee6",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Trois personnes sur quatre (soixante-quatorze virgule huit %",
+        "key": "4fb69f93e1a83c4b24a8d1ebc96a62e4ed7497e7a46150af044e0f1e59c6be1b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Composition",
+        "key": "355a4e1e58d072ed5d27622f6ecdafffc4163ef3e8bdf3258ba238b5fc18ab80",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada est ethniquement pluriel, et cette pluralité est r",
+        "key": "98c9f180e8e4116bff00c9920c5356727549961731313e502c630d7104c3d54a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les clivages sont transversaux à l'échelle nationale, sauf a",
+        "key": "10f70ea1f3128e9cb07c14bd5ef8301cf6ef900554211b4468f0242f2f408243",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'exception tient à l'autodétermination provinciale. Lorsqu'",
+        "key": "5f8049462af47d4fdec1762e52c3646aff7cba6b3f7001e7d257970865512f0b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Langue",
+        "key": "0007dec05fd5ded68136b3259aa634bac23ad2f8e9c73bd1378ca2faa2de9e5f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada compte deux langues officielles et une importante ",
+        "key": "2baf4ffe7bc88c7910dec6483ad93681631ea757e16fe0c28fcb5f57cf35513a",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
         "where": "L'étiquette du recensement masque une convergence et une asy",
-        "key": "d88cda006483b7b0b15b6d0ac2821bb22bed7dac3e02b1218e5b451131cff806",
+        "key": "07102ac1872b45dad809bb255f8137e4a25eafa1602ee2bb51de0baaf7fb6c3f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Sous ces proportions, le mouvement démographique va dans un ",
+        "key": "5fab0acb76c68a2b6970f19101b222580988df36a5074b5dfd409bd6d856e279",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Religion",
+        "key": "e457aaa532020495cf4a46eb3c72ad4cb8ba8aad2899204082660d403fbc93eb",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La religion est consignée par le questionnaire détaillé du r",
+        "key": "ca463f17ee2333ec277f4aa8dffe9cd79bda3b6761c14568ac0b2f06eb274d05",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La ligne de fracture historique catholiques–protestants (le ",
+        "key": "1ec9b0ae944b090a24fac64e2cb60aaef21892fb60edbcde4427271f52577514",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Bien-être",
+        "key": "a1703eafe73cd7f1cbf757feaa2847804784666a873c48383a658119f56e3a8e",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'espérance de vie à la naissance a atteint quatre-vingt-deu",
+        "key": "b3a57c5873279d9a740999a1a3cd4b6eade06f38b579293d50651eb49fb7fbaa",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le cancer est la principale cause de décès depuis le début d",
+        "key": "3fac839831ac4ba047f953ff687f072f09b985d034685e27a550405832d6c69f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'inégalité de santé la plus marquée sépare la population au",
+        "key": "ce4ddd88bc9fe2adc7ab334d6a2b02d9244b6cc56910fe611b6f1c334785ab1f",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Les résultats scolaires se comparent favorablement à l'inter",
+        "key": "df2e9b9f224953153319e970d3732eb7c8a719e049aea5c71c4b71d5803be496",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Cohésion sociale",
+        "key": "8bb534d131c82181d7032f43ac5233d148d8bc17a325dd84598e1d3cc51d7a2b",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La confiance envers les institutions est inégale plutôt qu'u",
+        "key": "f3ac62373401d258caa547e81e13b4ade4bd084950f5be6d65c706ea65cebfe0",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "La confiance interpersonnelle est modérée et s'effrite lente",
+        "key": "1e51e08eb73f84b3c7117ea3cc97d90e37b0523831267de7c252a5c14c10f9a9",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Calculé sur les cinq vagues de l'Enquête mondiale sur les va",
+        "key": "d9c1fe6a22ab984d9b66a7381874f6ea375e08f8ab5a6c0cde74f71db0e01e00",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Deux évolutions plus lentes l'accompagnent. La fierté nation",
+        "key": "7d44a8ab52e5a78057e790b4790efae73833cfe0abd90587670801a4e6a3fb62",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "Le Canada a obtenu 75 sur 100 à l'Indice de perception de la",
+        "key": "47581626fa7dcdf7e3f72a208172dd391582415b4c43edea99382cc9efc33429",
+        "section": "society",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "L'image de soi a tenu, contrairement au consensus sur l'immi",
+        "key": "a9b35edb6025aa0344a61ba2ab069246e1f287cebc1ff425fcae6c1a5dfa7405",
         "section": "society",
         "voices": "reflechie-flork"
       },
@@ -329,234 +626,6 @@
         "where": "Les réformes que la plupart des analystes jugent techniqueme",
         "key": "2e1ba981dd96a12d215d3b2af215c41e33eb9150e79eb5403489a79235c74d4a",
         "section": "economy",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Tableau de bord rapide",
-        "key": "6fcde74dd9aa9df7eb107ad758041339f8e8c26c83bc403cee529f3fa1366e01",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Cohésion des élites",
-        "key": "486087d0103e1b0991ef54b740392bb318d4210a763b681d2665a2bdebc8d21f",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Moyenne à élevée. Gouvernement monopartite disposant du cont",
-        "key": "6326166932fe86dbc8a5b489cdd07dce9fbe4e0ca5606c092dfabaa438268b7f",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Élevée. Le rapport ne relève aucune violence politique ni di",
-        "key": "ac0b95c36c3fa2972107f612c2bb4a867d73bf0e1afc24a93bb476988b9a225e",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Loyauté des forces",
-        "key": "3da00aa65e057b0e0f47f7b9c56ff02b691f864a1c975c9e9c248f6967b0f3a8",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Élevée. Le contrôle civil est à la fois légal et démontré : ",
-        "key": "4f59507eb357035992f4007d109e12b01b5dac51318732038256f7167e3d5684",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Pression économique",
-        "key": "c63eef9b44ec3dc74f0d696f1ae69ad7a9ac96a7ff93d07f5baff40e7e131563",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Capacité de mobilisation",
-        "key": "d5af616329058ec9c5dc56b4a737f1afcfa1979ab2d548e3cb3c4acf06f9690c",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Faible. Faible par absence : le rapport ne fait état d'aucun",
-        "key": "4dd07d1ddcca25232661bef460c1fa75c7d2e0c1f7a6c3284262d547ee71bf1a",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Résilience institutionnelle",
-        "key": "5d1c0569d34992e6eec32fa59e4d08c0b4730667c236204be070862ef942d92d",
-        "section": "scorecard",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Société",
-        "key": "6400cfba978f59d229a833f286cda0ad7b6d9e609ce3fd283958e906623b6b9a",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Démographie",
-        "key": "6c5ce467f293fd1f1a243ebf6894d0fa6c39d702f213b6e8ef3d3b930d7004d1",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada est une société de peuplement issue de l'immigrati",
-        "key": "2f148b216d41c15c67ad826cef0a74a5718f8eaf0bc3a14d3315a742ca968410",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La population s'établissait à quarante-et-un virgule six mil",
-        "key": "d5c3219ceb096893f3dd7bf19e8a553b1ddcbeccbd79ca4d4755b97f4298d8d6",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le vieillissement a repris à mesure que les migrants tempora",
-        "key": "28ca203baae33c8faa4d211555009b32c6bf18fcd0f4c9b4c497a5da56f31ee6",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Trois personnes sur quatre (soixante-quatorze virgule huit %",
-        "key": "4fb69f93e1a83c4b24a8d1ebc96a62e4ed7497e7a46150af044e0f1e59c6be1b",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Composition",
-        "key": "355a4e1e58d072ed5d27622f6ecdafffc4163ef3e8bdf3258ba238b5fc18ab80",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada est ethniquement pluriel, et cette pluralité est r",
-        "key": "98c9f180e8e4116bff00c9920c5356727549961731313e502c630d7104c3d54a",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Les clivages sont transversaux à l'échelle nationale, sauf a",
-        "key": "10f70ea1f3128e9cb07c14bd5ef8301cf6ef900554211b4468f0242f2f408243",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'exception tient à l'autodétermination provinciale. Lorsqu'",
-        "key": "5f8049462af47d4fdec1762e52c3646aff7cba6b3f7001e7d257970865512f0b",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Langue",
-        "key": "0007dec05fd5ded68136b3259aa634bac23ad2f8e9c73bd1378ca2faa2de9e5f",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada compte deux langues officielles et une importante ",
-        "key": "2baf4ffe7bc88c7910dec6483ad93681631ea757e16fe0c28fcb5f57cf35513a",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Sous ces proportions, le mouvement démographique va dans un ",
-        "key": "5fab0acb76c68a2b6970f19101b222580988df36a5074b5dfd409bd6d856e279",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Religion",
-        "key": "e457aaa532020495cf4a46eb3c72ad4cb8ba8aad2899204082660d403fbc93eb",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La religion est consignée par le questionnaire détaillé du r",
-        "key": "ca463f17ee2333ec277f4aa8dffe9cd79bda3b6761c14568ac0b2f06eb274d05",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La ligne de fracture historique catholiques–protestants (le ",
-        "key": "1ec9b0ae944b090a24fac64e2cb60aaef21892fb60edbcde4427271f52577514",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Bien-être",
-        "key": "a1703eafe73cd7f1cbf757feaa2847804784666a873c48383a658119f56e3a8e",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'espérance de vie à la naissance a atteint quatre-vingt-deu",
-        "key": "b3a57c5873279d9a740999a1a3cd4b6eade06f38b579293d50651eb49fb7fbaa",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le cancer est la principale cause de décès depuis le début d",
-        "key": "3fac839831ac4ba047f953ff687f072f09b985d034685e27a550405832d6c69f",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'inégalité de santé la plus marquée sépare la population au",
-        "key": "ce4ddd88bc9fe2adc7ab334d6a2b02d9244b6cc56910fe611b6f1c334785ab1f",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Les résultats scolaires se comparent favorablement à l'inter",
-        "key": "df2e9b9f224953153319e970d3732eb7c8a719e049aea5c71c4b71d5803be496",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Cohésion sociale",
-        "key": "8bb534d131c82181d7032f43ac5233d148d8bc17a325dd84598e1d3cc51d7a2b",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La confiance envers les institutions est inégale plutôt qu'u",
-        "key": "f3ac62373401d258caa547e81e13b4ade4bd084950f5be6d65c706ea65cebfe0",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "La confiance interpersonnelle est modérée et s'effrite lente",
-        "key": "1e51e08eb73f84b3c7117ea3cc97d90e37b0523831267de7c252a5c14c10f9a9",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Calculé sur les cinq vagues de l'Enquête mondiale sur les va",
-        "key": "d9c1fe6a22ab984d9b66a7381874f6ea375e08f8ab5a6c0cde74f71db0e01e00",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Deux évolutions plus lentes l'accompagnent. La fierté nation",
-        "key": "7d44a8ab52e5a78057e790b4790efae73833cfe0abd90587670801a4e6a3fb62",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "Le Canada a obtenu 75 sur 100 à l'Indice de perception de la",
-        "key": "47581626fa7dcdf7e3f72a208172dd391582415b4c43edea99382cc9efc33429",
-        "section": "society",
-        "voices": "reflechie-flork"
-      },
-      {
-        "where": "L'image de soi a tenu, contrairement au consensus sur l'immi",
-        "key": "a9b35edb6025aa0344a61ba2ab069246e1f287cebc1ff425fcae6c1a5dfa7405",
-        "section": "society",
         "voices": "reflechie-flork"
       },
       {
@@ -699,13 +768,13 @@
       },
       {
         "where": "Le Canada est une démocratie parlementaire fédérale sous mon",
-        "key": "813ae39a0bb2eacc2e0c0d20f0e53179672533c9f1667207407bdc4f3e9436b7",
+        "key": "c5ca84b9f3a2b3a2912b9d4351e62e7d4389c5a88bf74b864c8743e153eb3f6f",
         "section": "political",
         "voices": "reflechie-flork"
       },
       {
         "where": "La première pluralité est le bijuridisme. Le Québec relève d",
-        "key": "fd14e7a282535835d8122e801b4ef6fd123c3024b6e035ff68c1bb94a2b6ffd8",
+        "key": "bb3c4682e57a8368fd4c41f45ed868848bc54f88b10162530f29733be0017d69",
         "section": "political",
         "voices": "reflechie-flork"
       },
@@ -735,7 +804,7 @@
       },
       {
         "where": "Le partage des compétences est énoncé à la partie 6 de la Lo",
-        "key": "9513f4d36d0aaa8b6dddaaf0f943c07ea46ad9bdc26ce6c8f13d2744c4302a30",
+        "key": "8032cd4c3981f519229dce8de0b51b4c044f13c4d78ceda2990e59977728ab64",
         "section": "political",
         "voices": "reflechie-flork"
       },
@@ -747,7 +816,7 @@
       },
       {
         "where": "Le Québec détient les arrangements asymétriques les plus éte",
-        "key": "f92c92c66419285087076d18423b82a05586b573c0e3e9e6071cf0a75d0e36b0",
+        "key": "07057c9a5e0d6ac885c335ac1bf27da73fc767f6310c00758cd9eaba7e01a393",
         "section": "political",
         "voices": "reflechie-flork"
       },
@@ -1253,79 +1322,1067 @@
         "where": "Situation",
         "key": "a6b97b038681ab405e2453b5d08cad2cc4549f2b00c47a8d9b7f12ac5844d5c9",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "Rupture commerciale avec les États-Unis, en cours",
         "key": "9dd60a814489f0cf7687c79446de3b370ae7205b353a6fbe7b3f05c8e9744cbe",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "4 février au 4 mars 2025: Les États-Unis imposent des droits",
-        "key": "8e603ae48e298f0eec922eab2904346bf94054967aa6f08d325cfb92159ab0c7",
+        "key": "61469bc29a4faad1d4d92d442e667b38f0d8e3e550acfd988a1d0e8e19f90b34",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "Mars à juin 2025: Des droits sectoriels se superposent en ve",
         "key": "5fcd6a4b2ee4f00c8efc9a270c10560a44b2a9703c6ebcad8a5dbcdc92dce077",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "1er septembre 2025: Le Canada retire unilatéralement la plup",
-        "key": "c3f3f426b4cb23f6e2548b7533dc3f966847b2c10f231c81c272713fa95570ad",
+        "key": "4165ca9cbb7ac67f95f737dd364bb5eefff188546fe770120816947a94df6fa9",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "Octobre 2025: Les États-Unis imposent un droit de 10 % au ti",
         "key": "271ba7436b90fca4044f28bb8ceb1969aea875b45b643c40ae64a781ca54c166",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "24 février 2026: Le droit de 35 % sur les produits non confo",
-        "key": "07871f23f8d2c7053893243f3d6bc868edf9977fdead9df6a77e6c2a7cbb9f7e",
+        "key": "115b48d4dc8a965b74896263dffb99382b5cb8eb754726e72c84271acae03fa4",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "1er juillet 2026: Lors de l'examen conjoint trilatéral de l'",
         "key": "cb42b4b46b7078e00abfcf71075f345e1a94f1b8949710a59c2a4ffb0e27b47c",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "20 juillet 2026: Les États-Unis invoquent l'article 338 de l",
-        "key": "eb66b080efdce538c50fb71fdbb601287a3c9749ce4ba50cfe2ab7bfd2f965f7",
+        "key": "94bc8d4c44f6b2e2cdc27b71a10f7c1cf73d349510fe6eaa0bb830ddafb8d25c",
         "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "24 juillet 2026: La surtaxe au titre de l'article 122 expire",
         "key": "c00fec9b9943b759c37604c1d2eda112b16d97170f97afe8562116728d40bc46",
         "section": "situation",
-        "voices": "reflechie-militaire"
-      },
-      {
-        "where": "18 au 22 août 2026: Quelques heures avant l'entrée en vigueu",
-        "key": "6ea6ba4953308754fd747d6984f305e82cc2e06d8397c2638ede62cec0fd4fec",
-        "section": "situation",
-        "voices": "reflechie-militaire"
+        "voices": "reflechie-flork"
       },
       {
         "where": "25 août 2026: Le Canada annonce des contre-tarifs équivalent",
         "key": "f440078badc89a985775bbe50e5a40fbd7d08d71a75f9cfb6b837b0706b81ce4",
         "section": "situation",
+        "voices": "reflechie-flork"
+      },
+      {
+        "where": "18 au 22 août 2026",
+        "key": "6ea6ba4953308754fd747d6984f305e82cc2e06d8397c2638ede62cec0fd4fec",
+        "section": "situation",
         "voices": "reflechie-militaire"
       },
       {
-        "where": "Les produits conformes à l'Accord Canada–États-Unis–Mexique ",
+        "where": "Les produits conformes à l'Accord",
         "key": "83dc0a70d2431f9c75f36f6e9ada1acf1639d36e8e96b062f92bc7db40b5a3c4",
         "section": "situation",
         "voices": "reflechie-militaire"
+      }
+    ],
+    "countries/CAN/en": [
+      {
+        "where": "Canada is the world's second-largest country by area and one",
+        "key": "9bcf0e6d6c82344d479ac8144648c8b55899676919452a191eface2395dabeef",
+        "section": "baseline",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Society is plural (despite an immigration consensus that has",
+        "key": "ba4b2bf2e63b17cf20379616cd5fa20732f496baf4312461ccc0f78f360efa00",
+        "section": "baseline",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "It is wealthy, top-rated and constitutionally constrained, w",
+        "key": "fbcf5fed68aeffd3515e32d0c84c176bef42ae4f1b1e1a7b43bcaaef8e6eac2f",
+        "section": "baseline",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Quick scorecard",
+        "key": "946852c51a8391a7afd06e5bc3d43eae7ba712627233d4ad65951a2a49d47e8e",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Elite cohesion",
+        "key": "f5bacb2e5a17c44c16aca2f9e32e4537f91e2041984a2c7183ed63bfa0f21dda",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Medium to high. A single-party government with working contr",
+        "key": "710733f761474e6c1c19697408714c4c4753bc422aa9f69bd887a60eee9e8e69",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Security loyalty",
+        "key": "82add937758af95834f7701df10553073739520da84a7e7c3ab37153affd2831",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "High. Civilian control is both statutory and demonstrated: t",
+        "key": "38e5a295b475f592ec2424e0e1db8dec3b163f983780cba44d5f17c8409d7f96",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Economic pressure",
+        "key": "e2e48758cedd5f3fbbecaaccc9a66b3f82f9ec0cb14304b62d20a44dad4680ea",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Medium. Real strain landing on a state with the means to abs",
+        "key": "5327c469fc6e03a7b7a9e56a72a0d1b7bc324da21e08468c96d843fa69e64ec4",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Mobilization capacity",
+        "key": "efb838b6c61efa59b5fd2befe58e0296c58efc12f3deac8d889525052fe87620",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Institutional resilience",
+        "key": "0087874d683212253aebcf5694e683dcfe3034f34fa6d32726c67115f7df71fe",
+        "section": "scorecard",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Territory",
+        "key": "e6f29dee55cca4bbdc54712997bd99821f467a5ae9891b6c95b5fffad350864e",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Geography",
+        "key": "98efa1918897b2d9e9ede95507dc02987326a5bbebcb0a49d450c3366b64cc7f",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The world's second-largest country by area, Canada spans a c",
+        "key": "b1129713e371f0ce7cb4b1e7a82ec5352bf1d4c3455575823cc4c0c63b6b4cd8",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada occupies close to 10 million km² inhabited by roughly",
+        "key": "c4ac5a17788e42190cb2d782263c72916d7353c157684b506cfa264e56edc008",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Biosphere",
+        "key": "3da20397dc6a683d5d4b4d39435ee6eba776d0cd1bc5071d19e03989811a7981",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's biological base is among the largest national endow",
+        "key": "5ca9b57a5bf3eed71c0ca15bb3c90d926d0d174121cb529fa06189dabe4d2662",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Forests cover 369 million hectares, close to 9% of the world",
+        "key": "77ec142e3729b3e8070ce21008cf1e6611335985f4d154a0ab0b103ad3b31f51",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada holds roughly 20% of the world's freshwater reserves ",
+        "key": "73d7f8aba7b40bc3d1e4bb38d695817dff5ef30c3c5d3885745cdf7ceda4b1b6",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Arable land is the scarce component of the endowment and it ",
+        "key": "bab168800e1b50bba1fff5c31886b559c046b449c18d3cb0c534066aa4c2feb3",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Fisheries are in the weakest condition. Of 199 key stocks as",
+        "key": "c8cb9b5f0668a42b57fff894562bdfad4c571d19ec4a0f12f94c7f310e30aa88",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Minerals",
+        "key": "a9cd1d7953acc0993a8ff64505043edb0ef8ee9d2e7c3cf42aba3fc396d996ad",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Reserves are concentrated in a few commodities. Potash is th",
+        "key": "6c12ffcfa7d6ea5250231340c46d108ccffb9b11b5410fcd01a13b376dd8a365",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The endowment is regionally distributed: British Columbia ho",
+        "key": "2ebeec148901361eea4ad15b58d4a67a5cbe9915cca38c1f11e6f8a23b0e2fb4",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Climate",
+        "key": "4c3de00ba544bd5fe65a0527bdb88057c0d847fe8299690636df24c20678119d",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's baseline climate is cold and strongly continental a",
+        "key": "ac983f9fc0288cab891c4f53a92b003b96f04bd59a7eb42d66b3e304ef6988c1",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada is warming at roughly twice the global average rate, ",
+        "key": "e945306ff3b3edaa730e9aa9d49dcd3d28f50a7cbe9ac75d9efe39e06857f590",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Adaptive capacity does not match that exposure. Most public ",
+        "key": "c01e50f52676ceb63f0e835407b2854d05c87fd53acc31418c8fe85efa57edad",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Metabolism",
+        "key": "c6de67da63a2c775ef901c8a770a725be211167db1c07097976dfa63d9bdcb9a",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's metabolism is dominated by energy: a small populati",
+        "key": "3b05db50b32e9ed5fd09b10f92124337da49b83293cd446a88b190e96fe48566",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Water throughput mirrors the same north–south tension: rough",
+        "key": "0ab838d52e908ff1bcaf5656b6093c3c58934f87a9b63d13de0b372435b612a1",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The country produced 623 terawatt-hours of electricity in 20",
+        "key": "63098ce9ff22c6edcace8e4ef7f15898ad101f886662b3567020136d37ded585",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Distance shapes every network. A single east–west transporta",
+        "key": "7b025353be34d082000baca412b560d4a0d52d6972c76d10b18bc8889b30da2b",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Food supply is largely self-sufficient in staples — grains, ",
+        "key": "d913e0d8c2b61b9cbd5db913b53df888f2e5816feab3f4e35f118c553c5ed6a5",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Transition",
+        "key": "3e3a6e67378c7ea812254c106dc157855f6a96d74e13f0ab41e4a7fe7a55ec4c",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's greenhouse-gas emissions were 685 megatonnes of car",
+        "key": "214d64cd74f7625ce8640b76cdc62f49836e2b6743d940c3de117ed50af970b5",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Targets are legislated under the Canadian Net-Zero Emissions",
+        "key": "bb65d29ffc53315d0b94899085a5d0fa6b79bcc4753bb0764a50f43fe960ee34",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Delivered policy does not reach them. Climate Action Tracker",
+        "key": "97c287b706d665ad8f6b08dc9e1e6a2e268c6cde201a808e72cdd74fdaba9edd",
+        "section": "territory",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Society",
+        "key": "8f4d9f6da4da0a622b0d11f7550d75365fb480290fc1a25949775c523c571146",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Demographics",
+        "key": "de84704e6d5f4fdcdd1c8c184d1cb061eece386fe9e99e77b241af44a0da094b",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada is a settler-immigrant society built on Indigenous la",
+        "key": "14c3aabaf5daf55daa5727340fb10d757e69e0259eb2a082c049c9bba0300c1d",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Ageing has resumed as younger temporary migrants leave: medi",
+        "key": "66288d8294aadadff560405fee22be158c628e2b09e9e6b35fd3e524296fe76f",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Composition",
+        "key": "4bcc08f2dcb02a6856bcd3de4b5062b6d2c0d4512f060c484c134691379e5485",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada is ethnically plural, and the plurality is recent and",
+        "key": "756ba8c910f8e1a607825a15eb3500b8854a47be10ea4fc6f1b2e93794c39567",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The exception is provincial self-determination. Where a prov",
+        "key": "4e3009c20ef0e44dbccf69c227669bf9cf7364cfd643639fd043bbc6fe957d9a",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Language",
+        "key": "32c039fca90eded9447459137a48b5dc1cc8455ad9333a786428181a8473c40e",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada has two official languages and a large third linguist",
+        "key": "c137a2acc01647907de2333161aa797b50ac1d6b6372f6393764e7a2e2b18cc2",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The census label hides a convergence and an asymmetry. Nearl",
+        "key": "89b692ee57d23e9da0a17d0e7b48a6f2cac402b0a7fcb6047036c815071886e2",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Beneath these shares, the demographic movement runs one way:",
+        "key": "7e53a354f2fa091fccf771c0e17f04fae5ad752258edb89d63ff236758bfe5cc",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Religion",
+        "key": "16c3b28d98ba8458afc90f14e4c3cfc8bc1053f1d08e47283eeef232120a938f",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Religion is recorded by the census long-form questionnaire a",
+        "key": "5ad8756bf839c077d954670d4c7edbc6e66a18dca83568a8c371517ffa92b9b8",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Wellbeing",
+        "key": "15a75284e65fc85d1ba550252965b4bc063c9e13c4f59d691c92c206fb8d4c43",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Life expectancy at birth reached 82.16 years in 2024, a seco",
+        "key": "243bd01667c6a0e8d41aca99130aef8e7286186492d4b0403f018b0f7411d1cc",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Cancer has been the leading cause of death since the early 1",
+        "key": "311fb95e0f59d35448e22b92eb404fd0fd3409b3de6b8ef8f839c7ee8c62c1eb",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The sharpest health inequality falls between Indigenous and ",
+        "key": "dd0121763f091f60e40f57c25c45995a5b982f43c0794928a342bf3dcd80515c",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Education outcomes are strong by international comparison. C",
+        "key": "270e1f313fba00579fbe305b071623107348c77e098372907d1680738ce96c62",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Social cohesion",
+        "key": "6e20800ac9ff39a01c824786d988ebc5398aca8a871182ac131d169a76ac79dd",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Institutional confidence is uneven rather than uniformly low",
+        "key": "ecec74684761c6ead6ae7eac03ce13dabf1f655f756f79c00106eaf35cfaff16",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Interpersonal trust is moderate and drifting down slowly: in",
+        "key": "1f3ec41d93056dd9b8042806f7245676a569820d2a2cdfedab6d99cfbce5dc2a",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Computed across the five World Values Survey waves Canada ha",
+        "key": "75b6493d56aa50874cfc7d6562113e05925ea8338c6566307c4ca07c31ffd901",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada scored 75 out of 100 on the Transparency Internationa",
+        "key": "3677eaf65b92b5cdd61422739af2c253c5bbd25b01b83e794e629a921a5bca96",
+        "section": "society",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Economy",
+        "key": "a35299e31f2a98ce4f00060f0a2c9d8961dd973ce6be9eed922bfce88d06b7bc",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Real economy",
+        "key": "36e2bca755ccacb90eeee440578463342f2388dcb85b2f09e7d254bd92f10e91",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada is a high-income, advanced service economy (services ",
+        "key": "7408d74577e0335658adc7179d733a1a02f20088b82b869484d5ae84ac80c14f",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Services account for four in five jobs: the goods-producing ",
+        "key": "6bc5f308d95f3f2edca89a0a7d696845344d54c5563c2d414d8036adf9c6bdcf",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The information and communications technology sector is a gr",
+        "key": "8d966839d5a35c649bd73caf101367dc4361d0e73eb4299107741d8e4f22f865",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Growth is slowing and the outlook is unusually dispersed. Re",
+        "key": "0e2f2947f4a8be65d3e4dca2ee5b75407c91e4115094d4abfcb4bf688ab3e1b4",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Public finances",
+        "key": "60f6917b5d6efd1ac90e1fd6ac3d64f2a298fc4b4ecf9a16759bacd6ae5fc5d5",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The federal deficit was $66.9 billion in 2025-26, or 2.1% of",
+        "key": "d048dfa8448fae4702173212b1e414aca012593709d2e64a6fb1cfc42784bdf2",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Federal debt was 41.1% of gross domestic product in 2025-26 ",
+        "key": "3950acbde2618432e35950afe6e5434b3a7857025f74de79c5e03e8f078b8af9",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The Bank of Canada held its policy rate at 2.25% on 15 July ",
+        "key": "90b92e829ab7b18a787f7386ec942485fae9fcd9cdc9bc4713e8841320d82877",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada holds among the strongest sovereign credit ratings av",
+        "key": "b71de6bccd44b13fd9464a2acc0261418989460029c60bfb500b86074bc615a0",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "External vulnerability",
+        "key": "2db6fcc11b4c5eb97fc3c766ad8cd556661deb678478996a91efcb57c227a2ef",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's export base is resource-intensive and heavily conce",
+        "key": "7a691942e343a4d87722309f6b30f2d20ebb1c024b544b4b62ba022180631993",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The United States goods share fell sharply through 2025 as t",
+        "key": "9b1abb1828d75cc28fdd6338b58e2d88f13390ee5f0732f622e39de3b8beef42",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "This concentration creates acute tariff vulnerability, and t",
+        "key": "bdde4af950a020096fd9528ef97f0e4cf8aa4be9cf7278f5d7f8679fbf1a48d3",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Total goods exports reached about $778 billion in 2024, or $",
+        "key": "8d78aae174727a7a8017bc5cf05836925ac5976371618dc960eb1828c03ce9a4",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "No International Monetary Fund program is in place and Canad",
+        "key": "82fb3591ebbccbded617f87d080ee46482adafa0a75eb7ba7f747dd104e0defd",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Political economy",
+        "key": "87640b6afd095544d2fdb6c2828badc5a815eaa62c5ef9ea0a695b91864dea14",
+        "section": "economy",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Political Order",
+        "key": "7f9612d016867e2b592ca20eea22259bfb66ef7009997197594c669d1ce66834",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Power structure",
+        "key": "775bf173f97b10a2693585a4aaf7e304a3ddad95547d7ec7ebd242c7f442e8f8",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada is a Westminster parliamentary democracy under a cons",
+        "key": "37bdb01cec5c433a5ca9f79f8c2254fdf34c2d21e4d53e0c6ae4fd74923997ea",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Mark Carney is Prime Minister, leading a Liberal government.",
+        "key": "e376ce7313ed86abf9df81893962bae3796745fea38e3e167fd9761c4471b8c8",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The majority is real but thin and in motion. As of 25 July 2",
+        "key": "cc2cb0be84f519399b074e4e536394a189d3ad5d637eada9be506d2b2da7efb8",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Rights & checks",
+        "key": "e08857c03dfc6f16d3e3cd86ab9481edcba8d40c79f4e1fe63743b587e2babbb",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Media are independent of the state, with no direct governmen",
+        "key": "da09f9999a1487bf5e1a2225155cee291b2a7e087b71446444213974cc74d77e",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "External assessments place Canada in the upper tier while re",
+        "key": "c567c9d9762168f74447f24173e7b9b25df618b3c75437686bd0161f2836c0e1",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Stability drivers",
+        "key": "4d9c414d769cc6b9cd5928773d5b36dbbdb675d87a71b55a52f8c5ff949043b1",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Legitimacy rests on procedural democratic foundations: regul",
+        "key": "4e2e941a98dff5e380dd66f7c35046275b37e931a206022e73c855e16a3a2c18",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Civilian control of the security forces is statutory and una",
+        "key": "9ded776a6285dcdb98754e52ac4ef2b16b6a325b38e4fa087530fd422aed2c96",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Government composition is single-party rather than coalition",
+        "key": "c949fbe7ffc81a5d09c35594d4223b7f5f6e49112923bbc3f2d968d9df4e2b31",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Business-elite alignment is conditional rather than automati",
+        "key": "8840add3d5be490b795c03e8457bce08492ea21eccb11ec8ac6be8627f12b7e4",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The consequential fracture in the governing bloc is vertical",
+        "key": "50433e45026b9e40a2d3c5203602887000e1cf4de257604e72a20f2ebb4a61b4",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Shock absorbers & accelerants",
+        "key": "b17ac939655eb0889b6bd7f740341cb61a182498a1a1ed0a59767cc8c591b51b",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The buffers are substantial and mostly fiscal. Major federal",
+        "key": "80297b842574a87858242425d02c4d804fe4e4759ee1c3fc1dc7e7f0d6777bca",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The political accelerants concern the durability of the majo",
+        "key": "b3f736da02296cff6f2223e116c51f680aff2f25fa6f05a9535276b6cf36aa9e",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The sharper accelerant is constitutional and dated. Alberta ",
+        "key": "dd96da8f5a93c2a8adbdc5b58df1dcf7544ae05c6b05984e8b50ad320e3f05f8",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Two external shocks are live and unresolved. The Canada–Unit",
+        "key": "08ecf7a805924ebf3050c151e6fbab6ccd9cd956769ea0d1590c72b9e6c2f87f",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Constitutional substrate",
+        "key": "4d57509dc02440ac65110279e367628cc026e37ac94807bf44b82a628c73a369",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The second plurality is Indigenous constitutional rights and",
+        "key": "7d2f3a3162b2f1e88d3a44b23eb9f405ee27909191abb31f4974da92b3673072",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The vertical allocation is under active judicial determinati",
+        "key": "0ef86e020ff8fcd568c8a8be9dcd76ac4c6afae8ea7703f78fab60950c729f05",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "State structure",
+        "key": "5bcf775bb464671c48f023f560b707715d4dc2ec758910a11f2243e85e3fc928",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada is a federation of ten provinces and three territorie",
+        "key": "e03166f9125ebfc36b81d4b6449e9ed107ed62a9d92a0f0946629fecd82087cc",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The division of powers is set out in Part VI of the Constitu",
+        "key": "4ba5ab56704854b1955ab88d3b55bd03dadc9245edaea223727e6c39ab4c1d9b",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The sharpest asymmetry is between provinces and territories.",
+        "key": "db99b8f7b62bcf269f0dd6479b0ce75d12eb1677680adde301026a3d8c899eb5",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Quebec holds the most extensive asymmetric arrangements. It ",
+        "key": "020351379a1150e0dc89b5f3f0916a85f6227ad0c74c08a315d7a2c9dcd3cb78",
+        "section": "political",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Capacity to Deliver",
+        "key": "2afd11193ec1daa053b90c620769ce3da131a590070428021cc80e843640c373",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Inherited terrain",
+        "key": "a443255b373c1501c19e70c401141ab1653aabcafceb0a49f4a9b7effc94e7a5",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The terrain Canada's state works against is an unusually fav",
+        "key": "0f32362098c980b3214234d786b92cf917a51e66405422b2e5d047980e4a145a",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Scale is the first constraint. The country spans multiple ti",
+        "key": "4b650a553ccfe1cc07a3d419868fa54cc23704ea4167f0a805905f5170f5d1db",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada inherited both its resources and the pattern of trade",
+        "key": "c2ac85b12ad1e6c6670248ca099f0db74620d648ff63ef0832400f0ee5c272f7",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The colonial legacy runs in a specific direction and must be",
+        "key": "e5d003e8d77fad7291d5e2e09a49625d3c0ac7e5b4cf39575bbeba2b1deb4a96",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Steering",
+        "key": "73374cc3751ca7830f7482df597649d1aa0335d15c0ffecf6d553d33519f544f",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Approvals",
+        "key": "35a4e9873a4b6c69ab4f75d85ea51a0cf02f1c313f310ef9525f59a5d54e4770",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's federal permitting and impact-assessment regime has",
+        "key": "5f0ee11a0386278f3ca908aea5d67bc9b17446c14f1029523bacfc7bc0e972d9",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "On the record to date, projects are being handed to the offi",
+        "key": "4ff2115b085ec318a04fe361a0e815174b668ca68fb7e8b19f5729583ee30626",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Delivery",
+        "key": "f06a4f113f10c23240f25e14aff704c2088b7ad107cbb861a98caa3ac5ccbfed",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "On cost and schedule performance the federal record on its o",
+        "key": "c33884d655073af64b4da33f7fc36070717275a72168cd090dd3cf5190cd9ee3",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Where delivery is visibly happening, it is concentrated and ",
+        "key": "db5815147d7a710347639e3a7cac596ac21f4d8d04e42697e89590278115daed",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Public services",
+        "key": "b681455aa4cc46558bf28bd3bcae8fa140042f69877e75df888b70be72014874",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Health care is delivered by the provinces and the binding co",
+        "key": "cec607027844b677f80398adb4f5b56464c28da473244f51e8864322f516afe8",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Waiting times show a system doing more work and still moving",
+        "key": "f6c5bdc7a5094fa4196c82bb51e6ad16403739c6084392eb16dddd16a766161c",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Productivity",
+        "key": "91716ad7bb1263a30c612795870649425713d6e154e887a232280a3e59c3c881",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Productivity has been Canada's central medium-term economic ",
+        "key": "c0fcdca059c0fce16285be2c9a6a92b33b2071a02ef457e1aa8f2aaac648f0f6",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Innovation and research capacity is the clearest single gap.",
+        "key": "e4dff36d1207236568601f4ff548a468ff9f70c2de59414573681c54105a1f94",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Interprovincial barriers are the quantified drag. The Intern",
+        "key": "c78386ca9ef5dd69477c20ea663278dc2394d4141bead7ed6bcf3b507cc7b6f0",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Value-added processing is the structural sub-question inside",
+        "key": "cd792c120cdaa403cf65e38f2bafd0f38f177a30f4530a50cb451e34c39b0e19",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Known and unbuilt",
+        "key": "cde11d4693209128258d693a747b1879c45f64353c674a194bb8d44151ad8641",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "~ The Royal Canadian Mounted Police made recruitment a top p",
+        "key": "7561c357ea77a8de812bcba21ab6d7563c7eff9cb34d6bf1dc6ce928bef27b78",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "~ Indigenous Services Canada was found not to have effective",
+        "key": "9cc59d750f0f14361fc04ec5391bb1b587bd6b5d7c3d984af6065f37941942fe",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "~ Canada is among the top five global producers of 10 of its",
+        "key": "827546f2cede9d06b0358a1ff5975af047cc21052045d9070553437ab771c970",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "~ No government projection of the pathway to the declared 20",
+        "key": "be2725dadd144ee207072dd03d177453d30f0ee02c2caee3cdfb58dc65c24dff",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "~ The registry of foreign influence activities enacted by th",
+        "key": "2a8c195bae49cd8c570c57f4b97178377dc02c4bd84b0db8af1470a3c9cf1aa9",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The capacity to close any of this is inherited rather than e",
+        "key": "409f8374839397f762f1a235647da44eaf27079afb38e0ec0a60b35b2d09c4db",
+        "section": "capacity",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Security & Diplomacy",
+        "key": "68f3de14ebbd994c628bb5d650735a89c4ed4b7570b41dd3040e7b9157f37816",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Posture",
+        "key": "6ddc808cb9b9880d986b94fc14d54ab74d06658a9a65e540ac047588a84a46a9",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada's security posture is defensive and alliance-dependen",
+        "key": "b931031a8d2df30e5b905d0725be32d69139171db0b314c4684538831eae7df1",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The dependency has a specific shape, and it is the defining ",
+        "key": "270337af615bf4953646b8858216a19a463f12da5cafc074dcf5026bb0da46de",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Internal security",
+        "key": "13b860d00b4672124ccdc0d7d8d08d535f0a537c08bfb3557145a60d97e53028",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada faces no armed groups, no insurgency and no challenge",
+        "key": "59dc3e22d5da4743c2bab37e12f3ab3c959a3b8afdfa7fb789d506b62cdd92c8",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The terrorism threat level is Medium, meaning a violent act ",
+        "key": "5509a29d6ebcbddd109e0ef050c16491cab1163f551bda1d339ccf709b66ca27",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "No systemic corruption in the security forces is recorded in",
+        "key": "25d3e754bcc91734e64e54cd2d76593260ab85bcc7736499fd5d13e7370a2317",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Military",
+        "key": "cfc99349072b7a7e669df33fbbe2f7d786b2e68efcb27cf49af7023c678c5d65",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Canada can project force, but only at brigade scale and only",
+        "key": "8db84caf0b6f1cd1adfb2e1c44c8e041be5114aefcc65cce865a3a9b73a93bf6",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Transnational exposure",
+        "key": "01ac27b204e2ef666df76d52bb687c7f3c9440970aa6f9f1e56ed70c081e358d",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Diplomacy & external posture",
+        "key": "e5ac3c8029a2761f2b6953b76d0df9884a3163962202274db8559728e91c1234",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "The two relationships the foreign interference inquiry ident",
+        "key": "d9c76747a41f56a39dda98fedb44f8f65612f2a9614718b6b71a1f02430dadec",
+        "section": "security",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Situation",
+        "key": "1b79a0ec0a1f0b9bfae2489837cb10c9a4c6f32cf2eb7ea2f0bfcc2619046405",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Trade rupture with the United States, ongoing",
+        "key": "caa2c04378da367bca37b51b8cad469c73a132deb071300a2df27f2b33725085",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "March to June 2025: Sectoral tariffs were layered on under U",
+        "key": "7cb088ecaffa18f55bebf082d4e278d9f1d59c67c2b027fff5b698b985bc7f7c",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "1 September 2025: Canada unilaterally removed most counter-t",
+        "key": "a08e6e337bd5f1529d65da85faeb8e6cd66ed41e0bc80ec9d14cb6787d6bff13",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "1 July 2026: At the trilateral Kuzma joint review, the Unite",
+        "key": "ab3953aad5a88bb96edc72926ac57b56b92c4a7ba4995aae62076dcbab6b1ca5",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "20 July 2026: The United States invoked Section 338 of the T",
+        "key": "9735108fadded1a670d58b0b44ff15aa3923b528f7878c59aba72c0db80fbf68",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "24 July 2026: The Section 122 surcharge lapsed at the end of",
+        "key": "36688dcb6d79f3ae7b81260b3e6cc562186918b473ec0c9f5528aeffad2ccd4f",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "18 to 22 August 2026: Hours before the Section 338 duties we",
+        "key": "50c3b2ee548977be653ac77d70bbc6af95f4306780459a0b77e961061863dc1b",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "25 August 2026: Canada announced dollar-for-dollar counter-t",
+        "key": "819e79382e16bb4ce15b21532d5734e0693952229d1d5225aee843779df15b01",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      },
+      {
+        "where": "Kuzma-compliant goods remain tariff-free on the original mea",
+        "key": "e5a8c18e36388826e5625fcb2039953abbbd26d08c5b3f8afab0b13ec047d577",
+        "section": "situation",
+        "voices": "adam-stone-ogechi"
+      }
+    ],
+    "countries/USA/fr": [
+      {
+        "where": "Projections, chacune liée à son scénario et à son horizon",
+        "key": "eeae41f2b06eafe549430720377a62f22135c65f659e532c218f432011f01390",
+        "section": "territory",
+        "voices": "claire-lucas-dupont",
+        "why": "Peggy closed the stray parenthesis 2026-09-09 and said not to re-record: \"lets not redo the paragraph for now, maybe it won't make a difference to the reading.\" This keeps the take she is about to review. Release it if the reading turns out to be wrong. || TRIMMED 2026-09-10, not re-recorded: Peggy cut the closing SSP sentence from the source and asked whether the tail could be cut instead of rolling the dice again. Cut at the sentence pause the engine itself left at 83.09s, which the character count predicted to within 0.23s. The full take is still in the cache under the previous key if this ever needs undoing."
+      },
+      {
+        "where": "Le trait déterminant des résultats de santé",
+        "key": "6799fdc6a2e838f04e7da4ffa0d08e70d6c251be05b7705eab8076a19b9a5f23",
+        "section": "society",
+        "voices": "claire-lucas-dupont"
+      },
+      {
+        "where": "Les États-Unis sont un pays majoritairement chrétien",
+        "key": "8de311377d68272542307204145b7158cf90f22dc64c690e4789f0c5d75048cb",
+        "section": "society",
+        "voices": "claire-lucas-dupont",
+        "why": "Keeps the take Peggy reviewed. She fixed a duplicated 'étant' in the source and did not want the paragraph re-recorded for it. TWO attempts to cut the second 'étant' out of the audio failed and were reverted (2026-09-10) — the engine stops DEAD between the two words, 0.46s of true digital silence at 27.44-27.90s, and removing either word plus that gap still left the repetition audible to her. Her decision: live with it. Do not try again without new evidence."
+      },
+      {
+        "where": "La cohésion aux États-Unis subit des tensions",
+        "key": "ed4707423ae9846e07d2ab236065051457516511fc6613785878bd368a7672c3",
+        "section": "society",
+        "voices": "claire-lucas-dupont",
+        "why": "Keeps the take Peggy already reviewed. She deleted a stray comma before a semicolon, which is inaudible, and said not to re-record for it: \"the comma/semicolon won't make any difference in the audio... the paragraph is too long to redo for just this.\" Identified as the orphaned 83.30s take from the original Society run, by its position in that run's write order."
+      }
+    ],
+    "countries/USA/en": [
+      {
+        "where": "Projections, each bound to its scenario and horizon",
+        "key": "a1f39f2392b218bbec33c2980bbed505bb74b5bfbe7e488c2faab2fdf3881d52",
+        "section": "territory",
+        "voices": "florence-elderly-wisdom",
+        "why": "TRIMMED 2026-09-10, not re-recorded — the English counterpart of the French cut. Peggy removed the closing SSP sentence from both languages; the tail was cut at the sentence pause the engine itself left. The full take is still in the cache under the previous key. This lock keeps the trimmed take through any later text change."
       }
     ]
   }

@@ -31,6 +31,8 @@ const onlyShot = opt('shot', null);
 const fromId = opt('from', null);
 const toId = opt('to', null);
 const headed = flag('headed');
+// A partial run touches only some shots and must SPLICE into the manifest.
+const partial = !!(onlyShot || fromId || toId);
 const config = { ...baseConfig, baseUrl: opt('base', baseConfig.baseUrl), frameFormat: opt('format', baseConfig.frameFormat) };
 
 const log = (...a) => console.log(new Date().toISOString().slice(11, 23), ...a);
@@ -74,8 +76,8 @@ function narrationMinMs(shot) {
 // ─── main ────────────────────────────────────────────────────────────────────
 async function main() {
   fs.mkdirSync(outDir, { recursive: true });
-  const existing = onlyShot ? loadManifest() : null;
-  if (onlyShot && !existing && !dry) throw new Error(`--shot ${onlyShot}: no ${path.basename(manifestPath)} to splice into — run a full capture first.`);
+  const existing = partial ? loadManifest() : null;
+  if (partial && !existing && !dry) throw new Error(`a partial run needs an existing ${path.basename(manifestPath)} to splice into — run a full capture first.`);
 
   const all = config.shots;
   let seq = all;
@@ -149,6 +151,11 @@ async function main() {
     if (shot === seq[0] && shot !== all[0] && prepare[shot.id]) {
       log(`shot ${shot.id}: prepare (standalone state)`);
       await prepare[shot.id](ctx);
+      // Prepare is not part of the shot: it reuses the shot actions (some of
+      // which call markStart/event), so discard anything they recorded. Without
+      // this the shot inherits a visual start stamped before the clock existed.
+      ctx.visualStartMs = 0;
+      ctx.events = [];
     }
 
     const narrMin = narrationMinMs(shot);
@@ -192,7 +199,7 @@ async function main() {
   }
 
   // Closing card frames (both languages) — only on full (non-dry) runs or --shot closing.
-  if (!dry && !failed && (!onlyShot || onlyShot === 'closing')) {
+  if (!dry && !failed && (!partial || onlyShot === 'closing')) {
     const dir = path.join(framesDir, 'closing');
     fs.mkdirSync(dir, { recursive: true });
     for (const lang of ['en', 'fr']) {
@@ -208,7 +215,10 @@ async function main() {
 
   // Merge into the manifest.
   let manifest = existing || { version: 1, baseUrl: config.baseUrl, viewport: config.viewport, fps: config.fps, frameFormat: config.frameFormat, dry, createdAt: new Date().toISOString(), shots: [] };
-  if (onlyShot) {
+  // Any PARTIAL run (--shot, or a --from/--to range) splices into the existing
+  // manifest; only a full run replaces it. Getting this wrong silently drops
+  // every shot outside the range from the film while its frames sit on disk.
+  if (partial) {
     for (const r of results) {
       const i = manifest.shots.findIndex((s) => s.id === r.id);
       if (i >= 0) manifest.shots[i] = r; else manifest.shots.push(r);

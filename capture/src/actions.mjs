@@ -55,6 +55,49 @@ async function waitAudioEvent(ctx, { ev, srcIncludes, afterEpochMs = 0, timeout 
   throw new Error(`audio event "${ev}"${srcIncludes ? ` for ${srcIncludes}` : ''} not observed within ${timeout} ms — is the recording reachable on this host?`);
 }
 
+/*
+ * Did the press actually start playback?
+ *
+ * `paused` flips to false SYNCHRONOUSLY inside play(), before a single byte is
+ * fetched, so this answers within a frame or two and never waits on the
+ * network. That precision is what makes the retry in shot 21 safe: a press
+ * that worked is detected long before the retry window closes, so a second
+ * press is never sent to a report that is already playing (which would pause
+ * it).
+ */
+async function waitPlayCalled(ctx, timeout = 700) {
+  const deadline = Date.now() + timeout;
+  while (Date.now() < deadline) {
+    const on = await ctx.page.evaluate(() => (window.__thAudios || []).some((a) => !a.paused && !a.ended));
+    if (on) return true;
+    await sleep(50);
+  }
+  return false;
+}
+
+/*
+ * THE FRAME LOCK. Returns the wall-clock millisecond at which the report was
+ * audibly at a given playhead position, sampled together so the pair is
+ * self-consistent: { t, ct }. MEASURED, not inferred from which media event
+ * happens to fire — 'playing' does not fire again after a seek on an element
+ * that never stopped, which is exactly this case.
+ *
+ * Date.now() is read INSIDE the page, on the same machine clock the recorder
+ * stamps frames with, so no round-trip skew enters the pair.
+ */
+async function waitPlayhead(ctx, { minTime = 0, timeout = 15000 } = {}) {
+  const deadline = Date.now() + timeout;
+  while (Date.now() < deadline) {
+    const s = await ctx.page.evaluate((minTime) => {
+      const a = (window.__thAudios || []).find((x) => !x.paused && !x.ended && x.readyState >= 3 && x.currentTime >= minTime);
+      return a ? { t: Date.now(), ct: a.currentTime, src: a.currentSrc || a.src } : null;
+    }, minTime);
+    if (s) return s;
+    await sleep(20);
+  }
+  throw new Error(`the report never played past ${minTime.toFixed(2)}s within ${timeout} ms — is the recording reachable on this host?`);
+}
+
 async function waitReactCountryPage(page, h1) {
   await expectVisible(page.getByRole('heading', { level: 1, name: h1, exact: true }), `country h1 "${h1}"`, 30000);
   // React island mounted: the report's audio bar exists only once hydrated.
@@ -294,11 +337,32 @@ export const actions = {
       await expectVisible(header, `section "${section}" header`);
       await smoothScrollTo(ctx, { locator: header, block: 'start', offset: 64, pxPerFrame: 20 });
       await openSectionIfCollapsed(ctx, section);
-      // exact: the header's own accessible name contains this label too.
+      // exact: the section HEADER is itself a role=button whose accessible name
+      // contains this label, so a substring match would click the header and
+      // merely collapse the section.
       const listen = page.locator(`#${CSS_escape(section)}`).getByRole('button', { name: 'Listen to this section', exact: true });
       await expectVisible(listen, `"Listen to this section" on ${section}`);
-      t = Date.now();
-      await listen.click();
+      /*
+       * TWO PRESSES, on the site as deployed. With the studio recording chosen,
+       * the first press only switches which section the player holds: the hook
+       * sets the new src on an <audio preload="none">, so `loadedmetadata`
+       * never fires and its deferred play() never runs. The second press takes
+       * the "same section" branch and calls play() directly, which forces the
+       * load. Browser voices need one press — they have no file to fetch.
+       *
+       * So: press, check whether play() was actually called, press again only
+       * if it was not. Written to survive the fix — once one press suffices the
+       * check passes immediately and no second press is sent.
+       */
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        t = Date.now();
+        await listen.click();
+        if (await waitPlayCalled(ctx, attempt === 1 ? 700 : 2500)) {
+          if (attempt > 1) ctx.event('note', { text: `section playback needed ${attempt} presses (the site's two-press section-audio behaviour)` });
+          break;
+        }
+        if (attempt === 3) throw new Error(`"Listen to this section" on ${section} started nothing after 3 presses — is the recording reachable on this host?`);
+      }
     } else {
       const bar = page.getByRole('button', { name: /Listen to the report/ }).first();
       await expectVisible(bar, '"Listen to the report" bar');
@@ -306,20 +370,19 @@ export const actions = {
       t = Date.now();
       await bar.click();
     }
-    let ev = await waitAudioEvent(ctx, { ev: 'playing', afterEpochMs: t - 5 });
-    const file = ev.src.split('/').pop();
+    let lock = await waitPlayhead(ctx, { minTime: 0 });
     if (entrySeconds > 0) {
-      // Seek on the very element the page plays; React's timeupdate keeps the
-      // transport in step, so the pill shows the new position at once.
-      await page.evaluate(({ src, entry }) => {
-        const a = (window.__thAudios || []).find((x) => (x.currentSrc || x.src) === src);
-        if (!a) throw new Error('audio element not found for seek');
+      // Seek the element that is actually sounding; React's timeupdate keeps
+      // the transport in step, so the pill shows the new position at once.
+      await page.evaluate((entry) => {
+        const a = (window.__thAudios || []).find((x) => !x.paused && !x.ended);
+        if (!a) throw new Error('no playing audio element to seek');
         a.currentTime = entry;
-      }, { src: ev.src, entry: entrySeconds });
-      const t2 = Date.now();
-      ev = await waitAudioEvent(ctx, { ev: 'playing', srcIncludes: file, afterEpochMs: t2 - 5 });
+      }, entrySeconds);
+      lock = await waitPlayhead(ctx, { minTime: entrySeconds });
     }
-    ctx.event('reportAudio.playing', { epochMs: ev.t, currentTime: ev.ct, src: ev.src, file, section, entrySeconds, mode });
+    const file = lock.src.split('/').pop();
+    ctx.event('reportAudio.playing', { epochMs: lock.t, currentTime: lock.ct, src: lock.src, file, section, entrySeconds, mode });
     await expectVisible(page.getByRole('slider', { name: 'Playback position' }).last(), 'floating transport');
     // Move slowly down through the section headers while the recording plays;
     // the transport pill tracks the audio.

@@ -64,4 +64,47 @@ One file per shot — never one file per movement. Build the pauses in the assem
 
 Existing files found in capture/narration/ at the time of writing this list:
 
-- (none yet)
+- shot01_en.mp3
+- shot01_fr.mp3
+- shot02_en.mp3
+- shot02_fr.mp3
+- shot05_en.mp3
+- shot05_fr.mp3
+- shot06_en.mp3
+- shot06_fr.mp3
+- shot08_en.mp3
+- shot08_fr.mp3
+- shot09_en.mp3
+- shot09_fr.mp3
+- shot12_en.mp3
+- shot12_fr.mp3
+- shot13_en.mp3
+- shot13_fr.mp3
+- shot15_en.mp3
+- shot15_fr.mp3
+- shot17_en.mp3
+- shot17_fr.mp3
+- shot18_en.mp3
+- shot18_fr.mp3
+- shot19_en.mp3
+- shot19_fr.mp3
+- shot20_en.mp3
+- shot20_fr.mp3
+- shot22_en.mp3
+- shot22_fr.mp3
+- shot23_en.mp3
+- shot23_fr.mp3
+- shot24_en.mp3
+- shot24_fr.mp3
+- shot25a_en.mp3
+- shot25a_fr.mp3
+- shot25b_en.mp3
+- shot25b_fr.mp3
+- shot26_en.mp3
+- shot26_fr.mp3
+- shot27_en.mp3
+- shot27_fr.mp3
+- shot29_en.mp3
+- shot29_fr.mp3
+- shot30_en.mp3
+- shot30_fr.mp3

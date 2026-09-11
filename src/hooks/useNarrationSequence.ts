@@ -24,6 +24,13 @@ import type { NarrationSection } from '../lib/narrationAudio';
 
 const DEFAULT_RATE = 1;
 
+/* Whether the element already holds this file. `src` reads back as an absolute
+ * URL, and assigning to it restarts the load algorithm even when the value is
+ * unchanged — which would abort playback that has just been started. */
+function holds(audio: HTMLAudioElement, src: string): boolean {
+  return !!audio.src && audio.src === new URL(src, document.baseURI).href;
+}
+
 function storedRate(): number {
   if (typeof localStorage === 'undefined') return DEFAULT_RATE;
   const stored = Number(localStorage.getItem('tts-rate'));
@@ -87,7 +94,14 @@ export function useNarrationSequence(sections: NarrationSection[] | undefined): 
     const section = list[index];
     if (!audio || !section) return;
 
-    audio.src = section.src;
+    /* preload='none' is what keeps the page from fetching two hours of audio
+     * nobody asked for. But it also means the browser never reads metadata on
+     * its own, so `loadedmetadata` — and with it the resume below — only fires
+     * if something forces the load. Ask for the file whenever this load is
+     * meant to continue playing or to land on a position: a section rolling
+     * into the next at its end, or a seek that crossed a boundary. */
+    audio.preload = resume.current || pending.current ? 'auto' : 'none';
+    if (!holds(audio, section.src)) audio.src = section.src;
     audio.playbackRate = rate;
 
     const onMeta = () => {
@@ -211,11 +225,26 @@ export function useNarrationSequence(sections: NarrationSection[] | undefined): 
       play();
       return;
     }
+    /* A DIFFERENT section. Load it and start it inside THIS click, instead of
+     * raising a flag for the load effect to honour later. Deferring is what
+     * made this button need three presses: the effect swapped the file (killing
+     * the sound) and then waited for a `loadedmetadata` that preload='none'
+     * never delivered, so the first press silenced the report, the second
+     * turned the Pause icon back into Play, and only the third played. Starting
+     * here also keeps play() inside the user gesture, which iOS Safari
+     * requires — the deferred call was outside it. */
     pending.current = 0;
-    resume.current = true;
     setWithinTrack(0);
     setIndex(next);
-  }, [list, index, status, play, pause]);
+    if (!audio) { resume.current = true; return; }
+    resume.current = false;
+    // A newly assigned src starts at zero on its own; rewinding is only needed
+    // when the element already holds the file.
+    if (holds(audio, list[next].src)) audio.currentTime = 0;
+    else audio.src = list[next].src;
+    audio.playbackRate = rate;
+    void audio.play().then(() => setStatus('playing')).catch(() => setStatus('idle'));
+  }, [list, index, status, rate, play, pause]);
 
   const hasSection = useCallback(
     (id: string) => list.some((s) => s.id === id), [list]);

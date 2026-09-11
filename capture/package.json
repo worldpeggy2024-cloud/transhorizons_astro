@@ -7,7 +7,9 @@
     "capture": "node src/capture.mjs",
     "build:film": "node src/build-film.mjs",
     "narration:list": "node src/narration-list.mjs",
-    "audio:units": "node src/audio-units.mjs"
+    "audio:units": "node src/audio-units.mjs",
+    "narration:make": "node src/narration-make.mjs",
+    "viewport:compare": "node src/viewport-compare.mjs"
   },
   "dependencies": {
     "playwright": "1.63.0"

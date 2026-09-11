@@ -340,21 +340,26 @@ def _fr_block_liaison(words: str) -> str:
     # did not is the point of this comment.
     #
     # SUPERSEDED 2026-09-07 (evening): the fix is not an h but dropping the silent
-    # "gt". Peggy, after hearing both repeatedly: 81 is "quatre-vin-un", 91 is
-    # "quatre-vin-onze". That removes the consonant the engine was liaising from,
-    # rather than trying to block the liaison after the fact.
-    words = words.replace('quatre-vingt-un', 'quatre-vin-un')
-    # 91 is an ENGINE-WIDE fault, not a voice or a dice roll: Peggy reproduced it
-    # in Fish Audio directly across every model she has, including ones that
-    # pronounce almost everything else correctly (2026-09-07). So this rule is
-    # permanent and voice-independent — do not re-test it per voice, and do not
-    # weaken it when a new voice is added.
+    # "gt" — 81 as "quatre-vin-un", 91 as "quatre-vin-honze". That removed the
+    # consonant the engine was liaising from, rather than trying to block the
+    # liaison after the fact, and it held for the whole Canadian report.
     #
-    # 91 needs BOTH: the silent gt dropped AND an h to block the liaison.
-    # Tested 2026-09-07 in the real sentence: digits no, quatre-vin-onze no,
-    # quatre-vingt-onze no — only quatre-vin-honze. 81 needs only the first
-    # half, which is why the two are not symmetrical.
-    words = words.replace('quatre-vingt-onze', 'quatre-vin-honze')
+    # WITHDRAWN 2026-09-09 on Peggy's instruction, while reviewing the USA report
+    # in French. Spelling "vingt" as "vin" teaches the engine the wrong word: it
+    # then carries into the figures where the t MUST be sounded ("vingt-deux",
+    # "vingt ans"), so a rule that rescued two numbers was costing the many. The
+    # 11 paragraphs it reached are listed in the note below; the two Canadian
+    # ones Peggy had approved keep the old reading through their own LOCAL fixes
+    # in content/narration-fixes.json, which is where a respelling this narrow
+    # belonged from the start. Everything else it touched is either locked or
+    # not yet recorded.
+    #
+    # THE LESSON, and it is the same one three times over: a respelling is a
+    # BIAS, not an instruction. It biases every word that looks like it, not the
+    # one figure you were listening to. Reach for a local fix.
+    #
+    # Kept as a no-op rather than deleted, like the h-aspiré attempt above: the
+    # evidence that it did not work is the point of the comment.
     return words
 
 
@@ -453,6 +458,30 @@ def _fr_spell_decimal(match) -> str:
 LOCKS_FILE = Path("content") / "narration-locks.json"
 
 
+def is_frozen(piece: str) -> bool:
+    """Whether this piece is FINISHED and must not be regenerated at all.
+
+    A lock protects one paragraph. A freeze protects a whole report, including
+    the paragraphs a lock CANNOT reach — the ones whose spoken text has drifted
+    since they were recorded, so their approved take no longer sits under the
+    key the current text computes. 68 paragraphs of the Canadian report in
+    English are in exactly that state: the audio is right, the key is stale, and
+    no lock can be written for them.
+
+    Peggy, 2026-09-09, on the Canadian report: "There is no touching the Canada
+    report anymore at all. it's done, all of it should be locked for now and
+    nothing must be redone, until i update the report." This is that. Release it
+    with --thaw when the report is next updated, and re-lock afterwards.
+    """
+    if not LOCKS_FILE.is_file():
+        return False
+    try:
+        data = json.loads(LOCKS_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return False
+    return piece in (data.get("frozen") or [])
+
+
 def load_locks(piece: str) -> list[dict]:
     """Paragraphs whose approved audio must never be re-synthesised.
 
@@ -492,10 +521,19 @@ def honour_lock(block: str, key: str, locks: list[dict]) -> str | None:
             continue
         src = CACHE_DIR / approved[:2] / f"{approved}.mp3"
         dst = CACHE_DIR / key[:2] / f"{key}.mp3"
-        if dst.is_file():
-            return None                      # already current, nothing to do
         if not src.is_file():
             return f"LOCK BROKEN — approved audio missing for: {where[:40]}"
+        if dst.is_file():
+            if (dst.stat().st_size == src.stat().st_size
+                    and dst.read_bytes() == src.read_bytes()):
+                return None                  # already the approved take
+            # The key holds DIFFERENT audio from the one the lock records: a
+            # fresh take was synthesised over it before the lock was written.
+            # A lock is the AUTHORITY on what a paragraph sounds like, so the
+            # approved take goes back. This used to `return None` here, which
+            # made a lock written AFTER an unwanted re-record a silent no-op —
+            # exactly when it is most needed. Found 2026-09-10, restoring two
+            # Society paragraphs Peggy had already reviewed.
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(src, dst)
         return f"kept approved take: {where[:40]}"
@@ -1779,6 +1817,12 @@ def run_manifest(manifest_path: Path, args, api_key: str) -> int:
     plain_needles = ([n for n in args.plain.split("|")] if args.plain and "|" in args.plain
                      else ([args.plain] if args.plain else []))
     piece_key = str(manifest_path.parent).replace("\\", "/").replace("tts-text/", "")
+    if is_frozen(piece_key) and not args.thaw:
+        print(f"\n  {piece_key} is FROZEN — this report is finished and approved.")
+        print( "  Nothing was sent and nothing was written.")
+        print( "  If the report has genuinely been updated, pass --thaw, then re-lock")
+        print( "  the sections afterwards with scripts/lock_paragraph.py --section.")
+        return 0
     local_fixes = load_local_fixes(piece_key)
     local_applied: list[str] = []
 
@@ -1981,6 +2025,12 @@ def main() -> int:
     parser.add_argument("--temperature", type=float, default=None,
                         help="0-1; lower is steadier prosody. Default is "
                              "per-language (see TEMPERATURE).")
+    parser.add_argument("--thaw", action="store_true",
+                        help="regenerate a piece listed as \"frozen\" in "
+                             "content/narration-locks.json. A frozen report is one "
+                             "Peggy has finished reviewing; the freeze exists because "
+                             "a per-paragraph lock cannot protect a paragraph whose "
+                             "spoken text has since drifted. Re-lock after thawing.")
     parser.add_argument("--dry-run", action="store_true",
                         help="print size and cost, send nothing")
     parser.add_argument("--find-voice", metavar="NAME",
