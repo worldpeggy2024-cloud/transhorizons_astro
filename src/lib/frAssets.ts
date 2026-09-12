@@ -14,12 +14,7 @@
  */
 export const FR_ASSETS: Record<string, string> = {
   '/images/ArcticMultipolarLegend.jpg': '/images/ArcticMultipolarLegendFR.jpg',
-  '/visualizations/canada-sphere-of-influence.html': '/visualizations/canada-sphere-of-influence-fr.html',
-  // Maritime maps (raster, FR versions supplied by Peggy). The FR files have a
-  // literal space before "FR" in their names — encode it as %20 so the browser
-  // requests the right path; the static server decodes %20 back to the space.
-  '/images/maritime_chokepoints_canadian_geopolitical_simplified.png': '/images/maritime_chokepoints_canadian_geopolitical_simplified%20FR.png',
-  '/images/canadian_maritime_trade_corrected.png': '/images/canadian_maritime_trade_corrected%20FR.png',
+  '/images/CanadaPositionEn.png': '/images/CanadaPositionFR.png',
 };
 
 /**

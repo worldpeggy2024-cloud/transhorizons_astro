@@ -152,9 +152,11 @@ const UI = labels[L];
 {bodySections.map((section, sIdx) => (
   <section class="bg-white border-t border-sand/20 py-12">
 
-    <article class="container max-w-3xl mx-auto px-6">
-      <h2 class="font-playfair text-3xl font-bold text-charcoal mb-8">{section.title}</h2>
-    </article>
+    {section.title && (
+      <article class="container max-w-3xl mx-auto px-6">
+        <h2 class="font-playfair text-3xl font-bold text-charcoal mb-8">{section.title}</h2>
+      </article>
+    )}
 
     {/* Embedded interactive visualization — scrollable iframe of the live HTML */}
     {section.embedUrl && (

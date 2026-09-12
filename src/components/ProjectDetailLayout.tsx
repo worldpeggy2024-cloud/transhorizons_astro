@@ -351,9 +351,11 @@ export default function ProjectDetailLayout({
               </>
             )}
 
-            <h2 className="font-display text-3xl md:text-4xl font-light text-[#1A1A1A] mb-8 leading-tight">
-              {section.title}
-            </h2>
+            {section.title && (
+              <h2 className="font-display text-3xl md:text-4xl font-light text-[#1A1A1A] mb-8 leading-tight">
+                {section.title}
+              </h2>
+            )}
 
             {section.embedUrl && (
               <div style={{ width: '100%', display: 'block', marginBottom: '2rem' }}>

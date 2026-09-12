@@ -137,11 +137,10 @@ sections:
 
       This position is neither marginal nor dominant. It is relational.
     content_fr: "La position du Canada au sein de ce système en évolution est façonnée par une combinaison d'intégration structurelle et de poids relatif.\n\nLe pays demeure profondément intégré dans les systèmes économiques, de sécurité et d'infrastructures nord-américains. Environ 75 % des exportations canadiennes de biens sont destinées aux États-Unis; cette dépendance assure une certaine stabilité et un accès au marché, mais concentre également l’exposition du Canada aux décisions stratégiques d’un seul partenaire. Le contexte des droits de douane de 2025\_a rendu cette vulnérabilité concrète et immédiate.\n\nParallèlement, le Canada n'est pas un nœud central de la puissance mondiale. Son rôle se comprend davantage comme celui d'un acteur intermédiaire, dont l'influence découle de sa participation à des systèmes plus vastes plutôt que de ses seules capacités autonomes.\n\nCette position n'est ni marginale ni dominante. Elle est relationnelle.\n"
+    image: /images/CanadaPositionEn.png
     imagePosition: right
     imageLayout: single
     images: []
-    embedUrl: /visualizations/canada-sphere-of-influence.html
-    embedHeight: 500
   - title_en: Integration and Constraint
     title_fr: Intégration et contrainte
     content_en: >-
@@ -256,8 +255,13 @@ sections:
       to the west of the Canadian Arctic Archipelago remains virtually
       non-existent), but the geopolitical pressure on Arctic sovereignty is
       intensifying as the NSR demonstrates what Arctic routing can become.
-
-
+    content_fr: "Le Canada dispose d'un ensemble d'atouts de plus en plus pertinents dans un environnement multipolaire :\n\n• ressources naturelles, notamment l'énergie et les minéraux critiques;\n• position géographique stratégique, incluant l'accès arctique;\n• capacités technologiques et de recherche avancées;\n• stabilité institutionnelle et crédibilité réglementaire.\n\nCependant, les ressources tirent leur valeur non seulement de leur disponibilité, mais de leur rôle dans des chaînes d'approvisionnement liées aux priorités industrielles et de sécurité. De même, les capacités technologiques dépendent de leur connexion à des écosystèmes plus larges d'innovation, d'infrastructures et de réglementation.\n\nLa portée stratégique de ces atouts dépend donc de la manière dont ils s'intègrent à des systèmes plus vastes, ainsi que de la manière dont d'autres pays y intègrent les leurs.\n\nLe cas de l'Arctique illustre directement ce phénomène. La route maritime du Nord, le long de la côte arctique russe, a enregistré 103\_transits en 2025, transportant environ 3,2\_millions de tonnes de marchandises : pétrole brut, charbon, minerai de fer et, pour la première fois à grande échelle, des marchandises conteneurisées circulant entre Saint-Pétersbourg et des ports chinois. En 2025, le porte-conteneurs Istanbul Bridge a effectué le trajet de la Chine au Royaume-Uni par l'Arctique en environ 21\_jours, soit à peu près 7\_jours de moins que la route équivalente par le canal de Suez, parcourant 2 700\_milles marins de moins. La route demeure saisonnière, mais cette traversée a marqué le premier transit international complet de conteneurs depuis 2021.\n\nC’est une infrastructure opérationnelle.\n\nLe passage du Nord-Ouest canadien se trouve de l’autre côté du même océan. Il demeure sous-utilisé comme corridor commercial (le trafic à l’ouest de l’archipel arctique canadien est négligeable), mais la pression géopolitique exercée sur la souveraineté arctique s’intensifie à mesure que la route maritime du Nord montre ce que les itinéraires arctiques peuvent devenir."
+    imagePosition: right
+    imageLayout: single
+    images: []
+  - title_en: ''
+    title_fr: ''
+    content_en: >-
       Critical minerals add a second dimension. Canada holds substantial
       deposits of lithium, cobalt, nickel, and rare earth elements — materials
       central to battery supply chains, clean energy systems, and advanced
@@ -278,7 +282,7 @@ sections:
       and capture the logistics value. In a multipolar environment where
       infrastructure ownership increasingly translates into strategic leverage,
       that asymmetry is not incidental.
-    content_fr: "Le Canada dispose d'un ensemble d'atouts de plus en plus pertinents dans un environnement multipolaire :\n\n• ressources naturelles, notamment l'énergie et les minéraux critiques;\n• position géographique stratégique, incluant l'accès arctique;\n• capacités technologiques et de recherche avancées;\n• stabilité institutionnelle et crédibilité réglementaire.\n\nCependant, les ressources tirent leur valeur non seulement de leur disponibilité, mais de leur rôle dans des chaînes d'approvisionnement liées aux priorités industrielles et de sécurité. De même, les capacités technologiques dépendent de leur connexion à des écosystèmes plus larges d'innovation, d'infrastructures et de réglementation.\n\nLa portée stratégique de ces atouts dépend donc de la manière dont ils s'intègrent à des systèmes plus vastes, ainsi que de la manière dont d'autres pays y intègrent les leurs.\n\nLe cas de l'Arctique illustre directement ce phénomène. La route maritime du Nord, le long de la côte arctique russe, a enregistré 103\_transits en 2025, transportant environ 3,2\_millions de tonnes de marchandises : pétrole brut, charbon, minerai de fer et, pour la première fois à grande échelle, des marchandises conteneurisées circulant entre Saint-Pétersbourg et des ports chinois. En 2025, le porte-conteneurs Istanbul Bridge a effectué le trajet de la Chine au Royaume-Uni par l'Arctique en environ 21\_jours, soit à peu près 7\_jours de moins que la route équivalente par le canal de Suez, parcourant 2 700\_milles marins de moins. La route demeure saisonnière, mais cette traversée a marqué le premier transit international complet de conteneurs depuis 2021.\n\nC’est une infrastructure opérationnelle.\n\nLe passage du Nord-Ouest canadien se trouve de l’autre côté du même océan. Il demeure sous-utilisé comme corridor commercial (le trafic à l’ouest de l’archipel arctique canadien est négligeable), mais la pression géopolitique exercée sur la souveraineté arctique s’intensifie à mesure que la route maritime du Nord montre ce que les itinéraires arctiques peuvent devenir.\n\nLes minéraux critiques ajoutent une deuxième dimension. Le Canada possède d’importants gisements de lithium, de cobalt, de nickel et de terres rares; matériaux essentiels aux chaînes d’approvisionnement des batteries, aux systèmes d’énergie propre et à la fabrication de pointe. Dans un monde multipolaire, leur valeur n’est pas simplement géologique; elle dépend de la capacité du Canada à les intégrer dans des chaînes d’approvisionnement qui comptent simultanément pour plusieurs partenaires.\n\nEn ce sens, ces atouts ne constituent pas des avantages statiques. Ils sont des composantes de systèmes en évolution, et leur pertinence est déterminée par leur positionnement, et non par leur seule possession.\n\nLa relation du Canada à son propre commerce maritime illustre concrètement l’écart entre possession et levier stratégique. Les exportations canadiennes de services de fret maritime se sont élevées à environ 840\_millions de dollars en 2023, soit moins de 0,2 % des exportations totales de biens. Le Canada produit la cargaison; d’autres la transportent, en déterminent les itinéraires et en captent la valeur logistique. Dans un environnement multipolaire où la propriété des infrastructures se traduit de plus en plus par un levier stratégique, cette asymétrie n’a rien d’anecdotique."
+    content_fr: "Les minéraux critiques ajoutent une deuxième dimension. Le Canada possède d’importants gisements de lithium, de cobalt, de nickel et de terres rares; matériaux essentiels aux chaînes d’approvisionnement des batteries, aux systèmes d’énergie propre et à la fabrication de pointe. Dans un monde multipolaire, leur valeur n’est pas simplement géologique; elle dépend de la capacité du Canada à les intégrer dans des chaînes d’approvisionnement qui comptent simultanément pour plusieurs partenaires.\n\nEn ce sens, ces atouts ne constituent pas des avantages statiques. Ils sont des composantes de systèmes en évolution, et leur pertinence est déterminée par leur positionnement, et non par leur seule possession.\n\nLa relation du Canada à son propre commerce maritime illustre concrètement l’écart entre possession et levier stratégique. Les exportations canadiennes de services de fret maritime se sont élevées à environ 840\_millions de dollars en 2023, soit moins de 0,2 % des exportations totales de biens. Le Canada produit la cargaison; d’autres la transportent, en déterminent les itinéraires et en captent la valeur logistique. Dans un environnement multipolaire où la propriété des infrastructures se traduit de plus en plus par un levier stratégique, cette asymétrie n’a rien d’anecdotique."
     image: /images/ArcticMultipolarLegend.jpg
     imagePosition: right
     imageLayout: single
@@ -431,14 +435,8 @@ sections:
       au public, ou qu’elles n’existent pas encore, l’écart entre l’exposition
       et sa mesure mérite d’être relevé.
     imagePosition: right
-    imageLayout: dual-toggle
-    images:
-      - src: /images/maritime_chokepoints_canadian_geopolitical_simplified.png
-        label_en: Geopolitical Vulnerabilities
-        label_fr: Vulnérabilités géopolitiques
-      - src: /images/canadian_maritime_trade_corrected.png
-        label_en: Chokepoint Dependencies
-        label_fr: Dépendances aux goulets d’étranglement
+    imageLayout: single
+    images: []
   - title_en: Conclusion
     title_fr: Conclusion
     content_en: >-
