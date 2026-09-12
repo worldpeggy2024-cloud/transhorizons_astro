@@ -121,7 +121,7 @@
   },
   "countries/USA/en": {
     "voice": "florence-elderly-wisdom",
-    "seconds": 8300,
+    "seconds": 8282,
     "sections": [
       {
         "id": "baseline",
@@ -139,7 +139,7 @@
         "id": "territory",
         "label": "Territory",
         "src": "/audio/countries/USA/en/florence-elderly-wisdom/03-territory.mp3",
-        "seconds": 764
+        "seconds": 746
       },
       {
         "id": "society",

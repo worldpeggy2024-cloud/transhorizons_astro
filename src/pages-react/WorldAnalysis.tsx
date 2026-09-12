@@ -131,6 +131,10 @@ export default function WorldAnalysis() {
   const fr = language === 'fr';
 
   const mouseDownPos = useRef<{ x: number; y: number } | null>(null);
+  const wasTouch = useRef(false);
+  // Mobile two-step nav: a tap PINS this tappable card (brief data + open link) at the
+  // tap point; tapping the card opens the report. Desktop navigates on click directly.
+  const [pinned, setPinned] = useState<{ cd: CountryData; x: number; y: number } | null>(null);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
@@ -215,10 +219,23 @@ export default function WorldAnalysis() {
 
     const canvas = globe.renderer().domElement;
     const onDown = (e: MouseEvent) => {
+      wasTouch.current = false;
       mouseDownPos.current = { x: e.clientX, y: e.clientY };
     };
+    // Touch: mousedown is a mistimed/absent ghost event on mobile, so the tap-vs-drag
+    // guard in onPolygonClick would compare against a STALE position and reject real
+    // taps. Record the down-position from touchstart instead (reliable on iOS).
+    const onTouchDown = (e: TouchEvent) => {
+      wasTouch.current = true;
+      const t = e.touches[0];
+      if (t) mouseDownPos.current = { x: t.clientX, y: t.clientY };
+    };
     canvas.addEventListener('mousedown', onDown);
-    return () => canvas.removeEventListener('mousedown', onDown);
+    canvas.addEventListener('touchstart', onTouchDown, { passive: true });
+    return () => {
+      canvas.removeEventListener('mousedown', onDown);
+      canvas.removeEventListener('touchstart', onTouchDown);
+    };
   }, [loaded]);
 
   // ── Build lookup: ISO_A3 → CountryData ─────────────────────────────────────
@@ -272,6 +289,9 @@ export default function WorldAnalysis() {
   }, [countryLookup]);
 
   const getLabel = useCallback((d: any) => {
+    // On touch, the pinned tappable card (set in onPolygonClick) IS the popup — suppress
+    // react-globe.gl's hover tooltip so the two don't both show. Desktop keeps the tooltip.
+    if (wasTouch.current) return '';
     const props = d.properties;
     const cd = resolveCountry(props);
     const name = cd
@@ -312,14 +332,26 @@ export default function WorldAnalysis() {
 
   const onPolygonClick = useCallback((d: any, event: any) => {
     if (!d) return;
-    if (mouseDownPos.current && event) {
-      const dx = Math.abs(event.clientX - mouseDownPos.current.x);
-      const dy = Math.abs(event.clientY - mouseDownPos.current.y);
-      if (dx + dy > 6) return;
+    const down = mouseDownPos.current;
+    // event may be a MouseEvent, PointerEvent, or (on touch) a TouchEvent — pull the
+    // release point from whichever shape it is.
+    const pt = event ? (event.changedTouches?.[0] ?? event.touches?.[0] ?? event) : null;
+    if (down && pt && typeof pt.clientX === 'number') {
+      const dx = Math.abs(pt.clientX - down.x);
+      const dy = Math.abs(pt.clientY - down.y);
+      if (dx + dy > 10) return;   // moved too far → a drag/rotate, not a tap
     }
-    const props = d.properties;
-    const cd = resolveCountry(props);
-    if (cd) goToCountry(cd.cca3);
+    const cd = resolveCountry(d.properties);
+    if (!cd) return;
+    if (wasTouch.current) {
+      // Mobile: pin a tappable card at the tap point instead of navigating instantly,
+      // so the brief data is readable and the report opens on a second, deliberate tap.
+      const px = pt && typeof pt.clientX === 'number' ? pt.clientX : (down?.x ?? window.innerWidth / 2);
+      const py = pt && typeof pt.clientY === 'number' ? pt.clientY : (down?.y ?? window.innerHeight / 2);
+      setPinned({ cd, x: px, y: py });
+    } else {
+      goToCountry(cd.cca3);
+    }
   }, [resolveCountry, goToCountry]);
 
     // ── Sidebar data ──────────────────────────────────────────────────────
@@ -883,6 +915,57 @@ export default function WorldAnalysis() {
           .sidebar-col { flex: 1 1 50%; height: 100%; }
         }
      `}</style>
+
+      {/* Mobile: pinned tappable country card (two-step nav) — set only by a touch tap.
+          Tap the card to open the report; × dismisses; tapping another country replaces it. */}
+      {pinned && (() => {
+        const cd = pinned.cd;
+        const hasReport = REPORT_READY_SET.has(cd.cca3);
+        const CARD_H = 172;
+        const vw = typeof window !== 'undefined' ? window.innerWidth : 360;
+        const vh = typeof window !== 'undefined' ? window.innerHeight : 640;
+        const CARD_MAX = Math.min(260, vw - 16);   // hug content, capped to viewport
+        const left = Math.min(Math.max(8, pinned.x + 12), vw - CARD_MAX - 8);
+        const top = Math.min(Math.max(8, pinned.y - CARD_H - 12), vh - CARD_H - 8);
+        return (
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={() => goToCountry(cd.cca3)}
+            aria-label={fr ? `Ouvrir le rapport : ${cd.nameFr}` : `Open report: ${cd.nameEn}`}
+            className="fixed shadow-2xl cursor-pointer select-none p-3"
+            style={{
+              left, top, width: 'max-content', minWidth: 140, maxWidth: CARD_MAX, zIndex: 60,
+              background: hasReport ? 'rgba(125,26,46,0.98)' : 'rgba(13,13,13,0.98)',
+              border: `1px solid ${hasReport ? 'rgba(160,36,58,0.7)' : 'rgba(125,26,46,0.5)'}`,
+            }}
+          >
+            <div className="flex items-start justify-between gap-3 mb-1">
+              {hasReport ? (
+                <span className="inline-block bg-white/15 text-white text-[9px] tracking-[0.12em] uppercase px-1.5 py-0.5">
+                  {fr ? 'Rapport disponible' : 'Report available'}
+                </span>
+              ) : <span />}
+              <button
+                onClick={(e) => { e.stopPropagation(); setPinned(null); }}
+                aria-label={fr ? 'Fermer' : 'Close'}
+                className="-mt-1 -mr-1 text-white/60 hover:text-white text-lg leading-none"
+              >&times;</button>
+            </div>
+            <div className="flex items-center gap-1.5 text-white text-[13px] font-medium mb-1">
+              {cd.cca2 && (
+                <img src={`https://flagcdn.com/${cd.cca2.toLowerCase()}.svg`} alt="" style={{ width: 20, height: 14, objectFit: 'cover', borderRadius: 1 }} />
+              )}
+              <span>{fr ? cd.nameFr : cd.nameEn}</span>
+            </div>
+            <div className="text-white/70 text-[11px]">{cd.capital || '—'}</div>
+            <div className="text-white/70 text-[11px]">Population: {formatPop(cd.population, fr)}</div>
+            <div className="mt-2 text-white text-[11px] font-semibold tracking-wide">
+              {hasReport ? (fr ? 'Ouvrir le rapport' : 'Open report') : (fr ? 'Ouvrir' : 'Open')} <span aria-hidden="true">↗</span>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Lightbox */}
       {lightboxImg && (
