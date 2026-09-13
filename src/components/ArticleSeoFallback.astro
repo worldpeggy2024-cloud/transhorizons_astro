@@ -1,0 +1,109 @@
+---
+/**
+ * ArticleSeoFallback.astro — crawlable SEO text + old-browser reading view for
+ * article pages, rendered from the article YAML. Pair with ONE
+ * <AppShell client:only="react" /> on the page: modern browsers get the React
+ * article (single visual renderer for F5 AND in-app nav — no drift), crawlers
+ * read the clipped block, and old browsers (React can't boot) get the
+ * LegacyReveal reading view. Renders the CURRENT language only; the page keys
+ * `lang` off ?lang, matching the sitemap's hreflang alternates.
+ */
+import LegacyReveal from './LegacyReveal.astro';
+import ReviewNotice from './ReviewNotice.astro';
+
+interface Section { title?: string; content?: string; }
+interface Takeaway { description?: string; }
+interface Props {
+  lang: 'en' | 'fr';
+  /** Article slug — renders the "under review" notice in the reading view for
+   *  drafts (ReviewNotice self-gates: no-op once finalised). Safe to always pass. */
+  reviewSlug?: string;
+  title: string;
+  subtitle?: string;
+  introTitle?: string;
+  intro?: string;
+  category?: string;
+  date?: string;
+  readTime?: string;
+  sections?: Section[];
+  keyTakeaways?: Takeaway[];
+  sources?: string[];
+  backHref?: string;
+  backLabel?: string;
+}
+const {
+  lang, reviewSlug, title, subtitle = '', introTitle = '', intro = '', category = '',
+  date = '', readTime = '', sections = [], keyTakeaways = [], sources = [],
+  backHref = '/analyses',
+  backLabel = lang === 'fr' ? 'Retour aux analyses' : 'Back to analyses',
+} = Astro.props as Props;
+
+interface Block { bullets: boolean; items: string[]; text: string; }
+function blocks(text: string): Block[] {
+  return (text ?? '').split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean).map((b) => {
+    const lines = b.split('\n').map((l) => l.trim()).filter(Boolean);
+    const allBullets = lines.length > 0 && lines.every((l) => l.startsWith('•'));
+    return allBullets
+      ? { bullets: true, items: lines.map((l) => l.replace(/^•\s*/, '')), text: '' }
+      : { bullets: false, items: [], text: lines.join(' ') };
+  });
+}
+const takeawaysLabel = introTitle || (lang === 'fr' ? 'Points clés' : 'Key Takeaways');
+const sourcesLabel = lang === 'fr' ? 'Sources et notes' : 'Sources & Notes';
+const kicker = [category, date].filter(Boolean).join(' · ');
+const readingKicker = lang === 'fr' ? 'Version lecture' : 'Reading view';
+---
+
+{/* Crawlable SEO text — visually hidden (not display:none, so search engines read it). */}
+<div lang={lang} style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+  <h1>{title}</h1>
+  {subtitle && <p>{subtitle}</p>}
+  {blocks(intro).map((b) => (b.bullets ? <ul>{b.items.map((i) => <li>{i}</li>)}</ul> : <p>{b.text}</p>))}
+  {sections.map((s) => (
+    <section>
+      {s.title && <h2>{s.title}</h2>}
+      {blocks(s.content ?? '').map((b) => (b.bullets ? <ul>{b.items.map((i) => <li>{i}</li>)}</ul> : <p>{b.text}</p>))}
+    </section>
+  ))}
+  {keyTakeaways.length > 0 && (
+    <section>
+      <h2>{takeawaysLabel}</h2>
+      <ul>{keyTakeaways.map((k) => <li>{k.description}</li>)}</ul>
+    </section>
+  )}
+  {sources.length > 0 && (
+    <section>
+      <h2>{sourcesLabel}</h2>
+      <ul>{sources.map((s) => <li>{s}</li>)}</ul>
+    </section>
+  )}
+</div>
+
+{/* Old-browser reading view — hidden unless React can't boot (LegacyReveal). */}
+<LegacyReveal>
+  {kicker && <p class="thf-kicker">{kicker} — {readingKicker}</p>}
+  <h1>{title}</h1>
+  {reviewSlug && <ReviewNotice slug={reviewSlug} lang={lang} tone="onLight" />}
+  {subtitle && <p class="thf-intro">{subtitle}</p>}
+  {readTime && <p class="thf-meta">{readTime}</p>}
+  {blocks(intro).map((b) => (b.bullets ? <ul class="thf-list">{b.items.map((i) => <li>{i}</li>)}</ul> : <p class="thf-p">{b.text}</p>))}
+  {sections.map((s) => (
+    <div>
+      {s.title && <h2 class="thf-h2">{s.title}</h2>}
+      {blocks(s.content ?? '').map((b) => (b.bullets ? <ul class="thf-list">{b.items.map((i) => <li>{i}</li>)}</ul> : <p class="thf-p">{b.text}</p>))}
+    </div>
+  ))}
+  {keyTakeaways.length > 0 && (
+    <div>
+      <h2 class="thf-h2">{takeawaysLabel}</h2>
+      {keyTakeaways.map((k) => <p class="thf-p">• {k.description}</p>)}
+    </div>
+  )}
+  {sources.length > 0 && (
+    <div>
+      <h2 class="thf-h2">{sourcesLabel}</h2>
+      {sources.map((s) => <p class="thf-p">{s}</p>)}
+    </div>
+  )}
+  <p class="thf-foot"><a href={backHref}>← {backLabel}</a></p>
+</LegacyReveal>

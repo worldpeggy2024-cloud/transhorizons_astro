@@ -4,6 +4,14 @@
 - Dual-renderer: React .tsx in pages-react/ = visual layer; .astro in pages/ = SEO layer. Both must stay in sync.
   "In sync" means RENDERED FROM THE SAME SOURCE, not manually mirrored — a hand-copied SEO block is a
   drift waiting to happen (see "Crawlability & publishing readiness").
+- ARTICLE PAGES (portfolio/notes essays) use a SINGLE visual renderer, not two (fixed 2026-09-12): each
+  src/pages/{portfolio,notes}/<slug>.astro mounts `<AppShell client:only="react" />` — so F5/direct load
+  AND in-app navigation both render the React ProjectDetailLayout / NotesDetailLayout, which cannot drift —
+  plus `<ArticleSeoFallback>` (components/ArticleSeoFallback.astro), which renders the crawlable SEO text +
+  the old-browser reading view (LegacyReveal) from the SAME article YAML. Do NOT re-add a standalone visible
+  .astro layout for an article: that parallel server-rendered renderer is the dead convention that drifted
+  from React on reload (images wider than text, illustration placement jumping). LanguageContext reads
+  `?lang` so a direct/crawler FR load renders French.
 - [...slug].astro is the catch-all route AND contains the /keystatic carve-out. Never modify without explaining why.
 - AppShell client:only="react" is intentional. Do not change to client:load.
 - Keystatic silently strips undeclared YAML fields — extend the schema before adding fields.

@@ -343,7 +343,17 @@ const translations: Record<Language, Record<string, string>> = {
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = React.useState<Language>('en');
+  // Initialise from ?lang so a direct load / crawler hit of ?lang=fr renders in
+  // French — the .astro SEO fallback keys off the same param, so both entry
+  // paths agree. In-app toggling still uses setLanguage; a bare URL is English.
+  const [language, setLanguage] = React.useState<Language>(() => {
+    if (typeof window === 'undefined') return 'en';
+    try {
+      const p = new URLSearchParams(window.location.search).get('lang');
+      if (p === 'fr' || p === 'en') return p;
+    } catch { /* ignore */ }
+    return 'en';
+  });
 
   const t = (key: string): string => {
     return translations[language][key] || key;
