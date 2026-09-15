@@ -1,0 +1,4211 @@
+{
+  "slug": "ring-of-fire",
+  "article": "content/articles/2026-09_Ring-of-Fire_Essay.yaml",
+  "mode": "enforced",
+  "origin": "Converted 2026-09-15 from the audit chat STANDS ledger (ring-of-fire-stands-ledger.md). Claims carry `fact` (the audit line) and no `sentence` until the rebuilt article is written.",
+  "sources": [
+    {
+      "id": "s1",
+      "name": "Webequie Supply Road Project page, Government of Ontario",
+      "url": "https://www.ontario.ca/page/webequie-supply-road-project"
+    },
+    {
+      "id": "s2",
+      "name": "Ontario's Ring of Fire page, Government of Ontario",
+      "url": "https://www.ontario.ca/page/ontarios-ring-fire"
+    },
+    {
+      "id": "s3",
+      "name": "Impact assessment registry, project 80183 (Webequie Supply Road)",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80183"
+    },
+    {
+      "id": "s4",
+      "name": "Registry 80183, public comments list",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80183/contributions"
+    },
+    {
+      "id": "s5",
+      "name": "Interim Report, Regional Assessment in the Ring of Fire Area, 23 Feb 2026 (document 165314 / 164647E.pdf)",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/document/165314"
+    },
+    {
+      "id": "s6",
+      "name": "Registry 80468, comments list",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80468/contributions"
+    },
+    {
+      "id": "s7",
+      "name": "Registry 80468, project page (Regional Assessment)",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80468"
+    },
+    {
+      "id": "s8",
+      "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+      "url": "https://iaac-aeic.gc.ca/050/documents/p80183/166134E.pdf"
+    },
+    {
+      "id": "s9",
+      "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+      "url": "https://iaac-aeic.gc.ca/050/documents/p80183/164888E.pdf"
+    },
+    {
+      "id": "s10",
+      "name": "WCS Canada comment on draft EAR/IS, 6 Oct 2025",
+      "url": "https://wcscanada.org/site/assets/files/5865/wcsc_wsr_ea_is_oct_2025.pdf"
+    },
+    {
+      "id": "s11",
+      "name": "Terms of Reference, Regional Assessment (document 161197), incl. Annex 1 timeline and Minister's letter 15 Feb 2023",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/document/161197"
+    },
+    {
+      "id": "s12",
+      "name": "Analysis Report, Eagle's Nest designation request (document 165296 / p90033/165049E.pdf)",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/document/165296"
+    },
+    {
+      "id": "s13",
+      "name": "Registry 90033, Eagle's Nest Mine Project page",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/90033"
+    },
+    {
+      "id": "s14",
+      "name": "Weenusk First Nation, Review of Draft Impact Assessment Report, 21 May 2026"
+    },
+    {
+      "id": "s15",
+      "name": "Aroland First Nation, response to Draft IA Report and conditions, 21 May 2026"
+    },
+    {
+      "id": "s16",
+      "name": "Nibinamik First Nation, letter to Ontario and the Agency, 22 May 2026"
+    },
+    {
+      "id": "s17",
+      "name": "Constance Lake First Nation, comments on draft conditions, 22 May 2026"
+    },
+    {
+      "id": "s18",
+      "name": "Ginoogaming First Nation, comments, 21 May 2026"
+    },
+    {
+      "id": "s19",
+      "name": "Kashechewan First Nation, review of Draft IA Report, 21 May 2026"
+    },
+    {
+      "id": "s20",
+      "name": "Fort Albany First Nation, submission, May 2026"
+    },
+    {
+      "id": "s21",
+      "name": "Friends of the Attawapiskat River, submission"
+    },
+    {
+      "id": "s22",
+      "name": "WCS Canada, comment on final EAR/IS, Feb 2026 (Kirkwood and O'Connor)"
+    },
+    {
+      "id": "s23",
+      "name": "Ontario Rivers Alliance, submission, 14 Apr 2026"
+    },
+    {
+      "id": "s24",
+      "name": "Wyndham Research, science review for the Regional Assessment, March 2026"
+    },
+    {
+      "id": "s25",
+      "name": "Transport Action Ontario, submission, 4 May 2026 (registry reference 282)"
+    },
+    {
+      "id": "s26",
+      "name": "Public comments on the Federal Ministerial Review"
+    },
+    {
+      "id": "s27",
+      "name": "Webequie Supply Road backgrounder, 9 June 2025"
+    },
+    {
+      "id": "s28",
+      "name": "ECCC, Response to Targeted Questions for Federal Analysis, 23 June 2025"
+    },
+    {
+      "id": "s29",
+      "name": "Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026"
+    },
+    {
+      "id": "s30",
+      "name": "Final EAR/IS Section 4, Project Description, 30 Jan 2026"
+    },
+    {
+      "id": "s31",
+      "name": "Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr)",
+      "url": "https://www.ontario.ca/page/ministry-review-webequie-supply-road-environmental-assessment"
+    },
+    {
+      "id": "s32",
+      "name": "Indigenous Services Canada, news release: Government of Canada boosts financial support for winter roads (Ontario First Nations), November 2024",
+      "url": "https://www.canada.ca/en/indigenous-services-canada/news/2024/11/government-of-canada-boosts-financial-support-for-winter-roads-strengthening-connections-to-remote-ontario-first-nations.html"
+    },
+    {
+      "id": "s33",
+      "name": "Indigenous Services Canada, Statement by Minister Hajdu on the shortening of the winter road seasons, February 2024",
+      "url": "https://www.canada.ca/en/indigenous-services-canada/news/2024/02/statement-by-minister-hajdu-on-the-shortening-of-the-winter-road-seasons.html"
+    },
+    {
+      "id": "s34",
+      "name": "Government of Ontario, Northern Ontario winter roads (program page)",
+      "url": "https://www.ontario.ca/page/northern-ontario-winter-roads"
+    },
+    {
+      "id": "s35",
+      "name": "Government of Ontario, news release: Ontario investing $13 million to build and maintain northern winter roads",
+      "url": "https://news.ontario.ca/en/release/1006320/ontario-investing-13-million-to-build-and-maintain-northern-winter-roads"
+    },
+    {
+      "id": "s36",
+      "name": "Nishnawbe Aski Nation, Federal commitment will help improve vital winter road network to remote communities",
+      "url": "https://www.nan.ca/news/winter-road-network/"
+    },
+    {
+      "id": "s37",
+      "name": "Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263)",
+      "url": "https://registrydocumentsprd.blob.core.windows.net/commentsblob/project-80468/comment-66955/P090_SCC_RoF%20Cost%20of%20Living_FINAL_minor%20corrections.pdf"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c001",
+      "section": "Opening",
+      "fact": "Final report submitted 30 January 2026",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "Submission date: January 30, 2026",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b246cb192279c19f"
+      },
+      "question": "q1"
+    },
+    {
+      "id": "c002",
+      "section": "Opening",
+      "fact": "Ontario approved 18 June 2026",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "Decision date: June 18, 2026",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2a9882a90a4835f2"
+      },
+      "question": "q1"
+    },
+    {
+      "id": "c003",
+      "section": "Opening",
+      "fact": "Ottawa's decision a week later",
+      "source": "s3",
+      "candidates": [
+        "s3"
+      ],
+      "locator": "",
+      "quote": "June 25, 2026 — The Government of Canada issued the impact assessment decision statement",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b21a24874eac8ab1"
+      },
+      "question": "q1"
+    },
+    {
+      "id": "c004",
+      "section": "Opening",
+      "fact": "Neskantaga advisory since 1995, longest in Canada",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "longest-running drinking water advisory in Canada, in place since 1995",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "0ea53a19913ca936"
+      },
+      "question": "q1"
+    },
+    {
+      "id": "c005",
+      "section": "I. The lifeline that is melting",
+      "fact": "Winter road open roughly three months",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 19",
+      "quote": "open from around January to mid-March",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 19,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "cc72de9d39929ab5"
+      },
+      "question": "q2"
+    },
+    {
+      "id": "c006",
+      "section": "I. The lifeline that is melting",
+      "fact": "The season is shrinking with the climate",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 19",
+      "quote": "seasonal lifespan of the winter road has been observed to shrink due to climate change",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 19,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f9ff0950d2cdd7b1"
+      },
+      "question": "q2"
+    },
+    {
+      "id": "c007",
+      "section": "II. The breathing lands",
+      "fact": "Far North wetland water at Lake Erie's volume",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "quoting the Far North Science Advisory Panel (2010)",
+      "quote": "contain as much water as Lake Erie",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c905b41fa23ef0e0"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c008",
+      "section": "II. The breathing lands",
+      "fact": "Regional assessment lists mercury as a study priority",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "potential impact from development on mercury levels and other potential contaminants",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ab1baaeac996d700"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c009",
+      "section": "II. The breathing lands",
+      "fact": "Methylmercury from disturbed peatland is not theoretical",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "Health Canada",
+      "quote": "generation of methylmercury in peatland environments is an existing concern in the Ring of Fire region",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 21,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6e3d58894992152f"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c010",
+      "section": "II. The breathing lands",
+      "fact": "Treaty 9 signed in 1905",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "Treaty 9 was signed for the first time in 1905",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "dd9f1487b1007a8c"
+      },
+      "question": "q4"
+    },
+    {
+      "id": "c011",
+      "section": "II. The breathing lands",
+      "fact": "Livelihoods on the muskeg lost through the move to reserve",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "we lost all these skills when we moved into the reserve",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5e7b6e0ea62692b7"
+      },
+      "question": "q4"
+    },
+    {
+      "id": "c012",
+      "section": "II. The breathing lands",
+      "fact": "Permanent settlement on reserve was government policy",
+      "source": "s11",
+      "candidates": [
+        "s11"
+      ],
+      "locator": "",
+      "quote": "the 1965 Indian Welfare Services Agreement also required that families must live within the confines of the reserve",
+      "auditNote": "… (a Canada–Ontario agreement, not federal alone)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6992217915f157ba"
+      },
+      "question": "q4"
+    },
+    {
+      "id": "c013",
+      "section": "II. The breathing lands",
+      "fact": "Greenhouse and food sovereignty projects",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "greenhouse projects and food distribution systems",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b37141a3e8a3395a"
+      },
+      "question": "q4"
+    },
+    {
+      "id": "c014",
+      "section": "II. The breathing lands",
+      "fact": "Community-led sturgeon research",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "Community-led studies on Lake Sturgeon",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7d2c3be05e1d3926"
+      },
+      "question": "q4"
+    },
+    {
+      "id": "c015",
+      "section": "II. The breathing lands",
+      "fact": "Guardians programmes generating baseline data",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "Community-driven monitoring and stewardship is essential to secure adequate baseline data",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "853d7e3443b7a9bb"
+      },
+      "question": "q4"
+    },
+    {
+      "id": "c016",
+      "section": "II. The breathing lands",
+      "fact": "Eagle's Nest: underground, ~3,000 t/day, ~100 ha",
+      "source": "s13",
+      "candidates": [
+        "s13"
+      ],
+      "locator": "",
+      "quote": "produce approximately 3,000 tonnes of ore per day",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "dd676b99b807fddf"
+      },
+      "question": "q6"
+    },
+    {
+      "id": "c017",
+      "section": "II. The breathing lands",
+      "fact": "Eagle's Nest: underground, ~3,000 t/day, ~100 ha",
+      "source": "s13",
+      "candidates": [
+        "s13"
+      ],
+      "locator": "",
+      "quote": "surface footprint of approximately 100 hectares",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d291dc111f40275a"
+      },
+      "question": "q6"
+    },
+    {
+      "id": "c018",
+      "section": "II. The breathing lands",
+      "fact": "Road designed for a 75-year operating life",
+      "source": "s9",
+      "candidates": [
+        "s9"
+      ],
+      "locator": "Aroland table",
+      "quote": "through the entire 75-year life of the Project",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 30,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b18dbc1b6be42f80"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c019",
+      "section": "III. What makes a road fundable",
+      "fact": "Three new segments plus Anaconda and Painter Lake roads",
+      "source": "s2",
+      "candidates": [
+        "s2"
+      ],
+      "locator": "",
+      "quote": "Anaconda and Painter Lake Roads",
+      "auditNote": "lists Webequie, Marten Falls, Northern Road Link and … (S2 does not call the latter forestry roads)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "80f366bfb1742216"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c020",
+      "section": "III. What makes a road fundable",
+      "fact": "Webequie road 107 km, airport to McFaulds Lake",
+      "source": "s3",
+      "candidates": [
+        "s3"
+      ],
+      "locator": "",
+      "quote": "107-kilometre all-season road connecting the Webequie Airport and the McFaulds Lake area",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "42998e94dcbbfcb6"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c021",
+      "section": "III. What makes a road fundable",
+      "fact": "Road not legally required to be assessed",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "s. 3.0.1 text",
+      "quote": "may enter into a written agreement with the Minister to have this Act apply",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fd77b34822800fc7"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c022",
+      "section": "III. What makes a road fundable",
+      "fact": "3 May 2018, Chief Wabasse signed the voluntary agreement",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "Cornelius Wabasse Chief Webequie First Nation Date: May 3, 2018",
+      "auditNote": "…; …",
+      "auditQuote": "Cornelius Wabasse, Chief … Date: May 3, 2018",
+      "quoteFix": "2026-09-15: audit merged the signature block into one line with a comma and an ellipsis",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a6e64246569c5a7b"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c023",
+      "section": "III. What makes a road fundable",
+      "fact": "3 May 2018, Chief Wabasse signed the voluntary agreement",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "Whereas section 3.0.1",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2df4943880f9da89"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c024",
+      "section": "III. What makes a road fundable",
+      "fact": "12 m platform in a 35 m right-of-way",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "p. 4-3",
+      "quote": "12 m wide road platform) within a fully cleared right-of-way (ROW) of 35 m in width and 107 km in length",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 5,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a5186d18929b951e"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c025",
+      "section": "III. What makes a road fundable",
+      "fact": "Roadway 11 m: two 3.5 m lanes, two 2.0 m shoulders, 0.5 m rounding",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "p. 4-8",
+      "quote": "for a total roadway width of 11 m, excluding rounding of the shoulders (2 x 0.5 m)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 9,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8813522bf393e0d8"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c026",
+      "section": "III. What makes a road fundable",
+      "fact": "Design standard",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "Rural Collector Undivided 100 (RCU100)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 6,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b382774147b9d9bb"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c027",
+      "section": "III. What makes a road fundable",
+      "fact": "17 km on reserve, federal lands",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 17",
+      "quote": "Approximately 17 kilometres of the road would be located on the Webequie First Nation reserve lands which are federal lands.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 17,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f36c96844320bfc5"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c028",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Road gets a full federal impact assessment",
+      "source": "s3",
+      "candidates": [
+        "s3"
+      ],
+      "locator": "",
+      "quote": "Assessment type Impact Assessment by the Agency",
+      "auditQuote": "Assessment Type: Impact Assessment by the Agency",
+      "quoteFix": "2026-09-15: label and value are separate lines on the page; audit added a colon",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2a5e0ed132165441"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c029",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "297 submissions on the Webequie road",
+      "source": "s4",
+      "candidates": [
+        "s4",
+        "s3"
+      ],
+      "locator": "",
+      "quote": "297 results",
+      "auditNote": "… (S3 project page shows a lower total: …)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "838e48f20f0d818c"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c030",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "297 submissions on the Webequie road",
+      "source": "s3",
+      "candidates": [
+        "s4",
+        "s3"
+      ],
+      "locator": "",
+      "quote": "View comments Total: 157",
+      "auditNote": "… (S3 project page shows a lower total: …)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "341bd20c5ca3b16e"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c031",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Neskantaga requested designation; it was refused",
+      "source": "s12",
+      "candidates": [
+        "s12",
+        "s13"
+      ],
+      "locator": "",
+      "quote": "received … from Neskantaga First Nation",
+      "auditNote": "request … (29 Oct 2025); …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 5,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "054debeebce0119d"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c032",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Neskantaga requested designation; it was refused",
+      "source": "s13",
+      "candidates": [
+        "s12",
+        "s13"
+      ],
+      "locator": "",
+      "quote": "February 20, 2026 — The President … does not warrant designation",
+      "auditNote": "request … (29 Oct 2025); …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8c12047c3b240696"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c033",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Eagle's Nest sits in the Attawapiskat watershed between the two nations",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "to the Muketei River and ultimately the Attawaspiskat River",
+      "auditNote": "effects …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 17,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "24fc6f9b037df715"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c034",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Eagle's Nest sits in the Attawapiskat watershed between the two nations",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "Neskantaga approximately 100 kilometres southwest of the project",
+      "auditNote": "effects …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 19,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "cc165c86845027da"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c035",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Nibinamik supports Webequie's road, wants its own, objects to the process",
+      "source": "s16",
+      "candidates": [
+        "s16"
+      ],
+      "locator": "",
+      "quote": "Nibinamik continues to support Webequie First Nation's … desire to build an all-season road",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6803d968ea5e065a"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c036",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Nibinamik supports Webequie's road, wants its own, objects to the process",
+      "source": "s16",
+      "candidates": [
+        "s16"
+      ],
+      "locator": "",
+      "quote": "Nibinamik has serious concerns with Ontario's and Canada's",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "04e440cd4ea7ad84"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c037",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Nibinamik withholds consent",
+      "source": "s16",
+      "candidates": [
+        "s16"
+      ],
+      "locator": "",
+      "quote": "unable to provide our free, prior, and informed consent to these projects",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 2,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "09614b9b510a3a75"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c038",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Ginoogaming consents only with commensurate accommodation, talks now",
+      "source": "s18",
+      "candidates": [
+        "s18"
+      ],
+      "locator": "",
+      "quote": "We insist that these accommodation discussions commence immediately.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "584e1368ab7e528c"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c039",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Ginoogaming: approving this road implicitly approves the others",
+      "source": "s18",
+      "candidates": [
+        "s18"
+      ],
+      "locator": "",
+      "quote": "By approving the WSR, Canada and Ontario are implicitly approving the southernmost road segments",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ddf41ad15e8570c1"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c040",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Aroland: the rationale is only logical if it connects onward",
+      "source": "s15",
+      "candidates": [
+        "s15"
+      ],
+      "locator": "",
+      "quote": "the rationale for the Project is only logical if it connects to the provincial highway network",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b70e3e65b1713364"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c041",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Aroland: proponent characterises it as stand-alone",
+      "source": "s15",
+      "candidates": [
+        "s15"
+      ],
+      "locator": "",
+      "quote": "The Proponent characterizes the WSR as a stand-alone right-of-way from the WFN airport to Esker Camp",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "15c5684ffa621a9f"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c042",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Constance Lake broadly supportive, contests conditions",
+      "source": "s17",
+      "candidates": [
+        "s17"
+      ],
+      "locator": "",
+      "quote": "CLFN remains broadly supportive of WFN's desire to develop the WSR",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 4,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8559817e6c94f2a1"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c043",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Kashechewan writes about flow patterns",
+      "source": "s19",
+      "candidates": [
+        "s19"
+      ],
+      "locator": "",
+      "quote": "particularly impacts to water and flow patterns",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8a97fa51b4ea4035"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c044",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Fort Albany endorses Attawapiskat's comments",
+      "source": "s20",
+      "candidates": [
+        "s20"
+      ],
+      "locator": "",
+      "quote": "we endorse and adopt their comments in supplement to those in this letter",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "05c4920ae1ad03a0"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c045",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Communities could not review in the time given",
+      "source": "s20",
+      "candidates": [
+        "s20"
+      ],
+      "locator": "",
+      "quote": "unable to properly review all of the materials, including all of the 700+ pages in additional addenda",
+      "auditNote": "…; the period …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "cd57cbaab7bb8eaa"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c046",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Communities could not review in the time given",
+      "source": "s20",
+      "candidates": [
+        "s20"
+      ],
+      "locator": "",
+      "quote": "overlapped with our spring goose hunt",
+      "auditNote": "…; the period …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b259cec07ada1651"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c047",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Communities could not review in the time given",
+      "source": "s20",
+      "candidates": [
+        "s20"
+      ],
+      "locator": "",
+      "quote": "Most of our members are currently evacuated",
+      "auditNote": "…; the period …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2947e1803b87aca3"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c048",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "Nine First Nations and a council commented on the final assessment",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "Aroland First Nation, Attawapiskat First Nation, Constance Lake First Nation, Eabametoong First Nation, Fort Albany First Nation, Kashechewan First Nation, Marten Falls First Nation, Nibinamik First Nation, Weenusk First Nation, and Mushkegowuk Council.",
+      "auditNote": "names Aroland, Attawapiskat, Constance Lake, Eabametoong, Fort Albany, Kashechewan, Marten Falls, Nibinamik, Weenusk, and Mushkegowuk Council (not eleven)",
+      "quoteFix": "2026-09-15: audit listed the names without quoting",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "4d7991197baf6e57"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c049",
+      "section": "IV. Whose consent, for which crossing",
+      "fact": "22 Indigenous communities consulted, 16 on a rights basis, 6 on an interest basis",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "WFN consulted with the following Indigenous communities on a rights basis:",
+      "auditNote": "full lists given in section 3.1.1",
+      "quoteFix": "2026-09-15: audit gave no quote; the figures are counts of the two lists that follow",
+      "counted": {
+        "date": "2026-09-15",
+        "rightsBasis": 16,
+        "interestBasis": 6,
+        "total": 22,
+        "rightsList": [
+          "Aroland First Nation",
+          "Attawapiskat First Nation",
+          "Constance Lake First Nation",
+          "Fort Albany First Nation",
+          "Kasabonika Lake First Nation",
+          "Kashechewan First Nation",
+          "Kingfisher Lake First Nation",
+          "Kitchenuhmaykoosib Inninuwug (KI)",
+          "Marten Falls First Nation",
+          "Neskantaga First Nation",
+          "Nibinamik First Nation",
+          "Wapekeka First Nation",
+          "Wawakapewin First Nation",
+          "Weenusk First Nation",
+          "WFN",
+          "Wunnumin Lake First Nation"
+        ],
+        "interestList": [
+          "Eabametoong First Nation",
+          "Ginoogaming First Nation",
+          "Long Lake #58 First Nation",
+          "Métis Nation of Ontario Region 2",
+          "Mishkeegogamang First Nation",
+          "North Caribou Lake First Nation"
+        ]
+      },
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "287c794a7c87adf3"
+      },
+      "question": "q7"
+    },
+    {
+      "id": "c050",
+      "section": "V. Segmentation",
+      "fact": "8 October 2021, terms of reference approved with amendments",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "with amendments that the Minister considers necessary",
+      "auditNote": "… (the Minister is not named or gendered on the page)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b7dbe793ca63c0c6"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c051",
+      "section": "V. Segmentation",
+      "fact": "Two amendments require considering cumulative-effects information",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "1.2 Consideration of other cumulative effects assessments",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b4d79a9e44518d79"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c052",
+      "section": "V. Segmentation",
+      "fact": "Two amendments require considering cumulative-effects information",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "1.3 Consideration of Regional Assessment",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5fa501b534eb2876"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c053",
+      "section": "V. Segmentation",
+      "fact": "Each ends \"this will not delay the submission\"",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "this will not delay the submission of the final EA",
+      "auditNote": "… (in both 1.2 and 1.3)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "548e22251c684f89"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c054",
+      "section": "V. Segmentation",
+      "fact": "The proponent decides how to use the information",
+      "source": "s1",
+      "candidates": [
+        "s1"
+      ],
+      "locator": "",
+      "quote": "WFN will determine how to use any information described in this section",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "eb482ab7e8e04935"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c055",
+      "section": "V. Segmentation",
+      "fact": "January 2023, fifteen First Nations and the Agency agreed to co-lead",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "In January 2023, leaders and members from 15 Footnote 1 First Nations from Matawa",
+      "auditQuote": "In January 2023, leaders and members from 15 First Nations",
+      "quoteFix": "2026-09-15: a footnote marker sits between \"15\" and \"First Nations\"",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "4ce5465075a0b50b"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c056",
+      "section": "V. Segmentation",
+      "fact": "First ever co-led with First Nations",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "first ever regional assessment co-led with First Nations under the Impact Assessment Act",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "262f5ce3c0126a82"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c057",
+      "section": "V. Segmentation",
+      "fact": "Webequie, Marten Falls, Neskantaga, Attawapiskat are signatories",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "First Nation Partners who are signatory to these Terms of Reference include Aroland, Attawapiskat, Constance Lake, Eabametoong, Fort Albany, Ginoogaming, Kashechewan Cree, Long Lake #58, Marten Falls Footnote 2 , Missanabie Cree, Moose Cree, Neskantaga, Nibinamik, Webequie, and Weenusk First Nations.",
+      "auditNote": "signatory list names all four",
+      "quoteFix": "2026-09-15: audit said \"signatory list names all four\" without quoting",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "086b553cde211f3e"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c058",
+      "section": "V. Segmentation",
+      "fact": "Marten Falls' approval is in principle only",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "p. 12, fn 2",
+      "quote": "Marten Falls First Nation approved the terms of reference in principle, but community review and consideration is ongoing",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7f4310b98e5dc3a0"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c059",
+      "section": "V. Segmentation",
+      "fact": "Terms of reference took two years; provide for Ontario's collaboration",
+      "source": "s5",
+      "candidates": [
+        "s5",
+        "s11"
+      ],
+      "locator": "",
+      "quote": "finalized in January 2025",
+      "auditNote": "…; …; structure diagram lists …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6d43879fd27c5964"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c060",
+      "section": "V. Segmentation",
+      "fact": "Terms of reference took two years; provide for Ontario's collaboration",
+      "source": "s11",
+      "candidates": [
+        "s5",
+        "s11"
+      ],
+      "locator": "",
+      "quote": "Any request by another jurisdiction to be party to these Terms of Reference will be a written request",
+      "auditNote": "…; …; structure diagram lists …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7569de4cba326be8"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c061",
+      "section": "V. Segmentation",
+      "fact": "Terms of reference took two years; provide for Ontario's collaboration",
+      "source": "s11",
+      "candidates": [
+        "s5",
+        "s11"
+      ],
+      "locator": "",
+      "quote": "the province of Ontario (TBD)",
+      "auditNote": "…; …; structure diagram lists …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "579cd0dee09fe4d5"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c062",
+      "section": "V. Segmentation",
+      "fact": "Ontario would not wait for the regional assessment",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "Ontario will not be delaying decision-making on the proposed WSR until the regional assessment is complete.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c8b2c521a1fc89cd"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c063",
+      "section": "V. Segmentation",
+      "fact": "The Agency confirmed the regional assessment creates no obligation on Ontario",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "will not impact timelines for individual project assessments nor create any obligations on Ontario",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2250df29ffd13cc6"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c064",
+      "section": "V. Segmentation",
+      "fact": "The October 2021 clause, in operation",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "The final EA for the WSR was submitted and the regional assessment information is not currently available.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ebe7d95b9d053e1f"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c065",
+      "section": "V. Segmentation",
+      "fact": "Health and social service gaps must be addressed before any development",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "need to be addressed urgently, before any additional development can be considered",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "81192c5d425a2737"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c066",
+      "section": "V. Segmentation",
+      "fact": "Baseline monitoring before any development",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "started immediately, and before any development occurs",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "df7d8c65c9761b0e"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c067",
+      "section": "V. Segmentation",
+      "fact": "Not a decision-making process; informs other decisions",
+      "source": "s5",
+      "candidates": [
+        "s5",
+        "s11",
+        "s12"
+      ],
+      "locator": "s. 3;",
+      "quote": "not a decision-making process, but will serve to inform other decision-making processes",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "43e4aa59e5fcea93"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c068",
+      "section": "V. Segmentation",
+      "fact": "Not a decision-making process; informs other decisions",
+      "source": "s11",
+      "candidates": [
+        "s5",
+        "s11",
+        "s12"
+      ],
+      "locator": "s. 3;",
+      "quote": "nor determine whether or not a project can advance",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fa023ece3bc8719f"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c069",
+      "section": "V. Segmentation",
+      "fact": "Regional assessment has no binding authority",
+      "source": "s23",
+      "candidates": [
+        "s23"
+      ],
+      "locator": "",
+      "quote": "it has no binding authority over project approvals",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6516a0522361c849"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c070",
+      "section": "V. Segmentation",
+      "fact": "The Eagle's Nest refusal undercuts the regional assessment (as argued)",
+      "source": "s23",
+      "candidates": [
+        "s23"
+      ],
+      "locator": "",
+      "quote": "establishes a precedent that undermines the Regional Assessment before it is complete",
+      "auditNote": "the refusal …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 2,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ee1b93d4d0c59b10"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c071",
+      "section": "V. Segmentation",
+      "fact": "Conduct phase runs to mid-2027",
+      "source": "s5",
+      "candidates": [
+        "s5",
+        "s11",
+        "s12"
+      ],
+      "locator": "s. 11.1;",
+      "quote": "30-month conduct phase",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "47827f2bfa14c088"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c072",
+      "section": "V. Segmentation",
+      "fact": "Conduct phase runs to mid-2027",
+      "source": "s5",
+      "candidates": [
+        "s5",
+        "s11",
+        "s12"
+      ],
+      "locator": "s. 11.1;",
+      "quote": "The Terms of Reference schedule a final report to Chiefs and the Minister on July 20, 2027.",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a804bab817334bb8"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c073",
+      "section": "V. Segmentation",
+      "fact": "Delegates have asked for an extension",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "p. 73",
+      "quote": "First Nations delegates in the RAWG recommend an extension be requested to the timelines",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "dd41102259fb6da6"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c074",
+      "section": "V. Segmentation",
+      "fact": "The narrow assessments were designed to run separately from the wide one",
+      "source": "s11",
+      "candidates": [
+        "s11"
+      ],
+      "locator": "Minister's letter 15 Feb 2023",
+      "quote": "will proceed in accordance with their legislative time limits, and separately from the regional assessment timeline",
+      "auditNote": "road assessments …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "44498f60c2abf234"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c075",
+      "section": "V. Segmentation",
+      "fact": "Interim report dated 20 January 2026",
+      "source": "s5",
+      "candidates": [
+        "s5",
+        "s12"
+      ],
+      "locator": "",
+      "quote": "This section reports on scenario development work as of January 20, 2026",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "1366675681e10ab2"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c076",
+      "section": "V. Segmentation",
+      "fact": "Interim report dated 20 January 2026",
+      "source": "s12",
+      "candidates": [
+        "s5",
+        "s12"
+      ],
+      "locator": "",
+      "quote": "On January 20, 2026, notice of an interim report … was published",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 28,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2d148edcc61dd3d1"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c077",
+      "section": "V. Segmentation",
+      "fact": "Submitted to the Minister 23 February 2026",
+      "source": "s7",
+      "candidates": [
+        "s7"
+      ],
+      "locator": "",
+      "quote": "to the Chiefs of Partner First Nations and to the Minister",
+      "auditNote": "registry records submission … on that date",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "efae41c5bb2d29aa"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c078",
+      "section": "V. Segmentation",
+      "fact": "Wyndham: watershed framework",
+      "source": "s24",
+      "candidates": [
+        "s24"
+      ],
+      "locator": "Recommendation 1",
+      "quote": "Adopt a nested, watershed-based impact assessment framework",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8aa740f60ceaec2e"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c079",
+      "section": "V. Segmentation",
+      "fact": "Wyndham: roads as network, not standalone",
+      "source": "s24",
+      "candidates": [
+        "s24"
+      ],
+      "locator": "Recommendation 2",
+      "quote": "Treat roads as regional infrastructure, not standalone projects … Assess roads and linear corridors as access-enabling networks",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b289905e8e763e20"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c080",
+      "section": "V. Segmentation",
+      "fact": "Wyndham drew on 17 key informants",
+      "source": "s24",
+      "candidates": [
+        "s24"
+      ],
+      "locator": "",
+      "quote": "interviews with 17 key informants",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8c2a882fe3623e2e"
+      },
+      "question": "q9"
+    },
+    {
+      "id": "c081",
+      "section": "V. Segmentation",
+      "fact": "No regional assessment was applicable to the alternatives analysis",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "p. 3-2",
+      "quote": "Regional or strategic assessments (none were applicable to this assessment of alternatives)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 5,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "76d4000f49e0b333"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c082",
+      "section": "V. Segmentation",
+      "fact": "Segmentation, as argued by a submitter",
+      "source": "s15",
+      "candidates": [
+        "s15"
+      ],
+      "locator": "",
+      "quote": "many impacts within the Impact Assessment Report are characterized as “residual” despite the likelihood that the WSR will function as part of a broader and interconnected regional road and industrial network",
+      "auditQuote": "many impacts … are characterized as 'residual' despite the likelihood that the WSR will function as part of a broader and interconnected regional road and industrial network",
+      "quoteFix": "2026-09-15: page uses curly double quotes around residual; audit used single quotes and an ellipsis",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 2,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "428f6cf714431ac0"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c083",
+      "section": "V. Segmentation",
+      "fact": "Project splitting, with authority",
+      "source": "s21",
+      "candidates": [
+        "s21"
+      ],
+      "locator": "quoting *MiningWatch Canada v Canada*, 2010 SCC 2",
+      "quote": "part of a project as the whole",
+      "auditNote": "splitting occurs where a proponent represents …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 6,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8b044fcf0ec785b4"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c084",
+      "section": "V. Segmentation",
+      "fact": "The road's enabling function",
+      "source": "s21",
+      "candidates": [
+        "s21"
+      ],
+      "locator": "",
+      "quote": "cannot lawfully or credibly be assessed as an isolated road project",
+      "auditNote": "the road …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 6,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "9cc8a470318634a4"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c085",
+      "section": "V. Segmentation",
+      "fact": "WCS: the three roads are one corridor",
+      "source": "s10",
+      "candidates": [
+        "s10"
+      ],
+      "locator": "",
+      "quote": "despite their functional interconnection as a single infrastructure corridor",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 1,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f069b75c6295d146"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c086",
+      "section": "V. Segmentation",
+      "fact": "The final assessment was incomplete when submitted",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "The EA submitted on January 30, 2026, did not include the complete assessment of potential effects to Indigenous communities",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "e762d9b3f72bfc8b"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c087",
+      "section": "V. Segmentation",
+      "fact": "The final assessment was incomplete when submitted",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "sections 19 and 21 are missing information",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "4d1d3bd526504577"
+      },
+      "question": "q8"
+    },
+    {
+      "id": "c088",
+      "section": "VI. The instruments that were never used",
+      "fact": "Noront voluntary agreement; terms of reference approved 2015",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "entered into a voluntary agreement in September 2011",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 6,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f613740b2bf5bbf7"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c089",
+      "section": "VI. The instruments that were never used",
+      "fact": "Noront voluntary agreement; terms of reference approved 2015",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "Terms of Reference was approved in 2015",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 14,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "21677610cb4e1293"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c090",
+      "section": "VI. The instruments that were never used",
+      "fact": "The Act revoked the approval and terminated the agreement",
+      "source": "s12",
+      "candidates": [
+        "s12",
+        "s29"
+      ],
+      "locator": "",
+      "quote": "The voluntary agreement has been terminated and the Terms of Reference approval revoked",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 14,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "92f028c4efdf8aac"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c091",
+      "section": "VI. The instruments that were never used",
+      "fact": "Royal Assent 5 June 2025; project exempted 4 July 2025",
+      "source": "s29",
+      "candidates": [
+        "s12",
+        "s29"
+      ],
+      "locator": "",
+      "quote": "effective June 5, 2025",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 16,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d9e0acae3feaad80"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c092",
+      "section": "VI. The instruments that were never used",
+      "fact": "Royal Assent 5 June 2025; project exempted 4 July 2025",
+      "source": "s12",
+      "candidates": [
+        "s12",
+        "s29"
+      ],
+      "locator": "",
+      "quote": "On July 4, 2025, the project was exempted under Schedule 3",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 13,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fb6ef048b23ed084"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c093",
+      "section": "VI. The instruments that were never used",
+      "fact": "Federal assessment terminated in 2019 on transition",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "On August 28, 2019, the IAA came into force and the federal EA for the project was terminated … subsection 179(1)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 6,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f065b737a04f2eca"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c094",
+      "section": "VI. The instruments that were never used",
+      "fact": "The refusal was made by the President, not the Minister",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "fn 1",
+      "quote": "On December 5, 2024, the Minister of Environment delegated the powers under section 9 of the Impact Assessment Act related to designation requests to the President of IAAC.",
+      "auditNote": "section 9 powers delegated to the President of the Agency on 5 December 2024",
+      "quoteFix": "2026-09-15: audit paraphrased the footnote",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 5,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "97dd008653b1e9b0"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c095",
+      "section": "VI. The instruments that were never used",
+      "fact": "The refusal sits inside the discretion the Court narrowed",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "focusing decision-making, including the authority to designate, on areas of clear federal jurisdiction",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 10,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "e7091f9efdc14214"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c096",
+      "section": "VI. The instruments that were never used",
+      "fact": "Supreme Court 13 October 2023; amendments 20 June 2024",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "On October 13, 2023, the Supreme Court of Canada",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 9,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "782a2219f3d887a8"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c097",
+      "section": "VI. The instruments that were never used",
+      "fact": "Supreme Court 13 October 2023; amendments 20 June 2024",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "On June 20, 2024, the amended IAA came into force",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "near",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "102ee4a9ebf039c3"
+      },
+      "quoteReview": "2026-09-15: verified by eye — sentence continues across a PDF page break with a running header",
+      "question": "q10"
+    },
+    {
+      "id": "c098",
+      "section": "VI. The instruments that were never used",
+      "fact": "The mine will have no federal assessment",
+      "source": "s12",
+      "candidates": [
+        "s12"
+      ],
+      "locator": "",
+      "quote": "there are means other than a federal impact assessment",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 30,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "69793905e8dd7ac0"
+      },
+      "question": "q10"
+    },
+    {
+      "id": "c099",
+      "section": "VII. What was never compared",
+      "fact": "Floating road: geosynthetics on the peat surface",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 17",
+      "quote": "geotextile or geogrid materials placed on the surface of the peat",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 17,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b95b5cbfb4502d2b"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c100",
+      "section": "VII. What was never compared",
+      "fact": "Western 51 km mineral soil, eastern 56 km peatland",
+      "source": "s30",
+      "candidates": [
+        "s8",
+        "s30"
+      ],
+      "locator": "p. 17;",
+      "quote": "56 km in length",
+      "auditNote": "east half …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 9,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "495152508c485490"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c101",
+      "section": "VII. What was never compared",
+      "fact": "Peat 2 to 4 m deep along the east half",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "p. 4-11",
+      "quote": "The thickness of the peat along the east half of the WSR ranges from 2 m to 4 m in depth",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 11,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2a49388562559505"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c102",
+      "section": "VII. What was never compared",
+      "fact": "Embankment about 1.2 m high",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "is typically 1.2 m in height",
+      "auditNote": "east half …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 11,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "272f0e90fadefb0f"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c103",
+      "section": "VII. What was never compared",
+      "fact": "900 mm equalisation culverts at 100–250 m",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "p. 4-11",
+      "quote": "900 mm diameter equalization culverts at intervals of 100 m to 250 m (distance to be confirmed during detail design)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 12,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "abbe0c9547e88965"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c104",
+      "section": "VII. What was never compared",
+      "fact": "Compression up to 40 per cent with geosynthetics, over 50 without",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "40%+/- of the peat thickness compressing … as compared to 50% plus settlement and greater instability",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 12,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "91ef72dbe33c0140"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c105",
+      "section": "VII. What was never compared",
+      "fact": "No ditches in the peatland; culverts at intervals",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 17",
+      "quote": "No roadside ditches are proposed for the eastern portion",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 17,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ecdfdbe6aa601659"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c106",
+      "section": "VII. What was never compared",
+      "fact": "Permeable rock layer intended to maintain groundwater movement",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "will also support continuous movement of groundwater which will ensure that the hydrology characteristics of the peatlands continues to function",
+      "auditNote": "… (design intention, not a finding)",
+      "quoteCheck": {
+        "status": "near",
+        "page": null,
+        "coverage": 0.89,
+        "date": "2026-09-15",
+        "hash": "d1a85114b46f3f3a"
+      },
+      "quoteReview": "2026-09-15: verified by eye — sentence continues across a PDF page break with a running header",
+      "question": "q11"
+    },
+    {
+      "id": "c107",
+      "section": "VII. What was never compared",
+      "fact": "The proponent's own outstanding investigations",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "Soil, groundwater and ground surveys … to further characterize the peat, local hydrology and groundwater flow",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 13,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "48109715fcc8febc"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c108",
+      "section": "VII. What was never compared",
+      "fact": "The proponent's own outstanding investigations",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "Confirmation of the appropriate distancing for equalization culverts",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 13,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ff46997ea83e8798"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c109",
+      "section": "VII. What was never compared",
+      "fact": "31 crossings, 6 bridges, 25 culverts",
+      "source": "s31",
+      "candidates": [
+        "s30",
+        "s31"
+      ],
+      "locator": "p. 4-17;",
+      "quote": "thirty one permanent waterbody crossings, including 6 bridges and 25 culverts",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f343d0ba65bdac12"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c110",
+      "section": "VII. What was never compared",
+      "fact": "ARA-2 45.41 ha, ARA-4 84.24 ha, 4,854,500 m³",
+      "source": "s30",
+      "candidates": [
+        "s30",
+        "s9"
+      ],
+      "locator": "",
+      "quote": "approximately 45.41 hectares (ha)",
+      "auditNote": "…; …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 27,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7fe21923121a3d89"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c111",
+      "section": "VII. What was never compared",
+      "fact": "ARA-2 45.41 ha, ARA-4 84.24 ha, 4,854,500 m³",
+      "source": "s30",
+      "candidates": [
+        "s30",
+        "s9"
+      ],
+      "locator": "",
+      "quote": "approximately 84.24 ha",
+      "auditNote": "…; …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 30,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d1cdaa8d2840773a"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c112",
+      "section": "VII. What was never compared",
+      "fact": "ARA-2 45.41 ha, ARA-4 84.24 ha, 4,854,500 m³",
+      "source": "s9",
+      "candidates": [
+        "s30",
+        "s9"
+      ],
+      "locator": "",
+      "quote": "a volume of 4,854,500 m3",
+      "auditNote": "…; …; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 33,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d16228a93eca2807"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c113",
+      "section": "VII. What was never compared",
+      "fact": "75-year operating life; construction 5 to 6 years",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "operations phase of the Project is considered to be 75-years",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 37,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "885208de347cd7e3"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c114",
+      "section": "VII. What was never compared",
+      "fact": "75-year operating life; construction 5 to 6 years",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "over a five to six year period",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 31,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5f5a4cb65ce34aba"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c115",
+      "section": "VII. What was never compared",
+      "fact": "Mobilisation up the winter road from Pickle Lake",
+      "source": "s30",
+      "candidates": [
+        "s30"
+      ],
+      "locator": "",
+      "quote": "via the winter road that begins off Highway 808 (NORT Road) approximately 100 km northeast of the Town of Pickle Lake",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 50,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2729d7815989f5e6"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c116",
+      "section": "VII. What was never compared",
+      "fact": "Road will not carry ore; under 500 vehicles a day",
+      "source": "s30",
+      "candidates": [
+        "s30",
+        "s8",
+        "s9"
+      ],
+      "locator": "p. 82;",
+      "quote": "traffic operations will not include mineral ore or mine product hauling/transport",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 6,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "35ae1ff2e92b80aa"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c117",
+      "section": "VII. What was never compared",
+      "fact": "Road will not carry ore; under 500 vehicles a day",
+      "source": "s8",
+      "candidates": [
+        "s30",
+        "s8",
+        "s9"
+      ],
+      "locator": "p. 82;",
+      "quote": "no more than 500 vehicles using the road per day",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 83,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6cc64bc94993d8b4"
+      },
+      "question": "q5"
+    },
+    {
+      "id": "c118",
+      "section": "VII. What was never compared",
+      "fact": "The draft report records uncertainty on floating-road hydrology",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "pp. 83–84",
+      "quote": "ECCC and Wildlife Conservation Society (WCS) Canada, Constance Lake First Nation, and Nibinamik First Nation expressed uncertainty that the floating road design would maintain hydrological conditions of the peatland",
+      "auditNote": "… — attributed to named parties, not the regulator's own finding",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 84,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5013962310180458"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c119",
+      "section": "VII. What was never compared",
+      "fact": "Weenusk's characterisation of that passage",
+      "source": "s14",
+      "candidates": [
+        "s14"
+      ],
+      "locator": "",
+      "quote": "Section 4.3.3.1 which reports uncertainty on whether the floating road design will maintain peatland hydrological conditions",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d952dac22d2e82dd"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c120",
+      "section": "VII. What was never compared",
+      "fact": "Design standards had no site-specific validation",
+      "source": "s14",
+      "candidates": [
+        "s14",
+        "s8"
+      ],
+      "locator": "",
+      "quote": "However, no site-specific validation of these methods was undertaken.",
+      "auditNote": "… (Weenusk's characterisation; no matching statement found in S8)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "9567ddf53ce6a140"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c121",
+      "section": "VII. What was never compared",
+      "fact": "Weenusk raised the absence of a hydrology study and was not satisfied",
+      "source": "s9",
+      "candidates": [
+        "s9"
+      ],
+      "locator": "",
+      "quote": "the lack of a hydrology study as a part of the EAR/IS process",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 5,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f3ea94b5d07a9161"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c122",
+      "section": "VII. What was never compared",
+      "fact": "Weenusk raised the absence of a hydrology study and was not satisfied",
+      "source": "s9",
+      "candidates": [
+        "s9"
+      ],
+      "locator": "",
+      "quote": "Weenusk is not satisfied with the response",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 5,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "77affe5d26c8acb3"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c123",
+      "section": "VII. What was never compared",
+      "fact": "The proponent's position",
+      "source": "s8",
+      "candidates": [
+        "s8",
+        "s9"
+      ],
+      "locator": "p. 83;",
+      "quote": "The proponent stated that the floating road design, including equalization culverts, would not change the hydrological conditions of the peatlands.",
+      "quoteCheck": {
+        "status": "near",
+        "page": null,
+        "coverage": 0.94,
+        "date": "2026-09-15",
+        "hash": "ed286715110a72ea"
+      },
+      "quoteReview": "2026-09-15: verified by eye — sentence continues across a PDF page break with a running header",
+      "question": "q11"
+    },
+    {
+      "id": "c124",
+      "section": "VII. What was never compared",
+      "fact": "ECCC could not confidently assess the outcome",
+      "source": "s28",
+      "candidates": [
+        "s28"
+      ],
+      "locator": "p. 17",
+      "quote": "ECCC can not confidently assess likely and worst-case scenarios for maintaining long-term peatlands function",
+      "auditNote": "… — written on the Marten Falls draft, in a review the Agency applied to all three roads",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 18,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "1b77e3e4216f14ce"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c125",
+      "section": "VII. What was never compared",
+      "fact": "The mechanism, in the department's words",
+      "source": "s28",
+      "candidates": [
+        "s28"
+      ],
+      "locator": "p. 16",
+      "quote": "This commonly creates flooded conditions in upstream areas and dry conditions on the downstream side of the road.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 17,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c0b0d4bf8f54d9c2"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c126",
+      "section": "VII. What was never compared",
+      "fact": "Floating roads degrade",
+      "source": "s28",
+      "candidates": [
+        "s28"
+      ],
+      "locator": "",
+      "quote": "the effectiveness of floating roads can diminish with subsidence over time",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 17,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "265808ef3f64efb2"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c127",
+      "section": "VII. What was never compared",
+      "fact": "Culvert spacing criteria not established",
+      "source": "s28",
+      "candidates": [
+        "s28"
+      ],
+      "locator": "",
+      "quote": "insufficient information on the criteria for determining culvert spacing, sizing, and installation depth",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 18,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8f92d2abe2870ea3"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c128",
+      "section": "VII. What was never compared",
+      "fact": "The proponent's own uncertainty rating",
+      "source": "s28",
+      "candidates": [
+        "s28"
+      ],
+      "locator": "",
+      "quote": "a level of 'high uncertainty' when characterizing residual effects to hydrology",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 18,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f8621ac2405e4226"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c129",
+      "section": "VII. What was never compared",
+      "fact": "Traffic could defeat the design",
+      "source": "s28",
+      "candidates": [
+        "s28"
+      ],
+      "locator": "",
+      "quote": "Appendix F anticipates peak traffic levels of 100 to 700 vehicles in 2046",
+      "auditNote": "… (Marten Falls)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 18,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "23c270dfb2c45b5a"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c130",
+      "section": "VII. What was never compared",
+      "fact": "Methylmercury mechanism",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 83",
+      "quote": "These anoxic conditions could enhance methylmercury generation and increase its release into groundwater or surface water",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 83,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c1b985e905381900"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c131",
+      "section": "VII. What was never compared",
+      "fact": "Flooding pathway",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 83",
+      "quote": "could cause groundwater impoundment or periodic surface flooding",
+      "auditNote": "hydrology changes …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 83,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "1ee0ff6b47ee1cbe"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c132",
+      "section": "VII. What was never compared",
+      "fact": "Monitoring is the proposed answer",
+      "source": "s8",
+      "candidates": [
+        "s8"
+      ],
+      "locator": "p. 84",
+      "quote": "until a three-year trend analysis demonstrates the project is unlikely to generate or transport methylmercury",
+      "auditNote": "recommends monitoring …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 84,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "92f4f910b262a415"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c133",
+      "section": "VII. What was never compared",
+      "fact": "WCS: no evidence base for the design",
+      "source": "s22",
+      "candidates": [
+        "s22"
+      ],
+      "locator": "",
+      "quote": "there is only one outdated reference to support that the 'floating roads' are logistically feasible",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fef7f223a161c873"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c134",
+      "section": "VII. What was never compared",
+      "fact": "WCS: \"floating\" is a misnomer",
+      "source": "s22",
+      "candidates": [
+        "s22"
+      ],
+      "locator": "",
+      "quote": "is not floating – the road is supported by the compressed peat",
+      "auditNote": "the road …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 2,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "10e1b24a1d39db18"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c135",
+      "section": "VII. What was never compared",
+      "fact": "A peatland scientist asks whether floating roads were tested in peatlands",
+      "source": "s4",
+      "candidates": [
+        "s4",
+        "s6"
+      ],
+      "locator": "",
+      "quote": "have they been tested in peatlands?",
+      "auditNote": "…; S6 identifies Daniel Campbell, Peatland Ecology Research Group",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "44070e502a992a45"
+      },
+      "question": "q11"
+    },
+    {
+      "id": "c136",
+      "section": "VII. What was never compared",
+      "fact": "Corridor concepts and costs",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "Alternative 1 is 113 km in length … $238.75 million",
+      "auditNote": "…; … (2A: 104 km, $106.40 m; 2B: 95 km, $99.25 m)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 31,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "3a6df87d30a28f0d"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c137",
+      "section": "VII. What was never compared",
+      "fact": "Corridor concepts and costs",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "Alternative 2C is 107 km in length … $91.45 million",
+      "auditNote": "…; … (2A: 104 km, $106.40 m; 2B: 95 km, $99.25 m)",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 31,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a7c2e2dccedd40a9"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c138",
+      "section": "VII. What was never compared",
+      "fact": "Cost drove the choice",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "Alternative 2C is preferred for this factor, as it has the lowest preliminary cost",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 31,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "4b7ecc6c172f6994"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c139",
+      "section": "VII. What was never compared",
+      "fact": "Current cost estimate is far higher",
+      "source": "s9",
+      "candidates": [
+        "s9"
+      ],
+      "locator": "",
+      "quote": "preliminary estimated capital cost … is approximately $700 million dollars (+/- 40%)",
+      "auditNote": "WSR …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 31,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2a7929117635138a"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c140",
+      "section": "VII. What was never compared",
+      "fact": "Three alternative modes evaluated",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "hoverbarge (hovercraft), heavy lift airship (dirigible), and a new rail corridor",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 8,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "3aa6dfdad64f8307"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c141",
+      "section": "VII. What was never compared",
+      "fact": "Rail rejected partly because its advantages related to ore",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "advantages of the rail options studied previously were associated with the movement of mine product",
+      "auditQuote": "the advantages of the rail options studied previously were associated with the movement of mine product",
+      "quoteFix": "2026-09-15: audit added \"the\" that is not in the text",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 11,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "34c7f67f5e8b49fa"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c142",
+      "section": "VII. What was never compared",
+      "fact": "Rail capital costs",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "rail capital costs were on the order of 50% higher than road costs",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 11,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7396c3c75120cb88"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c143",
+      "section": "VII. What was never compared",
+      "fact": "Greenhouse gas estimate",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "73.2 kilotons of CO2eq, and during the operations phase the annual contribution would be 11.8 kilotons",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 29,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a1d1e4dc9fbe622b"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c144",
+      "section": "VII. What was never compared",
+      "fact": "Missisa caribou: 745 minimum, declining",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "estimated at 745 based on winter distribution surveys completed from 2009 through 2013",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 24,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "73c276296d1c8ef1"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c145",
+      "section": "VII. What was never compared",
+      "fact": "Missisa caribou: 745 minimum, declining",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "the population was on a declining trend",
+      "auditNote": "…; …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 24,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "80e655fcda941f8f"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c146",
+      "section": "VII. What was never compared",
+      "fact": "Habitat recovery in excess of 100 years",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "deemed to be in excess of 100 years by some First Nation Elders",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 24,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "aaac461ccd6c9634"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c147",
+      "section": "VII. What was never compared",
+      "fact": "Predator and hunter access",
+      "source": "s29",
+      "candidates": [
+        "s29"
+      ],
+      "locator": "",
+      "quote": "Alignment of 2C may allow for greatest ease of access for predators and hunters into undisturbed woodlands and peatlands",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 30,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "4ab6707f88f60458"
+      },
+      "question": "q3"
+    },
+    {
+      "id": "c148",
+      "section": "VII. What was never compared",
+      "fact": "Alternatives were narrowed by the terms of reference",
+      "source": "s31",
+      "candidates": [
+        "s31"
+      ],
+      "locator": "",
+      "quote": "the EA was focused to exclude a detailed assessment of 'alternatives to' the project",
+      "auditNote": "… — only a new all-season road and 'do nothing' were evaluated",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5c7192ff71dfb75f"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c149",
+      "section": "VII. What was never compared",
+      "fact": "Regional assessment had produced nothing usable",
+      "source": "s9",
+      "candidates": [
+        "s9"
+      ],
+      "locator": "",
+      "quote": "At this time there are no deliverable outputs available from the Regional Assessment to consider.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 31,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b3a5e84be07fb19d"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c150",
+      "section": "VII. What was never compared",
+      "fact": "One community lost food subsidies after a road; food net dearer",
+      "source": "s5",
+      "candidates": [
+        "s5"
+      ],
+      "locator": "",
+      "quote": "resulted in community members losing subsidies. Overall, the cost of food increased",
+      "auditNote": "… — the second half rests on the registry's HTML image description, not the PDF caption",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "69d807ff04a69255"
+      },
+      "question": "q13"
+    },
+    {
+      "id": "c151",
+      "section": "VII. What was never compared",
+      "fact": "Partners commissioned a cost-of-living study",
+      "source": "s5",
+      "candidates": [
+        "s5",
+        "s6"
+      ],
+      "locator": "",
+      "quote": "The RAWG has commissioned a study",
+      "auditNote": "…; S6 lists …, Swift Creek Consulting, 2026-04-29",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a259f5d53248e2c8"
+      },
+      "question": "q13"
+    },
+    {
+      "id": "c152",
+      "section": "VII. What was never compared",
+      "fact": "Partners commissioned a cost-of-living study",
+      "source": "s6",
+      "candidates": [
+        "s5",
+        "s6"
+      ],
+      "locator": "",
+      "quote": "Cost of Living in the Ring of Fire Final Report",
+      "auditNote": "…; S6 lists …, Swift Creek Consulting, 2026-04-29",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ea5e6e34fe4f952b"
+      },
+      "question": "q13"
+    },
+    {
+      "id": "c153",
+      "section": "VII. What was never compared",
+      "fact": "Transport Action Ontario on rail",
+      "source": "s25",
+      "candidates": [
+        "s25"
+      ],
+      "locator": "",
+      "quote": "costs about 75% less than trucking",
+      "auditNote": "rail …; locomotives …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "1ac5c8930ebd31d6"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c154",
+      "section": "VII. What was never compared",
+      "fact": "Transport Action Ontario on rail",
+      "source": "s25",
+      "candidates": [
+        "s25"
+      ],
+      "locator": "",
+      "quote": "emit approximately 80% less CO2 per tonne/km",
+      "auditNote": "rail …; locomotives …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "636983c9cca67507"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c155",
+      "section": "VII. What was never compared",
+      "fact": "A tri-provincial rail memorandum exists",
+      "source": "s25",
+      "candidates": [
+        "s25"
+      ],
+      "locator": "",
+      "quote": "for new rail lines to connect critical mineral deposits located in Ontario's Ring of Fire region to ports in Western Canada",
+      "auditNote": "22 July 2025 memorandum …",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fbe7df36e1141100"
+      },
+      "question": "q12"
+    },
+    {
+      "id": "c156",
+      "section": "VIII. The half that does not exist",
+      "fact": "Cliffs exited its chromite position in the mid-2010s",
+      "source": "s11",
+      "candidates": [
+        "s11"
+      ],
+      "locator": "Annex 1",
+      "quote": "2015 Industry March: Cliffs sells chromite claims to Noront",
+      "auditNote": "… (sold, not written off)",
+      "auditQuote": "2015 March: Cliffs sells chromite claims to Noront",
+      "quoteFix": "2026-09-15: Annex 1 timeline lists the year and the category above the entry; audit merged them",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "771939e616ca8caa"
+      },
+      "question": "q6"
+    },
+    {
+      "id": "c157",
+      "section": "Footnotes",
+      "fact": "[^1] About 500 km northeast of Thunder Bay",
+      "source": "s2",
+      "candidates": [
+        "s2"
+      ],
+      "locator": "",
+      "quote": "more than 500 kilometres northeast of Thunder Bay",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "eb90920b10be4244"
+      },
+      "question": "q6"
+    },
+    {
+      "id": "c158",
+      "section": "Footnotes",
+      "fact": "[^1] Chromite plus nickel, copper, platinum-group metals",
+      "source": "s2",
+      "candidates": [
+        "s2"
+      ],
+      "locator": "",
+      "quote": "includes: chromite copper nickel platinum titanium",
+      "auditNote": "lists …",
+      "auditQuote": "chromite, copper, nickel, platinum, titanium",
+      "quoteFix": "2026-09-15: the page is a bulleted list; audit added commas",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6b85bad1f669bf29"
+      },
+      "question": "q6"
+    },
+    {
+      "id": "c159",
+      "section": "Footnotes",
+      "fact": "[^1] Figures in the tens of billions",
+      "source": "s2",
+      "candidates": [
+        "s2"
+      ],
+      "locator": "",
+      "quote": "generate over $22 billion dollars for Ontario's economy over 30 years",
+      "auditNote": "… — a GDP projection, not a resource value",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "725d48f7c78eb266"
+      },
+      "question": "q6"
+    },
+    {
+      "id": "c160",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Federal funding: over $7 million a year for 32 remote First Nations and about 3,200 km of winter roads",
+      "source": "s32",
+      "quote": "Indigenous Services Canada (ISC) provides over $7 million annually to support 32 remote First Nations in Ontario for the construction, maintenance, and improvement of approximately 3,200 kilometres of winter roads.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a033aaa8665df6f0"
+      }
+    },
+    {
+      "id": "c161",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Federal top-up: $20 million over four years, to $11 million a year",
+      "source": "s32",
+      "quote": "With today’s announcement of an additional $20 million over four years, this contribution will increase to $11 million annually.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5bfb26a0608673f3"
+      }
+    },
+    {
+      "id": "c162",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "The federal minister on the shortened season: shortages of food, fuel and medical supplies, more air transport",
+      "source": "s32",
+      "quote": "Climate change has significantly shortened the window for winter roads to be accessible, leading to shortages of food, fuel, and medical supplies, and increasing reliance in air transport.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d3cad47977231aa0"
+      }
+    },
+    {
+      "id": "c163",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "The federal minister: a shorter season poses supply problems for many remote First Nations",
+      "source": "s33",
+      "quote": "The shortening of the winter road seasons poses important supply problems for many remote First Nations, as these roads are critical to their quality of life.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "389bcadc7ae1af4f"
+      }
+    },
+    {
+      "id": "c164",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Winter roads are built over land, frozen rivers and lakes by the communities themselves",
+      "source": "s34",
+      "quote": "Winter roads are built over land, frozen rivers and lakes by remote communities and First Nation members.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "460f45fc0b3ced57"
+      }
+    },
+    {
+      "id": "c165",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Season from around mid-January until spring thaw (Ontario)",
+      "source": "s34",
+      "quote": "From around mid-January until spring thaw, winter roads make it easier to travel and bring in supplies.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "4d0cef58846515ab"
+      }
+    },
+    {
+      "id": "c166",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Ontario: winter roads lower the cost of transporting goods, fuel and materials",
+      "source": "s34",
+      "quote": "lower the cost of transporting consumer goods, fuel and construction materials to remote",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c5f32294858ffe0e"
+      }
+    },
+    {
+      "id": "c167",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "More than 30 remote First Nations with no year-round access (NAN)",
+      "source": "s36",
+      "quote": "More than 30 First Nation communities in Ontario are remote, with no year-round access to urban centers where essential goods and services are obtained.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b9864f87584e16a0"
+      }
+    },
+    {
+      "id": "c168",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "How warming shortens the season: fewer freezing days to build, earlier breakup (NAN)",
+      "source": "s36",
+      "quote": "The warming climate has shortened the periods of consecutive freezing degree days needed for construction at the beginning of the winter road season and earlier breakup of winter roads.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "50c9cd8657b6df8b"
+      }
+    },
+    {
+      "id": "c169",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Season down from an average of 77 days to as few as 28 (NAN’s own figure, no method given)",
+      "source": "s36",
+      "quote": "The impacts of climate change have significantly shortened the winter road season, reducing it from an average of 77 days to as few as 28 days – or even less in some regions.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b953420118d5f6a9"
+      }
+    },
+    {
+      "id": "c170",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Chiefs declared a state of emergency after a warm winter (NAN)",
+      "source": "s36",
+      "quote": "Last winter our Chiefs were forced to declare a state of emergency as unseasonably warm weather threatened the viabi",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "9b7d7a6cf668abfe"
+      }
+    },
+    {
+      "id": "c171",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Ten of the fifteen regional-assessment First Nations have no all-season road; winter roads and airports carry food and goods",
+      "source": "s5",
+      "quote": "Ten out of the 15 First Nation Partners are not connected by all-season roads to the provincial highway system. Communities rely on winter roads that require costly maintenance and repair as well as a few community airports for the import of food, goods and materials.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "84c405de832d4cc2"
+      }
+    },
+    {
+      "id": "c172",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Webequie: accessible only by air or winter road; food, fuel and supplies flown in",
+      "source": "s27",
+      "quote": "Webequie is currently accessible only by air or winter roads, which means food, fuel and construction supplies must be flown in.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "3c5d157ab38ec8eb"
+      }
+    },
+    {
+      "id": "c173",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Air transport is costly and limited; the winter road is insufficient for the community",
+      "source": "s8",
+      "quote": "Air transportation is high in cost and limited in what can be transported. The winter road has been deemed insufficient to meet the needs of the community.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 19,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "e718600dce1e2394"
+      }
+    },
+    {
+      "id": "c174",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "The trail to McFaulds Lake is passable end to end only in the coldest months",
+      "source": "s29",
+      "quote": "can only be travelled for the entire distance during the coldest winter months",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 7,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "14322f441d0bad49"
+      }
+    },
+    {
+      "id": "c175",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Cost of living is an urgent priority for the regional assessment working group",
+      "source": "s5",
+      "quote": "Cost of living is an urgent priority for the RAWG.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": null,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "499c3e7e4542ca94"
+      }
+    },
+    {
+      "id": "c176",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "The high cost of fuel in remote communities shapes whether people harvest",
+      "source": "s8",
+      "quote": "given the high cost of fuel in remote communities, harvesting success is an important factor that influences the likelihood of land-users engaging in land-based activities.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 99,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f676d04016c664c3"
+      }
+    },
+    {
+      "id": "c177",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "All-season road access exists for a third of the fifteen communities; two-thirds rely on expensive air service",
+      "source": "s37",
+      "quote": "All-season road access only exists for a third of the 15 communities, leaving two-thirds of communities to rely on expensive air service for moving people and goods most of the year.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6cb0d68768709d09"
+      }
+    },
+    {
+      "id": "c178",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Roads cut both ways: cheaper freight and travel, but access for unwanted influences and pressures",
+      "source": "s37",
+      "quote": "Improving road access to First Nations communities is one example where both positive and negative effects can be foreseen: better road access can lower the cost of freight and travel between communities and larger centres, but at the same time better road access facilitate access of communities and traditional lands of unwanted influences and pressures, a negative effect of which some community members are deeply concerned.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 23,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "afc4f88d45dd0a2b"
+      }
+    },
+    {
+      "id": "c179",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Winter roads are typically open six to ten weeks a year, some for less",
+      "source": "s37",
+      "quote": "Generally, winter roads are typically open for only six to ten weeks per year, but some roads are open for shorter periods of time.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 40,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "1fb7bc8b32eab92e"
+      }
+    },
+    {
+      "id": "c180",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Peawanuck’s road to Manitoba: about a two-week window (a community member)",
+      "source": "s37",
+      "quote": "According to a community member, the road connecting Peawanuck to year-round roads in Manitoba currently has only about a two-week window, requiring meticulous planning for needs for the coming year, and having serious ramifications on air freight costs if winter road traffic runs into complications.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 40,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ae1197a69966f83c"
+      }
+    },
+    {
+      "id": "c181",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Winter roads carry fuel, food, building materials and people",
+      "source": "s37",
+      "quote": "These seasonal roads serve as lifelines for transporting fuel, food, building materials, and people.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 40,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "cf580dadc0bd2d5d"
+      }
+    },
+    {
+      "id": "c182",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Driving south to stock up is not affordable for everyone",
+      "source": "s37",
+      "quote": "Winter roads provide an opportunity to drive south and stock up on food and other goods, and in some cases are a critical element to getting large goods to and from communities, but not everyone can afford such trips",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 40,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c2e1102717dfa315"
+      }
+    },
+    {
+      "id": "c183",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Projection (Manitoba as proxy): by the 2050s roads open five days later and the season is ten days shorter",
+      "source": "s37",
+      "quote": "Projections for Manitoba winter roads – which serve as a proxy for northern Ontario winter roads – suggest that by the 2050s, roads will open five days later and the season will be ten days shorter",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b171934e5951e9fb"
+      }
+    },
+    {
+      "id": "c184",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Worse winter roads mean higher costs: maintenance and more air freight",
+      "source": "s37",
+      "quote": "Worsening winter road conditions leads to higher costs – both from maintenance of the winter road but also in terms of a growing need to rely on air freight.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "10fd1cbc0814568d"
+      }
+    },
+    {
+      "id": "c185",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Road-building grants: about $11 million a year federal, about $13 million provincial (the report’s figures)",
+      "source": "s37",
+      "quote": "The costs of building and maintaining these roads are supported by grants from the federal government (approximately $11 million per year in Ontario) and provincial government (approximately $13 million per year).",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "2beda9d4faadab61"
+      }
+    },
+    {
+      "id": "c186",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Tuktoyaktuk (NWT): food prices rose after the all-season road opened, mainly from the loss of Nutrition North freight subsidies",
+      "source": "s37",
+      "quote": "However, a recent study found that food prices in Tuktoyaktuk had actually increased after the opening of the road, driven mainly by the loss of NNC freight subsidies.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "49b373a7ff91d60b"
+      }
+    },
+    {
+      "id": "c187",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "The Inuvik–Tuktoyaktuk Highway: 137 km, 2017, about $299 million, replacing a winter-only ice road",
+      "source": "s37",
+      "quote": "the Inuvik-to-Tuktoyaktuk Highway, a 137 km, two-lane gravel road completed in 2017 at a cost of approximately $299 million, replaced a winter-only ice road",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "290969f9d4cec036"
+      }
+    },
+    {
+      "id": "c188",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "The same highway saves about $560,000 a year in winter-road costs",
+      "source": "s37",
+      "quote": "The NWT did note that the highway is estimated to save $560,000 per year in winter road construction and maintenance costs.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a0e75e8b6c31c670"
+      }
+    },
+    {
+      "id": "c189",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Freight cost is a major determinant of local prices (community members)",
+      "source": "s37",
+      "quote": "Community members agreed that the cost of freight is a major determinant of the local cost of goods.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 44,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "92e01d16c21f198a"
+      }
+    },
+    {
+      "id": "c190",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Gasoline in Moosonee about 148% of the Toronto price in 2022 (Northern Policy Institute, as cited; Moosonee is not one of the fifteen)",
+      "source": "s37",
+      "quote": "A Northern Policy Institute study found gasoline to be about 148% of the price in 2022 in Moosonee compared to Toronto.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 44,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5ec087560f25a4ca"
+      }
+    },
+    {
+      "id": "c191",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Freight runs one way: goods come in, little goes out (a community member)",
+      "source": "s37",
+      "quote": "One other driver of the high costs of freight appears to be the one-way nature of freight traffic, according to one community member. Apparently, goods are brought in, but often nothing is brought out",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 45,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "30d6941c106b7a79"
+      }
+    },
+    {
+      "id": "c192",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Food about 50% dearer than in southern communities, March 2024 to September 2025",
+      "source": "s37",
+      "quote": "These data show food costs in remote communities to be about 50% more expensive than in southern communities from March 2024 through September 2025.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 48,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "f341850213202269"
+      }
+    },
+    {
+      "id": "c193",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Webequie northern food basket up 27.3% from September 2022 to September 2025 (Table 18)",
+      "source": "s37",
+      "quote": "Webequie $545 $552 $556 $564 $592 $619 $694 +27.3%",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 48,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "87025469e4d61e53"
+      }
+    },
+    {
+      "id": "c194",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Many community members doubt the food subsidy reaches them; audits and research suggest most of it is passed on",
+      "source": "s37",
+      "quote": "Numerous community members feel that the subsidy program is not working, and even that food retailers are pocketing some or all of the subsidy, evidencing a lack of trust. However, audit reports on the NNC website suggest that the subsidy is generally being passed on to end consumers, one external expert believes that most if not all of the subsidy is passed on to final consumers,20 and academic research estimated that at least two-thirds of subsidies are passed on.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 49,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7d776a616c32d212"
+      }
+    },
+    {
+      "id": "c195",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Several community members did not know the subsidy existed",
+      "source": "s37",
+      "quote": "Even so, several community members that we interviewed were unaware of the existence of the NNC subsidy, raising the question of the program’s effectiveness at keeping prices down.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 49,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "6ed672ff45f260f5"
+      }
+    },
+    {
+      "id": "c196",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Average one-way airfare from the communities: $607 (least expensive online fares, February 2026)",
+      "source": "s37",
+      "quote": "Average: 1.9 hours $607",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 43,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b6a88c39db3767c7"
+      }
+    },
+    {
+      "id": "c197",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Nibinamik one-way airfare to Thunder Bay: $1,290",
+      "source": "s37",
+      "quote": "Nibinamik / Summer Beaver Yes Wasaya 2.4 to 3.3 hours to Thunder Bay $1,290",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 43,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "d265e32bae89f9ef"
+      }
+    },
+    {
+      "id": "c198",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Report conclusion: similar costs to the south are not likely; some drivers cannot realistically be overcome",
+      "source": "s37",
+      "quote": "While many in the region would like to have similar costs to those in ‘the south’, this is not likely to happen; some factors driving the cost-of-living are not realistically overcome.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 101,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "b23a683ec3c5f8e6"
+      }
+    },
+    {
+      "id": "c199",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Report conclusion: cost of living is a cumulative-effect problem",
+      "source": "s37",
+      "quote": "A fourth lesson is that cost-of-living is a cumulative effect problem. Factors compound one another, but this also means that solutions can compound one another.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 101,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "a33d6a06bdff27c6"
+      }
+    },
+    {
+      "id": "c200",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Report conclusion: cost of living is also about income",
+      "source": "s37",
+      "quote": "A second lesson is that the cost of living is not just about costs, it’s also about income. No matter what expenses and challenges one faces, the ability to pay for things and otherwise meet one’s needs must get attention.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 101,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fb057faa5d20551c"
+      }
+    },
+    {
+      "id": "c201",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Project benefits flow only where there are geographic and commercial links to communities",
+      "source": "s37",
+      "quote": "Benefit flows only occur when there are geographic and commercial linkages between communities and projects.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 73,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "fecebb3dc43af4e3"
+      }
+    },
+    {
+      "id": "c202",
+      "question": "q1",
+      "section": "gathered 2026-09-15",
+      "fact": "Five of the fifteen communities under boil-water advisories; Neskantaga for over 30 years",
+      "source": "s37",
+      "quote": "Five of the 15 communities have boil-water advisories in place; four for over ten years, and one (Neskantaga) for over 30 years!",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 3,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "9f97ab523c7218f6"
+      }
+    },
+    {
+      "id": "c203",
+      "question": "q4",
+      "section": "gathered 2026-09-15",
+      "fact": "Traditional foods are generally healthier than store food in remote communities",
+      "source": "s37",
+      "quote": "Traditional foods are generally healthier than what can be found in stores in remote communities",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 49,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "48b23910322f026f"
+      }
+    },
+    {
+      "id": "c204",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "A community member calls recent winter-road changes a source of havoc",
+      "source": "s37",
+      "quote": "One community member described the changes happening in winter roads in recent years a source of “havoc” in communities.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "7c6abbec5ab160d0"
+      }
+    },
+    {
+      "id": "c205",
+      "question": "q2",
+      "section": "gathered 2026-09-15",
+      "fact": "Northern Policy Institute staff: winter roads are not a long-term solution because of climate change",
+      "source": "s37",
+      "quote": "Northern Policy Institute staff feel that winter roads are not a long- term solution due to climate change.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 41,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "5341df71b1c65285"
+      }
+    },
+    {
+      "id": "c206",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Musselwhite (an all-season-road mine): food and housing costs still driven by air freight, short winter roads and retailer monopolies; subsidies not found effective",
+      "source": "s37",
+      "quote": "Analysts have concluded that food costs and housing have continued to be affected by air freight dependency, short winter road seasons, retailer monopolies; NNC food subsidies have not been found to be effective.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 76,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "3bbf223272c15c35"
+      }
+    },
+    {
+      "id": "c207",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "Northern diamond mines: the bigger effect on food costs was the disruption of the traditional food economy",
+      "source": "s37",
+      "quote": "the more consequential effect on food costs is the disruption to the traditional food economy, which forces greater household dependence on expensive imported food.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 79,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "c59bd43769445601"
+      }
+    },
+    {
+      "id": "c208",
+      "question": "q3",
+      "section": "gathered 2026-09-15",
+      "fact": "When traditional food sources are diminished, households replace them with store food at freight-inflated prices",
+      "source": "s37",
+      "quote": "When traditional food sources are diminished, households must replace traditional food with store-bought alternatives at prices inflated by freight costs.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 80,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "81ae98c2211e3666"
+      }
+    },
+    {
+      "id": "c209",
+      "question": "q13",
+      "section": "gathered 2026-09-15",
+      "fact": "NWT diamond mines: no permanent all-season road built, and mine power not extended to nearby communities",
+      "source": "s37",
+      "quote": "No permanent all-season road has been constructed to the mine sites, and the power infrastructure built for the mines, including the Diavik wind farm and on-site diesel generation, has not been extended to nearby communities.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 80,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "57d385ad7c6426be"
+      }
+    },
+    {
+      "id": "c210",
+      "question": "q4",
+      "section": "gathered 2026-09-15",
+      "fact": "Communities are already making strides with community gardens and community-owned businesses (report's conclusion)",
+      "source": "s37",
+      "quote": "communities are right now making strides with community gardens and cooperative and community-owned businesses.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 102,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "458634c12d4cb3fd"
+      }
+    },
+    {
+      "id": "c211",
+      "question": "q12",
+      "section": "gathered 2026-09-15",
+      "fact": "The regional assessment’s science review: corridor proposals still proponent-driven; network-level impacts under-assessed",
+      "source": "s24",
+      "quote": "Corridor proposals still largely proponent-driven.  Network-level hydrologic and predator access impacts under-assessed.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 64,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "781f9642f8c48624"
+      }
+    },
+    {
+      "id": "c212",
+      "question": "q3",
+      "section": "gathered 2026-09-15",
+      "fact": "A reviewer: mercury and methylmercury results exist but sit in an appendix of the Webequie assessment",
+      "source": "s9",
+      "quote": "the results of mercury and methylmercury analyses are not presented in the main body of the Draft EA/IS and are instead buried within an appendix.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 207,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "ef262d001576f210"
+      }
+    },
+    {
+      "id": "c213",
+      "question": "q8",
+      "section": "gathered 2026-09-15",
+      "fact": "The federal draft report assessed the road in combination with the other two roads and the mine (caribou, harvesting)",
+      "source": "s8",
+      "quote": "IAAC is of the view that the project, in combination with the proposed Marten Falls Community Access Road, Northern Road Link, and Eagle’s Nest projects is likely to reduce the availability of caribou within the respective project LSAs and alter movement patterns and range areas within the project RSA.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 99,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "02ccccff31436f98"
+      }
+    },
+    {
+      "id": "c214",
+      "question": "q8",
+      "section": "gathered 2026-09-15",
+      "fact": "Fort Albany: the cumulative effects assessment does not include the Marten Falls road",
+      "source": "s20",
+      "quote": "The cumulative effects assessment does not include the Marten Falls Community Access Road - The proponent acknowledges the concern that cumulative effects on peatland ecosystems may be underestimated when assessed at a project scale.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 77,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8eb6869ec7770f07"
+      }
+    },
+    {
+      "id": "c215",
+      "question": "q6",
+      "section": "gathered 2026-09-15",
+      "fact": "Aroland asked that cumulative effects cover the route to the smelters; the proponent said the final assessment would address it",
+      "source": "s9",
+      "quote": "a full and complete analysis of the contribution to cumulative effects of the WSR must include the entirety of the overland transportation route between the Ring of Fire and possible receiving locations (e.g., Ferrochrome facility in Sault Ste. Marie, Sudbury Smelter, other reasonably foreseeable end points for ore or mine concentrate). 1. Item will be addressed in the Final EAR/IS submission.",
+      "quoteCheck": {
+        "status": "exact",
+        "page": 52,
+        "coverage": 1,
+        "date": "2026-09-15",
+        "hash": "8233ca83a52fca3c"
+      }
+    }
+  ],
+  "notes": []
+}

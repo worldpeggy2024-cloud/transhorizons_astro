@@ -1,0 +1,514 @@
+[
+  {
+    "id": "g-corridor-modes",
+    "q": "Did any assessment compare transport modes or routes for the whole corridor, rather than for one segment?",
+    "terms": [
+      "/alternative[s]? (?:to|for) the (?:corridor|network|road network)/i",
+      "/corridor[- ]level|network[- ]level|whole corridor|entire corridor|all three roads/i",
+      "/(?:rail|railway).{0,80}(?:Marten Falls|Northern Road Link|corridor)/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s4",
+        "name": "Registry 80183, public comments list",
+        "count": 1,
+        "snippets": [
+          " Impact Assessment Report and potential conditions We believe that including a heavy-haul rail line in this road corridor would have a strong business and social case: Rail Offers Economic and Social Advantages "
+        ]
+      },
+      {
+        "id": "s24",
+        "name": "Wyndham Research, science review for the Regional Assessment, March 2026",
+        "count": 1,
+        "snippets": [
+          "e 64]] 54  Partially implemented.  Corridor proposals still largely proponent-driven.  Network-level hydrologic and predator access impacts under-assessed. Future opportunity  Evaluate road"
+        ]
+      },
+      {
+        "id": "s25",
+        "name": "Transport Action Ontario, submission, 4 May 2026 (registry reference 282)",
+        "count": 1,
+        "snippets": [
+          "he behalf of Transport Action Ontario Comment text We believe that including a heavy-haul rail line in this road corridor would have a strong business and social case: Rail Offers Economic and Social Advantages "
+        ]
+      },
+      {
+        "id": "s29",
+        "name": "Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026",
+        "count": 5,
+        "snippets": [
+          "re evaluated including hoverbarge (hovercraft), heavy lift airship (dirigible), and a new rail corridor. Hoverbarge Hovercraft technology has a considerable and successful history in transporta",
+          " was not carried forward for further consideration in the evaluation of alternatives. New Rail Corridor The evaluation of “Alternatives to the Undertaking” recognizes the results of transportat"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-nrl-timeline",
+    "q": "Is there a published schedule or decision date for the Northern Road Link?",
+    "terms": [
+      "/Northern Road Link.{0,160}(?:20[23]\\d|schedule|construction|approv|timeline)/i",
+      "/(?:20[23]\\d|schedule|construction|approv|timeline).{0,160}Northern Road Link/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s2",
+        "name": "Ontario's Ring of Fire page, Government of Ontario",
+        "count": 1,
+        "snippets": [
+          "jects, including: Webequie Supply Road Project Marten Falls Community Access Road Project Northern Road Link Project Anaconda and Painter Lake Roads upgrades to Highways 584/643 at the gateway to the Ring of Fire region (completed November 2024) Map of proposed road environmental assessment study areas Image Enlarge Map Map descript"
+        ]
+      },
+      {
+        "id": "s8",
+        "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+        "count": 1,
+        "snippets": [
+          "ESSMENT REPORT – WEBEQUIE SUPPLY ROAD UNCLASSIFIED - NON CLASSIFIÉ Community Access Road, Northern Road Link, and Eagle’s Nest projects, including through site clearing and grubbing activities conducted during their construction and operation phases. These effects would include the partial damage or degradation of si"
+        ]
+      },
+      {
+        "id": "s9",
+        "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+        "count": 8,
+        "snippets": [
+          "to be built to access won’t be developed until the Marten Falls Community Access Road and Northern Road Link are both constructed and operational. Even under the most optimistic permitting and construction scenarios, there is time for at least 5 years of baseline data gathering along the WSR co",
+          "to be built to access won’t be developed until the Marten Falls Community Access Road and Northern Road Link are both constructed and operational. Even under the most optimistic permitting and construction scenarios, there is time for at least 5 years of baseline data gathering along the WSR co"
+        ]
+      },
+      {
+        "id": "s16",
+        "name": "Nibinamik First Nation, letter to Ontario and the Agency, 22 May 2026",
+        "count": 1,
+        "snippets": [
+          " concerns with Ontario’s and Canada’s [[page 2]] 2 efforts to expedite the assessment and construction of the WSR, as well as the Marten Falls First Nation Community Access Road (“MFCAR”) and the Northern Road Link (“NRL”, or together the “Roads”); the inadequacy of the assessment of the Roads’ potentia"
+        ]
+      },
+      {
+        "id": "s20",
+        "name": "Fort Albany First Nation, submission, May 2026",
+        "count": 1,
+        "snippets": [
+          "tion and Parks regarding regulatory processes for the Marten Falls Community Access Road, Northern Road Link, and Webequie Supply Road. February 2, 2026. Feit, H. A. (2004). James Bay Cree land use and occupancy. In M. Blaser, H. Feit, & G. M"
+        ]
+      },
+      {
+        "id": "s21",
+        "name": "Friends of the Attawapiskat River, submission",
+        "count": 1,
+        "snippets": [
+          "e activities that rely on or are facilitated by the WSR, including but not limited to: 1. Construction of upgrades to the Anaconda/Painter Lake Forestry Road; 2. The construction and operation of the Northern Road Link (proposed road linking the northern portion of the Marten Falls Community Access Road to "
+        ]
+      },
+      {
+        "id": "s30",
+        "name": "Final EAR/IS Section 4, Project Description, 30 Jan 2026",
+        "count": 1,
+        "snippets": [
+          "mineral exploration camp for the Eagle’s Nest Mine Project and/or connect to the proposed Northern Road Link. Linked roadways will meet provincial intersection design standards and may require separate approvals by appropriate regulatory authorities. Following the current EA/IA process, other appr"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-processing",
+    "q": "Does any assessment document address where the ore would be processed (smelter, ferrochrome)?",
+    "terms": [
+      "/ferrochrom/i",
+      "/smelt/i",
+      "/refiner/i",
+      "/processing facilit/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s4",
+        "name": "Registry 80183, public comments list",
+        "count": 2,
+        "snippets": [
+          "seamless connection to the CN/CPKC rail network at Nakina enabling ore shipments to reach processing facilities in eastern and western Canada and the USA at a very competitive cost. On a tonne/km ba",
+          "e is no such thing. This is why Scandinavian countries use rail to move mined minerals to processing facilities and export terminals, year-round. Rail construction requires thousands of tons of “gre"
+        ]
+      },
+      {
+        "id": "s5",
+        "name": "Interim Report, Regional Assessment in the Ring of Fire Area, 23 Feb 2026 (document 165314 / 164647E.pdf)",
+        "count": 2,
+        "snippets": [
+          "anadians. ISED maintains knowledge in the mining sector from broad mining developments to smelting, refining, and downstream manufacturing activities. The department's Industry Sector c",
+          " choices. ISED maintains knowledge in the mining sector from broad mining developments to smelting, refining, and downstream manufacturing activities. The department's Industry Sector c"
+        ]
+      },
+      {
+        "id": "s9",
+        "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+        "count": 4,
+        "snippets": [
+          "and transportation route between the Ring of Fire and possible receiving locations (e.g., Ferrochrome facility in Sault Ste. Marie, Sudbury Smelter, other reasonably foreseeable end points f",
+          "and possible receiving locations (e.g., Ferrochrome facility in Sault Ste. Marie, Sudbury Smelter, other reasonably foreseeable end points for ore or mine concentrate). 1. Item will be "
+        ]
+      },
+      {
+        "id": "s12",
+        "name": "Analysis Report, Eagle's Nest designation request (document 165296 / p90033/165049E.pdf)",
+        "count": 1,
+        "snippets": [
+          "er conveyance; ⚫ pipelines; ⚫ boxcut and decline ramps for mine access and development; ⚫ processing facilities; ⚫ maintenance facilities; ⚫ power generation; ⚫ fuel storage; ⚫ explosives handling a"
+        ]
+      },
+      {
+        "id": "s24",
+        "name": "Wyndham Research, science review for the Regional Assessment, March 2026",
+        "count": 1,
+        "snippets": [
+          " Torne River and ultimately the Bothnian Bay. Because surplus water from the mine and its processing facilities may be discharged into the Muonio River, stakeholders emphasized the possibility of tr"
+        ]
+      },
+      {
+        "id": "s25",
+        "name": "Transport Action Ontario, submission, 4 May 2026 (registry reference 282)",
+        "count": 2,
+        "snippets": [
+          "seamless connection to the CN/CPKC rail network at Nakina enabling ore shipments to reach processing facilities in eastern and western Canada and the USA at a very competitive cost. On a tonne/km ba",
+          "e is no such thing. This is why Scandinavian countries use rail to move mined minerals to processing facilities and export terminals, year-round. Rail construction requires thousands of tons of “gre"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-mercury-study",
+    "q": "Has the mercury or methylmercury study the regional assessment lists been carried out?",
+    "terms": [
+      "/methylmercury/i",
+      "/mercury (?:study|studies|baseline|sampling|monitoring)/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s8",
+        "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+        "count": 8,
+        "snippets": [
+          "nal food sources resulting from project activities, such as in-water works. Specifically, methylmercury was identified as a concern by Fort Albany First Nation and Nibinamik First Nation. Conta",
+          "a concern by Fort Albany First Nation and Nibinamik First Nation. Contaminants, including methylmercury, may bioaccumulate in fish presenting a risk to safe consumption of fish or reluctance to"
+        ]
+      },
+      {
+        "id": "s9",
+        "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+        "count": 6,
+        "snippets": [
+          "gagement record highlights concerns regarding the mobilization and release of mercury and methylmercury due to changes in water flow. Despite the importance of these concerns for environmental ",
+          "portance of these concerns for environmental and human health, the results of mercury and methylmercury analyses are not presented in the main body of the Draft EA/IS and are instead buried wit"
+        ]
+      },
+      {
+        "id": "s12",
+        "name": "Analysis Report, Eagle's Nest designation request (document 165296 / p90033/165049E.pdf)",
+        "count": 1,
+        "snippets": [
+          "n of and access to country foods. The deposition of atmospheric mercury and generation of methylmercury in peatland environments is an existing concern in the Ring of Fire region , which may be"
+        ]
+      },
+      {
+        "id": "s20",
+        "name": "Fort Albany First Nation, submission, May 2026",
+        "count": 7,
+        "snippets": [
+          " for harvesting and travel. The Draft IA Report itself acknowledges uncertainty regarding methylmercury pathways, hydrological change, peatland disturbance, contamination concerns, and country ",
+          " the Draft IA Report acknowledges uncertainty regarding fish and fish habitat, hydrology, methylmercury pathways, wildlife movement, habitat connectivity, cumulative regional development, and i"
+        ]
+      },
+      {
+        "id": "s24",
+        "name": "Wyndham Research, science review for the Regional Assessment, March 2026",
+        "count": 8,
+        "snippets": [
+          "baselines across proponents. 2.9 Mercury The Assessment Area exhibits high sensitivity to methylmercury production in flooded/impounded systems, and there is clear evidence that sulphate loadin",
+          "y on traditional foods. While there is now improved empirical characterization of percent methylmercury in fish muscle by species, size, and age (which directly affects how risk is interpreted "
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-floating-validation",
+    "q": "Has a floating road with equalisation culverts been validated in peatland like this?",
+    "terms": [
+      "/validat/i",
+      "/field (?:trial|test)|tested in peat|pilot (?:section|study)/i",
+      "/floating road.{0,120}(?:monitor|study|evidence|literature|reference)/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s4",
+        "name": "Registry 80183, public comments list",
+        "count": 2,
+        "snippets": [
+          "ed on the future project owner’s adherence to design standards. However, no site-specific validation of these methods was undertaken. As the Project is in remote, peatland conditions with",
+          " culverts should be provided to avoid impoacts to the roads. For instance, have they been tested in peatlands? To what extent do the block lateral movement of water across the roads (i.e. in fen"
+        ]
+      },
+      {
+        "id": "s8",
+        "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+        "count": 2,
+        "snippets": [
+          "d all sixteen Indigenous communities with updated individualized summaries for review and validation, outlining what IAAC had heard regarding potential impacts of the project on each comm",
+          "g regarding its adequacy in responding to issues raised and outstanding concerns. To help validate and accurately reflect the issues of importance identified by communities, IAAC provided"
+        ]
+      },
+      {
+        "id": "s9",
+        "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+        "count": 20,
+        "snippets": [
+          "muskeg systems, and seasonal variability strongly influence flows. Without calibration or validation, peak flow estimates may be unreliable, creating risks of under-design of waterbody cr",
+          "n informing the spacing of equalization culverts along the route. A. The Proponent should validate hydrologic models using local field data (e.g., temporary gauging stations) or proxy sta"
+        ]
+      },
+      {
+        "id": "s12",
+        "name": "Analysis Report, Eagle's Nest designation request (document 165296 / p90033/165049E.pdf)",
+        "count": 1,
+        "snippets": [
+          " mitigation, and offsetting requirements commensurate with project impacts. Monitoring to validate impacts and verify efficacy of mitigation measures and offsetting are also part of Autho"
+        ]
+      },
+      {
+        "id": "s14",
+        "name": "Weenusk First Nation, Review of Draft Impact Assessment Report, 21 May 2026",
+        "count": 1,
+        "snippets": [
+          "sed on the future project owner’s adherence to design standards. However, no site-speciﬁc validation of these methods was undertaken. As the Project is in remote, peatland conditions with"
+        ]
+      },
+      {
+        "id": "s20",
+        "name": "Fort Albany First Nation, submission, May 2026",
+        "count": 3,
+        "snippets": [
+          "FAFN’s ability to undertake comprehensive technical review, conduct community engagement, validate Indigenous knowledge, and assess the implications of the Project for Treaty and Aborigin",
+          " These constraints also limited opportunities for broader community engagement, iterative validation, and incorporation of Indigenous knowledge regarding long-term cumulative and rights-r"
+        ]
+      },
+      {
+        "id": "s22",
+        "name": "WCS Canada, comment on final EAR/IS, Feb 2026 (Kirkwood and O'Connor)",
+        "count": 4,
+        "snippets": [
+          " of impacts to soils, hydrology and the peatlands ecosystem within the approach of using ‘floating road’ construction. Second, while the EAR/IS references other project experience in Canada and around the world successfully using ‘floating roa",
+          "(Table 3-3, Section 4.3.1.3.1), there is only one outdated reference to support that the ‘floating roads’ are logistically feasible6, with no additional references to reports or studies where this construction method has been successfully completed at "
+        ]
+      },
+      {
+        "id": "s24",
+        "name": "Wyndham Research, science review for the Regional Assessment, March 2026",
+        "count": 9,
+        "snippets": [
+          "ts often rely heavily on predictive models. Nested watershed data provide calibration and validation datasets to support better parameter estimates and improve predictive modelling of hyd",
+          "nd long-term (multi-decade) hydrologic monitoring.  Integrate remote sensing with ground validation. Recommendation 4: Implement a peatland carbon and methane monitoring strategy. Develo"
+        ]
+      },
+      {
+        "id": "s29",
+        "name": "Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026",
+        "count": 7,
+        "snippets": [
+          "ors .............................................................. 3-42 3.2.5.4 Build and Validate Baseline Model ................................................... 3-45 3.2.5.5 Run the ",
+          "es, and Criteria;  Step 3: Select and apply score to the indicators;  Step 4: Build and validate baseline model;  Step 5: Run the model and standardize scores; and  Step 6: Review res"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-cost-of-living",
+    "q": "Is there a finding on how an all-season road changes the cost of living in a remote community?",
+    "terms": [
+      "/cost of living/i",
+      "/food (?:price|cost)s?/i",
+      "/Nutrition North|food subsid/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s5",
+        "name": "Interim Report, Regional Assessment in the Ring of Fire Area, 23 Feb 2026 (document 165314 / 164647E.pdf)",
+        "count": 12,
+        "snippets": [
+          "digenous governance and natural law will be the cornerstones of a sustainable future. The cost of living in remote communities represents large social and economic inequity. A study is underway ",
+          "ctivities that would be considered regular operations in most non-Indigenous communities. Cost of living is an urgent priority for the RAWG. Expert supports are conducting a study that will adva"
+        ]
+      },
+      {
+        "id": "s6",
+        "name": "Registry 80468, comments list",
+        "count": 2,
+        "snippets": [
+          " filters Hide filters Sort by: Best match Most recent Submitted by 306 results Attachment Cost of Living in the Ring of Fire Final Report Regional Assessment in the Ring of Fire Area Author: Swi",
+          "6-05-27 - 11:28 AM Rationale: Comment updated at the author's request Final report on the cost of living in First Nations communities in the Ring of Fire region. Suggested citation: Joseph, C., "
+        ]
+      },
+      {
+        "id": "s8",
+        "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+        "count": 5,
+        "snippets": [
+          "in health, social and infrastructure crises. Lack of access to clean drinking water, high cost of living, housing shortages, low educational outcomes, high unemployment rates, high rates of addi",
+          " social and infrastructure crises, including lack of access to clean drinking water, high cost of living, housing shortages, low educational outcomes, high unemployment rates, high rates of addi"
+        ]
+      },
+      {
+        "id": "s28",
+        "name": "ECCC, Response to Targeted Questions for Federal Analysis, 23 June 2025",
+        "count": 1,
+        "snippets": [
+          "verse effects to Indigenous way of life (including culture, traditions, community health, cost of living and employability), as well as any positive economic and employment opportunities for Ind"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-ontario-in-ra",
+    "q": "Did Ontario take part in the regional assessment?",
+    "terms": [
+      "/Ontario.{0,80}(?:declin|not participat|has not|did not|TBD|invit)/i",
+      "/(?:province of Ontario|Government of Ontario).{0,60}(?:collaborat|participat|party)/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s4",
+        "name": "Registry 80183, public comments list",
+        "count": 1,
+        "snippets": [
+          "wed EA/IS process, and act to uphold the honour of the Crown in final decision-making. 1. Ontario has not met its duty to consult It is predictable that the Ministry Review concluded that the EA "
+        ]
+      },
+      {
+        "id": "s8",
+        "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+        "count": 1,
+        "snippets": [
+          "ssment with the provincial environmental assessment. In addition to coordination with the province of Ontario, IAAC collaborated with federal authorities, Indigenous communities, and other participants to assess the "
+        ]
+      },
+      {
+        "id": "s9",
+        "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+        "count": 2,
+        "snippets": [
+          "staying well below the population goal range since 1975 (Birds Canada and ECCC, 2024). In Ontario, there was an inferred decline of greater than 30% of mature individuals over three generations, between 2007 and 2019,",
+          "ed and has not been posted publicly, its content has neither been endorsed by Webequie or Ontario and will likely continue to change. Also, as the Webequie CBLUP has not been completed and a draft has not been shared publicly, details of the Draft CBLUP shoul"
+        ]
+      },
+      {
+        "id": "s11",
+        "name": "Terms of Reference, Regional Assessment (document 161197), incl. Annex 1 timeline and Minister's letter 15 Feb 2023",
+        "count": 1,
+        "snippets": [
+          ", Non-government organizations, public, industry; Administrative Support; the province of Ontario (TBD). *Turtle Art from Harry Papah, RAWG delegate from Eabametoong First Nation. 8.1. Regiona"
+        ]
+      },
+      {
+        "id": "s12",
+        "name": "Analysis Report, Eagle's Nest designation request (document 165296 / p90033/165049E.pdf)",
+        "count": 1,
+        "snippets": [
+          " potential effects of the project was received from DFO, ECCC, HC, ISC, NRCan, TC and the Ontario MCM. IAAC received responses from six of the Indigenous groups that were invited to provide input: Attawapiskat First Nation, Fort Albany First Nation, Ginoogaming Firs"
+        ]
+      },
+      {
+        "id": "s28",
+        "name": "ECCC, Response to Targeted Questions for Federal Analysis, 23 June 2025",
+        "count": 1,
+        "snippets": [
+          "management nor expertise in their ecology. These species fall under the responsibility of Ontario. ECCC has not factored into this advice effects to caribou as this advice, in consultation with IAAC, w"
+        ]
+      },
+      {
+        "id": "s29",
+        "name": "Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026",
+        "count": 1,
+        "snippets": [
+          " EIS/EAR: Circulated by Noront in December 2013 with comments issued by federal agencies. Ontario did not provide comments on the draft EIS/EAR, as the document was prepared in advance of the app"
+        ]
+      },
+      {
+        "id": "s30",
+        "name": "Final EAR/IS Section 4, Project Description, 30 Jan 2026",
+        "count": 2,
+        "snippets": [
+          "ime and is part of future discussions and agreement between Webequie First Nation and the Government of Ontario. Similarly, activities that may be undertaken by a third party have not been identified. The construction and commissioning of the WSR is expected to ta",
+          "ime and is part of future discussions and agreement between Webequie First Nation and the Government of Ontario. Similarly, activities that may be undertaken by a third party have not been identified. However, it is expected that the designated operator of the Web"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g-cumulative-three-roads",
+    "q": "Did any approved assessment assess the cumulative effects of the three roads together?",
+    "terms": [
+      "/cumulative effects.{0,200}(?:Marten Falls|Northern Road Link)/i",
+      "/(?:Marten Falls|Northern Road Link).{0,200}cumulative effects/i"
+    ],
+    "searched": 31,
+    "date": "2026-09-15",
+    "hits": [
+      {
+        "id": "s1",
+        "name": "Webequie Supply Road Project page, Government of Ontario",
+        "count": 3,
+        "snippets": [
+          "information that may be generated through the following which WFN considers relevant: any cumulative effects assessment developed as part of any EA in respect of the proposed Marten Falls Community Access Road; and any cumulative effects assessment developed as part of any EA in respect of the proposed Northern Road Link. WFN will determine how to use any information described in this section in its EA includ",
+          " any cumulative effects assessment developed as part of any EA in respect of the proposed Marten Falls Community Access Road; and any cumulative effects assessment developed as part of any EA in respect of the proposed Northern Road Link. WFN"
+        ]
+      },
+      {
+        "id": "s8",
+        "name": "Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.)",
+        "count": 4,
+        "snippets": [
+          "the area that includes the other wildlife LSA and extends five kilometres beyond it where cumulative effects may occur), IAAC expects that impacts on hunting and trapping rights for moose, waterfowl and furbearers would be limited. IAAC is of the view that the project, in combination with the proposed Marten Falls Community Access Road, Northern Road Link, and Eagle’s Nest projects is likely to reduce ",
+          " the effects are added to, and interact with, the existing conditions, including existing cumulative effects from other sources Moderately sensitive context Attawapiskat First Nation, Marten Falls First Nation, Neskantaga First Nation, Nibinamik First Nation, Webequie First Nation, and"
+        ]
+      },
+      {
+        "id": "s9",
+        "name": "Appendix P2.M comment-response tables (164888E.pdf)",
+        "count": 12,
+        "snippets": [
+          "ith Indigenous communities and groups, where appropriate and feasible. 4. The effects and cumulative effects analyses for caribou greatly underestimate the impact of the proposed WSR. We refer the proponent to our letter of July 28, 2025 on the Marten Falls Community Access Road draft IS, attached here. Please see point 3, in particular the foll",
+          "has already started planning potential transmission into the Ring of Fire .\" (Table 21-1 \"Cumulative Effects Assessment - Summary of Inputs Received During Engagement and Consultation\", p. 9). This concern on the part of Marten Falls First Nations members is well founded. Just as Wyloo is waiting for the road to be built "
+        ]
+      },
+      {
+        "id": "s20",
+        "name": "Fort Albany First Nation, submission, May 2026",
+        "count": 3,
+        "snippets": [
+          "nd restoration and the importance of long‑term ecological and cultural values. 39. - - 6. Cumulative effects assessment may underestimate regional peatland impacts ● The cumulative effects assessment does not include the Marten Falls Community Access Road - The proponent acknowledges the concern that cumulative effects on",
+          "ive and induced development is a critical concern to FAFN; this should be included in the cumulative effects assessment (e.g., Marten Falls Community Access Road). Further, the Proponent has not addressed the following concerns: "
+        ]
+      },
+      {
+        "id": "s31",
+        "name": "Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr)",
+        "count": 2,
+        "snippets": [
+          "mulative effects. The notice of approval for the ToR includes additional requirements for cumulative effects: targeted consultation with Indigenous communities on the cumulative effects assessment work plan; consideration of the cumulative effects assessments in the Marten Falls Community Access Road or Northern Road Link EA s, if available; and inclusion of a cumulative effects consultation report in the EA .",
+          " effects assessment work plan; consideration of the cumulative effects assessments in the Marten Falls Community Access Road or Northern Road Link EA s, if available; and inclusion of a cumulative effects consultation report in the EA . WFN has fulfilled these requirements in section 21 of the EA (cumulative effects assessment) and with the submission of the cumulative effects consultation report with th"
+        ]
+      }
+    ]
+  }
+]

@@ -101,7 +101,13 @@
 
 ## Articles — research & evidence (adopted 2026-09-14)
 - Process: content/docs/article-workflow.md. Commands: `npm run article:evidence -- init | boundary | fetch |
-  flags | check | verify-prompt | verdicts <slug>`. Job folder: content/docs/article-jobs/<slug>/.
+  quotes | flags | check | verify-prompt | verdicts <slug>`. Job folder: content/docs/article-jobs/<slug>/.
+- Ring of Fire (2026-09-15) is being REBUILT, not cut: the 8,000-word draft-1 is exploration only; its audit's
+  159 quotes were converted into content/docs/article-jobs/ring-of-fire/ledger.json and matched (156 exact,
+  3 by eye). Peggy chose and tiered the questions (boundary.json `weight`); q2 and q13 were gathered on
+  2026-09-15 (cost-of-living report = S37). writer-brief.md (copy in her Articles/Ring of Fire folder) goes to
+  a fresh memory-off chat; its {cNNN} / {reasoning} / {g-…} markers let Claude Code attach sentences to
+  claims, then check + verify-prompt. Never hand draft-1 prose to the writer.
 - SENTENCES DO NOT TRAVEL. The only thing that crosses from exploration to writing is `boundary.json`:
   questions, document links, gaps. Never draft in an exploration chat; never hand its prose to a writer.
 - Every figure / count / ratio / direct quotation needs a ledger claim: document id + verbatim quote matched

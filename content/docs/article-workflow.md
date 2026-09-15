@@ -58,12 +58,30 @@ A **gap** crosses as a marked absence so the draft can say what nobody measures.
 *assert* an absence ("no official source publishes…"), the gap's `searched` list must record where it was
 looked for and when: `{"where": "https://… or the name of the place", "date": "YYYY-MM-DD"}`.
 
+**List gaps apart from the questions, as named silences, with their own counts.** A question the documents
+are silent on is often the strongest thing an article can say; placed among the questions with confirmed
+facts it looks like a question with zero facts and gets dropped for the wrong reason. But a silence is only
+as strong as its search. Search the documents already gathered for each candidate and give it one of three
+verdicts: **holds** (nothing in what was searched — say what that was), **holds only here** (the obvious place
+was not searched yet), or **not a silence** (the record addresses it — the draft changes, and nothing crosses as
+a gap). On Ring of Fire (2026-09-15) four of eight candidate silences turned out not to be silences: the
+mercury analyses existed in an appendix, a cost-of-living final report had been posted, and the three roads'
+cumulative effects had been assessed inside one project's report.
+
 ### 2. Gather
 
 `npm run article:evidence -- fetch <slug>` downloads every document into `cache/` as text (PDFs
 included) and lists the few it cannot reach (bot-blocked, login walls, JavaScript-only pages). **Only
-those** need a manual download, saved as `manual/<id>.pdf` (or `.html`/`.txt`); fetch again. `cache/` and
-`manual/` are gitignored and never deployed — the internet is the archive, not a local folder.
+those** need a manual download, saved as `manual/<id>.pdf` (or `.docx`/`.html`/`.txt`); fetch again. A
+source with no public link at all (a submission someone sent you) goes in `ledger.json` `sources` with no
+`url` and its file in `manual/`. `cache/` and `manual/` are gitignored and never deployed — the internet is
+the archive, not a local folder.
+
+`npm run article:evidence -- quotes <slug>` then matches every quote against its document **before any
+prose exists**, and records the result on each claim. At this stage a claim carries a short `fact` label
+instead of a `sentence`; the checker ignores it until the article is written and the claim is attached to
+a sentence. Anything short of an exact match is looked at by eye: page breaks with running headers, a
+label and its value on separate lines, footnote markers — or a quote that is simply not in the document.
 
 Claude Code then reads the cached text and records each usable fact in `ledger.json`:
 

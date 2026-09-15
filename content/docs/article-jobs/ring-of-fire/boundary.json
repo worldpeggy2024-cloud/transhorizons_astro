@@ -1,0 +1,266 @@
+{
+  "topic": "Ring of Fire corridor",
+  "questions": [
+    {
+      "id": "q2",
+      "text": "What does the winter road provide the fly-in communities, and how is it changing?",
+      "weight": "main"
+    },
+    {
+      "id": "q13",
+      "text": "Does an all-season road lower the cost of living in a remote community?",
+      "weight": "main"
+    },
+    {
+      "id": "q4",
+      "text": "How have the region's First Nations lived on this land, and what are they building on it now?",
+      "weight": "main"
+    },
+    {
+      "id": "q3",
+      "text": "What is the ground the corridor crosses, and what happens to its water, mercury and wildlife when it is disturbed?",
+      "weight": "main"
+    },
+    {
+      "id": "q11",
+      "text": "Can a floating road cross this peat without draining it, and what does the record say about that?",
+      "weight": "main"
+    },
+    {
+      "id": "q7",
+      "text": "Which First Nations are affected, and what have they said about the road and about how it was assessed?",
+      "weight": "important"
+    },
+    {
+      "id": "q8",
+      "text": "How were the road assessments scoped, so that no one assessment covered the corridor?",
+      "weight": "important"
+    },
+    {
+      "id": "q9",
+      "text": "What is the regional assessment, what has it found so far, and what power does it have?",
+      "weight": "important"
+    },
+    {
+      "id": "q1",
+      "text": "How long has Neskantaga waited for safe drinking water, and how fast did the Webequie road move to approval?",
+      "weight": "brief"
+    },
+    {
+      "id": "q10",
+      "text": "Why will the mine itself have no federal assessment?",
+      "weight": "brief"
+    },
+    {
+      "id": "q5",
+      "text": "What exactly is being built, by whom, to what design, and under which assessments?",
+      "weight": "brief"
+    },
+    {
+      "id": "q12",
+      "text": "Were alternatives to this road, other routes and other modes, compared, and on what terms?",
+      "weight": "pointer"
+    },
+    {
+      "id": "q6",
+      "text": "What is at the end of the road: the deposit, the mine, and its value?",
+      "weight": "pointer"
+    }
+  ],
+  "documents": [
+    {
+      "id": "s1",
+      "url": "https://www.ontario.ca/page/webequie-supply-road-project",
+      "answers": [
+        "q8",
+        "q1",
+        "q5"
+      ]
+    },
+    {
+      "id": "s2",
+      "url": "https://www.ontario.ca/page/ontarios-ring-fire",
+      "answers": [
+        "q5",
+        "q6"
+      ]
+    },
+    {
+      "id": "s3",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80183",
+      "answers": [
+        "q7",
+        "q1",
+        "q5"
+      ]
+    },
+    {
+      "id": "s4",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80183/contributions",
+      "answers": [
+        "q11",
+        "q7"
+      ]
+    },
+    {
+      "id": "s5",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/document/165314",
+      "answers": [
+        "q2",
+        "q13",
+        "q4",
+        "q3",
+        "q9",
+        "q1"
+      ]
+    },
+    {
+      "id": "s6",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80468/contributions",
+      "answers": [
+        "q13"
+      ]
+    },
+    {
+      "id": "s7",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/80468",
+      "answers": [
+        "q9"
+      ]
+    },
+    {
+      "id": "s8",
+      "url": "https://iaac-aeic.gc.ca/050/documents/p80183/166134E.pdf",
+      "answers": [
+        "q2",
+        "q13",
+        "q11",
+        "q5"
+      ]
+    },
+    {
+      "id": "s9",
+      "url": "https://iaac-aeic.gc.ca/050/documents/p80183/164888E.pdf",
+      "answers": [
+        "q11",
+        "q5",
+        "q12"
+      ]
+    },
+    {
+      "id": "s10",
+      "url": "https://wcscanada.org/site/assets/files/5865/wcsc_wsr_ea_is_oct_2025.pdf",
+      "answers": [
+        "q8"
+      ]
+    },
+    {
+      "id": "s11",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/document/161197",
+      "answers": [
+        "q4",
+        "q9",
+        "q6"
+      ]
+    },
+    {
+      "id": "s12",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/document/165296",
+      "answers": [
+        "q3",
+        "q7",
+        "q9",
+        "q10"
+      ]
+    },
+    {
+      "id": "s13",
+      "url": "https://iaac-aeic.gc.ca/050/evaluations/proj/90033",
+      "answers": [
+        "q10",
+        "q6"
+      ]
+    },
+    {
+      "id": "s31",
+      "url": "https://www.ontario.ca/page/ministry-review-webequie-supply-road-environmental-assessment",
+      "answers": [
+        "q7",
+        "q8",
+        "q5",
+        "q12"
+      ]
+    },
+    {
+      "id": "s32",
+      "url": "https://www.canada.ca/en/indigenous-services-canada/news/2024/11/government-of-canada-boosts-financial-support-for-winter-roads-strengthening-connections-to-remote-ontario-first-nations.html",
+      "answers": [
+        "q2"
+      ]
+    },
+    {
+      "id": "s33",
+      "url": "https://www.canada.ca/en/indigenous-services-canada/news/2024/02/statement-by-minister-hajdu-on-the-shortening-of-the-winter-road-seasons.html",
+      "answers": [
+        "q2"
+      ]
+    },
+    {
+      "id": "s34",
+      "url": "https://www.ontario.ca/page/northern-ontario-winter-roads",
+      "answers": [
+        "q2"
+      ]
+    },
+    {
+      "id": "s36",
+      "url": "https://www.nan.ca/news/winter-road-network/",
+      "answers": [
+        "q2"
+      ]
+    },
+    {
+      "id": "s37",
+      "url": "https://registrydocumentsprd.blob.core.windows.net/commentsblob/project-80468/comment-66955/P090_SCC_RoF%20Cost%20of%20Living_FINAL_minor%20corrections.pdf",
+      "answers": [
+        "q2",
+        "q13",
+        "q4",
+        "q3",
+        "q1"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "g-floating-validation",
+      "question": "Has a floating road with equalisation culverts been validated in peatland like this?",
+      "searched": [
+        {
+          "where": "all documents gathered for this article (the ledger sources)",
+          "date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "g-ontario-in-ra",
+      "question": "Did Ontario take part in the regional assessment?",
+      "searched": [
+        {
+          "where": "all documents gathered for this article (the ledger sources)",
+          "date": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "g-corridor-modes",
+      "question": "Did any assessment compare transport modes or routes for the whole corridor, rather than for one segment?",
+      "searched": [
+        {
+          "where": "all documents gathered for this article (the ledger sources)",
+          "date": "2026-09-15"
+        }
+      ]
+    }
+  ]
+}
