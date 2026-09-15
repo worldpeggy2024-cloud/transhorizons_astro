@@ -100,8 +100,8 @@ sections:
 
       • les alliances deviennent plus fluides et propres aux enjeux;
 
-      • les systèmes technologiques et réglementaires divergent selon les champs
-      d'application;
+      • les systèmes technologiques et réglementaires divergent selon les
+      secteurs de compétence;
 
       • les chaînes d'approvisionnement sont reconfigurées selon des logiques
       géopolitiques.
@@ -116,26 +116,7 @@ sections:
     images: []
   - title_en: Canada as a Structurally Embedded Actor
     title_fr: Le Canada comme acteur structurellement intégré
-    content_en: >
-      Canada's position within this evolving system is shaped by a combination
-      of structural integration and relative scale.
-
-
-      The country remains deeply embedded in North American economic, security,
-      and infrastructure systems. Approximately 75% of Canadian goods exports
-      flow to the United States: a dependency that provides stability and market
-      access, but also concentrates exposure to a single partner's policy
-      decisions. The 2025 tariff environment made this vulnerability concrete
-      and immediate.
-
-
-      At the same time, Canada is not a central node of global power. Its role
-      is better understood as that of an intermediate actor; one whose influence
-      derives from its participation in broader systems rather than from
-      independent capacity alone.
-
-
-      This position is neither marginal nor dominant. It is relational.
+    content_en: "Canada's position within this evolving system is shaped by a combination of structural integration and relative scale.\n\nThe country remains deeply embedded in North American economic, security, and infrastructure systems. Approximately 75% of Canadian goods exports flow to the United States: a dependency that provides stability and market access, but also concentrates exposure to a single partner's policy decisions. The 2025\_tariff environment made this vulnerability concrete and immediate.\n\nAt the same time, Canada is not a central node of global power. Its role is better understood as that of an intermediate actor; one whose influence derives from its participation in broader systems rather than from independent capacity alone.\n\nThis position is neither marginal nor dominant. It is relational.\n"
     content_fr: "La position du Canada au sein de ce système en évolution est façonnée par une combinaison d'intégration structurelle et de poids relatif.\n\nLe pays demeure profondément intégré dans les systèmes économiques, de sécurité et d'infrastructures nord-américains. Environ 75 % des exportations canadiennes de biens sont destinées aux États-Unis; cette dépendance assure une certaine stabilité et un accès au marché, mais concentre également l’exposition du Canada aux décisions stratégiques d’un seul partenaire. Le contexte des droits de douane de 2025\_a rendu cette vulnérabilité concrète et immédiate.\n\nParallèlement, le Canada n'est pas un nœud central de la puissance mondiale. Son rôle se comprend davantage comme celui d'un acteur intermédiaire, dont l'influence découle de sa participation à des systèmes plus vastes plutôt que de ses seules capacités autonomes.\n\nCette position n'est ni marginale ni dominante. Elle est relationnelle.\n"
     image: /images/CanadaPositionEn.png
     imagePosition: right
@@ -209,59 +190,12 @@ sections:
     images: []
   - title_en: Strategic Assets in a System Context
     title_fr: Atouts stratégiques dans un contexte systémique
-    content_en: >-
-      Canada possesses a range of assets that are increasingly relevant within a
-      multipolar environment:
-
-
-      • natural resources, including energy and critical minerals
-
-      • geographic positioning, including Arctic access
-
-      • advanced technological and research capabilities
-
-      • institutional stability and regulatory credibility
-
-
-      However, resources derive value not only from their availability, but from
-      their role in supply chains linked to industrial and security priorities.
-      Similarly, technological capacity depends on its connection to broader
-      ecosystems of innovation, infrastructure, and regulation.
-
-
-      The significance of these assets depends on how they are integrated into
-      larger systems, and on how well other countries are integrating their own
-      assets into these systems.
-
-
-      The Arctic case illustrates this directly. The Northern Sea Route along
-      Russia's Arctic coast recorded 103 transits in 2025, carrying
-      approximately 3.2 million tonnes of cargo: crude oil, coal, iron ore, and,
-      for the first time at scale, containerized goods moving between St.
-      Petersburg and Chinese ports. In 2025, the container ship Istanbul Bridge
-      completed the China-to-UK transit via the Arctic in approximately 21 days;
-      roughly 7 days faster than the equivalent Suez Canal route, covering 2,700 fewer
-      nautical miles. The route remains seasonal, but the voyage marked
-      the first full international container transit since 2021. 
-
-
-      The route is no longer a future possibility. It is operational
-      infrastructure.
-
-
-      Canada's Northwest Passage sits on the other side of the same ocean. It
-      remains underutilized as a commercial corridor (according to researchers
-      at Université Laval and the École nationale supérieure maritime, traffic
-      to the west of the Canadian Arctic Archipelago remains virtually
-      non-existent), but the geopolitical pressure on Arctic sovereignty is
-      intensifying as the NSR demonstrates what Arctic routing can become.
-    content_fr: "Le Canada dispose d'un ensemble d'atouts de plus en plus pertinents dans un environnement multipolaire :\n\n• ressources naturelles, notamment l'énergie et les minéraux critiques;\n• position géographique stratégique, incluant l'accès arctique;\n• capacités technologiques et de recherche avancées;\n• stabilité institutionnelle et crédibilité réglementaire.\n\nCependant, les ressources tirent leur valeur non seulement de leur disponibilité, mais de leur rôle dans des chaînes d'approvisionnement liées aux priorités industrielles et de sécurité. De même, les capacités technologiques dépendent de leur connexion à des écosystèmes plus larges d'innovation, d'infrastructures et de réglementation.\n\nLa portée stratégique de ces atouts dépend donc de la manière dont ils s'intègrent à des systèmes plus vastes, ainsi que de la manière dont d'autres pays y intègrent les leurs.\n\nLe cas de l'Arctique illustre directement ce phénomène. La route maritime du Nord, le long de la côte arctique russe, a enregistré 103\_transits en 2025, transportant environ 3,2\_millions de tonnes de marchandises : pétrole brut, charbon, minerai de fer et, pour la première fois à grande échelle, des marchandises conteneurisées circulant entre Saint-Pétersbourg et des ports chinois. En 2025, le porte-conteneurs Istanbul Bridge a effectué le trajet de la Chine au Royaume-Uni par l'Arctique en environ 21\_jours, soit à peu près 7\_jours de moins que la route équivalente par le canal de Suez, parcourant 2 700\_milles marins de moins. La route demeure saisonnière, mais cette traversée a marqué le premier transit international complet de conteneurs depuis 2021.\n\nC’est une infrastructure opérationnelle.\n\nLe passage du Nord-Ouest canadien se trouve de l’autre côté du même océan. Il demeure sous-utilisé comme corridor commercial (le trafic à l’ouest de l’archipel arctique canadien est négligeable), mais la pression géopolitique exercée sur la souveraineté arctique s’intensifie à mesure que la route maritime du Nord montre ce que les itinéraires arctiques peuvent devenir."
+    content_en: "Canada possesses a range of assets that are increasingly relevant within a multipolar environment:\n\n• natural resources, including energy and critical minerals\n• geographic positioning, including Arctic access\n• advanced technological and research capabilities\n• institutional stability and regulatory credibility\n\nHowever, resources derive value not only from their availability, but from their role in supply chains linked to industrial and security priorities. Similarly, technological capacity depends on its connection to broader ecosystems of innovation, infrastructure, and regulation.\n\nThe significance of these assets depends on how they are integrated into larger systems, and on how well other countries are integrating their own assets into these systems.\n\nThe Arctic case illustrates this directly. The Northern Sea Route along Russia's Arctic coast recorded 103\_transits in 2025, carrying approximately 3.2\_million tonnes of cargo: crude oil, coal, and goods moving between St. Petersburg and Chinese ports. In 2025, the container ship Istanbul Bridge completed the China-to-UK transit via the Arctic in approximately 21\_days; roughly 7\_days faster than the equivalent Suez Canal route, covering around 2,700\_fewer nautical miles. The route remains seasonal, but the voyage was the first since 2021 to link Asia and Europe without starting or ending at a Russian port. \n\nThe route is no longer a future possibility. It is operational infrastructure.\n\nCanada's Northwest Passage sits on the other side of the same ocean. It remains underutilized as a commercial corridor (according to researchers at Université Laval and the École nationale supérieure maritime, traffic to the west of the Canadian Arctic Archipelago remains virtually non-existent), but the geopolitical pressure on Arctic sovereignty is intensifying as the NSR demonstrates what Arctic routing can become."
+    content_fr: "Le Canada dispose d'un ensemble d'atouts de plus en plus pertinents dans un environnement multipolaire :\n\n• ressources naturelles, notamment l'énergie et les minéraux critiques;\n• position géographique stratégique, incluant l'accès arctique;\n• capacités technologiques et de recherche avancées;\n• stabilité institutionnelle et crédibilité réglementaire.\n\nCependant, les ressources tirent leur valeur non seulement de leur disponibilité, mais de leur rôle dans des chaînes d'approvisionnement liées aux priorités industrielles et de sécurité. De même, les capacités technologiques dépendent de leur connexion à des écosystèmes plus larges d'innovation, d'infrastructures et de réglementation.\n\nLa portée stratégique de ces atouts dépend donc de la manière dont ils s'intègrent à des systèmes plus vastes, ainsi que de la manière dont d'autres pays y intègrent les leurs.\n\nLe cas de l'Arctique illustre directement ce phénomène. La route maritime du Nord, le long de la côte arctique russe, a enregistré 103\_transits en 2025, transportant environ 3,2\_millions de tonnes de marchandises : pétrole brut et charbon, ainsi que des marchandises circulant entre Saint-Pétersbourg et des ports chinois. En 2025, le porte-conteneurs Istanbul Bridge a effectué le trajet de la Chine au Royaume-Uni par l'Arctique en environ 21\_jours, soit à peu près 7\_jours de moins que la route équivalente par le canal de Suez, représentant environ 2 700\_milles nautiques de moins. La route demeure saisonnière, mais cette traversée a été le premier transit depuis 2021 à relier l'Asie et l'Europe sans partir d'un port russe ou y aboutir.\n\nCette route n'est plus une possibilité future. C’est une infrastructure opérationnelle.\n\nLe passage du Nord-Ouest canadien se trouve de l’autre côté du même océan. Il demeure sous-utilisé comme corridor commercial (selon des chercheurs de l'Université Laval et de l'École nationale supérieure maritime, le trafic à l’ouest de l’archipel arctique canadien demeure pratiquement inexistant), mais la pression géopolitique exercée sur la souveraineté arctique s’intensifie à mesure que la route maritime du Nord montre ce que les itinéraires arctiques peuvent devenir."
     imagePosition: right
     imageLayout: single
     images: []
-  - title_en: ''
-    title_fr: ''
-    content_en: >-
+  - content_en: >-
       Critical minerals add a second dimension. Canada holds substantial
       deposits of lithium, cobalt, nickel, and rare earth elements — materials
       central to battery supply chains, clean energy systems, and advanced
@@ -276,13 +210,53 @@ sections:
 
 
       Canada's relationship to its own maritime trade illustrates the gap
-      between possession and leverage concretely. Canadian sea freight services
-      exports stood at approximately $840 million in 2023 — less than 0.2% of
-      total goods exports. Canada produces the cargo; others move it, route it,
-      and capture the logistics value. In a multipolar environment where
-      infrastructure ownership increasingly translates into strategic leverage,
-      that asymmetry is not incidental.
-    content_fr: "Les minéraux critiques ajoutent une deuxième dimension. Le Canada possède d’importants gisements de lithium, de cobalt, de nickel et de terres rares; matériaux essentiels aux chaînes d’approvisionnement des batteries, aux systèmes d’énergie propre et à la fabrication de pointe. Dans un monde multipolaire, leur valeur n’est pas simplement géologique; elle dépend de la capacité du Canada à les intégrer dans des chaînes d’approvisionnement qui comptent simultanément pour plusieurs partenaires.\n\nEn ce sens, ces atouts ne constituent pas des avantages statiques. Ils sont des composantes de systèmes en évolution, et leur pertinence est déterminée par leur positionnement, et non par leur seule possession.\n\nLa relation du Canada à son propre commerce maritime illustre concrètement l’écart entre possession et levier stratégique. Les exportations canadiennes de services de fret maritime se sont élevées à environ 840\_millions de dollars en 2023, soit moins de 0,2 % des exportations totales de biens. Le Canada produit la cargaison; d’autres la transportent, en déterminent les itinéraires et en captent la valeur logistique. Dans un environnement multipolaire où la propriété des infrastructures se traduit de plus en plus par un levier stratégique, cette asymétrie n’a rien d’anecdotique."
+      between possession and leverage concretely. On water-transport services,
+      Canada is a persistent net buyer: summed from quarterly data, receipts
+      reached 4.4 billion Canadian dollars in 2023 against $18.0 billion in
+      payments, a deficit that has recurred every year since 2015 and has nearly
+      doubled. The country's ports have been moving toward the edge of the
+      network at the same time — an analysis published by Bank of Canada
+      researchers in May 2026 found that deadweight tonnage arriving at or
+      departing from Canadian ports fell from 167 million metric tons in 2016 to
+      119 million in 2023, a 28 per cent decline in maritime trade capacity,
+      with each of the top five ports becoming less central in global shipping
+      networks.
+
+      In a multipolar environment where infrastructure ownership increasingly
+      translates into strategic leverage, that position is not incidental.
+    content_fr: >-
+      Les minéraux critiques ajoutent une deuxième dimension. Le Canada possède
+      d’importants gisements de lithium, de cobalt, de nickel et de terres
+      rares; matériaux essentiels aux chaînes d’approvisionnement des batteries,
+      aux systèmes d’énergie propre et à la fabrication de pointe. Dans un monde
+      multipolaire, leur valeur n’est pas simplement géologique; elle dépend de
+      la capacité du Canada à les intégrer dans des chaînes d’approvisionnement
+      qui comptent simultanément pour plusieurs partenaires.
+
+
+      En ce sens, ces atouts ne constituent pas des avantages statiques. Ils
+      sont des composantes de systèmes en évolution, et leur pertinence est
+      déterminée par leur positionnement, et non par leur seule possession.
+
+
+      La relation du Canada avec son propre commerce maritime illustre
+      concrètement l'écart entre la possession et le pouvoir d'influence. Pour
+      les services de transport par eau, le Canada est un acheteur net
+      persistant : selon la somme des données trimestrielles, les recettes ont
+      atteint 4,4 milliards de dollars canadiens en 2023 contre 18,0 milliards
+      de dollars de paiements; déficit récurrent depuis 2015, dont l'ampleur a
+      presque doublé. Parallèlement, ses ports se déplacent vers la périphérie
+      du réseau : une analyse publiée par des chercheurs de la Banque du Canada
+      en mai 2026 constate que le tonnage de port en lourd des navires ayant
+      accosté dans des ports canadiens ou en étant partis est passé de 167 millions
+      de tonnes métriques en 2016 à 119 millions en 2023, soit une
+      baisse de 28 % de la capacité d'échange maritime; chacun des cinq
+      principaux ports devenant moins central dans les réseaux mondiaux de
+      transport maritime. 
+
+      Dans un environnement multipolaire où la propriété des infrastructures se
+      traduit de plus en plus par un pouvoir d'influence, cette position n'a
+      rien d'accessoire.
     image: /images/ArcticMultipolarLegend.jpg
     imagePosition: right
     imageLayout: single
@@ -382,18 +356,18 @@ sections:
       Arctic infrastructure not built today becomes a framework inherited from
       others tomorrow. Critical minerals not integrated into diversified supply
       chains remain geological assets rather than strategic leverage (Van
-      Assche, 2025). Maritime exposure illustrates this concretely. 
+      Assche, 2025). 
 
 
-      Canada's trade flows through chokepoints it does not control and, as far
-      as can be determined from public sources, cannot fully measure. No
-      official Canadian source — not Statistics Canada, not Transport Canada,
-      not Global Affairs Canada — appears to publish route-specific data
-      disaggregating Canadian trade by chokepoint. As Van Assche (2026) notes,
-      building state capacity to continuously map these dependencies remains an
-      open task. Whether that data exists but is not publicly accessible, or
-      does not yet exist, the gap between exposure and measurement is worth
-      noting.
+      Maritime exposure illustrates this concretely. Canada's trade flows
+      through chokepoints it does not control and, as far as can be determined
+      from public sources, cannot fully measure. No official Canadian source —
+      not Statistics Canada, not Transport Canada, not Global Affairs Canada —
+      appears to publish route-specific data disaggregating Canadian trade by
+      chokepoint. As Van Assche (2026) notes, building state capacity to
+      continuously map these dependencies remains an open task. Whether that
+      data exists but is not publicly accessible, or does not yet exist, the gap
+      between exposure and measurement is worth noting.
     content_fr: >-
       Pour le Canada, le basculement vers la multipolarité ne présente pas une
       trajectoire ou une issue unique.
@@ -535,48 +509,118 @@ sources:
     - >-
       CHNL (Centre for High North Logistics). Main Results of NSR Transit
       Navigation in 2025. chnl.no, 2025.
+      https://chnl.no/news/main-results-of-nsr-transit-navigation-in-2025/
     - >-
       CHNL (Centre for High North Logistics). Container ship Istanbul Bridge on
       International transit voyage via the NSR. chnl.no, October 2025.
+      https://chnl.no/news/container-ship-istanbul-bridge-on-international-transit-voyage-via-the-nsr/
+    - >-
+      CBC News. Ship traffic steadily increasing in Canadian Arctic waters,
+      researchers say. December 17, 2024.
+      https://www.cbc.ca/news/canada/north/ship-traffic-increased-in-the-canadian-arctic-in-2024-1.7412732
     - >-
       Lasserre, F. & Baudu, H. Quelle dynamique de la navigation commerciale en
       Arctique en 2024? Conseil québécois d'études géopolitiques, Université
       Laval, 2025.
+      https://cqegheiulaval.com/2025/03/03/quelle-dynamique-de-la-navigation-commerciale-en-arctique-en-2024/
     - >-
       Arctic Council / PAME. Arctic Shipping Status Report 1: The increase in
       Arctic shipping 2013–2023, 2024.
+      https://pame.is/images/03_Projects/ASSR/ASSR_1_-_2024_update.pdf
     - >-
-      U.S. Inflation Reduction Act (IRA), 2022; EU Critical Raw Materials Act,
-      2023.
-    - Government of Canada. Canada's Indo-Pacific Strategy, 2022.
-    - The Canadian Critical Minerals Strategy, 2022.
-    - Canada’s Arctic Foreign Policy, 2024
+      U.S. Inflation Reduction Act (IRA), Public Law 117-169, 2022.
+      https://www.govinfo.gov/app/details/PLAW-117publ169
     - >-
-      Panama Canal Authority. Water Level Management and Transit Restrictions
-      2023–2024. pancanal.com.
+      EU Critical Raw Materials Act, Regulation (EU) 2024/1252, 2024.
+      https://eur-lex.europa.eu/eli/reg/2024/1252/oj
     - >-
-      Reuters. BlackRock-led group agrees to acquire Hutchison's Panama port
-      operations. March 2025.
+      Government of Canada. Canada's Indo-Pacific Strategy, 2022.
+      https://www.international.gc.ca/transparency-transparence/indo-pacific-indo-pacifique/index.aspx?lang=eng
+    - >-
+      The Canadian Critical Minerals Strategy, 2022.
+      https://www.canada.ca/en/campaign/critical-minerals-in-canada/canadian-critical-minerals-strategy.html
+    - >-
+      Canada’s Arctic Foreign Policy, 2024.
+      https://international.canada.ca/en/global-affairs/corporate/reports/arctic-policy-2024
+    - >-
+      Van Assche, A. Trump's Chokepoint Playbook and How to Deal with It. Asia
+      Pacific Foundation of Canada, asiapacific.ca, February 2025.
+      https://www.asiapacific.ca/publication/assche-trumps-chokepoint-playbook-and-how-deal-with-it
+    - >-
+      Van Assche, A. Adapting Canada's Trade Diversification Strategy in an Era
+      of Strategic Interdependence. Asia Pacific Foundation of Canada,
+      asiapacific.ca, February 2026.
+      https://www.asiapacific.ca/publication/adapting-canadas-trade-diversification-strategy-era-strategic-interdependence
+    - >-
+      Statistics Canada. The Daily — Canadian international merchandise trade,
+      December 2024. February 5, 2025.
+      https://www150.statcan.gc.ca/n1/daily-quotidien/250205/dq250205a-eng.htm
+    - >-
+      Statistics Canada. International transactions in services, by category,
+      quarterly. Table 36-10-0021-01.
+      https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610002101
+    - >-
+      Dunbar, G. R., McKelvey, P., Peer, T., Steingress, W. & Tomlin, B.
+      Canada’s shifting position in global maritime trade. Sparks at Bank
+      article, Bank of Canada, May 2026.
+      https://www.bankofcanada.ca/2026/05/sparks-at-bank-article-2026-12/
   fr:
     - >-
+      CHNL (Centre for High North Logistics). Main Results of NSR Transit
+      Navigation in 2025. chnl.no, 2025.
+      https://chnl.no/news/main-results-of-nsr-transit-navigation-in-2025/
+    - >-
       CHNL (Centre for High North Logistics). Container ship Istanbul Bridge on
       International transit voyage via the NSR. chnl.no, October 2025.
+      https://chnl.no/news/container-ship-istanbul-bridge-on-international-transit-voyage-via-the-nsr/
+    - >-
+      Radio-Canada. Augmentation du trafic maritime dans l’Arctique canadien en
+      2024. 14 décembre 2024.
+      https://ici.radio-canada.ca/nouvelle/2126880/arctique-bateau-passage-mines
     - >-
       Lasserre, F. & Baudu, H. Quelle dynamique de la navigation commerciale en
       Arctique en 2024? Conseil québécois d'études géopolitiques, Université
       Laval, 2025.
+      https://cqegheiulaval.com/2025/03/03/quelle-dynamique-de-la-navigation-commerciale-en-arctique-en-2024/
     - >-
       Arctic Council / PAME. Arctic Shipping Status Report 1: The increase in
       Arctic shipping 2013–2023, 2024.
+      https://pame.is/images/03_Projects/ASSR/ASSR_1_-_2024_update.pdf
     - >-
-      U.S. Inflation Reduction Act (IRA), 2022; EU Critical Raw Materials Act,
-      2023.
-    - La Stratégie du Canada pour l’Indo-Pacifique, 2022
-    - Stratégie canadienne sur les minéraux critiques, 2022
-    - La Politique étrangère du Canada pour l'Arctique, 2024
+      U.S. Inflation Reduction Act (IRA), Public Law 117-169, 2022.
+      https://www.govinfo.gov/app/details/PLAW-117publ169
     - >-
-      Panama Canal Authority. Water Level Management and Transit Restrictions
-      2023–2024. pancanal.com.
+      EU Critical Raw Materials Act, Règlement (UE) 2024/1252, 2024.
+      https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1252
     - >-
-      Reuters. BlackRock-led group agrees to acquire Hutchison's Panama port
-      operations. March 2025.
+      La Stratégie du Canada pour l’Indo-Pacifique, 2022.
+      https://www.international.gc.ca/transparency-transparence/indo-pacific-indo-pacifique/index.aspx?lang=fra
+    - >-
+      Stratégie canadienne sur les minéraux critiques, 2022.
+      https://www.canada.ca/fr/campagne/mineraux-critiques-au-canada/la-strategie-canadienne-sur-les-mineraux-critiques.html
+    - >-
+      La Politique étrangère du Canada pour l'Arctique, 2024.
+      https://international.canada.ca/fr/affaires-mondiales/organisation/rapports/politique-arctique-2024
+    - >-
+      Van Assche, A. Manuel Trumpien des goulets d’étranglement et comment y
+      faire face. Fondation Asie Pacifique du Canada, asiapacific.ca, février
+      2025.
+      https://www.asiapacific.ca/fr/publication/assche-trumps-chokepoint-playbook-and-how-deal-with-it
+    - >-
+      Van Assche, A. Adapter la stratégie canadienne de diversification des
+      échanges à l’ère de l’interdépendance stratégique. Fondation Asie
+      Pacifique du Canada, asiapacific.ca, février 2026.
+      https://www.asiapacific.ca/fr/publication/adapting-canadas-trade-diversification-strategy-era-strategic-interdependence
+    - >-
+      Statistique Canada. Le Quotidien — Commerce international de marchandises
+      du Canada, décembre 2024. 5 février 2025.
+      https://www150.statcan.gc.ca/n1/daily-quotidien/250205/dq250205a-fra.htm
+    - >-
+      Statistique Canada. Transactions internationales de services, par
+      catégorie, trimestriel. Tableau 36-10-0021-01.
+      https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3610002101
+    - >-
+      Dunbar, G. R., McKelvey, P., Peer, T., Steingress, W. et Tomlin, B.
+      L’évolution de la place du Canada dans le commerce maritime mondial.
+      Banque du Canada, mai 2026.
+      https://www.banqueducanada.ca/2026/05/article-sparks-et-bank-2026-12/

@@ -10,6 +10,7 @@
  */
 import LegacyReveal from './LegacyReveal.astro';
 import ReviewNotice from './ReviewNotice.astro';
+import { splitSourceLine } from '../lib/sourceLinks';
 
 interface Section { title?: string; content?: string; }
 interface Takeaway { description?: string; }
@@ -74,7 +75,7 @@ const readingKicker = lang === 'fr' ? 'Version lecture' : 'Reading view';
   {sources.length > 0 && (
     <section>
       <h2>{sourcesLabel}</h2>
-      <ul>{sources.map((s) => <li>{s}</li>)}</ul>
+      <ul>{sources.map((s) => <li>{splitSourceLine(s).map((p) => (p.href ? <a href={p.href}>{p.text}</a> : p.text))}</li>)}</ul>
     </section>
   )}
 </div>
@@ -102,7 +103,11 @@ const readingKicker = lang === 'fr' ? 'Version lecture' : 'Reading view';
   {sources.length > 0 && (
     <div>
       <h2 class="thf-h2">{sourcesLabel}</h2>
-      {sources.map((s) => <p class="thf-p">{s}</p>)}
+      {sources.map((s) => (
+        <p class="thf-p" style="overflow-wrap:anywhere;">
+          {splitSourceLine(s).map((p) => (p.href ? <a href={p.href} rel="noopener noreferrer">{p.text}</a> : p.text))}
+        </p>
+      ))}
     </div>
   )}
   <p class="thf-foot"><a href={backHref}>← {backLabel}</a></p>

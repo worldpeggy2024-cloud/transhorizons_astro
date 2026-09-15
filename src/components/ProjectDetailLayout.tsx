@@ -12,6 +12,7 @@ import { smoothScrollTo } from '../lib/smoothScroll';
 import { useLanguage } from '../contexts/LanguageContext';
 import DraftWatermark, { DraftBanner } from './DraftWatermark';
 import { slugFromPath } from '../lib/narrationAudio';
+import { splitSourceLine } from '../lib/sourceLinks';
 
 /** Renders a content string that may contain multiple paragraphs (separated by
  *  blank lines) and bullet-point blocks (lines starting with •). */
@@ -439,7 +440,23 @@ export default function ProjectDetailLayout({
                 {sources.map((source, idx) => (
                   <li key={idx} className="flex gap-3 text-sm font-body text-[#888] leading-relaxed">
                     <span className="flex-shrink-0 text-[#B89860]">{idx + 1}.</span>
-                    <span>{source}</span>
+                    <span className="min-w-0 [overflow-wrap:anywhere]">
+                      {splitSourceLine(source).map((part, j) =>
+                        part.href ? (
+                          <a
+                            key={j}
+                            href={part.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#B89860] underline underline-offset-2 hover:text-[#1A1A1A]"
+                          >
+                            {part.text}
+                          </a>
+                        ) : (
+                          <span key={j}>{part.text}</span>
+                        )
+                      )}
+                    </span>
                   </li>
                 ))}
               </ol>
