@@ -99,6 +99,25 @@
 - It checks MECHANICAL consistency only — never editorial readiness.
 - `fly deploy` ships the WORKING DIRECTORY, not the last commit: uncommitted edits go live.
 
+## Articles — research & evidence (adopted 2026-09-14)
+- Process: content/docs/article-workflow.md. Commands: `npm run article:evidence -- init | boundary | fetch |
+  flags | check | verify-prompt | verdicts <slug>`. Job folder: content/docs/article-jobs/<slug>/.
+- SENTENCES DO NOT TRAVEL. The only thing that crosses from exploration to writing is `boundary.json`:
+  questions, document links, gaps. Never draft in an exploration chat; never hand its prose to a writer.
+- Every figure / count / ratio / direct quotation needs a ledger claim: document id + verbatim quote matched
+  against the fetched text + a reader verdict from a fresh memory-off chat. Firsts, superlatives and
+  attributions need a quote or a "reasoning" note; NEGATIVE-EXISTENCE claims ("no official source…") need a
+  quote or a gap with a recorded search — reasoning cannot show absence. Trend and state are warnings.
+- Run `check` after EVERY edit, corrections included: the Multipolar essay's invented "first since 2021" was
+  written while fixing an invented "nine days". The checker cannot tell a revision from a draft, by design.
+- Sources are fetched on the fly into gitignored `cache/`; Peggy downloads only what fetch reports blocked,
+  into `manual/`. Never ask her to assemble source archives.
+- No causal regex tier, by design: this prose carries causation by colon and juxtaposition. It is a
+  verifier question.
+- Gate: `prebuild` runs `article-evidence gate` offline and fails only for a FINALISED article with an
+  enforced ledger. Articles published before 2026-09-14 have no ledger and are not gated — do not retro-audit
+  finished articles or country reports unless Peggy asks.
+
 ## Country reports (World Views) — process & schema
 - Storage: ONE flat file per country, content/countries/<ISO3>/analysis.yaml. NOT split (can.en.yaml etc. is
   the dead convention) and NOT in `sectionFields` (that is the Articles collection). Country fields live in

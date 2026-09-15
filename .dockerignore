@@ -16,6 +16,12 @@
 tts-text
 tts-cache
 
+# Article evidence working cache — fetched source text and manual downloads.
+# The build gate (article-evidence gate) runs offline on ledger.json and never
+# reads these, so they must not bloat the image.
+content/docs/article-jobs/*/cache
+content/docs/article-jobs/*/manual
+
 # flyctl launch added from .gitignore
 # dependencies
 **/node_modules

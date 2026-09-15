@@ -38,6 +38,12 @@ Thumbs.db
 # per-paragraph audio cache (regenerable; keyed by text + generation settings)
 tts-cache/
 
+# article evidence: fetched source text and hand-downloaded documents are a
+# disposable working cache (re-created by `article:evidence fetch`), not an archive.
+# boundary.json / ledger.json / verify.prompt.md in the same folders ARE committed.
+content/docs/article-jobs/*/cache/
+content/docs/article-jobs/*/manual/
+
 # site-film pipeline output (frames, builds, narration takes) — gigabytes, regenerable
 capture/out/
 capture/narration/*.wav
