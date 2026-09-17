@@ -1,14 +1,14 @@
 # Writer brief — Ring of Fire article (rebuild)
 
-> **Operator note — NOT part of the prompt.** Generated 2026-09-15 from ledger.json (215 quotes, each matched against its document) and boundary.json (Peggy's questions and tiers). HOW TO USE: open a NEW chat with memory OFF, outside any project. Paste everything below the line. Attach ONE published TransHorizons essay on a different topic as a style sample, and nothing else — never draft-1 or any exploration chat. Save the reply as ring-of-fire-draft-2.md in the Ring of Fire folder and tell Claude Code; it attaches each {c…} marker to its sentence, runs the check, and prepares the verifier prompt. Length: about 3,000 words is an assumption (a 12-minute read like the other essays) — change it below if you want.
+> **Operator note — NOT part of the prompt.** Generated 2026-09-15 from ledger.json (229 quotes, each matched against its document) and boundary.json (Peggy's questions and tiers). HOW TO USE: open a NEW chat with memory OFF, outside any project. Paste everything below the line and attach NOTHING — no style sample (informative articles have no style; the register spec is included below), never draft-1 or any exploration chat. Save the reply as ring-of-fire-draft-2.md in the Ring of Fire folder and tell Claude Code; it attaches each {c…} marker to its sentence, runs the check, and prepares the verifier prompt. Length: about 3,000 words is an assumption (a 12-minute read like the other essays) — change it below if you want.
 
 ---
 
-You are writing an English-language essay for TransHorizons, a personal site of geopolitical and resource analysis. The attached essay is a STYLE SAMPLE ONLY: match its voice, rhythm and plain, precise register. Do not use any of its content.
+You are writing an English-language informative article for TransHorizons, a site of geopolitical and resource analysis. It has no style: it carries information. Follow the REGISTER section at the end of this brief as strictly as the facts rule.
 
 ## The subject
 
-Ontario is building all-season roads towards the Ring of Fire mineral region, across the peatlands of the Far North, where most First Nations communities have no year-round road. The essay asks what such a road means for the people who live there and for the ground it crosses, and how the decision to build it was assessed.
+Ontario is building all-season roads towards the Ring of Fire mineral region, across the peatlands of the Far North, where most First Nations communities have no year-round road. The article asks what such a road means for the people who live there and for the ground it crosses, and how the decision to build it was assessed.
 
 ## The one rule that matters
 
@@ -21,7 +21,7 @@ Ontario is building all-season roads towards the Ring of Fire mineral region, ac
 
 ## Shape and length
 
-About 3,000 words. Give room in proportion to the tiers below, in roughly this order, with section headings of your choosing. A short title and a one-sentence subtitle. No footnotes, no reference list (sources are attached separately from the markers).
+About 3,000 words. Give room in proportion to the tiers below, in roughly this order. Section headings describe what the section contains; never use a question as a heading (the questions below are for you, not for the reader). A short title and a one-sentence subtitle, both descriptive. No footnotes, no reference list (sources are attached separately from the markers).
 
 - **MAIN — most of the article:** What does the winter road provide the fly-in communities, and how is it changing? · Does an all-season road lower the cost of living in a remote community? · How have the region's First Nations lived on this land, and what are they building on it now? · What is the ground the corridor crosses, and what happens to its water, mercury and wildlife when it is disturbed? · Can a floating road cross this peat without draining it, and what does the record say about that?
 - **IMPORTANT — a paragraph or two each:** Which First Nations are affected, and what have they said about the road and about how it was assessed? · How were the road assessments scoped, so that no one assessment covered the corridor? · What is the regional assessment, what has it found so far, and what power does it have?
@@ -40,7 +40,7 @@ About 3,000 words. Give room in proportion to the tiers below, in roughly this o
 ## Silences — what the record does not contain (each was searched)
 
 - No assessment compared routes or transport modes for the corridor as a whole; the only comparison of modes is within the Webequie road's own alternatives, and the regional assessment's science review calls network-level impacts under-assessed. Scope: the Webequie road's assessment files and the regional assessment documents. {g-corridor-modes} (supporting facts: {c211} {c140})
-- No study in the record validates a floating road with equalisation culverts in peatland like this; submitters state that none was undertaken. Scope: the assessment record. {g-floating-validation} (supporting facts: {c120} {c133})
+- No study in the record validates a floating road with equalisation culverts in peatland like this; submitters state that none was undertaken, and Ontario's natural resources ministry deferred its questions on groundwater movement under a floating road to detailed design. Scope: the assessment record, including the ministry's comment-response tables. {g-floating-validation} (supporting facts: {c120} {c133} {c221} {c217})
 - No document in the record shows Ontario taking part in the regional assessment; its role is listed as "TBD". Scope: the assessment record. {g-ontario-in-ra} (supporting facts: {c061})
 
 ## Facts, by question
@@ -135,6 +135,7 @@ Each line: `{marker}` short label — "verbatim quote" (source). Use the quote t
 - {c147} Predator and hunter access — "Alignment of 2C may allow for greatest ease of access for predators and hunters into undisturbed woodlands and peatlands" (Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026)
 - {c208} When traditional food sources are diminished, households replace them with store food at freight-inflated prices — "When traditional food sources are diminished, households must replace traditional food with store-bought alternatives at prices inflated by freight costs." (Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263))
 - {c212} A reviewer: mercury and methylmercury results exist but sit in an appendix of the Webequie assessment — "the results of mercury and methylmercury analyses are not presented in the main body of the Draft EA/IS and are instead buried within an appendix." (Appendix P2.M comment-response tables (164888E.pdf))
+- {c229} Friends of the Attawapiskat River asked for a study of mercury on human health and the environment, including legacy contamination — "Recommendation No. 15: The Impact Statement must be updated to require a study of mercury on human health and the environment, which takes into account the proposed project and legacy contamination." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 83)
 
 ### Can a floating road cross this peat without draining it, and what does the record say about that?
 
@@ -168,6 +169,12 @@ Each line: `{marker}` short label — "verbatim quote" (source). Use the quote t
 - {c133} WCS: no evidence base for the design — "there is only one outdated reference to support that the 'floating roads' are logistically feasible" (WCS Canada, comment on final EAR/IS, Feb 2026 (Kirkwood and O'Connor))
 - {c134} WCS: "floating" is a misnomer — "is not floating – the road is supported by the compressed peat" (WCS Canada, comment on final EAR/IS, Feb 2026 (Kirkwood and O'Connor))
 - {c135} A peatland scientist asks whether floating roads were tested in peatlands — "have they been tested in peatlands?" (Registry 80183, public comments list)
+- {c216} Ontario's natural resources ministry (MNR): the final assessment's peatland and greenhouse-gas conclusions are not fully supported — "The Final EA includes several conclusions related to peatland impacts and greenhouse gas (GHG) emissions are not fully supported by the information provided." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 34)
+- {c217} MNR: with 40–50% peat compression, changed water movement and ditching, peatland impacts are reasonable to expect even with floating road designs — "based on the Project descriptions/designs that indicate anticipated peat compression of 40%–50% (Appendix D1), changes to water movement, vegetation loss, and localized ditching, it is reasonable to expect that peatland impacts will occur, even with “reduced impact” or floating road designs." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 34)
+- {c218} The proponent's reply to MNR: its peatland and emissions predictions are robust and meet the assessment requirements — "It is the Project Team’s position that predicted peatland impacts and greenhouse gas (GHG) emissions are robust and meet the expectations for their assessment under the federal Tailored Impact Statement Guidelines and EA Terms of Reference, including consideration of peatland compression." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 34)
+- {c219} The proponent declined MNR's request to monitor carbon dioxide and methane before, during and after construction — "Based on the assessment completed our position remains that GHG emission monitoring is not recommended and therefore the proponent is not prepared to implement the MNR suggested measurement and monitoring of CO₂ and CH₄ emissions before, during, and after construction, using tools such as eddy covariance towers to monitor real time carbon flux" (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 34)
+- {c220} MNR asked for a commitment to a peatland monitoring and mitigation program, given the sensitivity and scale of the peat — "given the sensitivity of these ecosystems and the scale of peat resources in the region, MNR requests that the EA include a commitment to developing a peatland monitoring and mitigation program." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 35)
+- {c221} MNR asked to review, at detailed design, groundwater movement in peat under a floating road, among other hydrology questions — "MNR requests that EA commitments provide MNR an opportunity to review/comment on: • How channel and ladder fens were incorporated into drainage design; • Assessment of peatland compression under roadway loading; • Hydrological modelling information related to climate change; • Groundwater movement in peat under a floating road" (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 39)
 
 ### Which First Nations are affected, and what have they said about the road and about how it was assessed?
 
@@ -192,6 +199,8 @@ Each line: `{marker}` short label — "verbatim quote" (source). Use the quote t
 - {c047} Communities could not review in the time given — "Most of our members are currently evacuated" (Fort Albany First Nation, submission, May 2026)
 - {c048} Nine First Nations and a council commented on the final assessment — "Aroland First Nation, Attawapiskat First Nation, Constance Lake First Nation, Eabametoong First Nation, Fort Albany First Nation, Kashechewan First Nation, Marten Falls First Nation, Nibinamik First Nation, Weenusk First Nation, and Mushkegowuk Council." (Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr))
 - {c049} 22 Indigenous communities consulted, 16 on a rights basis, 6 on an interest basis — "WFN consulted with the following Indigenous communities on a rights basis:" (Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr))
+- {c224} Mushkegowuk Council: the road is part of a network of roads to mines and smelters, not a stand-alone project (its cost figure, ~$500 million) — "Once again Mushkegowuk understands that the Webequie Supply Road is part of an immense project that are roads leading to mines that require the ability to drive truckloads of concentrated ore to southern smelters. It is spurious to assert that a road costing ~ $3,500,000 per kilometer to total ~ $500 Million is being built for the economic benefit of the small population of Webequie. This is not a stand-alone project." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 342)
+- {c225} The proponent's reply to Mushkegowuk: it acknowledges the concern about the wider context, including possible future mines — "The proponent acknowledges Mushkegowuk Council’s concern regarding the wider context in which the WSR is proposed, , including potential mining projects in the future." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 342)
 
 ### How were the road assessments scoped, so that no one assessment covered the corridor?
 
@@ -214,6 +223,9 @@ Each line: `{marker}` short label — "verbatim quote" (source). Use the quote t
 - {c087} The final assessment was incomplete when submitted — "sections 19 and 21 are missing information" (Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr))
 - {c213} The federal draft report assessed the road in combination with the other two roads and the mine (caribou, harvesting) — "IAAC is of the view that the project, in combination with the proposed Marten Falls Community Access Road, Northern Road Link, and Eagle’s Nest projects is likely to reduce the availability of caribou within the respective project LSAs and alter movement patterns and range areas within the project RSA." (Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.))
 - {c214} Fort Albany: the cumulative effects assessment does not include the Marten Falls road — "The cumulative effects assessment does not include the Marten Falls Community Access Road - The proponent acknowledges the concern that cumulative effects on peatland ecosystems may be underestimated when assessed at a project scale." (Fort Albany First Nation, submission, May 2026)
+- {c222} Ontario's environmental assessment branch: it is not clear how the Marten Falls cumulative-effects findings were used — "However, it is not clear from the rest of the cumulative effects assessment chapter (section 21) how this was done." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 3)
+- {c223} Ontario's environment ministry: its 58 comments on the human health risk assessment remained unresolved in the final submission — "The ministry’s comments on the HHRA submission were substantive, providing 58 comments across 28 pages for the proponent’s 70-page draft HHRA. Comments remain unresolved in the final HHRA submission dated January 30, 2026." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 12)
+- {c228} Aroland: if the road is later connected to the other roads or enables the mine, that should require formal review and amendment — "AFN further recommends that if the WSR is subsequently connected to the NRL, MFCAR, or enables development such as the Eagle’s Nest Mine, such development must be treated as a change requiring formal review and amendment of any decision." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 90)
 
 ### What is the regional assessment, what has it found so far, and what power does it have?
 
@@ -242,6 +254,8 @@ Each line: `{marker}` short label — "verbatim quote" (source). Use the quote t
 - {c078} Wyndham: watershed framework — "Adopt a nested, watershed-based impact assessment framework" (Wyndham Research, science review for the Regional Assessment, March 2026, Recommendation 1)
 - {c079} Wyndham: roads as network, not standalone — "Treat roads as regional infrastructure, not standalone projects … Assess roads and linear corridors as access-enabling networks" (Wyndham Research, science review for the Regional Assessment, March 2026, Recommendation 2)
 - {c080} Wyndham drew on 17 key informants — "interviews with 17 key informants" (Wyndham Research, science review for the Regional Assessment, March 2026)
+- {c226} Aroland: no approvals for resource roads until, at minimum, the regional assessment is completed — "AFN’s position remains that no approvals should be granted for resource roads until, at minimum, the Ring of Fire Regional Assessment is completed." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 89)
+- {c227} The proponent's reply to Aroland: regional assessment information will be used if available — "We reiterate that as required by the TISG and ToR Notice of Approval requirement (amendment #1.3) for the WSR Project, and the IA Act, relevant information from the regional assessment, if available, will be used to inform the Project effects assessment." (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026), p. 70)
 
 ### How long has Neskantaga waited for safe drinking water, and how fast did the Webequie road move to approval?
 
@@ -327,8 +341,74 @@ Each line: `{marker}` short label — "verbatim quote" (source). Use the quote t
 - {c159} [^1] Figures in the tens of billions — "generate over $22 billion dollars for Ontario's economy over 30 years" (Ontario's Ring of Fire page, Government of Ontario)
 - {c215} Aroland asked that cumulative effects cover the route to the smelters; the proponent said the final assessment would address it — "a full and complete analysis of the contribution to cumulative effects of the WSR must include the entirety of the overland transportation route between the Ring of Fire and possible receiving locations (e.g., Ferrochrome facility in Sault Ste. Marie, Sudbury Smelter, other reasonably foreseeable end points for ore or mine concentrate). 1. Item will be addressed in the Final EAR/IS submission." (Appendix P2.M comment-response tables (164888E.pdf))
 
+## Register
+
+The rules below govern how the article is written. Where they say a claim needs "a source", that means a {marker} from the facts above; "marked as unsourced" means [NEEDS SOURCE: …].
+
+
+### Purpose
+Informative articles have no style. They carry information. The draft must not be
+recognizable as AI-written and must not carry Claude's habits. Peggy's own reflective
+voice is separate (Notes & Reflections) and is not used here either.
+
+### FORBIDDEN — strip every instance before delivery
+
+Rhetorical moves
+- The reframe: "It's not X. It's Y." / "This isn't about A; it's about B."
+- Triads: three parallel items, clauses, or examples where two or four would be natural.
+- Em-dash pivot followed by a short punch sentence.
+- Parallel sentences escalating toward a reveal.
+- Rhetorical questions.
+- Metaphor or analogy used as argument (the boiler as a lesson, the corridor as a bloodstream).
+- Restating the reader's or a source's words back as insight ("as X put it, exactly").
+
+Openers and closers
+- "Here's the thing" / "Notice that" / "And there's the answer" / "The real story is".
+- Closing aphorism: a final sentence written to be quotable.
+- Summary paragraph that adds no fact. Test: if the last paragraph can be deleted without
+  losing information, delete it.
+- Reassurance, hope, or moral in the final lines.
+
+Vocabulary
+- Intensifiers: exactly, precisely, genuinely, truly, the whole point, the entire method,
+  in miniature, crucially, strikingly, remarkably.
+- "Not just X but Y." / "More than X, it is Y."
+- "In other words" followed by a sharper restatement.
+- Sentence-initial "And" or "But" used for rhythm.
+- Colons used to set up a punchline.
+
+Structure
+- Headers that pose questions or tease.
+- Bullet lists used to look organized where prose carries the same content.
+- Paragraphs of one sentence for emphasis.
+
+### REQUIRED
+
+- Every factual claim has a source or is marked as unsourced.
+- Numbers are given with their date and origin.
+- Uncertainty is stated in plain terms: "not confirmed", "disputed", "one estimate".
+- Contested points are named as contested, with the main positions.
+- Sentences are declarative and mostly short. Subject, verb, object.
+- The order is: what the thing is, what is known, what is disputed, what follows.
+- No sentence exists to make the reader feel something.
+- Proper nouns and technical terms are used without decoration.
+- Where Peggy observed something firsthand, it is scoped: what, where, when, and what
+  it does not prove.
+
+### PRE-DELIVERY CHECK
+Read the draft once for content. Read it a second time only for the forbidden list.
+Count reframes, triads, em-dashes, and intensifiers. Target: zero reframes, zero closing
+aphorisms, no more than two em-dashes per thousand words. If the count is not met, edit
+and count again before delivery.
+
+### KNOWN LEAKS
+Habits that survive a first pass most often: the reframe, the closing line, "exactly".
+Check these three last.
+
+
 ## Before you finish
 
 - Every sentence with a fact has its marker; every analytical sentence says {reasoning}; every missing fact says [NEEDS SOURCE: …].
-- Nothing in the essay comes from outside this brief.
-- Return only the essay.
+- Nothing in the article comes from outside this brief.
+- Run the register PRE-DELIVERY CHECK, then check the three KNOWN LEAKS last.
+- Return only the article.

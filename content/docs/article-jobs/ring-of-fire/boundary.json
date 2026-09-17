@@ -135,6 +135,7 @@
         "q2",
         "q13",
         "q11",
+        "q8",
         "q5"
       ]
     },
@@ -142,9 +143,11 @@
       "id": "s9",
       "url": "https://iaac-aeic.gc.ca/050/documents/p80183/164888E.pdf",
       "answers": [
+        "q3",
         "q11",
         "q5",
-        "q12"
+        "q12",
+        "q6"
       ]
     },
     {
@@ -231,7 +234,8 @@
       ]
     }
   ],
-  "gaps": [
+  "gaps": [],
+  "withdrawnGaps": [
     {
       "id": "g-floating-validation",
       "question": "Has a floating road with equalisation culverts been validated in peatland like this?",
@@ -240,17 +244,9 @@
           "where": "all documents gathered for this article (the ledger sources)",
           "date": "2026-09-15"
         }
-      ]
-    },
-    {
-      "id": "g-ontario-in-ra",
-      "question": "Did Ontario take part in the regional assessment?",
-      "searched": [
-        {
-          "where": "all documents gathered for this article (the ledger sources)",
-          "date": "2026-09-15"
-        }
-      ]
+      ],
+      "withdrawn": "2026-09-17",
+      "reason": "No search record supports it: the only entry was a blanket \"all documents gathered for this article\". An absence claim needs a recorded search."
     },
     {
       "id": "g-corridor-modes",
@@ -260,7 +256,21 @@
           "where": "all documents gathered for this article (the ledger sources)",
           "date": "2026-09-15"
         }
-      ]
+      ],
+      "withdrawn": "2026-09-17",
+      "reason": "No search record supports it: the only entry was a blanket \"all documents gathered for this article\". An absence claim needs a recorded search."
+    },
+    {
+      "id": "g-ontario-in-ra",
+      "question": "Did Ontario take part in the regional assessment?",
+      "searched": [
+        {
+          "where": "all documents gathered for this article (the ledger sources)",
+          "date": "2026-09-15"
+        }
+      ],
+      "withdrawn": "2026-09-17",
+      "reason": "No search record supports it: the only entry was a blanket \"all documents gathered for this article\". Draft 1 never makes the claim, so nothing in this article depends on it. What survives is c061, the terms of reference listing the province of Ontario as \"TBD\" — a document saying something rather than an absence. If the corridor article needs Ontario's non-participation, that takes a real search of the regional assessment's registry page and terms of reference, with the date recorded."
     }
   ]
 }

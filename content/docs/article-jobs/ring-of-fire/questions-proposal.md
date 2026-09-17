@@ -1,6 +1,6 @@
 # Ring of Fire — which questions should the rebuilt article answer?
 
-Built 2026-09-15 from `ledger.json` (210 quotes from the audit, each matched against its document: 207 exact, the rest checked by eye where page layout splits the text) and `silences-search.json` (8 candidate silences searched across 31 documents).
+Built 2026-09-15 from `ledger.json` (229 quotes from the audit, each matched against its document: 226 exact, the rest checked by eye where page layout splits the text) and `silences-search.json` (8 candidate silences searched across 31 documents).
 
 **How to use this.** Pick the questions the article answers, perhaps five to eight, and the silences it names. The facts under each question are already confirmed. The "draft also says" lines have no confirmed source: choosing a question does not bring them back. Each one you want becomes a document to find, for that question only. Anything you do not pick stays on file for a later piece.
 
@@ -10,16 +10,16 @@ Built 2026-09-15 from `ledger.json` (210 quotes from the audit, each matched aga
 |---|---|---|---|
 | q1 | How long has Neskantaga waited for safe drinking water, and how fast did the Webequie road move to approval? | **5** (5) | 3 |
 | q2 | What does the winter road provide the fly-in communities, and how is it changing? | **26** (26) | 4 |
-| q3 | What is the ground the corridor crosses, and what happens to its water, mercury and wildlife when it is disturbed? | **7** (8) | 7 |
+| q3 | What is the ground the corridor crosses, and what happens to its water, mercury and wildlife when it is disturbed? | **9** (10) | 7 |
 | q4 | How have the region's First Nations lived on this land, and what are they building on it now? | **8** (8) | 1 |
 | q5 | What exactly is being built, by whom, to what design, and under which assessments? | **15** (20) | 5 |
-| q6 | What is at the end of the road: the deposit, the mine, and its value? | **5** (6) | 4 |
-| q7 | Which First Nations are affected, and what have they said about the road and about how it was assessed? | **14** (19) | 5 |
-| q8 | How were the road assessments scoped, so that no one assessment covered the corridor? | **13** (15) | 3 |
-| q9 | What is the regional assessment, what has it found so far, and what power does it have? | **18** (23) | 2 |
+| q6 | What is at the end of the road: the deposit, the mine, and its value? | **6** (7) | 4 |
+| q7 | Which First Nations are affected, and what have they said about the road and about how it was assessed? | **16** (21) | 5 |
+| q8 | How were the road assessments scoped, so that no one assessment covered the corridor? | **18** (20) | 3 |
+| q9 | What is the regional assessment, what has it found so far, and what power does it have? | **20** (25) | 2 |
 | q10 | Why will the mine itself have no federal assessment? | **9** (13) | 4 |
-| q11 | Can a floating road cross this peat without draining it, and what does the record say about that? | **26** (28) | 1 |
-| q12 | Were alternatives to this road, other routes and other modes, compared, and on what terms? | **11** (13) | 2 |
+| q11 | Can a floating road cross this peat without draining it, and what does the record say about that? | **32** (34) | 1 |
+| q12 | Were alternatives to this road, other routes and other modes, compared, and on what terms? | **12** (14) | 2 |
 | q13 | Does an all-season road lower the cost of living in a remote community? | **25** (26) | 1 |
 
 ## 2. Named silences — what the documents do not say, and what was searched
@@ -171,6 +171,8 @@ A silence is often the strongest thing an article can say, so these are listed a
 - Habitat recovery in excess of 100 years — c146 · S29 (Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026)
 - Predator and hunter access — c147 · S29 (Final EAR/IS Section 3, Evaluation of Project Alternatives, 30 Jan 2026)
 - When traditional food sources are diminished, households replace them with store food at freight-inflated prices — c208 · S37 (Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263))
+- A reviewer: mercury and methylmercury results exist but sit in an appendix of the Webequie assessment — c212 · S9 (Appendix P2.M comment-response tables (164888E.pdf))
+- Friends of the Attawapiskat River asked for a study of mercury on human health and the environment, including legacy contamination — c229 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
 
 **The draft also says (no confirmed source)**
 
@@ -236,6 +238,7 @@ A silence is often the strongest thing an article can say, so these are listed a
 - [^1] About 500 km northeast of Thunder Bay — c157 · S2 (Ontario's Ring of Fire page, Government of Ontario)
 - [^1] Chromite plus nickel, copper, platinum-group metals — c158 · S2 (Ontario's Ring of Fire page, Government of Ontario)
 - [^1] Figures in the tens of billions — c159 · S2 (Ontario's Ring of Fire page, Government of Ontario)
+- Aroland asked that cumulative effects cover the route to the smelters; the proponent said the final assessment would address it — c215 · S9 (Appendix P2.M comment-response tables (164888E.pdf))
 
 **The draft also says (no confirmed source)**
 
@@ -262,6 +265,8 @@ A silence is often the strongest thing an article can say, so these are listed a
 - Communities could not review in the time given — c045, c046, c047 · S20 (Fort Albany First Nation, submission, May 2026)
 - Nine First Nations and a council commented on the final assessment — c048 · S31 (Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr))
 - 22 Indigenous communities consulted, 16 on a rights basis, 6 on an interest basis — c049 · S31 (Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr))
+- Mushkegowuk Council: the road is part of a network of roads to mines and smelters, not a stand-alone project (its cost figure, ~$500 million) — c224 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- The proponent's reply to Mushkegowuk: it acknowledges the concern about the wider context, including possible future mines — c225 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
 
 **The draft also says (no confirmed source)**
 
@@ -288,6 +293,11 @@ A silence is often the strongest thing an article can say, so these are listed a
 - The road's enabling function — c084 · S21 (Friends of the Attawapiskat River, submission)
 - WCS: the three roads are one corridor — c085 · S10 (WCS Canada comment on draft EAR/IS, 6 Oct 2025)
 - The final assessment was incomplete when submitted — c086, c087 · S31 (Ministry Review of the Webequie Supply Road Environmental Assessment, 17 Apr 2026 (updated 20 Apr))
+- The federal draft report assessed the road in combination with the other two roads and the mine (caribou, harvesting) — c213 · S8 (Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.))
+- Fort Albany: the cumulative effects assessment does not include the Marten Falls road — c214 · S20 (Fort Albany First Nation, submission, May 2026)
+- Ontario's environmental assessment branch: it is not clear how the Marten Falls cumulative-effects findings were used — c222 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- Ontario's environment ministry: its 58 comments on the human health risk assessment remained unresolved in the final submission — c223 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- Aroland: if the road is later connected to the other roads or enables the mine, that should require formal review and amendment — c228 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
 
 **The draft also says (no confirmed source)**
 
@@ -317,6 +327,8 @@ A silence is often the strongest thing an article can say, so these are listed a
 - Wyndham: watershed framework — c078 · S24 (Wyndham Research, science review for the Regional Assessment, March 2026)
 - Wyndham: roads as network, not standalone — c079 · S24 (Wyndham Research, science review for the Regional Assessment, March 2026)
 - Wyndham drew on 17 key informants — c080 · S24 (Wyndham Research, science review for the Regional Assessment, March 2026)
+- Aroland: no approvals for resource roads until, at minimum, the regional assessment is completed — c226 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- The proponent's reply to Aroland: regional assessment information will be used if available — c227 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
 
 **The draft also says (no confirmed source)**
 
@@ -374,6 +386,12 @@ A silence is often the strongest thing an article can say, so these are listed a
 - WCS: no evidence base for the design — c133 · S22 (WCS Canada, comment on final EAR/IS, Feb 2026 (Kirkwood and O'Connor))
 - WCS: "floating" is a misnomer — c134 · S22 (WCS Canada, comment on final EAR/IS, Feb 2026 (Kirkwood and O'Connor))
 - A peatland scientist asks whether floating roads were tested in peatlands — c135 · S4 (Registry 80183, public comments list)
+- Ontario's natural resources ministry (MNR): the final assessment's peatland and greenhouse-gas conclusions are not fully supported — c216 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- MNR: with 40–50% peat compression, changed water movement and ditching, peatland impacts are reasonable to expect even with floating road designs — c217 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- The proponent's reply to MNR: its peatland and emissions predictions are robust and meet the assessment requirements — c218 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- The proponent declined MNR's request to monitor carbon dioxide and methane before, during and after construction — c219 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- MNR asked for a commitment to a peatland monitoring and mitigation program, given the sensitivity and scale of the peat — c220 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
+- MNR asked to review, at detailed design, groundwater movement in peat under a floating road, among other hydrology questions — c221 · S38 (Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026))
 
 **The draft also says (no confirmed source)**
 
@@ -394,6 +412,7 @@ A silence is often the strongest thing an article can say, so these are listed a
 - Regional assessment had produced nothing usable — c149 · S9 (Appendix P2.M comment-response tables (164888E.pdf))
 - Transport Action Ontario on rail — c153, c154 · S25 (Transport Action Ontario, submission, 4 May 2026 (registry reference 282))
 - A tri-provincial rail memorandum exists — c155 · S25 (Transport Action Ontario, submission, 4 May 2026 (registry reference 282))
+- The regional assessment’s science review: corridor proposals still proponent-driven; network-level impacts under-assessed — c211 · S24 (Wyndham Research, science review for the Regional Assessment, March 2026)
 
 **The draft also says (no confirmed source)**
 

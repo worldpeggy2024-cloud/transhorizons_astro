@@ -16,9 +16,10 @@ control what is allowed to cross from one stage to the next.**
    it: **questions**, **document links**, and **gaps** (a question nothing answered). No findings, no
    figures, no summaries — in any wording. `boundary.json` has no field that can hold one.
 2. **No fact enters the article without a verbatim quote from a document that was actually opened**, and
-   every quote gets a verdict from a reader who sees only the sentence and the quote. The checker runs on
-   the article file as it is *now*: it cannot tell a first draft from a revision, so a "fix" is checked
-   exactly like a draft.
+   every sentence carrying a fact is read **once**, before Peggy reads the draft, against the document
+   *around* its quote, by a reader that took no part in the writing.
+3. **Peggy never re-checks sentences.** The check happens before she reads. When she is happy with the
+   draft, it is finished.
 
 ## The steps
 
@@ -27,9 +28,9 @@ control what is allowed to cross from one stage to the next.**
 | 1 | Explore | any AI, free prose; Peggy decides | `boundary.json`: questions, document links, gaps |
 | 2 | Gather | Claude Code | `cache/` (disposable text), `ledger.json` claims with quotes |
 | 3 | Write | a fresh chat, memory off | article prose using only ledger facts; gaps named as gaps |
-| 4 | Check | Claude Code, after **every** edit | the list of what is not yet publishable |
-| 5 | Verify | a fresh chat, memory off | verdicts recorded in the ledger |
-| 6 | Decide | Peggy | only the flagged items |
+| 4 | Check the form | Claude Code, automatic | missing quotes and markers, fixed before step 5 |
+| 5 | Check the facts, once | Claude Code (independent readers), **before Peggy reads** | a corrected draft + the list of what was corrected |
+| 6 | Read and publish | Peggy | her reading of the corrected draft; nothing re-checked |
 
 All commands: `npm run article:evidence -- <command> <slug>`.
 
@@ -97,8 +98,15 @@ claim with at least two quoted inputs:
 
 ### 3. Write
 
-In a **new chat with memory off, outside any project**, give the writer the questions, the gaps, and the
-ledger's quotes (not the exploration chat, not prior drafts):
+In a **new chat with memory off, outside any project**, give the writer the questions, the gaps, the
+ledger's quotes and the register spec (`content/docs/informative-register-spec.md`) — not the exploration
+chat, not prior drafts, and **no style sample**: informative articles have no style, and an imitated voice
+is what makes AI prose recognisable (Peggy's decision, 2026-09-15). The spec is self-reported by the
+writer, so treat it like any other self-report: when the draft arrives, `npm run article:evidence --
+register <draft.md>` counts the forbidden forms a pattern can see (em-dashes per thousand words, reframes,
+"not just… but", rhetorical questions and question headings, intensifiers, stock openers, "in other
+words", sentences opening with And/But, one-sentence paragraphs, colon punches) and lists three-item series
+and a closing paragraph with no fact marker as candidates for a reader.
 
 > Write the article from these quoted facts only. Every figure, count, date, first/only/record, "according
 > to", and every statement that something does not exist must come from a quote below. If a sentence needs a
@@ -109,9 +117,10 @@ ledger's quotes (not the exploration chat, not prior drafts):
 French follows the site rule: Peggy reviews and finalises it; AI drafts are marked `FR-PLACEHOLDER`.
 Claims are per language (`"lang": "fr"`, with the French sentence) because the French text is checked too.
 
-### 4. Check — after every edit, including "fixes"
+### 4. Check the form
 
-`npm run article:evidence -- check <slug>` compares the article with the ledger:
+Claude Code attaches the draft's markers to the ledger, then `npm run article:evidence -- check <slug>`
+compares the article with the ledger. This is mechanical and costs Peggy nothing:
 
 | Tier | Sentence forms flagged | What satisfies it |
 |---|---|---|
@@ -121,30 +130,55 @@ Claims are per language (`"lang": "fr"`, with the French sentence) because the F
 | **Warning** | trend asserted ("increasingly", "growing", "de plus en plus") | read as a question: is the direction *shown* (two data points) or only asserted? |
 | | temporal state ("still", "remains", "no longer", "demeure") | a note `{ "kind": "as-of", "asOf": "YYYY-MM-DD" }`; warns again after 30 days |
 
-The check also fails on: a quote not found in the fetched text; a claim whose sentence was rewritten
-(**STALE** — re-attach and re-verify); a verdict given before the sentence or quote changed; any claim
-without a verdict. `check` online re-matches every quote and records the result; `check --offline` uses the
-recorded matches.
+The check also fails on a quote not found in the fetched text. `check` online re-matches every quote and
+records the result; `check --offline` uses the recorded matches. Its "no blocking issues" means the form is
+right, **not** that the facts are true to their documents: that is step 5.
 
 Calibration (Canada-Multipolar, 2026-09-14): a prototype flagged 24 of 91 English sentences and found, from
 form alone, all four problems found by hand that day.
 
-### 5. Verify
+### 5. Check the facts — once, before Peggy reads
 
-`npm run article:evidence -- verify-prompt <slug>` writes `verify.prompt.md` for every quoted claim
-without a current verdict. Paste it into a **new chat with memory off**; it sees only sentence + quote and
-answers supported / partial / contradicted / not-in-source. Save the JSON reply and run
-`npm run article:evidence -- verdicts <slug> <file>`.
+**Why it changed (Ring of Fire, 2026-09-16).** The earlier verifier was a fresh chat that saw only the
+sentence and a short quote. Four rounds of it never converged: lengthening a quote voided its verdict, so
+every fix created more checking. And it could not see context. After all those rounds, one reading of each
+sentence against the document *around* its quote still found 14 errors in about 127 sentences, every quote
+genuine and every one misread: remarks about the Marten Falls road's documents presented as about the
+Webequie road; a conclusion about the communities near a mine placed "at" the mine; a total of aggregate,
+fill and rock called an aggregate volume; an agreement with the Minister credited to the Agency; "may",
+"preliminary", "unless" and "where appropriate" dropped; two "no study exists" statements that no cited
+document makes. The chat-verifier commands (`verify-prompt`, `verdicts`) were removed from the script.
 
-This is the layer that catches what no pattern can: a claim stronger than its quote (a road that lowered
-food prices while cutting some subsidies, written as "food is net dearer"), an estimate written as a
-measurement, and **causal links** — which this site's prose carries with colons and juxtaposition, not
-"because", so no regex tier exists for them. A **partial** verdict blocks until the prose is adjusted and a
-`"resolution"` is written on the claim.
+**How.** When the draft has passed step 4, Claude Code splits the sentences carrying fact markers into
+batches of about 20 (sentence, its quotes, the source id and the path of the cached text) and gives each
+batch to an independent reader (a subagent with no part in the writing), all batches in parallel. Nothing
+is pasted by Peggy. Each reader gets this instruction:
 
-### 6. Decide and publish
+> Your only job is to find FALSE or INVENTED information: things the article states that its source
+> document does not say, says differently, or contradicts. You are not editing style, length or wording.
+> For every sentence, read the quote, then open the source text and read the passage around it (about 30
+> lines), so that you see who is speaking, which document and which project, road or community, the dates
+> and the qualifiers. OK: a fair paraphrase. PROBLEM: an element not in the source; the wrong body, person,
+> document, road or community; a number or date that differs; a hedged or conditional statement made certain
+> ("may", "preliminary", "proposed", "unless", "where appropriate"); a scope made wider or narrower; a
+> statement that something does not exist which the source does not make; a geographic error; a quote not
+> found. Do not invent problems, and do not flag missing detail, style or length. Report only the problems,
+> each with what is wrong, the source's own words (with page) and a minimal corrected sentence.
 
-Peggy reads only the flagged items. Then `npm run article:ready <slug>` and `npm run deploy` as usual.
+Claude Code applies the corrections to make the reading draft, and gives Peggy that draft plus the short
+list of what was corrected and why (the source's words beside each). A correction that changes the
+article's meaning, or where the reader's corrected sentence is itself doubtful, is listed as a question
+for Peggy instead of applied.
+
+**Once.** The corrected sentences are the readers' own minimal rewrites from the source's words; they are
+not sent back for another round. Nothing else is re-checked.
+
+### 6. Read and publish
+
+Peggy reads the corrected draft like any reader. Edits she makes herself are hers and are not checked. If
+she asks an AI to rewrite or add a sentence *carrying a fact*, that new sentence alone goes through step 5
+(an invented "first since 2021" was written while fixing an invented "nine days"). When she is happy:
+`npm run article:ready <slug>` and `npm run deploy` as usual.
 
 **The build gate:** `prebuild` runs `article-evidence gate` (offline). It fails the build only for an
 article that is `finalised` in the registry **and** has a ledger in `enforced` mode with blocking issues.
@@ -154,13 +188,13 @@ to `"mode": "audit"` to report without gating.
 ## What this does not catch
 
 - A fluent sentence with no figure and no flagged form ("repair capacity in the region is limited"). The
-  boundary is what keeps such sentences from arriving; the verifier catches them only if they carry a quote.
-- Causation, by pattern. It is a verifier question.
+  boundary is what keeps such sentences from arriving; step 5 reads it only if it carries a fact marker.
+- Causation, by pattern. Step 5's readers see it only where a sentence cites a quote.
 - Whether the questions were the right ones. That stays Peggy's judgement.
 
 ## Files
 
 - `scripts/article-evidence.cjs` — the commands; `scripts/lib/evidence.cjs` — quote matching, number
   parsing (EN/FR), sentence tiers.
-- `content/docs/article-jobs/<slug>/` — `boundary.json`, `ledger.json`, `verify.prompt.md`
-  (committed); `cache/`, `manual/` (gitignored, not deployed).
+- `content/docs/article-jobs/<slug>/` — `boundary.json`, `ledger.json` (committed); `cache/`, `manual/`
+  (gitignored, not deployed).

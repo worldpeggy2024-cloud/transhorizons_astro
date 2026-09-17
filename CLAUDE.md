@@ -101,21 +101,34 @@
 
 ## Articles — research & evidence (adopted 2026-09-14)
 - Process: content/docs/article-workflow.md. Commands: `npm run article:evidence -- init | boundary | fetch |
-  quotes | flags | check | verify-prompt | verdicts <slug>`. Job folder: content/docs/article-jobs/<slug>/.
+  quotes | flags | check <slug>` and `register <draft.md|article.yaml|slug>`.
+  Job folder: content/docs/article-jobs/<slug>/. Informative articles: the writer brief embeds
+  content/docs/informative-register-spec.md and NO style sample; `register` counts the spec's forbidden forms
+  after delivery, because the writer's own pre-delivery check is a self-report.
 - Ring of Fire (2026-09-15) is being REBUILT, not cut: the 8,000-word draft-1 is exploration only; its audit's
   159 quotes were converted into content/docs/article-jobs/ring-of-fire/ledger.json and matched (156 exact,
   3 by eye). Peggy chose and tiered the questions (boundary.json `weight`); q2 and q13 were gathered on
   2026-09-15 (cost-of-living report = S37). writer-brief.md (copy in her Articles/Ring of Fire folder) goes to
   a fresh memory-off chat; its {cNNN} / {reasoning} / {g-…} markers let Claude Code attach sentences to
-  claims, then check + verify-prompt. Never hand draft-1 prose to the writer.
+  claims. Never hand draft-1 prose to the writer.
+  STATE 2026-09-16: the chat-verifier rounds are STOPPED (never converged). An in-context check of draft-4 (127 of 171 fact
+  sentences; ~44 unchecked) found 14 errors, none applied yet: ECCC's Marten Falls remarks read as Webequie (c128, c129),
+  Musselwhite (c206), 4,854,500 m³ (c112), 2023 agreement party (c055), Lake Erie scope (c007), Fort Albany scope (c214),
+  Agency view scope (c098), two absence claims (c120-2, c140-2), dropped hedges (c008, c035-37, c104, c051-52, c074, c026).
+  Peggy then chose to redo her other started articles from scratch with the updated workflow; Ring of Fire awaits her decision.
+  Do NOT offer more verification rounds.
 - SENTENCES DO NOT TRAVEL. The only thing that crosses from exploration to writing is `boundary.json`:
   questions, document links, gaps. Never draft in an exploration chat; never hand its prose to a writer.
 - Every figure / count / ratio / direct quotation needs a ledger claim: document id + verbatim quote matched
-  against the fetched text + a reader verdict from a fresh memory-off chat. Firsts, superlatives and
+  against the fetched text. Firsts, superlatives and
   attributions need a quote or a "reasoning" note; NEGATIVE-EXISTENCE claims ("no official source…") need a
   quote or a gap with a recorded search — reasoning cannot show absence. Trend and state are warnings.
-- Run `check` after EVERY edit, corrections included: the Multipolar essay's invented "first since 2021" was
-  written while fixing an invented "nine days". The checker cannot tell a revision from a draft, by design.
+- FACT CHECK = ONE in-context pass, BEFORE Peggy reads (workflow step 5, changed 2026-09-16): independent subagents
+  read each fact sentence against the cached document AROUND its quote and report only errors with a corrected
+  sentence; Claude Code applies them and hands Peggy the corrected draft + the list. Never a quote-only chat
+  verifier (it missed all 14 context errors on Ring of Fire), never re-verification rounds, never ask Peggy to
+  re-check sentences. Only a fact sentence an AI later rewrites or adds gets checked again (the Multipolar
+  "first since 2021" was invented while fixing "nine days"). `verify-prompt` / `verdicts` are retired.
 - Sources are fetched on the fly into gitignored `cache/`; Peggy downloads only what fetch reports blocked,
   into `manual/`. Never ask her to assemble source archives.
 - No causal regex tier, by design: this prose carries causation by colon and juxtaposition. It is a
