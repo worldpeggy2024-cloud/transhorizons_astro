@@ -20,7 +20,9 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 > ## ⚠ Claims in this section are scoped to a different project
 >
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
+> *At the top of this file because c206 share a **name** with a paragraph here; c128 — the pair behind known error 1 — appear in this file.*
+>
+> The following appear below, but their quotes are **not about the Webequie Supply
 > Road**. Read the scope before using any of them.
 >
 > - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.

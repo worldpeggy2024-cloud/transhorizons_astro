@@ -181,11 +181,41 @@ function docText(id) {
   return docCache.get(id);
 }
 
+/**
+ * Words seen capitalised AWAY from a sentence start, anywhere in the corpus. A one-word
+ * name that only ever appears sentence-initially is a common noun wearing a capital —
+ * "Food costs remain high" is not a place — and a hand-kept stopword list never keeps up.
+ */
+const MIDCAP = new Set();
+// A footnote marker sits between the full stop and the next sentence ("opened.54 Food
+// costs remain high"), so allow digits after the terminator — otherwise the boundary is
+// invisible and the next sentence's first word looks like a mid-sentence proper noun.
+const sentencesOf = (text) => String(text).split(/(?<=[.!?;])\d*\s+(?=\p{Lu})/u);
+function learnMidCaps(text) {
+  for (const sentence of sentencesOf(text)) {
+    const ws = sentence.split(/\s+/);
+    // "Not the start of a title-cased run": anything that does not begin with a capital,
+    // including a number or a bracket ("…of Attawapiskat (21 May 2026)…").
+    const lower = (x) => !x || !/^[^\p{L}]*\p{Lu}/u.test(x);
+    for (let i = 1; i < ws.length; i++) {
+      const w = ws[i].replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '');
+      if (!/^\p{Lu}[\p{L}'’-]{2,}$/u.test(w)) continue;
+      // A run starts after a lowercase word, or after punctuation closed the previous run —
+      // in "Fort Albany, Ginoogaming, Kashechewan" every name follows another capital.
+      if (!lower(ws[i - 1]) && !/[,;:)\]]$/.test(ws[i - 1])) continue;
+      // It ends the run if a lowercase word follows, or if punctuation closes it — which is
+      // what separates a name in a list ("include Aroland, Attawapiskat") from a title-cased
+      // phrase ("Cost of Food Security"), where nothing punctuates the run.
+      if (lower(ws[i + 1]) || /[,;:.)\]]$/.test(ws[i])) MIDCAP.add(w.toLowerCase());
+    }
+  }
+}
+
 function names(text) {
   const out = [];
   const CAP = /\b\p{Lu}[\p{L}'’.-]*(?:\s+(?:of|the|and|for|in|on|de|du|des)\s+\p{Lu}[\p{L}'’.-]*|\s+\p{Lu}[\p{L}'’.-]*|\s+\d[\w.-]*)*/gu;
   // A name may not run across a sentence boundary: "First Nations. Treaty 9" is two things.
-  for (const sentence of text.split(/(?<=[.!?;])\s+(?=\p{Lu})/u)) {
+  for (const sentence of sentencesOf(text)) {
   let m;
   while ((m = CAP.exec(sentence)) !== null) {
     let s = m[0].replace(/[.,;:]+$/, '').trim();
@@ -193,6 +223,10 @@ function names(text) {
     const words = s.split(/\s+/);
     // A one-word match that is just a sentence-opening common word discriminates nothing.
     if (words.length === 1 && COMMON_CAPS.has(s.toLowerCase())) continue;
+    // …nor does one the corpus never uses as a standalone proper noun in running prose.
+    // Applied to every single-word name, not only sentence-initial ones: a footnote marker
+    // ("opened.54 Food costs remain high") hides a sentence boundary from any splitter.
+    if (words.length === 1 && !MIDCAP.has(s.toLowerCase())) continue;
     // "Thirty-one" opening a sentence is a number, not a name.
     if (allNumWords(s)) continue;
     const n = normName(s);
@@ -362,6 +396,10 @@ function autoExclusions(quote) {
   return out;
 }
 
+// Learn the corpus's real capitalised vocabulary before anything is indexed.
+for (const c of claims) learnMidCaps(c.quote);
+for (const sec of sections) for (const para of sec.paras) learnMidCaps(para.text);
+
 const excluded = [];
 const acronymReport = [];
 const claimItems = claims.map((c) => {
@@ -449,9 +487,17 @@ for (const sec of sections) {
         // Rarity, not count: a name shared with two claims must outrank a bare "twenty"
         // shared with forty. Counting them equally buried Constance Lake's own submission
         // below three number coincidences.
-        if (m.has(k)) shared.push({ surf, weight: Math.log(claimItems.length / (df.get(k) || 1)) + 0.01 });
+        if (m.has(k)) shared.push({ surf, key: k, weight: Math.log(claimItems.length / (df.get(k) || 1)) + 0.01 });
       }
-      if (shared.length) { rows.push({ c, shared: [...new Set(shared.map((x) => x.surf))], score: shared.reduce((a, x) => a + x.weight, 0) }); continue; }
+      if (shared.length) {
+        rows.push({
+          c,
+          shared: [...new Set(shared.map((x) => x.surf))],
+          score: shared.reduce((a, x) => a + x.weight, 0),
+          byName: shared.some((x) => x.key.startsWith('name:')),
+        });
+        continue;
+      }
       const words = [];
       let score = 0;
       for (const [k, surf] of pw) {
@@ -467,8 +513,9 @@ for (const sec of sections) {
     for (const [list, kind] of [[rows, 'candidate'], [topic, 'topic']]) {
       for (const r of list) {
         if (!r.c.scope) continue;
-        if (!scoped.has(r.c.id)) scoped.set(r.c.id, { c: r.c, candidate: [], topic: [] });
+        if (!scoped.has(r.c.id)) scoped.set(r.c.id, { c: r.c, candidate: [], topic: [], byName: [] });
         scoped.get(r.c.id)[kind].push(para.p);
+        if (kind === 'candidate' && r.byName) scoped.get(r.c.id).byName.push(para.p);
       }
     }
 
@@ -517,9 +564,21 @@ for (const sec of sections) {
   if (appendix.length) o.push('## Long lists', '', 'Moved here only for length. Complete and ranked as above.', '', ...appendix);
   // Generated, not hand-written: any section whose candidates include a claim scoped to a
   // different project gets the warning, naming the claims and their scope.
+  // A warning at the top of all twelve files is a warning nobody reads, so placement follows
+  // the actual risk. It goes to the top when a scoped claim reaches the strong list BY NAME,
+  // or when the pair that produced known error 1 is present at all — reaching the strong
+  // list on a bare "2007" is the same coincidence noise, just in the other table.
+  const nameHit = [...scoped.values()].filter((v) => v.byName.length);
+  const errPair = [...scoped.values()].filter((v) => v.c.scopeWarning);
+  const strong = nameHit.length > 0 || errPair.length > 0;
   if (scoped.size) {
-    const warn = ['> ## ⚠ Claims in this section are scoped to a different project', '>'];
-    warn.push('> The following appear below as candidates, but their quotes are **not about the Webequie Supply');
+    const why = [
+      nameHit.length ? `${nameHit.map((v) => v.c.id).join(', ')} share a **name** with a paragraph here` : null,
+      errPair.length ? `${errPair.map((v) => v.c.id).join(', ')} — the pair behind known error 1 — appear in this file` : null,
+    ].filter(Boolean).join('; ');
+    const warn = [`> ## ⚠ Claims ${strong ? 'in this section are' : 'appearing in this file are'} scoped to a different project`, '>'];
+    if (strong) warn.push(`> *At the top of this file because ${why}.*`, '>');
+    warn.push(`> The following ${strong ? 'appear below' : 'appear in this file, through the weaker topic pass only'}, but their quotes are **not about the Webequie Supply`);
     warn.push('> Road**. Read the scope before using any of them.', '>');
     const rank = (v) => v.candidate.length * 100 + v.topic.length;
     for (const v of [...scoped.values()].sort((a, b) => rank(b) - rank(a) || a.c.id.localeCompare(b.c.id))) {
@@ -532,7 +591,8 @@ for (const sec of sections) {
       if (v.c.scopeWarning) warn.push(`>   *${v.c.scopeWarning}*`);
     }
     warn.push('>', '> A candidate list cannot tell which project a quote is about. The scope field and the quote can.', '');
-    o.splice(warnAt, 0, ...warn);
+    if (strong) o.splice(warnAt, 0, ...warn);
+    else o.push(...warn);
   }
   fs.writeFileSync(path.join(OUT, name), o.join('\n'));
   summary.push({ file: name, title: sec.title, paras: sec.paras.length, withCands, scoped: [...scoped.keys()] });

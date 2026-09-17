@@ -18,18 +18,6 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 ---
 
-> ## ⚠ Claims in this section are scoped to a different project
->
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
-> Road**. Read the scope before using any of them.
->
-> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
->   Appears **as a candidate** under P5.
-> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
->   Appears as a topic candidate under P5.
->
-> A candidate list cannot tell which project a quote is about. The scope field and the quote can.
-
 ## P4 — "Neskantaga First Nation has been under a boil…"
 
 *Draft 1 section: Opening*
@@ -192,3 +180,15 @@ No candidate shares a figure, date, amount or name — a document must be opened
 | c132 | community; water | Draft Impact Assessment Report, Webequie Supply Road, April 2026 (166134E.pdf, 147 pp.) | p. 84 | — | As such, IAAC recommends that long-term water quality monitoring in areas where country foods are harvested include methylmercury until a three‑year trend analysis demonstrates the project is unlikely to generate or transport methylmercury, in consideration of the views from Indigenous communities on monitoring design and analysis. |
 
 ---
+
+> ## ⚠ Claims appearing in this file are scoped to a different project
+>
+> The following appear in this file, through the weaker topic pass only, but their quotes are **not about the Webequie Supply
+> Road**. Read the scope before using any of them.
+>
+> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
+>   Appears **as a candidate** under P5.
+> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
+>   Appears as a topic candidate under P5.
+>
+> A candidate list cannot tell which project a quote is about. The scope field and the quote can.

@@ -31,24 +31,21 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Marten Falls | yes (P10, P71, P66, P64, P116, P70, P77, P88, P89) | 11 | c036, c048, c049, c051, c057, c058, c085, c213, c214, c222, c244 |
 | Neskantaga | yes (P10, P74, P75, P76, P89, P93, P107, P4, P5, P8, P12) | 6 | c004, c031, c033, c034, c057, c202 |
 
-## Every name extracted from draft 1 (323), fewest matches first
+## Every name extracted from draft 1 (264), fewest matches first
 
 | name | paragraphs | claims | claim ids |
 | --- | --- | --- | --- |
 | About | P4 | **0** | — |
 | About 374 | P4 | **0** | — |
-| Across | P108 | **0** | — |
 | Act in June 2024 | P110 | **0** | — |
 | Add | P65 | **0** | — |
 | Add the Anaconda and Painter Lake | P65 | **0** | — |
 | Aerial | P131 | **0** | — |
 | alberta auditor | P19 | **0** | — |
 | Alberta's Auditor General | P19 | **0** | — |
-| Almost | P83 | **0** | — |
 | Anaconda | P65, P95 | **0** | — |
 | Anaconda and Painter Lake | P95 | **0** | — |
 | Anishinaabemowin | P35 | **0** | — |
-| Anyone | P16 | **0** | — |
 | At the Marten Falls | P70 | **0** | — |
 | Attawapiskat Lake | P74 | **0** | — |
 | Attawapiskat River | P74 | **0** | — |
@@ -59,7 +56,6 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Baikal | P26 | **0** | — |
 | Banff National | P18 | **0** | — |
 | Banff National Park | P18 | **0** | — |
-| Being | P68 | **0** | — |
 | Between | P18 | **0** | — |
 | Between 2019 | P18 | **0** | — |
 | Bill | P17 | **0** | — |
@@ -76,7 +72,6 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Canadian Wetland | P95 | **0** | — |
 | Canadian Wetland Inventory | P95 | **0** | — |
 | CanVec | P10 | **0** | — |
-| Caption | P31, P95 | **0** | — |
 | Celsius | P21 | **0** | — |
 | Charter | P76 | **0** | — |
 | Chief Cornelius | P67 | **0** | — |
@@ -85,29 +80,19 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Chief Gary Quisess | P84 | **0** | — |
 | Chief Lorraine | P121 | **0** | — |
 | Chief Lorraine Whitehead | P121 | **0** | — |
-| Chromite | P60, P133 | **0** | — |
 | Consent | P97 | **0** | — |
 | Constitution | P110 | **0** | — |
-| Contaminate | P51 | **0** | — |
 | Copernicus Browser | P36 | **0** | — |
 | Copernicus Sentinel | P36 | **0** | — |
 | Court | P110 | **0** | — |
 | Creative Commons | P131 | **0** | — |
-| Credit | P36, P131 | **0** | — |
 | Cree | P23, P27, P14 | **0** | — |
-| Crews | P25 | **0** | — |
 | Cross-section | P115 | **0** | — |
 | De Beers | P108 | **0** | — |
 | De Beers' Victor | P108 | **0** | — |
 | December | P105, P19 | **0** | — |
 | December 2025 | P105, P19 | **0** | — |
 | Designated | P16 | **0** | — |
-| Designation | P16 | **0** | — |
-| Despite | P61 | **0** | — |
-| Dimensions | P115 | **0** | — |
-| Disturb | P41 | **0** | — |
-| Drain | P37 | **0** | — |
-| Drainage | P116 | **0** | — |
 | Dryden | P10 | **0** | — |
 | Earth | P34 | **0** | — |
 | Eleven | P79 | **0** | — |
@@ -117,9 +102,6 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | English-Wabigoon | P10 | **0** | — |
 | Environment Canada | P21 | **0** | — |
 | Environmental Commissioner | P86 | **0** | — |
-| Everything | P28 | **0** | — |
-| Export | P36 | **0** | — |
-| Extend | P10 | **0** | — |
 | Facebook | P26 | **0** | — |
 | Far North Act | P88 | **0** | — |
 | Far North Advisory | P86 | **0** | — |
@@ -136,12 +118,7 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | FIGURE 7 | P115 | **0** | — |
 | FIGURE 8 | P131 | **0** | — |
 | Fire Area | P89 | **0** | — |
-| Fish | P41 | **0** | — |
 | Flickr | P131 | **0** | — |
-| Frozen | P23 | **0** | — |
-| Fuel | P28 | **0** | — |
-| Getting | P72 | **0** | — |
-| Glaciers | P18 | **0** | — |
 | Grassy Narrows | P10 | **0** | — |
 | Grassy Narrows and Dryden | P10 | **0** | — |
 | Great Slave | P26 | **0** | — |
@@ -150,7 +127,6 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Highway 11 | P81 | **0** | — |
 | Highway 599 | P80 | **0** | — |
 | Hudson Bay Lowlands | P34 | **0** | — |
-| Identical | P95 | **0** | — |
 | In 2025 | P69 | **0** | — |
 | In October | P110, P5 | **0** | — |
 | In October 2020 | P5 | **0** | — |
@@ -158,7 +134,6 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | In October 2023 the Supreme Court | P110 | **0** | — |
 | In September | P5 | **0** | — |
 | In September 2019 | P5 | **0** | — |
-| Industrial | P13 | **0** | — |
 | Ininimowin | P35 | **0** | — |
 | Introduced 17 | P17 | **0** | — |
 | Introduced 17 April | P17 | **0** | — |
@@ -171,31 +146,24 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | June 2024 | P110 | **0** | — |
 | June 2025 | P106 | **0** | — |
 | Kashechewan and Moose Cree | P27 | **0** | — |
-| Keep | P10 | **0** | — |
 | Kimesskanemenow | P27 | **0** | — |
 | Kimesskanemenow LP | P26 | **0** | — |
 | King's Printer | P10 | **0** | — |
-| Left | P115 | **0** | — |
 | Locator | P10 | **0** | — |
 | Marten Falls and Northern Road Link | P88 | **0** | — |
 | Mines | P17 | **0** | — |
 | Minister of Energy and Mines | P17 | **0** | — |
 | The Missisa | P117 | **0** | — |
-| Muskeg | P23 | **0** | — |
 | Nakina | P10, P81, P95 | **0** | — |
 | National Hydro | P10, P95 | **0** | — |
 | National Hydro Network | P10, P95 | **0** | — |
 | National Hydro Network and CanVec | P10 | **0** | — |
 | Natural Resources Canada | P10 | **0** | — |
 | Neskantaga and Attawapiskat | P89 | **0** | — |
-| Net | P123 | **0** | — |
 | Nibinamik Lake | P80 | **0** | — |
 | Nishnawbe Aski | P26, P30, P31, P32 | **0** | — |
 | Nishnawbe Aski Nation's | P26, P30, P31, P32 | **0** | — |
-| Nobody | P45, P38 | **0** | — |
-| None | P121, P78, P86, P87 | **0** | — |
 | Northern Ontario | P21 | **0** | — |
-| Nothing | P102, P59 | **0** | — |
 | The October 2021 | P127 | **0** | — |
 | Oji-Cree | P35 | **0** | — |
 | On 27 March | P91 | **0** | — |
@@ -214,25 +182,14 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Ontario GeoHub | P10, P95 | **0** | — |
 | Open Government | P10 | **0** | — |
 | Open Government Licence | P10 | **0** | — |
-| Opposition | P17 | **0** | — |
-| Orientation | P116 | **0** | — |
-| Pair | P131 | **0** | — |
 | Parliament's | P110 | **0** | — |
-| Peat | P37 | **0** | — |
-| Peatlands | P41 | **0** | — |
-| Permanent | P13 | **0** | — |
 | Peyto Glacier | P18 | **0** | — |
 | Physical Activities | P16 | **0** | — |
 | Physical Activities Regulations | P16 | **0** | — |
-| Placing | P113 | **0** | — |
 | Premier | P6, P70 | **0** | — |
 | President Trump | P70 | **0** | — |
 | QGIS | P10, P65 | **0** | — |
 | Québec's | P14 | **0** | — |
-| Rail | P128 | **0** | — |
-| Read | P77 | **0** | — |
-| Request | P31 | **0** | — |
-| Right | P115 | **0** | — |
 | Ring of Fire Area | P89 | **0** | — |
 | Rockies | P18 | **0** | — |
 | S.O. 2025 | P17 | **0** | — |
@@ -242,20 +199,13 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Science Advisory Panel | P86 | **0** | — |
 | Screenshot | P31 | **0** | — |
 | Section 4 | P115 | **0** | — |
-| Segmentation | P96, P97 | **0** | — |
-| Sentinel | P36, P26 | **0** | — |
-| Sentinel- | P36, P26 | **0** | — |
-| Shows | P36 | **0** | — |
-| Sources | P95 | **0** | — |
 | Special Economic | P131, P17 | **0** | — |
 | Special Economic Zones Act | P131, P17 | **0** | — |
 | Stephen Lecce | P17 | **0** | — |
-| Studied | P18 | **0** | — |
 | Sudbury | P59, P133 | **0** | — |
 | Then | P70 | **0** | — |
 | Then the United States | P70 | **0** | — |
 | Thunder Bay and Nakina | P10 | **0** | — |
-| Turning | P60 | **0** | — |
 | United Nations | P18 | **0** | — |
 | United States | P70, P17 | **0** | — |
 | Webequie and Marten Falls | P71, P66, P89 | **0** | — |
@@ -263,13 +213,8 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | When Chief Bruce Achneepineskum | P121 | **0** | — |
 | When Neskantaga | P110 | **0** | — |
 | Wildlands League | P131 | **0** | — |
-| Wolves | P117 | **0** | — |
-| Wyloo | P59 | **0** | — |
-| You | P68 | **0** | — |
-| Your | P68 | **0** | — |
 | Yukon | P26 | **0** | — |
 | Act | P67, P106, P110, P17 | 1 | c021 |
-| Adopt | P91 | 1 | c078 |
 | Biiwaapiko'kaning | P35 | 1 | c151 |
 | Cliffs | P133 | 1 | c156 |
 | Endangered Species | P17 | 1 | c098 |
@@ -279,19 +224,15 @@ be carried by claims — the claims column is counted over the whole ledger eith
 | Far North | P10, P40, P86, P88 | 1 | c007 |
 | Ferrochrome | P133 | 1 | c215 |
 | FIGURE | P10, P36, P131, P26, P31, P115, P65, P95 | 1 | c111 |
-| Food | P51 | 1 | c206 |
 | Ginoogaming | P81 | 1 | c057 |
 | Highway | P80, P81 | 1 | c115 |
 | In January | P89 | 1 | c055 |
 | In January 2023 | P89 | 1 | c055 |
 | January 2025 | P18 | 1 | c059 |
-| Kag | P35 | 1 | c151 |
 | Kahwanna Bay | P35 | 1 | c151 |
 | Kahwanna Bay Yak | P35 | 1 | c151 |
 | Kashechewan | P27, P82 | 1 | c048 |
-| Kawana | P35 | 1 | c151 |
 | Lake Erie | P40 | 1 | c007 |
-| Marie | P133 | 1 | c215 |
 | Matawa | P26 | 1 | c055 |
 | Mining Act | P17 | 1 | c098 |
 | Moose Cree | P27 | 1 | c057 |

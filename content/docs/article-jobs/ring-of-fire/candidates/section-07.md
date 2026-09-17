@@ -20,7 +20,9 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 > ## ⚠ Claims in this section are scoped to a different project
 >
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
+> *At the top of this file because c128, c129 — the pair behind known error 1 — appear in this file.*
+>
+> The following appear below, but their quotes are **not about the Webequie Supply
 > Road**. Read the scope before using any of them.
 >
 > - **c129** — Marten Falls Community Access Road. ECCC is answering question PIF-02, which asks about MFCAR; Appendix I Table 7-5 and Appendix F are the Marten Falls road's documents, not the Webequie Supply Road's.

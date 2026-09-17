@@ -18,20 +18,6 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 ---
 
-> ## ⚠ Claims in this section are scoped to a different project
->
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
-> Road**. Read the scope before using any of them.
->
-> - **c206** — The Musselwhite gold mine and the First Nations communities near it in northwestern Ontario — an analogue cited by the report. Only the mine has the all-season road, which runs to Pickle Lake.
->   Appears **as a candidate** under P108; as a topic candidate under P59.
-> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
->   Appears **as a candidate** under P108.
-> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
->   Appears as a topic candidate under P59, P108, P133, P128.
->
-> A candidate list cannot tell which project a quote is about. The scope field and the quote can.
-
 ## P59 — "The only project anywhere near development is Eagle's…"
 
 *Draft 1 section: II. The breathing lands*
@@ -164,7 +150,7 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 | claim | shared items | source | locator | scope | full quote |
 | --- | --- | --- | --- | --- | --- |
-| c215 | Ferrochrome; A Sault Ste; Marie | Appendix P2.M comment-response tables (164888E.pdf) | — | — | a full and complete analysis of the contribution to cumulative effects of the WSR must include the entirety of the overland transportation route between the Ring of Fire and possible receiving locations (e.g., Ferrochrome facility in Sault Ste. Marie, Sudbury Smelter, other reasonably foreseeable end points for ore or mine concentrate). 1. Item will be addressed in the Final EAR/IS submission. |
+| c215 | Ferrochrome; A Sault Ste | Appendix P2.M comment-response tables (164888E.pdf) | — | — | a full and complete analysis of the contribution to cumulative effects of the WSR must include the entirety of the overland transportation route between the Ring of Fire and possible receiving locations (e.g., Ferrochrome facility in Sault Ste. Marie, Sudbury Smelter, other reasonably foreseeable end points for ore or mine concentrate). 1. Item will be addressed in the Final EAR/IS submission. |
 | c156 | Cliffs | Terms of Reference, Regional Assessment (document 161197), incl. Annex 1 timeline and Minister's letter 15 Feb 2023 | Annex 1 | — | 2015 Industry March: Cliffs sells chromite claims to Noront |
 | c070 | Eagle's Nest | Ontario Rivers Alliance, submission, 14 Apr 2026 | — | — | The recent federal decision to decline to designate the Eagle’s Nest Mine […] By determining that the project’s impacts could be addressed through “other means,” the federal government has effectively deferred oversight to provinc ial processes that are widely recognized as missing in action (“Priority Project” status) , particularly with respect to cumulative effects, climate risk, and Indigenous rights. This decision establishes a precedent that undermines the Regional Assessment before it is complete, signal ling that project approvals may proceed irrespective of regional findings. |
 | c098 | Eagle's Nest | Analysis Report, Eagle's Nest designation request (document 165296 / p90033/165049E.pdf) | — | — | The Impact Assessment Agency of Canada (IAAC) prepared this report for consideration by the President of IAAC1 in his response to the request to designate the Eagle’s Nest Mine Project (the physical activities referred to as the project) proposed by Wyloo Ring of Fire Ltd. (the proponent) pursuant to section 9 of the Impact Assessment Act (the IAA). […] The project has the potential to cause adverse effects within federal jurisdiction, and direct or incidental adverse effects. IAAC considered the factors in subsection 9(2) of the IAA and is of the view that there are means other than a federal impact assessment such as existing federal and provincial mechanisms, including the Fisheries Act, Metal and Diamond Mining Effluent Regulations, Migratory Birds Convention Act, 1994, Species at Risk Act, Mining Act, Environmental Protection Act, Ontario Water Resources Act, Endangered Species Act or Species Conservation Act, 2025 (once proclaimed), Ontario Heritage Act and the Public Lands Act that provide a framework to address the potential adverse effects within federal jurisdiction and direct or incidental adverse effects that may be caused by the carrying out of the project, and public concerns related to these potential effects. |
@@ -207,3 +193,17 @@ No candidate shares a figure, date, amount or name — a document must be opened
 | c008 | studies; mine | Interim Report, Regional Assessment in the Ring of Fire Area, 23 Feb 2026 (document 165314 / 164647E.pdf) | — | — | Next, the RAWG plans to focus its efforts on: establishing a council of Elders, and organizing a session with community knowledge holders about water and medicines. building conceptual model(s) that would explain the expected hydrological responses of peatland river systems in the assessment area, to various stressors, including, for example: water usage amounts and effects on the water table; effects to groundwater supplies, including changes in source waters; effects on water quality and health; changes to flow including cumulative effects of hydroelectric projects; and increased risk of flooding due to development, climate change, and new infrastructure. more detailed hydrological modeling to assess potential impacts from development. examining priorities for studies and workshops related to: fish and wildlife, including species at risk, with Lake Sturgeon and caribou as species of particular importance; and potential impact from development on mercury levels and other potential contaminants in water and fish, including learnings from nearby mines. |
 
 ---
+
+> ## ⚠ Claims appearing in this file are scoped to a different project
+>
+> The following appear in this file, through the weaker topic pass only, but their quotes are **not about the Webequie Supply
+> Road**. Read the scope before using any of them.
+>
+> - **c206** — The Musselwhite gold mine and the First Nations communities near it in northwestern Ontario — an analogue cited by the report. Only the mine has the all-season road, which runs to Pickle Lake.
+>   Appears **as a candidate** under P108; as a topic candidate under P59.
+> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
+>   Appears **as a candidate** under P108.
+> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
+>   Appears as a topic candidate under P59, P108, P133, P128.
+>
+> A candidate list cannot tell which project a quote is about. The scope field and the quote can.

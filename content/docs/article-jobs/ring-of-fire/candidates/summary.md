@@ -9,14 +9,14 @@ Generated 2026-09-17. One file per section; open a file to see each paragraph's 
 | `section-03.md` | 3. What the Ring of Fire is | 3 | 3 |
 | `section-04.md` | 4. What the winter road provides, how it is changing, and what life costs with it | 10 | 7 |
 | `section-05.md` | 5. The need for an all-season road, and what the communities asked for | 11 | 5 |
-| `section-06.md` | 6. What happens to the muskeg when it is disturbed | 3 | 3 |
+| `section-06.md` | 6. What happens to the muskeg when it is disturbed | 3 | 2 |
 | `section-07.md` | 7. Can a floating road cross this peat without draining it? | 8 | 5 |
 | `section-08.md` | 8. Does an all-season road lower the cost of living? | 1 | 0 |
 | `section-09.md` | 9. The approved road and its assessments | 36 | 27 |
 | `section-10.md` | 10. What is at the end of the road | 6 | 4 |
 | `section-11.md` | Closing: Neskantaga | 5 | 4 |
 | `section-12.md` | FOOTNOTES (unchanged) | 9 | 6 |
-| | **total** | **102** | **71** |
+| | **total** | **102** | **70** |
 
 ## Items ignored as too common
 

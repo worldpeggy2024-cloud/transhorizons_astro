@@ -18,18 +18,6 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 ---
 
-> ## ⚠ Claims in this section are scoped to a different project
->
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
-> Road**. Read the scope before using any of them.
->
-> - **c206** — The Musselwhite gold mine and the First Nations communities near it in northwestern Ontario — an analogue cited by the report. Only the mine has the all-season road, which runs to Pickle Lake.
->   Appears as a topic candidate under P10, P36, P40.
-> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
->   Appears as a topic candidate under P10, P36.
->
-> A candidate list cannot tell which project a quote is about. The scope field and the quote can.
-
 ## P10 · figure note — "[FIGURE 1 — to insert]** Locator map. Two…"
 
 *Draft 1 section: Opening*
@@ -171,7 +159,7 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 | claim | shared items | source | locator | scope | full quote |
 | --- | --- | --- | --- | --- | --- |
-| c151 | Kawana; Kag; Biiwaapiko'kaning; Kahwanna Bay Yak; Kahwanna Bay | Interim Report, Regional Assessment in the Ring of Fire Area, 23 Feb 2026 (document 165314 / 164647E.pdf) | — | — | The RAWG has commissioned a study to better understand the many factors that explain the cost of living across the Kawana ‘Bi 'Kag/ Biiwaapiko'kaning" /Kahwanna Bay Yak. |
+| c151 | Biiwaapiko'kaning; Kahwanna Bay Yak; Kahwanna Bay | Interim Report, Regional Assessment in the Ring of Fire Area, 23 Feb 2026 (document 165314 / 164647E.pdf) | — | — | The RAWG has commissioned a study to better understand the many factors that explain the cost of living across the Kawana ‘Bi 'Kag/ Biiwaapiko'kaning" /Kahwanna Bay Yak. |
 
 **Topic candidates — weaker than a shared figure or name** (2). Shared content words only.
 
@@ -357,3 +345,15 @@ No candidate shares a figure, date, amount or name — a document must be opened
 | c217 | peat; water | Ontario Ministry of the Environment, Conservation and Parks, Ministry Review of the Webequie Supply Road EA — Appendix B, comment-response tables (released on request to Peggy, 2026) | p. 34 | — | based on the Project descriptions/designs that indicate anticipated peat compression of 40%–50% (Appendix D1), changes to water movement, vegetation loss, and localized ditching, it is reasonable to expect that peatland impacts will occur, even with “reduced impact” or floating road designs. |
 
 ---
+
+> ## ⚠ Claims appearing in this file are scoped to a different project
+>
+> The following appear in this file, through the weaker topic pass only, but their quotes are **not about the Webequie Supply
+> Road**. Read the scope before using any of them.
+>
+> - **c206** — The Musselwhite gold mine and the First Nations communities near it in northwestern Ontario — an analogue cited by the report. Only the mine has the all-season road, which runs to Pickle Lake.
+>   Appears as a topic candidate under P10, P36, P40.
+> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
+>   Appears as a topic candidate under P10, P36.
+>
+> A candidate list cannot tell which project a quote is about. The scope field and the quote can.

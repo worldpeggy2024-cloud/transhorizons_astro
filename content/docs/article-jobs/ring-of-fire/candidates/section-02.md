@@ -18,18 +18,6 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 ---
 
-> ## ⚠ Claims in this section are scoped to a different project
->
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
-> Road**. Read the scope before using any of them.
->
-> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
->   Appears as a topic candidate under P50, P122.
-> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
->   Appears as a topic candidate under P50.
->
-> A candidate list cannot tell which project a quote is about. The scope field and the quote can.
-
 ## P50 — "So despite its awkwardness, and because of the…"
 
 *Draft 1 section: II. The breathing lands*
@@ -112,3 +100,15 @@ Moved here only for length. Complete and ranked as above.
 | c203 | community; food | Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263) | — | — | Traditional foods are generally healthier than what can be found in stores in remote communities |
 | c207 | community; food | Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263) | — | — | The cost of store-bought food in remote NWT communities became high during the diamond mining period […] However, the more consequential effect on food costs is the disruption to the traditional food economy, which forces greater household dependence on expensive imported food. |
 | c214 | regional; community | Fort Albany First Nation, submission, May 2026 | Comment 39, comment-response table, pp. 77-78. The first two segments are Fort Albany's comment, one sentence broken by a page break and the repeated table header. The last segment is the Proponent Response column. | — | Cumulative effects assessment may underestimate regional peatland impacts ● The cumulative effects assessment does not include the Marten Falls Community Access Road […] project in the list of developments considered for vegetation and wetlands, and no rationale for its exclusion is provided. ● Given that both projects are part of the broader Ring of Fire transportation network, this raises concerns that the assessment relies on narrow spatial or analytical boundaries that exclude closely related infrastructure. […] The proponent acknowledges the concern that cumulative effects on peatland ecosystems may be underestimated when assessed at a project scale. |
+
+> ## ⚠ Claims appearing in this file are scoped to a different project
+>
+> The following appear in this file, through the weaker topic pass only, but their quotes are **not about the Webequie Supply
+> Road**. Read the scope before using any of them.
+>
+> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
+>   Appears as a topic candidate under P50, P122.
+> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
+>   Appears as a topic candidate under P50.
+>
+> A candidate list cannot tell which project a quote is about. The scope field and the quote can.

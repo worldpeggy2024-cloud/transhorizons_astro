@@ -18,20 +18,6 @@ Full quotes, scopes and locators are also in `../ledger-export.md`.
 
 ---
 
-> ## ⚠ Claims in this section are scoped to a different project
->
-> The following appear below as candidates, but their quotes are **not about the Webequie Supply
-> Road**. Read the scope before using any of them.
->
-> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
->   Appears as a topic candidate under P123.
-> - **c206** — The Musselwhite gold mine and the First Nations communities near it in northwestern Ontario — an analogue cited by the report. Only the mine has the all-season road, which runs to Pickle Lake.
->   Appears as a topic candidate under P123.
-> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
->   Appears as a topic candidate under P123.
->
-> A candidate list cannot tell which project a quote is about. The scope field and the quote can.
-
 ## P123 — "The regional assessment records something that complicates even…"
 
 *Draft 1 section: VII. What was never compared*
@@ -102,3 +88,17 @@ Moved here only for length. Complete and ranked as above.
 | c178 | community; cost | Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263) | — | — | Improving road access to First Nations communities is one example where both positive and negative effects can be foreseen: better road access can lower the cost of freight and travel between communities and larger centres, but at the same time better road access facilitate access of communities and traditional lands of unwanted influences and pressures, a negative effect of which some community members are deeply concerned. |
 | c189 | community; cost | Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263) | — | — | Community members agreed that the cost of freight is a major determinant of the local cost of goods. |
 | c191 | community; cost | Joseph, C., D. Waugh and D. O’Gorman (Swift Creek Consulting), Cost-of-living in First Nations Communities in the Ring of Fire Region of Northern Ontario, report for the Regional Assessment Working Group, 2026 (registry 80468, reference 263) | — | — | One other driver of the high costs of freight appears to be the one-way nature of freight traffic, according to one community member. Apparently, goods are brought in, but often nothing is brought out |
+
+> ## ⚠ Claims appearing in this file are scoped to a different project
+>
+> The following appear in this file, through the weaker topic pass only, but their quotes are **not about the Webequie Supply
+> Road**. Read the scope before using any of them.
+>
+> - **c187** — Inuvik-to-Tuktoyaktuk Highway, Northwest Territories — an analogue cited by the report, not a Ring of Fire road.
+>   Appears as a topic candidate under P123.
+> - **c206** — The Musselwhite gold mine and the First Nations communities near it in northwestern Ontario — an analogue cited by the report. Only the mine has the all-season road, which runs to Pickle Lake.
+>   Appears as a topic candidate under P123.
+> - **c209** — Northwest Territories diamond mines on the Tibbitt-to-Contwoyto Winter Road — an analogue cited by the report, not Ring of Fire mines.
+>   Appears as a topic candidate under P123.
+>
+> A candidate list cannot tell which project a quote is about. The scope field and the quote can.
