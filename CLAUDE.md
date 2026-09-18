@@ -100,8 +100,9 @@
 - `fly deploy` ships the WORKING DIRECTORY, not the last commit: uncommitted edits go live.
 
 ## Articles — research & evidence (adopted 2026-09-14)
-- Process: content/docs/article-workflow.md. Commands: `npm run article:evidence -- init | boundary | fetch |
-  quotes | flags | check <slug>` and `register <draft.md|article.yaml|slug>`.
+- Process: content/docs/article-workflow.md — it opens with a plain-language quickstart; read that first.
+  Commands: `npm run article:evidence -- init | link | boundary | fetch | quotes | flags | check <slug>`
+  and `register <draft.md|article.yaml|slug>`.
   Job folder: content/docs/article-jobs/<slug>/. Informative articles: the writer brief embeds
   content/docs/informative-register-spec.md and NO style sample; `register` counts the spec's forbidden forms
   after delivery, because the writer's own pre-delivery check is a self-report.
@@ -117,8 +118,37 @@
   Agency view scope (c098), two absence claims (c120-2, c140-2), dropped hedges (c008, c035-37, c104, c051-52, c074, c026).
   Peggy then chose to redo her other started articles from scratch with the updated workflow; Ring of Fire awaits her decision.
   Do NOT offer more verification rounds.
+- A JOB IS NAMED AFTER THE QUESTION, NOT THE ARTICLE (2026-09-17). A question Peggy wants researched may
+  never become an article, so `init <name>` no longer requires an article: the ledger carries
+  `"article": null`, nothing before step 4 reads it, and `gate` skips an unbound job. `link <name>
+  <article-slug>` binds it when it becomes one AND RENAMES THE FOLDER to the article's slug — `gate`
+  matches a job to its registry row by FOLDER NAME, so a job left under its working name is never enforced
+  however finalised the article is. No registry row yet: `link <name> content/articles/<file>.yaml --slug
+  <article-slug>`. Explore FIRST in a chat (nothing is created); make the job when there is a boundary to
+  save. Never ask her to name an article before exploration has told her there is one.
 - SENTENCES DO NOT TRAVEL. The only thing that crosses from exploration to writing is `boundary.json`:
   questions, document links, gaps. Never draft in an exploration chat; never hand its prose to a writer.
+- NEITHER DO LABELS (2026-09-17, from the draft-4 post-mortem; workflow steps 2–3). What a writer or a
+  reviewer receives from `ledger.json` is `id`, `source`, `locator`, `scope`, `quote` — never the internal
+  `fact` label, a summary, or a sentence from an earlier draft: 13 of the 14 draft-4 errors were already in
+  the handed-over material, and the writer followed it faithfully. Quotes are WHOLE (sentence start to end,
+  qualifiers included, contiguous when a claim spans sentences; a quote rebuilt from table cells is marked
+  and the reassembly recorded in `locator`). `scope` is filled AT RECORDING TIME whenever the quote's
+  document / project / road / community is not the article's subject (ECCC on Marten Falls read as Webequie).
+- STEP 2b, READ WHAT WAS GATHERED (new 2026-09-17), sits between gather and write: Peggy with a chat that
+  answers only from the ledger, drafts nothing, writes no prose. What crosses to the writer is the SECTION
+  ORDER — sections in sequence, each with its question and a word budget — and never a conclusion (a thesis
+  bends the writer's use of the quotes). The brief is then built section by section, each section carrying
+  its candidate quotes and "most listed facts will stay unused; that is expected". Skipping it is what
+  produced draft 4: 229 quotes with no order, 217 used one fact per sentence, accurate and unreadable.
+- SCALE AT THE BOUNDARY, not after drafting: few questions per article, and a question needing its own set
+  of documents is a COMPANION ARTICLE, split in `boundary.json` before anything is gathered. Each `searched`
+  entry names ONE place and ONE date — "all documents gathered for this article" is not a search, and a gap
+  without a conforming entry may not be used to assert an absence (two such absences reached draft 4).
+- VERIFIED MEANS SHOWN IN THE SAME MESSAGE (4th rule of the workflow): any chat here may call a statement
+  verified only if that message contains the document it just fetched with the words copied out, or the
+  ledger quote pasted in full. Its own earlier reading does not count — long chats lose the documents they
+  opened, and a pasted summary is a pointer, not evidence.
 - Every figure / count / ratio / direct quotation needs a ledger claim: document id + verbatim quote matched
   against the fetched text. Firsts, superlatives and
   attributions need a quote or a "reasoning" note; NEGATIVE-EXISTENCE claims ("no official source…") need a
@@ -133,6 +163,9 @@
   into `manual/`. Never ask her to assemble source archives.
 - No causal regex tier, by design: this prose carries causation by colon and juxtaposition. It is a
   verifier question.
+- The scripts LAG the document, by design of this pass: the whole-quote flags (`quotes`) and the `searched`
+  place-and-date rejection (`boundary`) are NOT implemented — those rules hold by hand. The to-do list at the
+  end of content/docs/article-workflow.md is the record; update both places together, never one alone.
 - Gate: `prebuild` runs `article-evidence gate` offline and fails only for a FINALISED article with an
   enforced ledger. Articles published before 2026-09-14 have no ledger and are not gated — do not retro-audit
   finished articles or country reports unless Peggy asks.
